@@ -1,0 +1,1165 @@
+---
+course: instutrade
+lesson_id: "02"
+title: "Professional vs Retail Traders 102"
+module: professional-vs-retail
+module_title: "Professional vs retail traders"
+duration: 00:46:13
+duration_seconds: 2773.28
+source: "Anton Kreil - Professional Trading Masterclass Instutrade/2. Professional vs Retail Traders 102.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  []
+---
+
+# 02 — Professional vs Retail Traders 102
+
+Hi, welcome back. Welcome to video number two. You managed to survive video number one. Well done. If you remember in video number one, we essentially defined what a professional trader is. Now we can actually try and move on towards working out what a successful professional trader actually does.
+
+Now, the objective of this video series throughout is to provide you, the retail trader, with a framework that enables you to emulate consistently profitable professional traders.
+
+Now, to get to that point, what we first need to do is actually work out why the majority of retail traders lose money.
+
+Now, you'll probably think to yourself, well, is that actually true? Do the majority of retail traders lose money? Well, yes, they do. And the majority of retail traders lose money for some quite specific reasons.
+
+That's the problem in the retail trader market, and that's the problem we're trying to solve here.
+
+Now, if you're going to consistently emulate profitable traders, successful traders, you're first going to have to understand all the mistakes that bad amateur retail traders make.
+
+This will then provide you with a foundation that enables you to move towards consistent profitability and emulating successful professional traders.
+
+So, that's what you're going to see in this video. That's what you're going to see in this video. You're going to see that foundation. You're going to see the reasons why retail traders lose money.
+
+Once you've got that, we're going to work towards getting an approach which emulates successful professional traders.
+
+So, let's go over to the stage. Let's look at those reasons. I want you to always think about your objectives here, which is to use your own money to enable you to make money in the financial markets.
+
+And when we go through these reasons, you're going to see some home truths that really will lay the foundation which will enable you to move towards consistent profitability.
+
+Let's go over to the stage, and I'll see you at the end of video two with a summary of everything that you see on stage.
+
+Has anybody ever seen this before?
+
+Has anybody ever seen this before?
+
+It's an industry statistic that's talked about all the time in the retail trader market.
+
+The 1990-90 rule.
+
+Does anybody know what it stands for? 90% of the time, 90% of the time, 90% of the time, 90% of the time, retail traders lose 90% of their capital, or something like that?
+
+Close to it.
+
+It stands for 90% of retail traders lose 90% of their money within 90 days.
+
+And it's a pretty well-known statistic.
+
+And what we're looking at here is margin accounts, margin trading accounts, where when you put your money into an account, the money is there and is collateralized for you to take higher exposure.
+
+So the broker on the other side will lend you money to trade based on what you put up front in your trading account.
+
+So 90% of them lose money, but the objective here is to make money.
+
+But what causes the differences in the approach?
+
+Why does it exist?
+
+This is really important for you to know, because when you understand the home truths and the parameters of the industry that you operate in, once you understand that framework, you can choose to operate in a different way, and operate within the framework, because at the end of the day, you don't have a choice.
+
+You still need to access the market.
+
+That's the infrastructure of the industry that's required for you to actually be a retail trader.
+
+But how do you operate within those parameters and be successful?
+
+Well, the first step is to understand what the parameters are, have an appreciation of them.
+
+Once you understand that, you can work out how to operate within, in a profitable way.
+
+So why does it exist?
+
+Conflict of interest, you've got to be aware of it, why it exists and how it works.
+
+Trading for income.
+
+Platform and tools seduction, as in believing that a piece of software is going to give you all the answers you need to make money.
+
+And information overload, or misuse of information.
+
+Conflict of interest, awareness.
+
+What you're looking at there is a very, very simple formula that literally underpins the industry.
+
+Everything comes back to this.
+
+Price times volume times commission.
+
+So prices in bull markets, in bull markets, when the market goes up 100%, prices double.
+
+Volume doubles.
+
+And people charge higher commission rates because they can.
+
+So that gets maxed.
+
+In bear markets, stock markets halve.
+
+So prices halve.
+
+Volumes dry up because of a lack of confidence in the investment arena.
+
+Or in the world in general.
+
+And everyone fights for the smaller amount of business that's available globally.
+
+So everyone reduces their commission rates to stay alive.
+
+That's all it is.
+
+That's the whole industry.
+
+But that creates a big conflict of interest.
+
+The conflict of interest causes people to do things that they don't really want to do.
+
+So typical retail trader strategy on a day, coming in flat on the day with no position.
+
+And the market's about to open.
+
+And the example we're going to use here is the S&P 500.
+
+So you've got $10,000 in your trading account.
+
+And the broker will enable you to take exposure of 10 times that in the S&P 500.
+
+So you decide, okay, today I'm feeling really clever.
+
+I'm going to buy $50,000 of the S&P 500 on the open.
+
+Because I think today the market's going to rally 1%.
+
+So what's 1%? 100 basis points.
+
+So you think with your risk management awareness that you're clever.
+
+So if you have a 1% target and you're going to trade out when you've made 1%, if it goes wrong, what are you going to cut the position for?
+
+Well, because you've been taught some very clever risk management techniques, or at least you think you've been taught some very clever risk management techniques, you stick a 1 to 3 ratio on the target, the stop loss compared to the target.
+
+So what's a stop loss?
+
+You automatically trade out when it goes wrong for 0.33 of a loss.
+
+So you get stopped at.
+
+But you trade out automatically if you make 1%.
+
+So you stick a 1 to 3 ratio on it.
+
+And everyone is told this is a great way to manage risk.
+
+But what does that actually mean?
+
+Well, if you do a million trades in your life, you stick a 1 to 3 ratio on it, on every trade.
+
+For you to break even, you need to get 33% of your trades right.
+
+So 33% hit your target and you trade out automatically.
+
+And 66% hit your stop loss.
+
+You break even.
+
+So if you get 40% right, you're obviously making money.
+
+So what happens if you pay a commission of 10 basis points to buy and 10 basis points to sell?
+
+So it's called a round trip.
+
+You pay 10 to put the position on and you pay 10 to take it off.
+
+What happens?
+
+Well, your upside to begin with, in gross terms, 1%, $500.
+
+As soon as you do a round trip on the fees, your net downside becomes $265 and your upside becomes $400.
+
+And you go from a break-even threshold of 33% immediately to 66%.
+
+They forget to mention that when they're teaching you how to trade.
+
+Conveniently.
+
+66% break-even threshold.
+
+Is that possible?
+
+What do you think?
+
+I can tell you now, the best traders in the world get half their trades right.
+
+For an amateur retail trader to get 66% of their trades right is almost impossible.
+
+So we've got 84 traders at the Institute now.
+
+Only one guy this year has above a 66% hit rate, win rate.
+
+And why has he got that?
+
+Because he just came in and got really long at everything at the beginning of the year.
+
+So all along the way, he's aware of his risk because I've had to make sure that he actually understands what he's doing.
+
+But on a long, short portfolio, professional traders, they'll get about half their trades right.
+
+Maybe 55%.
+
+But for a retail trader amateur to get 66% of their trades correct is insane.
+
+So you can see how very, very quickly your odds can change, your odds of making money.
+
+But what we haven't looked at here, and who can connect the dots here?
+
+Look at the target of 1%.
+
+What we haven't done at all here is an analysis of how likely it is of making 1% in a day by buying the S&P 500.
+
+So how likely is it?
+
+Someone take a guess.
+
+Huh?
+
+It's what, sorry?
+
+Almost zero.
+
+Almost zero.
+
+Okay.
+
+Who agrees?
+
+Who disagrees?
+
+Okay, let's put a percentage on it.
+
+What do we think the probability of making 1% in one day in the S&P 500 is?
+
+Who said 10?
+
+Pretty much spot on. 11%.
+
+So what do we have to do?
+
+You have to probability adjust that 1%.
+
+And what happens when you probability adjust it?
+
+Your downside exceeds your upside by about four times.
+
+So what's going to happen?
+
+You're actually just going to get stopped at.
+
+That's the most stupid thing you'll ever do in the world as a trader.
+
+But everybody does it.
+
+So let's have a look at the numbers.
+
+And we'll be looking at these numbers more in depth.
+
+Where this number actually comes from.
+
+In a minute.
+
+Just trying to stop the question, where do you get the number from?
+
+So gross, well, the net number.
+
+So gross, it was 33% breakeven threshold.
+
+Net, it was 66%.
+
+Probability adjusted.
+
+Well, we get the 11% number from looking back at 50 years of S&P 500 data.
+
+And we're going to look at that.
+
+And we're going to look at that in a second.
+
+But essentially, an 11% chance is a 9 to 1 odds against you making that money. 9 to 1 against.
+
+So you have to multiply your upside by 0.11 to probability adjust it to get an expected return.
+
+So you end up with about around 40, 45 pounds upside.
+
+And 265 pounds downside.
+
+So where do we get this number from?
+
+50 years of data.
+
+We're going to go through it a bit later.
+
+You'll have to have your math heads on.
+
+We'll go through trading for income first.
+
+So we've been through this example of making $10,000 a month trading the international forex markets.
+
+But what actually happens?
+
+What are we trading when we're looking at major currency pairs?
+
+So sterling US dollar, euro US dollar.
+
+Well, it's pretty obvious that if you're dictating to the market how much you think you can make per month, and the market decides, actually, I'm just not going to move.
+
+So for 20 days in a row, what you're trying to trade to make $10,000 a month doesn't actually move.
+
+It stays the same price.
+
+And you buy and sell it at the same price 100 times.
+
+Unpaid commission.
+
+Can you make $10,000?
+
+Of course not.
+
+You don't dictate to the market how much money you can make over a given time horizon.
+
+The market dictates to you how much money you can make.
+
+So it's blatantly obvious that it depends on the volatility of the asset that you're trading.
+
+But no one's ever told what the real volatility numbers are.
+
+Because if you were told, then no one would really trade.
+
+Which means I can't be on the other side of that situation.
+
+Because there's no one doing it.
+
+We'll look at this data as well soon.
+
+But when you look at 10, 20 years of historical data of the major currency pairs, sterling US dollar, euro US dollar, on a normal day, which we'll go through a bit later as well, what we consider a normal day, the volatility is up or down 0.25%. 25 basis points.
+
+Like I said, we'll be looking at where we get these numbers from.
+
+And how we get around them.
+
+And how we operate within the parameters to actually make money.
+
+What about trading platforms?
+
+I'll give you a free piece of software that you can download on your computer.
+
+And you can trade from your bedroom.
+
+You can trade from your iPad.
+
+I'm pretty sure soon Apple will give you the ability to trade on a watch.
+
+But if I give you a free piece of software, why would I do that?
+
+To encourage you to do this.
+
+Right?
+
+The more free stuff and tools I give you that have flashing lights and make sexy noises, the more you're going to be seduced to push the button.
+
+Clearly.
+
+So if I put an arcade machine in your house and it's just got flashing lights, makes lots of noises, and you go home from Cass Business School every evening back to your house, and while you're having your dinner and watching your soaps, it just keeps making noises every five minutes.
+
+But it costs you 10 pence to play the game.
+
+What's going to happen?
+
+At some point you're just going to get bored with what's on TV, and you're going to put 10p in to see what happens.
+
+And then you're going to get hooked.
+
+And then I'll come round every month and just empty the machine, and then we start again.
+
+It's exactly the same principle.
+
+And this is why guys like Steve Jobs, to me, were geniuses in a different way, because they knew through design and functionality, if they put something sexy in your hand and made you pay for it, which is even more ridiculous, that you're going to actually at some point press the button and download every app that you don't need in your life.
+
+Because none of it's going to make you money.
+
+It just makes the vendor, the provider, money.
+
+That, to me, is why Steve Jobs was a genius, and he knew that.
+
+That's why he designed it so beautifully, so you'd go and buy it.
+
+But you'll get lots of seduction techniques.
+
+And there's nothing more seductive than receiving something for free.
+
+What you'll see is lots of seduction techniques and marketing, like trade like a professional with ultimate precision and capability.
+
+That's an advert that's on Bloomberg TV at the moment.
+
+Let's just go through some home truths.
+
+Does the amount of screens you have make you a better trader?
+
+First example.
+
+Are they linear?
+
+Is the relationship linear?
+
+The more screens I have, the more money I'm going to make in a linear fashion.
+
+Clearly not.
+
+Is it exponential?
+
+Clearly not.
+
+At some point, I'm going to have so many screens that I can't even fit them in my room.
+
+All you need, really, is two screens.
+
+You just need one for your trading application.
+
+And by the way, that's if you've got a big trading account.
+
+And you need one screen for your applications that you use to manage your own risk.
+
+Because no trading platform can manage your risk for you.
+
+Going right back to basics.
+
+Trade like a professional with ultimate precision and capability.
+
+Download my platform.
+
+But who's the platform for?
+
+It's not for professional traders.
+
+It's for retail traders.
+
+No professional trader anywhere in the world uses these platforms.
+
+It's a gimmick.
+
+We know what a professional trader is.
+
+It's a guy in an investment bank or a hedge fund manager.
+
+If you put one of these trading platforms in front of a hedge fund manager, he'd just laugh.
+
+Because they have direct market access.
+
+And they just, to get liquidity, they call the banks.
+
+They don't really care what platform they use.
+
+As long as it executes well.
+
+And does what it says on the tin.
+
+And they get charged the rate that they want to pay.
+
+Pretty basic.
+
+It's an execution tool.
+
+Doesn't do anything else for you.
+
+But the perception is that the more equipment you have, the better you're going to do.
+
+And this gets rammed down people's throats because it's free.
+
+This is the making you click situation.
+
+And the people on the other side know that if they give you something sexy for free, you're going to click.
+
+It's misinformation.
+
+No professional traders use them.
+
+But also, all of the features of the platform will be sold to you as things that you need to trade.
+
+You don't.
+
+There shouldn't be anything on a platform that you need.
+
+Except buy and sell.
+
+Because outside of that, you're doing all of your own work.
+
+You shouldn't have to rely on anything on the platform except buy and sell.
+
+So get it into your heads.
+
+You're going to end up trading like George Bush.
+
+Upside down.
+
+Buying when you should be selling.
+
+Selling when you should be buying.
+
+So what do you see when you look at that?
+
+Most people see a phone.
+
+I see a trap.
+
+What do you see when you look at that?
+
+That's what you'll see on a trading screen.
+
+So you'll see the price to buy at.
+
+And the price to sell at.
+
+But you'll see it the other way around.
+
+That's what a professional trader sees.
+
+Professional trader sees the price that they are selling at to you.
+
+And the price that they are buying at from you.
+
+So they see the opposite of what you're seeing.
+
+I really like this statement.
+
+Humans can't trade.
+
+They can only be human.
+
+You need to really understand that.
+
+And over the next two days.
+
+We're going to be using loads of techniques.
+
+It'll be probably around tomorrow lunchtime afternoon.
+
+But you've got to desensitize yourself.
+
+To being human.
+
+Because humans make awful traders.
+
+Humans can't trade.
+
+So you've got to desensitize yourself from that immediately.
+
+Most importantly.
+
+These guys.
+
+The hedge fund managers.
+
+They have access to the casino.
+
+You guys don't.
+
+You're still trading through a broker.
+
+That then goes to the exchange.
+
+So you've got to understand those parameters.
+
+So does it mean professional traders have an edge.
+
+Over retail traders.
+
+Does it mean they have an edge.
+
+Of course not.
+
+It's not the execution that makes you a good trader.
+
+Trading with precision and total control.
+
+It's not.
+
+That's not what makes you a good trader.
+
+You might save a bit of money.
+
+On your execution.
+
+But ultimately over the long term.
+
+That's not what's going to make you money.
+
+How you execute.
+
+And how much you pay.
+
+Is a very small part of trading.
+
+It's less than 1%. 99% of trading is.
+
+Knowing what to buy.
+
+And what to sell.
+
+When to do it.
+
+And how to do it properly. 1% is actually pressing the button.
+
+We'll use a quick analogy.
+
+The Japanese corporate golfer.
+
+Who plays golf here?
+
+Have you ever walked onto the first tee?
+
+At the golf course.
+
+And you see a group of guys.
+
+And they've got all of the gear.
+
+And no idea.
+
+So each of these guys.
+
+The bags.
+
+The clubs.
+
+We've got gold clubs here.
+
+Gold shoes.
+
+5 pounds a ball.
+
+Top of the range balls.
+
+Everything.
+
+Totalling 14,800 dollars per person.
+
+And then the guy on the left walks up.
+
+With his 1,000 pound club.
+
+Swings and misses the ball.
+
+And everyone giggles and says.
+
+Try again Yoshi.
+
+Honestly.
+
+Japanese corporate golfers.
+
+On a Saturday, Sunday morning.
+
+You see them all over the place.
+
+It's hilarious.
+
+But they've got all the gear.
+
+But they just can't play.
+
+What you're better off doing.
+
+Is actually just having a seven iron.
+
+One club.
+
+And going to the driving range.
+
+And learning how to hit the ball first.
+
+Once you can hit the ball.
+
+You then go to the golf course.
+
+And you buy a second hand set.
+
+Of cheap clubs.
+
+And you scramble around the golf course.
+
+For a couple of years.
+
+And get your handicap down.
+
+To a respectable level.
+
+And then.
+
+Once you've done that.
+
+You go and invest in yourself.
+
+And buy a proper set of golf clubs.
+
+Buy some proper clothes.
+
+Shoes.
+
+And then play quite regularly.
+
+But you've got to enjoy it as well.
+
+So why start with everything.
+
+When you don't know anything.
+
+And you don't even know if you like it or not.
+
+Because the Japanese corporate golfer.
+
+Is not there to play golf.
+
+He's there to do business.
+
+You're going to get offered a variety of stuff.
+
+With features.
+
+Free stuff.
+
+That can only make your life worse.
+
+As a trader.
+
+You'll be told that it gives you an edge.
+
+But it just doesn't give you an edge.
+
+What gives you an edge.
+
+Is doing everything yourself.
+
+And seeking out.
+
+The information in the market.
+
+That 3% of information.
+
+That's actually relevant.
+
+And taking that information.
+
+Making sense of it.
+
+And turning that into real hard money.
+
+No trading platform.
+
+No trading platform can do that for you.
+
+The trading platform.
+
+Is for execution.
+
+And execution only.
+
+And it's less than 1% of what you'll do as a trader.
+
+As long as you understand human behavior.
+
+As long as you understand human behavior.
+
+As long as you understand human behavior.
+
+As long as you understand human behavior.
+
+You'll understand that the platform is for doing a specific thing.
+
+Just buying and selling.
+
+It's for nothing else.
+
+You don't have to rely on anything.
+
+Except your own work.
+
+You want to be the guy with the 7-iron.
+
+Not the Japanese golfer.
+
+So we're going to start with Excel.
+
+PDFs.
+
+Going to get publicly available data.
+
+Working out the odds of making money.
+
+Losing money.
+
+Proper risk management.
+
+Proper ideas.
+
+If you can do that with a 7-iron.
+
+Then you can get all the Japanese corporate golfer kit.
+
+Five years down the road.
+
+But essentially to begin with.
+
+It's vanity over sanity.
+
+What's sane.
+
+Is going out.
+
+And getting the 3% of information that's relevant.
+
+And turning it into real money.
+
+And you don't need.
+
+All the equipment to do that.
+
+It's all publicly available.
+
+It's just finding it.
+
+Using that information correctly.
+
+And turning it into real money.
+
+Everything else is just noise.
+
+What about information overload.
+
+Or misuse of information.
+
+What are we looking at there.
+
+We're looking at a newspaper.
+
+On the left hand side.
+
+Reporting a headline.
+
+Dollar falls to record low.
+
+Let's short the US dollar.
+
+Everyone's going to sell it.
+
+Is that a good trade.
+
+Everyone wants to sell it.
+
+Exactly.
+
+By the time it's in the newspaper.
+
+It's happened.
+
+They're reporting yesterday's news.
+
+Every professional trader knows that.
+
+I've not read a financial times for over a decade.
+
+There's absolutely no point.
+
+It's the manuscript for failure.
+
+It genuinely is.
+
+You do not get your trading ideas from mainstream media.
+
+Newspapers, TV, online.
+
+Because their objectives are totally the opposite of yours.
+
+The objective of a newspaper is to sell newspapers.
+
+The objective of a TV station is to get ratings.
+
+The objective of a website is to generate hits on that website.
+
+So what are they going to do?
+
+They're going to report sensationalist headlines to make stupid people do stupid things.
+
+And one of the most stupid things you'll do is buy the newspaper.
+
+The job of a professional trader is six months before that headline is to predict that it's going to happen.
+
+And put the position on then.
+
+And then it starts to build momentum.
+
+And the move starts occurring.
+
+Because the information starts seeping out through the professional trading community.
+
+And slowly but surely, over a three to six month period, the news filters out to the mainstream.
+
+By the time this is in the paper, six months later, what do professional traders do on the day that it's in the paper?
+
+They use the liquidity of the morons to get out.
+
+Because it might have already moved 30, 40%.
+
+By the time it moves, what do you need on the other side?
+
+You need liquidity to get out of the position.
+
+And that's when the public come in.
+
+Because now it's been filtered all the way to the public.
+
+If you don't consume that, and you do what professional traders do, as in accessing the right information, this will enable you to predict the future.
+
+To take the position six months before.
+
+And then trade out to the morons six months later.
+
+So your job is really to predict now what's going to happen in six or 12 months' time.
+
+And take the position now.
+
+It's a very important mindset to get in.
+
+So how do we predict the future?
+
+Well, we're going to start predicting the future this afternoon.
+
+Well, let's conclude the first session.
+
+Professional trader is a trader full-time that works at an investment bank, prop, function, or hedge fund.
+
+The objective of the retail trader is to utilize their own money and make money from it.
+
+So you're more closely aligned to a hedge fund manager.
+
+The function and the perception of what a trader does is really widely misunderstood.
+
+A trader in an investment bank has got the least, one of the least sexiest jobs in the world, in the modern times.
+
+Because you're up at five, in the opposite six, and you're overseeing algorithms for 80% of the day.
+
+Why does it occur?
+
+It occurs because of misinformation.
+
+The misinformation stems really from the conflict of interest that occurs in the industry.
+
+Professional traders need liquidity on the other side.
+
+So what happens, well, you need 99% of the population to be sheep for that to happen.
+
+So professional traders predict the future.
+
+The sheep tell you what's happening at the present.
+
+And that's on a rolling basis.
+
+So every single day it's the same situation.
+
+Every minute of every day.
+
+You need to be aware of the conflict of interest.
+
+Because once you're aware of that and you're aware of the parameters, you can decide, one, whether you want to do it.
+
+Even try.
+
+But secondly, if you do, if you understand the parameters, you can learn how to operate within them.
+
+And when you learn how to operate within them, you stand a much better chance of making money over time.
+
+Okay, welcome back.
+
+Now, what you just saw on stage is really important.
+
+It's really important because once you've identified the reasons why retail traders lose money, and why the vast majority of retail traders lose money, you can take the next step.
+
+The next step will be, and we'll do this in later videos, is actually taking the opposite approach.
+
+And the opposite approach is what all successful professional traders do.
+
+Now, let's go through the four reasons again, so we can just summarise and get a good, clear idea of the main reasons why retail traders, and the vast majority of retail traders actually lose money.
+
+Let's start with the conflict of interest.
+
+It's very important to realise that the conflict of interest exists.
+
+Because the conflict of interest leads to, most of the time, having a situation where, as a retail trader, if you trade the instruments that you're told to trade in the way that most people teach you how to trade them, all that's going to happen is you're going to end up in a situation in the numbers that we saw in the presentation.
+
+And those numbers clearly show that, in the majority of cases, the odds are actually against you.
+
+Now, what professional traders do, successful professional traders, literally do the opposite.
+
+They realise what the numbers are, and they take steps to actually make sure that the odds are in their favour.
+
+We're going to look at that in video three, where we move on to looking at the most popular instruments that retail traders trade, how they trade them, and what the numbers actually are.
+
+So we can actually then take that information, and use the same processes, but turn the odds in our favour.
+
+We'll show you that in video number three.
+
+That's a very, very important principle to make sure you're on top of.
+
+Always making sure that the odds are in your favour.
+
+That's the first principle.
+
+Principle number two leads from this idea of trading for income.
+
+Now, we've already seen in previous videos that all successful professional traders, in fact, all professional traders, have basic salaries already.
+
+No one trades for income, and no one takes income from their trading account.
+
+So why do retail traders think they can trade for income?
+
+Well, it's because of marketing and misinformation.
+
+Everybody likes to tell you what you want to hear.
+
+And what you want to hear is that trading is easy, and you can make money every month, and you can supplement your income, or do it full-time, and earn a good income from it.
+
+Unfortunately, every professional trader knows this isn't true, and that's why they have basic salaries.
+
+So trading for income doesn't exist in the professional world, so why should it exist in the retail trader world?
+
+This is a very, very important principle that you need to take on board.
+
+Because this becomes a situation where professional traders, because they know this, they look at the market in a very different way.
+
+And this is the way you should be looking at the market, because the way a professional trader looks at the market is that the market dictates the opportunities that you have as a trader over any given time horizon.
+
+Whether it's one day, one week, one month, a year, it doesn't matter.
+
+The market tells you what your opportunities are, not the other way around.
+
+You don't tell the market how much money you can make in a day, week, month, year.
+
+The market tells you.
+
+So let's go back to this example of the EURUSD, where, for example, you're about to trade this market, but you realise that the EURUSD hasn't moved at all.
+
+So it's a theoretical example.
+
+The EURUSD hasn't moved at all for the last year.
+
+So it's been the same price every day for the last year.
+
+Well, all that's going to happen is you're going to buy and sell the EURUSD at the same price.
+
+You're never going to make money, and therefore you can't make an income.
+
+You can't make a profit.
+
+You can't make a loss.
+
+You can't make anything.
+
+You can't do anything.
+
+This is what all professional traders know, and it's basic, but everybody misses this situation.
+
+Everybody thinks trading is for income, when professional traders know, and this is the important principle, that the market dictates your opportunities, and the volatility of that market specifically dictates those opportunities.
+
+So essentially, your job as a trader, and you'll hear this saying many, many times, you're a slave to volatility.
+
+A trader's job is being a slave to volatility over any given time horizon.
+
+So that's principle number two.
+
+No incoming trading, and the market dictates your opportunities, not the other way around.
+
+You are a slave to volatility.
+
+Now, let's have a look at problem number three with trading platforms and tools.
+
+So we looked at the Japanese corporate golfer.
+
+People view their trading platform as some sort of resource that is going to make them money.
+
+It's not going to make you a better trader, and that's the truth of it.
+
+What makes you a better trader is actually being able to use no resources and no tools whatsoever.
+
+So not paying thousands of dollars for software, having an all-singing, all-dancing trading platform.
+
+What's actually going to make you money is being able to make money with no resources at all.
+
+Because once you can make money with no resources at all, you can then make money with any resource.
+
+And this leads on to principle number four.
+
+And principle number four is the overload and misuse of information.
+
+Pretty much every day, you'll hear lots of information in the world.
+
+That this is important for this situation, this is important for this situation.
+
+The fact of the matter is, is that actually the vast, vast majority of information that you'll hear in the financial markets every day isn't going to make you money, and it isn't going to make you a better trader.
+
+It's not going to make you consistently profitable.
+
+Why?
+
+Because everything that you see in the populist media, so in newspapers, on television, online, on websites, on social media sites, it's usually all, in the vast, vast majority of cases, old news.
+
+It's talking about the past.
+
+And professional traders know that their job is to predict the future.
+
+So if you can predict the future and predict what's going to be in tomorrow's newspaper, or on the websites, or on television, all that's going to happen is, is you're going to take the position before it's news.
+
+And when it's news, those people who are reacting to the news are providing you with the liquidity to get at.
+
+So pretty much 97% of all information in the world, every single day, is irrelevant.
+
+It's not going to make you money.
+
+What trading's all about is, it's really a three-step process.
+
+It's identifying the relevant information that's potentially going to make you money, that's proven to make money over the past.
+
+Then taking that information, and interpreting it correctly.
+
+There's many people in the world that know what that information is, but they don't interpret it correctly.
+
+Once you've interpreted it, it's about turning it into real hard dollars.
+
+That's principle number four.
+
+Identifying the information that's relevant, interpreting it correctly, and turning it into real hard dollars.
+
+And cutting out all of the noise that doesn't actually mean anything.
+
+Now once you've done that, once you've done that, and you understand the four areas of why retail traders always lose money, you can actually move on to identifying what makes us a successful trader.
+
+And really, it's about doing the opposite.
+
+And that's what we're going to do in video number three.
+
+So identify those problems, understand them, and really stick to those principles.
+
+Because they're the principles that we're going to be sticking by all the way through this video series.
+
+Now we're going to move on to video three.
+
+And video three, we're going to start looking at the retail trader instruments that everybody trades, and the way that they trade them.
+
+And once you see these numbers, you're really going to understand the problems that retail traders face, and the processes that you can take from that information to make sure that the odds are actually turned in your favor.
+
+So let's move on to video three, and I'll see you then.
+
+Thank you.

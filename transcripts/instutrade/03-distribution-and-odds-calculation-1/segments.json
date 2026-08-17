@@ -1,0 +1,2075 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.64,
+      "text": "Okay, welcome back. Welcome to video three. Well done. You survived video two. Now, we're going to take what we learnt in video two and really start applying it to the real world. Now, how do we start applying this to the real world? Well, these principles that we've been through in video two, essentially what we're going to do is try and take the professional trader approach, which is always,"
+    },
+    {
+      "start": 29.64,
+      "end": 59.28,
+      "text": "starting with downloading data from the world that is publicly and freely available and downloading that data into Excel. Now, why is that important? Well, we're going to kill two birds with one stone here, actually, because what we're going to do is download data for S&P 500, sterling US dollar, euro US dollar, all of the major forex pairs and indices, essentially. And the first thing you're going to see is that"
+    },
+    {
+      "start": 59.28,
+      "end": 81.0,
+      "text": "over specific time horizons, you'll see that what retail traders do, what bad retail traders do, the guys who always lose money, they trade these instruments and trade them in a way where they actually consistently lose money because they're doing the opposite of what professional traders do, which is consistently make money."
+    },
+    {
+      "start": 81.96,
+      "end": 96.68,
+      "text": "And the second thing you're going to see really is how to do that process, how you go through that process to actually go into the world, get the data, download it, manipulate it in Excel."
+    },
+    {
+      "start": 97.54,
+      "end": 110.56,
+      "text": "So you're on top of the data and you understand the market that you're about to enter and what the opportunities are in terms of available opportunities to make money over time horizons in that market."
+    },
+    {
+      "start": 111.56,
+      "end": 126.88,
+      "text": "Now, once you understand that, you'll start really understanding why professional traders take the opposite approach to retail traders, because this is really the first thing that you would learn as a professional trader, as in going into the world and getting data."
+    },
+    {
+      "start": 127.54,
+      "end": 136.26,
+      "text": "Why's data are important? Because data tells you your opportunities in any given market, in any asset, over any time horizon."
+    },
+    {
+      "start": 136.26,
+      "end": 141.6,
+      "text": "So this process can be repeated. And it's really important because the numbers don't lie."
+    },
+    {
+      "start": 142.18,
+      "end": 145.34,
+      "text": "So what we're going to be looking at is historical volatility."
+    },
+    {
+      "start": 146.04,
+      "end": 157.82,
+      "text": "So the historical volatility of any given market is going to tell you pretty much what your opportunities are and what you should expect in terms of your odds of making certain amounts of money."
+    },
+    {
+      "start": 159.24,
+      "end": 171.0,
+      "text": "Now, when we've been through historical volatility, what's going to happen is Chris, Christopher Quill, who I'll introduce you to after we've been on the stage and gone through the presentation."
+    },
+    {
+      "start": 172.02,
+      "end": 180.32,
+      "text": "Christopher Quill, who works at the Institute, is going to go through on his computer how you repeat this process over and over again."
+    },
+    {
+      "start": 182.58,
+      "end": 191.02,
+      "text": "And you shouldn't be scared of it. It's not a difficult situation because once you've actually learned it, you've learned it and you can go through this process many, many times."
+    },
+    {
+      "start": 191.52,
+      "end": 197.3,
+      "text": "So you can actually go out into the world, download the data for any asset in the world."
+    },
+    {
+      "start": 197.76,
+      "end": 206.7,
+      "text": "And as long as you can get that data and you know this process, you can work out your opportunities of making money over any given time horizon."
+    },
+    {
+      "start": 208.7,
+      "end": 219.9,
+      "text": "So we'll go to the stage now, we'll cut over to the stage where I'm presenting and going through these numbers and what the process actually looks like."
+    },
+    {
+      "start": 220.28,
+      "end": 231.72,
+      "text": "And then we're going to come back and Chris is going to show you how to actually go through this process so you can do it for yourself over and over again throughout your lifetime."
+    },
+    {
+      "start": 232.5,
+      "end": 236.56,
+      "text": "And this is really important because this is the professional trader approach."
+    },
+    {
+      "start": 237.28,
+      "end": 242.18,
+      "text": "Data doesn't lie. Numbers don't lie. And every professional trader knows it."
+    },
+    {
+      "start": 243.02,
+      "end": 245.38,
+      "text": "Once you've got this knowledge, it's very, very empowering."
+    },
+    {
+      "start": 246.98,
+      "end": 256.14,
+      "text": "And professional traders will learn this pretty much in their first year or even couple of months when they join the industry."
+    },
+    {
+      "start": 257.08,
+      "end": 264.3,
+      "text": "You know, I know because I've worked in the industry, I've worked at Goldman Sachs, I've been on their graduate training program in New York."
+    },
+    {
+      "start": 264.72,
+      "end": 269.7,
+      "text": "And this is really what you learn when you start out as a trader."
+    },
+    {
+      "start": 270.18,
+      "end": 271.4,
+      "text": "It's the first thing you learn."
+    },
+    {
+      "start": 272.08,
+      "end": 277.62,
+      "text": "So you guys should absolutely learn how to go through this process so you can understand the opportunities."
+    },
+    {
+      "start": 278.56,
+      "end": 288.64,
+      "text": "So without further ado, let's go to the stage and I'll see you after that section back in the office and we will go through on Chris's computer."
+    },
+    {
+      "start": 289.24,
+      "end": 297.82,
+      "text": "Chris will show you how to do this in Excel and using the Internet as a freely available resources so you can do this for the rest of your life."
+    },
+    {
+      "start": 300.62,
+      "end": 302.18,
+      "text": "Okay, so let's go through this again."
+    },
+    {
+      "start": 302.38,
+      "end": 312.76,
+      "text": "Providing a framework that allows retail traders to emulate consistently profitable professional traders so you can benefit from the same approach."
+    },
+    {
+      "start": 314.42,
+      "end": 315.5,
+      "text": "Where does it all begin?"
+    },
+    {
+      "start": 317.08,
+      "end": 318.86,
+      "text": "It begins with processing data."
+    },
+    {
+      "start": 322.76,
+      "end": 328.42,
+      "text": "First thing you need to do is learn the behaviour and trends of what you're about to trade."
+    },
+    {
+      "start": 331.84,
+      "end": 335.86,
+      "text": "Only when you do that you can begin to understand what the potential upside and downside is."
+    },
+    {
+      "start": 339.04,
+      "end": 343.02,
+      "text": "And generally speaking on any decent analyst program at an investment bank"
+    },
+    {
+      "start": 343.02,
+      "end": 348.84,
+      "text": "or bespoke training program at a decent sized hedge fund."
+    },
+    {
+      "start": 350.14,
+      "end": 353.24,
+      "text": "So a decent sized hedge fund is really only 20 employees."
+    },
+    {
+      "start": 355.1,
+      "end": 356.6,
+      "text": "This will be the first thing you're taught."
+    },
+    {
+      "start": 359.08,
+      "end": 361.36,
+      "text": "You'll be taught the process of how to do this."
+    },
+    {
+      "start": 362.92,
+      "end": 366.2,
+      "text": "To run distributions and work out the odds."
+    },
+    {
+      "start": 367.2,
+      "end": 370.88,
+      "text": "And calculate the odds of making certain amounts of money."
+    },
+    {
+      "start": 373.02,
+      "end": 377.44,
+      "text": "So you can actually probability adjust your risk and manage your own expectations."
+    },
+    {
+      "start": 378.42,
+      "end": 380.72,
+      "text": "And do everything correctly from the top down."
+    },
+    {
+      "start": 385.6,
+      "end": 387.58,
+      "text": "And the numbers will speak for themselves."
+    },
+    {
+      "start": 389.96,
+      "end": 393.26,
+      "text": "Because every time you do this, the numbers are there."
+    },
+    {
+      "start": 393.48,
+      "end": 394.42,
+      "text": "They are what they are."
+    },
+    {
+      "start": 394.62,
+      "end": 396.1,
+      "text": "And everything else is just noise."
+    },
+    {
+      "start": 398.02,
+      "end": 400.88,
+      "text": "Your job as a trader is not to argue with the numbers."
+    },
+    {
+      "start": 401.36,
+      "end": 404.7,
+      "text": "It's to glean from the information that you've been given by the numbers."
+    },
+    {
+      "start": 405.14,
+      "end": 406.64,
+      "text": "What's important and what's not."
+    },
+    {
+      "start": 410.56,
+      "end": 413.4,
+      "text": "So the example we used earlier was the S&P 500."
+    },
+    {
+      "start": 413.96,
+      "end": 415.5,
+      "text": "The world's largest stock market."
+    },
+    {
+      "start": 417.88,
+      "end": 419.28,
+      "text": "We're going to look at stocks again."
+    },
+    {
+      "start": 419.6,
+      "end": 420.98,
+      "text": "And look at the S&P 500."
+    },
+    {
+      "start": 423.4,
+      "end": 428.02,
+      "text": "And we're going to do a distribution of daily returns of the S&P 500."
+    },
+    {
+      "start": 428.56,
+      "end": 430.2,
+      "text": "Going back for 50 years."
+    },
+    {
+      "start": 432.1,
+      "end": 433.64,
+      "text": "And what is the S&P 500?"
+    },
+    {
+      "start": 434.58,
+      "end": 436.9,
+      "text": "It's just the average return of 500 stocks."
+    },
+    {
+      "start": 440.56,
+      "end": 448.0,
+      "text": "So the numbers for the collection of the 500 stocks are very, very similar to the individual stocks themselves."
+    },
+    {
+      "start": 449.1,
+      "end": 452.86,
+      "text": "And you can repeat the process as many times as you want in any of those 500 stocks."
+    },
+    {
+      "start": 453.46,
+      "end": 456.46,
+      "text": "What will happen is those numbers will be fairly similar."
+    },
+    {
+      "start": 457.26,
+      "end": 460.82,
+      "text": "And the stocks will, the numbers will tend towards the average."
+    },
+    {
+      "start": 462.16,
+      "end": 463.68,
+      "text": "Over a big data set."
+    },
+    {
+      "start": 464.98,
+      "end": 466.5,
+      "text": "And we've got a monster data set here."
+    },
+    {
+      "start": 466.76,
+      "end": 467.32,
+      "text": "50 years."
+    },
+    {
+      "start": 467.84,
+      "end": 468.86,
+      "text": "Where's this data from?"
+    },
+    {
+      "start": 469.94,
+      "end": 472.52,
+      "text": "Did I buy it from a specialist outlet?"
+    },
+    {
+      "start": 473.68,
+      "end": 476.88,
+      "text": "Did I subscribe to a website for $500 a month?"
+    },
+    {
+      "start": 477.46,
+      "end": 479.58,
+      "text": "Did I pay Bloomberg $2,000 a month?"
+    },
+    {
+      "start": 479.92,
+      "end": 480.2,
+      "text": "No."
+    },
+    {
+      "start": 481.98,
+      "end": 483.3,
+      "text": "I got it from Yahoo Finance."
+    },
+    {
+      "start": 486.38,
+      "end": 487.6,
+      "text": "It's all publicly available."
+    },
+    {
+      "start": 489.34,
+      "end": 495.44,
+      "text": "The principle that we run throughout the whole of this course is that all of this information is publicly available."
+    },
+    {
+      "start": 496.18,
+      "end": 497.8,
+      "text": "So you don't have to rely on anything."
+    },
+    {
+      "start": 498.16,
+      "end": 500.06,
+      "text": "And you don't have to be the Japanese corporate golfer."
+    },
+    {
+      "start": 503.56,
+      "end": 507.2,
+      "text": "So you literally go on to Yahoo Finance."
+    },
+    {
+      "start": 507.56,
+      "end": 509.24,
+      "text": "Click on S&P 500 on the homepage."
+    },
+    {
+      "start": 509.8,
+      "end": 510.82,
+      "text": "You'll be taken to the page."
+    },
+    {
+      "start": 511.6,
+      "end": 512.92,
+      "text": "Go on the left-hand side menu."
+    },
+    {
+      "start": 513.52,
+      "end": 514.84,
+      "text": "Click on historical data."
+    },
+    {
+      "start": 516.5,
+      "end": 520.56,
+      "text": "You'll be given the option for daily, weekly, monthly, including or excluding dividends."
+    },
+    {
+      "start": 521.36,
+      "end": 522.06,
+      "text": "Click on daily."
+    },
+    {
+      "start": 523.06,
+      "end": 524.02,
+      "text": "Click on get prices."
+    },
+    {
+      "start": 524.44,
+      "end": 525.5,
+      "text": "Scroll to the bottom of the screen."
+    },
+    {
+      "start": 525.86,
+      "end": 526.64,
+      "text": "Download to spreadsheet."
+    },
+    {
+      "start": 528.58,
+      "end": 530.96,
+      "text": "And you'll be given open, high, low, and close."
+    },
+    {
+      "start": 534.62,
+      "end": 535.58,
+      "text": "OHLC data."
+    },
+    {
+      "start": 536.08,
+      "end": 537.08,
+      "text": "Open, high, low, close."
+    },
+    {
+      "start": 538.86,
+      "end": 540.04,
+      "text": "What are we interested in here?"
+    },
+    {
+      "start": 540.46,
+      "end": 542.52,
+      "text": "We're interested in the open and the close."
+    },
+    {
+      "start": 544.74,
+      "end": 549.94,
+      "text": "We're looking at the daily volatility of the S&P 500 every day for 50 years, from open to close."
+    },
+    {
+      "start": 553.14,
+      "end": 557.66,
+      "text": "So what's our window of opportunity to make money if we buy on the open and sell on the close?"
+    },
+    {
+      "start": 558.36,
+      "end": 561.78,
+      "text": "It's a bit far-fetched to say that we buy on the low and sell on the high."
+    },
+    {
+      "start": 566.0,
+      "end": 568.36,
+      "text": "Every day for 50 years, you'd have to be a super trader."
+    },
+    {
+      "start": 569.06,
+      "end": 569.76,
+      "text": "It doesn't exist."
+    },
+    {
+      "start": 570.94,
+      "end": 572.98,
+      "text": "So it's a slightly more realistic expectation."
+    },
+    {
+      "start": 576.22,
+      "end": 579.78,
+      "text": "So we've got 12,732 trading days."
+    },
+    {
+      "start": 581.98,
+      "end": 584.26,
+      "text": "From 1962 to 2012."
+    },
+    {
+      "start": 586.52,
+      "end": 592.58,
+      "text": "And we're using performance gates, as in returns, to see what the distribution is."
+    },
+    {
+      "start": 593.76,
+      "end": 594.68,
+      "text": "And what do we get?"
+    },
+    {
+      "start": 595.5,
+      "end": 602.62,
+      "text": "Well, we see from minus half a percent to zero percent, 3,141 trading days."
+    },
+    {
+      "start": 603.92,
+      "end": 607.88,
+      "text": "From zero percent to half a percent, 3,447."
+    },
+    {
+      "start": 609.1,
+      "end": 610.06,
+      "text": "Which means what?"
+    },
+    {
+      "start": 611.68,
+      "end": 620.28,
+      "text": "Between minus half a percent and plus half a percent, half of those trading days out of 12,732."
+    },
+    {
+      "start": 620.48,
+      "end": 621.14,
+      "text": "Roughly half."
+    },
+    {
+      "start": 625.0,
+      "end": 631.1,
+      "text": "And when you multiply through the frequencies, you get the average return of a down day and an up day."
+    },
+    {
+      "start": 631.56,
+      "end": 636.92,
+      "text": "As in, the average return this side and the average return that side of zero."
+    },
+    {
+      "start": 640.34,
+      "end": 648.16,
+      "text": "That comes to 0.33% down on a down day and 0.35% up on an up day."
+    },
+    {
+      "start": 650.62,
+      "end": 653.38,
+      "text": "So up days, the market goes up slightly more than when it goes down."
+    },
+    {
+      "start": 653.82,
+      "end": 656.9,
+      "text": "That kind of makes sense because over 50 years, the market's up."
+    },
+    {
+      "start": 662.4,
+      "end": 669.22,
+      "text": "But what if we just total up the frequencies and say how many days is the market down and how many days is the market up?"
+    },
+    {
+      "start": 672.22,
+      "end": 681.32,
+      "text": "Well, 47% of days, the market's down, which means if you bought on the open and sold on the close, 47% of times you'd have been wrong."
+    },
+    {
+      "start": 683.32,
+      "end": 684.94,
+      "text": "And 53% of days is up."
+    },
+    {
+      "start": 684.94,
+      "end": 694.2,
+      "text": "So if you'd have shorted on the open and bought back your short on the close, 53% of times you'd have been wrong."
+    },
+    {
+      "start": 698.1,
+      "end": 702.08,
+      "text": "So in the last 50 years, the market's been up thousands and thousands of percent."
+    },
+    {
+      "start": 704.34,
+      "end": 706.4,
+      "text": "But if you'd have traded every day, you wouldn't have made money."
+    },
+    {
+      "start": 708.9,
+      "end": 718.1,
+      "text": "Because the market wasn't up 80% of days and down 20% of days, it was pretty much 50-50, whether you were going to be right or not when you chose your direction."
+    },
+    {
+      "start": 722.26,
+      "end": 724.46,
+      "text": "But what does the distribution actually look like?"
+    },
+    {
+      "start": 725.3,
+      "end": 726.94,
+      "text": "So who knows what a normal distribution is?"
+    },
+    {
+      "start": 727.74,
+      "end": 728.92,
+      "text": "I'm assuming that you all do."
+    },
+    {
+      "start": 733.44,
+      "end": 735.26,
+      "text": "Teaching in Cass Business School here, not in a pub."
+    },
+    {
+      "start": 735.88,
+      "end": 737.32,
+      "text": "You should know what a normal distribution is."
+    },
+    {
+      "start": 738.9,
+      "end": 748.2,
+      "text": "A normal distribution, a one standard deviation, is 68% of cases, 68% of times, yeah?"
+    },
+    {
+      "start": 751.08,
+      "end": 754.88,
+      "text": "But the distribution of the stock market is different to a normal distribution."
+    },
+    {
+      "start": 755.6,
+      "end": 756.26,
+      "text": "It's way off."
+    },
+    {
+      "start": 758.28,
+      "end": 764.1,
+      "text": "The actual distribution of the S&P 500 is peakier around the mean, with fatter tails."
+    },
+    {
+      "start": 766.68,
+      "end": 768.68,
+      "text": "And there's a vacuum in the middle."
+    },
+    {
+      "start": 768.9,
+      "end": 770.38,
+      "text": "Between those occurrences."
+    },
+    {
+      "start": 772.46,
+      "end": 773.46,
+      "text": "So what does that mean?"
+    },
+    {
+      "start": 773.8,
+      "end": 774.68,
+      "text": "What does that tell us?"
+    },
+    {
+      "start": 775.22,
+      "end": 781.16,
+      "text": "Well, standard deviation, a one standard deviation day in the S&P 500, is 78% of times."
+    },
+    {
+      "start": 781.7,
+      "end": 782.62,
+      "text": "So call it 80."
+    },
+    {
+      "start": 783.46,
+      "end": 790.4,
+      "text": "It means 80% of the time, a normal day, the market moves up or down 0.35."
+    },
+    {
+      "start": 791.26,
+      "end": 794.48,
+      "text": "And 20% of times, something happens."
+    },
+    {
+      "start": 796.14,
+      "end": 796.92,
+      "text": "What happens?"
+    },
+    {
+      "start": 799.72,
+      "end": 800.7,
+      "text": "The market moves."
+    },
+    {
+      "start": 801.16,
+      "end": 803.42,
+      "text": "And it usually moves quite violently, up or down."
+    },
+    {
+      "start": 806.5,
+      "end": 808.42,
+      "text": "And there's kind of nothing in between."
+    },
+    {
+      "start": 812.26,
+      "end": 813.1,
+      "text": "Does that make sense?"
+    },
+    {
+      "start": 813.98,
+      "end": 816.82,
+      "text": "So this is the behavior of the animal that we're about to trade."
+    },
+    {
+      "start": 823.06,
+      "end": 824.84,
+      "text": "But we haven't even added in commission yet."
+    },
+    {
+      "start": 826.72,
+      "end": 827.92,
+      "text": "That's all gross numbers."
+    },
+    {
+      "start": 829.42,
+      "end": 834.32,
+      "text": "But before we add in commission, let's work out gross odds of making certain amounts of money."
+    },
+    {
+      "start": 836.88,
+      "end": 842.88,
+      "text": "So if you'd have bought on the open, with the intention of selling on the close, every day for the last 50 years."
+    },
+    {
+      "start": 845.44,
+      "end": 849.12,
+      "text": "The probability of you making half a percent was a 4 to 1 shot."
+    },
+    {
+      "start": 851.0,
+      "end": 851.44,
+      "text": "Against."
+    },
+    {
+      "start": 852.62,
+      "end": 855.14,
+      "text": "So 25% chance of making half a percent."
+    },
+    {
+      "start": 857.22,
+      "end": 860.52,
+      "text": "To make a percent, the odds were 9 to 1."
+    },
+    {
+      "start": 862.12,
+      "end": 863.28,
+      "text": "11% chance."
+    },
+    {
+      "start": 863.8,
+      "end": 864.86,
+      "text": "We saw that number earlier."
+    },
+    {
+      "start": 867.94,
+      "end": 873.06,
+      "text": "If you were shorting, to make half a percent, you would have had 4.4 to 1 odds."
+    },
+    {
+      "start": 873.98,
+      "end": 877.7,
+      "text": "And to make 1%, 9.5 to 1 odds against."
+    },
+    {
+      "start": 878.54,
+      "end": 881.22,
+      "text": "So the odds of making money shorting were slightly worse."
+    },
+    {
+      "start": 882.02,
+      "end": 882.98,
+      "text": "Which makes sense."
+    },
+    {
+      "start": 883.84,
+      "end": 885.92,
+      "text": "Because the market move up was slightly bigger."
+    },
+    {
+      "start": 886.5,
+      "end": 888.58,
+      "text": "And it was up more days than down."
+    },
+    {
+      "start": 888.98,
+      "end": 891.04,
+      "text": "And the market was up over 50 years."
+    },
+    {
+      "start": 892.7,
+      "end": 894.0,
+      "text": "So the numbers stack up."
+    },
+    {
+      "start": 894.44,
+      "end": 894.52,
+      "text": "Yeah?"
+    },
+    {
+      "start": 897.62,
+      "end": 899.34,
+      "text": "Now what happens when you add commission in?"
+    },
+    {
+      "start": 899.34,
+      "end": 904.28,
+      "text": "Well, let's do a theoretical exercise of just working out the level of commission."
+    },
+    {
+      "start": 904.42,
+      "end": 910.06,
+      "text": "That if we pay it as our standard rate, we can't day trade at all."
+    },
+    {
+      "start": 910.74,
+      "end": 912.84,
+      "text": "Because all our returns are lower than zero."
+    },
+    {
+      "start": 915.8,
+      "end": 924.9,
+      "text": "Well, if you add in a commission of 0.35, which is fairly reasonable because that's somewhere in between an execution only rate and an advisory rate."
+    },
+    {
+      "start": 926.48,
+      "end": 932.56,
+      "text": "Because 35.35 means 17 and a half in to trade."
+    },
+    {
+      "start": 933.04,
+      "end": 934.82,
+      "text": "17 and a half out to trade."
+    },
+    {
+      "start": 936.0,
+      "end": 937.0,
+      "text": "It's a round trip."
+    },
+    {
+      "start": 938.34,
+      "end": 942.06,
+      "text": "If you add that in, you get wiped out in all scenarios on a normal day."
+    },
+    {
+      "start": 945.06,
+      "end": 955.54,
+      "text": "So on a normal day, if you pay 17 and a half basis points in, 17 and a half basis points out, and you try day trading for the last 50 years, you literally had zero chance of making money."
+    },
+    {
+      "start": 959.72,
+      "end": 960.62,
+      "text": "These are the numbers."
+    },
+    {
+      "start": 960.62,
+      "end": 960.66,
+      "text": "These are the numbers."
+    },
+    {
+      "start": 960.96,
+      "end": 961.7,
+      "text": "This is the beast."
+    },
+    {
+      "start": 962.42,
+      "end": 964.24,
+      "text": "The beast has told you what it does."
+    },
+    {
+      "start": 967.94,
+      "end": 968.82,
+      "text": "It's not difficult."
+    },
+    {
+      "start": 969.24,
+      "end": 970.62,
+      "text": "And all the data is publicly available."
+    },
+    {
+      "start": 974.18,
+      "end": 975.1,
+      "text": "Back to this slide."
+    },
+    {
+      "start": 976.68,
+      "end": 979.98,
+      "text": "Now we know where we get the 0.11 from, the 11%."
+    },
+    {
+      "start": 979.98,
+      "end": 991.82,
+      "text": "Because you've got an 11% chance when buying the S&P 500, based on 50 years of historical data, that you'll make 1%, i.e. it hits your target."
+    },
+    {
+      "start": 995.32,
+      "end": 998.12,
+      "text": "So if you do the opposite of that, what are you doing?"
+    },
+    {
+      "start": 998.54,
+      "end": 999.76,
+      "text": "You're arguing with the beast."
+    },
+    {
+      "start": 1004.58,
+      "end": 1007.9,
+      "text": "80% of the time, the market, the beast, is asleep."
+    },
+    {
+      "start": 1010.62,
+      "end": 1012.96,
+      "text": "And 20% of the time, the beast wakes up."
+    },
+    {
+      "start": 1015.6,
+      "end": 1022.68,
+      "text": "So if we're connecting the dots and trying to figure out a sensible trading strategy to make money from the beast, how do we make money?"
+    },
+    {
+      "start": 1023.48,
+      "end": 1025.12,
+      "text": "Well, first of all, how do we not make money?"
+    },
+    {
+      "start": 1025.32,
+      "end": 1032.12,
+      "text": "By day trading the beast."
+    },
+    {
+      "start": 1033.46,
+      "end": 1035.5,
+      "text": "Because 80% of the time, we're not going to make money."
+    },
+    {
+      "start": 1037.18,
+      "end": 1041.84,
+      "text": "Only one in five days, and they don't come every Monday or every Friday."
+    },
+    {
+      "start": 1043.88,
+      "end": 1049.4,
+      "text": "One in five days, we're going to get a chance to trade and make money in one day."
+    },
+    {
+      "start": 1050.48,
+      "end": 1051.98,
+      "text": "Or over a short period of time."
+    },
+    {
+      "start": 1054.78,
+      "end": 1060.38,
+      "text": "But when you look through the past data, those periods of volatility all occur at the same time."
+    },
+    {
+      "start": 1061.58,
+      "end": 1061.82,
+      "text": "Why?"
+    },
+    {
+      "start": 1061.82,
+      "end": 1070.78,
+      "text": "Because something big happens in the world, where expectations change, and then volatility goes up, and opportunities occur."
+    },
+    {
+      "start": 1072.06,
+      "end": 1073.98,
+      "text": "Opportunities to make money on a short-term basis."
+    },
+    {
+      "start": 1074.24,
+      "end": 1076.82,
+      "text": "That doesn't mean opportunities don't exist full stop."
+    },
+    {
+      "start": 1078.04,
+      "end": 1079.64,
+      "text": "It's just the nature of the beast."
+    },
+    {
+      "start": 1079.64,
+      "end": 1084.84,
+      "text": "80% of the time, there's no opportunities to make money on a one day basis."
+    },
+    {
+      "start": 1084.84,
+      "end": 1086.38,
+      "text": "So what have you got to do?"
+    },
+    {
+      "start": 1086.38,
+      "end": 1091.64,
+      "text": "What have you got to do?"
+    },
+    {
+      "start": 1091.64,
+      "end": 1097.08,
+      "text": "You've got to increase your time horizon."
+    },
+    {
+      "start": 1097.08,
+      "end": 1104.44,
+      "text": "So you've got to increase your time horizon out to give yourself a chance of making money."
+    },
+    {
+      "start": 1104.44,
+      "end": 1112.04,
+      "text": "To give yourself a chance, or to give the beast a chance of allowing you to make money."
+    },
+    {
+      "start": 1112.04,
+      "end": 1113.72,
+      "text": "Make sense?"
+    },
+    {
+      "start": 1113.72,
+      "end": 1124.64,
+      "text": "Just buying or selling every day, the S&P 500, and just deciding a direction, is literally like going to the casino."
+    },
+    {
+      "start": 1124.64,
+      "end": 1125.64,
+      "text": "Drunk."
+    },
+    {
+      "start": 1125.64,
+      "end": 1141.24,
+      "text": "So you've got two choices, you can either walk into the casino drunk at 3am, with all your friends, change your money for chips, and play roulette."
+    },
+    {
+      "start": 1141.24,
+      "end": 1145.24,
+      "text": "And do it for the purpose of entertainment."
+    },
+    {
+      "start": 1145.24,
+      "end": 1152.64,
+      "text": "Or you can go at lunchtime and count cards, completely sober."
+    },
+    {
+      "start": 1152.64,
+      "end": 1155.64,
+      "text": "Who's going to win?"
+    },
+    {
+      "start": 1155.64,
+      "end": 1160.44,
+      "text": "The opportunity to make money on a daily basis is really widely misunderstood."
+    },
+    {
+      "start": 1160.44,
+      "end": 1163.64,
+      "text": "But those numbers are the numbers."
+    },
+    {
+      "start": 1163.64,
+      "end": 1174.44,
+      "text": "And every stock in the S&P 500, regardless of what anybody says, over time, will tend towards that average."
+    },
+    {
+      "start": 1174.44,
+      "end": 1178.84,
+      "text": "Everything else is noise."
+    },
+    {
+      "start": 1178.84,
+      "end": 1188.64,
+      "text": "If you're taught a day trading strategy, the person teaching it to you, either doesn't know this themselves, or they know it, and they're being totally irresponsible."
+    },
+    {
+      "start": 1188.64,
+      "end": 1192.84,
+      "text": "Maybe because of the conflict of interest."
+    },
+    {
+      "start": 1192.84,
+      "end": 1195.84,
+      "text": "Now you know these numbers, they're not going to change."
+    },
+    {
+      "start": 1195.84,
+      "end": 1202.84,
+      "text": "Now you know these numbers, you know to ask the question."
+    },
+    {
+      "start": 1202.84,
+      "end": 1210.84,
+      "text": "You can put these numbers in front of anybody that gives you a day trading strategy, who says, my day trading strategy works."
+    },
+    {
+      "start": 1210.84,
+      "end": 1214.84,
+      "text": "You can put this in front of them and say, no it doesn't, it only works 20% of the time."
+    },
+    {
+      "start": 1214.84,
+      "end": 1223.84,
+      "text": "But this is why the vast majority of retail traders just write cheques to the market every day."
+    },
+    {
+      "start": 1223.84,
+      "end": 1228.84,
+      "text": "Because they're going in and buying and selling something at the same price and paying a commission."
+    },
+    {
+      "start": 1228.84,
+      "end": 1232.84,
+      "text": "It's totally, totally terminal."
+    },
+    {
+      "start": 1232.84,
+      "end": 1235.84,
+      "text": "And you're just going to go to zero."
+    },
+    {
+      "start": 1235.84,
+      "end": 1237.84,
+      "text": "What about major currency pairs?"
+    },
+    {
+      "start": 1237.84,
+      "end": 1243.84,
+      "text": "Let's have a look at sterling US dollar cable."
+    },
+    {
+      "start": 1243.84,
+      "end": 1247.84,
+      "text": "Who knows why it's called cable?"
+    },
+    {
+      "start": 1247.84,
+      "end": 1259.84,
+      "text": "Yeah, so the copper wire that used to connect the electric telegraph between the UK and the US."
+    },
+    {
+      "start": 1259.84,
+      "end": 1262.84,
+      "text": "So sterling US dollar, the last 10 years of data."
+    },
+    {
+      "start": 1262.84,
+      "end": 1264.84,
+      "text": "What do we end up with?"
+    },
+    {
+      "start": 1264.84,
+      "end": 1273.84,
+      "text": "Well, to actually make this presentable, we've got to reduce the parameters from half a percent to a quarter of a percent."
+    },
+    {
+      "start": 1273.84,
+      "end": 1277.84,
+      "text": "Otherwise it would have looked ridiculous on the page."
+    },
+    {
+      "start": 1277.84,
+      "end": 1290.84,
+      "text": "So, but you add the numbers up and you're back again to about half the time, between minus a quarter of a percent and a quarter of a percent."
+    },
+    {
+      "start": 1290.84,
+      "end": 1302.84,
+      "text": "So 2,800 trading days and you end up with over a thousand, 1,100 being within those parameters."
+    },
+    {
+      "start": 1302.84,
+      "end": 1312.84,
+      "text": "What's the average return on an up day relative to an average return on a down day when multiplying through the frequencies?"
+    },
+    {
+      "start": 1312.84,
+      "end": 1319.84,
+      "text": "Up, 0.23, down, 0.22."
+    },
+    {
+      "start": 1319.84,
+      "end": 1324.84,
+      "text": "Down days, 49% of days."
+    },
+    {
+      "start": 1324.84,
+      "end": 1327.84,
+      "text": "Up days, 51% of days."
+    },
+    {
+      "start": 1327.84,
+      "end": 1334.84,
+      "text": "So the pound going up against the US dollar or going down against the US dollar in the last decade."
+    },
+    {
+      "start": 1334.84,
+      "end": 1337.84,
+      "text": "And what's the pound essentially done in the last decade?"
+    },
+    {
+      "start": 1337.84,
+      "end": 1339.84,
+      "text": "What's it done?"
+    },
+    {
+      "start": 1339.84,
+      "end": 1341.84,
+      "text": "It's gone from one and a half to two."
+    },
+    {
+      "start": 1341.84,
+      "end": 1346.84,
+      "text": "So pound buys one and a half dollars to pound buying two dollars."
+    },
+    {
+      "start": 1346.84,
+      "end": 1349.84,
+      "text": "And then it's gone from two back to one and a half."
+    },
+    {
+      "start": 1349.84,
+      "end": 1350.84,
+      "text": "That's what it's done in a decade."
+    },
+    {
+      "start": 1350.84,
+      "end": 1359.84,
+      "text": "So it's gone up 33% and fallen 25% in 10 years."
+    },
+    {
+      "start": 1359.84,
+      "end": 1362.84,
+      "text": "It's not exactly very exciting, is it?"
+    },
+    {
+      "start": 1362.84,
+      "end": 1367.84,
+      "text": "But every day, it's either up or down 50-50 chance."
+    },
+    {
+      "start": 1367.84,
+      "end": 1372.84,
+      "text": "What about the profile of the distribution?"
+    },
+    {
+      "start": 1372.84,
+      "end": 1379.84,
+      "text": "One standard deviation is 74% of times."
+    },
+    {
+      "start": 1379.84,
+      "end": 1384.84,
+      "text": "And relative to a normal distribution, peakier around the mean with fatter tails."
+    },
+    {
+      "start": 1384.84,
+      "end": 1389.84,
+      "text": "So it has a similar profile to the stock market, but pays less."
+    },
+    {
+      "start": 1389.84,
+      "end": 1405.84,
+      "text": "What are the odds of making certain amounts of money look like in sterling US dollar?"
+    },
+    {
+      "start": 1405.84,
+      "end": 1409.84,
+      "text": "To make a quarter of a percent when buying, 3.2 to 1 against."
+    },
+    {
+      "start": 1409.84,
+      "end": 1414.84,
+      "text": "To make half a percent, 5.6 to 1 against."
+    },
+    {
+      "start": 1414.84,
+      "end": 1420.84,
+      "text": "To make shorting, on a day when you decide to short, you've got a quarter of a percent."
+    },
+    {
+      "start": 1420.84,
+      "end": 1423.84,
+      "text": "A quarter of a percent, you've got 3.3 to 1 odds against."
+    },
+    {
+      "start": 1423.84,
+      "end": 1427.84,
+      "text": "And to make half a percent, 6 to 1 against."
+    },
+    {
+      "start": 1429.84,
+      "end": 1431.84,
+      "text": "And we haven't added in commission yet."
+    },
+    {
+      "start": 1431.84,
+      "end": 1433.84,
+      "text": "These are all gross numbers."
+    },
+    {
+      "start": 1433.84,
+      "end": 1436.84,
+      "text": "I hope you're not getting too depressed about this."
+    },
+    {
+      "start": 1436.84,
+      "end": 1442.84,
+      "text": "You don't need to get depressed, because it's fun."
+    },
+    {
+      "start": 1442.84,
+      "end": 1447.84,
+      "text": "Once you know these numbers, you're mentally superior to 99% of people in the market."
+    },
+    {
+      "start": 1449.84,
+      "end": 1452.84,
+      "text": "And then you learn to operate within that environment and make money."
+    },
+    {
+      "start": 1456.84,
+      "end": 1460.84,
+      "text": "What's the level where we get wiped out on a normal day, if we pay it?"
+    },
+    {
+      "start": 1461.84,
+      "end": 1462.84,
+      "text": "23 basis points."
+    },
+    {
+      "start": 1466.84,
+      "end": 1467.84,
+      "text": "What about EURUSD?"
+    },
+    {
+      "start": 1467.84,
+      "end": 1469.84,
+      "text": "We won't dwell on it too much."
+    },
+    {
+      "start": 1469.84,
+      "end": 1472.84,
+      "text": "I can tell you it's exactly the same as sterling US dollar."
+    },
+    {
+      "start": 1474.84,
+      "end": 1475.84,
+      "text": "Same profile."
+    },
+    {
+      "start": 1476.84,
+      "end": 1477.84,
+      "text": "Same returns on a day."
+    },
+    {
+      "start": 1478.84,
+      "end": 1480.84,
+      "text": "Up 25, down 24."
+    },
+    {
+      "start": 1483.84,
+      "end": 1484.84,
+      "text": "Same profile of distribution."
+    },
+    {
+      "start": 1486.84,
+      "end": 1489.84,
+      "text": "72.5% of times, one standard deviation day."
+    },
+    {
+      "start": 1491.84,
+      "end": 1494.84,
+      "text": "25 basis points wipes you out in all scenarios on a normal day."
+    },
+    {
+      "start": 1498.84,
+      "end": 1499.84,
+      "text": "Are we excited?"
+    },
+    {
+      "start": 1506.84,
+      "end": 1511.84,
+      "text": "Day trading currencies is even more misunderstood and over exaggerated."
+    },
+    {
+      "start": 1514.84,
+      "end": 1517.84,
+      "text": "Because everybody will tell you that the currencies markets are so liquid."
+    },
+    {
+      "start": 1518.84,
+      "end": 1521.84,
+      "text": "And you get a four trillion dollar market trading per day."
+    },
+    {
+      "start": 1524.84,
+      "end": 1525.84,
+      "text": "Who cares?"
+    },
+    {
+      "start": 1525.84,
+      "end": 1527.84,
+      "text": "The more liquid something is, the less opportunities there are."
+    },
+    {
+      "start": 1528.84,
+      "end": 1529.84,
+      "text": "As a general rule."
+    },
+    {
+      "start": 1530.84,
+      "end": 1532.84,
+      "text": "Liquidity doesn't have to be..."
+    },
+    {
+      "start": 1533.84,
+      "end": 1536.84,
+      "text": "Illiquidity doesn't have to be your enemy."
+    },
+    {
+      "start": 1537.84,
+      "end": 1541.84,
+      "text": "Illiquidity can be as much your friend as your enemy."
+    },
+    {
+      "start": 1544.84,
+      "end": 1546.84,
+      "text": "Because if you're on the right side of illiquidity,"
+    },
+    {
+      "start": 1547.84,
+      "end": 1549.84,
+      "text": "everything's going to move massive in your favour."
+    },
+    {
+      "start": 1556.84,
+      "end": 1558.84,
+      "text": "The whole argument that there's opportunities in the Forex market"
+    },
+    {
+      "start": 1559.84,
+      "end": 1561.84,
+      "text": "because it's a four trillion dollar market and it's liquid,"
+    },
+    {
+      "start": 1562.84,
+      "end": 1563.84,
+      "text": "is a ridiculous argument."
+    },
+    {
+      "start": 1564.84,
+      "end": 1565.84,
+      "text": "It doesn't matter to you."
+    },
+    {
+      "start": 1566.84,
+      "end": 1570.84,
+      "text": "Because actually most of that currency that's trading every day"
+    },
+    {
+      "start": 1571.84,
+      "end": 1573.84,
+      "text": "is just corporates hedging their currency exposure."
+    },
+    {
+      "start": 1574.84,
+      "end": 1579.84,
+      "text": "They're not taking a view on the currency."
+    },
+    {
+      "start": 1580.84,
+      "end": 1581.84,
+      "text": "They're just hedging their exposure."
+    },
+    {
+      "start": 1582.84,
+      "end": 1585.84,
+      "text": "It just doesn't matter at all."
+    },
+    {
+      "start": 1586.84,
+      "end": 1588.84,
+      "text": "As a retail trader or even a hedge fund manager."
+    },
+    {
+      "start": 1589.84,
+      "end": 1590.84,
+      "text": "It just doesn't matter."
+    },
+    {
+      "start": 1591.84,
+      "end": 1595.84,
+      "text": "What about leverage?"
+    },
+    {
+      "start": 1596.84,
+      "end": 1600.84,
+      "text": "The leverage doesn't change the odds."
+    },
+    {
+      "start": 1601.84,
+      "end": 1603.84,
+      "text": "The odds stay exactly the same."
+    },
+    {
+      "start": 1604.84,
+      "end": 1606.84,
+      "text": "It just means the more leverage you use,"
+    },
+    {
+      "start": 1607.84,
+      "end": 1609.84,
+      "text": "the quicker you're going to get wiped out."
+    },
+    {
+      "start": 1612.84,
+      "end": 1615.84,
+      "text": "So if you're on the other side of these odds,"
+    },
+    {
+      "start": 1618.84,
+      "end": 1619.84,
+      "text": "what essentially are you?"
+    },
+    {
+      "start": 1622.84,
+      "end": 1623.84,
+      "text": "Because these odds are against."
+    },
+    {
+      "start": 1624.84,
+      "end": 1624.84,
+      "text": "Let's start with that."
+    },
+    {
+      "start": 1625.84,
+      "end": 1628.84,
+      "text": "What does it mean when you say the odds are against?"
+    },
+    {
+      "start": 1631.84,
+      "end": 1634.84,
+      "text": "Let's use a sporting analogy."
+    },
+    {
+      "start": 1637.84,
+      "end": 1638.84,
+      "text": "Let's use boxing."
+    },
+    {
+      "start": 1640.84,
+      "end": 1645.84,
+      "text": "Where we stick a lightweight boxer in a boxing ring with a heavyweight boxer."
+    },
+    {
+      "start": 1646.84,
+      "end": 1648.84,
+      "text": "So Amir Khan and David Hay."
+    },
+    {
+      "start": 1650.84,
+      "end": 1651.84,
+      "text": "And you go to the casino to bet."
+    },
+    {
+      "start": 1652.84,
+      "end": 1654.84,
+      "text": "Who's the casino?"
+    },
+    {
+      "start": 1655.84,
+      "end": 1656.84,
+      "text": "It's the bookmaker."
+    },
+    {
+      "start": 1659.84,
+      "end": 1660.84,
+      "text": "It's William Hill."
+    },
+    {
+      "start": 1661.84,
+      "end": 1662.84,
+      "text": "It's Ladbrokes."
+    },
+    {
+      "start": 1663.84,
+      "end": 1664.84,
+      "text": "It's all of these guys here."
+    },
+    {
+      "start": 1665.84,
+      "end": 1665.84,
+      "text": "Betfair."
+    },
+    {
+      "start": 1666.84,
+      "end": 1667.84,
+      "text": "They're making all the prices."
+    },
+    {
+      "start": 1668.84,
+      "end": 1669.84,
+      "text": "So what are they actually doing?"
+    },
+    {
+      "start": 1671.84,
+      "end": 1672.84,
+      "text": "They're laying the odds."
+    },
+    {
+      "start": 1672.84,
+      "end": 1674.84,
+      "text": "They're the guys who are making the odds."
+    },
+    {
+      "start": 1675.84,
+      "end": 1677.84,
+      "text": "So what will the bookmaker offer you?"
+    },
+    {
+      "start": 1680.84,
+      "end": 1684.84,
+      "text": "On Amir Khan knocking out David Hay in round three."
+    },
+    {
+      "start": 1689.84,
+      "end": 1691.84,
+      "text": "What do you think they would make you at a price?"
+    },
+    {
+      "start": 1692.84,
+      "end": 1692.84,
+      "text": "20 to one."
+    },
+    {
+      "start": 1693.84,
+      "end": 1694.84,
+      "text": "You kidding me?"
+    },
+    {
+      "start": 1698.84,
+      "end": 1700.84,
+      "text": "You'd want much higher odds than that, wouldn't you?"
+    },
+    {
+      "start": 1701.84,
+      "end": 1702.84,
+      "text": "You'd want thousands to one."
+    },
+    {
+      "start": 1703.84,
+      "end": 1704.84,
+      "text": "Or hundreds to one at least."
+    },
+    {
+      "start": 1704.84,
+      "end": 1705.84,
+      "text": "It's just not going to happen."
+    },
+    {
+      "start": 1706.84,
+      "end": 1707.84,
+      "text": "He's twice his weight."
+    },
+    {
+      "start": 1708.84,
+      "end": 1708.84,
+      "text": "Right?"
+    },
+    {
+      "start": 1711.84,
+      "end": 1712.84,
+      "text": "So you're going to get really, really long odds."
+    },
+    {
+      "start": 1713.84,
+      "end": 1713.84,
+      "text": "Yeah?"
+    },
+    {
+      "start": 1714.84,
+      "end": 1717.84,
+      "text": "What odds are you going to get for David Hay just winning the fight?"
+    },
+    {
+      "start": 1724.84,
+      "end": 1724.84,
+      "text": "What do you think?"
+    },
+    {
+      "start": 1727.84,
+      "end": 1728.84,
+      "text": "Evens."
+    },
+    {
+      "start": 1729.84,
+      "end": 1730.84,
+      "text": "Who says you would get actually better odds?"
+    },
+    {
+      "start": 1732.84,
+      "end": 1733.84,
+      "text": "You would probably get worse."
+    },
+    {
+      "start": 1734.84,
+      "end": 1737.84,
+      "text": "You'd probably end up with the inverse of the S&P 500."
+    },
+    {
+      "start": 1740.84,
+      "end": 1744.84,
+      "text": "You'd probably get 11 to one on, which is the other way around."
+    },
+    {
+      "start": 1745.84,
+      "end": 1750.84,
+      "text": "So you bet a dollar and you get back a dollar and 11 cents."
+    },
+    {
+      "start": 1754.84,
+      "end": 1756.84,
+      "text": "Because he's odds on to win."
+    },
+    {
+      "start": 1757.84,
+      "end": 1758.84,
+      "text": "So what do we have to do?"
+    },
+    {
+      "start": 1759.84,
+      "end": 1764.84,
+      "text": "What do we have to do as traders if we know these numbers are always against us?"
+    },
+    {
+      "start": 1764.84,
+      "end": 1768.84,
+      "text": "What do we have to do?"
+    },
+    {
+      "start": 1769.84,
+      "end": 1773.84,
+      "text": "What do we have to do?"
+    },
+    {
+      "start": 1773.84,
+      "end": 1780.84,
+      "text": "You have to make the odds turn in your favor."
+    },
+    {
+      "start": 1781.84,
+      "end": 1784.84,
+      "text": "So every time you do something, you know the odds are in your favor."
+    },
+    {
+      "start": 1787.84,
+      "end": 1788.84,
+      "text": "Make sense?"
+    },
+    {
+      "start": 1788.84,
+      "end": 1795.84,
+      "text": "Because the bookmaker is on the other side of these odds and they're just going to win 90% of the time."
+    },
+    {
+      "start": 1800.84,
+      "end": 1805.84,
+      "text": "So you have to do the opposite to achieve the odds to get the odds that they're exposed to."
+    },
+    {
+      "start": 1806.84,
+      "end": 1806.84,
+      "text": "Yeah?"
+    },
+    {
+      "start": 1810.84,
+      "end": 1811.84,
+      "text": "Okay, so welcome back."
+    },
+    {
+      "start": 1811.84,
+      "end": 1816.84,
+      "text": "I hope you managed to get your head around that process a little bit there."
+    },
+    {
+      "start": 1817.84,
+      "end": 1819.84,
+      "text": "You know, this process is obviously new."
+    },
+    {
+      "start": 1820.84,
+      "end": 1821.84,
+      "text": "So don't get scared of it."
+    },
+    {
+      "start": 1822.84,
+      "end": 1834.84,
+      "text": "Once you've been through this process a few times, you will start to really understand the mistakes that retail traders typically make in the instruments that they typically trade."
+    },
+    {
+      "start": 1835.84,
+      "end": 1841.84,
+      "text": "Therefore, you'll start to really understand the opposite approach, as in the professional approach."
+    },
+    {
+      "start": 1842.84,
+      "end": 1848.84,
+      "text": "The approach that consistently profitable professional traders actually do."
+    },
+    {
+      "start": 1849.84,
+      "end": 1856.84,
+      "text": "And I guess the numbers that you've seen may be a little bit shocking."
+    },
+    {
+      "start": 1857.84,
+      "end": 1864.84,
+      "text": "So when we look at major indices and major currency pairs, these are the instruments that retail traders trade all the time."
+    },
+    {
+      "start": 1865.84,
+      "end": 1868.84,
+      "text": "And they tend to trade them on a very short term basis."
+    },
+    {
+      "start": 1869.84,
+      "end": 1879.84,
+      "text": "Now, what we're simulating here by taking the historical data and the historical volatility distribution, what we're simulating here is day trading."
+    },
+    {
+      "start": 1880.84,
+      "end": 1884.84,
+      "text": "And we're using the data from the open to the close on a one day basis."
+    },
+    {
+      "start": 1885.84,
+      "end": 1895.84,
+      "text": "Now, when you look at the stock market, the stock market, the S&P 500, it's just a representation, the average return of an S&P 500 stock."
+    },
+    {
+      "start": 1896.84,
+      "end": 1902.84,
+      "text": "So when you look at the 500 stocks in the S&P 500, they're going to tend towards this distribution."
+    },
+    {
+      "start": 1903.84,
+      "end": 1910.84,
+      "text": "So you can repeat this process in any S&P 500 stock and the numbers will be a little bit more volatile."
+    },
+    {
+      "start": 1910.84,
+      "end": 1918.84,
+      "text": "But over time, they all tend towards this central number of up or down 35 basis points in the stock market."
+    },
+    {
+      "start": 1919.84,
+      "end": 1925.84,
+      "text": "And in the download section, you're going to see numbers for other major indices."
+    },
+    {
+      "start": 1926.84,
+      "end": 1928.84,
+      "text": "And you'll see that they're actually very, very similar."
+    },
+    {
+      "start": 1929.84,
+      "end": 1937.84,
+      "text": "So that should send you a very, very strong message in that the 0.85, the 85% breakeven threshold,"
+    },
+    {
+      "start": 1938.84,
+      "end": 1950.84,
+      "text": "once you probability adjust making 1% in the S&P 500 should start to change your expectations as a trader."
+    },
+    {
+      "start": 1951.84,
+      "end": 1958.84,
+      "text": "Because what this market is essentially telling you is that very few opportunities occur on a one day basis."
+    },
+    {
+      "start": 1959.84,
+      "end": 1969.84,
+      "text": "In fact, when you look at the distribution, we've already seen that a normal day in the S&P 500 is 78% of times."
+    },
+    {
+      "start": 1970.84,
+      "end": 1975.84,
+      "text": "Which means 80% of the time, there's pretty much no opportunity to make money on a one day basis."
+    },
+    {
+      "start": 1976.84,
+      "end": 1978.84,
+      "text": "And this is very similar in major currency pairs."
+    },
+    {
+      "start": 1979.84,
+      "end": 1983.84,
+      "text": "Because in major currency pairs, a normal day is 73% of times."
+    },
+    {
+      "start": 1984.84,
+      "end": 1990.84,
+      "text": "Which means around three quarters of times, there's essentially no day trading opportunities."
+    },
+    {
+      "start": 1991.84,
+      "end": 1995.84,
+      "text": "Or very little day trading opportunities in those major currency pairs."
+    },
+    {
+      "start": 1996.84,
+      "end": 1999.84,
+      "text": "And we're talking about the instruments that retail traders trade all the time."
+    },
+    {
+      "start": 2000.84,
+      "end": 2002.84,
+      "text": "Sterling US dollar, Euro US dollar."
+    },
+    {
+      "start": 2003.84,
+      "end": 2007.84,
+      "text": "In the download section, you're going to see more data for different major currency pairs."
+    },
+    {
+      "start": 2008.84,
+      "end": 2015.84,
+      "text": "And you'll see that the numbers are pretty similar across the board for all major currency pairs."
+    },
+    {
+      "start": 2016.84,
+      "end": 2026.84,
+      "text": "So, when you look at this and you think, well, my objective is to make money using my own money and take no income from it."
+    },
+    {
+      "start": 2027.84,
+      "end": 2040.84,
+      "text": "Well, it very clearly shows that if you're going into this market, and the market's telling you what your opportunities are, it's pretty clear that it's telling you a few things."
+    },
+    {
+      "start": 2041.84,
+      "end": 2044.84,
+      "text": "Firstly, it's telling you that you can't make income from it."
+    },
+    {
+      "start": 2045.84,
+      "end": 2050.84,
+      "text": "Because, secondly, and most importantly, you can't make money from it over time."
+    },
+    {
+      "start": 2051.84,
+      "end": 2063.84,
+      "text": "Because all that's going to happen when you trade these instruments on a one day basis, is that on a normal day, the odds are always going to be stacked against you."
+    },
+    {
+      "start": 2064.84,
+      "end": 2068.84,
+      "text": "Which means, over time, your account can only go to zero."
+    },
+    {
+      "start": 2069.84,
+      "end": 2070.84,
+      "text": "Your trading account can only go to zero."
+    },
+    {
+      "start": 2071.84,
+      "end": 2073.84,
+      "text": "Now, what's on the other side of that?"
+    },
+    {
+      "start": 2074.84,
+      "end": 2080.84,
+      "text": "On the other side of that, is people who are stacking the odds in their favour, because they're increasing their time horizon."
+    },
+    {
+      "start": 2082.84,
+      "end": 2093.84,
+      "text": "Now, you can repeat these processes, and Chris is going to show you, in the next video, how you repeat those processes on a one day basis, on a one week basis, on a one month basis."
+    },
+    {
+      "start": 2094.84,
+      "end": 2095.84,
+      "text": "It's very, very straightforward."
+    },
+    {
+      "start": 2096.84,
+      "end": 2100.84,
+      "text": "Don't be scared of doing it, because once you've learned how to do it, you've learned how to do it forever."
+    },
+    {
+      "start": 2101.84,
+      "end": 2104.84,
+      "text": "And this is the first thing you should be learning, as a real trader."
+    },
+    {
+      "start": 2105.84,
+      "end": 2114.84,
+      "text": "Not a retail trader who loses money, a trader who wants to make money, with their own money, over time, and grow their account, to become wealthier."
+    },
+    {
+      "start": 2115.84,
+      "end": 2123.84,
+      "text": "Now, these numbers don't change, and the numbers speak for themselves. The market is telling you what your opportunities are."
+    },
+    {
+      "start": 2124.84,
+      "end": 2129.84,
+      "text": "You don't tell the market, how much money you can make, over any time horizon."
+    },
+    {
+      "start": 2130.84,
+      "end": 2134.84,
+      "text": "When people leverage, these numbers don't change. The market doesn't care."
+    },
+    {
+      "start": 2135.84,
+      "end": 2146.84,
+      "text": "So, whether you put a hundred dollars into this trading strategy, or you put a hundred thousand dollars, a million dollars, or a hundred million dollars, into this strategy, it just means one thing."
+    },
+    {
+      "start": 2147.84,
+      "end": 2152.84,
+      "text": "Your account will go to zero. The market does not care. It has no memory."
+    },
+    {
+      "start": 2153.84,
+      "end": 2167.84,
+      "text": "So, I think that's probably the most shocking thing, is that when you trade on a margin account, and you're borrowing money to essentially trade with your own money on margin."
+    },
+    {
+      "start": 2168.84,
+      "end": 2175.84,
+      "text": "Whether you put ten down, a hundred down, or a million down, on this strategy, it's a strategy that just doesn't work."
+    },
+    {
+      "start": 2176.84,
+      "end": 2180.84,
+      "text": "So, why would you put more money into it? It doesn't make any logical sense whatsoever."
+    },
+    {
+      "start": 2181.84,
+      "end": 2183.84,
+      "text": "What you have to be, is actually be on the other side."
+    },
+    {
+      "start": 2184.84,
+      "end": 2189.84,
+      "text": "And, if you're going to leverage, you should only be leveraging strategies that actually work."
+    },
+    {
+      "start": 2190.84,
+      "end": 2197.84,
+      "text": "So, Chris is going to show you now, in video number four, how you actually go through these processes."
+    },
+    {
+      "start": 2198.84,
+      "end": 2208.84,
+      "text": "So, you can use Excel, and as long as you can get the data, you can do this with any asset, anywhere in the world, across all the major asset classes."
+    },
+    {
+      "start": 2209.84,
+      "end": 2216.84,
+      "text": "So, across indices, stocks, as in equities combined, currencies, commodities, and rates."
+    },
+    {
+      "start": 2217.84,
+      "end": 2220.84,
+      "text": "You can do this for any asset, as long as you can get the data."
+    },
+    {
+      "start": 2221.84,
+      "end": 2230.84,
+      "text": "So, let's go over to Chris. Chris is going to show you how to do this on the computer screen, in video four, so you can do this forever, for the rest of your life."
+    },
+    {
+      "start": 2231.84,
+      "end": 2240.84,
+      "text": "This is going to save you a hell of a lot of money, and it's going to lay the foundation for you to enter strategies where the odds are actually in your favor."
+    },
+    {
+      "start": 2241.84,
+      "end": 2243.84,
+      "text": "Thank you."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

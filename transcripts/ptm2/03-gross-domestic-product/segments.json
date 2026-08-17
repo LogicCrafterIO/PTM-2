@@ -1,0 +1,3555 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.0,
+      "text": "Okay, so welcome back to the computer screen. Welcome to video number three, where we're going to look at the importance of gross domestic product, GDP. Now, let's get into it. So, gross domestic product, it's part of a discipline that we call macroeconomics."
+    },
+    {
+      "start": 29.0,
+      "end": 58.0,
+      "text": "Okay. And as traders, when we're analysing macroeconomics, we refer to this as top-down analysis. So, basically, we're looking at the larger economy, and looking at everything from a top-down perspective. Okay. So, for video three, what we're going to do first, is we're going to define gross domestic product, GDP, and why it's so important in the world of trading and investing."
+    },
+    {
+      "start": 58.0,
+      "end": 73.0,
+      "text": "And only when you understand this importance, the importance of GDP, are you really going to appreciate why we have to build first, in our overall framework, a macro view, a macroeconomic view."
+    },
+    {
+      "start": 73.0,
+      "end": 98.0,
+      "text": "So, we seek to build a macroeconomic view and have an analysis from the top-down, firstly, in our overall trading framework. And if you recall the framework itself, you'll recall that the majority of our trade idea generation process is rooted in fundamentals."
+    },
+    {
+      "start": 98.0,
+      "end": 113.0,
+      "text": "So, in front of us here, we have the pro-trader systematic framework, 20 to 60 days time horizon, split up into the theory and the implementation of a trade idea and running a portfolio."
+    },
+    {
+      "start": 113.0,
+      "end": 130.0,
+      "text": "And on the left-hand side, within theory, so our research, when we're researching trade ideas, we are split up into fundamentals and timing. And in the majority, we are fundamental, which is split up into quantitative and qualitative processes."
+    },
+    {
+      "start": 130.0,
+      "end": 152.0,
+      "text": "So, from a top-down perspective, what we're doing is looking at the quantitative process through the lens of macro and the top-down analysis. And essentially, what we're trying to do here, from a quantitative perspective, is look at macroeconomic fundamentals."
+    },
+    {
+      "start": 152.0,
+      "end": 168.0,
+      "text": "We're looking at macroeconomic fundamentals, okay? We're looking at macroeconomic fundamentals, and we're trying to predict GDP. If we can do that, we can predict, to a large extent, stock market returns."
+    },
+    {
+      "start": 168.0,
+      "end": 184.0,
+      "text": "So, before we get into that, for many people that are new to macroeconomics, we need to actually go through some definitions that relate to GDP."
+    },
+    {
+      "start": 184.0,
+      "end": 202.0,
+      "text": "So, nominal GDP, this is the total income of a country for a given year. Real GDP, the total income of a country for a given year, so nominal GDP, adjusted for the level of inflation."
+    },
+    {
+      "start": 202.0,
+      "end": 211.0,
+      "text": "Okay? These are very, very important definitions, but very easy to understand, okay? But we do have to get them out of the way, so there's no confusion."
+    },
+    {
+      "start": 211.0,
+      "end": 219.0,
+      "text": "Let's take a recession. A recession, two consecutive quarters of negative, real GDP growth, okay?"
+    },
+    {
+      "start": 219.0,
+      "end": 235.0,
+      "text": "GDP itself. When economists and market commentators refer loosely to, open quotes, GDP, close quotes, what they are really referring to is real GDP."
+    },
+    {
+      "start": 235.0,
+      "end": 243.0,
+      "text": "So, if you ever hear economists and market commentators referring to it, that's what they're referring to, real GDP."
+    },
+    {
+      "start": 243.0,
+      "end": 253.0,
+      "text": "They're not referring to the total income of a country, nominal GDP. They're referring to nominal GDP adjusted for inflation, so real GDP."
+    },
+    {
+      "start": 253.0,
+      "end": 267.0,
+      "text": "Next up, correlation. If two variables are correlated positively or negatively, they move in the same, so positively or opposite, negatively direction, okay?"
+    },
+    {
+      "start": 267.0,
+      "end": 281.0,
+      "text": "So, if you have actually done the IPLT video series, you will be familiar to an extent with correlation."
+    },
+    {
+      "start": 281.0,
+      "end": 287.0,
+      "text": "So, if you have already seen correlation, and coming to the first time, and coming to PTM for the first time, and seeing correlation for the first time."
+    },
+    {
+      "start": 287.0,
+      "end": 289.0,
+      "text": "It's pretty important to understand this."
+    },
+    {
+      "start": 289.0,
+      "end": 293.0,
+      "text": "Go to the downloads area of this video."
+    },
+    {
+      "start": 293.0,
+      "end": 307.0,
+      "text": "You'll see a PDF called basic statistics guide, and that will take you through a whole bunch of basics on statistics, but also correlation."
+    },
+    {
+      "start": 307.0,
+      "end": 315.0,
+      "text": "So, go through that. It's important to understand and have a basic understanding of statistics and correlation as we're building up our knowledge."
+    },
+    {
+      "start": 315.0,
+      "end": 326.0,
+      "text": "But, with correlation, it's pretty straightforward. If there's two variables, and they're correlated positively, it means they move in the same direction."
+    },
+    {
+      "start": 326.0,
+      "end": 333.0,
+      "text": "If they go in the opposite direction, it means they're correlated negatively."
+    },
+    {
+      "start": 333.0,
+      "end": 342.0,
+      "text": "Now, in the context of macroeconomics and top-down analysis, we need some definitions on indicators, okay?"
+    },
+    {
+      "start": 342.0,
+      "end": 347.0,
+      "text": "And there's three indicators based on time horizon."
+    },
+    {
+      "start": 347.0,
+      "end": 352.0,
+      "text": "So, there's leading indicators, coincident indicators, and lagging indicators."
+    },
+    {
+      "start": 352.0,
+      "end": 354.0,
+      "text": "So, what is a leading indicator?"
+    },
+    {
+      "start": 354.0,
+      "end": 361.0,
+      "text": "Well, a leading indicator is an indicator that moves before the economy moves, okay?"
+    },
+    {
+      "start": 361.0,
+      "end": 368.0,
+      "text": "A coincident indicator is simply an indicator that moves at or around the same time as the economy."
+    },
+    {
+      "start": 368.0,
+      "end": 375.0,
+      "text": "And a lagging indicator is an indicator that moves after the economy actually moves."
+    },
+    {
+      "start": 375.0,
+      "end": 378.0,
+      "text": "Now, don't worry about these definitions too much."
+    },
+    {
+      "start": 378.0,
+      "end": 390.0,
+      "text": "Just for now, take them as they are, and we will continue building up our knowledge and understanding of macroeconomics, top-down analysis, and GDP."
+    },
+    {
+      "start": 390.0,
+      "end": 404.0,
+      "text": "Next, let's have a look at the relationship between gross domestic product, GDP, company earnings, and the S&P 500 direction and returns, okay?"
+    },
+    {
+      "start": 404.0,
+      "end": 411.0,
+      "text": "Let's have a look at that relationship, but let's first understand GDP and how it's reported."
+    },
+    {
+      "start": 411.0,
+      "end": 416.0,
+      "text": "So, GDP is reported quarterly, okay?"
+    },
+    {
+      "start": 416.0,
+      "end": 418.0,
+      "text": "And we have four quarters."
+    },
+    {
+      "start": 418.0,
+      "end": 421.0,
+      "text": "So, we have Q1, Q2, Q3, and Q4."
+    },
+    {
+      "start": 421.0,
+      "end": 426.0,
+      "text": "But GDP is reported after those quarters are completed."
+    },
+    {
+      "start": 426.0,
+      "end": 433.0,
+      "text": "So, Q1 GDP, for example, and Q1 is January, February, March."
+    },
+    {
+      "start": 433.0,
+      "end": 436.0,
+      "text": "Q1 GDP is reported in April."
+    },
+    {
+      "start": 436.0,
+      "end": 440.0,
+      "text": "Q2 GDP is reported in July."
+    },
+    {
+      "start": 440.0,
+      "end": 443.0,
+      "text": "Q3 GDP is reported in October."
+    },
+    {
+      "start": 443.0,
+      "end": 448.0,
+      "text": "Q4 GDP is reported in October, and Q4 GDP is reported in January."
+    },
+    {
+      "start": 448.0,
+      "end": 463.0,
+      "text": "So, by its very definition, gross domestic product, GDP, is a backwards-looking measure of all the transactions that make up the entire value of the economy."
+    },
+    {
+      "start": 463.0,
+      "end": 474.0,
+      "text": "However, the stock market itself speculates on the future, so forward value of companies via earnings, okay?"
+    },
+    {
+      "start": 474.0,
+      "end": 481.0,
+      "text": "So, GDP is, by definition, a lagging indicator."
+    },
+    {
+      "start": 481.0,
+      "end": 490.0,
+      "text": "However, the stock market trades every day, Monday to Friday, and is therefore a leading indicator to earnings and GDP."
+    },
+    {
+      "start": 490.0,
+      "end": 504.0,
+      "text": "So, if the S&P 500 is predicting earnings and predicting gross domestic product, and the stock market is open every day, and earnings and GDP is reported in the future,"
+    },
+    {
+      "start": 504.0,
+      "end": 511.0,
+      "text": "then the S&P 500 is a proxy for forward earnings and forward GDP."
+    },
+    {
+      "start": 511.0,
+      "end": 517.0,
+      "text": "We can use the S&P as an instrument to predict earnings and GDP."
+    },
+    {
+      "start": 517.0,
+      "end": 521.0,
+      "text": "Or, in general, the stock market."
+    },
+    {
+      "start": 521.0,
+      "end": 529.0,
+      "text": "We can use the stock market and stocks as proxy instruments to predict earnings and GDP."
+    },
+    {
+      "start": 529.0,
+      "end": 536.0,
+      "text": "So, more definitions here inside the top-down analysis remit."
+    },
+    {
+      "start": 536.0,
+      "end": 543.0,
+      "text": "When we're looking at variables, we mentioned correlation earlier."
+    },
+    {
+      "start": 543.0,
+      "end": 548.0,
+      "text": "We're looking essentially here at two variables."
+    },
+    {
+      "start": 548.0,
+      "end": 555.0,
+      "text": "In this context, we're looking at the S&P 500 and GDP, which we will come on to later."
+    },
+    {
+      "start": 555.0,
+      "end": 560.0,
+      "text": "But, basic definitions when we have two variables."
+    },
+    {
+      "start": 560.0,
+      "end": 562.0,
+      "text": "What can the outcomes be?"
+    },
+    {
+      "start": 562.0,
+      "end": 567.0,
+      "text": "Well, there can only be four outcomes, okay?"
+    },
+    {
+      "start": 567.0,
+      "end": 572.0,
+      "text": "So, we have two variables, A and B, and there's only four outcomes."
+    },
+    {
+      "start": 572.0,
+      "end": 575.0,
+      "text": "So, what are those outcomes?"
+    },
+    {
+      "start": 575.0,
+      "end": 581.0,
+      "text": "Well, first outcome, variable A goes down and variable B goes down."
+    },
+    {
+      "start": 581.0,
+      "end": 583.0,
+      "text": "They both move in the same direction."
+    },
+    {
+      "start": 583.0,
+      "end": 588.0,
+      "text": "Variable A goes up and variable B goes up."
+    },
+    {
+      "start": 588.0,
+      "end": 590.0,
+      "text": "They both move in the same direction."
+    },
+    {
+      "start": 590.0,
+      "end": 594.0,
+      "text": "Variable A goes down and variable B goes up."
+    },
+    {
+      "start": 594.0,
+      "end": 595.0,
+      "text": "Variable B goes up."
+    },
+    {
+      "start": 595.0,
+      "end": 597.0,
+      "text": "They move in opposite directions."
+    },
+    {
+      "start": 597.0,
+      "end": 602.0,
+      "text": "And finally, variable A goes up and variable B goes down."
+    },
+    {
+      "start": 602.0,
+      "end": 604.0,
+      "text": "Again, moving in opposite directions."
+    },
+    {
+      "start": 604.0,
+      "end": 609.0,
+      "text": "So, there's only a set of finite outcomes that can occur."
+    },
+    {
+      "start": 610.0,
+      "end": 617.0,
+      "text": "Now, we're going to get into the S&P 500 and GDP and correlations there."
+    },
+    {
+      "start": 617.0,
+      "end": 623.0,
+      "text": "There's three downloads, however, that you really need to get stuck into."
+    },
+    {
+      "start": 623.0,
+      "end": 631.0,
+      "text": "I understand in the downloads area that support the slides on the screen."
+    },
+    {
+      "start": 631.0,
+      "end": 634.0,
+      "text": "Of course, you can look at this in your own time."
+    },
+    {
+      "start": 634.0,
+      "end": 636.0,
+      "text": "You can rewind the video."
+    },
+    {
+      "start": 636.0,
+      "end": 642.0,
+      "text": "Go back and understand the commentary around these numbers and what's actually happening."
+    },
+    {
+      "start": 642.0,
+      "end": 652.0,
+      "text": "But, definitely download the Excel spreadsheets and the PDF as supporting material and resources"
+    },
+    {
+      "start": 652.0,
+      "end": 657.0,
+      "text": "to fully understand what's going on here and your educational development."
+    },
+    {
+      "start": 657.0,
+      "end": 665.0,
+      "text": "GDP is very important and S&P 500 returns being linked to GDP is very important."
+    },
+    {
+      "start": 665.0,
+      "end": 669.0,
+      "text": "And it's our foundation for moving forward in the video series."
+    },
+    {
+      "start": 669.0,
+      "end": 677.0,
+      "text": "So, download those spreadsheets and the PDF and try to understand the numbers."
+    },
+    {
+      "start": 677.0,
+      "end": 678.0,
+      "text": "So, there's only two variables."
+    },
+    {
+      "start": 678.0,
+      "end": 687.0,
+      "text": "Now, we mentioned that there's only two variables, A and B, and there's only four finite outcomes."
+    },
+    {
+      "start": 687.0,
+      "end": 692.0,
+      "text": "Those two variables that we're going to look at are the S&P 500 and GDP."
+    },
+    {
+      "start": 692.0,
+      "end": 710.0,
+      "text": "So, what we've got here is a table on the left-hand side where we're looking at US real GDP, quarterly GDP, and we're looking at S&P 500 quarterly returns."
+    },
+    {
+      "start": 710.0,
+      "end": 711.0,
+      "text": "Okay."
+    },
+    {
+      "start": 711.0,
+      "end": 725.0,
+      "text": "So, you can see in the two columns where we've got US real GDP and the S&P 500 returns with a six-month lag."
+    },
+    {
+      "start": 725.0,
+      "end": 732.0,
+      "text": "So, we have the level of GDP and we have the level of the S&P and we compare the two."
+    },
+    {
+      "start": 732.0,
+      "end": 738.0,
+      "text": "But the S&P 500 data is lagged by six months."
+    },
+    {
+      "start": 738.0,
+      "end": 751.0,
+      "text": "So, what we're trying to do here is analyze the relationship between US real GDP and the S&P 500 data."
+    },
+    {
+      "start": 751.0,
+      "end": 756.0,
+      "text": "That is, and the S&P 500 data is lagged by six months."
+    },
+    {
+      "start": 756.0,
+      "end": 758.0,
+      "text": "Why do we do this?"
+    },
+    {
+      "start": 758.0,
+      "end": 778.0,
+      "text": "Well, if we look at quarterly GDP, okay, and we compare it to six-month lag data from the S&P 500, what we're looking at here is whether the S&P predicts GDP by six months."
+    },
+    {
+      "start": 778.0,
+      "end": 801.0,
+      "text": "So, if you look in the first row where we have both pieces of data, where we have Q3 in 1950, okay, we have 2.338 trillion for US real GDP and we have 17.29 as the level on the S&P 500."
+    },
+    {
+      "start": 801.0,
+      "end": 812.0,
+      "text": "And you can see that the S&P 500 data starts after Q3 or the end of Q3, okay."
+    },
+    {
+      "start": 812.0,
+      "end": 823.0,
+      "text": "And then every piece of data after that is, again, lagged by six months, whereas the GDP data is from that moment in time."
+    },
+    {
+      "start": 823.0,
+      "end": 828.0,
+      "text": "It's reported GDP data for that moment in time."
+    },
+    {
+      "start": 828.0,
+      "end": 831.0,
+      "text": "And we do this all the way up to the present day."
+    },
+    {
+      "start": 831.0,
+      "end": 836.0,
+      "text": "And we can analyze whether the S&P 500 predicts GDP."
+    },
+    {
+      "start": 836.0,
+      "end": 840.0,
+      "text": "Therefore, whether it is leading or not."
+    },
+    {
+      "start": 840.0,
+      "end": 844.0,
+      "text": "Is it a leading indicator of GDP by six months?"
+    },
+    {
+      "start": 844.0,
+      "end": 849.0,
+      "text": "Are the two variables correlated, okay?"
+    },
+    {
+      "start": 849.0,
+      "end": 857.0,
+      "text": "Now, we do this very crudely, quite simply, by looking at the four potential outcomes."
+    },
+    {
+      "start": 857.0,
+      "end": 866.0,
+      "text": "So, we have the outcomes where they move in the same direction and the outcomes where they move in the opposite direction."
+    },
+    {
+      "start": 866.0,
+      "end": 869.0,
+      "text": "And we can assign simple scores to this."
+    },
+    {
+      "start": 869.0,
+      "end": 883.0,
+      "text": "So, if, for example, both the S&P 500 data and the GDP data were reported down, what we do is we assign a 0-0 scenario."
+    },
+    {
+      "start": 883.0,
+      "end": 884.0,
+      "text": "Okay?"
+    },
+    {
+      "start": 884.0,
+      "end": 890.0,
+      "text": "So, we have a 0-0 scenario for the outcome."
+    },
+    {
+      "start": 890.0,
+      "end": 897.0,
+      "text": "If the S&P 500 and GDP are reported up, we assign a 1-1 score."
+    },
+    {
+      "start": 897.0,
+      "end": 899.0,
+      "text": "Okay?"
+    },
+    {
+      "start": 899.0,
+      "end": 908.0,
+      "text": "If the S&P 500 is reported down and GDP is reported up, we assign a 0-1 score."
+    },
+    {
+      "start": 908.0,
+      "end": 909.0,
+      "text": "Okay?"
+    },
+    {
+      "start": 909.0,
+      "end": 917.0,
+      "text": "And if the S&P 500 is reported up and GDP is reported down, we assign a score of 1-0."
+    },
+    {
+      "start": 917.0,
+      "end": 918.0,
+      "text": "Okay?"
+    },
+    {
+      "start": 918.0,
+      "end": 922.0,
+      "text": "So, let's run through a quick example."
+    },
+    {
+      "start": 922.0,
+      "end": 932.0,
+      "text": "If you scan the data on the left-hand side, and then we just randomly pick a particular quarter."
+    },
+    {
+      "start": 932.0,
+      "end": 937.0,
+      "text": "So, let's pick Q1, 1956."
+    },
+    {
+      "start": 937.0,
+      "end": 938.0,
+      "text": "Okay?"
+    },
+    {
+      "start": 938.0,
+      "end": 943.0,
+      "text": "So, just about halfway down the page, Q1, 1956."
+    },
+    {
+      "start": 943.0,
+      "end": 948.0,
+      "text": "We can see the S&P 500 level is 43.67."
+    },
+    {
+      "start": 948.0,
+      "end": 959.0,
+      "text": "And the GDP reported number for Q1, 1956 is 2903, $2.9 trillion."
+    },
+    {
+      "start": 959.0,
+      "end": 961.0,
+      "text": "So, $2.903 trillion."
+    },
+    {
+      "start": 961.0,
+      "end": 964.0,
+      "text": "And if we compare that to the row above."
+    },
+    {
+      "start": 964.0,
+      "end": 967.0,
+      "text": "So, we look at Q4, 1955."
+    },
+    {
+      "start": 967.0,
+      "end": 977.0,
+      "text": "The S&P 500 level in Q4, 1955, lagged by six months, is 41.03."
+    },
+    {
+      "start": 977.0,
+      "end": 978.0,
+      "text": "Okay?"
+    },
+    {
+      "start": 978.0,
+      "end": 984.0,
+      "text": "So, the GDP number is 2.914 trillion."
+    },
+    {
+      "start": 984.0,
+      "end": 991.0,
+      "text": "Now, when we compare that, what happens in Q1, 1956?"
+    },
+    {
+      "start": 991.0,
+      "end": 998.0,
+      "text": "Well, the S&P 500 went up because it went from 41.03 to 43.67."
+    },
+    {
+      "start": 998.0,
+      "end": 1001.0,
+      "text": "And the GDP number went down."
+    },
+    {
+      "start": 1001.0,
+      "end": 1006.0,
+      "text": "It went from 2.914 trillion to 2.903 trillion."
+    },
+    {
+      "start": 1006.0,
+      "end": 1007.0,
+      "text": "So, what do we do?"
+    },
+    {
+      "start": 1007.0,
+      "end": 1016.0,
+      "text": "For the S&P in that row, we put a number 1 in the cell for the S&P."
+    },
+    {
+      "start": 1016.0,
+      "end": 1020.0,
+      "text": "Because the S&P went up during that period."
+    },
+    {
+      "start": 1020.0,
+      "end": 1024.0,
+      "text": "For the GDP number, we know GDP went down."
+    },
+    {
+      "start": 1024.0,
+      "end": 1027.0,
+      "text": "So, we put a 0 in that cell."
+    },
+    {
+      "start": 1027.0,
+      "end": 1029.0,
+      "text": "So, what's the total here?"
+    },
+    {
+      "start": 1029.0,
+      "end": 1031.0,
+      "text": "It's a total of 1."
+    },
+    {
+      "start": 1031.0,
+      "end": 1033.0,
+      "text": "And what is the scenario?"
+    },
+    {
+      "start": 1033.0,
+      "end": 1036.0,
+      "text": "Well, it's a 1, 0."
+    },
+    {
+      "start": 1036.0,
+      "end": 1040.0,
+      "text": "What we also do is we report a total."
+    },
+    {
+      "start": 1040.0,
+      "end": 1047.0,
+      "text": "We record a total for S&P and GDP data."
+    },
+    {
+      "start": 1047.0,
+      "end": 1056.0,
+      "text": "So, in this example, in Q1, 1956, the S&P was up."
+    },
+    {
+      "start": 1056.0,
+      "end": 1058.0,
+      "text": "So, we had a 1 score."
+    },
+    {
+      "start": 1058.0,
+      "end": 1059.0,
+      "text": "GDP was down."
+    },
+    {
+      "start": 1059.0,
+      "end": 1060.0,
+      "text": "We had a 0 score."
+    },
+    {
+      "start": 1060.0,
+      "end": 1062.0,
+      "text": "Therefore, the total is 1."
+    },
+    {
+      "start": 1062.0,
+      "end": 1071.0,
+      "text": "If we were looking at the row above, which is Q4 1955, we have a 1-1 situation."
+    },
+    {
+      "start": 1071.0,
+      "end": 1073.0,
+      "text": "So, the total is 2."
+    },
+    {
+      "start": 1073.0,
+      "end": 1083.0,
+      "text": "And the outcome for a 2 total is when S&P 500 and GDP were both reported up."
+    },
+    {
+      "start": 1083.0,
+      "end": 1089.0,
+      "text": "So, we assign a score of 1 and 1, and we get to a total of 2."
+    },
+    {
+      "start": 1089.0,
+      "end": 1106.0,
+      "text": "And we can analyze all of this data to better learn and understand what the relationship is between the S&P 500 and GDP, and whether S&P 500 predicts GDP, and to what level of accuracy."
+    },
+    {
+      "start": 1106.0,
+      "end": 1110.0,
+      "text": "Now, we're going to have a look at the results on the screen."
+    },
+    {
+      "start": 1110.0,
+      "end": 1114.0,
+      "text": "You can obviously look at these in the downloads area as well."
+    },
+    {
+      "start": 1114.0,
+      "end": 1115.0,
+      "text": "Download the spreadsheet."
+    },
+    {
+      "start": 1115.0,
+      "end": 1117.0,
+      "text": "Have a look at all the numbers."
+    },
+    {
+      "start": 1117.0,
+      "end": 1119.0,
+      "text": "Familiarize yourself with it."
+    },
+    {
+      "start": 1119.0,
+      "end": 1120.0,
+      "text": "And here's the results."
+    },
+    {
+      "start": 1120.0,
+      "end": 1140.0,
+      "text": "So, we have across the top, A, B, C, D. So, the 0-0 situation is A. B is the 1-1 situation. C is the 0-1 outcome. And D is the 1-0 outcome."
+    },
+    {
+      "start": 1140.0,
+      "end": 1157.0,
+      "text": "And what we find is this. Historically, GDP explains 60.85%, which is the 1-1 scenario, plus the 0-0 situation, 8.19%."
+    },
+    {
+      "start": 1157.0,
+      "end": 1166.0,
+      "text": "Historically, GDP explains 69.04% of S&P 500 moves."
+    },
+    {
+      "start": 1166.0,
+      "end": 1171.0,
+      "text": "This is essentially when they move in the same direction."
+    },
+    {
+      "start": 1171.0,
+      "end": 1175.0,
+      "text": "How do we know this? Well, we just total these up."
+    },
+    {
+      "start": 1175.0,
+      "end": 1185.0,
+      "text": "So, if you look from left to right, in the 0-0 situation, this happens 23 times out of 281 quarters."
+    },
+    {
+      "start": 1185.0,
+      "end": 1189.0,
+      "text": "That's our total data set, 281 quarters."
+    },
+    {
+      "start": 1189.0,
+      "end": 1194.0,
+      "text": "The 1-1 situation happens 171 times."
+    },
+    {
+      "start": 1194.0,
+      "end": 1202.0,
+      "text": "So, in the significant majority, 171 times out of 281 cases."
+    },
+    {
+      "start": 1202.0,
+      "end": 1208.0,
+      "text": "And then we have the situation where they move in the opposite direction."
+    },
+    {
+      "start": 1208.0,
+      "end": 1217.0,
+      "text": "We have 72 cases out of 281, where we have the 0-1 outcome."
+    },
+    {
+      "start": 1217.0,
+      "end": 1227.0,
+      "text": "And in the 1-0 outcome, we have the smallest amount in our data set, which is 15 cases out of 281."
+    },
+    {
+      "start": 1227.0,
+      "end": 1238.0,
+      "text": "So, we can see from the table quite clearly that when the S&P 500 and GDP don't move in the opposite direction."
+    },
+    {
+      "start": 1238.0,
+      "end": 1239.0,
+      "text": "Okay."
+    },
+    {
+      "start": 1239.0,
+      "end": 1248.0,
+      "text": "The majority of the time, it's because the S&P 500 moves down and GDP doesn't go down."
+    },
+    {
+      "start": 1248.0,
+      "end": 1250.0,
+      "text": "So, GDP is reported up."
+    },
+    {
+      "start": 1250.0,
+      "end": 1253.0,
+      "text": "So, in this scenario, what is happening?"
+    },
+    {
+      "start": 1253.0,
+      "end": 1260.0,
+      "text": "Well, it can probably be explained by an overextension in stock markets when we look at stock market history."
+    },
+    {
+      "start": 1260.0,
+      "end": 1267.0,
+      "text": "So, what we have is a quarter of profit-taking or price corrections in the market,"
+    },
+    {
+      "start": 1267.0,
+      "end": 1278.0,
+      "text": "whilst the underlying GDP, gross domestic product, the growth in GDP remains strong or remains positive."
+    },
+    {
+      "start": 1278.0,
+      "end": 1286.0,
+      "text": "So, overall, when these two variables move in the same direction, S&P 500 and GDP,"
+    },
+    {
+      "start": 1286.0,
+      "end": 1293.0,
+      "text": "when they move in the same direction, it accounts for 69.04% of cases."
+    },
+    {
+      "start": 1293.0,
+      "end": 1299.0,
+      "text": "When they don't move in the same direction, they move in the opposite direction."
+    },
+    {
+      "start": 1299.0,
+      "end": 1304.0,
+      "text": "This accounts for 30.96% of cases."
+    },
+    {
+      "start": 1304.0,
+      "end": 1315.0,
+      "text": "Now, in the vast majority of times, when they move in the same direction, so 60.85% of times, they both move up."
+    },
+    {
+      "start": 1315.0,
+      "end": 1316.0,
+      "text": "Okay."
+    },
+    {
+      "start": 1316.0,
+      "end": 1324.0,
+      "text": "And then, in a small amount of cases, they both move down, the 8.19% of cases."
+    },
+    {
+      "start": 1324.0,
+      "end": 1333.0,
+      "text": "And when they both move in the same direction and go up, that's in the vast majority, 60.85% of cases."
+    },
+    {
+      "start": 1333.0,
+      "end": 1334.0,
+      "text": "Okay."
+    },
+    {
+      "start": 1334.0,
+      "end": 1339.0,
+      "text": "Now, taken together, same direction, 69.04%."
+    },
+    {
+      "start": 1339.0,
+      "end": 1346.0,
+      "text": "If we look at the zero-one situation, this is by far the biggest outcome."
+    },
+    {
+      "start": 1346.0,
+      "end": 1357.0,
+      "text": "When the S&P 500 goes down and GDP remains up, GDP growth remains up, this is by far the biggest outcome,"
+    },
+    {
+      "start": 1357.0,
+      "end": 1360.0,
+      "text": "when they both move in the opposite direction."
+    },
+    {
+      "start": 1360.0,
+      "end": 1368.0,
+      "text": "So, the 69.04 plus the 25.62, that's a pretty significant number."
+    },
+    {
+      "start": 1368.0,
+      "end": 1372.0,
+      "text": "In fact, it's a very significant number."
+    },
+    {
+      "start": 1372.0,
+      "end": 1382.0,
+      "text": "Because, when you add these two together, we get 94.66% of cases."
+    },
+    {
+      "start": 1382.0,
+      "end": 1383.0,
+      "text": "Okay."
+    },
+    {
+      "start": 1383.0,
+      "end": 1393.0,
+      "text": "So, scenarios A, B, and C, if we can predict those situations, we have massive odds in our favor."
+    },
+    {
+      "start": 1393.0,
+      "end": 1402.0,
+      "text": "But, just being able to predict them both moving in the same direction, that gives us still extremely good odds."
+    },
+    {
+      "start": 1402.0,
+      "end": 1414.0,
+      "text": "So, if we can predict GDP, and we predict using the S&P 500 as an instrument to represent our view,"
+    },
+    {
+      "start": 1414.0,
+      "end": 1419.0,
+      "text": "69% of times, we're going to get it right."
+    },
+    {
+      "start": 1419.0,
+      "end": 1426.0,
+      "text": "The market is going to move in the same direction as GDP, assuming that we can predict it."
+    },
+    {
+      "start": 1426.0,
+      "end": 1427.0,
+      "text": "Okay."
+    },
+    {
+      "start": 1427.0,
+      "end": 1437.0,
+      "text": "So, let's just summarize this in terms of prediction and what it means for a trader or a long-short portfolio manager."
+    },
+    {
+      "start": 1437.0,
+      "end": 1443.0,
+      "text": "Well, if we look at scenario A, if we can predict that GDP will fall, what are we doing?"
+    },
+    {
+      "start": 1443.0,
+      "end": 1444.0,
+      "text": "What action are we taking?"
+    },
+    {
+      "start": 1444.0,
+      "end": 1446.0,
+      "text": "We're selling the stock market."
+    },
+    {
+      "start": 1446.0,
+      "end": 1448.0,
+      "text": "We're selling S&P 500."
+    },
+    {
+      "start": 1448.0,
+      "end": 1449.0,
+      "text": "Okay."
+    },
+    {
+      "start": 1449.0,
+      "end": 1453.0,
+      "text": "We're probably short stocks, net short stocks."
+    },
+    {
+      "start": 1453.0,
+      "end": 1458.0,
+      "text": "If we're predicting that GDP will rise, what are we doing?"
+    },
+    {
+      "start": 1458.0,
+      "end": 1460.0,
+      "text": "We're buying the stock market."
+    },
+    {
+      "start": 1460.0,
+      "end": 1465.0,
+      "text": "We're going to have a long bias in our portfolio."
+    },
+    {
+      "start": 1465.0,
+      "end": 1474.0,
+      "text": "Scenario C, where we get the stock market going down, but GDP growth is reported up."
+    },
+    {
+      "start": 1474.0,
+      "end": 1476.0,
+      "text": "So, what are we doing here?"
+    },
+    {
+      "start": 1476.0,
+      "end": 1483.0,
+      "text": "Well, we're predicting a potential overextension in the market, and we're predicting profit-taking."
+    },
+    {
+      "start": 1483.0,
+      "end": 1487.0,
+      "text": "So, the action that we're taking is to sell the S&P 500."
+    },
+    {
+      "start": 1487.0,
+      "end": 1490.0,
+      "text": "Now, that doesn't mean that we're necessarily short."
+    },
+    {
+      "start": 1490.0,
+      "end": 1497.0,
+      "text": "It just means that we could be taking profits ourselves and having our risk under control."
+    },
+    {
+      "start": 1497.0,
+      "end": 1500.0,
+      "text": "We could be short of the right stuff."
+    },
+    {
+      "start": 1500.0,
+      "end": 1502.0,
+      "text": "We can be long other stuff."
+    },
+    {
+      "start": 1502.0,
+      "end": 1514.0,
+      "text": "What we're doing here is just understanding at the moment that there is a scenario where we must, at moments in time, based on historical data, predict a profit-taking scenario."
+    },
+    {
+      "start": 1514.0,
+      "end": 1527.0,
+      "text": "The last scenario, scenario D, the 1-0, where the S&P 500 is up, reported up, and GDP is reported down."
+    },
+    {
+      "start": 1527.0,
+      "end": 1529.0,
+      "text": "Well, this is pretty unpredictable."
+    },
+    {
+      "start": 1529.0,
+      "end": 1532.0,
+      "text": "This is in the vast minority of cases."
+    },
+    {
+      "start": 1532.0,
+      "end": 1540.0,
+      "text": "Very unpredictable for a trader, portfolio manager, to predict the outcome on this."
+    },
+    {
+      "start": 1540.0,
+      "end": 1544.0,
+      "text": "So, if it's unpredictable, we're probably staying flat."
+    },
+    {
+      "start": 1544.0,
+      "end": 1548.0,
+      "text": "And what we don't mean by flat here is that you have no position."
+    },
+    {
+      "start": 1548.0,
+      "end": 1553.0,
+      "text": "What we mean is that you've probably got a neutral portfolio."
+    },
+    {
+      "start": 1553.0,
+      "end": 1559.0,
+      "text": "So, when we look at this historical data, it does have some pretty profound implications."
+    },
+    {
+      "start": 1559.0,
+      "end": 1578.0,
+      "text": "The first major implication for traders and PMs is that if we can actually predict GDP, so the 0-0 and the 1-1 fundamental situation, okay, and on top of that, take profits at the right times."
+    },
+    {
+      "start": 1578.0,
+      "end": 1583.0,
+      "text": "So, perhaps using technical analysis and price action indicators."
+    },
+    {
+      "start": 1583.0,
+      "end": 1587.0,
+      "text": "Our market direction is going to be right."
+    },
+    {
+      "start": 1587.0,
+      "end": 1600.0,
+      "text": "8.19 plus 60.85 plus 25.62, so 94.66% of the time."
+    },
+    {
+      "start": 1600.0,
+      "end": 1602.0,
+      "text": "That is huge odds."
+    },
+    {
+      "start": 1602.0,
+      "end": 1607.0,
+      "text": "And, obviously, it's not that easy to do it."
+    },
+    {
+      "start": 1607.0,
+      "end": 1615.0,
+      "text": "It's not realistic that throughout our couriers, we're going to be right 94.66% of times."
+    },
+    {
+      "start": 1615.0,
+      "end": 1625.0,
+      "text": "But, what it does tell us as traders PMs, the historical data, what it does tell us is some profound stuff."
+    },
+    {
+      "start": 1625.0,
+      "end": 1646.0,
+      "text": "That when we're trying to use the S&P 500 as an instrument to forecast and back with real money the direction of GDP using the S&P 500, then we can have massive odds in our favour when doing that."
+    },
+    {
+      "start": 1646.0,
+      "end": 1653.0,
+      "text": "And, remember, this S&P 500 data is six months lagging."
+    },
+    {
+      "start": 1653.0,
+      "end": 1664.0,
+      "text": "So, what we're looking at here is S&P 500 data predicting GDP moves by six months."
+    },
+    {
+      "start": 1664.0,
+      "end": 1675.0,
+      "text": "So, the performance of the S&P 500, the stock market, predicting the GDP move by six months."
+    },
+    {
+      "start": 1675.0,
+      "end": 1680.0,
+      "text": "So, it's pretty profound stuff when you look at the historical evidence."
+    },
+    {
+      "start": 1680.0,
+      "end": 1693.0,
+      "text": "And, again, of course, we're not going to be able to do this all the time, every time throughout our trading career because markets are dynamic and markets change over time."
+    },
+    {
+      "start": 1694.0,
+      "end": 1713.0,
+      "text": "But, if we can call the market direction, 60% to 80% of quarters throughout our careers by predicting GDP, what GDP is going to be six months from now, then if we select the right positions, we can be very, very profitable."
+    },
+    {
+      "start": 1713.0,
+      "end": 1717.0,
+      "text": "60% to 80% is still insane."
+    },
+    {
+      "start": 1717.0,
+      "end": 1724.0,
+      "text": "It's fantastic probability in our favour, fantastic odds in our favour."
+    },
+    {
+      "start": 1724.0,
+      "end": 1737.0,
+      "text": "Now, if you've done the IPLT video series, you will have seen all of the different time horizons where we looked at various methods to calculate odds and outcomes."
+    },
+    {
+      "start": 1737.0,
+      "end": 1743.0,
+      "text": "And one of them was day trading and day trading the S&P 500."
+    },
+    {
+      "start": 1743.0,
+      "end": 1746.0,
+      "text": "You'll know that's essentially 50-50 throughout time."
+    },
+    {
+      "start": 1747.0,
+      "end": 1766.0,
+      "text": "The percentage probability here of being right using top-down macroeconomic fundamentals to predict GDP and therefore predict S&P 500 returns on a quarterly basis is a lot, lot higher than day trading the S&P 500."
+    },
+    {
+      "start": 1766.0,
+      "end": 1773.0,
+      "text": "And this is exactly why professional traders take this approach."
+    },
+    {
+      "start": 1773.0,
+      "end": 1794.0,
+      "text": "We're looking at macroeconomics and the bigger picture and we're trying to predict GDP and we're using stocks, the stock market, as a proxy for GDP to predict the future."
+    },
+    {
+      "start": 1794.0,
+      "end": 1795.0,
+      "text": "Okay."
+    },
+    {
+      "start": 1795.0,
+      "end": 1814.0,
+      "text": "And within the stock market, we're looking at using stocks themselves as a proxy to explain our overall view on GDP, forward-looking GDP."
+    },
+    {
+      "start": 1814.0,
+      "end": 1822.0,
+      "text": "Now, if you've done the IPLT video series, this will be familiar to you, where we look at equity indices."
+    },
+    {
+      "start": 1822.0,
+      "end": 1833.0,
+      "text": "So S&P 500 volatility, we look at daily, weekly, monthly and quarterly, and we compare it to stocks."
+    },
+    {
+      "start": 1833.0,
+      "end": 1834.0,
+      "text": "Okay."
+    },
+    {
+      "start": 1834.0,
+      "end": 1835.0,
+      "text": "We compare it to volatility."
+    },
+    {
+      "start": 1835.0,
+      "end": 1845.0,
+      "text": "So if you look in the top left here, we looked at the distribution of returns analysis, the average standard deviation of returns."
+    },
+    {
+      "start": 1845.0,
+      "end": 1855.0,
+      "text": "And highlighted there is the S&P 500 daily, weekly, monthly and quarterly numbers utilizing the distribution of returns method."
+    },
+    {
+      "start": 1855.0,
+      "end": 1864.0,
+      "text": "We also look, if you look on the right-hand side, we utilized high and low data and we looked at average returns."
+    },
+    {
+      "start": 1864.0,
+      "end": 1876.0,
+      "text": "And obviously, because high and low data is wider than the narrow form of the DOR, we get slightly higher results for daily, weekly, monthly and quarterly."
+    },
+    {
+      "start": 1876.0,
+      "end": 1893.0,
+      "text": "But if we actually look at high and low data for large cap and mid cap stocks, especially on a quarterly basis, we can see that the numbers are significantly higher when looking at large and mid cap stocks."
+    },
+    {
+      "start": 1893.0,
+      "end": 1914.0,
+      "text": "So if we look at the S&P 500 at 12.8% high, low average returns from historical data, we can compare that to large cap and mid cap stocks of large caps, 36% and mid caps around 53%."
+    },
+    {
+      "start": 1914.0,
+      "end": 1923.0,
+      "text": "So the high, low average returns for those two data sets, large cap and mid cap stocks, you can see the difference."
+    },
+    {
+      "start": 1923.0,
+      "end": 1924.0,
+      "text": "It's quite vast."
+    },
+    {
+      "start": 1924.0,
+      "end": 1935.0,
+      "text": "And you can also see this when we look at the average true range percentage analysis, the ATRP analysis, we get the same results."
+    },
+    {
+      "start": 1935.0,
+      "end": 1945.0,
+      "text": "So we have another implication here, another strong implication when thinking about this in the context of predicting GDP."
+    },
+    {
+      "start": 1945.0,
+      "end": 1964.0,
+      "text": "So if we can predict GDP and be right 60 to 80% of times in our careers, then we're not only getting a far higher percentage chance of making money versus say day trading, which gives us the 50-50 expected return of zero."
+    },
+    {
+      "start": 1964.0,
+      "end": 1971.0,
+      "text": "But we're getting a 60 to 80% chance of making significantly higher returns."
+    },
+    {
+      "start": 1971.0,
+      "end": 1972.0,
+      "text": "Why?"
+    },
+    {
+      "start": 1972.0,
+      "end": 1975.0,
+      "text": "Because we're not utilizing the S&P 500."
+    },
+    {
+      "start": 1975.0,
+      "end": 1980.0,
+      "text": "We're utilizing stocks, okay, which are more volatile."
+    },
+    {
+      "start": 1980.0,
+      "end": 1995.0,
+      "text": "And specifically, we're utilizing large cap and mid cap stocks as proxies to build portfolios for our future view, our future prediction of gross domestic product."
+    },
+    {
+      "start": 1995.0,
+      "end": 2014.0,
+      "text": "Now, we will come on to large cap and mid cap stocks much later in the video series when we're looking specifically in the trade idea generation process when we're looking at stocks themselves."
+    },
+    {
+      "start": 2014.0,
+      "end": 2029.0,
+      "text": "But for now, we have an entire portion of the PTM video series dedicated to understanding and predicting GDP."
+    },
+    {
+      "start": 2029.0,
+      "end": 2030.0,
+      "text": "Why?"
+    },
+    {
+      "start": 2030.0,
+      "end": 2033.0,
+      "text": "Because it genuinely is that important."
+    },
+    {
+      "start": 2033.0,
+      "end": 2039.0,
+      "text": "Your macroeconomic view, your macroeconomic outlook is extremely important."
+    },
+    {
+      "start": 2039.0,
+      "end": 2041.0,
+      "text": "And it's the start of everything."
+    },
+    {
+      "start": 2041.0,
+      "end": 2050.0,
+      "text": "Now, we can also apply exactly the same methods to other stock markets around the world."
+    },
+    {
+      "start": 2050.0,
+      "end": 2062.0,
+      "text": "And this is a very, very useful exercise to do because it helps you understand stock markets around the world and their link to gross domestic product."
+    },
+    {
+      "start": 2062.0,
+      "end": 2076.0,
+      "text": "In Europe, for example, when we look at the main index there, which is the Eurostox 600, and we look at Eurozone gross domestic product, we get similar results."
+    },
+    {
+      "start": 2077.0,
+      "end": 2088.0,
+      "text": "So if we run through these results quickly, historically, GDP explains 72.28% of Eurostox 600 moves."
+    },
+    {
+      "start": 2088.0,
+      "end": 2091.0,
+      "text": "So they're moving in the same direction."
+    },
+    {
+      "start": 2091.0,
+      "end": 2099.0,
+      "text": "When they don't move in the same direction, the majority of the time, it's because the stock 600 moves down when GDP doesn't go down."
+    },
+    {
+      "start": 2099.0,
+      "end": 2102.0,
+      "text": "So again, we have this profit taking scenario."
+    },
+    {
+      "start": 2102.0,
+      "end": 2108.0,
+      "text": "So you can see the numbers are very, very similar to the S&P 500 and US GDP."
+    },
+    {
+      "start": 2108.0,
+      "end": 2127.0,
+      "text": "In the minority of cases, so only 4.95% of times, and we're looking at a data set here that goes back to 1995, only 4.95% of times as the stock 600 moved up and GDP gone down."
+    },
+    {
+      "start": 2127.0,
+      "end": 2128.0,
+      "text": "So what does that mean?"
+    },
+    {
+      "start": 2128.0,
+      "end": 2135.0,
+      "text": "Well, it's a similar outcome as to when we're looking at S&P 500 and US GDP."
+    },
+    {
+      "start": 2135.0,
+      "end": 2155.0,
+      "text": "If we can predict GDP based on fundamental macroeconomic analysis, so FA, fundamental analysis, and take profits at the right time, so utilizing technical analysis and price action indicators, we're going to be right 95.05% of the time."
+    },
+    {
+      "start": 2155.0,
+      "end": 2169.0,
+      "text": "So again, stock 600 leading Eurozone GDP with a six month time lag, the results are extremely similar to the S&P 500 leading US GDP."
+    },
+    {
+      "start": 2169.0,
+      "end": 2175.0,
+      "text": "Now we can also apply this to other stock markets."
+    },
+    {
+      "start": 2175.0,
+      "end": 2183.0,
+      "text": "Let's have a look at it versus the Shenzhen Composite leading Chinese GDP."
+    },
+    {
+      "start": 2183.0,
+      "end": 2187.0,
+      "text": "Does the Shenzhen Composite actually lead Chinese GDP?"
+    },
+    {
+      "start": 2187.0,
+      "end": 2199.0,
+      "text": "Well, if you look at the table, historically GDP explains 55.75% of the Shenzhen Composite moves."
+    },
+    {
+      "start": 2199.0,
+      "end": 2208.0,
+      "text": "And when it doesn't, the majority of the time, it's because the index moves down when GDP doesn't."
+    },
+    {
+      "start": 2208.0,
+      "end": 2219.0,
+      "text": "So when they don't move in the same direction, it's in the vast majority of cases that the Shenzhen Composite moves down when GDP doesn't."
+    },
+    {
+      "start": 2219.0,
+      "end": 2223.0,
+      "text": "So GDP is reported up and the index is reported down."
+    },
+    {
+      "start": 2223.0,
+      "end": 2226.0,
+      "text": "That happens 40.71% of times."
+    },
+    {
+      "start": 2226.0,
+      "end": 2241.0,
+      "text": "And then in the situation where the index moves up and GDP has gone down, this is in the vast minority of cases, only 3.54% of times since our data set began, which is 1992."
+    },
+    {
+      "start": 2241.0,
+      "end": 2257.0,
+      "text": "And there is obviously a huge issue with this, okay, because if you just take the numbers at face value, the issue with the Shenzhen Composite is it fails to predict GDP almost as much as it predicts GDP."
+    },
+    {
+      "start": 2257.0,
+      "end": 2262.0,
+      "text": "Therefore, at face value, this is a very unreliable indicator."
+    },
+    {
+      "start": 2262.0,
+      "end": 2266.0,
+      "text": "We'll discuss this in a little bit more detail later."
+    },
+    {
+      "start": 2266.0,
+      "end": 2281.0,
+      "text": "Now, when it comes to the downloads and looking at our data visually, let's go back to the S&P 500 versus US GDP and look at the 1950 to 2020 data set."
+    },
+    {
+      "start": 2281.0,
+      "end": 2293.0,
+      "text": "If we plot these two variables on a chart together, we can see visually that there's a pretty strong relationship between the two, okay?"
+    },
+    {
+      "start": 2293.0,
+      "end": 2305.0,
+      "text": "If we look at the stocks 600 versus GDP, Eurozone GDP, and that's our data set 1995 to 2020."
+    },
+    {
+      "start": 2305.0,
+      "end": 2314.0,
+      "text": "So a shorter data set, even with the shorter data set, you can see visually that there's a pretty strong relationship between the two."
+    },
+    {
+      "start": 2314.0,
+      "end": 2327.0,
+      "text": "When we look at the China data set, so the Shenzhen Composite versus Chinese GDP, and we've got a data set 1992 to 2020."
+    },
+    {
+      "start": 2327.0,
+      "end": 2331.0,
+      "text": "There's a relationship, but it's weaker."
+    },
+    {
+      "start": 2331.0,
+      "end": 2336.0,
+      "text": "You can see the blue line going negative a lot more than the orange line, okay?"
+    },
+    {
+      "start": 2336.0,
+      "end": 2343.0,
+      "text": "And they are the cases that we talked about earlier in the 40% of scenarios."
+    },
+    {
+      "start": 2343.0,
+      "end": 2353.0,
+      "text": "Now, the method we were using up to now is what we call in the industry a quad-nomial method, okay?"
+    },
+    {
+      "start": 2353.0,
+      "end": 2358.0,
+      "text": "This is the four outcomes of two variables."
+    },
+    {
+      "start": 2358.0,
+      "end": 2365.0,
+      "text": "So when we looked at the 00, the 11, the 01, and the 11 outcomes."
+    },
+    {
+      "start": 2365.0,
+      "end": 2375.0,
+      "text": "So the outcomes for the four variables, the four variable outcome method is called the quad-nomial method."
+    },
+    {
+      "start": 2375.0,
+      "end": 2382.0,
+      "text": "And this is applied to the S&P 500 and US GDP and global indices."
+    },
+    {
+      "start": 2382.0,
+      "end": 2388.0,
+      "text": "So indices in the rest of the world versus their own country GDP."
+    },
+    {
+      "start": 2388.0,
+      "end": 2398.0,
+      "text": "And we mentioned it was a pretty crude method, but the results are pretty powerful, even though it's a crude method."
+    },
+    {
+      "start": 2398.0,
+      "end": 2403.0,
+      "text": "That's a very simple method, very simple to understand, very simple to implement."
+    },
+    {
+      "start": 2403.0,
+      "end": 2412.0,
+      "text": "So you can do that basically for yourself on any data sets that you can get hold of online."
+    },
+    {
+      "start": 2412.0,
+      "end": 2414.0,
+      "text": "There's plenty of free data sets out there."
+    },
+    {
+      "start": 2414.0,
+      "end": 2424.0,
+      "text": "You can definitely get hold of country GDP numbers and stock market levels and pretty easily implement that method."
+    },
+    {
+      "start": 2424.0,
+      "end": 2429.0,
+      "text": "What we can also do is take a more sophisticated approach."
+    },
+    {
+      "start": 2429.0,
+      "end": 2435.0,
+      "text": "We can actually calculate a real statistical correlation."
+    },
+    {
+      "start": 2435.0,
+      "end": 2441.0,
+      "text": "If you've been through the basic statistics guide, you'll understand what a statistical correlation is."
+    },
+    {
+      "start": 2442.0,
+      "end": 2446.0,
+      "text": "Here, we've got the S&P 500 versus US GDP."
+    },
+    {
+      "start": 2446.0,
+      "end": 2452.0,
+      "text": "And we've worked out a 10-year rolling correlation from 1960 to 2020."
+    },
+    {
+      "start": 2452.0,
+      "end": 2462.0,
+      "text": "And in the downloads area, we've done this for no lag, three-month lag, six-month lag, nine-month lag, and 12-month lag on the data."
+    },
+    {
+      "start": 2462.0,
+      "end": 2474.0,
+      "text": "And what we find is, is that the most statistically significant is the six-month lag for a statistical correlation between the two variables."
+    },
+    {
+      "start": 2474.0,
+      "end": 2492.0,
+      "text": "Or put another way, an average 10-year correlation of 0.56 for the S&P 500 year-on-year versus real GDP performance year-on-year from 1960 to 2020."
+    },
+    {
+      "start": 2492.0,
+      "end": 2505.0,
+      "text": "Now, what does this do for our understanding of the relationship between the S&P 500 returns and US GDP?"
+    },
+    {
+      "start": 2505.0,
+      "end": 2519.0,
+      "text": "Well, a 0.56 average correlation would be considered by statisticians to be a moderate correlation between two variables."
+    },
+    {
+      "start": 2519.0,
+      "end": 2520.0,
+      "text": "Okay."
+    },
+    {
+      "start": 2520.0,
+      "end": 2523.0,
+      "text": "But it's positively correlated and it's fairly high."
+    },
+    {
+      "start": 2523.0,
+      "end": 2524.0,
+      "text": "Okay."
+    },
+    {
+      "start": 2524.0,
+      "end": 2526.0,
+      "text": "That's the message we take."
+    },
+    {
+      "start": 2526.0,
+      "end": 2532.0,
+      "text": "But if we're trying to understand this in a bit more detail, we can look at this visually."
+    },
+    {
+      "start": 2532.0,
+      "end": 2545.0,
+      "text": "And we can look at the correlation numbers going back throughout time and understand when it's been high and when it's been low and what may have been affecting that."
+    },
+    {
+      "start": 2545.0,
+      "end": 2561.0,
+      "text": "And this gives us a better understanding and a better idea, therefore giving us a better probability of knowing what to do when trading stocks and trading the stock market as a proxy for predicting GDP."
+    },
+    {
+      "start": 2561.0,
+      "end": 2566.0,
+      "text": "And we'll come on to that detail a little bit later."
+    },
+    {
+      "start": 2566.0,
+      "end": 2579.0,
+      "text": "But for now, we know definitely that on a 10-year rolling basis, the six-month lag is the most statistically significant time horizon."
+    },
+    {
+      "start": 2579.0,
+      "end": 2584.0,
+      "text": "Let's have a look at the Eurostox 600 versus Eurozone GDP."
+    },
+    {
+      "start": 2584.0,
+      "end": 2591.0,
+      "text": "Because the data set is smaller, we're looking here at a five-year rolling correlation."
+    },
+    {
+      "start": 2591.0,
+      "end": 2597.0,
+      "text": "So we're looking at this from 2000 to 2020."
+    },
+    {
+      "start": 2597.0,
+      "end": 2606.0,
+      "text": "And we can see again that the six-month lag gives us a pretty high number."
+    },
+    {
+      "start": 2606.0,
+      "end": 2612.0,
+      "text": "And around that, the three-month and the nine-month gives us a moderate correlation as well."
+    },
+    {
+      "start": 2612.0,
+      "end": 2618.0,
+      "text": "So the six-month is definitely the most statistically significant."
+    },
+    {
+      "start": 2618.0,
+      "end": 2632.0,
+      "text": "But when we look at this visually, we can see that the number was pretty high up until the years of around 2014, 2015."
+    },
+    {
+      "start": 2632.0,
+      "end": 2637.0,
+      "text": "And then correlation started to come down."
+    },
+    {
+      "start": 2637.0,
+      "end": 2645.0,
+      "text": "If we compare this to the US data by going back one slide, we can see when we look at the US data,"
+    },
+    {
+      "start": 2645.0,
+      "end": 2655.0,
+      "text": "correlation started to come down around the mid to late 80s, in the period mid to late 80s."
+    },
+    {
+      "start": 2655.0,
+      "end": 2660.0,
+      "text": "And it also came down massively in 2020."
+    },
+    {
+      "start": 2660.0,
+      "end": 2665.0,
+      "text": "Like I said, we will come on to these explanations a little bit later."
+    },
+    {
+      "start": 2665.0,
+      "end": 2678.0,
+      "text": "Let's have a look at the Chinese numbers, the Shenzhen composite versus Chinese GDP on a five-year rolling correlation using our data set."
+    },
+    {
+      "start": 2678.0,
+      "end": 2682.0,
+      "text": "So this will be from 1997 to 2020."
+    },
+    {
+      "start": 2682.0,
+      "end": 2684.0,
+      "text": "And what do we see here?"
+    },
+    {
+      "start": 2684.0,
+      "end": 2691.0,
+      "text": "Well, we just see an average five-year correlation of the two variables that is extremely low."
+    },
+    {
+      "start": 2691.0,
+      "end": 2693.0,
+      "text": "Therefore, it's very unreliable."
+    },
+    {
+      "start": 2693.0,
+      "end": 2714.0,
+      "text": "So we can say with a very high degree of confidence here that trying to trade the Shenzhen composite based on your future projection of Chinese GDP is a futile exercise."
+    },
+    {
+      "start": 2714.0,
+      "end": 2722.0,
+      "text": "You can even see here that there's a negative correlation using a 12-month lag."
+    },
+    {
+      "start": 2722.0,
+      "end": 2724.0,
+      "text": "Well, it's around zero."
+    },
+    {
+      "start": 2724.0,
+      "end": 2727.0,
+      "text": "And it's mostly around zero."
+    },
+    {
+      "start": 2727.0,
+      "end": 2731.0,
+      "text": "Nine-month lag, 8.6%."
+    },
+    {
+      "start": 2731.0,
+      "end": 2733.0,
+      "text": "No lag, 4%."
+    },
+    {
+      "start": 2733.0,
+      "end": 2740.0,
+      "text": "And in between, we've got a three and six-month lag with an extremely weak, low correlation."
+    },
+    {
+      "start": 2740.0,
+      "end": 2746.0,
+      "text": "So very unreliable in statistical terms."
+    },
+    {
+      "start": 2746.0,
+      "end": 2752.0,
+      "text": "This would be defined as having no linear relationship."
+    },
+    {
+      "start": 2752.0,
+      "end": 2777.0,
+      "text": "Now, if we're going to understand S&P 500 and US GDP in a bit more detail, if you go to the downloads area, you will see a spreadsheet download there where we actually have performed the statistical correlation of the S&P 500 versus GDP."
+    },
+    {
+      "start": 2777.0,
+      "end": 2787.0,
+      "text": "And we're looking at, we've calculated the 10-year rolling correlation 1960 to 2020."
+    },
+    {
+      "start": 2787.0,
+      "end": 2802.0,
+      "text": "And what we're going to look at here is a few things to try and better understand the relationship between these two variables when calculating a statistical correlation."
+    },
+    {
+      "start": 2802.0,
+      "end": 2811.0,
+      "text": "So if we look at the top of the chart here, which is our key, we can see four things that we're measuring here."
+    },
+    {
+      "start": 2811.0,
+      "end": 2820.0,
+      "text": "If we look at the bigger chart, we can see that we've got on the left-hand axis, GDP growth year-on-year in percentage format."
+    },
+    {
+      "start": 2820.0,
+      "end": 2827.0,
+      "text": "And we've got S&P performance year-on-year in percentage format with the six-month lag."
+    },
+    {
+      "start": 2827.0,
+      "end": 2831.0,
+      "text": "So on the top, when we look at the key, what have we got?"
+    },
+    {
+      "start": 2831.0,
+      "end": 2842.0,
+      "text": "Well, first of all, in the pale blue dot, we've got the S&P 500, six-month lag data performance, okay, versus GDP."
+    },
+    {
+      "start": 2842.0,
+      "end": 2848.0,
+      "text": "So the correlation of those two, and we've got the full data series in pale blue."
+    },
+    {
+      "start": 2848.0,
+      "end": 2850.0,
+      "text": "And how does that look visually?"
+    },
+    {
+      "start": 2850.0,
+      "end": 2863.0,
+      "text": "Well, we've got a quadrant here on the screen, where if you look at the pale blue dots, you'll see top left, top right, bottom left, and bottom right quadrants."
+    },
+    {
+      "start": 2863.0,
+      "end": 2867.0,
+      "text": "So let's run through these quadrants to understand what we're looking at here."
+    },
+    {
+      "start": 2867.0,
+      "end": 2871.0,
+      "text": "If you look at the top left quadrant, what is that telling us?"
+    },
+    {
+      "start": 2871.0,
+      "end": 2881.0,
+      "text": "Well, the top left quadrant is the scenario where GDP year-on-year percentage is up."
+    },
+    {
+      "start": 2881.0,
+      "end": 2888.0,
+      "text": "However, S&P 500 year-on-year returns with a six-month lag is reported down."
+    },
+    {
+      "start": 2888.0,
+      "end": 2893.0,
+      "text": "What happens when we look at the bottom right quadrant?"
+    },
+    {
+      "start": 2893.0,
+      "end": 2903.0,
+      "text": "Well, this is when GDP is reported down and S&P 500 returns with the lag are reported up."
+    },
+    {
+      "start": 2903.0,
+      "end": 2912.0,
+      "text": "So the top left and the bottom right quadrant is when these two variables are moving in the opposite direction."
+    },
+    {
+      "start": 2912.0,
+      "end": 2921.0,
+      "text": "And then the bottom left quadrant is when GDP is reported down and S&P is reported down as well."
+    },
+    {
+      "start": 2921.0,
+      "end": 2924.0,
+      "text": "So they're moving in the same direction."
+    },
+    {
+      "start": 2924.0,
+      "end": 2928.0,
+      "text": "And then you can see the top right quadrant."
+    },
+    {
+      "start": 2928.0,
+      "end": 2934.0,
+      "text": "This is where GDP is reported up and S&P 500 is reported up."
+    },
+    {
+      "start": 2934.0,
+      "end": 2942.0,
+      "text": "So you can see and understand visually here when we look at the pale blue dots, the full data series."
+    },
+    {
+      "start": 2942.0,
+      "end": 2953.0,
+      "text": "The pale blue dots are showing us visually that the vast majority of cases here are when the GDP number is reported up."
+    },
+    {
+      "start": 2953.0,
+      "end": 2958.0,
+      "text": "And the S&P 500 number is reported up also."
+    },
+    {
+      "start": 2958.0,
+      "end": 2966.0,
+      "text": "And then the second most common occurrence is when GDP is reported up and S&P 500 is reported down."
+    },
+    {
+      "start": 2966.0,
+      "end": 2971.0,
+      "text": "This would agree with our quadnomial analysis."
+    },
+    {
+      "start": 2971.0,
+      "end": 2976.0,
+      "text": "However, we of course have outliers that we'll come onto in a moment."
+    },
+    {
+      "start": 2976.0,
+      "end": 2997.0,
+      "text": "Now, if we look at the dark blue line, this is the correlation number between the line of best fit for the correlation of the S&P 500 versus GDP, the full data series."
+    },
+    {
+      "start": 2997.0,
+      "end": 3002.0,
+      "text": "And we can see from left to right, it's an upwardly sloping curve."
+    },
+    {
+      "start": 3002.0,
+      "end": 3005.0,
+      "text": "It's a positive curve."
+    },
+    {
+      "start": 3005.0,
+      "end": 3012.0,
+      "text": "That means we have positive correlation, which agrees with the work that we've done so far."
+    },
+    {
+      "start": 3012.0,
+      "end": 3028.0,
+      "text": "Overall, when we look at the full data series, we have an average 10-year rolling correlation, 1960 to 2020, using the six-month time lag of 0.56."
+    },
+    {
+      "start": 3028.0,
+      "end": 3029.0,
+      "text": "We know that."
+    },
+    {
+      "start": 3029.0,
+      "end": 3040.0,
+      "text": "So this is what we're looking at when we're representing this visually, an upwardly sloping positive curve."
+    },
+    {
+      "start": 3040.0,
+      "end": 3049.0,
+      "text": "Now, outlier scenarios and also a deeper explanation of historical data and correlation."
+    },
+    {
+      "start": 3049.0,
+      "end": 3059.0,
+      "text": "If you look at the case where the red circle has covered the case, what would you say this is?"
+    },
+    {
+      "start": 3059.0,
+      "end": 3066.0,
+      "text": "Well, this was the situation in 2020 during COVID."
+    },
+    {
+      "start": 3066.0,
+      "end": 3082.0,
+      "text": "So we have a very extreme scenario where GDP was reported down by a significant amount, but the S&P 500 on a six-month rolling basis, six-month lag, was reported up."
+    },
+    {
+      "start": 3082.0,
+      "end": 3102.0,
+      "text": "What we've also done on this chart is we've taken the period 1985 to 1995 and had a look at this in isolation to try and understand why the correlation was falling from the mid-'80s to late-'80s onwards."
+    },
+    {
+      "start": 3102.0,
+      "end": 3111.0,
+      "text": "And how and why it was reported to be very, very low in the early to mid-'90s."
+    },
+    {
+      "start": 3111.0,
+      "end": 3121.0,
+      "text": "Well, if we look at the 1985 to 1995 data stripped out, this is the orange dots on the screen."
+    },
+    {
+      "start": 3121.0,
+      "end": 3127.0,
+      "text": "And you can see that most of the cases are in the top right quadrant."
+    },
+    {
+      "start": 3127.0,
+      "end": 3140.0,
+      "text": "Most of the cases are GDP and S&P 500 on a six-month lagging basis, moving in the same direction, and both are positive."
+    },
+    {
+      "start": 3140.0,
+      "end": 3154.0,
+      "text": "But there's a visual difference here that you can see when you compare the orange dots across the quadrants versus the blue pale dots."
+    },
+    {
+      "start": 3154.0,
+      "end": 3156.0,
+      "text": "They're less extreme, okay?"
+    },
+    {
+      "start": 3156.0,
+      "end": 3158.0,
+      "text": "The magnitude is smaller."
+    },
+    {
+      "start": 3158.0,
+      "end": 3172.0,
+      "text": "So if we look at the left-hand axis and look at these orange dots, we can see that the vast majority of times, GDP growth is reported to be around between 2% and 4%."
+    },
+    {
+      "start": 3172.0,
+      "end": 3182.0,
+      "text": "But stock market returns are in most cases pretty low and much lower on average compared to the pale blue dots."
+    },
+    {
+      "start": 3182.0,
+      "end": 3194.0,
+      "text": "So when we look at outliers and when we look at moments in history where correlation has collapsed and been very low between S&P 500 returns and quarterly GDP,"
+    },
+    {
+      "start": 3194.0,
+      "end": 3204.0,
+      "text": "we look for explanations and there are some pretty obvious explanations."
+    },
+    {
+      "start": 3204.0,
+      "end": 3216.0,
+      "text": "If we look at the period 1985 to 1995 in the bigger context, well, the period in the 80s was a very, very high period of inflation."
+    },
+    {
+      "start": 3216.0,
+      "end": 3226.0,
+      "text": "It was a very stark period in history, in economic history of high inflation in the United States."
+    },
+    {
+      "start": 3226.0,
+      "end": 3242.0,
+      "text": "And you can see in the early to late 80s, interest rates in the US came down from a very high level, pretty much for two thirds of the decade, okay?"
+    },
+    {
+      "start": 3242.0,
+      "end": 3254.0,
+      "text": "And in this period where, in the late 80s, where interest rates went up, we ask ourselves the question, why?"
+    },
+    {
+      "start": 3254.0,
+      "end": 3262.0,
+      "text": "Well, inflation was roaring, inflation was quite high and quite out of control during that time."
+    },
+    {
+      "start": 3262.0,
+      "end": 3264.0,
+      "text": "And the Fed responded."
+    },
+    {
+      "start": 3264.0,
+      "end": 3282.0,
+      "text": "And you can see that rates went up in the late 80s, stayed fairly high relative to the low and didn't go below the previous level until the mid 90s."
+    },
+    {
+      "start": 3282.0,
+      "end": 3300.0,
+      "text": "So this type of intervention from the Fed could go a long way to explain what was going on in the late 80s and early to mid 90s period in terms of stock market returns and GDP."
+    },
+    {
+      "start": 3300.0,
+      "end": 3306.0,
+      "text": "Because in the backdrop, we had interest rates rising pretty aggressively to counter inflation."
+    },
+    {
+      "start": 3306.0,
+      "end": 3322.0,
+      "text": "And GDP in the background was still growing at a decent clip, but the stock market returns were not as high as previous stock market returns."
+    },
+    {
+      "start": 3322.0,
+      "end": 3332.0,
+      "text": "So the magnitude of the moves in the stock market were lower for the moves in GDP that occurred at the time."
+    },
+    {
+      "start": 3332.0,
+      "end": 3334.0,
+      "text": "So what explains these moves?"
+    },
+    {
+      "start": 3334.0,
+      "end": 3336.0,
+      "text": "So what explains these moves?"
+    },
+    {
+      "start": 3336.0,
+      "end": 3344.0,
+      "text": "Let's run through the breakdowns in correlation between S&P 500 and GDP."
+    },
+    {
+      "start": 3344.0,
+      "end": 3354.0,
+      "text": "When we look at the statistical 10-year rolling correlation, let's have a look at these breakdowns and formalize the explanation here."
+    },
+    {
+      "start": 3354.0,
+      "end": 3362.0,
+      "text": "So for the 2020 COVID situation, the explanation is pretty clear, OK?"
+    },
+    {
+      "start": 3362.0,
+      "end": 3364.0,
+      "text": "It's pretty obvious."
+    },
+    {
+      "start": 3364.0,
+      "end": 3379.0,
+      "text": "For 2020 S&P 500, the quarterly year-on-year performance versus GDP, it was in response to a massive Fed and government stimulus."
+    },
+    {
+      "start": 3379.0,
+      "end": 3388.0,
+      "text": "There was a massive, big correlation breakdown because GDP was hit in a massive way."
+    },
+    {
+      "start": 3388.0,
+      "end": 3400.0,
+      "text": "And because of the massive Fed and government stimulus, the stock market was up year-on-year, six-month rolling percentage basis."
+    },
+    {
+      "start": 3400.0,
+      "end": 3405.0,
+      "text": "So it's an extreme number that skews the data set, OK?"
+    },
+    {
+      "start": 3405.0,
+      "end": 3411.0,
+      "text": "And it's obviously an outlier, and it's completely abnormal, OK?"
+    },
+    {
+      "start": 3411.0,
+      "end": 3415.0,
+      "text": "So abnormal being it's not a normal situation."
+    },
+    {
+      "start": 3415.0,
+      "end": 3423.0,
+      "text": "Now, we mentioned the period from the mid-80s to the mid-90s for the 10-year rolling correlation."
+    },
+    {
+      "start": 3423.0,
+      "end": 3437.0,
+      "text": "When we look at that on a chart for the 10-year rolling correlation, we can see that correlation was coming down for the entire period, OK?"
+    },
+    {
+      "start": 3437.0,
+      "end": 3442.0,
+      "text": "And it really got low in the early 90s and mid-90s."
+    },
+    {
+      "start": 3442.0,
+      "end": 3446.0,
+      "text": "That's when it got really low, OK?"
+    },
+    {
+      "start": 3446.0,
+      "end": 3448.0,
+      "text": "What was the situation here?"
+    },
+    {
+      "start": 3448.0,
+      "end": 3455.0,
+      "text": "Yeah, well, when you actually look at the data set, and you can look at this in the downloads area,"
+    },
+    {
+      "start": 3455.0,
+      "end": 3461.0,
+      "text": "when you look at the data set for the statistical correlation,"
+    },
+    {
+      "start": 3461.0,
+      "end": 3470.0,
+      "text": "we can see that even though the data range is pretty wide for the six-month lagging stock market performance,"
+    },
+    {
+      "start": 3470.0,
+      "end": 3484.0,
+      "text": "so the data range for the period in 1985 to 1995, it goes as low as minus 15% to as high as positive 39%."
+    },
+    {
+      "start": 3484.0,
+      "end": 3496.0,
+      "text": "What we see, though, is that the data is clustered in mostly 2% to 4% GDP growth with lower stock market returns on average."
+    },
+    {
+      "start": 3496.0,
+      "end": 3497.0,
+      "text": "What does that give us?"
+    },
+    {
+      "start": 3497.0,
+      "end": 3502.0,
+      "text": "Well, when we look at the orange line, it gives us a flat slope."
+    },
+    {
+      "start": 3502.0,
+      "end": 3515.0,
+      "text": "So, even though correlation was lower for a period than historically, overall, the correlation is still positive."
+    },
+    {
+      "start": 3515.0,
+      "end": 3528.0,
+      "text": "The correlation during that period in the decade 1985 to 1995, when the 10-year rolling correlation just trended down continuously and then got very low."
+    },
+    {
+      "start": 3528.0,
+      "end": 3529.0,
+      "text": "Why did that happen?"
+    },
+    {
+      "start": 3529.0,
+      "end": 3539.0,
+      "text": "Well, it was low because of the magnitude of the S&P 500 moves versus GDP growth, particularly in the early to mid-90s."
+    },
+    {
+      "start": 3539.0,
+      "end": 3542.0,
+      "text": "Arguably, how is that explained?"
+    },
+    {
+      "start": 3542.0,
+      "end": 3549.0,
+      "text": "Well, probably the higher interest rates coming through and affecting stock market returns."
+    },
+    {
+      "start": 3549.0,
+      "end": 3560.0,
+      "text": "So, the period of the 1980s, when we look in the bigger picture, it was one of very high inflation due to aggressive interest rate easing,"
+    },
+    {
+      "start": 3560.0,
+      "end": 3570.0,
+      "text": "which in the late 80s, early 90s, was met with a heavy Fed policy response in reversal."
+    },
+    {
+      "start": 3570.0,
+      "end": 3579.0,
+      "text": "So, a period of higher interest rates, which followed the huge decrease in rates."
+    },
+    {
+      "start": 3579.0,
+      "end": 3580.0,
+      "text": "Okay."
+    },
+    {
+      "start": 3580.0,
+      "end": 3590.0,
+      "text": "And when we look at the full data series, including the 1985 to 1995 data, it has a positive slope."
+    },
+    {
+      "start": 3590.0,
+      "end": 3602.0,
+      "text": "So, I'd encourage you to look at the data set, download the spreadsheet, and have a look at what happens during the early 90s to mid-90s."
+    },
+    {
+      "start": 3602.0,
+      "end": 3613.0,
+      "text": "What you'll see is low stock market returns associated with pretty decent GDP growth, 2% to 4% GDP growth."
+    },
+    {
+      "start": 3613.0,
+      "end": 3614.0,
+      "text": "So, what does that mean?"
+    },
+    {
+      "start": 3614.0,
+      "end": 3628.0,
+      "text": "The correlation was low because the magnitude of the moves was smaller compared to historically, and when compared to the entire data set."
+    },
+    {
+      "start": 3628.0,
+      "end": 3640.0,
+      "text": "So, what lessons can we take here from S&P 500 and US GDP correlation breakdowns?"
+    },
+    {
+      "start": 3640.0,
+      "end": 3649.0,
+      "text": "Well, the lesson we take from this, firstly, is that the S&P 500 predicts GDP in the majority."
+    },
+    {
+      "start": 3649.0,
+      "end": 3665.0,
+      "text": "But as traders, we have to understand that when they move together, we will not know with a great certainty the magnitude of the stock market moves, especially when they're going up because the range is just so wide."
+    },
+    {
+      "start": 3665.0,
+      "end": 3666.0,
+      "text": "Okay."
+    },
+    {
+      "start": 3666.0,
+      "end": 3683.0,
+      "text": "Also, similar to our quadnomial analysis, when we're looking at a statistical correlation, when they don't move together, in the majority of those cases, GDP is positive and the S&P 500 is negative."
+    },
+    {
+      "start": 3683.0,
+      "end": 3687.0,
+      "text": "So, this is defined as potentially profit-taking."
+    },
+    {
+      "start": 3687.0,
+      "end": 3688.0,
+      "text": "Okay."
+    },
+    {
+      "start": 3688.0,
+      "end": 3692.0,
+      "text": "The S&P 500 goes down when GDP goes up."
+    },
+    {
+      "start": 3692.0,
+      "end": 3698.0,
+      "text": "So, the market arguably gets overextended and then corrects."
+    },
+    {
+      "start": 3698.0,
+      "end": 3699.0,
+      "text": "Okay."
+    },
+    {
+      "start": 3699.0,
+      "end": 3712.0,
+      "text": "Now, additionally, shocks like in 2020 and general Fed intervention, we take the message from the statistical correlation analysis."
+    },
+    {
+      "start": 3712.0,
+      "end": 3721.0,
+      "text": "We take the message that shocks like 2020 and general Fed intervention can create lower correlations."
+    },
+    {
+      "start": 3721.0,
+      "end": 3739.0,
+      "text": "But on the whole, we tend to, as traders, towards positive correlation and predicting GDP and therefore stock market returns via earnings, but with an unknown magnitude of the move."
+    },
+    {
+      "start": 3739.0,
+      "end": 3742.0,
+      "text": "And this brings in a general point here, guys."
+    },
+    {
+      "start": 3742.0,
+      "end": 3757.0,
+      "text": "You know, retail traders are generally kind of always looking for a rule book, looking for a checklist of things where, you know, if you take a whole bunch of boxes, then something is a trade or an investment."
+    },
+    {
+      "start": 3757.0,
+      "end": 3766.0,
+      "text": "And as long as you check all the boxes, you're going to make money and make a certain amount of money."
+    },
+    {
+      "start": 3766.0,
+      "end": 3782.0,
+      "text": "Well, you can see from here when we look at our statistical correlations that we can't predict with a great amount of accuracy the amount of money that we could make."
+    },
+    {
+      "start": 3782.0,
+      "end": 3791.0,
+      "text": "What I'm referring to here is the magnitude of a particular move in the S&P 500 when predicting GDP."
+    },
+    {
+      "start": 3791.0,
+      "end": 3796.0,
+      "text": "Yes, we have statistical correlation, but the range is wide."
+    },
+    {
+      "start": 3796.0,
+      "end": 3809.0,
+      "text": "And therefore we have to be very careful in saying that there's some sort of rule book here where if we have 2.65% of GDP growth, we're going to get a certain amount of stock market return."
+    },
+    {
+      "start": 3809.0,
+      "end": 3811.0,
+      "text": "That's just a fallacy, okay?"
+    },
+    {
+      "start": 3811.0,
+      "end": 3816.0,
+      "text": "When we look at the statistical correlation through our history, we can't infer a rule book."
+    },
+    {
+      "start": 3816.0,
+      "end": 3824.0,
+      "text": "We can't infer that if we get a certain amount of GDP growth and predict that, we're going to get a certain amount of stock market return."
+    },
+    {
+      "start": 3824.0,
+      "end": 3839.0,
+      "text": "What we can infer is that there's going to be very likely a statistical correlation and a move that we can explain in terms of GDP."
+    },
+    {
+      "start": 3839.0,
+      "end": 3850.0,
+      "text": "Therefore, we can set ourselves up to have the odds in our favor, but the odds will never be a hundred percent in our favor."
+    },
+    {
+      "start": 3850.0,
+      "end": 3851.0,
+      "text": "It's not a rule book."
+    },
+    {
+      "start": 3851.0,
+      "end": 3853.0,
+      "text": "It's not a Lego set."
+    },
+    {
+      "start": 3853.0,
+      "end": 3861.0,
+      "text": "It's not a Duplo set where we plug and play and get a certain amount of GDP growth and a certain amount of stock market return,"
+    },
+    {
+      "start": 3861.0,
+      "end": 3865.0,
+      "text": "and therefore a certain amount of money in our trading accounts as profit."
+    },
+    {
+      "start": 3865.0,
+      "end": 3867.0,
+      "text": "It just doesn't work like that."
+    },
+    {
+      "start": 3867.0,
+      "end": 3877.0,
+      "text": "But what we can do as traders and PMs is try our damned hardest to predict GDP."
+    },
+    {
+      "start": 3877.0,
+      "end": 3883.0,
+      "text": "So we have a macroeconomic view and we have the odds in our favor."
+    },
+    {
+      "start": 3883.0,
+      "end": 3894.0,
+      "text": "That is way better than taking other approaches to trading, especially the retail trading, day trading or very short term approach,"
+    },
+    {
+      "start": 3894.0,
+      "end": 3897.0,
+      "text": "not trading on fundamentals and trading on noise."
+    },
+    {
+      "start": 3897.0,
+      "end": 3898.0,
+      "text": "Okay."
+    },
+    {
+      "start": 3898.0,
+      "end": 3908.0,
+      "text": "Now, coincidentally, this is exactly why we have a long short mandate as traders and PMs."
+    },
+    {
+      "start": 3908.0,
+      "end": 3922.0,
+      "text": "If we're long short when there's shocks and or intervention from the Fed and or correlation breakdowns, what's going to happen if we're running long short portfolios?"
+    },
+    {
+      "start": 3922.0,
+      "end": 3927.0,
+      "text": "Well, our portfolios, we can say, will probably outperform the index."
+    },
+    {
+      "start": 3927.0,
+      "end": 3928.0,
+      "text": "Okay."
+    },
+    {
+      "start": 3928.0,
+      "end": 3932.0,
+      "text": "And they will outperform long only strategists."
+    },
+    {
+      "start": 3932.0,
+      "end": 3943.0,
+      "text": "So long only traders and investors and will definitely outperform traders who haven't got a clue that this even exists."
+    },
+    {
+      "start": 3944.0,
+      "end": 3950.0,
+      "text": "Additionally, we can also react to these situations for outsized returns."
+    },
+    {
+      "start": 3950.0,
+      "end": 3953.0,
+      "text": "So the absolute return mandate."
+    },
+    {
+      "start": 3953.0,
+      "end": 3966.0,
+      "text": "Again, guys, we're not really interested in measuring ourselves against the index or against long only traders and PMs and traders who don't know what they're doing."
+    },
+    {
+      "start": 3966.0,
+      "end": 3970.0,
+      "text": "We just want to make money when the market goes up and the market goes down."
+    },
+    {
+      "start": 3970.0,
+      "end": 3971.0,
+      "text": "Okay."
+    },
+    {
+      "start": 3971.0,
+      "end": 3973.0,
+      "text": "We just want to make money in all scenarios."
+    },
+    {
+      "start": 3973.0,
+      "end": 3976.0,
+      "text": "So we can also react to these situations."
+    },
+    {
+      "start": 3976.0,
+      "end": 3977.0,
+      "text": "We can also predict these situations."
+    },
+    {
+      "start": 3977.0,
+      "end": 3979.0,
+      "text": "We can also predict these situations."
+    },
+    {
+      "start": 3979.0,
+      "end": 3998.0,
+      "text": "So the situation, for example, with the zero one, where we believe stock markets have become overextended, we can get neutral or short in our portfolios after having a long bias and make outsized returns for the absolute mandate."
+    },
+    {
+      "start": 3998.0,
+      "end": 4005.0,
+      "text": "So we can predict, we can react, we can massively outperform."
+    },
+    {
+      "start": 4005.0,
+      "end": 4009.0,
+      "text": "This is why we have the long, short mandate."
+    },
+    {
+      "start": 4009.0,
+      "end": 4010.0,
+      "text": "This is why we do it."
+    },
+    {
+      "start": 4010.0,
+      "end": 4012.0,
+      "text": "It's one of the main reasons."
+    },
+    {
+      "start": 4012.0,
+      "end": 4036.0,
+      "text": "So we know by taking the top down approach where we're trying to predict future GDP six months out and we're utilizing stocks to, as a proxy, to make money from our view on GDP and earnings."
+    },
+    {
+      "start": 4036.0,
+      "end": 4047.0,
+      "text": "We take this approach, but, and we know at the same time, the odds are in our favor, but we know that it's not a hundred percent."
+    },
+    {
+      "start": 4047.0,
+      "end": 4049.0,
+      "text": "We know we can be wrong."
+    },
+    {
+      "start": 4049.0,
+      "end": 4051.0,
+      "text": "We know things can go against us."
+    },
+    {
+      "start": 4051.0,
+      "end": 4054.0,
+      "text": "We know there's statistical outliers that can occur."
+    },
+    {
+      "start": 4054.0,
+      "end": 4062.0,
+      "text": "This is one of the main reasons why we have a long, short mandate, and you can see it in the numbers now."
+    },
+    {
+      "start": 4062.0,
+      "end": 4065.0,
+      "text": "So this is a very good learning experience for everybody."
+    },
+    {
+      "start": 4065.0,
+      "end": 4078.0,
+      "text": "And, you know, in terms of educational development, it's a fantastic foundation to download those spreadsheets and really understand the numbers and map the outliers."
+    },
+    {
+      "start": 4078.0,
+      "end": 4103.0,
+      "text": "Understand statistical correlation, understand the quadnomial, understand stock market history, and transpose a trading strategy onto the data and onto the market that's going to give you a fantastic chance with odds in your favor in all weather conditions."
+    },
+    {
+      "start": 4103.0,
+      "end": 4115.0,
+      "text": "Now, let's have a look at GDP globally, because it's always good to understand that, to make our educational foundation a bit stronger."
+    },
+    {
+      "start": 4115.0,
+      "end": 4121.0,
+      "text": "Let's have a look at the top 25 countries in the world by nominal GDP."
+    },
+    {
+      "start": 4121.0,
+      "end": 4127.0,
+      "text": "Taking the data in 2019 in US dollars."
+    },
+    {
+      "start": 4127.0,
+      "end": 4131.0,
+      "text": "And that's from the IMF."
+    },
+    {
+      "start": 4131.0,
+      "end": 4132.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4132.0,
+      "end": 4134.0,
+      "text": "So we're looking at the table on the left."
+    },
+    {
+      "start": 4134.0,
+      "end": 4139.0,
+      "text": "You can see United States at the top there for 2019."
+    },
+    {
+      "start": 4139.0,
+      "end": 4148.0,
+      "text": "Let's try and understand some of these numbers when we look at all the countries that are in the table here."
+    },
+    {
+      "start": 4148.0,
+      "end": 4166.0,
+      "text": "So if we look at these numbers and break them down to try and really understand global GDP, the US economy was 1.5 times larger than China, which is the second largest economy."
+    },
+    {
+      "start": 4166.0,
+      "end": 4176.0,
+      "text": "So if we add up, if we add up the 23 economies in the 25 below the United States and China, what do we get?"
+    },
+    {
+      "start": 4176.0,
+      "end": 4180.0,
+      "text": "We get to 37.4 trillion dollars."
+    },
+    {
+      "start": 4180.0,
+      "end": 4181.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4181.0,
+      "end": 4185.0,
+      "text": "So the United States is 21.4."
+    },
+    {
+      "start": 4185.0,
+      "end": 4187.0,
+      "text": "China, 14.7."
+    },
+    {
+      "start": 4187.0,
+      "end": 4191.0,
+      "text": "And the rest is 37.4 trillion."
+    },
+    {
+      "start": 4191.0,
+      "end": 4196.0,
+      "text": "The US is 57% of this number."
+    },
+    {
+      "start": 4196.0,
+      "end": 4197.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4197.0,
+      "end": 4202.0,
+      "text": "It's still 57% of all of those economies added up."
+    },
+    {
+      "start": 4202.0,
+      "end": 4207.0,
+      "text": "And China is just under 40% of that number."
+    },
+    {
+      "start": 4207.0,
+      "end": 4224.0,
+      "text": "Now, to give you an idea of how big the US economy actually is when compared to the rest of the world, let's do an exercise here where we add China to that number to make it 24 economies instead of 23 outside the US."
+    },
+    {
+      "start": 4224.0,
+      "end": 4233.0,
+      "text": "Well, when we do that, we get to 52 trillion and the US is still 40, 41% of that number."
+    },
+    {
+      "start": 4233.0,
+      "end": 4238.0,
+      "text": "So this gives you a lot of perspective in understanding how the world economy works."
+    },
+    {
+      "start": 4238.0,
+      "end": 4248.0,
+      "text": "If we look at China itself, 19% of China's GDP is exports and 19% of those exports are to the United States."
+    },
+    {
+      "start": 4248.0,
+      "end": 4254.0,
+      "text": "So we just do a multiplication, multiply through, and we work out how much that is in dollars."
+    },
+    {
+      "start": 4254.0,
+      "end": 4259.0,
+      "text": "It's equivalent to $531 billion in 2019."
+    },
+    {
+      "start": 4259.0,
+      "end": 4263.0,
+      "text": "The US is China's largest export market."
+    },
+    {
+      "start": 4263.0,
+      "end": 4268.0,
+      "text": "This gives you an idea of how the global economy actually works here."
+    },
+    {
+      "start": 4268.0,
+      "end": 4271.0,
+      "text": "The US economy drives global GDP."
+    },
+    {
+      "start": 4271.0,
+      "end": 4274.0,
+      "text": "It absolutely drives global GDP."
+    },
+    {
+      "start": 4274.0,
+      "end": 4286.0,
+      "text": "It's by far the most important task as traders when we're predicting GDP is to predict US GDP."
+    },
+    {
+      "start": 4286.0,
+      "end": 4291.0,
+      "text": "Now, we can also look at the Eurozone in 2019."
+    },
+    {
+      "start": 4291.0,
+      "end": 4297.0,
+      "text": "So there's 19 member states of the Eurozone."
+    },
+    {
+      "start": 4297.0,
+      "end": 4306.0,
+      "text": "And we have to consider the Eurozone a single economic area because they have a common currency."
+    },
+    {
+      "start": 4306.0,
+      "end": 4307.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4307.0,
+      "end": 4319.0,
+      "text": "When we look at the Eurozone in its entirety, the Eurozone is 62.2% the size of the United States"
+    },
+    {
+      "start": 4319.0,
+      "end": 4322.0,
+      "text": "and 90% the size of China."
+    },
+    {
+      "start": 4322.0,
+      "end": 4331.0,
+      "text": "Now, global real GDP in 2019 was 87.5 trillion."
+    },
+    {
+      "start": 4331.0,
+      "end": 4335.0,
+      "text": "The US was just under 25% of that number."
+    },
+    {
+      "start": 4335.0,
+      "end": 4339.0,
+      "text": "China was just over 18% of that number."
+    },
+    {
+      "start": 4339.0,
+      "end": 4344.0,
+      "text": "The Eurozone was 15.5% of that number."
+    },
+    {
+      "start": 4344.0,
+      "end": 4352.0,
+      "text": "If we do the exercise where we add the US plus China plus the Eurozone in 2019, what do we get?"
+    },
+    {
+      "start": 4352.0,
+      "end": 4356.0,
+      "text": "We get to 49.5 trillion US dollars."
+    },
+    {
+      "start": 4356.0,
+      "end": 4357.0,
+      "text": "What does that mean?"
+    },
+    {
+      "start": 4357.0,
+      "end": 4361.0,
+      "text": "That's 56.5% of global GDP."
+    },
+    {
+      "start": 4361.0,
+      "end": 4362.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4362.0,
+      "end": 4371.0,
+      "text": "Now, when we take it into consideration, the US, Eurozone and China, it is way more important"
+    },
+    {
+      "start": 4371.0,
+      "end": 4379.0,
+      "text": "to predict US and Eurozone GDP together in order to build a global macro view."
+    },
+    {
+      "start": 4379.0,
+      "end": 4380.0,
+      "text": "Why?"
+    },
+    {
+      "start": 4380.0,
+      "end": 4385.0,
+      "text": "Because China is so heavily dependent on the rest of the world."
+    },
+    {
+      "start": 4385.0,
+      "end": 4392.0,
+      "text": "And also, China GDP is just notoriously difficult to predict."
+    },
+    {
+      "start": 4392.0,
+      "end": 4397.0,
+      "text": "We'll come on to those reasons in a moment."
+    },
+    {
+      "start": 4397.0,
+      "end": 4405.0,
+      "text": "What conclusions can we get here when we're looking at stock markets leading GDP?"
+    },
+    {
+      "start": 4405.0,
+      "end": 4416.0,
+      "text": "Well, although occasionally, the US and Eurozone equity indices versus GDP correlations fall dramatically."
+    },
+    {
+      "start": 4416.0,
+      "end": 4428.0,
+      "text": "Historically, and on average, using a six-month lag, stock markets are a reliable indicator in predicting GDP via positive correlation."
+    },
+    {
+      "start": 4428.0,
+      "end": 4436.0,
+      "text": "They move in the same direction in the majority of times and with fairly high correlation most of the time."
+    },
+    {
+      "start": 4436.0,
+      "end": 4442.0,
+      "text": "And this is backed up by our quadrenomal analysis using the six-month lags."
+    },
+    {
+      "start": 4442.0,
+      "end": 4446.0,
+      "text": "The US, 69%."
+    },
+    {
+      "start": 4446.0,
+      "end": 4449.0,
+      "text": "Eurozone, 72% of times."
+    },
+    {
+      "start": 4449.0,
+      "end": 4453.0,
+      "text": "The index and GDP move in the same direction."
+    },
+    {
+      "start": 4453.0,
+      "end": 4460.0,
+      "text": "So, this is the situation in the quadrenomal where we have the 00 and the 11."
+    },
+    {
+      "start": 4460.0,
+      "end": 4467.0,
+      "text": "And in the statistical correlation analysis, it's in the quadrants top right and bottom left."
+    },
+    {
+      "start": 4467.0,
+      "end": 4479.0,
+      "text": "Most of the times when these two variables do not move in the same direction, it's because the index moves down and GDP goes up."
+    },
+    {
+      "start": 4479.0,
+      "end": 4480.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4481.0,
+      "end": 4489.0,
+      "text": "This is down to potential short-term overextension, which leads to profit-taking in the index."
+    },
+    {
+      "start": 4489.0,
+      "end": 4490.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4490.0,
+      "end": 4504.0,
+      "text": "Now, GDP is relevant to traders and PMs because it helps us understand the growth potential in the economy and the positive correlation to company, so stock earnings."
+    },
+    {
+      "start": 4504.0,
+      "end": 4505.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4505.0,
+      "end": 4511.0,
+      "text": "Additionally, if we can predict forward-looking GDP, what are we doing?"
+    },
+    {
+      "start": 4511.0,
+      "end": 4521.0,
+      "text": "Well, we are predicting forward-looking company earnings on the whole, on a wholesale basis across the market."
+    },
+    {
+      "start": 4521.0,
+      "end": 4522.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4522.0,
+      "end": 4527.0,
+      "text": "We are predicting forward-looking company earnings through positive correlation."
+    },
+    {
+      "start": 4527.0,
+      "end": 4537.0,
+      "text": "And we trade with a long-short bias depending on our view or prediction of expansion or contraction in the economy."
+    },
+    {
+      "start": 4537.0,
+      "end": 4545.0,
+      "text": "Now, we know by looking at the data, expansions last longer than contractions."
+    },
+    {
+      "start": 4545.0,
+      "end": 4548.0,
+      "text": "So what does that mean on a company level?"
+    },
+    {
+      "start": 4548.0,
+      "end": 4554.0,
+      "text": "It means earnings growth lasts longer than earnings contraction."
+    },
+    {
+      "start": 4554.0,
+      "end": 4560.0,
+      "text": "Economic growth, GDP growth lasts longer than GDP contraction."
+    },
+    {
+      "start": 4560.0,
+      "end": 4572.0,
+      "text": "However, when GDP is expected to contract, obviously we can't reasonably expect earnings to be growing."
+    },
+    {
+      "start": 4572.0,
+      "end": 4593.0,
+      "text": "If at any moment in time we predict, for example, that GDP growth is going to contract in six months' time, of course, how can we reasonably expect earnings growth to be positive?"
+    },
+    {
+      "start": 4593.0,
+      "end": 4594.0,
+      "text": "We can't."
+    },
+    {
+      "start": 4594.0,
+      "end": 4595.0,
+      "text": "We can't."
+    },
+    {
+      "start": 4595.0,
+      "end": 4605.0,
+      "text": "So our expansions, we know, last longer than contractions at a GDP level and an earnings growth level."
+    },
+    {
+      "start": 4605.0,
+      "end": 4615.0,
+      "text": "When GDP is expected to contract, of course, we are thinking that earnings growth is going to contract too."
+    },
+    {
+      "start": 4615.0,
+      "end": 4636.0,
+      "text": "So overall, GDP growth and predicting it is very relevant to traders and PMs because we need to understand the growth potential in the economy and the subsequent growth potential in company stock earnings."
+    },
+    {
+      "start": 4636.0,
+      "end": 4643.0,
+      "text": "Now, let's move on to the basket case, China."
+    },
+    {
+      "start": 4643.0,
+      "end": 4655.0,
+      "text": "When we're thinking of this geographically, globally, I'm thinking about stock markets leading GDP for each economic region or country."
+    },
+    {
+      "start": 4655.0,
+      "end": 4668.0,
+      "text": "China GDP and stock market returns, when we look at statistical correlations and quadnomial data, they're a basket case."
+    },
+    {
+      "start": 4668.0,
+      "end": 4669.0,
+      "text": "Why?"
+    },
+    {
+      "start": 4669.0,
+      "end": 4679.0,
+      "text": "Well, because much of the Chinese GDP growth that occurs is not corporate growth."
+    },
+    {
+      "start": 4679.0,
+      "end": 4681.0,
+      "text": "The government has a hand in everything."
+    },
+    {
+      "start": 4681.0,
+      "end": 4682.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4682.0,
+      "end": 4686.0,
+      "text": "It's very much public sector driven."
+    },
+    {
+      "start": 4686.0,
+      "end": 4690.0,
+      "text": "And the data can also be heavily manipulated."
+    },
+    {
+      "start": 4690.0,
+      "end": 4696.0,
+      "text": "This is why Chinese GDP growth is notoriously difficult to predict."
+    },
+    {
+      "start": 4696.0,
+      "end": 4700.0,
+      "text": "A lot of the times the numbers are made up."
+    },
+    {
+      "start": 4700.0,
+      "end": 4702.0,
+      "text": "They are fantasy."
+    },
+    {
+      "start": 4702.0,
+      "end": 4703.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4703.0,
+      "end": 4706.0,
+      "text": "Attempting to position in Chinese stocks."
+    },
+    {
+      "start": 4706.0,
+      "end": 4711.0,
+      "text": "So American depository receipts, Chinese stocks on the New York Stock Exchange."
+    },
+    {
+      "start": 4711.0,
+      "end": 4719.0,
+      "text": "Attempting to position in Chinese stocks based on a view of Chinese GDP is very obviously a futile."
+    },
+    {
+      "start": 4719.0,
+      "end": 4724.0,
+      "text": "We will come on to China much later in the video series."
+    },
+    {
+      "start": 4724.0,
+      "end": 4738.0,
+      "text": "But for now, we just need to understand the data and continue to build our understanding and educational foundation in stock markets leading GDP and looking at them around the world."
+    },
+    {
+      "start": 4738.0,
+      "end": 4739.0,
+      "text": "Okay."
+    },
+    {
+      "start": 4739.0,
+      "end": 4745.0,
+      "text": "What we're really interested in is the US and Eurozone GDP."
+    },
+    {
+      "start": 4745.0,
+      "end": 4750.0,
+      "text": "That's what we're really interested in because that's what drives global GDP."
+    },
+    {
+      "start": 4750.0,
+      "end": 4764.0,
+      "text": "What we're trying to always understand here as traders, portfolio managers, is the bigger macro picture, the bigger macro economic picture."
+    },
+    {
+      "start": 4764.0,
+      "end": 4772.0,
+      "text": "We're always asking ourselves the question, which way is the wind blowing?"
+    },
+    {
+      "start": 4772.0,
+      "end": 4777.0,
+      "text": "And asking ourselves the question, how hard is the wind blowing?"
+    },
+    {
+      "start": 4777.0,
+      "end": 4782.0,
+      "text": "What does this mean for the bias in our portfolio?"
+    },
+    {
+      "start": 4782.0,
+      "end": 4784.0,
+      "text": "Should we be long?"
+    },
+    {
+      "start": 4784.0,
+      "end": 4785.0,
+      "text": "Should we be short?"
+    },
+    {
+      "start": 4785.0,
+      "end": 4786.0,
+      "text": "Should we be neutral?"
+    },
+    {
+      "start": 4786.0,
+      "end": 4787.0,
+      "text": "Should we be neutral?"
+    },
+    {
+      "start": 4787.0,
+      "end": 4792.0,
+      "text": "We also ask ourselves the general question that we learned in the previous video series."
+    },
+    {
+      "start": 4792.0,
+      "end": 4795.0,
+      "text": "Are we in a bull market?"
+    },
+    {
+      "start": 4795.0,
+      "end": 4798.0,
+      "text": "Are we expecting expansion?"
+    },
+    {
+      "start": 4798.0,
+      "end": 4802.0,
+      "text": "Or are we in a bear market?"
+    },
+    {
+      "start": 4802.0,
+      "end": 4804.0,
+      "text": "Are we expecting contraction?"
+    },
+    {
+      "start": 4804.0,
+      "end": 4815.0,
+      "text": "So these are the reasons, guys, why we look at stock markets as a leading indicator to GDP and company earnings."
+    },
+    {
+      "start": 4815.0,
+      "end": 4821.0,
+      "text": "We want to be setting ourselves up for the direction that the wind is blowing in."
+    },
+    {
+      "start": 4821.0,
+      "end": 4828.0,
+      "text": "Trying to calculate some sort of expectation for how hard the wind is blowing."
+    },
+    {
+      "start": 4828.0,
+      "end": 4836.0,
+      "text": "Setting our portfolios up with a bias, long, short, neutral, and understanding the context that we're in."
+    },
+    {
+      "start": 4836.0,
+      "end": 4839.0,
+      "text": "Are we in a bull market where we experience expansion?"
+    },
+    {
+      "start": 4839.0,
+      "end": 4843.0,
+      "text": "Are we in a bear market where we're experiencing contraction?"
+    },
+    {
+      "start": 4843.0,
+      "end": 4846.0,
+      "text": "What is our expectation for the future?"
+    },
+    {
+      "start": 4846.0,
+      "end": 4848.0,
+      "text": "And how do we want to be set up?"
+    },
+    {
+      "start": 4848.0,
+      "end": 4854.0,
+      "text": "So this is a great general fundamental level of understanding, guys."
+    },
+    {
+      "start": 4854.0,
+      "end": 4861.0,
+      "text": "Just a little note before we go back to the desk and onto the next video."
+    },
+    {
+      "start": 4861.0,
+      "end": 4869.0,
+      "text": "When you're downloading data from public sources, GDP data, okay?"
+    },
+    {
+      "start": 4869.0,
+      "end": 4873.0,
+      "text": "GDP data is subject to revisions."
+    },
+    {
+      "start": 4873.0,
+      "end": 4883.0,
+      "text": "So please, in the future, do not contact ITPM and tell us our GDP stats in the downloads area do not match your stats."
+    },
+    {
+      "start": 4883.0,
+      "end": 4895.0,
+      "text": "There's always going to be small differences because of future revisions by authorities in the country that you're looking at, okay?"
+    },
+    {
+      "start": 4895.0,
+      "end": 4898.0,
+      "text": "Just look at what we've done as a template."
+    },
+    {
+      "start": 4898.0,
+      "end": 4907.0,
+      "text": "Repeat the same processes that we teach you here and you will get the same or very close to the same results, okay?"
+    },
+    {
+      "start": 4907.0,
+      "end": 4909.0,
+      "text": "There's not going to be much difference."
+    },
+    {
+      "start": 4909.0,
+      "end": 4915.0,
+      "text": "Use what we've told you as a template and practice, practice, practice."
+    },
+    {
+      "start": 4915.0,
+      "end": 4917.0,
+      "text": "Go through the data yourself."
+    },
+    {
+      "start": 4917.0,
+      "end": 4919.0,
+      "text": "Go through the spreadsheets."
+    },
+    {
+      "start": 4919.0,
+      "end": 4922.0,
+      "text": "Go through the exercises of building the spreadsheets yourself."
+    },
+    {
+      "start": 4922.0,
+      "end": 4926.0,
+      "text": "And you will get to the same or very close to same results."
+    },
+    {
+      "start": 4926.0,
+      "end": 4936.0,
+      "text": "Please do not send us messages telling us that our data is slightly incorrect because there will be revisions to GDP data."
+    },
+    {
+      "start": 4936.0,
+      "end": 4947.0,
+      "text": "Okay, guys, let's go back to the desk for a quick recap and then we'll go into the next video."
+    },
+    {
+      "start": 4947.0,
+      "end": 4954.0,
+      "text": "Okay, so we got into some pretty hefty data sets and concepts there."
+    },
+    {
+      "start": 4954.0,
+      "end": 4959.0,
+      "text": "It's great to break you in quickly and throw you into the deep end."
+    },
+    {
+      "start": 4959.0,
+      "end": 4962.0,
+      "text": "I know it's a little bit uncomfortable, but don't worry."
+    },
+    {
+      "start": 4962.0,
+      "end": 4967.0,
+      "text": "You will learn to swim much quicker than you expect."
+    },
+    {
+      "start": 4967.0,
+      "end": 4976.0,
+      "text": "Just use the spreadsheet downloads and bring yourself up to speed using the basic statistics guide PDF."
+    },
+    {
+      "start": 4976.0,
+      "end": 4989.0,
+      "text": "Now, the main point here to get from this video is that as traders, we use macroeconomics as a tool to forecast stock market direction."
+    },
+    {
+      "start": 4989.0,
+      "end": 4996.0,
+      "text": "The tool of GDP direction is not, of course, 100%."
+    },
+    {
+      "start": 4996.0,
+      "end": 4999.0,
+      "text": "Nothing is guaranteed in financial markets."
+    },
+    {
+      "start": 4999.0,
+      "end": 5014.0,
+      "text": "But in the US and Europe, it explains around 70%, 7-0, 70% of quarterly moves in the stock market historically."
+    },
+    {
+      "start": 5014.0,
+      "end": 5025.0,
+      "text": "Now, when it doesn't explain the move, in the vast majority of cases, it's because the market has gotten ahead of itself."
+    },
+    {
+      "start": 5025.0,
+      "end": 5029.0,
+      "text": "And it falls before GDP is printed up."
+    },
+    {
+      "start": 5029.0,
+      "end": 5037.0,
+      "text": "And we characterize these periods as corrections or periods of profit taking."
+    },
+    {
+      "start": 5037.0,
+      "end": 5046.0,
+      "text": "So, if we can predict GDP direction and we get it right, that we're going to have a correction."
+    },
+    {
+      "start": 5046.0,
+      "end": 5053.0,
+      "text": "So, we get it right in those periods where expectations get ahead of themselves and they are too high."
+    },
+    {
+      "start": 5053.0,
+      "end": 5057.0,
+      "text": "Then, we stack the odds in our favor."
+    },
+    {
+      "start": 5057.0,
+      "end": 5065.0,
+      "text": "And this approach is way better odds than simply day trading at 50-50 odds."
+    },
+    {
+      "start": 5065.0,
+      "end": 5079.0,
+      "text": "So, we use indicators as traders to predict GDP so we can gauge which way the wind is blowing and position our portfolios accordingly."
+    },
+    {
+      "start": 5079.0,
+      "end": 5092.0,
+      "text": "Now, we can't tell how much the market is going to go up or down in percentage terms when we have the S&P 500, for example, predicting GDP."
+    },
+    {
+      "start": 5092.0,
+      "end": 5099.0,
+      "text": "But we can predict the direction with a high degree of certainty."
+    },
+    {
+      "start": 5099.0,
+      "end": 5105.0,
+      "text": "And this for us as traders and portfolio managers is good enough."
+    },
+    {
+      "start": 5105.0,
+      "end": 5115.0,
+      "text": "We essentially expose ourselves by taking this approach to potential outsized consistent returns."
+    },
+    {
+      "start": 5115.0,
+      "end": 5131.0,
+      "text": "So, as traders, we forecast GDP direction and therefore stock market direction and potential returns via what we call leading indicators."
+    },
+    {
+      "start": 5131.0,
+      "end": 5139.0,
+      "text": "So, macroeconomic indicators that lead the economy or economic GDP growth."
+    },
+    {
+      "start": 5139.0,
+      "end": 5152.0,
+      "text": "Now, we're going to start here with our first set of indicators to predict GDP and stock market direction and potential returns."
+    },
+    {
+      "start": 5152.0,
+      "end": 5156.0,
+      "text": "We're going to do a deep dive into the bond markets."
+    },
+    {
+      "start": 5156.0,
+      "end": 5160.0,
+      "text": "So, in video 4, we're going to look at sovereign bonds."
+    },
+    {
+      "start": 5160.0,
+      "end": 5164.0,
+      "text": "So, real interest rates and the yield curve."
+    },
+    {
+      "start": 5164.0,
+      "end": 5169.0,
+      "text": "And in video 5, we're going to be looking at corporate bonds and credit spreads."
+    },
+    {
+      "start": 5169.0,
+      "end": 5181.0,
+      "text": "These are very important indicators for predicting economic growth direction and therefore stock market direction and potential returns."
+    },
+    {
+      "start": 5181.0,
+      "end": 5197.0,
+      "text": "Also, these indicators are a gauge of liquidity in the stock market and both stock market direction and GDP growth direction are also a function of liquidity."
+    },
+    {
+      "start": 5197.0,
+      "end": 5201.0,
+      "text": "And it all starts in the money markets."
+    },
+    {
+      "start": 5201.0,
+      "end": 5204.0,
+      "text": "So, interest rates and bond markets."
+    },
+    {
+      "start": 5204.0,
+      "end": 5206.0,
+      "text": "So, let's get into the next video."
+    },
+    {
+      "start": 5206.0,
+      "end": 5212.0,
+      "text": "And I'll see you back here at the desk at the end of video number 4."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

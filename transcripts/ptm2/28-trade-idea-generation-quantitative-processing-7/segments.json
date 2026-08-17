@@ -1,0 +1,2320 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 14.52,
+      "text": "Okay, so welcome to video number 28. We are going to look at now as part of the trade idea generation"
+    },
+    {
+      "start": 14.52,
+      "end": 23.04,
+      "text": "process, we're going to look at data mining and processing mistakes and solutions. So far,"
+    },
+    {
+      "start": 23.04,
+      "end": 33.76,
+      "text": "we have gone through the quantitative process and we've looked at long ideas and short ideas and also"
+    },
+    {
+      "start": 33.76,
+      "end": 42.08,
+      "text": "turnarounds, X growth names and value traps. What we've done is we've gone through forward-looking"
+    },
+    {
+      "start": 42.08,
+      "end": 49.84,
+      "text": "metrics, our identification process, and we've gone through an evidence process looking at"
+    },
+    {
+      "start": 49.84,
+      "end": 56.72,
+      "text": "backwards-looking quantitative data as well. What we're going to be looking at here in this video"
+    },
+    {
+      "start": 57.52,
+      "end": 65.44,
+      "text": "is data mining and processing mistakes and some solutions for the forward-looking quantitative"
+    },
+    {
+      "start": 65.44,
+      "end": 74.24,
+      "text": "identification process. What we're trying to achieve here is that we want to get our quantitative"
+    },
+    {
+      "start": 74.24,
+      "end": 81.2,
+      "text": "spreadsheet work to reflect the reality of a sector as closely as possible."
+    },
+    {
+      "start": 82.64,
+      "end": 90.4,
+      "text": "How can we even make sensible conclusions to determine whether there's genuine positive"
+    },
+    {
+      "start": 90.4,
+      "end": 95.92,
+      "text": "and negative outliers in a sector and analyze everything else in between"
+    },
+    {
+      "start": 95.92,
+      "end": 103.76,
+      "text": "if we don't know for certain that the data that we've downloaded, the sector data that we're looking"
+    },
+    {
+      "start": 103.76,
+      "end": 115.44,
+      "text": "at, accurately reflects reality? Now, what's interesting is that ITPM teaching methods went globally public in 2013."
+    },
+    {
+      "start": 115.44,
+      "end": 125.2,
+      "text": "And over a number of years, we witnessed and noticed some patterns that emerged, patterns of behavior"
+    },
+    {
+      "start": 125.84,
+      "end": 133.52,
+      "text": "that emerged amongst retail traders at ITPM when they were doing their quantitative processing."
+    },
+    {
+      "start": 134.96,
+      "end": 141.12,
+      "text": "Most commonly, what we saw were patterns where people were making some"
+    },
+    {
+      "start": 141.12,
+      "end": 147.44,
+      "text": "some basic errors in their quantitative processing identification phase."
+    },
+    {
+      "start": 148.56,
+      "end": 153.2,
+      "text": "So, what we're going to do here is feed back this information to you."
+    },
+    {
+      "start": 154.0,
+      "end": 160.8,
+      "text": "So, you just simply don't make these mistakes and you erase them immediately."
+    },
+    {
+      "start": 160.8,
+      "end": 169.76,
+      "text": "So, you save yourself a ton of time in the identification phase of the quantitative processing."
+    },
+    {
+      "start": 169.76,
+      "end": 178.08,
+      "text": "So, it's really important that when you start this, that you get off on the right foot and you eliminate"
+    },
+    {
+      "start": 178.72,
+      "end": 185.52,
+      "text": "all of the common errors that we've witnessed, that we've seen over the last decade."
+    },
+    {
+      "start": 186.64,
+      "end": 195.52,
+      "text": "And what it really comes down to is a lack of attention to detail and just some really basic common sense."
+    },
+    {
+      "start": 196.72,
+      "end": 202.32,
+      "text": "And, unfortunately, trading is not an easy pursuit."
+    },
+    {
+      "start": 202.32,
+      "end": 207.28,
+      "text": "It does require a lot of attention to detail and common sense."
+    },
+    {
+      "start": 208.4,
+      "end": 216.72,
+      "text": "But, from a teaching perspective, from an ITPM perspective, we have to be very, very careful here."
+    },
+    {
+      "start": 217.52,
+      "end": 225.12,
+      "text": "Because, there is always a catch-22 when teaching people from scratch how to trade."
+    },
+    {
+      "start": 225.12,
+      "end": 235.84,
+      "text": "Because, if you want to become, or anybody wants to become, a successful trader over their lifetime or career,"
+    },
+    {
+      "start": 237.36,
+      "end": 244.32,
+      "text": "you have to become self-sustainable."
+    },
+    {
+      "start": 244.32,
+      "end": 244.96,
+      "text": "You have to be able to only rely on yourself."
+    },
+    {
+      "start": 246.16,
+      "end": 254.88,
+      "text": "In addition, you have to have a very strong work ethic and you have to have the ability to be able to work smart and not hard."
+    },
+    {
+      "start": 254.88,
+      "end": 261.44,
+      "text": "So, not going down endless rabbit holes to get to information that's irrelevant."
+    },
+    {
+      "start": 261.44,
+      "end": 263.68,
+      "text": "Working smart is important."
+    },
+    {
+      "start": 265.44,
+      "end": 275.76,
+      "text": "So, if you recall, the four principles of ITPM, self-sustainability, work ethic, free information, and working smart, not hard."
+    },
+    {
+      "start": 276.64,
+      "end": 279.36,
+      "text": "There's very good reasons why we have these principles."
+    },
+    {
+      "start": 279.76,
+      "end": 284.08,
+      "text": "It's because we've been in this game for a very long time."
+    },
+    {
+      "start": 284.64,
+      "end": 293.44,
+      "text": "And, we know what traits are required to produce consistently profitable traders."
+    },
+    {
+      "start": 294.88,
+      "end": 302.32,
+      "text": "And, part of self-sustainability, work ethic, and the ability to work smart, not hard,"
+    },
+    {
+      "start": 302.96,
+      "end": 310.08,
+      "text": "is the ability to be able to process and understand large amounts of data."
+    },
+    {
+      "start": 310.64,
+      "end": 311.44,
+      "text": "And, guess what?"
+    },
+    {
+      "start": 312.0,
+      "end": 314.88,
+      "text": "That requires a lot of attention to detail."
+    },
+    {
+      "start": 315.68,
+      "end": 320.64,
+      "text": "On top of that, you have to have the ability to interpret the data."
+    },
+    {
+      "start": 321.36,
+      "end": 323.44,
+      "text": "And, that requires common sense."
+    },
+    {
+      "start": 325.36,
+      "end": 331.52,
+      "text": "And, the only way that you're going to acquire this skill set, or these skill sets,"
+    },
+    {
+      "start": 332.08,
+      "end": 340.48,
+      "text": "and be good at implementing these principles over your career, over your lifetime, is if you do the work yourself."
+    },
+    {
+      "start": 341.04,
+      "end": 343.44,
+      "text": "And, find the answers yourself."
+    },
+    {
+      "start": 344.0,
+      "end": 347.52,
+      "text": "Good traders find the answers themselves."
+    },
+    {
+      "start": 348.96,
+      "end": 356.0,
+      "text": "So, the catch-22 here, from a teaching perspective, is that we want to give you all the information"
+    },
+    {
+      "start": 357.12,
+      "end": 360.32,
+      "text": "that enables you to be successful in trading."
+    },
+    {
+      "start": 360.88,
+      "end": 367.6,
+      "text": "But, we know at the same time, that to be successful in trading, you have to do it yourself."
+    },
+    {
+      "start": 369.04,
+      "end": 376.48,
+      "text": "So, I guess the best analogy I can give here, is that we can provide you the golden keys,"
+    },
+    {
+      "start": 376.48,
+      "end": 380.56,
+      "text": "to the golden door that opens to the golden kingdom."
+    },
+    {
+      "start": 381.28,
+      "end": 387.2,
+      "text": "But, you have to open the door yourself and walk over the threshold."
+    },
+    {
+      "start": 388.88,
+      "end": 396.08,
+      "text": "So, from a teaching perspective, we have to draw a line in the sand that we simply do not cross."
+    },
+    {
+      "start": 396.64,
+      "end": 404.32,
+      "text": "Because, if we did the opposite, and we told you all the time exactly what to do, and what to buy,"
+    },
+    {
+      "start": 404.32,
+      "end": 413.36,
+      "text": "what to sell, when to buy it, when to sell it, etc., etc., you simply would never become a good trader."
+    },
+    {
+      "start": 413.36,
+      "end": 418.24,
+      "text": "You wouldn't be self sustainable, you wouldn't be self sustainable, you wouldn't have a solid work ethic,"
+    },
+    {
+      "start": 418.8,
+      "end": 426.96,
+      "text": "you wouldn't have the ability to work smart and not hard, and you wouldn't have attention to detail and common sense."
+    },
+    {
+      "start": 426.96,
+      "end": 430.56,
+      "text": "We would just be doing you a massive disservice."
+    },
+    {
+      "start": 431.84,
+      "end": 440.08,
+      "text": "So, when it comes to data processing mistakes, we're going to point you in the right direction."
+    },
+    {
+      "start": 440.08,
+      "end": 448.48,
+      "text": "But, of course, you have to then go off and do all of the work yourself to generate your own trade ideas."
+    },
+    {
+      "start": 448.48,
+      "end": 456.48,
+      "text": "So, the first step is to eliminate all of the common mistakes that people make in the beginning,"
+    },
+    {
+      "start": 456.48,
+      "end": 460.8,
+      "text": "when they have very little attention to detail and common sense."
+    },
+    {
+      "start": 462.24,
+      "end": 472.0,
+      "text": "Now, the good news is, is that the more you practice processing and analyzing big data sets and interpreting them,"
+    },
+    {
+      "start": 473.36,
+      "end": 476.8,
+      "text": "the more attention to detail and common sense you're going to get."
+    },
+    {
+      "start": 477.36,
+      "end": 486.72,
+      "text": "And this will actually help you outside of trading as well, just in the general world, in everyday life."
+    },
+    {
+      "start": 487.68,
+      "end": 497.68,
+      "text": "You will become, generally, just a lot sharper, and you'll be able to spot discrepancies and potential opportunities,"
+    },
+    {
+      "start": 497.68,
+      "end": 502.4,
+      "text": "not just in trading, but even outside trading as well."
+    },
+    {
+      "start": 502.4,
+      "end": 510.8,
+      "text": "You will just become better at self sustainability, your work ethic, working smart, not hard,"
+    },
+    {
+      "start": 511.76,
+      "end": 520.0,
+      "text": "and have much better attention to detail and common sense the more you engage in the systematic"
+    },
+    {
+      "start": 520.0,
+      "end": 528.8,
+      "text": "trade idea generation process and the quantitative process at the identification stage."
+    },
+    {
+      "start": 530.48,
+      "end": 537.44,
+      "text": "So, when you're going through your monthly processes, you're going to be downloading data."
+    },
+    {
+      "start": 538.72,
+      "end": 547.04,
+      "text": "Now, this data, ITPM, does provide you with updates of the US Stock Screener sheet that we've looked"
+    },
+    {
+      "start": 547.04,
+      "end": 552.8,
+      "text": "at previously in the PTM video series that is downloaded from Zaxx."
+    },
+    {
+      "start": 552.8,
+      "end": 558.24,
+      "text": "It's available on a monthly basis in the ITPM data section on the website."
+    },
+    {
+      "start": 559.84,
+      "end": 566.0,
+      "text": "And this data is a NAICS classification data that's updated every month."
+    },
+    {
+      "start": 566.8,
+      "end": 569.2,
+      "text": "And it is available publicly."
+    },
+    {
+      "start": 569.2,
+      "end": 570.56,
+      "text": "You can download it yourself."
+    },
+    {
+      "start": 571.28,
+      "end": 574.88,
+      "text": "It's accessible and downloadable by everybody."
+    },
+    {
+      "start": 575.36,
+      "end": 582.24,
+      "text": "However, you do need to learn how to organize the data and process it correctly"
+    },
+    {
+      "start": 582.24,
+      "end": 584.88,
+      "text": "with attention to detail and common sense."
+    },
+    {
+      "start": 585.68,
+      "end": 591.44,
+      "text": "Additionally, data sources can, of course, change over time and in the future."
+    },
+    {
+      "start": 592.08,
+      "end": 598.4,
+      "text": "You have to learn how to search for data sets using search engines like Google"
+    },
+    {
+      "start": 598.4,
+      "end": 604.56,
+      "text": "and not just rely on people to tell you where to find it and do all of the work for you."
+    },
+    {
+      "start": 605.12,
+      "end": 612.48,
+      "text": "So, by now, you should know that this is not how the Institute of Trading and Portfolio Management works."
+    },
+    {
+      "start": 613.28,
+      "end": 619.6,
+      "text": "You will never be a consistently profitable trader if you constantly rely on people"
+    },
+    {
+      "start": 619.6,
+      "end": 623.68,
+      "text": "to tell you what to do, where to get information that's important,"
+    },
+    {
+      "start": 623.68,
+      "end": 626.24,
+      "text": "and then they literally do the work for you."
+    },
+    {
+      "start": 626.24,
+      "end": 633.12,
+      "text": "It's impossible for you to become a consistently profitable trader if that's the route you take."
+    },
+    {
+      "start": 634.4,
+      "end": 642.4,
+      "text": "So, you have to learn to look for this data yourself and rely on yourself and also learn how to process it correctly."
+    },
+    {
+      "start": 643.28,
+      "end": 650.8,
+      "text": "So, you can process correctly by yourself with no help from anybody on a regular monthly basis."
+    },
+    {
+      "start": 652.16,
+      "end": 660.88,
+      "text": "Now, here's our first problem with big data sets and downloading big data sets from third-party sources."
+    },
+    {
+      "start": 661.68,
+      "end": 665.92,
+      "text": "It's trusting that all the numbers are correct and accurate."
+    },
+    {
+      "start": 666.48,
+      "end": 674.64,
+      "text": "So, when visiting websites like Zaxx or Nasdaq.com and downloading the forward-looking data"
+    },
+    {
+      "start": 674.64,
+      "end": 680.88,
+      "text": "for around 2200-plus stocks, there's a major problem with doing so."
+    },
+    {
+      "start": 681.44,
+      "end": 688.72,
+      "text": "You're engaging in an exercise of a large-scale data dump and you will be downloading data"
+    },
+    {
+      "start": 688.72,
+      "end": 694.08,
+      "text": "with differing labels from the ones you are used to in the PTM video series."
+    },
+    {
+      "start": 695.28,
+      "end": 700.56,
+      "text": "There will be different titles for the columns in the spreadsheet when you download it"
+    },
+    {
+      "start": 701.2,
+      "end": 707.84,
+      "text": "and you have to organize the data into a recognizable and easy-to-use format"
+    },
+    {
+      "start": 708.48,
+      "end": 715.6,
+      "text": "similar to the way we have done it or exactly the same as the way we have done it with our 11 numbers."
+    },
+    {
+      "start": 715.6,
+      "end": 722.64,
+      "text": "So, we have stock price, market capitalization, earnings per share zero, which is last year's"
+    },
+    {
+      "start": 722.64,
+      "end": 733.04,
+      "text": "reported EPS, EPS1, which is forward-looking EPS of the current year, EPS2, forward-looking EPS of next year,"
+    },
+    {
+      "start": 733.6,
+      "end": 740.72,
+      "text": "earnings growth 1, earnings growth 1, earnings growth 2, PE1, PE2, PEG1, and PEG2."
+    },
+    {
+      "start": 740.72,
+      "end": 752.88,
+      "text": "These are the standard 11 numbers that we want to get in any download to reflect reality for each individual stock in a sector,"
+    },
+    {
+      "start": 752.88,
+      "end": 761.2,
+      "text": "and of course, therefore, the sector as a whole. And when you initially download spreadsheets like the ones"
+    },
+    {
+      "start": 761.2,
+      "end": 770.96,
+      "text": "from Zaxx or Nasdaq.com, these titles will not be there. You have to rearrange it and organize the sheet to get it all accurate and correct."
+    },
+    {
+      "start": 772.0,
+      "end": 779.12,
+      "text": "So, that's the first step, but this creates also a bigger problem in terms of the big data dump."
+    },
+    {
+      "start": 779.12,
+      "end": 787.12,
+      "text": "Large data dumps, when we are downloading them, if we're not doing any work whatsoever on the numbers,"
+    },
+    {
+      "start": 787.12,
+      "end": 796.8,
+      "text": "we are making the assumption that every number in all rows, columns, and cells for 2200-plus stocks"
+    },
+    {
+      "start": 797.44,
+      "end": 807.2,
+      "text": "is 100% accurate. As traders, we have to have attention to detail and common sense, and we have to be as"
+    },
+    {
+      "start": 807.2,
+      "end": 815.44,
+      "text": "accurate as possible in reflecting reality. One of the biggest issues we always see at ITPM"
+    },
+    {
+      "start": 816.0,
+      "end": 824.4,
+      "text": "is retail traders just simply being too trusting with the numbers and not checking or eyeballing the numbers"
+    },
+    {
+      "start": 825.04,
+      "end": 834.08,
+      "text": "and fixing the errors to ensure an accurate reflection of reality. And that is attention to detail."
+    },
+    {
+      "start": 834.08,
+      "end": 841.2,
+      "text": "On top of that, having common sense to enable sensible conclusions about the sector."
+    },
+    {
+      "start": 842.88,
+      "end": 849.2,
+      "text": "What's happening here, if you download a big data spreadsheet from a third-party source,"
+    },
+    {
+      "start": 850.0,
+      "end": 857.12,
+      "text": "if you're doing absolutely nothing to cleanse the data, what you're doing is, is you're trusting"
+    },
+    {
+      "start": 857.68,
+      "end": 867.36,
+      "text": "a paste-special data dump from a third-party source and you're trusting that the numbers are 100% accurate."
+    },
+    {
+      "start": 868.0,
+      "end": 876.16,
+      "text": "By not checking and fixing any issues with the data, the numbers that you're basing your decisions on"
+    },
+    {
+      "start": 876.16,
+      "end": 881.84,
+      "text": "to identify both positive and negative outliers, and of course, everything in between,"
+    },
+    {
+      "start": 881.84,
+      "end": 889.6,
+      "text": "could just be totally incorrect. So your conclusions will just be meaningless and wrong."
+    },
+    {
+      "start": 891.04,
+      "end": 899.6,
+      "text": "So how can we even begin to consider taking real money positions with real money in a trading account"
+    },
+    {
+      "start": 899.6,
+      "end": 906.16,
+      "text": "account if we don't even know if our ideas, our trade ideas, reflect reality?"
+    },
+    {
+      "start": 906.72,
+      "end": 913.84,
+      "text": "We have to get the data of a chosen sector to reflect reality as closely as possible."
+    },
+    {
+      "start": 913.84,
+      "end": 919.92,
+      "text": "And we have to have total confidence in the data and our findings."
+    },
+    {
+      "start": 921.28,
+      "end": 930.08,
+      "text": "Now, the good news is, out of our 11 numbers that we organize our spreadsheets into as part of the"
+    },
+    {
+      "start": 930.08,
+      "end": 939.68,
+      "text": "identification process, as long as you can get the stock price and the EPS numbers or estimates accurate,"
+    },
+    {
+      "start": 939.68,
+      "end": 945.68,
+      "text": "all the other data can just be worked out using Excel formulas."
+    },
+    {
+      "start": 945.68,
+      "end": 952.24,
+      "text": "So when we're working out, for example, PE, it's just the stock price over the EPS."
+    },
+    {
+      "start": 952.24,
+      "end": 958.96,
+      "text": "So if you get the stock price right and you get the EPS estimates right, you're going to get PE correct."
+    },
+    {
+      "start": 959.52,
+      "end": 968.0,
+      "text": "The earnings growth numbers, they are just percentage differences from one EPS number to another EPS number."
+    },
+    {
+      "start": 968.0,
+      "end": 974.0,
+      "text": "If you get the percentages right, you're going to get earnings growth percentage right."
+    },
+    {
+      "start": 974.96,
+      "end": 980.64,
+      "text": "For PEG ratio, it's just PE divided by the earnings growth percentage."
+    },
+    {
+      "start": 980.64,
+      "end": 988.32,
+      "text": "So if you get the stock price right and the EPS right, and you've calculated PE and the earnings growth"
+    },
+    {
+      "start": 988.32,
+      "end": 992.4,
+      "text": "number correctly, you're going to get the PEG number right."
+    },
+    {
+      "start": 992.4,
+      "end": 998.48,
+      "text": "So everything goes back to just getting the stock price and the EPS estimates accurate."
+    },
+    {
+      "start": 1000.0,
+      "end": 1008.96,
+      "text": "So something that you're going to find that happens when you download spreadsheets from third-party data sources,"
+    },
+    {
+      "start": 1009.68,
+      "end": 1022.0,
+      "text": "and in particular with the Zacks or Nasdaq.com download, you're going to find that the cells in the spreadsheet are not live."
+    },
+    {
+      "start": 1022.0,
+      "end": 1032.96,
+      "text": "So we have a solution for that. It's very straightforward. We make the cells live and we eliminate any rogue cells."
+    },
+    {
+      "start": 1032.96,
+      "end": 1044.24,
+      "text": "So please, when you download a spreadsheet from a third-party data source, just eyeball the goddamn numbers."
+    },
+    {
+      "start": 1045.84,
+      "end": 1057.76,
+      "text": "Don't blindly go through a spreadsheet and not eyeball it and see on a basic cursory eyeballing if the numbers look right."
+    },
+    {
+      "start": 1058.64,
+      "end": 1066.16,
+      "text": "So eyeball the numbers and just see if they make sense. Have attention to detail, please."
+    },
+    {
+      "start": 1067.6,
+      "end": 1076.4,
+      "text": "When you just do a cursory, non-thorough eyeballing, so without really going into great detail,"
+    },
+    {
+      "start": 1076.4,
+      "end": 1080.32,
+      "text": "you may find that some of the numbers don't make sense."
+    },
+    {
+      "start": 1080.32,
+      "end": 1094.24,
+      "text": "Most of the time, this is because you've downloaded a spreadsheet from a third-party data source that is big data and the cells are not live."
+    },
+    {
+      "start": 1095.04,
+      "end": 1099.84,
+      "text": "We have to make them live and make the numbers as accurate as possible."
+    },
+    {
+      "start": 1100.88,
+      "end": 1107.36,
+      "text": "So if we look at this sector here, for example, in the first step, when we've downloaded the spreadsheet,"
+    },
+    {
+      "start": 1107.36,
+      "end": 1112.4,
+      "text": "we've downloaded the data and we're drilling down into a particular sector."
+    },
+    {
+      "start": 1112.4,
+      "end": 1120.32,
+      "text": "So for example, like this sector, apparel manufacturing, the first thing we would do is just eyeball the sector."
+    },
+    {
+      "start": 1121.52,
+      "end": 1131.92,
+      "text": "And because we've got a decent level of attention to detail, we're going to find potentially rogue cells."
+    },
+    {
+      "start": 1133.76,
+      "end": 1146.48,
+      "text": "And here in this sector, just by eyeballing the data, we can see that something is wrong with EPS1 or EG1 for Capri Holdings."
+    },
+    {
+      "start": 1147.2,
+      "end": 1158.0,
+      "text": "So we can see that last year's EPS of $3.89, it's in the spreadsheet as falling to $1.50."
+    },
+    {
+      "start": 1158.0,
+      "end": 1163.04,
+      "text": "But the earnings growth is negative 27.89%."
+    },
+    {
+      "start": 1163.04,
+      "end": 1177.28,
+      "text": "But how can it be? EPS dropping from $3.89 to $1.50 is not losing 27.89% of your earnings."
+    },
+    {
+      "start": 1177.28,
+      "end": 1184.32,
+      "text": "It's not negative 27.89%. It's actually negative 61.43%."
+    },
+    {
+      "start": 1186.0,
+      "end": 1190.88,
+      "text": "So in this situation, and this can happen and be very common."
+    },
+    {
+      "start": 1190.88,
+      "end": 1195.04,
+      "text": "It can happen a lot because we're dealing with 2200 plus stocks"
+    },
+    {
+      "start": 1196.4,
+      "end": 1201.76,
+      "text": "in a big data download from a third-party source that doesn't have live cells."
+    },
+    {
+      "start": 1203.04,
+      "end": 1210.96,
+      "text": "In this particular situation, either the EPS estimate is wrong or the paste special"
+    },
+    {
+      "start": 1212.08,
+      "end": 1219.76,
+      "text": "of whoever has put this spreadsheet together has failed and has corrupted the EG1 cell."
+    },
+    {
+      "start": 1221.04,
+      "end": 1226.16,
+      "text": "So how do we actually go about fixing this? Well, it's very easy and straightforward."
+    },
+    {
+      "start": 1226.16,
+      "end": 1231.84,
+      "text": "Remember, as long as you can get the stock price and EPS numbers accurate,"
+    },
+    {
+      "start": 1232.8,
+      "end": 1238.0,
+      "text": "all other data can be worked out just using Excel formulas."
+    },
+    {
+      "start": 1238.0,
+      "end": 1246.24,
+      "text": "So we make the cells live. So we go off and we just do a very quick and simple investigation."
+    },
+    {
+      "start": 1246.8,
+      "end": 1255.92,
+      "text": "We check the EPS estimates from publicly available sources and add in the stock price to the spreadsheet"
+    },
+    {
+      "start": 1256.48,
+      "end": 1259.2,
+      "text": "in order to make all of our cells live."
+    },
+    {
+      "start": 1260.48,
+      "end": 1268.64,
+      "text": "And here for this example, we've just used Yahoo Finance. There will of course be always multiple"
+    },
+    {
+      "start": 1268.64,
+      "end": 1275.2,
+      "text": "other free sources. Just start Googling and stop crying. Do the work."
+    },
+    {
+      "start": 1276.08,
+      "end": 1286.0,
+      "text": "Now here we realize the problem in the spreadsheet because we have $3.89 in Yahoo Finance for last year's EPS."
+    },
+    {
+      "start": 1287.68,
+      "end": 1296.24,
+      "text": "We realize the problem in the spreadsheet must be with the earnings growth number being corrupted in some way."
+    },
+    {
+      "start": 1297.44,
+      "end": 1307.6,
+      "text": "So according to Yahoo Finance, we have $3.89 for EPS a year ago, and we have an average consensus estimate"
+    },
+    {
+      "start": 1308.64,
+      "end": 1320.0,
+      "text": "from analysts for the current year of $1.50. So we know our estimates in the spreadsheet for earnings per share"
+    },
+    {
+      "start": 1320.0,
+      "end": 1326.8,
+      "text": "are actually correct. So whoever's put this spreadsheet together on the other side at our third party"
+    },
+    {
+      "start": 1327.36,
+      "end": 1334.16,
+      "text": "that we're downloading the data from, they have got the EPS estimates correct in the spreadsheet,"
+    },
+    {
+      "start": 1334.16,
+      "end": 1343.92,
+      "text": "but the percentage number for EG1 is off. So what do we do about it? Do we cry about it? Do we send emails to"
+    },
+    {
+      "start": 1343.92,
+      "end": 1352.88,
+      "text": "ITPM asking if there's any other data sources? Do we go down to the local bar and start asking our friends"
+    },
+    {
+      "start": 1353.6,
+      "end": 1365.92,
+      "text": "how to find data online? Do we go on internet forums, create threads, hoping and praying that somebody is"
+    },
+    {
+      "start": 1365.92,
+      "end": 1374.16,
+      "text": "going to come to our rescue to help us organize our data properly? Do we post things on social media about"
+    },
+    {
+      "start": 1374.16,
+      "end": 1385.12,
+      "text": "ITPM being an education company that doesn't provide you with shortcuts to become multimillionaires or do we just give up?"
+    },
+    {
+      "start": 1386.24,
+      "end": 1394.88,
+      "text": "Well, of course not. We just do the work. So we add in the stock price data for Capri Holdings"
+    },
+    {
+      "start": 1395.84,
+      "end": 1406.64,
+      "text": "and we make all the sales live and then we repeat it for every stock in the sector. So you can see here in the"
+    },
+    {
+      "start": 1406.64,
+      "end": 1415.44,
+      "text": "first screenshot at the top of the screen, we've got the percentage calculation formula for EG1 and we make that"
+    },
+    {
+      "start": 1415.44,
+      "end": 1426.8,
+      "text": "sell live negative 61.5%. This is possible because we have the stock price and we have the right EPS data."
+    },
+    {
+      "start": 1427.92,
+      "end": 1431.68,
+      "text": "Then we move on to the other cells for Capri Holdings."
+    },
+    {
+      "start": 1432.32,
+      "end": 1438.24,
+      "text": "We work out the PE ratios. That's the next screenshot below in the middle."
+    },
+    {
+      "start": 1439.36,
+      "end": 1444.48,
+      "text": "We work out the PE ratios for period one and period two."
+    },
+    {
+      "start": 1445.04,
+      "end": 1451.84,
+      "text": "And then in the bottom screenshot, we work out the PEG ratios for period one and period two."
+    },
+    {
+      "start": 1452.72,
+      "end": 1457.84,
+      "text": "That's for Capri Holdings. And then we do it for the rest of the sector as well."
+    },
+    {
+      "start": 1459.12,
+      "end": 1462.88,
+      "text": "And of course, in Excel, there are shortcuts"
+    },
+    {
+      "start": 1464.4,
+      "end": 1471.2,
+      "text": "to working out numbers quickly, but we want to make sure that we have attention to detail"
+    },
+    {
+      "start": 1471.2,
+      "end": 1476.64,
+      "text": "to make sure that if we use shortcuts, the numbers are still coming out accurately."
+    },
+    {
+      "start": 1477.36,
+      "end": 1485.76,
+      "text": "So all cells for Capri Holdings are then made live and then you can auto fill down."
+    },
+    {
+      "start": 1486.56,
+      "end": 1493.92,
+      "text": "But where there are negative or positive minorities, you're going to have to overwrite the formulas."
+    },
+    {
+      "start": 1495.36,
+      "end": 1500.96,
+      "text": "We will come on to this processing mistake in a moment. But what you've just seen here,"
+    },
+    {
+      "start": 1501.68,
+      "end": 1508.88,
+      "text": "every time you're going through the process of generating a trade idea, you're going to have to do this."
+    },
+    {
+      "start": 1509.36,
+      "end": 1518.4,
+      "text": "You're going to have to make live cells and eliminate rogue cells. It's the first step to making sure"
+    },
+    {
+      "start": 1518.4,
+      "end": 1526.72,
+      "text": "that your sector reflects reality as closely as possible and all your cells are actually correct"
+    },
+    {
+      "start": 1526.72,
+      "end": 1533.68,
+      "text": "and accurate. Now, there is a mistake that some people make at this stage."
+    },
+    {
+      "start": 1534.56,
+      "end": 1543.76,
+      "text": "They think that they have to do this for all 2200 plus stocks every month, all the time. You don't."
+    },
+    {
+      "start": 1544.48,
+      "end": 1553.04,
+      "text": "Don't try to make the numbers of the 2200 plus stocks live in the spreadsheet and check all of them."
+    },
+    {
+      "start": 1553.04,
+      "end": 1560.0,
+      "text": "It's way too much work. This is not working smart. This is working too hard. You're going down"
+    },
+    {
+      "start": 1560.88,
+      "end": 1568.8,
+      "text": "huge, endless rabbit holes. So do it when you have drilled down to less than 20 or so stocks."
+    },
+    {
+      "start": 1569.6,
+      "end": 1578.16,
+      "text": "Use your time wisely and work smart, not hard. Now, something else that falls under attention to detail"
+    },
+    {
+      "start": 1579.28,
+      "end": 1585.52,
+      "text": "is company's financial year ends. You have to make sure that the data lines up"
+    },
+    {
+      "start": 1586.56,
+      "end": 1593.04,
+      "text": "is a particular company's financial year end. So in this sector of nine stocks, for example,"
+    },
+    {
+      "start": 1593.76,
+      "end": 1600.72,
+      "text": "two of them have their financial year end in March and another two of them have their financial year"
+    },
+    {
+      "start": 1600.72,
+      "end": 1607.12,
+      "text": "end at the end of January. Now, this is just down to having a bit of attention to detail and common"
+    },
+    {
+      "start": 1607.12,
+      "end": 1612.88,
+      "text": "sense, thinking about what you're looking at on the screen. What sector are you looking at?"
+    },
+    {
+      "start": 1613.84,
+      "end": 1622.8,
+      "text": "Does it have seasonal factors? Well, financial year ends change or can be different across stocks"
+    },
+    {
+      "start": 1623.84,
+      "end": 1630.0,
+      "text": "in seasonal sectors. It happens a lot. So this is the apparel manufacturing sector"
+    },
+    {
+      "start": 1630.8,
+      "end": 1639.52,
+      "text": "and some companies choose to have their financial year end at certain times. So like the end of March"
+    },
+    {
+      "start": 1639.52,
+      "end": 1646.96,
+      "text": "and the end of January because they make the bulk of their earnings during the holiday season and"
+    },
+    {
+      "start": 1646.96,
+      "end": 1656.4,
+      "text": "in the January after holiday season sales. So whilst you're processing and checking forward EPS estimates,"
+    },
+    {
+      "start": 1657.12,
+      "end": 1665.92,
+      "text": "you need to make sure that the right years line up across the sector. In a big data dump,"
+    },
+    {
+      "start": 1666.48,
+      "end": 1673.04,
+      "text": "sometimes the numbers will be off. So whoever's on the other side at the third party data source,"
+    },
+    {
+      "start": 1673.68,
+      "end": 1681.04,
+      "text": "they may have put the wrong EPS for the wrong financial year in a cell. So for example, the EPS"
+    },
+    {
+      "start": 1681.04,
+      "end": 1687.76,
+      "text": "number from two years ago might be last year's number and last year's number might be this year's number."
+    },
+    {
+      "start": 1688.32,
+      "end": 1695.84,
+      "text": "You have to double check it and get it right. Be accurate with your financial year ends and get it"
+    },
+    {
+      "start": 1695.84,
+      "end": 1705.76,
+      "text": "correct. Now, one of the biggest errors we see is actually using common sense to understand positive"
+    },
+    {
+      "start": 1706.32,
+      "end": 1715.28,
+      "text": "and negative EPS. So changes when companies go from positive to negative EPS and changes when companies"
+    },
+    {
+      "start": 1715.28,
+      "end": 1725.92,
+      "text": "go from negative to positive EPS. So this creates a problem in big data dumps because whoever's on the other"
+    },
+    {
+      "start": 1725.92,
+      "end": 1736.72,
+      "text": "side has done paste special across 2200 plus stocks and the data can end up being spurious and not make common sense."
+    },
+    {
+      "start": 1738.24,
+      "end": 1747.84,
+      "text": "So in our example, you will notice from the initial data download that PVH Corp and Under Armour have"
+    },
+    {
+      "start": 1747.84,
+      "end": 1756.96,
+      "text": "negative, so loss making EPS for last year in year zero and they have positive EPS in year one."
+    },
+    {
+      "start": 1756.96,
+      "end": 1767.04,
+      "text": "So they're going from losses to profits from year zero last year to the current year, year one. So when"
+    },
+    {
+      "start": 1767.04,
+      "end": 1777.04,
+      "text": "calculating the earnings growth percentage, the big data download has simply done an autofill and the"
+    },
+    {
+      "start": 1777.04,
+      "end": 1786.88,
+      "text": "numbers are very large and the calculations are just wrong. So think of it the other way around in terms of"
+    },
+    {
+      "start": 1786.88,
+      "end": 1795.12,
+      "text": "a positive EPS, if a stock goes from $1 of earnings to $3 of losses,"
+    },
+    {
+      "start": 1797.04,
+      "end": 1803.28,
+      "text": "how much of the earnings of the company have they lost in percentage terms?"
+    },
+    {
+      "start": 1804.48,
+      "end": 1816.8,
+      "text": "Well, if you did the calculation here in absolute terms, then they'd be losing $4 in total from an initial position"
+    },
+    {
+      "start": 1816.8,
+      "end": 1828.96,
+      "text": "of $1. So they'd be losing 400% of their earnings. But how can a company lose 400% of their earnings?"
+    },
+    {
+      "start": 1828.96,
+      "end": 1839.6,
+      "text": "They can't. A company can only lose 100% of their earnings. On the flip side, if we're going from a"
+    },
+    {
+      "start": 1839.6,
+      "end": 1851.84,
+      "text": "a loss making operation to a profit making position, you can't recover 400% of your losses, you can"
+    },
+    {
+      "start": 1851.84,
+      "end": 1857.6,
+      "text": "only recover 100% of your losses. You need to overwrite these cells with the number 100 for 100%, so loss making to profit in this case, plus positive 100%."
+    },
+    {
+      "start": 1857.6,
+      "end": 1871.6,
+      "text": "And for operations that are going from a profit making position to losses, you have to overwrite the cell with negative 100%, minus 100%."
+    },
+    {
+      "start": 1871.6,
+      "end": 1889.6,
+      "text": "So when you're going through your quantitative processing for a sector and you're cleaning up all the data, making the cells live, you have to watch out for this situation."
+    },
+    {
+      "start": 1889.6,
+      "end": 1905.6,
+      "text": "You have to overwrite the cells manually that previously had a formula in and overwrite them for either positive 100% or negative 100%."
+    },
+    {
+      "start": 1905.6,
+      "end": 1919.6,
+      "text": "Now something else that creates a problem when it comes to attention to detail and common sense in the quantitative process is the law of small numbers."
+    },
+    {
+      "start": 1919.6,
+      "end": 1935.6,
+      "text": "So when you download big data dumps that work out earnings growth percentages that are based on EPS, you're going to find quite often very wild earnings growth percentage numbers."
+    },
+    {
+      "start": 1935.6,
+      "end": 1942.6,
+      "text": "So numbers like 500%, 1000%, 5000%, etc."
+    },
+    {
+      "start": 1942.6,
+      "end": 1954.6,
+      "text": "And this can just be because a company is going from a very small EPS number to another number that's just large."
+    },
+    {
+      "start": 1954.6,
+      "end": 1964.6,
+      "text": "So for example, if a company last year had one cent of earnings, but this year has 10 cents of earnings."
+    },
+    {
+      "start": 1964.6,
+      "end": 1978.6,
+      "text": "They're going to be in the downloaded spreadsheet calculated on an auto fill with a paste special as having 900% earnings growth."
+    },
+    {
+      "start": 1978.6,
+      "end": 1991.6,
+      "text": "Now, if we're using some common sense here, does this mean that we should automatically deduce that this company is the positive outlier in the sector?"
+    },
+    {
+      "start": 1991.6,
+      "end": 1992.6,
+      "text": "Of course not."
+    },
+    {
+      "start": 1992.6,
+      "end": 1993.6,
+      "text": "Of course not."
+    },
+    {
+      "start": 1993.6,
+      "end": 1995.6,
+      "text": "We've got to use common sense here."
+    },
+    {
+      "start": 1995.6,
+      "end": 1998.6,
+      "text": "Look at the company's EPS in more detail."
+    },
+    {
+      "start": 1998.6,
+      "end": 2014.6,
+      "text": "So for example, like the last two, three or five years, the company may even be a revenue growth story, or they may have actually made 12 cents in EPS two years ago."
+    },
+    {
+      "start": 2014.6,
+      "end": 2031.6,
+      "text": "Meaning the 10 cents that we've got for the current year looking forward, they haven't recovered back this year versus two years ago, back to 12 cents of earnings."
+    },
+    {
+      "start": 2031.6,
+      "end": 2036.6,
+      "text": "So it could be the worst stock in the sector."
+    },
+    {
+      "start": 2036.6,
+      "end": 2040.6,
+      "text": "You have to use common sense here."
+    },
+    {
+      "start": 2040.6,
+      "end": 2043.6,
+      "text": "Don't just blindly follow the process."
+    },
+    {
+      "start": 2043.6,
+      "end": 2049.6,
+      "text": "Think at every stage about what you're looking at."
+    },
+    {
+      "start": 2049.6,
+      "end": 2073.6,
+      "text": "So for example, if we are eyeballing, having attention to detail and some common sense, when we're looking at our example here on the screen, we would notice very quickly if we looked at, for example, Levi Strauss, that they have 433% earnings growth for EG1."
+    },
+    {
+      "start": 2073.6,
+      "end": 2082.6,
+      "text": "And that is a move of EPS going from 21 cents to a dollar and 12 cents."
+    },
+    {
+      "start": 2082.6,
+      "end": 2092.6,
+      "text": "And we can also see a big number, for example, for G3 apparel at 333% for EG1."
+    },
+    {
+      "start": 2092.6,
+      "end": 2098.6,
+      "text": "And that is EPS going from 55 cents to $2.39."
+    },
+    {
+      "start": 2098.6,
+      "end": 2115.6,
+      "text": "So not only do we have a problem in our example sector here, where we have for PVH Corp and Under Armour going from losses to profits, and we have to overwrite the sales manually for 100%."
+    },
+    {
+      "start": 2115.6,
+      "end": 2125.6,
+      "text": "We also potentially have a problem here in the sector when we're doing our quantitative processing of the laws of small numbers."
+    },
+    {
+      "start": 2125.6,
+      "end": 2144.6,
+      "text": "So percentage changes based on EPS coming from a low number, a small number, and moving to a higher number, creating very high percentages that could ultimately flatter the reality of those stocks."
+    },
+    {
+      "start": 2144.6,
+      "end": 2157.6,
+      "text": "And this could have an outsized impact on our interpretation and meaning of what's actually going on for these stocks and in the sector."
+    },
+    {
+      "start": 2157.6,
+      "end": 2169.6,
+      "text": "Which brings us on to our next issue, which is contributions to the mean, so contributions to the sector averages."
+    },
+    {
+      "start": 2169.6,
+      "end": 2186.6,
+      "text": "So once you have actually cleansed your data, and you're very confident that all of the live cells and all of the numbers have been attained as accurate, so the stock price and EPS numbers, and all of your formulas are correct."
+    },
+    {
+      "start": 2186.6,
+      "end": 2206.6,
+      "text": "Once you've actually cleansed your data, you're going to then start to attempt at making some sensible deductions about forward-looking valuation in order to identify positive and negative outliers and everything in between."
+    },
+    {
+      "start": 2206.6,
+      "end": 2216.6,
+      "text": "And of course, what we want to be doing here is identifying genuine positive and negative outliers."
+    },
+    {
+      "start": 2216.6,
+      "end": 2231.6,
+      "text": "So in our example here, we've worked out the mean values for earnings growth 1, earnings growth 2, PE1, PE2, PEG1, PEG2, the mean values for the sector."
+    },
+    {
+      "start": 2231.6,
+      "end": 2234.6,
+      "text": "And we've done that by dividing by the amount of stocks in the sector."
+    },
+    {
+      "start": 2234.6,
+      "end": 2236.6,
+      "text": "So we're dividing by 9."
+    },
+    {
+      "start": 2236.6,
+      "end": 2247.6,
+      "text": "Now, when we look at the earnings growth number for the apparel sector for EG1, we have to ask ourselves a sensible question."
+    },
+    {
+      "start": 2247.6,
+      "end": 2263.6,
+      "text": "Is it sensible to assume that in the apparel manufacturing sector that 117% earnings growth is a real average for the whole sector?"
+    },
+    {
+      "start": 2263.6,
+      "end": 2268.6,
+      "text": "Well, common sense would tell us no."
+    },
+    {
+      "start": 2268.6,
+      "end": 2282.6,
+      "text": "When we look at the contributions of each stock to the mean number, obviously, Levi Strauss and G3 have an outsized contribution relative to other stocks."
+    },
+    {
+      "start": 2282.6,
+      "end": 2300.6,
+      "text": "So the contribution from Levi and G3 is large and it's skewing the mean and the reality of the sector and it's creating a scenario that is flattering the earnings growth of the overall sector."
+    },
+    {
+      "start": 2300.6,
+      "end": 2303.6,
+      "text": "So why is this actually important?"
+    },
+    {
+      "start": 2303.6,
+      "end": 2315.6,
+      "text": "Well, in your processing, you may actually miss a positive outlier and potentially a really great long idea because the averages are just skewed."
+    },
+    {
+      "start": 2315.6,
+      "end": 2331.6,
+      "text": "And you may make the mistake of thinking that Levi Strauss and G3, because they just have much higher percentage earnings growth versus the sector average, that these are the positive outliers."
+    },
+    {
+      "start": 2331.6,
+      "end": 2332.6,
+      "text": "They may be."
+    },
+    {
+      "start": 2332.6,
+      "end": 2333.6,
+      "text": "They may not be."
+    },
+    {
+      "start": 2333.6,
+      "end": 2343.6,
+      "text": "But at this stage, we have to understand that they're having an outsized contribution to the mean relative to other stocks in the sector."
+    },
+    {
+      "start": 2343.6,
+      "end": 2362.6,
+      "text": "And that could be flattering the overall sector in terms of earnings growth and leading us down the wrong path to make incorrect deductions and interpretations of what's going on with the sector and all the stocks in the sector."
+    },
+    {
+      "start": 2362.6,
+      "end": 2365.6,
+      "text": "So what can we do about this?"
+    },
+    {
+      "start": 2365.6,
+      "end": 2392.6,
+      "text": "Well, we can stress test the stocks and have a look at calculating their contributions to the mean and get a better understanding of what happens when we eliminate these stocks to the sector itself and our own interpretation and deductions of what's going on in the rest of the sector."
+    },
+    {
+      "start": 2392.6,
+      "end": 2397.6,
+      "text": "Now, we can't do that without Levi Strauss and G3 in the sector without Levi Strauss and G3 in the sector."
+    },
+    {
+      "start": 2397.6,
+      "end": 2402.6,
+      "text": "So we can overwrite the cells and type a zero in them."
+    },
+    {
+      "start": 2402.6,
+      "end": 2410.6,
+      "text": "And instead of dividing by nine, we can just divide by seven to check their contributions to the mean."
+    },
+    {
+      "start": 2410.6,
+      "end": 2429.6,
+      "text": "And here we discover that Levi Strauss and G3 contribute around 75% to the 117% earnings growth one number because when we eliminate them, we are left with an average of 41.38%."
+    },
+    {
+      "start": 2429.6,
+      "end": 2430.6,
+      "text": "And we can do something else as well."
+    },
+    {
+      "start": 2430.6,
+      "end": 2433.6,
+      "text": "And we can do something else as well."
+    },
+    {
+      "start": 2433.6,
+      "end": 2446.6,
+      "text": "If we repeat the exercise, but only with Levi's eliminated and we divide by eight, we get an earnings growth one number for the mean of 78%."
+    },
+    {
+      "start": 2446.6,
+      "end": 2455.6,
+      "text": "Meaning Levi's contributes 39% to the 117% sector average."
+    },
+    {
+      "start": 2455.6,
+      "end": 2461.6,
+      "text": "And G3 around 36% to the sector average."
+    },
+    {
+      "start": 2461.6,
+      "end": 2465.6,
+      "text": "So again, we have to use some common sense here."
+    },
+    {
+      "start": 2465.6,
+      "end": 2480.6,
+      "text": "The earnings growth two number when we look another year forward is 50%, which we would probably consider a more normal, but still high level of earnings growth for this sector."
+    },
+    {
+      "start": 2480.6,
+      "end": 2489.6,
+      "text": "And we take note that the sector for the previous financial year is coming out of problems."
+    },
+    {
+      "start": 2489.6,
+      "end": 2497.6,
+      "text": "So it looks like the sector as a whole is having some sort of turnaround and then return to normalization."
+    },
+    {
+      "start": 2498.6,
+      "end": 2510.6,
+      "text": "So it looks like pretty much everything is a turnaround play in this sector, except for perhaps stocks like Contour and Hannah's Brands."
+    },
+    {
+      "start": 2511.6,
+      "end": 2519.6,
+      "text": "So Contour has 40% earnings growth for EG1 and 11% for EG2."
+    },
+    {
+      "start": 2519.6,
+      "end": 2528.6,
+      "text": "And Hannah's Brands has 11% earnings growth for EG1 and 7.5% for EG2."
+    },
+    {
+      "start": 2529.6,
+      "end": 2540.6,
+      "text": "And these numbers seem more like sensible or normal earnings growth numbers for a company that's in a sector like apparel manufacturing."
+    },
+    {
+      "start": 2542.6,
+      "end": 2556.6,
+      "text": "Now you'll notice here that we've also highlighted the Under Armour PE1 at 96.42 and the negative pegs of Capri Holdings and VFC."
+    },
+    {
+      "start": 2557.6,
+      "end": 2569.6,
+      "text": "We'd also need to go through the same exercise of working out all of their contributions to the mean as well to get some perspective on what's going on there too."
+    },
+    {
+      "start": 2570.6,
+      "end": 2581.6,
+      "text": "You'll also notice that for the peg ones for Levi Strauss and G3, we've also overwritten the peg one cells."
+    },
+    {
+      "start": 2582.6,
+      "end": 2591.6,
+      "text": "We've done this because when we overwrote the earnings growth numbers with zero, it corrupted those cells."
+    },
+    {
+      "start": 2592.6,
+      "end": 2607.6,
+      "text": "Now, in this particular situation, when we have a scenario like this in a sector like this, we would look more towards year two for clues on outliers."
+    },
+    {
+      "start": 2607.6,
+      "end": 2613.6,
+      "text": "And we would anchor ourselves to an earnings growth rate of 40 to 50%."
+    },
+    {
+      "start": 2614.6,
+      "end": 2632.6,
+      "text": "And this is because when we overwrote earnings growth one for Levi Strauss and for G3 apparel, we were left with 41.38% earnings growth for the sector average in EG1."
+    },
+    {
+      "start": 2632.6,
+      "end": 2644.6,
+      "text": "And having made no changes in the column for EG2, we have an earnings growth number for the sector average, which is 50%."
+    },
+    {
+      "start": 2645.6,
+      "end": 2657.6,
+      "text": "So over the next couple of years, it seems that 40 to 50% earnings growth is probably going to be quite normal for this sector."
+    },
+    {
+      "start": 2658.6,
+      "end": 2660.6,
+      "text": "So what does that leave us with?"
+    },
+    {
+      "start": 2660.6,
+      "end": 2677.6,
+      "text": "It leaves us with Capri Holdings with an earnings growth two number of 144%, Under Armour with an EG2 number of 79%, and VFC with an EG2 number of 126%."
+    },
+    {
+      "start": 2677.6,
+      "end": 2686.6,
+      "text": "So these are starting to look like interesting potential positive outliers."
+    },
+    {
+      "start": 2686.6,
+      "end": 2696.6,
+      "text": "Additionally, when we look at the PE2 column for the sector, we see that there's a sector average of 21 and a half times earnings."
+    },
+    {
+      "start": 2696.6,
+      "end": 2708.6,
+      "text": "And when we look at Under Armour and VFC, we see that the PE2 for both of those stocks is higher than the sector average."
+    },
+    {
+      "start": 2708.6,
+      "end": 2718.6,
+      "text": "And when we look at the PE2 for Capri Holdings, we see that comes in lower than the sector average."
+    },
+    {
+      "start": 2718.6,
+      "end": 2736.6,
+      "text": "When we're not adjusting the PE2 for Under Armour, which has the highest PE2 in the sector and is obviously making a very large contribution to the overall sector mean."
+    },
+    {
+      "start": 2737.6,
+      "end": 2744.6,
+      "text": "Now, bear in mind, we haven't even put a market cap filter into our process here yet."
+    },
+    {
+      "start": 2744.6,
+      "end": 2749.6,
+      "text": "So let's do that now as a useful exercise."
+    },
+    {
+      "start": 2749.6,
+      "end": 2758.6,
+      "text": "So we put a market cap filter on and we're looking for potential long ideas here."
+    },
+    {
+      "start": 2758.6,
+      "end": 2773.6,
+      "text": "And given that VFC has a market cap of $33 billion, this only leaves Capri and Under Armour as potential positive outliers in the sector."
+    },
+    {
+      "start": 2773.6,
+      "end": 2784.6,
+      "text": "However, it is obvious that they are not sequentially positive earnings growth momentum stocks."
+    },
+    {
+      "start": 2784.6,
+      "end": 2789.6,
+      "text": "It's pretty obvious that they are still turnarounds."
+    },
+    {
+      "start": 2789.6,
+      "end": 2802.6,
+      "text": "So if you were looking for long ideas in this sector, at this moment in time, this is how you would have gone through your processing"
+    },
+    {
+      "start": 2802.6,
+      "end": 2823.6,
+      "text": "to ensure that you're making no mistakes and you're actually going through the processing with the correct data and asking obvious questions along the way and making sensible, common sense interpretations of the data."
+    },
+    {
+      "start": 2823.6,
+      "end": 2845.6,
+      "text": "And then, of course, if you think you've identified what are potential positive outliers or even negative outliers, you would then go off and do the work to find out what is behind the earnings growth numbers."
+    },
+    {
+      "start": 2845.6,
+      "end": 2846.6,
+      "text": "What is behind the valuation?"
+    },
+    {
+      "start": 2846.6,
+      "end": 2847.6,
+      "text": "What is driving the EPS?"
+    },
+    {
+      "start": 2847.6,
+      "end": 2851.6,
+      "text": "What is driving the EPS?"
+    },
+    {
+      "start": 2851.6,
+      "end": 2853.6,
+      "text": "What is driving the earnings growth?"
+    },
+    {
+      "start": 2853.6,
+      "end": 2858.6,
+      "text": "What is driving the valuation premium or discount?"
+    },
+    {
+      "start": 2858.6,
+      "end": 2867.6,
+      "text": "Remember, there is always a reason why something trades on a premium or a discount."
+    },
+    {
+      "start": 2867.6,
+      "end": 2875.74,
+      "text": "So now we move from the identification phase and we go on to the evidential, the evidence"
+    },
+    {
+      "start": 2875.74,
+      "end": 2878.04,
+      "text": "phase."
+    },
+    {
+      "start": 2878.04,
+      "end": 2886.92,
+      "text": "So as you can see, in order for us to make sensible conclusions with meaning, when we're"
+    },
+    {
+      "start": 2886.92,
+      "end": 2892.92,
+      "text": "going through the quantitative process, we can't make the mistakes."
+    },
+    {
+      "start": 2892.92,
+      "end": 2896.48,
+      "text": "We've got to get the data right."
+    },
+    {
+      "start": 2896.48,
+      "end": 2901.44,
+      "text": "We've got to get our spreadsheets clean and correct and accurate."
+    },
+    {
+      "start": 2901.44,
+      "end": 2905.88,
+      "text": "And we have to have attention to detail in order to do that."
+    },
+    {
+      "start": 2905.88,
+      "end": 2913.54,
+      "text": "And we have to have common sense to make sensible interpretations."
+    },
+    {
+      "start": 2913.54,
+      "end": 2923.1,
+      "text": "Another mistake that we see is not so much a processing data mistake, more of a market"
+    },
+    {
+      "start": 2923.1,
+      "end": 2927.54,
+      "text": "knowledge and common sense mistake or misunderstanding."
+    },
+    {
+      "start": 2927.54,
+      "end": 2937.1,
+      "text": "So when analyzing a sector, we mentioned earlier that it's important to get the right"
+    },
+    {
+      "start": 2937.1,
+      "end": 2944.1,
+      "text": "EPS numbers or the correct financial years for each stock in the correct cells."
+    },
+    {
+      "start": 2944.1,
+      "end": 2947.78,
+      "text": "So everything lines up correctly."
+    },
+    {
+      "start": 2947.78,
+      "end": 2958.66,
+      "text": "And in our example, Capri Holdings and VFC both had their financial year end on March 31st."
+    },
+    {
+      "start": 2958.66,
+      "end": 2967.66,
+      "text": "So what this means is, is that the year two for these stocks is further out by one quarter relative"
+    },
+    {
+      "start": 2967.66,
+      "end": 2982.22,
+      "text": "to the other stocks in the sector, the rest of the sector is going to report their Q4 numbers and full year results in either January or February 2022."
+    },
+    {
+      "start": 2982.22,
+      "end": 2993.78,
+      "text": "And Capri and VFC are going to report their 2021 full year numbers in April or May 2022."
+    },
+    {
+      "start": 2993.78,
+      "end": 3003.34,
+      "text": "So it's important to do this and understand this because as we get further and further through a financial year,"
+    },
+    {
+      "start": 3003.34,
+      "end": 3017.34,
+      "text": "and the market gets more visibility on revenue and earnings for that year and for the company versus forward looking estimates that are existing out there in the market."
+    },
+    {
+      "start": 3017.34,
+      "end": 3026.14,
+      "text": "So the probability of a surprise that's either negative or positive just simply becomes less and less."
+    },
+    {
+      "start": 3027.42,
+      "end": 3035.5,
+      "text": "So for most sectors, and because most stocks have a financial year that ends on December 31st,"
+    },
+    {
+      "start": 3036.06,
+      "end": 3045.66,
+      "text": "by Q4 of a company's financial year, they've already reported three quarters of revenue and earnings data"
+    },
+    {
+      "start": 3045.66,
+      "end": 3053.26,
+      "text": "and all the balance sheet, profit and loss and cash flow data for those three quarters."
+    },
+    {
+      "start": 3053.26,
+      "end": 3059.26,
+      "text": "And we only have at this stage one quarter left in the year."
+    },
+    {
+      "start": 3059.26,
+      "end": 3067.58,
+      "text": "So most companies report on the basis of a financial year of Jan 1 to Dec 31."
+    },
+    {
+      "start": 3067.58,
+      "end": 3076.78,
+      "text": "So by October of any financial or calendar year, as long as the sector isn't wildly seasonal,"
+    },
+    {
+      "start": 3078.06,
+      "end": 3085.5,
+      "text": "then the probability of having a surprise to annual numbers that's coming only from Q4,"
+    },
+    {
+      "start": 3086.14,
+      "end": 3094.22,
+      "text": "so the probability of an overall surprise that a company can miss or beat earnings or revenue data,"
+    },
+    {
+      "start": 3094.22,
+      "end": 3101.82,
+      "text": "the probability is lower than, for example, earlier in the year or even the beginning of the year."
+    },
+    {
+      "start": 3101.82,
+      "end": 3107.42,
+      "text": "Because now there's much more visibility on the current year."
+    },
+    {
+      "start": 3107.42,
+      "end": 3114.46,
+      "text": "So a company's own forecasts and forecasts from research analysts in most sectors"
+    },
+    {
+      "start": 3115.02,
+      "end": 3122.22,
+      "text": "tend to begin focusing on next year's estimates, next year's numbers,"
+    },
+    {
+      "start": 3122.22,
+      "end": 3129.82,
+      "text": "as soon as we enter Q4 and the Q3 earnings day is officially behind us."
+    },
+    {
+      "start": 3129.82,
+      "end": 3138.22,
+      "text": "Now, in our example, it just so happens with the apparel sector that they get most of their revenue"
+    },
+    {
+      "start": 3138.22,
+      "end": 3142.14,
+      "text": "and earnings in the Q4 holiday season."
+    },
+    {
+      "start": 3142.14,
+      "end": 3149.02,
+      "text": "So again, we have to think about the sector that we're looking at, the stocks that we're looking at,"
+    },
+    {
+      "start": 3149.9,
+      "end": 3151.1,
+      "text": "and how they report."
+    },
+    {
+      "start": 3151.66,
+      "end": 3153.1,
+      "text": "What is their financial year?"
+    },
+    {
+      "start": 3153.74,
+      "end": 3154.86,
+      "text": "Are they seasonal?"
+    },
+    {
+      "start": 3155.66,
+      "end": 3158.14,
+      "text": "What is the probability of surprise?"
+    },
+    {
+      "start": 3159.58,
+      "end": 3163.26,
+      "text": "What time of the year are we in right now?"
+    },
+    {
+      "start": 3164.06,
+      "end": 3169.66,
+      "text": "We have to use a lot of common sense to understand what's going on."
+    },
+    {
+      "start": 3171.34,
+      "end": 3179.82,
+      "text": "So most of the time, when we enter a calendar Q4, because most stocks have a financial year end"
+    },
+    {
+      "start": 3181.1,
+      "end": 3185.5,
+      "text": "of December 31st, their financial year is a calendar year."
+    },
+    {
+      "start": 3185.5,
+      "end": 3190.06,
+      "text": "When we enter Q4, it's all about next year."
+    },
+    {
+      "start": 3190.06,
+      "end": 3197.74,
+      "text": "It's not about this year for most stocks, especially if the stocks are not very seasonal"
+    },
+    {
+      "start": 3197.74,
+      "end": 3198.86,
+      "text": "to the holiday season."
+    },
+    {
+      "start": 3199.98,
+      "end": 3203.74,
+      "text": "So we have to use common sense and we have to look forwards."
+    },
+    {
+      "start": 3204.38,
+      "end": 3207.02,
+      "text": "We have to look out to the following year."
+    },
+    {
+      "start": 3208.22,
+      "end": 3211.82,
+      "text": "So again, this is not so much a data processing issue."
+    },
+    {
+      "start": 3212.38,
+      "end": 3217.82,
+      "text": "There are data processing elements in there, but it's more of a common sense issue."
+    },
+    {
+      "start": 3219.42,
+      "end": 3224.38,
+      "text": "Now, as mentioned earlier, as we move from the identification phase,"
+    },
+    {
+      "start": 3225.34,
+      "end": 3229.5,
+      "text": "and we've got all of our data right, we've cleaned our data,"
+    },
+    {
+      "start": 3230.54,
+      "end": 3236.94,
+      "text": "we've got all of our formulas right, we've made good common sense interpretations of the data."
+    },
+    {
+      "start": 3237.82,
+      "end": 3241.74,
+      "text": "We're going to move from the discovery or identification phase"
+    },
+    {
+      "start": 3242.38,
+      "end": 3244.06,
+      "text": "into the evidence phase."
+    },
+    {
+      "start": 3244.62,
+      "end": 3248.62,
+      "text": "And this is where we might start adding in extra quant."
+    },
+    {
+      "start": 3249.26,
+      "end": 3253.66,
+      "text": "So we might start adding in, for example, revenues and revenue growth"
+    },
+    {
+      "start": 3254.3,
+      "end": 3256.86,
+      "text": "and backwards looking quant."
+    },
+    {
+      "start": 3258.38,
+      "end": 3263.26,
+      "text": "And at this stage, we've seen many mistakes from retail traders here as well."
+    },
+    {
+      "start": 3264.06,
+      "end": 3270.62,
+      "text": "The most common mistake is to do this step before getting to the sector stage"
+    },
+    {
+      "start": 3271.34,
+      "end": 3279.1,
+      "text": "and trying to do it for hundreds of stocks or all 2200 plus stocks in the spreadsheet."
+    },
+    {
+      "start": 3280.06,
+      "end": 3287.66,
+      "text": "Next up, the most common mistake is doing it before actually cleansing the forward looking estimates"
+    },
+    {
+      "start": 3287.66,
+      "end": 3294.22,
+      "text": "and valuation data. So not going through the discovery phase first, not going through"
+    },
+    {
+      "start": 3294.94,
+      "end": 3299.18,
+      "text": "the identification phase first. Do not do this."
+    },
+    {
+      "start": 3300.38,
+      "end": 3303.98,
+      "text": "Even after that stage, there are mistakes."
+    },
+    {
+      "start": 3305.1,
+      "end": 3308.78,
+      "text": "Trying to do it for every stock in the sector."
+    },
+    {
+      "start": 3310.22,
+      "end": 3315.58,
+      "text": "Remember, always, you should be seeking to work smart and efficiently."
+    },
+    {
+      "start": 3316.46,
+      "end": 3319.74,
+      "text": "For longs and shorts, we have market cap filters."
+    },
+    {
+      "start": 3320.3,
+      "end": 3325.02,
+      "text": "So you can get to answers quickly by eliminating a lot of stocks."
+    },
+    {
+      "start": 3326.3,
+      "end": 3335.34,
+      "text": "And once you've done this, you can start to explore the backwards looking quant in a separate Excel sheet."
+    },
+    {
+      "start": 3336.54,
+      "end": 3338.46,
+      "text": "Keep it simple, stupid."
+    },
+    {
+      "start": 3339.26,
+      "end": 3347.42,
+      "text": "Don't become an analyst with massive spreadsheets and end up going down major rabbit holes."
+    },
+    {
+      "start": 3348.3,
+      "end": 3352.62,
+      "text": "The law of diminishing marginal utility applies here."
+    },
+    {
+      "start": 3353.5,
+      "end": 3361.26,
+      "text": "You can find the positive and negative outliers and everything else in between by cleansing the data"
+    },
+    {
+      "start": 3361.9,
+      "end": 3363.9,
+      "text": "and drawing on common sense."
+    },
+    {
+      "start": 3364.62,
+      "end": 3369.74,
+      "text": "The rest is now evidence or exploratory work."
+    },
+    {
+      "start": 3371.82,
+      "end": 3376.86,
+      "text": "Another issue we see with retail traders going through these processes"
+    },
+    {
+      "start": 3377.82,
+      "end": 3383.1,
+      "text": "is the problem of trying to compare apples to pez."
+    },
+    {
+      "start": 3384.3,
+      "end": 3391.74,
+      "text": "What we're trying to do here all the time is reflect reality and compare apples to apples."
+    },
+    {
+      "start": 3392.38,
+      "end": 3400.3,
+      "text": "So after cleansing data and feeling very confident that your sector reflects reality"
+    },
+    {
+      "start": 3400.3,
+      "end": 3408.14,
+      "text": "as closely as possible, there needs to be some discretionary fine tuning in the next stage."
+    },
+    {
+      "start": 3410.06,
+      "end": 3418.06,
+      "text": "At this stage, what you've actually done is you've created your own sector to reflect reality."
+    },
+    {
+      "start": 3418.62,
+      "end": 3426.54,
+      "text": "And this is an exercise that 99% of market participants will never engage in."
+    },
+    {
+      "start": 3427.1,
+      "end": 3432.86,
+      "text": "And what you need to be very careful of at this stage is to engage in the exercise"
+    },
+    {
+      "start": 3433.9,
+      "end": 3440.38,
+      "text": "of comparing apples to pez instead of comparing apples to apples."
+    },
+    {
+      "start": 3441.02,
+      "end": 3444.94,
+      "text": "So we are seeking to reflect the reality of a sector."
+    },
+    {
+      "start": 3445.66,
+      "end": 3453.42,
+      "text": "So we are seeking to assess market valuation and growth rates of comparable businesses"
+    },
+    {
+      "start": 3453.98,
+      "end": 3462.22,
+      "text": "or comparable stocks in order to assess what the market likes and what the market dislikes."
+    },
+    {
+      "start": 3462.78,
+      "end": 3468.62,
+      "text": "So we can identify positive and negative outliers and everything else in between."
+    },
+    {
+      "start": 3470.38,
+      "end": 3477.5,
+      "text": "So we can't, for example, compare growth rates like earnings growth or revenue growth rates,"
+    },
+    {
+      "start": 3477.5,
+      "end": 3485.42,
+      "text": "for example, of say $200 billion companies to the growth rates of $1 billion companies."
+    },
+    {
+      "start": 3486.14,
+      "end": 3493.74,
+      "text": "You have to also check the contributions to the means of the largest market cap companies"
+    },
+    {
+      "start": 3494.46,
+      "end": 3498.22,
+      "text": "and the small cap and mid cap contributions to the mean."
+    },
+    {
+      "start": 3499.02,
+      "end": 3509.5,
+      "text": "If a sector exhibits wildly different growth rates and valuations of mega and large cap versus mid and small caps,"
+    },
+    {
+      "start": 3510.22,
+      "end": 3519.58,
+      "text": "you can split the sector using a market cap filter and then compare the two sectors that you've split out"
+    },
+    {
+      "start": 3520.14,
+      "end": 3524.06,
+      "text": "based on market cap alongside each other."
+    },
+    {
+      "start": 3524.86,
+      "end": 3532.86,
+      "text": "And you can cut and paste your findings to another sheet and just look at mega and large cap"
+    },
+    {
+      "start": 3533.42,
+      "end": 3537.82,
+      "text": "versus small and mid cap growth rates and valuations."
+    },
+    {
+      "start": 3539.34,
+      "end": 3544.14,
+      "text": "In addition to that, you now have to compare similar businesses."
+    },
+    {
+      "start": 3544.94,
+      "end": 3550.78,
+      "text": "You're going to find that there will be many occasions when you drill down to a subsector."
+    },
+    {
+      "start": 3551.9,
+      "end": 3556.7,
+      "text": "There will be stocks in there that seem to have no place in the sector at all"
+    },
+    {
+      "start": 3557.34,
+      "end": 3563.18,
+      "text": "because they are in a different business area to the rest of the stocks in the sector."
+    },
+    {
+      "start": 3563.82,
+      "end": 3566.94,
+      "text": "So remember our classification systems here."
+    },
+    {
+      "start": 3568.06,
+      "end": 3571.98,
+      "text": "These are NAICS and GICS classifications."
+    },
+    {
+      "start": 3571.98,
+      "end": 3574.22,
+      "text": "They are not your classifications."
+    },
+    {
+      "start": 3574.78,
+      "end": 3585.66,
+      "text": "And you have to fix it and create your own sector that reflects reality and compares apples to apples, not apples to pears."
+    },
+    {
+      "start": 3587.74,
+      "end": 3589.74,
+      "text": "So let's summarize here, guys."
+    },
+    {
+      "start": 3591.34,
+      "end": 3598.22,
+      "text": "In the quantitative process, the identification process within trade idea generation,"
+    },
+    {
+      "start": 3599.1,
+      "end": 3602.94,
+      "text": "the identification process within the sector that you have to look at in the sector."
+    },
+    {
+      "start": 3602.94,
+      "end": 3606.94,
+      "text": "Use common sense and have attention to detail."
+    },
+    {
+      "start": 3607.66,
+      "end": 3615.66,
+      "text": "Do not download spreadsheets from third-party sources and believe all the data is accurate."
+    },
+    {
+      "start": 3616.54,
+      "end": 3620.94,
+      "text": "And do not just look at sector data and get lazy"
+    },
+    {
+      "start": 3621.58,
+      "end": 3629.18,
+      "text": "by looking for high PE and low PE stocks or even high earnings growth and low earnings growth."
+    },
+    {
+      "start": 3629.74,
+      "end": 3631.82,
+      "text": "And then you think it's an idea."
+    },
+    {
+      "start": 3632.78,
+      "end": 3634.62,
+      "text": "You have to eyeball the data."
+    },
+    {
+      "start": 3635.34,
+      "end": 3645.82,
+      "text": "You have to clean the data, cleanse the data and build your own sectors to reflect reality as closely as possible."
+    },
+    {
+      "start": 3647.42,
+      "end": 3659.34,
+      "text": "As mentioned earlier, what you've seen here, 99% of market participants will never ever do this work."
+    },
+    {
+      "start": 3659.34,
+      "end": 3665.34,
+      "text": "They don't have a systematic process or trade idea generation like you do."
+    },
+    {
+      "start": 3666.14,
+      "end": 3670.38,
+      "text": "They don't even have that and they won't even do any work on data."
+    },
+    {
+      "start": 3671.58,
+      "end": 3676.3,
+      "text": "This is where you can get a significant edge in the market."
+    },
+    {
+      "start": 3677.26,
+      "end": 3679.34,
+      "text": "It's a proprietary process."
+    },
+    {
+      "start": 3679.98,
+      "end": 3687.02,
+      "text": "And if you have attention to detail with a strong interpretation of your findings,"
+    },
+    {
+      "start": 3687.58,
+      "end": 3697.58,
+      "text": "so an interpretation that requires common sense, that's going to lead to very accurate and exciting conclusions."
+    },
+    {
+      "start": 3698.78,
+      "end": 3700.94,
+      "text": "So make sure you have attention to detail."
+    },
+    {
+      "start": 3701.82,
+      "end": 3704.46,
+      "text": "You work on your common sense and your interpretation."
+    },
+    {
+      "start": 3705.18,
+      "end": 3707.1,
+      "text": "It will get better over time."
+    },
+    {
+      "start": 3708.3,
+      "end": 3711.26,
+      "text": "And don't be afraid to do the work."
+    },
+    {
+      "start": 3711.82,
+      "end": 3713.66,
+      "text": "Practice, practice, practice."
+    },
+    {
+      "start": 3715.18,
+      "end": 3715.82,
+      "text": "Okay, guys."
+    },
+    {
+      "start": 3716.54,
+      "end": 3719.9,
+      "text": "So this brings us to the end of this video."
+    },
+    {
+      "start": 3720.78,
+      "end": 3724.38,
+      "text": "Data mining and processing mistakes with the solutions."
+    },
+    {
+      "start": 3725.5,
+      "end": 3729.5,
+      "text": "Next up, we're going to recap the quantitative process."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

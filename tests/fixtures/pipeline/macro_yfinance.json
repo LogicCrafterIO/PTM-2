@@ -1,0 +1,14 @@
+{
+  "series": {
+    "spx": {
+      "last": 5000.0,
+      "history": [
+        {"date": "2026-01-02", "close": 5200.0},
+        {"date": "2026-08-14", "close": 5000.0}
+      ]
+    },
+    "tnx": {"last": 42.0, "history": []},
+    "fvx": {"last": 39.0, "history": []},
+    "vix": {"last": 14.0, "history": []}
+  }
+}

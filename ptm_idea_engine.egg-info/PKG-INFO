@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: ptm-idea-engine
+Version: 0.1.0
+Summary: PTM 2 long/short equity idea generation engine
+Requires-Python: >=3.11
+Requires-Dist: beautifulsoup4>=4.12
+Requires-Dist: lxml>=5.0
+Requires-Dist: openai>=1.40
+Requires-Dist: pandas>=2.2
+Requires-Dist: pydantic>=2.7
+Requires-Dist: pydantic-settings>=2.3
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: requests>=2.32
+Requires-Dist: curl_cffi>=0.7
+Requires-Dist: typer>=0.12
+Requires-Dist: yfinance>=0.2.40
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Provides-Extra: browser
+Requires-Dist: playwright>=1.45; extra == "browser"

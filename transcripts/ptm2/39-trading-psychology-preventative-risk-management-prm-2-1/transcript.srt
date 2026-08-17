@@ -1,0 +1,5893 @@
+1
+00:00:00,000 --> 00:00:16,000
+Welcome guys to another spreadsheet class.
+And in this one, what we're going to do is
+build on the previous video where Anton
+talked about setting stops and targets for
+positions using distribution of returns
+and average true range percentage
+analyses.
+
+2
+00:00:16,000 --> 00:00:27,000
+So the majority of this video is going to
+involve teaching you how to build a
+distribution of returns analysis and also
+an average true range percentage analysis
+in Excel,
+
+3
+00:00:27,000 --> 00:00:33,000
+so that you can then estimate suitable
+stops and targets for assets that you're
+looking to trade.
+
+4
+00:00:33,000 --> 00:00:38,000
+And we're going to start off by building a
+distribution of returns analysis from
+scratch.
+
+5
+00:00:38,000 --> 00:00:48,000
+And then after that, we're going to move
+over to using some templates to conduct
+the rest of the analysis, which is a much
+faster method since a lot of the work is
+actually automated.
+
+6
+00:00:48,000 --> 00:00:53,000
+And these templates will, of course, be
+available to you in the downloads folder
+for this video.
+
+7
+00:00:53,000 --> 00:01:03,000
+And we have one spreadsheet template for
+distribution of returns or DOR analysis
+and one for an average true range
+percentage or ATRP analysis.
+
+8
+00:01:03,000 --> 00:01:07,000
+Now, I'll show you how to use those
+templates properly later in the video.
+
+9
+00:01:07,000 --> 00:01:16,000
+And I'm going to do that by using real
+examples to calculate potential stops and
+targets for individual assets in a similar
+way to how Anton did it in the previous
+video.
+
+10
+00:01:16,000 --> 00:01:23,000
+We're also going to cover a short example
+of how you can create stops and targets
+for spreads as well.
+
+11
+00:01:23,000 --> 00:01:30,000
+Now, as you guys know, creating stops and
+targets is an important aspect of
+preventative risk management.
+
+12
+00:01:30,000 --> 00:01:34,000
+And that helps us achieve better
+performance as traders.
+
+13
+00:01:34,000 --> 00:01:37,000
+But it isn't the only preventative risk
+management technique available.
+
+14
+00:01:37,000 --> 00:01:49,000
+And I'm going to talk about some others
+towards the end of the video, which are
+namely setting portfolio limits on things
+like gross exposure, cash net exposure and
+beta adjusted net exposures.
+
+15
+00:01:49,000 --> 00:01:56,000
+The reason why we employ all of these PRM
+measures is so that we achieve better
+trading performance, as I said.
+
+16
+00:01:56,000 --> 00:02:02,000
+And there are a number of ways we can
+measure our performance, which
+incidentally, you will hear me talk about
+again in a few videos time.
+
+17
+00:02:02,000 --> 00:02:08,000
+But the ones I want to mention now are R
+score targets and win loss rate targets.
+
+18
+00:02:08,000 --> 00:02:13,000
+Now, you've heard about R scores before
+from previous presentations.
+
+19
+00:02:13,000 --> 00:02:19,000
+And this is basically just a ratio of
+dollar profits to dollar losses from your
+realized P&L.
+
+20
+00:02:19,000 --> 00:02:22,000
+And that is your your closed trades in
+your portfolio.
+
+21
+00:02:22,000 --> 00:02:28,000
+A good target to hit for R scores is about
+one point five or higher.
+
+22
+00:02:28,000 --> 00:02:31,000
+And a great R score is typically around
+two or above.
+
+23
+00:02:32,000 --> 00:02:35,000
+Your win loss rate is fairly
+self-explanatory.
+
+24
+00:02:35,000 --> 00:02:42,000
+That is just the percentage of winning
+versus losing trades that you make, again,
+based on your realized P&L or closed
+trades in your account.
+
+25
+00:02:42,000 --> 00:02:49,000
+And a good win loss ratio is achieving
+something like 60 percent profitable
+trades and 40 percent loss making trades.
+
+26
+00:02:49,000 --> 00:02:54,000
+Equally 55-45 as a ratio is OK.
+
+27
+00:02:54,000 --> 00:02:58,000
+And 65-35 is really, really good over the
+long term.
+
+28
+00:02:59,000 --> 00:03:06,000
+So in order to try and hit those targets,
+we use PRM techniques like stops and
+targets on individual trades.
+
+29
+00:03:06,000 --> 00:03:09,000
+But also we set various portfolio limits
+as well.
+
+30
+00:03:09,000 --> 00:03:18,000
+For example, portfolio gross exposure
+limits should be set based on a multiple
+of the net cash deposit or margin in our
+brokerage accounts.
+
+31
+00:03:18,000 --> 00:03:23,000
+Now, depending on where you are in the
+world and what assets you're trading,
+those limits might change.
+
+32
+00:03:23,000 --> 00:03:25,000
+And I'm going to talk about that more
+later.
+
+33
+00:03:25,000 --> 00:03:33,000
+But if you're based in the US trading US
+stocks, that limit is legally enforced by
+brokers and capped at two times leverage.
+
+34
+00:03:33,000 --> 00:03:41,000
+However, if you're in other parts of the
+world and have access to CFD instruments,
+then you'll be able to attain much higher
+leverage.
+
+35
+00:03:41,000 --> 00:03:49,000
+And so in that case, you need to impose
+limits on yourself, which probably should
+be around four times leverage.
+
+36
+00:03:49,000 --> 00:03:53,000
+Anything above that kind of starts to
+involve much too much risk.
+
+37
+00:03:53,000 --> 00:04:02,000
+Limits should also be set for portfolio
+beta adjusted net exposure and also cash
+net exposure, as I talked about back in
+video 20.
+
+38
+00:04:02,000 --> 00:04:10,000
+And these limits might range between plus
+and minus 30% for beta and plus and minus
+50% for cash net exposure.
+
+39
+00:04:10,000 --> 00:04:15,000
+And again, I'm going to talk about these
+limits towards the end of the video.
+
+40
+00:04:15,000 --> 00:04:25,000
+Now, as I said, we're going to start this
+video by conducting the distribution of
+returns and average true range percentage
+analyses for the purposes of generating
+stops and targets.
+
+41
+00:04:25,000 --> 00:04:30,000
+And I do realize that we've already
+covered distributions quite a bit in this
+series.
+
+42
+00:04:30,000 --> 00:04:33,000
+So some of this material is going to feel
+very familiar.
+
+43
+00:04:33,000 --> 00:04:41,000
+And on top of that, for those of you that
+have done the IPLT course, the ATRP
+analysis is also going to feel quite
+familiar as well.
+
+44
+00:04:41,000 --> 00:04:52,000
+But where we are covering kind of
+completely new ground here is applying
+these two volatility analyses for the
+purposes of creating stops and targets for
+our positions.
+
+45
+00:04:52,000 --> 00:05:01,000
+So there will be something new for
+everyone in this video, but also for many
+of you, there will be parts that serve as
+some solid revision of various concepts.
+
+46
+00:05:01,000 --> 00:05:05,000
+OK, so with that being said, let's get
+started.
+
+47
+00:05:06,000 --> 00:05:14,000
+Now, for the purposes of our volatility
+analyses in this video, we're going to
+assume that we've done all of our
+fundamental work to come up with a couple
+of solid stock ideas.
+
+48
+00:05:14,000 --> 00:05:18,000
+And we're also going to assume that the
+timing is in place for those ideas.
+
+49
+00:05:18,000 --> 00:05:27,000
+So all that we want to do now is figure
+out what reasonable stops and targets
+should be for our positions, given their
+historical volatility.
+
+50
+00:05:27,000 --> 00:05:36,000
+And the trades that we're going to look at
+as examples here in this video are long
+ZNGA, so that's Zinger, and short ALGN,
+that's Align Technologies.
+
+51
+00:05:36,000 --> 00:05:43,000
+And to begin with, I'm just going to use a
+distribution of returns analysis to come
+up with some stops and targets for these
+stocks.
+
+52
+00:05:43,000 --> 00:05:48,000
+And then I'll move on to an average true
+range percentage analysis later.
+
+53
+00:05:48,000 --> 00:05:57,000
+So let's look at Zinger stock first, and
+the first step here is going to be
+obtaining the price data that we need to
+in order to create our analysis.
+
+54
+00:05:57,000 --> 00:06:01,000
+And I'm going to find price data for this
+stock on Yahoo Finance.
+
+55
+00:06:01,000 --> 00:06:06,000
+Now the URL for Yahoo Finance is just
+finance.yahoo.com.
+
+56
+00:06:06,000 --> 00:06:09,000
+So that's the website I'm going to
+navigate to.
+
+57
+00:06:09,000 --> 00:06:23,000
+And then from there to find price data on
+Zinger, the ticker is ZNGA, remember, I'm
+just going to type that ticker into the
+search bar at the top here, and then click
+Zinger from the drop down menu.
+
+58
+00:06:23,000 --> 00:06:28,000
+That takes me to the stock page for that
+stock.
+
+59
+00:06:28,000 --> 00:06:31,000
+And then from there, we're going to go to
+the historical data tab.
+
+60
+00:06:31,000 --> 00:06:40,000
+And in this page, what we want to do is
+choose the variables of the historical
+data that we want to look at and then
+download.
+
+61
+00:06:40,000 --> 00:06:48,000
+So in this case, I want to basically look
+up the entire price history that we have
+available on Yahoo Finance for this stock.
+
+62
+00:06:48,000 --> 00:06:53,000
+To do that, I'm just going to select this
+time period variable here and then select
+max.
+
+63
+00:06:53,000 --> 00:07:00,000
+And I'm also going to choose to display
+and download those prices on a monthly
+frequency.
+
+64
+00:07:00,000 --> 00:07:05,000
+So rather than daily here, I'm just going
+to click that drop down and then select
+monthly.
+
+65
+00:07:05,000 --> 00:07:13,000
+From there, I'm then going to click apply,
+which will apply those variables that
+we've just chosen to this data set.
+
+66
+00:07:13,000 --> 00:07:16,000
+And then I'm going to click on download.
+
+67
+00:07:16,000 --> 00:07:26,000
+Now, for me, when I click download there
+on Yahoo Finance, it basically downloads
+as a CSV file, which can be opened in
+Excel as it will for you as well.
+
+68
+00:07:26,000 --> 00:07:32,000
+But depending on what your operating
+system is and what web browser you're
+using, you will need to take different
+steps in order to open the file.
+
+69
+00:07:32,000 --> 00:07:37,000
+But for me, as you can see here, there's a
+shortcut provided by Google Chrome.
+
+70
+00:07:37,000 --> 00:07:39,000
+I'm using Windows with Google Chrome, by
+the way.
+
+71
+00:07:39,000 --> 00:07:45,000
+So I can just click on that file shortcut
+there to open that price data in Excel.
+
+72
+00:07:45,000 --> 00:07:53,000
+So with the price data open in Excel for
+this stock, there's a couple of things
+that I want to address and make changes
+to.
+
+73
+00:07:53,000 --> 00:07:59,000
+Firstly, you can see that the dates in
+column A are currently showing as hash
+symbols.
+
+74
+00:07:59,000 --> 00:08:03,000
+And that's just because the column width
+isn't large enough to display the dates
+properly.
+
+75
+00:08:03,000 --> 00:08:08,000
+So I'm just going to expand the column
+width there so we can see the data more
+easily.
+
+76
+00:08:08,000 --> 00:08:16,000
+Secondly, now we can see those dates in
+column A, you'll notice that their format
+is the day, followed by the month,
+followed by the year.
+
+77
+00:08:16,000 --> 00:08:20,000
+And that might look odd to you if you're
+based in the US or elsewhere.
+
+78
+00:08:20,000 --> 00:08:23,000
+But here in the UK, that is how we format
+our dates.
+
+79
+00:08:23,000 --> 00:08:28,000
+That being said, to make things a little
+bit clearer, I'm just going to change the
+format of those dates.
+
+80
+00:08:28,000 --> 00:08:35,000
+And then selecting format cells and
+choosing the custom category in the number
+tab,
+
+81
+00:08:35,000 --> 00:08:46,000
+and then creating a format, a custom
+format by typing over the type box here
+with DD-MMM-YY.
+
+82
+00:08:46,000 --> 00:08:55,000
+And once I press OK there, you'll see that
+that makes dates a little bit easier to
+read and less ambiguous, irrelevant of
+what kind of geography you're in.
+
+83
+00:08:55,000 --> 00:09:00,000
+Now, there's a few more steps here that I
+want to take before starting to run some
+calculations.
+
+84
+00:09:00,000 --> 00:09:05,000
+And at this stage, I just want to
+highlight to you guys that I will be going
+quite fast through some of this Excel work
+
+85
+00:09:05,000 --> 00:09:15,000
+because you guys should have seen most, if
+not all of the techniques I'm going to use
+in this video in previous videos in the
+video series.
+
+86
+00:09:15,000 --> 00:09:18,000
+However, if you are unsure at any point,
+don't panic.
+
+87
+00:09:18,000 --> 00:09:21,000
+Just pause the video and use Google to
+find the answers.
+
+88
+00:09:21,000 --> 00:09:28,000
+It should be pretty easy given you've got
+the video in front of you as well to work
+from.
+
+89
+00:09:28,000 --> 00:09:34,000
+OK, so for a distribution of returns
+analysis, we don't actually need the
+volume data in column G.
+
+90
+00:09:34,000 --> 00:09:36,000
+So I'm just going to delete that straight
+away.
+
+91
+00:09:36,000 --> 00:09:44,000
+And next, as I've said in other videos,
+it's common practice in the finance
+industry to run time series in descending
+order.
+
+92
+00:09:44,000 --> 00:09:50,000
+And what that means is basically sorting
+the price data we have here so that the
+most recent data is at the top of the
+sheet.
+
+93
+00:09:50,000 --> 00:09:58,000
+To do that, we just add a filter to the
+data by selecting a column title and then
+going to data on the ribbon, followed by
+filter.
+
+94
+00:09:58,000 --> 00:10:00,000
+And then we can select the filter menu in
+column A.
+
+95
+00:10:00,000 --> 00:10:06,000
+That's our date column and just choose to
+sort that data from newest to oldest.
+
+96
+00:10:06,000 --> 00:10:14,000
+Finally, I think before going any further,
+let's just rename this sheet that we're
+working as well, just to something more
+appropriate.
+
+97
+00:10:14,000 --> 00:10:22,000
+So I'm going to right click the sheet name
+down here and just rename it to ZNGA
+monthly DOR, for example.
+
+98
+00:10:22,000 --> 00:10:32,000
+So now we've prepared the data, we can
+move on to the second step, which is
+checking the data for any errors and
+running our initial returns calculations.
+
+99
+00:10:32,000 --> 00:10:40,000
+Now, sometimes when you download data from
+Yahoo Finance or other sources, you'll
+find that the most recent data point shows
+an incomplete period.
+
+100
+00:10:40,000 --> 00:10:48,000
+So, for example, here we might have seen
+the difference between the most recent two
+rows of price data didn't actually account
+for a full month.
+
+101
+00:10:48,000 --> 00:10:57,000
+If something like that happens, what
+you'll need to do is remove the latest
+data entry because it's essential that our
+prices are split evenly through time.
+
+102
+00:10:57,000 --> 00:11:00,000
+And as you can see here, that's what we
+have.
+
+103
+00:11:00,000 --> 00:11:04,000
+The prices are displayed on the first of
+every month running back through history.
+
+104
+00:11:04,000 --> 00:11:10,000
+So fortunately, everything looks good at
+this point and we can move on to running
+some calculations.
+
+105
+00:11:10,000 --> 00:11:16,000
+Now, when doing a distribution of returns
+analysis for the purpose of generating
+stops and targets,
+
+106
+00:11:16,000 --> 00:11:25,000
+it's useful to run a dual distribution
+analysis whereby we look at both close to
+close monthly returns and also high to low
+percentage differences.
+
+107
+00:11:25,000 --> 00:11:32,000
+So with that being said, in column G, what
+we're going to do now is calculate close
+to close monthly returns.
+
+108
+00:11:32,000 --> 00:11:35,000
+And in column H, we'll compute high to low
+monthly returns.
+
+109
+00:11:35,000 --> 00:11:40,000
+So in column G, I'm going to head the
+column C-C returns.
+
+110
+00:11:40,000 --> 00:11:45,000
+And in the cells below, I'm just going to
+calculate the returns for each month on a
+close to close price basis.
+
+111
+00:11:45,000 --> 00:11:56,000
+So starting in cell two, the formula for
+F2, so the current close price divided by
+F3, the previous close price minus one.
+
+112
+00:11:56,000 --> 00:12:02,000
+And that is just a simple percentage
+change formula from one period to the next
+that you guys should all be familiar with.
+
+113
+00:12:02,000 --> 00:12:08,000
+Now, after typing that in, the formula can
+be copied down to the end of the data set
+by using the auto fill shortcut.
+
+114
+00:12:08,000 --> 00:12:15,000
+So that is just double clicking the little
+green box in the bottom right of the
+formula cell that we just created.
+
+115
+00:12:15,000 --> 00:12:23,000
+And just remember that whenever you do
+auto fill a formula down or across, you
+need to check the data at the end of the
+series.
+
+116
+00:12:23,000 --> 00:12:32,000
+So here, for example, we if we scroll down
+to the bottom of the data set, you'll see
+that there is a div zero error in the
+final cell.
+
+117
+00:12:32,000 --> 00:12:38,000
+And that just occurs because the formula
+that we're using is trying to reference
+price data that doesn't exist.
+
+118
+00:12:38,000 --> 00:12:44,000
+So it's trying to reference price data in
+the cell below our final price data.
+
+119
+00:12:44,000 --> 00:12:49,000
+So knowing that we can just remove that
+formula or delete the cell and move on to
+the next column.
+
+120
+00:12:49,000 --> 00:12:54,000
+As I said, the next column is our high to
+low returns.
+
+121
+00:12:54,000 --> 00:13:01,000
+And so I'm just going to title that column
+H hyphen L returns at the formula for this
+column.
+
+122
+00:13:01,000 --> 00:13:09,000
+It's just going to calculate the
+percentage change from the low price
+during a given period or month in this
+case to the high price.
+
+123
+00:13:09,000 --> 00:13:19,000
+So the formula that I'm going to type into
+cell H two here is equals C two divided by
+D two minus one.
+
+124
+00:13:19,000 --> 00:13:26,000
+OK, obviously, after we put that in, we
+can also copy that formula down to the end
+of the series and check it.
+
+125
+00:13:26,000 --> 00:13:30,000
+And as you can see, we don't have any
+errors here, so that's fine.
+
+126
+00:13:30,000 --> 00:13:34,000
+So that's our return calculations done.
+
+127
+00:13:34,000 --> 00:13:38,000
+And before we move on, let's just quickly
+change some formatting there.
+
+128
+00:13:38,000 --> 00:13:41,000
+Firstly, I'm going to make the column
+titles bold.
+
+129
+00:13:41,000 --> 00:13:48,000
+And then also let's change the format of
+these returns columns so that they're
+displayed as percentages to three decimal
+places,
+
+130
+00:13:48,000 --> 00:14:02,000
+which is done simply by selecting the
+columns and right clicking in the
+selection, followed by choosing the
+percentage category and overwriting the
+specified decimal places to a value of
+three.
+
+131
+00:14:02,000 --> 00:14:09,000
+So now that we have our returns
+calculations done and everything formatted
+to this point, the next step is to
+calculate our histogram tables and charts,
+
+132
+00:14:09,000 --> 00:14:17,000
+which essentially tell you how many data
+points lie within specific intervals for
+both the close to close data and the high
+to low data as well.
+
+133
+00:14:17,000 --> 00:14:27,000
+Now, in this video, I'm only going to walk
+you through building the close to close
+analysis since the steps required for the
+high to low analysis is basically all the
+same.
+
+134
+00:14:27,000 --> 00:14:30,000
+And you guys will be able to practice that
+yourselves.
+
+135
+00:14:30,000 --> 00:14:35,000
+Also, remember that later in the video,
+I'm going to show you how to use a
+template file to speed all of this stuff
+up.
+
+136
+00:14:35,000 --> 00:14:41,000
+And in there, we will be looking at both
+close to close and high to low analysis.
+
+137
+00:14:41,000 --> 00:14:47,000
+OK, so at this stage, you've already seen
+these distribution analyses a number of
+times in this series.
+
+138
+00:14:47,000 --> 00:14:49,000
+So I won't go into too much detail here.
+
+139
+00:14:49,000 --> 00:14:58,000
+But as a very quick reminder, they're
+useful to us because they allow us to
+visually assess the empirical probability
+of various ranges of values occurring.
+
+140
+00:14:58,000 --> 00:15:00,000
+So in this case, we're looking at stock
+returns.
+
+141
+00:15:00,000 --> 00:15:10,000
+And so we can learn about how an asset has
+behaved in the past, its volatility and
+hence both the risk and opportunity in
+trading that asset over the timeframe that
+we're analyzing.
+
+142
+00:15:10,000 --> 00:15:13,000
+That's what we talked about in the IPLT
+course.
+
+143
+00:15:13,000 --> 00:15:23,000
+Here, though, what we're going to do is
+use that same analysis with the end goal
+of generating suitable stops and targets
+for a stock position.
+
+144
+00:15:23,000 --> 00:15:30,000
+So the first thing that we need to do when
+creating some histogram data is to define
+the intervals that we want to count the
+data within.
+
+145
+00:15:30,000 --> 00:15:35,000
+Now, there's no hard and fast rules for
+creating creating exact histogram
+intervals.
+
+146
+00:15:35,000 --> 00:15:45,000
+But two things to make sure of are firstly
+that the intervals encompass the vast
+majority of data, meaning the vast
+majority of our close to close returns.
+
+147
+00:15:45,000 --> 00:15:48,000
+And secondly, that the intervals are
+evenly spaced.
+
+148
+00:15:48,000 --> 00:16:04,000
+Now, in this example, I'm going to choose
+to start my intervals at minus 25% or
+minus 0.25 in decimal format and increase
+that value incrementally by 5% until we
+get to a value of plus 25% or plus 0.25.
+
+149
+00:16:04,000 --> 00:16:17,000
+So to do that, in cell J3, I'm just going
+to title this column intervals and then in
+the cells below from J4 to J14, I'm going
+to write in the intervals I just outlined.
+
+150
+00:16:17,000 --> 00:16:31,000
+So starting with a value of minus 0.25 in
+cell J3 and increasing that interval by
+0.05, that's 5%, until we reach a
+finishing value of plus 0.25 in cell J14.
+
+151
+00:16:31,000 --> 00:16:43,000
+So with those intervals defined, we can
+then use Excel's data analysis tool to
+count the number of data points, that is
+monthly returns, that lie within those
+intervals that we've just created.
+
+152
+00:16:43,000 --> 00:16:51,000
+And to access Excel's data analysis tool
+pack, you can go to data on the ribbon and
+then select the data analysis button on
+the right hand side.
+
+153
+00:16:51,000 --> 00:16:56,000
+Now, if you don't see that button, then it
+probably means that you don't have the
+add-in installed.
+
+154
+00:16:56,000 --> 00:17:04,000
+And if that's the case, don't worry, you
+can install it really easily just by going
+to file, then options, then add-ins.
+
+155
+00:17:04,000 --> 00:17:16,000
+Choose Excel add-ins and then make sure
+that both the analysis tool pack and
+analysis tool pack VBA checkboxes are
+ticked before pressing OK on the dialog
+box.
+
+156
+00:17:16,000 --> 00:17:24,000
+And when you do that, you'll then see the
+data analysis button appear on the right
+hand side.
+
+157
+00:17:24,000 --> 00:17:30,000
+So when clicking on the data analysis
+button, we are presented with a number of
+analysis tools to choose from.
+
+158
+00:17:30,000 --> 00:17:33,000
+And at this stage, we want to choose the
+one that says histogram.
+
+159
+00:17:33,000 --> 00:17:40,000
+And once we select that and press OK,
+you'll see another dialog box appear,
+which requires various user inputs.
+
+160
+00:17:40,000 --> 00:17:43,000
+The first one is the input range.
+
+161
+00:17:43,000 --> 00:17:48,000
+That's fairly easy. It's just the range of
+close to close returns that we see in
+column G.
+
+162
+00:17:48,000 --> 00:17:53,000
+So we can just put the cursor in that box
+and then select all of that data.
+
+163
+00:17:53,000 --> 00:17:56,000
+The next one is the bin range.
+
+164
+00:17:56,000 --> 00:17:59,000
+Now, the bin range is just another name
+for our intervals.
+
+165
+00:17:59,000 --> 00:18:05,000
+So in that box, you can just select cells
+J4 to J14, which are the intervals that we
+just created.
+
+166
+00:18:05,000 --> 00:18:09,000
+And finally, we need to choose an output
+range.
+
+167
+00:18:09,000 --> 00:18:16,000
+And to do that, I'm just going to select
+the output range option and choose cell K3
+and then press OK.
+
+168
+00:18:16,000 --> 00:18:22,000
+Now, as you can see here, that then writes
+two more columns of data into our Excel
+sheet.
+
+169
+00:18:22,000 --> 00:18:25,000
+The first is a repeat of our intervals in
+column K.
+
+170
+00:18:25,000 --> 00:18:27,000
+And that column is called bin.
+
+171
+00:18:27,000 --> 00:18:30,000
+And the next one is called frequency in
+column L.
+
+172
+00:18:30,000 --> 00:18:39,000
+And those values are actually counts of
+the number of close to close returns that
+have values that lie between the interval
+ranges that we have created.
+
+173
+00:18:39,000 --> 00:18:44,000
+Now, it's not actually clear at this stage
+what ranges the analysis tool is actually
+using.
+
+174
+00:18:44,000 --> 00:18:46,000
+So let me explain that to you now.
+
+175
+00:18:46,000 --> 00:18:53,000
+The first value in cell L4 just counts the
+number of monthly returns that have a
+value of less than minus 0.25.
+
+176
+00:18:53,000 --> 00:19:04,000
+The cell below counts the number of
+monthly returns that have a value that
+lies between minus 0.25 and minus 0.2, so
+minus 25% to minus 20%.
+
+177
+00:19:04,000 --> 00:19:12,000
+The cell below that counts the number of
+monthly returns that have a value that
+lies between minus 0.2 and minus 0.15 and
+so on.
+
+178
+00:19:12,000 --> 00:19:24,000
+All the way until we get to the final
+cell, cell L15, which counts the number of
+monthly returns that have a value of
+greater than 0.25, which is our maximum
+interval.
+
+179
+00:19:24,000 --> 00:19:28,000
+Now, I know those ranges aren't very
+obvious based on just the numbers that we
+see here.
+
+180
+00:19:28,000 --> 00:19:39,000
+So in the next column, what I suggest we
+do is write in some text that are clearer.
+
+181
+00:19:39,000 --> 00:19:45,000
+And then in cell M4, I'm just going to
+type in the range that the count in cell
+L4.
+
+182
+00:19:45,000 --> 00:19:49,000
+So that's going to be less than minus 25%.
+
+183
+00:19:49,000 --> 00:19:57,000
+In the cell below that, the next range is
+between minus 25% and minus 20% and so on.
+
+184
+00:19:57,000 --> 00:20:08,000
+So bear with me a moment here while I type
+in all of those text ranges we need just
+to make this data a little bit clearer.
+
+185
+00:20:08,000 --> 00:20:18,000
+Okay, at this stage, I think it's a good
+time to step away from this histogram
+table just so that we can create some
+summary statistics for this data.
+
+186
+00:20:18,000 --> 00:20:25,000
+For example, it'd be useful to have some
+values for centrality and also volatility
+amongst some other metrics as well.
+
+187
+00:20:25,000 --> 00:20:33,000
+And a good tool that Excel has to generate
+these statistics quickly is the
+descriptive statistics tool with the data
+analysis tool pack.
+
+188
+00:20:33,000 --> 00:20:39,000
+So just as with the histogram analysis
+tool, we find that by clicking on the data
+analysis button within the data tab on the
+ribbon.
+
+189
+00:20:39,000 --> 00:20:45,000
+But this time we're going to navigate to
+descriptive statistics rather than
+histogram.
+
+190
+00:20:45,000 --> 00:20:50,000
+Once that's selected, all we need to do
+here is enter the input range we're using
+again.
+
+191
+00:20:50,000 --> 00:20:56,000
+So that's our monthly close to close
+returns in column G and then check the box
+called summary statistics.
+
+192
+00:20:56,000 --> 00:21:05,000
+And this time I'm going to choose an
+output for this data which is going to be
+cell J17.
+
+193
+00:21:05,000 --> 00:21:09,000
+From there, we can see a whole bunch of
+summary statistics have been populated in
+the sheet.
+
+194
+00:21:09,000 --> 00:21:15,000
+Now, I'm not going to go through these in
+any detail because we've been through all
+of this stuff before in the money supply
+video.
+
+195
+00:21:15,000 --> 00:21:22,000
+And you should also be familiar with it
+all from the basic statistics PDF in video
+three as well.
+
+196
+00:21:22,000 --> 00:21:29,000
+Instead, all I'm going to do here is just
+tidy things up a little bit by increasing
+the column widths so that we can see the
+data more easily.
+
+197
+00:21:29,000 --> 00:21:36,000
+And renaming the title in cell J17 to
+something like descriptive statistics.
+
+198
+00:21:36,000 --> 00:21:48,000
+And then also reformatting some of these
+numbers to percentages or just numbers
+with less decimal places depending on
+what's appropriate statistic.
+
+199
+00:21:48,000 --> 00:21:57,000
+Now, despite going through this step for
+creating some summary statistics, we don't
+actually need them particularly for
+figuring out our stops and targets.
+
+200
+00:21:57,000 --> 00:22:05,000
+However, I did want to make sure that we
+covered that step just so that you know
+how to generate those statistics quickly
+in case you forgot from our previous
+videos.
+
+201
+00:22:05,000 --> 00:22:12,000
+And when you're doing something like a
+volatility analysis, it will help you kind
+of assess the risk and opportunity in an
+asset.
+
+202
+00:22:12,000 --> 00:22:20,000
+OK, so with that little descriptive
+statistics detour out of the way, let's
+get back to the histogram table that we
+were creating.
+
+203
+00:22:20,000 --> 00:22:26,000
+So in column L, we have our frequency data
+that counts the absolute number of data
+points that fall within certain ranges.
+
+204
+00:22:26,000 --> 00:22:35,000
+However, what would be more useful to us
+than the absolute values is if we had that
+same data displayed as a percentage of the
+total count.
+
+205
+00:22:35,000 --> 00:22:55,000
+So for example, we know that two
+observations of monthly returns have
+values below minus 25%, but it would be
+nice to know what is that value as a
+percentage of the entire data set.
+
+206
+00:22:55,000 --> 00:23:02,000
+Well, in the adjacent range.
+
+207
+00:23:02,000 --> 00:23:10,000
+So to begin with here, the percentage and
+then that in cell 4, I'm going to create a
+frequency count as divided by K31.
+
+208
+00:23:10,000 --> 00:23:16,000
+And that is just the count for the
+adjacent range divided by the total count
+in cell K31.
+
+209
+00:23:16,000 --> 00:23:22,000
+And that cell reference is fixed so that
+we can copy the formula down to all the
+rest of the columns.
+
+210
+00:23:22,000 --> 00:23:25,000
+Oh, sorry, all the rest of the cells in
+the column.
+
+211
+00:23:25,000 --> 00:23:29,000
+So with that formula copied down, we have
+the values that we need.
+
+212
+00:23:29,000 --> 00:23:35,000
+Let me quickly reformat these cells to
+display themselves as a percentage to two
+decimal places now.
+
+213
+00:23:35,000 --> 00:23:52,000
+And then just as a reminder, with this
+data, it lets us say things like,
+historically speaking, in this example, on
+2.52% of occasions, the stock has returned
+between minus 20% and minus 15% on a
+monthly basis.
+
+214
+00:23:52,000 --> 00:23:58,000
+And from that sort of analysis, we can
+then choose to extrapolate those
+probabilities to the future.
+
+215
+00:23:58,000 --> 00:24:08,000
+Now, unfortunately, the real future
+probabilities are likely to be different,
+but using historical data, as I've said in
+previous videos, is one of the best guides
+that we have.
+
+216
+00:24:08,000 --> 00:24:13,000
+So moving on to the next column now, which
+is the cumulative frequency column.
+
+217
+00:24:13,000 --> 00:24:21,000
+This data is just going to sum up the
+probabilities for each range seen in
+column N on an additive basis, starting
+from the lowest range that we have.
+
+218
+00:24:21,000 --> 00:24:27,000
+Now, I'm going to start by titling this
+column C U M U frequency percentage.
+
+219
+00:24:27,000 --> 00:24:33,000
+And then the first calculation in cell O4
+is just going to be equal to cell N4.
+
+220
+00:24:33,000 --> 00:24:38,000
+So that's just the lowest frequency
+percentage range that we have.
+
+221
+00:24:38,000 --> 00:24:46,000
+But in the cell below that, we want to
+make sure that we add the probability for
+the new range to the cumulative
+probability that we have so far.
+
+222
+00:24:46,000 --> 00:24:50,000
+So the formula there will be equals N5
+plus O4.
+
+223
+00:24:50,000 --> 00:24:53,000
+And then we can copy that formula down.
+
+224
+00:24:53,000 --> 00:25:01,000
+Now, what this data allows us to say is
+things like, for example, here we've got
+49.58% of the return.
+
+225
+00:25:01,000 --> 00:25:04,000
+That has a value of 0% or below.
+
+226
+00:25:04,000 --> 00:25:10,000
+And 89% of the returns data has a value of
+15% or below.
+
+227
+00:25:10,000 --> 00:25:13,000
+That's plus 15% or below.
+
+228
+00:25:13,000 --> 00:25:16,000
+We can also turn these values on the head.
+
+229
+00:25:16,000 --> 00:25:27,000
+So for example, we can say that if 89% of
+returns have a value of 15% or below, that
+also then means that 11% of the data has
+values of above 15%.
+
+230
+00:25:27,000 --> 00:25:35,000
+So these two frequency percentage columns
+here, or probability columns, if you like,
+are very useful for helping us generate
+stops and targets.
+
+231
+00:25:35,000 --> 00:25:43,000
+And those are the columns that you guys
+will have already basically seen and
+you'll recognize from Anton's presentation
+previously.
+
+232
+00:25:43,000 --> 00:25:47,000
+And we're going to go into a bit more
+detail on these later in the video.
+
+233
+00:25:47,000 --> 00:25:52,000
+So with the histogram table completed, the
+next stage we're going to tackle is all
+about presentation.
+
+234
+00:25:52,000 --> 00:25:56,000
+And at the moment, the data that we've got
+here looks a bit dry and isn't really
+readable.
+
+235
+00:25:56,000 --> 00:26:06,000
+So we're going to change all of that by
+improving the formatting of the cells that
+we have and also create a histogram chart
+so that we can visually analyze our data a
+bit more easily.
+
+236
+00:26:06,000 --> 00:26:14,000
+Now, I'm not going to talk through all of
+the changes that I'm making here because
+I'm sure that you guys know how to format
+your data and charts by now.
+
+237
+00:26:14,000 --> 00:26:19,000
+But basically, as you can see, I'm just
+adding a few borders and then making our
+column titles bold.
+
+238
+00:26:19,000 --> 00:26:35,000
+Once that's done, we should move on to
+making a chart and we want that chart to
+basically display our frequency percentage
+column of data in the histogram table so
+that we can kind of visually interpret
+that data a little bit more easily.
+
+239
+00:26:35,000 --> 00:26:46,000
+Now, to do that, I'm just going to go to
+select a blank cell beside the descriptive
+statistics table and then go to insert on
+the ribbon, followed by 2D column chart.
+
+240
+00:26:46,000 --> 00:26:52,000
+Then to add data to that chart, I'm just
+going to right click inside the chart area
+and go to select data.
+
+241
+00:26:52,000 --> 00:26:55,000
+And from there, I'm just going to choose
+to add a series.
+
+242
+00:26:55,000 --> 00:27:04,000
+And the series name will just be the
+frequency percent title and the series
+values will be the range covering all of
+the related data.
+
+243
+00:27:04,000 --> 00:27:07,000
+So from cells N4 to N15.
+
+244
+00:27:07,000 --> 00:27:12,000
+Next, what I'm going to do is add some
+suitable labels.
+
+245
+00:27:12,000 --> 00:27:17,000
+The label tells us what the ranges these
+frequency percentage values actually refer
+to.
+
+246
+00:27:17,000 --> 00:27:21,000
+And this is where the text range column
+that we created earlier comes into play.
+
+247
+00:27:21,000 --> 00:27:31,000
+So to do that, I'm going to select edit
+horizontal axis labels and then choose the
+axis label range, which is just M4 to cell
+M15.
+
+248
+00:27:31,000 --> 00:27:34,000
+All right. So that's it really for our
+chart.
+
+249
+00:27:34,000 --> 00:27:45,000
+It doesn't actually tell us anything new,
+but what it does do is give us a visual
+aid to understand what the distribution of
+returns looks like based on the frequency
+percentage data that we calculated
+earlier.
+
+250
+00:27:45,000 --> 00:27:50,000
+Now, I'm not going to go into too much
+detail here with formatting this chart.
+
+251
+00:27:50,000 --> 00:27:55,000
+But by all means, when you guys do this
+yourselves, you can go ahead and tidy it
+up a little bit.
+
+252
+00:27:55,000 --> 00:27:59,000
+Whether you want to add some axis labels
+or whatever you want to do, that's up to
+you.
+
+253
+00:27:59,000 --> 00:28:02,000
+But for now, we're just going to move on
+to the next step.
+
+254
+00:28:02,000 --> 00:28:12,000
+So as far as building the analysis that's
+most important for creating good stops and
+targets, we're actually pretty much done
+here, at least with the close to close
+data.
+
+255
+00:28:12,000 --> 00:28:23,000
+And as I said, we're going to be looking
+at the high to low data when we move over
+to the template file.
+
+256
+00:28:23,000 --> 00:28:28,000
+That being said, a few more tables go into
+further detail regarding volatility
+analysis.
+
+257
+00:28:28,000 --> 00:28:33,000
+But they aren't actually necessary purely
+for the purposes of creating stops and
+targets.
+
+258
+00:28:33,000 --> 00:28:40,000
+So I'm going to skip building those from
+scratch at this point and just talk about
+them briefly when we move over to the
+template file.
+
+259
+00:28:40,000 --> 00:28:48,000
+Now, as I said, having done the histogram
+table and chart, we've completed the
+majority of work required for creating
+stops and targets.
+
+260
+00:28:48,000 --> 00:28:57,000
+But I do want to show you how you can go
+the extra mile here and improve your
+analysis slightly by looking at a full
+percentile analysis as well.
+
+261
+00:28:57,000 --> 00:29:02,000
+Now, ultimately, this next part will show
+a very similar thing to the histogram
+data.
+
+262
+00:29:02,000 --> 00:29:07,000
+But it will go into a little bit more
+detail since instead of considering broad
+ranges of data to count within,
+
+263
+00:29:07,000 --> 00:29:14,000
+we can actually consider what values of
+returns correspond to every single
+percentile in the distribution if we
+wanted to.
+
+264
+00:29:14,000 --> 00:29:18,000
+Now, you guys might remember this stuff
+from the money supply video earlier in the
+series.
+
+265
+00:29:18,000 --> 00:29:21,000
+But I'm also going to show you again here
+just as a reminder.
+
+266
+00:29:21,000 --> 00:29:29,000
+So as a reminder, percentiles are a
+statistical measure indicating the value
+below which a given percentage of
+observations lie.
+
+267
+00:29:29,000 --> 00:29:39,000
+So for example, the 50th percentile will
+be below which 50% of all returns lie,
+which incidentally is also known as the
+median value.
+
+268
+00:29:39,000 --> 00:29:45,000
+Equally, the 75th percentile is the
+returns value below which 75% of the data
+lies and so on.
+
+269
+00:29:45,000 --> 00:29:52,000
+This way of looking at the data is
+basically the same as the cumulative
+frequency data that we calculated
+previously,
+
+270
+00:29:52,000 --> 00:29:58,000
+except that because we aren't working from
+ranges of returns defined by intervals in
+a histogram,
+
+271
+00:29:58,000 --> 00:30:02,000
+we can get a little bit more granular and
+just compute any percentile that we wish.
+
+272
+00:30:02,000 --> 00:30:07,000
+And that is why I said previously that
+this percentile analysis can add a little
+bit more detail.
+
+273
+00:30:07,000 --> 00:30:11,000
+So let's create this percentile analysis
+table now at the bottom here then.
+
+274
+00:30:11,000 --> 00:30:17,000
+And I'm going to start by defining all the
+percentage ranks that we want to work out
+percentile scores for,
+
+275
+00:30:17,000 --> 00:30:19,000
+meaning related returns values.
+
+276
+00:30:19,000 --> 00:30:28,000
+So in cell J33 to J47, I'm going to type
+in percentiles from 1% to 15%.
+
+277
+00:30:28,000 --> 00:30:33,000
+And those values are going to
+incrementally increase by 1% in each cell.
+
+278
+00:30:33,000 --> 00:30:36,980
+And then in cells L33 to 47, I'm going to
+type in percentiles from 1% to 15%.
+
+279
+00:30:37,000 --> 00:30:49,000
+I'm going to incrementally increase the
+percentiles by 5% starting from 20% in L33
+and finishing at 80% in L45.
+
+280
+00:30:49,000 --> 00:30:57,000
+And then in cells N33 to N47, I'm going to
+incrementally increase the percentiles by
+1% again,
+
+281
+00:30:57,000 --> 00:31:02,000
+starting from 85% and finishing at 99%.
+
+282
+00:31:02,000 --> 00:31:07,000
+Next, in the adjacent cells to all of
+these ranks, we're going to work out the
+percentiles themselves.
+
+283
+00:31:07,000 --> 00:31:14,000
+So starting in cell K33, the formula will
+just be equals percentile.inc.
+
+284
+00:31:14,000 --> 00:31:17,000
+That's our function, Excel function that
+we're going to use.
+
+285
+00:31:17,000 --> 00:31:24,000
+Open brackets, column G, and that's a
+fixed reference, comma, cell J33, and
+close brackets.
+
+286
+00:31:24,000 --> 00:31:31,000
+Now, this formula works out the value of
+returns where less than or equal to 1% of
+the data lies.
+
+287
+00:31:31,000 --> 00:31:37,000
+So notice with the formula that we're
+referencing column G, since that's where
+all of our returns data is.
+
+288
+00:31:37,000 --> 00:31:44,000
+And cell J33 as well, because that is the
+percent rank that we're working out the
+percentile value for.
+
+289
+00:31:44,000 --> 00:31:51,000
+Now, it's important to fix the reference
+for column G, as I said, so that we can
+copy across this formula easily in a few
+moments time.
+
+290
+00:31:51,000 --> 00:31:58,000
+So from here, we can just copy the formula
+down to the next cell,
+
+291
+00:31:58,000 --> 00:32:03,000
+checking out the value of returns where
+less than or equal to 2% of the data lies.
+
+292
+00:32:03,000 --> 00:32:09,000
+And if we kind of continue with that
+logic, we can copy the formula all the way
+down to cell K47 now.
+
+293
+00:32:09,000 --> 00:32:28,000
+And then to work out the sort of values
+for other percentage ranks, we can just
+copy across the formula that we created in
+cell K33 into cells M43 and O43 and auto
+fill them down for all the percentage
+ranks that we have.
+
+294
+00:32:28,000 --> 00:32:34,000
+Finally, to finish off this table, I'm
+just going to add some outside borders to
+the three sections here.
+
+295
+00:32:34,000 --> 00:32:46,000
+So the three sections are from cell ranges
+J33 to K47, from L33 to M47 and from N33
+to O47.
+
+296
+00:32:46,000 --> 00:32:51,000
+And then I'm also going to reformat all
+the percentiles that we've calculated.
+
+297
+00:32:51,000 --> 00:32:55,000
+So they're displayed as percentages to two
+decimal places as well.
+
+298
+00:32:55,000 --> 00:33:00,000
+Okay, guys, so now we've done all of that
+work to build out a distribution of
+returns.
+
+299
+00:33:00,000 --> 00:33:03,000
+Hopefully that was just kind of a reminder
+for you guys, really.
+
+300
+00:33:03,000 --> 00:33:11,000
+Let's move over to a template file that
+contains all the same analysis we just
+built, but also includes a high to low
+returns distribution as well,
+
+301
+00:33:11,000 --> 00:33:14,000
+which as you can see here is on the right
+hand side.
+
+302
+00:33:14,000 --> 00:33:22,000
+Now, as I said previously, you also notice
+a couple of extra tables that weren't
+covered in the previous section, and those
+are these ones here.
+
+303
+00:33:22,000 --> 00:33:29,000
+So the analysis of positive and negative
+returns and also the standard deviation
+band analysis.
+
+304
+00:33:29,000 --> 00:33:36,000
+Now, like I indicated at the time, these
+tables aren't really that important for
+generating stops and targets, which is why
+I didn't cover them.
+
+305
+00:33:36,000 --> 00:33:44,000
+But they do provide some extra detail to
+help you understand the volatility and
+hence risk and opportunity of trading the
+asset that you're looking at.
+
+306
+00:33:44,000 --> 00:33:50,000
+Now, I'm not going to go into any more
+analytical detail on that because it was
+covered extensively in the IPLT course.
+
+307
+00:33:50,000 --> 00:33:55,000
+And I also talked about it a bit in the
+money supply video earlier in the series
+as well.
+
+308
+00:33:55,000 --> 00:33:58,000
+So you guys can go back and check that if
+you need to.
+
+309
+00:33:58,000 --> 00:34:05,000
+That being said, I did want to make sure
+we included it in the template file just
+so that you have it and you can use it if
+you wish.
+
+310
+00:34:05,000 --> 00:34:09,000
+So let's have a look at this template
+properly now.
+
+311
+00:34:09,000 --> 00:34:16,000
+And as you can see, I've already entered
+all of the price data we used previously
+for our ZNGA idea.
+
+312
+00:34:16,000 --> 00:34:21,000
+And now we can start using that data to
+help us come up with a sensible stop and
+target.
+
+313
+00:34:21,000 --> 00:34:31,000
+Now, a quick note here, guys, I'm going to
+go through how to update this template
+file and import new prices shortly using
+our align technology short example.
+
+314
+00:34:31,000 --> 00:34:39,000
+But what I want to do first is get into
+the analysis of choosing a suitable stop
+and target for our long ZNGA idea first.
+
+315
+00:34:39,000 --> 00:34:45,000
+Also, regarding the data that you can see
+here, it is all the same as in the sheet
+that I just manually built.
+
+316
+00:34:45,000 --> 00:34:50,000
+It just looks slightly different because
+different intervals were used for the
+histogram.
+
+317
+00:34:50,000 --> 00:34:53,000
+But I assure you that the underlying data
+is all the same.
+
+318
+00:34:53,000 --> 00:35:03,000
+So the methodical way to go about this is
+firstly to figure out a stop value that
+means we're unlikely to get stopped out
+too easily based on the empirical data
+that we have here.
+
+319
+00:35:03,000 --> 00:35:19,000
+So for example, if we look at the
+histogram data at the top of the sheet, we
+can see that in the cumulative frequency
+data column that around 25% of the time
+ZNGA stock has returned minus 6.86% or
+less.
+
+320
+00:35:19,000 --> 00:35:25,000
+So that means conversely that 75% returned
+more than minus 6.86%.
+
+321
+00:35:25,000 --> 00:35:40,000
+If we get our stop loss at 7% and I say 7%
+because it's 6.86 rounded to the nearest
+whole number, then we would have about a
+75% chance of not being stopped out based
+on the empirical data that we have here.
+
+322
+00:35:40,000 --> 00:35:48,000
+And that is perhaps a little tight for a
+stop loss, but let's go with it now as a
+starting point.
+
+323
+00:35:48,000 --> 00:35:55,000
+Realistically, we probably want somewhere
+between a 70% to 85% chance of not being
+stopped out based on the historical data.
+
+324
+00:35:55,000 --> 00:36:00,000
+Now, 7% is in that range for this stock,
+but it is at the tight end of that range.
+
+325
+00:36:00,000 --> 00:36:05,000
+So given a stop loss of 7%, what does that
+make our target?
+
+326
+00:36:05,000 --> 00:36:12,000
+Well, as Anton has talked about in the
+previous presentation, our target should
+be at least three times our stop on the
+positive side,
+
+327
+00:36:12,000 --> 00:36:19,000
+which means that we're basically trying to
+construct the trade with a 1 to 3 risk
+reward ratio and a target R score of 3.
+
+328
+00:36:19,000 --> 00:36:24,000
+So that means a 7% stop loss would equate
+to a 21% target.
+
+329
+00:36:25,000 --> 00:36:32,000
+Next, before we accept those values, we
+need to try and understand what the
+likelihood is of achieving our target.
+
+330
+00:36:32,000 --> 00:36:35,000
+So basically, what is our realistic
+opportunity here?
+
+331
+00:36:35,000 --> 00:36:46,000
+Well, if we have a look back to the
+histogram table, we can see that only in
+about 4.2% of cases has the stock had a
+monthly return of greater than 22%.
+
+332
+00:36:46,000 --> 00:36:50,000
+And that might not sound great, but there
+are a few things to consider here.
+
+333
+00:36:50,000 --> 00:36:53,000
+Firstly, we're only looking at monthly
+data here.
+
+334
+00:36:53,000 --> 00:37:00,000
+So to achieve our target of 21% over three
+months would be considerably more likely
+than over one month.
+
+335
+00:37:00,000 --> 00:37:09,000
+For example, achieving around a sort of 7%
+or more return each month has around a 23%
+probability per month.
+
+336
+00:37:09,000 --> 00:37:15,000
+Secondly, at the moment, we have only
+considered close to close data.
+
+337
+00:37:15,000 --> 00:37:20,000
+Within each month, the high to low range
+will, of course, be larger than our close
+to close data.
+
+338
+00:37:20,000 --> 00:37:32,000
+And if we look at the high to low data we
+have here, we can see that in around 97.5%
+of occurrences, the high to low range is
+greater than 7.56%.
+
+339
+00:37:32,000 --> 00:37:39,000
+Now, that obviously includes months where
+the stock traded down, but it still shows
+a really decent high to low volatility.
+
+340
+00:37:39,000 --> 00:37:56,000
+Thirdly, we should expect that given our
+fundamental analysis, we're moving these
+percentage probabilities slightly in our
+favor, meaning it's actually slightly more
+likely that the stock achieves returns in
+the direction we want, subject to the
+quality of our fundamental analysis, of
+course.
+
+341
+00:37:56,000 --> 00:38:02,000
+Now, of course, we can't count on that,
+but it is something to bear in mind.
+
+342
+00:38:02,000 --> 00:38:12,000
+So with the high to low returns
+distribution showing us that the high low
+volatility range is almost certain to be
+over 7% on a monthly basis, what can we
+actually take from that?
+
+343
+00:38:12,000 --> 00:38:21,000
+Well, it means that we'll probably know if
+we're wrong quite quickly if the stock has
+a down month, and we'll probably be
+stopped out very quickly.
+
+344
+00:38:21,000 --> 00:38:26,000
+Equally, though, it also means that
+there's ample opportunity for things to go
+right as well.
+
+345
+00:38:26,000 --> 00:38:32,000
+If we've done our fundamental and
+technical work well, there is enough
+volatility in the stock to achieve our
+target.
+
+346
+00:38:32,000 --> 00:38:42,000
+Now, I said a few moments ago that 7%
+might be a bit tight as a stop loss, given
+there's a 25% chance being stopped out on
+a monthly basis to close prices.
+
+347
+00:38:42,000 --> 00:38:47,000
+And that's without any consideration of
+intramonth moves.
+
+348
+00:38:47,000 --> 00:38:54,000
+We've also seen with the high to low data
+that 7% price differences from low to high
+occur very frequently.
+
+349
+00:38:54,000 --> 00:39:02,000
+Given that, we might also consider
+refining our stops and targets slightly,
+and we can do that using the percentile
+tables quite easily.
+
+350
+00:39:02,000 --> 00:39:12,000
+And one way to look at this is simply by
+saying that you want to have a stop that
+represents only a certain percent chance
+of being triggered on a close to close
+basis.
+
+351
+00:39:12,000 --> 00:39:19,000
+So rather than a 25% chance, for example,
+what about a 20% chance or a 15% chance?
+
+352
+00:39:19,000 --> 00:39:28,000
+If we look at our percentiles for the
+close to close data, we can look across
+from the various percentage ranks and see
+what percentile value that corresponds to.
+
+353
+00:39:28,000 --> 00:39:36,000
+So, for example, if you want a stop that
+historically would have been triggered
+about 15% of times on a close to close
+basis,
+
+354
+00:39:36,000 --> 00:39:42,000
+then you can look across from the 15th
+percentage rank and see a stop return of
+minus 10.14%.
+
+355
+00:39:42,000 --> 00:39:51,000
+Equally, for a stop, we can see that the
+stop return would be minus 8.22%.
+
+356
+00:39:51,000 --> 00:39:57,000
+Now, of course, increasing the size of the
+stops means increasing the size of the
+target on the other side, given our 1 to 3
+ratio.
+
+357
+00:39:57,000 --> 00:40:01,000
+So when you do this, there's basically two
+things to consider.
+
+358
+00:40:01,000 --> 00:40:07,000
+Firstly, you need to make sure that
+there's enough room for the stock to move
+without being stopped out too easily.
+
+359
+00:40:07,000 --> 00:40:14,000
+And secondly, you need to make sure
+there's enough volatility in the stock to
+reach your target, given the historical
+data.
+
+360
+00:40:14,000 --> 00:40:18,000
+Now, balancing those two items should get
+you somewhere near an answer.
+
+361
+00:40:18,000 --> 00:40:25,000
+And then beyond that, it kind of becomes a
+discretionary decision and your sort of
+risk appetite may play a part as well.
+
+362
+00:40:25,000 --> 00:40:31,000
+Now, at this stage, you might also want to
+consider some technicals when setting
+stops and targets as well.
+
+363
+00:40:31,000 --> 00:40:34,000
+But you do need to be a little bit careful
+with that.
+
+364
+00:40:34,000 --> 00:40:40,000
+You can only kind of use that after you've
+determined a suitable range as defined by
+historical volatility.
+
+365
+00:40:40,000 --> 00:40:48,000
+Now, you've got to remember that
+volatility is the driving factor and the
+most important consideration for setting
+stops and targets.
+
+366
+00:40:48,000 --> 00:40:58,000
+So let's say we've chosen to go with an 8%
+stop and a 24% ZNGA analysis.
+
+367
+00:40:58,000 --> 00:41:05,000
+The current price for the stock on the
+22nd of December 2021 is 6.38.
+
+368
+00:41:05,000 --> 00:41:17,000
+And if we enter those details into the
+orange cells at the bottom of this
+template file, then you will see that it
+then calculates what the price stop and
+target values are based on those inputs
+that we entered.
+
+369
+00:41:17,000 --> 00:41:26,000
+So in this example here, the stop loss
+should be set at 5.87 and the target
+should be $7.91.
+
+370
+00:41:26,000 --> 00:41:30,000
+OK, so that's some analysis done now for
+our long ZNGA position.
+
+371
+00:41:30,000 --> 00:41:34,000
+Let's have a look now at our Align
+technology short.
+
+372
+00:41:34,000 --> 00:41:37,000
+And by the way, guys, I've said this
+before, but I'll say it again.
+
+373
+00:41:37,000 --> 00:41:40,000
+Any stocks that I'm talking about here are
+just examples.
+
+374
+00:41:40,000 --> 00:41:47,000
+Don't be stupid and try to kind of use
+these ideas in your portfolio because
+there's no fundamental work that's gone
+into them.
+
+375
+00:41:47,000 --> 00:41:50,000
+And by the time you watch this video,
+everything's going to have changed anyway.
+
+376
+00:41:51,000 --> 00:41:52,000
+All right.
+
+377
+00:41:52,000 --> 00:41:57,000
+So to generate stops and targets for Align
+technologies, I'm just going to use this
+template file again.
+
+378
+00:41:57,000 --> 00:42:05,000
+And by doing so, you guys are going to see
+how easy it is to do this analysis quickly
+and successfully for any stock that you
+wish.
+
+379
+00:42:05,000 --> 00:42:13,000
+So whenever you're using this template
+with new or updated data, the first step
+is to remove the old stale data that we
+already have here.
+
+380
+00:42:13,000 --> 00:42:21,000
+And since we want to move on to
+calculating stops and targets for Align
+technologies, we no longer need the ZNGA
+data in this file.
+
+381
+00:42:21,000 --> 00:42:30,000
+So to clear out all of that, you just need
+to select all of the data in columns A to
+F and then press delete on the keyboard
+and that will clear the contents of those
+cells.
+
+382
+00:42:30,000 --> 00:42:35,000
+After that, you will see that almost all
+the formulas in this sheet return error
+values.
+
+383
+00:42:35,000 --> 00:42:36,000
+You don't need to worry about that.
+
+384
+00:42:36,000 --> 00:42:40,000
+It's just because there's no new data to
+work with in the file yet.
+
+385
+00:42:40,000 --> 00:42:50,000
+So next, what we want to do is delete our
+stop and target inputs in the orange cells
+in cells K, 59, 60 and 62.
+
+386
+00:42:50,000 --> 00:42:55,000
+And after that, the spreadsheet is ready
+to have new data imported into it.
+
+387
+00:42:55,000 --> 00:43:04,000
+So this is the point at which we head over
+to Yahoo Finance again and obtain monthly
+price data, this time for Align
+Technologies.
+
+388
+00:43:04,000 --> 00:43:20,000
+So let's see the Yahoo Finance website and
+navigating to the Align Technologies stock
+page by typing in the ticker ALGN into the
+search bar at the top and then selecting
+the historical data tab once we're on the
+Align Technologies stock page.
+
+389
+00:43:20,000 --> 00:43:24,000
+From here, we want to choose the maximum
+time period possible again.
+
+390
+00:43:24,000 --> 00:43:28,000
+And also we want to make sure that the
+frequency of data is set to monthly.
+
+391
+00:43:28,000 --> 00:43:31,000
+After that, you can just click apply and
+download.
+
+392
+00:43:31,000 --> 00:43:37,000
+And then with the data downloaded, you
+just need to navigate to the downloaded
+file and open it.
+
+393
+00:43:37,000 --> 00:43:49,000
+And once it's open, you can see here we
+need to take a few of the same steps that
+we did before, which is expand the column
+width so that you can actually see the
+data and also sort that data from newest
+to oldest.
+
+394
+00:43:49,000 --> 00:43:56,000
+So in descending order, you can do that by
+clicking any one of the column titles and
+then going to data on the ribbon and
+choosing filter.
+
+395
+00:43:56,000 --> 00:44:01,000
+And after that, we use the date filter to
+sort the data.
+
+396
+00:44:01,000 --> 00:44:08,000
+Now, here you can see what I was talking
+about before when I said sometimes when
+you download price data, it can show
+prices for incomplete periods.
+
+397
+00:44:08,000 --> 00:44:14,000
+So what we need to do here is delete the
+most recent row since it doesn't represent
+a full month of data.
+
+398
+00:44:14,000 --> 00:44:21,000
+And once that's done, we can copy columns
+A to F and paste them as values into
+columns A to F in the template file.
+
+399
+00:44:21,000 --> 00:44:29,000
+To paste the data as values, just right
+click on column A and choose the one, two,
+three clipboard option from the paste
+options.
+
+400
+00:44:29,000 --> 00:44:39,000
+And the reason why I'm telling you to
+paste the data as values is just so that
+we can keep all the formatting as it was
+in the template file in those columns,
+which just makes it look a bit neater.
+
+401
+00:44:40,000 --> 00:44:46,000
+Now, at this stage, then you might see
+that all the calculation cells update
+properly and there's no longer any errors.
+
+402
+00:44:46,000 --> 00:44:48,000
+However, we aren't quite done yet.
+
+403
+00:44:48,000 --> 00:44:53,000
+Before moving on to some analysis, we need
+to make sure that our returns columns are
+updated properly.
+
+404
+00:44:53,000 --> 00:44:59,000
+Remember, we've imported a completely
+different set of data that will be a
+different length to the prior one in the
+file.
+
+405
+00:44:59,000 --> 00:45:05,000
+And so the returns formulas need to be
+adjusted so that they're the same length
+as the new series.
+
+406
+00:45:05,000 --> 00:45:15,000
+To do that, just navigate to the bottom of
+those columns of data and see whether the
+formulas need to be either deleted or auto
+filled down to match the raw price data
+length.
+
+407
+00:45:15,000 --> 00:45:20,000
+In this case, we can see that the raw data
+is a longer data set than our formulas are
+currently.
+
+408
+00:45:20,000 --> 00:45:23,000
+So we need to auto fill these formulas
+down to the end of the data.
+
+409
+00:45:23,000 --> 00:45:31,000
+And once that's done, remember to delete
+the final formula in column G, since it's
+always going to return an error for the
+reasons I mentioned earlier.
+
+410
+00:45:31,000 --> 00:45:36,000
+And now that that's done, we're ready to
+move on to some analysis.
+
+411
+00:45:36,000 --> 00:45:46,000
+So if we take a look at the data for
+aligned technologies quickly, it looks
+like it's more volatile at first sight
+than Zinger stock was since the range of
+monthly returns is a lot wider.
+
+412
+00:45:46,000 --> 00:45:56,000
+That being said, though, we do have to
+bear in mind that the data set is a lot
+longer and therefore it's been traded
+through more economically volatile
+periods, such as the 2008 crisis, for
+example.
+
+413
+00:45:56,000 --> 00:46:02,000
+Now, that's just something we want to take
+a mental note of. We don't want to adjust
+our data set.
+
+414
+00:46:02,000 --> 00:46:07,000
+We want to use the full data set since it
+improves the statistical significance of
+our analysis.
+
+415
+00:46:07,000 --> 00:46:10,000
+So let's have a look at what we have here.
+
+416
+00:46:10,000 --> 00:46:20,000
+If we start with the close to close
+histogram, we can see that there's about
+an 83.6% chance of the stock returning up
+to 14.33% in a monthly period.
+
+417
+00:46:20,000 --> 00:46:24,000
+Remember that we're assuming a short
+fundamental thesis for this stock.
+
+418
+00:46:24,000 --> 00:46:29,000
+And so that means we can view those
+figures the other way around, meaning
+there's a 16.4% probability.
+
+419
+00:46:29,000 --> 00:46:32,000
+That's 100% minus 83.6%.
+
+420
+00:46:32,000 --> 00:46:43,000
+And there's a 16.4% probability of being
+stopped out using a 14.33% stop based on
+the empirical data that we have.
+
+421
+00:46:43,000 --> 00:46:46,000
+Now, on the face of it, that seems like
+quite a wide stop.
+
+422
+00:46:46,000 --> 00:46:50,000
+And if you think about the sort of
+probabilistic range that we like to see
+for stops,
+
+423
+00:46:50,000 --> 00:46:57,000
+we typically want a 70 to 85% chance of
+not being stopped out based on the
+historical close to close data.
+
+424
+00:46:57,000 --> 00:47:02,000
+So in this case, a 14.33% stop is right at
+the top end of that.
+
+425
+00:47:02,000 --> 00:47:11,000
+For now, though, let's just assume that
+we're going to go with that 14% stop for
+this stock and see what everything looks
+like in terms of a target.
+
+426
+00:47:11,000 --> 00:47:16,000
+Now, remember, our target is always based
+around a three times multiple of our stop.
+
+427
+00:47:16,000 --> 00:47:21,000
+And so if we say our stop is 14%, then our
+target should be 42%.
+
+428
+00:47:21,000 --> 00:47:32,000
+Based on our close to close data, there's
+only a 0.8% chance that Align Technologies
+has a return of less than minus 40.53% in
+a month.
+
+429
+00:47:32,000 --> 00:47:35,000
+So this already feels like it's much too
+unlikely.
+
+430
+00:47:35,000 --> 00:47:40,000
+But even if we ignore those probabilities
+for a moment and just use some common
+sense,
+
+431
+00:47:40,000 --> 00:47:48,000
+does it really sound like it's a good idea
+to set an initial soft target that can
+only really be hit if the stock halves?
+
+432
+00:47:48,000 --> 00:47:51,000
+It just doesn't really sound reasonable.
+
+433
+00:47:51,000 --> 00:47:59,000
+So let's skip over to the percentile
+analysis now just to see if we can find
+something that works a bit better with the
+extra detail that we have here.
+
+434
+00:47:59,000 --> 00:48:08,000
+Something that sticks out straight away
+here is the huge jumps in percentile
+values from the 85th percentage rank to
+the 80th and then to the 75th.
+
+435
+00:48:08,000 --> 00:48:10,000
+And remember, we're looking at a short
+here.
+
+436
+00:48:10,000 --> 00:48:16,000
+So for a stop that's only going to be
+triggered 25% of the time historically
+based on monthly close to close data,
+
+437
+00:48:16,000 --> 00:48:21,000
+we need to look at the 75th percentage
+rank, not the 25th.
+
+438
+00:48:21,000 --> 00:48:30,000
+So let's consider creating a stop around
+the 75th percentile then where the return
+value is about 10%.
+
+439
+00:48:30,000 --> 00:48:37,000
+That would mean that our target is about
+30% and if we look at the percentile table
+to find where minus 30% lies,
+
+440
+00:48:37,000 --> 00:48:41,000
+it's somewhere between 2 and 3 in terms of
+percentage rank.
+
+441
+00:48:41,000 --> 00:48:50,000
+That means that historically there's only
+been somewhere between 2 and 3% of months
+where the close to close price has hit our
+potential target within a month.
+
+442
+00:48:50,000 --> 00:48:58,000
+If we assume we split the target over
+three months, we would have to see just
+under minus 10% returns each month.
+
+443
+00:48:58,000 --> 00:49:05,000
+And again, if we look at the percentile
+table, there's only about a 15 to 20%
+chance of that happening on a given month.
+
+444
+00:49:05,000 --> 00:49:09,000
+And it would need to happen three times in
+a row for us to kind of hit our target.
+
+445
+00:49:09,000 --> 00:49:12,000
+That's obviously not impossible, but it is
+pretty difficult.
+
+446
+00:49:12,000 --> 00:49:19,000
+Looking over to the high to low range
+distribution, there's a 10% price change
+or more between,
+
+447
+00:49:19,000 --> 00:49:29,000
+the high and the low on around 90% of
+months, which sounds like it's a little
+bit more promising, but that does include
+up months as well as down months.
+
+448
+00:49:29,000 --> 00:49:37,000
+And so you can kind of see here how short
+ideas become quite difficult to figure out
+suitable stops and targets for.
+
+449
+00:49:37,000 --> 00:49:47,000
+But you do have to remember when you're
+going through this sort of analysis that
+you have to have shorts in the portfolio
+for balance and in order to make your
+portfolio suitable for all market
+conditions.
+
+450
+00:49:47,000 --> 00:50:00,000
+So again, as I said previously, what this
+is going to come down to is starting with
+some hard numbers and just trying to play
+around with figures to see what can work
+in terms of a three to one reward to risk
+ratio,
+
+451
+00:50:00,000 --> 00:50:07,000
+whilst also obtaining a plausible target
+and not having a stop that's going to be
+triggered too easily.
+
+452
+00:50:07,000 --> 00:50:13,000
+So for this example, something more like
+the 70th or 75th percentage rank might
+work.
+
+453
+00:50:13,000 --> 00:50:16,000
+That means a stop somewhere between 8.4
+and 10%.
+
+454
+00:50:16,000 --> 00:50:24,000
+So with that being said, let's enter some
+data into the orange cells here and get
+some price outputs for a stop and a target
+for this stock.
+
+455
+00:50:24,000 --> 00:50:34,000
+And we're going to assume a 9% stop here
+that gives us a 27% target and the current
+price is 645 spot 89.
+
+456
+00:50:34,000 --> 00:50:43,000
+And so when those figures are entered, you
+can see we get a stock value of 587 spot
+76 and a target of 820 spot 28.
+
+457
+00:50:43,000 --> 00:50:48,000
+Now there is something else that we need
+to consider when setting stops and targets
+for individual stocks.
+
+458
+00:50:48,000 --> 00:50:56,000
+And that is that during strong bull
+markets, for example, all of your shorts
+can get stopped out purely because of
+market conditions.
+
+459
+00:50:56,000 --> 00:50:59,000
+And in fact, this can of course happen in
+the reverse as well.
+
+460
+00:50:59,000 --> 00:51:05,000
+And the thing to consider here is that
+just because the market might move
+significantly,
+
+461
+00:51:05,000 --> 00:51:16,000
+we don't want to very quickly find
+ourselves in a situation where one side of
+our portfolio has been wiped out since
+that's going to result in a huge increase
+in portfolio risk.
+
+462
+00:51:16,000 --> 00:51:21,000
+We need to maintain some balance in the
+portfolio based on our fundamental
+outlook.
+
+463
+00:51:21,000 --> 00:51:26,000
+And this is where some of the limits that
+I'm going to mention later come into play.
+
+464
+00:51:26,000 --> 00:51:30,000
+So in those circumstances, we have a few
+choices.
+
+465
+00:51:30,000 --> 00:51:33,000
+Either we abandon or change our stops.
+
+466
+00:51:33,000 --> 00:51:40,000
+We trade out and replace the ideas, or we
+use different stop measures to help
+navigate through the period.
+
+467
+00:51:40,000 --> 00:51:51,000
+Now, abandoning stops entirely is
+obviously a bad idea since it allows human
+biases to run riot and changing them is
+viable, but only with plenty of market
+experience.
+
+468
+00:51:51,000 --> 00:52:03,000
+Trading out and replacing the ideas is or
+can work well, but unless you have a lot
+of ideas ready in volatile conditions, it
+may not be possible to do that.
+
+469
+00:52:03,000 --> 00:52:08,000
+And lastly, using different measures can
+be a little bit complex.
+
+470
+00:52:08,000 --> 00:52:12,000
+But that being said, let me explore that
+last option with you quickly.
+
+471
+00:52:12,000 --> 00:52:27,000
+One of the ways to deal with the issue of
+market triggered stops for individual
+positions is to combine ideas into long
+short pairs or spreads and create stops
+and targets around the pair of trades
+rather than the individual trades.
+
+472
+00:52:27,000 --> 00:52:38,000
+That mitigates the market risk effect on
+stops somewhat since market moves that
+affect one position in the pair should
+have the opposite effect in the opposing
+position in terms of profit and loss.
+
+473
+00:52:38,000 --> 00:52:47,000
+Now, Anton briefly mentioned a way you can
+do this by looking at spreads and went
+through a simple example that works when
+you assume an equal number of shares on
+each side of the spread.
+
+474
+00:52:47,000 --> 00:53:01,000
+What I want to do here is build on that
+slightly with a more robust template for
+calculating stops and targets for spreads
+where you can choose the exposure that
+you're taking to each side of the spread
+and work out reasonable stops and targets
+from there.
+
+475
+00:53:01,000 --> 00:53:11,000
+Now, when I go through this stuff,
+something to bear in mind is that spread
+stops and targets are not a direct
+substitute for individual trade stops and
+targets.
+
+476
+00:53:11,000 --> 00:53:17,000
+They should be used in combination because
+they can help in certain circumstances, as
+I mentioned previously.
+
+477
+00:53:17,000 --> 00:53:22,000
+So here is the spread template that you
+can use to conduct this analysis.
+
+478
+00:53:22,000 --> 00:53:28,000
+Now, as you can see, there are a few
+structural differences with this sheet
+compared to the single asset distribution
+of returns template.
+
+479
+00:53:28,000 --> 00:53:34,000
+Firstly, we need two sets of prices for
+both the long and short side of the trade.
+
+480
+00:53:34,000 --> 00:53:42,000
+And you can see here I've got Zinger
+adjusted closed prices in column B, which
+is where the prices of the long side of
+the trade should go.
+
+481
+00:53:42,000 --> 00:53:49,000
+And I've got the align prices in or align
+technology prices in column C, where the
+short side of the trade goes.
+
+482
+00:53:49,000 --> 00:53:55,000
+From those two columns of price data,
+returns are calculated for each stock in
+columns D and E.
+
+483
+00:53:55,000 --> 00:54:01,000
+And then a weighted return is calculated
+for this mini portfolio of two stocks in
+column A.
+
+484
+00:54:01,000 --> 00:54:11,000
+Now, you'll notice that I don't have any
+open high or low price data columns for
+this template because it's unnecessary
+since we cannot calculate high to low
+price changes for spread data.
+
+485
+00:54:11,000 --> 00:54:14,000
+So we have to use close to close data
+only.
+
+486
+00:54:14,000 --> 00:54:20,000
+Now, in column P, there are a few orange
+cells that require our user input.
+
+487
+00:54:20,000 --> 00:54:27,000
+Firstly, in cells P2 and P3, you need to
+fill in the gross exposures for the long
+and short position respectively.
+
+488
+00:54:27,000 --> 00:54:31,000
+In this example, I've set the exposure to
+$10,000 on each side.
+
+489
+00:54:31,000 --> 00:54:35,000
+And from those figures, the percentage
+weighting is worked out in the cells
+below.
+
+490
+00:54:35,000 --> 00:54:42,000
+Those values are then used to generate
+constantly weighted portfolio returns or
+spread returns in column F.
+
+491
+00:54:42,000 --> 00:54:47,000
+And those returns are then the returns
+used in our distribution analysis.
+
+492
+00:54:47,000 --> 00:54:53,000
+And that in turn helps us find mental
+stops and targets for the spread position
+in dollar terms.
+
+493
+00:54:53,000 --> 00:55:04,000
+Now, one thing to consider here with this
+template is that when you come to pasting
+adjusted close prices for your long and
+short positions in columns B and C
+respectively,
+
+494
+00:55:04,000 --> 00:55:07,000
+you need to make sure that obviously the
+dates align.
+
+495
+00:55:07,000 --> 00:55:11,000
+So that means the dates are correct in
+column A for both sets of prices.
+
+496
+00:55:11,000 --> 00:55:16,000
+And you also need to make sure that the
+length of the data set is the same for
+both stocks,
+
+497
+00:55:16,000 --> 00:55:22,000
+which basically means you can only use a
+historical period that is common to both
+stocks, both positions.
+
+498
+00:55:22,000 --> 00:55:29,000
+And that's going to result in basically
+using the dates from whichever stock has
+the shorter data set.
+
+499
+00:55:29,000 --> 00:55:36,000
+So let's have a look at this data now and
+figure out what might be a reasonable
+mental stop and target for this pairs
+trade.
+
+500
+00:55:36,000 --> 00:55:41,000
+If we look at the histogram data and the
+summary statistics that we have,
+
+501
+00:55:41,000 --> 00:55:48,000
+the first thing that jumps out is that
+this trade as a pair is much less volatile
+than the two component parts,
+
+502
+00:55:48,000 --> 00:55:54,000
+which makes sense because we're removing
+lots of market volatility by having a long
+and a short position.
+
+503
+00:55:54,000 --> 00:55:57,000
+How do we know it's less volatile?
+
+504
+00:55:57,000 --> 00:56:05,000
+Well, we can see pretty clearly from the
+histogram that it's very, very rare for
+this spread to return anything outside of
+plus or minus 15%.
+
+505
+00:56:05,000 --> 00:56:10,000
+And we can also see that the standard
+deviation is less than half of that which
+we had for the other stocks.
+
+506
+00:56:10,000 --> 00:56:16,000
+So let's have a look at our results now
+and see in terms of creating stops and
+targets.
+
+507
+00:56:16,000 --> 00:56:22,000
+If we were to use a stop that was
+historically triggered 30% of the time,
+
+508
+00:56:22,000 --> 00:56:27,000
+the value would be 4.3%, 4.36% to be
+precise.
+
+509
+00:56:27,000 --> 00:56:34,000
+If we were to use a stop that was
+historically triggered 15% of the time,
+the value would be 7.39%.
+
+510
+00:56:34,000 --> 00:56:37,000
+So that is the kind of range that we're
+working within.
+
+511
+00:56:37,000 --> 00:56:42,000
+And let's say that for now we settle on a
+6% stop.
+
+512
+00:56:42,000 --> 00:56:45,000
+That means our target should be three
+times that.
+
+513
+00:56:45,000 --> 00:56:46,000
+So that's 18%.
+
+514
+00:56:46,000 --> 00:56:49,000
+And let's have a think about how that adds
+up.
+
+515
+00:56:49,000 --> 00:56:55,000
+Well, we can see that this spread has
+never actually achieved that within a
+monthly period.
+
+516
+00:56:55,000 --> 00:56:57,000
+So that's not a great start.
+
+517
+00:56:57,000 --> 00:57:02,000
+But we also need to be aware of the fact
+that historically this trade has performed
+very poorly.
+
+518
+00:57:02,000 --> 00:57:05,000
+But that doesn't mean that it's going to
+going forward.
+
+519
+00:57:05,000 --> 00:57:13,000
+Again, this comes back to the future
+percentages hopefully shifting in a
+beneficial way to you as a trader,
+
+520
+00:57:13,000 --> 00:57:15,000
+because you've done good fundamental work.
+
+521
+00:57:15,000 --> 00:57:21,000
+The other thing to consider here is that
+just because the target has never been
+attained in a month,
+
+522
+00:57:21,000 --> 00:57:23,000
+doesn't mean that it won't be over three
+months.
+
+523
+00:57:23,000 --> 00:57:28,000
+If we say that we need to obtain about a
+5% to 6% return a month,
+
+524
+00:57:28,000 --> 00:57:34,000
+then each month based on historical close
+to close data, there's about a 15% chance
+of that happening.
+
+525
+00:57:34,000 --> 00:57:37,000
+Now, obviously, that isn't great
+statistically.
+
+526
+00:57:37,000 --> 00:57:42,000
+But you've also got to remember that we
+can't generate high to low ranges here.
+
+527
+00:57:42,000 --> 00:57:47,000
+And so the actual volatility range covered
+might be quite a bit higher.
+
+528
+00:57:47,000 --> 00:57:49,000
+And we just can't see that.
+
+529
+00:57:49,000 --> 00:57:56,000
+As I've said a few times already, this
+does come back to a discretionary decision
+that's based upon probabilistic raw data.
+
+530
+00:57:56,000 --> 00:57:59,000
+Only you can really decide what might
+work.
+
+531
+00:57:59,000 --> 00:58:04,000
+What we're trying to do here is give you
+the numerical tools to help you make that
+decision.
+
+532
+00:58:04,000 --> 00:58:10,000
+So let's just say for this example, we're
+going to stick with a 6% stop and an 18%
+target,
+
+533
+00:58:10,000 --> 00:58:16,000
+because over the next three months, we
+think that there's going to be enough
+volatility for that target to be attained.
+
+534
+00:58:16,000 --> 00:58:24,000
+And we don't want to move the stop any
+lower because we want to give the pair
+room to move.
+
+535
+00:58:24,000 --> 00:58:34,000
+If we enter those values in salespeople
+respectively, then we can see a dollar
+stop loss of $1,200 and a dollar target of
+$3,600.
+
+536
+00:58:34,000 --> 00:58:36,000
+What does that mean?
+
+537
+00:58:36,000 --> 00:58:42,000
+Well, it means that the mental stop loss
+you've chosen equates to a loss of $1,200
+over the two positions.
+
+538
+00:58:42,000 --> 00:58:47,000
+And at that point, you should be cutting
+both positions.
+
+539
+00:58:47,000 --> 00:58:53,000
+And this might happen when one position
+makes $500 and one loses $1,700 for
+example.
+
+540
+00:58:53,000 --> 00:58:56,000
+It might happen when both lose $600.
+
+541
+00:58:56,000 --> 00:58:57,000
+It doesn't really matter.
+
+542
+00:58:57,000 --> 00:59:02,000
+The point is that the dollar stop loss is
+a cumulative stop over the two positions.
+
+543
+00:59:02,000 --> 00:59:13,000
+The same is true for the target and the
+positions can be scaled into when the soft
+target is reached and the stop is then
+shifted upwards.
+
+544
+00:59:13,000 --> 00:59:17,000
+So let's think about an example of that.
+
+545
+00:59:17,000 --> 00:59:24,000
+We reach our target here if the cumulative
+P&L over the two trades gets to plus
+$3,600.
+
+546
+00:59:24,000 --> 00:59:35,000
+Let's say that happens during a strong
+bull market run and that figure is reached
+through a $2 loss and a $3,800 win from
+the long.
+
+547
+00:59:35,000 --> 00:59:44,000
+If that's the case, and I'm ignoring any
+deposits or withdrawals here, then our
+short exposure will be $10,200 after a
+$200 loss.
+
+548
+00:59:44,000 --> 00:59:51,000
+Because remember, the short has to
+increase in price and therefore exposure
+in order to generate a loss.
+
+549
+00:59:51,000 --> 01:00:01,000
+And our long exposure will be $13,800
+since a $3,800 profit on the long side
+increases exposure by $3,800.
+
+550
+01:00:01,000 --> 01:00:04,000
+So the target has been hit.
+
+551
+01:00:04,000 --> 01:00:06,000
+What happens next?
+
+552
+01:00:06,000 --> 01:00:10,000
+Well, there are basically two decisions to
+make here.
+
+553
+01:00:10,000 --> 01:00:13,000
+Firstly, do you want to add to the
+position?
+
+554
+01:00:13,000 --> 01:00:16,000
+And by position here, I mean the entire
+long short pair.
+
+555
+01:00:16,000 --> 01:00:21,000
+Generally, you want to add to your
+winners, of course, subject to position,
+size and constraints.
+
+556
+01:00:21,000 --> 01:00:29,000
+And so that leads us to the second
+decision, which is if you are going to add
+to the position, in what proportion do you
+want to do it?
+
+557
+01:00:29,000 --> 01:00:41,000
+If we update the gross exposure sales for
+the long and short side to $13,800 and
+$10,200 respectively, then you can see the
+weighting of the significantly.
+
+558
+01:00:41,000 --> 01:00:49,000
+There's now a 57.5% weighting on the long
+side and a 42.5% weighting on the short
+side.
+
+559
+01:00:49,000 --> 01:00:55,000
+Now, let's say, for example, that we want
+to increase the overall position sizes
+because the trade is working.
+
+560
+01:00:55,000 --> 01:01:01,000
+And we're looking to add another $10,000
+gross exposure across the two trades.
+
+561
+01:01:01,000 --> 01:01:08,000
+You might want to realign the weightings
+to 50% each in that case, or you might
+want to overweight one side of the trade.
+
+562
+01:01:08,000 --> 01:01:12,000
+There are lots of reasons why you might
+want to do either of those.
+
+563
+01:01:12,000 --> 01:01:19,000
+And those decisions are going to be kind
+of up to you and the sort of portfolio
+that you're running and the balance that
+you want in your portfolio.
+
+564
+01:01:19,000 --> 01:01:24,000
+As an example, though, I'm going to assume
+here that we think the long side of the
+trade is doing well.
+
+565
+01:01:24,000 --> 01:01:30,000
+And also the short side isn't doing too
+badly, considering such a strong bull
+market backdrop.
+
+566
+01:01:30,000 --> 01:01:48,000
+Also, let's assume that if these positions
+aren't reasonably balanced in terms of
+dollar exposure terms, then it's
+detrimental to our portfolio construction
+and potentially exceeds preventative risk
+limits for beta and net exposure.
+
+567
+01:01:48,000 --> 01:01:54,000
+So, for those reasons, in this example,
+we're going to rebalance this pair to be
+equally weighted.
+
+568
+01:01:54,000 --> 01:02:08,000
+Now, at the moment, given the long side
+has increased in exposure to $13,800 and
+the short side has increased to an
+exposure of $10,200, we have a current
+gross exposure of $24,000 over the pair.
+
+569
+01:02:08,000 --> 01:02:14,000
+If we add $10,000, then we should have
+$34,000 over the pair.
+
+570
+01:02:14,000 --> 01:02:22,000
+And if it's equally weighted in cash
+terms, then both Align Technologies and
+Zinger should have a $17,000 exposure
+each.
+
+571
+01:02:22,000 --> 01:02:34,000
+So if we enter those values into cells P2
+and P3 and we decide to keep the stock
+percent the same at this point, then our
+stock from this point is minus $2,040.
+
+572
+01:02:34,000 --> 01:02:41,000
+But you need to remember that this value
+is applied on top of the previous P&L we
+had, which was plus $3,600.
+
+573
+01:02:41,000 --> 01:02:49,000
+So that means that the actual running stop
+for this pairs trade would be plus $1,560.
+
+574
+01:02:49,000 --> 01:02:51,000
+Now, hopefully that makes sense to you
+guys.
+
+575
+01:02:51,000 --> 01:02:59,000
+And by the way, if you did decide to
+change the weightings when you added
+exposure to the trades, then that would
+also change the historical spread returns.
+
+576
+01:02:59,000 --> 01:03:05,000
+And you'd need to reassess to see if the
+same stock and target percentages were
+suitable.
+
+577
+01:03:05,000 --> 01:03:07,000
+They would then be applied on top of the
+prior profit.
+
+578
+01:03:07,000 --> 01:03:17,000
+So for example, if to some reason your new
+stock became 10%, which would be a $3,400
+loss on a $34,000 exposure pair.
+
+579
+01:03:17,000 --> 01:03:31,000
+Then your mental stock loss would actually
+be $200 in P&L, which is equal to the
+$3,600 original profit from reaching our
+first soft target minus $3,400, which is
+the new stock.
+
+580
+01:03:31,000 --> 01:03:35,000
+Again, I hope that makes sense to you
+guys.
+
+581
+01:03:35,000 --> 01:03:43,000
+I just want to give you all the sort of
+options and various ways to handle these
+scenarios and you guys can kind of decide
+what works for you.
+
+582
+01:03:43,000 --> 01:03:55,000
+Now, there are a couple of things to
+consider here before I'm going to move on
+to looking at the average true range
+percentage analysis, which is firstly,
+when you work out stops and targets for
+spreads,
+
+583
+01:03:55,000 --> 01:04:00,000
+they have to just be mental notes because
+you can't program them into your brokerage
+platform.
+
+584
+01:04:00,000 --> 01:04:08,000
+And secondly, the spread calculations
+should be looked at in combination with
+the individual stops and targets that you
+have for positions.
+
+585
+01:04:08,000 --> 01:04:17,000
+You want to be using the information in a
+combination in order to make well-informed
+decision individual position stops and
+targets.
+
+586
+01:04:17,000 --> 01:04:25,000
+It's sometimes better also to keep those
+as mental or manual stops rather than
+automated ones through your brokerage
+platform,
+
+587
+01:04:25,000 --> 01:04:30,000
+because it will then allow you to be
+flexible in scenarios like I've just
+described.
+
+588
+01:04:30,000 --> 01:04:36,000
+Now, whether you run manual or automated
+stops on individual positions or a
+mixture, it's up to you.
+
+589
+01:04:36,000 --> 01:04:39,000
+I'm just pointing out some considerations
+at this point.
+
+590
+01:04:39,000 --> 01:04:48,000
+Okay, guys, let's move on to briefly
+talking through an average true range
+percentage or ATRP for short volatility
+analysis,
+
+591
+01:04:48,000 --> 01:04:53,000
+which is another way you guys can generate
+stops and targets for individual stocks.
+
+592
+01:04:53,000 --> 01:04:57,000
+This method is going to be quite a bit
+quicker than doing a distribution of
+returns analysis.
+
+593
+01:04:57,000 --> 01:05:01,000
+But equally, it doesn't really provide as
+much detail either.
+
+594
+01:05:01,000 --> 01:05:08,000
+Now, in this section, I'm not going to
+actually show you how to build an ATRP
+sheet from scratch.
+
+595
+01:05:08,000 --> 01:05:14,000
+And instead, I'm just going to jump
+straight into these template sheets here
+and talk you through how you can use them.
+
+596
+01:05:14,000 --> 01:05:23,000
+If you are interested in generating an
+ATRP from scratch, then you'll be able to
+see that in the IPLT course.
+
+597
+01:05:23,000 --> 01:05:29,000
+And you can, of course, have a look at how
+I've built these templates and backward
+engineer them if you want to do so.
+
+598
+01:05:29,000 --> 01:05:31,000
+And it really isn't that difficult to do
+that.
+
+599
+01:05:31,000 --> 01:05:35,000
+And it will probably only take you about
+30 minutes to figure it all out.
+
+600
+01:05:35,000 --> 01:05:45,000
+So as you can see in the spreadsheet here,
+I've got two sheets that calculate ATRP
+values using weekly and quarterly data
+respectively.
+
+601
+01:05:45,000 --> 01:05:56,000
+As Anton said in the previous video,
+weekly ATRP values provide a good guide
+for stock losses and quarterly ATRP values
+provide good estimates for targets.
+
+602
+01:05:56,000 --> 01:06:07,000
+And this is just something really that
+when you've been trading for a long time,
+you just come to understand through
+practice rather than something that can be
+proven mathematically or anything like
+that.
+
+603
+01:06:08,000 --> 01:06:15,000
+Now, before we look at these sheets in any
+detail, let me briefly describe what the
+average true range percentage calculation
+is trying to capture.
+
+604
+01:06:15,000 --> 01:06:29,000
+Now, I think it will be fairly clear to
+you guys that having an understanding of
+the high to low range for an asset can be
+a useful metric for understanding
+volatility because it tries to capture the
+maximum price movement over a certain
+length of period.
+
+605
+01:06:29,000 --> 01:06:36,000
+Now, I say it tries to measure the maximum
+price movement because it doesn't always
+succeed.
+
+606
+01:06:36,000 --> 01:06:45,000
+There are times when stocks can move
+significantly in the pre or post market
+and these price movements are ignored by a
+simple high to low range.
+
+607
+01:06:45,000 --> 01:06:50,000
+So all that the true range percentage
+calculation does is adjust for that.
+
+608
+01:06:50,000 --> 01:06:58,000
+So it finds the actual maximum price
+movement over a period, including any
+moves that happen outside of market hours.
+
+609
+01:06:58,000 --> 01:07:05,000
+The average true range percentage is then
+a simple average of those true range
+percentages over X number of periods.
+
+610
+01:07:05,000 --> 01:07:11,000
+So let's look at the weekly ATRP template
+sheet now to try and make that a little
+bit clearer.
+
+611
+01:07:11,000 --> 01:07:22,000
+OK, so in the left hand columns, what I
+have here is weekly price data for align
+technologies going back to or from, I
+should say, December the 20th, 2021.
+
+612
+01:07:22,000 --> 01:07:33,000
+And as we had in the distribution of
+returns template, you can see the open
+high close prices in columns B to F.
+
+613
+01:07:33,000 --> 01:07:38,000
+In column G, we have a calculation column,
+which simply the high to low range for
+each period.
+
+614
+01:07:38,000 --> 01:07:40,000
+So each week in this case.
+
+615
+01:07:40,000 --> 01:07:45,000
+And in column H, we have the true range
+percentage calculation for each week.
+
+616
+01:07:45,000 --> 01:07:53,000
+And if we take a look at the formula in
+cell H2 to see what it looks like, then
+you get this.
+
+617
+01:07:53,000 --> 01:07:56,000
+Now, this formula might look complicated,
+but it's really not.
+
+618
+01:07:56,000 --> 01:08:05,000
+Remember, the goal of the true range is to
+find the maximum range over a period
+inclusive of any out of hours market
+moves.
+
+619
+01:08:05,000 --> 01:08:11,000
+So you can see that the first part of the
+formula here is trying to find the maximum
+between three values.
+
+620
+01:08:11,000 --> 01:08:15,000
+The first value is whatever value we see
+in the adjacent cell in column G.
+
+621
+01:08:15,000 --> 01:08:19,000
+So that's just our intra period high to
+low range.
+
+622
+01:08:19,000 --> 01:08:27,000
+The second value is the high of the
+current period minus the close of the
+previous period in its absolute format.
+
+623
+01:08:27,000 --> 01:08:43,000
+Using the close of the previous periods
+makes sure that any out of hours moves are
+accounted for within the calculation.
+
+624
+01:08:43,000 --> 01:08:52,000
+And then this formula is basically just
+taking the maximum range from the intra
+period high to low, the previous close to
+the low and the previous close to the
+high.
+
+625
+01:08:52,000 --> 01:09:02,000
+That yields a maximum true range and then
+to express that as a percentage, we just
+divide it by the current periods open,
+which is what the last part of the formula
+does.
+
+626
+01:09:02,000 --> 01:09:04,000
+Now, hopefully that makes sense to you
+guys.
+
+627
+01:09:04,000 --> 01:09:09,000
+But if not, just take some time to look at
+it again when you download this file.
+
+628
+01:09:09,000 --> 01:09:22,000
+So after we've generated a time series of
+true range percentage values in column H,
+we can then take averages over various
+periods of time, which I've done over here
+in this box to the right hand side.
+
+629
+01:09:22,000 --> 01:09:30,000
+The reason why we take averages is so that
+we don't rely on a single data point to
+come up with an analytical conclusion,
+like a stop or target.
+
+630
+01:09:30,000 --> 01:09:36,000
+And I've chosen to take averages over
+various periods here so that it gives us
+an insight into how the average data
+points are.
+
+631
+01:09:39,000 --> 01:09:46,000
+And that's the reason why we use an ATRP
+for this stock as information for us to
+use in terms of picking an appropriate
+bucket.
+
+632
+01:09:46,000 --> 01:09:57,000
+So what this data here is saying is that
+Align Technologies has an ATRP value of 9%
+over the last month, which is four weeks
+of data.
+
+633
+01:09:57,000 --> 01:10:04,000
+It has an ATRP of 8.42% over the last
+quarter, which is the last 13 weeks of
+data and so on.
+
+634
+01:10:04,000 --> 01:10:16,000
+As I've mentioned before, when we look at
+data like this, it's all about finding a
+balance between using more recent data and
+enough data that the conclusions are
+statistically significant.
+
+635
+01:10:16,000 --> 01:10:29,000
+The balance is obviously up to you, but
+what I would say is that for this stock,
+it looks like the weekly ATRP has been
+about 8% to 10% through almost its entire
+trading history.
+
+636
+01:10:29,000 --> 01:10:33,000
+And so picking a stock value in that range
+is probably pretty sensible.
+
+637
+01:10:33,000 --> 01:10:46,000
+Now, what you guys might remember is that
+when we looked at this same stock using
+the DOR analysis, we actually got to
+exactly the same conclusion of about an 8%
+to 10% stop being reasonable for this
+stock.
+
+638
+01:10:46,000 --> 01:10:51,000
+So we know we're on the right track here.
+And like I said, we know this works from
+experience.
+
+639
+01:10:51,000 --> 01:10:59,000
+But if in doubt, you can, of course,
+always double check the numbers against
+each other using both the DOR and ATRP
+analysis.
+
+640
+01:10:59,000 --> 01:11:05,000
+Let's have a quick look at the quarterly
+ATRP values now for aligned technologies.
+
+641
+01:11:05,000 --> 01:11:12,000
+All the analysis is the same here, but I
+just want to talk through the ATRP values
+that we're seeing quickly.
+
+642
+01:11:12,000 --> 01:11:17,000
+So firstly, with quarterly data, we
+clearly have much higher ATRP numbers.
+
+643
+01:11:17,000 --> 01:11:22,000
+That should be obvious since the
+volatility is bound to be larger over
+longer periods of time.
+
+644
+01:11:22,000 --> 01:11:27,000
+We also have quite a bit more variation in
+the results over different timeframes.
+
+645
+01:11:27,000 --> 01:11:35,000
+But that's actually largely due to mostly
+the one year quarterly ATRP value, which
+only uses four data points.
+
+646
+01:11:35,000 --> 01:11:43,000
+And so we can sort of disregard that as
+fairly unreliable since there are only
+four periods in the calculation.
+
+647
+01:11:43,000 --> 01:11:53,000
+That being said, some of these other
+values are being skewed a bit by including
+periods of exceptional market volatility,
+such as in the 2020.
+
+648
+01:11:53,000 --> 01:12:01,000
+And if we think about what our stop range
+was based on the weekly ATRP values that
+we had in the previous sheet,
+
+649
+01:12:01,000 --> 01:12:03,000
+then we're looking in the range of eight
+to 10%.
+
+650
+01:12:03,000 --> 01:12:08,000
+So given that we want a target that is
+around three, three times that figure.
+
+651
+01:12:08,000 --> 01:12:12,000
+So about 24% to 30%.
+
+652
+01:12:12,000 --> 01:12:18,000
+And what we can ask ourselves is, does
+that add up with what we're seeing here in
+the quarterly ATRPs?
+
+653
+01:12:18,000 --> 01:12:22,000
+And I would say in this case, sort of.
+
+654
+01:12:22,000 --> 01:12:28,000
+If you were to calculate ATRPs on a
+quarterly basis without including
+historical market crashes, then it
+certainly would.
+
+655
+01:12:28,000 --> 01:12:32,000
+But we don't want to do that because it
+biases the data.
+
+656
+01:12:32,000 --> 01:12:36,000
+So what we have then is a weekly ATRP
+suggesting a stop somewhere in the range
+of eight to 10%.
+
+657
+01:12:36,000 --> 01:12:42,000
+And a quarterly ATRP suggesting a target
+of somewhere in the range of 35 to 40%.
+
+658
+01:12:42,000 --> 01:12:48,000
+Now there are many ways you could approach
+this situation using the data available to
+come up with an answer.
+
+659
+01:12:48,000 --> 01:12:55,000
+And my general advice here is that as long
+as you're using common sense and logic,
+the answer you come up with will be valid.
+
+660
+01:12:55,000 --> 01:13:00,000
+One way you could look at this data is to
+simply take some kind of middle ground.
+
+661
+01:13:00,000 --> 01:13:05,000
+So what if we were to take the top end of
+the stop and the bottom end of the target?
+
+662
+01:13:05,000 --> 01:13:09,000
+That would mean a stop of 10% and a target
+of 35%.
+
+663
+01:13:09,000 --> 01:13:12,000
+Does that still provide at least a three
+times ratio?
+
+664
+01:13:12,000 --> 01:13:13,000
+Yes.
+
+665
+01:13:13,000 --> 01:13:16,000
+So maybe that's a reasonable solution to
+consider.
+
+666
+01:13:16,000 --> 01:13:24,000
+Another way you could look at this is that
+you might say the current market
+environment isn't applicable to historic
+periods of huge volatility.
+
+667
+01:13:24,000 --> 01:13:32,000
+And therefore you don't think the target
+generated by the quarterly ATRP should be
+skewed as high as it is.
+
+668
+01:13:32,000 --> 01:13:40,000
+One way to tackle that is simply by using
+a three times stop value that you're happy
+with and ignoring the quarterly data.
+
+669
+01:13:40,000 --> 01:13:47,000
+And another is calculating what a
+quarterly value might look like when you
+don't include those historic market
+crashes.
+
+670
+01:13:47,000 --> 01:13:50,000
+You've got to be quite careful if you do
+that.
+
+671
+01:13:50,000 --> 01:13:55,000
+Typically I advise using as much data as
+possible, like I said, for statistical
+significance.
+
+672
+01:13:55,000 --> 01:14:02,000
+But what I'm trying to get across to you
+guys is that there are a number of ways to
+approach this problem.
+
+673
+01:14:02,000 --> 01:14:04,000
+Don't get too bogged down in the details.
+
+674
+01:14:04,000 --> 01:14:11,000
+Just make sure that you choose something
+sensible and that it's based on the
+volatility of the stock and then you stick
+to it.
+
+675
+01:14:11,000 --> 01:14:25,000
+So now let's discuss how you can actually
+use these ATRP templates in practice,
+meaning how can you actually import new or
+different stock data into them and then go
+through an analysis.
+
+676
+01:14:25,000 --> 01:14:29,000
+So I'm going to start with the weekly
+template first, and this one's really
+simple.
+
+677
+01:14:29,000 --> 01:14:43,000
+All you need to do here to update the data
+is remove all the current data you see in
+columns A to F by selecting it and
+pressing delete on the keyboard and then
+replacing that data with new price data
+downloaded from Yahoo Finance or another
+appropriate source.
+
+678
+01:14:43,000 --> 01:14:47,000
+So let's do that now for our long Zinger
+position.
+
+679
+01:14:47,000 --> 01:14:56,000
+As before, to obtain Zinger price data,
+I'm just going to head over to Yahoo
+Finance and then use the search bar at the
+top to navigate to the Zinger stock page.
+
+680
+01:14:56,000 --> 01:15:07,000
+From there, within the historical data
+tab, we want weekly prices this time and
+again, the entire price history available.
+
+681
+01:15:07,000 --> 01:15:12,000
+After that, you can just click apply and
+download and then use the downloaded file
+in Excel.
+
+682
+01:15:12,000 --> 01:15:18,000
+And at this point, before importing the
+data into our template, there's a couple
+of adjustments that we need to make.
+
+683
+01:15:18,000 --> 01:15:25,000
+Firstly, I'm going to make the date column
+slightly wider by clicking and dragging
+the intersection of column A and B to the
+right slightly.
+
+684
+01:15:25,000 --> 01:15:33,000
+Then we need to arrange this data in
+descending order, meaning the latest
+weekly data is displayed at the top of the
+sheet.
+
+685
+01:15:33,000 --> 01:15:41,000
+And as we've done before to do that, you
+just select any one of the column titles
+and then go to data on the ribbon followed
+by filter.
+
+686
+01:15:41,000 --> 01:15:49,000
+And then using the filter option in column
+A, the date column, you just choose to
+sort the data from newest to oldest.
+
+687
+01:15:49,000 --> 01:15:54,000
+Now, at this point, you might see an
+incomplete period of data at the top of
+the sheet.
+
+688
+01:15:54,000 --> 01:15:57,000
+And to deal with that, you can just delete
+it.
+
+689
+01:15:57,000 --> 01:16:00,000
+Fortunately, here, I don't have to deal
+with that.
+
+690
+01:16:00,000 --> 01:16:03,000
+And so now the data is ready to copy
+across to our template.
+
+691
+01:16:03,000 --> 01:16:06,000
+But remember, we don't need the volume
+column.
+
+692
+01:16:06,000 --> 01:16:09,000
+So we're only going to copy across columns
+A to F.
+
+693
+01:16:09,000 --> 01:16:15,000
+To do that, I'm just selecting those
+columns and pressing control C on the
+keyboard to copy the data.
+
+694
+01:16:15,000 --> 01:16:21,000
+And then I'm going to open the weekly ATRP
+template and paste this data into the
+sheet.
+
+695
+01:16:21,000 --> 01:16:28,000
+Now, we need to make sure that this data
+is pasted as values in order to keep all
+the original formatting the same.
+
+696
+01:16:28,000 --> 01:16:34,000
+So here I'm going to right click column A
+and choose to paste as values using the
+one, two, three clipboard option.
+
+697
+01:16:34,000 --> 01:16:47,000
+So with our Zinger data in the file, we
+just need to double check the calculation
+columns and make sure the series of
+formulas that we see in columns G and H
+are the correct length for our new price
+set price data set.
+
+698
+01:16:47,000 --> 01:16:51,000
+Column G needs to be the same length as
+the price data.
+
+699
+01:16:51,000 --> 01:16:57,000
+And so in this case, we want to delete
+these redundant formulas from rows 526
+down.
+
+700
+01:16:57,000 --> 01:17:06,000
+The reason why these formulas are there,
+remember, is just because the previous
+stock in the template, which was the line
+technologies, had a much longer data set.
+
+701
+01:17:06,000 --> 01:17:10,000
+In column H, we do almost exactly the same
+thing.
+
+702
+01:17:10,000 --> 01:17:16,000
+But this time we need to remove the
+contents of the cells from row 525 down
+instead of 526.
+
+703
+01:17:16,000 --> 01:17:22,000
+The reason being that the true range
+percentage formulas in column H require
+price data from the previous period.
+
+704
+01:17:22,000 --> 01:17:25,000
+And so the time series has to be one
+period shorter.
+
+705
+01:17:27,000 --> 01:17:33,000
+If we take a look at the ATRP values in
+our summary box on the right hand side for
+this stock,
+
+706
+01:17:33,000 --> 01:17:41,000
+we can see again that we get to a fairly
+similar conclusion to that which we got
+with the DOR analysis for this stock.
+
+707
+01:17:41,000 --> 01:17:46,000
+So the range we're looking at here is
+somewhere between 7% and 9%.
+
+708
+01:17:46,000 --> 01:17:51,000
+And previously with the DOR analysis, we
+assumed a stock of 8% was reasonable.
+
+709
+01:17:51,000 --> 01:17:55,000
+And that fits in perfectly again with our
+kind of range here.
+
+710
+01:17:55,000 --> 01:18:04,000
+However, we do get an interesting bit of
+extra detail here that we kind of didn't
+see in the DOR analysis.
+
+711
+01:18:04,000 --> 01:18:12,000
+And that is that within the last quarter
+or so, the volatility in this stock has
+been going quite a bit higher based on
+ATRP values.
+
+712
+01:18:12,000 --> 01:18:17,000
+Now, a quarter of data isn't really enough
+to make us shift our analysis for what
+value of stock we use.
+
+713
+01:18:17,000 --> 01:18:26,000
+But what it does provide is a little more
+confidence that we might be getting into
+this stock at the right time since
+volatility is trending up.
+
+714
+01:18:26,000 --> 01:18:31,000
+Okay, so let's go over to the quarterly
+template now.
+
+715
+01:18:31,000 --> 01:18:36,000
+And this one does take just a little bit
+more work in order to import prices
+correctly.
+
+716
+01:18:36,000 --> 01:18:45,000
+So to begin with, just as with the weekly
+ATRP template, when you're looking to
+analyze updated or different stock data
+entirely,
+
+717
+01:18:45,000 --> 01:18:50,000
+the first thing to do with this is delete
+the data already in the template sheet.
+
+718
+01:18:50,000 --> 01:18:56,000
+Again, that means selecting columns A to F
+and pressing delete on the keyboard to
+delete the contents of those cells.
+
+719
+01:18:56,000 --> 01:19:03,000
+Now, in order to import quarterly price
+data, we're actually going to have to
+download monthly price data
+
+720
+01:19:03,000 --> 01:19:07,000
+and perform a number of manipulations in
+order to get it ready to use.
+
+721
+01:19:07,000 --> 01:19:12,000
+So I'm going to go through our long Zinger
+example here to show you how to do this.
+
+722
+01:19:12,000 --> 01:19:19,000
+Firstly, we need to head back to Yahoo
+Finance and this time, instead of
+downloading weekly price data for the
+stock we want,
+
+723
+01:19:19,000 --> 01:19:22,000
+we're going to download monthly prices.
+
+724
+01:19:22,000 --> 01:19:28,000
+So here, all I'm doing is from the same
+page we were on before, just changing the
+frequency to monthly from weekly
+
+725
+01:19:28,000 --> 01:19:36,000
+and then making sure we're still looking
+at the maximum time period available and
+then clicking apply and downloading the
+data.
+
+726
+01:19:37,000 --> 01:19:40,000
+After that, I'm just going to open the
+file again.
+
+727
+01:19:40,000 --> 01:19:44,000
+And to begin with, I'm just going to do
+exactly the same as we did with our weekly
+data,
+
+728
+01:19:44,000 --> 01:19:47,000
+which was firstly to expand the date
+column width.
+
+729
+01:19:47,000 --> 01:19:55,000
+And secondly, to add a filter so that we
+can sort the dates from the newest to
+oldest, meaning in descending order.
+
+730
+01:19:55,000 --> 01:20:00,000
+With that done, we again want to make sure
+that any incomplete periods are removed.
+
+731
+01:20:00,000 --> 01:20:03,000
+But here again, we don't have an issue
+with that.
+
+732
+01:20:03,000 --> 01:20:11,000
+So at this stage, what we actually need to
+do is perform a manipulation on our open,
+high and low columns of data,
+
+733
+01:20:11,000 --> 01:20:15,000
+which is going to help us transform the
+data from monthly to quarterly values.
+
+734
+01:20:15,000 --> 01:20:22,000
+So in columns H, I and J, I'm just going
+to head the columns open, high and low
+respectively.
+
+735
+01:20:22,000 --> 01:20:28,000
+The open is going to be recalculated for
+each month as the open from two months
+before.
+
+736
+01:20:28,000 --> 01:20:33,000
+So in cell H2, the formula will just be
+equals B4.
+
+737
+01:20:33,000 --> 01:20:39,000
+The high is going to be recalculated for
+the latest three months of data.
+
+738
+01:20:39,000 --> 01:20:46,000
+So the formula in cell I2 will be equals
+max open brackets C2 to C4.
+
+739
+01:20:46,000 --> 01:20:52,000
+And finally, the new low is going to be
+the minimum of the latest three months of
+data.
+
+740
+01:20:52,000 --> 01:21:00,000
+And so the formula in cell J2 will be
+equals min open brackets D2 to D4.
+
+741
+01:21:00,000 --> 01:21:06,000
+Now from there, all of these formulas can
+just be copied down to the end of the
+price series.
+
+742
+01:21:06,000 --> 01:21:13,000
+And then all you need to do is just double
+check at the bottom of these series that
+the formulas are working correctly
+
+743
+01:21:13,000 --> 01:21:17,000
+and that we don't have any errors or weird
+values.
+
+744
+01:21:17,000 --> 01:21:22,000
+Now you can see here that the final two
+open prices are displaying zero values.
+
+745
+01:21:22,000 --> 01:21:28,000
+And that's because the formulas that we're
+using in those cells are trying to
+reference prices that don't exist.
+
+746
+01:21:28,000 --> 01:21:31,000
+And so those two values can just be
+deleted.
+
+747
+01:21:31,000 --> 01:21:34,000
+Okay, so the formulas all look good now.
+
+748
+01:21:34,000 --> 01:21:44,000
+And so we're ready to update the open high
+and low values we see in columns B2D with
+these new numbers.
+
+749
+01:21:44,000 --> 01:21:50,000
+To do that, I'm just going to copy columns
+H2J and paste them as values into columns
+B2D.
+
+750
+01:21:50,000 --> 01:21:56,000
+And then having done that, we can actually
+delete columns H2J entirely.
+
+751
+01:21:56,000 --> 01:22:00,000
+All right, so we're almost there now.
+
+752
+01:22:00,000 --> 01:22:05,000
+There's just one more manipulation to make
+before we copy this data into our
+quarterly template.
+
+753
+01:22:05,000 --> 01:22:12,000
+And that is that we need to remove some of
+this monthly data so that we're only left
+with quarterly data points.
+
+754
+01:22:12,000 --> 01:22:17,000
+Now, I think the easiest way to do that is
+to filter out unwanted months of the year.
+
+755
+01:22:17,000 --> 01:22:22,000
+So basically, we're only left with four
+quarters in each annual period.
+
+756
+01:22:22,000 --> 01:22:30,000
+Now, to do that, I'm going to use a
+formula in column H, which just returns a
+number value for each month corresponding
+to the date seen in column A.
+
+757
+01:22:30,000 --> 01:22:42,000
+And the formula we can use for that, which
+I'm going to type here into cell H2, is
+equals month, open brackets, then a cell
+reference, the cell reference for this one
+is going to be A2.
+
+758
+01:22:42,000 --> 01:22:52,000
+Now, as you can see, when that formula is
+entered, it returns a value of 12, the
+12th month in the year, which is December.
+
+759
+01:22:52,000 --> 01:22:59,000
+And that is because that's the month
+that's defined in the corresponding date
+cell, so cell A2.
+
+760
+01:22:59,000 --> 01:23:02,000
+So with that formula entered, we can copy
+it down.
+
+761
+01:23:02,000 --> 01:23:11,000
+And now, since we have all of the month
+values defined in a new column, what we
+can do is filter that column for the
+months of the year that we want to remove.
+
+762
+01:23:11,000 --> 01:23:14,000
+So that we're only left with quarterly
+data points.
+
+763
+01:23:14,000 --> 01:23:23,000
+Now, to do that, we need to reapply a
+filter to the headings in this table and
+then select the filter in our new column,
+column H.
+
+764
+01:23:23,000 --> 01:23:29,000
+And from there, what we can do is uncheck
+all of the months and then recheck just
+the months that we want to remove.
+
+765
+01:23:29,000 --> 01:23:40,000
+So, for example, if I were to check the
+value of one here and press OK, the data
+table would only show price data from
+January in each year, and then I could
+choose to delete that data.
+
+766
+01:23:40,000 --> 01:23:47,000
+So in this case, what we want to do is
+make sure we keep the latest data
+available, which is in December.
+
+767
+01:23:47,000 --> 01:23:57,000
+So what I'm going to do here is check all
+of the data for the months of November and
+October, and then leave September since
+September is one quarter behind December.
+
+768
+01:23:57,000 --> 01:24:07,000
+Then I'm going to check the months August
+and July and leave June and then check May
+and April and leave March and then finally
+check February and January.
+
+769
+01:24:07,000 --> 01:24:20,000
+So basically, you can see here that what
+I'm doing is selecting all the months of
+the year that I want to remove so that
+we're only left with quarterly data based
+on the fact that we want to keep December
+data because that's our latest month of
+data.
+
+770
+01:24:20,000 --> 01:24:29,000
+If I press OK now, you can see that all
+the data I deselected, which is the months
+of December, September, June and March no
+longer appear in the table.
+
+771
+01:24:29,000 --> 01:24:41,000
+So all I'm going to do at this point is
+delete all of this data by selecting row
+to pressing control shift and down on the
+keyboard and then right clicking within
+that data and selecting delete row.
+
+772
+01:24:41,000 --> 01:24:53,000
+So after that, all that's needed is to
+remove the filter and you'll see that
+we're just left with quarterly data, which
+is now ready to copy across to our
+quarterly ATRP template.
+
+773
+01:24:54,000 --> 01:25:09,000
+So to copy that data across, it's the same
+data, just use control C to copy the
+columns A to F and once they're selected
+and then paste them as values into column
+A of the template sheet.
+
+774
+01:25:09,000 --> 01:25:21,000
+So similarly to weekly data, we need to
+check our calculation columns in G and H
+again now in the template and just make
+sure that they're the correct length to
+match our price data.
+
+775
+01:25:21,000 --> 01:25:24,000
+Now, in this case, we need to delete some
+formulas again.
+
+776
+01:25:24,000 --> 01:25:32,000
+So row 42 down for column G, our high to
+low range and from 41 down for our true
+range column, column H.
+
+777
+01:25:32,000 --> 01:25:44,000
+So with all of that done, we can finally
+check the quarterly ATRP values we have
+for this stock, which looks like a range
+from about 27 to 31%, which is quite a
+tight range.
+
+778
+01:25:44,000 --> 01:25:51,000
+And if we think about the stock value
+obtained from our weekly ATRP, it was
+anywhere in the range of seven to 9%.
+
+779
+01:25:51,000 --> 01:25:59,000
+And so just by multiplying that range by
+three, we do actually get pretty close to
+the suggested target using quarterly ATRP
+values.
+
+780
+01:25:59,000 --> 01:26:07,000
+And you can approach these figures in
+exactly the same way as I talked about to
+the previous stock, Align Technologies.
+
+781
+01:26:07,000 --> 01:26:15,000
+It really just boils down to a
+discretionary decision that should be
+guided by the volatility seen in weekly
+and quarterly ATRP values.
+
+782
+01:26:15,000 --> 01:26:19,000
+And as long as you're using common sense
+and logic to get to your answer, you're
+going to be fine.
+
+783
+01:26:19,000 --> 01:26:34,000
+What I would say, though, about the
+quarterly Zinger data that we have here is
+that it is a very short time series, which
+doesn't really inspire confidence in terms
+of generating statistical significant or
+statistically significant analytical
+outcomes, I should say.
+
+784
+01:26:34,000 --> 01:26:52,000
+So that is something to bear in mind. And
+one thing I would suggest if you're
+dealing with particularly short time
+series of data like this is that you
+probably want to wait the weekly ATRP
+values a bit more than what you're seeing
+in the quarterly sheet.
+
+785
+01:26:52,000 --> 01:27:05,000
+What I mean by that is once you've come up
+with a stop value using the weekly ATRP,
+it might be a better idea just to make
+your target equal to three times your stop
+rather than worrying too much about the
+quarterly data.
+
+786
+01:27:05,000 --> 01:27:09,000
+And you might now be asking what
+constitutes a short time series.
+
+787
+01:27:09,000 --> 01:27:24,000
+I can't tell you that exactly. But for me,
+I do like to see generally in any data
+that I use at least 75 to 100 data points
+in order to try and get some statistical
+significance out of the data that I'm
+using.
+
+788
+01:27:24,000 --> 01:27:26,000
+But like I said, everyone is different.
+
+789
+01:27:26,000 --> 01:27:36,000
+Now, guys, I mentioned at the beginning of
+the video that I'm also going to talk
+about some other preventative risk
+management metrics besides just stops and
+targets.
+
+790
+01:27:36,000 --> 01:27:44,000
+So let's do that now. I'm going to bring
+up another spreadsheet here, which
+hopefully you guys remember from video 20,
+our beta calculation lesson.
+
+791
+01:27:44,000 --> 01:27:50,000
+As a reminder, what we're looking at here
+really is a portfolio risk monitor in the
+orange cells.
+
+792
+01:27:50,000 --> 01:27:55,000
+We enter our portfolio positions with
+longs in the top section and shorts in the
+bottom.
+
+793
+01:27:55,000 --> 01:28:05,000
+And the details included here are the
+company name and ticker, the stock beta
+value, the current price and the number of
+shares held in a stock.
+
+794
+01:28:05,000 --> 01:28:11,000
+As a quick reminder, the stock beta value
+is a measure of sensitivity of a stock to
+the market.
+
+795
+01:28:11,000 --> 01:28:18,000
+So a value of one would suggest that for a
+1% move in the market, the stock also
+moves 1% in the same direction on average.
+
+796
+01:28:18,000 --> 01:28:27,000
+I explained things in a lot more detail in
+video 20 regarding beta and its uses, its
+drawbacks and how you can calculate it.
+
+797
+01:28:27,000 --> 01:28:31,000
+So if you can't remember, just head back
+to that video and give it another look.
+
+798
+01:28:31,000 --> 01:28:45,000
+So from those details in the orange cells,
+various calculations are made in the
+adjacent white cells, including gross
+exposure, net dollar exposure, net dollar
+weighting and weighted beta calculations.
+
+799
+01:28:45,000 --> 01:28:52,000
+Again, just as a reminder at this point,
+the gross exposure of a position is the
+current price multiplied by the number of
+shares.
+
+800
+01:28:52,000 --> 01:28:58,000
+The net exposure of a position is the
+gross exposure multiplied by one for a
+long or minus one for a short.
+
+801
+01:28:58,000 --> 01:29:03,000
+So basically short positions end up having
+negative net exposures.
+
+802
+01:29:03,000 --> 01:29:10,000
+The net dollar weighting is the net
+exposure divided by the gross exposure in
+the portfolio.
+
+803
+01:29:10,000 --> 01:29:15,000
+And the weighted beta is the beta of the
+stock multiplied by the net weight.
+
+804
+01:29:15,000 --> 01:29:22,000
+And this is effectively kind of a
+volatility weighted net weight value, if
+you like.
+
+805
+01:29:22,000 --> 01:29:29,000
+At the portfolio level, the sum of all of
+the individual position gross exposures
+equates to the portfolio gross exposure.
+
+806
+01:29:29,000 --> 01:29:35,000
+And equally, the sum of all the individual
+position net exposures equates to the
+portfolio net exposure.
+
+807
+01:29:35,000 --> 01:29:42,000
+Likewise, the sum of all the individual
+net dollar weights equates to the
+portfolio net dollar weight.
+
+808
+01:29:42,000 --> 01:29:49,000
+And also the sum of all of the individual
+net weighted beta values equates to the
+portfolio beta.
+
+809
+01:29:49,000 --> 01:29:53,000
+So let's have a look at these metrics for
+this portfolio in turn.
+
+810
+01:29:53,000 --> 01:30:01,000
+Firstly, we can see the gross dollar
+exposure in cell G33 is equal to $99,810.
+
+811
+01:30:01,000 --> 01:30:05,000
+So basically, this trader is running about
+$100,000 of risk.
+
+812
+01:30:05,000 --> 01:30:09,000
+Now, we don't know what the situation is
+behind the scenes for this trader.
+
+813
+01:30:09,000 --> 01:30:17,000
+And what I mean by that is we don't
+actually know what amount of margin is
+deposited in the account in order to
+achieve that $100,000 gross exposure.
+
+814
+01:30:17,000 --> 01:30:26,000
+But if he or she is based in the US, then
+their gross exposure will be capped at two
+times their margin.
+
+815
+01:30:26,000 --> 01:30:31,000
+So at a minimum, that would mean that the
+account has $50,000 of margin.
+
+816
+01:30:31,000 --> 01:30:44,000
+If, however, this trader is based in a
+country that allows CFDs, and these are
+indeed CFD positions in the portfolio,
+then the leverage limit is actually likely
+to be much higher, perhaps up to 10 times.
+
+817
+01:30:44,000 --> 01:30:49,000
+However, does that mean that it's sensible
+to use that leverage?
+
+818
+01:30:49,000 --> 01:30:51,000
+Most definitely not.
+
+819
+01:30:51,000 --> 01:30:59,000
+If this trader was using 10 times
+leverage, then the deposited margin only
+needs to be $10,000 to put on this
+$100,000 of risk.
+
+820
+01:30:59,000 --> 01:31:10,000
+And that might sound good, but it also
+means that the portfolio would only need
+to drop in value by 10% for the entire
+margin to be wiped out.
+
+821
+01:31:10,000 --> 01:31:14,000
+So that's why portfolio gross exposure
+limits are essential.
+
+822
+01:31:14,000 --> 01:31:22,000
+Using some leverage can be useful in order
+to increase the risk and opportunity of
+your portfolio, especially when we're
+running a long, short book.
+
+823
+01:31:22,000 --> 01:31:27,000
+But it does need to be monitored and
+limited to prevent sort of catastrophic
+loss.
+
+824
+01:31:27,000 --> 01:31:35,000
+For a well run long short portfolio, about
+two to four times leverage for stocks is
+okay.
+
+825
+01:31:35,000 --> 01:31:38,000
+Going much higher than that becomes pretty
+dangerous.
+
+826
+01:31:38,000 --> 01:31:44,000
+And when you're starting out as new
+traders, you want to keep the leverage on
+the lower end of that range.
+
+827
+01:31:44,000 --> 01:31:49,000
+And then you can build into it over time,
+subject to your sort of own success.
+
+828
+01:31:49,000 --> 01:31:55,000
+So let's say, for example, this trader
+here is starting out and he's deposited
+$50,000 on margin.
+
+829
+01:31:55,000 --> 01:32:06,000
+Having a portfolio gross exposure of
+$99,000 in leverage factor of almost two,
+that's well within an appropriate gross
+exposure or leverage limit.
+
+830
+01:32:06,000 --> 01:32:13,000
+However, if he's only deposited $20,000,
+then his gross exposure is almost five
+times his margin deposit.
+
+831
+01:32:13,000 --> 01:32:16,000
+And he's almost definitely running too
+much risk.
+
+832
+01:32:16,000 --> 01:32:22,000
+If the portfolio value dropped by 10%, in
+that example, his margin would half.
+
+833
+01:32:22,000 --> 01:32:29,000
+Obviously, when you guys are thinking
+about gross exposure and leverage limits
+for your own portfolios, they're going to
+be completely up to you.
+
+834
+01:32:29,000 --> 01:32:37,000
+But as I said, as a guide, exceeding four
+times leverage, even as an accomplished
+retail trader, is probably unwise.
+
+835
+01:32:37,000 --> 01:32:41,000
+Let's think about net dollar or net cash
+exposure now.
+
+836
+01:32:41,000 --> 01:32:47,000
+And this metric clearly gives us an
+insight into how long or short we are on a
+net basis across the portfolio.
+
+837
+01:32:47,000 --> 01:32:56,000
+And the general principle here is that as
+long short traders and portfolio managers,
+we want to always have some balance across
+the portfolio,
+
+838
+01:32:56,000 --> 01:33:02,000
+which is part of what makes the strategy
+so good because it can be traded
+successfully through all market
+conditions.
+
+839
+01:33:02,000 --> 01:33:10,000
+So here, the dollar net exposure is $114,
+which in net weight terms is only 0.11%.
+
+840
+01:33:10,000 --> 01:33:16,000
+And based on that, this portfolio is
+basically market neutral in its current
+state.
+
+841
+01:33:16,000 --> 01:33:26,000
+Although, as I said in the beta video,
+this is by no means a full story because
+it doesn't actually account for the
+individual asset betas and, of course, the
+portfolio beta.
+
+842
+01:33:26,000 --> 01:33:37,000
+In practice, you can have portfolios that
+are roughly cash neutral like this one,
+but yet on a beta adjusted basis, they're
+significantly net short or significantly
+net long.
+
+843
+01:33:37,000 --> 01:33:42,000
+Now, as it happens in this example, the
+portfolio beta is almost zero as well.
+
+844
+01:33:42,000 --> 01:33:52,000
+So in its current setup, we would expect
+this portfolio to be very market neutral,
+meaning that its value should move pretty
+much independently to the stock market.
+
+845
+01:33:52,000 --> 01:34:04,000
+We can only assume then that in this case,
+the manager of this portfolio doesn't
+really have a fundamental bias or thesis
+about the market direction going forward,
+whether that's long or short.
+
+846
+01:34:04,000 --> 01:34:15,000
+You guys know by now that generally you
+should have at least some bias in terms of
+market direction, because if you don't, it
+probably means that you just haven't done
+your macro fundamental work properly.
+
+847
+01:34:15,000 --> 01:34:21,000
+But that being said, there are, of course,
+circumstances whereby you might want to be
+very neutral, like in this portfolio.
+
+848
+01:34:21,000 --> 01:34:35,000
+Now, in terms of portfolio beta, for the
+most part, a sensible range to operate in
+is plus 30% to minus 30%, or in decimal
+format, plus 0.3 to minus 0.3.
+
+849
+01:34:35,000 --> 01:34:44,000
+So a beta value in the range of, let's
+say, plus to minus 5%, like this
+portfolio, we would say is very market
+neutral.
+
+850
+01:34:44,000 --> 01:34:54,000
+A 10% tilt in either direction represents
+a fairly weak bias, whether it's long or
+short, and anything above 20% is quite a
+strong bias.
+
+851
+01:34:54,000 --> 01:35:07,000
+And then outside the limits of plus or
+minus 30% starts to represent such a
+strong bias on market direction that the
+benefits of long short portfolio
+management start to deteriorate.
+
+852
+01:35:07,000 --> 01:35:17,000
+And so I would say that that range should
+only be exceeded in exceptional
+circumstances or with incredible eviction.
+
+853
+01:35:17,000 --> 01:35:24,000
+It can be applied to the dollar or cash
+net weight in this portfolio, which in
+this example is 0.11%.
+
+854
+01:35:24,000 --> 01:35:35,000
+As I said before, however, as I said in
+video 20, net cash weight is just kind of
+a crude measure of portfolio bias, since
+it doesn't really account for the basis of
+individual stocks.
+
+855
+01:35:35,000 --> 01:35:52,000
+And for that reason, we can actually
+extend the acceptable range of net cash
+weight to something more like 50%, so plus
+50% to minus 50%, simply because it just
+isn't as effective as a measure to capture
+market risk or bias in the portfolio.
+
+856
+01:35:52,000 --> 01:36:02,000
+So, beta is the value that you should be
+paying more attention to, but you must
+also remember that beta isn't infallible
+and there are some drawbacks of using
+beta.
+
+857
+01:36:02,000 --> 01:36:07,000
+And if you want to find out more about
+that, then you need to go back to video
+20.
+
+858
+01:36:07,000 --> 01:36:14,000
+So, let's think about a scenario here in
+this portfolio where these limits might be
+broken and what we can do about it.
+
+859
+01:36:14,000 --> 01:36:22,000
+So, let's say that the market rallies
+strongly by 10% over a couple of months
+and as a result, increase in value.
+
+860
+01:36:22,000 --> 01:36:30,000
+Now, at this point, I'm just going to
+arbitrarily increase the prices of these
+long stocks in turn to reflect that
+scenario now.
+
+861
+01:36:30,000 --> 01:36:41,000
+So, let's put the prices at 15, 98, 36,
+22, 115 and 240.
+
+862
+01:36:41,000 --> 01:36:50,000
+Now, we're also going to assume here that
+a couple of this trader's short positions
+have done quite well over the period and
+stayed flat.
+
+863
+01:36:50,000 --> 01:36:58,000
+But Lenar Corporation and Best Buy have
+gone up in price by 10% with the market
+and they've ended up both being stopped
+out.
+
+864
+01:36:58,000 --> 01:37:04,000
+If I delete those two stocks from the
+portfolio now, look what happens to the
+portfolio beta.
+
+865
+01:37:04,000 --> 01:37:09,000
+It's gone from a value of minus 5% to a
+value of 48%.
+
+866
+01:37:09,000 --> 01:37:17,000
+If our beta values then are perfectly
+accurate and the market then corrects back
+to where it was dropping around 10%,
+
+867
+01:37:17,000 --> 01:37:23,000
+then in theory, if we do nothing to change
+the structure of this portfolio,
+
+868
+01:37:23,000 --> 01:37:30,000
+it should decrease in value by 5% given
+that our new beta value is close to 0.5.
+
+869
+01:37:30,000 --> 01:37:35,000
+Now, that might not sound like much, but
+it doesn't account for leverage.
+
+870
+01:37:35,000 --> 01:37:41,000
+If you're 4 times levered, then that's
+going to mean your margin decreases by
+20%,
+
+871
+01:37:41,000 --> 01:37:47,000
+which then seems a lot more significant
+when you think about how easily avoidable
+this scenario was.
+
+872
+01:37:47,000 --> 01:37:51,000
+All that would have had to happen was to
+rebalance some of the position weightings
+
+873
+01:37:51,000 --> 01:37:57,000
+or reinstate a couple of new shorts in the
+portfolio and then beta would have been
+balanced.
+
+874
+01:37:57,000 --> 01:38:05,000
+Now, there are obviously an infinite
+number of scenarios that could happen in
+the real world that would represent a
+similar thing.
+
+875
+01:38:05,000 --> 01:38:11,000
+But the point here is really that it's
+very important to pay attention to your
+risk limits.
+
+876
+01:38:11,000 --> 01:38:20,000
+They're called preventative risk limits
+for a reason because they are a proactive
+rather than reactive approach to making
+sure losses are limited.
+
+877
+01:38:20,000 --> 01:38:29,000
+Gross exposure and leverage limits prevent
+excess losses because they control the
+amplification effects of leverage on
+downturns in portfolio value.
+
+878
+01:38:29,000 --> 01:38:39,000
+Net exposure and beta limits prevent
+excess losses because they limit how
+exposed our portfolios are to market moves
+that we may or may not get right.
+
+879
+01:38:39,000 --> 01:38:50,000
+And even if we do, as we saw in the
+previous example, we can then actually get
+whipsawed with our stops quite quickly and
+lose much more than we should.
+
+880
+01:38:50,000 --> 01:38:56,000
+Preventative risk management metrics like
+these and stops and targets are all there
+to help improve our trading performance.
+
+881
+01:38:56,000 --> 01:39:03,000
+And that will then be reflected in
+performance metrics like our R scores and
+our percent winning trades and many
+others.
+
+882
+01:39:03,000 --> 01:39:08,000
+I'm going to go into in a bit more detail
+in a couple of videos time.
+
+883
+01:39:08,000 --> 01:39:11,000
+So that's all I really wanted to cover in
+this video.
+
+884
+01:39:11,000 --> 01:39:16,000
+Hopefully that all makes sense and you
+guys can see the importance of PRM
+measures.
+
+885
+01:39:16,000 --> 01:39:26,000
+The key points to take away from this
+video are really firstly that you need to
+make sure you generate sensible stops and
+targets based on the volatility of assets
+that you're trading.
+
+886
+01:39:26,000 --> 01:39:31,000
+You want to set hard stops and soft
+targets to try and help remove the human
+biases that we tend to have.
+
+887
+01:39:31,000 --> 01:39:37,000
+However, we can't just pick a level of the
+stop and target and hope that it works.
+
+888
+01:39:37,000 --> 01:39:43,000
+And neither can we pick a one size fits
+all that we can use across all trades in
+all conditions.
+
+889
+01:39:43,000 --> 01:39:49,000
+You need to choose stops and targets based
+on the volatility of the underlying
+assets.
+
+890
+01:39:49,000 --> 01:39:55,000
+And all assets have different volatilities
+and those volatilities change with time as
+well.
+
+891
+01:39:55,000 --> 01:40:07,000
+And that's why you need to do volatility
+analyses like distribution of returns
+analysis and average true range percentage
+analysis so that you can figure out what
+numbers might work for different stocks at
+different times.
+
+892
+01:40:07,000 --> 01:40:17,000
+And remember guys, the stops and targets
+you choose for each position should find a
+balance that means that the stops aren't
+triggered too easily, but the targets are
+still attainable.
+
+893
+01:40:17,000 --> 01:40:31,000
+Now, despite these values being driven by
+hard data as you will have gathered from
+this video and Anton's presentation
+previously, there is definitely a
+discretionary component that you'll need
+to use in combination with that hard data.
+
+894
+01:40:31,000 --> 01:40:35,000
+The data itself doesn't provide clear cut
+answers.
+
+895
+01:40:35,000 --> 01:40:43,000
+You need to be able to think about what
+the data means and fine tune the outcomes
+on a discretionary basis if you think it's
+appropriate.
+
+896
+01:40:43,000 --> 01:40:59,000
+Now, on that note, whilst we're aiming for
+hard stops and soft targets in our
+individual positions, we also have to
+understand that market dynamics might
+dictate that adjustments need to be made
+to stop us being stopped out on multiple
+longs or shorts at the same time.
+
+897
+01:40:59,000 --> 01:41:15,000
+Again, the decision you make on how to
+handle that is discretionary, but one
+method that we looked at in this video is
+to split trades into long short pairs and
+monitor stops and targets on paired
+positions that are relatively market
+neutral.
+
+898
+01:41:15,000 --> 01:41:21,000
+To do that, you'll need to move to a more
+mental stop approach rather than
+programming them into your brokerage
+platform.
+
+899
+01:41:21,000 --> 01:41:37,000
+Because firstly, brokers don't support
+stops on spread positions, but secondly,
+when using individual and spread stops and
+targets in combination, there is no choice
+really, but to add in a discretionary
+component in the decision making process.
+
+900
+01:41:37,000 --> 01:41:46,000
+Now, I'm not trying to say here that all
+of this work just leads to discretionary
+choices that don't matter and don't help
+us with human biases. Far from it, in
+fact.
+
+901
+01:41:46,000 --> 01:41:58,000
+What I am trying to say is that we should
+be using volatility to remove human
+errors.
+
+902
+01:41:58,000 --> 01:42:03,000
+But equally, we have to be realistic that
+there will be one has to be used.
+
+903
+01:42:03,000 --> 01:42:13,000
+Otherwise, we might actually end up making
+huge mistakes and doing things like
+letting all of our shorts or some of our
+shorts and longs get stopped out all at
+once,
+
+904
+01:42:13,000 --> 01:42:17,000
+which then subsequently puts portfolio
+risk through the roof.
+
+905
+01:42:17,000 --> 01:42:24,000
+That was the scenario we played out
+towards the end of the video within the
+context of looking at other PRM risk
+metrics as well,
+
+906
+01:42:24,000 --> 01:42:29,000
+namely gross exposure limits, net exposure
+limits and portfolio beta limits.
+
+907
+01:42:29,000 --> 01:42:34,000
+Now, remember, guys, that these limits are
+there to help guide us and prevent
+thoughtless mistakes.
+
+908
+01:42:34,000 --> 01:42:42,000
+And the limits that you set for these
+metrics are, again, discretionary and
+should be based on your own trading and
+risk profile.
+
+909
+01:42:42,000 --> 01:42:52,000
+But hopefully, that being said, the ranges
+that I talked about in the scenario we
+discussed at the end there will give you a
+good idea of what some sensible numbers
+might be.
+
+910
+01:42:52,000 --> 01:42:56,000
+Anyway, guys, that's all I wanted to say
+on all of this stuff today.
+
+911
+01:42:56,000 --> 01:43:03,000
+I hope you guys enjoyed the video and I'll
+see you later in the video series where
+I'm going to talk about trading statistics
+and performance measures.
+
+912
+01:43:03,000 --> 01:43:11,000
+OK, guys, so welcome back to the desk.
+Let's have a quick recap there.
+
+913
+01:43:11,000 --> 01:43:20,000
+So what we looked at was trading
+psychology and risk management,
+preventative risk management measures.
+
+914
+01:43:20,000 --> 01:43:35,000
+So what do we look at first? We looked at
+human psychology and the tendencies of
+human psychology as they pertain to the
+skill set of money management.
+
+915
+01:43:35,000 --> 01:43:44,000
+OK, so we looked at how this works in
+practice with applying the distribution of
+returns analysis,
+
+916
+01:43:44,000 --> 01:43:59,000
+the average true range percentage
+calculations in setting sensible, hard
+stop losses and targets for individual
+stocks and also for spreads on stocks.
+
+917
+01:43:59,000 --> 01:44:11,000
+OK, so what we did, we discussed how to
+treat stops and targets also as part of an
+overall long short portfolio,
+
+918
+01:44:11,000 --> 01:44:28,000
+an overall long short stock portfolio. But
+it is important to remember always because
+we are long short portfolio managers and
+traders that we don't just apply blanket
+rule across the board.
+
+919
+01:44:28,000 --> 01:44:39,000
+We don't just apply all hard stops and
+targets to all positions in a long short
+portfolio all the time across the entire
+portfolio,
+
+920
+01:44:39,000 --> 01:44:44,000
+because we will obviously have correlation
+in the portfolio.
+
+921
+01:44:44,000 --> 01:44:55,000
+It is totally situational and there isn't
+a rule book that you can just buy and just
+put into place all of the rules that a
+book tells you.
+
+922
+01:44:55,000 --> 01:45:08,000
+OK, so for example, you can't go into a
+long short portfolio dynamic and say, for
+example, five out of six, five or six
+positions out of 10.
+
+923
+01:45:08,000 --> 01:45:27,000
+Have to all have hard stop losses and soft
+targets on them. It just doesn't work like
+that. OK, if you try to apply a rule book
+here, guys, where the rule applies to all
+stocks all the time in all situations,
+
+924
+01:45:27,000 --> 01:45:42,000
+you're just going to get whipsawed by the
+market because you're running a long short
+portfolio and the market's going to go up
+and down and you can't have a situation
+where you're just going to get stopped out
+on all your shorts when the market goes
+up.
+
+925
+01:45:42,000 --> 01:45:47,000
+And if the market reverses and goes down,
+you just get stopped out on all your
+longs.
+
+926
+01:45:47,000 --> 01:46:10,000
+So the best you can do here all the time
+is just take a balanced, cautious and
+realistic approach. OK, so Chris also in
+this video showed you how to work out the
+distribution of returns analysis and the
+ATRP in terms of the numbers in a
+spreadsheet.
+
+927
+01:46:10,000 --> 01:46:28,000
+So you can actually use this now as a
+template going forward to calculate
+sensible and well about taking a well
+balanced approach, a cautious approach,
+calculate sensible stock losses and
+realistic targets.
+
+928
+01:46:28,000 --> 01:46:43,000
+So he did this both for single stocks and
+also for spreads. So if you are going to
+run long short stock portfolios or in the
+rest of the world CFD positions, what's
+going to happen going forward?
+
+929
+01:46:43,000 --> 01:46:59,000
+You're going to be using these templates
+to make sure that you're calculating
+volatility properly and calculating
+sensible stop losses and realistic targets
+over the 20 to 60 day time horizon.
+
+930
+01:46:59,000 --> 01:47:08,000
+Now, Chris also went through some other
+metrics as well, preventative risk
+management metrics and also some
+performance metrics.
+
+931
+01:47:08,000 --> 01:47:27,000
+So Chris looked at targeting an R score of
+a minimum of 1.5. OK, on a win loss ratio
+over time, over many trades, a target of
+60 percent win rate and 40 percent loss
+rate.
+
+932
+01:47:27,000 --> 01:47:30,000
+Loss rate. These are achievable targets.
+
+933
+01:47:30,000 --> 01:47:40,000
+They are realistic and they are sensible
+targets as parameters that you should be
+aiming for over the long term.
+
+934
+01:47:40,000 --> 01:47:56,000
+And in terms of preventative risk
+management, what is actually happening
+here is if you're setting those targets,
+you are preventing yourself from ending up
+in a situation that over a long period of
+time, over many trades,
+
+935
+01:47:56,000 --> 01:48:06,000
+many trades becomes untenable. OK, so an R
+score minimum of 1.5 and a win loss rate
+of 60 40.
+
+936
+01:48:06,000 --> 01:48:22,000
+Now, Chris also looked at gross exposure
+limits. If you're in the United States,
+your gross exposure limits on a long short
+portfolio, a stock portfolio is going to
+be two times whatever the number is you
+have deposited in your account.
+
+937
+01:48:22,000 --> 01:48:25,000
+Two times that rate. OK, you don't have a
+choice.
+
+938
+01:48:25,000 --> 01:48:30,000
+OK, you don't have a choice. That's the
+limit that brokers set for you in the rest
+of the world.
+
+939
+01:48:30,000 --> 01:48:38,000
+When the rest of the world retail traders
+are trading CFDs, the exposure limit can
+be higher.
+
+940
+01:48:38,000 --> 01:48:52,000
+It can be up to five times what you have
+in your account. But we would say a
+sensible approach initially is to only go
+for a maximum of four times what you put
+in your account.
+
+941
+01:48:52,000 --> 01:48:59,000
+OK, so set a gross exposure limit that's
+sensible, please make sure you stick to
+it.
+
+942
+01:48:59,000 --> 01:49:17,000
+Also, Chris looked at beta adjusted net
+exposure limits and he mentioned that the
+kind of maximum is plus or minus 30% beta
+adjusted position exposure limit in your
+portfolio, your net exposure limit.
+
+943
+01:49:17,000 --> 01:49:37,000
+So try to stay within that if you start to
+see yourself getting close to 30% or above
+30%, it means you're bringing a lot of
+market bias into your portfolio and it
+means that you're not really necessarily
+getting the single stock bias, the
+idiosyncratic bias in your portfolio.
+
+944
+01:49:37,000 --> 01:49:43,000
+And if you go too far either way, then it
+essentially becomes a market bet.
+
+945
+01:49:43,000 --> 01:49:48,000
+You're not really using using the stocks
+to get a stock return.
+
+946
+01:49:48,000 --> 01:49:51,000
+You're using the stocks to get a market
+return.
+
+947
+01:49:51,000 --> 01:50:00,000
+OK, Chris also mentioned cash for cash net
+exposure and looked at a kind of plus or
+minus limit of maximum 50%.
+
+948
+01:50:01,000 --> 01:50:04,000
+You need to know where this is as well.
+
+949
+01:50:04,000 --> 01:50:11,000
+You can only really go up to that type of
+number if you really know what your beta
+adjusted net is.
+
+950
+01:50:11,000 --> 01:50:21,000
+So, for example, you can have a plus 45%
+cash for cash net exposure.
+
+951
+01:50:21,000 --> 01:50:28,000
+But in the background, the actual beta
+adjusted net exposure might, for example,
+be only 15%.
+
+952
+01:50:28,000 --> 01:50:29,000
+That's OK.
+
+953
+01:50:29,000 --> 01:50:35,000
+You just have to make sure that you know
+where both of them are and both of them
+are under control.
+
+954
+01:50:35,000 --> 01:50:40,000
+OK, so we're going to move on now to the
+next video.
+
+955
+01:50:40,000 --> 01:50:46,000
+And we're going to be exploring more
+aspects of psychology in trading.
+
+956
+01:50:46,000 --> 01:50:53,000
+And specifically, what we're going to be
+looking at is eliminating emotion and
+staying objective.
+
+957
+01:50:53,000 --> 01:51:04,000
+So previously, we've mentioned a few times
+about reactive risk management, RRM, and
+how it's impossible to teach that in a
+video series.
+
+958
+01:51:04,000 --> 01:51:19,000
+But what is possible with RRM is to give
+you some sort of perspective on how you
+should think about handling your positions
+when things start to pan out through the
+life of a trade.
+
+959
+01:51:19,000 --> 01:51:25,000
+So when a position becomes a winner, loser
+or a nothing position.
+
+960
+01:51:25,000 --> 01:51:30,000
+And what we call this is staying in
+motion.
+
+961
+01:51:30,000 --> 01:51:35,000
+So you need to start thinking about your
+trading account as a business.
+
+962
+01:51:35,000 --> 01:51:38,000
+So let's go over to the next video.
+
+963
+01:51:38,000 --> 01:51:50,000
+And Chris, after the next video, is
+actually going to give you spreadsheet
+classes, two spreadsheet classes on how to
+manage your trading account as a business.
+
+964
+01:51:50,000 --> 01:51:54,000
+And I'll see you back at the desk towards
+the end of the video series.
+
+965
+01:51:54,000 --> 01:51:55,000
+So let's go over to the next video series.

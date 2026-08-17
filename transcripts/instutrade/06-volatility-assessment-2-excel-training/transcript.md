@@ -1,0 +1,239 @@
+---
+course: instutrade
+lesson_id: "06"
+title: "Volatility Assessment 2, Excel Training"
+module: volatility-assessment
+module_title: "Volatility assessment"
+duration: 00:17:47
+duration_seconds: 1067.072
+source: "Anton Kreil - Professional Trading Masterclass Instutrade/6. Volatility Assessment 2, Excel Training.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  []
+---
+
+# 06 — Volatility Assessment 2, Excel Training
+
+Okay, so we're going to go over to Chris again now, and Chris is going to show you how to calculate your own expected or implied volatility index. So you can do this for multiple assets as long as you can get the options data. So let's go over to Chris, and Chris is going to show you how to do that now.
+
+In this video, I'm going to take you through an example of how you can calculate your own implied volatilities for any given asset. So the reason why looking at implied volatilities is useful is because it's our only four looking volatility indicator. And by that I mean it doesn't rely on historical price data like calculating a distribution of returns does or an average shoe range. So the way it works is we use a theoretical option pricing formula to back out implied volatilities from observed option prices in the market. Now before we get started, I'll make a quick note on the spreadsheet that accompanies this video. It's set up so that you can only calculate implied volatilities from call options on underlying assets that don't pay dividends within the lifetime of the option.
+
+So in this example, we're going to look at options on the S&P 500 to infer forward looking volatility for the S&P 500. So let's get started by opening up the implied vol spreadsheet.
+
+So once you open the spreadsheet it should look something like this. Now on the left hand side we have data inputs and these are the cells that we're going to be putting data into which the ones that are highlighted in light blue are the only ones we should need to edit on this spreadsheet. All the other cells are automated.
+
+So when we enter these inputs and an observed option price on the market we'll end up with an observed option price and a theoretical option price and what we do is we minimize the difference between the observed price and the theoretical price by changing the theoretical price towards the observed price.
+
+And we do that by changing the implied volatility in this cell. So the way we get our data inputs is through the resources section of the spreadsheet and we're looking at the S&P 500 in this example. So the resources section is set up to be able to find US data fairly easily.
+
+When you come to do your own implied volatility calculations you might want to add to this resource section using different countries websites. So let's get started by opening the CBOE website and finding options on the S&P 500.
+
+So if we just click on the CBOE link in the resources section of the spreadsheet and we go to quotes and data hover over that and left click on delayed quotes classic. We can use just standard delayed quotes but sometimes it's a bit temperamental so we're going to use delayed quotes classic in this example.
+
+And we put SPX into the ticker box down here and click submit so SPX is the ticker for the S&P 500 on the CBOE website.
+
+And the first thing we're going to note is that the spot price of the underlying asset the S&P 500 is displayed at the top right of this options data table.
+
+So that's 1574.57 and that's one of the inputs that we need for our spreadsheet so we'll go ahead and put that in now.
+
+So 1574.57 Yep.
+
+And next I'll explain how this table is set out.
+
+So we're only looking at call options remember so we're looking at the left hand side of this website of this web page and the columns so the calls column under the calls column we've got the contract names of all the option contracts.
+
+So we have the last sale which is the price of the option the last sale price and we've got volume and open interest columns which are indicators of liquidity and when we look at options and backing out implied volatilities from options we want to use a liquid contract because the price is more reliable.
+
+So as I'm doing this it's the 16th of April so I'm going to be looking at options in May with an expiry in May so I use this middle column to scroll down to May and as well as the date so 13th of May here it's got the strike price in the middle column as well.
+
+So we go to a May contract we're going to go find a contract that's got decent liquidity and has a strike price that is near the money so that means a strike price listed in the middle column that is close to the spot price of the underlying asset so the S&P 500.
+
+So we go down and we're going to find a May call option with a strike price of $1,570 so we go down to May $1,570 so this one and it's got decent liquidity so we click on the contract name on the left hand side and open this up and it gives us a few more details about this contract.
+
+So let's go ahead and put the next piece of data into our spreadsheet which is the strike price of the option we're looking at which is $1,570.
+
+So put in $1,570 into the next cell and the next input we'll put in is the expiry date of the option which is on this page that we've just navigated to and that is the 3rd of May 2013 as you can see this dates in American format.
+
+Now my spreadsheet at the moment is set up in the UK date format which will be the default format that you're supplied with.
+
+So I'll input this as 3rd of May 2013 and you can see this has automated the number of days from today until that date and automated the time to maturity in years that that represents which is then put into the theoretical option price.
+
+So before we continue let's point out you need to change the format of this cell of H5 the date cell to match the date format of your system clock.
+
+So if you're using American date format on your system you need to change the date format of this cell to American format.
+
+And if you don't the automation of the spreadsheet won't work so to change the format we right click on the cell go to format cells and then change the location here and press ok.
+
+I'm going to press cancel because mine's already set up as the UK format.
+
+So the last piece of data that we get from the CBOE website is the observed option price.
+
+So the observed option price was 18.93 we're going to use the last sale.
+
+So 18.93.
+
+So we put in 18.93 into cell E10.
+
+Now the last piece of data the last input we need to calculate our theoretical option price is the risk free interest rate.
+
+So because we're looking at the S&P 500 we're going to use US Treasury to find a risk free rate and we'll use a short term bond.
+
+So if we click on this link for the risk free rate go to the US Treasury website and we find a one month yield starting in April.
+
+So 0.07%.
+
+So we enter 0.07%.
+
+This cell's already set up to display itself in percentage so we just put in 0.07%.
+
+And that's our last piece of data.
+
+Now you can see that the theoretical option price differs from the observed option price.
+
+And that's because we're using an implied volatility or volatility of 0.1 which was the default for the spreadsheet when it opened.
+
+And what we're going to do is change this cell, change the theoretical option price by changing the volatility so that we can match the observed option price.
+
+And we do that by minimizing this cell which is just the difference between those two.
+
+So let's go ahead and do that.
+
+So if we navigate to data and then solver on the right hand side.
+
+Now if you don't already have solver installed as a plugin, there's a guide of how you can do that in the accompanying PDF.
+
+So you can go through that, install solver and then follow on from here.
+
+So let's click on solver.
+
+And if you already have solver installed, it should come up with the parameters already built in.
+
+So you don't need to press anything, you just click solve and it will work.
+
+If not, you'll need to input these cells.
+
+So we'll go through it anyway.
+
+So what we're doing is we're setting the objective which is cell F17 which is the difference between the theoretical and observed option price.
+
+And we're trying to minimize that by changing the cell F20 which is the volatility.
+
+So you can set up that yourself quite easily.
+
+And then we're going to click solve.
+
+And this is telling us, solver results is telling us that it's converged to a solution.
+
+So it's found an implied volatility.
+
+Occasionally, solver can be a bit temperamental.
+
+If it doesn't find a solution and you haven't made any other mistakes in the spreadsheet, have a go at just changing the volatility cell yourself.
+
+So this is the only time you should change a cell that isn't highlighted in light blue.
+
+So have a go at changing this volatility cell yourself so that this theoretical pricing cell just starts to move towards the market price.
+
+And then give solver another go and usually it works a second time around.
+
+So we just press ok.
+
+So this has given us a volatility of 0.12.
+
+Now what this cell represents is a measure of annualized volatility that's been calculated from an option price that we've observed in the market that's forward looking by 17 days.
+
+And it's scaled it up to annualized the implied volatility within that option.
+
+And so the first thing we can do is compare this to the VIX because the VIX gives us a gauge and understanding of the volatility of the S&P 500.
+
+So if we go to VIX and say the VIX volatility on the S&P 500.
+
+So this is sitting at 13.96 which is fairly close to our 12.2.
+
+So if you just times this figure by 100 then that's what it should give.
+
+So 12.2 against 13.6 to get it in terms of a percentage.
+
+So the reason there's a little bit of a discrepancy there is just the way we've calculated it compared to the way the VIX has calculated it.
+
+So we've just used one option price and worked out the implied volatility given that option price.
+
+The VIX uses a more complicated method where it averages many different implied volatilities given from a ton of different options with different strike prices.
+
+And also uses a nearer term and a longer term option expiry date.
+
+And if you want to know a little bit more about why this might be lower.
+
+Generally this will be lower than the VIX.
+
+That's because of something called the volatility smile which is mentioned in the accompanying PDF.
+
+And basically it shows that the implied volatility is calculated from options with strike prices that are near the money.
+
+Are generally lower than those further from the money.
+
+So when you've got the VIX which is calculated using an average of lots of different strike prices.
+
+It's going to be higher generally.
+
+Not by much but a little bit.
+
+Than our implied volatility of an option on the S&P 500 that's near the money.
+
+So let's think about how we're going to interpret this a little bit more.
+
+We know about standard deviation.
+
+So let's change this to a forward looking, a monthly forward looking standard deviation.
+
+So in cell F23 we'll use.
+
+We type equals F20 which is our implied volatility.
+
+Divided by square root.
+
+So SQRT brackets 12.
+
+So that will give us a monthly standard deviation.
+
+Calculated from an annualized volatility.
+
+And it's monthly because it's using the square root of 12.
+
+So that's 12 months in a year.
+
+So we're finding a monthly standard deviation.
+
+So if you want to find a 2 month standard deviation you just use 6 in these brackets here.
+
+So we go ahead and press enter.
+
+And we'll just format this cell to display itself in terms of a percentage.
+
+Okay.
+
+So this is showing a standard deviation of 3.52% for forward looking by a month.
+
+So what that means is if returns are normally distributed.
+
+Which is what we consider or what we look at when we look at the returns distribution of assets.
+
+If they're normally distributed we can say that 68% of the time within the next month.
+
+So we would expect the underlying assets of the S&P 500 to move by 3.5% up or down from the mean movement that it's had historically.
+
+And as well if you know how a normal distribution works we can scale that up.
+
+So 95% of the time there's a 95% probability that the S&P will move within 2 times the standard deviation up and down within the next month.
+
+So that's how we interpret this figure here.
+
+So you may want to go back to the returns distribution video and re-look at how normal distributions work.
+
+And remind yourself of returns distributions in general.
+
+And basically what this is allowing us to do is to realize our forward looking opportunities to trade the market.
+
+So as implied volatility goes up we can look to make profit from shorter term trades.
+
+And as it goes down we move more into a portfolio management stance and look at longer term time horizons.

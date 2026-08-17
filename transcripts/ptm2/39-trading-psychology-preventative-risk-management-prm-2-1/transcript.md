@@ -1,0 +1,1837 @@
+---
+course: ptm2
+lesson_id: "39"
+title: "Trading Psychology Preventative Risk Management PRM 2 1"
+module: psychology-and-prm
+module_title: "Psychology and preventative risk management"
+duration: 01:52:10
+duration_seconds: 6730.233
+source: "Video_39_Trading_Psychology_Preventative_Risk_Management_PRM_2_1.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  - "Documents/Video 39/ATRP_Stops_and_Targets.xlsx"
+  - "Documents/Video 39/Beta_Spreadsheet_Risk_limits.xlsx"
+  - "Documents/Video 39/DoR_Stops_and_Targets.xlsx"
+---
+
+# 39 — Trading Psychology Preventative Risk Management PRM 2 1
+
+Welcome guys to another spreadsheet class. And in this one, what we're going to do is build on the previous video where Anton talked about setting stops and targets for positions using distribution of returns and average true range percentage analyses.
+
+So the majority of this video is going to involve teaching you how to build a distribution of returns analysis and also an average true range percentage analysis in Excel, so that you can then estimate suitable stops and targets for assets that you're looking to trade.
+
+And we're going to start off by building a distribution of returns analysis from scratch.
+
+And then after that, we're going to move over to using some templates to conduct the rest of the analysis, which is a much faster method since a lot of the work is actually automated.
+
+And these templates will, of course, be available to you in the downloads folder for this video.
+
+And we have one spreadsheet template for distribution of returns or DOR analysis and one for an average true range percentage or ATRP analysis.
+
+Now, I'll show you how to use those templates properly later in the video.
+
+And I'm going to do that by using real examples to calculate potential stops and targets for individual assets in a similar way to how Anton did it in the previous video.
+
+We're also going to cover a short example of how you can create stops and targets for spreads as well.
+
+Now, as you guys know, creating stops and targets is an important aspect of preventative risk management.
+
+And that helps us achieve better performance as traders.
+
+But it isn't the only preventative risk management technique available.
+
+And I'm going to talk about some others towards the end of the video, which are namely setting portfolio limits on things like gross exposure, cash net exposure and beta adjusted net exposures.
+
+The reason why we employ all of these PRM measures is so that we achieve better trading performance, as I said.
+
+And there are a number of ways we can measure our performance, which incidentally, you will hear me talk about again in a few videos time.
+
+But the ones I want to mention now are R score targets and win loss rate targets.
+
+Now, you've heard about R scores before from previous presentations.
+
+And this is basically just a ratio of dollar profits to dollar losses from your realized P&L.
+
+And that is your your closed trades in your portfolio.
+
+A good target to hit for R scores is about one point five or higher.
+
+And a great R score is typically around two or above.
+
+Your win loss rate is fairly self-explanatory.
+
+That is just the percentage of winning versus losing trades that you make, again, based on your realized P&L or closed trades in your account.
+
+And a good win loss ratio is achieving something like 60 percent profitable trades and 40 percent loss making trades.
+
+Equally 55-45 as a ratio is OK.
+
+And 65-35 is really, really good over the long term.
+
+So in order to try and hit those targets, we use PRM techniques like stops and targets on individual trades.
+
+But also we set various portfolio limits as well.
+
+For example, portfolio gross exposure limits should be set based on a multiple of the net cash deposit or margin in our brokerage accounts.
+
+Now, depending on where you are in the world and what assets you're trading, those limits might change.
+
+And I'm going to talk about that more later.
+
+But if you're based in the US trading US stocks, that limit is legally enforced by brokers and capped at two times leverage.
+
+However, if you're in other parts of the world and have access to CFD instruments, then you'll be able to attain much higher leverage.
+
+And so in that case, you need to impose limits on yourself, which probably should be around four times leverage.
+
+Anything above that kind of starts to involve much too much risk.
+
+Limits should also be set for portfolio beta adjusted net exposure and also cash net exposure, as I talked about back in video 20.
+
+And these limits might range between plus and minus 30% for beta and plus and minus 50% for cash net exposure.
+
+And again, I'm going to talk about these limits towards the end of the video.
+
+Now, as I said, we're going to start this video by conducting the distribution of returns and average true range percentage analyses for the purposes of generating stops and targets.
+
+And I do realize that we've already covered distributions quite a bit in this series.
+
+So some of this material is going to feel very familiar.
+
+And on top of that, for those of you that have done the IPLT course, the ATRP analysis is also going to feel quite familiar as well.
+
+But where we are covering kind of completely new ground here is applying these two volatility analyses for the purposes of creating stops and targets for our positions.
+
+So there will be something new for everyone in this video, but also for many of you, there will be parts that serve as some solid revision of various concepts.
+
+OK, so with that being said, let's get started.
+
+Now, for the purposes of our volatility analyses in this video, we're going to assume that we've done all of our fundamental work to come up with a couple of solid stock ideas.
+
+And we're also going to assume that the timing is in place for those ideas.
+
+So all that we want to do now is figure out what reasonable stops and targets should be for our positions, given their historical volatility.
+
+And the trades that we're going to look at as examples here in this video are long ZNGA, so that's Zinger, and short ALGN, that's Align Technologies.
+
+And to begin with, I'm just going to use a distribution of returns analysis to come up with some stops and targets for these stocks.
+
+And then I'll move on to an average true range percentage analysis later.
+
+So let's look at Zinger stock first, and the first step here is going to be obtaining the price data that we need to in order to create our analysis.
+
+And I'm going to find price data for this stock on Yahoo Finance.
+
+Now the URL for Yahoo Finance is just finance.yahoo.com.
+
+So that's the website I'm going to navigate to.
+
+And then from there to find price data on Zinger, the ticker is ZNGA, remember, I'm just going to type that ticker into the search bar at the top here, and then click Zinger from the drop down menu.
+
+That takes me to the stock page for that stock.
+
+And then from there, we're going to go to the historical data tab.
+
+And in this page, what we want to do is choose the variables of the historical data that we want to look at and then download.
+
+So in this case, I want to basically look up the entire price history that we have available on Yahoo Finance for this stock.
+
+To do that, I'm just going to select this time period variable here and then select max.
+
+And I'm also going to choose to display and download those prices on a monthly frequency.
+
+So rather than daily here, I'm just going to click that drop down and then select monthly.
+
+From there, I'm then going to click apply, which will apply those variables that we've just chosen to this data set.
+
+And then I'm going to click on download.
+
+Now, for me, when I click download there on Yahoo Finance, it basically downloads as a CSV file, which can be opened in Excel as it will for you as well.
+
+But depending on what your operating system is and what web browser you're using, you will need to take different steps in order to open the file.
+
+But for me, as you can see here, there's a shortcut provided by Google Chrome.
+
+I'm using Windows with Google Chrome, by the way.
+
+So I can just click on that file shortcut there to open that price data in Excel.
+
+So with the price data open in Excel for this stock, there's a couple of things that I want to address and make changes to.
+
+Firstly, you can see that the dates in column A are currently showing as hash symbols.
+
+And that's just because the column width isn't large enough to display the dates properly.
+
+So I'm just going to expand the column width there so we can see the data more easily.
+
+Secondly, now we can see those dates in column A, you'll notice that their format is the day, followed by the month, followed by the year.
+
+And that might look odd to you if you're based in the US or elsewhere.
+
+But here in the UK, that is how we format our dates.
+
+That being said, to make things a little bit clearer, I'm just going to change the format of those dates.
+
+And then selecting format cells and choosing the custom category in the number tab, and then creating a format, a custom format by typing over the type box here with DD-MMM-YY.
+
+And once I press OK there, you'll see that that makes dates a little bit easier to read and less ambiguous, irrelevant of what kind of geography you're in.
+
+Now, there's a few more steps here that I want to take before starting to run some calculations.
+
+And at this stage, I just want to highlight to you guys that I will be going quite fast through some of this Excel work because you guys should have seen most, if not all of the techniques I'm going to use in this video in previous videos in the video series.
+
+However, if you are unsure at any point, don't panic.
+
+Just pause the video and use Google to find the answers.
+
+It should be pretty easy given you've got the video in front of you as well to work from.
+
+OK, so for a distribution of returns analysis, we don't actually need the volume data in column G.
+
+So I'm just going to delete that straight away.
+
+And next, as I've said in other videos, it's common practice in the finance industry to run time series in descending order.
+
+And what that means is basically sorting the price data we have here so that the most recent data is at the top of the sheet.
+
+To do that, we just add a filter to the data by selecting a column title and then going to data on the ribbon, followed by filter.
+
+And then we can select the filter menu in column A.
+
+That's our date column and just choose to sort that data from newest to oldest.
+
+Finally, I think before going any further, let's just rename this sheet that we're working as well, just to something more appropriate.
+
+So I'm going to right click the sheet name down here and just rename it to ZNGA monthly DOR, for example.
+
+So now we've prepared the data, we can move on to the second step, which is checking the data for any errors and running our initial returns calculations.
+
+Now, sometimes when you download data from Yahoo Finance or other sources, you'll find that the most recent data point shows an incomplete period.
+
+So, for example, here we might have seen the difference between the most recent two rows of price data didn't actually account for a full month.
+
+If something like that happens, what you'll need to do is remove the latest data entry because it's essential that our prices are split evenly through time.
+
+And as you can see here, that's what we have.
+
+The prices are displayed on the first of every month running back through history.
+
+So fortunately, everything looks good at this point and we can move on to running some calculations.
+
+Now, when doing a distribution of returns analysis for the purpose of generating stops and targets, it's useful to run a dual distribution analysis whereby we look at both close to close monthly returns and also high to low percentage differences.
+
+So with that being said, in column G, what we're going to do now is calculate close to close monthly returns.
+
+And in column H, we'll compute high to low monthly returns.
+
+So in column G, I'm going to head the column C-C returns.
+
+And in the cells below, I'm just going to calculate the returns for each month on a close to close price basis.
+
+So starting in cell two, the formula for F2, so the current close price divided by F3, the previous close price minus one.
+
+And that is just a simple percentage change formula from one period to the next that you guys should all be familiar with.
+
+Now, after typing that in, the formula can be copied down to the end of the data set by using the auto fill shortcut.
+
+So that is just double clicking the little green box in the bottom right of the formula cell that we just created.
+
+And just remember that whenever you do auto fill a formula down or across, you need to check the data at the end of the series.
+
+So here, for example, we if we scroll down to the bottom of the data set, you'll see that there is a div zero error in the final cell.
+
+And that just occurs because the formula that we're using is trying to reference price data that doesn't exist.
+
+So it's trying to reference price data in the cell below our final price data.
+
+So knowing that we can just remove that formula or delete the cell and move on to the next column.
+
+As I said, the next column is our high to low returns.
+
+And so I'm just going to title that column H hyphen L returns at the formula for this column.
+
+It's just going to calculate the percentage change from the low price during a given period or month in this case to the high price.
+
+So the formula that I'm going to type into cell H two here is equals C two divided by D two minus one.
+
+OK, obviously, after we put that in, we can also copy that formula down to the end of the series and check it.
+
+And as you can see, we don't have any errors here, so that's fine.
+
+So that's our return calculations done.
+
+And before we move on, let's just quickly change some formatting there.
+
+Firstly, I'm going to make the column titles bold.
+
+And then also let's change the format of these returns columns so that they're displayed as percentages to three decimal places, which is done simply by selecting the columns and right clicking in the selection, followed by choosing the percentage category and overwriting the specified decimal places to a value of three.
+
+So now that we have our returns calculations done and everything formatted to this point, the next step is to calculate our histogram tables and charts, which essentially tell you how many data points lie within specific intervals for both the close to close data and the high to low data as well.
+
+Now, in this video, I'm only going to walk you through building the close to close analysis since the steps required for the high to low analysis is basically all the same.
+
+And you guys will be able to practice that yourselves.
+
+Also, remember that later in the video, I'm going to show you how to use a template file to speed all of this stuff up.
+
+And in there, we will be looking at both close to close and high to low analysis.
+
+OK, so at this stage, you've already seen these distribution analyses a number of times in this series.
+
+So I won't go into too much detail here.
+
+But as a very quick reminder, they're useful to us because they allow us to visually assess the empirical probability of various ranges of values occurring.
+
+So in this case, we're looking at stock returns.
+
+And so we can learn about how an asset has behaved in the past, its volatility and hence both the risk and opportunity in trading that asset over the timeframe that we're analyzing.
+
+That's what we talked about in the IPLT course.
+
+Here, though, what we're going to do is use that same analysis with the end goal of generating suitable stops and targets for a stock position.
+
+So the first thing that we need to do when creating some histogram data is to define the intervals that we want to count the data within.
+
+Now, there's no hard and fast rules for creating creating exact histogram intervals.
+
+But two things to make sure of are firstly that the intervals encompass the vast majority of data, meaning the vast majority of our close to close returns.
+
+And secondly, that the intervals are evenly spaced.
+
+Now, in this example, I'm going to choose to start my intervals at minus 25% or minus 0.25 in decimal format and increase that value incrementally by 5% until we get to a value of plus 25% or plus 0.25.
+
+So to do that, in cell J3, I'm just going to title this column intervals and then in the cells below from J4 to J14, I'm going to write in the intervals I just outlined.
+
+So starting with a value of minus 0.25 in cell J3 and increasing that interval by 0.05, that's 5%, until we reach a finishing value of plus 0.25 in cell J14.
+
+So with those intervals defined, we can then use Excel's data analysis tool to count the number of data points, that is monthly returns, that lie within those intervals that we've just created.
+
+And to access Excel's data analysis tool pack, you can go to data on the ribbon and then select the data analysis button on the right hand side.
+
+Now, if you don't see that button, then it probably means that you don't have the add-in installed.
+
+And if that's the case, don't worry, you can install it really easily just by going to file, then options, then add-ins.
+
+Choose Excel add-ins and then make sure that both the analysis tool pack and analysis tool pack VBA checkboxes are ticked before pressing OK on the dialog box.
+
+And when you do that, you'll then see the data analysis button appear on the right hand side.
+
+So when clicking on the data analysis button, we are presented with a number of analysis tools to choose from.
+
+And at this stage, we want to choose the one that says histogram.
+
+And once we select that and press OK, you'll see another dialog box appear, which requires various user inputs.
+
+The first one is the input range.
+
+That's fairly easy. It's just the range of close to close returns that we see in column G.
+
+So we can just put the cursor in that box and then select all of that data.
+
+The next one is the bin range.
+
+Now, the bin range is just another name for our intervals.
+
+So in that box, you can just select cells J4 to J14, which are the intervals that we just created.
+
+And finally, we need to choose an output range.
+
+And to do that, I'm just going to select the output range option and choose cell K3 and then press OK.
+
+Now, as you can see here, that then writes two more columns of data into our Excel sheet.
+
+The first is a repeat of our intervals in column K.
+
+And that column is called bin.
+
+And the next one is called frequency in column L.
+
+And those values are actually counts of the number of close to close returns that have values that lie between the interval ranges that we have created.
+
+Now, it's not actually clear at this stage what ranges the analysis tool is actually using.
+
+So let me explain that to you now.
+
+The first value in cell L4 just counts the number of monthly returns that have a value of less than minus 0.25.
+
+The cell below counts the number of monthly returns that have a value that lies between minus 0.25 and minus 0.2, so minus 25% to minus 20%.
+
+The cell below that counts the number of monthly returns that have a value that lies between minus 0.2 and minus 0.15 and so on.
+
+All the way until we get to the final cell, cell L15, which counts the number of monthly returns that have a value of greater than 0.25, which is our maximum interval.
+
+Now, I know those ranges aren't very obvious based on just the numbers that we see here.
+
+So in the next column, what I suggest we do is write in some text that are clearer.
+
+And then in cell M4, I'm just going to type in the range that the count in cell L4.
+
+So that's going to be less than minus 25%.
+
+In the cell below that, the next range is between minus 25% and minus 20% and so on.
+
+So bear with me a moment here while I type in all of those text ranges we need just to make this data a little bit clearer.
+
+Okay, at this stage, I think it's a good time to step away from this histogram table just so that we can create some summary statistics for this data.
+
+For example, it'd be useful to have some values for centrality and also volatility amongst some other metrics as well.
+
+And a good tool that Excel has to generate these statistics quickly is the descriptive statistics tool with the data analysis tool pack.
+
+So just as with the histogram analysis tool, we find that by clicking on the data analysis button within the data tab on the ribbon.
+
+But this time we're going to navigate to descriptive statistics rather than histogram.
+
+Once that's selected, all we need to do here is enter the input range we're using again.
+
+So that's our monthly close to close returns in column G and then check the box called summary statistics.
+
+And this time I'm going to choose an output for this data which is going to be cell J17.
+
+From there, we can see a whole bunch of summary statistics have been populated in the sheet.
+
+Now, I'm not going to go through these in any detail because we've been through all of this stuff before in the money supply video.
+
+And you should also be familiar with it all from the basic statistics PDF in video three as well.
+
+Instead, all I'm going to do here is just tidy things up a little bit by increasing the column widths so that we can see the data more easily.
+
+And renaming the title in cell J17 to something like descriptive statistics.
+
+And then also reformatting some of these numbers to percentages or just numbers with less decimal places depending on what's appropriate statistic.
+
+Now, despite going through this step for creating some summary statistics, we don't actually need them particularly for figuring out our stops and targets.
+
+However, I did want to make sure that we covered that step just so that you know how to generate those statistics quickly in case you forgot from our previous videos.
+
+And when you're doing something like a volatility analysis, it will help you kind of assess the risk and opportunity in an asset.
+
+OK, so with that little descriptive statistics detour out of the way, let's get back to the histogram table that we were creating.
+
+So in column L, we have our frequency data that counts the absolute number of data points that fall within certain ranges.
+
+However, what would be more useful to us than the absolute values is if we had that same data displayed as a percentage of the total count.
+
+So for example, we know that two observations of monthly returns have values below minus 25%, but it would be nice to know what is that value as a percentage of the entire data set.
+
+Well, in the adjacent range.
+
+So to begin with here, the percentage and then that in cell 4, I'm going to create a frequency count as divided by K31.
+
+And that is just the count for the adjacent range divided by the total count in cell K31.
+
+And that cell reference is fixed so that we can copy the formula down to all the rest of the columns.
+
+Oh, sorry, all the rest of the cells in the column.
+
+So with that formula copied down, we have the values that we need.
+
+Let me quickly reformat these cells to display themselves as a percentage to two decimal places now.
+
+And then just as a reminder, with this data, it lets us say things like, historically speaking, in this example, on 2.52% of occasions, the stock has returned between minus 20% and minus 15% on a monthly basis.
+
+And from that sort of analysis, we can then choose to extrapolate those probabilities to the future.
+
+Now, unfortunately, the real future probabilities are likely to be different, but using historical data, as I've said in previous videos, is one of the best guides that we have.
+
+So moving on to the next column now, which is the cumulative frequency column.
+
+This data is just going to sum up the probabilities for each range seen in column N on an additive basis, starting from the lowest range that we have.
+
+Now, I'm going to start by titling this column C U M U frequency percentage.
+
+And then the first calculation in cell O4 is just going to be equal to cell N4.
+
+So that's just the lowest frequency percentage range that we have.
+
+But in the cell below that, we want to make sure that we add the probability for the new range to the cumulative probability that we have so far.
+
+So the formula there will be equals N5 plus O4.
+
+And then we can copy that formula down.
+
+Now, what this data allows us to say is things like, for example, here we've got 49.58% of the return.
+
+That has a value of 0% or below.
+
+And 89% of the returns data has a value of 15% or below.
+
+That's plus 15% or below.
+
+We can also turn these values on the head.
+
+So for example, we can say that if 89% of returns have a value of 15% or below, that also then means that 11% of the data has values of above 15%.
+
+So these two frequency percentage columns here, or probability columns, if you like, are very useful for helping us generate stops and targets.
+
+And those are the columns that you guys will have already basically seen and you'll recognize from Anton's presentation previously.
+
+And we're going to go into a bit more detail on these later in the video.
+
+So with the histogram table completed, the next stage we're going to tackle is all about presentation.
+
+And at the moment, the data that we've got here looks a bit dry and isn't really readable.
+
+So we're going to change all of that by improving the formatting of the cells that we have and also create a histogram chart so that we can visually analyze our data a bit more easily.
+
+Now, I'm not going to talk through all of the changes that I'm making here because I'm sure that you guys know how to format your data and charts by now.
+
+But basically, as you can see, I'm just adding a few borders and then making our column titles bold.
+
+Once that's done, we should move on to making a chart and we want that chart to basically display our frequency percentage column of data in the histogram table so that we can kind of visually interpret that data a little bit more easily.
+
+Now, to do that, I'm just going to go to select a blank cell beside the descriptive statistics table and then go to insert on the ribbon, followed by 2D column chart.
+
+Then to add data to that chart, I'm just going to right click inside the chart area and go to select data.
+
+And from there, I'm just going to choose to add a series.
+
+And the series name will just be the frequency percent title and the series values will be the range covering all of the related data.
+
+So from cells N4 to N15.
+
+Next, what I'm going to do is add some suitable labels.
+
+The label tells us what the ranges these frequency percentage values actually refer to.
+
+And this is where the text range column that we created earlier comes into play.
+
+So to do that, I'm going to select edit horizontal axis labels and then choose the axis label range, which is just M4 to cell M15.
+
+All right. So that's it really for our chart.
+
+It doesn't actually tell us anything new, but what it does do is give us a visual aid to understand what the distribution of returns looks like based on the frequency percentage data that we calculated earlier.
+
+Now, I'm not going to go into too much detail here with formatting this chart.
+
+But by all means, when you guys do this yourselves, you can go ahead and tidy it up a little bit.
+
+Whether you want to add some axis labels or whatever you want to do, that's up to you.
+
+But for now, we're just going to move on to the next step.
+
+So as far as building the analysis that's most important for creating good stops and targets, we're actually pretty much done here, at least with the close to close data.
+
+And as I said, we're going to be looking at the high to low data when we move over to the template file.
+
+That being said, a few more tables go into further detail regarding volatility analysis.
+
+But they aren't actually necessary purely for the purposes of creating stops and targets.
+
+So I'm going to skip building those from scratch at this point and just talk about them briefly when we move over to the template file.
+
+Now, as I said, having done the histogram table and chart, we've completed the majority of work required for creating stops and targets.
+
+But I do want to show you how you can go the extra mile here and improve your analysis slightly by looking at a full percentile analysis as well.
+
+Now, ultimately, this next part will show a very similar thing to the histogram data.
+
+But it will go into a little bit more detail since instead of considering broad ranges of data to count within, we can actually consider what values of returns correspond to every single percentile in the distribution if we wanted to.
+
+Now, you guys might remember this stuff from the money supply video earlier in the series.
+
+But I'm also going to show you again here just as a reminder.
+
+So as a reminder, percentiles are a statistical measure indicating the value below which a given percentage of observations lie.
+
+So for example, the 50th percentile will be below which 50% of all returns lie, which incidentally is also known as the median value.
+
+Equally, the 75th percentile is the returns value below which 75% of the data lies and so on.
+
+This way of looking at the data is basically the same as the cumulative frequency data that we calculated previously, except that because we aren't working from ranges of returns defined by intervals in a histogram, we can get a little bit more granular and just compute any percentile that we wish.
+
+And that is why I said previously that this percentile analysis can add a little bit more detail.
+
+So let's create this percentile analysis table now at the bottom here then.
+
+And I'm going to start by defining all the percentage ranks that we want to work out percentile scores for, meaning related returns values.
+
+So in cell J33 to J47, I'm going to type in percentiles from 1% to 15%.
+
+And those values are going to incrementally increase by 1% in each cell.
+
+And then in cells L33 to 47, I'm going to type in percentiles from 1% to 15%.
+
+I'm going to incrementally increase the percentiles by 5% starting from 20% in L33 and finishing at 80% in L45.
+
+And then in cells N33 to N47, I'm going to incrementally increase the percentiles by 1% again, starting from 85% and finishing at 99%.
+
+Next, in the adjacent cells to all of these ranks, we're going to work out the percentiles themselves.
+
+So starting in cell K33, the formula will just be equals percentile.inc.
+
+That's our function, Excel function that we're going to use.
+
+Open brackets, column G, and that's a fixed reference, comma, cell J33, and close brackets.
+
+Now, this formula works out the value of returns where less than or equal to 1% of the data lies.
+
+So notice with the formula that we're referencing column G, since that's where all of our returns data is.
+
+And cell J33 as well, because that is the percent rank that we're working out the percentile value for.
+
+Now, it's important to fix the reference for column G, as I said, so that we can copy across this formula easily in a few moments time.
+
+So from here, we can just copy the formula down to the next cell, checking out the value of returns where less than or equal to 2% of the data lies.
+
+And if we kind of continue with that logic, we can copy the formula all the way down to cell K47 now.
+
+And then to work out the sort of values for other percentage ranks, we can just copy across the formula that we created in cell K33 into cells M43 and O43 and auto fill them down for all the percentage ranks that we have.
+
+Finally, to finish off this table, I'm just going to add some outside borders to the three sections here.
+
+So the three sections are from cell ranges J33 to K47, from L33 to M47 and from N33 to O47.
+
+And then I'm also going to reformat all the percentiles that we've calculated.
+
+So they're displayed as percentages to two decimal places as well.
+
+Okay, guys, so now we've done all of that work to build out a distribution of returns.
+
+Hopefully that was just kind of a reminder for you guys, really.
+
+Let's move over to a template file that contains all the same analysis we just built, but also includes a high to low returns distribution as well, which as you can see here is on the right hand side.
+
+Now, as I said previously, you also notice a couple of extra tables that weren't covered in the previous section, and those are these ones here.
+
+So the analysis of positive and negative returns and also the standard deviation band analysis.
+
+Now, like I indicated at the time, these tables aren't really that important for generating stops and targets, which is why I didn't cover them.
+
+But they do provide some extra detail to help you understand the volatility and hence risk and opportunity of trading the asset that you're looking at.
+
+Now, I'm not going to go into any more analytical detail on that because it was covered extensively in the IPLT course.
+
+And I also talked about it a bit in the money supply video earlier in the series as well.
+
+So you guys can go back and check that if you need to.
+
+That being said, I did want to make sure we included it in the template file just so that you have it and you can use it if you wish.
+
+So let's have a look at this template properly now.
+
+And as you can see, I've already entered all of the price data we used previously for our ZNGA idea.
+
+And now we can start using that data to help us come up with a sensible stop and target.
+
+Now, a quick note here, guys, I'm going to go through how to update this template file and import new prices shortly using our align technology short example.
+
+But what I want to do first is get into the analysis of choosing a suitable stop and target for our long ZNGA idea first.
+
+Also, regarding the data that you can see here, it is all the same as in the sheet that I just manually built.
+
+It just looks slightly different because different intervals were used for the histogram.
+
+But I assure you that the underlying data is all the same.
+
+So the methodical way to go about this is firstly to figure out a stop value that means we're unlikely to get stopped out too easily based on the empirical data that we have here.
+
+So for example, if we look at the histogram data at the top of the sheet, we can see that in the cumulative frequency data column that around 25% of the time ZNGA stock has returned minus 6.86% or less.
+
+So that means conversely that 75% returned more than minus 6.86%.
+
+If we get our stop loss at 7% and I say 7% because it's 6.86 rounded to the nearest whole number, then we would have about a 75% chance of not being stopped out based on the empirical data that we have here.
+
+And that is perhaps a little tight for a stop loss, but let's go with it now as a starting point.
+
+Realistically, we probably want somewhere between a 70% to 85% chance of not being stopped out based on the historical data.
+
+Now, 7% is in that range for this stock, but it is at the tight end of that range.
+
+So given a stop loss of 7%, what does that make our target?
+
+Well, as Anton has talked about in the previous presentation, our target should be at least three times our stop on the positive side, which means that we're basically trying to construct the trade with a 1 to 3 risk reward ratio and a target R score of 3.
+
+So that means a 7% stop loss would equate to a 21% target.
+
+Next, before we accept those values, we need to try and understand what the likelihood is of achieving our target.
+
+So basically, what is our realistic opportunity here?
+
+Well, if we have a look back to the histogram table, we can see that only in about 4.2% of cases has the stock had a monthly return of greater than 22%.
+
+And that might not sound great, but there are a few things to consider here.
+
+Firstly, we're only looking at monthly data here.
+
+So to achieve our target of 21% over three months would be considerably more likely than over one month.
+
+For example, achieving around a sort of 7% or more return each month has around a 23% probability per month.
+
+Secondly, at the moment, we have only considered close to close data.
+
+Within each month, the high to low range will, of course, be larger than our close to close data.
+
+And if we look at the high to low data we have here, we can see that in around 97.5% of occurrences, the high to low range is greater than 7.56%.
+
+Now, that obviously includes months where the stock traded down, but it still shows a really decent high to low volatility.
+
+Thirdly, we should expect that given our fundamental analysis, we're moving these percentage probabilities slightly in our favor, meaning it's actually slightly more likely that the stock achieves returns in the direction we want, subject to the quality of our fundamental analysis, of course.
+
+Now, of course, we can't count on that, but it is something to bear in mind.
+
+So with the high to low returns distribution showing us that the high low volatility range is almost certain to be over 7% on a monthly basis, what can we actually take from that?
+
+Well, it means that we'll probably know if we're wrong quite quickly if the stock has a down month, and we'll probably be stopped out very quickly.
+
+Equally, though, it also means that there's ample opportunity for things to go right as well.
+
+If we've done our fundamental and technical work well, there is enough volatility in the stock to achieve our target.
+
+Now, I said a few moments ago that 7% might be a bit tight as a stop loss, given there's a 25% chance being stopped out on a monthly basis to close prices.
+
+And that's without any consideration of intramonth moves.
+
+We've also seen with the high to low data that 7% price differences from low to high occur very frequently.
+
+Given that, we might also consider refining our stops and targets slightly, and we can do that using the percentile tables quite easily.
+
+And one way to look at this is simply by saying that you want to have a stop that represents only a certain percent chance of being triggered on a close to close basis.
+
+So rather than a 25% chance, for example, what about a 20% chance or a 15% chance?
+
+If we look at our percentiles for the close to close data, we can look across from the various percentage ranks and see what percentile value that corresponds to.
+
+So, for example, if you want a stop that historically would have been triggered about 15% of times on a close to close basis, then you can look across from the 15th percentage rank and see a stop return of minus 10.14%.
+
+Equally, for a stop, we can see that the stop return would be minus 8.22%.
+
+Now, of course, increasing the size of the stops means increasing the size of the target on the other side, given our 1 to 3 ratio.
+
+So when you do this, there's basically two things to consider.
+
+Firstly, you need to make sure that there's enough room for the stock to move without being stopped out too easily.
+
+And secondly, you need to make sure there's enough volatility in the stock to reach your target, given the historical data.
+
+Now, balancing those two items should get you somewhere near an answer.
+
+And then beyond that, it kind of becomes a discretionary decision and your sort of risk appetite may play a part as well.
+
+Now, at this stage, you might also want to consider some technicals when setting stops and targets as well.
+
+But you do need to be a little bit careful with that.
+
+You can only kind of use that after you've determined a suitable range as defined by historical volatility.
+
+Now, you've got to remember that volatility is the driving factor and the most important consideration for setting stops and targets.
+
+So let's say we've chosen to go with an 8% stop and a 24% ZNGA analysis.
+
+The current price for the stock on the 22nd of December 2021 is 6.38.
+
+And if we enter those details into the orange cells at the bottom of this template file, then you will see that it then calculates what the price stop and target values are based on those inputs that we entered.
+
+So in this example here, the stop loss should be set at 5.87 and the target should be $7.91.
+
+OK, so that's some analysis done now for our long ZNGA position.
+
+Let's have a look now at our Align technology short.
+
+And by the way, guys, I've said this before, but I'll say it again.
+
+Any stocks that I'm talking about here are just examples.
+
+Don't be stupid and try to kind of use these ideas in your portfolio because there's no fundamental work that's gone into them.
+
+And by the time you watch this video, everything's going to have changed anyway.
+
+All right.
+
+So to generate stops and targets for Align technologies, I'm just going to use this template file again.
+
+And by doing so, you guys are going to see how easy it is to do this analysis quickly and successfully for any stock that you wish.
+
+So whenever you're using this template with new or updated data, the first step is to remove the old stale data that we already have here.
+
+And since we want to move on to calculating stops and targets for Align technologies, we no longer need the ZNGA data in this file.
+
+So to clear out all of that, you just need to select all of the data in columns A to F and then press delete on the keyboard and that will clear the contents of those cells.
+
+After that, you will see that almost all the formulas in this sheet return error values.
+
+You don't need to worry about that.
+
+It's just because there's no new data to work with in the file yet.
+
+So next, what we want to do is delete our stop and target inputs in the orange cells in cells K, 59, 60 and 62.
+
+And after that, the spreadsheet is ready to have new data imported into it.
+
+So this is the point at which we head over to Yahoo Finance again and obtain monthly price data, this time for Align Technologies.
+
+So let's see the Yahoo Finance website and navigating to the Align Technologies stock page by typing in the ticker ALGN into the search bar at the top and then selecting the historical data tab once we're on the Align Technologies stock page.
+
+From here, we want to choose the maximum time period possible again.
+
+And also we want to make sure that the frequency of data is set to monthly.
+
+After that, you can just click apply and download.
+
+And then with the data downloaded, you just need to navigate to the downloaded file and open it.
+
+And once it's open, you can see here we need to take a few of the same steps that we did before, which is expand the column width so that you can actually see the data and also sort that data from newest to oldest.
+
+So in descending order, you can do that by clicking any one of the column titles and then going to data on the ribbon and choosing filter.
+
+And after that, we use the date filter to sort the data.
+
+Now, here you can see what I was talking about before when I said sometimes when you download price data, it can show prices for incomplete periods.
+
+So what we need to do here is delete the most recent row since it doesn't represent a full month of data.
+
+And once that's done, we can copy columns A to F and paste them as values into columns A to F in the template file.
+
+To paste the data as values, just right click on column A and choose the one, two, three clipboard option from the paste options.
+
+And the reason why I'm telling you to paste the data as values is just so that we can keep all the formatting as it was in the template file in those columns, which just makes it look a bit neater.
+
+Now, at this stage, then you might see that all the calculation cells update properly and there's no longer any errors.
+
+However, we aren't quite done yet.
+
+Before moving on to some analysis, we need to make sure that our returns columns are updated properly.
+
+Remember, we've imported a completely different set of data that will be a different length to the prior one in the file.
+
+And so the returns formulas need to be adjusted so that they're the same length as the new series.
+
+To do that, just navigate to the bottom of those columns of data and see whether the formulas need to be either deleted or auto filled down to match the raw price data length.
+
+In this case, we can see that the raw data is a longer data set than our formulas are currently.
+
+So we need to auto fill these formulas down to the end of the data.
+
+And once that's done, remember to delete the final formula in column G, since it's always going to return an error for the reasons I mentioned earlier.
+
+And now that that's done, we're ready to move on to some analysis.
+
+So if we take a look at the data for aligned technologies quickly, it looks like it's more volatile at first sight than Zinger stock was since the range of monthly returns is a lot wider.
+
+That being said, though, we do have to bear in mind that the data set is a lot longer and therefore it's been traded through more economically volatile periods, such as the 2008 crisis, for example.
+
+Now, that's just something we want to take a mental note of. We don't want to adjust our data set.
+
+We want to use the full data set since it improves the statistical significance of our analysis.
+
+So let's have a look at what we have here.
+
+If we start with the close to close histogram, we can see that there's about an 83.6% chance of the stock returning up to 14.33% in a monthly period.
+
+Remember that we're assuming a short fundamental thesis for this stock.
+
+And so that means we can view those figures the other way around, meaning there's a 16.4% probability.
+
+That's 100% minus 83.6%.
+
+And there's a 16.4% probability of being stopped out using a 14.33% stop based on the empirical data that we have.
+
+Now, on the face of it, that seems like quite a wide stop.
+
+And if you think about the sort of probabilistic range that we like to see for stops, we typically want a 70 to 85% chance of not being stopped out based on the historical close to close data.
+
+So in this case, a 14.33% stop is right at the top end of that.
+
+For now, though, let's just assume that we're going to go with that 14% stop for this stock and see what everything looks like in terms of a target.
+
+Now, remember, our target is always based around a three times multiple of our stop.
+
+And so if we say our stop is 14%, then our target should be 42%.
+
+Based on our close to close data, there's only a 0.8% chance that Align Technologies has a return of less than minus 40.53% in a month.
+
+So this already feels like it's much too unlikely.
+
+But even if we ignore those probabilities for a moment and just use some common sense, does it really sound like it's a good idea to set an initial soft target that can only really be hit if the stock halves?
+
+It just doesn't really sound reasonable.
+
+So let's skip over to the percentile analysis now just to see if we can find something that works a bit better with the extra detail that we have here.
+
+Something that sticks out straight away here is the huge jumps in percentile values from the 85th percentage rank to the 80th and then to the 75th.
+
+And remember, we're looking at a short here.
+
+So for a stop that's only going to be triggered 25% of the time historically based on monthly close to close data, we need to look at the 75th percentage rank, not the 25th.
+
+So let's consider creating a stop around the 75th percentile then where the return value is about 10%.
+
+That would mean that our target is about 30% and if we look at the percentile table to find where minus 30% lies, it's somewhere between 2 and 3 in terms of percentage rank.
+
+That means that historically there's only been somewhere between 2 and 3% of months where the close to close price has hit our potential target within a month.
+
+If we assume we split the target over three months, we would have to see just under minus 10% returns each month.
+
+And again, if we look at the percentile table, there's only about a 15 to 20% chance of that happening on a given month.
+
+And it would need to happen three times in a row for us to kind of hit our target.
+
+That's obviously not impossible, but it is pretty difficult.
+
+Looking over to the high to low range distribution, there's a 10% price change or more between, the high and the low on around 90% of months, which sounds like it's a little bit more promising, but that does include up months as well as down months.
+
+And so you can kind of see here how short ideas become quite difficult to figure out suitable stops and targets for.
+
+But you do have to remember when you're going through this sort of analysis that you have to have shorts in the portfolio for balance and in order to make your portfolio suitable for all market conditions.
+
+So again, as I said previously, what this is going to come down to is starting with some hard numbers and just trying to play around with figures to see what can work in terms of a three to one reward to risk ratio, whilst also obtaining a plausible target and not having a stop that's going to be triggered too easily.
+
+So for this example, something more like the 70th or 75th percentage rank might work.
+
+That means a stop somewhere between 8.4 and 10%.
+
+So with that being said, let's enter some data into the orange cells here and get some price outputs for a stop and a target for this stock.
+
+And we're going to assume a 9% stop here that gives us a 27% target and the current price is 645 spot 89.
+
+And so when those figures are entered, you can see we get a stock value of 587 spot 76 and a target of 820 spot 28.
+
+Now there is something else that we need to consider when setting stops and targets for individual stocks.
+
+And that is that during strong bull markets, for example, all of your shorts can get stopped out purely because of market conditions.
+
+And in fact, this can of course happen in the reverse as well.
+
+And the thing to consider here is that just because the market might move significantly, we don't want to very quickly find ourselves in a situation where one side of our portfolio has been wiped out since that's going to result in a huge increase in portfolio risk.
+
+We need to maintain some balance in the portfolio based on our fundamental outlook.
+
+And this is where some of the limits that I'm going to mention later come into play.
+
+So in those circumstances, we have a few choices.
+
+Either we abandon or change our stops.
+
+We trade out and replace the ideas, or we use different stop measures to help navigate through the period.
+
+Now, abandoning stops entirely is obviously a bad idea since it allows human biases to run riot and changing them is viable, but only with plenty of market experience.
+
+Trading out and replacing the ideas is or can work well, but unless you have a lot of ideas ready in volatile conditions, it may not be possible to do that.
+
+And lastly, using different measures can be a little bit complex.
+
+But that being said, let me explore that last option with you quickly.
+
+One of the ways to deal with the issue of market triggered stops for individual positions is to combine ideas into long short pairs or spreads and create stops and targets around the pair of trades rather than the individual trades.
+
+That mitigates the market risk effect on stops somewhat since market moves that affect one position in the pair should have the opposite effect in the opposing position in terms of profit and loss.
+
+Now, Anton briefly mentioned a way you can do this by looking at spreads and went through a simple example that works when you assume an equal number of shares on each side of the spread.
+
+What I want to do here is build on that slightly with a more robust template for calculating stops and targets for spreads where you can choose the exposure that you're taking to each side of the spread and work out reasonable stops and targets from there.
+
+Now, when I go through this stuff, something to bear in mind is that spread stops and targets are not a direct substitute for individual trade stops and targets.
+
+They should be used in combination because they can help in certain circumstances, as I mentioned previously.
+
+So here is the spread template that you can use to conduct this analysis.
+
+Now, as you can see, there are a few structural differences with this sheet compared to the single asset distribution of returns template.
+
+Firstly, we need two sets of prices for both the long and short side of the trade.
+
+And you can see here I've got Zinger adjusted closed prices in column B, which is where the prices of the long side of the trade should go.
+
+And I've got the align prices in or align technology prices in column C, where the short side of the trade goes.
+
+From those two columns of price data, returns are calculated for each stock in columns D and E.
+
+And then a weighted return is calculated for this mini portfolio of two stocks in column A.
+
+Now, you'll notice that I don't have any open high or low price data columns for this template because it's unnecessary since we cannot calculate high to low price changes for spread data.
+
+So we have to use close to close data only.
+
+Now, in column P, there are a few orange cells that require our user input.
+
+Firstly, in cells P2 and P3, you need to fill in the gross exposures for the long and short position respectively.
+
+In this example, I've set the exposure to $10,000 on each side.
+
+And from those figures, the percentage weighting is worked out in the cells below.
+
+Those values are then used to generate constantly weighted portfolio returns or spread returns in column F.
+
+And those returns are then the returns used in our distribution analysis.
+
+And that in turn helps us find mental stops and targets for the spread position in dollar terms.
+
+Now, one thing to consider here with this template is that when you come to pasting adjusted close prices for your long and short positions in columns B and C respectively, you need to make sure that obviously the dates align.
+
+So that means the dates are correct in column A for both sets of prices.
+
+And you also need to make sure that the length of the data set is the same for both stocks, which basically means you can only use a historical period that is common to both stocks, both positions.
+
+And that's going to result in basically using the dates from whichever stock has the shorter data set.
+
+So let's have a look at this data now and figure out what might be a reasonable mental stop and target for this pairs trade.
+
+If we look at the histogram data and the summary statistics that we have, the first thing that jumps out is that this trade as a pair is much less volatile than the two component parts, which makes sense because we're removing lots of market volatility by having a long and a short position.
+
+How do we know it's less volatile?
+
+Well, we can see pretty clearly from the histogram that it's very, very rare for this spread to return anything outside of plus or minus 15%.
+
+And we can also see that the standard deviation is less than half of that which we had for the other stocks.
+
+So let's have a look at our results now and see in terms of creating stops and targets.
+
+If we were to use a stop that was historically triggered 30% of the time, the value would be 4.3%, 4.36% to be precise.
+
+If we were to use a stop that was historically triggered 15% of the time, the value would be 7.39%.
+
+So that is the kind of range that we're working within.
+
+And let's say that for now we settle on a 6% stop.
+
+That means our target should be three times that.
+
+So that's 18%.
+
+And let's have a think about how that adds up.
+
+Well, we can see that this spread has never actually achieved that within a monthly period.
+
+So that's not a great start.
+
+But we also need to be aware of the fact that historically this trade has performed very poorly.
+
+But that doesn't mean that it's going to going forward.
+
+Again, this comes back to the future percentages hopefully shifting in a beneficial way to you as a trader, because you've done good fundamental work.
+
+The other thing to consider here is that just because the target has never been attained in a month, doesn't mean that it won't be over three months.
+
+If we say that we need to obtain about a 5% to 6% return a month, then each month based on historical close to close data, there's about a 15% chance of that happening.
+
+Now, obviously, that isn't great statistically.
+
+But you've also got to remember that we can't generate high to low ranges here.
+
+And so the actual volatility range covered might be quite a bit higher.
+
+And we just can't see that.
+
+As I've said a few times already, this does come back to a discretionary decision that's based upon probabilistic raw data.
+
+Only you can really decide what might work.
+
+What we're trying to do here is give you the numerical tools to help you make that decision.
+
+So let's just say for this example, we're going to stick with a 6% stop and an 18% target, because over the next three months, we think that there's going to be enough volatility for that target to be attained.
+
+And we don't want to move the stop any lower because we want to give the pair room to move.
+
+If we enter those values in salespeople respectively, then we can see a dollar stop loss of $1,200 and a dollar target of $3,600.
+
+What does that mean?
+
+Well, it means that the mental stop loss you've chosen equates to a loss of $1,200 over the two positions.
+
+And at that point, you should be cutting both positions.
+
+And this might happen when one position makes $500 and one loses $1,700 for example.
+
+It might happen when both lose $600.
+
+It doesn't really matter.
+
+The point is that the dollar stop loss is a cumulative stop over the two positions.
+
+The same is true for the target and the positions can be scaled into when the soft target is reached and the stop is then shifted upwards.
+
+So let's think about an example of that.
+
+We reach our target here if the cumulative P&L over the two trades gets to plus $3,600.
+
+Let's say that happens during a strong bull market run and that figure is reached through a $2 loss and a $3,800 win from the long.
+
+If that's the case, and I'm ignoring any deposits or withdrawals here, then our short exposure will be $10,200 after a $200 loss.
+
+Because remember, the short has to increase in price and therefore exposure in order to generate a loss.
+
+And our long exposure will be $13,800 since a $3,800 profit on the long side increases exposure by $3,800.
+
+So the target has been hit.
+
+What happens next?
+
+Well, there are basically two decisions to make here.
+
+Firstly, do you want to add to the position?
+
+And by position here, I mean the entire long short pair.
+
+Generally, you want to add to your winners, of course, subject to position, size and constraints.
+
+And so that leads us to the second decision, which is if you are going to add to the position, in what proportion do you want to do it?
+
+If we update the gross exposure sales for the long and short side to $13,800 and $10,200 respectively, then you can see the weighting of the significantly.
+
+There's now a 57.5% weighting on the long side and a 42.5% weighting on the short side.
+
+Now, let's say, for example, that we want to increase the overall position sizes because the trade is working.
+
+And we're looking to add another $10,000 gross exposure across the two trades.
+
+You might want to realign the weightings to 50% each in that case, or you might want to overweight one side of the trade.
+
+There are lots of reasons why you might want to do either of those.
+
+And those decisions are going to be kind of up to you and the sort of portfolio that you're running and the balance that you want in your portfolio.
+
+As an example, though, I'm going to assume here that we think the long side of the trade is doing well.
+
+And also the short side isn't doing too badly, considering such a strong bull market backdrop.
+
+Also, let's assume that if these positions aren't reasonably balanced in terms of dollar exposure terms, then it's detrimental to our portfolio construction and potentially exceeds preventative risk limits for beta and net exposure.
+
+So, for those reasons, in this example, we're going to rebalance this pair to be equally weighted.
+
+Now, at the moment, given the long side has increased in exposure to $13,800 and the short side has increased to an exposure of $10,200, we have a current gross exposure of $24,000 over the pair.
+
+If we add $10,000, then we should have $34,000 over the pair.
+
+And if it's equally weighted in cash terms, then both Align Technologies and Zinger should have a $17,000 exposure each.
+
+So if we enter those values into cells P2 and P3 and we decide to keep the stock percent the same at this point, then our stock from this point is minus $2,040.
+
+But you need to remember that this value is applied on top of the previous P&L we had, which was plus $3,600.
+
+So that means that the actual running stop for this pairs trade would be plus $1,560.
+
+Now, hopefully that makes sense to you guys.
+
+And by the way, if you did decide to change the weightings when you added exposure to the trades, then that would also change the historical spread returns.
+
+And you'd need to reassess to see if the same stock and target percentages were suitable.
+
+They would then be applied on top of the prior profit.
+
+So for example, if to some reason your new stock became 10%, which would be a $3,400 loss on a $34,000 exposure pair.
+
+Then your mental stock loss would actually be $200 in P&L, which is equal to the $3,600 original profit from reaching our first soft target minus $3,400, which is the new stock.
+
+Again, I hope that makes sense to you guys.
+
+I just want to give you all the sort of options and various ways to handle these scenarios and you guys can kind of decide what works for you.
+
+Now, there are a couple of things to consider here before I'm going to move on to looking at the average true range percentage analysis, which is firstly, when you work out stops and targets for spreads, they have to just be mental notes because you can't program them into your brokerage platform.
+
+And secondly, the spread calculations should be looked at in combination with the individual stops and targets that you have for positions.
+
+You want to be using the information in a combination in order to make well-informed decision individual position stops and targets.
+
+It's sometimes better also to keep those as mental or manual stops rather than automated ones through your brokerage platform, because it will then allow you to be flexible in scenarios like I've just described.
+
+Now, whether you run manual or automated stops on individual positions or a mixture, it's up to you.
+
+I'm just pointing out some considerations at this point.
+
+Okay, guys, let's move on to briefly talking through an average true range percentage or ATRP for short volatility analysis, which is another way you guys can generate stops and targets for individual stocks.
+
+This method is going to be quite a bit quicker than doing a distribution of returns analysis.
+
+But equally, it doesn't really provide as much detail either.
+
+Now, in this section, I'm not going to actually show you how to build an ATRP sheet from scratch.
+
+And instead, I'm just going to jump straight into these template sheets here and talk you through how you can use them.
+
+If you are interested in generating an ATRP from scratch, then you'll be able to see that in the IPLT course.
+
+And you can, of course, have a look at how I've built these templates and backward engineer them if you want to do so.
+
+And it really isn't that difficult to do that.
+
+And it will probably only take you about 30 minutes to figure it all out.
+
+So as you can see in the spreadsheet here, I've got two sheets that calculate ATRP values using weekly and quarterly data respectively.
+
+As Anton said in the previous video, weekly ATRP values provide a good guide for stock losses and quarterly ATRP values provide good estimates for targets.
+
+And this is just something really that when you've been trading for a long time, you just come to understand through practice rather than something that can be proven mathematically or anything like that.
+
+Now, before we look at these sheets in any detail, let me briefly describe what the average true range percentage calculation is trying to capture.
+
+Now, I think it will be fairly clear to you guys that having an understanding of the high to low range for an asset can be a useful metric for understanding volatility because it tries to capture the maximum price movement over a certain length of period.
+
+Now, I say it tries to measure the maximum price movement because it doesn't always succeed.
+
+There are times when stocks can move significantly in the pre or post market and these price movements are ignored by a simple high to low range.
+
+So all that the true range percentage calculation does is adjust for that.
+
+So it finds the actual maximum price movement over a period, including any moves that happen outside of market hours.
+
+The average true range percentage is then a simple average of those true range percentages over X number of periods.
+
+So let's look at the weekly ATRP template sheet now to try and make that a little bit clearer.
+
+OK, so in the left hand columns, what I have here is weekly price data for align technologies going back to or from, I should say, December the 20th, 2021.
+
+And as we had in the distribution of returns template, you can see the open high close prices in columns B to F.
+
+In column G, we have a calculation column, which simply the high to low range for each period.
+
+So each week in this case.
+
+And in column H, we have the true range percentage calculation for each week.
+
+And if we take a look at the formula in cell H2 to see what it looks like, then you get this.
+
+Now, this formula might look complicated, but it's really not.
+
+Remember, the goal of the true range is to find the maximum range over a period inclusive of any out of hours market moves.
+
+So you can see that the first part of the formula here is trying to find the maximum between three values.
+
+The first value is whatever value we see in the adjacent cell in column G.
+
+So that's just our intra period high to low range.
+
+The second value is the high of the current period minus the close of the previous period in its absolute format.
+
+Using the close of the previous periods makes sure that any out of hours moves are accounted for within the calculation.
+
+And then this formula is basically just taking the maximum range from the intra period high to low, the previous close to the low and the previous close to the high.
+
+That yields a maximum true range and then to express that as a percentage, we just divide it by the current periods open, which is what the last part of the formula does.
+
+Now, hopefully that makes sense to you guys.
+
+But if not, just take some time to look at it again when you download this file.
+
+So after we've generated a time series of true range percentage values in column H, we can then take averages over various periods of time, which I've done over here in this box to the right hand side.
+
+The reason why we take averages is so that we don't rely on a single data point to come up with an analytical conclusion, like a stop or target.
+
+And I've chosen to take averages over various periods here so that it gives us an insight into how the average data points are.
+
+And that's the reason why we use an ATRP for this stock as information for us to use in terms of picking an appropriate bucket.
+
+So what this data here is saying is that Align Technologies has an ATRP value of 9% over the last month, which is four weeks of data.
+
+It has an ATRP of 8.42% over the last quarter, which is the last 13 weeks of data and so on.
+
+As I've mentioned before, when we look at data like this, it's all about finding a balance between using more recent data and enough data that the conclusions are statistically significant.
+
+The balance is obviously up to you, but what I would say is that for this stock, it looks like the weekly ATRP has been about 8% to 10% through almost its entire trading history.
+
+And so picking a stock value in that range is probably pretty sensible.
+
+Now, what you guys might remember is that when we looked at this same stock using the DOR analysis, we actually got to exactly the same conclusion of about an 8% to 10% stop being reasonable for this stock.
+
+So we know we're on the right track here. And like I said, we know this works from experience.
+
+But if in doubt, you can, of course, always double check the numbers against each other using both the DOR and ATRP analysis.
+
+Let's have a quick look at the quarterly ATRP values now for aligned technologies.
+
+All the analysis is the same here, but I just want to talk through the ATRP values that we're seeing quickly.
+
+So firstly, with quarterly data, we clearly have much higher ATRP numbers.
+
+That should be obvious since the volatility is bound to be larger over longer periods of time.
+
+We also have quite a bit more variation in the results over different timeframes.
+
+But that's actually largely due to mostly the one year quarterly ATRP value, which only uses four data points.
+
+And so we can sort of disregard that as fairly unreliable since there are only four periods in the calculation.
+
+That being said, some of these other values are being skewed a bit by including periods of exceptional market volatility, such as in the 2020.
+
+And if we think about what our stop range was based on the weekly ATRP values that we had in the previous sheet, then we're looking in the range of eight to 10%.
+
+So given that we want a target that is around three, three times that figure.
+
+So about 24% to 30%.
+
+And what we can ask ourselves is, does that add up with what we're seeing here in the quarterly ATRPs?
+
+And I would say in this case, sort of.
+
+If you were to calculate ATRPs on a quarterly basis without including historical market crashes, then it certainly would.
+
+But we don't want to do that because it biases the data.
+
+So what we have then is a weekly ATRP suggesting a stop somewhere in the range of eight to 10%.
+
+And a quarterly ATRP suggesting a target of somewhere in the range of 35 to 40%.
+
+Now there are many ways you could approach this situation using the data available to come up with an answer.
+
+And my general advice here is that as long as you're using common sense and logic, the answer you come up with will be valid.
+
+One way you could look at this data is to simply take some kind of middle ground.
+
+So what if we were to take the top end of the stop and the bottom end of the target?
+
+That would mean a stop of 10% and a target of 35%.
+
+Does that still provide at least a three times ratio?
+
+Yes.
+
+So maybe that's a reasonable solution to consider.
+
+Another way you could look at this is that you might say the current market environment isn't applicable to historic periods of huge volatility.
+
+And therefore you don't think the target generated by the quarterly ATRP should be skewed as high as it is.
+
+One way to tackle that is simply by using a three times stop value that you're happy with and ignoring the quarterly data.
+
+And another is calculating what a quarterly value might look like when you don't include those historic market crashes.
+
+You've got to be quite careful if you do that.
+
+Typically I advise using as much data as possible, like I said, for statistical significance.
+
+But what I'm trying to get across to you guys is that there are a number of ways to approach this problem.
+
+Don't get too bogged down in the details.
+
+Just make sure that you choose something sensible and that it's based on the volatility of the stock and then you stick to it.
+
+So now let's discuss how you can actually use these ATRP templates in practice, meaning how can you actually import new or different stock data into them and then go through an analysis.
+
+So I'm going to start with the weekly template first, and this one's really simple.
+
+All you need to do here to update the data is remove all the current data you see in columns A to F by selecting it and pressing delete on the keyboard and then replacing that data with new price data downloaded from Yahoo Finance or another appropriate source.
+
+So let's do that now for our long Zinger position.
+
+As before, to obtain Zinger price data, I'm just going to head over to Yahoo Finance and then use the search bar at the top to navigate to the Zinger stock page.
+
+From there, within the historical data tab, we want weekly prices this time and again, the entire price history available.
+
+After that, you can just click apply and download and then use the downloaded file in Excel.
+
+And at this point, before importing the data into our template, there's a couple of adjustments that we need to make.
+
+Firstly, I'm going to make the date column slightly wider by clicking and dragging the intersection of column A and B to the right slightly.
+
+Then we need to arrange this data in descending order, meaning the latest weekly data is displayed at the top of the sheet.
+
+And as we've done before to do that, you just select any one of the column titles and then go to data on the ribbon followed by filter.
+
+And then using the filter option in column A, the date column, you just choose to sort the data from newest to oldest.
+
+Now, at this point, you might see an incomplete period of data at the top of the sheet.
+
+And to deal with that, you can just delete it.
+
+Fortunately, here, I don't have to deal with that.
+
+And so now the data is ready to copy across to our template.
+
+But remember, we don't need the volume column.
+
+So we're only going to copy across columns A to F.
+
+To do that, I'm just selecting those columns and pressing control C on the keyboard to copy the data.
+
+And then I'm going to open the weekly ATRP template and paste this data into the sheet.
+
+Now, we need to make sure that this data is pasted as values in order to keep all the original formatting the same.
+
+So here I'm going to right click column A and choose to paste as values using the one, two, three clipboard option.
+
+So with our Zinger data in the file, we just need to double check the calculation columns and make sure the series of formulas that we see in columns G and H are the correct length for our new price set price data set.
+
+Column G needs to be the same length as the price data.
+
+And so in this case, we want to delete these redundant formulas from rows 526 down.
+
+The reason why these formulas are there, remember, is just because the previous stock in the template, which was the line technologies, had a much longer data set.
+
+In column H, we do almost exactly the same thing.
+
+But this time we need to remove the contents of the cells from row 525 down instead of 526.
+
+The reason being that the true range percentage formulas in column H require price data from the previous period.
+
+And so the time series has to be one period shorter.
+
+If we take a look at the ATRP values in our summary box on the right hand side for this stock, we can see again that we get to a fairly similar conclusion to that which we got with the DOR analysis for this stock.
+
+So the range we're looking at here is somewhere between 7% and 9%.
+
+And previously with the DOR analysis, we assumed a stock of 8% was reasonable.
+
+And that fits in perfectly again with our kind of range here.
+
+However, we do get an interesting bit of extra detail here that we kind of didn't see in the DOR analysis.
+
+And that is that within the last quarter or so, the volatility in this stock has been going quite a bit higher based on ATRP values.
+
+Now, a quarter of data isn't really enough to make us shift our analysis for what value of stock we use.
+
+But what it does provide is a little more confidence that we might be getting into this stock at the right time since volatility is trending up.
+
+Okay, so let's go over to the quarterly template now.
+
+And this one does take just a little bit more work in order to import prices correctly.
+
+So to begin with, just as with the weekly ATRP template, when you're looking to analyze updated or different stock data entirely, the first thing to do with this is delete the data already in the template sheet.
+
+Again, that means selecting columns A to F and pressing delete on the keyboard to delete the contents of those cells.
+
+Now, in order to import quarterly price data, we're actually going to have to download monthly price data and perform a number of manipulations in order to get it ready to use.
+
+So I'm going to go through our long Zinger example here to show you how to do this.
+
+Firstly, we need to head back to Yahoo Finance and this time, instead of downloading weekly price data for the stock we want, we're going to download monthly prices.
+
+So here, all I'm doing is from the same page we were on before, just changing the frequency to monthly from weekly and then making sure we're still looking at the maximum time period available and then clicking apply and downloading the data.
+
+After that, I'm just going to open the file again.
+
+And to begin with, I'm just going to do exactly the same as we did with our weekly data, which was firstly to expand the date column width.
+
+And secondly, to add a filter so that we can sort the dates from the newest to oldest, meaning in descending order.
+
+With that done, we again want to make sure that any incomplete periods are removed.
+
+But here again, we don't have an issue with that.
+
+So at this stage, what we actually need to do is perform a manipulation on our open, high and low columns of data, which is going to help us transform the data from monthly to quarterly values.
+
+So in columns H, I and J, I'm just going to head the columns open, high and low respectively.
+
+The open is going to be recalculated for each month as the open from two months before.
+
+So in cell H2, the formula will just be equals B4.
+
+The high is going to be recalculated for the latest three months of data.
+
+So the formula in cell I2 will be equals max open brackets C2 to C4.
+
+And finally, the new low is going to be the minimum of the latest three months of data.
+
+And so the formula in cell J2 will be equals min open brackets D2 to D4.
+
+Now from there, all of these formulas can just be copied down to the end of the price series.
+
+And then all you need to do is just double check at the bottom of these series that the formulas are working correctly and that we don't have any errors or weird values.
+
+Now you can see here that the final two open prices are displaying zero values.
+
+And that's because the formulas that we're using in those cells are trying to reference prices that don't exist.
+
+And so those two values can just be deleted.
+
+Okay, so the formulas all look good now.
+
+And so we're ready to update the open high and low values we see in columns B2D with these new numbers.
+
+To do that, I'm just going to copy columns H2J and paste them as values into columns B2D.
+
+And then having done that, we can actually delete columns H2J entirely.
+
+All right, so we're almost there now.
+
+There's just one more manipulation to make before we copy this data into our quarterly template.
+
+And that is that we need to remove some of this monthly data so that we're only left with quarterly data points.
+
+Now, I think the easiest way to do that is to filter out unwanted months of the year.
+
+So basically, we're only left with four quarters in each annual period.
+
+Now, to do that, I'm going to use a formula in column H, which just returns a number value for each month corresponding to the date seen in column A.
+
+And the formula we can use for that, which I'm going to type here into cell H2, is equals month, open brackets, then a cell reference, the cell reference for this one is going to be A2.
+
+Now, as you can see, when that formula is entered, it returns a value of 12, the 12th month in the year, which is December.
+
+And that is because that's the month that's defined in the corresponding date cell, so cell A2.
+
+So with that formula entered, we can copy it down.
+
+And now, since we have all of the month values defined in a new column, what we can do is filter that column for the months of the year that we want to remove.
+
+So that we're only left with quarterly data points.
+
+Now, to do that, we need to reapply a filter to the headings in this table and then select the filter in our new column, column H.
+
+And from there, what we can do is uncheck all of the months and then recheck just the months that we want to remove.
+
+So, for example, if I were to check the value of one here and press OK, the data table would only show price data from January in each year, and then I could choose to delete that data.
+
+So in this case, what we want to do is make sure we keep the latest data available, which is in December.
+
+So what I'm going to do here is check all of the data for the months of November and October, and then leave September since September is one quarter behind December.
+
+Then I'm going to check the months August and July and leave June and then check May and April and leave March and then finally check February and January.
+
+So basically, you can see here that what I'm doing is selecting all the months of the year that I want to remove so that we're only left with quarterly data based on the fact that we want to keep December data because that's our latest month of data.
+
+If I press OK now, you can see that all the data I deselected, which is the months of December, September, June and March no longer appear in the table.
+
+So all I'm going to do at this point is delete all of this data by selecting row to pressing control shift and down on the keyboard and then right clicking within that data and selecting delete row.
+
+So after that, all that's needed is to remove the filter and you'll see that we're just left with quarterly data, which is now ready to copy across to our quarterly ATRP template.
+
+So to copy that data across, it's the same data, just use control C to copy the columns A to F and once they're selected and then paste them as values into column A of the template sheet.
+
+So similarly to weekly data, we need to check our calculation columns in G and H again now in the template and just make sure that they're the correct length to match our price data.
+
+Now, in this case, we need to delete some formulas again.
+
+So row 42 down for column G, our high to low range and from 41 down for our true range column, column H.
+
+So with all of that done, we can finally check the quarterly ATRP values we have for this stock, which looks like a range from about 27 to 31%, which is quite a tight range.
+
+And if we think about the stock value obtained from our weekly ATRP, it was anywhere in the range of seven to 9%.
+
+And so just by multiplying that range by three, we do actually get pretty close to the suggested target using quarterly ATRP values.
+
+And you can approach these figures in exactly the same way as I talked about to the previous stock, Align Technologies.
+
+It really just boils down to a discretionary decision that should be guided by the volatility seen in weekly and quarterly ATRP values.
+
+And as long as you're using common sense and logic to get to your answer, you're going to be fine.
+
+What I would say, though, about the quarterly Zinger data that we have here is that it is a very short time series, which doesn't really inspire confidence in terms of generating statistical significant or statistically significant analytical outcomes, I should say.
+
+So that is something to bear in mind. And one thing I would suggest if you're dealing with particularly short time series of data like this is that you probably want to wait the weekly ATRP values a bit more than what you're seeing in the quarterly sheet.
+
+What I mean by that is once you've come up with a stop value using the weekly ATRP, it might be a better idea just to make your target equal to three times your stop rather than worrying too much about the quarterly data.
+
+And you might now be asking what constitutes a short time series.
+
+I can't tell you that exactly. But for me, I do like to see generally in any data that I use at least 75 to 100 data points in order to try and get some statistical significance out of the data that I'm using.
+
+But like I said, everyone is different.
+
+Now, guys, I mentioned at the beginning of the video that I'm also going to talk about some other preventative risk management metrics besides just stops and targets.
+
+So let's do that now. I'm going to bring up another spreadsheet here, which hopefully you guys remember from video 20, our beta calculation lesson.
+
+As a reminder, what we're looking at here really is a portfolio risk monitor in the orange cells.
+
+We enter our portfolio positions with longs in the top section and shorts in the bottom.
+
+And the details included here are the company name and ticker, the stock beta value, the current price and the number of shares held in a stock.
+
+As a quick reminder, the stock beta value is a measure of sensitivity of a stock to the market.
+
+So a value of one would suggest that for a 1% move in the market, the stock also moves 1% in the same direction on average.
+
+I explained things in a lot more detail in video 20 regarding beta and its uses, its drawbacks and how you can calculate it.
+
+So if you can't remember, just head back to that video and give it another look.
+
+So from those details in the orange cells, various calculations are made in the adjacent white cells, including gross exposure, net dollar exposure, net dollar weighting and weighted beta calculations.
+
+Again, just as a reminder at this point, the gross exposure of a position is the current price multiplied by the number of shares.
+
+The net exposure of a position is the gross exposure multiplied by one for a long or minus one for a short.
+
+So basically short positions end up having negative net exposures.
+
+The net dollar weighting is the net exposure divided by the gross exposure in the portfolio.
+
+And the weighted beta is the beta of the stock multiplied by the net weight.
+
+And this is effectively kind of a volatility weighted net weight value, if you like.
+
+At the portfolio level, the sum of all of the individual position gross exposures equates to the portfolio gross exposure.
+
+And equally, the sum of all the individual position net exposures equates to the portfolio net exposure.
+
+Likewise, the sum of all the individual net dollar weights equates to the portfolio net dollar weight.
+
+And also the sum of all of the individual net weighted beta values equates to the portfolio beta.
+
+So let's have a look at these metrics for this portfolio in turn.
+
+Firstly, we can see the gross dollar exposure in cell G33 is equal to $99,810.
+
+So basically, this trader is running about $100,000 of risk.
+
+Now, we don't know what the situation is behind the scenes for this trader.
+
+And what I mean by that is we don't actually know what amount of margin is deposited in the account in order to achieve that $100,000 gross exposure.
+
+But if he or she is based in the US, then their gross exposure will be capped at two times their margin.
+
+So at a minimum, that would mean that the account has $50,000 of margin.
+
+If, however, this trader is based in a country that allows CFDs, and these are indeed CFD positions in the portfolio, then the leverage limit is actually likely to be much higher, perhaps up to 10 times.
+
+However, does that mean that it's sensible to use that leverage?
+
+Most definitely not.
+
+If this trader was using 10 times leverage, then the deposited margin only needs to be $10,000 to put on this $100,000 of risk.
+
+And that might sound good, but it also means that the portfolio would only need to drop in value by 10% for the entire margin to be wiped out.
+
+So that's why portfolio gross exposure limits are essential.
+
+Using some leverage can be useful in order to increase the risk and opportunity of your portfolio, especially when we're running a long, short book.
+
+But it does need to be monitored and limited to prevent sort of catastrophic loss.
+
+For a well run long short portfolio, about two to four times leverage for stocks is okay.
+
+Going much higher than that becomes pretty dangerous.
+
+And when you're starting out as new traders, you want to keep the leverage on the lower end of that range.
+
+And then you can build into it over time, subject to your sort of own success.
+
+So let's say, for example, this trader here is starting out and he's deposited $50,000 on margin.
+
+Having a portfolio gross exposure of $99,000 in leverage factor of almost two, that's well within an appropriate gross exposure or leverage limit.
+
+However, if he's only deposited $20,000, then his gross exposure is almost five times his margin deposit.
+
+And he's almost definitely running too much risk.
+
+If the portfolio value dropped by 10%, in that example, his margin would half.
+
+Obviously, when you guys are thinking about gross exposure and leverage limits for your own portfolios, they're going to be completely up to you.
+
+But as I said, as a guide, exceeding four times leverage, even as an accomplished retail trader, is probably unwise.
+
+Let's think about net dollar or net cash exposure now.
+
+And this metric clearly gives us an insight into how long or short we are on a net basis across the portfolio.
+
+And the general principle here is that as long short traders and portfolio managers, we want to always have some balance across the portfolio, which is part of what makes the strategy so good because it can be traded successfully through all market conditions.
+
+So here, the dollar net exposure is $114, which in net weight terms is only 0.11%.
+
+And based on that, this portfolio is basically market neutral in its current state.
+
+Although, as I said in the beta video, this is by no means a full story because it doesn't actually account for the individual asset betas and, of course, the portfolio beta.
+
+In practice, you can have portfolios that are roughly cash neutral like this one, but yet on a beta adjusted basis, they're significantly net short or significantly net long.
+
+Now, as it happens in this example, the portfolio beta is almost zero as well.
+
+So in its current setup, we would expect this portfolio to be very market neutral, meaning that its value should move pretty much independently to the stock market.
+
+We can only assume then that in this case, the manager of this portfolio doesn't really have a fundamental bias or thesis about the market direction going forward, whether that's long or short.
+
+You guys know by now that generally you should have at least some bias in terms of market direction, because if you don't, it probably means that you just haven't done your macro fundamental work properly.
+
+But that being said, there are, of course, circumstances whereby you might want to be very neutral, like in this portfolio.
+
+Now, in terms of portfolio beta, for the most part, a sensible range to operate in is plus 30% to minus 30%, or in decimal format, plus 0.3 to minus 0.3.
+
+So a beta value in the range of, let's say, plus to minus 5%, like this portfolio, we would say is very market neutral.
+
+A 10% tilt in either direction represents a fairly weak bias, whether it's long or short, and anything above 20% is quite a strong bias.
+
+And then outside the limits of plus or minus 30% starts to represent such a strong bias on market direction that the benefits of long short portfolio management start to deteriorate.
+
+And so I would say that that range should only be exceeded in exceptional circumstances or with incredible eviction.
+
+It can be applied to the dollar or cash net weight in this portfolio, which in this example is 0.11%.
+
+As I said before, however, as I said in video 20, net cash weight is just kind of a crude measure of portfolio bias, since it doesn't really account for the basis of individual stocks.
+
+And for that reason, we can actually extend the acceptable range of net cash weight to something more like 50%, so plus 50% to minus 50%, simply because it just isn't as effective as a measure to capture market risk or bias in the portfolio.
+
+So, beta is the value that you should be paying more attention to, but you must also remember that beta isn't infallible and there are some drawbacks of using beta.
+
+And if you want to find out more about that, then you need to go back to video 20.
+
+So, let's think about a scenario here in this portfolio where these limits might be broken and what we can do about it.
+
+So, let's say that the market rallies strongly by 10% over a couple of months and as a result, increase in value.
+
+Now, at this point, I'm just going to arbitrarily increase the prices of these long stocks in turn to reflect that scenario now.
+
+So, let's put the prices at 15, 98, 36, 22, 115 and 240.
+
+Now, we're also going to assume here that a couple of this trader's short positions have done quite well over the period and stayed flat.
+
+But Lenar Corporation and Best Buy have gone up in price by 10% with the market and they've ended up both being stopped out.
+
+If I delete those two stocks from the portfolio now, look what happens to the portfolio beta.
+
+It's gone from a value of minus 5% to a value of 48%.
+
+If our beta values then are perfectly accurate and the market then corrects back to where it was dropping around 10%, then in theory, if we do nothing to change the structure of this portfolio, it should decrease in value by 5% given that our new beta value is close to 0.5.
+
+Now, that might not sound like much, but it doesn't account for leverage.
+
+If you're 4 times levered, then that's going to mean your margin decreases by 20%, which then seems a lot more significant when you think about how easily avoidable this scenario was.
+
+All that would have had to happen was to rebalance some of the position weightings or reinstate a couple of new shorts in the portfolio and then beta would have been balanced.
+
+Now, there are obviously an infinite number of scenarios that could happen in the real world that would represent a similar thing.
+
+But the point here is really that it's very important to pay attention to your risk limits.
+
+They're called preventative risk limits for a reason because they are a proactive rather than reactive approach to making sure losses are limited.
+
+Gross exposure and leverage limits prevent excess losses because they control the amplification effects of leverage on downturns in portfolio value.
+
+Net exposure and beta limits prevent excess losses because they limit how exposed our portfolios are to market moves that we may or may not get right.
+
+And even if we do, as we saw in the previous example, we can then actually get whipsawed with our stops quite quickly and lose much more than we should.
+
+Preventative risk management metrics like these and stops and targets are all there to help improve our trading performance.
+
+And that will then be reflected in performance metrics like our R scores and our percent winning trades and many others.
+
+I'm going to go into in a bit more detail in a couple of videos time.
+
+So that's all I really wanted to cover in this video.
+
+Hopefully that all makes sense and you guys can see the importance of PRM measures.
+
+The key points to take away from this video are really firstly that you need to make sure you generate sensible stops and targets based on the volatility of assets that you're trading.
+
+You want to set hard stops and soft targets to try and help remove the human biases that we tend to have.
+
+However, we can't just pick a level of the stop and target and hope that it works.
+
+And neither can we pick a one size fits all that we can use across all trades in all conditions.
+
+You need to choose stops and targets based on the volatility of the underlying assets.
+
+And all assets have different volatilities and those volatilities change with time as well.
+
+And that's why you need to do volatility analyses like distribution of returns analysis and average true range percentage analysis so that you can figure out what numbers might work for different stocks at different times.
+
+And remember guys, the stops and targets you choose for each position should find a balance that means that the stops aren't triggered too easily, but the targets are still attainable.
+
+Now, despite these values being driven by hard data as you will have gathered from this video and Anton's presentation previously, there is definitely a discretionary component that you'll need to use in combination with that hard data.
+
+The data itself doesn't provide clear cut answers.
+
+You need to be able to think about what the data means and fine tune the outcomes on a discretionary basis if you think it's appropriate.
+
+Now, on that note, whilst we're aiming for hard stops and soft targets in our individual positions, we also have to understand that market dynamics might dictate that adjustments need to be made to stop us being stopped out on multiple longs or shorts at the same time.
+
+Again, the decision you make on how to handle that is discretionary, but one method that we looked at in this video is to split trades into long short pairs and monitor stops and targets on paired positions that are relatively market neutral.
+
+To do that, you'll need to move to a more mental stop approach rather than programming them into your brokerage platform.
+
+Because firstly, brokers don't support stops on spread positions, but secondly, when using individual and spread stops and targets in combination, there is no choice really, but to add in a discretionary component in the decision making process.
+
+Now, I'm not trying to say here that all of this work just leads to discretionary choices that don't matter and don't help us with human biases. Far from it, in fact.
+
+What I am trying to say is that we should be using volatility to remove human errors.
+
+But equally, we have to be realistic that there will be one has to be used.
+
+Otherwise, we might actually end up making huge mistakes and doing things like letting all of our shorts or some of our shorts and longs get stopped out all at once, which then subsequently puts portfolio risk through the roof.
+
+That was the scenario we played out towards the end of the video within the context of looking at other PRM risk metrics as well, namely gross exposure limits, net exposure limits and portfolio beta limits.
+
+Now, remember, guys, that these limits are there to help guide us and prevent thoughtless mistakes.
+
+And the limits that you set for these metrics are, again, discretionary and should be based on your own trading and risk profile.
+
+But hopefully, that being said, the ranges that I talked about in the scenario we discussed at the end there will give you a good idea of what some sensible numbers might be.
+
+Anyway, guys, that's all I wanted to say on all of this stuff today.
+
+I hope you guys enjoyed the video and I'll see you later in the video series where I'm going to talk about trading statistics and performance measures.
+
+OK, guys, so welcome back to the desk. Let's have a quick recap there.
+
+So what we looked at was trading psychology and risk management, preventative risk management measures.
+
+So what do we look at first? We looked at human psychology and the tendencies of human psychology as they pertain to the skill set of money management.
+
+OK, so we looked at how this works in practice with applying the distribution of returns analysis, the average true range percentage calculations in setting sensible, hard stop losses and targets for individual stocks and also for spreads on stocks.
+
+OK, so what we did, we discussed how to treat stops and targets also as part of an overall long short portfolio, an overall long short stock portfolio. But it is important to remember always because we are long short portfolio managers and traders that we don't just apply blanket rule across the board.
+
+We don't just apply all hard stops and targets to all positions in a long short portfolio all the time across the entire portfolio, because we will obviously have correlation in the portfolio.
+
+It is totally situational and there isn't a rule book that you can just buy and just put into place all of the rules that a book tells you.
+
+OK, so for example, you can't go into a long short portfolio dynamic and say, for example, five out of six, five or six positions out of 10.
+
+Have to all have hard stop losses and soft targets on them. It just doesn't work like that. OK, if you try to apply a rule book here, guys, where the rule applies to all stocks all the time in all situations, you're just going to get whipsawed by the market because you're running a long short portfolio and the market's going to go up and down and you can't have a situation where you're just going to get stopped out on all your shorts when the market goes up.
+
+And if the market reverses and goes down, you just get stopped out on all your longs.
+
+So the best you can do here all the time is just take a balanced, cautious and realistic approach. OK, so Chris also in this video showed you how to work out the distribution of returns analysis and the ATRP in terms of the numbers in a spreadsheet.
+
+So you can actually use this now as a template going forward to calculate sensible and well about taking a well balanced approach, a cautious approach, calculate sensible stock losses and realistic targets.
+
+So he did this both for single stocks and also for spreads. So if you are going to run long short stock portfolios or in the rest of the world CFD positions, what's going to happen going forward?
+
+You're going to be using these templates to make sure that you're calculating volatility properly and calculating sensible stop losses and realistic targets over the 20 to 60 day time horizon.
+
+Now, Chris also went through some other metrics as well, preventative risk management metrics and also some performance metrics.
+
+So Chris looked at targeting an R score of a minimum of 1.5. OK, on a win loss ratio over time, over many trades, a target of 60 percent win rate and 40 percent loss rate.
+
+Loss rate. These are achievable targets.
+
+They are realistic and they are sensible targets as parameters that you should be aiming for over the long term.
+
+And in terms of preventative risk management, what is actually happening here is if you're setting those targets, you are preventing yourself from ending up in a situation that over a long period of time, over many trades, many trades becomes untenable. OK, so an R score minimum of 1.5 and a win loss rate of 60 40.
+
+Now, Chris also looked at gross exposure limits. If you're in the United States, your gross exposure limits on a long short portfolio, a stock portfolio is going to be two times whatever the number is you have deposited in your account.
+
+Two times that rate. OK, you don't have a choice.
+
+OK, you don't have a choice. That's the limit that brokers set for you in the rest of the world.
+
+When the rest of the world retail traders are trading CFDs, the exposure limit can be higher.
+
+It can be up to five times what you have in your account. But we would say a sensible approach initially is to only go for a maximum of four times what you put in your account.
+
+OK, so set a gross exposure limit that's sensible, please make sure you stick to it.
+
+Also, Chris looked at beta adjusted net exposure limits and he mentioned that the kind of maximum is plus or minus 30% beta adjusted position exposure limit in your portfolio, your net exposure limit.
+
+So try to stay within that if you start to see yourself getting close to 30% or above 30%, it means you're bringing a lot of market bias into your portfolio and it means that you're not really necessarily getting the single stock bias, the idiosyncratic bias in your portfolio.
+
+And if you go too far either way, then it essentially becomes a market bet.
+
+You're not really using using the stocks to get a stock return.
+
+You're using the stocks to get a market return.
+
+OK, Chris also mentioned cash for cash net exposure and looked at a kind of plus or minus limit of maximum 50%.
+
+You need to know where this is as well.
+
+You can only really go up to that type of number if you really know what your beta adjusted net is.
+
+So, for example, you can have a plus 45% cash for cash net exposure.
+
+But in the background, the actual beta adjusted net exposure might, for example, be only 15%.
+
+That's OK.
+
+You just have to make sure that you know where both of them are and both of them are under control.
+
+OK, so we're going to move on now to the next video.
+
+And we're going to be exploring more aspects of psychology in trading.
+
+And specifically, what we're going to be looking at is eliminating emotion and staying objective.
+
+So previously, we've mentioned a few times about reactive risk management, RRM, and how it's impossible to teach that in a video series.
+
+But what is possible with RRM is to give you some sort of perspective on how you should think about handling your positions when things start to pan out through the life of a trade.
+
+So when a position becomes a winner, loser or a nothing position.
+
+And what we call this is staying in motion.
+
+So you need to start thinking about your trading account as a business.
+
+So let's go over to the next video.
+
+And Chris, after the next video, is actually going to give you spreadsheet classes, two spreadsheet classes on how to manage your trading account as a business.
+
+And I'll see you back at the desk towards the end of the video series.
+
+So let's go over to the next video series.

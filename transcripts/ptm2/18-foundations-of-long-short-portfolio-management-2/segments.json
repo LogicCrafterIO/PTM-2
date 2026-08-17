@@ -1,0 +1,4615 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.98,
+      "text": "Hi guys and welcome to video 18. Previously, we looked at modeling historical portfolio performance and in this video, we're going to continue with analyzing things at the portfolio level, but this time we're looking at volatility. Now, for those of you that have done the introduction to professional trading masterclass, some of this video is going to contain information that you've already covered. And in fact, you're going to"
+    },
+    {
+      "start": 29.98,
+      "end": 59.96,
+      "text": "be way ahead in your general understanding of volatility and its importance. So for you guys that haven't done that course, I suggest that you have a look at it because you will find it extremely useful to supplement what we go through in the next couple of videos. In this video, we're going to cover plenty of ground and as a little insight into what's sort of coming up, here's what we're going to go through. We're going to discuss what volatility means to traders and portfolio managers and how we measure it. I'm then going"
+    },
+    {
+      "start": 59.96,
+      "end": 89.94,
+      "text": "going to talk about realized volatility and briefly cover an example of a distribution of returns analysis, which is a type of volatility analysis. And we're going to work through an example there at the portfolio level. From there, we're going to move on to modeling what's called expected portfolio volatility. And that's really going to be the core component of what this video is all about. I'll start there by explaining the theory behind the model. And that will give you guys a big insight in"
+    },
+    {
+      "start": 89.96,
+      "end": 119.94,
+      "text": "what matters when constructing what matters when constructing an efficiently diversified portfolio that enhances your risk reward profile. Then we'll move on to some scenario analysis using the model. And by doing that, we'll sort of demonstrate the benefits of adding small and mid cap stocks to the portfolios as well. And then finally, I'll talk about how you can use the model for constructing or conducting, I should say, scenario analysis in"
+    },
+    {
+      "start": 119.94,
+      "end": 149.92,
+      "text": "your own portfolios and your own portfolios. And I'll teach you the practicalities of using the model to help you understand how changes in portfolio structure will likely affect the overall portfolio volatility that you're likely to see. So there's going to be loads of important learning points as we go through the video and all of those sort of practical elements. So make sure you pay close attention. And I will also give you a short synopsis of all of that important stuff that we've covered at the end of the video as well."
+    },
+    {
+      "start": 149.92,
+      "end": 179.9,
+      "text": "Before I go any further, let me point out that this video is heavily connected to the next one in the PTM series. And in fact, there's going to be a lot of points in this video where I deliberately stop short for full explanation, particularly when it comes to portfolio theory and diversification, because it's something that we're going to cover in so much detail in the next video as well. So to that end, what I would say is don't worry a whole lot if you feel"
+    },
+    {
+      "start": 179.9,
+      "end": 209.88,
+      "text": "there are some gaps in the next one."
+    },
+    {
+      "start": 209.88,
+      "end": 239.86,
+      "text": "your risk return profile. That's the goal. Okay, before I start rambling on about volatility, let's take a look at this spreadsheet that we have here, which I'll be using throughout the video, and you'll be able to get hold of in the download section for this video. So in this spreadsheet, we've got seven sheets, and I'm going to mention them now in the order that we're going to work through them in the video. After I've introduced the concept of volatility, we're going to begin in this spreadsheet here by looking at"
+    },
+    {
+      "start": 239.86,
+      "end": 269.58,
+      "text": "the standard deviation calculation. The standard deviation calculation tab. That's where I'll show you how to calculate volatility using the industry standard methodology. The second sheet that we're going to look at is the portfolio DOR tab. And in that one, I'm going to talk through a type of volatility analysis called a distribution of returns. Now I'm not going to spend too much time in that sheet as it's something that's going to be covered extensively or already has been covered extensively in the IPLT course."
+    },
+    {
+      "start": 269.84,
+      "end": 299.82,
+      "text": "but it will be enough to give you a good idea of the statistical process. And we'll be using data from the portfolios that we looked at in the previous video. After that, we're going to move on to learning some portfolio volatility theory, before then shifting our attention to running some calculations based on various scenarios, using the portfolio volatility model in the practical sheet. And the rest of the tabs here are really just supporting"
+    },
+    {
+      "start": 299.82,
+      "end": 329.8,
+      "text": "data sheets that help the portfolio. And I'll spend a bit of time explaining them later. So as I said previously, this video is going to be all about calculating and understanding volatility at the portfolio level. But before we get into that, we need to discuss what volatility actually is."
+    },
+    {
+      "start": 329.8,
+      "end": 359.78,
+      "text": "Assets in this case can refer to anything from individual instruments like a share in a company, all the way up to index funds and portfolios made up of multi asset class long short positions. Volatility is really important to get to grips with. And as anyone that's done the IPLT course knows, it's often misunderstood. And most people think of volatility only as risk, but actually forget or don't realize that it also presents or"
+    },
+    {
+      "start": 359.78,
+      "end": 373.78,
+      "text": "represents opportunity. If there was no chance to represent opportunity. If there was no chance to profit from price fluctuations. If there was no chance to profit from price fluctuations, then there would be no chance to profit from price fluctuations. And so we actually need volatility at both the individual asset level and the portfolio level."
+    },
+    {
+      "start": 373.78,
+      "end": 403.76,
+      "text": "In the IPLT course, we discussed how one of the core retail trading mistakes is trying to trade assets with little inherent volatility over very short timeframes. And by recognizing those faults through volatility analyses such as computing the distribution of returns on various assets, we identified that the two most important ways to increase volatility and hence opportunity for profit is by trading assets with a larger inherent volatility."
+    },
+    {
+      "start": 403.76,
+      "end": 411.08,
+      "text": "such as small cap or mid cap equities, and also by extending the time horizon of our trades."
+    },
+    {
+      "start": 411.94,
+      "end": 418.04,
+      "text": "By conducting volatility analysis over various assets and timeframes, we concluded that a sweet"
+    },
+    {
+      "start": 418.04,
+      "end": 424.42,
+      "text": "spot for trading time horizons is about one to three months on average. This gives positions"
+    },
+    {
+      "start": 424.42,
+      "end": 431.34,
+      "text": "plenty of time to move by larger magnitudes, as opposed to the sort of tiny fluctuations that you"
+    },
+    {
+      "start": 431.34,
+      "end": 438.5,
+      "text": "typically see on a daily basis or hourly basis. People that don't understand the difference in"
+    },
+    {
+      "start": 438.5,
+      "end": 444.92,
+      "text": "volatility across assets and asset classes usually have very warped perspectives over what instruments"
+    },
+    {
+      "start": 444.92,
+      "end": 451.2,
+      "text": "they think have prices that move a lot. For example, it's very common in the retail trading industry for"
+    },
+    {
+      "start": 451.2,
+      "end": 458.34,
+      "text": "retail traders to think that the most volatile asset class is currencies or forex, which is completely"
+    },
+    {
+      "start": 458.34,
+      "end": 466.0,
+      "text": "incorrect. And any kind of sort of volatility analysis worth its salt would quickly discover"
+    },
+    {
+      "start": 466.0,
+      "end": 473.2,
+      "text": "that that's not right. The only reason why it appears that way is because brokers offer huge"
+    },
+    {
+      "start": 473.2,
+      "end": 478.1,
+      "text": "leverage on FX pairs and retail clients don't realize that the volatility that they're seeing"
+    },
+    {
+      "start": 478.1,
+      "end": 485.42,
+      "text": "in their positions is entirely driven by that leverage. So that brings me on to a third way"
+    },
+    {
+      "start": 485.42,
+      "end": 490.4,
+      "text": "to increase volatility in your positions in your portfolio, which as you've probably just gathered"
+    },
+    {
+      "start": 490.4,
+      "end": 496.86,
+      "text": "is to take on leverage. However, leverage also increases transaction costs. And unless it's fully"
+    },
+    {
+      "start": 496.86,
+      "end": 502.16,
+      "text": "understood, it can be quite dangerous, which is why I said that increasing trading, your trading time"
+    },
+    {
+      "start": 502.16,
+      "end": 509.16,
+      "text": "horizon and choosing higher volatility assets to trade are much more important methods of increasing"
+    },
+    {
+      "start": 509.16,
+      "end": 515.06,
+      "text": "volatility. That being said, if you do understand leverage and the financial products that you're"
+    },
+    {
+      "start": 515.06,
+      "end": 522.12,
+      "text": "using to obtain that leverage, then it can be very useful, which is one of the reasons why at ITPM,"
+    },
+    {
+      "start": 522.28,
+      "end": 528.92,
+      "text": "we often structure trades using options. So you guys now have an idea of what volatility is and why it's"
+    },
+    {
+      "start": 528.92,
+      "end": 535.56,
+      "text": "important. Basically, the key takeaway here is that volatility represents much more than just risk. It also"
+    },
+    {
+      "start": 535.56,
+      "end": 541.88,
+      "text": "represents opportunity for profit. And on that basis, we need to ensure that we're trading the right assets"
+    },
+    {
+      "start": 541.88,
+      "end": 548.92,
+      "text": "over the right timeframes to ensure we have plenty of opportunity to make money. Again, the IPLT course"
+    },
+    {
+      "start": 548.92,
+      "end": 554.54,
+      "text": "goes into a lot more detail on this with lots of analysis to go with it. So I strongly recommend you take a"
+    },
+    {
+      "start": 554.54,
+      "end": 561.42,
+      "text": "look at that course if you haven't already. Okay, so now we know volatility is based on the magnitude of"
+    },
+    {
+      "start": 561.42,
+      "end": 566.86,
+      "text": "fluctuations in asset prices and asset returns. Let's move on to how we can actually measure that."
+    },
+    {
+      "start": 567.42,
+      "end": 572.22,
+      "text": "There are actually quite a few ways to calculate volatility, but the most used and therefore probably"
+    },
+    {
+      "start": 572.22,
+      "end": 577.58,
+      "text": "the most important measure is a statistical measure called a standard deviation. If you ever hear"
+    },
+    {
+      "start": 577.58,
+      "end": 583.42,
+      "text": "people talking about volatility in the financial world, nine out of 10 times, this will be the measure"
+    },
+    {
+      "start": 583.42,
+      "end": 590.46,
+      "text": "that they're using. Now, I know that we've basically covered standard deviations before in a way in the"
+    },
+    {
+      "start": 590.46,
+      "end": 596.54,
+      "text": "money supply video and in other courses as well if you've seen those, but I want to take a moment in"
+    },
+    {
+      "start": 596.54,
+      "end": 604.06,
+      "text": "this video to kind of get into the weeds of the standard deviation calculation itself. Since this video is"
+    },
+    {
+      "start": 604.06,
+      "end": 610.14,
+      "text": "all about volatility at the portfolio level, I just thought that was a good idea to kind of clear things up."
+    },
+    {
+      "start": 610.14,
+      "end": 617.58,
+      "text": "So to explain what exactly a standard deviation is and how to calculate it, let's move over to the"
+    },
+    {
+      "start": 617.58,
+      "end": 623.98,
+      "text": "standard deviation calculation sheet now so I can show you how this measure of volatility works."
+    },
+    {
+      "start": 625.18,
+      "end": 630.14,
+      "text": "So in this sheet here I've got a small series of numbers that we're going to calculate the volatility"
+    },
+    {
+      "start": 630.14,
+      "end": 639.26,
+      "text": "4. The numbers are 8, 3, 5, 7, 11, 4, 6 and 4. What I'm going to do in this example is break down the"
+    },
+    {
+      "start": 639.26,
+      "end": 645.82,
+      "text": "calculation for the standard deviation of this very simple series into a number of steps. And the idea"
+    },
+    {
+      "start": 645.82,
+      "end": 650.7,
+      "text": "here is that by going through this method you're going to understand how the measure works and you'll be"
+    },
+    {
+      "start": 650.7,
+      "end": 657.74,
+      "text": "a bit more confident in using it in applications further ahead. So in almost all measures of volatility,"
+    },
+    {
+      "start": 657.74,
+      "end": 663.26,
+      "text": "we take a reference point of a series of numbers and run some kind of calculation that measures"
+    },
+    {
+      "start": 663.26,
+      "end": 668.94,
+      "text": "how much the series of numbers fluctuates around the reference point. A standard deviation does this"
+    },
+    {
+      "start": 668.94,
+      "end": 674.7,
+      "text": "by measuring the volatility of a series of numbers around their average. That gives us a good starting"
+    },
+    {
+      "start": 674.7,
+      "end": 680.94,
+      "text": "point which is to calculate the average of this series. So let me do that over here. In cell H2,"
+    },
+    {
+      "start": 680.94,
+      "end": 689.34,
+      "text": "I'm just going to type equals average okay open brackets d2 colon d9 so selecting the array d2 to d9"
+    },
+    {
+      "start": 689.34,
+      "end": 696.94,
+      "text": "close brackets and press enter. Next once we've got the average of our data set what we're really"
+    },
+    {
+      "start": 696.94,
+      "end": 703.98,
+      "text": "interested in is figuring out how different each individual data point in the series is to that mean"
+    },
+    {
+      "start": 703.98,
+      "end": 710.38,
+      "text": "or average and basically the further away all of these points are from the mean the more volatile the data"
+    },
+    {
+      "start": 710.38,
+      "end": 717.26,
+      "text": "set. So the next stage is to calculate those differences. So in cell E2 I'm just going to type"
+    },
+    {
+      "start": 717.26,
+      "end": 726.54,
+      "text": "a formula here which is going to be d2 which is the starting number in our series minus h2 and I'm going to"
+    },
+    {
+      "start": 726.54,
+      "end": 733.42,
+      "text": "fix that reference by putting dollar signs around the column and row references. So that's just going"
+    },
+    {
+      "start": 733.42,
+      "end": 741.02,
+      "text": "to take the series value minus the mean and then we'll copy that formula down from E2 to cell E9. So now"
+    },
+    {
+      "start": 741.02,
+      "end": 747.58,
+      "text": "we've got all of our differences. The positive and negative results here show that some of the points"
+    },
+    {
+      "start": 747.58,
+      "end": 753.9,
+      "text": "are obviously above the mean and some are below the average. However if we were to average all of these"
+    },
+    {
+      "start": 753.9,
+      "end": 760.06,
+      "text": "positive and negative differences now we would get a value of zero as an output because the positives"
+    },
+    {
+      "start": 760.06,
+      "end": 766.14,
+      "text": "and negatives cancel out and so our value for volatility would then be zero which clearly isn't"
+    },
+    {
+      "start": 766.14,
+      "end": 772.3,
+      "text": "a good representation of the sort of dispersion that we have around the mean in the data set. So what we"
+    },
+    {
+      "start": 772.3,
+      "end": 778.22,
+      "text": "need to do here is treat all the differences equally and one way we can do that is to square the results"
+    },
+    {
+      "start": 778.22,
+      "end": 783.74,
+      "text": "so that they all become positive and then after that we can average these numbers to create a"
+    },
+    {
+      "start": 783.74,
+      "end": 789.74,
+      "text": "single value and square root it again to undo the squared changes we made earlier and then that's it."
+    },
+    {
+      "start": 790.3,
+      "end": 799.58,
+      "text": "So in cell F2 I'm going to type the formula equals E2 to the power of 2 so that's just squaring that"
+    },
+    {
+      "start": 799.58,
+      "end": 806.7,
+      "text": "difference and then I'm going to copy that formula down from F2 to F9 so that we have all of our squared"
+    },
+    {
+      "start": 806.7,
+      "end": 816.06,
+      "text": "differences and then in cell I2 I'm going to take the average of all of those squared differences F2"
+    },
+    {
+      "start": 816.06,
+      "end": 823.9,
+      "text": "to F9 so equals average open brackets and then choosing the array F2 to F9 close brackets and then"
+    },
+    {
+      "start": 823.9,
+      "end": 832.38,
+      "text": "in cell J2 I'm going to type equals SQRT that stands for square root so the square root function in Excel"
+    },
+    {
+      "start": 832.38,
+      "end": 842.22,
+      "text": "so equals SQRT open brackets I2 so we're taking the square root of the average of all of those squared"
+    },
+    {
+      "start": 842.22,
+      "end": 850.62,
+      "text": "differences so basically the square root of the value that we see in I2. Now that value that we've got in"
+    },
+    {
+      "start": 850.62,
+      "end": 857.74,
+      "text": "J2 is our standard deviation value for that series of numbers. Now fortunately you don't have to go through"
+    },
+    {
+      "start": 857.74,
+      "end": 863.58,
+      "text": "all of those stages to calculate a standard deviation each time you want to you can just use an inbuilt"
+    },
+    {
+      "start": 863.58,
+      "end": 869.26,
+      "text": "Excel function to do all the work instead but the point of going through all of that was so that you"
+    },
+    {
+      "start": 869.26,
+      "end": 876.06,
+      "text": "kind of understand and feel comfortable with how standard deviations work and basically a standard"
+    },
+    {
+      "start": 876.06,
+      "end": 883.5,
+      "text": "deviation uses a method to sort of tell us the average distance of each data point in the series to"
+    },
+    {
+      "start": 883.5,
+      "end": 890.06,
+      "text": "the overall mean in that series. So to calculate this quickly in Excel all you need to do is the"
+    },
+    {
+      "start": 890.06,
+      "end": 899.18,
+      "text": "following I'm going to select cell K2 now and type in a formula which is equals STDEV.P open brackets"
+    },
+    {
+      "start": 899.18,
+      "end": 906.86,
+      "text": "and then select our array our original series cells D2 to D9 and close brackets. Now that's going to"
+    },
+    {
+      "start": 906.86,
+      "end": 911.34,
+      "text": "calculate what's called the population standard deviation which is appropriate for what we're doing here."
+    },
+    {
+      "start": 911.34,
+      "end": 918.94,
+      "text": "What you might see me do later in the series or actually probably you will see me do later in the"
+    },
+    {
+      "start": 918.94,
+      "end": 924.94,
+      "text": "series is use a slightly different standard deviation formula which is STDEV.S that stands for a sample"
+    },
+    {
+      "start": 924.94,
+      "end": 933.1,
+      "text": "standard deviation okay because realistically that's what you should be using if you're kind of estimating"
+    },
+    {
+      "start": 933.74,
+      "end": 940.14,
+      "text": "a standard deviation based on a sample of data not the entire population okay in this in this example that"
+    },
+    {
+      "start": 940.14,
+      "end": 943.9,
+      "text": "doesn't really matter I don't want to get into that too much just don't worry about the difference that"
+    },
+    {
+      "start": 943.9,
+      "end": 950.14,
+      "text": "I'm kind of using here and other times in the series between those two slightly different versions of the"
+    },
+    {
+      "start": 950.14,
+      "end": 957.42,
+      "text": "standard deviation calculation. But anyway when I put in that formula that population standard deviation"
+    },
+    {
+      "start": 957.42,
+      "end": 964.7,
+      "text": "formula you can see that I get exactly the same result as we did before but obviously a lot faster."
+    },
+    {
+      "start": 965.5,
+      "end": 971.5,
+      "text": "What I've also done here is below created a chart as a reminder about what the standard deviation"
+    },
+    {
+      "start": 971.5,
+      "end": 978.14,
+      "text": "formula actually does and I'm hoping that that sort of visual visual aid might help you understand what"
+    },
+    {
+      "start": 978.14,
+      "end": 982.7,
+      "text": "I've been talking through so far. So by all means check that out when you download this spreadsheet"
+    },
+    {
+      "start": 982.7,
+      "end": 987.18,
+      "text": "yourself there's some notes to go with it as well and which will remind you what we've been through and"
+    },
+    {
+      "start": 987.18,
+      "end": 994.06,
+      "text": "hopefully make things clearer. Okay so that's all there is to understanding and being able to calculate"
+    },
+    {
+      "start": 994.06,
+      "end": 1000.46,
+      "text": "a standard deviation. As I said standard deviations are the most common measures of volatility for traders"
+    },
+    {
+      "start": 1000.46,
+      "end": 1007.42,
+      "text": "and portfolio managers and now that you've got that understanding I want to quickly show you a volatility"
+    },
+    {
+      "start": 1007.42,
+      "end": 1015.02,
+      "text": "analysis technique where we study the distribution of returns of a portfolio and it also incorporates within"
+    },
+    {
+      "start": 1015.02,
+      "end": 1023.1,
+      "text": "it some standard deviation calculations or measurements as well. Now in the IPLT course we covered distribution"
+    },
+    {
+      "start": 1023.1,
+      "end": 1030.06,
+      "text": "of returns analyses in lots of detail on many assets and it helped us draw some of the conclusions about"
+    },
+    {
+      "start": 1030.06,
+      "end": 1036.86,
+      "text": "volatility that I mentioned earlier especially when it comes to which assets and asset classes and trading"
+    },
+    {
+      "start": 1036.86,
+      "end": 1044.06,
+      "text": "time frames yield the most opportunity for profit. In this video we're going to employ the same techniques"
+    },
+    {
+      "start": 1044.06,
+      "end": 1049.9,
+      "text": "as we did there but at the portfolio level and because I've covered this type of analysis in detail in the"
+    },
+    {
+      "start": 1049.9,
+      "end": 1055.5,
+      "text": "previous course and I appreciate that many of you will have done that course already I'm not going to spend"
+    },
+    {
+      "start": 1055.5,
+      "end": 1061.74,
+      "text": "loads of time on this section of the video. Basically instead of learning how to do this volatility analysis"
+    },
+    {
+      "start": 1061.74,
+      "end": 1068.38,
+      "text": "from scratch I'm just going to guide you through a pre-built analysis to save time and we aren't going"
+    },
+    {
+      "start": 1068.38,
+      "end": 1076.54,
+      "text": "to go into nearly as much detail here as we did in the IPLT course. So a distribution of returns analysis is"
+    },
+    {
+      "start": 1076.54,
+      "end": 1082.94,
+      "text": "pretty much exactly as it sounds. What it does is basically calculate and analyze the returns of an asset"
+    },
+    {
+      "start": 1082.94,
+      "end": 1090.3,
+      "text": "or an index or an index or portfolio and pays particular attention to how those returns are distributed in"
+    },
+    {
+      "start": 1090.3,
+      "end": 1097.26,
+      "text": "terms of their empirical probability. What that means is that over a given period we can calculate all the"
+    },
+    {
+      "start": 1097.26,
+      "end": 1105.82,
+      "text": "returns for an asset say the S&P 500 for example and then group that data into various ranges of returns."
+    },
+    {
+      "start": 1106.7,
+      "end": 1115.42,
+      "text": "The idea being that for example we can see how often the S&P 500 has returned between let's say 1 and 2 percent"
+    },
+    {
+      "start": 1115.42,
+      "end": 1122.78,
+      "text": "compared to 2 or 3 percent on a weekly basis over the period that we decide to analyze. If that isn't"
+    },
+    {
+      "start": 1122.78,
+      "end": 1128.38,
+      "text": "clear don't worry it will make sense when we run through the examples on this sheet. So what I've got"
+    },
+    {
+      "start": 1128.38,
+      "end": 1133.98,
+      "text": "here is a pre-built distribution of returns analysis for the two portfolios that we looked at in the previous"
+    },
+    {
+      "start": 1133.98,
+      "end": 1141.34,
+      "text": "video. This kind of analysis is what's called a realized volatility analysis because it examines the"
+    },
+    {
+      "start": 1141.34,
+      "end": 1149.66,
+      "text": "volatility of the price or value of an asset in the past. So what I've done here is calculated the hypothetical"
+    },
+    {
+      "start": 1149.66,
+      "end": 1157.42,
+      "text": "value of the two portfolios we considered in the previous video using the non-rebalance method. Those values"
+    },
+    {
+      "start": 1157.42,
+      "end": 1166.14,
+      "text": "are recorded in columns B and C and the time series of the portfolios run through the first half of"
+    },
+    {
+      "start": 1166.14,
+      "end": 1174.06,
+      "text": "2021 as you can see here. Portfolio one is our large cap portfolio and portfolio two is our mid and large cap"
+    },
+    {
+      "start": 1174.06,
+      "end": 1184.14,
+      "text": "mixed portfolio. Remember both portfolios are long six stocks and short four and it's only the long side that changes in our models."
+    },
+    {
+      "start": 1184.78,
+      "end": 1189.74,
+      "text": "I've put a list up the top here showing the constituents of each portfolio as a quick reminder to you so you"
+    },
+    {
+      "start": 1189.74,
+      "end": 1197.18,
+      "text": "don't have to kind of think back to the previous video too much. So the daily returns for each portfolio"
+    },
+    {
+      "start": 1197.18,
+      "end": 1204.14,
+      "text": "are calculated in columns D and E and they're simply the percentage changes in the value of each portfolio"
+    },
+    {
+      "start": 1204.14,
+      "end": 1211.02,
+      "text": "on every trading day and it's those returns that we then use to carry out the volatility analysis that I've"
+    },
+    {
+      "start": 1211.02,
+      "end": 1217.98,
+      "text": "got here on the right hand side. So over on this side then I've split the analysis into two parts the"
+    },
+    {
+      "start": 1217.98,
+      "end": 1226.14,
+      "text": "statistics I've calculated in columns G to K are for portfolio one and the large cap portfolio and in"
+    },
+    {
+      "start": 1226.14,
+      "end": 1233.58,
+      "text": "columns L to P we've got the statistics that refer to portfolio two which is again our large mid cap mixed"
+    },
+    {
+      "start": 1233.58,
+      "end": 1239.82,
+      "text": "portfolio and each of these sections contains subsections which can be split into descriptive"
+    },
+    {
+      "start": 1239.82,
+      "end": 1247.74,
+      "text": "statistics, a frequency table and a histogram and a portfolio value chart. So let's look at the"
+    },
+    {
+      "start": 1247.74,
+      "end": 1255.42,
+      "text": "descriptive statistics first. We can see that both portfolios have 106 daily return values meaning the"
+    },
+    {
+      "start": 1255.42,
+      "end": 1262.78,
+      "text": "portfolio values have been calculated over 107 days. We know from the last video that portfolio one didn't"
+    },
+    {
+      "start": 1262.78,
+      "end": 1270.3,
+      "text": "perform as well as portfolio two over the period that we analyzed and so as we would expect it has a"
+    },
+    {
+      "start": 1270.3,
+      "end": 1277.74,
+      "text": "lower average daily return and a lower maximum return over the period. Now the returns might be lower for"
+    },
+    {
+      "start": 1277.74,
+      "end": 1284.78,
+      "text": "portfolio one but the volatility is also lower. If we look at the values of standard deviation then we can"
+    },
+    {
+      "start": 1284.78,
+      "end": 1291.26,
+      "text": "see that the daily standard deviation in portfolio two is almost twice as large as portfolio one and"
+    },
+    {
+      "start": 1291.26,
+      "end": 1297.18,
+      "text": "again this is something you should have expected given what we talked about in the last video. I'm not"
+    },
+    {
+      "start": 1297.18,
+      "end": 1303.26,
+      "text": "trying to say here that higher volatility is better because actually all else being equal it isn't."
+    },
+    {
+      "start": 1304.06,
+      "end": 1309.74,
+      "text": "What I am trying to show you is that in order to generate higher returns it's likely that you'll need"
+    },
+    {
+      "start": 1309.74,
+      "end": 1317.18,
+      "text": "to take on greater volatility and portfolio two reflects that. So let's move on to the frequency"
+    },
+    {
+      "start": 1317.18,
+      "end": 1325.82,
+      "text": "tables now in rows 22 to 37. What you can see here are tables that count the number of daily returns in"
+    },
+    {
+      "start": 1325.82,
+      "end": 1333.02,
+      "text": "each series that land within certain ranges. For example if we look at the frequency table for portfolio one"
+    },
+    {
+      "start": 1333.26,
+      "end": 1341.74,
+      "text": "we can see that five data points have a value that lie between or that lies between minus 0.98 percent"
+    },
+    {
+      "start": 1341.74,
+      "end": 1352.22,
+      "text": "and minus 0.72 percent. Equally 22 daily returns values are within the range from 0.07 percent to 0.33 percent"
+    },
+    {
+      "start": 1352.22,
+      "end": 1358.7,
+      "text": "and so on. Aside from these tables telling us the absolute frequency of data points landing within certain"
+    },
+    {
+      "start": 1358.7,
+      "end": 1368.62,
+      "text": "ranges they also tell us the empirical probability. That is the probability given the historical data"
+    },
+    {
+      "start": 1368.62,
+      "end": 1377.18,
+      "text": "set and each of these ranges of returns occurring. So for example we can see that the range from 0.85 percent"
+    },
+    {
+      "start": 1377.18,
+      "end": 1385.42,
+      "text": "to 1.12 percent only accounts for 2.83 percent of the data and so we could infer that there's only a"
+    },
+    {
+      "start": 1385.42,
+      "end": 1394.78,
+      "text": "2.83 percent probability of that range of returns taking place on any given day based on the historical"
+    },
+    {
+      "start": 1394.78,
+      "end": 1403.66,
+      "text": "data set that we've analyzed. The cumulative probability column is a derivation of that and sequentially sums"
+    },
+    {
+      "start": 1403.66,
+      "end": 1409.66,
+      "text": "up all the probability values for each range starting from the lowest one. What that allows us to say is"
+    },
+    {
+      "start": 1409.66,
+      "end": 1419.18,
+      "text": "things like portfolio one has a roughly 85 percent chance that it returns less than 0.59 percent on a"
+    },
+    {
+      "start": 1419.18,
+      "end": 1425.58,
+      "text": "given day for example based on the data that we're looking at. Now I should point out here that inferring"
+    },
+    {
+      "start": 1425.58,
+      "end": 1431.26,
+      "text": "future probabilities with historical data is tricky at the best of times and it should definitely be avoided"
+    },
+    {
+      "start": 1431.26,
+      "end": 1438.54,
+      "text": "when we're dealing with such a small data set. Remember what we're really trying to understand here is the"
+    },
+    {
+      "start": 1438.54,
+      "end": 1444.94,
+      "text": "difference in volatility between the two portfolios not what the probability of certain ranges of returns"
+    },
+    {
+      "start": 1444.94,
+      "end": 1452.62,
+      "text": "will be in the future. When we compare the data between the two portfolios at the frequency table level"
+    },
+    {
+      "start": 1452.62,
+      "end": 1459.5,
+      "text": "we can make some quick inferences about volatility again. So in portfolio two you can see here that the ranges of"
+    },
+    {
+      "start": 1459.5,
+      "end": 1467.26,
+      "text": "returns that have a probability of above zero is much wider meaning returns can vary obviously a lot more."
+    },
+    {
+      "start": 1468.14,
+      "end": 1474.3,
+      "text": "That backs up the summary that we obtained from the descriptive statistics but this obviously gives"
+    },
+    {
+      "start": 1474.3,
+      "end": 1481.02,
+      "text": "gives us a bit more flavor by diving into the details of the distributions. The frequency table data"
+    },
+    {
+      "start": 1481.02,
+      "end": 1488.14,
+      "text": "we've been looking at is then plotted into charts in the rows below and this is just a graphical representation"
+    },
+    {
+      "start": 1488.14,
+      "end": 1494.62,
+      "text": "really of what we already know by looking at the tables above but that being said it can be easier to gauge"
+    },
+    {
+      "start": 1494.62,
+      "end": 1501.9,
+      "text": "the shape of the distribution visually in a histogram format. I won't go into too much detail here about"
+    },
+    {
+      "start": 1501.9,
+      "end": 1510.78,
+      "text": "how that's useful but I talked about it in the context of things like skewness and kurtosis statistics"
+    },
+    {
+      "start": 1510.78,
+      "end": 1517.9,
+      "text": "in the IPLT videos so you can check that out if you want to. Finally if you look at the charts at the"
+    },
+    {
+      "start": 1517.9,
+      "end": 1524.46,
+      "text": "bottom of this analysis sheet you'll see plots of the two portfolios value over time. As I said in the"
+    },
+    {
+      "start": 1524.46,
+      "end": 1531.26,
+      "text": "last video plotting portfolio value is easy enough to do and you can see here that portfolio two outperforms"
+    },
+    {
+      "start": 1531.26,
+      "end": 1538.62,
+      "text": "portfolio one quite significantly however as we've seen at almost every stage of the analysis here you can"
+    },
+    {
+      "start": 1538.62,
+      "end": 1545.1,
+      "text": "also tell that there's more volatility in the portfolio just by looking at the line on the chart really"
+    },
+    {
+      "start": 1545.1,
+      "end": 1551.82,
+      "text": "since you know the rises and declines in value are steeper given that both charts are scaled in the same"
+    },
+    {
+      "start": 1551.82,
+      "end": 1559.34,
+      "text": "format. So that's a really quick synopsis really of how you can use a distribution of returns to"
+    },
+    {
+      "start": 1559.34,
+      "end": 1566.62,
+      "text": "analyze your portfolio and its volatility. This is kind of a great way of getting an in-depth understanding"
+    },
+    {
+      "start": 1566.62,
+      "end": 1571.98,
+      "text": "of how your portfolio has been working in the past and that data can then be used to derive certain"
+    },
+    {
+      "start": 1571.98,
+      "end": 1578.3,
+      "text": "trading performance statistics which we're going to cover later in the video series. This kind of analysis"
+    },
+    {
+      "start": 1578.3,
+      "end": 1584.06,
+      "text": "is also useful for being able to compare the historical performance of two or more portfolios"
+    },
+    {
+      "start": 1584.06,
+      "end": 1591.74,
+      "text": "in terms of their risk and returns and generally you'll find that as with individual assets higher"
+    },
+    {
+      "start": 1591.74,
+      "end": 1599.58,
+      "text": "volatility portfolios represent higher risk but also higher reward. However that being said that"
+    },
+    {
+      "start": 1599.58,
+      "end": 1606.14,
+      "text": "relationship isn't as clear-cut in portfolios because in well-structured portfolios we can actually"
+    },
+    {
+      "start": 1606.14,
+      "end": 1612.14,
+      "text": "drastically improve the amount of return we get for any given level of risk by understanding the"
+    },
+    {
+      "start": 1612.14,
+      "end": 1620.06,
+      "text": "principles of diversification and correlation. That brings me nicely onto the next section of the video"
+    },
+    {
+      "start": 1620.7,
+      "end": 1627.66,
+      "text": "where I'm going to talk about portfolio theory and modeling portfolio volatility. What we've just"
+    },
+    {
+      "start": 1627.66,
+      "end": 1634.38,
+      "text": "covered by looking at the real performance of a portfolio is how to calculate and understand realized"
+    },
+    {
+      "start": 1634.38,
+      "end": 1641.02,
+      "text": "volatility. That's something you can only do after the fact meaning that only once you have a live"
+    },
+    {
+      "start": 1641.02,
+      "end": 1648.7,
+      "text": "portfolio up and running and you're recording its value on a daily or weekly basis or whatever frequency"
+    },
+    {
+      "start": 1648.7,
+      "end": 1654.46,
+      "text": "you're recording on can you then start performing an in-depth volatility analysis as we've looked at"
+    },
+    {
+      "start": 1654.46,
+      "end": 1661.9,
+      "text": "briefly there. What I want to show you now is how to calculate expected portfolio volatility which will help you"
+    },
+    {
+      "start": 1661.9,
+      "end": 1669.9,
+      "text": "understand your portfolio construction as it currently stands and also help you model any structural changes"
+    },
+    {
+      "start": 1669.9,
+      "end": 1677.34,
+      "text": "you might make. The difference here really compared to looking at realized volatility as we did before is"
+    },
+    {
+      "start": 1677.34,
+      "end": 1684.22,
+      "text": "that we're going to use a model where we can estimate what the volatility of the portfolio that we currently hold is"
+    },
+    {
+      "start": 1684.22,
+      "end": 1691.82,
+      "text": "and also what it might be going forward as well as how it can change when the inputs of the portfolio are varied"
+    },
+    {
+      "start": 1691.82,
+      "end": 1700.06,
+      "text": "such as you know the number of assets, the weightings of the positions and so on. Now obviously this has a number of benefits"
+    },
+    {
+      "start": 1700.62,
+      "end": 1706.78,
+      "text": "such as allowing you to understand the potential levels of risk and opportunity in the portfolio."
+    },
+    {
+      "start": 1707.18,
+      "end": 1714.14,
+      "text": "You're able to model a portfolio's volatility under various scenarios by changing inputs like the"
+    },
+    {
+      "start": 1714.14,
+      "end": 1720.14,
+      "text": "constituents of the portfolio and their weightings as I've just said and because you can model these"
+    },
+    {
+      "start": 1720.14,
+      "end": 1726.7,
+      "text": "various scenarios by changing portfolio inputs it also means you can use these techniques to try and"
+    },
+    {
+      "start": 1726.7,
+      "end": 1733.18,
+      "text": "target certain levels of volatility in the portfolio as well. Now that's not something commonly done on the retail"
+    },
+    {
+      "start": 1733.18,
+      "end": 1738.86,
+      "text": "side but in the investment management industry it's quite common. So before we move on to the"
+    },
+    {
+      "start": 1738.86,
+      "end": 1744.78,
+      "text": "practical elements of using this portfolio volatility model I want to take you guys through some basic"
+    },
+    {
+      "start": 1744.78,
+      "end": 1750.22,
+      "text": "portfolio theory and if you understand this stuff it's going to be incredibly powerful"
+    },
+    {
+      "start": 1750.22,
+      "end": 1756.46,
+      "text": "and enable you to really understand how to build well-structured portfolios with great risk return profiles."
+    },
+    {
+      "start": 1757.98,
+      "end": 1764.38,
+      "text": "Essentially what I think is really important here is to understand how to calculate portfolio"
+    },
+    {
+      "start": 1764.38,
+      "end": 1770.46,
+      "text": "volatility i.e. how the equation behind the model that we're going to use actually works. Now I'm not"
+    },
+    {
+      "start": 1770.46,
+      "end": 1777.58,
+      "text": "going to do this in in massive detail regarding the equation itself but what I am going to discuss with you"
+    },
+    {
+      "start": 1777.58,
+      "end": 1785.18,
+      "text": "guys is what the inputs are into the equation and that will then give us an understanding of the drivers"
+    },
+    {
+      "start": 1785.18,
+      "end": 1792.7,
+      "text": "behind portfolio volatility. With that being said once all the underlying positions in the portfolio are"
+    },
+    {
+      "start": 1792.7,
+      "end": 1800.38,
+      "text": "defined the three sets of inputs required for calculating and hence modeling portfolio volatility"
+    },
+    {
+      "start": 1800.38,
+      "end": 1806.06,
+      "text": "are firstly the weightings of the individual assets in the portfolio. This is something that we looked"
+    },
+    {
+      "start": 1806.06,
+      "end": 1811.02,
+      "text": "at in the previous video but basically the weighting for each position in the portfolio is just the gross"
+    },
+    {
+      "start": 1811.02,
+      "end": 1818.78,
+      "text": "exposure of that position divided by the gross exposure of the overall portfolio. The variance of every asset"
+    },
+    {
+      "start": 1818.78,
+      "end": 1825.42,
+      "text": "in the portfolio is also an input. The variance is just a measure of volatility and actually it's"
+    },
+    {
+      "start": 1825.42,
+      "end": 1834.3,
+      "text": "mathematically equal to the standard deviation squared. And finally we need the co-variances of all the assets in the portfolio."
+    },
+    {
+      "start": 1834.3,
+      "end": 1844.78,
+      "text": "Now co-variances are measures of the relationship between two assets and so every pair of assets or positions in the portfolio"
+    },
+    {
+      "start": 1844.78,
+      "end": 1853.02,
+      "text": "will have a pairwise covariance value that defines their linear relationship. And I'm going to talk in more detail"
+    },
+    {
+      "start": 1853.02,
+      "end": 1860.78,
+      "text": "about co-variances and correlations in the next video but a positive covariance value means that the two assets being measured"
+    },
+    {
+      "start": 1860.78,
+      "end": 1865.74,
+      "text": "tend to tend to move in the same direction at the same time and vice versa. If you've heard about"
+    },
+    {
+      "start": 1865.74,
+      "end": 1871.74,
+      "text": "correlation or the Pearson's coefficient of correlation more specifically then that's just basically a"
+    },
+    {
+      "start": 1871.74,
+      "end": 1878.94,
+      "text": "normalized covariance meaning it's bound between the values of one and minus one whereas covariance is unbounded."
+    },
+    {
+      "start": 1878.94,
+      "end": 1886.78,
+      "text": "Now in this video and the next one I might kind of use covariance and correlation terms kind of"
+    },
+    {
+      "start": 1886.78,
+      "end": 1892.78,
+      "text": "interchangeably to represent the same thing because really what I'm talking about when I use those terms"
+    },
+    {
+      "start": 1892.78,
+      "end": 1898.22,
+      "text": "although they are slightly mathematically different what I'm talking about is how they kind of define"
+    },
+    {
+      "start": 1898.22,
+      "end": 1905.82,
+      "text": "the linear relationships between two assets. So if you want to get to grips further with statistics like"
+    },
+    {
+      "start": 1905.82,
+      "end": 1912.62,
+      "text": "variances and co-variances then you can check out the basic statistics guide pdf which is a download file"
+    },
+    {
+      "start": 1912.62,
+      "end": 1919.5,
+      "text": "available earlier in the video series. Realistically though there's no need to dive into the details too"
+    },
+    {
+      "start": 1919.5,
+      "end": 1927.18,
+      "text": "much there and you just need to know that variance and standard deviations are measures of volatility"
+    },
+    {
+      "start": 1927.18,
+      "end": 1933.66,
+      "text": "and that the variance is just the standard deviation squared and covariance and correlation statistics"
+    },
+    {
+      "start": 1933.66,
+      "end": 1943.58,
+      "text": "are measures of the linear relationships between two assets. So let's go back to the inputs for our expected"
+    },
+    {
+      "start": 1943.58,
+      "end": 1949.58,
+      "text": "portfolio volatility model. Weightings are easy to define as you've seen in the previous video we can"
+    },
+    {
+      "start": 1949.58,
+      "end": 1956.14,
+      "text": "just assign a percentage weight to each position as we wish to as long as the total sum of the gross"
+    },
+    {
+      "start": 1956.14,
+      "end": 1963.1,
+      "text": "weightings equal 100%. The other inputs require a little bit more thought though because when we're"
+    },
+    {
+      "start": 1963.1,
+      "end": 1970.3,
+      "text": "talking about expected portfolio volatility the variance and covariance values that we use are just"
+    },
+    {
+      "start": 1970.3,
+      "end": 1976.54,
+      "text": "estimates of what we expect those values to be in the future and there's a number of ways to come up with"
+    },
+    {
+      "start": 1976.54,
+      "end": 1982.46,
+      "text": "these estimates but I want to keep things simple here. So the way we're going to obtain these estimates is"
+    },
+    {
+      "start": 1982.46,
+      "end": 1987.9,
+      "text": "just by using a sample of past returns for all of the individual assets in the portfolio and then"
+    },
+    {
+      "start": 1987.9,
+      "end": 1994.22,
+      "text": "calculating variance and covariance terms from that data for each asset and then that will kind of be"
+    },
+    {
+      "start": 1994.22,
+      "end": 2004.7,
+      "text": "used as our estimations for those future values as well. Okay so now we know what inputs are required"
+    },
+    {
+      "start": 2004.7,
+      "end": 2012.38,
+      "text": "let's move on to the portfolio volatility equation itself. As I said previously I'm not going to go"
+    },
+    {
+      "start": 2012.38,
+      "end": 2018.78,
+      "text": "into any complicated maths here I just want to outline how the equation works rather than teach you the"
+    },
+    {
+      "start": 2018.78,
+      "end": 2024.38,
+      "text": "details because knowing how the equation works and what affects its output is far more important for you"
+    },
+    {
+      "start": 2024.38,
+      "end": 2031.5,
+      "text": "guys to learn than being able to write out the equation yourselves like we're doing you know a university"
+    },
+    {
+      "start": 2031.5,
+      "end": 2038.06,
+      "text": "exam or something like that. So as I explained previously portfolio volatility depends on three"
+    },
+    {
+      "start": 2038.06,
+      "end": 2043.02,
+      "text": "sets of inputs the weightings of each position in the portfolio and the variance of those positions"
+    },
+    {
+      "start": 2043.02,
+      "end": 2048.22,
+      "text": "and the covariances between all of those positions. Let's ignore weightings for now."
+    },
+    {
+      "start": 2049.34,
+      "end": 2055.98,
+      "text": "A typical way to look at the variances and covariances of assets in the portfolio is through"
+    },
+    {
+      "start": 2055.98,
+      "end": 2062.94,
+      "text": "something called a variance covariance matrix. Now I've got an example here which I'm going to use to"
+    },
+    {
+      "start": 2062.94,
+      "end": 2071.98,
+      "text": "explain the fundamentals of the portfolio volatility equation. So here's our example variance covariance"
+    },
+    {
+      "start": 2071.98,
+      "end": 2080.46,
+      "text": "matrix. Imagine a hypothetical portfolio that contains the assets that we've denoted by the tickers that you can"
+    },
+    {
+      "start": 2080.46,
+      "end": 2088.3,
+      "text": "see in the row and column titles of this table. The values contained in this matrix are all covariance"
+    },
+    {
+      "start": 2088.3,
+      "end": 2095.74,
+      "text": "calculations based on weekly returns over the same historic period for each asset. As I said before"
+    },
+    {
+      "start": 2095.74,
+      "end": 2103.02,
+      "text": "covariances represent the pairwise relationship or linear relationship between two assets and so every value"
+    },
+    {
+      "start": 2103.02,
+      "end": 2111.58,
+      "text": "you see here is calculated based on two stocks which are the tickers in the representative column and row titles for each"
+    },
+    {
+      "start": 2111.58,
+      "end": 2120.54,
+      "text": "cell. So for example we can see here that the covariance between Facebook and Disney is 0.00063."
+    },
+    {
+      "start": 2121.98,
+      "end": 2128.7,
+      "text": "When covariance calculations are run on a single asset we get the variance of that asset. So these values are"
+    },
+    {
+      "start": 2128.7,
+      "end": 2133.98,
+      "text": "shown on the diagonal where the representative row and column tickers are equal to each other. So for"
+    },
+    {
+      "start": 2133.98,
+      "end": 2144.3,
+      "text": "example we can see here that the variance calculated for Visa stock in this example is 0.0009."
+    },
+    {
+      "start": 2145.42,
+      "end": 2152.14,
+      "text": "If you look at the table as a whole you can see that the numbers either side of the diagonal variance"
+    },
+    {
+      "start": 2152.14,
+      "end": 2159.18,
+      "text": "values are symmetrical. That's because if you take the covariance of x with y it's the same as the"
+    },
+    {
+      "start": 2159.18,
+      "end": 2166.46,
+      "text": "covariance of y with x or if we exchange those x and y values. If you take the covariance of Facebook"
+    },
+    {
+      "start": 2166.46,
+      "end": 2170.54,
+      "text": "with Disney it's the same as taking the covariance of Disney with Facebook if that makes sense."
+    },
+    {
+      "start": 2171.26,
+      "end": 2177.82,
+      "text": "So the question is why am I showing you this kind of random covariance matrix and how does it actually"
+    },
+    {
+      "start": 2177.82,
+      "end": 2186.14,
+      "text": "help us understand the portfolio volatility equation? Well let's imagine you want to work out the"
+    },
+    {
+      "start": 2186.14,
+      "end": 2192.62,
+      "text": "expected volatility for a portfolio that is long all of these stocks. The matrix here provides estimates"
+    },
+    {
+      "start": 2192.62,
+      "end": 2197.66,
+      "text": "using historical returns of all the variance and covariance terms you would need to calculate this"
+    },
+    {
+      "start": 2197.66,
+      "end": 2205.34,
+      "text": "portfolio's volatility. What I'm saying is volatility for a portfolio of these stocks is a function of all"
+    },
+    {
+      "start": 2205.34,
+      "end": 2210.86,
+      "text": "of the terms that you can see here. The key reason why I wanted to illustrate this in this way is because"
+    },
+    {
+      "start": 2210.86,
+      "end": 2219.42,
+      "text": "it actually gives us a really important insight into the importance of covariances or the relationships"
+    },
+    {
+      "start": 2219.42,
+      "end": 2227.34,
+      "text": "between portfolio positions to the overall output of portfolio volatility. For example let's imagine that"
+    },
+    {
+      "start": 2227.34,
+      "end": 2234.46,
+      "text": "we have a portfolio that only contains one stock let's say visa the variance of that portfolio would"
+    },
+    {
+      "start": 2234.46,
+      "end": 2240.78,
+      "text": "just be equal to the variance of visa and the volatility of that portfolio would just be the square root of"
+    },
+    {
+      "start": 2240.78,
+      "end": 2245.58,
+      "text": "the variance so the standard deviation is is typically the volatility value that we're talking about"
+    },
+    {
+      "start": 2245.58,
+      "end": 2253.18,
+      "text": "and standard deviation is the square root of the variance. If we then include Disney into the portfolio"
+    },
+    {
+      "start": 2253.18,
+      "end": 2261.82,
+      "text": "the variance of the portfolio becomes a function of the variance terms of both Disney and visa and the"
+    },
+    {
+      "start": 2261.82,
+      "end": 2269.02,
+      "text": "covariance terms between them so it's a function of two variance terms and two covariance terms."
+    },
+    {
+      "start": 2270.3,
+      "end": 2278.78,
+      "text": "In a three stock portfolio let's imagine we're now including Nike or Nike as well portfolio variance would then"
+    },
+    {
+      "start": 2278.78,
+      "end": 2287.26,
+      "text": "become a function of three variance terms and six covariance terms. This is the important part to"
+    },
+    {
+      "start": 2287.26,
+      "end": 2295.34,
+      "text": "understand as assets are added portfolio variance becomes a function of many more covariance terms than it"
+    },
+    {
+      "start": 2295.34,
+      "end": 2301.9,
+      "text": "does of variance terms and put simply what we're saying here is that in any sort of reasonably sized portfolio"
+    },
+    {
+      "start": 2301.9,
+      "end": 2308.78,
+      "text": "it's the relationships of positions in the portfolio quantified by you know either covariance or"
+    },
+    {
+      "start": 2308.78,
+      "end": 2316.7,
+      "text": "correlation terms not the volatility of the individual assets that primarily drives portfolio volatility."
+    },
+    {
+      "start": 2317.42,
+      "end": 2322.54,
+      "text": "To demonstrate this further I have built a chart up at the top of this sheet that illustrates these"
+    },
+    {
+      "start": 2322.54,
+      "end": 2330.46,
+      "text": "principles in more detail. What this chart shows is the volatility measured as a standard deviation of"
+    },
+    {
+      "start": 2330.46,
+      "end": 2337.02,
+      "text": "various portfolios given different assumptions of correlation and volatility in the individual constituents"
+    },
+    {
+      "start": 2337.02,
+      "end": 2344.06,
+      "text": "of those portfolios. To make things simple within each portfolio I have assumed that all assets have equal weightings,"
+    },
+    {
+      "start": 2344.06,
+      "end": 2352.54,
+      "text": "equal volatilities, equal volatilities and equal correlations. So we're definitely covering theoretical examples here but"
+    },
+    {
+      "start": 2352.54,
+      "end": 2357.9,
+      "text": "they're still going to sort of enhance your understanding of the principles that I'm trying to get across."
+    },
+    {
+      "start": 2358.46,
+      "end": 2363.74,
+      "text": "So each portfolio is represented by a different line in the chart and they all have varying"
+    },
+    {
+      "start": 2363.74,
+      "end": 2369.82,
+      "text": "assumptions of volatility and correlation values. What I'm trying to demonstrate through this chart is how both the"
+    },
+    {
+      "start": 2369.82,
+      "end": 2375.98,
+      "text": "volatility of individual portfolio constituents and the correlation terms between them affect overall"
+    },
+    {
+      "start": 2375.98,
+      "end": 2385.42,
+      "text": "portfolio volatility based on how many positions are in the portfolio. You can see here that every"
+    },
+    {
+      "start": 2385.42,
+      "end": 2392.7,
+      "text": "portfolio has a reduction in volatility as more assets are added which is always true provided the new assets"
+    },
+    {
+      "start": 2392.7,
+      "end": 2397.98,
+      "text": "are not perfectly correlated with the rest of the portfolio i.e. equal to one."
+    },
+    {
+      "start": 2397.98,
+      "end": 2406.94,
+      "text": "The intercept on the left hand side and the maximum volatility for each portfolio therefore occurs when"
+    },
+    {
+      "start": 2407.5,
+      "end": 2414.46,
+      "text": "there is only one asset in the portfolio and that is equal to the volatility of the single asset in the"
+    },
+    {
+      "start": 2414.46,
+      "end": 2422.86,
+      "text": "portfolio as we discussed earlier. The speed at which portfolio volatility then decreases when new assets are"
+    },
+    {
+      "start": 2422.86,
+      "end": 2429.98,
+      "text": "added which are added which we can see in the the slope of these lines is dependent on the correlation between"
+    },
+    {
+      "start": 2429.98,
+      "end": 2437.1,
+      "text": "positions in the portfolio. If we take the grey line for example the individual asset volatilities are set"
+    },
+    {
+      "start": 2437.1,
+      "end": 2445.42,
+      "text": "constant at 0.25 which is equal to 25% and the correlation between all the assets in the portfolio is set to 0.6"
+    },
+    {
+      "start": 2445.42,
+      "end": 2452.54,
+      "text": "which is equal to 60 percent. So with one asset in that portfolio the volatility of the whole portfolio is"
+    },
+    {
+      "start": 2452.54,
+      "end": 2461.18,
+      "text": "obviously equal to 25% but as more assets are added to the portfolio volatility decreases but not at a very"
+    },
+    {
+      "start": 2461.18,
+      "end": 2467.74,
+      "text": "quick rate and to the point where volatility barely changes as you add assets beyond you know the numbers of"
+    },
+    {
+      "start": 2467.74,
+      "end": 2474.78,
+      "text": "sort of 6 or 7. That's because the correlation between all of the positions is actually set quite high"
+    },
+    {
+      "start": 2474.78,
+      "end": 2482.78,
+      "text": "at 0.6 as i said 60%. As a reference point that might be the kind of outcome you get if you're sort of long"
+    },
+    {
+      "start": 2482.78,
+      "end": 2491.02,
+      "text": "only mega caps in similar sectors. Conversely if you have a look at the orange portfolio here we've assumed that the"
+    },
+    {
+      "start": 2491.02,
+      "end": 2498.62,
+      "text": "individual asset volatilities in the portfolio are a little higher at 35% but the correlations are lower"
+    },
+    {
+      "start": 2498.62,
+      "end": 2505.9,
+      "text": "at 20%. In that case the portfolio volatility starts 10% higher than the previous portfolio the grey"
+    },
+    {
+      "start": 2505.9,
+      "end": 2513.74,
+      "text": "portfolio but as more assets are added the volatility actually continues lower than the previous portfolio"
+    },
+    {
+      "start": 2513.74,
+      "end": 2522.54,
+      "text": "and again that is due to the lower correlations. I've labelled the orange portfolio as an example of"
+    },
+    {
+      "start": 2522.54,
+      "end": 2529.74,
+      "text": "being long short large and mid cap equities. In reality in that kind of portfolio the average"
+    },
+    {
+      "start": 2529.74,
+      "end": 2537.58,
+      "text": "correlation may even be quite a bit lower as we'll see in an example later. The yellow portfolio changes"
+    },
+    {
+      "start": 2537.58,
+      "end": 2543.66,
+      "text": "depending on the inputs that you enter into the cells D3 and D4 here where you can enter"
+    },
+    {
+      "start": 2543.66,
+      "end": 2549.26,
+      "text": "values for pairwise correlations and asset volatilities in the portfolio. These are in"
+    },
+    {
+      "start": 2549.26,
+      "end": 2557.34,
+      "text": "decimals so 0.2 means 20% for example and I've restricted the correlation cell to only accept values"
+    },
+    {
+      "start": 2557.34,
+      "end": 2564.14,
+      "text": "between 0 and 1 because although negative correlations within portfolios are possible especially within"
+    },
+    {
+      "start": 2564.14,
+      "end": 2570.22,
+      "text": "a long short portfolio I think it just kind of complicates the concepts that I'm trying to get across"
+    },
+    {
+      "start": 2570.22,
+      "end": 2577.34,
+      "text": "you so that's why I've put a limit on it. I don't want to add any kind of further confusion. You can play"
+    },
+    {
+      "start": 2577.34,
+      "end": 2582.54,
+      "text": "around with these values to get more of a feel for how they affect portfolio volatility so for example"
+    },
+    {
+      "start": 2582.54,
+      "end": 2593.9,
+      "text": "here let's put in 0.05 so 5% correlation and 50% volatility so 0.5 in this cell and when you do that"
+    },
+    {
+      "start": 2593.9,
+      "end": 2600.14,
+      "text": "you can see that the yellow portfolio changes quite significantly. Obviously when there's just one asset in that portfolio"
+    },
+    {
+      "start": 2600.14,
+      "end": 2607.82,
+      "text": "the portfolio volatility is 50% and then because the correlations are set so low at 5% the steepness of"
+    },
+    {
+      "start": 2607.82,
+      "end": 2615.34,
+      "text": "that curve i.e. the amount that risk or volatility is reduced in that portfolio as more assets are added"
+    },
+    {
+      "start": 2615.9,
+      "end": 2624.54,
+      "text": "is sort of very quick so that the volatility decreases at a very quick rate as more assets are added."
+    },
+    {
+      "start": 2624.54,
+      "end": 2632.62,
+      "text": "So that's portfolio volatility theory out of the way hopefully by going through a variance covariance"
+    },
+    {
+      "start": 2632.62,
+      "end": 2637.82,
+      "text": "matrix and looking at this chart you guys understand a bit more about why correlations between assets"
+    },
+    {
+      "start": 2637.82,
+      "end": 2645.42,
+      "text": "are important and how they affect the volatility of the overall portfolio. Ultimately you know what we're"
+    },
+    {
+      "start": 2645.42,
+      "end": 2653.26,
+      "text": "talking about here is the sort of positive effects of diversification. At this stage i do want to point"
+    },
+    {
+      "start": 2653.26,
+      "end": 2660.7,
+      "text": "out a very important sort of practical consideration to do with diversification. Now you could be forgiven"
+    },
+    {
+      "start": 2660.7,
+      "end": 2667.26,
+      "text": "for looking at the chart here and thinking okay great all i need to do here is fill my portfolio with loads"
+    },
+    {
+      "start": 2667.26,
+      "end": 2672.38,
+      "text": "and loads and loads of positions and as long as i can keep correlations low the performance i will get in"
+    },
+    {
+      "start": 2672.38,
+      "end": 2680.62,
+      "text": "terms of risk return will be awesome because you know the volatility will be so small. This is definitely"
+    },
+    {
+      "start": 2680.62,
+      "end": 2686.94,
+      "text": "the wrong way to think about things because the reality is that your portfolio returns are going to be driven"
+    },
+    {
+      "start": 2686.94,
+      "end": 2695.42,
+      "text": "by your higher quality ideas and over diversifying outside of those sort of top quality ideas is going"
+    },
+    {
+      "start": 2695.42,
+      "end": 2702.62,
+      "text": "to significantly dilute your returns. Basically you know you'll end up with a pretty sort of pathetic"
+    },
+    {
+      "start": 2702.62,
+      "end": 2709.82,
+      "text": "portfolio one that carries little risk but also very little reward. Interestingly though this is a problem"
+    },
+    {
+      "start": 2709.82,
+      "end": 2718.22,
+      "text": "that professional managers can sometimes face as well because usually it's sort of to do with structural or"
+    },
+    {
+      "start": 2718.22,
+      "end": 2724.38,
+      "text": "regulatory or liquidity constraints that kind of force them into over diversifying away from their core"
+    },
+    {
+      "start": 2724.38,
+      "end": 2732.22,
+      "text": "positions. Retail traders though have no excuses for this they don't have those issues at least certainly not"
+    },
+    {
+      "start": 2732.22,
+      "end": 2738.78,
+      "text": "not nearly as much so you know there's no excuse for you guys kind of over diversifying your portfolios."
+    },
+    {
+      "start": 2740.3,
+      "end": 2745.34,
+      "text": "Aside from over diversification diluting returns you guys will find that it's actually"
+    },
+    {
+      "start": 2745.34,
+      "end": 2752.78,
+      "text": "very difficult to continuously find low correlation ideas anyway and so diversification driven risk"
+    },
+    {
+      "start": 2752.78,
+      "end": 2759.42,
+      "text": "benefits are going to kind of taper off as more assets are added anyway. As well as that correlations"
+    },
+    {
+      "start": 2759.42,
+      "end": 2764.22,
+      "text": "between assets aren't fixed and they can change quite significantly. Again we'll kind of look at that a"
+    },
+    {
+      "start": 2764.22,
+      "end": 2769.1,
+      "text": "little bit in the next video. So that's another reason why you shouldn't just diversify"
+    },
+    {
+      "start": 2769.1,
+      "end": 2775.34,
+      "text": "into apparently low correlation positions for the sake of it. They have to be fuelled by high quality"
+    },
+    {
+      "start": 2775.34,
+      "end": 2782.62,
+      "text": "research to offer up the best chances for success. Good retail traders should be aiming for about 8 to"
+    },
+    {
+      "start": 2782.62,
+      "end": 2788.62,
+      "text": "12 high quality high conviction positions that have low correlations with each other depending on the"
+    },
+    {
+      "start": 2788.62,
+      "end": 2793.66,
+      "text": "capital that you have to play with maybe you can expand that portfolio size a little bit into the low"
+    },
+    {
+      "start": 2793.66,
+      "end": 2799.5,
+      "text": "of the high quality. In the next video I'm going to talk in a bit more detail about correlation including"
+    },
+    {
+      "start": 2799.5,
+      "end": 2803.66,
+      "text": "some pitfalls and things you should watch out for so we're going to revisit a bit of what I've just"
+    },
+    {
+      "start": 2803.66,
+      "end": 2808.86,
+      "text": "talked about there and I'll also cover some more sort of practical pointers when doing your own"
+    },
+    {
+      "start": 2808.86,
+      "end": 2815.02,
+      "text": "correlation analysis as well. For now though I'm going to leave portfolio theory there and we're going to"
+    },
+    {
+      "start": 2815.02,
+      "end": 2820.38,
+      "text": "move on to some practical portfolio volatility analysis using the rest of the sheet."
+    },
+    {
+      "start": 2821.26,
+      "end": 2826.86,
+      "text": "So what we're going to do next is some scenario analysis where we consider various different portfolios"
+    },
+    {
+      "start": 2826.86,
+      "end": 2833.1,
+      "text": "and see how volatility changes across them. But before we do that let me explain a bit more about how"
+    },
+    {
+      "start": 2833.1,
+      "end": 2839.18,
+      "text": "this spreadsheet is set up. We've obviously been through three sheets already. Standard deviation,"
+    },
+    {
+      "start": 2839.18,
+      "end": 2846.7,
+      "text": "calculation, portfolio distribution of returns and portfolio volatility theory. The asset volatility"
+    },
+    {
+      "start": 2846.7,
+      "end": 2853.1,
+      "text": "summary sheet shows a table of various US equities some of which you know you might be familiar with"
+    },
+    {
+      "start": 2853.1,
+      "end": 2859.5,
+      "text": "outside of these courses but some you will also recognize from the previous video or the IPLT course."
+    },
+    {
+      "start": 2860.54,
+      "end": 2867.26,
+      "text": "Inside the table each stock contains some classification information such as market capitalization and"
+    },
+    {
+      "start": 2867.26,
+      "end": 2875.1,
+      "text": "sector information as well as volatility calculations in various formats. So in the blue section of the"
+    },
+    {
+      "start": 2875.1,
+      "end": 2881.98,
+      "text": "table we have realized standard deviation calculations using different frequencies of data. If you want some"
+    },
+    {
+      "start": 2881.98,
+      "end": 2887.98,
+      "text": "specifics about how these numbers have been calculated then basically for each company the standard deviation"
+    },
+    {
+      "start": 2887.98,
+      "end": 2894.7,
+      "text": "of various frequencies of returns has been calculated over the last 30 years of stock price data before the 10th of"
+    },
+    {
+      "start": 2894.7,
+      "end": 2901.9,
+      "text": "June 2021. So for example column I shows the standard deviation of daily returns for each stock over the"
+    },
+    {
+      "start": 2901.9,
+      "end": 2909.58,
+      "text": "last 30 years prior to the 10th of June 2021. If a stock has less than 30 years of historical data available"
+    },
+    {
+      "start": 2909.58,
+      "end": 2918.3,
+      "text": "then the entire data set available is used. Column J shows the standard deviation for each stock using"
+    },
+    {
+      "start": 2918.3,
+      "end": 2926.14,
+      "text": "weekly returns over the last 30 years and so on. Beyond those blue columns of data we have more"
+    },
+    {
+      "start": 2926.14,
+      "end": 2932.3,
+      "text": "volatility values in a yellow section. This section shows the implied volatility values for each of these"
+    },
+    {
+      "start": 2932.3,
+      "end": 2939.66,
+      "text": "stocks on the 10th of June 2021 using at the money options. Implied volatility isn't something we talk"
+    },
+    {
+      "start": 2939.66,
+      "end": 2946.14,
+      "text": "about much in this course specifically but you will have learned about it in the IPLT course. Put simply implied"
+    },
+    {
+      "start": 2946.14,
+      "end": 2953.02,
+      "text": "volatility is a forward-looking measure of volatility using option prices in the market which makes it"
+    },
+    {
+      "start": 2953.02,
+      "end": 2958.46,
+      "text": "preferable really as a calculation method over realized volatility for the most part since"
+    },
+    {
+      "start": 2958.46,
+      "end": 2963.9,
+      "text": "we're interested in how stocks will behave in the future not how they have done in the past."
+    },
+    {
+      "start": 2964.94,
+      "end": 2970.46,
+      "text": "Sometimes though we're forced into using past prices to make estimates about future volatility in"
+    },
+    {
+      "start": 2970.46,
+      "end": 2976.54,
+      "text": "correlation because there is no better alternative or because it's significantly quicker and easier to"
+    },
+    {
+      "start": 2976.54,
+      "end": 2987.26,
+      "text": "calculate. Now this summary sheet is really just here as a guide to show you which equities data are in the"
+    },
+    {
+      "start": 2987.26,
+      "end": 2994.38,
+      "text": "file and therefore can be used in the portfolio volatility calculator but I want to quickly point out a few"
+    },
+    {
+      "start": 2994.38,
+      "end": 3002.06,
+      "text": "things about the volatility values that we see here. Firstly remember what I said about volatility earlier"
+    },
+    {
+      "start": 3002.06,
+      "end": 3009.9,
+      "text": "in that it represents both risk and opportunity. Typically we see higher volatility across equities than in"
+    },
+    {
+      "start": 3009.9,
+      "end": 3018.22,
+      "text": "other asset classes and within equities volatility and hence opportunity for profit increases as you slide"
+    },
+    {
+      "start": 3018.22,
+      "end": 3025.66,
+      "text": "down the market cap scale meaning lower market cap stocks tend to be more volatile and hence present us with"
+    },
+    {
+      "start": 3025.66,
+      "end": 3031.82,
+      "text": "greater profit potential when we trade them. We can see that clearly in this table by looking at the"
+    },
+    {
+      "start": 3031.82,
+      "end": 3038.46,
+      "text": "the volatility values for the various equities with different market caps. The other point I want to"
+    },
+    {
+      "start": 3038.46,
+      "end": 3045.82,
+      "text": "make which I made earlier about volatility was that it increases with longer time horizons which is"
+    },
+    {
+      "start": 3045.82,
+      "end": 3052.78,
+      "text": "quite intuitive. Trading stocks over long time periods gives the prices longer to move so that's why it's"
+    },
+    {
+      "start": 3052.78,
+      "end": 3059.34,
+      "text": "intuitive that there's more volatility in longer time horizons. So we can see here that volatility and hence"
+    },
+    {
+      "start": 3059.34,
+      "end": 3064.3,
+      "text": "opportunity increases increases as we go from daily to weekly to monthly to monthly and quarterly"
+    },
+    {
+      "start": 3064.3,
+      "end": 3070.3,
+      "text": "frequencies of return. I'm not going to go into any more detail on that here because we talk a lot about"
+    },
+    {
+      "start": 3070.3,
+      "end": 3076.14,
+      "text": "it in the IPLT course but this is why we talk about the sweet spot for trading time horizons being or for"
+    },
+    {
+      "start": 3076.14,
+      "end": 3083.66,
+      "text": "retail traders being around 20 to 60 trading days. That is of course you know dependent on market volatility as a whole."
+    },
+    {
+      "start": 3083.66,
+      "end": 3090.62,
+      "text": "The last thing that I want to note about these volatility values that you see here is that"
+    },
+    {
+      "start": 3091.34,
+      "end": 3098.78,
+      "text": "there is sometimes quite a difference between realised volatility and implied volatility for a stock over"
+    },
+    {
+      "start": 3098.78,
+      "end": 3105.02,
+      "text": "the same sort of intervals. Much of that is to do with the fact that as I said implied volatility is a"
+    },
+    {
+      "start": 3105.02,
+      "end": 3110.62,
+      "text": "forward-looking measure and it takes into account the current market environment and the outlook that"
+    },
+    {
+      "start": 3110.62,
+      "end": 3117.98,
+      "text": "stocks the stock's volatility has going forward whereas realised volatility is based on all the historical"
+    },
+    {
+      "start": 3117.98,
+      "end": 3124.86,
+      "text": "values that have been used in the standard deviation calculation. In this case up to 30 years of data."
+    },
+    {
+      "start": 3125.98,
+      "end": 3132.86,
+      "text": "These differences are particularly apparent in this table if we look at things like the the FAANG stocks."
+    },
+    {
+      "start": 3133.5,
+      "end": 3140.06,
+      "text": "If you look at stocks like Apple, Google, Facebook you'll see that the realised volatility calculations are"
+    },
+    {
+      "start": 3140.06,
+      "end": 3146.78,
+      "text": "much higher than the implied volatility calculations and that's because these stocks have experienced massive"
+    },
+    {
+      "start": 3146.78,
+      "end": 3153.34,
+      "text": "and rapid growth over the last 30 years which obviously shows up in the volatility of the stock's returns."
+    },
+    {
+      "start": 3153.98,
+      "end": 3160.46,
+      "text": "But now they are sort of huge maturing businesses with diverse operations and so realistically"
+    },
+    {
+      "start": 3160.46,
+      "end": 3165.34,
+      "text": "their growth outlook is nothing like what it was which is why the implied or forward-looking"
+    },
+    {
+      "start": 3165.34,
+      "end": 3171.9,
+      "text": "volatility values are lower. So when you're looking at this table just be aware of things like that."
+    },
+    {
+      "start": 3171.9,
+      "end": 3178.62,
+      "text": "You need to be able to understand what the volatility values of companies are but also why they might be different as well."
+    },
+    {
+      "start": 3178.62,
+      "end": 3184.86,
+      "text": "That way you can make an educated assumption about what volatility might be like in the future."
+    },
+    {
+      "start": 3186.7,
+      "end": 3192.14,
+      "text": "Okay, that was a pretty long explanation of the summary sheet but I wanted to be thorough."
+    },
+    {
+      "start": 3193.34,
+      "end": 3196.86,
+      "text": "Next up we've got the asset prices and asset return sheets."
+    },
+    {
+      "start": 3197.74,
+      "end": 3204.14,
+      "text": "All of the stocks that you can see in the summary sheet here have prices and returns data listed in these sheets."
+    },
+    {
+      "start": 3205.02,
+      "end": 3210.62,
+      "text": "The price data can be easily updated using Yahoo Finance which I'll go through a bit later in the video"
+    },
+    {
+      "start": 3211.18,
+      "end": 3215.58,
+      "text": "and the data in the return sheet is just derived from the prices sheet."
+    },
+    {
+      "start": 3216.22,
+      "end": 3220.78,
+      "text": "I've chosen to download and generate returns for each of these stocks on a weekly basis simply because"
+    },
+    {
+      "start": 3220.78,
+      "end": 3224.94,
+      "text": "that's the time frame that I like to use to calculate covariances and correlations."
+    },
+    {
+      "start": 3225.5,
+      "end": 3231.18,
+      "text": "There are some of my reasons for that which I won't go into here but if you wanted to you could do the same"
+    },
+    {
+      "start": 3231.18,
+      "end": 3237.02,
+      "text": "with daily or monthly prices should you wish to do so. However, you will need to update a couple of"
+    },
+    {
+      "start": 3237.02,
+      "end": 3242.62,
+      "text": "calculation cells in the portfolio volatility model as well if you do that so I recommend just kind of"
+    },
+    {
+      "start": 3242.62,
+      "end": 3246.3,
+      "text": "sticking to weekly data when you download and update prices."
+    },
+    {
+      "start": 3248.14,
+      "end": 3254.14,
+      "text": "As I said the returns here are generated from the prices sheet and are used for variance and"
+    },
+    {
+      "start": 3254.14,
+      "end": 3259.18,
+      "text": "covariance equations in our portfolio volatility practice sheet that we're going to be going on to"
+    },
+    {
+      "start": 3259.18,
+      "end": 3265.9,
+      "text": "shortly. An important point here which I'll mention again later is that all the different price"
+    },
+    {
+      "start": 3266.54,
+      "end": 3271.98,
+      "text": "and return data series must be the same length as each other or the calculations in the portfolio"
+    },
+    {
+      "start": 3271.98,
+      "end": 3278.06,
+      "text": "volatility model won't work. So in this case you can see that I've got prices going back to the 16th of"
+    },
+    {
+      "start": 3278.06,
+      "end": 3285.98,
+      "text": "July 2015 and returns to the 23rd of July 2015. Remember that whenever we calculate returns prices over"
+    },
+    {
+      "start": 3285.98,
+      "end": 3292.06,
+      "text": "two periods are required in the calculation and so obviously the series will always be one period"
+    },
+    {
+      "start": 3292.06,
+      "end": 3297.9,
+      "text": "shorter in the return sheet than the prices sheet. Later in the video I'm going to go through an example"
+    },
+    {
+      "start": 3297.9,
+      "end": 3304.54,
+      "text": "of downloading your own price data so you can feel comfortable with modelling your own sort of"
+    },
+    {
+      "start": 3304.54,
+      "end": 3312.86,
+      "text": "portfolio's volatility. So all of this leads us to the main event which is the portfolio volatility"
+    },
+    {
+      "start": 3312.86,
+      "end": 3319.82,
+      "text": "practice sheet. This sheet is going to automatically calculate or model expected portfolio volatility"
+    },
+    {
+      "start": 3319.82,
+      "end": 3325.9,
+      "text": "on an annualised basis for any portfolio that you build provided you've got the correct data in the"
+    },
+    {
+      "start": 3325.9,
+      "end": 3334.06,
+      "text": "supporting sheets I've just mentioned. It's a great tool really for being able to conduct scenario analysis"
+    },
+    {
+      "start": 3334.06,
+      "end": 3341.58,
+      "text": "and to help you understand the potential volatility that your portfolio faces currently and under varying"
+    },
+    {
+      "start": 3341.58,
+      "end": 3348.7,
+      "text": "circumstances when the structure of the portfolio might change. Okay so at the top of this sheet you'll"
+    },
+    {
+      "start": 3348.7,
+      "end": 3355.82,
+      "text": "see a large variance covariance matrix which can support up to 25 positions and you can insert"
+    },
+    {
+      "start": 3355.82,
+      "end": 3361.5,
+      "text": "any company that you have the data for into the portfolio model just by typing the ticker into the"
+    },
+    {
+      "start": 3361.5,
+      "end": 3367.74,
+      "text": "orange cells running down the left hand side in column B. On the right hand side in column AB you can"
+    },
+    {
+      "start": 3367.74,
+      "end": 3373.5,
+      "text": "assign the dollar net allocation to each position in the portfolio and I'll talk about that a bit more"
+    },
+    {
+      "start": 3373.5,
+      "end": 3380.46,
+      "text": "as we get into our scenario examples. The only cells that you guys should be touching in this sheet are the"
+    },
+    {
+      "start": 3380.46,
+      "end": 3387.02,
+      "text": "orange ones. All other cells are calculation cells that will update automatically based on the inputs that"
+    },
+    {
+      "start": 3387.02,
+      "end": 3394.38,
+      "text": "you enter into those orange cells. If you do end up editing calculation cells then you may run into trouble"
+    },
+    {
+      "start": 3394.38,
+      "end": 3399.74,
+      "text": "as you know there's lots of complex formulas running behind the scenes here so just be careful with your"
+    },
+    {
+      "start": 3399.74,
+      "end": 3408.38,
+      "text": "inputs. Now when you download this file the sheet will be locked so you can only actually enter values into the orange cells."
+    },
+    {
+      "start": 3408.38,
+      "end": 3414.06,
+      "text": "However, if you do want to unprotect the sheet to play around with the formulas then you can do so by"
+    },
+    {
+      "start": 3414.06,
+      "end": 3421.82,
+      "text": "going to review on the ribbon followed by unprotect sheet and then type in the password portvol. I've"
+    },
+    {
+      "start": 3421.82,
+      "end": 3429.98,
+      "text": "written a sort of note here quickly to remind you of that as well inside the sheet. As I say though you risk"
+    },
+    {
+      "start": 3429.98,
+      "end": 3435.66,
+      "text": "it's breaking the model if you edit the calculation calculation cells in this sheet which is why by default"
+    },
+    {
+      "start": 3435.66,
+      "end": 3441.5,
+      "text": "I'm locking it to kind of prevent any user error but equally you know I don't want to stop those of"
+    },
+    {
+      "start": 3441.5,
+      "end": 3448.46,
+      "text": "you that are interested in doing so to edit anything that you might wish to. So let's continue."
+    },
+    {
+      "start": 3448.46,
+      "end": 3456.94,
+      "text": "variance and covariance values are generated automatically when you have when you enter tickers and their capital"
+    },
+    {
+      "start": 3456.94,
+      "end": 3464.14,
+      "text": "allocations into those orange cells and from all of those numbers a portfolio variance figure is generated in"
+    },
+    {
+      "start": 3464.14,
+      "end": 3476.46,
+      "text": "cell B37 in the table below. That value is then converted to a standard deviation figure for the frequency of data with which you have downloaded prices."
+    },
+    {
+      "start": 3476.46,
+      "end": 3485.02,
+      "text": "So in this case we're using weekly prices and returns and so this value here in cell C40 is a"
+    },
+    {
+      "start": 3485.02,
+      "end": 3495.34,
+      "text": "weekly standard deviation value. That value is then converted to a more industry standard annualized volatility number in cell B43."
+    },
+    {
+      "start": 3496.22,
+      "end": 3503.82,
+      "text": "If you wanted to change the frequency of price and returns data that you used in the model you would need"
+    },
+    {
+      "start": 3503.82,
+      "end": 3512.38,
+      "text": "to update the formula in this cell to reflect that change. I advise you just leave it as it is for simplicity and make sure you always"
+    },
+    {
+      "start": 3512.38,
+      "end": 3514.38,
+      "text": "use weekly price data throughout the sheet"
+    },
+    {
+      "start": 3514.94,
+      "end": 3517.82,
+      "text": "but there is the possibility to do that if you wanted to."
+    },
+    {
+      "start": 3518.62,
+      "end": 3524.38,
+      "text": "The other calculation cells that I've included in this box here include a quick evaluation of the"
+    },
+    {
+      "start": 3524.38,
+      "end": 3532.94,
+      "text": "average asset standard deviation value based on the returns data in the asset return sheet and I've also"
+    },
+    {
+      "start": 3532.94,
+      "end": 3538.94,
+      "text": "converted that to an annualized figure as well. So these numbers are just kind of useful as a reference"
+    },
+    {
+      "start": 3538.94,
+      "end": 3544.94,
+      "text": "so that you have an idea of the average volatility of the individual positions that make up the portfolio."
+    },
+    {
+      "start": 3544.94,
+      "end": 3553.26,
+      "text": "Adjacent to this analysis box I've just been through there's also a sort of scenario analysis table which"
+    },
+    {
+      "start": 3553.26,
+      "end": 3557.5,
+      "text": "we're going to get into as we go through some scenario examples shortly."
+    },
+    {
+      "start": 3557.5,
+      "end": 3565.1,
+      "text": "So let's start with our first portfolio scenario now. At the moment the portfolio that we've got entered"
+    },
+    {
+      "start": 3565.1,
+      "end": 3570.54,
+      "text": "here contains six stocks which are our traditional FAANG stocks along with Microsoft as well."
+    },
+    {
+      "start": 3571.34,
+      "end": 3577.42,
+      "text": "What I'm going to do in this first scenario is build out a long only mega cap portfolio with 10 stocks"
+    },
+    {
+      "start": 3577.42,
+      "end": 3586.94,
+      "text": "all equally weighted. If we take a look back to the summary page I'm just going to pick another four mega cap stocks to add to"
+    },
+    {
+      "start": 3586.94,
+      "end": 3593.58,
+      "text": "this portfolio and the ones that I'm going to choose are Disney, IBM, Caterpillar and Striker."
+    },
+    {
+      "start": 3593.58,
+      "end": 3598.78,
+      "text": "So to add those to the portfolio we can just copy and paste the tickers into the orange cells in column B"
+    },
+    {
+      "start": 3599.66,
+      "end": 3610.14,
+      "text": "or we can type them manually so DIS for Disney, IBM for IBM, CAT for Caterpillar and SYK for Striker."
+    },
+    {
+      "start": 3611.34,
+      "end": 3617.5,
+      "text": "Whenever you enter tickers into the portfolio you must give them an associated dollar net allocation."
+    },
+    {
+      "start": 3617.5,
+      "end": 3623.1,
+      "text": "In this portfolio we're just going to create an equally weighted long only portfolio of 10 mega cap stocks"
+    },
+    {
+      "start": 3623.1,
+      "end": 3630.38,
+      "text": "with a total capital amount of capital to allocate of $100,000 so the dollar allocation"
+    },
+    {
+      "start": 3630.38,
+      "end": 3632.86,
+      "text": "for each position is going to be $10,000."
+    },
+    {
+      "start": 3634.22,
+      "end": 3640.06,
+      "text": "Before we go any further let me quickly talk about some mechanics of using the sheet"
+    },
+    {
+      "start": 3640.06,
+      "end": 3644.06,
+      "text": "specifically with reference to adding, removing or replacing positions."
+    },
+    {
+      "start": 3644.78,
+      "end": 3648.78,
+      "text": "Firstly, whenever you have tickers running down the orange cells in column B"
+    },
+    {
+      "start": 3648.78,
+      "end": 3654.94,
+      "text": "they must always be in a continuous unbroken list meaning there can't be a gap between any of the"
+    },
+    {
+      "start": 3654.94,
+      "end": 3661.5,
+      "text": "tickers that you enter. When you add an asset to the portfolio that means you should enter the new"
+    },
+    {
+      "start": 3661.5,
+      "end": 3666.86,
+      "text": "ticker directly below the tickers that you already have listed as constituents in the portfolio."
+    },
+    {
+      "start": 3667.74,
+      "end": 3675.1,
+      "text": "When you remove an asset all you need to do is delete the ticker and the associated allocation by"
+    },
+    {
+      "start": 3675.1,
+      "end": 3680.46,
+      "text": "clearing the contents of those cells and then shuffle up the tickers and the respective allocations so that"
+    },
+    {
+      "start": 3680.46,
+      "end": 3687.34,
+      "text": "there's no gaps and it remains continuous. If you want to replace an asset all you have to do is type"
+    },
+    {
+      "start": 3687.34,
+      "end": 3693.1,
+      "text": "over the ticker you wish to replace with the new ticker and the same applies for the new dollar allocation of course."
+    },
+    {
+      "start": 3695.1,
+      "end": 3701.1,
+      "text": "So essentially what we have here is a very simple equal weighted long only mega cap portfolio"
+    },
+    {
+      "start": 3701.9,
+      "end": 3712.22,
+      "text": "and you can see from cell B43 that the expected volatility for the portfolio is calculated as 19.23%"
+    },
+    {
+      "start": 3712.22,
+      "end": 3718.86,
+      "text": "on an annualized basis. Remember this number is generated using the past data that we've selected so"
+    },
+    {
+      "start": 3718.86,
+      "end": 3727.1,
+      "text": "from mid-2015 to mid-2021 and so it's just an estimation. It would only hold true if the variances and"
+    },
+    {
+      "start": 3727.1,
+      "end": 3733.66,
+      "text": "co-variances of all of the individual assets remain constant at those same values going forward. This"
+    },
+    {
+      "start": 3733.66,
+      "end": 3740.54,
+      "text": "is why it's just an estimate of portfolio volatility going forward. Before we move on to a different"
+    },
+    {
+      "start": 3740.54,
+      "end": 3746.14,
+      "text": "portfolio I just want you guys to take a quick note of the average individual asset standard deviation"
+    },
+    {
+      "start": 3746.14,
+      "end": 3755.42,
+      "text": "level in this portfolio as well which is around 28.28%. Okay so let's move on to a different scenario now"
+    },
+    {
+      "start": 3755.42,
+      "end": 3763.58,
+      "text": "where we look at another long only portfolio but this time containing five large and five mid cap stocks."
+    },
+    {
+      "start": 3764.46,
+      "end": 3768.86,
+      "text": "I've selected a sample of stocks from the list available in this sheet to make up the constituents"
+    },
+    {
+      "start": 3768.86,
+      "end": 3774.38,
+      "text": "of this portfolio and those are LVS, I'm just going to read out the tickers because it's easier rather than"
+    },
+    {
+      "start": 3774.38,
+      "end": 3788.3,
+      "text": "the full names, LVS, BBY, LEN, SPLK, VTRS, XPO, MOS, FEE, TTEC and WING."
+    },
+    {
+      "start": 3789.9,
+      "end": 3795.5,
+      "text": "You can look up what those tickers are in the summary sheet if you wish to or online as you're"
+    },
+    {
+      "start": 3795.5,
+      "end": 3800.22,
+      "text": "going through the video but like I said it's easier just to kind of stick to the tickers in a"
+    },
+    {
+      "start": 3800.86,
+      "end": 3806.86,
+      "text": "example like this. So I'm going to keep the portfolio equally weighted with ten thousand dollars per"
+    },
+    {
+      "start": 3806.86,
+      "end": 3812.3,
+      "text": "position and once I've entered all of those positions we can see how the portfolio volatility"
+    },
+    {
+      "start": 3812.3,
+      "end": 3820.78,
+      "text": "has now changed. So with this portfolio you can see the annualized standard deviation is calculated as 29.36%"
+    },
+    {
+      "start": 3821.82,
+      "end": 3829.02,
+      "text": "which is significantly more than the previous portfolio that we looked at which had a volatility of 19.23%."
+    },
+    {
+      "start": 3830.54,
+      "end": 3837.26,
+      "text": "This is largely due to the massive increase in individual asset volatility of the new constituents so"
+    },
+    {
+      "start": 3837.26,
+      "end": 3844.46,
+      "text": "our average asset volatility now reads as 44.33% rather than 28.28%."
+    },
+    {
+      "start": 3845.42,
+      "end": 3849.98,
+      "text": "So the conclusion here is similar to that which we've drawn previously and that is that"
+    },
+    {
+      "start": 3849.98,
+      "end": 3856.46,
+      "text": "there's more volatility in trading large and mid caps compared to just mega caps. That's good for us"
+    },
+    {
+      "start": 3856.46,
+      "end": 3862.7,
+      "text": "because whilst it represents additional risk it also means more opportunity for profit. There is a bit"
+    },
+    {
+      "start": 3862.7,
+      "end": 3867.74,
+      "text": "more to discuss about the differences in mid and large cap portfolios compared to mega cap ones when"
+    },
+    {
+      "start": 3867.74,
+      "end": 3873.02,
+      "text": "it comes to portfolio volatility and correlations but I'm going to save that for the next video."
+    },
+    {
+      "start": 3874.86,
+      "end": 3881.5,
+      "text": "We're going to continue now onto our third portfolio scenario and this one's going to be a bit more"
+    },
+    {
+      "start": 3881.5,
+      "end": 3886.94,
+      "text": "representative of the type of portfolio that ITPM traders might have on because it includes both"
+    },
+    {
+      "start": 3886.94,
+      "end": 3893.34,
+      "text": "longs and shorts in the mid and large cap space. So I'm going to stick with the portfolio as it is"
+    },
+    {
+      "start": 3893.34,
+      "end": 3898.94,
+      "text": "in terms of assets but instead of them all being long positions I'm going to change a few to shorts."
+    },
+    {
+      "start": 3899.82,
+      "end": 3905.5,
+      "text": "I think for this example what we'll do is look at what happens when we go short four of our large caps."
+    },
+    {
+      "start": 3905.5,
+      "end": 3911.82,
+      "text": "So that means we'll have a portfolio that's long six stocks and short four and it's predominantly"
+    },
+    {
+      "start": 3911.82,
+      "end": 3918.7,
+      "text": "weighted to being long the smaller cap stocks. I want to keep all the gross weightings to each"
+    },
+    {
+      "start": 3918.7,
+      "end": 3925.74,
+      "text": "position the same so that this portfolio remains somewhat comparable to the previous one but whilst"
+    },
+    {
+      "start": 3925.74,
+      "end": 3931.26,
+      "text": "the gross allocation to each constituent will be ten thousand dollars still the net allocation"
+    },
+    {
+      "start": 3931.26,
+      "end": 3936.78,
+      "text": "needs to be negative for our short positions with the way that this model is built. So to make that"
+    },
+    {
+      "start": 3936.78,
+      "end": 3943.1,
+      "text": "adjustment adjustment all I'm going to do here is make the top four positions negative by putting a"
+    },
+    {
+      "start": 3943.1,
+      "end": 3951.42,
+      "text": "negative sign before the allocation values in the column AB. Now once those short positions have been"
+    },
+    {
+      "start": 3951.42,
+      "end": 3958.86,
+      "text": "allocated we can have a look at the volatility analysis again. What we see here is an absolutely"
+    },
+    {
+      "start": 3958.86,
+      "end": 3964.78,
+      "text": "massive difference to our previous portfolios. The annualized standard deviation of this portfolio"
+    },
+    {
+      "start": 3964.78,
+      "end": 3972.78,
+      "text": "is much much lower at 11.23% and that's all the while the average asset volatilities of the constituents"
+    },
+    {
+      "start": 3972.78,
+      "end": 3977.42,
+      "text": "have remained the same between this one and the last scenario because remember we haven't actually"
+    },
+    {
+      "start": 3977.42,
+      "end": 3984.78,
+      "text": "changed any of the stocks themselves. So if we think back to the portfolio volatility theory I discussed"
+    },
+    {
+      "start": 3984.78,
+      "end": 3991.58,
+      "text": "earlier then we know that if volatility of the portfolio has changed but the variances or volatility of the"
+    },
+    {
+      "start": 3991.58,
+      "end": 3998.38,
+      "text": "constituents themselves hasn't then clearly the covariances or correlations must have changed and"
+    },
+    {
+      "start": 3998.38,
+      "end": 4007.58,
+      "text": "that's had a massive effect. I can tell you now that this is because we've got a portfolio with both"
+    },
+    {
+      "start": 4007.58,
+      "end": 4013.66,
+      "text": "long and short positions within it rather than just a long only portfolio. Again I'm not going to spend too"
+    },
+    {
+      "start": 4013.66,
+      "end": 4019.74,
+      "text": "much time discussing the correlation side of things right now because it's something I'm going to emphasize a"
+    },
+    {
+      "start": 4019.74,
+      "end": 4025.66,
+      "text": "lot more in the next video instead where I'm going to run through kind of the same scenarios portfolio"
+    },
+    {
+      "start": 4025.66,
+      "end": 4034.3,
+      "text": "scenarios again but from the perspective of correlation. Okay now you might be thinking at this stage"
+    },
+    {
+      "start": 4034.3,
+      "end": 4040.94,
+      "text": "given what I've kind of said and taught so far that if volatility drops that much by having both long and"
+    },
+    {
+      "start": 4040.94,
+      "end": 4048.86,
+      "text": "short positions aren't we forgoing opportunity for profit. My answer to that is no not exactly"
+    },
+    {
+      "start": 4049.42,
+      "end": 4057.02,
+      "text": "and here's why. Firstly this is a strategy for all markets. We're targeting absolute returns every"
+    },
+    {
+      "start": 4057.02,
+      "end": 4063.34,
+      "text": "year irrelevant of what happens to the market as a whole. Of course that might mean that occasionally you return"
+    },
+    {
+      "start": 4063.34,
+      "end": 4069.26,
+      "text": "less than the market but you also won't lose as much when the market goes down and over time that means"
+    },
+    {
+      "start": 4069.26,
+      "end": 4076.46,
+      "text": "you'll significantly outperform. Limiting losses is essential to wealth creation and the proof of that"
+    },
+    {
+      "start": 4076.46,
+      "end": 4083.26,
+      "text": "is kind of the simple mathematical fact that recovering from losses requires a much bigger percentage gain"
+    },
+    {
+      "start": 4083.26,
+      "end": 4089.18,
+      "text": "than the percentage loss loss suffered in the first place. So for example if you have a position"
+    },
+    {
+      "start": 4089.18,
+      "end": 4099.18,
+      "text": "that loses 20 percent you need the trade to then increase by 25 percent that's 25 percent to get back to where you started."
+    },
+    {
+      "start": 4099.18,
+      "end": 4110.22,
+      "text": "Secondly always consider what data your results and analysis are based on. In these scenarios we're working with data over a"
+    },
+    {
+      "start": 4110.22,
+      "end": 4116.3,
+      "text": "a roughly kind of six year historical period. Just because the correlations between these long and"
+    },
+    {
+      "start": 4116.3,
+      "end": 4121.58,
+      "text": "short positions have been negative over that period as a whole doesn't mean that they're going to continue"
+    },
+    {
+      "start": 4121.58,
+      "end": 4127.5,
+      "text": "to be that way when you trade your own ideas. When you generate and time your own trades you're"
+    },
+    {
+      "start": 4127.5,
+      "end": 4132.86,
+      "text": "going to have positive return expectations on both the long and short sides of your portfolio"
+    },
+    {
+      "start": 4132.86,
+      "end": 4138.46,
+      "text": "over the period that you're trading those assets. If you're right obviously the returns can be huge"
+    },
+    {
+      "start": 4138.46,
+      "end": 4143.74,
+      "text": "and if you're wrong typically you're only going to be wrong on one side either the long or short side"
+    },
+    {
+      "start": 4143.74,
+      "end": 4153.1,
+      "text": "meaning your downside is reduced. Of course it is possible that you could be wrong on both"
+    },
+    {
+      "start": 4153.1,
+      "end": 4157.58,
+      "text": "the long and short sides of your portfolio and that is going to hurt there's no doubt about that"
+    },
+    {
+      "start": 4157.58,
+      "end": 4161.02,
+      "text": "but if you do your homework and put into practice the stuff that we teach in this course"
+    },
+    {
+      "start": 4161.02,
+      "end": 4164.94,
+      "text": "then that's going to be much much less likely than it would have been otherwise."
+    },
+    {
+      "start": 4164.94,
+      "end": 4174.22,
+      "text": "Thirdly this model can only run its calculations using returns of the stocks themselves however many"
+    },
+    {
+      "start": 4174.22,
+      "end": 4179.1,
+      "text": "of you will actually end up using options to structure your trades especially if you then move"
+    },
+    {
+      "start": 4179.1,
+      "end": 4185.74,
+      "text": "on to do our POTM course our Professional Options Trading Masterclass course. Options have an implicit"
+    },
+    {
+      "start": 4185.74,
+      "end": 4192.54,
+      "text": "leverage given that they're a fraction of the cost for a kind of similar exposure compared to buying or selling"
+    },
+    {
+      "start": 4192.54,
+      "end": 4198.86,
+      "text": "the underlying stock outright and by trading options you can control the amount of leverage you take on"
+    },
+    {
+      "start": 4198.86,
+      "end": 4204.78,
+      "text": "through your allocation of capital to option premiums. So for example you might have up to"
+    },
+    {
+      "start": 4205.42,
+      "end": 4211.66,
+      "text": "five to ten times the volatility you would with the underlying portfolio for the same amount of capital"
+    },
+    {
+      "start": 4211.66,
+      "end": 4218.54,
+      "text": "committed which obviously increases the opportunity for profit massively. This doesn't actually translate to a"
+    },
+    {
+      "start": 4218.54,
+      "end": 4227.82,
+      "text": "to a directly proportionate magnified downside either since options are structured in such a way that downside"
+    },
+    {
+      "start": 4227.82,
+      "end": 4234.86,
+      "text": "is limited to the premium paid and so we can also kind of take advantage of that and in what's called"
+    },
+    {
+      "start": 4234.86,
+      "end": 4241.82,
+      "text": "an asymmetric risk profile. Understanding options and you know how you can structure ideas with them is"
+    },
+    {
+      "start": 4241.82,
+      "end": 4248.7,
+      "text": "beyond the scope of this video and beyond the scope of this course for the most part but all of that"
+    },
+    {
+      "start": 4248.7,
+      "end": 4253.58,
+      "text": "is covered in the Professional Options Trading Masterclass video series and that's something you can think"
+    },
+    {
+      "start": 4253.58,
+      "end": 4262.46,
+      "text": "about doing after completing this course. What I will talk to you briefly about though is how options work in"
+    },
+    {
+      "start": 4262.46,
+      "end": 4270.62,
+      "text": "terms of leverage with an example let's consider Mosaic stock as an example. In our portfolio above we're"
+    },
+    {
+      "start": 4270.62,
+      "end": 4281.26,
+      "text": "assuming a long position of the value $10,000 and Mosaic stock, so MOS is the ticker, MOS on the 31st of August"
+    },
+    {
+      "start": 4281.26,
+      "end": 4288.46,
+      "text": "trades at around $32 a share. So if you bought the stock you'd get about 309 shares with your $10,000."
+    },
+    {
+      "start": 4288.46,
+      "end": 4294.46,
+      "text": "Let's say you have a price target of $10,000. Let's say you have a price target of $40 within the next"
+    },
+    {
+      "start": 4294.46,
+      "end": 4304.22,
+      "text": "one to two months. If you're right you'd make $8 times by 309 shares that's equal to $2,472."
+    },
+    {
+      "start": 4305.66,
+      "end": 4312.86,
+      "text": "Let's compare that with buying a call option or call options on the stock, so on Mosaic."
+    },
+    {
+      "start": 4314.14,
+      "end": 4321.58,
+      "text": "This is a screenshot taken from Nasdaq.com on the 31st of August and basically it shows a small options"
+    },
+    {
+      "start": 4321.58,
+      "end": 4330.14,
+      "text": "chain for Mosaic for the 15th of October expiry. It looks like the $32 strike call option can be bought"
+    },
+    {
+      "start": 4330.14,
+      "end": 4339.1,
+      "text": "for around $1.83 and when you buy an options contract for a US stock it covers 100 shares of the underlying"
+    },
+    {
+      "start": 4339.1,
+      "end": 4347.34,
+      "text": "stock. So in this case for $10,000 you could buy 54 of these call contracts. With this structure"
+    },
+    {
+      "start": 4347.34,
+      "end": 4357.58,
+      "text": "if you're right on your view that Mosaic will reach $40 within expiry of the option then you'd make $33,318."
+    },
+    {
+      "start": 4359.1,
+      "end": 4369.02,
+      "text": "The options premium for that would be equal to $9,882 and so the profit is worked out as $40 minus $32"
+    },
+    {
+      "start": 4369.74,
+      "end": 4379.34,
+      "text": "times by 50 contracts, 54 contracts, sorry times by 100 shares or options per contract minus that options"
+    },
+    {
+      "start": 4379.34,
+      "end": 4389.9,
+      "text": "premium of $9,882 and that's where we get the figure $33,318. Now that's just a really simple and crude way"
+    },
+    {
+      "start": 4389.9,
+      "end": 4396.62,
+      "text": "of explaining the implicit leverage that exists in options. In that example buying the stock outright"
+    },
+    {
+      "start": 4396.62,
+      "end": 4404.78,
+      "text": "gave you exposure to 309 shares of Moss but by buying call options we had an exposure to 5,400 shares"
+    },
+    {
+      "start": 4404.78,
+      "end": 4412.06,
+      "text": "of Moss for the same cost. Granted there are caveats such as the breakeven for profit being $1.83 higher"
+    },
+    {
+      "start": 4412.06,
+      "end": 4419.82,
+      "text": "and expiry on the contracts but there are ways to mitigate or manage those risks through things like"
+    },
+    {
+      "start": 4419.82,
+      "end": 4427.26,
+      "text": "the idea generation process and more sophisticated option structures that are mentioned in our other"
+    },
+    {
+      "start": 4427.26,
+      "end": 4433.82,
+      "text": "courses. Don't forget you can obviously control the leverage you take as well by reducing the premium you"
+    },
+    {
+      "start": 4433.82,
+      "end": 4440.62,
+      "text": "spend and exposing yourself to much less contracts if you wanted to. So it does give you that added flexibility"
+    },
+    {
+      "start": 4440.62,
+      "end": 4447.74,
+      "text": "and your maximum downside is limited to the cost of the option whereas your upside for call options is"
+    },
+    {
+      "start": 4447.74,
+      "end": 4456.94,
+      "text": "unbounded. So you do benefit again from that asymmetric payoff profile as well. Typically a good trader"
+    },
+    {
+      "start": 4457.66,
+      "end": 4464.86,
+      "text": "might get 60% of all trades might get 60% of their trades right 40% wrong. 90 to 95% of all their trades"
+    },
+    {
+      "start": 4464.86,
+      "end": 4471.42,
+      "text": "over a year might sum up to a small net profit and then there's going to be 5 to 10% of those trades"
+    },
+    {
+      "start": 4471.42,
+      "end": 4479.58,
+      "text": "that are home runs and they're going to generate the majority of your end of year P&L. Now on the subject of"
+    },
+    {
+      "start": 4479.58,
+      "end": 4485.02,
+      "text": "good traders I have another little scenario analysis table in this sheet which I mentioned before and that"
+    },
+    {
+      "start": 4485.02,
+      "end": 4491.82,
+      "text": "essentially shows you what sort of return you might expect for varying levels of sharp ratio"
+    },
+    {
+      "start": 4491.82,
+      "end": 4498.38,
+      "text": "given the modelled volatility in the portfolio. The gross sharp ratio is essentially"
+    },
+    {
+      "start": 4499.18,
+      "end": 4504.86,
+      "text": "your annualised portfolio return divided by annualised volatility. The higher the number the better."
+    },
+    {
+      "start": 4505.66,
+      "end": 4510.86,
+      "text": "Very good retail traders should expect to have a gross sharp ratio of around 1.5 to 2 consistently"
+    },
+    {
+      "start": 4511.42,
+      "end": 4519.18,
+      "text": "over long periods of time. In the current portfolio that would basically equate to a 17 to 22.5%"
+    },
+    {
+      "start": 4519.18,
+      "end": 4525.18,
+      "text": "portfolio return per year. Remember though that that number is likely to be magnified if you're trading"
+    },
+    {
+      "start": 4525.18,
+      "end": 4532.46,
+      "text": "options or using leverage in other forms. What that means is a well traded long short portfolio using a"
+    },
+    {
+      "start": 4532.46,
+      "end": 4539.74,
+      "text": "structured approach with quality ideas might make more like 75 to 100% or more in a very good year."
+    },
+    {
+      "start": 4539.74,
+      "end": 4546.54,
+      "text": "Bear in mind though you know that's really only going to be achievable with the right education"
+    },
+    {
+      "start": 4546.54,
+      "end": 4553.26,
+      "text": "plenty of practice with real money trading and so on. It does take a lot of time to trade to that kind of level."
+    },
+    {
+      "start": 4554.54,
+      "end": 4562.3,
+      "text": "Okay, after that brief detour into an options example, let's return now to our fourth and final scenario."
+    },
+    {
+      "start": 4562.3,
+      "end": 4567.98,
+      "text": "I want to use this example just to talk about how you can change the weightings of your positions and"
+    },
+    {
+      "start": 4567.98,
+      "end": 4574.3,
+      "text": "a realistic scenario as to why you might wish to do so. It goes without saying that you don't have to"
+    },
+    {
+      "start": 4574.3,
+      "end": 4579.1,
+      "text": "equally weight every position in the portfolio as I've been doing in the previous scenarios."
+    },
+    {
+      "start": 4579.1,
+      "end": 4584.62,
+      "text": "You can change the allocations in column AB to anything you wish and the spreadsheet model will"
+    },
+    {
+      "start": 4584.62,
+      "end": 4591.74,
+      "text": "still work. In reality it isn't very likely that you'll be able to have precisely equal weightings"
+    },
+    {
+      "start": 4591.74,
+      "end": 4598.06,
+      "text": "anyway across all your positions because even if as in the examples we looked at before you wanted to"
+    },
+    {
+      "start": 4598.06,
+      "end": 4603.42,
+      "text": "allocate $10,000 to every position that would only really be possible if the share price of each of"
+    },
+    {
+      "start": 4603.42,
+      "end": 4610.86,
+      "text": "those stocks was a divisor of $10,000. Equally as the prices of these assets move so will the inherent"
+    },
+    {
+      "start": 4610.86,
+      "end": 4616.14,
+      "text": "weighting that you have in each position so if you're using this sheet to gauge your current portfolio's"
+    },
+    {
+      "start": 4616.14,
+      "end": 4621.18,
+      "text": "expected volatility then you need to bear that in mind as well and update it on a regular basis."
+    },
+    {
+      "start": 4622.3,
+      "end": 4628.7,
+      "text": "Other factors that might affect weightings will be your own constraints rather than those enforced on"
+    },
+    {
+      "start": 4628.7,
+      "end": 4634.38,
+      "text": "you by moving markets or mathematical impossibilities. So for example in all probability you'll want to"
+    },
+    {
+      "start": 4634.38,
+      "end": 4640.7,
+      "text": "weight your various positions based at least partially on your conviction of the trades themselves."
+    },
+    {
+      "start": 4640.7,
+      "end": 4646.7,
+      "text": "You may also want to change allocations to positions based on your market view i.e. choosing"
+    },
+    {
+      "start": 4646.7,
+      "end": 4653.26,
+      "text": "whether you're net long or short the market as a whole in dollar terms. In the portfolio we still have"
+    },
+    {
+      "start": 4653.26,
+      "end": 4660.86,
+      "text": "set up from the previous scenario you can see that at least in dollar terms we're net long the market"
+    },
+    {
+      "start": 4660.86,
+      "end": 4668.22,
+      "text": "since our long positions add up to $60,000 and our short positions only $40,000. Let's say for example"
+    },
+    {
+      "start": 4668.94,
+      "end": 4674.78,
+      "text": "that we actually want to be net neutral in terms of market exposure in dollar terms so we need to"
+    },
+    {
+      "start": 4674.78,
+      "end": 4681.18,
+      "text": "redistribute our capital across our positions to make sure our long exposure is equal to our short exposure."
+    },
+    {
+      "start": 4681.9,
+      "end": 4688.78,
+      "text": "By the way this is by no means what you should do don't take this as advice in any way it's totally"
+    },
+    {
+      "start": 4688.78,
+      "end": 4694.86,
+      "text": "dependent on your read of the market at any given time and actually dollar neutrality is just one"
+    },
+    {
+      "start": 4694.86,
+      "end": 4700.14,
+      "text": "method to balance longs and shorts. You could also take things a step further and consider something"
+    },
+    {
+      "start": 4700.14,
+      "end": 4704.78,
+      "text": "called the beta of your portfolio which actually is something we're going to look at in a couple of"
+    },
+    {
+      "start": 4704.78,
+      "end": 4715.74,
+      "text": "videos time. Anyway let's assume we want to keep the long portion of the portfolio equally weighted and"
+    },
+    {
+      "start": 4715.74,
+      "end": 4721.58,
+      "text": "the short portion of the portfolio equally weighted as well. In order to create dollar neutrality in our"
+    },
+    {
+      "start": 4721.58,
+      "end": 4726.3,
+      "text": "longs and shorts we would need to take $10,000 from our long positions and reallocate that capital to"
+    },
+    {
+      "start": 4726.3,
+      "end": 4735.26,
+      "text": "our short positions. So to do that evenly across our longs we would take away $1,666 from each position"
+    },
+    {
+      "start": 4735.26,
+      "end": 4743.58,
+      "text": "because we want to deduct $10,000 evenly across six positions. That makes each position size roughly"
+    },
+    {
+      "start": 4743.58,
+      "end": 4752.22,
+      "text": "$8,333 afterwards. Then we would allocate $2,500 to each of our short positions since we only have"
+    },
+    {
+      "start": 4752.22,
+      "end": 4757.74,
+      "text": "four of those and we need to reallocate that $10,000 that we freed up from the long side."
+    },
+    {
+      "start": 4758.86,
+      "end": 4766.14,
+      "text": "As you can see here we still basically have the same gross exposure. We're $2 out from where we were"
+    },
+    {
+      "start": 4766.14,
+      "end": 4770.86,
+      "text": "just because of rounding and dividing $10,000 by six to the nearest dollar on the long side"
+    },
+    {
+      "start": 4770.86,
+      "end": 4776.22,
+      "text": "but for the purposes of what we're doing here that $2 is pretty irrelevant so don't get caught up on it."
+    },
+    {
+      "start": 4777.34,
+      "end": 4783.98,
+      "text": "If we take a look at the analysis portion of the sheet again now you can see that by keeping"
+    },
+    {
+      "start": 4783.98,
+      "end": 4789.34,
+      "text": "exactly the same positions and just altering the weightings the expected portfolio volatility has"
+    },
+    {
+      "start": 4789.34,
+      "end": 4801.02,
+      "text": "changed. It's actually decreased by about 1.5% from 11.23% to 9.66% now. If you think about it"
+    },
+    {
+      "start": 4802.06,
+      "end": 4807.98,
+      "text": "that makes some sense because we've now redistributed capital more evenly across our longs and shorts"
+    },
+    {
+      "start": 4807.98,
+      "end": 4814.86,
+      "text": "which have negative correlations and thus reduce the overall volatility. Again we'll talk about that"
+    },
+    {
+      "start": 4814.86,
+      "end": 4821.18,
+      "text": "more in the next video. So there's some examples of why you might want to change weightings in each"
+    },
+    {
+      "start": 4821.18,
+      "end": 4827.42,
+      "text": "asset and how you can actually do that in this model. It's all simple stuff really and that's"
+    },
+    {
+      "start": 4827.42,
+      "end": 4832.46,
+      "text": "that's kind of all I wanted to cover in this scenario analysis section. I think you guys probably"
+    },
+    {
+      "start": 4832.46,
+      "end": 4837.82,
+      "text": "have a good understanding now of how you can use the model by running through those situations I"
+    },
+    {
+      "start": 4837.82,
+      "end": 4843.26,
+      "text": "just been through and so all that's left in this video now is for me to show you some of the"
+    },
+    {
+      "start": 4843.26,
+      "end": 4851.42,
+      "text": "practicalities involved in using this spreadsheet yourselves for your own portfolios. Okay so when"
+    },
+    {
+      "start": 4851.42,
+      "end": 4859.02,
+      "text": "it comes to you guys using this spreadsheet my suggestion to you is to first use it as it stands to get"
+    },
+    {
+      "start": 4859.02,
+      "end": 4865.98,
+      "text": "used to the mechanics of sort of how it works and what you can do with it. Then once you've sort of built"
+    },
+    {
+      "start": 4865.98,
+      "end": 4871.98,
+      "text": "some understanding and you think you're ready you can start making changes to the underlying data to"
+    },
+    {
+      "start": 4871.98,
+      "end": 4878.78,
+      "text": "reflect your own watch lists and portfolios. So with that being said let me talk about how you would do"
+    },
+    {
+      "start": 4878.78,
+      "end": 4886.62,
+      "text": "that. Firstly you'll want to delete all of the tickers and data that you see in the prices sheet that you"
+    },
+    {
+      "start": 4886.62,
+      "end": 4895.42,
+      "text": "don't want or need to update which will likely be all of it. Second you'll need to download new weekly price"
+    },
+    {
+      "start": 4895.42,
+      "end": 4900.3,
+      "text": "data from Yahoo Finance for the stocks that you want to be able to model portfolio for"
+    },
+    {
+      "start": 4900.3,
+      "end": 4906.14,
+      "text": "and finally that data will need to be cleaned and manipulated to make sure that the time series of"
+    },
+    {
+      "start": 4906.14,
+      "end": 4912.54,
+      "text": "prices and returns are equal and over the exact same intervals for all assets and then it's going to be"
+    },
+    {
+      "start": 4912.54,
+      "end": 4919.26,
+      "text": "ready for analysis in the rest of the sheet and you can sort of do some modeling in this portfolio"
+    },
+    {
+      "start": 4919.26,
+      "end": 4926.46,
+      "text": "volatility practice sheet. So let me run through these steps now as I said we start with deleting"
+    },
+    {
+      "start": 4926.46,
+      "end": 4933.1,
+      "text": "the underlying data currently in the spreadsheet in the asset prices sheet. So to do that I'm just going"
+    },
+    {
+      "start": 4933.1,
+      "end": 4940.54,
+      "text": "to go to the asset prices sheet left click on column c and then press ctrl shift and right on the keyboard twice"
+    },
+    {
+      "start": 4940.54,
+      "end": 4946.78,
+      "text": "to select all of the columns of data that we have here in this sheet and then press delete on the keyboard"
+    },
+    {
+      "start": 4946.78,
+      "end": 4955.82,
+      "text": "to clear the contents of all of those cells. The next step is to download the price data that you want"
+    },
+    {
+      "start": 4955.82,
+      "end": 4963.5,
+      "text": "for the assets that you want to be able to include in your portfolio volatility model. Now in this example"
+    },
+    {
+      "start": 4963.5,
+      "end": 4971.42,
+      "text": "what I'm going to do is grab some data for three new stocks they are Thor Industries ticker THO,"
+    },
+    {
+      "start": 4971.42,
+      "end": 4982.06,
+      "text": "Papa John's ticker PZZA and Herman Miller ticker MLHR. So let's start by downloading weekly price data"
+    },
+    {
+      "start": 4982.06,
+      "end": 4989.5,
+      "text": "for Thor Industries. So to do that I'm going to navigate to Yahoo Finance so finance.yahoo.com"
+    },
+    {
+      "start": 4989.5,
+      "end": 4995.9,
+      "text": "and then I'm going to put in the ticker for Thor Industries in the top search bar THO and then select"
+    },
+    {
+      "start": 4996.46,
+      "end": 5003.74,
+      "text": "the correct drop down menu option for Thor Industries. And then we're going to go to the historical data tab"
+    },
+    {
+      "start": 5003.74,
+      "end": 5011.74,
+      "text": "here on the next page and what I'm going to do is basically download all of the historical data available."
+    },
+    {
+      "start": 5011.74,
+      "end": 5019.9,
+      "text": "So in this time period parameter I'm going to select the drop down and click max and show historical prices"
+    },
+    {
+      "start": 5019.9,
+      "end": 5026.62,
+      "text": "frequency we're going to set to weekly so I'm getting weekly data weekly prices for this asset over its"
+    },
+    {
+      "start": 5026.62,
+      "end": 5035.58,
+      "text": "entire historical data set so I'm going to click apply and then download. As you've seen in previous videos"
+    },
+    {
+      "start": 5035.58,
+      "end": 5042.54,
+      "text": "when you kind of download data from Yahoo Finance and other places when I'm doing it I'm using Google"
+    },
+    {
+      "start": 5042.54,
+      "end": 5046.94,
+      "text": "Chrome so I get a little shortcut to open the file that I've just downloaded here so I'm just going"
+    },
+    {
+      "start": 5046.94,
+      "end": 5051.26,
+      "text": "to click that that's going to open the file in Excel so we can view it."
+    },
+    {
+      "start": 5053.98,
+      "end": 5059.18,
+      "text": "And then with that data downloaded I'm just going to expand the date column quickly so we can see all of"
+    },
+    {
+      "start": 5059.18,
+      "end": 5065.58,
+      "text": "those dates with that data downloaded we need to arrange the dates in a descending order which leaves us"
+    },
+    {
+      "start": 5065.58,
+      "end": 5070.54,
+      "text": "with the most recent price data at the top of the sheet and makes the data cleaning process just a"
+    },
+    {
+      "start": 5070.54,
+      "end": 5076.46,
+      "text": "little bit easier going forward. So to do that I'm going to select cell A1 and go to data on the ribbon"
+    },
+    {
+      "start": 5076.46,
+      "end": 5082.78,
+      "text": "followed by filter that adds filters to all of those columns of data and then I'm going to select the"
+    },
+    {
+      "start": 5082.78,
+      "end": 5093.42,
+      "text": "drop down filter in the date column and then sort from newest to oldest. Okay so the next thing to"
+    },
+    {
+      "start": 5093.42,
+      "end": 5103.58,
+      "text": "kind of note here or look for is just check the most recent row of data and see whether that actually"
+    },
+    {
+      "start": 5103.58,
+      "end": 5109.18,
+      "text": "represents a complete week of data because depending on the day you download it from Yahoo Finance it might"
+    },
+    {
+      "start": 5109.18,
+      "end": 5115.58,
+      "text": "not represent a complete week. In this case I think it does it looks like it does so we don't need to"
+    },
+    {
+      "start": 5115.58,
+      "end": 5121.82,
+      "text": "worry about doing anything here but if it didn't you just delete that row so I just delete row two here"
+    },
+    {
+      "start": 5121.82,
+      "end": 5128.38,
+      "text": "by right clicking on that row and going to delete in the selection. As I said in this case we don't need"
+    },
+    {
+      "start": 5128.38,
+      "end": 5137.1,
+      "text": "to worry about doing that here so what I'm going to do is instead just copy the date column and adjusted"
+    },
+    {
+      "start": 5137.1,
+      "end": 5142.54,
+      "text": "close column prices straight into our portfolio volatility spreadsheet so I'm going to left click"
+    },
+    {
+      "start": 5142.54,
+      "end": 5148.3,
+      "text": "column A hold control and left click column F as well press ctrl c on the keyboard so that's going to"
+    },
+    {
+      "start": 5148.3,
+      "end": 5155.5,
+      "text": "select both those columns and copy them then I'm going to go back to the portfolio volatility spreadsheet"
+    },
+    {
+      "start": 5155.5,
+      "end": 5165.1,
+      "text": "into the asset prices sheet and I'm just going to paste those into columns C and D as values and I'm going to do that by"
+    },
+    {
+      "start": 5165.1,
+      "end": 5171.82,
+      "text": "right clicking column C and then selecting the paste as values option which is the clipboard with the one"
+    },
+    {
+      "start": 5171.82,
+      "end": 5179.1,
+      "text": "two three on it and that's going to paste those two columns into column C and D as values. The reason why"
+    },
+    {
+      "start": 5179.1,
+      "end": 5185.58,
+      "text": "I'm doing it as values is just because previously I had this sheet set up to show dates in in that format"
+    },
+    {
+      "start": 5185.58,
+      "end": 5192.94,
+      "text": "so that just saves me a job from importing or copying in all that data into columns C and D"
+    },
+    {
+      "start": 5193.74,
+      "end": 5197.5,
+      "text": "exactly in the same format as it was when we downloaded it and then we're going through the"
+    },
+    {
+      "start": 5197.5,
+      "end": 5204.86,
+      "text": "process of changing how we see those dates to make it look like this format. So anyway from there we can"
+    },
+    {
+      "start": 5204.86,
+      "end": 5214.86,
+      "text": "just rename the column title for column D okay so this is weekly prices for THO Thor industry so I'm going to"
+    },
+    {
+      "start": 5214.86,
+      "end": 5225.02,
+      "text": "rename cell D1 as the ticker for that company THO. Now what I want to do is sort of turn my attention to"
+    },
+    {
+      "start": 5225.02,
+      "end": 5233.1,
+      "text": "the asset return sheet currently we still got all of our old data in here except you know for most of it"
+    },
+    {
+      "start": 5233.98,
+      "end": 5240.06,
+      "text": "well for all of it it's incorrect actually because our tickers are named incorrectly but we're getting"
+    },
+    {
+      "start": 5240.06,
+      "end": 5247.02,
+      "text": "some returns pulled through into column D here and some dates in column C that's because it is referencing"
+    },
+    {
+      "start": 5247.02,
+      "end": 5253.34,
+      "text": "those two columns that we've just pulled through in the prices sheet we just need to kind of rename D1"
+    },
+    {
+      "start": 5253.34,
+      "end": 5258.7,
+      "text": "cell D1 here from the visa ticker to the Thor industries ticker so I can just write that in there"
+    },
+    {
+      "start": 5259.58,
+      "end": 5265.42,
+      "text": "for the other cells that's all incorrect obviously it's trying to pull through data in cells that don't"
+    },
+    {
+      "start": 5265.42,
+      "end": 5271.18,
+      "text": "have any prices returns it's trying to sort of calculate returns from cells that don't have prices so"
+    },
+    {
+      "start": 5271.18,
+      "end": 5276.06,
+      "text": "what I'm going to do is just select all of the columns from E onwards with control shift and"
+    },
+    {
+      "start": 5276.06,
+      "end": 5280.3,
+      "text": "write on the keyboard and then press delete on the keyboard to clear the contents of those cells"
+    },
+    {
+      "start": 5281.18,
+      "end": 5286.94,
+      "text": "now what we want to do is just check that all the returns in this column column D are actually"
+    },
+    {
+      "start": 5286.94,
+      "end": 5292.62,
+      "text": "pulling through correctly or calculating correctly using prices from the other sheet"
+    },
+    {
+      "start": 5294.7,
+      "end": 5303.74,
+      "text": "if we double click into cell D2 you'll see that that formula is calculated from the price in D2 divided by"
+    },
+    {
+      "start": 5303.74,
+      "end": 5309.74,
+      "text": "the price in D3 in the prices sheet minus one okay so we know that that's going to be correct for those"
+    },
+    {
+      "start": 5309.74,
+      "end": 5314.94,
+      "text": "returns the formulas are correct and all we need to do then is basically check the length of the series"
+    },
+    {
+      "start": 5314.94,
+      "end": 5321.66,
+      "text": "and see you know what that is compared to our price series so our price series goes down it goes back to"
+    },
+    {
+      "start": 5321.66,
+      "end": 5330.46,
+      "text": "1984 okay row 1967 so that means we can actually copy these formulas down all the way down to"
+    },
+    {
+      "start": 5330.46,
+      "end": 5335.42,
+      "text": "one nine six six okay so let's do that now"
+    },
+    {
+      "start": 5340.22,
+      "end": 5345.42,
+      "text": "okay so we've got returns going all the way back if we did copy it down to row one nine six seven we'd get"
+    },
+    {
+      "start": 5345.42,
+      "end": 5351.26,
+      "text": "an error because we don't have prices you know from the row one nine six eight which is required for"
+    },
+    {
+      "start": 5351.26,
+      "end": 5358.38,
+      "text": "that returns formula so I've explained that before so we just delete the contents for that row back to row"
+    },
+    {
+      "start": 5358.38,
+      "end": 5365.42,
+      "text": "one nine six six so let me just explain you know what I just went through in case that wasn't clear"
+    },
+    {
+      "start": 5365.42,
+      "end": 5370.94,
+      "text": "basically we're downloading prices from yahoo finance for three new stocks okay because those are stocks"
+    },
+    {
+      "start": 5370.94,
+      "end": 5377.34,
+      "text": "we're saying in this example we're interested in for our own portfolio to so to start with I cleared"
+    },
+    {
+      "start": 5377.34,
+      "end": 5383.9,
+      "text": "all the prices in the prices sheet for all the stocks that we had before and then I downloaded new"
+    },
+    {
+      "start": 5383.9,
+      "end": 5390.22,
+      "text": "prices for one of our tickers one of our stocks that were interested in Thor Industries imported or copied"
+    },
+    {
+      "start": 5390.22,
+      "end": 5397.66,
+      "text": "those prices into this sheet in columns c and d or the dates in column c and the prices in column d"
+    },
+    {
+      "start": 5397.66,
+      "end": 5404.3,
+      "text": "when I copied those in I copied them and pasted them as values the reason why I pasted them as values"
+    },
+    {
+      "start": 5404.3,
+      "end": 5411.9,
+      "text": "is so that we kept whatever formatting we had already in this sheet and that was useful to us basically"
+    },
+    {
+      "start": 5411.9,
+      "end": 5419.26,
+      "text": "so I didn't have to reformat the dates column to make it look like this okay and then what we wanted to do"
+    },
+    {
+      "start": 5419.26,
+      "end": 5427.66,
+      "text": "or what we did was check the return sheet okay and we saw that obviously it still had all the previous"
+    },
+    {
+      "start": 5427.66,
+      "end": 5434.94,
+      "text": "tickers that we were looking at in this spreadsheet so we needed to delete all of those and make sure"
+    },
+    {
+      "start": 5434.94,
+      "end": 5441.82,
+      "text": "that the column d was still calculating returns correctly from the prices that it sees in the in"
+    },
+    {
+      "start": 5441.82,
+      "end": 5449.1,
+      "text": "column d from the prices sheet which it did but the length of the prices column that we had for"
+    },
+    {
+      "start": 5449.1,
+      "end": 5455.58,
+      "text": "Thor Industries compared to all the data we had in the spreadsheet previously was quite different it was"
+    },
+    {
+      "start": 5455.58,
+      "end": 5463.02,
+      "text": "a lot longer okay so that means that we could copy the returns formula down for Thor Industries"
+    },
+    {
+      "start": 5463.02,
+      "end": 5472.22,
+      "text": "all the way down to row 1966 okay so just remember that when you're doing this process when you're going"
+    },
+    {
+      "start": 5472.22,
+      "end": 5478.94,
+      "text": "through this process and putting in new prices and new returns you need to make sure that the tickers always match up in the"
+    },
+    {
+      "start": 5478.94,
+      "end": 5485.58,
+      "text": "right columns okay and then you're not going to have any issues you know you're not going to misunderstand"
+    },
+    {
+      "start": 5485.58,
+      "end": 5490.78,
+      "text": "which returns match to which prices so long as they're always in the same columns and the tickers"
+    },
+    {
+      "start": 5490.78,
+      "end": 5497.1,
+      "text": "are named the same and also when it comes to putting those tickers into your portfolio model in the"
+    },
+    {
+      "start": 5497.1,
+      "end": 5502.7,
+      "text": "portfolio volatility practice sheet it will actually pull through correctly because that requires that you"
+    },
+    {
+      "start": 5502.7,
+      "end": 5510.62,
+      "text": "enter whatever is in the column title cells in order to pull through that data so it's easier just to keep it"
+    },
+    {
+      "start": 5510.62,
+      "end": 5518.14,
+      "text": "all as the tickers for the stocks so now what we want to do is just repeat that process for the other"
+    },
+    {
+      "start": 5518.14,
+      "end": 5523.34,
+      "text": "companies that we're interested in so let's do that now starting with Papa John's so I'm just going"
+    },
+    {
+      "start": 5523.34,
+      "end": 5531.82,
+      "text": "to go back to the Yahoo Finance website and in the top search bar this time put in PZZA which is the ticker"
+    },
+    {
+      "start": 5531.82,
+      "end": 5537.34,
+      "text": "for Papa John's then I'm going to select that drop down and go to the historical data tab again"
+    },
+    {
+      "start": 5538.22,
+      "end": 5546.54,
+      "text": "again select the time period as max choose a weekly frequency click apply and download"
+    },
+    {
+      "start": 5548.38,
+      "end": 5554.06,
+      "text": "that's going to download our weekly prices for Papa John's okay I'm going to open that spreadsheet now"
+    },
+    {
+      "start": 5555.82,
+      "end": 5560.62,
+      "text": "make the date column a little bit wider so we can see that I need to go through the same process again"
+    },
+    {
+      "start": 5560.62,
+      "end": 5567.18,
+      "text": "for arranging our dates in a descending order so to do that I'm selecting cell A1 I'm going to go to data"
+    },
+    {
+      "start": 5567.18,
+      "end": 5573.5,
+      "text": "on the ribbon and then filter that's going to add filters to all of the columns in this data set I'm"
+    },
+    {
+      "start": 5573.5,
+      "end": 5578.86,
+      "text": "then going to click on the filter for the date column and sort by newest to oldest so that's going to sort"
+    },
+    {
+      "start": 5578.86,
+      "end": 5585.74,
+      "text": "all of our prices by the newest date to the oldest date what I'm then going to do is seeing that all the"
+    },
+    {
+      "start": 5585.74,
+      "end": 5592.54,
+      "text": "dates match the prior dates that we downloaded for Thor Industries I'm going to just copy column F"
+    },
+    {
+      "start": 5593.1,
+      "end": 5598.38,
+      "text": "by selecting it and pressing ctrl C on the keyboard and then I'm going to copy that into"
+    },
+    {
+      "start": 5599.42,
+      "end": 5605.98,
+      "text": "our portfolio volatility asset prices sheet so I'm going to select column E here and then right click"
+    },
+    {
+      "start": 5605.98,
+      "end": 5611.82,
+      "text": "in that selection and just paste as values again that's going to paste all of that data into that column"
+    },
+    {
+      "start": 5611.82,
+      "end": 5622.7,
+      "text": "for those relevant weekly dates of course then I need to change the column title so that we know you know"
+    },
+    {
+      "start": 5622.7,
+      "end": 5633.02,
+      "text": "what company these prices are for so the company is PZZA Papa John's and then I'm going to check"
+    },
+    {
+      "start": 5633.58,
+      "end": 5639.42,
+      "text": "before we move any further the length of this data set compared to the length of Thor Industries"
+    },
+    {
+      "start": 5639.42,
+      "end": 5647.02,
+      "text": "price data so I'm pressing ctrl and down on the keyboard and that's taking me down to row 1476 in"
+    },
+    {
+      "start": 5647.02,
+      "end": 5655.34,
+      "text": "column E and we can see that the price data set for Papa John's is a lot shorter than for Thor Industries"
+    },
+    {
+      "start": 5655.34,
+      "end": 5661.42,
+      "text": "now remember what I said earlier for this portfolio model to work portfolio volatility model to work"
+    },
+    {
+      "start": 5661.42,
+      "end": 5668.46,
+      "text": "in order to calculate the underlying covariances and variances the length of each data series needs to"
+    },
+    {
+      "start": 5668.46,
+      "end": 5676.06,
+      "text": "be exactly the same so that basically means we need to delete all of the data that isn't common to all"
+    },
+    {
+      "start": 5676.06,
+      "end": 5680.06,
+      "text": "of the stocks that we have in this sheet so every time you add new stocks this is probably going to"
+    },
+    {
+      "start": 5680.06,
+      "end": 5687.9,
+      "text": "change you're going to have to go through a process of deleting data potentially perhaps not every time"
+    },
+    {
+      "start": 5687.9,
+      "end": 5693.26,
+      "text": "obviously it depends on the length of the data series but in this example we need to do that so what I'm"
+    },
+    {
+      "start": 5693.26,
+      "end": 5700.7,
+      "text": "going to do is delete all of the dates and prices for Thor Industries from row 1477 down because that"
+    },
+    {
+      "start": 5700.7,
+      "end": 5707.5,
+      "text": "is not common to the new data that we have for Papa John's so I'm just selecting those two cells C and D"
+    },
+    {
+      "start": 5707.5,
+      "end": 5713.26,
+      "text": "1477 pressing ctrl shift down on the keyboard and delete on the keyboard to clear the contents for all of"
+    },
+    {
+      "start": 5713.26,
+      "end": 5722.22,
+      "text": "those and that means we've got an even price series for those two assets let's go over to the return"
+    },
+    {
+      "start": 5722.22,
+      "end": 5732.06,
+      "text": "sheet now and basically update this so that it includes returns for Papa John's in cell E1 I'm going"
+    },
+    {
+      "start": 5732.06,
+      "end": 5737.66,
+      "text": "to head the column with pzza making sure that is the same ticker that we're using in both the prices and"
+    },
+    {
+      "start": 5737.66,
+      "end": 5742.3,
+      "text": "the return sheets and the return sheets and obviously the one that we'll end up using in the model as well"
+    },
+    {
+      "start": 5743.42,
+      "end": 5745.1,
+      "text": "from there I'm going to copy across"
+    },
+    {
+      "start": 5745.98,
+      "end": 5754.3,
+      "text": "the returns formula that we have in cell D2 for Thor Industries across one column to cell E2"
+    },
+    {
+      "start": 5755.66,
+      "end": 5758.3,
+      "text": "then we can just check this formula it's"
+    },
+    {
+      "start": 5759.02,
+      "end": 5765.1,
+      "text": "calculating returns based on the prices sheet whatever's in cell E2 divided by E3-1"
+    },
+    {
+      "start": 5765.66,
+      "end": 5769.98,
+      "text": "we know that's going to be correct because we've imported prices into column E so that's fine"
+    },
+    {
+      "start": 5769.98,
+      "end": 5775.42,
+      "text": "and we can just copy that formula down all the way to the bottom of that data set"
+    },
+    {
+      "start": 5776.22,
+      "end": 5785.42,
+      "text": "now what do we have here currently we've got a load of errors and what looks like dates"
+    },
+    {
+      "start": 5787.02,
+      "end": 5793.18,
+      "text": "that are kind of non-existent okay so what's happened here basically we've deleted a load of data in the"
+    },
+    {
+      "start": 5793.18,
+      "end": 5801.02,
+      "text": "prices sheet for Thor Industries okay so that our price columns match in their length for Thor Industries"
+    },
+    {
+      "start": 5801.02,
+      "end": 5807.42,
+      "text": "and Papa John's that's meant that this return sheet is no longer referencing or it's referencing blank cells"
+    },
+    {
+      "start": 5807.42,
+      "end": 5812.54,
+      "text": "and so that's created a load of errors in our returns for Thor Industries and also"
+    },
+    {
+      "start": 5813.58,
+      "end": 5818.14,
+      "text": "the dates are now incorrect in their reference as well so we just need to make sure"
+    },
+    {
+      "start": 5818.14,
+      "end": 5823.42,
+      "text": "that whenever we download new prices and then change the length of the price series"
+    },
+    {
+      "start": 5823.42,
+      "end": 5827.18,
+      "text": "we need to do the same for the returns and remember the returns is always going to be"
+    },
+    {
+      "start": 5827.98,
+      "end": 5837.42,
+      "text": "one row less in length than prices okay so I'm deleting from row 1476 and down this time"
+    },
+    {
+      "start": 5838.06,
+      "end": 5844.22,
+      "text": "so selecting all of those cells C to E 1476 pressing ctrl shift and down on the keyboard"
+    },
+    {
+      "start": 5844.22,
+      "end": 5849.18,
+      "text": "delete on the keyboard to clear all of that contents and then going back to the top of the sheet"
+    },
+    {
+      "start": 5850.06,
+      "end": 5855.58,
+      "text": "okay so we've done two out of three of the stocks that we're going to look at"
+    },
+    {
+      "start": 5856.7,
+      "end": 5863.82,
+      "text": "let's continue on to the third one now which is Herman Miller so if we go back to Yahoo Finance type in the"
+    },
+    {
+      "start": 5863.82,
+      "end": 5870.7,
+      "text": "ticker for Herman Miller which is MLHR and then select that stock from the drop down menu"
+    },
+    {
+      "start": 5871.58,
+      "end": 5879.26,
+      "text": "and then go to historical data choose max again as our time period and the frequency as weekly prices"
+    },
+    {
+      "start": 5879.9,
+      "end": 5885.5,
+      "text": "and then click apply and download that's going to download all the prices for Herman Miller we can open"
+    },
+    {
+      "start": 5885.5,
+      "end": 5891.9,
+      "text": "that sheet and we're just going to go through exactly the same process as we did before going to increase"
+    },
+    {
+      "start": 5891.9,
+      "end": 5898.7,
+      "text": "the width of the date column I'm going to add filters okay so that we can sort the date column now from"
+    },
+    {
+      "start": 5898.7,
+      "end": 5905.5,
+      "text": "newest to oldest and then I'm just going to make sure the dates look like they match exactly the same dates"
+    },
+    {
+      "start": 5906.3,
+      "end": 5911.9,
+      "text": "as we had for the other two stocks and then I'm just going to copy column F the adjusted close prices"
+    },
+    {
+      "start": 5912.7,
+      "end": 5921.5,
+      "text": "into our portfolio volatility sheet in the asset prices sheet and paste them into column F here"
+    },
+    {
+      "start": 5922.22,
+      "end": 5930.3,
+      "text": "as values remembering always to rename the column heading cell so cell F1 in this case to"
+    },
+    {
+      "start": 5930.94,
+      "end": 5940.06,
+      "text": "whatever the relevant ticker is so MLHR in this case and then checking the length of the price series"
+    },
+    {
+      "start": 5940.86,
+      "end": 5948.22,
+      "text": "okay so in this case we've got a price series that is way longer than what we've kind of shortened"
+    },
+    {
+      "start": 5948.22,
+      "end": 5953.42,
+      "text": "our previous two price series down to so basically we've got prices that go back further than the"
+    },
+    {
+      "start": 5953.42,
+      "end": 5960.62,
+      "text": "7th of June 1993 the simple thing that we need to do here is basically just delete all of the data"
+    },
+    {
+      "start": 5961.18,
+      "end": 5969.34,
+      "text": "from those cells beyond or before rather the 7th of June 1993 for Herman Miller so I'm just selecting cell"
+    },
+    {
+      "start": 5969.98,
+      "end": 5975.58,
+      "text": "F1477 in this case control shift and down to select all of the data below it delete on the keyboard to"
+    },
+    {
+      "start": 5975.58,
+      "end": 5981.18,
+      "text": "clear the contents and back up to the top and that's all we need to do to even out our price series"
+    },
+    {
+      "start": 5982.06,
+      "end": 5990.7,
+      "text": "finally we just want to do the same thing in our asset return sheet as we've done before"
+    },
+    {
+      "start": 5990.7,
+      "end": 5998.54,
+      "text": "so I'm putting in the ticker for the new stock which is MLHR into cell F1 and then I'm going to copy across"
+    },
+    {
+      "start": 5998.54,
+      "end": 6004.86,
+      "text": "the returns formula from cell E1 to F1 and then copy it down as well quickly scroll down to the bottom"
+    },
+    {
+      "start": 6004.86,
+      "end": 6012.86,
+      "text": "of the data series and check that that's all okay at which it is so now we've got an even price series"
+    },
+    {
+      "start": 6012.86,
+      "end": 6020.38,
+      "text": "and an even return series as well and with all of our price data and returns data sort of inputted and"
+    },
+    {
+      "start": 6020.38,
+      "end": 6027.26,
+      "text": "cleaned for the three stocks we can now add them into the portfolio practice sheet and start modeling"
+    },
+    {
+      "start": 6027.26,
+      "end": 6033.42,
+      "text": "volatility and correlation so for example let's just do that very quickly now I'm just going to"
+    },
+    {
+      "start": 6033.42,
+      "end": 6038.7,
+      "text": "delete all of the tickers that we can see in the orange cells now currently in the portfolio volatility"
+    },
+    {
+      "start": 6038.7,
+      "end": 6045.1,
+      "text": "model and delete all of the dollar allocations as well then just put in our three stocks our three"
+    },
+    {
+      "start": 6045.1,
+      "end": 6053.42,
+      "text": "stocks being THO PZZA and MLHR you can see all the data starting to pull through already let's just"
+    },
+    {
+      "start": 6053.42,
+      "end": 6059.98,
+      "text": "give each of those an allocation of ten thousand dollars we're just basically checking this is where"
+    },
+    {
+      "start": 6059.98,
+      "end": 6066.22,
+      "text": "this works I just want to show you how simple this all is and that's it we've got a three stock portfolio"
+    },
+    {
+      "start": 6066.22,
+      "end": 6072.38,
+      "text": "and we've got a portfolio standard deviation calculated based on all of that data and that's"
+    },
+    {
+      "start": 6072.38,
+      "end": 6078.06,
+      "text": "all there is to it now obviously with this portfolio the difference between kind of this one and the"
+    },
+    {
+      "start": 6078.06,
+      "end": 6083.74,
+      "text": "last one obviously the companies involved and the number of companies and so on but also the fact that"
+    },
+    {
+      "start": 6083.74,
+      "end": 6091.18,
+      "text": "all of these covariances and variances are being calculated based on a much longer series of data okay"
+    },
+    {
+      "start": 6091.18,
+      "end": 6102.86,
+      "text": "so going from September 2021 back to June 1993 you can of course use any sort of time period time window"
+    },
+    {
+      "start": 6102.86,
+      "end": 6109.42,
+      "text": "you want so just because you can get all the data for these three stocks going back that far doesn't"
+    },
+    {
+      "start": 6109.42,
+      "end": 6115.34,
+      "text": "mean you need to model your volatility based on price data and returns data from that entire period"
+    },
+    {
+      "start": 6115.34,
+      "end": 6123.1,
+      "text": "if you wanted you could just model it on you know the last well let's say from 2010 onwards okay"
+    },
+    {
+      "start": 6123.1,
+      "end": 6132.06,
+      "text": "so you could just delete everything from 2009 and before for both prices and returns remember"
+    },
+    {
+      "start": 6136.54,
+      "end": 6142.86,
+      "text": "and the portfolio model would still work it would be slightly different we get a slightly different"
+    },
+    {
+      "start": 6142.86,
+      "end": 6147.66,
+      "text": "portfolio volatility number but it would it would still work and that's really down to your preference"
+    },
+    {
+      "start": 6148.3,
+      "end": 6153.02,
+      "text": "how you want to kind of choose the time window that you want to work with I am going to mention"
+    },
+    {
+      "start": 6153.02,
+      "end": 6157.74,
+      "text": "something about that in the next video as well when we kind of consider correlations in more detail"
+    },
+    {
+      "start": 6159.74,
+      "end": 6167.26,
+      "text": "okay great that's all I really wanted to cover in this video let me just finish up with some concluding"
+    },
+    {
+      "start": 6167.26,
+      "end": 6172.46,
+      "text": "remarks about what we've covered and also you know what you need to take away from this video"
+    },
+    {
+      "start": 6173.1,
+      "end": 6178.78,
+      "text": "to begin I introduced the concept of volatility and explained how volatility needs to be reframed in"
+    },
+    {
+      "start": 6178.78,
+      "end": 6185.82,
+      "text": "your mind as both risk and opportunity since if there's no volatility in prices then there's no"
+    },
+    {
+      "start": 6185.82,
+      "end": 6191.5,
+      "text": "chance for capital gains in the assets you trade we didn't spend too long on all of that because"
+    },
+    {
+      "start": 6192.3,
+      "end": 6197.58,
+      "text": "it's covered pretty extensively in the IPLT course and again for those of you that haven't done it"
+    },
+    {
+      "start": 6197.58,
+      "end": 6206.62,
+      "text": "already I do strongly encourage you guys to do so we then moved on to how volatility is typically measured"
+    },
+    {
+      "start": 6206.62,
+      "end": 6213.82,
+      "text": "with a statistic called standard deviation I showed that although statistics like that might sometimes feel"
+    },
+    {
+      "start": 6213.82,
+      "end": 6220.06,
+      "text": "a bit sort of opaque and hard to understand if you break down the principles it's usually quite simple"
+    },
+    {
+      "start": 6220.54,
+      "end": 6226.3,
+      "text": "in the case of a standard deviation it's basically just calculating some kind of average variation of a data"
+    },
+    {
+      "start": 6226.3,
+      "end": 6233.1,
+      "text": "series from a reference point and for a standard deviation the reference point is the average of the entire series itself"
+    },
+    {
+      "start": 6234.06,
+      "end": 6240.22,
+      "text": "with that background covered it allowed me to move on and talk through calculating portfolio volatility"
+    },
+    {
+      "start": 6240.94,
+      "end": 6247.74,
+      "text": "one way to do that is using realized portfolio returns and going through something called a distribution"
+    },
+    {
+      "start": 6247.74,
+      "end": 6254.62,
+      "text": "of returns in which standard deviation calculations just represent one way of gauging historical volatility of"
+    },
+    {
+      "start": 6254.62,
+      "end": 6263.34,
+      "text": "an asset or in this case a portfolio that you're looking at I use the portfolios that we covered in the"
+    },
+    {
+      "start": 6263.34,
+      "end": 6270.78,
+      "text": "previous video in the examples for continuity and also to kind of reinforce the idea of smaller cap"
+    },
+    {
+      "start": 6270.78,
+      "end": 6278.54,
+      "text": "stocks having more volatility and hence opportunity for profit than larger cap stocks the other way to"
+    },
+    {
+      "start": 6278.54,
+      "end": 6285.74,
+      "text": "calculate portfolio volatility is with a modeling equation and what that allows us to do is use assumptions for"
+    },
+    {
+      "start": 6285.74,
+      "end": 6293.5,
+      "text": "inputs of variance covariance and weightings for all of the portfolio constituents and compute an output"
+    },
+    {
+      "start": 6294.7,
+      "end": 6303.02,
+      "text": "of estimated volatility in this spreadsheet we're calculating variance and covariances of assets using historical data"
+    },
+    {
+      "start": 6303.02,
+      "end": 6309.58,
+      "text": "specifically the assets weekly returns all of that is basically done under the hood of the spreadsheet model"
+    },
+    {
+      "start": 6309.58,
+      "end": 6317.1,
+      "text": "so all that's required for us to retrieve is for us to do is retrieve historical prices and returns for"
+    },
+    {
+      "start": 6317.1,
+      "end": 6323.9,
+      "text": "the portfolio constituents we want and then enter those tickers into the portfolio model and analyze the output"
+    },
+    {
+      "start": 6323.9,
+      "end": 6332.14,
+      "text": "anyway before we went into all of the scenario analysis and practicalities of using the spreadsheet I talked"
+    },
+    {
+      "start": 6332.14,
+      "end": 6340.14,
+      "text": "you through some important portfolio theory or portfolio volatility theory we learned that the volatility of"
+    },
+    {
+      "start": 6340.14,
+      "end": 6347.1,
+      "text": "a portfolio is a function of both the individual constituents variances and their covariances and that"
+    },
+    {
+      "start": 6347.1,
+      "end": 6352.7,
+      "text": "actually as assets are added to the portfolio it's the relationships between assets that are much more"
+    },
+    {
+      "start": 6352.7,
+      "end": 6359.18,
+      "text": "important to the overall volatility of the portfolio than the individual positions volatilities themselves"
+    },
+    {
+      "start": 6360.06,
+      "end": 6366.54,
+      "text": "and this is an important distinction in understanding the volatility of individual assets and the"
+    },
+    {
+      "start": 6366.54,
+      "end": 6373.58,
+      "text": "volatility of portfolios whilst we appreciate that volatility always represents opportunity as well as risk"
+    },
+    {
+      "start": 6374.38,
+      "end": 6379.82,
+      "text": "when it comes to portfolios it's possible to take advantage of positions with decent volatility"
+    },
+    {
+      "start": 6380.54,
+      "end": 6387.9,
+      "text": "decent volatility outlooks and hence good profit potential whilst also combining them in such a way"
+    },
+    {
+      "start": 6387.9,
+      "end": 6395.34,
+      "text": "That risk is that risk is controlled at the portfolio level in our profit and loss an efficiently diversified"
+    },
+    {
+      "start": 6395.34,
+      "end": 6404.38,
+      "text": "portfolio is one that takes advantage of low correlations between constituents to reduce risk while maintaining"
+    },
+    {
+      "start": 6404.38,
+      "end": 6409.98,
+      "text": "strong expected returns across every position and hence the portfolio as a whole as i've said a few times"
+    },
+    {
+      "start": 6409.98,
+      "end": 6414.86,
+      "text": "already in this video i'm going to talk a little bit more about portfolio correlation in the next video and these ideas are going to be"
+    },
+    {
+      "start": 6414.86,
+      "end": 6421.02,
+      "text": "reiterated there again now despite"
+    },
+    {
+      "start": 6421.66,
+      "end": 6430.22,
+      "text": "mentioning the advantages of adding low correlation positions to the portfolio we need to remember not to fall into traps such as over diversification"
+    },
+    {
+      "start": 6430.22,
+      "end": 6434.22,
+      "text": "which is where you start adding positions to the portfolio in the pursuit of"
+    },
+    {
+      "start": 6434.22,
+      "end": 6441.58,
+      "text": "lowering risk for the sake of it and by doing so actually ruining the return side of the equation"
+    },
+    {
+      "start": 6441.58,
+      "end": 6449.58,
+      "text": "and this tends to happen when people ignore the importance of going through all of their fundamental analysis and timing protocols for each position"
+    },
+    {
+      "start": 6449.58,
+      "end": 6454.62,
+      "text": "and basically diversify without conviction about the underlying trade themselves"
+    },
+    {
+      "start": 6454.62,
+      "end": 6464.46,
+      "text": "that's a huge mistake we're aiming for portfolios and watch lists full of really really strong ideas and the"
+    },
+    {
+      "start": 6464.46,
+      "end": 6470.86,
+      "text": "consideration of how those ideas fit together in a portfolio only comes afterwards so the consideration of"
+    },
+    {
+      "start": 6470.86,
+      "end": 6475.42,
+      "text": "correlations or anything like that how it fits together is all secondary to"
+    },
+    {
+      "start": 6475.42,
+      "end": 6482.22,
+      "text": "the concept of idea generation generating really strong fundamental fundamentally driven ideas"
+    },
+    {
+      "start": 6482.22,
+      "end": 6490.14,
+      "text": "in the next part of the video we went on to looking at using the portfolio volatility model under various scenarios"
+    },
+    {
+      "start": 6490.14,
+      "end": 6503.98,
+      "text": "i went through um the examples for two core reasons really firstly to illustrate how the models actually use how you add subtract and substitute positions in the portfolio"
+    },
+    {
+      "start": 6503.98,
+      "end": 6508.7,
+      "text": "as well as how you can change their weightings and whether the positions are long or short"
+    },
+    {
+      "start": 6509.58,
+      "end": 6520.38,
+      "text": "secondly if you think back to those first two scenarios the core takeaway was that mega cap and large cap portfolios tend to be less volatile than portfolios that incorporate mid caps"
+    },
+    {
+      "start": 6520.38,
+      "end": 6528.7,
+      "text": "that reinforces our knowledge that mid cap positions yield us greater opportunity for profit than larger caps because of their increased volatility"
+    },
+    {
+      "start": 6528.7,
+      "end": 6535.66,
+      "text": "however despite that there is also greater scope for building lower correlation portfolio structures when"
+    },
+    {
+      "start": 6535.66,
+      "end": 6542.94,
+      "text": "involving mid caps as well so there is the potential to take advantage of their higher expected returns"
+    },
+    {
+      "start": 6542.94,
+      "end": 6549.74,
+      "text": "whilst also managing the risk at the portfolio level so that it doesn't increase proportionately"
+    },
+    {
+      "start": 6550.7,
+      "end": 6555.82,
+      "text": "essentially what i'm saying here is is that incorporating mid cap stocks into a portfolio"
+    },
+    {
+      "start": 6555.82,
+      "end": 6561.66,
+      "text": "gives us the possibility to improve our risk adjusted returns which is one of the things that we're aiming for"
+    },
+    {
+      "start": 6561.66,
+      "end": 6566.22,
+      "text": "as traders and portfolio managers as you'll see later in the video series"
+    },
+    {
+      "start": 6567.5,
+      "end": 6575.34,
+      "text": "the third scenario we went through represented the typical type of portfolio an itpm trader might hold"
+    },
+    {
+      "start": 6575.34,
+      "end": 6579.42,
+      "text": "which was one that was both long and short mid and large cap stocks"
+    },
+    {
+      "start": 6580.22,
+      "end": 6589.5,
+      "text": "and by being both long and short various assets the portfolio volatility was reduced massively largely due to"
+    },
+    {
+      "start": 6589.5,
+      "end": 6596.94,
+      "text": "the much lower correlations between positions again this is yet another way that risk adjusted returns can be increased further"
+    },
+    {
+      "start": 6597.74,
+      "end": 6603.98,
+      "text": "despite the reduction in volatility it's important to remember that that doesn't necessarily"
+    },
+    {
+      "start": 6604.62,
+      "end": 6610.22,
+      "text": "mean less opportunity for profit for a number of reasons the key ones being that having a long"
+    },
+    {
+      "start": 6610.22,
+      "end": 6616.46,
+      "text": "short portfolio is a strategy that can work in all markets and also that you can increase upside"
+    },
+    {
+      "start": 6616.46,
+      "end": 6624.54,
+      "text": "significantly by structuring trades with leveraged products such as options now structuring portfolios with"
+    },
+    {
+      "start": 6624.54,
+      "end": 6630.54,
+      "text": "options to obtain better risk reward dynamics is something we cover more in our professional options trading course"
+    },
+    {
+      "start": 6630.54,
+      "end": 6636.14,
+      "text": "but what it means is that whilst you might model a small and large cap long short portfolio having say"
+    },
+    {
+      "start": 6636.14,
+      "end": 6643.5,
+      "text": "10 to 15 percent annualized volatility once you account for the implicit leverage in trading those positions"
+    },
+    {
+      "start": 6643.5,
+      "end": 6649.98,
+      "text": "through options the actual volatility could be substantially higher if so desired and with these structures"
+    },
+    {
+      "start": 6650.62,
+      "end": 6658.22,
+      "text": "the downside risk doesn't have to be or doesn't need to increase proportionally to the upside opportunity either"
+    },
+    {
+      "start": 6658.22,
+      "end": 6666.78,
+      "text": "given the asymmetric profile of options and when you sort of couple that with a high trading performance"
+    },
+    {
+      "start": 6666.78,
+      "end": 6672.38,
+      "text": "as measured by the Sharpe ratio prospective profits can become very very attractive"
+    },
+    {
+      "start": 6673.26,
+      "end": 6678.7,
+      "text": "in the final section of the video we went through some practical aspects of using this spreadsheet"
+    },
+    {
+      "start": 6678.7,
+      "end": 6684.7,
+      "text": "model ourselves with your own portfolio of assets so that you can make more informed decisions and"
+    },
+    {
+      "start": 6684.7,
+      "end": 6688.46,
+      "text": "come to a greater understanding of your own portfolios and what to expect from them"
+    },
+    {
+      "start": 6689.1,
+      "end": 6694.78,
+      "text": "we're going to build on this in the next video where we discuss correlation in more detail and i'll be adding"
+    },
+    {
+      "start": 6694.78,
+      "end": 6702.06,
+      "text": "a bit of analysis to this spreadsheet model so that you can monitor correlations throughout your portfolios in more detail"
+    },
+    {
+      "start": 6703.26,
+      "end": 6710.94,
+      "text": "okay guys well done in this one that's that's not an easy video and obviously there's a lot to take in"
+    },
+    {
+      "start": 6710.94,
+      "end": 6717.5,
+      "text": "don't get too bogged down with it all just yet like i said in the introduction make sure you watch the next video"
+    },
+    {
+      "start": 6717.5,
+      "end": 6723.82,
+      "text": "before worrying too much about this one and kind of take them as a pair because that will really help your understanding"
+    },
+    {
+      "start": 6724.78,
+      "end": 6733.98,
+      "text": "also for those of you that have access go back to the IPLT course if you need to understand a bit more about volatility in general"
+    },
+    {
+      "start": 6734.7,
+      "end": 6738.94,
+      "text": "that's it for this one though and i'll see you in the next video"
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

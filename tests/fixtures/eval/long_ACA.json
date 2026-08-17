@@ -1,0 +1,43 @@
+{
+  "candidate": {
+    "ticker": "ACA",
+    "name": "Arcosa",
+    "sector": "Industrials",
+    "side": "long",
+    "pe1": 28.4,
+    "sector_pe1": 16.7,
+    "eg_case": "long_non_ideal"
+  },
+  "state": "templated",
+  "qual": {
+    "supports_outlier": true,
+    "red_flags": [],
+    "kpis": ["backlog", "infrastructure demand"],
+    "summary": "Arcosa provides infrastructure products."
+  },
+  "catalysts": {
+    "earnings_date": "[datetime.date(2026, 10, 30)]",
+    "earnings_in_window": false,
+    "non_earnings": [
+      "Has Arcosa (ACA) Outpaced Other Construction Stocks This Year?",
+      "CRH (NYSE:CRH) Is Buying Arcosa For $8.5 Billion"
+    ],
+    "tradeable": true,
+    "reason": "news headlines"
+  },
+  "timing": {
+    "light": "green",
+    "sma20": 140.0,
+    "sma60": 120.0,
+    "macd": 5.9
+  },
+  "prm": {
+    "stop_pct": 0.01,
+    "target_pct": 0.03,
+    "r_score": 3.0,
+    "size_fraction": 1.0,
+    "blocked": false
+  },
+  "template_markdown": "# LONG ACA — Arcosa, Inc.\n",
+  "extra": {"gates": []}
+}

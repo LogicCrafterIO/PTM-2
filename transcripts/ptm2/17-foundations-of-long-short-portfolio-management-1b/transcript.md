@@ -1,0 +1,1033 @@
+---
+course: ptm2
+lesson_id: "17"
+title: "Foundations of Long  Short Portfolio Management 1b"
+module: long-short-portfolio
+module_title: "Long/short portfolio construction"
+duration: 02:08:19
+duration_seconds: 7699.136
+source: "17. Foundations of Long  Short Portfolio Management 1b.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  - "Documents/Video 17/Portfolio_Modelling.xlsx"
+---
+
+# 17 — Foundations of Long  Short Portfolio Management 1b
+
+Hi guys, welcome to video 17, portfolio modeling. We've got a lot to cover in this video with lots of practical techniques as well as plenty of theory. That's all going to act as building blocks as well for the materials that you learn later in the course. So let me outline what we're going to cover in this video. And broadly speaking, we're going to look at, first of all, how you can download stock price data and build charts in Excel.
+
+Then we're going to look at how to compare the historical performance of two stocks in the form of a spread trade using various different methods. So things like using ratios or indexing methods. Then we're going to expand on those same methods and use them for calculating and modeling historical portfolio performance.
+
+So the spreadsheet file that I've got open here is the one I'm going to talk you through in this video. And it's got quite a bit of data already populated within it, which is there to help speed up and illustrate some of the points that I want to get across to you without necessarily repeating processes or explaining absolutely everything.
+
+So this file is going to be available to you in a more complete form in the download section of the video so you can always double check how everything works as we go through and of course you can use it for your own portfolios and your own analysis as well.
+
+Within the file, you can see that I've color coded the sheets and what we're what we've got open at the moment is that is the black sheet.
+
+The yellow sheets are where we're going to begin. All of those sheets contain price data for various different companies and the sheet names have been labeled to reflect the tickers for those stocks.
+
+The data within those sheets has all been downloaded from Yahoo Finance and for some of the stocks you'll notice that the open data isn't available.
+
+It just shows up as zeros, but that isn't a worry for us since we're going to be using closing prices throughout.
+
+There are about 20 stocks in total in the file and for one of these stocks, FireEye, I'm going to go through and show you the process of downloading stock data and charting it for analysis purposes.
+
+The blue sheets are where I'm going to show you how to compare the performance between two stocks in various different ways.
+
+And part of that will involve learning how to calculate returns and create indices.
+
+I'm going to talk you through the positives and negatives of the different methodologies and then show you as well how to sort of compare them at the end, how they stack up against each other.
+
+Finally, we're going to use all of that knowledge to move on to some portfolio sheets, the green sheets.
+
+In those sheets, I'll show you how to calculate the historical performance of a portfolio of stocks in a couple of different ways.
+
+And what we're going to see is that a portfolio of long and short trades is mechanically just the same as a long short spread trade.
+
+All you need is for the longs to outperform the shorts.
+
+And if you have awesome longs that go up and awesome shorts that go down, the portfolio will be in an excellent position.
+
+So let's get started.
+
+If we have a look at one of these prebuilt stock sheets, for example, Paycom, you get an idea of where we're heading in this next section.
+
+Basically, we're going to be obtaining a time series of stock data, which will then plot within a simple chart like the one you see here.
+
+And I'll then take it a little bit further and show you how you can add things like moving averages and trend lines to that chart.
+
+So the stock that we're going to look at for this example is FireEye, which is a cyber security company that trades on the NASDAQ.
+
+And as always, the first thing to do with any data analysis task is to obtain the data itself.
+
+And when it comes to finding and downloading data, and this goes for any data, really, whether it's macroeconomic or any tradable assets, you're going to have to be quite flexible.
+
+Data sources change all the time, especially free ones.
+
+And it may be that the sources that we show you in this course become unavailable or change over time, or perhaps the data series themselves might be discontinued or changed in some way, even if it's from the same source.
+
+And when problems like this arise, you're going to have to be able to adapt to find the new relevant and reliable sources for your data.
+
+The data doesn't have to be exactly the same necessarily, but it should be fit for purpose, given the analysis that you're carrying out.
+
+When you go about obtaining any data, the priority should always be understanding exactly what the data represents so that you can make sure that you're happy with using it for the analysis that you aim to do.
+
+So for this example, I'll show you how to obtain and analyze stock price data from Yahoo Finance, but you'll also be able to use a similar methodology if you get data from other sources like investing.com or anywhere else.
+
+So to download some data, let's head over to Yahoo Finance now.
+
+So I'm on my web browser, Google Chrome, and the URL that we need to navigate to is finance.yahoo.com.
+
+And from there, once we're on the site, we want to find data on FireEye stock.
+
+And the ticker for FireEye is F-E-Y-E.
+
+And so if you want to find that data, we can enter that ticker into the search bar at the top of the page and press enter, and it will take us to a summary page for that company.
+
+From here, we then need to navigate to the historical data tab and choose the time period and frequency of price data that we want to download.
+
+You can do that using these sections here.
+
+In this case, I'm going to select the maximum time period available and choose a daily frequency for our price data.
+
+And then after that, all you need to do is click apply and then click download.
+
+The downloaded file will be in a format that opens in Excel, and it's going to be located in your sort of default downloads folder on your PC.
+
+You might also get a shortcut to open the file from your web browser, as I've got here with Google Chrome.
+
+And if we open the file now, you can see that we've got a bunch of historical daily price data and volume data for FireEye.
+
+And sometimes, as is the case here, some of the data can show up as hash symbols, which just means that the column isn't wide enough to show the data properly or it isn't formatted correctly.
+
+So in this case, this applies to the date column.
+
+I'm going to fix this simply by left-clicking and dragging the column intersection between columns A and B, just to widen that date column so we can see the dates correctly.
+
+And so you can see here that the data is organized in an ascending order, which means that the oldest dates are at the top of the sheet and the newest data is at the bottom.
+
+And you can also see that the seven columns of data, which I think will be fairly self-explanatory to you guys.
+
+They basically represent the open, high, low and closing prices for each day.
+
+And we've also got the volume traded as well.
+
+The only two columns here that might cause some confusion is the difference between the close and adjusted close prices.
+
+Now, when you download asset price data from most sources, you usually won't be able to get adjusted close prices.
+
+And this is actually one of the reasons why Yahoo Finance is a preferred free resource of mine for getting price data at the moment.
+
+The other reason is that it's just it's ease of use, really, for downloading and manipulating data in an Excel format.
+
+So the basic difference between the close and the adjusted close columns of data is that the close column adjusts prices for stock splits, whereas the adjusted close column prices adjusts for splits and dividends.
+
+So let me briefly explain what both of those mean in simple terms, starting with stock split adjustments.
+
+So if you, for example, have a stock with a price that is $100 per share, let's say, and the company then goes through a stock split of two to one, meaning the share base is doubled.
+
+Then all else being equal, the price of that share of each share will decrease to $50.
+
+However, nothing's actually happened to the value of the company as a whole.
+
+And in general, nothing happens to the value of the stock each shareholder is holding, since even though the value per share has halved, they'll now hold double the amount of shares.
+
+If prices are adjusted for stock splits, then the historical time series will show prices based on whatever the current share base is.
+
+So in the example that I just described, that would mean that the price series would now show the price being $50 per share, both before and after the stock split.
+
+And that basically makes sense because there hasn't been a material change in the value of the company itself, nor has the event affected the value of individual shareholders holdings.
+
+A similar historical adjustment is made for dividends in the adjusted close column on top of the stock split adjustments that we see in the closing prices.
+
+So if a stock closes at $50, let's say, and the next day begins trading X dividend based on a $2 dividend, it's going to open at roughly $48, all else being equal.
+
+Now, this gap doesn't actually represent pure market forces or the returns to the individual shareholders, since the shareholders will receive that $2 gap in price in the form of a dividend.
+
+So in general, for most of the analysis that we do in this course, it doesn't actually matter too much which one you use, the closing price or the adjusted closing price.
+
+Since dividend adjustments typically have a very small effect on overall returns, when we're concerned with trading and shorter term horizons, they are a bit more of a concern, obviously, if you're looking at investing or longer term horizons, especially if you're looking to reinvest those dividends.
+
+However, you can argue that for the purpose of analysis that involves total returns or understanding pure market forces on a stock, looking at adjusted closing prices is slightly more accurate.
+
+So the main takeaway here, really, the point that I want to get across is that so long as you understand the data, what you're looking at, and you're happy with using it in the context of whatever analysis you're carrying out, then that's fine.
+
+You need to get used to being flexible with sourcing and using data.
+
+And so what I'm trying to do here is teach you what to look out for rather than just spoon feeding you a specific methodology using one source, because otherwise, as soon as something changes with that data that you're using, you're not going to know what to do.
+
+So as I said before, this applies to all data gathering and analysis that we do in this course, not just, you know, the stock prices or working with stock prices, as we're doing in this video.
+
+So with that explained, let me show you how to create a simple chart from the data that we've got here.
+
+But first, let's copy the columns that we have in A to G into this downloaded sheet into our portfolio modeling workbook, specifically into the FireEye sheet of that workbook.
+
+So you can do this by left-clicking and dragging over columns A to G in this downloaded file to select them.
+
+And then within that selection, all we need to do is right-click within it and then go to copy.
+
+Alternatively, if you don't want to go through those steps with the mouse, you can just use the keyboard shortcut to copy, which is control and C once you've selected all of that data.
+
+Then we can paste that into the FireEye sheet by right-clicking in cell A1 and just choosing paste from the options available.
+
+Alternatively, again, you can do this with a keyboard shortcut.
+
+The shortcut is just control and V this time.
+
+Okay, so that's all the data in the sheet.
+
+Next, what I want to do here is reformat the dates that we see in column A because at the moment, the dates that you can see here are in a UK format.
+
+And I just want to make things a little bit clearer.
+
+So what I'm going to do here is select column A and then right-click within that selection to format all the dates that we see.
+
+And I'm going to go to the number tab within this dialog box.
+
+And then I'm going to create a custom date format by typing in this box here.
+
+And what I'm going to type in here is DD-MMM-YY.
+
+And when I press OK now, you'll see the new format in column A for our dates.
+
+And hopefully that makes a little bit more sense for certainly for all of our English speaking viewers.
+
+Okay, so that's the dates reformatted.
+
+Next up, I think we should probably create a couple of cells which tell us quickly and easily what the company is that we're looking at in this sheet.
+
+So what the data actually refers to and the ticker for the company as well.
+
+So in cell I1, I'm just going to type ticker.
+
+And in the cell below that I2, we can just fill this in with the ticker for the stock that we're looking at.
+
+The ticker for FireEye is F-E-Y-E, as I've already said.
+
+And similarly, in cell J1, so adjacent to these two cells that we've just filled in, I'm going to type in company name.
+
+And then in the cell below that, J2, I'm just going to fill in the company name, which is FireEye.
+
+Now let's move on to inserting a chart so that we can plot all of our adjusted close price data here.
+
+To do that, I'm just going to click into cell I4 and navigate to insert on the ribbon.
+
+And then click the line chart button within the chart area of the ribbon and choose a 2D line chart.
+
+So once I've clicked that, you can see that a blank space appears.
+
+This is a chart area, and you can move this chart about by clicking and dragging it around the sheet.
+
+You can also resize it by dragging the nodes at the edge of the chart area once you have it selected.
+
+For this example, I'm just going to resize it to roughly take up the range of cells from I4 to T25.
+
+Okay, so we've got the chart in the right place now, and we've sized it how we like.
+
+Next, what we want to do is plot some data within it.
+
+And to do this, you can right-click within the chart and go to select data, and then choose to add a series.
+
+And the next dialog box asks us to enter the name of the data series, which we'll just put as adjusted close or ADJ space close.
+
+And then we need to select the series values as well.
+
+So when we click into the series values box, you'll need to delete whatever is already there and type over it with a range of cells that covers all of the adjusted close prices for this stock.
+
+Now, normally at this stage, it would be common to select cell F2, for example, which is the first closing price that we have in the series, and then press Ctrl-Shift and down on the keyboard to select all of the cells within that column to the bottom of the data series.
+
+And when I do that, you can see that it populates the series values box appropriately.
+
+However, in this example, we want to make sure that this chart automatically updates whenever we add in new data.
+
+So it's kind of future-proof.
+
+So it needs to be able to reference cells many rows beyond whatever the current final row is in the data set.
+
+So what I'm going to do here is instead change the array reference that we've got to F2 to something like F100,000.
+
+So we've got many more rows and more than enough room for the data set to expand if we want to update it for the foreseeable future.
+
+So that's just a nice little trick to kind of future-proof your chart so you don't need to keep updating the range reference as you add more data.
+
+So with the closing price data added to the chart, what we now need to do is make sure we apply the labels that we want to the horizontal axis.
+
+And the labels that we're going to use are just going to be our dates.
+
+So we can do that by clicking on the Edit Horizontal Axis Labels button and then filling in the cell range for our dates.
+
+And we'll do this in exactly the same way as I did previously for adding a series.
+
+So if I scroll back to the top of the sheet and then select cell A2, press Ctrl-Shift and down on the keyboard to get to the end of the data series.
+
+Again, this time we do need to make sure that we create an array that is a lot longer than our current data set.
+
+Again, so we're future-proofing.
+
+And actually this needs to be exactly the same length as the closing prices array that we just used.
+
+So I'm just going to write over this last row here, one, nine, four, five, with 100,000.
+
+So we're going from A2 to A100,000.
+
+All right, the chart's looking okay as it is now.
+
+But what I want to do is quickly show you a few small aesthetic changes that you can make to make it look a little bit neater.
+
+And the first one is just a neat little trick to create a dynamic title for the chart.
+
+And you can do that just by left-clicking and selecting the title element of the chart.
+
+And then in the formula bar, type in an equal sign followed by selecting a cell reference.
+
+So this will basically result in the chart title being equal to whatever is entered into that cell reference that was picked.
+
+So in this example, I'm just going to type into the formula bar an equal sign.
+
+And then I'm going to select the cell J2 and press enter.
+
+So basically, whatever we see now as the company name will be reflected in the chart title.
+
+And that will update automatically if we were to change whatever the value is or the company name is in cell J2.
+
+Another little hack to make the chart dates a little bit easier to read is to rotate them 45 degrees and to choose some custom intervals.
+
+So for this example, if I right-click the date axis here and choose format axis, I can change the major units to something more suitable.
+
+So maybe six months in this case.
+
+And then next, to rotate the dates themselves, you can just left-click the date axis again and go to home on the ribbon.
+
+And choose angle counterclockwise from the text orientation button.
+
+And then finally, the last change I want to make here is to the data line itself.
+
+And to make changes to that line, you just need to double-click the chart line itself and navigate to the fill and line tab that you'll see from the formatting panel that's appeared on the right-hand side.
+
+And within that tab, you can change all sorts of style options.
+
+In this case, all I'm going to do is make some simple changes.
+
+I'm just going to make the line black and the width of that line a little bit smaller.
+
+So just to 1pt.
+
+Okay, so that's all there is to it in terms of making a simple price chart from some imported data in Excel.
+
+And by the way, when you guys do this yourselves, a quick tip that I have to speed things up for you is just to copy one of your existing stock sheets in this file already.
+
+And just replace the data that you see in columns A to G with some newly downloaded data.
+
+That way, you're not going to need to go through the whole process of building the chart every time.
+
+All you need to do is rename the sheet and also the cells containing the ticker and the company name, which of course will then be reflected in the chart titles as well.
+
+Okay, so as I said earlier, I will show you now how to plot some moving averages and trend lines on price charts.
+
+So let's go through that plotting and moving average is very simple.
+
+Basically, Excel already has this functionality built in.
+
+All you need to do is select the chart line and then click on design in the ribbon, followed by add chart element, and then choose moving average from the trend line options that you see in that drop down.
+
+With that done, you can then go to format on the ribbon and select the trend line element. that you just created in the top left drop down and click format selection.
+
+And then what you're going to see is basically a format trend line panel appear on the right hand side here at the worksheet.
+
+And from there, you can change the line color and style.
+
+And importantly, if you select the trend line options tab, you can change the number of periods the moving average is determined by.
+
+So for this example, we're looking at daily data.
+
+If we want to create a three month moving average, we'd enter 60 into the period box because using daily data here, there are 20 periods or 20 trading days in each month.
+
+So a three month moving average would be 60 periods.
+
+If you want to draw on trend lines or things like support and resistance, you can also do that quite easily.
+
+First, you need to make sure that you've selected the plot area by left clicking it.
+
+And then to draw shapes within that plot area, you simply go to the insert tab on the ribbon and choose whichever shape you want.
+
+So for example, a line, you can then draw that line by left clicking and dragging your cursor to create starting and ending points of the line.
+
+And by doing it in this way, what we're making sure of is that the lines and the shapes that you draw will move around with the chart area.
+
+So that's why we selected the plot area first.
+
+However, when you do update the chart with more data, you will probably need to make some edits to the lines that you draw to maintain their accuracy, and which you can do easily by clicking and dragging the nodes at each end of the line.
+
+Once it's selected, sometimes it's useful as well to have various timeframes charted for a particular asset or economic indicator, whatever data you're looking at, rather than looking at the entire historical data set.
+
+And an easy way that I kind of do this is just to copy a chart that you've already made like this one here and then edit the date axis and the value axis is desired.
+
+So for example, if we want to create a chart that just looks at the data from 2019 onwards, we can just select the chart that we already have and then copy and paste it with either the right click functions I showed earlier, or as I tend to use just the keyboard shortcuts.
+
+So copy with control C, followed by control V to paste it once that new charts, then here as it is now, you can sort of size it, position it how you want.
+
+And you can double click the date axis to format it and change the minimum date as we're going to do in this example to 2019.
+
+Obviously, you can put that to any date you wish, so long as you've got the data for that date, it's probably also a good idea in this example, to change or reset the intervals, because the previous intervals that we use were for a lot longer data set and they're not really sort of relevant or they don't really work that well for a much smaller data set.
+
+So from prices just from 2019 onwards, so we can make them more relevant just by it, by changing that quickly now.
+
+So I think one month will do.
+
+And you can also change the scaling for the value axis at the moment.
+
+You can see the price values go all the way up to $120 a share because that's the automatic maximum based on the entire data data series we have available.
+
+However, you can manually override that if you want to make the window of data we're looking at a little bit clearer.
+
+And to do that, you just double click on the value axis and you can choose the values maximum and minimum values that you can see here just by overwriting the values that you see in the boxes.
+
+So for the maximum, we might change it from 120 in this example to 30.
+
+You can also, as I said, change the minimum here, which might be suitable for stocks with a much higher share price, just to sort of get the scaling right.
+
+So you can see the changes in price more easily over time.
+
+You'll notice that the trend line that's being copied across from the first chart to the second chart has not adjusted to the changes that we've made when we've changed the sort of window of data that we're looking at.
+
+And, you know, scaled both axes.
+
+So that needs to be edited, as I said earlier, and you can do that really easily just by selecting the line and clicking and dragging the nodes at each end to the desired locations.
+
+Okay, so hopefully, all of that formatting stuff makes sense and was easy enough to follow.
+
+The final thing that I want to know about these stock sheets is that in order to update them, all you need to do is copy and paste some new price data over the old data, as long as it's from the same source and in the same format.
+
+So, you know, in this case, from Yahoo Finance.
+
+So let's take an example.
+
+If we consider a scenario where we hadn't updated this price data since the end of 2020 and so we want to update it with all of the new 2021 data, then we would start by, I'll sort of simulate this.
+
+So I'll start by deleting all of the post 2021 data.
+
+So we're imagining now we've only got data up to the end of 2020.
+
+And assuming we're in this position and we want to update this stock for all of the 2021 data, all you'd need to do is download the data from the same source in the same format and copy those columns of data into this sheet.
+
+So columns A to G in this case, that would mean downloading and updating the data from Yahoo Finance.
+
+As I said, copying columns A to G over just as we did earlier.
+
+And so I'll just do that quickly.
+
+Now, if we go back to the FireEye data sheet that we downloaded from Yahoo Finance earlier and carry out that process here, I'm just copying columns A to G and pasting them into the FireEye sheet in this portfolio modeling sheet.
+
+And you can see now that all the charts and everything is updated to reflect that new data.
+
+And that's all there is to it, really.
+
+That's also, you know, the main reason why we made sure that when we entered the cell ranges for our data series in the charts and our date series as well, we made sure that they would encompass data a lot further down the sheet than our initial data set.
+
+So remember, we chose down to row 100,000 that so that it can make sure it updates with new data like we've just kind of proven here.
+
+So that's it for the first section of the video.
+
+And you now know how to download and plot stock price data in Excel.
+
+All fairly straightforward so far, but it is useful stuff.
+
+And everything we go through is just going to act as building blocks as you learn more and more through the course.
+
+Let's move on to the next section now, which is where we're going to look at how to compare the performance of two stocks in the form of a spread trade.
+
+And what I mean by that is a pairs trade where we're looking at going long one stock versus short another, the same principles that we're going to cover here can be applied across other assets as well, if that's something that you wish to do.
+
+So when we look at one stock, it's fairly obvious how to assess its performance and all you need to do really is look at its price or total returns over time.
+
+However, if you're looking at two stocks in the form of a long and a short position, we need to find a way of combining their individual performance into a single data series.
+
+And what we're going to look at in this section are various different methods of doing that using fresh pair and dollar tree stocks as examples.
+
+The first couple of methods I want to show you are quite crude, but easy to carry out.
+
+And then I'm going to go through what are essentially a couple more accurate approaches which can be carried forward to analyzing performance at the portfolio level with more than two stocks.
+
+And that's something that we're going to be doing later in the video.
+
+So the first two calculations I'm going to use here are what's called the spread and ratio methods.
+
+And as always, the first step here is to obtain the data that we need.
+
+In this case, we need the price series data for fresh pair and dollar tree, and we need to create a common time series for both of them.
+
+That basically means that we need to make sure that we only use price data when it's available to both stocks on any given day.
+
+So let's start by copying and pasting the price and date series for each stock into this blank sheet here, spread and ratio analysis from the relevant individual stock tabs.
+
+So starting with fresh pair, the ticker is FRPT.
+
+So we can navigate to that sheet.
+
+And all we need to do here is select both the date and the adjusted close columns by holding down control on the keyboard and left clicking on those columns.
+
+And with them both selected, I'm just going to copy them with control C and then paste them into control V into columns A and B of the spread and ratio analysis sheet.
+
+Similarly, for dollar tree now, that's DLTR, the ticker.
+
+So we can go to the DLTR sheet and we can do the same thing.
+
+And I'll copy those columns into columns E and F of the spread and ratio analysis sheet.
+
+Before we go any further, let's rename the columns B and F to reflect the tickers for those two stocks.
+
+So in cell B2, I'm just going to type FRPT for fresh pet and in cell F2, I'm going to type DLTR for dollar tree.
+
+Now, if we look at the time series here, we can see quite clearly that the data series that we have for dollar tree goes back to 1995, whilst the series for fresh pet is a lot shorter since the dates only go back to 2014.
+
+To compare these two stocks fairly, we need to only use price data on dates that are shared by both assets, which basically means we can only use price data corresponding to the shorter time series.
+
+To make sure that we're matching price data from the dollar tree series with the dates that we see in the fresh pet series, we can use an Excel lookup function called VLOOKUP.
+
+So in cell C2 here, I'm going to type equals VLOOKUP.
+
+That's our function.
+
+Then open brackets because we always need to fill out the parameters for our function and you put those in brackets.
+
+And we've got four parameters to fill in here.
+
+The first is choosing the date that we want to look up.
+
+That's going to be cell A2.
+
+Then I'm going to put in a comma and choose columns E to F, which is the data table that we're going to look within.
+
+And then I'm going to put another comma and put in two, because we're going to look in the second column of that data table.
+
+And then finally another comma followed by FALSE, which is just a parameter that makes sure we look up the correct date.
+
+So let me explain what this does a little bit more clearly.
+
+So the function performs a vertical lookup of the value that we see in cell A2, which is our date from the fresh pet series.
+
+And it looks it up in the table array of columns E to F, which is our dollar tree data.
+
+It then returns the value in the second column of that array that we specified.
+
+And the FALSE parameter at the end of the function just makes sure that it only returns an exact match for the date that we're looking up.
+
+So again, just to be clear, the function is looking up a date from the fresh pet series column B.
+
+It's finding it in the dollar tree series column E.
+
+It then returns the corresponding price from the dollar tree series in column F.
+
+And this function basically just makes sure that we're lining up prices of the two stocks correctly.
+
+So with that function inputted, we can just copy it down to find all the dollar tree prices on those particular dates.
+
+So now we know that our prices are aligned properly.
+
+Let's tidy things up a little bit.
+
+We want to be able to delete the dollar tree data series in columns E to F.
+
+Now, since we've aligned those prices properly in column C.
+
+However, if we delete columns E to F, then the formulas that we've created in column C will return errors because they can no longer look up prices from the deleted columns.
+
+So to get around this problem, all we need to do is convert the formulas in column C to their hard outputs or values.
+
+And the easiest way to do this is by copying the column and pasting the values over themselves, but as values instead of the formulas.
+
+To do that, just copy column C and then right click within that selection and select the paste as values clipboard option from the dropdown menu.
+
+And you can see now if I click on one of the cells that previously had our lookup formulas in that we specified earlier, it now just has the output values of those formulas.
+
+So with that done, we can safely delete columns E to F now by selecting them, right clicking within the selection and choosing delete.
+
+Don't forget as well to give column C a title, which is for this example, it can just be DLTR, the ticker for dollar tree.
+
+Now we've got our price data ready for both stocks.
+
+Let's talk about what spread and ratio calculation methods actually are.
+
+A spread is just the price difference between two assets, meaning for example, subtracting the price of dollar tree from fresh pet.
+
+And a ratio is the price of one asset divided by another.
+
+So for example, the price of fresh pet divided by the price of dollar tree.
+
+Both of these methods are simple ways to create a common time series that you can use to track the performance of trading a long short pair.
+
+As a side note though, when you're comparing a long idea versus a short idea by using a spread or ratio index, the convention is always to have your long idea as the first variable in the equation, meaning for a spread calculation, you take the long price minus the short price.
+
+And for a ratio calculation, you take the long price divided by the short price.
+
+So let's calculate the spread and ratio time series for these stocks now, based on the assumption that our long idea is fresh pet and our short idea is dollar tree.
+
+In column D, I'm going to calculate the spread and in cell D1, I'm just going to head the column with FRPT minus DLTR.
+
+Below that heading in cell D2, we need to write in a formula as follows.
+
+And that's just going to be equals and then the cell reference B2 minus C2.
+
+So you can just type in equals and then select B2, then hit minus on the keyboard and select cell C2.
+
+That's just the price of fresh pet on the date in row two.
+
+So the 7th of November, 2014 minus the price of dollar tree on that same date.
+
+And when we copy this formula down by double clicking the little green box in the bottom right of the cell selection, that'll copy down that formula for the relevant dates all the way down to the end of the data series.
+
+Once you do that, always make sure when you copy a formula down or across a sheet that you check the data afterwards.
+
+And the easiest way to do that is to navigate to the end of the series where you've copied down or across.
+
+And here I'm just doing that by pressing control and down on the keyboard to quickly get to the end of the data series.
+
+And then double click on the final calculation cell and just make sure that you're happy with the references and how the formula is working.
+
+Now let's move on to ratio calculations then.
+
+In cell E1, I'm going to title the column FRPT forward slash, so divided by DLTR.
+
+And in the cell below, the formula this time is going to be equals B2 divided by C2.
+
+And as before, we need to copy down that formula to the end of the series and check it as well as we did for column D.
+
+And you can see here that all the calculations look correct.
+
+They've yielded values to multiple decimal places, so the formatting is a little untidy.
+
+What we can do is just format that column of data by selecting column E and right-clicking within the selection and then going to format cells.
+
+Choosing the number option and then formatting the numbers to three decimal places.
+
+Okay, great.
+
+We've now got the underlying data sorted, but before I move on to explaining how and when spread and ratio calculations are useful, we need to create some charts to illustrate the new data series that we've calculated.
+
+Now we've already been through the charting process, so I'll make this one quite quick.
+
+I want to create a line chart to plot the spread series first.
+
+And so I'm just going to select insert on the ribbon, followed by 2D line chart.
+
+And from there, I'll move and resize the chart and then right-click within the chart area and go to select data.
+
+Within that dialog box, I'm now going to choose to add a new series and then select the series name as cell D1 and the series values as the entire series we calculated in column D.
+
+So that would be all the data from cell D2 down to the end of the data series.
+
+Now, I know in the previous example, we extended this to blank rows well beyond the data series.
+
+Obviously, you can do that if you think you're going to continuously update this chart with new data.
+
+In this case, I don't think that's particularly relevant, so I'm just going to leave it there at the end of the data set.
+
+So next, what you want to do is add our horizontal axis labels, which we can do again from inside the select data source dialog box.
+
+And to do that, you click on the edit horizontal axis button and then choose the corresponding dates for all the spread series data.
+
+So in this case, that's going to be all the dates from cell A2 down to the end of the data series again.
+
+And that's all there is to selecting data sources for our chart.
+
+So you can click OK to come out of those options now and we can see the chart there.
+
+And we're basically done now aside from any formatting changes that you might want to do.
+
+And I'm not going to go through what I've already talked about in terms of formatting.
+
+But one thing that I do want to add here is that for charts that display negative data, as this one does, I do think it looks better if you move the date axis labels to the bottom of the chart rather than on the zero axis.
+
+And to do that, you just need to double click the date labels, which should open a format axis panel on the right hand side.
+
+And then from there, you can go to labels and choose the label position as low from the drop down menu.
+
+So that's the spread chart done.
+
+Let's move on to the ratio chart now.
+
+The process here is exactly the same.
+
+I'm going to start by inserting a 2D line chart and then resizing the chart area to something similar to the chart that we just made.
+
+And after that, again, we need to add data sources to the chart.
+
+So I'll right click within the chart area and go to select data and add data series.
+
+Then I'm going to choose cell E1 this time as the series name.
+
+And for the series values, we're going to select cell E2 to the end of the series.
+
+And just to add the dates as well to this series, we can come out of that and then click edit horizontal axis labels and select cell A2 to the end of the series to add our dates.
+
+Okay, now we've run the calculations and created charts for our new series.
+
+Let's talk about how and when the spread and ratio calculations can be useful.
+
+If we take a look at the spread first between the two stocks, as I said previously, this is just the difference between the price per share of the two stocks.
+
+So essentially what the data shows is the performance of going long one share of fresh pet and short one share of dollar tree.
+
+Now, obviously, this can be extrapolated as well to two or three or any number of shares, as long as they're equal on both the long and short side.
+
+So let's take an example now.
+
+In July 2020, the spread between these stocks was roughly zero, meaning that one share for each company cost around the same price.
+
+But by February 2021, fresh pet cost around $60 more than DLTR than dollar tree, which tells us that if you were long one share of fresh pet and short one share of dollar tree, you would have made about $60 over the period.
+
+Not including, of course, any fees that you would pay along the way, trading costs and things like that.
+
+So equally as well, if you were to go long and short two shares of fresh pet and dollar tree, respectively, you would have made $120, which is, of course, $60 times by two.
+
+So that's what spread performance does.
+
+It shows us the performance in dollar per share terms of one stock versus another, provided that there's an equal number of shares applied to both assets.
+
+The ratio calculation is a bit different.
+
+In this case, mathematically, what you're calculating is the price of the long stock as a percentage of the price of the short stock.
+
+And this method is regularly used in finance as a measure of out or under performance between one asset and another based on both stocks being equally weighted in dollar terms.
+
+So not in share terms in the actual dollar capital committed to each side of the trade.
+
+Unfortunately, it is also sometimes mistakenly used as an exact measure of the constant equal weighted performance you would achieve if you were to implement a long short pairs trade like this.
+
+I'm going to talk a bit more about that later.
+
+But equally weighted just means that the same amount of dollars are committed to each side of the trade and constant in this case just means that the weighting doesn't change over time.
+
+And I say mistakenly used because whilst a ratio calculation does offer a very good indication of the directional performance of the trade, you can't estimate your percentage returns from it.
+
+And if you did, they would end up being grossly exaggerated one way or the other.
+
+However, that being said, the ratio method does have a very high correlation to more accurate measures of equal weighting or equally weighted performance.
+
+And that is why, as I said before, it is often used as a quick way to gauge whether one stock is outperforming another or not.
+
+So, for example, the way you might use a ratio is if we look at the ratio chart here for fresh pet versus dollar tree, whenever the line is going up, we know that our long, so fresh pet in this case, is outperforming our short and vice versa.
+
+And that's really mostly what a ratio is actually good for.
+
+You cannot use the ratio as a way of calculating the percentage change or the percentage returns that you would achieve.
+
+So basically, you can't use the ratio to measure the percentage change of the ratio and equate that to the percentage returns you would see if you put on those two positions.
+
+If you want to be able to precisely assess the historical performance of a long position versus a short position, then probably the fairest way to do so is to work out the percentage returns for each position over every period and then apply equal weightings to the long and short sides before then, of course, combining them into an overall return.
+
+In our data set, we're looking at daily intervals.
+
+So what that means is that for every trading day, we want to calculate the daily percentage return for each stock.
+
+And once we've done that, all we do is create an overall return for each period by summing the equally weighted returns of both the long and short positions.
+
+This methodology that I'm talking about is sometimes referred to as a constant equally weighted approach because for every calculation date, the returns for each position are equally weighted, which means that on every day, we're assuming that an equal amount of capital in dollar terms is committed to each position.
+
+Now, practically speaking, this isn't very reasonable since whenever stock prices move, the weightings will become imbalanced.
+
+And so realistically, you would need to rebalance the weightings every day to implement this properly.
+
+However, it does mean that when looking at a time series of performance, the two positions are always fairly assessed in terms of their relative performance.
+
+So let's go ahead and do this analysis for our long FRPT and short DLTR trade so that we can compare our results to the work that we've already done with the spread and ratio analysis.
+
+So to start with, in the performance CEW sheet, I'm going to copy over the price data that we used in the spread and ratio analysis sheet just by selecting the right columns and copying them across.
+
+From there, I want to basically calculate the daily returns for each of these stocks across the entire time series.
+
+So starting with Fresh Pet, in column D, I'm going to title the column FRPT percent.
+
+And in cell D3, I'm going to type in a formula which is equals cell B3 divided by cell B2 minus 1.
+
+This formula basically calculates the percentage change in price from cell B2 to B3.
+
+So that's the closing price on the 7th of November to the closing price on the 10th of November.
+
+And you might have noticed there that those dates aren't sequential, okay?
+
+Not sequential calendar dates anyway, but they are sequential trading days because those dates are over a weekend.
+
+Now, one thing to note here is that our data is arranged in ascending order.
+
+So what that means is that the oldest data is at the top of the sheet and the most recent data is at the bottom of the sheet.
+
+And so the first formula that we've put in is in cell D3, not D2.
+
+And that's because to calculate the percentage returns for each day or for each period, we need the data from the prior period, which wouldn't have existed if we started in the top row.
+
+So with this formula in place, we can copy it down as we've done many times before, and then double check that the formula looks good at the end of the series, which you can see it does.
+
+So let's now go through the same process for dollar tree returns, except we don't need to retype the formula in here.
+
+And instead, what we can do is just copy across the formula that we've got in cell D3 to cell E3.
+
+And to do this, you just click and select cell D3 and then drag the little green mark in the bottom right of that cell selection across to the new cell E3.
+
+Just in the same way as we might have done if we copied down, you can also copy across in this way.
+
+So if we then double click in the formula just to check it, you can see that the cell references have moved appropriately by one column to reference the dollar tree prices instead of fresh pet prices, so we can feel confident with that formula. And with that done, again, we can copy the formula down to the end of the data series just by double clicking the little green box in the bottom right of the cell selection. And before I go any further, let's just format these columns of returns to display themselves as percentages, because actually, at the moment, they're a bit hard to read just as decimals. So we can do that just by selecting the columns, right clicking within the selection and choosing format cells. And then we select the percentage option. And for this example, we'll round the percentages to two decimal places. Now, as I said earlier, we need to combine these two sets of returns into an overall return that measures the performance of our long versus our short, which I'm going to do in column F. To begin with, I'm going to title the column CEW percent, meaning constant equal weighting percentage. The overall percentage returns for this portfolio of two stocks is easy to calculate. All we need to do is apply an equal weight to the long and short returns and add them together. So there's two things we need to do here. First, at the moment, we've calculated the returns for both the stocks we're looking at as if they're long positions. And remember, we're assuming we're long, fresh pet, but short dollar tree in this example. And so when we combine the returns, we need to make sure that we invert the dollar tree returns and make them negative so that they equate to being short dollar tree. Second, if we're going to equal weight the two positions, we need to make sure that we apply a 50% weighting to each set of returns, which would then together equate to 100% for the spread trade as a whole. As I said before, this sort of constant equal weighting approach is the fairest way to calculate relative performance between the two assets, but it isn't always the most realistic option.
+
+And I'm going to touch on that a bit more later. So anyway, in cell F3, the formula for our combined returns is just going to be 0.5 times by cell D3, close brackets, and then adding in brackets 0.5 times minus cell E3, close brackets. And if we look at this formula more closely, all we're doing here is basically adding together two components, a 50% weighting to the long fresh pet returns and a 50% weighting to the short dollar tree returns. And the reason why we have a negative sign before referencing the dollar tree returns is to transform those returns to represent a short position in the stock. So that effectively gives us our returns for the combination of the two positions. And as you guys are going to see shortly, this is pretty much identical to the approach that we're going to take to calculating constant equal weighted portfolio returns later in the video. The difference being here is that this is just an example of a portfolio of just two positions instead of many, as we're going to see later. Okay, let's move on. If you want to chart the performance of this long short pair, we need to create an index, which is another useful skill actually when it comes to doing your own trading analyses in general. So in cell G1, I'm going to title the column CEW index. And below that in cell G2, we can start the index at any value we wish. And common practice is to start indices from a value of 100. So that's the value that I'm going to enter into cell G2 here. And that's going to represent the index value of this mini portfolio on the 7th of November. Now in cell G3, to calculate the index value on the 10th of November, all we need to do is multiply the previous index value, so 100, by 1 plus the returns for that period. So what that's going to mean is in cell G3, I'm going to type in the formula, equals cell G2, multiplied by, in brackets, 1 plus cell F3. And so that's just going to be the previous index value G2, multiplied by 1 plus the portfolio returns, or the combined returns for the two positions, given that they're equally weighted. So as we've done previously, we can copy this formula down as well and format it appropriately. I'm going to format the column this time by selecting column G and going to home on the ribbon, just to show you a different way to achieve the same sort of thing.
+
+And I'm going to choose to format the values as numbers to two decimal places in this case.
+
+So that's just a different way of formatting something rather than right clicking in the selection and going to format cells. Finally, with this performance index calculated, we can chart it.
+
+And as before, I'm just going to insert a 2D line chart quickly, reposition it and size it to sort of this kind of size, and then select the appropriate data sources by right clicking in the chart area and going to select data sources. The data series that we need to add is the CEW index, with the title of the series set to cell G1 and the data value selected as cell G2 down to the end of the series. And after that, of course, we need to make sure to add our horizontal axis labels as well, which are determined by the corresponding dates to those values for the index that we've just created.
+
+So the dates will just be, the date reference will just be from cell A2 downwards, and then we can press OK twice to view the chart. Okay, let's have a quick recap here. What we've just done is basically calculate or create a constantly equally weighted index of performance, which has been based at a value of 100 on the 7th of November, 2014. The index is made up from the combined performance of two individual positions, long fresh pet and short dollar tree. And to get to this point, we needed to calculate the returns for each of those assets over every period in our time series, and then combine them by applying a 50% weighting to the long FRPT returns and a 50% weighting to the short DLTR returns. And then we added those together. Now I'm going to come back to how this way of measuring performance differs to those we've covered previously in a minute. But first, what I want to address is something I said earlier about this being a fair way to calculate the out or under performance of two stocks, but it not necessarily being the most practical method. It's fair because an equal weight is assigned to both the returns of the long position and the short position for the entire duration of the data set. So whenever the portfolio goes up, we can guarantee that it's because the long idea has outperformed the short idea and vice versa. As far as overall returns go, it's also very accurate, so long as the assumptions of constant and equal weighting hold true. However, from a practical perspective, this is very difficult to implement, especially using such small daily intervals as we've done here. The reason being is that in order to maintain an equal weight in both positions for each period, you would need to, in practice, rebalance at the beginning of every period to make sure exactly the same amount of capital is committed to each trade. So think about it this way, if you were to buy 10 shares of Fresh Pet on the 10th of June 2021 at $168 a share, you will have committed $1,680 to that position. And let's just say for argument's sake that you could short exactly the same dollar amount of Dollar Tree on the same day. If the price of Dollar Tree didn't move, but Fresh Pet went up 10% after you bought them that day, then at the open on the next trading day, you'll have $1,848 in Fresh Pet and only $1,680 shorting Dollar Tree because the Dollar Tree price didn't move, but the Fresh Pet price went up 10%. That means that you no longer have an equal weighting in both assets unless you go about rebalancing those positions.
+
+So you can see why that's quite impractical. It might be okay to do on a monthly or quarterly basis, but it's pretty impractical to do on a daily basis and obviously the costs incurred in constantly rebalancing like that would be high. So although the equally weighted measure of outperformance is the fairest from an objective point of view, it might not be the most practical. So what I want to do now is show you how you calculate the non rebalanced performance for the same portfolio. And then finally, I'm going to wrap things up with all of the measures that we've looked at so far and compare the performance of each of them.
+
+In this next sheet, we're looking at non rebalanced performance of the same two stocks. And as you can see, it's already pre-assembled. So I'm just going to talk through the steps that it took to create it.
+
+And then you guys can always backward engineer them if you wish to do so. I'm then going to conclude with just a few points about the benefits and drawbacks regarding non rebalanced performance measurement. So building this sheet requires very similar methods to those which we've already used up to this point in the video. We start with our FRPT and DLTR prices, and then we calculate returns. From there, I've created two indices, one for each stock, starting from values of 50. And I chose those values so that it's easy to visualize both stocks having 50% weightings at the beginning of the data series back in 2014. And also when you add them together, it will create an index value for 100 to base from. The indices for each stock are created by sequentially multiplying the index values by 1 plus the stock returns for each period.
+
+There's no adjustment for shorting at this stage. We account for that in the next formula, in the next column, which is the overall non rebalanced performance index.
+
+In this column, the index is based by summing the starting values of the two stocks, the two stock indices, as I said. And by the way, you can actually change these two values to whatever you like since they essentially mimic the gross exposure to each position. But as I said, for the purposes of this example, I want to keep them equally weighted, each with an index base of 50.
+
+So after the overall index base is defined by summing the two stock index bases, the subsequent index values are calculated by adding the change in the long index and subtracting the change in the short index to the prior overall index value. For example, in cell H8 here, the formula takes the previous value of the overall index, adds the change in the FRPT index and subtracts the change in the DLTR index. And that's because our dollar tree position is a short. And so that's where we make our adjustment. Note that by calculating performance this way, we're not equally weighting the returns in every period as we did before, but are instead effectively implementing a buy and hold strategy for FRPT and a short and hold strategy for DLTR, starting with obviously the same amount of capital to each trade.
+
+And as you would expect, because of that, the weightings in the non-rebalanced index change dramatically over time. And I've calculated how those weightings change in columns J and K for you guys to have a look at. If we have a look at the charts here, you'll notice that the non-rebalanced index performance is quite different to the constant equal weighted performance, the CEW performance index that we looked at previously. And as you would expect, performance starts off looking quite similar when the weightings are roughly equal, but as they drift further and further apart, so does the correlation to the prior index we calculated. So as the weightings drift apart, so does the correlation to the prior index that we calculated. And you guys are going to be able to see this a little bit better in the next comparison sheet that we're going to look at shortly. I've also created another chart here to show you just how much the weightings do change over the period that we're looking at.
+
+The blue filled portion of the chart represents the fresh pet weighting, and the orange fill represents the dollar tree weighting in the index. You can see that in November 2014, they both make up about 50% of the index or exactly 50% of the index. And then the weighting to dollar tree increases at one point to as high as 80% in late 2015, early 2016. And then the FRPT weighting increased from then onwards to the point where it counts for almost 85% of the index by June 2021. There is another point that I want to make about weightings now, which will be useful for you guys to understand when you're managing your own portfolios. And that is basically that for your long positions that you have in your portfolios, the weightings for those positions will increase as the underlying stock performs favorably, and therefore the position performs favorably. So the stock price is going up. But for short positions, weightings will also increase as the stock price goes up, which means that the weightings increase as effectively you're losing money in your position rather than gaining money. And that's just a good thing to have in the back of your mind, just for sort of how the weightings in your portfolio will change as prices move in your longs and shorts. So this non-rebalanced performance that we're looking at here is useful to us because it tells us the actual gross returns before any fees or anything like that we would have achieved given holding these positions for a certain length of time and with the starting weightings that we've applied. So for example, with this portfolio where we're long FRPT, short DLTR, you would have made close to 350% from November, 2014 to June, 2021, since the portfolio index starts here around a hundred and finishes in June, 2021, around a value of 450. In reality, a trade is never going to last that long. And if it did, the financing fees, of course, for the shorts and leveraged positions would be quite significant if you were leveraged.
+
+The point of using a long data set like this, as we've done here though, is so that we can compare it to the previous equally weighted performance calculation that we ran. And you can see how significant the weighting drift can be over time. So what are the positives and negatives of measuring non-rebalanced performance in this way? Well, as I said previously, the methodology might be a bit more realistic to the performance that you want to measure. It's going to answer questions such as if I traded the same amount of dollars in each of these stocks at a certain time, what would my performance have been over the period given no further trading? It effectively calculates your holding period return and your index profit and loss curve along the way for a mini portfolio of two positions, one long and one short. And by the way, if you guys want to experiment, see what would happen with different dollar weightings, you could just overwrite these cells here, F8 and G8 with whatever values that you want. So for example, you could model how the trade would have performed if you committed $1,000 to the long side and $2,000 to the short side. And when we enter those values, you can see here that all the charts and stuff updates. And you could, of course, specifically model a certain number of shares in each position as well, just by making the starting values some multiple of the initial prices for each stock. So that is all fairly simple to do. And you guys can play around with that as much as you want. So despite this method being perhaps a more realistic measure of performance, if you're just trying to keep an eye out on the outperformance of one stock versus another, then equally weighted performance calculations are going to work better. Because that way you can look at a chart and if the index value is increasing at any point in time, you know you're long outperformed, you're short at that time and vice versa. That is actually not true and not the case in the non-rebalanced index. So with a non-rebalanced index, all you can say for sure is that one stock outperformed the other over the entire length of the series, but not for any specific window within it, because the weightings might not be 50-50 at that point that you're looking at. So for example, if I change the values back to 50-50 here and you look at the weightings when the index comes to an end, you can see that FRPT has a rough weight of about 85% in the index to DLTR's 15%. So that would mean if the price of Dollar Tree fell 50%, which remember would be a 50% gain in our short position and beneficial to our portfolio, the price of Fresh Pet would have only had to decrease by about 9% for the net effect to be negative on the overall index. So if the overall return was negative, then in an equal weighted portfolio we would know that Dollar Tree outperformed Fresh Pet over the period. But because the weightings are so different in the example I just gave, the opposite was actually true. Fresh Pet outperformed Dollar Tree because it only decreased 9% compared to Dollar Tree decreasing 50%. That is why looking at non-rebalanced performance doesn't actually reflect outperformance in your long versus your short over every time window that you can look at, just over the entire length of the series. Whenever the weightings in a long short index like this are unequal, you can never be sure which stock is actually outperforming the other just by looking at the movements in the overall index level. So to conclude, non-rebalanced indexing is great for calculating holding period returns and modelling historical trading scenarios as we've kind of done here. But constant equal weighting performance is better for understanding whether one stock has been outperforming another at any point in time. I hope that all makes sense. Now before I go on to portfolio calculations, I want to briefly show you the difference in the various methodologies that I've used so far for measuring out or under performance between two stocks. I'm not going to do a whole lot of talking here, instead I'm just going to point you to this chart here to reassure you that basically what I've been saying isn't nonsense and these different methods do actually yield different results. So in the chart you can see the quick and dirty ratio method that we looked at first, as well as the constant equal weighting and non-rebalanced index methods. I've already discussed how those two are different, why the constant and equal weighted method and non-rebalanced methods are different. One thing I want to quickly add to that is proof of something that I mentioned earlier, which is that the ratio index is also different to the constant equal weighted approach. And as I said previously, that is something that's often misunderstood. That being said though, the major inaccuracy really in performance measurement here is just a scaling problem. And the ratio index is actually quite tightly correlated to the CEW index. And in fact, the two indices are kind of over 95% correlated on the whole. Despite when you look at the performance over the time period that we've analyzed here, the ratio index ends up being about 130% higher than the constant equal weighted performance index.
+
+So the conclusion here is that different measures of performance will affect the overall returns that you calculate. And if you want to follow sort of mathematically rigorous methods, you need to be using either the non-rebalanced or the constant weighting approaches that I've mentioned. And just be sure to understand what they represent and their applications before you use them. If you want to calculate dollar performance quickly on an equal share basis, then the spread method that we looked at at the beginning is also okay, but it's not great at measuring out or under performance on a percentage basis because the weightings are inherently different due to the differences in share prices.
+
+If you want to be able to quickly glance at a chart and understand whether one stock has outperformed another, then the ratio method is also okay. Just don't go assuming that you can go any further than that and start calculating returns. Okay. I'm done talking about measuring performance differences and combined performance of two stocks. There was quite a lot of detail in there in that section, but it was necessary to go through those building blocks so that what I talk about next makes more sense. And what we're going to look at now is how to model historical portfolio performance. And to do that, we need to be able to calculate portfolio returns, which is done simply by adding up all the weighted returns of the positions inside the portfolio. So for example, if you had a portfolio of two long stock positions with the same capital commitment to each and one made 5% whilst the other made 10%, the portfolio return for that period would simply be 0.5. So the weighting to one stock times by 5% plus 0.5 times 10% the weighting to the other stock, which overall would give you a performance of 7.5%.
+
+Now that all sounds quite trivial so far, but we do need to think about weightings a little bit more carefully before we get stuck in. And what it basically comes down to is a decision about rebalancing. And this is where some of the concepts that we talked about previously come into play.
+
+If we don't rebalance at all, then basically what we're doing is calculating portfolio performance for a trade and hold strategy. Effectively, we can figure out what the profit and loss would have looked like in a portfolio if we traded a certain dollar amount in number of stocks and held those positions for an amount of time. Alternatively, we could look at a portfolio that rebalances. Rebalancing positions is usually something that's associated more with investing rather than trading. And so in a sense, this is a less practical way to measure performance for us as traders, as I said before. However, what can be useful to us is to measure portfolio performance based on an assumption of constant weights. The reason being that you can then answer questions such as when the portfolio has performed well or poorly at any point in the past based on those specific asset weightings that you've outlined.
+
+So as you've probably gathered, these are exactly the same concepts that we've been through already previously with looking at non-rebalanced performance versus constant weighting performance in a long short pair of stocks. So let's look now at non-rebalanced portfolios first. If we take a look at the portfolio NRB sheet, you can see that there's a template already laid out for you guys to use. And there's a number of steps to go through in this template just to get the sheet working. But as you're going to see, as we go through some examples, it isn't that difficult. So let me briefly outline what we're going to do now.
+
+Step one is to enter the tickers that you want to be in the portfolio into row one into the orange cells, assuming that you already have the data for those stocks updated and in their own sheets within the spreadsheet file. It's important that the text that you enter into these cells matches whatever the sheet names are for the relevant company. So that's why I suggest making the sheet names for each company's data equal to the ticker symbol. Step two is to enter the number of shares for each company into row two, which effectively gives each position a starting way in the portfolio. And then we need to define whether the position is a long or short position in row five, in order to make the returns for short positions inverted if we need to. The next step, step three, will be to enter a series of dates into column A from row 11 down, which defines the period over which we'll be measuring portfolio performance. Step four is where things become a little bit trickier because I'm going to be teaching you some quite complex Excel functions and formulas in order to look up prices for each stock on the relevant dates. And put simply, what these formulas are going to do is in each cell, they'll reference the date seen in the relevant row as well as the ticker seen in the relevant column, and then use those values to pull through the correct price data. And as a heads up, the formula that we're going to be using is kind of going to build upon the VLOOKUP function that we used earlier. Finally, step five will involve some more calculations, this time at the portfolio level, where we'll calculate the dollar returns for each period and the overall portfolio value. Before we start, let me just say that although the calculations at times might be a little bit daunting, if you just take your time and break them down, they're really not that difficult. So even if you do have trouble though, while we're going through this in the video, obviously you can, you can pause the video, you can go back, look at it as many times as you need. But even if you are having trouble with them, it doesn't actually matter too much. All you really need to be able to do is replicate what I'm doing for your own analysis and just understand what the formulas aim to do rather than the specifics of the formulas themselves. So I'm going to go through a worked example now to demonstrate how the sheet works, where we calculate the historical performance for a $100,000 portfolio that contains 10 large and mega cap stocks of which six are longs and four are shorts. Before we begin, let me point out that the longs and shorts that I'm going to use in this portfolio and in the examples ahead have all performed pretty well in their own right. So we can expect the performance to be quite good. I've built it specifically that way so that you guys get an idea of what's achievable when you build really good portfolios yourselves. If you want to get a quick rundown of the companies that we're looking at when you download this sheet yourselves, you can just check out the summary tab here that I showed you at the beginning of the video as well. But for the rest of the video, I am going to mostly refer to the companies just by their ticker rather than their full names or providing any more details about them just because it will make it easier for the video to flow.
+
+Okay, so you can choose any stocks you like by entering their ticker name into the orange cells in the first row. However, the calculations we look at later will only work if you have sheets containing price data for each stock that you enter and those sheets are actually named or have to be named with the appropriate ticker symbol. So again, as I said earlier, the sheet names need to match the tickers that you put into these orange cells. In this example, I've already entered the stocks that we're going to look at for the first portfolio by entering their tickers in the orange cells and you can see that they all have sheet names matching them with price data that's been updated to the 10th of June 2021.
+
+In row two, what we're going to do is calculate and enter the number of shares. We're long or short in each company based on a roughly equal capital commitment to each position. And then in row five, I've chosen already whether the positions themselves are longs or shorts by entering a one for a long position or a minus one for a short position. And as I said before, all the tickers in row one, again, need to match name sheets that contain price data for those relevant stocks. And what you can see in rows six and seven is the start and end dates that have been automatically calculated for each of those stocks based on their time series in their relevant sheets. So that's useful to us because it then allows the sheet to calculate the shortest time series, assuming all the data is up to date, which is denoted by the ticker that appears in cell B8. As I said previously, whenever we're compiling stock data from various companies, we need to make sure that we're only using prices on dates that are common to all companies. And it's handy therefore to know which the shortest time series of data we have is, because it acts as a starting point to create a column of common dates. For example, here you can see the shortest time series is SPLK, since that company came to market most recently in April 2012.
+
+Or at least that's the earliest data that we have available from our data source, which is Yahoo Finance.
+
+So for any date before that price data for SPLK is unavailable and therefore we wouldn't be able to calculate portfolio performance at that time either or before that date. So the earliest possible date that we can use in this portfolio is actually going to be the 19th of April 2012. For this example though, we're just going to calculate portfolio performance from 2021 onwards. So I'm going to go over to the SPLK sheet now, since that's our shortest time series, and then I'm going to copy all of the dates from 2021 onwards to the latest available data, and then paste that into column A in the portfolio NRB performance sheet. I'm just going to do that by manually scrolling to the earliest date in 2021, and then pressing control shifting down on the keyboard to select all of the dates after that, and then copying them across, pasting them into cell A11 of the portfolio NRB sheet.
+
+Okay, now we need formulas that pull prices through for all of these stocks and on all of these dates.
+
+And I'm going to start with pulling through the price for EIX on the 4th of January 2021 into cell B11.
+
+And to do that in that cell, I'm going to use a VLOOKUP function by typing equals VLOOKUP. And as with all Excel functions, we need to enter some function parameters separated by commas inside the brackets after we've called the function that we want to use. I know I've been through the VLOOKUP function once already with you in this video, but I'm going to explain it again here, since it's going to become part of a larger formula that we're going to use to retrieve prices in this sheet. So I'm going to start by selecting a cell for our first parameter, which is basically the cell that we want to look up. Okay, that's going to be our date in cell A11. So that's our reference that we want to look up within another table to then retrieve the price for EIX on that date. So the lookup table, which is the next parameter in the function. So I've put in a comma here and then gone to the next parameter. The lookup table is just going to be columns A to G in the EIX sheet. And then again, we go to the third parameter of the function here. And I'm just going to type in the number six because we want the sixth column within we want to basically return whatever is in the sixth column within that lookup table that we've just defined. So that will be our adjusted close prices. And then finally, putting another comma and going to the last parameter of the function, I'm just going to type in false here. So it just returns an exact match.
+
+So just to go through that again briefly, the first parameter here, A11, is a cell reference to the date that we want to look up in another table. The second parameter defines the table that we want to find price data within that matches that date. And when you do this, you need to make sure that the first column in the table contains the values that you want to look up. So the dates in this instance.
+
+So that's why we're selecting from column A to G, because A contains the dates and G, column G contains our adjusted close data. The third parameter tells the function which column to retrieve data from once the row has been defined by the lookup date. So the sixth column in our formula makes sure that the adjusted close prices are returned for each date. And then finally, the fourth parameter should just be set to false because we want to make sure that the date that we look up is an exact match in whatever sheet we're looking in. So you can see there that the value returned in that cell is the adjusted close price for EIX on that date. Now that formula is pretty good and you can copy it down to the end of the table and it will work. However, you can't copy this formula across to other columns for a couple of reasons. Firstly, none of the references in the formula so far have been fixed. So if we copy the formula across one column, then instead of looking up dates, the formula is going to try and look up what we see in column B, which is the prices that we've just calculated for EIX.
+
+Also, the lookup table references have changed and are no longer referencing columns A to G. So to remedy these problems, we want to fix the references to the lookup value to make sure that the column letter is fixed, but not the row number. And also we want to fix the references to the lookup table, which we always want to be columns A to G no matter what column we're in and what sheet we're referencing.
+
+So to fix a cell reference, we just add dollar signs before the relevant cell letter or number, depending on whether you want to fix the column letter reference or the row number reference or both. And in this example, that means putting dollar signs before the column letter for our date reference and before the column letters for our lookup table. Secondly, even with the cell references fixed, you can see that when the formula is copied across, the price returned is the same for IBM as it was for EIX. That's because the lookup table was still referencing the EIX sheet. Now to fix this is a little bit trickier. Basically, what we need to do is substitute this second parameter we've defined here with some kind of dynamic reference that changes the sheet name component of the formula based on the column that we're in. What I mean by this is if the formula is in the EIX column, we want it to reference the EIX sheet to obtain prices. But if it's in the IBM column, we want the formula to reference the IBM sheet for prices and so on. Don't worry too much if you don't follow this next part. Like I said, you just need to be able to replicate it. And as long as you understand the general concept, then it doesn't really matter if the formula itself isn't fully understood. I do warn you in advance, so some parts of this will be hard to make sense of purely just because they rely on certain Excel quirks. So the way I'm going to do this is by building up a formula piece by piece to replace the second parameter of our VLOOKUP formula, which is just the reference to the lookup table. And just so we're clear, the full lookup table reference is basically this part here, EIX, exclamation mark, dollar A, colon dollar G, okay? So let me write that out now into cell A9, just as a reminder of where we're trying to get to.
+
+The lookup table reference that we have here can be split into two parts, the sheet name reference, which is EIX, exclamation mark, and the table reference within that sheet, which is columns A to G.
+
+Remember though, we're trying to make the sheet name component dynamic so that it changes depending on whatever column we're in. Okay, I'm going to use cell B9 now to build this reference out with a formula piece by piece. To start with, creating a dynamic reference to the ticker component of the sheet name is pretty easy. All we need to do is type equals B1, and that's going to return the value of EIX, which is the ticker that we see in cell B1. And if we copy that across, it will match whatever ticker is seen in that column. However, we do need to make sure that the row reference is fixed so that no matter how far we copy this formula down, it always sticks to referencing the tickers in row one. And we can do that just by adding a dollar sign before the row number, i.e. before the one in this case.
+
+Next, we need to add the exclamation mark to complete the sheet name reference. And to do this, unfortunately, we can't just type an exclamation mark in and put it on the end of this reference because Excel doesn't know what to do with a cell that's equal to a reference to multiple cells, or as is the case here to a sheet name without performing a function on it first. Anyway, what we can do, though, is turn this into a text string. And then once we have the formula completed, we can turn it back into a reference. And this is going to become a bit clearer as we keep going.
+
+So to add an exclamation mark here and turn this formula into something that outputs text, we can add on an ampersand followed by an exclamation mark within double quotation marks.
+
+And the ampersand is just used in Excel formulas to link components of text together, which means that this formula is reading whatever is in cell B1 as text and just adding on whatever is inside the quotation marks afterwards. So that makes the next bit easy as well, which is just adding in our table reference. The table reference is the same no matter what sheet we're in, because every sheet is laid out in exactly the same way with price data from Yahoo Finance. I'm talking about our price data sheets here. So all of our tickers down the bottom that we have as sheet names.
+
+So we can just add some more text in here in our double quotation marks, which is just going to be equal to $a colon $g. And that's just the column references to our lookup table that we want to use, as I kind of showed earlier in the VLOOKUP function. Okay, so when I copy this across now, you can see that we've basically created what we wanted initially just in text form rather than as a cell reference. All we need to do now is turn this bit of text into a reference and we can do that using the indirect function. But first, there is one final quirk of Excel that we need to address, which goes back to the sheet name reference. Unfortunately, when we go through the process of turning a sheet name reference in Excel into text, we need to actually surround that reference in single quotation marks. So what that means here is that we need to link some single quotation marks with an ampersand to the outside of our sheet name reference. And those single quotation marks can only be linked if they themselves are inside double quotation marks. I know this sounds bizarre, but hopefully you'll see what I mean based on the output that I'm getting here. So let's put that formula into the second parameter of our VLOOKUP formula that we had applied earlier in cell B11. And we're also going to apply the indirect function on this kind of second parameter text that we've created. Remember what we created just before was basically a dynamic text string, and that needs to be turned into something that Excel can read as a table reference for the lookup table component of this VLOOKUP function.
+
+And so that has to be done by using the indirect function on that text string that we've just created.
+
+Okay, so that's the formula completed. Like I said before, don't worry at all if you didn't follow that entirely. You only need to be able to recreate it and understand what it achieves to actually, you know, make use of this stuff. Incidentally though, a good tip I have for you guys if you create a formula and want to understand more about how it works is to use the evaluate formula button in the formula tab on the ribbon. To demonstrate this, if I select B11 now and go to evaluate formula, I can then click the evaluate button and see the stages that the formula goes through before reaching its final output. And looking at this now, you can see the first stage is identifying the date value in cell A11 and you can see this turns into a serial number equal to 44200. You don't need to worry about that. It's just the date value that Excel uses for the 4th of January 2021. After that, it starts compiling the second parameter of the VLOOKUP function, which is where we entered the indirect function inside the VLOOKUP function. And as we step through, you'll see that everything I added into that part of the formula equates to the same simple reference that I made earlier, which is columns A to G in the EIX sheet. And if you keep going, we'll get to the value that we now see in cell B11. So the reason I went to all that extra effort to create a dynamic reference is that firstly, it now allows us to copy that formula across as far as we need to. But secondly, and more importantly, it means that we can change the tickers in the orange cells at the top of the sheet and the correct prices are always going to pull through provided that we have the data and that the sheet names are named correctly and set up correctly to match the tickers. Okay. Now that we've got our dynamic price references set up and copied across every column as we need to, we can also copy these formulas down to the end of our data set. And this is done simply by selecting cells B11 to K11 in this case, and double clicking the small green box in the bottom right to auto fill those formulas for every day. So with our prices retrieved, we can enter the number of shares we want to be long or short in each stock now. And as I said earlier, we want a roughly equal weighted portfolio, portfolio of positions with a total gross exposure of about $100,000. So the simplest way to calculate the number of shares you need in each position, then is just by dividing the desired total portfolio value by the number of positions.
+
+So that's 100,000 divided by 10, which equals $10,000. So that's the sort of exposure we want to each position or the capital committed if you like to each position position. And from there, you just divide that $10,000 by the share price at the beginning of the model and round that to the nearest whole number.
+
+Since we're assuming that we can't trade with fractional shares or anything like that.
+
+So in cell B2, I'm just going to type equals round. So round is a function in Excel that rounds a value to a certain number of decimal places. So equals round, open brackets, 10,000 divided by B11. Okay. So the first price that we have for EIX and then comma zero, which means rounding whatever that value is to zero decimal places. So making it a whole number. So just to reiterate that the formula simply calculates 10,000 divided by the share price that we've defined and then rounds it to the nearest integer. And the round function has two parameters, as you can see, separated by a comma. The first one is the value that you want to round. And the second is the number of decimal places that you wish to round to. So once that formula is entered, I can just copy it across to get the number of shares for each position. And we can see that it roughly creates an equal weighted portfolio with a value of $100,000.
+
+What you'll also notice at this point is that rows three and four have now been populated as well.
+
+Row three just calculates the starting gross exposure in each stock, which is the number of shares multiplied by the first price that we see in our table. And by design, it's obviously very close to $10,000 for every stock. Row four calculates the starting gross weighting of each stock given the gross exposures above. And again, we chose the number of shares we need to obtain an equal weighting. And so by definition, the weightings for each of our 10 stocks are going to be roughly 10% each. And by the way, it goes without saying here that when you do any backtesting yourselves, you don't need to equal weight the positions. You can actually choose any position size that you want to backtest. I just wanted to show you a quick method in this example to get things approximately equal weighted, which we did with the rounding function that we used previously. Okay, everything that we need for running some portfolio calculations is now set up. So let's move on to those. And what we're going to do first is calculate the dollar returns for each period. The concept here is pretty simple.
+
+All we need to do is add up the price change for all of our longs multiplied by the number of shares and that will equal the total portfolio returns in dollar terms. Now there's a quick formula to achieve this and I'll type this into cell T12. Now it is equals some product and bear with me with this one. I'll explain it a little bit more after, but it's equals some products. That's the function that we're going to use, open brackets. And then within the parentheses, we're going to type three parameters.
+
+Okay, the first parameter, they're all going to refer to cell ranges. The first range is B12 to S12.
+
+Then we're going to put a comma. The second range is B2 to S2. And we're going to fix that reference just by pressing F4 on the keyboard until we've got dollar signs around all the column letters and row numbers.
+
+And then we're going to put another comma to move on to the third parameter of the function and reference another range, which is B5 to S5. Again, fixing all of those references.
+
+I'm then going to close the brackets for that first sum product function. And then I'm going to put in a minus sign, so a subtraction sign, and then do a very similar function again. So sum product, open brackets, this time row B, sorry, I should say cell reference B11 to S11 in the first parameter.
+
+That's going to be a dynamic reference. Then B2 to S2, which is going to be a fixed reference.
+
+And then in the third parameter, B5 to S5. Again, a fixed reference.
+
+So what this formula basically does is add up the net exposure for each stock on the 5th of January in the first sum product function, and subtracts the sum of the net exposures on the 4th of January.
+
+And that basically yields a dollar change for the entire portfolio. The net exposure for each stock is simply calculated by taking the price multiplied by the number of shares multiplied by one or minus one, depending on whether it's a long or short position, which you can see are the three parameters inside our sum product functions. And by the way, the reason why the reference I've used extends to column S, even though we don't have ticker references beyond column K, is just so that we can really easily create larger portfolios without having to reprogram all of these formulas. So basically, what we're doing here is for every period, we're adding up all the dollar changes for all for our long positions and subtracting all the dollar changes for our short positions. And that equation yields the total dollar change for the portfolio. The formula that I've used there with some product functions is just sort of a quicker method of doing that. Okay, so with that formula completed, now we can copy it down and note that this time we can't just double click the auto fill box because Excel doesn't know how far to copy the formula down if there's no data in the column next to it.
+
+So we need to actually manually click and drag the auto fill box as far down as we need to, which is to the final row in our dataset. So now we've done that, we've got our dollar returns completed.
+
+It's easy to calculate a time series for our portfolio value from those dollar returns. So in cell U11, we just start with our starting portfolio value, which is the sum of our starting gross exposure for each position. And we can find that value in cell T3. So I'm just going to put in here this cell U11, I'm going to make that equal to cell T3. From there, the portfolio value changes with the dollar returns we calculated in column T. So to calculate our portfolio value on the 5th of January 2021, we just take whatever the value was on the 4th of January, plus the dollar returns in cell T12.
+
+So that means cell U12 is going to be equal to cell U11 plus cell T12. And that's all there is to it.
+
+We can simply copy this formula down to the end of the dataset now, and then we've finished our model.
+
+If we take a look at the value of the portfolio over this time period, we can see that it performed okay. It gained around $7,000 in 2021. And 7% isn't too bad in half a year, but the performance is somewhat limited by the volatility of the stocks within the portfolio. And low volatility is fairly common for stocks like this that are large or mega caps. And realistically, as traders, we want to seek out additional volatility because it represents opportunity to drive up profits. And if you guys have done the introduction to professional level trading masterclass, you guys will know all about this. But in a moment, I'm going to show you what can happen when you add small stocks to the portfolio and substitute them in for some of the larger cap stocks that we have. And then in the next video as well, we're going to be exploring volatility in a little bit more detail. Now I'm not going to go into any more detail here in terms of additional analysis on the portfolio that we're looking at.
+
+But of course, if you wanted to, you could use the methods that I've shown previously in the video to calculate things like daily percentage returns and indexed performance of this portfolio, as well as generating charts that plot the portfolio's value over time. I'm not going to do that now just since we've already kind of covered that and that will just be showing you basically repeating something that you guys already know how to do. What I do want to do is point out a couple of practicalities when it comes to using this sheet yourselves. I talked before about the importance of taking the extra time to set up these dynamic formulas. And I just want to reiterate that once you've done all of that, you can simply change any of the orange and blue cells in the calculations will just all adjust automatically. For example, we could change the number of shares in EIX and make it a short position. And as you can see here, you would then see the portfolio returns and the portfolio value adjust accordingly. You can also, if you want, remove stocks entirely from the portfolio. And to do that, you just clear the contents of the appropriate cells. So the orange ticker cell and the blue shares cell as well as the whether it's a long or short. So you just clear the contents of all of those by pressing delete on the keyboard once you've selected them. And once you do that, you also need to delete the formulas for that stock from row 11 downwards. So all the price retrieval formulas, otherwise you'll get errors there and that will affect the portfolio calculations.
+
+So I'll do that as well now for EIX. And what you want to make sure of here is that you don't delete kind of any of the prebuilt formulas. And those are in rows three, four, six, seven, and eight.
+
+So that's all you need to do to remove a stock from the portfolio. Adding stocks is just as simple.
+
+In a blank column, you just enter the ticker. So I'm just going to re-enter the details that we had for EIX here. So you can just enter the ticker at the number of shares and whether it was a long or a short position as well. And then you can just copy the formula across from an adjacent column and auto fill it down to the end of the dataset. Now, when you guys download the template file for this video, it's going to have an example already filled out in this sheet. So if you want to start fresh, then what I suggest you do is clear the contents of all the orange and blue input cells, as well as all of the dates and all of the calculation cells from row 13 downwards. And the reason why I say row 13 down and not row 11 down is because then you don't need to recreate the formulas that we've been through all over again. And instead you can just copy them down and across the sheet as much as is required.
+
+From that point, we can just create a new portfolio in any way that we want, as long as we have the underlying price sheets for each stock that we wish to enter into the new portfolio. So for example, if we want to build a portfolio here for 2021 with only EIX, IBM and SYK in it, we can do that as follows. You just enter the tickers into the top row into the orange cells and the number of shares and also designate whether those positions are long or short. You do that by changing the variables in the blue input cells. You then would copy the dates that you want from the sheet with the shortest time series.
+
+So in this example, that's SYK. You can see that from the cell value B8. Then we delete the unnecessary formulas that are returning errors. In this case, that's just from E11 to K12 because we don't have tickers in those columns to retrieve formulas for. And then you just copy the formulas down for the three stocks that we want to retrieve prices for and do the same for the portfolio returns and the portfolio value columns as well. The same sort of process can be used for changing the date windows that you want to use as well. Just make sure that when you do that, you clear any error cells. And of course, as I said earlier, you'll need to have appropriately named sheets that contain the price data for the relevant stocks in order for the data to pull through properly. And remember, the tickers you enter into the orange cells must all have their associated sheets or their own associated sheets with the same name. So with the ticker as the sheet name. So before we move on to looking at measuring portfolio performance for a constantly weighted portfolio, let's change the previous large mega cap portfolio that we looked at and replace the longs with alternative mid cap stocks. So in this example, I'm going to change our previous longs, which were EIX, IBM, SYK, VZ, TJX, and NEM. And I'm going to change those longs with mostly mid cap companies. And the ones I'm going to choose are FRPT. So I'm just going to enter these into the portfolio now. FRPT, WMS, AGCO, TTC, OGS, and ALGT. And I'm going to keep the same short positions as we had before. So those are SPLK, VTRS, SYY, and BDX. We want to make all of the variables in this portfolio as consistent as possible with the large cap one that we looked at previously.
+
+So it's kind of as comparable. So basically we can compare them easily. The only thing we're changing obviously is the stocks themselves. So we'll continue with analyzing the performance over the year 2021.
+
+And we need to make sure that each stock has a roughly equal weight. So all of our 10 assets are roughly equally weighted. And we'll use the round function as before to calculate the number of shares for each position to kind of maintain approximately even position sizes. Before that though, let's copy across all of these price retrieval formulas to the relevant rows and columns using the autofill functionality that we've been through a number of times.
+
+Okay, so we've got our dates and prices set up and the correct stocks filled in. Now we just need to calculate the position weightings, which as I said, we'll do in the same way as before with the round function. So in cell B2, I'm just going to type in equals round, open brackets, 10,000 divided by B11.
+
+Okay, so the sort of capital allocation of 10,000 per stock divided by the price, the starting price, which we find in row 11. And then in the second parameter of the round function, we're just putting a zero. So that's after the comma. And that just means there's only going to return an integer as I described before. And then we can close the brackets and enter that in. And then that can just be copied across as I showed you guys previously. And you can see now that we have a roughly comparable starting portfolio value equating to about $100,000. And before I forget, prior to analyzing the performance of this portfolio, we need to specify whether the positions are longs or shorts. So I'll just go through row five now and assign a value of one to the first six stocks because they're long positions and a value of minus one to the last four positions, which are shorts. So if we take a look at the value of the portfolio now through 2021, you'll see that it's a lot more volatile, but also it performs very well. And it increases from a starting value of about $100,000 to around $118,000 by June, which is 18%. And that's good going really for a six month period, especially for a portfolio that isn't using leverage in any way. And of course, those returns could be magnified quite significantly with the use of options or other leverage products. For those of you that have done the introduction to professional level trading masterclass, this is going to be nothing new, and you will have expected a more volatile portfolio portfolio with greater opportunity.
+
+As soon as I mentioned that we're going to substitute in smaller cap stocks, if you haven't done the IPLT, then no worries, but you might find it useful given what we're discussing here. As I said previously, we're also going to talk a lot more about volatility in the next video as well. So you'll get another chance to deepen your understanding there too.
+
+Earlier in the video, I talked quite a lot about outperformance and underperformance when we were just comparing two stocks. And typically, if our long position went up more or down less than our short position, then the spread trade as a whole performed well, assuming the weightings to each position were equal, of course. Now, the same rough principle applies here in the sort of portfolio level, you're looking for the stocks that you're long to outperform the stocks that you're short. But realistically, you're not just looking for outperformance, you're looking for more than that. And a key point to realise here is that in order to build a really successful portfolio, you're basically trying to fill it with awesome longs that go up and awesome shorts that go down. It's as simple as that. And if you do that with a good mix of stocks and the right amount of volatility, there's no reason why the results can't be quite as good as they are here. Okay, let's look at a constantly weighted portfolio model now in the sheet portfolio CW performance. This sheet is very, very similar to the last one that we looked at in terms of how it works. The only difference is that it assumes a constantly weighted approach. And this is the approach that you should use if you want to test portfolio performance, assuming a set weighting to each position in the portfolio. And that weighting is to be maintained for the duration of the model's backtest. Now, as I've said a few times now, this might be a little bit unrealistic if you don't want to rebalance for every period that you're looking at. But it is a good test of the weightings that you define and it will tell you how those weightings performed at any point in time through the historical dataset that you're looking at. So the orange and blue cells need to be manually filled in as before, the difference being this time that you apply a gross weighting to each stock rather than a specific number of shares. And it goes without saying that when you do this, you need to make sure that your total portfolio weight is 100% as calculated by the cell T2, which is just the sum of all the individual weights that you enter into row two into those blue cells.
+
+Now, you can see that I've got a portfolio ready to go here again.
+
+With the same 10 large cap stocks that we looked at in the first model for the, in the first portfolio, I should say, for the previous model. And again, it's weighted equally. Procedurally, we start in exactly the same way when it comes to analysing the performance of this portfolio by identifying the shortest time series and choosing a date window to measure performance between.
+
+In this example, I'm going to calculate performance from the year 2021 onwards so we can create that date window by copying all the dates from the SPLK tab that are on or after the 1st of January 2021 and pasting them into this sheet.
+
+Okay, so the major difference between this sheet and the non-rebalanced portfolio sheet is that instead of pulling through prices for each stock, we instead need to pull through returns. And that basically means we need to add a little bit more to the formulas that we used previously.
+
+I'm not going to spend too much time explaining the formulas and functions here because we've already done the hard part in the previous sheet.
+
+But if you think about how to calculate returns in general, basically, you need to know two prices for each periodic calculation, the price from one period and the price from the previous period so that you can calculate the percentage change between them.
+
+So we need to start in cell B10 this time, which isn't the first row, but intuitively that makes sense because as I just said, we need to know the price in the previous period to work out the percentage change for the current period.
+
+Therefore, we have to start one period ahead of our first data point when calculating returns.
+
+So in cell B10, I'm going to cheat a bit and instead of typing the whole formula out, I'm just going to copy the price formula that we created in the previous sheet by selecting cell B11 in that sheet and left clicking and dragging over the text in the formula bar and then pressing Ctrl C to copy it.
+
+So this is basically the VLOOKUP function with the indirect function within it.
+
+I'm copying all of that.
+
+Then I'm going to paste that text into the formula bar with cell B10 selected in the constant weighting portfolio sheet and just change the initial date lookup reference to the correct row.
+
+That will then retrieve the price for EIX stock on that date.
+
+However, the aim here is to calculate returns.
+
+And so we need to divide that price on that date by the price on the previous date and then subtract one.
+
+Again, the quick way to do this is to copy the same formula again and paste it with Ctrl V, this time after a division sign and change it slightly so that it looks up the price on the previous date, which we can do simply by editing the date lookup cell.
+
+So now we have a formula which looks up the date on the 5th of January and divides it by the date on the 4th of January for that stock.
+
+And all we need to do from here to calculate percentage returns over that period is to subtract one from the whole equation.
+
+So I'm just putting a minus one at the end of that equation.
+
+And now we've got the returns for that period.
+
+As before, you can just auto fill this formula across for all the columns with tickers in them and down for all of the available dates that you're looking at.
+
+Next up, we want to calculate the portfolio returns.
+
+And this time we're calculating them in terms of percentages rather than absolute dollars.
+
+So to do this, you just need to compute the weighted sum of all the individual returns in the portfolio.
+
+And to do that, we can use the sum product formula again.
+
+So in cell T10, I'm going to type equals sum product, open brackets.
+
+Then I'm going to select cells B10 to S10, which is our first set of returns for the first parameter of the function.
+
+Then put in a comma.
+
+In the second parameter, I'm going to choose cells B2 to S2, which is our weightings.
+
+And I'm going to fix those references and then put in a comma.
+
+And then in the third parameter, I'm going to select cells B3 to S3, which is the definitions of whether each position is a long or short.
+
+And again, I'm going to fix those references and then close the brackets.
+
+So this formula just takes each stock's returns basically on the current date and multiplies it by one or minus one, depending on whether it's a long or short position respectively.
+
+And then it multiplies it by its weighting in the portfolio.
+
+Those weighted returns are then summed together to give the overall portfolio return on that date.
+
+And that sum product formula I've just built there does all of that sort of in one function.
+
+Remember, though, that with the sum product formulas in the previous model, we had to make sure that the references to the weightings and the long short cells are fixed.
+
+And that's the same in this case as well.
+
+So that just basically means that we have to have dollar signs around the relevant column letters and row numbers in those second and third parameters of the function.
+
+Now, just as before, we can copy this formula down by clicking and dragging the little green box in the bottom right of the selection to the end of the data series.
+
+Finally, we can create a portfolio index based on these returns, and you can choose to start the index at whatever value you like.
+
+It's very common practice in finance to start an index at 100, but you might like to start it at a value that represents something closer to a real sum of money that you want your trading book to be or that it currently is, whether that's $20,000, $100,000 or whatever.
+
+So in cell U9, for this example, I'm just going to enter a value of 100,000 to start the index because it keeps things comparable to the portfolios that we looked at in the other model.
+
+And from there, the index is calculated in the same way as it was for the constantly weighted two stock portfolio that we looked at earlier with the long FRPT and short DLTR positions.
+
+So in cell U10, then we just calculate the new index value for each date as the prior period's value multiplied by, in brackets, one plus the returns for the current period, as you can see here.
+
+Then that formula can also be autofilled down to the end of the dataset.
+
+Okay, if we skip to the end of the data series here, you can see that the performance isn't dissimilar to the non-rebalanced model for the same portfolio over this short six-month period.
+
+Essentially, this portfolio of long, short, large caps hasn't done a whole lot, it's gained about 7%.
+
+But let's double check what happens when we add mid caps into the mix in the same way as we did before, by replacing longs in the portfolio. So all I'm going to do to do that is type over the first orange, first six orange cells with new tickers, which are FRPT, WMS, AGCO, TTC, OGS, and ALGT.
+
+Again, if we look at the results, so the portfolio value, we can see they're quite similar to the previous model, what the previous model showed for this portfolio. We see a much better performance in small caps than large caps again, equating to a portfolio value in June of around $119,000 using this model, which equals a performance of around 19% over the period.
+
+A couple of notes though about this modeling method. Firstly, there is a slight difference in the inference of a portfolio like this to using constant equal weightings to just two stocks, one long and one short, as we did earlier. The reason is with this portfolio, we can't say for sure that our longs outperformed our shorts, because even though each stock has been equally weighted, the portfolio weightings to longs overall is 60% and only 40% to shorts. So, strictly speaking, this sheet just models how the portfolio would perform at any point in time, given those weightings that you've applied. It doesn't necessarily show you that your longs have outperformed your shorts and vice versa. Now, in this case, we can intuitively assume that the longs have outperformed the shorts because the portfolio portfolio has done so well over the period. But I'm just trying to teach some mathematical rigor here by saying that just because the portfolio goes up in value, doesn't always guarantee your longs are outperforming your shorts when you don't have an equal weighting to the long and short sides of the portfolio. The other thing to note, which is more generally about the difference between the two modeling methods we looked at, is that for the portfolio setups we've used here, there isn't much of a difference between the model's performance, even though you might have been expecting that there would be, given what we covered previously, with the FRPT-DLTR pair.
+
+This is for two reasons, basically. Firstly, the weighting started off roughly equal in both models.
+
+But secondly, and much more importantly, the historical performance that we analysed was over a relatively short period of time, where there wasn't much time for the weightings in the portfolio to drift from their starting point. And if you remember back to the FRPT-DLTR spread example, the weighting to FRPT did eventually drift from 50% to 85%, but that took seven years. And we're only looking at a period of six months here. Okay, so that's all there is to using the constant equal, sorry, constant weighted portfolio performance sheet. And as I said, it's very similar to the previous one in mechanics. And all the previous tips that I gave you about editing the sheet and modelling your own portfolios apply in exactly the same way here. And as I said, for the last sheet, there's no reason why you can't do things like create a chart for the portfolio index. And you know, you guys know how to do that based on the charting section that we covered earlier near the beginning of the video. So with regards to both these portfolio models we looked at, the idea here is that you can build and understand the historic performance of whatever portfolio you want.
+
+Obviously, these models are somewhat simplified to what real portfolios might look like. For example, there's no account here for trading costs, currency conversion, or cash positions, or even sort of changing the weightings in the positions as you kind of go through the date series. But nonetheless, it can be useful to run these simulations when you want to see how a portfolio of stocks might fit together. And just to get an insight into how your current or prospective portfolio set up performed historically. Because if it hasn't performed well in the recent past, you have to question, you know, what makes you think that it will in the near future. And you need to ask yourself those questions to make sure that you have a good fundamental reason or many good fundamental reasons, along with technical timing to give yourself the best shot of making money in the portfolio.
+
+Okay guys, we've made it. Let me just wrap up the video now with a reminder of what we've covered and some concluding remarks about what you guys need to take away from the tutorial.
+
+So we started with downloading stock price data from Yahoo Finance into Excel and then charting that data.
+
+And I mentioned how you need to be flexible with your approach to sourcing data with regards to the sources themselves and to the data series that you use. And basically what that means is you need to make sure that you always understand what the data represents and ensure that it's fit for purpose for the analysis that you're doing. A good example of that was in this video when we noted the difference between the closing and just closing prices from Yahoo Finance. And we verified that both are actually applicable to the analysis that we wanted to do, but one was preferable.
+
+We then moved on to charting and I showed you how you can experiment with formatting charts to any sort of style that you like. And I also showed some tricks about prepping the chart to auto-update whenever you input more data into a sheet. We also touched a little bit on how you can use some Excel tools to do some basic technical analysis and things such as plotting, moving averages and trend lines.
+
+Next up, we covered various measures for assessing the performance of a long short pair trade.
+
+Ratio calculations are quick and simple to use, but they don't necessarily provide a completely accurate picture of performance, whilst spread calculations are accurate but inflexible when it comes to weightings. So if you want to use measures that are both precise and flexible, then you have to use what are essentially portfolio calculations, which is what we turn to next, where we treated our two positions, the long and the short, as a mini portfolio.
+
+To do this, we generated returns for each stock position and combined them to yield the overall performance of that mini portfolio. And this was done in slightly different ways depending on whether we used a constant equally weighted approach or a non-rebalanced approach. And both of these methods have their uses. So while the constant equal weighting calculation is perhaps a fairer way to measure out performance at any given time in a long short pair, it is less practical since it implies constant rebalancing, which is probably quite unrealistic in most scenarios. That's why we then also looked at a non-rebalanced approach as well, which gives you a more accurate picture of performance given you hold the two positions over a period of time. Both methods are valid and it really depends on what you're trying to model and why as to which one you end up using. We then looked at comparing all the performance measurements up to that point to clear up what the differences were and why they exist. So that was done in the comparison tab of the sheet. Finally, we moved on to a full portfolio performance calculations, which were just an extension really of what we'd already covered. Again, we looked at constant weighting and non-rebalancing models so you can build a fuller picture of the historical performance of any portfolios that you want, provided that you can get the data. And this is useful because it gives us an insight into how our current or prospective portfolio setups have performed in the recent past. And that should then prompt questions about whether you expect the performance of the portfolio to change or stay the same and why. Now, of course, the models that we've been through here are simple. They don't account for things like trading costs or currency conversion or cash positions and things like that. But the idea here was really to show you that a long short portfolio is just a scaled up version of a long short spread trade. And what we're trying to do is build portfolios where our longs outperform our shorts on a one to three month timeframe and positions go in and out of the portfolio. Ideally, we want awesome longs that go up and awesome shorts that go down. And if we do that in a well-built portfolio with proper risk control, there's lots of money to be made as I kind of showed in some examples that we went through. And speaking of those examples, I also made a point of showing you what can happen if you add in smaller cap companies to a portfolio, which is that it typically results in more volatility and hence more opportunity for profit. And what this basically leads onto is the conclusion that we can aim for the level of volatility and risk that we want in the portfolio.
+
+And this is something we're going to explore more in the next video where I'm going to talk in more detail about portfolio volatility and how we can calculate it.

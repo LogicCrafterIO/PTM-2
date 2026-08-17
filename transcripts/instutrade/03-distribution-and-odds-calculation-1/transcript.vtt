@@ -1,0 +1,1670 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:29.640
+Okay, welcome back. Welcome to video
+three. Well done. You survived video two.
+Now, we're going to take what we learnt in
+video two and really start applying it to
+the real world. Now, how do we start
+applying this to the real world? Well,
+these principles that we've been through
+in video two, essentially what we're going
+to do is try and take the professional
+trader approach, which is always,
+
+00:00:29.640 --> 00:00:59.280
+starting with downloading data from the
+world that is publicly and freely
+available and downloading that data into
+Excel. Now, why is that important? Well,
+we're going to kill two birds with one
+stone here, actually, because what we're
+going to do is download data for S&P 500,
+sterling US dollar, euro US dollar, all of
+the major forex pairs and indices,
+essentially. And the first thing you're
+going to see is that
+
+00:00:59.280 --> 00:01:21.000
+over specific time horizons, you'll see
+that what retail traders do, what bad
+retail traders do, the guys who always
+lose money, they trade these instruments
+and trade them in a way where they
+actually consistently lose money because
+they're doing the opposite of what
+professional traders do, which is
+consistently make money.
+
+00:01:21.960 --> 00:01:36.680
+And the second thing you're going to see
+really is how to do that process, how you
+go through that process to actually go
+into the world, get the data, download it,
+manipulate it in Excel.
+
+00:01:37.540 --> 00:01:50.560
+So you're on top of the data and you
+understand the market that you're about to
+enter and what the opportunities are in
+terms of available opportunities to make
+money over time horizons in that market.
+
+00:01:51.560 --> 00:02:06.880
+Now, once you understand that, you'll
+start really understanding why
+professional traders take the opposite
+approach to retail traders, because this
+is really the first thing that you would
+learn as a professional trader, as in
+going into the world and getting data.
+
+00:02:07.540 --> 00:02:16.260
+Why's data are important? Because data
+tells you your opportunities in any given
+market, in any asset, over any time
+horizon.
+
+00:02:16.260 --> 00:02:21.600
+So this process can be repeated. And it's
+really important because the numbers don't
+lie.
+
+00:02:22.180 --> 00:02:25.340
+So what we're going to be looking at is
+historical volatility.
+
+00:02:26.040 --> 00:02:37.820
+So the historical volatility of any given
+market is going to tell you pretty much
+what your opportunities are and what you
+should expect in terms of your odds of
+making certain amounts of money.
+
+00:02:39.240 --> 00:02:51.000
+Now, when we've been through historical
+volatility, what's going to happen is
+Chris, Christopher Quill, who I'll
+introduce you to after we've been on the
+stage and gone through the presentation.
+
+00:02:52.020 --> 00:03:00.320
+Christopher Quill, who works at the
+Institute, is going to go through on his
+computer how you repeat this process over
+and over again.
+
+00:03:02.580 --> 00:03:11.020
+And you shouldn't be scared of it. It's
+not a difficult situation because once
+you've actually learned it, you've learned
+it and you can go through this process
+many, many times.
+
+00:03:11.520 --> 00:03:17.300
+So you can actually go out into the world,
+download the data for any asset in the
+world.
+
+00:03:17.760 --> 00:03:26.700
+And as long as you can get that data and
+you know this process, you can work out
+your opportunities of making money over
+any given time horizon.
+
+00:03:28.700 --> 00:03:39.900
+So we'll go to the stage now, we'll cut
+over to the stage where I'm presenting and
+going through these numbers and what the
+process actually looks like.
+
+00:03:40.280 --> 00:03:51.720
+And then we're going to come back and
+Chris is going to show you how to actually
+go through this process so you can do it
+for yourself over and over again
+throughout your lifetime.
+
+00:03:52.500 --> 00:03:56.560
+And this is really important because this
+is the professional trader approach.
+
+00:03:57.280 --> 00:04:02.180
+Data doesn't lie. Numbers don't lie. And
+every professional trader knows it.
+
+00:04:03.020 --> 00:04:05.380
+Once you've got this knowledge, it's very,
+very empowering.
+
+00:04:06.980 --> 00:04:16.140
+And professional traders will learn this
+pretty much in their first year or even
+couple of months when they join the
+industry.
+
+00:04:17.080 --> 00:04:24.300
+You know, I know because I've worked in
+the industry, I've worked at Goldman
+Sachs, I've been on their graduate
+training program in New York.
+
+00:04:24.720 --> 00:04:29.700
+And this is really what you learn when you
+start out as a trader.
+
+00:04:30.180 --> 00:04:31.400
+It's the first thing you learn.
+
+00:04:32.080 --> 00:04:37.620
+So you guys should absolutely learn how to
+go through this process so you can
+understand the opportunities.
+
+00:04:38.560 --> 00:04:48.640
+So without further ado, let's go to the
+stage and I'll see you after that section
+back in the office and we will go through
+on Chris's computer.
+
+00:04:49.240 --> 00:04:57.820
+Chris will show you how to do this in
+Excel and using the Internet as a freely
+available resources so you can do this for
+the rest of your life.
+
+00:05:00.620 --> 00:05:02.180
+Okay, so let's go through this again.
+
+00:05:02.380 --> 00:05:12.760
+Providing a framework that allows retail
+traders to emulate consistently profitable
+professional traders so you can benefit
+from the same approach.
+
+00:05:14.420 --> 00:05:15.500
+Where does it all begin?
+
+00:05:17.080 --> 00:05:18.860
+It begins with processing data.
+
+00:05:22.760 --> 00:05:28.420
+First thing you need to do is learn the
+behaviour and trends of what you're about
+to trade.
+
+00:05:31.840 --> 00:05:35.860
+Only when you do that you can begin to
+understand what the potential upside and
+downside is.
+
+00:05:39.040 --> 00:05:43.020
+And generally speaking on any decent
+analyst program at an investment bank
+
+00:05:43.020 --> 00:05:48.840
+or bespoke training program at a decent
+sized hedge fund.
+
+00:05:50.140 --> 00:05:53.240
+So a decent sized hedge fund is really
+only 20 employees.
+
+00:05:55.100 --> 00:05:56.600
+This will be the first thing you're
+taught.
+
+00:05:59.080 --> 00:06:01.360
+You'll be taught the process of how to do
+this.
+
+00:06:02.920 --> 00:06:06.200
+To run distributions and work out the
+odds.
+
+00:06:07.200 --> 00:06:10.880
+And calculate the odds of making certain
+amounts of money.
+
+00:06:13.020 --> 00:06:17.440
+So you can actually probability adjust
+your risk and manage your own
+expectations.
+
+00:06:18.420 --> 00:06:20.720
+And do everything correctly from the top
+down.
+
+00:06:25.600 --> 00:06:27.580
+And the numbers will speak for themselves.
+
+00:06:29.960 --> 00:06:33.260
+Because every time you do this, the
+numbers are there.
+
+00:06:33.480 --> 00:06:34.420
+They are what they are.
+
+00:06:34.620 --> 00:06:36.100
+And everything else is just noise.
+
+00:06:38.020 --> 00:06:40.880
+Your job as a trader is not to argue with
+the numbers.
+
+00:06:41.360 --> 00:06:44.700
+It's to glean from the information that
+you've been given by the numbers.
+
+00:06:45.140 --> 00:06:46.640
+What's important and what's not.
+
+00:06:50.560 --> 00:06:53.400
+So the example we used earlier was the S&P
+500.
+
+00:06:53.960 --> 00:06:55.500
+The world's largest stock market.
+
+00:06:57.880 --> 00:06:59.280
+We're going to look at stocks again.
+
+00:06:59.600 --> 00:07:00.980
+And look at the S&P 500.
+
+00:07:03.400 --> 00:07:08.020
+And we're going to do a distribution of
+daily returns of the S&P 500.
+
+00:07:08.560 --> 00:07:10.200
+Going back for 50 years.
+
+00:07:12.100 --> 00:07:13.640
+And what is the S&P 500?
+
+00:07:14.580 --> 00:07:16.900
+It's just the average return of 500
+stocks.
+
+00:07:20.560 --> 00:07:28.000
+So the numbers for the collection of the
+500 stocks are very, very similar to the
+individual stocks themselves.
+
+00:07:29.100 --> 00:07:32.860
+And you can repeat the process as many
+times as you want in any of those 500
+stocks.
+
+00:07:33.460 --> 00:07:36.460
+What will happen is those numbers will be
+fairly similar.
+
+00:07:37.260 --> 00:07:40.820
+And the stocks will, the numbers will tend
+towards the average.
+
+00:07:42.160 --> 00:07:43.680
+Over a big data set.
+
+00:07:44.980 --> 00:07:46.500
+And we've got a monster data set here.
+
+00:07:46.760 --> 00:07:47.320
+50 years.
+
+00:07:47.840 --> 00:07:48.860
+Where's this data from?
+
+00:07:49.940 --> 00:07:52.520
+Did I buy it from a specialist outlet?
+
+00:07:53.680 --> 00:07:56.880
+Did I subscribe to a website for $500 a
+month?
+
+00:07:57.460 --> 00:07:59.580
+Did I pay Bloomberg $2,000 a month?
+
+00:07:59.920 --> 00:08:00.200
+No.
+
+00:08:01.980 --> 00:08:03.300
+I got it from Yahoo Finance.
+
+00:08:06.380 --> 00:08:07.600
+It's all publicly available.
+
+00:08:09.340 --> 00:08:15.440
+The principle that we run throughout the
+whole of this course is that all of this
+information is publicly available.
+
+00:08:16.180 --> 00:08:17.800
+So you don't have to rely on anything.
+
+00:08:18.160 --> 00:08:20.060
+And you don't have to be the Japanese
+corporate golfer.
+
+00:08:23.560 --> 00:08:27.200
+So you literally go on to Yahoo Finance.
+
+00:08:27.560 --> 00:08:29.240
+Click on S&P 500 on the homepage.
+
+00:08:29.800 --> 00:08:30.820
+You'll be taken to the page.
+
+00:08:31.600 --> 00:08:32.920
+Go on the left-hand side menu.
+
+00:08:33.520 --> 00:08:34.840
+Click on historical data.
+
+00:08:36.500 --> 00:08:40.560
+You'll be given the option for daily,
+weekly, monthly, including or excluding
+dividends.
+
+00:08:41.360 --> 00:08:42.060
+Click on daily.
+
+00:08:43.060 --> 00:08:44.020
+Click on get prices.
+
+00:08:44.440 --> 00:08:45.500
+Scroll to the bottom of the screen.
+
+00:08:45.860 --> 00:08:46.640
+Download to spreadsheet.
+
+00:08:48.580 --> 00:08:50.960
+And you'll be given open, high, low, and
+close.
+
+00:08:54.620 --> 00:08:55.580
+OHLC data.
+
+00:08:56.080 --> 00:08:57.080
+Open, high, low, close.
+
+00:08:58.860 --> 00:09:00.040
+What are we interested in here?
+
+00:09:00.460 --> 00:09:02.520
+We're interested in the open and the
+close.
+
+00:09:04.740 --> 00:09:09.940
+We're looking at the daily volatility of
+the S&P 500 every day for 50 years, from
+open to close.
+
+00:09:13.140 --> 00:09:17.660
+So what's our window of opportunity to
+make money if we buy on the open and sell
+on the close?
+
+00:09:18.360 --> 00:09:21.780
+It's a bit far-fetched to say that we buy
+on the low and sell on the high.
+
+00:09:26.000 --> 00:09:28.360
+Every day for 50 years, you'd have to be a
+super trader.
+
+00:09:29.060 --> 00:09:29.760
+It doesn't exist.
+
+00:09:30.940 --> 00:09:32.980
+So it's a slightly more realistic
+expectation.
+
+00:09:36.220 --> 00:09:39.780
+So we've got 12,732 trading days.
+
+00:09:41.980 --> 00:09:44.260
+From 1962 to 2012.
+
+00:09:46.520 --> 00:09:52.580
+And we're using performance gates, as in
+returns, to see what the distribution is.
+
+00:09:53.760 --> 00:09:54.680
+And what do we get?
+
+00:09:55.500 --> 00:10:02.620
+Well, we see from minus half a percent to
+zero percent, 3,141 trading days.
+
+00:10:03.920 --> 00:10:07.880
+From zero percent to half a percent,
+3,447.
+
+00:10:09.100 --> 00:10:10.060
+Which means what?
+
+00:10:11.680 --> 00:10:20.280
+Between minus half a percent and plus half
+a percent, half of those trading days out
+of 12,732.
+
+00:10:20.480 --> 00:10:21.140
+Roughly half.
+
+00:10:25.000 --> 00:10:31.100
+And when you multiply through the
+frequencies, you get the average return of
+a down day and an up day.
+
+00:10:31.560 --> 00:10:36.920
+As in, the average return this side and
+the average return that side of zero.
+
+00:10:40.340 --> 00:10:48.160
+That comes to 0.33% down on a down day and
+0.35% up on an up day.
+
+00:10:50.620 --> 00:10:53.380
+So up days, the market goes up slightly
+more than when it goes down.
+
+00:10:53.820 --> 00:10:56.900
+That kind of makes sense because over 50
+years, the market's up.
+
+00:11:02.400 --> 00:11:09.220
+But what if we just total up the
+frequencies and say how many days is the
+market down and how many days is the
+market up?
+
+00:11:12.220 --> 00:11:21.320
+Well, 47% of days, the market's down,
+which means if you bought on the open and
+sold on the close, 47% of times you'd have
+been wrong.
+
+00:11:23.320 --> 00:11:24.940
+And 53% of days is up.
+
+00:11:24.940 --> 00:11:34.200
+So if you'd have shorted on the open and
+bought back your short on the close, 53%
+of times you'd have been wrong.
+
+00:11:38.100 --> 00:11:42.080
+So in the last 50 years, the market's been
+up thousands and thousands of percent.
+
+00:11:44.340 --> 00:11:46.400
+But if you'd have traded every day, you
+wouldn't have made money.
+
+00:11:48.900 --> 00:11:58.100
+Because the market wasn't up 80% of days
+and down 20% of days, it was pretty much
+50-50, whether you were going to be right
+or not when you chose your direction.
+
+00:12:02.260 --> 00:12:04.460
+But what does the distribution actually
+look like?
+
+00:12:05.300 --> 00:12:06.940
+So who knows what a normal distribution
+is?
+
+00:12:07.740 --> 00:12:08.920
+I'm assuming that you all do.
+
+00:12:13.440 --> 00:12:15.260
+Teaching in Cass Business School here, not
+in a pub.
+
+00:12:15.880 --> 00:12:17.320
+You should know what a normal distribution
+is.
+
+00:12:18.900 --> 00:12:28.200
+A normal distribution, a one standard
+deviation, is 68% of cases, 68% of times,
+yeah?
+
+00:12:31.080 --> 00:12:34.880
+But the distribution of the stock market
+is different to a normal distribution.
+
+00:12:35.600 --> 00:12:36.260
+It's way off.
+
+00:12:38.280 --> 00:12:44.100
+The actual distribution of the S&P 500 is
+peakier around the mean, with fatter
+tails.
+
+00:12:46.680 --> 00:12:48.680
+And there's a vacuum in the middle.
+
+00:12:48.900 --> 00:12:50.380
+Between those occurrences.
+
+00:12:52.460 --> 00:12:53.460
+So what does that mean?
+
+00:12:53.800 --> 00:12:54.680
+What does that tell us?
+
+00:12:55.220 --> 00:13:01.160
+Well, standard deviation, a one standard
+deviation day in the S&P 500, is 78% of
+times.
+
+00:13:01.700 --> 00:13:02.620
+So call it 80.
+
+00:13:03.460 --> 00:13:10.400
+It means 80% of the time, a normal day,
+the market moves up or down 0.35.
+
+00:13:11.260 --> 00:13:14.480
+And 20% of times, something happens.
+
+00:13:16.140 --> 00:13:16.920
+What happens?
+
+00:13:19.720 --> 00:13:20.700
+The market moves.
+
+00:13:21.160 --> 00:13:23.420
+And it usually moves quite violently, up
+or down.
+
+00:13:26.500 --> 00:13:28.420
+And there's kind of nothing in between.
+
+00:13:32.260 --> 00:13:33.100
+Does that make sense?
+
+00:13:33.980 --> 00:13:36.820
+So this is the behavior of the animal that
+we're about to trade.
+
+00:13:43.060 --> 00:13:44.840
+But we haven't even added in commission
+yet.
+
+00:13:46.720 --> 00:13:47.920
+That's all gross numbers.
+
+00:13:49.420 --> 00:13:54.320
+But before we add in commission, let's
+work out gross odds of making certain
+amounts of money.
+
+00:13:56.880 --> 00:14:02.880
+So if you'd have bought on the open, with
+the intention of selling on the close,
+every day for the last 50 years.
+
+00:14:05.440 --> 00:14:09.120
+The probability of you making half a
+percent was a 4 to 1 shot.
+
+00:14:11.000 --> 00:14:11.440
+Against.
+
+00:14:12.620 --> 00:14:15.140
+So 25% chance of making half a percent.
+
+00:14:17.220 --> 00:14:20.520
+To make a percent, the odds were 9 to 1.
+
+00:14:22.120 --> 00:14:23.280
+11% chance.
+
+00:14:23.800 --> 00:14:24.860
+We saw that number earlier.
+
+00:14:27.940 --> 00:14:33.060
+If you were shorting, to make half a
+percent, you would have had 4.4 to 1 odds.
+
+00:14:33.980 --> 00:14:37.700
+And to make 1%, 9.5 to 1 odds against.
+
+00:14:38.540 --> 00:14:41.220
+So the odds of making money shorting were
+slightly worse.
+
+00:14:42.020 --> 00:14:42.980
+Which makes sense.
+
+00:14:43.840 --> 00:14:45.920
+Because the market move up was slightly
+bigger.
+
+00:14:46.500 --> 00:14:48.580
+And it was up more days than down.
+
+00:14:48.980 --> 00:14:51.040
+And the market was up over 50 years.
+
+00:14:52.700 --> 00:14:54.000
+So the numbers stack up.
+
+00:14:54.440 --> 00:14:54.520
+Yeah?
+
+00:14:57.620 --> 00:14:59.340
+Now what happens when you add commission
+in?
+
+00:14:59.340 --> 00:15:04.280
+Well, let's do a theoretical exercise of
+just working out the level of commission.
+
+00:15:04.420 --> 00:15:10.060
+That if we pay it as our standard rate, we
+can't day trade at all.
+
+00:15:10.740 --> 00:15:12.840
+Because all our returns are lower than
+zero.
+
+00:15:15.800 --> 00:15:24.900
+Well, if you add in a commission of 0.35,
+which is fairly reasonable because that's
+somewhere in between an execution only
+rate and an advisory rate.
+
+00:15:26.480 --> 00:15:32.560
+Because 35.35 means 17 and a half in to
+trade.
+
+00:15:33.040 --> 00:15:34.820
+17 and a half out to trade.
+
+00:15:36.000 --> 00:15:37.000
+It's a round trip.
+
+00:15:38.340 --> 00:15:42.060
+If you add that in, you get wiped out in
+all scenarios on a normal day.
+
+00:15:45.060 --> 00:15:55.540
+So on a normal day, if you pay 17 and a
+half basis points in, 17 and a half basis
+points out, and you try day trading for
+the last 50 years, you literally had zero
+chance of making money.
+
+00:15:59.720 --> 00:16:00.620
+These are the numbers.
+
+00:16:00.620 --> 00:16:00.660
+These are the numbers.
+
+00:16:00.960 --> 00:16:01.700
+This is the beast.
+
+00:16:02.420 --> 00:16:04.240
+The beast has told you what it does.
+
+00:16:07.940 --> 00:16:08.820
+It's not difficult.
+
+00:16:09.240 --> 00:16:10.620
+And all the data is publicly available.
+
+00:16:14.180 --> 00:16:15.100
+Back to this slide.
+
+00:16:16.680 --> 00:16:19.980
+Now we know where we get the 0.11 from,
+the 11%.
+
+00:16:19.980 --> 00:16:31.820
+Because you've got an 11% chance when
+buying the S&P 500, based on 50 years of
+historical data, that you'll make 1%, i.e.
+it hits your target.
+
+00:16:35.320 --> 00:16:38.120
+So if you do the opposite of that, what
+are you doing?
+
+00:16:38.540 --> 00:16:39.760
+You're arguing with the beast.
+
+00:16:44.580 --> 00:16:47.900
+80% of the time, the market, the beast, is
+asleep.
+
+00:16:50.620 --> 00:16:52.960
+And 20% of the time, the beast wakes up.
+
+00:16:55.600 --> 00:17:02.680
+So if we're connecting the dots and trying
+to figure out a sensible trading strategy
+to make money from the beast, how do we
+make money?
+
+00:17:03.480 --> 00:17:05.120
+Well, first of all, how do we not make
+money?
+
+00:17:05.320 --> 00:17:12.120
+By day trading the beast.
+
+00:17:13.460 --> 00:17:15.500
+Because 80% of the time, we're not going
+to make money.
+
+00:17:17.180 --> 00:17:21.840
+Only one in five days, and they don't come
+every Monday or every Friday.
+
+00:17:23.880 --> 00:17:29.400
+One in five days, we're going to get a
+chance to trade and make money in one day.
+
+00:17:30.480 --> 00:17:31.980
+Or over a short period of time.
+
+00:17:34.780 --> 00:17:40.380
+But when you look through the past data,
+those periods of volatility all occur at
+the same time.
+
+00:17:41.580 --> 00:17:41.820
+Why?
+
+00:17:41.820 --> 00:17:50.780
+Because something big happens in the
+world, where expectations change, and then
+volatility goes up, and opportunities
+occur.
+
+00:17:52.060 --> 00:17:53.980
+Opportunities to make money on a
+short-term basis.
+
+00:17:54.240 --> 00:17:56.820
+That doesn't mean opportunities don't
+exist full stop.
+
+00:17:58.040 --> 00:17:59.640
+It's just the nature of the beast.
+
+00:17:59.640 --> 00:18:04.840
+80% of the time, there's no opportunities
+to make money on a one day basis.
+
+00:18:04.840 --> 00:18:06.380
+So what have you got to do?
+
+00:18:06.380 --> 00:18:11.640
+What have you got to do?
+
+00:18:11.640 --> 00:18:17.080
+You've got to increase your time horizon.
+
+00:18:17.080 --> 00:18:24.440
+So you've got to increase your time
+horizon out to give yourself a chance of
+making money.
+
+00:18:24.440 --> 00:18:32.040
+To give yourself a chance, or to give the
+beast a chance of allowing you to make
+money.
+
+00:18:32.040 --> 00:18:33.720
+Make sense?
+
+00:18:33.720 --> 00:18:44.640
+Just buying or selling every day, the S&P
+500, and just deciding a direction, is
+literally like going to the casino.
+
+00:18:44.640 --> 00:18:45.640
+Drunk.
+
+00:18:45.640 --> 00:19:01.240
+So you've got two choices, you can either
+walk into the casino drunk at 3am, with
+all your friends, change your money for
+chips, and play roulette.
+
+00:19:01.240 --> 00:19:05.240
+And do it for the purpose of
+entertainment.
+
+00:19:05.240 --> 00:19:12.640
+Or you can go at lunchtime and count
+cards, completely sober.
+
+00:19:12.640 --> 00:19:15.640
+Who's going to win?
+
+00:19:15.640 --> 00:19:20.440
+The opportunity to make money on a daily
+basis is really widely misunderstood.
+
+00:19:20.440 --> 00:19:23.640
+But those numbers are the numbers.
+
+00:19:23.640 --> 00:19:34.440
+And every stock in the S&P 500, regardless
+of what anybody says, over time, will tend
+towards that average.
+
+00:19:34.440 --> 00:19:38.840
+Everything else is noise.
+
+00:19:38.840 --> 00:19:48.640
+If you're taught a day trading strategy,
+the person teaching it to you, either
+doesn't know this themselves, or they know
+it, and they're being totally
+irresponsible.
+
+00:19:48.640 --> 00:19:52.840
+Maybe because of the conflict of interest.
+
+00:19:52.840 --> 00:19:55.840
+Now you know these numbers, they're not
+going to change.
+
+00:19:55.840 --> 00:20:02.840
+Now you know these numbers, you know to
+ask the question.
+
+00:20:02.840 --> 00:20:10.840
+You can put these numbers in front of
+anybody that gives you a day trading
+strategy, who says, my day trading
+strategy works.
+
+00:20:10.840 --> 00:20:14.840
+You can put this in front of them and say,
+no it doesn't, it only works 20% of the
+time.
+
+00:20:14.840 --> 00:20:23.840
+But this is why the vast majority of
+retail traders just write cheques to the
+market every day.
+
+00:20:23.840 --> 00:20:28.840
+Because they're going in and buying and
+selling something at the same price and
+paying a commission.
+
+00:20:28.840 --> 00:20:32.840
+It's totally, totally terminal.
+
+00:20:32.840 --> 00:20:35.840
+And you're just going to go to zero.
+
+00:20:35.840 --> 00:20:37.840
+What about major currency pairs?
+
+00:20:37.840 --> 00:20:43.840
+Let's have a look at sterling US dollar
+cable.
+
+00:20:43.840 --> 00:20:47.840
+Who knows why it's called cable?
+
+00:20:47.840 --> 00:20:59.840
+Yeah, so the copper wire that used to
+connect the electric telegraph between the
+UK and the US.
+
+00:20:59.840 --> 00:21:02.840
+So sterling US dollar, the last 10 years
+of data.
+
+00:21:02.840 --> 00:21:04.840
+What do we end up with?
+
+00:21:04.840 --> 00:21:13.840
+Well, to actually make this presentable,
+we've got to reduce the parameters from
+half a percent to a quarter of a percent.
+
+00:21:13.840 --> 00:21:17.840
+Otherwise it would have looked ridiculous
+on the page.
+
+00:21:17.840 --> 00:21:30.840
+So, but you add the numbers up and you're
+back again to about half the time, between
+minus a quarter of a percent and a quarter
+of a percent.
+
+00:21:30.840 --> 00:21:42.840
+So 2,800 trading days and you end up with
+over a thousand, 1,100 being within those
+parameters.
+
+00:21:42.840 --> 00:21:52.840
+What's the average return on an up day
+relative to an average return on a down
+day when multiplying through the
+frequencies?
+
+00:21:52.840 --> 00:21:59.840
+Up, 0.23, down, 0.22.
+
+00:21:59.840 --> 00:22:04.840
+Down days, 49% of days.
+
+00:22:04.840 --> 00:22:07.840
+Up days, 51% of days.
+
+00:22:07.840 --> 00:22:14.840
+So the pound going up against the US
+dollar or going down against the US dollar
+in the last decade.
+
+00:22:14.840 --> 00:22:17.840
+And what's the pound essentially done in
+the last decade?
+
+00:22:17.840 --> 00:22:19.840
+What's it done?
+
+00:22:19.840 --> 00:22:21.840
+It's gone from one and a half to two.
+
+00:22:21.840 --> 00:22:26.840
+So pound buys one and a half dollars to
+pound buying two dollars.
+
+00:22:26.840 --> 00:22:29.840
+And then it's gone from two back to one
+and a half.
+
+00:22:29.840 --> 00:22:30.840
+That's what it's done in a decade.
+
+00:22:30.840 --> 00:22:39.840
+So it's gone up 33% and fallen 25% in 10
+years.
+
+00:22:39.840 --> 00:22:42.840
+It's not exactly very exciting, is it?
+
+00:22:42.840 --> 00:22:47.840
+But every day, it's either up or down
+50-50 chance.
+
+00:22:47.840 --> 00:22:52.840
+What about the profile of the
+distribution?
+
+00:22:52.840 --> 00:22:59.840
+One standard deviation is 74% of times.
+
+00:22:59.840 --> 00:23:04.840
+And relative to a normal distribution,
+peakier around the mean with fatter tails.
+
+00:23:04.840 --> 00:23:09.840
+So it has a similar profile to the stock
+market, but pays less.
+
+00:23:09.840 --> 00:23:25.840
+What are the odds of making certain
+amounts of money look like in sterling US
+dollar?
+
+00:23:25.840 --> 00:23:29.840
+To make a quarter of a percent when
+buying, 3.2 to 1 against.
+
+00:23:29.840 --> 00:23:34.840
+To make half a percent, 5.6 to 1 against.
+
+00:23:34.840 --> 00:23:40.840
+To make shorting, on a day when you decide
+to short, you've got a quarter of a
+percent.
+
+00:23:40.840 --> 00:23:43.840
+A quarter of a percent, you've got 3.3 to
+1 odds against.
+
+00:23:43.840 --> 00:23:47.840
+And to make half a percent, 6 to 1
+against.
+
+00:23:49.840 --> 00:23:51.840
+And we haven't added in commission yet.
+
+00:23:51.840 --> 00:23:53.840
+These are all gross numbers.
+
+00:23:53.840 --> 00:23:56.840
+I hope you're not getting too depressed
+about this.
+
+00:23:56.840 --> 00:24:02.840
+You don't need to get depressed, because
+it's fun.
+
+00:24:02.840 --> 00:24:07.840
+Once you know these numbers, you're
+mentally superior to 99% of people in the
+market.
+
+00:24:09.840 --> 00:24:12.840
+And then you learn to operate within that
+environment and make money.
+
+00:24:16.840 --> 00:24:20.840
+What's the level where we get wiped out on
+a normal day, if we pay it?
+
+00:24:21.840 --> 00:24:22.840
+23 basis points.
+
+00:24:26.840 --> 00:24:27.840
+What about EURUSD?
+
+00:24:27.840 --> 00:24:29.840
+We won't dwell on it too much.
+
+00:24:29.840 --> 00:24:32.840
+I can tell you it's exactly the same as
+sterling US dollar.
+
+00:24:34.840 --> 00:24:35.840
+Same profile.
+
+00:24:36.840 --> 00:24:37.840
+Same returns on a day.
+
+00:24:38.840 --> 00:24:40.840
+Up 25, down 24.
+
+00:24:43.840 --> 00:24:44.840
+Same profile of distribution.
+
+00:24:46.840 --> 00:24:49.840
+72.5% of times, one standard deviation
+day.
+
+00:24:51.840 --> 00:24:54.840
+25 basis points wipes you out in all
+scenarios on a normal day.
+
+00:24:58.840 --> 00:24:59.840
+Are we excited?
+
+00:25:06.840 --> 00:25:11.840
+Day trading currencies is even more
+misunderstood and over exaggerated.
+
+00:25:14.840 --> 00:25:17.840
+Because everybody will tell you that the
+currencies markets are so liquid.
+
+00:25:18.840 --> 00:25:21.840
+And you get a four trillion dollar market
+trading per day.
+
+00:25:24.840 --> 00:25:25.840
+Who cares?
+
+00:25:25.840 --> 00:25:27.840
+The more liquid something is, the less
+opportunities there are.
+
+00:25:28.840 --> 00:25:29.840
+As a general rule.
+
+00:25:30.840 --> 00:25:32.840
+Liquidity doesn't have to be...
+
+00:25:33.840 --> 00:25:36.840
+Illiquidity doesn't have to be your enemy.
+
+00:25:37.840 --> 00:25:41.840
+Illiquidity can be as much your friend as
+your enemy.
+
+00:25:44.840 --> 00:25:46.840
+Because if you're on the right side of
+illiquidity,
+
+00:25:47.840 --> 00:25:49.840
+everything's going to move massive in your
+favour.
+
+00:25:56.840 --> 00:25:58.840
+The whole argument that there's
+opportunities in the Forex market
+
+00:25:59.840 --> 00:26:01.840
+because it's a four trillion dollar market
+and it's liquid,
+
+00:26:02.840 --> 00:26:03.840
+is a ridiculous argument.
+
+00:26:04.840 --> 00:26:05.840
+It doesn't matter to you.
+
+00:26:06.840 --> 00:26:10.840
+Because actually most of that currency
+that's trading every day
+
+00:26:11.840 --> 00:26:13.840
+is just corporates hedging their currency
+exposure.
+
+00:26:14.840 --> 00:26:19.840
+They're not taking a view on the currency.
+
+00:26:20.840 --> 00:26:21.840
+They're just hedging their exposure.
+
+00:26:22.840 --> 00:26:25.840
+It just doesn't matter at all.
+
+00:26:26.840 --> 00:26:28.840
+As a retail trader or even a hedge fund
+manager.
+
+00:26:29.840 --> 00:26:30.840
+It just doesn't matter.
+
+00:26:31.840 --> 00:26:35.840
+What about leverage?
+
+00:26:36.840 --> 00:26:40.840
+The leverage doesn't change the odds.
+
+00:26:41.840 --> 00:26:43.840
+The odds stay exactly the same.
+
+00:26:44.840 --> 00:26:46.840
+It just means the more leverage you use,
+
+00:26:47.840 --> 00:26:49.840
+the quicker you're going to get wiped out.
+
+00:26:52.840 --> 00:26:55.840
+So if you're on the other side of these
+odds,
+
+00:26:58.840 --> 00:26:59.840
+what essentially are you?
+
+00:27:02.840 --> 00:27:03.840
+Because these odds are against.
+
+00:27:04.840 --> 00:27:04.840
+Let's start with that.
+
+00:27:05.840 --> 00:27:08.840
+What does it mean when you say the odds
+are against?
+
+00:27:11.840 --> 00:27:14.840
+Let's use a sporting analogy.
+
+00:27:17.840 --> 00:27:18.840
+Let's use boxing.
+
+00:27:20.840 --> 00:27:25.840
+Where we stick a lightweight boxer in a
+boxing ring with a heavyweight boxer.
+
+00:27:26.840 --> 00:27:28.840
+So Amir Khan and David Hay.
+
+00:27:30.840 --> 00:27:31.840
+And you go to the casino to bet.
+
+00:27:32.840 --> 00:27:34.840
+Who's the casino?
+
+00:27:35.840 --> 00:27:36.840
+It's the bookmaker.
+
+00:27:39.840 --> 00:27:40.840
+It's William Hill.
+
+00:27:41.840 --> 00:27:42.840
+It's Ladbrokes.
+
+00:27:43.840 --> 00:27:44.840
+It's all of these guys here.
+
+00:27:45.840 --> 00:27:45.840
+Betfair.
+
+00:27:46.840 --> 00:27:47.840
+They're making all the prices.
+
+00:27:48.840 --> 00:27:49.840
+So what are they actually doing?
+
+00:27:51.840 --> 00:27:52.840
+They're laying the odds.
+
+00:27:52.840 --> 00:27:54.840
+They're the guys who are making the odds.
+
+00:27:55.840 --> 00:27:57.840
+So what will the bookmaker offer you?
+
+00:28:00.840 --> 00:28:04.840
+On Amir Khan knocking out David Hay in
+round three.
+
+00:28:09.840 --> 00:28:11.840
+What do you think they would make you at a
+price?
+
+00:28:12.840 --> 00:28:12.840
+20 to one.
+
+00:28:13.840 --> 00:28:14.840
+You kidding me?
+
+00:28:18.840 --> 00:28:20.840
+You'd want much higher odds than that,
+wouldn't you?
+
+00:28:21.840 --> 00:28:22.840
+You'd want thousands to one.
+
+00:28:23.840 --> 00:28:24.840
+Or hundreds to one at least.
+
+00:28:24.840 --> 00:28:25.840
+It's just not going to happen.
+
+00:28:26.840 --> 00:28:27.840
+He's twice his weight.
+
+00:28:28.840 --> 00:28:28.840
+Right?
+
+00:28:31.840 --> 00:28:32.840
+So you're going to get really, really long
+odds.
+
+00:28:33.840 --> 00:28:33.840
+Yeah?
+
+00:28:34.840 --> 00:28:37.840
+What odds are you going to get for David
+Hay just winning the fight?
+
+00:28:44.840 --> 00:28:44.840
+What do you think?
+
+00:28:47.840 --> 00:28:48.840
+Evens.
+
+00:28:49.840 --> 00:28:50.840
+Who says you would get actually better
+odds?
+
+00:28:52.840 --> 00:28:53.840
+You would probably get worse.
+
+00:28:54.840 --> 00:28:57.840
+You'd probably end up with the inverse of
+the S&P 500.
+
+00:29:00.840 --> 00:29:04.840
+You'd probably get 11 to one on, which is
+the other way around.
+
+00:29:05.840 --> 00:29:10.840
+So you bet a dollar and you get back a
+dollar and 11 cents.
+
+00:29:14.840 --> 00:29:16.840
+Because he's odds on to win.
+
+00:29:17.840 --> 00:29:18.840
+So what do we have to do?
+
+00:29:19.840 --> 00:29:24.840
+What do we have to do as traders if we
+know these numbers are always against us?
+
+00:29:24.840 --> 00:29:28.840
+What do we have to do?
+
+00:29:29.840 --> 00:29:33.840
+What do we have to do?
+
+00:29:33.840 --> 00:29:40.840
+You have to make the odds turn in your
+favor.
+
+00:29:41.840 --> 00:29:44.840
+So every time you do something, you know
+the odds are in your favor.
+
+00:29:47.840 --> 00:29:48.840
+Make sense?
+
+00:29:48.840 --> 00:29:55.840
+Because the bookmaker is on the other side
+of these odds and they're just going to
+win 90% of the time.
+
+00:30:00.840 --> 00:30:05.840
+So you have to do the opposite to achieve
+the odds to get the odds that they're
+exposed to.
+
+00:30:06.840 --> 00:30:06.840
+Yeah?
+
+00:30:10.840 --> 00:30:11.840
+Okay, so welcome back.
+
+00:30:11.840 --> 00:30:16.840
+I hope you managed to get your head around
+that process a little bit there.
+
+00:30:17.840 --> 00:30:19.840
+You know, this process is obviously new.
+
+00:30:20.840 --> 00:30:21.840
+So don't get scared of it.
+
+00:30:22.840 --> 00:30:34.840
+Once you've been through this process a
+few times, you will start to really
+understand the mistakes that retail
+traders typically make in the instruments
+that they typically trade.
+
+00:30:35.840 --> 00:30:41.840
+Therefore, you'll start to really
+understand the opposite approach, as in
+the professional approach.
+
+00:30:42.840 --> 00:30:48.840
+The approach that consistently profitable
+professional traders actually do.
+
+00:30:49.840 --> 00:30:56.840
+And I guess the numbers that you've seen
+may be a little bit shocking.
+
+00:30:57.840 --> 00:31:04.840
+So when we look at major indices and major
+currency pairs, these are the instruments
+that retail traders trade all the time.
+
+00:31:05.840 --> 00:31:08.840
+And they tend to trade them on a very
+short term basis.
+
+00:31:09.840 --> 00:31:19.840
+Now, what we're simulating here by taking
+the historical data and the historical
+volatility distribution, what we're
+simulating here is day trading.
+
+00:31:20.840 --> 00:31:24.840
+And we're using the data from the open to
+the close on a one day basis.
+
+00:31:25.840 --> 00:31:35.840
+Now, when you look at the stock market,
+the stock market, the S&P 500, it's just a
+representation, the average return of an
+S&P 500 stock.
+
+00:31:36.840 --> 00:31:42.840
+So when you look at the 500 stocks in the
+S&P 500, they're going to tend towards
+this distribution.
+
+00:31:43.840 --> 00:31:50.840
+So you can repeat this process in any S&P
+500 stock and the numbers will be a little
+bit more volatile.
+
+00:31:50.840 --> 00:31:58.840
+But over time, they all tend towards this
+central number of up or down 35 basis
+points in the stock market.
+
+00:31:59.840 --> 00:32:05.840
+And in the download section, you're going
+to see numbers for other major indices.
+
+00:32:06.840 --> 00:32:08.840
+And you'll see that they're actually very,
+very similar.
+
+00:32:09.840 --> 00:32:17.840
+So that should send you a very, very
+strong message in that the 0.85, the 85%
+breakeven threshold,
+
+00:32:18.840 --> 00:32:30.840
+once you probability adjust making 1% in
+the S&P 500 should start to change your
+expectations as a trader.
+
+00:32:31.840 --> 00:32:38.840
+Because what this market is essentially
+telling you is that very few opportunities
+occur on a one day basis.
+
+00:32:39.840 --> 00:32:49.840
+In fact, when you look at the
+distribution, we've already seen that a
+normal day in the S&P 500 is 78% of times.
+
+00:32:50.840 --> 00:32:55.840
+Which means 80% of the time, there's
+pretty much no opportunity to make money
+on a one day basis.
+
+00:32:56.840 --> 00:32:58.840
+And this is very similar in major currency
+pairs.
+
+00:32:59.840 --> 00:33:03.840
+Because in major currency pairs, a normal
+day is 73% of times.
+
+00:33:04.840 --> 00:33:10.840
+Which means around three quarters of
+times, there's essentially no day trading
+opportunities.
+
+00:33:11.840 --> 00:33:15.840
+Or very little day trading opportunities
+in those major currency pairs.
+
+00:33:16.840 --> 00:33:19.840
+And we're talking about the instruments
+that retail traders trade all the time.
+
+00:33:20.840 --> 00:33:22.840
+Sterling US dollar, Euro US dollar.
+
+00:33:23.840 --> 00:33:27.840
+In the download section, you're going to
+see more data for different major currency
+pairs.
+
+00:33:28.840 --> 00:33:35.840
+And you'll see that the numbers are pretty
+similar across the board for all major
+currency pairs.
+
+00:33:36.840 --> 00:33:46.840
+So, when you look at this and you think,
+well, my objective is to make money using
+my own money and take no income from it.
+
+00:33:47.840 --> 00:34:00.840
+Well, it very clearly shows that if you're
+going into this market, and the market's
+telling you what your opportunities are,
+it's pretty clear that it's telling you a
+few things.
+
+00:34:01.840 --> 00:34:04.840
+Firstly, it's telling you that you can't
+make income from it.
+
+00:34:05.840 --> 00:34:10.840
+Because, secondly, and most importantly,
+you can't make money from it over time.
+
+00:34:11.840 --> 00:34:23.840
+Because all that's going to happen when
+you trade these instruments on a one day
+basis, is that on a normal day, the odds
+are always going to be stacked against
+you.
+
+00:34:24.840 --> 00:34:28.840
+Which means, over time, your account can
+only go to zero.
+
+00:34:29.840 --> 00:34:30.840
+Your trading account can only go to zero.
+
+00:34:31.840 --> 00:34:33.840
+Now, what's on the other side of that?
+
+00:34:34.840 --> 00:34:40.840
+On the other side of that, is people who
+are stacking the odds in their favour,
+because they're increasing their time
+horizon.
+
+00:34:42.840 --> 00:34:53.840
+Now, you can repeat these processes, and
+Chris is going to show you, in the next
+video, how you repeat those processes on a
+one day basis, on a one week basis, on a
+one month basis.
+
+00:34:54.840 --> 00:34:55.840
+It's very, very straightforward.
+
+00:34:56.840 --> 00:35:00.840
+Don't be scared of doing it, because once
+you've learned how to do it, you've
+learned how to do it forever.
+
+00:35:01.840 --> 00:35:04.840
+And this is the first thing you should be
+learning, as a real trader.
+
+00:35:05.840 --> 00:35:14.840
+Not a retail trader who loses money, a
+trader who wants to make money, with their
+own money, over time, and grow their
+account, to become wealthier.
+
+00:35:15.840 --> 00:35:23.840
+Now, these numbers don't change, and the
+numbers speak for themselves. The market
+is telling you what your opportunities
+are.
+
+00:35:24.840 --> 00:35:29.840
+You don't tell the market, how much money
+you can make, over any time horizon.
+
+00:35:30.840 --> 00:35:34.840
+When people leverage, these numbers don't
+change. The market doesn't care.
+
+00:35:35.840 --> 00:35:46.840
+So, whether you put a hundred dollars into
+this trading strategy, or you put a
+hundred thousand dollars, a million
+dollars, or a hundred million dollars,
+into this strategy, it just means one
+thing.
+
+00:35:47.840 --> 00:35:52.840
+Your account will go to zero. The market
+does not care. It has no memory.
+
+00:35:53.840 --> 00:36:07.840
+So, I think that's probably the most
+shocking thing, is that when you trade on
+a margin account, and you're borrowing
+money to essentially trade with your own
+money on margin.
+
+00:36:08.840 --> 00:36:15.840
+Whether you put ten down, a hundred down,
+or a million down, on this strategy, it's
+a strategy that just doesn't work.
+
+00:36:16.840 --> 00:36:20.840
+So, why would you put more money into it?
+It doesn't make any logical sense
+whatsoever.
+
+00:36:21.840 --> 00:36:23.840
+What you have to be, is actually be on the
+other side.
+
+00:36:24.840 --> 00:36:29.840
+And, if you're going to leverage, you
+should only be leveraging strategies that
+actually work.
+
+00:36:30.840 --> 00:36:37.840
+So, Chris is going to show you now, in
+video number four, how you actually go
+through these processes.
+
+00:36:38.840 --> 00:36:48.840
+So, you can use Excel, and as long as you
+can get the data, you can do this with any
+asset, anywhere in the world, across all
+the major asset classes.
+
+00:36:49.840 --> 00:36:56.840
+So, across indices, stocks, as in equities
+combined, currencies, commodities, and
+rates.
+
+00:36:57.840 --> 00:37:00.840
+You can do this for any asset, as long as
+you can get the data.
+
+00:37:01.840 --> 00:37:10.840
+So, let's go over to Chris. Chris is going
+to show you how to do this on the computer
+screen, in video four, so you can do this
+forever, for the rest of your life.
+
+00:37:11.840 --> 00:37:20.840
+This is going to save you a hell of a lot
+of money, and it's going to lay the
+foundation for you to enter strategies
+where the odds are actually in your favor.
+
+00:37:21.840 --> 00:37:23.840
+Thank you.

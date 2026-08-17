@@ -1,0 +1,2140 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 23.08,
+      "text": "Okay, so now we're going to go over to Christopher Quill. Chris is now going to show you on the computer how you calculate your distributions for initially the S&P 500, but you can use this for any asset. So take it away, Chris."
+    },
+    {
+      "start": 30.0,
+      "end": 59.98,
+      "text": "So in this example, we're going to look at a day trading strategy for the S&P 500 over a period of roughly 50 years. By calculating these daily returns, we should get a good idea of how the S&P 500"
+    },
+    {
+      "start": 59.98,
+      "end": 89.96,
+      "text": "the underlying asset behaves behaves on a daily basis. So we're going to start by going to Yahoo Finance and obtaining the data. So finance.yahoo.com. And then in the ticker box, we type S&P and we select the first drop down item, S&P 500. And this gives us a summary phrase"
+    },
+    {
+      "start": 89.96,
+      "end": 119.94,
+      "text": "page of the S&P 500 with Yahoo Finance's last available price for the asset. But we're going to go to historical prices on the left hand side and update the historical price table by editing the inputs given at the top here. So we're looking for data from between the 3rd of January 1962 to the 9th of November 2012 on a daily frequency."
+    },
+    {
+      "start": 119.94,
+      "end": 128.8,
+      "text": "So once we've set our parameters, we update the table by clicking Get Prices and we scroll to the bottom of the page and click Download to Spreadsheet."
+    },
+    {
+      "start": 129.36,
+      "end": 140.4,
+      "text": "At this stage, you can select to save the spreadsheet to your hard drive. Or as we're going to do, you can just open the spreadsheet straight away and save it once it's open."
+    },
+    {
+      "start": 142.94,
+      "end": 156.16,
+      "text": "With the spreadsheet open, we're just going to go to File, Save As. We're going to save it as S&P 500 Returns Distribution."
+    },
+    {
+      "start": 157.22,
+      "end": 163.02,
+      "text": "And we'll save it as an Excel workbook. And I'm going to save it on my desktop so it's easy to find."
+    },
+    {
+      "start": 164.4,
+      "end": 177.8,
+      "text": "So the first thing that we're going to do is adjust this date column so we can see the dates."
+    },
+    {
+      "start": 178.28,
+      "end": 182.5,
+      "text": "So we just click on the column intersection and adjust the width of the column like that by clicking and dragging."
+    },
+    {
+      "start": 183.32,
+      "end": 189.44,
+      "text": "So this is all the price data for the S&P 500 from the daily price data from the period that we've selected."
+    },
+    {
+      "start": 190.08,
+      "end": 198.52,
+      "text": "So in our example, we're only going to use the open and closing prices to calculate daily returns."
+    },
+    {
+      "start": 199.82,
+      "end": 207.54,
+      "text": "So let's go ahead and do that by heading up column H with returns in cell H1."
+    },
+    {
+      "start": 208.02,
+      "end": 217.78,
+      "text": "And then in H2, type our returns formula, which is brackets, closing price for that day minus the opening price for that day,"
+    },
+    {
+      "start": 217.9,
+      "end": 223.24,
+      "text": "divided by the opening price, which gets it in terms of a percentage return for that day."
+    },
+    {
+      "start": 224.7,
+      "end": 233.06,
+      "text": "And then we want to apply the formula that we've just put into cell H2 down the whole returns column."
+    },
+    {
+      "start": 233.2,
+      "end": 237.58,
+      "text": "So a quick way to do that is click anywhere in the data from column A to G."
+    },
+    {
+      "start": 238.28,
+      "end": 244.18,
+      "text": "So cell G2, for example, and press CTRL and down to navigate quickly to the bottom of the spreadsheet."
+    },
+    {
+      "start": 244.84,
+      "end": 249.98,
+      "text": "And then find the last cell in column H."
+    },
+    {
+      "start": 250.6,
+      "end": 253.22,
+      "text": "So that is H12804."
+    },
+    {
+      "start": 254.16,
+      "end": 261.68,
+      "text": "And then we press CTRL, shift and up to quickly select all the return cells that we want to implement our formula into."
+    },
+    {
+      "start": 262.3,
+      "end": 268.8,
+      "text": "And then with that selected, we just press CTRL, D to copy that formula down from cell H2 to the rest of the column."
+    },
+    {
+      "start": 272.84,
+      "end": 278.72,
+      "text": "So now we've got our returns, we want to be able to analyse them and interpret them in terms of a distribution."
+    },
+    {
+      "start": 279.3,
+      "end": 287.82,
+      "text": "So by that I mean we want to be able to understand how many of these daily returns, S&P 500 daily returns,"
+    },
+    {
+      "start": 288.1,
+      "end": 290.64,
+      "text": "lie within specific ranges that we set."
+    },
+    {
+      "start": 291.06,
+      "end": 295.86,
+      "text": "And we're going to set those ranges by creating intervals in the data."
+    },
+    {
+      "start": 296.7,
+      "end": 302.66,
+      "text": "So in column J, cell J1, head up the column with intervals."
+    },
+    {
+      "start": 305.08,
+      "end": 305.44,
+      "text": "Okay."
+    },
+    {
+      "start": 306.4,
+      "end": 314.68,
+      "text": "And then what we want to do is come up with a reasonable set of intervals for trading the S&P 500 daily."
+    },
+    {
+      "start": 315.54,
+      "end": 323.46,
+      "text": "So a lower bound for the ranges we're interested in might be minus 2%, for example, because we're only looking at daily data."
+    },
+    {
+      "start": 324.14,
+      "end": 330.96,
+      "text": "So looking at anything with too wider range would be pointless because it wouldn't really show us the core of our data set."
+    },
+    {
+      "start": 331.92,
+      "end": 337.04,
+      "text": "So we'll start with minus 2%, so minus 0.02, we enter into cell J2."
+    },
+    {
+      "start": 338.96,
+      "end": 342.74,
+      "text": "And then we'll go up in increments of half a percent."
+    },
+    {
+      "start": 342.74,
+      "end": 354.72,
+      "text": "So in the next cell, J3, we type 0.0.015, press enter."
+    },
+    {
+      "start": 355.42,
+      "end": 362.44,
+      "text": "And to quickly use this interval that we've set and copy it down to an upper bound of plus 2%,"
+    },
+    {
+      "start": 362.44,
+      "end": 371.74,
+      "text": "we select those two cells, J2 and J3, and then select the small black box in the bottom right-hand corner of the selection"
+    },
+    {
+      "start": 371.74,
+      "end": 382.04,
+      "text": "and drag it down to cell J10, which gives us plus 0.02, which is plus 2%."
+    },
+    {
+      "start": 382.04,
+      "end": 399.28,
+      "text": "So we're going to use these intervals to create a distribution table to see the frequency of our daily returns that land within these intervals."
+    },
+    {
+      "start": 400.56,
+      "end": 408.8,
+      "text": "So to do that, we have to go to data on the ribbon and data analysis on the right-hand side."
+    },
+    {
+      "start": 408.8,
+      "end": 418.58,
+      "text": "If you don't have this at this point, there's a guide of how you obtain this data analysis option in the accompanying PDF."
+    },
+    {
+      "start": 419.58,
+      "end": 424.42,
+      "text": "And you do it by installing an add-in to Excel called Analysis Toolpack."
+    },
+    {
+      "start": 425.5,
+      "end": 427.34,
+      "text": "So we go ahead and click on Data Analysis."
+    },
+    {
+      "start": 428.4,
+      "end": 430.94,
+      "text": "And we want to create a histogram data."
+    },
+    {
+      "start": 431.5,
+      "end": 433.6,
+      "text": "So that's basically a frequency table."
+    },
+    {
+      "start": 434.88,
+      "end": 436.2,
+      "text": "And press OK."
+    },
+    {
+      "start": 436.2,
+      "end": 442.76,
+      "text": "And we're going to create this table from our returns data."
+    },
+    {
+      "start": 443.5,
+      "end": 451.86,
+      "text": "So we select in the input range, cell H2, and press Ctrl-Shift and down to quickly select that whole returns column."
+    },
+    {
+      "start": 452.62,
+      "end": 460.52,
+      "text": "The bin range is just the intervals that we want to define our ranges with, that we're interested in interpreting our returns within."
+    },
+    {
+      "start": 460.58,
+      "end": 469.36,
+      "text": "So our bin range is just our intervals that we created in column J, from J2, Ctrl-Shift down, select to J10."
+    },
+    {
+      "start": 471.04,
+      "end": 477.1,
+      "text": "Now, we want to display this histogram data in this spreadsheet that we're working in, rather than a new worksheet."
+    },
+    {
+      "start": 477.88,
+      "end": 487.48,
+      "text": "So in output options, we select output range, and you can see this throws you back to the input range box, which we've already filled in with our returns data."
+    },
+    {
+      "start": 487.54,
+      "end": 495.32,
+      "text": "So we need to be careful to click off that into output range and select whereabouts in the spreadsheet we want this frequency table to be."
+    },
+    {
+      "start": 495.44,
+      "end": 507.32,
+      "text": "So we're going to use cell L2, and we're going to use cell L2, and so we click L2 and press OK, and that gives us a tabular format of a histogram."
+    },
+    {
+      "start": 507.7,
+      "end": 529.04,
+      "text": "So basically, a frequency table, and what this essentially means is, if we take the first row, for example, in this table, this means that 285 days, the S&P 500 yields a return of less than or equal to minus 2%."
+    },
+    {
+      "start": 529.04,
+      "end": 538.16,
+      "text": "And the next row, and the next row, 345 days, yields a return of between minus 2% and minus 1.5%."
+    },
+    {
+      "start": 538.16,
+      "end": 539.96,
+      "text": "OK, and that's how the table works."
+    },
+    {
+      "start": 540.04,
+      "end": 547.78,
+      "text": "So if you go to the bottom, eventually you get to 307 days, lie greater than 2%."
+    },
+    {
+      "start": 547.78,
+      "end": 562.5,
+      "text": "OK, so what would be useful is if we interpreted this data visually, so we create a graph from this data."
+    },
+    {
+      "start": 563.02,
+      "end": 576.2,
+      "text": "So to do that, we just select the data, L3, click and drag to M12 to select that data, and go to Insert on the ribbon, Column, and the first 2D Column Chart option."
+    },
+    {
+      "start": 576.96,
+      "end": 579.46,
+      "text": "Click that, and that gives us a histogram of our data."
+    },
+    {
+      "start": 580.38,
+      "end": 589.08,
+      "text": "OK, so at the moment, what we can see is that clearly more returns on our distribution lie close to zero."
+    },
+    {
+      "start": 589.72,
+      "end": 600.9,
+      "text": "OK, so that's what we can tell so far, and that a lot less, it sort of tails off, and it looks something like a bell-shaped curve, a bit like a, well, a lot like a normal distribution at the moment,"
+    },
+    {
+      "start": 603.2,
+      "end": 608.76,
+      "text": "where there's a lot less frequency of returns, where there's a lot less frequency of returns in the tails, than in the centre."
+    },
+    {
+      "start": 610.94,
+      "end": 617.54,
+      "text": "OK, so we should tidy this graph up, and make it a little bit more easy to interpret."
+    },
+    {
+      "start": 617.74,
+      "end": 621.08,
+      "text": "I'm just going to go ahead and zoom out of the spreadsheet a little bit."
+    },
+    {
+      "start": 621.44,
+      "end": 626.46,
+      "text": "To do that easily, you can just hold CTRL and then use your mouse wheel to zoom in and out of the spreadsheet."
+    },
+    {
+      "start": 626.98,
+      "end": 641.18,
+      "text": "So, we're going to replace this horizontal x-axis with some more appropriate labels, so we can understand the ranges that our frequency of data lie within."
+    },
+    {
+      "start": 642.18,
+      "end": 647.3,
+      "text": "So, to do that, let's create a range column in column N."
+    },
+    {
+      "start": 647.8,
+      "end": 649.78,
+      "text": "So, in N2, we'll type range."
+    },
+    {
+      "start": 650.76,
+      "end": 657.16,
+      "text": "And in N3, we'll type the appropriate range that applies to this bin value, and so on."
+    },
+    {
+      "start": 657.28,
+      "end": 663.04,
+      "text": "And we'll do that in all of these cells, from N3 to N12."
+    },
+    {
+      "start": 663.46,
+      "end": 672.88,
+      "text": "Before we do that, though, because we're going to type it in as text, we want to format these cells, so they know that these cells are going to be displayed as text, or understood as text."
+    },
+    {
+      "start": 672.96,
+      "end": 677.26,
+      "text": "So, we select all those cells, and right-click within the selection, and click Format Cells."
+    },
+    {
+      "start": 679.14,
+      "end": 689.1,
+      "text": "And we then want to change the category to text, and press OK."
+    },
+    {
+      "start": 689.96,
+      "end": 707.6,
+      "text": "Okay, so we'll start with the first row, and we'll call this range less than minus 2%, and then the next range will be minus 2% to minus 1.5%, and so on."
+    },
+    {
+      "start": 709.14,
+      "end": 724.14,
+      "text": "So, we're just using the bin values as a reference to complete this table, this column, rather."
+    },
+    {
+      "start": 728.14,
+      "end": 738.6,
+      "text": "So, it's a little bit tedious, but it's a good thing to do, so you can actually understand your data graphically with the correct ranges defined."
+    },
+    {
+      "start": 739.14,
+      "end": 759.12,
+      "text": "And in the last cell, in cell N12, we're going to type greater than 2%."
+    },
+    {
+      "start": 759.12,
+      "end": 766.76,
+      "text": "Okay, and let's adjust this column width, column N, so it can include all that text, and it doesn't overlap into another column."
+    },
+    {
+      "start": 768.16,
+      "end": 776.54,
+      "text": "Okay, so now we want to change the horizontal axis labels to the ranges that we've created here."
+    },
+    {
+      "start": 776.68,
+      "end": 781.0,
+      "text": "So, to do that, we click on the graph, and right-click, and select data."
+    },
+    {
+      "start": 781.0,
+      "end": 794.68,
+      "text": "And then we want to change the horizontal category axis label, and edit, so we click on edit, and we change it from these bin values, which are currently selected, to these range values instead."
+    },
+    {
+      "start": 794.68,
+      "end": 808.68,
+      "text": "And we just press OK, and OK again, and you can see that it's updated our histogram, and now we can understand what these bars actually mean, in terms of the ranges that they apply to."
+    },
+    {
+      "start": 808.68,
+      "end": 824.68,
+      "text": "Okay, so the next thing we'll do is delete this series label, so we just click on series 1 and press delete, and I suppose we want to add some axis labels to this graph, so we can understand it even better."
+    },
+    {
+      "start": 824.68,
+      "end": 832.68,
+      "text": "So, to do that, we go to chart tools layout in the ribbon, and then axis titles, and we'll label the primary horizontal axis first."
+    },
+    {
+      "start": 832.68,
+      "end": 847.68,
+      "text": "We'll choose title below axis, and that gives us axis title as the title, so we want to select that, delete it, and replace it with daily return range."
+    },
+    {
+      "start": 847.68,
+      "end": 861.68,
+      "text": "Click off it, and then the same thing to the vertical axis title, we'll choose rotated title, select it, and delete, and we'll rename it as frequency."
+    },
+    {
+      "start": 861.68,
+      "end": 878.68,
+      "text": "Okay, so that's our histogram done, so we can graphically see the frequency of daily S&P returns that lie within these ranges historically over the period that we've considered."
+    },
+    {
+      "start": 878.68,
+      "end": 890.68,
+      "text": "Okay, so I've already talked about how this distribution is much like a normal bell-shaped curve, but for those of you a little bit more familiar with the normal distribution,"
+    },
+    {
+      "start": 890.68,
+      "end": 895.68,
+      "text": "we can see that these bars don't tail off quite as quickly as a normal distribution would."
+    },
+    {
+      "start": 895.68,
+      "end": 914.68,
+      "text": "Basically meaning the tails are slightly fatter, that we can see visually, meaning there's more extreme values, and we'll come on, we'll sort of prove that in our data as we continue, but we can already see that this isn't quite a normal distribution."
+    },
+    {
+      "start": 914.68,
+      "end": 938.68,
+      "text": "So, we can use Excel to give us some summary statistics of our data set, and to do that we go to data, and data analysis, then we're going to choose descriptive statistics, and press ok."
+    },
+    {
+      "start": 938.68,
+      "end": 944.68,
+      "text": "And our input range is our returns column from cell H2."
+    },
+    {
+      "start": 944.68,
+      "end": 963.68,
+      "text": "Control shift down, selects the whole returns column, and we'll scroll back up to the top of the spreadsheet, and we want our output range to be on this spreadsheet, on this worksheet, so our descriptive data is on this worksheet, and so we change the output options to output range."
+    },
+    {
+      "start": 963.68,
+      "end": 983.68,
+      "text": "And then remember to click off the output range, and we're going to use cell T2 to display the descriptive statistics, and we'll need to make sure that we choose summary statistics at the bottom to display our descriptive statistics before pressing ok."
+    },
+    {
+      "start": 983.68,
+      "end": 997.68,
+      "text": "So this will load a number of summary statistics of our data, so it's done it now, we'll just adjust the column widths, so we can see this data, see these statistics a bit more easily."
+    },
+    {
+      "start": 997.68,
+      "end": 1001.68,
+      "text": "Ok, so let's interpret some of these."
+    },
+    {
+      "start": 1001.68,
+      "end": 1009.68,
+      "text": "So the mean, this is just the average daily return of the S&P 500 over the historical period that we're looking at."
+    },
+    {
+      "start": 1009.68,
+      "end": 1013.68,
+      "text": "Ok, so this is about 0.03%."
+    },
+    {
+      "start": 1013.68,
+      "end": 1019.68,
+      "text": "Intuitively we would know it's positive, because we know the S&P 500 is up since 1962."
+    },
+    {
+      "start": 1019.68,
+      "end": 1037.68,
+      "text": "The median is the middle number of the data set, so if I had a data set of 1%, 2%, and 10%, the middle of that data set would be 2%, the middle number."
+    },
+    {
+      "start": 1037.68,
+      "end": 1039.68,
+      "text": "So that's the median."
+    },
+    {
+      "start": 1039.68,
+      "end": 1058.68,
+      "text": "Intuitively, by seeing the median, the middle number is above the mean, we know that more values lie above the mean than below the mean, so the ones below the mean must be more extreme."
+    },
+    {
+      "start": 1058.68,
+      "end": 1066.68,
+      "text": "And so we can interpret this as the negative values being more extreme than the positive ones."
+    },
+    {
+      "start": 1066.68,
+      "end": 1068.68,
+      "text": "Ok, so let's continue."
+    },
+    {
+      "start": 1068.68,
+      "end": 1070.68,
+      "text": "The standard deviation is the next one."
+    },
+    {
+      "start": 1070.68,
+      "end": 1078.68,
+      "text": "We can just interpret this one as a measure of the dispersion of the data."
+    },
+    {
+      "start": 1078.68,
+      "end": 1091.68,
+      "text": "Ok, so in a normal distribution, you might know that there's roughly 68% of the frequency of the data lies within one standard deviation either side of the mean."
+    },
+    {
+      "start": 1091.68,
+      "end": 1094.68,
+      "text": "So in this case that would be 1% either side of the mean."
+    },
+    {
+      "start": 1094.68,
+      "end": 1100.68,
+      "text": "That's not necessarily true, in fact it isn't true in our empirical distribution as we'll see further on."
+    },
+    {
+      "start": 1100.68,
+      "end": 1110.68,
+      "text": "So just bear in mind it's a measure of our data's dispersion."
+    },
+    {
+      "start": 1110.68,
+      "end": 1115.68,
+      "text": "So next we'll look at the kurtosis and skewness values."
+    },
+    {
+      "start": 1115.68,
+      "end": 1122.68,
+      "text": "These are just values that help us understand whether our data is normally distributed or not."
+    },
+    {
+      "start": 1122.68,
+      "end": 1134.68,
+      "text": "So the kurtosis value is a measure of how peaked the data is and how the tails differ from a normal distribution."
+    },
+    {
+      "start": 1134.68,
+      "end": 1141.68,
+      "text": "So a normal distribution in terms of how Excel displays the kurtosis value would have a value of 0."
+    },
+    {
+      "start": 1141.68,
+      "end": 1154.68,
+      "text": "So this high kurtosis value basically means that our data set, our empirical data set, is more peaky and has higher or fatter returns in the tails."
+    },
+    {
+      "start": 1154.68,
+      "end": 1159.68,
+      "text": "Ok, so fatter tails in our data set."
+    },
+    {
+      "start": 1159.68,
+      "end": 1173.68,
+      "text": "And the skewness value as a minus number means that basically our fat tail, our negative fat tail, is bigger than our positive tail."
+    },
+    {
+      "start": 1173.68,
+      "end": 1182.68,
+      "text": "Meaning that extreme negative movements are more likely to occur than extreme positive movements."
+    },
+    {
+      "start": 1182.68,
+      "end": 1192.68,
+      "text": "Ok, so the next value we look at is the range which is just the difference between the highest daily return that's been in our data set to the lowest daily return."
+    },
+    {
+      "start": 1192.68,
+      "end": 1197.68,
+      "text": "And that's split up into the maximum minimum which are the next two cells."
+    },
+    {
+      "start": 1197.68,
+      "end": 1207.68,
+      "text": "So we can see that the lowest daily return is minus 20% which is twice the magnitude of the largest positive return which is just 10%."
+    },
+    {
+      "start": 1207.68,
+      "end": 1212.68,
+      "text": "So again that backs up our idea about skewness."
+    },
+    {
+      "start": 1212.68,
+      "end": 1216.68,
+      "text": "Negative extremes are of greater magnitude than positive extremes."
+    },
+    {
+      "start": 1216.68,
+      "end": 1221.68,
+      "text": "The sum is just the sum of our entire returns column."
+    },
+    {
+      "start": 1221.68,
+      "end": 1224.68,
+      "text": "Effectively it means nothing other than that."
+    },
+    {
+      "start": 1224.68,
+      "end": 1234.68,
+      "text": "It's certainly not the return that you would yield if you held this asset from 1962 to 2012."
+    },
+    {
+      "start": 1234.68,
+      "end": 1242.68,
+      "text": "And finally the count is the number of trading days within our data set."
+    },
+    {
+      "start": 1242.68,
+      "end": 1249.68,
+      "text": "So now we've interpreted our descriptive statistics a little bit."
+    },
+    {
+      "start": 1249.68,
+      "end": 1259.68,
+      "text": "Let's display the frequencies of our ranges in our data in terms of probabilities so we can interpret them a bit more easily."
+    },
+    {
+      "start": 1259.68,
+      "end": 1271.68,
+      "text": "Ok, so in column O let's head this column with probabilities."
+    },
+    {
+      "start": 1271.68,
+      "end": 1281.68,
+      "text": "And in O2 we type the formula, sorry in O3 we type the formula for probabilities which is just the frequency, the number of days within this range."
+    },
+    {
+      "start": 1281.68,
+      "end": 1291.68,
+      "text": "So that's M3 divided by the total number of trading days, that's the count in our descriptive statistics which is U16."
+    },
+    {
+      "start": 1291.68,
+      "end": 1293.68,
+      "text": "And that will give us a percentage."
+    },
+    {
+      "start": 1293.68,
+      "end": 1307.68,
+      "text": "But before we enter this formula into this cell we're going to press F4 which puts these dollar signs around the denominator of the equation when our cursor is on the denominator."
+    },
+    {
+      "start": 1307.68,
+      "end": 1329.68,
+      "text": "It fixes the cell that your cursor is within and when I pressed F4 just then it fixed the denominator which basically will allow us to drag down the formula, copy the formula down to the cells below and it will just move the numerator down appropriately but it won't change this cell, the denominator."
+    },
+    {
+      "start": 1329.68,
+      "end": 1337.68,
+      "text": "Ok, so if we just press enter and then select that cell again and drag this formula down."
+    },
+    {
+      "start": 1337.68,
+      "end": 1344.68,
+      "text": "And while that's still selected if we right click within that selection and format the cells so that their percentages are displayed as percentages."
+    },
+    {
+      "start": 1344.68,
+      "end": 1359.68,
+      "text": "Ok, so we can see for example that 5.64% of our data, of our daily return values lie within minus 1.5 to minus 1.1%."
+    },
+    {
+      "start": 1359.68,
+      "end": 1363.68,
+      "text": "Ok, so that we can interpret all these probabilities like that."
+    },
+    {
+      "start": 1363.68,
+      "end": 1382.68,
+      "text": "So basically for this first value that would be 2.23% of our return values lie lower than minus 2% so less than or equal to minus 2%."
+    },
+    {
+      "start": 1382.68,
+      "end": 1403.68,
+      "text": "Another way to understand and interpret these probabilities a bit more easily is if we display them in cumulative probabilities which will allow us to analyze sections of the data."
+    },
+    {
+      "start": 1403.68,
+      "end": 1418.68,
+      "text": "So if we head column P, so column P, so column P, cell P2 and we put cumulative probabilities, adjust the column width appropriately."
+    },
+    {
+      "start": 1418.68,
+      "end": 1424.68,
+      "text": "And this time in the first cell P3 we just type equal to O3."
+    },
+    {
+      "start": 1424.68,
+      "end": 1443.68,
+      "text": "In cell P4 we type equal to P3 plus O4 and then we can copy this formula down in cell P4 and this will give us our cumulative probability distribution."
+    },
+    {
+      "start": 1443.68,
+      "end": 1453.68,
+      "text": "Ok, so what is meaning when we can interpret this a bit better than our normal probabilities column is because we can start saying things like"
+    },
+    {
+      "start": 1453.68,
+      "end": 1463.68,
+      "text": "10.56% of the data lies with the return of less than minus 1%."
+    },
+    {
+      "start": 1463.68,
+      "end": 1470.68,
+      "text": "Ok, so 10.5% of the time the S&P 500 yields returns of less than minus 1%."
+    },
+    {
+      "start": 1470.68,
+      "end": 1478.68,
+      "text": "And you can turn that on its head and say that 90% of the time the S&P 500 yields a return of greater than minus 1%."
+    },
+    {
+      "start": 1478.68,
+      "end": 1485.68,
+      "text": "So you can kind of interpret these how you like and manipulate it how you like."
+    },
+    {
+      "start": 1485.68,
+      "end": 1491.68,
+      "text": "Ok, so let's go ahead and tidy the spreadsheet up a little bit now."
+    },
+    {
+      "start": 1491.68,
+      "end": 1497.68,
+      "text": "If we just tidy these values up that we've just been looking at, we'll create borders around these cells."
+    },
+    {
+      "start": 1497.68,
+      "end": 1514.68,
+      "text": "So if we select cell L2 down to P12 and then go to the home tab on the ribbon and with this range still selected, go to the borders drop down and select all borders."
+    },
+    {
+      "start": 1514.68,
+      "end": 1518.68,
+      "text": "That will give borders around those cells and we'll move the graph to the right hand side."
+    },
+    {
+      "start": 1518.68,
+      "end": 1523.68,
+      "text": "So let's zoom out the spreadsheet, move the graph to the right hand side before we continue."
+    },
+    {
+      "start": 1523.68,
+      "end": 1527.68,
+      "text": "So our spreadsheet looks a little better."
+    },
+    {
+      "start": 1527.68,
+      "end": 1543.68,
+      "text": "Ok, so we've basically done, considered some basic statistics and got a basic understanding of how our distribution works using the tools that Excel has given us so far."
+    },
+    {
+      "start": 1543.68,
+      "end": 1551.68,
+      "text": "But what we can do is manipulate this data further to get a real in-depth understanding of what's going on."
+    },
+    {
+      "start": 1551.68,
+      "end": 1558.68,
+      "text": "And we'll do that by filtering the returns column and then analysing subsets of data."
+    },
+    {
+      "start": 1558.68,
+      "end": 1566.68,
+      "text": "So before we continue, let's add three rows to the top of the spreadsheet to create a little bit more space."
+    },
+    {
+      "start": 1566.68,
+      "end": 1575.68,
+      "text": "So we just click on row 1 on the left hand side and right click, click insert, 1, 2 and 3."
+    },
+    {
+      "start": 1575.68,
+      "end": 1585.68,
+      "text": "And then what we can do is, once we've filtered these returns, we'll look at the average of a subset."
+    },
+    {
+      "start": 1585.68,
+      "end": 1589.68,
+      "text": "So first of all, let's add the filter to the returns column."
+    },
+    {
+      "start": 1589.68,
+      "end": 1599.68,
+      "text": "Ok, so we click on cell H4, the top of the returns column, and go to data, the data tab on the ribbon, and select filter."
+    },
+    {
+      "start": 1599.68,
+      "end": 1613.68,
+      "text": "And this is applied drop down arrows to all the columns here, A to H, which allows us to filter and sort all these columns by any of these date, open, high, low, returns, whatever, any of those."
+    },
+    {
+      "start": 1613.68,
+      "end": 1621.68,
+      "text": "So for example, we could change all this data from newest to oldest to oldest in terms of date."
+    },
+    {
+      "start": 1621.68,
+      "end": 1624.68,
+      "text": "So that's turned the dates now upside down."
+    },
+    {
+      "start": 1624.68,
+      "end": 1631.68,
+      "text": "So now we've got the return, the close, the open, all of that data for 1962 at the top."
+    },
+    {
+      "start": 1631.68,
+      "end": 1636.68,
+      "text": "Ok, so we'll just go and undo that, change it back to newest to oldest."
+    },
+    {
+      "start": 1636.68,
+      "end": 1640.68,
+      "text": "So now we know we can filter our returns."
+    },
+    {
+      "start": 1640.68,
+      "end": 1645.68,
+      "text": "What we'll start by doing is working out the average of subsets of returns."
+    },
+    {
+      "start": 1645.68,
+      "end": 1654.68,
+      "text": "So to do that we need to create a cell that works out the average of this returns column when it's filtered and sorted and we've done whatever we want to."
+    },
+    {
+      "start": 1654.68,
+      "end": 1668.68,
+      "text": "So in cell K2, let's type average return and adjust the column width."
+    },
+    {
+      "start": 1668.68,
+      "end": 1687.68,
+      "text": "And in L2, we type the formula to work out the average return for the subset, which is subtotal, brackets, one for the average, comma, the reference values, which are the returns column, which is now H5, down to H12807."
+    },
+    {
+      "start": 1687.68,
+      "end": 1692.68,
+      "text": "And then we close the brackets in the formula bar up here and press enter."
+    },
+    {
+      "start": 1692.68,
+      "end": 1707.68,
+      "text": "Ok, and that's given us in L2 the average return for our entire unfiltered data set, which you'll notice is obviously the same as our mean as a data set because average and mean are the same thing."
+    },
+    {
+      "start": 1707.68,
+      "end": 1713.68,
+      "text": "It's displayed slightly differently because of rounding, but they are the same values."
+    },
+    {
+      "start": 1713.68,
+      "end": 1726.68,
+      "text": "But what will happen is when we change the returns column, this average return will change here, but the mean, the descriptive statistics, these are all fixed from our total data set, so these won't change."
+    },
+    {
+      "start": 1726.68,
+      "end": 1739.68,
+      "text": "Ok, so what might be useful is if we understand the average positive and negative returns of our data set."
+    },
+    {
+      "start": 1739.68,
+      "end": 1755.68,
+      "text": "Ok, so to do that we filter the returns column, so we click on this filter here, number filters, and what we're going to do is go to greater than to filter them."
+    },
+    {
+      "start": 1755.68,
+      "end": 1759.68,
+      "text": "We put greater than zero and that will give us only positive returns."
+    },
+    {
+      "start": 1759.68,
+      "end": 1762.68,
+      "text": "Ok, so that's unfiltered."
+    },
+    {
+      "start": 1762.68,
+      "end": 1774.68,
+      "text": "Ok, so before we continue actually, let's just name cell M1 avpos for average positive return and M2 avneg for average negative return."
+    },
+    {
+      "start": 1774.68,
+      "end": 1782.68,
+      "text": "Ok, and as you notice when I filtered those returns it actually hid a load of rows because it's taken out all the zeros and negative return values."
+    },
+    {
+      "start": 1782.68,
+      "end": 1792.68,
+      "text": "So for example we go from row 5 to 8 and it's affected the rest of our spreadsheet, but don't worry, when you clear the filter in the returns column that will all go back to normal."
+    },
+    {
+      "start": 1792.68,
+      "end": 1801.68,
+      "text": "What you also will notice is the average return in cell L2 has changed to the average return for all positive returns."
+    },
+    {
+      "start": 1801.68,
+      "end": 1808.68,
+      "text": "So what we can do, because this keeps changing to our average return for whatever we display, whatever we filter,"
+    },
+    {
+      "start": 1808.68,
+      "end": 1823.68,
+      "text": "we'll copy this by right clicking on the cell, copy, and we'll paste it into N1 representing the average positive return as a value which is fixed and so won't change."
+    },
+    {
+      "start": 1823.68,
+      "end": 1834.68,
+      "text": "And we can do the same for negative, so we go to number filters in the returns column, less than zero, ok."
+    },
+    {
+      "start": 1834.68,
+      "end": 1846.68,
+      "text": "And now we've got the average negative return in L2, again we're going to copy that and we're going to paste it as a value into cell N2."
+    },
+    {
+      "start": 1846.68,
+      "end": 1854.68,
+      "text": "Ok, so what we can do now is calculate the number of days that the S&P 500 has been up and down"
+    },
+    {
+      "start": 1854.68,
+      "end": 1859.68,
+      "text": "and calculate that as a percentage of the total days that we've got in our data set as well."
+    },
+    {
+      "start": 1859.68,
+      "end": 1873.68,
+      "text": "So before we continue, we need to create a cell that can do a similar thing to this average return, but just for count, so it just counts the subset of return data."
+    },
+    {
+      "start": 1873.68,
+      "end": 1879.68,
+      "text": "Ok, so in, actually before we continue we'll just unfilter this returns column."
+    },
+    {
+      "start": 1879.68,
+      "end": 1898.68,
+      "text": "Ok, and then in cell T2 what we'll do is create a cell called count and then in U2 we'll type in the formula for typing the count of the subset of returns."
+    },
+    {
+      "start": 1898.68,
+      "end": 1908.68,
+      "text": "So that will be subtotal, similar to before, similar to the average return, brackets 2 this time for count, you can see that from the drop down menu here."
+    },
+    {
+      "start": 1908.68,
+      "end": 1919.68,
+      "text": "And then comma, the reference numbers which are the returns column, so that's H5, press control shift down, select the whole returns column, close the brackets, press enter."
+    },
+    {
+      "start": 1919.68,
+      "end": 1927.68,
+      "text": "Ok, so that's created the count for our subset of data, for our unfiltered data because we removed the filter beforehand."
+    },
+    {
+      "start": 1927.68,
+      "end": 1933.68,
+      "text": "And we can verify that because it's the same as our descriptive statistics count down here."
+    },
+    {
+      "start": 1933.68,
+      "end": 1937.68,
+      "text": "And this will change when we change our filter."
+    },
+    {
+      "start": 1937.68,
+      "end": 1944.68,
+      "text": "So, let's add another column to the top of the spreadsheet."
+    },
+    {
+      "start": 1944.68,
+      "end": 1950.68,
+      "text": "And type frequency into cell O1."
+    },
+    {
+      "start": 1950.68,
+      "end": 1958.68,
+      "text": "And frequency percent into P1."
+    },
+    {
+      "start": 1958.68,
+      "end": 1967.68,
+      "text": "And then, what we'll do is work out the number of days that the S&P 500 has been positive in our data set."
+    },
+    {
+      "start": 1967.68,
+      "end": 1973.68,
+      "text": "So let's filter the returns again to positive, number filters, greater than 0."
+    },
+    {
+      "start": 1973.68,
+      "end": 1975.68,
+      "text": "Ok."
+    },
+    {
+      "start": 1975.68,
+      "end": 1979.68,
+      "text": "This has changed the count to 6707."
+    },
+    {
+      "start": 1979.68,
+      "end": 1982.68,
+      "text": "So we just put in that, 6707."
+    },
+    {
+      "start": 1982.68,
+      "end": 1987.68,
+      "text": "You can copy and paste in with the values like I did before or just type it because it's quite easy this time."
+    },
+    {
+      "start": 1987.68,
+      "end": 1988.68,
+      "text": "Ok."
+    },
+    {
+      "start": 1988.68,
+      "end": 1993.68,
+      "text": "And the same for negative, so less than this time."
+    },
+    {
+      "start": 1993.68,
+      "end": 1994.68,
+      "text": "Less than 0."
+    },
+    {
+      "start": 1994.68,
+      "end": 1995.68,
+      "text": "Ok."
+    },
+    {
+      "start": 1995.68,
+      "end": 2000.68,
+      "text": "And this is 6006 days."
+    },
+    {
+      "start": 2000.68,
+      "end": 2006.68,
+      "text": "So obviously that's going to be missing some days because there will be some days that are 0."
+    },
+    {
+      "start": 2006.68,
+      "end": 2008.68,
+      "text": "So let's count those as well."
+    },
+    {
+      "start": 2008.68,
+      "end": 2021.68,
+      "text": "So in cell N4, we'll add 0 as a value and work out the frequency of that by filtering the returns column to equals 0."
+    },
+    {
+      "start": 2021.68,
+      "end": 2022.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2022.68,
+      "end": 2024.68,
+      "text": "And we've got a count of 90."
+    },
+    {
+      "start": 2024.68,
+      "end": 2028.68,
+      "text": "So we'll just put in 90 in cell O4."
+    },
+    {
+      "start": 2028.68,
+      "end": 2029.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2029.68,
+      "end": 2033.68,
+      "text": "So clear the filter from returns."
+    },
+    {
+      "start": 2033.68,
+      "end": 2041.68,
+      "text": "So as a percentage, to work out the percentage of a number of days that are positive, negative and 0."
+    },
+    {
+      "start": 2041.68,
+      "end": 2053.68,
+      "text": "So for positive in P2, we type equals O2 divided by U20."
+    },
+    {
+      "start": 2053.68,
+      "end": 2058.68,
+      "text": "So that is the number of positive days in our dataset divided by the total number of days."
+    },
+    {
+      "start": 2058.68,
+      "end": 2065.68,
+      "text": "And we'll fix cell U20 so we can copy down this formula again."
+    },
+    {
+      "start": 2065.68,
+      "end": 2066.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2066.68,
+      "end": 2068.68,
+      "text": "So we can copy this down."
+    },
+    {
+      "start": 2068.68,
+      "end": 2077.68,
+      "text": "And with this still selected, we'll right click within the selection format cells and change that percentage to a percentage with two decimal places."
+    },
+    {
+      "start": 2077.68,
+      "end": 2078.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2078.68,
+      "end": 2093.68,
+      "text": "So we can see now 52% of our days the S&P 500 has yielded positive return, 46.9, negative and almost or close to 1% it's flat."
+    },
+    {
+      "start": 2093.68,
+      "end": 2113.68,
+      "text": "So what we can do now is we're going to work out the average return if you were to predict when the S&P 500 is up and you go long on all those days."
+    },
+    {
+      "start": 2113.68,
+      "end": 2117.68,
+      "text": "You work out the average daily return that you'd get over this entire period."
+    },
+    {
+      "start": 2117.68,
+      "end": 2118.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2118.68,
+      "end": 2135.68,
+      "text": "So if we type average return and then in cell Q2 we type equals this average positive return times by the frequency."
+    },
+    {
+      "start": 2135.68,
+      "end": 2136.68,
+      "text": "Press enter and we do the same."
+    },
+    {
+      "start": 2136.68,
+      "end": 2140.68,
+      "text": "We can copy that down to the negative cell."
+    },
+    {
+      "start": 2140.68,
+      "end": 2147.68,
+      "text": "So we've got the average negative and average positive return."
+    },
+    {
+      "start": 2147.68,
+      "end": 2152.68,
+      "text": "Should you, so I'll explain that a little better."
+    },
+    {
+      "start": 2152.68,
+      "end": 2164.68,
+      "text": "So this cell Q2, this refers to the average positive daily return that you would get if you predicted all the days when the S&P 500 would be up and you invested in those."
+    },
+    {
+      "start": 2164.68,
+      "end": 2168.68,
+      "text": "And you were flat all the other days in this entire period."
+    },
+    {
+      "start": 2168.68,
+      "end": 2172.68,
+      "text": "Your average return per day would be this."
+    },
+    {
+      "start": 2172.68,
+      "end": 2174.68,
+      "text": "And the same for negative."
+    },
+    {
+      "start": 2174.68,
+      "end": 2175.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2175.68,
+      "end": 2179.68,
+      "text": "So let's just change all these to percentage values now."
+    },
+    {
+      "start": 2179.68,
+      "end": 2182.68,
+      "text": "So cell N2 and N3 select them."
+    },
+    {
+      "start": 2182.68,
+      "end": 2183.68,
+      "text": "Format cells."
+    },
+    {
+      "start": 2183.68,
+      "end": 2184.68,
+      "text": "Right click in the selection."
+    },
+    {
+      "start": 2184.68,
+      "end": 2185.68,
+      "text": "Format cells."
+    },
+    {
+      "start": 2185.68,
+      "end": 2186.68,
+      "text": "Change the percentage."
+    },
+    {
+      "start": 2186.68,
+      "end": 2187.68,
+      "text": "Two decimal places."
+    },
+    {
+      "start": 2187.68,
+      "end": 2192.68,
+      "text": "And the same for these average returns here."
+    },
+    {
+      "start": 2192.68,
+      "end": 2212.68,
+      "text": "So what this is telling us, these average returns are that even if you predict the positives and invest in only those days and go flat the rest of the time or don't invest the rest of the time, the margins, the profit margins you work with are still pretty small."
+    },
+    {
+      "start": 2212.68,
+      "end": 2213.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2213.68,
+      "end": 2227.68,
+      "text": "And because we're trading daily and these are our sort of average returns that we get daily even if we predicted it right, they're going to get wiped out by things like transaction costs."
+    },
+    {
+      "start": 2227.68,
+      "end": 2233.68,
+      "text": "They're not, it's almost not worth trading daily when you have this, when you have a normal amount of volatility."
+    },
+    {
+      "start": 2233.68,
+      "end": 2234.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2234.68,
+      "end": 2237.68,
+      "text": "So that's what these values here are telling us."
+    },
+    {
+      "start": 2237.68,
+      "end": 2250.68,
+      "text": "The final procedure that we're going to carry out on this spreadsheet is to find out how many trading days lie within different standard deviations of the mean in our data set."
+    },
+    {
+      "start": 2250.68,
+      "end": 2251.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2251.68,
+      "end": 2257.68,
+      "text": "So what we need to do is, in fact first we'll clear some space on the spreadsheet."
+    },
+    {
+      "start": 2257.68,
+      "end": 2262.68,
+      "text": "So if we just add another two columns into the spreadsheet."
+    },
+    {
+      "start": 2262.68,
+      "end": 2273.68,
+      "text": "And what we're going to do is calculate the standard deviation returns values for one, two and three standard deviations above and below the mean."
+    },
+    {
+      "start": 2273.68,
+      "end": 2274.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2274.68,
+      "end": 2275.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2275.68,
+      "end": 2289.68,
+      "text": "So in cell W2 type std dev standard deviation and one, two and three in x, two, y, two and z, two respectively."
+    },
+    {
+      "start": 2289.68,
+      "end": 2297.68,
+      "text": "And then upper that represents the one standard deviation, one, two and three standard deviations above the mean."
+    },
+    {
+      "start": 2297.68,
+      "end": 2303.68,
+      "text": "And then another row lower for one, two and three standard deviations below the mean."
+    },
+    {
+      "start": 2303.68,
+      "end": 2306.68,
+      "text": "So that was in cell W3 and cell W4."
+    },
+    {
+      "start": 2306.68,
+      "end": 2307.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2307.68,
+      "end": 2317.68,
+      "text": "So to work out these values, these return values, what we do, in cell X3 we'll type equals the mean."
+    },
+    {
+      "start": 2317.68,
+      "end": 2318.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2318.68,
+      "end": 2319.68,
+      "text": "So we always start with the mean."
+    },
+    {
+      "start": 2319.68,
+      "end": 2330.68,
+      "text": "And then for one standard deviation above the mean, because we're in the upper bound, we just plus the standard deviation."
+    },
+    {
+      "start": 2330.68,
+      "end": 2331.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2331.68,
+      "end": 2337.68,
+      "text": "And for the lower bound, we start with the mean and we minus one standard deviation."
+    },
+    {
+      "start": 2337.68,
+      "end": 2338.68,
+      "text": "Ok."
+    },
+    {
+      "start": 2338.68,
+      "end": 2344.68,
+      "text": "In the next column, we're applying that method to two standard deviations."
+    },
+    {
+      "start": 2344.68,
+      "end": 2350.68,
+      "text": "So we start with the mean and we add two times the standard deviation."
+    },
+    {
+      "start": 2350.68,
+      "end": 2359.68,
+      "text": "And for the lower bound, we start with the mean and we minus two times the standard deviation."
+    },
+    {
+      "start": 2359.68,
+      "end": 2363.68,
+      "text": "And the same for the last column."
+    },
+    {
+      "start": 2363.68,
+      "end": 2368.68,
+      "text": "So equals the mean plus three times the standard deviation."
+    },
+    {
+      "start": 2368.68,
+      "end": 2374.68,
+      "text": "And the mean minus three times the standard deviation."
+    },
+    {
+      "start": 2374.68,
+      "end": 2375.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2375.68,
+      "end": 2386.68,
+      "text": "So now we've got the returns values that represent one, two and three standard deviations above and below the mean."
+    },
+    {
+      "start": 2386.68,
+      "end": 2398.68,
+      "text": "So for now, we're going to keep these as decimal displays because we need to input them into our return filters."
+    },
+    {
+      "start": 2398.68,
+      "end": 2399.68,
+      "text": "Sorry."
+    },
+    {
+      "start": 2399.68,
+      "end": 2403.68,
+      "text": "Return filters over here in a minute."
+    },
+    {
+      "start": 2403.68,
+      "end": 2404.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2404.68,
+      "end": 2412.68,
+      "text": "So we're going to find how many trading days lie between yield returns between these values."
+    },
+    {
+      "start": 2412.68,
+      "end": 2413.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2413.68,
+      "end": 2424.68,
+      "text": "So we'll find out how many trading days in our empirical distribution lie between roughly that's plus one percent and minus one percent, which is one standard deviation."
+    },
+    {
+      "start": 2424.68,
+      "end": 2428.68,
+      "text": "And then we'll do the same for two standard deviations and three standard deviations."
+    },
+    {
+      "start": 2428.68,
+      "end": 2435.68,
+      "text": "And we'll compare it to how many days a normal distribution would give us with those standard deviations."
+    },
+    {
+      "start": 2435.68,
+      "end": 2436.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2436.68,
+      "end": 2445.68,
+      "text": "So in AB2, cell AB2, we'll type standard deviation again."
+    },
+    {
+      "start": 2445.68,
+      "end": 2449.68,
+      "text": "And this time one, two and three going down the column."
+    },
+    {
+      "start": 2449.68,
+      "end": 2451.68,
+      "text": "And then we type actual."
+    },
+    {
+      "start": 2451.68,
+      "end": 2461.68,
+      "text": "So this will be that column for the actual number of days in our empirical distribution that lie between these bounds for one, two and three standard deviations."
+    },
+    {
+      "start": 2461.68,
+      "end": 2462.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2462.68,
+      "end": 2466.68,
+      "text": "And we'll compare that to what a normal distribution would be."
+    },
+    {
+      "start": 2466.68,
+      "end": 2473.68,
+      "text": "And then we'll compare the percentage of these values as well."
+    },
+    {
+      "start": 2473.68,
+      "end": 2474.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2474.68,
+      "end": 2484.68,
+      "text": "So that's AC3 is actual, AD3 normal, AE3 actual percent, and AF3 normal percent."
+    },
+    {
+      "start": 2484.68,
+      "end": 2486.68,
+      "text": "So let's filter our returns column."
+    },
+    {
+      "start": 2486.68,
+      "end": 2489.68,
+      "text": "I'm just going to zoom out the spreadsheet a little bit."
+    },
+    {
+      "start": 2489.68,
+      "end": 2495.68,
+      "text": "Filter our returns column between these standard deviation returns values."
+    },
+    {
+      "start": 2495.68,
+      "end": 2509.68,
+      "text": "So if we click the filter on the returns column and we go to between, we want to give returns that are greater than or equal to our lower bound for one standard deviation."
+    },
+    {
+      "start": 2509.68,
+      "end": 2510.68,
+      "text": "So that's this value here."
+    },
+    {
+      "start": 2510.68,
+      "end": 2523.68,
+      "text": "So we can type in minus 0.00972 and less than our upper bound, which is 0.01031."
+    },
+    {
+      "start": 2523.68,
+      "end": 2524.68,
+      "text": "Press okay."
+    },
+    {
+      "start": 2524.68,
+      "end": 2525.68,
+      "text": "Filter that."
+    },
+    {
+      "start": 2525.68,
+      "end": 2530.68,
+      "text": "We see we've got 10,062 days that lie within those values."
+    },
+    {
+      "start": 2530.68,
+      "end": 2537.68,
+      "text": "So we just input that into cell AC3, 10,062."
+    },
+    {
+      "start": 2537.68,
+      "end": 2538.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2538.68,
+      "end": 2543.68,
+      "text": "And we do the same for the two standard deviations."
+    },
+    {
+      "start": 2543.68,
+      "end": 2545.68,
+      "text": "So filter between."
+    },
+    {
+      "start": 2545.68,
+      "end": 2550.68,
+      "text": "This time we're using these upper and lower bounds."
+    },
+    {
+      "start": 2550.68,
+      "end": 2560.68,
+      "text": "So below, sorry, greater than 0.01974 and less than 0.02032."
+    },
+    {
+      "start": 2560.68,
+      "end": 2562.68,
+      "text": "Filter."
+    },
+    {
+      "start": 2562.68,
+      "end": 2564.68,
+      "text": "So that's 12,208."
+    },
+    {
+      "start": 2564.68,
+      "end": 2566.68,
+      "text": "You can see that in cell U5."
+    },
+    {
+      "start": 2566.68,
+      "end": 2571.68,
+      "text": "That's the count that changes with our subset of returns."
+    },
+    {
+      "start": 2571.68,
+      "end": 2573.68,
+      "text": "So 12,208."
+    },
+    {
+      "start": 2573.68,
+      "end": 2580.68,
+      "text": "And we'll do the same for the three standard deviations."
+    },
+    {
+      "start": 2580.68,
+      "end": 2594.68,
+      "text": "Minus 0.02975 and 0.03033."
+    },
+    {
+      "start": 2594.68,
+      "end": 2601.68,
+      "text": "So we put that in here."
+    },
+    {
+      "start": 2601.68,
+      "end": 2602.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2602.68,
+      "end": 2608.68,
+      "text": "So let's go to the normal distribution now."
+    },
+    {
+      "start": 2608.68,
+      "end": 2613.68,
+      "text": "And we're going to start from what we know about our normal distribution is we know the"
+    },
+    {
+      "start": 2613.68,
+      "end": 2622.68,
+      "text": "percent of the frequencies, the percentage trading days that should lie between one standard deviation"
+    },
+    {
+      "start": 2622.68,
+      "end": 2624.68,
+      "text": "from the mean and two and three."
+    },
+    {
+      "start": 2624.68,
+      "end": 2625.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2625.68,
+      "end": 2637.68,
+      "text": "So in a normal distribution, 68.2 percent of trading days will lie within one standard deviation"
+    },
+    {
+      "start": 2637.68,
+      "end": 2639.68,
+      "text": "from the mean."
+    },
+    {
+      "start": 2639.68,
+      "end": 2644.68,
+      "text": "95.4 percent of trading days will lie within two standard deviations from the mean in terms"
+    },
+    {
+      "start": 2644.68,
+      "end": 2647.68,
+      "text": "of their returns."
+    },
+    {
+      "start": 2647.68,
+      "end": 2656.68,
+      "text": "And within three standard deviations from the mean, 99.8 percent of trading days will occur."
+    },
+    {
+      "start": 2656.68,
+      "end": 2657.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2657.68,
+      "end": 2663.68,
+      "text": "So let's fill out the actual number of days given our total count."
+    },
+    {
+      "start": 2663.68,
+      "end": 2665.68,
+      "text": "12,803 days in our data set."
+    },
+    {
+      "start": 2665.68,
+      "end": 2675.68,
+      "text": "We can work out the normal number of days that is the number of days predicted by a normal distribution"
+    },
+    {
+      "start": 2675.68,
+      "end": 2677.68,
+      "text": "that would lie within one, two and three standard deviations."
+    },
+    {
+      "start": 2677.68,
+      "end": 2687.68,
+      "text": "So that's just in AD3 we type equals the percent that would lie within one standard deviation times the count."
+    },
+    {
+      "start": 2687.68,
+      "end": 2691.68,
+      "text": "And we'll fix the count cell."
+    },
+    {
+      "start": 2691.68,
+      "end": 2694.68,
+      "text": "Press F4 around U22."
+    },
+    {
+      "start": 2694.68,
+      "end": 2697.68,
+      "text": "And then we can apply this down."
+    },
+    {
+      "start": 2697.68,
+      "end": 2708.68,
+      "text": "And we can see that we've got 12,777 days that a normal distribution predicts will lie within three standard deviations from the mean."
+    },
+    {
+      "start": 2708.68,
+      "end": 2709.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2709.68,
+      "end": 2712.68,
+      "text": "Given a data set of 12,803 days."
+    },
+    {
+      "start": 2712.68,
+      "end": 2717.68,
+      "text": "So let's just convert these actual days to percent as well."
+    },
+    {
+      "start": 2717.68,
+      "end": 2726.68,
+      "text": "So this is the actual number of days within each standard deviation from the mean divided by the count."
+    },
+    {
+      "start": 2726.68,
+      "end": 2727.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2727.68,
+      "end": 2729.68,
+      "text": "So AC3 divided by the count."
+    },
+    {
+      "start": 2729.68,
+      "end": 2732.68,
+      "text": "We'll fix this cell again as a reference so we can copy it down."
+    },
+    {
+      "start": 2732.68,
+      "end": 2734.68,
+      "text": "Copy this down."
+    },
+    {
+      "start": 2734.68,
+      "end": 2737.68,
+      "text": "And with that still selected we'll format these cells as well."
+    },
+    {
+      "start": 2737.68,
+      "end": 2740.68,
+      "text": "I'll display them in a percentage."
+    },
+    {
+      "start": 2740.68,
+      "end": 2741.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2741.68,
+      "end": 2742.68,
+      "text": "So."
+    },
+    {
+      "start": 2742.68,
+      "end": 2757.68,
+      "text": "I think before we interpret these last results let's select the cells X3 to Z4 and change all these standard deviations to in terms of percent as well."
+    },
+    {
+      "start": 2757.68,
+      "end": 2759.68,
+      "text": "With two decimal places is fine."
+    },
+    {
+      "start": 2759.68,
+      "end": 2760.68,
+      "text": "Right."
+    },
+    {
+      "start": 2760.68,
+      "end": 2761.68,
+      "text": "So."
+    },
+    {
+      "start": 2761.68,
+      "end": 2762.68,
+      "text": "Let's do these first."
+    },
+    {
+      "start": 2762.68,
+      "end": 2763.68,
+      "text": "So."
+    },
+    {
+      "start": 2763.68,
+      "end": 2764.68,
+      "text": "Our standard deviations."
+    },
+    {
+      "start": 2764.68,
+      "end": 2771.68,
+      "text": "One standard deviation from the mean represents roughly an upper bound of one percent and a lower bound of minus one percent."
+    },
+    {
+      "start": 2771.68,
+      "end": 2772.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2772.68,
+      "end": 2775.68,
+      "text": "Which means two standard deviations will be roughly that."
+    },
+    {
+      "start": 2775.68,
+      "end": 2776.68,
+      "text": "Roughly two."
+    },
+    {
+      "start": 2776.68,
+      "end": 2777.68,
+      "text": "Times that."
+    },
+    {
+      "start": 2777.68,
+      "end": 2778.68,
+      "text": "And three."
+    },
+    {
+      "start": 2778.68,
+      "end": 2779.68,
+      "text": "Three times that."
+    },
+    {
+      "start": 2779.68,
+      "end": 2780.68,
+      "text": "So."
+    },
+    {
+      "start": 2780.68,
+      "end": 2786.68,
+      "text": "In terms of where these standard deviation values lie on this histogram."
+    },
+    {
+      "start": 2786.68,
+      "end": 2792.68,
+      "text": "We're looking at an upper bound of one percent and a lower bound of minus one percent."
+    },
+    {
+      "start": 2792.68,
+      "end": 2799.68,
+      "text": "So we're looking at from this bar here to this bar here is one standard deviation."
+    },
+    {
+      "start": 2799.68,
+      "end": 2800.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2800.68,
+      "end": 2806.68,
+      "text": "Which in our empirical distribution accounts for almost 80 percent of our data."
+    },
+    {
+      "start": 2806.68,
+      "end": 2811.68,
+      "text": "Whereas in a normal distribution it's something like 60, 68, ten percent lower."
+    },
+    {
+      "start": 2811.68,
+      "end": 2820.68,
+      "text": "This means that our empirical distribution there's many more trading days that lie closer to the mean."
+    },
+    {
+      "start": 2820.68,
+      "end": 2821.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2821.68,
+      "end": 2823.68,
+      "text": "Which is close to zero as well."
+    },
+    {
+      "start": 2823.68,
+      "end": 2826.68,
+      "text": "We should point out it's close to zero."
+    },
+    {
+      "start": 2826.68,
+      "end": 2828.68,
+      "text": "So that means our distribution is more peaked."
+    },
+    {
+      "start": 2828.68,
+      "end": 2832.68,
+      "text": "Which is predicted by our kurtosis value that we discussed earlier."
+    },
+    {
+      "start": 2832.68,
+      "end": 2834.68,
+      "text": "It's more peaked than a normal distribution."
+    },
+    {
+      "start": 2835.68,
+      "end": 2836.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2836.68,
+      "end": 2843.68,
+      "text": "And as we go further out and we look at the standard deviations that are deeper into the tails of the distribution."
+    },
+    {
+      "start": 2843.68,
+      "end": 2850.68,
+      "text": "We can see that instead of our empirical distribution accounting for more than the normal distribution."
+    },
+    {
+      "start": 2850.68,
+      "end": 2852.68,
+      "text": "It starts accounting for less."
+    },
+    {
+      "start": 2852.68,
+      "end": 2859.68,
+      "text": "By the time we get to three standard deviations our empirical distribution accounts for 98.7."
+    },
+    {
+      "start": 2859.68,
+      "end": 2862.68,
+      "text": "Whereas the normal distribution accounts for a percent more."
+    },
+    {
+      "start": 2862.68,
+      "end": 2868.68,
+      "text": "As you go further and further out this difference will be more significant."
+    },
+    {
+      "start": 2868.68,
+      "end": 2876.68,
+      "text": "So basically what we're saying is our empirical asset distributions tend to have fatter tails."
+    },
+    {
+      "start": 2876.68,
+      "end": 2879.68,
+      "text": "More extreme movements than predicted by normality."
+    },
+    {
+      "start": 2879.68,
+      "end": 2880.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2880.68,
+      "end": 2884.68,
+      "text": "So what does this all mean?"
+    },
+    {
+      "start": 2884.68,
+      "end": 2885.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2885.68,
+      "end": 2887.68,
+      "text": "So two key things."
+    },
+    {
+      "start": 2887.68,
+      "end": 2888.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2888.68,
+      "end": 2889.68,
+      "text": "First thing."
+    },
+    {
+      "start": 2889.68,
+      "end": 2901.68,
+      "text": "The fact that 80% of the time the S&P barely moves makes it a lot harder to generate returns."
+    },
+    {
+      "start": 2901.68,
+      "end": 2902.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2902.68,
+      "end": 2904.68,
+      "text": "Especially when you account for transaction costs."
+    },
+    {
+      "start": 2904.68,
+      "end": 2910.68,
+      "text": "It means that our opportunities are minimal when we're looking at daily trading."
+    },
+    {
+      "start": 2910.68,
+      "end": 2913.68,
+      "text": "Especially when the volatility's are low."
+    },
+    {
+      "start": 2913.68,
+      "end": 2914.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2914.68,
+      "end": 2918.68,
+      "text": "And that's given by these average returns that we looked at over here as well."
+    },
+    {
+      "start": 2918.68,
+      "end": 2919.68,
+      "text": "The second thing is."
+    },
+    {
+      "start": 2919.68,
+      "end": 2921.68,
+      "text": "Just something to be aware of."
+    },
+    {
+      "start": 2921.68,
+      "end": 2930.68,
+      "text": "Is that by analyzing this distribution of returns we can understand that there are greater risks in the tails."
+    },
+    {
+      "start": 2930.68,
+      "end": 2931.68,
+      "text": "In the extremities of the distribution."
+    },
+    {
+      "start": 2931.68,
+      "end": 2937.68,
+      "text": "So they're actually more probable than you might think."
+    },
+    {
+      "start": 2937.68,
+      "end": 2938.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2938.68,
+      "end": 2944.68,
+      "text": "So that means there are likely to be days when you'd be wiped out of your position."
+    },
+    {
+      "start": 2944.68,
+      "end": 2945.68,
+      "text": "Of your account."
+    },
+    {
+      "start": 2945.68,
+      "end": 2946.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2946.68,
+      "end": 2958.68,
+      "text": "So roughly one in a hundred days we've got a fairly significant move of more than 3%."
+    },
+    {
+      "start": 2958.68,
+      "end": 2965.68,
+      "text": "Which could wipe you out if you've got the position on the wrong way."
+    },
+    {
+      "start": 2965.68,
+      "end": 2966.68,
+      "text": "Okay."
+    },
+    {
+      "start": 2966.68,
+      "end": 2968.68,
+      "text": "So they're the two major things."
+    },
+    {
+      "start": 2968.68,
+      "end": 2976.68,
+      "text": "So the key thing we need to understand is that this basically implies that opportunities are minimal when there's low volatility."
+    },
+    {
+      "start": 2976.68,
+      "end": 2984.68,
+      "text": "The other thing just to keep in the back of your mind is that there is greater risk than predicted by normal distributions."
+    },
+    {
+      "start": 2984.68,
+      "end": 2996.68,
+      "text": "And we should also point out that this spreadsheet, you can apply this method to any asset over any period, any frequency."
+    },
+    {
+      "start": 2996.68,
+      "end": 2999.68,
+      "text": "So one week, like weekly, monthly, yearly data."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

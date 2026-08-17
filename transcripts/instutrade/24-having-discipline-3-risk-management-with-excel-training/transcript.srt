@@ -1,0 +1,1319 @@
+1
+00:00:00,000 --> 00:00:29,980
+Okay, welcome back. Welcome to video
+number 24, where Chris is going to show
+you on the computer how you can actually
+calculate your own beta as long as you can
+get the data. Now, there's a couple of
+things here. The only reason why you would
+actually go and calculate your own beta is
+really because you can't get the beta,
+
+2
+00:00:29,980 --> 00:00:59,960
+number anywhere else. There's a lot of
+online resources where you can actually
+get beta. So go onto all of the typical
+financial websites and you'll see that
+you'll get beta values for most stocks on
+most websites. What you'll typically see
+is the three year beta. The problem with
+going on these websites sometimes is that
+you don't actually know the length of time
+that you're looking at in terms of beta.
+
+3
+00:00:59,960 --> 00:01:29,940
+The download section, the one that you're
+looking at in all of the spreadsheets, the
+beta that you're looking at there is the
+five year rolling beta, which is from a
+company in the United States called Value
+Line. Now, if you have a beta of that
+length of time, five years, it's very,
+very unlikely that over short spaces of
+time, the beta is going to change a great
+deal.
+
+4
+00:01:29,940 --> 00:01:36,940
+So, if you're going to change the
+spreadsheets and use these spreadsheets
+and use these online resources, you don't
+really have to change your beta too often.
+If you're going to use the online
+resources and download them. And if you're
+using five year or three year beta, but if
+you're using very short term beta,
+obviously you're going to have to update
+this a lot more often.
+
+5
+00:01:36,940 --> 00:01:41,940
+So, if you're using three month, six month
+or one year beta, then you are going to
+have to update them. But I wouldn't worry
+about it too much. If you're using three
+and five year, you can update these every
+six to 12 months.
+
+6
+00:01:41,940 --> 00:01:48,940
+Now, the other thing with beta, when
+you're calculating your beta, when you're
+calculating your own beta, you can update
+these every six to 12 months.
+
+7
+00:01:48,940 --> 00:01:55,940
+Now, the other thing with beta, when
+you're calculating your own beta is that
+it's actually a step further from really
+what a retail trader should massively do.
+
+8
+00:01:55,940 --> 00:02:04,940
+be worrying about because what you really
+should be worrying about is the positions
+that you've got on.
+
+9
+00:02:04,940 --> 00:02:19,940
+Now the other thing with beta, when you're
+calculating your own beta, is that it's
+actually a step further from really what a
+retail trader should massively be worrying
+about.
+
+10
+00:02:19,940 --> 00:02:29,940
+Because what you really should be worrying
+about is the positions that you've got on
+and having the correct positions. That's
+first and foremost.
+
+11
+00:02:29,940 --> 00:02:39,940
+This really comes secondary and one of the
+reasons why we're showing you this is
+because a lot of people will have the
+objective of working in the industry one
+day.
+
+12
+00:02:39,940 --> 00:02:43,940
+So either working for a hedge fund or
+working at an investment bank.
+
+13
+00:02:43,940 --> 00:02:50,940
+This is another thing that you'd be
+expected to know and understand and be
+able to calculate if you were going into
+the industry.
+
+14
+00:02:50,940 --> 00:02:58,940
+From a retail trader perspective, if you
+can actually just get the beta, and
+because beta isn't a perfect measure
+anyway.
+
+15
+00:02:58,940 --> 00:03:10,940
+If you can get the beta and you're trying
+to hedge out market risk as accurately as
+possible, but we all know that it can't be
+100% accurate.
+
+16
+00:03:10,940 --> 00:03:17,940
+Because relying on beta or relying on it
+to be 100% accurate doesn't really work.
+
+17
+00:03:17,940 --> 00:03:26,940
+Beta is just a measure that we use in an
+attempt to try and hedge out market risk
+as best as we possibly can.
+
+18
+00:03:26,940 --> 00:03:32,940
+And beta can change. But if you use it
+over long enough time periods, it should
+be fairly accurate.
+
+19
+00:03:32,940 --> 00:03:41,940
+So don't worry about it too much if you're
+watching Chris on the computer and you
+think it's a bit too advanced for you.
+
+20
+00:03:41,940 --> 00:03:49,940
+If you can get the beta numbers, that's
+fine. If your objective is to work in the
+industry one day, then this is something
+you'll have to learn.
+
+21
+00:03:49,940 --> 00:03:54,940
+So let's go over to the computer screen.
+Chris is going to show you how to do it.
+
+22
+00:03:54,940 --> 00:04:00,940
+You've got the downloads with five year
+rolling beta in the download section for
+beta.
+
+23
+00:04:00,940 --> 00:04:07,940
+And you can actually go and get this
+number on decent websites anywhere online.
+
+24
+00:04:07,940 --> 00:04:11,940
+So let's go over to the presentation.
+Chris will show you how to do it.
+
+25
+00:04:11,940 --> 00:04:19,940
+And I'll see you at the end of the video
+with a summary of everything that we've
+learned so far.
+
+26
+00:04:19,940 --> 00:04:32,940
+Okay, so now Chris is going to show you
+how you can calculate your own beta in
+case you can't actually get beta publicly
+from the websites that we usually look at.
+
+27
+00:04:32,940 --> 00:04:36,940
+Or you think the beta data is unreliable.
+
+28
+00:04:36,940 --> 00:04:42,940
+So we're going to use a very well known
+stock in the United States and Chris is
+going to show you how to do that now.
+
+29
+00:04:42,940 --> 00:04:45,940
+So let's calculate the beta. Take it away,
+Chris.
+
+30
+00:04:58,940 --> 00:05:04,940
+In this video, I'm going to talk you
+through how you can calculate your own
+beta value using Excel.
+
+31
+00:05:04,940 --> 00:05:12,940
+So beta value is just a statistical
+measure of the sensitivity of a stock to
+the market.
+
+32
+00:05:12,940 --> 00:05:23,940
+And by market, what we typically mean as
+industry practice to use the index in
+which the stock that we're looking at is
+listed in.
+
+33
+00:05:23,940 --> 00:05:32,940
+So in this example, we're going to use
+Heinz as our stock, a consumer staple
+stock that we'd expect to have low
+sensitivity to the market.
+
+34
+00:05:32,940 --> 00:05:42,940
+And we will see how its returns correlate
+with the S&P 500, which is the index in
+which it's listed in.
+
+35
+00:05:42,940 --> 00:05:48,940
+And from that, we can obtain its
+sensitivity, which is its beta value.
+
+36
+00:05:48,940 --> 00:05:53,940
+So let's go ahead and get started.
+
+37
+00:05:53,940 --> 00:05:56,940
+The first thing we need to do is gather
+our data.
+
+38
+00:05:56,940 --> 00:06:09,940
+So if we go to Yahoo Finance and in the
+ticker box, the enter symbol box in the
+top left, we type HNZ for Heinz.
+
+39
+00:06:09,940 --> 00:06:19,940
+And select Heinz Company.
+
+40
+00:06:19,940 --> 00:06:23,940
+And then on the left hand side, navigate
+to historical prices.
+
+41
+00:06:23,940 --> 00:06:33,940
+Now we're going to calculate a three year
+beta, which is quite typical on websites
+such as Bloomberg and other financial
+websites.
+
+42
+00:06:33,940 --> 00:06:37,940
+They typically give you around a three to
+five year rolling beta.
+
+43
+00:06:37,940 --> 00:06:51,940
+So we'll obtain our data from the 3rd of
+March 2010 to the 3rd of March 2013.
+
+44
+00:06:51,940 --> 00:06:55,940
+And we'll get it on a weekly basis.
+
+45
+00:06:55,940 --> 00:06:58,940
+Update the table by clicking Get Prices.
+
+46
+00:06:58,940 --> 00:07:03,940
+Scroll to the bottom of the web page and
+click Download to Spreadsheet.
+
+47
+00:07:03,940 --> 00:07:13,940
+And at this point you can save this file
+on your hard drive or you can go ahead and
+open the Excel spreadsheet straight away
+as we're going to do and then save it once
+you're in it.
+
+48
+00:07:13,940 --> 00:07:31,940
+Okay, so we'll just go to File, Save As,
+Save it on Desktop, Save as HNZ Beta, Save
+it as an Excel workbook.
+
+49
+00:07:31,940 --> 00:07:33,940
+That's fine.
+
+50
+00:07:33,940 --> 00:07:39,940
+So the first thing we'll do in this
+spreadsheet is just adjust the Dates
+column so we can see all the dates.
+
+51
+00:07:39,940 --> 00:07:55,940
+Okay, so to calculate beta we also need
+the price data from the S&P 500 so we can
+create returns columns for both HNZ and
+the S&P 500 and see how they're
+correlated.
+
+52
+00:07:55,940 --> 00:08:07,940
+So if we go back to Yahoo Finance and type
+in S&P and select the S&P 500 from the
+drop down list and again go to Historical
+Prices.
+
+53
+00:08:07,940 --> 00:08:16,940
+And we need to make sure that we select
+the data between the same range and with
+the same frequency as we did before.
+
+54
+00:08:16,940 --> 00:08:26,940
+So that was March the 3rd, 2010 to March
+the 3rd, 2013 on a weekly basis.
+
+55
+00:08:26,940 --> 00:08:29,940
+Make sure you update the table by clicking
+Get Prices.
+
+56
+00:08:29,940 --> 00:08:33,940
+Scroll to the bottom of the web page and
+click Download to Spreadsheet again.
+
+57
+00:08:33,940 --> 00:08:36,940
+And we'll just go ahead and open this
+spreadsheet.
+
+58
+00:08:36,940 --> 00:08:40,940
+You don't need to save this file.
+
+59
+00:08:40,940 --> 00:08:55,940
+Okay, so now we've got our original sheet
+which is the HNZ price values and this is
+our S&P 500 prices.
+
+60
+00:08:55,940 --> 00:09:06,940
+So if we go back to the HNZ sheet and what
+we're going to do is get rid of all these
+columns of data that we don't need to
+calculate returns and our beta value.
+
+61
+00:09:06,940 --> 00:09:12,940
+So what we'll do is just leave the close
+column and the date column.
+
+62
+00:09:12,940 --> 00:09:18,940
+So if we select column B and hold CTRL and
+select C, D, F and G.
+
+63
+00:09:18,940 --> 00:09:22,940
+So that will select the open high, low,
+volume and adjusted close.
+
+64
+00:09:22,940 --> 00:09:25,940
+And then right click within the selection
+and press delete.
+
+65
+00:09:25,940 --> 00:09:32,940
+And that will leave us just with the date
+in column A and closing prices of HNZ in
+column B.
+
+66
+00:09:32,940 --> 00:09:42,940
+And the next thing we want to do is import
+the S&P 500 closing prices into this
+spreadsheet, into column C.
+
+67
+00:09:42,940 --> 00:09:54,940
+So what we do is go back to the S&P 500
+spreadsheet and we select column E and we
+just press CTRL C once that's selected to
+copy.
+
+68
+00:09:54,940 --> 00:10:01,940
+And then back in the HNZ spreadsheet go to
+cell C1 and press CTRL V to paste.
+
+69
+00:10:01,940 --> 00:10:02,940
+Okay.
+
+70
+00:10:02,940 --> 00:10:18,940
+So to make this a little bit clearer what
+we'll do is rename column B and C instead
+of just close we'll rename them to their
+appropriate asset names.
+
+71
+00:10:18,940 --> 00:10:45,940
+So in B1, cell B1 we'll rename that as HNZ
+price and in, actually to make this
+consistent, price brackets HNZ and in C1
+price brackets S&P.
+
+72
+00:10:45,940 --> 00:10:53,940
+And adjust the columns as necessary, the
+widths so we can fit all that in.
+
+73
+00:10:53,940 --> 00:10:54,940
+Okay.
+
+74
+00:10:54,940 --> 00:11:00,940
+So in column D what we'll do is create the
+returns for HNZ over this period.
+
+75
+00:11:00,940 --> 00:11:05,940
+So let's head up that column in D1.
+
+76
+00:11:05,940 --> 00:11:08,940
+Actually we'll do it in column E.
+
+77
+00:11:08,940 --> 00:11:16,940
+In E1 we'll put returns brackets HNZ,
+adjust the column.
+
+78
+00:11:16,940 --> 00:11:25,940
+And in F we'll do something similar but
+with the S&P so we type in returns S&P
+into that cell.
+
+79
+00:11:25,940 --> 00:11:31,940
+Now, we need to use the returns formula in
+cell E2 and F2.
+
+80
+00:11:31,940 --> 00:11:44,940
+So in E2, it's the closing price of the
+current day minus the closing price of the
+previous day divided by the closing price
+of the previous day.
+
+81
+00:11:44,940 --> 00:11:46,940
+And that gives us our return.
+
+82
+00:11:46,940 --> 00:11:52,940
+And we can copy that formula down easily
+by navigating to the bottom of the
+spreadsheet.
+
+83
+00:11:52,940 --> 00:12:00,940
+If we click on this data in column A, B
+and C, we can press CTRL and down to go
+down to the bottom of that data quickly.
+
+84
+00:12:00,940 --> 00:12:12,940
+We'll go across to column E and press CTRL
+and up to select all the cells that we
+want to copy down the formula in cell E2
+down to.
+
+85
+00:12:12,940 --> 00:12:14,940
+So we've got all those cells selected.
+
+86
+00:12:14,940 --> 00:12:19,940
+We just press CTRL and that copies all of
+the returns down.
+
+87
+00:12:19,940 --> 00:12:22,940
+And we'll do the same thing for the S&P.
+
+88
+00:12:22,940 --> 00:12:34,940
+So, equals the closing price today minus
+the closing price yesterday divided by the
+closing price yesterday gives us the
+returns today.
+
+89
+00:12:34,940 --> 00:12:38,940
+And the same thing, we'll navigate to the
+bottom of the spreadsheet.
+
+90
+00:12:38,940 --> 00:12:43,940
+CTRL and shift up to select all cells and
+CTRL and D to copy all of that down.
+
+91
+00:12:43,940 --> 00:12:50,940
+So, if we just go down to the bottom of
+the spreadsheet, what we'll see is there's
+two cells there at the bottom that have
+got errors.
+
+92
+00:12:50,940 --> 00:12:55,940
+This is because our returns formula
+requires price data from a previous day.
+
+93
+00:12:55,940 --> 00:12:58,940
+And obviously in the bottom row, there is
+no previous day.
+
+94
+00:12:58,940 --> 00:13:00,940
+So, that's giving us an error.
+
+95
+00:13:00,940 --> 00:13:05,940
+So, what we do is we just delete those two
+cells by selecting them and pressing
+delete on the keyboard.
+
+96
+00:13:07,940 --> 00:13:11,940
+Okay, so, now we've got our returns.
+
+97
+00:13:11,940 --> 00:13:21,940
+We'll just actually make this look a bit
+better by selecting all our returns in the
+Hines and S&P column.
+
+98
+00:13:21,940 --> 00:13:26,940
+So, I used CTRL, SHIFT starting from cell
+E2.
+
+99
+00:13:26,940 --> 00:13:31,940
+I used CTRL, SHIFT, right arrow and down
+arrow to select all that quickly.
+
+100
+00:13:31,940 --> 00:13:35,940
+With all that selected, right click inside
+the selection.
+
+101
+00:13:35,940 --> 00:13:37,940
+Go to format cells.
+
+102
+00:13:37,940 --> 00:13:43,940
+And we're going to change the number
+category to percentage.
+
+103
+00:13:43,940 --> 00:13:45,940
+Two decimal places is fine.
+
+104
+00:13:45,940 --> 00:13:48,940
+Okay.
+
+105
+00:13:48,940 --> 00:13:52,940
+So, in the next step, we're going to
+calculate beta.
+
+106
+00:13:52,940 --> 00:14:01,940
+To do this, we need to use the data
+analysis tool, which is located in the
+data tab on the right hand side, over
+here.
+
+107
+00:14:01,940 --> 00:14:10,940
+If you don't already have that there
+installed on your Excel, you'll have to
+install it manually using a plugin called
+analysis tool pack.
+
+108
+00:14:10,940 --> 00:14:14,940
+And there's a guide on how you do that in
+the accompanying PDF.
+
+109
+00:14:14,940 --> 00:14:18,940
+So, let's just go ahead and click data
+analysis.
+
+110
+00:14:18,940 --> 00:14:21,940
+And we go to regression.
+
+111
+00:14:21,940 --> 00:14:25,940
+Select regression, press ok.
+
+112
+00:14:25,940 --> 00:14:36,940
+So, regression is just a statistical
+procedure that we use to measure how well
+certain variables in a model can explain
+another variable that we're testing.
+
+113
+00:14:36,940 --> 00:14:44,940
+So, that also allows us to gain
+sensitivity measures of each of these
+variables.
+
+114
+00:14:44,940 --> 00:14:46,940
+And that's essentially what beta is.
+
+115
+00:14:46,940 --> 00:14:51,940
+So, to perhaps put that to make a bit more
+sense in what we're actually doing here.
+
+116
+00:14:51,940 --> 00:14:55,940
+We're testing Heinz.
+
+117
+00:14:55,940 --> 00:14:56,940
+Heinz is our variable.
+
+118
+00:14:56,940 --> 00:15:00,940
+And we're testing it with a model of the
+S&P.
+
+119
+00:15:00,940 --> 00:15:06,940
+So, we're testing how well the returns in
+the S&P explain the returns in Heinz.
+
+120
+00:15:06,940 --> 00:15:21,940
+And by comparing those, by modelling that,
+it will show us the coefficient, which is
+the sensitivity of the S&P 500.
+
+121
+00:15:21,940 --> 00:15:31,940
+Sorry, it will give us a coefficient of
+the S&P 500 that shows us the sensitivity
+of Heinz to the S&P 500.
+
+122
+00:15:31,940 --> 00:15:33,940
+Ok, so let's just continue.
+
+123
+00:15:33,940 --> 00:15:38,940
+If you want to know a bit more about
+regression, it is explained a little bit
+more in the accompanying PDF.
+
+124
+00:15:38,940 --> 00:15:42,940
+And also, there's plenty of resources
+online that you can look at as well.
+
+125
+00:15:42,940 --> 00:15:45,940
+But let's just go ahead and start.
+
+126
+00:15:45,940 --> 00:15:50,940
+So, our Y input range is our Heinz return.
+
+127
+00:15:50,940 --> 00:15:56,940
+So, in the Y input range box, we'll click
+cell E2 and press CTRL-SHIFT and down.
+
+128
+00:15:56,940 --> 00:15:59,940
+And that will select all the Heinz
+returns.
+
+129
+00:15:59,940 --> 00:16:05,940
+And then we click into the X input range
+box and do the same for the S&P.
+
+130
+00:16:05,940 --> 00:16:10,940
+So, we click F2, cell F2, CTRL-SHIFT down
+to select all of those cells.
+
+131
+00:16:10,940 --> 00:16:19,940
+And we want to display our regression in
+this spreadsheet.
+
+132
+00:16:19,940 --> 00:16:25,940
+So, we change the output range from a new
+worksheet to output range.
+
+133
+00:16:25,940 --> 00:16:31,940
+And be careful, because this throws our
+selection back up to the Y input range,
+which we've already selected.
+
+134
+00:16:31,940 --> 00:16:32,940
+And we don't want to edit that.
+
+135
+00:16:32,940 --> 00:16:37,940
+So, make sure you click off into the
+output range box.
+
+136
+00:16:37,940 --> 00:16:41,940
+And we're going to display this in cell
+I2.
+
+137
+00:16:41,940 --> 00:16:50,940
+And just before we press OK and display
+our regression, we need to make sure that
+we click the line fit plots box down here.
+
+138
+00:16:50,940 --> 00:16:54,940
+Which will show us a graphical
+interpretation of our regression.
+
+139
+00:16:54,940 --> 00:16:59,940
+So, just select that and press OK.
+
+140
+00:17:03,940 --> 00:17:18,940
+OK, so just before we edit this data a
+bit, let's just, or just before we look at
+this data and I explain it a bit more,
+let's just edit these columns so that they
+show all this data properly.
+
+141
+00:17:18,940 --> 00:17:23,940
+So, with all that still selected, we'll
+just go to home on the ribbon.
+
+142
+00:17:23,940 --> 00:17:29,940
+And then format and then auto fit column
+width.
+
+143
+00:17:29,940 --> 00:17:32,940
+And that allows us to see all this data a
+little bit more easily.
+
+144
+00:17:34,940 --> 00:17:42,940
+And now we'll edit the graph before I
+finish up by summarising what we're
+actually looking at here.
+
+145
+00:17:43,940 --> 00:17:48,940
+So, just make the graph bigger by clicking
+and dragging the bottom right of the
+graph.
+
+146
+00:17:49,940 --> 00:17:50,940
+OK.
+
+147
+00:17:51,940 --> 00:17:53,940
+So, there's a few things we need to do
+here.
+
+148
+00:17:53,940 --> 00:17:55,940
+The first thing, we'll edit the name of
+the graph.
+
+149
+00:17:55,940 --> 00:18:03,940
+So, instead of x variable one line fit
+plot, we'll call this Heinz beta.
+
+150
+00:18:05,940 --> 00:18:11,940
+We don't need these labels here on the
+right hand side, so we just select them
+and press delete.
+
+151
+00:18:12,940 --> 00:18:17,940
+We want to be able to see our graph a
+little better.
+
+152
+00:18:17,940 --> 00:18:28,940
+So, all these dots here, what you can do
+is edit the size of these dots so they
+aren't quite as intrusive and they don't
+cluster quite so much, or they don't
+appear to cluster as much.
+
+153
+00:18:28,940 --> 00:18:48,940
+So, if we just select one of the blue
+dots, and actually click off again, and if
+we just double click one of the blue dots,
+and go to marker options, and change the
+marker type to built in.
+
+154
+00:18:48,940 --> 00:18:49,940
+Reduce this to size 4.
+
+155
+00:18:49,940 --> 00:18:49,940
+So we can see a little bit more about what
+we're dealing with.
+
+156
+00:18:49,940 --> 00:18:49,940
+Right, so the last thing to do, we'll
+rename the axis labels.
+
+157
+00:18:49,940 --> 00:18:49,940
+So we can see a little bit more about what
+we're dealing with.
+
+158
+00:18:49,940 --> 00:18:50,940
+Right, so the last thing to do, we'll
+rename the axis labels.
+
+159
+00:18:50,940 --> 00:18:51,940
+The axis labels.
+
+160
+00:18:51,940 --> 00:18:52,940
+So first, the axis labels.
+
+161
+00:18:52,940 --> 00:18:53,940
+Reduce the size so we can see them all a
+little bit better.
+
+162
+00:18:53,940 --> 00:18:55,940
+Reduce it to 4.
+
+163
+00:18:55,940 --> 00:18:57,940
+And do the same for the red dots.
+
+164
+00:18:57,940 --> 00:19:02,940
+So click off, and then double click one of
+the red dots.
+
+165
+00:19:02,940 --> 00:19:03,940
+Marker options.
+
+166
+00:19:03,940 --> 00:19:04,940
+Built in.
+
+167
+00:19:04,940 --> 00:19:06,940
+Reduce this to size 4.
+
+168
+00:19:06,940 --> 00:19:10,940
+Okay, so we can see a little bit more
+about what we're dealing with.
+
+169
+00:19:10,940 --> 00:19:18,940
+Right, so the last thing to do, we'll
+rename the axis labels.
+
+170
+00:19:18,940 --> 00:19:25,940
+So first, the x-axis is the S&P 500.
+
+171
+00:19:25,940 --> 00:19:30,940
+And the y-axis is Heinz.
+
+172
+00:19:30,940 --> 00:19:37,940
+Okay, and we'll move these by clicking and
+dragging those labels.
+
+173
+00:19:37,940 --> 00:19:40,940
+So it makes a bit more sense.
+
+174
+00:19:40,940 --> 00:19:50,940
+Okay, so this axis, horizontal axis,
+represents the S&P 500 returns in relation
+to the y-axis,
+
+175
+00:19:50,940 --> 00:19:52,940
+which is the Heinz returns.
+
+176
+00:19:52,940 --> 00:20:00,940
+And all these dots show, for a given week,
+what the returns in Heinz were compared to
+the
+
+177
+00:20:00,940 --> 00:20:01,940
+S&P 500.
+
+178
+00:20:01,940 --> 00:20:16,940
+And what we can see is that the S&P 500
+generally increases at a higher rate, a
+lot higher rate,
+
+179
+00:20:16,940 --> 00:20:19,940
+than the Heinz returns.
+
+180
+00:20:19,940 --> 00:20:21,940
+So let me just demonstrate that.
+
+181
+00:20:21,940 --> 00:20:29,940
+If you were to just eyeball this and look
+across from 5% return on Heinz, and go
+across.
+
+182
+00:20:29,940 --> 00:20:32,940
+Okay, 5% on S&P would be roughly here.
+
+183
+00:20:32,940 --> 00:20:35,940
+And none of our actual values are there.
+
+184
+00:20:35,940 --> 00:20:44,940
+Okay, so what that's saying is that the
+S&P returns, for Heinz to have a return of
+5%, the S&P
+
+185
+00:20:44,940 --> 00:20:47,940
+returns would generally be a lot higher.
+
+186
+00:20:47,940 --> 00:21:00,940
+So, tipping that on its head, what we can
+say is, compared to the S&P 500, Heinz
+returns a lot less, given a movement in
+the S&P 500.
+
+187
+00:21:00,940 --> 00:21:06,940
+So, the sensitivity of Heinz to the
+market, to the S&P 500, is low.
+
+188
+00:21:06,940 --> 00:21:13,940
+And that's what we'd expect, because this
+is a consumer discretionary, sorry, a
+consumer staple stock.
+
+189
+00:21:13,940 --> 00:21:18,940
+Meaning that it's less affected by the
+business cycle.
+
+190
+00:21:18,940 --> 00:21:22,940
+There's always some demand, and so it has
+fairly consistent returns.
+
+191
+00:21:22,940 --> 00:21:24,940
+It's a defensive stock.
+
+192
+00:21:27,940 --> 00:21:31,940
+Okay, so that's the graph explained a bit.
+
+193
+00:21:31,940 --> 00:21:35,940
+So, I explained what the blue dots are.
+
+194
+00:21:35,940 --> 00:21:39,940
+They're all the individual returns of
+Heinz versus the S&P 500.
+
+195
+00:21:39,940 --> 00:21:46,940
+The red dots are, basically represent a
+line of best fit between all the blue
+dots.
+
+196
+00:21:46,940 --> 00:21:49,940
+Okay, so that's like our model line.
+
+197
+00:21:49,940 --> 00:21:56,940
+And the slope of that line represents the
+sensitivity of Heinz to the S&P 500.
+
+198
+00:21:56,940 --> 00:22:00,940
+And so the slope of that line is also our
+beta value.
+
+199
+00:22:00,940 --> 00:22:05,940
+And we're given the slope of that line in
+this data summary output.
+
+200
+00:22:05,940 --> 00:22:11,940
+X variable 1 coefficient, so that's cell
+J19, that's our beta value.
+
+201
+00:22:11,940 --> 00:22:18,940
+So our beta value is 0.38, roughly, of
+Heinz.
+
+202
+00:22:18,940 --> 00:22:21,940
+Which makes sense, again, it's a defensive
+stock.
+
+203
+00:22:21,940 --> 00:22:30,940
+So, I'm going to hand back to Anton now,
+who's going to talk a bit more about what
+we've discussed here.
+
+204
+00:22:30,940 --> 00:22:37,940
+And give a short summary on how you can
+use beta, why it's useful and why we've
+done what we've done here today.
+
+205
+00:22:40,940 --> 00:22:41,940
+Okay, welcome back.
+
+206
+00:22:41,940 --> 00:22:48,940
+So, what you just saw there from Chris was
+really a step-by-step guide to calculating
+your own beta.
+
+207
+00:22:48,940 --> 00:22:57,940
+You can actually go into the downloads
+section and we've got a PDF there, which
+takes you through the entire step-by-step
+process to calculate your own beta.
+
+208
+00:22:57,940 --> 00:23:03,940
+As I said earlier, you don't really need
+to go and do this for everything you do.
+
+209
+00:23:03,940 --> 00:23:18,940
+If you do actually manage to get, you
+know, accurate beta online and you've got
+a good resource for getting a beta that
+has a decent time length, you shouldn't
+worry about this too much.
+
+210
+00:23:18,940 --> 00:23:24,940
+You definitely do not have to do this
+step-by-step for every single position
+you've got in your portfolio.
+
+211
+00:23:25,940 --> 00:23:26,940
+That's just crazy.
+
+212
+00:23:26,940 --> 00:23:38,940
+I think, from a retail trader perspective,
+the most important thing is that you've
+got the right positions and then you
+attempt as best as possible to hedge out
+market risk if you want to go and do that.
+
+213
+00:23:38,940 --> 00:23:45,940
+Remember, you can actually be cash for
+cash, as in long $10,000, short $10,000.
+
+214
+00:23:45,940 --> 00:23:52,940
+But if the betas are wildly different and
+the beta ratio is high, that cash for cash
+is not going to work very well as a trade.
+
+215
+00:23:52,940 --> 00:23:56,940
+So, you may want to try and hedge out as
+much market risk as possible.
+
+216
+00:23:56,940 --> 00:23:59,940
+So, the step-by-step guide is there.
+
+217
+00:23:59,940 --> 00:24:06,940
+You can always refer back to the video if
+you have some difficulties and watch Chris
+go through that process again.
+
+218
+00:24:06,940 --> 00:24:11,940
+But, you know, definitely don't do this
+for every single trade that you do.
+
+219
+00:24:11,940 --> 00:24:21,940
+That would just be doing too much work for
+no real value add to your portfolio if you
+can get the beta somewhere else.
+
+220
+00:24:21,940 --> 00:24:39,940
+The other thing that we've mentioned, you
+know, in terms of this process, if you are
+of the objective that you're going to work
+in the industry one day, you want to work
+at an investment bank, you want to work at
+a hedge fund, then this is actually quite
+important.
+
+221
+00:24:39,940 --> 00:24:42,940
+You do actually have to understand this.
+
+222
+00:24:42,940 --> 00:24:55,940
+If you are working at an investment bank
+and a hedge fund for that matter, you
+would be looking at your own portfolio and
+you would be looking at what we call a
+value at risk.
+
+223
+00:24:55,940 --> 00:25:05,940
+So, the amount of money that your
+portfolio can make or lose per day on a
+one standard deviation, two standard
+deviation and three standard deviation
+day.
+
+224
+00:25:05,940 --> 00:25:15,940
+And there's a lot of assumptions made by
+the back office and middle office in terms
+of the betas that they input into your
+portfolio.
+
+225
+00:25:15,940 --> 00:25:28,940
+So, you'd actually have to understand this
+process so you know when you're looking at
+your portfolio what the real situation is
+in terms of the value of money at risk
+that you can make or lose per day.
+
+226
+00:25:28,940 --> 00:25:35,940
+So, if your objective is this, you should,
+to work in the industry, you should
+absolutely learn this inside out.
+
+227
+00:25:35,940 --> 00:25:39,940
+From a retail trader perspective, don't
+worry about it too much.
+
+228
+00:25:39,940 --> 00:25:41,940
+You can go cash for cash.
+
+229
+00:25:41,940 --> 00:25:48,940
+If the beta ratio is high, you will
+attempt to hedge out market risk as best
+as you possibly can.
+
+230
+00:25:48,940 --> 00:25:54,940
+If you can get the beta publicly from a
+decent website, then that's fine.
+
+231
+00:25:54,940 --> 00:25:59,940
+If you can't find beta anywhere, then try
+and go through this exercise.
+
+232
+00:25:59,940 --> 00:26:00,940
+Okay.
+
+233
+00:26:00,940 --> 00:26:05,940
+So, now we're pretty much done with risk
+management processes.
+
+234
+00:26:05,940 --> 00:26:12,940
+But, the last thing we have to do as a
+trader in terms of having discipline is
+having self-awareness.
+
+235
+00:26:12,940 --> 00:26:15,940
+Self-awareness of our own abilities as
+traders.
+
+236
+00:26:15,940 --> 00:26:17,940
+So, that's what we're going to do next.
+
+237
+00:26:17,940 --> 00:26:26,940
+We're going to go over to video number 25
+and start looking at some standard
+industry metrics that measure your
+performance as a trader.
+
+238
+00:26:26,940 --> 00:26:35,940
+So, you understand where your weaknesses
+are and where your strengths are and what
+you need to work on over the medium to
+long term as a trader in terms of your
+weaknesses.
+
+239
+00:26:35,940 --> 00:26:42,940
+So, let's go over to video 25 where we'll
+be looking at the Kelly criteria.
+
+240
+00:26:42,940 --> 00:26:44,940
+Thank you.

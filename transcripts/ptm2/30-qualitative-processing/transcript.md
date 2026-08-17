@@ -1,0 +1,787 @@
+---
+course: ptm2
+lesson_id: "30"
+title: "Qualitative Processing"
+module: qualitative-and-catalysts
+module_title: "Qualitative processing and catalysts"
+duration: 00:57:08
+duration_seconds: 3428.011
+source: "30. Qualitative Processing.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  []
+---
+
+# 30 — Qualitative Processing
+
+Okay, so we are back at the screen. We are now on video 30 of the professional trading masterclass video series. We continue with our trade idea generation process. And now we are going into the world of qualitative processing. So welcome to qualitative processing one.
+
+Now, before we get going into qualitative analysis, let's have a little reminder of the context here. So in terms of fundamental analysis, the evolution of the quantitative and qualitative process. So first of all, we have our quantitative phase, which splits into two areas, our quant discovery phase and our quant evidence phase.
+
+In quant discovery, we are relying on forward looking metrics and valuation. We identify positive and negative outliers and everything else in between, such as turnarounds or potential value traps.
+
+In the quant evidence phase. In the quant evidence phase, we look to our backwards looking financial statements. And we ask the question, do the financial statements provide evidence to support valuation of the positive and negative outliers that we identified and discovered using our forward looking metrics?
+
+And then we move on to qualitative analysis. And then we move on to qualitative analysis. And what we focus on is qualitative drivers of the business. So we look at backwards and forwards looking key performance indicators and the management operating plan of the company. So we identify the KPIs and the management operating plan. And we ask the question, do they provide evidence to support the value of the business? And then we move on to our qualitative analysis. And then we move on to our qualitative analysis. And what we focus on is qualitative drivers of the business.
+
+What we focus on is qualitative drivers of the business. So we focus on qualitative drivers of the business. So we look at backwards and forwards looking key performance indicators and the management operating plan of the company. So we identify the KPIs and the management operating plan. And we ask the question, do they provide evidence to support the valuation of our positive and negative outliers that we have identified in the quant phase?
+
+So at the stage when we reach qualitative analysis, what has happened is, is that we've discovered an outlier and we've understood the supporting quantitative evidence from the financial statements. And as we've done that, we have probably learned some of the basic information about a stock.
+
+So it's product and or service. So by default, it's kind of unavoidable that even when we're doing the backwards looking quantitative process, where we're looking at financial statements, we are by default going to pick up some qualitative information that is essentially part of a qualitative process.
+
+So this is where the quantitative processes overlap. So there is overlap between the quant and qualitative processes at this juncture, because we are continually asking the questions, and we are continually looking for evidence to support the valuation of the outlier that we have identified.
+
+So the next level quantitative and next level quantitative and next level qualitative, we are continuously seeking evidence that gives us the full story and the full picture in the stock, behind valuation. And this involves both backwards and forwards looking metrics.
+
+When we move into the qualitative metrics. When we move into the qualitative phase, the first thing we are looking to do is to identify key performance indicators of the company. So in the quant phase, we used forward looking valuation and growth metrics to discover what the market likes and dislikes in a sector and everything else in between.
+
+We also looked to the backwards, we also looked to the backwards quantitative financial statements for evidence to support the outlier status of a stock that we have discovered.
+
+We now move on to the next stage, which is the identification of a company's KPIs and what the management operating plan of the company actually is.
+
+The first question is, why in the hell are KPIs so important to us?
+
+Well, when you see the profit and loss account for a quarter or year end for a particular company, it is a statement of the results of the company.
+
+By its very nature, it's backwards looking. So they are the results from the last quarter or the last year.
+
+But there's something behind the results. It's called a business.
+
+Beneath the end result, there is something that creates the result.
+
+So there's a business and this business is driven by the management operating plan and it's measured by key performance indicators, KPIs.
+
+So the management operating plan drives the results of the business.
+
+However, it's the KPIs that measure the effectiveness of the management operating plan and the business that's behind creating the results.
+
+Now, unfortunately, there is no resource where the management of a company literally tell you line for line what their management operating plan is.
+
+What we have to do as traders is we have to identify a company's KPIs and then infer what the management operating plan is by putting the pieces all together.
+
+So this is what we're going to do in this video for you with an example.
+
+And then you can go off and just repeat this process and use it as a template.
+
+But first, we have to make some assumptions. So we have a backdrop and we have context.
+
+So for the purposes of this exercise, we're going to assume that you have found what you think is a good quantitative study.
+
+You have a quantitative stock. So you've been through the identification process and the backwards looking quant.
+
+So the financial statements and the stock that you're looking at as a potential long idea as increasing revenue and or earnings growth relative to its peer group.
+
+And the backdrop is that its valuation is premium or superior to the sector.
+
+Your next job then. And by default, you will probably find out this information anyway when you're looking at evidence in the financial statements and trying to understand what drives the valuation.
+
+So you're going to have to find out during that process what the company actually does and has done in the past.
+
+And also where you think the company is potentially going in the future.
+
+So we're also going to make the assumption here that you've looked at all of the past info on the company and now you know what they do and what probably sets their product and or service sets it apart from the competition.
+
+Now, some things we have to remember as well as in terms of best discipline.
+
+So remember, there will always be a reason why the quant was good.
+
+There is a reason why earnings growth and or revenue growth is forecasted by the market to be better than average of the peer group.
+
+There's also a reason why the market rates the company higher via a higher than average price earnings ratio and peg ratio.
+
+So there is a reason why people are relatively putting dollars into the stock at the expense of other similar businesses.
+
+There's also a reason why the market, the market, the market, the market, the market wants to own the stock at the expense of other stocks that have inferior products or services.
+
+So the company is probably taking market share in the sector.
+
+Now, this phase where we are learning about a stock, we have to understand it always in the context of what constitutes a trade idea.
+
+So the first step when we're learning about a stock is always to go to the investors relations website of the company and we start hoarding qualitative information.
+
+So we continue to learn what the company does and why they are perceived to be superior to their competition or peer group.
+
+What this is, is learning about the company.
+
+But don't forget, this is not generating a trade idea.
+
+Just simply learning about what a company does and why it has a superior valuation, what its product and service is.
+
+That isn't a trade idea.
+
+There's a big difference between learning about the company, what it does and why it is potentially superior versus learning about whether the stock will actually go up in the next 60 days.
+
+Don't confuse the two exercises.
+
+This is a big error amongst retail traders.
+
+A lot of people have the ability to go through some processes and identify what a good company is.
+
+But a good company does not mean a good stock.
+
+So a trade idea is not an investment idea.
+
+We are not in this business to look for good companies and then just buy the stock and hold forever.
+
+We are traders.
+
+Catalysts are required.
+
+And of course, we are going to come on to catalysts later.
+
+So as we've been through that process of learning about a stock, we have to understand that we are learning the information of the stock.
+
+And the information alone doesn't qualify it as a trade idea.
+
+We are in the evidence gathering phase.
+
+And obviously, that is a qualitative process because we are gathering qualitative information.
+
+When we move into our qualitative analysis, when we are looking at KPIs, this is how we try to predict the future.
+
+And this is done once we know the past and we are fairly confident or very confident that we know why the company has a superior rating or better product or service.
+
+So the question to keep in mind when we are going through the qualitative process, when we are evidence gathering on forward looking qualitative information, when we are looking at KPIs and the management operating plan, that question always is how does the company's future look compared to expectations?
+
+So as mentioned previously, before we looked at our backdrop of assumptions.
+
+So as mentioned previously, before we looked at our backdrop of assumptions, the first part of the qualitative phase is to identify what key performance indicators are actually important to the company.
+
+Now, back in the quantitative phase where we looked at the financial statements of a company for evidence to support our forward looking valuations and growth rates, we will have gone to the investor relations website of the company to get the financial statements.
+
+Now, the investor relations websites of public companies are incredibly useful in the qualitative phase of the trade idea generation process.
+
+Why?
+
+Because public companies have to, by order of regulation, update investors continuously on the state of their business.
+
+And they do this, obviously, through their quarterly and annual earnings releases, of course, but they also do this with verbal and written communication in between earnings releases.
+
+So companies can choose to do the minimum where they just release their quarterly earnings reports or they can choose to do more than the minimum.
+
+So they can be very inactive with their communication in between earnings releases or they can actually be highly active between earnings releases and engaging.
+
+Now, we're going to come on to this a bit later in the video series in the section on catalysts.
+
+At this stage of the process, what we are seeking to identify is what drives the business in a qualitative capacity beneath the end result, which is the hard numbers in the financial statements.
+
+So we're looking at the qualitative elements of the business that drive the quantitative results.
+
+And the investor relations websites of companies can provide us with an absolute treasure trove of information to identify key performance indicators and the management operating plan.
+
+Now, whenever we go to investor relations websites and we are going through this process of identifying KPIs, we need to ask ourselves continuous questions.
+
+So again, we are assuming here that you've been through the quant process, you've identified your outlier, you've been through the backwards looking quant, learning the stock info, and then we're now going into the qualitative phase.
+
+So we have to keep viewing our work through a particular lens in the same way that we did during our previous processes.
+
+So we need to keep asking ourselves the question, why is earnings growth or revenue growth so good or bad?
+
+Why does the market value the company in the way that it does?
+
+Does the stock deserve to be on its assigned premium or discount?
+
+Will the company continue to report good numbers or bad numbers as the case may be?
+
+Beating expectations or missing expectations as the case may be in revenue and earnings?
+
+Is this a high probability?
+
+And we answer all of these questions via the key performance indicators and the management operating plan.
+
+This is how companies measure themselves.
+
+So how they give guidance to the market.
+
+And it's how analysts measure the company's performance to enable them to forecast revenue and earnings outcomes.
+
+So this is how analysts get their expectations for revenue and earnings.
+
+Now, we are going to go through now an example of how to identify KPIs, key performance indicators.
+
+And the example that we're going to look at is Zendesk.
+
+And when we arrive at the qualitative phase, we should have at least a basic understanding of what the company actually does.
+
+So what does Zendesk do?
+
+It is a customer relationship management, a CRM software as a service SaaS company.
+
+It is a business to business product and it serves business to consumer businesses.
+
+And its core function is helping to solve customer issues faster.
+
+So it gives a help desk platform to businesses.
+
+So what the software actually does, it helps businesses in management of customer communication through various channels like email, web forms, chat, voice calls and social media like Twitter, Facebook and LinkedIn using an omni channel ticketing system.
+
+The software also has automation of customer support processing and they're utilizing various macros and other automation tools.
+
+And they also have customer self-service tools that utilize bots for auto replies, there's knowledge bases, there's customer communities and FAQs, frequently asked questions.
+
+And where do we get all of this information to learn about what a company actually does?
+
+Of course, we go to the company website itself.
+
+So we go to the company website.
+
+We also go to the investor relations website of the company.
+
+And from these sources, we learn about what the company actually does.
+
+And we increase our qualitative understanding of the company.
+
+When we want to start sourcing our key performance indicators, we move from the company website to the investor relations website.
+
+And we start looking for sources where we can locate key performance indicators and the management operating plan.
+
+We find on the website.
+
+We find on the website for investor relations, an area called events and presentations.
+
+And these are generally conferences or events where the company itself is pitching investors to invest in the business.
+
+So these events are generally attended by not only investors, but also investment bank analysts that report on the stock and also have research models and ratings and price targets.
+
+What we also tend to find in this area is presentations where the company is updating shareholders with updates between, so updates on the business between earnings releases.
+
+So when we are looking to source key performance indicators or a company, any company, we always look to the investor relations website and we navigate towards events and presentations.
+
+And we seek to source clues of key performance indicators, evidence of key performance indicators and updates to shareholders on the business so we can build out our KPI list.
+
+So we went through this process for you here in this example with Zendesk.
+
+We clicked into presentations and what we found was is a list of shareholder letters with updates on the business.
+
+So what you will find is with all companies on investor relations websites is that company events and presentations provide us with an insight into what management are focused on.
+
+And this is great for us in identifying what metrics other than say revenue and earnings the company actually focuses on.
+
+These are the drivers of the business and they infer the management operating plan.
+
+In these presentations guys, management is literally telling you in plain English what the drivers of their business are.
+
+So there is literally no excuse not to do the work.
+
+It's a few clicks away to get to sources where you can actually start listing the key performance indicators in the qualitative assessment for any company out there.
+
+You've just got to know where to look and you have to go through your processes and you have to interpret the information.
+
+And of course, this requires a bit of practice.
+
+But over time, you're going to get quicker at this process and you're going to get better at interpreting the qualitative information, the KPIs and the management operating plan.
+
+So what we did here with this example with Zendesk, we clicked into the last publicly available shareholder letter.
+
+And this is what we found.
+
+So firstly, we found in the opening slide that $1 billion of revenue, the top line target was the target for the last four years.
+
+And Zendesk achieved it by hitting $1.03 billion in 2020, which was revenue growth of 26% versus revenue in 2019.
+
+Now, remember, this is a financial metric and our primary concern here is qualitative, not quantitative information.
+
+However, of course, when we go through presentations and shareholder letters, there are going to be quantitative elements that we do take note of.
+
+Now, in this opening of the last shareholder letter that's available, they admit that towards the end of the year, the business conditions were much stronger than the beginning of the year because of COVID-19.
+
+So they're implying that there's a V shape in earnings or 2020 instead of an expected linear progression, which they didn't expect.
+
+So they're ending the year in a strong growth position.
+
+So we just take note of these things and we keep scrolling through the presentation and keep picking up on important information.
+
+So further into the presentation, we get to more financial metrics.
+
+So here we're being told by management of a target to triple their revenue within five years.
+
+And we are also given the official management guidance for the next quarter Q1 and the full year ahead.
+
+So this again is financial metrics, but it's important information that we take note of because we're building a context in which the KPIs of the company exist.
+
+It's the management operating plan and the KPIs that are driving these numbers.
+
+They are behind these numbers.
+
+So we continue scrolling through the presentation.
+
+We continue taking notes of important information.
+
+We continue with our qualitative assessment and we get to the next piece of importance information in the shareholder letter where we have several metrics that must be important to the company.
+
+It must be important to the management operating plan and investors.
+
+Those being ticket volume, gross bookings, quarterly new business and expansion bookings.
+
+Remember guys, in these presentations, in these updates to shareholders, management are literally telling you in English what is important to the business.
+
+So in this case, we have our KPIs indexed new tickets and indexed bookings.
+
+So new business and expansion business.
+
+And we take note that it's close to 60%.
+
+So both measures are showing a rate of growth of 60%.
+
+We continue to dig deeper, we continue to make notes on KPIs and we get to further slides which show us more qualitative information that we take note of.
+
+It seems that it seems that the company is now shifting its pricing plans from individual products, plans and add-ons to an aggregated solution.
+
+And pricing is on a per agent or subscription basis per month.
+
+So in this presentation, they are updating shareholders and investors in the company that they are literally shifting their business model.
+
+And remember, if this is an update to shareholders and investors in the company, this is also a pitch for the future of the company to investors and shareholders.
+
+Because they are changing the way they do business.
+
+They are tweaking their business model as they grow.
+
+As we continue through the presentation, we also take note that the following metrics must be important to the management operating plan and investors.
+
+Because they are literally updating the reader, shareholders or investors on these numbers.
+
+So they have to be important.
+
+Again, guys, they are literally telling you in the presentation what is important to the business in terms of key performance indicators and therefore the management operating plan.
+
+It's right there in black and white.
+
+So we have a dollar-based net expansion rate number that we take note of.
+
+And we have the percentage of annual recurring revenue, ARR, from enterprise customers.
+
+So we take note of these KPIs and the targets, the numbers that are important to the company.
+
+So dollar-based net expansion rate of between 110 and 120%.
+
+The percentage of total annual recurring revenue, ARR, by 100K plus customers, 49%.
+
+And percentage of support ARR generated by customers with 100 plus agents, 44%.
+
+And what the company is saying on the right-hand side in the bottom paragraph is that these customers, the 100K plus and the 100 plus agent customers, so enterprise customers, are increasingly impacting their revenues as they continue to aggressively grow even the number of small and medium or mid-sized businesses using their products.
+
+So this is great information as we're going through this presentation.
+
+We're building up a list of KPIs now.
+
+So we continue scrolling.
+
+We continue our investigation.
+
+We continue picking out the KPIs and inferring the management operating plan.
+
+So we get further into the presentation here.
+
+And again, we take note of further metrics that must be important to the management operating plan and shareholders.
+
+So we have a metric here called remaining performance obligations in millions of dollars.
+
+And of course, the company would not even put this in the presentation if it wasn't materially important to the company.
+
+They wouldn't put it in the presentation, guys.
+
+So again, they're literally telling you what is important.
+
+What are the important KPIs in how they measure their operation, their business?
+
+So we make a list of these KPIs and we attach the numbers for the KPIs to the KPIs in the last update.
+
+So here for remaining performance obligations, we have total RPO percentage growth at 44%.
+
+We have long term RPO percentage growth at 65%.
+
+And we have short term RPO percentage growth at 36%.
+
+Now, you're probably sitting there wondering, well, Anton, what if I'm coming into this cold and I don't know what any of this means?
+
+Well, what you've got to understand this here is that you're going through a process that's repeatable in any situation.
+
+If you don't know what remaining performance obligations are or you don't know what dollar based net expansion rate is or annual recurring revenue.
+
+Of course, we can go elsewhere to find out that information.
+
+What we are doing here is going through a process to first identify the KPIs.
+
+Later, we can go elsewhere to discover what they actually are.
+
+So if you are coming into this cold with no knowledge, how do you think we figure this out?
+
+How do we figure out what this all means?
+
+We'll come on to this a little bit later.
+
+Now further on in this presentation, in this example, we can take note of customer acquisition numbers and we can work out ourselves in a spreadsheet, a percentage growth rate for each product suite for the year 2020.
+
+So in the customer metrics that are available in the presentation, so this is all publicly available.
+
+Remember, in the quarter on quarter customer metrics, we get the following.
+
+We have accounts at Zendesk support.
+
+We have accounts at Zendesk chat.
+
+We have the accounts on other Zendesk products and we have total customer accounts.
+
+So the growth in all of these areas of customers are in fact themselves KPIs.
+
+So we can calculate this ourselves in a spreadsheet.
+
+It's very straightforward.
+
+So accounts at Zendesk support.
+
+We have positive 2% to 3% growth quarter on quarter.
+
+We have accounts on Zendesk chat.
+
+We have from negative 2% to negative 3% growth in that product quarter on quarter.
+
+We have accounts on other Zendesk products.
+
+So we see 8% to 9% growth quarter on quarter.
+
+And then we have total customer accounts, which are growing up between 2% and 3% quarter on quarter.
+
+So this guys is an example of taking information from the presentations, taking that information and actually going a little bit further and doing our own work.
+
+Don't be afraid to do your own work and always ask the questions.
+
+Throughout this whole process, you are a detective and you're looking to get to the bottom of why the company is valued at a premium to the sector.
+
+And in the qualitative phase, we can take information from presentations, from conferences and events.
+
+And we can take that qualitative information and we can turn it into numbers and we can turn it into key performance indicators.
+
+That is important information to the management operating plan.
+
+And this is a very obvious one.
+
+This is customer acquisition across its main products and in total.
+
+But in the presentation here, they're not giving us the percentage numbers.
+
+So we work it out ourselves.
+
+It's very straightforward.
+
+And it's pretty obvious that a key performance indicator of any business and a business like Zendesk is the customer acquisition growth rate.
+
+So don't be afraid to think outside the box a little bit and do your own work.
+
+Now, as we scroll further through the presentation, we come across some important information to do with geographical business.
+
+So we take note of another qualitative metric of the geographical revenue mix.
+
+And we note that roughly half of Zendesk's revenue originates from the US and half of it internationally.
+
+And we infer that what this means in this particular case with Zendesk is that if the US dollar was to have a significant rally versus rest of world currencies, that this can potentially derail revenue growth.
+
+When local currency revenue that's in the rest of the world is translated back into US dollars because their accounts are denominated in US dollars.
+
+So we take note of qualitative information like this because it could provide a headwind, which is in a strong dollar environment.
+
+And it could provide a tailwind in a weak dollar environment.
+
+But at this stage, we just don't know because we don't know whether they hedge their overseas currency exposure, their overseas sales exposure.
+
+Now, earlier, we mentioned that there are places to go to if you don't understand certain KPIs or certain metrics when you are going through your qualitative process.
+
+When you're sitting at your desk, you're going through your processes, your qualitative process.
+
+You see KPIs and metrics, the names of them from presentations.
+
+You don't understand what they mean.
+
+Where do you think you go to?
+
+Well, a good start would just be to Google it.
+
+In the vast majority of situations, when you're going through your qualitative processes, if you don't understand what a particular KPI is all about.
+
+Yes, you go through your processes, you identify them.
+
+But when you want to understand what they are, Google is your friend.
+
+Stick it into Google and start reading up on it.
+
+So the other alternative is to go through your processes and when you get to a KPI that you've identified and you don't know what it's all about, you just sit there and give up.
+
+Well, of course not.
+
+Of course, you're not going to give up.
+
+You're going to type it into Google and you're going to learn about it.
+
+So in this example with Zendesk, if you were going through this cold and for the first time and you didn't understand what dollar-based net expansion rate was, you would type it into Google and you would literally read about it and teach yourself about it.
+
+So we have literally on the top of the first page of Google.
+
+In this example, when we put in dollar-based net expansion rate, we have an article from Crunchbase, which gives you the formula and tells you all about it.
+
+It will take you 5-10 minutes to read up on it.
+
+And then we also have various articles that are telling us and inferring what a net dollar retention rate benchmark would be for the software as a service industry.
+
+So you have to get used to being curious guys, and relying on yourself and going out there and getting the information yourself, becoming self-reliant.
+
+So you would naturally Google terms that you don't understand, start reading up on them and start information gathering so you can learn yourself and teach yourself.
+
+Another one in this example was annual recurring revenue.
+
+And we can just Google it.
+
+We can literally type into Google ARR meaning.
+
+And in this example, if you were clicking through articles and information online to find out about ARR, you would literally be told the formula for annual recurring revenue.
+
+It's all very straightforward.
+
+And again, with our last one, remaining performance obligations.
+
+If you didn't know it, and you were coming in cold, and you really just didn't know what it was, you would go to Google, just type it in, and there's plenty of sources out there.
+
+This will happen with a lot of companies that you do research on, a lot of companies that you go through your qualitative processes on.
+
+And if you don't understand anything, just take it to the next logical step.
+
+Go into Google, type it in, and teach yourself what it's all about to further your understanding of the company.
+
+And of course, the key performance indicators, the KPIs.
+
+If you go through these steps, and you're curious, and you can teach yourself, and you're self-reliant, you are always going to bump into the answers.
+
+You are going to get the information.
+
+So be organized, and stick to the process, be curious, and be self-reliant.
+
+So from this example, from Zendesk, and going through that shareholder update, shareholder letter, we can get to some answers for KPIs very, very quickly.
+
+So let's go through them.
+
+We've created a dashboard in a very short space of time for Zendesk KPIs.
+
+So let's start at the top.
+
+We have indexed new tickets, indexed bookings for new business and expansion business.
+
+And for both of those areas, we had a growth rate of 60%.
+
+We have dollar-based net expansion rate of between 110 and 120%.
+
+We have the percentage of total ARR by $100,000 and over customers of 49%.
+
+And we have the percentage of support ARR generated by customers with over 100 agents at 44%.
+
+We have long-term RPO percentage growth at 65%.
+
+Short-term RPO percentage growth at 36%.
+
+And we have a total of RPO percentage growth of 44%.
+
+For customer acquisition growth rates across the products, we have accounts at Zendesk support of growth rates 2% to 3% quarter on quarter.
+
+Accounts at Zendesk chat quarter on quarter growth at negative 2% to negative 3%.
+
+Accounts on other Zendesk products, growth rates of between 8% and 9% quarter on quarter, giving total customer accounts of growth rates quarter on quarter of 2% to 3%.
+
+So what we discovered here from one presentation in a very short space of time, we've identified the key metrics beneath revenue and earnings.
+
+And this is what drives revenue and earnings.
+
+What you are looking at here is the business and how the business is measured and the measurements that drive revenue and earnings, which are the results.
+
+They are the end financial results.
+
+So these are the key performance indicators of the operation of the company.
+
+In addition to helping us understand and potentially forecasting future revenue and earnings growth, the KPIs of the company are also a measure of the effectiveness of the company's management operating plan.
+
+And as mentioned previously, there is no one place with any company that you can go to where they literally spell out what the management operating plan is.
+
+We have to identify the KPIs first and then infer what the management operating plan is.
+
+And we do this work ourselves.
+
+So for Zendesk as the example, what information can we take away that can infer from the KPIs what the management operating plan is?
+
+Well, we started by recognizing that the company is targeting to triple revenue within five years to over $3 billion.
+
+And in the year 2021, grow revenue by 26% revenue growth, a rate of 26% revenue growth in 2021.
+
+But then we have to make an inferral.
+
+How are they going to achieve this?
+
+Well, we look to their KPIs and we infer this, therefore inferring a management operating plan.
+
+So in terms of customer acquisition, they're going to have to grow total customer accounts at a rate of at least 2% to 3% per quarter.
+
+And that's breaking it down into Zendesk support, chat and products, other products.
+
+They're going to have to grow Zendesk support by at least 2% to 3% acquisition rate per quarter.
+
+So we're going to have to stop the bleed at Zendesk.
+
+Stop the bleed at Zendesk chat, potentially by bundling the service.
+
+So if you remember with Zendesk chat, they were actually negative acquisition, customer acquisition.
+
+So they were losing customers there.
+
+And they were also pitching how they were moving into a new business model of bundling.
+
+So we have inferred here that they're looking to stop the bleed at Zendesk chat by bundling the service.
+
+Other Zendesk products that they sell into current customers was growing at the highest rate, which was 8% to 9% acquisition per quarter.
+
+And these products are now potentially being moved to bundled packages.
+
+So as they're moving to a bundled service, they're going to have to obviously grow the bundled packages at a blended average that is higher or at least the same as the total customer accounts acquisition rate per quarter, which was the 2% to 3%.
+
+They will have to do at least that in the new bundled business model.
+
+In addition to that, an important KPI was our dollar-based net expansion rate.
+
+So the company in their inferred management operating plan is most probably seeking to maintain that rate of between 110% and 120%.
+
+Additionally, as inferred by the KPIs, our next KPI was ARR.
+
+So the company is most probably seeking in the future to continue to achieve a healthy mix in their ARR from enterprise clients versus small and midsize businesses.
+
+And in addition to that, to deliver on our next KPI metric, remaining performance obligations to deliver on RPOs via their customer retention.
+
+So you can see, guys, very quickly by just going to events and presentations on the investor relations website of a company, we can source presentations that are very recent and we can find, identify key performance indicators.
+
+We can create, in a very short space of time, a dashboard or key performance indicators.
+
+And from that, we can infer a management operating plan.
+
+Now, once we've got our KPIs and we've inferred our management operating plan, we ask ourselves a number of questions of the KPIs themselves.
+
+So, for example, what will change revenue and earnings up or down?
+
+What's going to move the needle of revenue and earnings?
+
+How does the company measure its operation other than revenue and earnings?
+
+How is the company achieving its superior growth?
+
+Or why is it suffering from its inferior growth?
+
+What are these other financial metrics, our KPIs, actually telling us?
+
+What are they showing?
+
+What do we think the outlook is for KPIs and the management operating plan and the changes or potential changes in the future of the management operating plan?
+
+So the intentions and targets of the KPIs and the inferred MOP.
+
+And also, how long will it continue?
+
+So we continually ask ourselves these questions as we are going through identifying KPIs and then understanding the KPIs.
+
+We continually ask ourselves these questions to ensure discipline in understanding what the evidence is behind revenue and earnings growth.
+
+We are not just looking at these KPIs and inferring a management operating plan for fun.
+
+We are doing it to find out what is driving the business and hence what is driving the revenue and earnings growth.
+
+So in the context of a premium stock that is growing faster than the sector, what we want to know is the measurements, the KPIs that are behind that and whether the rates of those KPIs, so the numbers behind those KPIs, actually support and justify the premium valuation.
+
+Does the qualitative assessment back up the quantitative assessment?
+
+So let's put all this together and summarize in the first stage of the qualitative assessment.
+
+So remember the context that we're in here.
+
+We have our quant discovery phase.
+
+We have our quant evidence phase.
+
+And we have our qualitative phase.
+
+And we have our qualitative phase.
+
+In our quant discovery phase, we are utilizing forward looking valuation to identify or discover positive and negative outliers and everything else in between like turnarounds or potential value traps.
+
+In the quant evidence phase.
+
+In the quant evidence phase.
+
+We are looking to backwards looking financial statements to provide evidence to support valuation.
+
+And then we move into the qualitative phase.
+
+And then we move into the qualitative phase where we are looking at backwards and forwards looking KPIs and inferring a management operating plan.
+
+And we are looking at the drivers of the business.
+
+The key drivers of the business, which are the KPIs.
+
+Do they provide evidence to support valuation?
+
+Do they provide evidence to support valuation?
+
+And within that qualitative assessment, we are always remembering that we operate in the framework where we identify KPIs.
+
+This infers the management operating plan.
+
+And the MOP and the KPIs drive the quantitative results, the financial metrics like revenue and earnings.
+
+They drive the financial quantitative results of the company.
+
+So beneath those results, revenue and earnings, there is always something that creates that result.
+
+There is a business and this business is driven by the management operating plan.
+
+And it's measured by key performance indicators.
+
+So we need to keep asking ourselves the questions.
+
+Why is earnings growth or revenue growth so good or bad?
+
+Why does the market value the company in the way that it does?
+
+Does the stock deserve to be on its assigned premium or discount?
+
+Will the company continue to report good numbers, beating expectations in revenue and earnings?
+
+Or, in the case of a negative outlier, continue to report bad numbers, missing expectations?
+
+Based on our assessment of the KPIs, is it likely, is it probable that because of the KPIs that the company is going to continue to report good numbers and beat expectations?
+
+Or, probable in a negative outlier context that the company is going to report bad numbers and missing expectations?
+
+Is it high probability?
+
+And also, are there any additional catalysts to earnings day that will get the stock moving higher or lower in between earnings reports?
+
+That's something we're going to move on to soon when we look at catalysts.
+
+So we keep asking ourselves these questions throughout our qualitative assessment.
+
+We first, obviously, identify KPIs and then we infer the management operating plan.
+
+We know this is how companies measure themselves.
+
+This is how they get to their own guidance for numbers.
+
+So how they get to their guidance when they're forecasting and updating their revenue and earnings estimates for analysts.
+
+And it's also how analysts measure the company's performance to enable them to forecast revenue and earnings outcomes and, therefore, the analyst expectations.
+
+If we have any positive or negative changes in the KPIs, that's going to mean a change in expectations of future revenue and earnings forecasts and other operational metrics.
+
+The stock itself will immediately move on KPI news and analysts will follow by upgrading or downgrading their ratings and price targets.
+
+This is why KPIs are so important because the business and how it's measured moves before the actual results that are reported, the revenue and earnings on earnings day.
+
+So we have to identify KPIs, we have to infer the management operating plan, and we have to stay on top of anything that can change those KPIs.
+
+So this brings us now to the end of our first step in the qualitative processing phase.
+
+Let's go straight in to the next video into the second part of the qualitative processing phase.
+
+Thank you.

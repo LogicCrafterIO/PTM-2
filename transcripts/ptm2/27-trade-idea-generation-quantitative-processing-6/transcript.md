@@ -1,0 +1,1486 @@
+---
+course: ptm2
+lesson_id: "27"
+title: "Trade Idea Generation - Quantitative Processing 6"
+module: quantitative-idea-generation
+module_title: "Quantitative idea generation"
+duration: 02:24:56
+duration_seconds: 8696.021
+source: "27. Trade Idea Generation ΓÇô Quantitative Processing 6.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  - "Documents/Video 27/EG_Profiles_Longs.xlsx"
+  - "Documents/Video 27/EG_Profiles_Shorts.xlsx"
+---
+
+# 27 — Trade Idea Generation - Quantitative Processing 6
+
+Okay, so welcome to video number 27. We are still going through the trade idea generation process.
+
+We are in the quantitative processing phase still. So now we're going to look at some of the earnings growth profiles that we identified earlier when we were looking at potential longs and shorts. And we're going to be looking at turnaround stories and value traps. So if you recall, when we were looking at long idea processing and short idea processing, we looked at multiple earnings growth profiles. And obviously, earnings growth is always a forward looking metric in our overall quantitative and qualitative dashboard as part of the bottom up microeconomic trade idea generation process. So in the previous videos of long idea and short idea processing, we identified a whole bunch of earnings growth profiles that we defined as not ideal, or close to ideal. Now when earnings growth profiles are not ideal or close to ideal, when we're processing for both long and short ideas.
+
+These types of earnings growth profiles tend to fall into the categories of what we call turnaround stories and value traps. But obviously, not all the time, we have to be a little bit careful here, because we could have situations, for example, like revenue growth stories, where the management operating plan is purposely to not make earnings. So they have spurious earnings growth, spurious EPS and spurious earnings growth.
+
+So the management operating plan is to reinvest revenue and hence any earnings back into growing the top line.
+
+So we have to be a little bit careful here that we are actually identifying genuine X growth stories that could potentially be turnaround stories or potentially value traps. Now, with reference to the earnings growth profiles covered in the previous two videos and in the downloadable spreadsheets, earnings growth profiles for longs and earnings growth profiles And for short, the cases that exhibited non-ideal or not close to ideal earnings growth profiles were, for example, in earnings growth profiles for longs cases 7, 8, 9 and 10 and for short cases 5, 8 and 9.
+
+Remember, these are not ideal or close to ideal classic long and short earnings growth setups for a portfolio.
+
+However, as traders and portfolio managers, we are always looking for opportunities and non-ideal from our perspective does not mean that it's not useful.
+
+So, from a portfolio management perspective, the majority of times when GDP is forecasted to grow and stock markets are forecasted to make gains, your portfolio bias as a manager will be long with a natural tendency towards leaning at cyclical growth on the long side and X growth cyclical with defensives on the short side of the portfolio.
+
+However, there's obviously going to be periods in time when value, for example, in the stock market is more attractive than growth.
+
+So, times when you are likely to have a flat to negative bias in your portfolio, so a flat to short bias in the portfolio.
+
+Additionally, it can be argued that even in times when you have a very strong conviction towards GDP expansion and a net long portfolio bias, we shouldn't just be always long growth stocks and cyclicality and short all X growth stocks or defensives.
+
+In this situation, if the macroeconomic environment shifts very quickly, we can get caught out and experience large drawdowns in our portfolio.
+
+This is because our diversification in the portfolio, although there's numerous positions, can actually be flawed.
+
+So, the question is, in that situation, are you really diverse if you are long all cyclical growth names and short all X growth and defensive names in the portfolio?
+
+Well, probably not.
+
+But at all times, you should know your risk.
+
+So, this is your call.
+
+A lot of these good practices are covered, for example, with Chris Quill in the Fundamentals of Portfolio Management section of the PTM video series.
+
+So, of course, at any one time, we will have, as long short portfolio managers, portfolio volatility.
+
+And we choose, as risk takers, a high enough level of volatility to expose ourselves to the opportunity to make money.
+
+But, of course, there's two sides to that coin.
+
+The other side of the coin is that you're taking risk.
+
+Now, if there is a change in the macro environment, the risk of the portfolio can change.
+
+So, your implied portfolio volatility can go up unexpectedly and you end up taking more risk than you want.
+
+Plus, betas can change in a new risk environment.
+
+So, we have non-beta adjusted risk.
+
+Also, if we want our diversification to actually work well in our long short portfolio, we want to make sure that our portfolio correlation is not too high.
+
+So, it must be low enough so that everything in the portfolio, our longs and our shorts, don't all move together at the same time all at once.
+
+We want to be exposed to dislocation as well as volatility.
+
+So, this is where earnings growth profiles that are alternative to our classic, ideal, or close to ideal earnings growth profiles come in handy because they add an extra tool or extra opportunities in our armory to the long short portfolio management trade idea generation process.
+
+And, as always, we start with the quantitative.
+
+Now, as mentioned, when we are processing the quant, we have to be very careful when we are processing the quant and identifying potential turnaround stories or value traps because when we are processing, we could bump into revenue growth stories.
+
+So, in the previous video, we showed you how to identify potential short trade ideas based on various earnings growth profiles and a price earnings multiple backdrop.
+
+So, the process of identifying X growth stocks as potential shorts means that the stock very clearly must be beyond its growth phase.
+
+So, it's not a revenue growth story.
+
+Now, when you look at further metrics like revenue growth, a stock may still be in its growth phase and the management operating plan is to actually choose to reinvest revenue and therefore earnings into growing the top line, the top line revenue.
+
+So, again, don't think because you see negative earnings growth on paper that a stock is automatically a short.
+
+It just isn't.
+
+You always have to do further work.
+
+And when you do further work beyond the quant identification process on potential shorts that exhibit the earnings growth profiles that look like shorts on paper, If you then discover that the stock is a revenue growth story, then, of course, you re-categorize it as that.
+
+In fact, it may even be a potential long.
+
+So, remember, this is always simply an identification process.
+
+Now, when we're processing in the quant and identifying what could be potential earnings growth profiles that exhibit a turnaround story or value trap profile, the same logic applies here.
+
+If we discover it's a revenue growth story, we simply re-categorize it.
+
+Now, regardless, if you do identify a revenue growth story in the background, you're probably going to see anyway that it shows up or is reflected in the PE multiple versus the sector.
+
+So, it won't have a PE profile that's typical of a turnaround story or value trap.
+
+So, it's very likely that the PE of a revenue growth story is going to be high relative to the sector because the market will be paying for its revenue growth and its way out or far out earnings potential.
+
+So, just bear in mind that when you're processing in the quant phase, looking for longs, looking for shorts, potentially categorizing turnaround or value traps, we obviously have our different categories.
+
+We have our classic long ideas or ideal or close to ideal long ideas.
+
+We have our classic earnings growth profile setups for short ideas.
+
+We have our ideal and we have our non-ideal and we also have our phases for short ideas.
+
+So, phase 1, 2, 3, 4 and 5 and we also have our categories of turnaround stories and value traps.
+
+So, typical earnings growth profiles of turnaround stories and value traps.
+
+But, always remember the market can like and dislike stocks for different reasons other than earnings growth potential.
+
+Most typically, these are revenue growth stories, whether the market likes or dislikes their revenue growth.
+
+And if we bump into those at any time during our processing, we recategorize as a revenue story.
+
+So, for the purposes of this video, we're going to assume that in your processing, in your quant processing, that you have not identified a revenue growth story here.
+
+And what you have identified is actually a turnaround or value trap.
+
+So, if you recall, when we were looking at long idea quant processing, we had our cases number 7, 8, 9 and 10.
+
+And what we discovered was that all of these cases were either not ideal or close to ideal in terms of the classic long setup, where we either had sequentially positive earnings growth momentum or we had close to that.
+
+And if you remember these cases 7, 8, 9 and 10.
+
+Cases number 7 and 8, the backdrop was that we have positive EPS, so the company is in profit.
+
+And cases number 9 and 10, we have negative EPS, so the company, the operation is loss making.
+
+Further to that, we discovered that cases number 7 and case number 10 didn't even constitute any real opportunity for us when we're looking for long ideas.
+
+Not only were these cases 7 and 10, not ideal or close to ideal in terms of the classic long setup that we look for as traders, but they probably are not even genuine turnaround stories.
+
+So, let's have a look at these cases.
+
+Case number 7, we have positive EPS in the background with negative earnings growth in year 1.
+
+Then earnings growth recovers below sector average for year 2.
+
+And here, as traders, portfolio managers, it's not ideal setup.
+
+It's not even close to an ideal setup.
+
+We may, on a relative basis to the sector, simply have an opportunity cost here to own the sector.
+
+And that is obviously not our job as traders.
+
+Looking at it through a long ideas lens, this is obviously not ideal.
+
+And it's likely to not even constitute a real turnaround story.
+
+Remember, the backdrop here is still positive EPS.
+
+It's not a loss making operation.
+
+So, it's more than likely that you're going to find this type of earnings growth profile in an early phase if it's going X growth.
+
+It's not going to be likely that this stock is in phase 4 or phase 5.
+
+But even if it is, because the market is forecasting earnings growth in the second period to be lower than the sector by a decent amount.
+
+But even if it is in phase 4 or phase 5, if we took a position in this type of earnings growth profile, a long position, we would essentially be arguing with the market.
+
+If we find ourselves in phase 4 or phase 5, we would want to see a much higher earnings growth number for the second period in absolute terms and in relative terms to the sector.
+
+If we look at case 8, this could be a genuine turnaround, this could be a genuine turnaround, this could be a different story to case number 7.
+
+The earnings growth profile is similar to case number 7.
+
+We have a positive EPS backdrop and earnings growth is falling in the first year, but then it recovers to a round sector average.
+
+So, this could actually be a potential turnaround story when we're looking at it through a long ideas lens.
+
+And it could be a genuine turnaround story if it actually is in phase 4 or phase 5.
+
+But remember, with cases 7 and case 8, there is a backdrop of positive EPS.
+
+So, we have to make sure that if we're looking for turnaround stories, that we actually get the opportunity here to make potentially big returns.
+
+So, we would much rather see an earnings growth profile like case number 8, where the turnaround in earnings growth is big or bigger than, for example, case number 7.
+
+And we see evidence of that from analyst estimates and it's coming from a position of weakness.
+
+So, we have a bigger opportunity.
+
+So, it's coming from a low base, like in phase 4 or phase 5.
+
+Moving on to case number 9.
+
+This is where we have a case where we've got a backdrop of negative EPS.
+
+So, it's a similar profile coming from an earnings growth position of weakness to relative strength in year 2.
+
+But we have a backdrop of negative EPS, the company, the operation is loss making.
+
+So, we have negative earnings growth in period 1, with a backdrop of negative EPS, a loss making company.
+
+And the earnings growth in period 1 is underperforming the sector.
+
+In period 2, in year 2, we have a massive turnaround.
+
+We have a big turnaround in earnings growth.
+
+High numbers like 100% turnaround.
+
+And the company is now moving from a loss making position to a flat EPS position or positive EPS position.
+
+So, the expectations here from the market are wild.
+
+They are turbo.
+
+And versus similar earnings growth profiles, it offers the biggest potential turnaround.
+
+But there is a flip side.
+
+There is another side to that coin.
+
+There is high risk with this one.
+
+So, there could also be the biggest disappointment.
+
+We could also have the greatest downside and it could be a total value trap.
+
+So, it's both opportunistic and dangerous at the same time.
+
+Then we have our case number 10.
+
+This is most similar in terms of earnings growth profile.
+
+Most similar to case 9 because we're dealing here with a loss making operation, negative EPS.
+
+In year 2, in this earnings growth profile, the losses continue, but they are declining at a slower rate.
+
+So, when we look at this earnings growth profile, it's obviously not an ideal, long, classic setup earnings growth profile.
+
+However, there could be a situation in the market here.
+
+Of course, there's a possibility that analysts in year 2 may be being too bearish on their EPS, their forward EPS estimates.
+
+The question is, is it a genuine turnaround story?
+
+Well, with this profile, especially when you put it into the context of having the potential of case number 9, where we're also coming from a loss making position.
+
+If something like case number 9 is available, why would we ever play in this type of situation?
+
+It's probably not worth playing.
+
+We want to see in the market evidence of a turbo expectation of a turnaround.
+
+So, when we're processing in the quant phase and we're identifying earnings growth profiles and categorizing stocks with their earnings growth profile.
+
+Our cases 7, 8, 9, and 10 from a genuine long idea lens perspective.
+
+Cases number 7 and case number 10 are probably not going to work for us.
+
+What we want is evidence of a really good solid turnaround in EPS.
+
+And our cases number 8 and 9 are probably most likely going to provide that profile.
+
+But what we really want to see is genuine evidence that the companies are coming from a very weak position.
+
+So, we want to see them already beaten up.
+
+We want to see the stocks really beaten up and we'd love to see them in phase 4 or phase 5.
+
+Now, let's remind ourselves of the backdrop of the PE multiple profiles as well.
+
+So, when we're looking at trade ideas through a long lens in the quant phase, what's our ideal setup for the PE?
+
+Well, if you recall, we have a PE 1 that is higher than the sector and a PE 2 that is higher than the sector.
+
+And we have in period 2 a lower PE than period 1 because EPS is higher in period 2.
+
+Also, we like to see evidence that the sector is growing EPS as well.
+
+What is not ideal from a PE profile perspective when we're looking at long trade ideas, the backdrop we don't want to see, that's not ideal, is when we have a lower stock price earnings ratio than the sector in both periods.
+
+Even though for both the stock and the sector in period 2 we're getting higher EPS and we do have positive EPS overall, even though this is the case, the market is telling us that they dislike the company.
+
+The valuation is on a discount to the sector.
+
+Now, where it gets interesting from a trader's perspective when we're looking at the quant through a long lens, through a long trade idea lens, is when we see price earnings multiple setups relative to the sector where we have a big turnaround.
+
+So, where we have a turnaround exhibited or evidence of a turnaround exhibited in the price earnings multiple.
+
+So, if you think about our case 9 scenario where we had negative earnings growth with a loss-making company in period 1 and then in period 2 we had a big jump positive in earnings growth and the earnings growth was 100% in our example so the company is essentially recovering all of its losses.
+
+So, going from negative EPS to either flat or positive EPS.
+
+Well, in that situation it's certainly not our ideal PE backdrop setup but it does potentially provide us with a big opportunity for a turnaround story.
+
+So, naturally in period 1 if we are experiencing a company when we're doing our quant processing that has negative EPS, it's going to exhibit in period 1 a negative PE ratio because it's the current stock price divided by forward-looking negative EPS.
+
+And in a turnaround story it's always nice to see in period 1 that the PE is negative and on a big discount to the sector.
+
+Obviously with its negative or loss-making operation.
+
+And then in period 2 we're getting our 100% earnings growth.
+
+So, the company is making all of its losses back.
+
+It's eliminating its losses in period 2 and potentially even more than that.
+
+So, making a profit in a scenario like this we're using current stock price and forward-looking EPS for year 2 and it's likely that we're going to see or have exhibited a PE ratio in period 2 that is extremely high and obviously on a big premium to the sector.
+
+So, this type of PE backdrop potentially gives us a big opportunity for a turnaround story as long as it genuinely is a turnaround story and it's not a revenue growth story and it's part of the management operating plan to have negative EPS in period 1 and flat EPS in period 2 or even showing a small profit in period 2.
+
+Therefore, creating a scenario of very small EPS and very high PE.
+
+So, we have the law of small numbers.
+
+This is something we're going to discuss later.
+
+So, as long as it's not a revenue growth story and it's part of the management operating plan to incur losses or tiny profits and to grow the top line and it essentially is still a growth stock, it can provide us with a big opportunity as traders potentially as a turnaround story.
+
+And also, when we look in the market, we want to see that the stock has been beaten up.
+
+The stock is down a lot and it's in phase 4 or phase 5.
+
+This could potentially, if it's a genuine turnaround story with this type of PE profile and for example, a case number 9 earnings growth profile, it could provide us with a big opportunity, especially if the stock has been beaten up in phase 4 and it's in phase 4 or phase 5.
+
+Now, let's have a look at this from a PEG perspective, a PEG ratio perspective.
+
+If you recall, the ideal PEG setup for long ideas is that we have a PEG that's at a premium to the sector in both year one and year two.
+
+So, remembering the formula for PEG, it's the PE ratio divided by the earnings growth percentage for each period.
+
+So, when we see a higher PEG in period one and period two, and we see that the PEG is on a premium to the sector, this is ideal for us when we're looking at long ideas because we have evidence from the market that the market is paying a premium for the growth rate.
+
+So, remember, this is when we have in the formula obviously a positive stock price, but we also have the backdrop of positive EPS and sequentially positive earnings growth momentum.
+
+So, when we take the positive high PE and we divide it by the growth rates, we get a positive number for the PEG.
+
+So, the market is paying a premium for the growth rate of the stock relative to the sector.
+
+Now, when we think about what our PEG setup would look like, when we think of it in the context of a potential turnaround story, if you think about what PEG is, so the PE ratio divided by the earnings growth rate for each period, we can look at both of our cases and we can see what happens to PEG.
+
+So, in both of our cases, four potential turnaround stories.
+
+So, let's think about case number eight for a moment, where in period one, we have a positive price earnings ratio, but we have a negative earnings growth rate.
+
+So, remember, in case number eight, we have positive EPS.
+
+So, we have a positive stock price and a positive EPS, thus creating a positive PE.
+
+But we are dividing that positive PE by a negative earnings growth number.
+
+So, we end up with a negative PEG in period one.
+
+And from a PEG perspective and a turnaround perspective, we want to see it on a discount to the sector.
+
+Moving into year two, period two for case number eight, what do we have?
+
+Well, we have a positive stock price and we have a positive EPS, but we also have a positive earnings growth number. So, we end up with a positive PE divided by a positive earnings growth percentage.
+
+So, we end up with a positive PEG in the second period.
+
+And because for case number eight, this is a turnaround story, when we look at PEG two for the stock relative to the sector, the numbers can, of course, be slightly off or quite wild when relative to the sector.
+
+So, we don't put as much emphasis on the importance of PEG two for a turnaround story when comparing it relative to the sector.
+
+So, in period two, that PEG number for the stock can be the same.
+
+It can be slightly higher, it can be way higher, or it can be slightly lower, or it could be close to zero.
+
+And the sector number can just be higher or lower in comparison to that.
+
+What's important for us is to have evidence that the PEG is simply going from a negative to a positive position.
+
+And even with PEG one, with case number eight, because the PEG is just negative, we obviously place less importance on PEG in our analysis, because it just comes out as a negative perspective, and doesn't really tell us much in terms of what the market thinks of the stock on from a valuation perspective, when we look at it with PEG.
+
+With case number nine, this is where PEG becomes less important to our analysis as traders, when we're looking at long trade ideas, because the numbers can just be very wild.
+
+So, think about period number one in terms of the PEG one.
+
+We're going to have, for case number nine, a negative PE ratio divided by negative earnings growth.
+
+So, obviously, this is a bad situation to be in for the company.
+
+It has negative EPS.
+
+So, therefore, with a positive stock price and a negative EPS, we have a negative PE ratio, and we have negative earnings growth.
+
+So, the issue is here is that the PEG is not reflective of reality.
+
+The PEG one, when you divide a negative by a negative, is going to come out as positive and it could likely be on a premium to the sector.
+
+So, it doesn't reflect the reality of the situation.
+
+So, we put a lot less importance on PEG ratio for case number nine.
+
+In period number two for case number nine, what are we ending up with?
+
+Well, we are ending up with positive EPS.
+
+So, either it's going to be flat or positive EPS coming from a negative EPS position.
+
+So, what's going to happen there?
+
+We're going to have positive EPS and positive stock price, therefore, a positive PE ratio.
+
+Additionally, in period number two, we're going to have positive earnings growth.
+
+So, when we're dividing the positive by the positive, we end up with a positive PEG.
+
+And the PEG two for the stock can simply be the same higher or lower than the PEG two for the sector.
+
+So, with case number nine, like case number eight, we're putting a lot less importance on PEG ratio overall in our analysis, but what we're looking to see is a normalization of PEG.
+
+So, we're looking to see evidence when we move from period one to period two, where in period one, we have a situation, whether it's case number eight or case number nine, where the PEG is not really reflective of reality and doesn't really tell us much, where we're moving from this to a period, period two, where the PEG ratio becomes somewhat normalized.
+
+So, when we are going through our quantitative process and we are identifying long trade ideas and we think we've found what could potentially be a turnaround story, so a case number eight and case number nine, when we see our PEG profiles, we are placing less emphasis on their importance for us in our interpretation and understanding of what is actually going on with the stock.
+
+What we need to be doing is focusing on the PE ratio in isolation and comparing it to the sector to get a better understanding of how the market values the stock relative to the sector and whether that means anything, or we're looking at the earnings growth number and we're looking at that earnings growth number for the stock in isolation relative to the sector and whether that means anything in our understanding and interpretation of what's going on.
+
+The PEG ratio, the numbers can just be a little bit all over the place for case number eight and case number nine.
+
+So, we simply take note of it, we acknowledge it and we look to see if there's an actual normalization in the PEG rate for period two versus period one and we just understand that the PEG overall, when we just divide the numbers by one another, the numbers can just be misleading as to what is actually going on. And then what we do is we move further and we do further work digging deeper to figure out what is actually going on in the stock and whether it's a genuine turnaround story or not.
+
+What we really want to know is whether it genuinely has been an ex-growth stock for a long time and the stock is potentially down a lot and is beaten up and we are sitting in a phase four or phase five situation.
+
+Because in that context, with the PE ratio and the earnings growth profile, we are probably looking at a potential turnaround story.
+
+Now, let's move on to short idea processing when we're looking at potential turnarounds.
+
+And if you recall, there were three earnings growth profiles from our set of earnings growth profiles when we were processing for short ideas, there were three earnings growth profiles that were not ideal for the short setup and weren't close to ideal for the short setup.
+
+So we have our case number five, our case number eight and our case number nine.
+
+And if you recall, case number five was in a EPS backdrop that was still positive EPS.
+
+And case number eight and nine were actually loss making operations.
+
+So let's have a look first at our case number five, where we have positive EPS.
+
+So the earnings growth profile is like our cases seven and eight from long ideas.
+
+When we're looking at the earnings growth profile through a long lens, we have positive EPS, where we have positive EPS, where we have positive EPS, where we have negative EPS, where we have positive EPS.
+
+So we have a positive EPS, where we have negative EPS, where we have negative EPS.
+
+And when we're doing that, it's obviously not an ideal short setup, especially if it's in a phase four or phase five scenario.
+
+And of course, if it's very low market cap, what we want to be doing here from a short perspective is catching this type of earnings growth profile in the phase two and phase three moves that are down in the stock, assuming that the earnings growth two number is a hope or fantasy number set by the analysts.
+
+So it is very dangerous to be shorting this type of earnings growth profile when it's in phase four or phase five.
+
+We want to be catching this type of earnings growth profile in phase two and phase three moves down, assuming that the EPS number, the earnings growth number in period two is somewhat of a hope or fantasy number.
+
+And what really matters here, and this is how you have to look at everything when we're looking at these types of earnings growth profiles.
+
+What really matters here when we're shorting is what part of the X growth phase are we actually in?
+
+So are we early to the party or late to the party?
+
+Has it just gone X growth? So are we in phase one or phase two, for example?
+
+Or has it been X growth for a long time and the stock is down a lot, say 50, 60, 70, 80% plus and the stock is sitting in a potential phase four or phase five scenario?
+
+An early stage X growth stock is potentially a short on this type of earnings growth profile.
+
+A late stage X growth stock, which has a management operating plan to create an EPS turnaround and has been in phase four or phase five for a long time, can actually be a value play from the long side.
+
+So we might we may see, for example, value investors coming into the market to pick up that stock.
+
+From a short perspective, this can be very dangerous for us.
+
+So case five has potential as a short as long as it's early on in the X growth phase.
+
+Now let's have a look at case number eight.
+
+So for our short ideas case number eight, this is the loss making case nine from our long ideas profiles.
+
+Analysts are forecasting a total turnaround in EPS from a loss making position to a positive profit making position.
+
+So we're looking at case number nine from long ideas profiles, but we're looking at it through a short ideas lens.
+
+This is our short ideas case number eight.
+
+Now looking at it through a short ideas lens, we definitely don't want to be exposing ourselves to this type of profile if it's in phase four or phase five.
+
+This is an extreme turnaround in the EPS and EPS growth.
+
+From a short ideas perspective, we want to catch this in phase two and phase three.
+
+If it's just gone X growth and the earnings growth two number is a hope or fantasy number.
+
+So this is a very, very opportunistic situation for longs.
+
+And it's dangerous for shorts, especially in phase four and phase five.
+
+Now thinking in the bigger picture here.
+
+It's obvious that our case number five and our case number eight are not ideal situations when we're looking for short setups.
+
+If we go back to case number five for a moment.
+
+And we think of the notion of whether we are going with the market or we're going against the market.
+
+If we look at the earnings growth profile of the stock in absolute terms, we go from negative earnings growth to positive earnings growth from period one to period two.
+
+On an absolute basis, we are arguing with the market here if we are looking to short the stock.
+
+On a relative basis, however, it's debatable as to whether we are arguing with the market here.
+
+Because in both periods, the stock's earnings growth is lower than the sector.
+
+So it has potential to be a short dependent on what stage of the X growth phase it's in.
+
+Remember, this is a positive EPS backdrop.
+
+The stock is experiencing negative earnings growth in period one.
+
+So that's not a great situation if you have positive EPS as a company.
+
+And then the analysts on their forward looking estimates for the second year are forecasting some earnings growth potential.
+
+That may not happen.
+
+If this is in phase two and phase three, this would be a potential short opportunity.
+
+However, if it's in phase four and phase five and it's been in the earnings growth decline, so gone X growth for a long time and it's in phase four and phase five.
+
+This is when you're late to the party.
+
+So this can end up being dangerous for a short.
+
+So when we think of this earnings growth profile from a short perspective and whether we are arguing with the market or not, it's debatable in all phases.
+
+But we would obviously much rather catch something like this in phase two and phase three rather than phase four or phase five because we have a higher chance that the earnings growth two number is a hope or fantasy number and we have much more downside potential in the stock.
+
+And with our further work on the stock, on the company, both quantitative and qualitative, we can increase our chances by understanding whether this earnings growth two number is likely to be a hope or fantasy number.
+
+When we think of our case number eight from a short ideas perspective, again, where we are in the X growth phase really matters.
+
+Because the earnings growth profile is so wild in comparison to case number five and we're coming from a loss making position.
+
+This type of earnings growth profile when we're in phase four and phase five is way more dangerous.
+
+And also in phase two and phase three could actually present us with even bigger opportunity, but it can also be dangerous in phase two and phase three as well.
+
+From a perspective, regardless of which phase we're in, of whether we are arguing with the market here or not, this is much more likely a situation where we are arguing with the market.
+
+So because the EPS growth profile is so wild and there's such a big turnaround and analysts are forecasting such a big turnaround.
+
+It's likely that there's potentially a lot of conviction around this second period earnings growth number.
+
+Yes, we can do further work, further quantitative and qualitative work on this to determine whether we think the earnings growth number in period two is a hope or fantasy number, or the expectation is just simply too high.
+
+But remember, because the EPS turnaround, the earnings growth turnaround, it's coming from such a low base, a loss making situation with EPS to a positive situation with EPS and earnings growth.
+
+Regardless of which phase it's in, this can actually be dangerous for shorts.
+
+So similar to when we looked at this earnings growth profile under conditions of looking at it through a long ideas lens, this type of earnings growth profile for shorts can provide the biggest profit potential, but it can also provide a very big loss potential.
+
+It's high risk.
+
+We definitely do not want to be exposing ourselves to this type of profile.
+
+If a stock exhibits this profile and it's been down quite a lot and it's in phase four and phase five and it's been there for a while.
+
+We have to admit to ourselves that we are arguing with the market regardless of the phase that we're in.
+
+But if we are going to expose ourselves to something like this, we want to be making sure that it's much higher probability.
+
+So we want to be catching something like this in phase two and phase three.
+
+Moving on to case number nine.
+
+This is like our case number 10 from long ideas profiles, but it's a loss making operation.
+
+So when we're looking at this type of profile through a short ideas lens, we definitely don't want to be exposing ourselves to this type of profile in phase four and phase five.
+
+We obviously again want to catch this type of profile in phase two and phase three, when it's close to have just gone X growth and the earnings growth number in period two, we can determine that it's somewhat of a hope or fantasy number from analysts.
+
+It's very dangerous to be short earnings growth profiles like this, especially in phase four and phase five.
+
+Now, when we think about our price earnings ratio backdrop, if you recall, our ideal PE setup for short trade ideas.
+
+So we have positive EPS, therefore a positive PE.
+
+And in both period one and period two, we have the stock PE on a discount to the sector.
+
+We have sector EPS rising, therefore we have a lower PE2 than PE1 for the sector.
+
+And for the stock, we have EPS falling, therefore we have a higher PE2 versus PE1 for the stock.
+
+But the stock's PE is on a discount to the sector in both periods.
+
+This is our ideal price earnings ratio setup for short ideas.
+
+An example of a non-ideal price earnings ratio profile setup for short ideas would be if we had EPS that's negative in both years.
+
+So we have a negative PE1 and a negative PE2.
+
+So the company is a loss making operation.
+
+And it simply has, because of negative EPS, a negative PE1 and a negative PE2.
+
+So loss making in both periods.
+
+If we see this type of PE profile in the backdrop, when a company is in phase four or phase five of the X growth phase, this is probably a turnaround story or potential value trap.
+
+If you see this type of PE profile in the context of a stock that just has been going up a lot and and continues to trend up and hasn't even gone X growth, so it hasn't even entered a phase one scenario.
+
+It's very likely that you're looking at a revenue growth story.
+
+Therefore, from a short trade ideas perspective, this is not an ideal setup.
+
+It's very unlikely that you're going to pull up this type of PE profile and we are sitting nicely in a phase two or phase three situation because the company is losing money in both periods.
+
+Well, it's forecasted to lose money in both periods.
+
+And the stock will probably have moved quite a lot already.
+
+And if it is genuinely X growth, then it's probably going to be in a phase four or phase five situation and you're going to be late to the party.
+
+Now let's think of our PEG profiles for short trade ideas.
+
+If you recall for our ideal sequentially negative earnings growth profile or even some of our close to ideal negative earnings growth profiles, you'll recall that if we just have negative earnings growth, we're going to end up with a negative PEG.
+
+Therefore, there's no ideal PEG set up with our ideal shorts or close to ideal negative earnings growth profile potential shorts.
+
+We just get a negative PEG and it doesn't really tell us much about what's really going on with the stock relative to the sector.
+
+We have to look at price earnings ratio.
+
+So how the market values the company relative to the sector.
+
+And we have to look at that in isolation.
+
+And we also have to look at the earnings growth percentage numbers.
+
+So the changes in EPS on a percentage basis in isolation relative to the sector as well.
+
+And not pay attention to the PEG numbers in this situation when we have negative earnings growth profiles.
+
+Now, when we think of our cases of potential turnarounds through a short ideas lens, if we think of case number five and what the PEG profile is going to look like there.
+
+Well, in the period number one, we're going to have a negative PEG.
+
+Because the backdrop is that the stock has a positive EPS.
+
+And therefore, it's going to have a positive price earnings ratio, but it has negative earnings growth.
+
+So it's going to have a negative PEG one.
+
+Now, in the second period, the backdrop is still that we have positive EPS.
+
+But we have earnings growth that is positive.
+
+And remember, in our example with case number five, the earnings growth profile was that the percentage number for earnings growth in period two was below the sector average earnings growth for period two.
+
+So in this situation, it's likely that the PEG two for the stock is going to be higher than the sector because we are dividing by a smaller earnings growth number.
+
+However, it can be the same or lower than the sector.
+
+It really depends on the relationship between the EPS and the earnings growth percentage number.
+
+So in period one, it's likely that the negative PEG is going to be on a discount to the sector.
+
+And in period two, the positive PEG is going to be on a premium to the sector, but it could actually be the same or lower depending on the relationship between EPS and the percentage number.
+
+So depending on the numbers, how they've changed from period one to period two, we can get a PEG that's the same or lower, but it's likely that it's going to be higher.
+
+But again, we reached the same conclusions here with PEG overall when we consider what messages we can take from the market when we're thinking about the PEG ratio and what it means for the stock.
+
+In case number five, we again take the same message that what we're seeing in the PEG doesn't really tell us much about what's going on with the stock itself. All we are seeing here is some sort of normalization of the PEG ratio from period one to period two. We have to do further work and look at the price earnings ratio in isolation and what the market thinks of the stock via PE and have a look at the earnings growth percentage profiles and understand those in both periods as in whether they are premium or discount to the sector. And we have to do further work to enable us to understand what's really going on with the stock. The PEG ratio doesn't really tell us much in case number five.
+
+When we think of PEG ratio for our next case, case number eight, what have we got here? Well, the numbers are just all over the place or PEG ratio because we have a positive PEG in period one because of the double negative, because the stock has a negative EPS. Because remember, we are a loss making operation in case number eight. That's what we're looking at here, a company that has negative EPS.
+
+So in period one, we have negative EPS. So we have negative PE, but we also have the double negative.
+
+We have negative earnings growth one. So the PEG one is just going to come out as a positive number, unlikely that it's a very high number and on a premium to the sector. So again, the PEG one here doesn't really tell us much about what's really going on with the company.
+
+When we move into period two for case number eight, in period two, if you recall, the earnings growth number was very high, around 100% and EPS had gone positive from a negative position. So we end up with a positive PE and a very high positive earnings growth number. So what we're probably going to see here is obviously a positive PEG ratio, but we're going to see it as being a low number and likely that it's on a discount to the sector in PEG two. So taking the PEG ratio in period one and two, we really can't read too much into this information as to the messages it's telling us about what the market thinks of the stock. The numbers are just all over the place. We just recognize it, we take note of it, and we understand that there's some sort of normalization of the PEG ratio occurring. For our case number nine profile, when we're looking through a short ideas lens, in PEG one, we are again going to have a positive PEG ratio because of the double negative, because the stock has negative EPS in period one. So it has a negative PE ratio and it has negative earnings growth. But it's likely that our PEG one for the stock is going to be lower than the sector because when we're doing the double negative division, the negative for earnings growth is a very big number.
+
+Moving into the second period again, we have negative earnings growth, but the number is smaller and we have negative EPS. So we have a negative PEG and we have negative earnings growth, therefore a positive PEG two.
+
+But the negative earnings growth number in period two for the stock is not as big in magnitude in the negative as the negative earnings growth number in period one. Therefore, when we do the division of the negative PE and a smaller negative earnings growth number for the second period, we end up with a very high positive PEG two number. So in summary, when we're looking at PEG profiles, that could be turnarounds or value traps. We mustn't think that there's an interpretation to these PEGs.
+
+A positive EPS number with negative earnings growth simply creates negative PEG. And a negative EPS EPS number with a negative earnings growth number simply creates a positive PEG. So we can't glean useful information from these numbers because they don't tell us much about what the market thinks of the stock.
+
+Our interpretation is going to be a weak interpretation. We have to look at the price earnings ratio valuation and earnings growth percentage in isolation. And we have to do further work to interpret what's really going on with the stock. So if the stock is actually an X growth stock or not, and at what stage of X growth the stock is actually at. So are we in a phase one, phase two, three, four or five scenario.
+
+So for turnaround situations, the stage at which a stock has gone X growth is very important.
+
+So turnaround stories by the very definition of what the company has experienced in the past and in the present. They are experiencing earnings growth problems. So whether we're looking at earnings growth profiles through a long or short lens, it's important to consider how far along a stock is after it has gone X growth. So first question always to answer, has the company actually gone X growth?
+
+How far down the line is the company in terms of going X growth?
+
+How much is the stock price down? How much is actually reflected in the stock price move already?
+
+How bearish are the earnings expectations looking forward? And what are the reasons for the earnings decline so far? And do we think it's going to continue?
+
+So are we in phase one, phase two, phase three, phase four or phase five?
+
+So for long ideas, the earnings growth turnaround stories for potential longs that we've looked at here are best considered if we are in a phase four or phase five situation of an X growth story.
+
+We need to be very careful that we're not getting into a long position of an X growth stock where the earnings growth profiles like cases eight and nine are in phase one, phase two or phase three, as these could just be very bad long positions.
+
+What we want to see is cases like case eight and nine in phase four or five.
+
+So the stock is down a lot.
+
+It's been going down for a while, could be one year, two years, three years.
+
+It's been in phase four or phase five in those scenarios for quite a long time.
+
+We have the case eight or case nine exhibited earnings growth profile.
+
+And we're having an aggressive turnaround in earnings growth.
+
+So in the situation of case number eight, we have a positive EPS situation with negative earnings growth in period one.
+
+We have a positive EPS situation in period two, but the earnings growth goes from negative to positive, at least at the sector level.
+
+And in case number nine, we have a wild turnaround in EPS where we go from negative position, loss making to profit making, and we go from negative earnings growth to very positive earnings growth.
+
+And we're capturing this in phase four or phase five, not in phase one, two or three.
+
+So we have potentially very big upside for a turnaround story as a long position.
+
+Now for shorts, it's a different situation.
+
+The earnings growth turnaround stories.
+
+So the profiles that we've looked at for potential short ideas are best considered if we are in phase two or phase three of an X growth situation.
+
+If we see earnings growth profiles like the short cases five, eight and nine, they could be in phase four or phase five, and they could actually be genuine turnarounds.
+
+Or indeed, they could end up being value traps.
+
+So whoever ends up buying those stocks and getting sucked in to the turnaround story, they could end up having a bad position and lose money because they may never deliver on the forecasted EPS and EPS growth turnaround.
+
+So they could be value traps and longs could lose money.
+
+But we don't care.
+
+We are looking to optimize not just on long positions, but also on short positions.
+
+We don't care because it's a phase four or phase five scenario.
+
+We just choose not to play.
+
+So we look elsewhere, maybe in the same sector or maybe in other sectors.
+
+We look elsewhere for phase two and phase three situations.
+
+And we choose not to play.
+
+We are going to optimize better somewhere else with a short position.
+
+So to put this in the most simple terms possible.
+
+For long ideas, we like our cases, case eight and case nine, but we want them in phase four or phase five.
+
+For short ideas, we like our cases, case five, eight and nine, but we want them in phase two or phase three.
+
+But we should always understand that these are not ideal situations for both longs and shorts.
+
+For example, for a long idea, that's a turnaround.
+
+Of course, we can be wrong and it can be a value trap and we can lose money.
+
+The turnaround may not materialize and things can get worse.
+
+We have a 20 to 60 day time horizon and our timing is very, very crucial.
+
+Okay, especially for turnarounds.
+
+Okay, especially for turnarounds.
+
+So think about a situation where a stock has been in phase four, then phase five for a number of years.
+
+If we're going to go long a turnaround story in that situation, we need to actually pick the financial quarter So think about a stock for a moment that goes from say $100 down to $20.
+
+So we're down 80% over a three year period.
+
+And it's been trading between say $15 and $25 for the last 18 months.
+
+Okay, in that situation, if there is genuinely a fundamental turnaround happening, the stock may go from 20 to 30.
+
+So it's up 50% in one quarter and we can miss that 50%.
+
+That's fine.
+
+But we now have fundamental evidence that the turnaround is happening.
+
+It may be in most situations better instead of trying to pick the quarter that it's actually going to make that move to let the move happen first, and then we jump in in the next quarter and we can ride that stock price up.
+
+Because if there is a genuine turnaround, fundamentally, the stock is so beaten up, the stock is coming from such a low base, that even catching it in the second quarter, we're still going to have a lot of upside.
+
+For short ideas, we stay away from shorting what we think are not turnarounds.
+
+So value traps that are in phase four and phase five.
+
+What we want from X growth names when we are shorting, we want these X growth names in phase two and phase three.
+
+There is absolutely no requirement to be a hero when we're trading, especially from the short side.
+
+So returning to our earnings growth profiles.
+
+So our earnings growth profiles that are non-ideal, that exhibit characteristics of a potential turnaround story or value trap.
+
+So late stage X growth or earnings growth profiles that exhibit characteristics of potentially an early X growth stock.
+
+When we look at these profiles, so when we refer to our profiles, seven, eight, nine, 10 in the long earnings growth profile download, and we refer to five, eight, nine in the download for earnings growth profiles for shorts, you will have realized by now or should have realized that all of these profiles are essentially similar or the same.
+
+So the profiles overlap.
+
+But what we're doing here is simply looking at them through the lens of either profit or loss making operations and as potential longs or shorts.
+
+So looking at them through a long lens or a short lens.
+
+And when we do this relative to other more preferable earnings growth profiles for long and short setups, this is why they are not ideal and don't fit the classic long and classic short fundamental setups.
+
+However, this doesn't mean that they're not useful to us as traders.
+
+These types of ideas have their place and time in any long short equity portfolio.
+
+So, for example, in a 10 stock portfolio that's equally weighted with, say, six longs and four shorts, we may, as traders, portfolio managers at any one time have a couple or two or three of these positions in the portfolio for diversification of ideas purposes.
+
+We can have these positions as long as they are sized appropriately.
+
+So if we are going to have long or short positions in stocks that exhibit these types of earnings growth profiles, the key to success is going to be in our ability to determine whether these stocks are actually genuine turnaround stories. So on the long side, or X growth names, early stage X growth names on the short side, and with our timing. So whether we are in phase one, two, three, four or five.
+
+At this stage of our quantitative process, we will have got to this stage by already filtering the forward looking estimates and realizing that earnings growth profiles of certain stocks within a sector are not ideal. And the price earnings ratios and pegs of those stocks are telling us that there's something potentially wrong with the companies. We will have gone through the sector and we will have identified both positive and negative outliers and identified the types of profiles and types of trades available within that sector. So that being classic longs and shorts and everything else in between.
+
+Now we're hunting for X growth and potential turnaround names. So when we've gone through our sector quant and our identification process, it's now our job to go and find out what's wrong with the companies that exhibit these X growth and turnaround profiles. Why they have poor valuation and what is driving the bad earnings growth.
+
+What is going on behind the curtain? And the way we do this is through further quantitative and qualitative work.
+
+So first we do further quantitative work. But we do a backwards looking quantitative assessment of the company's balance sheet.
+
+And then we do a forward looking qualitative assessment of the management operating plan.
+
+So here and for the rest of this video, we're going to be looking at a backwards looking quantitative assessment and the metrics that we use.
+
+And remember at this stage, we have already done a forward looking quant process and identified a potential X growth name or turnaround.
+
+So we now go to the backwards looking financial statements data of the balance sheet and combinations of the balance sheet and profit and loss account of the company.
+
+So we look at the last annual report and or quarterlies if necessary to get a snapshot of the financial health of the company.
+
+So with reference to our quantitative and qualitative dashboard, we're going to be looking at balance sheet metrics, debt to equity ratio, interest coverage ratio, current ratio, quick ratio, working capital over total assets ratio and book value per share.
+
+We're also going to be looking at metrics that combine data from the company's balance sheet and the profit and loss account.
+
+So these are sales to assets ratio, return on assets ratio, return on assets ratio, return on equity, ROE.
+
+We're also going to be looking at a metric from the cash flow statement, free cash flow yield, and inferring a metric called price over free cash flow per share.
+
+So now we are assuming that we've done our work on the left hand side of the dashboard.
+
+So we've been through the identification process of the quant phase where we've used the filtering metrics of market cap, earnings growth, revenue growth, PE ratio, and PEG ratio.
+
+We've checked our backwards looking metrics like enterprise value, EBIT and EBITDA, EV over EBIT and EV over EBITDA.
+
+We've checked those metrics to learn more about the stock and where stocks fit in relative to the overall sector.
+
+So we have a better understanding and good understanding at this stage of how the landscape of the sector is set out.
+
+But we are also assuming here that we've now identified what could potentially be late stage X growth names.
+
+So turnaround or value traps and also potentially early stage X growth names.
+
+So we've identified our cases of earnings growth profiles that we've looked at through a long lens and a short lens.
+
+So our cases 8 and 9 looking through a long lens and our cases 5, 8, 9 looking through a short lens.
+
+And we are now going to do a backwards looking quantitative assessment looking at static metrics from the past.
+
+So from past annual accounts and also potentially quarterly accounts.
+
+And we're doing that to help us get a better understanding of where we could be in the X growth phase.
+
+So we're looking to these metrics to give us a litmus test of the overall financial health of the company.
+
+And in terms of financial health, where we've come from, where we are at the last set of accounts and where we could be going.
+
+But where we could be going ultimately will come down to the quality of the forward looking operation.
+
+And that is going to be a forward looking qualitative assessment.
+
+And that is still to come and will come a little bit further in the PTM video series.
+
+So first, let's have a look at our first metric debt to equity ratio.
+
+So debt to equity ratio, it's data taken from the balance sheet.
+
+We're looking at total debt over shareholders equity or it can be calculated as short term debt plus long term debt plus other fixed payments over shareholders equity.
+
+So the debt to equity ratio measures how a company is actually financing its operations.
+
+So in the case of an X growth stock or potential turnaround stock, these would constitute bad operations.
+
+So a debt to equity ratio of one means that the company is financing its operations with an equal amount of debt and equity.
+
+A debt to equity ratio of two means that the company is financing its operations with twice the amount of debt versus equity.
+
+And a debt to equity ratio of 0.5 means the company is financing its operations with twice the amount of equity versus debt.
+
+Now, a debt to equity ratio of around two or above in most industries is considered dangerous, especially if the debt is financing a contracting business.
+
+So contracting operations.
+
+So when we're doing further work and looking at metrics like debt to equity ratio in the context of a turnaround story or perhaps something turning out to be a value trap.
+
+The debt to equity ratio provides a litmus test on how difficult a turnaround will likely be.
+
+All things being equal, a turnaround will be easier for a company that finances its operations mostly with equity.
+
+So it has a debt to equity ratio that's one or below versus a company that finances its operations with mostly debt.
+
+So a debt to equity ratio that is above one or way above one.
+
+Now, a debt to equity ratio can't be used in isolation to determine whether a company is actually a turnaround or we're getting sucked in to a value trap.
+
+It must be used in conjunction with other metrics to get an overall picture.
+
+Most obviously, what we want to understand is the debt distribution.
+
+So the size of the corporate bonds, the size of loans, the maturity of the debt, the coupon and the interest payments.
+
+And it's important to remember the context here.
+
+So the context that we're in.
+
+We've arrived at this situation because we are analyzing bad operations.
+
+So operations that have already contracted.
+
+So it's important to remember that a company's current operations is actually financing the debt.
+
+And we've arrived here because they've already contracted.
+
+Next up in our backwards looking quant, we would look at interest coverage ratio, which is EBIT over interest expense.
+
+So the interest coverage ratio, it measures how many times a company can cover its current interest payments with its available earnings.
+
+So is the operation in a comfortable position servicing their debt or not?
+
+So for example, if a company made say $900 million of EBIT last year and had last year in the last set of accounts, $3 billion of debt at the end of the financial year with a total interest expense of $270 million, then the interest coverage ratio is going to be $900 million over the $270 million of interest expense, which is a 3.33 times multiplier.
+
+This is a comfortable situation.
+
+If a company, say, had an interest coverage ratio of 0.9, then this would probably be very bad, especially when we're in the context of contracting operations.
+
+So in the context of assessing turnaround stories or whether these turnaround stories actually end up being value traps, or even when we're analyzing X growth names that are either early stage or some way down the line, the interest coverage ratio is important, but it's necessary to understand that we are looking at static numbers and backwards looking data.
+
+What you have to do as an exercise with debt to equity ratio and interest coverage ratio is calculate them for each financial year and quarter over time to see if the position has been strengthening or worsening, and also look to the reasons why it has been strengthening or worsening.
+
+Now, an interest coverage ratio of 2 is generally considered the minimum acceptable ratio across differing industries, but what is considered acceptable to the market or not across different industries differs.
+
+Also, it's important to remember that companies like governments also have credit ratings, and creditors will assess a company's operations versus its ability to service its debt in order to issue new debt or not. The credit ratings of the company's debt will also depend on this.
+
+Now, just as a side note, if you pull up companies that are in trouble, or on paper they look like they're in trouble when we're looking at their past backwards looking financial accounts.
+
+So, for example, if a stock that has a very high debt to equity ratio of 3.2 with an interest coverage ratio of 1.3, and they have operations that have already cratered, the stock itself is probably going to reflect this already.
+
+It's probably already traveled.
+
+So, it's important to remember this stuff because we never want to be in a situation where we're looking at past financial statements, looking at bad numbers, and then taking positions like a short position in a stock, just because on paper, in the last set of financial accounts, in a backwards looking context, the numbers looked bad.
+
+We need to always be thinking of looking forwards, because it's likely in this situation that the stock has already traveled down.
+
+Now, in terms of interest coverage ratio in corporate credit markets, we do have our credit ratings for companies, and credit quality is evaluated by credit agencies, and it really matters.
+
+It really matters because of the price of or the interest of the debt, and the risk and the spread of that debt over the benchmark rate.
+
+So, the 10-year treasury rate.
+
+So, we have our various ratings for corporate debt in the same way that we have ratings for sovereign debt, for government debt.
+
+So, we have our investment grade, our A's, and we have our high yield, and we have our junk.
+
+So, the company's ability to be able to finance its debt via interest payments from its current operations, is assessed by the credit agencies, and it will determine their future ability via the credit rating.
+
+It will determine the company's future ability to finance its debt payments, but also the company's ability to issue more debt and the price or spread or risk over the benchmark rate that this debt is priced at.
+
+So, credit ratings agencies will look to the interest coverage ratio and use that as an input into determining the quality of the company's credit and the credit rating.
+
+So, for example, if you think back to our previous example where we had an interest coverage ratio of 3.33, if we look at our credit ratings table, this would constitute a credit rating of investment grade.
+
+So, above an interest coverage ratio of 3.33, if a company's earnings are falling, so our EBIT is falling, so the operations are contracting, and we are, for example, in early stage X growth and coming from an investment grade rating where the interest coverage ratio is above 3, if we can catch that as a short in phase 2 or phase 3, if the earnings of the company, the operations, continue cratering, then it could mean that the credit of the company is going to get downgraded by the ratings agencies.
+
+And the interest on that debt will be priced higher. Therefore, the spread versus the benchmark, the 10-year will blow out, making it even more difficult for the company to use the debt to finance its operations that are cratering. So, it is a continuous negative spiral. They both affect each other.
+
+On the flip side, let's say we identify what could be a late-stage X growth situation, where we are in a potential phase 4 or phase 5 scenario, and we have a very low credit rating via a low interest coverage ratio. So, let's say we had an interest coverage ratio of 0.8.
+
+So, the company has a very high spread over the benchmark over the 10-year, and the company is barely able to cover those interest payments from their earnings. But looking forward, we have a management operating plan in place and analysts are forecasting a turnaround in earnings in the company.
+
+So, what this could do if the forecast is hit and it looks like earnings growth is going to actually go positive and accelerate. So, we're coming from a cratering scenario in operations and we are late-stage with a low interest coverage ratio moving into a situation where earnings are going to go up by quite a lot. This is going to improve the interest coverage ratio and the company's ability to service its debt.
+
+The ratings agencies would put the rating under review and we might see the debt of the company get upgraded in their rating. And therefore, in the future when the company issues new debt, they would be issuing at a lower spread. So, at a lower level of interest and this debt would be used to finance ever-growing operations. So, again, we have both sides affecting each other. The debt financing operations and the operations determining credit rating and the price or interest of debt.
+
+So, we have, in this instance, a positive spiral.
+
+But what if the company's earnings don't actually turn around? So, earnings don't go up as the market expects.
+
+So, the operations just stay the same. Well, in that situation, we've entered a scenario of a value trap.
+
+What's going to determine whether the company turns its earnings around or not and the fortunes of the operations going forward is the quality of the operation improving. So, that would be our qualitative assessment which we're going to look at later. Now, next up, in our backwards-looking financial statements, quant metrics that we look at, we're looking at now the current ratio, which is current assets over current liabilities. Current assets is made up of cash and cash equivalents that can be accessed or liquidated within 90 days, plus marketable securities that can be liquidated within one year, plus inventory, plus accounts receivable, and other receivables. Current liabilities is made up of short-term debt, so notes that are payable within one year, plus accounts and trade payable, plus accrued expenses, so taxes and interest invoice that's not been received, and deferred revenue.
+
+Now, the current ratio is sometimes called the working capital ratio, and it's a liquidity ratio that measures the company's ability to meet its short-term obligations that are falling due within one year.
+
+So, a company, for example, that has a current ratio of less than one, does not, in many cases, have the capital on hand to meet its short-term obligations. So, for example, its short-term debt obligations, and perhaps accounts payable. So, if these liabilities all came due at once, then the company would be technically insolvent. Now, a company with a current ratio that's greater than one indicates that the company has the financial resources to remain solvent in the short term. So, in the context of a turnaround or value trap situation, the current ratio needs to be used in a similar way to the debt-to-equity ratio and the interest coverage ratio. It's best to look at how the current ratio has changed over time due to the cratering operations.
+
+So, remember, in this context, we have arrived at turnarounds because we have already had cratering operations.
+
+So, imagine the following scenario of a company's current ratio where revenue and EPS has already been falling, so contracting for four years in a row. So, in 2019, we have a current ratio of 2.1.
+
+In 2020, we have a current ratio of 1.6. In 2021, current ratio is 1.1. And in 2022, current ratio is 0.87.
+
+So, we can see that the company's position in terms of its current ratio has been deteriorating over the four years. And if operations are still cratering and there's an absence of a strong management operating plan, then this is likely to be a value trap. Now, there is also another liquidity ratio that we can add to our armory when we're looking at backwards-looking financial statements. And that's the quick ratio.
+
+So, the quick ratio is calculated as cash and cash equivalents plus marketable securities plus accounts receivable over current liabilities. Or, as an alternative calculation, we have our cash and cash cash equivalents plus marketable securities and accounts receivable over accounts payable.
+
+So, the quick ratio is an even more liquid focused version of the current ratio. And it's sometimes referred to in the market as the acid test ratio. What it does is it measures a company's ability to pay its short-term liabilities by having assets that are readily convertible into cash.
+
+So, you'll notice that the current assets that is used in the numerator for the quick ratio, they don't include inventory or other receivables. That's because it might take too long to convert inventory and other receivables into cash to cover immediate liabilities if the company is required to do so.
+
+So, cash and cash equivalents plus marketable securities and accounts receivable are known as quick assets.
+
+So, in the context of when we're analyzing whether something could be a turnaround story or a value trap where we have a backdrop of operations that have been sliding or cratering in the past, we can again not look at the quick ratio as a snapshot or in isolation. We have to look at it and how it's evolved over time.
+
+So, in the same way as when we looked at the current ratio when we had sliding operations in the past, moving to a situation that we're in at the present, we look at the quick ratio in the same way.
+
+We have sliding operations coming to the present and we look at how the quick ratio has evolved over that time period when operations have been contracting.
+
+So, we get a barometer of what the financial health of the company looks like in terms of liquidity, so the quick ratio and the current ratio.
+
+Now, if you look at both of these numbers, the current ratio and the quick ratio, and you find that a company has a low quick ratio that's say 1.1, but a high current ratio of say 2.1, what does this mean?
+
+Well, it's the difference in the way the calculations are done.
+
+So, we would zoom in at the differences and we would look to see if the company is carrying a large amount of inventory.
+
+And what is the inventory and can the inventory even be sold and converted into cash?
+
+So, we would ask these questions and figure out which is a more accurate picture of the liquidity and the financial health of the company, whether it's the current ratio or the quick ratio.
+
+So, if we have a low quick ratio, but a high current ratio, then the inventory that the company is carrying on its balance sheet, if it can't be sold and quickly converted into cash, then the high current ratio may be flattering the position of the company on paper and the reality is, is that the company is at or near insolvency.
+
+Next up is our working capital to total assets ratio.
+
+Again, taking the data from the past balance sheet.
+
+It is calculated as working capital over total assets, where working capital is current assets minus current liabilities.
+
+So, we take current assets, we take away current liabilities.
+
+So, current assets minus current liabilities, and then we divide by total assets.
+
+So, we have a useful guide here from an accounting perspective that would constitute a good, satisfactory, unsatisfactory, or critical working capital to total assets ratio.
+
+So, for example, if we had a company that had current assets of 2.345 billion and current liabilities of 2.166 billion, we would minus off the liabilities from the assets, and then we would divide by total assets.
+
+So, in this example, 6.498 billion, we would get to a figure of 0.0275, which is 2.75%.
+
+From an accounting perspective, this would be seen as a critical position for a company.
+
+So, according to the table, if you do the calculation for a company for working capital to total assets ratio, and you get a number of 0.3 or 30% or above, this would be considered, from an accounting perspective, a very good, very strong position for a company between 0.15 and 0.3, so 15% and 30%, this would constitute a satisfactory position.
+
+Between 0 and 15, this would constitute, from an accounting perspective, an unsatisfactory position, and a ratio that's negative, so below 0, it would be critical.
+
+But, if it's very, very low and close to 0, it is essentially critical.
+
+It's hovering just above 0, and it's essentially in a very bad position.
+
+The company is in a bad position. It is basically in a critical scenario.
+
+So, in the context of when we're assessing something, a company, whether it's going to be a potential turnaround or potential value trap scenario, this is an important measure.
+
+So, in this situation where we have a critical condition, management need to make long-term asset disposals and perhaps even raise capital via an equity or debt offering.
+
+So, they have to restructure the business.
+
+And on top of that, they will also have to turn around the operation as well.
+
+If they can make some asset disposals, even if there are non-favorable prices, then we could see a turnaround in the cash position.
+
+They can use that to pay down some debt.
+
+And we can therefore improve the numerator in the working capital to total assets ratio and therefore improve the working capital position and the working capital asset ratio itself.
+
+Now, what if the numerator of working capital was actually negative?
+
+So, our current assets minus current liabilities comes out as negative.
+
+Then, of course, we're going to be in a very critical position.
+
+The ratio would just be negative.
+
+Next up on the balance sheet, we can look at book value per share or BVPS.
+
+So, book value per share is stockholders' equity minus preferred stock divided by average shares outstanding.
+
+So, book value per share is basically the ratio of equity that's available to common stockholders against the number of shares outstanding.
+
+And when we compare this to the current stock price in the market, the book value per share can provide us with information on how the company is valued.
+
+So, as in a premium or discount to book value per share and the size of that difference.
+
+Now, in the context of assessing whether a stock is a potential turnaround or even a potential value trap, and in combination with other quantitative and qualitative metrics, it gives us a good idea on the opportunity and the risk of a potential trade idea.
+
+So, the upside and downside on a long or short position.
+
+As a side note, by the way, for our calculation, we are using the average number of shares outstanding options, because the closing period amount may be different if there was a stock issuance or a share buyback program in the market.
+
+Now, we can run through an example here of book value per share.
+
+So, let's say we have a company, XYZ Corporation, and they have $4 billion of stockholders' equity, of which $1 billion is preferred stock, and they have 60 million shares outstanding over the period.
+
+So, our book value per share would be calculated as $4 billion minus $1 billion, so the $3 billion divided by 60 million shares.
+
+So, that would give us a book value per share of $2 billion, so that would give us a book value per share of $50.
+
+Now, if the current stock price is trading at $62, we can say that the stock is trading on 1.24 times book value per share.
+
+Now, let's say after assessing all other quantitative metrics and the management operating plan, it might not be sensible to short this stock, even if you think it's a value trap.
+
+So, even if you've determined that you think earnings are still going to go lower.
+
+So, if earnings and retained earnings shallow out and management have stopped the EPS bleed before even a new management operating plan is even fully working, the risk reward may not even work.
+
+So, the stock may have traveled significantly lower and value buyers could be circling around at the level of the book value per share price, so this would indicate that we're probably in a phase 4 or phase 5 scenario.
+
+And this is exactly why we avoid shorting these situations.
+
+Because a short position in this scenario may only provide $12 of upside in terms of P&L on the short.
+
+So, $12 upside of profit, but have infinite downside.
+
+We want to be seeing much better ROI on our trades than that for shorts.
+
+So, this is why we need to be in phase 2 and phase 3.
+
+We would much rather be short stocks that are traveling into a situation like this rather than shorting stocks that are actually in this situation.
+
+So, does this mean the stock is actually along? Not necessarily.
+
+If you don't believe in the turnaround story, so the management operating plan, and you believe that it's a potential value trap, then if the stock has already traveled, non-participation is always an option.
+
+Something else to consider is that a company can also increase its book value per share by just buying back stock.
+
+So, reducing the share count, the amount of shares outstanding.
+
+If the company has a decent amount of short-term assets like cash and marketable securities, they might actually go and surprise the market with a share buyback program, whilst deploying the new management operating plan for the turnaround.
+
+And this could cause a stock to really rally significantly.
+
+So again, book value per share from our balance sheet is a metric that can't be used simply in isolation.
+
+We need to look at book value per share in the context or next to all other balance sheet ratios and financial health metrics.
+
+Now, we're going to move on from looking at just a company balance sheet to now looking at metrics that combine data from both a company balance sheet and a company's profit and loss statement.
+
+And the first one we're going to look at is the sales to assets ratio, which is net sales over average total assets, where average total assets is equal to assets at the start of the year, plus assets at the end of the year, divided by two.
+
+Now, the sales to assets ratio is sometimes called the asset turnover ratio.
+
+And this metric measures the efficiency of a company.
+
+How well a company is using its assets to generate sales.
+
+And it's almost always calculated on an annual basis.
+
+And the higher the ratio, the better.
+
+However, we do need to be careful when we're thinking that a sales to assets ratio is useful when we're comparing that number across industry sectors.
+
+This is just folly.
+
+It's foolish because they can differ wildly.
+
+So for example, analyzing the sales to asset ratio of a tech stock versus a utility that has massive fixed asset investment and low sales in comparison to the investments made is meaningless.
+
+You have to analyze sales to assets ratios within the same sector and through time to determine if asset utilization is either deteriorating or improving.
+
+Now, in the context of figuring out if something is actually a turnaround story or not, what the sales to assets ratio is going to likely already be low versus the sector.
+
+But it helps us fill in another gap in understanding the overall story.
+
+If a stock has fallen materially already and we see that the sales to assets ratio has deteriorated rapidly and is now low but stable, then in combination with other ratios that we've looked at, we may decide that this could be the signs of the beginning of a turnaround.
+
+So we are sitting potentially in a phase four or phase five scenario.
+
+Ideally, what we'd like to see when we're sitting in that phase four or phase five scenario, as always, is a management operating plan that gives some visibility to a turnaround and maybe even some noises about restructuring.
+
+So there is a flip side to this if we don't actually see that.
+
+And we have a low sales to assets ratio where we have no management operating plan looking going forward and no restructuring plan or activity.
+
+This may cause us to decide that we should avoid it as a turnaround long idea because it could be potentially a value trap.
+
+Now, there is a drawback, a blind spot that we need to take account of with the sales to assets ratio calculation because it doesn't take into account the company making asset investments.
+
+So if the company invests in a new asset and it's a big investment, the ratio could look low.
+
+But future sales estimates could now be going higher.
+
+It has to be looked at in the context of a management operating plan.
+
+A restructuring plan can really change everything very quickly.
+
+Now, another balance sheet profit and loss statement combo metric that we look at is called the return on assets ratio or the ROA ratio.
+
+And it can be calculated in two ways.
+
+There's two ways of doing this.
+
+ROA can be net income over total assets or it can be net income over average total assets, where again, the average total assets is assets at the start of the year plus assets at the end of the year divided by two.
+
+Now, the ROA ratio is similar to the sales to assets ratio, as in it's an efficiency metric.
+
+So it works out how efficient a company is versus its sector peers.
+
+However, instead of using the sales number as the numerator, we use net income.
+
+So it's a profitability measure.
+
+Therefore, a return on investment measure.
+
+So an ROI measure.
+
+So it's measuring how many dollars of profit a company generates for every dollar that is invested in assets.
+
+So in the context of analyzing a potential turnaround story, the ROA ratio is likely to already be low versus the sector.
+
+And if a stock has fallen materially already, and we see that the ROA ratio has already deteriorated rapidly and is now low and stable, then in combination with other ratios, we may decide that this could be the signs of the beginning of a turnaround where we're in phase four or phase five.
+
+And yes, even better if we see a visible management operating plan and some noises about restructuring.
+
+But like the sales to assets ratio on the flip side, a low ROA with no restructuring activity and no visible management operating plan, this may cause us to decide to avoid it as a turnaround long idea.
+
+In terms of drawbacks, we do have the same issue with the ROA ratio as with the sales to assets ratio.
+
+That being it doesn't take into account recent asset investments.
+
+So if the company invests in a new asset, makes a big investment in that asset, the ratio could look low, but future earnings estimates could now be going higher.
+
+It has to be looked at in the context of the management operating plan.
+
+And a restructuring plan can change everything very quickly.
+
+Our next balance sheet P&L combo is return on equity, which can be calculated in two ways.
+
+Firstly, net income over shareholders equity or net income over average shareholders equity, where the average shareholders equity is calculated as shareholders equity at the start of the year, plus shareholders equity at the end of the year, divided by two.
+
+Now a return on equity percentage, it measures a company's ability to turn equity investments into a profit.
+
+And this differs from the ROA, the return on assets ratio percentage, because that includes debt.
+
+However, it is similar in that it's an ROI measure of profitability and efficiency of how dollars are utilized by the company. Now, in the context of a turnaround, we know that earnings have already been falling for a while.
+
+And with some of our earnings growth profiles, they are forecast to potentially fall further and that we could be in a value trap scenario.
+
+So again, to get better context, we have to look at this metric through time and compare it to sector peers to determine if there's been deterioration or any improvement.
+
+And we need to figure out where we are in the bigger picture by using other financial statement, quantitative metrics.
+
+And we need to be figuring out what likely phase we are in when the company has gone X growth.
+
+So are we in phase one, two, three, four or five?
+
+So remember, for value traps, for potential shorts, we don't like phase four and phase five, even if the management operating plan looks suspect.
+
+It can be low market cap and there may be value buyers around and they're probably not lurking too far away.
+
+For turnarounds, for longs, we like phase four and phase five, but we need to see a convincing management operating plan.
+
+And we need to time the trade very well because we are operating in the 20 to 60 day time horizon.
+
+Now, just as a side note, when we're comparing ROE versus ROA, if ROE is materially higher than ROA, it's because the denominator in ROA compared to ROE is much bigger.
+
+And this will be because the company has a lot of debt.
+
+So it's actually a good step to compare the ROA and the ROE versus each other because they're both efficiency ratios for net income, one over assets and one over shareholders equity.
+
+So how efficient the company is in turning assets into profit and turning equity into profit.
+
+And looking at the difference between the two to get a better understanding of the stock.
+
+And in the context of a turnaround story or even identifying something that's early stage X growth, looking at how efficient a company is and how efficient it's being run helps us in assessing the possibility of whether a company will continue its X growth slide or the probability that the company can turn around the fortunes of earnings.
+
+Now, the last metric that we're going to look at is a cash flow metric.
+
+And we're going to look briefly at free cash flow yield.
+
+But a derivative of this that we've worked out is actually more important, which is the price over free cash flow per share metric.
+
+So firstly, if we look at free cash flow yield and look at the calculation of that, it is the last annual free cash flow per share over the current market stock price.
+
+So this is the backwards looking metric for free cash flow yield.
+
+There is also another calculation, which is a forward looking metric, which is the annualized free cash flow per share over the current market stock price.
+
+But we can work this out the other way around and we can get the multiple that the market is willing to pay for the free cash flows of the company on a per share basis.
+
+And we can get this as a forward looking measure.
+
+So instead of doing annualized free cash flow per share over current market stock price, we flip this around.
+
+So we do current market stock price divided by annualized free cash flow per share.
+
+And what that gives us is the price over free cash flow per share metric, which as traders and investors, we treat in a similar way to price earnings ratio, where we have the stock price over EPS.
+
+In this instance, we have the stock price over free cash flow per share.
+
+And similar to price earnings ratio, academia in finance will teach you that low price over free cash flow per share is a good thing, that it's cheap and a high price over free cash flow per share is bad.
+
+It's expensive.
+
+Fortunately, we are not finance professors teaching at a university.
+
+We are traders and traders know better.
+
+However, a stock can be on the same price to free cash flow per share and keep going lower and it can keep going higher.
+
+Now, this is a dangerous situation for us in the context of turnarounds, because we are already at the point where negative earnings growth is forecast to occur and or losses.
+
+So the operation is cratering and probably cash flow with it.
+
+So it's likely that the stock price itself has already traveled lower or is already traveling much lower.
+
+And we are looking at a backwards number.
+
+So PE and price over free cash flow per share are likely to already be low versus the sector.
+
+And the market is telling us that they are willing to sell the earnings and the cash flow of the company at a discount to the sector.
+
+And based on expectations going forward, there may be a hope number from analysts for a turnaround in EPS and cash flow.
+
+And what are we doing?
+
+We are sitting here saying we think that there could be a turnaround that's going to happen in the stock.
+
+Meanwhile, we have low PE relative to the sector and we have low price over free cash flow per share.
+
+Again, relative to the sector.
+
+So essentially, we are arguing with the valuation of the market.
+
+We are arguing with the market.
+
+So we need to take note of this.
+
+We need to understand our risk and we need to acknowledge this.
+
+We need to acknowledge that if we are in a turnaround situation or calling a turnaround situation, we are arguing with low PE and low price over free cash flow per share.
+
+Where our edge comes in is fully understanding the quality of the operation and the quality of the earnings moving forward.
+
+And this comes from our qualitative analysis.
+
+So if we can do a solid qualitative analysis and we realize that earnings and free cash flow position at the company is going to improve in the future to an extent that is better than the current market consensus, then, of course, there is an opportunity here to take advantage of a potential big turnaround.
+
+Additionally, we simply don't have to participate if we don't want to in calling the quarter the financial quarter of the turnaround.
+
+We can do our work.
+
+We can understand everything that's driving the potential turnaround and we can miss the first quarter and catch the next quarter.
+
+What the price over free cash flow per share metric does is it gives us a comparison and potential confirmation on valuation when we compare it to price earnings ratio.
+
+Therefore, we can understand our overall risk of calling a turnaround or even the stage of an X growth scenario.
+
+We can call it and understand it better.
+
+Now, in summary, when we are analyzing whether a stock in this position is a genuine turnaround story or not.
+
+So it may materialize, but it becomes a value trap.
+
+There is no right or wrong answer at this stage of the process.
+
+What we have done is we have identified these cases by doing our forward looking quantitative analysis.
+
+So identifying positive and negative outliers in a sector and everything else in between.
+
+Once we have identified potential turnarounds, we then go through the checklist of the backwards looking financial metrics that we've just looked at to get a snapshot of the company versus its sector peers.
+
+So we get a context and an interpretation of the company numbers and the sector numbers overall.
+
+So where does the company fit in overall compared to the sector?
+
+Now, on top of that, we have to look at the company's plans to turn things around.
+
+So the management operating plan, that is a qualitative assessment.
+
+So we will be going through an entire section on qualitative assessment, but we won't be looking at turnarounds or value traps in isolation.
+
+What we will be doing is teaching you the qualitative process for all classic longs and shorts and turnarounds and value traps.
+
+So you can generate trade ideas yourself.
+
+So the process will apply to all profiles.
+
+For a turnaround to be genuinely on the cards, there must be a viable, aggressive and believable new management operating plan in place.
+
+What are we going to typically see?
+
+We're going to typically see capital restructurings, divestment of underperforming assets at sometimes very unattractive prices.
+
+We're going to see investment in new assets, new businesses, new products and services that are performing.
+
+We're going to see things like headcount reduction, so layoffs.
+
+We're going to see a reorganization of operations and we're going to see new products and services get launched.
+
+Additionally, with potential turnarounds or X growth scenarios, we always have to remember our time horizon as traders.
+
+We are not investors, so we need to do our quantitative process.
+
+We need to do our qualitative process.
+
+We have to have a very good timing assessment and also solid trade structuring, which is part of the POTM, the options trading masterclass, which we won't be covering in this video series.
+
+So we have to do our quant, our qualitative, our timing and our trade structuring very well.
+
+Now we've come to a stage in the video series where it might be worth thinking about what a long short portfolio is going to look like or potentially look like when we consider the different profiles that we've looked at for earnings growth.
+
+And the different characteristics of different types of longs and different types of short ideas that make up a long short portfolio.
+
+So, for example, let's have a look at the earnings growth profiles and stock characteristics of a theoretical 10 stock portfolio that has a $100,000 notional risk with a net long bias that is non beta adjusted.
+
+So starting with the longs, we have six longs in this portfolio.
+
+That's giving us our net long bias because for our shorts, we only have four shorts.
+
+So starting with our longs, trade idea number one.
+
+This could be a situation where we have a classic long sequentially positive earnings growth profile that is characterized as cyclical. So we have our long case one.
+
+Trade idea two can also be a classic long sequentially positive earnings growth profile that is characterized as cyclical. Again, a long case one.
+
+Trade idea three. We could also have another growth stock in the portfolio, but this time it's not earnings growth. It's revenue growth. So we could have sequentially positive revenue growth with no earnings. And the company has a high R&D component as part of its overall operation. And this is also characterized as cyclical.
+
+And this doesn't fit into our any earnings growth profiles as cases because it's a revenue growth story. Moving on to trade number four. Trade idea number four. We could have positive earnings growth in period one that's above sector average and less positive, but still above sector average in period two. And this stock could be characterized as a defensive from a defensive sector. And this would be our long case number three. Trade number five. This could be again a classic long sequentially positive earnings growth profile, but not in a cyclical sector in this case, in a defensive sector. So characterized as a defensive stock. This is again our long case number one, but we are in now a defensive sector. Trade number six. We could have a completely different type of position in the portfolio as a long. We could have a believable turnaround story with an aggressive management operating plan and catalysts.
+
+And this can be characterized as cyclical as well. This is our long case number nine. But there's a caveat. We want this to be characterized as having either phase four or phase five characteristics. We want to be in that scenario. So here we're assuming that it's in a phase five scenario.
+
+Moving on to the shorts. We have four shorts in this theoretical portfolio. Trade idea number seven.
+
+We could have a classic short sequentially negative earnings growth that is cyclical. And this is our short case number one. But we have what is crucial to our shorts. We have phase two characteristics.
+
+Moving on to trade idea number six. Moving on to trade idea number eight. We have an earnings growth profile in period one that is flat. Then going to negative earnings growth that's below sector average in period two. And this would be our short case number three. And we have phase three characteristics.
+
+Moving on to our trade idea number nine. Moving on to our trade idea number nine. We have an earnings growth profile where we have negative earnings growth in period one. But then in period two, less negative earnings growth, but it's still negative. And in both periods, I'm not performing the sector.
+
+And our characteristic of this stock is that it's a defensive stock. This is our case. Short case number two. And we have phase two characteristics. Our next short trade idea on our last number 10.
+
+We can have an early X growth cyclical with a bad management operating plan that has a high market cap.
+
+So over 20 billion market cap with an earnings growth profile that matches our case number eight, our short case number eight. And this can have phase three characteristics.
+
+So at this stage, guys, it's good to understand how all of this is fitting together.
+
+We're not going to have a situation when we build long short portfolios, where we are simply just long growth names all the time. We're going to have different types of longs across the book, characterized as different types of longs. And we're going to have shorts in our portfolio because we are long short managers. And we're going to be short X growth names at the right phases of them going X growth. And our shorts can also be a good mixture of different types of shorts, different types of characteristics. So you can see here now, the types of portfolios that we're working towards. Now in this video, we've obviously covered a lot of ground when it comes to turnaround stories, the different earnings growth profiles and how we characterize them and how we look at them through a long and short lens. We've also looked at our balance sheet and our combo metrics that are backwards looking financial statements. We've done analysis on that. We've done process on that.
+
+And we've done some interpretation in the context of turnarounds. However, all of these backwards looking financial metrics that we looked at, they can all be used in your regular analysis when you're doing a deeper dive on even classic long and short setups. So please use them in all of your analysis, even when you're looking at classic longs and shorts. Always, always follow the process.
+
+Forward looking quantitative discovery, which is the identification phase. We do that first.
+
+Then we have our backwards looking quant phase, which is the evidence phase. That comes second. And then we have third, our forward looking qualitative phase. It's important that you follow the process and not try to skip steps and jump steps in order to try and take shortcuts. You need to follow the process.
+
+The better you get at it, the quicker you're going to get at it.
+
+Now we've come to the end of turnaround stories and value traps as a video.
+
+We're now going to move straight in to the next video where we're going to be having a look at data processing and mining mistakes and solutions. So I'll see you in the next video.

@@ -1,0 +1,3305 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.98,
+      "text": "Okay, so welcome to video number 16. Here in this video, we're going to lead into now foundations of long short portfolio management. So we're starting with foundations of long short portfolio management 1A portfolio modeling. So what we're going to do in this video is we're going to take stock of some things that we've learned so far."
+    },
+    {
+      "start": 29.98,
+      "end": 59.96,
+      "text": "And we're going to start introducing you into the trade idea generation process into how we actually start drilling down into industry sectors in the stock market, and how we start locating stocks as trade ideas. And what we're also going to do is start introducing you to the concept of actually in practice, being able to choose your own"
+    },
+    {
+      "start": 59.96,
+      "end": 89.94,
+      "text": "risk in your portfolio. And all of this taken together will lead us into the next two sections of the PTM video series. So firstly, the section in the PTM video series that covers all of the foundations of long short portfolio management with all the resources and downloads available with Excel lessons from Christopher Quill. And then we lead into"
+    },
+    {
+      "start": 89.94,
+      "end": 119.92,
+      "text": "into the whole entire trade idea generation process. So let's get started first with a reminder of the pro trader systematic framework. We split it up into two areas. We have our theory, as in the work that we do. And then we have our implementation. So when we actually start trading with real money. So on the left hand"
+    },
+    {
+      "start": 119.92,
+      "end": 141.92,
+      "text": "one side, when we think of the side, when we think of the work that we go through to actually generate a trade idea, we split it up into fundamentals and timing and fundamentals are in the vast majority of what we do 80 to 90%. This splits up into both quantitative and qualitative work or processes."
+    },
+    {
+      "start": 141.92,
+      "end": 164.92,
+      "text": "A trade idea is not complete unless we know when the right timing is to put a trade on. And also when we have chosen our trade structure because we understand the catalysts that are going to move the stock within our timeframe of 20 to 60 days."
+    },
+    {
+      "start": 164.92,
+      "end": 194.9,
+      "text": "20 to 60 days. When we actually put our trade idea on, it becomes a position. So we have chosen our trade structure and the position goes on. It becomes a real money position in our trading accounts. Of course, we have preemptive risk management parameters that we place onto our trading accounts before we even have a position. But"
+    },
+    {
+      "start": 194.9,
+      "end": 224.88,
+      "text": "when we have a position, when we have a position, it's live, it's real. We obviously have to manage the risk around that position once it's live. And then when we take positions off, the positions are now complete. They're off. We have a result. It's either a winner or a loser. So it's either made money or lost money. The position is now history. And it becomes hard coded in our track record with trader metrics."
+    },
+    {
+      "start": 224.88,
+      "end": 254.86,
+      "text": "And statistical significance. And statistical significance only occurs when we've done at least 100 trades, possibly 150 trades over a 12 to 18 month period. Now, of course, at this stage, when we look at the entire pro trader systematic framework, we are still working through all of the quantitative processes."
+    },
+    {
+      "start": 254.86,
+      "end": 284.84,
+      "text": "processes. We generate our fundamental trade ideas. We generate our fundamental trade ideas at the stock level. So our fundamental trade ideas for stocks. So what have we covered so far? We've covered macroeconomic top down leading indicators, which falls under the quantitative processes. And we've done this to provide us with a gauge of whether the bias in our"
+    },
+    {
+      "start": 284.84,
+      "end": 314.82,
+      "text": "portfolio is going to be a portfolio is going to be long, short or neutral at any one moment in time. So our leading indicator analysis, what else does it tell us? Well, it also tells us what we should probably be leaning towards in our portfolios, in terms of being long and short at any one moment in time, because of our read on the business cycle in that current"
+    },
+    {
+      "start": 314.82,
+      "end": 344.8,
+      "text": "environment. From our leading indicators, we can also find areas of interest that we can do further work on in terms of growth trends and some qualitative statements in, for example, the ISM manufacturing report, the ISM non-manufacturing report, and the European sentiment indicator."
+    },
+    {
+      "start": 344.8,
+      "end": 374.78,
+      "text": "We do get a good idea of interest. We do get a good idea of which equity sectors we should be leaning towards in terms of being long and short at any one moment in time. And then our next stage towards building a consistently profitable portfolio is to extend our quantitative processes to identify what to actually be long and short, given our aggregate portfolio"
+    },
+    {
+      "start": 374.78,
+      "end": 384.4,
+      "text": "bias. Now remember, when we actually move forward to begin selecting stocks for trade ideas,"
+    },
+    {
+      "start": 384.66,
+      "end": 390.92,
+      "text": "what we're going to do in the PTM video series is we're going to assume cash equity positions."
+    },
+    {
+      "start": 391.28,
+      "end": 399.64,
+      "text": "So we're not going to be assuming in the PTM video series that we are utilizing equity options."
+    },
+    {
+      "start": 399.64,
+      "end": 407.62,
+      "text": "We cover options more in depth in the Options Trading Masterclass, the PTM video series. However,"
+    },
+    {
+      "start": 408.1,
+      "end": 414.74,
+      "text": "you will be shown later in the video series where equity options actually fit in to the overall"
+    },
+    {
+      "start": 414.74,
+      "end": 421.72,
+      "text": "process of long-short portfolio management. Now, something I have to point out as we're moving"
+    },
+    {
+      "start": 421.72,
+      "end": 429.44,
+      "text": "forward in the video series here, there is no rulebook, guys. Retail traders, I've said it"
+    },
+    {
+      "start": 429.44,
+      "end": 437.86,
+      "text": "before, are always looking for a rulebook or a list of boxes to tick in all situations that fit all"
+    },
+    {
+      "start": 437.86,
+      "end": 445.04,
+      "text": "scenarios. It doesn't exist, guys. So you've got to remember all the time, there is no rulebook."
+    },
+    {
+      "start": 446.1,
+      "end": 454.86,
+      "text": "So let's first define what cyclical and defensive sectors actually are. So starting with cyclical"
+    },
+    {
+      "start": 454.86,
+      "end": 463.28,
+      "text": "sectors, these are sectors in which the revenue and earnings of stock constituents within the sector are"
+    },
+    {
+      "start": 463.28,
+      "end": 471.84,
+      "text": "highly correlated to the business cycle. And then we have defensive sectors. So sectors in which the"
+    },
+    {
+      "start": 471.84,
+      "end": 479.28,
+      "text": "revenue and earnings of stock constituents within the sector are not correlated to the business cycle,"
+    },
+    {
+      "start": 479.28,
+      "end": 488.38,
+      "text": "or they have a very low correlation. So thinking about the entire previous section of the PTM video"
+    },
+    {
+      "start": 488.38,
+      "end": 496.2,
+      "text": "series, when we looked at leading indicators in order to generate our portfolio bias, when we actually"
+    },
+    {
+      "start": 496.2,
+      "end": 505.42,
+      "text": "forecast positive GDP growth, and we expect positive stock market returns, what do we want to be doing?"
+    },
+    {
+      "start": 505.42,
+      "end": 513.9,
+      "text": "Well, we obviously want to be leaning into or leaning our bias towards being long cyclicals and short"
+    },
+    {
+      "start": 513.9,
+      "end": 523.96,
+      "text": "defensives. When we forecast that there's going to be negative GDP growth, or a significant or let's say"
+    },
+    {
+      "start": 523.96,
+      "end": 533.6,
+      "text": "fairly significant GDP slowdown, and we're expecting a low positive stock market return, or even a negative stock"
+    },
+    {
+      "start": 533.6,
+      "end": 542.64,
+      "text": "market return. We want to avoid being long cyclicals as much as possible, and lean our bias towards being"
+    },
+    {
+      "start": 542.64,
+      "end": 552.56,
+      "text": "long defensives and short cyclicals. But it's key to remember this, guys, that there is no rulebook of"
+    },
+    {
+      "start": 552.56,
+      "end": 562.0,
+      "text": "exactly how a portfolio should look in all scenarios. What we should be seeking to achieve is to have a healthy mix of"
+    },
+    {
+      "start": 562.0,
+      "end": 576.32,
+      "text": "both at any one time. So there's just a kind of best practices maneuvers that we tend to work our way around when we have any one"
+    },
+    {
+      "start": 576.32,
+      "end": 587.2,
+      "text": "situation in time. There is no hard and fast rulebook where you literally go from top to bottom of a list and tick boxes in all"
+    },
+    {
+      "start": 587.2,
+      "end": 595.84,
+      "text": "So there's just a simple scenarios. There's just a best practices maneuver that we try to adhere to."
+    },
+    {
+      "start": 595.84,
+      "end": 606.24,
+      "text": "So for example, if we predict that there's going to be fairly decent GDP growth, but we're expecting a 0-1 situation."
+    },
+    {
+      "start": 606.24,
+      "end": 614.88,
+      "text": "Remember the 0-1 situation where we have the stock market going down, but GDP printing up. What do we want to be doing?"
+    },
+    {
+      "start": 614.88,
+      "end": 619.28,
+      "text": "Well, there's no rulebook on exactly what we should be doing."
+    },
+    {
+      "start": 620.56,
+      "end": 629.2,
+      "text": "What we want to be doing is maneuvering ourselves and making sure that we stick to a maneuver of best practice."
+    },
+    {
+      "start": 629.2,
+      "end": 641.52,
+      "text": "We want to lean our bias towards profit taking and switching into a short to medium-term defensive mode with our portfolios and"
+    },
+    {
+      "start": 642.24,
+      "end": 649.84,
+      "text": "possibly adding even hedging instruments. Now, of course, and we've mentioned this before, we are traders."
+    },
+    {
+      "start": 649.84,
+      "end": 656.48,
+      "text": "We're not hedgers. We would much rather find good shorts to make money as the market goes down."
+    },
+    {
+      "start": 656.48,
+      "end": 658.48,
+      "text": "So we would rather not hedge."
+    },
+    {
+      "start": 658.48,
+      "end": 665.2,
+      "text": "But if we have to because we're struggling to find good shorts, then of course, we can do that."
+    },
+    {
+      "start": 666.64,
+      "end": 670.48,
+      "text": "It's just key to remember, and this is a good example,"
+    },
+    {
+      "start": 670.48,
+      "end": 679.2,
+      "text": "that in any one moment in time in the market, we lean towards certain maneuvers and certain best practices,"
+    },
+    {
+      "start": 679.6,
+      "end": 686.56,
+      "text": "but there is no definitive rulebook on exactly what we should be doing in all situations."
+    },
+    {
+      "start": 687.92,
+      "end": 691.76,
+      "text": "But there are things that we want to be avoiding."
+    },
+    {
+      "start": 691.76,
+      "end": 700.08,
+      "text": "So what we always want to avoid as traders is being what we call the long bag holder on the way down"
+    },
+    {
+      "start": 700.08,
+      "end": 707.36,
+      "text": "and being the idiot that gets squeezed on short positions during a strong market rally."
+    },
+    {
+      "start": 708.88,
+      "end": 716.96,
+      "text": "So if we get the market direction, our market call wrong for one or two quarters in a row,"
+    },
+    {
+      "start": 717.76,
+      "end": 725.28,
+      "text": "and we have a mixture of incorrect bias and or we are long and short the wrong stuff."
+    },
+    {
+      "start": 725.84,
+      "end": 729.76,
+      "text": "What's going to happen? Our returns are going to get killed."
+    },
+    {
+      "start": 730.8,
+      "end": 738.32,
+      "text": "So it stands to reason at any one moment in time, we can't be dogmatic."
+    },
+    {
+      "start": 738.32,
+      "end": 746.16,
+      "text": "We have to be flexible and we have to be willing to change up our positions,"
+    },
+    {
+      "start": 746.16,
+      "end": 755.04,
+      "text": "to change our bias depending on what is happening at the moment in time and maneuver within a dynamic world."
+    },
+    {
+      "start": 756.4,
+      "end": 762.24,
+      "text": "Remember, there are no hard and fast rules in trading."
+    },
+    {
+      "start": 762.24,
+      "end": 771.04,
+      "text": "There's just best practices and maneuvers that we try to engage in at any one moment in time,"
+    },
+    {
+      "start": 771.04,
+      "end": 773.04,
+      "text": "given the information in the world."
+    },
+    {
+      "start": 775.04,
+      "end": 782.88,
+      "text": "So there are no rules that say you have to do this exact certain thing when you see this happen"
+    },
+    {
+      "start": 782.88,
+      "end": 787.6,
+      "text": "or do exactly this thing when something else happens."
+    },
+    {
+      "start": 787.6,
+      "end": 792.4,
+      "text": "It just doesn't work like that, guys. We live in an imperfect world."
+    },
+    {
+      "start": 792.96,
+      "end": 800.32,
+      "text": "The best we can do is play the probabilities and position ourselves for what we believe at the time"
+    },
+    {
+      "start": 800.32,
+      "end": 804.8,
+      "text": "will be the most likely outcome and that may happen or it may not happen."
+    },
+    {
+      "start": 805.36,
+      "end": 809.76,
+      "text": "Trading is not a science, nor is it an art."
+    },
+    {
+      "start": 809.76,
+      "end": 813.2,
+      "text": "In fact, it is a scientific art."
+    },
+    {
+      "start": 814.64,
+      "end": 821.6,
+      "text": "And that's because we live in a dynamic world and we try to stick to best practices"
+    },
+    {
+      "start": 823.28,
+      "end": 826.96,
+      "text": "and we have maneuverability. We stay flexible."
+    },
+    {
+      "start": 828.8,
+      "end": 840.32,
+      "text": "So think about what would happen in the case that you had a 10 stock portfolio made up of six longs and four shorts and you were long."
+    },
+    {
+      "start": 840.88,
+      "end": 848.72,
+      "text": "Your six long positions were all cyclical stocks and your short positions were all defensive stocks"
+    },
+    {
+      "start": 848.72,
+      "end": 857.2,
+      "text": "and you forecasted that GDP growth is going to slide, go lower from your leading indicator analysis."
+    },
+    {
+      "start": 857.2,
+      "end": 864.8,
+      "text": "Well, in that situation, if you did nothing and you just sat there, stared at your screen,"
+    },
+    {
+      "start": 865.36,
+      "end": 869.92,
+      "text": "you do nothing, what would happen? Well, you would be stupid if you did that."
+    },
+    {
+      "start": 870.72,
+      "end": 874.24,
+      "text": "You need to do something. The world has changed."
+    },
+    {
+      "start": 874.8,
+      "end": 880.64,
+      "text": "The ideas or positions in your portfolio are now stale and you are going to lose money."
+    },
+    {
+      "start": 880.64,
+      "end": 885.6,
+      "text": "So you have to do something. You need to maneuver. You need to do something."
+    },
+    {
+      "start": 886.24,
+      "end": 893.12,
+      "text": "So there is no rule book in that situation, even in that situation, on exactly what to do."
+    },
+    {
+      "start": 893.68,
+      "end": 899.6,
+      "text": "There are an endless amount of potential actions you can take in your trading account."
+    },
+    {
+      "start": 899.6,
+      "end": 910.0,
+      "text": "However, the best practice for a trader would be to change up the portfolio and put on more quality short ideas."
+    },
+    {
+      "start": 910.64,
+      "end": 914.48,
+      "text": "In order to change the dynamic of the portfolio."
+    },
+    {
+      "start": 916.08,
+      "end": 923.2,
+      "text": "So I want you to always bear this in mind, always keep it in the back of your mind that there is no rule book."
+    },
+    {
+      "start": 923.2,
+      "end": 931.2,
+      "text": "There's just a dynamic world. There's best practices and there's maneuvers that we can make as traders."
+    },
+    {
+      "start": 933.2,
+      "end": 939.36,
+      "text": "So we have rigorous processes that we go through in order to generate trade ideas,"
+    },
+    {
+      "start": 939.36,
+      "end": 947.44,
+      "text": "which then become positions, but there is no rule book on exactly how we should build our portfolio."
+    },
+    {
+      "start": 947.44,
+      "end": 955.84,
+      "text": "And it can change over time. There's just best practices and maneuvers that we can take when"
+    },
+    {
+      "start": 955.84,
+      "end": 965.68,
+      "text": "we're shifting from one dynamic to another. So as we move into the next part of the PTM video series,"
+    },
+    {
+      "start": 966.4,
+      "end": 972.48,
+      "text": "the next two parts of the video series where we're looking at foundations of portfolio management."
+    },
+    {
+      "start": 972.48,
+      "end": 981.6,
+      "text": "And we're also looking at drilling down into the stock market and generating individual stock ideas."
+    },
+    {
+      "start": 982.4,
+      "end": 991.84,
+      "text": "It's important to remember the backdrop here. We are providing you with best practices, a best practice guide."
+    },
+    {
+      "start": 991.84,
+      "end": 999.92,
+      "text": "But in any one situation, in any one moment in time, there's no rule book and you have to make the decision"
+    },
+    {
+      "start": 999.92,
+      "end": 1004.96,
+      "text": "and in how to maneuver from one dynamic to another."
+    },
+    {
+      "start": 1006.32,
+      "end": 1012.8,
+      "text": "Just because we have rigorous processes in our trade idea generation process."
+    },
+    {
+      "start": 1013.84,
+      "end": 1019.76,
+      "text": "That doesn't mean that when we end up with real positions that we're not flexible."
+    },
+    {
+      "start": 1019.76,
+      "end": 1024.64,
+      "text": "It doesn't mean that we're dogmatic. The two are separate to each other."
+    },
+    {
+      "start": 1026.08,
+      "end": 1032.08,
+      "text": "So please remember this as we're moving into the next few stages of the PTM video series."
+    },
+    {
+      "start": 1032.08,
+      "end": 1040.64,
+      "text": "And what it really comes down to is just understanding why things are done the way they are done by professional traders."
+    },
+    {
+      "start": 1042.24,
+      "end": 1051.52,
+      "text": "Now, learning the quantitative mechanics of using stock data to locate potential stock trade ideas."
+    },
+    {
+      "start": 1052.16,
+      "end": 1058.72,
+      "text": "That's going to happen in the section of the PTM video series that follows the next section."
+    },
+    {
+      "start": 1060.32,
+      "end": 1065.84,
+      "text": "Before learning how to generate individual long and short stock ideas."
+    },
+    {
+      "start": 1066.4,
+      "end": 1076.24,
+      "text": "It's imperative for anyone who has never, ever been exposed to building and managing a long short portfolio"
+    },
+    {
+      "start": 1076.24,
+      "end": 1092.88,
+      "text": "to understand some of the key steps in generating trade ideas that are required to build optimal long short equities portfolios and why they actually exist, why these steps exist."
+    },
+    {
+      "start": 1093.76,
+      "end": 1105.92,
+      "text": "Only when you understand this are you going to appreciate why certain things are done the way they are done in the trade idea generation process itself."
+    },
+    {
+      "start": 1107.12,
+      "end": 1117.04,
+      "text": "In the process of figuring out what to be long and short in a portfolio, we have to follow these steps as a best practice discipline."
+    },
+    {
+      "start": 1118.88,
+      "end": 1134.16,
+      "text": "So we are faced with something called the stock market and we are in the US stock market where our universe of stocks is approximately over 2200 stocks."
+    },
+    {
+      "start": 1135.44,
+      "end": 1139.12,
+      "text": "And as traders, what do we want to be doing?"
+    },
+    {
+      "start": 1139.12,
+      "end": 1142.56,
+      "text": "Well, we want to be going where the juice is."
+    },
+    {
+      "start": 1143.12,
+      "end": 1145.28,
+      "text": "We want outsized returns."
+    },
+    {
+      "start": 1145.92,
+      "end": 1152.32,
+      "text": "So we go further than looking at simply the index level."
+    },
+    {
+      "start": 1152.32,
+      "end": 1167.36,
+      "text": "So the index, for example, like the S&P 500, we drill down into industry sectors and those industry sectors can be classified as either cyclical or defensive."
+    },
+    {
+      "start": 1168.0,
+      "end": 1180.4,
+      "text": "And then within industry sectors, we have stocks and stocks can be classified as either growth stocks, X growth stocks or value stocks."
+    },
+    {
+      "start": 1181.76,
+      "end": 1196.24,
+      "text": "And if we think of this in terms of our performance, as in what performance we are trying to achieve here, we want to be going where the juice is and we want to be getting better than market returns."
+    },
+    {
+      "start": 1198.24,
+      "end": 1201.68,
+      "text": "So we are absolute return mandate traders."
+    },
+    {
+      "start": 1201.68,
+      "end": 1212.4,
+      "text": "We want to make sure that we make money on the way up and we do way better than the market return, even though we don't benchmark ourselves against it."
+    },
+    {
+      "start": 1213.04,
+      "end": 1220.16,
+      "text": "And if the market goes down, we also want to be making money when the market goes down on an absolute basis."
+    },
+    {
+      "start": 1220.4,
+      "end": 1223.84,
+      "text": "And we don't benchmark ourselves to the market return."
+    },
+    {
+      "start": 1225.6,
+      "end": 1232.4,
+      "text": "So from a macro viewpoint, we are always looking to forecast GDP growth."
+    },
+    {
+      "start": 1233.12,
+      "end": 1244.4,
+      "text": "And for example, if we forecast that GDP growth is going to be positive and we're going to get positive stock market returns, what are we seeking to achieve?"
+    },
+    {
+      "start": 1246.0,
+      "end": 1262.16,
+      "text": "Well, we are building our long short portfolios and we're going to be leaning towards stocks that are going to outperform both the sector that the stocks are in and the market in a positive GDP environment."
+    },
+    {
+      "start": 1263.36,
+      "end": 1275.68,
+      "text": "And if, for example, we predict that we're going to see GDP contract or there's going to be a significant slowdown, we're going to see profit taking in the market, for example,"
+    },
+    {
+      "start": 1275.68,
+      "end": 1280.16,
+      "text": "and the market goes down, we want to be short the right stocks."
+    },
+    {
+      "start": 1280.16,
+      "end": 1290.56,
+      "text": "We want to be short and leaning towards shorts in our portfolio stocks that are going to underperform both the sector that they're in and the market."
+    },
+    {
+      "start": 1290.56,
+      "end": 1293.12,
+      "text": "So we're making money on the way down as well."
+    },
+    {
+      "start": 1294.72,
+      "end": 1302.96,
+      "text": "And in reality, what we're doing here is we are attempting to optimize returns in our portfolio."
+    },
+    {
+      "start": 1302.96,
+      "end": 1310.88,
+      "text": "So being long the right stocks and short the right stocks actually given any GDP environment."
+    },
+    {
+      "start": 1312.4,
+      "end": 1324.0,
+      "text": "So, for example, everything in yellow in the stocks boxes are stocks that in any given GDP environment, we are not optimizing returns."
+    },
+    {
+      "start": 1325.6,
+      "end": 1338.88,
+      "text": "So, for example, if you look at the yellow box for stocks under the red circled box for stocks, you will see two positives and a negative."
+    },
+    {
+      "start": 1340.32,
+      "end": 1341.28,
+      "text": "What does that mean?"
+    },
+    {
+      "start": 1341.28,
+      "end": 1349.2,
+      "text": "Well, it means that you've selected a stock here that, yes, has outperformed the market."
+    },
+    {
+      "start": 1350.4,
+      "end": 1357.12,
+      "text": "Yes, it's outperformed the sector that it's in, but it's underperformed other stocks in the sector."
+    },
+    {
+      "start": 1358.64,
+      "end": 1364.48,
+      "text": "It means you didn't optimize, it means you didn't pick the right stock in the sector to be long."
+    },
+    {
+      "start": 1366.0,
+      "end": 1373.2,
+      "text": "If you look at the yellow box near the bottom for shorting, that's above the red circle."
+    },
+    {
+      "start": 1373.92,
+      "end": 1377.76,
+      "text": "You'll see the yellow box stocks, two negatives and a positive."
+    },
+    {
+      "start": 1378.96,
+      "end": 1391.12,
+      "text": "So this particular stock has underperformed the market, it's underperformed the sector, but it's outperformed some of the other stocks in the sector."
+    },
+    {
+      "start": 1391.6,
+      "end": 1395.2,
+      "text": "It just means you haven't optimized on the short side."
+    },
+    {
+      "start": 1396.8,
+      "end": 1401.36,
+      "text": "If you look at the boxes with the word sector in, what are these?"
+    },
+    {
+      "start": 1401.36,
+      "end": 1412.16,
+      "text": "Well, if you're looking at a long environment where you choose a particular sector, so any stocks in the sector,"
+    },
+    {
+      "start": 1412.16,
+      "end": 1418.96,
+      "text": "this is not optimizing because the sector has not outperformed the market on the way up."
+    },
+    {
+      "start": 1420.32,
+      "end": 1425.84,
+      "text": "And on the flip side, in a short or environment where the market's going down,"
+    },
+    {
+      "start": 1426.96,
+      "end": 1433.2,
+      "text": "if you choose a sector that outperforms the market, you are not optimizing."
+    },
+    {
+      "start": 1433.84,
+      "end": 1436.88,
+      "text": "And of course, any stocks within that sector."
+    },
+    {
+      "start": 1438.0,
+      "end": 1440.32,
+      "text": "So what are we trying to achieve here?"
+    },
+    {
+      "start": 1440.32,
+      "end": 1443.04,
+      "text": "Well, we're trying to go where the juice is."
+    },
+    {
+      "start": 1443.04,
+      "end": 1450.24,
+      "text": "Therefore, we're trying to always optimize our returns with an absolute return mandate."
+    },
+    {
+      "start": 1450.72,
+      "end": 1457.44,
+      "text": "So we want to be long stocks that outperform the market, outperform the sector that they're in,"
+    },
+    {
+      "start": 1458.16,
+      "end": 1460.64,
+      "text": "outperform all the other stocks in the sector."
+    },
+    {
+      "start": 1461.36,
+      "end": 1473.04,
+      "text": "And on the short side, given any GDP environment, we want to try and be short stocks that are going to underperform the sector that they're in."
+    },
+    {
+      "start": 1473.84,
+      "end": 1478.16,
+      "text": "They're going to be the stocks that go down the most in the sector."
+    },
+    {
+      "start": 1479.68,
+      "end": 1483.36,
+      "text": "And the sector itself underperforms the market as well."
+    },
+    {
+      "start": 1483.36,
+      "end": 1489.04,
+      "text": "So for longs, we want to be in sectors that are leading the market."
+    },
+    {
+      "start": 1490.08,
+      "end": 1493.36,
+      "text": "We want to be long stocks that are leading the sector."
+    },
+    {
+      "start": 1494.08,
+      "end": 1500.64,
+      "text": "For shorts, we want to be short sectors that are lagging the market."
+    },
+    {
+      "start": 1500.64,
+      "end": 1506.24,
+      "text": "And we want to be short stocks within the sector that are going down the most."
+    },
+    {
+      "start": 1507.68,
+      "end": 1512.96,
+      "text": "Now, does this mean we actually have positions in sector products?"
+    },
+    {
+      "start": 1513.84,
+      "end": 1514.72,
+      "text": "No, it doesn't."
+    },
+    {
+      "start": 1515.44,
+      "end": 1520.88,
+      "text": "We use stocks as a proxy for the sector, which we're going to come on to a bit later."
+    },
+    {
+      "start": 1522.56,
+      "end": 1526.96,
+      "text": "Now, how do we actually go about achieving this in practice?"
+    },
+    {
+      "start": 1528.0,
+      "end": 1537.44,
+      "text": "How do we process in practice when we're looking at sectors to be long or short or stocks within"
+    },
+    {
+      "start": 1537.44,
+      "end": 1540.72,
+      "text": "those sectors more accurately to be long and short?"
+    },
+    {
+      "start": 1541.36,
+      "end": 1543.44,
+      "text": "What processes do we go through?"
+    },
+    {
+      "start": 1544.0,
+      "end": 1549.6,
+      "text": "Well, we always start with the classification of our sectors."
+    },
+    {
+      "start": 1551.2,
+      "end": 1558.16,
+      "text": "And what we're going to be using here is the Global Industry Classification Standard or GICS."
+    },
+    {
+      "start": 1558.72,
+      "end": 1564.0,
+      "text": "Now, there are many different industry classification standards."
+    },
+    {
+      "start": 1565.84,
+      "end": 1572.4,
+      "text": "Later in the video series, we will be using another classification system."
+    },
+    {
+      "start": 1573.12,
+      "end": 1577.92,
+      "text": "But we're going to be using the GICS sectors, the GICS standard here,"
+    },
+    {
+      "start": 1578.72,
+      "end": 1581.76,
+      "text": "in order to demonstrate the process."
+    },
+    {
+      "start": 1581.76,
+      "end": 1586.8,
+      "text": "It doesn't actually really matter which industry classification system you use."
+    },
+    {
+      "start": 1587.52,
+      "end": 1590.72,
+      "text": "What is important is the process itself."
+    },
+    {
+      "start": 1590.72,
+      "end": 1598.08,
+      "text": "So we're going to be using the Global Industry Classification Standard sectors here to demonstrate that."
+    },
+    {
+      "start": 1599.52,
+      "end": 1611.92,
+      "text": "So as we're moving through this example here, try to focus on the actual process itself, because you can apply the process to any industry classification standard."
+    },
+    {
+      "start": 1612.64,
+      "end": 1622.16,
+      "text": "So you can see the link here, msci.com forward slash GICS, you'll be able to get this type of analysis via that URL."
+    },
+    {
+      "start": 1622.64,
+      "end": 1626.88,
+      "text": "And you can see here, we have sectors at the top."
+    },
+    {
+      "start": 1627.44,
+      "end": 1630.4,
+      "text": "So we have what we call super sectors at the top."
+    },
+    {
+      "start": 1631.36,
+      "end": 1634.16,
+      "text": "Within sectors, we have industry groups."
+    },
+    {
+      "start": 1634.16,
+      "end": 1639.84,
+      "text": "And here on the page, I selected consumer discretionary for the super sector."
+    },
+    {
+      "start": 1639.84,
+      "end": 1644.88,
+      "text": "And within consumer discretionary, I selected consumer durables and apparel."
+    },
+    {
+      "start": 1645.36,
+      "end": 1649.92,
+      "text": "And then within that industry group, there are sub industries."
+    },
+    {
+      "start": 1650.24,
+      "end": 1655.44,
+      "text": "So household durables, leisure products, textiles, apparel, and luxury goods."
+    },
+    {
+      "start": 1656.88,
+      "end": 1664.56,
+      "text": "And regardless of the classification system that you use for sectors, this is going to be a typical situation that you see."
+    },
+    {
+      "start": 1664.88,
+      "end": 1673.04,
+      "text": "The process is that we are drilling down from the top sector level to industry sub sector groups."
+    },
+    {
+      "start": 1674.48,
+      "end": 1684.0,
+      "text": "So when it comes to this classification, the GICS system, companies are classified both quantitatively and qualitatively."
+    },
+    {
+      "start": 1684.56,
+      "end": 1695.36,
+      "text": "Each company is assigned a single GICS classification at the sub industry level, according to its principal business activity."
+    },
+    {
+      "start": 1696.56,
+      "end": 1701.92,
+      "text": "So you can see here, we have 11 sectors or super sectors at the top."
+    },
+    {
+      "start": 1702.48,
+      "end": 1706.0,
+      "text": "As we drill down, we have 24 industry groups."
+    },
+    {
+      "start": 1706.72,
+      "end": 1709.52,
+      "text": "Within that, we have 69 industries."
+    },
+    {
+      "start": 1710.08,
+      "end": 1713.92,
+      "text": "And then within that, 158 sub industries."
+    },
+    {
+      "start": 1714.4,
+      "end": 1722.32,
+      "text": "And stocks will be categorized by the sub industry level, according to their business activity."
+    },
+    {
+      "start": 1723.52,
+      "end": 1736.88,
+      "text": "So companies like MSCI and S&P Dow Jones, they use revenues as a key factor in determining what the firm's principal business activity is."
+    },
+    {
+      "start": 1738.48,
+      "end": 1755.52,
+      "text": "So as traders and portfolio managers, using industry classifications, it's our best tool for drilling from the top down and analyzing from the bottom up, which stocks we should be leaning towards being long and short."
+    },
+    {
+      "start": 1756.4,
+      "end": 1763.12,
+      "text": "Now, I mentioned that later in the video series, we will be using other classification systems."
+    },
+    {
+      "start": 1763.92,
+      "end": 1768.48,
+      "text": "We can also use the North American industry classification system."
+    },
+    {
+      "start": 1768.8,
+      "end": 1772.16,
+      "text": "That's something we're going to be looking at later in the video series."
+    },
+    {
+      "start": 1772.4,
+      "end": 1774.16,
+      "text": "We will be using that as well."
+    },
+    {
+      "start": 1775.12,
+      "end": 1785.6,
+      "text": "At this stage, we're just using the GIX system to use this as an example of how you would go about drilling down from the top to the bottom."
+    },
+    {
+      "start": 1785.6,
+      "end": 1796.0,
+      "text": "So from top sectors right down to the bottom to sub industries to locate stocks as potential, interesting, longs and shorts."
+    },
+    {
+      "start": 1796.96,
+      "end": 1804.08,
+      "text": "And at this stage of the trade idea generation phase, what we are doing is we are engaging in a discovery phase."
+    },
+    {
+      "start": 1804.08,
+      "end": 1818.48,
+      "text": "We are seeking potential, and that's the key word guys, potential, long and short ideas, given our biases and using the classification system to optimize our process."
+    },
+    {
+      "start": 1818.8,
+      "end": 1820.88,
+      "text": "So we're trying to work smart."
+    },
+    {
+      "start": 1822.24,
+      "end": 1839.6,
+      "text": "Now, of course, based on the definitions categorized in terms of stocks kept being categorized by their sub industries using revenues, there will always be overlap between sub industries and industries."
+    },
+    {
+      "start": 1840.4,
+      "end": 1846.48,
+      "text": "Given certain stocks, there will be some errors or misclassifications of stocks."
+    },
+    {
+      "start": 1846.48,
+      "end": 1848.8,
+      "text": "So just bear that in mind in your processes."
+    },
+    {
+      "start": 1850.16,
+      "end": 1868.0,
+      "text": "So for example, a company that has 50% of their revenues doing a certain business activity and 50% doing another business activity may be classified in one sub industry when in fact they crossover into another sub industry."
+    },
+    {
+      "start": 1868.0,
+      "end": 1869.12,
+      "text": "Don't worry about it."
+    },
+    {
+      "start": 1869.12,
+      "end": 1874.0,
+      "text": "This is in the vast minority of cases, but you just have to be aware of it."
+    },
+    {
+      "start": 1875.28,
+      "end": 1878.16,
+      "text": "Now, in terms of process as traders and PMs,"
+    },
+    {
+      "start": 1878.96,
+      "end": 1887.36,
+      "text": "we do go to the next stage and we start categorizing certain sectors and industries, sub industries, etc."
+    },
+    {
+      "start": 1888.16,
+      "end": 1898.08,
+      "text": "So we have a download in the downloads area, a spreadsheet called the GIX breakdown and you'll be able to download that and follow the video with each step."
+    },
+    {
+      "start": 1899.44,
+      "end": 1913.2,
+      "text": "So what we have done in the download with the GIX example, and this is what it looks like when you download it, we have categorized our 69 industries as either cyclical, defensive or both."
+    },
+    {
+      "start": 1914.8,
+      "end": 1929.2,
+      "text": "So we have 41 of our 69 industries classified as cyclical industries, so that comes out at 59% of all industries defensives."
+    },
+    {
+      "start": 1929.2,
+      "end": 1932.72,
+      "text": "So industries classified as defensive industries."
+    },
+    {
+      "start": 1933.84,
+      "end": 1941.6,
+      "text": "These come out at 22 in total, which makes up 32% of our total industries."
+    },
+    {
+      "start": 1941.6,
+      "end": 1955.92,
+      "text": "So 22 out of 69 making 32% and then classified as both in the minority, we have six cases that comes in at 9% of the 69 industries."
+    },
+    {
+      "start": 1957.76,
+      "end": 1966.32,
+      "text": "So regardless of the classification system that you're using, and remember, we are using the GIX system here as an example."
+    },
+    {
+      "start": 1967.04,
+      "end": 1972.16,
+      "text": "Regardless of the classification system that you're using, this is the next step you would take."
+    },
+    {
+      "start": 1972.16,
+      "end": 1979.6,
+      "text": "You would just simply classify them as cyclical or defensive industries or as both."
+    },
+    {
+      "start": 1981.12,
+      "end": 1986.96,
+      "text": "So in future, whatever classification system you're using, you can refer to this."
+    },
+    {
+      "start": 1987.68,
+      "end": 1996.8,
+      "text": "Refer to the download and look for the definition of the industry, whether it's cyclical, defensive or categorized as both."
+    },
+    {
+      "start": 1998.0,
+      "end": 2005.52,
+      "text": "And you can apply this to your own classification system, whichever classification system that you happen to be using."
+    },
+    {
+      "start": 2007.2,
+      "end": 2009.44,
+      "text": "Now, looking at this in a little bit more detail."
+    },
+    {
+      "start": 2010.0,
+      "end": 2020.24,
+      "text": "Yes, of the 69 industries classified under GIX, we assigned a cyclical descriptor to 41 of those industries."
+    },
+    {
+      "start": 2020.24,
+      "end": 2025.36,
+      "text": "And we assigned a defensive descriptor to 22 of those industries."
+    },
+    {
+      "start": 2025.92,
+      "end": 2035.04,
+      "text": "Six industries were categorized as both or, more accurately, not determined as either cyclicals or defensives."
+    },
+    {
+      "start": 2035.04,
+      "end": 2038.88,
+      "text": "So we must drill down to the next level."
+    },
+    {
+      "start": 2038.88,
+      "end": 2047.12,
+      "text": "We look at the sub-industry classifications and the stocks themselves within the industry to determine"
+    },
+    {
+      "start": 2047.12,
+      "end": 2057.68,
+      "text": "whether a sector or industry can collectively be classified as either cyclical or defensive or the stocks themselves individually."
+    },
+    {
+      "start": 2058.88,
+      "end": 2067.68,
+      "text": "Now, of course, when we overlap a descriptor of either cyclical or defensive to an industry classification that's provided by"
+    },
+    {
+      "start": 2068.4,
+      "end": 2072.72,
+      "text": "a system like a system like GIX, we're always going to run into this problem."
+    },
+    {
+      "start": 2073.28,
+      "end": 2077.44,
+      "text": "What it comes down to is common sense and attention to detail."
+    },
+    {
+      "start": 2077.44,
+      "end": 2084.08,
+      "text": "Now, there is an annual review of the GIX sectors classifications, and it's always changing."
+    },
+    {
+      "start": 2084.08,
+      "end": 2090.0,
+      "text": "So you do need to stay on top of that occasionally and update your spreadsheets."
+    },
+    {
+      "start": 2091.28,
+      "end": 2097.2,
+      "text": "Even with this straightforward and simple approach with the descriptors that we've given,"
+    },
+    {
+      "start": 2097.92,
+      "end": 2105.28,
+      "text": "occasionally you will find something, a stock, for example, that is more of a defensive stock"
+    },
+    {
+      "start": 2105.84,
+      "end": 2109.44,
+      "text": "lumped into the same sector with cyclicals."
+    },
+    {
+      "start": 2110.4,
+      "end": 2114.8,
+      "text": "But as mentioned, you know, these cases are in the vast minority."
+    },
+    {
+      "start": 2115.44,
+      "end": 2123.76,
+      "text": "And the GIX classifications are derived from an analysis of how a company makes its money."
+    },
+    {
+      "start": 2123.76,
+      "end": 2127.6,
+      "text": "And the classification is still subjective."
+    },
+    {
+      "start": 2129.04,
+      "end": 2134.48,
+      "text": "The best we can do is have our process to assign to the vast majority."
+    },
+    {
+      "start": 2134.48,
+      "end": 2140.64,
+      "text": "And if we bump into these situations, we just have to look at it at an individual stock level."
+    },
+    {
+      "start": 2141.92,
+      "end": 2148.56,
+      "text": "Now, as mentioned later in the PTM video series, we will be using the NAICS data."
+    },
+    {
+      "start": 2148.56,
+      "end": 2151.92,
+      "text": "So the North American Industry Classification System."
+    },
+    {
+      "start": 2152.56,
+      "end": 2159.36,
+      "text": "You can use the same descriptors that we've used here for the global industry classification standard,"
+    },
+    {
+      "start": 2159.36,
+      "end": 2164.96,
+      "text": "the GIX system, you can use that as the template."
+    },
+    {
+      "start": 2164.96,
+      "end": 2172.4,
+      "text": "So use the same descriptors that we have for the GIX analysis for the NAICS data."
+    },
+    {
+      "start": 2172.4,
+      "end": 2175.52,
+      "text": "So you can do that and assign the descriptors yourself."
+    },
+    {
+      "start": 2176.64,
+      "end": 2179.52,
+      "text": "This will be a good exercise for you to go through,"
+    },
+    {
+      "start": 2180.16,
+      "end": 2185.36,
+      "text": "just to ensure that you understand the process and the template itself."
+    },
+    {
+      "start": 2185.36,
+      "end": 2188.32,
+      "text": "So please do that. Go through that process yourself."
+    },
+    {
+      "start": 2189.6,
+      "end": 2196.72,
+      "text": "Now, in terms of understanding why we do certain things as traders and portfolio managers,"
+    },
+    {
+      "start": 2197.36,
+      "end": 2202.88,
+      "text": "let's look a little deeper into how we think about things,"
+    },
+    {
+      "start": 2202.88,
+      "end": 2208.32,
+      "text": "how we approach things when we are seeking to build long, short portfolios."
+    },
+    {
+      "start": 2209.76,
+      "end": 2214.32,
+      "text": "So as you will have noticed when we went through that process of assigning descriptors,"
+    },
+    {
+      "start": 2215.2,
+      "end": 2224.88,
+      "text": "most industries within the United States are classified as cyclical sectors or cyclical industries."
+    },
+    {
+      "start": 2224.88,
+      "end": 2233.2,
+      "text": "And therefore, the constituent stocks within those industries would be classified as cyclical stocks."
+    },
+    {
+      "start": 2234.4,
+      "end": 2241.76,
+      "text": "So this might lead a lot of people to think that because there's a lot more cyclical stocks"
+    },
+    {
+      "start": 2241.76,
+      "end": 2245.84,
+      "text": "in the United States stock market than defensive stocks."
+    },
+    {
+      "start": 2245.84,
+      "end": 2253.28,
+      "text": "And that because GDP spends longer periods of time growing versus contracting,"
+    },
+    {
+      "start": 2253.84,
+      "end": 2261.28,
+      "text": "that as traders and portfolio managers, we are mostly always long cyclicals and short defensives."
+    },
+    {
+      "start": 2262.4,
+      "end": 2270.8,
+      "text": "Well, that's just the wrong way to think about it. At any one moment in time in the financial markets,"
+    },
+    {
+      "start": 2270.8,
+      "end": 2282.08,
+      "text": "regardless of forward looking GDP growth prospects, there will, of course, be good cyclical stocks and bad cyclical stocks."
+    },
+    {
+      "start": 2282.08,
+      "end": 2298.16,
+      "text": "So just because, for example, if we think we're in a very positive GDP growth environment,"
+    },
+    {
+      "start": 2298.16,
+      "end": 2307.84,
+      "text": "we don't just throw money at long positions, long cyclicals that are actually bad cyclical stocks."
+    },
+    {
+      "start": 2307.84,
+      "end": 2322.56,
+      "text": "We don't have long stocks that might not necessarily go up a lot given the global GDP growth environment."
+    },
+    {
+      "start": 2322.56,
+      "end": 2335.04,
+      "text": "We would obviously much rather be long, high quality cyclical stocks that are actually going to go up a lot in a positive GDP growth environment."
+    },
+    {
+      "start": 2336.08,
+      "end": 2341.36,
+      "text": "And the same logic applies when we're looking at defensive stocks on the way down."
+    },
+    {
+      "start": 2341.36,
+      "end": 2345.76,
+      "text": "We want to be long the quality defensive stocks."
+    },
+    {
+      "start": 2345.76,
+      "end": 2349.12,
+      "text": "We don't want to be long bad defensive stocks, obviously."
+    },
+    {
+      "start": 2350.16,
+      "end": 2354.16,
+      "text": "And of course, the same logic applies to shorts as well."
+    },
+    {
+      "start": 2355.04,
+      "end": 2359.6,
+      "text": "We want to be short the worst stocks that we can possibly be short."
+    },
+    {
+      "start": 2360.0,
+      "end": 2362.88,
+      "text": "And of course, we want them to go down by a lot."
+    },
+    {
+      "start": 2364.16,
+      "end": 2370.16,
+      "text": "Now, something else you need to consider at this stage of your educational development."
+    },
+    {
+      "start": 2370.8,
+      "end": 2376.08,
+      "text": "Notice that we are using the word stocks and not companies."
+    },
+    {
+      "start": 2377.52,
+      "end": 2387.92,
+      "text": "A very well run, good company does not necessarily mean that it's a good stock or long trade idea"
+    },
+    {
+      "start": 2387.92,
+      "end": 2391.12,
+      "text": "for the next 20 to 60 days."
+    },
+    {
+      "start": 2391.12,
+      "end": 2394.24,
+      "text": "So the time horizon that we expose ourselves to."
+    },
+    {
+      "start": 2394.88,
+      "end": 2400.4,
+      "text": "And also a badly run, terrible company does not necessarily mean"
+    },
+    {
+      "start": 2401.2,
+      "end": 2407.28,
+      "text": "that it's a bad stock or a short trade idea for our time horizon."
+    },
+    {
+      "start": 2407.28,
+      "end": 2410.08,
+      "text": "So for the next 20 to 60 days as well."
+    },
+    {
+      "start": 2411.36,
+      "end": 2415.44,
+      "text": "This is a very common mistake amongst retail traders."
+    },
+    {
+      "start": 2415.92,
+      "end": 2424.32,
+      "text": "A trade idea is not either looking to be long a good company or short a bad company."
+    },
+    {
+      "start": 2424.32,
+      "end": 2428.72,
+      "text": "That's not what the definition of a trade idea is."
+    },
+    {
+      "start": 2428.72,
+      "end": 2431.6,
+      "text": "So please bear this in mind always."
+    },
+    {
+      "start": 2433.04,
+      "end": 2435.6,
+      "text": "Additionally, and it's worth reminding you at this stage,"
+    },
+    {
+      "start": 2436.72,
+      "end": 2441.2,
+      "text": "you should know by now that a trade is not an investment."
+    },
+    {
+      "start": 2442.0,
+      "end": 2448.0,
+      "text": "So you need to always make sure that you get your time horizon and volatility appraisal correct."
+    },
+    {
+      "start": 2448.0,
+      "end": 2454.48,
+      "text": "So within the 20 to 60 day time horizon, we are traders, not investors."
+    },
+    {
+      "start": 2454.48,
+      "end": 2460.96,
+      "text": "So going back to this process of drilling from the top down."
+    },
+    {
+      "start": 2462.24,
+      "end": 2468.8,
+      "text": "We use this process as a prism or lens through which to view the stock market"
+    },
+    {
+      "start": 2468.8,
+      "end": 2476.56,
+      "text": "and utilize it as a best practice to optimize returns to get efficient returns."
+    },
+    {
+      "start": 2478.0,
+      "end": 2486.72,
+      "text": "So if we decide to lean towards having a net long bias in the portfolio and that we're going to lean towards"
+    },
+    {
+      "start": 2486.72,
+      "end": 2493.52,
+      "text": "being overly long cyclicals in the portfolio, we have to be long the right cyclicals."
+    },
+    {
+      "start": 2493.52,
+      "end": 2498.08,
+      "text": "So good cyclical stocks for that moment in time."
+    },
+    {
+      "start": 2499.52,
+      "end": 2508.4,
+      "text": "And at the same time, we can also be short bad cyclical stocks and or bad defensive stocks."
+    },
+    {
+      "start": 2508.4,
+      "end": 2512.8,
+      "text": "And even at the same time, be long some good defensive stocks."
+    },
+    {
+      "start": 2513.36,
+      "end": 2518.72,
+      "text": "The point is that there is no hard and fast rules here, guys."
+    },
+    {
+      "start": 2518.72,
+      "end": 2525.44,
+      "text": "And there is no rule book on exactly how your portfolio needs to look at any particular moment"
+    },
+    {
+      "start": 2525.44,
+      "end": 2528.24,
+      "text": "in time in any particular situation."
+    },
+    {
+      "start": 2528.8,
+      "end": 2532.32,
+      "text": "At the end of the day, we just want to be long stocks that go up."
+    },
+    {
+      "start": 2533.2,
+      "end": 2539.28,
+      "text": "And we want to be making sure that we are long the right stocks at the right time."
+    },
+    {
+      "start": 2539.28,
+      "end": 2540.96,
+      "text": "So they're actually going up a lot."
+    },
+    {
+      "start": 2541.52,
+      "end": 2547.52,
+      "text": "And we want to be short stocks that go down a lot and have the right portfolio bias."
+    },
+    {
+      "start": 2549.28,
+      "end": 2553.76,
+      "text": "Now, assuming that we already have our portfolio bias in place,"
+    },
+    {
+      "start": 2554.48,
+      "end": 2561.68,
+      "text": "this is best achieved by first identifying all of the companies with good fundamentals."
+    },
+    {
+      "start": 2562.16,
+      "end": 2568.48,
+      "text": "So for our potential longs and all of the companies with bad fundamentals."
+    },
+    {
+      "start": 2568.48,
+      "end": 2570.32,
+      "text": "So for potential shorts."
+    },
+    {
+      "start": 2571.76,
+      "end": 2577.76,
+      "text": "And what we do in our process, and we'll be looking at this in great detail later in the video series,"
+    },
+    {
+      "start": 2577.76,
+      "end": 2584.48,
+      "text": "is that we identify the positive and negative outliers in each sector."
+    },
+    {
+      "start": 2584.48,
+      "end": 2588.32,
+      "text": "And we run an inventory of potential ideas."
+    },
+    {
+      "start": 2589.92,
+      "end": 2592.64,
+      "text": "And then overlaid with more processes,"
+    },
+    {
+      "start": 2593.2,
+      "end": 2601.6,
+      "text": "these potential ideas may end up becoming actual trade ideas and then actual positions."
+    },
+    {
+      "start": 2602.32,
+      "end": 2608.8,
+      "text": "So at this stage, guys, just remember, we want to be going where the juice is."
+    },
+    {
+      "start": 2608.8,
+      "end": 2616.0,
+      "text": "We want to be long, the right stocks, really good stocks that go up at the right time."
+    },
+    {
+      "start": 2616.0,
+      "end": 2621.04,
+      "text": "And we want to be short, really bad stocks at the right time."
+    },
+    {
+      "start": 2621.04,
+      "end": 2625.36,
+      "text": "So we want really bad stocks that go down at the right time."
+    },
+    {
+      "start": 2626.88,
+      "end": 2633.28,
+      "text": "So yes, we use our classification systems, our stock classification systems."
+    },
+    {
+      "start": 2633.6,
+      "end": 2643.6,
+      "text": "We drill from the top down, we assign cyclical defensive or both descriptors to each industry."
+    },
+    {
+      "start": 2644.32,
+      "end": 2652.32,
+      "text": "But when we're locating stocks within the sub industries, we are looking for great longs and great shorts."
+    },
+    {
+      "start": 2652.32,
+      "end": 2654.88,
+      "text": "And we want to be going where the juices."
+    },
+    {
+      "start": 2654.88,
+      "end": 2668.48,
+      "text": "Now, next thing that we're going to be introducing you to at this stage in the video series is we're going to be looking at the definitions of spread and ratio traits."
+    },
+    {
+      "start": 2669.76,
+      "end": 2676.4,
+      "text": "And the reason we're doing this and the reason why we're doing it at this stage in the PTM video series,"
+    },
+    {
+      "start": 2676.4,
+      "end": 2683.04,
+      "text": "before we move on to foundations of portfolio management in more detail,"
+    },
+    {
+      "start": 2683.84,
+      "end": 2688.08,
+      "text": "is because at this stage of your educational development,"
+    },
+    {
+      "start": 2688.08,
+      "end": 2697.28,
+      "text": "it's really important to understand the concept of outperformance and underperformance within a portfolio."
+    },
+    {
+      "start": 2698.56,
+      "end": 2705.6,
+      "text": "And the best way to highlight this, the best way to teach it so you understand it and it sticks,"
+    },
+    {
+      "start": 2706.24,
+      "end": 2710.88,
+      "text": "is to understand the concept of spread and ratio traits."
+    },
+    {
+      "start": 2712.16,
+      "end": 2720.32,
+      "text": "And not just the concept, but actually how it works in practice and how everything is calculated."
+    },
+    {
+      "start": 2721.68,
+      "end": 2727.92,
+      "text": "So a spread trade is a trade whereby we take a long position in one stock."
+    },
+    {
+      "start": 2728.4,
+      "end": 2733.12,
+      "text": "So let's call that stock A and a short position in another stock."
+    },
+    {
+      "start": 2733.12,
+      "end": 2734.88,
+      "text": "And we'll call that stock B."
+    },
+    {
+      "start": 2735.6,
+      "end": 2742.0,
+      "text": "The spread between stock A and stock B can be calculated in one of two ways."
+    },
+    {
+      "start": 2742.72,
+      "end": 2748.88,
+      "text": "Firstly, we can use stock price A and then minus off stock price B."
+    },
+    {
+      "start": 2748.88,
+      "end": 2753.6,
+      "text": "So first calculation, stock price A minus stock price B."
+    },
+    {
+      "start": 2754.4,
+      "end": 2759.68,
+      "text": "Second calculation, stock price A divided by stock price B."
+    },
+    {
+      "start": 2759.68,
+      "end": 2762.56,
+      "text": "So one is a minus and one is a division."
+    },
+    {
+      "start": 2763.68,
+      "end": 2768.8,
+      "text": "Typically in trading vernacular, the minus equation,"
+    },
+    {
+      "start": 2768.8,
+      "end": 2774.88,
+      "text": "So stock price A minus stock price B, this would be known as a spread trade."
+    },
+    {
+      "start": 2775.36,
+      "end": 2782.32,
+      "text": "And the division calculation where we have stock price A divided by stock price B,"
+    },
+    {
+      "start": 2782.32,
+      "end": 2785.52,
+      "text": "this would be known as a ratio trade."
+    },
+    {
+      "start": 2785.52,
+      "end": 2794.32,
+      "text": "But in common trading vernacular, we would call both of these calculations and refer to them as spread trades."
+    },
+    {
+      "start": 2795.52,
+      "end": 2799.2,
+      "text": "So yes, if we were being really picky about our definitions,"
+    },
+    {
+      "start": 2799.76,
+      "end": 2806.72,
+      "text": "we would refer to the minus calculation as a spread trade and the division calculation as a ratio trade."
+    },
+    {
+      "start": 2806.72,
+      "end": 2814.48,
+      "text": "But if you do hear somebody in the market, even a professional, refer to something called a spread trade,"
+    },
+    {
+      "start": 2814.48,
+      "end": 2823.76,
+      "text": "It can actually be either and you would just have to ask them to define whether they're using the minus or the ratio, the division calculation."
+    },
+    {
+      "start": 2824.96,
+      "end": 2827.28,
+      "text": "So what does this actually look like?"
+    },
+    {
+      "start": 2827.28,
+      "end": 2829.68,
+      "text": "Well, it's pretty straightforward."
+    },
+    {
+      "start": 2829.68,
+      "end": 2832.96,
+      "text": "Here we have an example where we have two stocks."
+    },
+    {
+      "start": 2832.96,
+      "end": 2836.72,
+      "text": "We have our stock A, which is C-H-W-Y, Chewy."
+    },
+    {
+      "start": 2837.36,
+      "end": 2841.6,
+      "text": "And then we have our stock B, T-S-N, Tyson Foods."
+    },
+    {
+      "start": 2841.6,
+      "end": 2846.56,
+      "text": "And we've minused Tyson Foods off the Chewy stock price."
+    },
+    {
+      "start": 2846.56,
+      "end": 2852.48,
+      "text": "So Tyson Foods stock price is minused or taken away off the Chewy stock price."
+    },
+    {
+      "start": 2853.76,
+      "end": 2856.16,
+      "text": "So our chart shows this calculation."
+    },
+    {
+      "start": 2856.8,
+      "end": 2860.4,
+      "text": "So Chewy stock price minus Tyson Foods stock price."
+    },
+    {
+      "start": 2861.12,
+      "end": 2868.88,
+      "text": "The chart shows this calculation from the 13th of June 2019 to the 8th of March 2021."
+    },
+    {
+      "start": 2870.0,
+      "end": 2880.8,
+      "text": "So you can see with the spread between the two that there's been a negative territory and positive territory across the time horizon."
+    },
+    {
+      "start": 2881.76,
+      "end": 2889.68,
+      "text": "And you can see that there's been a low of 67.85 and a high of 53.13."
+    },
+    {
+      "start": 2890.4,
+      "end": 2893.6,
+      "text": "And the last price was $10.16."
+    },
+    {
+      "start": 2894.8,
+      "end": 2907.6,
+      "text": "And when we look at our chart, it's obviously from left to right gone up, which means the Chewy stock price has outperformed over this time horizon the Tyson Foods stock price."
+    },
+    {
+      "start": 2908.64,
+      "end": 2918.4,
+      "text": "And when you pull up a stock chart like this and you've calculated a spread where it's going up from left to right, this would be your first thought."
+    },
+    {
+      "start": 2919.04,
+      "end": 2929.6,
+      "text": "You would just take note that the chart has gone up from left to right which must mean that stock A has outperformed stock B."
+    },
+    {
+      "start": 2931.04,
+      "end": 2943.04,
+      "text": "Likewise, if we calculate the spread as a ratio, so we take the Chewy stock price and we divide that by the Tyson Foods stock price."
+    },
+    {
+      "start": 2943.76,
+      "end": 2959.6,
+      "text": "If you see a ratio chart where it goes up from left to right, it simply means that the numerator has outperformed the denominator in the ratio in the fraction over the time horizon that you're looking at."
+    },
+    {
+      "start": 2960.88,
+      "end": 2972.4,
+      "text": "So here on the chart, we're looking at the same time horizon as before, but instead of the minus calculation, we're doing a division calculation to get a ratio."
+    },
+    {
+      "start": 2972.96,
+      "end": 2978.8,
+      "text": "Over the time horizon, we can see that there was a low of 0.2459."
+    },
+    {
+      "start": 2979.52,
+      "end": 2988.32,
+      "text": "There was a high of 1.8104 and the last price of the ratio is 1.1397."
+    },
+    {
+      "start": 2989.76,
+      "end": 2996.08,
+      "text": "Now, something worth mentioning here, whether it's the minus calculation or the division calculation,"
+    },
+    {
+      "start": 2996.64,
+      "end": 3013.84,
+      "text": "when you are looking at the spread or ratio traits at any one moment in time, conventionally, the way you would chart or the way you would look at the spreads is you would look at the stock that you're looking to go long."
+    },
+    {
+      "start": 3014.72,
+      "end": 3024.56,
+      "text": "And you would use this as in the minus calculation, for example, as the first stock and the stock that you're looking to go short."
+    },
+    {
+      "start": 3025.28,
+      "end": 3029.52,
+      "text": "You would minus that off the stock that you're looking to go long."
+    },
+    {
+      "start": 3030.72,
+      "end": 3040.08,
+      "text": "And in the division calculation, the stock that you're looking to go long conventionally would be the numerator."
+    },
+    {
+      "start": 3040.8,
+      "end": 3045.44,
+      "text": "And the stock that you're looking to go short would be the denominator."
+    },
+    {
+      "start": 3046.0,
+      "end": 3058.64,
+      "text": "And in both cases, of course, in the minus case and in the division case, if we're using the stock that we're looking to go long first in the minus case,"
+    },
+    {
+      "start": 3059.28,
+      "end": 3063.84,
+      "text": "and we're taking away, we're minusing the stock that we're looking to go short."
+    },
+    {
+      "start": 3064.48,
+      "end": 3074.88,
+      "text": "And in the ratio case, if we're using the stock that we're looking to go long as the numerator and the stock that we're looking to go short as the denominator,"
+    },
+    {
+      "start": 3074.88,
+      "end": 3081.44,
+      "text": "in both cases, we want obviously the chart from left to right to be going up,"
+    },
+    {
+      "start": 3081.44,
+      "end": 3088.56,
+      "text": "because that means that the stock that we're looking to go long over the time horizon has outperformed"
+    },
+    {
+      "start": 3088.56,
+      "end": 3090.8,
+      "text": "the stock that we're looking to go short."
+    },
+    {
+      "start": 3092.32,
+      "end": 3099.68,
+      "text": "So the charts that we just looked at with Chewy and Tyson Foods, they showed the spread,"
+    },
+    {
+      "start": 3099.68,
+      "end": 3106.4,
+      "text": "so the minus calculation and the ratio, the division calculation of Chewy as a buy,"
+    },
+    {
+      "start": 3106.4,
+      "end": 3112.08,
+      "text": "a potential buy versus Tyson Foods as a potential sell or short."
+    },
+    {
+      "start": 3113.44,
+      "end": 3120.72,
+      "text": "And the point of origin was Chewy's IPO, their initial public offering in June 2019."
+    },
+    {
+      "start": 3121.44,
+      "end": 3123.28,
+      "text": "Now, what do these stocks do?"
+    },
+    {
+      "start": 3123.28,
+      "end": 3138.8,
+      "text": "Well, Chewy is an online retailer of pet food and other pet supplies, and Tyson Foods is a food distribution company specializing in meat products supplying grocery wholesalers and retailers."
+    },
+    {
+      "start": 3140.8,
+      "end": 3143.2,
+      "text": "So I'll allow you to think about this one."
+    },
+    {
+      "start": 3144.32,
+      "end": 3149.6,
+      "text": "What descriptors would you actually assign these companies if you have to?"
+    },
+    {
+      "start": 3150.32,
+      "end": 3156.56,
+      "text": "So would you assign the descriptor of cyclical or defensive to these stocks?"
+    },
+    {
+      "start": 3156.56,
+      "end": 3164.8,
+      "text": "And within that, would you assign the characteristics of these companies as being growth characteristics?"
+    },
+    {
+      "start": 3164.8,
+      "end": 3169.2,
+      "text": "So growth companies, X growth or value?"
+    },
+    {
+      "start": 3170.16,
+      "end": 3174.32,
+      "text": "I'll leave that for you to decide, for you to do a little bit of homework there."
+    },
+    {
+      "start": 3174.64,
+      "end": 3179.52,
+      "text": "You might want to refer to the GIX classification download for some clues."
+    },
+    {
+      "start": 3180.56,
+      "end": 3193.92,
+      "text": "And also maybe come back to this video after you've done the quantitative processing in the trade idea generation section of the PTM video series,"
+    },
+    {
+      "start": 3193.92,
+      "end": 3199.92,
+      "text": "because you'll get a much better understanding of what classifies something as growth, X growth or value."
+    },
+    {
+      "start": 3201.76,
+      "end": 3207.12,
+      "text": "OK, so for us now, what is really important to understand,"
+    },
+    {
+      "start": 3207.12,
+      "end": 3215.28,
+      "text": "and this is why we're covering spread trades, spread and ratio trades at this stage of the PTM video series."
+    },
+    {
+      "start": 3215.84,
+      "end": 3221.76,
+      "text": "What is really important to understand now is the idea of performance."
+    },
+    {
+      "start": 3222.4,
+      "end": 3231.68,
+      "text": "So outperformance of one stock versus another or a bunch of stocks long versus a bunch of stocks short."
+    },
+    {
+      "start": 3232.24,
+      "end": 3234.8,
+      "text": "Essentially, that's what a portfolio is."
+    },
+    {
+      "start": 3236.24,
+      "end": 3244.64,
+      "text": "So as mentioned, and as we just covered, the convention for spreads, when we minus one stock price from another,"
+    },
+    {
+      "start": 3245.36,
+      "end": 3255.84,
+      "text": "is to minus the stock price of the stock that we're looking to sell short from the stock price of the stock that we're looking to go long."
+    },
+    {
+      "start": 3256.48,
+      "end": 3269.92,
+      "text": "And for ratio spreads, the convention there is to calculate the ratio by using the stock we're looking to go long as the numerator and the stock we're looking to go short as the denominator."
+    },
+    {
+      "start": 3271.2,
+      "end": 3277.36,
+      "text": "Now, when it comes to calculating performance or outperformance of one stock versus another."
+    },
+    {
+      "start": 3277.36,
+      "end": 3282.16,
+      "text": "So outperformance and underperformance of one stock versus another."
+    },
+    {
+      "start": 3282.16,
+      "end": 3285.92,
+      "text": "There are complications across the two calculations."
+    },
+    {
+      "start": 3286.96,
+      "end": 3293.12,
+      "text": "And Chris Quill is going to go into more detail about this in the next video."
+    },
+    {
+      "start": 3293.12,
+      "end": 3302.72,
+      "text": "But essentially, when we are calculating the outperformance of one stock versus another using spread calculations,"
+    },
+    {
+      "start": 3303.28,
+      "end": 3310.08,
+      "text": "it's better to use the minus calculation and we have to assume equal weight."
+    },
+    {
+      "start": 3311.52,
+      "end": 3320.64,
+      "text": "So when we calculate the percentage performance, so the outperformer versus the underperformer for Chewy versus Tyson Foods,"
+    },
+    {
+      "start": 3320.64,
+      "end": 3330.08,
+      "text": "we look at the Chewy performance first, Chewy performance over the time period was the original starting price, which was $22."
+    },
+    {
+      "start": 3330.64,
+      "end": 3337.12,
+      "text": "And we minus that off the current stock price, which was $76.33."
+    },
+    {
+      "start": 3338.32,
+      "end": 3342.56,
+      "text": "We divide that by the original number, the original price of $22."
+    },
+    {
+      "start": 3343.44,
+      "end": 3351.2,
+      "text": "We multiply that through by 100 and we get a 247% return over the time period for Chewy."
+    },
+    {
+      "start": 3352.32,
+      "end": 3360.72,
+      "text": "And for Tyson Foods, the performance over the same time period, we take the current stock price, $73.69."
+    },
+    {
+      "start": 3361.6,
+      "end": 3368.16,
+      "text": "We minus off the original stock price at the beginning of the time period, $62.76."
+    },
+    {
+      "start": 3368.96,
+      "end": 3374.48,
+      "text": "We divide through by the original point of origin price, $62.76."
+    },
+    {
+      "start": 3375.44,
+      "end": 3381.68,
+      "text": "We multiply through by 100 and we get a 17.4% return in Tyson Foods."
+    },
+    {
+      "start": 3383.04,
+      "end": 3392.48,
+      "text": "So Chewy as a stock has outperformed Tyson Foods over the time period by 229.6%."
+    },
+    {
+      "start": 3393.68,
+      "end": 3404.08,
+      "text": "But of course, in terms of dollar returns, this assumes an equal weighting to each stock over the entire time period."
+    },
+    {
+      "start": 3405.36,
+      "end": 3418.4,
+      "text": "So this is a very understandable and basic calculation of how to actually go about calculating outperformance versus underperformance for one stock versus another."
+    },
+    {
+      "start": 3418.4,
+      "end": 3441.36,
+      "text": "So Chris Quill in the next section of the video series is going to take you through in the next video in particular, outperformance versus underperformance in portfolio modeling."
+    },
+    {
+      "start": 3441.36,
+      "end": 3452.88,
+      "text": "But at this stage, it's also important to get your head around the concept of the amount of risk that you take for the level of return that you get."
+    },
+    {
+      "start": 3452.88,
+      "end": 3463.12,
+      "text": "We want to be efficient, long, short portfolio managers, and we can actually choose the level of risk we want to take."
+    },
+    {
+      "start": 3463.12,
+      "end": 3480.32,
+      "text": "So this is how we think about it, and this is why we're leading into this in terms of building an overall portfolio by understanding the different types of spread and ratio trades that we can expose ourselves to."
+    },
+    {
+      "start": 3481.2,
+      "end": 3490.72,
+      "text": "And therefore, the level of risk and potential return that we expose ourselves to when building a long, short portfolio."
+    },
+    {
+      "start": 3492.24,
+      "end": 3499.44,
+      "text": "So there's classically three types of spread trades in equities markets."
+    },
+    {
+      "start": 3499.44,
+      "end": 3502.48,
+      "text": "There's cross-sector spread trades."
+    },
+    {
+      "start": 3502.48,
+      "end": 3509.68,
+      "text": "There's cross-sector constituent spread trades and intra-sector constituent spread trades."
+    },
+    {
+      "start": 3510.88,
+      "end": 3515.2,
+      "text": "So starting with a cross-sector spread trade, what is that?"
+    },
+    {
+      "start": 3515.2,
+      "end": 3533.36,
+      "text": "Well, that's basically, for example, going long the S&P 500 consumer discretionary sector, which is a cyclical sector, and shorting the S&P 500 consumer staples sector, which is classified as a defensive sector."
+    },
+    {
+      "start": 3533.36,
+      "end": 3538.56,
+      "text": "So you're not actually going long constituents within the sector themselves."
+    },
+    {
+      "start": 3538.56,
+      "end": 3546.8,
+      "text": "So stocks within the sectors, what you're actually doing is going long a sector versus short another sector."
+    },
+    {
+      "start": 3547.84,
+      "end": 3551.92,
+      "text": "So this is defined as a cross-sector spread trade."
+    },
+    {
+      "start": 3552.56,
+      "end": 3556.72,
+      "text": "Now, what about a cross-sector constituent spread trade?"
+    },
+    {
+      "start": 3556.72,
+      "end": 3561.76,
+      "text": "Well, that would be going into the sector itself and picking a stock to go long."
+    },
+    {
+      "start": 3561.76,
+      "end": 3574.96,
+      "text": "So for example, if we went into the consumer discretionary sector and we looked at being long Lululemon, for example, long Lulu, which is defined as a cyclical stock."
+    },
+    {
+      "start": 3574.96,
+      "end": 3586.0,
+      "text": "And then on the other side, for example, going into the consumer staples sector, which is our defensive sector, shorting a stock like Colgate Palmolive."
+    },
+    {
+      "start": 3586.0,
+      "end": 3589.92,
+      "text": "So CL, short Colgate."
+    },
+    {
+      "start": 3589.92,
+      "end": 3593.76,
+      "text": "So that is defined as a defensive stock."
+    },
+    {
+      "start": 3593.76,
+      "end": 3609.36,
+      "text": "But you could also, in a cross-sector constituent spread rate, be short a cyclical stock in an unrelated sector to the sector that you've chosen with the stock that's in that sector for your long."
+    },
+    {
+      "start": 3609.36,
+      "end": 3618.64,
+      "text": "So a cross-sector constituent spread rate is simply being long a stock in one sector and short a stock in another sector."
+    },
+    {
+      "start": 3620.24,
+      "end": 3627.36,
+      "text": "Finally, an intra-sector constituent spread trade is, for example, being long a stock like Lulu."
+    },
+    {
+      "start": 3627.36,
+      "end": 3634.8,
+      "text": "So our cyclical consumer discretionary stock and then short a stock in the same sector."
+    },
+    {
+      "start": 3634.8,
+      "end": 3639.84,
+      "text": "So it has all the same characteristics. It's classified as being in the same sector."
+    },
+    {
+      "start": 3639.84,
+      "end": 3644.08,
+      "text": "So in our example here, shorting a stock like Under Armour, UA."
+    },
+    {
+      "start": 3645.76,
+      "end": 3649.36,
+      "text": "So our three types of spread trades in the equities market."
+    },
+    {
+      "start": 3649.92,
+      "end": 3659.92,
+      "text": "We have our cross-sector spread trade where we're going long a particular sector and short a particular sector versus the long."
+    },
+    {
+      "start": 3660.72,
+      "end": 3665.44,
+      "text": "And we're not actually taking a position in stocks themselves."
+    },
+    {
+      "start": 3665.44,
+      "end": 3673.12,
+      "text": "These would be, for example, going long a sector ETF versus short a sector ETF."
+    },
+    {
+      "start": 3674.4,
+      "end": 3685.04,
+      "text": "We have our cross-sector constituent spread trades where we actually choose a stock in the sector that we're looking to be having long exposure."
+    },
+    {
+      "start": 3685.04,
+      "end": 3693.84,
+      "text": "So we obviously try to buy or go long our favorite or our best stock that we found in that particular sector."
+    },
+    {
+      "start": 3693.84,
+      "end": 3703.76,
+      "text": "And then on the short side, we're shorting a stock that's a constituent of the sector that we want to get short exposure in."
+    },
+    {
+      "start": 3703.76,
+      "end": 3708.96,
+      "text": "So we're looking to be short what we believe to be the worst stock in that sector."
+    },
+    {
+      "start": 3708.96,
+      "end": 3716.56,
+      "text": "But the key here is that the two sectors long versus short are actually different sectors to each other."
+    },
+    {
+      "start": 3716.56,
+      "end": 3720.24,
+      "text": "That's how we define a cross-sector trade."
+    },
+    {
+      "start": 3720.24,
+      "end": 3724.64,
+      "text": "So a cross-sector constituent spread trade in this case."
+    },
+    {
+      "start": 3726.0,
+      "end": 3735.12,
+      "text": "And then we have the intra-sector constituent spread trade where we're going long and short constituents in the same sector."
+    },
+    {
+      "start": 3736.72,
+      "end": 3742.88,
+      "text": "So stocks make up sectors and sectors make up the market."
+    },
+    {
+      "start": 3742.88,
+      "end": 3746.64,
+      "text": "So by default, stocks make up the entire market."
+    },
+    {
+      "start": 3747.28,
+      "end": 3749.76,
+      "text": "That's why we call it the stock market."
+    },
+    {
+      "start": 3750.4,
+      "end": 3754.32,
+      "text": "Of course, we can just be long or short the index."
+    },
+    {
+      "start": 3754.32,
+      "end": 3757.36,
+      "text": "So an index like the S&P 500."
+    },
+    {
+      "start": 3757.36,
+      "end": 3767.6,
+      "text": "However, at any one moment in time, there's always going to be stocks that outperform both the market and stocks that underperform the market."
+    },
+    {
+      "start": 3767.6,
+      "end": 3774.8,
+      "text": "The S&P 500 index is just the weighted average performance of 500 stocks."
+    },
+    {
+      "start": 3774.8,
+      "end": 3780.96,
+      "text": "As traders and portfolio managers, we obviously want to do better than the market return."
+    },
+    {
+      "start": 3781.6,
+      "end": 3788.56,
+      "text": "And of course, this is all set in the context of absolute return mandate."
+    },
+    {
+      "start": 3788.56,
+      "end": 3794.56,
+      "text": "As traders, we don't benchmark ourselves versus market returns."
+    },
+    {
+      "start": 3794.56,
+      "end": 3798.32,
+      "text": "We want to make money when the market goes up or down."
+    },
+    {
+      "start": 3799.36,
+      "end": 3806.0,
+      "text": "Outperformance metrics just aren't credible if you still lose money when the market goes down."
+    },
+    {
+      "start": 3807.6,
+      "end": 3815.12,
+      "text": "Now, understanding these definitions of spread trades is important for understanding"
+    },
+    {
+      "start": 3815.12,
+      "end": 3822.24,
+      "text": "the concept of choosing the level of risk that you take in your long short portfolio."
+    },
+    {
+      "start": 3823.44,
+      "end": 3830.96,
+      "text": "So going into the stock market, we have lots of choices when we're seeking to build a portfolio"
+    },
+    {
+      "start": 3830.96,
+      "end": 3834.72,
+      "text": "or to have a level of risk that we want to accept."
+    },
+    {
+      "start": 3835.52,
+      "end": 3841.52,
+      "text": "Our first choice, of course, is to just be long or short the market."
+    },
+    {
+      "start": 3841.52,
+      "end": 3847.44,
+      "text": "So the S&P 500, for example, what's the risk that we have if we do that?"
+    },
+    {
+      "start": 3847.44,
+      "end": 3850.48,
+      "text": "Well, the market is made up of stocks."
+    },
+    {
+      "start": 3851.2,
+      "end": 3853.44,
+      "text": "The market is made up of sectors."
+    },
+    {
+      "start": 3853.44,
+      "end": 3855.28,
+      "text": "Stocks make up sectors."
+    },
+    {
+      "start": 3855.28,
+      "end": 3860.72,
+      "text": "So we have market risk, we have sector risk, and we have stock risk."
+    },
+    {
+      "start": 3862.24,
+      "end": 3866.8,
+      "text": "So stock risk is sometimes referred to as unique risk."
+    },
+    {
+      "start": 3866.8,
+      "end": 3871.2,
+      "text": "So risk that is unique to the company, the stock itself."
+    },
+    {
+      "start": 3871.92,
+      "end": 3877.68,
+      "text": "And the risk doesn't affect other companies at all in the stock market."
+    },
+    {
+      "start": 3878.16,
+      "end": 3886.56,
+      "text": "So, for example, like the CEO of a particular company dying in a car crash one afternoon."
+    },
+    {
+      "start": 3886.56,
+      "end": 3890.32,
+      "text": "That is a unique risk to a company."
+    },
+    {
+      "start": 3890.32,
+      "end": 3892.32,
+      "text": "It doesn't affect other companies."
+    },
+    {
+      "start": 3892.32,
+      "end": 3899.6,
+      "text": "Or more realistically, it could be a risk, for example, that's unique to a particular company"
+    },
+    {
+      "start": 3899.6,
+      "end": 3903.92,
+      "text": "within a particular sector that's to do with their supply chain."
+    },
+    {
+      "start": 3903.92,
+      "end": 3911.44,
+      "text": "So in this particular supply chain, there might be a risk for a particular company that no other company has."
+    },
+    {
+      "start": 3912.4,
+      "end": 3919.92,
+      "text": "And if there's a problem there, it will affect the company directly and it won't affect other companies within the same sector."
+    },
+    {
+      "start": 3920.64,
+      "end": 3924.32,
+      "text": "So that is what we call unique or stock risk."
+    },
+    {
+      "start": 3925.84,
+      "end": 3935.84,
+      "text": "At the sector level, this is a dynamic or a risk that affects all stocks within a particular sector."
+    },
+    {
+      "start": 3935.84,
+      "end": 3938.96,
+      "text": "So it doesn't just affect one stock in a sector."
+    },
+    {
+      "start": 3938.96,
+      "end": 3940.4,
+      "text": "It affects all stocks."
+    },
+    {
+      "start": 3940.4,
+      "end": 3947.6,
+      "text": "So this might be something like, for example, if a major input cost goes up by a lot."
+    },
+    {
+      "start": 3947.6,
+      "end": 3959.68,
+      "text": "So let's say, for example, in the developer, the housing developer sector, we have a big increase, for example, in the price of lumber."
+    },
+    {
+      "start": 3959.68,
+      "end": 3967.6,
+      "text": "However, this could affect if they can't pass it on in higher prices of property, of residential property."
+    },
+    {
+      "start": 3968.8,
+      "end": 3976.56,
+      "text": "This may cause a big problem in the entire housing developer sector for residential housing developers."
+    },
+    {
+      "start": 3977.76,
+      "end": 3984.32,
+      "text": "So this is the type of risk that affects not just one stock in a sector, but all stocks in a sector."
+    },
+    {
+      "start": 3984.88,
+      "end": 3986.56,
+      "text": "And then we have market risk."
+    },
+    {
+      "start": 3986.56,
+      "end": 4002.48,
+      "text": "So something typically at the macroeconomic level that causes a slowdown or surprise slowdown in GDP growth, for example, and the stock market goes down based on that."
+    },
+    {
+      "start": 4003.76,
+      "end": 4015.84,
+      "text": "Or on the flip side, something occurs in the world that unexpectedly increases GDP expectations, growth expectations."
+    },
+    {
+      "start": 4016.56,
+      "end": 4022.32,
+      "text": "It's higher than the market actually expects and the market rallies really hard."
+    },
+    {
+      "start": 4024.16,
+      "end": 4035.36,
+      "text": "So if we have a position where we are long or short the index, we have all of these factors baked into the stock market."
+    },
+    {
+      "start": 4035.36,
+      "end": 4038.72,
+      "text": "We are exposing ourselves to all of this risk."
+    },
+    {
+      "start": 4040.16,
+      "end": 4043.52,
+      "text": "Then we have our cross sector spread trades."
+    },
+    {
+      "start": 4043.52,
+      "end": 4050.48,
+      "text": "So where we are, for example, long one sector and short another sector against it."
+    },
+    {
+      "start": 4051.92,
+      "end": 4063.6,
+      "text": "Now, assuming that we are what is termed as beta hedged, and Chris Quill will go into this in a bit more detail in the next section of the PTM video series."
+    },
+    {
+      "start": 4063.6,
+      "end": 4077.12,
+      "text": "So, assuming that we are efficiently beta hedged, assuming that we are efficiently beta hedged, a cross sector spread trade where we are long one sector versus short another and beta hedged, we actually eliminate market risk."
+    },
+    {
+      "start": 4077.12,
+      "end": 4092.64,
+      "text": "So through beta and correlation, certain sectors will go up and down either in line or not in line for every unit or percentage move in the overall market."
+    },
+    {
+      "start": 4092.64,
+      "end": 4111.76,
+      "text": "So if we are exposing ourselves to a cross sector spread trade position and we have the correct weightings in terms of the exposure to those sectors, we in theory eliminate the market risk."
+    },
+    {
+      "start": 4112.32,
+      "end": 4122.96,
+      "text": "However, we do have sector risk, so risk that is associated with each sector that we have a position in, so every stock in that sector."
+    },
+    {
+      "start": 4123.52,
+      "end": 4133.12,
+      "text": "And then because we have exposure to all the stocks within those sectors, we do actually have stock risk or unique risk as well."
+    },
+    {
+      "start": 4134.32,
+      "end": 4154.08,
+      "text": "So, for example, if a particular stock announces a major profit warning and the stock goes down 50%, 60%, 70%, 80%, well, that stock is part of a particular sector that we have a position in."
+    },
+    {
+      "start": 4154.08,
+      "end": 4167.76,
+      "text": "So of course, the sector overall is going to move as well, and that's because each stock in a particular sector, their performance contributes to the overall sector performance."
+    },
+    {
+      "start": 4167.76,
+      "end": 4180.5,
+      "text": "So with a cross sector spread trade, we in theory eliminate market risk, but we expose ourselves to sector risk and individual stock risk."
+    },
+    {
+      "start": 4181.06,
+      "end": 4195.54,
+      "text": "Now, when we look at cross sector constituent spread trades, so when we're taking positions in stocks that are constituents within two different sectors, what risk do we actually have here?"
+    },
+    {
+      "start": 4196.04,
+      "end": 4206.74,
+      "text": "Well, if we're through beta and correlation, perfect in our weightings, in theory, we should be eliminating market risk."
+    },
+    {
+      "start": 4206.74,
+      "end": 4221.54,
+      "text": "So we have no market risk, but we again do have in the cross sector constituent spread trades, like the cross sector spread trades, we do have sector risk and we do have stock risk."
+    },
+    {
+      "start": 4222.5,
+      "end": 4236.78,
+      "text": "So if we go long a particular stock, let's call that stock A in sector A, and we go short a particular stock, let's call that stock B in sector B."
+    },
+    {
+      "start": 4236.78,
+      "end": 4250.14,
+      "text": "If we have our, through beta and correlation, our weightings, perfect, we eliminate market risk, but we still have sector risk and stock risk."
+    },
+    {
+      "start": 4250.92,
+      "end": 4265.54,
+      "text": "Now, when it comes to intra sector constituent spread trades, so that would be going long a particular stock in a particular sector versus short another stock in the same sector."
+    },
+    {
+      "start": 4265.86,
+      "end": 4282.88,
+      "text": "Again, through beta and correlation, if we do get our weightings calculated correctly, we eliminate, in theory, market risk, and we eliminate, in this instance, also sector risk."
+    },
+    {
+      "start": 4283.24,
+      "end": 4290.92,
+      "text": "So in this situation, with intra sector constituent spread trades, we isolate stock risk."
+    },
+    {
+      "start": 4290.92,
+      "end": 4309.36,
+      "text": "So it's important at this stage for you to understand this in terms of the definitions of spread and ratio trades, the definition of spread trades, and how we actually go about building long, short portfolios."
+    },
+    {
+      "start": 4309.36,
+      "end": 4337.14,
+      "text": "So because we have an absolute return mandate, as traders and portfolio managers, we simply have to accept that we must take more risk than the implied market risk in order to make the most money possible."
+    },
+    {
+      "start": 4337.14,
+      "end": 4349.16,
+      "text": "So we have to understand these definitions, so we have to understand these definitions, and we have to understand our risk when we build long, short portfolios, but in the context of an absolute return mandate."
+    },
+    {
+      "start": 4349.64,
+      "end": 4358.82,
+      "text": "We also have to have conviction in calling a portfolio bias, so whether that's long, short, or neutral."
+    },
+    {
+      "start": 4359.2,
+      "end": 4366.28,
+      "text": "And, of course, we have to seek to be long and short, the right stocks at the right times."
+    },
+    {
+      "start": 4367.58,
+      "end": 4372.0,
+      "text": "However, we are walking a tightrope constantly."
+    },
+    {
+      "start": 4372.76,
+      "end": 4375.2,
+      "text": "We want risk, and we like risk."
+    },
+    {
+      "start": 4375.6,
+      "end": 4382.46,
+      "text": "However, we can't simply just take massive risk and expect massive returns."
+    },
+    {
+      "start": 4382.46,
+      "end": 4389.58,
+      "text": "We've got to do this with the deployment of sensible, preemptive risk management parameters."
+    },
+    {
+      "start": 4390.1,
+      "end": 4395.6,
+      "text": "And, of course, we're going to be covering a lot of this further on in the PTM video series."
+    },
+    {
+      "start": 4396.6,
+      "end": 4404.16,
+      "text": "So for now, just understand that we are long, short portfolio managers with an absolute return mandate."
+    },
+    {
+      "start": 4404.52,
+      "end": 4410.64,
+      "text": "We want risk, we accept risk, but we can't take too much risk."
+    },
+    {
+      "start": 4410.64,
+      "end": 4424.94,
+      "text": "So we choose the level of risk in our portfolio that we want to take, and we choose the levels of risk or what types of risk that we want to be exposed to."
+    },
+    {
+      "start": 4425.6,
+      "end": 4442.62,
+      "text": "And we attempt to choose a level of risk that will give us outsized returns, but walking a tightrope where we're not taking massive risk and then exposing ourselves to potentially massive losses or even massive returns."
+    },
+    {
+      "start": 4443.4,
+      "end": 4458.36,
+      "text": "So we are always walking this tightrope of choosing a level of risk, which is enough for us to get outsized returns, but not too much that we are exposing ourselves to unnecessary risk."
+    },
+    {
+      "start": 4458.36,
+      "end": 4464.48,
+      "text": "And then what we try to do for our absolute return mandate is juice up our returns."
+    },
+    {
+      "start": 4464.48,
+      "end": 4480.82,
+      "text": "So we can juice up the risk and therefore juice up our returns sensibly by building portfolios that have higher risk than the market risk, even whilst eliminating market risk."
+    },
+    {
+      "start": 4481.62,
+      "end": 4485.6,
+      "text": "So what type of risks do we want to expose ourselves to?"
+    },
+    {
+      "start": 4486.14,
+      "end": 4487.48,
+      "text": "What is sensible?"
+    },
+    {
+      "start": 4487.48,
+      "end": 4502.36,
+      "text": "Well, we've got to build long-short portfolios concentrating on the framework of cross-sector constituent spread trades and intra-sector constituent spread trades."
+    },
+    {
+      "start": 4502.68,
+      "end": 4515.46,
+      "text": "We have to select the right stocks, long and short, that have a higher implied risk than the market risk, and we also have to have a portfolio bias."
+    },
+    {
+      "start": 4516.6,
+      "end": 4523.48,
+      "text": "So in terms of walking this tightrope, yes, of course, we want to accept risk."
+    },
+    {
+      "start": 4523.48,
+      "end": 4524.58,
+      "text": "We like risk."
+    },
+    {
+      "start": 4524.58,
+      "end": 4535.2,
+      "text": "We want enough risk to give us the potential for outsized returns, but we don't want to take unnecessary, non-sensible risk."
+    },
+    {
+      "start": 4535.2,
+      "end": 4536.2,
+      "text": "So we have to look at risk."
+    },
+    {
+      "start": 4536.2,
+      "end": 4536.2,
+      "text": "We have to look at risk."
+    },
+    {
+      "start": 4536.2,
+      "end": 4549.92,
+      "text": "So we have to be careful as traders to not fill our portfolios up with too many long positions that have corresponding short positions in the same sector."
+    },
+    {
+      "start": 4550.08,
+      "end": 4553.36,
+      "text": "So intra-sector positioning."
+    },
+    {
+      "start": 4553.36,
+      "end": 4556.96,
+      "text": "Intra-sector spread trades will eliminate too much risk."
+    },
+    {
+      "start": 4556.96,
+      "end": 4564.32,
+      "text": "So if we filled our portfolio up with too many of them, we're not taking enough risk."
+    },
+    {
+      "start": 4564.96,
+      "end": 4578.78,
+      "text": "So intra-sector spread trades alone is not going to provide us with enough risk to get returns that we're seeking as traders within the 20 to 60-day time horizon."
+    },
+    {
+      "start": 4578.78,
+      "end": 4582.56,
+      "text": "So we need to make sure that we don't have too many of them."
+    },
+    {
+      "start": 4583.66,
+      "end": 4597.12,
+      "text": "If we eliminate too much risk in our portfolio, we may end up taking a level of risk that is lower than the market risk, and therefore we're lowering our expected returns."
+    },
+    {
+      "start": 4597.12,
+      "end": 4601.52,
+      "text": "And this is not good in a trader's absolute return mandate."
+    },
+    {
+      "start": 4601.8,
+      "end": 4614.08,
+      "text": "We've got to have a good amount of volatile cross-sector spread trades, and therefore accept some sector risk, and we have to seek a portfolio bias."
+    },
+    {
+      "start": 4614.08,
+      "end": 4617.14,
+      "text": "So we accept some market risk."
+    },
+    {
+      "start": 4618.06,
+      "end": 4632.58,
+      "text": "So yes, we take the position where if we can eliminate market risk, and it's the right thing to do at a moment in time, of course, we have the choice to do that."
+    },
+    {
+      "start": 4632.96,
+      "end": 4638.24,
+      "text": "But at the right moment in time, we have to accept some market risk."
+    },
+    {
+      "start": 4638.24,
+      "end": 4646.44,
+      "text": "If we eliminate market risk and we eliminate sector risk all the time, what is happening?"
+    },
+    {
+      "start": 4646.76,
+      "end": 4655.24,
+      "text": "We're taking too little risk in our portfolios, and we shouldn't expect to get outsized returns."
+    },
+    {
+      "start": 4655.5,
+      "end": 4666.02,
+      "text": "If we accept some sector risk and we take a portfolio bias at the right times, so accepting some market risk, we can get outsized returns,"
+    },
+    {
+      "start": 4666.36,
+      "end": 4670.4,
+      "text": "especially if we juice up the risk that we're taking."
+    },
+    {
+      "start": 4671.44,
+      "end": 4687.2,
+      "text": "So, before moving into the next part of the PTM video series, it's very important to understand these definitions of the types of spread trades that you're choosing to expose yourselves to,"
+    },
+    {
+      "start": 4687.8,
+      "end": 4695.76,
+      "text": "and the levels of risk that you're exposing yourselves to, and therefore your expected portfolio returns."
+    },
+    {
+      "start": 4696.36,
+      "end": 4708.98,
+      "text": "And if you recall, I mentioned earlier in this video that the reason why we're introducing you now to spread and ratio trades or spread trades per se,"
+    },
+    {
+      "start": 4709.44,
+      "end": 4730.04,
+      "text": "is so you understand the concept or the reality even of outperformance and underperformance of one stock versus another and also a whole bunch of stocks that you're potentially going long versus a whole bunch of stocks that you're potentially going short."
+    },
+    {
+      "start": 4731.32,
+      "end": 4736.32,
+      "text": "Understanding the idea of how a spread trade works."
+    },
+    {
+      "start": 4736.32,
+      "end": 4746.1,
+      "text": "Understanding that is an understanding of a vehicle to understanding how a long-short portfolio is built."
+    },
+    {
+      "start": 4747.4,
+      "end": 4758.16,
+      "text": "So, for example, if you build a portfolio of, say, 10 stocks, so it's a long-short portfolio of 10 stocks,"
+    },
+    {
+      "start": 4758.16,
+      "end": 4765.74,
+      "text": "and you have five equally weighted longs versus five equally weighted shorts,"
+    },
+    {
+      "start": 4765.74,
+      "end": 4774.5,
+      "text": "then, by definition, your portfolio is simply one big giant spread trade."
+    },
+    {
+      "start": 4775.46,
+      "end": 4784.28,
+      "text": "So, if we have stocks 1 through 10, and 1, 2, 3, 4, and 5, these positions are all longs,"
+    },
+    {
+      "start": 4784.62,
+      "end": 4787.9,
+      "text": "and then we have stocks 6, 7, 8, 9, 10."
+    },
+    {
+      "start": 4788.22,
+      "end": 4794.44,
+      "text": "If we use our minus calculation and we take away our shorts from our longs,"
+    },
+    {
+      "start": 4794.88,
+      "end": 4800.92,
+      "text": "so we take away stocks 6, 7, 8, 9, 10, the sum of those stocks,"
+    },
+    {
+      "start": 4801.04,
+      "end": 4806.94,
+      "text": "we take away that from the sum of the stocks that we are long, what do we get?"
+    },
+    {
+      "start": 4807.38,
+      "end": 4813.06,
+      "text": "Well, we get a number that represents our portfolio performance."
+    },
+    {
+      "start": 4814.18,
+      "end": 4818.58,
+      "text": "We can also use the ratio or division calculation."
+    },
+    {
+      "start": 4819.24,
+      "end": 4822.3,
+      "text": "So, if we take our stocks that we're going long,"
+    },
+    {
+      "start": 4822.92,
+      "end": 4827.04,
+      "text": "and in this instance, that's stocks 1, 2, 3, 4, and 5,"
+    },
+    {
+      "start": 4827.04,
+      "end": 4833.04,
+      "text": "and we divide that number by the stocks that we're looking to go short."
+    },
+    {
+      "start": 4833.78,
+      "end": 4840.64,
+      "text": "So, stocks 6 plus 7 plus 8 plus 9 plus 10, what do we get?"
+    },
+    {
+      "start": 4840.98,
+      "end": 4850.0,
+      "text": "Well, we just get stocks 1 through 5 expressed as a percentage of stocks 6 through 10."
+    },
+    {
+      "start": 4851.28,
+      "end": 4856.18,
+      "text": "What's important to understand here, and this is what we're trying to get across to you here,"
+    },
+    {
+      "start": 4856.26,
+      "end": 4861.66,
+      "text": "is to understand the mechanism of outperformance versus underperformance,"
+    },
+    {
+      "start": 4862.18,
+      "end": 4868.16,
+      "text": "and by understanding spread trades, when you understand spread trades,"
+    },
+    {
+      "start": 4868.46,
+      "end": 4875.22,
+      "text": "it's simply a mechanism for you to understand how outperformance and underperformance works"
+    },
+    {
+      "start": 4875.22,
+      "end": 4877.54,
+      "text": "in a long-short portfolio."
+    },
+    {
+      "start": 4877.86,
+      "end": 4883.74,
+      "text": "So, if all your longs go up, and all your shorts go up, but less than your longs,"
+    },
+    {
+      "start": 4883.9,
+      "end": 4886.62,
+      "text": "of course, you're going to make money."
+    },
+    {
+      "start": 4887.0,
+      "end": 4893.04,
+      "text": "If all your shorts go down, and all your longs go down, but not as much as your shorts,"
+    },
+    {
+      "start": 4893.72,
+      "end": 4896.0,
+      "text": "you, of course, are going to make money."
+    },
+    {
+      "start": 4896.0,
+      "end": 4902.96,
+      "text": "But the key here is that you have chosen the level of risk, so portfolio volatility,"
+    },
+    {
+      "start": 4903.74,
+      "end": 4906.96,
+      "text": "and the level of correlation that you want."
+    },
+    {
+      "start": 4907.96,
+      "end": 4914.0,
+      "text": "At any one moment in time, we just want to be long, awesome stocks that go up,"
+    },
+    {
+      "start": 4914.52,
+      "end": 4918.62,
+      "text": "and short, awful, crappy stocks that go down."
+    },
+    {
+      "start": 4918.62,
+      "end": 4926.06,
+      "text": "And we want to be happy, comfortable, accepting the level of risk and exposure"
+    },
+    {
+      "start": 4926.06,
+      "end": 4930.68,
+      "text": "that we have in the portfolio in order to get that return."
+    },
+    {
+      "start": 4931.84,
+      "end": 4938.94,
+      "text": "So, what you shouldn't be doing is, for example, just looking at a particular long"
+    },
+    {
+      "start": 4938.94,
+      "end": 4943.24,
+      "text": "and a particular stock that you potentially want to go short,"
+    },
+    {
+      "start": 4943.68,
+      "end": 4946.78,
+      "text": "and then just building a spread trade, and then saying,"
+    },
+    {
+      "start": 4946.78,
+      "end": 4949.78,
+      "text": "okay, I'm going to stick that spread trade in my portfolio,"
+    },
+    {
+      "start": 4950.0,
+      "end": 4953.1,
+      "text": "then choosing another one, then another one, then another one."
+    },
+    {
+      "start": 4953.46,
+      "end": 4958.04,
+      "text": "The way you've got to look at this is understand that when we look at spread trades,"
+    },
+    {
+      "start": 4958.5,
+      "end": 4963.26,
+      "text": "we're looking at them as a vehicle of understanding as to how outperformance"
+    },
+    {
+      "start": 4963.26,
+      "end": 4966.62,
+      "text": "and underperformance actually works in a portfolio."
+    },
+    {
+      "start": 4967.32,
+      "end": 4972.26,
+      "text": "What you should be looking to do is just being long, awesome stocks that go up,"
+    },
+    {
+      "start": 4972.68,
+      "end": 4975.36,
+      "text": "and short, terrible stocks that go down."
+    },
+    {
+      "start": 4975.66,
+      "end": 4978.3,
+      "text": "That's what we should be seeking to do all the time."
+    },
+    {
+      "start": 4978.88,
+      "end": 4979.92,
+      "text": "And what's going to happen?"
+    },
+    {
+      "start": 4979.92,
+      "end": 4985.86,
+      "text": "By default, our portfolio is just simply one big spread trade."
+    },
+    {
+      "start": 4987.14,
+      "end": 4990.86,
+      "text": "And of course, we want to be choosing the level of risk,"
+    },
+    {
+      "start": 4991.22,
+      "end": 4996.4,
+      "text": "the portfolio volatility, and correlation that we want to accept,"
+    },
+    {
+      "start": 4996.88,
+      "end": 4999.82,
+      "text": "and we're happy to accept in the portfolio."
+    },
+    {
+      "start": 5000.26,
+      "end": 5007.3,
+      "text": "But of course, we are also walking that tight rope of taking a level of risk that is sensible"
+    },
+    {
+      "start": 5007.3,
+      "end": 5012.7,
+      "text": "and not exposing ourselves to a level of risk that is unacceptable."
+    },
+    {
+      "start": 5013.7,
+      "end": 5015.64,
+      "text": "So we want to be taking this approach."
+    },
+    {
+      "start": 5015.82,
+      "end": 5021.34,
+      "text": "We want to be always seeking great longs that go up and terrible shorts that go down"
+    },
+    {
+      "start": 5021.34,
+      "end": 5026.98,
+      "text": "and end up with the default situation where when we have a long short portfolio,"
+    },
+    {
+      "start": 5026.98,
+      "end": 5030.52,
+      "text": "we just see it as one giant spread trade."
+    },
+    {
+      "start": 5031.22,
+      "end": 5033.18,
+      "text": "So that's an ideal world."
+    },
+    {
+      "start": 5033.48,
+      "end": 5038.86,
+      "text": "In an ideal world, we do want all of our longs to go up and all of our shorts to go down."
+    },
+    {
+      "start": 5039.32,
+      "end": 5044.1,
+      "text": "This is what we must be seeking when we're generating trade ideas."
+    },
+    {
+      "start": 5044.54,
+      "end": 5048.28,
+      "text": "However, the world is not perfect or ideal."
+    },
+    {
+      "start": 5048.94,
+      "end": 5055.68,
+      "text": "It will occur that shorts will go up with longs and longs will go down with shorts."
+    },
+    {
+      "start": 5055.68,
+      "end": 5063.4,
+      "text": "And that happens from time to time and will obviously happen quite a lot to us throughout our careers."
+    },
+    {
+      "start": 5063.68,
+      "end": 5067.88,
+      "text": "We just have to do our best to minimize that impact."
+    },
+    {
+      "start": 5068.18,
+      "end": 5076.4,
+      "text": "We don't purposely put on shorts, for example, expecting them to go up with a corresponding long."
+    },
+    {
+      "start": 5076.58,
+      "end": 5083.82,
+      "text": "So we don't put on shorts for the sake of putting them on and calling them a spread trade or calling it a hedge."
+    },
+    {
+      "start": 5084.58,
+      "end": 5092.36,
+      "text": "We need to always be seeking to be long stocks that go up and short stocks that we think are going to go down."
+    },
+    {
+      "start": 5092.36,
+      "end": 5100.92,
+      "text": "If our shorts end up going up or some of them go up with our longs and we still make money, that's okay."
+    },
+    {
+      "start": 5101.06,
+      "end": 5106.88,
+      "text": "Because we've probably eliminated market risk or a lot of market risk in doing so."
+    },
+    {
+      "start": 5107.58,
+      "end": 5116.64,
+      "text": "But we don't go into this with the intention of putting on shorts against longs where we think the shorts will probably go up as well."
+    },
+    {
+      "start": 5117.14,
+      "end": 5118.9,
+      "text": "We want our shorts to go down."
+    },
+    {
+      "start": 5119.28,
+      "end": 5121.04,
+      "text": "We want our longs to go up."
+    },
+    {
+      "start": 5121.04,
+      "end": 5123.32,
+      "text": "We are long-short portfolio managers."
+    },
+    {
+      "start": 5123.74,
+      "end": 5127.1,
+      "text": "That's what we're seeking to do when we're generating trade ideas."
+    },
+    {
+      "start": 5128.18,
+      "end": 5137.88,
+      "text": "So we've covered some important concepts here in terms of approach for risk and return in building long-short portfolios."
+    },
+    {
+      "start": 5138.12,
+      "end": 5151.34,
+      "text": "In the next section of the video series, Chris Quill is going to be covering four key components on the foundations of portfolio management."
+    },
+    {
+      "start": 5151.34,
+      "end": 5156.54,
+      "text": "These are all going to be quite rigorous spreadsheet classes."
+    },
+    {
+      "start": 5156.54,
+      "end": 5167.62,
+      "text": "And we're covering this now so you can get a clearer picture on why we do things as traders, long-short portfolio managers,"
+    },
+    {
+      "start": 5167.62,
+      "end": 5173.48,
+      "text": "why we do things the way we do things in our trade idea generation process."
+    },
+    {
+      "start": 5173.48,
+      "end": 5188.04,
+      "text": "Additionally, it provides a welcome break from the rigorous processes of top-down and bottom-up analysis that we're engaging in throughout a major part of the video series."
+    },
+    {
+      "start": 5188.04,
+      "end": 5202.56,
+      "text": "So the areas that Chris Quill is going to be covering is firstly portfolio modeling, then secondly, portfolio volatility, third, portfolio correlation, and lastly, fourth, portfolio beta."
+    },
+    {
+      "start": 5203.82,
+      "end": 5213.6,
+      "text": "So like I said, it's quite rigorous, but Chris is going to start you off with the basics and build you up slowly into more complicated procedures."
+    },
+    {
+      "start": 5214.2,
+      "end": 5224.34,
+      "text": "In the next video, he's going to show you how to get freely available stock data and how to actually model a portfolio's returns"
+    },
+    {
+      "start": 5224.34,
+      "end": 5231.84,
+      "text": "using the spread trade minus methodology and the spread trade ratio methodology."
+    },
+    {
+      "start": 5232.98,
+      "end": 5242.98,
+      "text": "Now, just as a side note, please do not make the rookie dumb retail trader error of using Chris Quill's example portfolio"
+    },
+    {
+      "start": 5242.98,
+      "end": 5251.66,
+      "text": "as a basis for generating your first trade ideas after you've completed the PTM video series."
+    },
+    {
+      "start": 5251.86,
+      "end": 5254.18,
+      "text": "You need to be generating your own ideas."
+    },
+    {
+      "start": 5254.58,
+      "end": 5258.28,
+      "text": "Just look at every video that we do as a template."
+    },
+    {
+      "start": 5258.64,
+      "end": 5262.66,
+      "text": "They are examples, and we don't expect you to copy."
+    },
+    {
+      "start": 5262.98,
+      "end": 5266.86,
+      "text": "The ideas in the examples, okay?"
+    },
+    {
+      "start": 5266.94,
+      "end": 5268.6,
+      "text": "They're not actually trade ideas."
+    },
+    {
+      "start": 5269.02,
+      "end": 5270.74,
+      "text": "They are simply examples."
+    },
+    {
+      "start": 5271.9,
+      "end": 5277.74,
+      "text": "So guys, in the next section, foundations of long short portfolio management with Chris Quill."
+    },
+    {
+      "start": 5278.2,
+      "end": 5282.72,
+      "text": "A lot of spreadsheet work to get your head around, a lot of concepts to get your head around too."
+    },
+    {
+      "start": 5283.62,
+      "end": 5290.02,
+      "text": "Enjoy the next section, and I'll see you back at the desk a bit later in the video series."
+    },
+    {
+      "start": 5290.02,
+      "end": 5291.02,
+      "text": "Thanks."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

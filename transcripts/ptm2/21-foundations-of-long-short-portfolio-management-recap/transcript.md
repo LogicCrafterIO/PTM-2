@@ -1,0 +1,1029 @@
+---
+course: ptm2
+lesson_id: "21"
+title: "Foundations of Long  Short Portfolio Management Recap"
+module: long-short-portfolio
+module_title: "Long/short portfolio construction"
+duration: 01:16:35
+duration_seconds: 4595.051
+source: "21. Foundations of Long  Short Portfolio Management Recap.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  []
+---
+
+# 21 — Foundations of Long  Short Portfolio Management Recap
+
+Okay guys, so welcome back to the desk. That was a huge and important part of the PTM video series.
+
+So what did we learn? Well, we learned and got resources for portfolio modeling, portfolio volatility, portfolio correlation and calculating beta.
+
+You've got the downloads, use them properly and regularly. So you're going to be using the downloads on a regular basis.
+
+Modeling portfolios, you're going to be modeling portfolios, current and intended.
+
+So if you have current portfolios, you'll be modeling them. If you want intended portfolios, you'll be modeling them too.
+
+And if you want to make changes to your portfolios, you're going to model the changes.
+
+You'll be using it on a regular basis. You'll also be calculating portfolio volatility and correlation on a regular basis.
+
+Okay, these resources are going to be extremely useful for you going forward.
+
+So portfolio volatility, like portfolio modeling, again, current and intended portfolios and when you're making potential changes to your portfolio.
+
+Calculating beta, that's important as well.
+
+You're going to be calculating the beta of individual stocks and you're going to be calculating portfolio beta on a regular basis for, again, both current and intended portfolios.
+
+So these are great resources, guys.
+
+You're going to be using them all the time going forward.
+
+They're going to save you and make you, if you use them on a regular basis and you use them properly, they're going to save you and make you a ton of money over your trading career.
+
+So, guys, we're going to go through a recap now.
+
+So, let's go through everything for foundations of portfolio management.
+
+Let's go to the screen.
+
+Okay, so welcome back to the screen.
+
+Obviously, that was a hell of a lot of information to take in over the last four videos with Christopher Quill.
+
+But what we're going to do here is something very useful.
+
+I'm going to recap everything for you so you get a full understanding of all the concepts that have been taught in the last four videos by Chris.
+
+And how you can use or how you should be using all of the spreadsheets that are available in the downloads area.
+
+So, what have we looked at in the previous four videos?
+
+Well, Chris Quill covered the four key components of foundations of portfolio management.
+
+We covered these areas at this stage so you can get a clearer picture on why we do things the way we do things.
+
+So, the reasons why professional traders do things the way we do things as we move into the trade idea generation processes in the next part of the PTM video series.
+
+Additionally, it also provided a welcome break from the rigorous processes of top-down and what we're moving on to next, bottom-up analysis.
+
+So, the four areas that Chris Quill looked at were portfolio modeling, portfolio volatility, portfolio volatility and correlation and how they connect, and calculating beta.
+
+So, what we're going to do is we're going to go through each part, summarize all of the key areas and how everything fits together and how you should be using these sheets moving forward.
+
+So, let's start with portfolio modeling.
+
+What did Chris show you?
+
+Well, firstly, he showed you how to download stock price data from publicly available sources.
+
+What does that mean?
+
+Well, it just means that you don't need to subscribe to any software at all.
+
+You can do all of this yourself.
+
+All of the data is publicly available as long as you know how to get that data, how to get the correct data, and how to process it.
+
+You do not need to buy software.
+
+You're going to save a ton of money doing this.
+
+Granted, it's a slower way of doing it.
+
+But when you're starting out, it's very, very important to do this process to understand the nuts and bolts of your business, to understand data, know where to get it.
+
+You can rely on yourself and engage in all of the processes with the data to get to your own answers and conclusions.
+
+Secondly, Chris showed you various methods of how to compare historical performance.
+
+So, specifically, indexing methods and calculating a time series of performance.
+
+And there were two ways that he showed us how to do that.
+
+There was the constantly equally weighted method, so the CEW method for calculating portfolio performance.
+
+And there was the non-rebalanced portfolio method.
+
+And initially, in Chris's teaching methods, he started off with a two-stock example.
+
+So, starting you off with a simple example of two stocks using both methods.
+
+So, for the constantly equally weighted portfolio performance method, with the two-stock example, what is it actually useful for?
+
+Well, it's helpful for monitoring whether one stock is just outperforming another or not over a period of time.
+
+Now, although this is impractical in day-to-day use, since it requires a rebalancing every day, the method does give us the cleanest and quickest way of monitoring outperformance versus underperformance of just one stock versus another.
+
+A more practical and applicable method that Chris showed you was the non-rebalanced portfolio.
+
+And in the two-stock example, what was it useful for?
+
+Well, it's useful for just backtesting a two-stock portfolio performance on a dollar basis.
+
+So, a long versus short two-stock portfolio, but over a certain time period, a long and hold versus short and hold strategy and not rebalancing the positions every day.
+
+So, this is a more practical method than the CEW method.
+
+But, of course, and as Chris showed, both methods are important and it's important to utilize both methods and to compare results.
+
+When you get quick at these processes, you can very easily and very quickly utilize both methods, the CEW portfolio performance balancing method and the non-rebalanced portfolio method for two stocks to analyze the actual performance of genuine spread trades in practice.
+
+And then, what do many spread trades become?
+
+So, what Chris showed you next is the application of both methods, the CEW and the non-rebalanced method when we're calculating portfolio performance.
+
+So, the most useful and practical method for portfolio modeling is the non-rebalanced portfolio method, how is it useful?
+
+How is it useful?
+
+Well, when we're engaging in our processes on a regular basis, it's useful for us prior to doing a number of things.
+
+So, prior to building an actual long-short stock portfolio, it's also useful before we even think about adding or taking out long or short positions to an existing portfolio.
+
+So, remodeling a portfolio, it's also useful before we decide or consider on increasing and decreasing our dollar exposures to certain longs or shorts in an existing portfolio, or even one that's under consideration, or even one that's under consideration, and it's also useful for us to analyze the potential drawdowns of specific portfolios.
+
+So, based on past performance, what were the drawdowns in a specific portfolio?
+
+What can we expect in the future?
+
+So, we're also looking at risk as well as opportunity.
+
+When we're modeling a multi-stock portfolio and we're using the constant equally weighted, the CEW portfolio method, we have to assume that the weights always stay the same throughout the date parameters that we've chosen.
+
+So, although impractical and not as practical as the non-rebalanced portfolio method, because it requires a rebalancing every day, the method, similar to the two-stock example, does give us the cleanest and quickest way of just monitoring outperformance versus underperformance of a bunch of stocks that were long, and a bunch of stocks that were short, or indeed, a bunch of stocks that we're thinking of going long versus a bunch of stocks that we're thinking of going short.
+
+So, going forward, in terms of portfolio modeling, you will be engaging in both processes as they are both useful.
+
+But what will happen over time is that you'll end up focusing more on the non-rebalanced portfolio method simply because it's more practical on an ongoing basis for real money trading and portfolio positioning.
+
+But you have to remember, guys, and as Chris pointed out, this is all statistical, rigorous processing.
+
+What you really need to worry about, because we are in the 20 to 60 day time horizon, is your trade ideas.
+
+It's just being long, great stocks that are going up and great shorts that are going down in our chosen time period.
+
+There is a bigger picture to this.
+
+We're looking at past data.
+
+So, yes, we're getting an appreciation of historical performance.
+
+But if we totally ignore our trade ideas and we only focus on statistical rigor, what's going to happen?
+
+We're going to end up with bad trade ideas that we're putting into competent statistical rigor.
+
+And the outcome of that is that we're just probably going to lose money over time.
+
+So, you have to have both.
+
+You need to worry about your trade ideas being as high quality as possible.
+
+And you need to engage in your statistical processes to understand the historical performance of portfolios that you're running.
+
+And also what the performance is likely to be or the historical performance from the past when you're making changes in your portfolios.
+
+So, you will be engaging in these processes, but never forget trade ideas, obviously.
+
+The spreadsheets are useful because you can model portfolios in the past.
+
+And you're doing it to get a sense of historical performance of a current portfolio or an intended portfolio.
+
+Now, something else that Chris looked at.
+
+He also looked at the differences in portfolio performance based on market capitalization dynamics.
+
+So, he looked at two model portfolios.
+
+The first portfolio he looked at was a portfolio made up of mega cap and large cap longs versus mega cap and large cap shorts.
+
+And the second model portfolio that he looked at was a model portfolio that was made up of mid cap longs versus large cap shorts.
+
+And our example that was shown in the spreadsheet video.
+
+The portfolio that had selected mid cap longs versus large cap shorts outperformed the portfolio with mega cap and large cap longs versus mega cap and large cap shorts.
+
+And part of the reason why Chris showed you that at this stage in the video series is because this is what typically happens in a GDP growth environment.
+
+So, in the majority of times when GDP is growing.
+
+This is because in a GDP growth environment, the sensitivity of mid cap earnings is higher than the sensitivity of mega cap and large cap stocks earnings to the business cycle.
+
+So, in a GDP growth environment, every unit of growth that we get in the economy translates into a higher increase in the earnings of mid cap stocks on average relative to mega cap and large cap stocks earnings.
+
+And of course, the reverse is true on average when we have GDP contraction.
+
+But we showed you this example in the spreadsheet video at this stage because it's useful to do so as for most of the time economies are in a state of GDP growth.
+
+And, of course, this is not a hard and fast rule that this just always happens where all mid caps outperform all mega caps and large caps all the time when the economy is growing.
+
+Of course, that's not the case.
+
+And, of course, you actually have to be able to select the right mid cap longs and the right mega cap and large cap shorts in order to make money.
+
+And this comes with the quality of your trade idea generation process, the quality of your trade ideas.
+
+And we'll be moving into that section of the PTM video series next.
+
+But, as a recap, at this stage for portfolio modeling, just remember to be using the non-rebalanced portfolio method on a regular basis and also utilizing the CEW method for quick answers on outperformance and underperformance for two stocks and for portfolios.
+
+For portfolios for modeling portfolios.
+
+So you have the download there for portfolio modeling and you can utilize that now forever.
+
+Now, the next thing that Chris showed you were all of the resources and processes for calculating portfolio volatility.
+
+So, back to the basics, the variability in your portfolio is the volatility of your portfolio and therefore it represents the risk and opportunity of your portfolio.
+
+So, like any single asset such as a stock where we can calculate volatility, portfolio volatility can be calculated as well.
+
+And portfolios like stocks can be high risk, low risk or medium risk.
+
+Therefore, with exposure to portfolios similar to exposure to a single asset like a stock.
+
+We can choose the level of risk that we actually want to have in a portfolio.
+
+Similar to the way we can choose the level of risk that we want in a single asset like a stock.
+
+So, if we choose the level of risk that we want in a portfolio, we would get a higher expected return from higher risk portfolios versus a lower expected return from lower risk portfolios.
+
+So, the upside and the downside is greater in risky portfolios versus low risk portfolios.
+
+Now, in terms of our volatility calculation methods, the most common volatility measure is a statistical calculation of standard deviation.
+
+This is very similar to the distribution of returns method that we've looked at previously when we look at realized or historical volatility in terms of a calculation.
+
+So, we're utilizing the same methods that we use for single assets to actually calculate portfolio volatility.
+
+And if you recall, Chris modeled two portfolios, portfolio one long mega cap and large cap stocks versus short mega cap and large cap stocks.
+
+And portfolio two long mid caps versus short large caps.
+
+And portfolio two on average has more volatility.
+
+Therefore, it has more risk and opportunity.
+
+And when we're modeling portfolio volatility for us to get an expectation of future volatility, we are using historical asset prices to work out variance, covariance, and then apply weightings for each stock in the portfolio.
+
+And there's plenty of resources in terms of background reading.
+
+There's the basic statistics guide that you can go through to bring you up to speed.
+
+There's the IPLT video series, which is very good background information for applying the portfolio volatility calculation methods.
+
+And of course, there's video 19 of the PTM video series.
+
+Now, what does this mean for us as traders and portfolio managers?
+
+It's all very well being able to calculate everything.
+
+But in terms of the interpretation and on an ongoing basis, how we use this.
+
+Remember, we build long short portfolios, not long only portfolios.
+
+And there's two main reasons that we build long short portfolios.
+
+Firstly, we want to make money when the market goes up and when it goes down.
+
+So that is our absolute return mandate.
+
+This is our opportunity.
+
+Secondly, we have diversification.
+
+So for diversification purposes, we have preemptive risk management measures in place.
+
+And this is our risk.
+
+So we want to make sure that when we are wrong on a position, which is inevitably going to happen frequently throughout our careers, that not one single position can kill us or wipe us out.
+
+We have to diversify enough to a point where we're not being stupid or too concentrated in our positioning.
+
+So taking too much risk.
+
+But we don't want to be too diverse that we can't make high returns.
+
+So we're not exposing ourselves to potential large upside in our returns.
+
+So in terms of volatility, in terms of risk and opportunity, as traders and portfolio managers, we are always walking this tightrope.
+
+What we need to do is target a level of risk that we want to take in order to get the returns we are seeking.
+
+And this is sometimes referred to in theoretical finance as the efficient frontier.
+
+When it comes to portfolio volatility and what we require as traders and portfolio managers, part of the reason that we approach the market with a long short portfolio mandate is because it lowers portfolio volatility.
+
+So we always have two competing factors to consider.
+
+We have our desire to get outsized absolute returns.
+
+Our desire for opportunity.
+
+But we also have our desire to control risks.
+
+So our desire to make sure that we're not being reckless.
+
+So we choose the level of annual risk that we want to take.
+
+And we target an annual expected return from that risk.
+
+And this gives us our target for our sharp ratio, which when it's reported at the end of the year is your annual return divided by the annual standard deviation of your portfolio.
+
+So divided by the volatility of your portfolio.
+
+And this, of course, is all in the context of our mandate.
+
+We aim to maximize our sharp ratio and make money regardless of whether the market goes up or down.
+
+We always want to be targeting a return where we do way better than the stock market in both up and down markets.
+
+We don't benchmark ourselves versus stock market returns.
+
+We just want to make as much money as possible.
+
+Our absolute return mandate in both up and down markets.
+
+We want to maximize our sharp.
+
+But, of course, we always want to be doing way better than stock market returns.
+
+So when it comes to the portfolio volatility spreadsheet, the resources, you can use the portfolio volatility calculator in conjunction with the portfolio modeling spreadsheet.
+
+We use the modeling spreadsheet for backtesting performance and for current and intended portfolios.
+
+And we use the portfolio volatility calculator to make sure that we're building portfolios with a high enough level of volatility to enable outsized returns and that are diverse enough to enable sensible risk management.
+
+So we're looking to be at the efficient frontier and we're looking to have a high enough level of volatility to get outsized returns.
+
+Now, of course, there's an overlap between video 18 portfolio volatility and video 19 portfolio correlation.
+
+There's two core factors that affect a portfolio's volatility.
+
+Firstly, the volatility of the assets in the portfolio.
+
+And secondly, the correlations between those assets.
+
+And when Chris was going through this and teaching you how to calculate portfolio correlation, he posed a very simple question.
+
+How much do each of these factors actually affect the volatility of the portfolio?
+
+And the answer was, well, it depends on the size of the portfolio.
+
+So the amount of positions, because as assets are added to the portfolio, as long as the correlation between those assets is less than one, the volatility of the portfolio falls quite significantly the more positions that you add.
+
+And the lower the correlation, the more efficient the diversification actually becomes and the faster risk of the portfolio decreases.
+
+And if you recall our visualization where we're comparing different portfolios with different correlations, if you recall the blue and the orange portfolios that Chris used as his example, we looked at the blue and orange portfolios starting at one position and they both have the same volatility at the point of origin.
+
+And as assets were added to the portfolios, the volatility of the orange line portfolio decreased at a much faster rate because the correlation of the correlation of the assets in that portfolio was lower at 0.2 versus 0.45 for the blue line portfolio.
+
+So when we have small portfolios where we just have one or a few positions, the volatility of those individual assets is the most important thing.
+
+So their contribution to the P&L outcome of the portfolio is high.
+
+However, in larger portfolios.
+
+So when we're talking about portfolios where we have, say, eight to 12 positions.
+
+So a typical long short retail trader portfolio, it's the correlation values of the assets to each other that matters much more.
+
+Additionally, something else that was covered in the portfolio correlation video, and it's very important to understand this when it comes to diversification.
+
+Chris posed the question, is it wise to simply keep adding positions to a portfolio to diversify?
+
+And the answer is, of course not, for two reasons.
+
+Firstly, the marginal reduction in portfolio risk above this gate or parameter of eight to 12 positions.
+
+The marginal reduction in the portfolio risk above that is small or non-existent.
+
+So there is a decreasing benefit beyond a certain point for diversification.
+
+This is what we call in the industry over diversification.
+
+Secondly, we don't want to compromise ever the quality of our trade ideas.
+
+Realistically, you simply can't come up with an ever increasing amount or infinite amount of high quality trade ideas.
+
+The more you diversify, the likelihood is that the quality of trade ideas is going to decrease.
+
+Therefore, we end up lowering our expected portfolio return.
+
+So this is where things start to neatly come together.
+
+We have our two competing factors where we are also always walking a tightrope.
+
+So we have our requirement for outsized absolute returns.
+
+And we also have our requirement, our desire to control risks sensibly.
+
+So we have our desire for opportunity and our desire to control risks.
+
+And we're always looking to maintain that balance.
+
+So with this in mind and this level of understanding, we can now look at efficient retail trader portfolios and what they look like.
+
+And if you've done the IPLT video series, you will have seen these slides before in the IPLT video series.
+
+But that was a basic level of understanding.
+
+This is now a much deeper level of understanding.
+
+So at the retail trading level, we have different sizes of trading accounts, different levels of margin capital.
+
+So retail traders with small levels of margin capital of $25,000, $50,000, $100,000 on margin.
+
+Where are they existing?
+
+Well, typically at any one moment in time, they'll be running long short portfolios with 8 to 12 positions.
+
+For retail traders with larger levels of margin capital of say $250,000, $500,000 or $1,000,000 on margin.
+
+We become slightly more diversified, but not by much.
+
+So at this level, there's an overlap with smaller levels of margin capital.
+
+We'll have 10 positions at the low end, but on the higher end, we would have up to 14 positions.
+
+And yes, the marginal reduction in risk is small at the portfolio level.
+
+But if we have more positions, we're less likely to be in a situation where one position can significantly reduce our returns if it goes wrong.
+
+When we move on to higher levels of capital, so we're talking very big retail traders, which is very rare.
+
+But retail traders with professional levels of margin capital, we're talking $2 million to $5 million on margin.
+
+The amount of positions in our portfolio increases to a gate or parameter of 12 to 16 positions.
+
+Now, in different parts of the world, retail traders have availability to different financial products.
+
+So we look at the world as the United States and the rest of the world.
+
+And we look at the financial products, the instruments that are available to retail traders in the United States and retail traders outside the US in the rest of the world.
+
+So if we look at the bottom of the screen, we have three examples, which if you've done the IPLT video series, you will have seen before.
+
+But now you'll have a better understanding of what's going on.
+
+We have our three examples of retail traders.
+
+Firstly, on the left hand side, we have our US equity options trader that has between $25,000 and $2 million margin capital.
+
+We have our outside the United States or rest of world contracts for difference CFD portfolio manager or trader.
+
+So that case, that case, that example has the same amount of margin capital in their account.
+
+And then we also have thirdly, the US based retail trader.
+
+So a long short stock trader that has $25,000 to $2 million margin.
+
+So all of these examples of retail traders, whether it's in the US or the rest of the world, they all have the same amount of margin.
+
+They are in the gate or parameter of $25,000 to $2 million on margin.
+
+The difference between the three in the assumptions that we're making is the financial instruments and the leverage that they're using.
+
+Something else that stays the same across these three examples is the annual volatility of the underlying portfolio.
+
+And the gate or parameter we're using here is between 15% and 30% expected annual portfolio volatility.
+
+So it's the same amount of margin, same amount of margin capital for every case and the same amount of expected annual portfolio volatility in the underlying stock portfolio.
+
+The only difference is the assumption of the financial instruments that are available to these retail traders.
+
+So let's start at the bottom left of the screen and start looking at the risk and return for a portfolio for a US equity options trader.
+
+We have our 15 to 30% expected annual portfolio volatility in the underlying stock portfolio.
+
+So the 30% number, you know, to be around 30% or close to that in a well diversified 8 to 12 position portfolio is a challenge.
+
+It's quite difficult. 30% annualized portfolio volatility is difficult to get with diversification.
+
+But if we can get 15%, 17 and a half percent, 20%, 22 and a half percent, something like this.
+
+If we can be in the lower end of the range, but have a sensible level of volatility.
+
+If we can target that, this is a good level of portfolio volatility to target.
+
+It's a good level of risk to take and presents us with ample opportunity to make outsized returns.
+
+Now for the US equity options trader, because this trader is utilizing options, they have implicit leverage through options positioning of anything between three to 10 times. 10 times what the underlying volatility of the portfolio is.
+
+So this gives us a range of possible outcomes in terms of annual return of 45% on the low end and 300% on the high end.
+
+So this gives us a range of results.
+
+But realistically, we want to be targeting a number that is very achievable.
+
+We target 50 to 100% annual return when we are utilizing equity options.
+
+And of course, there's no cap on the returns here.
+
+The returns can be higher, but we just want to be realistic here.
+
+And remember, we're not looking at this and saying we want to make a specific return or a specific amount.
+
+What we're doing here is that we're looking at ranges.
+
+And if we can fall somewhere between those ranges, we've done a very good job.
+
+So with our implicit leverage over many trades of between three to 10 times the underlying portfolio volatility, if we can just be at the lower end and we get a sharp ratio of 3.3 times, we're going to land somewhere between 50 and 100%.
+
+So in this instance, let's say, for example, you put $50,000 in a trading account.
+
+If the volatility or standard deviation, the annual standard deviation of your portfolio is around, say, 17.5% and you're utilizing options over the entire year and you achieve a 3.3 times return.
+
+So you get a sharp ratio of 3.3 times out of that risk.
+
+You're going to achieve around 59, 60% return, even when you've got a well diversified long short portfolio.
+
+Now, again, when it comes to a portfolio correlation, we are again targeting a gate or a range parameters.
+
+We are not targeting an absolute specific number for correlation.
+
+We just want to be dropping within a sensible range.
+
+And the range we want to be dropping in is the positive 0.3 to negative 0.3 range.
+
+And this is the same for all examples here, not just for the US equity options trader.
+
+And what also applies to all of our trader examples here is these returns are regardless of the equity market going up or down.
+
+So this is our absolute return mandate and it applies to all traders in all regions of the world, regardless of access to financial instruments.
+
+But it just so happens that rest of world, so retail traders outside the United States, rest of world retail traders can access US equity options and build and run US equity options portfolios.
+
+Of course, if you want to learn options strategies, options trading strategies, this is taught in our professional options trading masterclass.
+
+And that is an entire video series in itself.
+
+What's important here is to really understand the processes of calculating the underlying stock portfolio volatility.
+
+And then we apply the financial instruments that we have access to, to the volatility of that portfolio.
+
+Where we have differences in access for retail traders in terms of financial instruments is that US based retail traders can no longer access contracts for difference or CFDs.
+
+So they can't build CFD portfolios.
+
+Only retail traders outside the United States have access to contracts for difference and can build CFD portfolios.
+
+So what are contracts for difference?
+
+Well, they are just derivative instruments that are supposed to mirror one for one the underlying stock performance.
+
+But as their derivative instruments, they enable retail traders to get leverage to the performance of the underlying stocks.
+
+So essentially, it's the same as running a long short stock portfolio, one for one, but with leverage, the performance is leveraged.
+
+So if we look at the CFD portfolio example, we have the same level of capital.
+
+We're dealing with the same parameters here as the equity options portfolio, where we have between $25,000 and $2 million of margin capital.
+
+So this case, this example is falling in the same gate, same parameters for margin capital and also falling into the same parameters for expected annual volatility.
+
+But in this instance, we are using direct leverage with CFDs, not implied leverage like with options.
+
+So with CFDs, a typical situation is that you'll have a margin trading account that provides four times leverage, which gives us a range of possible outcomes when it comes to annual return.
+
+So you'll have an annual return of somewhere between 60% and 120%.
+
+However, we need to be more realistic here for a couple of reasons when it comes to an annual return number that we are targeting.
+
+So we target between 22.5% to 45% annual return when utilizing equity CFDs.
+
+So we apply a minimum Sharpe ratio of 1.5% on to the volatility of the portfolio, which gives us our expected target annual return of the 22.5% to 45%.
+
+So we set a very low expectation for our Sharpe ratio.
+
+So the return that we get out of the volatility of the portfolio.
+
+So a Sharpe ratio of 1.5% is pretty much the minimally acceptable Sharpe ratio in terms of the return that you get out of the volatility that you're exposed to.
+
+And this gives us a very realistic number for annual return of between 22.5% and 45%.
+
+Now, the main reason we have a realistic annual return expectation that is lower for a CFD portfolio, a long short CFD portfolio versus an equity options portfolio is because with equity options, we can get more leverage via implied leverage versus a CFD portfolio.
+
+With CFD portfolio.
+
+With CFD portfolios, the leverage is fixed at four times.
+
+With equity options portfolios, it's not fixed.
+
+But typically, you can get anything between three and 10 times implied leverage, which naturally increases our range of possible outcomes to the upside.
+
+Additionally, options portfolios have a different risk profile dollar for dollar compared to a CFD portfolio or even a stock portfolio.
+
+This is because the downside for going long call options to express a long position or going long put options to express a short position is limited to the amount of premium that you spend on the option.
+
+Whereas in a CFD portfolio.
+
+Whereas in a CFD portfolio, the amount of margin that is utilized in a trading account towards a long position, the amount of money that can be lost is greater than the amount that is utilized from the margin for that position.
+
+And on short CFD positions.
+
+And on short CFD positions, the amount of downside is unlimited.
+
+The amount of dollar downside is unlimited on shorts.
+
+So the difference in expected return comes from the fact that we are using direct leverage instead of implied leverage via options.
+
+Our direct leverage with a CFD portfolio and even a stock portfolio is fixed.
+
+And also options actually change the risk dynamic of a portfolio because of limited downside on long options positions.
+
+Now, remember the portfolio, even for the rest of world CFD portfolio is the same as the underlying portfolio with the trader who's utilizing equity options.
+
+It has the same dynamics.
+
+So we have the same expected annual volatility.
+
+We have the same correlation also.
+
+So our correlation is positive 0.3 to negative 0.3.
+
+We also have the same level of margin capital and we have the same absolute return mandate.
+
+So again, these outcomes are regardless of the equity market going up or down.
+
+Now, if we look at the exact same portfolio in the US as a stock portfolio.
+
+So a long short stock portfolio and not a CFD portfolio.
+
+And the reason we're looking at a long short stock portfolio in the US is because US retail traders can't trade CFDs.
+
+So they can only trade long and short stock positions with two times leverage or 50% margin requirement.
+
+So we have the same level of capital.
+
+So the range of $25,000 to $2 million of margin capital.
+
+We have the same expected annual portfolio volatility parameters of 15 to 30%.
+
+And we have the same target portfolio correlation of 0.3 to minus 0.3.
+
+So we have exactly the same portfolio as the rest of world CFD trader.
+
+But now we're modeling it as a US based retail trader that can only take long and short stock positions on a trading account that only provides two times leverage.
+
+So on direct leverage of two times, this gives us a range of possible outcomes for annual return of 30 to 60%.
+
+But in order to get that return to full within those parameters, because of the leverage situation, US based retail traders, when they're trading long short stock portfolios, have to be much better traders than a rest of world CFD portfolio in order to get the same return.
+
+So we're applying a sharp ratio of 2 here instead of 1.5, which means a US based long short portfolio manager, US based retail trader that's taking the same approach has to be much better at limiting losses and much better at maximizing profits.
+
+So they get a higher return for every unit of risk.
+
+So they get a higher return for every unit of risk out of the portfolio.
+
+So guys, when we think of these examples and when we think of portfolio modeling, portfolio volatility, portfolio correlation and our processes that we go through, we have to think about it in the context of what financial instruments are available to us and the size of our margin capital as well.
+
+Of course, if you want to learn how to trade equity options and build equity options portfolios, we are early on in your education at this stage.
+
+And it's definitely possible, but there's a lot more work to do.
+
+Retail traders in the US and retail traders outside the US in the rest of the world can access US equity options.
+
+That's not a problem.
+
+But at this moment in time, at this point in your education and for the purposes of the PTM video series for our learning curve, we are assuming we are taking the approach of long short equity stock or CFD portfolio managers.
+
+Because what's important at this stage is understanding portfolio modeling, portfolio volatility, how to calculate it, portfolio correlation and how everything ties together and in the context of trading accounts and in the real world, what financial instruments are available to you.
+
+But if you don't understand.
+
+But if you don't understand anything, so you don't understand portfolio modeling, volatility for portfolios, correlation of assets in portfolios, if you don't understand any of that, having access to financial instruments is just irrelevant.
+
+So you have to learn all of this stuff first.
+
+So this is how it all fits together.
+
+Now, in terms of efficient retail trader portfolios, you absolutely always have to remember not to forego the quality of your trade ideas.
+
+So you should always attempt to fall within the gates or parameters of efficient retail trader portfolios, but with high quality trade ideas driven by fundamentals and catalysts within the 20 to 60 day time horizon.
+
+Use the spreadsheets to estimate volatility correlation and forecasted returns based on shop ratio and leverage that's available or implied leverage via options.
+
+And you do not have to be ridiculously accurate all of the time.
+
+You are a retail trader.
+
+Don't get lost in endless rabbit holes of calculating portfolio volatility and correlation and forget about your time horizon.
+
+Forget about trade ideas.
+
+Forget about fundamentals and catalysts.
+
+Don't get lost in endless rabbit holes.
+
+Time is obviously an issue for retail traders.
+
+So you have to work smart and not hard.
+
+Please do that.
+
+If you're falling within the gates or parameters to target 50 to 100% return with 8 to 12 high quality long or short positions.
+
+So you have a diverse portfolio on a solid risk adjusted basis.
+
+So sharp ratio with some leverage.
+
+You are exposing yourself to the efficient frontier.
+
+Don't forgo high quality trade idea generation for the sake of diversification.
+
+You have to have both.
+
+Now what you also have to remember is that all of the stuff that you've learned up to this point and all of the stuff that you're going to do in the future in terms of your processes.
+
+This is going to give you an edge. 99% of retail traders are never going to do any of this.
+
+And all the stuff that you've just learned in this section of the video series when it comes to portfolio modeling, portfolio volatility, portfolio correlation, and even beta.
+
+If you are seeking to go into the industry as a professional trader, a basic understanding of how all of this works is absolutely necessary.
+
+It's what you would learn in your first one to two years as a graduate out of university entering hedge funds and investment banks, and especially at hedge funds as a junior portfolio manager.
+
+Now, as we were discussing portfolio correlation, we obviously took a slight detour there to talk about efficient retail trader portfolios.
+
+And I wanted to do that at this stage because it shows you how everything fits together at this point in your learning curve and also primes you and gets you ready for the next stage of the video series, which will be trade idea generation.
+
+Just knowing at this stage how things fit together in the bigger picture will give you a lot more clarity as to the reasons why we do certain things in the way we do it in the trade idea generation process.
+
+But for the moment, let's go back to some of the specifics of portfolio correlation.
+
+If you recall, Chris also showed you how to use the spreadsheets and showed you how to calculate correlation, how to create a time series of correlation.
+
+So how correlation goes up and down over time and also how to model different portfolios based on market capitalization.
+
+So if you recall, Chris went through an example of a 10 stock portfolio where we had six mid cap longs and four large cap shorts.
+
+And this portfolio showed high efficiency of both correlation and volatility.
+
+Now, just as a reminder, we always have our two competing factors to consider.
+
+So firstly, our desire to get outsized absolute returns, which is our opportunity.
+
+And secondly, our desire to control risks, which of course is our risk profile.
+
+So we choose the level of annual risk that we want to take and we target an annual expected return from that risk.
+
+So we're seeking a tidy, efficient, sharp ratio.
+
+So if you target the 15 to 30% gate for the underlying stock portfolio volatility and you take some market risk as well, and you achieve a decent, sharp ratio, utilizing some leverage, as long as your ideas are high quality, and you are going to do very well over many trades over a long period of time.
+
+And you'll notice with Chris's example where we have the mid cap longs, the six mid cap longs and the four shorts, the four large cap shorts that we're now looking to assume in model portfolios, some sort of market risk.
+
+Having some level of market risk is acceptable.
+
+So yes, we aim to get the highest amount of return possible from the lowest amount of acceptable risk that's possible.
+
+So again, we are choosing that level of volatility that's high enough to get outsized returns, but not too high that we're being irresponsible.
+
+And we are happy to accept some market risk.
+
+So we're looking to maximize our sharp ratio and we have an absolute return mandate.
+
+So we're looking to make money regardless of whether the market goes up or down.
+
+And this example portfolio is a good segue into the next area that we're going to look at, which is portfolio beta, because now we're assuming some market risk.
+
+So when it comes to the portfolio volatility and correlation spreadsheet download, obviously there is overlap between the correlation video and the portfolio volatility video.
+
+And the resources are very similar.
+
+The spreadsheet's the same, except correlation has been added to the portfolio volatility spreadsheet.
+
+So in your ongoing processes, you're going to use it in the same way, except now correlation has been added.
+
+So use the portfolio volatility and correlation spreadsheet to make sure that you're building portfolios with a high enough level of volatility to enable outsized returns and that are diverse enough to enable sensible risk management.
+
+And of course, when it comes to correlation, make sure that your portfolio correlation lands within the gates or parameters of acceptable correlation of positive 0.3 to negative 0.3.
+
+Now, when it comes to portfolio beta, the next video that Chris Quill took you through.
+
+So even though we run long short portfolios as traders and portfolio managers, we have to be willing to accept at any one moment in time, some market risk.
+
+Beta calculations at the stock level and the portfolio level, they help us to understand at any one moment in time, what exposure we have to market risk in our portfolio.
+
+We can be close to market neutral.
+
+And this can theoretically occur through beta adjustments of portfolios.
+
+However, we have to be realistic here.
+
+Being completely market neutral at any one moment in time is not just close to impossible.
+
+It's probably impossible.
+
+Not only that, we are risk takers.
+
+We are traders and portfolio managers.
+
+It's also undesirable for us as traders and portfolio managers to always be market neutral.
+
+We want to be accepting some market risk.
+
+Additionally, we have to be very mindful of what beta actually is and its calculation.
+
+Beta is always changing.
+
+And that's why Chris gave you the analysis and the capability now of calculating rolling beta.
+
+If we wanted to be market neutral all the time as portfolio managers, we would have to readjust every day to be close to perfect beta hedged portfolios.
+
+And it's not just impractical for us to do that and especially for you to do that as retail traders.
+
+It's not just impractical, but beta also has its flaws.
+
+Beta is always changing.
+
+So one of the weaknesses of beta, one of the flaws is that we're using past data.
+
+It is all based on past data and past relationships.
+
+Okay.
+
+Our assumptions can cause us to create blind spots in our risk.
+
+So we can be thinking that if we're beta market neutral, for example, we can be thinking that we've eliminated market risk when we actually really haven't.
+
+The numbers may not be telling the truth of what's actually occurring in the market at the time.
+
+Or things can actually change or change drastically in the market.
+
+And everything in the past is now irrelevant.
+
+And I can tell you now that even in professional circles, in professional trading circles, beta and reliance on its assumptions can create blind spots and complacency in risk calculations.
+
+And it can even be abused to hide real risks.
+
+So we must be aware of it.
+
+And we must use the processes to calculate our beta adjusted risk in stock portfolios.
+
+But we must be also aware of its drawbacks and its flaws.
+
+And we must be intellectually honest with ourselves that we are calculating accurately.
+
+So we try to get the most accurate reflection of the current reality of the world.
+
+And with our own mandate of our absolute return mandate, where we want to make outsized returns on the way up and outsized returns on the way down.
+
+We have to just admit to ourselves.
+
+And we have to just accept some level of market risk.
+
+So especially for retail traders on smaller accounts, we have to accept that we need some level of market risk in our portfolios at any one moment in time.
+
+In order to expose ourselves to potential outsized returns.
+
+We need some level of market risk.
+
+We need some level of market risk.
+
+We need some level of market risk in our portfolios all the time.
+
+It's not only an impossible task.
+
+We can get close to it.
+
+But it's almost impossible, if not impossible, to always be perfectly market neutral.
+
+Not only that, but it's also not required for traders and portfolio managers, especially at the retail level.
+
+We want some but not too much market risk in our portfolios.
+
+So for retail traders, beta modeling should be used as a tool to get a snapshot of what level of market risk that you're exposed to at any one moment in time.
+
+So you're aware of it and you're happy with it and you're happy that it aligns with your current macroeconomic views at the time.
+
+You should be using it also to model any portfolio changes that you're considering.
+
+So when you're thinking about adding in new long and or new short ideas to a portfolio and how it's going to affect your market risk and whether this still aligns with your views.
+
+Additionally, you're going to be using beta modeling all the time to understand the actual contribution on a beta adjusted basis of each individual asset in the portfolio to the outcome of the portfolio and that you're comfortable with it.
+
+But the most important thing is your net long or short bias in your portfolio overall.
+
+So if you want to be net long in your portfolio, but when you're beta modeling your portfolio with reasonable assumptions, you realize that you're actually beta flat or neutral or even beta short or even just not long enough, then you probably want to adjust your portfolio to get longer.
+
+So it aligns with your market view.
+
+And on the flip side, if you actually want to be net short in your portfolio, but when you're going through your beta modeling and you're using reasonable assumptions, you realize that you're actually either beta neutral or beta net long or you're just not short enough, then of course, you probably want to think about or actually adjusting your portfolio to get shorter.
+
+So when it comes to portfolio beta, again, we are walking a tightrope here with beta as traders and portfolio managers.
+
+We always have our two competing factors to consider our desire to get outsized absolute returns.
+
+So our opportunity and our desire to control risks.
+
+So our risk, we want to be exposing ourselves to a beta adjusted sensible level of market risk in our portfolios at any one moment in time.
+
+Use the beta sheets to calculate stock and portfolio beta and understand what your market risk is at any one moment in time.
+
+And you need to make sure that your beta adjusted net long or net short exposure roughly aligns with your market view.
+
+And again, it doesn't have to be 100% accurate.
+
+You just have to be roughly aligned.
+
+Remember, you're a retail trader.
+
+Most retail traders, 99% of them will never, ever be doing what you're doing.
+
+You're already ahead if you're doing this.
+
+Just don't get lost in endless rabbit holes of calculating portfolio volatility, correlation and beta.
+
+Time is obviously an issue.
+
+Time is obviously an issue.
+
+So please work smart and not hard.
+
+So when it comes to beta risk and opportunity.
+
+When we're targeting the gate, the 15 to 30% underlying stock portfolio volatility, and then we add in some market risk.
+
+We are attempting to achieve a decent shop ratio and utilize some leverage.
+
+Obviously, if we add in beta modeling to our portfolio and we accept some market risk and we're on top of it.
+
+As long as our ideas are high quality, we're going to stand a very good chance at getting outsized returns in all market conditions.
+
+So the question, what's an acceptable level of market risk at any one time in the portfolio?
+
+Well, again, we use gates here.
+
+So running a beta net long or short portfolio exposure of within plus and minus 30% at any one moment in time is totally okay.
+
+But that is, of course, assuming that you've actually done your macroeconomic work that we covered in the first part of the video series.
+
+And that your positions are well thought out.
+
+So high quality trade ideas that have gone through the entire trade idea generation process that we're going to go through in the next stage.
+
+And the market risk exposure that you've taken in your portfolio actually represents your macro view.
+
+So, guys, we've covered a lot of ground here.
+
+So let's let's summarize and conclude and overlap all the work that we've done so far, how it all fits in.
+
+We just conquered a major part of the scientific art of trading and portfolio management.
+
+And yes, admittedly, it is a lot of work and it's difficult for most people to get their head around initially.
+
+So fortunately or unfortunately, depending on how you look at it, in order for you as a retail trader to climb the competency hierarchy, this is the groundwork you need to know and that you have to incorporate into your regular processes.
+
+The previous four videos that were taken by Chris Quill are a fantastic example of the differences between unconscious competence.
+
+So the level that professional traders are operating at and unconscious incompetence, the level at the vast majority of retail traders are operating at.
+
+Your job as a professional trader or even a retail trader that's operating in the retail infrastructure, but trading at a professional level.
+
+Your job is not just to make money on one or two big trades, then disappear and then come back to play at the casino in a year or two when you just feel like it, when you have a whim.
+
+This is a fairy tale in the trading industry and the vast majority of people that engage in that behavior will always blow up.
+
+Your job is to make money consistently over thousands of career trades over many years and how you make your money is also super important.
+
+So you have to not only make consistent money, but you also have to make it efficiently.
+
+And that's why we measure not just returns, but risk adjusted returns.
+
+You are running a business and the business requires process, dedication, time management and statistical awareness of how the business works.
+
+And we will later in the video series be extending this analysis into statistics and into risk management.
+
+So the foundations of portfolio management section of the PTM video series that you've just experienced overlaps with risk management and trader statistics that we're going to be looking at later in the video series.
+
+And now what we're going to be doing is we're going to be moving on to trade idea generation.
+
+So as mentioned previously, modeling portfolio performance, modeling volatility, correlation and beta, it's all well and good.
+
+But if the trade ideas that you put into this mechanism, into this business are not high quality, it's all just pointless.
+
+You absolutely need both.
+
+You absolutely need both.
+
+The inventory that you're running, the inventory of your trade ideas that you're running at any one moment in time are your oxygen as a trader.
+
+Everything else is statistical processing and rigor.
+
+It's mechanical.
+
+It's mechanical.
+
+The trade idea generation process does also require statistical processing and rigor, but it also requires lateral thinking, creativity, imagination and a lot of common sense.
+
+Without a trader having a constant stream of high quality trade ideas, you will just suffocate and die.
+
+Trade ideas are your oxygen as a trader.
+
+So we're now going to move on to the most important stage of the PTM video series, the bottom up fundamental trade idea generation.
+
+And we're going to start with quantitative processing, then move on to qualitative processing and catalysts.
+
+So let's get stuck into it, guys, and I'll see you back at the desk in the next video.

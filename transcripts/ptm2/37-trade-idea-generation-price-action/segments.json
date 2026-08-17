@@ -1,0 +1,5710 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.98,
+      "text": "Okay, guys. So welcome to video number 37. We're going to continue now with our timing appraisal as part of our overall trade idea generation process. And we're going to be looking at price action or momentum indicators. So how does price action actually fit in here? Well, in the previous video, we looked at TA, technical analysis and price action."
+    },
+    {
+      "start": 30.0,
+      "end": 59.98,
+      "text": "patterns, TA patterns that play out frequently throughout history to judge whether our timing on a trade idea is either good, a green light, bad, a red light, or indifferent, an amber light on our traffic light system. And we also mentioned in the previous video that if you get to the technical analysis stage of checking whether you have good timing or not, so when you're looking at a technical analysis, you're looking at a technical analysis stage of checking whether you have good timing or not."
+    },
+    {
+      "start": 59.98,
+      "end": 89.96,
+      "text": "looking to turn a trade idea into a position. But if the timing didn't look right, then of course, you can sit back and wait by just keeping it on the watch list. And this is also the case for price action indicators. So we have to basically use both technical analysis and price action indicators together. But in understanding how price action"
+    },
+    {
+      "start": 89.96,
+      "end": 119.94,
+      "text": "fits in fits in fits in overall, we have to get a bit more specific on time horizons. So with technical analysis, we seek to get the bigger picture. If you recall from the previous video, we were looking at TA patterns over periods of weeks, months, and even years to put into context, our one to three month time horizon. With price action, we look over"
+    },
+    {
+      "start": 119.94,
+      "end": 149.92,
+      "text": "for days and weeks to discover whether we have momentum on our side when we're entering into our time horizon of the 20 to 60 day trading days period. So remember, technical analysis is the study of patterns and formations. And price action is the study of momentum. And in the context of any time horizon, you have to use TA and P"
+    },
+    {
+      "start": 149.92,
+      "end": 179.9,
+      "text": "in conjunction with each other in order to get the full picture and use them as accurately as possible to fit the time horizon of our process."
+    },
+    {
+      "start": 179.9,
+      "end": 209.88,
+      "text": "for this period."
+    },
+    {
+      "start": 209.88,
+      "end": 239.86,
+      "text": "that signals frequently occur."
+    },
+    {
+      "start": 239.86,
+      "end": 252.86,
+      "text": "in terms of working smart, in terms of working smart, not hard. So first of all, momentum indicator one, we're going to be looking at the relative strength index, RSI, on a 14 day and 20 day period."
+    },
+    {
+      "start": 252.86,
+      "end": 269.84,
+      "text": "Secondly, momentum indicator two, we're going to be looking at simple moving averages. And for us as traders and portfolio managers operating in the 20 to 60 day time horizon, we're going to be looking at simple moving averages, SMA, and SMA,"
+    },
+    {
+      "start": 269.84,
+      "end": 274.84,
+      "text": "of 20, 60, 120, and 250 trading days."
+    },
+    {
+      "start": 277.34,
+      "end": 279.94,
+      "text": "Next up, momentum indicator three,"
+    },
+    {
+      "start": 279.94,
+      "end": 283.1,
+      "text": "we're going to be looking at exponential moving averages,"
+    },
+    {
+      "start": 283.1,
+      "end": 286.8,
+      "text": "so EMAs over the same time horizons,"
+    },
+    {
+      "start": 286.8,
+      "end": 291.8,
+      "text": "20, 60, 120, and 250 trading days."
+    },
+    {
+      "start": 292.52,
+      "end": 295.28,
+      "text": "Momentum indicator four, we're going to be looking at"
+    },
+    {
+      "start": 295.28,
+      "end": 298.16,
+      "text": "moving average convergence divergence,"
+    },
+    {
+      "start": 298.16,
+      "end": 302.5,
+      "text": "or what's more commonly known as, or referred to as MACD."
+    },
+    {
+      "start": 303.84,
+      "end": 308.9,
+      "text": "We're going to briefly look at periods of 12, 26, and nine days"
+    },
+    {
+      "start": 308.9,
+      "end": 313.9,
+      "text": "for our MACD parameters, but we're also going to change that up"
+    },
+    {
+      "start": 314.5,
+      "end": 318.22,
+      "text": "and look at it specifically for our own time horizon"
+    },
+    {
+      "start": 318.22,
+      "end": 322.0,
+      "text": "for 20, 60 days, and 10 days."
+    },
+    {
+      "start": 323.16,
+      "end": 326.12,
+      "text": "And then our final momentum indicator,"
+    },
+    {
+      "start": 326.12,
+      "end": 329.84,
+      "text": "momentum indicator number five, we're going to be looking at"
+    },
+    {
+      "start": 329.84,
+      "end": 332.34,
+      "text": "Heiken-Ashi candlestick charts."
+    },
+    {
+      "start": 333.84,
+      "end": 337.54,
+      "text": "Okay, so let's start with momentum indicator number one,"
+    },
+    {
+      "start": 338.4,
+      "end": 341.18,
+      "text": "the RSI, the Relative Strength Index."
+    },
+    {
+      "start": 341.72,
+      "end": 342.74,
+      "text": "So what does this measure?"
+    },
+    {
+      "start": 343.1,
+      "end": 348.4,
+      "text": "Well, it measures the speed and change of price movements of an asset."
+    },
+    {
+      "start": 348.4,
+      "end": 353.74,
+      "text": "And it oscillates between a value of zero and one hundred."
+    },
+    {
+      "start": 353.74,
+      "end": 359.14,
+      "text": "And in financial markets, there's vernacular that's used with the RSI."
+    },
+    {
+      "start": 359.14,
+      "end": 366.76,
+      "text": "So when a stock has an RSI above 70, above the 70 level, on the zero to 100 scale,"
+    },
+    {
+      "start": 367.42,
+      "end": 372.34,
+      "text": "it's termed that the stock or the asset is overbought."
+    },
+    {
+      "start": 373.04,
+      "end": 377.18,
+      "text": "And when it's below the value of 30 on that scale of zero to 100,"
+    },
+    {
+      "start": 377.82,
+      "end": 379.98,
+      "text": "it's termed as being oversold."
+    },
+    {
+      "start": 380.86,
+      "end": 383.58,
+      "text": "Now, just generally, when it comes to stocks,"
+    },
+    {
+      "start": 383.58,
+      "end": 389.52,
+      "text": "very strong price movements you're going to find are usually associated"
+    },
+    {
+      "start": 389.52,
+      "end": 397.3,
+      "text": "with very strong fundamentals and or both panic and irrationality."
+    },
+    {
+      "start": 397.78,
+      "end": 401.3,
+      "text": "So this would be very, very strong momentum."
+    },
+    {
+      "start": 401.92,
+      "end": 406.46,
+      "text": "So a very strong price move is basically equal to strong momentum."
+    },
+    {
+      "start": 407.72,
+      "end": 412.08,
+      "text": "And the Relative Strength Index, the RSI, is going to pick this up."
+    },
+    {
+      "start": 413.34,
+      "end": 419.24,
+      "text": "And when RSI reverses, it's argued that momentum is coming out of the move."
+    },
+    {
+      "start": 420.38,
+      "end": 424.1,
+      "text": "However, as you're going to see with the RSI calculation,"
+    },
+    {
+      "start": 424.3,
+      "end": 429.16,
+      "text": "an asset can go up, for example, very quickly."
+    },
+    {
+      "start": 429.72,
+      "end": 435.08,
+      "text": "So it has very strong momentum, but it can continue going further up."
+    },
+    {
+      "start": 435.5,
+      "end": 439.78,
+      "text": "So further in the same direction, but just at a slower pace,"
+    },
+    {
+      "start": 439.96,
+      "end": 445.32,
+      "text": "which means the RSI can fall and a stock price can keep going up."
+    },
+    {
+      "start": 445.78,
+      "end": 452.12,
+      "text": "So you have to be very, very careful in terms of how you interpret the calculation"
+    },
+    {
+      "start": 452.12,
+      "end": 458.74,
+      "text": "and interpret the vernacular that's attached to the calculations of RSI."
+    },
+    {
+      "start": 459.8,
+      "end": 465.3,
+      "text": "So when it comes to RSI, just a very good discipline will be to treat the terms,"
+    },
+    {
+      "start": 465.8,
+      "end": 471.0,
+      "text": "the vernacular of overbought and oversold in quotations,"
+    },
+    {
+      "start": 471.2,
+      "end": 475.42,
+      "text": "with as much caution as we do when we look at fundamentals."
+    },
+    {
+      "start": 475.42,
+      "end": 482.96,
+      "text": "And the market refers to stocks as both cheap and expensive."
+    },
+    {
+      "start": 483.56,
+      "end": 485.28,
+      "text": "But there's no denying it."
+    },
+    {
+      "start": 485.42,
+      "end": 492.14,
+      "text": "Momentum is important because it can basically confirm or deny our fundamental findings"
+    },
+    {
+      "start": 492.14,
+      "end": 494.78,
+      "text": "in our trade idea generation process."
+    },
+    {
+      "start": 495.42,
+      "end": 501.14,
+      "text": "So if we've done our fundamental work and we come to the technical and price action stage"
+    },
+    {
+      "start": 501.14,
+      "end": 505.92,
+      "text": "where we're trying to figure out whether our timing is good, bad, or indifferent,"
+    },
+    {
+      "start": 506.3,
+      "end": 511.68,
+      "text": "we might actually be quite foolish here to think that our idea is well-timed"
+    },
+    {
+      "start": 511.68,
+      "end": 515.1,
+      "text": "if we're looking to perhaps enter a long position"
+    },
+    {
+      "start": 515.1,
+      "end": 521.12,
+      "text": "when the RSI is at what's termed as overbought levels and falling,"
+    },
+    {
+      "start": 521.84,
+      "end": 525.9,
+      "text": "or vice versa, if we are looking to put a short on,"
+    },
+    {
+      "start": 526.6,
+      "end": 532.92,
+      "text": "to enter a short position when the RSI is what is termed oversold and rising."
+    },
+    {
+      "start": 533.78,
+      "end": 542.6,
+      "text": "So although the RSI calculation and the vernacular is sometimes misinterpreted by traders"
+    },
+    {
+      "start": 542.6,
+      "end": 547.56,
+      "text": "or most certainly by retail traders, it's not exactly unuseful."
+    },
+    {
+      "start": 547.68,
+      "end": 551.98,
+      "text": "It's actually useful, but we just have to be aware of its drawbacks."
+    },
+    {
+      "start": 552.68,
+      "end": 556.52,
+      "text": "Now the calculation for RSI is pretty straightforward."
+    },
+    {
+      "start": 556.52,
+      "end": 563.38,
+      "text": "So the RSI is just 100 minus 100 divided by 1 plus relative strength."
+    },
+    {
+      "start": 564.06,
+      "end": 570.34,
+      "text": "Where relative strength, RS, is the average of the days of up closes"
+    },
+    {
+      "start": 570.34,
+      "end": 573.76,
+      "text": "divided by the average of days of down closes."
+    },
+    {
+      "start": 574.5,
+      "end": 579.1,
+      "text": "Now the most common time horizon that you're going to find out there in the market"
+    },
+    {
+      "start": 579.1,
+      "end": 582.46,
+      "text": "is 14 days for RSI."
+    },
+    {
+      "start": 582.46,
+      "end": 587.68,
+      "text": "And it's very likely that whatever software you're using,"
+    },
+    {
+      "start": 587.82,
+      "end": 591.8,
+      "text": "or even if you're using free software, even on the internet,"
+    },
+    {
+      "start": 592.34,
+      "end": 598.42,
+      "text": "it's very likely that the days that they will default to will be 14."
+    },
+    {
+      "start": 598.86,
+      "end": 604.86,
+      "text": "This is the most common and most standard time horizon used for RSI out there."
+    },
+    {
+      "start": 605.4,
+      "end": 607.98,
+      "text": "But you have to always ask yourself the question,"
+    },
+    {
+      "start": 608.6,
+      "end": 610.72,
+      "text": "what do these days represent?"
+    },
+    {
+      "start": 610.92,
+      "end": 613.7,
+      "text": "Well, 14 days doesn't really represent much"
+    },
+    {
+      "start": 613.7,
+      "end": 616.66,
+      "text": "and doesn't represent much for us."
+    },
+    {
+      "start": 616.86,
+      "end": 619.46,
+      "text": "We are 20 to 60 day time horizon traders."
+    },
+    {
+      "start": 619.76,
+      "end": 623.72,
+      "text": "So we actually change this to a 20 day period."
+    },
+    {
+      "start": 624.64,
+      "end": 626.86,
+      "text": "So we can highlight an example here,"
+    },
+    {
+      "start": 627.22,
+      "end": 633.84,
+      "text": "a real world example of the differences between 14 day and 20 day RSI."
+    },
+    {
+      "start": 635.22,
+      "end": 639.3,
+      "text": "So if we look at this stock, for example, Newmont Mining Corp."
+    },
+    {
+      "start": 639.6,
+      "end": 640.64,
+      "text": "So Newmont Corp."
+    },
+    {
+      "start": 640.7,
+      "end": 641.02,
+      "text": "NEM."
+    },
+    {
+      "start": 641.76,
+      "end": 651.08,
+      "text": "We can chart this stock in 2021 and chart the 14 day RSI and have a look at some results."
+    },
+    {
+      "start": 652.08,
+      "end": 661.12,
+      "text": "And we've pinpointed four areas on the chart where the RSI was briefly touching the level of 70,"
+    },
+    {
+      "start": 661.74,
+      "end": 670.28,
+      "text": "where the interpretation of technical analysts would have been that NEM was over."
+    },
+    {
+      "start": 670.76,
+      "end": 673.94,
+      "text": "And remember, this is a 14 day RSI."
+    },
+    {
+      "start": 674.5,
+      "end": 680.32,
+      "text": "If you look in the bottom left hand corner, you'll see the RSI is calculated as 14 days."
+    },
+    {
+      "start": 680.32,
+      "end": 693.76,
+      "text": "And what happened here on three occasions when the RSI hit 70 or just briefly below 70,"
+    },
+    {
+      "start": 694.54,
+      "end": 702.0,
+      "text": "very close to 70, where conditions would have been interpreted as potentially overbought by technical analysts."
+    },
+    {
+      "start": 702.78,
+      "end": 708.86,
+      "text": "We can see that, yes, the RSI did fall after that on those occasions,"
+    },
+    {
+      "start": 708.86,
+      "end": 716.84,
+      "text": "but the stock price consolidated, did go slightly lower, but ultimately went higher."
+    },
+    {
+      "start": 717.9,
+      "end": 727.42,
+      "text": "So what's happening here is that the RSI is calculating that momentum, price momentum is coming out of the stock."
+    },
+    {
+      "start": 728.54,
+      "end": 733.34,
+      "text": "But this is a good example that it doesn't mean the stock can't go higher."
+    },
+    {
+      "start": 733.56,
+      "end": 735.98,
+      "text": "It just goes up at a slower pace."
+    },
+    {
+      "start": 736.82,
+      "end": 746.5,
+      "text": "And you can see here, for example, in the chart, where the fourth time we witnessed this in 2021,"
+    },
+    {
+      "start": 747.54,
+      "end": 751.62,
+      "text": "this is when the stock was at around 73.74."
+    },
+    {
+      "start": 751.62,
+      "end": 760.28,
+      "text": "So the stock price, $73.74, and the RSI was in the high 70s, almost at the 80 level."
+    },
+    {
+      "start": 760.84,
+      "end": 767.58,
+      "text": "For the fourth time in the year, price momentum, the RSI was slowing down,"
+    },
+    {
+      "start": 768.12,
+      "end": 771.58,
+      "text": "and then the RSI dropped below 70."
+    },
+    {
+      "start": 772.28,
+      "end": 777.36,
+      "text": "But you can see the stock price pretty much stayed at the same level."
+    },
+    {
+      "start": 777.66,
+      "end": 779.28,
+      "text": "So the stock price didn't drop."
+    },
+    {
+      "start": 779.28,
+      "end": 783.86,
+      "text": "So this is a great example of a 14-day RSI."
+    },
+    {
+      "start": 785.48,
+      "end": 795.16,
+      "text": "And that if you'd have come into this stock at least the first three times with a fundamental predisposition of bullish,"
+    },
+    {
+      "start": 796.0,
+      "end": 801.84,
+      "text": "you may have been potentially buying the stock in the first three times."
+    },
+    {
+      "start": 802.84,
+      "end": 808.58,
+      "text": "But let's say, for example, you came into the stock with a fundamentally bearish predisposition."
+    },
+    {
+      "start": 809.32,
+      "end": 812.44,
+      "text": "Well, first of all, if you understand what we've discussed so far,"
+    },
+    {
+      "start": 813.44,
+      "end": 818.24,
+      "text": "you would put less emphasis on 14 days, so you would change this to 20 anyway."
+    },
+    {
+      "start": 818.76,
+      "end": 824.66,
+      "text": "But let's say you were looking at this 14 days with a fundamental bearish predisposition."
+    },
+    {
+      "start": 825.2,
+      "end": 830.16,
+      "text": "You would recognize that, yes, the price momentum is very positive."
+    },
+    {
+      "start": 830.88,
+      "end": 836.12,
+      "text": "But at the same time, if I go and short the stock, it doesn't mean the stock can fall."
+    },
+    {
+      "start": 836.88,
+      "end": 841.58,
+      "text": "It just means that the momentum of the price move up slows down."
+    },
+    {
+      "start": 841.9,
+      "end": 846.44,
+      "text": "So your interpretation and understanding of RSI is very important."
+    },
+    {
+      "start": 847.48,
+      "end": 855.14,
+      "text": "Now let's look at the 20-day RSI and we get a different picture for exactly the same stock."
+    },
+    {
+      "start": 856.22,
+      "end": 867.34,
+      "text": "The only time when we get a true signal of RSI condition on the 20-day RSI"
+    },
+    {
+      "start": 867.34,
+      "end": 874.04,
+      "text": "is that same period in May that we looked at in the 14-day RSI."
+    },
+    {
+      "start": 874.72,
+      "end": 881.88,
+      "text": "So now imagine that you are coming into this condition where you're looking at the 20-day RSI"
+    },
+    {
+      "start": 881.88,
+      "end": 886.94,
+      "text": "and not the 14-day RSI, let's say in March 2021,"
+    },
+    {
+      "start": 886.94,
+      "end": 892.76,
+      "text": "and you are coming into this with a fundamentally bullish predisposition."
+    },
+    {
+      "start": 893.44,
+      "end": 897.2,
+      "text": "Well, you don't have what's termed as an overbought signal."
+    },
+    {
+      "start": 898.32,
+      "end": 905.54,
+      "text": "So it's likely as you go through your TA checklist that the RSI here on the 20-day RSI"
+    },
+    {
+      "start": 905.54,
+      "end": 912.54,
+      "text": "would be showing you positive price momentum and agreeing with your fundamental view."
+    },
+    {
+      "start": 913.6,
+      "end": 919.52,
+      "text": "What would have happened if you came to this stock in March 2021 with a bearish predisposition?"
+    },
+    {
+      "start": 920.14,
+      "end": 923.0,
+      "text": "Well, it would have disagreed with your fundamental view"
+    },
+    {
+      "start": 923.0,
+      "end": 929.7,
+      "text": "and you probably would have stuck it on the watch list and waited for a slowdown in price momentum"
+    },
+    {
+      "start": 929.7,
+      "end": 934.98,
+      "text": "and for the stock to reach an overbought condition."
+    },
+    {
+      "start": 935.9,
+      "end": 940.56,
+      "text": "So if you'd have waited and held back for a couple of months,"
+    },
+    {
+      "start": 941.28,
+      "end": 947.42,
+      "text": "you would have got your genuine overbought conditions in May 2021."
+    },
+    {
+      "start": 948.7,
+      "end": 954.4,
+      "text": "And then if we just fast forward a week further from the same time horizon"
+    },
+    {
+      "start": 954.4,
+      "end": 957.76,
+      "text": "that we looked at in the 14-day RSI,"
+    },
+    {
+      "start": 957.76,
+      "end": 962.28,
+      "text": "you would see that the stock actually did drop by a decent amount."
+    },
+    {
+      "start": 963.78,
+      "end": 970.0,
+      "text": "So when it comes to entry for us as 20- to 60-day time horizon traders,"
+    },
+    {
+      "start": 970.8,
+      "end": 977.36,
+      "text": "yes, we much prefer to look at a 20-day RSI rather than a 14-day RSI,"
+    },
+    {
+      "start": 977.82,
+      "end": 979.94,
+      "text": "which is basically meaningless to us."
+    },
+    {
+      "start": 980.9,
+      "end": 983.06,
+      "text": "So whatever software you're using,"
+    },
+    {
+      "start": 983.5,
+      "end": 986.26,
+      "text": "whether that's a free one or paid one,"
+    },
+    {
+      "start": 987.26,
+      "end": 995.56,
+      "text": "you must try to change your RSI settings from 14 days to 20."
+    },
+    {
+      "start": 995.7,
+      "end": 1000.96,
+      "text": "Even then, you do have to still interpret RSI properly."
+    },
+    {
+      "start": 1002.02,
+      "end": 1010.2,
+      "text": "It's a very bad habit of retail traders to think that just because an RSI is above 70"
+    },
+    {
+      "start": 1010.2,
+      "end": 1013.58,
+      "text": "and shows what is called overbought conditions,"
+    },
+    {
+      "start": 1013.82,
+      "end": 1019.52,
+      "text": "or it's below 30 and shows what is called oversold conditions."
+    },
+    {
+      "start": 1020.06,
+      "end": 1025.66,
+      "text": "It's a very bad habit of retail traders to think that this automatically means"
+    },
+    {
+      "start": 1025.66,
+      "end": 1030.62,
+      "text": "a stock must be able to go down on overbought conditions"
+    },
+    {
+      "start": 1030.62,
+      "end": 1033.92,
+      "text": "and go up on oversold conditions."
+    },
+    {
+      "start": 1033.92,
+      "end": 1036.2,
+      "text": "That is just not the case."
+    },
+    {
+      "start": 1037.44,
+      "end": 1045.34,
+      "text": "Stock price momentum can slow down and RSI can reverse and go back in the other direction."
+    },
+    {
+      "start": 1045.82,
+      "end": 1047.72,
+      "text": "But it doesn't mean the stock has to."
+    },
+    {
+      "start": 1048.18,
+      "end": 1052.62,
+      "text": "The stock can continue in the same direction or even just be flat."
+    },
+    {
+      "start": 1053.84,
+      "end": 1058.54,
+      "text": "But as long as you treat RSI properly and understand it properly,"
+    },
+    {
+      "start": 1059.18,
+      "end": 1067.68,
+      "text": "it's a good price action momentum indicator to have on our price action checklist"
+    },
+    {
+      "start": 1067.68,
+      "end": 1070.04,
+      "text": "as we're doing our timing appraisal."
+    },
+    {
+      "start": 1070.74,
+      "end": 1077.88,
+      "text": "Now, next up, our second momentum indicator on our price action checklist"
+    },
+    {
+      "start": 1077.88,
+      "end": 1080.64,
+      "text": "is simple moving averages."
+    },
+    {
+      "start": 1082.02,
+      "end": 1083.82,
+      "text": "What does a moving average do?"
+    },
+    {
+      "start": 1083.82,
+      "end": 1091.56,
+      "text": "Well, it confirms or denies whether price momentum is slowing or rising in a stock"
+    },
+    {
+      "start": 1091.56,
+      "end": 1094.68,
+      "text": "and whether momentum might be turning."
+    },
+    {
+      "start": 1096.32,
+      "end": 1099.66,
+      "text": "But you have to remember, similar to RSI,"
+    },
+    {
+      "start": 1100.46,
+      "end": 1104.62,
+      "text": "simple moving averages, they are lagging indicators"
+    },
+    {
+      "start": 1104.62,
+      "end": 1110.04,
+      "text": "and should only be used to confirm or deny stock moves."
+    },
+    {
+      "start": 1110.7,
+      "end": 1112.08,
+      "text": "How do we calculate it?"
+    },
+    {
+      "start": 1112.08,
+      "end": 1116.42,
+      "text": "Well, let's go through an easy calculational explanation here."
+    },
+    {
+      "start": 1117.06,
+      "end": 1123.68,
+      "text": "A simple moving average, SMA, is a stock's average price over a given number of days."
+    },
+    {
+      "start": 1124.34,
+      "end": 1130.24,
+      "text": "So if we take the last 10 days of stock price data from any stock,"
+    },
+    {
+      "start": 1130.78,
+      "end": 1142.72,
+      "text": "let's say the last 10 days, the stock closed at 6, then 5, then 6, then 7, then 9, 8, then 8, 10, 13, and then 16."
+    },
+    {
+      "start": 1143.46,
+      "end": 1156.88,
+      "text": "So if we have 10 days of stock price data, well, we just work out the average, the 10-day moving average of that data is 8.8."
+    },
+    {
+      "start": 1156.88,
+      "end": 1162.6,
+      "text": "So if we look at the 10-day moving average, we look at the last three points of data and we work out the average there."
+    },
+    {
+      "start": 1162.6,
+      "end": 1166.68,
+      "text": "So the three-day moving average from that data is 13."
+    },
+    {
+      "start": 1166.68,
+      "end": 1176.16,
+      "text": "Now, if we plotted both a 10-day trailing moving average and a three-day trailing moving average on a stock chart,"
+    },
+    {
+      "start": 1176.16,
+      "end": 1184.02,
+      "text": "in this instance, the three-day moving average will be cutting the 10-day moving average from below."
+    },
+    {
+      "start": 1185.14,
+      "end": 1189.62,
+      "text": "And this would be indicating positive price momentum."
+    },
+    {
+      "start": 1190.4,
+      "end": 1193.32,
+      "text": "And of course, the reverse would hold true as well."
+    },
+    {
+      "start": 1193.32,
+      "end": 1206.38,
+      "text": "If we worked out a shorter-term moving average from a larger data set and the average for the short-term moving average was lower than the longer-term average,"
+    },
+    {
+      "start": 1206.38,
+      "end": 1213.42,
+      "text": "at some point, that line on the chart will have crossed the longer-term moving average from above."
+    },
+    {
+      "start": 1213.42,
+      "end": 1217.64,
+      "text": "And this would indicate negative price momentum."
+    },
+    {
+      "start": 1218.44,
+      "end": 1227.12,
+      "text": "Now, for us as 20-day to 60-day long-short portfolio managers, our short-term moving average,"
+    },
+    {
+      "start": 1227.12,
+      "end": 1231.48,
+      "text": "so the short-term moving average that we use, is 20 days."
+    },
+    {
+      "start": 1231.48,
+      "end": 1240.84,
+      "text": "So a 20-day simple moving average is just the sum of the closing prices for the past 20 days,"
+    },
+    {
+      "start": 1241.36,
+      "end": 1246.16,
+      "text": "the past 20 trading days, divided by 20 days."
+    },
+    {
+      "start": 1246.76,
+      "end": 1252.54,
+      "text": "And it's important to think of the significance here of certain time horizons."
+    },
+    {
+      "start": 1253.4,
+      "end": 1265.52,
+      "text": "So in trading, for whatever reason, traders generally reference the 50-day, 100-day, and 200-day moving averages as being significant."
+    },
+    {
+      "start": 1265.9,
+      "end": 1269.66,
+      "text": "But you have to ask yourself obvious questions here."
+    },
+    {
+      "start": 1270.08,
+      "end": 1273.2,
+      "text": "What is the significance of 50 days?"
+    },
+    {
+      "start": 1273.74,
+      "end": 1279.18,
+      "text": "What is the significance of 100 days and even 200-day moving averages?"
+    },
+    {
+      "start": 1280.38,
+      "end": 1289.66,
+      "text": "Well, from what we can see and what we can tell, there is no actual significance of those time horizons in the stock market."
+    },
+    {
+      "start": 1290.52,
+      "end": 1299.1,
+      "text": "Because when it comes to stocks, stock market data, and even companies, in terms of their reporting periods,"
+    },
+    {
+      "start": 1299.7,
+      "end": 1304.94,
+      "text": "50 days, 100 days, and 200 days just simply don't mean anything."
+    },
+    {
+      "start": 1305.9,
+      "end": 1310.78,
+      "text": "So typically, on average, there's 20 trading days in a trading month."
+    },
+    {
+      "start": 1311.56,
+      "end": 1316.78,
+      "text": "So a short-term simple moving average, we use as 20 days."
+    },
+    {
+      "start": 1317.5,
+      "end": 1321.4,
+      "text": "So we have a one-month simple moving average."
+    },
+    {
+      "start": 1321.76,
+      "end": 1336.14,
+      "text": "And then we also have 60 days, which is significant for a couple of reasons for long-short portfolio managers for our medium-term simple moving average, which is for three months."
+    },
+    {
+      "start": 1336.38,
+      "end": 1337.02,
+      "text": "Why?"
+    },
+    {
+      "start": 1337.02,
+      "end": 1344.32,
+      "text": "Because, firstly, 60 days is equivalent to three months of stock market data."
+    },
+    {
+      "start": 1344.76,
+      "end": 1349.28,
+      "text": "So we have our one-month and our three-month simple moving average."
+    },
+    {
+      "start": 1350.28,
+      "end": 1360.04,
+      "text": "And secondly, 60 days is important in terms of trading data because companies themselves report on a quarterly basis."
+    },
+    {
+      "start": 1360.38,
+      "end": 1367.1,
+      "text": "So between quarterly earnings reports, on average, we're going to have around 60 trading days."
+    },
+    {
+      "start": 1368.08,
+      "end": 1371.24,
+      "text": "We also look at half a year or two quarters."
+    },
+    {
+      "start": 1372.12,
+      "end": 1376.04,
+      "text": "So we look at 120-day simple moving averages."
+    },
+    {
+      "start": 1377.28,
+      "end": 1382.02,
+      "text": "And we also look at a full financial calendar year."
+    },
+    {
+      "start": 1382.02,
+      "end": 1393.24,
+      "text": "So a calendar reporting period of one year for a company, which is 250 or around 250 trading days."
+    },
+    {
+      "start": 1393.8,
+      "end": 1404.02,
+      "text": "So our 120-day simple moving average and our 250-day simple moving average are, for us, our long-term moving averages."
+    },
+    {
+      "start": 1404.58,
+      "end": 1417.38,
+      "text": "And taken together, 20, 60, 120, and 250 days, we have our short, medium-term, and long-term simple moving averages for the stock market."
+    },
+    {
+      "start": 1418.02,
+      "end": 1418.62,
+      "text": "Why?"
+    },
+    {
+      "start": 1418.76,
+      "end": 1426.42,
+      "text": "Because these numbers actually mean something, unlike 50, 100, and 200 days, which don't mean anything."
+    },
+    {
+      "start": 1427.14,
+      "end": 1438.8,
+      "text": "So how does this look when we actually amend our software from 50, 100, 200 days to 20, 60, 120, and 250?"
+    },
+    {
+      "start": 1439.96,
+      "end": 1445.7,
+      "text": "Well, here we have the S&P 500 cash index displayed on the chart."
+    },
+    {
+      "start": 1446.36,
+      "end": 1457.64,
+      "text": "You can see we have price there, and we also have our 20, 60, 120, and 250-day simple moving averages charted as well."
+    },
+    {
+      "start": 1458.8,
+      "end": 1466.44,
+      "text": "And generally speaking, if you think of our simple moving averages as short-term, medium-term, and long-term,"
+    },
+    {
+      "start": 1467.18,
+      "end": 1477.22,
+      "text": "a 20-day simple moving average, crossing a 60-day simple moving average, tends to confirm or deny three-month views."
+    },
+    {
+      "start": 1477.78,
+      "end": 1481.48,
+      "text": "So for our time horizon, 20 to 60 days."
+    },
+    {
+      "start": 1482.56,
+      "end": 1489.54,
+      "text": "So if we apply this to the recent history of this chart for the S&P 500 cash index,"
+    },
+    {
+      "start": 1490.12,
+      "end": 1496.0,
+      "text": "and we look at May 2020, as the world was coming out of the COVID sell-off,"
+    },
+    {
+      "start": 1496.6,
+      "end": 1498.56,
+      "text": "and there was still a lot of chaos going on,"
+    },
+    {
+      "start": 1499.7,
+      "end": 1503.96,
+      "text": "you can see on the chart at the beginning of May 2020,"
+    },
+    {
+      "start": 1504.74,
+      "end": 1512.32,
+      "text": "the 20-day simple moving average was crossing the 60-day simple moving average from below,"
+    },
+    {
+      "start": 1512.32,
+      "end": 1518.1,
+      "text": "and indicating to us strong short-to-medium-term price movement."
+    },
+    {
+      "start": 1519.54,
+      "end": 1526.06,
+      "text": "Then if we fast forward to July 2020, we get the 60-day simple moving average,"
+    },
+    {
+      "start": 1526.52,
+      "end": 1530.34,
+      "text": "crossing the 120-day simple moving average."
+    },
+    {
+      "start": 1530.86,
+      "end": 1535.02,
+      "text": "This happens almost right at the beginning of July 2020,"
+    },
+    {
+      "start": 1535.96,
+      "end": 1544.68,
+      "text": "and then very soon after, the 60-day SMA crosses the 250-day from below."
+    },
+    {
+      "start": 1545.22,
+      "end": 1549.86,
+      "text": "And for us, as 20- to 60-day long short portfolio managers,"
+    },
+    {
+      "start": 1550.58,
+      "end": 1555.24,
+      "text": "when we see conditions like this in the bigger picture on a chart,"
+    },
+    {
+      "start": 1555.88,
+      "end": 1566.32,
+      "text": "a 60-day SMA crossing a 120 or 250 SMA tends to confirm or deny six-month views."
+    },
+    {
+      "start": 1567.2,
+      "end": 1576.72,
+      "text": "Now, of course, we don't have six-month holding periods for either longs or shorts at all,"
+    },
+    {
+      "start": 1576.72,
+      "end": 1585.72,
+      "text": "but if we pull up a chart in the bigger picture and we see conditions like this occurring in recent history"
+    },
+    {
+      "start": 1585.72,
+      "end": 1592.24,
+      "text": "into the context of our fundamental predisposition and we apply the traffic light system,"
+    },
+    {
+      "start": 1592.24,
+      "end": 1597.82,
+      "text": "and by default, at this stage, you should know what your actions should be."
+    },
+    {
+      "start": 1598.76,
+      "end": 1600.54,
+      "text": "So, green light, trade."
+    },
+    {
+      "start": 1601.66,
+      "end": 1606.56,
+      "text": "Amber light, consider trading or half a position or a partial position."
+    },
+    {
+      "start": 1607.2,
+      "end": 1609.02,
+      "text": "Red light, do not trade."
+    },
+    {
+      "start": 1610.02,
+      "end": 1613.82,
+      "text": "So, when it comes to moving averages, simple moving averages,"
+    },
+    {
+      "start": 1614.24,
+      "end": 1619.5,
+      "text": "we again put it into context of our 20- to 60-day time horizon."
+    },
+    {
+      "start": 1619.98,
+      "end": 1624.62,
+      "text": "We are three-month, 20- to 60-day long short portfolio managers."
+    },
+    {
+      "start": 1625.34,
+      "end": 1632.06,
+      "text": "Therefore, our charts have to reflect the time horizon that we're seeking to take positions in."
+    },
+    {
+      "start": 1632.6,
+      "end": 1637.72,
+      "text": "We are trying to predict where the price will be in one to three months' time"
+    },
+    {
+      "start": 1637.72,
+      "end": 1641.18,
+      "text": "and we require momentum on our side."
+    },
+    {
+      "start": 1642.04,
+      "end": 1645.16,
+      "text": "So, when we're looking at 20- to 60-day time horizons,"
+    },
+    {
+      "start": 1645.16,
+      "end": 1648.06,
+      "text": "looking forward with simple moving averages,"
+    },
+    {
+      "start": 1648.44,
+      "end": 1652.2,
+      "text": "to understand the current momentum in the market,"
+    },
+    {
+      "start": 1652.52,
+      "end": 1655.32,
+      "text": "we have to understand the bigger picture first"
+    },
+    {
+      "start": 1655.32,
+      "end": 1661.78,
+      "text": "and look at longer-term charts of perhaps two years or even a bit longer."
+    },
+    {
+      "start": 1662.6,
+      "end": 1666.98,
+      "text": "So, we do still, with price action, look at the bigger picture"
+    },
+    {
+      "start": 1666.98,
+      "end": 1673.12,
+      "text": "to put what we believe to be current momentum into the context of our time horizon."
+    },
+    {
+      "start": 1673.9,
+      "end": 1677.86,
+      "text": "So, typically, and there is no genuine hard and fast rulebook here, guys,"
+    },
+    {
+      "start": 1678.28,
+      "end": 1681.16,
+      "text": "but typically, we will start at two years"
+    },
+    {
+      "start": 1681.16,
+      "end": 1685.26,
+      "text": "and then we will zoom in to a one-year chart."
+    },
+    {
+      "start": 1685.48,
+      "end": 1689.16,
+      "text": "Then, we'll zoom in to perhaps the last two quarters"
+    },
+    {
+      "start": 1689.16,
+      "end": 1692.8,
+      "text": "and or the year-to-date chart."
+    },
+    {
+      "start": 1693.34,
+      "end": 1696.52,
+      "text": "And then, finally, we'll be looking at the current quarter,"
+    },
+    {
+      "start": 1696.98,
+      "end": 1698.48,
+      "text": "so the last three months."
+    },
+    {
+      "start": 1699.44,
+      "end": 1702.98,
+      "text": "So, when we're analyzing our simple moving averages,"
+    },
+    {
+      "start": 1703.68,
+      "end": 1706.44,
+      "text": "20-60, 120-250 days,"
+    },
+    {
+      "start": 1707.1,
+      "end": 1709.16,
+      "text": "we get the bigger picture first,"
+    },
+    {
+      "start": 1709.16,
+      "end": 1716.02,
+      "text": "then we zoom in to look for any significant technical analysis patterns"
+    },
+    {
+      "start": 1716.02,
+      "end": 1721.24,
+      "text": "and then we look for more shorter-term price action momentum"
+    },
+    {
+      "start": 1721.24,
+      "end": 1727.86,
+      "text": "and we just visually or optically compare it to periods in the past."
+    },
+    {
+      "start": 1729.1,
+      "end": 1734.28,
+      "text": "So, for example, if we take a stock like Wingstop,"
+    },
+    {
+      "start": 1734.72,
+      "end": 1737.34,
+      "text": "so W-I-N-G, wing,"
+    },
+    {
+      "start": 1737.82,
+      "end": 1741.0,
+      "text": "we can look at roughly a two-year period"
+    },
+    {
+      "start": 1741.0,
+      "end": 1744.68,
+      "text": "using daily data for the price chart"
+    },
+    {
+      "start": 1744.68,
+      "end": 1752.16,
+      "text": "and then calculate our 20, 60, 120, and 250-day simple moving averages."
+    },
+    {
+      "start": 1752.88,
+      "end": 1754.72,
+      "text": "And what we want to understand first"
+    },
+    {
+      "start": 1754.72,
+      "end": 1758.02,
+      "text": "is with our 20- and 60-day SMAs,"
+    },
+    {
+      "start": 1758.4,
+      "end": 1761.7,
+      "text": "what happens in terms of time horizon"
+    },
+    {
+      "start": 1761.7,
+      "end": 1768.22,
+      "text": "when we get crossings of the 20-day SMA crossing the 60-day SMA,"
+    },
+    {
+      "start": 1768.72,
+      "end": 1770.42,
+      "text": "whether that's from above or below."
+    },
+    {
+      "start": 1771.28,
+      "end": 1774.26,
+      "text": "So, this will give us perspective moving forward"
+    },
+    {
+      "start": 1774.26,
+      "end": 1776.88,
+      "text": "for our 20- to 60-day time horizon."
+    },
+    {
+      "start": 1778.02,
+      "end": 1781.96,
+      "text": "So, if we look back to 2019, for example,"
+    },
+    {
+      "start": 1782.78,
+      "end": 1786.3,
+      "text": "we will see that the 20-day simple moving average for Wing"
+    },
+    {
+      "start": 1786.3,
+      "end": 1790.96,
+      "text": "crosses the 60-day moving average from above,"
+    },
+    {
+      "start": 1791.34,
+      "end": 1792.5,
+      "text": "so bearish signal,"
+    },
+    {
+      "start": 1793.12,
+      "end": 1795.7,
+      "text": "and this happens in September 2019."
+    },
+    {
+      "start": 1796.98,
+      "end": 1798.44,
+      "text": "And then if we look forward"
+    },
+    {
+      "start": 1798.44,
+      "end": 1801.32,
+      "text": "to when it then crosses from below,"
+    },
+    {
+      "start": 1802.36,
+      "end": 1805.34,
+      "text": "and we just count the number of months that this took,"
+    },
+    {
+      "start": 1805.34,
+      "end": 1809.98,
+      "text": "so it crosses from below in December 2019."
+    },
+    {
+      "start": 1811.14,
+      "end": 1813.0,
+      "text": "Now, of course, you can calculate"
+    },
+    {
+      "start": 1813.0,
+      "end": 1816.52,
+      "text": "the exact amount of trading days that this took,"
+    },
+    {
+      "start": 1816.92,
+      "end": 1818.44,
+      "text": "but at this stage,"
+    },
+    {
+      "start": 1818.56,
+      "end": 1820.66,
+      "text": "we're just looking at this visually, optically,"
+    },
+    {
+      "start": 1821.16,
+      "end": 1822.34,
+      "text": "to get an appreciation,"
+    },
+    {
+      "start": 1822.88,
+      "end": 1826.0,
+      "text": "a rough estimate of how long this actually takes."
+    },
+    {
+      "start": 1826.88,
+      "end": 1829.08,
+      "text": "So, roughly speaking, back in 2019,"
+    },
+    {
+      "start": 1829.58,
+      "end": 1834.34,
+      "text": "from the moment that the 20-day crossed the 60-day SMA,"
+    },
+    {
+      "start": 1835.34,
+      "end": 1838.28,
+      "text": "from above to when it crossed from below,"
+    },
+    {
+      "start": 1838.76,
+      "end": 1840.3,
+      "text": "we're looking at three months."
+    },
+    {
+      "start": 1841.3,
+      "end": 1843.84,
+      "text": "If we then fast forward into 2020,"
+    },
+    {
+      "start": 1844.62,
+      "end": 1848.44,
+      "text": "the next time it crossed from above is in March 2020."
+    },
+    {
+      "start": 1849.4,
+      "end": 1851.62,
+      "text": "This was obviously the violent sell-off"
+    },
+    {
+      "start": 1851.62,
+      "end": 1855.76,
+      "text": "associated with the economic shutdown and COVID-19."
+    },
+    {
+      "start": 1856.14,
+      "end": 1859.56,
+      "text": "And then the 20-day crosses the 60-day from below."
+    },
+    {
+      "start": 1860.08,
+      "end": 1861.78,
+      "text": "If we fast forward again,"
+    },
+    {
+      "start": 1862.32,
+      "end": 1864.6,
+      "text": "it crosses from below in April."
+    },
+    {
+      "start": 1865.7,
+      "end": 1867.8,
+      "text": "So, with that violent move down,"
+    },
+    {
+      "start": 1868.06,
+      "end": 1870.2,
+      "text": "there was a quick and violent move up."
+    },
+    {
+      "start": 1870.68,
+      "end": 1872.08,
+      "text": "So, our time horizon there"
+    },
+    {
+      "start": 1872.08,
+      "end": 1874.74,
+      "text": "was a period of around one month."
+    },
+    {
+      "start": 1875.74,
+      "end": 1879.98,
+      "text": "Next time the 20-day crosses the 60-day from above"
+    },
+    {
+      "start": 1879.98,
+      "end": 1883.24,
+      "text": "is in September 2020."
+    },
+    {
+      "start": 1884.24,
+      "end": 1886.94,
+      "text": "So, the time difference there is five months."
+    },
+    {
+      "start": 1888.02,
+      "end": 1889.46,
+      "text": "And then from September,"
+    },
+    {
+      "start": 1889.76,
+      "end": 1894.44,
+      "text": "the next time the 20-day crosses the 60-day moving average"
+    },
+    {
+      "start": 1894.44,
+      "end": 1895.44,
+      "text": "from below,"
+    },
+    {
+      "start": 1895.9,
+      "end": 1898.4,
+      "text": "we're looking at December 2020."
+    },
+    {
+      "start": 1899.02,
+      "end": 1901.74,
+      "text": "So, again, roughly speaking, three months."
+    },
+    {
+      "start": 1903.28,
+      "end": 1904.2,
+      "text": "Fast forward again"
+    },
+    {
+      "start": 1904.2,
+      "end": 1907.94,
+      "text": "to find out when the 20-day SMA"
+    },
+    {
+      "start": 1907.94,
+      "end": 1910.62,
+      "text": "crosses the 60-day from above."
+    },
+    {
+      "start": 1911.68,
+      "end": 1913.7,
+      "text": "We're looking at March 21."
+    },
+    {
+      "start": 1915.02,
+      "end": 1916.38,
+      "text": "And then fast forward again,"
+    },
+    {
+      "start": 1917.14,
+      "end": 1919.96,
+      "text": "we see from below the 20-day cutting"
+    },
+    {
+      "start": 1919.96,
+      "end": 1922.42,
+      "text": "the 60-day SMA from below."
+    },
+    {
+      "start": 1922.88,
+      "end": 1926.82,
+      "text": "We're looking at the end of April 2021."
+    },
+    {
+      "start": 1927.88,
+      "end": 1930.54,
+      "text": "So, a period of within two months."
+    },
+    {
+      "start": 1930.68,
+      "end": 1932.62,
+      "text": "So, about six weeks on this one."
+    },
+    {
+      "start": 1933.88,
+      "end": 1937.42,
+      "text": "And then just roughly four to five weeks later."
+    },
+    {
+      "start": 1938.14,
+      "end": 1941.12,
+      "text": "So, the beginning of June 2021,"
+    },
+    {
+      "start": 1942.02,
+      "end": 1945.34,
+      "text": "we're seeing the 20-day simple moving average"
+    },
+    {
+      "start": 1945.34,
+      "end": 1947.6,
+      "text": "approaching the 60-day,"
+    },
+    {
+      "start": 1948.02,
+      "end": 1950.32,
+      "text": "but it hasn't quite got there yet or crossed."
+    },
+    {
+      "start": 1951.5,
+      "end": 1955.6,
+      "text": "So, looking at the past performance"
+    },
+    {
+      "start": 1955.6,
+      "end": 1958.48,
+      "text": "of what happens to the stock"
+    },
+    {
+      "start": 1958.48,
+      "end": 1961.14,
+      "text": "when we get a 20-day crossing,"
+    },
+    {
+      "start": 1961.24,
+      "end": 1963.0,
+      "text": "a 60-day from above,"
+    },
+    {
+      "start": 1963.28,
+      "end": 1965.08,
+      "text": "it's reasonable to assume"
+    },
+    {
+      "start": 1965.08,
+      "end": 1967.3,
+      "text": "that we'd be sitting around"
+    },
+    {
+      "start": 1967.3,
+      "end": 1970.0,
+      "text": "and waiting for at least a couple of months,"
+    },
+    {
+      "start": 1970.68,
+      "end": 1972.06,
+      "text": "possibly three months,"
+    },
+    {
+      "start": 1972.62,
+      "end": 1974.88,
+      "text": "for a turnaround in price momentum"
+    },
+    {
+      "start": 1974.88,
+      "end": 1976.34,
+      "text": "to occur"
+    },
+    {
+      "start": 1976.34,
+      "end": 1978.58,
+      "text": "to the positive"
+    },
+    {
+      "start": 1978.58,
+      "end": 1980.88,
+      "text": "where it actually goes up."
+    },
+    {
+      "start": 1981.66,
+      "end": 1983.08,
+      "text": "And we can conclude"
+    },
+    {
+      "start": 1983.08,
+      "end": 1985.06,
+      "text": "positive price momentum"
+    },
+    {
+      "start": 1985.06,
+      "end": 1988.8,
+      "text": "from the 20-day crossing the 60-day from below."
+    },
+    {
+      "start": 1989.56,
+      "end": 1991.28,
+      "text": "And then when we get periods"
+    },
+    {
+      "start": 1991.28,
+      "end": 1995.42,
+      "text": "following a 20-day crossing a 60-day from below,"
+    },
+    {
+      "start": 1996.0,
+      "end": 1997.46,
+      "text": "we generally get conditions"
+    },
+    {
+      "start": 1997.46,
+      "end": 2000.26,
+      "text": "of anything between one month"
+    },
+    {
+      "start": 2000.26,
+      "end": 2001.3,
+      "text": "to five months"
+    },
+    {
+      "start": 2001.3,
+      "end": 2006.26,
+      "text": "where the 20-day then crosses the 60-day from above."
+    },
+    {
+      "start": 2007.08,
+      "end": 2009.82,
+      "text": "So, in 2019 and 2020,"
+    },
+    {
+      "start": 2010.6,
+      "end": 2013.18,
+      "text": "we're looking at three to five-month conditions"
+    },
+    {
+      "start": 2013.18,
+      "end": 2014.56,
+      "text": "in that situation"
+    },
+    {
+      "start": 2014.56,
+      "end": 2016.44,
+      "text": "and in more recent history."
+    },
+    {
+      "start": 2017.44,
+      "end": 2019.0,
+      "text": "So, the end of 2020,"
+    },
+    {
+      "start": 2019.58,
+      "end": 2020.92,
+      "text": "beginning of 2021,"
+    },
+    {
+      "start": 2021.72,
+      "end": 2023.76,
+      "text": "we're looking at a couple of months,"
+    },
+    {
+      "start": 2023.9,
+      "end": 2024.68,
+      "text": "possibly three."
+    },
+    {
+      "start": 2025.68,
+      "end": 2027.64,
+      "text": "And just right in the immediate past,"
+    },
+    {
+      "start": 2027.9,
+      "end": 2030.08,
+      "text": "if we do get a crossover here"
+    },
+    {
+      "start": 2030.08,
+      "end": 2033.64,
+      "text": "where the 20-day crosses the 60-day from above,"
+    },
+    {
+      "start": 2034.28,
+      "end": 2035.84,
+      "text": "then under that condition,"
+    },
+    {
+      "start": 2036.38,
+      "end": 2037.14,
+      "text": "the last time,"
+    },
+    {
+      "start": 2037.38,
+      "end": 2038.96,
+      "text": "it crossed from below"
+    },
+    {
+      "start": 2038.96,
+      "end": 2041.04,
+      "text": "to this current condition"
+    },
+    {
+      "start": 2041.04,
+      "end": 2044.58,
+      "text": "was only around four to five weeks."
+    },
+    {
+      "start": 2045.12,
+      "end": 2047.0,
+      "text": "So, I guess it's safe to say,"
+    },
+    {
+      "start": 2047.5,
+      "end": 2049.28,
+      "text": "other than the violent moves,"
+    },
+    {
+      "start": 2049.74,
+      "end": 2052.06,
+      "text": "which were apparent around"
+    },
+    {
+      "start": 2052.06,
+      "end": 2053.88,
+      "text": "the COVID sell-off"
+    },
+    {
+      "start": 2053.88,
+      "end": 2055.52,
+      "text": "and then COVID rebound,"
+    },
+    {
+      "start": 2056.06,
+      "end": 2057.54,
+      "text": "we're looking at periods here"
+    },
+    {
+      "start": 2057.54,
+      "end": 2061.2,
+      "text": "of around a three-month wait"
+    },
+    {
+      "start": 2061.2,
+      "end": 2064.28,
+      "text": "when price momentum"
+    },
+    {
+      "start": 2064.28,
+      "end": 2067.0,
+      "text": "based on simple moving averages"
+    },
+    {
+      "start": 2067.0,
+      "end": 2068.42,
+      "text": "turns negative"
+    },
+    {
+      "start": 2068.42,
+      "end": 2070.94,
+      "text": "for it to then turn positive again"
+    },
+    {
+      "start": 2070.94,
+      "end": 2074.08,
+      "text": "and a wait of around two months"
+    },
+    {
+      "start": 2074.08,
+      "end": 2075.54,
+      "text": "for price momentum"
+    },
+    {
+      "start": 2075.54,
+      "end": 2077.46,
+      "text": "based on simple moving averages"
+    },
+    {
+      "start": 2077.46,
+      "end": 2079.76,
+      "text": "to turn negative again"
+    },
+    {
+      "start": 2079.76,
+      "end": 2081.7,
+      "text": "once it's turned positive."
+    },
+    {
+      "start": 2082.98,
+      "end": 2084.5,
+      "text": "So, as mentioned,"
+    },
+    {
+      "start": 2084.68,
+      "end": 2086.78,
+      "text": "we start at around two years"
+    },
+    {
+      "start": 2086.78,
+      "end": 2089.82,
+      "text": "when we're looking at our SMAs."
+    },
+    {
+      "start": 2090.7,
+      "end": 2092.38,
+      "text": "We get an understanding"
+    },
+    {
+      "start": 2092.38,
+      "end": 2093.38,
+      "text": "and appreciation"
+    },
+    {
+      "start": 2093.38,
+      "end": 2095.2,
+      "text": "for price momentum"
+    },
+    {
+      "start": 2095.2,
+      "end": 2097.14,
+      "text": "and the lengths of time"
+    },
+    {
+      "start": 2097.14,
+      "end": 2099.38,
+      "text": "it takes in the past"
+    },
+    {
+      "start": 2099.38,
+      "end": 2101.02,
+      "text": "for price momentum"
+    },
+    {
+      "start": 2101.02,
+      "end": 2101.82,
+      "text": "to play out"
+    },
+    {
+      "start": 2101.82,
+      "end": 2103.62,
+      "text": "based on SMAs."
+    },
+    {
+      "start": 2104.28,
+      "end": 2105.66,
+      "text": "And then we zoom in"
+    },
+    {
+      "start": 2105.66,
+      "end": 2107.1,
+      "text": "to take a closer look."
+    },
+    {
+      "start": 2107.74,
+      "end": 2109.82,
+      "text": "So, here we have our one-year chart."
+    },
+    {
+      "start": 2110.68,
+      "end": 2111.92,
+      "text": "So, the past one year"
+    },
+    {
+      "start": 2111.92,
+      "end": 2115.98,
+      "text": "we don't change anything else"
+    },
+    {
+      "start": 2115.98,
+      "end": 2117.74,
+      "text": "except the start date"
+    },
+    {
+      "start": 2117.74,
+      "end": 2119.08,
+      "text": "to look at the last year"
+    },
+    {
+      "start": 2119.08,
+      "end": 2121.3,
+      "text": "and we keep all of our"
+    },
+    {
+      "start": 2121.3,
+      "end": 2122.22,
+      "text": "simple moving averages"
+    },
+    {
+      "start": 2122.22,
+      "end": 2122.84,
+      "text": "the same"
+    },
+    {
+      "start": 2122.84,
+      "end": 2124.78,
+      "text": "and we just get a closer look."
+    },
+    {
+      "start": 2125.98,
+      "end": 2127.82,
+      "text": "So, imagine yourself"
+    },
+    {
+      "start": 2127.82,
+      "end": 2129.46,
+      "text": "coming into this situation"
+    },
+    {
+      "start": 2129.46,
+      "end": 2131.76,
+      "text": "with perhaps a fundamentally"
+    },
+    {
+      "start": 2131.76,
+      "end": 2133.56,
+      "text": "bullish predisposition"
+    },
+    {
+      "start": 2133.56,
+      "end": 2135.22,
+      "text": "and you're zooming in,"
+    },
+    {
+      "start": 2136.06,
+      "end": 2136.7,
+      "text": "zooming down"
+    },
+    {
+      "start": 2136.7,
+      "end": 2138.22,
+      "text": "to get more detail"
+    },
+    {
+      "start": 2138.22,
+      "end": 2139.62,
+      "text": "on what could be"
+    },
+    {
+      "start": 2139.62,
+      "end": 2142.14,
+      "text": "an advantageous entry point."
+    },
+    {
+      "start": 2143.44,
+      "end": 2144.86,
+      "text": "Well, in this situation"
+    },
+    {
+      "start": 2144.86,
+      "end": 2146.62,
+      "text": "we just don't know"
+    },
+    {
+      "start": 2146.62,
+      "end": 2147.46,
+      "text": "right now"
+    },
+    {
+      "start": 2147.46,
+      "end": 2148.9,
+      "text": "whether the"
+    },
+    {
+      "start": 2148.9,
+      "end": 2150.88,
+      "text": "20-day SMA"
+    },
+    {
+      "start": 2150.88,
+      "end": 2152.06,
+      "text": "is going to cross"
+    },
+    {
+      "start": 2152.06,
+      "end": 2153.48,
+      "text": "the 60-day SMA"
+    },
+    {
+      "start": 2153.48,
+      "end": 2154.4,
+      "text": "from above"
+    },
+    {
+      "start": 2154.4,
+      "end": 2156.72,
+      "text": "but the price momentum"
+    },
+    {
+      "start": 2156.72,
+      "end": 2158.32,
+      "text": "does look"
+    },
+    {
+      "start": 2158.32,
+      "end": 2159.34,
+      "text": "short-term"
+    },
+    {
+      "start": 2159.34,
+      "end": 2159.94,
+      "text": "negative"
+    },
+    {
+      "start": 2159.94,
+      "end": 2161.1,
+      "text": "versus the"
+    },
+    {
+      "start": 2161.1,
+      "end": 2161.72,
+      "text": "medium-term."
+    },
+    {
+      "start": 2161.72,
+      "end": 2163.44,
+      "text": "If we look at the"
+    },
+    {
+      "start": 2163.44,
+      "end": 2163.96,
+      "text": "green line"
+    },
+    {
+      "start": 2163.96,
+      "end": 2165.0,
+      "text": "the medium-term"
+    },
+    {
+      "start": 2165.0,
+      "end": 2166.36,
+      "text": "looks fairly benign"
+    },
+    {
+      "start": 2166.36,
+      "end": 2167.28,
+      "text": "and"
+    },
+    {
+      "start": 2167.28,
+      "end": 2168.9,
+      "text": "the 120-day"
+    },
+    {
+      "start": 2168.9,
+      "end": 2170.46,
+      "text": "the longer-term"
+    },
+    {
+      "start": 2170.46,
+      "end": 2172.22,
+      "text": "looks fairly benign"
+    },
+    {
+      "start": 2172.22,
+      "end": 2173.42,
+      "text": "but the"
+    },
+    {
+      "start": 2173.42,
+      "end": 2174.06,
+      "text": "one-year"
+    },
+    {
+      "start": 2174.06,
+      "end": 2175.9,
+      "text": "the 250-day"
+    },
+    {
+      "start": 2175.9,
+      "end": 2177.36,
+      "text": "is definitely"
+    },
+    {
+      "start": 2177.36,
+      "end": 2178.52,
+      "text": "in an uptrend"
+    },
+    {
+      "start": 2178.52,
+      "end": 2179.32,
+      "text": "as is"
+    },
+    {
+      "start": 2179.32,
+      "end": 2179.98,
+      "text": "the stock"
+    },
+    {
+      "start": 2179.98,
+      "end": 2180.62,
+      "text": "overall"
+    },
+    {
+      "start": 2180.62,
+      "end": 2181.96,
+      "text": "when we look"
+    },
+    {
+      "start": 2181.96,
+      "end": 2182.84,
+      "text": "at the bigger picture"
+    },
+    {
+      "start": 2182.84,
+      "end": 2183.96,
+      "text": "of two years."
+    },
+    {
+      "start": 2184.92,
+      "end": 2185.9,
+      "text": "So, on a"
+    },
+    {
+      "start": 2185.9,
+      "end": 2186.92,
+      "text": "20- to 60-day"
+    },
+    {
+      "start": 2186.92,
+      "end": 2187.56,
+      "text": "time horizon"
+    },
+    {
+      "start": 2187.56,
+      "end": 2188.34,
+      "text": "looking forward"
+    },
+    {
+      "start": 2188.34,
+      "end": 2190.16,
+      "text": "if you were"
+    },
+    {
+      "start": 2190.16,
+      "end": 2191.0,
+      "text": "fundamentally"
+    },
+    {
+      "start": 2191.0,
+      "end": 2191.64,
+      "text": "bullish"
+    },
+    {
+      "start": 2191.64,
+      "end": 2192.84,
+      "text": "in terms of"
+    },
+    {
+      "start": 2192.84,
+      "end": 2193.86,
+      "text": "your fundamental"
+    },
+    {
+      "start": 2193.86,
+      "end": 2194.8,
+      "text": "predisposition"
+    },
+    {
+      "start": 2194.8,
+      "end": 2195.94,
+      "text": "coming into"
+    },
+    {
+      "start": 2195.94,
+      "end": 2196.64,
+      "text": "this situation"
+    },
+    {
+      "start": 2196.64,
+      "end": 2197.94,
+      "text": "you're probably"
+    },
+    {
+      "start": 2197.94,
+      "end": 2199.0,
+      "text": "going to conclude"
+    },
+    {
+      "start": 2199.0,
+      "end": 2200.12,
+      "text": "that this is"
+    },
+    {
+      "start": 2200.12,
+      "end": 2200.68,
+      "text": "an amber"
+    },
+    {
+      "start": 2200.68,
+      "end": 2201.5,
+      "text": "situation."
+    },
+    {
+      "start": 2202.22,
+      "end": 2203.34,
+      "text": "price momentum"
+    },
+    {
+      "start": 2203.34,
+      "end": 2204.42,
+      "text": "could be better"
+    },
+    {
+      "start": 2204.42,
+      "end": 2205.5,
+      "text": "could be displayed"
+    },
+    {
+      "start": 2205.5,
+      "end": 2205.94,
+      "text": "better"
+    },
+    {
+      "start": 2205.94,
+      "end": 2207.26,
+      "text": "in your favor"
+    },
+    {
+      "start": 2207.26,
+      "end": 2208.28,
+      "text": "in the short-term"
+    },
+    {
+      "start": 2208.28,
+      "end": 2209.98,
+      "text": "but in the medium-term"
+    },
+    {
+      "start": 2209.98,
+      "end": 2211.24,
+      "text": "it's benign."
+    },
+    {
+      "start": 2211.76,
+      "end": 2212.64,
+      "text": "If you've done"
+    },
+    {
+      "start": 2212.64,
+      "end": 2213.74,
+      "text": "your fundamental work"
+    },
+    {
+      "start": 2213.74,
+      "end": 2214.78,
+      "text": "you've got genuine"
+    },
+    {
+      "start": 2214.78,
+      "end": 2216.14,
+      "text": "catalysts in place"
+    },
+    {
+      "start": 2216.14,
+      "end": 2217.16,
+      "text": "that you think"
+    },
+    {
+      "start": 2217.16,
+      "end": 2218.08,
+      "text": "are going to occur"
+    },
+    {
+      "start": 2218.08,
+      "end": 2219.7,
+      "text": "within the next"
+    },
+    {
+      "start": 2219.7,
+      "end": 2220.94,
+      "text": "20- to 60 days"
+    },
+    {
+      "start": 2220.94,
+      "end": 2222.92,
+      "text": "and price momentum"
+    },
+    {
+      "start": 2222.92,
+      "end": 2224.46,
+      "text": "is going to shift"
+    },
+    {
+      "start": 2224.46,
+      "end": 2225.7,
+      "text": "in your favor"
+    },
+    {
+      "start": 2225.7,
+      "end": 2226.82,
+      "text": "because of fundamentals"
+    },
+    {
+      "start": 2226.82,
+      "end": 2228.08,
+      "text": "then yes"
+    },
+    {
+      "start": 2228.08,
+      "end": 2229.92,
+      "text": "you can have"
+    },
+    {
+      "start": 2229.92,
+      "end": 2231.02,
+      "text": "a partial position"
+    },
+    {
+      "start": 2231.02,
+      "end": 2232.7,
+      "text": "but short-term"
+    },
+    {
+      "start": 2232.7,
+      "end": 2233.38,
+      "text": "price momentum"
+    },
+    {
+      "start": 2233.38,
+      "end": 2234.32,
+      "text": "right now"
+    },
+    {
+      "start": 2234.32,
+      "end": 2235.32,
+      "text": "we just don't know"
+    },
+    {
+      "start": 2235.32,
+      "end": 2236.66,
+      "text": "if it's going to"
+    },
+    {
+      "start": 2236.66,
+      "end": 2237.84,
+      "text": "cross the 60-day"
+    },
+    {
+      "start": 2237.84,
+      "end": 2238.42,
+      "text": "from above"
+    },
+    {
+      "start": 2238.42,
+      "end": 2239.72,
+      "text": "so the 20-day"
+    },
+    {
+      "start": 2239.72,
+      "end": 2240.84,
+      "text": "crossing the 60-day"
+    },
+    {
+      "start": 2240.84,
+      "end": 2241.72,
+      "text": "from above"
+    },
+    {
+      "start": 2241.72,
+      "end": 2242.72,
+      "text": "so you would"
+    },
+    {
+      "start": 2242.72,
+      "end": 2243.7,
+      "text": "probably get a bit"
+    },
+    {
+      "start": 2243.7,
+      "end": 2244.22,
+      "text": "cheeky"
+    },
+    {
+      "start": 2244.22,
+      "end": 2245.7,
+      "text": "on your entry points"
+    },
+    {
+      "start": 2245.7,
+      "end": 2247.5,
+      "text": "on your entry price"
+    },
+    {
+      "start": 2247.5,
+      "end": 2249.86,
+      "text": "so perhaps looking"
+    },
+    {
+      "start": 2249.86,
+      "end": 2251.04,
+      "text": "to buy a partial"
+    },
+    {
+      "start": 2251.04,
+      "end": 2251.54,
+      "text": "position"
+    },
+    {
+      "start": 2251.54,
+      "end": 2253.22,
+      "text": "say one-third size"
+    },
+    {
+      "start": 2253.22,
+      "end": 2253.66,
+      "text": "position"
+    },
+    {
+      "start": 2253.66,
+      "end": 2254.9,
+      "text": "of your ideal"
+    },
+    {
+      "start": 2254.9,
+      "end": 2256.42,
+      "text": "maximum size"
+    },
+    {
+      "start": 2256.42,
+      "end": 2258.12,
+      "text": "or perhaps even"
+    },
+    {
+      "start": 2258.12,
+      "end": 2258.86,
+      "text": "a half position"
+    },
+    {
+      "start": 2258.86,
+      "end": 2260.48,
+      "text": "you could stick a bid"
+    },
+    {
+      "start": 2260.48,
+      "end": 2261.6,
+      "text": "in to buy that"
+    },
+    {
+      "start": 2261.6,
+      "end": 2262.36,
+      "text": "amount of shares"
+    },
+    {
+      "start": 2262.36,
+      "end": 2263.72,
+      "text": "in the low"
+    },
+    {
+      "start": 2263.72,
+      "end": 2265.22,
+      "text": "130s"
+    },
+    {
+      "start": 2265.22,
+      "end": 2266.96,
+      "text": "you buy your"
+    },
+    {
+      "start": 2266.96,
+      "end": 2267.54,
+      "text": "half position"
+    },
+    {
+      "start": 2267.54,
+      "end": 2268.7,
+      "text": "and you sit back"
+    },
+    {
+      "start": 2268.7,
+      "end": 2269.86,
+      "text": "and you wait to see"
+    },
+    {
+      "start": 2269.86,
+      "end": 2270.56,
+      "text": "what the momentum"
+    },
+    {
+      "start": 2270.56,
+      "end": 2270.98,
+      "text": "does"
+    },
+    {
+      "start": 2270.98,
+      "end": 2272.3,
+      "text": "and also"
+    },
+    {
+      "start": 2272.3,
+      "end": 2273.32,
+      "text": "if the catalysts"
+    },
+    {
+      "start": 2273.32,
+      "end": 2274.12,
+      "text": "start coming through"
+    },
+    {
+      "start": 2274.12,
+      "end": 2275.22,
+      "text": "and then you can"
+    },
+    {
+      "start": 2275.22,
+      "end": 2276.52,
+      "text": "add to your position"
+    },
+    {
+      "start": 2276.52,
+      "end": 2278.06,
+      "text": "on a price"
+    },
+    {
+      "start": 2278.06,
+      "end": 2279.18,
+      "text": "momentum turn"
+    },
+    {
+      "start": 2279.18,
+      "end": 2280.86,
+      "text": "or a fundamental"
+    },
+    {
+      "start": 2280.86,
+      "end": 2281.3,
+      "text": "move"
+    },
+    {
+      "start": 2281.3,
+      "end": 2284.02,
+      "text": "where the catalysts"
+    },
+    {
+      "start": 2284.02,
+      "end": 2284.9,
+      "text": "are playing out"
+    },
+    {
+      "start": 2284.9,
+      "end": 2286.92,
+      "text": "so again guys"
+    },
+    {
+      "start": 2286.92,
+      "end": 2288.02,
+      "text": "no hard and fast"
+    },
+    {
+      "start": 2288.02,
+      "end": 2288.58,
+      "text": "rules here"
+    },
+    {
+      "start": 2288.58,
+      "end": 2289.66,
+      "text": "you saw how"
+    },
+    {
+      "start": 2289.66,
+      "end": 2290.46,
+      "text": "we drilled down"
+    },
+    {
+      "start": 2290.46,
+      "end": 2291.58,
+      "text": "from the two year"
+    },
+    {
+      "start": 2291.58,
+      "end": 2292.64,
+      "text": "to the one year"
+    },
+    {
+      "start": 2292.64,
+      "end": 2294.24,
+      "text": "and we just made"
+    },
+    {
+      "start": 2294.24,
+      "end": 2295.0,
+      "text": "some sensible"
+    },
+    {
+      "start": 2295.0,
+      "end": 2296.02,
+      "text": "deductions"
+    },
+    {
+      "start": 2296.02,
+      "end": 2298.18,
+      "text": "and came to"
+    },
+    {
+      "start": 2298.18,
+      "end": 2299.0,
+      "text": "a sensible"
+    },
+    {
+      "start": 2299.0,
+      "end": 2299.88,
+      "text": "conclusion"
+    },
+    {
+      "start": 2299.88,
+      "end": 2301.38,
+      "text": "these are just"
+    },
+    {
+      "start": 2301.38,
+      "end": 2302.2,
+      "text": "best behavior"
+    },
+    {
+      "start": 2302.2,
+      "end": 2302.8,
+      "text": "practices"
+    },
+    {
+      "start": 2302.8,
+      "end": 2304.3,
+      "text": "they are not"
+    },
+    {
+      "start": 2304.3,
+      "end": 2304.86,
+      "text": "rules"
+    },
+    {
+      "start": 2304.86,
+      "end": 2306.02,
+      "text": "you're going to"
+    },
+    {
+      "start": 2306.02,
+      "end": 2306.84,
+      "text": "have to obviously"
+    },
+    {
+      "start": 2306.84,
+      "end": 2307.62,
+      "text": "interpret"
+    },
+    {
+      "start": 2307.62,
+      "end": 2309.06,
+      "text": "every situation"
+    },
+    {
+      "start": 2309.06,
+      "end": 2309.76,
+      "text": "individually"
+    },
+    {
+      "start": 2309.76,
+      "end": 2310.8,
+      "text": "on its own"
+    },
+    {
+      "start": 2310.8,
+      "end": 2311.34,
+      "text": "merits"
+    },
+    {
+      "start": 2311.34,
+      "end": 2312.92,
+      "text": "now just as a"
+    },
+    {
+      "start": 2312.92,
+      "end": 2313.82,
+      "text": "matter of illustration"
+    },
+    {
+      "start": 2313.82,
+      "end": 2315.7,
+      "text": "for process"
+    },
+    {
+      "start": 2315.7,
+      "end": 2316.8,
+      "text": "the next thing"
+    },
+    {
+      "start": 2316.8,
+      "end": 2317.34,
+      "text": "you would do"
+    },
+    {
+      "start": 2317.34,
+      "end": 2318.7,
+      "text": "is just look at"
+    },
+    {
+      "start": 2318.7,
+      "end": 2320.18,
+      "text": "a year to date"
+    },
+    {
+      "start": 2320.18,
+      "end": 2321.46,
+      "text": "if that's"
+    },
+    {
+      "start": 2321.46,
+      "end": 2321.96,
+      "text": "significantly"
+    },
+    {
+      "start": 2321.96,
+      "end": 2322.72,
+      "text": "different from"
+    },
+    {
+      "start": 2322.72,
+      "end": 2323.58,
+      "text": "a one year chart"
+    },
+    {
+      "start": 2323.58,
+      "end": 2323.86,
+      "text": "and"
+    },
+    {
+      "start": 2326.02,
+      "end": 2327.98,
+      "text": "you would also"
+    },
+    {
+      "start": 2327.98,
+      "end": 2328.42,
+      "text": "look at"
+    },
+    {
+      "start": 2328.42,
+      "end": 2329.02,
+      "text": "overall"
+    },
+    {
+      "start": 2329.02,
+      "end": 2329.98,
+      "text": "simple moving"
+    },
+    {
+      "start": 2329.98,
+      "end": 2330.52,
+      "text": "averages"
+    },
+    {
+      "start": 2330.52,
+      "end": 2332.14,
+      "text": "SMAs"
+    },
+    {
+      "start": 2332.14,
+      "end": 2333.1,
+      "text": "are very useful"
+    },
+    {
+      "start": 2333.1,
+      "end": 2333.66,
+      "text": "to us"
+    },
+    {
+      "start": 2333.66,
+      "end": 2334.56,
+      "text": "as momentum"
+    },
+    {
+      "start": 2334.56,
+      "end": 2335.22,
+      "text": "indicators"
+    },
+    {
+      "start": 2335.22,
+      "end": 2336.24,
+      "text": "and they should"
+    },
+    {
+      "start": 2336.24,
+      "end": 2337.04,
+      "text": "definitely be"
+    },
+    {
+      "start": 2337.04,
+      "end": 2338.16,
+      "text": "on your price"
+    },
+    {
+      "start": 2338.16,
+      "end": 2338.68,
+      "text": "action"
+    },
+    {
+      "start": 2338.68,
+      "end": 2339.42,
+      "text": "or momentum"
+    },
+    {
+      "start": 2339.42,
+      "end": 2340.28,
+      "text": "checklist"
+    },
+    {
+      "start": 2340.28,
+      "end": 2342.18,
+      "text": "next up"
+    },
+    {
+      "start": 2342.18,
+      "end": 2343.52,
+      "text": "is exponential"
+    },
+    {
+      "start": 2343.52,
+      "end": 2345.06,
+      "text": "moving averages"
+    },
+    {
+      "start": 2345.06,
+      "end": 2346.94,
+      "text": "or EMAs"
+    },
+    {
+      "start": 2346.94,
+      "end": 2347.66,
+      "text": "and we look at"
+    },
+    {
+      "start": 2347.66,
+      "end": 2348.2,
+      "text": "these two"
+    },
+    {
+      "start": 2348.2,
+      "end": 2348.98,
+      "text": "as part of"
+    },
+    {
+      "start": 2348.98,
+      "end": 2349.78,
+      "text": "our price action"
+    },
+    {
+      "start": 2349.78,
+      "end": 2350.18,
+      "text": "momentum"
+    },
+    {
+      "start": 2350.18,
+      "end": 2351.2,
+      "text": "checklist"
+    },
+    {
+      "start": 2351.2,
+      "end": 2352.34,
+      "text": "and we treat"
+    },
+    {
+      "start": 2352.34,
+      "end": 2353.32,
+      "text": "them very similarly"
+    },
+    {
+      "start": 2353.32,
+      "end": 2354.76,
+      "text": "to simple"
+    },
+    {
+      "start": 2354.76,
+      "end": 2355.68,
+      "text": "moving averages"
+    },
+    {
+      "start": 2355.68,
+      "end": 2357.28,
+      "text": "but there is"
+    },
+    {
+      "start": 2357.28,
+      "end": 2358.16,
+      "text": "obviously a"
+    },
+    {
+      "start": 2358.16,
+      "end": 2359.08,
+      "text": "difference in"
+    },
+    {
+      "start": 2359.08,
+      "end": 2360.02,
+      "text": "calculation here"
+    },
+    {
+      "start": 2360.02,
+      "end": 2360.94,
+      "text": "between"
+    },
+    {
+      "start": 2360.94,
+      "end": 2362.1,
+      "text": "exponential moving"
+    },
+    {
+      "start": 2362.1,
+      "end": 2362.44,
+      "text": "averages"
+    },
+    {
+      "start": 2362.44,
+      "end": 2363.5,
+      "text": "and simple"
+    },
+    {
+      "start": 2363.5,
+      "end": 2364.22,
+      "text": "moving averages"
+    },
+    {
+      "start": 2364.22,
+      "end": 2366.32,
+      "text": "so as with"
+    },
+    {
+      "start": 2366.32,
+      "end": 2367.56,
+      "text": "a lot of"
+    },
+    {
+      "start": 2367.56,
+      "end": 2368.46,
+      "text": "trading vernacular"
+    },
+    {
+      "start": 2368.46,
+      "end": 2369.62,
+      "text": "especially in"
+    },
+    {
+      "start": 2369.62,
+      "end": 2370.9,
+      "text": "technical analysis"
+    },
+    {
+      "start": 2370.9,
+      "end": 2372.12,
+      "text": "and price"
+    },
+    {
+      "start": 2372.12,
+      "end": 2372.92,
+      "text": "action indicators"
+    },
+    {
+      "start": 2372.92,
+      "end": 2374.66,
+      "text": "the word"
+    },
+    {
+      "start": 2374.66,
+      "end": 2375.78,
+      "text": "exponential"
+    },
+    {
+      "start": 2375.78,
+      "end": 2377.72,
+      "text": "it sounds all"
+    },
+    {
+      "start": 2377.72,
+      "end": 2378.4,
+      "text": "very cool"
+    },
+    {
+      "start": 2378.4,
+      "end": 2379.18,
+      "text": "and exciting"
+    },
+    {
+      "start": 2379.18,
+      "end": 2380.84,
+      "text": "but it really"
+    },
+    {
+      "start": 2380.84,
+      "end": 2381.76,
+      "text": "isn't that"
+    },
+    {
+      "start": 2381.76,
+      "end": 2382.76,
+      "text": "cool or exciting"
+    },
+    {
+      "start": 2382.76,
+      "end": 2384.82,
+      "text": "so if you think"
+    },
+    {
+      "start": 2384.82,
+      "end": 2385.98,
+      "text": "back to our"
+    },
+    {
+      "start": 2385.98,
+      "end": 2387.36,
+      "text": "very simple"
+    },
+    {
+      "start": 2387.36,
+      "end": 2388.08,
+      "text": "formula"
+    },
+    {
+      "start": 2388.08,
+      "end": 2389.12,
+      "text": "for simple"
+    },
+    {
+      "start": 2389.12,
+      "end": 2389.96,
+      "text": "moving averages"
+    },
+    {
+      "start": 2389.96,
+      "end": 2392.16,
+      "text": "you'll recall"
+    },
+    {
+      "start": 2392.16,
+      "end": 2393.02,
+      "text": "our chosen"
+    },
+    {
+      "start": 2393.02,
+      "end": 2393.86,
+      "text": "time horizon"
+    },
+    {
+      "start": 2393.86,
+      "end": 2395.18,
+      "text": "20 days"
+    },
+    {
+      "start": 2395.18,
+      "end": 2396.72,
+      "text": "the 20 day"
+    },
+    {
+      "start": 2396.72,
+      "end": 2397.24,
+      "text": "SMA"
+    },
+    {
+      "start": 2397.24,
+      "end": 2398.3,
+      "text": "is just"
+    },
+    {
+      "start": 2398.3,
+      "end": 2398.82,
+      "text": "simply"
+    },
+    {
+      "start": 2398.82,
+      "end": 2399.92,
+      "text": "the sum"
+    },
+    {
+      "start": 2399.92,
+      "end": 2400.72,
+      "text": "of the closing"
+    },
+    {
+      "start": 2400.72,
+      "end": 2401.3,
+      "text": "prices"
+    },
+    {
+      "start": 2401.3,
+      "end": 2402.16,
+      "text": "for the past"
+    },
+    {
+      "start": 2402.16,
+      "end": 2402.88,
+      "text": "20 days"
+    },
+    {
+      "start": 2402.88,
+      "end": 2403.74,
+      "text": "divided"
+    },
+    {
+      "start": 2403.74,
+      "end": 2405.18,
+      "text": "by 20 days"
+    },
+    {
+      "start": 2405.18,
+      "end": 2406.6,
+      "text": "however"
+    },
+    {
+      "start": 2406.6,
+      "end": 2407.16,
+      "text": "if you think"
+    },
+    {
+      "start": 2407.16,
+      "end": 2407.82,
+      "text": "about how"
+    },
+    {
+      "start": 2407.82,
+      "end": 2408.16,
+      "text": "this is"
+    },
+    {
+      "start": 2408.16,
+      "end": 2408.66,
+      "text": "calculated"
+    },
+    {
+      "start": 2408.66,
+      "end": 2409.26,
+      "text": "when we're"
+    },
+    {
+      "start": 2409.26,
+      "end": 2410.08,
+      "text": "calculating it"
+    },
+    {
+      "start": 2410.08,
+      "end": 2410.82,
+      "text": "we are"
+    },
+    {
+      "start": 2410.82,
+      "end": 2411.66,
+      "text": "sitting on"
+    },
+    {
+      "start": 2411.66,
+      "end": 2412.5,
+      "text": "day 21"
+    },
+    {
+      "start": 2412.5,
+      "end": 2413.68,
+      "text": "so the first"
+    },
+    {
+      "start": 2413.68,
+      "end": 2414.8,
+      "text": "day of a"
+    },
+    {
+      "start": 2414.8,
+      "end": 2415.5,
+      "text": "20 day"
+    },
+    {
+      "start": 2415.5,
+      "end": 2416.46,
+      "text": "simple moving"
+    },
+    {
+      "start": 2416.46,
+      "end": 2416.9,
+      "text": "average"
+    },
+    {
+      "start": 2416.9,
+      "end": 2418.4,
+      "text": "is day 21"
+    },
+    {
+      "start": 2418.4,
+      "end": 2419.36,
+      "text": "and that"
+    },
+    {
+      "start": 2419.36,
+      "end": 2420.4,
+      "text": "covers the"
+    },
+    {
+      "start": 2420.4,
+      "end": 2421.02,
+      "text": "previous"
+    },
+    {
+      "start": 2421.02,
+      "end": 2422.14,
+      "text": "20 days"
+    },
+    {
+      "start": 2422.14,
+      "end": 2423.3,
+      "text": "and when we're"
+    },
+    {
+      "start": 2423.3,
+      "end": 2423.86,
+      "text": "calculating"
+    },
+    {
+      "start": 2423.86,
+      "end": 2425.56,
+      "text": "the 20 day"
+    },
+    {
+      "start": 2425.56,
+      "end": 2426.26,
+      "text": "moving average"
+    },
+    {
+      "start": 2426.26,
+      "end": 2427.2,
+      "text": "it's on a"
+    },
+    {
+      "start": 2427.2,
+      "end": 2428.34,
+      "text": "rolling basis"
+    },
+    {
+      "start": 2428.34,
+      "end": 2429.68,
+      "text": "so there's"
+    },
+    {
+      "start": 2429.68,
+      "end": 2430.04,
+      "text": "a lag"
+    },
+    {
+      "start": 2430.04,
+      "end": 2430.42,
+      "text": "effect"
+    },
+    {
+      "start": 2430.42,
+      "end": 2431.2,
+      "text": "of 20"
+    },
+    {
+      "start": 2431.2,
+      "end": 2431.62,
+      "text": "days"
+    },
+    {
+      "start": 2431.62,
+      "end": 2433.84,
+      "text": "an exponential"
+    },
+    {
+      "start": 2433.84,
+      "end": 2434.7,
+      "text": "moving average"
+    },
+    {
+      "start": 2434.7,
+      "end": 2435.62,
+      "text": "reduces"
+    },
+    {
+      "start": 2435.62,
+      "end": 2436.58,
+      "text": "this lag"
+    },
+    {
+      "start": 2436.58,
+      "end": 2437.96,
+      "text": "by applying"
+    },
+    {
+      "start": 2437.96,
+      "end": 2439.02,
+      "text": "more weight"
+    },
+    {
+      "start": 2439.02,
+      "end": 2440.1,
+      "text": "to recent"
+    },
+    {
+      "start": 2440.1,
+      "end": 2440.66,
+      "text": "prices"
+    },
+    {
+      "start": 2440.66,
+      "end": 2442.4,
+      "text": "and we have"
+    },
+    {
+      "start": 2442.4,
+      "end": 2443.5,
+      "text": "a weighting"
+    },
+    {
+      "start": 2443.5,
+      "end": 2444.54,
+      "text": "that's applied"
+    },
+    {
+      "start": 2444.54,
+      "end": 2445.86,
+      "text": "to the most"
+    },
+    {
+      "start": 2445.86,
+      "end": 2446.78,
+      "text": "recent prices"
+    },
+    {
+      "start": 2446.78,
+      "end": 2447.56,
+      "text": "and this"
+    },
+    {
+      "start": 2447.56,
+      "end": 2448.46,
+      "text": "depends"
+    },
+    {
+      "start": 2448.46,
+      "end": 2449.78,
+      "text": "on the number"
+    },
+    {
+      "start": 2449.78,
+      "end": 2450.46,
+      "text": "of periods"
+    },
+    {
+      "start": 2450.46,
+      "end": 2451.46,
+      "text": "in the moving"
+    },
+    {
+      "start": 2451.46,
+      "end": 2452.34,
+      "text": "average itself"
+    },
+    {
+      "start": 2452.34,
+      "end": 2454.26,
+      "text": "so exponential"
+    },
+    {
+      "start": 2454.26,
+      "end": 2455.28,
+      "text": "moving averages"
+    },
+    {
+      "start": 2455.28,
+      "end": 2456.58,
+      "text": "differ from"
+    },
+    {
+      "start": 2456.58,
+      "end": 2457.34,
+      "text": "simple moving"
+    },
+    {
+      "start": 2457.34,
+      "end": 2457.76,
+      "text": "averages"
+    },
+    {
+      "start": 2457.76,
+      "end": 2458.78,
+      "text": "in that"
+    },
+    {
+      "start": 2458.78,
+      "end": 2459.22,
+      "text": "a given"
+    },
+    {
+      "start": 2459.22,
+      "end": 2459.74,
+      "text": "day's"
+    },
+    {
+      "start": 2459.74,
+      "end": 2460.04,
+      "text": "EMA"
+    },
+    {
+      "start": 2460.04,
+      "end": 2460.8,
+      "text": "calculation"
+    },
+    {
+      "start": 2460.8,
+      "end": 2461.96,
+      "text": "depends"
+    },
+    {
+      "start": 2461.96,
+      "end": 2462.7,
+      "text": "on the"
+    },
+    {
+      "start": 2462.7,
+      "end": 2463.32,
+      "text": "EMA's"
+    },
+    {
+      "start": 2463.32,
+      "end": 2463.94,
+      "text": "calculations"
+    },
+    {
+      "start": 2463.94,
+      "end": 2465.02,
+      "text": "for all"
+    },
+    {
+      "start": 2465.02,
+      "end": 2465.56,
+      "text": "the days"
+    },
+    {
+      "start": 2465.56,
+      "end": 2465.98,
+      "text": "prior"
+    },
+    {
+      "start": 2465.98,
+      "end": 2466.72,
+      "text": "to that"
+    },
+    {
+      "start": 2466.72,
+      "end": 2466.96,
+      "text": "day"
+    },
+    {
+      "start": 2466.96,
+      "end": 2468.56,
+      "text": "now"
+    },
+    {
+      "start": 2468.56,
+      "end": 2469.02,
+      "text": "similar"
+    },
+    {
+      "start": 2469.02,
+      "end": 2469.5,
+      "text": "to"
+    },
+    {
+      "start": 2469.5,
+      "end": 2470.46,
+      "text": "SMA's"
+    },
+    {
+      "start": 2470.46,
+      "end": 2471.1,
+      "text": "for"
+    },
+    {
+      "start": 2471.1,
+      "end": 2472.04,
+      "text": "significant"
+    },
+    {
+      "start": 2472.04,
+      "end": 2472.86,
+      "text": "EMA's"
+    },
+    {
+      "start": 2472.86,
+      "end": 2473.64,
+      "text": "we use"
+    },
+    {
+      "start": 2473.64,
+      "end": 2474.3,
+      "text": "the same"
+    },
+    {
+      "start": 2474.3,
+      "end": 2475.58,
+      "text": "time periods"
+    },
+    {
+      "start": 2475.58,
+      "end": 2476.22,
+      "text": "as with"
+    },
+    {
+      "start": 2476.22,
+      "end": 2476.92,
+      "text": "SMA's"
+    },
+    {
+      "start": 2476.92,
+      "end": 2477.7,
+      "text": "so we're"
+    },
+    {
+      "start": 2477.7,
+      "end": 2477.98,
+      "text": "using"
+    },
+    {
+      "start": 2477.98,
+      "end": 2478.58,
+      "text": "20"
+    },
+    {
+      "start": 2478.58,
+      "end": 2479.38,
+      "text": "60"
+    },
+    {
+      "start": 2479.38,
+      "end": 2480.2,
+      "text": "120"
+    },
+    {
+      "start": 2480.2,
+      "end": 2481.88,
+      "text": "and 250"
+    },
+    {
+      "start": 2481.88,
+      "end": 2482.48,
+      "text": "days"
+    },
+    {
+      "start": 2482.48,
+      "end": 2483.22,
+      "text": "for"
+    },
+    {
+      "start": 2483.22,
+      "end": 2483.88,
+      "text": "exponential"
+    },
+    {
+      "start": 2483.88,
+      "end": 2484.24,
+      "text": "moving"
+    },
+    {
+      "start": 2484.24,
+      "end": 2484.56,
+      "text": "averages"
+    },
+    {
+      "start": 2484.56,
+      "end": 2485.88,
+      "text": "and we"
+    },
+    {
+      "start": 2485.88,
+      "end": 2486.34,
+      "text": "of course"
+    },
+    {
+      "start": 2486.34,
+      "end": 2487.18,
+      "text": "apply our"
+    },
+    {
+      "start": 2487.18,
+      "end": 2487.76,
+      "text": "time frame"
+    },
+    {
+      "start": 2487.76,
+      "end": 2488.28,
+      "text": "for long"
+    },
+    {
+      "start": 2488.28,
+      "end": 2488.52,
+      "text": "short"
+    },
+    {
+      "start": 2488.52,
+      "end": 2488.94,
+      "text": "portfolio"
+    },
+    {
+      "start": 2488.94,
+      "end": 2489.38,
+      "text": "managers"
+    },
+    {
+      "start": 2489.38,
+      "end": 2490.52,
+      "text": "of 20"
+    },
+    {
+      "start": 2490.52,
+      "end": 2491.06,
+      "text": "to 60"
+    },
+    {
+      "start": 2491.06,
+      "end": 2491.44,
+      "text": "days"
+    },
+    {
+      "start": 2491.44,
+      "end": 2493.56,
+      "text": "so the"
+    },
+    {
+      "start": 2493.56,
+      "end": 2493.92,
+      "text": "formula"
+    },
+    {
+      "start": 2493.92,
+      "end": 2495.0,
+      "text": "or calculation"
+    },
+    {
+      "start": 2495.0,
+      "end": 2496.44,
+      "text": "for exponential"
+    },
+    {
+      "start": 2496.44,
+      "end": 2497.28,
+      "text": "moving averages"
+    },
+    {
+      "start": 2497.28,
+      "end": 2498.8,
+      "text": "obviously differs"
+    },
+    {
+      "start": 2498.8,
+      "end": 2499.84,
+      "text": "from simple"
+    },
+    {
+      "start": 2499.84,
+      "end": 2500.54,
+      "text": "moving averages"
+    },
+    {
+      "start": 2500.54,
+      "end": 2502.0,
+      "text": "the exponential"
+    },
+    {
+      "start": 2502.0,
+      "end": 2502.92,
+      "text": "moving average"
+    },
+    {
+      "start": 2502.92,
+      "end": 2503.5,
+      "text": "for today"
+    },
+    {
+      "start": 2503.5,
+      "end": 2504.32,
+      "text": "is the"
+    },
+    {
+      "start": 2504.32,
+      "end": 2505.14,
+      "text": "closing price"
+    },
+    {
+      "start": 2505.14,
+      "end": 2505.96,
+      "text": "of yesterday"
+    },
+    {
+      "start": 2505.96,
+      "end": 2507.38,
+      "text": "multiplied by"
+    },
+    {
+      "start": 2507.38,
+      "end": 2508.12,
+      "text": "the multiplier"
+    },
+    {
+      "start": 2508.12,
+      "end": 2509.74,
+      "text": "plus the"
+    },
+    {
+      "start": 2509.74,
+      "end": 2510.8,
+      "text": "exponential moving"
+    },
+    {
+      "start": 2510.8,
+      "end": 2511.86,
+      "text": "average calculation"
+    },
+    {
+      "start": 2511.86,
+      "end": 2512.8,
+      "text": "of yesterday"
+    },
+    {
+      "start": 2512.8,
+      "end": 2514.2,
+      "text": "multiplied by"
+    },
+    {
+      "start": 2514.2,
+      "end": 2515.56,
+      "text": "1 minus the"
+    },
+    {
+      "start": 2515.56,
+      "end": 2516.02,
+      "text": "multiplier"
+    },
+    {
+      "start": 2516.02,
+      "end": 2518.18,
+      "text": "and the multiplier"
+    },
+    {
+      "start": 2518.18,
+      "end": 2519.62,
+      "text": "itself is the"
+    },
+    {
+      "start": 2519.62,
+      "end": 2520.3,
+      "text": "number 2"
+    },
+    {
+      "start": 2520.3,
+      "end": 2521.54,
+      "text": "divided by the"
+    },
+    {
+      "start": 2521.54,
+      "end": 2522.06,
+      "text": "number of"
+    },
+    {
+      "start": 2522.06,
+      "end": 2523.04,
+      "text": "observations in the"
+    },
+    {
+      "start": 2523.04,
+      "end": 2524.48,
+      "text": "data plus 1"
+    },
+    {
+      "start": 2524.48,
+      "end": 2527.04,
+      "text": "okay so let's"
+    },
+    {
+      "start": 2527.04,
+      "end": 2527.86,
+      "text": "run through an"
+    },
+    {
+      "start": 2527.86,
+      "end": 2528.56,
+      "text": "example here"
+    },
+    {
+      "start": 2528.56,
+      "end": 2530.24,
+      "text": "so let's do a"
+    },
+    {
+      "start": 2530.24,
+      "end": 2531.5,
+      "text": "20 day EMA"
+    },
+    {
+      "start": 2531.5,
+      "end": 2532.98,
+      "text": "so for a"
+    },
+    {
+      "start": 2532.98,
+      "end": 2533.96,
+      "text": "20 day EMA"
+    },
+    {
+      "start": 2533.96,
+      "end": 2535.2,
+      "text": "the multiplier"
+    },
+    {
+      "start": 2535.2,
+      "end": 2536.54,
+      "text": "will be calculated"
+    },
+    {
+      "start": 2536.54,
+      "end": 2537.5,
+      "text": "as 2"
+    },
+    {
+      "start": 2537.5,
+      "end": 2538.98,
+      "text": "over 21"
+    },
+    {
+      "start": 2538.98,
+      "end": 2540.1,
+      "text": "so 20"
+    },
+    {
+      "start": 2540.1,
+      "end": 2540.72,
+      "text": "plus 1"
+    },
+    {
+      "start": 2540.72,
+      "end": 2541.6,
+      "text": "and that is"
+    },
+    {
+      "start": 2541.6,
+      "end": 2542.2,
+      "text": "equal to"
+    },
+    {
+      "start": 2542.2,
+      "end": 2542.66,
+      "text": "0"
+    },
+    {
+      "start": 2542.66,
+      "end": 2543.3,
+      "text": "spot"
+    },
+    {
+      "start": 2543.3,
+      "end": 2543.7,
+      "text": "0"
+    },
+    {
+      "start": 2543.7,
+      "end": 2544.28,
+      "text": "95"
+    },
+    {
+      "start": 2544.28,
+      "end": 2545.38,
+      "text": "23"
+    },
+    {
+      "start": 2545.38,
+      "end": 2545.82,
+      "text": "8"
+    },
+    {
+      "start": 2545.82,
+      "end": 2546.26,
+      "text": "1"
+    },
+    {
+      "start": 2546.26,
+      "end": 2548.02,
+      "text": "so our"
+    },
+    {
+      "start": 2548.02,
+      "end": 2548.48,
+      "text": "multiplier"
+    },
+    {
+      "start": 2548.48,
+      "end": 2549.46,
+      "text": "is 0"
+    },
+    {
+      "start": 2549.46,
+      "end": 2549.82,
+      "text": "spot"
+    },
+    {
+      "start": 2549.82,
+      "end": 2559.3,
+      "text": "0.0952381 for a 20-day exponential moving average. So let's say a stock closed yesterday"
+    },
+    {
+      "start": 2559.3,
+      "end": 2573.48,
+      "text": "at $65.89 and had a 20-day SMA of 62.54. And to get our first EMA data point, we take the 20-day"
+    },
+    {
+      "start": 2573.48,
+      "end": 2587.82,
+      "text": "SMA and multiply that by 1 minus the multiplier, 0.0952381. And this results in an EMA today of $62.80."
+    },
+    {
+      "start": 2588.24,
+      "end": 2597.92,
+      "text": "Now, if on that day, the stock then closed at $67.22, we would then use this closing price"
+    },
+    {
+      "start": 2597.92,
+      "end": 2606.82,
+      "text": "and the previous day's EMA of the $62.86 to calculate the next day's or the current day's EMA."
+    },
+    {
+      "start": 2607.78,
+      "end": 2616.6,
+      "text": "So we take $67.22, multiply that through by the multiplier, and then we add the previous day's"
+    },
+    {
+      "start": 2616.6,
+      "end": 2626.0,
+      "text": "EMA, $62.86, multiply through by 1 minus the multiplier, and then add those results together."
+    },
+    {
+      "start": 2626.24,
+      "end": 2636.58,
+      "text": "That gives us a new day EMA of $63.27. And then to continue working out subsequent days of the"
+    },
+    {
+      "start": 2636.58,
+      "end": 2644.1,
+      "text": "exponential moving average, we keep using yesterday's closing price and yesterday's EMA to calculate"
+    },
+    {
+      "start": 2644.1,
+      "end": 2653.4,
+      "text": "the current day's EMA subsequently moving forward. Now, we do have a download in the download area"
+    },
+    {
+      "start": 2653.4,
+      "end": 2659.82,
+      "text": "to this video where we actually have simple moving averages versus exponential moving averages."
+    },
+    {
+      "start": 2660.52,
+      "end": 2667.1,
+      "text": "So the file name there is SMA underscore versus underscore EMA. And if you look through the"
+    },
+    {
+      "start": 2667.1,
+      "end": 2672.46,
+      "text": "spreadsheet there, look through the formulas, this will give you a better understanding of"
+    },
+    {
+      "start": 2672.46,
+      "end": 2680.08,
+      "text": "the difference between the two. So in the example, in the spreadsheet, we've shown a 10-day exponential"
+    },
+    {
+      "start": 2680.08,
+      "end": 2687.84,
+      "text": "moving average with 30-day periods. In reality, when you're looking at obviously much bigger"
+    },
+    {
+      "start": 2687.84,
+      "end": 2696.32,
+      "text": "stock price charts and data sets, there's going to be a lot more days. But the spreadsheet you can use"
+    },
+    {
+      "start": 2696.32,
+      "end": 2703.94,
+      "text": "as a template to further your understanding of the differences between SMA and EMA. And you can also"
+    },
+    {
+      "start": 2703.94,
+      "end": 2713.94,
+      "text": "use past stock price data over even much longer periods to work out SMA and EMA yourself. And even compare"
+    },
+    {
+      "start": 2713.94,
+      "end": 2717.16,
+      "text": "those results when you're looking at a particular stock. And this is all very helpful stuff to help you better understand it in the first place. But when you're actually pulling up"
+    },
+    {
+      "start": 2717.16,
+      "end": 2739.78,
+      "text": "charts and looking at SMAs versus EMAs, when you've done the fundamental groundwork of how the calculations actually work, you better understand the visualization of the chart."
+    },
+    {
+      "start": 2739.78,
+      "end": 2748.4,
+      "text": "So unlike most retail traders who pull up moving averages for simple moving averages and exponential"
+    },
+    {
+      "start": 2748.4,
+      "end": 2761.4,
+      "text": "moving averages and they don't really understand the calculations on what's going on, you will have a far better understanding of what's actually going on behind the picture or visuals on the screen."
+    },
+    {
+      "start": 2761.4,
+      "end": 2773.58,
+      "text": "Now just for reference, a 20-day exponential moving average can also be referred to as the 9.52% EMA."
+    },
+    {
+      "start": 2773.58,
+      "end": 2788.02,
+      "text": "So that's our multiplier, the 0.0952. And the 10-day exponential moving average can be referred to as the 18.18% EMA."
+    },
+    {
+      "start": 2788.02,
+      "end": 2796.3,
+      "text": "Multiplier for the 10-day exponential moving average is 0.1818."
+    },
+    {
+      "start": 2796.3,
+      "end": 2810.64,
+      "text": "So for our time period as long-short portfolio managers over 20, 60 days, we are using 20, 60, 120, and 250-day EMAs."
+    },
+    {
+      "start": 2810.64,
+      "end": 2831.92,
+      "text": "So for 20 days, we have what's termed as a 9.52% EMA, for 60 days, a 3.27% EMA, for 120 days, a 1.65% EMA, and 250 days, a 0.79% EMA."
+    },
+    {
+      "start": 2831.92,
+      "end": 2841.26,
+      "text": "Now, before we look at examples on a chart of exponential moving averages, we're actually going to look at our fourth momentum indicator,"
+    },
+    {
+      "start": 2841.82,
+      "end": 2844.58,
+      "text": "which is moving average convergence divergence."
+    },
+    {
+      "start": 2845.24,
+      "end": 2854.72,
+      "text": "And this is because the MACD, the moving average convergence divergence calculation, draws on the exponential moving average data."
+    },
+    {
+      "start": 2855.2,
+      "end": 2865.08,
+      "text": "So the MACD indicator is what's termed as a momentum oscillator that measures the difference in two EMA periods."
+    },
+    {
+      "start": 2865.48,
+      "end": 2874.2,
+      "text": "So the MACD is calculated by subtracting the longer-term EMA from the shorter-term EMA."
+    },
+    {
+      "start": 2874.48,
+      "end": 2878.42,
+      "text": "And this creates what's called the MACD line."
+    },
+    {
+      "start": 2879.28,
+      "end": 2890.04,
+      "text": "And the MACD line fluctuates above and below a 0 line as the EMAs converge, cross, and diverge from each other."
+    },
+    {
+      "start": 2891.04,
+      "end": 2902.52,
+      "text": "On top of having the MACD line and the 0 line, there's also a third line called the signal line that's created by taking an EMA of the MACD itself."
+    },
+    {
+      "start": 2903.48,
+      "end": 2920.6,
+      "text": "So the formula that you're always going to bump into, the default formula for MACD that will typically be the default on websites and in any software that you download for technical analysis and price action,"
+    },
+    {
+      "start": 2921.44,
+      "end": 2929.14,
+      "text": "the default formula for MACD is the 12-period EMA minus the 26-period EMA."
+    },
+    {
+      "start": 2929.48,
+      "end": 2939.42,
+      "text": "So this gives the MACD line, and then a nine-day EMA of the MACD line itself is worked out as the signal line."
+    },
+    {
+      "start": 2940.4,
+      "end": 2954.6,
+      "text": "So using a 12- and 26-day EMA is the most commonly distributed method of calculation, and pretty much all retail traders use this method and follow it almost like a religion."
+    },
+    {
+      "start": 2955.76,
+      "end": 2969.62,
+      "text": "But again, as with so many things in technical analysis and price action indicators, no one ever seems to ask what the significance is of 12, 26, and nine days."
+    },
+    {
+      "start": 2970.0,
+      "end": 2983.5,
+      "text": "The only remote or close to significance would be in the Forex markets, where one week is six days, two weeks is 12 days, and nine days is randomly one and a half weeks."
+    },
+    {
+      "start": 2984.02,
+      "end": 2997.86,
+      "text": "But then again, that kind of leaves us hanging dry when we try to explain what these numbers mean in terms of their significance, because it just leaves us asking, why 26 days?"
+    },
+    {
+      "start": 2998.24,
+      "end": 2999.54,
+      "text": "What's the significance there?"
+    },
+    {
+      "start": 3000.54,
+      "end": 3003.8,
+      "text": "So even in the Forex markets, there's a bit of randomness there."
+    },
+    {
+      "start": 3004.3,
+      "end": 3008.78,
+      "text": "These numbers don't really mean much, especially nine and 26 days."
+    },
+    {
+      "start": 3009.36,
+      "end": 3015.44,
+      "text": "But in the stock market, we can say with a very high level of confidence that there's no significance."
+    },
+    {
+      "start": 3015.92,
+      "end": 3017.08,
+      "text": "They basically mean nothing."
+    },
+    {
+      "start": 3017.92,
+      "end": 3025.94,
+      "text": "So for us, as longshore portfolio managers in the stock market, for stocks, these periods just have no significance."
+    },
+    {
+      "start": 3026.94,
+      "end": 3044.54,
+      "text": "So for us, our 20, 60, 120, and 250-day exponential moving averages must be used to calculate the MACD line and the signal line we calculate as 10 days, so two trading weeks."
+    },
+    {
+      "start": 3045.34,
+      "end": 3049.62,
+      "text": "So our modified MACD has the following formula."
+    },
+    {
+      "start": 3050.5,
+      "end": 3060.64,
+      "text": "MACD is equal to 20-day EMA minus the 60-day EMA with a 10-day EMA of the MACD as the signal line."
+    },
+    {
+      "start": 3061.52,
+      "end": 3071.28,
+      "text": "So now we understand how our EMAs and MACD is calculated properly for us as longshore portfolio managers in the stock market."
+    },
+    {
+      "start": 3071.56,
+      "end": 3073.7,
+      "text": "We can have a look at an example here."
+    },
+    {
+      "start": 3074.8,
+      "end": 3082.44,
+      "text": "So here we have a roughly 18-month chart of the stock Chewy CHWY."
+    },
+    {
+      "start": 3082.96,
+      "end": 3093.32,
+      "text": "So we have our daily price data, our open high low close data for daily, and we have our exponential moving averages calculated here."
+    },
+    {
+      "start": 3093.6,
+      "end": 3101.96,
+      "text": "So we have our 20-day EMA, our 60-day EMA, our 120-day EMA, and our 250-day EMA."
+    },
+    {
+      "start": 3101.96,
+      "end": 3112.32,
+      "text": "And at the bottom of our chart, underneath the price chart, you can see the formulas for MACD and the signal line."
+    },
+    {
+      "start": 3114.6,
+      "end": 3122.24,
+      "text": "And there's also another calculation difference between the MACD and the signal line."
+    },
+    {
+      "start": 3122.24,
+      "end": 3130.76,
+      "text": "So the white line is our MACD, that's the 20-day EMA minus the 60-day EMA, currently at minus 4.9868."
+    },
+    {
+      "start": 3130.76,
+      "end": 3144.72,
+      "text": "So a negative value for the MACD line simply means that the 20-day exponential moving average must be below the 60-day exponential moving average."
+    },
+    {
+      "start": 3144.72,
+      "end": 3161.0,
+      "text": "And if you look back, for example, to the last time the 20-day EMA crossed the 60-day EMA from above, which you can see on the chart is in March 2021."
+    },
+    {
+      "start": 3161.0,
+      "end": 3169.8,
+      "text": "This is where the 20-day and 60-day MACD line crossed the zero line from above."
+    },
+    {
+      "start": 3170.72,
+      "end": 3187.2,
+      "text": "So all pretty straightforward stuff, but in terms of vernacular, if the 20-day EMA is greater or above the 60-day EMA, we have what is called a positive MACD line."
+    },
+    {
+      "start": 3187.2,
+      "end": 3198.72,
+      "text": "And if the 20-day EMA is less than or below the 60-day EMA, we have what is called a negative MACD line."
+    },
+    {
+      "start": 3199.24,
+      "end": 3205.8,
+      "text": "So in this instance, right now with Chewy, we have a negative for the MACD line."
+    },
+    {
+      "start": 3206.46,
+      "end": 3216.88,
+      "text": "Now, what we also have is our 10-day signal line, which, remember, is an exponential moving average of the MACD line itself."
+    },
+    {
+      "start": 3217.2,
+      "end": 3223.4,
+      "text": "And what we can do is, as with anything, is zoom in to take a closer look."
+    },
+    {
+      "start": 3224.78,
+      "end": 3234.12,
+      "text": "So if we chart both the MACD line and the signal line, so we have the MACD line of the 20- and 60-day periods,"
+    },
+    {
+      "start": 3234.12,
+      "end": 3251.14,
+      "text": "and we have the signal line for 10-day EMA of the MACD line, which is in red, we can visually see when the MACD line crosses the signal line from above and below."
+    },
+    {
+      "start": 3251.98,
+      "end": 3257.48,
+      "text": "And we can also calculate and chart the differences between the two."
+    },
+    {
+      "start": 3257.48,
+      "end": 3265.2,
+      "text": "And the difference between the two is actually charted, if we zoom in further, at the zero line."
+    },
+    {
+      "start": 3266.06,
+      "end": 3279.42,
+      "text": "So if you recall, the zero line is simply on the occasion when the 20-day EMA minus the 60-day EMA is equal to zero, so it's when they're crossing."
+    },
+    {
+      "start": 3280.16,
+      "end": 3290.58,
+      "text": "But the difference between the MACD line and the signal line is also charted across the zero line."
+    },
+    {
+      "start": 3291.0,
+      "end": 3294.18,
+      "text": "But you have to remember, it's a different calculation."
+    },
+    {
+      "start": 3294.74,
+      "end": 3308.0,
+      "text": "So don't get confused thinking when you're looking at these green bars that the green bars represent the difference between the 20-day EMA and the 60-day EMA, because they don't."
+    },
+    {
+      "start": 3309.0,
+      "end": 3317.66,
+      "text": "The green bars, the difference is the difference in value between the MACD line and the signal line."
+    },
+    {
+      "start": 3318.22,
+      "end": 3321.42,
+      "text": "But it's charted across the zero line."
+    },
+    {
+      "start": 3322.7,
+      "end": 3326.2,
+      "text": "So now you know how it's calculated and how it works."
+    },
+    {
+      "start": 3326.9,
+      "end": 3330.94,
+      "text": "I guess the big question here is how do we interpret all of this?"
+    },
+    {
+      "start": 3332.1,
+      "end": 3345.1,
+      "text": "Well, we have a 10-point checklist here for EMAs and MACD as to what it means for your timing appraisal as part of the overall trade idea generation process."
+    },
+    {
+      "start": 3346.14,
+      "end": 3352.28,
+      "text": "So the first two we've actually covered when we were looking visually at the MACD line."
+    },
+    {
+      "start": 3352.92,
+      "end": 3361.58,
+      "text": "If the 20-day EMA is greater than the 60-day EMA, we have a positive MACD line in absolute terms."
+    },
+    {
+      "start": 3361.82,
+      "end": 3370.58,
+      "text": "If the 20-day EMA is less than the 60-day EMA, we have a negative MACD line in absolute terms."
+    },
+    {
+      "start": 3371.58,
+      "end": 3388.34,
+      "text": "Now, when it comes to the MACD line relative to the signal line, if the difference between the 20-day EMA and the 60-day EMA is greater than the 10-day signal line, we have what is called positive divergence."
+    },
+    {
+      "start": 3389.34,
+      "end": 3406.24,
+      "text": "So we've got two measures here in how we interpret things."
+    },
+    {
+      "start": 3406.68,
+      "end": 3409.66,
+      "text": "We have the absolute measure and the relative measure."
+    },
+    {
+      "start": 3409.66,
+      "end": 3424.96,
+      "text": "Now, when it comes to the relative measure, if the MACD line is moving further away from the signal line positively, it means that there's positive price divergence and momentum."
+    },
+    {
+      "start": 3426.1,
+      "end": 3436.08,
+      "text": "And in the opposite, if the MACD line is moving further away from the signal line negatively, it means that there's negative price divergence and momentum."
+    },
+    {
+      "start": 3436.08,
+      "end": 3450.58,
+      "text": "And when momentum is starting to fade, if the MACD line is moving closer to the signal line from the positive, it means that there's convergence and slowing positive momentum."
+    },
+    {
+      "start": 3451.58,
+      "end": 3460.8,
+      "text": "And if the MACD line is moving closer to the signal line from the negative, it means there's convergence and slowing negative momentum."
+    },
+    {
+      "start": 3460.8,
+      "end": 3477.94,
+      "text": "And on the relative measure, when the MACD line actually converges, so when the MACD line crosses the signal line from above, there's actually been confirmed convergence and there's what's called negative price momentum."
+    },
+    {
+      "start": 3477.94,
+      "end": 3507.8,
+      "text": "So when you're using this checklist for your timing appraisal, when it comes to EMAs and MACDs, the most common price action indicator that you're going to be using for the MACD is actually the signal line crossover from above."
+    },
+    {
+      "start": 3507.8,
+      "end": 3508.66,
+      "text": "And below."
+    },
+    {
+      "start": 3508.66,
+      "end": 3514.54,
+      "text": "Because this is when convergence is actually confirmed."
+    },
+    {
+      "start": 3514.54,
+      "end": 3519.28,
+      "text": "So we have confirmed positive and negative price action."
+    },
+    {
+      "start": 3520.02,
+      "end": 3533.08,
+      "text": "And the next thing you're going to consider is the MACD line itself in absolute terms and whether that's positive or negative and where it is in relation to the zero line crossover."
+    },
+    {
+      "start": 3534.08,
+      "end": 3545.42,
+      "text": "Now, if we go back one slide and we just look again at the MACD and signal line for Chewy, how would you actually interpret this?"
+    },
+    {
+      "start": 3545.42,
+      "end": 3552.98,
+      "text": "Well, we have a negative MACD line, as we know, the signal line is also negative."
+    },
+    {
+      "start": 3553.84,
+      "end": 3564.36,
+      "text": "So when we're interpreting this in absolute terms, the MACD line being negative means there's negative price action overall in the bigger picture."
+    },
+    {
+      "start": 3564.36,
+      "end": 3578.46,
+      "text": "But on a relative basis, when we compare the MACD line to the signal line, we've just recently had a crossover of the signal line from below."
+    },
+    {
+      "start": 3578.46,
+      "end": 3593.28,
+      "text": "So if we think of this in the context of our fundamental predisposition, and we think of this as a bullish fundamental predisposition, and we're pulling up the EMAs and the MACD."
+    },
+    {
+      "start": 3593.28,
+      "end": 3615.28,
+      "text": "If we go back a further slide and we look at the short-term exponential moving average, which is our 20 days EMA, is currently bouncing along or bouncing off the long-term EMA, our 250-day one-year exponential moving average."
+    },
+    {
+      "start": 3615.28,
+      "end": 3624.64,
+      "text": "And, of course, we can see that the 20-day EMA crossed the 60-day EMA from above back in March."
+    },
+    {
+      "start": 3626.04,
+      "end": 3631.9,
+      "text": "So overall, negative price action on larger timeframes."
+    },
+    {
+      "start": 3632.9,
+      "end": 3637.42,
+      "text": "So for a medium-term timeframe, negative price action."
+    },
+    {
+      "start": 3639.48,
+      "end": 3649.72,
+      "text": "But on a shorter timeframe, we are starting to see less negative momentum and signs of actually positive price action."
+    },
+    {
+      "start": 3650.54,
+      "end": 3664.56,
+      "text": "So although there's not overall positive price action in the name, what we are seeing is less negative price action and support coming in for the stock around these levels."
+    },
+    {
+      "start": 3664.82,
+      "end": 3669.4,
+      "text": "So we have some signs of positive price action and some signs of positive price momentum or price action."
+    },
+    {
+      "start": 3670.44,
+      "end": 3680.48,
+      "text": "So in terms of our interpretation here, if we go back to our 10-point checklist, we can figure out what's going on here."
+    },
+    {
+      "start": 3681.08,
+      "end": 3687.8,
+      "text": "We have our number two condition, which is the 20-day EMA being less than the 60-day EMA."
+    },
+    {
+      "start": 3688.06,
+      "end": 3690.3,
+      "text": "So we have a negative MACD line."
+    },
+    {
+      "start": 3691.0,
+      "end": 3693.08,
+      "text": "We have a positive difference."
+    },
+    {
+      "start": 3693.86,
+      "end": 3695.82,
+      "text": "So that's our number three condition."
+    },
+    {
+      "start": 3696.4,
+      "end": 3704.94,
+      "text": "The difference between the 20-day EMA and the 60-day EMA is greater than the signal line, the 10-day signal line."
+    },
+    {
+      "start": 3705.12,
+      "end": 3707.26,
+      "text": "So we have positive divergence."
+    },
+    {
+      "start": 3708.28,
+      "end": 3714.3,
+      "text": "We also have the MACD line moving on the signal line positively."
+    },
+    {
+      "start": 3715.06,
+      "end": 3718.72,
+      "text": "So this means that there's positive price divergence again."
+    },
+    {
+      "start": 3719.24,
+      "end": 3720.46,
+      "text": "So there is momentum."
+    },
+    {
+      "start": 3721.56,
+      "end": 3723.82,
+      "text": "So this is our number five condition."
+    },
+    {
+      "start": 3724.84,
+      "end": 3731.18,
+      "text": "And in the recent past, we've also had the MACD line crossing the signal line from below."
+    },
+    {
+      "start": 3731.4,
+      "end": 3733.34,
+      "text": "So there's been convergence."
+    },
+    {
+      "start": 3733.98,
+      "end": 3736.08,
+      "text": "So again, positive price momentum."
+    },
+    {
+      "start": 3737.1,
+      "end": 3744.68,
+      "text": "So on a relative basis, the MACD line versus the signal line, we are seeing positive price action here."
+    },
+    {
+      "start": 3745.32,
+      "end": 3754.58,
+      "text": "But from a technical standpoint, from a price action standpoint, in the bigger picture, the stock is certainly not out of the woods here."
+    },
+    {
+      "start": 3755.44,
+      "end": 3760.04,
+      "text": "Because for the MACD line, we still have in absolute terms a negative."
+    },
+    {
+      "start": 3761.18,
+      "end": 3769.28,
+      "text": "So if you were coming into this with a fundamental predisposition of bullish, what do you think you'd actually be doing here?"
+    },
+    {
+      "start": 3770.14,
+      "end": 3773.24,
+      "text": "Well, it's certainly not a red light."
+    },
+    {
+      "start": 3773.86,
+      "end": 3777.22,
+      "text": "It's also not a full position size green light."
+    },
+    {
+      "start": 3778.06,
+      "end": 3782.22,
+      "text": "It's most probably a partial position, an amber signal."
+    },
+    {
+      "start": 3782.96,
+      "end": 3791.1,
+      "text": "You can use your discretion, buy some stock, and perhaps sit back for a few weeks and reassess in a few weeks' time."
+    },
+    {
+      "start": 3791.18,
+      "end": 3793.44,
+      "text": "Whether you add to the position or not."
+    },
+    {
+      "start": 3794.3,
+      "end": 3795.98,
+      "text": "Where would you add to the position?"
+    },
+    {
+      "start": 3796.5,
+      "end": 3801.4,
+      "text": "Well, you would probably add to the position if the MACD line went positive."
+    },
+    {
+      "start": 3802.48,
+      "end": 3805.38,
+      "text": "So do use this checklist moving forward."
+    },
+    {
+      "start": 3806.06,
+      "end": 3814.08,
+      "text": "It's very useful for just interpreting things and getting used to the interpretation of EMAs and MACD."
+    },
+    {
+      "start": 3814.08,
+      "end": 3820.92,
+      "text": "Now, as always, when it comes to this stuff, we're more interested in getting the big things right."
+    },
+    {
+      "start": 3821.72,
+      "end": 3829.16,
+      "text": "Shorter-term traders will use shorter-term MACD and signal lines and go into a lot of depth"
+    },
+    {
+      "start": 3829.16,
+      "end": 3833.14,
+      "text": "and compare the price action of a chart."
+    },
+    {
+      "start": 3833.14,
+      "end": 3838.72,
+      "text": "So the price chart to the MACD for what we call divergence signals."
+    },
+    {
+      "start": 3839.54,
+      "end": 3847.08,
+      "text": "We, as longshore portfolio managers in the 20- to 60-day time horizon, we don't need to go that deep."
+    },
+    {
+      "start": 3848.28,
+      "end": 3848.84,
+      "text": "Why?"
+    },
+    {
+      "start": 3848.84,
+      "end": 3853.1,
+      "text": "Because we're not generating trade ideas based on price."
+    },
+    {
+      "start": 3853.7,
+      "end": 3860.38,
+      "text": "And our time horizon does allow us to be wrong for at least a week or two or maybe even a month."
+    },
+    {
+      "start": 3860.78,
+      "end": 3864.5,
+      "text": "All we need to do is get the big things right."
+    },
+    {
+      "start": 3865.26,
+      "end": 3876.0,
+      "text": "So you really don't need to go too far with this and go down rabbit holes and become a victim of the laws of diminishing marginal utility"
+    },
+    {
+      "start": 3876.0,
+      "end": 3879.76,
+      "text": "in terms of the work you put in to your timing process."
+    },
+    {
+      "start": 3880.82,
+      "end": 3889.7,
+      "text": "All we need with technical analysis and price action is the basics and a good understanding of our indicators"
+    },
+    {
+      "start": 3889.7,
+      "end": 3897.54,
+      "text": "to time our entry into positions and our exits out of positions better than if we weren't using it."
+    },
+    {
+      "start": 3898.06,
+      "end": 3910.72,
+      "text": "Now, one thing you have to understand about the MACD is that it doesn't provide parameters for either overbought and oversold conditions."
+    },
+    {
+      "start": 3911.58,
+      "end": 3924.2,
+      "text": "Although visually, we can look at the MACD in the past and pinpoint where stocks were open quotes overbought and open quote oversold"
+    },
+    {
+      "start": 3924.2,
+      "end": 3933.58,
+      "text": "and in those conditions, the MACD doesn't have any upper or lower limits or parameters to constrain its movement."
+    },
+    {
+      "start": 3933.58,
+      "end": 3943.48,
+      "text": "For example, in very sharp rallies and sell-offs in a stock, the MACD can just continue getting bigger and smaller."
+    },
+    {
+      "start": 3944.48,
+      "end": 3952.66,
+      "text": "So let's say in a bad situation for a stock where a stock fundamentally warns on their forward-looking EPS outlook"
+    },
+    {
+      "start": 3952.66,
+      "end": 3957.62,
+      "text": "and there's wholesale selling of the stock for literally months."
+    },
+    {
+      "start": 3957.62,
+      "end": 3968.12,
+      "text": "If you, as a trader, are staring at the MACD thinking that the negative divergence of the MACD from the signal line"
+    },
+    {
+      "start": 3968.12,
+      "end": 3976.92,
+      "text": "simply can't continue because it's at historically wide levels, then you need to think again because it literally can."
+    },
+    {
+      "start": 3978.5,
+      "end": 3986.68,
+      "text": "And the same goes in the opposite for a company that's aggressively increasing their forward-looking EPS estimates"
+    },
+    {
+      "start": 3986.68,
+      "end": 3993.54,
+      "text": "and there's wholesale accumulation of the stock from, say, pension funds for months on end."
+    },
+    {
+      "start": 3993.76,
+      "end": 4001.86,
+      "text": "You just shouldn't be staring at the historically wide positive divergence of the MACD line from the signal line"
+    },
+    {
+      "start": 4001.86,
+      "end": 4005.96,
+      "text": "and thinking that it's a shorting opportunity."
+    },
+    {
+      "start": 4007.36,
+      "end": 4015.52,
+      "text": "Because most retail traders don't really bother to do the work on the calculations of their price action indicators"
+    },
+    {
+      "start": 4015.52,
+      "end": 4023.0,
+      "text": "and really understand them, this is why retail traders that get their trade ideas only from TA"
+    },
+    {
+      "start": 4023.0,
+      "end": 4028.06,
+      "text": "and price action patterns and indicators eventually always get run over."
+    },
+    {
+      "start": 4028.8,
+      "end": 4037.1,
+      "text": "So they get run over by big fundamental moves and a lack of understanding of both the fundamentals themselves"
+    },
+    {
+      "start": 4037.1,
+      "end": 4043.7,
+      "text": "and the very technical analysis and price action indicators that they espouse."
+    },
+    {
+      "start": 4044.26,
+      "end": 4049.46,
+      "text": "So just understand, guys, how EMA and MACD properly works"
+    },
+    {
+      "start": 4049.46,
+      "end": 4053.74,
+      "text": "and understand the calculations and the interpretations properly."
+    },
+    {
+      "start": 4054.74,
+      "end": 4058.52,
+      "text": "Now, we're going to move on to our final momentum indicator."
+    },
+    {
+      "start": 4059.12,
+      "end": 4062.2,
+      "text": "We're going to be looking at Heiken Ashi candlestick charts."
+    },
+    {
+      "start": 4063.48,
+      "end": 4073.1,
+      "text": "So all of the charts that we've looked at up to this point and that we've used as examples have used regular candlesticks."
+    },
+    {
+      "start": 4074.18,
+      "end": 4081.38,
+      "text": "So we've been using predominantly daily, open, high, low and close data."
+    },
+    {
+      "start": 4081.86,
+      "end": 4094.1,
+      "text": "And you'll recall on the charts we've been using, we've had hollow candles for days when the stock has a closing price above its opening price"
+    },
+    {
+      "start": 4094.1,
+      "end": 4115.06,
+      "text": "However, with the study of price action and momentum in prices, we can introduce you here to a new kind of candlestick chart called the Heiken Ashi."
+    },
+    {
+      "start": 4115.84,
+      "end": 4120.12,
+      "text": "And with the Heiken Ashi, the candles are worked out differently."
+    },
+    {
+      "start": 4120.64,
+      "end": 4130.54,
+      "text": "So if we just look at a chart here of the S&P 500 cash index, this is a chart where we're using regular."
+    },
+    {
+      "start": 4131.0,
+      "end": 4137.62,
+      "text": "And you can see visually when we look at a Heiken Ashi that the candles visually look different."
+    },
+    {
+      "start": 4138.4,
+      "end": 4142.64,
+      "text": "And that's because the candles are worked out differently."
+    },
+    {
+      "start": 4143.18,
+      "end": 4159.32,
+      "text": "So the parameters for a Heiken Ashi candle versus a regular candle differ because the calculation for the parameters, the values for open, high, low and close are different."
+    },
+    {
+      "start": 4160.08,
+      "end": 4165.48,
+      "text": "So let's break this down and look at the calculation and interpret this properly."
+    },
+    {
+      "start": 4165.8,
+      "end": 4172.98,
+      "text": "So the phrase Heiken Ashi in Japanese, it simply means average bar."
+    },
+    {
+      "start": 4174.04,
+      "end": 4177.66,
+      "text": "So it all sounds very sophisticated and very fancy."
+    },
+    {
+      "start": 4178.58,
+      "end": 4193.06,
+      "text": "And technical analysis guys, they do like to use a lot of Japanese words to make them sound somehow scientific or mathematically gifted."
+    },
+    {
+      "start": 4194.06,
+      "end": 4205.14,
+      "text": "Implying that they have some sort of edge versus the great unwashed retail trader, unknowledgeable guy in financial markets."
+    },
+    {
+      "start": 4205.92,
+      "end": 4215.56,
+      "text": "But as with most things in technical analysis and price action indicators, it sounds a lot more sophisticated than it actually is."
+    },
+    {
+      "start": 4216.3,
+      "end": 4226.32,
+      "text": "If they just use the words, if they just use the words, for example, average bar in English instead of Heiken Ashi in Japanese, you would likely be much less impressed."
+    },
+    {
+      "start": 4227.38,
+      "end": 4238.48,
+      "text": "So when you encounter these names in technical analysis, just translate it back into English and make it so that in your vocabulary,"
+    },
+    {
+      "start": 4238.48,
+      "end": 4248.42,
+      "text": "you're using the English phrase as much as the Japanese phrase and perhaps even get used to just using the English phrase all the time."
+    },
+    {
+      "start": 4248.66,
+      "end": 4259.2,
+      "text": "So this way you'll be able to concentrate on the calculation and what exactly the technical analysis or price action indicator is."
+    },
+    {
+      "start": 4259.74,
+      "end": 4270.3,
+      "text": "If it's a fancy name and then forgetting what the TA or price action indicator is actually calculating."
+    },
+    {
+      "start": 4270.3,
+      "end": 4280.06,
+      "text": "So in the case of Heiken Ashi or the average bar, what are we actually calculating here?"
+    },
+    {
+      "start": 4280.06,
+      "end": 4299.0,
+      "text": "Instead of using the straightforward candlestick data for open, high, low, close to form a candle, the average bar uses another formula."
+    },
+    {
+      "start": 4299.0,
+      "end": 4311.34,
+      "text": "So the open data of a candle is calculated as 0.5 of the sum of the open of the previous bar plus the close of the previous bar."
+    },
+    {
+      "start": 4311.34,
+      "end": 4319.62,
+      "text": "The high data for a candle is the maximum value from the high, open or close."
+    },
+    {
+      "start": 4319.62,
+      "end": 4329.92,
+      "text": "And the low value for the data is taken as the minimum value from the same data that's sourced for the high data."
+    },
+    {
+      "start": 4329.92,
+      "end": 4334.42,
+      "text": "So the minimum value taken from the low, open or close."
+    },
+    {
+      "start": 4334.42,
+      "end": 4345.5,
+      "text": "And then the close data is taken as 0.25 of the sum of the open plus the high plus the low plus the close."
+    },
+    {
+      "start": 4346.3,
+      "end": 4355.76,
+      "text": "So you can see here where the OHLC data for average bars or Heiken Ashi differs versus regular candles."
+    },
+    {
+      "start": 4356.94,
+      "end": 4365.8,
+      "text": "So the high and low data is not simply the high or low for that asset in that time period."
+    },
+    {
+      "start": 4366.54,
+      "end": 4372.48,
+      "text": "Whether we're looking at hourly, daily, weekly or monthly candles."
+    },
+    {
+      "start": 4373.1,
+      "end": 4382.04,
+      "text": "The high and low data is taken as the maximum for the high of the high, open and close data."
+    },
+    {
+      "start": 4382.04,
+      "end": 4385.44,
+      "text": "And the low is taken as the minimum."
+    },
+    {
+      "start": 4385.96,
+      "end": 4388.86,
+      "text": "So the lowest point of the low, open and close."
+    },
+    {
+      "start": 4389.28,
+      "end": 4396.32,
+      "text": "Then when it comes to the open and close data, they are both worked out as averages."
+    },
+    {
+      "start": 4397.24,
+      "end": 4408.62,
+      "text": "So the open data of the next candle is just the open of the previous bar plus the close of the previous bar divided by two."
+    },
+    {
+      "start": 4409.76,
+      "end": 4421.38,
+      "text": "Then the close of the current bar is the open of the current bar plus the high, low and close of the current bar divided by four."
+    },
+    {
+      "start": 4421.38,
+      "end": 4429.68,
+      "text": "So both the open and close data that is sourced is then averaged."
+    },
+    {
+      "start": 4429.68,
+      "end": 4440.54,
+      "text": "But you can see that the open of a new candle, the data that's being sourced and averaged is data from the previous candle."
+    },
+    {
+      "start": 4440.54,
+      "end": 4452.8,
+      "text": "So what the average bar or Heiken Ashi achieves is a smoother result for the candles."
+    },
+    {
+      "start": 4452.8,
+      "end": 4458.14,
+      "text": "Because all previous days that are referenced are average bars too."
+    },
+    {
+      "start": 4458.14,
+      "end": 4470.2,
+      "text": "Now, also remember that the average bars stay hollow during a predominant uptrend and they're filled in during a predominant downtrend."
+    },
+    {
+      "start": 4470.2,
+      "end": 4493.76,
+      "text": "And when we analyze average bars in terms of price action, it tells us what the dominant trend is, whereas the normal OHLC representation displays or shows us a variation in the candles within a predominant uptrend or downtrend."
+    },
+    {
+      "start": 4493.76,
+      "end": 4506.14,
+      "text": "So the Heiken Ashi average bar analysis is very useful to us in terms of helping us with our timing for entry and exits."
+    },
+    {
+      "start": 4506.14,
+      "end": 4515.54,
+      "text": "In the context of the 20 to 60 day time horizon, it's useful to start by looking at weekly data."
+    },
+    {
+      "start": 4515.54,
+      "end": 4530.12,
+      "text": "So we can see here with an example of XPEL, imagine you are coming into this stock with a fundamental predisposition of bullish in March 2021."
+    },
+    {
+      "start": 4530.12,
+      "end": 4540.8,
+      "text": "So if you look at the weekly candle on the chart at the beginning of March 2021, you can see that there's a big variation there in the data."
+    },
+    {
+      "start": 4540.8,
+      "end": 4548.04,
+      "text": "The range of the range of the candle, the high and the low is $60 for the high."
+    },
+    {
+      "start": 4548.04,
+      "end": 4555.58,
+      "text": "And by just visualizing here, it's probably around $45 for the low."
+    },
+    {
+      "start": 4555.58,
+      "end": 4575.62,
+      "text": "But what you would notice in the history of this stock price using average bars is that when we use weekly data here, we can see that there's only periods of one, two or three weeks with the exception of February and March 2020."
+    },
+    {
+      "start": 4575.62,
+      "end": 4583.3,
+      "text": "There's only periods of one, two or three weeks where there's a predominant downtrend."
+    },
+    {
+      "start": 4583.3,
+      "end": 4595.22,
+      "text": "So this can certainly help us with our timing if we're coming into this stock with a fundamental predisposition of bullish."
+    },
+    {
+      "start": 4595.22,
+      "end": 4604.46,
+      "text": "So if we can accumulate in the second or fourth downtrend, the odds based on historical analysis of average bars are probably in our favor."
+    },
+    {
+      "start": 4604.46,
+      "end": 4619.94,
+      "text": "And then we can move on to the daily data for XPEL and we can take a look at what happens in these periods of predominant downtrend that only seem to last for one, two or three weeks."
+    },
+    {
+      "start": 4619.94,
+      "end": 4640.72,
+      "text": "So if we're sitting around the beginning of March around that time and we look at previous daily data where we have predominant downtrends, the downtrends seem to last only a week or two and we have moves down of around $10 a share."
+    },
+    {
+      "start": 4641.76,
+      "end": 4651.96,
+      "text": "So if you were coming into this stock with a fundamental predisposition of bullish around the beginning or middle of March, what would you be doing?"
+    },
+    {
+      "start": 4652.48,
+      "end": 4661.08,
+      "text": "You'd probably be holding out for purchases of stock, certainly in the low 50s, if not at $50."
+    },
+    {
+      "start": 4661.08,
+      "end": 4679.02,
+      "text": "And if you've got a strong fundamental view based on solid fundamental analysis and it's backed up in the technicals and price action of the stock, you'd feel fairly comfortable about accumulating stock here in the low 50s."
+    },
+    {
+      "start": 4680.08,
+      "end": 4698.42,
+      "text": "Then as the trade develops and turns into a winning position, we get our positive price action, so a positive upward trend of the average bars into April, reaching the mid 60s by the beginning of May."
+    },
+    {
+      "start": 4698.42,
+      "end": 4709.46,
+      "text": "And then we have a downtrend, which could actually present an opportunity for us to pick spots and add to this winning trade."
+    },
+    {
+      "start": 4710.72,
+      "end": 4725.6,
+      "text": "And if we look back at the weekly data and we look at the areas on the chart where we have a predominantly positive uptrend in the average bars, the average bars tend to last between five and 10 weeks."
+    },
+    {
+      "start": 4725.6,
+      "end": 4734.62,
+      "text": "So this type of understanding of the data and the trends in terms of time horizon can actually help us with our exit."
+    },
+    {
+      "start": 4735.36,
+      "end": 4742.92,
+      "text": "And in all probability, we'd be looking to probably exit the position around week 10."
+    },
+    {
+      "start": 4743.92,
+      "end": 4753.38,
+      "text": "So it wouldn't be too much of a stretch to say that given the predominant uptrend and our time horizon of 20 to 60 days,"
+    },
+    {
+      "start": 4753.7,
+      "end": 4762.38,
+      "text": "we probably would have exited this trade based on our fundamental analysis, our catalysts, our timing,"
+    },
+    {
+      "start": 4763.36,
+      "end": 4771.0,
+      "text": "somewhere in the high $70 to $80 range after getting in in the low 50s."
+    },
+    {
+      "start": 4771.46,
+      "end": 4778.14,
+      "text": "Now, of course, there's multiple other examples of average bars, Haiken Ashi analysis."
+    },
+    {
+      "start": 4779.18,
+      "end": 4794.82,
+      "text": "Again, with this stock, Teneco, we're using weekly data first, understanding what happens during predominant uptrends and downtrends and adjusting our timing appraisal accordingly."
+    },
+    {
+      "start": 4794.82,
+      "end": 4803.42,
+      "text": "We then move to daily data, and that helps us pinpoint better entries and exits."
+    },
+    {
+      "start": 4803.42,
+      "end": 4814.3,
+      "text": "Even when we're looking on the short side, not just on the long side, Haiken Ashi average bars obviously can help us as well for short entries."
+    },
+    {
+      "start": 4814.54,
+      "end": 4828.8,
+      "text": "So here we have TAN, the solar ETF in the United States, and if we're coming into this situation with a fundamental predisposition of short,"
+    },
+    {
+      "start": 4829.48,
+      "end": 4838.06,
+      "text": "this is obviously at a sector level, and we would probably much rather be short one of the biggest holdings of the ETF."
+    },
+    {
+      "start": 4838.86,
+      "end": 4845.78,
+      "text": "But we can see at the sector level, the average bar analysis can help us on short entries,"
+    },
+    {
+      "start": 4846.04,
+      "end": 4851.02,
+      "text": "not just for the sector, but also for holdings within that ETF."
+    },
+    {
+      "start": 4851.02,
+      "end": 4859.7,
+      "text": "So for single stocks in the ETF, look at getting really accurate by looking at the daily data in the bigger picture,"
+    },
+    {
+      "start": 4860.2,
+      "end": 4863.56,
+      "text": "and then zooming in into the much shorter term picture."
+    },
+    {
+      "start": 4864.64,
+      "end": 4874.4,
+      "text": "And what we're trying to do here is pinpoint shorts when positive predominant trends in the average bars have been exhausted,"
+    },
+    {
+      "start": 4874.76,
+      "end": 4878.92,
+      "text": "and they're turning into predominant negative trends."
+    },
+    {
+      "start": 4878.92,
+      "end": 4888.46,
+      "text": "And then we're probably looking to cover shorts when we have predominant negative trends that are becoming exhausted,"
+    },
+    {
+      "start": 4888.78,
+      "end": 4894.1,
+      "text": "and they're turning into short-term positive Haiken Ashi or average bar trends."
+    },
+    {
+      "start": 4895.04,
+      "end": 4900.56,
+      "text": "And if you think back to our fundamental analysis when we were looking at shorts,"
+    },
+    {
+      "start": 4900.7,
+      "end": 4909.48,
+      "text": "and think back and remember our short waves of phase one, phase two, phase three, phase four, and phase five,"
+    },
+    {
+      "start": 4910.34,
+      "end": 4916.72,
+      "text": "Haiken Ashi average bars can really help us with our timing in terms of phases for shorts."
+    },
+    {
+      "start": 4917.68,
+      "end": 4927.66,
+      "text": "So another example on the short side here, Beyond Meat, BYND, where we can analyze the daily average bars,"
+    },
+    {
+      "start": 4927.84,
+      "end": 4936.74,
+      "text": "daily Haiken Ashi, and understand what happens from a timing perspective when we get reversals into the positive trends"
+    },
+    {
+      "start": 4936.74,
+      "end": 4943.24,
+      "text": "And how long they last, and we can pick our spots, obviously murried up with the fundamental analysis."
+    },
+    {
+      "start": 4944.12,
+      "end": 4949.68,
+      "text": "We can pick our spots and enter short positions at better times."
+    },
+    {
+      "start": 4950.6,
+      "end": 4962.8,
+      "text": "If we look at another example here, with Uber, imagine yourself coming into a situation here in May, middle of May 2021,"
+    },
+    {
+      "start": 4963.46,
+      "end": 4967.5,
+      "text": "with a fundamental predisposition of bearish."
+    },
+    {
+      "start": 4968.18,
+      "end": 4973.78,
+      "text": "You see the stock breaking a significant support level."
+    },
+    {
+      "start": 4974.68,
+      "end": 4982.22,
+      "text": "Then the predominant negative trend becomes exhausted, around $45, turning into a positive trend."
+    },
+    {
+      "start": 4982.94,
+      "end": 4990.06,
+      "text": "But you know from past data that the positive trend is probably only going to last around 10 trading days"
+    },
+    {
+      "start": 4990.06,
+      "end": 4994.68,
+      "text": "before turning back into a predominantly negative trend."
+    },
+    {
+      "start": 4995.68,
+      "end": 5002.74,
+      "text": "You will be holding off, hanging back, and waiting to get better prices on your short, probably around $50."
+    },
+    {
+      "start": 5003.94,
+      "end": 5007.84,
+      "text": "And then perhaps adding to the short on a break to the downside."
+    },
+    {
+      "start": 5009.0,
+      "end": 5014.7,
+      "text": "Average bars can also help us with ranging stocks as well."
+    },
+    {
+      "start": 5015.24,
+      "end": 5019.28,
+      "text": "So here on the screen we have ALK, Alaska Airlines."
+    },
+    {
+      "start": 5019.98,
+      "end": 5025.18,
+      "text": "If we were coming into this stock with perhaps a fundamental bearish predisposition,"
+    },
+    {
+      "start": 5025.68,
+      "end": 5029.78,
+      "text": "post the COVID-19 recovery rally."
+    },
+    {
+      "start": 5030.48,
+      "end": 5035.14,
+      "text": "And then we see the stock ranging on the average bar analysis, Heiken Ashi."
+    },
+    {
+      "start": 5035.74,
+      "end": 5040.92,
+      "text": "We can obviously zoom in and attempt to pinpoint our entry prices."
+    },
+    {
+      "start": 5042.22,
+      "end": 5045.1,
+      "text": "And we're probably looking to get something on on the short side,"
+    },
+    {
+      "start": 5045.24,
+      "end": 5050.22,
+      "text": "given our fundamental predisposition and our timing appraisal of the average bars."
+    },
+    {
+      "start": 5050.52,
+      "end": 5055.88,
+      "text": "We're probably looking to get something on around $70, or if we can, a little bit higher."
+    },
+    {
+      "start": 5056.58,
+      "end": 5059.34,
+      "text": "And then add to it on a break to the downside."
+    },
+    {
+      "start": 5060.4,
+      "end": 5062.8,
+      "text": "So use the average bar analysis."
+    },
+    {
+      "start": 5063.36,
+      "end": 5067.8,
+      "text": "Obviously, there's multiple examples out there in the market."
+    },
+    {
+      "start": 5068.46,
+      "end": 5074.94,
+      "text": "Go and look at them yourself and start trying to figure out predominant uptrends and downtrends"
+    },
+    {
+      "start": 5074.94,
+      "end": 5077.16,
+      "text": "and how long they actually last."
+    },
+    {
+      "start": 5078.2,
+      "end": 5086.76,
+      "text": "So when they get exhausted and when there's turning points in the overall predominant trend to the upside or downside."
+    },
+    {
+      "start": 5088.06,
+      "end": 5096.7,
+      "text": "So for price action analysis, the Heiken Ashi candlestick charts help us to identify dominant trends."
+    },
+    {
+      "start": 5097.8,
+      "end": 5105.22,
+      "text": "So it basically acts as a price action head check for us versus regular candlestick charts,"
+    },
+    {
+      "start": 5105.44,
+      "end": 5112.04,
+      "text": "where we might actually get some false signals when we're considering both entry and exits."
+    },
+    {
+      "start": 5113.04,
+      "end": 5121.42,
+      "text": "Use the Heiken Ashi average bar analysis in conjunction with the other price action and momentum indicators"
+    },
+    {
+      "start": 5121.42,
+      "end": 5128.68,
+      "text": "mentioned in this video, like the RSI, simple moving averages, exponential moving averages, and MACD."
+    },
+    {
+      "start": 5129.26,
+      "end": 5134.38,
+      "text": "Use it in conjunction with them to get an overall picture of price momentum."
+    },
+    {
+      "start": 5135.58,
+      "end": 5143.98,
+      "text": "Now, let's tie all of this up together for our timing appraisal with both technical analysis and price action."
+    },
+    {
+      "start": 5144.52,
+      "end": 5150.36,
+      "text": "Remember from the previous video when we discussed technical analysis and incorrect timing?"
+    },
+    {
+      "start": 5151.54,
+      "end": 5157.98,
+      "text": "Well, when we're using technical analysis and price action indicators in conjunction with each other,"
+    },
+    {
+      "start": 5158.32,
+      "end": 5160.18,
+      "text": "the same mindset applies."
+    },
+    {
+      "start": 5161.26,
+      "end": 5167.78,
+      "text": "We are 20 to 60-day, predominantly fundamental, long-short portfolio managers."
+    },
+    {
+      "start": 5167.78,
+      "end": 5173.58,
+      "text": "We use both technical analysis and price action indicators for timing only."
+    },
+    {
+      "start": 5174.52,
+      "end": 5184.42,
+      "text": "In your overall trade idea generation process, if you get to the TA and PA stage and think the timing is wrong,"
+    },
+    {
+      "start": 5184.82,
+      "end": 5185.94,
+      "text": "that's totally fine."
+    },
+    {
+      "start": 5186.42,
+      "end": 5188.26,
+      "text": "Just sit back and wait."
+    },
+    {
+      "start": 5188.72,
+      "end": 5191.98,
+      "text": "Stick it on the watch list and just wait for a better entry."
+    },
+    {
+      "start": 5193.06,
+      "end": 5199.54,
+      "text": "And if you're already in a position and the technical analysis and price action indicators,"
+    },
+    {
+      "start": 5200.14,
+      "end": 5206.64,
+      "text": "keep confirming that your fundamental view is correct, and it's a winner, it's a winning position."
+    },
+    {
+      "start": 5207.02,
+      "end": 5210.04,
+      "text": "You're probably going to let the position run."
+    },
+    {
+      "start": 5210.04,
+      "end": 5219.36,
+      "text": "And if you're already in a position, and both the technicals and the price action indicators keep denying your fundamental view,"
+    },
+    {
+      "start": 5219.68,
+      "end": 5225.34,
+      "text": "and you've got a losing position, you're probably going to do best to cut the position."
+    },
+    {
+      "start": 5226.44,
+      "end": 5232.88,
+      "text": "Now, you have to remember that when we're using both technical analysis and price action indicators,"
+    },
+    {
+      "start": 5233.32,
+      "end": 5236.24,
+      "text": "we don't require perfect timing."
+    },
+    {
+      "start": 5237.52,
+      "end": 5245.66,
+      "text": "If you've got a strong fundamental view, and it's backed up by solid fundamental analysis and catalysts,"
+    },
+    {
+      "start": 5245.66,
+      "end": 5250.12,
+      "text": "and the TA and the PA indicators are lined up pretty well,"
+    },
+    {
+      "start": 5250.48,
+      "end": 5251.78,
+      "text": "it doesn't have to be perfect."
+    },
+    {
+      "start": 5252.22,
+      "end": 5253.88,
+      "text": "It's probably a green light."
+    },
+    {
+      "start": 5255.28,
+      "end": 5260.32,
+      "text": "Remember, at the end of the day, we are traders, and we're trying to predict the future,"
+    },
+    {
+      "start": 5260.78,
+      "end": 5263.72,
+      "text": "and we're not reacting to current price."
+    },
+    {
+      "start": 5264.4,
+      "end": 5270.5,
+      "text": "We're trying to predict that in the next 20 to 60 days, things will go in our favor."
+    },
+    {
+      "start": 5271.16,
+      "end": 5274.64,
+      "text": "However, we are not stubborn beings."
+    },
+    {
+      "start": 5276.26,
+      "end": 5280.3,
+      "text": "Stocks will do whatever they want to do, and we can't influence the price."
+    },
+    {
+      "start": 5280.8,
+      "end": 5286.66,
+      "text": "So, we don't fight the technical analysis and the price action of a stock,"
+    },
+    {
+      "start": 5287.08,
+      "end": 5291.42,
+      "text": "and we certainly don't engage in stubborn behavior."
+    },
+    {
+      "start": 5292.54,
+      "end": 5299.58,
+      "text": "We always try to seek to get a position on within 20 days, but if it's not right to do so,"
+    },
+    {
+      "start": 5299.96,
+      "end": 5302.22,
+      "text": "obviously, we do not fight it."
+    },
+    {
+      "start": 5303.12,
+      "end": 5309.88,
+      "text": "Now, when it comes to timing, we can, of course, become more agnostic about timing our positions."
+    },
+    {
+      "start": 5310.6,
+      "end": 5313.76,
+      "text": "This is preventative risk management in itself."
+    },
+    {
+      "start": 5314.44,
+      "end": 5315.66,
+      "text": "So, how do we do this?"
+    },
+    {
+      "start": 5316.12,
+      "end": 5318.72,
+      "text": "Well, we can scale into longs and shorts,"
+    },
+    {
+      "start": 5319.34,
+      "end": 5325.56,
+      "text": "and this is referring to taking partial positions before we put on full positions,"
+    },
+    {
+      "start": 5326.56,
+      "end": 5335.1,
+      "text": "and we use technical analysis and price action in this way to make our executions better and more optimal."
+    },
+    {
+      "start": 5335.76,
+      "end": 5340.94,
+      "text": "Therefore, we are, by default, engaging in preventative risk management."
+    },
+    {
+      "start": 5342.06,
+      "end": 5350.08,
+      "text": "However, in a well-diversified long-short portfolio, this obviously requires trading accounts that are larger."
+    },
+    {
+      "start": 5351.14,
+      "end": 5358.92,
+      "text": "And, by the way, scaling not just into longs and shorts, but also out of positions, applies here as well."
+    },
+    {
+      "start": 5358.92,
+      "end": 5368.4,
+      "text": "However, we can use technical analysis and price action indicators to help us scale out of longs and shorts for our exits."
+    },
+    {
+      "start": 5369.58,
+      "end": 5373.34,
+      "text": "Now, of course, we do have choices here."
+    },
+    {
+      "start": 5373.68,
+      "end": 5384.74,
+      "text": "We can also totally forget altogether about TA and PA and just put trades on immediately, not caring about it at all."
+    },
+    {
+      "start": 5385.16,
+      "end": 5388.18,
+      "text": "However, we definitely would not recommend this."
+    },
+    {
+      "start": 5388.18,
+      "end": 5397.4,
+      "text": "Because we are long-short portfolio managers within the 20- to 60-day time horizon, our timing is important."
+    },
+    {
+      "start": 5398.2,
+      "end": 5403.24,
+      "text": "We are trading the stock price around catalysts within that time horizon."
+    },
+    {
+      "start": 5403.78,
+      "end": 5405.82,
+      "text": "So, we are not investors."
+    },
+    {
+      "start": 5406.08,
+      "end": 5411.34,
+      "text": "We're trading in the 20- to 60-day time horizon, and our timing really does matter."
+    },
+    {
+      "start": 5411.34,
+      "end": 5425.36,
+      "text": "From what we've looked at in the last few videos, when it comes to TA and PA, you can obviously see from the examples that we've been through, you can add a lot of value with your timing."
+    },
+    {
+      "start": 5426.3,
+      "end": 5439.02,
+      "text": "However, we can become more agnostic where our timing becomes less important, i.e., trying to buy at or near the lows and trying to sell at or near highs."
+    },
+    {
+      "start": 5439.52,
+      "end": 5442.62,
+      "text": "And this comes with a change in trade structure."
+    },
+    {
+      "start": 5442.62,
+      "end": 5448.74,
+      "text": "So, we can utilize options structures to become more agnostic in our timing."
+    },
+    {
+      "start": 5448.74,
+      "end": 5463.84,
+      "text": "And there are multiple options structures that allow you to become more agnostic with your timing and therefore place less importance on technical analysis and price action indicators."
+    },
+    {
+      "start": 5463.84,
+      "end": 5481.9,
+      "text": "However, this is well beyond the scope of this video series, the PTM video series, and it can only really be covered in mentoring programs where you're trading with real money under the supervision of an ITPM professional trading mentor."
+    },
+    {
+      "start": 5481.9,
+      "end": 5500.62,
+      "text": "But if you're comfortable with long, short stock portfolios, and you're going to be engaging in technical analysis and price action appraisal in terms of timing, just remember TA and PA are not exact sciences."
+    },
+    {
+      "start": 5500.62,
+      "end": 5517.9,
+      "text": "Like the discipline of trading overall, they are artistic sciences, and used correctly, they can definitely add value over many trades over a long period of time as part of your overall trade idea generation process."
+    },
+    {
+      "start": 5518.42,
+      "end": 5523.3,
+      "text": "Just don't use TA and PA to generate trade idea."
+    },
+    {
+      "start": 5523.7,
+      "end": 5527.06,
+      "text": "That, ladies and gentlemen, is a game for fools."
+    },
+    {
+      "start": 5528.5,
+      "end": 5530.42,
+      "text": "Okay, so that brings us to the end."
+    },
+    {
+      "start": 5530.62,
+      "end": 5541.06,
+      "text": "of our timing section of the PTM video series, let's hop in to the next video and go to the desk for a recap and a rundown."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

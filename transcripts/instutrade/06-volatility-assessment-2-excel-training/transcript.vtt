@@ -1,0 +1,583 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:23.780
+Okay, so we're going to go over to Chris
+again now, and Chris is going to show you
+how to calculate your own expected or
+implied volatility index. So you can do
+this for multiple assets as long as you
+can get the options data. So let's go over
+to Chris, and Chris is going to show you
+how to do that now.
+
+00:00:30.000 --> 00:00:59.980
+In this video, I'm going to take you
+through an example of how you can
+calculate your own implied volatilities
+for any given asset. So the reason why
+looking at implied volatilities is useful
+is because it's our only four
+
+00:00:59.980 --> 00:01:29.960
+looking volatility indicator. And by that
+I mean it doesn't rely on historical price
+data like calculating a distribution of
+returns does or an average shoe range. So
+the way it works is we use a theoretical
+option pricing formula to back out implied
+volatilities from observed option prices
+in the market. Now before we get started,
+I'll make a quick note on the spreadsheet
+that accompanies this video. It's set up
+
+00:01:29.960 --> 00:01:36.960
+so that you can only calculate implied
+volatilities from call options on
+underlying assets that don't pay dividends
+within the lifetime of the option.
+
+00:01:36.960 --> 00:01:52.900
+So in this example, we're going to look at
+options on the S&P 500 to infer forward
+looking volatility for the S&P 500. So
+let's get started by opening up the
+implied vol spreadsheet.
+
+00:01:52.900 --> 00:02:14.900
+So once you open the spreadsheet it should
+look something like this. Now on the left
+hand side we have data inputs and these
+are the cells that we're going to be
+putting data into which the ones that are
+highlighted in light blue are the only
+ones we should need to edit on this
+spreadsheet. All the other cells are
+automated.
+
+00:02:14.900 --> 00:02:40.900
+So when we enter these inputs and an
+observed option price on the market we'll
+end up with an observed option price and a
+theoretical option price and what we do is
+we minimize the difference between the
+observed price and the theoretical price
+by changing the theoretical price towards
+the observed price.
+
+00:02:40.900 --> 00:03:02.900
+And we do that by changing the implied
+volatility in this cell. So the way we get
+our data inputs is through the resources
+section of the spreadsheet and we're
+looking at the S&P 500 in this example. So
+the resources section is set up to be able
+to find US data fairly easily.
+
+00:03:02.900 --> 00:03:26.900
+When you come to do your own implied
+volatility calculations you might want to
+add to this resource section using
+different countries websites. So let's get
+started by opening the CBOE website and
+finding options on the S&P 500.
+
+00:03:26.900 --> 00:03:45.900
+So if we just click on the CBOE link in
+the resources section of the spreadsheet
+and we go to quotes and data hover over
+that and left click on delayed quotes
+classic. We can use just standard delayed
+quotes but sometimes it's a bit
+temperamental so we're going to use
+delayed quotes classic in this example.
+
+00:03:45.900 --> 00:04:04.900
+And we put SPX into the ticker box down
+here and click submit so SPX is the ticker
+for the S&P 500 on the CBOE website.
+
+00:04:04.900 --> 00:04:23.900
+And the first thing we're going to note is
+that the spot price of the underlying
+asset the S&P 500 is displayed at the top
+right of this options data table.
+
+00:04:23.900 --> 00:04:32.900
+So that's 1574.57 and that's one of the
+inputs that we need for our spreadsheet so
+we'll go ahead and put that in now.
+
+00:04:32.900 --> 00:04:40.900
+So 1574.57
+
+00:04:40.900 --> 00:04:41.900
+Yep.
+
+00:04:41.900 --> 00:04:47.900
+And next I'll explain how this table is
+set out.
+
+00:04:47.900 --> 00:05:05.900
+So we're only looking at call options
+remember so we're looking at the left hand
+side of this website of this web page and
+the columns so the calls column under the
+calls column we've got the contract names
+of all the option contracts.
+
+00:05:05.900 --> 00:05:30.900
+So we have the last sale which is the
+price of the option the last sale price
+and we've got volume and open interest
+columns which are indicators of liquidity
+and when we look at options and backing
+out implied volatilities from options we
+want to use a liquid contract because the
+price is more reliable.
+
+00:05:30.900 --> 00:05:53.900
+So as I'm doing this it's the 16th of
+April so I'm going to be looking at
+options in May with an expiry in May so I
+use this middle column to scroll down to
+May and as well as the date so 13th of May
+here it's got the strike price in the
+middle column as well.
+
+00:05:53.900 --> 00:06:12.900
+So we go to a May contract we're going to
+go find a contract that's got decent
+liquidity and has a strike price that is
+near the money so that means a strike
+price listed in the middle column that is
+close to the spot price of the underlying
+asset so the S&P 500.
+
+00:06:12.900 --> 00:06:39.900
+So we go down and we're going to find a
+May call option with a strike price of
+$1,570 so we go down to May $1,570 so this
+one and it's got decent liquidity so we
+click on the contract name on the left
+hand side and open this up and it gives us
+a few more details about this contract.
+
+00:06:39.900 --> 00:06:46.900
+So let's go ahead and put the next piece
+of data into our spreadsheet which is the
+strike price of the option we're looking
+at which is $1,570.
+
+00:06:46.900 --> 00:07:09.900
+So put in $1,570 into the next cell and
+the next input we'll put in is the expiry
+date of the option which is on this page
+that we've just navigated to and that is
+the 3rd of May 2013 as you can see this
+dates in American format.
+
+00:07:09.900 --> 00:07:21.900
+Now my spreadsheet at the moment is set up
+in the UK date format which will be the
+default format that you're supplied with.
+
+00:07:21.900 --> 00:07:42.900
+So I'll input this as 3rd of May 2013 and
+you can see this has automated the number
+of days from today until that date and
+automated the time to maturity in years
+that that represents which is then put
+into the theoretical option price.
+
+00:07:42.900 --> 00:07:57.900
+So before we continue let's point out you
+need to change the format of this cell of
+H5 the date cell to match the date format
+of your system clock.
+
+00:07:57.900 --> 00:08:06.900
+So if you're using American date format on
+your system you need to change the date
+format of this cell to American format.
+
+00:08:06.900 --> 00:08:20.900
+And if you don't the automation of the
+spreadsheet won't work so to change the
+format we right click on the cell go to
+format cells and then change the location
+here and press ok.
+
+00:08:20.900 --> 00:08:24.900
+I'm going to press cancel because mine's
+already set up as the UK format.
+
+00:08:24.900 --> 00:08:32.900
+So the last piece of data that we get from
+the CBOE website is the observed option
+price.
+
+00:08:32.900 --> 00:08:39.900
+So the observed option price was 18.93
+we're going to use the last sale.
+
+00:08:39.900 --> 00:08:41.900
+So 18.93.
+
+00:08:41.900 --> 00:08:46.900
+So we put in 18.93 into cell E10.
+
+00:08:46.900 --> 00:08:57.900
+Now the last piece of data the last input
+we need to calculate our theoretical
+option price is the risk free interest
+rate.
+
+00:08:57.900 --> 00:09:09.900
+So because we're looking at the S&P 500
+we're going to use US Treasury to find a
+risk free rate and we'll use a short term
+bond.
+
+00:09:09.900 --> 00:09:22.900
+So if we click on this link for the risk
+free rate go to the US Treasury website
+and we find a one month yield starting in
+April.
+
+00:09:22.900 --> 00:09:25.900
+So 0.07%.
+
+00:09:25.900 --> 00:09:28.900
+So we enter 0.07%.
+
+00:09:28.900 --> 00:09:34.900
+This cell's already set up to display
+itself in percentage so we just put in
+0.07%.
+
+00:09:34.900 --> 00:09:37.900
+And that's our last piece of data.
+
+00:09:37.900 --> 00:09:43.900
+Now you can see that the theoretical
+option price differs from the observed
+option price.
+
+00:09:43.900 --> 00:09:52.900
+And that's because we're using an implied
+volatility or volatility of 0.1 which was
+the default for the spreadsheet when it
+opened.
+
+00:09:52.900 --> 00:10:06.900
+And what we're going to do is change this
+cell, change the theoretical option price
+by changing the volatility so that we can
+match the observed option price.
+
+00:10:06.900 --> 00:10:12.900
+And we do that by minimizing this cell
+which is just the difference between those
+two.
+
+00:10:12.900 --> 00:10:13.900
+So let's go ahead and do that.
+
+00:10:13.900 --> 00:10:18.900
+So if we navigate to data and then solver
+on the right hand side.
+
+00:10:18.900 --> 00:10:24.900
+Now if you don't already have solver
+installed as a plugin, there's a guide of
+how you can do that in the accompanying
+PDF.
+
+00:10:24.900 --> 00:10:29.900
+So you can go through that, install solver
+and then follow on from here.
+
+00:10:29.900 --> 00:10:31.900
+So let's click on solver.
+
+00:10:31.900 --> 00:10:38.900
+And if you already have solver installed,
+it should come up with the parameters
+already built in.
+
+00:10:38.900 --> 00:10:42.900
+So you don't need to press anything, you
+just click solve and it will work.
+
+00:10:42.900 --> 00:10:46.900
+If not, you'll need to input these cells.
+
+00:10:46.900 --> 00:10:48.900
+So we'll go through it anyway.
+
+00:10:48.900 --> 00:10:56.900
+So what we're doing is we're setting the
+objective which is cell F17 which is the
+difference between the theoretical and
+observed option price.
+
+00:10:56.900 --> 00:11:05.900
+And we're trying to minimize that by
+changing the cell F20 which is the
+volatility.
+
+00:11:05.900 --> 00:11:08.900
+So you can set up that yourself quite
+easily.
+
+00:11:08.900 --> 00:11:11.900
+And then we're going to click solve.
+
+00:11:11.900 --> 00:11:17.900
+And this is telling us, solver results is
+telling us that it's converged to a
+solution.
+
+00:11:17.900 --> 00:11:20.900
+So it's found an implied volatility.
+
+00:11:20.900 --> 00:11:24.900
+Occasionally, solver can be a bit
+temperamental.
+
+00:11:24.900 --> 00:11:33.900
+If it doesn't find a solution and you
+haven't made any other mistakes in the
+spreadsheet, have a go at just changing
+the volatility cell yourself.
+
+00:11:33.900 --> 00:11:37.900
+So this is the only time you should change
+a cell that isn't highlighted in light
+blue.
+
+00:11:37.900 --> 00:11:48.900
+So have a go at changing this volatility
+cell yourself so that this theoretical
+pricing cell just starts to move towards
+the market price.
+
+00:11:48.900 --> 00:11:53.900
+And then give solver another go and
+usually it works a second time around.
+
+00:11:53.900 --> 00:11:55.900
+So we just press ok.
+
+00:11:55.900 --> 00:12:05.900
+So this has given us a volatility of 0.12.
+
+00:12:05.900 --> 00:12:25.900
+Now what this cell represents is a measure
+of annualized volatility that's been
+calculated from an option price that we've
+observed in the market that's forward
+looking by 17 days.
+
+00:12:25.900 --> 00:12:30.900
+And it's scaled it up to annualized the
+implied volatility within that option.
+
+00:12:30.900 --> 00:12:42.900
+And so the first thing we can do is
+compare this to the VIX because the VIX
+gives us a gauge and understanding of the
+volatility of the S&P 500.
+
+00:12:42.900 --> 00:13:03.900
+So if we go to VIX and say the VIX
+volatility on the S&P 500.
+
+00:13:03.900 --> 00:13:10.900
+So this is sitting at 13.96 which is
+fairly close to our 12.2.
+
+00:13:10.900 --> 00:13:18.900
+So if you just times this figure by 100
+then that's what it should give.
+
+00:13:18.900 --> 00:13:25.900
+So 12.2 against 13.6 to get it in terms of
+a percentage.
+
+00:13:25.900 --> 00:13:34.900
+So the reason there's a little bit of a
+discrepancy there is just the way we've
+calculated it compared to the way the VIX
+has calculated it.
+
+00:13:34.900 --> 00:13:41.900
+So we've just used one option price and
+worked out the implied volatility given
+that option price.
+
+00:13:41.900 --> 00:13:56.900
+The VIX uses a more complicated method
+where it averages many different implied
+volatilities given from a ton of different
+options with different strike prices.
+
+00:13:56.900 --> 00:14:05.900
+And also uses a nearer term and a longer
+term option expiry date.
+
+00:14:05.900 --> 00:14:11.900
+And if you want to know a little bit more
+about why this might be lower.
+
+00:14:11.900 --> 00:14:14.900
+Generally this will be lower than the VIX.
+
+00:14:14.900 --> 00:14:20.900
+That's because of something called the
+volatility smile which is mentioned in the
+accompanying PDF.
+
+00:14:20.900 --> 00:14:29.900
+And basically it shows that the implied
+volatility is calculated from options with
+strike prices that are near the money.
+
+00:14:29.900 --> 00:14:32.900
+Are generally lower than those further
+from the money.
+
+00:14:32.900 --> 00:14:38.900
+So when you've got the VIX which is
+calculated using an average of lots of
+different strike prices.
+
+00:14:38.900 --> 00:14:40.900
+It's going to be higher generally.
+
+00:14:40.900 --> 00:14:42.900
+Not by much but a little bit.
+
+00:14:42.900 --> 00:14:48.900
+Than our implied volatility of an option
+on the S&P 500 that's near the money.
+
+00:14:48.900 --> 00:14:51.900
+So let's think about how we're going to
+interpret this a little bit more.
+
+00:14:51.900 --> 00:14:54.900
+We know about standard deviation.
+
+00:14:54.900 --> 00:15:02.900
+So let's change this to a forward looking,
+a monthly forward looking standard
+deviation.
+
+00:15:02.900 --> 00:15:07.900
+So in cell F23 we'll use.
+
+00:15:07.900 --> 00:15:15.900
+We type equals F20 which is our implied
+volatility.
+
+00:15:15.900 --> 00:15:19.900
+Divided by square root.
+
+00:15:19.900 --> 00:15:22.900
+So SQRT brackets 12.
+
+00:15:22.900 --> 00:15:27.900
+So that will give us a monthly standard
+deviation.
+
+00:15:27.900 --> 00:15:30.900
+Calculated from an annualized volatility.
+
+00:15:30.900 --> 00:15:33.900
+And it's monthly because it's using the
+square root of 12.
+
+00:15:33.900 --> 00:15:35.900
+So that's 12 months in a year.
+
+00:15:35.900 --> 00:15:37.900
+So we're finding a monthly standard
+deviation.
+
+00:15:37.900 --> 00:15:43.900
+So if you want to find a 2 month standard
+deviation you just use 6 in these brackets
+here.
+
+00:15:43.900 --> 00:15:45.900
+So we go ahead and press enter.
+
+00:15:45.900 --> 00:15:55.900
+And we'll just format this cell to display
+itself in terms of a percentage.
+
+00:15:55.900 --> 00:15:56.900
+Okay.
+
+00:15:56.900 --> 00:16:04.900
+So this is showing a standard deviation of
+3.52% for forward looking by a month.
+
+00:16:04.900 --> 00:16:13.900
+So what that means is if returns are
+normally distributed.
+
+00:16:13.900 --> 00:16:20.900
+Which is what we consider or what we look
+at when we look at the returns
+distribution of assets.
+
+00:16:20.900 --> 00:16:27.900
+If they're normally distributed we can say
+that 68% of the time within the next
+month.
+
+00:16:27.900 --> 00:16:42.900
+So we would expect the underlying assets
+of the S&P 500 to move by 3.5% up or down
+from the mean movement that it's had
+historically.
+
+00:16:42.900 --> 00:16:47.900
+And as well if you know how a normal
+distribution works we can scale that up.
+
+00:16:47.900 --> 00:17:01.900
+So 95% of the time there's a 95%
+probability that the S&P will move within
+2 times the standard deviation up and down
+within the next month.
+
+00:17:01.900 --> 00:17:04.900
+So that's how we interpret this figure
+here.
+
+00:17:04.900 --> 00:17:12.900
+So you may want to go back to the returns
+distribution video and re-look at how
+normal distributions work.
+
+00:17:12.900 --> 00:17:17.900
+And remind yourself of returns
+distributions in general.
+
+00:17:17.900 --> 00:17:27.900
+And basically what this is allowing us to
+do is to realize our forward looking
+opportunities to trade the market.
+
+00:17:27.900 --> 00:17:34.900
+So as implied volatility goes up we can
+look to make profit from shorter term
+trades.
+
+00:17:34.900 --> 00:17:46.900
+And as it goes down we move more into a
+portfolio management stance and look at
+longer term time horizons.

@@ -1,0 +1,1540 @@
+---
+course: ptm2
+lesson_id: "25"
+title: "Trade Idea Generation - Quantitative Processing 4"
+module: quantitative-idea-generation
+module_title: "Quantitative idea generation"
+duration: 01:51:49
+duration_seconds: 6709.035
+source: "25. Trade Idea Generation ΓÇô Quantitative Processing 4.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  - "Documents/Video 25/EG_Profiles_Longs.xlsx"
+  - "Documents/Video 25/US_Sector_Data.xlsm"
+---
+
+# 25 — Trade Idea Generation - Quantitative Processing 4
+
+Okay, so welcome to video number 25. We will continue now with our trade idea generation process. And we are still in the quantitative phase. So we are continuing going through our quantitative processing. And this is video number four of quant processing.
+
+In the next two videos, we're going to be looking at long ideas and short ideas and the mechanics of the quant. So let's start with the mechanics of long trade ideas. Now, just to put everything into perspective, so you understand exactly the entire process and where everything fits in, we have our leading indicator leading indicator dashboard initially, and this was for establishing a portfolio bias. So we have our US leading indicators. So US money markets, US surveys, and US cyclical commodity prices, denominated in US dollars. And then we also have our international leading indicators. So international money markets, international surveys, and international cyclical commodity prices. So this is our macroeconomic leading indicator dashboard. And our macro work that we do as traders is to establish our portfolio bias. So we covered an entire section in the PTM video series on macroeconomics, and how to establish that portfolio bias. We also covered foundations of portfolio bias.
+
+We covered Foundations of Portfolio Management with Chris Quill to introduce you to concepts that are required in order for you to appreciate why professional traders use process in the way that we do.
+
+We covered the fundamentals that pro traders focus on also in the quantitative phase at the microeconomic sector and stock level when generating potential trade ideas and introduce you to some new ways of thinking about those fundamentals.
+
+So, things are starting to come together in the overall trade idea generation process.
+
+So, in the previous section, throughout, when we were processing quant fundamentals, we assumed that in the background, we had already been through our macroeconomic processing and we had established a macroeconomic view.
+
+And at any one moment in time, in the future, when you are processing in the quant phase, you will have a macro view that's already in place and you will have already established a portfolio bias.
+
+Here, we are going to assume that you have recognized that the world is in a cyclical upswing, that you are forecasting real GDP expansion with Fed target inflation intact and that your portfolio bias is net long and you want to be aggressively long growth stocks in your portfolio.
+
+Now, of course, this will change over time.
+
+However, at this stage, we need to make an assumption here in order to continue demonstrating how the process actually works.
+
+So, we are going to assume that we want to have a net long bias in the portfolio and what we are going to be concentrating on in this video is earnings growth and, specifically, earnings growth profiles.
+
+So, we are going to have a net long bias in the portfolio.
+
+So, here we have our quantitative and qualitative dashboard, which is our microeconomic filtering process in both quantitative and qualitative metrics when we are generating trade ideas.
+
+So, we are marrying up the macroeconomics and the microeconomics to generate potential trade ideas and you will be able to use the macro and the micro, so the quantitative and qualitative dashboards going forward as process checklists throughout your trade idea generation processes.
+
+So, now, as mentioned, we are still at this stage in the quantitative phase and we will be looking now in this video at the actual mechanics of how you go about in filtering the data and essentially drilling down throughout the US stock market to get potential long ideas.
+
+So, we are going to be looking at best practices to isolate positive outliers.
+
+Now, also included in this video is going to be a demonstration from Chris Quill with an Excel lesson on how to implement these processes both practically and efficiently.
+
+So, when you are doing this yourself, you can go through the processes and get to very quick answers in identifying positive outliers.
+
+Now, never forget, in the background, in your minds, you have to always be thinking of the overall pro trader systematic framework.
+
+So, again, we are split into two areas here, the theory and the implementation of where we are right now is in the quantitative processing phase of fundamentals.
+
+We will, of course, come on to the qualitative phase later and qualitative processes.
+
+But just remember for the moment, the overall pro trader systematic framework and where we are sitting right now in fundamentals.
+
+It is the most important part of the trade idea generation process.
+
+And if you recall, pro traders are putting a 80% to 90% weighting on the importance and the amount of work that they're doing split between fundamentals and technicals or timing.
+
+So, timing comes next.
+
+So, timing comes next, but it is only 10% to 20% of our overall work and importance of the overall process.
+
+So, fundamentals are the most important, 80% to 90%.
+
+But both fundamentals and timing have to be seen within the restrictive parameters of opportunity set and volatility.
+
+What do we want as traders?
+
+We want the biggest amount of opportunity set or amount of stocks possible.
+
+And we, of course, want volatility.
+
+Volatility is a trader's best friend and a portfolio manager's worst enemy.
+
+You will have learned this in the IPLT video series.
+
+If you haven't taken the IPLT video series, I would encourage you to do so because this is how everything fits together.
+
+So, our theory part of the overall pro trader systematic process is essentially the research and work that we are doing mostly on fundamentals to generate trade ideas within the parameters of volatility and opportunity set.
+
+And, of course, once we generate a trade idea, a trade idea then becomes a real position where we are taking a real money position in our trading accounts.
+
+So, the second stage of the overall pro trader systematic framework is when we actually implement our ideas that have been generated by work and research.
+
+And when we take positions off, they're either going to be winners or losers and we're going to generate an overall track record and we're going to have trader metrics or statistics as to how effective we are as traders.
+
+Now, for this video, we are in the bottom-up fundamental area in the quantitative bottom-up phase.
+
+So, quantitative bottom-up process.
+
+We are obtaining micro views based on fundamentals.
+
+So, we're making this assumption that we have our long, our net long portfolio bias in the background and we are going to be looking at identifying potential long ideas based on earnings growth profiles.
+
+In later videos in the PTM video series, so later within the trade idea generation process, we will be looking, obviously, at qualitative processes, which are the numbers and the qualitative information with a company or a stock behind the quad.
+
+So, what is behind the quad?
+
+So, what is behind the quad?
+
+What is behind earnings growth?
+
+What is behind revenue growth?
+
+What is behind valuation?
+
+What is behind valuation?
+
+That is another level that's deeper in our work that we will be covering later.
+
+But for now, we're covering earnings growth to make sure that when you're processing, you're doing all the right things and not getting into bad habits.
+
+So, over the years, we've seen this time and time again at ITPM, even from students who have gone through and understood all of our teachings and understood all of our processes, but they always continue to look for the shortcuts.
+
+The shortcuts are bad habits, guys.
+
+So, one of the worst habits that you can possibly have, even if you have the right information and understand everything that ITPM is teaching you.
+
+One of the worst habits is going through a quantitative process where you're attempting to do box ticking exercises, such as looking at earnings growth and implicitly making the statement through your actions that you've found a stock that has high earnings growth and a high price earnings ratio relative to its peer group.
+
+And then you miss all of the extra work.
+
+You miss all the interpretation.
+
+And then you believe that because you've done that, you've just rearranged some data and information in a spreadsheet that it becomes an automatic trade idea.
+
+This is wrong.
+
+You don't know anything about the stock.
+
+You don't know anything else about it.
+
+You know nothing at this stage.
+
+So, if you go and put a position on, when you've done that work, you're going to have absolutely no conviction in your position and the idea is incomplete.
+
+It's way incomplete.
+
+So, it is far at this stage, far from being an actual trade idea.
+
+So, this is wrong, guys.
+
+Please do not do this.
+
+You're looking for shortcuts.
+
+This is the lazy retail trader default situation where you're thinking that if you rearrange the data in a spreadsheet, you just filter for high earnings growth at high PE, that the stock that's at the top of the table becomes an automatic lock.
+
+It obviously doesn't.
+
+It obviously doesn't.
+
+There's a lot more work to do.
+
+The next bad habit here is only looking at familiar and comfortable blue chip names that you've heard of in the media that are very large market cap, which essentially have low volatility.
+
+So, they offer low risk and therefore low opportunity.
+
+So, you end up being invested in a market cap space, which is too high.
+
+So, the risk reward or the opportunity is not skewed in your favor.
+
+So, it's time to start thinking of earnings growth in the context of market cap.
+
+So, in the context of mega cap market cap stocks, large cap market cap stocks, mid cap and small cap.
+
+So, the absolute number for earnings growth absolutely matters to traders.
+
+So, imagine for a moment you're going through your filtering processes and you find a large cap stock within a sector that you know, you've heard of the company before.
+
+So, naturally, for some reason, people tend to gravitate to familiarity.
+
+So, imagine you're in this situation and you have a large cap stock in a sector that you recognize and it's outperforming its peer group, but it has 6% earnings growth.
+
+The absolute number is still very low.
+
+Absolute earnings growth of 6% for a trader is just boring.
+
+Now, of course, it could be an investment for the long term, but we are traders.
+
+A stock that is a large cap stock with only 6% earnings growth to us is not a trade.
+
+It is not a trade with a one to three month time horizon.
+
+You need earnings growth with catalysts that will move the price in a meaningful way in the next one to three months, 20 to 60 trading days.
+
+Where is this more likely to happen in the stock market?
+
+It's much more likely in the mid cap space.
+
+This is where we're going to find a large opportunity set with volatile outperformers relative to the sector with high earnings growth.
+
+So, with, say, 30% plus earnings growth, and they can potentially beat to the upside in a meaningful way with multiple catalysts in between.
+
+So, you have to stay away from these two bad habits when you're processing, looking for potential long trade ideas.
+
+Stay away from the bad habit of only box ticking for earnings growth and PE and just taking high numbers and then thinking that automatically becomes a trade idea.
+
+That's wrong.
+
+You have to do a lot more work than that.
+
+Stay away from the next bad habit, which is looking only at comfortable, familiar blue chip names that have low volatility.
+
+You need to get into the good habits of a trader.
+
+Good habits of a trader, please.
+
+So, let's start thinking here about market cap as a filter within the mechanics of potential long trade ideas.
+
+A mid cap that has a market capitalization of, say, $5 billion has more potential to double and double quickly than, say, a mega cap that has a $40 billion plus market capitalization.
+
+As traders, we would much rather be long a mid cap stock that has a $5 billion market capitalization with, say, 30% plus earnings growth for the next year and the year after versus being long a $50 billion mega cap stock that only has 12% earnings growth.
+
+For example, for example, for the next year and the year after.
+
+The $5 billion market cap stock, the mid cap, has a lot more potential upside than the mega cap stock at $50 billion.
+
+So, $5 billion with, say, 30% plus earnings growth has way more potential upside in a quicker period of time than the mega cap stock, the $50 billion stock with, say, 12% earnings growth.
+
+Remember, in the stock market, money likes growth and dislikes a slowdown in growth and even worse, a contraction.
+
+So, as traders, when we are going through the mechanics of identifying potential long trade ideas, we are naturally going to gravitate towards growth and volatility.
+
+Why?
+
+Because we need growth and we need the money and the market on our side and they like growth.
+
+That will drive price to the upside.
+
+Additionally, we want volatility.
+
+We want volatility.
+
+We want to be operating where we have volatility and therefore risk and opportunity that provides us with the chance to make outsized returns.
+
+So, in the US stock market, there are actually definitions for market capitalization.
+
+Micro caps in the US are less than $1 billion market cap.
+
+Small caps in the US are defined as market caps between $1 billion and $3 billion.
+
+Mid caps in the US are defined as having market caps between $3 billion and $10 billion.
+
+And mega caps are defined as any stock that has a market capitalization of $40 billion and above.
+
+So, because we are traders and not investors, you have to start thinking in terms of your processes about what you want to be long and what you want to be short.
+
+And therefore, you are going to naturally gravitate to certain areas of the market.
+
+With your long ideas, you need to start concentrating on the $3 billion to $10 billion mid cap space.
+
+And for your short ideas, you need to concentrate on the $20 billion plus market cap space.
+
+So, within large caps and within mega caps.
+
+Why do we do this as traders?
+
+Well, because we like earnings growth and we like volatility.
+
+And in the mid cap space, earnings growth is generally greater than in large and mega caps.
+
+So, you have to start using market capitalization as a filter as well as price earnings ratio, earnings growth and peg ratio.
+
+And really, what you're actually doing here is you're using volatility as a filter.
+
+So, the opportunity and risk of a potential idea.
+
+And the mid cap space is ideal for the 20 to 60 day time horizon in terms of volatility.
+
+You will have learnt this in the IPLT video series if you've been through that.
+
+But also, in the mid cap space, the companies themselves, their business models are actually proven.
+
+So, if you ask yourself the question, well, why don't we look at small caps and micro caps?
+
+Well, the small caps and micro caps in terms of the evolution of their business models, the vast majority of them, their business models are not yet proven.
+
+So, mid caps that possibly used to be small caps or micro caps have now grown to become mid caps.
+
+And in the mid cap space, their business models are proven and the companies are still in the growth phase.
+
+So, it's the best of both worlds.
+
+We get the growth and we get the volatility and we also get predictable, proven business models.
+
+So, there's not as much noise as in small caps and micro caps.
+
+We actually have meaningful fundamentals that we can understand and do work on.
+
+Now, when we are going through our mechanical processing of the quant and we're identifying positive outliers in the mid cap space, we are always looking first, as we've mentioned in previous videos, at price earnings ratio and earnings growth percentage.
+
+Earnings growth is usually, but not in all cases, the most important factor and is going to drive high price earnings ratio and PEG ratio.
+
+Earnings growth will most of the time drive valuation.
+
+So, when you're going through your quant processing phase, you're going to find a lot of the time that when earnings growth is high, this usually means that the market is willing to pay a premium for that growth.
+
+And you will see this as evidenced by a high PE and PEG ratio.
+
+Now, this is a best practice identification process when we're looking for the classic long stock setup.
+
+What's up?
+
+So, when we're looking at growth names, of course, there are other types of long ideas for different types of market conditions and portfolio bias.
+
+But when you're learning and you're setting out on the journey of learning how to identify trade ideas and potential longs, it's important that you first learn the classic long idea, bread and butter identification process or setup.
+
+We are going to look later.
+
+We are going to look later as we go through the trade idea generation process.
+
+We're going to look later at different types of longs as well.
+
+But for now, the most important thing is to learn the bread and butter, the majority default long growth identification process.
+
+And as a reminder, we are going where the juice is, where the juice in the market exists because we are traders.
+
+We look at the US stock market and we have 2200 plus available stocks to us to potentially generate in terms of trade ideas and end up taking positions in.
+
+We have different types of sectors which fall into the categories of cyclicals and defenses.
+
+And we have different types of stock dynamics, different types of stocks.
+
+We have growth stocks.
+
+We have X growth stocks.
+
+And we also have value stocks.
+
+As traders, we are going to lean and be attracted to, on the long side, growth stocks naturally.
+
+And not only just growth stocks, but stocks that provide us with opportunity, with upside and outsized returns.
+
+So we are going to gravitate towards stocks that are positive outliers in the sector.
+
+So they're going to outperform the sector and outperform the market in a positive GDP environment.
+
+Now we do have a download that accompanies this video.
+
+If you go to the downloads area, you'll find the downloaded file, earnings growth profiles for longs.
+
+Inside the file, once you've downloaded it, you're going to see in there the earnings growth profiles that we look at through a long lens.
+
+And we're going to look at these through the rest of the video now.
+
+But first and very quickly, you have to understand the valuation backdrop, which is the ideal setup in addition to earnings growth long profiles that we look for.
+
+So if you think about price earnings ratios and you think of the first period and the second period.
+
+So the first period being the current year and the second period being next year.
+
+So we have PE1 and we have PE2 and PE1 is simply the current stock price of the stock divided by the forward estimate of EPS for the current year.
+
+And PE2 is the current stock price divided by forward looking EPS for the following year, next year.
+
+So the ideal setup that we want to see from a stock is obviously to see EPS growing.
+
+So in the second year, if we divide the current stock price with EPS of the second year, we're going to get a lower PE ratio than the first year because we're dividing by a higher number.
+
+So the EPS is higher in period 2, therefore using the same stock price for period 1 and period 2, the PE ratio in period 2 is going to be lower than period 1.
+
+Additionally, what we want to see is in both periods, the PE ratio for the stock is higher than the PE ratio for the sector.
+
+Now, how do we work out the sector PE ratio?
+
+Well, we need a mean average EPS estimate for the sector.
+
+And we do this by adding up all of the EPS numbers in each period, PE1 and PE2, and then dividing by the amount of stocks in the sector.
+
+When we see in both periods that we have a higher PE premium to the sector from the stock, it means we have confirmation of the valuation that the market is pricing a premium of the stock in valuation terms versus the sector.
+
+This gives us evidence that the market likes the stock and is prepared to pay for the growth and pay a premium to the sector.
+
+What you will also notice is that the PE ratio in period 2 for the sector is lower than in period 1, which means the average earnings per share of the sector is increasing from period 1 to period 2.
+
+Earnings per share is increasing for the stock as well over the 2 periods, but the stock trades on a premium to the sector for both periods.
+
+So, this is the ideal valuation backdrop when we're processing, looking for long ideas when we're doing our quant processing.
+
+So, we have a stock in the sector that is trading in period 1 and period 2 on a premium to the sector, and it has higher EPS in period 2 versus period 1.
+
+Now, in tandem with this, the ideal situation when we're doing our quant processing and looking for long ideas, the ideal setup is not only to have a PE premium on the stock versus the sector in period 1 and period 2, where we have EPS going higher, what we also want is the ideal earnings growth setup.
+
+So, we have our two periods, earnings growth 1, which is the percentage increase in EPS from period 0 to period 1.
+
+So, EG1 percentage, the percentage increase in EPS from last year to current year.
+
+So, EG0, last year's EPS that is reported, and the percentage increase to period 1, which is an EPS forward-looking estimate, and the percentage increase from 0, last year to period 1.
+
+And what we want to see from EG1 percentage is that the company's earnings per share is growing at a faster rate than the sector earnings growth percentage increase rate.
+
+So, you'll also notice here as well that the sector is growing positively, so the earnings growth with the sector average is actually growing as well.
+
+So, in an ideal backdrop, what we want to see is that the sector earnings growth is growing faster in EG2 versus EG1.
+
+And then when you have a look at the stock itself, you want to see in earnings growth 2 that the rate of growth for the stock is faster in earnings growth 2 versus earnings growth 1.
+
+But it's also higher than the sector rate of growth in EG2 period.
+
+So, the earnings growth for the stock is faster than the sector in both periods, but for the stock itself, it is faster in the second period versus the first period.
+
+And what we call this, when we just look at the stock itself, so in absolute terms, we call it sequentially positive earnings growth momentum.
+
+And when we look at it in comparison relative to the sector, we call it sequentially positive above sector average earnings growth momentum.
+
+The easiest way to think of this is that the stock, the company itself, its earnings are growing faster than the sector in both periods.
+
+And in period 2, the rate of increase for the company itself is faster in period 2 versus period 1.
+
+So, we have earnings growth momentum.
+
+So, this is the ideal scenario that we are looking for for our earnings growth profile for long trade ideas with the backdrop of the ideal setup for valuation for price earnings ratio.
+
+Now, there are obviously other earnings growth profiles that are available to all traders and indeed all investors.
+
+Now, we are going to look at 10 different earnings growth profiles in absolute and relative terms to the sector.
+
+And it's just important for clarity purposes to understand that as traders, what we are really interested in from a momentum perspective, because we're not investors, we're not looking at holding on to positions for years.
+
+We're looking at 20 to 60-day time horizon, and we need momentum.
+
+So, when we're looking at profiles, earnings growth profiles, through a long idea lens, a long idea processing lens, what we are interested in, in the first place, is having positive EPS.
+
+And then on top of that, we want positive earnings growth.
+
+And then on top of that, we want positive earnings growth.
+
+Now, we're going to look at 10 cases here, where we look at different earnings growth profiles, both in absolute and relative terms.
+
+Eight of them, we have positive EPS.
+
+So, we can have positive EPS, and we can have negative EPS.
+
+So, negative is when the company is loss-making.
+
+Positive is when the company is making profits. negative EPS.
+
+And then on top of that, we are looking for evidence of earnings growth percentage momentum.
+
+So, we have our first case of an earnings growth profile.
+
+This is the one we have looked at already, which is the sequentially positive earnings growth momentum, the ideal scenario.
+
+So, we have in the first period, current year, forward-looking estimates of EPS.
+
+We have positive EPS, we have positive EPS, and we have earnings growth above sector average in the first period.
+
+In the second period, we have more positive earnings growth than in the first period.
+
+And we are above the sector average, again, in period two.
+
+So, this is the ideal scenario.
+
+The next best thing is case number two, where we have, again, the companies making money.
+
+We have positive EPS, but we have positive above sector average earnings growth for EG1.
+
+And then in period two, EG2, we have positive earnings growth for the company that's the same or around the same level as it was in period one.
+
+But again, we are above the sector average even in period two.
+
+And the next best earnings growth profile after that is our case number three, which is positive earnings growth percentage that is above sector average in period one.
+
+So, yes, of course, the company is making money, we're making profits, and the earnings growth in EG1 is above sector average.
+
+And in the second period, the earnings growth percentage for the company itself is less positive than in the first period, but it's still above sector average.
+
+Now, these are our three most favourite earnings growth profiles when we are looking for logs.
+
+Because what it does is it provides us with evidence that the market likes the stock better than the sector from a valuation perspective.
+
+So money is liking the stock, so money is liking the stock, so we have the market on our side.
+
+And in the background, we have evidence of either earnings growth momentum that's sequentially positive, or positive EPS growth that is higher than the sector.
+
+So the valuation and the earnings growth is supportive that the market likes the stock better than the sector.
+
+And it's important to remember here, just so there's no confusion.
+
+The PE profile that is ideal is still intact, even in case number two and case number three.
+
+Because for example, in case number two, where in period one, we have positive above sector average earnings growth.
+
+So what we're looking at is a percentage number, and then a percentage number again in the second period.
+
+So even though the EPS growth is positive and the same in percentage terms, the EPS itself is still going higher.
+
+Which means the second period PE ratio using today's stock price will still be lower than period one.
+
+Now, once we start getting out of the top three earnings growth profile characteristics, we start to struggle as traders to justify why we would have these positions fundamentally.
+
+Why we would even generate them as an idea, even to begin with.
+
+So let's have a look at case number four, five and six.
+
+So case number four, positive EPS, that's at the sector average in both periods.
+
+Well, in that situation, by default, we would probably have the opportunity cost here to simply own the sector.
+
+And we're looking at this through a long idea lens.
+
+As traders, we obviously want better than this.
+
+We can go to multiple other sectors and get sequentially positive earnings growth momentum in case one.
+
+Or even get earnings growth profiles from case number two and case number three.
+
+So case number four, we can do better than this.
+
+Why would we want to do that as traders when we can go into other sectors and we can find case number one, two and three, where we have better fundamentals for a long idea.
+
+Case number five is positive EPS growth that is below sector average in period one.
+
+And in period two, positive EPS growth that is at or above the sector average.
+
+Even in this situation, we have opportunity cost to simply owning the sector because in the first period of the current year, forward looking EPS growth forecasts are below sector average.
+
+Again, we obviously want better than this case.
+
+And in case number six, in period one, we have positive EPS growth that is below sector average.
+
+And then in the second period, we have positive EPS growth, but that is below sector average again.
+
+So even worse, we have a very, very strong relative opportunity cost to simply own the sector here.
+
+Again, we want better than that case.
+
+So let's have a look at these earnings growth profiles visually.
+
+We've already seen the first one, our first case, which is sequentially positive above sector average earnings growth momentum.
+
+With our PE backdrop, our valuation backdrop, this is the ideal setup fundamentally when we are long idea processing as traders.
+
+Next up was our second case where we have positive earnings growth, so positive earnings growth percentage in EG1.
+
+So in period one, that is higher than the sector average.
+
+And then in period two, for the stock itself, we have the same level or around the same level of earnings growth percentage for the stock as in period one.
+
+But it's still higher than the sector average.
+
+And notice as well, that the sector average is going up.
+
+So in all of these cases, we have a sector tailwind.
+
+And remember, in the background, we have a positive GDP environment.
+
+Let's have a look at our third case.
+
+Our third case is where we have in the first period, the stock having higher earnings growth.
+
+In percentage terms than the sector.
+
+And of course, the sector is positive earnings growth percentage as well.
+
+And then in the second period, the stock has lower earnings growth, but still positive and still higher than the sector earnings growth, even though the sector earnings growth is positive as well.
+
+And the sector earnings growth is higher than in the first period, which means again, we have a sector earnings growth tailwind.
+
+And we have positive earnings growth that's higher for both periods for the stock itself.
+
+Now, once we start moving out away from these types of profiles, this is where things start to become non-optimal for traders.
+
+So this is our case number four, where we have positive earnings growth for the stock in both periods.
+
+But it's at all around the sector average.
+
+And I've purposely put on this chart in the second period, a slightly higher bar for the stock in terms of EG2 percentage versus the sector EG2 percentage.
+
+You'll see that the sector comes in at 16% and the earnings growth profile for the stock in period two comes in at 17%.
+
+A 1% difference really is no difference.
+
+It's basically the same.
+
+So when we have this type of situation, it's not ideal.
+
+We'd be probably better off on a risk adjusted basis, just owning the sector.
+
+And when we're looking for long ideas to potentially go into our portfolio, our job as traders is not to own the sector.
+
+Our job as traders is to do way better in our returns than the sector average.
+
+We are seeking here to identify positive outliers in the sector.
+
+Next up is our fifth case, where in period one, we have positive earnings growth, but it's below the sector average.
+
+And then in the second period, positive earnings growth, that's either at or above the sector average.
+
+And on the screen here, we've depicted it as above sector average.
+
+So in this scenario, yes, over a period of two years, we do get a swing in EPS growth from the stock.
+
+That's more positive in the second period than in the first period.
+
+And yes, it's higher than the sector in the second period, but it's lower in the first period.
+
+So over a two year period, the earnings growth of the stock relative to the sector is pretty much the same.
+
+This is not an ideal situation for traders.
+
+Again, on a risk adjusted basis, we would probably be better off just owning the sector for a long time.
+
+But as traders, that is not our job.
+
+We're looking for positive outliers and we're looking to crush our returns.
+
+Next up is our case number six, where for both periods, the earnings growth for the stock is below the sector average, even though the earnings growth is positive in both periods.
+
+And this is just not anywhere near ideal for us at all.
+
+We'd be way better off just owning the sector.
+
+And again, that is not our job.
+
+So these are our first six earnings growth profiles, but we're looking at them through a long idea processing lens.
+
+Now let's have a look at our next four, which we split up into two parts.
+
+So seven and eight, case number seven and eight, we have negative earnings growth, but we still have positive EPS.
+
+So the company is loss making in the case number nine and case number 10.
+
+In cases number seven and eight, EPS is still positive, but there's negative earnings growth in the first period.
+
+So let's start with case number seven.
+
+We have positive EPS, but we have negative earnings growth and it's below sector average.
+
+In the second period, we have positive earnings growth and it's below sector average.
+
+Obviously not optimal for traders.
+
+We have opportunity cost to simply owning the sector.
+
+In case number eight, we have positive EPS, but we have like in case number seven, we have negative earnings growth.
+
+That's below the sector average in period one.
+
+But in period two, we have positive earnings growth that is either at or above the sector average.
+
+Now, how do we characterize this type of earnings growth profile?
+
+Well, we characterize this as what we call in the industry a turnaround story.
+
+And for traders, because of the swing, the magnitude of the swing from negative earnings growth to positive earnings growth, being above the sector average in the second period, but coming from below the sector average in the first period, the magnitude of that move gets our attention.
+
+So this could be worth looking at a turnaround story as a different type of trade for our portfolio versus the classic long setup.
+
+So this is a different type of setup that as traders, we could look at.
+
+Our next case, case number nine, is also a turnaround story, and it has even bigger magnitude move, because in this situation, the company is loss-making to begin with in period one.
+
+And in EG1, they have negative earnings growth, that's below the sector average.
+
+And then moving into period two, they have the biggest swing from negative EPS and negative earnings growth, so loss-making and negative earnings growth below sector average, to having positive earnings growth above the sector average.
+
+So this is a very big move in EPS.
+
+This is the widest move we can have.
+
+It's another turnaround story.
+
+And for traders, it may be worth looking at, again, as a different type of trade for the portfolio.
+
+But these types of EPS growth profiles, case number eight and case number nine, the turnaround stories, it does come with a caveat.
+
+It is very opportunistic and very dangerous at the same time.
+
+So it's high risk, high reward, and high risk, potential high loss.
+
+And then we have our tenth case, which is where in period one, the company has negative EPS, the company is losing money, but they also have negative earnings growth.
+
+So that's below sector average, and then in the second period, we essentially have the same situation.
+
+But the company gets either at or below sector average earnings growth.
+
+So negative earnings growth in period two, like in period one, but in the second period, it's either at or below the sector average.
+
+This just isn't worth looking at at all.
+
+Now, from a classic kind of portfolio management perspective, this is the type of earnings growth profile that could provide investors with a hedge to a high quality long idea in the same sector.
+
+However, we are not investors and we are not in the hedging game.
+
+We want to be, as traders, long, great stocks that go up a lot.
+
+And we want to be short, terrible, crappy stocks that go down a lot.
+
+We always should be looking to optimize.
+
+So we do not go into positions, into long positions, and then put short hedges against them.
+
+We don't need them because, as traders, we should be always looking for shorts that are actually going down, looking for bad stocks.
+
+So we'll learn about this in the next video.
+
+We want to be keeping volatility high in the portfolio and correlation as low as possible.
+
+And we want to be avoiding hedges wherever possible.
+
+We would much rather be short cross sector than intrasector and shorting stuff just for the sake of shorting it to have a hedge.
+
+And shorting something in the same sector just because it's in the same sector and it looks bad on paper isn't the way we want to go.
+
+We would much rather be cross sector and shorting genuinely bad stocks that are going to go down rather than looking for a generic hedge in the same sector.
+
+And when looking for shorts, we should be looking at much higher market cap.
+
+And as mentioned, more of this will come later in the next video.
+
+Now let's have a look at cases 7, 8, 9 and 10 visually so we fully understand them.
+
+Case number 7, which is our negative earnings growth.
+
+Earnings growth.
+
+That's below sector average in the first period.
+
+But remember, this case still has positive EPS.
+
+So we have the negative below sector average earnings growth in period one.
+
+And then in period two for the stock, we have positive earnings growth percentage, but it's below the sector average.
+
+In this situation, this type of earnings growth profile, when we are processing in our quant for longs, is pretty useless to us as traders.
+
+We are not optimizing.
+
+Our next case is case number 8, which is our first turnaround story, where again, this company has positive EPS.
+
+But in the first period, they have negative earnings growth.
+
+That's below the sector average.
+
+Then in the second period, they have positive earnings growth.
+
+That's around the sector average.
+
+So what's happening to this company is that they're having a year where their earnings growth is negative.
+
+And then they're turning it around and it's going positive.
+
+And it's forecasted to be somewhere around the sector average in the second period, year two.
+
+We would define this as a turnaround story.
+
+Now, our next case, case number nine, is our turnaround story on steroids.
+
+So it's our turbo turnaround story.
+
+This is the earnings growth profile where the company is actually loss making.
+
+They have negative EPS and they have negative earnings growth that's below sector average in the first period.
+
+And then in the second period, they have a massive turnaround in EPS that goes from negative EPS to positive EPS.
+
+And they have extremely high positive earnings growth that's way above the sector average.
+
+So these turnaround stories, case number eight and case number nine, because of the magnitude of these moves in earnings growth, they do get our attention.
+
+And they could be quite interesting to us as traders as different types of long earnings growth profiles that we could potentially have in our portfolio to diversify our earnings growth profiles and to diversify the types of long trades that we have in the portfolio.
+
+We will be discussing this in subsequent videos further in the video series.
+
+Next up is our case number 10, where again, like case number seven, this is pretty useless to us.
+
+But in this situation, the company is loss making.
+
+So they have negative EPS in the first period.
+
+Their earnings growth is negative and below the sector average.
+
+And in the second period, their earnings growth is negative and it's either at or below the sector average.
+
+In this situation, the stock may look like a short versus a long idea in the same sector.
+
+But we want to move away as much as possible from having interest sector spread trades on within the portfolio.
+
+We would much rather go to another sector and find a genuinely terrible crappy stock that's going to go down.
+
+So we get the cross sector element in our portfolio in terms of the overall risk of the portfolio.
+
+So these are our 10 earnings growth profiles that we look at and we take actions on to optimize as traders.
+
+In this video, we've looked at the mechanics of long trade ideas.
+
+In the next video, we'll be looking at the mechanics of short trade ideas.
+
+But let's close the loop here on long trade ideas.
+
+We always want to be optimizing and we want to be making sure that we have valuation and earnings growth that is evident that the market likes the stock that we're looking at when we're attempting to identify positive outliers in the sector.
+
+So if you think back to the tables that we looked at in previous videos where we mapped out an entire sector and we had all of our metrics that we look at in the spreadsheet where we had price earnings ratio, earnings growth and we had peg ratio and market capitalization.
+
+Now, for long ideas, we will have a market capitalization filter.
+
+We will always lean towards mid caps.
+
+We are looking in that $3 to $10 billion market cap space.
+
+What we will also filter for is what we filter for for long ideas in our first step, like we did in previous videos.
+
+First, we will filter for PE and we will then filter for earnings growth both in period one and in period two.
+
+And what are we looking for in the ideal situation?
+
+We are looking for PE on a premium to the sector in period one and then PE on a premium to the sector in period two.
+
+But the PE is lower in period two than in period one, both for the stock and both for the sector.
+
+For both the stock and the sector, this is evidence that EPS is going higher.
+
+And for the stock itself, it is evidence that the market likes the stock and prefers the stock and pays a premium to the sector.
+
+Additionally, we will filter for earnings growth percentage.
+
+And what we want to see in the ideal scenario is for the stock to have positive earnings growth that is higher than the sector in period one.
+
+And then in period two, the stock earnings growth in period two is higher than its earnings growth in period one and higher than the sector.
+
+Additionally, we want to see that earnings growth in the sector overall is actually trending higher as well.
+
+So, for our case one, our ideal earnings growth profile for long-idea quantitative processing.
+
+When we are looking to identify positive outliers, our ideal case, case number one, is for sequentially positive, above-sector average earnings growth momentum.
+
+And when we are also working through our long-idea processing, we also consider and identify our case number two and our case number three.
+
+Now, all of these cases, as you know, we have identified as optimal situations for long-idea processing with the ideal being sequentially positive, above-sector average earnings growth momentum.
+
+But remember, in these three cases, the EPS is positive.
+
+We are not coming from a loss-making situation.
+
+The company is making profit.
+
+So, we have positive EPS and positive earnings growth in all of those cases.
+
+And this is, of course, evidenced by the backdrop of the valuation in period two versus period one.
+
+So, a lower PE in period two versus period one.
+
+The EPS is going to be higher in period two.
+
+Therefore, when we take the stock price today and we divide it by EPS one, the PE is going to be higher in period one versus when we take the same stock price of the current day and divide it by EPS two.
+
+Because EPS two is higher, we're going to get a lower PE ratio versus PE one.
+
+So, we should always be thinking in terms of forward-looking fundamentals, earnings growth momentum, and in terms of price momentum.
+
+So, we try to concentrate on price and the fundamentals and valuation that is behind price and that is driving price.
+
+So, the difference between PE two and PE one is the gap that the stock needs to go up to maintain the same PE ratio.
+
+So, it's the price movement from period one to period two in order to maintain the same PE in period two as in period one with the new forecasted EPS.
+
+So, what is happening is the company, when they're moving from period one to period two, they are hitting their EPS and earnings growth percentage guidance.
+
+And by the way, this type of analysis also applies to PEG ratios.
+
+The difference between PEG two and PEG one is the amount that the PE ratio has to go up from period one to period two in order to maintain the same PEG ratio.
+
+So, this is how we always have to be thinking about it as traders.
+
+We always want to be thinking in terms of price momentum and the fundamentals that are driving the price momentum and the potential upside over the period.
+
+So, when we are processing for our long ideas in our quant processing phase and we are identifying potential long trade ideas, we want to see really good, strong, sequentially positive above sector average earnings growth momentum.
+
+And we also want to see evidence from the valuation from the PE that the market is aware of this too and they are paying a premium for the stock.
+
+Which means if the stock delivers in period two or in the process of going from period one to period two, it looks like increasingly that the stock is going to deliver on its earnings.
+
+The price is going to close the gap and the market is going to pay the same or higher valuation in period two versus period one.
+
+Now, in terms of processing mechanics for long ideas, I'm going to hand over now to Christopher Quill, who's now going to show you how to get the freely available stock data.
+
+So, if you recall the stock data that we were looking at in previous videos, how to download the data and how to organize it into a format that's suitable for traders to identify positive and negative outliers and shortlisting potential longs and shorts.
+
+So, Chris is going to show you how to rank for PE and earnings growth in order to identify the earnings growth profiles that we lean towards as traders.
+
+Now, there are downloads for this video in the downloads area.
+
+I mentioned one previously, which was the earnings growth profiles for longs spreadsheet.
+
+You can download that, have a look at the different earnings growth profiles and familiarize yourself with all of the different earnings growth profiles for longs.
+
+There's also another download, which is the US sector data spreadsheet, which is the spreadsheet that Chris is going to show you how to build and maintain now.
+
+Now, please note, as a side note, this step does come after something that we call cleaning the data.
+
+This is something that we're going to discuss in further PTM videos.
+
+So, I'm going to hand it over to Chris now.
+
+Enjoy Chris's section of the video.
+
+And I'll see you in the next video when we are going to start covering short ideas and we're going to look at the mechanics of short ideas.
+
+Hi guys, and welcome to another spreadsheet class.
+
+In this one, what we're going to do is cover how you can download US stock data so that you can conduct your initial quantitative analysts to find outliers within sectors that could then be potential long and short ideas subject to further work, of course.
+
+So, what I'm going to go through is firstly, how you can find and screen for US stock data using a free service on Zaxx.
+
+From there, what we're going to do is download the screen results and start cleaning and manipulating the data in Excel so that we can go through some analysis steps.
+
+And I'm going to illustrate the process that you guys should be going through to find potential ideas and outlier stocks using examples and commentating on some of the things that Anton's been talking about in the presentations as we go.
+
+Hopefully, then you guys are going to have a good idea of what you need to do going forward.
+
+Before we start, guys, needless to say, the stocks and filtering that I'm going to go through in this video are not legitimate trade ideas that you can then put on in your own portfolios once you've watched the video.
+
+The examples are only there to illustrate the process that you should be using.
+
+And, you know, of course, the data will be stale by the time you watch the video anyway.
+
+And above all else, the steps that we're going to go through in this video represent just the very beginning of the micro analysis process that's required to generate a legitimate trade idea anyway.
+
+They are by no means they by no means even represent the process of generating a fully fledged legitimate trade idea.
+
+It's just identifying outliers.
+
+That's all we're doing in this video.
+
+Remember, guys, there's a whole bunch more quantitative and qualitative considerations that you guys need to think about before even putting a position on as Anton's already been talking about in the presentations.
+
+So with that being said, let's get started.
+
+First things first, we're going to obtain the data that we need.
+
+And to do that, I'm going to navigate to zax.com in my web browser.
+
+Then at the top of the page, there's a tab that you'll see called screening.
+
+And if you hover over that, we're looking for the stock screener tool, which is the second one down in the dropdown menu.
+
+And once you select that, it takes you to Zach's US stock screener tool.
+
+Now, from this stage, we want to start a new screen, which we do by clicking the new screen button indicated in the top left of this table.
+
+And this is where we need to decide on the criteria of stocks that we want to filter for within all US equities.
+
+We don't want to add too much here since we will be filtering the data later in Excel.
+
+But what we can say for sure is that we're not really interested in any stocks below $3 billion in market cap.
+
+Remember, for long positions, we typically want to stay within the range of $3 to $10 billion.
+
+And for short, we're looking for stocks with kind of over a $20 billion US dollar market cap.
+
+So to add a market cap criteria, we just go down to the market cap option here within the popular criteria category.
+
+And we want the market cap of the stocks we retrieve to be greater than or equal to $3 billion.
+
+So we just need to make sure that the mathematical operator here is set to greater than or equal to as it is here.
+
+And then in the next column, we want to enter the value of 3000.
+
+Now, the reason why we enter 3000 here and not 3 billion is because we can see that market cap values in this screen are denominated in millions.
+
+And so 3000 million is equivalent to 3 billion.
+
+So from there, we just click add to add the criteria to our screen.
+
+And once that's done, we then need to add the various columns of data that we want to be able to see for each stock once we run the screen.
+
+So here I'm talking about things like market cap, stock price, earnings and so on.
+
+To make those additions, you'll need to click on edit view and start choosing the various data items that you want within the different categories running down the left hand side.
+
+Now I suggest to begin with, you just follow along with the same criteria that I choose in this video.
+
+And then you can always expand on that if and when you feel comfortable to do so.
+
+So working down the categories on the left hand side, I'm going to start in company descriptors.
+
+And in there, I'm going to check the boxes for exchange month and fiscal year end sector and industry.
+
+Okay.
+
+Those are the data items I want to see for every single stock.
+
+Then I'm going to go to a different category, which is the size and share volume category.
+
+In there, I'm going to make sure that market cap is already ticked.
+
+We want to know the market cap for every stock that we're looking at as well.
+
+And that's already ticked because we've already chosen that as an initial screening criteria.
+
+So next we'll move on to the price and price changes category.
+
+In there, I'm just going to check the last close box, which is basically the last available daily closing price for each stock.
+
+Then we move on to EPS surprises and actuals within that category.
+
+I'm going to select last year's EPS value F0 and also the last reported fiscal year for each of these companies.
+
+And then finally, our final category is going to be EPS estimates.
+
+And in that section, I want to make sure that we check the boxes for the F1 consensus estimate and F2 consensus estimate.
+
+Which is basically our forward looking EPS estimates for each company F1 and F2.
+
+So our current and next fiscal years.
+
+So that's it in terms of the data items that we're going to add to the screener.
+
+As I said before, as you get more comfortable with financial data and your processes as a whole, you might be able to add in some additional items at this stage.
+
+But to begin with, this is all you need.
+
+Remember though, it's important not to consider too many other metrics like revenue, growth or backward looking balance sheet and income state items until you identify outliers with earnings growth, PE and PEG ratios.
+
+So don't get caught up with other metrics too early in the process, even if you do decide to add them into the screener.
+
+Okay, so let's continue now.
+
+To run the screen and download the data, all you need to do is hit the run screen button here.
+
+That opens the screen's results on the webpage.
+
+And you can see that we've got 2,467 stocks here matching our criteria at this stage.
+
+And from here to download this data and open it as an Excel file, you just click on the CSV button and then open the file.
+
+Now on my setup, I can do this just by selecting the file that appears at the bottom of the screen here.
+
+Depending on what your setup is, you might have to navigate to the downloaded file in a slightly different way.
+
+But I'll leave that up to you guys.
+
+Alright, so this is what the screen will initially look like when you open it in Excel.
+
+And you can see that we've got a little bit of work here to do first just to tidy things up and reorganize the data before we move on to any analysis.
+
+So to begin with, what I'm going to do is select the whole of row one by clicking the row index value of one on the left hand side.
+
+And then choosing to wrap the text in those cells by navigating to home on the ribbon and then selecting wrap text.
+
+And you can see now that when the text sort of wraps to fit within the column title cells, it's much easier to understand the data that we're dealing with.
+
+We can actually read those column titles.
+
+From there, I'm going to reorganize the column into a different order that makes a bit more sense.
+
+To move a column, all you need to do is select it by clicking on the column index letter and then move your cursor to the edge of the selection before right clicking and dragging the column to a different area.
+
+Then letting go of the right mouse button and choosing the shift right and move option.
+
+So here, for example, I'm going to move the exchange column, the sector column and industry columns all to the left before the market cap column.
+
+Then I'm going to move on to the last reported fiscal year column and move that before the last close column like this.
+
+And to me, that then all makes a bit more sense now because from left to right, we've got our stock names and tickers followed by the company descriptors, then fiscal year information and then finally prices and then earnings.
+
+Okay, so next, what I'm going to do here is adjust the column widths and row heights where necessary.
+
+So for each column that needs it, I'm just going to click and drag its intersection with the column next to it to expand the width of that column just so that we can again read the data in those columns a bit more easily.
+
+After doing that, I'm then going to reduce the top row height a little bit and also make the column headings in bold by selecting them and pressing control B on the keyboard.
+
+At this stage, let's go through these columns of data and actually just make sure that you guys all understand what we're looking at here.
+
+So in columns A and B, we've got the company name and ticker for each stock.
+
+In columns C to E, we have the exchange the stocks are listed on and then the sector and industry to which the stocks belong.
+
+And these sectors and industries are defined by Zacks.
+
+Column F is the market cap for each company in millions of dollars.
+
+Then columns G to H are fiscal year information.
+
+So columns G tells us in which month each company has their fiscal year end and where a value of one represents January, two is February, three is March and so on.
+
+And column H then tells us what the last fiscal, what the last reported fiscal year was for each firm, where the number represents the year followed by the month in which it ends.
+
+So for example, if we look at Alcoa, the second stock from the top, we can see that its fiscal year end is in December each year.
+
+And the last reported fiscal year was December 2020.
+
+For reference to you guys, I'm filming this in October 2021, which will help explain some of these figures, meaning we should see companies last reported fiscal year ends in the spreadsheet up to around September 2021.
+
+Anyway, in the next column, we've got the last daily close price for each stock.
+
+And I think I'll rename this column while we're here and just call it price.
+
+Following that, we have our earnings per share numbers for each stock where columns J through L represent the EPS numbers for the previous fiscal year, the current fiscal year and the next fiscal year respectively.
+
+So let's rename those now as well actually.
+
+So in cell J1, I'm going to rename that column EPS 0.
+
+In cell K1, I'll rename that column EPS 1.
+
+And likewise in column L, I'll rename the column EPS 2.
+
+Okay, so that's looking better now.
+
+But before we go on to calculating things like earnings growth and PE ratios, there's one more bit of tidying up that we need to do.
+
+If you take a look at the exchange column, you'll notice that at the moment we have a bunch of stocks in this screen that trade over the counter.
+
+Now, as retail traders, those stocks aren't really accessible to us.
+
+And so what I'm going to do here is remove them all from this screen.
+
+To do that, all you need to do is select any one of the column headings and go to data on the ribbon, followed by filter that adds filter options to all of the columns in our table.
+
+And what we're going to do here is click on the exchange filter and then deselect the select all checkbox and then only check the OTC and OTC BB options and then press OK.
+
+Once that's done, you can see that it's returned all of the OTC listings within our screen.
+
+Now, to delete those items, we can just select all of the rows that you can see now and delete them.
+
+And the easiest way to do that is probably just by clicking the top row here and then pressing Ctrl Shift and down on the keyboard if you're on a Windows PC.
+
+And then that selects all of the data down to the bottom of the sheet.
+
+Then you can just right click within that selection and go to delete row.
+
+From there, we just need to remove the filter in the exchange column so that we can see all of our original data without the OTC stocks.
+
+And to remove that filter, just select the filter and go to clear filter from exchange.
+
+OK, before I forget, now is probably a good time to remind you that you should make sure that you save your work as you go, because these screening sheets that you create will become pretty important to your workflow as a trader.
+
+And you're going to want to make sure that you can access them in the future to either keep working on the data inside them or just as a log or reference to decisions and analysis that you've done in the past.
+
+Right, let's move on to calculations now.
+
+The calculations that we need to run are for earnings growth, price earnings ratios and PEG ratios.
+
+So in columns M2R, I'm going to head the columns now starting with EG1 in cell M1, EG2 in cell N1, PE1 in cell O1, PE2 in cell P1, PEG1 in cell Q1 and finally PEG2 in cell N1.
+
+Then we can make all of those bold just by selecting them and pressing CTRL B.
+
+So let's move on to the actual calculations themselves now, beginning in the earnings growth one column.
+
+In cell M2, the formula that we want to use for earnings growth for the current fiscal year is just going to be equals in brackets K2 minus J2 divided by ABS, the absolute function.
+
+In Excel in brackets J2.
+
+That's just basically the EPS1 number minus the EPS0 number divided by the absolute value of EPS0 and it's important to make sure that you put the denominator in the equation into an absolute function like this so that it's always positive.
+
+The reason being that that helps keep the signs correct for the output of earnings growth irrelevant of changing signs in EPS numbers from year to year.
+
+Don't worry too much if you don't understand that. Just use this formula and take my word for it.
+
+After the formula is inputted, we can just copy it down to the end of the data set in the usual fashion.
+
+Then for earnings growth two, it's done in exactly the same way.
+
+And actually we can just copy across the formula into the next column by selecting cell M2 and clicking and dragging the little green box in the bottom right of the selection to the adjacent cell.
+
+And then we can just copy that formula down as well.
+
+Moving on to the PE ratio columns now.
+
+In cell O2, the calculation for PE1 is just the stock price divided by EPS1.
+
+So the formula here is equals I2 divided by K2.
+
+So our price divided by EPS1.
+
+In cell P2, the calculation is basically the same for PE2 as it was for PE1, except that we divide the price by EPS2.
+
+And that gives us the PE ratio for the next fiscal year rather than the current fiscal year.
+
+So the formula here is going to be equals I2 divided by L2.
+
+So with those calculations entered, we can just copy them down to the end of the data set and move on to our PEG ratios.
+
+So let's calculate PEG1 now in cell Q2.
+
+The calculation for PEG ratio is just the PE ratio divided by the earnings growth expressed as a percentage for the same fiscal period.
+
+So in this case, the formula would be equals O2 divided by in brackets M2 multiplied by 100.
+
+We need to multiply the earnings growth figures we have here by 100 because currently they're expressed as decimals and we want them as percentages.
+
+Okay, so now we can do the same for PEG2 numbers in column R.
+
+And as with earnings growth, we can just copy across the formula that we just defined for PEG1 into column R.
+
+Remember, though, whenever you do copy formulas across or down spreadsheets, it's always best practice to check the results.
+
+In this case, we can see the references are looking at the PE2 and EG2 values this time.
+
+And so we know the formula is correct.
+
+Okay, so that's our calculations done now.
+
+But before we move on to looking at a specific sector and drilling down to find some potential outliers, let's just format these calculation columns that we've just created.
+
+So the earnings growth columns, we can just format as a percentage to two decimal places.
+
+And to do that, you can just select the columns, right click within the selection and go to format cells and then choose the percentage category from the options and allow two decimal places and press OK.
+
+Similarly, I think it's a good idea to format the PE and PEG ratios as well just to tidy things up a bit.
+
+And this time I'm just going to format those as a number to two decimal places by selecting the columns, right clicking in the selection, going to format cells.
+
+And then we can just choose the number category and define two decimal places followed by OK.
+
+So now that we've got all of the columns of data that we need, let's go through an example of how you can find outliers that represent potential stock ideas going forward.
+
+Now, remember, guys, I'm saying potential here for a very good reason, because finding outliers on their own is not enough to represent a trade idea.
+
+It's just the beginning of the trade idea generation process.
+
+Now, in this section, I will primarily be showing you the process for identifying outliers on the long side.
+
+But I might also end up referring to a few things that you're actually still yet to cover in the video series.
+
+Things like looking at short profiles, turnarounds and also data mining and processing mistakes.
+
+Don't worry if you feel like there are some gaps in your knowledge at this stage.
+
+Just come back and review this video again after you've completed the quantitative analysis section of the video series.
+
+So for this example, the industry that we're going to look at is the medical dental supplies industry.
+
+And so to begin with, we need to filter our data for stocks just in that industry.
+
+And to do that, we first need to remove the previous filter we had by selecting any column in any column heading rather and deselecting the filter button in the data section of the ribbon.
+
+Then straight away, we're going to add it back again.
+
+And you can see that this time the filters have applied all the way across our columns, including the new calculation columns that we've made.
+
+From here, we want to filter the stocks that we're looking at by industry.
+
+So that filter that we want to use is the one in column E.
+
+With the filter option open, we can search for dental supplies by typing into the text box here.
+
+And you can see that once you've done that, once we've typed in dental supplies, it just returns one industry from our list, which is the one that we want.
+
+And we can then just press OK.
+
+OK, so here you can see all the US listed stocks in the dental supplies industry that come through this screener provided by Zaxx.
+
+And at this stage, we can start processing and analyzing the data to find outliers within the sector.
+
+But one suggestion I have before we start is actually copying this data into a new sheet in this file.
+
+The reason being that we want to keep our original screening sheet clean and free from any further analysis or annotations.
+
+You can see currently that all the rows that don't match our industry criteria are hidden in the left hand sort of row index, but they still do exist in this sheet.
+
+So any edits or annotations that we do here will have an effect on the original data set and we don't want that.
+
+So using a new sheet allows us to kind of keep things clean.
+
+And it also means that it's going to help with things like sector calculations and so on, which we'll get into shortly.
+
+So copying the industry data into its own sheet is pretty easy.
+
+All you do is just select it all, including the column headings and then press control C to copy it.
+
+Then click on the plus button at the bottom of the spreadsheet to create a new sheet and then paste it into cell A1 in the new sheet with control V.
+
+From there, you can also rename this sheet that we've created to something that represents the data within it.
+
+So to do that, we can right click the sheet name at the bottom here and select rename and then call it something like dental supplies, for example.
+
+Now, just as we did at the beginning of the video, we also need to do some resizing here of some of the columns just to make it a bit easier to see all of the data items that we've got.
+
+So I'll just do that now quickly for the company name and also the sector and industry columns.
+
+Okay, now we get to move on to the processing and analytics stage processing comes first.
+
+And basically what you want to do is make sure that before anything else is done, you want to identify and fix any spurious data.
+
+Now, this stuff comes from video 28 in the course, but some of the things you'll want to check for are things like incorrect earnings data, incorrect calculations, small earnings numbers leading to very high magnitude earnings growth figures, which can then in turn skew sector calculations and also positive to negative EPS values and vice versa as you go through the fiscal years for each company.
+
+Again, that can result in sort of misleading earnings growth numbers.
+
+So for the purposes of this example, we're going to assume that all the EPS data we have here is correct and that we've checked it.
+
+Therefore, as long as the calculation formulas we've used previously were accurate, we should assume that all the calculation columns are accurate as well.
+
+In terms of spurious data coming from changes in the signs of earnings or from small EPS numbers, there isn't too much to worry about here either.
+
+One thing we might want to keep an eye out for is the stocks that are showing particularly high or low earnings growth, such as Align Technology or Star Surgical Company.
+
+With Align Technology, there doesn't seem to be too much wrong with the EPS figures at first sight, but potentially with Star Surgical, the earnings growth in the current fiscal year is getting skewed upwards by a particularly low EPS number.
+
+Now, whether or not this affects your analysis will come down to you doing a little bit extra work and using some common sense, you'll probably want to find out whether the EPS numbers are particularly strange or out of line in the context of the stock's previous numbers.
+
+And if they are, then it might be worth excluding them from things like sector averages, which actually we're going to move on to calculating just now.
+
+So I'm going to run these in row 17.
+
+So in cell A17, I'm going to title the row sector averages.
+
+And then in cell M17, I'm going to calculate the average EG1 number for the sector.
+
+The formula for that is just going to be equals average.
+
+So we're using the XL average function here, and then in brackets, selecting cells M2 to M15.
+
+From there, you can just copy across that formula to calculate the sector averages for EG2, PE1, PE2, PEG1 and PEG2, because they all use a very similar formula.
+
+We're just changing the references here.
+
+So you can see that when I do that, there are some formatting issues for the PE and PEG numbers, just because when we copied across the formula, we also copied across the percentage formatting from the EG1 or earnings growth one column.
+
+So to rectify that, I'm just going to select cells O17 to R17 and format them as numbers to two decimal places.
+
+Okay, so running through these figures now, our sector averages are 44.06% for EG1, 8.36% for EG2, 34.57 for PE1, 30.73 for PE2, 1.58 for PEG1 and 2.55 for PEG2.
+
+Now, remember what I said earlier regarding keeping an eye on data that might be skewing sector averages.
+
+If we take a look at this sector just by eye, we can see that if anything, the only sort of potential spurious data that's having an outsized effect on sector averages is Star Surgical Company.
+
+We can see this just by looking at things like its EG1 number and PE ratios, which are much, much higher than the rest of the sector.
+
+Now, as I said earlier, this could be due to the law of small numbers, meaning that the EPS numbers we see are relatively small, which then causes very large calculation figures when those small numbers are used as denominators of equations such as in the EG1 and PE ratios.
+
+One thing we can do at this stage is just test the effect of Star Surgical on the sector averages to get a better idea of what's going on.
+
+And probably the simplest way to do that with EG1, for example, is just by deleting the company's numbers and seeing how much the sector average changes.
+
+And you can see here when we clear the contents of the EG1 value for Star Surgical that the sector average decreases pretty significantly by around 7%.
+
+So it goes from 44% to 37%.
+
+The same can be seen in the PE ratios as well.
+
+When Star Surgical's PEs are removed from the sector, the sector average for PE1, for example, reduces from about 34% to 25% and for PE2 from 30% to 23%.
+
+Now, I'm not saying for sure that you should definitely be removing these numbers from the process.
+
+What I am saying is that you need to look out for data like this and use common sense to tackle any issues that it might cause.
+
+With, of course, the help from Anton in video 28, which you'll be going through later.
+
+If you think these numbers cause unacceptable skew in our sector averages, then you can modify the sector averages by calculating them without Star Surgical, for example.
+
+Or potentially you could use a different measure of centrality for the data, for the sector data, such as using the median function, for example.
+
+But you can only really do that with sectors that have a decent number of stocks within them.
+
+Modifying the sector averages matters because, remember, they're used to help identify sector outliers to then do further analysis on.
+
+So for the purposes of this example, I'm going to leave Star Surgical's data in, but just take a mental note of the effect that it's having as we go forward.
+
+Now, we don't have an example of this in this sector, but another thing to watch out for is EPS values that change sign from year to year and what that kind of means for earnings growth as well.
+
+Now, as Anton will show you in video 28, one of the ways to tackle wild earnings growth figures caused by EPS changing from positive to negative and vice versa is just to cap the growth or loss at 100%.
+
+Now, I'm not going to go into that here.
+
+But you are going to learn about that in video 28.
+
+And if you're looking at a sector with those issues, all you would need to do is write over the earnings growth numbers with whatever is relevant.
+
+So plus or minus 100%.
+
+Okay.
+
+So just before I go into looking at some of the stocks here in more detail to identify outliers and various sort of long or short profiles, there is one more important thing to note at this stage, which is actually pretty relevant for this sector.
+
+And that is the fact that a lot of these companies have quite different fiscal year ends.
+
+Now, this is pretty rare, to be honest, but you can see here in this example sector that we've got fiscal years ending in September, December, June, October, March and April.
+
+And the reason why we need to kind of pay attention to that is that obviously it has an impact on how we view the earnings and valuation numbers for each stock.
+
+So for context, I'm filming this in October 2021.
+
+That means that a stock like Amerisource Virgin, for example, has just reported their previous fiscal year, which ended in September.
+
+Now that means their current fiscal year numbers are effectively forward looking by about 11 months since their current fiscal year ends in September 2022.
+
+Compare that to, for example, Align Technology, whose fiscal year ends in December.
+
+Their current fiscal year only has around two to three months remaining.
+
+And so the weight that we should put on that current fiscal year compared to the next fiscal year numbers is much less than for Amerisource, which is just something to bear in mind.
+
+Remember also that when Align reports in January or February, a month or two after their fiscal year end, their numbers are going to shift from left, from right to left in this sheet.
+
+Meaning assuming expectations are 100% accurate and remain constant going forward until that point, their current year numbers will become their previous year numbers and their next year figures will become their current year values and so on.
+
+Okay. So hopefully that's all clear.
+
+I'm just trying to be kind of thorough for you guys at this point to kind of let you know what you should be looking out for and the kind of thought processes that you should be going through when looking at data like this and analyzing it.
+
+Let's move on to identifying some outliers now then, starting with looking for potential long ideas.
+
+To begin with, we want to find stocks where the market is paying a premium for earnings, which essentially means that the market thinks the quality of the stock's earnings is high.
+
+Doing that's pretty simple.
+
+All we need to do is filter the sector for above average PE numbers.
+
+So to start with, let's add a filter to the data by selecting any column title and going to data on the ribbon and then filter.
+
+From there, let's start with PE1 and select the filter and choose number filters.
+
+And then above average, which will filter the sector to only show stocks with above average PE1 figures.
+
+And you can see those stocks here.
+
+So we've got Align, Conmed, Star and West Pharmaceutical.
+
+We can then do the same thing with PE2 as well.
+
+And you can see that by adding a PE2 filter in this case, it doesn't actually make that much difference.
+
+But there will be, of course, definitely times when you're doing this sort of analysis and that will narrow down the stocks that you're looking at further.
+
+So we've now got a good idea of the stocks in a sector where the market is paying a premium for their earnings.
+
+What we now want to do is look at earnings growth.
+
+And ideally, we would like to see above average, sequentially higher earnings growth figures across the current and next fiscal year for our long outliers.
+
+But we can see here just by eyeballing the stocks that we have that that particular profile doesn't exist.
+
+But we might have the next best thing, which is above sector average earnings growth in both the current and the next fiscal year.
+
+So we can add some more filters in the same way as we did before.
+
+But this time for earnings growth columns rather than the PE columns.
+
+Well, I should say as well as the PE columns, because we're going to keep those filters that we've already used thus far.
+
+So I'm going to add an above average filter for both the EG1 and EG2 columns here and we'll see what happens to our results.
+
+So as you can see here, that leaves us with three stocks.
+
+We've got Align, Conmed and Star Surgical remaining.
+
+There's still a couple more things that we should be doing to make sure that we end up identifying stocks are worth doing some extra work on at this stage.
+
+Firstly, remember, we're looking for potential long ideas here.
+
+And if we have a look at the market cap column, we can see that Align technology has a market cap that is actually well above the cutoff that we should have for long positions, which is about $10 billion.
+
+So we can rule that one out straight away.
+
+And it's also worth looking at PE ratios to check that the numbers kind of confirm that the stock's earnings are good quality.
+
+So they should be kind of in line with what we see in the PE columns.
+
+Typically, this isn't as important as looking at the PE ratios, but it's still a good sign to see PE numbers above one for our last two stocks, which are Conmed and Star Surgical.
+
+So like I said, that's just another verification that the market deems that the earnings for these companies are high quality.
+
+So that's probably as far as we need to go, really, for identifying potential long idea outliers in this sector.
+
+Conmed and Star Surgical would both now require extra work if we were kind of doing this for real, both on the quantitative and qualitative side of things before going any further.
+
+And only if everything then checks out could we possibly think about using them as trade ideas.
+
+One thing I do want to note here with the process that we've used is, you know, at the beginning, I obviously chose to keep Star Surgical in the analysis.
+
+It might be that actually if we did a little bit more digging and more work when we looked at the company's past earnings, we could come to the conclusion that actually the low EPS numbers are outliers for Star Surgical and it is skewing the sector data.
+
+And therefore, we could exclude Star Surgical from the analysis and redo the stages that we went through just now.
+
+And that in turn might then result in an extra one or two potential stocks to conduct further analysis on.
+
+And, you know, these are the kind of decisions and thoughts that you guys are going to have to kind of go through.
+
+And they're going to require, you know, your own logic and common sense to do so that isn't necessarily going to be a correct answer.
+
+Again, all I'm kind of trying to do here when I'm talking about this stuff is getting you thinking about the processing and analysis stages in the right way so that you can make your own informed decisions.
+
+So before we finish here, let's quickly take the filters off again and just see if we can identify any other stocks that might be of interest in this sector.
+
+And to do that, I'm just going to select each filter in turn and choose the option in each one to clear the filter for that column.
+
+Okay, so I'm just going to be eyeballing here.
+
+We're not going to go into any level of detail, like I say, because you've kind of got more things to cover in the video series, but the processes are going to be very similar to what we've just covered with long only ideas.
+
+So like I said, I'm just eyeballing here, but I can see that, for example, both Laboratory Corporation of America and McKesson Corporation have declining earnings growth profiles, which might make them interesting short candidates as they could be ex growth stocks.
+
+And they also have below sector average P ratios and market caps above $20 billion.
+
+So that fits some of our other requirements as well.
+
+You guys are going to learn more about shorts in the subsequent videos, but yeah, those two could potentially be interesting.
+
+Another one that could be interesting, although this is a little bit of a stretch is Cardinal Health.
+
+It's earnings growth and valuation numbers aren't particularly far off what could be considered a potential turnaround story or value trap.
+
+So a deeper dive into what's going on there could also yield some pretty exciting conclusions as well.
+
+Now, like I said, I'm not going to talk about shorts or value traps and turnarounds in any more detail, really, because you guys are going to be covering those in subsequent videos.
+
+But I did just want to kind of highlight and reference them here because ultimately the process that you're going to go through to identify them will be very similar to the process that we use to identify longs.
+
+You know, meaning downloading all of the US stock data, getting your industry data copied across into a new sheet, cleaning all the data and then using filters in the various columns to get to the results that you want.
+
+The ones that you're looking for.
+
+So whether you're looking for long profiles, short profiles or potentially turnarounds or value traps, things like that.
+
+OK, guys, that's it for this one. As I said, it's just a short tutorial to show you how to practically implement the first stage of your micro analysis after you've built up a macro picture.
+
+Remember, this really is just the first stage, though, and once you've been through this, you'd then need to go into a much deeper dive into quantitative analysis using other metrics like revenue growth and all the backward looking balance sheet and income statement metrics as well.
+
+Then after all of that, you also need to understand the stock story and conduct a qualitative assessment as well.
+
+And only once you've done all of that can the idea actually become a trade.
+
+You've probably realized as I've been through this section of the video that nothing is black and white when it comes to micro analysis, even on the quantitative side.
+
+It's going to require sort of logic, due diligence and above all common sense in order to get to sensible conclusions.
+
+So remember to stick to your ITPM principles when you're doing this work.
+
+It isn't possible for us to do all of the work for you.
+
+You're going to have to be able to deal with various real world problems whenever you're dealing with data and analyzing stocks.
+
+Don't get overwhelmed.
+
+Just stick your head down and get on with it and you're going to reap the rewards for it later.
+
+All right, guys, that's it for this one.
+
+And I'll see you later in the video series. in the video series.

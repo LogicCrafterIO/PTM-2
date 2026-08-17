@@ -1,0 +1,877 @@
+---
+course: ptm2
+lesson_id: "23"
+title: "Trade Idea Generation - Quantitative Processing 2"
+module: quantitative-idea-generation
+module_title: "Quantitative idea generation"
+duration: 01:11:05
+duration_seconds: 4264.981
+source: "23. Trade Idea Generation ΓÇô Quantitative Processing 2.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  - "Documents/Video 23/US_Sector_Data.xlsm"
+---
+
+# 23 — Trade Idea Generation - Quantitative Processing 2
+
+Okay, so welcome back. We're going to continue now building out the trade idea generation process. Welcome to video number 23, quantitative processing number two. What we're going to be doing in this video is start showing you some processes of how to start filtering for price earnings ratio. and also add in some additional measures in the quant processing phase. So, in the previous video, we use the price earnings ratio as an identification process for finding both positive and negative outliers in a sector. Now, in building a long short portfolio, we want to first always identify what money likes and what money dislikes. We mentioned in the previous video that money likes growth. Now, when we identify outliers by price earnings ratio, we do it by ranking the PE largest to smallest. And there will always be a reason behind why a stock has a high PE or why a stock has a low PE or even or even an average middle of the road, an exciting PE in a sector. It's up to us after identifying an outlier to do more work on it and figure it out. So, because we know that money likes growth, it's highly likely that the reason for a high PE valuation, i.e. that investors and traders are willing to pay the premium, it's because, in some way, it's because, in some way, the stock has superior growth to its sector counterparts. And likewise, on the flip side, it's highly likely that with low PE stocks relative to sector peers, investors and traders are willing to sell at the discount because, in some way, the stock has inferior growth to its sector counterparts.
+
+Now, the main measures of growth that we use as traders and portfolio managers in the quantitative phase are forward-looking earnings growth, forward revenue growth, forward PE ratio, and forward PE ratio.
+
+And the PE ratio is simply the PE ratio divided by the earnings growth percentage. So, try to remember this every time you look at a table of data for a sector where you see price earnings ratio, earnings growth percentage, and PEG ratio, and revenue growth.
+
+Try to remember this, there is always a reason why a stock trades on a premium or a discount to its sector peers for all of those metrics. Say it in your mind every time you look at the table of data. Remind yourself, ask yourself the question, what is the reason? There is always a reason. What is the reason?
+
+And what you're going to find is that in the vast majority of cases, it is because the stock has superior earnings growth or inferior earnings growth. That is usually the case in the vast majority of situations at any one time in financial markets. Now, of course, there will be exceptions, but we have to focus on the majority.
+
+We have to focus on the majority scenario for now. So, for this video, you're actually going to need access to the downloadable spreadsheet that's under the video in the downloads area called the US Sector Data. Now, this spreadsheet is very important for you. It's a spreadsheet that's going to be very helpful for your ongoing processes for trade idea generation.
+
+So, the spreadsheet is updated twice a year. The spreadsheet is updated twice a year in the PTM download section and it's updated every month in the ITPM data library. And of course, you can get the data yourself online for free. Just go to video 25 and you will see Chris Quill's tutorial video on how to do that.
+
+Now, what we've done is we've downloaded a sector from the spreadsheet file. And the sector that we've downloaded here is the non-store retail sector, which is part of the larger sector retail trade.
+
+And this is the non-store retail industry. And this is a NAICS classification of sectors. So, this is the North American industry classification system, which is obviously different from the global industry classification sectors. The GICS definition of sectors.
+
+One is global and one is global and one is from North America only. It doesn't really matter which definitions you use. Whatever you're comfortable with and wherever you can get a large amount of usable and accurate data.
+
+And you go and get it and you use it for your processes. The NAICS sector definition is very straightforward and it's very easy to get the free data and filter through the data with your processes.
+
+Also, the NAICS sector classification is used by the Institute of supply management. So, if you're generating trade ideas that are originating from ISM reports, this classification would actually be a natural extension for that.
+
+So, what have we got on the screen here? We're focusing on the non-store retail sector for our example. And what you're looking at are consensus numbers that are pulled from NASDAQ.com, then sorted by ITPM on a monthly basis.
+
+Now, obviously, you can do this yourself. You can go to NASDAQ.com, you can download the data and sort this spreadsheet yourself any way you want to do it.
+
+Now, the way we happen to like sorting the data is to have it so it's visualized with our most important metrics for our filtering process, visualized all in one place.
+
+So, very easy to scan with your eye and organize all of the data easily when you're playing around with the spreadsheets. So, what do we have here? If you look at the data, first of all, we have the dates where the company's year-end is cut off.
+
+So, for example, if you look in the column, you'll see many of the companies, their year-end ends at the end of December, at the end of the calendar year. So, their financial year is at the end of the calendar year.
+
+Then we have market cap. Market cap, we have on the screen there. And next to it, you can see that we have EPS. So, we have four columns here for EPS. We have EPS full year zero, EPS full year one, EPS full year two, and EPS full year three. So, what is that?
+
+Well, by definition, zero by our definition is last year's EPS. Then we have EPS full year one. So, EPS FY one. What is that? Well, it is one year forward EPS. So, it's the current year. So, let's say you're sitting in February or March or June. EPS full year one.
+
+EPS full year one is the forward looking one year EPS for that year. Okay? Then EPS full year two. EPS FY two is the next year. So, it's not this year that we're currently in. It's the year after. And then EPS full year three is the year after that.
+
+Now, EG stands for earnings growth. So, we have earnings growth F1. So, earnings growth F1 is for the current year. So, that is the same year as EPS full year one.
+
+Again, earnings growth F2, that is the same year as EPS full year two. So, if you look at EG F1, for example, that is the earnings growth that the company is experiencing in the current year based on the forward forecast.
+
+So, based on the forward forecast. So, based on the forward forecast, it's the percentage change from last year's reported EPS, which is in year zero, and the current year.
+
+Earnings growth F2 is the forecasted EPS of next year versus the forecasted EPS of the current year. And it's the percentage difference between the two. So, it's a forecast of earnings growth from the estimated consensus EPS numbers for the current year to the following year.
+
+And then we have earnings growth in year three. And that's the earnings growth from year two to year three. So, EPS growth based on forecasts by the market, by research analysts, the growth, the earnings growth from year two to year three.
+
+Now, the next columns, we have the PE ratio. And what we're doing is here is we take current stock price in the market. And we use EPS forward for full year one. So, that is a forward PE for the current year. So, year one. And then we have next year. So, we have the PE for next year. And then we have next year. So, we have the PE for next year.
+
+So, current stock price divided by the EPS of year two. And then, of course, the same thing for year three, the current stock price divided by the EPS estimate for year three.
+
+And then, finally, we have the PEG ratios. The PEG ratios for full year one, two, and three in the final three columns. Now, at this stage, don't worry about all of the data in the table. Just try to focus on the simple stuff for now and not go down endless rabbit holes. Focus on the simple stuff for now.
+
+And the process itself. So, we're focusing on the non-store retail sector. Our first step in the quantitative process when attempting to identify sector outliers, as we outlined in the previous video, is to filter the spreadsheet for forward PE one. So, if you look on the screen, you'll see the spreadsheet.
+
+So, if you look on the screen, you'll see that the spreadsheet has been filtered in descending order from the highest PE for year one to the lowest PE. And when we do this, certain stocks are obviously going to jump off the screen as positive and negative outliers based on the metric for PE in year one.
+
+And here, in our example, we've decided to highlight three stocks. We've decided to highlight Shopify, Wayfair, and Overstock. You can see on the screen there that Shopify has a PE full year one. So, forward looking PE for the current year of 287.
+
+Wayfair comes in at overstock comes in at overstock comes in at overstock comes in at 67 times earnings for the current year.
+
+Now, the next step we tend to take is to start looking at earnings growth because we want to understand what is driving the valuation.
+
+So, the first thing we look at, because it happens in the vast majority of cases at any one moment in time, the next thing we look at is earnings.
+
+First, we want to see the earnings growth of the company to see if the earnings growth measures are supporting the valuation.
+
+So, the next thing we do is filter by the one year forward earnings growth.
+
+So, e.g. what? So, what's that? It's the difference, the percentage difference between last year's EPS and this year's EPS, which is a forward looking estimate.
+
+So, the percentage difference. So, when we look at the screen here, we did highlight the stocks in the table.
+
+So, when we re-sorted the data by EG1, SHOP has projected flat earnings growth year on year, overstock has pretty flat projected earnings growth year on year, and Wayfair earnings growth is actually projected to half.
+
+So, this begs the obvious question, why are these stocks trading on such a high premium relative to other stocks in the sector?
+
+Remember, these are live stock prices in the market every day, and there's people paying those prices every day live in the market.
+
+And we've taken that stock price, and we've used it to work out PE ratio.
+
+So, the market is rating these stocks for a reason.
+
+So, it obviously begs the question, why are they trading on such a high premium relative to the other stocks in the sector?
+
+Well, this is just an initial inquiry.
+
+It may actually be because of other reasons.
+
+So, we don't just give up.
+
+We ask the obvious question, why?
+
+And we keep asking the question.
+
+So, what do we do next?
+
+Well, we filter for EG2.
+
+So, we filter for next year's forward earnings growth.
+
+And we discover that both Wayfair and Overstock have much higher than average earnings growth for next year.
+
+And SHOP has pretty non-spectacular earnings growth.
+
+So, the high PEs for both Wayfair and Overstock seem to be because the market is looking through the current year and paying the premium now for next year's earnings growth and potentially beyond next year.
+
+So, why is it the case that earnings growth for SHOP, Wayfair and Overstock is bad in the current year?
+
+Again, it's up to you to keep asking the obvious questions and find out.
+
+Well, I can tell you now, the year for EPS1, which is feeding all of our other formulas, was 2020.
+
+So, it was the COVID year.
+
+Now, another question you might ask yourself in a situation like this is, for example, why Shopify is trading on such a massive current year forward PE premium to the rest of the sector when it only has flat earnings growth in year one versus year zero and 25% forecast for year two growing from year one.
+
+Well, remember, there is always a reason.
+
+So, it's up to you to find out that reason.
+
+A typical question you might ask yourself here, which would be fairly obvious to ask yourself, is maybe it's not to do with earnings.
+
+Maybe it's to do with something else.
+
+Maybe it's to do with another very important metric, revenue.
+
+So, it might be to do with revenue growth.
+
+So, the company is possibly purposely reinvesting a large portion of their earnings back into the business in order to grow the top line.
+
+Maybe that's the case.
+
+At this stage, we don't know.
+
+We're just continuing our lines of inquiry and asking the obvious questions.
+
+So, in this situation, if that is the case, then the market will actually see through this.
+
+And the premium is for way in the future earnings.
+
+So, it's more of a revenue growth story.
+
+And if they are communicating this to the market, it will all be part of what we call the MOP, the Management Operating Plan.
+
+At this stage, we just don't know.
+
+We are in the discovery phase of the quant process.
+
+And we are asking the obvious questions to find out the basics of the picture or story of the sector.
+
+And trying to identify interesting positive outliers.
+
+And indeed, interesting negative outliers.
+
+What we also see here is that Shopify has by far the largest market capitalization of the three companies.
+
+So, this is also worth noting too.
+
+Now, just as a side note, the data in the tables that we've looked at so far hasn't been fully cleaned.
+
+Later in the video series, we're going to show you how to clean data like in the tables that we've been looking at.
+
+We're going to show you how to clean that data properly.
+
+All this is at this stage is an example of process.
+
+It's a template of how you go about doing things on a step-by-step basis.
+
+Now, you may be wondering at this stage, when you look at the tables there, you may be wondering why we haven't looked at other stocks like Amazon or Alibaba.
+
+Well, in long short portfolio management, market capitalization matters.
+
+If you've seen the IPLT video series and Chris Quill's lessons in volatility, you will totally understand what I'm getting at here.
+
+We will discuss other reasons why in more detail later in the video series.
+
+So as we're going through our process, normally we would eliminate Shopify as a potential long trade idea due to its market cap size.
+
+But that doesn't stop us actually including it in our analysis.
+
+So we understand Wayfair and Overstock better in a better context.
+
+So basically what we have as our three choices here in our example is a very large market cap size in Shopify from the table.
+
+We have a small market cap size over stock from the table and Wayfair what we would define as a media or average size market cap in the table.
+
+Now a useful exercise when you're going through this process is to sometimes just get the rankings from the sector in a little Excel table.
+
+So we have 17 stocks in the sector and we've ranked the stocks here on market cap PE.
+
+So this is the PE 1, earnings growth 1 and earnings growth 2.
+
+So we rank them by those metrics just to get a clear picture of the most important comparable fundamentals and where they rank relative to each other within the sector.
+
+Now we know that for W and Overstock, the market is actually looking ahead to earnings growth 2 and paying the premium now.
+
+So in the rankings here, W is ranked as number 2 based on earnings growth 2 out of the 17 stocks and Overstock is ranked as 3 for earnings growth 2 relative to the 17 stocks.
+
+Now, given that normally we would not even consider Shopify as a potential long trade idea because of the market cap size and because we're traders.
+
+This is something we will come on to later in the video series.
+
+We consider W and Overstock and based on the market cap size of those two stocks and the earnings growth 2 profiles of the two stocks.
+
+We conclude that Overstock probably has the most potential and is probably the most interesting positive outlier to do further work on.
+
+So we have gone through a very quick filtering process to determine what money likes and why it likes it at the surface level quant phase.
+
+We can be pretty confident why the market pays the premium in Overstock.
+
+It's for the earnings growth next year.
+
+Additionally, it has a $3 billion market cap.
+
+So that gives us as traders plenty of room for upside potential over our time horizon of 20 to 60 days.
+
+And then we now continue our investigation to fill in all the gaps.
+
+So the next step would be to start looking at some of the basic quantitative numbers of the profit and loss account.
+
+So here we have Shopify and we have their main headline profit and loss account numbers from 2012 all the way up to 2020, which is the last reported number.
+
+And we also have forecasts for 2021 and 2022.
+
+So we start taking a note of the last reported numbers, the last annual numbers, and we start to work things out.
+
+So if we look at the column 2020, we can see revenue came in at 2,929,000,000 and there was revenue growth of 85%.
+
+Other lines to take note of would be cost of revenue, which comes in at 1.387 billion, our gross profit of 1.54 billion and also our operating expenses of 1.4 billion.
+
+Within operating expenses, we have to take note of R&D, so research and development costs.
+
+We also look at our operating income or loss, which is 133 million.
+
+We look at our pre-tax income or loss, 148 million.
+
+And that's on an adjusted basis and on a gap basis, 240 million.
+
+We also take note of the forward looking projections from the market.
+
+So research analysts in the market, and we note revenue of just over 4 billion with 37 and a half percent revenue growth.
+
+We have a forecast for gross profit at 2.1 billion, an operating income of just over 400 million, and a pre-tax income or loss on an adjusted basis, 481 million.
+
+Now it goes without saying, all of these numbers are publicly available.
+
+You can get them all via the investor relations websites of any company for free.
+
+So we worked out revenue growth in 2020 for Shopify as 85%.
+
+So 85% growth in revenue from 2019 to 2020.
+
+The forward looking analyst consensus revenue projection for Shopify was 37 and a half percent for 2021 and 31 and a half percent for 2022.
+
+Revenue in 2021 was forecasted to be 4 billion.
+
+And we note that the cost of revenue in 2020 was 1.3877 billion plus the operating expenses of 1.4084 billion comes to a total of 2.7961 billion in order to make 2.92 billion.
+
+And their revenue was 2.9295 billion in revenue.
+
+So their total costs were 2.7961 billion.
+
+And their revenue was 2.9295 billion.
+
+Meaning that that is a 95% number.
+
+So they are spending 95 cents to make $1 of revenue.
+
+Now research and development spend is typically an expense that software companies enjoy while they are in their growth phase.
+
+So that when they're building out new products and services and growing their top line aggressively.
+
+And it's usually worked out as a percentage of revenue or operating cost, a percentage of operating cost and or a percentage of total cost.
+
+And companies seek, as they're growing and they're reaching maturity, companies seek to pare this down as they grow to maturity.
+
+So as they grow to maturity, they're paring down the percentage that R&D spend contributes to revenue, operating costs and also obviously total costs.
+
+In the case of Shopify, R&D spend in 2020 made up $543.8 million.
+
+And its percentage of total costs comes in at 19.45%.
+
+So we know that total costs for Shopify, when we work it out on a per dollar basis, that they're spending 95 cents to make every dollar of revenue.
+
+So we can multiply the 19.45% by the 95 cents to work out what R&D is as a percentage of every dollar of revenue.
+
+So it works out as 18.47 cents of the $1 of revenue that is spent on R&D.
+
+What we can also do is work out R&D spend on a per share basis.
+
+So at the time of recording, Shopify had 112 million shares in issue.
+
+So if we divide the $543 million of R&D spend by the 112 million shares, we work out that in 2020, Shopify, R&D spend, R&D spend was $4.84 per share.
+
+So we can make a very simple back of the envelope assumption and calculation here that if R&D spend at Shopify actually went to zero, this $4.84 in 2020 could be added back to potential pre-tax earnings.
+
+Now we also noted the revenue growth in 2020, the 85% was very, very aggressive and it was down to COVID-19.
+
+And the revenue growth in 2021 and 2022 is actually forecast to firstly keep growing at a very rapid pace.
+
+So at 37% and 31% so that's potentially a bold projection, but it's also forecast as lower growth than the pre-COVID levels.
+
+So for example, in 2018, revenue growth was 60% and in 2019, 47%.
+
+So the 37% and 31% for 2021 and 2022 is a lower growth rate on the revenue level than previous times to COVID-19.
+
+And this is quite typical of companies that mature and grow into maturity.
+
+Revenue growth slows down and we get lower levels of revenue growth for much bigger companies that have already matured.
+
+Something we also take note of is the bottom line.
+
+And we can see from the bottom line that they're growing from loss making to profit in 2020.
+
+So what's happening here is that in the bigger picture, the companies got to a high market cap and has gone through a large amount of their growth phase.
+
+And they've had insane revenue growth and obviously the markets rewarded them for that.
+
+And their bottom line is going from loss making to profit making.
+
+So essentially, the company has gone through a big growth phase, got a high market cap, being rewarded by the market.
+
+And now revenue growth is slowing down and they're moving into profit from a loss making position.
+
+The company has essentially matured.
+
+The company has arrived.
+
+So our suspicions earlier when we were doing our surface level quant work in the downloadable table of data was that Shopify may be a revenue growth story and that the market was putting a big premium on the stock because of revenue growth at the company.
+
+And that the management operating plan may be that it's a revenue growth situation and they're purposely growing revenue and reinvesting a lot of that revenue and earnings back into growing the top line.
+
+Therefore, the market sees through the low earnings.
+
+What we've discovered now is that this is probably the case.
+
+But the question is, does the stock justify its full premium at this moment in time moving forward?
+
+That's the that's a question that remains to be answered.
+
+Moving on to Wayfair.
+
+Again, we do some work here on their numbers.
+
+We look at 2020 and we see 14.145 billion.
+
+That's 55% revenue growth from 2019.
+
+We see our cost of revenue at 10 billion.
+
+We see our gross profit at 4.1 billion.
+
+We see our operating expenses at 3.747 billion.
+
+R&D spend is zero.
+
+And there's been no R&D spend throughout the history of the data.
+
+We have operating income in 2020 coming in at 364 million.
+
+And we have pre-tax income adjusted at 209, 209 million.
+
+On a gap basis, 205 million.
+
+We also take note of market projections.
+
+So research analyst consensus projections for revenue 2021, 15.844 billion.
+
+That's 12% of revenue growth on 2020.
+
+For 2022, just over 19 billion.
+
+So 20% revenue growth for 2022 on 2021.
+
+We have a gross profit number for 2021 as well, 4.365 billion.
+
+And for 2022, 5.3 billion.
+
+We have an operating income number at 400 million for 2021, 686 for 2022.
+
+And we have a pre-tax income on an adjusted basis, 248 for 2021 and 544 for 2022.
+
+So breaking it down for Wayfair, revenue growth was just under 55% in 2020.
+
+And the forward-looking analyst consensus for revenue projections were 12% in 2021, which is the current year.
+
+And 20% for next year.
+
+The forecast for 2021 was 15.8444 billion.
+
+And we note the cost of revenue and operating expenses, basically 10 billion plus 3.7 billion.
+
+We're looking at 13.7809 billion to make 14.1452 billion in revenue, which means they are spending in total 97.42 cents to make every $1 of revenue.
+
+And we also noted they didn't have any R&D spend, not in 2020 or for the entire history of the company as a public company.
+
+The jump in revenue growth in 2020 was clearly down to COVID-19.
+
+And the revenue growth in 2021 and 2022 is forecast to firstly keep growing.
+
+So again, potentially a bold projection versus the pre-COVID levels of revenue growth to be lower than those levels.
+
+So this is starting to look like, at least at the revenue level, like a Shopify situation.
+
+But they don't actually have any R&D spent.
+
+Similarly, at the bottom line, they're going from a loss-making position prior to 2020 to making a small profit in 2020.
+
+So that's similar to the Shopify situation.
+
+But they're forecasted to lose money in 2021, but making profit in 2022.
+
+So if we look back to the table, we're actually looking at the net income line here at the very bottom.
+
+So we're looking at the 185 million profit coming from a loss-making position of almost a billion dollars in 2019.
+
+So 185 million net profits, net income in 2020.
+
+A loss here of 101 million in 2021 and a profit of 131 million in 2022.
+
+So the market is potentially here overlooking the 2021 earnings slump in the current year.
+
+So 2021 is the current year.
+
+And they're paying a premium now for revenue and earnings growth, potentially in 2022.
+
+So they're potentially here giving them the benefit now of 2022 revenue and earnings growth.
+
+So we're starting to learn a lot about these stocks and the sector already.
+
+Now, something else that's very useful from an educational perspective in terms of the process that we're going through here.
+
+And if you recall, Wayfair actually had a positive EPS number in our downloadable table that we looked at earlier.
+
+So for 2021 in our table, they had an EPS number of $2.31 for 2021, which is our one year forward EPS number.
+
+And if you just recall here on the P&L statement, the forecasts for 2021 from research analysts in our previous table, the P&L projections that we just looked at, the net income number was negative.
+
+So there's obviously a conflict here.
+
+So this is what happens sometimes when we are going through our processes and our usual lines of inquiry, where we're digging deeper to find out what's going on.
+
+Sometimes there's a conflict of numbers.
+
+Now, we know that the trajectory matches up with our table and the P&L projections, because in 2020, in our table, we had $5.04 reported EPS for the 2020 year.
+
+We got our one year forward as EPS as $2.31 for 2021.
+
+So that's obviously EPS in our table going down by quite a lot.
+
+And then from 2021 to 2022, we get a big jump up to $5.82 per share.
+
+And this trajectory from 2020 to 2021 to 2022 in our table matches up with the P&L numbers.
+
+But the numbers themselves in 2021, the number itself in 2021 doesn't match up because we have a positive $2.31 EPS number in our table, but a negative net income number in our other table.
+
+So from a process perspective, it's useful to highlight this because in a normal process scenario, this can happen quite a lot.
+
+Sometimes you will bump into conflicting numbers.
+
+What you have to do is keep digging and try to get as close to the truth as you possibly can.
+
+Obviously, in a normal process situation, you would do that and accuracy is pretty paramount.
+
+You would need to work out whether the downloadable data from the spreadsheet download is incorrect or the P&L data that you're downloading is incorrect.
+
+And figure out what the actual accurate situation is.
+
+What we're doing here is simply just going through the processes step by step to show you how the processes and the steps work.
+
+You would obviously, at various points in your process, need to be making sure that the data is clean, like we mentioned earlier.
+
+And this is a part of the process that we'll be showing you later on in the video series.
+
+Now, let's move on to Overstock.
+
+Again, we take note of the numbers like we did with Shopify and Wayfair.
+
+Revenue for 2020 came in at just over 2.5 billion, so 2,549,8 million.
+
+That was revenue growth of just under 75% on 2019.
+
+We take note of our cost of revenue number, 1.97 billion.
+
+We also take note of gross profit, 579 million.
+
+We also take note of our operating expenses.
+
+We take note that there is research and development costs coming in at 137 million.
+
+Operating income comes in at 33.4 million.
+
+Pre-tax income at 37 million.
+
+We also take note of the 2021 numbers, 2.65 billion at the revenue line.
+
+That's a growth of 4% from 2020.
+
+We take note of gross profit at 594 and operating income at 57.
+
+Pre-tax income forecast of 59.
+
+Now, getting this all down on paper and written down and doing some back-of-the-envelope calculations.
+
+The Overstock revenue growth, 75% in 2020.
+
+The forward-looking analyst consensus revenue projections for Overstock in the current year, 2021, 4%.
+
+So just under 4% coming in at 3.96%.
+
+And 15.62% for the following year, 2022.
+
+And the 15.62% revenue growth forecast in 2022 is actually higher than in all previous years to the COVID-19 year in 2020. 2021 revenue is forecasted to be $2.6508 billion.
+
+And we note the cost of revenue and operating expenses on that.
+
+So cost of revenue, $1.970 billion and operating expenses $546.1 million, making total cost $2.516.1 billion to make revenue of $2.549 billion, which means they are spending $0.98 in total to make $1 of revenue.
+
+Now, Overstock's research and development spend, their R&D spend, was $137 million in 2020.
+
+So we work that out as a percentage of the total costs, and it comes in at 5.4%.
+
+So 5.4% of our $0.98 of total spend in 2020 is $5.292.
+
+So R&D spend is $5.292 of every $1 of revenue in 2020.
+
+At the time of recording, there's 41 million shares in issue for Overstock.
+
+So if we take the $137 million R&D spend, we can work out on a per share basis the R&D spend.
+
+So that comes in at $3.34 per share for R&D spend, which essentially, if Overstock paid down its R&D spend to zero, could be $3.34 per share of potential extra pre-tax earnings.
+
+Now, what we can actually do, seeing as though we've now been through all three of the companies and done a slightly deeper dive on the quant, what we can do is compare Shopify and Overstock, and we can compare their R&D spend per share and their EPS.
+
+So if we remember, Shopify had $4.84 per share R&D spend in 2020.
+
+And we just looked at Overstock, that was $3.34 per share for R&D spend in 2020.
+
+If we recall from our table, that Shopify had $3.98 of earnings per share in 2020.
+
+And Overstock had $1.24 of earnings per share in 2020.
+
+So what we can do here is work out the delta, the sensitivity of R&D spend per share to EPS, if R&D spend went to zero at both Shopify and Overstock.
+
+So we work out a ratio for Shopify, for example, $4.84 per share of R&D spend.
+
+And they had $3.98 of earnings per share in 2020, EPS zero.
+
+So we divide $4.84 by $3.98, and we get a ratio of 1.22.
+
+Which means if Shopify decreased its R&D spend to zero, we see a potential increase of 122% in EPS.
+
+It's a delta of 122%, so a potential 122% increase in earnings per share.
+
+With Overstock, we take the R&D spend of $3.34 per share, and we divide by the earnings per share of $1.24 in 2020, EPS zero.
+
+And we get a ratio of 2.69 times, which means there could be a potential increase of 269% in earnings per share if Overstock pared down its R&D to zero.
+
+Now, obviously, with our workings, this is all very approximate and back of the envelope.
+
+And also, we've made the assumption that companies like Shopify and Overstock can actually pared down their R&D to zero and live without R&D spent.
+
+Which is obviously an assumption that we're making here, but that's okay.
+
+What you've witnessed here is a process whereby all we did was start with the table on the screen, the downloadable data where we had our PE numbers.
+
+We had our EPS numbers, we had our EPS numbers, and our PEG numbers.
+
+And what you've witnessed is a process where we are investigating through lines of inquiry after we have downloaded that data.
+
+And then we've asked the obvious questions and followed lines of inquiry that have enabled us to find out what is going on with these stocks and what is going on generally in the sector.
+
+So, we download the data, we organize our table, we get the statistics that are the most important statistics for us.
+
+We get market cap, we get price earnings ratio, we get EPS earnings growth and PEG ratio.
+
+And then first step, we organize by PE1, so forward-looking PE, and we find out what the market likes and what the market dislikes.
+
+That's our first step.
+
+Our next step was to filter by earnings growth 1 and then earnings growth 2 to figure out if the market is rewarding companies or punishing them for their earnings growth.
+
+And then after ranking some stocks by earnings growth 1 and 2, we start to figure out and dig a little deeper that there's companies that are being rewarded for not just earnings growth, but revenue growth.
+
+So, we start to figure out now that there's stocks in this particular sector that are revenue growth stories and the market is rewarding that revenue growth.
+
+What we also realized through our lines of inquiry as we dig a little deeper into the numbers is that companies of different market cap sizes are at various stages of the growth and maturity phase.
+
+So, Shopify is essentially maturing, it's getting to the maturity level now.
+
+Now, Wayfair has essentially matured, it's almost maturing, getting into profit and with lower revenue growth.
+
+And over stock is still in the growth phase.
+
+So, over stock was the only one of our stocks where the post-Covid 2022 revenue growth forecast was higher than pre-Covid levels.
+
+So, revenue growth is still in the growth phase.
+
+The company is moving from a loss-making position to a position of profit forecast by the market and they have the highest delta of R&D spend per share to earnings per share.
+
+Therefore, from a service level, quantitative perspective and from a traders and volatility perspective, over stock potentially has the most upside.
+
+But remember guys, this is not a trade idea yet.
+
+This is simply an example of the processes that we go through at the beginning when we pull up the table, we organize our data in the spreadsheet, we interpret the numbers and we initiate lines of inquiry.
+
+And we start to figure out what's going on with positive and negative outliers in a sector.
+
+So, we start digging, we interpret the numbers properly, we start digging and we start looking for it in this example at potential positive outliers that could become trade ideas and positions in the future.
+
+It's an identification process.
+
+And what we've done here is potentially identified over stock as a potential trade idea.
+
+And of course, there must be further work done on this.
+
+This is just the beginning.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, we're going to look at the market.
+
+So, the market is rewarding companies like Shop for their revenue growth.
+
+So, the natural move here is to actually look at a metric of a revenue multiple instead of an earnings multiple like price earnings.
+
+So, the way to work this out is to actually take a company's market cap and divide it by revenue.
+
+So, when we look at our three stocks, Shopify, $141 billion market capitalization.
+
+If we look at their 2021 forecasted revenue by the market, which is $4 billion, we get to approximately 35 times revenue.
+
+With Overstock, we get 1.1 times revenue or 1.17 times revenue.
+
+And Wayfair, we get to 2 times revenue.
+
+So, something is going on here with Shop.
+
+We need to obviously ask our questions, our obvious questions.
+
+Why is the market paying 35 times for $4 billion forward revenue at Shopify and only 1.17 times revenue for 2.65 billion forward revenue at Overstock?
+
+And only 2.09 times for $15.8 billion for $15.8 billion of forward revenue at Wayfair?
+
+We go back to our default interpretation.
+
+Is the market wrong?
+
+What does the market know that I don't?
+
+Well, the market obviously isn't wrong.
+
+So, at this stage with our lines of inquiry, we have to assume that something's going on here, that the market knows something that I don't.
+
+It could be because of additional quantitative metrics or even qualitative factors.
+
+Certainly, the revenue growth numbers in the 30s in terms of percentage growth numbers is much higher than the forecasts for Overstock and Wayfair.
+
+So, for Shopify, if you recall, 2021 revenue growth on 2020 was 37% and 2022 revenue growth from 2021 was 31%.
+
+So, yes, the revenue growth numbers are forecasted to be higher, but it could also be because of other quantitative and qualitative factors.
+
+It's obviously a huge difference in revenue multiple when you look at Shopify versus Overstock and Wayfair.
+
+So, it obviously might be worth continuing at this stage to investigate why Shopify has such a high revenue multiple and also price earnings multiple in order to see what the market rewards in the sector.
+
+So, it's probably worth finding out the reason why this is happening.
+
+And just to give you a clue, it's not just about the revenue growth number, okay?
+
+It's also about how they make their revenue.
+
+So, check in the financial statements that we looked at earlier for sales and services revenue and what they've called other revenue and compare this to Wayfair and Overstock.
+
+And then you can do further investigation on that.
+
+But as mentioned previously with Shopify, it doesn't fall into the traders remit of the volatility and 20 to 60 day time horizon because of the size of the company and the company reaching maturity.
+
+So, you would still do further work on it to get the context of what the market is rewarding in the sector and why.
+
+But we would be looking more towards stocks and companies like Overstock as traders and portfolio managers for trade ideas.
+
+So, what we have shown you here is the process.
+
+It's the process that you go through when analyzing the most important fundamental data in a sector when you're trying to identify potential long ideas.
+
+We systematically went through price earnings ratio, earnings growth, market capitalization, revenue growth and even revenue multiples and started interpreting the data and digging deeper to try and find the answers.
+
+What we are doing here and what we are trying to do all the time, whether it's a long or a short idea, we are looking for fundamental tailwinds, directional tailwinds.
+
+The answer we want here is a yes or a no as to whether Overstock is a fundamental buy at this moment in time.
+
+Now, of course, things will change in the future and Overstock is an example.
+
+Please don't be the dummy that comes up with this idea and just copy trades it and or hindsight the work that's been done.
+
+We are showing you the process here.
+
+It's not yet an idea or even a trade at this stage.
+
+Please focus on the process.
+
+The exercises we went through, for example, with R&D spend apply in this sector because it's obviously important for this sector.
+
+How do we know this?
+
+Well, through our lines of inquiry after interpretation because the valuations are telling us that it's not just about the level of earnings for a stock in this sector.
+
+We realize that we have to look at revenue growth and the progression to maturity of a company.
+
+However, regardless, the process that we went through identified the fundamentals that we have to focus on for this particular sector.
+
+If we didn't engage in the process, if we didn't engage in the process, if we didn't ask the obvious questions and keep digging, we would never know.
+
+So, this is why sticking to the process is so important, guys.
+
+The process itself is what you need to focus on because it's applicable to every single sector and it's a repeatable process.
+
+That's why we use it because repeatable processes lead to generating a large amount of high quality trade ideas, which leads to consistent returns.
+
+So, a robust and repeatable process is required.
+
+So, you must focus on the process.
+
+So, now we always get this question at ITPM from retail traders starting out.
+
+So, beginners, when you first experience earnings growth, people always ask the question, what is a good or bad level of earnings growth?
+
+Well, let's start with this.
+
+Well, let's start with this.
+
+Just because a company has negative EPS, for example, so it loses money, it doesn't mean it's a short.
+
+You've just witnessed that here when we've looked at this sector.
+
+Companies like Shopify or Overstock, they lost money for years at the earnings per share level because it was part of their management operating plan.
+
+They were growing the top line intentionally by plowing revenue out of R&D spent.
+
+When you go through your process, you will have to interpret data and figure out what is good and bad to identify both positive and negative outliers.
+
+And part of this process, as you've witnessed today, is the process of filtering for earnings growth.
+
+So, the natural question, and obviously we don't blame people for asking this question, the obvious question is what is a good and bad level of earnings growth?
+
+Well, this can be measured on both a relative and absolute basis.
+
+When you pull up a sector and you have all of the data in front of you in the tables, you can obviously sum up the column for earnings growth and work out the mean average consensus earnings growth for a particular sector by just dividing by the number of stocks in the sector.
+
+And you will then be able to visually or optically see the positive and negative outliers very easily.
+
+However, this does cut with a caveat.
+
+Absolute earnings growth also matters.
+
+If you find that the average for a sector is negative, for example, and the most positive outlier has earnings growth of, say, 5%.
+
+Why in the hell, as traders, would we want to be longer stock that barely has earnings growth above the rate of inflation?
+
+As traders, we simply don't.
+
+We want to be long great stocks that go up and short bad stocks that go down within our 20 to 60 day time horizon.
+
+There are obviously better longs out there than stocks with crappy low 5% earnings growth.
+
+Remember, money likes growth and dislikes slow downs in growth and even worse, contraction.
+
+So, guys, this brings us to the end of this stage of the trade idea generation process.
+
+Let's go back to the desk for a quick recap.
+
+Okay, so welcome back to the desk.
+
+Surprise, surprise.
+
+Money likes growth.
+
+So we start, guys, with our P ratio, price earnings ratio.
+
+That is our first clue when we're looking at stocks to what the market likes or dislikes.
+
+So we start with price earnings ratio and we work backwards price earnings ratio.
+
+Then we move on to earnings growth and revenue growth.
+
+Always remember, guys, always remember this.
+
+There is always a reason why a stock trades on a premium or a discount to its sector peers.
+
+There is always a reason.
+
+There is always a reason.
+
+And nine times out of 10 or even more than that throughout stock market history, it will be because the stock itself has superior or inferior earnings growth and or revenue growth.
+
+So something will be driving that growth.
+
+There's always something behind it.
+
+So there's always a reason why it's happening.
+
+And there will be something behind it driving it.
+
+There'll be something that the market just likes or dislikes about the stock.
+
+Hence the premium valuation or the discount valuation.
+
+So we're going to look at fundamental drivers later on in the video series.
+
+But for now, we continue with the quantitative processing steps.
+
+So we identify what the market likes and dislikes with price earnings ratio.
+
+We then move to earnings growth and revenue growth.
+
+And then we move on to peg ratio.
+
+So as we move through the quantitative phase, utilizing our processes with obviously correct interpretation.
+
+What are we actually doing here?
+
+We are building up a picture of the sector and identifying the positive and negative outliers.
+
+And we're looking obviously in the end for our potential long and short trade ideas.
+
+So guys, let's continue with the quantitative processing steps.
+
+And let's move on and look in the next video at peg ratio.

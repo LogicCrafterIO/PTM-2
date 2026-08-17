@@ -1,0 +1,2835 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.0,
+      "text": "Okay guys, here we go. We're at video 20 now. And in this one, I'm going to explain the concept of beta. So why it's useful to us and how we can calculate it at both the equity level and the portfolio level as well. I'm going to start by explaining what beta is and why it's useful. And then I'll move on to show you the model behind beta using an Excel example."
+    },
+    {
+      "start": 29.0,
+      "end": 52.36,
+      "text": "Following that, we'll run through some ways that you can calculate beta yourselves, both as a snapshot value and in the form of a time series for individual stocks. And then at the end of the video, we're going to look at how you can use beta at the portfolio level to give you an understanding of your market exposure. And that's going to enable you to make decisions about hedging and position sizing within the portfolio."
+    },
+    {
+      "start": 53.56,
+      "end": 66.38,
+      "text": "So what is beta? Let me give you a simplified version first. Essentially, beta is a statistic that estimates the economic sensitivity of a stock or a portfolio of stocks to the market as a whole."
+    },
+    {
+      "start": 66.9,
+      "end": 86.76,
+      "text": "And by definition, the market has a beta value of 1. And basically, that acts as a reference point from which individual stocks beta is estimated around. So if an individual stock has a beta of 2, then for a given unit of return in the market, we would expect the stock to move twice as much in the same direction."
+    },
+    {
+      "start": 86.82,
+      "end": 98.82,
+      "text": "For example, if the stock market as a whole increase by 1%, then we would expect the individual stock to increase by 2% if that stock had a beta of 2%."
+    },
+    {
+      "start": 98.82,
+      "end": 110.74,
+      "text": "Conversely, if the market decreased by 1%, we would expect the stock to decrease by 2%. So the sort of increases and decreases are magnified by a factor of beta."
+    },
+    {
+      "start": 111.7,
+      "end": 120.88,
+      "text": "So if a stock has a beta value of greater than 1, what we can say about it is that it's more economically sensitive than the market as a whole."
+    },
+    {
+      "start": 120.98,
+      "end": 124.68,
+      "text": "And if it has a value of less than 1%, we would say it's less sensitive."
+    },
+    {
+      "start": 125.5,
+      "end": 131.72,
+      "text": "Now, perhaps the easiest way to start thinking about this is in terms of cyclical and defensive equities."
+    },
+    {
+      "start": 132.36,
+      "end": 143.58,
+      "text": "So by definition, cyclical equities have earnings that are economically sensitive to the business cycle, which in turn means that the price of those equities are also sensitive to the business cycle."
+    },
+    {
+      "start": 143.58,
+      "end": 148.48,
+      "text": "So think of discretionary purchases like travel, as an example."
+    },
+    {
+      "start": 149.22,
+      "end": 155.48,
+      "text": "If the economy is in a bad way, then it's much less likely that consumers will spend lots of money on vacations."
+    },
+    {
+      "start": 156.1,
+      "end": 167.86,
+      "text": "All else being equal then, we could guess that these companies have a beta value of greater than 1 because we would expect that their stock prices are more sensitive than the market as a whole to these economic fluctuations."
+    },
+    {
+      "start": 168.36,
+      "end": 174.64,
+      "text": "And conversely, we can think of defensive stocks like grocery stores at the opposite end of the scale."
+    },
+    {
+      "start": 174.9,
+      "end": 178.26,
+      "text": "People need to buy groceries irrelevant of the economic situation."
+    },
+    {
+      "start": 178.52,
+      "end": 183.9,
+      "text": "And so those companies are likely to be less sensitive to economic fluctuations than the market as a whole."
+    },
+    {
+      "start": 184.9,
+      "end": 194.2,
+      "text": "As a little detour for a moment, if you take a look at the sheet I've got open here, it contains details, including beta values, on a large list of US equities."
+    },
+    {
+      "start": 194.2,
+      "end": 209.22,
+      "text": "And included in that list are almost 5,000 companies with GICS sector and industry classifications, so that's G-I-C-S classifications, along with market cap data and beta values."
+    },
+    {
+      "start": 209.7,
+      "end": 213.82,
+      "text": "All of these values are accurate as of the 11th of September 2021."
+    },
+    {
+      "start": 214.48,
+      "end": 224.92,
+      "text": "And so most likely they aren't going to be applicable for your own work in the future, but I did want to include them just so that you had an idea of what the beta values for these companies were at the time of filming."
+    },
+    {
+      "start": 225.44,
+      "end": 237.86,
+      "text": "As well as that, perhaps more usefully, I've aggregated all of the stock data to come up with market-weighted beta values for every GICS sector, subsector, industry group and industry."
+    },
+    {
+      "start": 237.86,
+      "end": 250.5,
+      "text": "And those values are unlikely to change very much in the near future, so they will give you a good idea of what sectors and industries are sort of sensitive, more sensitive and less sensitive to the economic cycle."
+    },
+    {
+      "start": 251.46,
+      "end": 258.84,
+      "text": "Anyway, let me now dive in a little bit deeper and talk to you about where the statistic of beta that we're discussing here actually stems from."
+    },
+    {
+      "start": 258.84,
+      "end": 268.14,
+      "text": "And it comes from a couple of different financial models, namely the single index model and the capital asset pricing model, but they both use basically the same theory."
+    },
+    {
+      "start": 268.3,
+      "end": 275.96,
+      "text": "The idea of these models is to explain the returns of an asset using a single factor, so the returns of the market."
+    },
+    {
+      "start": 275.96,
+      "end": 286.92,
+      "text": "And any error or excess return in these models is identified as either sort of firm-specific risk or something called alpha, depending on the model and the context in which it's being used."
+    },
+    {
+      "start": 287.32,
+      "end": 298.3,
+      "text": "None of that stuff sort of really matters, all we're concerned with here is that we can create a simple model that estimates how much a stock moves in relation to the market based on past data."
+    },
+    {
+      "start": 298.3,
+      "end": 311.0,
+      "text": "That gives us a value called beta, and we can then use that number to accomplish various things like hedging risks or understanding portfolio exposure, position sizing and volatility estimation."
+    },
+    {
+      "start": 311.38,
+      "end": 315.82,
+      "text": "And we're going to be doing some of that stuff later in the video through some practical Excel work."
+    },
+    {
+      "start": 316.94,
+      "end": 323.92,
+      "text": "Okay, I've made a lot of references to the market so far, and you might be wondering what I actually mean by that."
+    },
+    {
+      "start": 324.46,
+      "end": 331.38,
+      "text": "Basically, when I say the market, I typically mean the whole equity market that's related to the stock that we're analysing."
+    },
+    {
+      "start": 331.38,
+      "end": 334.94,
+      "text": "So for US stocks, that would be the US equity market."
+    },
+    {
+      "start": 335.48,
+      "end": 340.28,
+      "text": "Now, it's not very easy to get returns data for the entire US stock market on aggregate."
+    },
+    {
+      "start": 340.92,
+      "end": 348.88,
+      "text": "And so what we can do is use an approximation for the market by looking at the returns for US stock indices like the S&P 500."
+    },
+    {
+      "start": 349.38,
+      "end": 358.84,
+      "text": "And as it turns out, the S&P 500 is actually a pretty good approximation for the market as a whole, because it accounts for the majority of economic output of listed companies."
+    },
+    {
+      "start": 359.64,
+      "end": 371.04,
+      "text": "So let's have a look at the spreadsheet now, and to start things off, I'm going to talk about something called a simple linear regression model, which defines an equation with which we can then retrieve beta from."
+    },
+    {
+      "start": 372.48,
+      "end": 379.96,
+      "text": "Okay, as you can see here, there's four sheets in this workbook, which, by the way, you'll be able to download yourselves in the downloads area for this video."
+    },
+    {
+      "start": 380.92,
+      "end": 390.42,
+      "text": "We're going to work from right to left here, starting with calculating beta at the individual asset level, and then moving up to the portfolio level at the end of the video."
+    },
+    {
+      "start": 391.3,
+      "end": 397.12,
+      "text": "All right, so let's look at this equity beta sheet first, and I'll explain what's going on here."
+    },
+    {
+      "start": 397.64,
+      "end": 406.72,
+      "text": "What we've got is a sheet prefilled with weekly prices and returns for the S&P 500 and two stocks, Sanderson Farms and Fluor Corporation."
+    },
+    {
+      "start": 407.68,
+      "end": 411.72,
+      "text": "Prices are in columns B to D, and returns are in columns E through G."
+    },
+    {
+      "start": 412.36,
+      "end": 420.14,
+      "text": "On the right-hand side of the sheet, there are some short company descriptions for each stock, and they describe the sort of business that they're in."
+    },
+    {
+      "start": 420.14,
+      "end": 426.88,
+      "text": "So if you take a look, Sanderson Farms is basically a poultry company, whilst Fluor Corporation is an engineering business."
+    },
+    {
+      "start": 428.38,
+      "end": 436.22,
+      "text": "Now, in the middle of the sheet, I've got a scatterplot chart showing the weekly returns data for both Sanderson Farms and the S&P 500,"
+    },
+    {
+      "start": 436.54,
+      "end": 442.86,
+      "text": "where Sanderson Farms returns are plotted on the y-axis, and S&P 500 returns are plotted on the x-axis."
+    },
+    {
+      "start": 443.48,
+      "end": 449.14,
+      "text": "So each dot on the chart basically represents a weekly observation for the two sets of returns."
+    },
+    {
+      "start": 449.14,
+      "end": 458.86,
+      "text": "So for example, if we look at the 25th of June observation here, we can see that Sanderson Farms returned 24.61% that week,"
+    },
+    {
+      "start": 459.0,
+      "end": 461.94,
+      "text": "and the S&P 500 returned 2.74%."
+    },
+    {
+      "start": 461.94,
+      "end": 466.94,
+      "text": "In the chart, that would be one of these dots that you can see around here."
+    },
+    {
+      "start": 467.04,
+      "end": 475.04,
+      "text": "And we know that because if we look across from those points to the y-axis, you can see the return value for Sanderson Farms is around 25%."
+    },
+    {
+      "start": 475.04,
+      "end": 484.88,
+      "text": "Whilst if we look down from those points to the x-axis, you can also observe that the value for S&P returns is around 2.5%."
+    },
+    {
+      "start": 484.88,
+      "end": 495.78,
+      "text": "As well as the dots representing each weekly observation in our data, I've also got a black dotted line running through all of these points,"
+    },
+    {
+      "start": 495.84,
+      "end": 499.84,
+      "text": "which actually represents what's called a simple linear regression line."
+    },
+    {
+      "start": 500.4,
+      "end": 507.8,
+      "text": "That line's calculated by minimizing the summed squared vertical distances between all observations and their means,"
+    },
+    {
+      "start": 507.9,
+      "end": 511.74,
+      "text": "which is known as the ordinary least squared method."
+    },
+    {
+      "start": 512.18,
+      "end": 514.58,
+      "text": "However, you know, you guys don't really need to know that."
+    },
+    {
+      "start": 514.68,
+      "end": 520.36,
+      "text": "You guys can just think of it basically as a line of best fit through all of this data."
+    },
+    {
+      "start": 521.56,
+      "end": 527.28,
+      "text": "Anyway, that line can be represented by an equation known as the regression equation."
+    },
+    {
+      "start": 527.28,
+      "end": 531.16,
+      "text": "And in this example, I've written that in the top right of the chart."
+    },
+    {
+      "start": 531.36,
+      "end": 538.88,
+      "text": "So the equation is y equals 0.5656x plus 0.0022."
+    },
+    {
+      "start": 540.1,
+      "end": 544.5,
+      "text": "Now, for those of you that can remember back to your high school maths,"
+    },
+    {
+      "start": 544.92,
+      "end": 549.46,
+      "text": "you'd know that this equation is in the form of a straight line."
+    },
+    {
+      "start": 550.06,
+      "end": 554.14,
+      "text": "When I was at school, we learned that in the form of y equals mx plus c,"
+    },
+    {
+      "start": 554.14,
+      "end": 563.36,
+      "text": "where every y value could be worked out as some coefficient m multiplied by the related x observation plus some constant."
+    },
+    {
+      "start": 563.96,
+      "end": 566.2,
+      "text": "So what does that actually mean?"
+    },
+    {
+      "start": 567.22,
+      "end": 574.38,
+      "text": "Well, our y observations here are our Sanderson farm returns and our x observations are S&P 500 returns."
+    },
+    {
+      "start": 574.94,
+      "end": 590.82,
+      "text": "So the model equation estimates on average that the returns for Sanderson farms are equal to multiplying the S&P 500 returns over the same period by 0.5656 and adding 0.0022 or 0.22%."
+    },
+    {
+      "start": 590.82,
+      "end": 595.98,
+      "text": "Now, remember earlier when I described what beta was."
+    },
+    {
+      "start": 596.8,
+      "end": 603.56,
+      "text": "It's essentially a measure of sensitivity of a stock's returns to the market or the S&P 500 in this case."
+    },
+    {
+      "start": 604.1,
+      "end": 609.46,
+      "text": "So the value of sensitivity here can simply be measured by calculating the gradient of this line,"
+    },
+    {
+      "start": 609.46,
+      "end": 617.04,
+      "text": "since that represents the change in predicted Sanderson farm returns given a unit change in S&P 500 returns."
+    },
+    {
+      "start": 617.72,
+      "end": 623.54,
+      "text": "The gradient of a straight line is just the coefficient of the equation before the x observation."
+    },
+    {
+      "start": 623.54,
+      "end": 630.34,
+      "text": "So in the case of the slope or gradient here, it's 0.5656."
+    },
+    {
+      "start": 631.38,
+      "end": 637.7,
+      "text": "That means, for example, if S&P 500 returns are expected to increase by 5%,"
+    },
+    {
+      "start": 637.7,
+      "end": 649.4,
+      "text": "then Sanderson farms returns would be expected to increase by 5% multiplied by that 0.5656 number, which is about 2.8%."
+    },
+    {
+      "start": 649.4,
+      "end": 656.74,
+      "text": "So let's go through a quick calculation example using the equation just to reinforce that concept."
+    },
+    {
+      "start": 657.46,
+      "end": 662.76,
+      "text": "If our x value, S&P 500 returns, that is, measures 0%,"
+    },
+    {
+      "start": 662.76,
+      "end": 668.52,
+      "text": "then the regression model equation we have predicts that our y value, which is our Sanderson farm returns,"
+    },
+    {
+      "start": 669.08,
+      "end": 677.28,
+      "text": "should be equal to 0.5656 times by 0 plus 0.0022, okay?"
+    },
+    {
+      "start": 677.6,
+      "end": 682.12,
+      "text": "And that is obviously just the constant at the end, which is 0.22%."
+    },
+    {
+      "start": 682.12,
+      "end": 690.56,
+      "text": "If the S&P 500 return measures 5%, then our regression equation predicts that Sanderson farms return"
+    },
+    {
+      "start": 690.56,
+      "end": 704.9,
+      "text": "should be 0.5656 times 5% or 0.05 plus 0.0022, which equals 0.03 roughly or 3.048%."
+    },
+    {
+      "start": 704.9,
+      "end": 712.1,
+      "text": "And you can see there that an increase in S&P 500 returns of 5% led to a predicted increase"
+    },
+    {
+      "start": 712.1,
+      "end": 715.56,
+      "text": "of about 2.8% in Sanderson farm returns."
+    },
+    {
+      "start": 716.68,
+      "end": 721.38,
+      "text": "Now, hopefully all of that made sense, but basically what I've done here"
+    },
+    {
+      "start": 721.38,
+      "end": 728.86,
+      "text": "is generate a simple linear regression line using the returns data we have for the S&P 500 and Sanderson farms."
+    },
+    {
+      "start": 729.24,
+      "end": 735.16,
+      "text": "The equation for that line represents a model that aims to predict the returns for Sanderson farms"
+    },
+    {
+      "start": 735.16,
+      "end": 738.34,
+      "text": "based on the returns over the same period for the S&P 500."
+    },
+    {
+      "start": 738.86,
+      "end": 745.32,
+      "text": "The gradient of the line tells us the sensitivity of Sanderson farms returns to the S&P 500,"
+    },
+    {
+      "start": 745.32,
+      "end": 749.08,
+      "text": "which is simply the coefficient of our X values in the equation."
+    },
+    {
+      "start": 749.24,
+      "end": 752.92,
+      "text": "So in this case, that value is 0.5656."
+    },
+    {
+      "start": 753.04,
+      "end": 755.74,
+      "text": "And that is our estimation of beta."
+    },
+    {
+      "start": 756.7,
+      "end": 764.06,
+      "text": "Since that value of beta is less than 1, it means we should expect Sanderson farms returns to be less economically sensitive than the market as a whole,"
+    },
+    {
+      "start": 764.18,
+      "end": 766.54,
+      "text": "as represented by the S&P 500 index."
+    },
+    {
+      "start": 767.18,
+      "end": 771.42,
+      "text": "And more specifically, it predicts, given the underlying data set that we've used,"
+    },
+    {
+      "start": 771.96,
+      "end": 783.12,
+      "text": "that any change in returns for Sanderson farms will be equal to around 0.5656 multiplied by the change in returns seen in the S&P 500 over the same period."
+    },
+    {
+      "start": 784.2,
+      "end": 787.78,
+      "text": "Okay, don't worry at this stage if I've lost you."
+    },
+    {
+      "start": 788.18,
+      "end": 792.84,
+      "text": "Realistically, all you need to know here is how to calculate beta for a stock, which I'm going to show you now,"
+    },
+    {
+      "start": 793.02,
+      "end": 796.38,
+      "text": "and also what beta represents, which we've kind of been through already."
+    },
+    {
+      "start": 797.04,
+      "end": 801.08,
+      "text": "So to that end, let me drill this home though one more time."
+    },
+    {
+      "start": 802.2,
+      "end": 805.66,
+      "text": "Beta represents the economic sensitivity of an asset."
+    },
+    {
+      "start": 805.66,
+      "end": 810.32,
+      "text": "And by definition, the market has a beta value of 1."
+    },
+    {
+      "start": 810.44,
+      "end": 815.82,
+      "text": "And so any stock that has a beta of over 1 is said to be more economically sensitive than the market."
+    },
+    {
+      "start": 816.26,
+      "end": 817.74,
+      "text": "So think cyclical sectors."
+    },
+    {
+      "start": 818.34,
+      "end": 824.12,
+      "text": "And any stock with a beta of less than 1 is said to be less economically sensitive than the market."
+    },
+    {
+      "start": 824.24,
+      "end": 826.24,
+      "text": "So think defensive sectors."
+    },
+    {
+      "start": 827.24,
+      "end": 835.44,
+      "text": "If a stock has a beta of 1, it means that a simple linear regression model predicts that for every 1% change in returns for the market,"
+    },
+    {
+      "start": 835.82,
+      "end": 838.5,
+      "text": "there will also be a 1% change in returns for the stock."
+    },
+    {
+      "start": 838.9,
+      "end": 846.34,
+      "text": "If a stock has a beta of 0.5, then we can estimate for every 1% change in return in the market,"
+    },
+    {
+      "start": 846.7,
+      "end": 851.38,
+      "text": "there is a 0.5% change in returns for the stock in the same direction."
+    },
+    {
+      "start": 851.38,
+      "end": 852.56,
+      "text": "And that's a key point here."
+    },
+    {
+      "start": 853.44,
+      "end": 858.66,
+      "text": "When beta values are positive, it means the changes will be in the same direction as the market."
+    },
+    {
+      "start": 859.54,
+      "end": 863.2,
+      "text": "In the unlikely scenario that you calculate a negative beta,"
+    },
+    {
+      "start": 863.8,
+      "end": 870.8,
+      "text": "then that would suggest that changes in stock returns move in the opposite direction to changes in market returns."
+    },
+    {
+      "start": 871.8,
+      "end": 875.84,
+      "text": "Okay, so you'll be pleased to know now that I'm done clarifying beta."
+    },
+    {
+      "start": 876.26,
+      "end": 879.24,
+      "text": "So let's move on to how to calculate it in Excel now."
+    },
+    {
+      "start": 879.24,
+      "end": 881.08,
+      "text": "And we can do this in a number of ways."
+    },
+    {
+      "start": 881.38,
+      "end": 886.28,
+      "text": "The first way I'm going to show you is via a scatterplot chart, as I've done here with Sanderson Farms,"
+    },
+    {
+      "start": 886.36,
+      "end": 892.82,
+      "text": "except this time I'm going to go through the whole process of creating the chart and the equation for Fluor Corporation."
+    },
+    {
+      "start": 894.3,
+      "end": 899.66,
+      "text": "Although this is, you know, by no means the quickest way of estimating beta,"
+    },
+    {
+      "start": 900.08,
+      "end": 903.2,
+      "text": "it will teach you a few more things about charting in Excel."
+    },
+    {
+      "start": 903.2,
+      "end": 907.74,
+      "text": "And I think it's always handy, really, to be able to generate scatterplot charts,"
+    },
+    {
+      "start": 907.8,
+      "end": 913.04,
+      "text": "given it's a great way of visualizing and understanding data and relationships between variables."
+    },
+    {
+      "start": 913.3,
+      "end": 918.04,
+      "text": "And, you know, that knowledge can be translated to other applications as well,"
+    },
+    {
+      "start": 918.14,
+      "end": 919.9,
+      "text": "so other data analysis applications."
+    },
+    {
+      "start": 921.18,
+      "end": 929.08,
+      "text": "So to begin with, I'm just going to select cell I-21 and then go to insert on the ribbon and choose to insert a scatterplot chart."
+    },
+    {
+      "start": 930.08,
+      "end": 938.02,
+      "text": "Once that's done, I'm going to get a blank chart area appear and I'm just going to move and resize that so that it looks roughly the same as the Sanderson Farms chart area above."
+    },
+    {
+      "start": 938.16,
+      "end": 944.68,
+      "text": "And then we're going to right-click within that chart area and go to select data to add the data series that we need."
+    },
+    {
+      "start": 945.36,
+      "end": 948.92,
+      "text": "To do that, I'm going to click the add series button on the left-hand side."
+    },
+    {
+      "start": 950.18,
+      "end": 955.44,
+      "text": "The series name is just going to be FLR versus SP500 returns."
+    },
+    {
+      "start": 955.82,
+      "end": 963.64,
+      "text": "Okay, that's just because we're plotting a scatterplot chart of our weekly observations for Fluor Corporation versus S&P 500 returns here."
+    },
+    {
+      "start": 964.3,
+      "end": 972.34,
+      "text": "Now, our X values are going to be our market returns, our S&P 500 returns, and our Y values are going to be our stock returns."
+    },
+    {
+      "start": 972.44,
+      "end": 975.58,
+      "text": "And that has to be the case whenever you're calculating beta."
+    },
+    {
+      "start": 975.8,
+      "end": 977.7,
+      "text": "Y values are always going to be stock returns."
+    },
+    {
+      "start": 977.84,
+      "end": 980.04,
+      "text": "X values are always going to be market returns."
+    },
+    {
+      "start": 980.04,
+      "end": 995.52,
+      "text": "So, our X values are going to run from cell E2 down to cell, I think, E2000 and something."
+    },
+    {
+      "start": 996.52,
+      "end": 1004.24,
+      "text": "Okay, so cell E2,165."
+    },
+    {
+      "start": 1004.32,
+      "end": 1012.1,
+      "text": "The reason why I'm making the range down to that row is so that it matches the length of our Fluor Corporation returns."
+    },
+    {
+      "start": 1012.1,
+      "end": 1019.48,
+      "text": "Okay, and when you're doing analysis like this, the ranges, the arrays that you pick always have to be the same length."
+    },
+    {
+      "start": 1019.68,
+      "end": 1028.12,
+      "text": "Okay, so that's our X values, our market returns, so our Y values are just going to be the same sort of references, but in column G."
+    },
+    {
+      "start": 1028.28,
+      "end": 1033.32,
+      "text": "So, from cell G2 down to cell G2165."
+    },
+    {
+      "start": 1033.74,
+      "end": 1037.18,
+      "text": "Then we're going to press OK and OK again."
+    },
+    {
+      "start": 1037.92,
+      "end": 1039.4,
+      "text": "Scroll back to the top of the chart."
+    },
+    {
+      "start": 1040.4,
+      "end": 1048.94,
+      "text": "And we can see that we've got sort of a baseline chart here that looks somewhat like the scatter plot chart that we've got for Sanderson Farms above."
+    },
+    {
+      "start": 1049.6,
+      "end": 1052.66,
+      "text": "There's a few things we need to do to tidy this up, though."
+    },
+    {
+      "start": 1052.66,
+      "end": 1059.84,
+      "text": "The first of which is move our X and Y axes to the edges of the chart."
+    },
+    {
+      "start": 1060.1,
+      "end": 1066.08,
+      "text": "So, we want the Y axis that's in the center here over to the left and the X axis in the center here down to the bottom."
+    },
+    {
+      "start": 1066.44,
+      "end": 1075.3,
+      "text": "So, to do that, I'm going to double-click the Y axis first, go to labels on the right-hand side in this format axis panel and choose label position as low."
+    },
+    {
+      "start": 1075.6,
+      "end": 1081.62,
+      "text": "Then we're going to do exactly the same thing for our X axis, so double-click that within this format axis panel."
+    },
+    {
+      "start": 1082.18,
+      "end": 1086.34,
+      "text": "I'm going to, so format axis panel within the axis options tab, I should say."
+    },
+    {
+      "start": 1086.34,
+      "end": 1092.46,
+      "text": "I'm going to go to the labels section and choose label position as low again."
+    },
+    {
+      "start": 1093.58,
+      "end": 1096.04,
+      "text": "Okay, so that's looking quite a lot better."
+    },
+    {
+      "start": 1097.12,
+      "end": 1103.88,
+      "text": "Another thing I think that we should probably do is increase the text size of these X and Y labels."
+    },
+    {
+      "start": 1103.88,
+      "end": 1110.5,
+      "text": "So, I'm going to click on the Y axis again, go to home on the ribbon and just knock up the text size."
+    },
+    {
+      "start": 1111.88,
+      "end": 1116.24,
+      "text": "Probably to 10 points for this one and the same for our X axis as well."
+    },
+    {
+      "start": 1117.82,
+      "end": 1124.3,
+      "text": "Okay, next what we'll do is edit our observation points themselves."
+    },
+    {
+      "start": 1124.3,
+      "end": 1136.18,
+      "text": "So, at the moment they're just all kind of opaque blue circles and you can see in the chart above standards and farms, they're kind of a slightly transparent circle with a border around them."
+    },
+    {
+      "start": 1136.18,
+      "end": 1150.14,
+      "text": "And the reason why I quite like showing dot plots with a sort of transparent center in the markers is just so that you can kind of see when there's loads and loads of them piled on top of each other because the color becomes very opaque."
+    },
+    {
+      "start": 1150.14,
+      "end": 1153.48,
+      "text": "So, you can kind of see where the data is really concentrated."
+    },
+    {
+      "start": 1153.48,
+      "end": 1156.04,
+      "text": "So, let's do that now with this series here."
+    },
+    {
+      "start": 1156.04,
+      "end": 1157.7,
+      "text": "So, I'm just going to click on that series."
+    },
+    {
+      "start": 1157.7,
+      "end": 1164.6,
+      "text": "So, any of those data points and then in the format data series panel on the right hand side, go to fill and line."
+    },
+    {
+      "start": 1164.6,
+      "end": 1189.98,
+      "text": "Choose the marker options down here and this is fine actually marker options can stay as circles, but if we go to the fill section of this tab, then we're going to choose solid fill and just make the transparency instead of 0% 50% and you can see that that's changed the sort of transparency of all of those markers in that chart already."
+    },
+    {
+      "start": 1189.98,
+      "end": 1205.22,
+      "text": "Then I'm going to go to the border section, click solid line, press OK to making these changes as we're going and make the border just the same color basically and keep the transparency as 0."
+    },
+    {
+      "start": 1205.22,
+      "end": 1207.22,
+      "text": "So, that's fine."
+    },
+    {
+      "start": 1207.22,
+      "end": 1211.58,
+      "text": "That's basically all I wanted to do there and now the charts looking pretty good."
+    },
+    {
+      "start": 1211.58,
+      "end": 1217.78,
+      "text": "It's we've pretty much done everything that we need to do in terms of aesthetics."
+    },
+    {
+      "start": 1217.78,
+      "end": 1227.26,
+      "text": "We now need to move on to plotting the kind of regression line, the line of best fit that goes through all of this data and also the regression equation that goes with it."
+    },
+    {
+      "start": 1227.26,
+      "end": 1238.54,
+      "text": "So, to do that, I'm selecting this chart again and I'm going to go to chart design on the ribbon, add chart element, choose trend line and linear trend line."
+    },
+    {
+      "start": 1238.54,
+      "end": 1243.98,
+      "text": "So, that's going to add a blue dotted line and if I double click on that blue dotted line, we can then format that."
+    },
+    {
+      "start": 1243.98,
+      "end": 1247.5,
+      "text": "I'm going to format it to a solid line that is black in color instead."
+    },
+    {
+      "start": 1247.5,
+      "end": 1252.26,
+      "text": "So, it's a bit easier to see on the background of all those blue data points."
+    },
+    {
+      "start": 1252.26,
+      "end": 1266.86,
+      "text": "And then within this panel, I can choose the trend line options tab at the top right here and choose to display the equation of that line on the chart and the R squared value as well."
+    },
+    {
+      "start": 1266.86,
+      "end": 1272.74,
+      "text": "So, I've just ticked those two checkboxes here and you can see that the equation R squared value has appeared there."
+    },
+    {
+      "start": 1272.74,
+      "end": 1286.86,
+      "text": "So, I'm just going to click and drag, left click and drag that to the top right so it's in the same position as we have it for Sanderson Farms and then on the home tab of the ribbon, just increase the text size again so we can see that a bit more easily."
+    },
+    {
+      "start": 1286.86,
+      "end": 1297.62,
+      "text": "Okay, so that's our scatter plot chart done for Fluor Corporation and we've added a simple linear regression line with the equation defined in the top right."
+    },
+    {
+      "start": 1297.62,
+      "end": 1302.98,
+      "text": "Now is probably a good time to mention what the R squared number is all about as well."
+    },
+    {
+      "start": 1302.98,
+      "end": 1308.54,
+      "text": "Basically, that's a measure of how well the linear model explains all of the data."
+    },
+    {
+      "start": 1308.54,
+      "end": 1316.54,
+      "text": "So, if the value is 1, it would explain all of the data perfectly and in this way, it's pretty much the same as what we saw with values of correlation."
+    },
+    {
+      "start": 1316.54,
+      "end": 1323.38,
+      "text": "in the previous video, the greater the dispersion around the line, the weaker the model."
+    },
+    {
+      "start": 1323.38,
+      "end": 1333.9,
+      "text": "I include these numbers really only as a reference, they don't necessarily affect the value that we take for beta since we know we're only estimating that based on the data that we have anyway."
+    },
+    {
+      "start": 1333.9,
+      "end": 1342.14,
+      "text": "However, I do think it's interesting to get a basic understanding of how well the model predicts or fits the data."
+    },
+    {
+      "start": 1342.14,
+      "end": 1346.22,
+      "text": "Anyway, with that scatter plot chart done, we can see the regression"
+    },
+    {
+      "start": 1346.22,
+      "end": 1357.06,
+      "text": "equation equation we have to explain Fluor Corporation's returns is 1.3999 times the market return minus 0.0012."
+    },
+    {
+      "start": 1357.06,
+      "end": 1369.06,
+      "text": "From that, we know that the gradient of the line and hence our beta value for Fluor Corporation is at 1.3999 or let's just call it 1.4."
+    },
+    {
+      "start": 1369.06,
+      "end": 1375.9,
+      "text": "Let's note down our two lifetime beta values from the stocks that we're looking at now."
+    },
+    {
+      "start": 1375.9,
+      "end": 1383.9,
+      "text": "And I say lifetime beta because the beta values that we've estimated here are based on all of the available data that we have for these stocks going back in history."
+    },
+    {
+      "start": 1383.9,
+      "end": 1394.74,
+      "text": "So in cell V10, I'm going to type lifetime beta and in the cell below that V11, I'm going"
+    },
+    {
+      "start": 1394.74,
+      "end": 1405.58,
+      "text": "to type equals 0.5656 or just 0.5656, which is the beta value we have calculated for Sanderson Farms."
+    },
+    {
+      "start": 1405.58,
+      "end": 1418.42,
+      "text": "And before we go any further, let's think about these two beta estimates that we've got and whether they actually add up with our expectations."
+    },
+    {
+      "start": 1418.42,
+      "end": 1433.9,
+      "text": "Sanderson Farms is a poultry company and that's clearly in the food processing sector."
+    },
+    {
+      "start": 1433.9,
+      "end": 1445.18,
+      "text": "So we'd expect there to be demand for chicken irrelevant of what's going on in the broader economic cycles of both the US and the rest of the world."
+    },
+    {
+      "start": 1445.18,
+      "end": 1451.22,
+      "text": "So from that perspective, I think a beta estimation of well below one makes a lot of sense."
+    },
+    {
+      "start": 1451.22,
+      "end": 1458.62,
+      "text": "And so I'm not too worried about a significant error in that estimation purely based on economic logic in this instance."
+    },
+    {
+      "start": 1458.62,
+      "end": 1471.78,
+      "text": "Equally, Fluor Corporation is an engineering business providing sort of procurement, construction and fabrication services worldwide with large segments in energy, chemicals, mining and industrials."
+    },
+    {
+      "start": 1471.78,
+      "end": 1486.62,
+      "text": "And given those sectors drive the demand for Fluor Corporation services, we should expect that this company is quite sensitive to the economic cycle based on the fact that demand tends to fluctuate in those areas based on willingness to invest"
+    },
+    {
+      "start": 1486.62,
+      "end": 1503.14,
+      "text": "So again, this beta estimation of about 1.4 makes sense again and it sort of shows that company profits and hence returns are cyclical and more sensitive to the market as a whole."
+    },
+    {
+      "start": 1504.14,
+      "end": 1510.68,
+      "text": "Now, you'll be pleased to know you don't have to go through the process of building a scatterplot chart every time you want to obtain a beta value."
+    },
+    {
+      "start": 1511.16,
+      "end": 1524.0,
+      "text": "There are a couple of much quicker ways that being said, I did think it'd be useful to go through that charting process as you might find some of the techniques and ideas discussed useful in other applications, as I said earlier."
+    },
+    {
+      "start": 1524.0,
+      "end": 1531.92,
+      "text": "So let me show you a quicker method now to calculate beta by simply using a built in Excel function called the slope function."
+    },
+    {
+      "start": 1531.92,
+      "end": 1537.76,
+      "text": "So let's assume we want to calculate the two year beta for Sanderson Farms."
+    },
+    {
+      "start": 1537.76,
+      "end": 1548.76,
+      "text": "In cell V13, I'm going to type two year beta and in the cell below V14, I'm going to type in a formula which is equals slope."
+    },
+    {
+      "start": 1548.76,
+      "end": 1553.6,
+      "text": "Within the slope function, you can see we have two parameters to define."
+    },
+    {
+      "start": 1553.6,
+      "end": 1561.6,
+      "text": "This is just like we covered previously with correlation, we need to reference two arrays, one for our y values and one for our x values."
+    },
+    {
+      "start": 1561.6,
+      "end": 1568.6,
+      "text": "And like I said, when it comes to beta, our y values are always the stock returns and our x values are always the market returns."
+    },
+    {
+      "start": 1568.6,
+      "end": 1577.6,
+      "text": "And as with our correlation calculations in the previous video, the reference arrays must be the same length and over the same period as well."
+    },
+    {
+      "start": 1577.6,
+      "end": 1592.6,
+      "text": "So in this instance, we want a two year beta calculation, so we need to select data from row two down to row 106 for both columns F, the Sanderson Farm returns and column E, which contain our market returns."
+    },
+    {
+      "start": 1592.6,
+      "end": 1602.6,
+      "text": "That means the first array reference is F2 to F106 and the second one after a comma is inserted is E2 to E106."
+    },
+    {
+      "start": 1602.6,
+      "end": 1612.6,
+      "text": "When we close the brackets and press enter here, we can see that the calculation returns 0.45 and that is our two year beta estimate for Sanderson Farms."
+    },
+    {
+      "start": 1612.6,
+      "end": 1619.6,
+      "text": "Clearly, that estimate is a little bit below our previous lifetime estimation when we use the entire dataset available."
+    },
+    {
+      "start": 1619.6,
+      "end": 1626.6,
+      "text": "Again, this takes me back to some of the things I said in the previous video regarding the reliability of statistical estimates."
+    },
+    {
+      "start": 1626.6,
+      "end": 1632.6,
+      "text": "They're by no means perfect, and they are going to vary depending on the underlying data used."
+    },
+    {
+      "start": 1632.6,
+      "end": 1643.6,
+      "text": "The time window that you use to estimate things like beta and correlation depends on the logic that you want to use and potentially the availability of the data in the first place."
+    },
+    {
+      "start": 1643.6,
+      "end": 1653.6,
+      "text": "I think whenever you're making a decision on the observational data that you're using for your analysis, always remember the goal of your analysis in the first place."
+    },
+    {
+      "start": 1653.6,
+      "end": 1661.6,
+      "text": "So for beta and correlation, we want to use data that we think will give us the best estimate of what those values will be in the future."
+    },
+    {
+      "start": 1661.6,
+      "end": 1669.6,
+      "text": "Usually, that means finding a balance between using the most recent data, which arguably better reflects the current economic environment for the firm,"
+    },
+    {
+      "start": 1669.6,
+      "end": 1675.6,
+      "text": "whilst also making sure that there's enough data points to enable statistical rigor."
+    },
+    {
+      "start": 1675.6,
+      "end": 1685.6,
+      "text": "When it comes to beta, industry standards vary between using sort of two to five years of data on either monthly or weekly frequencies."
+    },
+    {
+      "start": 1685.6,
+      "end": 1692.6,
+      "text": "But I would argue that really you should be using weekly frequencies over any time up to the sort of five year time horizon."
+    },
+    {
+      "start": 1692.6,
+      "end": 1703.6,
+      "text": "For the most part, lifetime values are not used since both the sort of company and economic conditions have likely changed over that kind of length of period."
+    },
+    {
+      "start": 1703.6,
+      "end": 1709.6,
+      "text": "So with that being said, let's calculate the three and five year beta now quickly for Sanderson Farms."
+    },
+    {
+      "start": 1709.6,
+      "end": 1725.6,
+      "text": "So in cell W13, I'm typing three year beta and in the cell below that I'm going to type equals slope open brackets and then I'm going to choose Sanderson Farm returns going back three years."
+    },
+    {
+      "start": 1725.6,
+      "end": 1732.6,
+      "text": "So from F2 to F158 followed by a comma followed by selecting our market returns over the same period."
+    },
+    {
+      "start": 1732.6,
+      "end": 1742.6,
+      "text": "So that's E2 to E158 and I'm just typing this in because it's a little bit easier than sort of selecting to the correct row in this case and then close brackets."
+    },
+    {
+      "start": 1742.6,
+      "end": 1746.6,
+      "text": "Press enter and then we'll move on to the five year beta."
+    },
+    {
+      "start": 1746.6,
+      "end": 1753.6,
+      "text": "So in X13, I'm going to type five year beta and in the cell below X14, I'm going to type equals slope open brackets."
+    },
+    {
+      "start": 1753.6,
+      "end": 1760.6,
+      "text": "This time I'm using five years of weekly returns data for each data series."
+    },
+    {
+      "start": 1760.6,
+      "end": 1772.6,
+      "text": "So we're going to choose from F2 to F262 for Sanderson Farm returns and in the second parameter E2 to E262 for market returns and then close brackets and press enter."
+    },
+    {
+      "start": 1773.6,
+      "end": 1782.6,
+      "text": "So we can see here from these calculations that the three and five year betas for Sanderson Farms are 0.49 and 0.5 respectively."
+    },
+    {
+      "start": 1782.6,
+      "end": 1791.6,
+      "text": "So the values over all of these timeframes, lifetime included, are actually pretty close and in line with what we would say our economic logic is for this stock."
+    },
+    {
+      "start": 1791.6,
+      "end": 1794.6,
+      "text": "So there's definitely no sort of red flags here."
+    },
+    {
+      "start": 1794.6,
+      "end": 1806.6,
+      "text": "One thing I would say, though, is that you definitely don't want to get bogged down in the kind of decimal places and sort of accuracy to multiple decimal places of beta when calculating it in various ways."
+    },
+    {
+      "start": 1806.6,
+      "end": 1810.6,
+      "text": "Any one of these calculations will actually be good enough to use."
+    },
+    {
+      "start": 1810.6,
+      "end": 1812.6,
+      "text": "So don't worry too much about that stuff."
+    },
+    {
+      "start": 1812.6,
+      "end": 1829.6,
+      "text": "What I do want to show you, though, and this is really for those of you that are more statistically minded and perhaps thinking of going into industry, is an additional statistic that gives us an idea of the statistical accuracy of the beta measure itself."
+    },
+    {
+      "start": 1829.6,
+      "end": 1838.6,
+      "text": "And I'm not going to go through this in detail because it is really beyond the scope of this course, but you guys will be able to look it up afterwards if you want to."
+    },
+    {
+      "start": 1838.6,
+      "end": 1842.6,
+      "text": "And like I said, it might be useful for some of you that are thinking of entering industry."
+    },
+    {
+      "start": 1842.6,
+      "end": 1852.6,
+      "text": "So in cell V16, I'm going to type beta space SE, which stands for beta standard standard error."
+    },
+    {
+      "start": 1852.6,
+      "end": 1859.6,
+      "text": "Now, standard error statistics are a little bit like standard deviations, but they can apply to error terms in statistical estimates."
+    },
+    {
+      "start": 1859.6,
+      "end": 1867.6,
+      "text": "So basically the value we calculate for it effectively gives us a volatility for our beta estimate."
+    },
+    {
+      "start": 1867.6,
+      "end": 1873.6,
+      "text": "And if we assume the error terms are normally distributed, then we can apply certain probabilities to ranges of beta."
+    },
+    {
+      "start": 1873.6,
+      "end": 1879.6,
+      "text": "So let's calculate the beta standard error now then in cell W16."
+    },
+    {
+      "start": 1879.6,
+      "end": 1886.6,
+      "text": "The formula that I'm going to use here is a long one and it's not necessary to explain."
+    },
+    {
+      "start": 1886.6,
+      "end": 1893.6,
+      "text": "Like I said, I just want to show you quickly how you can obtain the beta standard error without dwelling too much on it."
+    },
+    {
+      "start": 1893.6,
+      "end": 1896.6,
+      "text": "And you can always explore it more in your own time if you want to."
+    },
+    {
+      "start": 1896.6,
+      "end": 1909.6,
+      "text": "So the formula is, and bear with me here, equals index, open brackets, lin est, so l-i-n-e-s-t, open brackets again, F2 to F106."
+    },
+    {
+      "start": 1909.6,
+      "end": 1917.6,
+      "text": "Okay, we're looking at a two year beta here, two year beta standard error, I should say, followed by a comma."
+    },
+    {
+      "start": 1917.6,
+      "end": 1928.6,
+      "text": "The second parameter here is going to be E2 to E106, followed by a comma, one comma, one, close brackets, comma, two, comma, one, close brackets."
+    },
+    {
+      "start": 1928.6,
+      "end": 1932.6,
+      "text": "Now, you might be thinking here, what on earth is that equation?"
+    },
+    {
+      "start": 1932.6,
+      "end": 1935.6,
+      "text": "Like I said, I don't really have time to go into the formula and how it works."
+    },
+    {
+      "start": 1935.6,
+      "end": 1941.6,
+      "text": "You're going to have to take my word for it that this does return the beta standard error."
+    },
+    {
+      "start": 1941.6,
+      "end": 1949.6,
+      "text": "You can, of course, look up this sort of formula in your own time and also more about a beta standard error if you want to, like I said before."
+    },
+    {
+      "start": 1949.6,
+      "end": 1956.6,
+      "text": "But anyway, you can see here that the standard error value that we obtain is roughly 0.15."
+    },
+    {
+      "start": 1956.6,
+      "end": 1977.6,
+      "text": "So if we assume that our errors are normally distributed, then what we can say things like there is a 68% chance that the true beta lies within one standard error of our estimation, meaning 0.45 plus or minus 0.15, which is our two year beta estimate with a range of 0.15 either side of it."
+    },
+    {
+      "start": 1977.6,
+      "end": 1979.6,
+      "text": "So one standard error either side of it."
+    },
+    {
+      "start": 1979.6,
+      "end": 1993.6,
+      "text": "Alternatively, we can also say there is a 95% chance that the true beta lies between 0.45 plus or minus 0.3, which is two times the standard error around the two year estimate."
+    },
+    {
+      "start": 1993.6,
+      "end": 1999.6,
+      "text": "Now, if that all sounds completely confusing to you, just forget about it now."
+    },
+    {
+      "start": 1999.6,
+      "end": 2002.6,
+      "text": "It's irrelevant for retail trading application."
+    },
+    {
+      "start": 2002.6,
+      "end": 2011.6,
+      "text": "That is just a small little segment I wanted to add for those of you that are more statistically minded or are just interested in learning more about this sort of stuff."
+    },
+    {
+      "start": 2011.6,
+      "end": 2018.6,
+      "text": "It's not worth me spending any more time on because explaining it just isn't worth the marginal benefit of doing so."
+    },
+    {
+      "start": 2018.6,
+      "end": 2028.6,
+      "text": "Really, all that matters is your estimates of beta itself and not particularly worrying about the errors in the estimates themselves too much."
+    },
+    {
+      "start": 2028.6,
+      "end": 2033.6,
+      "text": "Just being aware that, you know, beta estimates are subject to error."
+    },
+    {
+      "start": 2033.6,
+      "end": 2043.6,
+      "text": "That being said, there is one more thing I briefly want to mention about how beta estimates can be adjusted, which is something that's sometimes used in industry."
+    },
+    {
+      "start": 2043.6,
+      "end": 2052.6,
+      "text": "So sometimes a formula is used to smooth out estimates of beta by multiplying them by two thirds and adding one third of the market beta."
+    },
+    {
+      "start": 2052.6,
+      "end": 2062.6,
+      "text": "The reason behind that is that in the past, over long periods of time, companies' beta values have tended towards the market beta of one."
+    },
+    {
+      "start": 2062.6,
+      "end": 2078.6,
+      "text": "And not only is there some statistical evidence of this, but also some economic theory underpinning it, which is simply that as businesses grow and mature, their revenues and profits gradually diversify to the point where the company starts behaving like the average market firm."
+    },
+    {
+      "start": 2078.6,
+      "end": 2097.6,
+      "text": "There is also some statistical rationale behind this adjusted beta measure, which is that given the average market firm has a beta of one, our best estimate of any randomly picked firm's beta should be one as well before doing any other calculations."
+    },
+    {
+      "start": 2097.6,
+      "end": 2109.6,
+      "text": "So therefore the sort of weighted approach of combining our best estimate of beta, which is one with our calculated beta estimation aims to reduce error on the basis of those factors."
+    },
+    {
+      "start": 2109.6,
+      "end": 2121.6,
+      "text": "The split in weightings of two thirds to one third is based purely on empirical evidence of the trend of thousands of companies beta over time using past data."
+    },
+    {
+      "start": 2121.6,
+      "end": 2124.6,
+      "text": "Now, you know, I'm not going to prove any of that."
+    },
+    {
+      "start": 2124.6,
+      "end": 2128.6,
+      "text": "So again, you'll have to take my word for it, but that sort of evidence does exist."
+    },
+    {
+      "start": 2128.6,
+      "end": 2139.6,
+      "text": "Now, my counter argument to using adjusted beta in our circumstances anyway, is that as traders, we're never seeking to take positions for long periods of time."
+    },
+    {
+      "start": 2139.6,
+      "end": 2148.6,
+      "text": "So we don't need to be concerned with long drawn out changes in estimations based on kind of glacial shifts in company dynamics."
+    },
+    {
+      "start": 2148.6,
+      "end": 2155.6,
+      "text": "So that being said, I don't think it's going to make a huge difference whichever way you measure beta on an individual asset basis."
+    },
+    {
+      "start": 2155.6,
+      "end": 2157.6,
+      "text": "You can argue it in different ways."
+    },
+    {
+      "start": 2157.6,
+      "end": 2163.6,
+      "text": "And really what I aim to do here is give you some supplementary information to increase your knowledge."
+    },
+    {
+      "start": 2163.6,
+      "end": 2166.6,
+      "text": "And then the path that you choose is up to you."
+    },
+    {
+      "start": 2166.6,
+      "end": 2173.6,
+      "text": "You can choose to ignore the additional information on beta error and adjusted beta that I've just given or look into it further and potentially use it."
+    },
+    {
+      "start": 2173.6,
+      "end": 2181.6,
+      "text": "Or for you guys thinking about industry, obviously, you can take note of it and bring it up where appropriate on your career path."
+    },
+    {
+      "start": 2181.6,
+      "end": 2184.6,
+      "text": "For most of you, I don't think it's going to make a difference."
+    },
+    {
+      "start": 2184.6,
+      "end": 2192.6,
+      "text": "Again, I would say some of this stuff is relevant for you going in for those of you going into industry, but that's about it."
+    },
+    {
+      "start": 2192.6,
+      "end": 2204.6,
+      "text": "Okay, so I'm not going to go into the process of calculating two, three and five year betas for Fluor Corporation because it's just exactly the same methodology as we used just now."
+    },
+    {
+      "start": 2204.6,
+      "end": 2207.6,
+      "text": "And you guys understand how to do that by now, I'm sure."
+    },
+    {
+      "start": 2207.6,
+      "end": 2212.6,
+      "text": "I will make sure to include it in the download file, though."
+    },
+    {
+      "start": 2212.6,
+      "end": 2219.6,
+      "text": "And we are about to calculate those same values anyway in the next sheet for a slightly different purpose."
+    },
+    {
+      "start": 2219.6,
+      "end": 2225.6,
+      "text": "Okay, let's now take a quick look at the next sheet, which is a beta time series sheet."
+    },
+    {
+      "start": 2225.6,
+      "end": 2228.6,
+      "text": "In a way, there's nothing new here."
+    },
+    {
+      "start": 2228.6,
+      "end": 2236.6,
+      "text": "What you can see here is the S&P 500 and Fluor Corporation returns along with a rolling calculation for two and three year betas."
+    },
+    {
+      "start": 2236.6,
+      "end": 2243.6,
+      "text": "Now, these rolling calculations are run in exactly the same way as I ran rolling correlations in the previous video."
+    },
+    {
+      "start": 2243.6,
+      "end": 2257.6,
+      "text": "But that being said, because we are using a slightly different function here to do it, I am going to quickly go through the process again for a five year rolling beta instead, which we can then add to the chart and I'll comment on it."
+    },
+    {
+      "start": 2257.6,
+      "end": 2271.6,
+      "text": "So to calculate the rolling five year beta of Fluor Corporation, all we do is use the slope function on the returns of FLR and the S&P 500 index over five year time windows running from the most current data back as far as possible."
+    },
+    {
+      "start": 2271.6,
+      "end": 2288.6,
+      "text": "So in cell H1, I'm going to head the column five year rolling beta and in the cell below H2, I'm going to type equals slope open brackets E2 to E262 as the first parameter array and a comma."
+    },
+    {
+      "start": 2288.6,
+      "end": 2299.6,
+      "text": "And then the second parameter array will be the range D2 to D262 and close brackets that defines our Y observations as Fluor Corp returns over the last five years."
+    },
+    {
+      "start": 2299.6,
+      "end": 2302.6,
+      "text": "So 260 weekly rows."
+    },
+    {
+      "start": 2302.6,
+      "end": 2307.6,
+      "text": "And our X values are S&P 500 returns over the same timeframe."
+    },
+    {
+      "start": 2307.6,
+      "end": 2313.6,
+      "text": "Once that cell is inputted, we can copy down the formula to row 1905."
+    },
+    {
+      "start": 2313.6,
+      "end": 2327.6,
+      "text": "The reason being that row 1905 is the last row here is that the calculation, that's the last sort of row that the calculation can still make use of five years of returns data in the previous rows."
+    },
+    {
+      "start": 2327.6,
+      "end": 2330.6,
+      "text": "So the rows below."
+    },
+    {
+      "start": 2330.6,
+      "end": 2338.6,
+      "text": "So now that we have our rolling five year beta estimates, let's plot them in the chart to see how they compare with our two year and three year estimates."
+    },
+    {
+      "start": 2338.6,
+      "end": 2344.6,
+      "text": "To do that, I'm going to select the chart and right click in the chart and choose select data."
+    },
+    {
+      "start": 2344.6,
+      "end": 2346.6,
+      "text": "And then we're going to add a series."
+    },
+    {
+      "start": 2346.6,
+      "end": 2352.6,
+      "text": "The series name is just going to be set to whatever's in cell H1."
+    },
+    {
+      "start": 2352.6,
+      "end": 2355.6,
+      "text": "So it's our five year beta estimate."
+    },
+    {
+      "start": 2355.6,
+      "end": 2362.6,
+      "text": "And the series values are going to be from H2 to H2061."
+    },
+    {
+      "start": 2362.6,
+      "end": 2369.6,
+      "text": "Okay, so that's our rolling five year beta estimates from row two to row 2061."
+    },
+    {
+      "start": 2369.6,
+      "end": 2391.6,
+      "text": "And the reason why we're selecting an array down to that row instead of row 1905, which is actually where the data ends in that column, is that we need all of our data series that we're referencing in the chart to be the same length, which in this case is set to be equal to the longest data series that's referenced, which is our two year rolling beta series."
+    },
+    {
+      "start": 2391.6,
+      "end": 2399.6,
+      "text": "Okay, now that we've got our five year rolling beta estimations added to our chart, let's take a quick look at it."
+    },
+    {
+      "start": 2399.6,
+      "end": 2408.6,
+      "text": "Basically, what we can see and conclude here is, again, similar to the comments I gave in the previous video about rolling correlations."
+    },
+    {
+      "start": 2408.6,
+      "end": 2413.6,
+      "text": "Firstly, it's pretty clear that beta estimates can change and sometimes quite significantly."
+    },
+    {
+      "start": 2413.6,
+      "end": 2418.6,
+      "text": "So that is something that, of course, we need to be aware of whenever we're using beta estimates."
+    },
+    {
+      "start": 2418.6,
+      "end": 2426.6,
+      "text": "Now, I already mentioned the positives and negatives of using shorter and more recent time windows for beta calculations compared to longer windows."
+    },
+    {
+      "start": 2426.6,
+      "end": 2428.6,
+      "text": "So I'm not going to comment on that again."
+    },
+    {
+      "start": 2428.6,
+      "end": 2438.6,
+      "text": "But what I will say is that we can see from the chart here that long time windows or longer time windows clearly look less volatile than shorter time periods."
+    },
+    {
+      "start": 2438.6,
+      "end": 2444.6,
+      "text": "But equally, they're less responsive in times of change."
+    },
+    {
+      "start": 2444.6,
+      "end": 2452.6,
+      "text": "Now, each stock you look at will have a different profile in terms of rolling betas and some will be more volatile and change more than others."
+    },
+    {
+      "start": 2452.6,
+      "end": 2460.6,
+      "text": "And as I said before, I think whenever you're choosing the underlying data for your estimation of beta, there is no right answer."
+    },
+    {
+      "start": 2460.6,
+      "end": 2468.6,
+      "text": "You should just kind of strive to use a time window that makes logical sense to you, considering that you want a forward looking estimate."
+    },
+    {
+      "start": 2468.6,
+      "end": 2474.6,
+      "text": "So, for example, you should think through questions like, is your beta estimation based on enough data?"
+    },
+    {
+      "start": 2474.6,
+      "end": 2480.6,
+      "text": "Is the data recent enough to reflect the current position of the firm and economic conditions?"
+    },
+    {
+      "start": 2480.6,
+      "end": 2486.6,
+      "text": "Does the data incorporate old and stale data that perhaps isn't relevant now?"
+    },
+    {
+      "start": 2486.6,
+      "end": 2496.6,
+      "text": "Is the period that you're grabbing data from on the whole reflective of what we think conditions will be like over the period that we're looking to trade the stock?"
+    },
+    {
+      "start": 2496.6,
+      "end": 2500.6,
+      "text": "And I guess actually that's the big one that you need to think about."
+    },
+    {
+      "start": 2500.6,
+      "end": 2509.6,
+      "text": "Like I said previously, and you can use this as a guide, industry practice is to typically use two to five year beta values."
+    },
+    {
+      "start": 2509.6,
+      "end": 2517.6,
+      "text": "That is calculating beta from the most recent two to five year returns data."
+    },
+    {
+      "start": 2517.6,
+      "end": 2521.6,
+      "text": "Now, don't panic yourself too much about all of that."
+    },
+    {
+      "start": 2521.6,
+      "end": 2533.6,
+      "text": "You know, choosing what time period to use, because like I kind of said before, the variation in beta estimates that you get might be quite small anyway."
+    },
+    {
+      "start": 2533.6,
+      "end": 2545.6,
+      "text": "And, you know, the most important thing really is that you actually know how to run your own beta calculations and that you understand them so that you can then apply them."
+    },
+    {
+      "start": 2545.6,
+      "end": 2559.6,
+      "text": "And speaking of application, so far, all I've really told you in terms of how beta can be used is understanding whether a stock is likely to be economically sensitive or not, and perhaps whether it can be defined as a cyclical or defensive stock."
+    },
+    {
+      "start": 2559.6,
+      "end": 2569.6,
+      "text": "Now, it's about time we looked at some more concrete uses of beta and we're going to do that now by looking at beta at the portfolio level."
+    },
+    {
+      "start": 2569.6,
+      "end": 2577.6,
+      "text": "Okay, so let's go over to the portfolio beta sheet now, and this is where things become a lot more interesting."
+    },
+    {
+      "start": 2577.6,
+      "end": 2587.6,
+      "text": "Before I go through the sheet in more detail, as a bit of an overview, portfolio beta is basically calculated by summing the weighted beta of all its constituents."
+    },
+    {
+      "start": 2587.6,
+      "end": 2594.6,
+      "text": "Where the weighted beta for each position is its net weight in the portfolio multiplied by its beta."
+    },
+    {
+      "start": 2594.6,
+      "end": 2601.6,
+      "text": "Now, all the same rules of analyzing beta apply in the same way at the portfolio level as they did at the stock level."
+    },
+    {
+      "start": 2601.6,
+      "end": 2609.6,
+      "text": "And by that, I mean, it still represents the change in portfolio returns you can expect for a unit or from a unit change in the market."
+    },
+    {
+      "start": 2609.6,
+      "end": 2617.6,
+      "text": "So for example, a portfolio beta of one suggests the market goes up by one percent, your portfolio will also go up by one percent."
+    },
+    {
+      "start": 2617.6,
+      "end": 2630.6,
+      "text": "But more important than worrying about the specific percentage moves in your portfolio is being able to have a general understanding of the exposure your portfolio has to the market."
+    },
+    {
+      "start": 2630.6,
+      "end": 2636.6,
+      "text": "When you run a long short portfolio, you should always have an opinion on the market as a whole."
+    },
+    {
+      "start": 2636.6,
+      "end": 2641.6,
+      "text": "And that's what the sort of macro analysis section in this video series is all about."
+    },
+    {
+      "start": 2641.6,
+      "end": 2648.6,
+      "text": "And it naturally kind of dictates whether you want your portfolio to be net long, net short or market neutral."
+    },
+    {
+      "start": 2649.6,
+      "end": 2659.6,
+      "text": "When it comes to portfolio beta, a value of greater than zero represents a long bias, less than zero represents a short bias and zero itself is market neutral."
+    },
+    {
+      "start": 2659.6,
+      "end": 2674.6,
+      "text": "Now, prior to this, you might have just been thinking that your net cash exposure, that is your dollar exposure of your longs minus your shorts would represent whether your portfolio is long, short or neutral to the market."
+    },
+    {
+      "start": 2674.6,
+      "end": 2677.6,
+      "text": "Now, don't get me wrong, that is worth monitoring."
+    },
+    {
+      "start": 2677.6,
+      "end": 2688.6,
+      "text": "But the problem with that method is that it doesn't take account for the risk or portfolio or sorry, or volatility of the portfolio's constituents."
+    },
+    {
+      "start": 2688.6,
+      "end": 2694.6,
+      "text": "Portfolio beta is a much more accurate way to understand your exposure to the market as a whole than just your net dollar exposure."
+    },
+    {
+      "start": 2694.6,
+      "end": 2703.6,
+      "text": "For example, putting on $50,000 into short positions and $50,000 into long positions means you're dollar neutral."
+    },
+    {
+      "start": 2703.6,
+      "end": 2712.6,
+      "text": "But you might not actually have market neutral exposure once you account for the risk and volatility in your positions as measured by beta values."
+    },
+    {
+      "start": 2712.6,
+      "end": 2718.6,
+      "text": "Let's make things simple here in an example so I can make myself clear."
+    },
+    {
+      "start": 2718.6,
+      "end": 2728.6,
+      "text": "Let's say you allocated $50,000 to the long and short size of your portfolio, but your longs all have beta values of two and your shorts have beta values of 0.5."
+    },
+    {
+      "start": 2728.6,
+      "end": 2743.6,
+      "text": "If the market moves down 1%, then your longs are estimated to lose 2% or $1,000 and your shorts are only estimated to gain 0.5% or $250."
+    },
+    {
+      "start": 2743.6,
+      "end": 2755.6,
+      "text": "That's a net loss of $750 or 0.75% in the portfolio purely based on market movements, which doesn't sound very market neutral, does it?"
+    },
+    {
+      "start": 2755.6,
+      "end": 2760.6,
+      "text": "That should provide the key motivation really for understanding your portfolio beta."
+    },
+    {
+      "start": 2760.6,
+      "end": 2774.6,
+      "text": "It's very important to have an idea of how your portfolio is positioned in terms of being net long, net short or market neutral so that you can make sure that it aligns with your fundamental predisposition in the sort of macro analysis that you do."
+    },
+    {
+      "start": 2774.6,
+      "end": 2788.6,
+      "text": "And by the way, if you have been sort of put off so far with the sort of fact that beta estimates can vary quite significantly and are prone to error, don't be for this because at the portfolio level, the error is much, much tighter."
+    },
+    {
+      "start": 2788.6,
+      "end": 2794.6,
+      "text": "And so portfolio beta measures tend to be more accurate than individual stock betas themselves."
+    },
+    {
+      "start": 2794.6,
+      "end": 2798.6,
+      "text": "And there is statistical proof of that fact, but it's not worth going into in this video."
+    },
+    {
+      "start": 2798.6,
+      "end": 2801.6,
+      "text": "And so again, you're just going to have to take my word for that."
+    },
+    {
+      "start": 2801.6,
+      "end": 2807.6,
+      "text": "Now, obviously these estimates of beta at the portfolio level still aren't perfect."
+    },
+    {
+      "start": 2807.6,
+      "end": 2812.6,
+      "text": "But what I'm saying here is that they are more accurate than estimates at the asset level."
+    },
+    {
+      "start": 2812.6,
+      "end": 2825.6,
+      "text": "Okay, so that's the goal of this sheet, calculating and understanding your portfolio beta so that you can position yourself appropriately based on your fundamental views and your conviction in those views."
+    },
+    {
+      "start": 2825.6,
+      "end": 2837.6,
+      "text": "As well as monitoring portfolio beta to understand your exposure to the market, this sheet will also give you more of an understanding about which of your portfolio positions carry more or less risk than others."
+    },
+    {
+      "start": 2837.6,
+      "end": 2844.6,
+      "text": "And monitoring these aspects should then be checked against your own fundamental views and convictions."
+    },
+    {
+      "start": 2844.6,
+      "end": 2851.6,
+      "text": "And then adjustments should be made accordingly if the portfolio structure isn't balanced in the way that you'd like it to be."
+    },
+    {
+      "start": 2851.6,
+      "end": 2855.6,
+      "text": "So let me walk you through this sheet piece by piece now."
+    },
+    {
+      "start": 2855.6,
+      "end": 2862.6,
+      "text": "As in the spreadsheets I've used in the previous videos, the only cells you need to edit in this sheet are the orange ones."
+    },
+    {
+      "start": 2862.6,
+      "end": 2867.6,
+      "text": "And they help define the positions in your portfolio and the allocation to them."
+    },
+    {
+      "start": 2867.6,
+      "end": 2872.6,
+      "text": "The rest of the cells are all calculation cells and so shouldn't be edited."
+    },
+    {
+      "start": 2872.6,
+      "end": 2880.6,
+      "text": "In terms of the layout we've got here, the top section from rows 1 to 15 represent the long side of the portfolio."
+    },
+    {
+      "start": 2880.6,
+      "end": 2885.6,
+      "text": "And the section below from rows 16 to 30 represent the short side of the portfolio."
+    },
+    {
+      "start": 2885.6,
+      "end": 2892.6,
+      "text": "Beyond that, right at the bottom, there's an aggregate section for the total portfolio."
+    },
+    {
+      "start": 2892.6,
+      "end": 2896.6,
+      "text": "Working from left to right now, I've split the sheet into two sections."
+    },
+    {
+      "start": 2896.6,
+      "end": 2904.6,
+      "text": "The blue section holds user inputs and calculation values that represent the current portfolio situation, or the one being modelled at least."
+    },
+    {
+      "start": 2904.6,
+      "end": 2915.6,
+      "text": "And on the right hand side, there is a green section that represents potential target scenarios such as risk parity, beta parity and equal weighting."
+    },
+    {
+      "start": 2915.6,
+      "end": 2917.6,
+      "text": "And I'm going to talk about those shortly."
+    },
+    {
+      "start": 2917.6,
+      "end": 2921.6,
+      "text": "So let me briefly run through the user inputs in this sheet."
+    },
+    {
+      "start": 2921.6,
+      "end": 2927.6,
+      "text": "In columns A and B, you can fill in the company name and ticker for each portfolio position that you have."
+    },
+    {
+      "start": 2927.6,
+      "end": 2939.6,
+      "text": "In column C, you need to enter a value of beta for each position, which can be calculated in any of the ways that we've sort of looked at in the first section of this video."
+    },
+    {
+      "start": 2939.6,
+      "end": 2946.6,
+      "text": "Beyond that, in columns D and E, the current price and number of shares held in each stock should be entered."
+    },
+    {
+      "start": 2946.6,
+      "end": 2957.6,
+      "text": "And finally, if you're looking to use any of the target scenarios in the green section, you'll need to enter your dollar target gross exposure in cell J33."
+    },
+    {
+      "start": 2957.6,
+      "end": 2967.6,
+      "text": "So that value should basically be the gross exposure you want for the entire portfolio, which is, you know, the sum of the gross value of all your positions added together."
+    },
+    {
+      "start": 2967.6,
+      "end": 2977.6,
+      "text": "That isn't the same as your margin, though, by the way, because you may well run a leverage portfolio where the overall value of positions you hold is greater than your total margin."
+    },
+    {
+      "start": 2977.6,
+      "end": 2984.6,
+      "text": "If you're confused about that, then hopefully it will become clear when we go through the calculation cells in the rest of the sheet."
+    },
+    {
+      "start": 2984.6,
+      "end": 2992.6,
+      "text": "So before I move on to looking at the calculation cells in more detail, let's consider the portfolio scenario I've set up here currently."
+    },
+    {
+      "start": 2992.6,
+      "end": 2998.6,
+      "text": "It should look pretty familiar to you guys because it's the same long short portfolio from the previous videos."
+    },
+    {
+      "start": 2998.6,
+      "end": 3004.6,
+      "text": "I've calculated beta values for each of these stocks and obtained their current prices as of the time of filming."
+    },
+    {
+      "start": 3004.6,
+      "end": 3008.6,
+      "text": "And so all that's left here to do is allocate some shares to each one."
+    },
+    {
+      "start": 3008.6,
+      "end": 3015.6,
+      "text": "Now, if you remember back to this portfolio scenario in the previous videos, we assumed an allocation of $10,000 to each position."
+    },
+    {
+      "start": 3015.6,
+      "end": 3032.6,
+      "text": "In reality, you can't just choose to allocate a nice round number like that to a certain stock and assume that it's going to be possible because positions need to be built up by being long or short a number of shares, each of which carry a certain price."
+    },
+    {
+      "start": 3032.6,
+      "end": 3041.6,
+      "text": "So only if the share price is a divisor of $10,000 would you be able to allocate $10,000 to a position nice and neatly."
+    },
+    {
+      "start": 3041.6,
+      "end": 3053.6,
+      "text": "However, of course, what we can do is go long or short the number of shares that gets us closest to an overall exposure of $10,000 for each position, which is what we're going to do now."
+    },
+    {
+      "start": 3053.6,
+      "end": 3062.6,
+      "text": "So the way we do this is just by dividing the allocation to each position by the share price and rounding it to the nearest whole number."
+    },
+    {
+      "start": 3062.6,
+      "end": 3069.6,
+      "text": "So, for example, for the VTRS position here, let's use a formula to calculate that in cell E3."
+    },
+    {
+      "start": 3069.6,
+      "end": 3084.6,
+      "text": "And that formula is just going to be equals round open brackets 10,000 divided by D3, cell D3 comma 0 close brackets."
+    },
+    {
+      "start": 3084.6,
+      "end": 3091.6,
+      "text": "What this formula does is use the function round to round a certain value to a desired number of decimal places."
+    },
+    {
+      "start": 3091.6,
+      "end": 3096.6,
+      "text": "So inside the round function, the first parameter is the number that you want to round."
+    },
+    {
+      "start": 3096.6,
+      "end": 3103.6,
+      "text": "So in this case, that is 10,000 because we're looking to allocate $10,000 divided by the current share price in cell D3."
+    },
+    {
+      "start": 3103.6,
+      "end": 3108.6,
+      "text": "And the second parameter is the number of decimal places that we want to round to."
+    },
+    {
+      "start": 3108.6,
+      "end": 3116.6,
+      "text": "And assuming we don't have access to fractional shares here, what we need to do is round the number of shares to the nearest whole number,"
+    },
+    {
+      "start": 3116.6,
+      "end": 3119.6,
+      "text": "which means the number of decimal places required is zero."
+    },
+    {
+      "start": 3119.6,
+      "end": 3121.6,
+      "text": "So hopefully that makes sense."
+    },
+    {
+      "start": 3121.6,
+      "end": 3129.6,
+      "text": "And you can see when we enter that formula, the number of shares required for this position is 725."
+    },
+    {
+      "start": 3129.6,
+      "end": 3138.6,
+      "text": "Now, instead of running that formula for all 10 positions, I've actually created an automatic target scenario in the green section,"
+    },
+    {
+      "start": 3138.6,
+      "end": 3145.6,
+      "text": "which tells you how many shares are required in each position to achieve an equal dollar weighting across all of the positions in the portfolio."
+    },
+    {
+      "start": 3145.6,
+      "end": 3153.6,
+      "text": "All you need to do is make sure that you have a target portfolio gross exposure set in cell J33."
+    },
+    {
+      "start": 3153.6,
+      "end": 3160.6,
+      "text": "So we know for this portfolio that we've got 10 positions, each with a value of $10,000 roughly."
+    },
+    {
+      "start": 3160.6,
+      "end": 3165.6,
+      "text": "And so we're kind of targeting a total portfolio exposure of $100,000."
+    },
+    {
+      "start": 3165.6,
+      "end": 3169.6,
+      "text": "And you can see here that I've already entered that value into J33."
+    },
+    {
+      "start": 3169.6,
+      "end": 3177.6,
+      "text": "And so if we take a look at column N now, you can see the number of shares required in every position to achieve equal dollar weightings."
+    },
+    {
+      "start": 3177.6,
+      "end": 3184.6,
+      "text": "From there, if we want to implement that in our portfolio model, we can just copy across those values into column E,"
+    },
+    {
+      "start": 3184.6,
+      "end": 3190.6,
+      "text": "which I'm going to do here in turn for both the long and short sides of the portfolio."
+    },
+    {
+      "start": 3190.6,
+      "end": 3197.6,
+      "text": "Now, when you do this, you must make sure you paste the cells as values into column E."
+    },
+    {
+      "start": 3197.6,
+      "end": 3201.6,
+      "text": "We don't want to copy across the formulas from column N, just the output values themselves."
+    },
+    {
+      "start": 3201.6,
+      "end": 3209.6,
+      "text": "So as we've done before, this is just done by right-clicking in the cells you want to copy down."
+    },
+    {
+      "start": 3209.6,
+      "end": 3216.6,
+      "text": "Or sorry, selecting the cells that you want to copy and pressing Ctrl C or right-clicking and clicking copy."
+    },
+    {
+      "start": 3216.6,
+      "end": 3225.6,
+      "text": "And then right-clicking the cell that you want to copy down from and selecting paste as values as the option from the menu,"
+    },
+    {
+      "start": 3225.6,
+      "end": 3228.6,
+      "text": "which is the clipboard option with the one, two, three on it."
+    },
+    {
+      "start": 3228.6,
+      "end": 3239.6,
+      "text": "When we do that, for both the long and the short positions, you can see that all of our calculation cells in columns F to I have populated."
+    },
+    {
+      "start": 3239.6,
+      "end": 3242.6,
+      "text": "So let's move on to what those mean now."
+    },
+    {
+      "start": 3244.6,
+      "end": 3249.6,
+      "text": "In column F, we've got a calculation for dollar net exposure in each position."
+    },
+    {
+      "start": 3249.6,
+      "end": 3257.6,
+      "text": "That is simply just the current price of each position multiplied by the number of shares multiplied by one for longs and minus one for shorts."
+    },
+    {
+      "start": 3257.6,
+      "end": 3264.6,
+      "text": "Column G calculates the gross exposure for each position and is almost exactly the same."
+    },
+    {
+      "start": 3264.6,
+      "end": 3268.6,
+      "text": "The only difference here is that it doesn't adjust for long or short positions."
+    },
+    {
+      "start": 3268.6,
+      "end": 3280.6,
+      "text": "So you can see here in both columns F and G that we've achieved an almost equal dollar exposure to all of our positions based on the number of shares inputted for each stock in column E."
+    },
+    {
+      "start": 3280.6,
+      "end": 3287.6,
+      "text": "It isn't exact, of course, because we've got rounding issues as I mentioned before, but it is close."
+    },
+    {
+      "start": 3287.6,
+      "end": 3295.6,
+      "text": "Now in column H, we have the net weight of each position in the total portfolio."
+    },
+    {
+      "start": 3295.6,
+      "end": 3302.6,
+      "text": "This is the net exposure for each position divided by the total gross exposure in the entire portfolio."
+    },
+    {
+      "start": 3302.6,
+      "end": 3309.6,
+      "text": "And again, this shows that we've pretty much got identical dollar percentage weightings across the board."
+    },
+    {
+      "start": 3309.6,
+      "end": 3318.6,
+      "text": "And finally, in column I, I've calculated what is called the net weighted beta for each position as a contribution to the total portfolio."
+    },
+    {
+      "start": 3318.6,
+      "end": 3325.6,
+      "text": "So these numbers are computed by taking the net weight of each position multiplied by its beta."
+    },
+    {
+      "start": 3325.6,
+      "end": 3330.6,
+      "text": "And when you add all of these values together, you get the overall value for portfolio beta."
+    },
+    {
+      "start": 3330.6,
+      "end": 3337.6,
+      "text": "And so by definition, when taken individually, they give you an idea of where risk is skewed to in the portfolio."
+    },
+    {
+      "start": 3337.6,
+      "end": 3353.6,
+      "text": "So, for example, since the values are a function of betas and weightings, we know that a relatively large value for net weighted beta in a certain position means that either one or both of the allocation to that position or the beta of that position is large."
+    },
+    {
+      "start": 3353.6,
+      "end": 3360.6,
+      "text": "And by definition, that in turn suggests that the risk carried in that position is also large."
+    },
+    {
+      "start": 3360.6,
+      "end": 3366.6,
+      "text": "Okay, so let's now look at the aggregated calculations for these columns."
+    },
+    {
+      "start": 3366.6,
+      "end": 3373.6,
+      "text": "Cells F15 and F30 show the dollar net exposure for the long and short sides of the portfolio respectively."
+    },
+    {
+      "start": 3373.6,
+      "end": 3382.6,
+      "text": "And when you add them together, you get the total dollar net exposure in the portfolio, which in this case is around $20,000 seen in cell F33."
+    },
+    {
+      "start": 3382.6,
+      "end": 3395.6,
+      "text": "That makes sense because we've got six long positions all targeting a $10,000 net exposure and four short positions each targeting a minus $10,000 net exposure."
+    },
+    {
+      "start": 3395.6,
+      "end": 3401.6,
+      "text": "And so when you sort of add all of that together, you get a value of $20,000 overall."
+    },
+    {
+      "start": 3401.6,
+      "end": 3407.6,
+      "text": "Similar calculations are run at the aggregate level for gross exposure in the adjacent cells."
+    },
+    {
+      "start": 3407.6,
+      "end": 3420.6,
+      "text": "And in this case, we see roughly $60,000 of exposure on the long side and almost $40,000 on the short side, which taken together equates to nearly $100,000 total gross exposure for the portfolio."
+    },
+    {
+      "start": 3420.6,
+      "end": 3435.6,
+      "text": "In cells H15, H30, and H33, we have aggregation cells that translate the net exposures from column F into percentage weightings by dividing them by the total gross exposure of the portfolio."
+    },
+    {
+      "start": 3435.6,
+      "end": 3443.6,
+      "text": "Effectively, these cells show you the percentage weighting in dollar terms assigned to the long and short sides of the portfolio."
+    },
+    {
+      "start": 3443.6,
+      "end": 3456.6,
+      "text": "And again, when these are summed together, you get the dollar net weight at the portfolio level, which tells you whether you're long or short biased in terms of dollar exposure and how much as a percentage of total gross exposure."
+    },
+    {
+      "start": 3456.6,
+      "end": 3466.6,
+      "text": "That same output can also be achieved simply by dividing the total net exposure by the total gross exposure, if that makes more sense to you."
+    },
+    {
+      "start": 3466.6,
+      "end": 3470.6,
+      "text": "Finally, in column I, we have aggregations of weighted beta."
+    },
+    {
+      "start": 3470.6,
+      "end": 3480.6,
+      "text": "Cell I33 is probably the most important cell in the sheet because it tells you the beta of your portfolio given all of the other inputs that you've defined."
+    },
+    {
+      "start": 3480.6,
+      "end": 3488.6,
+      "text": "And we can see this portfolio structure has a beta of 0.3, which suggests it's net long the market."
+    },
+    {
+      "start": 3488.6,
+      "end": 3496.6,
+      "text": "And we could estimate that if the market increased by say 10%, our portfolio would increase by around 3%."
+    },
+    {
+      "start": 3496.6,
+      "end": 3504.6,
+      "text": "That might sound boring to you, but running a long short portfolio usually means you're hedged against the market movements, at least partially."
+    },
+    {
+      "start": 3504.6,
+      "end": 3509.6,
+      "text": "And so it's very likely that you're always going to have a beta somewhere between one and minus one."
+    },
+    {
+      "start": 3509.6,
+      "end": 3517.6,
+      "text": "And I would expect that even more likely is that that value will be somewhere between 0.5 and minus 0.5."
+    },
+    {
+      "start": 3517.6,
+      "end": 3532.6,
+      "text": "As I said in previous videos, though, it doesn't necessarily mean that you should expect less return than the market for many reasons, such as, you know, the ability for this long short strategy to perform in all market conditions, as well as things like use of leverage."
+    },
+    {
+      "start": 3532.6,
+      "end": 3546.6,
+      "text": "And of course, your ability as a good trader to generate alpha in each sort of trade idea, meaning your ability to obtain excess returns over that which is expected for each position given its beta value and the market fluctuations."
+    },
+    {
+      "start": 3546.6,
+      "end": 3551.6,
+      "text": "I'll talk a little bit more about that later in the course when we get to performance metrics."
+    },
+    {
+      "start": 3551.6,
+      "end": 3568.6,
+      "text": "Speaking of leverage again, though, if we take this portfolio as an example, if you have put these positions on only using, say, $20,000 of margin, then you're effectively five times levered since the gross exposure of the portfolio is $100,000."
+    },
+    {
+      "start": 3568.6,
+      "end": 3576.6,
+      "text": "So a 3% move in your portfolio then would equate to a 15% move in your total account margin."
+    },
+    {
+      "start": 3576.6,
+      "end": 3584.6,
+      "text": "Now, I know that under current rules, gaining that sort of leverage, at least in the US, isn't possible unless you're kind of using options or futures."
+    },
+    {
+      "start": 3584.6,
+      "end": 3586.6,
+      "text": "But you get the idea of what I mean here."
+    },
+    {
+      "start": 3586.6,
+      "end": 3593.6,
+      "text": "The reason we build long short portfolios is to create a strategy that can succeed and build wealth in all conditions."
+    },
+    {
+      "start": 3593.6,
+      "end": 3598.6,
+      "text": "And it also takes advantage of things like low correlations."
+    },
+    {
+      "start": 3598.6,
+      "end": 3602.6,
+      "text": "And so in turn, it achieves better risk reward dynamics."
+    },
+    {
+      "start": 3602.6,
+      "end": 3612.6,
+      "text": "And that strategy can always then be levered up using various financial products to get closer to the kind of returns that you want to achieve."
+    },
+    {
+      "start": 3612.6,
+      "end": 3619.6,
+      "text": "Anyway, I don't want to dwell too much on leverage since we talk about it in other areas of the course."
+    },
+    {
+      "start": 3619.6,
+      "end": 3632.6,
+      "text": "Okay, so as well as beta being useful to gauge the overall market exposure your portfolio is carrying, we can also see how positions are contributing to the value of portfolio beta."
+    },
+    {
+      "start": 3632.6,
+      "end": 3645.6,
+      "text": "So in this scenario, on the long side, we can see that XPO is carrying over 2.5 times as much risk as TTC, since its value for net weighted beta is over 2.5 times as large."
+    },
+    {
+      "start": 3645.6,
+      "end": 3652.6,
+      "text": "And if we look at why that might be the case, we know that the dollar weightings in the positions of this portfolio are fairly even."
+    },
+    {
+      "start": 3652.6,
+      "end": 3657.6,
+      "text": "And so the additional risk with XPO must come from its value of beta."
+    },
+    {
+      "start": 3657.6,
+      "end": 3660.6,
+      "text": "And when we look across, we can see that that's true."
+    },
+    {
+      "start": 3660.6,
+      "end": 3668.6,
+      "text": "XPO's beta measures high at about 2.17, whilst TTC is quite low at 0.83."
+    },
+    {
+      "start": 3668.6,
+      "end": 3683.6,
+      "text": "So the profit and loss in the XPO position is likely likely to be much more volatile, purely based on market fluctuations, which is why we attribute more risk to the trade as it stands."
+    },
+    {
+      "start": 3683.6,
+      "end": 3686.6,
+      "text": "Now that isn't necessarily a bad thing."
+    },
+    {
+      "start": 3686.6,
+      "end": 3691.6,
+      "text": "It's all really down to the sort of conviction level that you have for each of your ideas."
+    },
+    {
+      "start": 3691.6,
+      "end": 3694.6,
+      "text": "And I'll come back to that in a little bit."
+    },
+    {
+      "start": 3694.6,
+      "end": 3699.6,
+      "text": "Now on the short side of things, it's looking a little bit more even."
+    },
+    {
+      "start": 3699.6,
+      "end": 3706.6,
+      "text": "All the net weighted betas are ranging between minus 0.155 and minus 0.121."
+    },
+    {
+      "start": 3706.6,
+      "end": 3713.6,
+      "text": "And so by that logic, the risk is fairly evenly distributed across those positions."
+    },
+    {
+      "start": 3713.6,
+      "end": 3732.6,
+      "text": "Okay, so hopefully you now understand a bit more about what net exposure is, what gross exposure is, how portfolio beta is calculated, and also how it can be analyzed both in terms of portfolio exposure and understanding the distribution of risk between positions in the portfolio."
+    },
+    {
+      "start": 3732.6,
+      "end": 3742.6,
+      "text": "With that in mind, let's talk through a few scenarios now, and I'll discuss how you can use some of the functionality I've built in the green section of this sheet while we're at it."
+    },
+    {
+      "start": 3742.6,
+      "end": 3753.6,
+      "text": "So first things first, for the current setup we have, I've already showed you how you can use column N to identify the shares required to reach equal dollar weightings in each position."
+    },
+    {
+      "start": 3753.6,
+      "end": 3764.6,
+      "text": "However, now we've implemented those weightings into the portfolio, we can see that risk is distributed unevenly across all of our positions based on our net weighted beta calculations."
+    },
+    {
+      "start": 3764.6,
+      "end": 3775.6,
+      "text": "Let's say now that for whatever reason we want to assign an even amount of risk based on values of beta to every single position in the portfolio."
+    },
+    {
+      "start": 3775.6,
+      "end": 3782.6,
+      "text": "So, this is a scenario calculation that I've made in columns J and K, and I've called this scenario risk parity."
+    },
+    {
+      "start": 3782.6,
+      "end": 3793.6,
+      "text": "And by the way, there are many professional firms that actually run this kind of sort of position sizing strategy, although, granted, this is a much more simplified version of it."
+    },
+    {
+      "start": 3793.6,
+      "end": 3801.6,
+      "text": "So, column J uses a fairly complex formula to calculate the gross percentage weight required in each position to achieve this."
+    },
+    {
+      "start": 3801.6,
+      "end": 3812.6,
+      "text": "And then column K uses whatever target gross exposure you've set in cell J33 to calculate the number of shares in each position required to achieve those weightings."
+    },
+    {
+      "start": 3812.6,
+      "end": 3819.6,
+      "text": "So, let's have a look at what happens when we copy those share values across into the portfolio now."
+    },
+    {
+      "start": 3819.6,
+      "end": 3830.6,
+      "text": "For our long positions, I'm just going to copy cells K3 to K14 and paste them as values into cell E3 by right clicking within that cell and choosing the paste as values option from the menu."
+    },
+    {
+      "start": 3830.6,
+      "end": 3838.6,
+      "text": "Again, I want to stress that for this procedure, you do need to copy and paste the cells as values, otherwise the spreadsheet won't work."
+    },
+    {
+      "start": 3838.6,
+      "end": 3843.6,
+      "text": "After doing that, I'm just going to do exactly the same for the short side of the portfolio."
+    },
+    {
+      "start": 3843.6,
+      "end": 3848.6,
+      "text": "Okay, let's have a look at what's happened here."
+    },
+    {
+      "start": 3848.6,
+      "end": 3855.6,
+      "text": "If we start in columns F2H, we can see that the dollar allocations to every position has changed and they're no longer even."
+    },
+    {
+      "start": 3855.6,
+      "end": 3862.6,
+      "text": "Lower beta stocks have higher exposures and vice versa in order to kind of distribute risk evenly."
+    },
+    {
+      "start": 3862.6,
+      "end": 3874.6,
+      "text": "By assessing the values in column I, we can see that this has been achieved quite well since every position has almost exactly the same value of weighted beta."
+    },
+    {
+      "start": 3874.6,
+      "end": 3881.6,
+      "text": "If we take a look at our dollar net exposure and our portfolio beta, we're still net long by both accounts."
+    },
+    {
+      "start": 3881.6,
+      "end": 3884.6,
+      "text": "So what have we actually done here?"
+    },
+    {
+      "start": 3884.6,
+      "end": 3899.6,
+      "text": "Well, all this strategy does is basically define the risk for each stock based on its value of beta and then assign a percentage allocation to each position position so that the weighted risk of each position becomes the same across the whole portfolio."
+    },
+    {
+      "start": 3899.6,
+      "end": 3909.6,
+      "text": "If we had the same number of longs and shorts in the portfolio, this would mean we have a market neutral portfolio in beta terms, i.e. a portfolio beta of zero."
+    },
+    {
+      "start": 3909.6,
+      "end": 3912.6,
+      "text": "But in this case, we have more longs than shorts."
+    },
+    {
+      "start": 3912.6,
+      "end": 3916.6,
+      "text": "So the portfolio beta is still net long measuring 0.27."
+    },
+    {
+      "start": 3916.6,
+      "end": 3921.6,
+      "text": "So the next question is, is this useful to us?"
+    },
+    {
+      "start": 3921.6,
+      "end": 3924.6,
+      "text": "And my answer to that is yes and no."
+    },
+    {
+      "start": 3924.6,
+      "end": 3928.6,
+      "text": "It's useful to act as a starting point for position sizing."
+    },
+    {
+      "start": 3928.6,
+      "end": 3935.6,
+      "text": "But logically, to keep these weightings, you would have to say that you have exactly the same level of conviction for every trade."
+    },
+    {
+      "start": 3935.6,
+      "end": 3939.6,
+      "text": "The reality is that that's going to be very unlikely."
+    },
+    {
+      "start": 3939.6,
+      "end": 3946.6,
+      "text": "You're always going to have stronger and weaker fundamental theses and these convictions will change based on price action as well."
+    },
+    {
+      "start": 3946.6,
+      "end": 3962.6,
+      "text": "Now, aside from ignoring conviction, another downside of this strategy is that the only way you can actually control portfolio beta and hence market exposure is by either adding or removing positions rather than adjusting weightings."
+    },
+    {
+      "start": 3962.6,
+      "end": 3971.6,
+      "text": "Now, we can improve on this slightly by looking at columns L and M, which model a scenario I have called beta parity."
+    },
+    {
+      "start": 3971.6,
+      "end": 3983.6,
+      "text": "In this model, the weightings are risk adjusted in each side of the portfolio rather than the portfolio as a whole in order to achieve beta neutrality at the portfolio level, meaning a portfolio beta of zero."
+    },
+    {
+      "start": 3983.6,
+      "end": 3990.6,
+      "text": "So in column L, the gross weightings are worked out in order to risk adjust all the weightings on the long side."
+    },
+    {
+      "start": 3990.6,
+      "end": 3993.6,
+      "text": "In this column, the weightings are worked out in two sections."
+    },
+    {
+      "start": 3993.6,
+      "end": 4006.6,
+      "text": "So all the long weightings add up to 100% and all the short weightings add up to 100% as well, rather than the combination of both sets of weightings summing to 100% as per, you know, we saw in the risk parity model."
+    },
+    {
+      "start": 4006.6,
+      "end": 4015.6,
+      "text": "Those weightings are then used to calculate the number of shares required for a portfolio with the target exposure set in cell J33."
+    },
+    {
+      "start": 4015.6,
+      "end": 4024.6,
+      "text": "If I copy those values into the portfolio now, you can see that market neutrality is achieved with a portfolio beta close to zero."
+    },
+    {
+      "start": 4024.6,
+      "end": 4030.6,
+      "text": "And as it happens, the way this calculation works also means that dollar neutrality is achieved as well."
+    },
+    {
+      "start": 4030.6,
+      "end": 4044.6,
+      "text": "Now, obviously, portfolio beta and the net dollar weight in the portfolio aren't zero exactly, but that's purely due to kind of rounding and the fact that we can't buy fractional shares, as I've mentioned before."
+    },
+    {
+      "start": 4044.6,
+      "end": 4059.6,
+      "text": "Now, I think this is a slightly better scenario model to work from as a baseline for positioning in the portfolio, since it starts with the assumption of market neutrality and risk parity within each side of the portfolio, both the long and short sides."
+    },
+    {
+      "start": 4059.6,
+      "end": 4078.6,
+      "text": "Now, really, these scenario models are there just as kind of head checks and guides to show you what your portfolio would look like if all you had were some position ideas, but no real conviction about the market direction or which ideas were better than others."
+    },
+    {
+      "start": 4078.6,
+      "end": 4090.6,
+      "text": "The reality is that you should have a fundamental view on the market, and you should have trades and ideas that you have varying levels of conviction for, because that's only natural."
+    },
+    {
+      "start": 4090.6,
+      "end": 4102.6,
+      "text": "So to that end, and to conclude the video, I'm not trying to persuade you by any means that you should be creating a risk or beta parity strategy in your portfolios."
+    },
+    {
+      "start": 4102.6,
+      "end": 4113.6,
+      "text": "Those are just interesting kind of baseline scenarios from which to work from, and I use them to help explain how this portfolio beta model works."
+    },
+    {
+      "start": 4113.6,
+      "end": 4121.6,
+      "text": "What you really should be using this sheet for is primarily monitoring your current portfolio and modeling any changes you're thinking of making."
+    },
+    {
+      "start": 4121.6,
+      "end": 4125.6,
+      "text": "And when monitoring your portfolio, you're looking for a few things."
+    },
+    {
+      "start": 4125.6,
+      "end": 4134.6,
+      "text": "Firstly, at the portfolio level, you want to know what your net dollar exposure is and weight is, and also your portfolio beta."
+    },
+    {
+      "start": 4134.6,
+      "end": 4147.6,
+      "text": "The beta value is the most important here because it's going to provide you with a more accurate idea as to whether your portfolio truly is net long, short or neutral, and by how much as well."
+    },
+    {
+      "start": 4147.6,
+      "end": 4162.6,
+      "text": "For most well-balanced long, short portfolios, I would expect beta to range from probably minus 0.3 to plus 0.3, but that range can widen if you're taking on a lot of leverage as I kind of discussed before."
+    },
+    {
+      "start": 4162.6,
+      "end": 4169.6,
+      "text": "You need to make sure that your portfolio beta is in line with your fundamental outlook on the market as a whole."
+    },
+    {
+      "start": 4169.6,
+      "end": 4172.6,
+      "text": "And if it isn't, then adjustments will have to be made."
+    },
+    {
+      "start": 4172.6,
+      "end": 4179.6,
+      "text": "And that might mean adding more weight to certain stocks or adding or subtracting entire positions as well."
+    },
+    {
+      "start": 4179.6,
+      "end": 4193.6,
+      "text": "Drilling down from the sort of aggregate portfolio level, you should also be monitoring the relative risk carried by each position through the net weight, that net weighted beta calculations in column I."
+    },
+    {
+      "start": 4193.6,
+      "end": 4198.6,
+      "text": "And remember, these values are added up to create the overall beta value for the portfolio."
+    },
+    {
+      "start": 4198.6,
+      "end": 4203.6,
+      "text": "And so numbers with larger magnitudes, whether positive or negative, carry more risk."
+    },
+    {
+      "start": 4203.6,
+      "end": 4213.6,
+      "text": "You need to make sure that you know what positions are the ones that are carrying more relative market risk and also that you're happy for that to be the case."
+    },
+    {
+      "start": 4213.6,
+      "end": 4217.6,
+      "text": "Again, if you aren't, then you will want to make some adjustments."
+    },
+    {
+      "start": 4217.6,
+      "end": 4234.6,
+      "text": "And a final point here about monitoring your portfolio in this spreadsheet is that it goes without saying that even if you keep the same positions for a long period of time, the prices of stocks and therefore weightings as well as the estimations of beta will all move around."
+    },
+    {
+      "start": 4234.6,
+      "end": 4237.6,
+      "text": "And so the sheet does need continuous updating."
+    },
+    {
+      "start": 4237.6,
+      "end": 4243.6,
+      "text": "And I would say that it's probably sensible to update the spreadsheet on either a kind of weekly basis or perhaps every other week."
+    },
+    {
+      "start": 4243.6,
+      "end": 4248.6,
+      "text": "And the same actually goes for the spreadsheets that we've looked at in the last few videos as well."
+    },
+    {
+      "start": 4250.6,
+      "end": 4263.6,
+      "text": "Now, when you're thinking of adding and subtracting positions from the portfolio, you should model how this will affect portfolio beta as a whole and use the information inside the sheet to aid decisions on weightings."
+    },
+    {
+      "start": 4263.6,
+      "end": 4272.6,
+      "text": "However, just like I said in the previous video, this shouldn't be your sole consideration when making structural changes to the portfolio."
+    },
+    {
+      "start": 4272.6,
+      "end": 4278.6,
+      "text": "All trades must first and foremost come from solid fundamental ideas with good technical timing."
+    },
+    {
+      "start": 4278.6,
+      "end": 4281.6,
+      "text": "And that will help create a conviction for each and every position."
+    },
+    {
+      "start": 4281.6,
+      "end": 4287.6,
+      "text": "And that is the kind of relative starting point really for position weightings."
+    },
+    {
+      "start": 4287.6,
+      "end": 4299.6,
+      "text": "After that, you should overlay how that actually fits into the portfolio using this spreadsheet and conduct a head check to see if you think the position and weighting choices that you've made are sensible."
+    },
+    {
+      "start": 4299.6,
+      "end": 4306.6,
+      "text": "Now, I want to make a really important point here, which I touched on earlier, but it might not have been clear enough."
+    },
+    {
+      "start": 4306.6,
+      "end": 4313.6,
+      "text": "Beta values represent the expected exposure of a position or portfolio to market movements."
+    },
+    {
+      "start": 4313.6,
+      "end": 4319.6,
+      "text": "But the returns of the position and the portfolio are driven by more than just broad market forces."
+    },
+    {
+      "start": 4319.6,
+      "end": 4329.6,
+      "text": "So when I say the market moves by one percent, if your portfolio beta is one, then you should expect your portfolio to move by one percent in the same direction."
+    },
+    {
+      "start": 4329.6,
+      "end": 4333.6,
+      "text": "That's true, but only from a market exposure point of view."
+    },
+    {
+      "start": 4333.6,
+      "end": 4339.6,
+      "text": "That's what would happen if your positions are kind of distinctly average."
+    },
+    {
+      "start": 4339.6,
+      "end": 4352.6,
+      "text": "If your ideas are high quality and generate alpha, that is excess returns above those expected by market movements, then your portfolio should perform a lot better than whatever your beta value essentially predicts."
+    },
+    {
+      "start": 4352.6,
+      "end": 4364.6,
+      "text": "Of course, we want to do this at an absolute minimum, but what we're really trying to target here are positions and portfolios that generate consistent absolute returns on top of alpha."
+    },
+    {
+      "start": 4364.6,
+      "end": 4374.6,
+      "text": "So in our portfolios, we basically want to accept some level of market risk, as we always want to have a view on the market as a whole, whether long or short."
+    },
+    {
+      "start": 4374.6,
+      "end": 4383.6,
+      "text": "We want to make outsized returns above market expectations predicted by beta, both on the way up and the way down."
+    },
+    {
+      "start": 4383.6,
+      "end": 4390.6,
+      "text": "But when we outperform on the way down, we want to try and make sure that outperformance never translates to losses."
+    },
+    {
+      "start": 4390.6,
+      "end": 4399.6,
+      "text": "So if the market goes down by 10% and our beta adjusted performance is say minus 5%, we are outperforming the market, but we're still losing money."
+    },
+    {
+      "start": 4399.6,
+      "end": 4406.6,
+      "text": "We want to target absolute performance, meaning consistent positive returns, not just outperformance."
+    },
+    {
+      "start": 4406.6,
+      "end": 4419.6,
+      "text": "We also typically want to use a sensible or acceptable amount of leverage to magnify portfolio volatility or exposure and hence returns when markets go up and down."
+    },
+    {
+      "start": 4419.6,
+      "end": 4424.6,
+      "text": "This course is built to help you get outsized absolute returns."
+    },
+    {
+      "start": 4424.6,
+      "end": 4431.6,
+      "text": "So don't think that your portfolio is hamstrung to perform in the way that your portfolio beta predicts because it isn't."
+    },
+    {
+      "start": 4431.6,
+      "end": 4440.6,
+      "text": "Beta is just there to tell you your exposure to the general direction of the market, i.e. your market risk and where risk lies in the portfolio,"
+    },
+    {
+      "start": 4440.6,
+      "end": 4445.6,
+      "text": "which aids with things like position sizing of individual trades and so on."
+    },
+    {
+      "start": 4445.6,
+      "end": 4449.6,
+      "text": "It's not there to predict your overall returns."
+    },
+    {
+      "start": 4449.6,
+      "end": 4451.6,
+      "text": "So that's the end of the video."
+    },
+    {
+      "start": 4451.6,
+      "end": 4458.6,
+      "text": "I hope you guys got plenty from it because once you fully get to grips with the concepts in this video and the last couple as well,"
+    },
+    {
+      "start": 4458.6,
+      "end": 4465.6,
+      "text": "you're going to have some really good knowledge and clarity about how to build high quality portfolio structures."
+    },
+    {
+      "start": 4465.6,
+      "end": 4469.6,
+      "text": "And it should give your stats a really good boost over time as well."
+    },
+    {
+      "start": 4469.6,
+      "end": 4473.6,
+      "text": "So that's it from me and I'll see you later in the video series."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

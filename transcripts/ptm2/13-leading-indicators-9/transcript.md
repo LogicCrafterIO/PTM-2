@@ -1,0 +1,1205 @@
+---
+course: ptm2
+lesson_id: "13"
+title: "Leading Indicators 9"
+module: leading-indicators
+module_title: "Leading indicators"
+duration: 01:43:01
+duration_seconds: 6180.843
+source: "13. Leading Indicators 9.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  - "Documents/Video 13/Benchmark_Yields_EU.xlsm"
+  - "Documents/Video 13/European_Economic_Sentiment_Indicator.xlsm"
+  - "Documents/Video 13/Global_ GDP.xlsx"
+---
+
+# 13 — Leading Indicators 9
+
+Okay, so we are leaving the United States of America and we are going international. And the first place we are going to visit is Europe. So we're now going to look at our ninth leading indicator, the European Economic Sentiment Indicator, or sometimes referred to as the ESI.
+
+But first, let's have a look at what we've looked at so far and where we are going with the direction of the PTM video series. So instead of naming this slide now, what we have covered so far, what we're actually doing is formatting an entire leading indicator dashboard. So you can see on the left hand side, everything we've covered, so far, and everything on the right hand side, where we're going with our leading indicators now. So on the left hand side, we have our US leading indicators. And on the right hand side, we have our international leading indicators. So starting with the US leading indicators, we have our money markets indicators, we have our surveys, and we have our cyclical commodity prices. On the right hand side, we have our international leading indicators. And we have our digital leading indicators. And we have our digital leading indicators. And you can see in money markets, for example, if you go to the downloads area in video number four, you'll be able to get the interest rate data and analysis. So you can do similar money market analysis, as we did in the United States for several other countries. So for Japan, UK, Germany, and Italy. And Italy. And also you will find Chinese real interest rate data. And what we're going to be doing in the next video is covering China. So we will be covering China in the next video in surveys. We will also be covering in the next video, the China manufacturing PMI.
+
+So at the end of the time, you should seek out further education on market PMIs. Markit is a company that puts together PMI data for countries all over the world. To add into your analysis of what we cover in the PTM video series, market PMIs for Japan, UK, Brazil, and Canada will be prudent to cover. But of course, you can do research and do monthly updates on all countries if you want to. What we're doing here in the PTM is covering all of the main ones. Additionally, in international cyclical commodity prices, you can see from the downloads area for cyclical commodities prices in that video. In the files, you do get the international front month futures contracts for cyclical commodities that are international, which are not international, such as Brent oil, LME, London metal exchange copper, and for Shanghai copper. So as traders and PMs, we now have a pretty comprehensive dashboard of macroeconomic leading indicators, both in the US and internationally, to help us survey the picture at any one time, any one moment in time, the macroeconomic picture in the United States and the United States and internationally. But right now, what we're going to be doing is looking at the European Economic Sentiment Indicator and building out our international analysis. In the downloads area for this video, you will see the file European Economic Sentiment Indicator. And in the downloads areas for videos three and four, you'll find global GDP. And you'll find the benchmark yields EU files, and they will be important for understanding the content of this video. Now, before we get into the European Economic Sentiment Indicator, the ESI, we have to understand some important stuff about Europe, and specifically European GDP, and how it fits into the global picture.
+
+There are two ways of defining Europe. There are two ways of defining Europe. There's the European Union and the Eurozone. And we're going to be specifically looking at the Eurozone. And there's 19 member states of the Eurozone. So those are the countries that are members of the common currency, the Euro. And this is considered a single economic area. Now, when we look the size of the size of the Eurozone economy, the Eurozone is 62.2% the size of the United States and 90% the size of China. And if you look on the left-hand side, the Eurozone is made up of the 19 states on the left-hand side with the GDP stats for 2019. And at the bottom of the table, you can see the total Eurozone GDP. the GDP number for 2019. Now, in 2019, global GDP was 87.345 trillion US dollars. And the US, so US GDP was 24.5% of that number. China was 16.8% of global GDP in 2019. And the Eurozone, in total, was 15.2% of that number. in 2019. Now, if we add the US, China and the Eurozone GDP together in 2019, we get to a figure of 49.5 trillion US dollars. And that's equivalent to 56.5% of global GDP. So you can see that Eurozone is obviously a very important economic area. And as traders and PMs, we have to try and predict constantly U.S. GDP. So growth, so direction and growth. And we also have to do the same for the Eurozone and China, or at least make a very good attempt at doing so. By doing so, we not only get the macroeconomic picture in the US, but we also get the macroeconomic picture internationally. So we can build a global macroeconomic. Now, a global macroeconomic view. Now, in terms of context, again, if we look at Europe versus a list of the top countries in the world by nominal GDP in 2019, we can look at the Eurozone in comparison to GDP of every country. And actually, the constituents of Europe as well.
+
+So if we actually added up all the constituents of Europe, and if we ranked the Eurozone 19 countries as one economic area, it would actually be the third largest economic zone in the world. And its nearest competitor, Japan, the Eurozone is actually 2.62 times larger than the Japanese economy. based on 2019 numbers. So it's obviously vitally important that we understand the Eurozone economy based on 2019 numbers. So it's obviously vitally important that we understand the Eurozone economy and predict European GDP growth. By doing so, we can achieve the same results as we do by staying on top of U.S. leading indicators. We can predict European GDP growth and get a better picture of global rest of world GDP growth. outside the U.S. outside the U.S., which in turn, actually affects U.S. GDP growth and vice versa. And of course, this will end up affecting our portfolio bias in the U.S. So whether we're looking to be long, short, or neutral in our portfolios.
+
+Additionally, we'll see you next to the U.S. Additionally, we'll see you next time.
+
+We'll see you next time.
+
+All of the countries that make up the Eurozone. We treat them as two separate entities as traders and PMs. And we focus on the Eurozone. And you can see also in the table, the actual European Economic Sentiment Indicator, ESI codes for each country. So we split out the Eurozone from the European Union and only analyze those countries as a collective that use the Euro as their common code. and that are mandated by the ECB. Members of the European Union that are not in the Eurozone actually have their own currency.
+
+So, for example, Poland has the Zloty, Hungary has the Forint, and Romania has the Loo.
+
+Now, although these countries do have close trade relationships with the other European Union states, they actually maintain their own independent central banks and monetary policy that is separate from the European Central Bank.
+
+However, the central banks of those countries are part of the European system of central banks, the ESCB, which is required to meet convergence criteria with a view to eventually joining the Eurozone.
+
+Now, just as a side note, as of the time of filming, the UK is in the process of leaving the European Union.
+
+However, it is still part of the ESI European Union data.
+
+So it's part of the ESI European Union stats as of January 2021.
+
+And this is probably going to change in the future.
+
+So you may want to update your spreadsheets properly when that happens.
+
+So just keep an eye out for that.
+
+So we get a much better understanding of European GDP growth outlook by focusing on the Eurozone, the harmonized common currency and monetary policy block of the Eurozone itself.
+
+Now, let's get into the data of the Eurozone and have a look at the Eurozone stocks 600.
+
+So the European benchmark index versus Eurozone GDP growth.
+
+And if you go to the downloads area of video number three, I mentioned earlier, the sheet global GDP.
+
+If you download that and scan the sheets at the bottom of the file, you'll see files that relate to the Eurozone and the Eurozone stock 600 versus GDP growth.
+
+And specifically, what we're doing here is the quadnominal analysis that we did earlier with the S&P 500 and U.S. GDP growth.
+
+So similar to the way in which we analyzed that, so in which we analyzed U.S. GDP direction and S&P 500 direction, we can analyze Eurozone GDP and the European benchmark index, the Euro stocks 600.
+
+All of the data, all of the data, all of the data is in the spreadsheets that are available in the downloads area of video number three, where we did the GDP quadnomial analysis and correlations for benchmark indices and GDP growth in the major economic areas of the world.
+
+Now, for the sake of repetition in this video series, we're not going to go through the explanation of exactly how we put together the whole quadnomial analysis, we went through the quadnomial analysis and correlations with S&P 500 and U.S. GDP.
+
+And did this for Eurozone and China as well in video number three.
+
+So if you need a reminder of how all this is put together and how it all works, just go back to video number three, rewatch that and relearn the information at a good pace.
+
+You'll start to understand it and you'll get it eventually.
+
+So, let's have a look at the actual outcome of the stats for the Stocks 600 leading Eurozone GDP.
+
+So, if you remember, we have our four cases, we have our 0-0, our 1-1, our 0-1 and our 1-0 outcomes for the direction of the index, which in this case is the Stocks 600 and GDP growth, which is in this case, Eurozone GDP growth.
+
+And if you look in the spreadsheet, you'll see that the data in this case for the Eurozone only goes back to 1995, and we have a total of 101 cases.
+
+So, that is 101 quarters.
+
+So, about 25 years.
+
+Now, if you look at the table there, you can see the cases of 0-0 and 1-1.
+
+They are marked in yellow on the left-hand side, and you can see 0-1 and 1-0 marked in green.
+
+Now, the 0-0 and 1-1 situation is basically when the index and GDP growth move in the same direction.
+
+So, 0-0, the index goes down in the quarter, and then GDP is reported down.
+
+So, that's the 0-0 case.
+
+And the 1-1 case is the index going up in the quarter from the previous quarter, and GDP is reported up.
+
+And if you look at the AB scenarios, the 0-0 and the 1-1, we have 64 cases out of 101 cases.
+
+So, 64 quarters out of 101 quarters that the stocks 600 goes up and Eurozone GDP is reported up.
+
+So, this is 63.37% of times.
+
+And then, with the 0-0 case, where the Eurostox 600 goes down and Eurozone GDP goes down, this happens nine quarters out of our 101 cases.
+
+So, historically, GDP is moving in the same direction as the index.
+
+So, Eurozone GDP is moving in the same direction as the stocks 600, 72.28% of quarters.
+
+Now, what happens in the cases when it doesn't?
+
+So, when the stock 600 doesn't go in the same direction as GDP, or GDP is reported in a different direction to the direction of the stocks 600.
+
+Well, when it doesn't go in the same direction, the majority of the time, it's because the stock 600 moves down when GDP goes up.
+
+So, we have a 0-1 situation.
+
+And this happens 23 cases out of 101 cases.
+
+So, for 23 quarters out of our 101 quarter data set, which basically is 22.77% of times.
+
+And we attribute this to the market getting ahead of itself.
+
+And then, for a quarter, it goes down when GDP growth is reported up.
+
+So, this can't be explained by fundamentals.
+
+This is more of a technical situation in one of those specific quarters.
+
+So, we attribute this to profit taking.
+
+Now, in the other scenario where stock 600 and Eurozone GDP don't move in the same direction.
+
+This is the 1-0 scenario, when for the quarter, the stock 600 goes up and GDP is reported down.
+
+This is in the vast minority of cases.
+
+This happens less than 5% of times.
+
+So, we only have five quarters out of our entire data set of 101 quarters since 1995, where the stock 600 has moved up and GDP has actually gone down or is reported down in the quarter after the move.
+
+So, we have roughly 72% of times the stock 600 and Eurozone GDP moving in the same direction, reported in the same direction.
+
+And roughly 28% of times, moving in the opposite direction.
+
+However, we know that the vast majority of times, when they don't move together, we get the 0-1 situation.
+
+We get the profit taking or technical outcome.
+
+So, if we can predict GDP fundamentally and take profits at the right times, technically, we can be right 95% of the time when predicting the stocks 600 move leading Eurozone GDP.
+
+Now, we can see this data borne out visually on a chart of the stocks 600 year-on-year percentage change versus Eurozone GDP year-on-year percentage change.
+
+So, if you think of our majority of cases, which is the 1-1 scenario, where we have Euro-Stock 600 positive for the quarter and Eurozone GDP positive for the quarter, you can see above the 0 bound, you can see that for the majority of cases, they are both moving in the same direction and that is positive.
+
+What we can also note visually is our other scenario when they both move in the same direction, which is the 0-0 scenario.
+
+So, most notably, in the periods of the global financial crisis, where you see the stock 600 year-on-year percentage performance leading negative GDP growth in 2008.
+
+And then also, in the 2011 period, where we see the stock 600 year-on-year percentage again leading negative GDP growth.
+
+And we can also see our other scenario, which is a period of quarter when the stocks 600 is reported down and Eurozone GDP is reported up.
+
+So, this is our 0-1 scenario.
+
+And most notably, you can see this occurring on several occasions in the 2015 to 2019 period.
+
+So, if you look at the chart, you'll see the stock 600 year-on-year percentage reported several times as negative.
+
+And in the same quarter, you'll see Eurozone GDP reported as positive.
+
+And if you look at the preceding period, which is the 2012 to 2015 period, you'll see that the Eurozone GDP number is going positive.
+
+And there's multiple readings of the stock 600 having very positive year-on-year percentage moves of between 10% and 15%.
+
+So, the preceding period, this is where there was obviously a lot of stimulus in Europe from the ECB.
+
+And then the index, the stock 600, even though GDP was reported as positive for that period, 2015 to 2019, the index struggled on occasions to keep up with GDP growth and put in year-on-year positive percentage returns.
+
+So, this has actually had the effect of breaking down the correlation of the stock 600 versus Eurozone GDP growth.
+
+If you recall, we had our chart in the global GDP file for each economic area.
+
+So, the US, Eurozone and China for rolling correlation.
+
+And for the stock 600 and Eurozone GDP growth, we were looking at a five-year correlation with a six-month lag because the six-month lag on a five-year correlation basis gave us the highest correlation.
+
+So, the read across here is that in our data set up until around 2015, this is when we had a very decent, strong correlation on a six-month rolling five-year average.
+
+And from 2015 onwards, this correlation started to break down.
+
+And you can see from the previous chart, it's down to the index not putting in a positive performance when GDP is reported at the end of each quarter as positive.
+
+You can see that visually on the previous chart, so we get multiple 0-1 outcomes.
+
+And as mentioned, this is most probably down to monetary policy from the ECB.
+
+And in the period 2011 to 2015, the stimulus provided by the ECB, so low interest rates and massive bond purchase programs, the stimulus worked quite well for the returns of the stocks 600.
+
+But from 2015 onwards, low interest rates or even negative real interest rates and bond purchase programs have had much less of an impact on stock 600 year-on-year percentage returns.
+
+Now, this doesn't mean as traders and portfolio managers that we discount this analysis and we ignore it.
+
+Of course, we stay on top of these things.
+
+And for the entire history, it's true that the majority of times that the Eurostox 600 and Eurozone GDP for a good 20 years for the majority of times moved in the same direction.
+
+We've had in the last five years a breakdown of this correlation.
+
+But of course, that can change in the future.
+
+And as traders and PMs, we have to stay on top of these things, not least because it gives us a global macro picture, a global macro overview of what's occurring in economies and stock markets.
+
+But also because we can actually get a lot of trade ideas from this situation itself.
+
+Now, how does the ESI, the European Economic Sentiment Indicator, fit into all of this?
+
+Well, the European Commission publishes all of the main leading indicators for Europe in one monthly report.
+
+So if you imagine what we've done so far in the PTM video series, when we've been looking at US leading indicators, they are all published separately.
+
+And in Europe, it works differently.
+
+The European Commission publishes all of the leading indicators for Europe in one monthly report.
+
+And that is the European Economic Sentiment Indicator.
+
+The numbers are released on the last business day of the month for the same month, which basically makes the report a very timely leading indicator for forecasting European GDP growth.
+
+It's a huge, massive report.
+
+And from a trader's process perspective, it requires a lot of organization to build the initial spreadsheets and to maintain them on a regular basis because it includes all leading indicators for every single country in Europe.
+
+Now, the link there on the screen, that's where the ESI reports can be found each month and also all of the data on a monthly basis and historical data that you need to build and maintain your monthly spreadsheets.
+
+Fortunately, if you go to the downloads area of this video, you will find the downloads called European Economic Sentiment Indicator.
+
+And we've done all of the initial work for you.
+
+So all of the hard yards have been done in collecting all the data and organizing it properly for you in the downloads area.
+
+It's up to you on a monthly basis to update and maintain that spreadsheet.
+
+Now, how does the ESI actually work?
+
+What's the survey design?
+
+Well, each country has the same five component surveys that make up the composite index for that particular country.
+
+So what that does for us as traders and PMs, it makes absolute and relative measures possible when we're looking at a country individually and countries compared to each other.
+
+And you can see the five component surveys that make up the composite number for each country in the table on the screen.
+
+So we have the highest weighting, which is the industrial confidence indicator, which is weighted as 40%.
+
+So basically these are like the equivalent in the US to the ISM Manufacturing Survey and the ISM Non-Manufacturing or Services Survey.
+
+We also have the equivalent in Europe of our UMCSI, our Consumer Sentiment Index.
+
+The Consumer Confidence Indicator in Europe makes up 20% of the ESI.
+
+We also have in Europe retail trade confidence indicator, which is 5% weighting.
+
+And the construction confidence indicator, which is the equivalent of our building permits or housing slots in the US.
+
+We have our construction confidence indicator that comes in at 5%.
+
+So taken all together, this makes up the overall economic sentiment indicator for both European Union and the Eurozone area.
+
+Now, the way the data is collected and organized by the European Commission, the subcomponents for each country are measured as the difference between the percentages of respondents giving positive and negative replies in each of the surveys.
+
+And then the composite EU and Eurozone area indices are indexed to 100.
+
+And the ESI composite for each country and the EU and EA aggregates are scaled to a long-term mean of 100 and a standard deviation of 10.
+
+So the way to look at this is values above 100 indicates above average economic sentiment and values below 100 indicates below average economic sentiment.
+
+And we can see all of this data visually in the downloads area in the charts that we've constructed.
+
+So remember, we are looking at the Eurozone, so the European area economic sentiment indicator, not the whole European Union.
+
+So we're looking at the Eurozone 19 member states as part of the Euro common currency.
+
+And if you look at the chart here on the left-hand side, we have our ESI scale and you can see the 100 level.
+
+And that is set as the long-term mean.
+
+So you can see we've added in, in the red line, a long-term trend line average, which is the 100 level.
+
+And if you recall, plus 10 and minus 10 points on this index is a one standard deviation move.
+
+So anything outside of that is either greater than a one standard deviation move in the positive or a one standard deviation move in the negative.
+
+And you can see periods, obviously, where we have a positive sentiment in the European economic area, so the Eurozone.
+
+And you can see periods of negative sentiment.
+
+And we can look through a few of these.
+
+So for example, in recent history, where we have the COVID shutdown, COVID economic shutdown, you can see we get extreme negative sentiment in the periods that we looked at earlier.
+
+So the 2015 to 2019 period, when we saw our correlations breaking down between the Eurostox 600 and Eurozone GDP growth, we actually have very positive sentiment during that period.
+
+This didn't translate into positive Eurostox 600 year-on-year percentage returns for the whole period, only for some of the period, but there were also negative periods as well.
+
+And we also have the 2011 to 2015 period that we looked at earlier, and we can see here that there's some mildly bearish sentiment or negative sentiment occurring during this period.
+
+And correlations were still fairly high at this time between the Eurostox 600 and Eurozone GDP growth.
+
+And we actually had during that time, if you recall, we had fairly solid Eurostox 600 year-on-year percentage returns and positive GDP growth as well during that period.
+
+Now we can have a look at these periods in more detail by looking at the sub-components and see where the bullish and bearish sentiment was actually coming from.
+
+But also, if you go a little bit further back in history on the composite number here, you can see, for example, bearish sentiment occurring before the global financial crisis in 2008, 2009.
+
+So yes, you can see the extreme move negative at the end of 2008 and beginning of 2009.
+
+But we do see Eurozone sentiment at the composite level peaking in 2007 and managing a fairly rapid decline into bearish sentiment at the beginning to mid of 2007.
+
+And this is worth taking note of because the ESI and in particular, the one we're looking at now, which is the most important, the Eurozone area, like our US leading indicators, we do get peaks and drops.
+
+So you remember that 10 points in the positive and negative are one standard deviation and when we get our extreme moves like a 2 or 3 standard deviation move, for example, in the negatives, we can see they become troughs.
+
+And then in the positives when we have outside one standard deviation moves.
+
+Yes, the ESI can stay there for a while, but it tends to peak above the one around the 115 or above the 115 level.
+
+Now, for each of our subcomponents, we can look at their contribution or what they were doing at the time in certain periods of economic cycles and their contribution to the composite index.
+
+So if we look at the industrial confidence index here, which is one of the subcomponents, remember it's 40% weighting, this is the equivalent to a manufacturing PMI.
+
+So if we look at that, for example, in the period 2015 to 2019, you can see its negative sentiment for half of that period and positive for the remainder of that period.
+
+So this was contributing positively in the latter part of the 2015-2019 period to that positive composite data.
+
+So manufacturing companies were actually quite bullish.
+
+And in the 2011 to 2015 period, there's a negative sentiment here.
+
+And obviously, they were contributing to that negative number at the composite level as well.
+
+Now, a couple of things to note here.
+
+If you look at the scale on the left-hand side, you'll see the zero band level and you'll see a positive 10.
+
+In the upper scale and negative 10, negative 20 and negative 30.
+
+And you'll notice that we haven't included positive 20 and positive 30 on the positive scale because that's because there haven't been any readings that high since data began in 1985 for the industrial confidence indicator.
+
+And remember, this is the difference in percentages of respondents giving a positive sentiment and a negative sentiment on the month.
+
+And if you look at that long term trend line, the red trend line, the long term average here is in the negative.
+
+So what do we deduce from this?
+
+On average, European manufacturing businesses are always bearish.
+
+We can see this type of data borne out in the service sector.
+
+So remember, this component is a 30% weighting in the index.
+
+And we can see that for the most part, services over the entire data set, for the most part, have been in the positive.
+
+However, the long term average has been coming down the entire time from positive and even went negative in the late teens.
+
+So in 2019.
+
+So the service sector of the economy has been in the vast majority positive and the manufacturing in the majority negative.
+
+However, services sentiment on average keeps going lower when we look at it over multiple years.
+
+So that's the red average long term trend line on the screen.
+
+So yes, in the bigger picture, services in Europe have been replacing manufacturing as a core part of the economy.
+
+And yes, there's been overall bullish sentiment in services over the last 35 years or so.
+
+And manufacturing has been bearish.
+
+So we can read a lot into the European project here in terms of sentiments coming from the manufacturing side of the Eurozone economy over the last 35 years.
+
+And the services side of the economy over the last 35 years.
+
+And if we think of those, that period split up into two periods in the previous decade.
+
+So around the 2011 to 2019, 20 period.
+
+And we split that up down the middle at the composite level.
+
+If you recall, we had a negative period at the composite level 2011 onwards.
+
+And we had a positive period from 2015 to 2019 at the composite level.
+
+Well, the services sector was negative during the negative time.
+
+So the tail end of 2011 to around the 2014 period.
+
+And then 2015, that's when we have a positive contribution for a long time from the services sector.
+
+So services were definitely contributing positively to the positive time and negative to the negative time at the composite level.
+
+So certainly during that 2014 to 2017 period, when the manufacturing sector was reporting bearish sentiment and contributing bearish to the composite number, the service sector was contributing positively.
+
+So the service sector was kind of bailing out the manufacturing sector at that time.
+
+Now let's talk about the European consumer, which I always find a little bit entertaining to have a look at this data and have a look at this chart.
+
+Remember the scale is the difference between, in the survey, the difference between positive responses and negative responses.
+
+And if you look at the screen here for the Eurozone consumer, they're always negative.
+
+There hasn't been a positive reading where European consumers have been positive in the last 35 years.
+
+The long term trend line is negative and the best we're ever going to get from these guys is peaks that are negative.
+
+So peaks in the consumer sentiment are actually still negative.
+
+Now this may have something to do with the long term unemployment rates or youth unemployment in the Eurozone area, but it's likely that it's cultural as well.
+
+In that European consumers are more bearish on average than US consumers, which are much more cyclical.
+
+And it may also be to do with the long term unemployment rates and credit that's available to the consumer and also the propensity to take on more consumer credit in the Eurozone area.
+
+But whether it's down to long term unemployment rates or very high youth unemployment rates or it's cultural or a combination of both, there's no denying what's on the screen.
+
+The European consumer, the European consumer, Eurozone consumer is just always bearish.
+
+And it's just a question of how bearish or bullish they are.
+
+And the best case when they're bullish is that they're still bearish.
+
+So try to figure that one out.
+
+But if you think of our periods that we looked at in the last decade, so 2011 to 2015 and then 2015 to 2019, 2020, you can see in the 2011 period to around 2014, you can see that the European consumer was just huge.
+
+The European consumer was just very bearish.
+
+And when you think of the 2015 period to 2019, 2020 period, they were contributing negatively less to the overall number at the composite level.
+
+Therefore, it can be argued that, you know, on a relative basis throughout history, they were actually fairly positive because they're above the long term average trend line, which is the red line on the screen.
+
+So probably the best way to think of this and even to memorize and remember what this number is all about in terms of the European consumer, just look at it as kind of like a misery index.
+
+Overall, the European consumer is just miserable all the time.
+
+It's just a question of how miserable they actually are.
+
+Now, if we look at the retail sector, so we have a look at retail sentiment, you can see a similar situation here where when you look at the responses in the survey, whether they're in the positive or the negative for the entire period, up until the 2014, 2015 period, we only have some very, very small localized moments in history where the retail sector in Europe reported net positive sentiment.
+
+And in the current period that we've analyzed in the 2015 to 2019 period, you can see during that period that the retail sector was obviously reporting throughout its entire history, the longest and most positive periods of sentiment.
+
+So you can see just visually that for the vast majority of times over the last 35 years, we get negative readings.
+
+This is borne out by the long term average trend line that you can see in red.
+
+So basically, it has been improving, but it's just on average in the negative all the time.
+
+And yes, it has been getting better, but it's taken on average to go 35 years from negative 10 to around negative 5.
+
+So maybe in 35 years time, we might see the retail sector in Europe in the Eurozone actually have an average positive sentiment.
+
+But I very much doubt it.
+
+But I very much doubt it.
+
+And if you think of the consumer sentiment data that we looked at on the previous slide, that's extremely unlikely to happen.
+
+And just to give you an idea, you know, of how generally bearish sentiment is in the European retail sector.
+
+If you think of the period 2002 to 2007, when we had one of the biggest economic booms ever in the history of capitalism in the world.
+
+And the European retail sector for the vast majority of that time period was reporting bearish sentiment.
+
+So if that's not going to get the patient's heart moving again, beating again, then probably nothing ever will.
+
+If you think of our periods that we looked at, the 2015 to 2019 period, if you think of the 2011 to 2015 period, although this has a 5% weighting, so very small contribution to the composite number, you can see for most of that period, there was pretty extreme bearish sentiment occurring in the European retail sector.
+
+Next up is our construction sector.
+
+And again, mostly in the negative for the entire 35 or so year data set history, only on a few occasions.
+
+So in our period that we've been looking at the 2015 to 2019 period, you can see from 2017 to 2019, you can see that there's a positive period.
+
+And we also get a positive period in construction in the tail end of the boom before the financial crisis in 2009.
+
+So we get that construction positive sentiment, 2006, 2007.
+
+We get small blips in the early 2000s in positive.
+
+And in the late 80s, we get a small blip positive as well.
+
+But for the vast, vast majority of situations in history, the survey respondents are pretty much for the entire history bearish.
+
+And for this sector, it's yes, again, a low weighting 5% contribution to the composite index.
+
+But it's important to understand and understand some economic history here.
+
+So when we're moving forward, we can understand what is going on in the construction sector and in the economy as a whole.
+
+If you look back to the recovery period after the global financial crisis, look at the extreme bearishness that occurred in 2009.
+
+So we're looking at around 35%, 36%, 37% negative in the response differences between positive and negative sentiment.
+
+And look at the recovery in the construction sector.
+
+It doesn't recover at all until nine years later.
+
+So we're looking at positive sentiment occurring around the end of 2017, beginning of 2018.
+
+And you can see that there's negative sentiment to negative 20, pretty much all the way up to the end of 2015.
+
+So when you put this into context of what was happening from the ECB, the massive amounts of stimulus, low interest rates, negative interest rates, negative real interest rates, massive bond buying programs during that entire period.
+
+And the Eurozone construction sector stayed bearish the whole time.
+
+So when you think about this, again, the construction sector, like the Eurozone retail sector, and even the Eurozone consumer, when you think of this in the context of what's happened over the last decade, the question is, is what, if anything, is ever going to get the patient's heart beating again?
+
+When you think of it in the context of all the stimulus that's happened, the answer is, probably nothing ever will.
+
+So when you think of that ESI composite number and the weightings of the five components, it's obviously far more important from a trader and portfolio management perspective to look at the contribution of the manufacturing sector and whether there's bullish or bearish sentiment there.
+
+And the contribution to the composite index.
+
+And also look at the services sector and the service sector contribution and whether the manufacturing sector and service sector are both contributing positively, both contributing negatively, or they're butting heads where one is contributing positively and one is contributing negatively.
+
+So remember, the weightings of the manufacturing sector is 40% contribution to the composite index, and the services sector is 30%.
+
+So from a trader's and portfolio manager's perspective, when we're seeking to forecast potential GDP growth direction and Euro stocks 600 returns in the bigger picture, we need to focus, obviously, a lot more on the manufacturing sector and service sector PMIs that are part of the overall composite index.
+
+And then, of course, we have the consumer, Eurozone consumer, we have the Eurozone retail sector, and we have the Eurozone construction sector.
+
+Eurozone consumer is 20% weighting, and retail is 5% and construction is 5%, so much lower weightings, so a combined 30%.
+
+But, remember, they're always bearish.
+
+But remember, they're always bearish.
+
+It's just a question of how bearish they are.
+
+So from a trader and portfolio manager perspective, yes, we have to pay some attention, of course, to the consumer from a macroeconomic perspective.
+
+But from a macro perspective, we're not putting anywhere near as much emphasis on the European retail sector and the European construction sector as the contribution of manufacturing and services to the overall number.
+
+And also, remember, because they're just always bearish.
+
+It's just a question of how bearish they are.
+
+But we don't never, ever, of course, not pay attention to it.
+
+If they are less bearish or extreme bearish, this can mean important stuff for our macro outlook, but much more so for our trade ideas that we can get from the retail sector and the construction sector in Europe.
+
+Now, if you recall, each country within the Eurozone, and even for the European Union data, each country has its own ESI and also reports its own five components.
+
+Now, we've put these all in alphabetical order.
+
+Obviously, the size of the economies is more important to consider in terms of the read across for traders and PMs for GDP growth and potential Euro stock 600 returns and even for trade ideas.
+
+So, obviously, the size of the economy is more important, but we're going to go through on the screens here all of them.
+
+We won't spend as much time on the smaller ones, sometimes no time, but we'll focus more on the bigger economies.
+
+But you can get this data in the ESI, and this is something you should update every month because it's very useful to get an overall picture of the macroeconomics and also what is happening locally in each country within Europe, not least because you can actually generate some trade ideas from them.
+
+So, let's start going through these.
+
+On the screen, you can see Austria.
+
+Now, obviously, Austria, it's a very small economy in the global context.
+
+So, we don't pay much attention to the contribution that these countries make to the overall Eurozone.
+
+But we obviously do pay attention and update our data in the spreadsheets monthly from a trade idea generation perspective.
+
+The way you should look at all of these, and this is even the small economies, okay, the way you should look at all of these is just eyeball them.
+
+So, when you're in the downloads area and you download the spreadsheets and you're updating it every month, you'll update these charts.
+
+And if you just eyeball them and look at each area, so the five contributors, and when you eyeball them, just look for some basic things.
+
+Understand the long-term trend, understand the long-term trend, look at the red lines, so the long-term average trend lines, and where we are at the time, below trend or above trend, and fit it into the bigger picture.
+
+So, Austria, small economy, we don't pay much attention to it.
+
+So, Austria, small economy, we don't pay much attention to it, but we update the data, we do it diligently, and perhaps one day, we may have a trade idea in these smaller economies, but we just think of the longer-term trend, and whether we're above trend or below trend, and what it means in the bigger picture at any one moment in time.
+
+Belgium, again, very, very small economy, we don't spend too much time on it, we just update the data.
+
+Cyprus, obviously ridiculously small.
+
+Estonia, very small, irrelevant.
+
+Finland, small as well.
+
+And then we get to one of our big economies, France.
+
+France, obviously a very big economy in the Eurozone, meaningful for the world, so we pay attention to it.
+
+If you recall back to previous slides where we had the GDP tables, in 2019, you'll notice that in US dollars, the French economy was 2.7 trillion US dollars, which ranked it the seventh largest economy in the world.
+
+So, you can see here, if we start eyeballing France, and start paying attention to some of the long-term trends, and the details of recent history.
+
+So, if you look at the ESI, for example, on the top left-hand corner of the screen, you'll see for France, coming out of the global financial crisis, we had a strong recovery from the global financial crisis in 2008-2009, where you see that strong recovery above average trend in 2010.
+
+And then 2011, it goes back below the 100 level, and below the long-term average trend line.
+
+And it takes a very long time afterwards for the French economy to recover the overall ESI, the sentiment of the French economy.
+
+And if you look at the contributing factors, if we look down in the bottom left, we can see the manufacturing sector, French manufacturing sector, and post the positive surge after, in sentiment, after the global financial crisis, we get French manufacturing 2010-11 going below the 100 level.
+
+And then it takes all the way up to basically 2016-17 to get back into positive sentiment again.
+
+And then in 2018, it goes negative.
+
+Overall, you can see the long-term average trend line for French manufacturing is below zero.
+
+So just above, below negative 10.
+
+And yeah, it's a pretty horizontal slope for the entire data set.
+
+So French manufacturing on average over the entire data set of around 35 years is average bearish.
+
+And you can see it's borne out in the data in the charts.
+
+You can see over time, over the last 35 years, there's just way more negative data points in terms of sentiment versus positive.
+
+And again, think of that period, the 2011 to 2019 period, and think of the context, especially in the 2011 to 2015, 2016 period.
+
+Think of the context of all of the ECB activity and policy of negative real rates and huge bond buying, bond purchase programs.
+
+And again, what's going to get the heartbeat of the patient actually beating again?
+
+Well, it took a hell of a lot just to get positive sentiment in the French manufacturing sector post the financial crisis.
+
+And then it didn't last long.
+
+If we look at the French service sector, so in the top middle portion of the screen, you'll see a similar situation, but we're actually moving from positive to negative.
+
+So positive sentiment to negative sentiment on average over 35 years.
+
+You can see coming out of the financial crisis, there was a very sharp recovery in the French services sector, but it didn't last long.
+
+And then we went into that low period of 2011 to 2015, 2016.
+
+And then we had a positive period, 16 to 20, and then went negative again.
+
+But overall, taking notes of the long term average trend line, you can see that the long term average trend for French services reported as negative sentiment has been decreasing overall, on average, over 35 years.
+
+Moving on to the French consumer, overall, long term average trend bearish, apart from a few positive blips in the late 1990s.
+
+In the late 1990s, early 2000s, all the data is negative.
+
+And it's actually getting worse.
+
+The line is sloping left to right and getting lower.
+
+So the red long term moving average is sloping down.
+
+And there's only one way to sum this up, guys.
+
+The French consumer is just miserable pretty much all the time.
+
+It's just a question of how miserable they are.
+
+Moving on to the retail sector in France.
+
+So top right of the screen, you can see that in the 90s, there was some occasional blips positive.
+
+In the mid 2000s, we get the longest period ever of French retailers being bullish in terms of sentiment.
+
+We crash in terms of sentiment in the retail sector in the global financial crisis.
+
+That's to be completely expected.
+
+And then for the rest of the data set, just occasional blips that are positive bullish sentiment.
+
+Overall, just again, like consumers in France, the French retail sector is just a pretty dire sight to behold.
+
+Moving on to the construction sector, the most positive periods in history were in the late 90s and early to mid 2000s before the financial crisis.
+
+After the GFC, the construction sector in France didn't recover till end of 2017, beginning of 2018 in terms of sentiment.
+
+And we had about a year and a half, two years of positive sentiment before the COVID collapse.
+
+So yeah, long term average trend for the French construction sector, bearish sentiment.
+
+So not looking good again.
+
+So French construction, yes, it's positively sloping, but it's always negative in the average.
+
+So again, we pay more attention to the larger economies like France.
+
+And obviously they're having a much bigger impact on the ESI and the global economy due to the size of the economy.
+
+So we pay more attention to them.
+
+Next up, Germany, which is biggest economy in Europe.
+
+So Germany, if you recall from the tables earlier in the slides, Germany is the fourth largest economy in the world.
+
+And in 2019 was 3.8 trillion US dollars equivalent in GDP.
+
+Germany, if you look in the top left and have a look at the German ESI number going into and out of the financial crisis and think about it in the context of France, the recovery was quicker and sharper in Germany and actually more sustained overall than in France.
+
+Let's have a look at the manufacturing sector.
+
+In the bottom left hand corner, you can see overall, we have a bearish number like France and positively upward sloping general trend.
+
+But it's not as strong a sector as people would have you believe or imagine if you think of it in the context of the global financial crisis.
+
+And when you compare it to the service sector.
+
+So, for example, if you look at the GFC, the global financial crisis recovery.
+
+Yes, we do get a quick recovery in the manufacturing sector 2010-11.
+
+But then 2012, we go back into bearish sentiment.
+
+If you compare this to the service sector, you can see sentiment in the service sector in the financial crisis itself was not as extreme in terms of sentiment.
+
+And then the service sector recovered very quickly and then stayed recovered in terms of positive sentiment all the way up until 2020, which can't be the same can't be said for the German manufacturing sector.
+
+Which exhibited periods of negativity even during the 2013-14-15 period.
+
+So, the service sector was definitely contributing more positively to the German ESI than German manufacturing coming out of the financial crisis.
+
+Which would surprise many because in many people's minds Germany is a big manufacturing hub.
+
+That's true.
+
+So, the service sector is extremely strong as well in Germany.
+
+And it contributed way more positively to the German recovery coming out of the financial crisis of 2008-2009.
+
+Also, when you look at services, obviously, we note the long-term trend of the red line, the long-term average trend line going positive to way less positive on average.
+
+Now, if you look at consumers in the bottom middle of the screen, German consumers, again, like the French, they're just always miserable.
+
+It's just a matter of how miserable they actually are.
+
+Apart from a few positive blips, German consumers are just generally always bearish on their own sentiment.
+
+So, we only really take note of the long-term trend there and look at it from the perspective in France and Germany as a misery index.
+
+We know they're miserable all the time.
+
+It's just a question of how miserable they are.
+
+So, when we eyeball these things, we just look at where we are.
+
+Are we below long-term trend?
+
+Are we above long-term trend?
+
+Are we peaking?
+
+Are we dropping?
+
+Are we on our way to negative?
+
+Are we recovering?
+
+Are we just trying to put it into perspective?
+
+German retailers, another mess, another disaster.
+
+Pretty miserable picture there for German retailers over the last 35 years.
+
+Always bearish, generally, on average, always reporting negative sentiment.
+
+And German construction, apart from some blips in the late 80s, early 90s, all negative, apart from in recent history, the 2016 to 2020 period.
+
+And now, at the time of recording, hovering around zero.
+
+So, yes, above trend for the 2015 period onwards, but looking tentative at the time of recording.
+
+Next up, Greece, the basket case of Europe.
+
+Not a big economy by any stretch, so we don't pay much attention to it.
+
+But any type of recovery in Greece, Greece is very sensitive to the sentiment of the future of the European project, the Eurozone and the Euro currency.
+
+We have to keep an eye on Greece a lot in case there's any major turning points there.
+
+So, again, you just fill in your data, eyeball the data on the charts.
+
+Are we above trend?
+
+Are we below trend?
+
+Are we peaking?
+
+Are we dropping?
+
+Just good to keep on top of it.
+
+Ireland, we don't spend too much time on.
+
+Italy, third largest economy in Europe.
+
+Eighth in the world, $2 trillion on 2019 numbers.
+
+We do pay some attention to Italy, of course.
+
+We won't spend too much time on Italy here.
+
+Just eyeball the numbers.
+
+The only bright spark for Italy has been a move from negative sentiment on average to, on average, positive sentiment over the lifetime of the data for Italian retailers.
+
+So, when you think of the Italian retail sector in the context of looking at their own consumers, which are always bearish, in the context of German and French consumers, who are always miserable, it's not a bad performance over a 35-year period.
+
+It's the only positive in the whole of Italy.
+
+If you look at manufacturing, if you look at services, it's all a bit miserable over a 35-year period.
+
+Moving on to other areas within the Eurozone.
+
+Latvia, very small.
+
+We don't pay much attention to.
+
+We just fill in the data.
+
+Same with Lithuania.
+
+Luxembourg doesn't have data for services and retail, but who really cares?
+
+They're tiny.
+
+Malta, tiny.
+
+We don't pay much attention to.
+
+Netherlands, a decent-sized economy.
+
+We do pay some attention to it.
+
+Portugal, decent-sized.
+
+Slovak, Slovakia, Slovenia, we don't pay much attention to.
+
+And then we come to Spain, which we do pay some attention to.
+
+So, Spain, decent-sized economy, ranked number 13th in the world on 2019 numbers at $1.4 trillion.
+
+If we look at the manufacturing sector, generally always negative in Spain over the lifetime of the data.
+
+Services exhibiting similar to all the other major economies, going from positive sentiment to negative on average over the data set.
+
+Consumers, again, generally always miserable.
+
+Consumers, again, generally always miserable.
+
+Retailers, similar to Italy, not bad considering the backdrop of consumer sentiment within the Eurozone.
+
+And we have that period in the 2013 to 2020, 2019, 2020 period, where we actually had positive sentiment for quite a while in Spanish retailers.
+
+And the slope, our long-term moving average is going higher.
+
+Construction, you can see coming out of the global financial crisis.
+
+Well, you can see going into it beforehand, actually, there was positive sentiment for a very long period.
+
+So, from the mid-90s all the way up to beginning of the global financial crisis.
+
+Apart from a few negative blips in sentiment in the early 2000s, we had positive sentiment for that whole period.
+
+So, there was a massive boom in Spanish construction, particularly in residential housing.
+
+And then the global financial crisis occurred and they haven't recovered in terms of sentiment ever since.
+
+So, the downloadable spreadsheet, guys, always updated every month.
+
+Understand the global macro picture.
+
+Always important to obviously not only understand US GDP and trying to forecast it with direction and growth, but also to have an appreciation and understanding of what's happening in the Eurozone as well.
+
+Not least, because you can actually get trade ideas from the Eurozone.
+
+So, country ETFs are actually available as tradable instruments in the United States, denominated in US dollars.
+
+And what we've done here is we've split up Eurozone ETFs that are in the top 25 of world GDP and ETFs that are outside the top 25 of world GDP.
+
+Let's start with Germany ranked fourth largest economy in the world at 3.8 trillion.
+
+Their ETF is the EWG ranked seventh France at 2.7 trillion.
+
+Their ETF is the EWQ.
+
+Italy, EWI.
+
+Spain, EWP.
+
+And the Netherlands, EWN.
+
+And on all of those products, you can actually trade options as tradable instruments.
+
+So, call and put options on the actual underlying products, the ETFs.
+
+Countries that are in the Eurozone, but they're not in the top 25 of world GDP.
+
+These ETFs, in general, are a lot less liquid than the five that we just looked at that are in the top 25 of world GDP.
+
+So, Austria, the EWO, you can trade the ETF, but options are not available.
+
+Belgium, options are actually available for the Belgium ETF.
+
+Finland, options are not available.
+
+Greece actually has options available.
+
+Ireland, not available.
+
+And Portugal, unfortunately, not available.
+
+But it just means in places where you don't have options available, you're just forced to trade the underlying product, the ETF itself.
+
+So, you can't get much more leveraged positions on for the directional bias that you have for these countries.
+
+Where you've got options available, obviously, you can have leveraged bets on the underlying products and the upside can be quite large if you have a look at this in detail.
+
+But saying that, guys, this is not our bread and butter in terms of what we do as traders.
+
+This is just optionality that increases our opportunity set and may increase diversity in our portfolios at any moment in time in the future.
+
+So, our focus as long-short equity portfolio managers is to be looking at stocks, getting a directional bias first from our macro and then in our portfolios.
+
+So, we get our directional bias and then we're utilizing stocks in the stock market, not necessarily macro bets, but macro bets can occasionally be put on in your portfolio.
+
+As long-short equity portfolio managers, our focus is stocks and we're combining top-down analysis, macro analysis with bottom-up analysis.
+
+So, first and foremost, as traders and PMs, we are seeking to utilize the macro survey data to enable us to gauge which way the wind is blowing so we can predict GDP growth, index direction and potential returns from the index and therefore our portfolio bias.
+
+So, with the ESI, the European Economic Sentiment Indicator, we can obviously also use the data to ascertain which countries within the Eurozone are having the largest magnitude moves and which areas of their economies are actually having the largest moves.
+
+And when we do our monthly updates and we organize our data, we can then potentially generate country ETF and single stock trade ideas to diversify our portfolios and take positions in the country ETFs or in European ADRs that are listed on the New York Stock Exchange and NASDAQ.
+
+But there is a caveat here to the stock trades, for example, we would still have to go through all the same processes that we've covered in the IPLT video series to determine suitability for stock ideas.
+
+And any ideas that we're thinking of putting on, we must go through the full trade idea generation process of the PTM video series.
+
+Now, as you saw when we went through all of the countries in the Eurozone, a lot of them are too small to care about.
+
+So we can eliminate a lot of countries, but just being too small.
+
+And that leaves us with an opportunity set of tradable instruments that are inside Europe.
+
+Now, we also have a single stock level have to be careful when trading European ADRs.
+
+We have to be careful in the larger economies in the Euro area that we don't put two and two together and get five.
+
+Many companies in Europe that trade as ADRs on the New York Stock Exchange are global businesses and don't just have exposure to their own country and exposure to the Euro area.
+
+However, there is a positive from the geographical and currency exposures of companies' revenue and earnings for us as traders and PMs when we're doing that type of analysis.
+
+Because the ESI, when we look at the data and at any one point in time, may determine that there's a slowdown or a pickup in certain areas of the Eurozone, especially the larger economies.
+
+When we look at US stock trade ideas, for example, companies in the US that are listed in the US that have significant specific exposure to Europe or specific countries in Europe in both revenues and profits, we can obviously generate ideas there.
+
+So it's a push-pull situation for us as traders and PMs.
+
+Yes, we have to look at US leading indicators.
+
+They are our main set of leading indicators that we pay attention to.
+
+But we also have to have an understanding and appreciation of the Eurozone and the global macro picture, not least for our directional buyers, but also for single stock trade ideas.
+
+And there's many companies in the US that have global revenue and global profit, and we have to understand where slowdowns and pickups are occurring outside the United States because they may actually be happening before the US has a turning point or a trend.
+
+Now, in terms of European stocks that trade on the New York Stock Exchange or in the US, there's a decent source.
+
+And you can go to this source to have a look at a list of all of the stocks that trade as American depository receipts, ADRs on the New York Stock Exchange and NASDAQ.
+
+And that is topforeignstocks.com.
+
+But this is at the time of recording, guys.
+
+You know, you've got to be self-sustainable and use the search engines at any moment in time to search for sources and get into that habit.
+
+Data sources that we use as examples in the PTM video series may change over time.
+
+Just use your common sense and get used to using your search terms in Google.
+
+A lot of the listed ADRs have also got options, listed options, which is great for us, that are not available in Europe in their Euro-denominated lines of stock at their own domestic exchanges.
+
+But please note, over-the-counter, OTC ADRs will not be tradable on retail brokerage platforms.
+
+Now, this particular source, topforeignstocks.com, conveniently also has international ADRs listed by sector as well.
+
+So you can go into each sector and look at all of the international ADRs, not just Europe, but all international ADRs listed by industry sector.
+
+So that's very useful for us as traders and portfolio managers as we're drilling down and trying to generate international stock trade ideas.
+
+Now, we are very soon in the video series going to be getting into the meat of how you generate single stock trade ideas.
+
+So don't worry about that. We'll get into that very soon.
+
+But using the ESI survey data regularly on a monthly basis to generate ideas, you need to be very organized in sourcing the data and in your processes.
+
+We always obviously want to be working smart, not too hard and saving time.
+
+So eliminating all the noise and getting the information that matters and interpreting it properly.
+
+If you're organized, you can get very good at these processes and get a very good read very quickly on what is going on in the Eurozone with the ESI data.
+
+And in the downloads area, you'll notice in the spreadsheet, we've actually compiled a lot of data processes in the downloads area, which will be of great help.
+
+So you have to look at the notes area in the download, follow the notes and follow the instructions and guide on how to update your data on a regular basis.
+
+You'll notice in the main download for the ESI, we have a tab called the all countries data tab.
+
+This provides a heat map of bullish and bearish sentiment across all of the countries in not just the Eurozone, but also the European Union.
+
+And we've taken a screenshot here from August 18 to the beginning of 2021.
+
+So from previous videos, our area of times of economic history that we looked at from previous videos.
+
+So the August 18 to August 19 period, and also up to December 2020.
+
+You can see what's happening to headline European sentiment.
+
+So if you look at the third column along, you'll see EA, which is the Euro area.
+
+And then you'll see all of the contributory countries to the Eurozone and the EU as well.
+
+And it should be fairly obvious, well, blindingly obvious, actually, what was happening over those periods.
+
+You can just see a general decline from a green to yellow to red.
+
+So from bullish to neutral to bearish sentiment over the period.
+
+And of particular note, for example, is coming out of the COVID economic shutdown crisis.
+
+Europe overall has struggled to get back into bullish sentiment.
+
+You'll also notice a tab in there in the file called the Movers tab.
+
+This basically splits the five areas.
+
+So manufacturing services, consumers, retailers, and construction, and ranks them by relativity.
+
+So which ones are the most bullish in descending order to the most bearish for the last month.
+
+So when you update your data, you'll be able to do this as well.
+
+So it takes the respondents in each country and sector versus the previous month and ranks them relative to each other, most bullish to most bearish in descending order for the previous month and also includes a heat map as well.
+
+So you can use this data to search for potential single stock trade ideas within certain countries and use the ADRs as trades to do so or potential positions to do so.
+
+But it does come with the caveat, obviously, that you have to have gone through the full trade idea generation process that we're going to teach you in the PTM video series.
+
+We don't rank the Movers in this sheet and then look at the data, for example, and say, OK, well, Greek construction is extremely positively sentiment relative to all other countries.
+
+Therefore, we're just going to buy any old Greek construction stock in Europe and close our eyes and hope for the best.
+
+We don't do that. Obviously, there's a lot more work to do.
+
+But what it should do is spark potential trade ideas.
+
+Now, let's summarize the European Economic Sentiment Indicator, the ESI.
+
+It's vitally important to our outlook for European GDP growth, Euro Stock 600 direction and forming a global macro view on our portfolio bias.
+
+So the ESI is a leading indicator that can be used in conjunction with all of the US leading indicators that we've looked at so far in the video series in order to form a global macro view, both in the absolute and the relative.
+
+So in the absolute global GDP growth and in the relative U.S. versus European GDP growth.
+
+Now, zooming in to the harmonized Euro area, so the single currency Euro area.
+
+So zooming in on that ESI and focusing on the larger economies is the key to understanding what's driving our expectations of both European GDP growth and Euro Stock 600 returns.
+
+Germany, France and Italy are the largest economies, and these should always be our focus when analyzing monthly ESI data.
+
+Now, you should also not only use the ESI in Europe, you should also remember to use the ESI in conjunction with European money market indicators.
+
+We mentioned this before in the video series, and you've got downloads in the downloads area of video four for the EU.
+
+We've got German bonds, French government bonds and Italian government bonds.
+
+And if you apply the same principles and the same metrics that we looked at for U.S. money markets.
+
+So utilizing real rates analysis and yield curve analysis and spreads, you're going to get a fantastic overall picture of the macroeconomic situation in the Euro zone.
+
+So apply the same principles we applied to U.S. debt.
+
+So real rates and yield curve analysis and spreads to Europe.
+
+And of course, you can also apply the same methodologies we discussed with U.S. corporate bonds to European corporate bonds.
+
+However, do bear in mind that the European corporate credit market is much smaller than the U.S.
+
+Now, similar to the way in which U.S. leading indicators give us a good gauge on what the Fed might be thinking.
+
+In Europe, the ESI leading indicator also tells us what we should expect from the ECB in terms of likely policy response.
+
+Whether it's preemptive or reactive is always up for question at any one moment in time.
+
+But do bear in mind, the ECB is watching.
+
+The ECB is looking at the same things that you are looking at.
+
+Now, the ESI is also great for generating potential trade ideas in European stocks that are either listed in Europe on their domestic exchange or listed as ADRs on the New York Stock Exchange or NASDAQ.
+
+As institute traders or ITPM, we much prefer expressing our European trade ideas via American depository receipts, ADRs on New York Stock Exchange or NASDAQ.
+
+However, when you're generating these ideas and potentially taking positions, the ESI should not be misused and misinterpreted as an instant trade idea in a particular area.
+
+This is one of the bad habits of retail traders, jumping to conclusions and not completing the groundwork, the necessary work.
+
+You still have to go through the entire trade idea generation process.
+
+And every idea has to stand up to the scrutiny of the process that you're going to be learning in the PTM video series.
+
+So, similar to when we looked at US leading indicators and the processes of potentially getting trade ideas in single stocks from US leading indicators, it's no different in Europe.
+
+The ESI simply provides clues and triggers for us to look in certain areas.
+
+It doesn't provide instant, long or short ideas for our portfolios.
+
+The ESI, like all other leading indicators that give us sector data, sparks our interest or potential interest in potential areas, potential sectors and industries that we might want to look at.
+
+We can then start putting the pieces together and finding single stock trade ideas by going through all of our other processes that you're going to be learning in upcoming videos.
+
+Most importantly, with the ESI, it tells us which way the wind is blowing in Europe, which helps us with our global macro view and long short equities portfolio bias.
+
+But of course, we can look at the sector data and we can find potential areas of interest that spark a level of interest in a particular area.
+
+But then we have to go and do the work on the actual stocks themselves.
+
+OK, so that about wraps it up for the European Economic Sentiment Indicator, the ESI.
+
+Next, we're going to move on to China, but let's go back to the desk first for a little recap on the European Economic Sentiment Indicator.
+
+OK, so that was the European Economic Sentiment Indicator, the European ESI.
+
+And as you can see, it's very similar to our US leading indicators, that being the ISM Manufacturing, the Non Manufacturing Index, the UMCSI and Building Permits.
+
+But it's all wrapped into one giant data set covering Europe.
+
+So as traders that are predominantly US focused, how do we use it on a monthly basis?
+
+Well, firstly, it aids us in determining global GDP growth.
+
+Secondly, it also tells us where growth is potentially coming from in the world or indeed where there's a lack of growth or a slowdown occurring in the world.
+
+So is there growth coming from the US, Europe, China?
+
+Is there a lack of growth coming from one of those regions?
+
+Third, it also gives us potentially some trade ideas in European ADRs listed in the United States.
+
+And yes, when we look at the next video in China, when we look at Chinese leading indicators, this is the same situation there as well.
+
+Because we have Chinese ADRs which are tradable in the United States.
+
+We'll be looking at those in the next video.
+
+So it's the same in Europe as for China.
+
+We have ADRs listed for both regions in the United States.
+
+Now, it's worth mentioning at this stage that at ITPM, we are predominantly trading US stocks.
+
+Why? Because it's the richest environment for data and stocks.
+
+So for our opportunity set and for us to get consistent returns.
+
+So 50% of our students, our retail traders are based in the United States and they have their trading accounts in the United States.
+
+And 50% are outside the United States.
+
+And 50% are outside the United States.
+
+But even though these trading accounts and the people are located outside the United States, their trading accounts are denominated in US dollars.
+
+And they are predominantly trading US stocks.
+
+So when we add Europe and China to our potential opportunity set, what we're doing is we are increasing our opportunity set.
+
+But only if we are trading them denominated in US dollars in our trading accounts and we're trading them as ADRs.
+
+OK, so Europe and China increase our opportunity set as long as we are trading them as ADRs.
+
+So we are at ITPM always trading stocks that are denominated in US dollars.
+
+So this is another reason why we stay on top of European and China leading indicators.
+
+So now we're going to move on to China in the next video and we're going to be looking at leading indicators for the Chinese economy.
+
+Now we have to approach China with caution because data can be very unreliable.
+
+You're going to see in the next video why.
+
+And we're also going to show you some tools and analysis that help you determine the feasibility of Chinese data.
+
+It's a fun video to watch and experience.
+
+OK, so after the next video, we will actually be jumping straight into video 15.
+
+And we're going to do a full recap of all of our leading indicators and the process.
+
+And then I'll see you back at the desk in video 16.
+
+Let's get into it.

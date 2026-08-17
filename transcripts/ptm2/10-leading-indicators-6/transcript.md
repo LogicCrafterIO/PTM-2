@@ -1,0 +1,885 @@
+---
+course: ptm2
+lesson_id: "10"
+title: "Leading Indicators 6"
+module: leading-indicators
+module_title: "Leading indicators"
+duration: 01:07:55
+duration_seconds: 4075.285
+source: "10. Leading Indicators 6.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  - "Documents/Video 10/US_Building_Permits.xlsx"
+---
+
+# 10 — Leading Indicators 6
+
+Okay, guys, let's get stuck into video number 10. We've made a lot of progress so far in the video series, but there's still a long way to go. In this video, we're going to get into the U.S. construction sector, and in particular, the U.S. residential housing sector. We're going to be looking at our next leading indicator, the Census Bureau's monthly report on building permits. Let's have a quick recap of what we've covered so far. Our leading indicator list, we have our government bond market with real interest rates and the yield curve. We have our corporate bond market with investment grade and high yield or junk spreads over the 10-year. We have our M2 money supply accessory. We have our stock market volatility, the S&P, S&P 500 VIX from the IPLT video series, and we have our multiple survey list, which we continue to add to. So surveys so far, we've covered the ISM manufacturing report, the ISM non-manufacturing report, and the University of Michigan Consumer Sentiment Index.
+
+We are now adding the Census Bureau's monthly report on building permits. So what are we looking at here? Well, we're looking at the U.S. housing sector. And the U.S. housing sector provides us with multiple economic indicators that can help us make decisions as traders and PMs on whether we believe the U.S. economy is likely to grow or not.
+
+The building permits report. The building permits report that comes from the Census Bureau is taken from the monthly Housing Starts Report, which is a report that is released on a monthly basis with a lot of information in the U.S. housing sector.
+
+The building permits report to predict GDP growth and S&P 500 direction and returns. Now, the building permits number is one of the most misunderstood economic numbers in the U.S.
+
+Even pro-traders guys and seasoned economists miss some very important signals that the building permits data actually gives us. Now, where can we find it? Well, the links are on the screen, as you can see, census.gov forward slash construction with the URL extensions. You just need to go there each month and go to the History Section of the Census Bureau section of the Census Bureau's Construction Index data set. You can download the entire data set in Excel and view it from the sheet, Permits Seasonally Adjusted or in PDF format. And then you add the new numbers in every month. This is easily done by yourself. But we do have a download in the Downloads area for you. If you want to go there, you can see it.
+
+We want to get the data quickly. We want to get the data quickly. And we've done a lot of work in that Downloads area as well on the data to show trends. When is it released? It's released in the second or third week of the month. And the data is for the previous month.
+
+Now, before we get into building permits themselves, a bit of background understanding is required.
+
+We need to understand what this housing report is all about, the Housing Starts Report that comes out every month.
+
+So the building permits number comes from the U.S. Housing Starts Report.
+
+The report also includes a number for housing completions.
+
+And each of these three variables, these three data sets, have a different definition.
+
+We should understand that definition first, so you can understand the report better.
+
+It essentially breaks down the entire process of a residential housing unit being developed or built.
+
+So we have three stages for a residential home to be built.
+
+We have a building permit being authorized.
+
+We have the project being started, a housing start.
+
+And when the house is complete, we have a housing completion.
+
+And the way we define these data sets individually is basically from a time perspective, okay?
+
+A building permit is a leading indicator because it leads the housing start.
+
+A housing start is a coincidence indicator because it tells you what is going on at that moment in time in the economy.
+
+A housing completion is a lagging indicator because once the home is complete and it's built, it's finished.
+
+The project is over.
+
+So throughout the time series, the housing start is when there's economic activity occurring.
+
+The building permit precedes the housing start, so the building permit is when the project is authorized.
+
+So what is the definition of a building permit?
+
+Well, the building has basically received planning permission by the local state planning department.
+
+For a housing start, the foundations of the building have been laid, the project has started, the economic activity has started.
+
+Housing completion, the structure and the major interior work has been completed.
+
+So there's probably still minor work to do, but it's not essential, and the home is currently being marketed for sale.
+
+So another way to look at this, a building permit is when the paperwork for the project is put together.
+
+A housing start is when the physical commodities become the house.
+
+What do we mean by that?
+
+Well, the foundations go in.
+
+Well, the foundations go in.
+
+There's bricks, cement, steel, iron ore, copper wiring, electrics, components, et cetera, et cetera.
+
+This is when physical commodities, the economic activity starts and the house is built.
+
+Physical commodities turn into the property.
+
+Then the housing completion, this is when the project is complete and the economic activity is stopping.
+
+So it's paperwork, physical commodities become houses.
+
+The project stops, housing completion.
+
+So we have the paperwork, which is the leading indicator.
+
+We have the physical commodity transformation into the home, which is the housing start.
+
+That's economic activity that's occurring in the economy right now.
+
+And we have the housing completion.
+
+And that is a lagging indicator.
+
+So we go from paperwork, leading.
+
+Housing start, coincidence.
+
+Project completed, lagging.
+
+Now, given that this is actually a time series, and as traders and portfolio managers, we want to know what the length of time is between a building permit authorization, a housing start, and a housing completion.
+
+Because we want to know what length of time of building permits leading indicator is leading the economy by, and leading the coincidence and the lagging indicator.
+
+Well, we can get this data if we go to the Census Bureau website.
+
+And if we look at the URL extension there, so construction forward slash nrc forward slash length of time.
+
+And you can see we can look at the length of time and get the data set, the length of time that it takes for an authorization to start.
+
+And we can also get the length of time that it takes, get the data for a start becoming a completion.
+
+So let's have a look at the data for a building permit being authorized and the length of time it takes for a housing start to occur.
+
+If you look at the screen here, you can get this PDF download from the Census Bureau website in the URL that I just mentioned.
+
+And we're looking here at the percentage distribution of new privately owned residential buildings started in permit issuing places in the year of 2020 by the number of months from authorization.
+
+So the number of months it takes for a housing start to start from the moment of authorization across the United States in the year 2020.
+
+So let's have a look at the percentage distribution here.
+
+Now, there are states that allow developers to break ground and start a project before a building permit authorization is issued.
+
+The first part you're looking at here, if we look at the headline numbers of the United States, is exactly this.
+
+So prior to or at the same time or in the same month as the authorization or the building permit is issued, this comes out at 43%.
+
+So you can see in a lot of states around the US, developers from the local state planning department are allowed to break ground and they're allowed to start their project either slightly before or in the month of the building permit being authorized.
+
+This comes in at 43%.
+
+If we look at the rest of the percentage distribution for the 2020 year, we can see one month comes in at 37%.
+
+So that's one month after the building permit has been authorized.
+
+So one month comes in at 37%.
+
+Then two months comes in at 10%.
+
+Three months comes in at 4%.
+
+So I've added those up and we get to 51%.
+
+Basically, in the one to three month time period after a building permit is authorized.
+
+And yes, guys, it's not a coincidence.
+
+Housing developers are trading one to three month portfolios as well.
+
+Additionally, you can see that projects starting from authorization, four months or more comes in at 6%.
+
+So if we add the one, two, three and four months or more together, 57% is one month plus, but the meet obviously is in the one to three month period.
+
+So essentially, if we add the 51% and the 43%, 94% of projects are started either around the time when the permit is issued by the State Planning Department or within three months.
+
+We can also look at completions.
+
+And if you download the PDF there for completions, whatever time period you're sitting in, but we've got completions here for 2020.
+
+We can look at the percentage distribution for the time periods for completions coming from starts.
+
+So started projects that are actually getting completed and how long it takes.
+
+So if we look at the headline data for 2020 across the whole of the US, we can see we've got 16% is three months or less.
+
+So it takes three months for a housing start to become a completion that's 16% of projects.
+
+Next, we've got four to six months, seven to nine months, and 10 to 12 months.
+
+And if we add that up together, that shows a time lag of four to 12 months.
+
+And then in the minority of cases, we have projects going from start to completion in 13 months or more.
+
+And that comes in at 9%.
+
+So the meet is obviously in that period in four to 12 months, but really it's four to nine months.
+
+So we can actually get conclusions here on the actual time lag from permits to starts and from starts to completions.
+
+And therefore, how much time permits are leading starts and how much time starts are leading completions, but also how much time permits are leading completions.
+
+So permits leading starts.
+
+We're looking at three to four months.
+
+Where does the four months come from?
+
+Well, that's because in the data, the state planning departments in some states allow developers to actually break ground at the same time or one month before permits are issued.
+
+So to be prudent, we're using three to four months leading housing starts.
+
+So permits leading housing starts by three to four months.
+
+What about starts leading completions?
+
+Well, we've just looked at that.
+
+It's on the screen.
+
+We're looking at the vast majority of times in the four to 12 month window.
+
+So what does that mean for us as traders and portfolio managers when we're looking at building permits as a leading indicator?
+
+Well, it means permits are leading housing starts by three to four months and permits are leading completions by anything between eight to 16 months.
+
+So it's obviously an extremely useful leading indicator.
+
+Now, what does all this actually mean for us as traders and portfolio managers?
+
+Well, this is part of the reason why so many players in the market misunderstand or misinterpret what the building permits number actually means, because it infers a lot of useful information for us, but people, a lot of people in the market don't really understand what it infers.
+
+We are looking at how many building permits have been issued by state planning departments in the U.S. at any one moment in time in a particular month for the previous month.
+
+And those building permits can go up month on month and they can go down month on month.
+
+And we look at the change in that as well.
+
+So we look at the total number and we look at the changes month on month.
+
+So by definition, the building permits number as a leading indicator tells us several things.
+
+The first thing it tells us is it gives us a very good gauge on developer sentiment, on housing developer sentiment.
+
+So it tells us whether or not developers are bullish or bearish on the prospects of future home sales.
+
+Developers have to physically make the application for building permits.
+
+So more applications for building permits means, from a developer sentiment perspective, an expectation of future sales.
+
+And it costs them money, guys.
+
+They don't do this for fun, okay?
+
+Every single application that goes in to the state planning department, it costs anything between $500 to $1,000 per home, depending on what state you're in and what home you're applying for.
+
+What it also does is it gives us a gauge on home buyer demand.
+
+So the demand for housing from the US consumer.
+
+And this, as a consideration from a traders and portfolio managers perspective, runs in tandem with our analysis of consumer sentiment.
+
+Because it may eventually lead to changes in future consumer spending.
+
+So if home buyers are bullish, it probably means in the future, they're going to be spending money.
+
+And if they're bearish, home buyers are bearish.
+
+It probably means in the future that they're eventually going to spend less money.
+
+So tightening their belts.
+
+But what it also does is it gives us a gauge on the liquidity and health of the US credit market.
+
+And it does this in two ways.
+
+First of all, the supply of loans.
+
+Developers in the US don't finance projects with 100% equity or cash.
+
+They put down a certain amount of money and they use a mix of that cash and they borrow money.
+
+They use debt.
+
+Additionally, the home buyers themselves, the consumers, they don't buy houses for cash.
+
+They buy them with debt, they buy them with mortgages.
+
+So the building permits number gives us an insight into these two areas in terms of the liquidity and health of the US lending environment, government, which is essentially the health of the banking sector and the credit markets and the overall economy in the United States.
+
+Now, the data itself, as mentioned previously, we do have a download US building permits in the downloads area under the video.
+
+So in your own time, download that there's a lot of pretty comprehensive work in there looking at the various trends and turning points in building permits.
+
+And we're going to go through those a bit later.
+
+But let's have a look at the survey design for building permits in a bit more detail and understand that a little bit better.
+
+Okay, so basically, the purpose of the building permits survey, so the report itself, is to give national, state and local statistics on the number and valuation of new privately owned housing units that are authorized by building permits in the US.
+
+The statistics from the building permit survey are based on reports that are given or submitted by local building permits officials in response to a voluntary mail survey.
+
+And the data is collected from the building permit officials.
+
+So in this survey, using what's called a form C404, which is the report of building or zoning permits issued for new privately owned housing units.
+
+And if you go to the link there, if you go to the following URL, you can actually get a sample C404 form.
+
+And this is the form that gets sent out to the building permit officials.
+
+And this is the form that they fill in.
+
+So you can actually have a look and understand the survey design and the form that they need to fill in.
+
+So a bit of background information there.
+
+Basically, the building permit survey covers all permit issuing places in the United States, which are jurisdictions that issue building or zoning permits.
+
+And you can see the amount of permits.
+
+And you can see the amount of permits issuing places throughout the history of the data set.
+
+And the data set goes back to 1959.
+
+And you can see way back in 1959, you can see our sample size for the data, which is 10,000 permit issuing places.
+
+So that's 10,000 jurisdictions that were issuing building or zoning permits.
+
+And you can see it's been growing and they've increased the sample size over time.
+
+And the last count of the sample size was back in 2014, where they had over 20,000 building or zoning permit jurisdictions, which were issuing building permits.
+
+Now, we do have the entire data set in the downloads area.
+
+But if you do want to go and get that yourself, you need to go to the URL, census.gov forward slash construction, NRC index.
+
+And you click on the left-hand side, building permit survey, you look for new residential construction, and you click on building permit survey.
+
+This is the monthly report that you get.
+
+And you can download the full report in PDF format, or you can do that in Excel as well.
+
+And if you download it in Excel, this is essentially what you're looking for.
+
+You're looking for new privately owned housing units authorized by building permits in permit issuing places.
+
+And this is the download for December 2020.
+
+And what you're looking for is the tab or the sheet inside the file called units SA.
+
+So units seasonally adjusted.
+
+So what does this number actually represent?
+
+Well, the 1704, that is 1.7 million building permits authorized or issued in December 2020.
+
+So remember, this number will have been coming out in the second or third week of January.
+
+Okay. And if you look to the right-hand side, you can see the various regions of the United States.
+
+You can see the Northeast, Midwest, South and West.
+
+So the survey breaks it up into four areas of the United States.
+
+And you can see a total number for each.
+
+So for example, in the Northeast, you can see 140.
+
+That's 140,000 permits issued.
+
+You can see in the Midwest, 248.
+
+You can see in the South, 881.
+
+And in the West, 435.
+
+And if you add those totals together, you get the total number for the US.
+
+So 1.7 million building permits issued for the month of December.
+
+Now within those four regions that are defined by the Census Bureau, you can actually go a little bit deeper and you can look at the permits by each state within the United States.
+
+If you go to the website, go to Building Permits Survey, and you'll be taken to some links that you can click on and you can look at permits by state.
+
+When you download the data, this is what it's going to look like.
+
+You'll get a spreadsheet that looks like this.
+
+You can obviously see we've got in this sample here, we've got the headline number on the top for the United States and we've got our regions that we just looked at.
+
+So we've got our Northeast region.
+
+So if you look in column A, we have our Northeast region, we have our Midwest region, we have our South region, and we have our West region at the bottom.
+
+These are, additionally, these regions are broken up into divisions.
+
+So you can see, for example, and we've highlighted a few states on the screen here.
+
+So a few key pivotal states, obviously, New York and Florida.
+
+You can see New York is part of the Mid-Atlantic division, which is part of the Northeast region.
+
+And Florida is part of the South Atlantic division, which is part of the South region.
+
+So if you're really interested in looking at what's happening at the state level, there's obviously important information that can be gleaned from that from time to time.
+
+The biggest places that you need to be looking at are obviously in the US, New York, Florida, Texas and California.
+
+When the monthly data comes out, it's not only useful from a trading and portfolio management perspective to look at the headline number for the whole of the United States, but to potentially understand where any growth and contraction is coming from at a state level.
+
+But for the purposes of this video and the PTM video series, we're going to be looking only at the headline rate of the United States as our main gauge.
+
+So let's have a look at an example of building permits in recent history.
+
+What we've got on the screen here is the period June 2018 to December 2020, which if you think back to video seven with the ISM and other videos, we looked at this period, the period August 2018 to August 2019.
+
+And if you remember, that was the period when the ISM peaked, so in August 2018, and then went into slowdown.
+
+If you recall what was going on in the money markets during that period from August 18 to August 19, the yield curve began flattening, then the short end of the curve inverted slightly versus the middle.
+
+So we had a slight inversion of the yield curve there.
+
+And that occurs up until spring 2019.
+
+And if you recall, the selloff in the S&P 500 happened between October 2018 and January 2019.
+
+And the selloff was approximately 17 or 18%.
+
+And if you recall, when we took a snapshot of the tens and twos in August 2019, there was slight inversion, but essentially flat, but slight inversion.
+
+And the ISM was below 50 for the first time.
+
+Now, as you probably recall, the Fed saw the problem coming and they cut rates in July, then in September and October 2019, in response to the money markets chaos and the ISM manufacturing slowdown.
+
+Now, if we look at permits during this period, so August 18 to July 19.
+
+So leading into the August 19 ISM and yield curve inversion.
+
+If we look during that period, August 18 up until July 19, we can see that building permits essentially didn't grow at all.
+
+So if you look on the screen, in August 2018, permits were reported at 1.258 million by June 2019.
+
+And remember, that June number will have been reported in the second or third week of July.
+
+That June number is 1.273 million building permits issued.
+
+So essentially no growth over that period, so essentially flat.
+
+But what's interesting is what happens to building permits in July 2019 and beyond.
+
+So remember, the Fed cut rates in July and the July building permits number will have been reported in the second or third week of August.
+
+So what we can see on the screen very obviously is that in response to the Fed rate cuts, permits taking off almost immediately.
+
+We get a reading in July 2019, reported in the second, third week of August.
+
+We get a reading in July 19 of 1.366 million building permits issued.
+
+And then in August, we get 1.471 million building permits issued.
+
+And we see growth continuing up until February 2020, when we see the COVID shutdowns start to take effect on the housing market and building permits issued.
+
+And in March 2020, we see building permits go down again and then they hit a low in April 2020.
+
+And then they start to go higher in May, struggling around May and June at around the same level at 1.2 million, 1.25 million.
+
+And then in July, they start to take off again.
+
+So July 2020, and then we have a continual rise throughout the year of 2020 for the rest of the year.
+
+Now, obviously, during that time, we had a massive intervention from the Federal Reserve during that period, during the COVID lockdowns.
+
+But something else was going on as well, there was a consumer or human response, which also helped precipitate a boom in permits.
+
+The lockdowns, so the extended draconian COVID lockdowns resulted in a big increase in interstate migration.
+
+So that's New Yorkers moving to Florida, mostly, and Californians moving to Texas.
+
+There was a big increase in interstate migration.
+
+So that combined with record low interest rates and big increases in the money supply, plus the Fed and government stability packages created incremental demand for new housing and mortgage refinancing.
+
+And if you recall as well, the Fed's actions definitely steepened the yield curve, and the S&P 500 during that time rallied very, very hard.
+
+But interestingly, if we think about looking at periods in time and what was actually going on at those moments in time, if we think of that period, August 18 to August 19, that we've looked at in previous videos, when we look at building permits, August 18 to the June report, which was reported in July 19, if we think of building permits, yes, they didn't go up.
+
+Yes, they were flat.
+
+But guess what, there was actually no collapse.
+
+So imagine yourself sitting at that moment in time, analysing this building permits data and all of the other leading indicators, and every week you're getting new and more and more information.
+
+So in that period, August 18 to June 19, there was no collapse in building permits.
+
+The S&P 500 sold off between October 18 and January 19 of around 17-18%, and the ISM was in decline from peak.
+
+And the ISM manufacturing number did go below 50 for the first time in August 19.
+
+But if you recall, when we looked at the UMCSI, the consumer data, there wasn't a collapse in consumer spending.
+
+And also in the services sector, there was no collapse in the service sector either.
+
+So remember, when we looked at the ISM non-manufacturing report.
+
+So there were signs there, guys, that even though the ISM, the manufacturing number, was in decline from peak and went below 50 for the first time in August 19, the US consumer building permits and the services sector hadn't collapsed.
+
+They were holding up and they were still very strong.
+
+The Fed took action because of stresses in the bond market and because of a manufacturing slowdown in the US.
+
+Building permits actually held steady throughout, similar to the US consumer, the UMCSI and the US services sector.
+
+So this is a good example, guys, of looking at a moment in history and looking at a leading indicator and putting it into the context during that moment in history with what was going on in the economy overall and in the context of what was happening with other leading indicators.
+
+By going back in time and looking at trends and turning points in economic history in the business cycle and putting it into context with what was happening in the economy and with other leading indicators at the time, what you're actually doing is you're becoming a student of business cycle history and economic history and what you're actually doing is you're honing your skills for understanding leading indicators and understanding the economy.
+
+So in the future, when you actually sit down at any one point in time and you look at a particular leading indicator and a collection of them and you look at the context of what is occurring in the world and in the economy at the time because you've practiced and looked at past business cycles and understand business cycle history, you're going to understand what is happening in the current context at any one moment in time a hell of a lot better than somebody who has no idea what's going on at all.
+
+This is obviously where you can get an edge in the market.
+
+Now, when it comes to building permits and the history of the data, we put together the all time permits chart here and this is available in the downloads area.
+
+And you can denote some very obvious visual traits of the building permits data when looking at the chart.
+
+Very obviously, there's peaks and troughs.
+
+We've also put a long term average trend line on the chart.
+
+So visually, you can see the long term average trend line is between 1.3 million and 1.4 million.
+
+You can also see that there's, if we look at troughs at the bottom of the chart, you can also see that visually there's some very obvious levels for troughs in building permits data.
+
+You can see 1, 2, 3, 4, 5 data points before the global financial crisis where building permits were essentially between 7,000 and 800,000 where they troughed in previous business cycles.
+
+And then in the global financial crisis, building permits bottomed in the low 500,000 and we're bottoming basically between 500,000 and 600,000 permits issued.
+
+When we look at the peaks, we can basically see peaks at 2 million permits and above throughout the permits data history.
+
+So for example, if you look at the global financial crisis going into it, you can see that permits were above the 2 million mark for quite a long time.
+
+Essentially, permits were above 2 million for most of 2004 and all of 2005 and the beginning part of 2006.
+
+It was in May 2006 when permits actually fell below 2 million and then they went below 1.9 million in June 2006.
+
+So that's pretty amazing because when we think about earlier, when we looked at our lead times for permits to starts and then completions, we denoted that building permits were leading 12 to 16 months on completions.
+
+And this time period is born out here if you look at the channel for the upswing in housing permits from the early 90s all the way up to 2006.
+
+The channel was broken and we were being warned about a big slowdown in the housing market, a very meaningful slowdown in the housing market in the United States in May and June 2006.
+
+And that time horizon is born out because the financial crisis happened or started happening 12 months later.
+
+And then 16, 18 months later, that's when the financial crisis really started to get going in the second half of 2007.
+
+In more recent history, you can see on the right hand side of the chart, permits coming out of the financial crisis where they troughed in the low 500s.
+
+And then permits going up consistently in that channel.
+
+And apart from a blip up, an aggressive blip up in 2015, permits didn't really recover back to the long term average trend line of between 13, 1.3 million and 1.4 million.
+
+Until 2016, 2017.
+
+So it took a long time for the housing market to recover to a long term average trend in terms of building permits coming out of the financial crisis.
+
+And looking at very recent history, we can obviously see that periods that we were looking at in 2018, 2019 and 2020, where we have the building permits number above long term trend, quite significantly above and then coming down in 2020 for the COVID collapse and then rallying after the COVID reopening.
+
+So you can go back in the downloads area into the data, not just looking at the chart, but also looking at the actual columns and rows with all the data in it and just have a scroll through, have a look at previous lows and peaks.
+
+So previous drops and peaks in building permits, put them into context, put them into context of what was going on at the time in the economy and also what was happening with other leading indicators.
+
+Become a student of the business cycle.
+
+Something else that's in the downloads area is the building permits month on month percentage change.
+
+And that's with all data history.
+
+If you look at the bottom of the chart, you can see the percentage change on the right hand side.
+
+So on the right hand axis and the changes are denoted visually to help visually with positives in green and negatives in red.
+
+And you can see peaks and troughs in that type of performance as well on the month on month changes, percentage changes in the data.
+
+So you can see, for example, when we have a monthly change that's at 20% or above, that tends to be a monthly move where we don't see moves after that following as big as that move.
+
+So a plus 20% in the positives.
+
+And in the negatives, it's the same, but a negative 20%.
+
+Whenever we get a month that's negative 20% change in building permits, months that follow are not that extreme.
+
+We've also, in the downloads area, got data and got the charts for building permits compared to GDP growth.
+
+So here we're looking at a year on year percentage change in building permits versus year on year percentage change of GDP growth.
+
+And you can clearly see that when building permits is in the positives, we're getting GDP growth growing in the same direction in the positives.
+
+And when building permit changes, year on year go negative soon after we see GDP growth year on year percentage going in the same direction and going negative.
+
+But not all the time.
+
+So we don't look at this chart and say there's a rule book.
+
+What we have to do is always use the data in conjunction with other leading indicators as well.
+
+Of course, if we see building permits year on year percentage changes going negative, we take note of that and we look at it in the context of other leading indicators and what's happening in the economy.
+
+We don't have a rule book which says GDP growth will absolutely be negative if building permits year on year percentage change is negative.
+
+And we also don't have a rule book for exactly what's going to happen in the direction it's going to be and the actual magnitude of a move as well.
+
+And also, there isn't a rule book for the exact time lag.
+
+Everything has to be taken into context.
+
+What we've also done when we look at building permits leading the S&P 500, we've also done a useful exercise here of looking at the 12 month moving average of building permits year on year percentage change.
+
+So we've taken that same data, the year on year percentage change, and we're looking at a 12 month moving average of that data and comparing it to a 12 month moving average of the S&P 500 year on year percentage data, putting that on the same chart.
+
+And visually, you can see from this exercise that they both move in the same direction, sometimes at the same time and sometimes with a time lag where permits is leading the S&P 500 direction and potential S&P 500 annual year on year percentage change.
+
+But again, there's no definitive rule book here that says if permits are doing something like breaking to the upside to go into the positive in terms of year on year percentage change or breaking to the downside of year on year percentage change, but we have to do a certain action in the S&P 500.
+
+So permits, again, permits, again, have to be taken into context with everything else or other leading indicators.
+
+And that overall should give us a very, very good idea of the directional bias that we would have in our portfolios and potentially what to be long and what to be short in our portfolios.
+
+Now, you'll also find in the downloads area in the spreadsheet that we've got the data there for housing starts.
+
+And we've got the data also for housing completions in your own time.
+
+You can go through that data, but we've got the visuals there as well for you.
+
+So you can learn about the data and the data history and also how to put these charts together.
+
+And you can also, obviously, on a monthly basis, use these spreadsheets.
+
+And when you update your data, update your charts.
+
+So that will be something you'll be doing on a monthly basis.
+
+And yes, that's the self-starter mentality, guys.
+
+This is showing up regularly to get consistent returns in your portfolio.
+
+Guess what?
+
+You're going to have to show up consistently and do the work.
+
+Now, I mentioned earlier about the global financial crisis, 2008, 2009.
+
+Let's have a little look at a bit of business cycle history.
+
+And again, go through this exercise of looking at turning points and trends in a leading indicator.
+
+Let's have a look at building permits and what was going on back then.
+
+Obviously, if we're going to be analyzing building permits and attempting to gauge its usefulness as a leading indicator, the most obvious place to look in business cycle history would actually be the housing crash of 2008, 2009.
+
+And you can see on the chart when we look at the data for building permits.
+
+So in the second column, you can see that building permits, the low was 521,000 seasonally adjusted annualized rate in April, 2009.
+
+And remember, that will have been reported in May.
+
+And if we fast forward a bit in time, we can see the building permits number getting stronger, but it's struggling essentially.
+
+And then there was a near term high put in for the month of March, 2010, which was 687,000 seasonally adjusted annualized rate.
+
+And the number then goes lower.
+
+And it really struggles for a long time.
+
+And that's basically because there were so many homes that were on the market.
+
+And there was a lot of inventory to get through, especially foreclosures.
+
+And it took a long time for new homes.
+
+So building permits to come back to the level it was even in 2010.
+
+So the permits number, the breakout was actually around February 2012, where we had three months in a row of breaking the previous April 2010 resistance, which gave us confirmation that we had a breakout.
+
+And that was almost a full two years after the high was put in post the trough in April 2010.
+
+So the high was put in in April 2010, post the trough.
+
+So we had the trough March 09, 521,000.
+
+We had the March 2010 report, which is reported in April 2010, which came out at 687,000.
+
+And then it took a full almost two years to get back above that level.
+
+Now, putting this into a bit of context of what was going on elsewhere.
+
+If you recall back to the US consumer video, the UMCSI video, where we highlighted that the US consumer, after the global financial crisis, didn't really recover until the first half of 2012.
+
+So if you recall, QE2 was terminated June 29, 2012 by the Fed on the right hand side.
+
+This was the data screenshot from the UMCSI video.
+
+And we can see this was when in Jan and Feb 2012, where we see the UMCSI breaking above 70 and implying GDP growth somewhere between 0 and 2% for the year.
+
+And guess what?
+
+This is exactly the time when building permits broke to the upside, as we've seen in December, Jan, Feb.
+
+So December 2011 and Jan and Feb 2012.
+
+So it happened at the same time.
+
+And so taken together, you know, when we put these things into context, using consumer sentiment and permits together, it's a powerful combination of leading indicators to predict GDP growth and S&P 500 direction and returns.
+
+And coincidentally, yes, at the same time, this is when home builder stocks took off.
+
+So this is the XHB, which is the home builder ETF in the United States.
+
+And you can see here on the chart, we've gone back to the beginning of 2012.
+
+And we've highlighted this area in red.
+
+You can see the XHB ETF.
+
+That's when it breaks to the upside and then goes up aggressively from that level.
+
+And you can see from the chart, it goes up to the end of 2013, where we get from the level 20 in around March 2012.
+
+By the end of 2013, we are up on the XHB to a level of 33.
+
+So that's 13 points change from a level of 20, which is about two thirds, about 65%.
+
+And actually, if you look at the chart, you can see it reached around the 33 level around May, June 2013.
+
+So we're looking at a 65% move in a little over of a year, which is obviously a pretty big move for the housing sector.
+
+And don't forget, you know, this is the XHB ETF.
+
+There will obviously be plenty of housing stocks in there that will have both outperformed and gone up a lot more than 65%.
+
+And those that are underperformed and went up less than 65%.
+
+So again, when we look at a leading indicator like building permits, and we look at business cycle history, and we look at what was going on with other leading indicators, we put things into context.
+
+And we also look at what was going on in the market at the time as well.
+
+It's a very useful exercise for us to do this, for us to understand it, because it's going to hone our skills.
+
+And we will become much better at making more informed decisions in the future whenever we're sitting in a moment in time and analysing a particular leading indicator in the context of the wider economy, other leading indicators, and the stock market.
+
+So let's summarize here, let's summarize why building permits are important to us.
+
+As traders and portfolio managers, it's obviously a very important number, the building permits number, to our outlook for predicting US GDP growth.
+
+So direction of GDP growth, and therefore the direction and potential annual returns in the S&P 500.
+
+They are a leading indicator, building permits are leading both housing starts and completions.
+
+So completions follow housing starts, and housing starts follow permits.
+
+However, there is a lot more useful information that we can glean from the building permits number.
+
+It doesn't only tell us likely future GDP direction, and therefore likely economic conditions and direction of the S&P.
+
+Permits also tell us whether developers are bullish or bearish on the prospects of the housing sector.
+
+So a combination of developer financing, so their demand and forecast for housing, but also whether consumers demand housing.
+
+So it gives us a good gauge on mortgage liquidity.
+
+So taken together, all in all, this means the building permits number tells us the liquidity and health of the US banking and credit sector and the potential for a change in consumer spending habits.
+
+Now something it also does, obviously, the Fed is looking at this stuff too.
+
+Building permits also tells us what we should expect from the Fed in terms of likely policy response.
+
+So by using monthly building permits in conjunction with our money market leading indicators and other macro indicators like our other surveys, we will have a very good understanding of the US economy, money flows and potential Fed policy.
+
+So like the other surveys we've looked at, and our money market leading indicators, you have to use this on a monthly basis to understand what's going on and to make more informed decisions.
+
+And yes, guys, we're going to have a quick throwback to ITPM principles.
+
+You have to have a self starter mentality.
+
+Firstly, what you should be doing is using the leading indicator data that we've got in all the download areas and analyze business cycles and their moving parts throughout history.
+
+Become a student of business cycle history, become a student of business cycle history, and then you need to show up regularly.
+
+You need to be consistent.
+
+You need to utilize all the leading indicators in conjunction with each other on a monthly basis to get a picture of the economy for your portfolio direction.
+
+You need to become proficient at data collection and investigation.
+
+So learn about money markets and surveys and how they work in detail to get an appreciation of what the numbers mean.
+
+So when you analyze the data at any moment in time, when it comes out and it's live and it's real and the market is trading, you have an edge over those people in the market that have no idea.
+
+You can then predict the future and get positioned for the future when others can't.
+
+Now, interpretation of the numbers is obviously way more important than just knowing what the number is.
+
+So again, become a student of business cycle history.
+
+You must always be asking yourself when you look at any particular leading indicator and the numbers come out and it's live.
+
+How does it fit into the bigger picture context?
+
+So not just the number in absolute context, but in the context of what's going on with other leading indicators and the bigger picture of what's going on with those leading indicators and the economy as a whole at that moment in time.
+
+So we looked at building permits as an example, not collapsing during 2019.
+
+And that was the period where that was happening in conjunction with no S&P 500 bear market.
+
+And that may have led us to conclude that when the Fed cut rates at a 0-1 S&P versus GDP growth quarter had just occurred.
+
+So where the S&P went down, so where the S&P went down, but GDP growth stayed positive.
+
+We may have been sitting there in that time as a student of business cycle history, looking at building permits not collapsing during that time.
+
+And then no official 20% correction, bear market in the S&P 500.
+
+And looking at the other leading indicators, such as UMCSI, so the consumer not collapsing, and also the service sector not collapsing.
+
+And we may have looked at that and made the decision, this is the time to get long or to have a long bias in the portfolio.
+
+So it's vitally important that you do this and analyze business cycle history, what was going on at the time, to really sharpen yourself.
+
+So when in the future you are looking at leading indicators when they're coming out, you make very well informed decisions.
+
+The more you know, and the more you practice at interpretation, the pieces come together and you will make more well informed and better decisions on the direction of your portfolio.
+
+And of course, when you have the information, you interpret it well, you're going to make decisions with a much higher level of confidence.
+
+Additionally, a better understanding of the macroeconomic backdrop is going to allow you to generate better single stock trade ideas.
+
+So not just the directional bias of your portfolio.
+
+Of course, knowing the net direction your portfolio should be at any one time is pretty damn important.
+
+But just as important is making sure you are long and short, the right stocks, the right stuff.
+
+If you are net long, for example, but long all of the stuff that isn't going up, then of course you failed to make money.
+
+The information hasn't led to a profit.
+
+And that's what we are in this business to do.
+
+We are here to make money.
+
+So we obviously want to turn this information into profit.
+
+Now, of course, later in the video series, we're going to be looking in a lot more detail at the process to generate trade ideas on a consistent basis.
+
+We're going to obviously as well continue with our macroeconomic analysis for direction for the moment.
+
+So don't worry about trade ideas.
+
+That's coming up later in the video series.
+
+In terms of ITPM principles, just a reminder of the four ITPM principles, self-sustainability, work ethic, free information, work smart, not hard.
+
+If you stick to the principles religiously, you stand a very good chance of hitting your objective of getting consistent profitability.
+
+If you don't, or even worse, do the opposite, there's a very high chance you're never going to meet this objective.
+
+When you show up regularly each month and analyze and interpret the macro leading indicators, you are adhering to these principles and you're going to make better trading decisions than the vast majority of retail traders on the planet.
+
+So don't be scared of doing the work, guys.
+
+This is just something that has to be done.
+
+What you're also learning here is literally the job of a professional trader.
+
+This is what we do, okay?
+
+We are students of the business cycle and we diligently go through macro economic indicators on a monthly basis.
+
+And we're constantly trying to figure out what our buyers should be in our portfolio and what we should be long and what we should be short.
+
+You are learning this job now, and this is how it's done on the professional side.
+
+And now you can replicate it on the retail side in your retail trading infrastructure and your trading account.
+
+So don't be scared of the work, guys.
+
+This is the job.
+
+This is what has to be done every month.
+
+Okay, so we are done with building permits here.
+
+Let's go over to the next video where we're going to be looking at small businesses.
+
+Thank you.

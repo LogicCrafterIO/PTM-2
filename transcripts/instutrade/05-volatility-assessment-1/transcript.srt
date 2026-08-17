@@ -1,0 +1,1883 @@
+1
+00:00:00,000 --> 00:00:29,980
+Okay, welcome back. Welcome to video
+number five. In video number four, what we
+looked at was the importance of
+calculating your odds through
+distributions. And essentially we looked
+at what is historical volatility.
+Historical volatility gives us a very good
+idea about the opportunities in an asset
+that we're about to offer.
+
+2
+00:00:30,000 --> 00:00:59,980
+to trade over any given time horizon. But
+what's also important is also calculating
+the future or expected volatility in an
+asset that we're about to trade. And
+retail traders don't really understand
+this and don't really do anything about
+it. And even professional traders, a lot
+of professional traders think, and retail
+traders think that if they look at implied
+volatility,
+
+3
+00:01:00,000 --> 00:01:28,000
+when they look at it, they interpret it in
+a certain way, they interpret it in an
+incorrect way, if you like. You're going
+to find out why this is not necessarily
+the case, not true in the next section.
+Because what implied volatility really is
+about is two things. It's your expected
+opportunities in the future, but it also
+provides you with a good measure for
+managing your risk.
+
+4
+00:01:28,000 --> 00:01:56,000
+So we're not looking at historical
+volatility anymore. We're now looking at
+the implied volatility of an asset, what's
+going to happen in the future. Now, one of
+the big problems here is retail traders
+telling the market how they're going to
+trade. So let's think about this for a
+second. If the market that you're about to
+trade or take a position in says that the
+market is going to trade.
+
+5
+00:01:56,000 --> 00:02:14,960
+If volatility says that volatility is
+going up in the next 30 days, for example,
+or expected to go up, then what does that
+mean? It means that the market is now
+expecting that shorter term opportunities
+are going to come into the market.
+
+6
+00:02:15,000 --> 00:02:42,000
+And the reverse is true. If implied
+volatility is falling, then it means that
+shorter term opportunities are expected to
+come out of the market. Now, what
+successful professional traders do is they
+don't tell the market how they're going to
+trade, like unsuccessful retail traders,
+they just let the market tell them
+essentially what the opportunities are
+expected to be in the future.
+
+7
+00:02:42,000 --> 00:03:06,000
+And they adapt and they adapt and they
+switch their trading style between being
+short term traders and longer term
+traders. Now, this is one of the main
+things that I really want you to take from
+this section of the video is when you when
+we go to the stage, I want you to really
+focus on this statement.
+
+8
+00:03:06,000 --> 00:03:30,000
+The statement. The statement that
+volatility is a trader's best friend and a
+portfolio manager's worst enemy, because
+that's got a lot to do with opportunities
+and risk management. So as in
+opportunities over the short, medium and
+longer term, and also managing your risk
+over the short, medium and longer term.
+
+9
+00:03:30,000 --> 00:03:57,000
+Because professional traders switch
+between being short term traders to medium
+and longer term traders dependent on the
+messages coming from the implied
+volatility in the market. So please focus
+on that statement when we cut to the
+stage. Volatility is a trader's best
+friend and a portfolio manager's worst
+enemy.
+
+10
+00:03:57,000 --> 00:04:25,000
+What we're then going to move on to after
+we cut back to the office, we're then
+going to move on to video six where Chris
+is going to show you how to calculate your
+own volatility index for any asset. So you
+can then use the historical volatility
+measures that you've already learned and
+add onto it the implied volatility
+measures that Chris is going to teach you
+in video number six.
+
+11
+00:04:25,000 --> 00:04:29,000
+Okay, so let's go to the stage and I'll
+see you for a summary after that section.
+
+12
+00:04:29,000 --> 00:04:53,000
+So now we're going to concentrate a bit
+more on volatility. Volatility is really
+important to a professional trader. The
+asset, the volatility profile of the asset
+dictates what your opportunities are, not
+the other way around. You don't tell the
+volatility.
+
+13
+00:04:53,000 --> 00:05:13,000
+Not the other way around. You don't tell
+the market how much you're going to make
+today. The market tells you. Has anybody
+heard of this S&P 500 volatility index?
+
+14
+00:05:13,000 --> 00:05:17,000
+Does anybody want to explain what it is?
+
+15
+00:05:17,000 --> 00:05:19,000
+Based on the option prices?
+
+16
+00:05:19,000 --> 00:05:23,000
+Correct, yeah. But what does it actually
+tell us?
+
+17
+00:05:25,000 --> 00:05:27,000
+Implied volatility.
+
+18
+00:05:27,000 --> 00:05:49,000
+Yeah, implied volatility. What we looked
+at before was historical volatility. What
+we're looking at now is implied
+volatility. It's forward looking by 30
+days and it comes out as an annualized
+number. So it's the volatility that
+options traders are implying through the
+prices that they're making in S&P 500
+options.
+
+19
+00:05:49,000 --> 00:05:59,000
+It's the volatility. It's the volatility
+implied for the next 30 days, then
+annualized. What happens when they expect
+more volatility?
+
+20
+00:05:59,000 --> 00:06:13,000
+They raise their prices for options
+because they don't want to be short
+volatility at a low price.
+
+21
+00:06:13,000 --> 00:06:25,000
+What happens if they expect volatility to
+go down? The opposite. Options become
+cheaper.
+
+22
+00:06:25,000 --> 00:06:39,000
+But this is really important. The VIX in
+itself is really important.
+
+23
+00:06:39,000 --> 00:06:49,000
+Because volatility on a short term basis
+or over any time horizon is essentially a
+trader's best friend.
+
+24
+00:06:49,000 --> 00:06:54,000
+Because if you have it over any time
+horizon, you have opportunities.
+
+25
+00:06:57,000 --> 00:07:01,000
+So being able to predict volatility is
+essential.
+
+26
+00:07:05,000 --> 00:07:12,000
+Why? Because on the flip side, volatility
+is a professional trader's worst
+nightmare.
+
+27
+00:07:12,000 --> 00:07:15,000
+A portfolio manager's worst nightmare.
+Sorry.
+
+28
+00:07:15,000 --> 00:07:24,000
+So you're basically, as a trader, you're a
+slave to volatility.
+
+29
+00:07:24,000 --> 00:07:27,000
+We looked at the historical volatility.
+
+30
+00:07:27,000 --> 00:07:29,000
+That's the beast. That's how it behaves.
+
+31
+00:07:29,000 --> 00:07:36,000
+The implied volatility is how we expect
+the beast to behave in the next 30 days on
+an annualized basis.
+
+32
+00:07:38,000 --> 00:07:39,000
+Make sense?
+
+33
+00:07:43,000 --> 00:07:53,000
+So when volatility, implied, goes up and
+it goes up very quickly, what happens?
+
+34
+00:07:53,000 --> 00:07:56,000
+What happens to a professional trader's
+approach?
+
+35
+00:07:57,000 --> 00:07:58,000
+It changes.
+
+36
+00:08:01,000 --> 00:08:09,000
+Because on 80% of days on the historical
+volatility profile of the S&P 500, the
+biggest stock market in the world, nothing
+happens.
+
+37
+00:08:09,000 --> 00:08:14,000
+So what's the approach of a professional
+trader 80% of the time?
+
+38
+00:08:15,000 --> 00:08:21,000
+It's actually to run and maintain
+portfolios with a one to three month time
+horizon.
+
+39
+00:08:24,000 --> 00:08:27,000
+But then, when things happen, volatility
+goes up.
+
+40
+00:08:28,000 --> 00:08:29,000
+Expected or implied volatility goes up.
+
+41
+00:08:30,000 --> 00:08:31,000
+So what does a professional trader do?
+
+42
+00:08:31,000 --> 00:08:41,000
+Well, they have to switch from being a
+portfolio manager very quickly to being a
+short term trader.
+
+43
+00:08:44,000 --> 00:08:49,000
+And this has hidden consequences that
+people don't really have appreciation for.
+
+44
+00:08:49,000 --> 00:08:58,000
+We're going to go through an example now.
+
+45
+00:08:59,000 --> 00:09:00,000
+Just a small portfolio.
+
+46
+00:09:01,000 --> 00:09:02,000
+One million dollar gross exposure.
+
+47
+00:09:03,000 --> 00:09:08,000
+That's a big retail trader portfolio, but
+it's a tiny bank or hedge fund portfolio.
+
+48
+00:09:09,000 --> 00:09:14,000
+And let's make a few assumptions about
+this one million dollar portfolio.
+
+49
+00:09:15,000 --> 00:09:19,000
+So we've got a gross exposure of a million
+dollars.
+
+50
+00:09:20,000 --> 00:09:25,000
+And we're just going to assume that all of
+the exposure is cash for cash.
+
+51
+00:09:27,000 --> 00:09:30,000
+So we've got the long value of the
+portfolio is 500,000.
+
+52
+00:09:33,000 --> 00:09:35,000
+And the short value is 500,000.
+
+53
+00:09:39,000 --> 00:09:44,000
+And all the positions are $50,000, i.e. 5%
+position sizes.
+
+54
+00:09:47,000 --> 00:09:51,000
+What do we know about this portfolio if
+it's an S&P 500 portfolio long and short?
+
+55
+00:09:54,000 --> 00:09:56,000
+Well, from the historical volatility
+profile,
+
+56
+00:09:57,000 --> 00:10:01,000
+the market moves up and down 35 basis
+points on a normal day.
+
+57
+00:10:03,000 --> 00:10:04,000
+On average, yeah?
+
+58
+00:10:06,000 --> 00:10:09,000
+So on average, if you just did nothing,
+80% of the time,
+
+59
+00:10:10,000 --> 00:10:11,000
+you'd make or lose $3,500.
+
+60
+00:10:16,000 --> 00:10:17,000
+Make sense?
+
+61
+00:10:17,000 --> 00:10:19,000
+That's the volatility of your S&P 500
+portfolio.
+
+62
+00:10:22,000 --> 00:10:28,000
+But what happens if S&P 500 volatility is
+expected to double in the next 30 days?
+
+63
+00:10:32,000 --> 00:10:39,000
+Well, very clearly, you're expecting that
+your profit or loss volatility on a
+one-day basis is going to double.
+
+64
+00:10:42,000 --> 00:10:43,000
+So what happens?
+
+65
+00:10:44,000 --> 00:10:46,000
+Well, that million dollars is not a
+million dollars anymore.
+
+66
+00:10:47,000 --> 00:10:48,000
+It's two million dollars.
+
+67
+00:10:51,000 --> 00:10:58,000
+So without you ever doing anything, if
+volatility doubles and you've got a
+typical S&P 500 long short portfolio,
+
+68
+00:10:59,000 --> 00:11:03,000
+if volatility doubles and you do nothing,
+you've taken more risk.
+
+69
+00:11:04,000 --> 00:11:06,000
+Does that make sense?
+
+70
+00:11:07,000 --> 00:11:15,000
+So what do you think happens at a Goldman
+Sachs morning meeting when all the traders
+go into a meeting room at 7am?
+
+71
+00:11:16,000 --> 00:11:19,000
+And they've got a billion dollars of
+exposure on the desk, long short.
+
+72
+00:11:20,000 --> 00:11:28,000
+And the head of derivatives says
+volatility is creeping and we're expecting
+it to go up into next week's non-farm
+payrolls.
+
+73
+00:11:31,000 --> 00:11:32,000
+What do you think happens?
+
+74
+00:11:33,000 --> 00:11:34,000
+What's the message from the boss?
+
+75
+00:11:35,000 --> 00:11:36,000
+No, the opposite.
+
+76
+00:11:36,000 --> 00:11:45,000
+They're taking more risk without actually
+doing anything.
+
+77
+00:11:46,000 --> 00:11:48,000
+If you hedge, your gross exposure goes up.
+
+78
+00:11:50,000 --> 00:11:52,000
+So what's the message from the top?
+
+79
+00:11:53,000 --> 00:11:54,000
+Reduce your exposure.
+
+80
+00:11:55,000 --> 00:11:57,000
+Cut your exposure in half.
+
+81
+00:11:58,000 --> 00:12:01,000
+Get rid of all the positions that you
+don't really want.
+
+82
+00:12:02,000 --> 00:12:05,000
+And the positions that you want to have,
+just trade out of half the position size.
+
+83
+00:12:06,000 --> 00:12:18,000
+So if you've got a $30 million position
+long in XYZ, and your view is that it's
+going up forever, it doesn't really
+matter.
+
+84
+00:12:19,000 --> 00:12:25,000
+Because now the risk on XYZ, when
+volatility in the market doubles, is
+double, without you doing anything.
+
+85
+00:12:30,000 --> 00:12:31,000
+And what happens when they switch?
+
+86
+00:12:34,000 --> 00:12:39,000
+Well, what do you receive when you trade
+out of positions?
+
+87
+00:12:40,000 --> 00:12:52,000
+You reduce your risk, but what do you
+actually receive physically?
+
+88
+00:12:53,000 --> 00:12:54,000
+Cash.
+
+89
+00:12:55,000 --> 00:13:00,000
+Or in a trading account, a retail trader
+account, you'll receive available margin.
+
+90
+00:13:01,000 --> 00:13:05,000
+So you free up margin in your account.
+
+91
+00:13:06,000 --> 00:13:06,000
+Yeah?
+
+92
+00:13:09,000 --> 00:13:10,000
+So what does that mean?
+
+93
+00:13:12,000 --> 00:13:25,000
+If volatility starts moving, and it starts
+going up, and you've reduced your exposure
+overall, you now have a higher cash
+exposure in your account than before.
+
+94
+00:13:26,000 --> 00:13:27,000
+What do you then go and do with that cash?
+
+95
+00:13:27,000 --> 00:13:36,000
+You're being told a very strong message.
+
+96
+00:13:37,000 --> 00:13:39,000
+What do you then go and do with that cash?
+
+97
+00:13:42,000 --> 00:13:44,000
+You start trading short term.
+
+98
+00:13:45,000 --> 00:13:51,000
+Because now, you're being told by the
+beast, hello Mr. Trader, I've decided to
+wake up.
+
+99
+00:13:52,000 --> 00:13:54,000
+Why don't you go and hunt somewhere else?
+
+100
+00:13:54,000 --> 00:13:55,000
+Sorry?
+
+101
+00:13:55,000 --> 00:13:56,000
+Why don't you go and hunt somewhere else?
+
+102
+00:13:57,000 --> 00:13:58,000
+What, go to a different jungle?
+
+103
+00:13:58,000 --> 00:13:59,000
+Yeah, of course.
+
+104
+00:13:59,000 --> 00:14:00,000
+You can do.
+
+105
+00:14:01,000 --> 00:14:04,000
+You're using the biggest stock market in
+the world as the example.
+
+106
+00:14:04,000 --> 00:14:05,000
+Of course you can.
+
+107
+00:14:06,000 --> 00:14:23,000
+So if you want to, you know, the processes
+here are the most important thing, because
+if I show you this stuff for the world's
+biggest stock market, I'll give you
+step-by-step guides on how to do it, and
+you understand the thought process, then
+you can take all the spreadsheets and
+start hunting around for other stuff.
+
+108
+00:14:24,000 --> 00:14:25,000
+That's your job, not mine.
+
+109
+00:14:25,000 --> 00:14:28,000
+I'm not here to spoon-feed you.
+
+110
+00:14:29,000 --> 00:14:31,000
+As we discussed right at the beginning.
+
+111
+00:14:32,000 --> 00:14:42,000
+You've got to have the self-starter
+mentality, which you've got, because the
+first question you ask is, well, Anton, if
+I take that spreadsheet, can I just go
+hunting for volatility?
+
+112
+00:14:43,000 --> 00:14:44,000
+Of course you can.
+
+113
+00:14:44,000 --> 00:14:45,000
+That's what I'm giving it to you for.
+
+114
+00:14:47,000 --> 00:14:48,000
+So you've got to do it yourself.
+
+115
+00:14:54,000 --> 00:15:19,000
+So when you see the VIX go up, what you're
+actually looking at, the implied
+volatility for the next 30 days, what
+you're actually looking at in that number
+is for every unit it goes up, another unit
+of risk has been added to everyone's
+portfolio in the world.
+
+116
+00:15:23,000 --> 00:15:28,000
+And at some point, if it keeps going up,
+there's going to have to be risk
+reduction.
+
+117
+00:15:29,000 --> 00:15:31,000
+Now that doesn't necessarily mean that the
+market goes down.
+
+118
+00:15:34,000 --> 00:15:40,000
+Because implied volatility for the VIX is
+implied volatility up or down for the next
+30 days.
+
+119
+00:15:41,000 --> 00:15:42,000
+A lot of people forget that.
+
+120
+00:15:47,000 --> 00:15:55,000
+So what you have to try and do as a trader
+is to run portfolios based on, and you do
+that based on historical volatility
+evidence.
+
+121
+00:15:58,000 --> 00:16:00,000
+With one to three month time horizons.
+
+122
+00:16:00,000 --> 00:16:04,000
+And this is what all professional traders
+do at investment banks in their prop
+function.
+
+123
+00:16:05,000 --> 00:16:06,000
+And at hedge funds.
+
+124
+00:16:08,000 --> 00:16:09,000
+They do it for a reason.
+
+125
+00:16:09,000 --> 00:16:10,000
+They do it for a reason.
+
+126
+00:16:10,000 --> 00:16:11,000
+And this is the reason.
+
+127
+00:16:12,000 --> 00:16:16,000
+And then when volatility goes up, you have
+to switch.
+
+128
+00:16:18,000 --> 00:16:23,000
+You switch from being a portfolio manager
+to an animal trader.
+
+129
+00:16:25,000 --> 00:16:32,000
+And the transition process is simply a
+period where you raise cash.
+
+130
+00:16:33,000 --> 00:16:37,000
+Because the cash then enables you to take
+advantage of the short term opportunities.
+
+131
+00:16:38,000 --> 00:16:48,000
+If you don't do anything, your risk, if
+volatility goes up by 100%, your risk
+doubles without you doing anything.
+
+132
+00:16:49,000 --> 00:16:52,000
+And then you're the rabbit in the
+headlights who will trade out of
+everything at the bottom.
+
+133
+00:16:53,000 --> 00:16:57,000
+Providing liquidity for the guys who
+actually saw it coming.
+
+134
+00:16:58,000 --> 00:17:03,000
+And who transitioned and did something to
+raise cash.
+
+135
+00:17:04,000 --> 00:17:11,000
+And if you raise cash, you then have the
+right to short term trade.
+
+136
+00:17:12,000 --> 00:17:16,000
+You do not have the right to short term
+trade if your risk has just doubled
+without you doing anything.
+
+137
+00:17:17,000 --> 00:17:22,000
+And you've got a little bit of cash
+available, so you're trying to make your
+losses back by punting.
+
+138
+00:17:25,000 --> 00:17:28,000
+You only get the right to trade short term
+if you reduce your risk.
+
+139
+00:17:29,000 --> 00:17:35,000
+And you'll see this happen over and over
+and over again at investment banks and
+hedge funds.
+
+140
+00:17:36,000 --> 00:17:38,000
+Where a guy gets caught in the headlights,
+gets called into a room.
+
+141
+00:17:39,000 --> 00:17:41,000
+The boss actually has to trade out of the
+position for him.
+
+142
+00:17:42,000 --> 00:17:45,000
+Because that guy is now frozen and he
+doesn't know what to do.
+
+143
+00:17:46,000 --> 00:17:50,000
+And then he's either told to go home or
+sit on the desk and ignore what's going on
+in the market.
+
+144
+00:17:51,000 --> 00:17:52,000
+Because he's not allowed to day trade.
+
+145
+00:17:53,000 --> 00:17:59,000
+But this is the first thing you learn when
+you start learning to become a
+professional trader.
+
+146
+00:18:00,000 --> 00:18:05,000
+This will be your first year in practice
+at an investment bank or a hedge fund.
+
+147
+00:18:06,000 --> 00:18:09,000
+Being a portfolio manager and switching.
+
+148
+00:18:10,000 --> 00:18:15,000
+And this is why I never make the claim
+that trading can be taught in one weekend
+or in one day.
+
+149
+00:18:16,000 --> 00:18:20,000
+It simply can't because you have to
+experience this to really understand it.
+
+150
+00:18:27,000 --> 00:18:35,000
+The way you should look at the volatility
+index really is a very simple traffic
+light system.
+
+151
+00:18:36,000 --> 00:18:40,000
+Where if the VIX goes up by a certain
+amount.
+
+152
+00:18:41,000 --> 00:18:42,000
+And by the way there's no rule book.
+
+153
+00:18:43,000 --> 00:18:47,000
+You literally cannot go to WH Smiths,
+Waterstones or Blackwells and buy a book.
+
+154
+00:18:48,000 --> 00:18:49,000
+When to buy and sell volatility.
+
+155
+00:18:50,000 --> 00:18:52,000
+It's totally subjective.
+
+156
+00:18:53,000 --> 00:18:55,000
+And it's all subjective to the risk that
+you have yourself.
+
+157
+00:18:58,000 --> 00:19:00,000
+This is just a back of the envelope
+situation.
+
+158
+00:19:01,000 --> 00:19:04,000
+Where over time, over many, many years.
+
+159
+00:19:05,000 --> 00:19:07,000
+If you stick to this idea and this
+process.
+
+160
+00:19:08,000 --> 00:19:09,000
+You should be fine.
+
+161
+00:19:12,000 --> 00:19:15,000
+If it goes up by 25%, what's happened?
+
+162
+00:19:16,000 --> 00:19:20,000
+The risk of every portfolio in the world
+has gone up by 25%.
+
+163
+00:19:21,000 --> 00:19:23,000
+You must be doing something.
+
+164
+00:19:24,000 --> 00:19:26,000
+If you don't do anything, you're the
+rabbit in the headlights.
+
+165
+00:19:29,000 --> 00:19:30,000
+So you've got to do something.
+
+166
+00:19:32,000 --> 00:19:33,000
+So you transition.
+
+167
+00:19:38,000 --> 00:19:40,000
+And you enter the day trading zone.
+
+168
+00:19:41,000 --> 00:19:42,000
+Because you're allowed.
+
+169
+00:19:43,000 --> 00:19:43,000
+Why?
+
+170
+00:19:44,000 --> 00:19:45,000
+Because you've raised cash.
+
+171
+00:19:46,000 --> 00:19:47,000
+And you've been proactive.
+
+172
+00:19:50,000 --> 00:19:52,000
+So this is by no means a hard and fast
+rule.
+
+173
+00:19:53,000 --> 00:19:54,000
+So don't think this is a rule book.
+
+174
+00:19:55,000 --> 00:19:56,000
+There are no rules.
+
+175
+00:19:57,000 --> 00:19:58,000
+It's subjective to your own risk.
+
+176
+00:19:59,000 --> 00:19:59,000
+Yeah?
+
+177
+00:20:00,000 --> 00:20:03,000
+But this should stand you in good stead
+over your lifetime.
+
+178
+00:20:04,000 --> 00:20:06,000
+If you're trading in the world's biggest
+stock market.
+
+179
+00:20:07,000 --> 00:20:07,000
+Yeah?
+
+180
+00:20:10,000 --> 00:20:11,000
+If it's in transition and rising.
+
+181
+00:20:12,000 --> 00:20:13,000
+And what do we mean by that?
+
+182
+00:20:13,000 --> 00:20:16,000
+If the VIX itself has moved 25%.
+
+183
+00:20:17,000 --> 00:20:17,000
+Yeah?
+
+184
+00:20:18,000 --> 00:20:18,000
+Roughly speaking.
+
+185
+00:20:19,000 --> 00:20:23,000
+Just reduce everything in your portfolio
+by 50%.
+
+186
+00:20:24,000 --> 00:20:29,000
+Or get rid of half the positions in your
+portfolio that you don't really want.
+
+187
+00:20:30,000 --> 00:20:31,000
+How do you get to that stage?
+
+188
+00:20:32,000 --> 00:20:32,000
+Well, just rank them.
+
+189
+00:20:33,000 --> 00:20:38,000
+If you've got 20 positions, rank them from
+1 to 20, favourite to least favourite.
+
+190
+00:20:39,000 --> 00:20:40,000
+It's not hard.
+
+191
+00:20:40,000 --> 00:20:41,000
+I'd get rid of the bottom 10.
+
+192
+00:20:41,000 --> 00:20:54,000
+When it's in transition and falling,
+portfolio risk in the world is going down.
+
+193
+00:20:55,000 --> 00:20:56,000
+So what are you being told?
+
+194
+00:20:56,000 --> 00:20:58,000
+You're being told by the beast.
+
+195
+00:20:58,000 --> 00:20:59,000
+Hey, Mr. Trader.
+
+196
+00:20:59,000 --> 00:21:01,000
+It's now less risky to own a portfolio.
+
+197
+00:21:04,000 --> 00:21:06,000
+So you start putting cash to work.
+
+198
+00:21:08,000 --> 00:21:12,000
+You want to get invested in a portfolio,
+long short, into your favourite ideas.
+
+199
+00:21:13,000 --> 00:21:17,000
+Fixed within your own risk management
+parameters.
+
+200
+00:21:18,000 --> 00:21:22,000
+So just double the size of all your
+remaining positions.
+
+201
+00:21:23,000 --> 00:21:24,000
+And stop day trading.
+
+202
+00:21:26,000 --> 00:21:26,000
+That's what you've got to do.
+
+203
+00:21:29,000 --> 00:21:32,000
+You'll be told this message because you'll
+see volatility going down.
+
+204
+00:21:32,000 --> 00:21:34,000
+And you'll start losing money day trading.
+
+205
+00:21:35,000 --> 00:21:36,000
+It'll become more difficult.
+
+206
+00:21:40,000 --> 00:21:42,000
+And that's why on the very first slide.
+
+207
+00:21:43,000 --> 00:21:45,000
+When we said, who is this course not for?
+
+208
+00:21:46,000 --> 00:21:48,000
+It's for people who never take a message
+from their losses.
+
+209
+00:21:49,000 --> 00:21:55,000
+When you start losing money day trading,
+you take the message that day trading
+opportunities are now no longer available.
+
+210
+00:21:56,000 --> 00:21:57,000
+So you build a portfolio.
+
+211
+00:22:00,000 --> 00:22:09,000
+And you can get loads and loads of
+exposure on in the comfort and knowledge
+that the market's not going to move
+adversely overnight and completely wipe me
+out.
+
+212
+00:22:10,000 --> 00:22:14,000
+Because now the market is expecting no
+volatility in the world.
+
+213
+00:22:16,000 --> 00:22:17,000
+Make sense?
+
+214
+00:22:19,000 --> 00:22:25,000
+So there are no hard and fast rules
+telling you exactly what to do in your
+portfolio.
+
+215
+00:22:26,000 --> 00:22:27,000
+But that should stand you in good stead.
+
+216
+00:22:34,000 --> 00:22:35,000
+Second caveat here.
+
+217
+00:22:37,000 --> 00:22:38,000
+People must have heard this before.
+
+218
+00:22:39,000 --> 00:22:40,000
+The VIX is often called the fear index.
+
+219
+00:22:41,000 --> 00:22:47,000
+But don't mistake it for a situation where
+the market has to go down.
+
+220
+00:22:48,000 --> 00:22:52,000
+So if fear in the world is rising, the
+market must go down.
+
+221
+00:22:53,000 --> 00:22:54,000
+It doesn't necessarily mean that.
+
+222
+00:22:55,000 --> 00:23:00,000
+In 2003, the VIX went through the roof and
+that was the beginning of the bull market.
+
+223
+00:23:01,000 --> 00:23:08,000
+Because everyone was expecting a bad world
+in the next 12 months.
+
+224
+00:23:09,000 --> 00:23:10,000
+So everyone was short.
+
+225
+00:23:11,000 --> 00:23:11,000
+And what happened?
+
+226
+00:23:12,000 --> 00:23:14,000
+Everything came out positive.
+
+227
+00:23:15,000 --> 00:23:16,000
+Consecutively.
+
+228
+00:23:17,000 --> 00:23:22,000
+And the VIX actually went up because
+people feared losing money in their
+portfolio.
+
+229
+00:23:23,000 --> 00:23:24,000
+being net short.
+
+230
+00:23:25,000 --> 00:23:26,000
+Make sense?
+
+231
+00:23:27,000 --> 00:23:33,000
+By definition, the VIX is an annualized
+volatility number.
+
+232
+00:23:34,000 --> 00:23:36,000
+Calculated for the next 30 days.
+
+233
+00:23:37,000 --> 00:23:38,000
+For the market going up or down.
+
+234
+00:23:40,000 --> 00:23:43,000
+Probably a good thing to do is just no
+longer call it the fear index.
+
+235
+00:23:44,000 --> 00:23:50,000
+If you're going to call it the fear index,
+it's the fear of being wrong either way.
+
+236
+00:23:51,000 --> 00:24:01,000
+So what do people ask most about the VIX?
+
+237
+00:24:02,000 --> 00:24:07,000
+Well, if there's the one on the S&P 500,
+is there one available for others?
+
+238
+00:24:08,000 --> 00:24:09,000
+Of course there is.
+
+239
+00:24:11,000 --> 00:24:13,000
+It's all publicly available information.
+
+240
+00:24:14,000 --> 00:24:17,000
+On the Eurostox 600, you've got the
+V-Stocks.
+
+241
+00:24:18,000 --> 00:24:20,000
+You've got the V-Footsie, V-DAX.
+
+242
+00:24:21,000 --> 00:24:27,000
+You've got a volatility index publicly
+available on decent websites like Yahoo
+Finance, MarketWatch.com, NASDAQ.com.
+
+243
+00:24:28,000 --> 00:24:30,000
+They're all available and you can actually
+trade them.
+
+244
+00:24:34,000 --> 00:24:36,000
+So what was one of the suggestions
+earlier?
+
+245
+00:24:37,000 --> 00:24:44,000
+When you've got a gross exposure of a
+million dollars, and you see volatility
+going through the roof, one of the
+suggestions was you hedge.
+
+246
+00:24:45,000 --> 00:24:51,000
+A lot of people go and buy VIX in itself
+to hedge their portfolio.
+
+247
+00:24:52,000 --> 00:24:58,000
+It's debatable whether you should do that,
+simply because you're actually still
+increasing your exposure.
+
+248
+00:24:59,000 --> 00:25:08,000
+So yeah, it might provide a hedge, but
+you're locking yourself out of the party
+to go and day trade.
+
+249
+00:25:09,000 --> 00:25:19,000
+You can just trade out of half your
+positions, join the party to day trade and
+then leave and build your portfolio back
+and make money in between.
+
+250
+00:25:20,000 --> 00:25:25,000
+Whereas if you just bought a hedge, you'd
+just be not losing as much money.
+
+251
+00:25:26,000 --> 00:25:30,000
+So it's debatable, but again it's
+subjective to your own risk.
+
+252
+00:25:31,000 --> 00:25:34,000
+I can't tell you what to do, you have to
+make your own mind up.
+
+253
+00:25:35,000 --> 00:25:39,000
+How do you calculate volatility for
+currencies, commodities and bonds?
+
+254
+00:25:40,000 --> 00:25:43,000
+It's the same process and you're going to
+get the spreadsheets.
+
+255
+00:25:44,000 --> 00:25:46,000
+So they'll be emailed to you next week.
+
+256
+00:25:49,000 --> 00:25:50,000
+Okay, welcome back.
+
+257
+00:25:51,000 --> 00:25:58,000
+I hope you managed to grasp some of the
+concepts there with implied volatility in
+the presentation.
+
+258
+00:25:59,000 --> 00:26:04,000
+Up to this point, we only looked at
+historical volatility in the odds and
+distribution calculation.
+
+259
+00:26:05,000 --> 00:26:15,000
+But the implied volatility is very
+important because it not only shows us our
+opportunities expected in the future,
+
+260
+00:26:16,000 --> 00:26:18,000
+but it also shows us our expected risk.
+
+261
+00:26:19,000 --> 00:26:24,000
+Because as a portfolio manager, which
+you're going to be 80% of the time,
+
+262
+00:26:25,000 --> 00:26:30,000
+because we've already discovered from the
+historical volatility that 80% of the
+time,
+
+263
+00:26:31,000 --> 00:26:34,000
+there are no opportunities to be
+short-term traders.
+
+264
+00:26:35,000 --> 00:26:40,000
+When you're a portfolio manager, it not
+only shows you the opportunities in the
+market expected,
+
+265
+00:26:41,000 --> 00:26:45,000
+it also shows you the implied risk of your
+portfolio.
+
+266
+00:26:46,000 --> 00:26:48,000
+So those two things are really important.
+
+267
+00:26:49,000 --> 00:26:55,000
+And one of the things that retail traders
+get wrong all the time in terms of
+opportunities,
+
+268
+00:26:56,000 --> 00:27:01,000
+they tell the market that they are going
+to trade in a particular way.
+
+269
+00:27:02,000 --> 00:27:03,000
+This is how I'm going to trade.
+
+270
+00:27:04,000 --> 00:27:06,000
+And no matter what, this is the way I'm
+going to trade.
+
+271
+00:27:07,000 --> 00:27:11,000
+So they don't listen to the market and
+what the market's telling them.
+
+272
+00:27:12,000 --> 00:27:17,000
+So in terms of opportunities, we learned
+looking at historical volatility and now
+implied volatility,
+
+273
+00:27:18,000 --> 00:27:21,000
+that's 80% of the time, there are no
+short-term opportunities.
+
+274
+00:27:22,000 --> 00:27:31,000
+With the implied volatility situation, the
+index is 80% of the time, the VIX below
+25%.
+
+275
+00:27:32,000 --> 00:27:36,000
+And when you back that out, it just means
+on a one-day basis,
+
+276
+00:27:37,000 --> 00:27:42,000
+that we're going to get the numbers
+roughly that we saw in the historical
+volatility calculation.
+
+277
+00:27:43,000 --> 00:27:47,000
+So that backs up everything that we saw in
+the historical volatility calculations.
+
+278
+00:27:48,000 --> 00:27:54,000
+Now what does it mean in terms of market
+opportunities for professional traders?
+
+279
+00:27:55,000 --> 00:27:57,000
+For professional traders, they just take
+it as it is.
+
+280
+00:27:58,000 --> 00:28:00,000
+They allow the market to tell them what
+the opportunities are.
+
+281
+00:28:01,000 --> 00:28:07,000
+And what the market tells you when you
+look at the volatility index for the S&P
+500,
+
+282
+00:28:08,000 --> 00:28:13,000
+is firstly that 80% of the time, there's
+very few opportunities to make money on a
+short-term basis.
+
+283
+00:28:14,000 --> 00:28:17,000
+Which means that you have to increase your
+time horizon.
+
+284
+00:28:18,000 --> 00:28:20,000
+And all professional traders do this.
+
+285
+00:28:21,000 --> 00:28:23,000
+Professional traders are not what you'd
+perceive.
+
+286
+00:28:24,000 --> 00:28:27,000
+They're not trading in and out in and out
+every single minute of every day.
+
+287
+00:28:27,000 --> 00:28:34,000
+They're actually running long-short
+portfolios on a one-to-three-month time
+horizon.
+
+288
+00:28:35,000 --> 00:28:39,000
+Now let's focus on this statement that I
+asked you to focus on.
+
+289
+00:28:40,000 --> 00:28:45,000
+That volatility is a trader's best friend
+and a portfolio manager's worst enemy.
+
+290
+00:28:46,000 --> 00:28:52,000
+Now we looked at that example of the $1
+million gross exposure portfolio.
+
+291
+00:28:53,000 --> 00:28:59,000
+And really we concluded that if volatility
+moves up,
+
+292
+00:29:00,000 --> 00:29:07,000
+then the volatility on the risk of that
+portfolio increases in line with the
+volatility index.
+
+293
+00:29:08,000 --> 00:29:14,000
+So for example, if you're a portfolio
+manager with a $1 million gross exposure,
+
+294
+00:29:15,000 --> 00:29:18,000
+and the volatility index doubles,
+
+295
+00:29:19,000 --> 00:29:25,000
+then all that occurs is that your $1
+million yesterday becomes $2 million
+today.
+
+296
+00:29:26,000 --> 00:29:31,000
+That's because the P&L swings within your
+portfolio have now doubled.
+
+297
+00:29:32,000 --> 00:29:35,000
+So that's the caveat that we were
+discussing.
+
+298
+00:29:36,000 --> 00:29:40,000
+The second caveat, which was that the
+volatility index,
+
+299
+00:29:41,000 --> 00:29:49,000
+when it's called the fear index, is not a
+fear of the volatility index going up and
+therefore the market going down.
+
+300
+00:29:50,000 --> 00:29:55,000
+Because the definition of the volatility
+index is that it can go up or down.
+
+301
+00:29:56,000 --> 00:29:59,000
+So that it's not called the fear index for
+that reason.
+
+302
+00:30:00,000 --> 00:30:06,000
+The reason why it's called the fear index
+is because professional traders are
+predominantly portfolio managers
+
+303
+00:30:07,000 --> 00:30:10,000
+and they fear volatility itself because
+it's their worst enemy.
+
+304
+00:30:11,000 --> 00:30:12,000
+Now what do they have to do?
+
+305
+00:30:12,000 --> 00:30:14,000
+Well, they have to transition.
+
+306
+00:30:15,000 --> 00:30:20,000
+When their risk goes up, they transition
+from being portfolio managers into
+short-term traders.
+
+307
+00:30:21,000 --> 00:30:23,000
+And in that process, they raise cash.
+
+308
+00:30:24,000 --> 00:30:29,000
+Or in trading accounts where margin is
+utilized, they raise margin.
+
+309
+00:30:30,000 --> 00:30:36,000
+They have margin available, which enables
+them to trade on a short-term basis.
+
+310
+00:30:37,000 --> 00:30:40,000
+So then they switch from being portfolio
+managers to short-term traders.
+
+311
+00:30:41,000 --> 00:30:47,000
+And when volatility decreases, they switch
+back from being short-term traders to
+portfolio managers.
+
+312
+00:30:48,000 --> 00:31:00,000
+So they go from being one- to three-month
+time horizon, long-short portfolio
+managers, decreasing their exposure,
+freeing up capital to enable them to trade
+short-term.
+
+313
+00:31:01,000 --> 00:31:06,000
+And then switch back to becoming portfolio
+managers when the market tells them that
+they have to do it.
+
+314
+00:31:07,000 --> 00:31:22,000
+The way they interpret it is they take the
+message that opportunities are increasing
+on a short-term basis and your implied
+risk of your portfolio is going up.
+
+315
+00:31:23,000 --> 00:31:27,000
+Therefore, you should transition from
+being a portfolio manager to a short-term
+trader.
+
+316
+00:31:28,000 --> 00:31:30,000
+And then the reverse, if the reverse is
+true.
+
+317
+00:31:31,000 --> 00:31:38,000
+Now, the first caveat that we looked at
+was this idea that there's some sort of
+rulebook.
+
+318
+00:31:39,000 --> 00:31:39,000
+There isn't.
+
+319
+00:31:40,000 --> 00:31:43,000
+I've been teaching on the road now for two
+years.
+
+320
+00:31:44,000 --> 00:31:48,000
+And one of the things that staggers me all
+the time is that hands always go up in the
+audience.
+
+321
+00:31:49,000 --> 00:31:51,000
+And people are always asking, so what do I
+do in this situation?
+
+322
+00:31:52,000 --> 00:31:53,000
+What do I do in that situation?
+
+323
+00:31:54,000 --> 00:31:55,000
+Well, there's no rulebook.
+
+324
+00:31:56,000 --> 00:31:58,000
+You can't go to the bookstore.
+
+325
+00:31:59,000 --> 00:32:12,000
+You can't go on Amazon and buy a book
+which says when the volatility index of
+the assets that you're trading does this,
+i.e. goes up 25% or drops 25%, you should
+be doing exactly this.
+
+326
+00:32:13,000 --> 00:32:14,000
+It's a personal thing.
+
+327
+00:32:15,000 --> 00:32:17,000
+Because some people like trading
+short-term.
+
+328
+00:32:18,000 --> 00:32:20,000
+Some people like being portfolio managers.
+
+329
+00:32:21,000 --> 00:32:30,000
+You don't have to transition from being a
+portfolio manager to a short-term trader
+or transition from a short-term trader to
+a portfolio manager.
+
+330
+00:32:31,000 --> 00:32:34,000
+But you should definitely know, if you're
+one or the other, the following.
+
+331
+00:32:35,000 --> 00:32:40,000
+If you're a portfolio manager and you see
+the VIX going up, what's happening is your
+risk is going up in line.
+
+332
+00:32:41,000 --> 00:32:49,000
+So if it goes up 50% and all your
+positions are in S&P 500 stocks, your risk
+has gone up 50% without you doing
+anything.
+
+333
+00:32:50,000 --> 00:32:52,000
+That's the first thing if you're a
+portfolio manager.
+
+334
+00:32:53,000 --> 00:33:01,000
+If you're only a short-term trader, well,
+you should take the message from what
+we've seen so far that 80% of the time
+there are no short-term opportunities.
+
+335
+00:33:02,000 --> 00:33:06,000
+You should only trade when the
+opportunities allow you to do so.
+
+336
+00:33:07,000 --> 00:33:14,000
+Because if you trade on a normal day in
+the S&P 500 78% of times, the
+opportunities don't exist.
+
+337
+00:33:15,000 --> 00:33:16,000
+And you're just going to lose money.
+
+338
+00:33:17,000 --> 00:33:20,000
+The problem is professional traders are
+employed to make money all the time.
+
+339
+00:33:21,000 --> 00:33:29,000
+So they have to be portfolio managers in
+one instance and transition and switch
+into short-term traders and back again in
+the other instance.
+
+340
+00:33:30,000 --> 00:33:33,000
+So when you're employed to make money all
+the time, that's what you have to do.
+
+341
+00:33:34,000 --> 00:33:35,000
+You can't just non-participate.
+
+342
+00:33:36,000 --> 00:33:40,000
+However, for retail traders,
+non-participation is obviously an option.
+
+343
+00:33:41,000 --> 00:33:48,000
+Now, I hope that you've picked up all
+those messages because at least now you
+know what the volatility index is.
+
+344
+00:33:49,000 --> 00:34:00,000
+We're going to move on now to Chris and
+Chris is going to show you how you
+calculate your own implied volatility
+index from option prices as long as you
+can get the data for any asset class.
+
+345
+00:34:01,000 --> 00:34:09,000
+So you can do it for indices, sector ETFs,
+stocks within equities, commodities,
+currencies, interest rates, bonds.
+
+346
+00:34:10,000 --> 00:34:13,000
+You can do this for anything as long as
+you can get the data from the options
+market.
+
+347
+00:34:14,000 --> 00:34:17,000
+Now, here's a little caveat for you as a
+retail trader.
+
+348
+00:34:18,000 --> 00:34:23,000
+Because you're not trading high levels of
+capital, this exercise is less important
+for you.
+
+349
+00:34:24,000 --> 00:34:37,000
+What you're about to see in terms of the
+spreadsheet work and the calculated
+formulas, if you like, in the
+spreadsheets, it's quite complicated, it's
+quite mathematical.
+
+350
+00:34:38,000 --> 00:34:41,000
+But as a retail trader, you don't really
+have to do this all the time.
+
+351
+00:34:42,000 --> 00:34:46,000
+You should just appreciate it and
+understand it and know what it means when
+the VIX goes up.
+
+352
+00:34:47,000 --> 00:34:52,000
+What we're about to show you is more
+important if you're going to work at an
+investment bank or you're going to work at
+a hedge fund.
+
+353
+00:34:53,000 --> 00:34:59,000
+Because if you're going to go and work at
+one of these places, you're going to be
+expected to know this inside out.
+
+354
+00:35:00,000 --> 00:35:06,000
+Because you're trading very large levels
+of capital, hundreds of millions of
+dollars, and these measures become very
+important.
+
+355
+00:35:07,000 --> 00:35:16,000
+But as a retail trader, really, you should
+focus on the historical volatility of
+distribution and odds calculation.
+
+356
+00:35:17,000 --> 00:35:25,000
+And what we're going to show you in video
+number seven, which is the average true
+range, which is the second historical
+volatility calculation.
+
+357
+00:35:26,000 --> 00:35:29,000
+What I'm going to show you now is more
+important if you're going to work at an
+investment bank or a hedge fund.
+
+358
+00:35:30,000 --> 00:35:41,000
+But as a retail trader, just appreciate it
+and know what you probably should be doing
+if you're a portfolio manager and you see
+volatility go up or go down.
+
+359
+00:35:42,000 --> 00:35:45,000
+And if you actually do get it, that's a
+bonus.
+
+360
+00:35:46,000 --> 00:35:49,000
+But don't worry about it too much if you
+find it a little bit too complicated.
+
+361
+00:35:50,000 --> 00:35:58,000
+Chris is now going to show you this in
+video six and I'm going to see you back in
+video seven and we're going to look at the
+average true range.

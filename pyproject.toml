@@ -1,0 +1,38 @@
+[project]
+name = "ptm-idea-engine"
+version = "0.1.0"
+description = "PTM 2 long/short equity idea generation engine"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "lxml>=5.0",
+  "openai>=1.40",
+  "pandas>=2.2",
+  "pydantic>=2.7",
+  "pydantic-settings>=2.3",
+  "python-dotenv>=1.0",
+  "requests>=2.32",
+  "curl_cffi>=0.7",
+  "typer>=0.12",
+  "yfinance>=0.2.40",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+ptm = "ptm.cli:app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "live: hits network or live ISM/Yahoo/SEC endpoints",
+  "known_gap: documents a known process bug; expected to fail until a product fix",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["ptm*"]

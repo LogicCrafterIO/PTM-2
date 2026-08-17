@@ -1,0 +1,2655 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 9.18,
+      "text": "Okay guys, so welcome back to the desk. That was a huge and important part of the PTM video series."
+    },
+    {
+      "start": 9.18,
+      "end": 22.04,
+      "text": "So what did we learn? Well, we learned and got resources for portfolio modeling, portfolio volatility, portfolio correlation and calculating beta."
+    },
+    {
+      "start": 22.68,
+      "end": 32.78,
+      "text": "You've got the downloads, use them properly and regularly. So you're going to be using the downloads on a regular basis."
+    },
+    {
+      "start": 33.42,
+      "end": 39.52,
+      "text": "Modeling portfolios, you're going to be modeling portfolios, current and intended."
+    },
+    {
+      "start": 40.2,
+      "end": 47.82,
+      "text": "So if you have current portfolios, you'll be modeling them. If you want intended portfolios, you'll be modeling them too."
+    },
+    {
+      "start": 48.28,
+      "end": 54.1,
+      "text": "And if you want to make changes to your portfolios, you're going to model the changes."
+    },
+    {
+      "start": 54.1,
+      "end": 64.48,
+      "text": "You'll be using it on a regular basis. You'll also be calculating portfolio volatility and correlation on a regular basis."
+    },
+    {
+      "start": 64.86,
+      "end": 69.74,
+      "text": "Okay, these resources are going to be extremely useful for you going forward."
+    },
+    {
+      "start": 70.44,
+      "end": 81.72,
+      "text": "So portfolio volatility, like portfolio modeling, again, current and intended portfolios and when you're making potential changes to your portfolio."
+    },
+    {
+      "start": 82.68,
+      "end": 85.6,
+      "text": "Calculating beta, that's important as well."
+    },
+    {
+      "start": 85.6,
+      "end": 99.12,
+      "text": "You're going to be calculating the beta of individual stocks and you're going to be calculating portfolio beta on a regular basis for, again, both current and intended portfolios."
+    },
+    {
+      "start": 99.12,
+      "end": 102.66,
+      "text": "So these are great resources, guys."
+    },
+    {
+      "start": 102.76,
+      "end": 105.34,
+      "text": "You're going to be using them all the time going forward."
+    },
+    {
+      "start": 105.8,
+      "end": 117.6,
+      "text": "They're going to save you and make you, if you use them on a regular basis and you use them properly, they're going to save you and make you a ton of money over your trading career."
+    },
+    {
+      "start": 118.16,
+      "end": 120.52,
+      "text": "So, guys, we're going to go through a recap now."
+    },
+    {
+      "start": 120.52,
+      "end": 125.24,
+      "text": "So, let's go through everything for foundations of portfolio management."
+    },
+    {
+      "start": 125.96,
+      "end": 127.06,
+      "text": "Let's go to the screen."
+    },
+    {
+      "start": 134.06,
+      "end": 137.02,
+      "text": "Okay, so welcome back to the screen."
+    },
+    {
+      "start": 137.78,
+      "end": 145.64,
+      "text": "Obviously, that was a hell of a lot of information to take in over the last four videos with Christopher Quill."
+    },
+    {
+      "start": 146.32,
+      "end": 149.54,
+      "text": "But what we're going to do here is something very useful."
+    },
+    {
+      "start": 150.18,
+      "end": 159.56,
+      "text": "I'm going to recap everything for you so you get a full understanding of all the concepts that have been taught in the last four videos by Chris."
+    },
+    {
+      "start": 159.64,
+      "end": 169.18,
+      "text": "And how you can use or how you should be using all of the spreadsheets that are available in the downloads area."
+    },
+    {
+      "start": 169.18,
+      "end": 174.14,
+      "text": "So, what have we looked at in the previous four videos?"
+    },
+    {
+      "start": 174.88,
+      "end": 182.7,
+      "text": "Well, Chris Quill covered the four key components of foundations of portfolio management."
+    },
+    {
+      "start": 183.16,
+      "end": 192.96,
+      "text": "We covered these areas at this stage so you can get a clearer picture on why we do things the way we do things."
+    },
+    {
+      "start": 193.14,
+      "end": 207.62,
+      "text": "So, the reasons why professional traders do things the way we do things as we move into the trade idea generation processes in the next part of the PTM video series."
+    },
+    {
+      "start": 208.46,
+      "end": 220.76,
+      "text": "Additionally, it also provided a welcome break from the rigorous processes of top-down and what we're moving on to next, bottom-up analysis."
+    },
+    {
+      "start": 221.98,
+      "end": 236.18,
+      "text": "So, the four areas that Chris Quill looked at were portfolio modeling, portfolio volatility, portfolio volatility and correlation and how they connect, and calculating beta."
+    },
+    {
+      "start": 237.06,
+      "end": 249.46,
+      "text": "So, what we're going to do is we're going to go through each part, summarize all of the key areas and how everything fits together and how you should be using these sheets moving forward."
+    },
+    {
+      "start": 250.6,
+      "end": 254.26,
+      "text": "So, let's start with portfolio modeling."
+    },
+    {
+      "start": 254.48,
+      "end": 256.86,
+      "text": "What did Chris show you?"
+    },
+    {
+      "start": 257.18,
+      "end": 265.14,
+      "text": "Well, firstly, he showed you how to download stock price data from publicly available sources."
+    },
+    {
+      "start": 265.68,
+      "end": 266.74,
+      "text": "What does that mean?"
+    },
+    {
+      "start": 267.16,
+      "end": 273.86,
+      "text": "Well, it just means that you don't need to subscribe to any software at all."
+    },
+    {
+      "start": 274.22,
+      "end": 276.68,
+      "text": "You can do all of this yourself."
+    },
+    {
+      "start": 276.68,
+      "end": 286.8,
+      "text": "All of the data is publicly available as long as you know how to get that data, how to get the correct data, and how to process it."
+    },
+    {
+      "start": 286.98,
+      "end": 289.3,
+      "text": "You do not need to buy software."
+    },
+    {
+      "start": 289.6,
+      "end": 292.32,
+      "text": "You're going to save a ton of money doing this."
+    },
+    {
+      "start": 292.76,
+      "end": 295.5,
+      "text": "Granted, it's a slower way of doing it."
+    },
+    {
+      "start": 295.5,
+      "end": 307.64,
+      "text": "But when you're starting out, it's very, very important to do this process to understand the nuts and bolts of your business, to understand data, know where to get it."
+    },
+    {
+      "start": 307.64,
+      "end": 318.84,
+      "text": "You can rely on yourself and engage in all of the processes with the data to get to your own answers and conclusions."
+    },
+    {
+      "start": 320.52,
+      "end": 327.98,
+      "text": "Secondly, Chris showed you various methods of how to compare historical performance."
+    },
+    {
+      "start": 327.98,
+      "end": 335.3,
+      "text": "So, specifically, indexing methods and calculating a time series of performance."
+    },
+    {
+      "start": 335.9,
+      "end": 339.32,
+      "text": "And there were two ways that he showed us how to do that."
+    },
+    {
+      "start": 339.86,
+      "end": 347.78,
+      "text": "There was the constantly equally weighted method, so the CEW method for calculating portfolio performance."
+    },
+    {
+      "start": 348.1,
+      "end": 351.7,
+      "text": "And there was the non-rebalanced portfolio method."
+    },
+    {
+      "start": 352.12,
+      "end": 359.06,
+      "text": "And initially, in Chris's teaching methods, he started off with a two-stock example."
+    },
+    {
+      "start": 359.06,
+      "end": 365.4,
+      "text": "So, starting you off with a simple example of two stocks using both methods."
+    },
+    {
+      "start": 366.08,
+      "end": 376.12,
+      "text": "So, for the constantly equally weighted portfolio performance method, with the two-stock example, what is it actually useful for?"
+    },
+    {
+      "start": 376.38,
+      "end": 386.76,
+      "text": "Well, it's helpful for monitoring whether one stock is just outperforming another or not over a period of time."
+    },
+    {
+      "start": 386.76,
+      "end": 395.22,
+      "text": "Now, although this is impractical in day-to-day use, since it requires a rebalancing every day,"
+    },
+    {
+      "start": 395.76,
+      "end": 408.2,
+      "text": "the method does give us the cleanest and quickest way of monitoring outperformance versus underperformance of just one stock versus another."
+    },
+    {
+      "start": 408.2,
+      "end": 416.2,
+      "text": "A more practical and applicable method that Chris showed you was the non-rebalanced portfolio."
+    },
+    {
+      "start": 416.88,
+      "end": 420.36,
+      "text": "And in the two-stock example, what was it useful for?"
+    },
+    {
+      "start": 420.8,
+      "end": 428.16,
+      "text": "Well, it's useful for just backtesting a two-stock portfolio performance on a dollar basis."
+    },
+    {
+      "start": 428.16,
+      "end": 445.02,
+      "text": "So, a long versus short two-stock portfolio, but over a certain time period, a long and hold versus short and hold strategy and not rebalancing the positions every day."
+    },
+    {
+      "start": 445.02,
+      "end": 451.0,
+      "text": "So, this is a more practical method than the CEW method."
+    },
+    {
+      "start": 451.0,
+      "end": 464.36,
+      "text": "But, of course, and as Chris showed, both methods are important and it's important to utilize both methods and to compare results."
+    },
+    {
+      "start": 464.36,
+      "end": 488.42,
+      "text": "When you get quick at these processes, you can very easily and very quickly utilize both methods, the CEW portfolio performance balancing method and the non-rebalanced portfolio method for two stocks to analyze the actual performance of genuine spread trades in practice."
+    },
+    {
+      "start": 488.42,
+      "end": 492.32,
+      "text": "And then, what do many spread trades become?"
+    },
+    {
+      "start": 492.32,
+      "end": 513.18,
+      "text": "So, what Chris showed you next is the application of both methods, the CEW and the non-rebalanced method when we're calculating portfolio performance."
+    },
+    {
+      "start": 513.18,
+      "end": 522.06,
+      "text": "So, the most useful and practical method for portfolio modeling is the non-rebalanced portfolio method,"
+    },
+    {
+      "start": 522.06,
+      "end": 523.06,
+      "text": "how is it useful?"
+    },
+    {
+      "start": 523.06,
+      "end": 524.06,
+      "text": "How is it useful?"
+    },
+    {
+      "start": 524.06,
+      "end": 533.5,
+      "text": "Well, when we're engaging in our processes on a regular basis, it's useful for us prior to doing a number of things."
+    },
+    {
+      "start": 533.5,
+      "end": 549.12,
+      "text": "So, prior to building an actual long-short stock portfolio, it's also useful before we even think about adding or taking out long or short positions to an existing portfolio."
+    },
+    {
+      "start": 549.12,
+      "end": 566.12,
+      "text": "So, remodeling a portfolio, it's also useful before we decide or consider on increasing and decreasing our dollar exposures to certain longs or shorts in an existing portfolio,"
+    },
+    {
+      "start": 566.12,
+      "end": 578.12,
+      "text": "or even one that's under consideration, or even one that's under consideration, and it's also useful for us to analyze the potential drawdowns of specific portfolios."
+    },
+    {
+      "start": 578.12,
+      "end": 584.12,
+      "text": "So, based on past performance, what were the drawdowns in a specific portfolio?"
+    },
+    {
+      "start": 584.12,
+      "end": 586.12,
+      "text": "What can we expect in the future?"
+    },
+    {
+      "start": 586.12,
+      "end": 591.12,
+      "text": "So, we're also looking at risk as well as opportunity."
+    },
+    {
+      "start": 591.12,
+      "end": 609.12,
+      "text": "When we're modeling a multi-stock portfolio and we're using the constant equally weighted, the CEW portfolio method, we have to assume that the weights always stay the same throughout the date parameters that we've chosen."
+    },
+    {
+      "start": 609.12,
+      "end": 637.12,
+      "text": "So, although impractical and not as practical as the non-rebalanced portfolio method, because it requires a rebalancing every day, the method, similar to the two-stock example, does give us the cleanest and quickest way of just monitoring outperformance versus underperformance of a bunch of stocks that were long,"
+    },
+    {
+      "start": 637.12,
+      "end": 651.12,
+      "text": "and a bunch of stocks that were short, or indeed, a bunch of stocks that we're thinking of going long versus a bunch of stocks that we're thinking of going short."
+    },
+    {
+      "start": 651.12,
+      "end": 660.12,
+      "text": "So, going forward, in terms of portfolio modeling, you will be engaging in both processes as they are both useful."
+    },
+    {
+      "start": 660.12,
+      "end": 678.12,
+      "text": "But what will happen over time is that you'll end up focusing more on the non-rebalanced portfolio method simply because it's more practical on an ongoing basis for real money trading and portfolio positioning."
+    },
+    {
+      "start": 678.12,
+      "end": 687.12,
+      "text": "But you have to remember, guys, and as Chris pointed out, this is all statistical, rigorous processing."
+    },
+    {
+      "start": 687.12,
+      "end": 696.12,
+      "text": "What you really need to worry about, because we are in the 20 to 60 day time horizon, is your trade ideas."
+    },
+    {
+      "start": 696.12,
+      "end": 706.12,
+      "text": "It's just being long, great stocks that are going up and great shorts that are going down in our chosen time period."
+    },
+    {
+      "start": 706.12,
+      "end": 710.12,
+      "text": "There is a bigger picture to this."
+    },
+    {
+      "start": 710.12,
+      "end": 712.12,
+      "text": "We're looking at past data."
+    },
+    {
+      "start": 712.12,
+      "end": 718.12,
+      "text": "So, yes, we're getting an appreciation of historical performance."
+    },
+    {
+      "start": 718.12,
+      "end": 727.12,
+      "text": "But if we totally ignore our trade ideas and we only focus on statistical rigor, what's going to happen?"
+    },
+    {
+      "start": 727.12,
+      "end": 735.12,
+      "text": "We're going to end up with bad trade ideas that we're putting into competent statistical rigor."
+    },
+    {
+      "start": 735.12,
+      "end": 741.12,
+      "text": "And the outcome of that is that we're just probably going to lose money over time."
+    },
+    {
+      "start": 741.12,
+      "end": 743.12,
+      "text": "So, you have to have both."
+    },
+    {
+      "start": 743.12,
+      "end": 750.12,
+      "text": "You need to worry about your trade ideas being as high quality as possible."
+    },
+    {
+      "start": 750.12,
+      "end": 761.12,
+      "text": "And you need to engage in your statistical processes to understand the historical performance of portfolios that you're running."
+    },
+    {
+      "start": 761.12,
+      "end": 772.12,
+      "text": "And also what the performance is likely to be or the historical performance from the past when you're making changes in your portfolios."
+    },
+    {
+      "start": 773.12,
+      "end": 779.12,
+      "text": "So, you will be engaging in these processes, but never forget trade ideas, obviously."
+    },
+    {
+      "start": 779.12,
+      "end": 784.12,
+      "text": "The spreadsheets are useful because you can model portfolios in the past."
+    },
+    {
+      "start": 784.12,
+      "end": 793.12,
+      "text": "And you're doing it to get a sense of historical performance of a current portfolio or an intended portfolio."
+    },
+    {
+      "start": 793.12,
+      "end": 797.12,
+      "text": "Now, something else that Chris looked at."
+    },
+    {
+      "start": 797.12,
+      "end": 806.12,
+      "text": "He also looked at the differences in portfolio performance based on market capitalization dynamics."
+    },
+    {
+      "start": 806.12,
+      "end": 810.12,
+      "text": "So, he looked at two model portfolios."
+    },
+    {
+      "start": 810.12,
+      "end": 821.12,
+      "text": "The first portfolio he looked at was a portfolio made up of mega cap and large cap longs versus mega cap and large cap shorts."
+    },
+    {
+      "start": 821.12,
+      "end": 833.12,
+      "text": "And the second model portfolio that he looked at was a model portfolio that was made up of mid cap longs versus large cap shorts."
+    },
+    {
+      "start": 833.12,
+      "end": 838.12,
+      "text": "And our example that was shown in the spreadsheet video."
+    },
+    {
+      "start": 838.12,
+      "end": 854.12,
+      "text": "The portfolio that had selected mid cap longs versus large cap shorts outperformed the portfolio with mega cap and large cap longs versus mega cap and large cap shorts."
+    },
+    {
+      "start": 854.12,
+      "end": 869.12,
+      "text": "And part of the reason why Chris showed you that at this stage in the video series is because this is what typically happens in a GDP growth environment."
+    },
+    {
+      "start": 869.12,
+      "end": 876.12,
+      "text": "So, in the majority of times when GDP is growing."
+    },
+    {
+      "start": 876.12,
+      "end": 896.12,
+      "text": "This is because in a GDP growth environment, the sensitivity of mid cap earnings is higher than the sensitivity of mega cap and large cap stocks earnings to the business cycle."
+    },
+    {
+      "start": 896.12,
+      "end": 919.12,
+      "text": "So, in a GDP growth environment, every unit of growth that we get in the economy translates into a higher increase in the earnings of mid cap stocks on average relative to mega cap and large cap stocks earnings."
+    },
+    {
+      "start": 919.12,
+      "end": 928.12,
+      "text": "And of course, the reverse is true on average when we have GDP contraction."
+    },
+    {
+      "start": 928.12,
+      "end": 944.12,
+      "text": "But we showed you this example in the spreadsheet video at this stage because it's useful to do so as for most of the time economies are in a state of GDP growth."
+    },
+    {
+      "start": 944.12,
+      "end": 959.12,
+      "text": "And, of course, this is not a hard and fast rule that this just always happens where all mid caps outperform all mega caps and large caps all the time when the economy is growing."
+    },
+    {
+      "start": 959.12,
+      "end": 961.12,
+      "text": "Of course, that's not the case."
+    },
+    {
+      "start": 961.12,
+      "end": 973.12,
+      "text": "And, of course, you actually have to be able to select the right mid cap longs and the right mega cap and large cap shorts in order to make money."
+    },
+    {
+      "start": 973.12,
+      "end": 982.12,
+      "text": "And this comes with the quality of your trade idea generation process, the quality of your trade ideas."
+    },
+    {
+      "start": 982.12,
+      "end": 989.12,
+      "text": "And we'll be moving into that section of the PTM video series next."
+    },
+    {
+      "start": 989.12,
+      "end": 1011.12,
+      "text": "But, as a recap, at this stage for portfolio modeling, just remember to be using the non-rebalanced portfolio method on a regular basis and also utilizing the CEW method for quick answers on outperformance and underperformance for two stocks and for portfolios."
+    },
+    {
+      "start": 1011.12,
+      "end": 1014.12,
+      "text": "For portfolios for modeling portfolios."
+    },
+    {
+      "start": 1014.12,
+      "end": 1020.12,
+      "text": "So you have the download there for portfolio modeling and you can utilize that now forever."
+    },
+    {
+      "start": 1020.12,
+      "end": 1032.12,
+      "text": "Now, the next thing that Chris showed you were all of the resources and processes for calculating portfolio volatility."
+    },
+    {
+      "start": 1032.12,
+      "end": 1047.12,
+      "text": "So, back to the basics, the variability in your portfolio is the volatility of your portfolio and therefore it represents the risk and opportunity of your portfolio."
+    },
+    {
+      "start": 1047.12,
+      "end": 1056.12,
+      "text": "So, like any single asset such as a stock where we can calculate volatility, portfolio volatility can be calculated as well."
+    },
+    {
+      "start": 1056.12,
+      "end": 1063.12,
+      "text": "And portfolios like stocks can be high risk, low risk or medium risk."
+    },
+    {
+      "start": 1063.12,
+      "end": 1072.12,
+      "text": "Therefore, with exposure to portfolios similar to exposure to a single asset like a stock."
+    },
+    {
+      "start": 1072.12,
+      "end": 1078.12,
+      "text": "We can choose the level of risk that we actually want to have in a portfolio."
+    },
+    {
+      "start": 1078.12,
+      "end": 1086.12,
+      "text": "Similar to the way we can choose the level of risk that we want in a single asset like a stock."
+    },
+    {
+      "start": 1086.12,
+      "end": 1104.12,
+      "text": "So, if we choose the level of risk that we want in a portfolio, we would get a higher expected return from higher risk portfolios versus a lower expected return from lower risk portfolios."
+    },
+    {
+      "start": 1104.12,
+      "end": 1115.12,
+      "text": "So, the upside and the downside is greater in risky portfolios versus low risk portfolios."
+    },
+    {
+      "start": 1115.12,
+      "end": 1125.12,
+      "text": "Now, in terms of our volatility calculation methods, the most common volatility measure is a statistical calculation of standard deviation."
+    },
+    {
+      "start": 1125.12,
+      "end": 1138.12,
+      "text": "This is very similar to the distribution of returns method that we've looked at previously when we look at realized or historical volatility in terms of a calculation."
+    },
+    {
+      "start": 1138.12,
+      "end": 1146.12,
+      "text": "So, we're utilizing the same methods that we use for single assets to actually calculate portfolio volatility."
+    },
+    {
+      "start": 1146.12,
+      "end": 1159.12,
+      "text": "And if you recall, Chris modeled two portfolios, portfolio one long mega cap and large cap stocks versus short mega cap and large cap stocks."
+    },
+    {
+      "start": 1159.12,
+      "end": 1164.12,
+      "text": "And portfolio two long mid caps versus short large caps."
+    },
+    {
+      "start": 1164.12,
+      "end": 1169.12,
+      "text": "And portfolio two on average has more volatility."
+    },
+    {
+      "start": 1169.12,
+      "end": 1172.12,
+      "text": "Therefore, it has more risk and opportunity."
+    },
+    {
+      "start": 1172.12,
+      "end": 1193.12,
+      "text": "And when we're modeling portfolio volatility for us to get an expectation of future volatility, we are using historical asset prices to work out variance, covariance, and then apply weightings for each stock in the portfolio."
+    },
+    {
+      "start": 1193.12,
+      "end": 1198.12,
+      "text": "And there's plenty of resources in terms of background reading."
+    },
+    {
+      "start": 1198.12,
+      "end": 1204.12,
+      "text": "There's the basic statistics guide that you can go through to bring you up to speed."
+    },
+    {
+      "start": 1204.12,
+      "end": 1213.12,
+      "text": "There's the IPLT video series, which is very good background information for applying the portfolio volatility calculation methods."
+    },
+    {
+      "start": 1213.12,
+      "end": 1218.12,
+      "text": "And of course, there's video 19 of the PTM video series."
+    },
+    {
+      "start": 1218.12,
+      "end": 1223.12,
+      "text": "Now, what does this mean for us as traders and portfolio managers?"
+    },
+    {
+      "start": 1223.12,
+      "end": 1226.12,
+      "text": "It's all very well being able to calculate everything."
+    },
+    {
+      "start": 1226.12,
+      "end": 1231.12,
+      "text": "But in terms of the interpretation and on an ongoing basis, how we use this."
+    },
+    {
+      "start": 1231.12,
+      "end": 1238.12,
+      "text": "Remember, we build long short portfolios, not long only portfolios."
+    },
+    {
+      "start": 1238.12,
+      "end": 1244.12,
+      "text": "And there's two main reasons that we build long short portfolios."
+    },
+    {
+      "start": 1244.12,
+      "end": 1250.12,
+      "text": "Firstly, we want to make money when the market goes up and when it goes down."
+    },
+    {
+      "start": 1250.12,
+      "end": 1253.12,
+      "text": "So that is our absolute return mandate."
+    },
+    {
+      "start": 1253.12,
+      "end": 1255.12,
+      "text": "This is our opportunity."
+    },
+    {
+      "start": 1255.12,
+      "end": 1258.12,
+      "text": "Secondly, we have diversification."
+    },
+    {
+      "start": 1258.12,
+      "end": 1266.12,
+      "text": "So for diversification purposes, we have preemptive risk management measures in place."
+    },
+    {
+      "start": 1266.12,
+      "end": 1269.12,
+      "text": "And this is our risk."
+    },
+    {
+      "start": 1269.12,
+      "end": 1279.12,
+      "text": "So we want to make sure that when we are wrong on a position, which is inevitably going to happen frequently throughout our careers,"
+    },
+    {
+      "start": 1279.12,
+      "end": 1286.12,
+      "text": "that not one single position can kill us or wipe us out."
+    },
+    {
+      "start": 1286.12,
+      "end": 1296.12,
+      "text": "We have to diversify enough to a point where we're not being stupid or too concentrated in our positioning."
+    },
+    {
+      "start": 1296.12,
+      "end": 1298.12,
+      "text": "So taking too much risk."
+    },
+    {
+      "start": 1298.12,
+      "end": 1304.12,
+      "text": "But we don't want to be too diverse that we can't make high returns."
+    },
+    {
+      "start": 1304.12,
+      "end": 1311.12,
+      "text": "So we're not exposing ourselves to potential large upside in our returns."
+    },
+    {
+      "start": 1311.12,
+      "end": 1321.12,
+      "text": "So in terms of volatility, in terms of risk and opportunity, as traders and portfolio managers, we are always walking this tightrope."
+    },
+    {
+      "start": 1321.12,
+      "end": 1331.12,
+      "text": "What we need to do is target a level of risk that we want to take in order to get the returns we are seeking."
+    },
+    {
+      "start": 1331.12,
+      "end": 1338.12,
+      "text": "And this is sometimes referred to in theoretical finance as the efficient frontier."
+    },
+    {
+      "start": 1338.12,
+      "end": 1346.12,
+      "text": "When it comes to portfolio volatility and what we require as traders and portfolio managers,"
+    },
+    {
+      "start": 1346.12,
+      "end": 1356.12,
+      "text": "part of the reason that we approach the market with a long short portfolio mandate is because it lowers portfolio volatility."
+    },
+    {
+      "start": 1356.12,
+      "end": 1361.12,
+      "text": "So we always have two competing factors to consider."
+    },
+    {
+      "start": 1361.12,
+      "end": 1365.12,
+      "text": "We have our desire to get outsized absolute returns."
+    },
+    {
+      "start": 1365.12,
+      "end": 1367.12,
+      "text": "Our desire for opportunity."
+    },
+    {
+      "start": 1367.12,
+      "end": 1371.12,
+      "text": "But we also have our desire to control risks."
+    },
+    {
+      "start": 1371.12,
+      "end": 1377.12,
+      "text": "So our desire to make sure that we're not being reckless."
+    },
+    {
+      "start": 1377.12,
+      "end": 1383.12,
+      "text": "So we choose the level of annual risk that we want to take."
+    },
+    {
+      "start": 1383.12,
+      "end": 1389.12,
+      "text": "And we target an annual expected return from that risk."
+    },
+    {
+      "start": 1389.12,
+      "end": 1404.12,
+      "text": "And this gives us our target for our sharp ratio, which when it's reported at the end of the year is your annual return divided by the annual standard deviation of your portfolio."
+    },
+    {
+      "start": 1404.12,
+      "end": 1408.12,
+      "text": "So divided by the volatility of your portfolio."
+    },
+    {
+      "start": 1408.12,
+      "end": 1413.12,
+      "text": "And this, of course, is all in the context of our mandate."
+    },
+    {
+      "start": 1413.12,
+      "end": 1422.12,
+      "text": "We aim to maximize our sharp ratio and make money regardless of whether the market goes up or down."
+    },
+    {
+      "start": 1422.12,
+      "end": 1433.12,
+      "text": "We always want to be targeting a return where we do way better than the stock market in both up and down markets."
+    },
+    {
+      "start": 1433.12,
+      "end": 1438.12,
+      "text": "We don't benchmark ourselves versus stock market returns."
+    },
+    {
+      "start": 1438.12,
+      "end": 1440.12,
+      "text": "We just want to make as much money as possible."
+    },
+    {
+      "start": 1440.12,
+      "end": 1445.12,
+      "text": "Our absolute return mandate in both up and down markets."
+    },
+    {
+      "start": 1445.12,
+      "end": 1447.12,
+      "text": "We want to maximize our sharp."
+    },
+    {
+      "start": 1447.12,
+      "end": 1453.12,
+      "text": "But, of course, we always want to be doing way better than stock market returns."
+    },
+    {
+      "start": 1453.12,
+      "end": 1468.12,
+      "text": "So when it comes to the portfolio volatility spreadsheet, the resources, you can use the portfolio volatility calculator in conjunction with the portfolio modeling spreadsheet."
+    },
+    {
+      "start": 1468.12,
+      "end": 1476.12,
+      "text": "We use the modeling spreadsheet for backtesting performance and for current and intended portfolios."
+    },
+    {
+      "start": 1476.12,
+      "end": 1495.12,
+      "text": "And we use the portfolio volatility calculator to make sure that we're building portfolios with a high enough level of volatility to enable outsized returns and that are diverse enough to enable sensible risk management."
+    },
+    {
+      "start": 1495.12,
+      "end": 1506.12,
+      "text": "So we're looking to be at the efficient frontier and we're looking to have a high enough level of volatility to get outsized returns."
+    },
+    {
+      "start": 1506.12,
+      "end": 1515.12,
+      "text": "Now, of course, there's an overlap between video 18 portfolio volatility and video 19 portfolio correlation."
+    },
+    {
+      "start": 1515.12,
+      "end": 1525.12,
+      "text": "There's two core factors that affect a portfolio's volatility."
+    },
+    {
+      "start": 1525.12,
+      "end": 1526.12,
+      "text": "Firstly, the volatility of the assets in the portfolio."
+    },
+    {
+      "start": 1526.12,
+      "end": 1531.12,
+      "text": "And secondly, the correlations between those assets."
+    },
+    {
+      "start": 1531.12,
+      "end": 1541.12,
+      "text": "And when Chris was going through this and teaching you how to calculate portfolio correlation, he posed a very simple question."
+    },
+    {
+      "start": 1541.12,
+      "end": 1547.12,
+      "text": "How much do each of these factors actually affect the volatility of the portfolio?"
+    },
+    {
+      "start": 1547.12,
+      "end": 1552.12,
+      "text": "And the answer was, well, it depends on the size of the portfolio."
+    },
+    {
+      "start": 1552.12,
+      "end": 1564.12,
+      "text": "So the amount of positions, because as assets are added to the portfolio, as long as the correlation between those assets is less than one,"
+    },
+    {
+      "start": 1564.12,
+      "end": 1572.12,
+      "text": "the volatility of the portfolio falls quite significantly the more positions that you add."
+    },
+    {
+      "start": 1572.12,
+      "end": 1584.12,
+      "text": "And the lower the correlation, the more efficient the diversification actually becomes and the faster risk of the portfolio decreases."
+    },
+    {
+      "start": 1584.12,
+      "end": 1594.12,
+      "text": "And if you recall our visualization where we're comparing different portfolios with different correlations,"
+    },
+    {
+      "start": 1594.12,
+      "end": 1601.12,
+      "text": "if you recall the blue and the orange portfolios that Chris used as his example,"
+    },
+    {
+      "start": 1601.12,
+      "end": 1612.12,
+      "text": "we looked at the blue and orange portfolios starting at one position and they both have the same volatility at the point of origin."
+    },
+    {
+      "start": 1612.12,
+      "end": 1624.12,
+      "text": "And as assets were added to the portfolios, the volatility of the orange line portfolio decreased at a much faster rate"
+    },
+    {
+      "start": 1624.12,
+      "end": 1637.12,
+      "text": "because the correlation of the correlation of the assets in that portfolio was lower at 0.2 versus 0.45 for the blue line portfolio."
+    },
+    {
+      "start": 1637.12,
+      "end": 1649.12,
+      "text": "So when we have small portfolios where we just have one or a few positions, the volatility of those individual assets is the most important thing."
+    },
+    {
+      "start": 1649.12,
+      "end": 1656.12,
+      "text": "So their contribution to the P&L outcome of the portfolio is high."
+    },
+    {
+      "start": 1656.12,
+      "end": 1658.12,
+      "text": "However, in larger portfolios."
+    },
+    {
+      "start": 1658.12,
+      "end": 1664.12,
+      "text": "So when we're talking about portfolios where we have, say, eight to 12 positions."
+    },
+    {
+      "start": 1664.12,
+      "end": 1677.12,
+      "text": "So a typical long short retail trader portfolio, it's the correlation values of the assets to each other that matters much more."
+    },
+    {
+      "start": 1677.12,
+      "end": 1687.12,
+      "text": "Additionally, something else that was covered in the portfolio correlation video, and it's very important to understand this when it comes to diversification."
+    },
+    {
+      "start": 1687.12,
+      "end": 1696.12,
+      "text": "Chris posed the question, is it wise to simply keep adding positions to a portfolio to diversify?"
+    },
+    {
+      "start": 1696.12,
+      "end": 1700.12,
+      "text": "And the answer is, of course not, for two reasons."
+    },
+    {
+      "start": 1700.12,
+      "end": 1709.12,
+      "text": "Firstly, the marginal reduction in portfolio risk above this gate or parameter of eight to 12 positions."
+    },
+    {
+      "start": 1709.12,
+      "end": 1716.12,
+      "text": "The marginal reduction in the portfolio risk above that is small or non-existent."
+    },
+    {
+      "start": 1716.12,
+      "end": 1723.12,
+      "text": "So there is a decreasing benefit beyond a certain point for diversification."
+    },
+    {
+      "start": 1723.12,
+      "end": 1728.12,
+      "text": "This is what we call in the industry over diversification."
+    },
+    {
+      "start": 1728.12,
+      "end": 1736.12,
+      "text": "Secondly, we don't want to compromise ever the quality of our trade ideas."
+    },
+    {
+      "start": 1736.12,
+      "end": 1747.12,
+      "text": "Realistically, you simply can't come up with an ever increasing amount or infinite amount of high quality trade ideas."
+    },
+    {
+      "start": 1747.12,
+      "end": 1756.12,
+      "text": "The more you diversify, the likelihood is that the quality of trade ideas is going to decrease."
+    },
+    {
+      "start": 1756.12,
+      "end": 1762.12,
+      "text": "Therefore, we end up lowering our expected portfolio return."
+    },
+    {
+      "start": 1762.12,
+      "end": 1768.12,
+      "text": "So this is where things start to neatly come together."
+    },
+    {
+      "start": 1768.12,
+      "end": 1775.12,
+      "text": "We have our two competing factors where we are also always walking a tightrope."
+    },
+    {
+      "start": 1775.12,
+      "end": 1781.12,
+      "text": "So we have our requirement for outsized absolute returns."
+    },
+    {
+      "start": 1781.12,
+      "end": 1788.12,
+      "text": "And we also have our requirement, our desire to control risks sensibly."
+    },
+    {
+      "start": 1788.12,
+      "end": 1794.12,
+      "text": "So we have our desire for opportunity and our desire to control risks."
+    },
+    {
+      "start": 1794.12,
+      "end": 1799.12,
+      "text": "And we're always looking to maintain that balance."
+    },
+    {
+      "start": 1799.12,
+      "end": 1812.12,
+      "text": "So with this in mind and this level of understanding, we can now look at efficient retail trader portfolios and what they look like."
+    },
+    {
+      "start": 1812.12,
+      "end": 1820.12,
+      "text": "And if you've done the IPLT video series, you will have seen these slides before in the IPLT video series."
+    },
+    {
+      "start": 1820.12,
+      "end": 1823.12,
+      "text": "But that was a basic level of understanding."
+    },
+    {
+      "start": 1823.12,
+      "end": 1828.12,
+      "text": "This is now a much deeper level of understanding."
+    },
+    {
+      "start": 1828.12,
+      "end": 1838.12,
+      "text": "So at the retail trading level, we have different sizes of trading accounts, different levels of margin capital."
+    },
+    {
+      "start": 1838.12,
+      "end": 1849.12,
+      "text": "So retail traders with small levels of margin capital of $25,000, $50,000, $100,000 on margin."
+    },
+    {
+      "start": 1849.12,
+      "end": 1851.12,
+      "text": "Where are they existing?"
+    },
+    {
+      "start": 1851.12,
+      "end": 1861.12,
+      "text": "Well, typically at any one moment in time, they'll be running long short portfolios with 8 to 12 positions."
+    },
+    {
+      "start": 1861.12,
+      "end": 1874.12,
+      "text": "For retail traders with larger levels of margin capital of say $250,000, $500,000 or $1,000,000 on margin."
+    },
+    {
+      "start": 1874.12,
+      "end": 1879.12,
+      "text": "We become slightly more diversified, but not by much."
+    },
+    {
+      "start": 1879.12,
+      "end": 1885.12,
+      "text": "So at this level, there's an overlap with smaller levels of margin capital."
+    },
+    {
+      "start": 1885.12,
+      "end": 1893.12,
+      "text": "We'll have 10 positions at the low end, but on the higher end, we would have up to 14 positions."
+    },
+    {
+      "start": 1893.12,
+      "end": 1901.12,
+      "text": "And yes, the marginal reduction in risk is small at the portfolio level."
+    },
+    {
+      "start": 1901.12,
+      "end": 1913.12,
+      "text": "But if we have more positions, we're less likely to be in a situation where one position can significantly reduce our returns if it goes wrong."
+    },
+    {
+      "start": 1913.12,
+      "end": 1922.12,
+      "text": "When we move on to higher levels of capital, so we're talking very big retail traders, which is very rare."
+    },
+    {
+      "start": 1922.12,
+      "end": 1931.12,
+      "text": "But retail traders with professional levels of margin capital, we're talking $2 million to $5 million on margin."
+    },
+    {
+      "start": 1931.12,
+      "end": 1941.12,
+      "text": "The amount of positions in our portfolio increases to a gate or parameter of 12 to 16 positions."
+    },
+    {
+      "start": 1941.12,
+      "end": 1950.12,
+      "text": "Now, in different parts of the world, retail traders have availability to different financial products."
+    },
+    {
+      "start": 1950.12,
+      "end": 1956.12,
+      "text": "So we look at the world as the United States and the rest of the world."
+    },
+    {
+      "start": 1956.12,
+      "end": 1964.12,
+      "text": "And we look at the financial products, the instruments that are available to retail traders in the United States"
+    },
+    {
+      "start": 1964.12,
+      "end": 1968.12,
+      "text": "and retail traders outside the US in the rest of the world."
+    },
+    {
+      "start": 1968.12,
+      "end": 1978.12,
+      "text": "So if we look at the bottom of the screen, we have three examples, which if you've done the IPLT video series, you will have seen before."
+    },
+    {
+      "start": 1978.12,
+      "end": 1982.12,
+      "text": "But now you'll have a better understanding of what's going on."
+    },
+    {
+      "start": 1982.12,
+      "end": 1987.12,
+      "text": "We have our three examples of retail traders."
+    },
+    {
+      "start": 1987.12,
+      "end": 1998.12,
+      "text": "Firstly, on the left hand side, we have our US equity options trader that has between $25,000 and $2 million margin capital."
+    },
+    {
+      "start": 1998.12,
+      "end": 2008.12,
+      "text": "We have our outside the United States or rest of world contracts for difference CFD portfolio manager or trader."
+    },
+    {
+      "start": 2008.12,
+      "end": 2017.12,
+      "text": "So that case, that case, that example has the same amount of margin capital in their account."
+    },
+    {
+      "start": 2017.12,
+      "end": 2021.12,
+      "text": "And then we also have thirdly, the US based retail trader."
+    },
+    {
+      "start": 2021.12,
+      "end": 2031.12,
+      "text": "So a long short stock trader that has $25,000 to $2 million margin."
+    },
+    {
+      "start": 2031.12,
+      "end": 2040.12,
+      "text": "So all of these examples of retail traders, whether it's in the US or the rest of the world, they all have the same amount of margin."
+    },
+    {
+      "start": 2040.12,
+      "end": 2048.12,
+      "text": "They are in the gate or parameter of $25,000 to $2 million on margin."
+    },
+    {
+      "start": 2048.12,
+      "end": 2057.12,
+      "text": "The difference between the three in the assumptions that we're making is the financial instruments and the leverage that they're using."
+    },
+    {
+      "start": 2057.12,
+      "end": 2068.12,
+      "text": "Something else that stays the same across these three examples is the annual volatility of the underlying portfolio."
+    },
+    {
+      "start": 2068.12,
+      "end": 2078.12,
+      "text": "And the gate or parameter we're using here is between 15% and 30% expected annual portfolio volatility."
+    },
+    {
+      "start": 2078.12,
+      "end": 2094.12,
+      "text": "So it's the same amount of margin, same amount of margin capital for every case and the same amount of expected annual portfolio volatility in the underlying stock portfolio."
+    },
+    {
+      "start": 2095.12,
+      "end": 2103.12,
+      "text": "The only difference is the assumption of the financial instruments that are available to these retail traders."
+    },
+    {
+      "start": 2103.12,
+      "end": 2118.12,
+      "text": "So let's start at the bottom left of the screen and start looking at the risk and return for a portfolio for a US equity options trader."
+    },
+    {
+      "start": 2118.12,
+      "end": 2128.12,
+      "text": "We have our 15 to 30% expected annual portfolio volatility in the underlying stock portfolio."
+    },
+    {
+      "start": 2128.12,
+      "end": 2148.12,
+      "text": "So the 30% number, you know, to be around 30% or close to that in a well diversified 8 to 12 position portfolio is a challenge."
+    },
+    {
+      "start": 2148.12,
+      "end": 2150.12,
+      "text": "It's quite difficult."
+    },
+    {
+      "start": 2150.12,
+      "end": 2156.12,
+      "text": "30% annualized portfolio volatility is difficult to get with diversification."
+    },
+    {
+      "start": 2156.12,
+      "end": 2166.12,
+      "text": "But if we can get 15%, 17 and a half percent, 20%, 22 and a half percent, something like this."
+    },
+    {
+      "start": 2166.12,
+      "end": 2173.12,
+      "text": "If we can be in the lower end of the range, but have a sensible level of volatility."
+    },
+    {
+      "start": 2173.12,
+      "end": 2179.12,
+      "text": "If we can target that, this is a good level of portfolio volatility to target."
+    },
+    {
+      "start": 2179.12,
+      "end": 2190.12,
+      "text": "It's a good level of risk to take and presents us with ample opportunity to make outsized returns."
+    },
+    {
+      "start": 2190.12,
+      "end": 2206.12,
+      "text": "Now for the US equity options trader, because this trader is utilizing options, they have implicit leverage through options positioning of anything between three to 10 times."
+    },
+    {
+      "start": 2206.12,
+      "end": 2213.12,
+      "text": "10 times what the underlying volatility of the portfolio is."
+    },
+    {
+      "start": 2213.12,
+      "end": 2225.12,
+      "text": "So this gives us a range of possible outcomes in terms of annual return of 45% on the low end and 300% on the high end."
+    },
+    {
+      "start": 2225.12,
+      "end": 2226.12,
+      "text": "So this gives us a range of results."
+    },
+    {
+      "start": 2226.12,
+      "end": 2232.12,
+      "text": "But realistically, we want to be targeting a number that is very achievable."
+    },
+    {
+      "start": 2232.12,
+      "end": 2240.12,
+      "text": "We target 50 to 100% annual return when we are utilizing equity options."
+    },
+    {
+      "start": 2240.12,
+      "end": 2244.12,
+      "text": "And of course, there's no cap on the returns here."
+    },
+    {
+      "start": 2244.12,
+      "end": 2251.12,
+      "text": "The returns can be higher, but we just want to be realistic here."
+    },
+    {
+      "start": 2251.12,
+      "end": 2260.12,
+      "text": "And remember, we're not looking at this and saying we want to make a specific return or a specific amount."
+    },
+    {
+      "start": 2260.12,
+      "end": 2264.12,
+      "text": "What we're doing here is that we're looking at ranges."
+    },
+    {
+      "start": 2264.12,
+      "end": 2271.12,
+      "text": "And if we can fall somewhere between those ranges, we've done a very good job."
+    },
+    {
+      "start": 2271.12,
+      "end": 2294.12,
+      "text": "So with our implicit leverage over many trades of between three to 10 times the underlying portfolio volatility, if we can just be at the lower end and we get a sharp ratio of 3.3 times, we're going to land somewhere between 50 and 100%."
+    },
+    {
+      "start": 2294.12,
+      "end": 2304.12,
+      "text": "So in this instance, let's say, for example, you put $50,000 in a trading account."
+    },
+    {
+      "start": 2304.12,
+      "end": 2321.12,
+      "text": "If the volatility or standard deviation, the annual standard deviation of your portfolio is around, say, 17.5% and you're utilizing options over the entire year and you achieve a 3.3 times return."
+    },
+    {
+      "start": 2321.12,
+      "end": 2326.12,
+      "text": "So you get a sharp ratio of 3.3 times out of that risk."
+    },
+    {
+      "start": 2326.12,
+      "end": 2338.12,
+      "text": "You're going to achieve around 59, 60% return, even when you've got a well diversified long short portfolio."
+    },
+    {
+      "start": 2338.12,
+      "end": 2348.12,
+      "text": "Now, again, when it comes to a portfolio correlation, we are again targeting a gate or a range parameters."
+    },
+    {
+      "start": 2348.12,
+      "end": 2355.12,
+      "text": "We are not targeting an absolute specific number for correlation."
+    },
+    {
+      "start": 2355.12,
+      "end": 2359.12,
+      "text": "We just want to be dropping within a sensible range."
+    },
+    {
+      "start": 2359.12,
+      "end": 2367.12,
+      "text": "And the range we want to be dropping in is the positive 0.3 to negative 0.3 range."
+    },
+    {
+      "start": 2367.12,
+      "end": 2375.12,
+      "text": "And this is the same for all examples here, not just for the US equity options trader."
+    },
+    {
+      "start": 2375.12,
+      "end": 2388.12,
+      "text": "And what also applies to all of our trader examples here is these returns are regardless of the equity market going up or down."
+    },
+    {
+      "start": 2388.12,
+      "end": 2401.12,
+      "text": "So this is our absolute return mandate and it applies to all traders in all regions of the world, regardless of access to financial instruments."
+    },
+    {
+      "start": 2401.12,
+      "end": 2421.12,
+      "text": "But it just so happens that rest of world, so retail traders outside the United States, rest of world retail traders can access US equity options and build and run US equity options portfolios."
+    },
+    {
+      "start": 2421.12,
+      "end": 2432.12,
+      "text": "Of course, if you want to learn options strategies, options trading strategies, this is taught in our professional options trading masterclass."
+    },
+    {
+      "start": 2432.12,
+      "end": 2437.12,
+      "text": "And that is an entire video series in itself."
+    },
+    {
+      "start": 2437.12,
+      "end": 2447.12,
+      "text": "What's important here is to really understand the processes of calculating the underlying stock portfolio volatility."
+    },
+    {
+      "start": 2447.12,
+      "end": 2458.12,
+      "text": "And then we apply the financial instruments that we have access to, to the volatility of that portfolio."
+    },
+    {
+      "start": 2458.12,
+      "end": 2473.12,
+      "text": "Where we have differences in access for retail traders in terms of financial instruments is that US based retail traders can no longer access contracts for difference or CFDs."
+    },
+    {
+      "start": 2473.12,
+      "end": 2476.12,
+      "text": "So they can't build CFD portfolios."
+    },
+    {
+      "start": 2476.12,
+      "end": 2489.12,
+      "text": "Only retail traders outside the United States have access to contracts for difference and can build CFD portfolios."
+    },
+    {
+      "start": 2489.12,
+      "end": 2491.12,
+      "text": "So what are contracts for difference?"
+    },
+    {
+      "start": 2491.12,
+      "end": 2501.12,
+      "text": "Well, they are just derivative instruments that are supposed to mirror one for one the underlying stock performance."
+    },
+    {
+      "start": 2501.12,
+      "end": 2514.12,
+      "text": "But as their derivative instruments, they enable retail traders to get leverage to the performance of the underlying stocks."
+    },
+    {
+      "start": 2514.12,
+      "end": 2527.12,
+      "text": "So essentially, it's the same as running a long short stock portfolio, one for one, but with leverage, the performance is leveraged."
+    },
+    {
+      "start": 2527.12,
+      "end": 2534.12,
+      "text": "So if we look at the CFD portfolio example, we have the same level of capital."
+    },
+    {
+      "start": 2534.12,
+      "end": 2545.12,
+      "text": "We're dealing with the same parameters here as the equity options portfolio, where we have between $25,000 and $2 million of margin capital."
+    },
+    {
+      "start": 2545.12,
+      "end": 2560.12,
+      "text": "So this case, this example is falling in the same gate, same parameters for margin capital and also falling into the same parameters for expected annual volatility."
+    },
+    {
+      "start": 2560.12,
+      "end": 2572.12,
+      "text": "But in this instance, we are using direct leverage with CFDs, not implied leverage like with options."
+    },
+    {
+      "start": 2572.12,
+      "end": 2589.12,
+      "text": "So with CFDs, a typical situation is that you'll have a margin trading account that provides four times leverage, which gives us a range of possible outcomes when it comes to annual return."
+    },
+    {
+      "start": 2589.12,
+      "end": 2594.12,
+      "text": "So you'll have an annual return of somewhere between 60% and 120%."
+    },
+    {
+      "start": 2594.12,
+      "end": 2606.12,
+      "text": "However, we need to be more realistic here for a couple of reasons when it comes to an annual return number that we are targeting."
+    },
+    {
+      "start": 2606.12,
+      "end": 2616.12,
+      "text": "So we target between 22.5% to 45% annual return when utilizing equity CFDs."
+    },
+    {
+      "start": 2616.12,
+      "end": 2635.12,
+      "text": "So we apply a minimum Sharpe ratio of 1.5% on to the volatility of the portfolio, which gives us our expected target annual return of the 22.5% to 45%."
+    },
+    {
+      "start": 2635.12,
+      "end": 2642.12,
+      "text": "So we set a very low expectation for our Sharpe ratio."
+    },
+    {
+      "start": 2642.12,
+      "end": 2647.12,
+      "text": "So the return that we get out of the volatility of the portfolio."
+    },
+    {
+      "start": 2647.12,
+      "end": 2662.12,
+      "text": "So a Sharpe ratio of 1.5% is pretty much the minimally acceptable Sharpe ratio in terms of the return that you get out of the volatility that you're exposed to."
+    },
+    {
+      "start": 2662.12,
+      "end": 2671.12,
+      "text": "And this gives us a very realistic number for annual return of between 22.5% and 45%."
+    },
+    {
+      "start": 2671.12,
+      "end": 2696.12,
+      "text": "Now, the main reason we have a realistic annual return expectation that is lower for a CFD portfolio, a long short CFD portfolio versus an equity options portfolio is because with equity options, we can get more leverage via implied leverage versus a CFD portfolio."
+    },
+    {
+      "start": 2696.12,
+      "end": 2697.12,
+      "text": "With CFD portfolio."
+    },
+    {
+      "start": 2697.12,
+      "end": 2705.12,
+      "text": "With CFD portfolios, the leverage is fixed at four times."
+    },
+    {
+      "start": 2705.12,
+      "end": 2708.12,
+      "text": "With equity options portfolios, it's not fixed."
+    },
+    {
+      "start": 2708.12,
+      "end": 2723.12,
+      "text": "But typically, you can get anything between three and 10 times implied leverage, which naturally increases our range of possible outcomes to the upside."
+    },
+    {
+      "start": 2723.12,
+      "end": 2738.12,
+      "text": "Additionally, options portfolios have a different risk profile dollar for dollar compared to a CFD portfolio or even a stock portfolio."
+    },
+    {
+      "start": 2738.12,
+      "end": 2757.12,
+      "text": "This is because the downside for going long call options to express a long position or going long put options to express a short position is limited to the amount of premium that you spend on the option."
+    },
+    {
+      "start": 2757.12,
+      "end": 2758.12,
+      "text": "Whereas in a CFD portfolio."
+    },
+    {
+      "start": 2758.12,
+      "end": 2782.12,
+      "text": "Whereas in a CFD portfolio, the amount of margin that is utilized in a trading account towards a long position, the amount of money that can be lost is greater than the amount that is utilized from the margin for that position."
+    },
+    {
+      "start": 2782.12,
+      "end": 2783.12,
+      "text": "And on short CFD positions."
+    },
+    {
+      "start": 2783.12,
+      "end": 2789.12,
+      "text": "And on short CFD positions, the amount of downside is unlimited."
+    },
+    {
+      "start": 2789.12,
+      "end": 2794.12,
+      "text": "The amount of dollar downside is unlimited on shorts."
+    },
+    {
+      "start": 2794.12,
+      "end": 2809.12,
+      "text": "So the difference in expected return comes from the fact that we are using direct leverage instead of implied leverage via options."
+    },
+    {
+      "start": 2809.12,
+      "end": 2815.12,
+      "text": "Our direct leverage with a CFD portfolio and even a stock portfolio is fixed."
+    },
+    {
+      "start": 2815.12,
+      "end": 2827.12,
+      "text": "And also options actually change the risk dynamic of a portfolio because of limited downside on long options positions."
+    },
+    {
+      "start": 2827.12,
+      "end": 2841.12,
+      "text": "Now, remember the portfolio, even for the rest of world CFD portfolio is the same as the underlying portfolio with the trader who's utilizing equity options."
+    },
+    {
+      "start": 2841.12,
+      "end": 2843.12,
+      "text": "It has the same dynamics."
+    },
+    {
+      "start": 2843.12,
+      "end": 2847.12,
+      "text": "So we have the same expected annual volatility."
+    },
+    {
+      "start": 2847.12,
+      "end": 2851.12,
+      "text": "We have the same correlation also."
+    },
+    {
+      "start": 2851.12,
+      "end": 2857.12,
+      "text": "So our correlation is positive 0.3 to negative 0.3."
+    },
+    {
+      "start": 2857.12,
+      "end": 2866.12,
+      "text": "We also have the same level of margin capital and we have the same absolute return mandate."
+    },
+    {
+      "start": 2866.12,
+      "end": 2875.12,
+      "text": "So again, these outcomes are regardless of the equity market going up or down."
+    },
+    {
+      "start": 2875.12,
+      "end": 2883.12,
+      "text": "Now, if we look at the exact same portfolio in the US as a stock portfolio."
+    },
+    {
+      "start": 2883.12,
+      "end": 2889.12,
+      "text": "So a long short stock portfolio and not a CFD portfolio."
+    },
+    {
+      "start": 2889.12,
+      "end": 2901.12,
+      "text": "And the reason we're looking at a long short stock portfolio in the US is because US retail traders can't trade CFDs."
+    },
+    {
+      "start": 2901.12,
+      "end": 2912.12,
+      "text": "So they can only trade long and short stock positions with two times leverage or 50% margin requirement."
+    },
+    {
+      "start": 2912.12,
+      "end": 2917.12,
+      "text": "So we have the same level of capital."
+    },
+    {
+      "start": 2917.12,
+      "end": 2921.12,
+      "text": "So the range of $25,000 to $2 million of margin capital."
+    },
+    {
+      "start": 2921.12,
+      "end": 2929.12,
+      "text": "We have the same expected annual portfolio volatility parameters of 15 to 30%."
+    },
+    {
+      "start": 2929.12,
+      "end": 2938.12,
+      "text": "And we have the same target portfolio correlation of 0.3 to minus 0.3."
+    },
+    {
+      "start": 2938.12,
+      "end": 2944.12,
+      "text": "So we have exactly the same portfolio as the rest of world CFD trader."
+    },
+    {
+      "start": 2944.12,
+      "end": 2961.12,
+      "text": "But now we're modeling it as a US based retail trader that can only take long and short stock positions on a trading account that only provides two times leverage."
+    },
+    {
+      "start": 2961.12,
+      "end": 2972.12,
+      "text": "So on direct leverage of two times, this gives us a range of possible outcomes for annual return of 30 to 60%."
+    },
+    {
+      "start": 2972.12,
+      "end": 2996.12,
+      "text": "But in order to get that return to full within those parameters, because of the leverage situation, US based retail traders, when they're trading long short stock portfolios, have to be much better traders than a rest of world CFD portfolio in order to get the same return."
+    },
+    {
+      "start": 2996.12,
+      "end": 3019.12,
+      "text": "So we're applying a sharp ratio of 2 here instead of 1.5, which means a US based long short portfolio manager, US based retail trader that's taking the same approach has to be much better at limiting losses and much better at maximizing profits."
+    },
+    {
+      "start": 3019.12,
+      "end": 3020.12,
+      "text": "So they get a higher return for every unit of risk."
+    },
+    {
+      "start": 3020.12,
+      "end": 3026.12,
+      "text": "So they get a higher return for every unit of risk out of the portfolio."
+    },
+    {
+      "start": 3026.12,
+      "end": 3053.12,
+      "text": "So guys, when we think of these examples and when we think of portfolio modeling, portfolio volatility, portfolio correlation and our processes that we go through, we have to think about it in the context of what financial instruments are available to us and the size of our margin capital as well."
+    },
+    {
+      "start": 3053.12,
+      "end": 3065.12,
+      "text": "Of course, if you want to learn how to trade equity options and build equity options portfolios, we are early on in your education at this stage."
+    },
+    {
+      "start": 3065.12,
+      "end": 3069.12,
+      "text": "And it's definitely possible, but there's a lot more work to do."
+    },
+    {
+      "start": 3069.12,
+      "end": 3080.12,
+      "text": "Retail traders in the US and retail traders outside the US in the rest of the world can access US equity options."
+    },
+    {
+      "start": 3080.12,
+      "end": 3083.12,
+      "text": "That's not a problem."
+    },
+    {
+      "start": 3083.12,
+      "end": 3102.12,
+      "text": "But at this moment in time, at this point in your education and for the purposes of the PTM video series for our learning curve, we are assuming we are taking the approach of long short equity stock or CFD portfolio managers."
+    },
+    {
+      "start": 3102.12,
+      "end": 3124.12,
+      "text": "Because what's important at this stage is understanding portfolio modeling, portfolio volatility, how to calculate it, portfolio correlation and how everything ties together and in the context of trading accounts and in the real world, what financial instruments are available to you."
+    },
+    {
+      "start": 3124.12,
+      "end": 3125.12,
+      "text": "But if you don't understand."
+    },
+    {
+      "start": 3125.12,
+      "end": 3141.12,
+      "text": "But if you don't understand anything, so you don't understand portfolio modeling, volatility for portfolios, correlation of assets in portfolios, if you don't understand any of that, having access to financial instruments is just irrelevant."
+    },
+    {
+      "start": 3141.12,
+      "end": 3146.12,
+      "text": "So you have to learn all of this stuff first."
+    },
+    {
+      "start": 3146.12,
+      "end": 3149.12,
+      "text": "So this is how it all fits together."
+    },
+    {
+      "start": 3149.12,
+      "end": 3160.12,
+      "text": "Now, in terms of efficient retail trader portfolios, you absolutely always have to remember not to forego the quality of your trade ideas."
+    },
+    {
+      "start": 3160.12,
+      "end": 3184.12,
+      "text": "So you should always attempt to fall within the gates or parameters of efficient retail trader portfolios, but with high quality trade ideas driven by fundamentals and catalysts within the 20 to 60 day time horizon."
+    },
+    {
+      "start": 3184.12,
+      "end": 3201.12,
+      "text": "Use the spreadsheets to estimate volatility correlation and forecasted returns based on shop ratio and leverage that's available or implied leverage via options."
+    },
+    {
+      "start": 3201.12,
+      "end": 3207.12,
+      "text": "And you do not have to be ridiculously accurate all of the time."
+    },
+    {
+      "start": 3207.12,
+      "end": 3209.12,
+      "text": "You are a retail trader."
+    },
+    {
+      "start": 3209.12,
+      "end": 3220.12,
+      "text": "Don't get lost in endless rabbit holes of calculating portfolio volatility and correlation and forget about your time horizon."
+    },
+    {
+      "start": 3220.12,
+      "end": 3222.12,
+      "text": "Forget about trade ideas."
+    },
+    {
+      "start": 3222.12,
+      "end": 3225.12,
+      "text": "Forget about fundamentals and catalysts."
+    },
+    {
+      "start": 3225.12,
+      "end": 3228.12,
+      "text": "Don't get lost in endless rabbit holes."
+    },
+    {
+      "start": 3228.12,
+      "end": 3233.12,
+      "text": "Time is obviously an issue for retail traders."
+    },
+    {
+      "start": 3233.12,
+      "end": 3236.12,
+      "text": "So you have to work smart and not hard."
+    },
+    {
+      "start": 3236.12,
+      "end": 3237.12,
+      "text": "Please do that."
+    },
+    {
+      "start": 3237.12,
+      "end": 3251.12,
+      "text": "If you're falling within the gates or parameters to target 50 to 100% return with 8 to 12 high quality long or short positions."
+    },
+    {
+      "start": 3251.12,
+      "end": 3256.12,
+      "text": "So you have a diverse portfolio on a solid risk adjusted basis."
+    },
+    {
+      "start": 3256.12,
+      "end": 3259.12,
+      "text": "So sharp ratio with some leverage."
+    },
+    {
+      "start": 3259.12,
+      "end": 3263.12,
+      "text": "You are exposing yourself to the efficient frontier."
+    },
+    {
+      "start": 3263.12,
+      "end": 3271.12,
+      "text": "Don't forgo high quality trade idea generation for the sake of diversification."
+    },
+    {
+      "start": 3271.12,
+      "end": 3273.12,
+      "text": "You have to have both."
+    },
+    {
+      "start": 3273.12,
+      "end": 3286.12,
+      "text": "Now what you also have to remember is that all of the stuff that you've learned up to this point and all of the stuff that you're going to do in the future in terms of your processes."
+    },
+    {
+      "start": 3286.12,
+      "end": 3288.12,
+      "text": "This is going to give you an edge."
+    },
+    {
+      "start": 3288.12,
+      "end": 3293.12,
+      "text": "99% of retail traders are never going to do any of this."
+    },
+    {
+      "start": 3293.12,
+      "end": 3307.12,
+      "text": "And all the stuff that you've just learned in this section of the video series when it comes to portfolio modeling, portfolio volatility, portfolio correlation, and even beta."
+    },
+    {
+      "start": 3307.12,
+      "end": 3321.12,
+      "text": "If you are seeking to go into the industry as a professional trader, a basic understanding of how all of this works is absolutely necessary."
+    },
+    {
+      "start": 3321.12,
+      "end": 3337.12,
+      "text": "It's what you would learn in your first one to two years as a graduate out of university entering hedge funds and investment banks, and especially at hedge funds as a junior portfolio manager."
+    },
+    {
+      "start": 3337.12,
+      "end": 3350.12,
+      "text": "Now, as we were discussing portfolio correlation, we obviously took a slight detour there to talk about efficient retail trader portfolios."
+    },
+    {
+      "start": 3350.12,
+      "end": 3370.12,
+      "text": "And I wanted to do that at this stage because it shows you how everything fits together at this point in your learning curve and also primes you and gets you ready for the next stage of the video series, which will be trade idea generation."
+    },
+    {
+      "start": 3370.12,
+      "end": 3387.12,
+      "text": "Just knowing at this stage how things fit together in the bigger picture will give you a lot more clarity as to the reasons why we do certain things in the way we do it in the trade idea generation process."
+    },
+    {
+      "start": 3387.12,
+      "end": 3394.12,
+      "text": "But for the moment, let's go back to some of the specifics of portfolio correlation."
+    },
+    {
+      "start": 3394.12,
+      "end": 3408.12,
+      "text": "If you recall, Chris also showed you how to use the spreadsheets and showed you how to calculate correlation, how to create a time series of correlation."
+    },
+    {
+      "start": 3408.12,
+      "end": 3419.12,
+      "text": "So how correlation goes up and down over time and also how to model different portfolios based on market capitalization."
+    },
+    {
+      "start": 3419.12,
+      "end": 3432.12,
+      "text": "So if you recall, Chris went through an example of a 10 stock portfolio where we had six mid cap longs and four large cap shorts."
+    },
+    {
+      "start": 3432.12,
+      "end": 3439.12,
+      "text": "And this portfolio showed high efficiency of both correlation and volatility."
+    },
+    {
+      "start": 3439.12,
+      "end": 3447.12,
+      "text": "Now, just as a reminder, we always have our two competing factors to consider."
+    },
+    {
+      "start": 3447.12,
+      "end": 3454.12,
+      "text": "So firstly, our desire to get outsized absolute returns, which is our opportunity."
+    },
+    {
+      "start": 3454.12,
+      "end": 3463.12,
+      "text": "And secondly, our desire to control risks, which of course is our risk profile."
+    },
+    {
+      "start": 3463.12,
+      "end": 3475.12,
+      "text": "So we choose the level of annual risk that we want to take and we target an annual expected return from that risk."
+    },
+    {
+      "start": 3475.12,
+      "end": 3480.12,
+      "text": "So we're seeking a tidy, efficient, sharp ratio."
+    },
+    {
+      "start": 3480.12,
+      "end": 3494.12,
+      "text": "So if you target the 15 to 30% gate for the underlying stock portfolio volatility and you take some market risk as well,"
+    },
+    {
+      "start": 3494.12,
+      "end": 3502.12,
+      "text": "and you achieve a decent, sharp ratio, utilizing some leverage, as long as your ideas are high quality,"
+    },
+    {
+      "start": 3502.12,
+      "end": 3509.12,
+      "text": "and you are going to do very well over many trades over a long period of time."
+    },
+    {
+      "start": 3509.12,
+      "end": 3519.12,
+      "text": "And you'll notice with Chris's example where we have the mid cap longs, the six mid cap longs and the four shorts,"
+    },
+    {
+      "start": 3519.12,
+      "end": 3529.12,
+      "text": "the four large cap shorts that we're now looking to assume in model portfolios, some sort of market risk."
+    },
+    {
+      "start": 3529.12,
+      "end": 3534.12,
+      "text": "Having some level of market risk is acceptable."
+    },
+    {
+      "start": 3534.12,
+      "end": 3546.12,
+      "text": "So yes, we aim to get the highest amount of return possible from the lowest amount of acceptable risk that's possible."
+    },
+    {
+      "start": 3546.12,
+      "end": 3559.12,
+      "text": "So again, we are choosing that level of volatility that's high enough to get outsized returns, but not too high that we're being irresponsible."
+    },
+    {
+      "start": 3559.12,
+      "end": 3564.12,
+      "text": "And we are happy to accept some market risk."
+    },
+    {
+      "start": 3564.12,
+      "end": 3571.12,
+      "text": "So we're looking to maximize our sharp ratio and we have an absolute return mandate."
+    },
+    {
+      "start": 3571.12,
+      "end": 3576.12,
+      "text": "So we're looking to make money regardless of whether the market goes up or down."
+    },
+    {
+      "start": 3576.12,
+      "end": 3591.12,
+      "text": "And this example portfolio is a good segue into the next area that we're going to look at, which is portfolio beta, because now we're assuming some market risk."
+    },
+    {
+      "start": 3591.12,
+      "end": 3607.12,
+      "text": "So when it comes to the portfolio volatility and correlation spreadsheet download, obviously there is overlap between the correlation video and the portfolio volatility video."
+    },
+    {
+      "start": 3607.12,
+      "end": 3610.12,
+      "text": "And the resources are very similar."
+    },
+    {
+      "start": 3610.12,
+      "end": 3616.12,
+      "text": "The spreadsheet's the same, except correlation has been added to the portfolio volatility spreadsheet."
+    },
+    {
+      "start": 3616.12,
+      "end": 3625.12,
+      "text": "So in your ongoing processes, you're going to use it in the same way, except now correlation has been added."
+    },
+    {
+      "start": 3625.12,
+      "end": 3645.12,
+      "text": "So use the portfolio volatility and correlation spreadsheet to make sure that you're building portfolios with a high enough level of volatility to enable outsized returns and that are diverse enough to enable sensible risk management."
+    },
+    {
+      "start": 3645.12,
+      "end": 3661.12,
+      "text": "And of course, when it comes to correlation, make sure that your portfolio correlation lands within the gates or parameters of acceptable correlation of positive 0.3 to negative 0.3."
+    },
+    {
+      "start": 3661.12,
+      "end": 3668.12,
+      "text": "Now, when it comes to portfolio beta, the next video that Chris Quill took you through."
+    },
+    {
+      "start": 3668.12,
+      "end": 3681.12,
+      "text": "So even though we run long short portfolios as traders and portfolio managers, we have to be willing to accept at any one moment in time, some market risk."
+    },
+    {
+      "start": 3682.12,
+      "end": 3696.12,
+      "text": "Beta calculations at the stock level and the portfolio level, they help us to understand at any one moment in time, what exposure we have to market risk in our portfolio."
+    },
+    {
+      "start": 3696.12,
+      "end": 3699.12,
+      "text": "We can be close to market neutral."
+    },
+    {
+      "start": 3699.12,
+      "end": 3705.12,
+      "text": "And this can theoretically occur through beta adjustments of portfolios."
+    },
+    {
+      "start": 3705.12,
+      "end": 3708.12,
+      "text": "However, we have to be realistic here."
+    },
+    {
+      "start": 3708.12,
+      "end": 3717.12,
+      "text": "Being completely market neutral at any one moment in time is not just close to impossible."
+    },
+    {
+      "start": 3717.12,
+      "end": 3719.12,
+      "text": "It's probably impossible."
+    },
+    {
+      "start": 3719.12,
+      "end": 3723.12,
+      "text": "Not only that, we are risk takers."
+    },
+    {
+      "start": 3723.12,
+      "end": 3726.12,
+      "text": "We are traders and portfolio managers."
+    },
+    {
+      "start": 3726.12,
+      "end": 3735.12,
+      "text": "It's also undesirable for us as traders and portfolio managers to always be market neutral."
+    },
+    {
+      "start": 3735.12,
+      "end": 3738.12,
+      "text": "We want to be accepting some market risk."
+    },
+    {
+      "start": 3738.12,
+      "end": 3745.12,
+      "text": "Additionally, we have to be very mindful of what beta actually is and its calculation."
+    },
+    {
+      "start": 3745.12,
+      "end": 3748.12,
+      "text": "Beta is always changing."
+    },
+    {
+      "start": 3748.12,
+      "end": 3756.12,
+      "text": "And that's why Chris gave you the analysis and the capability now of calculating rolling beta."
+    },
+    {
+      "start": 3756.12,
+      "end": 3770.12,
+      "text": "If we wanted to be market neutral all the time as portfolio managers, we would have to readjust every day to be close to perfect beta hedged portfolios."
+    },
+    {
+      "start": 3770.12,
+      "end": 3779.12,
+      "text": "And it's not just impractical for us to do that and especially for you to do that as retail traders."
+    },
+    {
+      "start": 3779.12,
+      "end": 3783.12,
+      "text": "It's not just impractical, but beta also has its flaws."
+    },
+    {
+      "start": 3783.12,
+      "end": 3785.12,
+      "text": "Beta is always changing."
+    },
+    {
+      "start": 3785.12,
+      "end": 3794.12,
+      "text": "So one of the weaknesses of beta, one of the flaws is that we're using past data."
+    },
+    {
+      "start": 3794.12,
+      "end": 3799.12,
+      "text": "It is all based on past data and past relationships."
+    },
+    {
+      "start": 3799.12,
+      "end": 3800.12,
+      "text": "Okay."
+    },
+    {
+      "start": 3800.12,
+      "end": 3806.12,
+      "text": "Our assumptions can cause us to create blind spots in our risk."
+    },
+    {
+      "start": 3806.12,
+      "end": 3818.12,
+      "text": "So we can be thinking that if we're beta market neutral, for example, we can be thinking that we've eliminated market risk when we actually really haven't."
+    },
+    {
+      "start": 3818.12,
+      "end": 3825.12,
+      "text": "The numbers may not be telling the truth of what's actually occurring in the market at the time."
+    },
+    {
+      "start": 3825.12,
+      "end": 3831.12,
+      "text": "Or things can actually change or change drastically in the market."
+    },
+    {
+      "start": 3831.12,
+      "end": 3834.12,
+      "text": "And everything in the past is now irrelevant."
+    },
+    {
+      "start": 3834.12,
+      "end": 3852.12,
+      "text": "And I can tell you now that even in professional circles, in professional trading circles, beta and reliance on its assumptions can create blind spots and complacency in risk calculations."
+    },
+    {
+      "start": 3852.12,
+      "end": 3859.12,
+      "text": "And it can even be abused to hide real risks."
+    },
+    {
+      "start": 3859.12,
+      "end": 3862.12,
+      "text": "So we must be aware of it."
+    },
+    {
+      "start": 3862.12,
+      "end": 3871.12,
+      "text": "And we must use the processes to calculate our beta adjusted risk in stock portfolios."
+    },
+    {
+      "start": 3871.12,
+      "end": 3876.12,
+      "text": "But we must be also aware of its drawbacks and its flaws."
+    },
+    {
+      "start": 3876.12,
+      "end": 3883.12,
+      "text": "And we must be intellectually honest with ourselves that we are calculating accurately."
+    },
+    {
+      "start": 3883.12,
+      "end": 3891.12,
+      "text": "So we try to get the most accurate reflection of the current reality of the world."
+    },
+    {
+      "start": 3891.12,
+      "end": 3903.12,
+      "text": "And with our own mandate of our absolute return mandate, where we want to make outsized returns on the way up and outsized returns on the way down."
+    },
+    {
+      "start": 3903.12,
+      "end": 3906.12,
+      "text": "We have to just admit to ourselves."
+    },
+    {
+      "start": 3906.12,
+      "end": 3910.12,
+      "text": "And we have to just accept some level of market risk."
+    },
+    {
+      "start": 3910.12,
+      "end": 3928.12,
+      "text": "So especially for retail traders on smaller accounts, we have to accept that we need some level of market risk in our portfolios at any one moment in time."
+    },
+    {
+      "start": 3928.12,
+      "end": 3935.12,
+      "text": "In order to expose ourselves to potential outsized returns."
+    },
+    {
+      "start": 3935.12,
+      "end": 3936.12,
+      "text": "We need some level of market risk."
+    },
+    {
+      "start": 3936.12,
+      "end": 3936.12,
+      "text": "We need some level of market risk."
+    },
+    {
+      "start": 3936.12,
+      "end": 3942.12,
+      "text": "We need some level of market risk in our portfolios all the time."
+    },
+    {
+      "start": 3942.12,
+      "end": 3945.12,
+      "text": "It's not only an impossible task."
+    },
+    {
+      "start": 3945.12,
+      "end": 3947.12,
+      "text": "We can get close to it."
+    },
+    {
+      "start": 3947.12,
+      "end": 3954.12,
+      "text": "But it's almost impossible, if not impossible, to always be perfectly market neutral."
+    },
+    {
+      "start": 3954.12,
+      "end": 3964.12,
+      "text": "Not only that, but it's also not required for traders and portfolio managers, especially at the retail level."
+    },
+    {
+      "start": 3964.12,
+      "end": 3970.12,
+      "text": "We want some but not too much market risk in our portfolios."
+    },
+    {
+      "start": 3970.12,
+      "end": 3985.12,
+      "text": "So for retail traders, beta modeling should be used as a tool to get a snapshot of what level of market risk that you're exposed to at any one moment in time."
+    },
+    {
+      "start": 3985.12,
+      "end": 3997.12,
+      "text": "So you're aware of it and you're happy with it and you're happy that it aligns with your current macroeconomic views at the time."
+    },
+    {
+      "start": 3997.12,
+      "end": 4004.12,
+      "text": "You should be using it also to model any portfolio changes that you're considering."
+    },
+    {
+      "start": 4004.12,
+      "end": 4019.12,
+      "text": "So when you're thinking about adding in new long and or new short ideas to a portfolio and how it's going to affect your market risk and whether this still aligns with your views."
+    },
+    {
+      "start": 4019.12,
+      "end": 4039.12,
+      "text": "Additionally, you're going to be using beta modeling all the time to understand the actual contribution on a beta adjusted basis of each individual asset in the portfolio to the outcome of the portfolio and that you're comfortable with it."
+    },
+    {
+      "start": 4039.12,
+      "end": 4049.12,
+      "text": "But the most important thing is your net long or short bias in your portfolio overall."
+    },
+    {
+      "start": 4049.12,
+      "end": 4058.12,
+      "text": "So if you want to be net long in your portfolio, but when you're beta modeling your portfolio with reasonable assumptions,"
+    },
+    {
+      "start": 4058.12,
+      "end": 4069.12,
+      "text": "you realize that you're actually beta flat or neutral or even beta short or even just not long enough,"
+    },
+    {
+      "start": 4069.12,
+      "end": 4075.12,
+      "text": "then you probably want to adjust your portfolio to get longer."
+    },
+    {
+      "start": 4075.12,
+      "end": 4079.12,
+      "text": "So it aligns with your market view."
+    },
+    {
+      "start": 4079.12,
+      "end": 4085.12,
+      "text": "And on the flip side, if you actually want to be net short in your portfolio,"
+    },
+    {
+      "start": 4085.12,
+      "end": 4091.12,
+      "text": "but when you're going through your beta modeling and you're using reasonable assumptions,"
+    },
+    {
+      "start": 4091.12,
+      "end": 4101.12,
+      "text": "you realize that you're actually either beta neutral or beta net long or you're just not short enough,"
+    },
+    {
+      "start": 4101.12,
+      "end": 4110.12,
+      "text": "then of course, you probably want to think about or actually adjusting your portfolio to get shorter."
+    },
+    {
+      "start": 4110.12,
+      "end": 4122.12,
+      "text": "So when it comes to portfolio beta, again, we are walking a tightrope here with beta as traders and portfolio managers."
+    },
+    {
+      "start": 4122.12,
+      "end": 4131.12,
+      "text": "We always have our two competing factors to consider our desire to get outsized absolute returns."
+    },
+    {
+      "start": 4131.12,
+      "end": 4135.12,
+      "text": "So our opportunity and our desire to control risks."
+    },
+    {
+      "start": 4135.12,
+      "end": 4148.12,
+      "text": "So our risk, we want to be exposing ourselves to a beta adjusted sensible level of market risk in our portfolios at any one moment in time."
+    },
+    {
+      "start": 4148.12,
+      "end": 4160.12,
+      "text": "Use the beta sheets to calculate stock and portfolio beta and understand what your market risk is at any one moment in time."
+    },
+    {
+      "start": 4160.12,
+      "end": 4171.12,
+      "text": "And you need to make sure that your beta adjusted net long or net short exposure roughly aligns with your market view."
+    },
+    {
+      "start": 4171.12,
+      "end": 4175.12,
+      "text": "And again, it doesn't have to be 100% accurate."
+    },
+    {
+      "start": 4175.12,
+      "end": 4179.12,
+      "text": "You just have to be roughly aligned."
+    },
+    {
+      "start": 4179.12,
+      "end": 4183.12,
+      "text": "Remember, you're a retail trader."
+    },
+    {
+      "start": 4183.12,
+      "end": 4189.12,
+      "text": "Most retail traders, 99% of them will never, ever be doing what you're doing."
+    },
+    {
+      "start": 4189.12,
+      "end": 4192.12,
+      "text": "You're already ahead if you're doing this."
+    },
+    {
+      "start": 4192.12,
+      "end": 4201.12,
+      "text": "Just don't get lost in endless rabbit holes of calculating portfolio volatility, correlation and beta."
+    },
+    {
+      "start": 4201.12,
+      "end": 4202.12,
+      "text": "Time is obviously an issue."
+    },
+    {
+      "start": 4202.12,
+      "end": 4203.12,
+      "text": "Time is obviously an issue."
+    },
+    {
+      "start": 4203.12,
+      "end": 4208.12,
+      "text": "So please work smart and not hard."
+    },
+    {
+      "start": 4208.12,
+      "end": 4212.12,
+      "text": "So when it comes to beta risk and opportunity."
+    },
+    {
+      "start": 4212.12,
+      "end": 4223.12,
+      "text": "When we're targeting the gate, the 15 to 30% underlying stock portfolio volatility, and then we add in some market risk."
+    },
+    {
+      "start": 4223.12,
+      "end": 4228.12,
+      "text": "We are attempting to achieve a decent shop ratio and utilize some leverage."
+    },
+    {
+      "start": 4228.12,
+      "end": 4238.12,
+      "text": "Obviously, if we add in beta modeling to our portfolio and we accept some market risk and we're on top of it."
+    },
+    {
+      "start": 4238.12,
+      "end": 4250.12,
+      "text": "As long as our ideas are high quality, we're going to stand a very good chance at getting outsized returns in all market conditions."
+    },
+    {
+      "start": 4250.12,
+      "end": 4257.12,
+      "text": "So the question, what's an acceptable level of market risk at any one time in the portfolio?"
+    },
+    {
+      "start": 4257.12,
+      "end": 4259.12,
+      "text": "Well, again, we use gates here."
+    },
+    {
+      "start": 4259.12,
+      "end": 4272.12,
+      "text": "So running a beta net long or short portfolio exposure of within plus and minus 30% at any one moment in time is totally okay."
+    },
+    {
+      "start": 4273.12,
+      "end": 4284.12,
+      "text": "But that is, of course, assuming that you've actually done your macroeconomic work that we covered in the first part of the video series."
+    },
+    {
+      "start": 4284.12,
+      "end": 4287.12,
+      "text": "And that your positions are well thought out."
+    },
+    {
+      "start": 4287.12,
+      "end": 4297.12,
+      "text": "So high quality trade ideas that have gone through the entire trade idea generation process that we're going to go through in the next stage."
+    },
+    {
+      "start": 4298.12,
+      "end": 4306.12,
+      "text": "And the market risk exposure that you've taken in your portfolio actually represents your macro view."
+    },
+    {
+      "start": 4308.12,
+      "end": 4311.12,
+      "text": "So, guys, we've covered a lot of ground here."
+    },
+    {
+      "start": 4311.12,
+      "end": 4321.12,
+      "text": "So let's let's summarize and conclude and overlap all the work that we've done so far, how it all fits in."
+    },
+    {
+      "start": 4321.12,
+      "end": 4328.12,
+      "text": "We just conquered a major part of the scientific art of trading and portfolio management."
+    },
+    {
+      "start": 4328.12,
+      "end": 4338.12,
+      "text": "And yes, admittedly, it is a lot of work and it's difficult for most people to get their head around initially."
+    },
+    {
+      "start": 4338.12,
+      "end": 4348.12,
+      "text": "So fortunately or unfortunately, depending on how you look at it, in order for you as a retail trader to climb the competency hierarchy,"
+    },
+    {
+      "start": 4348.12,
+      "end": 4357.12,
+      "text": "this is the groundwork you need to know and that you have to incorporate into your regular processes."
+    },
+    {
+      "start": 4357.12,
+      "end": 4369.12,
+      "text": "The previous four videos that were taken by Chris Quill are a fantastic example of the differences between unconscious competence."
+    },
+    {
+      "start": 4369.12,
+      "end": 4381.12,
+      "text": "So the level that professional traders are operating at and unconscious incompetence, the level at the vast majority of retail traders are operating at."
+    },
+    {
+      "start": 4381.12,
+      "end": 4393.12,
+      "text": "Your job as a professional trader or even a retail trader that's operating in the retail infrastructure, but trading at a professional level."
+    },
+    {
+      "start": 4393.12,
+      "end": 4405.12,
+      "text": "Your job is not just to make money on one or two big trades, then disappear and then come back to play at the casino in a year or two when you just feel like it, when you have a whim."
+    },
+    {
+      "start": 4405.12,
+      "end": 4417.12,
+      "text": "This is a fairy tale in the trading industry and the vast majority of people that engage in that behavior will always blow up."
+    },
+    {
+      "start": 4417.12,
+      "end": 4431.12,
+      "text": "Your job is to make money consistently over thousands of career trades over many years and how you make your money is also super important."
+    },
+    {
+      "start": 4431.12,
+      "end": 4436.12,
+      "text": "So you have to not only make consistent money, but you also have to make it efficiently."
+    },
+    {
+      "start": 4436.12,
+      "end": 4443.12,
+      "text": "And that's why we measure not just returns, but risk adjusted returns."
+    },
+    {
+      "start": 4443.12,
+      "end": 4457.12,
+      "text": "You are running a business and the business requires process, dedication, time management and statistical awareness of how the business works."
+    },
+    {
+      "start": 4457.12,
+      "end": 4467.12,
+      "text": "And we will later in the video series be extending this analysis into statistics and into risk management."
+    },
+    {
+      "start": 4467.12,
+      "end": 4483.12,
+      "text": "So the foundations of portfolio management section of the PTM video series that you've just experienced overlaps with risk management and trader statistics that we're going to be looking at later in the video series."
+    },
+    {
+      "start": 4483.12,
+      "end": 4490.12,
+      "text": "And now what we're going to be doing is we're going to be moving on to trade idea generation."
+    },
+    {
+      "start": 4490.12,
+      "end": 4501.12,
+      "text": "So as mentioned previously, modeling portfolio performance, modeling volatility, correlation and beta, it's all well and good."
+    },
+    {
+      "start": 4501.12,
+      "end": 4511.12,
+      "text": "But if the trade ideas that you put into this mechanism, into this business are not high quality, it's all just pointless."
+    },
+    {
+      "start": 4511.12,
+      "end": 4512.12,
+      "text": "You absolutely need both."
+    },
+    {
+      "start": 4512.12,
+      "end": 4514.12,
+      "text": "You absolutely need both."
+    },
+    {
+      "start": 4514.12,
+      "end": 4525.12,
+      "text": "The inventory that you're running, the inventory of your trade ideas that you're running at any one moment in time are your oxygen as a trader."
+    },
+    {
+      "start": 4525.12,
+      "end": 4529.12,
+      "text": "Everything else is statistical processing and rigor."
+    },
+    {
+      "start": 4529.12,
+      "end": 4530.12,
+      "text": "It's mechanical."
+    },
+    {
+      "start": 4530.12,
+      "end": 4531.12,
+      "text": "It's mechanical."
+    },
+    {
+      "start": 4531.12,
+      "end": 4548.12,
+      "text": "The trade idea generation process does also require statistical processing and rigor, but it also requires lateral thinking, creativity, imagination and a lot of common sense."
+    },
+    {
+      "start": 4548.12,
+      "end": 4560.12,
+      "text": "Without a trader having a constant stream of high quality trade ideas, you will just suffocate and die."
+    },
+    {
+      "start": 4560.12,
+      "end": 4563.12,
+      "text": "Trade ideas are your oxygen as a trader."
+    },
+    {
+      "start": 4563.12,
+      "end": 4576.12,
+      "text": "So we're now going to move on to the most important stage of the PTM video series, the bottom up fundamental trade idea generation."
+    },
+    {
+      "start": 4576.12,
+      "end": 4585.12,
+      "text": "And we're going to start with quantitative processing, then move on to qualitative processing and catalysts."
+    },
+    {
+      "start": 4585.12,
+      "end": 4591.12,
+      "text": "So let's get stuck into it, guys, and I'll see you back at the desk in the next video."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

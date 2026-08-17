@@ -1,0 +1,5814 @@
+1
+00:00:00,000 --> 00:00:29,980
+Okay, guys, welcome back to the desk
+again. So in the last video, we looked at
+the mechanics of long idea processing.
+Then Chris showed you how to process
+sector and stock data and each of the
+steps that you would go through to
+identify positive and negative outliers.
+And of course, potential. So the key word
+there, guys, potential, long and short
+outliers. So the key word there, guys,
+potential, long and short outliers.
+
+2
+00:00:30,000 --> 00:00:59,980
+Now, long idea processing. What did we
+actually do there? Well, we identified all
+of the earnings growth profiles for
+forward-looking earnings growth estimates,
+expectations, as said by research analysts
+in the market. So this is our earnings
+growth one number and our earnings growth
+two number. And we overlaid this with our
+own requirements.
+
+3
+00:01:00,000 --> 00:01:29,880
+requirements to have the market on our
+side. And we rank the earnings growth
+profile estimates in preference for
+growth. So we then, of course, take that
+analysis and we apply it to a sector
+whenever we are processing the data in a
+sector. And Chris, of course, showed you
+with the spreadsheet class, how to
+download the data and
+
+4
+00:01:29,880 --> 00:01:59,560
+process it and process it with best
+practices steps. In future, what you're
+going to be doing is you're going to
+become very, very familiar with all of
+these earnings growth profiles. And
+whenever you're processing, they're going
+to always be in the back of your mind. So
+you will naturally go through the
+processes very, very quickly. And you'll
+just get better and better at this.
+
+5
+00:01:59,760 --> 00:02:29,500
+At using the earnings growth profiles,
+ranking them with preference and ranking
+stocks with preference to their growth
+when you're processing data. So
+eventually, you'll end up doing this
+without thinking about it too much. And it
+becomes an autopilot situation. So you can
+probably see where this is going now,
+guys. Yes, conscious competence.
+
+6
+00:02:29,640 --> 00:02:36,740
+You're going to become competent at doing
+this. Practice the processes over and over
+and over
+
+7
+00:02:36,740 --> 00:02:43,480
+until you get good at it. And of course,
+get used to it and you start doing it
+naturally
+
+8
+00:02:43,480 --> 00:02:51,520
+without thinking about it too much. You
+will start identifying opportunities
+without thinking
+
+9
+00:02:51,520 --> 00:02:57,260
+about the earnings growth profiles too
+much. You'll end up doing it naturally.
+Now, we're going to
+
+10
+00:02:57,260 --> 00:03:05,900
+move on to mechanics now of short trade
+idea processing. We're going to take the
+same approach
+
+11
+00:03:05,900 --> 00:03:13,220
+by systematically going through earnings
+growth profiles. But now we're looking at
+them through a
+
+12
+00:03:13,220 --> 00:03:20,780
+short lens, which requires actually a very
+different approach. In the video after
+that,
+
+13
+00:03:21,000 --> 00:03:29,040
+what we're going to be looking at is
+turnaround stories and value traps. And
+we're going to learn
+
+14
+00:03:29,640 --> 00:03:38,280
+what to stay away from and what could be
+opportunistic in that space. Then, in the
+video after that,
+
+15
+00:03:38,280 --> 00:03:46,920
+we're going to be looking at the most
+common mistakes in data mining and
+processing. So, in the quant
+
+16
+00:03:46,920 --> 00:03:55,560
+phase, the mistakes that are commonly made
+by retail traders in the quant phase, when
+data mining and
+
+17
+00:03:55,560 --> 00:04:02,680
+processing during the bottom-up process.
+This is actually going to help you a lot
+in cementing the
+
+18
+00:04:02,680 --> 00:04:11,240
+processes that Chris taught you in the
+previous video. So, let's shoot over to
+the next video and I'll see you
+
+19
+00:04:11,240 --> 00:04:13,480
+back at the desk a bit later on.
+
+20
+00:04:19,880 --> 00:04:29,320
+Okay, so we are back at the screen. Video
+number 26. We're going to continue now
+with our trade idea
+
+21
+00:04:29,320 --> 00:04:38,200
+generation processes. And we're going to
+be looking at the mechanics of short trade
+ideas. We are again
+
+22
+00:04:38,200 --> 00:04:48,680
+going to be looking at percentage earnings
+growth as a filtering metric within the
+quantitative phase of the
+
+23
+00:04:48,680 --> 00:04:58,120
+overall bottom-up process. And here,
+again, we have our quantitative and
+qualitative dashboard as a
+
+24
+00:04:58,120 --> 00:05:05,960
+reference point as to the entire bottom-up
+process. So, on the left-hand side, we're
+going to be focusing again,
+
+25
+00:05:05,960 --> 00:05:13,400
+like in the last video on earnings growth,
+except in the last video, we looked at
+longs. In this video,
+
+26
+00:05:13,400 --> 00:05:21,400
+we're going to be looking at shorts. In
+terms of the assumptions that we're going
+to make in the
+
+27
+00:05:21,400 --> 00:05:29,560
+backdrop of establishing a portfolio bias,
+well, in the previous video, we looked at
+the quantitative
+
+28
+00:05:29,560 --> 00:05:37,640
+processes that pro-traders focus on at the
+stock level when we're generating
+potential long ideas.
+
+29
+00:05:37,640 --> 00:05:47,080
+And we assumed a bullish macroeconomic
+view and a net long portfolio bias. So, we
+assumed that you
+
+30
+00:05:47,080 --> 00:05:57,160
+recognized that the world is in a cyclical
+upswing, that you're forecasting real GDP
+expansion with Fed
+
+31
+00:05:57,160 --> 00:06:04,600
+target inflation intact and that your
+portfolio bias is net long and you want to
+be
+
+32
+00:06:04,600 --> 00:06:13,160
+aggressively long growth stocks in your
+portfolio. In this video, we're going to
+assume the same. However,
+
+33
+00:06:13,160 --> 00:06:21,480
+we're looking for shorts against longs
+that are in that portfolio. And this is a
+big lesson in itself.
+
+34
+00:06:21,560 --> 00:06:31,160
+Because at any one moment in time in the
+future, even if you want to be
+aggressively long growth names,
+
+35
+00:06:31,160 --> 00:06:40,040
+because you have a bullish predisposition,
+you must always, always, always, always
+still be seeking
+
+36
+00:06:40,040 --> 00:06:49,320
+out shorts and seeking out shorts that
+will go down in value, even if the overall
+stock market goes up.
+
+37
+00:06:50,520 --> 00:06:57,560
+And the opposite also holds true. Even if
+you want to be aggressively short growth
+names,
+
+38
+00:06:57,560 --> 00:07:05,000
+because you have a bearish predisposition,
+you must always be seeking out longs,
+
+39
+00:07:05,000 --> 00:07:12,680
+and seeking out longs that will go up in
+value, even if the overall stock market
+ends up going down.
+
+40
+00:07:14,040 --> 00:07:21,560
+As traders and portfolio managers, we
+can't just be naked long or short
+everything and be 100%
+
+41
+00:07:21,560 --> 00:07:29,000
+100% in one direction. This is a surefire
+way to blowing up your trading account.
+
+42
+00:07:30,600 --> 00:07:39,080
+Now, just as a reminder, we always want to
+be going where the juice is. So remember,
+
+43
+00:07:39,880 --> 00:07:49,960
+we have our entire US stock market that
+encompasses over 2200 stocks. Within the
+stock market, we have our
+
+44
+00:07:49,960 --> 00:07:58,840
+industry sectors that have both cyclical
+and defensive characteristics. And within
+all of those sectors,
+
+45
+00:07:58,840 --> 00:08:06,120
+we have different types of stocks that
+exhibit different types of
+characteristics. We have growth
+
+46
+00:08:06,120 --> 00:08:14,600
+names, we have X growth names, and we have
+value names. On the short side, we're
+looking to be short,
+
+47
+00:08:14,600 --> 00:08:23,240
+X growth names, and potentially value
+names or value traps. On the long side, in
+the previous video,
+
+48
+00:08:23,240 --> 00:08:28,760
+of course, of course, of course, what do
+we like? Well, we like what all money in
+the stock market likes,
+
+49
+00:08:28,760 --> 00:08:38,920
+which is growth. So on the long side, we
+seek to be long growth names. And on the
+short side, we seek
+
+50
+00:08:38,920 --> 00:08:50,840
+to be short, X growth names, and
+potentially what we call value traps. So
+whether it's X growth or value trap,
+
+51
+00:08:51,560 --> 00:09:00,520
+and regardless of what sector the stock is
+in, we always want to be optimizing in any
+GDP growth
+
+52
+00:09:00,520 --> 00:09:10,920
+environment. So regardless of whether GDP
+is growing or contracting, we want to be
+short stocks that go
+
+53
+00:09:10,920 --> 00:09:19,960
+down in value. And we want to be short
+stocks that underperform the sector and
+the market in any GDP
+
+54
+00:09:19,960 --> 00:09:29,400
+environment. In this example, as mentioned
+earlier, we are assuming a net long bias
+in the portfolio,
+
+55
+00:09:30,360 --> 00:09:40,440
+emanating from an analysis of the macro
+environment, where we believe that GDP
+will expand and the stock
+
+56
+00:09:40,440 --> 00:09:50,520
+market will go up. So in the backdrop, we
+have a net long portfolio bias, and we are
+long growth names
+
+57
+00:09:50,520 --> 00:10:00,120
+in the portfolio. And we are seeking to
+add shorts to that portfolio. Now, similar
+to the previous video,
+
+58
+00:10:00,680 --> 00:10:10,280
+where we looked at those 10 earnings
+growth profiles through the lens of long
+ideas, so long idea
+
+59
+00:10:10,280 --> 00:10:18,440
+processing. In this video, we're going to
+be looking at various earnings growth
+profiles, but looking at them
+
+60
+00:10:18,440 --> 00:10:24,200
+through the lens of short idea processing.
+And you can go into the download section,
+
+61
+00:10:24,760 --> 00:10:32,120
+and download the spreadsheet called
+earnings growth profiles for shorts. And
+you can see all of the
+
+62
+00:10:32,120 --> 00:10:40,520
+earnings growth profiles in that
+spreadsheet that we're going to look at
+here. But first, we need to talk
+
+63
+00:10:41,400 --> 00:10:51,560
+about some of the mechanics of potential
+short trade ideas, some technical
+situations, and some good habits.
+
+64
+00:10:51,560 --> 00:11:01,720
+So if you recall, from the previous video,
+with our market cap filters, with short
+ideas, you need to be
+
+65
+00:11:01,720 --> 00:11:13,560
+concentrating on the $20 billion plus
+market cap space. From a short
+perspective, from a revenue perspective,
+
+66
+00:11:13,560 --> 00:11:22,760
+perspective, from an earnings perspective,
+a large cap or mega cap stock has more
+potential to halve once it
+
+67
+00:11:22,760 --> 00:11:32,680
+goes X growth in a lower risk way than a
+mid cap, or even a small cap stock or a
+micro cap stock.
+
+68
+00:11:34,280 --> 00:11:44,840
+From a long perspective, a mid cap, say $5
+billion market cap stock has more
+potential to double and double
+
+69
+00:11:44,840 --> 00:11:54,920
+quickly than a mega cap $40 billion plus
+market cap stock. So for long ideas, if
+you recall, we need to
+
+70
+00:11:54,920 --> 00:12:05,000
+concentrate on the $3 billion to $10
+billion market cap space. For shorts, we
+need to concentrate on
+
+71
+00:12:05,000 --> 00:12:18,200
+large cap stocks that have $20 billion
+plus market cap and mega cap stocks. For
+mid caps, earnings growth is
+
+72
+00:12:18,200 --> 00:12:27,640
+generally greater than in large and mega
+caps. For shorts, we are looking to get in
+when growth is
+
+73
+00:12:27,640 --> 00:12:39,160
+slowing. So when a stock goes X growth. So
+you have to use market cap as a filter, as
+well as price earnings
+
+74
+00:12:39,160 --> 00:12:47,960
+ratio, earnings growth, and peg ratio. So
+again, we are continuing here to build out
+
+75
+00:12:47,960 --> 00:12:58,120
+a portfolio where we're using essentially
+volatility as a filter. So we have a
+portfolio that presents us
+
+76
+00:12:58,120 --> 00:13:07,880
+both acceptable risk and good opportunity
+to make money. And that, of course, as
+you've seen before,
+
+77
+00:13:07,880 --> 00:13:16,680
+was covered in the IPLT video series. If
+you haven't seen that, then I suggest you
+do register and subscribe.
+
+78
+00:13:16,680 --> 00:13:26,920
+Because again, this is how everything fits
+together. So from a portfolio volatility
+perspective, the large
+
+79
+00:13:26,920 --> 00:13:38,120
+and mega cap space is ideal for us,
+because initially, there is low volatility
+for the 20 to 60 day time
+
+80
+00:13:38,120 --> 00:13:48,360
+horizon. But because their business
+models. And they are vulnerable. When
+something happens to these companies in
+
+81
+00:13:48,360 --> 00:13:58,600
+the negative, so when they go X growth,
+that's when stocks fall and fall sharply
+and volatility increases
+
+82
+00:13:58,600 --> 00:14:05,560
+significantly. So we as traders and
+portfolio managers want to be capturing
+those moves.
+
+83
+00:14:06,840 --> 00:14:17,160
+Additionally, when we are using market
+capitalization as a quantitative filter
+for our short idea processing,
+
+84
+00:14:17,960 --> 00:14:26,280
+when we are opening a trading account for
+the first time, we want to get off to the
+best possible start.
+
+85
+00:14:27,000 --> 00:14:39,240
+If you fill your portfolio with low market
+cap shorts. So under $3 billion. And you
+have lots of longs that are over,
+
+86
+00:14:39,240 --> 00:14:50,520
+say, $40 billion. So essentially, you are
+short small caps, and long mega caps, you
+are asking for trouble.
+
+87
+00:14:50,520 --> 00:14:57,640
+So in a GDP growth environment. So in a
+GDP growth environment, for example, when
+you have a portfolio
+
+88
+00:14:57,640 --> 00:15:07,960
+bias of net long, earnings growth is
+larger and more sensitive to the business
+cycle in, for example,
+
+89
+00:15:07,960 --> 00:15:16,680
+you are short mid caps versus large and
+mega caps on average. So if you are
+building portfolios,
+
+90
+00:15:16,680 --> 00:15:27,000
+where for example, you are short a mixture
+of mid caps and small caps, and long a
+whole bunch of mega caps,
+
+91
+00:15:27,000 --> 00:15:34,680
+and you're just starting out with a new
+trading account, you are asking for
+trouble because you
+
+92
+00:15:34,680 --> 00:15:44,760
+are short on average, higher earnings up
+revenue growth versus long, lower earnings
+up revenue growth on
+
+93
+00:15:44,760 --> 00:15:55,080
+average. So you are exposing yourself to
+being short high earnings growth, and high
+revenue growth, and
+
+94
+00:15:55,080 --> 00:16:04,520
+long low earnings growth, and low revenue
+growth. You are also exposing yourself to
+short high volatility,
+
+95
+00:16:05,080 --> 00:16:13,240
+and long low volatility. So this is
+exactly the opposite of what we're trying
+to achieve here,
+
+96
+00:16:13,240 --> 00:16:21,160
+as traders, when we're building long short
+portfolios, you are asking for trouble.
+And as time goes by,
+
+97
+00:16:21,720 --> 00:16:31,000
+you will blow up. Additionally, you're
+exposing yourself to potential takeover
+risk in your portfolio.
+
+98
+00:16:31,800 --> 00:16:40,520
+Because if you're short, a whole bunch of
+low market cap stocks, and long a bunch of
+high mega cap,
+
+99
+00:16:40,520 --> 00:16:49,880
+or large cap market caps, you're exposing
+yourself to your low market cap stocks
+being taken over.
+
+100
+00:16:50,760 --> 00:16:57,640
+They are much more likely to be taken over
+mid caps than a large or mega cap.
+
+101
+00:16:59,080 --> 00:17:09,240
+Why? Because it's much easier for large
+companies to get the financing to acquire
+or take over,
+
+102
+00:17:09,240 --> 00:17:18,200
+for example, a mid cap company that
+currently has a $3 billion market cap, and
+they go and buy it for $4
+
+103
+00:17:18,200 --> 00:17:26,120
+billion or $5 billion, as in they pay a
+premium for that stock, for that company.
+It's much easier
+
+104
+00:17:26,120 --> 00:17:36,280
+to do that than to go out and raise the
+financing for a $7,500 or $150 billion
+market cap stock.
+
+105
+00:17:37,960 --> 00:17:45,080
+Additionally, large companies who are
+looking to acquire other companies, they
+are going to be more
+
+106
+00:17:45,080 --> 00:17:53,000
+attracted, like us, to growth. They are
+not going to be attracted to X growth,
+they're more likely to
+
+107
+00:17:53,000 --> 00:18:01,800
+be attracted to growth. So again, larger
+companies will be more attracted to
+smaller stocks,
+
+108
+00:18:01,800 --> 00:18:08,280
+rather than large or mega cap stocks or
+companies simply because of their growth.
+
+109
+00:18:09,400 --> 00:18:16,040
+So it's easier to get the financing on a
+much lower market cap because of the chip
+size,
+
+110
+00:18:16,040 --> 00:18:22,760
+the size of the deal versus the size of
+the deal of a large or mega cap. But also,
+
+111
+00:18:23,640 --> 00:18:29,640
+using that financing, companies would
+rather acquire growth, they are more
+attracted to growth,
+
+112
+00:18:29,640 --> 00:18:38,920
+like us. But also, just from a risk
+perspective, from a trader's perspective,
+when we're looking to
+
+113
+00:18:38,920 --> 00:18:48,200
+short stocks, let's have a look at a
+takeover risk example. So let's say you
+have a trading account of
+
+114
+00:18:48,200 --> 00:18:58,520
+$15,000 deposited on margin, and you have
+the ability to leverage this four times.
+So you can have a
+
+115
+00:18:58,520 --> 00:19:08,440
+$60,000 gross exposure portfolio. And
+let's say in the portfolio, we choose to
+have eight positions of
+
+116
+00:19:08,440 --> 00:19:18,040
+$7,500 notional exposure. And within those
+eight, we have five longs and three
+shorts,
+
+117
+00:19:18,040 --> 00:19:25,720
+but we choose to be net long, five large
+and mega caps, and short three mid caps.
+
+118
+00:19:27,080 --> 00:19:37,960
+What actually happens if, for example, we
+short $7,500 of a stock that has a market
+cap of, say,
+
+119
+00:19:37,960 --> 00:19:46,520
+$3 billion. So it's defined as a mid cap,
+market cap $3 billion. And the company is
+taken over for,
+
+120
+00:19:46,520 --> 00:19:56,280
+say, $4.5 billion value. And the
+announcement happens when the stock market
+is closed. That's a 50%
+
+121
+00:19:56,280 --> 00:20:05,240
+premium to the market cap of yesterday.
+The stock will simply go up 50% without
+you being able to get
+
+122
+00:20:05,240 --> 00:20:18,120
+out. So you're going to be down $3,750 on
+the trade. So on a total gross exposure
+number of $60,000,
+
+123
+00:20:18,920 --> 00:20:32,440
+you are down $3,750, which is a 6.25% loss
+on the gross exposure number. But on the
+margin number of $15,000,
+
+124
+00:20:32,440 --> 00:20:46,040
+that is a 25% loss on your margin. This is
+an irrecoverable position for an account
+size that's this small.
+
+125
+00:20:46,040 --> 00:20:50,680
+It's going to take the risk that's this
+small. It's going to take you at least 6
+months, possibly even 12
+
+126
+00:20:50,680 --> 00:20:58,840
+months to make this money back in the
+portfolio. This type of risk has to be
+eliminated from your
+
+127
+00:20:58,840 --> 00:21:11,160
+portfolio immediately. So from the outset,
+you must do, you have to place a market
+cap filter on your short
+
+128
+00:21:11,160 --> 00:21:21,800
+ideas of $20 billion minimum. So only go
+short, large and mega cap stocks to begin
+with. When you're making
+
+129
+00:21:21,800 --> 00:21:31,560
+money six to 12 months down the line, only
+then are you allowed to get clever, but
+not in the beginning.
+
+130
+00:21:31,560 --> 00:21:37,720
+You've not earned the right yet to be
+clever because you haven't made money.
+
+131
+00:21:39,640 --> 00:21:50,360
+Now coincidentally, this is why good
+shorts are much harder to find than good
+longs in a typical positive
+
+132
+00:21:50,920 --> 00:22:01,480
+GDP environment. Why? Because we have to
+place a market cap filter of $20 billion
+from the outset.
+
+133
+00:22:02,520 --> 00:22:12,760
+And just from a market cap perspective,
+there's going to be less of these stocks
+available in the market.
+
+134
+00:22:13,400 --> 00:22:25,080
+So the opportunity set is just smaller.
+Additionally, within the opportunity set
+of the $20 billion plus
+
+135
+00:22:25,080 --> 00:22:36,280
+market cap market cap stocks available at
+any one time, we have to find fundamental
+setups that exhibit
+
+136
+00:22:37,080 --> 00:22:48,600
+characteristics of good short ideas. So
+not only is the opportunity set smaller
+than our potential long
+
+137
+00:22:48,600 --> 00:22:58,360
+stock ideas, but within the opportunity
+set, the amount of stocks that any one
+time that exhibit fundamental
+
+138
+00:22:58,360 --> 00:23:08,760
+characteristics that enable us to be short
+these stocks is much smaller. But
+remember, we are looking
+
+139
+00:23:08,760 --> 00:23:17,880
+through the lens here of a positive GDP
+environment. It's much harder to find good
+shorts in that
+
+140
+00:23:17,880 --> 00:23:32,200
+environment in a slowdown in GDP. So when
+GDP is slowing down and still positive,
+but it's going lower. Or in a GDP
+
+141
+00:23:32,840 --> 00:23:46,200
+contracting environment, it's obviously
+much easier to find shorts. But remember,
+one thing is for certain. In any GDP
+growth
+
+142
+00:23:46,200 --> 00:23:58,200
+environment, we can't simply be long 100%
+in our portfolio or short 100% in our
+portfolio. We have to
+
+143
+00:23:58,200 --> 00:24:07,000
+have either a net long or net short bias
+or a neutral bias. In this example, when
+we're looking at a typical
+
+144
+00:24:07,000 --> 00:24:15,400
+positive GDP environment, we still have to
+have shorts in our portfolio. And we have
+to do the work.
+
+145
+00:24:15,400 --> 00:24:27,400
+We have to generate as best we can, good
+short ideas, even in the typical positive
+GDP environment, and we must
+
+146
+00:24:27,400 --> 00:24:39,400
+have short positions in our portfolio.
+Now, similar to when we were looking at
+long ideas, we do have an ideal
+
+147
+00:24:39,400 --> 00:24:51,400
+ideal price earnings ratio set up for
+short ideas. So our backdrop, what we want
+to be having is something like this
+
+148
+00:24:51,400 --> 00:25:01,400
+for our PE profile for the stock relative
+to the sector. So when you're filtering
+for PE, you are looking for
+
+149
+00:25:01,400 --> 00:25:13,400
+for stocks that have a PE that's on a
+discount to the sector in both period one
+and in period two. But in
+
+150
+00:25:13,400 --> 00:25:23,400
+period two, the PE two, because we're
+using current stock price divided by EPS,
+we want the PE two to be
+
+151
+00:25:23,400 --> 00:25:35,400
+higher for the stock relative to its PE
+one. Why? Because it means that EPS is
+going lower in PE two
+
+152
+00:25:35,400 --> 00:25:45,400
+versus PE one. So we have lower EPS in PE
+two versus PE one, and therefore negative
+earnings growth.
+
+153
+00:25:45,400 --> 00:25:53,400
+Additionally, in this earnings growth
+profile relative to the sector, you'll see
+with the sector that the
+
+154
+00:25:53,400 --> 00:26:01,400
+PE for PE two is lower than PE one,
+meaning that the sector is actually
+exhibiting some sort of growth.
+
+155
+00:26:01,400 --> 00:26:13,400
+So that means that the average mean
+earnings per share of the sector is
+actually growing slightly from
+
+156
+00:26:13,400 --> 00:26:23,400
+period one to period two. Now it could be
+even better, for example, if the EPS, the
+mean EPS of the sector is
+
+157
+00:26:23,400 --> 00:26:33,400
+either the same or lower for the second
+period versus the first period. But what
+we've done here is
+
+158
+00:26:33,400 --> 00:26:43,400
+exhibited a case where it's just slightly
+better. So the PE for period number two is
+just slightly lower
+
+159
+00:26:43,400 --> 00:26:53,400
+than PE one. And that's kind of the
+minimum ideal PE setup or PE situation for
+the sector.
+
+160
+00:26:53,400 --> 00:27:03,400
+And then with the stock relative to that,
+we want lower in both periods. And on top
+of that, for the stock itself,
+
+161
+00:27:03,400 --> 00:27:15,400
+we want to see EPS lower in period two
+versus period one. Now, just as a side
+note, this is a situation where
+
+162
+00:27:15,400 --> 00:27:27,400
+EPS is positive in both periods for both
+the stock and for the sector. So yes, we
+will be looking at
+
+163
+00:27:27,400 --> 00:27:39,400
+earnings growth profiles of loss making
+companies. But here we are looking at a
+company that is in profit,
+
+164
+00:27:39,400 --> 00:27:51,400
+but their profit, their EPS is going
+lower. And this is the ideal setup for us
+in terms of EPS and price
+
+165
+00:27:51,400 --> 00:28:03,400
+earnings ratio for the stock versus the
+sector. So in this situation, the stock is
+potentially going X growth
+
+166
+00:28:03,400 --> 00:28:15,400
+in a sector that is growing slightly. So
+this is the backdrop, the minimum backdrop
+that we are looking for,
+
+167
+00:28:15,400 --> 00:28:25,400
+the ideal price earnings ratio set up when
+we're processing for short trade ideas.
+When we move on to earnings
+
+168
+00:28:25,400 --> 00:28:33,400
+growth, it becomes a slightly different
+story into how we analyze earnings growth
+through the filter of a
+
+169
+00:28:33,400 --> 00:28:43,400
+short lens when compared to when we do
+this exercise, looking at earnings growth
+profiles through a long lens.
+
+170
+00:28:43,400 --> 00:28:53,400
+So if you recall, when we looked at
+sequentially positive earnings growth,
+when we looked at long ideas as
+
+171
+00:28:53,400 --> 00:29:03,400
+the ideal situation, what did we have? We
+had an earnings growth one percentage that
+was higher than the sector,
+
+172
+00:29:03,400 --> 00:29:17,400
+higher than the mean average. And then in
+EG2, we again had a stock earnings growth
+number that was higher than the sector,
+
+173
+00:29:17,400 --> 00:29:31,400
+but in earnings growth two for the stock
+itself, it was higher than in earnings
+growth one. So we had a sequentially
+positive earnings growth number for the
+stock that is outperforming the sector,
+
+174
+00:29:31,400 --> 00:29:59,400
+that is outperforming the sector in both
+periods. Now on paper, if we just reverse
+that situation and we say, okay, we just
+turn this upside down. And that's what
+we're probably looking for for shorts.
+What do we get? Well, we get in period
+one, an earnings growth number that is
+negative.
+
+175
+00:29:59,400 --> 00:30:19,400
+And worse than the earnings growth
+percentage in period number one is
+negative. And then in period number two,
+it's negative again, and it's accelerating
+to the downside. And again, it's
+underperforming the sector. So the stock's
+earnings growth is negative in both
+periods.
+
+176
+00:30:19,400 --> 00:30:43,400
+And it's getting more negative in period
+two versus period one. And in both
+periods, it's underperforming the sector.
+So on paper, what we're essentially
+getting here is sequentially negative
+below sector average earnings growth
+momentum.
+
+177
+00:30:43,400 --> 00:30:52,400
+The problem is, the problem is, is that
+with shorts, the earnings growth setup can
+look attractive on paper.
+
+178
+00:30:52,400 --> 00:31:03,400
+But when you actually go into the market
+and have a look at stock prices that
+exhibit this scenario,
+
+179
+00:31:03,400 --> 00:31:19,400
+they're probably already going to be down
+quite a lot. And yes, on the flip side,
+when we're looking at long ideas that
+exhibit sequentially positive above sector
+average earnings growth momentum,
+
+180
+00:31:19,400 --> 00:31:26,400
+when we pull up the stock prices of those
+companies, you're probably going to see
+the companies up quite a lot.
+
+181
+00:31:26,400 --> 00:31:41,400
+But there is sometimes a difference in
+that when we're looking at long ideas and
+we're looking at valuations and earnings
+growth and we're looking at price.
+
+182
+00:31:41,400 --> 00:31:56,400
+We saw in the previous video that for a
+company to maintain its same PE ratio,
+that the company in the positive would
+have to be hitting its earnings growth
+numbers,
+
+183
+00:31:56,400 --> 00:32:04,400
+its EPS, and the stock can continue
+trading on the same PE, the same multiple
+in the second period.
+
+184
+00:32:04,400 --> 00:32:19,400
+In that situation, the market continues to
+reward the company with a premium to the
+sector for delivering continuously on its
+results, on its operations.
+
+185
+00:32:19,400 --> 00:32:35,400
+Yes, the stock in the journey with
+sequentially positive above sector average
+earnings growth momentum in that journey
+from period one to period two, it can be
+volatile.
+
+186
+00:32:35,400 --> 00:32:51,400
+But ultimately, if the company keeps
+delivering, it's highly likely that money
+is going to continuously reward the stock,
+reward the company, and the company will
+continuously trade on a premium to the
+sector.
+
+187
+00:32:51,400 --> 00:33:11,400
+The differences with shorts when we're
+looking at sequentially negative below
+sector average earnings growth momentum,
+it's likely that when we pull up this type
+of earnings growth profile and then go and
+look at the stock price,
+
+188
+00:33:11,400 --> 00:33:19,400
+the stock price, it's likely that the
+stock price is going to be down
+potentially quite a lot already.
+
+189
+00:33:19,400 --> 00:33:28,400
+And management is going to be doing things
+in an attempt to stop the bleed, to stop
+the earnings decline.
+
+190
+00:33:28,400 --> 00:33:45,400
+So there will be dynamic actions occurring
+potentially in the market when we have a
+static on paper earnings growth profile in
+a stock that can already be down quite a
+lot.
+
+191
+00:33:45,400 --> 00:34:04,400
+And if a stock is already down quite a lot
+and it's exhibiting this type of earnings
+growth profile, then stocks, when they get
+to certain levels, can actually represent
+to the market value.
+
+192
+00:34:04,400 --> 00:34:22,400
+And this type of value appraisal comes
+from other players in the market,
+investors who are looking at both the
+balance sheet and the operation and coming
+to the conclusion that at a certain level,
+a stock is value.
+
+193
+00:34:22,400 --> 00:34:38,400
+So we have to look at sequentially
+negative below sector average earnings
+growth momentum in the same way that we
+look at sequentially positive above sector
+average earnings growth momentum.
+
+194
+00:34:38,400 --> 00:34:51,400
+This earnings growth set up, this earnings
+growth profile on paper looks ideal, but
+it is static and only on paper.
+
+195
+00:34:51,400 --> 00:34:57,400
+And things can change and things are
+dynamic day to day in the market.
+
+196
+00:34:57,400 --> 00:35:17,400
+And we have to be very careful that we
+don't, for example, short stocks that are
+down a lot already and management are
+doing things to turn around the company,
+to turn around the fortunes of the company
+and turn around earnings growth.
+
+197
+00:35:17,400 --> 00:35:24,400
+And on top of that, stocks are not at a
+level where they represent value, where
+investors are stepping in.
+
+198
+00:35:24,400 --> 00:35:41,400
+So sequentially negative below sector
+average earnings growth momentum looks
+ideal on paper, but it is hard to get in
+at good levels when the market now knows
+that this is the case.
+
+199
+00:35:41,400 --> 00:35:49,400
+It's likely that stock prices have already
+moved down quite a lot.
+
+200
+00:35:49,400 --> 00:35:59,400
+So we have to be careful in our analysis
+and treat it differently to sequentially
+positive above sector average earnings
+growth momentum.
+
+201
+00:35:59,400 --> 00:36:11,400
+Additionally, when we are identifying X
+growth stocks, this does come with some
+caveats.
+
+202
+00:36:11,400 --> 00:36:21,400
+When we are identifying X growth stocks,
+it means that the stock is very clearly
+beyond its growth phase.
+
+203
+00:36:21,400 --> 00:36:30,400
+When you look at further metrics like
+revenue growth, for example, the stock may
+be still in its growth phase.
+
+204
+00:36:30,400 --> 00:36:40,400
+And the management operating plan is to
+choose to reinvest revenue and therefore
+earnings into growing the top line.
+
+205
+00:36:40,400 --> 00:36:47,400
+So in this situation, the stock is a
+revenue growth story.
+
+206
+00:36:47,400 --> 00:36:56,400
+So don't think because you see negative
+earnings growth in an earnings growth
+profile that a stock is automatically a
+short.
+
+207
+00:36:56,400 --> 00:36:57,400
+It isn't.
+
+208
+00:36:57,400 --> 00:36:58,400
+It isn't.
+
+209
+00:36:58,400 --> 00:37:00,400
+You always have to do further work.
+
+210
+00:37:00,400 --> 00:37:02,400
+More work is required.
+
+211
+00:37:02,400 --> 00:37:08,400
+If this happens to you in your
+identification phase in the quant for
+short ideas.
+
+212
+00:37:08,400 --> 00:37:11,400
+If this happens to you, it's okay.
+
+213
+00:37:11,400 --> 00:37:23,400
+What you've done is, is you've just
+identified a growth stock by going through
+the process and you've learned more about
+the stock and more about the sector.
+
+214
+00:37:23,400 --> 00:37:27,400
+This is why we have a filtering process.
+
+215
+00:37:27,400 --> 00:37:33,400
+We are in the process phase of identifying
+potential shorts.
+
+216
+00:37:33,400 --> 00:37:42,400
+And sometimes when you're looking at
+shorts and you're looking at earnings
+growth profiles and looking at them
+through a short lens,
+
+217
+00:37:42,400 --> 00:37:48,400
+you're going to bump into growth stocks
+that exhibit negative earnings growth.
+
+218
+00:37:48,400 --> 00:37:55,400
+But they are still in their growth phase
+because it's all part of their management
+operating plan.
+
+219
+00:37:55,400 --> 00:38:04,400
+So don't think automatically that because
+you see negative earnings growth, that a
+stock is automatically a short.
+
+220
+00:38:04,400 --> 00:38:05,400
+It just isn't.
+
+221
+00:38:05,400 --> 00:38:07,400
+You need to do further work.
+
+222
+00:38:07,400 --> 00:38:19,400
+On top of this, you need to always be
+aware about something that we call in the
+processing phase, the law of small
+numbers.
+
+223
+00:38:19,400 --> 00:38:31,400
+We're going to be covering this later when
+we discuss processing mistakes in the
+quant phase a bit later in the PTM video
+series.
+
+224
+00:38:31,400 --> 00:38:41,400
+Now, similar to when we looked at long
+idea processing in the quant phase and we
+looked at earnings growth profiles there,
+
+225
+00:38:41,400 --> 00:38:47,400
+we're going to be looking at a number of
+earnings growth profiles for short idea
+processing.
+
+226
+00:38:47,400 --> 00:38:59,400
+And the first five we're going to look at
+are all in a situation where they have
+positive EPS in both periods.
+
+227
+00:38:59,400 --> 00:39:11,400
+Now, we've already seen our first one, the
+ideal scenario on paper, which is the
+sequentially negative below sector average
+earnings growth momentum.
+
+228
+00:39:11,400 --> 00:39:18,400
+We're going to look at the others as well,
+case two, three, four and five, and then
+there'll be more cases later.
+
+229
+00:39:18,400 --> 00:39:28,400
+So case number two, we have negative
+earnings growth and earnings growth that's
+less negative in the second period.
+
+230
+00:39:28,400 --> 00:39:31,400
+And that's both below sector average.
+
+231
+00:39:31,400 --> 00:39:40,400
+We have flat earnings growth in the first
+period, then going negative and both below
+sector average for the third case.
+
+232
+00:39:40,400 --> 00:39:50,400
+For case number four, we have positive
+earnings growth that's then going flat to
+negative and below sector average.
+
+233
+00:39:50,400 --> 00:39:59,400
+And then case number five, we have
+negative earnings growth in period one
+that then goes to a flat or positive
+position.
+
+234
+00:39:59,400 --> 00:40:02,400
+And again, both below sector average.
+
+235
+00:40:02,400 --> 00:40:06,400
+So let's have a look at these visually.
+
+236
+00:40:06,400 --> 00:40:12,400
+We've seen our first one, the sequentially
+negative below sector average earnings
+growth momentum.
+
+237
+00:40:12,400 --> 00:40:15,400
+On paper, the ideal setup.
+
+238
+00:40:15,400 --> 00:40:17,400
+In reality, it may not be.
+
+239
+00:40:17,400 --> 00:40:22,400
+The next one is probably the next best
+thing that is actionable.
+
+240
+00:40:22,400 --> 00:40:34,400
+Negative earnings growth in period one and
+negative earnings growth in period two and
+both below the sector average.
+
+241
+00:40:34,400 --> 00:40:41,400
+And in this situation, we have a sector
+average that has positive earnings growth.
+
+242
+00:40:41,400 --> 00:40:51,400
+And if you think about this one compared
+to our sequentially negative earnings
+growth, if you think about this one in
+comparison,
+
+243
+00:40:51,400 --> 00:41:03,400
+if the sector is the same, but we have a
+stock like this where we have negative
+earnings growth and the earnings growth
+situation is still negative in period two.
+
+244
+00:41:03,400 --> 00:41:08,400
+But the rate of the earnings growth
+decline is slowing.
+
+245
+00:41:08,400 --> 00:41:18,400
+This could potentially provide a better
+entry point or better short than case
+number one.
+
+246
+00:41:18,400 --> 00:41:20,400
+Why would this be the case?
+
+247
+00:41:20,400 --> 00:41:32,400
+Well, it could be that the market is or
+analysts in the market are hoping for some
+sort of slowdown in the rate of earnings
+growth decline.
+
+248
+00:41:32,400 --> 00:41:37,400
+And that may not materialize.
+
+249
+00:41:37,400 --> 00:41:38,400
+It may do.
+
+250
+00:41:38,400 --> 00:41:39,400
+It may not.
+
+251
+00:41:39,400 --> 00:41:41,400
+But we have to do more work.
+
+252
+00:41:41,400 --> 00:41:56,400
+The point is, is that this type of
+earnings growth profile is not as bearish,
+if you like, on paper as case number one
+with the sequentially negative earnings
+growth momentum.
+
+253
+00:41:56,400 --> 00:42:08,400
+So with a bit of hope priced into the
+stock that the earnings growth decline
+could be decreasing.
+
+254
+00:42:08,400 --> 00:42:23,400
+With a little bit of hope priced into the
+stock, this could potentially provide us
+with a better entry point, a more timely
+short, because the situation could get
+even worse than it is now.
+
+255
+00:42:23,400 --> 00:42:33,400
+But of course, as with anything else where
+we're in the quant phase, more work has to
+be done.
+
+256
+00:42:33,400 --> 00:42:46,400
+Moving on to case number three, we have a
+situation here where the earnings growth
+in period one is actually slightly
+positive, but below sector average.
+
+257
+00:42:46,400 --> 00:42:55,400
+And then in period two, the earnings
+growth goes very negative and is below
+sector average.
+
+258
+00:42:55,400 --> 00:42:59,400
+And in this case, we need to be quite
+careful.
+
+259
+00:42:59,400 --> 00:43:06,400
+We need to be careful here because we need
+to analyze what is really going on at the
+company.
+
+260
+00:43:06,400 --> 00:43:15,400
+There's obviously something that analysts
+have flagged for period two that is going
+to be very bearish for earnings growth.
+
+261
+00:43:15,400 --> 00:43:33,400
+Therefore, we need to work out whether
+this is actually operational and it's a
+material change in business conditions or
+it's some sort of technical situation
+through, for example, accounting.
+
+262
+00:43:33,400 --> 00:43:43,400
+So there could be, for example, a big
+expected one off charge that's going to
+occur in the following year that's going
+to hit earnings.
+
+263
+00:43:43,400 --> 00:43:47,400
+And this is a very well flagged and
+expected by the market.
+
+264
+00:43:47,400 --> 00:44:02,400
+So we have to understand that in those
+situations, the market will look through
+it or potentially look through it because
+it's not a material change in business
+conditions to the negative.
+
+265
+00:44:02,400 --> 00:44:16,400
+But when we pull up this type of earnings
+growth profile, we obviously on paper know
+for sure that earnings growth is getting
+hit considerably in the following year.
+
+266
+00:44:16,400 --> 00:44:23,400
+Therefore, something bearish is happening
+to earnings with the PE backdrop that
+we've got.
+
+267
+00:44:23,400 --> 00:44:30,400
+If that's intact as well, it means the
+market is punishing the stock.
+
+268
+00:44:30,400 --> 00:44:33,400
+It's trading on a discount to the sector.
+
+269
+00:44:33,400 --> 00:44:40,400
+And we have to do further investigation to
+work out whether this is operational or
+technical.
+
+270
+00:44:40,400 --> 00:44:48,400
+So in this case, we call this flat, then
+going negative below sector average,
+
+271
+00:44:48,400 --> 00:44:57,400
+even if it's a tiny positive of say 1%
+earnings growth, it's essentially flat.
+
+272
+00:44:57,400 --> 00:45:04,400
+Looking at our fourth case, we have in
+earnings growth period one percentage,
+
+273
+00:45:04,400 --> 00:45:10,400
+we have positive earnings growth, which is
+below sector average.
+
+274
+00:45:10,400 --> 00:45:24,400
+And then we have a situation in period two
+where earnings growth percentage is going
+to flat or negative and below sector
+average again.
+
+275
+00:45:24,400 --> 00:45:41,400
+Case four, similar to case three is
+showing us that the market is expecting
+earnings growth to be positive in period
+one or flat to positive in period one,
+
+276
+00:45:41,400 --> 00:45:43,400
+like in case number three.
+
+277
+00:45:43,400 --> 00:45:50,400
+But it's going flat to negative in period
+two.
+
+278
+00:45:50,400 --> 00:45:59,400
+So the market is expecting an earnings
+growth decline for the second period
+relative to period one.
+
+279
+00:45:59,400 --> 00:46:13,400
+So again, similar to case number three, in
+case number four, we must do further work
+to figure out what this expectation in
+period two is all about.
+
+280
+00:46:13,400 --> 00:46:18,400
+Why is there an earnings growth decline
+expected by the market?
+
+281
+00:46:18,400 --> 00:46:20,400
+What is the reason behind it?
+
+282
+00:46:20,400 --> 00:46:27,400
+Is it genuinely operational where it's a
+material slowdown in business conditions?
+
+283
+00:46:27,400 --> 00:46:30,400
+Or is it technical?
+
+284
+00:46:30,400 --> 00:46:40,400
+We have to go and figure that out and make
+sure we understand what's behind the
+earnings growth decline that's expected by
+the market.
+
+285
+00:46:40,400 --> 00:47:03,400
+Now, what you will notice as we've gone
+through case number one, two, three and
+four is that you're looking at earnings
+growth profiles that are potentially at
+various stages of a company going X
+growth.
+
+286
+00:47:03,400 --> 00:47:04,400
+Case number one.
+
+287
+00:47:04,400 --> 00:47:14,400
+Case number one, where we had sequentially
+negative earnings growth momentum that is
+below sector average in both periods.
+
+288
+00:47:14,400 --> 00:47:24,400
+That could be a situation where the stock
+has gone X growth and it is late stage X
+growth.
+
+289
+00:47:24,400 --> 00:47:37,400
+And when you've seen case number two,
+three and four, these cases are
+potentially cases that are earlier stages
+of a company going X growth.
+
+290
+00:47:37,400 --> 00:47:56,400
+So it can be the situation that case
+number four, for example, is at a much
+earlier stage of going X growth versus,
+for example, case number one or even case
+number two.
+
+291
+00:47:56,400 --> 00:48:09,400
+So the stock prices may not have moved yet
+to reflect the full discount that the
+stock could potentially trade on in the
+future.
+
+292
+00:48:09,400 --> 00:48:17,400
+So when we're looking at all of these
+cases, we have to ask ourselves the
+obvious questions.
+
+293
+00:48:17,400 --> 00:48:22,400
+Has the company actually gone X growth?
+
+294
+00:48:22,400 --> 00:48:25,400
+That is the most obvious question to ask.
+
+295
+00:48:25,400 --> 00:48:40,400
+And then to answer that question, we have
+to look at the operation and find out if
+there is a genuine material negative
+change in business conditions.
+
+296
+00:48:40,400 --> 00:49:00,400
+And then to put it into context from a
+short idea processing perspective, we have
+to ask ourselves the next question, if it
+is X growth, how far along are we in terms
+of the stock being X growth?
+
+297
+00:49:00,400 --> 00:49:14,400
+And what is reflected in the share price,
+how much has the stock gone down already
+to reflect how far the stock or company is
+down the line in terms of going X growth?
+
+298
+00:49:15,400 --> 00:49:18,400
+And are we early to the trade?
+
+299
+00:49:18,400 --> 00:49:23,400
+Are we early to the party or are we late
+to the trade?
+
+300
+00:49:23,400 --> 00:49:25,400
+Are we late to the party?
+
+301
+00:49:26,400 --> 00:49:46,400
+Which brings us nicely onto our fifth
+case, which is a situation where earnings
+growth in this profile is negative in
+period one and then positive in period
+two, but below sector average in both
+periods.
+
+302
+00:49:46,400 --> 00:49:56,400
+And this situation is like what we looked
+at when we were looking at long idea
+processing where there's a potential
+turnaround story.
+
+303
+00:49:56,400 --> 00:50:07,400
+But there is a flip side to that coin
+because a potential turnaround story can
+also be a potential value trap.
+
+304
+00:50:07,400 --> 00:50:24,400
+So this situation here could happen in a
+company going X growth in the early stage,
+but it could also be a company that has
+gone X growth and has been X growth for a
+while.
+
+305
+00:50:24,400 --> 00:50:33,400
+And now the actions of management are
+potentially turning around the company's
+fortune, turning around earnings.
+
+306
+00:50:33,400 --> 00:50:49,400
+If you see an earnings growth profile like
+this, where it could be early stage X
+growth, then the EG2 number could be a
+totally fictional hope number.
+
+307
+00:50:49,400 --> 00:50:53,400
+And the EG1 number is reality going
+forward.
+
+308
+00:50:53,400 --> 00:50:56,400
+So EG2 could be downgraded.
+
+309
+00:50:56,400 --> 00:51:02,400
+So earnings in the second period could be
+a hope number for analysts.
+
+310
+00:51:02,400 --> 00:51:09,400
+So that type of turnaround could just be
+very low probability or fictional.
+
+311
+00:51:09,400 --> 00:51:19,400
+In the other case where a company has been
+X growth already for a long time and is
+far down the road of being X growth.
+
+312
+00:51:19,400 --> 00:51:21,400
+The stock could be down a lot.
+
+313
+00:51:21,400 --> 00:51:31,400
+It could be down 50, 60, 70, 80% already
+underperforming massively for the last
+one, two, three years.
+
+314
+00:51:31,400 --> 00:51:48,400
+And then all of a sudden we have some
+expectation that there's going to be
+earnings growth in the following year
+after multiple quarters and a year or two
+of earnings growth decline.
+
+315
+00:51:48,400 --> 00:52:02,400
+And in this situation, this could be a
+scenario where we're looking at a value
+play where other players in the market,
+investors, are looking at a stock as a
+value play.
+
+316
+00:52:02,400 --> 00:52:08,400
+That is different to when we're looking at
+an early stage X growth stock.
+
+317
+00:52:08,400 --> 00:52:14,400
+However, the dynamic in this situation in
+the way we view it.
+
+318
+00:52:14,400 --> 00:52:29,400
+So whether it's going X growth in the
+early stage or it's been X growth for a
+while, we view this in a similar way in
+that we look at the earnings growth to
+number.
+
+319
+00:52:29,400 --> 00:52:30,400
+So next year's number.
+
+320
+00:52:30,400 --> 00:52:32,400
+So next year's number.
+
+321
+00:52:32,400 --> 00:52:36,400
+And we ask ourselves the question, is this
+real?
+
+322
+00:52:36,400 --> 00:52:37,400
+Is it genuine?
+
+323
+00:52:37,400 --> 00:52:40,400
+Is it a real turnaround or is it a trap?
+
+324
+00:52:40,400 --> 00:52:56,400
+Now, as mentioned in the previous video,
+when we looked at turnaround stories, the
+earnings growth profile of a turnaround
+story can be both opportunistic and
+dangerous.
+
+325
+00:52:56,400 --> 00:53:06,400
+So they are opportunistic in that we are
+looking at the market's expectation here
+of a turnaround.
+
+326
+00:53:06,400 --> 00:53:13,400
+And from a long perspective, it can be
+opportunistic in that the turnaround
+actually happens.
+
+327
+00:53:13,400 --> 00:53:15,400
+They execute on it.
+
+328
+00:53:15,400 --> 00:53:24,400
+Looking at it through a short lens, it is
+opportunistic in that the turnaround could
+fail.
+
+329
+00:53:24,400 --> 00:53:28,400
+But it is also dangerous.
+
+330
+00:53:28,400 --> 00:53:45,400
+So when we look at it from a long
+perspective, we are taking a position
+potentially in a stock where the analyst
+in the market, the market is expecting a
+turnaround in earnings growth.
+
+331
+00:53:45,400 --> 00:54:03,400
+So we are going with the market, we are
+agreeing with the market, but if the
+turnaround doesn't happen, then of course,
+the stock is probably going to go down a
+lot and we're going to lose money.
+
+332
+00:54:03,400 --> 00:54:06,400
+Looking at it through a short lens.
+
+333
+00:54:06,400 --> 00:54:12,400
+Looking at it through a short lens, it is
+dangerous because we are actually arguing
+with the market here.
+
+334
+00:54:12,400 --> 00:54:22,400
+So we're saying that the market is wrong
+to have the earnings growth number for
+period number two and that we know better.
+
+335
+00:54:22,400 --> 00:54:31,400
+And of course, because we're going short,
+where there's infinite amount of downside.
+
+336
+00:54:31,400 --> 00:54:47,400
+So especially in the case where a stock
+has been X growth for a long time and then
+the market is expecting a turnaround in
+earnings growth and the stock is already
+down a lot.
+
+337
+00:54:47,400 --> 00:54:55,400
+Going short, this type of earnings growth
+profile in that type of dynamic can be
+very dangerous.
+
+338
+00:54:55,400 --> 00:55:15,400
+So again, with all of these profiles that
+we've looked at so far, we are assessing
+from the earnings growth profile itself,
+not only the direction of earnings growth,
+but how far down the line.
+
+339
+00:55:15,400 --> 00:55:21,400
+The company is in terms of going X growth.
+
+340
+00:55:21,400 --> 00:55:29,400
+Is it early stage X growth or is it late
+stage X growth or somewhere in between?
+
+341
+00:55:29,400 --> 00:55:44,400
+And also, obviously, we want to be finding
+out the reasons why earnings growth is
+forecasted to be negative by research
+analysts, by the market.
+
+342
+00:55:44,400 --> 00:55:52,400
+We want to look at the market and
+understand the context of the earnings
+growth decline.
+
+343
+00:55:52,400 --> 00:55:58,400
+So the questions are always, has the
+company actually gone X growth?
+
+344
+00:55:58,400 --> 00:56:02,400
+How far down the line is the company in
+terms of going X growth?
+
+345
+00:56:02,400 --> 00:56:04,400
+How much is the stock price growth?
+
+346
+00:56:04,400 --> 00:56:16,400
+How much is the stock price down and how
+much is reflected in the stock price move
+and the bearishness already surrounding
+earnings expectations?
+
+347
+00:56:16,400 --> 00:56:22,400
+What are the reasons for the earnings
+decline or the expected earnings decline?
+
+348
+00:56:22,400 --> 00:56:28,400
+And is it going to continue?
+
+349
+00:56:28,400 --> 00:56:46,400
+Now, just as a side note, for clarity
+purposes, when you're going through your
+processing, you'll find that when we have
+negative earnings growth profiles, that
+your peg ratios are going to be negative.
+
+350
+00:56:46,400 --> 00:57:02,400
+So in the context of shorts, there is no
+ideal peg ratio set up because peg will
+just be negative in our ideal or close to
+ideal earnings growth profiles.
+
+351
+00:57:02,400 --> 00:57:16,400
+Because when you're dividing a positive
+price earnings ratio number by a negative
+percentage number, you're going to get a
+negative.
+
+352
+00:57:16,400 --> 00:57:18,400
+That's just going to be the case.
+
+353
+00:57:18,400 --> 00:57:28,400
+And the negative peg doesn't tell us
+anything about valuation and what the
+market thinks of the stock relative to
+other companies.
+
+354
+00:57:28,400 --> 00:57:40,400
+So in these situations, when you're
+looking at negative earnings growth
+profiles from a short processing
+perspective, you can overlook negative
+peg.
+
+355
+00:57:40,400 --> 00:57:46,400
+As in the ones that have negative earnings
+growth.
+
+356
+00:57:46,400 --> 00:57:52,400
+So they would be our cases, case number
+one, two and five.
+
+357
+00:57:52,400 --> 00:57:59,400
+But our cases number three and four would
+have slightly different peg setups.
+
+358
+00:57:59,400 --> 00:58:11,400
+So we would have a positive peg ratio in a
+period number one because we have in
+period number one positive EPS.
+
+359
+00:58:11,400 --> 00:58:16,400
+We have positive PE and a positive
+earnings growth number.
+
+360
+00:58:16,400 --> 00:58:23,400
+So we have a positive divided by a
+positive, which gives us a positive peg in
+year one.
+
+361
+00:58:23,400 --> 00:58:39,400
+So if we have negative peg like our cases
+one, two and five in a positive EPS
+environment, it's because we have negative
+earnings growth.
+
+362
+00:58:39,400 --> 00:58:50,400
+Which from a traders and portfolio
+managers perspective, when we see those
+negative pegs, it just gives us
+confirmation of the numbers.
+
+363
+00:58:50,400 --> 00:58:56,400
+Negative peg has a weak interpretation for
+us.
+
+364
+00:58:56,400 --> 00:58:59,400
+So we take note of the negative peg.
+
+365
+00:58:59,400 --> 00:59:05,400
+However, we do not put too much weight on
+the interpretation for it.
+
+366
+00:59:05,400 --> 00:59:19,400
+In our cases number three and four, if we
+have a positive peg in a positive EPS
+environment, it's because we have in the
+period a positive earnings growth.
+
+367
+00:59:19,400 --> 00:59:28,400
+If we then see that peg go negative in the
+next period, it's because we know that
+earnings growth is going from positive to
+negative.
+
+368
+00:59:28,400 --> 00:59:48,400
+So from a short perspective, from a short
+trade ideas processing perspective, this
+visually is confirmation for us that we
+are getting negative earnings growth in
+the next period.
+
+369
+00:59:48,400 --> 00:59:53,400
+It's close to ideal or it's the next best
+thing.
+
+370
+00:59:53,400 --> 01:00:05,400
+Now we have several other cases of
+earnings growth profiles that we can look
+at for short idea processing, looking at
+them through a short lens.
+
+371
+01:00:05,400 --> 01:00:10,400
+Up next is case number six and case number
+seven.
+
+372
+01:00:10,400 --> 01:00:22,400
+So case number six, this is where EPS is
+positive again, but earnings growth is
+positive and then positive again.
+
+373
+01:00:22,400 --> 01:00:27,400
+Period one, then period two, but it's
+lower than the sector in both periods.
+
+374
+01:00:27,400 --> 01:00:28,400
+This is not ideal.
+
+375
+01:00:28,400 --> 01:00:32,400
+This is more like a hedge and we are not
+hedgers.
+
+376
+01:00:32,400 --> 01:00:33,400
+We are traders.
+
+377
+01:00:33,400 --> 01:00:35,400
+We want better than this.
+
+378
+01:00:35,400 --> 01:00:41,400
+Case number seven, anything that is
+equivalent to the sector or higher.
+
+379
+01:00:41,400 --> 01:00:44,400
+So it's just not worth looking at.
+
+380
+01:00:44,400 --> 01:00:59,400
+So looking at positive, then positive
+earnings growth period one and period two,
+but below sector average, what we've
+actually got here is for the stock itself
+earnings growth momentum.
+
+381
+01:00:59,400 --> 01:01:08,400
+So we have sequentially positive earnings
+growth momentum for the stock, but it's
+below sector average for both periods.
+
+382
+01:01:08,400 --> 01:01:19,400
+We could have just as easily put on the
+screen in period two, a slightly better
+positive earnings growth number.
+
+383
+01:01:19,400 --> 01:01:25,400
+We could have put on the screen a flat
+earnings growth number or slightly worse.
+
+384
+01:01:25,400 --> 01:01:32,400
+That would be pretty similar because it's
+positive and positive looking through a
+short lens.
+
+385
+01:01:32,400 --> 01:01:42,400
+In all of those scenarios, this would
+probably not qualify as good as the
+situations that we've looked at so far.
+
+386
+01:01:42,400 --> 01:01:49,400
+Definitely not for the sequentially
+positive earnings growth, even though it's
+below sector average.
+
+387
+01:01:49,400 --> 01:02:00,400
+This for an investor would potentially
+provide a hedge to a long idea in the same
+sector.
+
+388
+01:02:00,400 --> 01:02:02,400
+But again, we are not investors.
+
+389
+01:02:02,400 --> 01:02:04,400
+We are not into hedging.
+
+390
+01:02:04,400 --> 01:02:07,400
+We are looking for the juice.
+
+391
+01:02:07,400 --> 01:02:10,400
+We want stocks that are going to get
+clobbered.
+
+392
+01:02:10,400 --> 01:02:12,400
+We want stocks that are going to go down.
+
+393
+01:02:12,400 --> 01:02:17,400
+We want shorts that are going to go down a
+lot and longs that are going to go up a
+lot.
+
+394
+01:02:17,400 --> 01:02:20,400
+We want to be going where the juice is.
+
+395
+01:02:20,400 --> 01:02:25,400
+For case number seven, it's a pretty
+similar situation.
+
+396
+01:02:25,400 --> 01:02:41,400
+In both periods, we are exhibiting
+earnings growth for the stock that is at
+or very close to being equivalent to the
+sector earnings growth in both periods.
+
+397
+01:02:41,400 --> 01:02:47,400
+Again, this is not ideal for us when we're
+looking through a short lens.
+
+398
+01:02:47,400 --> 01:02:49,400
+We're not into sector performance.
+
+399
+01:02:49,400 --> 01:02:51,400
+We want to do better than this.
+
+400
+01:02:51,400 --> 01:03:03,400
+We want to be short stocks that are
+potentially going to really underperform
+the sector and the market in any GDP
+environment.
+
+401
+01:03:03,400 --> 01:03:07,400
+And not just underperform, but go down a
+lot.
+
+402
+01:03:07,400 --> 01:03:21,400
+Now, moving on to our next three and final
+three, actually, earnings growth profiles
+when we're short idea processing.
+
+403
+01:03:21,400 --> 01:03:30,400
+Now, all of these companies, at least in
+the first period, have negative EPS.
+
+404
+01:03:30,400 --> 01:03:34,400
+So they are loss making companies.
+
+405
+01:03:34,400 --> 01:03:42,400
+And then also in the first period, they
+have negative earnings growth.
+
+406
+01:03:42,400 --> 01:03:47,400
+But what's different about these cases is
+what happens in the second period.
+
+407
+01:03:47,400 --> 01:03:55,400
+So let's take, for example, case number
+eight, where we have a loss making
+company.
+
+408
+01:03:55,400 --> 01:04:01,400
+So negative EPS, at least in the first
+period.
+
+409
+01:04:01,400 --> 01:04:06,400
+And they get negative earnings growth in
+period one.
+
+410
+01:04:06,400 --> 01:04:11,400
+And the earnings growth is below sector
+average.
+
+411
+01:04:11,400 --> 01:04:17,400
+Then in the second period, they have
+positive earnings growth.
+
+412
+01:04:17,400 --> 01:04:21,400
+But that doesn't necessarily mean that
+it's positive EPS.
+
+413
+01:04:21,400 --> 01:04:24,400
+It can also be negative EPS.
+
+414
+01:04:24,400 --> 01:04:27,400
+But it's just less negative.
+
+415
+01:04:27,400 --> 01:04:32,400
+But the positive earnings growth number is
+above sector average.
+
+416
+01:04:32,400 --> 01:04:42,400
+We would again define this type of
+earnings growth profile as a turnaround or
+value trap, potentially.
+
+417
+01:04:42,400 --> 01:04:48,400
+So this, again, is both opportunistic and
+dangerous.
+
+418
+01:04:48,400 --> 01:04:55,400
+With case number nine, we again, in period
+number one, have a loss making operation.
+
+419
+01:04:55,400 --> 01:04:58,400
+So we have negative EPS.
+
+420
+01:04:58,400 --> 01:05:02,400
+We have negative earnings growth as well
+in period one.
+
+421
+01:05:02,400 --> 01:05:05,400
+And it's below sector average.
+
+422
+01:05:05,400 --> 01:05:15,400
+In period two, we also have negative
+earnings growth, but that is at or below
+the sector average.
+
+423
+01:05:15,400 --> 01:05:26,400
+So what's happening here is that in period
+two, the company is losing slightly more
+money than it did in period one.
+
+424
+01:05:26,400 --> 01:05:29,400
+But the earnings growth decline is lower.
+
+425
+01:05:29,400 --> 01:05:33,400
+So this is similar to our case number two.
+
+426
+01:05:33,400 --> 01:05:40,400
+Again, this is a turnaround or value trap
+situation, opportunistic and dangerous.
+
+427
+01:05:40,400 --> 01:06:07,400
+And finally, with our case number 10, our
+final case, we have in period one, a loss
+making operation, negative EPS, with
+negative earnings growth, that's below
+sector average, moving to a scenario in
+period two, where we have EPS growth,
+that's even more negative than period one.
+
+428
+01:06:07,400 --> 01:06:10,400
+And it's below the sector average.
+
+429
+01:06:10,400 --> 01:06:19,400
+So this is like our case number one, the
+sequentially negative below sector average
+earnings growth momentum.
+
+430
+01:06:19,400 --> 01:06:24,400
+But the company is already in a loss
+making situation.
+
+431
+01:06:24,400 --> 01:06:48,400
+So the question is here is whether we're
+trying to be a hero trader and trade the
+stock to zero, because it's highly likely
+in this situation, as long as this is not
+a revenue growth story, and it's part of
+the management operating plan to have
+negative earnings growth in order to grow
+the top line.
+
+432
+01:06:48,400 --> 01:07:07,400
+So on the condition that this is genuinely
+a stock that has gone X growth in a
+situation like this, where the company is
+loss making, it's highly likely that it's
+way down the line of going X growth.
+
+433
+01:07:07,400 --> 01:07:26,400
+So the question is, is how far the stock
+has already moved already, and if it's
+down a lot already, say 50%, 60%, 70%,
+80%, 90%, if it's down a lot already, are
+we trying to be the hero trader here and
+trade this stock to zero?
+
+434
+01:07:26,400 --> 01:07:27,400
+Are we late to the party?
+
+435
+01:07:27,400 --> 01:07:28,400
+Are we late to the party?
+
+436
+01:07:28,400 --> 01:07:29,400
+Are we late to the party?
+
+437
+01:07:29,400 --> 01:07:30,400
+Are we late to the party?
+
+438
+01:07:30,400 --> 01:07:32,400
+Or are we early to the party?
+
+439
+01:07:32,400 --> 01:07:37,400
+In this situation, it's highly likely that
+we're late to the party.
+
+440
+01:07:37,400 --> 01:07:42,400
+So let's have a look at these visually to
+understand them a little bit better.
+
+441
+01:07:42,400 --> 01:08:03,400
+Here we have case number eight, where we
+have negative earnings growth from a loss
+making operation in period one, that's
+below sector average, and then we have
+positive earnings growth that's above
+sector average in the second period.
+
+442
+01:08:03,400 --> 01:08:11,400
+And in the second period, remember, this
+can also be negative EPS as well as
+positive EPS.
+
+443
+01:08:11,400 --> 01:08:25,400
+So we could have a situation here where a
+company, for example, is going from
+negative 60 cents to negative 1 cent in
+their earnings in their EPS.
+
+444
+01:08:25,400 --> 01:08:30,400
+So essentially, they've recovered 100% of
+their losses.
+
+445
+01:08:30,400 --> 01:08:39,400
+So they have 100% earnings growth in the
+second period relative to earnings growth
+in the first period.
+
+446
+01:08:39,400 --> 01:08:46,400
+Or they could be going from negative 60
+cents to positive 1 cent.
+
+447
+01:08:46,400 --> 01:08:50,400
+So again, around 100% earnings growth.
+
+448
+01:08:50,400 --> 01:08:55,400
+It's essentially the same as losing 1
+cent.
+
+449
+01:08:55,400 --> 01:09:11,400
+So again, as long as this is defined as a
+genuine X growth scenario, we can look at
+this as a potential turnaround or value
+trap.
+
+450
+01:09:11,400 --> 01:09:38,400
+So again, we are always assessing the
+context as to whether it's a genuinely X
+growth story, how far down the line we are
+in terms of the company being X growth,
+the reasons for it, how much the stock has
+moved, and in this particular situation,
+whether a turnaround is actually genuine
+or not.
+
+451
+01:09:38,400 --> 01:09:51,400
+Next up is our case number 9, where we
+have, again, a loss-making operation in
+period 1, where we have negative EPS.
+
+452
+01:09:51,400 --> 01:09:58,400
+And we have negative earnings growth
+that's below sector average in period 1.
+
+453
+01:09:58,400 --> 01:10:07,400
+And in period 2, we have negative earnings
+growth in period 2, that's either at or
+below the sector average.
+
+454
+01:10:07,400 --> 01:10:24,400
+And if you recall, this earnings growth
+profile is very similar to our case number
+2, except this situation is the company is
+actually loss-making instead of
+profit-making.
+
+455
+01:10:24,400 --> 01:10:30,400
+So we are looking at it through the lens
+here, the same earnings growth profile.
+
+456
+01:10:30,400 --> 01:10:43,400
+We are looking at it through the lens of a
+loss-making operation rather than a
+profit-making operation, because in the
+first period, we've assumed that the
+company has negative EPS.
+
+457
+01:10:43,400 --> 01:10:53,400
+So again, this is a turnaround or value
+trap story, and we have to be very
+careful.
+
+458
+01:10:53,400 --> 01:11:02,400
+We have to put everything into context as
+to whether the company is really an X
+growth, a genuine X growth situation.
+
+459
+01:11:02,400 --> 01:11:19,400
+If it is, how far down the line they are,
+how much has the stock price moved, why is
+the company X growth, and also whether the
+turnaround or value trap exists.
+
+460
+01:11:19,400 --> 01:11:34,400
+Next up is our final case, case number 10,
+where we have negative EPS in period 1
+with negative earnings growth below the
+sector average.
+
+461
+01:11:34,400 --> 01:11:41,400
+And then in period 2, we have more
+negative EPS and more negative earnings
+growth.
+
+462
+01:11:41,400 --> 01:11:44,400
+That's again below the sector average.
+
+463
+01:11:44,400 --> 01:11:55,400
+So remember, this is like our case number
+1, where we have sequentially negative
+below sector average earnings growth
+momentum.
+
+464
+01:11:55,400 --> 01:12:02,400
+So on paper, it can look good, but in
+reality, it can be bad.
+
+465
+01:12:02,400 --> 01:12:13,400
+Because again, it's all dependent on
+whether it's genuinely an X growth story,
+how far down the line they are in terms of
+going X growth,
+
+466
+01:12:14,400 --> 01:12:20,400
+how much the stock price has moved, the
+reasons, whether we're late to the party
+or not.
+
+467
+01:12:20,400 --> 01:12:29,400
+And of course, if there's better earnings
+growth profiles out there and better, more
+well-timed shorts.
+
+468
+01:12:30,400 --> 01:12:42,400
+So remember, in this situation, yes, we
+have the sequentially negative earnings
+growth momentum that's below sector
+average, similar to case number 1.
+
+469
+01:12:42,400 --> 01:12:43,400
+Case number 1.
+
+470
+01:12:43,400 --> 01:12:47,400
+But here, we are a loss making operation.
+
+471
+01:12:47,400 --> 01:12:51,400
+Case number 1 was a profit making
+operation.
+
+472
+01:12:51,400 --> 01:13:07,400
+So it's highly likely that if all of these
+X growth factors are in place, that this
+scenario, we are way further down the line
+of this company being X growth than even
+case number 1.
+
+473
+01:13:07,400 --> 01:13:27,400
+So this covers our 10 earnings growth
+profile cases when we are processing in
+the quant phase for short ideas and
+looking at these earnings growth profiles
+through the lens of short ideas.
+
+474
+01:13:27,400 --> 01:13:47,400
+And as mentioned, we have to take a
+different approach versus when we're
+looking at long ideas and going through
+the processes there in the quantitative
+phase and looking at earnings growth
+profiles through the lens of long ideas.
+
+475
+01:13:47,400 --> 01:14:00,400
+So for earnings growth profiles, when
+we're short idea processing, we've got to
+think of it in terms of EPS and earnings
+growth in four ways.
+
+476
+01:14:00,400 --> 01:14:06,400
+We have positive EPS with negative
+earnings growth.
+
+477
+01:14:06,400 --> 01:14:10,400
+We have positive EPS with positive
+earnings growth.
+
+478
+01:14:10,400 --> 01:14:18,400
+We have characteristics where we have
+negative EPS, so loss making operations
+with negative earnings growth.
+
+479
+01:14:18,400 --> 01:14:25,400
+And we have loss making operations, so
+negative EPS, but have also positive
+earnings growth.
+
+480
+01:14:25,400 --> 01:14:34,400
+Now, intuitively, you would think that
+just finding companies that lose money
+would make great shorts.
+
+481
+01:14:34,400 --> 01:14:43,400
+So loss making companies automatically
+becoming great stocks to short, but that
+is not necessarily the case here.
+
+482
+01:14:43,400 --> 01:14:55,400
+You have to be very careful because stocks
+may have already traveled and you could be
+shorting something that's already down a
+lot.
+
+483
+01:14:55,400 --> 01:14:58,400
+So shorting it in a hole.
+
+484
+01:14:58,400 --> 01:15:03,400
+So it could already be down 50, 60, 70,
+80, 90%.
+
+485
+01:15:03,400 --> 01:15:10,400
+And you could be very late to the party
+and get caught out being short.
+
+486
+01:15:10,400 --> 01:15:15,400
+Remember, markets are forward-looking
+animals.
+
+487
+01:15:15,400 --> 01:15:24,400
+We are forward-looking and we're not ever
+backwards-looking in our analysis as
+traders.
+
+488
+01:15:24,400 --> 01:15:37,400
+A stock, for example, that was a $50
+billion company three years ago, that is
+down, say, 80%, is now a $10 billion
+market cap company.
+
+489
+01:15:37,400 --> 01:15:53,400
+On that journey from $50 billion to $10
+billion, they may have had positive EPS,
+but had gone X growth and fallen into
+negative EPS, so fallen into losses.
+
+490
+01:15:53,400 --> 01:16:00,400
+And this is partly why we have a market
+cap filter on shorts.
+
+491
+01:16:00,400 --> 01:16:10,400
+We want to be looking to go short stocks
+that are going on that journey, and we
+don't have to capture all of the journey.
+
+492
+01:16:10,400 --> 01:16:19,400
+In fact, for both longs and shorts, we
+always want to avoid trying to pick
+bottoms and tops.
+
+493
+01:16:19,400 --> 01:16:34,400
+So in the classic long setup where we have
+sequentially positive earnings growth
+momentum, we are playing the earnings
+growth and we are playing that momentum.
+
+494
+01:16:34,400 --> 01:16:41,400
+But even if we are wrong, our gap risk to
+the downside on a long position is 100%.
+
+495
+01:16:41,400 --> 01:16:47,400
+We can only lose 100% of our money on a
+long stock position.
+
+496
+01:16:47,400 --> 01:17:02,400
+In the classic short setup that we looked
+at where we have sequentially negative
+earnings growth momentum, we are
+potentially playing the earnings growth
+decline.
+
+497
+01:17:02,400 --> 01:17:07,400
+But in that scenario, our gap risk is
+actually infinity.
+
+498
+01:17:07,400 --> 01:17:13,400
+On a short stock position, we can lose an
+unlimited amount of money.
+
+499
+01:17:13,400 --> 01:17:36,400
+And for both long and short positions,
+with long positions, the gap risk is 100%
+whether we buy something that's up
+significantly over the last one, two,
+three years, or whether we buy something
+that is down significantly over the last
+one, two, three years.
+
+500
+01:17:36,400 --> 01:17:52,400
+With shorts, the downside is infinity
+whether we short something that's up a
+huge amount over the last one, two, three
+years, or whether we short something
+that's down a lot over the last one, two,
+three years.
+
+501
+01:17:52,400 --> 01:17:54,400
+It simply doesn't matter.
+
+502
+01:17:54,400 --> 01:18:07,400
+So this is why we have to treat shorts and
+earnings growth profiles differently than
+how we treat long earnings growth
+profiles.
+
+503
+01:18:07,400 --> 01:18:13,400
+Because in shorts, we can get caught out
+and potentially lose a lot of money very
+quickly.
+
+504
+01:18:13,400 --> 01:18:22,400
+So this is partly why we have a market cap
+filter on shorts.
+
+505
+01:18:22,400 --> 01:18:33,400
+We are putting a market cap filter on to
+lower the probability that we're going to
+get caught out and lose a lot of money on
+our shorts.
+
+506
+01:18:33,400 --> 01:18:39,400
+For example, eliminating the takeover risk
+element in the short.
+
+507
+01:18:39,400 --> 01:18:50,400
+And what we're looking to do is go short X
+growth names that are either large cap or
+mega cap in characteristic.
+
+508
+01:18:50,400 --> 01:18:58,400
+So we're looking to short X growth names
+that are either mega cap and they're going
+to in the future become large cap.
+
+509
+01:18:58,400 --> 01:19:09,400
+Or we're attempting to short X growth
+names that are large cap and at some point
+in the future, they're going to be mid
+caps.
+
+510
+01:19:09,400 --> 01:19:16,400
+What we're also trying to avoid with
+shorts is to short or attempt to short
+stocks at the top.
+
+511
+01:19:16,400 --> 01:19:19,400
+So we're not trying to pick the top here.
+
+512
+01:19:19,400 --> 01:19:20,400
+So we're not trying to pick the top here.
+
+513
+01:19:20,400 --> 01:19:29,400
+What we're trying to do is look for
+evidence of stocks going X growth and with
+attempting to capture a part of that
+journey.
+
+514
+01:19:29,400 --> 01:19:42,400
+So for example, on the journey for a $50
+billion stock becoming a $10 billion
+stock, maybe we can capture half of that
+move.
+
+515
+01:19:42,400 --> 01:19:57,400
+So when we look at earnings growth
+profiles that are negative and also when
+we see turnaround stories or potential
+turnaround stories or value drops,
+
+516
+01:19:57,400 --> 01:20:07,400
+when we look at them through a short idea
+processing, short idea lens, we have to be
+very careful.
+
+517
+01:20:07,400 --> 01:20:16,400
+So for example, when we see an earnings
+growth profile that has sequentially
+negative earnings growth momentum,
+
+518
+01:20:16,400 --> 01:20:25,400
+whether that's a loss making company or
+even a profit making company, we could be
+too late to the trade.
+
+519
+01:20:25,400 --> 01:20:36,400
+Additionally, if we see a turnaround
+stories or potential turnaround stories,
+which are also potential value traps.
+
+520
+01:20:36,400 --> 01:20:48,400
+Again, whether it's negative EPS or
+positive EPS, we could be in a situation
+here where we are late to the party.
+
+521
+01:20:48,400 --> 01:20:57,400
+So we have to be very careful and take a
+different approach versus long idea
+generation.
+
+522
+01:20:57,400 --> 01:21:07,400
+Now, recall the ideal price earnings ratio
+set up where EPS is positive.
+
+523
+01:21:07,400 --> 01:21:12,400
+It has to be, otherwise PE would be
+negative due to a negative EPS.
+
+524
+01:21:12,400 --> 01:21:24,400
+So in our ideal PE backdrop, our ideal PE
+setup, we have a positive PE ratio that's
+lower than the sector average.
+
+525
+01:21:24,400 --> 01:21:34,400
+And then in period two, we have a slightly
+higher PE, but again, it's lower than the
+sector average.
+
+526
+01:21:34,400 --> 01:21:47,400
+What's not ideal from a PE setup
+perspective for the PE backdrop is for
+example, if we have negative EPS in both
+periods.
+
+527
+01:21:47,400 --> 01:21:48,400
+Why?
+
+528
+01:21:48,400 --> 01:21:57,400
+Because we may have gone already on the X
+growth journey and the stock may already
+be down a lot.
+
+529
+01:21:57,400 --> 01:22:05,400
+And we are now in a loss making period
+coming from a profit making period.
+
+530
+01:22:05,400 --> 01:22:15,400
+So if the company is loss making and we
+have negative PE in period one and
+negative PE in period two, we got to be
+very careful.
+
+531
+01:22:15,400 --> 01:22:38,400
+We have to look at the context here and
+figure out where the company has come from
+previously and where it is now in
+comparison and whether it's already got on
+its X growth phase, whether it's very late
+in the stages of the company going X
+growth.
+
+532
+01:22:38,400 --> 01:22:49,400
+Because this situation here, where we have
+negative PE in period one, where the
+company is loss making.
+
+533
+01:22:49,400 --> 01:22:53,400
+And then in period two, the PE is still
+negative, but it's higher.
+
+534
+01:22:53,400 --> 01:22:58,400
+Now, we could be walking into a short trap
+here.
+
+535
+01:22:58,400 --> 01:23:01,400
+We could be walking into a turnaround
+story.
+
+536
+01:23:01,400 --> 01:23:10,400
+But of course, again, it could also be a
+value trap where the turnaround story
+doesn't materialize.
+
+537
+01:23:10,400 --> 01:23:16,400
+We still have to do further work to work
+it out, but it's not ideal.
+
+538
+01:23:16,400 --> 01:23:32,400
+Now, one of the best ways to think of how
+we look at earnings growth profiles and
+how we look at shorts and earnings growth
+profiles is to think of it in terms of a
+roadmap.
+
+539
+01:23:32,400 --> 01:23:39,400
+And where on the journey do we think we're
+actually capturing the X growth company?
+
+540
+01:23:39,400 --> 01:23:46,400
+So we tend to think of things in terms of
+short waves.
+
+541
+01:23:46,400 --> 01:23:54,400
+So when we have forward looking
+fundamentals, so expectations are shifting
+from positive to negative.
+
+542
+01:23:54,400 --> 01:23:58,400
+So we have an X growth story.
+
+543
+01:23:58,400 --> 01:24:05,400
+Stocks tend to travel lower over a period
+of time in several waves.
+
+544
+01:24:05,400 --> 01:24:13,400
+So here we have characterized five phases
+of an X growth story.
+
+545
+01:24:13,400 --> 01:24:17,400
+So let's start with phase one, P1.
+
+546
+01:24:17,400 --> 01:24:24,400
+This usually begins with some sort of
+capacity or market size issue.
+
+547
+01:24:24,400 --> 01:24:32,400
+So the company has reached a growth
+capacity and the stock starts to put in
+several tops.
+
+548
+01:24:32,400 --> 01:24:47,400
+This period of time is usually associated
+with a lot of bullish hubris in the market
+that the company can always continue
+growing at the same pace forever.
+
+549
+01:24:47,400 --> 01:25:04,400
+On top of that, the company itself is
+usually reluctant to issue any bearish
+estimates and always attempts to calm the
+market several times by just reiterating
+guidance over and over.
+
+550
+01:25:04,400 --> 01:25:14,400
+The next phase of an X growth story is
+phase two, where expectations actually do
+shift lower.
+
+551
+01:25:14,400 --> 01:25:21,400
+And they are now those expectations being
+started to believed by the market.
+
+552
+01:25:21,400 --> 01:25:29,400
+This period is usually associated with a
+lot of profit taking from long term
+investors.
+
+553
+01:25:29,400 --> 01:25:42,400
+So long term bulls on the stock or cutting
+from more short term players in the market
+from hyperbolic bulls that bought at or
+near the top.
+
+554
+01:25:42,400 --> 01:25:54,400
+At this stage, usually what happens is the
+company actually does issue materially
+lower guidance, but they do it
+reluctantly.
+
+555
+01:25:55,400 --> 01:26:06,400
+But what happens is, is by the time the
+company has actually issued that
+materially lower guidance, the stock has
+already moved down before they do.
+
+556
+01:26:06,400 --> 01:26:15,400
+And this tends to be because analysts have
+already moved their expectations in the
+market.
+
+557
+01:26:15,400 --> 01:26:24,400
+And the company lowers their guidance
+later because they are reluctant to do it,
+but they end up having to admit it.
+
+558
+01:26:25,400 --> 01:26:40,400
+Now, this brings us on to phase three,
+where in the market, a new normal growth
+rate expectation is set by the company and
+equity research analysts.
+
+559
+01:26:40,400 --> 01:26:47,400
+And this flushes out more of the stale
+long investors.
+
+560
+01:26:47,400 --> 01:27:06,400
+And what tends to happen with these
+situations is that it's accompanied by the
+company now actively seeking a new
+management operating plan, an MOP, and
+starts to talk and verbalize about a
+turnaround.
+
+561
+01:27:06,400 --> 01:27:24,400
+And then new investors begin to enter the
+market, usually dollar cost averaging on
+the way down for the turnaround story that
+they believe in, that the company is now
+pushing in the market.
+
+562
+01:27:25,400 --> 01:27:32,400
+Stale bulls and investors who don't
+believe the turnaround story sell to those
+that do.
+
+563
+01:27:32,400 --> 01:27:40,400
+But in phase three, what usually happens
+is the stock takes another leg lower.
+
+564
+01:27:40,400 --> 01:27:53,400
+And now we move on to phase four of when
+companies go X growth, where the stock is
+now down materially from its highs.
+
+565
+01:27:53,400 --> 01:27:59,400
+So we're talking 50, 60, 70, 80, even 90%
+plus.
+
+566
+01:27:59,400 --> 01:28:10,400
+And at this stage, it's a totally
+different company to the one prior to and
+in phase one.
+
+567
+01:28:10,400 --> 01:28:27,400
+And what tends to happen at this stage is
+the new company management operating plan
+is rolled out and the market is starting
+to see evidence that the rate of decrease
+in fundamentals is slowing down.
+
+568
+01:28:27,400 --> 01:28:35,400
+So the market is starting to see evidence
+that the bleed has stopped or it's close
+to stopping.
+
+569
+01:28:35,400 --> 01:28:40,400
+And the question always is here, will they
+pull it off?
+
+570
+01:28:40,400 --> 01:28:42,400
+Will they pull off the turnaround?
+
+571
+01:28:42,400 --> 01:28:48,400
+But from a trader's perspective, we look
+at it from the perspective of who really
+cares?
+
+572
+01:28:48,400 --> 01:28:58,400
+Because we want to be shorting stocks way
+before phase four happens.
+
+573
+01:28:58,400 --> 01:29:03,400
+So we want to be shorting stocks in phase
+two and phase three.
+
+574
+01:29:03,400 --> 01:29:07,400
+In phase one, we're not looking to pick
+the top.
+
+575
+01:29:07,400 --> 01:29:14,400
+In phase four, we are not looking to short
+stocks in a hole.
+
+576
+01:29:14,400 --> 01:29:25,400
+In phase four, stocks can trade sideways
+and occasionally have very ugly rallies,
+very ugly short squeezes.
+
+577
+01:29:25,400 --> 01:29:32,400
+And there's a lot of volatility around,
+but ultimately stocks will probably go
+sideways.
+
+578
+01:29:32,400 --> 01:29:35,400
+But we don't want to be caught up in that
+as traders.
+
+579
+01:29:35,400 --> 01:29:39,400
+And then what happens, we have phase five.
+
+580
+01:29:39,400 --> 01:29:44,400
+And in phase five, either the company
+management pulls off a turnaround.
+
+581
+01:29:44,400 --> 01:29:49,400
+So they manage to turn the company around
+or they don't.
+
+582
+01:29:49,400 --> 01:29:52,400
+But at this stage, as traders, we don't
+care.
+
+583
+01:29:52,400 --> 01:29:54,400
+We are traders, not investors.
+
+584
+01:29:54,400 --> 01:30:03,400
+What we are looking to do is catch phase
+two and phase three and then move on to
+the next one.
+
+585
+01:30:03,400 --> 01:30:13,400
+So with these short waves, of course,
+every situation is different and should be
+judged on its own merits.
+
+586
+01:30:13,400 --> 01:30:22,400
+This is just a rough guide or template as
+to when a company goes X growth and
+handles it badly.
+
+587
+01:30:22,400 --> 01:30:26,400
+So they go all the way from phase one to
+phase five.
+
+588
+01:30:27,400 --> 01:30:32,400
+On the journey through phase one, phase
+two, phase three,
+
+589
+01:30:32,400 --> 01:30:42,400
+a lot of company managements could
+potentially see the issue coming and
+simply pivot in phase one or phase two,
+
+590
+01:30:42,400 --> 01:30:44,400
+or even in phase three.
+
+591
+01:30:44,400 --> 01:30:45,400
+But don't worry.
+
+592
+01:30:45,400 --> 01:30:49,400
+This is why we have diversification in our
+portfolio.
+
+593
+01:30:49,400 --> 01:30:59,400
+Now, bigger companies tend to find it hard
+to turn around X growth situations
+quickly.
+
+594
+01:30:59,400 --> 01:31:05,400
+A speedboat, so a smaller company can zip
+around the ocean quickly.
+
+595
+01:31:05,400 --> 01:31:11,400
+The company, a smaller company can tweak
+their management operating plan
+
+596
+01:31:11,400 --> 01:31:16,400
+to suit the times and implement across the
+board.
+
+597
+01:31:16,400 --> 01:31:24,400
+And lines of communication in smaller
+companies are quicker and they can get to
+market a lot quicker.
+
+598
+01:31:24,400 --> 01:31:27,400
+With larger companies, they are like oil
+tankers.
+
+599
+01:31:27,400 --> 01:31:33,400
+They move slowly around the ocean and
+innovation tends to be slower.
+
+600
+01:31:33,400 --> 01:31:39,400
+And management operating plans can't
+change and they can't go to market
+immediately.
+
+601
+01:31:39,400 --> 01:31:46,400
+And lines of communication in larger
+companies tend to be very slow and
+cumbersome.
+
+602
+01:31:46,400 --> 01:31:58,400
+So when you think of the market cap space
+of mid caps and large caps and even mega
+caps, look at it like this.
+
+603
+01:31:58,400 --> 01:32:02,400
+Mid caps, the three to $10 billion market
+cap space.
+
+604
+01:32:02,400 --> 01:32:06,400
+Large caps, the $10 to $40 billion market
+cap space.
+
+605
+01:32:06,400 --> 01:32:11,400
+And of course, on top of that, we have
+mega caps, $40 billion plus.
+
+606
+01:32:11,400 --> 01:32:13,400
+So think of it in this way.
+
+607
+01:32:13,400 --> 01:32:26,400
+If you go long a $7.5 billion market cap,
+mid cap company and short, say a $30
+billion market cap, large cap company.
+
+608
+01:32:26,400 --> 01:32:38,400
+If the mid cap doubles and the large cap
+halves in one year, they meet in the
+middle at $15 billion market cap.
+
+609
+01:32:38,400 --> 01:32:53,400
+Now for the record, for long ideas, we
+don't have a similar wave template for
+classic sequential earnings growth long
+profiles.
+
+610
+01:32:53,400 --> 01:32:58,400
+Because in the way they journey, it can be
+very varied.
+
+611
+01:32:58,400 --> 01:33:06,400
+So how the stock travels to the upside can
+be extremely different from one case to
+another.
+
+612
+01:33:06,400 --> 01:33:24,400
+With short ideas, when companies go X
+growth, the wave template exhibits a very
+typical average profile of how a stock
+journeys throughout the waves.
+
+613
+01:33:24,400 --> 01:33:29,400
+So let's have a look at some real examples
+here.
+
+614
+01:33:29,400 --> 01:33:36,400
+So we can see on the screen here, Under
+Armour, which is an apparel brand.
+
+615
+01:33:36,400 --> 01:33:51,400
+And this is Under Armour going X growth
+and traveling from being a $25 billion
+stock at $50 a share to becoming a $5
+billion stock at $10 a share.
+
+616
+01:33:51,400 --> 01:33:59,400
+So what you can see on the screen here is
+the various phases like in our short wave
+template.
+
+617
+01:33:59,400 --> 01:34:14,400
+So we have phase one, which is where the
+company puts in a top in 2015, falls and
+has its first move down and then trades
+sideways between $40 and the high $40.
+
+618
+01:34:14,400 --> 01:34:21,400
+You can see where the red arrow is
+pointing at the first red arrow.
+
+619
+01:34:21,400 --> 01:34:24,400
+This is where phase one begins.
+
+620
+01:34:24,400 --> 01:34:37,400
+And then the stock drops from mid-40s into
+the high 30s and treads water in the high
+30s and low 40s.
+
+621
+01:34:37,400 --> 01:34:44,400
+So this is the stage where the company is
+threatening to go X growth.
+
+622
+01:34:44,400 --> 01:34:52,400
+But at the time, of course, management
+will have been reiterating guidance and
+defending the stock, defending the
+company.
+
+623
+01:34:52,400 --> 01:35:09,400
+But the growth trajectory of revenue and
+earnings that they experienced say from
+2012 to 2015 and the beginning of 2016 was
+now in question.
+
+624
+01:35:09,400 --> 01:35:13,400
+So the company was potentially going X
+growth.
+
+625
+01:35:13,400 --> 01:35:21,400
+And then we have the phase two period
+where it's actually confirmed that the
+company is going X growth.
+
+626
+01:35:21,400 --> 01:35:36,400
+And then we have the phase three phase
+where a new normalised growth rate, which
+is slower than the old growth rates, is
+set as an expectation by the company and
+the market.
+
+627
+01:35:36,400 --> 01:35:43,400
+And we end up in the mid-20s and even the
+low 20s and chopping sideways.
+
+628
+01:35:43,400 --> 01:35:48,400
+And then we move into phase four, which is
+when the company starts to bottom.
+
+629
+01:35:48,400 --> 01:35:53,400
+The stock starts to bottom in the phase
+four period.
+
+630
+01:35:53,400 --> 01:36:00,400
+And this is where the turnaround story
+begins or whether it's a value trap.
+
+631
+01:36:00,400 --> 01:36:06,400
+The new management operating plan is
+rolled out in an attempt to turn around
+the company.
+
+632
+01:36:06,400 --> 01:36:19,400
+And you can see phase four lasts from
+somewhere in the region of towards the end
+of 2017 all the way up to 2020.
+
+633
+01:36:19,400 --> 01:36:25,400
+And this is quite typical of phase four
+scenarios.
+
+634
+01:36:25,400 --> 01:36:41,400
+They can occur for a long time and we can
+get a lot of volatility during the phase
+four period because it does take a long
+time for management operating plans to be
+implemented and for them to actually start
+working.
+
+635
+01:36:41,400 --> 01:36:50,400
+So from a trader's perspective, we
+obviously want to avoid shorting stocks in
+a whole.
+
+636
+01:36:50,400 --> 01:36:56,400
+So shorting stocks in phase four and phase
+five at or near the bottom.
+
+637
+01:36:56,400 --> 01:37:08,400
+Obviously, we don't know that at the time,
+but we can understand the characteristics
+of X growth stocks and where they are in
+their journey.
+
+638
+01:37:08,400 --> 01:37:12,400
+And we will be better off looking for
+other situations.
+
+639
+01:37:12,400 --> 01:37:17,400
+On top of that, we don't want to be trying
+to pick the top.
+
+640
+01:37:17,400 --> 01:37:24,400
+So we don't necessarily want to be in
+phase one, phase four or phase five.
+
+641
+01:37:24,400 --> 01:37:31,400
+We want to be capturing the journey when
+we get confirmation that the X growth is
+occurring.
+
+642
+01:37:31,400 --> 01:37:37,400
+And we're moving to a lower growth rate
+very rapidly.
+
+643
+01:37:37,400 --> 01:37:46,400
+If you look at the period here from mid to
+late 2016, when we have a break to the
+downside, that's phase two.
+
+644
+01:37:46,400 --> 01:37:51,400
+And then the break to the downside again
+in early 2017.
+
+645
+01:37:51,400 --> 01:37:52,400
+That's phase three.
+
+646
+01:37:52,400 --> 01:37:55,400
+So we want to capture those moves.
+
+647
+01:37:55,400 --> 01:38:08,400
+As traders and portfolio managers, we
+would have wanted to have captured the
+move in Under Armour from around high 30s
+dollars down to low 20s dollars.
+
+648
+01:38:08,400 --> 01:38:12,400
+But of course, we're not going to capture
+all of the move.
+
+649
+01:38:12,400 --> 01:38:17,400
+If we can capture half of it, two thirds
+of it, three quarters of it, we're doing
+very well.
+
+650
+01:38:17,400 --> 01:38:46,400
+Another example that demonstrates the
+progression of our shortwave template is a
+company called Teneco, T-E-N, which moved
+on the journey from being a $4 billion
+market cap stock at $70, becoming a $250
+million stock at $3 a share.
+
+651
+01:38:46,400 --> 01:38:51,400
+And Teneco is in the automotive equipment
+market.
+
+652
+01:38:51,400 --> 01:39:07,400
+So we can clearly see a phase one period
+from the end of 2016 to around the end of
+the first quarter of 2018.
+
+653
+01:39:07,400 --> 01:39:20,400
+And then phase one, this is an area where
+we're probably not shorting the stock, but
+we're starting to see that a company could
+be going X growth.
+
+654
+01:39:20,400 --> 01:39:34,400
+And then when we actually see it break to
+the downside, this is where we want to be
+playing it and we get confirmation that
+the stock is now X growth.
+
+655
+01:39:34,400 --> 01:39:51,400
+So we would have liked to have been
+shorting this stock around June to
+September 2018 to enable us to capture the
+phase two move and the phase three move
+down in the stock.
+
+656
+01:39:51,400 --> 01:40:01,400
+We can also see after we have the phase
+three move down, we get the phase four
+period beginning.
+
+657
+01:40:01,400 --> 01:40:13,400
+So after the phase three move down, the
+phase four period begins in the time
+horizon between June and September 2019.
+
+658
+01:40:13,400 --> 01:40:28,400
+And you can see that the phase four period
+lasts a very long time, all the way up to
+the end of the chart, which is in around
+April 2021.
+
+659
+01:40:28,400 --> 01:40:37,400
+So almost two years the phase four period
+happened before the phase five period
+occurs.
+
+660
+01:40:37,400 --> 01:40:41,400
+And this is where either the turnaround
+happens or not.
+
+661
+01:40:41,400 --> 01:40:45,400
+And if you want to go and have a look at
+this stock, go away and have a look at it.
+
+662
+01:40:45,400 --> 01:40:56,400
+And you'll see that the stock rallies
+actually quite significantly from the $10
+level up to above the $20 level in a very
+short space of time.
+
+663
+01:40:56,400 --> 01:41:00,400
+But obviously, that's not a full
+turnaround.
+
+664
+01:41:00,400 --> 01:41:03,400
+We're still in the phase five period.
+
+665
+01:41:03,400 --> 01:41:09,400
+But the phase five period began in April
+2021.
+
+666
+01:41:10,400 --> 01:41:18,400
+But these are two good examples, Under
+Armour and Tenneco, because they're in two
+different market cap spaces.
+
+667
+01:41:18,400 --> 01:41:26,400
+So Under Armour started off as a $25
+billion stock and went from being a large
+cap to a mid cap.
+
+668
+01:41:26,400 --> 01:41:33,400
+And Tenneco went from being a mid cap, a
+$4 billion stock to being a micro cap.
+
+669
+01:41:33,400 --> 01:41:40,400
+So these are good examples to use because
+the way we look at things as traders and
+portfolio managers,
+
+670
+01:41:40,400 --> 01:41:50,400
+with our market cap limits on our shorts,
+we would much rather be shorting Under
+Armour rather than Tenneco.
+
+671
+01:41:50,400 --> 01:41:55,400
+Even though Tenneco may have exhibited X
+growth characteristics,
+
+672
+01:41:56,400 --> 01:42:03,400
+we would much rather be short Under Armour
+even if Tenneco is available.
+
+673
+01:42:03,400 --> 01:42:11,400
+And you can also imagine in both
+scenarios, when Under Armour had already
+dropped significantly,
+
+674
+01:42:11,400 --> 01:42:16,400
+and we were in phase four, and Tenneco had
+already dropped significantly,
+
+675
+01:42:16,400 --> 01:42:20,400
+and we're in phase four or even phase five
+for both stocks.
+
+676
+01:42:20,400 --> 01:42:23,400
+We don't want to short either of them.
+
+677
+01:42:23,400 --> 01:42:26,400
+We want to be staying away from those
+types of shorts.
+
+678
+01:42:26,400 --> 01:42:35,400
+So we'd much rather filter for market cap
+and be shorter stock like Under Armour in
+that situation
+
+679
+01:42:35,400 --> 01:42:42,400
+than be short in a stock like Tenneco
+simply because of the market cap and the
+gap risk.
+
+680
+01:42:42,400 --> 01:42:44,400
+But neither of them.
+
+681
+01:42:44,400 --> 01:42:50,400
+We want to be involved at phase four and
+phase five or even in phase one.
+
+682
+01:42:50,400 --> 01:42:58,400
+We want to be capturing phase two and
+phase three in stocks like Under Armour.
+
+683
+01:42:58,400 --> 01:43:07,400
+Let's have a look at a mega cap stock that
+is actually in phase one and has a big
+question mark over it.
+
+684
+01:43:07,400 --> 01:43:19,400
+We looked at this stock, Shopify, earlier
+in the video series, and we realized that
+revenue growth was slowing down post-2020,
+
+685
+01:43:19,400 --> 01:43:24,400
+below 2019 and previous year levels.
+
+686
+01:43:24,400 --> 01:43:38,400
+And if we take a snapshot of Shopify in
+April 2021, we can see the stock price is
+$1,145.46.
+
+687
+01:43:38,400 --> 01:43:42,400
+It has a market cap of $165 billion.
+
+688
+01:43:42,400 --> 01:43:49,400
+So it's already put in a top at this
+stage, just above $1,400.
+
+689
+01:43:49,400 --> 01:44:04,400
+So the question is, is if we're seeing a
+fundamental slowdown of the top line and
+potentially a fundamental slowdown in
+other parts of the business relative to
+previous years,
+
+690
+01:44:04,400 --> 01:44:09,400
+are we in phase one and is it going to get
+worse?
+
+691
+01:44:09,400 --> 01:44:15,400
+So the $1,400 and the $165 billion stock
+becomes what?
+
+692
+01:44:15,400 --> 01:44:19,400
+Well, at this moment in time, we just
+don't know.
+
+693
+01:44:19,400 --> 01:44:27,400
+And this is a great example as to why as
+traders and portfolio managers, we don't
+try to pick the top.
+
+694
+01:44:27,400 --> 01:44:37,400
+We don't try to go short stocks that
+haven't become confirmed X growth names
+yet.
+
+695
+01:44:37,400 --> 01:44:50,400
+If we had a fundamentally bearish tailwind
+in Shopify, where we're seeing evidence of
+top line growth falling quite
+aggressively,
+
+696
+01:44:50,400 --> 01:45:02,400
+and earnings estimates from analysts being
+cut and the stock starts to break to the
+downside, perhaps below the 1,000 level.
+
+697
+01:45:02,400 --> 01:45:12,400
+This is where we want to start getting
+short to take advantage of the phase two
+and the phase three move, if that
+potentially plays out.
+
+698
+01:45:12,400 --> 01:45:25,400
+So Under Armour and Teneco are good
+examples of why we try to stay away from
+phase four and phase five situations,
+
+699
+01:45:25,400 --> 01:45:34,400
+because they become turnaround stories or
+value traps and have a lot of volatility
+around that price for a long time.
+
+700
+01:45:34,400 --> 01:45:37,400
+And we can just get caught out being
+short.
+
+701
+01:45:37,400 --> 01:45:44,400
+Also with Under Armour and Teneco, they do
+display that at the moment in time of
+phase one,
+
+702
+01:45:44,400 --> 01:45:49,400
+we're probably not confirmed yet that the
+stock is going X growth.
+
+703
+01:45:49,400 --> 01:45:57,400
+And we need the stock to confirm that and
+for it to break to the downside so we can
+take advantage of phase two and phase
+three.
+
+704
+01:45:57,400 --> 01:46:06,400
+And Shopify is the perfect example of why
+we wouldn't short something in phase one,
+because it's too early.
+
+705
+01:46:06,400 --> 01:46:07,400
+It's too early.
+
+706
+01:46:07,400 --> 01:46:15,400
+It's too early yet to know whether the
+company, whether the stock has gone X
+growth.
+
+707
+01:46:15,400 --> 01:46:21,400
+Now, what we've talked about so far in
+this video on short idea processing.
+
+708
+01:46:21,400 --> 01:46:26,400
+It's all been about fundamental earnings
+growth.
+
+709
+01:46:26,400 --> 01:46:34,400
+But when we're shorting stocks, there are
+technical factors that we have to take
+into consideration as well.
+
+710
+01:46:34,400 --> 01:46:43,400
+And something we always have to consider,
+even with long ideas as well, but
+especially with short ideas.
+
+711
+01:46:43,400 --> 01:46:47,400
+We need to consider short interest in the
+stock.
+
+712
+01:46:47,400 --> 01:46:58,400
+And a really good resource for checking
+short interest as a retail trader is a
+website called shortsqueeze.com.
+
+713
+01:46:58,400 --> 01:47:00,400
+You should register there.
+
+714
+01:47:00,400 --> 01:47:10,400
+It's well worth the small annual fee to
+become a member of that website because
+you'll be able to check short interest in
+any stocks that you have ideas in.
+
+715
+01:47:10,400 --> 01:47:17,400
+So short interest is calculated as a short
+interest percentage.
+
+716
+01:47:17,400 --> 01:47:27,400
+So that's the amount of shares that have
+been sold short in the market divided by
+the amount of shares in issue.
+
+717
+01:47:27,400 --> 01:47:30,400
+So the float of the company.
+
+718
+01:47:30,400 --> 01:47:48,400
+And what this does is give us a sentiment
+gauge on how bearish the market is on the
+stock, but a much more useful measure,
+even though we do need to know what short
+interest is all the time and be aware of
+it.
+
+719
+01:47:48,400 --> 01:47:54,400
+A more useful measure is actually the days
+to cover ratio.
+
+720
+01:47:54,400 --> 01:47:57,400
+This is a liquidity measure.
+
+721
+01:47:57,400 --> 01:48:14,400
+So the liquidity measure of days to cover
+ratio is the amount of shares that have
+been sold short in the market divided by
+the average daily volume of the stock over
+the last 30 days.
+
+722
+01:48:14,400 --> 01:48:34,400
+And what this does is tell us that if
+everyone in the market who is currently
+short the stock went into the market to
+buy all of their shares back, how many
+days would it take them to actually buy
+all of their stock back?
+
+723
+01:48:34,400 --> 01:48:37,400
+This is why it's a liquidity measure.
+
+724
+01:48:37,400 --> 01:48:53,400
+So, yes, we absolutely have to be aware of
+what the short interest percentage is, as
+in how many shares have been sold short as
+a percentage of the amount of shares in
+issue, the float.
+
+725
+01:48:53,400 --> 01:48:55,400
+That can be very, very important.
+
+726
+01:48:55,400 --> 01:48:58,400
+But this is more of a sentiment indicator.
+
+727
+01:48:58,400 --> 01:49:07,400
+But what we also have to be aware of is
+the liquidity measure of days to cover.
+
+728
+01:49:07,400 --> 01:49:09,400
+So the days to cover ratio.
+
+729
+01:49:09,400 --> 01:49:25,400
+This is more important because it really
+gives us an understanding of the actual
+liquidity of the short that's out there
+relative to the amount of volume that is
+trading in the stock.
+
+730
+01:49:25,400 --> 01:49:36,400
+So short interest when we're using it in
+conjunction with the days to cover ratio
+is both a sentiment and liquidity measure.
+
+731
+01:49:36,400 --> 01:49:43,400
+You should use this as part of your
+technical analysis for both short and long
+ideas.
+
+732
+01:49:43,400 --> 01:49:50,400
+So imagine if we have a high days to cover
+ratio.
+
+733
+01:49:50,400 --> 01:50:03,400
+This basically means that there's a big
+risk of a very large short squeeze that
+could occur in the stock when all the
+shorts have to buy or cover their shorts.
+
+734
+01:50:03,400 --> 01:50:07,400
+So when they step into the market and buy
+all of their shares back.
+
+735
+01:50:07,400 --> 01:50:25,400
+Now, both a high short interest percentage
+and a high days to cover ratio could also
+mean that we're looking at a consensus
+short idea that is old, that is stale,
+that is not an original idea.
+
+736
+01:50:25,400 --> 01:50:30,400
+So it's a lazy default short in the
+market.
+
+737
+01:50:30,400 --> 01:50:36,400
+So this could be a situation, for example,
+like a phase four or phase five scenario.
+
+738
+01:50:36,400 --> 01:50:41,400
+But it could also be a phase one scenario.
+
+739
+01:50:41,400 --> 01:50:46,400
+So this is actually a good thing for your
+longs.
+
+740
+01:50:46,400 --> 01:50:50,400
+But obviously, it's a bad thing for any
+shorts.
+
+741
+01:50:50,400 --> 01:51:00,400
+So the question here is always, what is a
+dangerous short interest percentage level
+for short ideas?
+
+742
+01:51:00,400 --> 01:51:07,400
+Well, with this one, there is no right
+answer.
+
+743
+01:51:07,400 --> 01:51:23,400
+I've been involved in situations where on
+the professional side, for example, I've
+seen situations where there's been 60, 70,
+80% short interest in a stock.
+
+744
+01:51:23,400 --> 01:51:32,400
+And things are going really bad for the
+company and it's actually really justified
+because they can go bankrupt.
+
+745
+01:51:32,400 --> 01:51:45,400
+And I've seen situations where one hedge
+fund has been 35, 40% of the entire shares
+in issue short the stock and the stock
+goes to zero.
+
+746
+01:51:45,400 --> 01:51:57,400
+So with the percentage short interest
+itself for short ideas, there is no right
+answer here as to a level that is
+dangerous.
+
+747
+01:51:57,400 --> 01:52:02,400
+It always has to be taken in the context
+of what's actually happening with the
+stock.
+
+748
+01:52:02,400 --> 01:52:16,400
+In that situation, for example, where one
+hedge fund is short 35, 40% of all the
+shares in issue and the total short
+interest is 70, 80% of all shares in
+issue.
+
+749
+01:52:16,400 --> 01:52:31,400
+In that situation, the stock is cratering
+and it's generally in situations like that
+trading its market cap every day or even
+more than the value of its market cap
+every day.
+
+750
+01:52:31,400 --> 01:52:38,400
+So there's a lot of liquidity in the stock
+as it's traveling towards zero.
+
+751
+01:52:38,400 --> 01:52:46,400
+So the days to cover ratio in a situation
+like that might be surprisingly low.
+
+752
+01:52:46,400 --> 01:53:02,400
+So with percentage short interest, you
+can't look at it and say just because it's
+15% or 25% or 45% or 65% that it's high.
+
+753
+01:53:02,400 --> 01:53:05,400
+And there's a liquidity issue.
+
+754
+01:53:05,400 --> 01:53:11,400
+The liquidity issue is captured by the
+days to cover ratio.
+
+755
+01:53:11,400 --> 01:53:16,400
+With the short interest percentage, that
+is more of a sentiment issue.
+
+756
+01:53:16,400 --> 01:53:25,400
+It gives you a gauge on how hated the
+stock is by the market, how bearish the
+market is.
+
+757
+01:53:25,400 --> 01:53:32,400
+The days to cover ratio tells you if
+there's a liquidity issue with the shorts.
+
+758
+01:53:32,400 --> 01:53:39,400
+So obvious question, what is a dangerous
+days to cover ratio for shorts?
+
+759
+01:53:39,400 --> 01:53:44,400
+Well, as a liquidity measure for S&P 500
+stocks.
+
+760
+01:53:44,400 --> 01:53:54,400
+So fairly big stocks, large cap and mega
+cap stocks above 15 days starts to become
+marginal.
+
+761
+01:53:54,400 --> 01:54:06,400
+And once you start getting into the 20 day
+area, it starts to get dangerous and above
+30 days, it officially is dangerous.
+
+762
+01:54:06,400 --> 01:54:11,400
+So the way you've got to think about it is
+this.
+
+763
+01:54:11,400 --> 01:54:24,400
+When you look at the formula of the days
+to cover ratio, which is the amount of
+shares sold short over the average daily
+volume of the stock for the last 30 days.
+
+764
+01:54:24,400 --> 01:54:43,400
+This formula is assuming that if everybody
+in the market went into the market to buy
+their shorts back, that they're going to
+be 100% of the volume on an average day,
+which obviously technically can't be the
+case.
+
+765
+01:54:43,400 --> 01:54:53,400
+A more likely scenario is that they're
+going to be 20, 25, 30, 33% of the volume,
+something like this.
+
+766
+01:54:53,400 --> 01:55:05,400
+So imagine if you see a days to cover
+ratio of 20 days in a stock, what does
+that really mean?
+
+767
+01:55:05,400 --> 01:55:24,400
+Well, that 20 days assumes that if all the
+shorts went into the market to buy all of
+their stock back to cover their shorts,
+that it would take them 20 days based on
+the average daily volume of the last 30
+days.
+
+768
+01:55:24,400 --> 01:55:30,400
+But in reality, that can't happen.
+
+769
+01:55:30,400 --> 01:55:33,400
+They can't be 100% of the volume.
+
+770
+01:55:33,400 --> 01:55:40,400
+So let's assume that they went into the
+market and they were 25% of the day's
+volume.
+
+771
+01:55:40,400 --> 01:55:49,400
+That means it would take them 80 trading
+days for all the shorts to cover their
+positions.
+
+772
+01:55:49,400 --> 01:56:00,400
+So you have to think of the short interest
+percentage as a sentiment indicator and
+the days to cover ratio as a liquidity
+measure.
+
+773
+01:56:00,400 --> 01:56:05,400
+And think of the days to cover ratio in
+terms of order flow.
+
+774
+01:56:05,400 --> 01:56:12,400
+So in terms of unwinds, so unwinding as a
+percentage of the volume.
+
+775
+01:56:12,400 --> 01:56:29,400
+So this is why, for example, in periods
+like phase four and phase five of our
+short wave template, we try to avoid being
+the hero and shorting stocks based on past
+information,
+
+776
+01:56:29,400 --> 01:56:38,400
+thinking that fundamentals are just going
+to continually get worse and the stock is
+going to zero.
+
+777
+01:56:38,400 --> 01:56:44,400
+We don't need to be the heroes in shorting
+stocks to zero.
+
+778
+01:56:44,400 --> 01:56:51,400
+We can find and be happy with shorting
+stocks in phase two and phase three.
+
+779
+01:56:51,400 --> 01:57:11,400
+Because often what you will find with
+stocks in phase four and phase five is
+that there's a lot of consensus short
+positioning and technically the market can
+get itself in a bit of a mess or a big
+mess by getting short.
+
+780
+01:57:11,400 --> 01:57:23,400
+Too many shares as a percentage of the
+amount of shares in issue and relative to
+the average daily volume of the stock.
+
+781
+01:57:23,400 --> 01:57:41,400
+So when the company starts making noises,
+some positive noises around a possible
+turnaround story, we can get big short
+squeezes in the stock where everyone has
+to go in and buy the stock all at the same
+time to cover their shorts.
+
+782
+01:57:41,400 --> 01:57:56,400
+But they cut because there's no liquidity
+in the stock for the amount of shares that
+have been sold short in the market from
+the consensus positioning.
+
+783
+01:57:56,400 --> 01:58:14,400
+But in the year 2021, we saw some examples
+of this play themselves out in the market
+where the victims of the short interest
+were actually on the professional side of
+the industry.
+
+784
+01:58:14,400 --> 01:58:20,400
+So I'm sure you've all heard of the
+GameStop GME fiasco.
+
+785
+01:58:20,400 --> 01:58:36,400
+Here, there's a screenshot that we took in
+April 2021 where we're just capturing in
+this screenshot the amount of shares
+outstanding and the float of the company.
+
+786
+01:58:36,400 --> 01:58:44,400
+We can also see that the share price is
+currently $186.95.
+
+787
+01:58:44,400 --> 01:58:56,400
+The short interest percentage of the float
+is 10.2 million shares, which makes 18.84%
+of the float.
+
+788
+01:58:56,400 --> 01:59:04,400
+And we also have a days to cover ratio of
+roughly one third of a day to cover that
+short.
+
+789
+01:59:04,400 --> 01:59:14,400
+So roughly back of the envelope, the
+amount of shares that were changing hands
+each day must have been around 30 million
+shares.
+
+790
+01:59:14,400 --> 01:59:29,400
+But what we can also get and what is
+interesting is to look at the history of
+the short interest level, the amount of
+shares that have been sold short in the
+market, the history of that.
+
+791
+01:59:29,400 --> 01:59:54,400
+And we can see back in December 2020,
+going back for a period of at least four
+or five months where we can see that the
+total level of shares that were sold short
+in the market is around 70 million shares.
+
+792
+01:59:54,400 --> 02:00:10,400
+Which is equivalent, which is equivalent,
+as we know from the screenshot taken on
+the previous screen, which is equivalent
+to the total amount of shares in issue,
+the amount of shares outstanding.
+
+793
+02:00:10,400 --> 02:00:14,400
+So it's equivalent to the entire market
+cap of the company.
+
+794
+02:00:14,400 --> 02:00:40,400
+Now, GameStop GME as a stock was for a
+long time on a long, slow decline as a
+stock, as a company, fundamentally, and
+had gone well beyond its X growth phase
+and was in the phase five scenario.
+
+795
+02:00:40,400 --> 02:00:45,400
+So what we would characterize as the phase
+five scenario.
+
+796
+02:00:45,400 --> 02:00:51,400
+And they were in the phase five scenario
+for a very long time.
+
+797
+02:00:51,400 --> 02:00:58,400
+As in, it was a potential turnaround or
+value trap for an extremely long time.
+
+798
+02:00:58,400 --> 02:01:03,400
+And the turnaround just never happened
+over and over and over again.
+
+799
+02:01:03,400 --> 02:01:15,400
+And some smart ass in the professional
+training world on the hedge fund side
+decided that this stock stays were over.
+
+800
+02:01:15,400 --> 02:01:16,400
+It's going to zero.
+
+801
+02:01:16,400 --> 02:01:18,400
+It's going to zero.
+
+802
+02:01:18,400 --> 02:01:20,400
+And he wanted to be the hero.
+
+803
+02:01:20,400 --> 02:01:34,400
+And he forgot about all his basic
+principles of shorting and decided to end
+up shorting a significant percentage of
+the amount of shares in issue.
+
+804
+02:01:34,400 --> 02:01:44,400
+And as the stock started to creep up, he
+just got shorter and shorter and shorter,
+convinced that the stock was going to
+zero.
+
+805
+02:01:44,400 --> 02:01:45,400
+The company was bankrupt.
+
+806
+02:01:45,400 --> 02:01:47,400
+It was never going to turn around.
+
+807
+02:01:47,400 --> 02:01:49,400
+And he was trying to be the hero.
+
+808
+02:01:49,400 --> 02:01:53,400
+Well, guess what happened to that guy?
+
+809
+02:01:53,400 --> 02:01:56,400
+Here's the stock.
+
+810
+02:01:56,400 --> 02:02:16,400
+In January 2021, some retail traders in
+the fourth quarter of 2020 got onto this
+and decided that GME GameStop presented
+value with some potential upside.
+
+811
+02:02:16,400 --> 02:02:23,400
+And that there was a crowded short in the
+market that could be exploited.
+
+812
+02:02:23,400 --> 02:02:31,400
+And they went and bought some stock and
+then distributed the trade idea on public
+forums.
+
+813
+02:02:31,400 --> 02:02:36,400
+And then lots of retail traders came in to
+buy stock and call options.
+
+814
+02:02:36,400 --> 02:02:44,400
+And the stock started rallying
+aggressively in the second week of January
+2021.
+
+815
+02:02:44,400 --> 02:02:55,400
+And just a few weeks later, the stock had
+gone from essentially $10, $20 a share
+above $400 a share.
+
+816
+02:02:55,400 --> 02:03:05,400
+So the hedge fund that was short, the
+majority of the shares outstanding in the
+market got absolutely killed.
+
+817
+02:03:05,400 --> 02:03:10,400
+And a lot of retail traders made good
+money on that trade.
+
+818
+02:03:10,400 --> 02:03:19,400
+So in October 2020, GameStop was trading
+below $10 a share.
+
+819
+02:03:19,400 --> 02:03:25,400
+And at $10 a share, their market cap was
+around $700 million.
+
+820
+02:03:25,400 --> 02:03:41,400
+The short interest in the stock from April
+2020 to August 2020 was roughly between
+$50 million to $60 million shares sold
+short of the $70 million shares
+outstanding.
+
+821
+02:03:41,400 --> 02:03:54,400
+And as we can see from the previous chart
+that we looked at, short interest
+continued to rise as the stock rose to $70
+million shares.
+
+822
+02:03:54,400 --> 02:03:59,400
+So the hedge funds, and there was one main
+hedge fund that was the majority of the
+short.
+
+823
+02:03:59,400 --> 02:04:08,400
+So the hedge funds that were short, they
+were essentially short the equivalent of
+the entire market cap of the company.
+
+824
+02:04:08,400 --> 02:04:11,400
+So all the shares in issue.
+
+825
+02:04:11,400 --> 02:04:22,400
+Now being short $50 to $60 million of the
+$70 million shares outstanding is totally
+irresponsible to begin with.
+
+826
+02:04:22,400 --> 02:04:37,400
+But even worse, they were getting shorter
+and shorter as the stock rose to try and
+defend the short and sit on the stock so
+it wouldn't rally and the rally wouldn't
+kill them.
+
+827
+02:04:37,400 --> 02:04:39,400
+So what lessons can we take from this?
+
+828
+02:04:39,400 --> 02:04:49,400
+Well, shorting stocks in a hole and going
+for the hero trade is not something we
+want to be involved in ever.
+
+829
+02:04:49,400 --> 02:04:59,400
+No matter how convinced you are, we should
+be staying away from these phase four and
+phase five situations.
+
+830
+02:04:59,400 --> 02:05:06,400
+We don't need to expose ourselves to the
+hero to zero trade.
+
+831
+02:05:06,400 --> 02:05:10,400
+We don't need to expose ourselves to the
+hero trade.
+
+832
+02:05:10,400 --> 02:05:20,400
+We can be quite happy to be playing the
+phase two and phase three moves over a
+shorter time horizon.
+
+833
+02:05:20,400 --> 02:05:33,400
+And this is again why we have a market cap
+limit on shorts, because essentially a
+market cap limit is also a liquidity
+limit.
+
+834
+02:05:33,400 --> 02:05:57,400
+So when you're generating short ideas and
+you see X growth companies that are
+fundamentally a short, so you have the
+earnings growth profiles, you've done
+further work, and you believe the stock is
+going to go lower and it's a phase two and
+phase three situation.
+
+835
+02:05:57,400 --> 02:06:17,400
+And if it's a green light and it's
+acceptable, of course, you can go ahead
+and short the stock if it's genuinely X
+growth and in the phase two and phase
+three scenarios.
+
+836
+02:06:17,400 --> 02:06:30,400
+However, if you see fundamentals in the
+earnings growth that are questionable, you
+pull up the stock and it's down a lot
+already.
+
+837
+02:06:30,400 --> 02:06:35,400
+It seems to be in the phase four period.
+
+838
+02:06:35,400 --> 02:06:42,400
+Management are making noises about a
+turnaround and a new operating plan, a new
+management operating plan.
+
+839
+02:06:42,400 --> 02:06:46,400
+You check the short interest percentage
+and it's very high.
+
+840
+02:06:46,400 --> 02:06:55,400
+You check the days to cover and it's above
+15, perhaps above 20, even worse above 30.
+
+841
+02:06:55,400 --> 02:06:56,400
+You check the short interest rate.
+
+842
+02:06:56,400 --> 02:06:57,400
+This is an issue.
+
+843
+02:06:57,400 --> 02:07:02,400
+These are the types of short ideas that we
+want to stay away from.
+
+844
+02:07:02,400 --> 02:07:03,400
+Why?
+
+845
+02:07:03,400 --> 02:07:10,400
+Because we will end up like this donut at
+Melvin Capital.
+
+846
+02:07:10,400 --> 02:07:16,400
+Gabe Plotkin, who was the guy behind the
+GME short.
+
+847
+02:07:16,400 --> 02:07:32,400
+Yes, they were down 49% on their entire
+fund in the first quarter of 2021, which
+is an irrecoverable position, even for a
+professional hedge fund manager.
+
+848
+02:07:32,400 --> 02:07:35,400
+That is an absolute disaster.
+
+849
+02:07:35,400 --> 02:07:43,400
+For a retail trader, 49% in a quarter loss
+as well is a disaster.
+
+850
+02:07:43,400 --> 02:07:48,400
+So these are the situations that we need
+to stay away from.
+
+851
+02:07:48,400 --> 02:07:53,400
+Stay away from the scenarios that are
+phase four and phase five.
+
+852
+02:07:53,400 --> 02:08:11,400
+Try not to get into bad habits of trying
+to short stocks in a hole and being the
+hero thinking that you've got an edge over
+the market and that a stock that's already
+down 80% is going to deteriorate further
+and go to zero.
+
+853
+02:08:11,400 --> 02:08:16,400
+And you're the hero calling it and you're
+going to be the guy that makes all the
+money.
+
+854
+02:08:16,400 --> 02:08:20,400
+Make sure you stay away from those
+situations.
+
+855
+02:08:20,400 --> 02:08:27,400
+Also, make sure that you stay away from
+bad habits of shorting stocks too early in
+phase one.
+
+856
+02:08:27,400 --> 02:08:40,400
+Try to tend towards good behaviors of
+shorting stocks in phase two, taking
+advantage of a phase two move and taking
+advantage of a phase three move and then
+move on to the next one.
+
+857
+02:08:40,400 --> 02:09:01,400
+So we always need to use short interest
+percentage and the days to cover ratio as
+a head check on our fundamental work to
+figure out what the technical situation is
+in the market before even thinking about
+initiating a position.
+
+858
+02:09:01,400 --> 02:09:17,400
+Now, does this mean that we should use
+short interest percentage and days to
+cover as a way to find long ideas and
+short ideas?
+
+859
+02:09:17,400 --> 02:09:36,400
+So for example, you rank short interest
+percentage and days to cover numbers via
+the website shortsqueeze.com and you just
+simply go long, high short interest names
+and short, low short interest names.
+
+860
+02:09:36,400 --> 02:09:37,400
+Well, no, of course not.
+
+861
+02:09:37,400 --> 02:09:42,400
+This is not how we generate trade ideas.
+
+862
+02:09:42,400 --> 02:09:59,400
+This is just one tiny part of the overall
+process that may allow you to avoid or
+swerve traps and or to confirm that your
+potential idea is not consensus.
+
+863
+02:09:59,400 --> 02:10:15,400
+So always, always, always make sure of the
+short interest percentage and the days to
+cover ratio when you've generated what you
+believe is a fundamentally driven short
+idea.
+
+864
+02:10:15,400 --> 02:10:19,400
+You need to check the technical situation
+in the market with short interest
+percentage and days to cover.
+
+865
+02:10:19,400 --> 02:10:33,400
+Now, something else that you need to check
+as a technical situation as well is
+whether a company is paying a dividend or
+not.
+
+866
+02:10:33,400 --> 02:10:42,400
+This becomes quite important even in the
+20 to 60 day time horizon.
+
+867
+02:10:42,400 --> 02:10:52,400
+So if a company is paying a dividend
+within that time horizon, it becomes quite
+important as a technical situation to
+consider.
+
+868
+02:10:52,400 --> 02:10:59,400
+So the questions you need to ask yourself
+are, is a company actually paying a
+dividend or not?
+
+869
+02:10:59,400 --> 02:11:08,400
+If they are, how much is the dividend in
+terms of cents per share and also as a
+percentage yield?
+
+870
+02:11:08,400 --> 02:11:14,400
+And also, what is the likelihood that the
+company is going to cut their dividend?
+
+871
+02:11:14,400 --> 02:11:27,400
+Now, the reason why this is important is
+because when you are short a dividend
+paying stock, you are actually what is
+termed short the dividend.
+
+872
+02:11:27,400 --> 02:11:35,400
+You are a borrower of stock from a stock
+owner and you will owe them the dividend.
+
+873
+02:11:35,400 --> 02:11:44,400
+Now, in reality, in your trading account,
+you won't actually have to physically take
+any action at all.
+
+874
+02:11:44,400 --> 02:11:48,400
+The broker should do everything for you on
+your behalf.
+
+875
+02:11:48,400 --> 02:11:59,400
+So running through an example, let's say
+we have a $100 stock that pays a dividend
+of $1 per quarter.
+
+876
+02:11:59,400 --> 02:12:06,400
+So they're paying $4 over the year, $4 in
+total, 4% dividend yield.
+
+877
+02:12:06,400 --> 02:12:13,400
+Now, let's say you've identified this
+stock as a potential fundamental short.
+
+878
+02:12:13,400 --> 02:12:24,400
+So after all your hard work of identifying
+the stock as a short, you decide that
+you're going to short a hundred shares of
+this $100 stock.
+
+879
+02:12:24,400 --> 02:12:32,400
+So your position is going to be $10,000
+notional or gross exposure.
+
+880
+02:12:32,400 --> 02:12:42,400
+Now, let's say the stock goes down $10 to
+$90 a share before the next ex-dividend
+date.
+
+881
+02:12:42,400 --> 02:12:44,400
+So this is great.
+
+882
+02:12:44,400 --> 02:12:48,400
+This is a good situation because you're
+short at $100.
+
+883
+02:12:48,400 --> 02:12:49,400
+Congratulations.
+
+884
+02:12:49,400 --> 02:12:51,400
+You're making money.
+
+885
+02:12:51,400 --> 02:13:00,400
+Your position is now 100 shares short at
+$100, showing a profit of $1,000.
+
+886
+02:13:00,400 --> 02:13:06,400
+And your mark-to-market gross exposure is
+100 shares at $90.
+
+887
+02:13:06,400 --> 02:13:12,400
+So $9,000 notional gross exposure that's
+marked to market.
+
+888
+02:13:12,400 --> 02:13:28,400
+Now, on the next quarterly ex-dividend
+day, you open your brokerage platform and
+the stock has gone what we call
+ex-dividend by the $1 dividend per share.
+
+889
+02:13:28,400 --> 02:13:41,400
+And your average price that you are short,
+originally from $100, has now gone to $99
+in the trading platform, in your trading
+account.
+
+890
+02:13:42,400 --> 02:13:49,400
+And the stock opens $1 lower that day at
+$89.
+
+891
+02:13:49,400 --> 02:13:53,400
+So in the new situation, what's your
+position?
+
+892
+02:13:53,400 --> 02:13:55,400
+What's your profit or loss?
+
+893
+02:13:55,400 --> 02:13:58,400
+What is your actual gross exposure?
+
+894
+02:13:58,400 --> 02:14:10,400
+Well, your position is still short 100
+shares, but now you have an average price
+of being short at $99.
+
+895
+02:14:10,400 --> 02:14:16,400
+So with the stock at $89, you're still up
+$10 on 100 shares short.
+
+896
+02:14:16,400 --> 02:14:19,400
+So your P&L is still up $1,000.
+
+897
+02:14:19,400 --> 02:14:25,400
+But your gross exposure is now 100 shares
+mark-to-market at $89.
+
+898
+02:14:25,400 --> 02:14:27,400
+So $8,900.
+
+899
+02:14:27,400 --> 02:14:33,400
+So this is because the stock has now gone
+ex-dividend by $1.
+
+900
+02:14:33,400 --> 02:14:38,400
+So they've paid out a quarterly dividend
+of the $1 per share.
+
+901
+02:14:38,400 --> 02:14:42,400
+And this money leaves the company balance
+sheet.
+
+902
+02:14:42,400 --> 02:14:54,400
+On the ex-dividend date, the stock adjusts
+lower by $1 to reflect the value of the
+dividend that's been paid out to the stock
+owners, the shareholders.
+
+903
+02:14:54,400 --> 02:15:05,400
+So for yourself who is short as a person
+or entity that has a short position, you
+do not own the stock.
+
+904
+02:15:05,400 --> 02:15:08,400
+And therefore, you don't receive the
+dividend.
+
+905
+02:15:08,400 --> 02:15:10,400
+So the $1 per share.
+
+906
+02:15:10,400 --> 02:15:17,400
+So your average price adjusts to reflect
+the fact that you didn't receive it.
+
+907
+02:15:17,400 --> 02:15:30,400
+On the long side, the owner of the stock
+that you owe the dividend to receives the
+$1 per share dividend at some point in the
+future on the dividend payable or
+settlement date.
+
+908
+02:15:30,400 --> 02:15:37,400
+And the owner of the stock has their
+average price adjusted down also by $1.
+
+909
+02:15:37,400 --> 02:15:46,400
+However, they actually receive the $1
+payment into their trading account at the
+settlement date.
+
+910
+02:15:46,400 --> 02:15:50,400
+As the short seller, you don't receive any
+payment.
+
+911
+02:15:50,400 --> 02:15:57,400
+So for the stock owner, the trade is
+simply a wash.
+
+912
+02:15:57,400 --> 02:16:03,400
+There's a $1 stock adjustment and $1
+average price adjustment.
+
+913
+02:16:03,400 --> 02:16:12,400
+For a person or entity who is short, it's
+just an average price adjustment.
+
+914
+02:16:12,400 --> 02:16:16,400
+So let's make this a little bit more
+clear.
+
+915
+02:16:16,400 --> 02:16:23,400
+Imagine if you kept the short position on
+for a decade, for 10 years, what would
+actually happen?
+
+916
+02:16:23,400 --> 02:16:35,400
+Well, for the company, there would be $41
+dividend payments made to shareholders in
+that period because it's a quarterly $1
+dividend.
+
+917
+02:16:35,400 --> 02:16:45,400
+So let's say the stock over the 10 years
+goes from $100 to $200 in terms of
+appreciation.
+
+918
+02:16:45,400 --> 02:17:01,400
+Well, the owner of the shares receives $40
+in dividends realized and has made $100
+unrealized in terms of capital gain on the
+stock's appreciation.
+
+919
+02:17:01,400 --> 02:17:14,400
+So the owner's new average price, because
+they're receiving all of these 40
+dividends, these $41 dividends, the
+owner's new average price is $60.
+
+920
+02:17:14,400 --> 02:17:27,400
+So on an initial investment of 100 shares
+at $100, so the $10,000 notional, they've
+made a profit of $140 per share with 100
+shares.
+
+921
+02:17:27,400 --> 02:17:35,400
+So it's $14,000 profit on top of the
+$10,000 initial investment.
+
+922
+02:17:35,400 --> 02:17:48,400
+The short seller of 100 shares over the
+same time period loses $40 in value of
+dividend value because they didn't receive
+the dividend as a realized payment.
+
+923
+02:17:48,400 --> 02:17:54,400
+So the short seller's new average price is
+also $60 but they didn't receive any
+dividends.
+
+924
+02:17:54,400 --> 02:18:09,400
+So they have an unrealized loss of $140
+per share or $40,000 on the initial short
+of the notional $10,000.
+
+925
+02:18:09,400 --> 02:18:25,400
+Now, on the actual ex-dividend date that a
+stock goes ex-dividend, typically, but not
+all the time, stocks will go higher than
+their ex-dividend adjustment price.
+
+926
+02:18:25,400 --> 02:18:37,400
+And this is mainly because a lot of
+shareholders elect to automatically
+reinvest the dividend back into the stock.
+
+927
+02:18:38,400 --> 02:18:51,400
+So from the example that we've been going
+through, the owner that received the $100
+dividend when the stock was at $89 at the
+ex-dividend adjustment price,
+
+928
+02:18:51,400 --> 02:18:58,400
+they may have elected to automatically buy
+one share at $89.
+
+929
+02:18:58,400 --> 02:19:12,400
+Now, if all the owners of the stock do
+this, then the stock will likely not go
+down on the ex-dividend date and will be
+up, potentially when even buyers break
+limit.
+
+930
+02:19:12,400 --> 02:19:18,400
+So we term this by saying the stock went
+ex-dividend.
+
+931
+02:19:18,400 --> 02:19:27,400
+Well, so on the ex-dividend date, the
+stock actually went up above the
+ex-dividend adjustment price.
+
+932
+02:19:28,400 --> 02:19:39,400
+If the stock closes lower than the
+adjustment price of $89, we term this as
+the stock went ex-dividend badly.
+
+933
+02:19:40,400 --> 02:19:47,400
+So a stock can go ex-dividend well or
+badly for multiple other reasons.
+
+934
+02:19:47,400 --> 02:19:50,400
+There are many variables at play here.
+
+935
+02:19:50,400 --> 02:20:01,400
+So for example, when the US stock market
+is closed, if a company is or a stock is
+going ex-dividend the following day and
+overnight,
+
+936
+02:20:01,400 --> 02:20:10,400
+for example, overseas markets, the wider
+stock markets may have just been up really
+big overnight.
+
+937
+02:20:10,400 --> 02:20:19,400
+And the stock could just open up the next
+day in the US at $92 with a dividend
+adjustment price of $89.
+
+938
+02:20:20,400 --> 02:20:26,400
+So it could be up $3 on the ex-dividend
+day for that reason.
+
+939
+02:20:27,400 --> 02:20:30,400
+It doesn't really matter what the reason
+is.
+
+940
+02:20:30,400 --> 02:20:44,400
+If the stock closes on the ex-dividend day
+above $89, so our ex-dividend adjustment
+price, the stock still went ex-dividend
+well.
+
+941
+02:20:45,400 --> 02:20:52,400
+Below $89, the stock simply went
+ex-dividend badly.
+
+942
+02:20:52,400 --> 02:21:00,400
+So does this mean as a short seller that
+you should always avoid being short
+dividend paying stocks?
+
+943
+02:21:01,400 --> 02:21:02,400
+Well, no, of course not.
+
+944
+02:21:02,400 --> 02:21:13,400
+If the business operation of the company
+is cratering, then the dividend is likely
+to get cut and could be cut entirely.
+
+945
+02:21:13,400 --> 02:21:20,400
+So the stock in anticipation of that could
+just get absolutely hammered and the
+dividend just doesn't even matter.
+
+946
+02:21:21,400 --> 02:21:33,400
+So if you're looking to short a dividend
+paying stock, then you have to have a good
+or high level of conviction that the
+dividend is actually going to get cut.
+
+947
+02:21:34,400 --> 02:21:52,400
+So as with short interest percentage and
+with the days to cover ratio, we have to
+have a head check also for the technical
+situation in the market with the company's
+dividend if they're paying a dividend at
+all.
+
+948
+02:21:53,400 --> 02:22:01,400
+And we need to ask ourselves the pretty
+serious questions that are actually very
+simple and straightforward to answer.
+
+949
+02:22:02,400 --> 02:22:04,400
+Firstly, is the company paying a dividend?
+
+950
+02:22:05,400 --> 02:22:06,400
+Secondly, how much?
+
+951
+02:22:07,400 --> 02:22:12,400
+And third, what is the likelihood that the
+company is going to cut the dividend?
+
+952
+02:22:13,400 --> 02:22:28,400
+So we must have this process in place as a
+head check additional to short interest
+and days to cover to make sure we're happy
+being short a stock that actually pays a
+dividend.
+
+953
+02:22:29,400 --> 02:22:35,400
+And the amount of the dividend and the
+likelihood so we're actually happy that
+we're doing it.
+
+954
+02:22:36,400 --> 02:22:42,400
+So have your fundamentally driven short
+trade idea in place.
+
+955
+02:22:43,400 --> 02:22:45,400
+Check the short interest percentage.
+
+956
+02:22:46,400 --> 02:22:48,400
+Check the days to cover ratio.
+
+957
+02:22:49,400 --> 02:22:51,400
+Check the dividend situation.
+
+958
+02:22:52,400 --> 02:22:53,400
+Are they paying a dividend?
+
+959
+02:22:54,400 --> 02:23:03,400
+How much and what's the likelihood that
+they're going to cut the dividend based on
+my analysis of the business operation?
+
+960
+02:23:04,400 --> 02:23:20,400
+If all of those are in place and you're
+happy with the situation, you're happy
+with the fundamentals and happy with the
+short interest, days to cover and dividend
+situation, then your short trade idea
+probably has a green light.
+
+961
+02:23:21,400 --> 02:23:31,400
+But remember, we still have a lot more
+work to do in the trade idea generation
+process for shorts and as well as longs.
+
+962
+02:23:32,400 --> 02:23:39,400
+We don't just get our trade ideas by
+ranking for earnings growth and then go
+long and short stocks.
+
+963
+02:23:40,400 --> 02:23:50,400
+But we obviously have to do a lot more
+work on the companies to see what's behind
+earnings growth, valuation, etc.
+
+964
+02:23:51,400 --> 02:24:07,400
+Remember when we're looking at the
+earnings growth profiles in a sector like
+we have done and characterized the
+earnings growth profiles in this video
+from a short perspective through a short
+lens.
+
+965
+02:24:08,400 --> 02:24:09,400
+This is an identification process.
+
+966
+02:24:11,400 --> 02:24:34,400
+We continue to do more work once we have
+identified what we believe to be negative
+outliers in a particular sector and our
+further work will determine whether we
+believe our trade idea is actually a green
+light and is actually a short.
+
+967
+02:24:35,400 --> 02:24:41,400
+So let's summarize everything here for
+short idea processing.
+
+968
+02:24:42,400 --> 02:24:52,400
+So for our quant processes on identifying
+potential short ideas, we outlined the
+earnings growth profiles that we look for.
+
+969
+02:24:53,400 --> 02:24:59,400
+Now, sequentially negative earnings growth
+is ideal in quotes on paper.
+
+970
+02:25:00,400 --> 02:25:14,400
+However, in a GDP growth environment, it
+is much harder to find than if we were in
+a GDP slowdown or an expected GDP
+contraction environment.
+
+971
+02:25:15,400 --> 02:25:29,400
+In addition to that, we also have to
+consider that if EPS growth expectations
+have already been set in the market at
+sequentially negative as a profile,
+
+972
+02:25:30,400 --> 02:25:35,400
+it is very likely that the stock has
+already moved quite a bit lower.
+
+973
+02:25:36,400 --> 02:25:46,400
+So what we want to be doing as traders is
+targeting the phase two and phase three
+scenarios on the journey of a stock
+falling.
+
+974
+02:25:47,400 --> 02:25:58,400
+We will most probably find ourselves going
+for the next best thing after sequentially
+negative earnings growth profiles in our
+list.
+
+975
+02:25:58,400 --> 02:26:15,400
+So cases number two, three, four and five
+as long as we are in what we characterized
+as a phase two or phase three scenario of
+stock price decline on its journey on the
+way down.
+
+976
+02:26:16,400 --> 02:26:32,400
+We also have to add market cap filters on
+our shorts to avoid making the rookie
+errors of, for example, like shorting
+stocks in a hole and going for the zero to
+hero trade.
+
+977
+02:26:33,400 --> 02:26:49,400
+Additionally, we have to overlay our
+fundamental work with technical factors in
+our process in the quantum phase, for
+example, checking the short interest days
+to cover ratio and the dividend situation.
+
+978
+02:26:50,400 --> 02:27:02,400
+Most importantly, out of the technical
+factors, we want to make sure that we are
+not exposing ourselves to high levels of
+short interest.
+
+979
+02:27:02,400 --> 02:27:15,400
+So high levels of short interest and high
+days to cover, which basically is a
+warning sign that we could be entering or
+getting sucked into consensus market
+positioning.
+
+980
+02:27:16,400 --> 02:27:26,400
+So high levels of short interest that
+indicate extreme bearish sentiment that's
+already occurring in the market.
+
+981
+02:27:27,400 --> 02:27:40,400
+And also on top of that, a very high days
+to cover ratio, which means there could be
+a liquidity issue and we could get a short
+squeeze in the stock and get caught out.
+
+982
+02:27:41,400 --> 02:27:44,400
+At the end of the day, we are traders, not
+investors.
+
+983
+02:27:45,400 --> 02:27:55,400
+Catching the phase two and phase three
+scenario in an X growth stock is what we
+are looking to achieve with our short
+ideas.
+
+984
+02:27:56,400 --> 02:28:07,400
+We are seeking to predict and participate
+in a fundamental shift lower in
+expectations of the business operation.
+
+985
+02:28:08,400 --> 02:28:14,400
+To achieve earnings, we want to achieve
+earnings EPS, earnings growth and even
+revenue growth as well.
+
+986
+02:28:15,400 --> 02:28:23,400
+And as always, just like with long ideas,
+we want to be catching the 20 to 60 day
+time horizon.
+
+987
+02:28:24,400 --> 02:28:37,400
+And with shorts, what we want to be
+focusing on is attempting to catch the
+sharp moves down in the stock during those
+phase two and phase three periods.
+
+988
+02:28:39,400 --> 02:28:46,400
+So that about wraps it up for this video
+with short idea processing in the quant
+phase.
+
+989
+02:28:47,400 --> 02:28:52,400
+I don't think we need a summary again by
+going back to the desk for this one.
+
+990
+02:28:53,400 --> 02:29:01,400
+Let's go right in to the next video where
+we're going to be looking at turnaround
+stories and value traps.

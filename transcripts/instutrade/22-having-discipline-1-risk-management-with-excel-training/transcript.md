@@ -1,0 +1,441 @@
+---
+course: instutrade
+lesson_id: "22"
+title: "Having Discipline 1, Risk Management with Excel Training"
+module: discipline-and-risk
+module_title: "Discipline and risk management"
+duration: 01:26:05
+duration_seconds: 5165.44
+source: "Anton Kreil - Professional Trading Masterclass Instutrade/22. Having Discipline 1, Risk Management with Excel Training.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  []
+---
+
+# 22 — Having Discipline 1, Risk Management with Excel Training
+
+Okay, welcome back. Welcome to video number 22. We're now going to move on to the next stage of the process. We're moving on to risk management. And specifically here, we're going to take the first step to having an effective risk management process, which is to get the foundation set in stone for your trading psychology.
+
+So, at this stage, what we're doing is we're actually assuming that we've been through the entire idea generation process, and we've been through the gatekeeping process.
+
+So, we've got a position or number of positions that we actually want to take, and they're going to become live positions in our portfolio.
+
+How do we effectively manage the risk? Well, it all starts with trading psychology. So, what we're going to do first is go to the presentation and go through training psychology to make sure that you've got the foundation set in stone.
+
+Then, we're going to go over to the computer screen. When we go over to the computer screen, we're going to be looking at a previous example in terms of using that example as a real position and deciding how we're going to manage the risk around it.
+
+Then, we're going to go through the ATR. So, the volatility indicator of the average true range that we looked at earlier in the video series. We're going to use that and see how we use the ATR to decide on our effective stop losses and targets on all trades that we do.
+
+Once we've been through that on the computer, you're going to have a very good foundation for your trading psychology, and also the outlook on how you set stop losses and targets effectively on every trade that you're about to enter.
+
+Then, we'll come back and do a summary and run through everything that we've just discussed in terms of trading psychology, our examples, and the volatility indicator for ATR for setting stop losses and targets.
+
+Then, we'll move into video number 23. So, let's go over to the stage, over to the presentation, and I'll see you on the computer after that.
+
+So, we've seen the screening process, we've got ideas, we've got our watch list, we've got our TA processes that we go through to make sure we don't do anything stupid, and time positions and ideas well.
+
+But in combination with that, we've got to make sure, before we take a position, whether our heads are actually right to be traders and trade for the rest of our lives.
+
+Risk management processes are not dreamt out of thin air. They're there for a reason.
+
+Now, I'll show you the reasons why. We're going to play a game.
+
+We're going to trade marbles, and I'm going to trade marbles with you.
+
+So, it's me against the rest of the room.
+
+And in this scenario, you're getting paid.
+
+So, I'm paying you money. Okay?
+
+We've got two boxes, box A and box B.
+
+And in box A, there's three blue marbles, one red marble.
+
+And in box B, there's one green marble.
+
+If you put your hand in box A and you pull out a blue marble, I pay you a thousand pounds.
+
+If you put your hand in box A and pull a red marble, I pay you nothing.
+
+If you put your hand in box B, there is only one green marble, and it pays seven hundred.
+
+You'll pull it. I have to pay you seven hundred.
+
+Who says box A? Hands up.
+
+Who says box B? Okay.
+
+So, it's about 50-50.
+
+This is one shot at the moment.
+
+One shot.
+
+Okay.
+
+Scenario two.
+
+Please be quiet.
+
+Scenario two.
+
+Let's play the game and finish it.
+
+Scenario two.
+
+Same situation, but now you pay me.
+
+If you put your hand in box A, you're still putting your hand in the box, by the way.
+
+If you put your hand in box A, you take a blue marble, you pay me a thousand pounds.
+
+If you put your hand in box A and pull a red, you pay me nothing.
+
+If you put your hand in box B, you have to pay me seven hundred.
+
+Who says box A?
+
+Who says box B?
+
+Well, that's totally skewed.
+
+Because before it was 50-50, and now it was 90-10.
+
+Sorry, 10-90, yeah?
+
+So, there were loads of people in the room that said the same box for both.
+
+So, the psychology of the room is messed up.
+
+Okay.
+
+In this situation, in both situations, box A, you're taking risk.
+
+Yeah?
+
+And in box B, you're not.
+
+You've got certainty.
+
+So, box A are known as risk and certainty.
+
+In this scenario, when you're getting paid, what do you want to do?
+
+Take risk or get certain returns?
+
+Well, it was 50-50.
+
+That was the show of hands, yeah?
+
+So, what if I said 50% of you are right and 50% of you are wrong?
+
+So, which box is it?
+
+Do you want to take risk when you're getting paid?
+
+Okay.
+
+The wrong answer is B.
+
+We'll go through this in a second.
+
+What's the payout of box A?
+
+The payout of box A is 750.
+
+Yeah?
+
+Okay.
+
+Calm down.
+
+Calm down.
+
+Calm down.
+
+It'll all be explained.
+
+You don't have to have a conversation about it.
+
+Okay.
+
+Box B is certainty.
+
+It's human nature when you're getting paid.
+
+Humans like certainty when they're getting paid.
+
+In a usual situation, the split of the room when getting paid is usually 70% or 80% would go. for box B.
+
+Because humans tend towards certainty when they're getting paid.
+
+In this situation, when you're paying out,
+
+do you want to take risk when you're paying out or do you want certainty when you're paying out?
+
+Exactly.
+
+Usually 70%, 80% of the room would go here.
+
+Humans.
+
+That's what humans do.
+
+Traders want to be here.
+
+Traders want to know their downside.
+
+So the payout of box A is 750.
+
+The payout of box B is 700.
+
+Magnify those numbers and it becomes more apparent.
+
+People get confused because the numbers are slightly close together.
+
+Yeah?
+
+Okay.
+
+So the payout of box A is 750.
+
+The payout of box B is 700.
+
+Magnify those numbers and it becomes more apparent.
+
+People get confused because the numbers are slightly close together.
+
+Yeah?
+
+Okay.
+
+So the payout of box A is 750.
+
+The payout of box B is 700.
+
+Magnify those numbers and it becomes more apparent.
+
+People get confused because the numbers are slightly close together.
+
+Yeah?
+
+When you look at this in trading in human psychology, what does it mean?
+
+Well, it means when we're looking at our portfolio and let's say we've got 10 positions and we've And we've got five winners and five losers.
+
+A human would increase the position size of all their losers and take profits on all their winners.
+
+What's the most likely thing to happen?
+
+The losers will continue losing.
+
+A trader would do the opposite.
+
+A trader would cut their losers, take the money and add it to their winners.
+
+So what have you got to do in trading?
+
+You've got to be the opposite of being human.
+
+And it's very easy to say it when you're sitting in a lecture theatre or on a stage.
+
+But when real money is involved, humans tend to appear from everywhere.
+
+Let's go through a typical Goldman Sachs interview question.
+
+We used to ask this question a lot.
+
+And we'll do a show of hands again.
+
+You buy a stock at 100.
+
+And you're sitting on the trading desk.
+
+And it's Monday at 10 p.m.
+
+Sorry, 10 a.m.
+
+Markets, neither here nor there.
+
+You buy a stock for $100 off one of the salespeople on the other side of the trading floor.
+
+As you're going through all of your positions at 10 past four in the afternoon.
+
+You've got 20, 25 minutes before the market closes.
+
+You see the stock that you bought at 100 is trading at 93.
+
+You've got three choices.
+
+Market closes in 20 minutes.
+
+And you can't sit on the fence.
+
+Who says buy more?
+
+Who says hold?
+
+Who says sell?
+
+Okay.
+
+Who said hold?
+
+Who said buy more?
+
+You're still in the game.
+
+Okay.
+
+Who said hold?
+
+Who said buy more?
+
+You're still in the game.
+
+Okay.
+
+Who said sell?
+
+Okay.
+
+Who said hold?
+
+Who said buy more?
+
+Who said sell?
+
+Who said sell?
+
+Okay.
+
+Who said hold?
+
+Who said buy more?
+
+Who said buy more?
+
+You're still in the game.
+
+Everyone else has left the game.
+
+You go home.
+
+You have a nice spaghetti bolognese.
+
+Could be horse meat.
+
+Never know.
+
+Watch a bit of TV.
+
+Have a nice chat with your mum on the phone.
+
+You go to bed.
+
+You go into the office the next day.
+
+Market opens.
+
+You run through all your positions at 8.20 in the morning.
+
+And the stock you bought at 100 yesterday is now 82.
+
+Three choices.
+
+Buy more, sell or hold?
+
+Who was still in the game?
+
+Okay.
+
+Who says buy more?
+
+Okay.
+
+Who says hold?
+
+Who says sell?
+
+Who says sell?
+
+Okay.
+
+Who says sell?
+
+Okay.
+
+Who says sell?
+
+Who says sell?
+
+Okay.
+
+Who's still in the game?
+
+Okay.
+
+You go about your day making loads of prices for big clients all over the world.
+
+Okay.
+
+You check the clock.
+
+You check the clock.
+
+It's 10 past 4.
+
+Time to go through all your positions again.
+
+The stock that you bought at 100 that yesterday was 93 and is now 82 or was 82 this morning.
+
+As you're going through your positions, the salesperson who sold it to you yesterday screams at you and says the company has just announced that they're going to miss their earnings estimates for the next year and the stock goes straight to 51.
+
+Who's still in the game?
+
+You've got three options.
+
+Buy more, hold or sell?
+
+Who says buy more?
+
+Who's holding?
+
+Who's selling?
+
+Okay.
+
+Who's still in the game?
+
+Okay.
+
+So the market closes.
+
+You haven't sold any.
+
+You go home.
+
+Have a beef lasagna.
+
+Watch a movie.
+
+Have a chat to your brother or sister on the phone.
+
+Go to bed.
+
+Wake up the next day.
+
+Go into work.
+
+All the analysts for the last two years who have had a strong buy on the stock are now releasing all their notes and saying sell and downgrading all of their estimates and putting price targets on the company of 10p. but let's say ten dollars who's still in the game there were there were more people in the game by the way you're lying now and then the market opens other stocks trading at $20 you got three choices buy more hold or sell who was still in the game don't lie what do you do you buy more okay who holds who sells okay so there's a couple of us left now the boss calls you into the office and asks you to explain what you've just done in the last three days okay those who cut at 93 pulled from box B those who held or bought more all the way down were seeking risk when they were losing when they were paying out to the market the scenario you were in there was paying out it's a very important lesson they had no choice the client solve it to them they had to do business with the clients it's just a hypothetical scenario but it's a very realistic scenario actually because it happens every day it happens every minute of every day it's just an example forget about forget about a trader being an investment bank just imagine you bought the stock at $100 in your retail trader brokerage account okay calm down okay it's a very simple way of looking at it but this is exactly human psychology and it's nothing to feel bad about if you buy or hold in those situations and you don't do something if you don't do anything to make sure that your downside is protected here you're just being human because that's what humans do they seek more risk in negative situations when they're paying out to the market in that situation you have to be non-human and do something trade out what about the opposite situation you buy a stock for $100 you go through your positions later on in the day and it goes to $120 what do you do buy more hold or sell either hold or buy more then it goes to $140 buy more hold or sell then it goes to $200 do you buy more hold or sell you see where we're going what if you'd have taken profits at $120 so imagine if you took profits at $120 in the second scenario we're just looking at winners and losers in your portfolio so yes you generate the ideas yes you go through screening processes to try and time your ideas well but guess what you will have losers in your portfolio and you will have winners it's as much what you do with them that defines you as a trader so if you do that many many times over you're just not going to last long at all you need to do literally the opposite this is why we have stop losses and what we call soft targets we have soft targets so we don't limit our upside on a trade we have hard stop losses so we limit our downside on a trade what do we mean by soft targets if you don't place an order to sell automatically you can't hold it to any side yeah so you put a target on it and you say if I'm going to buy this at $100 I might think a sensible hard stop loss is $92 and a soft target $125 so what have you got there you've basically got a 1 to 3 ratio on your stop loss to your target yeah now what happens if the stock then goes to $125 do you trade out well you don't need to because you're making money now you're in a very powerful position when you're making money on a 1 to 3 ratio you're in a very powerful position you're now the prince of the trading community you can do anything you want except trade out what's sensible well you're up $25 if you now move your hard stop loss to $117 if you get stopped out you still make $17 it now becomes a free trade what if you double the size of your position at $125 your average price is going to be $112.50 and you've got a stop loss of $117 you're still going to make money you're the king of the trading community seek risk box A what's going to happen next what's the most likely situation well you're either going to get stopped out for a profit but the most likely situation is that it's going to continue going that could be $140 $160 $200 $300 if you sell for a $25 profit in that scenario what are you actually doing in your portfolio you're killing winners and opening the door for losers to destroy you you're being human now what about that's a long position there is a slight caveat to this situation what about a short position well but why do you have hard stop losses on short positions what's the theoretical downside on a short position exactly so you better have if you're going to have hard stop losses make sure they're ultra hard on shorts because if you let something run to infinity you're not just being human you're being a really stupid human what's the most you can make on a short theoretically yes because if something goes from the price that it is now to zero 100% so what if you short something at $100 and it goes to $50 well it can still go down 100% short more it can still go to zero so you do the same thing you roll your stop loss down yeah don't be scared of doing it I've been in situations where we've IPO'd stocks at £20 a share in the tech boom they've tripled to £60 a share in six months and a year later we were shorting them at 5p because at 5p it still has 100% downside and what happened to the company it went bust we made 99% on the trade don't be scared of doing these things look at them very objectively not as a human what do we do in ratio trades what do we do with ratio trades so imagine if you divided stock A by stock B so stock A was at 5 and you're going long and stock B was at 250 and you go short so the ratio is 2 how do you treat a ratio with stock losses and targets same principle hard stop losses soft targets you're long the ratio at 2 and you want it to go up you want it to go to infinity you're long stock A and short stock B so what's a 10% stop loss if the ratio is 2 0.2 so your stop loss is 1.8 on the ratio on a 1 to 3 target what's your on a 1 to 3 ratio what's your soft target well your target is 0.6 three times your stop loss so you add on 0.6 2.6 what do you do when the ratio gets to your target buy more of stock A short more of stock B and roll your stop loss up because now it's a free trade just exactly the same when you look at a currency a currency is exactly the same as a spread trade except when you buy one currency you have to sell another so buying stock A is like buying the pound versus the US dollar when you buy stock A against stock B it's just a ratio and treat it as it is so stop losses and targets are somewhat subjective but if you look at large cap S&P 500 large cap FTSE or Eurostock 600 Hang Seng Nikkei all of the large cap indices what you're going to conclude is that your stop loss is going to be somewhere between 7 and 12% on large cap situations and you'll be multiplying by 3 and you'll be asking yourself is my target realistic ok do not forget box A and box B because there's one thing about trading where if you do it for a while you're going to realise when you become quite good at trading that this psychology and risk management will permeate and extend to all areas in your life box A box B let's go through some situations let's start with a career a career situation you've been working for a company for two years and you've just gone for your second promotion meeting your starting salary was £40,000 and your first year after your first year you had your meeting with your boss and your boss said we can't give you a bonus this year and you're up for a promotion next year and we can't give you a promotion this year that's the history now you're going for your second meeting you go into the office your basic salary is still £40,000 and your aim is to be promoted at the end of year two your boss says sorry we can't increase your salary and there is no bonus things are really tough and we can't promote you box A or box B box A or box B can you get up somewhere else ok let's go through some scenarios let's go through some scenarios no it really does apply to every single area of your life trust me ok so you're in that situation you decide right I'm going to leave you don't need to walk out the door straight away you've decided you're going to leave so you go thanks very much boss and you go back to your desk what do you do next right so you go to a competitor and you get a contract that offers you a guaranteed basic salary of 40 and a guaranteed bonus of 60 what do you do next so that's box A ok you're seeking risk yeah what do you do next I'll tell you why you're seeking risk because your upside is infinity your downside is 40 and your upside is infinity who's to say if you go to your competitor and ask for 8 million dollars he's not going to say yes so you go to a competitor you go to your competitor and you get a contract basic 40 guaranteed bonus 60 what do you do next you go back to your boss you go back to your boss and show him the contract and your boss says oh we'll offer you the same what do you do next go back to the competitor and say my boss I'm really happy where I am what happens next he raises his offer from 40 basic to 70 basic offers you a 100 grand bonus and a promotion what do you do next you just keep pulling from box A until until one of them gives in that's it you're in a winning position you haven't lost in that situation because 40 hasn't gone down to 30 or 20 you're pulling from box A ok ok ok next situation we'll flip it around a bit here so we'll use a female example keep using male examples so the subject is female in this in this story you go on a date with a guy you go for dinner and the guy's really really good looking so good looking you've been telling your friends all week that you can't wait to go for dinner with him and you feel really lucky you go for dinner and the conversation is terrible all of the guy's values are totally the opposite to yours but he's seriously good looking box A or box B box A schedule another date box B never call him again who says box A oh hello who says box B ok ok so you go on another date you get the same same impression after dinner too box A or box B if nothing happens after the second date it just doesn't matter what are you hoping is happening why would you hope if you don't want anything else after that so if after the second that happens it doesn't mean that you have to continue exactly so you're pulling from box B if you choose to pull from box B you're basically being non-human so this is what people do all the time you'll see it all the time so people go and continue to stay will go on dates and stay in relationships which they actually hate and they put themselves through a decade of pain have children and get divorced and then what's happened they pull from box B when they get divorced but think of it the other way around yeah think of it the opposite way so you go for dinner everything's amazing all the planets are aligned do you go for another dinner of course you do you're pulling from box A you go again fantastic pull from box A carry on carry on carry on yeah you might get stopped out at some point but if the average if the ATR is very narrow then the guy's not going to be volatile now this is not a joke this is actually quite serious when you start applying this to multiple areas of your life and you're becoming successful at trading things just start to go really really well in your life when you start thinking this way both financially and in a qualitative sense because you start to appreciate what upside and downside really means and what risk really means across all areas of your life the career situation that we went through the first example is a true story of a guy in the institute and he was working for an engineering company in Yorkshire earning £40,000 a year been there for four years and he was hoping for a promotion and he never got it ever so I told him to pull from box A are there any competitors that you think you can get a price out of he said yes go and see them get a price out of them that's your target for the next four weeks to get a meeting and get a price out of the director of that company so he went and did it and they offered him £60,000 and a promotion what did he do calls me up asks me what he does next box A go back to your boss show him the contract say to your boss do you know what boss I really don't want to leave because I really do like this company it's where I started but I've got this contract and I don't know what to do can you help me what did his boss do he offered him £75,000 and a promotion what does he do next calls me up said get it in a contract don't believe a word he's saying just get it in a contract okay gets it in a contract calls me up what do I do next take it back to the competitor go back for a meeting with the director of the competitor put the contract in front of him and say my hands are really tied now there's not much I can do you know I've been there for four years by this time by this time the guy really likes him offers him a hundred and a promotion what happens next he goes back to his boss and goes I said don't go to the contract stage again because it's now turning into a bit of a ridiculous spivvy situation your boss is actually going to get really pissed off at you so go back to your boss and just say they verbally offered me a hundred there's his number call him if you want to I'm really open about the situation but I'd rather stay here because if I move it's disrupting a lot what did the boss do the boss literally gave him three promotions in a row made him a manager of the area that he works in yeah for six months from now with all the training necessary to get there and 125 and I was like okay let's not be cheeky just take it how's he done in his trading account in the last year let's have a guess he's killed it why because he has a pipeline of strong ideas he goes through his screening processes he started off with £15,000 in his trading account what was it six months later 30 what was it six months later 60 that's basically what's happened in the last year he went from a £40,000 basic salary in a job with no prospects to a manager within the company on £125 and turning £15,000 into £60 in his trading account I've literally changed the guy's life but it's not rocket science you just have to be non-human if you spend your entire life just accepting that £40,000 means that's your place in the world and you should just accept it you're actually you're just taking profits on yourself you're selling yourself because when you were born you were at zero and now you're 23 you're on £40,000 and you're selling yourself all from box A at all times in your career and that's what trading can do for you so even if you start off with small amounts of money if you apply the principles you make money consistently you go through all the processes and you allow those processes to permeate across career relationships all areas of your life you will see your life will just get better and better and better because the people who get on in the world are the people that pull from box A at the right time and pull from box B at the right time the people who don't get on in the world are humans unfortunately we'll leave it at that and take a break 15 minutes okay so what you saw there was an overview of trading psychology before we go into a summary of what you saw in the presentation there we're going to take what you've learned in the presentation about trading psychology and apply it to the real world so we're going to look at a real example and the example we're going to look at is long Goldman Sachs short JP Morgan so the intrasector constituent spread trade that you saw in earlier videos and what we're going to look at first is how we use ATR the average true range which you've also seen in previous videos to initially set our stop loss on that trade and then from that how you actually then go and set on a 1-2-3 ratio your soft target and what happens over the life of the trade so what happens in different situations so really when you set your initial stop loss and your soft target what you're doing is you've got to the stage where you've gone through idea generation you've gone through gatekeeping and now you're ready to put a position
+
+analysing the volatility of the stock to set your initial stock loss and your soft target so you're basically risk managing the situation and looking at the reward over the risk and then calculating what you're going to do in terms of capital deployment and also strategising what you're going to do in certain situations in the future when this trade either becomes a winning trade or a losing trade and the reason why we're doing this at this point is because we're looking at trading psychology in this video and that's very important for strategising what to do in certain situations so first thing we're going to do is set up the risk reward on the spread trade of GS JP Morgan and then we're going to look at after the risk reward we're going to be looking at the scenarios and how they play out and what we do in certain scenarios when they play out when we have that trade on so let's go over to the computer screen and I'll show you how to do that and I'll see you at the end of the video for a full summary of trading psychology ok welcome back to the computer screen what we're going to do here now is we're going to look at a spread trade example and we're going to look at setting hard stop losses and soft targets to spread trades and how you actually go about this process how you do it and how you do it really we utilize the same processes that we've used in previous videos using the ATR the average true range and what we're going to do is we're going to use a couple of spreadsheets and we're going to be using the ATR sheet that we looked at earlier in previous videos and we're also going to be looking at the Goldman Sachs JP Morgan example that we have in previous videos so these are available in the download section next to the corresponding videos and I guess when you're looking at setting your hard stop losses and targets the most important thing to probably highlight is the concept that your stop losses really should be wide enough to allow yourself to make money over the time horizon that you're choosing but also not wide enough where you're being ill disciplined so there isn't again a rule book on this you have to look at the time horizon that you're intending to enter the trade on and look at the historical volatility over that period and work out what a sensible stop loss is and a sensible stop loss really is one in which over the time period that you've chosen a sensible stop loss is one in which over that time period the stop loss is wide enough to enable you a chance of making money but also a realistic stop loss so that you're not being ill disciplined by setting a ridiculously wide stop loss so and then when we set our soft targets we're setting those on a 1 to 3 ratio so just very quickly a stop loss is just a situation where if you buy a stock or an asset at 100 you enter an exit trade on your brokerage platform which allows you to automatically trade out if the asset gets to a certain price so let's say your stop loss is 90 that's a 10% stop loss and you buy the asset at 100 and it drops 10% trades at 90 and you automatically trade out a target in our examples here is a soft target what you'll find is when people set targets they usually set what we call hard targets and they'll trade out when they get to that target but that's incorrect you should be actually running your winning positions so you make more money so what we're doing as a trader is when we set our stop losses we're actually guaranteeing our downside therefore we're pulling from box B and when we set soft targets we're not guaranteeing our upside in fact we're doing the opposite we're pulling from box A and we're either running our positions our winning positions or taking more risk we might be adding to that position so what we're going to look at first is how we actually calculate the volatility using the ATR so we can actually set a sensible stop loss on a real example so the example we're looking at is Goldman Sachs JP Morgan and Goldman Sachs JP Morgan the spread trade is at 3.04 and we have the entire history of the spread here and if you remember from the previous videos when we looked at how we're generating this idea and how we're working out the history of this spread how it behaves we have in this section here Goldman Sachs versus Goldman Sachs JP Morgan the spread versus the ISM index ISM manufacturing index so just open up these two sheets open up the Goldman Sachs JP Morgan spreadsheet and open up the ATR now what I've done here is I've calculated volatility using Yahoo Finance so all publicly available information this spreadsheet you're looking at here is the original ATR spreadsheet that you have available which looks at the S&P 500 the formulas will be exactly the same when we're calculating monthly volatility so we're using exactly the same processes it's just a question of working smart and doing this quickly to get a picture of what the volatility is or has been over our intended time horizon so let's go straight into this sheet here now what I've got here is I've got JP Morgan on the top and Goldman Sachs on the bottom we're taking an interest sector constituent spread trade in the financial sector specifically in banking and we've got essentially a bullish trade but we're hedging out market risk and sector risk and what happens when you go long two stocks one stock in a sector and short another stock in a sector what is actually happening is you're cancelling out the volatility so or you're intending to because you're hedging out market risk and sector risk so the implied situation is that you're hedging out market volatility and sector volatility and you're isolating the unique or stock volatility in this trade so so so when we're thinking about that principle of having our stop losses wide enough to allow us to make money but not wide enough where we're being ill disciplined we need to bear this in mind because we're actually intending to hedge out market risk and sector risk here so we're hedging out market risk and sector volatility volatility so market volatility and sector volatility and what you'll see on a typical day on a normal day when there's no news out is that if you're long Goldman Sachs short JP Morgan you might see Goldman Sachs up 1% and JP Morgan up 1.2% so all that's happening is they're pretty much cancelling each other out in terms of their price movement and their volatility on a normal day and that's what you're typically going to see when the market goes up and down 1% or less than 1% and there's no news out most of the time move in the same direction so you are cancelling out volatility here so all I've done here is I've gone onto Yahoo Finance and you can see I've got monthly data and I've taken data for the nine months for nine months so one two three four five six seven eight nine but you'll see why we've taken 10 months in a second because the results that we get in terms of the ATR is for nine months so we've taken 10 months data the reason why I've taken 10 months is because I want to get an appreciation for the volatility on a monthly basis so if we're going to be looking at a one to three month time horizon on this trade I'm looking to get an appreciation here of what it looks like over three quarters so nine months so I've done this for both JP Morgan and Goldman Sachs and all you have to do is work out the monthly ATR but the monthly ATR average over this period so all you have to do literally is go into the spreadsheet that you have for the ATR and we've got ten rows here so we're going to take ten rows and we're going to cut and paste this into here and this tells us the high to low of JP Morgan on a monthly basis so it's giving us the true range range so C2 minus D2 so this this cell here minus this cell here so it gives us the high to low on a monthly basis we'll repeat the same process for Goldman so we just want to paste this in here as well call call that high minus low so we're getting the true range now what we want to get is the average true range in percentage terms because we want to know what a sensible stop loss in percentage terms on a one to three month time horizon so what we're going to do is we're going to again cut and paste from this column here now this column if you remember in the original ATR spreadsheet for the S&P 500 worked out the rolling one day average true range so the average true range for one day on a rolling basis so basically the average percentage over two days but rolling and if we just actually cut and paste copy and paste the same formula into here it's not going to give us a one day it's going to give us a one month so the average over two months and obviously there's no last or final value in this cell because it needs to be referencing the previous month so we get rid of that and what we've got here is this is why we take 10 months data by the way and what we've got here is nine values we're we're going to repeat the same process for Goldman and we're going to call this the percentage ATR just tidy that up percentage ATR get get rid of that and what we're going to work out now is the average of the high to low percentage range on a monthly basis over nine months so we just add this up do an auto sum and we're going to divide by nine and that gives us 9.4% repeat the same process for Goldman Sachs 11.14% so what we've got here is for each stock we've worked out the percentage monthly average true range rolling over a 10 month basis and then worked out the average of the percentage the average true range the percentage average true range so this gives us an appreciation of what we should be probably looking at in order of setting our stop loss so if we set our stop loss at say 10% this gives us a disciplined stop loss but also gives us a very good chance of making money and yes we could also be stopped out within one month but that's fine you know we're being disciplined here so we want to be disciplined enough where we're setting a stop loss that's realistic not a wild stop loss so imagine if we set a 20% stop loss on this it just wouldn't be realistic you know you could be down 13% in one month and then 13% down another 7% in the next month and then you just be stopped out so you can don't forget also you've got your gatekeeping process here so you know at this stage we've actually been through the idea generation and the gatekeeping process and now we're actually wanting to put this trade on so we've made that at this stage we've probably got positive price action positive technicals and it matches up with our fundamental view so a sensible stop loss here is probably going to be 10% so somewhere between the two and if we go over to the GS JP Morgan spread trade example and we see that it's trading at 3.04 so let's just put these in a cell so current is 3.04 and a stop loss is going to be 3.04 times 0.9 and the value of that stop loss the number of points that this stop loss is is going to be 3.04 minus this so it's 0.3 so it's we can call this 30 points and all that means is that our target is going to be 3 times that so on a 1 to 3 ratio our target in points so we can put this actually here which means our soft target it's going to be the current price plus 3 times our stop so our target points and that's going to be 3.9 so is our target realistic has it traded there before yes it has it's been there many many times in the history of the spread if we just look at the chart we can see that in fact if we look at the long term trend line the long term trend line is pretty much on our target our soft target now couple of things that we have to get right here so so let's copy this and let's just change change the dates on here so we can zoom in so we've got to get a couple of concepts correct here for you so we're now looking at a zoomed situation so we'll copy this down here so we don't have to scroll up and down all the time and we're going to start inserting some lines so we can understand our risk reward on this trade I'm not saying go and do this trade this is just an example of how you would actually go through the processes of working out your stops targets and how you would then go about deploying capital and trading this situation so we're just going to format this into a red line so it stands out okay so our entry 3.5 0.4 we're assuming that we're going in at the current price our stop loss 273 here let's change this to green our target our soft target 3.95 0.5 so about here near the long term trend line let's change this to purple and here's the risk reward play that we've got on at the moment so what's going to happen well if it trades here we're stopped out we're trading out of both our long and our short at the same time don't mess that up a lot of people for some reason think that when you're trading spreads and you put on one long and one short that when your spread goes to your stop loss that you stop yourself out on one of the positions and you run the other side of the spread that's just silly you've gone into a trade where your idea is a relative trade so both stocks can go up both stocks can go down it doesn't matter as long as stock A outperforms stock B that's the bet that you've got on and if it doesn't outperform and it underperforms you're trading out of both positions that's what happens when you get stopped out so when you trade in you put both of them on at the same time when you trade out you take both of them off at the same time and this brings us on to our next situation which is automatic stop losses on single stock positions I want you to imagine that you've got a position in stock A and a long and a position in stock B short and you put a 10% automatic stop loss on stock A and a 10% automatic stop loss on stock B so obviously the stop loss on stock A is lower and the stop loss on stock B is higher what you're doing is here is you're putting automatic stop losses on single positions and you can do this quite easily on every brokerage platform but what you can't do on every brokerage platform is put stop losses on the actual ratio of the spread so now imagine in that scenario the stock market goes down 10% and both stock A and stock B go down together 10% they both go down 10% what happens well you're stopped out on stock A now you're naked short stock B and your naked short stock B down 10% and then what happens next well let's say for example the next situation after that is the market then rallies and goes up 10% well what happens stock B goes up 10% and you get stopped out on stock B so you end up losing 10% on stock A and 10% on stock B but over the entire process nothing's changed both stock A and stock B have both gone back to the prices they were before that's what happens when you set stop losses on single positions what you don't want to be doing is going long one stock and short another and setting stop losses on the individual positions unfortunately if your brokerage platform doesn't allow you to put a stop loss on the ratio there's nothing you can do what you have to do is just update your spreadsheets update your watch list and make sure every week that you know where the spreads are trading go into your trading account once or twice a day and just check where the spreads are trading and if the spread hits your stop loss you trade out of both of them you have to do it yourself manually if you can't automatically do it on a ratio trade and the only option is that you can only set stop losses on single stock positions
+
+just be on top of it and manually do it yourself and don't worry about it don't worry about trading out at stop losses we've been through the trading psychology stuff and you should be fully aware by now that if you lose on a trade you should be pulling from box B and you don't need to worry about it because you're going to have winners in your portfolio what sets the good traders apart from the bad traders is not just having an investment process like the wish framework but also doing the correct thing with your losers and doing the correct thing with your winners if you do the opposite of that and you are being human then you're just going to lose money because that means you're pulling from box A and seeking more risk when a trade goes against you and when the trades go in your favour you're pulling from box B and trading out at your targets we're not doing that that just means you're being human we're the opposite of human we're traders we know how to manage money and we don't worry about trading out of trades that have gone wrong so you're going to have to do this manually when you do spread trades but don't worry about it it's going to make you money over the long term as long as you stick to the principles okay so back to this example we're going to look now at this concept of why we're setting hard stop losses and soft targets so let's say you put this position on at 3.04 and you put on a position of $20,000 so long $10,000 of Goldman Sachs short $10,000 of JP Morgan and let's say this actually gets to your target let's say within three months Goldman Sachs has outperformed JP Morgan by 30% which is a fantastic situation to be in well what you do next is you definitely don't trade out what you do next is pretty straightforward you either run the position or if you're feeling brave and you've got room or capital available margin available in your trading account then you can seek to add to this winning trade you can add more capital to this winning trade so how do we do this well let's say you've got a $20,000 position and this actually reaches your target where we can now work out from our target which is 392 what 10% stop loss is on 395 so this is our target here 395 if it reaches it we just want to be working out what we're going to do in that scenario so our new stop loss is going to be 90% of this which is 355 and we just roll this stop loss up to 355 so we're going to be somewhere here now our original entry price was here where do we want our entry price to be if we're going to add to this trade well what we want is for our entry price to be below our stop loss so all you have to do in this situation is make sure that when you add to the position here that on a rolling basis your average price is just comfortably below your stop loss and what does that mean now it means you've basically got a free trade what do I mean by a free trade well your stop loss is above your new average price so you've got a winning trade in your portfolio that's now become a free situation your stop loss is above your average price which means even if you get stopped out you're going to make money so you can just sit there and watch it and what's the most likely situation that's going to occur well the most likely situation when you've got a winning trade is that it's just going to continue winning and if you've added to that position and your stop loss is comfortably above your new average price then it just means that you've got a free situation and you can sit back and relax whether this trade now goes against you is irrelevant because you're still going to make money what we want to be making sure we don't do is the opposite which is trading out at our soft target and then watching it go up another 100 points that means you're pulling from box B when you're presented with a winner which is what we don't want to be doing now back to these stop losses for a second with the 10% stop loss that we've got on here what you're often going to find and there is no rulebook here so you know again it's not like it's not like you can go down to the bookstore or go to amazon.com and buy a book called setting stop losses and targets for all trading situations throughout history and in your future life it just doesn't exist you've just got to do what's sensible so your stop losses must be wide enough to give yourself a chance of making money over the time horizon you're looking at but realistic enough that you're not being ill disciplined and your target becomes unrealistic on a 1 to 3 ratio what you're going to find in large cap situations and actually most mid cap situations what you're going to find in large cap situations in the United States and Europe so S&P 500 FTSE DAX CAC 40 all the major indexes the large cap situations you're going to find that your stop losses are going to be calculated at somewhere between 7 and 12 percent when you're looking at ATR of one month over a decent time horizon so let's say 9 to 12 months you're probably going to find that your stop losses will be calculated at between 7 and 12 percent now what does that mean for your soft targets it means that your soft targets on a 1 to 3 are going to be anything between 21 and 36 percent so stop losses of 7 to 12 and then on a 1 to 3 ratio soft targets of 21 to 36 percent so you have to go through these exercises and just make sure that you understand the monthly volatility and the parameters of the monthly volatility in the positions that you're going to take but also you've got to understand the risk reward in the spread trades that you're taking and how you play that risk reward in different scenarios now we did make the assumption here before we started that you're at the process now you're at the stage where you've actually decided to take this trade I've not said at any point in this video take the Goldman Sachs JP Morgan trade this is just an example so see it for what it is we're just looking at this spread trade and saying okay if we actually wanted to put this on right now how would we actually set the stop loss the soft target and how would we actually play the risk reward in all situations so first of all we play the risk which is when the trade goes against you we play the risk by having a manual stop loss a mental stop loss and because we can't set ratio stop losses on most brokerage platforms so we play the risk by just trading out of both the long and the short when the ratio trades at our predefined mental stop loss we manually trade out of both how do we play the reward we add to a winning position or at a minimum we run it so how we're playing the risk reward is we're pulling from box B when we're playing the risk and we're pulling from box A when we're playing the reward and these are concepts that you have to get used to and those positions that we lose on in our portfolio we feel good about getting out of them don't worry about it why because guess what every week you've been updating your watch list and you now have on your watch list at any one point in time a bunch of ideas that have now become good trades and when you get rid of the losers you're replacing them with new trades so ideas that have become good trades off your watch list and this process just continues over and over and over again like a conveyor belt so you're spoiling yourself with the ideas and you're not feeling bad about cutting losing positions because you're replacing them with new ideas and and at any point in time you're going to have winners in your portfolio it's how you treat your losers and how you treat your winners that sets you apart as a trader so hopefully you've grasped those concepts setting the ATR is fairly straightforward over a one to three month time horizon we're just looking at the recent history on a monthly basis working out the ATR and you can just cut and paste these formulas into the spreadsheet obviously know how they are worked out understand the formula and how it is worked out but you know as a shortcut you can actually just cut and paste them in and work it out and then when you're actually putting your spread trade on setting sensible risk reward scenarios and knowing exactly what you're going to do in certain situations that's really you know having a plan from the outset of how you're going to treat the position when you're presented with certain situations in the future that's good risk management okay so let's move on from this I hope you've managed to get the concepts and I'll see you in the next video for more risk management okay welcome back so let's go through this and summarize training psychology and obviously what we saw on stage a lot of you won't have seen before and we did use some examples there some real life examples that were a little bit entertaining but again they're entertaining so the foundation and the basic principles of this get stuck in your mind really the most important thing here is that your training account in many circumstances in terms of your psychology and your performance your financial performance will mirror your real life and what you tend to find is that people who deploy successful financial strategies whether it's in their trading account or the finances within their business or their career follow this training psychology whether they know it or not so when they're winning they seek more risk and when they're losing they actually seek less risk or they guarantee their downside and this is why when you try to get your training psychology correct it's very important to get this psychology correct overall in your entire life so what I'd encourage you to do here is just try this for three months you've got no downside in doing so so you might as well do it try for three months in all scenarios in your life not just in finances but in your personal life as well try to get the training psychology correct and deploy this in all areas of your life and obviously it's no guarantee that you're going to get successful results but you should try it and find out after three months and just review it and if you're happy with the results then you should carry on with that strategy now in terms of applying this directly to trading we looked at a few things we looked at the 1 to 3 ratio strategy and that's pretty important because really anything you enter into in terms of trading the upside should be far greater than the downside or the potential upside and we used hard stop losses and soft targets and we did this on a 1 to 3 ratio why did we use soft targets that's because we don't want to pull from box B when we're winning we actually want to continue being invested or have positions in
+
+what we actually do is we absolutely run the position and roll our stop loss we may even pull from box A and add more to that position in a prudent way to make sure that our new stop loss when we've rolled our stop loss up is much higher than our average price but we've actually pulled from box A we're seeking more risk we also went through the spread trade
+
+that was an example to show you really how you would set a stop loss and a soft target from the outset we also used the ATR to calculate a sensible stop loss and sensible soft target over a 1-3 month time horizon now we did this on a spread trade and the way you should be looking at spread trades is just look at them like they're a single stock treat
+
+as a single stock so we set our stock losses and targets no differently with a spread trade than we would do if we were taking one position in a single stock or any single asset for that matter so that's trading psychology in a nutshell what we're going to do now is move on to the next video having discipline 2 and we're going to start looking more at specific risk management strategies that we can deploy into our trading account so we have discipline on our overall portfolio get the trading psychology set in stone it doesn't happen overnight it takes a while at least a couple of months minimum to get your head around it once you've got your head around it and you're doing this in real life and in your trading account it becomes very obvious why you do it so please deploy this in any which way you can let's go over to video number 23 and I'll see you on the other side

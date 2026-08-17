@@ -1,0 +1,599 @@
+---
+course: instutrade
+lesson_id: "08"
+title: "WISH Framework; Getting Perspective 1"
+module: wish-framework
+module_title: "WISH framework"
+duration: 00:32:46
+duration_seconds: 1966.336
+source: "Anton Kreil - Professional Trading Masterclass Instutrade/8. WISH Framework; Getting Perspective 1.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  []
+---
+
+# 08 — WISH Framework; Getting Perspective 1
+
+Hi, and welcome back. Welcome to video number eight. You survived the first seven videos. And during this entire process, what we've done up to this point, what we've actually achieved is we've taken the approach of really defining why retail traders, the vast majority of retail traders, lose money.
+
+Now, by doing that, we've actually picked up our principles along the way. The principles of what not to do. So, the principles of the approach of what professional traders actually do when they approach the financial markets.
+
+And this is very important, and I encourage you to try and hard code these principles in your mind. I encourage you to keep going back and watching those videos to make sure that you understand those principles fully fully. Now, what we're actually going to do is we're going to start to build out what we call in the professional trading world, a systematic asset selection process.
+
+Now, systematic asset selection processes are very, very important within the industry.
+
+When we look at our objectives here in this series to provide you guys a framework, retail traders, that enables you to emulate successful professional traders, your objectives are very much aligned, as we've discussed, to hedge fund managers.
+
+Now, what you're going to see here is an introduction to the Institute's wish framework and the wish framework is really a template, a template for a systematic asset selection process.
+
+And this template, this approach is used by pretty much the vast, vast majority of hedge fund managers, successful hedge fund managers.
+
+And you're going to realize when you watch this video why systematic asset selection processes are so important.
+
+And the first thing we're going to do is actually define what a systematic asset selection process is.
+
+Then, in the same video, we're actually going to take the first step, which is to define what type of market we're in, whether we're in a bull market or a bear market.
+
+And this is important because if you understand the landscape that you're operating in, then you have a much clearer idea of the bigger trend.
+
+But it's also important because bull markets and bear markets are often misdefined and misinterpreted by the mainstream media.
+
+And the professional trading community has a different definition of bull and bear markets.
+
+Now, once we've defined the systematic asset selection process and defined which market we're in, we're then going to move on to the first stage of the framework, which is idea generation.
+
+And idea generation is the vast majority of your work.
+
+This is going to take us all the way up to video 20.
+
+And then we move on to gatekeeping.
+
+And then after gatekeeping, we move on to risk management.
+
+And then we move on to self-awareness as a trader.
+
+And these are the four stages of any systematic asset selection process that has integrity within the professional trading community.
+
+And this process can be used as a template by anybody.
+
+So the four stages are idea generation, gatekeeping, risk management and self-awareness.
+
+And please pay attention to the slide where we map out the entire process.
+
+Get this slide in your mind and really memorise it.
+
+Because this is really the template of the professional trader.
+
+So, first thing we're going to do, define the systematic asset selection process and define what market we're operating in.
+
+Once we've done that, we're going to move on to actually building out idea generation.
+
+And then build out the entire process for the rest of the video series.
+
+Okay, let's go over to the presentation and I'll see you at the end of the video with a full summary.
+
+So now, we're going to start a process where we're going to try to manipulate these odds in our favour.
+
+If we can do that, then we are the bookkeeper.
+
+We are the bookmaker.
+
+What you'll find is most professional traders, crop functions, investment banks, hedge fund managers, they will have systematic processes that they go through to create a situation where the odds are in their favour.
+
+So, what we'll do first, really, we've got to get perspective of the historical behaviour of the market.
+
+As in, where we've come from.
+
+Understand what we're dealing with at the present.
+
+So, you can make predictions for the future.
+
+So, first, what we're going to do is define what a systematic process is and then get perspective.
+
+And then we move on to the next stage, which is actually building all the processes and the system.
+
+So, crudely, what is a systematic process?
+
+Going through a series of processes to find suitable good trades or investments with a high probability of success.
+
+It's a process of idea generation.
+
+Something that we call gatekeeping.
+
+Risk management and self-awareness.
+
+Across all the asset classes.
+
+So, it's indiscriminate of what we're actually going to take positions in.
+
+So, across equities, currencies, commodities, and bonds.
+
+Available instruments globally, 40,000.
+
+Out of those 40,000 opportunities, which ones are going to give us the highest probability of success?
+
+So, a top-down approach.
+
+We start at the top level of the world and we work our way down.
+
+A bottom-up approach is picking one asset out of the 40,000 and just doing work on that one asset.
+
+Fundamental analysis of the particular asset.
+
+A varied approach is a mixture of both.
+
+So, you're trying to take the best of what works from both disciplines.
+
+So, this, what I call the wish framework, is essentially a varied approach.
+
+Utilising what works from each area the best and gives us the highest probability of success in combining them all.
+
+So, we're stacking the odds as high as possible in our favour to try and make money.
+
+And it's adaptable to any situation.
+
+And you'll find that it will work as a process, probably over your entire life.
+
+Now, it's not finite as in everything that you see in the next day and a half.
+
+You don't have to do any more work on top of that.
+
+In terms of the process, you can go away and add things into the process.
+
+But add things into the process at the correct level.
+
+So, don't deviate from the process in future and do things in reverse.
+
+It's the process that's the important point here.
+
+And this is what it looks like.
+
+So, top left, we have idea generation.
+
+First thing we do is we get a view on the world.
+
+And our world view dictates our positioning, our bias in commodities, currencies, bonds, and equities.
+
+But at an index level.
+
+If we then concentrate on the stock market, we have to go and work from the top down.
+
+So, then we move on to industries within the stock market.
+
+And then we move to stocks within those industries.
+
+And then across equities, commodities, currencies, and bonds, we then overlay this situation with technical analysis and price action indicators that allow us to keep the gate closed to bad ideas and open to good ideas.
+
+Then, when you actually commit capital, these positions become real.
+
+They become part of your portfolio.
+
+Once they're in your portfolio, you have various risk management parameters and tools that you can use to ensure your downside is protected.
+
+So, when bad things happen, you don't blow up.
+
+You live to fight another day.
+
+You come back and you're stronger.
+
+So, when you've got real positions, you can have gross exposure limits, net exposure limits, in the stock market, hedge out, beta, theme limits, single position limits, stock target ratios, and how you deal with winners and losers.
+
+What processes, what processes you go through, and that's really the risk management, having discipline.
+
+So, making sure that when you've got real positions, you have the discipline to do the right things all the time.
+
+And then, you're either going to be a good trader or a bad trader and your statistics will tell you whether you're good or bad.
+
+The most important statistic is whether you make or lose money.
+
+But then, you can overlay this with other statistics to find out what your behaviour is as a trader, and you can have self-awareness.
+
+And I'm going to show you a tool that a lot of hedge fund managers use to decide whether to distribute capital to a trader over another trader.
+
+And that's important, simply because you don't have a boss to tell you what to do.
+
+So, why do the pros use systematic processes?
+
+It's because they have outside investors.
+
+If they didn't rely on systematic processes, they wouldn't get outside investors.
+
+Imagine going to pitch somebody for $25 million of capital to put in your hedge fund.
+
+And you walk up and you say, on one page, this is what I do.
+
+I buy and sell Eurodollar every day.
+
+And I try to make 10 basis points.
+
+You're not going to get $25 million.
+
+The objective of the person giving you that money, first of all, people have varying objectives.
+
+But, most of the time, it's to protect that money in absolute terms, the value of it, and protect against inflation.
+
+And to be exposed to markets that go up and down, so they can be hedged in all situations.
+
+That's their first objective.
+
+So, they don't want to see somebody who punts around.
+
+They want to see somebody with consistent track record, who's long short, who gets decent returns on low volatility.
+
+That's what an investor wants to see from a hedge fund manager.
+
+So, why use these systematic processes?
+
+It's because, obviously, to try and protect the money, and to make money, but also to raise money.
+
+They're never, ever going to be able to raise money if they don't show people their investment process, how they make a decision.
+
+So, technical indicators, just a few indicators to trade aren't good enough for these guys, then they're clearly not good enough for us.
+
+Like, even as retail traders, we had to take the same approach.
+
+And most hedge funds, the process is really similar to what you're going to learn today.
+
+We put two guys into hedge funds in November.
+
+One guy went in in February.
+
+And these guys were institute traders, like, as in, trading through us, and I see all of their positions and help them.
+
+They were trading for about a year.
+
+And when they got interviews at the hedge fund, they have a starter interview, where they don't really get any information on the hedge fund.
+
+If the guys like them, then they go back for second interviews, and they get sent the investment process at the hedge fund.
+
+The two guys who went in in November, they were interviewed in October, are when they saw the investment process of this particular hedge fund.
+
+They rang me up and just laughed on the phone and said, it's basically your framework.
+
+They're really similar.
+
+A lot of the processes are very, very similar.
+
+Starting off with idea generation.
+
+Top-down and or bottom-up approach.
+
+Combination of both in the stock market.
+
+Predominantly top-down in currencies, commodities, and bonds.
+
+So, you go through a bunch of processes that spit out ideas.
+
+So, it's like a machine that just spits out ideas.
+
+And then you've got to decide whether it's a good time to commit capital to that idea.
+
+So, you overlay it with a screening process.
+
+And the screening process is varying indicators to stop yourself doing stupid things.
+
+The worst thing in the world, as a trader, is to go into a position.
+
+You're right, but you get stopped out.
+
+So, you're proved correct in all the work that you did to generate the idea, but you actually lose money.
+
+That's worse than losing money when you're wrong.
+
+Because at least when you lose money when you're wrong, you're wrong.
+
+Make sense?
+
+That's why you have screening processes.
+
+To stop yourself doing stupid things.
+
+So, coming up with great ideas.
+
+I.e., to buy a stock.
+
+That's a great idea.
+
+But you go and buy it at the top.
+
+And then you lose 10%.
+
+And then it goes up 100%.
+
+That's just crazy.
+
+That's why you have to have a screening process.
+
+Risk management.
+
+When the positions become real positions, and there's real money at stake, making sure that your downside is totally protected.
+
+And self-awareness, trader metrics, to know when you should be deploying more capital to yourself, or taking capital away from yourself.
+
+And being very honest with yourself about it as well.
+
+Because the numbers do not lie.
+
+So, that's a systematic process, essentially.
+
+There's thousands of hedge funds in the world that claim to have the key to all that amazing investment.
+
+But essentially, they all kind of fit within that remit.
+
+Idea generation.
+
+Gatekeeping.
+
+Risk management.
+
+And self-awareness.
+
+So, now we know what a systematic process is, we can start building one.
+
+But first, let's get perspective.
+
+We're about to go into the market, so we have to understand the market in another way to what we've looked at the market.
+
+We have to understand where it's come from, where it is today, where it might be going, and what it all means.
+
+And they're questions you should be asking yourself all the time, every day.
+
+Where has this market come from, where has this market come from, where is it today, where is it going, what is it all mean?
+
+Train your mind into that process, that thought process.
+
+You should be asking yourself that eight, ten times a day.
+
+So, we look at historical stock market performance, and first we want to basically define what market we're actually in.
+
+Are we in a bull market or a bear market?
+
+So, let's ask the question now.
+
+The market that we're in now, are we in a bull or a bear market?
+
+Who said bull?
+
+Yeah, we're in a bull market.
+
+But what's the actual definition of a bull or a bear market?
+
+Okay.
+
+The definition in the media, so when you pick up a newspaper, or turn on the TV, the definition in the media of a bear market is a 20% fall in an index from this year's high.
+
+And a bull market is a 20% rise in an index from this year's low.
+
+So, you take this year's high, multiply it by 0.8, goes through that level, you're in a bear market.
+
+Take the low of the year, multiply it by 1.2, if it goes through that level, we're in a bull market.
+
+Unfortunately, the media definition is not the professional trader definition of a bull and bear market.
+
+So, ignore the media.
+
+The professional trader definition of a bull and bear market, and get on the phone to anyone at a big pension fund on Wall Street, in the city, anywhere in Asia, get on the phone to any hedge fund manager and ask them.
+
+They'll tell you what the real definition of a bull and bear market is, which is a bear market at 20% fall from the high of the previous business cycle.
+
+And a bull market is a rise, not of 20% from the low of the year, but a rise back above the bear market level that was set in the previous business cycle.
+
+Does that make sense?
+
+So, let's have a look at where we are now.
+
+So, S&P 500 on the 9th of October 07.
+
+In the last business cycle, and by the way, we do move on later to definitions of business cycles, and we look at the business cycle of the US.
+
+9th of October 07, the S&P 500 closes on a high of 1565 spot 1.5.
+
+What's the bear market level?
+
+Multiply it by 0.8.
+
+12.52 spot 1.2.
+
+It went through that level on the 9th of July 08.
+
+So, almost a year later.
+
+Closing at 12.44 spot 6.9.
+
+It then exited on the 21st of December 2010.
+
+So, when the markets are really, really quiet, just before Christmas in 2010, what happened?
+
+The US officially came out of a bear market.
+
+So, we entered a bull market on the 21st of December 2010.
+
+So, when everyone was buying their last minute presents for Christmas and running home, the US had entered a bull market.
+
+What about the FTSE 100?
+
+The high close, 6732 spot 4.
+
+On the 15th of June 07.
+
+Bear market level, 5385 spot 3.2.
+
+On 9th of July 08.
+
+Where have we seen that date before?
+
+Exactly on the same day.
+
+So, the US and the UK went into a bear market as defined by professional traders on exactly the same day.
+
+Why do you think that was?
+
+Christmas.
+
+Sorry?
+
+Christmas.
+
+No, it's 9th of July 08.
+
+I don't know when you celebrate Christmas.
+
+But why do you think that happened?
+
+Shall I tell you why?
+
+Because the US went into a bear market, so everyone sold everything in the world.
+
+That was it.
+
+So, it didn't matter what it was.
+
+The US goes into a bear market, just sell everything.
+
+But it exited, the FTSE exited of the 24th of December 09th.
+
+So, a full year before the S&P 500.
+
+Now, you'll probably figure out this tomorrow, but we'll start with it now.
+
+I'll just make the statement.
+
+You can think about it.
+
+The make-up of the indices, the difference between the S&P 500 and the FTSE 100, the types of companies in the index.
+
+What would that suggest if we're using the professional trading definitions of following the business cycle to determine bull and bear markets?
+
+What would that suggest about the make-up of the index of the FTSE relative to the make-up of the index of the S&P 500?
+
+The types of companies that are in and make up the index.
+
+The make-up of the companies in the FTSE, the earnings of those companies are more sensitive to the business cycle overall than the make-up of the companies in the US.
+
+So, when the business cycle turns, what goes first?
+
+Because the cyclicals go first.
+
+So, the FTSE is made up relative to the S&P 500 of sensitive earnings compared when you compare across.
+
+The S&P 500 is a much broader index representing 500 companies and a higher percentage of defensives relative to cyclicals.
+
+What about the DAX?
+
+Started selling off 16th of July, 07.
+
+Bear market level 6484, spot 55.
+
+Reached in March, 08.
+
+Again, earlier than the FTSE.
+
+Sorry, earlier than the S&P, but later than the FTSE.
+
+Why do you think that was?
+
+We can rationalise all this in hindsight.
+
+Subprime crisis.
+
+Very bank heavy.
+
+So, now we know what a bull and a bear market is.
+
+We're going to know what type of market we're in at any one time.
+
+If you did one thing, if you do one thing in any business cycle, if you just short indexes, when they break the bear market level, or break the bull market level, go back into a bull market and you buy them.
+
+If you do that, if you do that, if you do that, you'll just make money.
+
+Because all the money that follows that will come in and out of the market based on that.
+
+It happens in every business cycle.
+
+But how do we predict that we're going into a bull market or going into a bear market, so you can be positioned before it actually happens?
+
+Well, that's the key, isn't it?
+
+It's the key to everything.
+
+If you can tell what's going to happen in 6 to 12 months' time, whether we're going to enter a bear market or stay in a bull market or go into a bull market, you're going to make tons a night.
+
+And if you can do that for the rest of your life, you're going to be very, very wealthy.
+
+Okay, so welcome back.
+
+Now, as you went through the presentation, you would have realized that we looked at a couple of things there.
+
+First thing we looked at was defining the systematic asset selection process and introducing to you the Wish Framework.
+
+And the Wish Framework as a template really does serve as the professional trader approach.
+
+Now, one of the things that we mentioned in the presentation there was that if you want to add in anything into the Wish Framework as we're going along, feel free to add in anything you want.
+
+But you have to make sure that as you're doing it, you add in what you want to add in at the right area of the Wish Framework.
+
+Now, the Framework really is a combination of a top-down and a bottom-up approach.
+
+Overlaid with technical analysis and price action indicators, prudent risk management and self-awareness statistics as a trader.
+
+Now, we're going to go through all of the videos up to video 20, which really is the bulk of the work, which is idea generation.
+
+Then we're going to move on to gatekeeping.
+
+And then we have risk management and self-awareness stats.
+
+This map that you saw on the presentation, please get it in your mind, but feel free to add in anything you want to at any stage.
+
+If you consider yourself extremely useful at technical analysis, then you can add in your technical analysis, TA indicators, at the stage of technical analysis, which is within gatekeeping.
+
+But please don't add it into idea generation.
+
+This will all become clear later why.
+
+So, the first thing we did was we defined the systematic asset selection process and introduced you to the Wish Framework.
+
+The second thing we did in this presentation was to define bull and bear markets.
+
+Now, why are we doing that?
+
+We're doing that to really just get perspective and a snapshot of where we are at any one point in time.
+
+So, now at any moment in your life, now you have these definitions, you can look over the markets globally and just define exactly what markets you're in by using the professional trader definition of bull and bear markets, not the populist media definition of bull and bear markets.
+
+So, now that we've defined the systematic asset selection process, you've seen an introduction to the Wish Framework, the professional trader template, and we've defined what type of market we're in, now we can actually move on to predict what type of market we're going to be in in the future.
+
+Because that's what professional trading is all about.
+
+It's not reacting to what's in the mainstream media right now.
+
+It's not reacting to what type of market we're in now.
+
+What it really is, is about predicting what type of market we're going to be in in the future.
+
+And building your ideas and building your portfolio around what your expectations are for the future.
+
+It's going to become very clear that the market itself is a discounting mechanism and a forward-looking indicator.
+
+Because all professional traders are using the market as a proxy to predict the future.
+
+Now, if you're a retail trader who predicts to what's happening now, all you're actually doing is providing the liquidity for professional guys who predicted where we were going to be at this stage at some point in the past.
+
+What you've got to train your mind into is to predicting the future.
+
+And that's the professional trader approach.
+
+And that's what we're going to move on to now.
+
+The first stage of idea generation starts at the macroeconomic level, at the very top, and then we work our way down.
+
+So, the first thing we're going to do in idea generation is to work out where we think the market is going to be in a year's time.
+
+Once we've got that, we can take positions now, because the market is being used as a proxy now for expectations in one year.
+
+Okay, let's move on to video number nine and really start to define the process of idea generation by starting at the macro level, and then we can work our way down.
+
+I'll see you in video nine.
+
+If you want to watch over any of the videos again, just go back and keep these principles in mind that you've learned from video one to video seven, and try to get the definitions of the systematic asset selection process and bull and bear markets as defined by professional traders in your mind, and just make sure this is all set in stone and hard-coded, because these principles are going to serve as a very important foundation as we move forward.
+
+See you in video nine.

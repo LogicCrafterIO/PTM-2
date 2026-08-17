@@ -1,0 +1,2205 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.98,
+      "text": "Okay, so welcome back. We're going to continue now building out the trade idea generation process. Welcome to video number 23, quantitative processing number two. What we're going to be doing in this video is start showing you some processes of how to start filtering for price earnings ratio."
+    },
+    {
+      "start": 30.0,
+      "end": 59.0,
+      "text": "and also add in some additional measures in the quant processing phase. So, in the previous video, we use the price earnings ratio as an identification process for finding both positive and negative outliers in a sector. Now, in building a long short portfolio, we want to first always identify"
+    },
+    {
+      "start": 59.0,
+      "end": 88.0,
+      "text": "what money likes and what money dislikes. We mentioned in the previous video that money likes growth. Now, when we identify outliers by price earnings ratio, we do it by ranking the PE largest to smallest. And there will always be a reason behind why a stock has a high PE or why a stock has a low PE or even"
+    },
+    {
+      "start": 88.0,
+      "end": 117.0,
+      "text": "or even an average middle of the road, an exciting PE in a sector. It's up to us after identifying an outlier to do more work on it and figure it out. So, because we know that money likes growth, it's highly likely that the reason for a high PE valuation, i.e. that investors and traders are willing to pay the premium,"
+    },
+    {
+      "start": 117.0,
+      "end": 146.0,
+      "text": "it's because, in some way, it's because, in some way, the stock has superior growth to its sector counterparts. And likewise, on the flip side, it's highly likely that with low PE stocks relative to sector peers, investors and traders are willing to sell at the discount because, in some way, the stock has inferior growth to its sector counterparts."
+    },
+    {
+      "start": 146.0,
+      "end": 165.0,
+      "text": "Now, the main measures of growth that we use as traders and portfolio managers in the quantitative phase are forward-looking earnings growth, forward revenue growth, forward PE ratio, and forward PE ratio."
+    },
+    {
+      "start": 165.0,
+      "end": 191.0,
+      "text": "And the PE ratio is simply the PE ratio divided by the earnings growth percentage. So, try to remember this every time you look at a table of data for a sector where you see price earnings ratio, earnings growth percentage, and PEG ratio, and revenue growth."
+    },
+    {
+      "start": 191.0,
+      "end": 220.0,
+      "text": "Try to remember this, there is always a reason why a stock trades on a premium or a discount to its sector peers for all of those metrics. Say it in your mind every time you look at the table of data. Remind yourself, ask yourself the question, what is the reason? There is always a reason. What is the reason?"
+    },
+    {
+      "start": 220.0,
+      "end": 249.0,
+      "text": "And what you're going to find is that in the vast majority of cases, it is because the stock has superior earnings growth or inferior earnings growth. That is usually the case in the vast majority of situations at any one time in financial markets. Now, of course, there will be exceptions, but we have to focus on the majority."
+    },
+    {
+      "start": 249.0,
+      "end": 278.0,
+      "text": "We have to focus on the majority scenario for now. So, for this video, you're actually going to need access to the downloadable spreadsheet that's under the video in the downloads area called the US Sector Data. Now, this spreadsheet is very important for you. It's a spreadsheet that's going to be very helpful for your ongoing processes for trade idea generation."
+    },
+    {
+      "start": 278.0,
+      "end": 301.06,
+      "text": "So, the spreadsheet is updated twice a year. The spreadsheet is updated twice a year in the PTM download section and it's updated every month in the ITPM data library. And of course, you can get the data yourself online for free. Just go to video 25 and you will see Chris Quill's tutorial video on how to do that."
+    },
+    {
+      "start": 302.0,
+      "end": 321.72,
+      "text": "Now, what we've done is we've downloaded a sector from the spreadsheet file. And the sector that we've downloaded here is the non-store retail sector, which is part of the larger sector retail trade."
+    },
+    {
+      "start": 321.72,
+      "end": 342.84,
+      "text": "And this is the non-store retail industry. And this is a NAICS classification of sectors. So, this is the North American industry classification system, which is obviously different from the global industry classification sectors. The GICS definition of sectors."
+    },
+    {
+      "start": 342.84,
+      "end": 367.16,
+      "text": "One is global and one is global and one is from North America only. It doesn't really matter which definitions you use. Whatever you're comfortable with and wherever you can get a large amount of usable and accurate data."
+    },
+    {
+      "start": 367.16,
+      "end": 383.16,
+      "text": "And you go and get it and you use it for your processes. The NAICS sector definition is very straightforward and it's very easy to get the free data and filter through the data with your processes."
+    },
+    {
+      "start": 383.16,
+      "end": 402.16,
+      "text": "Also, the NAICS sector classification is used by the Institute of supply management. So, if you're generating trade ideas that are originating from ISM reports, this classification would actually be a natural extension for that."
+    },
+    {
+      "start": 402.16,
+      "end": 423.16,
+      "text": "So, what have we got on the screen here? We're focusing on the non-store retail sector for our example. And what you're looking at are consensus numbers that are pulled from NASDAQ.com, then sorted by ITPM on a monthly basis."
+    },
+    {
+      "start": 423.16,
+      "end": 434.16,
+      "text": "Now, obviously, you can do this yourself. You can go to NASDAQ.com, you can download the data and sort this spreadsheet yourself any way you want to do it."
+    },
+    {
+      "start": 434.16,
+      "end": 450.16,
+      "text": "Now, the way we happen to like sorting the data is to have it so it's visualized with our most important metrics for our filtering process, visualized all in one place."
+    },
+    {
+      "start": 450.16,
+      "end": 473.16,
+      "text": "So, very easy to scan with your eye and organize all of the data easily when you're playing around with the spreadsheets. So, what do we have here? If you look at the data, first of all, we have the dates where the company's year-end is cut off."
+    },
+    {
+      "start": 473.16,
+      "end": 491.16,
+      "text": "So, for example, if you look in the column, you'll see many of the companies, their year-end ends at the end of December, at the end of the calendar year. So, their financial year is at the end of the calendar year."
+    },
+    {
+      "start": 491.16,
+      "end": 517.16,
+      "text": "Then we have market cap. Market cap, we have on the screen there. And next to it, you can see that we have EPS. So, we have four columns here for EPS. We have EPS full year zero, EPS full year one, EPS full year two, and EPS full year three. So, what is that?"
+    },
+    {
+      "start": 517.16,
+      "end": 546.16,
+      "text": "Well, by definition, zero by our definition is last year's EPS. Then we have EPS full year one. So, EPS FY one. What is that? Well, it is one year forward EPS. So, it's the current year. So, let's say you're sitting in February or March or June. EPS full year one."
+    },
+    {
+      "start": 546.16,
+      "end": 569.16,
+      "text": "EPS full year one is the forward looking one year EPS for that year. Okay? Then EPS full year two. EPS FY two is the next year. So, it's not this year that we're currently in. It's the year after. And then EPS full year three is the year after that."
+    },
+    {
+      "start": 569.16,
+      "end": 584.16,
+      "text": "Now, EG stands for earnings growth. So, we have earnings growth F1. So, earnings growth F1 is for the current year. So, that is the same year as EPS full year one."
+    },
+    {
+      "start": 584.16,
+      "end": 609.16,
+      "text": "Again, earnings growth F2, that is the same year as EPS full year two. So, if you look at EG F1, for example, that is the earnings growth that the company is experiencing in the current year based on the forward forecast."
+    },
+    {
+      "start": 609.16,
+      "end": 622.16,
+      "text": "So, based on the forward forecast. So, based on the forward forecast, it's the percentage change from last year's reported EPS, which is in year zero, and the current year."
+    },
+    {
+      "start": 622.16,
+      "end": 651.16,
+      "text": "Earnings growth F2 is the forecasted EPS of next year versus the forecasted EPS of the current year. And it's the percentage difference between the two. So, it's a forecast of earnings growth from the estimated consensus EPS numbers for the current year to the following year."
+    },
+    {
+      "start": 651.16,
+      "end": 672.16,
+      "text": "And then we have earnings growth in year three. And that's the earnings growth from year two to year three. So, EPS growth based on forecasts by the market, by research analysts, the growth, the earnings growth from year two to year three."
+    },
+    {
+      "start": 672.16,
+      "end": 700.16,
+      "text": "Now, the next columns, we have the PE ratio. And what we're doing is here is we take current stock price in the market. And we use EPS forward for full year one. So, that is a forward PE for the current year. So, year one. And then we have next year. So, we have the PE for next year. And then we have next year. So, we have the PE for next year."
+    },
+    {
+      "start": 700.16,
+      "end": 716.16,
+      "text": "So, current stock price divided by the EPS of year two. And then, of course, the same thing for year three, the current stock price divided by the EPS estimate for year three."
+    },
+    {
+      "start": 716.16,
+      "end": 744.16,
+      "text": "And then, finally, we have the PEG ratios. The PEG ratios for full year one, two, and three in the final three columns. Now, at this stage, don't worry about all of the data in the table. Just try to focus on the simple stuff for now and not go down endless rabbit holes. Focus on the simple stuff for now."
+    },
+    {
+      "start": 744.16,
+      "end": 772.16,
+      "text": "And the process itself. So, we're focusing on the non-store retail sector. Our first step in the quantitative process when attempting to identify sector outliers, as we outlined in the previous video, is to filter the spreadsheet for forward PE one. So, if you look on the screen, you'll see the spreadsheet."
+    },
+    {
+      "start": 772.16,
+      "end": 800.16,
+      "text": "So, if you look on the screen, you'll see that the spreadsheet has been filtered in descending order from the highest PE for year one to the lowest PE. And when we do this, certain stocks are obviously going to jump off the screen as positive and negative outliers based on the metric for PE in year one."
+    },
+    {
+      "start": 800.16,
+      "end": 824.16,
+      "text": "And here, in our example, we've decided to highlight three stocks. We've decided to highlight Shopify, Wayfair, and Overstock. You can see on the screen there that Shopify has a PE full year one. So, forward looking PE for the current year of 287."
+    },
+    {
+      "start": 824.16,
+      "end": 836.16,
+      "text": "Wayfair comes in at overstock comes in at overstock comes in at overstock comes in at 67 times earnings for the current year."
+    },
+    {
+      "start": 836.16,
+      "end": 846.16,
+      "text": "Now, the next step we tend to take is to start looking at earnings growth because we want to understand what is driving the valuation."
+    },
+    {
+      "start": 846.16,
+      "end": 856.16,
+      "text": "So, the first thing we look at, because it happens in the vast majority of cases at any one moment in time, the next thing we look at is earnings."
+    },
+    {
+      "start": 856.16,
+      "end": 863.16,
+      "text": "First, we want to see the earnings growth of the company to see if the earnings growth measures are supporting the valuation."
+    },
+    {
+      "start": 863.16,
+      "end": 868.16,
+      "text": "So, the next thing we do is filter by the one year forward earnings growth."
+    },
+    {
+      "start": 868.16,
+      "end": 884.16,
+      "text": "So, e.g. what? So, what's that? It's the difference, the percentage difference between last year's EPS and this year's EPS, which is a forward looking estimate."
+    },
+    {
+      "start": 884.16,
+      "end": 895.16,
+      "text": "So, the percentage difference. So, when we look at the screen here, we did highlight the stocks in the table."
+    },
+    {
+      "start": 895.16,
+      "end": 917.16,
+      "text": "So, when we re-sorted the data by EG1, SHOP has projected flat earnings growth year on year, overstock has pretty flat projected earnings growth year on year, and Wayfair earnings growth is actually projected to half."
+    },
+    {
+      "start": 917.16,
+      "end": 929.16,
+      "text": "So, this begs the obvious question, why are these stocks trading on such a high premium relative to other stocks in the sector?"
+    },
+    {
+      "start": 929.16,
+      "end": 941.16,
+      "text": "Remember, these are live stock prices in the market every day, and there's people paying those prices every day live in the market."
+    },
+    {
+      "start": 941.16,
+      "end": 947.16,
+      "text": "And we've taken that stock price, and we've used it to work out PE ratio."
+    },
+    {
+      "start": 947.16,
+      "end": 951.16,
+      "text": "So, the market is rating these stocks for a reason."
+    },
+    {
+      "start": 951.16,
+      "end": 960.16,
+      "text": "So, it obviously begs the question, why are they trading on such a high premium relative to the other stocks in the sector?"
+    },
+    {
+      "start": 960.16,
+      "end": 964.16,
+      "text": "Well, this is just an initial inquiry."
+    },
+    {
+      "start": 964.16,
+      "end": 969.16,
+      "text": "It may actually be because of other reasons."
+    },
+    {
+      "start": 969.16,
+      "end": 971.16,
+      "text": "So, we don't just give up."
+    },
+    {
+      "start": 971.16,
+      "end": 974.16,
+      "text": "We ask the obvious question, why?"
+    },
+    {
+      "start": 974.16,
+      "end": 976.16,
+      "text": "And we keep asking the question."
+    },
+    {
+      "start": 976.16,
+      "end": 978.16,
+      "text": "So, what do we do next?"
+    },
+    {
+      "start": 978.16,
+      "end": 980.16,
+      "text": "Well, we filter for EG2."
+    },
+    {
+      "start": 980.16,
+      "end": 984.16,
+      "text": "So, we filter for next year's forward earnings growth."
+    },
+    {
+      "start": 984.16,
+      "end": 993.16,
+      "text": "And we discover that both Wayfair and Overstock have much higher than average earnings growth for next year."
+    },
+    {
+      "start": 993.16,
+      "end": 998.16,
+      "text": "And SHOP has pretty non-spectacular earnings growth."
+    },
+    {
+      "start": 998.16,
+      "end": 1017.16,
+      "text": "So, the high PEs for both Wayfair and Overstock seem to be because the market is looking through the current year and paying the premium now for next year's earnings growth and potentially beyond next year."
+    },
+    {
+      "start": 1017.16,
+      "end": 1026.16,
+      "text": "So, why is it the case that earnings growth for SHOP, Wayfair and Overstock is bad in the current year?"
+    },
+    {
+      "start": 1026.16,
+      "end": 1032.16,
+      "text": "Again, it's up to you to keep asking the obvious questions and find out."
+    },
+    {
+      "start": 1032.16,
+      "end": 1045.16,
+      "text": "Well, I can tell you now, the year for EPS1, which is feeding all of our other formulas, was 2020."
+    },
+    {
+      "start": 1045.16,
+      "end": 1047.16,
+      "text": "So, it was the COVID year."
+    },
+    {
+      "start": 1047.16,
+      "end": 1055.16,
+      "text": "Now, another question you might ask yourself in a situation like this is, for example,"
+    },
+    {
+      "start": 1055.16,
+      "end": 1080.16,
+      "text": "why Shopify is trading on such a massive current year forward PE premium to the rest of the sector when it only has flat earnings growth in year one versus year zero and 25% forecast for year two growing from year one."
+    },
+    {
+      "start": 1080.16,
+      "end": 1084.16,
+      "text": "Well, remember, there is always a reason."
+    },
+    {
+      "start": 1084.16,
+      "end": 1087.16,
+      "text": "So, it's up to you to find out that reason."
+    },
+    {
+      "start": 1087.16,
+      "end": 1096.16,
+      "text": "A typical question you might ask yourself here, which would be fairly obvious to ask yourself, is maybe it's not to do with earnings."
+    },
+    {
+      "start": 1096.16,
+      "end": 1098.16,
+      "text": "Maybe it's to do with something else."
+    },
+    {
+      "start": 1098.16,
+      "end": 1103.16,
+      "text": "Maybe it's to do with another very important metric, revenue."
+    },
+    {
+      "start": 1103.16,
+      "end": 1107.16,
+      "text": "So, it might be to do with revenue growth."
+    },
+    {
+      "start": 1107.16,
+      "end": 1118.16,
+      "text": "So, the company is possibly purposely reinvesting a large portion of their earnings back into the business in order to grow the top line."
+    },
+    {
+      "start": 1118.16,
+      "end": 1120.16,
+      "text": "Maybe that's the case."
+    },
+    {
+      "start": 1120.16,
+      "end": 1122.16,
+      "text": "At this stage, we don't know."
+    },
+    {
+      "start": 1122.16,
+      "end": 1128.16,
+      "text": "We're just continuing our lines of inquiry and asking the obvious questions."
+    },
+    {
+      "start": 1128.16,
+      "end": 1137.16,
+      "text": "So, in this situation, if that is the case, then the market will actually see through this."
+    },
+    {
+      "start": 1137.16,
+      "end": 1141.16,
+      "text": "And the premium is for way in the future earnings."
+    },
+    {
+      "start": 1141.16,
+      "end": 1144.16,
+      "text": "So, it's more of a revenue growth story."
+    },
+    {
+      "start": 1144.16,
+      "end": 1153.16,
+      "text": "And if they are communicating this to the market, it will all be part of what we call the MOP, the Management Operating Plan."
+    },
+    {
+      "start": 1153.16,
+      "end": 1156.16,
+      "text": "At this stage, we just don't know."
+    },
+    {
+      "start": 1156.16,
+      "end": 1160.16,
+      "text": "We are in the discovery phase of the quant process."
+    },
+    {
+      "start": 1160.16,
+      "end": 1169.16,
+      "text": "And we are asking the obvious questions to find out the basics of the picture or story of the sector."
+    },
+    {
+      "start": 1169.16,
+      "end": 1174.16,
+      "text": "And trying to identify interesting positive outliers."
+    },
+    {
+      "start": 1174.16,
+      "end": 1178.16,
+      "text": "And indeed, interesting negative outliers."
+    },
+    {
+      "start": 1178.16,
+      "end": 1187.16,
+      "text": "What we also see here is that Shopify has by far the largest market capitalization of the three companies."
+    },
+    {
+      "start": 1187.16,
+      "end": 1190.16,
+      "text": "So, this is also worth noting too."
+    },
+    {
+      "start": 1190.16,
+      "end": 1201.16,
+      "text": "Now, just as a side note, the data in the tables that we've looked at so far hasn't been fully cleaned."
+    },
+    {
+      "start": 1201.16,
+      "end": 1209.16,
+      "text": "Later in the video series, we're going to show you how to clean data like in the tables that we've been looking at."
+    },
+    {
+      "start": 1209.16,
+      "end": 1212.16,
+      "text": "We're going to show you how to clean that data properly."
+    },
+    {
+      "start": 1212.16,
+      "end": 1217.16,
+      "text": "All this is at this stage is an example of process."
+    },
+    {
+      "start": 1217.16,
+      "end": 1224.16,
+      "text": "It's a template of how you go about doing things on a step-by-step basis."
+    },
+    {
+      "start": 1224.16,
+      "end": 1239.16,
+      "text": "Now, you may be wondering at this stage, when you look at the tables there, you may be wondering why we haven't looked at other stocks like Amazon or Alibaba."
+    },
+    {
+      "start": 1239.16,
+      "end": 1246.16,
+      "text": "Well, in long short portfolio management, market capitalization matters."
+    },
+    {
+      "start": 1246.16,
+      "end": 1256.16,
+      "text": "If you've seen the IPLT video series and Chris Quill's lessons in volatility, you will totally understand what I'm getting at here."
+    },
+    {
+      "start": 1256.16,
+      "end": 1263.16,
+      "text": "We will discuss other reasons why in more detail later in the video series."
+    },
+    {
+      "start": 1263.16,
+      "end": 1275.16,
+      "text": "So as we're going through our process, normally we would eliminate Shopify as a potential long trade idea due to its market cap size."
+    },
+    {
+      "start": 1275.16,
+      "end": 1280.16,
+      "text": "But that doesn't stop us actually including it in our analysis."
+    },
+    {
+      "start": 1280.16,
+      "end": 1287.16,
+      "text": "So we understand Wayfair and Overstock better in a better context."
+    },
+    {
+      "start": 1287.16,
+      "end": 1300.16,
+      "text": "So basically what we have as our three choices here in our example is a very large market cap size in Shopify from the table."
+    },
+    {
+      "start": 1300.16,
+      "end": 1316.16,
+      "text": "We have a small market cap size over stock from the table and Wayfair what we would define as a media or average size market cap in the table."
+    },
+    {
+      "start": 1316.16,
+      "end": 1329.16,
+      "text": "Now a useful exercise when you're going through this process is to sometimes just get the rankings from the sector in a little Excel table."
+    },
+    {
+      "start": 1329.16,
+      "end": 1343.16,
+      "text": "So we have 17 stocks in the sector and we've ranked the stocks here on market cap PE."
+    },
+    {
+      "start": 1343.16,
+      "end": 1346.16,
+      "text": "So this is the PE 1, earnings growth 1 and earnings growth 2."
+    },
+    {
+      "start": 1346.16,
+      "end": 1361.16,
+      "text": "So we rank them by those metrics just to get a clear picture of the most important comparable fundamentals and where they rank relative to each other within the sector."
+    },
+    {
+      "start": 1361.16,
+      "end": 1373.16,
+      "text": "Now we know that for W and Overstock, the market is actually looking ahead to earnings growth 2 and paying the premium now."
+    },
+    {
+      "start": 1373.16,
+      "end": 1388.16,
+      "text": "So in the rankings here, W is ranked as number 2 based on earnings growth 2 out of the 17 stocks and Overstock is ranked as 3 for earnings growth 2 relative to the 17 stocks."
+    },
+    {
+      "start": 1388.16,
+      "end": 1405.16,
+      "text": "Now, given that normally we would not even consider Shopify as a potential long trade idea because of the market cap size and because we're traders."
+    },
+    {
+      "start": 1405.16,
+      "end": 1409.16,
+      "text": "This is something we will come on to later in the video series."
+    },
+    {
+      "start": 1409.16,
+      "end": 1423.16,
+      "text": "We consider W and Overstock and based on the market cap size of those two stocks and the earnings growth 2 profiles of the two stocks."
+    },
+    {
+      "start": 1423.16,
+      "end": 1436.16,
+      "text": "We conclude that Overstock probably has the most potential and is probably the most interesting positive outlier to do further work on."
+    },
+    {
+      "start": 1436.16,
+      "end": 1450.16,
+      "text": "So we have gone through a very quick filtering process to determine what money likes and why it likes it at the surface level quant phase."
+    },
+    {
+      "start": 1450.16,
+      "end": 1456.16,
+      "text": "We can be pretty confident why the market pays the premium in Overstock."
+    },
+    {
+      "start": 1456.16,
+      "end": 1459.16,
+      "text": "It's for the earnings growth next year."
+    },
+    {
+      "start": 1459.16,
+      "end": 1464.16,
+      "text": "Additionally, it has a $3 billion market cap."
+    },
+    {
+      "start": 1464.16,
+      "end": 1473.16,
+      "text": "So that gives us as traders plenty of room for upside potential over our time horizon of 20 to 60 days."
+    },
+    {
+      "start": 1473.16,
+      "end": 1480.16,
+      "text": "And then we now continue our investigation to fill in all the gaps."
+    },
+    {
+      "start": 1480.16,
+      "end": 1492.16,
+      "text": "So the next step would be to start looking at some of the basic quantitative numbers of the profit and loss account."
+    },
+    {
+      "start": 1492.16,
+      "end": 1511.16,
+      "text": "So here we have Shopify and we have their main headline profit and loss account numbers from 2012 all the way up to 2020, which is the last reported number."
+    },
+    {
+      "start": 1511.16,
+      "end": 1517.16,
+      "text": "And we also have forecasts for 2021 and 2022."
+    },
+    {
+      "start": 1517.16,
+      "end": 1526.16,
+      "text": "So we start taking a note of the last reported numbers, the last annual numbers, and we start to work things out."
+    },
+    {
+      "start": 1526.16,
+      "end": 1541.16,
+      "text": "So if we look at the column 2020, we can see revenue came in at 2,929,000,000 and there was revenue growth of 85%."
+    },
+    {
+      "start": 1541.16,
+      "end": 1561.16,
+      "text": "Other lines to take note of would be cost of revenue, which comes in at 1.387 billion, our gross profit of 1.54 billion and also our operating expenses of 1.4 billion."
+    },
+    {
+      "start": 1561.16,
+      "end": 1570.16,
+      "text": "Within operating expenses, we have to take note of R&D, so research and development costs."
+    },
+    {
+      "start": 1570.16,
+      "end": 1578.16,
+      "text": "We also look at our operating income or loss, which is 133 million."
+    },
+    {
+      "start": 1578.16,
+      "end": 1583.16,
+      "text": "We look at our pre-tax income or loss, 148 million."
+    },
+    {
+      "start": 1583.16,
+      "end": 1590.16,
+      "text": "And that's on an adjusted basis and on a gap basis, 240 million."
+    },
+    {
+      "start": 1590.16,
+      "end": 1595.16,
+      "text": "We also take note of the forward looking projections from the market."
+    },
+    {
+      "start": 1595.16,
+      "end": 1605.16,
+      "text": "So research analysts in the market, and we note revenue of just over 4 billion with 37 and a half percent revenue growth."
+    },
+    {
+      "start": 1605.16,
+      "end": 1621.16,
+      "text": "We have a forecast for gross profit at 2.1 billion, an operating income of just over 400 million, and a pre-tax income or loss on an adjusted basis, 481 million."
+    },
+    {
+      "start": 1622.16,
+      "end": 1626.16,
+      "text": "Now it goes without saying, all of these numbers are publicly available."
+    },
+    {
+      "start": 1626.16,
+      "end": 1633.16,
+      "text": "You can get them all via the investor relations websites of any company for free."
+    },
+    {
+      "start": 1633.16,
+      "end": 1641.16,
+      "text": "So we worked out revenue growth in 2020 for Shopify as 85%."
+    },
+    {
+      "start": 1641.16,
+      "end": 1648.16,
+      "text": "So 85% growth in revenue from 2019 to 2020."
+    },
+    {
+      "start": 1648.16,
+      "end": 1662.16,
+      "text": "The forward looking analyst consensus revenue projection for Shopify was 37 and a half percent for 2021 and 31 and a half percent for 2022."
+    },
+    {
+      "start": 1662.16,
+      "end": 1668.16,
+      "text": "Revenue in 2021 was forecasted to be 4 billion."
+    },
+    {
+      "start": 1668.16,
+      "end": 1691.16,
+      "text": "And we note that the cost of revenue in 2020 was 1.3877 billion plus the operating expenses of 1.4084 billion comes to a total of 2.7961 billion in order to make 2.92 billion."
+    },
+    {
+      "start": 1691.16,
+      "end": 1697.16,
+      "text": "And their revenue was 2.9295 billion in revenue."
+    },
+    {
+      "start": 1697.16,
+      "end": 1699.16,
+      "text": "So their total costs were 2.7961 billion."
+    },
+    {
+      "start": 1699.16,
+      "end": 1701.16,
+      "text": "And their revenue was 2.9295 billion."
+    },
+    {
+      "start": 1701.16,
+      "end": 1703.16,
+      "text": "Meaning that that is a 95% number."
+    },
+    {
+      "start": 1703.16,
+      "end": 1709.16,
+      "text": "So they are spending 95 cents to make $1 of revenue."
+    },
+    {
+      "start": 1709.16,
+      "end": 1719.16,
+      "text": "Now research and development spend is typically an expense that software companies enjoy while they are in their growth phase."
+    },
+    {
+      "start": 1719.16,
+      "end": 1731.16,
+      "text": "So that when they're building out new products and services and growing their top line aggressively."
+    },
+    {
+      "start": 1731.16,
+      "end": 1745.16,
+      "text": "And it's usually worked out as a percentage of revenue or operating cost, a percentage of operating cost and or a percentage of total cost."
+    },
+    {
+      "start": 1745.16,
+      "end": 1761.16,
+      "text": "And companies seek, as they're growing and they're reaching maturity, companies seek to pare this down as they grow to maturity."
+    },
+    {
+      "start": 1761.16,
+      "end": 1775.16,
+      "text": "So as they grow to maturity, they're paring down the percentage that R&D spend contributes to revenue, operating costs and also obviously total costs."
+    },
+    {
+      "start": 1775.16,
+      "end": 1787.16,
+      "text": "In the case of Shopify, R&D spend in 2020 made up $543.8 million."
+    },
+    {
+      "start": 1787.16,
+      "end": 1795.16,
+      "text": "And its percentage of total costs comes in at 19.45%."
+    },
+    {
+      "start": 1795.16,
+      "end": 1813.16,
+      "text": "So we know that total costs for Shopify, when we work it out on a per dollar basis, that they're spending 95 cents to make every dollar of revenue."
+    },
+    {
+      "start": 1813.16,
+      "end": 1829.16,
+      "text": "So we can multiply the 19.45% by the 95 cents to work out what R&D is as a percentage of every dollar of revenue."
+    },
+    {
+      "start": 1829.16,
+      "end": 1839.16,
+      "text": "So it works out as 18.47 cents of the $1 of revenue that is spent on R&D."
+    },
+    {
+      "start": 1839.16,
+      "end": 1845.16,
+      "text": "What we can also do is work out R&D spend on a per share basis."
+    },
+    {
+      "start": 1845.16,
+      "end": 1853.16,
+      "text": "So at the time of recording, Shopify had 112 million shares in issue."
+    },
+    {
+      "start": 1853.16,
+      "end": 1868.16,
+      "text": "So if we divide the $543 million of R&D spend by the 112 million shares, we work out that in 2020, Shopify, R&D spend,"
+    },
+    {
+      "start": 1868.16,
+      "end": 1873.16,
+      "text": "R&D spend was $4.84 per share."
+    },
+    {
+      "start": 1873.16,
+      "end": 1895.16,
+      "text": "So we can make a very simple back of the envelope assumption and calculation here that if R&D spend at Shopify actually went to zero, this $4.84 in 2020 could be added back to potential pre-tax earnings."
+    },
+    {
+      "start": 1895.16,
+      "end": 1911.16,
+      "text": "Now we also noted the revenue growth in 2020, the 85% was very, very aggressive and it was down to COVID-19."
+    },
+    {
+      "start": 1911.16,
+      "end": 1923.16,
+      "text": "And the revenue growth in 2021 and 2022 is actually forecast to firstly keep growing at a very rapid pace."
+    },
+    {
+      "start": 1923.16,
+      "end": 1939.16,
+      "text": "So at 37% and 31% so that's potentially a bold projection, but it's also forecast as lower growth than the pre-COVID levels."
+    },
+    {
+      "start": 1939.16,
+      "end": 1948.16,
+      "text": "So for example, in 2018, revenue growth was 60% and in 2019, 47%."
+    },
+    {
+      "start": 1948.16,
+      "end": 1963.16,
+      "text": "So the 37% and 31% for 2021 and 2022 is a lower growth rate on the revenue level than previous times to COVID-19."
+    },
+    {
+      "start": 1963.16,
+      "end": 1970.16,
+      "text": "And this is quite typical of companies that mature and grow into maturity."
+    },
+    {
+      "start": 1970.16,
+      "end": 1979.16,
+      "text": "Revenue growth slows down and we get lower levels of revenue growth for much bigger companies that have already matured."
+    },
+    {
+      "start": 1979.16,
+      "end": 1986.16,
+      "text": "Something we also take note of is the bottom line."
+    },
+    {
+      "start": 1986.16,
+      "end": 1995.16,
+      "text": "And we can see from the bottom line that they're growing from loss making to profit in 2020."
+    },
+    {
+      "start": 1995.16,
+      "end": 2016.16,
+      "text": "So what's happening here is that in the bigger picture, the companies got to a high market cap and has gone through a large amount of their growth phase."
+    },
+    {
+      "start": 2016.16,
+      "end": 2023.16,
+      "text": "And they've had insane revenue growth and obviously the markets rewarded them for that."
+    },
+    {
+      "start": 2023.16,
+      "end": 2030.16,
+      "text": "And their bottom line is going from loss making to profit making."
+    },
+    {
+      "start": 2030.16,
+      "end": 2039.16,
+      "text": "So essentially, the company has gone through a big growth phase, got a high market cap, being rewarded by the market."
+    },
+    {
+      "start": 2039.16,
+      "end": 2046.16,
+      "text": "And now revenue growth is slowing down and they're moving into profit from a loss making position."
+    },
+    {
+      "start": 2046.16,
+      "end": 2049.16,
+      "text": "The company has essentially matured."
+    },
+    {
+      "start": 2049.16,
+      "end": 2051.16,
+      "text": "The company has arrived."
+    },
+    {
+      "start": 2051.16,
+      "end": 2079.16,
+      "text": "So our suspicions earlier when we were doing our surface level quant work in the downloadable table of data was that Shopify may be a revenue growth story and that the market was putting a big premium on the stock because of revenue growth at the company."
+    },
+    {
+      "start": 2079.16,
+      "end": 2099.16,
+      "text": "And that the management operating plan may be that it's a revenue growth situation and they're purposely growing revenue and reinvesting a lot of that revenue and earnings back into growing the top line."
+    },
+    {
+      "start": 2099.16,
+      "end": 2104.16,
+      "text": "Therefore, the market sees through the low earnings."
+    },
+    {
+      "start": 2104.16,
+      "end": 2107.16,
+      "text": "What we've discovered now is that this is probably the case."
+    },
+    {
+      "start": 2107.16,
+      "end": 2118.16,
+      "text": "But the question is, does the stock justify its full premium at this moment in time moving forward?"
+    },
+    {
+      "start": 2118.16,
+      "end": 2123.16,
+      "text": "That's the that's a question that remains to be answered."
+    },
+    {
+      "start": 2123.16,
+      "end": 2126.16,
+      "text": "Moving on to Wayfair."
+    },
+    {
+      "start": 2126.16,
+      "end": 2130.16,
+      "text": "Again, we do some work here on their numbers."
+    },
+    {
+      "start": 2130.16,
+      "end": 2135.16,
+      "text": "We look at 2020 and we see 14.145 billion."
+    },
+    {
+      "start": 2135.16,
+      "end": 2141.16,
+      "text": "That's 55% revenue growth from 2019."
+    },
+    {
+      "start": 2141.16,
+      "end": 2145.16,
+      "text": "We see our cost of revenue at 10 billion."
+    },
+    {
+      "start": 2145.16,
+      "end": 2149.16,
+      "text": "We see our gross profit at 4.1 billion."
+    },
+    {
+      "start": 2149.16,
+      "end": 2156.16,
+      "text": "We see our operating expenses at 3.747 billion."
+    },
+    {
+      "start": 2156.16,
+      "end": 2158.16,
+      "text": "R&D spend is zero."
+    },
+    {
+      "start": 2158.16,
+      "end": 2163.16,
+      "text": "And there's been no R&D spend throughout the history of the data."
+    },
+    {
+      "start": 2163.16,
+      "end": 2170.16,
+      "text": "We have operating income in 2020 coming in at 364 million."
+    },
+    {
+      "start": 2170.16,
+      "end": 2176.16,
+      "text": "And we have pre-tax income adjusted at 209, 209 million."
+    },
+    {
+      "start": 2176.16,
+      "end": 2180.16,
+      "text": "On a gap basis, 205 million."
+    },
+    {
+      "start": 2180.16,
+      "end": 2184.16,
+      "text": "We also take note of market projections."
+    },
+    {
+      "start": 2184.16,
+      "end": 2194.16,
+      "text": "So research analyst consensus projections for revenue 2021, 15.844 billion."
+    },
+    {
+      "start": 2194.16,
+      "end": 2197.16,
+      "text": "That's 12% of revenue growth on 2020."
+    },
+    {
+      "start": 2197.16,
+      "end": 2201.16,
+      "text": "For 2022, just over 19 billion."
+    },
+    {
+      "start": 2201.16,
+      "end": 2209.16,
+      "text": "So 20% revenue growth for 2022 on 2021."
+    },
+    {
+      "start": 2209.16,
+      "end": 2216.16,
+      "text": "We have a gross profit number for 2021 as well, 4.365 billion."
+    },
+    {
+      "start": 2216.16,
+      "end": 2220.16,
+      "text": "And for 2022, 5.3 billion."
+    },
+    {
+      "start": 2220.16,
+      "end": 2227.16,
+      "text": "We have an operating income number at 400 million for 2021, 686 for 2022."
+    },
+    {
+      "start": 2227.16,
+      "end": 2238.16,
+      "text": "And we have a pre-tax income on an adjusted basis, 248 for 2021 and 544 for 2022."
+    },
+    {
+      "start": 2238.16,
+      "end": 2247.16,
+      "text": "So breaking it down for Wayfair, revenue growth was just under 55% in 2020."
+    },
+    {
+      "start": 2247.16,
+      "end": 2257.16,
+      "text": "And the forward-looking analyst consensus for revenue projections were 12% in 2021, which is the current year."
+    },
+    {
+      "start": 2257.16,
+      "end": 2259.16,
+      "text": "And 20% for next year."
+    },
+    {
+      "start": 2259.16,
+      "end": 2264.16,
+      "text": "The forecast for 2021 was 15.8444 billion."
+    },
+    {
+      "start": 2264.16,
+      "end": 2273.16,
+      "text": "And we note the cost of revenue and operating expenses, basically 10 billion plus 3.7 billion."
+    },
+    {
+      "start": 2273.16,
+      "end": 2291.16,
+      "text": "We're looking at 13.7809 billion to make 14.1452 billion in revenue, which means they are spending in total 97.42 cents to make every $1 of revenue."
+    },
+    {
+      "start": 2291.16,
+      "end": 2303.16,
+      "text": "And we also noted they didn't have any R&D spend, not in 2020 or for the entire history of the company as a public company."
+    },
+    {
+      "start": 2303.16,
+      "end": 2308.16,
+      "text": "The jump in revenue growth in 2020 was clearly down to COVID-19."
+    },
+    {
+      "start": 2308.16,
+      "end": 2315.16,
+      "text": "And the revenue growth in 2021 and 2022 is forecast to firstly keep growing."
+    },
+    {
+      "start": 2315.16,
+      "end": 2328.16,
+      "text": "So again, potentially a bold projection versus the pre-COVID levels of revenue growth to be lower than those levels."
+    },
+    {
+      "start": 2328.16,
+      "end": 2339.16,
+      "text": "So this is starting to look like, at least at the revenue level, like a Shopify situation."
+    },
+    {
+      "start": 2339.16,
+      "end": 2343.16,
+      "text": "But they don't actually have any R&D spent."
+    },
+    {
+      "start": 2343.16,
+      "end": 2355.16,
+      "text": "Similarly, at the bottom line, they're going from a loss-making position prior to 2020 to making a small profit in 2020."
+    },
+    {
+      "start": 2355.16,
+      "end": 2359.16,
+      "text": "So that's similar to the Shopify situation."
+    },
+    {
+      "start": 2359.16,
+      "end": 2367.16,
+      "text": "But they're forecasted to lose money in 2021, but making profit in 2022."
+    },
+    {
+      "start": 2367.16,
+      "end": 2375.16,
+      "text": "So if we look back to the table, we're actually looking at the net income line here at the very bottom."
+    },
+    {
+      "start": 2375.16,
+      "end": 2387.16,
+      "text": "So we're looking at the 185 million profit coming from a loss-making position of almost a billion dollars in 2019."
+    },
+    {
+      "start": 2387.16,
+      "end": 2393.16,
+      "text": "So 185 million net profits, net income in 2020."
+    },
+    {
+      "start": 2393.16,
+      "end": 2407.16,
+      "text": "A loss here of 101 million in 2021 and a profit of 131 million in 2022."
+    },
+    {
+      "start": 2407.16,
+      "end": 2417.16,
+      "text": "So the market is potentially here overlooking the 2021 earnings slump in the current year."
+    },
+    {
+      "start": 2417.16,
+      "end": 2421.16,
+      "text": "So 2021 is the current year."
+    },
+    {
+      "start": 2421.16,
+      "end": 2429.16,
+      "text": "And they're paying a premium now for revenue and earnings growth, potentially in 2022."
+    },
+    {
+      "start": 2429.16,
+      "end": 2439.16,
+      "text": "So they're potentially here giving them the benefit now of 2022 revenue and earnings growth."
+    },
+    {
+      "start": 2439.16,
+      "end": 2447.16,
+      "text": "So we're starting to learn a lot about these stocks and the sector already."
+    },
+    {
+      "start": 2447.16,
+      "end": 2457.16,
+      "text": "Now, something else that's very useful from an educational perspective in terms of the process that we're going through here."
+    },
+    {
+      "start": 2457.16,
+      "end": 2471.16,
+      "text": "And if you recall, Wayfair actually had a positive EPS number in our downloadable table that we looked at earlier."
+    },
+    {
+      "start": 2471.16,
+      "end": 2489.16,
+      "text": "So for 2021 in our table, they had an EPS number of $2.31 for 2021, which is our one year forward EPS number."
+    },
+    {
+      "start": 2489.16,
+      "end": 2510.16,
+      "text": "And if you just recall here on the P&L statement, the forecasts for 2021 from research analysts in our previous table, the P&L projections that we just looked at, the net income number was negative."
+    },
+    {
+      "start": 2510.16,
+      "end": 2513.16,
+      "text": "So there's obviously a conflict here."
+    },
+    {
+      "start": 2513.16,
+      "end": 2524.16,
+      "text": "So this is what happens sometimes when we are going through our processes and our usual lines of inquiry, where we're digging deeper to find out what's going on."
+    },
+    {
+      "start": 2524.16,
+      "end": 2527.16,
+      "text": "Sometimes there's a conflict of numbers."
+    },
+    {
+      "start": 2527.16,
+      "end": 2548.16,
+      "text": "Now, we know that the trajectory matches up with our table and the P&L projections, because in 2020, in our table, we had $5.04 reported EPS for the 2020 year."
+    },
+    {
+      "start": 2548.16,
+      "end": 2556.16,
+      "text": "We got our one year forward as EPS as $2.31 for 2021."
+    },
+    {
+      "start": 2556.16,
+      "end": 2562.16,
+      "text": "So that's obviously EPS in our table going down by quite a lot."
+    },
+    {
+      "start": 2562.16,
+      "end": 2572.16,
+      "text": "And then from 2021 to 2022, we get a big jump up to $5.82 per share."
+    },
+    {
+      "start": 2572.16,
+      "end": 2582.16,
+      "text": "And this trajectory from 2020 to 2021 to 2022 in our table matches up with the P&L numbers."
+    },
+    {
+      "start": 2582.16,
+      "end": 2600.16,
+      "text": "But the numbers themselves in 2021, the number itself in 2021 doesn't match up because we have a positive $2.31 EPS number in our table, but a negative net income number in our other table."
+    },
+    {
+      "start": 2600.16,
+      "end": 2611.16,
+      "text": "So from a process perspective, it's useful to highlight this because in a normal process scenario, this can happen quite a lot."
+    },
+    {
+      "start": 2611.16,
+      "end": 2615.16,
+      "text": "Sometimes you will bump into conflicting numbers."
+    },
+    {
+      "start": 2615.16,
+      "end": 2623.16,
+      "text": "What you have to do is keep digging and try to get as close to the truth as you possibly can."
+    },
+    {
+      "start": 2623.16,
+      "end": 2635.16,
+      "text": "Obviously, in a normal process situation, you would do that and accuracy is pretty paramount."
+    },
+    {
+      "start": 2635.16,
+      "end": 2648.16,
+      "text": "You would need to work out whether the downloadable data from the spreadsheet download is incorrect or the P&L data that you're downloading is incorrect."
+    },
+    {
+      "start": 2648.16,
+      "end": 2655.16,
+      "text": "And figure out what the actual accurate situation is."
+    },
+    {
+      "start": 2655.16,
+      "end": 2666.16,
+      "text": "What we're doing here is simply just going through the processes step by step to show you how the processes and the steps work."
+    },
+    {
+      "start": 2666.16,
+      "end": 2677.16,
+      "text": "You would obviously, at various points in your process, need to be making sure that the data is clean, like we mentioned earlier."
+    },
+    {
+      "start": 2677.16,
+      "end": 2685.16,
+      "text": "And this is a part of the process that we'll be showing you later on in the video series."
+    },
+    {
+      "start": 2685.16,
+      "end": 2690.16,
+      "text": "Now, let's move on to Overstock."
+    },
+    {
+      "start": 2690.16,
+      "end": 2696.16,
+      "text": "Again, we take note of the numbers like we did with Shopify and Wayfair."
+    },
+    {
+      "start": 2696.16,
+      "end": 2708.16,
+      "text": "Revenue for 2020 came in at just over 2.5 billion, so 2,549,8 million."
+    },
+    {
+      "start": 2708.16,
+      "end": 2715.16,
+      "text": "That was revenue growth of just under 75% on 2019."
+    },
+    {
+      "start": 2715.16,
+      "end": 2722.16,
+      "text": "We take note of our cost of revenue number, 1.97 billion."
+    },
+    {
+      "start": 2722.16,
+      "end": 2727.16,
+      "text": "We also take note of gross profit, 579 million."
+    },
+    {
+      "start": 2727.16,
+      "end": 2730.16,
+      "text": "We also take note of our operating expenses."
+    },
+    {
+      "start": 2730.16,
+      "end": 2737.16,
+      "text": "We take note that there is research and development costs coming in at 137 million."
+    },
+    {
+      "start": 2737.16,
+      "end": 2743.16,
+      "text": "Operating income comes in at 33.4 million."
+    },
+    {
+      "start": 2743.16,
+      "end": 2746.16,
+      "text": "Pre-tax income at 37 million."
+    },
+    {
+      "start": 2746.16,
+      "end": 2753.16,
+      "text": "We also take note of the 2021 numbers, 2.65 billion at the revenue line."
+    },
+    {
+      "start": 2753.16,
+      "end": 2757.16,
+      "text": "That's a growth of 4% from 2020."
+    },
+    {
+      "start": 2757.16,
+      "end": 2765.16,
+      "text": "We take note of gross profit at 594 and operating income at 57."
+    },
+    {
+      "start": 2765.16,
+      "end": 2770.16,
+      "text": "Pre-tax income forecast of 59."
+    },
+    {
+      "start": 2770.16,
+      "end": 2779.16,
+      "text": "Now, getting this all down on paper and written down and doing some back-of-the-envelope calculations."
+    },
+    {
+      "start": 2779.16,
+      "end": 2785.16,
+      "text": "The Overstock revenue growth, 75% in 2020."
+    },
+    {
+      "start": 2785.16,
+      "end": 2792.16,
+      "text": "The forward-looking analyst consensus revenue projections for Overstock in the current year,"
+    },
+    {
+      "start": 2792.16,
+      "end": 2795.16,
+      "text": "2021, 4%."
+    },
+    {
+      "start": 2795.16,
+      "end": 2799.16,
+      "text": "So just under 4% coming in at 3.96%."
+    },
+    {
+      "start": 2799.16,
+      "end": 2805.16,
+      "text": "And 15.62% for the following year, 2022."
+    },
+    {
+      "start": 2805.16,
+      "end": 2819.16,
+      "text": "And the 15.62% revenue growth forecast in 2022 is actually higher than in all previous years to the COVID-19 year in 2020."
+    },
+    {
+      "start": 2819.16,
+      "end": 2826.16,
+      "text": "2021 revenue is forecasted to be $2.6508 billion."
+    },
+    {
+      "start": 2826.16,
+      "end": 2832.16,
+      "text": "And we note the cost of revenue and operating expenses on that."
+    },
+    {
+      "start": 2832.16,
+      "end": 2859.16,
+      "text": "So cost of revenue, $1.970 billion and operating expenses $546.1 million, making total cost $2.516.1 billion to make revenue of $2.549 billion, which means they are spending $0.98 in total to make $1 of revenue."
+    },
+    {
+      "start": 2859.16,
+      "end": 2869.16,
+      "text": "Now, Overstock's research and development spend, their R&D spend, was $137 million in 2020."
+    },
+    {
+      "start": 2869.16,
+      "end": 2876.16,
+      "text": "So we work that out as a percentage of the total costs, and it comes in at 5.4%."
+    },
+    {
+      "start": 2876.16,
+      "end": 2885.16,
+      "text": "So 5.4% of our $0.98 of total spend in 2020 is $5.292."
+    },
+    {
+      "start": 2885.16,
+      "end": 2895.16,
+      "text": "So R&D spend is $5.292 of every $1 of revenue in 2020."
+    },
+    {
+      "start": 2895.16,
+      "end": 2904.16,
+      "text": "At the time of recording, there's 41 million shares in issue for Overstock."
+    },
+    {
+      "start": 2904.16,
+      "end": 2914.16,
+      "text": "So if we take the $137 million R&D spend, we can work out on a per share basis the R&D spend."
+    },
+    {
+      "start": 2914.16,
+      "end": 2936.16,
+      "text": "So that comes in at $3.34 per share for R&D spend, which essentially, if Overstock paid down its R&D spend to zero, could be $3.34 per share of potential extra pre-tax earnings."
+    },
+    {
+      "start": 2936.16,
+      "end": 2948.16,
+      "text": "Now, what we can actually do, seeing as though we've now been through all three of the companies and done a slightly deeper dive on the quant,"
+    },
+    {
+      "start": 2948.16,
+      "end": 2960.16,
+      "text": "what we can do is compare Shopify and Overstock, and we can compare their R&D spend per share and their EPS."
+    },
+    {
+      "start": 2960.16,
+      "end": 2969.16,
+      "text": "So if we remember, Shopify had $4.84 per share R&D spend in 2020."
+    },
+    {
+      "start": 2969.16,
+      "end": 2976.16,
+      "text": "And we just looked at Overstock, that was $3.34 per share for R&D spend in 2020."
+    },
+    {
+      "start": 2976.16,
+      "end": 2988.16,
+      "text": "If we recall from our table, that Shopify had $3.98 of earnings per share in 2020."
+    },
+    {
+      "start": 2988.16,
+      "end": 2995.16,
+      "text": "And Overstock had $1.24 of earnings per share in 2020."
+    },
+    {
+      "start": 2995.16,
+      "end": 3011.16,
+      "text": "So what we can do here is work out the delta, the sensitivity of R&D spend per share to EPS, if R&D spend went to zero at both Shopify and Overstock."
+    },
+    {
+      "start": 3011.16,
+      "end": 3020.16,
+      "text": "So we work out a ratio for Shopify, for example, $4.84 per share of R&D spend."
+    },
+    {
+      "start": 3020.16,
+      "end": 3029.16,
+      "text": "And they had $3.98 of earnings per share in 2020, EPS zero."
+    },
+    {
+      "start": 3029.16,
+      "end": 3038.16,
+      "text": "So we divide $4.84 by $3.98, and we get a ratio of 1.22."
+    },
+    {
+      "start": 3038.16,
+      "end": 3051.16,
+      "text": "Which means if Shopify decreased its R&D spend to zero, we see a potential increase of 122% in EPS."
+    },
+    {
+      "start": 3051.16,
+      "end": 3063.16,
+      "text": "It's a delta of 122%, so a potential 122% increase in earnings per share."
+    },
+    {
+      "start": 3063.16,
+      "end": 3077.16,
+      "text": "With Overstock, we take the R&D spend of $3.34 per share, and we divide by the earnings per share of $1.24 in 2020, EPS zero."
+    },
+    {
+      "start": 3077.16,
+      "end": 3096.16,
+      "text": "And we get a ratio of 2.69 times, which means there could be a potential increase of 269% in earnings per share if Overstock pared down its R&D to zero."
+    },
+    {
+      "start": 3096.16,
+      "end": 3104.16,
+      "text": "Now, obviously, with our workings, this is all very approximate and back of the envelope."
+    },
+    {
+      "start": 3104.16,
+      "end": 3119.16,
+      "text": "And also, we've made the assumption that companies like Shopify and Overstock can actually pared down their R&D to zero and live without R&D spent."
+    },
+    {
+      "start": 3119.16,
+      "end": 3126.16,
+      "text": "Which is obviously an assumption that we're making here, but that's okay."
+    },
+    {
+      "start": 3126.16,
+      "end": 3142.16,
+      "text": "What you've witnessed here is a process whereby all we did was start with the table on the screen, the downloadable data where we had our PE numbers."
+    },
+    {
+      "start": 3142.16,
+      "end": 3149.16,
+      "text": "We had our EPS numbers, we had our EPS numbers, and our PEG numbers."
+    },
+    {
+      "start": 3149.16,
+      "end": 3159.16,
+      "text": "And what you've witnessed is a process where we are investigating through lines of inquiry after we have downloaded that data."
+    },
+    {
+      "start": 3159.16,
+      "end": 3176.16,
+      "text": "And then we've asked the obvious questions and followed lines of inquiry that have enabled us to find out what is going on with these stocks and what is going on generally in the sector."
+    },
+    {
+      "start": 3176.16,
+      "end": 3188.16,
+      "text": "So, we download the data, we organize our table, we get the statistics that are the most important statistics for us."
+    },
+    {
+      "start": 3188.16,
+      "end": 3197.16,
+      "text": "We get market cap, we get price earnings ratio, we get EPS earnings growth and PEG ratio."
+    },
+    {
+      "start": 3197.16,
+      "end": 3210.16,
+      "text": "And then first step, we organize by PE1, so forward-looking PE, and we find out what the market likes and what the market dislikes."
+    },
+    {
+      "start": 3210.16,
+      "end": 3212.16,
+      "text": "That's our first step."
+    },
+    {
+      "start": 3212.16,
+      "end": 3224.16,
+      "text": "Our next step was to filter by earnings growth 1 and then earnings growth 2 to figure out if the market is rewarding companies or punishing them for their earnings growth."
+    },
+    {
+      "start": 3224.16,
+      "end": 3241.16,
+      "text": "And then after ranking some stocks by earnings growth 1 and 2, we start to figure out and dig a little deeper that there's companies that are being rewarded for not just earnings growth, but revenue growth."
+    },
+    {
+      "start": 3241.16,
+      "end": 3253.16,
+      "text": "So, we start to figure out now that there's stocks in this particular sector that are revenue growth stories and the market is rewarding that revenue growth."
+    },
+    {
+      "start": 3253.16,
+      "end": 3272.16,
+      "text": "What we also realized through our lines of inquiry as we dig a little deeper into the numbers is that companies of different market cap sizes are at various stages of the growth and maturity phase."
+    },
+    {
+      "start": 3272.16,
+      "end": 3279.16,
+      "text": "So, Shopify is essentially maturing, it's getting to the maturity level now."
+    },
+    {
+      "start": 3279.16,
+      "end": 3291.16,
+      "text": "Now, Wayfair has essentially matured, it's almost maturing, getting into profit and with lower revenue growth."
+    },
+    {
+      "start": 3291.16,
+      "end": 3299.16,
+      "text": "And over stock is still in the growth phase."
+    },
+    {
+      "start": 3299.16,
+      "end": 3314.16,
+      "text": "So, over stock was the only one of our stocks where the post-Covid 2022 revenue growth forecast was higher than pre-Covid levels."
+    },
+    {
+      "start": 3314.16,
+      "end": 3318.16,
+      "text": "So, revenue growth is still in the growth phase."
+    },
+    {
+      "start": 3318.16,
+      "end": 3334.16,
+      "text": "The company is moving from a loss-making position to a position of profit forecast by the market and they have the highest delta of R&D spend per share to earnings per share."
+    },
+    {
+      "start": 3334.16,
+      "end": 3348.16,
+      "text": "Therefore, from a service level, quantitative perspective and from a traders and volatility perspective, over stock potentially has the most upside."
+    },
+    {
+      "start": 3348.16,
+      "end": 3354.16,
+      "text": "But remember guys, this is not a trade idea yet."
+    },
+    {
+      "start": 3354.16,
+      "end": 3375.16,
+      "text": "This is simply an example of the processes that we go through at the beginning when we pull up the table, we organize our data in the spreadsheet, we interpret the numbers and we initiate lines of inquiry."
+    },
+    {
+      "start": 3375.16,
+      "end": 3383.16,
+      "text": "And we start to figure out what's going on with positive and negative outliers in a sector."
+    },
+    {
+      "start": 3383.16,
+      "end": 3401.16,
+      "text": "So, we start digging, we interpret the numbers properly, we start digging and we start looking for it in this example at potential positive outliers that could become trade ideas and positions in the future."
+    },
+    {
+      "start": 3401.16,
+      "end": 3404.16,
+      "text": "It's an identification process."
+    },
+    {
+      "start": 3404.16,
+      "end": 3413.16,
+      "text": "And what we've done here is potentially identified over stock as a potential trade idea."
+    },
+    {
+      "start": 3413.16,
+      "end": 3417.16,
+      "text": "And of course, there must be further work done on this."
+    },
+    {
+      "start": 3417.16,
+      "end": 3419.16,
+      "text": "This is just the beginning."
+    },
+    {
+      "start": 3419.16,
+      "end": 3420.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3420.16,
+      "end": 3421.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3421.16,
+      "end": 3422.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3422.16,
+      "end": 3423.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3423.16,
+      "end": 3424.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3424.16,
+      "end": 3425.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3425.16,
+      "end": 3426.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3426.16,
+      "end": 3427.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3427.16,
+      "end": 3428.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3428.16,
+      "end": 3429.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3429.16,
+      "end": 3430.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3430.16,
+      "end": 3431.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3431.16,
+      "end": 3432.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3432.16,
+      "end": 3433.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3433.16,
+      "end": 3434.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3434.16,
+      "end": 3435.16,
+      "text": "So, we're going to look at the market."
+    },
+    {
+      "start": 3435.16,
+      "end": 3440.16,
+      "text": "So, the market is rewarding companies like Shop for their revenue growth."
+    },
+    {
+      "start": 3440.16,
+      "end": 3453.16,
+      "text": "So, the natural move here is to actually look at a metric of a revenue multiple instead of an earnings multiple like price earnings."
+    },
+    {
+      "start": 3453.16,
+      "end": 3461.16,
+      "text": "So, the way to work this out is to actually take a company's market cap and divide it by revenue."
+    },
+    {
+      "start": 3461.16,
+      "end": 3468.16,
+      "text": "So, when we look at our three stocks, Shopify, $141 billion market capitalization."
+    },
+    {
+      "start": 3468.16,
+      "end": 3479.16,
+      "text": "If we look at their 2021 forecasted revenue by the market, which is $4 billion, we get to approximately 35 times revenue."
+    },
+    {
+      "start": 3479.16,
+      "end": 3486.16,
+      "text": "With Overstock, we get 1.1 times revenue or 1.17 times revenue."
+    },
+    {
+      "start": 3486.16,
+      "end": 3490.16,
+      "text": "And Wayfair, we get to 2 times revenue."
+    },
+    {
+      "start": 3490.16,
+      "end": 3493.16,
+      "text": "So, something is going on here with Shop."
+    },
+    {
+      "start": 3493.16,
+      "end": 3499.16,
+      "text": "We need to obviously ask our questions, our obvious questions."
+    },
+    {
+      "start": 3499.16,
+      "end": 3519.16,
+      "text": "Why is the market paying 35 times for $4 billion forward revenue at Shopify and only 1.17 times revenue for 2.65 billion forward revenue at Overstock?"
+    },
+    {
+      "start": 3519.16,
+      "end": 3530.16,
+      "text": "And only 2.09 times for $15.8 billion for $15.8 billion of forward revenue at Wayfair?"
+    },
+    {
+      "start": 3530.16,
+      "end": 3534.16,
+      "text": "We go back to our default interpretation."
+    },
+    {
+      "start": 3534.16,
+      "end": 3537.16,
+      "text": "Is the market wrong?"
+    },
+    {
+      "start": 3537.16,
+      "end": 3540.16,
+      "text": "What does the market know that I don't?"
+    },
+    {
+      "start": 3540.16,
+      "end": 3543.16,
+      "text": "Well, the market obviously isn't wrong."
+    },
+    {
+      "start": 3543.16,
+      "end": 3553.16,
+      "text": "So, at this stage with our lines of inquiry, we have to assume that something's going on here, that the market knows something that I don't."
+    },
+    {
+      "start": 3553.16,
+      "end": 3562.16,
+      "text": "It could be because of additional quantitative metrics or even qualitative factors."
+    },
+    {
+      "start": 3562.16,
+      "end": 3578.16,
+      "text": "Certainly, the revenue growth numbers in the 30s in terms of percentage growth numbers is much higher than the forecasts for Overstock and Wayfair."
+    },
+    {
+      "start": 3578.16,
+      "end": 3595.16,
+      "text": "So, for Shopify, if you recall, 2021 revenue growth on 2020 was 37% and 2022 revenue growth from 2021 was 31%."
+    },
+    {
+      "start": 3595.16,
+      "end": 3608.16,
+      "text": "So, yes, the revenue growth numbers are forecasted to be higher, but it could also be because of other quantitative and qualitative factors."
+    },
+    {
+      "start": 3608.16,
+      "end": 3617.16,
+      "text": "It's obviously a huge difference in revenue multiple when you look at Shopify versus Overstock and Wayfair."
+    },
+    {
+      "start": 3617.16,
+      "end": 3638.16,
+      "text": "So, it obviously might be worth continuing at this stage to investigate why Shopify has such a high revenue multiple and also price earnings multiple in order to see what the market rewards in the sector."
+    },
+    {
+      "start": 3638.16,
+      "end": 3644.16,
+      "text": "So, it's probably worth finding out the reason why this is happening."
+    },
+    {
+      "start": 3644.16,
+      "end": 3652.16,
+      "text": "And just to give you a clue, it's not just about the revenue growth number, okay?"
+    },
+    {
+      "start": 3652.16,
+      "end": 3655.16,
+      "text": "It's also about how they make their revenue."
+    },
+    {
+      "start": 3655.16,
+      "end": 3670.16,
+      "text": "So, check in the financial statements that we looked at earlier for sales and services revenue and what they've called other revenue and compare this to Wayfair and Overstock."
+    },
+    {
+      "start": 3670.16,
+      "end": 3675.16,
+      "text": "And then you can do further investigation on that."
+    },
+    {
+      "start": 3675.16,
+      "end": 3693.16,
+      "text": "But as mentioned previously with Shopify, it doesn't fall into the traders remit of the volatility and 20 to 60 day time horizon because of the size of the company and the company reaching maturity."
+    },
+    {
+      "start": 3693.16,
+      "end": 3705.16,
+      "text": "So, you would still do further work on it to get the context of what the market is rewarding in the sector and why."
+    },
+    {
+      "start": 3705.16,
+      "end": 3714.16,
+      "text": "But we would be looking more towards stocks and companies like Overstock as traders and portfolio managers for trade ideas."
+    },
+    {
+      "start": 3714.16,
+      "end": 3721.16,
+      "text": "So, what we have shown you here is the process."
+    },
+    {
+      "start": 3721.16,
+      "end": 3736.16,
+      "text": "It's the process that you go through when analyzing the most important fundamental data in a sector when you're trying to identify potential long ideas."
+    },
+    {
+      "start": 3736.16,
+      "end": 3755.16,
+      "text": "We systematically went through price earnings ratio, earnings growth, market capitalization, revenue growth and even revenue multiples and started interpreting the data and digging deeper to try and find the answers."
+    },
+    {
+      "start": 3755.16,
+      "end": 3769.16,
+      "text": "What we are doing here and what we are trying to do all the time, whether it's a long or a short idea, we are looking for fundamental tailwinds, directional tailwinds."
+    },
+    {
+      "start": 3769.16,
+      "end": 3780.16,
+      "text": "The answer we want here is a yes or a no as to whether Overstock is a fundamental buy at this moment in time."
+    },
+    {
+      "start": 3780.16,
+      "end": 3787.16,
+      "text": "Now, of course, things will change in the future and Overstock is an example."
+    },
+    {
+      "start": 3787.16,
+      "end": 3797.16,
+      "text": "Please don't be the dummy that comes up with this idea and just copy trades it and or hindsight the work that's been done."
+    },
+    {
+      "start": 3797.16,
+      "end": 3800.16,
+      "text": "We are showing you the process here."
+    },
+    {
+      "start": 3800.16,
+      "end": 3805.16,
+      "text": "It's not yet an idea or even a trade at this stage."
+    },
+    {
+      "start": 3805.16,
+      "end": 3808.16,
+      "text": "Please focus on the process."
+    },
+    {
+      "start": 3808.16,
+      "end": 3820.16,
+      "text": "The exercises we went through, for example, with R&D spend apply in this sector because it's obviously important for this sector."
+    },
+    {
+      "start": 3820.16,
+      "end": 3821.16,
+      "text": "How do we know this?"
+    },
+    {
+      "start": 3821.16,
+      "end": 3834.16,
+      "text": "Well, through our lines of inquiry after interpretation because the valuations are telling us that it's not just about the level of earnings for a stock in this sector."
+    },
+    {
+      "start": 3834.16,
+      "end": 3843.16,
+      "text": "We realize that we have to look at revenue growth and the progression to maturity of a company."
+    },
+    {
+      "start": 3843.16,
+      "end": 3856.16,
+      "text": "However, regardless, the process that we went through identified the fundamentals that we have to focus on for this particular sector."
+    },
+    {
+      "start": 3856.16,
+      "end": 3867.16,
+      "text": "If we didn't engage in the process, if we didn't engage in the process, if we didn't ask the obvious questions and keep digging, we would never know."
+    },
+    {
+      "start": 3867.16,
+      "end": 3871.16,
+      "text": "So, this is why sticking to the process is so important, guys."
+    },
+    {
+      "start": 3871.16,
+      "end": 3883.16,
+      "text": "The process itself is what you need to focus on because it's applicable to every single sector and it's a repeatable process."
+    },
+    {
+      "start": 3883.16,
+      "end": 3900.16,
+      "text": "That's why we use it because repeatable processes lead to generating a large amount of high quality trade ideas, which leads to consistent returns."
+    },
+    {
+      "start": 3900.16,
+      "end": 3905.16,
+      "text": "So, a robust and repeatable process is required."
+    },
+    {
+      "start": 3905.16,
+      "end": 3909.16,
+      "text": "So, you must focus on the process."
+    },
+    {
+      "start": 3909.16,
+      "end": 3917.16,
+      "text": "So, now we always get this question at ITPM from retail traders starting out."
+    },
+    {
+      "start": 3917.16,
+      "end": 3928.16,
+      "text": "So, beginners, when you first experience earnings growth, people always ask the question, what is a good or bad level of earnings growth?"
+    },
+    {
+      "start": 3928.16,
+      "end": 3929.16,
+      "text": "Well, let's start with this."
+    },
+    {
+      "start": 3929.16,
+      "end": 3931.16,
+      "text": "Well, let's start with this."
+    },
+    {
+      "start": 3931.16,
+      "end": 3940.16,
+      "text": "Just because a company has negative EPS, for example, so it loses money, it doesn't mean it's a short."
+    },
+    {
+      "start": 3940.16,
+      "end": 3944.16,
+      "text": "You've just witnessed that here when we've looked at this sector."
+    },
+    {
+      "start": 3944.16,
+      "end": 3956.16,
+      "text": "Companies like Shopify or Overstock, they lost money for years at the earnings per share level because it was part of their management operating plan."
+    },
+    {
+      "start": 3956.16,
+      "end": 3965.16,
+      "text": "They were growing the top line intentionally by plowing revenue out of R&D spent."
+    },
+    {
+      "start": 3965.16,
+      "end": 3978.16,
+      "text": "When you go through your process, you will have to interpret data and figure out what is good and bad to identify both positive and negative outliers."
+    },
+    {
+      "start": 3978.16,
+      "end": 3990.16,
+      "text": "And part of this process, as you've witnessed today, is the process of filtering for earnings growth."
+    },
+    {
+      "start": 3990.16,
+      "end": 4002.16,
+      "text": "So, the natural question, and obviously we don't blame people for asking this question, the obvious question is what is a good and bad level of earnings growth?"
+    },
+    {
+      "start": 4002.16,
+      "end": 4008.16,
+      "text": "Well, this can be measured on both a relative and absolute basis."
+    },
+    {
+      "start": 4008.16,
+      "end": 4027.16,
+      "text": "When you pull up a sector and you have all of the data in front of you in the tables, you can obviously sum up the column for earnings growth and work out the mean average consensus earnings growth for a particular sector by just dividing by the number of stocks in the sector."
+    },
+    {
+      "start": 4027.16,
+      "end": 4036.16,
+      "text": "And you will then be able to visually or optically see the positive and negative outliers very easily."
+    },
+    {
+      "start": 4036.16,
+      "end": 4040.16,
+      "text": "However, this does cut with a caveat."
+    },
+    {
+      "start": 4040.16,
+      "end": 4045.16,
+      "text": "Absolute earnings growth also matters."
+    },
+    {
+      "start": 4045.16,
+      "end": 4055.16,
+      "text": "If you find that the average for a sector is negative, for example, and the most positive outlier has earnings growth of, say, 5%."
+    },
+    {
+      "start": 4055.16,
+      "end": 4065.16,
+      "text": "Why in the hell, as traders, would we want to be longer stock that barely has earnings growth above the rate of inflation?"
+    },
+    {
+      "start": 4065.16,
+      "end": 4067.16,
+      "text": "As traders, we simply don't."
+    },
+    {
+      "start": 4067.16,
+      "end": 4078.16,
+      "text": "We want to be long great stocks that go up and short bad stocks that go down within our 20 to 60 day time horizon."
+    },
+    {
+      "start": 4078.16,
+      "end": 4087.16,
+      "text": "There are obviously better longs out there than stocks with crappy low 5% earnings growth."
+    },
+    {
+      "start": 4087.16,
+      "end": 4098.16,
+      "text": "Remember, money likes growth and dislikes slow downs in growth and even worse, contraction."
+    },
+    {
+      "start": 4098.16,
+      "end": 4104.16,
+      "text": "So, guys, this brings us to the end of this stage of the trade idea generation process."
+    },
+    {
+      "start": 4104.16,
+      "end": 4107.16,
+      "text": "Let's go back to the desk for a quick recap."
+    },
+    {
+      "start": 4107.16,
+      "end": 4114.16,
+      "text": "Okay, so welcome back to the desk."
+    },
+    {
+      "start": 4114.16,
+      "end": 4116.16,
+      "text": "Surprise, surprise."
+    },
+    {
+      "start": 4116.16,
+      "end": 4119.16,
+      "text": "Money likes growth."
+    },
+    {
+      "start": 4119.16,
+      "end": 4125.16,
+      "text": "So we start, guys, with our P ratio, price earnings ratio."
+    },
+    {
+      "start": 4125.16,
+      "end": 4133.16,
+      "text": "That is our first clue when we're looking at stocks to what the market likes or dislikes."
+    },
+    {
+      "start": 4133.16,
+      "end": 4139.16,
+      "text": "So we start with price earnings ratio and we work backwards price earnings ratio."
+    },
+    {
+      "start": 4139.16,
+      "end": 4143.16,
+      "text": "Then we move on to earnings growth and revenue growth."
+    },
+    {
+      "start": 4143.16,
+      "end": 4146.16,
+      "text": "Always remember, guys, always remember this."
+    },
+    {
+      "start": 4146.16,
+      "end": 4155.16,
+      "text": "There is always a reason why a stock trades on a premium or a discount to its sector peers."
+    },
+    {
+      "start": 4155.16,
+      "end": 4156.16,
+      "text": "There is always a reason."
+    },
+    {
+      "start": 4156.16,
+      "end": 4157.16,
+      "text": "There is always a reason."
+    },
+    {
+      "start": 4157.16,
+      "end": 4174.16,
+      "text": "And nine times out of 10 or even more than that throughout stock market history, it will be because the stock itself has superior or inferior earnings growth and or revenue growth."
+    },
+    {
+      "start": 4174.16,
+      "end": 4178.16,
+      "text": "So something will be driving that growth."
+    },
+    {
+      "start": 4178.16,
+      "end": 4180.16,
+      "text": "There's always something behind it."
+    },
+    {
+      "start": 4180.16,
+      "end": 4184.16,
+      "text": "So there's always a reason why it's happening."
+    },
+    {
+      "start": 4184.16,
+      "end": 4187.16,
+      "text": "And there will be something behind it driving it."
+    },
+    {
+      "start": 4187.16,
+      "end": 4193.16,
+      "text": "There'll be something that the market just likes or dislikes about the stock."
+    },
+    {
+      "start": 4193.16,
+      "end": 4199.16,
+      "text": "Hence the premium valuation or the discount valuation."
+    },
+    {
+      "start": 4199.16,
+      "end": 4205.16,
+      "text": "So we're going to look at fundamental drivers later on in the video series."
+    },
+    {
+      "start": 4205.16,
+      "end": 4211.16,
+      "text": "But for now, we continue with the quantitative processing steps."
+    },
+    {
+      "start": 4211.16,
+      "end": 4218.16,
+      "text": "So we identify what the market likes and dislikes with price earnings ratio."
+    },
+    {
+      "start": 4218.16,
+      "end": 4222.16,
+      "text": "We then move to earnings growth and revenue growth."
+    },
+    {
+      "start": 4222.16,
+      "end": 4225.16,
+      "text": "And then we move on to peg ratio."
+    },
+    {
+      "start": 4225.16,
+      "end": 4235.16,
+      "text": "So as we move through the quantitative phase, utilizing our processes with obviously correct interpretation."
+    },
+    {
+      "start": 4235.16,
+      "end": 4237.16,
+      "text": "What are we actually doing here?"
+    },
+    {
+      "start": 4237.16,
+      "end": 4245.16,
+      "text": "We are building up a picture of the sector and identifying the positive and negative outliers."
+    },
+    {
+      "start": 4245.16,
+      "end": 4252.16,
+      "text": "And we're looking obviously in the end for our potential long and short trade ideas."
+    },
+    {
+      "start": 4252.16,
+      "end": 4257.16,
+      "text": "So guys, let's continue with the quantitative processing steps."
+    },
+    {
+      "start": 4257.16,
+      "end": 4263.16,
+      "text": "And let's move on and look in the next video at peg ratio."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

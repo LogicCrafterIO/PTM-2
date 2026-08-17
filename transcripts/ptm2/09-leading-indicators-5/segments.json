@@ -1,0 +1,5060 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 23.0,
+      "text": "Okay, so let's get stuck in to video number nine, our next leading indicator, so our fifth leading indicator, the University of Michigan Consumer Sentiment Index, or the UMCSI."
+    },
+    {
+      "start": 23.0,
+      "end": 34.88,
+      "text": "So yes, we are going to be having a look now at consumers and a survey in the consumer sector of the economy."
+    },
+    {
+      "start": 34.88,
+      "end": 45.08,
+      "text": "So, recap of leading indicators covered so far. We've got our government bond markets leading indicators, real interest rates and the yield curve."
+    },
+    {
+      "start": 45.08,
+      "end": 52.96,
+      "text": "We've got our corporate bond markets leading indicators, our investment grade with high yield or junk spreads over the 10-year."
+    },
+    {
+      "start": 53.0,
+      "end": 65.88,
+      "text": "We've got our M2 money supply accessory. We've got our stock market volatility, the VIX, the S&P 500 VIX from the IPLT video series, and we've got our surveys."
+    },
+    {
+      "start": 65.88,
+      "end": 75.76,
+      "text": "And so far, we have covered the ISM Manufacturing Report on Business, and we've covered the ISM Non-Manufacturing Report on Business."
+    },
+    {
+      "start": 75.76,
+      "end": 85.76,
+      "text": "Now, we are going to add in the US consumer by looking at the University of Michigan Consumer Sentiment Index."
+    },
+    {
+      "start": 85.76,
+      "end": 99.64,
+      "text": "So what exactly is the UMCSI? What is it? Well, it's a monthly survey that gauges the level of consumer sentiment in the US economy."
+    },
+    {
+      "start": 99.64,
+      "end": 109.52,
+      "text": "So, sentiment as to whether consumers as a whole in the US economy are either bullish or bearish on their future."
+    },
+    {
+      "start": 109.52,
+      "end": 125.52,
+      "text": "So, if consumer sentiment is high, so consumers in the US are bullish on their future, consumers are likely to be spending more in the future, causing the economy to expand."
+    },
+    {
+      "start": 125.52,
+      "end": 131.4,
+      "text": "So there's more consumption and potentially less saving."
+    },
+    {
+      "start": 131.4,
+      "end": 147.52,
+      "text": "If consumer sentiment is low, so bearish on the future, so consumers in the US are looking at their future, and they're bearish on their consumer sentiment for the future."
+    },
+    {
+      "start": 147.52,
+      "end": 155.4,
+      "text": "So, what's going to happen? Consumers will likely spend less in the future, causing the economy to contract."
+    },
+    {
+      "start": 155.4,
+      "end": 161.4,
+      "text": "So we get less consumption and people tightening their belts and saving more."
+    },
+    {
+      "start": 161.4,
+      "end": 176.96,
+      "text": "Now, the consumer, we calculate the size of the consumer in the US in terms of the amount of consumer spending that takes place in the economy."
+    },
+    {
+      "start": 176.96,
+      "end": 182.84,
+      "text": "And consumer spending makes up 67% of the US economy."
+    },
+    {
+      "start": 182.84,
+      "end": 187.84,
+      "text": "And if you recall, there's not many entities that make up an economy."
+    },
+    {
+      "start": 187.84,
+      "end": 190.84,
+      "text": "It's just businesses, consumers, and government."
+    },
+    {
+      "start": 190.84,
+      "end": 197.84,
+      "text": "And businesses and consumers are in the private sector, and government is in the public sector."
+    },
+    {
+      "start": 197.84,
+      "end": 207.72,
+      "text": "So if we're looking at consumer spending making up 67% of the economy, the remainder is business and government spending."
+    },
+    {
+      "start": 207.72,
+      "end": 214.72,
+      "text": "So the consumer, US consumer spending makes up the majority of spending of those entities in the United States."
+    },
+    {
+      "start": 214.72,
+      "end": 235.6,
+      "text": "So it obviously stands to reason that as traders and portfolio managers, gauging consumer sentiment in the United States is extremely important as a leading indicator to the future of the economy, so GDP growth."
+    },
+    {
+      "start": 235.6,
+      "end": 253.48,
+      "text": "Now, before we get into the details of the UMCSI, it's probably prudent at this stage to have a quick lesson on some economic theory to understand the dynamics of consumers."
+    },
+    {
+      "start": 253.48,
+      "end": 266.36,
+      "text": "So what we're going to have a look at first is something called the paradox of thrift, which was popularized by the famous economist John Maynard Keynes."
+    },
+    {
+      "start": 266.36,
+      "end": 282.32,
+      "text": "And it's based on the notion, which we outlined briefly on the previous slide, whereby individuals seek to cut their consumption during periods of economic contraction and increase their savings."
+    },
+    {
+      "start": 282.32,
+      "end": 290.8,
+      "text": "So tightening their belt overall, which in turn will lead to further contraction."
+    },
+    {
+      "start": 290.8,
+      "end": 304.12,
+      "text": "So think about this, when there's an economic downturn, if all that consumers are reading in the media are headlines like, get ready for the recession, what's their natural tendency going to be?"
+    },
+    {
+      "start": 304.12,
+      "end": 312.12,
+      "text": "Their natural tendency is going to be to cut consumption, to save and hoard cash and resources."
+    },
+    {
+      "start": 313.12,
+      "end": 315.76,
+      "text": "And what does that lead to in the future?"
+    },
+    {
+      "start": 316.26,
+      "end": 337.9,
+      "text": "Well, it causes a steeper and faster contraction in the economy, in GDP, so GDP growth, because of the sudden fall in consumer demand, which leads to a longer and deeper period of contraction."
+    },
+    {
+      "start": 337.9,
+      "end": 348.1,
+      "text": "So the paradox occurs because the only way really for an economy to get itself out of contraction is to obviously expand."
+    },
+    {
+      "start": 348.1,
+      "end": 353.02,
+      "text": "And the only way to expand is to actually spend."
+    },
+    {
+      "start": 353.82,
+      "end": 363.98,
+      "text": "So the spending causes an increase in aggregate demand, which generates price inflation and then GDP growth."
+    },
+    {
+      "start": 364.68,
+      "end": 373.16,
+      "text": "However, when individual consumers expect worse economic conditions in the future, their sentiment of the future is negative."
+    },
+    {
+      "start": 373.76,
+      "end": 381.28,
+      "text": "And instead of doing what's required, which is to spend in order to expand, what do they do in reality?"
+    },
+    {
+      "start": 382.2,
+      "end": 386.76,
+      "text": "They do the opposite and they save and they cut consumer spending."
+    },
+    {
+      "start": 386.96,
+      "end": 409.94,
+      "text": "And collectively, if we take all consumers in an economy, if they're all making this decision at an individual level, and then we look at all consumers in the economy, by not spending collectively, consumers are essentially causing their own economic situation or living standards to be even worse in the future."
+    },
+    {
+      "start": 409.94,
+      "end": 418.12,
+      "text": "So this is the paradox of thrift."
+    },
+    {
+      "start": 418.12,
+      "end": 425.16,
+      "text": "So being thrifty in an economic downturn, because all the consumers, it's in their best interests for the economy to expand."
+    },
+    {
+      "start": 425.16,
+      "end": 430.36,
+      "text": "However, their actions are the opposite of what's good for them."
+    },
+    {
+      "start": 430.36,
+      "end": 449.44,
+      "text": "Now, if we think of the paradox of thrift in reverse, well, it's a little far-fetched to say that it's in the best interests when an economy is expanding that consumers would want."
+    },
+    {
+      "start": 449.44,
+      "end": 454.04,
+      "text": "So it's in their best interests, they would want an economy to contract."
+    },
+    {
+      "start": 454.64,
+      "end": 455.6,
+      "text": "So think about it."
+    },
+    {
+      "start": 455.78,
+      "end": 465.82,
+      "text": "If an economy is expanding for a long period of time, why would consumers want the economy to contract?"
+    },
+    {
+      "start": 466.04,
+      "end": 468.5,
+      "text": "It's not in their best interest."
+    },
+    {
+      "start": 469.0,
+      "end": 483.4,
+      "text": "So when we look at the paradox of thrift in reverse, there's an issue here, because as far as consumers and long-term investors in the stock market are concerned, let's ask ourselves this question."
+    },
+    {
+      "start": 483.94,
+      "end": 489.92,
+      "text": "Is it bad to always be expanding and benefiting from higher living standards?"
+    },
+    {
+      "start": 490.4,
+      "end": 491.46,
+      "text": "Well, of course not."
+    },
+    {
+      "start": 492.86,
+      "end": 507.16,
+      "text": "Basically, for living standards and your own individual economic condition as a consumer, contraction is bad and expansion is good."
+    },
+    {
+      "start": 508.08,
+      "end": 531.58,
+      "text": "So the behavior of consumers in times of thrift, so during times of contraction, is not consistent with consumer behavior in times of expansion during, for lack of a better word, during times of extravagance."
+    },
+    {
+      "start": 531.58,
+      "end": 554.68,
+      "text": "So if we apply the same logic to an economy that's expanding a lot for a long period of time, if we wanted to make them consistent, we would be stating that consumers should be spending less and saving more in order to better their own living standards or economic situation."
+    },
+    {
+      "start": 555.4,
+      "end": 566.08,
+      "text": "But this would be counterintuitive, because if all consumers did this, it would cause them to all have worse living standards."
+    },
+    {
+      "start": 566.84,
+      "end": 567.22,
+      "text": "Why?"
+    },
+    {
+      "start": 567.52,
+      "end": 578.82,
+      "text": "Because overall economic growth in the economy would go down, and that's bad for everybody, everybody's living standards and economic situation individually."
+    },
+    {
+      "start": 579.48,
+      "end": 591.24,
+      "text": "So when consumer sentiment is high, and we're in times of extravagance, it can be argued that consumers are actually behaving rationally."
+    },
+    {
+      "start": 591.36,
+      "end": 601.88,
+      "text": "So they are spending more and more and continually causing their own living standards or economic situation to get better and better."
+    },
+    {
+      "start": 602.92,
+      "end": 612.2,
+      "text": "And when consumer sentiment is low, it can obviously be argued that consumers are behaving irrationally."
+    },
+    {
+      "start": 612.2,
+      "end": 619.48,
+      "text": "So they are cautious, they are hoarding, they are saving, and what ends up happening?"
+    },
+    {
+      "start": 619.48,
+      "end": 627.56,
+      "text": "They cause their own living standards or economic situation to get worse and worse."
+    },
+    {
+      "start": 627.56,
+      "end": 631.84,
+      "text": "And what they should be doing is spending."
+    },
+    {
+      "start": 631.84,
+      "end": 646.34,
+      "text": "So this is an interesting dynamic of consumer behavior to understand as we lead in to doing work on the University of Michigan Consumer Sentiment Index."
+    },
+    {
+      "start": 646.34,
+      "end": 653.82,
+      "text": "It's just good background information in terms of economic understanding of how consumers behave."
+    },
+    {
+      "start": 653.82,
+      "end": 671.2,
+      "text": "We will read into our numbers in a lot better understanding if we understand how consumers behave in periods of thrift or contraction and periods of expansion and extravagance."
+    },
+    {
+      "start": 672.62,
+      "end": 688.0,
+      "text": "Now, something else to understand when we're thinking about consumers, it's not a consumer behavior or, if you like, consumer psychology variable or factor to consider."
+    },
+    {
+      "start": 688.84,
+      "end": 690.7,
+      "text": "This is a capacity issue."
+    },
+    {
+      "start": 691.22,
+      "end": 698.18,
+      "text": "We do have finite resources and consumers have finite parameters."
+    },
+    {
+      "start": 699.18,
+      "end": 703.66,
+      "text": "One limiting factor is just the purchase of products, okay?"
+    },
+    {
+      "start": 703.66,
+      "end": 716.58,
+      "text": "A consumer can only have, at any one time, so many cars, washing machines, refrigerators, handheld devices, phones, et cetera, et cetera."
+    },
+    {
+      "start": 717.58,
+      "end": 721.32,
+      "text": "This is a finite constraint on consumers."
+    },
+    {
+      "start": 722.2,
+      "end": 728.68,
+      "text": "So when we think about that in terms of extravagance, there is a cycle to this, okay?"
+    },
+    {
+      "start": 728.68,
+      "end": 738.4,
+      "text": "There is a cycle where consumers get constrained and then there's nothing left to consume."
+    },
+    {
+      "start": 739.06,
+      "end": 742.74,
+      "text": "Logically and in theory, that can be the case."
+    },
+    {
+      "start": 744.18,
+      "end": 756.86,
+      "text": "Another limiting factor and probably much more important from a trader's and portfolio manager's perspective is that consumers in their behaviors,"
+    },
+    {
+      "start": 756.86,
+      "end": 768.26,
+      "text": "so consumer spending and savings rates, are also a function of the money supply and the price of money, so real interest rates,"
+    },
+    {
+      "start": 768.92,
+      "end": 780.04,
+      "text": "both of which can be decreased and increased by the Fed when they're utilizing conventional and unconventional means to hit their dual mandate."
+    },
+    {
+      "start": 780.04,
+      "end": 789.16,
+      "text": "So this is a real, everyday parameter that's finite in the economy."
+    },
+    {
+      "start": 790.52,
+      "end": 795.78,
+      "text": "Consumer spending has peaks and troughs like business activity."
+    },
+    {
+      "start": 795.78,
+      "end": 803.82,
+      "text": "So when we looked at the ISM and the NMI, they move in tandem and literally taking together."
+    },
+    {
+      "start": 803.82,
+      "end": 811.98,
+      "text": "So when we take together consumer spending and business activity, they make up the business cycle."
+    },
+    {
+      "start": 812.58,
+      "end": 820.68,
+      "text": "So if you recall from video four, when we looked at real interest rates in the yield curve, you may want to go back and have a look at this slide."
+    },
+    {
+      "start": 821.26,
+      "end": 831.34,
+      "text": "I've put it on the screen there for you to remind you there's cycles to this based on interest rates, okay, based on real rates and the money supply."
+    },
+    {
+      "start": 832.54,
+      "end": 843.02,
+      "text": "Money becomes cheap and money becomes expensive and consumer spending responds to this parameter and so do businesses."
+    },
+    {
+      "start": 843.02,
+      "end": 848.98,
+      "text": "Businesses, so businesses and consumers, so businesses and consumers expand and contract together."
+    },
+    {
+      "start": 849.74,
+      "end": 861.36,
+      "text": "Business investment and consumer spending patterns or behaviors are to a large extent a function of real rates and the money supply."
+    },
+    {
+      "start": 862.52,
+      "end": 877.14,
+      "text": "So if you recall, just looking at the screenshot of the slide from video four there, when money becomes cheap, governments, companies and individuals, so consumers, borrow more of it."
+    },
+    {
+      "start": 877.86,
+      "end": 881.02,
+      "text": "We get higher growth prospects, consumption."
+    },
+    {
+      "start": 881.66,
+      "end": 886.54,
+      "text": "So from consumers, we get higher consumption and investment from businesses."
+    },
+    {
+      "start": 887.66,
+      "end": 896.0,
+      "text": "How does that lead into the equity markets where we get higher equity valuation and earnings from companies."
+    },
+    {
+      "start": 896.18,
+      "end": 900.66,
+      "text": "So we get higher corporate earnings and higher equity market valuation."
+    },
+    {
+      "start": 901.16,
+      "end": 907.16,
+      "text": "And then we come to the end of the cycle and then we come to the end of the cycle and money becomes more expensive."
+    },
+    {
+      "start": 907.16,
+      "end": 921.16,
+      "text": "And what happens then, governments, companies and individuals, or are less, we get lower growth prospects or perhaps contraction, we get less consumption and investment, we get lower equity valuation and earnings."
+    },
+    {
+      "start": 921.16,
+      "end": 928.16,
+      "text": "And then we start the cycle again, money starts to become cheap."
+    },
+    {
+      "start": 928.16,
+      "end": 933.16,
+      "text": "So this is how consumers fit in to the overall picture."
+    },
+    {
+      "start": 933.16,
+      "end": 937.16,
+      "text": "Businesses and consumers expand and contract together."
+    },
+    {
+      "start": 937.16,
+      "end": 950.16,
+      "text": "And quarterly and annual gross domestic product numbers, so the GDP prints, lag the S&P 500 price and earnings."
+    },
+    {
+      "start": 950.16,
+      "end": 961.16,
+      "text": "Businesses and earnings and valuation, which are a function of consumer spending patterns and behaviours and business investment."
+    },
+    {
+      "start": 961.16,
+      "end": 979.16,
+      "text": "So when we're considering consumers in the economy, we not only have to understand consumer behaviour and consumer psychology, if you like, with the paradox of thrift."
+    },
+    {
+      "start": 979.16,
+      "end": 984.16,
+      "text": "So the opposite doesn't line up, doesn't make logical sense."
+    },
+    {
+      "start": 984.16,
+      "end": 999.16,
+      "text": "We also have to consider how everything is linked together and how consumers face a finite set of variables or parameters."
+    },
+    {
+      "start": 999.16,
+      "end": 1002.16,
+      "text": "So real interest rates and the money supply."
+    },
+    {
+      "start": 1002.16,
+      "end": 1009.16,
+      "text": "So we don't just look at consumers in absolute terms."
+    },
+    {
+      "start": 1009.16,
+      "end": 1019.16,
+      "text": "We have to consider consumer behaviour in the context of everything else that is happening in the economy."
+    },
+    {
+      "start": 1019.16,
+      "end": 1028.16,
+      "text": "Therefore, from a trader and portfolio manager perspective, everything that's happening with the rest of our leading indicators,"
+    },
+    {
+      "start": 1028.16,
+      "end": 1034.16,
+      "text": "especially what's happening in the money markets and with businesses."
+    },
+    {
+      "start": 1034.16,
+      "end": 1044.16,
+      "text": "So both in the manufacturing and services, so non-manufacturing sectors of the economy."
+    },
+    {
+      "start": 1044.16,
+      "end": 1049.16,
+      "text": "Now, there are critics of the paradox of thrift."
+    },
+    {
+      "start": 1049.16,
+      "end": 1064.16,
+      "text": "Quick reminder of what we've laid out so far in terms of consumer behaviour, in terms of rational behaviour, where there's no paradox."
+    },
+    {
+      "start": 1064.16,
+      "end": 1069.16,
+      "text": "This is during periods of expansion, so periods of extravagance."
+    },
+    {
+      "start": 1069.16,
+      "end": 1080.16,
+      "text": "If consumer sentiment is high, so they are bullish on the future, consumers will spend more in the future, causing the economy to expand more."
+    },
+    {
+      "start": 1080.16,
+      "end": 1085.16,
+      "text": "So in this period, what's the consumer behaving like?"
+    },
+    {
+      "start": 1085.16,
+      "end": 1091.16,
+      "text": "There's more consumption, less savings, so possibly not getting richer."
+    },
+    {
+      "start": 1091.16,
+      "end": 1103.16,
+      "text": "But during these periods of expansion, they are associated with higher innovation in the economy, more products and higher living standards."
+    },
+    {
+      "start": 1103.16,
+      "end": 1109.16,
+      "text": "So consumers are buying more products to improve their living standards."
+    },
+    {
+      "start": 1110.16,
+      "end": 1112.16,
+      "text": "What about the paradox of thrift?"
+    },
+    {
+      "start": 1112.16,
+      "end": 1114.16,
+      "text": "So the irrational behaviour."
+    },
+    {
+      "start": 1114.16,
+      "end": 1124.16,
+      "text": "Well, if consumer sentiment is low, so they're bearish on the future, consumers spend less in the future."
+    },
+    {
+      "start": 1124.16,
+      "end": 1127.16,
+      "text": "This causes the economy to contract."
+    },
+    {
+      "start": 1127.16,
+      "end": 1131.16,
+      "text": "So less consumption and more savings."
+    },
+    {
+      "start": 1131.16,
+      "end": 1136.16,
+      "text": "So they're definitely not getting richer during this time."
+    },
+    {
+      "start": 1137.16,
+      "end": 1139.16,
+      "text": "There's less innovation."
+    },
+    {
+      "start": 1139.16,
+      "end": 1147.16,
+      "text": "They're consuming less products and their living standards are staying the same or perhaps getting worse."
+    },
+    {
+      "start": 1148.16,
+      "end": 1158.16,
+      "text": "Now, we looked on the previous slide at the finite dynamics, the limiting factors that affect consumer behaviour."
+    },
+    {
+      "start": 1158.16,
+      "end": 1161.16,
+      "text": "And how does this all linked together?"
+    },
+    {
+      "start": 1161.16,
+      "end": 1173.16,
+      "text": "Well, through the economic cycle, supposedly, during times of extravagance, interest rates will go higher."
+    },
+    {
+      "start": 1173.16,
+      "end": 1175.16,
+      "text": "Real interest rates will go higher."
+    },
+    {
+      "start": 1175.16,
+      "end": 1189.16,
+      "text": "And consumers are supposed to, in theory, respond in their behaviour by increasing their savings rate and decreasing their consumption."
+    },
+    {
+      "start": 1189.16,
+      "end": 1193.16,
+      "text": "But in reality, that doesn't happen."
+    },
+    {
+      "start": 1193.16,
+      "end": 1199.16,
+      "text": "Periods of extravagance tend to last a lot longer than expected."
+    },
+    {
+      "start": 1199.16,
+      "end": 1205.16,
+      "text": "And consumers tend to consume even more."
+    },
+    {
+      "start": 1205.16,
+      "end": 1210.16,
+      "text": "And when consumers do this, there's actually no paradox."
+    },
+    {
+      "start": 1210.16,
+      "end": 1220.16,
+      "text": "This is actually rational behaviour because continued economic growth is just good for everybody."
+    },
+    {
+      "start": 1220.16,
+      "end": 1224.16,
+      "text": "It's better for everybody's living standards."
+    },
+    {
+      "start": 1224.16,
+      "end": 1227.16,
+      "text": "And what happens in periods of contraction?"
+    },
+    {
+      "start": 1227.16,
+      "end": 1232.16,
+      "text": "Well, we have interest rates falling."
+    },
+    {
+      "start": 1232.16,
+      "end": 1235.16,
+      "text": "So lower real rates."
+    },
+    {
+      "start": 1235.16,
+      "end": 1239.16,
+      "text": "And how do consumers respond to that?"
+    },
+    {
+      "start": 1239.16,
+      "end": 1242.16,
+      "text": "Well, they respond irrationally."
+    },
+    {
+      "start": 1242.16,
+      "end": 1252.16,
+      "text": "They respond paradoxically via the mechanism of the economic theory of the paradox of thrift."
+    },
+    {
+      "start": 1252.16,
+      "end": 1266.16,
+      "text": "This occurs by people saving more as interest rates are falling and consuming less as well at the same time."
+    },
+    {
+      "start": 1266.16,
+      "end": 1276.16,
+      "text": "So the paradox is, is that at this part of the cycle, consumers should be spending their way out of the contraction."
+    },
+    {
+      "start": 1276.16,
+      "end": 1277.16,
+      "text": "But they are not."
+    },
+    {
+      "start": 1277.16,
+      "end": 1279.16,
+      "text": "They are tightening their belts."
+    },
+    {
+      "start": 1279.16,
+      "end": 1285.16,
+      "text": "They are hoarding cash, hoarding resources and consuming less."
+    },
+    {
+      "start": 1285.16,
+      "end": 1300.16,
+      "text": "So the critics of Keynes' theory of the paradox of thrift, they criticise it on the grounds that an increase in savings from consumers"
+    },
+    {
+      "start": 1300.16,
+      "end": 1311.16,
+      "text": "allows banks to lend more money via an increase in bank reserves through the fractional reserve banking system."
+    },
+    {
+      "start": 1311.16,
+      "end": 1325.16,
+      "text": "So the idea is that as long as the money supply is constant, the business cycle should be self-correcting and shouldn't require any intervention in the market"
+    },
+    {
+      "start": 1325.16,
+      "end": 1340.16,
+      "text": "because market interest rates should go down and lead to a natural increase in lending from the banks and therefore spending from consumers at some point."
+    },
+    {
+      "start": 1341.16,
+      "end": 1348.16,
+      "text": "Now, this is all good in theory to say that the economy will be self-correcting."
+    },
+    {
+      "start": 1348.16,
+      "end": 1353.16,
+      "text": "If we think about this, then the opposite must hold true in theory."
+    },
+    {
+      "start": 1353.16,
+      "end": 1365.16,
+      "text": "If we have constant money supply growth when savings rates are lower and consumption is high during expansionary periods,"
+    },
+    {
+      "start": 1365.16,
+      "end": 1374.16,
+      "text": "so in those times of extravagance, then naturally market interest rates should go higher or will go higher."
+    },
+    {
+      "start": 1374.16,
+      "end": 1381.16,
+      "text": "And then that will naturally lead to a decrease in lending and therefore consumer spending."
+    },
+    {
+      "start": 1381.16,
+      "end": 1385.16,
+      "text": "Unfortunately, guys, the world really isn't that simple."
+    },
+    {
+      "start": 1385.16,
+      "end": 1397.16,
+      "text": "It's messy and there's no ultimate truth or rule book as to what should be occurring or what happens at any one time or in any particular business cycle."
+    },
+    {
+      "start": 1397.16,
+      "end": 1401.16,
+      "text": "It's obviously can be different every time."
+    },
+    {
+      "start": 1401.16,
+      "end": 1414.16,
+      "text": "But from a trader's and portfolio manager's perspective, if we're going to understand consumer sentiment in the US and use it as a leading indicator,"
+    },
+    {
+      "start": 1414.16,
+      "end": 1419.16,
+      "text": "we have to understand these dynamics of consumers."
+    },
+    {
+      "start": 1419.16,
+      "end": 1432.16,
+      "text": "We have to understand the business cycle that is connected, that consumer behavior is connected to the other parameters of the economy."
+    },
+    {
+      "start": 1432.16,
+      "end": 1438.16,
+      "text": "So businesses, for example, and real interest rates and the money supply."
+    },
+    {
+      "start": 1438.16,
+      "end": 1440.16,
+      "text": "We have to understand that."
+    },
+    {
+      "start": 1440.16,
+      "end": 1457.16,
+      "text": "So whenever we look at the consumer sentiment index in the United States, we have to understand the consumer behavior in the context of all other indicators and what else is going on in the economy."
+    },
+    {
+      "start": 1457.16,
+      "end": 1468.16,
+      "text": "We also have to understand that there could be long periods of irrational consumer behavior and understand why that is happening."
+    },
+    {
+      "start": 1468.16,
+      "end": 1472.16,
+      "text": "It's probably occurring due to the paradox of thrift."
+    },
+    {
+      "start": 1472.16,
+      "end": 1478.16,
+      "text": "We also have to understand that there could be very short periods of irrational behavior."
+    },
+    {
+      "start": 1478.16,
+      "end": 1480.16,
+      "text": "Again, paradox of thrift."
+    },
+    {
+      "start": 1480.16,
+      "end": 1490.16,
+      "text": "We have to understand that something could occur that makes consumers begin spending again in times of economic contraction."
+    },
+    {
+      "start": 1490.16,
+      "end": 1508.16,
+      "text": "We also have to understand the dynamic of the rational behavior that in periods of expansion that could be extremely long times of rational behavior from consumers where they're spending a lot longer than people expect."
+    },
+    {
+      "start": 1508.16,
+      "end": 1512.16,
+      "text": "So we have to take all of this into context, guys."
+    },
+    {
+      "start": 1512.16,
+      "end": 1516.16,
+      "text": "We have to understand consumer behavior and consumer psychology."
+    },
+    {
+      "start": 1516.16,
+      "end": 1521.16,
+      "text": "And we have to understand the limiting factors on consumers."
+    },
+    {
+      "start": 1521.16,
+      "end": 1539.16,
+      "text": "And from a trader's and portfolio manager's perspective, understand the other parameters in the economy and how consumers are linked to the other areas of the economy and their consumer behavior and how it's all linked together."
+    },
+    {
+      "start": 1539.16,
+      "end": 1567.16,
+      "text": "So this way, in the future, when we pull up the University of Michigan Consumer Sentiment Index and we see the number and we look at the chart and we look at where we've come from and where we are now and where we might be going, we get a much better understanding when we think of the U.S. consumer and U.S. consumer sentiment in the context of how consumers behave."
+    },
+    {
+      "start": 1567.16,
+      "end": 1574.16,
+      "text": "And how it fits in to the rest of the economy and the dynamics that are playing out."
+    },
+    {
+      "start": 1574.16,
+      "end": 1582.16,
+      "text": "Because at any one time, things will be different relative to another time in the business cycle or in previous business cycles."
+    },
+    {
+      "start": 1582.16,
+      "end": 1587.16,
+      "text": "So we have to understand the context and keep asking ourselves the questions."
+    },
+    {
+      "start": 1587.16,
+      "end": 1590.16,
+      "text": "Why are consumers behaving in this way?"
+    },
+    {
+      "start": 1590.16,
+      "end": 1594.16,
+      "text": "What does it mean in terms of the business cycle?"
+    },
+    {
+      "start": 1594.16,
+      "end": 1601.16,
+      "text": "What does it mean in terms of the context of real interest rates and the money supply and money market dynamics?"
+    },
+    {
+      "start": 1601.16,
+      "end": 1606.16,
+      "text": "What does it mean in the context of current Fed policy?"
+    },
+    {
+      "start": 1606.16,
+      "end": 1616.16,
+      "text": "And we're going to get a much clearer picture if we ask ourselves those questions at any one moment in time."
+    },
+    {
+      "start": 1616.16,
+      "end": 1632.16,
+      "text": "So the U.S. Consumer Sentiment Index itself, the UMCSI, the University of Michigan Consumer Sentiment Index, as a trader or portfolio manager, how do we actually use it?"
+    },
+    {
+      "start": 1632.16,
+      "end": 1642.16,
+      "text": "Well, what we do know is that consumer sentiment historically does have peaks and troughs, its cycles."
+    },
+    {
+      "start": 1642.16,
+      "end": 1656.16,
+      "text": "And when we use it in conjunction with other macroeconomic indicators, we can work out at any one given time what is going on with the U.S. consumer and the economy."
+    },
+    {
+      "start": 1656.16,
+      "end": 1673.16,
+      "text": "And therefore, we have a great indicator for predicting GDP growth and for calling the direction of the S&P 500 or the U.S. stock market and likely stock market returns and Fed policy."
+    },
+    {
+      "start": 1673.16,
+      "end": 1686.16,
+      "text": "And this, like our other leading indicators that we've looked at so far, dictates to us the likely directional bias that we're going to have."
+    },
+    {
+      "start": 1686.16,
+      "end": 1693.16,
+      "text": "So a long bias, bullish, a short bias, bearish or a neutral bias."
+    },
+    {
+      "start": 1693.16,
+      "end": 1698.16,
+      "text": "So agnostic bias in our portfolios as traders."
+    },
+    {
+      "start": 1698.16,
+      "end": 1704.16,
+      "text": "Now, consumer spending is 67% of the U.S. economy, as we mentioned previously."
+    },
+    {
+      "start": 1704.16,
+      "end": 1713.16,
+      "text": "And it is historically highly predictive of GDP growth in the future."
+    },
+    {
+      "start": 1713.16,
+      "end": 1723.16,
+      "text": "It's also very predictive of stock market direction and potential stock market returns and likely Fed policy."
+    },
+    {
+      "start": 1723.16,
+      "end": 1729.16,
+      "text": "So guys, let's have a look now at the detail of the UMCSI."
+    },
+    {
+      "start": 1729.16,
+      "end": 1732.16,
+      "text": "Let's have a look at the survey design."
+    },
+    {
+      "start": 1732.16,
+      "end": 1739.16,
+      "text": "So the way the survey is put together each month."
+    },
+    {
+      "start": 1739.16,
+      "end": 1763.16,
+      "text": "Basically, the University of Michigan Consumer Research Center conducts a telephone survey asking 500, yes, only 500 consumers a series of questions on their personal finances and their opinions on business conditions."
+    },
+    {
+      "start": 1763.16,
+      "end": 1776.16,
+      "text": "So the way it's broken up, the way it's split up, it's split into two component areas that have an equal 50% weighting given to each area."
+    },
+    {
+      "start": 1776.16,
+      "end": 1783.16,
+      "text": "So we have the aggregate consumer sentiment index, which is the ICS."
+    },
+    {
+      "start": 1783.16,
+      "end": 1788.16,
+      "text": "And that is made up of two areas with an equal 50% weighting."
+    },
+    {
+      "start": 1788.16,
+      "end": 1799.16,
+      "text": "That's the index of current conditions, the ICC, and the index of consumer expectations, the ICE."
+    },
+    {
+      "start": 1799.16,
+      "end": 1802.16,
+      "text": "Now, this is what it looks like on the surface level."
+    },
+    {
+      "start": 1802.16,
+      "end": 1821.16,
+      "text": "But as always, as traders and portfolio managers, we do have to dig a little deeper to try and find out which are the most useful areas for us in predicting future GDP growth and stock market direction."
+    },
+    {
+      "start": 1821.16,
+      "end": 1825.16,
+      "text": "So let's have a look at how this is broken down properly."
+    },
+    {
+      "start": 1825.16,
+      "end": 1840.16,
+      "text": "We mentioned the two areas, the current conditions index and the consumer expectations index, making up the index overall, the aggregate index of consumer sentiment."
+    },
+    {
+      "start": 1840.16,
+      "end": 1848.16,
+      "text": "And the way that's split up, we have the five questions and current conditions is questions number one and five."
+    },
+    {
+      "start": 1848.16,
+      "end": 1851.16,
+      "text": "And the expectations index."
+    },
+    {
+      "start": 1851.16,
+      "end": 1858.16,
+      "text": "So for consumer expectations, that relates to questions two, three, and four."
+    },
+    {
+      "start": 1858.16,
+      "end": 1861.16,
+      "text": "So let's first have a look at current conditions."
+    },
+    {
+      "start": 1861.16,
+      "end": 1863.16,
+      "text": "So one and five."
+    },
+    {
+      "start": 1863.16,
+      "end": 1871.16,
+      "text": "Firstly, the 500 consumers are asked, we are interested in how people are getting along financially these days."
+    },
+    {
+      "start": 1871.16,
+      "end": 1879.16,
+      "text": "Would you say that you and your family are better off or worse off financially than you were a year ago?"
+    },
+    {
+      "start": 1879.16,
+      "end": 1881.16,
+      "text": "That's the first question."
+    },
+    {
+      "start": 1881.16,
+      "end": 1883.16,
+      "text": "Question number five."
+    },
+    {
+      "start": 1883.16,
+      "end": 1891.16,
+      "text": "About the big things people buy for their homes, such as furniture, a refrigerator, stove, television, and things like that."
+    },
+    {
+      "start": 1891.16,
+      "end": 1900.16,
+      "text": "Generally speaking, do you think now is a good or bad time for people to buy major household items?"
+    },
+    {
+      "start": 1900.16,
+      "end": 1905.16,
+      "text": "So these are the two questions that make up the current conditions index."
+    },
+    {
+      "start": 1905.16,
+      "end": 1911.16,
+      "text": "They're basically asking the consumers, are you better off or worse off financially than a year ago?"
+    },
+    {
+      "start": 1911.16,
+      "end": 1916.16,
+      "text": "And are you going to be spending money on major household items?"
+    },
+    {
+      "start": 1916.16,
+      "end": 1929.16,
+      "text": "So they are basically being surveyed or tested, if you like, on their view of their current financial situation, which obviously measures current sentiment."
+    },
+    {
+      "start": 1929.16,
+      "end": 1931.16,
+      "text": "Now let's have a look at expectations."
+    },
+    {
+      "start": 1931.16,
+      "end": 1933.16,
+      "text": "So looking into the future."
+    },
+    {
+      "start": 1933.16,
+      "end": 1937.16,
+      "text": "So we're looking at questions two, three, and four."
+    },
+    {
+      "start": 1937.16,
+      "end": 1939.16,
+      "text": "So question two."
+    },
+    {
+      "start": 1939.16,
+      "end": 1940.16,
+      "text": "Looking ahead."
+    },
+    {
+      "start": 1940.16,
+      "end": 1949.16,
+      "text": "Do you think that a year from now, you and your family will be better off financially or worse off or just about the same as now?"
+    },
+    {
+      "start": 1949.16,
+      "end": 1950.16,
+      "text": "Question three."
+    },
+    {
+      "start": 1950.16,
+      "end": 1950.16,
+      "text": "Question three."
+    },
+    {
+      "start": 1950.16,
+      "end": 1954.16,
+      "text": "Turning to business conditions in the country as a whole."
+    },
+    {
+      "start": 1954.16,
+      "end": 1961.16,
+      "text": "Do you think that during the next 12 months we'll have good times financially or bad times or what?"
+    },
+    {
+      "start": 1961.16,
+      "end": 1963.16,
+      "text": "Question four."
+    },
+    {
+      "start": 1963.16,
+      "end": 1964.16,
+      "text": "Looking ahead."
+    },
+    {
+      "start": 1964.16,
+      "end": 1967.16,
+      "text": "Which would you say is more likely?"
+    },
+    {
+      "start": 1967.16,
+      "end": 1973.16,
+      "text": "That in the country as a whole we'll have continuous good times during the next five years or so?"
+    },
+    {
+      "start": 1973.16,
+      "end": 1979.16,
+      "text": "Or that we will have periods of widespread unemployment or depression or what?"
+    },
+    {
+      "start": 1979.16,
+      "end": 2001.16,
+      "text": "So it's pretty obvious here what consumers are being surveyed on, what they're being tested on, is their expectations of the future if they are bullish, bearish or neutral of their own consumer expectations, their own consumer sentiment of the future."
+    },
+    {
+      "start": 2001.16,
+      "end": 2026.16,
+      "text": "Now, in terms of the data, you can go to the downloads area and you can look at the UMCSI file where we have the entire history data set of the University of Michigan Consumer Sentiment Index and the components, the current conditions and the expectations data."
+    },
+    {
+      "start": 2026.16,
+      "end": 2034.16,
+      "text": "And what you'll also see is changes in the component indexes."
+    },
+    {
+      "start": 2034.16,
+      "end": 2043.16,
+      "text": "So with current conditions and expectations, the changes on a month by month basis in terms of points."
+    },
+    {
+      "start": 2043.16,
+      "end": 2048.16,
+      "text": "And you'll also see that for the aggregate index as well."
+    },
+    {
+      "start": 2048.16,
+      "end": 2059.16,
+      "text": "So you'll find as well in the spreadsheets that we've taken the data and created a whole bunch of visuals."
+    },
+    {
+      "start": 2059.16,
+      "end": 2062.16,
+      "text": "So charts from the data."
+    },
+    {
+      "start": 2062.16,
+      "end": 2073.16,
+      "text": "If we look here, the main one is the headline aggregate UMCSI with all data going back to 1978."
+    },
+    {
+      "start": 2073.16,
+      "end": 2078.16,
+      "text": "So the visual is there in the downloads area."
+    },
+    {
+      "start": 2078.16,
+      "end": 2092.16,
+      "text": "And next one, you'll see that we have the all time aggregate index of the UMCSI with the changes month on month on the chart as well."
+    },
+    {
+      "start": 2092.16,
+      "end": 2100.16,
+      "text": "We also do this for both the current conditions and expectations index."
+    },
+    {
+      "start": 2100.16,
+      "end": 2116.16,
+      "text": "So you'll see that the same visuals and same analysis for the all time series and for the changes month on month are there for both the current conditions and the expectations index as well."
+    },
+    {
+      "start": 2116.16,
+      "end": 2134.16,
+      "text": "Now, as we've done in our previous videos where we've looked at certain times in the past to look at how certain leading indicators were behaving at certain periods of time."
+    },
+    {
+      "start": 2134.16,
+      "end": 2138.16,
+      "text": "We can do that obviously as well for the UMCSI."
+    },
+    {
+      "start": 2138.16,
+      "end": 2147.16,
+      "text": "So if we look at the period August 18 to August 19, that was the period that we've looked at in previous videos."
+    },
+    {
+      "start": 2147.16,
+      "end": 2161.16,
+      "text": "We can see at the headline level of the UMCSI that we didn't really get a big drop in consumer sentiment at the aggregate level during that time."
+    },
+    {
+      "start": 2161.16,
+      "end": 2180.16,
+      "text": "So if we look at the data from August 18 to August 19, you can see the move 96.2 down to 89.8, but in July 19, the aggregate index was 98.4."
+    },
+    {
+      "start": 2180.16,
+      "end": 2193.16,
+      "text": "So there's only really two moves during that period at the aggregate level where the index fell by a decent amount of points."
+    },
+    {
+      "start": 2193.16,
+      "end": 2198.16,
+      "text": "That's January 19 and August 19."
+    },
+    {
+      "start": 2198.16,
+      "end": 2202.16,
+      "text": "But we can look at the component parts and see what that's driven by."
+    },
+    {
+      "start": 2202.16,
+      "end": 2212.16,
+      "text": "If we look at the current conditions index, the current conditions index stays above 100 the entire time and is extremely strong."
+    },
+    {
+      "start": 2212.16,
+      "end": 2213.16,
+      "text": "Okay."
+    },
+    {
+      "start": 2213.16,
+      "end": 2218.16,
+      "text": "But the expectations index is actually what's driving the aggregate fall."
+    },
+    {
+      "start": 2218.16,
+      "end": 2227.16,
+      "text": "So we can see in January 19, a fall down in expectations."
+    },
+    {
+      "start": 2227.16,
+      "end": 2231.16,
+      "text": "That was a move in conjunction with current conditions."
+    },
+    {
+      "start": 2231.16,
+      "end": 2243.16,
+      "text": "But you can see the moves down overall, and the big move down in August 19 from expectations of 10.6 points."
+    },
+    {
+      "start": 2243.16,
+      "end": 2258.16,
+      "text": "So in August 19, the expectations index is 79.9, and the current conditions index is 105.3, leaving the aggregate index at 89.8."
+    },
+    {
+      "start": 2258.16,
+      "end": 2281.16,
+      "text": "So what's interesting during this period is that the aggregate level, so at the aggregate index, the way we would read this is that there wasn't a consumer recession, for want of a better word, during this period, August 18 to August 19."
+    },
+    {
+      "start": 2281.16,
+      "end": 2288.16,
+      "text": "However, there was a very big concern over consumer expectations."
+    },
+    {
+      "start": 2288.16,
+      "end": 2298.16,
+      "text": "There was no current concern, i.e. what consumers were currently experiencing in the economy in terms of their sentiment."
+    },
+    {
+      "start": 2298.16,
+      "end": 2302.16,
+      "text": "But their expectations of the future were dwindling."
+    },
+    {
+      "start": 2302.16,
+      "end": 2322.16,
+      "text": "And when we put this in a bigger context, when we think about previous videos in the video series, and when we looked at this period, if you recall, we determined that during this period, it was essentially down to a manufacturing slowdown, not a services slowdown."
+    },
+    {
+      "start": 2322.16,
+      "end": 2336.16,
+      "text": "And if we put this into context now, we can see that there was no consumer slowdown at the aggregate level, and the current conditions of consumer sentiment."
+    },
+    {
+      "start": 2336.16,
+      "end": 2339.16,
+      "text": "It was their expectation of the future."
+    },
+    {
+      "start": 2339.16,
+      "end": 2343.16,
+      "text": "The consumer was getting tired in the US in 2019."
+    },
+    {
+      "start": 2343.16,
+      "end": 2354.16,
+      "text": "And they were signaling that they were going to spend less via their own consumer sentiment and expectations in the future."
+    },
+    {
+      "start": 2354.16,
+      "end": 2364.16,
+      "text": "So this is pretty interesting because we know that the Fed cut rates in July, September and October."
+    },
+    {
+      "start": 2364.16,
+      "end": 2368.16,
+      "text": "So this is how you can see it all starts to link together."
+    },
+    {
+      "start": 2368.16,
+      "end": 2384.16,
+      "text": "And if we look further down in the data, when we look at the second half of 2019, we can see the aggregate level by the end of the year pretty much gets back up to 100."
+    },
+    {
+      "start": 2384.16,
+      "end": 2389.16,
+      "text": "In December 2019, we're looking at a reading of 99.3."
+    },
+    {
+      "start": 2389.16,
+      "end": 2398.16,
+      "text": "And you can see a decent recovery in expectations and definitely a strong recovery in current conditions."
+    },
+    {
+      "start": 2398.16,
+      "end": 2411.16,
+      "text": "If we look further into the COVID era, so if we look into the first half of 2020, we can see a total collapse of expectations in the spring of 2020,"
+    },
+    {
+      "start": 2411.16,
+      "end": 2416.16,
+      "text": "where we go from above 90 at the beginning of 2020."
+    },
+    {
+      "start": 2416.16,
+      "end": 2418.16,
+      "text": "And we look at the data."
+    },
+    {
+      "start": 2418.16,
+      "end": 2425.16,
+      "text": "A few months later, we can see when the COVID lows go in, which is March 2020."
+    },
+    {
+      "start": 2425.16,
+      "end": 2429.16,
+      "text": "We can see expectations of 79.7."
+    },
+    {
+      "start": 2429.16,
+      "end": 2436.16,
+      "text": "And we can see in May 2020, expectations hitting a low of 65.9."
+    },
+    {
+      "start": 2436.16,
+      "end": 2443.16,
+      "text": "And the expectations index really struggled to get moving for the rest of 2020."
+    },
+    {
+      "start": 2443.16,
+      "end": 2456.16,
+      "text": "Also, the current conditions index really struggled as well for most of 2020 after getting hit due to the COVID economic shutdown."
+    },
+    {
+      "start": 2456.16,
+      "end": 2466.16,
+      "text": "And, you know, just bear in mind, the Fed actions came in March, April, May, June."
+    },
+    {
+      "start": 2466.16,
+      "end": 2474.16,
+      "text": "And the effect that it had on consumers wasn't actually as big as expected."
+    },
+    {
+      "start": 2474.16,
+      "end": 2479.16,
+      "text": "And it took a long time for consumers to start to come back."
+    },
+    {
+      "start": 2479.16,
+      "end": 2491.16,
+      "text": "What you're actually seeing there, when we look at the 2019 period, and we look at it compared to the 2020 COVID economic lockdown period,"
+    },
+    {
+      "start": 2491.16,
+      "end": 2501.16,
+      "text": "you're looking now at the period of extended extravagance versus the period of the paradox of thrift."
+    },
+    {
+      "start": 2501.16,
+      "end": 2507.16,
+      "text": "We can also have a look at the global financial crisis."
+    },
+    {
+      "start": 2507.16,
+      "end": 2511.16,
+      "text": "During that time, what was going on with consumers?"
+    },
+    {
+      "start": 2511.16,
+      "end": 2519.16,
+      "text": "Well, the UMCSI has peaks and drops like other leading indicators."
+    },
+    {
+      "start": 2519.16,
+      "end": 2524.16,
+      "text": "And we had peak conditions for consumers."
+    },
+    {
+      "start": 2524.16,
+      "end": 2534.16,
+      "text": "You'll see that in the data in the spreadsheet in January 2007, with a reading at the aggregate level of 96.9."
+    },
+    {
+      "start": 2534.16,
+      "end": 2546.16,
+      "text": "And we had a consumer trough in the global financial crisis of 56.3 in February 2009."
+    },
+    {
+      "start": 2546.16,
+      "end": 2559.16,
+      "text": "So you can see that's a full two years from Jan 07, where we had a gradual decline from peak throughout 2007,"
+    },
+    {
+      "start": 2559.16,
+      "end": 2565.16,
+      "text": "and then through 2008 to February 2009, where we had the trough."
+    },
+    {
+      "start": 2565.16,
+      "end": 2568.16,
+      "text": "So that's a full two years."
+    },
+    {
+      "start": 2568.16,
+      "end": 2576.16,
+      "text": "That's obviously a pretty long period of time for consumption to be declining."
+    },
+    {
+      "start": 2576.16,
+      "end": 2584.16,
+      "text": "So it gives you a good perspective and understanding of how the consumer behaves sometimes in the US."
+    },
+    {
+      "start": 2584.16,
+      "end": 2591.16,
+      "text": "Coming out of the consumer trough as well, you can see if we look on the right hand side,"
+    },
+    {
+      "start": 2591.16,
+      "end": 2599.16,
+      "text": "we want to know here, how long did it take for the US consumer to actually recover?"
+    },
+    {
+      "start": 2599.16,
+      "end": 2605.16,
+      "text": "Well, we know that the Fed was obviously very, very active during that time."
+    },
+    {
+      "start": 2605.16,
+      "end": 2608.16,
+      "text": "They had quantitative easing programmes in place."
+    },
+    {
+      "start": 2608.16,
+      "end": 2613.16,
+      "text": "They also had conventional means."
+    },
+    {
+      "start": 2613.16,
+      "end": 2619.16,
+      "text": "So they lowered interest rates extremely aggressively during the financial crisis."
+    },
+    {
+      "start": 2619.16,
+      "end": 2626.16,
+      "text": "But coming out of the financial crisis, there was non-conventional monetary policy of quantitative easing."
+    },
+    {
+      "start": 2626.16,
+      "end": 2632.16,
+      "text": "So they'd already had one quantitative easing programme."
+    },
+    {
+      "start": 2632.16,
+      "end": 2641.16,
+      "text": "And they implemented the second one, which didn't actually finish until June 29th, 2012."
+    },
+    {
+      "start": 2641.16,
+      "end": 2651.16,
+      "text": "And when we look at the US consumer data, the Fed's huge, unprecedented actions at that time,"
+    },
+    {
+      "start": 2651.16,
+      "end": 2661.16,
+      "text": "it took a long time for those actions to actually have an effect on the US consumer and the US consumer recovery."
+    },
+    {
+      "start": 2661.16,
+      "end": 2668.16,
+      "text": "The US consumer didn't really recover until 2012."
+    },
+    {
+      "start": 2668.16,
+      "end": 2680.16,
+      "text": "So if you look at the data there, you can see, for example, the data going back into the 70s consistently in the first half of 2012."
+    },
+    {
+      "start": 2680.16,
+      "end": 2687.16,
+      "text": "But not getting above 80 until the second half of 2012."
+    },
+    {
+      "start": 2687.16,
+      "end": 2702.16,
+      "text": "So as you can see, this is a very long period of time where the UMCSI at an aggregate level peaked in January 2007."
+    },
+    {
+      "start": 2702.16,
+      "end": 2711.16,
+      "text": "And then even after the massive, unprecedented Fed policy and actions during and out of the financial crisis,"
+    },
+    {
+      "start": 2711.16,
+      "end": 2719.16,
+      "text": "the consumer only really tepidly recovered by the second half of 2012."
+    },
+    {
+      "start": 2719.16,
+      "end": 2732.16,
+      "text": "So five years and the US consumer didn't even get back to the level where it was in January 2007,"
+    },
+    {
+      "start": 2732.16,
+      "end": 2739.16,
+      "text": "even by the second half of 2012, which when you think about it is obviously a very long time."
+    },
+    {
+      "start": 2739.16,
+      "end": 2749.16,
+      "text": "And what you're experiencing here again is the, if you like, irrational behavior of consumers with the paradox of thrift."
+    },
+    {
+      "start": 2749.16,
+      "end": 2758.16,
+      "text": "If everybody went out and started spending their way out of this crisis, it might have been over a lot quicker."
+    },
+    {
+      "start": 2758.16,
+      "end": 2766.16,
+      "text": "And the Fed may have needed to take less action throughout the following decade."
+    },
+    {
+      "start": 2766.16,
+      "end": 2773.16,
+      "text": "But you can see what their behavior was coming out of the global financial crisis."
+    },
+    {
+      "start": 2773.16,
+      "end": 2780.16,
+      "text": "They were obviously tightening their belts and very, very cautious about their spending."
+    },
+    {
+      "start": 2780.16,
+      "end": 2788.16,
+      "text": "And nowhere near as extravagant with their spending coming out of the global financial crisis as they were going into it."
+    },
+    {
+      "start": 2788.16,
+      "end": 2795.16,
+      "text": "So you can see by looking at the data, these periods of thrift can last a very long time."
+    },
+    {
+      "start": 2795.16,
+      "end": 2807.16,
+      "text": "And also, if you look at periods of extravagance, periods of expansion, those periods can last a lot longer than expected as well."
+    },
+    {
+      "start": 2807.16,
+      "end": 2814.16,
+      "text": "But how do we actually use the UMCSI as traders and portfolio managers?"
+    },
+    {
+      "start": 2814.16,
+      "end": 2833.16,
+      "text": "Well, unlike our business indicators, the ISM Manufacturing Index and the Non Manufacturing Index, the UMCSI doesn't have a defined level that signifies future expansion and contraction in the US economy."
+    },
+    {
+      "start": 2833.16,
+      "end": 2845.16,
+      "text": "So you'll notice on our charts, what we've done is we put a simple trend line average of the aggregate UMCSI."
+    },
+    {
+      "start": 2845.16,
+      "end": 2850.16,
+      "text": "And we correlated this with long-term US GDP growth."
+    },
+    {
+      "start": 2850.16,
+      "end": 2871.16,
+      "text": "So the way we use it as traders and portfolio managers is we look at the UMCSI as a kind of zonal guide for general levels of economic growth and as a directional guide in conjunction with the expectations index."
+    },
+    {
+      "start": 2871.16,
+      "end": 2890.16,
+      "text": "So we look at the level of the UMCSI as a guide to basically help us predict the direction and a certain level of GDP growth around certain levels or certain gates."
+    },
+    {
+      "start": 2890.16,
+      "end": 2904.16,
+      "text": "So if at any one time we're looking at the UMCSI and we see multiple readings above 80, well, we know that we have bullish consumers above this level."
+    },
+    {
+      "start": 2904.16,
+      "end": 2914.16,
+      "text": "We should be expecting, based on historical data, that annualized GDP growth is going to be 2% or higher."
+    },
+    {
+      "start": 2914.16,
+      "end": 2924.16,
+      "text": "If we have readings between 70 and 80, we kind of have, based on historical sentiment, benign consumers."
+    },
+    {
+      "start": 2924.16,
+      "end": 2934.16,
+      "text": "We should expect, when we have readings between 70 and 80, for annualized GDP growth to be somewhere between 0% and 2%."
+    },
+    {
+      "start": 2934.16,
+      "end": 2945.16,
+      "text": "And if we have readings between 55 and 70, based on historical data, we have bearish consumers."
+    },
+    {
+      "start": 2945.16,
+      "end": 2961.16,
+      "text": "We should be expecting annualized GDP growth to be in a very wide range of negative 5% to plus 1%, but more likely to be 0 to negative."
+    },
+    {
+      "start": 2961.16,
+      "end": 2970.16,
+      "text": "Now, as mentioned previously, the UMCSI, like other leading indicators, does have peaks and troughs."
+    },
+    {
+      "start": 2970.16,
+      "end": 2977.16,
+      "text": "And essentially, peaks are where the consumer in the US is at capacity."
+    },
+    {
+      "start": 2977.16,
+      "end": 2984.16,
+      "text": "And based on historical probability, sentiment at some point is more likely to fall."
+    },
+    {
+      "start": 2984.16,
+      "end": 2997.16,
+      "text": "However, when we're looking at it at a certain period in time, at any one moment in time, we can't say exactly how long these conditions will continue."
+    },
+    {
+      "start": 2997.16,
+      "end": 3002.16,
+      "text": "Because every cycle is different, because every cycle is different, and we have to consider the other factors."
+    },
+    {
+      "start": 3002.16,
+      "end": 3016.16,
+      "text": "So we have to consider the other factors that we looked at earlier, of consumer behavior and psychology, and also the other leading indicators, especially the money market dynamics."
+    },
+    {
+      "start": 3016.16,
+      "end": 3027.16,
+      "text": "But the troughs are basically where consumers in the US have gotten, via the paradox of thrift, too bearish and miserable."
+    },
+    {
+      "start": 3027.16,
+      "end": 3039.16,
+      "text": "And they now have capacity for spending, so they can go out and begin buying discretionary items instead of just necessities."
+    },
+    {
+      "start": 3039.16,
+      "end": 3054.16,
+      "text": "But again, like the peaks, every cycle is different, and we can't say exactly how long this period of bearish consumer sentiment or thriftiness is going to last."
+    },
+    {
+      "start": 3054.16,
+      "end": 3066.16,
+      "text": "And again, we have to use it in conjunction with everything else that's going on in the other leading indicators at any one moment in time."
+    },
+    {
+      "start": 3066.16,
+      "end": 3077.16,
+      "text": "But let's have a look at the chart of the data where we compare the UM-CSI aggregate versus real GDP growth."
+    },
+    {
+      "start": 3077.16,
+      "end": 3083.16,
+      "text": "So we have the UM-CSI on the right-hand side, and we have real GDP growth on the left-hand side."
+    },
+    {
+      "start": 3083.16,
+      "end": 3088.16,
+      "text": "The blue line on the chart is the UM-CSI reading."
+    },
+    {
+      "start": 3088.16,
+      "end": 3099.16,
+      "text": "The green line, the green lines are the bars for the level of GDP growth that's reported quarterly."
+    },
+    {
+      "start": 3099.16,
+      "end": 3111.16,
+      "text": "And the red line is a long-term average growth rate of US annualized GDP."
+    },
+    {
+      "start": 3111.16,
+      "end": 3129.16,
+      "text": "So you can see when we look at moments in history where we've had multiple readings above the 80 level, this is generally correlated with GDP growth of 2% or above."
+    },
+    {
+      "start": 3129.16,
+      "end": 3139.16,
+      "text": "And then when we have multiple readings between 70 and 80, we're looking at benign consumers."
+    },
+    {
+      "start": 3139.16,
+      "end": 3147.16,
+      "text": "And this generally correlates anything between 0% and 2%."
+    },
+    {
+      "start": 3147.16,
+      "end": 3157.16,
+      "text": "And then if we have multiple readings between 55 and 70, we tend to get growth between minus 5% and 1%."
+    },
+    {
+      "start": 3157.16,
+      "end": 3174.16,
+      "text": "So this is looking back across the whole data set and looking at a zonal approach to the UM-CSI versus predicting direction and size of GDP growth."
+    },
+    {
+      "start": 3174.16,
+      "end": 3189.16,
+      "text": "Now, something we've also done in the downloads area is look at the UM-CSI versus S&P 500 direction and year-on-year percentage returns."
+    },
+    {
+      "start": 3189.16,
+      "end": 3218.16,
+      "text": "And what you can see by looking at the data set and looking at this visually, what you can see is that when we have multiple readings throughout the data set above 80, this is generally very obviously associated with positive direction in the stock market and very good percentage returns annually in the S&P 500."
+    },
+    {
+      "start": 3218.16,
+      "end": 3232.16,
+      "text": "In our next zone, when we look at the 70 to 80 level, we still get when you look through the data set, when we have benign consumers, positive stock market returns."
+    },
+    {
+      "start": 3232.16,
+      "end": 3247.16,
+      "text": "So in terms of direction, positive and decent to good returns on a year-on-year basis in the stock market, where the problems occur for the stock market is when we have multiple readings below 70."
+    },
+    {
+      "start": 3247.16,
+      "end": 3265.16,
+      "text": "We look at the 70 across the data set across the data set that is generally associated with either very weak stock market positive returns, flat or negative to very negative returns on a year-on-year basis for the S&P 500."
+    },
+    {
+      "start": 3265.16,
+      "end": 3266.16,
+      "text": "So when we look at the 70."
+    },
+    {
+      "start": 3266.16,
+      "end": 3293.16,
+      "text": "So when we think about this in terms of a zonal approach and think about GDP direction, the percentage of GDP growth and also the direction of the S&P 500 and the percentage return in the S&P 500, when we're using the UM-CSI and looking at it as a zonal approach,"
+    },
+    {
+      "start": 3293.16,
+      "end": 3297.16,
+      "text": "when we're using the S&P 500, when we're using the S&P 500, we're using the S&P 500 and looking at it as a zonal approach."
+    },
+    {
+      "start": 3297.16,
+      "end": 3301.16,
+      "text": "When we're using the S&P 500, when we're using the S&P 500, when we're using the S&P 500, when we're using the S&P 500, we're using the S&P 500."
+    },
+    {
+      "start": 3301.16,
+      "end": 3306.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3306.16,
+      "end": 3307.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3307.16,
+      "end": 3309.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3309.16,
+      "end": 3310.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3310.16,
+      "end": 3311.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3311.16,
+      "end": 3312.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3312.16,
+      "end": 3313.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3313.16,
+      "end": 3314.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3314.16,
+      "end": 3315.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3315.16,
+      "end": 3316.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3316.16,
+      "end": 3317.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3317.16,
+      "end": 3318.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3318.16,
+      "end": 3319.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3319.16,
+      "end": 3320.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3320.16,
+      "end": 3321.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3321.16,
+      "end": 3322.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3322.16,
+      "end": 3323.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3323.16,
+      "end": 3324.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3324.16,
+      "end": 3325.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3325.16,
+      "end": 3326.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3326.16,
+      "end": 3327.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3327.16,
+      "end": 3328.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3328.16,
+      "end": 3329.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3329.16,
+      "end": 3330.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3330.16,
+      "end": 3331.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3331.16,
+      "end": 3332.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3332.16,
+      "end": 3333.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3333.16,
+      "end": 3334.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3334.16,
+      "end": 3335.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3335.16,
+      "end": 3336.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3336.16,
+      "end": 3337.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3337.16,
+      "end": 3338.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3338.16,
+      "end": 3339.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3349.16,
+      "end": 3350.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3350.16,
+      "end": 3351.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3351.16,
+      "end": 3352.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3352.16,
+      "end": 3353.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3353.16,
+      "end": 3354.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3354.16,
+      "end": 3355.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3355.16,
+      "end": 3356.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3356.16,
+      "end": 3357.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3357.16,
+      "end": 3358.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3358.16,
+      "end": 3359.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3359.16,
+      "end": 3360.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3360.16,
+      "end": 3361.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3361.16,
+      "end": 3362.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3362.16,
+      "end": 3363.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3363.16,
+      "end": 3364.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3364.16,
+      "end": 3365.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3365.16,
+      "end": 3366.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3366.16,
+      "end": 3367.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3367.16,
+      "end": 3368.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3368.16,
+      "end": 3369.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3369.16,
+      "end": 3370.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3370.16,
+      "end": 3371.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3371.16,
+      "end": 3372.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3372.16,
+      "end": 3373.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3373.16,
+      "end": 3374.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3374.16,
+      "end": 3375.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3375.16,
+      "end": 3376.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3376.16,
+      "end": 3377.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3377.16,
+      "end": 3378.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3378.16,
+      "end": 3379.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3379.16,
+      "end": 3380.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3380.16,
+      "end": 3381.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3381.16,
+      "end": 3382.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3382.16,
+      "end": 3383.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3383.16,
+      "end": 3384.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3384.16,
+      "end": 3385.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3385.16,
+      "end": 3386.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3386.16,
+      "end": 3387.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3387.16,
+      "end": 3388.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3398.16,
+      "end": 3399.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3399.16,
+      "end": 3400.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3400.16,
+      "end": 3401.16,
+      "text": "We're using the S&P 500."
+    },
+    {
+      "start": 3401.16,
+      "end": 3402.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3402.16,
+      "end": 3403.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3403.16,
+      "end": 3404.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3404.16,
+      "end": 3405.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3405.16,
+      "end": 3406.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3406.16,
+      "end": 3407.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3407.16,
+      "end": 3408.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3408.16,
+      "end": 3409.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3409.16,
+      "end": 3410.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3410.16,
+      "end": 3411.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3411.16,
+      "end": 3412.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3412.16,
+      "end": 3413.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3413.16,
+      "end": 3414.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3414.16,
+      "end": 3415.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3415.16,
+      "end": 3416.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3416.16,
+      "end": 3417.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3417.16,
+      "end": 3418.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3418.16,
+      "end": 3419.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3419.16,
+      "end": 3420.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3420.16,
+      "end": 3421.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3421.16,
+      "end": 3422.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3422.16,
+      "end": 3423.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3423.16,
+      "end": 3424.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3424.16,
+      "end": 3425.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3425.16,
+      "end": 3426.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3426.16,
+      "end": 3427.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3427.16,
+      "end": 3428.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3428.16,
+      "end": 3429.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3429.16,
+      "end": 3430.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3430.16,
+      "end": 3431.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3431.16,
+      "end": 3432.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3432.16,
+      "end": 3433.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3433.16,
+      "end": 3434.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3434.16,
+      "end": 3435.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3435.16,
+      "end": 3436.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3436.16,
+      "end": 3437.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3437.16,
+      "end": 3438.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3438.16,
+      "end": 3439.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3439.16,
+      "end": 3440.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3440.16,
+      "end": 3441.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3449.16,
+      "end": 3450.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3450.16,
+      "end": 3451.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3451.16,
+      "end": 3452.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3452.16,
+      "end": 3453.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3453.16,
+      "end": 3454.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3454.16,
+      "end": 3455.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3455.16,
+      "end": 3456.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3456.16,
+      "end": 3457.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3457.16,
+      "end": 3458.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3458.16,
+      "end": 3459.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3459.16,
+      "end": 3460.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3460.16,
+      "end": 3461.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3461.16,
+      "end": 3462.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3462.16,
+      "end": 3463.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3463.16,
+      "end": 3464.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3464.16,
+      "end": 3465.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3465.16,
+      "end": 3466.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3466.16,
+      "end": 3467.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3467.16,
+      "end": 3468.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3468.16,
+      "end": 3469.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3469.16,
+      "end": 3470.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3470.16,
+      "end": 3471.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3479.16,
+      "end": 3480.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3480.16,
+      "end": 3481.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3481.16,
+      "end": 3482.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3482.16,
+      "end": 3483.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3483.16,
+      "end": 3484.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3484.16,
+      "end": 3485.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3485.16,
+      "end": 3486.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3486.16,
+      "end": 3487.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3487.16,
+      "end": 3488.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3488.16,
+      "end": 3489.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3489.16,
+      "end": 3490.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3490.16,
+      "end": 3491.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3491.16,
+      "end": 3492.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3492.16,
+      "end": 3493.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3493.16,
+      "end": 3494.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3494.16,
+      "end": 3495.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3495.16,
+      "end": 3496.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3496.16,
+      "end": 3497.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3497.16,
+      "end": 3498.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3498.16,
+      "end": 3499.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3499.16,
+      "end": 3500.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3500.16,
+      "end": 3501.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3509.16,
+      "end": 3510.16,
+      "text": "S&P 500."
+    },
+    {
+      "start": 3510.16,
+      "end": 3511.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3511.16,
+      "end": 3512.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3512.16,
+      "end": 3513.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3513.16,
+      "end": 3514.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3514.16,
+      "end": 3515.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3515.16,
+      "end": 3516.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3516.16,
+      "end": 3517.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3517.16,
+      "end": 3518.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3518.16,
+      "end": 3519.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3519.16,
+      "end": 3520.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3520.16,
+      "end": 3521.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3521.16,
+      "end": 3522.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3522.16,
+      "end": 3523.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3523.16,
+      "end": 3524.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3524.16,
+      "end": 3525.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3525.16,
+      "end": 3526.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3526.16,
+      "end": 3527.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3527.16,
+      "end": 3528.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3528.16,
+      "end": 3529.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3529.16,
+      "end": 3530.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3530.16,
+      "end": 3531.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3531.16,
+      "end": 3532.16,
+      "text": "S&P 500."
+    },
+    {
+      "start": 3532.16,
+      "end": 3533.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3533.16,
+      "end": 3534.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3534.16,
+      "end": 3535.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3535.16,
+      "end": 3536.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3536.16,
+      "end": 3537.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3537.16,
+      "end": 3538.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3538.16,
+      "end": 3539.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3539.16,
+      "end": 3540.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3540.16,
+      "end": 3541.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3541.16,
+      "end": 3542.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3542.16,
+      "end": 3543.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3543.16,
+      "end": 3544.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3544.16,
+      "end": 3545.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3545.16,
+      "end": 3546.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3546.16,
+      "end": 3547.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3547.16,
+      "end": 3548.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3548.16,
+      "end": 3549.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3549.16,
+      "end": 3550.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3550.16,
+      "end": 3551.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3551.16,
+      "end": 3552.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3552.16,
+      "end": 3553.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3553.16,
+      "end": 3554.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3554.16,
+      "end": 3555.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3555.16,
+      "end": 3556.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3556.16,
+      "end": 3557.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3557.16,
+      "end": 3558.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3558.16,
+      "end": 3559.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3559.16,
+      "end": 3560.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3560.16,
+      "end": 3561.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3561.16,
+      "end": 3562.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3562.16,
+      "end": 3563.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3563.16,
+      "end": 3564.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3564.16,
+      "end": 3565.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3565.16,
+      "end": 3566.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3566.16,
+      "end": 3567.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3567.16,
+      "end": 3568.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3568.16,
+      "end": 3569.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3569.16,
+      "end": 3570.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3570.16,
+      "end": 3571.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3571.16,
+      "end": 3572.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3572.16,
+      "end": 3573.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3573.16,
+      "end": 3574.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3574.16,
+      "end": 3575.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3583.16,
+      "end": 3584.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3584.16,
+      "end": 3585.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3585.16,
+      "end": 3586.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3586.16,
+      "end": 3587.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3587.16,
+      "end": 3588.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3588.16,
+      "end": 3589.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3589.16,
+      "end": 3590.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3590.16,
+      "end": 3591.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3591.16,
+      "end": 3592.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3592.16,
+      "end": 3593.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3593.16,
+      "end": 3594.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3594.16,
+      "end": 3595.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3595.16,
+      "end": 3596.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3596.16,
+      "end": 3597.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3597.16,
+      "end": 3598.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3598.16,
+      "end": 3599.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3599.16,
+      "end": 3600.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3600.16,
+      "end": 3601.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3601.16,
+      "end": 3602.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3602.16,
+      "end": 3603.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3603.16,
+      "end": 3604.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3604.16,
+      "end": 3605.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3613.16,
+      "end": 3614.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3614.16,
+      "end": 3615.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3615.16,
+      "end": 3616.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3616.16,
+      "end": 3617.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3617.16,
+      "end": 3618.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3618.16,
+      "end": 3619.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3619.16,
+      "end": 3620.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3620.16,
+      "end": 3621.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3621.16,
+      "end": 3622.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3622.16,
+      "end": 3623.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3623.16,
+      "end": 3624.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3624.16,
+      "end": 3625.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3625.16,
+      "end": 3626.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3626.16,
+      "end": 3627.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3627.16,
+      "end": 3628.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3628.16,
+      "end": 3629.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3629.16,
+      "end": 3630.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3630.16,
+      "end": 3631.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3631.16,
+      "end": 3632.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3632.16,
+      "end": 3633.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3633.16,
+      "end": 3634.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3634.16,
+      "end": 3635.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3643.16,
+      "end": 3644.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3644.16,
+      "end": 3645.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3645.16,
+      "end": 3646.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3646.16,
+      "end": 3647.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3647.16,
+      "end": 3648.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3648.16,
+      "end": 3649.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3649.16,
+      "end": 3650.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3650.16,
+      "end": 3651.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3651.16,
+      "end": 3652.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3652.16,
+      "end": 3653.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3653.16,
+      "end": 3654.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3654.16,
+      "end": 3655.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3655.16,
+      "end": 3656.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3656.16,
+      "end": 3657.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3657.16,
+      "end": 3658.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3658.16,
+      "end": 3659.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3659.16,
+      "end": 3660.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3660.16,
+      "end": 3661.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3661.16,
+      "end": 3662.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3662.16,
+      "end": 3663.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3663.16,
+      "end": 3664.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3664.16,
+      "end": 3665.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3673.16,
+      "end": 3674.16,
+      "text": "S&P 500."
+    },
+    {
+      "start": 3674.16,
+      "end": 3675.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3675.16,
+      "end": 3676.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3676.16,
+      "end": 3677.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3677.16,
+      "end": 3678.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3678.16,
+      "end": 3679.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3679.16,
+      "end": 3680.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3680.16,
+      "end": 3681.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3681.16,
+      "end": 3682.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3682.16,
+      "end": 3683.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3683.16,
+      "end": 3684.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3684.16,
+      "end": 3685.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3685.16,
+      "end": 3686.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3686.16,
+      "end": 3687.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3687.16,
+      "end": 3688.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3688.16,
+      "end": 3689.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3689.16,
+      "end": 3690.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3690.16,
+      "end": 3691.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3691.16,
+      "end": 3692.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3692.16,
+      "end": 3693.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3693.16,
+      "end": 3694.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3694.16,
+      "end": 3695.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3695.16,
+      "end": 3696.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3696.16,
+      "end": 3697.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3697.16,
+      "end": 3698.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3698.16,
+      "end": 3699.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3699.16,
+      "end": 3700.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3700.16,
+      "end": 3701.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3701.16,
+      "end": 3702.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3702.16,
+      "end": 3703.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3703.16,
+      "end": 3704.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3704.16,
+      "end": 3705.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3705.16,
+      "end": 3706.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3706.16,
+      "end": 3707.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3707.16,
+      "end": 3708.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3708.16,
+      "end": 3709.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3709.16,
+      "end": 3710.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3710.16,
+      "end": 3711.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3711.16,
+      "end": 3712.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3712.16,
+      "end": 3713.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3713.16,
+      "end": 3714.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3714.16,
+      "end": 3715.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3715.16,
+      "end": 3716.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3716.16,
+      "end": 3717.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3725.16,
+      "end": 3726.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3726.16,
+      "end": 3727.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3727.16,
+      "end": 3728.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3728.16,
+      "end": 3729.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3729.16,
+      "end": 3730.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3730.16,
+      "end": 3731.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3731.16,
+      "end": 3732.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3732.16,
+      "end": 3733.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3733.16,
+      "end": 3734.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3734.16,
+      "end": 3735.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3735.16,
+      "end": 3736.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3736.16,
+      "end": 3737.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3737.16,
+      "end": 3738.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3738.16,
+      "end": 3739.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3739.16,
+      "end": 3740.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3740.16,
+      "end": 3741.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3741.16,
+      "end": 3742.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3742.16,
+      "end": 3743.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3743.16,
+      "end": 3744.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3744.16,
+      "end": 3745.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3745.16,
+      "end": 3746.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3746.16,
+      "end": 3747.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3755.16,
+      "end": 3756.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3756.16,
+      "end": 3757.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3757.16,
+      "end": 3758.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3758.16,
+      "end": 3759.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3759.16,
+      "end": 3760.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3760.16,
+      "end": 3761.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3761.16,
+      "end": 3762.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3762.16,
+      "end": 3763.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3763.16,
+      "end": 3764.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3764.16,
+      "end": 3765.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3765.16,
+      "end": 3766.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3766.16,
+      "end": 3767.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3767.16,
+      "end": 3768.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3768.16,
+      "end": 3769.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3769.16,
+      "end": 3770.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3770.16,
+      "end": 3771.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3771.16,
+      "end": 3772.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3772.16,
+      "end": 3773.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3773.16,
+      "end": 3774.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3774.16,
+      "end": 3775.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3775.16,
+      "end": 3776.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3776.16,
+      "end": 3777.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3777.16,
+      "end": 3778.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3778.16,
+      "end": 3779.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3779.16,
+      "end": 3780.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3780.16,
+      "end": 3781.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3781.16,
+      "end": 3782.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3782.16,
+      "end": 3783.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3783.16,
+      "end": 3784.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3784.16,
+      "end": 3785.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3785.16,
+      "end": 3786.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3786.16,
+      "end": 3787.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3787.16,
+      "end": 3788.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3788.16,
+      "end": 3789.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3789.16,
+      "end": 3790.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3790.16,
+      "end": 3791.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3791.16,
+      "end": 3792.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3792.16,
+      "end": 3793.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3793.16,
+      "end": 3794.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3794.16,
+      "end": 3795.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3795.16,
+      "end": 3796.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3796.16,
+      "end": 3797.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3797.16,
+      "end": 3798.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3806.16,
+      "end": 3807.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3807.16,
+      "end": 3808.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3808.16,
+      "end": 3809.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3809.16,
+      "end": 3810.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3810.16,
+      "end": 3811.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3811.16,
+      "end": 3812.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3812.16,
+      "end": 3813.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3813.16,
+      "end": 3814.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3814.16,
+      "end": 3815.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3815.16,
+      "end": 3816.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3816.16,
+      "end": 3817.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3817.16,
+      "end": 3818.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3818.16,
+      "end": 3819.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3819.16,
+      "end": 3820.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3820.16,
+      "end": 3821.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3821.16,
+      "end": 3822.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3822.16,
+      "end": 3823.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3823.16,
+      "end": 3824.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3824.16,
+      "end": 3825.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3825.16,
+      "end": 3826.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3826.16,
+      "end": 3827.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3827.16,
+      "end": 3828.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3836.16,
+      "end": 3837.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3837.16,
+      "end": 3838.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3838.16,
+      "end": 3839.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3839.16,
+      "end": 3840.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3840.16,
+      "end": 3841.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3841.16,
+      "end": 3842.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3842.16,
+      "end": 3843.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3843.16,
+      "end": 3844.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3844.16,
+      "end": 3845.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3845.16,
+      "end": 3846.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3846.16,
+      "end": 3847.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3847.16,
+      "end": 3848.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3848.16,
+      "end": 3849.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3849.16,
+      "end": 3850.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3850.16,
+      "end": 3851.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3851.16,
+      "end": 3852.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3852.16,
+      "end": 3853.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3853.16,
+      "end": 3854.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3854.16,
+      "end": 3855.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3855.16,
+      "end": 3856.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3856.16,
+      "end": 3857.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3857.16,
+      "end": 3858.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3858.16,
+      "end": 3859.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3859.16,
+      "end": 3860.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3860.16,
+      "end": 3861.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3861.16,
+      "end": 3862.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3862.16,
+      "end": 3863.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3863.16,
+      "end": 3864.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3864.16,
+      "end": 3865.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3865.16,
+      "end": 3866.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3866.16,
+      "end": 3867.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3867.16,
+      "end": 3868.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3868.16,
+      "end": 3869.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3869.16,
+      "end": 3870.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3870.16,
+      "end": 3871.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3871.16,
+      "end": 3872.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3872.16,
+      "end": 3873.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3873.16,
+      "end": 3874.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3874.16,
+      "end": 3875.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3875.16,
+      "end": 3876.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3876.16,
+      "end": 3877.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3877.16,
+      "end": 3878.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3878.16,
+      "end": 3879.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3887.16,
+      "end": 3888.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3888.16,
+      "end": 3889.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3889.16,
+      "end": 3890.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3890.16,
+      "end": 3891.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3891.16,
+      "end": 3892.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3892.16,
+      "end": 3893.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3893.16,
+      "end": 3894.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3894.16,
+      "end": 3895.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3895.16,
+      "end": 3896.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3896.16,
+      "end": 3897.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3897.16,
+      "end": 3898.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3898.16,
+      "end": 3899.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3899.16,
+      "end": 3900.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3900.16,
+      "end": 3901.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3901.16,
+      "end": 3902.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3902.16,
+      "end": 3903.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3903.16,
+      "end": 3904.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3904.16,
+      "end": 3905.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3905.16,
+      "end": 3906.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3906.16,
+      "end": 3907.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3907.16,
+      "end": 3908.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3908.16,
+      "end": 3909.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3909.16,
+      "end": 3910.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3910.16,
+      "end": 3911.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3911.16,
+      "end": 3912.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3912.16,
+      "end": 3913.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3913.16,
+      "end": 3914.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3914.16,
+      "end": 3915.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3915.16,
+      "end": 3916.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3916.16,
+      "end": 3917.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3917.16,
+      "end": 3918.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3918.16,
+      "end": 3919.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3919.16,
+      "end": 3920.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3920.16,
+      "end": 3921.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3921.16,
+      "end": 3922.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3922.16,
+      "end": 3923.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3923.16,
+      "end": 3924.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3924.16,
+      "end": 3925.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3925.16,
+      "end": 3926.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3926.16,
+      "end": 3927.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3927.16,
+      "end": 3928.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3928.16,
+      "end": 3929.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3929.16,
+      "end": 3930.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3938.16,
+      "end": 3939.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3939.16,
+      "end": 3940.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3940.16,
+      "end": 3941.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3941.16,
+      "end": 3942.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3942.16,
+      "end": 3943.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3943.16,
+      "end": 3944.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3944.16,
+      "end": 3945.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3945.16,
+      "end": 3946.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3946.16,
+      "end": 3947.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3947.16,
+      "end": 3948.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3948.16,
+      "end": 3949.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3949.16,
+      "end": 3950.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3950.16,
+      "end": 3951.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3951.16,
+      "end": 3952.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3952.16,
+      "end": 3953.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3953.16,
+      "end": 3954.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3954.16,
+      "end": 3955.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3955.16,
+      "end": 3956.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3956.16,
+      "end": 3957.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3957.16,
+      "end": 3958.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3958.16,
+      "end": 3959.16,
+      "text": "We're using S&P 500."
+    },
+    {
+      "start": 3959.16,
+      "end": 3970.16,
+      "text": "We've also added in a chart where you can look at the UM-CSI aggregate in blue here and have"
+    },
+    {
+      "start": 3970.16,
+      "end": 3976.16,
+      "text": "a look at the expectations and current conditions index all on the same chart."
+    },
+    {
+      "start": 3976.16,
+      "end": 3985.16,
+      "text": "So go into the spreadsheet and have a look at all of the data and work on the data and the charts"
+    },
+    {
+      "start": 3985.16,
+      "end": 3990.16,
+      "text": "to understand the nuts and bolts of the US consumer."
+    },
+    {
+      "start": 3990.16,
+      "end": 4005.16,
+      "text": "Now there are other things that when we're looking at the US consumer, we have to be aware of in terms of things in the bigger picture just to fill everything in."
+    },
+    {
+      "start": 4005.16,
+      "end": 4012.16,
+      "text": "At any one moment in time, it's just good to be aware of these things that we're going to look at now."
+    },
+    {
+      "start": 4012.16,
+      "end": 4021.16,
+      "text": "Because it tells us for consumers in the United States, the capacity of the consumer."
+    },
+    {
+      "start": 4021.16,
+      "end": 4031.16,
+      "text": "So if you recall from the causality of consumer behavior and spending patterns from earlier slides,"
+    },
+    {
+      "start": 4031.16,
+      "end": 4040.16,
+      "text": "we looked at consumer spending and savings rates being a function of real interest rates and the money supply,"
+    },
+    {
+      "start": 4040.16,
+      "end": 4046.16,
+      "text": "which are obviously both manipulated and managed by the Federal Reserve."
+    },
+    {
+      "start": 4046.16,
+      "end": 4056.16,
+      "text": "the Fed is obviously very active in managing real interest rates and the money supply."
+    },
+    {
+      "start": 4056.16,
+      "end": 4064.16,
+      "text": "And this affects the way consumers behave, the way they spend and the way they save."
+    },
+    {
+      "start": 4064.16,
+      "end": 4079.16,
+      "text": "And there's certain statistics we can look at in the US economy to get an appreciation and understanding in the bigger picture of consumer capacity."
+    },
+    {
+      "start": 4079.16,
+      "end": 4093.16,
+      "text": "So something we would look at on a regular basis every quarter to understand the consumer capacity is US household debt to GDP."
+    },
+    {
+      "start": 4093.16,
+      "end": 4102.16,
+      "text": "So the level of household debt to gross domestic product expressed in percentage terms."
+    },
+    {
+      "start": 4102.16,
+      "end": 4103.16,
+      "text": "So what is household debt?"
+    },
+    {
+      "start": 4103.16,
+      "end": 4110.16,
+      "text": "Well, it's made up of mortgages, consumer loans, credit card balances and auto finance."
+    },
+    {
+      "start": 4110.16,
+      "end": 4120.16,
+      "text": "And if you look at the chart on the left hand side, our data from trading economics is going back to the 1950s."
+    },
+    {
+      "start": 4120.16,
+      "end": 4132.16,
+      "text": "And you can obviously see a steady rise in the level of household debt as a percentage of GDP all the way up to present day."
+    },
+    {
+      "start": 4132.16,
+      "end": 4141.16,
+      "text": "And obviously it peaked around the mid 2000s before the financial crisis."
+    },
+    {
+      "start": 4141.16,
+      "end": 4153.16,
+      "text": "And where we are now at the time of recording is essentially, if you look at the right hand side for a zoomed in picture, 76% of GDP."
+    },
+    {
+      "start": 4153.16,
+      "end": 4160.16,
+      "text": "So household debt is 76% of GDP in the United States at the time of recording."
+    },
+    {
+      "start": 4161.16,
+      "end": 4163.16,
+      "text": "So why would we look at this on a regular basis?"
+    },
+    {
+      "start": 4163.16,
+      "end": 4176.16,
+      "text": "Well, we just want to get an appreciation and understanding as to whether there's actually capacity for consumers to grow or be bullish in the future."
+    },
+    {
+      "start": 4178.16,
+      "end": 4190.16,
+      "text": "So being at 76% and coming down from a level of almost close to 100% versus GDP, there's obviously slack and capacity in the economy."
+    },
+    {
+      "start": 4190.16,
+      "end": 4193.16,
+      "text": "There's no capacity for this to occur."
+    },
+    {
+      "start": 4193.16,
+      "end": 4202.16,
+      "text": "So there's enough capacity for an increased debt load relative to GDP to occur."
+    },
+    {
+      "start": 4202.16,
+      "end": 4212.16,
+      "text": "But obviously, a lot depends on interest rates and the cost of servicing any outstanding debt in the economy."
+    },
+    {
+      "start": 4212.16,
+      "end": 4227.16,
+      "text": "Something else we would look at on a regular basis to understand capacity issues is US household debt service payments as a percentage of disposable personal income."
+    },
+    {
+      "start": 4227.16,
+      "end": 4246.16,
+      "text": "And if you look at the chart coming from 1980 up until time of recording, you can see obviously the percentage of US household debt service payments versus disposable personal income."
+    },
+    {
+      "start": 4246.16,
+      "end": 4249.16,
+      "text": "It's been up and down for that entire period."
+    },
+    {
+      "start": 4249.16,
+      "end": 4258.16,
+      "text": "And typically before 2010, it was between 10% and 13%."
+    },
+    {
+      "start": 4258.16,
+      "end": 4278.16,
+      "text": "But you can see given the moves that we've had in interest rates over the last decade from the time of recording over the last decade, you can see that this percentage of household debt service payments relative to personal income has been dropping by quite a lot."
+    },
+    {
+      "start": 4278.16,
+      "end": 4279.16,
+      "text": "So what does that mean?"
+    },
+    {
+      "start": 4279.16,
+      "end": 4285.16,
+      "text": "Well, servicing the debt relative to income has become a lot cheaper for households in the United States."
+    },
+    {
+      "start": 4285.16,
+      "end": 4296.16,
+      "text": "So it means that there's obviously capacity to occur in terms of servicing debt and the total debt load."
+    },
+    {
+      "start": 4296.16,
+      "end": 4303.16,
+      "text": "So that gives consumers room to be bullish."
+    },
+    {
+      "start": 4303.16,
+      "end": 4316.16,
+      "text": "Something else we would look at on a quarterly basis is a household and non-profit organization, one to four family residential mortgage liability."
+    },
+    {
+      "start": 4316.16,
+      "end": 4321.16,
+      "text": "And we look at the total debt load here on those mortgages."
+    },
+    {
+      "start": 4321.16,
+      "end": 4332.16,
+      "text": "And if you look at the left hand side, in billions of dollars, you can see it's above the 10,000 billion mark, which is 10 trillion."
+    },
+    {
+      "start": 4332.16,
+      "end": 4335.16,
+      "text": "Does that mean there's no capacity left?"
+    },
+    {
+      "start": 4335.16,
+      "end": 4336.16,
+      "text": "Of course not."
+    },
+    {
+      "start": 4336.16,
+      "end": 4339.16,
+      "text": "This is just a dollar figure."
+    },
+    {
+      "start": 4339.16,
+      "end": 4342.16,
+      "text": "So of course, more capacity can occur."
+    },
+    {
+      "start": 4342.16,
+      "end": 4349.16,
+      "text": "But you can see the general trend since the 70s has been on a big rise."
+    },
+    {
+      "start": 4349.16,
+      "end": 4352.16,
+      "text": "We peaked in the financial crisis."
+    },
+    {
+      "start": 4352.16,
+      "end": 4365.16,
+      "text": "And it looks like the one to four family residential mortgage liability is growing above the global financial crisis level."
+    },
+    {
+      "start": 4365.16,
+      "end": 4372.16,
+      "text": "So again, does this mean there's a capacity issue if this thing goes up a lot higher?"
+    },
+    {
+      "start": 4372.16,
+      "end": 4383.16,
+      "text": "Not necessarily, as mentioned before on the previous slide, it's the level of interest that is important here as well."
+    },
+    {
+      "start": 4383.16,
+      "end": 4395.16,
+      "text": "So it's the size of the debt load and the cost that households incur relative to their personal income in servicing that debt load."
+    },
+    {
+      "start": 4395.16,
+      "end": 4411.16,
+      "text": "So we keep an eye on these things on a quarterly basis and we just take note of them and what it might mean for consumer capacity in terms of household debt and the cost of servicing that debt."
+    },
+    {
+      "start": 4411.16,
+      "end": 4424.16,
+      "text": "And we put it into context with our other leading indicators and we fill in the bigger picture and try to understand at any one moment in time what's going on in the economy."
+    },
+    {
+      "start": 4424.16,
+      "end": 4439.16,
+      "text": "And of course, if you look at the chart here and compare it to the household debt charts on the previous slides and what have we got here, we've got the 10 year yield adjusted for CPI."
+    },
+    {
+      "start": 4439.16,
+      "end": 4441.16,
+      "text": "So adjusted for inflation."
+    },
+    {
+      "start": 4441.16,
+      "end": 4446.16,
+      "text": "So we've got the real 10 year yield since 1980."
+    },
+    {
+      "start": 4446.16,
+      "end": 4466.16,
+      "text": "And this obviously, if you look at the modern context, gives you an idea of Fed policy and what they're trying to achieve here and think about it in the context of the previous slides and household debt."
+    },
+    {
+      "start": 4466.16,
+      "end": 4480.16,
+      "text": "So real interest rates have been coming down over the last 40 years and coming down from a level of around 8% to modern day as negative."
+    },
+    {
+      "start": 4480.16,
+      "end": 4486.16,
+      "text": "Yes, of course, there's a big question here in that over the bigger picture."
+    },
+    {
+      "start": 4486.16,
+      "end": 4503.16,
+      "text": "Is it necessary for this to happen because the debt load is so high that the Fed has to be in the market creating conditions of zero to negative real rates in order for households to service that debt."
+    },
+    {
+      "start": 4503.16,
+      "end": 4513.16,
+      "text": "And the big question is their capacity for further debt to be added to the US economy."
+    },
+    {
+      "start": 4513.16,
+      "end": 4526.16,
+      "text": "Well, we looked at the previous slides and it can be argued both ways, but we just need to keep an eye on these numbers on a quarterly basis."
+    },
+    {
+      "start": 4526.16,
+      "end": 4533.16,
+      "text": "So the household debt numbers and, of course, real rates, we need to be keeping an eye on them all the time."
+    },
+    {
+      "start": 4533.16,
+      "end": 4550.16,
+      "text": "And thinking about what that means in the context of consumer capacity, consumer behavior and consumer psychology and also what the UMCSI is telling us."
+    },
+    {
+      "start": 4550.16,
+      "end": 4557.16,
+      "text": "So let's have a summary of the University of Michigan Consumer Sentiment Index."
+    },
+    {
+      "start": 4557.16,
+      "end": 4561.16,
+      "text": "So we know that consumer spending is dominant."
+    },
+    {
+      "start": 4561.16,
+      "end": 4567.16,
+      "text": "It makes up 67% of all spending in the United States."
+    },
+    {
+      "start": 4567.16,
+      "end": 4574.16,
+      "text": "So it's obviously very important for us to be on top of this as traders and portfolio managers."
+    },
+    {
+      "start": 4574.16,
+      "end": 4586.16,
+      "text": "How consumers feel about their current, so coincident, and expected future income affects GDP growth, which is lagging."
+    },
+    {
+      "start": 4586.16,
+      "end": 4589.16,
+      "text": "So it is a leading indicator."
+    },
+    {
+      "start": 4589.16,
+      "end": 4601.16,
+      "text": "And not just that, the UMCSI is a powerful leading indicator of US GDP growth and S&P 500 direction and potential returns."
+    },
+    {
+      "start": 4601.16,
+      "end": 4609.16,
+      "text": "So it's vitally important to us as professional traders, our portfolio managers for our portfolio buyers."
+    },
+    {
+      "start": 4609.16,
+      "end": 4628.16,
+      "text": "Because consumer spending makes up such a large part of all spending in the US, the US consumer drives US GDP growth and global GDP growth and stock market returns in the US and the rest of the world."
+    },
+    {
+      "start": 4628.16,
+      "end": 4631.16,
+      "text": "How do we use it as professional traders?"
+    },
+    {
+      "start": 4631.16,
+      "end": 4648.16,
+      "text": "Well, we use it as a guide in conjunction with money market indicators and our other leading indicators to predict trends and turning points in the business cycle and therefore getting our portfolio directional bias."
+    },
+    {
+      "start": 4648.16,
+      "end": 4653.16,
+      "text": "So net long or short or even neutral portfolio bias."
+    },
+    {
+      "start": 4653.16,
+      "end": 4673.16,
+      "text": "And remember, there is no defined levels like the business activity indices, like the ISM manufacturing and non-manufacturing indices, where we have the 50 level signifying above 50 expansion and below 50 contraction."
+    },
+    {
+      "start": 4673.16,
+      "end": 4676.16,
+      "text": "The UMCSI doesn't have that."
+    },
+    {
+      "start": 4676.16,
+      "end": 4690.16,
+      "text": "We have to use it as a zonal guide and correlate it with GDP growth in those zones and stock market direction and returns to get a rough guide of what to expect."
+    },
+    {
+      "start": 4690.16,
+      "end": 4702.16,
+      "text": "And we also have to be very careful in our understanding of consumer behavior and psychology when looking at consumer sentiment."
+    },
+    {
+      "start": 4702.16,
+      "end": 4715.16,
+      "text": "So, periods of thrift, because of the paradox of thrift, can occur in small windows of time, but they can also occur in very long windows of time as well."
+    },
+    {
+      "start": 4715.16,
+      "end": 4718.16,
+      "text": "And we shouldn't be surprised when that happens."
+    },
+    {
+      "start": 4718.16,
+      "end": 4727.16,
+      "text": "Additionally, on the flip side, periods of extravagance can occur for a much longer period of time as well."
+    },
+    {
+      "start": 4727.16,
+      "end": 4740.16,
+      "text": "So, we have to be aware of that when we're thinking about peaks and troughs and also the effect the UMCSI has on GDP growth going forward."
+    },
+    {
+      "start": 4740.16,
+      "end": 4756.16,
+      "text": "But because, as well, the UMCSI in measuring consumer sentiment and because it's so important in terms of consumer spending driving the economy, of course, the Fed is looking at it as well."
+    },
+    {
+      "start": 4756.16,
+      "end": 4764.16,
+      "text": "So, in the back of our minds always, at any one point in time, when we're asking ourselves, what does all this mean?"
+    },
+    {
+      "start": 4764.16,
+      "end": 4775.16,
+      "text": "We have to ask ourselves the question as well, is the Fed looking at this and is the Fed likely to engage in some sort of policy response?"
+    },
+    {
+      "start": 4775.16,
+      "end": 4795.16,
+      "text": "So, by using the UMCSI in conjunction with our money market leading indicators and our other macroeconomic indicators, we're going to have a very good understanding of the US economy, money flows and potential Fed policy."
+    },
+    {
+      "start": 4795.16,
+      "end": 4808.16,
+      "text": "So, guys, we've now looked at, in terms of surveys, we've looked at businesses, so the ISM manufacturing and the ISM non-manufacturing."
+    },
+    {
+      "start": 4808.16,
+      "end": 4813.16,
+      "text": "And we've also looked at, now, consumers."
+    },
+    {
+      "start": 4813.16,
+      "end": 4819.16,
+      "text": "In the next video, we're going to be looking at the US construction industry."
+    },
+    {
+      "start": 4819.16,
+      "end": 4828.16,
+      "text": "But first, before we do that, let's go back to the desk for a brief chat."
+    },
+    {
+      "start": 4828.16,
+      "end": 4842.16,
+      "text": "Okay, so that was the US consumer and the main consumer survey in the United States, the University of Michigan Consumer Sentiment Index, the UMCSI."
+    },
+    {
+      "start": 4842.16,
+      "end": 4853.16,
+      "text": "You can now see that we're starting to get to a stage in the video series where we're building a very comprehensive macroeconomic dashboard."
+    },
+    {
+      "start": 4853.16,
+      "end": 4858.16,
+      "text": "So, we've got our money market indicators and we're building up our surveys."
+    },
+    {
+      "start": 4858.16,
+      "end": 4869.16,
+      "text": "And as you saw in that video with the US consumer, we have to understand how consumers themselves actually think and operate."
+    },
+    {
+      "start": 4869.16,
+      "end": 4882.16,
+      "text": "So, this actually, in the video, was a quick lesson in economic theory that you would have gotten if you were actually completing, at university, an economics degree."
+    },
+    {
+      "start": 4882.16,
+      "end": 4907.16,
+      "text": "Now, with our historic examples, you can see now, as well, that when we actually marry up our surveys together, and when we look at them in the context of the money markets, you can get a very good picture of how the US economy is doing at any one moment in time."
+    },
+    {
+      "start": 4907.16,
+      "end": 4912.16,
+      "text": "And I would encourage you, all of you, to do this."
+    },
+    {
+      "start": 4912.16,
+      "end": 4921.16,
+      "text": "Look at business cycle history and understand what is going on during those periods of booms and busts."
+    },
+    {
+      "start": 4921.16,
+      "end": 4925.16,
+      "text": "So, periods of business cycle history in the US economy."
+    },
+    {
+      "start": 4925.16,
+      "end": 4936.16,
+      "text": "Ultimately, what we're always trying to do here as traders is determine stock market direction and hence our portfolio bias."
+    },
+    {
+      "start": 4936.16,
+      "end": 4953.16,
+      "text": "If you study former business cycles, so business cycle history, and you learn how to interpret numbers during those times, and in the context of the economy at that moment in time, what happens?"
+    },
+    {
+      "start": 4953.16,
+      "end": 4958.16,
+      "text": "You just get better at interpretation for the future."
+    },
+    {
+      "start": 4958.16,
+      "end": 4962.16,
+      "text": "So, you get better at calling your portfolio bias."
+    },
+    {
+      "start": 4963.16,
+      "end": 4969.16,
+      "text": "OK. So, make sure you are on top of the UMCSI every month."
+    },
+    {
+      "start": 4969.16,
+      "end": 4975.16,
+      "text": "Use the downloadable spreadsheets that are downloadable in the downloads area next to the video."
+    },
+    {
+      "start": 4976.16,
+      "end": 4982.16,
+      "text": "Use those spreadsheets for all of your leading indicators and update them regularly."
+    },
+    {
+      "start": 4982.16,
+      "end": 4991.16,
+      "text": "If you do this, you're going to have a very good idea of what's going on and become very good at interpreting the numbers."
+    },
+    {
+      "start": 4991.16,
+      "end": 4997.16,
+      "text": "You'll become competent at calling stock market direction and portfolio direction."
+    },
+    {
+      "start": 4998.16,
+      "end": 5003.16,
+      "text": "OK. So, we're going to move on to our next leading indicator."
+    },
+    {
+      "start": 5003.16,
+      "end": 5006.16,
+      "text": "We're going to move on to building permits."
+    },
+    {
+      "start": 5006.16,
+      "end": 5019.16,
+      "text": "Now, this is a very interesting leading indicator because it just tells us so much about what's happening in many different parts of the economy."
+    },
+    {
+      "start": 5019.16,
+      "end": 5028.16,
+      "text": "And as with every macro indicator that we go through, we're going to go through an explanation of how it works, obviously."
+    },
+    {
+      "start": 5028.16,
+      "end": 5035.16,
+      "text": "But we're also going to refer to business cycle history and examples of business cycle history."
+    },
+    {
+      "start": 5036.16,
+      "end": 5040.16,
+      "text": "And we're going to use examples of stocks and sectors as well."
+    },
+    {
+      "start": 5040.16,
+      "end": 5042.16,
+      "text": "So, we'll do this in building permits."
+    },
+    {
+      "start": 5042.16,
+      "end": 5047.16,
+      "text": "Enjoy the video, and I'll see you a bit later on in the video series."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

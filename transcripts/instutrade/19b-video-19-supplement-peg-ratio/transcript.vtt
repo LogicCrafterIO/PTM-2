@@ -1,0 +1,812 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:21.380
+In this video I'm going to cover the price
+earnings to growth ratio, or PEG ratio as
+it's sometimes known, and talk about how
+it can be used effectively in the
+investment process, and illustrate some
+arguments as to why we use it in this way,
+using a couple of Excel examples.
+
+00:00:21.380 --> 00:00:30.700
+So this material is basically
+supplementary to video 19, drilling from
+the top down 2, where we discuss similar
+things with the PE ratio.
+
+00:00:30.700 --> 00:00:44.040
+So what is it? The PEG ratio is just a
+valuation multiple that builds upon the
+standard PE ratio, and it aims to improve
+upon it by accounting for a company's
+anticipated growth in earnings.
+
+00:00:44.040 --> 00:01:03.420
+Now the reason why this can be regarded as
+an improvement comes down to financial
+theory, which says we can value something
+by discounting its future cash flows, and
+to anticipate future cash flows we need to
+be able to forecast a growth rate, and
+that's the principle behind models like
+the DCF model.
+
+00:01:03.420 --> 00:01:15.800
+So the reason why I'm covering the PEG
+ratio in this video is that it's becoming
+a much more widely used valuation metric,
+and it's important that we as retail
+traders know how to deal with it
+correctly.
+
+00:01:15.800 --> 00:01:24.800
+So as far as calculating the PEG ratio
+goes, it's fairly simple. It's just the PE
+ratio divided by the earnings per share
+growth.
+
+00:01:24.800 --> 00:01:37.180
+So for example, if we have a PE ratio of
+10 and annual growth in earnings of 20%,
+then the PEG ratio is just 10 divided by
+20, which equals 0.5.
+
+00:01:37.180 --> 00:01:51.620
+Now, theoretical finance teaches us that a
+stock with a PEG ratio of less than 1 is
+undervalued or cheap, and conversely, a
+stock with a PEG of over 1 is overvalued
+or expensive.
+
+00:01:51.620 --> 00:02:03.500
+And sometimes you might see analysts in
+the market justify their stock
+recommendations in this manner, for
+example, by putting a buy recommendation
+on a stock with a PEG ratio of less than
+1.
+
+00:02:03.500 --> 00:02:13.180
+But this is the wrong way to deal with the
+PEG ratio in the investment process, and
+it's the same trap that retail investors
+often fall into.
+
+00:02:13.180 --> 00:02:30.540
+So in reality, the PEG ratio is as
+misinterpreted as the PE ratio, and all it
+actually represents is the price the
+market is willing to buy and sell the
+company's earnings and earnings growth
+potential for.
+
+00:02:31.060 --> 00:02:44.620
+So just as in the PE ratio, there's no
+cheap or expensive, under or overvalued,
+and similarly to the PE ratio, the PEG
+ratio can stay the same while the stock
+price rises or falls.
+
+00:02:44.620 --> 00:02:57.500
+So if we take an example of that, stock A
+is trading at $10 a share and has a
+current earnings per share estimate of $1
+and growth in earnings per share estimate
+of 20%.
+
+00:02:57.500 --> 00:03:06.420
+So our PEG ratio there is just the PE
+ratio divided by the earnings per share
+growth, which is 10 over 20, which is 0.5.
+
+00:03:07.060 --> 00:03:19.620
+Now, we can also figure out last year's
+earnings per share by discounting this
+year's expected earnings per share
+estimate and the expected earnings per
+share growth.
+
+00:03:20.100 --> 00:03:33.740
+So that's simply obtained by taking the
+earnings per share $1 divided by the
+discount factor of 1.2, which equates to
+the 20% EPS growth figure, and that equals
+$0.833.
+
+00:03:35.740 --> 00:03:58.240
+So now, if we imagine that the company
+comes out and guides the market down to a
+revised lower EPS number of $0.9, then
+this effectively changes the EPS growth
+rate to 8%, which we can figure out using
+last year's EPS number.
+
+00:03:59.560 --> 00:04:12.320
+So with the EPS number and EPS growth
+figure revised down, all that has to
+happen for the PEG ratio to remain
+constant at 0.5 is for the price to fall
+proportionally.
+
+00:04:13.000 --> 00:04:17.680
+So in this case, the price just needs to
+fall to $3.6.
+
+00:04:19.400 --> 00:04:33.080
+So as long as the stock price falls
+proportionally with the earnings and the
+earnings growth relative to the previous
+year, then the stock can lose almost all
+its value, while the PEG ratio actually
+remains the same.
+
+00:04:34.760 --> 00:04:45.920
+So in this case, theoretical finance would
+actually tell us to buy this cheap stock
+all the way down from $10 to $3.6, and we
+would have lost a lot of money doing so.
+
+00:04:47.360 --> 00:04:56.780
+Now, in reality, the stock price actually
+anticipates moves in EPS and EPS growth
+numbers in terms of the PEG ratio.
+
+00:04:57.400 --> 00:05:12.760
+So for stocks with a PEG ratio of less
+than 1, they're actually punished by the
+market for continually missing EPS and EPS
+growth estimates, and therefore, the
+market expects them to miss them again and
+again.
+
+00:05:13.060 --> 00:05:20.020
+And it's prepared to sell the stock at a
+low valuation because they regard the
+company's earnings a low quality.
+
+00:05:20.880 --> 00:05:28.080
+And in the future, what's actually likely
+to happen is that the EPS and EPS growth
+numbers will catch up with the stock
+price.
+
+00:05:28.760 --> 00:05:36.780
+And if you argue with this and actually
+buy the stock, you're claiming that
+essentially you know more than the market
+when you don't.
+
+00:05:37.920 --> 00:05:48.940
+And similarly, with stocks with a PEG
+ratio of over 1, they're rewarded by the
+market for continually beating EPS and EPS
+growth estimates.
+
+00:05:49.080 --> 00:06:01.140
+So the market expects them to beat them
+again and again and is prepared to buy the
+stock, this time at a high valuation,
+because the earnings and growth are of
+high quality.
+
+00:06:02.000 --> 00:06:09.420
+And again, in the future, it's likely that
+the EPS and EPS growth numbers will
+actually catch up to the rising stock
+price.
+
+00:06:10.080 --> 00:06:24.380
+And if you argue with that and short the
+stock, again, you're claiming that you
+know more than the market and quite often
+you'll end up being proved wrong with a
+hefty loss to your trading account to go
+with it.
+
+00:06:26.380 --> 00:06:38.400
+So the fact that the market is willing to
+pay more for quality earnings drives us to
+the same conclusion as in video 19, where
+we showed that nothing is ever cheap or
+expensive.
+
+00:06:40.100 --> 00:06:48.620
+So we've basically seen that share prices
+can go from zero to infinity and vice
+versa, while the PEG ratio actually
+remains the same.
+
+00:06:49.080 --> 00:07:01.840
+And so the most important thing to take
+away from this video is the understanding
+that the PEG ratio is a representation of
+the quality of earnings and growth outlook
+for a stock.
+
+00:07:03.100 --> 00:07:14.000
+So next I'm going to go through a couple
+of Excel examples to show what can
+actually go wrong when the PEG ratio is
+used incorrectly according to theoretical
+finance.
+
+00:07:14.420 --> 00:07:22.120
+And while we do that, it will also serve
+as a tutorial for how you can conduct PEG
+analysis yourself.
+
+00:07:25.260 --> 00:07:34.360
+Now I'm going to show you how to do some
+PEG analysis yourselves and go through a
+couple of examples to illustrate what can
+go wrong when you use the PEG ratio
+incorrectly when you're investing.
+
+00:07:35.380 --> 00:07:44.100
+So we're going to look at what can happen
+when you buy a stock with a PEG ratio of
+less than one or sell a stock with a PEG
+ratio of greater than one in accordance
+with financial theory.
+
+00:07:44.320 --> 00:07:50.900
+And show that it's actually much better to
+think of a PEG ratio as a signal of
+quality for a company's earnings and
+earnings growth.
+
+00:07:51.620 --> 00:07:53.560
+And the process we're going to use is
+fairly simple.
+
+00:07:53.800 --> 00:08:02.760
+It's basically just going to look at
+historical price data and historical PEG
+ratio data for a given stock and see how
+they relate to each other over time.
+
+00:08:03.580 --> 00:08:06.100
+So the first thing we need to do is obtain
+the data.
+
+00:08:06.100 --> 00:08:12.640
+Now in this video, I'm actually going to
+skip over how we obtain price data since
+we've already covered that in previous
+videos using Yahoo Finance.
+
+00:08:13.340 --> 00:08:20.340
+But what I will do is briefly show you how
+to obtain PEG ratio data and import it
+into Excel and compare it with your price
+data.
+
+00:08:20.940 --> 00:08:28.620
+So to do that, we just need to go to
+Ycharts.com and then in this example, I'm
+going to look at the stock Ralph Lauren.
+
+00:08:28.620 --> 00:08:34.120
+So I'm going to type in RL and select
+Ralph Lauren from the drop down menu.
+
+00:08:35.500 --> 00:08:46.460
+And then to find PEG ratio data, just
+select data and from the performance
+metric drop down menu, just find PEG ratio
+and click on that.
+
+00:08:47.180 --> 00:08:53.620
+And that gives you the historical PEG
+ratio data for the stock that you're
+looking at.
+
+00:08:54.120 --> 00:08:59.100
+And it begins with the date that is last
+available for that stock.
+
+00:09:01.020 --> 00:09:11.780
+Now, unfortunately, in Ycharts, it's
+actually not possible to export data
+properly in an Excel file unless you pay
+for a subscription.
+
+00:09:12.040 --> 00:09:15.860
+But you can actually get the data in a
+much more crude fashion, which is what
+we're going to do in this video.
+
+00:09:16.500 --> 00:09:21.120
+And that simply just involves copying and
+pasting the data from the website into
+Excel.
+
+00:09:21.700 --> 00:09:27.620
+And obviously, this takes a little bit
+more time than a normal data file would.
+
+00:09:28.460 --> 00:09:33.640
+So I'm not actually going to go through
+the whole example because it's going to
+involve about two years of data.
+
+00:09:33.880 --> 00:09:41.300
+Instead, I'm just going to show you a
+couple of pages of how you get this data
+into Excel.
+
+00:09:41.860 --> 00:09:47.220
+And then we're going to use a pre-made
+Ralph Lauren spreadsheet ready for the
+analysis later in the video.
+
+00:09:48.580 --> 00:09:53.000
+So it is literally as simple as copying
+and pasting.
+
+00:09:53.140 --> 00:09:58.660
+So if you just select all the data that
+you want, including the date and the PEG
+ratio from the webpage,
+
+00:09:59.400 --> 00:10:04.580
+and then within that selection, click
+Copy, right-click and copy.
+
+00:10:04.780 --> 00:10:11.880
+And then I'm going to paste this into this
+pre-made Ralph Lauren spreadsheet and just
+paste it into a cell in Excel.
+
+00:10:12.620 --> 00:10:17.980
+That will give you your date column and
+your PEG ratio column, and they'll all
+line up correctly.
+
+00:10:18.380 --> 00:10:23.480
+All you need to do is delete the break in
+the data set halfway down.
+
+00:10:25.080 --> 00:10:27.740
+And then you've got a consistent data set.
+
+00:10:28.800 --> 00:10:34.760
+So then all you need to do is go to the
+next page of data, and you can keep going
+back as far as you want.
+
+00:10:35.100 --> 00:10:37.480
+Do this for however many pages of data you
+want.
+
+00:10:38.200 --> 00:10:45.140
+Keep going, copy and paste that in below
+your previous data, and delete the break
+in the data set.
+
+00:10:46.600 --> 00:10:49.580
+And then once you've done that and gone
+back as far as you want,
+
+00:10:50.000 --> 00:10:54.220
+you'll end up with something like what
+I've got here on the left-hand side in
+columns A and B,
+
+00:10:54.740 --> 00:10:57.180
+with the date and the PEG ratios.
+
+00:10:57.720 --> 00:11:11.080
+And then all you need to do is go to Yahoo
+Finance and obtain the daily closing price
+data for all the dates within your date
+range.
+
+00:11:12.240 --> 00:11:15.260
+And make sure they correspond to the
+correct ones.
+
+00:11:16.720 --> 00:11:23.760
+So the easiest way to go about conducting
+our analysis, our PEG ratio analysis,
+
+00:11:23.940 --> 00:11:29.700
+and looking at how it relates to the price
+over time, is by making a chart.
+
+00:11:29.820 --> 00:11:31.200
+So that's what we're going to do first.
+
+00:11:31.960 --> 00:11:37.360
+We're just going to select all the data,
+and then insert a line chart of this data.
+
+00:11:37.920 --> 00:11:44.080
+And that gives us the line chart of all
+the relevant data that we require for our
+analysis.
+
+00:11:45.040 --> 00:11:47.840
+The first problem we've got here is a
+scaling problem.
+
+00:11:48.580 --> 00:11:54.340
+So at the moment, the PEG ratio data is
+stuck around a value of 1,
+
+00:11:54.480 --> 00:11:59.480
+and it's using the same axis as the price
+data, which is around 150.
+
+00:12:00.420 --> 00:12:07.120
+So we're going to create a secondary axis
+for the PEG ratio data
+
+00:12:07.120 --> 00:12:13.400
+by selecting the PEG ratio line and
+right-clicking on it and formatting the
+data series,
+
+00:12:13.560 --> 00:12:15.460
+and then adding a secondary axis here.
+
+00:12:16.120 --> 00:12:20.440
+That gives us a secondary axis, a PEG
+ratio axis on the right-hand side.
+
+00:12:21.720 --> 00:12:25.720
+And the next scaling problem we're going
+to resolve is the price data
+
+00:12:25.720 --> 00:12:28.220
+just hanging around at the top of the
+chart,
+
+00:12:28.340 --> 00:12:31.780
+when actually, in order to sort of
+visually interpret it more easily,
+
+00:12:31.880 --> 00:12:33.440
+we want it to use much more of the chart.
+
+00:12:33.800 --> 00:12:37.420
+So we're going to change the left-hand
+axis, the price axis,
+
+00:12:37.960 --> 00:12:43.460
+to have a minimum value of something
+greater than zero.
+
+00:12:43.460 --> 00:12:46.620
+So to do that, we left-click the axis,
+then right-click,
+
+00:12:46.960 --> 00:12:52.640
+format axis, and change the minimum fixed
+value to, in this case, 100.
+
+00:12:55.060 --> 00:13:00.160
+So now we can visualize the PEG ratio and
+stock prices relationship over time.
+
+00:13:00.960 --> 00:13:04.480
+So let's have a look at what would happen
+if we bought and sold the stock
+
+00:13:04.480 --> 00:13:06.740
+in accordance with financial theory,
+
+00:13:07.360 --> 00:13:12.240
+i.e., when the stock is over and
+undervalued according to the PEG ratio.
+
+00:13:13.460 --> 00:13:15.820
+So, remember, with the PEG ratio,
+
+00:13:16.020 --> 00:13:20.200
+a stock is overvalued when it's above 1
+and undervalued when it's below 1.
+
+00:13:20.420 --> 00:13:24.580
+So we're going to insert a line at a PEG
+ratio of 1
+
+00:13:24.580 --> 00:13:30.040
+so we know that when the PEG ratio goes
+below 1 and is above 1.
+
+00:13:30.140 --> 00:13:33.880
+And I'm just going to format that object
+by right-clicking on the line
+
+00:13:33.880 --> 00:13:39.660
+and changing the line color to black and
+making it a bit wider.
+
+00:13:42.040 --> 00:13:49.120
+So now we can see the date range when the
+PEG ratio is less than 1, i.e.
+undervalued,
+
+00:13:49.120 --> 00:13:52.940
+and the range when it's over 1 and
+overvalued.
+
+00:13:55.180 --> 00:13:59.880
+So now what we're going to do is go
+through the chart chronologically
+
+00:13:59.880 --> 00:14:05.040
+and add in buy and sell signals in
+accordance with financial theory
+
+00:14:05.040 --> 00:14:10.260
+by adding lines to the chart, vertical
+lines, green and red lines for
+
+00:14:10.260 --> 00:14:12.320
+green for buy and red for sell.
+
+00:14:12.660 --> 00:14:15.460
+And we'll do this at the major changes in
+the PEG ratio.
+
+00:14:16.300 --> 00:14:21.560
+So, like this change here from below 1 to
+above 1 and here and so on.
+
+00:14:23.020 --> 00:14:29.760
+And those changes that actually come about
+from changes in EPS and EPS growth
+estimates.
+
+00:14:31.040 --> 00:14:35.380
+So, let's start now by, we're going to
+start at the very beginning.
+
+00:14:35.520 --> 00:14:41.080
+So, September 2011, we're going to say
+that's a buy signal in accordance with
+financial theory
+
+00:14:41.080 --> 00:14:46.200
+because the PEG ratio is less than 1,
+representing undervaluation.
+
+00:14:47.580 --> 00:14:53.500
+So, we should buy the stock in
+anticipation that the stock price will
+rise.
+
+00:14:53.500 --> 00:14:56.280
+I'm just going to make this a bit wider
+and green, this line.
+
+00:14:58.140 --> 00:15:00.200
+Because that's what financial theory
+dictates.
+
+00:15:01.040 --> 00:15:06.080
+Now, the next major change is in, at the
+end of December 2011,
+
+00:15:06.360 --> 00:15:09.640
+where the PEG ratio rises from less than 1
+to greater than 1.
+
+00:15:10.020 --> 00:15:12.700
+So, it's going from undervalued to
+overvalued.
+
+00:15:13.020 --> 00:15:15.860
+And so, that can be regarded as a sell
+signal.
+
+00:15:18.220 --> 00:15:27.040
+And then again, at the end of March 2012,
+it goes from above 1 to below 1,
+
+00:15:27.440 --> 00:15:29.460
+overvaluation to undervaluation.
+
+00:15:30.520 --> 00:15:38.040
+Remember, these significant changes in the
+PEG ratio are down to revisions to a
+company's EPS and EPS growth estimates.
+
+00:15:39.800 --> 00:15:44.840
+So, that is a buy signal because it's
+dipping below a PEG ratio of 1.
+
+00:15:44.840 --> 00:15:52.280
+And the final line we're going to insert
+is at the end of June 2012,
+
+00:15:52.280 --> 00:16:05.000
+where the PEG ratio rises from less than 1
+to above 1, representing overvaluation,
+and hence is a sell signal.
+
+00:16:05.000 --> 00:16:12.520
+So, now let's consider what happens to the
+stock price after our buy and sell signals
+through this chart.
+
+00:16:12.520 --> 00:16:27.160
+So, September 2011, we've got a buy
+signal, but actually the stock price falls
+to the next sell signal.
+
+00:16:27.160 --> 00:16:36.800
+And again, similarly, we then have a sell
+signal, but then the stock price is
+actually rising to the next buy signal.
+
+00:16:36.800 --> 00:16:44.320
+And this happens consistently through this
+chart.
+
+00:16:44.320 --> 00:16:52.320
+So, essentially, the stock price is
+actually doing the opposite to what
+financial theory should dictate.
+
+00:16:52.320 --> 00:16:56.320
+So, why is this happening?
+
+00:16:56.320 --> 00:16:59.840
+What is actually happening here?
+
+00:16:59.840 --> 00:17:09.840
+Starting from the beginning, September
+2011, the market is actually selling the
+stock in anticipation of EPS and EPS
+growth decline.
+
+00:17:09.840 --> 00:17:23.360
+So, effectively, it's pricing in the
+company's revision to EPS and EPS growth
+estimates, which then happens here when
+the PEG ratio rises from less than 1 to
+above 1.
+
+00:17:23.360 --> 00:17:30.600
+So, the revision is downwards, hence the
+stock price is pricing that in before that
+happens.
+
+00:17:31.400 --> 00:17:37.240
+And then, again, the market begins to buy
+the stock in anticipation of higher EPS
+and EPS growth.
+
+00:17:37.760 --> 00:17:47.280
+So, they start buying the stock somewhere
+around January 2012, in anticipation that
+EPS and EPS growth rates will be revised
+upwards.
+
+00:17:47.280 --> 00:17:59.440
+And then, they're actually proved right
+come the end of March 2012, where EPS and
+EPS growth estimates are revised upwards.
+
+00:17:59.440 --> 00:18:08.880
+And, hence, the PEG ratio has a fall in
+value, and that happens again in the next
+segment of the chart.
+
+00:18:08.880 --> 00:18:18.160
+And then, post-June 2012, we can see a
+good example of the market continually
+buying the stock and paying for good
+quality earnings and growth,
+
+00:18:18.160 --> 00:18:26.320
+which effectively rewards the company for
+anticipated EPS and EPS growth revisions
+upwards.
+
+00:18:26.320 --> 00:18:35.760
+So, now we're going to briefly look at
+another example, where it's even more
+obvious that the market's willing to pay
+for good quality earnings.
+
+00:18:35.760 --> 00:18:38.760
+And that example is a company called 3M.
+
+00:18:38.760 --> 00:18:43.360
+So, we're just going to briefly go through
+the same analysis, although this one's
+much quicker.
+
+00:18:43.360 --> 00:18:46.840
+We don't need to add in all the lines that
+we did in the previous chart.
+
+00:18:46.840 --> 00:18:59.280
+So, first thing to do, create the chart by
+selecting all the data, clicking insert,
+insert simple line chart, and we're going
+to resolve our scaling problems again.
+
+00:18:59.280 --> 00:19:10.280
+So, we're going to add a secondary axis
+for the PEG ratio data by selecting the
+PEG ratio line, right clicking format data
+series and adding second axis.
+
+00:19:10.280 --> 00:19:26.720
+And then, again, our next scaling problem
+will get the price line to use a lot more
+of the chart by right clicking on the
+price axis and changing the minimum fixed
+value to 70.
+
+00:19:26.720 --> 00:19:43.600
+So, in this example, over the whole period
+that we're looking at, about a year-long
+period, the company is actually being
+rewarded through a rising stock price for
+anticipated EPS and EPS growth rate
+revisions upwards.
+
+00:19:43.600 --> 00:19:51.040
+And, needless to say, following financial
+theory, would actually lose a lot of money
+on this stock as well.
+
+00:19:53.520 --> 00:20:01.200
+So, you can now use this analysis yourself
+when generating trade ideas as a
+supplementary tool to looking at PE
+ratios.
+
+00:20:01.200 --> 00:20:10.800
+With PE ratios, if we have long ideas,
+we're looking for PE's on a premium to the
+sector, and for shorts, we're looking for
+PE's on a discount to the sector.
+
+00:20:10.800 --> 00:20:22.920
+And this is because we know that high PE
+ratios mean that the market's willing to
+pay for high quality earnings, and with
+low PE ratios, the market's actually
+punishing the stock for low quality
+earnings.
+
+00:20:22.920 --> 00:20:26.720
+And then, we can look for reasons as to
+why this is the case.
+
+00:20:26.720 --> 00:20:34.080
+So, if there's no reason to go against the
+market, then it's very clear that you
+don't know anything that the market
+doesn't know, and you're actually fighting
+the trend.
+
+00:20:34.080 --> 00:20:53.080
+Similarly, you can look for long ideas
+with PE ratios above 1 and short ideas
+with PE ratios of less than 1, and you'll
+see that, as with the PE ratio, the market
+will continually reward companies with
+higher than sector average EPS growth, and
+punish those with lower than sector
+average EPS growth.
+
+00:20:53.080 --> 00:21:00.080
+So, that's all you need to know about PE
+ratio analysis.
+
+00:21:00.080 --> 00:21:05.080
+I hope that you can incorporate this into
+your investment framework successfully,
+and good luck with your trading.
+
+00:21:05.080 --> 00:21:06.040
+Good luck with your trading.

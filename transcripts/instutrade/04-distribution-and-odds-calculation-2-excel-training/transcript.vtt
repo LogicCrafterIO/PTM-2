@@ -1,0 +1,1909 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:23.080
+Okay, so now we're going to go over to
+Christopher Quill. Chris is now going to
+show you on the computer how you calculate
+your distributions for initially the S&P
+500, but you can use this for any asset.
+So take it away, Chris.
+
+00:00:30.000 --> 00:00:59.980
+So in this example, we're going to look at
+a day trading strategy for the S&P 500
+over a period of roughly 50 years. By
+calculating these daily returns, we should
+get a good idea of how the S&P 500
+
+00:00:59.980 --> 00:01:29.960
+the underlying asset behaves behaves on a
+daily basis. So we're going to start by
+going to Yahoo Finance and obtaining the
+data. So finance.yahoo.com. And then in
+the ticker box, we type S&P and we select
+the first drop down item, S&P 500. And
+this gives us a summary phrase
+
+00:01:29.960 --> 00:01:59.940
+page of the S&P 500 with Yahoo Finance's
+last available price for the asset. But
+we're going to go to historical prices on
+the left hand side and update the
+historical price table by editing the
+inputs given at the top here. So we're
+looking for data from between the 3rd of
+January 1962 to the 9th of November 2012
+on a daily frequency.
+
+00:01:59.940 --> 00:02:08.800
+So once we've set our parameters, we
+update the table by clicking Get Prices
+and we scroll to the bottom of the page
+and click Download to Spreadsheet.
+
+00:02:09.360 --> 00:02:20.400
+At this stage, you can select to save the
+spreadsheet to your hard drive. Or as
+we're going to do, you can just open the
+spreadsheet straight away and save it once
+it's open.
+
+00:02:22.940 --> 00:02:36.160
+With the spreadsheet open, we're just
+going to go to File, Save As. We're going
+to save it as S&P 500 Returns
+Distribution.
+
+00:02:37.220 --> 00:02:43.020
+And we'll save it as an Excel workbook.
+And I'm going to save it on my desktop so
+it's easy to find.
+
+00:02:44.400 --> 00:02:57.800
+So the first thing that we're going to do
+is adjust this date column so we can see
+the dates.
+
+00:02:58.280 --> 00:03:02.500
+So we just click on the column
+intersection and adjust the width of the
+column like that by clicking and dragging.
+
+00:03:03.320 --> 00:03:09.440
+So this is all the price data for the S&P
+500 from the daily price data from the
+period that we've selected.
+
+00:03:10.080 --> 00:03:18.520
+So in our example, we're only going to use
+the open and closing prices to calculate
+daily returns.
+
+00:03:19.820 --> 00:03:27.540
+So let's go ahead and do that by heading
+up column H with returns in cell H1.
+
+00:03:28.020 --> 00:03:37.780
+And then in H2, type our returns formula,
+which is brackets, closing price for that
+day minus the opening price for that day,
+
+00:03:37.900 --> 00:03:43.240
+divided by the opening price, which gets
+it in terms of a percentage return for
+that day.
+
+00:03:44.700 --> 00:03:53.060
+And then we want to apply the formula that
+we've just put into cell H2 down the whole
+returns column.
+
+00:03:53.200 --> 00:03:57.580
+So a quick way to do that is click
+anywhere in the data from column A to G.
+
+00:03:58.280 --> 00:04:04.180
+So cell G2, for example, and press CTRL
+and down to navigate quickly to the bottom
+of the spreadsheet.
+
+00:04:04.840 --> 00:04:09.980
+And then find the last cell in column H.
+
+00:04:10.600 --> 00:04:13.220
+So that is H12804.
+
+00:04:14.160 --> 00:04:21.680
+And then we press CTRL, shift and up to
+quickly select all the return cells that
+we want to implement our formula into.
+
+00:04:22.300 --> 00:04:28.800
+And then with that selected, we just press
+CTRL, D to copy that formula down from
+cell H2 to the rest of the column.
+
+00:04:32.840 --> 00:04:38.720
+So now we've got our returns, we want to
+be able to analyse them and interpret them
+in terms of a distribution.
+
+00:04:39.300 --> 00:04:47.820
+So by that I mean we want to be able to
+understand how many of these daily
+returns, S&P 500 daily returns,
+
+00:04:48.100 --> 00:04:50.640
+lie within specific ranges that we set.
+
+00:04:51.060 --> 00:04:55.860
+And we're going to set those ranges by
+creating intervals in the data.
+
+00:04:56.700 --> 00:05:02.660
+So in column J, cell J1, head up the
+column with intervals.
+
+00:05:05.080 --> 00:05:05.440
+Okay.
+
+00:05:06.400 --> 00:05:14.680
+And then what we want to do is come up
+with a reasonable set of intervals for
+trading the S&P 500 daily.
+
+00:05:15.540 --> 00:05:23.460
+So a lower bound for the ranges we're
+interested in might be minus 2%, for
+example, because we're only looking at
+daily data.
+
+00:05:24.140 --> 00:05:30.960
+So looking at anything with too wider
+range would be pointless because it
+wouldn't really show us the core of our
+data set.
+
+00:05:31.920 --> 00:05:37.040
+So we'll start with minus 2%, so minus
+0.02, we enter into cell J2.
+
+00:05:38.960 --> 00:05:42.740
+And then we'll go up in increments of half
+a percent.
+
+00:05:42.740 --> 00:05:54.720
+So in the next cell, J3, we type 0.0.015,
+press enter.
+
+00:05:55.420 --> 00:06:02.440
+And to quickly use this interval that
+we've set and copy it down to an upper
+bound of plus 2%,
+
+00:06:02.440 --> 00:06:11.740
+we select those two cells, J2 and J3, and
+then select the small black box in the
+bottom right-hand corner of the selection
+
+00:06:11.740 --> 00:06:22.040
+and drag it down to cell J10, which gives
+us plus 0.02, which is plus 2%.
+
+00:06:22.040 --> 00:06:39.280
+So we're going to use these intervals to
+create a distribution table to see the
+frequency of our daily returns that land
+within these intervals.
+
+00:06:40.560 --> 00:06:48.800
+So to do that, we have to go to data on
+the ribbon and data analysis on the
+right-hand side.
+
+00:06:48.800 --> 00:06:58.580
+If you don't have this at this point,
+there's a guide of how you obtain this
+data analysis option in the accompanying
+PDF.
+
+00:06:59.580 --> 00:07:04.420
+And you do it by installing an add-in to
+Excel called Analysis Toolpack.
+
+00:07:05.500 --> 00:07:07.340
+So we go ahead and click on Data Analysis.
+
+00:07:08.400 --> 00:07:10.940
+And we want to create a histogram data.
+
+00:07:11.500 --> 00:07:13.600
+So that's basically a frequency table.
+
+00:07:14.880 --> 00:07:16.200
+And press OK.
+
+00:07:16.200 --> 00:07:22.760
+And we're going to create this table from
+our returns data.
+
+00:07:23.500 --> 00:07:31.860
+So we select in the input range, cell H2,
+and press Ctrl-Shift and down to quickly
+select that whole returns column.
+
+00:07:32.620 --> 00:07:40.520
+The bin range is just the intervals that
+we want to define our ranges with, that
+we're interested in interpreting our
+returns within.
+
+00:07:40.580 --> 00:07:49.360
+So our bin range is just our intervals
+that we created in column J, from J2,
+Ctrl-Shift down, select to J10.
+
+00:07:51.040 --> 00:07:57.100
+Now, we want to display this histogram
+data in this spreadsheet that we're
+working in, rather than a new worksheet.
+
+00:07:57.880 --> 00:08:07.480
+So in output options, we select output
+range, and you can see this throws you
+back to the input range box, which we've
+already filled in with our returns data.
+
+00:08:07.540 --> 00:08:15.320
+So we need to be careful to click off that
+into output range and select whereabouts
+in the spreadsheet we want this frequency
+table to be.
+
+00:08:15.440 --> 00:08:27.320
+So we're going to use cell L2, and we're
+going to use cell L2, and so we click L2
+and press OK, and that gives us a tabular
+format of a histogram.
+
+00:08:27.700 --> 00:08:49.040
+So basically, a frequency table, and what
+this essentially means is, if we take the
+first row, for example, in this table,
+this means that 285 days, the S&P 500
+yields a return of less than or equal to
+minus 2%.
+
+00:08:49.040 --> 00:08:58.160
+And the next row, and the next row, 345
+days, yields a return of between minus 2%
+and minus 1.5%.
+
+00:08:58.160 --> 00:08:59.960
+OK, and that's how the table works.
+
+00:09:00.040 --> 00:09:07.780
+So if you go to the bottom, eventually you
+get to 307 days, lie greater than 2%.
+
+00:09:07.780 --> 00:09:22.500
+OK, so what would be useful is if we
+interpreted this data visually, so we
+create a graph from this data.
+
+00:09:23.020 --> 00:09:36.200
+So to do that, we just select the data,
+L3, click and drag to M12 to select that
+data, and go to Insert on the ribbon,
+Column, and the first 2D Column Chart
+option.
+
+00:09:36.960 --> 00:09:39.460
+Click that, and that gives us a histogram
+of our data.
+
+00:09:40.380 --> 00:09:49.080
+OK, so at the moment, what we can see is
+that clearly more returns on our
+distribution lie close to zero.
+
+00:09:49.720 --> 00:10:00.900
+OK, so that's what we can tell so far, and
+that a lot less, it sort of tails off, and
+it looks something like a bell-shaped
+curve, a bit like a, well, a lot like a
+normal distribution at the moment,
+
+00:10:03.200 --> 00:10:08.760
+where there's a lot less frequency of
+returns, where there's a lot less
+frequency of returns in the tails, than in
+the centre.
+
+00:10:10.940 --> 00:10:17.540
+OK, so we should tidy this graph up, and
+make it a little bit more easy to
+interpret.
+
+00:10:17.740 --> 00:10:21.080
+I'm just going to go ahead and zoom out of
+the spreadsheet a little bit.
+
+00:10:21.440 --> 00:10:26.460
+To do that easily, you can just hold CTRL
+and then use your mouse wheel to zoom in
+and out of the spreadsheet.
+
+00:10:26.980 --> 00:10:41.180
+So, we're going to replace this horizontal
+x-axis with some more appropriate labels,
+so we can understand the ranges that our
+frequency of data lie within.
+
+00:10:42.180 --> 00:10:47.300
+So, to do that, let's create a range
+column in column N.
+
+00:10:47.800 --> 00:10:49.780
+So, in N2, we'll type range.
+
+00:10:50.760 --> 00:10:57.160
+And in N3, we'll type the appropriate
+range that applies to this bin value, and
+so on.
+
+00:10:57.280 --> 00:11:03.040
+And we'll do that in all of these cells,
+from N3 to N12.
+
+00:11:03.460 --> 00:11:12.880
+Before we do that, though, because we're
+going to type it in as text, we want to
+format these cells, so they know that
+these cells are going to be displayed as
+text, or understood as text.
+
+00:11:12.960 --> 00:11:17.260
+So, we select all those cells, and
+right-click within the selection, and
+click Format Cells.
+
+00:11:19.140 --> 00:11:29.100
+And we then want to change the category to
+text, and press OK.
+
+00:11:29.960 --> 00:11:47.600
+Okay, so we'll start with the first row,
+and we'll call this range less than minus
+2%, and then the next range will be minus
+2% to minus 1.5%, and so on.
+
+00:11:49.140 --> 00:12:04.140
+So, we're just using the bin values as a
+reference to complete this table, this
+column, rather.
+
+00:12:08.140 --> 00:12:18.600
+So, it's a little bit tedious, but it's a
+good thing to do, so you can actually
+understand your data graphically with the
+correct ranges defined.
+
+00:12:19.140 --> 00:12:39.120
+And in the last cell, in cell N12, we're
+going to type greater than 2%.
+
+00:12:39.120 --> 00:12:46.760
+Okay, and let's adjust this column width,
+column N, so it can include all that text,
+and it doesn't overlap into another
+column.
+
+00:12:48.160 --> 00:12:56.540
+Okay, so now we want to change the
+horizontal axis labels to the ranges that
+we've created here.
+
+00:12:56.680 --> 00:13:01.000
+So, to do that, we click on the graph, and
+right-click, and select data.
+
+00:13:01.000 --> 00:13:14.680
+And then we want to change the horizontal
+category axis label, and edit, so we click
+on edit, and we change it from these bin
+values, which are currently selected, to
+these range values instead.
+
+00:13:14.680 --> 00:13:28.680
+And we just press OK, and OK again, and
+you can see that it's updated our
+histogram, and now we can understand what
+these bars actually mean, in terms of the
+ranges that they apply to.
+
+00:13:28.680 --> 00:13:44.680
+Okay, so the next thing we'll do is delete
+this series label, so we just click on
+series 1 and press delete, and I suppose
+we want to add some axis labels to this
+graph, so we can understand it even
+better.
+
+00:13:44.680 --> 00:13:52.680
+So, to do that, we go to chart tools
+layout in the ribbon, and then axis
+titles, and we'll label the primary
+horizontal axis first.
+
+00:13:52.680 --> 00:14:07.680
+We'll choose title below axis, and that
+gives us axis title as the title, so we
+want to select that, delete it, and
+replace it with daily return range.
+
+00:14:07.680 --> 00:14:21.680
+Click off it, and then the same thing to
+the vertical axis title, we'll choose
+rotated title, select it, and delete, and
+we'll rename it as frequency.
+
+00:14:21.680 --> 00:14:38.680
+Okay, so that's our histogram done, so we
+can graphically see the frequency of daily
+S&P returns that lie within these ranges
+historically over the period that we've
+considered.
+
+00:14:38.680 --> 00:14:50.680
+Okay, so I've already talked about how
+this distribution is much like a normal
+bell-shaped curve, but for those of you a
+little bit more familiar with the normal
+distribution,
+
+00:14:50.680 --> 00:14:55.680
+we can see that these bars don't tail off
+quite as quickly as a normal distribution
+would.
+
+00:14:55.680 --> 00:15:14.680
+Basically meaning the tails are slightly
+fatter, that we can see visually, meaning
+there's more extreme values, and we'll
+come on, we'll sort of prove that in our
+data as we continue, but we can already
+see that this isn't quite a normal
+distribution.
+
+00:15:14.680 --> 00:15:38.680
+So, we can use Excel to give us some
+summary statistics of our data set, and to
+do that we go to data, and data analysis,
+then we're going to choose descriptive
+statistics, and press ok.
+
+00:15:38.680 --> 00:15:44.680
+And our input range is our returns column
+from cell H2.
+
+00:15:44.680 --> 00:16:03.680
+Control shift down, selects the whole
+returns column, and we'll scroll back up
+to the top of the spreadsheet, and we want
+our output range to be on this
+spreadsheet, on this worksheet, so our
+descriptive data is on this worksheet, and
+so we change the output options to output
+range.
+
+00:16:03.680 --> 00:16:23.680
+And then remember to click off the output
+range, and we're going to use cell T2 to
+display the descriptive statistics, and
+we'll need to make sure that we choose
+summary statistics at the bottom to
+display our descriptive statistics before
+pressing ok.
+
+00:16:23.680 --> 00:16:37.680
+So this will load a number of summary
+statistics of our data, so it's done it
+now, we'll just adjust the column widths,
+so we can see this data, see these
+statistics a bit more easily.
+
+00:16:37.680 --> 00:16:41.680
+Ok, so let's interpret some of these.
+
+00:16:41.680 --> 00:16:49.680
+So the mean, this is just the average
+daily return of the S&P 500 over the
+historical period that we're looking at.
+
+00:16:49.680 --> 00:16:53.680
+Ok, so this is about 0.03%.
+
+00:16:53.680 --> 00:16:59.680
+Intuitively we would know it's positive,
+because we know the S&P 500 is up since
+1962.
+
+00:16:59.680 --> 00:17:17.680
+The median is the middle number of the
+data set, so if I had a data set of 1%,
+2%, and 10%, the middle of that data set
+would be 2%, the middle number.
+
+00:17:17.680 --> 00:17:19.680
+So that's the median.
+
+00:17:19.680 --> 00:17:38.680
+Intuitively, by seeing the median, the
+middle number is above the mean, we know
+that more values lie above the mean than
+below the mean, so the ones below the mean
+must be more extreme.
+
+00:17:38.680 --> 00:17:46.680
+And so we can interpret this as the
+negative values being more extreme than
+the positive ones.
+
+00:17:46.680 --> 00:17:48.680
+Ok, so let's continue.
+
+00:17:48.680 --> 00:17:50.680
+The standard deviation is the next one.
+
+00:17:50.680 --> 00:17:58.680
+We can just interpret this one as a
+measure of the dispersion of the data.
+
+00:17:58.680 --> 00:18:11.680
+Ok, so in a normal distribution, you might
+know that there's roughly 68% of the
+frequency of the data lies within one
+standard deviation either side of the
+mean.
+
+00:18:11.680 --> 00:18:14.680
+So in this case that would be 1% either
+side of the mean.
+
+00:18:14.680 --> 00:18:20.680
+That's not necessarily true, in fact it
+isn't true in our empirical distribution
+as we'll see further on.
+
+00:18:20.680 --> 00:18:30.680
+So just bear in mind it's a measure of our
+data's dispersion.
+
+00:18:30.680 --> 00:18:35.680
+So next we'll look at the kurtosis and
+skewness values.
+
+00:18:35.680 --> 00:18:42.680
+These are just values that help us
+understand whether our data is normally
+distributed or not.
+
+00:18:42.680 --> 00:18:54.680
+So the kurtosis value is a measure of how
+peaked the data is and how the tails
+differ from a normal distribution.
+
+00:18:54.680 --> 00:19:01.680
+So a normal distribution in terms of how
+Excel displays the kurtosis value would
+have a value of 0.
+
+00:19:01.680 --> 00:19:14.680
+So this high kurtosis value basically
+means that our data set, our empirical
+data set, is more peaky and has higher or
+fatter returns in the tails.
+
+00:19:14.680 --> 00:19:19.680
+Ok, so fatter tails in our data set.
+
+00:19:19.680 --> 00:19:33.680
+And the skewness value as a minus number
+means that basically our fat tail, our
+negative fat tail, is bigger than our
+positive tail.
+
+00:19:33.680 --> 00:19:42.680
+Meaning that extreme negative movements
+are more likely to occur than extreme
+positive movements.
+
+00:19:42.680 --> 00:19:52.680
+Ok, so the next value we look at is the
+range which is just the difference between
+the highest daily return that's been in
+our data set to the lowest daily return.
+
+00:19:52.680 --> 00:19:57.680
+And that's split up into the maximum
+minimum which are the next two cells.
+
+00:19:57.680 --> 00:20:07.680
+So we can see that the lowest daily return
+is minus 20% which is twice the magnitude
+of the largest positive return which is
+just 10%.
+
+00:20:07.680 --> 00:20:12.680
+So again that backs up our idea about
+skewness.
+
+00:20:12.680 --> 00:20:16.680
+Negative extremes are of greater magnitude
+than positive extremes.
+
+00:20:16.680 --> 00:20:21.680
+The sum is just the sum of our entire
+returns column.
+
+00:20:21.680 --> 00:20:24.680
+Effectively it means nothing other than
+that.
+
+00:20:24.680 --> 00:20:34.680
+It's certainly not the return that you
+would yield if you held this asset from
+1962 to 2012.
+
+00:20:34.680 --> 00:20:42.680
+And finally the count is the number of
+trading days within our data set.
+
+00:20:42.680 --> 00:20:49.680
+So now we've interpreted our descriptive
+statistics a little bit.
+
+00:20:49.680 --> 00:20:59.680
+Let's display the frequencies of our
+ranges in our data in terms of
+probabilities so we can interpret them a
+bit more easily.
+
+00:20:59.680 --> 00:21:11.680
+Ok, so in column O let's head this column
+with probabilities.
+
+00:21:11.680 --> 00:21:21.680
+And in O2 we type the formula, sorry in O3
+we type the formula for probabilities
+which is just the frequency, the number of
+days within this range.
+
+00:21:21.680 --> 00:21:31.680
+So that's M3 divided by the total number
+of trading days, that's the count in our
+descriptive statistics which is U16.
+
+00:21:31.680 --> 00:21:33.680
+And that will give us a percentage.
+
+00:21:33.680 --> 00:21:47.680
+But before we enter this formula into this
+cell we're going to press F4 which puts
+these dollar signs around the denominator
+of the equation when our cursor is on the
+denominator.
+
+00:21:47.680 --> 00:22:09.680
+It fixes the cell that your cursor is
+within and when I pressed F4 just then it
+fixed the denominator which basically will
+allow us to drag down the formula, copy
+the formula down to the cells below and it
+will just move the numerator down
+appropriately but it won't change this
+cell, the denominator.
+
+00:22:09.680 --> 00:22:17.680
+Ok, so if we just press enter and then
+select that cell again and drag this
+formula down.
+
+00:22:17.680 --> 00:22:24.680
+And while that's still selected if we
+right click within that selection and
+format the cells so that their percentages
+are displayed as percentages.
+
+00:22:24.680 --> 00:22:39.680
+Ok, so we can see for example that 5.64%
+of our data, of our daily return values
+lie within minus 1.5 to minus 1.1%.
+
+00:22:39.680 --> 00:22:43.680
+Ok, so that we can interpret all these
+probabilities like that.
+
+00:22:43.680 --> 00:23:02.680
+So basically for this first value that
+would be 2.23% of our return values lie
+lower than minus 2% so less than or equal
+to minus 2%.
+
+00:23:02.680 --> 00:23:23.680
+Another way to understand and interpret
+these probabilities a bit more easily is
+if we display them in cumulative
+probabilities which will allow us to
+analyze sections of the data.
+
+00:23:23.680 --> 00:23:38.680
+So if we head column P, so column P, so
+column P, cell P2 and we put cumulative
+probabilities, adjust the column width
+appropriately.
+
+00:23:38.680 --> 00:23:44.680
+And this time in the first cell P3 we just
+type equal to O3.
+
+00:23:44.680 --> 00:24:03.680
+In cell P4 we type equal to P3 plus O4 and
+then we can copy this formula down in cell
+P4 and this will give us our cumulative
+probability distribution.
+
+00:24:03.680 --> 00:24:13.680
+Ok, so what is meaning when we can
+interpret this a bit better than our
+normal probabilities column is because we
+can start saying things like
+
+00:24:13.680 --> 00:24:23.680
+10.56% of the data lies with the return of
+less than minus 1%.
+
+00:24:23.680 --> 00:24:30.680
+Ok, so 10.5% of the time the S&P 500
+yields returns of less than minus 1%.
+
+00:24:30.680 --> 00:24:38.680
+And you can turn that on its head and say
+that 90% of the time the S&P 500 yields a
+return of greater than minus 1%.
+
+00:24:38.680 --> 00:24:45.680
+So you can kind of interpret these how you
+like and manipulate it how you like.
+
+00:24:45.680 --> 00:24:51.680
+Ok, so let's go ahead and tidy the
+spreadsheet up a little bit now.
+
+00:24:51.680 --> 00:24:57.680
+If we just tidy these values up that we've
+just been looking at, we'll create borders
+around these cells.
+
+00:24:57.680 --> 00:25:14.680
+So if we select cell L2 down to P12 and
+then go to the home tab on the ribbon and
+with this range still selected, go to the
+borders drop down and select all borders.
+
+00:25:14.680 --> 00:25:18.680
+That will give borders around those cells
+and we'll move the graph to the right hand
+side.
+
+00:25:18.680 --> 00:25:23.680
+So let's zoom out the spreadsheet, move
+the graph to the right hand side before we
+continue.
+
+00:25:23.680 --> 00:25:27.680
+So our spreadsheet looks a little better.
+
+00:25:27.680 --> 00:25:43.680
+Ok, so we've basically done, considered
+some basic statistics and got a basic
+understanding of how our distribution
+works using the tools that Excel has given
+us so far.
+
+00:25:43.680 --> 00:25:51.680
+But what we can do is manipulate this data
+further to get a real in-depth
+understanding of what's going on.
+
+00:25:51.680 --> 00:25:58.680
+And we'll do that by filtering the returns
+column and then analysing subsets of data.
+
+00:25:58.680 --> 00:26:06.680
+So before we continue, let's add three
+rows to the top of the spreadsheet to
+create a little bit more space.
+
+00:26:06.680 --> 00:26:15.680
+So we just click on row 1 on the left hand
+side and right click, click insert, 1, 2
+and 3.
+
+00:26:15.680 --> 00:26:25.680
+And then what we can do is, once we've
+filtered these returns, we'll look at the
+average of a subset.
+
+00:26:25.680 --> 00:26:29.680
+So first of all, let's add the filter to
+the returns column.
+
+00:26:29.680 --> 00:26:39.680
+Ok, so we click on cell H4, the top of the
+returns column, and go to data, the data
+tab on the ribbon, and select filter.
+
+00:26:39.680 --> 00:26:53.680
+And this is applied drop down arrows to
+all the columns here, A to H, which allows
+us to filter and sort all these columns by
+any of these date, open, high, low,
+returns, whatever, any of those.
+
+00:26:53.680 --> 00:27:01.680
+So for example, we could change all this
+data from newest to oldest to oldest in
+terms of date.
+
+00:27:01.680 --> 00:27:04.680
+So that's turned the dates now upside
+down.
+
+00:27:04.680 --> 00:27:11.680
+So now we've got the return, the close,
+the open, all of that data for 1962 at the
+top.
+
+00:27:11.680 --> 00:27:16.680
+Ok, so we'll just go and undo that, change
+it back to newest to oldest.
+
+00:27:16.680 --> 00:27:20.680
+So now we know we can filter our returns.
+
+00:27:20.680 --> 00:27:25.680
+What we'll start by doing is working out
+the average of subsets of returns.
+
+00:27:25.680 --> 00:27:34.680
+So to do that we need to create a cell
+that works out the average of this returns
+column when it's filtered and sorted and
+we've done whatever we want to.
+
+00:27:34.680 --> 00:27:48.680
+So in cell K2, let's type average return
+and adjust the column width.
+
+00:27:48.680 --> 00:28:07.680
+And in L2, we type the formula to work out
+the average return for the subset, which
+is subtotal, brackets, one for the
+average, comma, the reference values,
+which are the returns column, which is now
+H5, down to H12807.
+
+00:28:07.680 --> 00:28:12.680
+And then we close the brackets in the
+formula bar up here and press enter.
+
+00:28:12.680 --> 00:28:27.680
+Ok, and that's given us in L2 the average
+return for our entire unfiltered data set,
+which you'll notice is obviously the same
+as our mean as a data set because average
+and mean are the same thing.
+
+00:28:27.680 --> 00:28:33.680
+It's displayed slightly differently
+because of rounding, but they are the same
+values.
+
+00:28:33.680 --> 00:28:46.680
+But what will happen is when we change the
+returns column, this average return will
+change here, but the mean, the descriptive
+statistics, these are all fixed from our
+total data set, so these won't change.
+
+00:28:46.680 --> 00:28:59.680
+Ok, so what might be useful is if we
+understand the average positive and
+negative returns of our data set.
+
+00:28:59.680 --> 00:29:15.680
+Ok, so to do that we filter the returns
+column, so we click on this filter here,
+number filters, and what we're going to do
+is go to greater than to filter them.
+
+00:29:15.680 --> 00:29:19.680
+We put greater than zero and that will
+give us only positive returns.
+
+00:29:19.680 --> 00:29:22.680
+Ok, so that's unfiltered.
+
+00:29:22.680 --> 00:29:34.680
+Ok, so before we continue actually, let's
+just name cell M1 avpos for average
+positive return and M2 avneg for average
+negative return.
+
+00:29:34.680 --> 00:29:42.680
+Ok, and as you notice when I filtered
+those returns it actually hid a load of
+rows because it's taken out all the zeros
+and negative return values.
+
+00:29:42.680 --> 00:29:52.680
+So for example we go from row 5 to 8 and
+it's affected the rest of our spreadsheet,
+but don't worry, when you clear the filter
+in the returns column that will all go
+back to normal.
+
+00:29:52.680 --> 00:30:01.680
+What you also will notice is the average
+return in cell L2 has changed to the
+average return for all positive returns.
+
+00:30:01.680 --> 00:30:08.680
+So what we can do, because this keeps
+changing to our average return for
+whatever we display, whatever we filter,
+
+00:30:08.680 --> 00:30:23.680
+we'll copy this by right clicking on the
+cell, copy, and we'll paste it into N1
+representing the average positive return
+as a value which is fixed and so won't
+change.
+
+00:30:23.680 --> 00:30:34.680
+And we can do the same for negative, so we
+go to number filters in the returns
+column, less than zero, ok.
+
+00:30:34.680 --> 00:30:46.680
+And now we've got the average negative
+return in L2, again we're going to copy
+that and we're going to paste it as a
+value into cell N2.
+
+00:30:46.680 --> 00:30:54.680
+Ok, so what we can do now is calculate the
+number of days that the S&P 500 has been
+up and down
+
+00:30:54.680 --> 00:30:59.680
+and calculate that as a percentage of the
+total days that we've got in our data set
+as well.
+
+00:30:59.680 --> 00:31:13.680
+So before we continue, we need to create a
+cell that can do a similar thing to this
+average return, but just for count, so it
+just counts the subset of return data.
+
+00:31:13.680 --> 00:31:19.680
+Ok, so in, actually before we continue
+we'll just unfilter this returns column.
+
+00:31:19.680 --> 00:31:38.680
+Ok, and then in cell T2 what we'll do is
+create a cell called count and then in U2
+we'll type in the formula for typing the
+count of the subset of returns.
+
+00:31:38.680 --> 00:31:48.680
+So that will be subtotal, similar to
+before, similar to the average return,
+brackets 2 this time for count, you can
+see that from the drop down menu here.
+
+00:31:48.680 --> 00:31:59.680
+And then comma, the reference numbers
+which are the returns column, so that's
+H5, press control shift down, select the
+whole returns column, close the brackets,
+press enter.
+
+00:31:59.680 --> 00:32:07.680
+Ok, so that's created the count for our
+subset of data, for our unfiltered data
+because we removed the filter beforehand.
+
+00:32:07.680 --> 00:32:13.680
+And we can verify that because it's the
+same as our descriptive statistics count
+down here.
+
+00:32:13.680 --> 00:32:17.680
+And this will change when we change our
+filter.
+
+00:32:17.680 --> 00:32:24.680
+So, let's add another column to the top of
+the spreadsheet.
+
+00:32:24.680 --> 00:32:30.680
+And type frequency into cell O1.
+
+00:32:30.680 --> 00:32:38.680
+And frequency percent into P1.
+
+00:32:38.680 --> 00:32:47.680
+And then, what we'll do is work out the
+number of days that the S&P 500 has been
+positive in our data set.
+
+00:32:47.680 --> 00:32:53.680
+So let's filter the returns again to
+positive, number filters, greater than 0.
+
+00:32:53.680 --> 00:32:55.680
+Ok.
+
+00:32:55.680 --> 00:32:59.680
+This has changed the count to 6707.
+
+00:32:59.680 --> 00:33:02.680
+So we just put in that, 6707.
+
+00:33:02.680 --> 00:33:07.680
+You can copy and paste in with the values
+like I did before or just type it because
+it's quite easy this time.
+
+00:33:07.680 --> 00:33:08.680
+Ok.
+
+00:33:08.680 --> 00:33:13.680
+And the same for negative, so less than
+this time.
+
+00:33:13.680 --> 00:33:14.680
+Less than 0.
+
+00:33:14.680 --> 00:33:15.680
+Ok.
+
+00:33:15.680 --> 00:33:20.680
+And this is 6006 days.
+
+00:33:20.680 --> 00:33:26.680
+So obviously that's going to be missing
+some days because there will be some days
+that are 0.
+
+00:33:26.680 --> 00:33:28.680
+So let's count those as well.
+
+00:33:28.680 --> 00:33:41.680
+So in cell N4, we'll add 0 as a value and
+work out the frequency of that by
+filtering the returns column to equals 0.
+
+00:33:41.680 --> 00:33:42.680
+Ok.
+
+00:33:42.680 --> 00:33:44.680
+And we've got a count of 90.
+
+00:33:44.680 --> 00:33:48.680
+So we'll just put in 90 in cell O4.
+
+00:33:48.680 --> 00:33:49.680
+Ok.
+
+00:33:49.680 --> 00:33:53.680
+So clear the filter from returns.
+
+00:33:53.680 --> 00:34:01.680
+So as a percentage, to work out the
+percentage of a number of days that are
+positive, negative and 0.
+
+00:34:01.680 --> 00:34:13.680
+So for positive in P2, we type equals O2
+divided by U20.
+
+00:34:13.680 --> 00:34:18.680
+So that is the number of positive days in
+our dataset divided by the total number of
+days.
+
+00:34:18.680 --> 00:34:25.680
+And we'll fix cell U20 so we can copy down
+this formula again.
+
+00:34:25.680 --> 00:34:26.680
+Ok.
+
+00:34:26.680 --> 00:34:28.680
+So we can copy this down.
+
+00:34:28.680 --> 00:34:37.680
+And with this still selected, we'll right
+click within the selection format cells
+and change that percentage to a percentage
+with two decimal places.
+
+00:34:37.680 --> 00:34:38.680
+Ok.
+
+00:34:38.680 --> 00:34:53.680
+So we can see now 52% of our days the S&P
+500 has yielded positive return, 46.9,
+negative and almost or close to 1% it's
+flat.
+
+00:34:53.680 --> 00:35:13.680
+So what we can do now is we're going to
+work out the average return if you were to
+predict when the S&P 500 is up and you go
+long on all those days.
+
+00:35:13.680 --> 00:35:17.680
+You work out the average daily return that
+you'd get over this entire period.
+
+00:35:17.680 --> 00:35:18.680
+Ok.
+
+00:35:18.680 --> 00:35:35.680
+So if we type average return and then in
+cell Q2 we type equals this average
+positive return times by the frequency.
+
+00:35:35.680 --> 00:35:36.680
+Press enter and we do the same.
+
+00:35:36.680 --> 00:35:40.680
+We can copy that down to the negative
+cell.
+
+00:35:40.680 --> 00:35:47.680
+So we've got the average negative and
+average positive return.
+
+00:35:47.680 --> 00:35:52.680
+Should you, so I'll explain that a little
+better.
+
+00:35:52.680 --> 00:36:04.680
+So this cell Q2, this refers to the
+average positive daily return that you
+would get if you predicted all the days
+when the S&P 500 would be up and you
+invested in those.
+
+00:36:04.680 --> 00:36:08.680
+And you were flat all the other days in
+this entire period.
+
+00:36:08.680 --> 00:36:12.680
+Your average return per day would be this.
+
+00:36:12.680 --> 00:36:14.680
+And the same for negative.
+
+00:36:14.680 --> 00:36:15.680
+Ok.
+
+00:36:15.680 --> 00:36:19.680
+So let's just change all these to
+percentage values now.
+
+00:36:19.680 --> 00:36:22.680
+So cell N2 and N3 select them.
+
+00:36:22.680 --> 00:36:23.680
+Format cells.
+
+00:36:23.680 --> 00:36:24.680
+Right click in the selection.
+
+00:36:24.680 --> 00:36:25.680
+Format cells.
+
+00:36:25.680 --> 00:36:26.680
+Change the percentage.
+
+00:36:26.680 --> 00:36:27.680
+Two decimal places.
+
+00:36:27.680 --> 00:36:32.680
+And the same for these average returns
+here.
+
+00:36:32.680 --> 00:36:52.680
+So what this is telling us, these average
+returns are that even if you predict the
+positives and invest in only those days
+and go flat the rest of the time or don't
+invest the rest of the time, the margins,
+the profit margins you work with are still
+pretty small.
+
+00:36:52.680 --> 00:36:53.680
+Ok.
+
+00:36:53.680 --> 00:37:07.680
+And because we're trading daily and these
+are our sort of average returns that we
+get daily even if we predicted it right,
+they're going to get wiped out by things
+like transaction costs.
+
+00:37:07.680 --> 00:37:13.680
+They're not, it's almost not worth trading
+daily when you have this, when you have a
+normal amount of volatility.
+
+00:37:13.680 --> 00:37:14.680
+Ok.
+
+00:37:14.680 --> 00:37:17.680
+So that's what these values here are
+telling us.
+
+00:37:17.680 --> 00:37:30.680
+The final procedure that we're going to
+carry out on this spreadsheet is to find
+out how many trading days lie within
+different standard deviations of the mean
+in our data set.
+
+00:37:30.680 --> 00:37:31.680
+Ok.
+
+00:37:31.680 --> 00:37:37.680
+So what we need to do is, in fact first
+we'll clear some space on the spreadsheet.
+
+00:37:37.680 --> 00:37:42.680
+So if we just add another two columns into
+the spreadsheet.
+
+00:37:42.680 --> 00:37:53.680
+And what we're going to do is calculate
+the standard deviation returns values for
+one, two and three standard deviations
+above and below the mean.
+
+00:37:53.680 --> 00:37:54.680
+Ok.
+
+00:37:54.680 --> 00:37:55.680
+Ok.
+
+00:37:55.680 --> 00:38:09.680
+So in cell W2 type std dev standard
+deviation and one, two and three in x,
+two, y, two and z, two respectively.
+
+00:38:09.680 --> 00:38:17.680
+And then upper that represents the one
+standard deviation, one, two and three
+standard deviations above the mean.
+
+00:38:17.680 --> 00:38:23.680
+And then another row lower for one, two
+and three standard deviations below the
+mean.
+
+00:38:23.680 --> 00:38:26.680
+So that was in cell W3 and cell W4.
+
+00:38:26.680 --> 00:38:27.680
+Ok.
+
+00:38:27.680 --> 00:38:37.680
+So to work out these values, these return
+values, what we do, in cell X3 we'll type
+equals the mean.
+
+00:38:37.680 --> 00:38:38.680
+Ok.
+
+00:38:38.680 --> 00:38:39.680
+So we always start with the mean.
+
+00:38:39.680 --> 00:38:50.680
+And then for one standard deviation above
+the mean, because we're in the upper
+bound, we just plus the standard
+deviation.
+
+00:38:50.680 --> 00:38:51.680
+Ok.
+
+00:38:51.680 --> 00:38:57.680
+And for the lower bound, we start with the
+mean and we minus one standard deviation.
+
+00:38:57.680 --> 00:38:58.680
+Ok.
+
+00:38:58.680 --> 00:39:04.680
+In the next column, we're applying that
+method to two standard deviations.
+
+00:39:04.680 --> 00:39:10.680
+So we start with the mean and we add two
+times the standard deviation.
+
+00:39:10.680 --> 00:39:19.680
+And for the lower bound, we start with the
+mean and we minus two times the standard
+deviation.
+
+00:39:19.680 --> 00:39:23.680
+And the same for the last column.
+
+00:39:23.680 --> 00:39:28.680
+So equals the mean plus three times the
+standard deviation.
+
+00:39:28.680 --> 00:39:34.680
+And the mean minus three times the
+standard deviation.
+
+00:39:34.680 --> 00:39:35.680
+Okay.
+
+00:39:35.680 --> 00:39:46.680
+So now we've got the returns values that
+represent one, two and three standard
+deviations above and below the mean.
+
+00:39:46.680 --> 00:39:58.680
+So for now, we're going to keep these as
+decimal displays because we need to input
+them into our return filters.
+
+00:39:58.680 --> 00:39:59.680
+Sorry.
+
+00:39:59.680 --> 00:40:03.680
+Return filters over here in a minute.
+
+00:40:03.680 --> 00:40:04.680
+Okay.
+
+00:40:04.680 --> 00:40:12.680
+So we're going to find how many trading
+days lie between yield returns between
+these values.
+
+00:40:12.680 --> 00:40:13.680
+Okay.
+
+00:40:13.680 --> 00:40:24.680
+So we'll find out how many trading days in
+our empirical distribution lie between
+roughly that's plus one percent and minus
+one percent, which is one standard
+deviation.
+
+00:40:24.680 --> 00:40:28.680
+And then we'll do the same for two
+standard deviations and three standard
+deviations.
+
+00:40:28.680 --> 00:40:35.680
+And we'll compare it to how many days a
+normal distribution would give us with
+those standard deviations.
+
+00:40:35.680 --> 00:40:36.680
+Okay.
+
+00:40:36.680 --> 00:40:45.680
+So in AB2, cell AB2, we'll type standard
+deviation again.
+
+00:40:45.680 --> 00:40:49.680
+And this time one, two and three going
+down the column.
+
+00:40:49.680 --> 00:40:51.680
+And then we type actual.
+
+00:40:51.680 --> 00:41:01.680
+So this will be that column for the actual
+number of days in our empirical
+distribution that lie between these bounds
+for one, two and three standard
+deviations.
+
+00:41:01.680 --> 00:41:02.680
+Okay.
+
+00:41:02.680 --> 00:41:06.680
+And we'll compare that to what a normal
+distribution would be.
+
+00:41:06.680 --> 00:41:13.680
+And then we'll compare the percentage of
+these values as well.
+
+00:41:13.680 --> 00:41:14.680
+Okay.
+
+00:41:14.680 --> 00:41:24.680
+So that's AC3 is actual, AD3 normal, AE3
+actual percent, and AF3 normal percent.
+
+00:41:24.680 --> 00:41:26.680
+So let's filter our returns column.
+
+00:41:26.680 --> 00:41:29.680
+I'm just going to zoom out the spreadsheet
+a little bit.
+
+00:41:29.680 --> 00:41:35.680
+Filter our returns column between these
+standard deviation returns values.
+
+00:41:35.680 --> 00:41:49.680
+So if we click the filter on the returns
+column and we go to between, we want to
+give returns that are greater than or
+equal to our lower bound for one standard
+deviation.
+
+00:41:49.680 --> 00:41:50.680
+So that's this value here.
+
+00:41:50.680 --> 00:42:03.680
+So we can type in minus 0.00972 and less
+than our upper bound, which is 0.01031.
+
+00:42:03.680 --> 00:42:04.680
+Press okay.
+
+00:42:04.680 --> 00:42:05.680
+Filter that.
+
+00:42:05.680 --> 00:42:10.680
+We see we've got 10,062 days that lie
+within those values.
+
+00:42:10.680 --> 00:42:17.680
+So we just input that into cell AC3,
+10,062.
+
+00:42:17.680 --> 00:42:18.680
+Okay.
+
+00:42:18.680 --> 00:42:23.680
+And we do the same for the two standard
+deviations.
+
+00:42:23.680 --> 00:42:25.680
+So filter between.
+
+00:42:25.680 --> 00:42:30.680
+This time we're using these upper and
+lower bounds.
+
+00:42:30.680 --> 00:42:40.680
+So below, sorry, greater than 0.01974 and
+less than 0.02032.
+
+00:42:40.680 --> 00:42:42.680
+Filter.
+
+00:42:42.680 --> 00:42:44.680
+So that's 12,208.
+
+00:42:44.680 --> 00:42:46.680
+You can see that in cell U5.
+
+00:42:46.680 --> 00:42:51.680
+That's the count that changes with our
+subset of returns.
+
+00:42:51.680 --> 00:42:53.680
+So 12,208.
+
+00:42:53.680 --> 00:43:00.680
+And we'll do the same for the three
+standard deviations.
+
+00:43:00.680 --> 00:43:14.680
+Minus 0.02975 and 0.03033.
+
+00:43:14.680 --> 00:43:21.680
+So we put that in here.
+
+00:43:21.680 --> 00:43:22.680
+Okay.
+
+00:43:22.680 --> 00:43:28.680
+So let's go to the normal distribution
+now.
+
+00:43:28.680 --> 00:43:33.680
+And we're going to start from what we know
+about our normal distribution is we know
+the
+
+00:43:33.680 --> 00:43:42.680
+percent of the frequencies, the percentage
+trading days that should lie between one
+standard deviation
+
+00:43:42.680 --> 00:43:44.680
+from the mean and two and three.
+
+00:43:44.680 --> 00:43:45.680
+Okay.
+
+00:43:45.680 --> 00:43:57.680
+So in a normal distribution, 68.2 percent
+of trading days will lie within one
+standard deviation
+
+00:43:57.680 --> 00:43:59.680
+from the mean.
+
+00:43:59.680 --> 00:44:04.680
+95.4 percent of trading days will lie
+within two standard deviations from the
+mean in terms
+
+00:44:04.680 --> 00:44:07.680
+of their returns.
+
+00:44:07.680 --> 00:44:16.680
+And within three standard deviations from
+the mean, 99.8 percent of trading days
+will occur.
+
+00:44:16.680 --> 00:44:17.680
+Okay.
+
+00:44:17.680 --> 00:44:23.680
+So let's fill out the actual number of
+days given our total count.
+
+00:44:23.680 --> 00:44:25.680
+12,803 days in our data set.
+
+00:44:25.680 --> 00:44:35.680
+We can work out the normal number of days
+that is the number of days predicted by a
+normal distribution
+
+00:44:35.680 --> 00:44:37.680
+that would lie within one, two and three
+standard deviations.
+
+00:44:37.680 --> 00:44:47.680
+So that's just in AD3 we type equals the
+percent that would lie within one standard
+deviation times the count.
+
+00:44:47.680 --> 00:44:51.680
+And we'll fix the count cell.
+
+00:44:51.680 --> 00:44:54.680
+Press F4 around U22.
+
+00:44:54.680 --> 00:44:57.680
+And then we can apply this down.
+
+00:44:57.680 --> 00:45:08.680
+And we can see that we've got 12,777 days
+that a normal distribution predicts will
+lie within three standard deviations from
+the mean.
+
+00:45:08.680 --> 00:45:09.680
+Okay.
+
+00:45:09.680 --> 00:45:12.680
+Given a data set of 12,803 days.
+
+00:45:12.680 --> 00:45:17.680
+So let's just convert these actual days to
+percent as well.
+
+00:45:17.680 --> 00:45:26.680
+So this is the actual number of days
+within each standard deviation from the
+mean divided by the count.
+
+00:45:26.680 --> 00:45:27.680
+Okay.
+
+00:45:27.680 --> 00:45:29.680
+So AC3 divided by the count.
+
+00:45:29.680 --> 00:45:32.680
+We'll fix this cell again as a reference
+so we can copy it down.
+
+00:45:32.680 --> 00:45:34.680
+Copy this down.
+
+00:45:34.680 --> 00:45:37.680
+And with that still selected we'll format
+these cells as well.
+
+00:45:37.680 --> 00:45:40.680
+I'll display them in a percentage.
+
+00:45:40.680 --> 00:45:41.680
+Okay.
+
+00:45:41.680 --> 00:45:42.680
+So.
+
+00:45:42.680 --> 00:45:57.680
+I think before we interpret these last
+results let's select the cells X3 to Z4
+and change all these standard deviations
+to in terms of percent as well.
+
+00:45:57.680 --> 00:45:59.680
+With two decimal places is fine.
+
+00:45:59.680 --> 00:46:00.680
+Right.
+
+00:46:00.680 --> 00:46:01.680
+So.
+
+00:46:01.680 --> 00:46:02.680
+Let's do these first.
+
+00:46:02.680 --> 00:46:03.680
+So.
+
+00:46:03.680 --> 00:46:04.680
+Our standard deviations.
+
+00:46:04.680 --> 00:46:11.680
+One standard deviation from the mean
+represents roughly an upper bound of one
+percent and a lower bound of minus one
+percent.
+
+00:46:11.680 --> 00:46:12.680
+Okay.
+
+00:46:12.680 --> 00:46:15.680
+Which means two standard deviations will
+be roughly that.
+
+00:46:15.680 --> 00:46:16.680
+Roughly two.
+
+00:46:16.680 --> 00:46:17.680
+Times that.
+
+00:46:17.680 --> 00:46:18.680
+And three.
+
+00:46:18.680 --> 00:46:19.680
+Three times that.
+
+00:46:19.680 --> 00:46:20.680
+So.
+
+00:46:20.680 --> 00:46:26.680
+In terms of where these standard deviation
+values lie on this histogram.
+
+00:46:26.680 --> 00:46:32.680
+We're looking at an upper bound of one
+percent and a lower bound of minus one
+percent.
+
+00:46:32.680 --> 00:46:39.680
+So we're looking at from this bar here to
+this bar here is one standard deviation.
+
+00:46:39.680 --> 00:46:40.680
+Okay.
+
+00:46:40.680 --> 00:46:46.680
+Which in our empirical distribution
+accounts for almost 80 percent of our
+data.
+
+00:46:46.680 --> 00:46:51.680
+Whereas in a normal distribution it's
+something like 60, 68, ten percent lower.
+
+00:46:51.680 --> 00:47:00.680
+This means that our empirical distribution
+there's many more trading days that lie
+closer to the mean.
+
+00:47:00.680 --> 00:47:01.680
+Okay.
+
+00:47:01.680 --> 00:47:03.680
+Which is close to zero as well.
+
+00:47:03.680 --> 00:47:06.680
+We should point out it's close to zero.
+
+00:47:06.680 --> 00:47:08.680
+So that means our distribution is more
+peaked.
+
+00:47:08.680 --> 00:47:12.680
+Which is predicted by our kurtosis value
+that we discussed earlier.
+
+00:47:12.680 --> 00:47:14.680
+It's more peaked than a normal
+distribution.
+
+00:47:15.680 --> 00:47:16.680
+Okay.
+
+00:47:16.680 --> 00:47:23.680
+And as we go further out and we look at
+the standard deviations that are deeper
+into the tails of the distribution.
+
+00:47:23.680 --> 00:47:30.680
+We can see that instead of our empirical
+distribution accounting for more than the
+normal distribution.
+
+00:47:30.680 --> 00:47:32.680
+It starts accounting for less.
+
+00:47:32.680 --> 00:47:39.680
+By the time we get to three standard
+deviations our empirical distribution
+accounts for 98.7.
+
+00:47:39.680 --> 00:47:42.680
+Whereas the normal distribution accounts
+for a percent more.
+
+00:47:42.680 --> 00:47:48.680
+As you go further and further out this
+difference will be more significant.
+
+00:47:48.680 --> 00:47:56.680
+So basically what we're saying is our
+empirical asset distributions tend to have
+fatter tails.
+
+00:47:56.680 --> 00:47:59.680
+More extreme movements than predicted by
+normality.
+
+00:47:59.680 --> 00:48:00.680
+Okay.
+
+00:48:00.680 --> 00:48:04.680
+So what does this all mean?
+
+00:48:04.680 --> 00:48:05.680
+Okay.
+
+00:48:05.680 --> 00:48:07.680
+So two key things.
+
+00:48:07.680 --> 00:48:08.680
+Okay.
+
+00:48:08.680 --> 00:48:09.680
+First thing.
+
+00:48:09.680 --> 00:48:21.680
+The fact that 80% of the time the S&P
+barely moves makes it a lot harder to
+generate returns.
+
+00:48:21.680 --> 00:48:22.680
+Okay.
+
+00:48:22.680 --> 00:48:24.680
+Especially when you account for
+transaction costs.
+
+00:48:24.680 --> 00:48:30.680
+It means that our opportunities are
+minimal when we're looking at daily
+trading.
+
+00:48:30.680 --> 00:48:33.680
+Especially when the volatility's are low.
+
+00:48:33.680 --> 00:48:34.680
+Okay.
+
+00:48:34.680 --> 00:48:38.680
+And that's given by these average returns
+that we looked at over here as well.
+
+00:48:38.680 --> 00:48:39.680
+The second thing is.
+
+00:48:39.680 --> 00:48:41.680
+Just something to be aware of.
+
+00:48:41.680 --> 00:48:50.680
+Is that by analyzing this distribution of
+returns we can understand that there are
+greater risks in the tails.
+
+00:48:50.680 --> 00:48:51.680
+In the extremities of the distribution.
+
+00:48:51.680 --> 00:48:57.680
+So they're actually more probable than you
+might think.
+
+00:48:57.680 --> 00:48:58.680
+Okay.
+
+00:48:58.680 --> 00:49:04.680
+So that means there are likely to be days
+when you'd be wiped out of your position.
+
+00:49:04.680 --> 00:49:05.680
+Of your account.
+
+00:49:05.680 --> 00:49:06.680
+Okay.
+
+00:49:06.680 --> 00:49:18.680
+So roughly one in a hundred days we've got
+a fairly significant move of more than 3%.
+
+00:49:18.680 --> 00:49:25.680
+Which could wipe you out if you've got the
+position on the wrong way.
+
+00:49:25.680 --> 00:49:26.680
+Okay.
+
+00:49:26.680 --> 00:49:28.680
+So they're the two major things.
+
+00:49:28.680 --> 00:49:36.680
+So the key thing we need to understand is
+that this basically implies that
+opportunities are minimal when there's low
+volatility.
+
+00:49:36.680 --> 00:49:44.680
+The other thing just to keep in the back
+of your mind is that there is greater risk
+than predicted by normal distributions.
+
+00:49:44.680 --> 00:49:56.680
+And we should also point out that this
+spreadsheet, you can apply this method to
+any asset over any period, any frequency.
+
+00:49:56.680 --> 00:49:59.680
+So one week, like weekly, monthly, yearly
+data.

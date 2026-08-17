@@ -1,0 +1,3940 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.98,
+      "text": "Okay, so we have officially left the bond market, the money market, where we obviously identified a number of leading indicators. We are now going to move on to more leading indicators. We're going to move on to surveys. So welcome to video number seven, where we're going to look at now the ISM Manufacturing Report on Business Survey, leading to surveys."
+    },
+    {
+      "start": 29.98,
+      "end": 59.96,
+      "text": "Leading indicator number three. So let's get into this. What have we learned so far? The leading indicators that we've covered so far, real interest rates, the yield curve, corporate credit spreads, and M2 money supply growth as an accessory to those leading indicators. And also, if you've done the IPLT video series, we also added the fix here as well."
+    },
+    {
+      "start": 59.96,
+      "end": 89.94,
+      "text": "So, so far in the PTM video series, what we've looked at are indicators in the money markets and the professional side of the industry. So the professional market, so the collective of individuals and institutions that make up the professional side. We use these leading indicators to make decisions in how to allocate capital across asset classes. Also, the Federal Reserve is"
+    },
+    {
+      "start": 89.94,
+      "end": 119.92,
+      "text": "very important. The Fed also monitors these indicators every day and uses them as instruments to make decisions in how they would like capital to be distributed across asset classes and throughout the economy. For want of a better word, you know, we've been using this word a lot. They manipulate the leading indicators as, and use them as leading indicators."
+    },
+    {
+      "start": 119.92,
+      "end": 149.9,
+      "text": "So let's say, let's say, let's say, let's say, let's say, let's say this."
+    },
+    {
+      "start": 149.9,
+      "end": 160.02,
+      "text": "two parties, two entities in the private sector, businesses and consumers. And the decisions that"
+    },
+    {
+      "start": 160.02,
+      "end": 168.3,
+      "text": "they make are affected by a number of things. Businesses, for example, when it comes to the"
+    },
+    {
+      "start": 168.3,
+      "end": 174.32,
+      "text": "relative price of money, what are we talking about here? Well, we're talking about the corporate"
+    },
+    {
+      "start": 174.32,
+      "end": 182.32,
+      "text": "bond market, short term and long term borrowing, and the cost of that borrowing and the cost"
+    },
+    {
+      "start": 182.32,
+      "end": 191.66,
+      "text": "relative long term versus short term. Businesses obviously make decisions at a corporate level"
+    },
+    {
+      "start": 191.66,
+      "end": 200.74,
+      "text": "based on the relative price of money. Additionally, consumers, they are making decisions based on"
+    },
+    {
+      "start": 200.74,
+      "end": 209.86,
+      "text": "long term cost of money, and short term cost of money, and relative to each other. So the"
+    },
+    {
+      "start": 209.86,
+      "end": 218.08,
+      "text": "absolute level and the relative level. So for example, short term loans at the bank, car"
+    },
+    {
+      "start": 218.08,
+      "end": 226.74,
+      "text": "loans, mortgages, long term loans, etc, etc. What they're also doing, businesses in particular,"
+    },
+    {
+      "start": 226.74,
+      "end": 236.58,
+      "text": "is they are making decisions based on the risk across asset classes. Why? Because they're"
+    },
+    {
+      "start": 236.58,
+      "end": 244.18,
+      "text": "running a business, they're running a corporation, and they have a balance sheet. So the decisions"
+    },
+    {
+      "start": 244.18,
+      "end": 253.74,
+      "text": "on how businesses fund their business operations are affected by the relative risk across asset"
+    },
+    {
+      "start": 253.74,
+      "end": 275.74,
+      "text": "marketplaces, and the relative risk across asset classes, and the relative risk across asset classes, and the cost of debt. So the price or level of interest is the price or level of interest. So the price or level of interest is the price or cost or level of interest. So the price or level of interest is the price or cost or level of interest. So the price or level of interest is the price or cost or level of interest. So the price or level of interest is the price or cost or level of interest to service debt in order to raise money relative to raising money."
+    },
+    {
+      "start": 275.74,
+      "end": 284.38,
+      "text": "raise money relative to raising money via the equity market and the relative cost between the two."
+    },
+    {
+      "start": 285.66,
+      "end": 291.34,
+      "text": "Now, we are going to be concentrating on businesses for the next few videos."
+    },
+    {
+      "start": 292.46,
+      "end": 302.3,
+      "text": "And if you recall from video five, we previously covered how businesses are directly affected by"
+    },
+    {
+      "start": 302.3,
+      "end": 308.54,
+      "text": "the price or cost of money when we discussed corporate credit spreads and aggregate corporate"
+    },
+    {
+      "start": 308.54,
+      "end": 315.26,
+      "text": "bond index spreads. So here, rather than repeat what we've already looked at earlier,"
+    },
+    {
+      "start": 316.38,
+      "end": 322.3,
+      "text": "to remind yourself, just go back and read over the following slides that are on the screen here"
+    },
+    {
+      "start": 323.1,
+      "end": 330.14,
+      "text": "from video five, just to refresh your memory. And if you recall from those slides,"
+    },
+    {
+      "start": 330.7,
+      "end": 339.18,
+      "text": "we learned that corporate bond indices, so the spread at which corporate bonds trade over"
+    },
+    {
+      "start": 339.9,
+      "end": 349.18,
+      "text": "the 10-year treasury, the risk-free rate, the spread is a predictor of expansionary and contractionary"
+    },
+    {
+      "start": 349.18,
+      "end": 357.58,
+      "text": "economic conditions, and also an indicator of economic risk. Now, let's think about this dynamic, because"
+    },
+    {
+      "start": 357.58,
+      "end": 367.26,
+      "text": "companies don't report every day, of course. They report publicly every quarter, similar to GDP,"
+    },
+    {
+      "start": 367.26,
+      "end": 374.14,
+      "text": "and earnings reports are backwards looking. So, the Q1 earnings report, for example,"
+    },
+    {
+      "start": 375.66,
+      "end": 384.78,
+      "text": "is not reported in Q1, it's reported after Q1. Businesses report quarterly and earnings reports are,"
+    },
+    {
+      "start": 385.5,
+      "end": 393.34,
+      "text": "by definition, a lagging indicator. Businesses themselves, however, in between their quarterly earnings"
+    },
+    {
+      "start": 393.34,
+      "end": 400.06,
+      "text": "reports, they witness the real economy every day in their daily sales and earnings."
+    },
+    {
+      "start": 401.18,
+      "end": 411.74,
+      "text": "They also, inside their own businesses, witness in real-time metrics that they measure and use to measure"
+    },
+    {
+      "start": 412.54,
+      "end": 417.58,
+      "text": "their business performance that are additional to sales and earnings."
+    },
+    {
+      "start": 418.94,
+      "end": 427.26,
+      "text": "And as traders and portfolio managers, we can get some really useful information on this stuff,"
+    },
+    {
+      "start": 427.82,
+      "end": 436.78,
+      "text": "publicly available in the market. We get feedback from companies on these measures,"
+    },
+    {
+      "start": 437.66,
+      "end": 448.62,
+      "text": "via surveys. And these surveys themselves, serve as an additional leading indicator to GDP expansion and"
+    },
+    {
+      "start": 448.62,
+      "end": 455.5,
+      "text": "contraction, and therefore, stock market direction and potential stock market returns."
+    },
+    {
+      "start": 457.1,
+      "end": 465.02,
+      "text": "Now, unlike the leading indicators that we've looked at so far in the PTM video series, so,"
+    },
+    {
+      "start": 465.98,
+      "end": 471.74,
+      "text": "interest rates, real interest rates, the yield curve, corporate credit spreads, and M2 money supply"
+    },
+    {
+      "start": 471.74,
+      "end": 480.46,
+      "text": "growth, business surveys themselves can't be directly manipulated by the Fed. And also, very obviously,"
+    },
+    {
+      "start": 481.1,
+      "end": 489.18,
+      "text": "a survey is not a tradable instrument, but they do provide us with a really good insight into the economy."
+    },
+    {
+      "start": 489.66,
+      "end": 496.54,
+      "text": "And we can use them as leading indicators to make trading decisions. So, to predict the future"
+    },
+    {
+      "start": 497.1,
+      "end": 502.94,
+      "text": "and use tradable instruments like equities to express our views of the future."
+    },
+    {
+      "start": 503.98,
+      "end": 511.58,
+      "text": "And surveys in conjunction with the money market indicators that we've been looking at so far are a"
+    },
+    {
+      "start": 511.58,
+      "end": 520.62,
+      "text": "really vital component of a trader's overall systematic process, because we're trying to figure out which way"
+    },
+    {
+      "start": 520.62,
+      "end": 528.46,
+      "text": "the macro wind is blowing, and therefore, which way money is flowing in the financial markets,"
+    },
+    {
+      "start": 528.46,
+      "end": 536.94,
+      "text": "and which way it's likely to flow in the future. And also, don't forget, the Fed is watching too."
+    },
+    {
+      "start": 536.94,
+      "end": 545.26,
+      "text": "The Fed will be looking at these surveys too. So, these surveys can be used by traders and PMs"
+    },
+    {
+      "start": 545.26,
+      "end": 550.06,
+      "text": "as a leading indicator or predictor of Federal Reserve activity."
+    },
+    {
+      "start": 551.34,
+      "end": 557.58,
+      "text": "Now, as I mentioned previously, we're going to be concentrating on looking at businesses in the next"
+    },
+    {
+      "start": 557.58,
+      "end": 567.42,
+      "text": "few videos, but we are going to look at a number of surveys that act as leading indicators to future"
+    },
+    {
+      "start": 567.42,
+      "end": 574.14,
+      "text": "economic growth, stock market direction, and potential returns in the stock market. The first one we're"
+    },
+    {
+      "start": 574.14,
+      "end": 582.22,
+      "text": "going to look at is the Institute of Supply Management, the ISM Manufacturing Report on Business."
+    },
+    {
+      "start": 583.02,
+      "end": 589.9,
+      "text": "And they release every month a Manufacturing Report on Business, the Purchasing Managers Index,"
+    },
+    {
+      "start": 590.54,
+      "end": 597.34,
+      "text": "on the first business day of each month. The link is on the screen. You can go to this link,"
+    },
+    {
+      "start": 597.34,
+      "end": 607.9,
+      "text": "and you can download the ISM release every month. So, we are looking here in this video at the manufacturing"
+    },
+    {
+      "start": 607.9,
+      "end": 619.42,
+      "text": "sector in the United States. The next video, we will be looking at the ISM Non Manufacturing Report on"
+    },
+    {
+      "start": 619.42,
+      "end": 626.86,
+      "text": "Business, which is for services companies. And that is also released each month. We're going to be looking"
+    },
+    {
+      "start": 626.86,
+      "end": 633.98,
+      "text": "at that in the next video. As a reminder, there's only two private sector entities that make up an economy,"
+    },
+    {
+      "start": 633.98,
+      "end": 641.18,
+      "text": "businesses and consumers. The government is the public sector. But when we look at businesses themselves,"
+    },
+    {
+      "start": 641.98,
+      "end": 651.98,
+      "text": "we split this up into manufacturing and non-manufacturing sectors. And there's two main reports"
+    },
+    {
+      "start": 651.98,
+      "end": 659.26,
+      "text": "in the United States, two main surveys that as traders in PMs, we look at because they're very, very important."
+    },
+    {
+      "start": 660.38,
+      "end": 668.86,
+      "text": "And they are the ISM Manufacturing Report on Business and the ISM Non Manufacturing or Services"
+    },
+    {
+      "start": 668.86,
+      "end": 675.98,
+      "text": "Report on Business. Now, how does this split up in the US economy? Well,"
+    },
+    {
+      "start": 675.98,
+      "end": 686.86,
+      "text": "the manufacturing sector makes up 20% of the US economy. And the services sector makes up 80% of the US"
+    },
+    {
+      "start": 686.86,
+      "end": 697.1,
+      "text": "economy. But that is not a percentage that's equal to their importance. They are both equally as important"
+    },
+    {
+      "start": 697.1,
+      "end": 706.22,
+      "text": "as each other. And many would argue for a few reasons, which we'll get into in a moment, that the ISM"
+    },
+    {
+      "start": 706.22,
+      "end": 712.06,
+      "text": "Manufacturing Report on Business is more important than the services report on business."
+    },
+    {
+      "start": 713.26,
+      "end": 721.58,
+      "text": "Let's have a look at how the ISM Manufacturing Report on Business is compiled. So, every month,"
+    },
+    {
+      "start": 722.3,
+      "end": 730.86,
+      "text": "the Institute of Supply Management sends out a questionnaire to members of the ISM Business"
+    },
+    {
+      "start": 730.86,
+      "end": 739.98,
+      "text": "Survey Committee. And this questionnaire asks them to identify month-over-month changes, if there's any,"
+    },
+    {
+      "start": 739.98,
+      "end": 747.5,
+      "text": "for each sub-index in the table at the top of the page. So, who are these members? Well,"
+    },
+    {
+      "start": 748.78,
+      "end": 757.98,
+      "text": "they are the top 300 largest US manufacturing companies in the United States. And the survey"
+    },
+    {
+      "start": 757.98,
+      "end": 766.22,
+      "text": "asks those 300 manufacturing companies questions relating to their business activity in the previous"
+    },
+    {
+      "start": 766.22,
+      "end": 773.58,
+      "text": "month that covers five areas with an equal weighting. So, we can see them at the top of the screen,"
+    },
+    {
+      "start": 774.22,
+      "end": 781.18,
+      "text": "new orders, production, employment, deliveries, and inventories. And each of those five areas"
+    },
+    {
+      "start": 781.18,
+      "end": 789.9,
+      "text": "has an equal 20 percent weighting. Now, the ISM Manufacturing Report on Business, sometimes called the PMI,"
+    },
+    {
+      "start": 789.9,
+      "end": 798.62,
+      "text": "the Purchasing Managers Index, is significant because it reflects physical goods, physical,"
+    },
+    {
+      "start": 798.62,
+      "end": 802.78,
+      "text": "real goods that are bought and sold in the US economy."
+    },
+    {
+      "start": 803.58,
+      "end": 812.06,
+      "text": "Also, the data for the Manufacturing Report goes back as far as 1947. Whereas,"
+    },
+    {
+      "start": 812.06,
+      "end": 820.22,
+      "text": "services data only goes back to 2008. So, there's more historical data and therefore,"
+    },
+    {
+      "start": 820.22,
+      "end": 827.9,
+      "text": "higher statistical significance. And these are the two main reasons why a lot of traders and PMs,"
+    },
+    {
+      "start": 827.9,
+      "end": 835.9,
+      "text": "still to this day in the market, believe that the Manufacturing Report on Business is a more important"
+    },
+    {
+      "start": 835.9,
+      "end": 843.82,
+      "text": "indicator than the Services Report on Business. So, with the Manufacturing Report on Business, we have"
+    },
+    {
+      "start": 843.82,
+      "end": 852.22,
+      "text": "more data and it's about physical, real goods bought and sold in the US economy, not contracts or consulting"
+    },
+    {
+      "start": 852.22,
+      "end": 862.46,
+      "text": "or services or anything like that. It's real goods, physical goods, widgets in factories, etc. So,"
+    },
+    {
+      "start": 862.46,
+      "end": 871.1,
+      "text": "higher statistical significance and physical, real goods. But what about the survey design of the ISM"
+    },
+    {
+      "start": 871.1,
+      "end": 877.34,
+      "text": "Manufacturing Report on Business? How is it actually put together? It's useful to understand this"
+    },
+    {
+      "start": 877.34,
+      "end": 883.82,
+      "text": "as fundamental knowledge as to how the survey actually works. So, the PMI, the Purchasing"
+    },
+    {
+      "start": 883.82,
+      "end": 892.78,
+      "text": "Managers Index, is a composite index based on seasonally adjusted diffusion indexes for those five"
+    },
+    {
+      "start": 892.78,
+      "end": 901.58,
+      "text": "indicators that were in the table. And a diffusion index simply measures the degree to which a change in"
+    },
+    {
+      "start": 901.58,
+      "end": 911.74,
+      "text": "something is dispersed, spread out or diffused in a particular group. So, if in a given sample population,"
+    },
+    {
+      "start": 912.78,
+      "end": 920.3,
+      "text": "all members of a particular group of people are asked if something has changed and in which direction,"
+    },
+    {
+      "start": 921.02,
+      "end": 928.38,
+      "text": "they can only answer in one of three ways. They can only say it's increased, it's decreased,"
+    },
+    {
+      "start": 928.38,
+      "end": 936.46,
+      "text": "or there's been no change. And what a diffusion index does, what it indicates, is the degree to which the"
+    },
+    {
+      "start": 936.46,
+      "end": 945.82,
+      "text": "change is dispersed or diffused throughout the sample population. Now, respondents to ISM surveys indicate"
+    },
+    {
+      "start": 945.82,
+      "end": 952.22,
+      "text": "each month, so in the monthly surveys, whether particular activities in their business, so for example,"
+    },
+    {
+      "start": 952.86,
+      "end": 960.62,
+      "text": "like new orders have increased, decreased, or remained unchanged from the previous month."
+    },
+    {
+      "start": 961.66,
+      "end": 971.42,
+      "text": "And how the ISM calculates the ISM indexes, they do this by taking the percentage of respondents"
+    },
+    {
+      "start": 972.14,
+      "end": 982.3,
+      "text": "that report that the activity has increased, so conditions getting better, and adding it to one"
+    },
+    {
+      "start": 982.3,
+      "end": 991.66,
+      "text": "half of the percentage that report that the activity has not changed or stayed the same. And then they add"
+    },
+    {
+      "start": 991.66,
+      "end": 1002.38,
+      "text": "those two percentages together. So, using half of the same percentage effectively measures the bias toward a"
+    },
+    {
+      "start": 1002.38,
+      "end": 1009.82,
+      "text": "positive, so an index above 50%, or a negative index below 50%."
+    },
+    {
+      "start": 1011.34,
+      "end": 1018.46,
+      "text": "Now, we can run through a quick example here of how this actually works. So, an example of calculating"
+    },
+    {
+      "start": 1019.02,
+      "end": 1030.3,
+      "text": "a diffusion index. So, if the response is 20% better, 70% the same, and 10% worse,"
+    },
+    {
+      "start": 1031.18,
+      "end": 1040.86,
+      "text": "how does the diffusion index calculate? Well, the diffusion index would be 55%. So, that worked out is"
+    },
+    {
+      "start": 1040.86,
+      "end": 1053.5,
+      "text": "20% plus 50% of 70%, and we get to 55%. A reading of 50 on the index, so a reading of 50%"
+    },
+    {
+      "start": 1054.94,
+      "end": 1063.9,
+      "text": "indicates that there's no change at all from the previous month. So, above 50 is indicating positive,"
+    },
+    {
+      "start": 1064.54,
+      "end": 1072.62,
+      "text": "and below 50, negative. As you can see, when we work out the example here for the diffusion index"
+    },
+    {
+      "start": 1072.62,
+      "end": 1084.22,
+      "text": "calculation, 20% are reporting better, 10% are reporting worse, and 70% the same. So, when we add up and do our"
+    },
+    {
+      "start": 1084.22,
+      "end": 1097.26,
+      "text": "calculation of 20% plus half of the 70%, we get a positive number. We get an index above 50, and we get 55%."
+    },
+    {
+      "start": 1099.42,
+      "end": 1106.54,
+      "text": "Now, as mentioned previously, you saw the table earlier, there's five main areas that are included"
+    },
+    {
+      "start": 1107.18,
+      "end": 1113.98,
+      "text": "in the diffusion index. So, in the diffusion index of the ISM Manufacturing Report on Business,"
+    },
+    {
+      "start": 1114.22,
+      "end": 1123.1,
+      "text": "these five areas are New Orders, Production, Employment, Deliveries, and Inventories. There are also"
+    },
+    {
+      "start": 1123.1,
+      "end": 1131.5,
+      "text": "other parts to the survey, the ISM Manufacturing Report on Business, that are not included in the Diffusion"
+    },
+    {
+      "start": 1131.5,
+      "end": 1138.86,
+      "text": "Index. They are Customer Inventories, Prices, Order Backlog, Exports, and Imports."
+    },
+    {
+      "start": 1138.86,
+      "end": 1150.38,
+      "text": "So, what we are primarily interested in, as Traders PMs, is Measurable Data. So, we are interested really in"
+    },
+    {
+      "start": 1150.38,
+      "end": 1157.26,
+      "text": "the Diffusion Index itself, and we're interested in the Components. So, we are interested in New Orders,"
+    },
+    {
+      "start": 1157.26,
+      "end": 1163.98,
+      "text": "Production, Employment, Deliveries, and Inventories. In your own time, and for further learning,"
+    },
+    {
+      "start": 1163.98,
+      "end": 1170.38,
+      "text": "you can obviously look at the rest of them. So, Customer Inventories, Prices, Order Backlog,"
+    },
+    {
+      "start": 1170.38,
+      "end": 1179.26,
+      "text": "and Exports, and Imports. But for the purposes of the PTM Video Series, we're only going to be looking at"
+    },
+    {
+      "start": 1180.38,
+      "end": 1187.66,
+      "text": "the components of the Diffusion Index and the Index itself. So, let's have a look at these components."
+    },
+    {
+      "start": 1189.18,
+      "end": 1198.3,
+      "text": "Let's see what they actually represent as part of the overall index. So, let's have a look at the"
+    },
+    {
+      "start": 1198.3,
+      "end": 1208.7,
+      "text": "components. Firstly, New Orders. What is that? Well, New Orders reflects the level of New Orders"
+    },
+    {
+      "start": 1209.34,
+      "end": 1216.86,
+      "text": "from customers of the manufacturing business. So, if you think about what this represents, the survey,"
+    },
+    {
+      "start": 1216.86,
+      "end": 1224.22,
+      "text": "the questionnaire is asking these manufacturing businesses, has there been a change, positive,"
+    },
+    {
+      "start": 1224.22,
+      "end": 1233.18,
+      "text": "negative, or no change, this month relative to the last month in New Orders? That's obviously going to"
+    },
+    {
+      "start": 1233.18,
+      "end": 1245.1,
+      "text": "be a very useful piece of data for any traders and PMs in the financial markets between quarterly earnings"
+    },
+    {
+      "start": 1245.1,
+      "end": 1252.7,
+      "text": "reports, because we're being told by manufacturing businesses what's happening in real time to their"
+    },
+    {
+      "start": 1252.7,
+      "end": 1260.38,
+      "text": "businesses, to new orders. Next up, Production. This measures the rate and direction of change,"
+    },
+    {
+      "start": 1260.38,
+      "end": 1269.5,
+      "text": "if any, in the level of production at the manufacturing businesses. So, again, positive, negative, no change."
+    },
+    {
+      "start": 1270.38,
+      "end": 1278.46,
+      "text": "Month on month. This is important data. Next up, Employment. This reports the rate of increase"
+    },
+    {
+      "start": 1278.46,
+      "end": 1285.34,
+      "text": "or decrease in the level of employment at the manufacturing businesses. Are they hiring more people?"
+    },
+    {
+      "start": 1286.22,
+      "end": 1293.5,
+      "text": "Is the rate increasing? Are they hiring less people? Is the rate decreasing? Or is there no change?"
+    },
+    {
+      "start": 1295.02,
+      "end": 1304.38,
+      "text": "So, again, a very important piece of data. Next up, Supplier Deliveries. This tells us if deliveries"
+    },
+    {
+      "start": 1304.38,
+      "end": 1313.42,
+      "text": "from the manufacturing businesses' suppliers are faster or slower. So, this gives us a good insight"
+    },
+    {
+      "start": 1313.98,
+      "end": 1324.7,
+      "text": "into the speed and efficiency of the supply chain. Next up, Inventories. This tells us the increases month"
+    },
+    {
+      "start": 1324.7,
+      "end": 1333.26,
+      "text": "on month or decreases month on month in inventory levels at manufacturing businesses. So, the question is,"
+    },
+    {
+      "start": 1333.26,
+      "end": 1342.38,
+      "text": "is, is our manufacturing companies increasing inventories or decreasing inventories. So, all of these numbers"
+    },
+    {
+      "start": 1342.38,
+      "end": 1349.98,
+      "text": "are the important numbers that make up the ISM Manufacturing Report-Up Business Diffusion Index,"
+    },
+    {
+      "start": 1349.98,
+      "end": 1359.18,
+      "text": "or sometimes called the Composite or Aggregate Index. And these are the numbers that are important"
+    },
+    {
+      "start": 1359.18,
+      "end": 1368.38,
+      "text": "to traders and PMs to us in attempting to predict future GDP growth in the US economy,"
+    },
+    {
+      "start": 1369.9,
+      "end": 1378.38,
+      "text": "markets, stock market direction, stock market direction and potential returns in the stock market and also Fed policy."
+    },
+    {
+      "start": 1379.98,
+      "end": 1385.18,
+      "text": "Now, we mentioned that there was other information in the Manufacturing Report on Business,"
+    },
+    {
+      "start": 1385.18,
+      "end": 1398.7,
+      "text": "information on areas of manufacturing companies from the respondents that is not included in the Diffusion Index,"
+    },
+    {
+      "start": 1399.66,
+      "end": 1407.9,
+      "text": "customer inventories, prices, backlog of orders, new export orders and imports. In your own time, you can"
+    },
+    {
+      "start": 1407.9,
+      "end": 1417.42,
+      "text": "self-educate and look into these areas yourself. There is obviously some useful information to glean from this,"
+    },
+    {
+      "start": 1417.42,
+      "end": 1427.58,
+      "text": "but it's not our primary focus. Our primary focus is the data that's included in the Aggregate or Composite"
+    },
+    {
+      "start": 1427.58,
+      "end": 1435.66,
+      "text": "Diffusion Index. In the Downloads area to this video, you'll see a couple of spreadsheet files there."
+    },
+    {
+      "start": 1436.78,
+      "end": 1444.06,
+      "text": "We're going to be looking at some data now and some charts of the ISM Manufacturing Index and its components,"
+    },
+    {
+      "start": 1444.62,
+      "end": 1453.74,
+      "text": "and also the ISM Manufacturing Index relative to S&P 500, Direction, Returns and GDP. And you can"
+    },
+    {
+      "start": 1453.74,
+      "end": 1459.66,
+      "text": "download all of that data in the spreadsheet, in the Downloads area, and have a look at those"
+    },
+    {
+      "start": 1459.66,
+      "end": 1466.7,
+      "text": "spreadsheets yourself and see how they work in your own time. Also, when ISM data is"
+    },
+    {
+      "start": 1466.7,
+      "end": 1473.82,
+      "text": "released every month, it's a very useful exercise to update those spreadsheets yourself every month."
+    },
+    {
+      "start": 1475.02,
+      "end": 1484.46,
+      "text": "Now, in the spreadsheets, you're going to see visual representations of the data as well as the data"
+    },
+    {
+      "start": 1484.46,
+      "end": 1495.26,
+      "text": "itself. So, what are we looking at here? A visual representation of the ISM Manufacturing Report on Business Index,"
+    },
+    {
+      "start": 1495.26,
+      "end": 1502.86,
+      "text": "the Purchasing Managers Index, the Purchasing Managers Index, and we're looking at an all-time data series."
+    },
+    {
+      "start": 1502.86,
+      "end": 1518.14,
+      "text": "So, if you look on the screen, if you look at the X axis, you'll see that the data goes back to 1947 up to"
+    },
+    {
+      "start": 1518.14,
+      "end": 1529.9,
+      "text": "present day. And you'll see on the Y axis, we have a range for the Aggregate Composite Diffusion Index of 20 to 80."
+    },
+    {
+      "start": 1529.9,
+      "end": 1538.22,
+      "text": "Now, what else do you notice? Well, you should also notice the red line going from left to right,"
+    },
+    {
+      "start": 1538.22,
+      "end": 1549.5,
+      "text": "which is essentially a linear line of best fit. And that line of best fit is above the 50 level. So,"
+    },
+    {
+      "start": 1549.5,
+      "end": 1560.7,
+      "text": "above 50, which is no change, above 50, which is positive change, and below 50 is negative change."
+    },
+    {
+      "start": 1560.7,
+      "end": 1568.7,
+      "text": "So, with this being above 50 across this whole data set, what does that tell you? It tells you that"
+    },
+    {
+      "start": 1568.7,
+      "end": 1576.3,
+      "text": "there's more positives than negatives. And this is consistent with business cycle history"
+    },
+    {
+      "start": 1576.3,
+      "end": 1583.5,
+      "text": "of expansions and contractions. Expansions last longer than contractions."
+    },
+    {
+      "start": 1584.06,
+      "end": 1591.34,
+      "text": "So, throughout history, in the manufacturing sector, we get long periods of expansion."
+    },
+    {
+      "start": 1592.14,
+      "end": 1601.82,
+      "text": "So, economic growth, growth in the manufacturing sector, with occasional quick and sharp moves lower,"
+    },
+    {
+      "start": 1602.38,
+      "end": 1608.54,
+      "text": "where we get contraction in the manufacturing sector throughout the data history."
+    },
+    {
+      "start": 1609.9,
+      "end": 1615.9,
+      "text": "And what we are looking at here is the economic business cycle in itself."
+    },
+    {
+      "start": 1617.26,
+      "end": 1626.38,
+      "text": "So, if we zoom in here and we look at the period from 1990 to present day,"
+    },
+    {
+      "start": 1627.66,
+      "end": 1633.82,
+      "text": "let's have a look at what the ISM Manufacturing Index was doing at certain moments in time."
+    },
+    {
+      "start": 1635.74,
+      "end": 1646.62,
+      "text": "Well, we can see the last time it was below 50 significantly. That was in 2020, during the COVID collapse,"
+    },
+    {
+      "start": 1646.62,
+      "end": 1653.26,
+      "text": "the COVID economic lockdown, and the recession that occurred during that time. Remember,"
+    },
+    {
+      "start": 1653.26,
+      "end": 1662.94,
+      "text": "a recession is not just an economic contraction. A recession is two quarters of negative GDP growth."
+    },
+    {
+      "start": 1663.98,
+      "end": 1674.22,
+      "text": "You'll see previous to that, in 2015, 2016, you'll see that the ISM was below 50 there as well,"
+    },
+    {
+      "start": 1674.22,
+      "end": 1681.02,
+      "text": "but we didn't have a recession. We just had some economic contraction. And then, if we look,"
+    },
+    {
+      "start": 1681.02,
+      "end": 1692.38,
+      "text": "keep looking back further, we get to the global financial crisis in 2008, 2009, where the ISM went below 50"
+    },
+    {
+      "start": 1692.38,
+      "end": 1700.06,
+      "text": "for the first time way before the economic collapse in the global financial crisis."
+    },
+    {
+      "start": 1700.94,
+      "end": 1709.82,
+      "text": "So, you can see that it took a huge nosedive in the global financial crisis of 2008, 2009."
+    },
+    {
+      "start": 1711.5,
+      "end": 1717.34,
+      "text": "And look at the periods in between these big moves down in the ISM Manufacturing Index."
+    },
+    {
+      "start": 1717.34,
+      "end": 1727.5,
+      "text": "You can see that for pretty much a decade, other than a few prints below 50, over an entire decade,"
+    },
+    {
+      "start": 1727.5,
+      "end": 1737.34,
+      "text": "the ISM was pretty much the whole time above the 50 level, indicating that the manufacturing sector is expanding."
+    },
+    {
+      "start": 1737.9,
+      "end": 1748.38,
+      "text": "So, you can definitely see here, when we zoom in to the last 30 years, that for the most part,"
+    },
+    {
+      "start": 1749.5,
+      "end": 1763.74,
+      "text": "the ISM Manufacturing Index has positive data points, meaning that the manufacturing sector in the US economy is reporting growth on a month-on-month basis."
+    },
+    {
+      "start": 1763.74,
+      "end": 1773.98,
+      "text": "What you also notice is that there's very obvious peaks and troughs in the ISM Manufacturing Index."
+    },
+    {
+      "start": 1774.86,
+      "end": 1782.94,
+      "text": "If we look below 50, other than the global financial crisis in 2008 to 2009,"
+    },
+    {
+      "start": 1782.94,
+      "end": 1791.5,
+      "text": "you can see that the low points seem to be around the 40 to 45 level."
+    },
+    {
+      "start": 1792.62,
+      "end": 1801.34,
+      "text": "Somewhere in that region, that's where historically the ISM troughs, excluding the global financial crisis,"
+    },
+    {
+      "start": 1801.34,
+      "end": 1811.18,
+      "text": "where you can see on the chart, that was a big outlier, where the ISM troughed between 32.5 and 35."
+    },
+    {
+      "start": 1811.18,
+      "end": 1820.78,
+      "text": "Now, if we look at the area above the 50 level, where we are indicating expansion,"
+    },
+    {
+      "start": 1821.42,
+      "end": 1827.26,
+      "text": "we can see a very clear trend where the ISM tends to peak."
+    },
+    {
+      "start": 1827.82,
+      "end": 1832.78,
+      "text": "So, where the ISM Manufacturing Index tends to peak historically."
+    },
+    {
+      "start": 1833.5,
+      "end": 1838.22,
+      "text": "This tends to occur around the 60 level. So, let's take note of that."
+    },
+    {
+      "start": 1840.46,
+      "end": 1847.5,
+      "text": "There are areas in the ISM Manufacturing Index, historically, that we call peaks and troughs,"
+    },
+    {
+      "start": 1848.06,
+      "end": 1851.5,
+      "text": "and we have to pay attention to these levels because they're very important."
+    },
+    {
+      "start": 1853.1,
+      "end": 1860.86,
+      "text": "As traders and portfolio managers, we can glean a lot of information out of the level of the Composite"
+    },
+    {
+      "start": 1860.86,
+      "end": 1864.06,
+      "text": "Manufacturing Index, the Aggregate Index."
+    },
+    {
+      "start": 1865.66,
+      "end": 1869.66,
+      "text": "Let's have a look at this, and you'll see this in the Downloads area as well."
+    },
+    {
+      "start": 1870.7,
+      "end": 1876.62,
+      "text": "This is the total data going back to 1947."
+    },
+    {
+      "start": 1878.38,
+      "end": 1892.86,
+      "text": "The total data of the ISM Manufacturing Index relative to quarter-on-quarter annualized GDP growth."
+    },
+    {
+      "start": 1894.14,
+      "end": 1905.74,
+      "text": "And what you'll see here is that the ISM tends to move at the same time or before as GDP growth is reported."
+    },
+    {
+      "start": 1906.3,
+      "end": 1910.54,
+      "text": "So, remember, when GDP growth is reported, it's backwards-looking."
+    },
+    {
+      "start": 1911.1,
+      "end": 1919.98,
+      "text": "The ISM, for the most part, is a predictor of what GDP growth will be on a quarterly basis."
+    },
+    {
+      "start": 1920.78,
+      "end": 1927.66,
+      "text": "So, visually, we can see this, that when the ISM is above 50, we should be expecting,"
+    },
+    {
+      "start": 1929.34,
+      "end": 1938.14,
+      "text": "based on historical trends, that quarter-on-quarter annualized GDP growth will also be positive."
+    },
+    {
+      "start": 1938.94,
+      "end": 1946.94,
+      "text": "And when the ISM is below 50, we should expect quarter-on-quarter annualized real GDP growth"
+    },
+    {
+      "start": 1946.94,
+      "end": 1953.02,
+      "text": "to be contracting, so to be negative. And we can see this visually on the chart."
+    },
+    {
+      "start": 1954.7,
+      "end": 1956.78,
+      "text": "Now, of course, this chart, because of all data,"
+    },
+    {
+      "start": 1956.78,
+      "end": 1963.58,
+      "text": "it's a little bit messy to look at visually. We can zoom in and we can have a look at the last few"
+    },
+    {
+      "start": 1963.58,
+      "end": 1969.18,
+      "text": "business cycles. So, we can see on the chart, when we look at the ISM Manufacturing Index in white,"
+    },
+    {
+      "start": 1969.82,
+      "end": 1980.06,
+      "text": "and GDP growth quarterly, annualized real GDP growth in blue. We can see a relationship here. It's very obvious."
+    },
+    {
+      "start": 1981.9,
+      "end": 1992.7,
+      "text": "We can see, for example, if we look on the right-hand side at 2019-2020, we can see that the ISM"
+    },
+    {
+      "start": 1994.14,
+      "end": 2003.66,
+      "text": "went below 50 in 2019. However, GDP growth was reported as slightly positive during that period."
+    },
+    {
+      "start": 2003.66,
+      "end": 2013.9,
+      "text": "But we can see in 2020 that the ISM obviously took a nosedive due to COVID and the economic lockdowns,"
+    },
+    {
+      "start": 2014.94,
+      "end": 2024.22,
+      "text": "and so did real GDP growth. This situation here, obviously, we covered this earlier in the video"
+    },
+    {
+      "start": 2024.22,
+      "end": 2036.38,
+      "text": "series where when we saw the Fed take action in 2019. And that's probably why GDP growth didn't actually"
+    },
+    {
+      "start": 2036.94,
+      "end": 2045.02,
+      "text": "collapse in 2019. It took COVID and the economic lockdown to make GDP growth collapse."
+    },
+    {
+      "start": 2045.02,
+      "end": 2053.5,
+      "text": "But there's no doubt about it that in 2019, there was a reported slowdown from the US manufacturing sector"
+    },
+    {
+      "start": 2055.5,
+      "end": 2065.34,
+      "text": "in 2019. And the Fed decided to take action for this and other reasons. Now, if we look a little bit"
+    },
+    {
+      "start": 2065.34,
+      "end": 2075.34,
+      "text": "further back, if we look at the financial crisis of 2008-2009, you can see very clearly on the chart,"
+    },
+    {
+      "start": 2075.34,
+      "end": 2084.86,
+      "text": "when we look at the data being reported, that the ISM went below 50 in 2007. And it stayed below 50 for"
+    },
+    {
+      "start": 2084.86,
+      "end": 2096.78,
+      "text": "quite a while. And what happened? Yes, GDP growth went negative. And we had a recession. And when you look"
+    },
+    {
+      "start": 2096.78,
+      "end": 2105.42,
+      "text": "at all of the data for the ISM Manufacturing Index relative to GDP growth, roughly speaking, it predicts"
+    },
+    {
+      "start": 2106.86,
+      "end": 2115.98,
+      "text": "GDP growth around 80% of the time throughout history. And the other 20% of the time, we get some false"
+    },
+    {
+      "start": 2115.98,
+      "end": 2127.5,
+      "text": "readings. But it's very reliable. The data goes back to 1947. And 80% of the time, we get GDP growth"
+    },
+    {
+      "start": 2127.5,
+      "end": 2135.58,
+      "text": "going in the same direction as the ISM predicting with a lag, with a time lag. And that time lag is"
+    },
+    {
+      "start": 2135.58,
+      "end": 2146.46,
+      "text": "anything between 6 and 18 months. So when we think of our predictor list, our dynamic predictor list of"
+    },
+    {
+      "start": 2146.46,
+      "end": 2157.26,
+      "text": "forecasting economic growth, the ISM Manufacturing Index is very, very useful. In the download as well,"
+    },
+    {
+      "start": 2158.06,
+      "end": 2165.5,
+      "text": "you're going to see an analysis where we look at the ISM Manufacturing Index,"
+    },
+    {
+      "start": 2165.5,
+      "end": 2176.7,
+      "text": "it's relative to S&P 500 annual percentage change. And you can see here, very obviously, and visually,"
+    },
+    {
+      "start": 2177.26,
+      "end": 2188.54,
+      "text": "that there is a very, very close relationship between the two. So also, what's important to understand,"
+    },
+    {
+      "start": 2188.54,
+      "end": 2199.5,
+      "text": "is the peaks and the peaks and the troughs in the ISM. So you can see, for example, that when the ISM"
+    },
+    {
+      "start": 2199.5,
+      "end": 2210.3,
+      "text": "peaks at around the 60 level, this is when S&P 500 or stock market annual returns. So the performance of the stock"
+    },
+    {
+      "start": 2210.3,
+      "end": 2221.18,
+      "text": "market peaks peaks as well. We can't predict exactly the number that the S&P 500 will return. But what we can"
+    },
+    {
+      "start": 2221.18,
+      "end": 2228.78,
+      "text": "say is that in a certain time period, it's probably going to peak at that level. Also, when you look at the"
+    },
+    {
+      "start": 2228.78,
+      "end": 2239.5,
+      "text": "troughs in the ISM, you can see that the returns of the S&P 500, the annual returns trough as well."
+    },
+    {
+      "start": 2240.3,
+      "end": 2252.38,
+      "text": "So essentially, the ISM is leading by a period of anything up to 12 months, the annual percentage return of the S&P 500. So again,"
+    },
+    {
+      "start": 2252.38,
+      "end": 2260.3,
+      "text": "if we think of our dynamic predictor list, the ISM manufacturing index, when it's attempting to"
+    },
+    {
+      "start": 2260.3,
+      "end": 2269.18,
+      "text": "predict or lead both economic growth and the S&P 500, annual percentage change, the ISM manufacturing"
+    },
+    {
+      "start": 2269.18,
+      "end": 2278.38,
+      "text": "index is very useful to us as traders and portfolio managers. So let's put all this together as to how"
+    },
+    {
+      "start": 2278.38,
+      "end": 2286.3,
+      "text": "we actually follow it and why it's useful for traders and portfolio managers. So how to follow this composite"
+    },
+    {
+      "start": 2286.3,
+      "end": 2295.9,
+      "text": "ISM. So the ISM, as we've seen, it can be a powerful leading indicator to the business cycle. Following"
+    },
+    {
+      "start": 2295.9,
+      "end": 2302.78,
+      "text": "it on a monthly basis and being on top of the details really stacks the odds in our favor. When you look at"
+    },
+    {
+      "start": 2302.78,
+      "end": 2311.58,
+      "text": "the ISM, what you're actually looking at is the business cycle itself. When the ISM is above 50,"
+    },
+    {
+      "start": 2311.58,
+      "end": 2320.86,
+      "text": "it is a strong indication that the US economy is expanding and therefore S&P 500 returns will very"
+    },
+    {
+      "start": 2320.86,
+      "end": 2329.34,
+      "text": "likely be positive. So from our analysis as traders and portfolio managers, and from our predictor list,"
+    },
+    {
+      "start": 2330.38,
+      "end": 2339.34,
+      "text": "we can potentially predict the 1-1 situation. So what does that mean? If you recall, that means the S&P 500"
+    },
+    {
+      "start": 2339.34,
+      "end": 2351.34,
+      "text": "will rise and GDP will rise. So they rise together. So above 50, that's the S&P 500 and GDP moving in the same"
+    },
+    {
+      "start": 2351.34,
+      "end": 2361.9,
+      "text": "direction and rising together. And this is what is happening most of the time. We are in expansionary"
+    },
+    {
+      "start": 2361.9,
+      "end": 2369.5,
+      "text": "conditions and the S&P 500 is rising. What we can't do, and we've said this a number of times so far"
+    },
+    {
+      "start": 2369.5,
+      "end": 2376.78,
+      "text": "in the video series, is say with a very high level of confidence, the exact level that the S&P 500 is going to"
+    },
+    {
+      "start": 2376.78,
+      "end": 2383.18,
+      "text": "rise. What we're trying to do here is stack the odds in our favor by getting the direction right,"
+    },
+    {
+      "start": 2383.18,
+      "end": 2389.34,
+      "text": "okay? So that is the 1-1 situation which occurs most of the time throughout history."
+    },
+    {
+      "start": 2390.94,
+      "end": 2400.62,
+      "text": "In a minority of cases, we get the ISM falling below 50. This is a strong indication that the economy is"
+    },
+    {
+      "start": 2400.62,
+      "end": 2409.5,
+      "text": "contracting and therefore S&P 500 returns will very likely be negative if the Federal Reserve"
+    },
+    {
+      "start": 2409.5,
+      "end": 2417.1,
+      "text": "does not act, okay? So we can potentially predict what the Fed is going to do,"
+    },
+    {
+      "start": 2418.14,
+      "end": 2430.22,
+      "text": "or we can potentially predict the 0-0 situation. So the S&P 500 falling and GDP following and falling as"
+    },
+    {
+      "start": 2430.22,
+      "end": 2437.02,
+      "text": "well. So they both move in the same direction and they both go negative. Now, previously,"
+    },
+    {
+      "start": 2437.02,
+      "end": 2443.1,
+      "text": "we mentioned peaks and drops in the ISM. We can understand this a little bit better now."
+    },
+    {
+      "start": 2443.82,
+      "end": 2452.78,
+      "text": "When the ISM is in decline from a peak, it's a strong indication that the rate of economic growth,"
+    },
+    {
+      "start": 2452.78,
+      "end": 2461.66,
+      "text": "so the rate of expansion is starting to slow down. When the ISM gets to historically peaky levels,"
+    },
+    {
+      "start": 2462.38,
+      "end": 2471.34,
+      "text": "what we can do here is potentially predict the 0-1 situation. That the stock market has got ahead of"
+    },
+    {
+      "start": 2471.34,
+      "end": 2481.58,
+      "text": "itself and that there's going to be some profit-taking, okay? So the 0-1 situation is when the S&P 500 falls"
+    },
+    {
+      "start": 2482.46,
+      "end": 2491.18,
+      "text": "and GDP growth is still positive, but it's slowing down. So it's falling. The rate of GDP growth is"
+    },
+    {
+      "start": 2491.18,
+      "end": 2499.58,
+      "text": "falling, but it's still going to be positive. Now, on the flip side, when the ISM troughs, this is a strong"
+    },
+    {
+      "start": 2499.58,
+      "end": 2506.94,
+      "text": "indication that the rate of economic slowdown, so contraction, is actually getting slower. It's slowing"
+    },
+    {
+      "start": 2506.94,
+      "end": 2515.74,
+      "text": "down. It's turning, okay? So when the ISM gets to historic trough levels, what are we looking at?"
+    },
+    {
+      "start": 2516.46,
+      "end": 2525.82,
+      "text": "We're looking at potentially predicting a very strong 1-1 situation where the ISM rebounds from the trough,"
+    },
+    {
+      "start": 2528.54,
+      "end": 2535.82,
+      "text": "the S&P 500 rallies really hard, then the S&P 500 rallies really hard and puts in a positive performance,"
+    },
+    {
+      "start": 2536.7,
+      "end": 2547.34,
+      "text": "and GDP growth is reported later as positive. So this is why we follow the ISM manufacturing index,"
+    },
+    {
+      "start": 2547.9,
+      "end": 2555.98,
+      "text": "and the S&P 500, because it's a really great leading indicator for GDP growth and S&P 500 returns,"
+    },
+    {
+      "start": 2556.54,
+      "end": 2566.46,
+      "text": "and we can use these data points to understand what our future expectations are for GDP growth and S&P 500"
+    },
+    {
+      "start": 2566.46,
+      "end": 2577.26,
+      "text": "returns, so the stock market. And we can have in our portfolios a predisposition of a long, short, or neutral"
+    },
+    {
+      "start": 2577.42,
+      "end": 2584.46,
+      "text": "bias in our portfolios. We can decide, for example, during periods of expansion,"
+    },
+    {
+      "start": 2585.42,
+      "end": 2595.58,
+      "text": "that we have a long bias, a net long bias in our portfolio. We can, for example, when the ISM looks"
+    },
+    {
+      "start": 2595.58,
+      "end": 2604.7,
+      "text": "like it's peaking or in the process of peaking, we can choose to rotate and get neutral in our portfolios,"
+    },
+    {
+      "start": 2604.7,
+      "end": 2612.14,
+      "text": "not necessarily going short, because remember, there's still economic growth predicted, it's just at a"
+    },
+    {
+      "start": 2612.14,
+      "end": 2620.3,
+      "text": "slower rate. So we can switch our portfolios up, we can potentially get neutral in our portfolios."
+    },
+    {
+      "start": 2620.86,
+      "end": 2628.54,
+      "text": "When the ISM goes below 50, and we have a time lag of a period of, say, 6 to 12 months,"
+    },
+    {
+      "start": 2628.54,
+      "end": 2639.02,
+      "text": "we can start to decide to get short in our portfolios. And at troughs, we can move to a neutral to long net"
+    },
+    {
+      "start": 2639.02,
+      "end": 2647.02,
+      "text": "bias in our portfolios. So this is a very, very useful leading indicator for us. And of course, we don't"
+    },
+    {
+      "start": 2647.02,
+      "end": 2655.34,
+      "text": "just use the ISM manufacturing index to have an understanding of an entire big picture macroeconomic"
+    },
+    {
+      "start": 2655.34,
+      "end": 2662.62,
+      "text": "view. We are looking at all leading indicators and getting a better perspective of what's going on."
+    },
+    {
+      "start": 2662.62,
+      "end": 2669.26,
+      "text": "So don't just use the ISM, use all of them to understand what's really going on in the market."
+    },
+    {
+      "start": 2670.54,
+      "end": 2678.22,
+      "text": "Now, of course, as well, we're not going to be right all the time throughout our careers. If we think about"
+    },
+    {
+      "start": 2678.78,
+      "end": 2684.14,
+      "text": "our objectives here, it's to be consistently profitable for a very long period of time,"
+    },
+    {
+      "start": 2684.78,
+      "end": 2694.7,
+      "text": "using our own money in retail trading accounts. So if we're looking at our entire career of, say,"
+    },
+    {
+      "start": 2694.7,
+      "end": 2703.1,
+      "text": "the next 25, 30, 40 years, what percentage of times are we actually going to predict all of these"
+    },
+    {
+      "start": 2703.1,
+      "end": 2710.22,
+      "text": "situations? Well, we're not going to be hard on ourselves and say we have to be right all the time."
+    },
+    {
+      "start": 2710.22,
+      "end": 2716.54,
+      "text": "Okay. But we're going to have a pretty good idea of what's going on. So if we're looking to"
+    },
+    {
+      "start": 2716.54,
+      "end": 2724.94,
+      "text": "predict the 1-1 situation, this is most of the time. And if you think about our quadnomial analysis"
+    },
+    {
+      "start": 2724.94,
+      "end": 2734.7,
+      "text": "and correlation analysis that we did in previous videos, this analysis lines up with actions that we"
+    },
+    {
+      "start": 2734.7,
+      "end": 2742.54,
+      "text": "take from ISM with a time lag as well. So using all of these leading indicators in conjunction with each"
+    },
+    {
+      "start": 2742.54,
+      "end": 2749.98,
+      "text": "other, we get a much clearer picture. So the 1-1 situation happens most of the time. If we can"
+    },
+    {
+      "start": 2749.98,
+      "end": 2758.78,
+      "text": "potentially predict a number of 0-0 situations, that's great. But if we can also predict some 0-1"
+    },
+    {
+      "start": 2758.78,
+      "end": 2764.94,
+      "text": "situations, we don't have to get all of them right. But if we can predict some 0-1 situations"
+    },
+    {
+      "start": 2765.82,
+      "end": 2774.22,
+      "text": "throughout our career, what's going to happen? Well, if we predict the 1-1, a good number of 0-0s and a"
+    },
+    {
+      "start": 2774.22,
+      "end": 2781.82,
+      "text": "good number of 0-1s, what's going to happen? We're going to be right around 75% of the time. So we're"
+    },
+    {
+      "start": 2781.82,
+      "end": 2791.26,
+      "text": "going to be right somewhere between 60 and 80% of the time in predicting the US economy, GDP growth and"
+    },
+    {
+      "start": 2791.26,
+      "end": 2802.06,
+      "text": "predicting S&P 500 direction and potential returns. So if we are using this leading indicator, the ISM"
+    },
+    {
+      "start": 2802.06,
+      "end": 2809.9,
+      "text": "manufacturing index, in our toolkit of all of our leading indicators, in trying to predict"
+    },
+    {
+      "start": 2810.7,
+      "end": 2819.9,
+      "text": "GDP growth and S&P 500 direction and returns, overall, if at the lower end in our careers,"
+    },
+    {
+      "start": 2819.9,
+      "end": 2827.26,
+      "text": "we're going to be right 60% of the time, and at the higher end, 80% of the time, in forming our"
+    },
+    {
+      "start": 2827.26,
+      "end": 2834.94,
+      "text": "our predisposition, our macroeconomic view, and our portfolio bias. Those odds are pretty amazing."
+    },
+    {
+      "start": 2836.78,
+      "end": 2845.98,
+      "text": "Now, each month, when you're looking at the ISM releases, what's going to happen is you're going"
+    },
+    {
+      "start": 2846.78,
+      "end": 2856.06,
+      "text": "to be going through a number of exercises and updating your data and looking at all of the"
+    },
+    {
+      "start": 2856.94,
+      "end": 2865.66,
+      "text": "components of the aggregate diffusion index. And if you recall, there were five main components that we"
+    },
+    {
+      "start": 2865.66,
+      "end": 2873.82,
+      "text": "are interested in. That was new orders, production, employment, supplier deliveries and inventories. And what"
+    },
+    {
+      "start": 2873.82,
+      "end": 2882.46,
+      "text": "you're looking at on the screen here is a chart of the data of new orders versus the ISM manufacturing index,"
+    },
+    {
+      "start": 2882.46,
+      "end": 2891.98,
+      "text": "the aggregate index from 1998 to present day. And what you're going to find with new orders is that"
+    },
+    {
+      "start": 2891.98,
+      "end": 2901.34,
+      "text": "it's the most sensitive part of the survey. It's the most sensitive component of the ISM manufacturing data."
+    },
+    {
+      "start": 2901.34,
+      "end": 2910.78,
+      "text": "What you'll notice when you go through the data in the past is that, typically, because new orders is the most sensitive part,"
+    },
+    {
+      "start": 2911.66,
+      "end": 2922.38,
+      "text": "new orders will actually lead the ISM manufacturing index itself. So, the new orders index is a leading indicator of the leading indicator."
+    },
+    {
+      "start": 2923.1,
+      "end": 2930.86,
+      "text": "New orders is something that you have to be really on top of every month during the ISM manufacturing data release."
+    },
+    {
+      "start": 2932.62,
+      "end": 2942.3,
+      "text": "Now, remember what the definition of new orders actually is. It reflects the level of new orders from customers of manufacturing businesses."
+    },
+    {
+      "start": 2942.3,
+      "end": 2953.9,
+      "text": "So, it reflects the change month on month. It's the most sensitive part of the ISM manufacturing index."
+    },
+    {
+      "start": 2954.86,
+      "end": 2962.78,
+      "text": "Next up is the level of production. If you recall, this measures the rate and direction of change"
+    },
+    {
+      "start": 2962.78,
+      "end": 2969.66,
+      "text": "change in the level of production at manufacturing businesses who are included in the survey."
+    },
+    {
+      "start": 2970.94,
+      "end": 2978.3,
+      "text": "So, by definition, when new orders come in, of course, there will be a slight lag"
+    },
+    {
+      "start": 2979.5,
+      "end": 2991.1,
+      "text": "to production to fulfill those new orders. So, production is still a very sensitive part of the ISM manufacturing index,"
+    },
+    {
+      "start": 2991.74,
+      "end": 3001.74,
+      "text": "but it slightly lags new orders. Next up is the employment component of the ISM. Now,"
+    },
+    {
+      "start": 3002.38,
+      "end": 3011.74,
+      "text": "this reports on a month-on-month basis the rate of increase or decrease in the level of employment at"
+    },
+    {
+      "start": 3011.74,
+      "end": 3019.02,
+      "text": "manufacturing companies. Of course, this is a much more of a slower-moving indicator"
+    },
+    {
+      "start": 3019.58,
+      "end": 3026.62,
+      "text": "versus other parts of the survey, like new orders and production. These new hires, month-on-month,"
+    },
+    {
+      "start": 3026.62,
+      "end": 3035.5,
+      "text": "will basically follow the months of expansion in new orders and production. So, employment is more of a"
+    },
+    {
+      "start": 3036.46,
+      "end": 3047.98,
+      "text": "slightly negative contributor or lagging component within the five components contributing to the overall"
+    },
+    {
+      "start": 3047.98,
+      "end": 3055.66,
+      "text": "aggregate index. It's still good to stay on top of it, obviously, but it's nowhere near as sensitive as,"
+    },
+    {
+      "start": 3055.66,
+      "end": 3063.98,
+      "text": "for example, new orders are, which contributes very positively in terms of its weighting relative"
+    },
+    {
+      "start": 3064.78,
+      "end": 3071.02,
+      "text": "to the other equally weighted components. Next up is supplier deliveries."
+    },
+    {
+      "start": 3071.02,
+      "end": 3078.7,
+      "text": "On the screen you can see supplier deliveries versus the ISM manufacturing index. What is this telling us?"
+    },
+    {
+      "start": 3078.7,
+      "end": 3089.02,
+      "text": "Well, supplier deliveries reveals if deliveries from suppliers are faster or slower at manufacturing"
+    },
+    {
+      "start": 3089.02,
+      "end": 3100.62,
+      "text": "businesses. If the manufacturing businesses are experiencing faster supplier deliveries, this basically indicates that"
+    },
+    {
+      "start": 3100.62,
+      "end": 3109.42,
+      "text": "suppliers are quicker to fulfill orders that suppliers are quicker to fulfill orders. Meaning that they're prepared to invest more in the supply chain."
+    },
+    {
+      "start": 3109.42,
+      "end": 3120.06,
+      "text": "And that means they have an optimistic outlook. And the reverse is true as well."
+    },
+    {
+      "start": 3120.06,
+      "end": 3126.22,
+      "text": "If the manufacturing businesses are experiencing a slowdown, so slower supplier deliveries, what's this indicating?"
+    },
+    {
+      "start": 3126.22,
+      "end": 3139.5,
+      "text": "Well, it indicates that suppliers are slower to fulfill orders. And that means that they're basically prepared to invest less in the supply chain."
+    },
+    {
+      "start": 3140.3,
+      "end": 3159.1,
+      "text": "This means that the manufacturing businesses themselves are getting more pessimistic because it means that they're not themselves prepared to invest further in the supply chain."
+    },
+    {
+      "start": 3159.1,
+      "end": 3172.14,
+      "text": "And of course, the reverse is true if order fulfillments are picking up and the supply chain is reporting better conditions month on month."
+    },
+    {
+      "start": 3172.14,
+      "end": 3181.66,
+      "text": "What does it mean? Well, it means that the manufacturing company themselves and suppliers are prepared to invest in the supply chain."
+    },
+    {
+      "start": 3181.66,
+      "end": 3196.46,
+      "text": "What does it mean? Well, it means that the supply chain is not as important as a supply chain. And the supply chain is not as important as new orders and production."
+    },
+    {
+      "start": 3196.46,
+      "end": 3196.46,
+      "text": "What does it mean? Well, it means that the supply chain is not as important as new orders and production."
+    },
+    {
+      "start": 3196.46,
+      "end": 3209.26,
+      "text": "It means that the supply chain is not as important as new orders and production is not as important as the supply chain is not as important as the supply chain is not as important as the supply chain is not as important as new orders and the supply chain is not as important as new orders."
+    },
+    {
+      "start": 3209.26,
+      "end": 3225.26,
+      "text": "Of course, we still pay attention to it to fill in the bigger picture of what's going on in the manufacturing sector and the economy overall, but we put less weighting on its importance relative to other components."
+    },
+    {
+      "start": 3225.26,
+      "end": 3247.26,
+      "text": "Next up is inventories. Remember, inventories reflects the increases or decreases in inventory levels at manufacturing businesses, and it's a pretty straightforward indicator to understand."
+    },
+    {
+      "start": 3247.26,
+      "end": 3260.06,
+      "text": "If manufacturing businesses are increasing inventories, it means they are getting bullish because they believe that they're going to get more orders in the future."
+    },
+    {
+      "start": 3260.06,
+      "end": 3267.26,
+      "text": "So order fulfilment will be going up. So this is their expectation. So they're increasing inventories."
+    },
+    {
+      "start": 3267.26,
+      "end": 3285.26,
+      "text": "The reverse. When inventories are being drawn down by the company or by manufacturing companies, what is happening? Well, management are getting bearish on the future of the company's order fulfilment or pipeline."
+    },
+    {
+      "start": 3285.26,
+      "end": 3297.26,
+      "text": "So inventories is actually a sensitive part of the overall ISM taken along with new orders and production."
+    },
+    {
+      "start": 3297.26,
+      "end": 3305.26,
+      "text": "Inventories is one of the most important components of the ISM Manufacturing Index."
+    },
+    {
+      "start": 3305.26,
+      "end": 3317.26,
+      "text": "So when you're doing your work every month, just remember what these components are all about and how much importance we put on them as traders and portfolio managers."
+    },
+    {
+      "start": 3317.26,
+      "end": 3329.26,
+      "text": "Obviously, they have an equal weighting of 20% each, but as traders and PMs, we place more importance on some over others."
+    },
+    {
+      "start": 3329.26,
+      "end": 3339.26,
+      "text": "So just remember that new orders are the most sensitive part of the report and the most indicative of growth or contraction overall."
+    },
+    {
+      "start": 3339.26,
+      "end": 3351.26,
+      "text": "It obviously stands to reason that production for order fulfilment will be positive or negative if new orders are expanding or contracting."
+    },
+    {
+      "start": 3351.26,
+      "end": 3358.26,
+      "text": "Okay. Because production, obviously, for order fulfilment follows new orders."
+    },
+    {
+      "start": 3358.26,
+      "end": 3364.26,
+      "text": "So production is important, it's sensitive, but there's a slight time lag."
+    },
+    {
+      "start": 3364.26,
+      "end": 3371.26,
+      "text": "Employment is more of a slow moving indicator versus new orders and production."
+    },
+    {
+      "start": 3371.26,
+      "end": 3380.26,
+      "text": "When you have new hires month on month, they are going to follow months of expansion in new orders and production."
+    },
+    {
+      "start": 3380.26,
+      "end": 3385.26,
+      "text": "Supplier deliveries, we know what the situation is there."
+    },
+    {
+      "start": 3385.26,
+      "end": 3397.26,
+      "text": "Faster supplier deliveries indicate that suppliers are essentially quicker to fulfil orders, meaning that they're prepared to invest more in the supply chain."
+    },
+    {
+      "start": 3397.26,
+      "end": 3399.26,
+      "text": "So they're becoming more optimistic."
+    },
+    {
+      "start": 3399.26,
+      "end": 3400.26,
+      "text": "Okay."
+    },
+    {
+      "start": 3400.26,
+      "end": 3403.26,
+      "text": "And the reverse is true."
+    },
+    {
+      "start": 3403.26,
+      "end": 3418.26,
+      "text": "When supplier deliveries are slowing, that means suppliers are slower to fulfil orders, meaning that they're prepared to invest less in the supply chain and they are becoming more pessimistic."
+    },
+    {
+      "start": 3418.26,
+      "end": 3433.26,
+      "text": "Something additional that supplier deliveries does, it also indicates whether there's potential supply chain problems affecting particular industry conditions within the manufacturing sector."
+    },
+    {
+      "start": 3433.26,
+      "end": 3448.26,
+      "text": "So although supplier deliveries is less important and lagging factor or component within the overall index, we still pay attention to it."
+    },
+    {
+      "start": 3448.26,
+      "end": 3455.26,
+      "text": "So we're going to glean information where we can glean information where we can on whether there's any supply chain issues in certain industries."
+    },
+    {
+      "start": 3455.26,
+      "end": 3466.26,
+      "text": "And if not, how good supply chains actually are at any one moment in time in a particular industry within the manufacturing sector."
+    },
+    {
+      "start": 3466.26,
+      "end": 3472.26,
+      "text": "Lastly, inventories, this is a very easy one to understand."
+    },
+    {
+      "start": 3472.26,
+      "end": 3477.26,
+      "text": "Management get bullish on their future expectations of orders and order fulfilment."
+    },
+    {
+      "start": 3477.26,
+      "end": 3481.26,
+      "text": "So they increase inventories and vice versa."
+    },
+    {
+      "start": 3481.26,
+      "end": 3489.26,
+      "text": "They get bearish when they draw down inventories because they're expecting less orders and less order fulfilment."
+    },
+    {
+      "start": 3489.26,
+      "end": 3496.26,
+      "text": "So inventories, very sensitive part of the overall ISM Manufacturing Index."
+    },
+    {
+      "start": 3496.26,
+      "end": 3503.26,
+      "text": "The most important three, as we've now figured out, it's new orders, production and inventories."
+    },
+    {
+      "start": 3503.26,
+      "end": 3508.26,
+      "text": "But really, it's new orders and inventories because production follows."
+    },
+    {
+      "start": 3509.26,
+      "end": 3529.26,
+      "text": "Now, it's always useful to go through some historic examples to have a look at how you might use the ISM in conjunction with tools that we've looked at up to this point in the video series."
+    },
+    {
+      "start": 3529.26,
+      "end": 3540.26,
+      "text": "If you recall, when we covered real rates and the yield curve in previous videos, we looked at the second half of 2019."
+    },
+    {
+      "start": 3540.26,
+      "end": 3550.26,
+      "text": "And that was a time when the Fed cut interest rates in July, September and October 2019."
+    },
+    {
+      "start": 3550.26,
+      "end": 3555.26,
+      "text": "And that was in response to a slowdown in the US economy."
+    },
+    {
+      "start": 3555.26,
+      "end": 3572.26,
+      "text": "Now, if you look on the screen, we've taken a screenshot here from August 18th, starting at August 18th, all the way up to December 2020 of the ISM data and the changes in the data."
+    },
+    {
+      "start": 3572.26,
+      "end": 3581.26,
+      "text": "And you can see at the first point we're looking at here, August 18th, the ISM was at 60.8."
+    },
+    {
+      "start": 3581.26,
+      "end": 3587.26,
+      "text": "Then one year later, the ISM went below 50 for the first time."
+    },
+    {
+      "start": 3587.26,
+      "end": 3592.26,
+      "text": "So in August 2019, it was 48.8."
+    },
+    {
+      "start": 3592.26,
+      "end": 3604.26,
+      "text": "Now, if we look at what happened to rates in the US and the yield curve over that same time period, what was actually happening there?"
+    },
+    {
+      "start": 3604.26,
+      "end": 3607.26,
+      "text": "Well, we can go to our downloads area."
+    },
+    {
+      "start": 3607.26,
+      "end": 3617.26,
+      "text": "We can download our yield curve data and we can look at those two moments in time and compare the yield curves."
+    },
+    {
+      "start": 3617.26,
+      "end": 3631.26,
+      "text": "So if we look firstly at the blue line, we take this data and we look at what the yield curve looked like on August the 12th, 2018."
+    },
+    {
+      "start": 3631.26,
+      "end": 3640.26,
+      "text": "And you can see very clearly when we look at the blue line, it is a normal yield curve, a positively sloped yield curve."
+    },
+    {
+      "start": 3640.26,
+      "end": 3655.26,
+      "text": "And when you marry this up with the ISM data at a very high level, historically a peak level of 60.8, this is something that you would obviously expect."
+    },
+    {
+      "start": 3655.26,
+      "end": 3659.26,
+      "text": "Now, fast forward one year later, what's happened to the yield curve?"
+    },
+    {
+      "start": 3659.26,
+      "end": 3662.26,
+      "text": "Well, we now have an inversion."
+    },
+    {
+      "start": 3662.26,
+      "end": 3667.26,
+      "text": "So the short end of the curve is higher than the long end of the curve."
+    },
+    {
+      "start": 3667.26,
+      "end": 3671.26,
+      "text": "And you can see that the official rate itself."
+    },
+    {
+      "start": 3671.26,
+      "end": 3683.26,
+      "text": "So the Fed funds rate of 2.12 is higher than the 10 year rate, which is 1.74."
+    },
+    {
+      "start": 3683.26,
+      "end": 3692.26,
+      "text": "And basically from one month money all the way up to one year money, rates are higher than the 10 year rate."
+    },
+    {
+      "start": 3692.26,
+      "end": 3705.26,
+      "text": "Also overall, what you notice is beyond three month money is that all rates on the curve are lower than one year previously."
+    },
+    {
+      "start": 3705.26,
+      "end": 3715.26,
+      "text": "Now, if we look at what was happening with the ISM and the ISM report for August 2019."
+    },
+    {
+      "start": 3715.26,
+      "end": 3725.26,
+      "text": "And remember, the August 2019 report will have been published in the first week of September."
+    },
+    {
+      "start": 3725.26,
+      "end": 3729.26,
+      "text": "So when we look at that, what do we actually see?"
+    },
+    {
+      "start": 3729.26,
+      "end": 3736.26,
+      "text": "Well, this is what you'll see typically every month when you check the ISM manufacturing report."
+    },
+    {
+      "start": 3736.26,
+      "end": 3746.26,
+      "text": "You'll get a breakdown at the top level of all of the components and the aggregate index."
+    },
+    {
+      "start": 3746.26,
+      "end": 3752.26,
+      "text": "And you'll get language associated with the actual monthly change."
+    },
+    {
+      "start": 3752.26,
+      "end": 3754.26,
+      "text": "So let's run through these."
+    },
+    {
+      "start": 3754.26,
+      "end": 3763.26,
+      "text": "We see from July to August, the aggregate PMI goes from 51.2 to 49.1."
+    },
+    {
+      "start": 3763.26,
+      "end": 3767.26,
+      "text": "New orders goes below 50 as well."
+    },
+    {
+      "start": 3767.26,
+      "end": 3769.26,
+      "text": "Production goes below 50."
+    },
+    {
+      "start": 3769.26,
+      "end": 3771.26,
+      "text": "So does employment."
+    },
+    {
+      "start": 3771.26,
+      "end": 3775.26,
+      "text": "Supplier deliveries stays above 50 at 51.4."
+    },
+    {
+      "start": 3775.26,
+      "end": 3778.26,
+      "text": "And inventories go below 50 as well."
+    },
+    {
+      "start": 3778.26,
+      "end": 3785.26,
+      "text": "So our most important indicators, new orders, inventories and production all go below 50."
+    },
+    {
+      "start": 3785.26,
+      "end": 3790.26,
+      "text": "So the PMI goes below 50 at the aggregate level."
+    },
+    {
+      "start": 3790.26,
+      "end": 3799.26,
+      "text": "And you can see on the right hand side of this table, you can see the direction and the rate of change and the trend in months."
+    },
+    {
+      "start": 3799.26,
+      "end": 3807.26,
+      "text": "So the aggregate level PMI goes from growing to contracting and contracting for one month."
+    },
+    {
+      "start": 3807.26,
+      "end": 3812.26,
+      "text": "Inventories, you can see is contracting and the trend in month."
+    },
+    {
+      "start": 3812.26,
+      "end": 3814.26,
+      "text": "The trend in months is three months."
+    },
+    {
+      "start": 3814.26,
+      "end": 3820.26,
+      "text": "So the question is, what actually happened after this?"
+    },
+    {
+      "start": 3820.26,
+      "end": 3832.26,
+      "text": "Well, if we look at the yield curve data and we look at what happened in December 2019."
+    },
+    {
+      "start": 3832.26,
+      "end": 3840.26,
+      "text": "So if you recall, previously we looked at August 2018 versus August 2019."
+    },
+    {
+      "start": 3840.26,
+      "end": 3847.26,
+      "text": "And we saw an inversion in the short end of the curve for August 2019."
+    },
+    {
+      "start": 3847.26,
+      "end": 3849.26,
+      "text": "But what happened by December?"
+    },
+    {
+      "start": 3849.26,
+      "end": 3851.26,
+      "text": "Well, a couple of things."
+    },
+    {
+      "start": 3851.26,
+      "end": 3868.26,
+      "text": "The short end flattened and went into transition and started to form or started to move towards a more normal upward sloping positive yield curve."
+    },
+    {
+      "start": 3868.26,
+      "end": 3876.26,
+      "text": "So something obviously happened between September and December."
+    },
+    {
+      "start": 3876.26,
+      "end": 3886.26,
+      "text": "What we also notice as well, of course, all rates across the curve versus August 2018 are lower."
+    },
+    {
+      "start": 3886.26,
+      "end": 3893.26,
+      "text": "So we can see, for example, two year money is a full 1% lower."
+    },
+    {
+      "start": 3893.26,
+      "end": 3900.26,
+      "text": "And we can see on 10 year money, roughly the same, about 1% lower."
+    },
+    {
+      "start": 3900.26,
+      "end": 3908.26,
+      "text": "And what we can also see is the Fed funds rate is 155."
+    },
+    {
+      "start": 3908.26,
+      "end": 3915.26,
+      "text": "So down from 2.12 in our previous chart, August 2019."
+    },
+    {
+      "start": 3915.26,
+      "end": 3918.26,
+      "text": "So down around half a percent."
+    },
+    {
+      "start": 3918.26,
+      "end": 3925.26,
+      "text": "This is reflective of the Fed's rate cuts in September and October."
+    },
+    {
+      "start": 3925.26,
+      "end": 3931.26,
+      "text": "So the rate cuts obviously had an effect on the shape of the yield curve."
+    },
+    {
+      "start": 3931.26,
+      "end": 3940.26,
+      "text": "Now, something we mentioned a little bit earlier in the video series, we looked at the tens minus twos."
+    },
+    {
+      "start": 3940.26,
+      "end": 3947.26,
+      "text": "And we also previously looked at it in August 2019."
+    },
+    {
+      "start": 3947.26,
+      "end": 3950.26,
+      "text": "Well, this is when the ISM went below 50."
+    },
+    {
+      "start": 3950.26,
+      "end": 3962.26,
+      "text": "It happened in the same month where there was a slight inversion for a very, very short space of time in the tens minus twos."
+    },
+    {
+      "start": 3962.26,
+      "end": 3965.26,
+      "text": "It only lasted a few days."
+    },
+    {
+      "start": 3965.26,
+      "end": 3973.26,
+      "text": "So, yes, we mentioned in the video series earlier that the tens minus twos didn't really invert."
+    },
+    {
+      "start": 3973.26,
+      "end": 3981.26,
+      "text": "What we meant by that is it didn't really invert by an amount that's meaningful for a decent amount of time."
+    },
+    {
+      "start": 3981.26,
+      "end": 3994.26,
+      "text": "You can see on the chart here, towards the end of August 2019, the tens minus twos did invert by a tiny amount, five basis points."
+    },
+    {
+      "start": 3994.26,
+      "end": 3996.26,
+      "text": "But then it went positive again."
+    },
+    {
+      "start": 3996.26,
+      "end": 4005.26,
+      "text": "So you can see in September following that move, the tens minus twos goes positive."
+    },
+    {
+      "start": 4005.26,
+      "end": 4018.26,
+      "text": "The tens minus twos spread goes positive by a decent amount in September and then keeps on rallying September, October, November and December."
+    },
+    {
+      "start": 4018.26,
+      "end": 4024.26,
+      "text": "Now, what was happening to the S&P 500 itself?"
+    },
+    {
+      "start": 4024.26,
+      "end": 4028.26,
+      "text": "Well, if we look at a chart for 2019."
+    },
+    {
+      "start": 4028.26,
+      "end": 4035.26,
+      "text": "So let's start in Jan 2019 and go all the way up to Jan 2020."
+    },
+    {
+      "start": 4035.26,
+      "end": 4043.26,
+      "text": "We can see that the stock market S&P 500 rallied into August 2019."
+    },
+    {
+      "start": 4043.26,
+      "end": 4052.26,
+      "text": "Then the stock market went down in August 2019 and was kind of flat from July to September."
+    },
+    {
+      "start": 4052.26,
+      "end": 4058.26,
+      "text": "A small sell-off towards the end of September, beginning of October."
+    },
+    {
+      "start": 4058.26,
+      "end": 4062.26,
+      "text": "But then the market just continued to rally for the rest of the year."
+    },
+    {
+      "start": 4062.26,
+      "end": 4077.26,
+      "text": "And then when we look at January 2019 to January 2020, if you recall, the market was up in the year 2019 around 38%."
+    },
+    {
+      "start": 4077.26,
+      "end": 4085.26,
+      "text": "So we ask ourselves the obvious question on this historical case study."
+    },
+    {
+      "start": 4085.26,
+      "end": 4093.26,
+      "text": "When the ISM was falling from around the 60 level towards the 50 level, why was the stock market going up?"
+    },
+    {
+      "start": 4093.26,
+      "end": 4095.26,
+      "text": "Well, it was because the economy was still growing."
+    },
+    {
+      "start": 4095.26,
+      "end": 4099.26,
+      "text": "It was just growing at a slower rate."
+    },
+    {
+      "start": 4099.26,
+      "end": 4100.26,
+      "text": "Next question."
+    },
+    {
+      "start": 4100.26,
+      "end": 4111.26,
+      "text": "When the ISM went below 50 for the first time, why did the market not sell off aggressively?"
+    },
+    {
+      "start": 4111.26,
+      "end": 4116.26,
+      "text": "Well, the market was looking at everything that we look at."
+    },
+    {
+      "start": 4116.26,
+      "end": 4118.26,
+      "text": "And guess who else was looking at it?"
+    },
+    {
+      "start": 4118.26,
+      "end": 4120.26,
+      "text": "The Federal Reserve."
+    },
+    {
+      "start": 4120.26,
+      "end": 4125.26,
+      "text": "So, yes, the Fed was looking at the ISM."
+    },
+    {
+      "start": 4125.26,
+      "end": 4127.26,
+      "text": "The Fed was looking at the yield curve."
+    },
+    {
+      "start": 4127.26,
+      "end": 4130.26,
+      "text": "And the Fed was looking at the stock market as well."
+    },
+    {
+      "start": 4130.26,
+      "end": 4136.26,
+      "text": "And the private market was traders, portfolio managers."
+    },
+    {
+      "start": 4136.26,
+      "end": 4138.26,
+      "text": "We were all looking at the same thing."
+    },
+    {
+      "start": 4138.26,
+      "end": 4144.26,
+      "text": "And then the market started to expect that the Fed would cut rates."
+    },
+    {
+      "start": 4144.26,
+      "end": 4148.26,
+      "text": "So this is why the market didn't sell off too aggressively."
+    },
+    {
+      "start": 4148.26,
+      "end": 4152.26,
+      "text": "There was just a small correction in the market."
+    },
+    {
+      "start": 4152.26,
+      "end": 4160.26,
+      "text": "And then for the rest of 2019, the market went up because the Fed actually did something."
+    },
+    {
+      "start": 4160.26,
+      "end": 4162.26,
+      "text": "So let's run through this case study."
+    },
+    {
+      "start": 4162.26,
+      "end": 4177.26,
+      "text": "It's always a good exercise to do, not just because you're in the learning process of how to tie all of these things together and how to use all of these tools at any one moment in time."
+    },
+    {
+      "start": 4177.26,
+      "end": 4186.26,
+      "text": "But if we look at cases in stock market history, it's just a good learning experience to know what was going on at the time."
+    },
+    {
+      "start": 4186.26,
+      "end": 4200.26,
+      "text": "We're building up your knowledge so you can actually go and have a look at a lot more past situations in the financial markets and apply the same approach just from a general learning perspective."
+    },
+    {
+      "start": 4200.26,
+      "end": 4203.26,
+      "text": "So let's put all this together."
+    },
+    {
+      "start": 4203.26,
+      "end": 4206.26,
+      "text": "What was actually going on at this moment in time?"
+    },
+    {
+      "start": 4206.26,
+      "end": 4219.26,
+      "text": "Well, we know in August 2018, when we look at the data, the ISM peaked at 60.8 and it continued on a steady decline till December 2019."
+    },
+    {
+      "start": 4219.26,
+      "end": 4232.26,
+      "text": "The ISM went below 50 for the first time in August 2019."
+    },
+    {
+      "start": 4232.26,
+      "end": 4233.26,
+      "text": "Remember, the report for August was released in September."
+    },
+    {
+      "start": 4233.26,
+      "end": 4236.26,
+      "text": "That report is released on the first business day of every month."
+    },
+    {
+      "start": 4236.26,
+      "end": 4241.26,
+      "text": "So that report was released on the first business day of September."
+    },
+    {
+      "start": 4241.26,
+      "end": 4251.26,
+      "text": "Now, while the ISM was steadily declining from its peak, so from September 2018, the yield curve was in the process of flattening."
+    },
+    {
+      "start": 4251.26,
+      "end": 4260.26,
+      "text": "And then the short end of the curve inverted against the middle part of the curve in spring 2019."
+    },
+    {
+      "start": 4260.26,
+      "end": 4266.26,
+      "text": "The yield curve at that time was essentially flat, but it was threatening to invert."
+    },
+    {
+      "start": 4266.26,
+      "end": 4267.26,
+      "text": "It was in transition."
+    },
+    {
+      "start": 4267.26,
+      "end": 4276.26,
+      "text": "And the tens minus twos only really slightly inverted in August 2019."
+    },
+    {
+      "start": 4276.26,
+      "end": 4277.26,
+      "text": "Why?"
+    },
+    {
+      "start": 4277.26,
+      "end": 4279.26,
+      "text": "Because the Fed saw the problem coming."
+    },
+    {
+      "start": 4279.26,
+      "end": 4290.26,
+      "text": "And they cut rates in July, then in September and October in response to the money market chaos and the ISM slowdown."
+    },
+    {
+      "start": 4290.26,
+      "end": 4297.26,
+      "text": "And the market itself was clearly expecting lower rates from the Fed."
+    },
+    {
+      "start": 4297.26,
+      "end": 4304.26,
+      "text": "So the S&P 500 sold off between October 2018 and January 2019."
+    },
+    {
+      "start": 4304.26,
+      "end": 4312.26,
+      "text": "It went down approximately 17% while the ISM was in decline from peak."
+    },
+    {
+      "start": 4312.26,
+      "end": 4316.26,
+      "text": "So we saw the decline in the ISM from its peak."
+    },
+    {
+      "start": 4316.26,
+      "end": 4322.26,
+      "text": "Growth was slowing down and we got a 0-1 situation."
+    },
+    {
+      "start": 4323.26,
+      "end": 4331.26,
+      "text": "However, if you think back to the definitions of bull and bear markets, there was no official bear market."
+    },
+    {
+      "start": 4331.26,
+      "end": 4337.26,
+      "text": "A 20% move down from the high print of the S&P 500."
+    },
+    {
+      "start": 4339.26,
+      "end": 4348.26,
+      "text": "After the Fed's rate cuts and in December 2019, the two-year and 10-year yields were 1% lower."
+    },
+    {
+      "start": 4348.26,
+      "end": 4356.26,
+      "text": "The yield curve had essentially steepened and was flat at the front end and normal at the back end."
+    },
+    {
+      "start": 4356.26,
+      "end": 4357.26,
+      "text": "What was happening?"
+    },
+    {
+      "start": 4357.26,
+      "end": 4360.26,
+      "text": "It was in transition back to normal."
+    },
+    {
+      "start": 4360.26,
+      "end": 4368.26,
+      "text": "So basically, the Fed's actions stopped or prevented a recession."
+    },
+    {
+      "start": 4368.26,
+      "end": 4370.26,
+      "text": "So a recession was averted."
+    },
+    {
+      "start": 4370.26,
+      "end": 4376.26,
+      "text": "So we didn't get two quarters of negative GDP growth."
+    },
+    {
+      "start": 4377.26,
+      "end": 4379.26,
+      "text": "What did it take to have a recession?"
+    },
+    {
+      "start": 4379.26,
+      "end": 4385.26,
+      "text": "Well, it took COVID-19 in 2020 to derail everything."
+    },
+    {
+      "start": 4385.26,
+      "end": 4398.26,
+      "text": "That's when we had the economic shutdowns or lockdowns and COVID-19 was essentially an exogenous event responsible for the recession in 2020."
+    },
+    {
+      "start": 4398.26,
+      "end": 4403.26,
+      "text": "Now, as I say, always a useful exercise to go through these things."
+    },
+    {
+      "start": 4403.26,
+      "end": 4412.26,
+      "text": "But let's think about what you're going to be doing on a monthly basis when you're looking at ISM in isolation."
+    },
+    {
+      "start": 4413.26,
+      "end": 4422.26,
+      "text": "You're going to be essentially doing a quantitative and qualitative assessment of the ISM every month."
+    },
+    {
+      "start": 4422.26,
+      "end": 4428.26,
+      "text": "Now, in the beginning, the processes that you implement will be obviously new to you."
+    },
+    {
+      "start": 4429.26,
+      "end": 4432.26,
+      "text": "But don't worry, you'll get used to them."
+    },
+    {
+      "start": 4432.26,
+      "end": 4437.26,
+      "text": "You'll go from being slow at this to getting quite quick and efficient over time."
+    },
+    {
+      "start": 4438.26,
+      "end": 4450.26,
+      "text": "So let's have a look here at what you will get when you get the data and put it into your spreadsheets that we provided in the downloads area."
+    },
+    {
+      "start": 4450.26,
+      "end": 4456.26,
+      "text": "So what we've got in front of us here is what we've called the ISM heat map."
+    },
+    {
+      "start": 4456.26,
+      "end": 4465.26,
+      "text": "And we're looking at the period here from April 2018 up till August 2019."
+    },
+    {
+      "start": 4465.26,
+      "end": 4471.26,
+      "text": "So we're including that period that year we looked at August 18 to August 2019."
+    },
+    {
+      "start": 4472.26,
+      "end": 4479.26,
+      "text": "And if you recall, that's the period where the ISM went from peak to going below 50."
+    },
+    {
+      "start": 4479.26,
+      "end": 4495.26,
+      "text": "What we've got on the screen with the ISM heat map, if you cut it down the middle and look to the left, you'll see the aggregate PMI and you'll see the five components of the aggregate PMI."
+    },
+    {
+      "start": 4495.26,
+      "end": 4507.26,
+      "text": "And then on the right hand side, you'll see the areas in the survey that are not included as part of the ISM aggregate PMI."
+    },
+    {
+      "start": 4507.26,
+      "end": 4523.26,
+      "text": "And what the heat map essentially does is just give you a very quick visualization via colors of growth and slowdown across the data."
+    },
+    {
+      "start": 4523.26,
+      "end": 4532.26,
+      "text": "So when you look at, for example, a strong green color, this is indicating strong growth."
+    },
+    {
+      "start": 4532.26,
+      "end": 4537.26,
+      "text": "When you're looking at a yellow color, this is indicating moderate growth."
+    },
+    {
+      "start": 4537.26,
+      "end": 4546.26,
+      "text": "When you're seeing an orange or red color, this is inferring essentially contraction."
+    },
+    {
+      "start": 4546.26,
+      "end": 4554.26,
+      "text": "So when you're doing this on a monthly basis, it's good to update this heat map and just have a look at the bigger picture."
+    },
+    {
+      "start": 4554.26,
+      "end": 4557.26,
+      "text": "You know, where have we come from in the ISM?"
+    },
+    {
+      "start": 4557.26,
+      "end": 4558.26,
+      "text": "Where are we now?"
+    },
+    {
+      "start": 4558.26,
+      "end": 4560.26,
+      "text": "And where could we be going?"
+    },
+    {
+      "start": 4560.26,
+      "end": 4563.26,
+      "text": "What is the direction we are going in?"
+    },
+    {
+      "start": 4563.26,
+      "end": 4579.26,
+      "text": "And what does this all mean when we use it in conjunction with other leading indicators that we've covered up to this point in the video series and that we're going to cover in future parts of the video series?"
+    },
+    {
+      "start": 4579.26,
+      "end": 4585.26,
+      "text": "And also, what does it mean in perspective of Fed policy?"
+    },
+    {
+      "start": 4585.26,
+      "end": 4593.26,
+      "text": "These are the questions that we always need to be asking ourselves and the heat map itself just paints the bigger picture."
+    },
+    {
+      "start": 4593.26,
+      "end": 4600.26,
+      "text": "It paints the bigger picture of the direction we are moving in and it literally provides it to you visually."
+    },
+    {
+      "start": 4600.26,
+      "end": 4619.26,
+      "text": "Now, the ISM is not just useful to us as traders and portfolio managers in assessing the bigger picture and getting a predisposition and therefore a portfolio bias."
+    },
+    {
+      "start": 4620.26,
+      "end": 4626.26,
+      "text": "What it also does is it gives us potential trade ideas."
+    },
+    {
+      "start": 4626.26,
+      "end": 4640.26,
+      "text": "So, we get in the ISM a lot of qualitative statements and qualitative information from the manufacturing companies themselves."
+    },
+    {
+      "start": 4640.26,
+      "end": 4649.26,
+      "text": "And from that qualitative information and also quantitative information, we can infer potential trade ideas."
+    },
+    {
+      "start": 4649.26,
+      "end": 4669.26,
+      "text": "So, each of the 18 manufacturing industries within the U.S. manufacturing sector, they provide us with qualitative information as part of the monthly ISM survey."
+    },
+    {
+      "start": 4669.26,
+      "end": 4676.26,
+      "text": "And you can see on the screen here, the example from August 2019."
+    },
+    {
+      "start": 4676.26,
+      "end": 4689.26,
+      "text": "They basically tell us every month, each industry that is, whether they are growing or contracting or there's been no change."
+    },
+    {
+      "start": 4689.26,
+      "end": 4705.26,
+      "text": "On the example here that you see on the screen, you can see a snapshot of what was reported in August 2019 from the 18 manufacturing industries."
+    },
+    {
+      "start": 4705.26,
+      "end": 4715.26,
+      "text": "So, we can see here, reading off the screen, of the 18 manufacturing industries, 9 reported growth in August in the following order."
+    },
+    {
+      "start": 4715.26,
+      "end": 4722.26,
+      "text": "And then they list them in order as to how strong they were reporting their growth."
+    },
+    {
+      "start": 4722.26,
+      "end": 4729.26,
+      "text": "And then there were 7 industries reporting contraction in the following order."
+    },
+    {
+      "start": 4729.26,
+      "end": 4732.26,
+      "text": "So, least contracting to most contracting."
+    },
+    {
+      "start": 4732.26,
+      "end": 4737.26,
+      "text": "So, that leaves basically 2 where there was no change."
+    },
+    {
+      "start": 4737.26,
+      "end": 4746.26,
+      "text": "So, we have 16, 9 plus 7 reporting growth, 9 and 7 contraction."
+    },
+    {
+      "start": 4746.26,
+      "end": 4754.26,
+      "text": "And then we have 2 that are not listed here, that basically were reported flat."
+    },
+    {
+      "start": 4754.26,
+      "end": 4764.26,
+      "text": "Now, you'll see that we've highlighted 2 sectors here, chemical products and transportation equipment."
+    },
+    {
+      "start": 4764.26,
+      "end": 4771.26,
+      "text": "Just for the purposes of an example of how you might be thinking about things on a monthly basis,"
+    },
+    {
+      "start": 4771.26,
+      "end": 4780.26,
+      "text": "when you pull up both the quantitative and qualitative information from ISM surveys."
+    },
+    {
+      "start": 4780.26,
+      "end": 4785.26,
+      "text": "And there is further qualitative information available."
+    },
+    {
+      "start": 4785.26,
+      "end": 4790.26,
+      "text": "And this is why we've highlighted chemical products and transportation."
+    },
+    {
+      "start": 4790.26,
+      "end": 4801.26,
+      "text": "So, you'll get some qualitative information from the industries themselves where they're actually making statements."
+    },
+    {
+      "start": 4801.26,
+      "end": 4807.26,
+      "text": "So, the purchasing managers of the industries themselves."
+    },
+    {
+      "start": 4807.26,
+      "end": 4814.26,
+      "text": "So, particular companies within those industries are making qualitative statements about their business."
+    },
+    {
+      "start": 4814.26,
+      "end": 4820.26,
+      "text": "And you can see here from the August 2019 example, when we look at chemical products."
+    },
+    {
+      "start": 4820.26,
+      "end": 4827.26,
+      "text": "There was a statement that was made by one of the purchasing managers of a chemical products company."
+    },
+    {
+      "start": 4827.26,
+      "end": 4832.26,
+      "text": "That was highlighted in the ISM report for that month."
+    },
+    {
+      "start": 4832.26,
+      "end": 4842.26,
+      "text": "And that person was saying, while business is strong, there is an undercurrent of fear and alarm regarding the trade wars and a potential recession."
+    },
+    {
+      "start": 4842.26,
+      "end": 4851.26,
+      "text": "And if you remember from the previous slide, chemical products was the sector that was growing, but growing at the slowest pace."
+    },
+    {
+      "start": 4851.26,
+      "end": 4862.26,
+      "text": "Also, transportation equipment, there was a qualitative statement made there by a purchasing manager from one of the manufacturing companies within that sector."
+    },
+    {
+      "start": 4862.26,
+      "end": 4871.26,
+      "text": "And that person stated, slowest month, referring to July, this year so far in sales."
+    },
+    {
+      "start": 4871.26,
+      "end": 4887.26,
+      "text": "And if you recall back to the previous slide, transportation equipment was contracting at a fast pace when compared to other sectors that were growing and even contracting as well."
+    },
+    {
+      "start": 4887.26,
+      "end": 4898.26,
+      "text": "So, it's always good to have a look at these past reports and actually go and see how things panned out."
+    },
+    {
+      "start": 4898.26,
+      "end": 4913.26,
+      "text": "Remember, we're looking here at quantitative and qualitative data from companies within industries of the manufacturing sector in the United States."
+    },
+    {
+      "start": 4913.26,
+      "end": 4922.26,
+      "text": "And we're looking at the actual earnings reports of the companies themselves."
+    },
+    {
+      "start": 4922.26,
+      "end": 4926.26,
+      "text": "So, let's see how things panned out."
+    },
+    {
+      "start": 4926.26,
+      "end": 4942.26,
+      "text": "What we're looking at here is the stock, Dow DuPont, which is the largest chemicals conglomerate in the world, or at least they were at the time period we're looking at."
+    },
+    {
+      "start": 4942.26,
+      "end": 4951.26,
+      "text": "And we're looking at that relative to the S&P 500, so the broader market."
+    },
+    {
+      "start": 4951.26,
+      "end": 4965.26,
+      "text": "And what we've got on the screen here is basically both Dow DuPont and the S&P indexed to 100 at the beginning of our time period."
+    },
+    {
+      "start": 4965.26,
+      "end": 4974.26,
+      "text": "And what we've got on the screen is starting in September 2018 and ending in December 2019."
+    },
+    {
+      "start": 4974.26,
+      "end": 4975.26,
+      "text": "And what do we know about that period?"
+    },
+    {
+      "start": 4975.26,
+      "end": 4988.26,
+      "text": "Well, that was the period that we've been looking at throughout this video as an example period of the ISM slowdown and the Fed actions."
+    },
+    {
+      "start": 4988.26,
+      "end": 4991.26,
+      "text": "So, what we notice here is a few things."
+    },
+    {
+      "start": 4991.26,
+      "end": 5000.26,
+      "text": "So, first of all, we notice that over that entire time period, the S&P 500 was up around 11%."
+    },
+    {
+      "start": 5000.26,
+      "end": 5009.26,
+      "text": "So, the index goes from 100 in September 2018 to 111 by December 2019."
+    },
+    {
+      "start": 5009.26,
+      "end": 5010.26,
+      "text": "What do we notice about Dow DuPont?"
+    },
+    {
+      "start": 5010.26,
+      "end": 5020.26,
+      "text": "So, Dow DuPont, the index starts at 100 and it goes down roughly 36%."
+    },
+    {
+      "start": 5020.26,
+      "end": 5030.26,
+      "text": "So, the stock goes down by 36% roughly to December 2019."
+    },
+    {
+      "start": 5030.26,
+      "end": 5045.26,
+      "text": "And then when we compare this relative to the S&P 500, there's obviously underperformance of around 47%, which is a very big underperformance."
+    },
+    {
+      "start": 5045.26,
+      "end": 5058.26,
+      "text": "But let's think about this in terms of the storyline of how things panned out over this time period and what was going on in the background."
+    },
+    {
+      "start": 5058.26,
+      "end": 5071.26,
+      "text": "Well, we know in September when they reported the August ISM, so September 2018, we know that was the peak in the ISM."
+    },
+    {
+      "start": 5071.26,
+      "end": 5082.26,
+      "text": "And we see both the S&P 500 and Dow DuPont go down together, but the S&P 500 was outperforming Dow DuPont."
+    },
+    {
+      "start": 5082.26,
+      "end": 5100.26,
+      "text": "When we got into 2019, the S&P 500 started to rally and then by springtime, so April, May 2019, that's when the S&P was flat versus September 2018."
+    },
+    {
+      "start": 5100.26,
+      "end": 5106.26,
+      "text": "But Dow DuPont didn't go higher, it actually went lower."
+    },
+    {
+      "start": 5106.26,
+      "end": 5115.26,
+      "text": "So, by May time, you can see that Dow DuPont is lower than where it was at the beginning of 2019."
+    },
+    {
+      "start": 5115.26,
+      "end": 5117.26,
+      "text": "And then what happens?"
+    },
+    {
+      "start": 5117.26,
+      "end": 5126.26,
+      "text": "Well, we get our August 2019 ISM report, and we know what was happening around that time."
+    },
+    {
+      "start": 5126.26,
+      "end": 5134.26,
+      "text": "We get our 2019 ISM report in September 2019, and guess what?"
+    },
+    {
+      "start": 5134.26,
+      "end": 5136.26,
+      "text": "Dow DuPont doesn't rally."
+    },
+    {
+      "start": 5136.26,
+      "end": 5139.26,
+      "text": "But we know what was happening as well."
+    },
+    {
+      "start": 5139.26,
+      "end": 5143.26,
+      "text": "The Fed was actually cutting rates."
+    },
+    {
+      "start": 5143.26,
+      "end": 5149.26,
+      "text": "So, even though the Fed cut rates, Dow DuPont didn't rally, but the S&P 500 did."
+    },
+    {
+      "start": 5149.26,
+      "end": 5163.26,
+      "text": "So, when we look back at quantitative and qualitative data and statements in past ISM reports, and"
+    },
+    {
+      "start": 5163.26,
+      "end": 5174.26,
+      "text": "looking at this example, the August 2019 example, where the ISM went below 50 for the first time, it's"
+    },
+    {
+      "start": 5174.26,
+      "end": 5183.26,
+      "text": "interesting to see that when we look at chemical products that were reporting very, very slow"
+    },
+    {
+      "start": 5183.26,
+      "end": 5191.26,
+      "text": "growth, and the slowest growth of all sectors that were reporting growth, we look at, for"
+    },
+    {
+      "start": 5191.26,
+      "end": 5201.26,
+      "text": "example, the largest chemical conglomerate at the time, and regardless of Fed action, Dow DuPont"
+    },
+    {
+      "start": 5201.26,
+      "end": 5204.26,
+      "text": "just didn't move."
+    },
+    {
+      "start": 5204.26,
+      "end": 5206.26,
+      "text": "It didn't go up."
+    },
+    {
+      "start": 5206.26,
+      "end": 5208.26,
+      "text": "It didn't really go down much."
+    },
+    {
+      "start": 5208.26,
+      "end": 5216.26,
+      "text": "It just kind of went sideways, but really underperformed the broader market."
+    },
+    {
+      "start": 5216.26,
+      "end": 5226.26,
+      "text": "Now, if you recall, we also looked at transportation equipment from our August 2019 report."
+    },
+    {
+      "start": 5226.26,
+      "end": 5231.26,
+      "text": "And here we have a company called Greenbrier Companies."
+    },
+    {
+      "start": 5231.26,
+      "end": 5240.26,
+      "text": "Greenbrier essentially supplies transportation equipment and services to the railroad industry."
+    },
+    {
+      "start": 5240.26,
+      "end": 5248.26,
+      "text": "And we've again indexed this company relative to the S&P 500."
+    },
+    {
+      "start": 5248.26,
+      "end": 5255.26,
+      "text": "And you can see a similar situation as we saw in chemical products with Dow DuPont."
+    },
+    {
+      "start": 5255.26,
+      "end": 5257.26,
+      "text": "But actually, it's a little bit worse."
+    },
+    {
+      "start": 5257.26,
+      "end": 5264.26,
+      "text": "Of course, we get the usual situation that we looked at with the S&P 500."
+    },
+    {
+      "start": 5264.26,
+      "end": 5271.26,
+      "text": "Previously, where over the period, it's up around 11%."
+    },
+    {
+      "start": 5271.26,
+      "end": 5278.26,
+      "text": "So again, we're looking at the September 2018 period to December 2019."
+    },
+    {
+      "start": 5278.26,
+      "end": 5283.26,
+      "text": "But then you look at Greenbrier, which is in the transportation equipment sector."
+    },
+    {
+      "start": 5283.26,
+      "end": 5288.26,
+      "text": "And these guys were down circa 45%."
+    },
+    {
+      "start": 5288.26,
+      "end": 5304.26,
+      "text": "So over this period, we have roughly a 56% underperformance from Greenbrier relative to the S&P 500."
+    },
+    {
+      "start": 5304.26,
+      "end": 5321.26,
+      "text": "And again, if we just look at some of the details here, we know as the ISM peaked in August 2018, which is our point of origin at the beginning of September when the ISM report caps out."
+    },
+    {
+      "start": 5321.26,
+      "end": 5336.26,
+      "text": "And then we look for the next, say six months after that, Greenbrier underperforms the S&P 500 as the ISM is slowing down."
+    },
+    {
+      "start": 5336.26,
+      "end": 5350.26,
+      "text": "As we move into the spring of 2019, when the ISM is hovering above 50, and then it goes below 50 for the first time in August 2019,"
+    },
+    {
+      "start": 5350.26,
+      "end": 5356.26,
+      "text": "but reported in September, Greenbrier for the remainder of the year didn't go up."
+    },
+    {
+      "start": 5356.26,
+      "end": 5358.26,
+      "text": "It went sideways."
+    },
+    {
+      "start": 5360.26,
+      "end": 5379.26,
+      "text": "And remember, this was the period where in the summer of 2019, the Fed was in the market and responding to stresses in the bond market and in the macroeconomic leading indicators like the ISM."
+    },
+    {
+      "start": 5379.26,
+      "end": 5383.26,
+      "text": "And they were active cutting rates."
+    },
+    {
+      "start": 5383.26,
+      "end": 5384.26,
+      "text": "And what happened?"
+    },
+    {
+      "start": 5384.26,
+      "end": 5393.26,
+      "text": "Greenbrier didn't respond to that and essentially just went sideways while the S&P 500 went up."
+    },
+    {
+      "start": 5393.26,
+      "end": 5407.26,
+      "text": "But overall, as the ISM slowed down from peak over this entire period, Greenbrier underperformed the S&P 500 by roughly 55, 56%."
+    },
+    {
+      "start": 5407.26,
+      "end": 5423.26,
+      "text": "So again, you can use the ISM not only for figuring out which way the bigger picture macro wind is blowing."
+    },
+    {
+      "start": 5423.26,
+      "end": 5440.26,
+      "text": "You can use it for specific industry sectors and look at the data and listen to what the companies are actually saying and figure out what is going on and where there might be areas for potential trade ideas."
+    },
+    {
+      "start": 5440.26,
+      "end": 5450.26,
+      "text": "So you can get light bulb indications or clues of where to look in the stock market from ISM surveys."
+    },
+    {
+      "start": 5450.26,
+      "end": 5470.26,
+      "text": "On a monthly basis, you have to go through a quantitative and qualitative process of organizing the numbers and the qualitative statements and looking for turning points, looking for trends in the aggregate data and also at a sector level."
+    },
+    {
+      "start": 5470.26,
+      "end": 5477.26,
+      "text": "Now, you don't just look at this in the ISM and then decide to put a trade on."
+    },
+    {
+      "start": 5477.26,
+      "end": 5479.26,
+      "text": "Of course, you don't do that."
+    },
+    {
+      "start": 5479.26,
+      "end": 5481.26,
+      "text": "That's a rookie error."
+    },
+    {
+      "start": 5481.26,
+      "end": 5497.26,
+      "text": "And you've got to go through all of the other processes that we're going to go through in this video series to identify potential stocks that will move from indicated trends in the ISM."
+    },
+    {
+      "start": 5497.26,
+      "end": 5501.26,
+      "text": "You don't just stop here and then put a trade on."
+    },
+    {
+      "start": 5501.26,
+      "end": 5503.26,
+      "text": "There's a lot more work to do."
+    },
+    {
+      "start": 5503.26,
+      "end": 5513.26,
+      "text": "Use the ISM as a place to get clues, clues only as to what might be happening in some sectors."
+    },
+    {
+      "start": 5513.26,
+      "end": 5525.26,
+      "text": "Then you've got to go through the rest of the processes that are required to generate what we actually define as a genuine trade idea."
+    },
+    {
+      "start": 5525.26,
+      "end": 5535.26,
+      "text": "Do not look at a number in the ISM, then look for any stock in the sector without doing any further work."
+    },
+    {
+      "start": 5535.26,
+      "end": 5538.26,
+      "text": "Then think this is a trade idea and put a position on."
+    },
+    {
+      "start": 5538.26,
+      "end": 5541.26,
+      "text": "You have to do a lot more work than that."
+    },
+    {
+      "start": 5541.26,
+      "end": 5543.26,
+      "text": "No shortcuts, please."
+    },
+    {
+      "start": 5543.26,
+      "end": 5551.26,
+      "text": "And also, do not rely on the ISM as the only place you look for potential trade ideas."
+    },
+    {
+      "start": 5551.26,
+      "end": 5558.26,
+      "text": "There's multiple ways to generate trade ideas, not just with the ISM."
+    },
+    {
+      "start": 5558.26,
+      "end": 5564.26,
+      "text": "Now, when it comes to sectors, we don't just get qualitative information."
+    },
+    {
+      "start": 5564.26,
+      "end": 5571.26,
+      "text": "We also get quantitative information that's released by the ISM every month."
+    },
+    {
+      "start": 5571.26,
+      "end": 5584.26,
+      "text": "And if you go to the downloads area under the video, download the ISM spreadsheet, you'll see a file within the spreadsheet."
+    },
+    {
+      "start": 5584.26,
+      "end": 5588.26,
+      "text": "You'll see a tab called sectors."
+    },
+    {
+      "start": 5588.26,
+      "end": 5605.26,
+      "text": "And you'll see that for each area of the report, that each sector provides the change versus the last month with a statement of growth, contraction or neutral."
+    },
+    {
+      "start": 5605.26,
+      "end": 5612.26,
+      "text": "So here's an example from the second half of 2020."
+    },
+    {
+      "start": 5612.26,
+      "end": 5619.26,
+      "text": "We've organized it so that in the spreadsheet, it shows the last six reports."
+    },
+    {
+      "start": 5619.26,
+      "end": 5626.26,
+      "text": "And you can update this information yourself every month when the data comes out."
+    },
+    {
+      "start": 5626.26,
+      "end": 5628.26,
+      "text": "It's very straightforward to do so."
+    },
+    {
+      "start": 5628.26,
+      "end": 5642.26,
+      "text": "And if you look at this table, we're looking here at the ISM manufacturing aggregate number that's reported by each of the 18 manufacturing sectors."
+    },
+    {
+      "start": 5642.26,
+      "end": 5650.26,
+      "text": "So we've got the data here from July 2020 to December 2020."
+    },
+    {
+      "start": 5650.26,
+      "end": 5661.26,
+      "text": "And if you look at the sector data from December 2020, you can see it's been organized in descending order."
+    },
+    {
+      "start": 5661.26,
+      "end": 5671.26,
+      "text": "So we have the sector that's reporting the biggest change in growth at the top."
+    },
+    {
+      "start": 5671.26,
+      "end": 5677.26,
+      "text": "So that is apparel, leather and allied products."
+    },
+    {
+      "start": 5677.26,
+      "end": 5693.26,
+      "text": "And then at the bottom, we've got the industry that's reporting the highest amount of contraction month on month, which is printing and related support activities."
+    },
+    {
+      "start": 5693.26,
+      "end": 5715.26,
+      "text": "And so the rankings that we've applied here in the spreadsheet for December 2020, for example, the rankings refer to how fast each sector is growing or contracting relative to each other."
+    },
+    {
+      "start": 5715.26,
+      "end": 5723.26,
+      "text": "So for example, in December 2020, we've sorted this month in descending order."
+    },
+    {
+      "start": 5723.26,
+      "end": 5734.26,
+      "text": "And there's 18 manufacturing industries, 16 of them reported growth and two reported contraction."
+    },
+    {
+      "start": 5734.26,
+      "end": 5747.26,
+      "text": "And apparel, leather and allied products is given a score of 16 because that is the fastest growing sector reported that month."
+    },
+    {
+      "start": 5747.26,
+      "end": 5757.26,
+      "text": "Furniture and related products is given the rank of 15 wood products, 14."
+    },
+    {
+      "start": 5757.26,
+      "end": 5759.26,
+      "text": "And then we keep going all the way down."
+    },
+    {
+      "start": 5759.26,
+      "end": 5763.26,
+      "text": "We then get to sectors that are reported as contracting."
+    },
+    {
+      "start": 5763.26,
+      "end": 5769.26,
+      "text": "So non-metallic mineral products and printing and related support activities."
+    },
+    {
+      "start": 5769.26,
+      "end": 5783.26,
+      "text": "So of the 18 manufacturing industries, apparel, leather and allied products is reporting the strongest growth, printing and related support activities, the weakest growth, but not actually growth."
+    },
+    {
+      "start": 5783.26,
+      "end": 5787.26,
+      "text": "It's actually contraction."
+    },
+    {
+      "start": 5787.26,
+      "end": 5795.26,
+      "text": "What we can also see from this display that you've got in the spreadsheet is a couple of other things."
+    },
+    {
+      "start": 5795.26,
+      "end": 5812.26,
+      "text": "So you can also see the amount of months in the last six months that a particular sector has been growing or contracting or where the turning points have occurred, which is also very useful."
+    },
+    {
+      "start": 5812.26,
+      "end": 5817.26,
+      "text": "And also we're color coded."
+    },
+    {
+      "start": 5817.26,
+      "end": 5818.26,
+      "text": "So we're on a heat map here."
+    },
+    {
+      "start": 5818.26,
+      "end": 5827.26,
+      "text": "So visually you can see where contraction is occurring, when it's occurred, and you can see where growth is occurring and when it's occurred."
+    },
+    {
+      "start": 5827.26,
+      "end": 5830.26,
+      "text": "But this is for the aggregate number."
+    },
+    {
+      "start": 5830.26,
+      "end": 5835.26,
+      "text": "This is for each sector's aggregate index."
+    },
+    {
+      "start": 5835.26,
+      "end": 5838.26,
+      "text": "We can also look at the sub components."
+    },
+    {
+      "start": 5838.26,
+      "end": 5842.26,
+      "text": "So we can look at, for example, new orders."
+    },
+    {
+      "start": 5842.26,
+      "end": 5862.26,
+      "text": "And on a monthly basis, you would simply go through these tables and firstly, obviously organizing your data and spreadsheets, but you would go through these tables and start to look for clues of turning points and trends for potential trade ideas."
+    },
+    {
+      "start": 5862.26,
+      "end": 5869.26,
+      "text": "Something that you might notice in new orders may counter what you're seeing in the aggregate number."
+    },
+    {
+      "start": 5869.26,
+      "end": 5874.26,
+      "text": "And remember, new orders tends to lead the aggregate number."
+    },
+    {
+      "start": 5874.26,
+      "end": 5876.26,
+      "text": "New orders are the most sensitive."
+    },
+    {
+      "start": 5876.26,
+      "end": 5883.26,
+      "text": "So for example, in this table, something that may jump off the page to you is textile mills."
+    },
+    {
+      "start": 5883.26,
+      "end": 5890.26,
+      "text": "Textile mills is reporting contraction coming from the previous month."
+    },
+    {
+      "start": 5890.26,
+      "end": 5901.26,
+      "text": "So reporting contraction in December 2020 coming from a previous month of growth in new orders in November 2020."
+    },
+    {
+      "start": 5901.26,
+      "end": 5919.26,
+      "text": "And if we go to the previous slide, we can see that textile mills as a sector was reporting some slow growth and had a ranking of four out of our 18 manufacturing sectors."
+    },
+    {
+      "start": 5919.26,
+      "end": 5922.26,
+      "text": "So this is something that might, you know, jump off the page to you."
+    },
+    {
+      "start": 5922.26,
+      "end": 5936.26,
+      "text": "You would do a lot more work, obviously, and you would start looking for potential trends and potential turning points in these sectors from growth to contraction or contraction to growth."
+    },
+    {
+      "start": 5936.26,
+      "end": 5940.26,
+      "text": "We also have production in there."
+    },
+    {
+      "start": 5940.26,
+      "end": 5949.26,
+      "text": "We also have employment, deliveries, deliveries, and inventories."
+    },
+    {
+      "start": 5949.26,
+      "end": 5955.26,
+      "text": "And inventories, again, inventories is an important one."
+    },
+    {
+      "start": 5955.26,
+      "end": 5968.26,
+      "text": "You would probably look at inventories for turning points going from contraction to growth and growth to contraction and look for trends."
+    },
+    {
+      "start": 5968.26,
+      "end": 5978.26,
+      "text": "And something, you know, that may jump off the page here is, for example, furniture and related products."
+    },
+    {
+      "start": 5978.26,
+      "end": 5984.26,
+      "text": "So if you look at the last two months for furniture and related products, what's been happening?"
+    },
+    {
+      "start": 5984.26,
+      "end": 5987.26,
+      "text": "Well, inventories are being drawn down."
+    },
+    {
+      "start": 5987.26,
+      "end": 6005.26,
+      "text": "And if we go back to our first page, where we look at the aggregate number, we can see that furniture and related products on an aggregate level is reporting the second highest amount of growth in December."
+    },
+    {
+      "start": 6005.26,
+      "end": 6008.26,
+      "text": "So we would do a bit more work on that."
+    },
+    {
+      "start": 6008.26,
+      "end": 6013.26,
+      "text": "We would figure out where the positive contribution is coming from."
+    },
+    {
+      "start": 6013.26,
+      "end": 6020.26,
+      "text": "But this is not a good sign that inventories are being drawn down in furniture and related products."
+    },
+    {
+      "start": 6020.26,
+      "end": 6021.26,
+      "text": "And that's a good sign."
+    },
+    {
+      "start": 6021.26,
+      "end": 6041.26,
+      "text": "Because purchasing managers are literally telling us, in the information provided via the ISM reports, that on a relative basis, furniture and related products inventories are being drawn down very quickly compared to other sectors."
+    },
+    {
+      "start": 6041.26,
+      "end": 6044.26,
+      "text": "Now, that might be a seasonal issue."
+    },
+    {
+      "start": 6044.26,
+      "end": 6056.26,
+      "text": "We obviously have to do much more work on this and do work on the sector itself and particular stocks in the sector to get anywhere near a potential trade idea."
+    },
+    {
+      "start": 6056.26,
+      "end": 6065.26,
+      "text": "But the ISM is a good starting point for providing potentially those light bulb moments for providing clues."
+    },
+    {
+      "start": 6065.26,
+      "end": 6069.26,
+      "text": "So that's up for you to decide."
+    },
+    {
+      "start": 6069.26,
+      "end": 6075.26,
+      "text": "And that's work that you need to do when you're generating potential trade ideas."
+    },
+    {
+      "start": 6075.26,
+      "end": 6090.26,
+      "text": "Also on a monthly basis, when you're collecting the data and information from the ISM report, you'll see here a tab in the spreadsheet download called industry comments."
+    },
+    {
+      "start": 6090.26,
+      "end": 6102.26,
+      "text": "And yes, you will fill in this every month and you will type out the industry comments in your spreadsheet."
+    },
+    {
+      "start": 6102.26,
+      "end": 6108.26,
+      "text": "So you've got them easily referenced in your spreadsheet and you can go back and look at them."
+    },
+    {
+      "start": 6108.26,
+      "end": 6110.26,
+      "text": "It's a good exercise to do."
+    },
+    {
+      "start": 6110.26,
+      "end": 6111.26,
+      "text": "Why?"
+    },
+    {
+      "start": 6111.26,
+      "end": 6120.26,
+      "text": "Because if you force yourself to type these out every month, it means the information is more likely to be understood and internalized."
+    },
+    {
+      "start": 6120.26,
+      "end": 6126.26,
+      "text": "And you'll be more likely to use that information to generate potential trade ideas."
+    },
+    {
+      "start": 6126.26,
+      "end": 6136.26,
+      "text": "And this is what we mean if you think back to ITPM principles of relying on yourself."
+    },
+    {
+      "start": 6136.26,
+      "end": 6143.26,
+      "text": "You've got to do further work on the ISM manufacturing report on business."
+    },
+    {
+      "start": 6143.26,
+      "end": 6152.26,
+      "text": "Self-educate a bit more on the various areas of the ISM manufacturing report."
+    },
+    {
+      "start": 6152.26,
+      "end": 6161.26,
+      "text": "Continue to do more work on understanding each of the components of the diffusion index."
+    },
+    {
+      "start": 6161.26,
+      "end": 6173.26,
+      "text": "So new orders, production, employment, supplier deliveries and inventories, and also do more work on what's not included in the diffusion index."
+    },
+    {
+      "start": 6173.26,
+      "end": 6176.26,
+      "text": "So become a student of the ISM."
+    },
+    {
+      "start": 6176.26,
+      "end": 6190.26,
+      "text": "What we've done here is covered all of the most important stuff and provided you with a gateway education on what the ISM manufacturing report on business is all about."
+    },
+    {
+      "start": 6190.26,
+      "end": 6208.26,
+      "text": "It's a very, very valuable resource and valuable information can be gleaned from this data on a monthly basis if you have a self-starter mentality and you choose to do the work."
+    },
+    {
+      "start": 6208.26,
+      "end": 6209.26,
+      "text": "Okay."
+    },
+    {
+      "start": 6209.26,
+      "end": 6215.26,
+      "text": "Indulging in a spoon feeding activity and copy trading of other people."
+    },
+    {
+      "start": 6215.26,
+      "end": 6224.26,
+      "text": "So getting your ideas from other people is never going to make you a consistently profitable trader."
+    },
+    {
+      "start": 6224.26,
+      "end": 6227.26,
+      "text": "You have to generate your own trade ideas."
+    },
+    {
+      "start": 6227.26,
+      "end": 6228.26,
+      "text": "You have to do your own trade ideas."
+    },
+    {
+      "start": 6228.26,
+      "end": 6234.26,
+      "text": "You have to do your own work, generate your own trade ideas and make your own returns."
+    },
+    {
+      "start": 6234.26,
+      "end": 6249.26,
+      "text": "So use the resources in the downloads area, continue learning and implement monthly processes to be on top of the data."
+    },
+    {
+      "start": 6249.26,
+      "end": 6250.26,
+      "text": "Okay."
+    },
+    {
+      "start": 6250.26,
+      "end": 6259.26,
+      "text": "Now let's summarize what the ISM manufacturing report on business is all about."
+    },
+    {
+      "start": 6259.26,
+      "end": 6267.26,
+      "text": "It's one of the most important leading indicators in the world for pro traders and portfolio managers."
+    },
+    {
+      "start": 6267.26,
+      "end": 6276.26,
+      "text": "U.S. GDP, it drives global GDP and stock market returns in the U.S. and the rest of the world."
+    },
+    {
+      "start": 6276.26,
+      "end": 6291.26,
+      "text": "Professional traders are using the ISM as a guide and in conjunction with money market indicators and other leading indicators as a guide to portfolio direction."
+    },
+    {
+      "start": 6291.26,
+      "end": 6297.26,
+      "text": "So whether we're going to be net long or short or neutral in our portfolio."
+    },
+    {
+      "start": 6297.26,
+      "end": 6304.26,
+      "text": "We're going to get into this much later in the video series about portfolio direction."
+    },
+    {
+      "start": 6304.26,
+      "end": 6309.26,
+      "text": "We can also look for clues in the ISM at a sectoral level."
+    },
+    {
+      "start": 6309.26,
+      "end": 6314.26,
+      "text": "So as to how companies will potentially report their earnings in the future."
+    },
+    {
+      "start": 6314.26,
+      "end": 6317.26,
+      "text": "So in upcoming quarters."
+    },
+    {
+      "start": 6317.26,
+      "end": 6329.26,
+      "text": "So the ISM can therefore also potentially help us to generate trade ideas in single stocks within particular sectors."
+    },
+    {
+      "start": 6329.26,
+      "end": 6332.26,
+      "text": "So for a long short portfolio."
+    },
+    {
+      "start": 6332.26,
+      "end": 6347.26,
+      "text": "Also, as we've seen, when we looked at examples in the past, the ISM also tells us what we should expect from the Fed in terms of likely policy response."
+    },
+    {
+      "start": 6347.26,
+      "end": 6351.26,
+      "text": "Remember, the Fed is looking at the ISM as well."
+    },
+    {
+      "start": 6351.26,
+      "end": 6373.26,
+      "text": "So overall, the ISM manufacturing reports on business is just a great leading indicator that's going to enable us to be right somewhere between 60% and 80% in our estimation of the U.S. economy and directional bias in our portfolio."
+    },
+    {
+      "start": 6373.26,
+      "end": 6377.26,
+      "text": "So our bias of long short or neutral."
+    },
+    {
+      "start": 6377.26,
+      "end": 6394.26,
+      "text": "When we use the ISM in conjunction with money market leading indicators that we've covered in videos four to six and with other macroeconomic indicators that we're going to be covering in the rest of the PTM video series."
+    },
+    {
+      "start": 6394.26,
+      "end": 6403.26,
+      "text": "We're going to have a very good understanding of the U.S. economy, money flows and potential Fed policy."
+    },
+    {
+      "start": 6403.26,
+      "end": 6413.26,
+      "text": "So you have to be on top of the ISM as well as all of the other leading indicators every month."
+    },
+    {
+      "start": 6413.26,
+      "end": 6420.26,
+      "text": "Every month, OK, at any one point in time, you need to be on top of these things."
+    },
+    {
+      "start": 6420.26,
+      "end": 6440.26,
+      "text": "So when we look at our dynamic predictor list, if you recall, we have government and corporate bond market liquidity and money flows, stock market liquidity and volatility and stock market direction and possible returns."
+    },
+    {
+      "start": 6440.26,
+      "end": 6442.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6442.26,
+      "end": 6443.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6443.26,
+      "end": 6444.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6444.26,
+      "end": 6445.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6445.26,
+      "end": 6446.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6446.26,
+      "end": 6446.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6446.26,
+      "end": 6447.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6447.26,
+      "end": 6448.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6448.26,
+      "end": 6449.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6449.26,
+      "end": 6450.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6450.26,
+      "end": 6451.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6451.26,
+      "end": 6452.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6452.26,
+      "end": 6453.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6453.26,
+      "end": 6454.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6454.26,
+      "end": 6455.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6455.26,
+      "end": 6456.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6456.26,
+      "end": 6457.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6457.26,
+      "end": 6458.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6458.26,
+      "end": 6459.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6459.26,
+      "end": 6460.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6460.26,
+      "end": 6461.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6461.26,
+      "end": 6462.26,
+      "text": "We're going to be on top of these things."
+    },
+    {
+      "start": 6462.26,
+      "end": 6467.26,
+      "text": "And then we have in our dynamic predictor list, everything that's lagging."
+    },
+    {
+      "start": 6467.26,
+      "end": 6475.26,
+      "text": "Inflation, stock market, corporate earnings outlook, and GDP, economic growth."
+    },
+    {
+      "start": 6475.26,
+      "end": 6485.26,
+      "text": "And what we're trying to do is predict all of these things and use stocks as our instrument"
+    },
+    {
+      "start": 6485.26,
+      "end": 6491.26,
+      "text": "to make money out of our predictions and what's going to happen in the future."
+    },
+    {
+      "start": 6491.26,
+      "end": 6497.26,
+      "text": "But we are using leading indicators to make our predictions."
+    },
+    {
+      "start": 6497.26,
+      "end": 6501.26,
+      "text": "And if you recall, we have real interest rates and the yield curve."
+    },
+    {
+      "start": 6501.26,
+      "end": 6503.26,
+      "text": "That's in the government bond market."
+    },
+    {
+      "start": 6503.26,
+      "end": 6508.26,
+      "text": "We have investment grade and high yield or junk spreads over the 10-year."
+    },
+    {
+      "start": 6508.26,
+      "end": 6510.26,
+      "text": "That's in the corporate bond market."
+    },
+    {
+      "start": 6510.26,
+      "end": 6515.26,
+      "text": "We have M2 money supply growth as an accessory."
+    },
+    {
+      "start": 6515.26,
+      "end": 6519.26,
+      "text": "And we also have the VIX from the IPLT."
+    },
+    {
+      "start": 6519.26,
+      "end": 6522.26,
+      "text": "But now we're adding in surveys."
+    },
+    {
+      "start": 6522.26,
+      "end": 6529.26,
+      "text": "And the ISM Manufacturing Report on Business is one of the surveys that we're going to be looking at."
+    },
+    {
+      "start": 6529.26,
+      "end": 6533.26,
+      "text": "We're going to be looking at more surveys in future videos."
+    },
+    {
+      "start": 6533.26,
+      "end": 6536.26,
+      "text": "And we're going to move on to the next video now."
+    },
+    {
+      "start": 6536.26,
+      "end": 6539.26,
+      "text": "And we're actually going to be looking at the services sector."
+    },
+    {
+      "start": 6539.26,
+      "end": 6544.26,
+      "text": "So the ISM non-manufacturing reports on business."
+    },
+    {
+      "start": 6544.26,
+      "end": 6545.26,
+      "text": "See you in the next video."
+    },
+    {
+      "start": 6545.26,
+      "end": 6547.9,
+      "text": "in the next video."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

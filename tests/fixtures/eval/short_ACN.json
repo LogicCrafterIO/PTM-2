@@ -1,0 +1,38 @@
+{
+  "candidate": {
+    "ticker": "ACN",
+    "name": "Accenture",
+    "sector": "Information Technology",
+    "side": "short",
+    "pe1": 12.05,
+    "sector_pe1": 19.7,
+    "eg_case": "short_below_sector"
+  },
+  "state": "templated",
+  "qual": {
+    "supports_outlier": true,
+    "kpis": ["bookings", "consulting utilization"],
+    "summary": "Accenture provides consulting."
+  },
+  "catalysts": {
+    "earnings_date": "[datetime.date(2026, 10, 1)]",
+    "earnings_in_window": false,
+    "non_earnings": ["Accenture Capital Inc. closed the sale of $4.997 billion aggregate principal amount of its senior notes"],
+    "tradeable": false
+  },
+  "timing": {
+    "light": "green",
+    "sma20": 180.0,
+    "sma60": 170.0,
+    "macd": 4.16
+  },
+  "prm": {
+    "stop_pct": 0.05,
+    "target_pct": 0.15,
+    "r_score": 3.0,
+    "size_fraction": 1.0,
+    "blocked": false
+  },
+  "template_markdown": "# SHORT ACN — Accenture\n",
+  "extra": {"gates": ["no dated 20-60d catalysts (investment idea only)"]}
+}

@@ -1,0 +1,741 @@
+Hi, welcome back. Hope you enjoyed video number six with Chris. I know it was a little complicated, but don't be too concerned about it. As I highlighted in video number five, you don't really, as a retail trader, have to know the Black-Scholes formula and implied volatility from the market. options prices inside out. As a first step, what you should be doing is really just understanding what it means for your portfolio in terms of the risk in your portfolio and your opportunities in a bigger picture way, your opportunities as a trader. Now we're going to move on to our second measure of historical volatility, which we call the average true range. Now before, when we looked at the historical volatility of the returns distributions and odds calculation, the prices that we took were the open and the close for the S&P 500. And this can be repeated for any asset as long as you can get the data. What we're going to look at now is a calculation of volatility on a historical basis using the high and the low of the day.
+
+And actually you can use this for a week, a month, a quarter, a year, any time horizon, but we're going to look at it on a daily basis. So we're keeping it consistent with looking at opportunities on a one day basis as we looked at in the historical distribution and odds calculation exercise.
+
+So what we're going to get here now is a full appreciation and set of volatility indicators. So we've got two historical volatility indicators, the historical distribution and odds calculation, the historical average true range, and we've also got the implied volatility, which is the expected volatility of the asset in the future.
+
+Once you've got this suite of volatility measures, indicators, you're going to understand your opportunities and your risk a hell of a lot more as a trader. And you're going to stop taking the professional trader approach, which is what we're going to move on to really in the next section in video eight, when we move on to how we begin to build a process to actually get the odds in our favour by increasing our time horizon.
+
+And looking at that 3% of information, interpreting the information well in the correct way and turning it into real hard dollars. So let's go over to the stage now where we're going to go through the average true range. And Chris is also going to show you how to calculate this in Excel.
+
+So in Excel, it's a lot easier than what we've done in Excel, it's a lot easier than what we've done so far in terms of distribution and odds and implied volatility. But we're now using the high and the low data of the day, rather than the open and the closed data, or in the implied using options data.
+
+So let's go through the theory and practice of the ATR, the average true range. And then let's go straight to Chris as well. And he's going to show you on the computer screen, how to actually calculate it and how you can use it.
+
+Has anybody heard of this one before? The average true range. Before we looked at historical volatility, and we used open and closed data for the S&P 500.
+
+We're now back to looking at historical volatility, but we're not looking at open and closed data. We're looking at the other data, high and low.
+
+So we're looking for the average true range of an asset during a day, or over any time period. You can do it on a week to week, month to month.
+
+Daily, weekly, monthly, monthly, average true range. You can pick whatever you want. What's more important here is the process.
+
+True range of the low to the high. So the opportunities in between the open and the close.
+
+And you can use it for anything. Stocks, currencies, commodities, bonds.
+
+So how do we actually calculate it?
+
+So let's go through an example of doing one over five days.
+
+So just last five days, high and low prices.
+
+Subtract the low price from the high price, and you get the true range.
+
+Get the average true range, add them all up, and divide them by the amount of days.
+
+And that tells you, on average, the difference between the high and the low for that asset in a day.
+
+Pretty simple.
+
+I think we've got a spreadsheet here as well.
+
+How do I get into this?
+
+There we go.
+
+There we go. Magic.
+
+Can we see that?
+
+So what I've got here is the high and low of the S&P 500 going back 50 years.
+
+With the true range and the percentage of the high low volatility.
+
+So the percentage of the true range.
+
+And how that's trended over the last 50 years.
+
+Okay?
+
+So how many trading days are there in a year?
+
+Roughly 250.
+
+So we've got 750 days for three years. 1250 for five, two and a half, five thousand, twelve and a half thousand trading days over 50 years.
+
+Over 50 years, the volatility, the true range.
+
+One spot, four, six. High to low.
+
+What's happening to it?
+
+What's happened to it over 50 years?
+
+So what you're looking at here is the rolling average true range.
+
+It's gone down.
+
+And it's gone down pretty significantly over the last 10 to 10 years.
+
+You can see a real trend.
+
+Where the difference between the average difference between the high and the low in percentage terms for the S&P 500 goes down by about two thirds, 70%.
+
+Yeah?
+
+So the average now, let's have a look at the last 60 days.
+
+This was only done last week.
+
+So you're looking at 0.83% between the high and the low.
+
+Yeah?
+
+10 years ago, it was 1.4%.
+
+Why do we think that is?
+
+What do we think that is?
+
+The what, sorry?
+
+The beast is sleeping.
+
+The beast is sleeping.
+
+Yeah, it seems to be sleeping more often.
+
+That's why things have been happening like this over the last 5 to 10 years.
+
+It's not just in the stock market.
+
+So if you do the same calculation with currencies, commodities, you'll get the spreadsheet.
+
+So all you have to do is go and get the data and dump it into the spreadsheet.
+
+And it'll spit out all the numbers.
+
+So you do it with commodities, currencies, bonds.
+
+The reasons why it's happening is those reasons there, really those four reasons.
+
+Firstly, with central bank intervention in the money markets, bonds and options.
+
+It's not very widely known, and it's a bit off topic, but one thing that's been happening in the last 12 months is the Fed has been selling volatility in the options market to keep volatility low.
+
+So it's market manipulation.
+
+But more widely known is that the Fed's been printing money.
+
+Central bank rhetoric, so tail risk comes out of people's portfolios, volatility comes down.
+
+But over a bigger structural issue, or issues, is the number of market participants in all of these markets.
+
+So the switch from dial-up to broadband in the Western world, where 15 years ago, if I wanted to trade the S&P 500, I'd have had to have probably flown to America, opened a brokerage account, and flown back.
+
+Now I can do it from my bedroom in seconds.
+
+So there's been a huge upsurge in the amount of market participants all trying to day trade from their bedroom.
+
+So all of those returns that were available 10, 15 years ago, they get petered away.
+
+They get eaten up.
+
+Probably as much or even more significantly is the onset of algorithmic trading.
+
+As in, when we go back to the agency model of the investment banks, the agency orders going into the market to buy and sell orders on behalf of hedge funds and pension funds.
+
+They just go in a machine.
+
+That's how it started.
+
+Then what happened?
+
+Algorithms started to pop up that were designed to predict what the order flow was going to do.
+
+So if an order goes into the market to buy, another algorithm is designed to buy ahead of it and sell back to it.
+
+It's called scalping.
+
+You scalp half a penny off the robot.
+
+And it's got to such a stage now where there's even algorithms built to predict the algorithm that's predicting the order flow.
+
+So what does that tell you when you look at those numbers, given the backdrop of the structural issues in the Western world stock markets?
+
+It pretty much says, okay, 10 years ago, you might have had a chance of making money day trading.
+
+Unfortunately, these days, you literally have no chance.
+
+Because you're fighting robots that fight each other.
+
+So you've got to have a portfolio 80% of the time based on historical volatility profiles.
+
+Use the historical volatility profile ATR in different ways.
+
+First of all, use it to calculate your opportunities over long time horizons.
+
+And if you see in the stock market, if you see in any market, ATR coming down significantly over a 10-, 15-, 20-year period, you know that you're fighting against the trend if you're going into that market to try and make short-term money out of opportunities that are becoming less and less frequent.
+
+But the second way you use it, that's the S&P 500.
+
+You can go and do it for any stock, any commodity, any currency.
+
+As long as you can get the data.
+
+And pretty much, you can get the data for 40,000 assets globally, publicly, by just Googling around.
+
+You'll get it.
+
+It's all free.
+
+But you can use it for a stock and work out over different time horizons what your opportunities are of making certain amounts of money.
+
+So, I'll do a weekly ATR, monthly ATR, et cetera, et cetera.
+
+Why is that important?
+
+Because that's going to set the basis or parameters for your expectations for your target and your stop loss over that time period.
+
+So, what do you need to start off as a professional trader?
+
+You need these three spreadsheets.
+
+And you need to know how to build them and how to do it yourself.
+
+So, you'll be sent them.
+
+Return distributions and odds calculation.
+
+Historical volatility assessment.
+
+Backwards looking.
+
+Market volatility assessment.
+
+That's implied volatility, like the VIX, but you can do it for anything.
+
+That's forward looking.
+
+And ATR, historical.
+
+Looking at historical volatility.
+
+Backwards looking information.
+
+Play with those spreadsheets.
+
+Go and get data from different assets.
+
+Dump it in the spreadsheets.
+
+Stretch them, bend them.
+
+Play with them how you like.
+
+If you learn how to use them, you'll be having some very good conversations with professional traders.
+
+Well, professional traders that know what they're doing.
+
+There's a lot out there that don't.
+
+So, as traders we just want to make money and go where the money is.
+
+If we're being told that there's no money in these opportunities, we stay away from it.
+
+And we trade them in a different way.
+
+Or trade something else.
+
+We go hunting.
+
+Get the spear and the shield out and go to find the big animal that's awake.
+
+Not sleeping in its cave.
+
+That happens 80% of the time.
+
+Cave sleeping is 80% of the time.
+
+If you're unsure of the opportunities, just run through the exercises.
+
+Once you've learnt how to do it, in the first month or two, you'll be able to do it with your eyes closed.
+
+After a couple of months.
+
+And you'll be able to realise what the opportunities are on a one day, one week, one month, one quarter, one year time horizon.
+
+And you'll be able to do it with your eyes closed.
+
+You'll be able to do it with your eyes closed.
+
+You'll be able to do it with your eyes closed.
+
+And you'll be able to do it with your eyes closed.
+
+And you'll be able to do it with your eyes closed.
+
+And you'll be able to do it with your eyes closed.
+
+And you'll be able to do it with your eyes closed.
+
+And you'll be able to do it with your eyes closed.
+
+And say you're talking nonsense.
+
+Or you might have a point here.
+
+Check this out.
+
+You're going to have some very good conversations with guys who know what they're doing.
+
+If you follow all of this stuff.
+
+And more importantly, if you just lock yourself in a room.
+
+Close all the curtains and blinds.
+
+And just go through these things.
+
+You're going to stand a much better chance of not losing money.
+
+And actually making money.
+
+Because you're not going to allow yourself to take a position.
+
+When you don't know this information.
+
+It's the first thing you do.
+
+You've got to check all this stuff out first.
+
+Before you even consider having a position.
+
+Make sense?
+
+So what's the next generation of retail traders looking like?
+
+Well, slowly but surely.
+
+This information is seeping or trickling down to the retail trader.
+
+Eventually they'll figure out that they can't make money day trading.
+
+Maybe they won't.
+
+We're having this conversation outside actually.
+
+Do we want them to find out?
+
+Not really.
+
+Because we actually need them for liquidity on the other side.
+
+So we can get out.
+
+So what have you got to do?
+
+You've got to increase your time horizon one to three months.
+
+Take a predominantly fundamental approach.
+
+Because over one to three months.
+
+The fundamentals that affect the value of that asset.
+
+Will be affecting that asset.
+
+Because that's a big enough time horizon for it to happen.
+
+So fundamentally, top down and bottom up.
+
+So we're going to start from the top down and then overlay that with bottom up analysis.
+
+And overlay it with technical analysis and price action indicators.
+
+And a bunch of important trader processes for timing entry into your trades.
+
+Into and out of your trades.
+
+Once those positions are real.
+
+And there's real money actually committed to the positions.
+
+It's all about risk management and controlling your psychology.
+
+So if we combine all of those factors.
+
+You'll see that we're going to send a hell of a lot more chance making money.
+
+It's not easy.
+
+No one ever said it is.
+
+But if you go through the processes multiple times.
+
+You will get process memory.
+
+Muscle memory.
+
+And you'll end up being able to do it with your eyes closed.
+
+That's where you want to be.
+
+So you can assess something very, very quickly.
+
+And work out that it's not an opportunity.
+
+And it goes in the bin.
+
+Or work out very, very quickly that something could be an opportunity.
+
+And do more work.
+
+And figure it out.
+
+How much it's going to pay.
+
+What to do when it goes wrong.
+
+Okay, so Chris is now going to show you on the computer.
+
+How you calculate the average true range.
+
+The ATR initially for the S&P 500.
+
+But remember you can use this for any asset.
+
+As long as you can get the data.
+
+For monitoring and calculating your opportunities.
+
+And later we're going to use the ATR.
+
+In the risk management section.
+
+For how you use it.
+
+In terms of calculating stop losses and targets.
+
+Within risk management.
+
+So let's go over to Chris.
+
+Chris, take it away.
+
+In this video I'm going to go through an example of how you can calculate your own average true range values.
+
+In Excel for a given asset.
+
+So basically average true range is a historical volatility indicator.
+
+That's computed by taking rolling averages of high minus low intra period data.
+
+And it basically gives us an indicator of what trading opportunities there are within a stock.
+
+Or an asset.
+
+And what trading opportunities there have been.
+
+And the kind of volatilities we expect in these assets.
+
+And they'll help us to determine what kind of trading or portfolio management style we're taking on using that asset.
+
+So in this example we're going to go through calculating rolling one day average true ranges for the S&P 500.
+
+So if we just get started by obtaining the data.
+
+So we'll go to Yahoo Finance.
+
+That's finance.yahoo.com And enter S&P into the get quotes box.
+
+And select the S&P 500.
+
+And then go to historical prices on the left hand side.
+
+And in this example we're going to use data from the 3rd of January 1962 to the 19th of February 2013.
+
+On a daily frequency basis.
+
+So we just update this price data by clicking get prices.
+
+And we'll scroll to the bottom of the webpage and click download to spreadsheet to obtain the spreadsheet of this data.
+
+And at this point if you want you can save the spreadsheet to your hard drive and then open it from there.
+
+Or as we're going to do you can select to open it straight away and then save it once the file is open.
+
+So we just open this data.
+
+And as I said the first thing we're going to do is go to file save as.
+
+Save it as S&P 500 ATR.
+
+Save it on the desktop so it's easy to find.
+
+And save it as an Excel workbook.
+
+And that's fine.
+
+So we've been presented with the price data that Yahoo Finance gives us.
+
+The first thing we'll do is adjust the date column so we can see all the dates.
+
+So we'll just widen that column.
+
+And the next thing we want to do is delete all the unnecessary columns in computing our ATR values.
+
+So we only need the open, the high and the lows.
+
+So we just close column E, F and G.
+
+So we delete column E, F and G.
+
+That's close volume and adjusted close.
+
+To select those quickly I just select on column E, hold CTRL and click F and G as well.
+
+And with those columns selected right click within the selection and go to delete.
+
+Okay so in column E what we want to do is calculate our true ranges.
+
+So that will be the high for our period of trading which is a day, the daily frequency we have.
+
+Minus the low.
+
+So in column E in cell E1 if we just type true range.
+
+And in E2 we type equals C2 minus D2 which is the high minus the low.
+
+And we want to copy that formula down the whole column in column E.
+
+So to do that quickly we click on the data to the left hand side in any of the columns A to D.
+
+Press CTRL and down and then go across to cell E12871 and press CTRL shift and up.
+
+Which will select all the cells within column E up to cell E2.
+
+And then press CTRL D to copy down the formula in E2 to all those cells we have selected.
+
+Okay.
+
+So the next thing we will do is calculate the one day rolling average true range.
+
+We will head up the column with 1D.
+
+And that will tell us that will be the column for our one day rolling average true range.
+
+So to calculate that in cell F2 type equals two open brackets sum and then E2 to E3 close the brackets and divide by two.
+
+So basically this part of the formula just calculates an average of the last two days true range.
+
+And then we divide that by the opening price on the previous day.
+
+So that's B3.
+
+And that will display the average in terms of the percentage from the opening price in the previous day.
+
+And we'll do the same thing to copy this formula down.
+
+So we'll navigate to the bottom of the spreadsheet.
+
+Select all the cells in column F up to F2.
+
+And then press CTRL D to copy that formula down.
+
+And with that selection still highlighted, if we right click within the selection and go to format cells.
+
+And then change the number to percentage.
+
+So we can display all those in the percentage terms.
+
+As you can see in the last cell in column F we've got an error.
+
+And this is because the formula that we've used to calculate average true range requires price data from the previous day.
+
+Which we don't have obviously in the last cell.
+
+So let's go ahead and delete that cell by selecting it and pressing delete on the keyboard.
+
+So what will be interesting to find out is how these one day average true ranges have changed over time.
+
+So we'll take an average of these one day rolling average true ranges over different periods of time.
+
+So we'll just set this up now actually.
+
+So in I3 if we type, or in H3 we'll type days, in H2 years, and we'll do this over a period of 5 days, 20 days, 60 days, 250 trading days which will equate to 1 year.
+
+So we'll do this over a period of 5 days, 750 trading days which will equate to 3 years, 1250 trading days which equates to 5 years, 2,500 trading days, 10 years, 5,000 trading days which is 20 years.
+
+And then finally we'll do 12,500 trading days which equates to 50 years.
+
+So what we'll do from here is calculate the average of the 1 day ATRs over these periods of time.
+
+So to do that in cell I4, if we start with 5 days, we type equals average, and we select, we can either select or just type F2 to F6, and that will be the previous 5 days average of the previous 5 days ATRs.
+
+And we'll just continue with that method.
+
+So I'm going to F61 here because we're looking at the average of the last, sorry, F21 because we're looking at the average of the last 20 days.
+
+And what I'm going to do to make this quicker actually is if you copy, so if we go into cell J4, double click on it, then we can edit the formula.
+
+If we just copy this, select this text and copy it, pressing Ctrl C, press Enter, go to the next cell, K, and press Ctrl V, and then we'll just edit the formula.
+
+This is quicker than typing it in every time, so we're copying the formula for cell J4, we're going to copy it into all of these cells up to Q4, and instead of typing it out each time we'll just go into the formula and edit the last F cell that we're going to use.
+
+So for 60 days it will be F61, 250 days it will be cell 251, 750 days 751, and so on.
+
+Okay, so I think just before we summarize and talk about this data, if we just tidy this up a bit and we'll highlight these cells.
+
+We'll highlight from cell H2 to Q2, if we just put that in a different colour, put that in a green, and then days, you know, grey maybe.
+
+And that just tidies up the spreadsheet, and if we select all the cells from H2 to Q4, and give them a border by going to the borders option in the home tab, and select all borders.
+
+Okay, that's tidied it up a bit.
+
+Okay, so the interpretation of this is quite simple really.
+
+Basically what we can see is that the one day rolling average true range has been trending downwards, and hence these values, so the five day average of the one day rolling ATRs is lower than 20 days, it's lower than 60, lower than 250, so that basically is telling us our volatility has been decreasing.
+
+As we get back to five years, we can see, or between five and ten, we can see that the volatilities actually increased from ten years ago to five years ago.
+
+Now that's quite simply because of the subprime crisis around five years ago.
+
+That obviously increased volatility levels a lot.
+
+So that's why this is particularly high, and that's why we kind of reset a volatility and slowly work lower and lower and lower.
+
+And as a general theme, in the last 50 years, we can see volatility decreasing through our calculated true range values and one day ATRs.
+
+And this is simply down to basically less trading opportunities in the short term in the one day timeframe because markets have become more efficient.
+
+And so electronic trading systems have sped up the process of cancelling out arbitrage opportunities and it's just decreased volatility as a whole.
+
+So that basically tells us that we need to expand our timeframe generally if our ATRs are low, which is a way of looking at volatility, we have to expand our timeframe to be able to enter profit-making opportunities.
+
+So I'll just go back to Anton now, who will provide you with a quick summary of what we've discussed here so far.
+
+Hi there, welcome back.
+
+Now, you just watched Chris show you how to calculate the ATR on a rolling percentage basis for the S&P 500.
+
+Now, this can be repeated, this exercise, for any asset in the world as long as you can get the data.
+
+So now we've got a suite of volatility indicators where we've got two historical indicators, the historical distribution and odds calculation and the average true range, the rolling ATR.
+
+And we've also got the more sophisticated one, the implied volatility indicator.
+
+Now, when you take all of these things together, this gives you now an extremely professional approach in managing your expectations in terms of opportunities and managing your risk because it gives you a good indicator of what your risk is in the market and the risk in your portfolio.
+
+Now, the ATR is slightly different, obviously, because in the other historical indicator, historical vol indicator, we looked at taking the data from the open to the close.
+
+Now we're looking at the high to the low. So we're not looking at the opportunities over one day, we were looking at the opportunities within that day.
+
+And obviously, the volatility of the high and the low is going to be greater.
+
+But when you look at the rolling ATR in the example that we looked at, you should take a message from it.
+
+And the message really with the rolling ATR in the S&P 500 is that volatility has been coming down consistently and very aggressively over the last decade.
+
+And this has been happening for a multitude of reasons. But the main message you should really take here is that if ATR on a rolling basis has been coming down consistently over the last decade, what does that mean for short term traders?
+
+It just simply means that the short term trading opportunities on a consistent basis have been coming out of the market over the last decade.
+
+And what we've seen in the last three years is short term professional traders, day traders, actually just losing all of their jobs.
+
+So day trading, day trading shops, day trading companies have literally been closing down all over the Western world.
+
+And this is for this is again for a multitude of reasons.
+
+But one of the main reasons is algorithmic trading and algorithmic trading is essentially computer based trading, quantitative trading, where algorithms are programmed to go into the market and scalp and by scalping we mean going into the market and jumping ahead of orders in the market to buy and sell.
+
+And what was that what was that ended up creating in the market?
+
+Well, it's ended up creating a self-fulfilling prophecy because now algorithms are built to predict what other algorithms are going to do.
+
+So all of the short term opportunities just keep coming out of the market.
+
+And when you have a look at the rolling ATR of the S&P 500 there, that's what you're actually seeing.
+
+You're seeing the short term opportunities being taken away by computers.
+
+Now, when you become more of a professional trader and you take the approach of one to three months, the computers don't matter.
+
+And day trading doesn't matter because over a one to three month time horizon, the opportunities exist.
+
+They still exist and they still exist as they used to.
+
+And all professional traders know this and they don't bother fighting the machines or day trading.
+
+So back to these numbers again in the S&P 500 and major currency pairs.
+
+Well, 80% of the time, so 78% of the time in the S&P 500 and other major indices around the world, numbers are very similar.
+
+And in major currency pairs, 75% of the time, there's no short term opportunities.
+
+And those short term opportunities have got less and less over the last decade.
+
+So with the ATR, the ATR really does demonstrate this.
+
+It demonstrates what has been happening in the market consistently over the last decade compared to decades before.
+
+So you should really take that as a message.
+
+And in summary, what we can really say about all of these volatility indicators is that we use them really for two things.
+
+One, it's identifying the opportunities in the market we're going to trade over any given time horizon.
+
+To the risk in those markets.
+
+And therefore, the risk of our potential portfolios or our current portfolios.
+
+Now, once you know these numbers and you know how to go through these processes.
+
+And remember, as a retail trader, you should probably be using more the historical volatility indicators than the more sophisticated implied volatility indicator.
+
+When you understand these numbers and you can go through these processes in muscle memory, so you can do them very quickly.
+
+What you do is actually you realize quickly what the opportunities are and the risk of putting on positions in certain assets and in asset classes.
+
+And you start taking a more professional trader approach.
+
+Now, clearly from what we've learned, we have to understand that the reason why retail traders lose money consistently over time is because they try to dictate to the market what the market should be doing when in fact the market just does what it wants to do.
+
+Retail traders have one way of trading and they never adapt to their style.
+
+They never adapt to what the market is telling them to adapt to.
+
+And professional traders do the opposite.
+
+So this is what you have to do.
+
+This is what retail traders of the future have to try and emulate.
+
+And the way to emulate it is to really deploy a strategy that professional successful traders and hedge fund managers actually use.
+
+And they use this with their own money and they use it with trading other people's money, investors money.
+
+Now, it's a fairly lengthy process, but it's actually quite simple.
+
+And we're going to start with this now in video 8.
+
+In video 8, we're going to start building out of the process where we're doing literally the opposite of what retail traders do.
+
+As in building out of the process for managing long, short portfolios across all of the asset classes, equities, commodities, currencies, rates.
+
+Taking a one to three month time horizon in all our positions.
+
+Managing that portfolio correctly with due diligence and risk management.
+
+And becoming consistently profitable traders.
+
+And your job as a trader is really to make money from now till the day you retire.
+
+So let's go over to video 8.
+
+I'll see you on the other side.
+
+This is where it gets fun.
+
+Thank you.

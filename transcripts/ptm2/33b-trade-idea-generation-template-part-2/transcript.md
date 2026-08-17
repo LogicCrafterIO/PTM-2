@@ -1,0 +1,855 @@
+---
+course: ptm2
+lesson_id: "33b"
+title: "Trade Idea Generation Template - part 2"
+module: trade-idea-methods
+module_title: "Trade-idea template, macro, ADRs, TA, price action"
+duration: 00:56:24
+duration_seconds: 3384.233
+source: "Video 33 - Trade Idea Generation Template - part 2.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  - "Documents/Video 33/Trade Idea Template.docx"
+---
+
+# 33b — Trade Idea Generation Template - part 2
+
+is willing to pay for the revenue growth and the maturation or maturing of a company going from a loss-making operation at the earnings level to a profit-making operation.
+
+And this is why, for example, moving forward with our price target estimates, we've decided to utilize both earnings and sales in order to come up with two price targets, an upper bound bullish scenario, and a lower bound realistic scenario.
+
+So what we're essentially saying here is that if Zendesk going forward into 2020 hits its sales numbers, but doesn't quite hit its earnings growth numbers, we should be expecting the stock to probably be around $100, $105.
+
+But if they deliver and they really hit those earnings numbers, so the $0.57 for the full year 2020, we could see this stock hit $130 to $140 by the end of 2020.
+
+Now, it's important to note that there is no one way of doing this coming up with price targets.
+
+It will change on a case-by-case basis across different sectors and across different stocks.
+
+But you just have to stick to a couple of principles here.
+
+Firstly, you're going to be utilizing both earnings and sales estimates and keeping valuation constant, utilizing reasonable assumptions.
+
+And secondly, you're going to come up with a range.
+
+You're going to come up with a very conservative number.
+
+And you're also going to come up with a blue sky number.
+
+And as mentioned previously, this is not an exact science.
+
+And of course, there is not a rule book, a one-size-fits-all that you can apply to all situations, across all stocks, across all sectors.
+
+There is discretion.
+
+There is common sense.
+
+And you just have to use reasonable assumptions and be intellectually honest with yourself.
+
+So overall, when it comes to the trade idea generation template and the first section, the quantitative analysis, what you're trying to achieve here is obviously getting the numbers right, as accurate as possible in your spreadsheets before you copy the numbers over into the Word document.
+
+And you want to use reasonable assumptions to come to price targets.
+
+So you can arrive at sensible and reasonable conclusions as to where you think the stock could go in the next period.
+
+And of course, you're going to document this in the Word document and literally spell out what type of trade it is.
+
+At any one time, you're probably going to be managing multiple trade idea generation templates.
+
+So when you open these up, you need to be reminded very quickly with bullet points what the exact situation is.
+
+Now, what we can do here with our example with Zendesk is show you how things would have worked out if you'd have actually done your work on Zendesk and decided to buy it in May 2020.
+
+And we can show you how things actually will have worked out over periods of our time horizon.
+
+So our 20 to 60 day time horizon.
+
+So if you recall, we were basing our quantitative work off the stock price at the end of 2019, which was $76.
+
+And the stock price in May 2020 was actually $76 as well.
+
+And what we've denoted here on the chart is with the red arrows, we've denoted periods of 60 days.
+
+So if you'd have bought the stock in May 2020, we fast forward to 60 days later and have a look where the stock was at the end of that period of 60 days.
+
+This is in August 2020.
+
+And then we assume another 60 days going forward to November 2020.
+
+And then another 60 days going forward to around the beginning of February 2021.
+
+And then in yellow for our yellow arrows, we've denoted our price targets.
+
+So if you remember, we had price targets in 2020 for $102 and 60 cents and $136 and 80 cents.
+
+And in 2021, if you refer back to the table, you'll see that we actually had a third price target for $166 and 69 cents.
+
+So the arrows, what the chart is showing you here is with reference to the price targets when the stock actually hit those price targets.
+
+So as you're aware, the quantitative analysis, for the example, Zendesk at the top of the template that you're looking at was taken in May 2020.
+
+And the chart that we just looked at, the Zen chart shows this date and what would have happened if you went long Zendesk for 60 day periods.
+
+And yes, the other parts of the trade idea template that you're looking at as the example, they were filled in also in May 2020.
+
+So we will be looking at those other parts of the trade idea template soon.
+
+But let's run through the subsequent stock price movement and when this stock Zendesk actually hit our price targets.
+
+So if you'd have bought Zendesk in May 2020, our first price target, price target one, our conservative estimate of $102 and 60 cents, which was based on a 2020 sales forecast and utilizing the 2019 sales multiple as a constant that was actually reached within four and a half months.
+
+So it definitely hit the price in October 2020.
+
+However, if you look back at the chart, you'll see that it basically traded at or around that price at the end of July.
+
+So it's very likely if you had that trade on that if the stock hit around $101, $102 because your price target was so close, you probably would have been into that trade and out of that trade within the 60 day time horizon.
+
+But let's say that you didn't trade out.
+
+But let's say that you didn't trade out.
+
+Well, the stock actually came off and then it went back to above 100 in October and it would have taken around four and a half months for the stock to hit $102, $102.60 price target.
+
+So if we're using 20 trading days in a month, that would have been around 90 trading days to reach the price target.
+
+But let's say you did actually trade out at around $100, $101, $102 either at the end of July or the end of September, beginning of October.
+
+If you're in around 76, you're looking at around $25 a share profit.
+
+So you're looking at a profit percentage wise of around 30, 33%, something like this over the time horizon.
+
+Now, if you went into the stock in May and you decided to just get out at 60 days, it's likely that you would have traded out around that time period.
+
+It's likely that you will have traded out around the mid 80s.
+
+So let's assume you made $10 a share.
+
+You're looking at about a 13% return roughly from a starting price of, say, 75, 76.
+
+So you're looking at, say, a 13, 14, 15% return if you just waited and traded out at exactly 60 days.
+
+So this kind of shows you this example here based on price targets.
+
+That's being active in your trading and not holding on for the last dollar or the last tick.
+
+And taking a probabilistic approach is just a sensible thing to do.
+
+If you take a position in a stock, you're operating in the 20 to 60 day time horizon.
+
+And 30, 40 trading days goes by and the stock is trading at or around your price target.
+
+It's just a sensible thing to do to trade on a probabilistic scenario.
+
+But if you're taking some sort of a formulaic approach where you're just going to go into stocks and trade out on exactly day 60, the stock is probably not going to be at your price target.
+
+So when you've got the chance after 30, 40 days has gone by, if the stock is at or around your price target, you're probably trading out.
+
+And then, of course, you can sit back and wait for a while and reassess the situation based on new fundamentals that are current in the market at the time.
+
+And yes, of course, you can go back into a position, back into a stock.
+
+But you have to reassess the new fundamentals again at the time and assess whether you would actually buy the stock at new prices.
+
+And of course, there's always opportunity cost of capital.
+
+So given that the stock is now moved, what does the idea look like relative to other ideas that you have?
+
+And is it actually better than those ideas?
+
+Now, with our Zendesk example, let's assume that you either sat back and waited after doing your work in May or you took a position and traded out.
+
+Either way, let's just assume that you got into this stock in the mid 80s in August.
+
+Our price target one of $102.60.
+
+If you'd have got in in August, as we know, based on our sales forecasts and sales multiple analysis, that was reached at the beginning of October 2020.
+
+But our second price target, our price target two of $136.80, which was based on our earnings analysis and a continuation of the forward multiple that was reached in December 2020.
+
+So that was seven months after the May analysis.
+
+But if you'd have got into the stock in mid August, around the mid 80s share price, you will have seen price target one, the $102.60.
+
+You will have seen that reached in the first week of October.
+
+And price target two reached actually outside, just outside the 60 day time horizon.
+
+So the $136.80 was reached in the first week of December.
+
+So that was a couple of weeks after the 60 day time horizon closing.
+
+So given the two examples that we just looked at here, where we're going into the stock in May or going into the stock in August, you can see that the 20 to 60 day time horizon, it's more of a guide than an exact science.
+
+You're always going into a stock with the expectation that you wanted to move within the 20 to 60 day time horizon and have the volatility available for that to happen.
+
+However, you're also acknowledging that you're going to be trading on a probabilistic basis.
+
+So in some situations, your price targets or very close to your price targets, that outcome is going to occur within or even well within your time horizon.
+
+And on a probabilistic scenario, you're going to trade out.
+
+And then in other situations, you're going to get the outcome where your price target one is reached and that it's looking highly likely that the stock could even go further on and reach price target two.
+
+If you just hold on for a little while beyond the 60 day time horizon.
+
+And that's OK, too.
+
+The point is here, guys, it's not an exact science.
+
+It's a scientific art.
+
+Now, what's interesting about the Zendesk example, the stock actually reached one hundred and sixty dollars in nine months.
+
+So in February 2021 and then afterwards, it fell back from that level to around the forward multiple price target of around one hundred and thirty six dollars in March 2021.
+
+So what's interesting here, our price targets of just over one hundred and sixty six dollars.
+
+The stock almost got there in very early 2021.
+
+But that one hundred and sixty six dollar price target that we had was for the end of 2021.
+
+So we could argue there sitting in February 2021 that potentially that the stock price went too far too quick.
+
+And the fundamentals would have had to catch up with price.
+
+And what happened?
+
+Well, it was too far too quick and price simply corrected.
+
+So we chose Zendesk as an example here as it was a pretty good long idea, a solid long idea in 2020 at the time that ticked many boxes.
+
+But it serves as a good example as a revenue growth story maturing into profitability in 2021.
+
+So use this case study.
+
+Use this example moving forward when you're doing your quantitative analysis and filling out the trade idea template and making sure obviously that your tables are as accurate as possible in your spreadsheets.
+
+Then moving them over to the word document documenting what type of profile the trade actually is and then establishing your price targets based on reasonable assumptions.
+
+So now we're actually going to look at other areas of the trade idea template.
+
+And just as a side note, we've purposely kept blank certain parts of the template for the Zendesk example.
+
+These are sections, of course, going forward for all of your future trade ideas that you're going to be filling in yourself.
+
+But what I am going to do is obviously talk you through those areas and some best practices.
+
+So in the next section of the trade idea generation template, you're going to be documenting all of the sector quant.
+
+So if you look at the table here, you'll see Zendesk at the bottom of the table underneath the row for averages.
+
+And then above that, you'll have each row for each stock.
+
+And you'll see in the table here, we've got columns for PE1, EG1, EG2.
+
+We got PEG1 and market cap.
+
+And of course, you can add some more columns in there as well if you want to.
+
+This is just a template, obviously.
+
+So in this part of the template, of course, we want to get our numbers right again.
+
+And we want to display visually the identification of the trade on a quantitative basis versus the sector.
+
+So we want to be looking at this visually.
+
+And it's very, very obvious that we have a positive or negative outlier or it's a turnaround or value trap.
+
+So this table will essentially be a copy and paste from your spreadsheets with all of your sector work and the stock quantitative relative to the sector averages with all of the stocks in the sector that are contributing to that average.
+
+So it's very easy to see visually the quantitative numbers of the stock relative to everything in the sector.
+
+And you'll notice in the template that underneath the sector data table for quantitative, we've got some comments in a text box on the quantitative analysis sector comparison.
+
+And the first thing you're going to do is you're going to document whether the stock is a quantitative outlier or not in that text box.
+
+So as you must recall now, we've obviously been through the whole quantitative process earlier in the video series.
+
+This is where you're basically putting your accurate sector quantitative work and you're literally spelling out what type of trade this is.
+
+So whether it's a positive or negative outlier or perhaps a turnaround value trap or even very specifically on a short, an X growth stock in phase two.
+
+Now, some other stuff that you would put into this text box.
+
+You're going to put in there sector drivers, fundamental sector drivers that could provide a tailwind or a headwind to the sector fundamentally.
+
+So within the time horizon, 20 to 60 days, things that could affect the entire sector positively or negatively.
+
+So for example, that would be that would be like the oil price for the oil sector or microchip or DRAM prices for the tech hardware sector.
+
+So documenting all of this stuff in the template is obviously good discipline.
+
+It's good process.
+
+And it all acts as a reminder as to why you're in a stock and also what are the tailwinds or headwinds fundamental fundamentally at a sector level.
+
+So when you open up your templates, if you've not looked at it for a few weeks, you can see it all documented and get up to speed very quickly.
+
+Also, what you'd put in this section is a volatility appraisal.
+
+So you would look at realized and implied volatility as well.
+
+And you do a single stock volatility appraisal versus the rest of the sector.
+
+So this can be done in a number of ways, as you're fully aware by now.
+
+This can be done by looking at the implied vols for the stock in the options prices and inferring a monthly move or a quarterly move.
+
+Or you can use options prices to calculate it yourself.
+
+So getting implied volatility yourself.
+
+And you can also do the work on realized volatility as well.
+
+So you can utilize distribution of returns analysis and ATR analysis that we've covered in the IPLT video series.
+
+And also some of that in the PTM video series, too.
+
+So when you're doing your volatility appraisal, what you're attempting to understand is how volatile the stock actually is compared to its peer group.
+
+And you're going to arrive at an expectation of one to three month volatility for the stock versus the sector.
+
+And then you're going to match that up with your price target expectations to make sure that your expectations are actually realistic within the 20 to 60 day time horizon.
+
+And when you're going through this process, you may actually have to adjust your expectation for price targets for the lower bound and the upper bound.
+
+So work out realized volatility of the stock.
+
+Work out implied volatility for the stock.
+
+Get an inferred one to three month expected vol number for the stock itself.
+
+Then you can compare this if you do the same analysis for other stocks in the sector.
+
+You can compare this to those other stocks to get an understanding of whether the stock is volatile compared to other stocks in the sector.
+
+So you get a solid understanding of the absolute volatility of the stock itself and also the relative volatility of the stock versus other stocks in the sector.
+
+And then you try to set your price target expectations around those numbers if they need to be adjusted.
+
+In terms of the template, you're going to get all of this information in this section of the template and be very disciplined doing it, making sure that you know exactly what you're dealing with in terms of the quantitative and therefore the overall parameters of the trade idea.
+
+Next section of the template is the qualitative section.
+
+So we're going to be looking here in this section at documenting the business itself and business drivers.
+
+So in this part of the template, we're aiming to document the actual business, what they actually do and the drivers of the business that are behind revenue and earnings.
+
+So here we're documenting the key performance indicators, KPIs to infer the management operating plan.
+
+So we've put some example text in there for Zendesk.
+
+Of course, if you're doing this for real yourself, you will have probably done much more work than what's there in the template.
+
+This is simply an example of the process of how you should go about things and in the actual order that you should go through the processes to take a formalized uniform approach.
+
+So in the first box, you're going to succinctly explain exactly what the company does.
+
+If you can't say it in one or two sentences, then you're probably confused.
+
+And that's a very simple process where it's obviously a bit more detailed and a lot more work is going to be in the next text area of the template, which is for KPIs.
+
+So in the next section, you're going to fill in all of the main KPIs.
+
+So the drivers behind revenue and earnings, how the company measures the success of its business.
+
+So its business drivers behind revenue and earnings and forward looking expectations.
+
+So this box, once you've actually filled it out, is essentially the management operating plan documented and the management targets.
+
+So that's all pretty straightforward.
+
+It's just the work behind it that takes the most effort.
+
+Documenting it is pretty straightforward.
+
+The next step or the next section that we have in the template covers forward looking earnings announcements and catalysts.
+
+So documenting non earnings related catalysts.
+
+So the whole section taken together, essentially, it is defined as catalysts, but we split them out as catalysts that are both earnings related and non earnings related.
+
+And of course, from your work around catalysts, you will be documenting only meaningful catalysts.
+
+So in the first box for earnings announcements, what you want to be doing is gauging earnings expectations for the upcoming quarterly numbers with the earnings date documented and the time of the earnings conference call with, of course, the expectations of both quarterlies and annual numbers.
+
+In the box, you should document the analyst ranges for both quarterlies and annuals.
+
+So you've got an appreciation and understanding of what the market expects.
+
+In the box below that, this is where you're going to be documenting non earnings related catalysts.
+
+So non earnings related catalysts that you can reasonably assume will occur between the quarterly earnings reports and specifically before the next quarterly earnings report, because that's what matters for our 20 to 60 day time horizon.
+
+So specifically, which non earnings related catalysts could occur that are going to move the needle and change earnings expectations before the actual earnings date.
+
+So the way to think about this section, and we've mentioned it in previous videos, this is the section that's going to determine whether you've actually come up with what's defined as a trade idea and not an investment idea.
+
+So this is the section.
+
+So this is the best way to think about this section.
+
+Think of this section as the part of the trade idea template, which actually defines your idea as a trade and not an investment.
+
+So think about what would happen if you were going through all of the processes and then filling out this area of the trade idea generation template.
+
+And think about when you get to this part and you've got very little information, you're struggling to fill this out.
+
+What does that mean?
+
+Well, it just means you're struggling to find catalysts or things that could move the stock outside of an earnings report.
+
+So if the next earnings report is 45 trading days away, you need to be asking yourself the question, is this really a trade idea or is it an investment?
+
+Because you're really struggling to identify catalysts.
+
+And for it to be a purest trade idea and not an investment idea, we need catalysts.
+
+And you have to be intellectually honest with yourself.
+
+You don't just put in any mumbo jumbo into that section for non earnings related catalysts and pretend that these could occur when clearly nothing's going to happen.
+
+So you need to seriously ask yourself the question here.
+
+Have I actually identified a trade idea or not?
+
+Am I about to go in to a tumbleweed stock where I've got no catalysts or very few catalysts between earnings reports?
+
+And if I take a live position with real money in my trading account, is the capital just going to be wasted?
+
+We obviously have opportunity cost.
+
+We can find a genuine trade idea somewhere else.
+
+Now in the next section of the template, this is where we document our timing and structure of the trade idea.
+
+So we would do our technical analysis and price action work, which we're going to be covering in further videos in the video series.
+
+We shot a chart with our technical and price action work or several charts if need be into this area.
+
+So we are visually on top of our TA and PA and therefore our timing.
+
+And you would put some commentary in there as well out of discipline to remind yourself.
+
+So you'd be inserting your choice of technicals and different levels, price action indicators or timing.
+
+And yes, you would also be putting other technical factors in there like checking for the short interest for the path of least resistance for the stock.
+
+So don't worry about technical analysis and price action indicators for the moment.
+
+We are going to be covering that in upcoming videos.
+
+This is just to denote where you would put it in the trade idea template.
+
+Additionally, in this area, you need to be documenting the proposed trade structure that makes the most sense to optimize your ROI, your return on investment around the timing and the catalysts.
+
+So you'll see in the text box, big question in red.
+
+What is your choice of trade structure and why?
+
+And include the time horizon for the trade.
+
+So you'll see we've put an example in there of a call options structure.
+
+This is obviously an example that is beyond the scope of the PTM video series.
+
+But I've put it in there because we need to denote and show you visually where you would actually put this.
+
+Remember, in the PTM video series, we're making the assumption throughout that you're taking either a long position in a stock or a short position in a stock, whether that's outright on margin or utilizing CFDs for international traders.
+
+The option structure that you're looking at here on the screen on the left hand side.
+
+This is stuff you would learn in the PTM video series.
+
+So regardless of whether it's a long stock position, short stock position or some type of directional options structure that we teach in the PTM video series, this is the area where you're going to be putting your trade structure, your proposed trade structure.
+
+And this is great discipline because you're combining the proposed structure in the same document with your timing appraisal.
+
+So your technical analysis and price action appraisal.
+
+And also your expected volatility within the 20 to 60 day time horizon and your price targets.
+
+And your trade structure obviously has to make sense in the context of all that information and the 20 to 60 day time horizon.
+
+So obviously documenting all of this stuff in a template is actually pretty straightforward work, actually writing the information down.
+
+But the real work is obviously in the research and the preparation.
+
+So all of the hard work happens before the template.
+
+And the template is a documentation of your work.
+
+And it needs to be as clear and concise as possible.
+
+So, you know, the big question here is, why do we even bother with the template?
+
+Well, the template brings consistency to your process via both familiarity and regularity.
+
+And that leads to consistency in your returns.
+
+When you've done this a number of times in a lot of stocks across multiple sectors, what's going to happen is you're going to build up a database of ideas that you've documented.
+
+You're going to get quicker and better at the processing the more you do it and the more you hold yourself accountable to do it in terms of your discipline.
+
+Also, practically on a week to week basis, you're going to be able to go back over old ideas and tweak and improve your processing skills.
+
+And coincidentally, this work is so important for retail traders to get a handle on the templates that you've actually got there from the downloads area and the discipline and processing rigor that it provides.
+
+This is what we at ITPM aim to perfect in the first part of a one to one trader mentoring program.
+
+So it's extremely important. It's actually the most important thing to do.
+
+So right at the beginning of a one to one on one trader mentoring program, we want our students to become highly prolific in generating trade ideas.
+
+And having the discipline and the processing skills to do that at a high level, a high quality level on repeat in a very efficient and optimal manner.
+
+But regardless of whether you do a mentoring program at ITPM or not, even if you go off by yourself, this is what you're going to have to do on repeat all the time and become very, very good at it.
+
+So this is where the trade idea template is obviously very useful because it brings uniformity to your process.
+
+And not only that, it brings discipline, familiarity and regularity.
+
+And this is what leads to consistency in returns.
+
+The problem is, and we see this and it's a very common situation with retail traders.
+
+We see this all the time.
+
+It's one of the biggest challenges that retail traders face.
+
+It's fitting in trade idea generation and all the processes around it and financial markets trading into their already busy lives.
+
+People have jobs or they run small businesses.
+
+People have families, people have hobbies and interests, and also everyone's got to sleep.
+
+So the question is, is how do you fit it all in?
+
+Well, if you don't have efficient processes for generating trade ideas, you will never, ever fit it in.
+
+This is why we have the template.
+
+It cuts through all of the BS and all of the noise.
+
+So you have to practice this like crazy when you first start out and just become highly proficient at it.
+
+And focus on keeping each idea to the point and be very succinct.
+
+Make it very tidy.
+
+Make the template very, very tidy and make it meaningful.
+
+Do not write entire research reports and go down endless rabbit holes.
+
+One of the worst things you can do as a retail trader when generating ideas is to go off on all sorts of tangents, go down all sorts of rabbit holes where the information just leads to nothing.
+
+Professional traders move very quickly and we are very effective in everything we do.
+
+What you are doing here is common sense and it requires you to just train yourself to move and think fast.
+
+So you can generate high quality trade ideas on a regular basis and on repeat.
+
+And in terms of quality, don't go out there and try to be a perfectionist and go down meaningless rabbit holes forever.
+
+Once you are on top of the basics of a trade idea, there is a diminishing marginal utility to your work.
+
+In terms of quality, if in 2, 3, 4 hours you can generate a trade idea that you would think independently and objectively is a 7 out of 10 in terms of quality.
+
+This is absolutely fine.
+
+This is absolutely fine.
+
+A 7 out of 10 is good.
+
+If you can repeat 7 out of 10 over and over again, this is great.
+
+Doing an extra 20 hours work to make it an 8 is just not feasible.
+
+And in terms of opportunity cost of time and capital, it's just silly because you can structure trades to limit your downside if you're wrong.
+
+And just the trade structure can turn a idea that's a 7 out of 10 into an 8 out of 10.
+
+So we're not seeking to be perfectionists here.
+
+If you try that, if you try to be a perfectionist in financial markets, you are never going to be an effective long short portfolio manager.
+
+If you've done all the blocking and tackling, you've got all the basics right, you've ticked all the boxes, you've done the work and you're confident that your work is right.
+
+Then the fundamental tailwinds are going to be in your sales and the catalysts will drive the stock price in the 20 to 60 day time horizon.
+
+Try to refrain yourself and have the discipline to not go down rabbit holes and have effective time management.
+
+Now, in terms of time management, you need to be committing to both a minimum and a maximum.
+
+So we look at around 8 to 12 hours per week for retail traders to have full time jobs.
+
+And of course, you want to be efficient.
+
+You need to be using those hours wisely so you can fit this around a full time profession.
+
+Let's go through an example.
+
+So if you work Monday to Friday, 35 to 45 hours a week, that's basically 7 to 9 hours work per working day on a Monday to Friday working week.
+
+This is a reasonable assumption.
+
+This is where most people would fit in.
+
+So where would you fit in your 8 to 12 hours into a normal working week like this?
+
+Well, you're probably going to be doing something on a weekend.
+
+So have some discipline to set 3 or 4 hours aside on, for example, a Saturday or Sunday morning.
+
+Go over the major market news and the market moves of the last week and just ask yourself the question, does it change my macro view?
+
+Then go over the expected news for the week ahead and just diarize news and updates that could affect each of your live positions and trade ideas.
+
+And just ask yourself the question, are you expecting any potential surprises?
+
+Then throughout the week, there's going to be hours that you need to set aside as well.
+
+So, for example, on a Monday or Tuesday evening after work, you'll go through live positions that you've got on in your trading account.
+
+Check the news for the first day or two of the week.
+
+Ask yourself the question, why have your stocks actually moved and have your views changed on anything?
+
+And of course, set aside some time for looking at new ideas or revisit old ideas that may not have become actionable trade ideas, say, a month ago.
+
+And you want to be seeking to generate at least one idea during this three, four hour window on, say, a Monday or Tuesday evening, possibly even two.
+
+And then you would repeat again what you've done earlier on in the week, later in the week.
+
+And you'd be dedicating three to four hours to that session as well.
+
+So overall, in terms of ideas, you're seeking to generate two ideas a week.
+
+And in the background, you'll have an inventory of trade ideas as well.
+
+Something like 10 to 15 ideas that are high quality in your trade idea inventory.
+
+And you'll have live positions as well.
+
+And some ideas in your inventory may not be actionable.
+
+They may be stale and old ideas, and they will drop out of the inventory.
+
+The point is, is that when you're generating two ideas a week, you're generating fresh, new and original trade ideas to replace stale and old ideas that aren't going to work in your inventory.
+
+And they drop out of your inventory.
+
+On top of this, intermittently throughout the week, you're going to be logging into your trading account, either when you want to act or when you need to act.
+
+So it could be during or after major macro or stock and sector news, you need to be jumping into your account and checking your positions.
+
+And yes, you may have to do this at work, walk away from what you're doing at work at the time, or check on your phone.
+
+So when you're doing that, you need to be asking yourself the questions.
+
+Why are my stocks actually moving?
+
+Does this change anything?
+
+Do I need to trade?
+
+Do I need to add to a position?
+
+Do I need to cut a position?
+
+Do I need to reduce a certain position?
+
+What you're really asking here is what actions can I take to add value to my portfolio by trading the volatility that's occurring?
+
+And then of course, you want to be executing well.
+
+So you want to be executing efficiently when you want to or need to trade.
+
+And then of course, always in the back of your mind, you need to be thinking intermittently throughout the week.
+
+Are there any of your inventory of trade ideas now worth putting on because they've moved to levels?
+
+The stocks have moved to levels where you actually want to get the trade on.
+
+So the timing has become more favorable.
+
+And of course, you need capital to do any of this.
+
+So always bear in mind, you need to be thinking about whether you've got the available margin in your account for positions that are new and fresh trade ideas.
+
+Now, in the spirit of time management, we want to be staying away from activities that add no value or make us no money.
+
+So adding no value to our process and making us no incremental dollars in our trading.
+
+And one of the worst things you can do as a retail trader, it's a terrible habit to fall into, is sitting in front of your brokerage account after logging in and staring at the screen for hours just watching stock prices move tick by tick and your P&L moving around.
+
+Moving around by tiny amounts.
+
+That is just a totally redundant exercise and just cannot be classed as doing actual work.
+
+It's completely pointless.
+
+And besides, you should already know the risk that you're taking and what the outcomes are for any position.
+
+So when it comes to time management, just do not fall into the traps.
+
+So when it comes to time management, just do not fall into the traps, the traps of redundant work of wasting time.
+
+Do not go on endless journeys down rabbit holes and staring at your P&L.
+
+All the best traders in the world, good traders are efficient traders.
+
+We get to the answers that matter very quickly and we get the most out of our time.
+
+We work smart.
+
+And yes, working smart involves having a consistent and repeatable process and working efficiently, which is why the trade idea template exists.
+
+It brings consistency to your process via familiarity and regularity and this leads to consistency in a trader's returns.
+
+And when we're generating trade ideas, the template gives us discipline because we have to hit every key point for an idea to be defined as an actual trade idea.
+
+Also, at the end of the day, all traders are on their own.
+
+You're going to be generating your own trade ideas and you're going to be deciding on structures on your own and also managing the risk of your portfolio and taking regular actions on your portfolio by yourself.
+
+This is not something you can outsource and it's impossible to climb the competency hierarchy and become pro trader level if you don't know how to do this yourself.
+
+You just have to do it.
+
+So you have to have the discipline to stick to the process.
+
+And what you will find is, is that whenever you deviate from the process and you get sloppy, this is when losses start to creep in and things start to go wrong for you as a trader.
+
+In this situation, you're deviating away from the path to consistency.
+
+On top of the discipline of sticking to the process and not deviating, you've got to have the discipline each week to commit to that minimum and maximum amount of hours, amount of work that you get out of those hours each week.
+
+So the eight hours minimum and the 12 hours maximum.
+
+So what you're going to find is on a weekly basis, it can be a struggle sometimes, but it's a balancing act.
+
+It's a fine art.
+
+And of course, it's specific to your own situation.
+
+Listen, you're an adult.
+
+Just be on top of your schedule and just get the work done consistently.
+
+This is exactly how you climb the competency hierarchy and you achieve the level of unconscious competence in trading.
+
+So guys, that's the trade idea template and time management in a nutshell.
+
+Let's go back to the desk for a brief recap.
+
+Okay, guys, so welcome back to the desk.
+
+Obviously, in the last few videos, we've been through a ton of information to do with catalysts and the trade idea generation templates.
+
+Let's deal with catalysts first.
+
+What are the main messages that we need to take away from the last few videos in regards to catalysts?
+
+Well, the key message here is that you really have to turn your investment process into a trade idea process.
+
+That's what catalysts do for us.
+
+Okay.
+
+They turn investments into trades.
+
+Okay.
+
+And if you recall from previous parts of the PTM video series, what really matters for us here in terms of learning the trade idea generation process, and then generating ideas and becoming consistently profitable over time is your ability to be able to generate a large amount, an abundance of high quality trade ideas on repeat.
+
+Now, this is why catalysts are so important because you can very easily get good at the quantitative and the qualitative processes that we've been through.
+
+It's actually quite straightforward to become good at those processes.
+
+But what actually turns an investment process into a trade idea is your ability, your ability to identify catalysts.
+
+Okay.
+
+This is where you're going to get excess volatility within the 20 to 60 day time horizon.
+
+Of course, we love stocks that have a high level of realized and implied volatility.
+
+That's great for us.
+
+But what we want on top of that is catalysts that are going to move the stock even more within that 20 to 60 day time horizon.
+
+So we went through the process of identifying catalysts, how you would actually go and do that with our example.
+
+And we basically stick to the discipline of disseminating non earnings related catalysts.
+
+And this is what should be your focus going forward when you're identifying catalysts in the future.
+
+Look for non earnings related catalysts that are going to be incremental to revenue and earnings expectations.
+
+Now, unfortunately, there's no manual or encyclopedia for catalysts.
+
+Okay.
+
+Catalysts, they're just endless.
+
+The definition of a catalyst can be endless, but it's anything that moves the needle on revenue and earnings expectations, revenue and earnings guidance.
+
+So there's no encyclopedia.
+
+You're just going to have to get used to this process, use a lot of common sense, and it will come with experience.
+
+Now, we also looked at the trade idea generation template.
+
+And we went through all of the key areas of how you actually go and fill that out.
+
+Now, the template just gives you discipline because, obviously, you can't have a trade idea if all areas of the template are not actually properly completed.
+
+Meaning it's just impossible for you to generate a high quality trade idea unless the template is actually completed to a high standard.
+
+We've taught thousands of retail traders over the last decade here at ITPM.
+
+And what the trade idea generation templates really does is it provides a photograph or snapshot of your ability to actually generate a trade idea.
+
+And in our experience, what you're probably going to realize in the beginning when you first start generating trade ideas and filling out the template is that your process is actually pretty lackluster and not really up to scratch.
+
+This will just be something that you realize and admit very early on.
+
+But that's OK.
+
+Totally fine.
+
+Just commit to self-improvement and it will just come to you and get better over time.
+
+Usually on our side, what we see is that within a matter of around three months, retail traders can actually get really good at filling out the trade idea generation template and generating trade ideas.
+
+Usually around three months, that's when people start getting pretty good at it.
+
+As long as you stick and commit to the process.
+
+So don't be afraid of it. Embrace it.
+
+This is how you get good at generating trade ideas.
+
+It's just practice and experience.
+
+OK, now we're going to take a welcome break at this juncture in the video series.
+
+We're actually going to go back to macroeconomics and specifically what we're going to be looking at is macro driven trade ideas in single stocks.
+
+So this will actually broaden your opportunity set for trade idea generation.
+
+So let's go over to the next few videos and I'll be back here at the desk in a few videos time when we've covered the next topic of macro driven single stock trade ideas.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.
+
+Thank you.

@@ -1,0 +1,393 @@
+---
+course: ptm2
+lesson_id: "29"
+title: "Recap of Quantitative Processing"
+module: quantitative-idea-generation
+module_title: "Quantitative idea generation"
+duration: 00:32:07
+duration_seconds: 1926.848
+source: "29. Recap of Quantitative Processing.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  []
+---
+
+# 29 — Recap of Quantitative Processing
+
+Okay, guys, so we are back at the desk again, and we have come to a very important juncture in the PTM video series, because we are now at the end of the quantitative processing phase of the trade idea generation process. So, what have we actually looked at here? Well, we've looked at a number of things. Firstly, the interpretation of valuation and growth metrics. Okay.
+
+We've looked at the mechanics of long processing, long trade idea processing. We've looked at the mechanics of short idea processing. And we've also looked at the opportunities in non-ideal earnings growth profiles. And we've also looked at turnarounds and value traps. But also, we showed you how to process data correctly in the quant phase and avoid all of the common mistakes. So what we're going to do is now, guys, we're going to go through a thorough recap of everything in the quant phase. And then we're going to head straight into the next section of the video series, the qualitative processing phase. So guys, you're making very good progress here. If you've got to this stage, and understood the vast majority of what's being taught here, you're in a very, very strong position.
+
+But obviously, there's a lot more work to do in the trade idea generation process. Keep going, get your head down. Keep learning the material. And I'll see you back at the desk very soon.
+
+Okay, so we've got to go, get your head down.
+
+Okay, so we've come to the end of a major part of the PTM video series. The quantitative processing phase of trade idea generation. Let's go through now a recap of the quantitative processing phase. And let's tie everything up together.
+
+So if you recall, in the first part of the PTM video series, we started at the macro economic level, we covered leading indicators in the United States, and also internationally.
+
+In our overall systematic process, we always start with the fundamentals, and we start at the macro level. And we do this because we want to know, and we want to predict GDP growth, both in the United States and internationally.
+
+And we are seeking to forecast through correlation, stock market direction and returns.
+
+Why? Because we want to know our directional portfolio bias, long, short, or neutral, flat.
+
+And we also want to know, or have clues as to the characteristics of what types of longs and shorts we should be exposing ourselves to.
+
+If we understand the macro economic environment first from the top down via our leading indicators, we can build portfolios that stand the best chance of making money in the current and forthcoming macro economic environment.
+
+So we do our monthly processes in the fundamentals in the quantitative at the macro level first.
+
+And each month we update our leading indicators and we interpret them as to what portfolio bias we should be having at any one moment in time.
+
+And of course, we always look to our macro to identify potential stresses in the economy and potentially in the financial markets to enable us to change our mind and to change our portfolio bias when required.
+
+Once we have established our macro economic view and our market view or portfolio bias, we move on to looking at stocks at the micro level.
+
+And we do this on a quantitative and qualitative basis.
+
+We will generate potential trade ideas, both longs and shorts using the quantitative processes in the micro economic bottom up dashboard first.
+
+And our starting point is always an identification process at the sector level, utilizing market capitalization, percentage earnings growth, percentage revenue growth, and valuation price earnings ratio and peg ratio.
+
+Once we have identified potential longs and shorts, we look to backwards looking information, backwards looking quant for evidence.
+
+We move from identification into evidence.
+
+So first of all, we look at enterprise value, EBIT and EBITDA, EV over EBIT and EV over EBITDA.
+
+And then we move on to backwards looking quant in the profit and loss statement, the balance sheet and the combos, the combo ratios of the balance sheet and the profit and loss statement.
+
+And then we also have a look at cash flow statement metrics.
+
+So this is a step in uncovering evidence and seeking evidence as to what is behind valuation and as to what is behind potentially driving revenue growth and earnings growth.
+
+And therefore helping us to understand why the market likes a particular stock.
+
+And why a market dislikes a particular stock.
+
+In a sector.
+
+And therefore helping us to understand why the market likes a particular stock.
+
+In a sector.
+
+And therefore helping us to understand why the market likes a particular stock.
+
+And why a market dislikes a particular stock.
+
+In a sector.
+
+And therefore helping us to understand why the market likes a particular stock.
+
+And therefore helping us to understand why the market.
+
+And therefore helping us to understand why the market.
+
+And therefore helping us to understand why the market.
+
+And therefore helping us to understand why the market.
+
+And therefore helping us to understand why the market.
+
+And therefore helping us to understand why the market.
+
+And therefore helping us to understand why the market.
+
+And therefore helping us to understand why the market.
+
+And why a market dislikes a particular stock.
+
+And why a market dislikes a particular stock.
+
+In a sector. and therefore it also gives us an overall understanding and appreciation of exactly why a sector has positive outliers and negative outliers and everything else in between those outliers.
+
+So our forward-looking metrics, our forward-looking quant helps us to identify the positive outliers and negative outliers in a sector.
+
+And our backwards-looking quant gives us evidence and clues as to why those positive outliers exist and why those negative outliers exist and helps us to understand the entire landscape of a sector.
+
+So how does all this quantitative work that we've been looking at and what we will engage in on a regular basis actually fit into our overall pro-trader systematic framework for long-short portfolio management within the 20-to-60-day time horizon?
+
+Well, it fits into the area where on a regular basis we will be doing the vast majority of our work.
+
+Where we will do 80-90% of our work.
+
+Yes, it fits into our fundamental area of the overall pro-trader systematic framework.
+
+We engage in fundamental quantitative and qualitative processes first at the macro level to determine portfolio bias, utilising quantitative processes as in leading indicators, and we utilise quantitative metrics at the micro level, the bottom-up level, that being our forward-looking metrics for identification purposes and our backwards-looking quantitative or accounting metrics for evidence that supports the quantitative in our identification steps.
+
+So it's fundamentals first and everything else comes after that.
+
+And we will, of course, be looking at everything else in the PTM video series except trade structure because in the PTM video series, we are assuming that we are taking stock positions.
+
+So to recap here on fundamentals, just simply remember the steps that we have to go through for fundamental analysis.
+
+So, we have two parts to our fundamental analysis.
+
+We have our quantitative processes and we have our qualitative processes.
+
+So far, we have looked at quantitative process where we've covered macro views for portfolio bias and we've covered quantitative in the micro context for micro views.
+
+And the quantitative process is used for identifying outliers.
+
+And part of that overall process of identifying outliers with some conviction, we also look to our backwards-looking quantitative for evidence.
+
+So at this stage of the fundamental analysis, we have overall identified potential longs and shorts utilizing quantitative processes.
+
+The next step in the process, which is what we're moving on to now in the PTM video series is the qualitative process.
+
+And this comes in a number of steps, learning the stock info, identifying key performance indicators and identifying catalysts.
+
+As a reminder, while we're recapping quantitative, we go where the juice is.
+
+Our opportunity set in the U.S. stock market is over 2,200 stocks.
+
+And we have various industry sectors that can be characterized as cyclicals and defensives.
+
+And within those sectors, we have various stocks that can be characterized as growth, X growth and value.
+
+And of course, we are always seeking as traders to get the most juice out of the squeeze.
+
+We want to be long stocks, positive outliers that, within our time horizon, are going to both outperform their sector and the market in any GDP growth environment.
+
+And on the short side, we want to be short, negative outliers, we want to be short stocks that go down.
+
+We want to be short stocks that underperform both the sector and the market in any GDP environment.
+
+So we always start with our quantitative processes at the sector and the stock level of forward-looking, quantitative processes in order to identify both positive and negative outliers within a sector.
+
+So in this exercise of discovery, we look to our forward-looking metrics in order to make the identification of positive and negative outliers.
+
+So we look to market cap, earnings growth, revenue growth, and valuation, PE and PEG.
+
+And the processes that we will engage in for each, for example, are as follows.
+
+So for market capitalization, we are going to put market cap filters on our sector data for longs and shorts.
+
+And we are going to look at annualized historical and implied volatility of each of those stocks.
+
+And in terms of volatility, what we are looking for is roughly around at least 1.5 times the S&P 500 volatility index.
+
+The VIX, the VIX, this means we are getting both the opportunity and the risk that we like and we choose to accept as traders.
+
+Our market cap filters when we're going through our processes will put us in the right ballpark for volatility.
+
+But we should always double-check it and make sure that we are getting an acceptable level of volatility for both our opportunity and risk.
+
+As Chris Quill pointed out in his classes on foundations of portfolio management earlier in the PTM video series.
+
+With earnings growth, we want to be long or seeking to be long, the highest percentage earnings growth.
+
+And with shorts, we want to be seeking to be short, the lowest percentage earnings growth.
+
+And ideally, we want our earnings growth over the upcoming two periods to show sequential characteristics.
+
+And of course, we want to be doing this with good timing.
+
+However, when we are going through our quantitative processes at the sector level for earnings growth, if we can't find our ideal sequentially positive or sequentially negative earnings growth profiles, we may be willing to accept non-ideal earnings growth profiles as the next best thing.
+
+And of course, we always have the choice to go and look for long and short ideas in other sectors if we can't find the ideal earnings growth profiles that we like.
+
+With revenue growth, we like to see the top line of our company, our forward-looking estimates for revenue growth for the top line.
+
+We want to see growth estimates for longs that are expanding.
+
+And for shorts, we want to see evidence of forward-looking estimates that are contracting.
+
+When it comes to price earnings ratio and PEG ratio, so with valuation, starting with price earnings ratio, we want to see evidence from the PE that money likes our potential long ideas or dislikes our potential short ideas.
+
+Through a trader's interpretation of price earnings ratio, we would much rather have the market on our side than not on our side.
+
+With PEG ratio, we want to see evidence from the valuation gap both in PEG ratio and in PE ratio that we actually have an opportunity in the stock.
+
+So for long ideas, this would be the difference in the gap between PE2 and PE1 of a positive outlier and then making an assumption that in period 2, the stock will trade on the same PE multiple as in period 1.
+
+And the difference is the gap between the PE2 and the PE1.
+
+So this gives us a potential price target over the next period.
+
+For long ideas with PEG ratio, the difference between PEG 2 and PEG 1 tells us the opportunity in the stock if the market pays the same PEG ratio in period 2 as they're paying in period 1 and also may give us a sense of a price target over that period, similar to the price earnings ratio.
+
+With shorts, we don't read too much into PEGs because as we realized with negative earnings growth profiles, PEGs can just be all over the place and the numbers have little inference to the reality of the stock.
+
+When it comes to price earnings ratio or shorts, when we have a negative EPS, we don't read too much into the PE ratio and its importance.
+
+However, when EPS is positive, but we have negative earnings growth, PE profiles and the gap between PE2 and PE1 tells us what the potential opportunity is for the short in terms of the change in the multiple being the same in period 2 as it is in period 1 and therefore the potential downside in the stock over the period.
+
+And of course, with shorts, when we're doing our quantitative processing, we're looking at our forward-looking metrics.
+
+We always have to think of it in the context of our five phases.
+
+So our starting point, as always, in quant processing is to identify what the market likes and dislikes.
+
+So we have our 11 numbers.
+
+We have stock price, market cap, EPS0, EPS1, EPS2, earnings growth 1 and 2, PE 1 and 2, and PEG 1 and 2.
+
+We download the data, we go through the downloaded data, and our first step is to cleanse the data and create our own robust sector.
+
+We must always get to a point where we have a very high degree of confidence that the numbers are correct and that the sector data is as close to a reflection of reality as possible.
+
+Then we identify the earnings growth profiles, the PE and PEG premiums and discounts, and we make sure we are comfortable with our conclusions.
+
+We come to the conclusion that there are positive and negative outliers and what is in between.
+
+So possible turnarounds or X growth stories or boring nothing stocks.
+
+Then we move on to ask the question of why.
+
+So we move on to the evidence phase.
+
+So we look at quantitative backwards looking evidence.
+
+So we first look at the most obvious backwards looking quantitative or accounting metrics.
+
+We start with revenue growth.
+
+We also look at gross margins or gross profit ratio.
+
+We look at the pre-tax profit ratio.
+
+And we also look at net after-tax margins or the after-tax ratio.
+
+We also look for evidence to our forward looking quants via our backwards looking quants in the areas of enterprise value, EBIT and EBITDA, EV over EBIT and EV over EBITDA.
+
+So we include these measures to our positive and negative outliers.
+
+And we keep asking the question of why money likes and dislikes certain stocks in the sector.
+
+We are always trying to figure out why the market likes or dislikes particular stocks.
+
+This is an evidence phase in which we learn about the stocks, what is driving the valuation, revenue growth and earnings growth.
+
+If it is not a predictor, it is backwards looking information, always remember that it's backwards looking information that potentially confirms our forward looking estimates.
+
+We then do further work in our backwards looking quant or accounting metrics by moving on from simply looking at the metrics on the profit and loss statement.
+
+We also look at the balance sheet and we look at the combo ratios between the balance sheet and the profit and loss statement.
+
+And we also look at the cash flow statement.
+
+Now in the PTM video series, we learned the balance sheet and the balance sheet profit and loss combo metrics for backwards looking financial statement analysis.
+
+We learned that in the context of turnarounds, X growth names and possible value traps.
+
+However, they can all be used in your regular analysis when doing your deep dives on classic, longs and shorts.
+
+So you should absolutely use these processes.
+
+Always follow the processes. forward looking quant identification or discovery first backwards looking quant evidential second, and then move on to forward looking qualitative assessment.
+
+So to understand this visually, we have our quant discovery or identification area or phase.
+
+That is all predicated on forward looking work using forward looking valuation and forward looking estimates.
+
+Then we have our quantitative evidence phase, which is backwards looking financial statements.
+
+And then we have our qualitative assessment, our qualitative drivers, which is both backwards and forwards looking KPIs and management operating plan.
+
+So here now we add in to our overall fundamental analysis evolution.
+
+We add in the descriptors for every part of our microeconomic processes that we use.
+
+So when we identify, finally identify our positive and negative outliers, that is all quantitative work and it's discovery and evidence work.
+
+When we are learning the stock information, this is also evidence work.
+
+So this is where the quantitative processes and the qualitative processes overlap.
+
+When we are looking at backwards looking accounting metrics, this is, of course, defined as quantitative work.
+
+However, because it's backwards looking, it is also working on evidence to support forward looking valuation and to potentially discover what is behind revenue growth and earnings growth for positive and negative outliers.
+
+But when we are doing qualitative processes, qualitative work on a stock, naturally, by doing that, we are also engaging in learning about the stock's information.
+
+So this is also evidence work.
+
+And this can be both backwards and forwards looking.
+
+And when we are doing qualitative work on a stock and on a sector, we are also looking forwards and we are identifying key performance indicators.
+
+So with KPIs, we are identifying the drivers of the drivers of the business behind revenue and earnings.
+
+And with identifying catalysts, we are identifying what is going to drive the stock and what is going to drive valuation.
+
+But this next part of the microeconomic processes that we utilize is coming up in the next part of the PTM video series.
+
+We're going to be obviously looking at qualitative processes.
+
+Now, you'll recall that we looked at a theoretical long short portfolio and that was built all based on earnings growth profiles.
+
+So we had our theoretical 10 stock, $100,000 portfolio with a net long bias that's non beta adjusted, but it was all built on the assumption of only looking at earnings growth profiles.
+
+So we obviously jumped the gun here.
+
+There is still a lot more work to do if we build a portfolio only based on earnings growth profiles, which, by the way, we will never do this assumes that we haven't done any qualitative processes at all.
+
+And that we don't want our stocks to move in the next 20 to 60 days.
+
+So our stocks don't actually have catalysts.
+
+As traders and portfolio managers, we want to know what is behind the numbers, what is behind the revenue growth, what is behind the earnings growth, what is driving that, and also what is driving valuation.
+
+And what we also want to know is we want to know if there are catalysts that are going to move the stock within our time horizon.
+
+Remember, we must always know the difference between a trade idea and an investment idea.
+
+We absolutely must never forget that a trade idea is not an investment idea nor a day trade.
+
+We are operating in the 20 to 60 day time horizon.
+
+We are long short portfolio managers.
+
+We want to be right by 60 days out.
+
+We do not come up with investment ideas and we do not turn our trade ideas into investments.
+
+We must know what is driving the numbers, what is behind the numbers.
+
+We must know, we must understand before we even go into a trade, what is going to move the needle within our time horizon on the numbers.
+
+What behind the numbers is going to move the needle and what is the catalyst or catalysts that are going to achieve that.
+
+And we must never forget also that the quality of our ideas is paramount.
+
+Never forget the importance that the quality of our trade ideas plays in the overall process of building and managing a long-short portfolio.
+
+So this is why we go through all of our processes, not just, for example, going through the identification stage of the quantitative process, finding something that is high PE and high earnings growth, and then turning it into a position.
+
+We obviously have to go through a lot more processes and do a lot more work than just that stage.
+
+That is just an identification process.
+
+It's a discovery process.
+
+And then we move on to the next part of our quantitative process.
+
+The next part of our quant phase, which is evidence.
+
+We look to backwards looking quantitative metrics for evidence to support the forward looking quant.
+
+And in the process, we are obviously, even at that stage, learning about the stock information.
+
+And even then, we don't stop and turn something into a position, turn a trade idea into a position.
+
+At that stage, it's not even a trade idea yet.
+
+We then move on to the qualitative processes.
+
+We identify the drivers behind the numbers.
+
+And this helps us understand and pinpoint what is going to drive the valuation of the stock going forwards.
+
+And what is going to drive price.
+
+And not only that, it's going to help us understand and even pinpoint what is going to move the needle within our time horizon.
+
+A trade idea is not a trade idea if you have only done the quantitative work.
+
+The definition of a trade idea, a complete trade idea, is when you have done both the quantitative and the qualitative assessment.
+
+So, with that being said, let's move on to the next part of the PTM video series.
+
+Let's move on to the qualitative processes.

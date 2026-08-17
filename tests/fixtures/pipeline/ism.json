@@ -1,0 +1,34 @@
+{
+  "pmi": 55.6,
+  "nmi": 54.1,
+  "as_of": "2026-08-16T16:00:00+00:00",
+  "manufacturing": {
+    "kind": "manufacturing",
+    "report_month": "July 2026",
+    "headline": 55.6,
+    "components": {
+      "headline": {"value": 55.6, "prior": 53.3, "delta": 2.3},
+      "new_orders": {"value": 56.7, "prior": 56.0, "delta": 0.7}
+    },
+    "industries": {
+      "growth": ["Printing & Related Support Activities", "Electrical Equipment, Appliances & Components"],
+      "contraction": ["Chemical Products"]
+    },
+    "new_orders_industries": {
+      "growth": ["Electrical Equipment, Appliances & Components"],
+      "contraction": ["Chemical Products"]
+    },
+    "comments": []
+  },
+  "services": {
+    "kind": "services",
+    "report_month": "July 2026",
+    "headline": 54.1,
+    "components": {"headline": {"value": 54.1}},
+    "industries": {"growth": ["Retail Trade"], "contraction": ["Health Care & Social Assistance"]},
+    "new_orders_industries": {"growth": ["Retail Trade"], "contraction": []},
+    "comments": []
+  },
+  "urls": {"pmi": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/july/"},
+  "errors": []
+}

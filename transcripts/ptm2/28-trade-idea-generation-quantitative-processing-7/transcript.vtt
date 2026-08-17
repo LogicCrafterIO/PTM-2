@@ -1,0 +1,2144 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:14.520
+Okay, so welcome to video number 28. We
+are going to look at now as part of the
+trade idea generation
+
+00:00:14.520 --> 00:00:23.040
+process, we're going to look at data
+mining and processing mistakes and
+solutions. So far,
+
+00:00:23.040 --> 00:00:33.760
+we have gone through the quantitative
+process and we've looked at long ideas and
+short ideas and also
+
+00:00:33.760 --> 00:00:42.080
+turnarounds, X growth names and value
+traps. What we've done is we've gone
+through forward-looking
+
+00:00:42.080 --> 00:00:49.840
+metrics, our identification process, and
+we've gone through an evidence process
+looking at
+
+00:00:49.840 --> 00:00:56.720
+backwards-looking quantitative data as
+well. What we're going to be looking at
+here in this video
+
+00:00:57.520 --> 00:01:05.440
+is data mining and processing mistakes and
+some solutions for the forward-looking
+quantitative
+
+00:01:05.440 --> 00:01:14.240
+identification process. What we're trying
+to achieve here is that we want to get our
+quantitative
+
+00:01:14.240 --> 00:01:21.200
+spreadsheet work to reflect the reality of
+a sector as closely as possible.
+
+00:01:22.640 --> 00:01:30.400
+How can we even make sensible conclusions
+to determine whether there's genuine
+positive
+
+00:01:30.400 --> 00:01:35.920
+and negative outliers in a sector and
+analyze everything else in between
+
+00:01:35.920 --> 00:01:43.760
+if we don't know for certain that the data
+that we've downloaded, the sector data
+that we're looking
+
+00:01:43.760 --> 00:01:55.440
+at, accurately reflects reality? Now,
+what's interesting is that ITPM teaching
+methods went globally public in 2013.
+
+00:01:55.440 --> 00:02:05.200
+And over a number of years, we witnessed
+and noticed some patterns that emerged,
+patterns of behavior
+
+00:02:05.840 --> 00:02:13.520
+that emerged amongst retail traders at
+ITPM when they were doing their
+quantitative processing.
+
+00:02:14.960 --> 00:02:21.120
+Most commonly, what we saw were patterns
+where people were making some
+
+00:02:21.120 --> 00:02:27.440
+some basic errors in their quantitative
+processing identification phase.
+
+00:02:28.560 --> 00:02:33.200
+So, what we're going to do here is feed
+back this information to you.
+
+00:02:34.000 --> 00:02:40.800
+So, you just simply don't make these
+mistakes and you erase them immediately.
+
+00:02:40.800 --> 00:02:49.760
+So, you save yourself a ton of time in the
+identification phase of the quantitative
+processing.
+
+00:02:49.760 --> 00:02:58.080
+So, it's really important that when you
+start this, that you get off on the right
+foot and you eliminate
+
+00:02:58.720 --> 00:03:05.520
+all of the common errors that we've
+witnessed, that we've seen over the last
+decade.
+
+00:03:06.640 --> 00:03:15.520
+And what it really comes down to is a lack
+of attention to detail and just some
+really basic common sense.
+
+00:03:16.720 --> 00:03:22.320
+And, unfortunately, trading is not an easy
+pursuit.
+
+00:03:22.320 --> 00:03:27.280
+It does require a lot of attention to
+detail and common sense.
+
+00:03:28.400 --> 00:03:36.720
+But, from a teaching perspective, from an
+ITPM perspective, we have to be very, very
+careful here.
+
+00:03:37.520 --> 00:03:45.120
+Because, there is always a catch-22 when
+teaching people from scratch how to trade.
+
+00:03:45.120 --> 00:03:55.840
+Because, if you want to become, or anybody
+wants to become, a successful trader over
+their lifetime or career,
+
+00:03:57.360 --> 00:04:04.320
+you have to become self-sustainable.
+
+00:04:04.320 --> 00:04:04.960
+You have to be able to only rely on
+yourself.
+
+00:04:06.160 --> 00:04:14.880
+In addition, you have to have a very
+strong work ethic and you have to have the
+ability to be able to work smart and not
+hard.
+
+00:04:14.880 --> 00:04:21.440
+So, not going down endless rabbit holes to
+get to information that's irrelevant.
+
+00:04:21.440 --> 00:04:23.680
+Working smart is important.
+
+00:04:25.440 --> 00:04:35.760
+So, if you recall, the four principles of
+ITPM, self-sustainability, work ethic,
+free information, and working smart, not
+hard.
+
+00:04:36.640 --> 00:04:39.360
+There's very good reasons why we have
+these principles.
+
+00:04:39.760 --> 00:04:44.080
+It's because we've been in this game for a
+very long time.
+
+00:04:44.640 --> 00:04:53.440
+And, we know what traits are required to
+produce consistently profitable traders.
+
+00:04:54.880 --> 00:05:02.320
+And, part of self-sustainability, work
+ethic, and the ability to work smart, not
+hard,
+
+00:05:02.960 --> 00:05:10.080
+is the ability to be able to process and
+understand large amounts of data.
+
+00:05:10.640 --> 00:05:11.440
+And, guess what?
+
+00:05:12.000 --> 00:05:14.880
+That requires a lot of attention to
+detail.
+
+00:05:15.680 --> 00:05:20.640
+On top of that, you have to have the
+ability to interpret the data.
+
+00:05:21.360 --> 00:05:23.440
+And, that requires common sense.
+
+00:05:25.360 --> 00:05:31.520
+And, the only way that you're going to
+acquire this skill set, or these skill
+sets,
+
+00:05:32.080 --> 00:05:40.480
+and be good at implementing these
+principles over your career, over your
+lifetime, is if you do the work yourself.
+
+00:05:41.040 --> 00:05:43.440
+And, find the answers yourself.
+
+00:05:44.000 --> 00:05:47.520
+Good traders find the answers themselves.
+
+00:05:48.960 --> 00:05:56.000
+So, the catch-22 here, from a teaching
+perspective, is that we want to give you
+all the information
+
+00:05:57.120 --> 00:06:00.320
+that enables you to be successful in
+trading.
+
+00:06:00.880 --> 00:06:07.600
+But, we know at the same time, that to be
+successful in trading, you have to do it
+yourself.
+
+00:06:09.040 --> 00:06:16.480
+So, I guess the best analogy I can give
+here, is that we can provide you the
+golden keys,
+
+00:06:16.480 --> 00:06:20.560
+to the golden door that opens to the
+golden kingdom.
+
+00:06:21.280 --> 00:06:27.200
+But, you have to open the door yourself
+and walk over the threshold.
+
+00:06:28.880 --> 00:06:36.080
+So, from a teaching perspective, we have
+to draw a line in the sand that we simply
+do not cross.
+
+00:06:36.640 --> 00:06:44.320
+Because, if we did the opposite, and we
+told you all the time exactly what to do,
+and what to buy,
+
+00:06:44.320 --> 00:06:53.360
+what to sell, when to buy it, when to sell
+it, etc., etc., you simply would never
+become a good trader.
+
+00:06:53.360 --> 00:06:58.240
+You wouldn't be self sustainable, you
+wouldn't be self sustainable, you wouldn't
+have a solid work ethic,
+
+00:06:58.800 --> 00:07:06.960
+you wouldn't have the ability to work
+smart and not hard, and you wouldn't have
+attention to detail and common sense.
+
+00:07:06.960 --> 00:07:10.560
+We would just be doing you a massive
+disservice.
+
+00:07:11.840 --> 00:07:20.080
+So, when it comes to data processing
+mistakes, we're going to point you in the
+right direction.
+
+00:07:20.080 --> 00:07:28.480
+But, of course, you have to then go off
+and do all of the work yourself to
+generate your own trade ideas.
+
+00:07:28.480 --> 00:07:36.480
+So, the first step is to eliminate all of
+the common mistakes that people make in
+the beginning,
+
+00:07:36.480 --> 00:07:40.800
+when they have very little attention to
+detail and common sense.
+
+00:07:42.240 --> 00:07:52.000
+Now, the good news is, is that the more
+you practice processing and analyzing big
+data sets and interpreting them,
+
+00:07:53.360 --> 00:07:56.800
+the more attention to detail and common
+sense you're going to get.
+
+00:07:57.360 --> 00:08:06.720
+And this will actually help you outside of
+trading as well, just in the general
+world, in everyday life.
+
+00:08:07.680 --> 00:08:17.680
+You will become, generally, just a lot
+sharper, and you'll be able to spot
+discrepancies and potential opportunities,
+
+00:08:17.680 --> 00:08:22.400
+not just in trading, but even outside
+trading as well.
+
+00:08:22.400 --> 00:08:30.800
+You will just become better at self
+sustainability, your work ethic, working
+smart, not hard,
+
+00:08:31.760 --> 00:08:40.000
+and have much better attention to detail
+and common sense the more you engage in
+the systematic
+
+00:08:40.000 --> 00:08:48.800
+trade idea generation process and the
+quantitative process at the identification
+stage.
+
+00:08:50.480 --> 00:08:57.440
+So, when you're going through your monthly
+processes, you're going to be downloading
+data.
+
+00:08:58.720 --> 00:09:07.040
+Now, this data, ITPM, does provide you
+with updates of the US Stock Screener
+sheet that we've looked
+
+00:09:07.040 --> 00:09:12.800
+at previously in the PTM video series that
+is downloaded from Zaxx.
+
+00:09:12.800 --> 00:09:18.240
+It's available on a monthly basis in the
+ITPM data section on the website.
+
+00:09:19.840 --> 00:09:26.000
+And this data is a NAICS classification
+data that's updated every month.
+
+00:09:26.800 --> 00:09:29.200
+And it is available publicly.
+
+00:09:29.200 --> 00:09:30.560
+You can download it yourself.
+
+00:09:31.280 --> 00:09:34.880
+It's accessible and downloadable by
+everybody.
+
+00:09:35.360 --> 00:09:42.240
+However, you do need to learn how to
+organize the data and process it correctly
+
+00:09:42.240 --> 00:09:44.880
+with attention to detail and common sense.
+
+00:09:45.680 --> 00:09:51.440
+Additionally, data sources can, of course,
+change over time and in the future.
+
+00:09:52.080 --> 00:09:58.400
+You have to learn how to search for data
+sets using search engines like Google
+
+00:09:58.400 --> 00:10:04.560
+and not just rely on people to tell you
+where to find it and do all of the work
+for you.
+
+00:10:05.120 --> 00:10:12.480
+So, by now, you should know that this is
+not how the Institute of Trading and
+Portfolio Management works.
+
+00:10:13.280 --> 00:10:19.600
+You will never be a consistently
+profitable trader if you constantly rely
+on people
+
+00:10:19.600 --> 00:10:23.680
+to tell you what to do, where to get
+information that's important,
+
+00:10:23.680 --> 00:10:26.240
+and then they literally do the work for
+you.
+
+00:10:26.240 --> 00:10:33.120
+It's impossible for you to become a
+consistently profitable trader if that's
+the route you take.
+
+00:10:34.400 --> 00:10:42.400
+So, you have to learn to look for this
+data yourself and rely on yourself and
+also learn how to process it correctly.
+
+00:10:43.280 --> 00:10:50.800
+So, you can process correctly by yourself
+with no help from anybody on a regular
+monthly basis.
+
+00:10:52.160 --> 00:11:00.880
+Now, here's our first problem with big
+data sets and downloading big data sets
+from third-party sources.
+
+00:11:01.680 --> 00:11:05.920
+It's trusting that all the numbers are
+correct and accurate.
+
+00:11:06.480 --> 00:11:14.640
+So, when visiting websites like Zaxx or
+Nasdaq.com and downloading the
+forward-looking data
+
+00:11:14.640 --> 00:11:20.880
+for around 2200-plus stocks, there's a
+major problem with doing so.
+
+00:11:21.440 --> 00:11:28.720
+You're engaging in an exercise of a
+large-scale data dump and you will be
+downloading data
+
+00:11:28.720 --> 00:11:34.080
+with differing labels from the ones you
+are used to in the PTM video series.
+
+00:11:35.280 --> 00:11:40.560
+There will be different titles for the
+columns in the spreadsheet when you
+download it
+
+00:11:41.200 --> 00:11:47.840
+and you have to organize the data into a
+recognizable and easy-to-use format
+
+00:11:48.480 --> 00:11:55.600
+similar to the way we have done it or
+exactly the same as the way we have done
+it with our 11 numbers.
+
+00:11:55.600 --> 00:12:02.640
+So, we have stock price, market
+capitalization, earnings per share zero,
+which is last year's
+
+00:12:02.640 --> 00:12:13.040
+reported EPS, EPS1, which is
+forward-looking EPS of the current year,
+EPS2, forward-looking EPS of next year,
+
+00:12:13.600 --> 00:12:20.720
+earnings growth 1, earnings growth 1,
+earnings growth 2, PE1, PE2, PEG1, and
+PEG2.
+
+00:12:20.720 --> 00:12:32.880
+These are the standard 11 numbers that we
+want to get in any download to reflect
+reality for each individual stock in a
+sector,
+
+00:12:32.880 --> 00:12:41.200
+and of course, therefore, the sector as a
+whole. And when you initially download
+spreadsheets like the ones
+
+00:12:41.200 --> 00:12:50.960
+from Zaxx or Nasdaq.com, these titles will
+not be there. You have to rearrange it and
+organize the sheet to get it all accurate
+and correct.
+
+00:12:52.000 --> 00:12:59.120
+So, that's the first step, but this
+creates also a bigger problem in terms of
+the big data dump.
+
+00:12:59.120 --> 00:13:07.120
+Large data dumps, when we are downloading
+them, if we're not doing any work
+whatsoever on the numbers,
+
+00:13:07.120 --> 00:13:16.800
+we are making the assumption that every
+number in all rows, columns, and cells for
+2200-plus stocks
+
+00:13:17.440 --> 00:13:27.200
+is 100% accurate. As traders, we have to
+have attention to detail and common sense,
+and we have to be as
+
+00:13:27.200 --> 00:13:35.440
+accurate as possible in reflecting
+reality. One of the biggest issues we
+always see at ITPM
+
+00:13:36.000 --> 00:13:44.400
+is retail traders just simply being too
+trusting with the numbers and not checking
+or eyeballing the numbers
+
+00:13:45.040 --> 00:13:54.080
+and fixing the errors to ensure an
+accurate reflection of reality. And that
+is attention to detail.
+
+00:13:54.080 --> 00:14:01.200
+On top of that, having common sense to
+enable sensible conclusions about the
+sector.
+
+00:14:02.880 --> 00:14:09.200
+What's happening here, if you download a
+big data spreadsheet from a third-party
+source,
+
+00:14:10.000 --> 00:14:17.120
+if you're doing absolutely nothing to
+cleanse the data, what you're doing is, is
+you're trusting
+
+00:14:17.680 --> 00:14:27.360
+a paste-special data dump from a
+third-party source and you're trusting
+that the numbers are 100% accurate.
+
+00:14:28.000 --> 00:14:36.160
+By not checking and fixing any issues with
+the data, the numbers that you're basing
+your decisions on
+
+00:14:36.160 --> 00:14:41.840
+to identify both positive and negative
+outliers, and of course, everything in
+between,
+
+00:14:41.840 --> 00:14:49.600
+could just be totally incorrect. So your
+conclusions will just be meaningless and
+wrong.
+
+00:14:51.040 --> 00:14:59.600
+So how can we even begin to consider
+taking real money positions with real
+money in a trading account
+
+00:14:59.600 --> 00:15:06.160
+account if we don't even know if our
+ideas, our trade ideas, reflect reality?
+
+00:15:06.720 --> 00:15:13.840
+We have to get the data of a chosen sector
+to reflect reality as closely as possible.
+
+00:15:13.840 --> 00:15:19.920
+And we have to have total confidence in
+the data and our findings.
+
+00:15:21.280 --> 00:15:30.080
+Now, the good news is, out of our 11
+numbers that we organize our spreadsheets
+into as part of the
+
+00:15:30.080 --> 00:15:39.680
+identification process, as long as you can
+get the stock price and the EPS numbers or
+estimates accurate,
+
+00:15:39.680 --> 00:15:45.680
+all the other data can just be worked out
+using Excel formulas.
+
+00:15:45.680 --> 00:15:52.240
+So when we're working out, for example,
+PE, it's just the stock price over the
+EPS.
+
+00:15:52.240 --> 00:15:58.960
+So if you get the stock price right and
+you get the EPS estimates right, you're
+going to get PE correct.
+
+00:15:59.520 --> 00:16:08.000
+The earnings growth numbers, they are just
+percentage differences from one EPS number
+to another EPS number.
+
+00:16:08.000 --> 00:16:14.000
+If you get the percentages right, you're
+going to get earnings growth percentage
+right.
+
+00:16:14.960 --> 00:16:20.640
+For PEG ratio, it's just PE divided by the
+earnings growth percentage.
+
+00:16:20.640 --> 00:16:28.320
+So if you get the stock price right and
+the EPS right, and you've calculated PE
+and the earnings growth
+
+00:16:28.320 --> 00:16:32.400
+number correctly, you're going to get the
+PEG number right.
+
+00:16:32.400 --> 00:16:38.480
+So everything goes back to just getting
+the stock price and the EPS estimates
+accurate.
+
+00:16:40.000 --> 00:16:48.960
+So something that you're going to find
+that happens when you download
+spreadsheets from third-party data
+sources,
+
+00:16:49.680 --> 00:17:02.000
+and in particular with the Zacks or
+Nasdaq.com download, you're going to find
+that the cells in the spreadsheet are not
+live.
+
+00:17:02.000 --> 00:17:12.960
+So we have a solution for that. It's very
+straightforward. We make the cells live
+and we eliminate any rogue cells.
+
+00:17:12.960 --> 00:17:24.240
+So please, when you download a spreadsheet
+from a third-party data source, just
+eyeball the goddamn numbers.
+
+00:17:25.840 --> 00:17:37.760
+Don't blindly go through a spreadsheet and
+not eyeball it and see on a basic cursory
+eyeballing if the numbers look right.
+
+00:17:38.640 --> 00:17:46.160
+So eyeball the numbers and just see if
+they make sense. Have attention to detail,
+please.
+
+00:17:47.600 --> 00:17:56.400
+When you just do a cursory, non-thorough
+eyeballing, so without really going into
+great detail,
+
+00:17:56.400 --> 00:18:00.320
+you may find that some of the numbers
+don't make sense.
+
+00:18:00.320 --> 00:18:14.240
+Most of the time, this is because you've
+downloaded a spreadsheet from a
+third-party data source that is big data
+and the cells are not live.
+
+00:18:15.040 --> 00:18:19.840
+We have to make them live and make the
+numbers as accurate as possible.
+
+00:18:20.880 --> 00:18:27.360
+So if we look at this sector here, for
+example, in the first step, when we've
+downloaded the spreadsheet,
+
+00:18:27.360 --> 00:18:32.400
+we've downloaded the data and we're
+drilling down into a particular sector.
+
+00:18:32.400 --> 00:18:40.320
+So for example, like this sector, apparel
+manufacturing, the first thing we would do
+is just eyeball the sector.
+
+00:18:41.520 --> 00:18:51.920
+And because we've got a decent level of
+attention to detail, we're going to find
+potentially rogue cells.
+
+00:18:53.760 --> 00:19:06.480
+And here in this sector, just by
+eyeballing the data, we can see that
+something is wrong with EPS1 or EG1 for
+Capri Holdings.
+
+00:19:07.200 --> 00:19:18.000
+So we can see that last year's EPS of
+$3.89, it's in the spreadsheet as falling
+to $1.50.
+
+00:19:18.000 --> 00:19:23.040
+But the earnings growth is negative
+27.89%.
+
+00:19:23.040 --> 00:19:37.280
+But how can it be? EPS dropping from $3.89
+to $1.50 is not losing 27.89% of your
+earnings.
+
+00:19:37.280 --> 00:19:44.320
+It's not negative 27.89%. It's actually
+negative 61.43%.
+
+00:19:46.000 --> 00:19:50.880
+So in this situation, and this can happen
+and be very common.
+
+00:19:50.880 --> 00:19:55.040
+It can happen a lot because we're dealing
+with 2200 plus stocks
+
+00:19:56.400 --> 00:20:01.760
+in a big data download from a third-party
+source that doesn't have live cells.
+
+00:20:03.040 --> 00:20:10.960
+In this particular situation, either the
+EPS estimate is wrong or the paste special
+
+00:20:12.080 --> 00:20:19.760
+of whoever has put this spreadsheet
+together has failed and has corrupted the
+EG1 cell.
+
+00:20:21.040 --> 00:20:26.160
+So how do we actually go about fixing
+this? Well, it's very easy and
+straightforward.
+
+00:20:26.160 --> 00:20:31.840
+Remember, as long as you can get the stock
+price and EPS numbers accurate,
+
+00:20:32.800 --> 00:20:38.000
+all other data can be worked out just
+using Excel formulas.
+
+00:20:38.000 --> 00:20:46.240
+So we make the cells live. So we go off
+and we just do a very quick and simple
+investigation.
+
+00:20:46.800 --> 00:20:55.920
+We check the EPS estimates from publicly
+available sources and add in the stock
+price to the spreadsheet
+
+00:20:56.480 --> 00:20:59.200
+in order to make all of our cells live.
+
+00:21:00.480 --> 00:21:08.640
+And here for this example, we've just used
+Yahoo Finance. There will of course be
+always multiple
+
+00:21:08.640 --> 00:21:15.200
+other free sources. Just start Googling
+and stop crying. Do the work.
+
+00:21:16.080 --> 00:21:26.000
+Now here we realize the problem in the
+spreadsheet because we have $3.89 in Yahoo
+Finance for last year's EPS.
+
+00:21:27.680 --> 00:21:36.240
+We realize the problem in the spreadsheet
+must be with the earnings growth number
+being corrupted in some way.
+
+00:21:37.440 --> 00:21:47.600
+So according to Yahoo Finance, we have
+$3.89 for EPS a year ago, and we have an
+average consensus estimate
+
+00:21:48.640 --> 00:22:00.000
+from analysts for the current year of
+$1.50. So we know our estimates in the
+spreadsheet for earnings per share
+
+00:22:00.000 --> 00:22:06.800
+are actually correct. So whoever's put
+this spreadsheet together on the other
+side at our third party
+
+00:22:07.360 --> 00:22:14.160
+that we're downloading the data from, they
+have got the EPS estimates correct in the
+spreadsheet,
+
+00:22:14.160 --> 00:22:23.920
+but the percentage number for EG1 is off.
+So what do we do about it? Do we cry about
+it? Do we send emails to
+
+00:22:23.920 --> 00:22:32.880
+ITPM asking if there's any other data
+sources? Do we go down to the local bar
+and start asking our friends
+
+00:22:33.600 --> 00:22:45.920
+how to find data online? Do we go on
+internet forums, create threads, hoping
+and praying that somebody is
+
+00:22:45.920 --> 00:22:54.160
+going to come to our rescue to help us
+organize our data properly? Do we post
+things on social media about
+
+00:22:54.160 --> 00:23:05.120
+ITPM being an education company that
+doesn't provide you with shortcuts to
+become multimillionaires or do we just
+give up?
+
+00:23:06.240 --> 00:23:14.880
+Well, of course not. We just do the work.
+So we add in the stock price data for
+Capri Holdings
+
+00:23:15.840 --> 00:23:26.640
+and we make all the sales live and then we
+repeat it for every stock in the sector.
+So you can see here in the
+
+00:23:26.640 --> 00:23:35.440
+first screenshot at the top of the screen,
+we've got the percentage calculation
+formula for EG1 and we make that
+
+00:23:35.440 --> 00:23:46.800
+sell live negative 61.5%. This is possible
+because we have the stock price and we
+have the right EPS data.
+
+00:23:47.920 --> 00:23:51.680
+Then we move on to the other cells for
+Capri Holdings.
+
+00:23:52.320 --> 00:23:58.240
+We work out the PE ratios. That's the next
+screenshot below in the middle.
+
+00:23:59.360 --> 00:24:04.480
+We work out the PE ratios for period one
+and period two.
+
+00:24:05.040 --> 00:24:11.840
+And then in the bottom screenshot, we work
+out the PEG ratios for period one and
+period two.
+
+00:24:12.720 --> 00:24:17.840
+That's for Capri Holdings. And then we do
+it for the rest of the sector as well.
+
+00:24:19.120 --> 00:24:22.880
+And of course, in Excel, there are
+shortcuts
+
+00:24:24.400 --> 00:24:31.200
+to working out numbers quickly, but we
+want to make sure that we have attention
+to detail
+
+00:24:31.200 --> 00:24:36.640
+to make sure that if we use shortcuts, the
+numbers are still coming out accurately.
+
+00:24:37.360 --> 00:24:45.760
+So all cells for Capri Holdings are then
+made live and then you can auto fill down.
+
+00:24:46.560 --> 00:24:53.920
+But where there are negative or positive
+minorities, you're going to have to
+overwrite the formulas.
+
+00:24:55.360 --> 00:25:00.960
+We will come on to this processing mistake
+in a moment. But what you've just seen
+here,
+
+00:25:01.680 --> 00:25:08.880
+every time you're going through the
+process of generating a trade idea, you're
+going to have to do this.
+
+00:25:09.360 --> 00:25:18.400
+You're going to have to make live cells
+and eliminate rogue cells. It's the first
+step to making sure
+
+00:25:18.400 --> 00:25:26.720
+that your sector reflects reality as
+closely as possible and all your cells are
+actually correct
+
+00:25:26.720 --> 00:25:33.680
+and accurate. Now, there is a mistake that
+some people make at this stage.
+
+00:25:34.560 --> 00:25:43.760
+They think that they have to do this for
+all 2200 plus stocks every month, all the
+time. You don't.
+
+00:25:44.480 --> 00:25:53.040
+Don't try to make the numbers of the 2200
+plus stocks live in the spreadsheet and
+check all of them.
+
+00:25:53.040 --> 00:26:00.000
+It's way too much work. This is not
+working smart. This is working too hard.
+You're going down
+
+00:26:00.880 --> 00:26:08.800
+huge, endless rabbit holes. So do it when
+you have drilled down to less than 20 or
+so stocks.
+
+00:26:09.600 --> 00:26:18.160
+Use your time wisely and work smart, not
+hard. Now, something else that falls under
+attention to detail
+
+00:26:19.280 --> 00:26:25.520
+is company's financial year ends. You have
+to make sure that the data lines up
+
+00:26:26.560 --> 00:26:33.040
+is a particular company's financial year
+end. So in this sector of nine stocks, for
+example,
+
+00:26:33.760 --> 00:26:40.720
+two of them have their financial year end
+in March and another two of them have
+their financial year
+
+00:26:40.720 --> 00:26:47.120
+end at the end of January. Now, this is
+just down to having a bit of attention to
+detail and common
+
+00:26:47.120 --> 00:26:52.880
+sense, thinking about what you're looking
+at on the screen. What sector are you
+looking at?
+
+00:26:53.840 --> 00:27:02.800
+Does it have seasonal factors? Well,
+financial year ends change or can be
+different across stocks
+
+00:27:03.840 --> 00:27:10.000
+in seasonal sectors. It happens a lot. So
+this is the apparel manufacturing sector
+
+00:27:10.800 --> 00:27:19.520
+and some companies choose to have their
+financial year end at certain times. So
+like the end of March
+
+00:27:19.520 --> 00:27:26.960
+and the end of January because they make
+the bulk of their earnings during the
+holiday season and
+
+00:27:26.960 --> 00:27:36.400
+in the January after holiday season sales.
+So whilst you're processing and checking
+forward EPS estimates,
+
+00:27:37.120 --> 00:27:45.920
+you need to make sure that the right years
+line up across the sector. In a big data
+dump,
+
+00:27:46.480 --> 00:27:53.040
+sometimes the numbers will be off. So
+whoever's on the other side at the third
+party data source,
+
+00:27:53.680 --> 00:28:01.040
+they may have put the wrong EPS for the
+wrong financial year in a cell. So for
+example, the EPS
+
+00:28:01.040 --> 00:28:07.760
+number from two years ago might be last
+year's number and last year's number might
+be this year's number.
+
+00:28:08.320 --> 00:28:15.840
+You have to double check it and get it
+right. Be accurate with your financial
+year ends and get it
+
+00:28:15.840 --> 00:28:25.760
+correct. Now, one of the biggest errors we
+see is actually using common sense to
+understand positive
+
+00:28:26.320 --> 00:28:35.280
+and negative EPS. So changes when
+companies go from positive to negative EPS
+and changes when companies
+
+00:28:35.280 --> 00:28:45.920
+go from negative to positive EPS. So this
+creates a problem in big data dumps
+because whoever's on the other
+
+00:28:45.920 --> 00:28:56.720
+side has done paste special across 2200
+plus stocks and the data can end up being
+spurious and not make common sense.
+
+00:28:58.240 --> 00:29:07.840
+So in our example, you will notice from
+the initial data download that PVH Corp
+and Under Armour have
+
+00:29:07.840 --> 00:29:16.960
+negative, so loss making EPS for last year
+in year zero and they have positive EPS in
+year one.
+
+00:29:16.960 --> 00:29:27.040
+So they're going from losses to profits
+from year zero last year to the current
+year, year one. So when
+
+00:29:27.040 --> 00:29:37.040
+calculating the earnings growth
+percentage, the big data download has
+simply done an autofill and the
+
+00:29:37.040 --> 00:29:46.880
+numbers are very large and the
+calculations are just wrong. So think of
+it the other way around in terms of
+
+00:29:46.880 --> 00:29:55.120
+a positive EPS, if a stock goes from $1 of
+earnings to $3 of losses,
+
+00:29:57.040 --> 00:30:03.280
+how much of the earnings of the company
+have they lost in percentage terms?
+
+00:30:04.480 --> 00:30:16.800
+Well, if you did the calculation here in
+absolute terms, then they'd be losing $4
+in total from an initial position
+
+00:30:16.800 --> 00:30:28.960
+of $1. So they'd be losing 400% of their
+earnings. But how can a company lose 400%
+of their earnings?
+
+00:30:28.960 --> 00:30:39.600
+They can't. A company can only lose 100%
+of their earnings. On the flip side, if
+we're going from a
+
+00:30:39.600 --> 00:30:51.840
+a loss making operation to a profit making
+position, you can't recover 400% of your
+losses, you can
+
+00:30:51.840 --> 00:30:57.600
+only recover 100% of your losses. You need
+to overwrite these cells with the number
+100 for 100%, so loss making to profit in
+this case, plus positive 100%.
+
+00:30:57.600 --> 00:31:11.600
+And for operations that are going from a
+profit making position to losses, you have
+to overwrite the cell with negative 100%,
+minus 100%.
+
+00:31:11.600 --> 00:31:29.600
+So when you're going through your
+quantitative processing for a sector and
+you're cleaning up all the data, making
+the cells live, you have to watch out for
+this situation.
+
+00:31:29.600 --> 00:31:45.600
+You have to overwrite the cells manually
+that previously had a formula in and
+overwrite them for either positive 100% or
+negative 100%.
+
+00:31:45.600 --> 00:31:59.600
+Now something else that creates a problem
+when it comes to attention to detail and
+common sense in the quantitative process
+is the law of small numbers.
+
+00:31:59.600 --> 00:32:15.600
+So when you download big data dumps that
+work out earnings growth percentages that
+are based on EPS, you're going to find
+quite often very wild earnings growth
+percentage numbers.
+
+00:32:15.600 --> 00:32:22.600
+So numbers like 500%, 1000%, 5000%, etc.
+
+00:32:22.600 --> 00:32:34.600
+And this can just be because a company is
+going from a very small EPS number to
+another number that's just large.
+
+00:32:34.600 --> 00:32:44.600
+So for example, if a company last year had
+one cent of earnings, but this year has 10
+cents of earnings.
+
+00:32:44.600 --> 00:32:58.600
+They're going to be in the downloaded
+spreadsheet calculated on an auto fill
+with a paste special as having 900%
+earnings growth.
+
+00:32:58.600 --> 00:33:11.600
+Now, if we're using some common sense
+here, does this mean that we should
+automatically deduce that this company is
+the positive outlier in the sector?
+
+00:33:11.600 --> 00:33:12.600
+Of course not.
+
+00:33:12.600 --> 00:33:13.600
+Of course not.
+
+00:33:13.600 --> 00:33:15.600
+We've got to use common sense here.
+
+00:33:15.600 --> 00:33:18.600
+Look at the company's EPS in more detail.
+
+00:33:18.600 --> 00:33:34.600
+So for example, like the last two, three
+or five years, the company may even be a
+revenue growth story, or they may have
+actually made 12 cents in EPS two years
+ago.
+
+00:33:34.600 --> 00:33:51.600
+Meaning the 10 cents that we've got for
+the current year looking forward, they
+haven't recovered back this year versus
+two years ago, back to 12 cents of
+earnings.
+
+00:33:51.600 --> 00:33:56.600
+So it could be the worst stock in the
+sector.
+
+00:33:56.600 --> 00:34:00.600
+You have to use common sense here.
+
+00:34:00.600 --> 00:34:03.600
+Don't just blindly follow the process.
+
+00:34:03.600 --> 00:34:09.600
+Think at every stage about what you're
+looking at.
+
+00:34:09.600 --> 00:34:33.600
+So for example, if we are eyeballing,
+having attention to detail and some common
+sense, when we're looking at our example
+here on the screen, we would notice very
+quickly if we looked at, for example, Levi
+Strauss, that they have 433% earnings
+growth for EG1.
+
+00:34:33.600 --> 00:34:42.600
+And that is a move of EPS going from 21
+cents to a dollar and 12 cents.
+
+00:34:42.600 --> 00:34:52.600
+And we can also see a big number, for
+example, for G3 apparel at 333% for EG1.
+
+00:34:52.600 --> 00:34:58.600
+And that is EPS going from 55 cents to
+$2.39.
+
+00:34:58.600 --> 00:35:15.600
+So not only do we have a problem in our
+example sector here, where we have for PVH
+Corp and Under Armour going from losses to
+profits, and we have to overwrite the
+sales manually for 100%.
+
+00:35:15.600 --> 00:35:25.600
+We also potentially have a problem here in
+the sector when we're doing our
+quantitative processing of the laws of
+small numbers.
+
+00:35:25.600 --> 00:35:44.600
+So percentage changes based on EPS coming
+from a low number, a small number, and
+moving to a higher number, creating very
+high percentages that could ultimately
+flatter the reality of those stocks.
+
+00:35:44.600 --> 00:35:57.600
+And this could have an outsized impact on
+our interpretation and meaning of what's
+actually going on for these stocks and in
+the sector.
+
+00:35:57.600 --> 00:36:09.600
+Which brings us on to our next issue,
+which is contributions to the mean, so
+contributions to the sector averages.
+
+00:36:09.600 --> 00:36:26.600
+So once you have actually cleansed your
+data, and you're very confident that all
+of the live cells and all of the numbers
+have been attained as accurate, so the
+stock price and EPS numbers, and all of
+your formulas are correct.
+
+00:36:26.600 --> 00:36:46.600
+Once you've actually cleansed your data,
+you're going to then start to attempt at
+making some sensible deductions about
+forward-looking valuation in order to
+identify positive and negative outliers
+and everything in between.
+
+00:36:46.600 --> 00:36:56.600
+And of course, what we want to be doing
+here is identifying genuine positive and
+negative outliers.
+
+00:36:56.600 --> 00:37:11.600
+So in our example here, we've worked out
+the mean values for earnings growth 1,
+earnings growth 2, PE1, PE2, PEG1, PEG2,
+the mean values for the sector.
+
+00:37:11.600 --> 00:37:14.600
+And we've done that by dividing by the
+amount of stocks in the sector.
+
+00:37:14.600 --> 00:37:16.600
+So we're dividing by 9.
+
+00:37:16.600 --> 00:37:27.600
+Now, when we look at the earnings growth
+number for the apparel sector for EG1, we
+have to ask ourselves a sensible question.
+
+00:37:27.600 --> 00:37:43.600
+Is it sensible to assume that in the
+apparel manufacturing sector that 117%
+earnings growth is a real average for the
+whole sector?
+
+00:37:43.600 --> 00:37:48.600
+Well, common sense would tell us no.
+
+00:37:48.600 --> 00:38:02.600
+When we look at the contributions of each
+stock to the mean number, obviously, Levi
+Strauss and G3 have an outsized
+contribution relative to other stocks.
+
+00:38:02.600 --> 00:38:20.600
+So the contribution from Levi and G3 is
+large and it's skewing the mean and the
+reality of the sector and it's creating a
+scenario that is flattering the earnings
+growth of the overall sector.
+
+00:38:20.600 --> 00:38:23.600
+So why is this actually important?
+
+00:38:23.600 --> 00:38:35.600
+Well, in your processing, you may actually
+miss a positive outlier and potentially a
+really great long idea because the
+averages are just skewed.
+
+00:38:35.600 --> 00:38:51.600
+And you may make the mistake of thinking
+that Levi Strauss and G3, because they
+just have much higher percentage earnings
+growth versus the sector average, that
+these are the positive outliers.
+
+00:38:51.600 --> 00:38:52.600
+They may be.
+
+00:38:52.600 --> 00:38:53.600
+They may not be.
+
+00:38:53.600 --> 00:39:03.600
+But at this stage, we have to understand
+that they're having an outsized
+contribution to the mean relative to other
+stocks in the sector.
+
+00:39:03.600 --> 00:39:22.600
+And that could be flattering the overall
+sector in terms of earnings growth and
+leading us down the wrong path to make
+incorrect deductions and interpretations
+of what's going on with the sector and all
+the stocks in the sector.
+
+00:39:22.600 --> 00:39:25.600
+So what can we do about this?
+
+00:39:25.600 --> 00:39:52.600
+Well, we can stress test the stocks and
+have a look at calculating their
+contributions to the mean and get a better
+understanding of what happens when we
+eliminate these stocks to the sector
+itself and our own interpretation and
+deductions of what's going on in the rest
+of the sector.
+
+00:39:52.600 --> 00:39:57.600
+Now, we can't do that without Levi Strauss
+and G3 in the sector without Levi Strauss
+and G3 in the sector.
+
+00:39:57.600 --> 00:40:02.600
+So we can overwrite the cells and type a
+zero in them.
+
+00:40:02.600 --> 00:40:10.600
+And instead of dividing by nine, we can
+just divide by seven to check their
+contributions to the mean.
+
+00:40:10.600 --> 00:40:29.600
+And here we discover that Levi Strauss and
+G3 contribute around 75% to the 117%
+earnings growth one number because when we
+eliminate them, we are left with an
+average of 41.38%.
+
+00:40:29.600 --> 00:40:30.600
+And we can do something else as well.
+
+00:40:30.600 --> 00:40:33.600
+And we can do something else as well.
+
+00:40:33.600 --> 00:40:46.600
+If we repeat the exercise, but only with
+Levi's eliminated and we divide by eight,
+we get an earnings growth one number for
+the mean of 78%.
+
+00:40:46.600 --> 00:40:55.600
+Meaning Levi's contributes 39% to the 117%
+sector average.
+
+00:40:55.600 --> 00:41:01.600
+And G3 around 36% to the sector average.
+
+00:41:01.600 --> 00:41:05.600
+So again, we have to use some common sense
+here.
+
+00:41:05.600 --> 00:41:20.600
+The earnings growth two number when we
+look another year forward is 50%, which we
+would probably consider a more normal, but
+still high level of earnings growth for
+this sector.
+
+00:41:20.600 --> 00:41:29.600
+And we take note that the sector for the
+previous financial year is coming out of
+problems.
+
+00:41:29.600 --> 00:41:37.600
+So it looks like the sector as a whole is
+having some sort of turnaround and then
+return to normalization.
+
+00:41:38.600 --> 00:41:50.600
+So it looks like pretty much everything is
+a turnaround play in this sector, except
+for perhaps stocks like Contour and
+Hannah's Brands.
+
+00:41:51.600 --> 00:41:59.600
+So Contour has 40% earnings growth for EG1
+and 11% for EG2.
+
+00:41:59.600 --> 00:42:08.600
+And Hannah's Brands has 11% earnings
+growth for EG1 and 7.5% for EG2.
+
+00:42:09.600 --> 00:42:20.600
+And these numbers seem more like sensible
+or normal earnings growth numbers for a
+company that's in a sector like apparel
+manufacturing.
+
+00:42:22.600 --> 00:42:36.600
+Now you'll notice here that we've also
+highlighted the Under Armour PE1 at 96.42
+and the negative pegs of Capri Holdings
+and VFC.
+
+00:42:37.600 --> 00:42:49.600
+We'd also need to go through the same
+exercise of working out all of their
+contributions to the mean as well to get
+some perspective on what's going on there
+too.
+
+00:42:50.600 --> 00:43:01.600
+You'll also notice that for the peg ones
+for Levi Strauss and G3, we've also
+overwritten the peg one cells.
+
+00:43:02.600 --> 00:43:11.600
+We've done this because when we overwrote
+the earnings growth numbers with zero, it
+corrupted those cells.
+
+00:43:12.600 --> 00:43:27.600
+Now, in this particular situation, when we
+have a scenario like this in a sector like
+this, we would look more towards year two
+for clues on outliers.
+
+00:43:27.600 --> 00:43:33.600
+And we would anchor ourselves to an
+earnings growth rate of 40 to 50%.
+
+00:43:34.600 --> 00:43:52.600
+And this is because when we overwrote
+earnings growth one for Levi Strauss and
+for G3 apparel, we were left with 41.38%
+earnings growth for the sector average in
+EG1.
+
+00:43:52.600 --> 00:44:04.600
+And having made no changes in the column
+for EG2, we have an earnings growth number
+for the sector average, which is 50%.
+
+00:44:05.600 --> 00:44:17.600
+So over the next couple of years, it seems
+that 40 to 50% earnings growth is probably
+going to be quite normal for this sector.
+
+00:44:18.600 --> 00:44:20.600
+So what does that leave us with?
+
+00:44:20.600 --> 00:44:37.600
+It leaves us with Capri Holdings with an
+earnings growth two number of 144%, Under
+Armour with an EG2 number of 79%, and VFC
+with an EG2 number of 126%.
+
+00:44:37.600 --> 00:44:46.600
+So these are starting to look like
+interesting potential positive outliers.
+
+00:44:46.600 --> 00:44:56.600
+Additionally, when we look at the PE2
+column for the sector, we see that there's
+a sector average of 21 and a half times
+earnings.
+
+00:44:56.600 --> 00:45:08.600
+And when we look at Under Armour and VFC,
+we see that the PE2 for both of those
+stocks is higher than the sector average.
+
+00:45:08.600 --> 00:45:18.600
+And when we look at the PE2 for Capri
+Holdings, we see that comes in lower than
+the sector average.
+
+00:45:18.600 --> 00:45:36.600
+When we're not adjusting the PE2 for Under
+Armour, which has the highest PE2 in the
+sector and is obviously making a very
+large contribution to the overall sector
+mean.
+
+00:45:37.600 --> 00:45:44.600
+Now, bear in mind, we haven't even put a
+market cap filter into our process here
+yet.
+
+00:45:44.600 --> 00:45:49.600
+So let's do that now as a useful exercise.
+
+00:45:49.600 --> 00:45:58.600
+So we put a market cap filter on and we're
+looking for potential long ideas here.
+
+00:45:58.600 --> 00:46:13.600
+And given that VFC has a market cap of $33
+billion, this only leaves Capri and Under
+Armour as potential positive outliers in
+the sector.
+
+00:46:13.600 --> 00:46:24.600
+However, it is obvious that they are not
+sequentially positive earnings growth
+momentum stocks.
+
+00:46:24.600 --> 00:46:29.600
+It's pretty obvious that they are still
+turnarounds.
+
+00:46:29.600 --> 00:46:42.600
+So if you were looking for long ideas in
+this sector, at this moment in time, this
+is how you would have gone through your
+processing
+
+00:46:42.600 --> 00:47:03.600
+to ensure that you're making no mistakes
+and you're actually going through the
+processing with the correct data and
+asking obvious questions along the way and
+making sensible, common sense
+interpretations of the data.
+
+00:47:03.600 --> 00:47:25.600
+And then, of course, if you think you've
+identified what are potential positive
+outliers or even negative outliers, you
+would then go off and do the work to find
+out what is behind the earnings growth
+numbers.
+
+00:47:25.600 --> 00:47:26.600
+What is behind the valuation?
+
+00:47:26.600 --> 00:47:27.600
+What is driving the EPS?
+
+00:47:27.600 --> 00:47:31.600
+What is driving the EPS?
+
+00:47:31.600 --> 00:47:33.600
+What is driving the earnings growth?
+
+00:47:33.600 --> 00:47:38.600
+What is driving the valuation premium or
+discount?
+
+00:47:38.600 --> 00:47:47.600
+Remember, there is always a reason why
+something trades on a premium or a
+discount.
+
+00:47:47.600 --> 00:47:55.740
+So now we move from the identification
+phase and we go on to the evidential, the
+evidence
+
+00:47:55.740 --> 00:47:58.040
+phase.
+
+00:47:58.040 --> 00:48:06.920
+So as you can see, in order for us to make
+sensible conclusions with meaning, when
+we're
+
+00:48:06.920 --> 00:48:12.920
+going through the quantitative process, we
+can't make the mistakes.
+
+00:48:12.920 --> 00:48:16.480
+We've got to get the data right.
+
+00:48:16.480 --> 00:48:21.440
+We've got to get our spreadsheets clean
+and correct and accurate.
+
+00:48:21.440 --> 00:48:25.880
+And we have to have attention to detail in
+order to do that.
+
+00:48:25.880 --> 00:48:33.540
+And we have to have common sense to make
+sensible interpretations.
+
+00:48:33.540 --> 00:48:43.100
+Another mistake that we see is not so much
+a processing data mistake, more of a
+market
+
+00:48:43.100 --> 00:48:47.540
+knowledge and common sense mistake or
+misunderstanding.
+
+00:48:47.540 --> 00:48:57.100
+So when analyzing a sector, we mentioned
+earlier that it's important to get the
+right
+
+00:48:57.100 --> 00:49:04.100
+EPS numbers or the correct financial years
+for each stock in the correct cells.
+
+00:49:04.100 --> 00:49:07.780
+So everything lines up correctly.
+
+00:49:07.780 --> 00:49:18.660
+And in our example, Capri Holdings and VFC
+both had their financial year end on March
+31st.
+
+00:49:18.660 --> 00:49:27.660
+So what this means is, is that the year
+two for these stocks is further out by one
+quarter relative
+
+00:49:27.660 --> 00:49:42.220
+to the other stocks in the sector, the
+rest of the sector is going to report
+their Q4 numbers and full year results in
+either January or February 2022.
+
+00:49:42.220 --> 00:49:53.780
+And Capri and VFC are going to report
+their 2021 full year numbers in April or
+May 2022.
+
+00:49:53.780 --> 00:50:03.340
+So it's important to do this and
+understand this because as we get further
+and further through a financial year,
+
+00:50:03.340 --> 00:50:17.340
+and the market gets more visibility on
+revenue and earnings for that year and for
+the company versus forward looking
+estimates that are existing out there in
+the market.
+
+00:50:17.340 --> 00:50:26.140
+So the probability of a surprise that's
+either negative or positive just simply
+becomes less and less.
+
+00:50:27.420 --> 00:50:35.500
+So for most sectors, and because most
+stocks have a financial year that ends on
+December 31st,
+
+00:50:36.060 --> 00:50:45.660
+by Q4 of a company's financial year,
+they've already reported three quarters of
+revenue and earnings data
+
+00:50:45.660 --> 00:50:53.260
+and all the balance sheet, profit and loss
+and cash flow data for those three
+quarters.
+
+00:50:53.260 --> 00:50:59.260
+And we only have at this stage one quarter
+left in the year.
+
+00:50:59.260 --> 00:51:07.580
+So most companies report on the basis of a
+financial year of Jan 1 to Dec 31.
+
+00:51:07.580 --> 00:51:16.780
+So by October of any financial or calendar
+year, as long as the sector isn't wildly
+seasonal,
+
+00:51:18.060 --> 00:51:25.500
+then the probability of having a surprise
+to annual numbers that's coming only from
+Q4,
+
+00:51:26.140 --> 00:51:34.220
+so the probability of an overall surprise
+that a company can miss or beat earnings
+or revenue data,
+
+00:51:34.220 --> 00:51:41.820
+the probability is lower than, for
+example, earlier in the year or even the
+beginning of the year.
+
+00:51:41.820 --> 00:51:47.420
+Because now there's much more visibility
+on the current year.
+
+00:51:47.420 --> 00:51:54.460
+So a company's own forecasts and forecasts
+from research analysts in most sectors
+
+00:51:55.020 --> 00:52:02.220
+tend to begin focusing on next year's
+estimates, next year's numbers,
+
+00:52:02.220 --> 00:52:09.820
+as soon as we enter Q4 and the Q3 earnings
+day is officially behind us.
+
+00:52:09.820 --> 00:52:18.220
+Now, in our example, it just so happens
+with the apparel sector that they get most
+of their revenue
+
+00:52:18.220 --> 00:52:22.140
+and earnings in the Q4 holiday season.
+
+00:52:22.140 --> 00:52:29.020
+So again, we have to think about the
+sector that we're looking at, the stocks
+that we're looking at,
+
+00:52:29.900 --> 00:52:31.100
+and how they report.
+
+00:52:31.660 --> 00:52:33.100
+What is their financial year?
+
+00:52:33.740 --> 00:52:34.860
+Are they seasonal?
+
+00:52:35.660 --> 00:52:38.140
+What is the probability of surprise?
+
+00:52:39.580 --> 00:52:43.260
+What time of the year are we in right now?
+
+00:52:44.060 --> 00:52:49.660
+We have to use a lot of common sense to
+understand what's going on.
+
+00:52:51.340 --> 00:52:59.820
+So most of the time, when we enter a
+calendar Q4, because most stocks have a
+financial year end
+
+00:53:01.100 --> 00:53:05.500
+of December 31st, their financial year is
+a calendar year.
+
+00:53:05.500 --> 00:53:10.060
+When we enter Q4, it's all about next
+year.
+
+00:53:10.060 --> 00:53:17.740
+It's not about this year for most stocks,
+especially if the stocks are not very
+seasonal
+
+00:53:17.740 --> 00:53:18.860
+to the holiday season.
+
+00:53:19.980 --> 00:53:23.740
+So we have to use common sense and we have
+to look forwards.
+
+00:53:24.380 --> 00:53:27.020
+We have to look out to the following year.
+
+00:53:28.220 --> 00:53:31.820
+So again, this is not so much a data
+processing issue.
+
+00:53:32.380 --> 00:53:37.820
+There are data processing elements in
+there, but it's more of a common sense
+issue.
+
+00:53:39.420 --> 00:53:44.380
+Now, as mentioned earlier, as we move from
+the identification phase,
+
+00:53:45.340 --> 00:53:49.500
+and we've got all of our data right, we've
+cleaned our data,
+
+00:53:50.540 --> 00:53:56.940
+we've got all of our formulas right, we've
+made good common sense interpretations of
+the data.
+
+00:53:57.820 --> 00:54:01.740
+We're going to move from the discovery or
+identification phase
+
+00:54:02.380 --> 00:54:04.060
+into the evidence phase.
+
+00:54:04.620 --> 00:54:08.620
+And this is where we might start adding in
+extra quant.
+
+00:54:09.260 --> 00:54:13.660
+So we might start adding in, for example,
+revenues and revenue growth
+
+00:54:14.300 --> 00:54:16.860
+and backwards looking quant.
+
+00:54:18.380 --> 00:54:23.260
+And at this stage, we've seen many
+mistakes from retail traders here as well.
+
+00:54:24.060 --> 00:54:30.620
+The most common mistake is to do this step
+before getting to the sector stage
+
+00:54:31.340 --> 00:54:39.100
+and trying to do it for hundreds of stocks
+or all 2200 plus stocks in the
+spreadsheet.
+
+00:54:40.060 --> 00:54:47.660
+Next up, the most common mistake is doing
+it before actually cleansing the forward
+looking estimates
+
+00:54:47.660 --> 00:54:54.220
+and valuation data. So not going through
+the discovery phase first, not going
+through
+
+00:54:54.940 --> 00:54:59.180
+the identification phase first. Do not do
+this.
+
+00:55:00.380 --> 00:55:03.980
+Even after that stage, there are mistakes.
+
+00:55:05.100 --> 00:55:08.780
+Trying to do it for every stock in the
+sector.
+
+00:55:10.220 --> 00:55:15.580
+Remember, always, you should be seeking to
+work smart and efficiently.
+
+00:55:16.460 --> 00:55:19.740
+For longs and shorts, we have market cap
+filters.
+
+00:55:20.300 --> 00:55:25.020
+So you can get to answers quickly by
+eliminating a lot of stocks.
+
+00:55:26.300 --> 00:55:35.340
+And once you've done this, you can start
+to explore the backwards looking quant in
+a separate Excel sheet.
+
+00:55:36.540 --> 00:55:38.460
+Keep it simple, stupid.
+
+00:55:39.260 --> 00:55:47.420
+Don't become an analyst with massive
+spreadsheets and end up going down major
+rabbit holes.
+
+00:55:48.300 --> 00:55:52.620
+The law of diminishing marginal utility
+applies here.
+
+00:55:53.500 --> 00:56:01.260
+You can find the positive and negative
+outliers and everything else in between by
+cleansing the data
+
+00:56:01.900 --> 00:56:03.900
+and drawing on common sense.
+
+00:56:04.620 --> 00:56:09.740
+The rest is now evidence or exploratory
+work.
+
+00:56:11.820 --> 00:56:16.860
+Another issue we see with retail traders
+going through these processes
+
+00:56:17.820 --> 00:56:23.100
+is the problem of trying to compare apples
+to pez.
+
+00:56:24.300 --> 00:56:31.740
+What we're trying to do here all the time
+is reflect reality and compare apples to
+apples.
+
+00:56:32.380 --> 00:56:40.300
+So after cleansing data and feeling very
+confident that your sector reflects
+reality
+
+00:56:40.300 --> 00:56:48.140
+as closely as possible, there needs to be
+some discretionary fine tuning in the next
+stage.
+
+00:56:50.060 --> 00:56:58.060
+At this stage, what you've actually done
+is you've created your own sector to
+reflect reality.
+
+00:56:58.620 --> 00:57:06.540
+And this is an exercise that 99% of market
+participants will never engage in.
+
+00:57:07.100 --> 00:57:12.860
+And what you need to be very careful of at
+this stage is to engage in the exercise
+
+00:57:13.900 --> 00:57:20.380
+of comparing apples to pez instead of
+comparing apples to apples.
+
+00:57:21.020 --> 00:57:24.940
+So we are seeking to reflect the reality
+of a sector.
+
+00:57:25.660 --> 00:57:33.420
+So we are seeking to assess market
+valuation and growth rates of comparable
+businesses
+
+00:57:33.980 --> 00:57:42.220
+or comparable stocks in order to assess
+what the market likes and what the market
+dislikes.
+
+00:57:42.780 --> 00:57:48.620
+So we can identify positive and negative
+outliers and everything else in between.
+
+00:57:50.380 --> 00:57:57.500
+So we can't, for example, compare growth
+rates like earnings growth or revenue
+growth rates,
+
+00:57:57.500 --> 00:58:05.420
+for example, of say $200 billion companies
+to the growth rates of $1 billion
+companies.
+
+00:58:06.140 --> 00:58:13.740
+You have to also check the contributions
+to the means of the largest market cap
+companies
+
+00:58:14.460 --> 00:58:18.220
+and the small cap and mid cap
+contributions to the mean.
+
+00:58:19.020 --> 00:58:29.500
+If a sector exhibits wildly different
+growth rates and valuations of mega and
+large cap versus mid and small caps,
+
+00:58:30.220 --> 00:58:39.580
+you can split the sector using a market
+cap filter and then compare the two
+sectors that you've split out
+
+00:58:40.140 --> 00:58:44.060
+based on market cap alongside each other.
+
+00:58:44.860 --> 00:58:52.860
+And you can cut and paste your findings to
+another sheet and just look at mega and
+large cap
+
+00:58:53.420 --> 00:58:57.820
+versus small and mid cap growth rates and
+valuations.
+
+00:58:59.340 --> 00:59:04.140
+In addition to that, you now have to
+compare similar businesses.
+
+00:59:04.940 --> 00:59:10.780
+You're going to find that there will be
+many occasions when you drill down to a
+subsector.
+
+00:59:11.900 --> 00:59:16.700
+There will be stocks in there that seem to
+have no place in the sector at all
+
+00:59:17.340 --> 00:59:23.180
+because they are in a different business
+area to the rest of the stocks in the
+sector.
+
+00:59:23.820 --> 00:59:26.940
+So remember our classification systems
+here.
+
+00:59:28.060 --> 00:59:31.980
+These are NAICS and GICS classifications.
+
+00:59:31.980 --> 00:59:34.220
+They are not your classifications.
+
+00:59:34.780 --> 00:59:45.660
+And you have to fix it and create your own
+sector that reflects reality and compares
+apples to apples, not apples to pears.
+
+00:59:47.740 --> 00:59:49.740
+So let's summarize here, guys.
+
+00:59:51.340 --> 00:59:58.220
+In the quantitative process, the
+identification process within trade idea
+generation,
+
+00:59:59.100 --> 01:00:02.940
+the identification process within the
+sector that you have to look at in the
+sector.
+
+01:00:02.940 --> 01:00:06.940
+Use common sense and have attention to
+detail.
+
+01:00:07.660 --> 01:00:15.660
+Do not download spreadsheets from
+third-party sources and believe all the
+data is accurate.
+
+01:00:16.540 --> 01:00:20.940
+And do not just look at sector data and
+get lazy
+
+01:00:21.580 --> 01:00:29.180
+by looking for high PE and low PE stocks
+or even high earnings growth and low
+earnings growth.
+
+01:00:29.740 --> 01:00:31.820
+And then you think it's an idea.
+
+01:00:32.780 --> 01:00:34.620
+You have to eyeball the data.
+
+01:00:35.340 --> 01:00:45.820
+You have to clean the data, cleanse the
+data and build your own sectors to reflect
+reality as closely as possible.
+
+01:00:47.420 --> 01:00:59.340
+As mentioned earlier, what you've seen
+here, 99% of market participants will
+never ever do this work.
+
+01:00:59.340 --> 01:01:05.340
+They don't have a systematic process or
+trade idea generation like you do.
+
+01:01:06.140 --> 01:01:10.380
+They don't even have that and they won't
+even do any work on data.
+
+01:01:11.580 --> 01:01:16.300
+This is where you can get a significant
+edge in the market.
+
+01:01:17.260 --> 01:01:19.340
+It's a proprietary process.
+
+01:01:19.980 --> 01:01:27.020
+And if you have attention to detail with a
+strong interpretation of your findings,
+
+01:01:27.580 --> 01:01:37.580
+so an interpretation that requires common
+sense, that's going to lead to very
+accurate and exciting conclusions.
+
+01:01:38.780 --> 01:01:40.940
+So make sure you have attention to detail.
+
+01:01:41.820 --> 01:01:44.460
+You work on your common sense and your
+interpretation.
+
+01:01:45.180 --> 01:01:47.100
+It will get better over time.
+
+01:01:48.300 --> 01:01:51.260
+And don't be afraid to do the work.
+
+01:01:51.820 --> 01:01:53.660
+Practice, practice, practice.
+
+01:01:55.180 --> 01:01:55.820
+Okay, guys.
+
+01:01:56.540 --> 01:01:59.900
+So this brings us to the end of this
+video.
+
+01:02:00.780 --> 01:02:04.380
+Data mining and processing mistakes with
+the solutions.
+
+01:02:05.500 --> 01:02:09.500
+Next up, we're going to recap the
+quantitative process.

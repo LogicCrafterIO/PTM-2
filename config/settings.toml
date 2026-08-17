@@ -1,0 +1,72 @@
+[universe]
+indices = ["sp500", "sp400", "sp600"]
+wikipedia = { sp500 = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies", sp400 = "https://en.wikipedia.org/wiki/List_of_S%26P_400_companies", sp600 = "https://en.wikipedia.org/wiki/List_of_S%26P_600_companies" }
+
+[filters]
+long_mcap_min = 3_000_000_000
+long_mcap_max = 10_000_000_000
+short_mcap_min = 20_000_000_000
+max_positions = 12
+min_positions = 8
+exclude_sectors = ["Health Care"]  # skip pharma/biotech-heavy names in v1 via GICS Healthcare optional; screen still includes sector unless flagged
+skip_healthcare_v1 = false
+min_sector_names = 2  # block one-name "sector" PE outliers; live GICS groups are much larger
+
+[macro]
+bear_drawdown = 0.20
+ism_expansion = 50.0
+ism_peak = 60.0
+ism_trough_low = 40.0
+ism_trough_high = 45.0
+umcsi_bull = 80.0
+umcsi_benign_low = 70.0
+nfib_strong = 100.0
+nfib_warning = 95.0
+real_rate_cheap = 0.01
+curve_invert = 0.0
+bias_long_threshold = 0.30
+bias_short_threshold = -0.30
+
+[timing]
+windows = [20, 60, 120, 250]
+
+[prm]
+min_r_score = 3.0
+beta_net_limit = 0.30
+gross_limit = 2.0
+cash_net_limit = 0.50
+atrp_stop_lookback = 20
+atrp_target_lookback = 63
+atrp_target_multiple = 3.0
+amber_size = 0.50
+
+[yfinance]
+spx = "^GSPC"
+vix = "^VIX"
+tnx = "^TNX"
+fvx = "^FVX"
+irx = "^IRX"
+wti = "CL=F"
+brent = "BZ=F"
+copper = "HG=F"
+dxy = "DX-Y.NYB"
+lqd = "LQD"
+hyg = "HYG"
+
+[fred]
+gdp = "GDPC1"
+cpi = "CPIAUCSL"
+m2 = "M2SL"
+claims = "ICSA"
+nfp = "PAYEMS"
+umcsent = "UMCSENT"
+permits = "PERMIT"
+ip = "INDPRO"
+ism_pmi = "NAPM"
+ism_nmi = "NMFBAI"
+
+[llm]
+max_filing_chars = 12000
+max_candidates = 16
+temperature = 0.2
+max_tokens = 1200

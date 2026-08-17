@@ -1,0 +1,45 @@
+{
+  "candidate": {
+    "ticker": "AEE",
+    "name": "Ameren",
+    "sector": "Utilities",
+    "industry": "Multi-Utilities",
+    "side": "short",
+    "pe1": 18.89,
+    "sector_pe1": 18.89,
+    "eg_case": "short_non_ideal",
+    "peg1": 8.3
+  },
+  "state": "identified",
+  "qual": {
+    "supports_outlier": null,
+    "red_flags": ["high demand for electric utility materials"],
+    "kpis": ["revenue", "net_income", "ebit", "cash", "debt", "assets", "equity", "interest"],
+    "summary": "Ameren is a utility."
+  },
+  "catalysts": {
+    "earnings_date": "[datetime.date(2026, 7, 31)]",
+    "earnings_in_window": false,
+    "non_earnings": ["Do Options Traders Know Something About Ameren Stock We Don't?"],
+    "tradeable": true,
+    "reason": "headlines"
+  },
+  "timing": {
+    "light": "red",
+    "sma20": 109.9,
+    "sma60": 110.3,
+    "macd": -0.45
+  },
+  "prm": {
+    "stop_pct": 0.02,
+    "target_pct": 0.06,
+    "r_score": 3.0,
+    "size_fraction": 0.0,
+    "blocked": false
+  },
+  "template_markdown": "",
+  "extra": {
+    "qual": "insufficient_evidence",
+    "template_error": "Invalid control character at: line 3 column 31 (char 47)"
+  }
+}

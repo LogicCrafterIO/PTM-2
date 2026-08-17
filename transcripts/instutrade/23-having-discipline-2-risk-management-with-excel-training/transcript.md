@@ -1,0 +1,1243 @@
+---
+course: instutrade
+lesson_id: "23"
+title: "Having Discipline 2, Risk Management with Excel Training"
+module: discipline-and-risk
+module_title: "Discipline and risk management"
+duration: 01:14:55
+duration_seconds: 4495.04
+source: "Anton Kreil - Professional Trading Masterclass Instutrade/23. Having Discipline 2, Risk Management with Excel Training.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  []
+---
+
+# 23 — Having Discipline 2, Risk Management with Excel Training
+
+Okay, so welcome back. Welcome to video number 23, our second video in the risk management phase, Portfolio Construction Parameters. So now we're at the stage again where we're assuming that we've actually got positions, we're now running a portfolio.
+
+And what we're going to introduce you to here is a lot of risk management parameters for portfolios which are used by professional hedge fund managers.
+
+We're going to start with all of the basic ones but we're also going to show you in this video an introduction to beta and how we hedge out market risk.
+
+You'll remember very early on in the video series we were looking at trade ideas when we're generating ideas at the industry and the stock level.
+
+And we were looking at different types of trades as in the cross sector trades, the cross sector constituent trades and the intra sector constituent trades.
+
+Now all of these are spread trades and essentially what you have when you take spread trades is a situation where you're naturally hedging out certain levels of risk.
+
+And what we're going to look at here when we look at beta, we're going to look at how we mechanically actually go through the process of hedging out market risk.
+
+So we'll go through the basic risk management parameters for the portfolio which all hedge fund managers use.
+
+And we're also going to go a little bit advanced and we're going to go into an introduction of beta and the mechanics of how it would work if you were hedging out market risk for a single spread trade or multiple spread trades.
+
+So let's go over to the presentation. Straight after the presentation we'll be going on the computer and I'll be showing you how to do this with using beta and using these publicly available statistics.
+
+And then in video number 24 Chris is actually going to show you on the computer how you calculate beta yourself.
+
+So let's go over to the presentation and I'll see you on the computer after the presentation and for a summary of the risk management parameters at the end of this video.
+
+Okay, let's move on to risk management. Further discipline. So we know what to do with losers. We know what to do with winners. We don't get married to losers.
+
+And the upside on winners could be anything. So marriage could be a consideration.
+
+But when these positions are real in your portfolio, you can have additional risk management parameters that protect your downside on losers.
+
+So I'll just go through a few of them. And again, there's no hard and fast rules. There's no book you can buy at Blackwell's WH Smiths that says this is the perfect portfolio and here's all the risk management situations you should apply.
+
+That book's called this is how you should trade. And there's a million of them that should tell you something.
+
+So there's no rule, but these are the risk management situations that you would apply to a standard portfolio.
+
+First one gross exposure limits. So in a retail brokerage account, if we set up a typical account, we might put $25,000 in the account.
+
+What is that $25,000? It's called margin, which is collateralized. And it's used by the broker to pay for your losses.
+
+So what happens on a day when your portfolio is up $1,000? That $25 becomes $26. The broker puts $1,000 in your trading account.
+
+What happens on a day when you lose $1,000 in your portfolio? You have to pay the broker $1,000 and it becomes $24.
+
+That's what the margin's there for. But the broker, when you put $25,000 in your account, on large cap stocks will allow you to take roughly 10 times the exposure that you've put, of the money that you've put in your account.
+
+So you could go all the way up to $250,000 exposure.
+
+So what can we do? We can expose ourselves at a rate that we want to be exposed to.
+
+So we try and find the sweet spot between the maximum amount of exposure that we're allowed to take and the number that we've put in the account.
+
+So this spreadsheet here, exposure rates, it's a very simple spreadsheet. It's just, if you leverage 10 times, if you lose 10%, you're out.
+
+If you leverage five times, if you lose 20%, you're out.
+
+So it just goes through all the exposure rate, exposure rates from one to over a hundred.
+
+What about in Forex, if you've got a hundred times exposure, what you've got in your account?
+
+Genuinely, that's what you'll be able to do.
+
+So you put $25,000 in your account and you're allowed to take a position in sterling US dollar to the value of $2.5 million.
+
+What happens if you lose 1%?
+
+You're out.
+
+Every retail trader takes their maximum exposure almost immediately.
+
+It's crazy.
+
+So gross exposure limits.
+
+With numerical examples and percentage examples compared to exposure.
+
+If you opened an account with $25,000, you want to give yourself a chance of making money.
+
+You never ever want to receive a margin call ever in your life.
+
+If you receive a margin call, it just means you're a totally irresponsible trader.
+
+It means you don't know how to deploy capital responsibly.
+
+So you stop yourself from being human.
+
+So you set an exposure rate somewhere between one and 10 on large cap stocks.
+
+FX never, ever, ever go over seven or eight times exposure.
+
+You can make money without ever being stopped out or receive a margin call.
+
+What is a margin call?
+
+It just means you're stopped out on your entire portfolio.
+
+Have you ever received a margin call?
+
+Are you kidding me?
+
+Obviously not.
+
+It's crazy.
+
+The only time where I would ever have been close was in the late 90s during the tech boom.
+
+Where what we used to do, because the settlement was T plus three on physical stock.
+
+You would apply for the IPO, for example.
+
+And let's say I only had £10,000 to trade with.
+
+To get an allocation of £10,000, because everyone was applying for the IPOs.
+
+You'd have to apply for £50,000.
+
+And then they'd turn around and say, your allocation is £25,000.
+
+So if you were being sensible, you'd take £10,000.
+
+If you were being silly, you'd take £25,000.
+
+Because you don't have to pay for it for three days.
+
+So then if it went up, you'd trade out for a big profit.
+
+Because you'd never have to actually pay for it.
+
+Now it's different.
+
+So I did that a few times.
+
+But then stopped myself out.
+
+So I didn't get a call for the money.
+
+Once you get the phone call for the money and you can't afford it, you're stopped out.
+
+So gross exposure limits.
+
+Large cap stocks, four to five times.
+
+Currencies, six to eight.
+
+But to get to that point, you have to be making money first.
+
+So when you start out, you're going to build your portfolio from zero to, if you're in large cap stocks, maybe three or four times exposure.
+
+And then as you make money, you build and build and build.
+
+And you can take higher exposure rates.
+
+So let's go through a little example.
+
+So assume we've got this $25,000 deposited on account.
+
+And we just say, I'm going to limit myself to four times exposure.
+
+I'm going to limit myself to four times exposure before and get a 5% return before I increase my position size.
+
+Yeah?
+
+If you make 5% here, what's going to happen in your portfolio if you've got a well diversified long short portfolio, eight to ten positions?
+
+What's going to happen?
+
+If you make 5%, what's going to happen if you make 5% and you're four times exposed?
+
+So your exposure is 100, yeah?
+
+So you're going to make five grand.
+
+So your 25 now goes to 30.
+
+Now you've got 30 available in your account.
+
+And if you increase your exposure and at the same time increase your diversity, you're not actually increasing your risk by as much as you think.
+
+Because the positions here compared to here are having a less contribution to the outcome of the profit and loss of your portfolio.
+
+So as you go on the journey, you're doing a couple of things.
+
+When you're making money, you're pulling from box A because now you're going to go and increase your exposure.
+
+So what are you doing?
+
+You're saying, actually, I'm quite good at this trading game.
+
+I'm going to invest more money in myself.
+
+So I'm going to increase my exposure rate.
+
+So you're pulling from box A on your portfolio as a whole, yeah?
+
+You increase your exposure rate.
+
+Now you've got a 20% cushion, but you're more diverse.
+
+So now you've got, say, 12 positions in your portfolio instead of eight.
+
+So actually your risk is staying the same roughly here.
+
+Now what happens if you go from 150,000 making 5% up to six times exposed?
+
+So you make 5% on 150.
+
+You make seven and a half grand.
+
+And then you've got 37 and a half grand in your portfolio.
+
+And you go up to 225.
+
+Make sense?
+
+So you increase your exposure as you're making money, but then you've got to have an ultimate limit.
+
+Because as soon as you start going over six times, no matter how diverse you are, what happens?
+
+Well, there's going to be volatility in your portfolio.
+
+If it's a long, short S&P 500 portfolio, what can you make or lose on a normal day?
+
+35 basis points?
+
+What if you have a two standard deviation day in the S&P 500 and everything goes wrong?
+
+You can lose 2%.
+
+So as soon as you start going over that five, six times level, you're starting to play a dangerous game.
+
+Now, if you mix currencies into it, the makeup and volatility of your portfolio starts to look different.
+
+And this is why professional traders stick to five times in large cap situations as a gross exposure limit.
+
+Because once you start going over that, you start to play a dangerous game with the two standard deviation day.
+
+You can be stopped out on lots of positions all at one time and just end up back at square one.
+
+And what you want to do in an ideal situation is be somewhere here with a mix of large cap commodities and Forex.
+
+Somewhere between here, after having made money in two steps.
+
+And grinding out a solid return every month.
+
+Trying to do it every month.
+
+Yeah.
+
+And then what happens if you do that for a year?
+
+And at the end of the year, you're up 20, 25%.
+
+What's happened?
+
+Well, if you're five times exposed and you're up 20%, you've doubled your money.
+
+What do you say to yourself at the end of year one?
+
+I'm quite good at this trading game.
+
+I like the fact that I've doubled my money.
+
+I've done all the right things when I make money.
+
+I've done all the right things when I lose money.
+
+And I've had discipline.
+
+I've added to winners.
+
+I've cut losers.
+
+And I'm up 20% on the year with a 5% exposure rate on average.
+
+And I've doubled my money.
+
+Looks like I'm quite good at this game.
+
+Stick another 25 grand in your trading account.
+
+And double up.
+
+Pull from box A.
+
+Repeat and rinse year two.
+
+Stick another 50 grand in your trading account.
+
+Then you've got a two year track record and you're about to blow the numbers through the roof in year three.
+
+What happens next?
+
+Everybody wants to give you money to invest in you and now you're a professional trader.
+
+What do the retail traders do?
+
+Literally the opposite.
+
+Start off 10 times exposed.
+
+Lose 10%.
+
+Wiped out.
+
+In the 90-90-90.
+
+Work really hard all year.
+
+Save up another 10 grand.
+
+Do it again.
+
+That's all you have to do.
+
+What about net exposure limits?
+
+That's a gross exposure limit.
+
+What about if you wanted to place a net exposure limit in your portfolio?
+
+Let's go through nets.
+
+So let's say you put a net limit of 50% on a $100,000 portfolio.
+
+So $50,000.
+
+Your net exposure is just in dollar terms.
+
+Your long exposure minus your short exposure over your gross exposure.
+
+So let's have a look at case one.
+
+Long exposure 50.
+
+Short exposure 50.
+
+Your net exposure is 0%.
+
+Your gross is 100 all the time in each case.
+
+Here your net's 0.
+
+Case two.
+
+Long exposure 70.
+
+Short exposure 30.
+
+Net long 40%.
+
+Now what you're actually doing by going net long if you're trading stocks.
+
+Is you're going net long if you're taking a net position in that situation you're net long the market 40%.
+
+So you're actually taking a view on the market.
+
+So it's questionable whether you should have that 40%.
+
+Because you could just go and buy the S&P 500.
+
+Because that's the view you're taking.
+
+Yeah.
+
+And on.
+
+Case three.
+
+Long exposure 40.
+
+Short exposure 60.
+
+Minus 20% net short.
+
+You're actually taking a 20% bet cash for cash that the market's going to go down.
+
+So you've accepted market risk.
+
+So you have to ask yourself the question should I actually just sell the S&P 500 or sell the market.
+
+Whatever the whatever the index is you like to short.
+
+But having a limit stops you from being silly or doing stupid things.
+
+Like having a huge exposure rate to the market.
+
+Now everybody who's got everybody who's got a pension.
+
+Where they've got 30 stocks long.
+
+And no shorts.
+
+Thinks they're really clever when the market goes up.
+
+Those stocks are not up because those stocks are great stocks are great companies.
+
+They're up because the market's up.
+
+They're long market risk sector risk and stock risk.
+
+And they all run into a cave.
+
+And you never hear from them again.
+
+When the stock when you were in a bear market and the stock market's down 50%.
+
+Because their pensions are down 50%.
+
+So in those situations you're accepting market risk.
+
+So be honest with yourself.
+
+So having a net exposure limit stops you from doing that.
+
+You can do it a little bit if you want.
+
+That's fine.
+
+But know the risk you've got.
+
+So maybe you put on an exposure limit of 25%.
+
+A net exposure limit of 25%.
+
+And say never ever ever ever will I ever be more than long $25,000 or short $25,000 of the market.
+
+Because that's essentially the position you've got on.
+
+What about hedging out the market risk?
+
+What about hedging out the market risk?
+
+Let's say you've got a £20,000 limit on a spread trade.
+
+Or a £10,000 limit on a single position.
+
+We'll go on to position limits and theme limits next.
+
+How do you hedge out the market risk on two stocks?
+
+So beta is just for every unit that the market moves, the historical move of the stock.
+
+So if the market moves one, if a stock has a beta of 1.15, history says the stock will move 1.15.
+
+But when you're hedging out market risk, you've got beta values of two stocks.
+
+So how do you hedge out the market risk?
+
+But what you do is you take the beta ratio of the long and divide it by the beta ratio of the short.
+
+And you get a beta of the spread.
+
+You get a beta of the ratio.
+
+So in terms of beta hedging, what we're going to send you is the beta hedge example that you've just seen.
+
+A beta hedge step-by-step guide.
+
+And that guide is going to show you how to actually calculate your own beta in an Excel spreadsheet.
+
+By taking the historic data of the market and the stock.
+
+So you can go out publicly and get the betas.
+
+You can get three months, six months, twelve months, three year, five year.
+
+But you can calculate your own if you want, if you struggle to find the beta.
+
+Now, caution, beta isn't perfect.
+
+So it doesn't mean that if we're trying to hedge out the market risk, we can be successful all the time.
+
+Because the beta value is just the historical data of the stock in relation to the market.
+
+If it does change.
+
+If it does change, you'll be told in your portfolio that it's changed.
+
+Because you'll be losing money because of it.
+
+And you won't understand why, when the market moves one unit, the historical beta doesn't work quite the way you expected.
+
+So it's not exact science.
+
+Because beta can change.
+
+Because beta can change.
+
+So we rely on it as a tool to attempt to hedge out market risk as best we can.
+
+But we do not rely on it with our lives.
+
+And everyone forgets this in the professional trading world, when they spend years building sophisticated models, and then beta just changes.
+
+But that's why you have other risk parameters and risk management parameters in your portfolio.
+
+To stop you being human.
+
+Not admitting that your beta calculations are wrong is pulling from box A when you're wrong.
+
+Does that make sense?
+
+So you'll get theme limits, single asset position limits.
+
+What about a $100,000 exposure portfolio with a 10% single position limit?
+
+So you just say to yourself, if my gross exposure limit is $100,000, I'm never going to go into one position over $10,000.
+
+And as you make money, guess what?
+
+The notional value of your single position limits go up.
+
+So you actually get rewarded for making money by doing nothing.
+
+Which is great.
+
+That's what we want.
+
+So very typically, that's quite this example that we've gone through today of a $25,000 situation where you put it in a margin account and in step one, you have $100,000 exposure.
+
+It's a very typical profile of an institute trader.
+
+So the average institute trader is about 30,000 pounds in their trading account.
+
+Some have 10, some have over 100.
+
+One guy has over 300,000 in his account.
+
+But the average profile is about 30,000 pounds when you strip that guy out.
+
+So typically, most people have between 100 and 150,000 pounds exposure, something like that.
+
+And that's what your portfolio would look like in a spreadsheet or in a trading account.
+
+You just have five longs, five shorts, 10% position limits.
+
+And if you're doing beta adjusted trades on spreads, then your spread is 20,000 limit.
+
+And your cash for cash situation has to come below 20,000 when you add them up.
+
+So your gross exposure on the spread is no higher than your theme limit.
+
+What about a portfolio stop loss?
+
+So you would hope that in a well diversified long short portfolio, that if you had five longs and five shorts, that some would be working, some wouldn't be working, but net net, you might be making money or losing a little bit.
+
+You put a stop loss on your portfolio.
+
+Large cap stocks, S&P 500, FTSE 100.
+
+If you're putting stop losses on each position of 10%, what do you think would be a sensible portfolio stop loss?
+
+Well, one position, if you get stopped out, will cost your portfolio 1%.
+
+Stop losses we're trying, even when we put one on the portfolio, to put a stop loss on the portfolio that gives us a good chance of making money, but not in the realms of stupidity where we're not having discipline.
+
+So a sensible portfolio stop loss might be 10%.
+
+Or somewhere between five and 10%.
+
+Because 10% just means you've got all of your positions wrong and you've been stopped out.
+
+So you're going to get stopped out anyway.
+
+Because they've all cost your portfolio 1%, all at the same time.
+
+Whatever you do, stop yourself out, take a break for one or two months and reassess.
+
+Because you've obviously had a nightmare.
+
+If you threw 10 darts at a board and selected five longs and five shorts with darts, you'd get one right.
+
+So for you to be stopped out on 10 situations in a 10-position portfolio, there must be something really, really wrong with your selecting, with your ideas.
+
+So you're stopped out, you go on holiday, you think about it, think about whether trading is the right profession for you.
+
+But the key is, is if you started off with 25,000 and you had 100,000 exposure, you'd be down to 15 in your trading account.
+
+You're not out the game.
+
+You've still got cash.
+
+You've still got the ability, you've still got chips to come back to the table.
+
+That's why you have a stop loss on your portfolio.
+
+So if you've got 10% stop losses and the profile of your portfolio is 10 positions, five long, five short, over the S&P 500, large cap stocks, or very large liquid currencies and commodities.
+
+And you've got a 10% stop loss on those positions.
+
+For all of them to go wrong, there must be something really, really, really wrong.
+
+So stick a 10% stop loss on the entire portfolio.
+
+Drop 10 grand, what's the worst thing that's going to happen?
+
+You've still got 15.
+
+But you've pulled from box B because trading might not be the right profession for you.
+
+So for the risk management section, very simply, all of those risk management parameters basically dictate how your portfolio will be structured at maximum parameters.
+
+Why do we have those maximum parameters?
+
+Because we're trying to stop ourselves from being human.
+
+So position limits, theme limits, net exposure limits, gross exposure limits, stick within those parameters.
+
+You'll be the opposite of human.
+
+Okay, welcome back to the computer screen.
+
+What we're going to have a look at now is beta and specifically how we use beta to hedge out market risk.
+
+So we're going to look at a simple example first of one stock long versus one stock short.
+
+And then later we're going to look at a more complicated example where we're representing our idea through a theme where we've got two longs and two shorts representing the same idea and how we hedge out market risk in that scenario.
+
+So let's start with the simple example.
+
+And here we're looking at a trade where we're thinking about going long Chevron and short AstraZeneca.
+
+Now this trade, if you refer back to the original notes, this trade is a cross sector constituent spread trade.
+
+So slightly higher risk than other spread trades.
+
+So if we're looking at going long Chevron and short AstraZeneca, we're looking at going long a cyclical stock versus short a defensive stock because Chevron's in the oil sector and AstraZeneca is in the pharmaceutical sector.
+
+So the oil sector, Chevron's earnings, so Chevron being in the oil sector, Chevron's earnings are more sensitive to the business cycle than AstraZeneca's.
+
+So if we're backing out what we're looking at in terms of our views here, at this stage we're clearly bullish on the world because we're leaning to being long cyclicals and short defensives.
+
+So if we were bearish on the world, we wouldn't be looking at this trade at all, we'd be looking at it the other way around.
+
+So we've got the betas here where we've given Chevron a beta of 1.32 and AstraZeneca a beta of 1.12.
+
+These aren't the actual betas of Chevron and AstraZeneca.
+
+The actual betas you can get online or in the download section in the spreadsheets that we've provided.
+
+We've given fictional betas for illustrative purposes here, so don't worry about it.
+
+You can get the real betas online or in the download section.
+
+We're just using these betas for illustrative purposes.
+
+So we've given Chevron a beta of 1.32 and AstraZeneca a beta of 1.12.
+
+And the beta ratio between Chevron and AstraZeneca is 1.1786.
+
+So what does that mean?
+
+It just means that for every one unit move in the market, Chevron moves 1.1786 times more than AstraZeneca.
+
+That's all it means.
+
+In terms of committing capital, what that means is that for every dollar that you put in to Chevron, going long Chevron, you have to short 1.1786 times that $1. to hedge out the market risk in AstraZeneca because AstraZeneca moves a lot less than Chevron.
+
+So let's have a look at this in terms of dollar commitment.
+
+So let's say, for example, you have a restriction in your portfolio of $20,000 in one spread trade, meaning that your self-imposed restriction for any one spread trade is $20,000.
+
+So if you committed $10,000 long to Chevron, you would have to short, according to the beta ratio, $11,786 of AstraZeneca.
+
+Well, if you did that, this would just take you over your limit of $20,000.
+
+So your exposure would be 21.786.
+
+And that breaks your limit, so you can't do that.
+
+So you would have to actually short, sorry, you would have to actually go long less than $10,000 in order to meet your self-imposed exposure limit of $20,000.
+
+So to make sure that you're within your limit, you would have to go long $9,180 of Chevron and short $10,819 of AstraZeneca.
+
+Now, why are we doing this? Why are we hedging out market risk?
+
+Well, let's think about this a bit more in depth.
+
+So imagine if the market now fell 10%.
+
+Let's say we had this trade-on and the market dropped 10%.
+
+So Chevron would drop 13.2% and AstraZeneca would drop 11.2%.
+
+So in that situation, imagine if you were just long $10,000 of Chevron and short $10,000 of AstraZeneca.
+
+Well, all that would happen is you would lose 2% on that trade.
+
+So you've basically got in that situation an implied market risk.
+
+Because if the market drops 10%, you're going to actually lose money on this trade.
+
+Because Chevron moves for every one unit that the market moves, Chevron moves more than AstraZeneca.
+
+So what do you actually have to do?
+
+Well, what you have to do is actually commit more capital on the side of AstraZeneca.
+
+So now imagine if you use the beta ratio and you hedge out this market risk.
+
+Well, if the market fell 10%, then you would have less money committed on the side of Chevron and more money committed on the side of AstraZeneca versus the example of $10,000 long and $10,000 short.
+
+Which means if the market dropped by 10%, even though Chevron would drop by 13.2% and AstraZeneca would drop by 11.2%, you wouldn't lose any money on that trade.
+
+So on that move, you would actually come out, roughly speaking, you would come out not making or losing any money.
+
+Now the obvious question is, well, what happens when the market goes up?
+
+Well, when the market goes up, it's the same situation.
+
+If the market went up 10%, Chevron would go up by 13.2% and AstraZeneca would go up by 11.2%.
+
+And you wouldn't make or lose any money on the trade.
+
+But that's missing the point.
+
+Because what you're actually doing here is you're hedging out the market risk and you're isolating sector and stock risk.
+
+So whether the market goes down 10% or goes up 10%, it doesn't matter.
+
+Because the whole point of this trade is that you're hedging out the market risk.
+
+So the statement that you're making here when you put this trade on is that regardless of what the market does, Chevron is just going to outperform AstraZeneca over time.
+
+So if you're bullish on the world, and in this example we're assuming that you are, where your world view is bullish and you're leaning into buying cyclicals and shorting defensives, the obvious question is, well, if you beat a hedge and the market goes up, then why would you do that?
+
+Well, let's put it this way.
+
+If you wanted to have a market bet, then you could just buy the market.
+
+So you just go and buy the S&P 500.
+
+But in this example, what you're actually doing is hedging out the market risk so on a day-to-day basis you don't make or lose any money on this trade.
+
+But then when the news comes out at some point that one of Chevron's competitors has guided up their earnings and Chevron goes up in sympathy, well, Chevron is just going to go up and AstraZeneca is going to do nothing.
+
+And imagine, for example, if the news came out that Chevron was guiding up their earnings, well, Chevron themselves would just go up, let's say, 5%, 10%, and AstraZeneca just wouldn't do anything.
+
+All you're doing here is hedging out the market risk so that on a day-to-day basis, on a normal day in the stock market, when nothing is really happening and there's no news out, you don't make or lose any money.
+
+But also if there's an external shock, because you're beta hedged, you should come out of that situation not making or losing any money.
+
+So that's why we beta hedge.
+
+That's why we hedge out market risk so we can isolate the risk that we want to be exposed to.
+
+As in this example, we want to be exposed to cyclicality on the long side and we want to be exposed to being short non-cyclicality.
+
+So when the fundamental news flow comes through that Chevron and that Chevron's earnings are going higher, we're exposed to that but in the process we're actually hedging out the overall market risk.
+
+So you should be able to understand that it's a fairly straightforward situation.
+
+Now what we can do is, for example, start having a look at an example of where the beta ratio is very, very high.
+
+So let's have a look, for example, if we change the beta ratio to 3.
+
+Well, when we change the beta ratio to 3 or the beta ratio becomes very high, the gross exposure goes way out, way out away from our self-imposed $20,000 spread trade limit as our example.
+
+So what would we have to do?
+
+Well, we'd have to bring this right in to $5,000 long in Chevron and short $15,000 of AstraZeneca.
+
+Now when you have very high beta ratios, you really have to start asking yourself the question.
+
+You know, on a very, very high beta ratio, is this really an effective trade?
+
+Because for every $1 of capital I commit on the long side, I have to commit $3 of capital on the short side.
+
+That just means your short is extremely capital hungry, meaning that this might not actually be a trade where your capital is best used.
+
+So what you're better off doing is probably finding trades where the beta ratio is actually lower.
+
+And I think you're probably better off making sure that your beta ratio is below 2.
+
+You should really be questioning yourself or questioning a trade in terms of capital commitment that is, that has a beta ratio above 2.
+
+Because it just means that the short or the hedge is extremely capital hungry, meaning that the stock on the short side requires a lot of capital in order to hedge out market risk.
+
+There should be more effective shorts or more effective hedges out there that you can commit capital to in order to hedge out the market risk.
+
+So you should always be questioning a big or large beta ratio.
+
+So that's the simple example.
+
+It's not too hard to understand what you should be doing here in terms of your processes is going through the idea generation process, getting your trades onto your watch list, as we've seen, and managing your watch list properly and then deciding when you want to put on your trades.
+
+Whether you want to hedge out market risk.
+
+If you want to hedge out market risk, how much of the market risk you want to hedge out.
+
+If you want to hedge out all of the market risk, that's totally fine.
+
+It's all about choices.
+
+And if you've got a net restriction in terms of market exposure in your portfolio, then you know that you're going to have to fall inside that parameter in order to have particular trades on.
+
+So just remember as well that having a beta ratio above 2, you need to question that really because it might not be an effective hedge or an effective way to hedge out the market risk.
+
+So that's the simple example.
+
+Let's now move on to the more complicated example of theme betas.
+
+Okay, so the example we're going to look at here is a slightly more complicated example of how we use beta to hedge out market risk.
+
+What we're looking at here is a theme or a trend that you may have identified and you want to actually play this theme in a diversified way.
+
+So not just using one stock long and one stock short, you want to actually represent this theme or trend by having two stocks long and two stocks short.
+
+And the theme we're looking at here is discretionary versus essential retail spend.
+
+So we're looking at high-end retailers, long and short low-end retailers.
+
+And we're looking at how to hedge out market risk in this trade.
+
+So we're looking at long Macy's and Dill odds and short target and family dollar.
+
+So a couple of things here.
+
+If we're looking at going long discretionary versus essential retail spend or long high-end retailers versus short low-end retailers.
+
+We're probably assuming here, well we are assuming here, that our world view is bullish.
+
+So we're assuming that at this stage we've gone through all the leading indicators and they're pointing to GDP growth.
+
+And we're expecting high GDP growth at some point in the future.
+
+And now we're looking at the retail sector and deciding how we express that view across the retail sector.
+
+And if we're looking at long two stocks in the retail sector and short two stocks in the retail sector, essentially if we hedge out market risk, we're also hedging out sector risk.
+
+So what we're looking at here is an intra-sector spread trade.
+
+So an intra-sector constituent spread trade, the ones that we looked at earlier in the presentation in previous videos.
+
+So let's have a look at this trade and try to work out how we hedge out the market risk when we've got two stocks long and two stocks short.
+
+So let's assume in this portfolio we've got a gross exposure of $100,000 and we have a limit of $20,000 per theme.
+
+So a self-imposed limit where we can't go over $20,000 for one theme.
+
+And what we've done here is we've assigned beta values to the longs and the shorts.
+
+These beta values are not the real beta values.
+
+These are fictional values that we've assigned for illustrative purposes.
+
+So if you wanted to get the real ones, just go online, get the real ones or get them in the spreadsheets from the downloads areas in the videos.
+
+So we're looking at four stocks here, Macy's and Dillard's on the long side, Target and Family Dollar on the short side.
+
+We've assigned to Macy's a beta of 1.01 and Dillard's 1.27.
+
+Target 0.57 and Family Dollar 0.32.
+
+And the first thing we're going to do is work out how we apportion this money to the long side of the portfolio and the short side of the portfolio.
+
+So what we do is we first work out the gross beta, the total beta by adding up all of these betas.
+
+So we get to 3.17 and we also add up the beta of the long side and we get 2.28 and the beta of the short side and we get 0.89.
+
+So intuitively, if we're going to apportion this money, what we're seeing is that the beta on the long side is a lot higher than the beta on the short side.
+
+Which kind of makes sense because if we're looking at cyclicality on the long side or more cyclical stocks on the long side than on the short side, you would expect higher betas on the long side because the stocks, given that the earnings are more sensitive to the business cycle, the stocks are probably going to move more given a one unit move in the market than the stocks on the short side.
+
+So that's the first thing.
+
+When we're going to apportion this money, if we're going to apportion this money, it's very obvious that the majority of this money has to be apportioned on the short side and the minority of this money has to be apportioned on the long side.
+
+But how much on either side? Well, we can work it out accurately.
+
+So the next thing we do is we work out in column F.
+
+We work out the beta contributions or weightings, percentage weightings of each beta.
+
+So Macy's, a beta of 1.01, divided by the total beta of 3.17, gives 32%.
+
+Dillard's 40%, target 18%, family dollar 10%.
+
+We add up the beta or beta weightings for the long side to get the beta weighting of the long side to the total beta, which is 72%.
+
+And we do the same on the short side.
+
+We add up the weightings of the betas to the total beta.
+
+And we get the short side contribution of beta to the total beta.
+
+And this is 28%.
+
+So we've got 72% beta contribution from the long side, and we've got 28% beta contribution from the short side.
+
+Now, if we're apportioning this money, the way we apportion it is actually the inverse of these betas.
+
+So we flip them, and we apportion our money 28% on the long side and 72% on the short side.
+
+So that's the first thing we do.
+
+We've worked out, out of this $20,000, how much of it gets apportioned to the long side and how much gets apportioned to the short side.
+
+Well, what gets apportioned to each side is the inverse of the weightings of their betas.
+
+And that's pretty obvious, because if we're going to hedge out market risk, then clearly, because the short side moves a lot less than the long side, we have to apportion more of our money on the short side than we do on the long side.
+
+Now, the next thing we have to do, we have to work out, for example, so if we stay on the long side for a second, we have to work out, out of the 28% of the $20,000 that we've apportioned on the long side, what percentage of that 28% is apportioned to Macy's, and what percentage is apportioned to Dillard's?
+
+Well, let's use Macy's as an example, and we'll show you how this is done.
+
+So the first thing we do is we work out the contribution of the Macy's beta to the long beta of the trade.
+
+So we divide 1.01 by 2.28, and we get 44%.
+
+With Dillard's, we divide 1.27 by 2.28, and we get 56%.
+
+And then we work out, so let's have a look at the formula bar here, H9 times G11.
+
+We work out 44% of the 28%, which gives us 12.44%.
+
+That's for Macy's.
+
+And for Dillard's, we work out 55%, for 56% of the 28%.
+
+And then, when we're apportioning our money on the long side, we then have to flip and do the inverse again the percentage that we have to apportion in Macy's and Dillard's.
+
+So, in Macy's, we have to apportion 15.64% of our money, and in Dillard's, we have to apportion 12.44% of our money.
+
+And this 15.64% and this 12.44% is the total amount of the $20,000 that's apportioned to the whole trade.
+
+So, if we look at the short side, we'll see that, if we go through the same exercise, because Family Dollar has the lowest beta, when we repeat the same process on the short side, Family Dollar, 46% of our money has to be exposed to Family Dollar, 26% has to be exposed to Target.
+
+And when we add up on the long side, the percentages in the way that our money is apportioned, we get the amount of money that is apportioned to the long side.
+
+And if we add up the percentages in the way that our money is apportioned on the short side, we get the percentage, 72%, we get the percentage of our money that's apportioned to the short side, making 100%.
+
+So, we get the percentage of our money that's apportioned to each position.
+
+Then, we work out this in dollar terms.
+
+So, we're working out, out of the 20,000, so 15.64% of the 20,000, so just over $3,000.
+
+In Dillard's, $2,487.
+
+Total dollars exposed on the long side, $5,615.
+
+On the short side, in Target, we're apportioning $5,172.
+
+And in Family Dollar, we're apportioning, out of the $20,000, $9,213.
+
+So, in total, $14,385.
+
+So, that works out to be 72% and 28%.
+
+We take the prices of each stock, and this tells us how many shares that we have to buy and sell.
+
+And then, we're also working out here the percentage size of these positions in our portfolio.
+
+So, this is just K9.
+
+So, this is $3,128 divided by the $100,000.
+
+And we do this for each position, and the long side, and the short side.
+
+So, each position on the long side, and the short side, and the total long side, and the short side.
+
+So, that's how you work out, from your beta values, how you hedge out the market risk in a theme that has two longs and two shorts.
+
+Now, you can get more complicated if you want, where you have three longs and three shorts, four longs and four shorts.
+
+But, I wouldn't advise doing that to begin with.
+
+So, what you should probably be doing when you start out is to try and make money just doing spread trades, one stock long, one stock short.
+
+And then, when you're making money, graduate to doing two stocks long and two stocks short.
+
+And if you can make money doing this, then you can get more complicated later on.
+
+You can get a little bit smarter and a bit more cleverer once you're making money.
+
+So, you can see this is a little bit complicated.
+
+You've got this spreadsheet in the downloads area.
+
+So, just download it and have a go at reverse engineering the sheet yourself.
+
+It's not that difficult to get used to.
+
+So, these trades are quite typical trades where if you have an idea, but you don't want to have your exposure in just long one stock and short one stock, you can actually represent the same idea by diversifying a little bit into two longs and two shorts.
+
+So, that concludes hedging out market risk using beta across two longs and two shorts.
+
+Now, we're going to move on to the next video and I'll see you in the next video.
+
+Okay, welcome back.
+
+So, that was an introduction to beta and what we looked at there was beta across two stocks and beta across a theme, as in a theme that you've identified that you believe that will happen as an overall idea or trend within a certain industry.
+
+And how you can represent that theme and hedge out the market risk at the same time is by having multiple longs and multiple shorts representing the theme.
+
+And you hedge out market risk in the process.
+
+And if you mechanically want to do that, then just refer to that spreadsheet and go through the steps.
+
+With two single stocks, it's very straightforward.
+
+We just take the beta and the beta ratio and this gives us our positioning and sizes that we must put on on either side of the trade.
+
+Now, what we're going to do is do something that you may not think occurs immediately.
+
+What we're going to do is have a look at how we hedge out currency risk on a trade across two geographies.
+
+So, for example, if you take a position in the United Kingdom and take a position in the United States, you're actually going to have an implied currency exposure.
+
+And what we're going to look at is how we hedge this exposure out.
+
+Then we'll do a full summary of the risk management parameters that we've looked at for the portfolio.
+
+But first, let's go over to the screen and I'll show you how you effectively hedge out currency risk.
+
+OK, so welcome back to the computer screen.
+
+What we're going to have a look at here is currency hedging.
+
+And what you'll typically find when you do cross country spread trades.
+
+So a spread trade where you have a long and a short in two different geographical regions with two different currencies.
+
+What you'll find is that when you do these trades, you're going to end up with an implied currency risk.
+
+So what we're going to look at first is just the idea of a currency as a spread trade.
+
+We're just going to pop back into the watch list example, which you have in the downloads area.
+
+And we're just going to go into the presentation and have a look at the one particular slide which explains currency risk.
+
+So let's open up the watch list.
+
+And this will be familiar to you where we have all of our trade ideas on the example watch list.
+
+And if you scroll down, you'll see that we have a section for Forex and we also have a section for commodities, energy, metals and food.
+
+First things first, we just need to get over this concept that a Forex trade is actually just a spread trade by default.
+
+So a currency trade is a spread trade by default.
+
+If you think about it, a currency trade is a spread trade because you can't actually buy a currency without selling another currency first.
+
+So when you're putting your currency trades into your watch list, there is no long and there is no short price.
+
+There is just one entry price.
+
+So if we have a look at EURUSD for example, well, you can't buy dollars without selling euros first in this currency pair.
+
+So the price is just the price.
+
+And when you're putting and updating your spreadsheet with your currency pairs, your reference prices, when you're looking at them, you put them on your watch list just in the spread area here and correspondingly in the spread column here.
+
+And then when you're updating the currency pair for the reference prices in the current situation, you put them in the current price here in the current spread.
+
+So let's say, for example, EURUSD was on the watch list seven weeks ago.
+
+Well, seven weeks ago, it was around 128, 129.
+
+And we put it again in here as the reference price.
+
+And then we have it here.
+
+The current situation, which is EURUSD is trading at 131.
+
+So you just update it in that way.
+
+There is no long and there is no short entry.
+
+That's just the price of buying dollars and selling euros to do so.
+
+So that's the first thing.
+
+Now we're going to look at currency hedging.
+
+So what actually happens when you have a long position in a stock or an asset in one currency and a short position in a stock or an asset in another currency.
+
+So they're denominated in different currencies.
+
+Well, this comes into our portfolio construction parameters area where you're probably going to be setting this parameter in your portfolio by making the statement, well, if I do these trades, I should just hedge out my currency risk to begin with.
+
+And it's fairly straightforward to understand and very easy to do on pretty much all brokerage platforms.
+
+So instead of having a situation where you go longer stock and shorter stock in the same currency, we're now looking at doing it in two different currencies.
+
+And what that implies is that you have a currency position.
+
+So let's go through this example.
+
+Let's say, for example, we wanted to buy £20,000 of Standard Chartered, which is an Asian bank with a listing in Asia, UK and in the United States.
+
+But we wanted to do this in pounds in London.
+
+So we're looking at buying £20,000 of Standard Chartered and going short the equivalent amount, £20,000 of Santander, the Spanish bank.
+
+So Standards is actually denominated in sterling and Santander denominated in US dollars if we're trading the New York Stock Exchange listing.
+
+Now, let's say the reference prices in the market are £17.22 for Standards in London.
+
+And for Santander in New York, the reference price is $7.56.
+
+And let's just assume that the sterling US dollar cable rate is one and a half.
+
+So £20,000 worth of Santander is equivalent to $30,000.
+
+Now, what happens is when we do a spread trade, the stock that we purchase, we have to pay for that purchase with the currency that we're purchasing it in.
+
+And when we short a stock, we actually receive that currency.
+
+Because when you're selling, you receive the money for selling the stock.
+
+So what you end up with is an implied currency risk.
+
+So in this example, if we buy Standard Chartered, we pay pounds for the stock.
+
+And if we short Santander, we receive the US dollars.
+
+Therefore, we end up receiving 30,000 US dollars.
+
+And we're short £20,000.
+
+So what you have to do to hedge out the currency risk here is you actually have to do three trades.
+
+You have to buy Standard Chartered.
+
+You have to short Santander.
+
+And then you have to buy £20,000 versus US dollar to hedge out the currency risk.
+
+So you do three trades in total.
+
+And you do them all at the same time.
+
+Now, why is this a risk?
+
+Well, simply because if, for example, the spread moves 10% in our favour, but the currency moves 10% against us during the lifetime that we have this spread on, then when we unwind the spread at the same time, so when we actually come to trade out of the spread, so selling Standard Chartered and buying back Santander, if the currency has moved against us, that just means we won't actually make any money.
+
+So what you have to do is actually just hedge out this currency risk right at the beginning.
+
+So if the spread does move in your favour, the currency move doesn't cancel out the move in the spread.
+
+So that's pretty straightforward.
+
+If you're doing this, just make sure that you're aware of the currency risk and make sure that if you don't want to have that risk that you just hedge it out.
+
+And you can do that very, very easily.
+
+You just work out what your currency exposure is.
+
+So what you're paying for, what currency you're paying in and what currency you're receiving, and then do the opposite trade and just hedge it out and do all three of the trades at once.
+
+So you don't have the currency risk.
+
+And then when you unwind, you just unwind all three of the positions at the same time.
+
+So what are you going to see in your brokerage account?
+
+You're just going to see three positions.
+
+You're going to see, in this example, you're going to see long Standard Chartered, 15,000 pounds worth.
+
+You're going to see short Santander.
+
+And you're going to see short $30,000 worth.
+
+And then you're going to see a long sterling US dollar position, equivalent to 20,000 pounds or 30,000 US dollars.
+
+And that's basically it.
+
+And then you just unwind that position, or all three positions, when you want to trade out of the spread.
+
+So whether you're stopped out or you're taking profits, whenever you unwind, you just unwind all three of them.
+
+So very straightforward to understand.
+
+Try to get your head around it.
+
+It's just one of those construction parameters that professional traders understand and make sure that they hedge out whenever they can or if necessary.
+
+So just understand it.
+
+And when you get a little bit more advanced, as in when you begin spread trading, you should probably just start by going long and short stocks that are denominated in the same currency.
+
+But, you know, when you're making money and you're getting a bit more advanced, then this is something you'll probably come across because you'll start wanting to do spread trades across geographies and across different currencies.
+
+And all you have to do is just understand your currency risk, hedge it out, and then when you unwind, you unwind all positions at the same time.
+
+Okay, so let's move on to the next video and I'll see you on the other side.
+
+Okay, so welcome back.
+
+Now, in this video we've been through a lot of risk management parameters that you can deploy on your portfolio to make sure, essentially, that you're not being human.
+
+You're doing the opposite of that and you're making sure that the parameters are in place and stop you from actually being human.
+
+So, these are very important because when we go back to the trading psychology module, you'll know from that module that we have to deploy these parameters to make sure when we're in these situations that we do the right thing.
+
+And all professional hedge fund managers, all professional traders who are running long-short portfolios deploy these parameters.
+
+And they know that they have to to stop themselves being human.
+
+So, essentially, we're looking at pulling from box A and pulling from box B at the right times.
+
+And the risk management parameters that we looked at were gross exposure limits, net exposure limits, single position limits.
+
+We looked at hedging out certain risks as well.
+
+So, we looked at hedging out market risk using beta across two positions, beta across multiple positions.
+
+And we also looked at hedging out currency risk.
+
+And we do this as professional traders because we know that we shouldn't be taking these risks unnecessarily.
+
+And so, when actually we have to pull from box B, we do so and we do it almost robotically and we know that if we protect our downside in our portfolio, then as long as that downside is protected, we live to fight another day.
+
+And on top of that, we can also have winners which pay a lot more than the downside that we've ensured or protected.
+
+So, this enables you over the long term when you have ideas through your idea generation and trades through the gatekeeping process that have been deployed or ideas that have become trades and they've now been put in the portfolio.
+
+So, this ensures that your downside as a trader is protected and this is why you have to have risk management.
+
+Now, you should absolutely go through this video again and make sure you've got your head around the basic risk management principles.
+
+We're going to go over to video number 24 now and Chris is going to show you a pretty advanced technique for calculating your own beta.
+
+Let's go over to video number 24 and I'll see you in video number 25.

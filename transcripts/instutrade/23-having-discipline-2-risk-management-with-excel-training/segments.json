@@ -1,0 +1,3265 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 23.0,
+      "text": "Okay, so welcome back. Welcome to video number 23, our second video in the risk management phase, Portfolio Construction Parameters. So now we're at the stage again where we're assuming that we've actually got positions, we're now running a portfolio."
+    },
+    {
+      "start": 24.0,
+      "end": 35.0,
+      "text": "And what we're going to introduce you to here is a lot of risk management parameters for portfolios which are used by professional hedge fund managers."
+    },
+    {
+      "start": 35.0,
+      "end": 47.0,
+      "text": "We're going to start with all of the basic ones but we're also going to show you in this video an introduction to beta and how we hedge out market risk."
+    },
+    {
+      "start": 47.0,
+      "end": 56.0,
+      "text": "You'll remember very early on in the video series we were looking at trade ideas when we're generating ideas at the industry and the stock level."
+    },
+    {
+      "start": 56.0,
+      "end": 67.0,
+      "text": "And we were looking at different types of trades as in the cross sector trades, the cross sector constituent trades and the intra sector constituent trades."
+    },
+    {
+      "start": 67.0,
+      "end": 78.0,
+      "text": "Now all of these are spread trades and essentially what you have when you take spread trades is a situation where you're naturally hedging out certain levels of risk."
+    },
+    {
+      "start": 78.0,
+      "end": 90.0,
+      "text": "And what we're going to look at here when we look at beta, we're going to look at how we mechanically actually go through the process of hedging out market risk."
+    },
+    {
+      "start": 90.0,
+      "end": 97.0,
+      "text": "So we'll go through the basic risk management parameters for the portfolio which all hedge fund managers use."
+    },
+    {
+      "start": 97.0,
+      "end": 111.0,
+      "text": "And we're also going to go a little bit advanced and we're going to go into an introduction of beta and the mechanics of how it would work if you were hedging out market risk for a single spread trade or multiple spread trades."
+    },
+    {
+      "start": 111.0,
+      "end": 123.0,
+      "text": "So let's go over to the presentation. Straight after the presentation we'll be going on the computer and I'll be showing you how to do this with using beta and using these publicly available statistics."
+    },
+    {
+      "start": 123.0,
+      "end": 131.0,
+      "text": "And then in video number 24 Chris is actually going to show you on the computer how you calculate beta yourself."
+    },
+    {
+      "start": 131.0,
+      "end": 144.0,
+      "text": "So let's go over to the presentation and I'll see you on the computer after the presentation and for a summary of the risk management parameters at the end of this video."
+    },
+    {
+      "start": 144.0,
+      "end": 160.0,
+      "text": "Okay, let's move on to risk management. Further discipline. So we know what to do with losers. We know what to do with winners. We don't get married to losers."
+    },
+    {
+      "start": 160.0,
+      "end": 174.0,
+      "text": "And the upside on winners could be anything. So marriage could be a consideration."
+    },
+    {
+      "start": 174.0,
+      "end": 189.0,
+      "text": "But when these positions are real in your portfolio, you can have additional risk management parameters that protect your downside on losers."
+    },
+    {
+      "start": 189.0,
+      "end": 205.0,
+      "text": "So I'll just go through a few of them. And again, there's no hard and fast rules. There's no book you can buy at Blackwell's WH Smiths that says this is the perfect portfolio and here's all the risk management situations you should apply."
+    },
+    {
+      "start": 205.0,
+      "end": 212.0,
+      "text": "That book's called this is how you should trade. And there's a million of them that should tell you something."
+    },
+    {
+      "start": 212.0,
+      "end": 221.0,
+      "text": "So there's no rule, but these are the risk management situations that you would apply to a standard portfolio."
+    },
+    {
+      "start": 221.0,
+      "end": 239.0,
+      "text": "First one gross exposure limits. So in a retail brokerage account, if we set up a typical account, we might put $25,000 in the account."
+    },
+    {
+      "start": 239.0,
+      "end": 253.0,
+      "text": "What is that $25,000? It's called margin, which is collateralized. And it's used by the broker to pay for your losses."
+    },
+    {
+      "start": 253.0,
+      "end": 267.0,
+      "text": "So what happens on a day when your portfolio is up $1,000? That $25 becomes $26. The broker puts $1,000 in your trading account."
+    },
+    {
+      "start": 267.0,
+      "end": 276.0,
+      "text": "What happens on a day when you lose $1,000 in your portfolio? You have to pay the broker $1,000 and it becomes $24."
+    },
+    {
+      "start": 276.0,
+      "end": 295.0,
+      "text": "That's what the margin's there for. But the broker, when you put $25,000 in your account, on large cap stocks will allow you to take roughly 10 times the exposure that you've put, of the money that you've put in your account."
+    },
+    {
+      "start": 295.0,
+      "end": 304.0,
+      "text": "So you could go all the way up to $250,000 exposure."
+    },
+    {
+      "start": 304.0,
+      "end": 311.0,
+      "text": "So what can we do? We can expose ourselves at a rate that we want to be exposed to."
+    },
+    {
+      "start": 311.0,
+      "end": 322.0,
+      "text": "So we try and find the sweet spot between the maximum amount of exposure that we're allowed to take and the number that we've put in the account."
+    },
+    {
+      "start": 322.0,
+      "end": 335.0,
+      "text": "So this spreadsheet here, exposure rates, it's a very simple spreadsheet. It's just, if you leverage 10 times, if you lose 10%, you're out."
+    },
+    {
+      "start": 335.0,
+      "end": 339.0,
+      "text": "If you leverage five times, if you lose 20%, you're out."
+    },
+    {
+      "start": 339.0,
+      "end": 344.0,
+      "text": "So it just goes through all the exposure rate, exposure rates from one to over a hundred."
+    },
+    {
+      "start": 344.0,
+      "end": 350.0,
+      "text": "What about in Forex, if you've got a hundred times exposure, what you've got in your account?"
+    },
+    {
+      "start": 350.0,
+      "end": 356.0,
+      "text": "Genuinely, that's what you'll be able to do."
+    },
+    {
+      "start": 356.0,
+      "end": 369.0,
+      "text": "So you put $25,000 in your account and you're allowed to take a position in sterling US dollar to the value of $2.5 million."
+    },
+    {
+      "start": 369.0,
+      "end": 372.0,
+      "text": "What happens if you lose 1%?"
+    },
+    {
+      "start": 372.0,
+      "end": 374.0,
+      "text": "You're out."
+    },
+    {
+      "start": 374.0,
+      "end": 379.0,
+      "text": "Every retail trader takes their maximum exposure almost immediately."
+    },
+    {
+      "start": 379.0,
+      "end": 384.0,
+      "text": "It's crazy."
+    },
+    {
+      "start": 384.0,
+      "end": 395.0,
+      "text": "So gross exposure limits."
+    },
+    {
+      "start": 395.0,
+      "end": 402.0,
+      "text": "With numerical examples and percentage examples compared to exposure."
+    },
+    {
+      "start": 402.0,
+      "end": 411.0,
+      "text": "If you opened an account with $25,000, you want to give yourself a chance of making money."
+    },
+    {
+      "start": 411.0,
+      "end": 415.0,
+      "text": "You never ever want to receive a margin call ever in your life."
+    },
+    {
+      "start": 415.0,
+      "end": 421.0,
+      "text": "If you receive a margin call, it just means you're a totally irresponsible trader."
+    },
+    {
+      "start": 421.0,
+      "end": 425.0,
+      "text": "It means you don't know how to deploy capital responsibly."
+    },
+    {
+      "start": 429.0,
+      "end": 431.0,
+      "text": "So you stop yourself from being human."
+    },
+    {
+      "start": 432.0,
+      "end": 439.0,
+      "text": "So you set an exposure rate somewhere between one and 10 on large cap stocks."
+    },
+    {
+      "start": 440.0,
+      "end": 445.0,
+      "text": "FX never, ever, ever go over seven or eight times exposure."
+    },
+    {
+      "start": 447.0,
+      "end": 451.0,
+      "text": "You can make money without ever being stopped out or receive a margin call."
+    },
+    {
+      "start": 451.0,
+      "end": 452.0,
+      "text": "What is a margin call?"
+    },
+    {
+      "start": 452.0,
+      "end": 455.0,
+      "text": "It just means you're stopped out on your entire portfolio."
+    },
+    {
+      "start": 459.0,
+      "end": 461.0,
+      "text": "Have you ever received a margin call?"
+    },
+    {
+      "start": 461.0,
+      "end": 464.0,
+      "text": "Are you kidding me?"
+    },
+    {
+      "start": 464.0,
+      "end": 465.0,
+      "text": "Obviously not."
+    },
+    {
+      "start": 466.0,
+      "end": 467.0,
+      "text": "It's crazy."
+    },
+    {
+      "start": 469.0,
+      "end": 476.0,
+      "text": "The only time where I would ever have been close was in the late 90s during the tech boom."
+    },
+    {
+      "start": 476.0,
+      "end": 481.0,
+      "text": "Where what we used to do, because the settlement was T plus three on physical stock."
+    },
+    {
+      "start": 482.0,
+      "end": 484.0,
+      "text": "You would apply for the IPO, for example."
+    },
+    {
+      "start": 485.0,
+      "end": 489.0,
+      "text": "And let's say I only had £10,000 to trade with."
+    },
+    {
+      "start": 490.0,
+      "end": 495.0,
+      "text": "To get an allocation of £10,000, because everyone was applying for the IPOs."
+    },
+    {
+      "start": 496.0,
+      "end": 499.0,
+      "text": "You'd have to apply for £50,000."
+    },
+    {
+      "start": 500.0,
+      "end": 504.0,
+      "text": "And then they'd turn around and say, your allocation is £25,000."
+    },
+    {
+      "start": 505.0,
+      "end": 509.0,
+      "text": "So if you were being sensible, you'd take £10,000."
+    },
+    {
+      "start": 509.0,
+      "end": 511.0,
+      "text": "If you were being silly, you'd take £25,000."
+    },
+    {
+      "start": 512.0,
+      "end": 514.0,
+      "text": "Because you don't have to pay for it for three days."
+    },
+    {
+      "start": 515.0,
+      "end": 521.0,
+      "text": "So then if it went up, you'd trade out for a big profit."
+    },
+    {
+      "start": 522.0,
+      "end": 524.0,
+      "text": "Because you'd never have to actually pay for it."
+    },
+    {
+      "start": 525.0,
+      "end": 526.0,
+      "text": "Now it's different."
+    },
+    {
+      "start": 527.0,
+      "end": 528.0,
+      "text": "So I did that a few times."
+    },
+    {
+      "start": 529.0,
+      "end": 530.0,
+      "text": "But then stopped myself out."
+    },
+    {
+      "start": 531.0,
+      "end": 534.0,
+      "text": "So I didn't get a call for the money."
+    },
+    {
+      "start": 535.0,
+      "end": 540.0,
+      "text": "Once you get the phone call for the money and you can't afford it, you're stopped out."
+    },
+    {
+      "start": 545.0,
+      "end": 546.0,
+      "text": "So gross exposure limits."
+    },
+    {
+      "start": 547.0,
+      "end": 549.0,
+      "text": "Large cap stocks, four to five times."
+    },
+    {
+      "start": 550.0,
+      "end": 553.0,
+      "text": "Currencies, six to eight."
+    },
+    {
+      "start": 554.0,
+      "end": 558.0,
+      "text": "But to get to that point, you have to be making money first."
+    },
+    {
+      "start": 559.0,
+      "end": 573.0,
+      "text": "So when you start out, you're going to build your portfolio from zero to, if you're in large cap stocks, maybe three or four times exposure."
+    },
+    {
+      "start": 574.0,
+      "end": 577.0,
+      "text": "And then as you make money, you build and build and build."
+    },
+    {
+      "start": 578.0,
+      "end": 580.0,
+      "text": "And you can take higher exposure rates."
+    },
+    {
+      "start": 581.0,
+      "end": 582.0,
+      "text": "So let's go through a little example."
+    },
+    {
+      "start": 583.0,
+      "end": 586.0,
+      "text": "So assume we've got this $25,000 deposited on account."
+    },
+    {
+      "start": 588.0,
+      "end": 592.0,
+      "text": "And we just say, I'm going to limit myself to four times exposure."
+    },
+    {
+      "start": 596.0,
+      "end": 604.0,
+      "text": "I'm going to limit myself to four times exposure before and get a 5% return before I increase my position size."
+    },
+    {
+      "start": 605.0,
+      "end": 605.0,
+      "text": "Yeah?"
+    },
+    {
+      "start": 607.0,
+      "end": 614.0,
+      "text": "If you make 5% here, what's going to happen in your portfolio if you've got a well diversified long short portfolio, eight to ten positions?"
+    },
+    {
+      "start": 615.0,
+      "end": 616.0,
+      "text": "What's going to happen?"
+    },
+    {
+      "start": 617.0,
+      "end": 625.0,
+      "text": "If you make 5%, what's going to happen if you make 5% and you're four times exposed?"
+    },
+    {
+      "start": 626.0,
+      "end": 628.0,
+      "text": "So your exposure is 100, yeah?"
+    },
+    {
+      "start": 629.0,
+      "end": 631.0,
+      "text": "So you're going to make five grand."
+    },
+    {
+      "start": 632.0,
+      "end": 634.0,
+      "text": "So your 25 now goes to 30."
+    },
+    {
+      "start": 635.0,
+      "end": 638.0,
+      "text": "Now you've got 30 available in your account."
+    },
+    {
+      "start": 639.0,
+      "end": 647.0,
+      "text": "And if you increase your exposure and at the same time increase your diversity, you're not actually increasing your risk by as much as you think."
+    },
+    {
+      "start": 648.0,
+      "end": 658.0,
+      "text": "Because the positions here compared to here are having a less contribution to the outcome of the profit and loss of your portfolio."
+    },
+    {
+      "start": 659.0,
+      "end": 663.0,
+      "text": "So as you go on the journey, you're doing a couple of things."
+    },
+    {
+      "start": 664.0,
+      "end": 669.0,
+      "text": "When you're making money, you're pulling from box A because now you're going to go and increase your exposure."
+    },
+    {
+      "start": 670.0,
+      "end": 671.0,
+      "text": "So what are you doing?"
+    },
+    {
+      "start": 671.0,
+      "end": 674.0,
+      "text": "You're saying, actually, I'm quite good at this trading game."
+    },
+    {
+      "start": 675.0,
+      "end": 676.0,
+      "text": "I'm going to invest more money in myself."
+    },
+    {
+      "start": 677.0,
+      "end": 679.0,
+      "text": "So I'm going to increase my exposure rate."
+    },
+    {
+      "start": 680.0,
+      "end": 686.0,
+      "text": "So you're pulling from box A on your portfolio as a whole, yeah?"
+    },
+    {
+      "start": 687.0,
+      "end": 689.0,
+      "text": "You increase your exposure rate."
+    },
+    {
+      "start": 690.0,
+      "end": 693.0,
+      "text": "Now you've got a 20% cushion, but you're more diverse."
+    },
+    {
+      "start": 694.0,
+      "end": 698.0,
+      "text": "So now you've got, say, 12 positions in your portfolio instead of eight."
+    },
+    {
+      "start": 699.0,
+      "end": 704.0,
+      "text": "So actually your risk is staying the same roughly here."
+    },
+    {
+      "start": 707.0,
+      "end": 717.0,
+      "text": "Now what happens if you go from 150,000 making 5% up to six times exposed?"
+    },
+    {
+      "start": 722.0,
+      "end": 725.0,
+      "text": "So you make 5% on 150."
+    },
+    {
+      "start": 728.0,
+      "end": 731.0,
+      "text": "You make seven and a half grand."
+    },
+    {
+      "start": 734.0,
+      "end": 738.0,
+      "text": "And then you've got 37 and a half grand in your portfolio."
+    },
+    {
+      "start": 739.0,
+      "end": 740.0,
+      "text": "And you go up to 225."
+    },
+    {
+      "start": 742.0,
+      "end": 743.0,
+      "text": "Make sense?"
+    },
+    {
+      "start": 744.0,
+      "end": 748.0,
+      "text": "So you increase your exposure as you're making money, but then you've got to have an ultimate limit."
+    },
+    {
+      "start": 749.0,
+      "end": 754.0,
+      "text": "Because as soon as you start going over six times, no matter how diverse you are,"
+    },
+    {
+      "start": 755.0,
+      "end": 756.0,
+      "text": "what happens?"
+    },
+    {
+      "start": 757.0,
+      "end": 759.0,
+      "text": "Well, there's going to be volatility in your portfolio."
+    },
+    {
+      "start": 759.0,
+      "end": 763.0,
+      "text": "If it's a long, short S&P 500 portfolio, what can you make or lose on a normal day?"
+    },
+    {
+      "start": 768.0,
+      "end": 769.0,
+      "text": "35 basis points?"
+    },
+    {
+      "start": 771.0,
+      "end": 775.0,
+      "text": "What if you have a two standard deviation day in the S&P 500 and everything goes wrong?"
+    },
+    {
+      "start": 778.0,
+      "end": 779.0,
+      "text": "You can lose 2%."
+    },
+    {
+      "start": 779.0,
+      "end": 787.0,
+      "text": "So as soon as you start going over that five, six times level, you're starting to play a dangerous game."
+    },
+    {
+      "start": 788.0,
+      "end": 800.0,
+      "text": "Now, if you mix currencies into it, the makeup and volatility of your portfolio starts to look different."
+    },
+    {
+      "start": 801.0,
+      "end": 806.0,
+      "text": "And this is why professional traders stick to five times in large cap situations as a gross exposure limit."
+    },
+    {
+      "start": 807.0,
+      "end": 812.0,
+      "text": "Because once you start going over that, you start to play a dangerous game with the two standard deviation day."
+    },
+    {
+      "start": 818.0,
+      "end": 823.0,
+      "text": "You can be stopped out on lots of positions all at one time and just end up back at square one."
+    },
+    {
+      "start": 825.0,
+      "end": 832.0,
+      "text": "And what you want to do in an ideal situation is be somewhere here with a mix of large cap commodities and Forex."
+    },
+    {
+      "start": 833.0,
+      "end": 836.0,
+      "text": "Somewhere between here, after having made money in two steps."
+    },
+    {
+      "start": 839.0,
+      "end": 843.0,
+      "text": "And grinding out a solid return every month."
+    },
+    {
+      "start": 844.0,
+      "end": 845.0,
+      "text": "Trying to do it every month."
+    },
+    {
+      "start": 846.0,
+      "end": 846.0,
+      "text": "Yeah."
+    },
+    {
+      "start": 848.0,
+      "end": 850.0,
+      "text": "And then what happens if you do that for a year?"
+    },
+    {
+      "start": 851.0,
+      "end": 855.0,
+      "text": "And at the end of the year, you're up 20, 25%."
+    },
+    {
+      "start": 858.0,
+      "end": 859.0,
+      "text": "What's happened?"
+    },
+    {
+      "start": 860.0,
+      "end": 866.0,
+      "text": "Well, if you're five times exposed and you're up 20%, you've doubled your money."
+    },
+    {
+      "start": 870.0,
+      "end": 872.0,
+      "text": "What do you say to yourself at the end of year one?"
+    },
+    {
+      "start": 874.0,
+      "end": 875.0,
+      "text": "I'm quite good at this trading game."
+    },
+    {
+      "start": 879.0,
+      "end": 881.0,
+      "text": "I like the fact that I've doubled my money."
+    },
+    {
+      "start": 883.0,
+      "end": 885.0,
+      "text": "I've done all the right things when I make money."
+    },
+    {
+      "start": 885.0,
+      "end": 887.0,
+      "text": "I've done all the right things when I lose money."
+    },
+    {
+      "start": 887.0,
+      "end": 888.0,
+      "text": "And I've had discipline."
+    },
+    {
+      "start": 889.0,
+      "end": 890.0,
+      "text": "I've added to winners."
+    },
+    {
+      "start": 890.0,
+      "end": 891.0,
+      "text": "I've cut losers."
+    },
+    {
+      "start": 891.0,
+      "end": 895.0,
+      "text": "And I'm up 20% on the year with a 5% exposure rate on average."
+    },
+    {
+      "start": 896.0,
+      "end": 897.0,
+      "text": "And I've doubled my money."
+    },
+    {
+      "start": 898.0,
+      "end": 899.0,
+      "text": "Looks like I'm quite good at this game."
+    },
+    {
+      "start": 900.0,
+      "end": 902.0,
+      "text": "Stick another 25 grand in your trading account."
+    },
+    {
+      "start": 903.0,
+      "end": 904.0,
+      "text": "And double up."
+    },
+    {
+      "start": 906.0,
+      "end": 907.0,
+      "text": "Pull from box A."
+    },
+    {
+      "start": 908.0,
+      "end": 910.0,
+      "text": "Repeat and rinse year two."
+    },
+    {
+      "start": 911.0,
+      "end": 914.0,
+      "text": "Stick another 50 grand in your trading account."
+    },
+    {
+      "start": 914.0,
+      "end": 920.0,
+      "text": "Then you've got a two year track record and you're about to blow the numbers through the roof in year three."
+    },
+    {
+      "start": 924.0,
+      "end": 925.0,
+      "text": "What happens next?"
+    },
+    {
+      "start": 926.0,
+      "end": 929.0,
+      "text": "Everybody wants to give you money to invest in you and now you're a professional trader."
+    },
+    {
+      "start": 932.0,
+      "end": 933.0,
+      "text": "What do the retail traders do?"
+    },
+    {
+      "start": 936.0,
+      "end": 937.0,
+      "text": "Literally the opposite."
+    },
+    {
+      "start": 939.0,
+      "end": 940.0,
+      "text": "Start off 10 times exposed."
+    },
+    {
+      "start": 941.0,
+      "end": 941.0,
+      "text": "Lose 10%."
+    },
+    {
+      "start": 942.0,
+      "end": 943.0,
+      "text": "Wiped out."
+    },
+    {
+      "start": 943.0,
+      "end": 944.0,
+      "text": "In the 90-90-90."
+    },
+    {
+      "start": 948.0,
+      "end": 949.0,
+      "text": "Work really hard all year."
+    },
+    {
+      "start": 950.0,
+      "end": 951.0,
+      "text": "Save up another 10 grand."
+    },
+    {
+      "start": 952.0,
+      "end": 953.0,
+      "text": "Do it again."
+    },
+    {
+      "start": 957.0,
+      "end": 958.0,
+      "text": "That's all you have to do."
+    },
+    {
+      "start": 967.0,
+      "end": 968.0,
+      "text": "What about net exposure limits?"
+    },
+    {
+      "start": 971.0,
+      "end": 972.0,
+      "text": "That's a gross exposure limit."
+    },
+    {
+      "start": 973.0,
+      "end": 976.0,
+      "text": "What about if you wanted to place a net exposure limit in your portfolio?"
+    },
+    {
+      "start": 980.0,
+      "end": 981.0,
+      "text": "Let's go through nets."
+    },
+    {
+      "start": 983.0,
+      "end": 990.0,
+      "text": "So let's say you put a net limit of 50% on a $100,000 portfolio."
+    },
+    {
+      "start": 991.0,
+      "end": 992.0,
+      "text": "So $50,000."
+    },
+    {
+      "start": 994.0,
+      "end": 996.0,
+      "text": "Your net exposure is just in dollar terms."
+    },
+    {
+      "start": 997.0,
+      "end": 1001.0,
+      "text": "Your long exposure minus your short exposure over your gross exposure."
+    },
+    {
+      "start": 1006.0,
+      "end": 1007.0,
+      "text": "So let's have a look at case one."
+    },
+    {
+      "start": 1009.0,
+      "end": 1010.0,
+      "text": "Long exposure 50."
+    },
+    {
+      "start": 1010.0,
+      "end": 1011.0,
+      "text": "Short exposure 50."
+    },
+    {
+      "start": 1012.0,
+      "end": 1013.0,
+      "text": "Your net exposure is 0%."
+    },
+    {
+      "start": 1014.0,
+      "end": 1019.0,
+      "text": "Your gross is 100 all the time in each case."
+    },
+    {
+      "start": 1020.0,
+      "end": 1021.0,
+      "text": "Here your net's 0."
+    },
+    {
+      "start": 1023.0,
+      "end": 1024.0,
+      "text": "Case two."
+    },
+    {
+      "start": 1024.0,
+      "end": 1025.0,
+      "text": "Long exposure 70."
+    },
+    {
+      "start": 1025.0,
+      "end": 1026.0,
+      "text": "Short exposure 30."
+    },
+    {
+      "start": 1027.0,
+      "end": 1028.0,
+      "text": "Net long 40%."
+    },
+    {
+      "start": 1030.0,
+      "end": 1033.0,
+      "text": "Now what you're actually doing by going net long if you're trading stocks."
+    },
+    {
+      "start": 1034.0,
+      "end": 1042.0,
+      "text": "Is you're going net long if you're taking a net position in that situation you're net long the market 40%."
+    },
+    {
+      "start": 1043.0,
+      "end": 1046.0,
+      "text": "So you're actually taking a view on the market."
+    },
+    {
+      "start": 1047.0,
+      "end": 1049.0,
+      "text": "So it's questionable whether you should have that 40%."
+    },
+    {
+      "start": 1050.0,
+      "end": 1052.0,
+      "text": "Because you could just go and buy the S&P 500."
+    },
+    {
+      "start": 1055.0,
+      "end": 1056.0,
+      "text": "Because that's the view you're taking."
+    },
+    {
+      "start": 1056.0,
+      "end": 1057.0,
+      "text": "Yeah."
+    },
+    {
+      "start": 1058.0,
+      "end": 1059.0,
+      "text": "And on."
+    },
+    {
+      "start": 1062.0,
+      "end": 1063.0,
+      "text": "Case three."
+    },
+    {
+      "start": 1064.0,
+      "end": 1065.0,
+      "text": "Long exposure 40."
+    },
+    {
+      "start": 1066.0,
+      "end": 1067.0,
+      "text": "Short exposure 60."
+    },
+    {
+      "start": 1068.0,
+      "end": 1069.0,
+      "text": "Minus 20% net short."
+    },
+    {
+      "start": 1074.0,
+      "end": 1078.0,
+      "text": "You're actually taking a 20% bet cash for cash that the market's going to go down."
+    },
+    {
+      "start": 1080.0,
+      "end": 1081.0,
+      "text": "So you've accepted market risk."
+    },
+    {
+      "start": 1082.0,
+      "end": 1087.0,
+      "text": "So you have to ask yourself the question should I actually just sell the S&P 500 or sell the market."
+    },
+    {
+      "start": 1088.0,
+      "end": 1090.0,
+      "text": "Whatever the whatever the index is you like to short."
+    },
+    {
+      "start": 1091.0,
+      "end": 1095.0,
+      "text": "But having a limit stops you from being silly or doing stupid things."
+    },
+    {
+      "start": 1096.0,
+      "end": 1099.0,
+      "text": "Like having a huge exposure rate to the market."
+    },
+    {
+      "start": 1102.0,
+      "end": 1105.0,
+      "text": "Now everybody who's got everybody who's got a pension."
+    },
+    {
+      "start": 1106.0,
+      "end": 1108.0,
+      "text": "Where they've got 30 stocks long."
+    },
+    {
+      "start": 1109.0,
+      "end": 1110.0,
+      "text": "And no shorts."
+    },
+    {
+      "start": 1111.0,
+      "end": 1112.0,
+      "text": "Thinks they're really clever when the market goes up."
+    },
+    {
+      "start": 1116.0,
+      "end": 1119.0,
+      "text": "Those stocks are not up because those stocks are great stocks are great companies."
+    },
+    {
+      "start": 1120.0,
+      "end": 1122.0,
+      "text": "They're up because the market's up."
+    },
+    {
+      "start": 1124.0,
+      "end": 1126.0,
+      "text": "They're long market risk sector risk and stock risk."
+    },
+    {
+      "start": 1129.0,
+      "end": 1131.0,
+      "text": "And they all run into a cave."
+    },
+    {
+      "start": 1131.0,
+      "end": 1132.0,
+      "text": "And you never hear from them again."
+    },
+    {
+      "start": 1133.0,
+      "end": 1136.0,
+      "text": "When the stock when you were in a bear market and the stock market's down 50%."
+    },
+    {
+      "start": 1137.0,
+      "end": 1138.0,
+      "text": "Because their pensions are down 50%."
+    },
+    {
+      "start": 1141.0,
+      "end": 1144.0,
+      "text": "So in those situations you're accepting market risk."
+    },
+    {
+      "start": 1145.0,
+      "end": 1145.0,
+      "text": "So be honest with yourself."
+    },
+    {
+      "start": 1148.0,
+      "end": 1151.0,
+      "text": "So having a net exposure limit stops you from doing that."
+    },
+    {
+      "start": 1153.0,
+      "end": 1154.0,
+      "text": "You can do it a little bit if you want."
+    },
+    {
+      "start": 1155.0,
+      "end": 1156.0,
+      "text": "That's fine."
+    },
+    {
+      "start": 1157.0,
+      "end": 1158.0,
+      "text": "But know the risk you've got."
+    },
+    {
+      "start": 1159.0,
+      "end": 1163.0,
+      "text": "So maybe you put on an exposure limit of 25%."
+    },
+    {
+      "start": 1164.0,
+      "end": 1166.0,
+      "text": "A net exposure limit of 25%."
+    },
+    {
+      "start": 1167.0,
+      "end": 1176.0,
+      "text": "And say never ever ever ever will I ever be more than long $25,000 or short $25,000 of the market."
+    },
+    {
+      "start": 1177.0,
+      "end": 1179.0,
+      "text": "Because that's essentially the position you've got on."
+    },
+    {
+      "start": 1184.0,
+      "end": 1185.0,
+      "text": "What about hedging out the market risk?"
+    },
+    {
+      "start": 1185.0,
+      "end": 1185.0,
+      "text": "What about hedging out the market risk?"
+    },
+    {
+      "start": 1193.0,
+      "end": 1201.0,
+      "text": "Let's say you've got a £20,000 limit on a spread trade."
+    },
+    {
+      "start": 1202.0,
+      "end": 1206.0,
+      "text": "Or a £10,000 limit on a single position."
+    },
+    {
+      "start": 1207.0,
+      "end": 1210.0,
+      "text": "We'll go on to position limits and theme limits next."
+    },
+    {
+      "start": 1211.0,
+      "end": 1215.0,
+      "text": "How do you hedge out the market risk on two stocks?"
+    },
+    {
+      "start": 1216.0,
+      "end": 1226.0,
+      "text": "So beta is just for every unit that the market moves, the historical move of the stock."
+    },
+    {
+      "start": 1227.0,
+      "end": 1237.0,
+      "text": "So if the market moves one, if a stock has a beta of 1.15, history says the stock will move 1.15."
+    },
+    {
+      "start": 1238.0,
+      "end": 1242.0,
+      "text": "But when you're hedging out market risk, you've got beta values of two stocks."
+    },
+    {
+      "start": 1243.0,
+      "end": 1244.0,
+      "text": "So how do you hedge out the market risk?"
+    },
+    {
+      "start": 1246.0,
+      "end": 1253.0,
+      "text": "But what you do is you take the beta ratio of the long and divide it by the beta ratio of the short."
+    },
+    {
+      "start": 1256.0,
+      "end": 1258.0,
+      "text": "And you get a beta of the spread."
+    },
+    {
+      "start": 1259.0,
+      "end": 1261.0,
+      "text": "You get a beta of the ratio."
+    },
+    {
+      "start": 1261.0,
+      "end": 1281.0,
+      "text": "So in terms of beta hedging, what we're going to send you is the beta hedge example that you've just seen."
+    },
+    {
+      "start": 1282.0,
+      "end": 1285.0,
+      "text": "A beta hedge step-by-step guide."
+    },
+    {
+      "start": 1286.0,
+      "end": 1292.0,
+      "text": "And that guide is going to show you how to actually calculate your own beta in an Excel spreadsheet."
+    },
+    {
+      "start": 1293.0,
+      "end": 1296.0,
+      "text": "By taking the historic data of the market and the stock."
+    },
+    {
+      "start": 1297.0,
+      "end": 1299.0,
+      "text": "So you can go out publicly and get the betas."
+    },
+    {
+      "start": 1300.0,
+      "end": 1304.0,
+      "text": "You can get three months, six months, twelve months, three year, five year."
+    },
+    {
+      "start": 1307.0,
+      "end": 1310.0,
+      "text": "But you can calculate your own if you want, if you struggle to find the beta."
+    },
+    {
+      "start": 1312.0,
+      "end": 1314.0,
+      "text": "Now, caution, beta isn't perfect."
+    },
+    {
+      "start": 1315.0,
+      "end": 1322.0,
+      "text": "So it doesn't mean that if we're trying to hedge out the market risk, we can be successful all the time."
+    },
+    {
+      "start": 1328.0,
+      "end": 1333.0,
+      "text": "Because the beta value is just the historical data of the stock in relation to the market."
+    },
+    {
+      "start": 1336.0,
+      "end": 1337.0,
+      "text": "If it does change."
+    },
+    {
+      "start": 1339.0,
+      "end": 1341.0,
+      "text": "If it does change, you'll be told in your portfolio that it's changed."
+    },
+    {
+      "start": 1342.0,
+      "end": 1343.0,
+      "text": "Because you'll be losing money because of it."
+    },
+    {
+      "start": 1344.0,
+      "end": 1352.0,
+      "text": "And you won't understand why, when the market moves one unit, the historical beta doesn't work quite the way you expected."
+    },
+    {
+      "start": 1353.0,
+      "end": 1357.0,
+      "text": "So it's not exact science."
+    },
+    {
+      "start": 1358.0,
+      "end": 1359.0,
+      "text": "Because beta can change."
+    },
+    {
+      "start": 1359.0,
+      "end": 1359.0,
+      "text": "Because beta can change."
+    },
+    {
+      "start": 1359.0,
+      "end": 1371.0,
+      "text": "So we rely on it as a tool to attempt to hedge out market risk as best we can."
+    },
+    {
+      "start": 1372.0,
+      "end": 1375.0,
+      "text": "But we do not rely on it with our lives."
+    },
+    {
+      "start": 1378.0,
+      "end": 1385.0,
+      "text": "And everyone forgets this in the professional trading world, when they spend years building sophisticated models, and then beta just changes."
+    },
+    {
+      "start": 1387.0,
+      "end": 1394.0,
+      "text": "But that's why you have other risk parameters and risk management parameters in your portfolio."
+    },
+    {
+      "start": 1395.0,
+      "end": 1396.0,
+      "text": "To stop you being human."
+    },
+    {
+      "start": 1396.0,
+      "end": 1404.0,
+      "text": "Not admitting that your beta calculations are wrong is pulling from box A when you're wrong."
+    },
+    {
+      "start": 1405.0,
+      "end": 1406.0,
+      "text": "Does that make sense?"
+    },
+    {
+      "start": 1406.0,
+      "end": 1423.0,
+      "text": "So you'll get theme limits, single asset position limits."
+    },
+    {
+      "start": 1424.0,
+      "end": 1431.0,
+      "text": "What about a $100,000 exposure portfolio with a 10% single position limit?"
+    },
+    {
+      "start": 1432.0,
+      "end": 1449.0,
+      "text": "So you just say to yourself, if my gross exposure limit is $100,000, I'm never going to go into one position over $10,000."
+    },
+    {
+      "start": 1450.0,
+      "end": 1452.0,
+      "text": "And as you make money, guess what?"
+    },
+    {
+      "start": 1452.0,
+      "end": 1455.0,
+      "text": "The notional value of your single position limits go up."
+    },
+    {
+      "start": 1458.0,
+      "end": 1461.0,
+      "text": "So you actually get rewarded for making money by doing nothing."
+    },
+    {
+      "start": 1462.0,
+      "end": 1463.0,
+      "text": "Which is great."
+    },
+    {
+      "start": 1464.0,
+      "end": 1465.0,
+      "text": "That's what we want."
+    },
+    {
+      "start": 1468.0,
+      "end": 1479.0,
+      "text": "So very typically, that's quite this example that we've gone through today of a $25,000 situation where you put it in a margin account and in step one, you have $100,000 exposure."
+    },
+    {
+      "start": 1480.0,
+      "end": 1483.0,
+      "text": "It's a very typical profile of an institute trader."
+    },
+    {
+      "start": 1484.0,
+      "end": 1488.0,
+      "text": "So the average institute trader is about 30,000 pounds in their trading account."
+    },
+    {
+      "start": 1489.0,
+      "end": 1491.0,
+      "text": "Some have 10, some have over 100."
+    },
+    {
+      "start": 1492.0,
+      "end": 1494.0,
+      "text": "One guy has over 300,000 in his account."
+    },
+    {
+      "start": 1495.0,
+      "end": 1500.0,
+      "text": "But the average profile is about 30,000 pounds when you strip that guy out."
+    },
+    {
+      "start": 1501.0,
+      "end": 1509.0,
+      "text": "So typically, most people have between 100 and 150,000 pounds exposure, something like that."
+    },
+    {
+      "start": 1510.0,
+      "end": 1513.0,
+      "text": "And that's what your portfolio would look like in a spreadsheet or in a trading account."
+    },
+    {
+      "start": 1514.0,
+      "end": 1519.0,
+      "text": "You just have five longs, five shorts, 10% position limits."
+    },
+    {
+      "start": 1520.0,
+      "end": 1525.0,
+      "text": "And if you're doing beta adjusted trades on spreads, then your spread is 20,000 limit."
+    },
+    {
+      "start": 1526.0,
+      "end": 1530.0,
+      "text": "And your cash for cash situation has to come below 20,000 when you add them up."
+    },
+    {
+      "start": 1531.0,
+      "end": 1535.0,
+      "text": "So your gross exposure on the spread is no higher than your theme limit."
+    },
+    {
+      "start": 1536.0,
+      "end": 1541.0,
+      "text": "What about a portfolio stop loss?"
+    },
+    {
+      "start": 1542.0,
+      "end": 1555.0,
+      "text": "So you would hope that in a well diversified long short portfolio, that if you had five longs and five shorts, that some would be working, some wouldn't be working, but net net, you might be making money or losing a little bit."
+    },
+    {
+      "start": 1556.0,
+      "end": 1560.0,
+      "text": "You put a stop loss on your portfolio."
+    },
+    {
+      "start": 1561.0,
+      "end": 1565.0,
+      "text": "Large cap stocks, S&P 500, FTSE 100."
+    },
+    {
+      "start": 1566.0,
+      "end": 1575.0,
+      "text": "If you're putting stop losses on each position of 10%, what do you think would be a sensible portfolio stop loss?"
+    },
+    {
+      "start": 1580.0,
+      "end": 1583.0,
+      "text": "Well, one position, if you get stopped out, will cost your portfolio 1%."
+    },
+    {
+      "start": 1584.0,
+      "end": 1600.0,
+      "text": "Stop losses we're trying, even when we put one on the portfolio, to put a stop loss on the portfolio that gives us a good chance of making money, but not in the realms of stupidity where we're not having discipline."
+    },
+    {
+      "start": 1601.0,
+      "end": 1604.0,
+      "text": "So a sensible portfolio stop loss might be 10%."
+    },
+    {
+      "start": 1607.0,
+      "end": 1609.0,
+      "text": "Or somewhere between five and 10%."
+    },
+    {
+      "start": 1610.0,
+      "end": 1618.0,
+      "text": "Because 10% just means you've got all of your positions wrong and you've been stopped out."
+    },
+    {
+      "start": 1619.0,
+      "end": 1620.0,
+      "text": "So you're going to get stopped out anyway."
+    },
+    {
+      "start": 1624.0,
+      "end": 1628.0,
+      "text": "Because they've all cost your portfolio 1%, all at the same time."
+    },
+    {
+      "start": 1631.0,
+      "end": 1637.0,
+      "text": "Whatever you do, stop yourself out, take a break for one or two months and reassess."
+    },
+    {
+      "start": 1639.0,
+      "end": 1640.0,
+      "text": "Because you've obviously had a nightmare."
+    },
+    {
+      "start": 1642.0,
+      "end": 1648.0,
+      "text": "If you threw 10 darts at a board and selected five longs and five shorts with darts, you'd get one right."
+    },
+    {
+      "start": 1649.0,
+      "end": 1662.0,
+      "text": "So for you to be stopped out on 10 situations in a 10-position portfolio, there must be something really, really wrong with your selecting, with your ideas."
+    },
+    {
+      "start": 1663.0,
+      "end": 1673.0,
+      "text": "So you're stopped out, you go on holiday, you think about it, think about whether trading is the right profession for you."
+    },
+    {
+      "start": 1674.0,
+      "end": 1686.0,
+      "text": "But the key is, is if you started off with 25,000 and you had 100,000 exposure, you'd be down to 15 in your trading account."
+    },
+    {
+      "start": 1688.0,
+      "end": 1689.0,
+      "text": "You're not out the game."
+    },
+    {
+      "start": 1690.0,
+      "end": 1691.0,
+      "text": "You've still got cash."
+    },
+    {
+      "start": 1692.0,
+      "end": 1696.0,
+      "text": "You've still got the ability, you've still got chips to come back to the table."
+    },
+    {
+      "start": 1697.0,
+      "end": 1702.0,
+      "text": "That's why you have a stop loss on your portfolio."
+    },
+    {
+      "start": 1703.0,
+      "end": 1720.0,
+      "text": "So if you've got 10% stop losses and the profile of your portfolio is 10 positions, five long, five short, over the S&P 500, large cap stocks, or very large liquid currencies and commodities."
+    },
+    {
+      "start": 1721.0,
+      "end": 1724.0,
+      "text": "And you've got a 10% stop loss on those positions."
+    },
+    {
+      "start": 1725.0,
+      "end": 1728.0,
+      "text": "For all of them to go wrong, there must be something really, really, really wrong."
+    },
+    {
+      "start": 1732.0,
+      "end": 1734.0,
+      "text": "So stick a 10% stop loss on the entire portfolio."
+    },
+    {
+      "start": 1735.0,
+      "end": 1738.0,
+      "text": "Drop 10 grand, what's the worst thing that's going to happen?"
+    },
+    {
+      "start": 1740.0,
+      "end": 1741.0,
+      "text": "You've still got 15."
+    },
+    {
+      "start": 1746.0,
+      "end": 1750.0,
+      "text": "But you've pulled from box B because trading might not be the right profession for you."
+    },
+    {
+      "start": 1754.0,
+      "end": 1771.0,
+      "text": "So for the risk management section, very simply, all of those risk management parameters basically dictate how your portfolio will be structured at maximum parameters."
+    },
+    {
+      "start": 1772.0,
+      "end": 1774.0,
+      "text": "Why do we have those maximum parameters?"
+    },
+    {
+      "start": 1775.0,
+      "end": 1777.0,
+      "text": "Because we're trying to stop ourselves from being human."
+    },
+    {
+      "start": 1782.0,
+      "end": 1789.0,
+      "text": "So position limits, theme limits, net exposure limits, gross exposure limits, stick within those parameters."
+    },
+    {
+      "start": 1790.0,
+      "end": 1791.0,
+      "text": "You'll be the opposite of human."
+    },
+    {
+      "start": 1792.0,
+      "end": 1806.0,
+      "text": "Okay, welcome back to the computer screen."
+    },
+    {
+      "start": 1807.0,
+      "end": 1815.0,
+      "text": "What we're going to have a look at now is beta and specifically how we use beta to hedge out market risk."
+    },
+    {
+      "start": 1816.0,
+      "end": 1821.0,
+      "text": "So we're going to look at a simple example first of one stock long versus one stock short."
+    },
+    {
+      "start": 1822.0,
+      "end": 1840.0,
+      "text": "And then later we're going to look at a more complicated example where we're representing our idea through a theme where we've got two longs and two shorts representing the same idea and how we hedge out market risk in that scenario."
+    },
+    {
+      "start": 1841.0,
+      "end": 1843.0,
+      "text": "So let's start with the simple example."
+    },
+    {
+      "start": 1844.0,
+      "end": 1855.0,
+      "text": "And here we're looking at a trade where we're thinking about going long Chevron and short AstraZeneca."
+    },
+    {
+      "start": 1856.0,
+      "end": 1868.0,
+      "text": "Now this trade, if you refer back to the original notes, this trade is a cross sector constituent spread trade."
+    },
+    {
+      "start": 1869.0,
+      "end": 1872.0,
+      "text": "So slightly higher risk than other spread trades."
+    },
+    {
+      "start": 1873.0,
+      "end": 1892.0,
+      "text": "So if we're looking at going long Chevron and short AstraZeneca, we're looking at going long a cyclical stock versus short a defensive stock because Chevron's in the oil sector and AstraZeneca is in the pharmaceutical sector."
+    },
+    {
+      "start": 1893.0,
+      "end": 1904.0,
+      "text": "So the oil sector, Chevron's earnings, so Chevron being in the oil sector, Chevron's earnings are more sensitive to the business cycle than AstraZeneca's."
+    },
+    {
+      "start": 1905.0,
+      "end": 1919.0,
+      "text": "So if we're backing out what we're looking at in terms of our views here, at this stage we're clearly bullish on the world because we're leaning to being long cyclicals and short defensives."
+    },
+    {
+      "start": 1920.0,
+      "end": 1924.0,
+      "text": "So if we were bearish on the world, we wouldn't be looking at this trade at all, we'd be looking at it the other way around."
+    },
+    {
+      "start": 1925.0,
+      "end": 1938.0,
+      "text": "So we've got the betas here where we've given Chevron a beta of 1.32 and AstraZeneca a beta of 1.12."
+    },
+    {
+      "start": 1939.0,
+      "end": 1942.0,
+      "text": "These aren't the actual betas of Chevron and AstraZeneca."
+    },
+    {
+      "start": 1943.0,
+      "end": 1949.0,
+      "text": "The actual betas you can get online or in the download section in the spreadsheets that we've provided."
+    },
+    {
+      "start": 1950.0,
+      "end": 1956.0,
+      "text": "We've given fictional betas for illustrative purposes here, so don't worry about it."
+    },
+    {
+      "start": 1957.0,
+      "end": 1959.0,
+      "text": "You can get the real betas online or in the download section."
+    },
+    {
+      "start": 1960.0,
+      "end": 1962.0,
+      "text": "We're just using these betas for illustrative purposes."
+    },
+    {
+      "start": 1963.0,
+      "end": 1970.0,
+      "text": "So we've given Chevron a beta of 1.32 and AstraZeneca a beta of 1.12."
+    },
+    {
+      "start": 1972.0,
+      "end": 1977.0,
+      "text": "And the beta ratio between Chevron and AstraZeneca is 1.1786."
+    },
+    {
+      "start": 1978.0,
+      "end": 1980.0,
+      "text": "So what does that mean?"
+    },
+    {
+      "start": 1981.0,
+      "end": 1995.0,
+      "text": "It just means that for every one unit move in the market, Chevron moves 1.1786 times more than AstraZeneca."
+    },
+    {
+      "start": 1996.0,
+      "end": 1997.0,
+      "text": "That's all it means."
+    },
+    {
+      "start": 1998.0,
+      "end": 2017.0,
+      "text": "In terms of committing capital, what that means is that for every dollar that you put in to Chevron, going long Chevron, you have to short 1.1786 times that $1."
+    },
+    {
+      "start": 2018.0,
+      "end": 2027.0,
+      "text": "to hedge out the market risk in AstraZeneca because AstraZeneca moves a lot less than Chevron."
+    },
+    {
+      "start": 2028.0,
+      "end": 2032.0,
+      "text": "So let's have a look at this in terms of dollar commitment."
+    },
+    {
+      "start": 2033.0,
+      "end": 2054.0,
+      "text": "So let's say, for example, you have a restriction in your portfolio of $20,000 in one spread trade, meaning that your self-imposed restriction for any one spread trade is $20,000."
+    },
+    {
+      "start": 2055.0,
+      "end": 2068.0,
+      "text": "So if you committed $10,000 long to Chevron, you would have to short, according to the beta ratio, $11,786 of AstraZeneca."
+    },
+    {
+      "start": 2069.0,
+      "end": 2074.0,
+      "text": "Well, if you did that, this would just take you over your limit of $20,000."
+    },
+    {
+      "start": 2075.0,
+      "end": 2078.0,
+      "text": "So your exposure would be 21.786."
+    },
+    {
+      "start": 2079.0,
+      "end": 2082.0,
+      "text": "And that breaks your limit, so you can't do that."
+    },
+    {
+      "start": 2083.0,
+      "end": 2107.0,
+      "text": "So you would have to actually short, sorry, you would have to actually go long less than $10,000 in order to meet your self-imposed exposure limit of $20,000."
+    },
+    {
+      "start": 2108.0,
+      "end": 2122.0,
+      "text": "So to make sure that you're within your limit, you would have to go long $9,180 of Chevron and short $10,819 of AstraZeneca."
+    },
+    {
+      "start": 2123.0,
+      "end": 2126.0,
+      "text": "Now, why are we doing this? Why are we hedging out market risk?"
+    },
+    {
+      "start": 2127.0,
+      "end": 2129.0,
+      "text": "Well, let's think about this a bit more in depth."
+    },
+    {
+      "start": 2130.0,
+      "end": 2135.0,
+      "text": "So imagine if the market now fell 10%."
+    },
+    {
+      "start": 2136.0,
+      "end": 2139.0,
+      "text": "Let's say we had this trade-on and the market dropped 10%."
+    },
+    {
+      "start": 2140.0,
+      "end": 2148.0,
+      "text": "So Chevron would drop 13.2% and AstraZeneca would drop 11.2%."
+    },
+    {
+      "start": 2149.0,
+      "end": 2161.0,
+      "text": "So in that situation, imagine if you were just long $10,000 of Chevron and short $10,000 of AstraZeneca."
+    },
+    {
+      "start": 2164.0,
+      "end": 2169.0,
+      "text": "Well, all that would happen is you would lose 2% on that trade."
+    },
+    {
+      "start": 2170.0,
+      "end": 2177.0,
+      "text": "So you've basically got in that situation an implied market risk."
+    },
+    {
+      "start": 2177.0,
+      "end": 2182.0,
+      "text": "Because if the market drops 10%, you're going to actually lose money on this trade."
+    },
+    {
+      "start": 2183.0,
+      "end": 2192.0,
+      "text": "Because Chevron moves for every one unit that the market moves, Chevron moves more than AstraZeneca."
+    },
+    {
+      "start": 2193.0,
+      "end": 2194.0,
+      "text": "So what do you actually have to do?"
+    },
+    {
+      "start": 2196.0,
+      "end": 2202.0,
+      "text": "Well, what you have to do is actually commit more capital on the side of AstraZeneca."
+    },
+    {
+      "start": 2203.0,
+      "end": 2210.0,
+      "text": "So now imagine if you use the beta ratio and you hedge out this market risk."
+    },
+    {
+      "start": 2211.0,
+      "end": 2219.0,
+      "text": "Well, if the market fell 10%, then you would have less money committed on the side of Chevron"
+    },
+    {
+      "start": 2220.0,
+      "end": 2227.0,
+      "text": "and more money committed on the side of AstraZeneca versus the example of $10,000 long and $10,000 short."
+    },
+    {
+      "start": 2228.0,
+      "end": 2237.0,
+      "text": "Which means if the market dropped by 10%, even though Chevron would drop by 13.2%"
+    },
+    {
+      "start": 2238.0,
+      "end": 2243.0,
+      "text": "and AstraZeneca would drop by 11.2%, you wouldn't lose any money on that trade."
+    },
+    {
+      "start": 2244.0,
+      "end": 2253.0,
+      "text": "So on that move, you would actually come out, roughly speaking, you would come out not making or losing any money."
+    },
+    {
+      "start": 2254.0,
+      "end": 2258.0,
+      "text": "Now the obvious question is, well, what happens when the market goes up?"
+    },
+    {
+      "start": 2259.0,
+      "end": 2262.0,
+      "text": "Well, when the market goes up, it's the same situation."
+    },
+    {
+      "start": 2263.0,
+      "end": 2273.0,
+      "text": "If the market went up 10%, Chevron would go up by 13.2% and AstraZeneca would go up by 11.2%."
+    },
+    {
+      "start": 2274.0,
+      "end": 2278.0,
+      "text": "And you wouldn't make or lose any money on the trade."
+    },
+    {
+      "start": 2279.0,
+      "end": 2281.0,
+      "text": "But that's missing the point."
+    },
+    {
+      "start": 2282.0,
+      "end": 2290.0,
+      "text": "Because what you're actually doing here is you're hedging out the market risk and you're isolating sector and stock risk."
+    },
+    {
+      "start": 2291.0,
+      "end": 2298.0,
+      "text": "So whether the market goes down 10% or goes up 10%, it doesn't matter."
+    },
+    {
+      "start": 2299.0,
+      "end": 2304.0,
+      "text": "Because the whole point of this trade is that you're hedging out the market risk."
+    },
+    {
+      "start": 2305.0,
+      "end": 2317.0,
+      "text": "So the statement that you're making here when you put this trade on is that regardless of what the market does, Chevron is just going to outperform AstraZeneca over time."
+    },
+    {
+      "start": 2318.0,
+      "end": 2339.0,
+      "text": "So if you're bullish on the world, and in this example we're assuming that you are, where your world view is bullish and you're leaning into buying cyclicals and shorting defensives, the obvious question is, well, if you beat a hedge and the market goes up, then why would you do that?"
+    },
+    {
+      "start": 2340.0,
+      "end": 2341.0,
+      "text": "Well, let's put it this way."
+    },
+    {
+      "start": 2342.0,
+      "end": 2347.0,
+      "text": "If you wanted to have a market bet, then you could just buy the market."
+    },
+    {
+      "start": 2348.0,
+      "end": 2350.0,
+      "text": "So you just go and buy the S&P 500."
+    },
+    {
+      "start": 2351.0,
+      "end": 2362.0,
+      "text": "But in this example, what you're actually doing is hedging out the market risk so on a day-to-day basis you don't make or lose any money on this trade."
+    },
+    {
+      "start": 2363.0,
+      "end": 2381.0,
+      "text": "But then when the news comes out at some point that one of Chevron's competitors has guided up their earnings and Chevron goes up in sympathy, well, Chevron is just going to go up and AstraZeneca is going to do nothing."
+    },
+    {
+      "start": 2382.0,
+      "end": 2398.0,
+      "text": "And imagine, for example, if the news came out that Chevron was guiding up their earnings, well, Chevron themselves would just go up, let's say, 5%, 10%, and AstraZeneca just wouldn't do anything."
+    },
+    {
+      "start": 2399.0,
+      "end": 2415.0,
+      "text": "All you're doing here is hedging out the market risk so that on a day-to-day basis, on a normal day in the stock market, when nothing is really happening and there's no news out, you don't make or lose any money."
+    },
+    {
+      "start": 2416.0,
+      "end": 2428.0,
+      "text": "But also if there's an external shock, because you're beta hedged, you should come out of that situation not making or losing any money."
+    },
+    {
+      "start": 2429.0,
+      "end": 2431.0,
+      "text": "So that's why we beta hedge."
+    },
+    {
+      "start": 2431.0,
+      "end": 2437.0,
+      "text": "That's why we hedge out market risk so we can isolate the risk that we want to be exposed to."
+    },
+    {
+      "start": 2438.0,
+      "end": 2450.0,
+      "text": "As in this example, we want to be exposed to cyclicality on the long side and we want to be exposed to being short non-cyclicality."
+    },
+    {
+      "start": 2451.0,
+      "end": 2459.0,
+      "text": "So when the fundamental news flow comes through that Chevron and that Chevron's earnings are going higher,"
+    },
+    {
+      "start": 2460.0,
+      "end": 2467.0,
+      "text": "we're exposed to that but in the process we're actually hedging out the overall market risk."
+    },
+    {
+      "start": 2468.0,
+      "end": 2472.0,
+      "text": "So you should be able to understand that it's a fairly straightforward situation."
+    },
+    {
+      "start": 2473.0,
+      "end": 2483.0,
+      "text": "Now what we can do is, for example, start having a look at an example of where the beta ratio is very, very high."
+    },
+    {
+      "start": 2484.0,
+      "end": 2488.0,
+      "text": "So let's have a look, for example, if we change the beta ratio to 3."
+    },
+    {
+      "start": 2489.0,
+      "end": 2496.0,
+      "text": "Well, when we change the beta ratio to 3 or the beta ratio becomes very high,"
+    },
+    {
+      "start": 2497.0,
+      "end": 2509.0,
+      "text": "the gross exposure goes way out, way out away from our self-imposed $20,000 spread trade limit as our example."
+    },
+    {
+      "start": 2510.0,
+      "end": 2513.0,
+      "text": "So what would we have to do?"
+    },
+    {
+      "start": 2516.0,
+      "end": 2532.0,
+      "text": "Well, we'd have to bring this right in to $5,000 long in Chevron and short $15,000 of AstraZeneca."
+    },
+    {
+      "start": 2533.0,
+      "end": 2540.0,
+      "text": "Now when you have very high beta ratios, you really have to start asking yourself the question."
+    },
+    {
+      "start": 2541.0,
+      "end": 2545.0,
+      "text": "You know, on a very, very high beta ratio, is this really an effective trade?"
+    },
+    {
+      "start": 2546.0,
+      "end": 2555.0,
+      "text": "Because for every $1 of capital I commit on the long side, I have to commit $3 of capital on the short side."
+    },
+    {
+      "start": 2556.0,
+      "end": 2569.0,
+      "text": "That just means your short is extremely capital hungry, meaning that this might not actually be a trade where your capital is best used."
+    },
+    {
+      "start": 2570.0,
+      "end": 2578.0,
+      "text": "So what you're better off doing is probably finding trades where the beta ratio is actually lower."
+    },
+    {
+      "start": 2579.0,
+      "end": 2588.0,
+      "text": "And I think you're probably better off making sure that your beta ratio is below 2."
+    },
+    {
+      "start": 2589.0,
+      "end": 2600.0,
+      "text": "You should really be questioning yourself or questioning a trade in terms of capital commitment that is, that has a beta ratio above 2."
+    },
+    {
+      "start": 2601.0,
+      "end": 2615.0,
+      "text": "Because it just means that the short or the hedge is extremely capital hungry, meaning that the stock on the short side requires a lot of capital in order to hedge out market risk."
+    },
+    {
+      "start": 2616.0,
+      "end": 2629.0,
+      "text": "There should be more effective shorts or more effective hedges out there that you can commit capital to in order to hedge out the market risk."
+    },
+    {
+      "start": 2630.0,
+      "end": 2634.0,
+      "text": "So you should always be questioning a big or large beta ratio."
+    },
+    {
+      "start": 2635.0,
+      "end": 2639.0,
+      "text": "So that's the simple example."
+    },
+    {
+      "start": 2640.0,
+      "end": 2663.0,
+      "text": "It's not too hard to understand what you should be doing here in terms of your processes is going through the idea generation process, getting your trades onto your watch list, as we've seen, and managing your watch list properly and then deciding when you want to put on your trades."
+    },
+    {
+      "start": 2664.0,
+      "end": 2666.0,
+      "text": "Whether you want to hedge out market risk."
+    },
+    {
+      "start": 2667.0,
+      "end": 2671.0,
+      "text": "If you want to hedge out market risk, how much of the market risk you want to hedge out."
+    },
+    {
+      "start": 2672.0,
+      "end": 2675.0,
+      "text": "If you want to hedge out all of the market risk, that's totally fine."
+    },
+    {
+      "start": 2676.0,
+      "end": 2677.0,
+      "text": "It's all about choices."
+    },
+    {
+      "start": 2678.0,
+      "end": 2691.0,
+      "text": "And if you've got a net restriction in terms of market exposure in your portfolio, then you know that you're going to have to fall inside that parameter in order to have particular trades on."
+    },
+    {
+      "start": 2692.0,
+      "end": 2710.0,
+      "text": "So just remember as well that having a beta ratio above 2, you need to question that really because it might not be an effective hedge or an effective way to hedge out the market risk."
+    },
+    {
+      "start": 2711.0,
+      "end": 2714.0,
+      "text": "So that's the simple example."
+    },
+    {
+      "start": 2715.0,
+      "end": 2719.0,
+      "text": "Let's now move on to the more complicated example of theme betas."
+    },
+    {
+      "start": 2720.0,
+      "end": 2729.0,
+      "text": "Okay, so the example we're going to look at here is a slightly more complicated example of how we use beta to hedge out market risk."
+    },
+    {
+      "start": 2730.0,
+      "end": 2742.0,
+      "text": "What we're looking at here is a theme or a trend that you may have identified and you want to actually play this theme in a diversified way."
+    },
+    {
+      "start": 2743.0,
+      "end": 2754.0,
+      "text": "So not just using one stock long and one stock short, you want to actually represent this theme or trend by having two stocks long and two stocks short."
+    },
+    {
+      "start": 2755.0,
+      "end": 2761.0,
+      "text": "And the theme we're looking at here is discretionary versus essential retail spend."
+    },
+    {
+      "start": 2762.0,
+      "end": 2768.0,
+      "text": "So we're looking at high-end retailers, long and short low-end retailers."
+    },
+    {
+      "start": 2769.0,
+      "end": 2776.0,
+      "text": "And we're looking at how to hedge out market risk in this trade."
+    },
+    {
+      "start": 2777.0,
+      "end": 2784.0,
+      "text": "So we're looking at long Macy's and Dill odds and short target and family dollar."
+    },
+    {
+      "start": 2785.0,
+      "end": 2789.0,
+      "text": "So a couple of things here."
+    },
+    {
+      "start": 2790.0,
+      "end": 2799.0,
+      "text": "If we're looking at going long discretionary versus essential retail spend or long high-end retailers versus short low-end retailers."
+    },
+    {
+      "start": 2800.0,
+      "end": 2805.0,
+      "text": "We're probably assuming here, well we are assuming here, that our world view is bullish."
+    },
+    {
+      "start": 2806.0,
+      "end": 2815.0,
+      "text": "So we're assuming that at this stage we've gone through all the leading indicators and they're pointing to GDP growth."
+    },
+    {
+      "start": 2816.0,
+      "end": 2820.0,
+      "text": "And we're expecting high GDP growth at some point in the future."
+    },
+    {
+      "start": 2821.0,
+      "end": 2829.0,
+      "text": "And now we're looking at the retail sector and deciding how we express that view across the retail sector."
+    },
+    {
+      "start": 2830.0,
+      "end": 2844.0,
+      "text": "And if we're looking at long two stocks in the retail sector and short two stocks in the retail sector, essentially if we hedge out market risk, we're also hedging out sector risk."
+    },
+    {
+      "start": 2845.0,
+      "end": 2850.0,
+      "text": "So what we're looking at here is an intra-sector spread trade."
+    },
+    {
+      "start": 2851.0,
+      "end": 2860.0,
+      "text": "So an intra-sector constituent spread trade, the ones that we looked at earlier in the presentation in previous videos."
+    },
+    {
+      "start": 2861.0,
+      "end": 2873.0,
+      "text": "So let's have a look at this trade and try to work out how we hedge out the market risk when we've got two stocks long and two stocks short."
+    },
+    {
+      "start": 2874.0,
+      "end": 2886.0,
+      "text": "So let's assume in this portfolio we've got a gross exposure of $100,000 and we have a limit of $20,000 per theme."
+    },
+    {
+      "start": 2887.0,
+      "end": 2892.0,
+      "text": "So a self-imposed limit where we can't go over $20,000 for one theme."
+    },
+    {
+      "start": 2893.0,
+      "end": 2898.0,
+      "text": "And what we've done here is we've assigned beta values to the longs and the shorts."
+    },
+    {
+      "start": 2899.0,
+      "end": 2902.0,
+      "text": "These beta values are not the real beta values."
+    },
+    {
+      "start": 2903.0,
+      "end": 2908.0,
+      "text": "These are fictional values that we've assigned for illustrative purposes."
+    },
+    {
+      "start": 2908.0,
+      "end": 2916.0,
+      "text": "So if you wanted to get the real ones, just go online, get the real ones or get them in the spreadsheets from the downloads areas in the videos."
+    },
+    {
+      "start": 2918.0,
+      "end": 2925.0,
+      "text": "So we're looking at four stocks here, Macy's and Dillard's on the long side, Target and Family Dollar on the short side."
+    },
+    {
+      "start": 2927.0,
+      "end": 2932.0,
+      "text": "We've assigned to Macy's a beta of 1.01 and Dillard's 1.27."
+    },
+    {
+      "start": 2933.0,
+      "end": 2937.0,
+      "text": "Target 0.57 and Family Dollar 0.32."
+    },
+    {
+      "start": 2938.0,
+      "end": 2950.0,
+      "text": "And the first thing we're going to do is work out how we apportion this money to the long side of the portfolio and the short side of the portfolio."
+    },
+    {
+      "start": 2951.0,
+      "end": 2960.0,
+      "text": "So what we do is we first work out the gross beta, the total beta by adding up all of these betas."
+    },
+    {
+      "start": 2961.0,
+      "end": 2971.0,
+      "text": "So we get to 3.17 and we also add up the beta of the long side and we get 2.28 and the beta of the short side and we get 0.89."
+    },
+    {
+      "start": 2972.0,
+      "end": 2985.0,
+      "text": "So intuitively, if we're going to apportion this money, what we're seeing is that the beta on the long side is a lot higher than the beta on the short side."
+    },
+    {
+      "start": 2986.0,
+      "end": 2996.0,
+      "text": "Which kind of makes sense because if we're looking at cyclicality on the long side or more cyclical stocks on the long side than on the short side,"
+    },
+    {
+      "start": 2997.0,
+      "end": 3004.0,
+      "text": "you would expect higher betas on the long side because the stocks, given that the earnings are more sensitive to the business cycle,"
+    },
+    {
+      "start": 3005.0,
+      "end": 3015.0,
+      "text": "the stocks are probably going to move more given a one unit move in the market than the stocks on the short side."
+    },
+    {
+      "start": 3016.0,
+      "end": 3019.0,
+      "text": "So that's the first thing."
+    },
+    {
+      "start": 3021.0,
+      "end": 3031.0,
+      "text": "When we're going to apportion this money, if we're going to apportion this money, it's very obvious that the majority of this money has to be apportioned on the short side"
+    },
+    {
+      "start": 3032.0,
+      "end": 3037.0,
+      "text": "and the minority of this money has to be apportioned on the long side."
+    },
+    {
+      "start": 3038.0,
+      "end": 3041.0,
+      "text": "But how much on either side? Well, we can work it out accurately."
+    },
+    {
+      "start": 3042.0,
+      "end": 3047.0,
+      "text": "So the next thing we do is we work out in column F."
+    },
+    {
+      "start": 3049.0,
+      "end": 3055.0,
+      "text": "We work out the beta contributions or weightings, percentage weightings of each beta."
+    },
+    {
+      "start": 3057.0,
+      "end": 3068.0,
+      "text": "So Macy's, a beta of 1.01, divided by the total beta of 3.17, gives 32%."
+    },
+    {
+      "start": 3069.0,
+      "end": 3075.0,
+      "text": "Dillard's 40%, target 18%, family dollar 10%."
+    },
+    {
+      "start": 3076.0,
+      "end": 3088.0,
+      "text": "We add up the beta or beta weightings for the long side to get the beta weighting of the long side to the total beta, which is 72%."
+    },
+    {
+      "start": 3089.0,
+      "end": 3090.0,
+      "text": "And we do the same on the short side."
+    },
+    {
+      "start": 3091.0,
+      "end": 3095.0,
+      "text": "We add up the weightings of the betas to the total beta."
+    },
+    {
+      "start": 3095.0,
+      "end": 3105.0,
+      "text": "And we get the short side contribution of beta to the total beta."
+    },
+    {
+      "start": 3106.0,
+      "end": 3107.0,
+      "text": "And this is 28%."
+    },
+    {
+      "start": 3108.0,
+      "end": 3116.0,
+      "text": "So we've got 72% beta contribution from the long side, and we've got 28% beta contribution from the short side."
+    },
+    {
+      "start": 3117.0,
+      "end": 3122.0,
+      "text": "Now, if we're apportioning this money, the way we apportion it is actually the inverse of these betas."
+    },
+    {
+      "start": 3123.0,
+      "end": 3131.0,
+      "text": "So we flip them, and we apportion our money 28% on the long side and 72% on the short side."
+    },
+    {
+      "start": 3132.0,
+      "end": 3133.0,
+      "text": "So that's the first thing we do."
+    },
+    {
+      "start": 3134.0,
+      "end": 3143.0,
+      "text": "We've worked out, out of this $20,000, how much of it gets apportioned to the long side and how much gets apportioned to the short side."
+    },
+    {
+      "start": 3144.0,
+      "end": 3150.0,
+      "text": "Well, what gets apportioned to each side is the inverse of the weightings of their betas."
+    },
+    {
+      "start": 3153.0,
+      "end": 3162.0,
+      "text": "And that's pretty obvious, because if we're going to hedge out market risk, then clearly, because the short side moves a lot less than the long side,"
+    },
+    {
+      "start": 3163.0,
+      "end": 3168.0,
+      "text": "we have to apportion more of our money on the short side than we do on the long side."
+    },
+    {
+      "start": 3169.0,
+      "end": 3177.0,
+      "text": "Now, the next thing we have to do, we have to work out, for example, so if we stay on the long side for a second,"
+    },
+    {
+      "start": 3178.0,
+      "end": 3185.0,
+      "text": "we have to work out, out of the 28% of the $20,000 that we've apportioned on the long side,"
+    },
+    {
+      "start": 3186.0,
+      "end": 3195.0,
+      "text": "what percentage of that 28% is apportioned to Macy's, and what percentage is apportioned to Dillard's?"
+    },
+    {
+      "start": 3196.0,
+      "end": 3200.0,
+      "text": "Well, let's use Macy's as an example, and we'll show you how this is done."
+    },
+    {
+      "start": 3201.0,
+      "end": 3209.0,
+      "text": "So the first thing we do is we work out the contribution of the Macy's beta to the long beta of the trade."
+    },
+    {
+      "start": 3210.0,
+      "end": 3215.0,
+      "text": "So we divide 1.01 by 2.28, and we get 44%."
+    },
+    {
+      "start": 3216.0,
+      "end": 3226.0,
+      "text": "With Dillard's, we divide 1.27 by 2.28, and we get 56%."
+    },
+    {
+      "start": 3227.0,
+      "end": 3235.0,
+      "text": "And then we work out, so let's have a look at the formula bar here, H9 times G11."
+    },
+    {
+      "start": 3236.0,
+      "end": 3242.0,
+      "text": "We work out 44% of the 28%, which gives us 12.44%."
+    },
+    {
+      "start": 3243.0,
+      "end": 3244.0,
+      "text": "That's for Macy's."
+    },
+    {
+      "start": 3245.0,
+      "end": 3252.0,
+      "text": "And for Dillard's, we work out 55%, for 56% of the 28%."
+    },
+    {
+      "start": 3253.0,
+      "end": 3262.0,
+      "text": "And then, when we're apportioning our money on the long side, we then have to flip and do the inverse again"
+    },
+    {
+      "start": 3263.0,
+      "end": 3270.0,
+      "text": "the percentage that we have to apportion in Macy's and Dillard's."
+    },
+    {
+      "start": 3270.0,
+      "end": 3284.0,
+      "text": "So, in Macy's, we have to apportion 15.64% of our money, and in Dillard's, we have to apportion 12.44% of our money."
+    },
+    {
+      "start": 3285.0,
+      "end": 3300.0,
+      "text": "And this 15.64% and this 12.44% is the total amount of the $20,000 that's apportioned to the whole trade."
+    },
+    {
+      "start": 3301.0,
+      "end": 3310.0,
+      "text": "So, if we look at the short side, we'll see that, if we go through the same exercise, because Family Dollar has the lowest beta,"
+    },
+    {
+      "start": 3311.0,
+      "end": 3320.0,
+      "text": "when we repeat the same process on the short side, Family Dollar, 46% of our money has to be exposed to Family Dollar,"
+    },
+    {
+      "start": 3321.0,
+      "end": 3324.0,
+      "text": "26% has to be exposed to Target."
+    },
+    {
+      "start": 3327.0,
+      "end": 3338.0,
+      "text": "And when we add up on the long side, the percentages in the way that our money is apportioned, we get the amount of money that is apportioned to the long side."
+    },
+    {
+      "start": 3339.0,
+      "end": 3359.0,
+      "text": "And if we add up the percentages in the way that our money is apportioned on the short side, we get the percentage, 72%, we get the percentage of our money that's apportioned to the short side, making 100%."
+    },
+    {
+      "start": 3360.0,
+      "end": 3372.0,
+      "text": "So, we get the percentage of our money that's apportioned to each position."
+    },
+    {
+      "start": 3374.0,
+      "end": 3378.0,
+      "text": "Then, we work out this in dollar terms."
+    },
+    {
+      "start": 3378.0,
+      "end": 3387.0,
+      "text": "So, we're working out, out of the 20,000, so 15.64% of the 20,000, so just over $3,000."
+    },
+    {
+      "start": 3388.0,
+      "end": 3391.0,
+      "text": "In Dillard's, $2,487."
+    },
+    {
+      "start": 3392.0,
+      "end": 3397.0,
+      "text": "Total dollars exposed on the long side, $5,615."
+    },
+    {
+      "start": 3399.0,
+      "end": 3408.0,
+      "text": "On the short side, in Target, we're apportioning $5,172."
+    },
+    {
+      "start": 3410.0,
+      "end": 3419.0,
+      "text": "And in Family Dollar, we're apportioning, out of the $20,000, $9,213."
+    },
+    {
+      "start": 3420.0,
+      "end": 3424.0,
+      "text": "So, in total, $14,385."
+    },
+    {
+      "start": 3425.0,
+      "end": 3432.0,
+      "text": "So, that works out to be 72% and 28%."
+    },
+    {
+      "start": 3435.0,
+      "end": 3441.0,
+      "text": "We take the prices of each stock, and this tells us how many shares that we have to buy and sell."
+    },
+    {
+      "start": 3442.0,
+      "end": 3451.0,
+      "text": "And then, we're also working out here the percentage size of these positions in our portfolio."
+    },
+    {
+      "start": 3452.0,
+      "end": 3454.0,
+      "text": "So, this is just K9."
+    },
+    {
+      "start": 3455.0,
+      "end": 3461.0,
+      "text": "So, this is $3,128 divided by the $100,000."
+    },
+    {
+      "start": 3462.0,
+      "end": 3465.0,
+      "text": "And we do this for each position, and the long side, and the short side."
+    },
+    {
+      "start": 3466.0,
+      "end": 3471.0,
+      "text": "So, each position on the long side, and the short side, and the total long side, and the short side."
+    },
+    {
+      "start": 3474.0,
+      "end": 3485.0,
+      "text": "So, that's how you work out, from your beta values, how you hedge out the market risk in a theme that has two longs and two shorts."
+    },
+    {
+      "start": 3486.0,
+      "end": 3493.0,
+      "text": "Now, you can get more complicated if you want, where you have three longs and three shorts, four longs and four shorts."
+    },
+    {
+      "start": 3494.0,
+      "end": 3496.0,
+      "text": "But, I wouldn't advise doing that to begin with."
+    },
+    {
+      "start": 3497.0,
+      "end": 3509.0,
+      "text": "So, what you should probably be doing when you start out is to try and make money just doing spread trades, one stock long, one stock short."
+    },
+    {
+      "start": 3510.0,
+      "end": 3516.0,
+      "text": "And then, when you're making money, graduate to doing two stocks long and two stocks short."
+    },
+    {
+      "start": 3517.0,
+      "end": 3522.0,
+      "text": "And if you can make money doing this, then you can get more complicated later on."
+    },
+    {
+      "start": 3523.0,
+      "end": 3527.0,
+      "text": "You can get a little bit smarter and a bit more cleverer once you're making money."
+    },
+    {
+      "start": 3528.0,
+      "end": 3531.0,
+      "text": "So, you can see this is a little bit complicated."
+    },
+    {
+      "start": 3532.0,
+      "end": 3534.0,
+      "text": "You've got this spreadsheet in the downloads area."
+    },
+    {
+      "start": 3535.0,
+      "end": 3541.0,
+      "text": "So, just download it and have a go at reverse engineering the sheet yourself."
+    },
+    {
+      "start": 3542.0,
+      "end": 3544.0,
+      "text": "It's not that difficult to get used to."
+    },
+    {
+      "start": 3545.0,
+      "end": 3564.0,
+      "text": "So, these trades are quite typical trades where if you have an idea, but you don't want to have your exposure in just long one stock and short one stock, you can actually represent the same idea by diversifying a little bit into two longs and two shorts."
+    },
+    {
+      "start": 3565.0,
+      "end": 3575.0,
+      "text": "So, that concludes hedging out market risk using beta across two longs and two shorts."
+    },
+    {
+      "start": 3576.0,
+      "end": 3580.0,
+      "text": "Now, we're going to move on to the next video and I'll see you in the next video."
+    },
+    {
+      "start": 3582.0,
+      "end": 3583.0,
+      "text": "Okay, welcome back."
+    },
+    {
+      "start": 3583.0,
+      "end": 3607.0,
+      "text": "So, that was an introduction to beta and what we looked at there was beta across two stocks and beta across a theme, as in a theme that you've identified that you believe that will happen as an overall idea or trend within a certain industry."
+    },
+    {
+      "start": 3607.0,
+      "end": 3618.0,
+      "text": "And how you can represent that theme and hedge out the market risk at the same time is by having multiple longs and multiple shorts representing the theme."
+    },
+    {
+      "start": 3619.0,
+      "end": 3621.0,
+      "text": "And you hedge out market risk in the process."
+    },
+    {
+      "start": 3622.0,
+      "end": 3627.0,
+      "text": "And if you mechanically want to do that, then just refer to that spreadsheet and go through the steps."
+    },
+    {
+      "start": 3628.0,
+      "end": 3632.0,
+      "text": "With two single stocks, it's very straightforward."
+    },
+    {
+      "start": 3633.0,
+      "end": 3641.0,
+      "text": "We just take the beta and the beta ratio and this gives us our positioning and sizes that we must put on on either side of the trade."
+    },
+    {
+      "start": 3642.0,
+      "end": 3650.0,
+      "text": "Now, what we're going to do is do something that you may not think occurs immediately."
+    },
+    {
+      "start": 3651.0,
+      "end": 3657.0,
+      "text": "What we're going to do is have a look at how we hedge out currency risk on a trade across two geographies."
+    },
+    {
+      "start": 3658.0,
+      "end": 3668.0,
+      "text": "So, for example, if you take a position in the United Kingdom and take a position in the United States, you're actually going to have an implied currency exposure."
+    },
+    {
+      "start": 3669.0,
+      "end": 3672.0,
+      "text": "And what we're going to look at is how we hedge this exposure out."
+    },
+    {
+      "start": 3673.0,
+      "end": 3680.0,
+      "text": "Then we'll do a full summary of the risk management parameters that we've looked at for the portfolio."
+    },
+    {
+      "start": 3681.0,
+      "end": 3687.0,
+      "text": "But first, let's go over to the screen and I'll show you how you effectively hedge out currency risk."
+    },
+    {
+      "start": 3692.0,
+      "end": 3695.0,
+      "text": "OK, so welcome back to the computer screen."
+    },
+    {
+      "start": 3695.0,
+      "end": 3699.0,
+      "text": "What we're going to have a look at here is currency hedging."
+    },
+    {
+      "start": 3700.0,
+      "end": 3707.0,
+      "text": "And what you'll typically find when you do cross country spread trades."
+    },
+    {
+      "start": 3708.0,
+      "end": 3716.0,
+      "text": "So a spread trade where you have a long and a short in two different geographical regions with two different currencies."
+    },
+    {
+      "start": 3717.0,
+      "end": 3723.0,
+      "text": "What you'll find is that when you do these trades, you're going to end up with an implied currency risk."
+    },
+    {
+      "start": 3724.0,
+      "end": 3730.0,
+      "text": "So what we're going to look at first is just the idea of a currency as a spread trade."
+    },
+    {
+      "start": 3731.0,
+      "end": 3736.0,
+      "text": "We're just going to pop back into the watch list example, which you have in the downloads area."
+    },
+    {
+      "start": 3737.0,
+      "end": 3744.0,
+      "text": "And we're just going to go into the presentation and have a look at the one particular slide which explains currency risk."
+    },
+    {
+      "start": 3745.0,
+      "end": 3748.0,
+      "text": "So let's open up the watch list."
+    },
+    {
+      "start": 3750.0,
+      "end": 3756.0,
+      "text": "And this will be familiar to you where we have all of our trade ideas on the example watch list."
+    },
+    {
+      "start": 3757.0,
+      "end": 3767.0,
+      "text": "And if you scroll down, you'll see that we have a section for Forex and we also have a section for commodities, energy, metals and food."
+    },
+    {
+      "start": 3768.0,
+      "end": 3782.0,
+      "text": "First things first, we just need to get over this concept that a Forex trade is actually just a spread trade by default."
+    },
+    {
+      "start": 3783.0,
+      "end": 3786.0,
+      "text": "So a currency trade is a spread trade by default."
+    },
+    {
+      "start": 3787.0,
+      "end": 3800.0,
+      "text": "If you think about it, a currency trade is a spread trade because you can't actually buy a currency without selling another currency first."
+    },
+    {
+      "start": 3801.0,
+      "end": 3809.0,
+      "text": "So when you're putting your currency trades into your watch list, there is no long and there is no short price."
+    },
+    {
+      "start": 3810.0,
+      "end": 3811.0,
+      "text": "There is just one entry price."
+    },
+    {
+      "start": 3812.0,
+      "end": 3821.0,
+      "text": "So if we have a look at EURUSD for example, well, you can't buy dollars without selling euros first in this currency pair."
+    },
+    {
+      "start": 3822.0,
+      "end": 3823.0,
+      "text": "So the price is just the price."
+    },
+    {
+      "start": 3823.0,
+      "end": 3846.0,
+      "text": "And when you're putting and updating your spreadsheet with your currency pairs, your reference prices, when you're looking at them, you put them on your watch list just in the spread area here and correspondingly in the spread column here."
+    },
+    {
+      "start": 3847.0,
+      "end": 3861.0,
+      "text": "And then when you're updating the currency pair for the reference prices in the current situation, you put them in the current price here in the current spread."
+    },
+    {
+      "start": 3862.0,
+      "end": 3874.0,
+      "text": "So let's say, for example, EURUSD was on the watch list seven weeks ago."
+    },
+    {
+      "start": 3875.0,
+      "end": 3880.0,
+      "text": "Well, seven weeks ago, it was around 128, 129."
+    },
+    {
+      "start": 3881.0,
+      "end": 3887.0,
+      "text": "And we put it again in here as the reference price."
+    },
+    {
+      "start": 3887.0,
+      "end": 3888.0,
+      "text": "And then we have it here."
+    },
+    {
+      "start": 3889.0,
+      "end": 3894.0,
+      "text": "The current situation, which is EURUSD is trading at 131."
+    },
+    {
+      "start": 3895.0,
+      "end": 3897.0,
+      "text": "So you just update it in that way."
+    },
+    {
+      "start": 3898.0,
+      "end": 3900.0,
+      "text": "There is no long and there is no short entry."
+    },
+    {
+      "start": 3901.0,
+      "end": 3906.0,
+      "text": "That's just the price of buying dollars and selling euros to do so."
+    },
+    {
+      "start": 3907.0,
+      "end": 3908.0,
+      "text": "So that's the first thing."
+    },
+    {
+      "start": 3909.0,
+      "end": 3910.0,
+      "text": "Now we're going to look at currency hedging."
+    },
+    {
+      "start": 3910.0,
+      "end": 3923.0,
+      "text": "So what actually happens when you have a long position in a stock or an asset in one currency and a short position in a stock or an asset in another currency."
+    },
+    {
+      "start": 3924.0,
+      "end": 3926.0,
+      "text": "So they're denominated in different currencies."
+    },
+    {
+      "start": 3927.0,
+      "end": 3944.0,
+      "text": "Well, this comes into our portfolio construction parameters area where you're probably going to be setting this parameter in your portfolio by making the statement, well, if I do these trades, I should just hedge out my currency risk to begin with."
+    },
+    {
+      "start": 3945.0,
+      "end": 3951.0,
+      "text": "And it's fairly straightforward to understand and very easy to do on pretty much all brokerage platforms."
+    },
+    {
+      "start": 3952.0,
+      "end": 3962.0,
+      "text": "So instead of having a situation where you go longer stock and shorter stock in the same currency, we're now looking at doing it in two different currencies."
+    },
+    {
+      "start": 3963.0,
+      "end": 3967.0,
+      "text": "And what that implies is that you have a currency position."
+    },
+    {
+      "start": 3968.0,
+      "end": 3970.0,
+      "text": "So let's go through this example."
+    },
+    {
+      "start": 3971.0,
+      "end": 3986.0,
+      "text": "Let's say, for example, we wanted to buy £20,000 of Standard Chartered, which is an Asian bank with a listing in Asia, UK and in the United States."
+    },
+    {
+      "start": 3987.0,
+      "end": 3990.0,
+      "text": "But we wanted to do this in pounds in London."
+    },
+    {
+      "start": 3991.0,
+      "end": 4005.0,
+      "text": "So we're looking at buying £20,000 of Standard Chartered and going short the equivalent amount, £20,000 of Santander, the Spanish bank."
+    },
+    {
+      "start": 4006.0,
+      "end": 4018.0,
+      "text": "So Standards is actually denominated in sterling and Santander denominated in US dollars if we're trading the New York Stock Exchange listing."
+    },
+    {
+      "start": 4019.0,
+      "end": 4030.0,
+      "text": "Now, let's say the reference prices in the market are £17.22 for Standards in London."
+    },
+    {
+      "start": 4031.0,
+      "end": 4037.0,
+      "text": "And for Santander in New York, the reference price is $7.56."
+    },
+    {
+      "start": 4038.0,
+      "end": 4043.0,
+      "text": "And let's just assume that the sterling US dollar cable rate is one and a half."
+    },
+    {
+      "start": 4044.0,
+      "end": 4050.0,
+      "text": "So £20,000 worth of Santander is equivalent to $30,000."
+    },
+    {
+      "start": 4051.0,
+      "end": 4063.0,
+      "text": "Now, what happens is when we do a spread trade, the stock that we purchase, we have to pay for that purchase with the currency that we're purchasing it in."
+    },
+    {
+      "start": 4064.0,
+      "end": 4067.0,
+      "text": "And when we short a stock, we actually receive that currency."
+    },
+    {
+      "start": 4068.0,
+      "end": 4072.0,
+      "text": "Because when you're selling, you receive the money for selling the stock."
+    },
+    {
+      "start": 4073.0,
+      "end": 4076.0,
+      "text": "So what you end up with is an implied currency risk."
+    },
+    {
+      "start": 4077.0,
+      "end": 4084.0,
+      "text": "So in this example, if we buy Standard Chartered, we pay pounds for the stock."
+    },
+    {
+      "start": 4085.0,
+      "end": 4088.0,
+      "text": "And if we short Santander, we receive the US dollars."
+    },
+    {
+      "start": 4089.0,
+      "end": 4092.0,
+      "text": "Therefore, we end up receiving 30,000 US dollars."
+    },
+    {
+      "start": 4094.0,
+      "end": 4096.0,
+      "text": "And we're short £20,000."
+    },
+    {
+      "start": 4097.0,
+      "end": 4102.0,
+      "text": "So what you have to do to hedge out the currency risk here is you actually have to do three trades."
+    },
+    {
+      "start": 4103.0,
+      "end": 4106.0,
+      "text": "You have to buy Standard Chartered."
+    },
+    {
+      "start": 4107.0,
+      "end": 4109.0,
+      "text": "You have to short Santander."
+    },
+    {
+      "start": 4110.0,
+      "end": 4116.0,
+      "text": "And then you have to buy £20,000 versus US dollar to hedge out the currency risk."
+    },
+    {
+      "start": 4117.0,
+      "end": 4119.0,
+      "text": "So you do three trades in total."
+    },
+    {
+      "start": 4120.0,
+      "end": 4121.0,
+      "text": "And you do them all at the same time."
+    },
+    {
+      "start": 4122.0,
+      "end": 4124.0,
+      "text": "Now, why is this a risk?"
+    },
+    {
+      "start": 4125.0,
+      "end": 4130.0,
+      "text": "Well, simply because if, for example, the spread moves 10% in our favour,"
+    },
+    {
+      "start": 4131.0,
+      "end": 4140.0,
+      "text": "but the currency moves 10% against us during the lifetime that we have this spread on,"
+    },
+    {
+      "start": 4141.0,
+      "end": 4144.0,
+      "text": "then when we unwind the spread at the same time,"
+    },
+    {
+      "start": 4145.0,
+      "end": 4149.0,
+      "text": "so when we actually come to trade out of the spread,"
+    },
+    {
+      "start": 4150.0,
+      "end": 4153.0,
+      "text": "so selling Standard Chartered and buying back Santander,"
+    },
+    {
+      "start": 4154.0,
+      "end": 4156.0,
+      "text": "if the currency has moved against us,"
+    },
+    {
+      "start": 4157.0,
+      "end": 4159.0,
+      "text": "that just means we won't actually make any money."
+    },
+    {
+      "start": 4160.0,
+      "end": 4164.0,
+      "text": "So what you have to do is actually just hedge out this currency risk right at the beginning."
+    },
+    {
+      "start": 4165.0,
+      "end": 4167.0,
+      "text": "So if the spread does move in your favour,"
+    },
+    {
+      "start": 4168.0,
+      "end": 4174.0,
+      "text": "the currency move doesn't cancel out the move in the spread."
+    },
+    {
+      "start": 4175.0,
+      "end": 4177.0,
+      "text": "So that's pretty straightforward."
+    },
+    {
+      "start": 4178.0,
+      "end": 4183.0,
+      "text": "If you're doing this, just make sure that you're aware of the currency risk"
+    },
+    {
+      "start": 4184.0,
+      "end": 4189.0,
+      "text": "and make sure that if you don't want to have that risk that you just hedge it out."
+    },
+    {
+      "start": 4190.0,
+      "end": 4192.0,
+      "text": "And you can do that very, very easily."
+    },
+    {
+      "start": 4192.0,
+      "end": 4194.0,
+      "text": "You just work out what your currency exposure is."
+    },
+    {
+      "start": 4195.0,
+      "end": 4203.0,
+      "text": "So what you're paying for, what currency you're paying in and what currency you're receiving,"
+    },
+    {
+      "start": 4204.0,
+      "end": 4209.0,
+      "text": "and then do the opposite trade and just hedge it out and do all three of the trades at once."
+    },
+    {
+      "start": 4210.0,
+      "end": 4211.0,
+      "text": "So you don't have the currency risk."
+    },
+    {
+      "start": 4211.0,
+      "end": 4216.0,
+      "text": "And then when you unwind, you just unwind all three of the positions at the same time."
+    },
+    {
+      "start": 4217.0,
+      "end": 4219.0,
+      "text": "So what are you going to see in your brokerage account?"
+    },
+    {
+      "start": 4219.0,
+      "end": 4221.0,
+      "text": "You're just going to see three positions."
+    },
+    {
+      "start": 4222.0,
+      "end": 4229.0,
+      "text": "You're going to see, in this example, you're going to see long Standard Chartered,"
+    },
+    {
+      "start": 4230.0,
+      "end": 4231.0,
+      "text": "15,000 pounds worth."
+    },
+    {
+      "start": 4232.0,
+      "end": 4234.0,
+      "text": "You're going to see short Santander."
+    },
+    {
+      "start": 4236.0,
+      "end": 4238.0,
+      "text": "And you're going to see short $30,000 worth."
+    },
+    {
+      "start": 4239.0,
+      "end": 4243.0,
+      "text": "And then you're going to see a long sterling US dollar position,"
+    },
+    {
+      "start": 4244.0,
+      "end": 4247.0,
+      "text": "equivalent to 20,000 pounds or 30,000 US dollars."
+    },
+    {
+      "start": 4248.0,
+      "end": 4249.0,
+      "text": "And that's basically it."
+    },
+    {
+      "start": 4250.0,
+      "end": 4252.0,
+      "text": "And then you just unwind that position, or all three positions,"
+    },
+    {
+      "start": 4253.0,
+      "end": 4255.0,
+      "text": "when you want to trade out of the spread."
+    },
+    {
+      "start": 4255.0,
+      "end": 4258.0,
+      "text": "So whether you're stopped out or you're taking profits,"
+    },
+    {
+      "start": 4259.0,
+      "end": 4262.0,
+      "text": "whenever you unwind, you just unwind all three of them."
+    },
+    {
+      "start": 4263.0,
+      "end": 4264.0,
+      "text": "So very straightforward to understand."
+    },
+    {
+      "start": 4265.0,
+      "end": 4266.0,
+      "text": "Try to get your head around it."
+    },
+    {
+      "start": 4267.0,
+      "end": 4271.0,
+      "text": "It's just one of those construction parameters that professional traders understand"
+    },
+    {
+      "start": 4272.0,
+      "end": 4276.0,
+      "text": "and make sure that they hedge out whenever they can or if necessary."
+    },
+    {
+      "start": 4277.0,
+      "end": 4278.0,
+      "text": "So just understand it."
+    },
+    {
+      "start": 4279.0,
+      "end": 4281.0,
+      "text": "And when you get a little bit more advanced,"
+    },
+    {
+      "start": 4282.0,
+      "end": 4284.0,
+      "text": "as in when you begin spread trading,"
+    },
+    {
+      "start": 4285.0,
+      "end": 4288.0,
+      "text": "you should probably just start by going long and short stocks"
+    },
+    {
+      "start": 4288.0,
+      "end": 4290.0,
+      "text": "that are denominated in the same currency."
+    },
+    {
+      "start": 4291.0,
+      "end": 4294.0,
+      "text": "But, you know, when you're making money and you're getting a bit more advanced,"
+    },
+    {
+      "start": 4295.0,
+      "end": 4300.0,
+      "text": "then this is something you'll probably come across because you'll start wanting to do spread trades"
+    },
+    {
+      "start": 4301.0,
+      "end": 4303.0,
+      "text": "across geographies and across different currencies."
+    },
+    {
+      "start": 4304.0,
+      "end": 4307.0,
+      "text": "And all you have to do is just understand your currency risk, hedge it out,"
+    },
+    {
+      "start": 4308.0,
+      "end": 4311.0,
+      "text": "and then when you unwind, you unwind all positions at the same time."
+    },
+    {
+      "start": 4311.0,
+      "end": 4316.0,
+      "text": "Okay, so let's move on to the next video and I'll see you on the other side."
+    },
+    {
+      "start": 4317.0,
+      "end": 4319.0,
+      "text": "Okay, so welcome back."
+    },
+    {
+      "start": 4320.0,
+      "end": 4328.0,
+      "text": "Now, in this video we've been through a lot of risk management parameters that you can deploy on your portfolio"
+    },
+    {
+      "start": 4329.0,
+      "end": 4332.0,
+      "text": "to make sure, essentially, that you're not being human."
+    },
+    {
+      "start": 4333.0,
+      "end": 4343.0,
+      "text": "You're doing the opposite of that and you're making sure that the parameters are in place and stop you from actually being human."
+    },
+    {
+      "start": 4344.0,
+      "end": 4350.0,
+      "text": "So, these are very important because when we go back to the trading psychology module,"
+    },
+    {
+      "start": 4351.0,
+      "end": 4359.0,
+      "text": "you'll know from that module that we have to deploy these parameters to make sure when we're in these situations that we do the right thing."
+    },
+    {
+      "start": 4360.0,
+      "end": 4369.0,
+      "text": "And all professional hedge fund managers, all professional traders who are running long-short portfolios deploy these parameters."
+    },
+    {
+      "start": 4370.0,
+      "end": 4373.0,
+      "text": "And they know that they have to to stop themselves being human."
+    },
+    {
+      "start": 4374.0,
+      "end": 4380.0,
+      "text": "So, essentially, we're looking at pulling from box A and pulling from box B at the right times."
+    },
+    {
+      "start": 4381.0,
+      "end": 4390.0,
+      "text": "And the risk management parameters that we looked at were gross exposure limits, net exposure limits, single position limits."
+    },
+    {
+      "start": 4391.0,
+      "end": 4394.0,
+      "text": "We looked at hedging out certain risks as well."
+    },
+    {
+      "start": 4395.0,
+      "end": 4402.0,
+      "text": "So, we looked at hedging out market risk using beta across two positions, beta across multiple positions."
+    },
+    {
+      "start": 4403.0,
+      "end": 4406.0,
+      "text": "And we also looked at hedging out currency risk."
+    },
+    {
+      "start": 4406.0,
+      "end": 4415.0,
+      "text": "And we do this as professional traders because we know that we shouldn't be taking these risks unnecessarily."
+    },
+    {
+      "start": 4416.0,
+      "end": 4423.0,
+      "text": "And so, when actually we have to pull from box B, we do so and we do it almost robotically"
+    },
+    {
+      "start": 4424.0,
+      "end": 4433.0,
+      "text": "and we know that if we protect our downside in our portfolio, then as long as that downside is protected, we live to fight another day."
+    },
+    {
+      "start": 4434.0,
+      "end": 4442.0,
+      "text": "And on top of that, we can also have winners which pay a lot more than the downside that we've ensured or protected."
+    },
+    {
+      "start": 4443.0,
+      "end": 4460.0,
+      "text": "So, this enables you over the long term when you have ideas through your idea generation and trades through the gatekeeping process that have been deployed or ideas that have become trades and they've now been put in the portfolio."
+    },
+    {
+      "start": 4461.0,
+      "end": 4467.0,
+      "text": "So, this ensures that your downside as a trader is protected and this is why you have to have risk management."
+    },
+    {
+      "start": 4468.0,
+      "end": 4475.0,
+      "text": "Now, you should absolutely go through this video again and make sure you've got your head around the basic risk management principles."
+    },
+    {
+      "start": 4476.0,
+      "end": 4487.0,
+      "text": "We're going to go over to video number 24 now and Chris is going to show you a pretty advanced technique for calculating your own beta."
+    },
+    {
+      "start": 4488.0,
+      "end": 4492.0,
+      "text": "Let's go over to video number 24 and I'll see you in video number 25."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

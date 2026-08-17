@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-08-16T16:26:29+00:00",
+  "score": 0.4625,
+  "bias": "NET_LONG",
+  "tens_minus_twos": 0.334,
+  "llm_narrative": "Materials is showing a long tilt due to manufacturing contraction in Chemical Products.",
+  "sector_tilts": [
+    {
+      "sector": "Materials",
+      "tilt": "long",
+      "score": 1.655,
+      "why": "mfg contraction: Chemical Products; mfg new orders contracting: Chemical Products"
+    },
+    {
+      "industry": "Chemical Products",
+      "sector": "Materials",
+      "tilt": "short",
+      "score": -2.1,
+      "why": "mfg contraction (only industry): Chemical Products"
+    }
+  ]
+}

@@ -1,0 +1,1316 @@
+---
+course: ptm2
+lesson_id: "08"
+title: "Leading Indicators 4"
+module: leading-indicators
+module_title: "Leading indicators"
+duration: 01:38:45
+duration_seconds: 5925.355
+source: "08. Leading Indicators 4.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  - "Documents/Video 08/ISM_NonManufacturing_Index.xlsx"
+  - "Documents/Video 08/ISM_NonManufacturing_SP500_GDP.xlsx"
+---
+
+# 08 — Leading Indicators 4
+
+Okay, so we just looked at our first survey, the ISM Manufacturing Report on Business. So this is a great intro into our survey section of the PTM video series because it highlights very clearly why, as traders, we use economic survey data.
+
+And you can see that there's two main reasons we do this. Firstly, for predicting the stock market direction, and therefore GDP growth direction. So we are focusing on our portfolio bias. Okay. And secondly, clues to look for, for trade ideas across various manufacturing sectors.
+
+So we will later in the video series, be covering macro driven trade ideas. We'll do this later in the video series in more detail. But for now, and in this part of the video series, what we're going to be focusing on is getting our direction right in the portfolio, getting our portfolio bias right.
+
+So throughout the survey section of the PTM video series, and when we're looking at this part of the pro trader systematic process, you will see that all surveys do provide both functions.
+
+We're looking at this part of the past. So portfolio direction for stock market direction, and GDP growth direction, and potential trade ideas. But we are going to focus in the next part of the video series, solely on portfolio direction.
+
+We're looking at this part of the future. So we're looking at this part of the project.
+
+We're looking at this part of the project, but we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project, and we're looking at this part of the project.
+
+We're looking at this part of the project.
+
+We're going to look at some real-world examples.
+
+We're going to continue to look at stock and sector examples as well as we go through each leading indicator so we can put everything into context.
+
+Okay, so we're going to move on to our next leading indicator, the ISM Non-Manufacturing Survey.
+
+So we're going to be looking at the service sector.
+
+We treat it in a very similar way to the ISM Manufacturing Survey for predicting stock market direction and GDP growth, and hence our portfolio bias.
+
+So each month, guys, be on top of the ISM Manufacturing Data and the ISM Non-Manufacturing Data when the surveys come out each month.
+
+It's very important.
+
+Use them in conjunction with all your other leading indicators, and get smart about your time and work fast on what matters each month.
+
+Don't get bogged down in too much process.
+
+Focus on what matters.
+
+So let's get into the video and go over to the computer screen, and I'll see you back at the desk in the next video.
+
+Okay, so welcome to video number eight.
+
+We're now going to continue with our analysis into macroeconomic surveys.
+
+And we're going to be looking at the ISM Non-Manufacturing Report on Business, or sometimes referred to as the ISM Services Purchasing Managers Index, or PMI.
+
+Let's just run through a quick recap of what we've learned to this point in terms of leading indicators.
+
+We have real interest rates, the yield curve, investment rate, and high yield or junk spreads over the 10-year.
+
+We have our M2 money supply accessory.
+
+We have stock market volatility, which was covered in the IPLT video series.
+
+And we continue our work with surveys.
+
+We've covered the ISM Manufacturing Report on Business.
+
+Now we're going to be covering the Non-Manufacturing Report on Business.
+
+So we're going to be adding the Services PMI into our leading indicator list in the category of surveys.
+
+So let's have a look at the Non-Manufacturing Index of Services PMI.
+
+And a preliminary report, so preliminary report, is published in the first week of each month.
+
+And there's a final report that's published at the end of the month.
+
+The link is on the screen there.
+
+You can go to ismworld.org and search for the ISM Non-Manufacturing Report on Business.
+
+And the NMI is important.
+
+Why?
+
+Because the service sector represents 80% of the U.S. economy.
+
+But there is a slight data drawback with it.
+
+The composite data, so the aggregate data for the headline index, only goes back to January 2008.
+
+So when we're analyzing the aggregate composite index and we're assessing business cycles, there's obviously a lot less business cycles that we can look at versus the ISM Manufacturing Report.
+
+So purely from a historical data perspective, the NMI naturally is less statistically significant than the ISM Manufacturing Index.
+
+Now, some would argue that makes the ISM Manufacturing Index more important.
+
+From a traders and PM's perspective, it's best to basically put an equal weighting on these.
+
+Because the NMI covers the service sector, and that's 80% of the U.S. economy, it's very, very important.
+
+It obviously is very important, even though at the aggregate level, we only have data going back to 2008.
+
+You'll see later in the video that actually the components data of the NMI actually goes back to 1997.
+
+So from a traders and PM's perspective, we basically, in level of importance, don't discriminate against the NMI just because it has composite data only going back to Jan 2008.
+
+We treat it as equal importance, if not more importance than the ISM Manufacturing Index.
+
+Some in the market would argue the other way around.
+
+But to be prudent from a traders and portfolio managers perspective, we just put an equal weighting on both indices in terms of level of importance.
+
+The other thing that we have to consider is that it is in the service industry.
+
+So this includes contracts.
+
+It's non-physical or not real goods bought and sold, unlike the Manufacturing Index.
+
+Also, in terms of composition, there's small differences in the makeup of the NMI versus the ISM Manufacturing Report.
+
+But again, as traders and portfolio managers, because the service sector represents such a big part of the US economy now, we have to treat them in exactly the same way when using them as a proxy for portfolio direction.
+
+So when we're trying to ascertain whether we should have a long, short or neutral bias in our portfolios.
+
+Now, the NMI has four areas that are covered to make up the Composite Index.
+
+So there are four components with an equal weighting of 25% that make up the aggregate ISM non-manufacturing Index.
+
+So we have business activity, new orders, employment and deliveries, all with an equal 25% weighting that make up the overall PMI for the non-manufacturing Index.
+
+By far the most important are business activity and new orders, which we're going to come on to a little bit later.
+
+But the survey itself surveys 370 purchasing and supply executives in 18 service industry sectors.
+
+Now, in terms of design of the survey, very similar to the ISM Manufacturing Index, we are calculating a Diffusion Index.
+
+So the Institute for Supply Management calculates the Service Sector PMI as a Diffusion Index in the same way as the Manufacturing Index.
+
+So they do this for the four subsurveys or indicators that have the equal weighting and then calculate the composite number.
+
+So the respondents are basically indicating in the same way that the Manufacturing Index respondents do whether particular activities.
+
+So for example, business activity or even new orders for their organizations have either increased, decreased or remained unchanged from the previous month.
+
+Now, if you need a recap on how a Diffusion Index is calculated, you can obviously go back to the previous video where, on the slides that you see on the screen, you get a full breakdown of how a Diffusion Index is calculated.
+
+And the Non-Manufacturing Report on Business, the Services PMI is exactly the same as the Manufacturing PMI, in that it's a Diffusion Index of the subcategories and then the composite number is calculated.
+
+Now, in terms of how we read it, it's again pretty much the same as the Manufacturing Index, just different subcomponents.
+
+So in terms of our expansion and contraction, the 50 level is our important level in the Diffusion Index and the Composite Index as well.
+
+So we read the Non-Manufacturing Composite PMI in exactly the same way in which we read the ISM Manufacturing PMI.
+
+Now, a reading in the composite number above 50 indicates general growth, so expansion, in the services sector versus the previous month.
+
+A reading in the composite number below 50 indicates contraction, so general contraction in the services sector versus the previous month.
+
+And a reading of 50 itself indicates that there's no change in conditions from the previous month.
+
+Now, in terms of its usefulness, as a leading indicator, it's great for traders and PMs to know what's going on in the US service sector in terms of expected future expansion and contraction.
+
+And we can glean a lot of information from it.
+
+So it has a lot of implications for traders similar to the ISM Manufacturing.
+
+So using it to predict US GDP growth and global GDP growth.
+
+So a general expectation of overall expansion and contraction in both the US and global economy.
+
+We can use it to predict overall stock market direction and potential returns.
+
+So we want to know which way the wind is blowing.
+
+Therefore, predicting US stock market direction and potential percentage returns of the stock market.
+
+It helps us, of course, understand and potentially predict likely Federal Reserve policy.
+
+Why?
+
+Because the Fed is looking at this number as well.
+
+We also get an appreciation and understanding due to our general awareness of overall expansion or contraction and which way the wind is blowing.
+
+We also get a bias, a potential bias in our portfolios, whether we should be running a net long, a net short or neutral portfolio.
+
+Additionally, we get quantitative and qualitative information of the industries that make up the services sector.
+
+So we can use that information to look at potential individual single stock trade ideas for our portfolios.
+
+Now, we never rely on simply one indicator or even a few indicators to get our potential long, short or neutral bias in our portfolios when we're predicting macroeconomic conditions in the future.
+
+So US GDP and stock market direction.
+
+And we also don't use one or just a few leading indicators to try and get single stock trade ideas for our portfolios.
+
+We use them all in conjunction with each other.
+
+So the non-manufacturing report on business can be used obviously and should be used in conjunction with our money market leading indicators that we covered in videos four to six and the ISM manufacturing report on business and other macroeconomic indicators that we're going to be covering in the rest of the PTM video series.
+
+We use them all in conjunction together to get a very good understanding of the US economy, money flows and of course, potential Fed policy.
+
+Now, in terms of survey design included in the diffusion index, we mentioned this four areas, business activity, new orders, employment and deliveries.
+
+We are going to be focusing on by far the most important areas in this video business activity and new orders.
+
+Obviously employment and deliveries are included, but they're not as important in terms of leading indicators because they are lagging within the index itself.
+
+So the contribution that these four components make to the overall composite index, although they are equal at 25% each, by far the most important contribution from a traders and portfolio managers perspective is business activity and new orders.
+
+What's not included in the diffusion index just from an educational perspective, and if you have the time each month to go through them, they are worth going through to understand the nuts and bolts of the survey itself and understand some of the responses that are recurring there.
+
+There can be some useful information to be gleaned from that, but nowhere near as important as business activity and new orders that are actually included in the diffusion index and make a very important contribution from a leading indicator and traders and portfolio managers perspective.
+
+So in your own time, you can self-educate on inventories, prices, order backlog, new export orders, imports and inventory sentiment.
+
+We're not going to be covering it in this video itself.
+
+We're going to be focusing on, as I say, the most important numbers, business activity and new orders.
+
+So remember, we're looking at the contributors here to the composite non-manufacturing purchasing managers index PMI.
+
+And we're looking at the diffusion index and the most important ones contributing to that composite.
+
+So business activity, what does it cover?
+
+Well, it tells us whether business activity is increasing or decreasing overall in the US service sector.
+
+And then new orders reflects the level of new orders from customers of service sector businesses.
+
+So the US service sector in its entirety.
+
+So taken together, these two are the most important ones because we're getting a general month on month comparison of what is happening in terms of business activity and new orders within the US service sector, which remember is 80% of the US economy.
+
+Employment is a lagging component of this survey and will very likely follow business activity and new orders.
+
+And supplier deliveries gives us an idea of the efficiency of the supply chain and can give us an indication of the bullishness or bearishness of non-manufacturing or services.
+
+Companies on their supply chain and the bullishness or bearishness of suppliers themselves on the supply chain.
+
+But we have to remember that this is the service sector.
+
+This is not physical goods bought and sold.
+
+So from a trader's portfolio manager's perspective, because the supply chain is not physical or real goods bought and sold.
+
+So like widgets manufactured in a factory and there's a supply chain behind that.
+
+From a trader's and portfolio manager's perspective, supplier deliveries is not as important as supplier deliveries in the manufacturing sector and in the NMI itself, nowhere near as important as business activity and new orders.
+
+And employment is a lagging component, which is likely to follow new orders and business activity.
+
+So we don't completely obviously ignore employment and supplier deliveries.
+
+They are contributing to the composite number as components in there.
+
+But the composite number, because it's affected by employment and supplier deliveries, we need to dig a little deeper and look at business activity and new orders.
+
+And in terms of importance, but a much higher weighting on business activity and new orders from a trader's and portfolio manager's perspective.
+
+Now, there are, as I mentioned earlier, areas in the survey that respondents provide information on that are not included in the diffusion index.
+
+So inventories, prices, backlog of orders, new export orders, imports, and inventory sentiment in your own time.
+
+So in time, you can self-educate on these areas.
+
+That's totally fine.
+
+You've got all the time in the world to go and do that on your own.
+
+Backlog of orders, in terms of level of importance, is probably the area that you should be focusing on.
+
+Why? Because backlog of orders gives us a general understanding of whether the service sector in the US is growing or declining.
+
+If the service sector's backlog of orders is growing, for example, it's probably because business activity and new orders are growing and the backlog is growing in response to that.
+
+So it's almost like a confirmation of our previous business activity and new orders analysis from previous months.
+
+Additionally, if backlog of orders is rising continuously, for example, it's likely that the service sector will require more resources to fulfil that business and a better supply chain or a more efficient supply chain.
+
+Therefore, there will be investment in employment and the supply chain.
+
+So employment and supplier deliveries will respond to that as well.
+
+So from a traders and portfolio managers perspective, in the diffusion index, business activity and new orders, by far the most important.
+
+And in addition, responses from survey participants, not included in the diffusion index, backlog of orders as a confirmation indicator.
+
+Now we have in the downloads area, you may or may not have noticed already in the downloads area beneath the video, you'll see a few files there.
+
+One titled ISM Non Manufacturing Index and ISM Non Manufacturing Index S&P 500 GDP.
+
+If you download these files, you'll see all of the historical data for the ISM Non Manufacturing Index and also that data relative to S&P 500 returns and US GDP.
+
+You'll also notice some charts that have been compiled from the data.
+
+What we're looking at here is the NMI Composite Index and you can see the data only goes back till January 2008.
+
+And you can see very clearly two areas of the charts where the index was significantly below 50, which was the global financial crisis of 2008, 2009.
+
+And also the COVID economic shutdown in 2020.
+
+You can also clearly see that for a period of a decade, the US service sector at the composite level, the non-manufacturing PMI was above 50 from 2010 to 2020, denoting a full decade expansion in the US service sector.
+
+You'll also notice in your spreadsheet downloads, the comparison to quarter on quarter annualized GDP growth.
+
+And we can see that in the data that goes back to 2008, that we get negative real GDP growth quarter on quarter annualized in the 2008-2009 financial crisis and during the COVID economic lockdown.
+
+And during the expansionary period, for the vast majority of that period, we get GDP growth quarter on quarter annualized going in the same direction positive as the non-manufacturing index.
+
+Only on a few occasions did we get one blip or contraction when the ISM non-manufacturing index was positive for that entire decade.
+
+These were not recessions.
+
+These were slowdowns in the US economy.
+
+And there wasn't two quarters of negative GDP growth as the definition of a recession.
+
+They were just one quarter of contraction due to a slowdown in the US economy.
+
+And those slowdowns were temporary, not least because the Fed is looking at the same information that the market looks at and Fed policy responded to the slowdown to avert a recession.
+
+But if you look at the chart, you can see in the vast majority of times, non-manufacturing index and GDP growth move in the same direction.
+
+Even though the data is only going back to 2008, we can definitely denote that they move in the same direction.
+
+What we also get is our peak and trough levels.
+
+So, going back to the previous slide, if we see the total data composite non-manufacturing PMI, very simply, we see around the 60 level.
+
+This generally denotes a peak in the non-manufacturing index.
+
+And between around the level 40 and 45 from previous times when we've had the NMI below 50 and we've had recessions in the US.
+
+Between 40 and 45 is usually the trough level.
+
+And if we just look at levels of GDP growth, GDP growth tends to correspond in the same direction and peak in terms of percentage growth around the same times as non-manufacturing index in the US peaks.
+
+So, when the service sector peaks, GDP growth quarter on quarter annualized seems to peak as well.
+
+And also trough at the same time, but moving in the same direction negative and also troughing at the same time.
+
+And there's generally also a correlation there between when the NMI slows down and comes off from its peak, so does GDP growth.
+
+Also in the downloads area, we get the annual percentage return data for the S&P 500.
+
+And we compare this to the service sector PMI as well.
+
+And we get a similar situation when we look at this versus when we look at GDP against the ISM services sector.
+
+What we see is S&P 500 annual percentage returns, not just the direction, but the actual percentage returns themselves, very closely linked to service sector performance.
+
+If we look, for example, in the positive above 50 area for the decade between 2010 and 2020, if we look between the level of 55 and 60, so 60 being the historical peak level of the NMI.
+
+If we look between 55 and 60, this is generally associated with a obviously positive stock market performance.
+
+But in terms of percentage return, it's generally associated with between 15 and 20%.
+
+And certainly when we get the peak level at the 60 level for the NMI, that's where we see the positive performance, the positive percentage performance of the S&P 500 peak around 20%.
+
+That level generally is associated with the NMI being around 60 and peaking an annual stock market performance of the S&P 500 of about 20%.
+
+If we look lower down in the positive area in the decade 2010 to 2020, if the composite number is between 50 and 55, what does this really denote?
+
+It denotes that there's a slowdown in the US economy if we're coming from peak and it generally is associated with positive stock market data in terms of year on year performance.
+
+But the year on year performance is at a lower level, somewhere between flat and 10% positive performance.
+
+So, if we look below the 50 level, and we look at our periods where the NMI was below 50, and we look at the GDP year on year performances there, you can see from the 2008-2009 period when we had the global financial crisis and the US recession, you can see that stock market performance year on year at that time was around negative 40%.
+
+In the 2020 scenario, we were looking at around negative 8%, 9%, 10%, something like this, in the annual performance of the stock market when the NMI went below 50 during the COVID economic shutdown.
+
+Obviously, both of those periods and in the decade in between, the Fed was obviously very active, especially in those periods.
+
+But we just denote this as traders and PMs of what we should be expecting if there's an economic shock, like the global financial crisis, like the COVID economic lockdown, what level of stock market performance would we expect when the non-manufacturing index and even the manufacturing index are below 50% and what that's associated with.
+
+So we're understanding business cycle history here and understanding what type of S&P 500 returns, US stock market returns are associated with US PMIs in the manufacturing and non-manufacturing sector during normal and abnormal conditions.
+
+US PMIs in the manufacturing.
+
+Now, I want to emphasize here that there is no rulebook which says if the ISM manufacturing or ISM non-manufacturing, so services sector, prints at a certain level in a month, it means we should expect a certain percentage exactly stock market return.
+
+That's not how it works.
+
+What's happened in the past may not happen in the future.
+
+And also, sometimes in the past, we see that general rules don't work all the time.
+
+Of course not.
+
+So if we look, for example, here on this chart at the end of 2013 and 2014 period, we can see that the NMI was printing a number of times below 55.
+
+So between 50 and 55, and we still got stock market performance.
+
+That was around the 20% level.
+
+But if you fast forward a little bit, you can see that when, for example, the NMI starts to go down slightly, so has peaked and goes down.
+
+So if we're looking at 2015, for example, and 2016, you can see stock market performance does actually follow the NMI.
+
+So, yes, as a guide, we can get direction.
+
+Of course, that's the most important thing for traders and PMs.
+
+We can get a good idea of stock market direction with a very, very high probability.
+
+So expansion and contraction in the US services sector, in the US manufacturing sector, is a very good guide to GDP and stock market direction.
+
+What we can't do, obviously, is pinpoint exact percentages.
+
+So the most important thing is direction, long, short or neutral bias in a portfolio.
+
+Now, when we think of the data series itself, you'll have this in the downloads area in the spreadsheets.
+
+When we think of that data series, we mentioned this earlier, the NMI composite data, it's only available since January 2008.
+
+The components data, so the components of the survey, it goes back to July 1997.
+
+And we can do a number of things with this data.
+
+We can obviously look at the component data in isolation.
+
+So we can look at that as a full history back to July 1997.
+
+And we can also, obviously, compare the component data to the aggregate data of the composite PMI.
+
+Obviously, though, when we do that, because the composite data only goes back to Jan 2008, we can only make that comparison of the component data from Jan 2008 to present day.
+
+So, if we have a look at, for example, the business activity index, we can go all the way back to the late 90s.
+
+Here, we've taken the data from 1998 onwards and we get a bit more of a business cycle history from the service sector.
+
+So you can see, for example, in the early 2000s, if you recall, during the tech wreck where the financial markets collapsed in the dot-com bust, you can see in 2000 that the ISM services sector business activity index was peaking and had a few aggressive blips down.
+
+And that's when GDP began to collapse and the stock market began to collapse as well.
+
+And you can see it goes below 50 in 2001, recovers in 2002, and then we start an expansionary period in 2003.
+
+But what's interesting is that if you think of the service sector during the expansionary period of 2003 to 2008, you can see that it peaked in 2003 to 2005 and then started a slow decline.
+
+But really, in a trend declined during that entire period.
+
+And then, as we know, the composite index went below 50 in the great financial crisis before the financial crisis actually happened.
+
+And business activity nosedived as well at the end 2007 beginning 2008 and took quite a while to recover after it nosedived again later in 2008 after spending some time back above 50.
+
+So it's good to look at the component data in the NMI because it does go back a little bit further.
+
+Obviously, when we compare it to the ISM non-manufacturing composite index, if we take, for example, business activity, we can only go back to Jan 2008 to make that comparison.
+
+And you can see business activity moves in lockstep with the composite.
+
+Why?
+
+Because it's contributing to the composite.
+
+And it's probably, along with new orders, the most important component out of the four.
+
+Now, what you can also do in your spreadsheets is look at business activity versus the NMI next to each other in terms of the depth.
+
+In terms of the data itself, not just on a chart.
+
+And you can make comparisons and look at periods of stock market history to understand what was really going on.
+
+You can also do this for the ISM manufacturing.
+
+So you can do this for new orders as well.
+
+One of the components of the ISM manufacturing composite index and you can look at that versus the ISM manufacturing index itself.
+
+And what we can do is look at periods in time in stock market history and have a look at what was going on then for both business activity and ISM new orders.
+
+So what we're looking at here, for example, if we start on the left hand side, we're looking at NMI business activity versus the NMI composite for the period August 2018 to December 2020.
+
+And if you recall, when we were looking at manufacturing, when we were looking at ISM manufacturing data, August 18 was the peak period.
+
+And you can see when we look at the NMI business activity, which is in the first column, you can see it didn't peak at August 18.
+
+It peaked at September 18.
+
+On the right hand side, you can see the NMI itself.
+
+So we've got business activity in the first column and we've got the NMI in the second column.
+
+And in August 18, we have a reading of 58.8 and September 18, a peak of 60.8.
+
+And then if we look at both business activity and NMI from August 18 to August 19, which is the period we looked at previously when we looked at manufacturing data, you can see a general decline in both.
+
+But what's interesting is that business activity in August 19 was 61 and a half.
+
+And the NMI composite was in the mid 50s.
+
+So in August 19, it was 56.
+
+So if we think about this and we think back to the ISM manufacturing data, business activity and the composite is generally trending lower.
+
+And the business activity number had peaked in September 18.
+
+But when we think about this in terms of the ISM, we can look at it on the right hand side and we can see that the ISM new orders number was 47.2 and the ISM composite was 48.8.
+
+So what can we deduce from this?
+
+We can deduce that in the slowdown in 2018, it was a manufacturing slowdown.
+
+It was led by the manufacturing sector, not the service sector.
+
+The service sector was still in pretty good shape.
+
+And if you recall, that was the period when the Fed was cutting breaks in the summer of 2019.
+
+So we have the July cut, the September and the October cut.
+
+So what was the Fed responding to at that time?
+
+Well, we know from the money markets, our leading indicators from the money markets, from both government bond and corporate bond markets, there was stress there.
+
+But also, the Fed was responding to a manufacturing slowdown in the US.
+
+If we fast forward a little bit and we go a little bit further in history and we go to the March, April, May, June 2020 period, if we look at business activity and the composite NMI, we obviously saw a big move down because of COVID and the economic lockdown.
+
+But what's interesting is that business activity went below 50 for the first time in March, 2020.
+
+And remember, these are reported in the following month.
+
+So that number will have been reported in the first week of April.
+
+And the NMI itself wasn't below 50.
+
+So it was a 53.6 reported in April for March, 2020.
+
+So what's interesting there is that business activity is leading the NMI lower.
+
+And if we go a little bit further and we go and we look at the April, May, June period, we see a trough in business activity at 26.
+
+And we see a massive and we see a massive rebatt for the May number.
+
+So a massive down move and a massive rebatt.
+
+If we look at the ISM new orders versus ISM manufacturing on the right, if we look at the April, May and June period, yes, we get new orders going below 50 in February 2020.
+
+But when we get the move back up after the trough, the May 2020 move higher is nowhere near as big as the magnitude as the move in business activity for the NMI.
+
+So when we look at ISM manufacturing composite number, you can see the recovery post the Fed rate cuts where the composite index went back above 50 in January and February 2020, putting in two readings above 50.
+
+And then the new orders index, you can see that it only puts one reading in above 50 at 52.
+
+That was in January 2020.
+
+And then it went below, new orders went below 50 again in February 2020.
+
+And then obviously had a big move down in March 2020.
+
+But when we compare this, you can see that going into the COVID collapse and the COVID economic lockdown, that new orders was the first to go.
+
+New orders in the ISM was the first to go in February 2020.
+
+So we got a warning there, we got a very strong warning of a manufacturing slowdown.
+
+And as mentioned, the service sector, there wasn't really a big slowdown happening, not occurring like in the manufacturing sector, even when the period, even during the period when the Fed was cutting rates, it was still reported in the mid 50s.
+
+But then it went below 50 for the March period, business activity went below 50 for the March period.
+
+If you look at the composite NMI, it didn't even go below 50 until the April reading.
+
+Okay.
+
+What's interesting coming out of the sell off or the slowdown, we know that the bottom in the S&P 500 was in March.
+
+But what's interesting is when we look at business activity and the big, after the big move down from 48 to 26 for March and April readings, what's interesting is the big move up in May to 41.
+
+And the big move up in June to 66.
+
+Because when we compare this to new orders and ISM manufacturing composite, so the ISM new orders and the ISM manufacturing composite, when we compare business activity and the big move down and then the coming out of it, the two big moves up.
+
+What's apparent is that the service sector rebounded much quicker than the manufacturing sector.
+
+So looking at these historical moments, it's just good to understand what was going on there.
+
+The NMI business activity, so business activity in the service sector is sometimes a leading indicator to the NMI itself and even to the ISM, but not all the time.
+
+So you have to use these surveys and the rest of the leading indicators.
+
+So our money market indicators, so our money market indicators, you have to use them all in conjunction and also the macroeconomic leading indicators that are coming up in the PTM video series.
+
+You have to use all of these in conjunction to understand stock market history.
+
+And when you're sitting there at any one moment in time, you don't know exactly what's going to happen.
+
+You need to have all of the information to make an informed decision.
+
+If we look at our other important component of the NMI, that's new orders.
+
+So we can compare that visually on a chart.
+
+We can look at new orders versus the ISM non-manufacturing index.
+
+And you can see there's a very, very strong relationship between the two.
+
+If we look at our table again over that period, we can look at May 2020.
+
+So we're looking at that period again, August 18 to December 2020.
+
+And we're looking at NMI business activity on the left and the composite NMI on the right.
+
+And we're looking on the right-hand side of the screen here at a screenshot of the May 2020 non-manufacturing survey release.
+
+And what we're doing is we are comparing it to ISM manufacturing as well.
+
+So we're comparing it to the readings there of the composite level and of components.
+
+So what we've highlighted here is the May 2020 survey for both the composite NMI and business activity or production as it's called in the survey.
+
+So we have the NMI composite and business activity.
+
+May 2020, the big rebound.
+
+So you can see the series in April for business activity was 26.
+
+And in May 2020, it was 41.
+
+So this is the big rebound number.
+
+And we know from hindsight, looking at history, that there was a move also from May to June of 41 to 66.
+
+But we're looking at the May 2020 situation here.
+
+So imagine you are sitting at this moment in time and you see the May release.
+
+So this is released in the first week of June.
+
+And you see the May release for non-manufacturing.
+
+And you see a massive rebound from 26 to 41 in business activity for the NMI.
+
+And at the time, imagine yourself comparing it to the ISM manufacturing data, which was released just before it.
+
+So if you look at the manufacturing data, we look at production for manufacturing.
+
+The move is from 27.5 to 33.2.
+
+So a change of 5.7 points versus services, a change of 15 points.
+
+So you'd be sitting here at this moment in time, looking at this survey and realizing that both the ISM and services have probably troughed, but services have rebounded really, really hard.
+
+And you can see as well from the language being used to denote the speed of the contraction reported from the NMI composite and business activity, that the direction is still contracting, but at a slower pace.
+
+How would you read into this?
+
+Well, trough conditions.
+
+Trough conditions have occurred, most likely.
+
+And there's been a very hard rebound in the service sector.
+
+Even though it's still contracting, it's contracting slower.
+
+So we're not out of the woods yet.
+
+But you certainly would not have a short bias in your portfolio.
+
+You would be long to neutral in the portfolio.
+
+Now, with a bit of hindsight, we can understand what was going on in the stock markets at that time.
+
+If you recall, the COVID lows were in March, and then the market rallied pretty aggressively.
+
+And we've highlighted two areas here.
+
+We've highlighted the rebound in the markets off the lows.
+
+So the rebound in the S&P 500 off the lows up until the end of May, beginning of June, and then from June to the end of October.
+
+Why have we done that?
+
+Well, because we want to look at what the stock markets did after we realized, or when we got the information from the ISM manufacturing and ISM non-manufacturing, that there was likely trough conditions.
+
+So what's interesting here is that even if during the March, April and May period, you were not participating or trying to pick the bottom, you still had plenty of time to get in to a long portfolio bias after that period.
+
+And what we mean by not participating doesn't necessarily mean you don't have any position at all.
+
+What it means is that your portfolio is neutral, and you're not taking a directional bet in your portfolio either way.
+
+The point here is that you didn't even have to have a dogmatic view either way during the March, April, May period.
+
+Then the ISM manufacturing and ISM non-manufacturing indexes came out with new orders and business activity components showing a trough condition in the first week of June.
+
+And the business activity number was a big move higher.
+
+So the point here is that you could have just not been dogmatic during that period with a directional bias either way.
+
+So the period March, April, May, and then when you get the leading indicator signal from the surveys, that's when you know that there's trough conditions or very likely to be trough conditions.
+
+You know, you can't be 100% certain, but you can be pretty certain that trough conditions have appeared.
+
+And if you think about the range here in the green box of the S&P 500 from first week of June to October, you know, you're looking at about a range of 500 points on a starting point of 3,000.
+
+So you're looking at about 15, 16% here at the index level in a period of three months where it goes from 3,000 to 3,500 from the first week of June till the first week of September.
+
+That's obviously a pretty wild move in the short space of time for an index.
+
+So again, the point here is that you really don't have to be very dogmatic in your portfolio at economic turning points or during liquidity events.
+
+So you can sit back, maintain a non-bias in your portfolio and wait for the leading indicator macroeconomic signals.
+
+Generally speaking, you will get returns by waiting for the leading indicator signals.
+
+So what's good about being a student of macroeconomics and leading indicators in order to make decisions in your portfolio, you don't have to be a hero.
+
+So we don't want to be in a situation all the time where we're trying to pick the bottom in the stock market.
+
+We're trying to pick the top in the stock market.
+
+We just lean towards a slight bias or bias when we get confirmation in the leading indicators.
+
+Because the leading indicators lead GDP and lead stock market direction and returns.
+
+The clue is in the name.
+
+They are leading.
+
+So when we see peak conditions and trough conditions, yes, we get a clue as to the direction we should be leaning towards.
+
+And that's the direction we lean to.
+
+But we don't have to try to pick bottoms and sell tops.
+
+This is about on balance rotation and having the right positions at the right time, which we're going to come on to later in the video series.
+
+Having the right positions at the right time and leaning towards a directional bias when the leading indicators are telling us to do so.
+
+We don't have to fight it and be a hero.
+
+So if we think about this moment in time, I think the NMI and business activity as a component in May 2020 is good to look at.
+
+Let's just sum it up here.
+
+It's a good example.
+
+So March and April were the months of the liquidity sell off and Fed injections of liquidity into the financial markets.
+
+So for the bond markets and for S&P 500 during that COVID-19 economic shutdown.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+So we're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+And we're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+We're going to look at the end of the pandemic.
+
+At that moment in time, so for the April survey, first week of May, that's the time of the release.
+
+We don't know at that moment in time that it's a trough.
+
+We only know that it's a potential trough if in the following month, there's a higher reading for the composite and the component data.
+
+And that report was for May, which is the one we've been looking at.
+
+And that came out in the first week of June.
+
+And this obviously, you know, same methodology applies to peaks as well.
+
+So when we're looking at peaks, when we have a very high level, around 60 or above 60 in the NMI, we don't necessarily think to ourselves immediately, because it's around 60, it must be a peak.
+
+It could put in a higher reading in the next month.
+
+What we have to think about is if there's a move lower when we come from peak, if that's going to be a continual factor.
+
+So the previous month was actually a genuine peak.
+
+At troughs and peaks, the next move, the next month, doesn't confirm that the previous month is definitely a trough or a peak.
+
+What it does do is tell us that there's a very high potential that it could be a peak, and we adjust our bias accordingly.
+
+In the May 2020 example, back during that time in the first week of June, we had a pretty good indication that the Fed actions and COVID-19 itself had a big positive impact on NMI business activity.
+
+So if you think about it in the context of the historical example and what was going on elsewhere in the economy at the time, we had the Fed actions that were huge amounts of unprecedented liquidity, both in conventional and non-conventional means.
+
+But in the COVID-19 economic lockdown itself, that was an example in history where the service sector rebounded hard, because a lot of services were demanded during that time, because people literally could not go to work.
+
+So a lot of services were doing very well, other services weren't doing so well, but there was a big boom in, for example, stay at home services, and that had a big impact.
+
+So when we think of the context of what was occurring at the time, we had a very good indication that the dynamics that were playing out.
+
+And then we see the rebound in the services sector in the first week of June, we had a very strong indication that the economy had probably troughed.
+
+And of course, we were just looking at the NMI, we were also looking at the ISM, and we would have been at that moment in time, also looking at the yield curve.
+
+And we would have had context as to where the yield curve had come from, and where it was at that time.
+
+So if we look at some history here of the yield curve, and we look at where the yield curve was on the 1st of March 2020, you can see very obvious inversion there.
+
+And where were we on the 7th of June 2020, so the end of the first week of 2020?
+
+Well, we look at the Fed funds rate, it's dropped from 158 to 0.07.
+
+And you can see by the first week of June, there was a normal upwardly sloping yield curve.
+
+So imagine we were sitting in that moment in time, this would be part of our decision making process as well.
+
+We'd be looking at the yield curve as a leading indicator.
+
+And what's actually interesting is that the 10s minus 2s, which indicates a very high percentage probability of recession, the 10s minus 2s never actually inverted during that period.
+
+So if we think back to the period that we looked at in previous videos, when we looked at August 2019, where there was slight, very short term inversion, but it never really inverted for a meaningful period of time.
+
+And you can see on the chart, like how small that was, it was basically just flat.
+
+Okay.
+
+And if we look at that period and compare it to say, February, March, April 2020, you can see that the 10s minus 2s never actually inverted during that period.
+
+So the indication from the bond market in the 10s minus 2s was that recession wasn't going to happen.
+
+Now we know from hindsight that recession did occur, but at the time we wouldn't have known that.
+
+So in hindsight, we can look at the data and you can see this in the spreadsheet downloads that we had two quarters of negative real GDP growth in Q1 and Q2 2020.
+
+And you can see where the 10s were in 2020 at their 2020 low, so the spread in terms of its low, the 10s minus 2s spread.
+
+We can see that towards the end of February 2020, and that was not indicating recession.
+
+That was because of massive Fed liquidity injections through conventional and non-conventional means.
+
+And we can see that the market was expecting that.
+
+The market was actually expecting, when we look at the 10s minus 2s spread, that there would be Fed intervention.
+
+And you can see for the rest of 2020, this is the spread going higher and representing a normalization of the yield curve.
+
+So it's always good, guys, to look at how the leading indicators were behaving at certain periods of time in macroeconomic history.
+
+Because it gives us a better education for when we use them in the future, and we're placing ourselves at any random moment in time.
+
+And we're looking at all of these indicators.
+
+We can understand and appreciate what happened in the past, what is happening now, and what is likely to happen in the future.
+
+Now, another feature of the non-manufacturing index, the services PMI, is that we have, like the manufacturing index survey, we have a qualitative assessment inside the non-manufacturing index.
+
+And again, we are looking here now at the example from May 2020.
+
+And you can see, when we look at the industries, we can see, we can look at the industry performance for growth and contraction.
+
+So we have our 18 industries, and in May 2020, if we're using this example, four of the services industries were reporting growth in May.
+
+And that was agriculture, forestry, fishing and hunting as an industry, finance and insurance, public administration, go figure, government and public administration services and companies servicing government were obviously doing well at that time.
+
+And information.
+
+There were 14 industries that were reporting a decrease in business activity or industry performance at that time.
+
+And that was mining, arts, entertainment and recreation, and other services, construction, educational services, professional, scientific and technical services, utility services.
+
+Utilities, wholesale trade, accommodation and food services, management of companies and support services, real estate, go figure, rental and leasing, transportation and warehousing, healthcare and social assistance, and retail trade.
+
+Now, what we've done is here to look at a few examples of what you might have been thinking at the time, is that we've highlighted two areas.
+
+So we've highlighted agriculture, forestry, fishing and hunting, which was reporting growth in May during that period.
+
+So may versus April.
+
+And it was one of the only four industries reporting growth.
+
+And we're looking at, you know, one of the sectors that was really hit hard by the COVID-19 economic lockdown and recession during that period.
+
+We're looking at accommodation and food services.
+
+So imagine yourself going through this report at that moment in time, and at any moment in time, when you're downloading the report, looking at the data, but you're also looking at the qualitative assessment too.
+
+Imagine yourself in this situation and you were seeing this stuff.
+
+So let's have a look at a statement in the qualitative statements that are coming out from these sectors.
+
+Let's have a look at accommodation and food services first.
+
+Let's read this out.
+
+Current operations have been reduced to accommodate a slowed economy, but the business is taking time to review operations and implement more efficient processes.
+
+Purchasing has slowed for client facing goods and services, but has increased for internal operating supplies and services.
+
+What are we getting from agriculture, forestry, fishing and hunting?
+
+Demand seems to have bottomed out.
+
+And we're seeing signs of increasing interest.
+
+Inventories of finished goods are extensive.
+
+So production will slowly rebound in the coming months.
+
+So what is happening here?
+
+Agriculture, forestry, fishing and hunting are literally communicating to us qualitatively, in words that conditions have bottomed and they're bullish.
+
+Inventories are high and they're expecting a rebound and for the rebound to continue.
+
+What are accommodation and food services telling us?
+
+Well, they're telling us that business has been reduced to accommodate the current economic environment.
+
+And they're taking time to review the situation.
+
+Well, they're obviously reporting a slowdown, a decrease, May versus April, and they're communicating to us no visibility.
+
+So two very, very different qualitative responses here.
+
+Elsewhere in this qualitative list of statements here coming from the different industries, you know, you might pick up on some interesting stuff as well in other areas.
+
+So for example, in this list of qualitative statements, online education for educational services is a very strong indication of a rebound or strength in that industry.
+
+Additionally, if you look at near the bottom, you can see retail trade.
+
+So retail trade, COVID-19 had obviously a big impact there.
+
+You know, one company here is responding, saying that they successfully kept 90% of their retail locations open to the public.
+
+And the 300 plus headquarters has been set up for staff to work remotely to support the retail locations.
+
+And there's obviously conflicting statements as well from public administration services.
+
+So if you look at the statement there, they're saying COVID-19 is still impacting our revenue significantly and the prices we are paying for goods and services.
+
+Obviously, that conflicts with the previous slide where they were reporting growth.
+
+If you look at finance and insurance, they're saying extremely busy with small business administration paycheck protection program.
+
+So these were the paycheck protection subsidies that were going out paid for by the US government at the time.
+
+And yes, this is in line with the growth reported on the previous slide.
+
+So that's finance and insurance companies servicing that public service.
+
+So you can see that when you read through all these things, you can get a lot of clues as to what's going on in the economy at the time.
+
+So May 2020 is a good example of this.
+
+And we're going to concentrate on agriculture, forestry, fishing and hunting and accommodation and food services here.
+
+And remember, just try and put yourself into the shoes of somebody that was looking at this at the time.
+
+Or, you know, think of yourself when you're looking at a new survey, survey that's come out cold.
+
+And you're looking at it at any one moment in time in the future.
+
+At this stage, all we have is some qualitative statements and some data to show growth and contraction in certain areas.
+
+So certain industries, you would obviously do research on these qualitative statements and do further work to potentially generate some trade ideas.
+
+So, for example, in May 2020, we got that strong message from the agriculture, forestry, fishing and hunting industry.
+
+If we went away and did some work on that industry, on that sector, we may have come across a stock called Yeti.
+
+Yeti.
+
+What does Yeti do?
+
+Well, Yeti provides products for the outdoor and recreation markets.
+
+So we're talking stuff like coolers, seat cushions, beverage holders, security cable locks and brackets, stuff like this.
+
+Okay, bottles, t-shirts, caps, gear cases, you name it.
+
+Yeti does it.
+
+And just look at the performance of this stock relative to the S&P 500.
+
+If we look at a point of origin in the first week of June, when the non-manufacturing index data and these qualitative statements were released.
+
+We're looking at an index of 100 and we're looking at the first week of June till the end of the year 2020.
+
+Okay, we're starting at the point of origin in the first week of June at 100 and we're comparing Yeti to the S&P 500.
+
+So over that six month period, how did Yeti, our outdoor and recreation stock, compare to the S&P 500?
+
+Well, Yeti in absolute terms was up 112% over that six month period.
+
+And the S&P 500 from first week of June till the end of the year, during that period, the S&P 500 was up 23%.
+
+So we're looking at here, guys, roughly a 90% outperformance in a six to seven month period in 2020 from the first week of June.
+
+When we compare Yeti as an outdoor recreation stock compared to the stock market S&P 500, which obviously is a pretty phenomenal performance, outperformance that is.
+
+Now, Yeti itself as a stock is actually not part of the S&P 500 index.
+
+So, yes, we can compare Yeti to the broader market of mega cap and large cap stocks.
+
+But if we compare Yeti to the IWM, the Russell 2000 ETF during that time, this would be more accurate because Yeti is in the IWM.
+
+Yeti is part of the Russell 2000, or it was back then anyway.
+
+This would be slightly more of an accurate exercise to compare the performance to the IWM.
+
+The IWM was up 40% during that same period.
+
+And we know Yeti was up 112%.
+
+So we're looking at about a 70% outperformance here.
+
+So as an example, in May 2020, listening to the very strong statements coming from the outdoor and recreations industry, listening to that very strong message, doing further work and finding the stock or stocks that were going to rebound, definitely made returns for you.
+
+This happens time and time again in both manufacturing and non-manufacturing reports.
+
+We get fantastic qualitative data, especially at turning points.
+
+What we can also look at here is a stock called QSR, which is a restaurant brands international.
+
+We look at the same period in time.
+
+This company owns franchises like Burger King, Popeyes, and also the coffee shops, Tim Hortons, mostly in Canada.
+
+We can compare QSR to the S&P 500 there to be looking at accommodation and food services.
+
+Obviously, these guys were reporting a difficult time in May 2020, not giving any visibility.
+
+So this industry was giving no visibility in the qualitative statements in the NMI.
+
+And you can see the stock performance versus the S&P 500.
+
+The stock was up during that period around 9% and the S&P 500 was up 23%.
+
+So you're looking at basically a 14% underperformance of QSR versus the S&P 500 during that time.
+
+So again, if you went through the qualitative statements at that time, you were hunting around for potential short ideas.
+
+You will have done further work, obviously, than just looking at the qualitative statements and just randomly picking a stock.
+
+You will have done further work on all the processes that we're going to give you in the BTM video series.
+
+And you may have bumped into a nice situation here, like QSR, where, yes, the stock didn't go down.
+
+We obviously want, ideally, situations where stocks go down for our shorts.
+
+But a nice situation like QSR where you get underperformance relative to the market and relative to your longs is still acceptable.
+
+And if you look at, for example, the performance of QSR, where there were many times during that period up until the end of October, beginning of November, where the stock was actually down.
+
+So you could have actually made money on the short as well, not just as an underperformer in the portfolio relative to your longs.
+
+So in terms of using the NMI for trade idea generation, we use it in exactly the same way when we assessed the ISM Manufacturing Index.
+
+We're taking quantitative data and qualitative statements to enable light bulb indications or clues as to where to look in the stock market to get potential trade ideas.
+
+So, you have to go through a monthly quantitative and qualitative process of organizing the numbers and statements and look for turning points or trends in the data, not only at an aggregate level, but also at the sector level.
+
+And do not obviously just go through ISM Manufacturing or NMI data and quantitative statements and then just randomly pick stocks.
+
+That's just stupid.
+
+Okay.
+
+Okay.
+
+And you have to go through all of the other processes that we're going to give you in the PTM video series to identify potential stocks that are going to move from the indicated trends in the ISM and the NMI.
+
+Unfortunately, there just aren't shortcuts here, guys.
+
+The only way you can save some time is perhaps having a third party organize all the data for you, but you're going to have to generate the trade ideas.
+
+You're going to have to go through the data, understand the qualitative statements, interpret them correctly, get the light bulb indication and clues of where to look in the stock market.
+
+And then you're actually going to have to look at industries or sectors in the stock market and find the stocks that are going to be benefiting from current conditions.
+
+There's no shortcuts.
+
+You have to do the work yourself.
+
+You have to generate your own ideas.
+
+Additionally, do not rely on the ISM and the NMI as the only places you look for potential trade ideas.
+
+Again, we mentioned this in the previous video.
+
+There are multiple places to get trade ideas in the financial markets and in the world in general.
+
+Now, additional to qualitative statements coming from each of those 18 industries, we also get our quantitative data.
+
+And you'll have this in the downloads area, similar to ISM manufacturing sectors.
+
+In the NMI, we can look at service sector or the service sector industries, and we can rank them and color code them for heat map.
+
+So again, we've got in this analysis available in the downloads.
+
+You can update this every month yourself.
+
+Just learn how to use the spreadsheet properly.
+
+We've got the six months from July to December 2020.
+
+And we're ranking and sorting in descending order in terms of growth in December 2020.
+
+And just as an example here, if we look at our two sectors that we were just looking at, we were looking at agriculture, forestry, fishing and hunting.
+
+If you look at the second half of 2020, from July to December, you can see that we've got growth indicated in every month.
+
+So month on month growth in every month.
+
+And you can see the rankings go from three to five to 12, and then four and seven.
+
+So essentially, the growth is getting on a relative basis stronger relative to other industry sectors, then going steady towards the end of the year.
+
+And then you can see it, for example, in accommodation and food services, second from bottom.
+
+We're going from growth, moderate growth in July, some quick rebound at the beginning of, in the middle of summer in August.
+
+And then growth as we get towards the holiday season, in terms of rankings, starts to go down slightly.
+
+And then we get contraction in December.
+
+So if you recall, in May, the May 2020 report, which was reported first week of June, for accommodation and food services, they reported contraction.
+
+When we look at what happened for the rest of 2020, we got some growth in the sector.
+
+And then we saw contraction at the end of the year.
+
+So again, you can look at this at the aggregate level.
+
+But you can also look at this at the component level for each sector as well, as we did with ISM manufacturing.
+
+So download the spreadsheets, figure out how the spreadsheets work.
+
+And you can update this every month when the NMI survey comes out and look for trends and turning points in the data.
+
+What you can also do is obviously take those qualitative statements and stick them in the NMI spreadsheet.
+
+Again, that's a very useful exercise to go through every month.
+
+If you're taking the qualitative statements and sticking them in the industry comments sheet, because you're much more likely to internalize what is being said.
+
+So in terms of further work on the ISM non-manufacturing reports on business, we've looked at the main areas for the diffusion index, business activity and new orders.
+
+So in your own time, go away and look at the areas that are not included in the diffusion index.
+
+Do a bit of work around those and concentrate mainly on backlog of orders.
+
+Again, guys, got to have a self-starter mentality here.
+
+Learn the intricacies of the composite index components and the data sets that aren't included in the composite index.
+
+We're not indulging in smooth feeding and copy trading here at ITPM.
+
+We expect that you want to be good at this.
+
+Therefore, you're going to be doing your own work, generating your own trade ideas and making your own returns.
+
+What we're doing here is starting you off very strongly in the right direction.
+
+So let's summarize all of this for the ISM non-manufacturing report on business.
+
+It's one of the most important leading indicators out there for professional traders and portfolio managers.
+
+Why? Well, we know US GDP drives global GDP and stock market returns in the US and to a large extent, the rest of the world.
+
+We're using it as a leading indicator in conjunction with the ISM manufacturing index and the components of that to predict US GDP, stock market direction and potential stock market returns in the US and potentially global GDP.
+
+And stock market returns outside the US in the rest of the world.
+
+They are both as important, remember, as each other.
+
+Yes, the manufacturing index is 20% of the US economy.
+
+The services sector is 80% of the US economy.
+
+But from a trader and portfolio manager perspective, we treat them with equal importance.
+
+Now, we don't only use the NMI in conjunction with the ISM manufacturing survey.
+
+We also use it in conjunction at any one moment in time with the money market indicators that we've covered so far in the video series and other leading indicators that we're going to cover in future parts of the PTM video series to predict turning points in the business cycle and trends in the business cycle.
+
+And therefore, our portfolio direction.
+
+So again, it's useful for getting a bias, a net long or short bias or even neutral bias in the portfolio.
+
+Similar to the ISM manufacturing index with the NMI also, we can look for clues at a sectoral level as to how companies will report their earnings in upcoming quarters.
+
+Therefore, the NMI can also potentially help us to generate trade ideas in single stocks for our long short portfolio.
+
+So not just a bias for the portfolio, but also what we should be looking at to be long and short in the portfolio to obtain that bias.
+
+So it's a great leading indicator, the NMI, it's a great leading indicator that's going to enable us to be right somewhere between 60% and 80% in our estimation of the US economy to get a directional bias in the portfolio of long short or neutral.
+
+But it's also useful for us at a sectoral level of single stock trade ideas and we can use it in conjunction with the money market leading indicators that we covered in videos four to six and the other macroeconomic surveys or indicators that we're going to be looking at in the rest of the PTM video series to get a solid understanding of the US economy.
+
+Money flows and potential Fed policy when we use it in conjunction with the ISM manufacturing POI and other tools that we're going to be covering, we add another powerful weapon to our macroeconomic survey armory.
+
+So closing the loop, this is what we're going to do.
+
+We add the ISM non-manufacturing report on business, the services PMI to our leading indicator list of surveys and our bigger list of leading indicators overall.
+
+So we have our money market indicators, real interest rates and the yield curve in the government bond market.
+
+We have investment grade, high yield and junk spreads over the 10-year, that's in the corporate bond market.
+
+We have our accessory, the M2 money supply growth and we have our stock market volatility from the IPLT video series.
+
+In our surveys list, we are now adding the ISM non-manufacturing report on business to the survey list and that is joining the ISM manufacturing report on business.
+
+So what we've done in the last two videos is we've covered the main PMIs in the United States, the manufacturing PMI and the services PMI.
+
+That's it, we have covered purchasing manager indices, the main ones in the United States.
+
+We're going to leave now PMIs and we're going to now look at other surveys, other leading indicators in the United States that are very important.
+
+Next, we're going to be looking at the US consumer.
+
+So instead of going back to the desk, let's get straight into it.
+
+Let's start looking at the US consumer.
+
+I'll see you in the next video.

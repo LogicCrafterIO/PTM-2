@@ -1,0 +1,613 @@
+---
+course: instutrade
+lesson_id: "25"
+title: "Having Discipline 4, Self Awareness Statistics"
+module: discipline-and-risk
+module_title: "Discipline and risk management"
+duration: 00:28:59
+duration_seconds: 1738.688
+source: "Anton Kreil - Professional Trading Masterclass Instutrade/25. Having Discipline 4, Self Awareness Statistics.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  []
+---
+
+# 25 — Having Discipline 4, Self Awareness Statistics
+
+Okay, welcome back. Welcome to video number 25 where we're now going to move on to looking at self-awareness as a trader. Now, self-awareness is very important because for retail traders you don't have a risk manager in your office or at home.
+
+You don't essentially have a boss who is measuring your abilities as a trader and also identifying your strengths and weaknesses. Now, why would a boss do this at an investment bank or a hedge fund? Well, professional traders would have risk managers and bosses to identify whether more capital should be deployed to those traders or for capital to be taken away from them.
+
+As a retail trader, you don't have this. You have to decide yourself how much capital you should be deploying to yourself and when to deploy it. So, what you need really is a way to measure yourself as to whether you should be deploying more capital or less capital and also ways to measure your strengths and weaknesses.
+
+So, at least you know that you can deploy what you need to work on in terms of your weaknesses. So, professional traders have the luxury of this and retail traders don't have this. And this is one of the main problems because people don't really know what their own abilities are and overall whether they should be deploying more or less capital to themselves.
+
+So, what we are going to do now is go over to the presentation and show you a pretty industry standard metric called the Kelly Criterion. And we are also going to go on the computer during that process, during that presentation and I am going to show you what it really means. So, we will go through the numbers of a theoretical trader.
+
+Also, you have the spreadsheet as a download and you should download this and go through the numbers so you can understand how the formula works. So, let's go over to the presentation and over to the computer screen and I will see you at the end of video 25 with a full summary of the Kelly Criterion.
+
+Okay, we are going to move on to something called the Kelly Criterion.
+
+Okay, we are going to move on to something called the Kelly Criterion.
+
+So, we have touched on this idea that when we are winning, we want to be seeking more risk.
+
+And we have touched on the idea that when we are losing, we want to be seeking less risk. We want to be pulling from box B.
+
+So, box A when winning, box B when losing.
+
+But what if we looked over all of our trades in the past?
+
+We looked at our track record and we actually started to look at what type of trader we are.
+
+What we want to have is self-awareness so we know what type of trader we are.
+
+One of the problems with retail traders is that they don't have a boss.
+
+So, you don't have anybody to tell you whether you are any good or not.
+
+So, you don't know whether to have more capital or take away capital from yourself.
+
+So, what would a hedge fund manager do if he had a portfolio of eight traders and three of them were making money and five were losing?
+
+What would a hedge fund manager do?
+
+Well, to the hedge fund manager those guys who are losing money are just losing positions in the portfolio of traders.
+
+A hedge fund manager doesn't trade stocks, indices, currencies, commodities.
+
+A hedge fund manager who has traders working for them trades their traders as positions.
+
+Hedge fund managers trade humans or hopefully non-humans.
+
+What does a funds of fund manager do?
+
+Trades humans that trades humans.
+
+Go and speak to a funds of fund manager and ask them what they do.
+
+In a nutshell, they'll say I trade humans that trade humans.
+
+It's what they do.
+
+The only problem is retail traders, you guys, you don't have anybody to tell you whether you are any good or not.
+
+How much capital to deploy to you, how much capital to take away from you, when to do it, etc, etc.
+
+But what you can do is use the same processes, the same tools that a lot of hedge fund managers use to have self-awareness and basically tell you whether you're any good or not.
+
+So it's just having self-awareness and not just whether you're any good or not, but what you're good at and what you're bad at.
+
+And you work on the things that you're bad at.
+
+One thing that's going to tell you whether you're any good or not, which is pretty damn obvious, is whether you make money or not.
+
+But if you're making money, it's a mix of things, of behaviours, of what you're good at and what you're bad at.
+
+And in overall terms, whether you deserve more capital and if you do, how much and when you should deploy it.
+
+So we're going to look at the Kelly Criterion, a bit of self-awareness.
+
+So based on your trading performance, the Kelly Criterion just basically tells you how much you should be committing in capital terms to your next trade.
+
+It started in the 1950s on the horse racing track.
+
+Gamblers used to use it when they went to the horses, to the racetrack.
+
+So they go to the racetrack with $100 and they go on race one.
+
+Well, let's put the question out there.
+
+If you go to the racetrack with $100 and there's 10 races today, how much do you put on race number one?
+
+Okay, so you lose your $10, how much do you put on race number two?
+
+Yeah, so what you're doing is you're taking capital away from yourself for each trade, yeah?
+
+In the reverse, walk onto the racetrack with $100, you put $10 on and your horse comes in.
+
+And you make a total of $18.
+
+What would you do next?
+
+Yeah, what would you do next?
+
+Yeah, you take more risk, yeah?
+
+So the Kelly Criterion basically, what would you do next?
+
+How much do you put on race number three?
+
+Yeah, so what you're doing is you're taking capital away from yourself for each trade, yeah?
+
+In the reverse, walk onto the racetrack with $100, you put $10 on and your horse comes in.
+
+And you make a total of $18.
+
+What would you do next?
+
+Yeah, you take more risk, yeah?
+
+So the Kelly Criterion basically rewards traders who make money by saying you put more capital on your next trade and takes capital away from traders who always lose.
+
+The marginal rate that you take off and put on.
+
+That's what Kelly tells you to do, yeah?
+
+But it's a great litmus test when you look back at your last say 50, 60 trades, what type of trader you are.
+
+So let's just have a look at an example.
+
+So we've got here a theoretical trader who's done 60 trades.
+
+On trade one, this trader made $5,000 and it's a win.
+
+So a one goes in the win score.
+
+On trade number two, this trader made a loss of $5,000.
+
+So a one goes in the loss score.
+
+So, so far the trader's made no money.
+
+And they've got a win ratio of 50% and a loss ratio of 50%.
+
+Yeah?
+
+You keep going all the way down.
+
+And we've got the results here.
+
+So the trader on their winners has made $272,000.
+
+On their losers, the trader has lost $148,000.
+
+They've made money on 30, they've won on 30 of the trades.
+
+Made money on 30.
+
+Lost money on 30.
+
+So win ratio of 50, loss ratio of 50.
+
+Is that a good trader?
+
+So basically, the Kelly criterion says that on the next trade, this trader should put on 23% of their exposure on the next trade. 23% of their money on the next trade.
+
+Is that sensible?
+
+So over 60 trades, this trader's got 50% of them right, 50% wrong.
+
+They've made 272 on their winners, lost 148 on their losers.
+
+The ratio between money made on winners and money lost on losers, 1.84.
+
+And the Kelly criterion says 23% of your money on the next trade.
+
+So first of all, is this trader any good?
+
+Who says yes?
+
+Who thinks this trader's bad?
+
+Who thinks this trader's just average?
+
+Okay.
+
+The answer is this trader's pretty damn hot.
+
+What is W?
+
+What is W and what is R?
+
+W is the ability of the trader to generate ideas and time them well.
+
+Yeah?
+
+Is 50% any good?
+
+It's good.
+
+What is R?
+
+R is the ability of the trader to manage risk.
+
+Because they can have lots of good ideas.
+
+But if they don't run their winners and don't cut their losers, their R is going to be awful.
+
+That's a good R.
+
+Anything around 2 plus is great.
+
+Over a good size number of trades.
+
+So if you look back over your first year and you've done 60 trades and your win rate is 50, your loss rate is 50.
+
+And your R is 1.84 plus if it's too amazing, you're doing well.
+
+So you're obviously making money, you've got good ideas, you're timing them quite well, and you've got good risk management.
+
+Now what happens as a hedge fund manager if you're sitting in the back and you've got a team of 20 traders and you've got every trader's spreadsheet with their last 500 trades.
+
+And you're charting in the spreadsheet as well, you're charting that every trader's W, every trader's R, their profit and loss, and they're all on one chart.
+
+And they're moving in real time.
+
+And you see traders who were really, really good starting to become bad.
+
+And you see traders who were really, really bad starting to become good.
+
+What do you do?
+
+You take money from the guys who are starting to get bad and give it to the guys who are starting to do well.
+
+Now it's not 100% scientific, but that's an example of what hedge fund managers do.
+
+So they'll actually be charting the performance of their humans.
+
+Does that make sense?
+
+Now back to this issue of 23% in your portfolio.
+
+That's a very high number to have one position making a contribution to that in your portfolio.
+
+But what does that say, for example, if you put a limit on it and say you start off with a position that's between 5% and 10% of your portfolio and it starts to show that it's a big winner in the portfolio.
+
+What do you do?
+
+You add to it.
+
+Now what happens if originally your single asset position limit was 10%?
+
+Your single stock position limit was 10%.
+
+Should you be adding to it?
+
+If adding to it means you're going over your self-imposed 10% position limit, should you add to it?
+
+No, you absolutely should.
+
+Because Kelly's telling you you're allowed to.
+
+You're a good trader.
+
+In this situation, you can have comfort that you're pretty good and you know what you're doing in pretty much every situation.
+
+Because the last 60 trades says, as a trader, you know when to add to winners and you know when to cut losers.
+
+What would that mean if you were working at a bank or a hedge fund, it would mean you'd have to go and see your boss and ask for permission to do it.
+
+I really want to add to this winner.
+
+Can I increase, can I break my single stock position limit?
+
+Absolutely.
+
+Go over by 5% for the moment.
+
+Now what happens if it goes in your favour more?
+
+What do you do?
+
+You go and ask your boss permission to add more.
+
+And you keep pulling from box A.
+
+And you keep rolling your stop loss until you get stopped out.
+
+And what will happen once or twice every year, when you start off with your single position limits of say 10%.
+
+And those winners start to appear.
+
+And your history as a trader says, you know what to do on your winners and you know what to do on your losers.
+
+So you can take comfort in your, in your track record that you know what you're doing.
+
+One or two of those trades per year is going to pay you 50% of all your money for the year.
+
+Because you're going to go from 10 to 15% and it'll continue.
+
+You go from 15 to 20% and you'll continue.
+
+And you'll keep rolling your stop loss.
+
+And by the time you're done, it'll have made you a fortune.
+
+And what happens?
+
+How do you actually exit that trade?
+
+You don't, you'll just get stopped out.
+
+You just keep going.
+
+Make sense?
+
+Every target is a soft target.
+
+And what will happen in that situation?
+
+After you've been stopped out and you enter that trade into your Kelly criterion, your R score is going to go through the roof.
+
+And what have you done for the next six, 12 months?
+
+You've just given yourself license to continue trading like an animal.
+
+Because your R score has just gone through the roof.
+
+That's what you've got to do.
+
+So put every trade you do in the Kelly criterion.
+
+Start off with self-imposed position limits.
+
+But those position limits are soft.
+
+Only when winners emerge are you allowed to break limits.
+
+You never break limits on a loser.
+
+Ever.
+
+Monitor your Kelly criterion, your K score.
+
+And if you ever go for interviews, print off your track record of all the trades you've ever done.
+
+And staple your K score on the front.
+
+And leave it with the guy or the person that's just interviewed you.
+
+Interviewed you.
+
+And if you've done a couple of hundred trades, you've got an R of around two.
+
+And your K score is 23-25%.
+
+Your W is 50.
+
+And you've got an R of around two.
+
+And your K score is 23-25%.
+
+Your W is 50.
+
+And you've got an R of around two.
+
+And your K score is 23-25%.
+
+Your W is 50.
+
+Whoever it is is going to be pretty impressed.
+
+And if you've got an R of around two.
+
+And if you've got an R of around two.
+
+And your K score is 23-25%.
+
+Your W is 50.
+
+Whoever it is is going to be pretty impressed.
+
+And if you've got an R of around two.
+
+And if you've got an R of around two.
+
+And if you've done a couple of hundred trades, you've got an R of around two.
+
+And your K score is 23-25%.
+
+Your W is 50.
+
+Whoever it is is going to be pretty impressed.
+
+If you do that, it's worth as much as your degree on your CV.
+
+And in the process, you'll probably pay for your degree.
+
+That's what you've got to do.
+
+So you know when to deploy capital to yourself and when not to.
+
+Now what happens if you get to the end of year one.
+
+And you've got a good W.
+
+Got a good R.
+
+And got a good K score.
+
+You want to be putting more money in your trading account.
+
+Box A.
+
+You're good at trading.
+
+So why are you limiting yourself?
+
+Shoot for the moon.
+
+And you'll fall amongst the stars.
+
+You're selling yourself short.
+
+Take more risk.
+
+Because you've got a stop loss portfolio anyway.
+
+So it doesn't matter.
+
+You might as well take more risk.
+
+But if it goes wrong, you better trade out at the stop loss portfolio.
+
+I've seen nightmare situations where guys have gone from 20,000 pounds in their trading account to over 300,000 pounds in a year.
+
+And by the end of year two, they're at zero.
+
+Because they didn't put risk management parameters on their portfolio.
+
+Okay, welcome back.
+
+So what you saw there was the Kelly Criterion.
+
+And the Kelly Criterion is a metric which you use.
+
+And most importantly, you use it as a metric to tell you, firstly, what you should be deploying to yourself in terms of capital.
+
+So we've been through the risk management parameters.
+
+And we first looked at gross exposure limits and single position limits.
+
+Well, the Kelly Criterion also gives you a good awareness statistic which tells you overall whether you're just a good or a bad trader.
+
+Now, if you're a good trader and you're winning, you should be pulling from box A.
+
+You should be taking more risk.
+
+How do you take more risk?
+
+You do it twofold.
+
+You either increase exposure in your trading account and or you add more money to your trading account further down the line.
+
+So for example, if you open the trading account with $25,000 deposited on margin and your exposure was $100,000 to $125,000 to begin with.
+
+So four to five times.
+
+And over, let's say, an eight month period, you were pretty consistent and you managed to double your $25,000 to $50,000.
+
+So that would mean, based on your exposure levels, you're getting a 20% to 25% return on your money and doing this net of commission on a consistent basis.
+
+Let's say you've done this over an eight to 12 month period.
+
+Well, what's happening here?
+
+You're probably being told at this time by the Kelly Criterion that you're pretty good at trading and also your profit is telling you that you're pretty good at trading.
+
+So you should be pulling from box A here.
+
+You should be increasing your exposure levels and you should be thinking about putting more money in your trading account.
+
+Now, what do we do if you get the opposite?
+
+Let's say you're losing money consistently.
+
+Well, you're just going to hit one of your portfolio construction parameters, which is stop losses on your positions and stop losses on your overall portfolio.
+
+And your stop losses are there so you can actually preserve capital and try again.
+
+So you don't necessarily have to take money out of your trading account.
+
+It will just mean that overall you've been bad at trading over that time period.
+
+And your W is going to be bad and your R is going to be bad, which means a combination of your winning probability factor, your W and your risk management capabilities, your R.
+
+A combination of those just means that you're bad.
+
+So pulling from box A and pulling from box B, that's what Kelly is going to show you.
+
+And that's what you're going to do when you start out properly as a professional portfolio manager or taking this approach.
+
+Second thing that's important with the Kelly criterion is the ability to identify what your strengths and weaknesses are.
+
+So if your W is really good, so your ideas are good, but your risk management is very poor, then it's obvious that you need to work on your risk management and you need to increase R.
+
+You need to work on making that a better number.
+
+Also, if your risk management is very good, but your ideas are poor, it's very obvious that you need to spend more time.
+
+You need to put a bit more effort into generating higher quality ideas.
+
+But also at the gatekeeping side, you might want to try and time these trades better or with your price action indicators, make sure you're taking the correct approach.
+
+So it can come in the whole idea generation phase, but also with gatekeeping.
+
+So if your W is bad, that's what you need to be focusing on.
+
+Now that we've been through the Kelly criterion and the self-awareness statistic that is very important, what you need to understand as well is that with your portfolio construction parameters, if the Kelly criterion is recommending that you do more on a single position, on a single trade in your portfolio versus what your own percentage limits are on your single position assets.
+
+You probably should not be going above your own self-administered statistics.
+
+So for example, the Kelly criterion is recommending that your next trade or a single position should be a maximum of 15 or 20%.
+
+That's all fine.
+
+That's good to know.
+
+But if your limits are 10% in your own portfolio, you should stick to them because you don't want to be investing too much money into one position or one idea.
+
+Your own position limits stop you from being overconfident and putting too much money into one idea.
+
+So the Kelly criterion, if it's recommending more, that's great.
+
+Just keep it in the background.
+
+Keep the Kelly criterion running.
+
+You should absolutely overlay it with your own risk management parameters.
+
+So we've been through all this stuff now.
+
+We've been through having discipline one, two, three and four.
+
+And doing that, we went through training psychology.
+
+Make sure you understand that.
+
+Make sure you've got the foundations correct.
+
+Try to deploy the box A and the box B strategy into other areas of your life.
+
+This is the mode of thinking of a trader.
+
+And this is the mode of thinking that you have to get used to.
+
+Secondly, we looked at portfolio construction parameters.
+
+Definitely deploy some or all of those parameters into your portfolio.
+
+If you don't, you're just falling into the trap of being an amateur trader.
+
+And that's something you don't want.
+
+You need to protect your downside.
+
+You protect your downside because you understand the psychology.
+
+And you understand your weaknesses as a human.
+
+We also looked at the hedging techniques.
+
+We've been through beta.
+
+You can use the basic beta approach.
+
+You can also use the advanced approach.
+
+If your objective is to work at an investment bank or a hedge fund.
+
+And we've also been through the self-awareness statistic of the Kelly criterion.
+
+So you know at any one point in time how good you are as a trader.
+
+And your own abilities as a trader.
+
+So you can deploy capital to yourself responsibly.
+
+So we've been through the whole of risk management now.
+
+We're going to move on to the next video.
+
+Make sure you go through the risk management and self-awareness statistic, the Kelly criterion, over a number of times before you actually start committing capital to real trades and building a portfolio.
+
+It's very important stuff and will separate good traders from bad traders.
+
+And you obviously want to be a good trader that makes money consistently over time.
+
+If you don't do these things you simply won't be.
+
+So please make sure you go through these videos many times.
+
+I'll see you in the next video.

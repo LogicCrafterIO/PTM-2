@@ -1,0 +1,9 @@
+ticker,name,sector,industry,price,market_cap,forward_eps,trailing_eps,earnings_growth,earnings_date
+L1,Long One,Industrials,Specialty Industrial Machinery,100,5000000000,2.0,1.5,0.12,2026-09-20
+L2,Long Two,Industrials,Electrical Equipment,100,6000000000,2.2,1.8,0.10,2026-09-22
+L3,Long Three,Industrials,Building Products,100,7000000000,3.0,2.4,0.08,2026-09-25
+S1,Short One,Industrials,Industrial Conglomerates,100,30000000000,10.0,11.0,-0.05,2026-09-18
+S2,Short Two,Industrials,Aerospace & Defense,100,35000000000,12.0,13.0,-0.04,2026-09-19
+S3,Short Three,Industrials,Machinery,100,40000000000,15.0,16.0,-0.08,2026-09-21
+M1,Mat Long,Materials,Specialty Chemicals,80,5500000000,2.0,1.6,0.15,2026-09-20
+M2,Mat Short,Materials,Specialty Chemicals,80,32000000000,16.0,18.0,-0.10,2026-09-20

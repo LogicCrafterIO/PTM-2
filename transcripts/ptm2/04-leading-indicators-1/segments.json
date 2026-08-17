@@ -1,0 +1,3950 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 28.2,
+      "text": "Welcome back to the computer screen. We're going to press on now and we're going to be looking at the next stage of the PTM. We're going to be looking at predicting economic growth. And we're going to be looking at leading indicators. So we're getting into the meat of the PTM video series now."
+    },
+    {
+      "start": 28.2,
+      "end": 58.12,
+      "text": "Get your concentration to the maximum level because we've got a lot of detail and this is a big, big video. Video four, leading indicators one, real interest rates and the yield curve. Now, if you haven't seen in the downloads area, we do have some resources that accompany the video. We're going to be looking at bonds and interest rates in this video."
+    },
+    {
+      "start": 58.12,
+      "end": 79.68,
+      "text": "And we have a PDF download and Excel files that you should be downloading. Probably best before you go through this video to download the PDF and go over the bond market and interest rates basics. Okay. It's in the downloads area, the downloads section for the video."
+    },
+    {
+      "start": 81.12,
+      "end": 89.12,
+      "text": "Best to read it, best to read it, best to read it, best to read it, go over it before going through this video. Okay. We also have spreadsheet files that accompany the video."
+    },
+    {
+      "start": 89.12,
+      "end": 104.12,
+      "text": "So download those. You'll be using these throughout the video and after the video to fully understand bond markets and interest rates. And you'll be using those spreadsheet files in the future on a continuous basis."
+    },
+    {
+      "start": 104.12,
+      "end": 127.12,
+      "text": "To keep on top of bond markets and interest rates. So obtaining a macroeconomic view. We had a look at that in the last video where we looked at GDP. So in the previous video, we analyzed GDP and why it's important to attempt to forecast it."
+    },
+    {
+      "start": 127.12,
+      "end": 139.12,
+      "text": "And why it's important to attempt to forecast it. Why? Because we're attempting to forecast expected future company earnings and stock market direction."
+    },
+    {
+      "start": 139.12,
+      "end": 153.12,
+      "text": "However, when we are forming a macroeconomic view. We shouldn't only view it through the lens of economic growth purely. Okay."
+    },
+    {
+      "start": 153.12,
+      "end": 167.12,
+      "text": "We have to view it through the lens of both growth and liquidity. Now we're going to be looking a lot throughout the video series at a metric called PE, the PE ratio."
+    },
+    {
+      "start": 167.12,
+      "end": 182.12,
+      "text": "PE, the PE ratio, price earnings ratio. And every stock market has a PE ratio. We'll get into this in a lot more detail later in the video series."
+    },
+    {
+      "start": 182.12,
+      "end": 195.12,
+      "text": "The stock market PE, when we're looking at it, it's generally true to say that whilst economic growth drives the denominator, the E in the PE,"
+    },
+    {
+      "start": 195.12,
+      "end": 209.12,
+      "text": "liquidity drives the P, which is price. So PE is the price of an asset divided by earnings. So the price of a stock divided by earnings."
+    },
+    {
+      "start": 209.12,
+      "end": 222.12,
+      "text": "But the stock market has its own earnings. It's the total earnings of the stock market. And the stock market has a price. It's the price, the level of the stock market."
+    },
+    {
+      "start": 222.12,
+      "end": 236.12,
+      "text": "Okay. So every stock market has a PE. And economic growth drives the E in the PE ratio. Liquidity drives the P."
+    },
+    {
+      "start": 236.12,
+      "end": 254.12,
+      "text": "So it's very important to understand this. When we are attempting to obtain a macroeconomic view, it's very important to not just look at this through the lens of growth, through the lens of economic growth."
+    },
+    {
+      "start": 254.12,
+      "end": 272.12,
+      "text": "We have to understand that liquidity is a factor. Growth drives earnings. Liquidity drives prices. When liquidity is abundant, it's cost. So the cost of liquidity is cheap."
+    },
+    {
+      "start": 272.12,
+      "end": 296.12,
+      "text": "When liquidity is scarce, it's cost is high. It's expensive. Now, these terms cheap and expensive, we should always be careful when we're using these terms, because cheap and expensive, as you'll realize later in the video series, is highly subjective."
+    },
+    {
+      "start": 296.12,
+      "end": 314.12,
+      "text": "Okay. But in general terms, when liquidity is abundant, so it's in high supply, liquidity is cheap. It's low priced. When liquidity is scarce, its cost is high. It's expensive. It's high priced. Okay."
+    },
+    {
+      "start": 314.12,
+      "end": 330.12,
+      "text": "Abundant liquidity drives prices of financial assets higher. Okay. And scarce liquidity puts downward pressure on asset prices, including the stock market."
+    },
+    {
+      "start": 330.12,
+      "end": 342.12,
+      "text": "So in general terms, guys, when there's a lot of liquidity in financial markets, this is a good thing. It's good for financial assets."
+    },
+    {
+      "start": 342.12,
+      "end": 362.12,
+      "text": "When liquidity dries up. When liquidity dries up. When there's very little liquidity. This is a bad thing for financial markets. Financial markets tend to go down when there's a lack of liquidity or liquidity dries up. Financial markets tend to go up when there's an abundance of liquidity."
+    },
+    {
+      "start": 362.12,
+      "end": 390.12,
+      "text": "So prices going up when there's an abundance of liquidity. So prices going down when liquidity dries up and is scarce. It is very important to understand these concepts and ideas as we're building up our knowledge of financial markets and building up our understanding of bonds and interest rates and their effect on stock markets."
+    },
+    {
+      "start": 390.12,
+      "end": 406.12,
+      "text": "As leading indicators. So let's have a look at bonds and interest rates. As equity traders and portfolio managers, it's really essential for us to know what's going on in the bond markets all the time on a regular basis."
+    },
+    {
+      "start": 406.12,
+      "end": 422.12,
+      "text": "What you'll find is generally speaking, is that typically retail traders and even a lot of professional traders really pay absolutely no attention to bond markets and interest rates. Or if they do, it's a superficial interest."
+    },
+    {
+      "start": 422.12,
+      "end": 444.12,
+      "text": "Very little attention is given to bonds and interest rates. Why is this? Well, it's usually down to a lack of confidence, a lack of confidence in their ability to just be able to learn the details of how bond markets work and how they actually affect equities markets and equities portfolios."
+    },
+    {
+      "start": 444.12,
+      "end": 462.12,
+      "text": "Now, we don't need to be absolute experts on bond markets. Okay. We do, though, need a generalist understanding and appreciation for how money is priced, how the money markets work. Okay."
+    },
+    {
+      "start": 462.12,
+      "end": 478.12,
+      "text": "Because the real and relative price or cost of money also impacts other asset classes like equities, currencies and commodities."
+    },
+    {
+      "start": 478.12,
+      "end": 484.12,
+      "text": "Now, this is a new term that we brought in here, the price and cost of money."
+    },
+    {
+      "start": 484.12,
+      "end": 493.12,
+      "text": "What are we talking about here? Well, when we refer to the price or cost of money, we're referring to interest rates. Okay."
+    },
+    {
+      "start": 493.12,
+      "end": 500.12,
+      "text": "And governments and corporates borrow money at or above the prevailing market interest rate."
+    },
+    {
+      "start": 500.12,
+      "end": 519.12,
+      "text": "The price of money is firstly set by the wholesale money markets. And then secondly, by the banking sector, which determines the cost of loans in the private market. Okay."
+    },
+    {
+      "start": 519.12,
+      "end": 530.12,
+      "text": "Now the level at which interest rates clear has an impact on equities as an overall asset class."
+    },
+    {
+      "start": 530.12,
+      "end": 542.12,
+      "text": "So index values, the stock market itself trades due to macroeconomic factors of relative value between equities and bonds."
+    },
+    {
+      "start": 542.12,
+      "end": 562.12,
+      "text": "And individual stocks, so individual equities within the stock market, their valuations are down to macroeconomic factors driving relative asset class valuations plus microeconomic factors that are idiosyncratic to the company itself."
+    },
+    {
+      "start": 562.12,
+      "end": 570.12,
+      "text": "Such as, for example, the size and cost of an individual's, an individual company's debt."
+    },
+    {
+      "start": 570.12,
+      "end": 579.12,
+      "text": "Of course, there's other microeconomic factors as well that are idiosyncratic to a company."
+    },
+    {
+      "start": 579.12,
+      "end": 581.12,
+      "text": "Understand the general concept here."
+    },
+    {
+      "start": 581.12,
+      "end": 595.12,
+      "text": "The stock market in its entirety is affected by macroeconomic factors of the relative value of equities and bonds, which is driven by interest rates. Okay."
+    },
+    {
+      "start": 595.12,
+      "end": 596.12,
+      "text": "The stock market in its entirety and liquidity."
+    },
+    {
+      "start": 596.12,
+      "end": 601.12,
+      "text": "The stock market is just a collection of all of those stocks."
+    },
+    {
+      "start": 601.12,
+      "end": 608.12,
+      "text": "Now let's continue to try and understand here interest rates and the price or cost of money."
+    },
+    {
+      "start": 608.12,
+      "end": 621.12,
+      "text": "When a central bank adjusts interest rates, they are fully intending to change the price of money, the cost of money."
+    },
+    {
+      "start": 621.12,
+      "end": 634.12,
+      "text": "When a central bank adjusts interest rates, they are fully intending to change the price of money, the cost of money."
+    },
+    {
+      "start": 634.12,
+      "end": 653.12,
+      "text": "In an economy that requires stimulus, say in the form of investment and consumption, central banks look to reduce interest rates and in order to moderate inflation or prevent excess demand, they look to increase interest rates."
+    },
+    {
+      "start": 653.12,
+      "end": 660.12,
+      "text": "This basic approach from central banks is called conventional monetary policy."
+    },
+    {
+      "start": 660.12,
+      "end": 666.12,
+      "text": "They are using interest rates to stimulate or cool down the economy."
+    },
+    {
+      "start": 666.12,
+      "end": 681.12,
+      "text": "Now, depending on where you are in the world, central banks, we have different central banks across the world and we have different terms used for interest rates."
+    },
+    {
+      "start": 681.12,
+      "end": 694.12,
+      "text": "So, depending on where you are, the official rate in the US is known as the Fed Funds Rate, that's from the central bank, the US Federal Reserve."
+    },
+    {
+      "start": 694.12,
+      "end": 703.12,
+      "text": "In Europe, it's known as the MRO, the Main Refinancing Operations, that's the ECB, the European Central Bank."
+    },
+    {
+      "start": 703.12,
+      "end": 715.12,
+      "text": "And for example, in the UK, if we just take one randomly somewhere else in the world, the interest rate set by the Bank of England is known as the base rate."
+    },
+    {
+      "start": 716.12,
+      "end": 721.12,
+      "text": "They're all trying to achieve the same outcome to manipulate the economy."
+    },
+    {
+      "start": 722.12,
+      "end": 730.12,
+      "text": "It's to set the rate expressed as an annual percentage rate that banks can lend out or borrow at overnight."
+    },
+    {
+      "start": 731.12,
+      "end": 750.12,
+      "text": "Effectively, what they're doing is they are setting the price of money, the cost of money, which ideally then flows through to the real economy via the distribution channel of the banking sector, more specifically via bank lending."
+    },
+    {
+      "start": 750.12,
+      "end": 754.12,
+      "text": "Now, there are official rates and market rates."
+    },
+    {
+      "start": 754.12,
+      "end": 768.12,
+      "text": "So, whilst central banks themselves set the official interest rate, there's an abundance of many and varied markets for bonds, notes, wholesale money."
+    },
+    {
+      "start": 768.12,
+      "end": 777.12,
+      "text": "They are collectively known as the market, collectively setting market interest rates."
+    },
+    {
+      "start": 777.12,
+      "end": 784.12,
+      "text": "Now, we're going to concentrate on the United States here because that's what we're interested in mostly."
+    },
+    {
+      "start": 784.12,
+      "end": 794.12,
+      "text": "We are interested in the US and forecasting US economic growth, GDP and liquidity in US financial markets."
+    },
+    {
+      "start": 794.12,
+      "end": 798.12,
+      "text": "So, we'll be focusing exclusively here on the US."
+    },
+    {
+      "start": 798.12,
+      "end": 817.12,
+      "text": "The 10-year Treasury note rate is the rate or price and cost at which the US government can borrow money over 10 years and is considered by the private market as a benchmark rate."
+    },
+    {
+      "start": 817.12,
+      "end": 818.12,
+      "text": "What do we mean by benchmark rate?"
+    },
+    {
+      "start": 818.12,
+      "end": 820.12,
+      "text": "What do we mean by benchmark rate?"
+    },
+    {
+      "start": 820.12,
+      "end": 824.12,
+      "text": "Everything is priced off this rate in the private market."
+    },
+    {
+      "start": 824.12,
+      "end": 825.12,
+      "text": "Okay."
+    },
+    {
+      "start": 825.12,
+      "end": 833.12,
+      "text": "The US 10-year Treasury bond, it's the world's most liquid and widely traded non-derivative debt instrument."
+    },
+    {
+      "start": 833.12,
+      "end": 841.12,
+      "text": "And the interest rate or the yield on the 10-year Treasury bond is known as the 10-year yield."
+    },
+    {
+      "start": 841.12,
+      "end": 862.12,
+      "text": "So, as a open quotes benchmark, close quotes, it's used by the private market as a reference, if you like, a reference point to price risk, to price bonds, notes and wholesale money in the private market."
+    },
+    {
+      "start": 862.12,
+      "end": 871.12,
+      "text": "Now, in the US, the US Federal Reserve, the central bank in the US is the lender of last resort."
+    },
+    {
+      "start": 871.12,
+      "end": 886.12,
+      "text": "And the US government globally is considered to be the safest borrower in the world because the US government has historically never defaulted on its debt obligations."
+    },
+    {
+      "start": 886.12,
+      "end": 893.12,
+      "text": "And we put the word safest in quotations there because safest is a perception."
+    },
+    {
+      "start": 893.12,
+      "end": 894.12,
+      "text": "It's subjective."
+    },
+    {
+      "start": 894.12,
+      "end": 895.12,
+      "text": "Okay."
+    },
+    {
+      "start": 895.12,
+      "end": 898.12,
+      "text": "So, there are reasons for that."
+    },
+    {
+      "start": 898.12,
+      "end": 899.12,
+      "text": "Okay."
+    },
+    {
+      "start": 899.12,
+      "end": 904.12,
+      "text": "The US Treasury market is the world's deepest and most liquid market."
+    },
+    {
+      "start": 904.12,
+      "end": 905.12,
+      "text": "Okay."
+    },
+    {
+      "start": 905.12,
+      "end": 918.12,
+      "text": "These securities often serve as collateral for the global financial system itself and are all denominated in US dollars, the world's reserve currency."
+    },
+    {
+      "start": 918.12,
+      "end": 931.12,
+      "text": "Now, the yield on the US 10-year Treasury note is set by the bond market and it represents a benchmark from which all other financial instruments are priced."
+    },
+    {
+      "start": 931.12,
+      "end": 932.12,
+      "text": "And they're priced by spreads."
+    },
+    {
+      "start": 932.12,
+      "end": 937.12,
+      "text": "So, a spread over the 10-year."
+    },
+    {
+      "start": 937.12,
+      "end": 941.12,
+      "text": "So, they're priced higher than the 10-year Treasury itself."
+    },
+    {
+      "start": 941.12,
+      "end": 952.12,
+      "text": "And these spreads over the benchmark are used to price corporate bonds, swaps, mortgages, fixed-rate loans, wholesale money."
+    },
+    {
+      "start": 952.12,
+      "end": 955.12,
+      "text": "It's collectively the private market."
+    },
+    {
+      "start": 955.12,
+      "end": 956.12,
+      "text": "Okay."
+    },
+    {
+      "start": 956.12,
+      "end": 961.12,
+      "text": "Rates on these products clear in the market according to the risk of the borrower."
+    },
+    {
+      "start": 961.12,
+      "end": 969.12,
+      "text": "And that's foreseen by the lender themselves and set at a premium to the benchmark."
+    },
+    {
+      "start": 969.12,
+      "end": 972.12,
+      "text": "And it's just a basic approach, guys, right?"
+    },
+    {
+      "start": 972.12,
+      "end": 974.12,
+      "text": "Higher risk is higher rates."
+    },
+    {
+      "start": 974.12,
+      "end": 976.12,
+      "text": "Lower risk is lower rates."
+    },
+    {
+      "start": 976.12,
+      "end": 984.12,
+      "text": "So, a lender, if they see someone as high risk or see a company as high risk, they're going to have a higher rate."
+    },
+    {
+      "start": 984.12,
+      "end": 992.12,
+      "text": "So, a much larger spread over the 10-year Treasury note, the yield, the 10-year benchmark."
+    },
+    {
+      "start": 992.12,
+      "end": 1010.12,
+      "text": "And if a lender sees a company as lower risk, then a lower rate or tighter spread is going to be given to that borrower by the lender."
+    },
+    {
+      "start": 1010.12,
+      "end": 1013.12,
+      "text": "So, higher risk is higher rates."
+    },
+    {
+      "start": 1013.12,
+      "end": 1015.12,
+      "text": "Lower risk is lower rates."
+    },
+    {
+      "start": 1015.12,
+      "end": 1021.12,
+      "text": "Now, we can also have a look at the visuals of official rates."
+    },
+    {
+      "start": 1021.12,
+      "end": 1024.12,
+      "text": "This is the United States."
+    },
+    {
+      "start": 1024.12,
+      "end": 1033.12,
+      "text": "So, the Fed funds rate, the effective federal funds rate, as set by the Federal Reserve, the U.S. Federal Reserve."
+    },
+    {
+      "start": 1033.12,
+      "end": 1045.12,
+      "text": "And we had a brief look at this in the previous video when we were looking at correlations between GDP growth and S&P 500 returns."
+    },
+    {
+      "start": 1045.12,
+      "end": 1056.12,
+      "text": "So, from left to right, we're looking at the official rate since the early 1950s all the way up to 2020."
+    },
+    {
+      "start": 1056.12,
+      "end": 1065.12,
+      "text": "And you can see we have a big rise in rates all the way to the peak in the 1980s."
+    },
+    {
+      "start": 1065.12,
+      "end": 1080.12,
+      "text": "And then since the early to mid-80s, we have the Fed funds rate, the official rate, dropping continuously to the point now where we're essentially at zero."
+    },
+    {
+      "start": 1080.12,
+      "end": 1083.12,
+      "text": "So, we are at zero official rate, okay?"
+    },
+    {
+      "start": 1083.12,
+      "end": 1089.12,
+      "text": "Now, of course, we've had these blips in between where rates have gone up."
+    },
+    {
+      "start": 1089.12,
+      "end": 1104.12,
+      "text": "So, in the late 80s, in the mid-90s, in the late 90s, in the mid-2000s, and more recently, in the mid-teens."
+    },
+    {
+      "start": 1104.12,
+      "end": 1108.12,
+      "text": "Of course, we've had these blips where rates have gone up."
+    },
+    {
+      "start": 1108.12,
+      "end": 1118.12,
+      "text": "But the official rate in the last 35 years or so has been on a consistent and steady decline."
+    },
+    {
+      "start": 1118.12,
+      "end": 1124.12,
+      "text": "If we look at some other areas of the world, the story is not any different."
+    },
+    {
+      "start": 1124.12,
+      "end": 1145.12,
+      "text": "So, if we look at the MRO, the main refinancing operation from the ECB since the late 90s, we'll see a similar story start to take shape around 2008, where interest rates peak."
+    },
+    {
+      "start": 1145.12,
+      "end": 1150.12,
+      "text": "And then they've just come down continuously and now they're at zero."
+    },
+    {
+      "start": 1150.12,
+      "end": 1153.12,
+      "text": "We can also look at the Bank of England official base rate."
+    },
+    {
+      "start": 1153.12,
+      "end": 1156.12,
+      "text": "The base rate, similar situation."
+    },
+    {
+      "start": 1156.12,
+      "end": 1165.12,
+      "text": "We get more data there than Europe because the Eurozone ECB is not that old."
+    },
+    {
+      "start": 1165.12,
+      "end": 1172.12,
+      "text": "But similar to the US data, we can go back to the 50s, it exhibits a very similar shape."
+    },
+    {
+      "start": 1172.12,
+      "end": 1190.12,
+      "text": "So, going up continuously until around the mid-80s and then dropping continuously since the mid-80s for around 35 years ago, down to the current level of essentially zero."
+    },
+    {
+      "start": 1190.12,
+      "end": 1207.12,
+      "text": "Now, let's have a look as well at the US government debt, the 10-year government treasury yield, which the bond market prices off official rates."
+    },
+    {
+      "start": 1207.12,
+      "end": 1212.12,
+      "text": "So, the private markets, the private bond market pricing off official rates."
+    },
+    {
+      "start": 1212.12,
+      "end": 1215.12,
+      "text": "Of course, we see a similar situation."
+    },
+    {
+      "start": 1215.12,
+      "end": 1226.12,
+      "text": "This data, by the way, and this spreadsheet is available in the downloads area and you can update that continuously going forward yourself."
+    },
+    {
+      "start": 1226.12,
+      "end": 1237.12,
+      "text": "But again, same story since the early mid-80s, just continuous decline in the 10-year government treasury yield."
+    },
+    {
+      "start": 1237.12,
+      "end": 1252.12,
+      "text": "And we're going to introduce you here to a shorter term bond, shorter term US government treasury bond, the two-year sovereign bond for the US."
+    },
+    {
+      "start": 1252.12,
+      "end": 1259.12,
+      "text": "So, there's different maturities in the bond market for the US government."
+    },
+    {
+      "start": 1259.12,
+      "end": 1268.12,
+      "text": "And we've so far only looked at the 10-year, but the two-year government bond exists as well."
+    },
+    {
+      "start": 1268.12,
+      "end": 1277.12,
+      "text": "And we're essentially looking, when we're looking at the 10-year bond, we're looking at longer term yield, longer term rates."
+    },
+    {
+      "start": 1277.12,
+      "end": 1282.12,
+      "text": "And when we're looking at the two-year bond, we're looking at shorter term rates."
+    },
+    {
+      "start": 1282.12,
+      "end": 1292.12,
+      "text": "And again, you can see here, we're exhibiting the same decline in rates since the mid-early 80s."
+    },
+    {
+      "start": 1292.12,
+      "end": 1301.12,
+      "text": "Now, a little bit later in this video, we are going to be looking at the relationship between the 10-year and the two-year."
+    },
+    {
+      "start": 1301.12,
+      "end": 1316.12,
+      "text": "And we're going to start looking at and understanding the relationship between long term and short term money in the bond market as an indicator of risk and also as a leading indicator."
+    },
+    {
+      "start": 1317.12,
+      "end": 1326.12,
+      "text": "But in the meantime, we have to continue building knowledge and understanding of the bond market and interest rates."
+    },
+    {
+      "start": 1326.12,
+      "end": 1331.12,
+      "text": "And there's a big market outside the US called the Euro-dollar market."
+    },
+    {
+      "start": 1331.12,
+      "end": 1339.12,
+      "text": "Euro-dollars refer to any US dollars held outside the US banking system."
+    },
+    {
+      "start": 1341.12,
+      "end": 1351.12,
+      "text": "And the term Euro-dollars doesn't just mean geographical location, but US dollars held by foreign or overseas banks."
+    },
+    {
+      "start": 1352.12,
+      "end": 1364.12,
+      "text": "There can actually be Euro-dollars held in any country outside the US by banks outside the US banking system and by US banks themselves, but overseas."
+    },
+    {
+      "start": 1364.12,
+      "end": 1369.12,
+      "text": "Now, the Euro-dollar market was established after World War II and the Marshall Plan."
+    },
+    {
+      "start": 1369.12,
+      "end": 1379.12,
+      "text": "When countries like Germany, France, Belgium, UK, that were devastated from the war, began recovering and growing their economies by trading US dollars."
+    },
+    {
+      "start": 1379.12,
+      "end": 1384.12,
+      "text": "And they were trying to build back their economies and build back infrastructure."
+    },
+    {
+      "start": 1385.12,
+      "end": 1393.12,
+      "text": "In many, many cases, countries preferred not to repatriate dollars back through the US banking system."
+    },
+    {
+      "start": 1394.12,
+      "end": 1402.12,
+      "text": "And what they did was they chose to hold the US dollars offshore, primarily in London-based banks."
+    },
+    {
+      "start": 1403.12,
+      "end": 1411.12,
+      "text": "And from that market, a bank lending market matured over time around the collateral."
+    },
+    {
+      "start": 1412.12,
+      "end": 1420.12,
+      "text": "And the market lending rate of that market became known as the London Interbank Offer Rate or LIBOR."
+    },
+    {
+      "start": 1421.12,
+      "end": 1424.12,
+      "text": "Now, the Euro-dollar market is extremely important."
+    },
+    {
+      "start": 1424.12,
+      "end": 1439.12,
+      "text": "It's a huge market because it's the liquidity of US dollar lending in the rest of the world outside of the United States."
+    },
+    {
+      "start": 1439.12,
+      "end": 1452.12,
+      "text": "And the Euro-dollar rate, LIBOR, the London Interbank Offer Rate, is priced off the official rate in the United States as the benchmark."
+    },
+    {
+      "start": 1453.12,
+      "end": 1458.12,
+      "text": "So you can see how it's very important, official rates in the United States."
+    },
+    {
+      "start": 1459.12,
+      "end": 1465.12,
+      "text": "Very important how they are referenced, not only in the United States, but in the rest of the world."
+    },
+    {
+      "start": 1466.12,
+      "end": 1480.12,
+      "text": "So the way it works in practice, banks holding US dollar deposits outside the United States in the rest of the world reference the three-month LIBOR rate,"
+    },
+    {
+      "start": 1481.12,
+      "end": 1492.12,
+      "text": "which is priced off and referenced from, most typically from the three-month US Treasury rate."
+    },
+    {
+      "start": 1493.12,
+      "end": 1497.12,
+      "text": "That spread is commonly known as the TED spread."
+    },
+    {
+      "start": 1498.12,
+      "end": 1508.12,
+      "text": "And the three-month US Treasury rate in the private market is priced off the official rate, the official base rate."
+    },
+    {
+      "start": 1509.12,
+      "end": 1523.12,
+      "text": "So you can see how throughout the global financial system, throughout the global banking system, everything leads back to the official base rate in the United States."
+    },
+    {
+      "start": 1524.12,
+      "end": 1536.12,
+      "text": "Companies and governments outside the United States, in the rest of the world, when they're borrowing in US dollars, the lender is referencing off these rates."
+    },
+    {
+      "start": 1537.12,
+      "end": 1540.12,
+      "text": "That's how important it is."
+    },
+    {
+      "start": 1540.12,
+      "end": 1546.12,
+      "text": "It ripples all the way through from the United States across the rest of the world."
+    },
+    {
+      "start": 1547.12,
+      "end": 1563.12,
+      "text": "Now, the LIBOR, three-month LIBOR rate is referenced by one of the most liquid and most traded instruments on the planet, the Euro-dollar futures contract."
+    },
+    {
+      "start": 1564.12,
+      "end": 1580.12,
+      "text": "Euro-dollar is essentially a time deposit product, Euro-dollar futures, where it's a bank deposit with a rate of interest at the end of the three months."
+    },
+    {
+      "start": 1581.12,
+      "end": 1589.12,
+      "text": "The bank deposit is priced off $1 million in terms of the size of the deposit."
+    },
+    {
+      "start": 1589.12,
+      "end": 1605.12,
+      "text": "So $1 million deposited in a bank account outside the United States and the futures contract written on that for the value of the $1 million."
+    },
+    {
+      "start": 1606.12,
+      "end": 1610.12,
+      "text": "Marked at the interest rate at the end of the three months."
+    },
+    {
+      "start": 1611.12,
+      "end": 1618.12,
+      "text": "It's one of the most liquid instruments traded on the planet and therefore extremely important."
+    },
+    {
+      "start": 1619.12,
+      "end": 1633.12,
+      "text": "And you can see now as well that the Euro-dollar futures contract linked to the three-month LIBOR, linked to three-month US Treasuries, linked to the official base rate in the United States."
+    },
+    {
+      "start": 1634.12,
+      "end": 1656.12,
+      "text": "You can see how all of this is connected and how the rest of the world depends extremely heavily on the US dollar and the liquidity and health of the US Treasury and bond market and also US yields and rates."
+    },
+    {
+      "start": 1657.12,
+      "end": 1666.12,
+      "text": "You know, it is often stated that when the US sleazes, the rest of the world catches a cold."
+    },
+    {
+      "start": 1667.12,
+      "end": 1670.12,
+      "text": "This is very true in the bond markets."
+    },
+    {
+      "start": 1671.12,
+      "end": 1682.12,
+      "text": "When liquidity is abundant in US bond markets, the rest of the world has liquidity."
+    },
+    {
+      "start": 1684.12,
+      "end": 1692.12,
+      "text": "When liquidity dries up in the United States, the rest of the world is in trouble."
+    },
+    {
+      "start": 1693.12,
+      "end": 1702.12,
+      "text": "And this is why it's so important to obtain a macroeconomic view, not just of the US, but of the rest of the world."
+    },
+    {
+      "start": 1703.12,
+      "end": 1709.12,
+      "text": "This is why it's so important to understand what is going on in US bond markets."
+    },
+    {
+      "start": 1710.12,
+      "end": 1712.12,
+      "text": "But what about issuers and buyers of bonds?"
+    },
+    {
+      "start": 1713.12,
+      "end": 1713.12,
+      "text": "Who are they?"
+    },
+    {
+      "start": 1714.12,
+      "end": 1726.12,
+      "text": "Well, the issuer, the definition of issuer in the United States, for example, for a government bond, is the United States Treasury."
+    },
+    {
+      "start": 1727.12,
+      "end": 1734.12,
+      "text": "They are financing their spending or outgoings of the US government."
+    },
+    {
+      "start": 1735.12,
+      "end": 1738.12,
+      "text": "So the US Treasury issues a government bond."
+    },
+    {
+      "start": 1739.12,
+      "end": 1745.12,
+      "text": "And the private market invests or lends that money to the US government."
+    },
+    {
+      "start": 1746.12,
+      "end": 1752.12,
+      "text": "And the US government is using that money to finance government spending."
+    },
+    {
+      "start": 1753.12,
+      "end": 1761.12,
+      "text": "Now, the buyers of government bonds, the entities that are investing or lending money to the US government."
+    },
+    {
+      "start": 1762.12,
+      "end": 1774.12,
+      "text": "The buyers of government bonds are pension funds, mutual funds, hedge funds, investment banks, commercial banks, even individuals and even other countries."
+    },
+    {
+      "start": 1775.12,
+      "end": 1776.12,
+      "text": "Central banks."
+    },
+    {
+      "start": 1776.12,
+      "end": 1777.12,
+      "text": "Central banks."
+    },
+    {
+      "start": 1778.12,
+      "end": 1779.12,
+      "text": "And they are traded."
+    },
+    {
+      "start": 1779.12,
+      "end": 1785.12,
+      "text": "Debt securities trade over the counter, or in short, OTC."
+    },
+    {
+      "start": 1786.12,
+      "end": 1794.12,
+      "text": "They're not like equities, where equities, stocks and stock instruments trade on exchange."
+    },
+    {
+      "start": 1795.12,
+      "end": 1802.12,
+      "text": "Bond futures, like Euro dollars, futures contracts, do, however, trade on exchange."
+    },
+    {
+      "start": 1803.12,
+      "end": 1819.12,
+      "text": "And it's important to understand these dynamics because as traders and portfolio managers, when we're seeking information from the bond markets for the outlook of economic growth and liquidity."
+    },
+    {
+      "start": 1820.12,
+      "end": 1824.12,
+      "text": "What we need to really understand is money flows."
+    },
+    {
+      "start": 1826.12,
+      "end": 1833.12,
+      "text": "And money flows are very, very important in the context of government bond markets."
+    },
+    {
+      "start": 1834.12,
+      "end": 1839.12,
+      "text": "But let's have a look at the world's largest and most liquid bond markets just to understand this globally."
+    },
+    {
+      "start": 1840.12,
+      "end": 1844.12,
+      "text": "The US Treasury market, by far the biggest denominated in US dollars."
+    },
+    {
+      "start": 1845.12,
+      "end": 1849.12,
+      "text": "The European government bond market denominated in euros."
+    },
+    {
+      "start": 1850.12,
+      "end": 1854.12,
+      "text": "UK gilts denominated in pounds, British pounds."
+    },
+    {
+      "start": 1855.12,
+      "end": 1863.12,
+      "text": "And the Japanese government bonds, JGBs, that market denominated in yen, Japanese yen."
+    },
+    {
+      "start": 1864.12,
+      "end": 1880.12,
+      "text": "There's also peripheral markets globally, such as Switzerland, Germany, Italy, Canada, Australia, New Zealand and various emerging market countries in regions like Latin America, Asia, Eastern Europe and Africa."
+    },
+    {
+      "start": 1881.12,
+      "end": 1886.12,
+      "text": "Now, just to give you a sense of the size of US bond markets."
+    },
+    {
+      "start": 1887.12,
+      "end": 1891.12,
+      "text": "US bond markets make up almost 40 trillion dollars in value."
+    },
+    {
+      "start": 1892.12,
+      "end": 1901.12,
+      "text": "And when we compare this to the stock market, domestic stocks in the US represent around 20 trillion dollars in value."
+    },
+    {
+      "start": 1902.12,
+      "end": 1905.12,
+      "text": "In terms of daily trading volume, so liquidity."
+    },
+    {
+      "start": 1906.12,
+      "end": 1913.12,
+      "text": "The daily trading volume in bonds in the US is around 700 billion dollars per day."
+    },
+    {
+      "start": 1914.12,
+      "end": 1923.12,
+      "text": "This is basically around three and a half times the size of the stock market volumes in the US."
+    },
+    {
+      "start": 1924.12,
+      "end": 1937.12,
+      "text": "Clearly, market rates are a very important factor and a very efficient indicator of relative value for other financial instruments."
+    },
+    {
+      "start": 1938.12,
+      "end": 1945.12,
+      "text": "Now, if we're going to understand how the bond market affects equities,"
+    },
+    {
+      "start": 1946.12,
+      "end": 1954.12,
+      "text": "we need to look at it in the context of a business cycle, an interest rate cycle, a credit cycle."
+    },
+    {
+      "start": 1956.12,
+      "end": 1958.12,
+      "text": "Let's have a look at a typical cycle."
+    },
+    {
+      "start": 1959.12,
+      "end": 1961.12,
+      "text": "Let's start from the very top."
+    },
+    {
+      "start": 1963.12,
+      "end": 1967.12,
+      "text": "Where we look at the beginning of an economic growth boom."
+    },
+    {
+      "start": 1968.12,
+      "end": 1969.12,
+      "text": "What tends to happen?"
+    },
+    {
+      "start": 1969.12,
+      "end": 1972.12,
+      "text": "What actually happens when this occurs?"
+    },
+    {
+      "start": 1973.12,
+      "end": 1975.12,
+      "text": "Well, money becomes cheap."
+    },
+    {
+      "start": 1976.12,
+      "end": 1976.12,
+      "text": "Okay."
+    },
+    {
+      "start": 1977.12,
+      "end": 1983.12,
+      "text": "Money becomes low priced and we get an increase in liquidity."
+    },
+    {
+      "start": 1984.12,
+      "end": 1985.12,
+      "text": "Okay."
+    },
+    {
+      "start": 1986.12,
+      "end": 1987.12,
+      "text": "Prices start to move."
+    },
+    {
+      "start": 1988.12,
+      "end": 1995.12,
+      "text": "The cost of money, the price of money becomes relatively cheap or cheaper than before."
+    },
+    {
+      "start": 1996.12,
+      "end": 1997.12,
+      "text": "What happens?"
+    },
+    {
+      "start": 1997.12,
+      "end": 1998.12,
+      "text": "The economy starts moving."
+    },
+    {
+      "start": 1999.12,
+      "end": 2002.12,
+      "text": "Governments, companies and individuals borrow more of it."
+    },
+    {
+      "start": 2003.12,
+      "end": 2007.12,
+      "text": "We enter a phase of high growth."
+    },
+    {
+      "start": 2008.12,
+      "end": 2013.12,
+      "text": "So we get higher growth prospects, lots of consumption and investment."
+    },
+    {
+      "start": 2014.12,
+      "end": 2018.12,
+      "text": "What happens to equity market, stock market valuations?"
+    },
+    {
+      "start": 2019.12,
+      "end": 2024.12,
+      "text": "We get higher equity market valuations and higher earnings."
+    },
+    {
+      "start": 2025.12,
+      "end": 2026.12,
+      "text": "And then what happens?"
+    },
+    {
+      "start": 2026.12,
+      "end": 2034.12,
+      "text": "In response to that, money becomes more relatively expensive than before."
+    },
+    {
+      "start": 2034.12,
+      "end": 2036.12,
+      "text": "Money becomes higher in price."
+    },
+    {
+      "start": 2037.12,
+      "end": 2038.12,
+      "text": "It becomes more expensive."
+    },
+    {
+      "start": 2039.12,
+      "end": 2048.12,
+      "text": "And then we have an end to the economic cycle where the economy resets to an equilibrium level."
+    },
+    {
+      "start": 2049.12,
+      "end": 2050.12,
+      "text": "And then we begin again."
+    },
+    {
+      "start": 2050.12,
+      "end": 2056.12,
+      "text": "Money becomes relatively cheaper and we enter another high growth phase."
+    },
+    {
+      "start": 2057.12,
+      "end": 2070.12,
+      "text": "But when we look at this cycle, obviously through this mechanism, companies are very important because they are the engines of driving higher growth."
+    },
+    {
+      "start": 2071.12,
+      "end": 2073.12,
+      "text": "Individuals are consumers."
+    },
+    {
+      "start": 2073.12,
+      "end": 2075.12,
+      "text": "Companies are investors."
+    },
+    {
+      "start": 2076.12,
+      "end": 2077.12,
+      "text": "Companies are driving growth."
+    },
+    {
+      "start": 2078.12,
+      "end": 2087.12,
+      "text": "If we're going to understand how bond markets really affect growth and company earnings, let's understand what the risk-free rate is."
+    },
+    {
+      "start": 2088.12,
+      "end": 2097.12,
+      "text": "There are several proxies for the risk-free rate, but here we are going to use the 10-year U.S. Treasury note rate."
+    },
+    {
+      "start": 2098.12,
+      "end": 2103.12,
+      "text": "It's the most widely tracked government debt instrument in finance and it's the main benchmark."
+    },
+    {
+      "start": 2104.12,
+      "end": 2121.12,
+      "text": "As mentioned previously, the yield of the 10-year Treasury bond is often used as a benchmark for the market to set other interest rates, such as corporate bonds, swaps, mortgages, et cetera, and fixed rate loans."
+    },
+    {
+      "start": 2122.12,
+      "end": 2131.12,
+      "text": "So, we are going to use the risk-free rate and we're going to use the benchmark of the 10-year U.S. Treasury note."
+    },
+    {
+      "start": 2132.12,
+      "end": 2135.12,
+      "text": "That is going to be our risk-free rate going forward."
+    },
+    {
+      "start": 2136.12,
+      "end": 2140.12,
+      "text": "So, what does this mean for companies and company earnings?"
+    },
+    {
+      "start": 2141.12,
+      "end": 2152.12,
+      "text": "Well, a very important formula used by equity markets to value companies is the discounted cash flow formula."
+    },
+    {
+      "start": 2153.12,
+      "end": 2164.12,
+      "text": "And if you look at the formula here, the DCF, the discounted cash flow, the present value of all future cash flows is the DCF."
+    },
+    {
+      "start": 2165.12,
+      "end": 2176.12,
+      "text": "And in the formula on the top, you can see cash flow one, cash flow two, cash flow all the way out to infinity in the future."
+    },
+    {
+      "start": 2177.12,
+      "end": 2187.12,
+      "text": "And you can see the discount factor of those cash flows is one plus the risk-free rate to the power of the period."
+    },
+    {
+      "start": 2187.12,
+      "end": 2188.12,
+      "text": "Okay."
+    },
+    {
+      "start": 2189.12,
+      "end": 2190.12,
+      "text": "Now, what happens here?"
+    },
+    {
+      "start": 2192.12,
+      "end": 2205.12,
+      "text": "Well, if we have a lower discount factor, so the R, the risk-free rate, if we have a lower discount factor, this gives us a higher present value."
+    },
+    {
+      "start": 2206.12,
+      "end": 2209.12,
+      "text": "We have a higher value for the DCF number."
+    },
+    {
+      "start": 2209.12,
+      "end": 2216.12,
+      "text": "So, we're getting a higher present value of all future cash flows."
+    },
+    {
+      "start": 2217.12,
+      "end": 2224.12,
+      "text": "A higher discount factor gives us a lower present value of all future cash flows."
+    },
+    {
+      "start": 2225.12,
+      "end": 2236.12,
+      "text": "So, the risk-free rate, which is priced by equity markets, it's used by equity markets and priced off the benchmark."
+    },
+    {
+      "start": 2236.12,
+      "end": 2247.12,
+      "text": "And here we're using the 10-year Treasury note rate, is a crucial factor in equity markets for valuing stocks and the stock market itself."
+    },
+    {
+      "start": 2248.12,
+      "end": 2250.12,
+      "text": "So, this is how it links together."
+    },
+    {
+      "start": 2251.12,
+      "end": 2252.12,
+      "text": "Now, we brought it up earlier."
+    },
+    {
+      "start": 2255.12,
+      "end": 2256.12,
+      "text": "Very, very important."
+    },
+    {
+      "start": 2258.12,
+      "end": 2259.12,
+      "text": "Price-Earnings Ratio."
+    },
+    {
+      "start": 2260.12,
+      "end": 2264.12,
+      "text": "It is the most widely used valuation measure of an equity index."
+    },
+    {
+      "start": 2265.12,
+      "end": 2282.12,
+      "text": "The price of the S&P 500, for example, divided by the EPS of the S&P 500 is the price-earnings Ratio of the S&P 500."
+    },
+    {
+      "start": 2283.12,
+      "end": 2292.12,
+      "text": "So, we're looking at the level of the S&P 500 and dividing it by the earnings per share of the S&P 500."
+    },
+    {
+      "start": 2294.12,
+      "end": 2317.12,
+      "text": "When all things being equal, real interest rates are close to or even less than zero, the S&P 500 commands a higher PE valuation multiple because future earnings expectations are discounted back by the market to a higher present value."
+    },
+    {
+      "start": 2318.12,
+      "end": 2330.12,
+      "text": "Now, the risk-free rate is a subjective, yet a fundamental driver of equity valuation when we're using DCF analysis."
+    },
+    {
+      "start": 2331.12,
+      "end": 2343.12,
+      "text": "As we go through that interest rate cycle that we looked at earlier, equities get repriced higher and lower according to where real interest rates are trading."
+    },
+    {
+      "start": 2343.12,
+      "end": 2347.12,
+      "text": "And we'll get on to the definition of real interest rates in a second."
+    },
+    {
+      "start": 2348.12,
+      "end": 2363.12,
+      "text": "We absolutely need to know, as traders, the macroeconomic conditions for real interest rates and central bank intentions around setting interest rates and real interest rates."
+    },
+    {
+      "start": 2364.12,
+      "end": 2390.12,
+      "text": "Now, as you're probably aware, over the last decade, central banks have been intervening in the bond market and the action is they've been buying bonds to artificially keep both nominal and real rates low in order to provide liquidity and inflation to prolong the expansionary part of the cycle."
+    },
+    {
+      "start": 2391.12,
+      "end": 2395.12,
+      "text": "By expanding nominal and real GDP growth."
+    },
+    {
+      "start": 2396.12,
+      "end": 2404.12,
+      "text": "This in itself also causes equity market valuations to remain at elevated levels."
+    },
+    {
+      "start": 2405.12,
+      "end": 2412.12,
+      "text": "Now, we're not going to be covering the central bank actions themselves in the PTM video series because these will change over time."
+    },
+    {
+      "start": 2413.12,
+      "end": 2417.12,
+      "text": "What's important to understand here is the implications."
+    },
+    {
+      "start": 2417.12,
+      "end": 2422.12,
+      "text": "This is what's going to stand the test of time in your overall trading framework."
+    },
+    {
+      "start": 2423.12,
+      "end": 2429.12,
+      "text": "So you can apply this template at any moment in time to any macroeconomic conditions."
+    },
+    {
+      "start": 2430.12,
+      "end": 2436.12,
+      "text": "So you're probably wondering what is the difference between nominal and real interest rates."
+    },
+    {
+      "start": 2437.12,
+      "end": 2443.12,
+      "text": "Well, distinguishing between the two is very important."
+    },
+    {
+      "start": 2444.12,
+      "end": 2450.12,
+      "text": "And it's at the core of any interest rate decision or central bank agenda."
+    },
+    {
+      "start": 2451.12,
+      "end": 2458.12,
+      "text": "The real interest rate is simply the nominal interest rate minus the level of inflation."
+    },
+    {
+      "start": 2459.12,
+      "end": 2476.12,
+      "text": "In simple terms, real interest rates mean everything for asset allocation in the financial markets and the investment decisions of entities like pension funds, mutual funds, hedge funds, everyone on the professional side."
+    },
+    {
+      "start": 2477.12,
+      "end": 2481.12,
+      "text": "And nominal interest rates themselves mean very little."
+    },
+    {
+      "start": 2482.12,
+      "end": 2483.12,
+      "text": "Why is this?"
+    },
+    {
+      "start": 2483.12,
+      "end": 2487.12,
+      "text": "Well, let's say the official rate is 5% again."
+    },
+    {
+      "start": 2488.12,
+      "end": 2495.12,
+      "text": "What does a 5% official interest rate return in a period of 5% inflation?"
+    },
+    {
+      "start": 2496.12,
+      "end": 2497.12,
+      "text": "Well, in real terms, zero."
+    },
+    {
+      "start": 2497.12,
+      "end": 2507.12,
+      "text": "So in the United States, we adjust for CPI, the consumer price index, which is the level of inflation."
+    },
+    {
+      "start": 2508.12,
+      "end": 2521.12,
+      "text": "We adjust for CPI and in other countries around the world, all you have to do is adjust the official rate by the official rate of inflation in that particular country."
+    },
+    {
+      "start": 2522.12,
+      "end": 2531.12,
+      "text": "Now, what we're going to look at to get a sense of how important real interest rates actually are."
+    },
+    {
+      "start": 2532.12,
+      "end": 2542.12,
+      "text": "Let's have a look at this visually and have a look at real interest rates compared to the level of the stock market and stock market valuation."
+    },
+    {
+      "start": 2543.12,
+      "end": 2554.12,
+      "text": "So if you look at this chart on the screen here, you'll see in the bottom left-hand corner, you'll see a key and there's three variables here."
+    },
+    {
+      "start": 2555.12,
+      "end": 2558.12,
+      "text": "There's three lines on the chart."
+    },
+    {
+      "start": 2559.12,
+      "end": 2562.12,
+      "text": "Have a look at the key in the bottom left-hand corner."
+    },
+    {
+      "start": 2562.12,
+      "end": 2571.12,
+      "text": "At the very bottom and denoted in pink on the chart, we have the last price of the real 10-year yield."
+    },
+    {
+      "start": 2572.12,
+      "end": 2577.12,
+      "text": "So the nominal level of interest rates minus inflation."
+    },
+    {
+      "start": 2577.12,
+      "end": 2579.12,
+      "text": "So the official rate minus CPI."
+    },
+    {
+      "start": 2580.12,
+      "end": 2589.12,
+      "text": "And if we just cast our eye onto the chart, if you just have a look at the pink line and just look in the middle of the chart."
+    },
+    {
+      "start": 2589.12,
+      "end": 2602.12,
+      "text": "So around 2010, 2011, you'll see that the real interest rate in the US was around two to two and a half around this level."
+    },
+    {
+      "start": 2602.12,
+      "end": 2615.12,
+      "text": "So the nominal rates adjusted for inflation, the real interest rate in the US, 2010, 2011, denoted by that pink line around two to two and a half."
+    },
+    {
+      "start": 2616.12,
+      "end": 2618.12,
+      "text": "Then we just see a big move down."
+    },
+    {
+      "start": 2619.12,
+      "end": 2620.12,
+      "text": "And it goes negative."
+    },
+    {
+      "start": 2621.12,
+      "end": 2623.12,
+      "text": "It goes below the zero band."
+    },
+    {
+      "start": 2624.12,
+      "end": 2626.12,
+      "text": "So we have negative real interest rates."
+    },
+    {
+      "start": 2627.12,
+      "end": 2643.12,
+      "text": "And you can see the effect that that started to have on the white line and the green line, which if you look back to the key in the bottom left-hand corner, is the price of the stock market, the S&P 500 index."
+    },
+    {
+      "start": 2644.12,
+      "end": 2648.12,
+      "text": "And the green line, which is the actual valuation of stocks."
+    },
+    {
+      "start": 2648.12,
+      "end": 2651.12,
+      "text": "So the price earnings ratio of the S&P 500."
+    },
+    {
+      "start": 2652.12,
+      "end": 2665.12,
+      "text": "And if you look back at the pink line, the pink line did a bit of work, kind of moving sideways between slightly below the zero band up to 1% on a few occasions in the last decade."
+    },
+    {
+      "start": 2666.12,
+      "end": 2669.12,
+      "text": "And then in 2020, boom, it goes negative."
+    },
+    {
+      "start": 2670.12,
+      "end": 2670.12,
+      "text": "Okay."
+    },
+    {
+      "start": 2671.12,
+      "end": 2680.12,
+      "text": "So, how does that affect the stock market and how does that affect the price earnings ratio of the stock market?"
+    },
+    {
+      "start": 2681.12,
+      "end": 2690.12,
+      "text": "Well, you can see on the chart in the last couple of years, you can see that the stock market and valuations have gone through the roof."
+    },
+    {
+      "start": 2691.12,
+      "end": 2704.12,
+      "text": "And that is essentially Fed policy being accommodative to expansion and maintaining expansion and high stock market levels and high stock market valuations."
+    },
+    {
+      "start": 2705.12,
+      "end": 2711.12,
+      "text": "So, you can see the green line, where the green line and the white line kind of come together on the chart."
+    },
+    {
+      "start": 2712.12,
+      "end": 2718.12,
+      "text": "You'll see that that level for the P ratio for the S&P 500 is around 30."
+    },
+    {
+      "start": 2719.12,
+      "end": 2723.12,
+      "text": "And then the dashed line is the forward P estimate."
+    },
+    {
+      "start": 2724.12,
+      "end": 2729.12,
+      "text": "So, that's coming out in 2021 at 22.85."
+    },
+    {
+      "start": 2730.12,
+      "end": 2732.12,
+      "text": "But that's just a forecast."
+    },
+    {
+      "start": 2732.12,
+      "end": 2740.12,
+      "text": "And if you look at the reported data of 2020, we see the price earnings ratio of the S&P 500."
+    },
+    {
+      "start": 2741.12,
+      "end": 2752.12,
+      "text": "When the S&P was around 3700, we see the P ratio of around 30, which is obviously extremely elevated in terms of valuation."
+    },
+    {
+      "start": 2753.12,
+      "end": 2756.12,
+      "text": "But let's have a look at this in slightly closer detail."
+    },
+    {
+      "start": 2756.12,
+      "end": 2768.12,
+      "text": "If we look at US 10-year real interest rates, so adjusted, nominal rates adjusted for CPI, we've charted this against the VIX, which we'll come on to later."
+    },
+    {
+      "start": 2769.12,
+      "end": 2781.12,
+      "text": "But you can see if you look at interest rates in 2019, real interest rates in 2019, and you're looking at the right-hand axis here on the chart."
+    },
+    {
+      "start": 2782.12,
+      "end": 2786.12,
+      "text": "So, the right-hand axis denotes the real 10-year yield."
+    },
+    {
+      "start": 2787.12,
+      "end": 2791.12,
+      "text": "So, the nominal yield adjusted for CPI in the US."
+    },
+    {
+      "start": 2792.12,
+      "end": 2801.12,
+      "text": "You can see in 2019, we just see the real interest rate in the US collapsing, and in 2020, going negative."
+    },
+    {
+      "start": 2802.12,
+      "end": 2811.12,
+      "text": "So, you can see how the real interest rate, how important it is, how it affects stock market level and stock market valuation."
+    },
+    {
+      "start": 2812.12,
+      "end": 2823.12,
+      "text": "But one of the macroeconomic implications here, well, real interest rates, whether it's market rates, official rates, they represent the real price or cost of money."
+    },
+    {
+      "start": 2824.12,
+      "end": 2829.12,
+      "text": "All things being equal, if money is cheaper, market participants will borrow more of it."
+    },
+    {
+      "start": 2830.12,
+      "end": 2833.12,
+      "text": "And when it's expensive, they will borrow less of it."
+    },
+    {
+      "start": 2834.12,
+      "end": 2835.12,
+      "text": "So, let's get this down."
+    },
+    {
+      "start": 2836.12,
+      "end": 2847.12,
+      "text": "Relatively cheaper money causes more borrowing, more liquidity, and inflationary conditions and expansionary GDP."
+    },
+    {
+      "start": 2849.12,
+      "end": 2859.12,
+      "text": "Relatively expensive money creates less borrowing, less liquidity, and deflationary conditions, and contractionary GDP."
+    },
+    {
+      "start": 2860.12,
+      "end": 2863.12,
+      "text": "And listen, central banks know this, they're not stupid, okay?"
+    },
+    {
+      "start": 2864.12,
+      "end": 2867.12,
+      "text": "Central banks are looking at the same things that we are looking at."
+    },
+    {
+      "start": 2868.12,
+      "end": 2890.12,
+      "text": "They're continually looking to manipulate the supply of funds, which is real interest rates, via the interest rate mechanism, setting official interest rates, or even doing abnormal policy, such as intervening in the bond markets to affect market rates."
+    },
+    {
+      "start": 2891.12,
+      "end": 2912.12,
+      "text": "So, incidentally, and I said we would come on to this a little bit later, in terms of the VIX and looking at real interest rates compared to the VIX, you'll find that relatively cheaper money, so lower real rates, is going to create less equity volatility because liquidity is higher."
+    },
+    {
+      "start": 2913.12,
+      "end": 2921.12,
+      "text": "And relatively expensive money creates more equity volatility, because there's less liquidity."
+    },
+    {
+      "start": 2922.12,
+      "end": 2934.12,
+      "text": "So, putting all this together, it stands to reason that we can use real interest rates in the US as a leading indicator to equity market forecasts."
+    },
+    {
+      "start": 2935.12,
+      "end": 2945.12,
+      "text": "So, the level of the market and the valuation of the market, and also the direction and the volatility of the stock market."
+    },
+    {
+      "start": 2946.12,
+      "end": 2955.12,
+      "text": "Now, what we're going to look at moving on is the relationship between short-term and long-term money."
+    },
+    {
+      "start": 2956.12,
+      "end": 2960.12,
+      "text": "So, the price of money in the short-term relative to the long-term, okay?"
+    },
+    {
+      "start": 2961.12,
+      "end": 2965.12,
+      "text": "So, this is basically yield curve analysis."
+    },
+    {
+      "start": 2966.12,
+      "end": 2968.12,
+      "text": "So, we're looking at something called the yield curve."
+    },
+    {
+      "start": 2969.12,
+      "end": 2976.12,
+      "text": "Now, what you're going to find in the downloads area of this video, you're going to find a couple of spreadsheets, which are pretty big."
+    },
+    {
+      "start": 2977.12,
+      "end": 2981.12,
+      "text": "But you should definitely download them, open them up, and start playing with them."
+    },
+    {
+      "start": 2982.12,
+      "end": 2988.12,
+      "text": "You'll see we've got one called benchmark yields US and benchmark yields rest of the world."
+    },
+    {
+      "start": 2989.12,
+      "end": 2992.12,
+      "text": "And you're going to find all of this analysis that we're going to go through in those spreadsheets."
+    },
+    {
+      "start": 2993.12,
+      "end": 2997.12,
+      "text": "But first, let's talk about some basic bond relationships."
+    },
+    {
+      "start": 2998.12,
+      "end": 3004.12,
+      "text": "Firstly, and this should have started to become quite obvious to you at this stage."
+    },
+    {
+      "start": 3005.12,
+      "end": 3010.12,
+      "text": "The price of a bond is inversely correlated to its yield."
+    },
+    {
+      "start": 3011.12,
+      "end": 3021.12,
+      "text": "So, if demand for bonds increases, so there's more buyers than sellers, the bonds price will rise and the yield of that bond will fall."
+    },
+    {
+      "start": 3022.12,
+      "end": 3023.12,
+      "text": "And the reverse is true."
+    },
+    {
+      "start": 3024.12,
+      "end": 3025.12,
+      "text": "Now, what does a yield curve do?"
+    },
+    {
+      "start": 3025.12,
+      "end": 3043.12,
+      "text": "Well, a yield curve plots the interest rates of bonds of an issuer that have equal credit at different maturities."
+    },
+    {
+      "start": 3044.12,
+      "end": 3054.12,
+      "text": "The yield curve of the US government's bonds plots the yields of differing US Treasury bond maturities that have been issued by the US government."
+    },
+    {
+      "start": 3055.12,
+      "end": 3056.12,
+      "text": "And we know what it's used for."
+    },
+    {
+      "start": 3056.12,
+      "end": 3059.12,
+      "text": "The money is borrowed and used to finance public spending."
+    },
+    {
+      "start": 3060.12,
+      "end": 3065.12,
+      "text": "But we can actually plot the yield curve and look at this visually."
+    },
+    {
+      "start": 3066.12,
+      "end": 3077.12,
+      "text": "So, we look at the US government Treasury yields at different maturities and we literally plot the yield curve."
+    },
+    {
+      "start": 3078.12,
+      "end": 3085.12,
+      "text": "So, here, and you'll notice this analysis in the spreadsheet that you download in the downloads area."
+    },
+    {
+      "start": 3086.12,
+      "end": 3091.12,
+      "text": "Here, we're plotting two yield curves at two different moments in time."
+    },
+    {
+      "start": 3092.12,
+      "end": 3101.12,
+      "text": "So, first of all, we're looking at, most recently, what the yield curve looked at on the 3rd of January 2021."
+    },
+    {
+      "start": 3102.12,
+      "end": 3104.12,
+      "text": "And this is the blue line, okay?"
+    },
+    {
+      "start": 3105.12,
+      "end": 3109.12,
+      "text": "And we can see across the bottom, we've got the Fed funds rate, the official rate."
+    },
+    {
+      "start": 3110.12,
+      "end": 3113.12,
+      "text": "And we have different maturities across the curve."
+    },
+    {
+      "start": 3114.12,
+      "end": 3119.12,
+      "text": "So, we have short term, so we have one month, three month, six month, one year, two year."
+    },
+    {
+      "start": 3120.12,
+      "end": 3124.12,
+      "text": "And then we have, all the way to the right hand side, longer term rates."
+    },
+    {
+      "start": 3124.12,
+      "end": 3126.12,
+      "text": "We have the 10 year and the 20 year."
+    },
+    {
+      "start": 3126.12,
+      "end": 3128.12,
+      "text": "And then we have everything else in between."
+    },
+    {
+      "start": 3128.12,
+      "end": 3131.12,
+      "text": "So, medium term rates, three year, five year, seven year."
+    },
+    {
+      "start": 3132.12,
+      "end": 3139.12,
+      "text": "And we can see from the blue line, if we take a snapshot of what the yield curve looked like on the 3rd of January 2021,"
+    },
+    {
+      "start": 3140.12,
+      "end": 3143.12,
+      "text": "we have an upward sloping curve."
+    },
+    {
+      "start": 3144.12,
+      "end": 3150.12,
+      "text": "We also took the data from the 8th of November 2015."
+    },
+    {
+      "start": 3151.12,
+      "end": 3155.12,
+      "text": "And we plot that yield curve as well across the maturities."
+    },
+    {
+      "start": 3156.12,
+      "end": 3163.12,
+      "text": "And we can see on the 8th of November 2015, we had an upward sloping yield curve."
+    },
+    {
+      "start": 3164.12,
+      "end": 3167.12,
+      "text": "So, how does this actually work and what does it all mean?"
+    },
+    {
+      "start": 3167.12,
+      "end": 3177.12,
+      "text": "Well, the chart that you've just seen, plots the yields on differing US Government Treasury bonds from two different dates."
+    },
+    {
+      "start": 3178.12,
+      "end": 3182.12,
+      "text": "The yield curve is dynamic and it changes every day, okay?"
+    },
+    {
+      "start": 3183.12,
+      "end": 3186.12,
+      "text": "So, that yield curve will look different next week."
+    },
+    {
+      "start": 3187.12,
+      "end": 3189.12,
+      "text": "It will look different in a month's time."
+    },
+    {
+      "start": 3190.12,
+      "end": 3192.12,
+      "text": "The rates are changing dynamically, okay?"
+    },
+    {
+      "start": 3193.12,
+      "end": 3207.12,
+      "text": "If we take a snapshot at any one point in time, the demand and supply of bonds, so therefore yields, by the market changes because of expectations of both short term and longer term rates."
+    },
+    {
+      "start": 3208.12,
+      "end": 3215.12,
+      "text": "And those expectations are based on the market's economic projections of growth and central bank policy."
+    },
+    {
+      "start": 3216.12,
+      "end": 3219.12,
+      "text": "Now, there's three different types of yield curve."
+    },
+    {
+      "start": 3220.12,
+      "end": 3225.12,
+      "text": "Three different shapes of the yield curve that represent conditions, okay?"
+    },
+    {
+      "start": 3226.12,
+      "end": 3229.12,
+      "text": "Firstly, we have a normal yield curve."
+    },
+    {
+      "start": 3230.12,
+      "end": 3232.12,
+      "text": "Second, a flat yield curve."
+    },
+    {
+      "start": 3233.12,
+      "end": 3235.12,
+      "text": "And third, we have an inverted yield curve."
+    },
+    {
+      "start": 3236.12,
+      "end": 3244.12,
+      "text": "So, we're going to go through these and show you what it all means and how you can use the yield curve as a leading indicator."
+    },
+    {
+      "start": 3246.12,
+      "end": 3249.12,
+      "text": "So, what is a normal yield curve?"
+    },
+    {
+      "start": 3250.12,
+      "end": 3252.12,
+      "text": "Well, it's what you just saw on the screen."
+    },
+    {
+      "start": 3253.12,
+      "end": 3254.12,
+      "text": "It's an upward sloping yield curve."
+    },
+    {
+      "start": 3255.12,
+      "end": 3259.12,
+      "text": "It's where longer term rates are higher than shorter term rates."
+    },
+    {
+      "start": 3260.12,
+      "end": 3270.12,
+      "text": "And most of the time, and this is why we call it a normal yield curve, most of the time, what you're going to find is the yield curve is upward sloping."
+    },
+    {
+      "start": 3271.12,
+      "end": 3276.12,
+      "text": "That's because in normal economic conditions, we have economic expansion."
+    },
+    {
+      "start": 3277.12,
+      "end": 3278.12,
+      "text": "This occurs most of the time."
+    },
+    {
+      "start": 3279.12,
+      "end": 3292.12,
+      "text": "During that time, the market demands a higher interest rate, so yield, when lending money to an issuer longer term due to the risk of time, okay?"
+    },
+    {
+      "start": 3293.12,
+      "end": 3300.12,
+      "text": "In a normal market, the longer time an investor's money is tied up, the higher the yield they're going to demand."
+    },
+    {
+      "start": 3301.12,
+      "end": 3309.12,
+      "text": "And most importantly, an upward sloping yield curve signifies an expectation by the market of future economic expansion."
+    },
+    {
+      "start": 3311.12,
+      "end": 3314.12,
+      "text": "So, on a relative basis, what does this actually suggest?"
+    },
+    {
+      "start": 3315.12,
+      "end": 3327.12,
+      "text": "Well, a normal yield curve, so an upward sloping curve, suggests that investors, on a relative basis, are selling longer term bonds."
+    },
+    {
+      "start": 3328.12,
+      "end": 3332.12,
+      "text": "So, there's higher rates, okay, to buy shorter term bonds."
+    },
+    {
+      "start": 3333.12,
+      "end": 3337.12,
+      "text": "And because of the buying, there's lower rates, okay?"
+    },
+    {
+      "start": 3338.12,
+      "end": 3341.12,
+      "text": "So, there's two main reasons for this."
+    },
+    {
+      "start": 3342.12,
+      "end": 3344.12,
+      "text": "So, firstly, buying short term bonds."
+    },
+    {
+      "start": 3345.12,
+      "end": 3355.12,
+      "text": "Well, if investors are expecting an economic expansion, they don't want their money tied up, long term, in low yielding assets."
+    },
+    {
+      "start": 3356.12,
+      "end": 3360.12,
+      "text": "What do they want to be doing if they're expecting economic expansion?"
+    },
+    {
+      "start": 3360.12,
+      "end": 3369.12,
+      "text": "They want to buy risk assets, like equities, and they have a preference for shorter term liquidity."
+    },
+    {
+      "start": 3370.12,
+      "end": 3376.12,
+      "text": "And what's happening on the other side of the curve, in long term bonds, on a relative basis?"
+    },
+    {
+      "start": 3377.12,
+      "end": 3389.12,
+      "text": "Well, investors, because they have a preference for shorter term liquidity, in an expected expansionary phase, they are selling long term bonds on a relative basis, okay?"
+    },
+    {
+      "start": 3390.12,
+      "end": 3399.12,
+      "text": "They can park their money in shorter term bonds, and later, they can buy back their longer term bonds at a lower price."
+    },
+    {
+      "start": 3400.12,
+      "end": 3401.12,
+      "text": "So, a higher bond yield."
+    },
+    {
+      "start": 3401.12,
+      "end": 3402.12,
+      "text": "So, a higher bond yield."
+    },
+    {
+      "start": 3402.12,
+      "end": 3411.12,
+      "text": "Later, in the future, they can do that when they expect an economic expansion is coming to an end."
+    },
+    {
+      "start": 3412.12,
+      "end": 3419.12,
+      "text": "So, they would actually take the opposite action when they expect that the expansion is ending."
+    },
+    {
+      "start": 3419.12,
+      "end": 3427.12,
+      "text": "They would sell short term bonds and buy long term bonds at a lower price and higher bond yield."
+    },
+    {
+      "start": 3428.12,
+      "end": 3429.12,
+      "text": "That's what they're doing with their money."
+    },
+    {
+      "start": 3429.12,
+      "end": 3452.12,
+      "text": "They're shifting their money out of long term bonds and into short term bonds, so they can have a shorter term liquidity and a preference for that to enable them to take advantage of the expansion and to park their money in risk assets, like in the stock market."
+    },
+    {
+      "start": 3452.12,
+      "end": 3466.12,
+      "text": "And then later, when they expect the economic expansion to come to an end, they are forecasting that bond prices will be lower and yields will be higher, and then they take the opposite action."
+    },
+    {
+      "start": 3467.12,
+      "end": 3473.12,
+      "text": "They sell short term bonds and buy long term bonds and get a higher yield on the long term bonds."
+    },
+    {
+      "start": 3474.12,
+      "end": 3482.12,
+      "text": "So, to break this down, when investors expect economic expansion, what happens to the yield curve?"
+    },
+    {
+      "start": 3483.12,
+      "end": 3485.12,
+      "text": "The yield curve steepens."
+    },
+    {
+      "start": 3486.12,
+      "end": 3492.12,
+      "text": "When they expect economic contraction, the yield curve flattens or inverts."
+    },
+    {
+      "start": 3493.12,
+      "end": 3497.12,
+      "text": "So, when investors are expecting economic expansion, what is happening?"
+    },
+    {
+      "start": 3498.12,
+      "end": 3501.12,
+      "text": "They're selling long term bonds to buy short term bonds."
+    },
+    {
+      "start": 3502.12,
+      "end": 3503.12,
+      "text": "What does that mean?"
+    },
+    {
+      "start": 3504.12,
+      "end": 3510.12,
+      "text": "Well, we're getting higher yields on longer term bonds and lower yields in the market on short term bonds."
+    },
+    {
+      "start": 3511.12,
+      "end": 3515.12,
+      "text": "So, the curve, the yield curve is steepening, okay?"
+    },
+    {
+      "start": 3516.12,
+      "end": 3521.12,
+      "text": "And then what happens in the opposite situation when economic contraction is occurring?"
+    },
+    {
+      "start": 3522.12,
+      "end": 3525.12,
+      "text": "Well, we're now doing the opposite, okay?"
+    },
+    {
+      "start": 3525.12,
+      "end": 3531.12,
+      "text": "The market is selling short term bonds to buy long term bonds."
+    },
+    {
+      "start": 3532.12,
+      "end": 3539.12,
+      "text": "They're putting their money into longer term bonds because they expect a contraction is going to happen."
+    },
+    {
+      "start": 3541.12,
+      "end": 3551.12,
+      "text": "And the more long term bonds that the market buys and the more short term bonds that they sell, what's going to happen?"
+    },
+    {
+      "start": 3552.12,
+      "end": 3559.12,
+      "text": "Well, long term yields are going to go up and short term yields are going to go down."
+    },
+    {
+      "start": 3560.12,
+      "end": 3566.12,
+      "text": "And on a relative basis, this means that the yield curve is going to flatten and potentially invert."
+    },
+    {
+      "start": 3567.12,
+      "end": 3572.12,
+      "text": "Inversion is when short term rates are higher than long term rates."
+    },
+    {
+      "start": 3573.12,
+      "end": 3581.12,
+      "text": "So, a normal yield curve happens most of the time because economic expansion is occurring."
+    },
+    {
+      "start": 3582.12,
+      "end": 3590.12,
+      "text": "And economic expansion, that is the condition that is occurring most of the time in normal economic conditions."
+    },
+    {
+      "start": 3591.12,
+      "end": 3603.12,
+      "text": "And of course, occasionally, we have economic contraction in the economy."
+    },
+    {
+      "start": 3604.12,
+      "end": 3616.12,
+      "text": "And that creates an abnormal situation in the yield curve where we have a flat yield curve occurring and also sometimes inversion."
+    },
+    {
+      "start": 3619.12,
+      "end": 3622.12,
+      "text": "Now, we saw a normal yield curve earlier."
+    },
+    {
+      "start": 3622.12,
+      "end": 3630.12,
+      "text": "What we've done here, we've put on the chart, utilising the spreadsheets from the downloads area."
+    },
+    {
+      "start": 3631.12,
+      "end": 3637.12,
+      "text": "We've put on the chart two normal looking yield curve from two moments in history."
+    },
+    {
+      "start": 3638.12,
+      "end": 3643.12,
+      "text": "We've got the blue line from December 2020, which looks fairly normal."
+    },
+    {
+      "start": 3643.12,
+      "end": 3653.12,
+      "text": "And you can see that rates overall are lower compared to January 2003, where we plot the yield curve at that moment in time."
+    },
+    {
+      "start": 3654.12,
+      "end": 3656.12,
+      "text": "And we have a normal yield curve there as well."
+    },
+    {
+      "start": 3657.12,
+      "end": 3663.12,
+      "text": "So, what we're looking at here is two moments in time where there was a normal yield curve."
+    },
+    {
+      "start": 3664.12,
+      "end": 3671.12,
+      "text": "And you can see at the bottom of the screen two sliders that are in the spreadsheet in the downloads area."
+    },
+    {
+      "start": 3672.12,
+      "end": 3673.12,
+      "text": "And you can play with these sliders."
+    },
+    {
+      "start": 3674.12,
+      "end": 3677.12,
+      "text": "You can plot yield curves from different moments in time."
+    },
+    {
+      "start": 3678.12,
+      "end": 3694.12,
+      "text": "And even at similar moments in time, you can move the slider using the arrows and compare two curves when they, for example, go from normal to flat to inverting and then back again."
+    },
+    {
+      "start": 3694.12,
+      "end": 3697.12,
+      "text": "So, inverting flat to normal."
+    },
+    {
+      "start": 3697.12,
+      "end": 3707.12,
+      "text": "And that's typically around when economic expansions become contractions and contractions turn into expansions."
+    },
+    {
+      "start": 3707.12,
+      "end": 3709.12,
+      "text": "It's a very useful thing to do."
+    },
+    {
+      "start": 3709.12,
+      "end": 3714.12,
+      "text": "Just go back in time and have a look at different moments in time and plot the yield curves."
+    },
+    {
+      "start": 3715.12,
+      "end": 3718.12,
+      "text": "It's actually fun and it's a good lesson in economic history."
+    },
+    {
+      "start": 3719.12,
+      "end": 3723.12,
+      "text": "And, of course, a good lesson in financial markets history."
+    },
+    {
+      "start": 3724.12,
+      "end": 3735.12,
+      "text": "So, let's have a look at a nice lesson in financial markets history here where we have a look at a yield curve that's actually in the process of inverting."
+    },
+    {
+      "start": 3736.12,
+      "end": 3743.12,
+      "text": "So, we've got two lines on the chart that we've taken from two moments in time where we're plotting the yield curve."
+    },
+    {
+      "start": 3744.12,
+      "end": 3751.12,
+      "text": "And the two moments in time that we're plotting is November 2019 and February 2020."
+    },
+    {
+      "start": 3751.12,
+      "end": 3769.12,
+      "text": "So, this is essentially going into the COVID era when the markets got hit in February 2020 and got smashed in March 2020 very, very aggressively where the stock market went down a lot."
+    },
+    {
+      "start": 3769.12,
+      "end": 3770.12,
+      "text": "Okay."
+    },
+    {
+      "start": 3770.12,
+      "end": 3776.12,
+      "text": "So, if we look on the bottom of the chart, we can see the Fed Fund's official rates."
+    },
+    {
+      "start": 3777.12,
+      "end": 3782.12,
+      "text": "And we can see the maturities from one month out to 20 years."
+    },
+    {
+      "start": 3783.12,
+      "end": 3788.12,
+      "text": "And what we're interested in here is looking at inversion occurring."
+    },
+    {
+      "start": 3788.12,
+      "end": 3789.12,
+      "text": "Okay."
+    },
+    {
+      "start": 3789.12,
+      "end": 3807.12,
+      "text": "So, if we look at the yield curve on the right-hand side, you will see the rates plotted in a table where the Fed Fund's rate in November 2019 was 1.55."
+    },
+    {
+      "start": 3807.12,
+      "end": 3816.12,
+      "text": "And you can see looking down through the table from one month to 20 years that the numbers just get higher and higher."
+    },
+    {
+      "start": 3816.12,
+      "end": 3817.12,
+      "text": "Okay."
+    },
+    {
+      "start": 3818.12,
+      "end": 3822.12,
+      "text": "That is the characteristic of a normal yield curve."
+    },
+    {
+      "start": 3822.12,
+      "end": 3825.12,
+      "text": "And that's plotted on the chart in orange."
+    },
+    {
+      "start": 3826.12,
+      "end": 3835.12,
+      "text": "Now, let's have a look in the table on the right-hand side at February 2, 2020, where the Fed Fund's rate was 1.59."
+    },
+    {
+      "start": 3836.12,
+      "end": 3843.12,
+      "text": "If we look at the 10-year at that moment in time, we can see the 10-year yield is 1.51."
+    },
+    {
+      "start": 3844.12,
+      "end": 3853.12,
+      "text": "And if we look at short-term rates, so we look at one month, it's 1.56, which is obviously higher than 1.51."
+    },
+    {
+      "start": 3854.12,
+      "end": 3856.12,
+      "text": "Three months, 1.55."
+    },
+    {
+      "start": 3856.12,
+      "end": 3858.12,
+      "text": "Six months, 1.54."
+    },
+    {
+      "start": 3858.12,
+      "end": 3861.12,
+      "text": "And then the one year is 1.45."
+    },
+    {
+      "start": 3861.12,
+      "end": 3862.12,
+      "text": "Okay."
+    },
+    {
+      "start": 3862.12,
+      "end": 3875.12,
+      "text": "So what we see here is in the short end of the market, 1-month, 3-month and 6-month money, the yield is trading higher than the 10-year."
+    },
+    {
+      "start": 3876.12,
+      "end": 3887.12,
+      "text": "So what's interesting is in terms of the price action, is that if we compare the short-term rates of 1-month, 3-month, 6-month,"
+    },
+    {
+      "start": 3887.12,
+      "end": 3896.12,
+      "text": "on February 2, 2020 to November 10, 2019, we can see that they're fairly similar."
+    },
+    {
+      "start": 3896.12,
+      "end": 3906.12,
+      "text": "But when we compare the 10-year, which was 1.94 on November 10, 2019, by Feb 2, 2020, it was 1.51."
+    },
+    {
+      "start": 3907.12,
+      "end": 3924.12,
+      "text": "So what is being characterised in this market is very obviously buying of long-term bonds, which is suppressing the yield and the yield is going down on the 10-year."
+    },
+    {
+      "start": 3925.12,
+      "end": 3937.12,
+      "text": "So on a relative basis, longer-term yields have gone lower because of buying in the market of long-term bonds."
+    },
+    {
+      "start": 3937.12,
+      "end": 3939.12,
+      "text": "So what's the market telling you here?"
+    },
+    {
+      "start": 3939.12,
+      "end": 3953.12,
+      "text": "Well, the market is telling you that between the period November 10, 2019 and February 2, 2020, that there was a preference in the market to buy long-term bonds."
+    },
+    {
+      "start": 3953.12,
+      "end": 3961.12,
+      "text": "And during that period from November 10, 2019 to February 2, 2020, what would have been happening?"
+    },
+    {
+      "start": 3962.12,
+      "end": 3971.12,
+      "text": "Well, the yield curve will have been flattening and then in the process of inverting."
+    },
+    {
+      "start": 3972.12,
+      "end": 3987.12,
+      "text": "So the market was sending us a very strong signal before COVID hit and had its biggest impact at the end of February 2020 and March 2020 and even in April."
+    },
+    {
+      "start": 3990.12,
+      "end": 4002.12,
+      "text": "So the market was sending us the market was sending us the message that they were expecting economic contraction and the yield curve was in the process of inverting before it happened."
+    },
+    {
+      "start": 4003.12,
+      "end": 4021.12,
+      "text": "Now, in terms of market benchmarks and reliability of using the yield curve as an indicator or even better as a leading indicator to economic expansion and contraction."
+    },
+    {
+      "start": 4022.12,
+      "end": 4038.12,
+      "text": "The market, in terms of benchmarks, gravitates to and uses the tens minus two spread, meaning if we look at the 10-year and the two-year price of money."
+    },
+    {
+      "start": 4039.12,
+      "end": 4060.12,
+      "text": "So in the chart, for example, we're looking at 151 and 133 when we take the snapshot on February 2, 2020, the market uses this, the tens minus twos as an anchor, as a benchmark, as an indicator for economic contraction."
+    },
+    {
+      "start": 4060.12,
+      "end": 4068.12,
+      "text": "So the potential for recession, two negative quarters of GDP growth."
+    },
+    {
+      "start": 4069.12,
+      "end": 4078.12,
+      "text": "And it's interesting that at this moment in time, we can see that the yield curve is in the process of inverting."
+    },
+    {
+      "start": 4080.12,
+      "end": 4088.12,
+      "text": "But it's inverting on February 2, 2020, only in the very short end of the curve."
+    },
+    {
+      "start": 4089.12,
+      "end": 4105.12,
+      "text": "As an exercise, what you can do is go into the spreadsheet in the downloads area and play with the slider and take yourself back to February 2, 2020, and then move forward week by week."
+    },
+    {
+      "start": 4106.12,
+      "end": 4115.12,
+      "text": "And you can see whether or not the tens minus twos spread actually went negative."
+    },
+    {
+      "start": 4116.12,
+      "end": 4117.12,
+      "text": "What do we mean by that?"
+    },
+    {
+      "start": 4118.12,
+      "end": 4124.12,
+      "text": "Well, meaning that the 10-year minus the two-year was less than zero."
+    },
+    {
+      "start": 4125.12,
+      "end": 4129.12,
+      "text": "That being the two-year was higher than the 10-year yield."
+    },
+    {
+      "start": 4130.12,
+      "end": 4132.12,
+      "text": "So you can do that in your own time."
+    },
+    {
+      "start": 4133.12,
+      "end": 4147.12,
+      "text": "And also, of course, look at all economic expansions and contractions in the past and have a look at what the yield curve actually did and have a look at what the tens minus twos actually did."
+    },
+    {
+      "start": 4147.12,
+      "end": 4164.12,
+      "text": "We can actually chart the tens minus twos and have a look at moments in history and learn some important information about macroeconomics in the past and financial markets history."
+    },
+    {
+      "start": 4165.12,
+      "end": 4175.12,
+      "text": "So if we look back here in 2019, for example, so we go back a little bit further than we were looking at on the chart on the previous slide."
+    },
+    {
+      "start": 4176.12,
+      "end": 4183.12,
+      "text": "We can see that in 2019, we can see that in 2019, earlier in the year, what was happening?"
+    },
+    {
+      "start": 4183.12,
+      "end": 4195.12,
+      "text": "Well, you can see in the summer of 2019, the yield curve, the tens minus twos began to invert."
+    },
+    {
+      "start": 4195.12,
+      "end": 4208.12,
+      "text": "And it actually went to the zero bound, the tens minus twos went to the zero bound, which means the yield on the two-year was the same as the 10-year."
+    },
+    {
+      "start": 4208.12,
+      "end": 4211.12,
+      "text": "And then later in the year, it actually steepened."
+    },
+    {
+      "start": 4211.12,
+      "end": 4218.12,
+      "text": "The curve actually steepened where relatively 10-year rates were higher than two-year rates."
+    },
+    {
+      "start": 4218.12,
+      "end": 4224.12,
+      "text": "But what's interesting about this is that it never went negative."
+    },
+    {
+      "start": 4224.12,
+      "end": 4227.12,
+      "text": "That's an important moment in financial markets history."
+    },
+    {
+      "start": 4227.12,
+      "end": 4229.12,
+      "text": "And we'll come on to that a little bit later."
+    },
+    {
+      "start": 4229.12,
+      "end": 4243.12,
+      "text": "But what the bond market was telling us here at this moment in time, summer 2019, was that the US economy was expected to slow down and possibly contract and be in trouble."
+    },
+    {
+      "start": 4243.12,
+      "end": 4252.12,
+      "text": "Now, we can even compare this moment in time, going way, way back to previous contractions."
+    },
+    {
+      "start": 4253.12,
+      "end": 4269.12,
+      "text": "So on the right-hand side here, you can see, we've got the 2019 period, where we've highlighted the moment in summer 2019, where the tens minus twos went to the zero bound."
+    },
+    {
+      "start": 4269.12,
+      "end": 4273.12,
+      "text": "So 10-year and two-year yields were basically the same."
+    },
+    {
+      "start": 4273.12,
+      "end": 4283.12,
+      "text": "And we've highlighted going way back to the 2006-07 period that preceded the global financial crisis."
+    },
+    {
+      "start": 4283.12,
+      "end": 4296.12,
+      "text": "You can see in the 2006-2007 period, in 2006, the tens minus twos went below the zero bound, meaning two-year yields were higher than 10-year yields."
+    },
+    {
+      "start": 4296.12,
+      "end": 4303.12,
+      "text": "And of course, they went positive, we can see that visually on the chart in 2006 at a period of time."
+    },
+    {
+      "start": 4303.12,
+      "end": 4314.12,
+      "text": "But for most of 2006, and a good portion of 2007, the tens minus twos was actually negative."
+    },
+    {
+      "start": 4314.12,
+      "end": 4325.12,
+      "text": "The spread was negative, below the zero bound, indicating that the market is expecting significant contraction in the US economy."
+    },
+    {
+      "start": 4325.12,
+      "end": 4327.12,
+      "text": "And then, of course, what did we get?"
+    },
+    {
+      "start": 4327.12,
+      "end": 4337.12,
+      "text": "Following that, in the second half of 2007 and all of 2008, we had economic recession and financial markets collapse."
+    },
+    {
+      "start": 4337.12,
+      "end": 4340.12,
+      "text": "We had a liquidity crisis."
+    },
+    {
+      "start": 4340.12,
+      "end": 4343.12,
+      "text": "So what did we get in 2019?"
+    },
+    {
+      "start": 4343.12,
+      "end": 4346.12,
+      "text": "Well, the Fed's not stupid."
+    },
+    {
+      "start": 4346.12,
+      "end": 4352.12,
+      "text": "They were looking at the same things that everyone else was looking at in the markets, what we were looking at."
+    },
+    {
+      "start": 4352.12,
+      "end": 4365.12,
+      "text": "They could see what the market was expecting in terms of potential economic contraction because of their preference for long-term bonds over short-term bonds."
+    },
+    {
+      "start": 4365.12,
+      "end": 4368.12,
+      "text": "They could see what was happening in the US economy."
+    },
+    {
+      "start": 4368.12,
+      "end": 4373.12,
+      "text": "They could see a slowdown occurring and they decided to take action."
+    },
+    {
+      "start": 4373.12,
+      "end": 4390.12,
+      "text": "In the summer of 2019, they were active in the market in lowering nominal rates, increasing liquidity in the bond market and therefore increasing liquidity in risk assets and lowering volatility in the equities market."
+    },
+    {
+      "start": 4390.12,
+      "end": 4402.12,
+      "text": "So a good six months, seven months before COVID, the US economy was arguably in trouble."
+    },
+    {
+      "start": 4402.12,
+      "end": 4409.12,
+      "text": "The Fed's actions in the summer of 2019 arguably saved the market."
+    },
+    {
+      "start": 4409.12,
+      "end": 4420.12,
+      "text": "And obviously, the market in the bond market, the yield curve started to steepen."
+    },
+    {
+      "start": 4420.12,
+      "end": 4431.12,
+      "text": "And we can see that on the chart in late 2019 when the yield curve started to steepen and go more positive."
+    },
+    {
+      "start": 4431.12,
+      "end": 4445.12,
+      "text": "And arguably, it was COVID that actually sent the US economy, the exogenous shock of COVID sent the US economy into a tailspin."
+    },
+    {
+      "start": 4445.12,
+      "end": 4451.12,
+      "text": "By no means am I saying here that the US economy was, open quotes, fixed, close quotes."
+    },
+    {
+      "start": 4451.12,
+      "end": 4460.12,
+      "text": "But a potential crisis that was occurring in the summer of 2019 was averted by the Fed actions."
+    },
+    {
+      "start": 4461.12,
+      "end": 4463.12,
+      "text": "And it was actually expected."
+    },
+    {
+      "start": 4463.12,
+      "end": 4466.12,
+      "text": "It was an expected move by the Fed."
+    },
+    {
+      "start": 4466.12,
+      "end": 4469.12,
+      "text": "We'll get onto this a little bit later."
+    },
+    {
+      "start": 4469.12,
+      "end": 4475.12,
+      "text": "But you've got to remember, the Fed is looking at the same things that we look at."
+    },
+    {
+      "start": 4475.12,
+      "end": 4476.12,
+      "text": "They're not stupid."
+    },
+    {
+      "start": 4476.12,
+      "end": 4478.12,
+      "text": "They're looking at the tens minus twos."
+    },
+    {
+      "start": 4478.12,
+      "end": 4480.12,
+      "text": "They're looking at the yield curve."
+    },
+    {
+      "start": 4480.12,
+      "end": 4488.12,
+      "text": "They're looking at the relationship between short and long term money and what signals the market is sending."
+    },
+    {
+      "start": 4488.12,
+      "end": 4492.12,
+      "text": "And the Fed tends to act accordingly."
+    },
+    {
+      "start": 4492.12,
+      "end": 4497.12,
+      "text": "But we'll come onto this later in terms of Fed policy."
+    },
+    {
+      "start": 4497.12,
+      "end": 4519.12,
+      "text": "But it's just interesting to look at these things and look at moments in financial markets history to not only understand the signals that the bond market sends as a potential leading indicator to our expectations of economic expansion and contraction."
+    },
+    {
+      "start": 4519.12,
+      "end": 4539.12,
+      "text": "It's important to understand economic history and financial markets history just to have a foundational awareness for our macroeconomic learning from macroeconomic understanding of the world."
+    },
+    {
+      "start": 4539.12,
+      "end": 4551.12,
+      "text": "So why don't we have a look, for example, at this moment in history during the 2005 to 2007 period."
+    },
+    {
+      "start": 4551.12,
+      "end": 4558.12,
+      "text": "We know that in 2006, 2007, that the tens minus twos was negative below the zero bound."
+    },
+    {
+      "start": 4558.12,
+      "end": 4563.12,
+      "text": "But what did things look like in 2005 compared to 2006?"
+    },
+    {
+      "start": 4563.12,
+      "end": 4569.12,
+      "text": "Well, we've charted this using the spreadsheet tool that you have in the downloads area."
+    },
+    {
+      "start": 4569.12,
+      "end": 4579.12,
+      "text": "If we look at the orange line, we can see we've taken a snapshot of the yield curve on the 24th of July, 2005."
+    },
+    {
+      "start": 4579.12,
+      "end": 4583.12,
+      "text": "At the time, the Fed funds rate was 325."
+    },
+    {
+      "start": 4583.12,
+      "end": 4591.12,
+      "text": "And you can see across the curve, across the maturities, we've got a pretty normal looking yield curve."
+    },
+    {
+      "start": 4591.12,
+      "end": 4592.12,
+      "text": "Okay."
+    },
+    {
+      "start": 4592.12,
+      "end": 4600.12,
+      "text": "Fast forward to December 2006, 24th of December 2006, the blue line."
+    },
+    {
+      "start": 4600.12,
+      "end": 4601.12,
+      "text": "What have we got here?"
+    },
+    {
+      "start": 4601.12,
+      "end": 4607.12,
+      "text": "Well, Fed funds rate is now higher at 524."
+    },
+    {
+      "start": 4607.12,
+      "end": 4611.12,
+      "text": "And we've now got an inverted yield curve."
+    },
+    {
+      "start": 4611.12,
+      "end": 4618.12,
+      "text": "So if we look across the maturities, we've got the 10 year at 463."
+    },
+    {
+      "start": 4618.12,
+      "end": 4622.12,
+      "text": "What maturities are higher than 463?"
+    },
+    {
+      "start": 4622.12,
+      "end": 4631.12,
+      "text": "Well, we can look from one month, three month, six month, to one year, two year, and three year."
+    },
+    {
+      "start": 4631.12,
+      "end": 4636.12,
+      "text": "So we can see that the tens minus twos inverts."
+    },
+    {
+      "start": 4636.12,
+      "end": 4646.12,
+      "text": "And basically the yield curve from one month up to three years was inverted relative to the 10 year."
+    },
+    {
+      "start": 4646.12,
+      "end": 4650.12,
+      "text": "So it's interesting to look at these things throughout financial markets history."
+    },
+    {
+      "start": 4650.12,
+      "end": 4661.12,
+      "text": "And I'd encourage you to keep doing it and keep using that spreadsheet tool to really get a foundational understanding of macroeconomic history and financial markets history."
+    },
+    {
+      "start": 4661.12,
+      "end": 4662.12,
+      "text": "It really helps."
+    },
+    {
+      "start": 4662.12,
+      "end": 4671.12,
+      "text": "So in terms of inverting, inverted yield curves, what is it?"
+    },
+    {
+      "start": 4671.12,
+      "end": 4673.12,
+      "text": "Let's get this down."
+    },
+    {
+      "start": 4673.12,
+      "end": 4675.12,
+      "text": "In inverted yield curves."
+    },
+    {
+      "start": 4675.12,
+      "end": 4683.12,
+      "text": "It's when the yield on bonds with shorter maturity are higher than yields on bonds that have a longer maturity."
+    },
+    {
+      "start": 4683.12,
+      "end": 4689.12,
+      "text": "It's an abnormal situation that occurs in the minority of times."
+    },
+    {
+      "start": 4689.12,
+      "end": 4702.12,
+      "text": "This situation signals from the bond market expected financial stress and an impending slowdown in GDP growth with possible GDP contraction."
+    },
+    {
+      "start": 4702.12,
+      "end": 4705.12,
+      "text": "So negative real GDP."
+    },
+    {
+      "start": 4705.12,
+      "end": 4716.12,
+      "text": "And it could indicate possible recession, which we know is defined as two consecutive quarters of negative GDP growth."
+    },
+    {
+      "start": 4716.12,
+      "end": 4720.12,
+      "text": "So what is the market actually doing here?"
+    },
+    {
+      "start": 4720.12,
+      "end": 4725.12,
+      "text": "Well, they're selling short term bonds and buying long term bonds."
+    },
+    {
+      "start": 4725.12,
+      "end": 4727.12,
+      "text": "Let's start with selling short term bonds."
+    },
+    {
+      "start": 4727.12,
+      "end": 4728.12,
+      "text": "What is happening?"
+    },
+    {
+      "start": 4728.12,
+      "end": 4743.12,
+      "text": "Well, the selling of short term bonds creates higher yields in the short term, in the short end of the curve relative to the longer term, where buying of long term bonds is occurring."
+    },
+    {
+      "start": 4743.12,
+      "end": 4747.12,
+      "text": "So we're selling short term bonds."
+    },
+    {
+      "start": 4747.12,
+      "end": 4749.12,
+      "text": "We get higher yields."
+    },
+    {
+      "start": 4749.12,
+      "end": 4757.12,
+      "text": "When a yield curve inverts, it's because investors have lost confidence in the economy in the short term."
+    },
+    {
+      "start": 4757.12,
+      "end": 4764.12,
+      "text": "They are demanding more yield for a short term investment than for a long term one."
+    },
+    {
+      "start": 4764.12,
+      "end": 4766.12,
+      "text": "And what are they doing with risk assets?"
+    },
+    {
+      "start": 4766.12,
+      "end": 4778.12,
+      "text": "They're selling risk assets like equities as well, raising the money and they're using that money to own long term bonds at lower yields."
+    },
+    {
+      "start": 4778.12,
+      "end": 4781.12,
+      "text": "So they are selling short term bonds."
+    },
+    {
+      "start": 4781.12,
+      "end": 4793.12,
+      "text": "And they're selling risk assets and raising money and putting that money and parking it in long term bonds where they're getting lower yields."
+    },
+    {
+      "start": 4793.12,
+      "end": 4804.12,
+      "text": "They are happy to tie up their money for years even though they're receiving lower yields versus short term bonds."
+    },
+    {
+      "start": 4804.12,
+      "end": 4805.12,
+      "text": "Why would they do this?"
+    },
+    {
+      "start": 4805.12,
+      "end": 4815.12,
+      "text": "Well, they would only do it if they expect economic conditions in the short term, in the near term are going to deteriorate materially."
+    },
+    {
+      "start": 4815.12,
+      "end": 4831.12,
+      "text": "So, causing risk assets like equities to experience contraction for financial markets to go down, for earnings of companies in the stock market to go down or collapse."
+    },
+    {
+      "start": 4831.12,
+      "end": 4855.12,
+      "text": "So, an inverted yield curve historically is a signal, it's a warning sign that the market is expecting potential economic slowdown, potential financial markets collapse from earnings contraction and potential collapse."
+    },
+    {
+      "start": 4855.12,
+      "end": 4868.12,
+      "text": "So, we can obviously, again, use this information as a potential leading indicator to risk assets, equities, i.e. the stock market."
+    },
+    {
+      "start": 4868.12,
+      "end": 4873.12,
+      "text": "Remember guys, we do live in a dynamic world."
+    },
+    {
+      "start": 4873.12,
+      "end": 4889.12,
+      "text": "We don't live in a world where, for example, the yield curve is normal for a long time and then it suddenly inverts and there's two polar opposite situations."
+    },
+    {
+      "start": 4889.12,
+      "end": 4893.12,
+      "text": "We obviously have a period in between."
+    },
+    {
+      "start": 4893.12,
+      "end": 4898.12,
+      "text": "We have what we call a transition period."
+    },
+    {
+      "start": 4898.12,
+      "end": 4901.12,
+      "text": "So, this is when yield curves go flat."
+    },
+    {
+      "start": 4901.12,
+      "end": 4909.12,
+      "text": "So, they can go from being normal, positive and upward sloping to flat and then inverting."
+    },
+    {
+      "start": 4909.12,
+      "end": 4918.12,
+      "text": "Or they can go from inverted to flat and then normal, positive, upward sloping."
+    },
+    {
+      "start": 4918.12,
+      "end": 4930.12,
+      "text": "So, we've got some examples here of a flat yield curve where we're basically at moments in time in a transitionary period."
+    },
+    {
+      "start": 4930.12,
+      "end": 4936.12,
+      "text": "So, if we look at the orange line, that is on the 17th of February 2019."
+    },
+    {
+      "start": 4936.12,
+      "end": 4939.12,
+      "text": "We know what happened later in 2019."
+    },
+    {
+      "start": 4939.12,
+      "end": 4942.12,
+      "text": "The yield curve was threatening to invert."
+    },
+    {
+      "start": 4942.12,
+      "end": 4948.12,
+      "text": "The tens minus twos was threatening to invert and the Fed took action."
+    },
+    {
+      "start": 4948.12,
+      "end": 4957.12,
+      "text": "So, back in 2018, when we had a positive upward sloping curve, the yield curve began transitioning."
+    },
+    {
+      "start": 4957.12,
+      "end": 4965.12,
+      "text": "And in early 2019 and going into the spring of 2019, we essentially had a flat yield curve."
+    },
+    {
+      "start": 4965.12,
+      "end": 4974.12,
+      "text": "So, if you look across the maturities, you can see the Fed fund rates, the official rate is 2.4."
+    },
+    {
+      "start": 4974.12,
+      "end": 4980.12,
+      "text": "And you can see across the maturities, one month money, 2.43."
+    },
+    {
+      "start": 4980.12,
+      "end": 4984.12,
+      "text": "Same for three-month money, six-month money, 2.5."
+    },
+    {
+      "start": 4984.12,
+      "end": 4987.12,
+      "text": "One year, around 2.5, 2.55."
+    },
+    {
+      "start": 4987.12,
+      "end": 4993.12,
+      "text": "We're around 2.50, 2.55, all the way up to five-year money."
+    },
+    {
+      "start": 4993.12,
+      "end": 4998.12,
+      "text": "And then seven-year money and 10-year money is on a slight premium."
+    },
+    {
+      "start": 4998.12,
+      "end": 5007.12,
+      "text": "But essentially, the yield curve is flat and in transition because we know what happened later in 2019."
+    },
+    {
+      "start": 5007.12,
+      "end": 5014.12,
+      "text": "The yield curve, the tens minus twos, almost went below the zero bound."
+    },
+    {
+      "start": 5014.12,
+      "end": 5024.12,
+      "text": "Then in the summer of 2019, the Fed cut interest rates, cut nominal rates."
+    },
+    {
+      "start": 5024.12,
+      "end": 5026.12,
+      "text": "The official rate was going lower."
+    },
+    {
+      "start": 5026.12,
+      "end": 5036.12,
+      "text": "And by January 2020, where we can see on the blue line now, we know that the tens minus twos was positive."
+    },
+    {
+      "start": 5036.12,
+      "end": 5049.12,
+      "text": "And the yield curve was moving from a slightly inverted yield curve, but the tens minus twos not being inverted."
+    },
+    {
+      "start": 5049.12,
+      "end": 5051.12,
+      "text": "It was short-term rates."
+    },
+    {
+      "start": 5051.12,
+      "end": 5057.12,
+      "text": "So, one month, two month, and three month money at a premium to the 10-year."
+    },
+    {
+      "start": 5057.12,
+      "end": 5060.12,
+      "text": "But two-year money was not at a premium."
+    },
+    {
+      "start": 5060.12,
+      "end": 5066.12,
+      "text": "So, the tens minus twos was actually positive by January 2020."
+    },
+    {
+      "start": 5066.12,
+      "end": 5078.12,
+      "text": "And the yield curve was in transition going from slightly inverted to flat to going into positive territory."
+    },
+    {
+      "start": 5078.12,
+      "end": 5091.12,
+      "text": "And then returning to a more normal situation of economic expansion and an upward, positively sloped normal yield curve."
+    },
+    {
+      "start": 5091.12,
+      "end": 5095.12,
+      "text": "So, a flat yield curve, how do we read it?"
+    },
+    {
+      "start": 5095.12,
+      "end": 5106.12,
+      "text": "Well, a flat yield curve is characterized as a potential transitioning period from a normal yield curve to inverted, an abnormal yield curve."
+    },
+    {
+      "start": 5106.12,
+      "end": 5127.12,
+      "text": "So, when the economy is transitioning from expansion to slowdown, or even contraction and potential recession, yields on longer-term bonds tend to fall relative to shorter-term bonds, which typically rise on a relative basis."
+    },
+    {
+      "start": 5127.12,
+      "end": 5142.12,
+      "text": "Investors are engaging in an action of purchasing long-term bonds relative to short-term bonds and risk assets like equities, where they're actually selling."
+    },
+    {
+      "start": 5142.12,
+      "end": 5156.12,
+      "text": "So, when we're transitioning from expansion to contraction, we have a flat yield curve, but it is in the process of inverting."
+    },
+    {
+      "start": 5156.12,
+      "end": 5171.12,
+      "text": "When the reverse happens, so when an economy is expected to come out of contraction or slowdown and move into expansion, investors engage in a relative purchase of short-term bonds."
+    },
+    {
+      "start": 5171.12,
+      "end": 5179.12,
+      "text": "So, buying short-term bonds and risk assets like equities and selling long-term bonds."
+    },
+    {
+      "start": 5179.12,
+      "end": 5194.12,
+      "text": "So, in that situation, when we're moving from economic contraction to expansion, we have a flat yield curve, but it's in the process of steepening."
+    },
+    {
+      "start": 5194.12,
+      "end": 5213.12,
+      "text": "So, it's pretty obvious we have to keep an eye on the yield curve all the time as traders and portfolio managers, but we have to understand as well, we are not the only people in the world looking at the yield curve."
+    },
+    {
+      "start": 5213.12,
+      "end": 5224.12,
+      "text": "So, when we see a yield curve transitioning and going from positive upward sloping normal to going flat, guess who else is watching it?"
+    },
+    {
+      "start": 5224.12,
+      "end": 5225.12,
+      "text": "Yes, you guessed it."
+    },
+    {
+      "start": 5225.12,
+      "end": 5226.12,
+      "text": "Yes, you guessed it."
+    },
+    {
+      "start": 5226.12,
+      "end": 5228.12,
+      "text": "The Federal Reserve."
+    },
+    {
+      "start": 5228.12,
+      "end": 5231.12,
+      "text": "The Federal Reserve sees this happening."
+    },
+    {
+      "start": 5231.12,
+      "end": 5240.12,
+      "text": "And in recent history, when these things have happened, they are very accommodative with their policies."
+    },
+    {
+      "start": 5240.12,
+      "end": 5250.12,
+      "text": "So, in the modern era with these policies, so, lowering of short-term interest rates via mechanisms like quantitative easing."
+    },
+    {
+      "start": 5250.12,
+      "end": 5254.12,
+      "text": "So, buying short-term bonds in the open market."
+    },
+    {
+      "start": 5254.12,
+      "end": 5269.12,
+      "text": "As traders, we have to be very careful because these actions distort the market price mechanism of the US Treasury market and all bonds that are priced off the benchmarks."
+    },
+    {
+      "start": 5269.12,
+      "end": 5272.12,
+      "text": "The Fed is not stupid."
+    },
+    {
+      "start": 5272.12,
+      "end": 5275.12,
+      "text": "They see what you see and they act upon it."
+    },
+    {
+      "start": 5275.12,
+      "end": 5292.12,
+      "text": "So, for example, in the previous chart that we looked at, when we looked at the line for February 2019, the market yield curve was flat from six months to three years."
+    },
+    {
+      "start": 5292.12,
+      "end": 5296.12,
+      "text": "But really, it was one month to three years."
+    },
+    {
+      "start": 5296.12,
+      "end": 5306.12,
+      "text": "And in the process of inverting, you should use the spreadsheet and go back a few months using the slider and see where it came from."
+    },
+    {
+      "start": 5306.12,
+      "end": 5313.12,
+      "text": "But at the time, however, the economy and the stock market didn't tank in 2019."
+    },
+    {
+      "start": 5313.12,
+      "end": 5314.12,
+      "text": "Why?"
+    },
+    {
+      "start": 5314.12,
+      "end": 5318.12,
+      "text": "Because the Fed remained incredibly accommodative."
+    },
+    {
+      "start": 5318.12,
+      "end": 5324.12,
+      "text": "And in Jan 2020, rates, as you can see, were a full point lower."
+    },
+    {
+      "start": 5324.12,
+      "end": 5335.12,
+      "text": "It actually took the exogenous shock of COVID in 2020 and global economic lockdown to actually invert the yield curve."
+    },
+    {
+      "start": 5335.12,
+      "end": 5344.12,
+      "text": "So, have a look at the previous chart when we're citing February 2020, when the inversion actually started."
+    },
+    {
+      "start": 5344.12,
+      "end": 5371.12,
+      "text": "Even then, during that crazy time, the big sell-off in markets with COVID in 2020, even then, because we had record levels of bond purchases from the Fed, the yield curve actually went back into transition, was flat, and then actually steepened in 2020 extremely aggressively."
+    },
+    {
+      "start": 5371.12,
+      "end": 5400.12,
+      "text": "And if we go back and have a look at our chart that we looked at earlier, where we plotted 10-year real interest rates, so nominal adjusted for the consumer price index, adjusted for inflation, the chart where we had that plotted against the S&P 500 price, so the level of the S&P 500 and the price earnings ratio of the S&P,"
+    },
+    {
+      "start": 5400.12,
+      "end": 5401.12,
+      "text": "we can look at that."
+    },
+    {
+      "start": 5401.12,
+      "end": 5404.12,
+      "text": "We can look at that and just see what happened in 2020."
+    },
+    {
+      "start": 5404.12,
+      "end": 5408.12,
+      "text": "We can see that real rates went negative."
+    },
+    {
+      "start": 5408.12,
+      "end": 5425.12,
+      "text": "And at the same time, if you look at early 2020 on the chart, where real rates were negative, you can see that the S&P 500 after the COVID sell-off rallied."
+    },
+    {
+      "start": 5425.12,
+      "end": 5434.12,
+      "text": "And that was also because of additional major quantitative easing at bond purchases, suppressing short-term interest rates in the market."
+    },
+    {
+      "start": 5434.12,
+      "end": 5442.12,
+      "text": "And then we had big multiple expansion with the S&P 500 price earnings ratio."
+    },
+    {
+      "start": 5442.12,
+      "end": 5453.12,
+      "text": "But as we know, the Fed's accommodative policies were in action in 2019 prior to COVID."
+    },
+    {
+      "start": 5453.12,
+      "end": 5455.12,
+      "text": "What was actually happening there?"
+    },
+    {
+      "start": 5455.12,
+      "end": 5461.12,
+      "text": "Well, nominal and real rates began moving lower in the second quarter of 2019."
+    },
+    {
+      "start": 5461.12,
+      "end": 5474.12,
+      "text": "The nominal yield curve that we've been looking at inverted in Q2, and the Fed cut rates in July, September and October 2019."
+    },
+    {
+      "start": 5474.12,
+      "end": 5483.12,
+      "text": "The stock market performance in 2019, the S&P 500 was actually up 30% that year."
+    },
+    {
+      "start": 5483.12,
+      "end": 5492.12,
+      "text": "The Fed basically remained accommodative throughout 2019, and the market was expecting this."
+    },
+    {
+      "start": 5492.12,
+      "end": 5495.12,
+      "text": "Hence, the move in the yield curve anticipating it."
+    },
+    {
+      "start": 5495.12,
+      "end": 5505.12,
+      "text": "So, as a leading indicator, of course, the yield curve is a good indicator of future expansion and contraction."
+    },
+    {
+      "start": 5505.12,
+      "end": 5517.12,
+      "text": "But the Fed also sees this, and in recent years has become much, much quicker relative to previous business cycles at reacting to it."
+    },
+    {
+      "start": 5517.12,
+      "end": 5531.12,
+      "text": "So much so that it can be said that in the 2009-2020 cycle, a transitioning yield curve was indicative of the Fed's next policy move."
+    },
+    {
+      "start": 5531.12,
+      "end": 5539.12,
+      "text": "Now, if you've ever heard the phrase, the stock market is not the economy, this is exactly what it means."
+    },
+    {
+      "start": 5539.12,
+      "end": 5546.12,
+      "text": "2019 was a good example of this, where economic slowdown in the background was occurring."
+    },
+    {
+      "start": 5546.12,
+      "end": 5555.12,
+      "text": "The signal was being sent via the bond market, and the Fed could see it."
+    },
+    {
+      "start": 5555.12,
+      "end": 5563.12,
+      "text": "They were accommodative, they lowered interest rates, and the stock market was up 30%."
+    },
+    {
+      "start": 5563.12,
+      "end": 5566.12,
+      "text": "So, we do have to be careful here, guys."
+    },
+    {
+      "start": 5566.12,
+      "end": 5582.12,
+      "text": "Just because we see a normal yield curve going flat and potentially inverting, we don't want to be in a situation where we get overly bearish and think everything's going to collapse overnight."
+    },
+    {
+      "start": 5582.12,
+      "end": 5589.12,
+      "text": "Because it could be the case that the Fed is simply going to step in."
+    },
+    {
+      "start": 5589.12,
+      "end": 5593.12,
+      "text": "So, just take that as a little warning."
+    },
+    {
+      "start": 5593.12,
+      "end": 5605.12,
+      "text": "We just want to be in a situation all the time where we're flexible as traders and understanding that in the real world, you know, the Fed sees this too."
+    },
+    {
+      "start": 5605.12,
+      "end": 5617.12,
+      "text": "So, yes, we take this leading indicator as a useful indicator to let us know what's going on in the economy."
+    },
+    {
+      "start": 5617.12,
+      "end": 5629.12,
+      "text": "But we don't automatically think that it must mean that the stock market has to go down or even, in the other case, has to go up."
+    },
+    {
+      "start": 5629.12,
+      "end": 5631.12,
+      "text": "It's not necessarily the case."
+    },
+    {
+      "start": 5631.12,
+      "end": 5634.12,
+      "text": "We have to be flexible enough to understand that."
+    },
+    {
+      "start": 5634.12,
+      "end": 5639.12,
+      "text": "Now, let's go back to something that we looked at earlier, where we looked at the 10-year real interest rate."
+    },
+    {
+      "start": 5639.12,
+      "end": 5649.12,
+      "text": "So, interest rates adjusted for inflation versus the VIX, the S&P 500 volatility index."
+    },
+    {
+      "start": 5649.12,
+      "end": 5653.12,
+      "text": "You can see from the chart, especially in the last business cycle."
+    },
+    {
+      "start": 5653.12,
+      "end": 5662.12,
+      "text": "So, when we're looking, say, from the period 2011 to 2020, what are we looking at here?"
+    },
+    {
+      "start": 5662.12,
+      "end": 5678.12,
+      "text": "Well, on the right-hand axis, you can see that real rates are basically 1% or below, and even at times negative."
+    },
+    {
+      "start": 5678.12,
+      "end": 5679.12,
+      "text": "So, below zero."
+    },
+    {
+      "start": 5679.12,
+      "end": 5681.12,
+      "text": "So, real rates being negative."
+    },
+    {
+      "start": 5681.12,
+      "end": 5684.12,
+      "text": "So, we see this in 2012."
+    },
+    {
+      "start": 5684.12,
+      "end": 5687.12,
+      "text": "We see it in 2016."
+    },
+    {
+      "start": 5687.12,
+      "end": 5694.12,
+      "text": "We also see it happening in 2019 and 2020."
+    },
+    {
+      "start": 5694.12,
+      "end": 5696.12,
+      "text": "So, what is happening here?"
+    },
+    {
+      "start": 5696.12,
+      "end": 5710.12,
+      "text": "Well, when you compare this to the VIX, which is in green, you can see for pretty much the entire period, we have suppressed volatility."
+    },
+    {
+      "start": 5710.12,
+      "end": 5717.12,
+      "text": "We have volatility trading in the low, mid, and high teens."
+    },
+    {
+      "start": 5717.12,
+      "end": 5722.12,
+      "text": "And only on a few occasions does it really go above 20."
+    },
+    {
+      "start": 5722.12,
+      "end": 5739.12,
+      "text": "So, for a very, very long period of time in the last business cycle, so 2011 up until 2020, before COVID occurred, volatility in the equities market in the S&P 500 was low."
+    },
+    {
+      "start": 5739.12,
+      "end": 5742.12,
+      "text": "It was low and consistently low."
+    },
+    {
+      "start": 5742.12,
+      "end": 5743.12,
+      "text": "Why?"
+    },
+    {
+      "start": 5743.12,
+      "end": 5744.12,
+      "text": "Why was that?"
+    },
+    {
+      "start": 5744.12,
+      "end": 5754.12,
+      "text": "Well, it comes down to the Fed's accommodative policy of low interest rates and quantitative easing measures."
+    },
+    {
+      "start": 5754.12,
+      "end": 5771.12,
+      "text": "This suppresses short-term rates in the market, and essentially the Fed was managing real interest rates to be below 1% and even negative at times."
+    },
+    {
+      "start": 5771.12,
+      "end": 5772.12,
+      "text": "What is that doing?"
+    },
+    {
+      "start": 5772.12,
+      "end": 5781.12,
+      "text": "Well, it's increasing liquidity in the financial markets and therefore reducing volatility."
+    },
+    {
+      "start": 5781.12,
+      "end": 5800.12,
+      "text": "We learned this earlier that this occurs relatively when we have periods of, in history, when we have periods of low real interest rates, so very low real interest rates relative to history."
+    },
+    {
+      "start": 5800.12,
+      "end": 5808.12,
+      "text": "We get low volatility in risk assets because liquidity is increased."
+    },
+    {
+      "start": 5808.12,
+      "end": 5815.12,
+      "text": "And in the reverse, if we get high real interest rates relative to history, what is happening?"
+    },
+    {
+      "start": 5815.12,
+      "end": 5822.12,
+      "text": "Well, liquidity is going down and then volatility is increasing."
+    },
+    {
+      "start": 5822.12,
+      "end": 5837.12,
+      "text": "So, when we're thinking of real interest rates, so the 10-year real interest rate, and thinking of the yield curve in the US, we're not just thinking of it, these leading indicators."
+    },
+    {
+      "start": 5837.12,
+      "end": 5844.12,
+      "text": "As indicators, we're not just thinking of these leading indicators as indicators for economic growth."
+    },
+    {
+      "start": 5844.12,
+      "end": 5859.12,
+      "text": "We are also thinking of these leading indicators in terms of our projection, our forward-looking expectation of liquidity and health in the financial markets and volatility."
+    },
+    {
+      "start": 5860.12,
+      "end": 5864.12,
+      "text": "So, let's tie all of this up together now."
+    },
+    {
+      "start": 5864.12,
+      "end": 5867.12,
+      "text": "It's obviously been a very, very long video."
+    },
+    {
+      "start": 5867.12,
+      "end": 5868.12,
+      "text": "What have we done here?"
+    },
+    {
+      "start": 5868.12,
+      "end": 5879.12,
+      "text": "Well, we've introduced you to how the benchmark bond, the US Treasury market, works in both absolute and relative value terms versus equities."
+    },
+    {
+      "start": 5879.12,
+      "end": 5887.12,
+      "text": "Both the absolute and relative price or cost of money have implications for money flows in financial markets."
+    },
+    {
+      "start": 5887.12,
+      "end": 5893.12,
+      "text": "We've looked at nominal interest rates, real interest rates, and the yield curve."
+    },
+    {
+      "start": 5893.12,
+      "end": 5903.12,
+      "text": "And taken together, real interest rates and the yield curve do represent leading indicators that tend to move before the economy as a whole."
+    },
+    {
+      "start": 5903.12,
+      "end": 5911.12,
+      "text": "As in, before we get economic growth, and they are indicators also of liquidity."
+    },
+    {
+      "start": 5911.12,
+      "end": 5923.12,
+      "text": "By just being on top of these indicators, guys, we can predict to a large extent GDP, earnings, and S&P 500 quarterly and annual performance."
+    },
+    {
+      "start": 5923.12,
+      "end": 5938.12,
+      "text": "So, in a nutshell, the direction in which the wind is blowing, the direction in which growth is occurring, positive or negative, and also the liquidity environment."
+    },
+    {
+      "start": 5938.12,
+      "end": 5960.12,
+      "text": "And in the bigger picture, guys, knowing which way the macroeconomic wind is blowing and liquidity conditions in financial markets is crucial to traders so that we don't get caught in losing positions when there's a shift in the macro environment."
+    },
+    {
+      "start": 5960.12,
+      "end": 5966.12,
+      "text": "Macro is the bigger picture that affects everything."
+    },
+    {
+      "start": 5966.12,
+      "end": 5982.12,
+      "text": "Real interest rates represent the inflation-adjusted cost of money and can be used as a leading indicator for our future expectations of risk asset values like equities, like the S&P 500."
+    },
+    {
+      "start": 5982.12,
+      "end": 5994.12,
+      "text": "The S&P 500, and for traders to potentially act in the present in order to benefit from future moves in financial markets."
+    },
+    {
+      "start": 5994.12,
+      "end": 5996.12,
+      "text": "Moving on to the yield curve."
+    },
+    {
+      "start": 5996.12,
+      "end": 6005.12,
+      "text": "The yield curve represents the market's expectation of short-term versus long-term risk in the economy."
+    },
+    {
+      "start": 6005.12,
+      "end": 6034.12,
+      "text": "So, these are useful leading indicators to traders, real interest rates and the yield curve, but this comes with a warning, it comes with a caveat."
+    },
+    {
+      "start": 6034.12,
+      "end": 6049.12,
+      "text": "Because due to the Fed actions that are out there in real time in a dynamic world, there is no rulebook here that states what you have to do or must do in equities."
+    },
+    {
+      "start": 6049.12,
+      "end": 6063.12,
+      "text": "So, buying or selling when, for example, you see short-term real rates rising or falling versus long-term real rates falling or rising, or even when the yield curve is in transition."
+    },
+    {
+      "start": 6063.12,
+      "end": 6075.12,
+      "text": "Flattening or steepening, there is no rulebook, because the Fed sees what we see and can act on it and change the dynamic."
+    },
+    {
+      "start": 6075.12,
+      "end": 6092.12,
+      "text": "However, knowing what is going on is absolutely crucial to your macroeconomic understanding of what is going on in the world at any moment in time, because we have to have a macroeconomic view."
+    },
+    {
+      "start": 6092.12,
+      "end": 6093.12,
+      "text": "So, you use these indicators."
+    },
+    {
+      "start": 6093.12,
+      "end": 6101.12,
+      "text": "You can use these indicators and your understanding of them in conjunction with best practices in the equities market."
+    },
+    {
+      "start": 6101.12,
+      "end": 6111.12,
+      "text": "For example, when you see the VIX index in transition, as we outlined in the volatility videos in the IPLT video series."
+    },
+    {
+      "start": 6111.12,
+      "end": 6112.12,
+      "text": "So, you use these indicators together."
+    },
+    {
+      "start": 6112.12,
+      "end": 6115.12,
+      "text": "So, you use these indicators together."
+    },
+    {
+      "start": 6115.12,
+      "end": 6132.12,
+      "text": "You can use the VIX, you can use real rates and the yield curve together to have a much clearer understanding of the macroeconomic picture at any one moment in time, and have a macroeconomic view based on these indicators."
+    },
+    {
+      "start": 6132.12,
+      "end": 6151.12,
+      "text": "Real rates and the yield curve are leading indicators to economic expansion and contraction, and also financial markets risk and direction of risk asset expectations, and even possible Fed actions."
+    },
+    {
+      "start": 6151.12,
+      "end": 6161.12,
+      "text": "So, again, they're great indicators, but we have to have a caveat on this."
+    },
+    {
+      "start": 6161.12,
+      "end": 6163.12,
+      "text": "The Fed can act."
+    },
+    {
+      "start": 6163.12,
+      "end": 6167.12,
+      "text": "The Fed is looking at what we are looking at."
+    },
+    {
+      "start": 6167.12,
+      "end": 6171.12,
+      "text": "So, there is, unfortunately, no rulebook."
+    },
+    {
+      "start": 6171.12,
+      "end": 6178.12,
+      "text": "Now, what about bond products themselves that are available to retail traders?"
+    },
+    {
+      "start": 6178.12,
+      "end": 6186.12,
+      "text": "Well, Treasury bond products, they're few and far between."
+    },
+    {
+      "start": 6186.12,
+      "end": 6194.12,
+      "text": "If we're going to speculate on the outcome of bond markets by using bond products, they are pretty limited."
+    },
+    {
+      "start": 6194.12,
+      "end": 6206.12,
+      "text": "As we outlined in the IPLT video series, bond products like ETFs, they're extremely limited in their volatility, and they constitute a very small opportunity set."
+    },
+    {
+      "start": 6206.12,
+      "end": 6215.12,
+      "text": "They can't really be utilized by traders for large amounts of trade ideas and, therefore, consistent profitability."
+    },
+    {
+      "start": 6215.12,
+      "end": 6222.12,
+      "text": "From a retail trading perspective, however, you can look at these products in a couple of ways."
+    },
+    {
+      "start": 6222.12,
+      "end": 6233.12,
+      "text": "Firstly, as indicators themselves of expansion and contraction, in addition to utilizing real rates and the yield curve."
+    },
+    {
+      "start": 6233.12,
+      "end": 6236.12,
+      "text": "So, you can add this into your analysis."
+    },
+    {
+      "start": 6236.12,
+      "end": 6241.12,
+      "text": "You can use them in conjunction with real rates at the yield curve."
+    },
+    {
+      "start": 6241.12,
+      "end": 6255.12,
+      "text": "Or, secondly, as either turbo hedges to portfolios or very short-term directional bets at economic turning points and getting leverage through options."
+    },
+    {
+      "start": 6255.12,
+      "end": 6256.12,
+      "text": "To make shorter term bets."
+    },
+    {
+      "start": 6256.12,
+      "end": 6270.12,
+      "text": "So, what we mean by that turbo hedges is basically calling a moment when economic expansion is moving into contraction or contraction moving into expansion and using options to hedge a portfolio."
+    },
+    {
+      "start": 6270.12,
+      "end": 6285.12,
+      "text": "Or just taking very short-term directional bets at those economic turning points and getting a lot of leverage through options to make shorter term bets."
+    },
+    {
+      "start": 6285.12,
+      "end": 6291.12,
+      "text": "So, there's the government bond products there which are available at the link that is on the page."
+    },
+    {
+      "start": 6291.12,
+      "end": 6308.12,
+      "text": "There's three main government bond ETFs, which is the SHV, which is the short term maturity, the SHY, so medium term, one to three years, and the TRT, the 20 plus year maturity."
+    },
+    {
+      "start": 6308.12,
+      "end": 6312.12,
+      "text": "Now, obviously, we're recording this at the moment in time."
+    },
+    {
+      "start": 6312.12,
+      "end": 6321.12,
+      "text": "If products are delisted in the future and or new products become available, just do your homework yourself on each product."
+    },
+    {
+      "start": 6321.12,
+      "end": 6330.12,
+      "text": "What you have to do is make sure that they are liquid and tradeable and have a very active options market."
+    },
+    {
+      "start": 6330.12,
+      "end": 6336.12,
+      "text": "For international government bonds in Europe, Japan, the UK, etc."
+    },
+    {
+      "start": 6336.12,
+      "end": 6341.12,
+      "text": "Just apply all the same principles that you've learnt in this video."
+    },
+    {
+      "start": 6341.12,
+      "end": 6345.12,
+      "text": "Apply all the same principles to bond markets around the world."
+    },
+    {
+      "start": 6345.12,
+      "end": 6347.12,
+      "text": "You need to take the same approach."
+    },
+    {
+      "start": 6347.12,
+      "end": 6357.12,
+      "text": "This is really, this video, a template that can be transported and used in global bond markets."
+    },
+    {
+      "start": 6357.12,
+      "end": 6360.12,
+      "text": "Just use this video as a template."
+    },
+    {
+      "start": 6360.12,
+      "end": 6361.12,
+      "text": "Okay, guys."
+    },
+    {
+      "start": 6361.12,
+      "end": 6362.12,
+      "text": "So, that was a long video."
+    },
+    {
+      "start": 6362.12,
+      "end": 6364.12,
+      "text": "It's a lot to take in."
+    },
+    {
+      "start": 6364.12,
+      "end": 6368.12,
+      "text": "Let's go back to the desk for a short recap."
+    },
+    {
+      "start": 6372.12,
+      "end": 6375.12,
+      "text": "Okay, so welcome back to the desk."
+    },
+    {
+      "start": 6375.12,
+      "end": 6388.12,
+      "text": "Listen, I know that's a lot to take in so early on in the video series, but it's super important to be on top of real rates and the yield curve."
+    },
+    {
+      "start": 6388.12,
+      "end": 6401.12,
+      "text": "You have all the resources now via the downloads area to be able to update on a regular basis your benchmark yields and yield curve data."
+    },
+    {
+      "start": 6401.12,
+      "end": 6416.12,
+      "text": "You will be able to assess real rates in the US and the shape of the yield curve and changes that are occurring in both real rates and the yield curve at any one moment in time."
+    },
+    {
+      "start": 6416.12,
+      "end": 6420.12,
+      "text": "This is a super valuable resource."
+    },
+    {
+      "start": 6420.12,
+      "end": 6438.12,
+      "text": "It's going to be crucial to you for you moving forward and forming your macroeconomic view and therefore your ability to predict GDP direction, stock market direction, volatility and liquidity."
+    },
+    {
+      "start": 6438.12,
+      "end": 6456.12,
+      "text": "Now, it will be worth you definitely going over this video many, many times if you are new to this, especially because there's a lot to get your head around in terms of relationships and why things actually happen."
+    },
+    {
+      "start": 6456.12,
+      "end": 6464.12,
+      "text": "Also, remember the caveat so the Federal Reserve, they look at the same things we do."
+    },
+    {
+      "start": 6464.12,
+      "end": 6466.12,
+      "text": "They're always looking at the same things."
+    },
+    {
+      "start": 6466.12,
+      "end": 6478.12,
+      "text": "So, of course, we want to always have an understanding and appreciation and know if there's any changes in real rates and changes in the yield curve."
+    },
+    {
+      "start": 6478.12,
+      "end": 6488.12,
+      "text": "And we need to be on top of them all the time so we can get a gauge on the direction of the stock market so we position our portfolios properly."
+    },
+    {
+      "start": 6488.12,
+      "end": 6502.12,
+      "text": "However, as explained in the previous video, there is no rulebook that says exactly what you have to do at certain times and when certain things happen."
+    },
+    {
+      "start": 6502.12,
+      "end": 6510.12,
+      "text": "We live in a dynamic world and policy actions can change our views instantly."
+    },
+    {
+      "start": 6510.12,
+      "end": 6524.12,
+      "text": "Unfortunately, retail traders are always looking for rulebooks or checklists or shortcuts or they're always wanting to be told exactly what to do by other people."
+    },
+    {
+      "start": 6524.12,
+      "end": 6534.12,
+      "text": "The best you can do if you're being self-sustainable and you're actually working towards becoming a pro level trader."
+    },
+    {
+      "start": 6534.12,
+      "end": 6547.12,
+      "text": "The best you can do is just be on top of the process and know what's going on and act accordingly in your portfolios based on a judgment call at the time."
+    },
+    {
+      "start": 6547.12,
+      "end": 6557.12,
+      "text": "Now, in this video, we learnt about government or sovereign bonds, so when the government borrows money from the private sector."
+    },
+    {
+      "start": 6557.12,
+      "end": 6561.12,
+      "text": "In the next video, we're going to look at the corporate bond market."
+    },
+    {
+      "start": 6561.12,
+      "end": 6583.12,
+      "text": "So when companies borrow money from the private sector, and we're going to look at how we can use corporate bonds in aggregate as leading indicators to predict the economy and therefore S&P 500 returns as a whole, direction and returns of the S&P 500."
+    },
+    {
+      "start": 6583.12,
+      "end": 6595.12,
+      "text": "So let's shoot straight into the next video on corporate bonds and credit spreads, and I'll see you at the end of video five back at the desk."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

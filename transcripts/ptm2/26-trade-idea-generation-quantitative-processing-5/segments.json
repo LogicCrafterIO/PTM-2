@@ -1,0 +1,4955 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.98,
+      "text": "Okay, guys, welcome back to the desk again. So in the last video, we looked at the mechanics of long idea processing. Then Chris showed you how to process sector and stock data and each of the steps that you would go through to identify positive and negative outliers. And of course, potential. So the key word there, guys, potential, long and short outliers. So the key word there, guys, potential, long and short outliers."
+    },
+    {
+      "start": 30.0,
+      "end": 59.98,
+      "text": "Now, long idea processing. What did we actually do there? Well, we identified all of the earnings growth profiles for forward-looking earnings growth estimates, expectations, as said by research analysts in the market. So this is our earnings growth one number and our earnings growth two number. And we overlaid this with our own requirements."
+    },
+    {
+      "start": 60.0,
+      "end": 89.88,
+      "text": "requirements to have the market on our side. And we rank the earnings growth profile estimates in preference for growth. So we then, of course, take that analysis and we apply it to a sector whenever we are processing the data in a sector. And Chris, of course, showed you with the spreadsheet class, how to download the data and"
+    },
+    {
+      "start": 89.88,
+      "end": 119.56,
+      "text": "process it and process it with best practices steps. In future, what you're going to be doing is you're going to become very, very familiar with all of these earnings growth profiles. And whenever you're processing, they're going to always be in the back of your mind. So you will naturally go through the processes very, very quickly. And you'll just get better and better at this."
+    },
+    {
+      "start": 119.76,
+      "end": 149.5,
+      "text": "At using the earnings growth profiles, ranking them with preference and ranking stocks with preference to their growth when you're processing data. So eventually, you'll end up doing this without thinking about it too much. And it becomes an autopilot situation. So you can probably see where this is going now, guys. Yes, conscious competence."
+    },
+    {
+      "start": 149.64,
+      "end": 156.74,
+      "text": "You're going to become competent at doing this. Practice the processes over and over and over"
+    },
+    {
+      "start": 156.74,
+      "end": 163.48,
+      "text": "until you get good at it. And of course, get used to it and you start doing it naturally"
+    },
+    {
+      "start": 163.48,
+      "end": 171.52,
+      "text": "without thinking about it too much. You will start identifying opportunities without thinking"
+    },
+    {
+      "start": 171.52,
+      "end": 177.26,
+      "text": "about the earnings growth profiles too much. You'll end up doing it naturally. Now, we're going to"
+    },
+    {
+      "start": 177.26,
+      "end": 185.9,
+      "text": "move on to mechanics now of short trade idea processing. We're going to take the same approach"
+    },
+    {
+      "start": 185.9,
+      "end": 193.22,
+      "text": "by systematically going through earnings growth profiles. But now we're looking at them through a"
+    },
+    {
+      "start": 193.22,
+      "end": 200.78,
+      "text": "short lens, which requires actually a very different approach. In the video after that,"
+    },
+    {
+      "start": 201.0,
+      "end": 209.04,
+      "text": "what we're going to be looking at is turnaround stories and value traps. And we're going to learn"
+    },
+    {
+      "start": 209.64,
+      "end": 218.28,
+      "text": "what to stay away from and what could be opportunistic in that space. Then, in the video after that,"
+    },
+    {
+      "start": 218.28,
+      "end": 226.92,
+      "text": "we're going to be looking at the most common mistakes in data mining and processing. So, in the quant"
+    },
+    {
+      "start": 226.92,
+      "end": 235.56,
+      "text": "phase, the mistakes that are commonly made by retail traders in the quant phase, when data mining and"
+    },
+    {
+      "start": 235.56,
+      "end": 242.68,
+      "text": "processing during the bottom-up process. This is actually going to help you a lot in cementing the"
+    },
+    {
+      "start": 242.68,
+      "end": 251.24,
+      "text": "processes that Chris taught you in the previous video. So, let's shoot over to the next video and I'll see you"
+    },
+    {
+      "start": 251.24,
+      "end": 253.48,
+      "text": "back at the desk a bit later on."
+    },
+    {
+      "start": 259.88,
+      "end": 269.32,
+      "text": "Okay, so we are back at the screen. Video number 26. We're going to continue now with our trade idea"
+    },
+    {
+      "start": 269.32,
+      "end": 278.2,
+      "text": "generation processes. And we're going to be looking at the mechanics of short trade ideas. We are again"
+    },
+    {
+      "start": 278.2,
+      "end": 288.68,
+      "text": "going to be looking at percentage earnings growth as a filtering metric within the quantitative phase of the"
+    },
+    {
+      "start": 288.68,
+      "end": 298.12,
+      "text": "overall bottom-up process. And here, again, we have our quantitative and qualitative dashboard as a"
+    },
+    {
+      "start": 298.12,
+      "end": 305.96,
+      "text": "reference point as to the entire bottom-up process. So, on the left-hand side, we're going to be focusing again,"
+    },
+    {
+      "start": 305.96,
+      "end": 313.4,
+      "text": "like in the last video on earnings growth, except in the last video, we looked at longs. In this video,"
+    },
+    {
+      "start": 313.4,
+      "end": 321.4,
+      "text": "we're going to be looking at shorts. In terms of the assumptions that we're going to make in the"
+    },
+    {
+      "start": 321.4,
+      "end": 329.56,
+      "text": "backdrop of establishing a portfolio bias, well, in the previous video, we looked at the quantitative"
+    },
+    {
+      "start": 329.56,
+      "end": 337.64,
+      "text": "processes that pro-traders focus on at the stock level when we're generating potential long ideas."
+    },
+    {
+      "start": 337.64,
+      "end": 347.08,
+      "text": "And we assumed a bullish macroeconomic view and a net long portfolio bias. So, we assumed that you"
+    },
+    {
+      "start": 347.08,
+      "end": 357.16,
+      "text": "recognized that the world is in a cyclical upswing, that you're forecasting real GDP expansion with Fed"
+    },
+    {
+      "start": 357.16,
+      "end": 364.6,
+      "text": "target inflation intact and that your portfolio bias is net long and you want to be"
+    },
+    {
+      "start": 364.6,
+      "end": 373.16,
+      "text": "aggressively long growth stocks in your portfolio. In this video, we're going to assume the same. However,"
+    },
+    {
+      "start": 373.16,
+      "end": 381.48,
+      "text": "we're looking for shorts against longs that are in that portfolio. And this is a big lesson in itself."
+    },
+    {
+      "start": 381.56,
+      "end": 391.16,
+      "text": "Because at any one moment in time in the future, even if you want to be aggressively long growth names,"
+    },
+    {
+      "start": 391.16,
+      "end": 400.04,
+      "text": "because you have a bullish predisposition, you must always, always, always, always still be seeking"
+    },
+    {
+      "start": 400.04,
+      "end": 409.32,
+      "text": "out shorts and seeking out shorts that will go down in value, even if the overall stock market goes up."
+    },
+    {
+      "start": 410.52,
+      "end": 417.56,
+      "text": "And the opposite also holds true. Even if you want to be aggressively short growth names,"
+    },
+    {
+      "start": 417.56,
+      "end": 425.0,
+      "text": "because you have a bearish predisposition, you must always be seeking out longs,"
+    },
+    {
+      "start": 425.0,
+      "end": 432.68,
+      "text": "and seeking out longs that will go up in value, even if the overall stock market ends up going down."
+    },
+    {
+      "start": 434.04,
+      "end": 441.56,
+      "text": "As traders and portfolio managers, we can't just be naked long or short everything and be 100%"
+    },
+    {
+      "start": 441.56,
+      "end": 449.0,
+      "text": "100% in one direction. This is a surefire way to blowing up your trading account."
+    },
+    {
+      "start": 450.6,
+      "end": 459.08,
+      "text": "Now, just as a reminder, we always want to be going where the juice is. So remember,"
+    },
+    {
+      "start": 459.88,
+      "end": 469.96,
+      "text": "we have our entire US stock market that encompasses over 2200 stocks. Within the stock market, we have our"
+    },
+    {
+      "start": 469.96,
+      "end": 478.84,
+      "text": "industry sectors that have both cyclical and defensive characteristics. And within all of those sectors,"
+    },
+    {
+      "start": 478.84,
+      "end": 486.12,
+      "text": "we have different types of stocks that exhibit different types of characteristics. We have growth"
+    },
+    {
+      "start": 486.12,
+      "end": 494.6,
+      "text": "names, we have X growth names, and we have value names. On the short side, we're looking to be short,"
+    },
+    {
+      "start": 494.6,
+      "end": 503.24,
+      "text": "X growth names, and potentially value names or value traps. On the long side, in the previous video,"
+    },
+    {
+      "start": 503.24,
+      "end": 508.76,
+      "text": "of course, of course, of course, what do we like? Well, we like what all money in the stock market likes,"
+    },
+    {
+      "start": 508.76,
+      "end": 518.92,
+      "text": "which is growth. So on the long side, we seek to be long growth names. And on the short side, we seek"
+    },
+    {
+      "start": 518.92,
+      "end": 530.84,
+      "text": "to be short, X growth names, and potentially what we call value traps. So whether it's X growth or value trap,"
+    },
+    {
+      "start": 531.56,
+      "end": 540.52,
+      "text": "and regardless of what sector the stock is in, we always want to be optimizing in any GDP growth"
+    },
+    {
+      "start": 540.52,
+      "end": 550.92,
+      "text": "environment. So regardless of whether GDP is growing or contracting, we want to be short stocks that go"
+    },
+    {
+      "start": 550.92,
+      "end": 559.96,
+      "text": "down in value. And we want to be short stocks that underperform the sector and the market in any GDP"
+    },
+    {
+      "start": 559.96,
+      "end": 569.4,
+      "text": "environment. In this example, as mentioned earlier, we are assuming a net long bias in the portfolio,"
+    },
+    {
+      "start": 570.36,
+      "end": 580.44,
+      "text": "emanating from an analysis of the macro environment, where we believe that GDP will expand and the stock"
+    },
+    {
+      "start": 580.44,
+      "end": 590.52,
+      "text": "market will go up. So in the backdrop, we have a net long portfolio bias, and we are long growth names"
+    },
+    {
+      "start": 590.52,
+      "end": 600.12,
+      "text": "in the portfolio. And we are seeking to add shorts to that portfolio. Now, similar to the previous video,"
+    },
+    {
+      "start": 600.68,
+      "end": 610.28,
+      "text": "where we looked at those 10 earnings growth profiles through the lens of long ideas, so long idea"
+    },
+    {
+      "start": 610.28,
+      "end": 618.44,
+      "text": "processing. In this video, we're going to be looking at various earnings growth profiles, but looking at them"
+    },
+    {
+      "start": 618.44,
+      "end": 624.2,
+      "text": "through the lens of short idea processing. And you can go into the download section,"
+    },
+    {
+      "start": 624.76,
+      "end": 632.12,
+      "text": "and download the spreadsheet called earnings growth profiles for shorts. And you can see all of the"
+    },
+    {
+      "start": 632.12,
+      "end": 640.52,
+      "text": "earnings growth profiles in that spreadsheet that we're going to look at here. But first, we need to talk"
+    },
+    {
+      "start": 641.4,
+      "end": 651.56,
+      "text": "about some of the mechanics of potential short trade ideas, some technical situations, and some good habits."
+    },
+    {
+      "start": 651.56,
+      "end": 661.72,
+      "text": "So if you recall, from the previous video, with our market cap filters, with short ideas, you need to be"
+    },
+    {
+      "start": 661.72,
+      "end": 673.56,
+      "text": "concentrating on the $20 billion plus market cap space. From a short perspective, from a revenue perspective,"
+    },
+    {
+      "start": 673.56,
+      "end": 682.76,
+      "text": "perspective, from an earnings perspective, a large cap or mega cap stock has more potential to halve once it"
+    },
+    {
+      "start": 682.76,
+      "end": 692.68,
+      "text": "goes X growth in a lower risk way than a mid cap, or even a small cap stock or a micro cap stock."
+    },
+    {
+      "start": 694.28,
+      "end": 704.84,
+      "text": "From a long perspective, a mid cap, say $5 billion market cap stock has more potential to double and double"
+    },
+    {
+      "start": 704.84,
+      "end": 714.92,
+      "text": "quickly than a mega cap $40 billion plus market cap stock. So for long ideas, if you recall, we need to"
+    },
+    {
+      "start": 714.92,
+      "end": 725.0,
+      "text": "concentrate on the $3 billion to $10 billion market cap space. For shorts, we need to concentrate on"
+    },
+    {
+      "start": 725.0,
+      "end": 738.2,
+      "text": "large cap stocks that have $20 billion plus market cap and mega cap stocks. For mid caps, earnings growth is"
+    },
+    {
+      "start": 738.2,
+      "end": 747.64,
+      "text": "generally greater than in large and mega caps. For shorts, we are looking to get in when growth is"
+    },
+    {
+      "start": 747.64,
+      "end": 759.16,
+      "text": "slowing. So when a stock goes X growth. So you have to use market cap as a filter, as well as price earnings"
+    },
+    {
+      "start": 759.16,
+      "end": 767.96,
+      "text": "ratio, earnings growth, and peg ratio. So again, we are continuing here to build out"
+    },
+    {
+      "start": 767.96,
+      "end": 778.12,
+      "text": "a portfolio where we're using essentially volatility as a filter. So we have a portfolio that presents us"
+    },
+    {
+      "start": 778.12,
+      "end": 787.88,
+      "text": "both acceptable risk and good opportunity to make money. And that, of course, as you've seen before,"
+    },
+    {
+      "start": 787.88,
+      "end": 796.68,
+      "text": "was covered in the IPLT video series. If you haven't seen that, then I suggest you do register and subscribe."
+    },
+    {
+      "start": 796.68,
+      "end": 806.92,
+      "text": "Because again, this is how everything fits together. So from a portfolio volatility perspective, the large"
+    },
+    {
+      "start": 806.92,
+      "end": 818.12,
+      "text": "and mega cap space is ideal for us, because initially, there is low volatility for the 20 to 60 day time"
+    },
+    {
+      "start": 818.12,
+      "end": 828.36,
+      "text": "horizon. But because their business models. And they are vulnerable. When something happens to these companies in"
+    },
+    {
+      "start": 828.36,
+      "end": 838.6,
+      "text": "the negative, so when they go X growth, that's when stocks fall and fall sharply and volatility increases"
+    },
+    {
+      "start": 838.6,
+      "end": 845.56,
+      "text": "significantly. So we as traders and portfolio managers want to be capturing those moves."
+    },
+    {
+      "start": 846.84,
+      "end": 857.16,
+      "text": "Additionally, when we are using market capitalization as a quantitative filter for our short idea processing,"
+    },
+    {
+      "start": 857.96,
+      "end": 866.28,
+      "text": "when we are opening a trading account for the first time, we want to get off to the best possible start."
+    },
+    {
+      "start": 867.0,
+      "end": 879.24,
+      "text": "If you fill your portfolio with low market cap shorts. So under $3 billion. And you have lots of longs that are over,"
+    },
+    {
+      "start": 879.24,
+      "end": 890.52,
+      "text": "say, $40 billion. So essentially, you are short small caps, and long mega caps, you are asking for trouble."
+    },
+    {
+      "start": 890.52,
+      "end": 897.64,
+      "text": "So in a GDP growth environment. So in a GDP growth environment, for example, when you have a portfolio"
+    },
+    {
+      "start": 897.64,
+      "end": 907.96,
+      "text": "bias of net long, earnings growth is larger and more sensitive to the business cycle in, for example,"
+    },
+    {
+      "start": 907.96,
+      "end": 916.68,
+      "text": "you are short mid caps versus large and mega caps on average. So if you are building portfolios,"
+    },
+    {
+      "start": 916.68,
+      "end": 927.0,
+      "text": "where for example, you are short a mixture of mid caps and small caps, and long a whole bunch of mega caps,"
+    },
+    {
+      "start": 927.0,
+      "end": 934.68,
+      "text": "and you're just starting out with a new trading account, you are asking for trouble because you"
+    },
+    {
+      "start": 934.68,
+      "end": 944.76,
+      "text": "are short on average, higher earnings up revenue growth versus long, lower earnings up revenue growth on"
+    },
+    {
+      "start": 944.76,
+      "end": 955.08,
+      "text": "average. So you are exposing yourself to being short high earnings growth, and high revenue growth, and"
+    },
+    {
+      "start": 955.08,
+      "end": 964.52,
+      "text": "long low earnings growth, and low revenue growth. You are also exposing yourself to short high volatility,"
+    },
+    {
+      "start": 965.08,
+      "end": 973.24,
+      "text": "and long low volatility. So this is exactly the opposite of what we're trying to achieve here,"
+    },
+    {
+      "start": 973.24,
+      "end": 981.16,
+      "text": "as traders, when we're building long short portfolios, you are asking for trouble. And as time goes by,"
+    },
+    {
+      "start": 981.72,
+      "end": 991.0,
+      "text": "you will blow up. Additionally, you're exposing yourself to potential takeover risk in your portfolio."
+    },
+    {
+      "start": 991.8,
+      "end": 1000.52,
+      "text": "Because if you're short, a whole bunch of low market cap stocks, and long a bunch of high mega cap,"
+    },
+    {
+      "start": 1000.52,
+      "end": 1009.88,
+      "text": "or large cap market caps, you're exposing yourself to your low market cap stocks being taken over."
+    },
+    {
+      "start": 1010.76,
+      "end": 1017.64,
+      "text": "They are much more likely to be taken over mid caps than a large or mega cap."
+    },
+    {
+      "start": 1019.08,
+      "end": 1029.24,
+      "text": "Why? Because it's much easier for large companies to get the financing to acquire or take over,"
+    },
+    {
+      "start": 1029.24,
+      "end": 1038.2,
+      "text": "for example, a mid cap company that currently has a $3 billion market cap, and they go and buy it for $4"
+    },
+    {
+      "start": 1038.2,
+      "end": 1046.12,
+      "text": "billion or $5 billion, as in they pay a premium for that stock, for that company. It's much easier"
+    },
+    {
+      "start": 1046.12,
+      "end": 1056.28,
+      "text": "to do that than to go out and raise the financing for a $7,500 or $150 billion market cap stock."
+    },
+    {
+      "start": 1057.96,
+      "end": 1065.08,
+      "text": "Additionally, large companies who are looking to acquire other companies, they are going to be more"
+    },
+    {
+      "start": 1065.08,
+      "end": 1073.0,
+      "text": "attracted, like us, to growth. They are not going to be attracted to X growth, they're more likely to"
+    },
+    {
+      "start": 1073.0,
+      "end": 1081.8,
+      "text": "be attracted to growth. So again, larger companies will be more attracted to smaller stocks,"
+    },
+    {
+      "start": 1081.8,
+      "end": 1088.28,
+      "text": "rather than large or mega cap stocks or companies simply because of their growth."
+    },
+    {
+      "start": 1089.4,
+      "end": 1096.04,
+      "text": "So it's easier to get the financing on a much lower market cap because of the chip size,"
+    },
+    {
+      "start": 1096.04,
+      "end": 1102.76,
+      "text": "the size of the deal versus the size of the deal of a large or mega cap. But also,"
+    },
+    {
+      "start": 1103.64,
+      "end": 1109.64,
+      "text": "using that financing, companies would rather acquire growth, they are more attracted to growth,"
+    },
+    {
+      "start": 1109.64,
+      "end": 1118.92,
+      "text": "like us. But also, just from a risk perspective, from a trader's perspective, when we're looking to"
+    },
+    {
+      "start": 1118.92,
+      "end": 1128.2,
+      "text": "short stocks, let's have a look at a takeover risk example. So let's say you have a trading account of"
+    },
+    {
+      "start": 1128.2,
+      "end": 1138.52,
+      "text": "$15,000 deposited on margin, and you have the ability to leverage this four times. So you can have a"
+    },
+    {
+      "start": 1138.52,
+      "end": 1148.44,
+      "text": "$60,000 gross exposure portfolio. And let's say in the portfolio, we choose to have eight positions of"
+    },
+    {
+      "start": 1148.44,
+      "end": 1158.04,
+      "text": "$7,500 notional exposure. And within those eight, we have five longs and three shorts,"
+    },
+    {
+      "start": 1158.04,
+      "end": 1165.72,
+      "text": "but we choose to be net long, five large and mega caps, and short three mid caps."
+    },
+    {
+      "start": 1167.08,
+      "end": 1177.96,
+      "text": "What actually happens if, for example, we short $7,500 of a stock that has a market cap of, say,"
+    },
+    {
+      "start": 1177.96,
+      "end": 1186.52,
+      "text": "$3 billion. So it's defined as a mid cap, market cap $3 billion. And the company is taken over for,"
+    },
+    {
+      "start": 1186.52,
+      "end": 1196.28,
+      "text": "say, $4.5 billion value. And the announcement happens when the stock market is closed. That's a 50%"
+    },
+    {
+      "start": 1196.28,
+      "end": 1205.24,
+      "text": "premium to the market cap of yesterday. The stock will simply go up 50% without you being able to get"
+    },
+    {
+      "start": 1205.24,
+      "end": 1218.12,
+      "text": "out. So you're going to be down $3,750 on the trade. So on a total gross exposure number of $60,000,"
+    },
+    {
+      "start": 1218.92,
+      "end": 1232.44,
+      "text": "you are down $3,750, which is a 6.25% loss on the gross exposure number. But on the margin number of $15,000,"
+    },
+    {
+      "start": 1232.44,
+      "end": 1246.04,
+      "text": "that is a 25% loss on your margin. This is an irrecoverable position for an account size that's this small."
+    },
+    {
+      "start": 1246.04,
+      "end": 1250.68,
+      "text": "It's going to take the risk that's this small. It's going to take you at least 6 months, possibly even 12"
+    },
+    {
+      "start": 1250.68,
+      "end": 1258.84,
+      "text": "months to make this money back in the portfolio. This type of risk has to be eliminated from your"
+    },
+    {
+      "start": 1258.84,
+      "end": 1271.16,
+      "text": "portfolio immediately. So from the outset, you must do, you have to place a market cap filter on your short"
+    },
+    {
+      "start": 1271.16,
+      "end": 1281.8,
+      "text": "ideas of $20 billion minimum. So only go short, large and mega cap stocks to begin with. When you're making"
+    },
+    {
+      "start": 1281.8,
+      "end": 1291.56,
+      "text": "money six to 12 months down the line, only then are you allowed to get clever, but not in the beginning."
+    },
+    {
+      "start": 1291.56,
+      "end": 1297.72,
+      "text": "You've not earned the right yet to be clever because you haven't made money."
+    },
+    {
+      "start": 1299.64,
+      "end": 1310.36,
+      "text": "Now coincidentally, this is why good shorts are much harder to find than good longs in a typical positive"
+    },
+    {
+      "start": 1310.92,
+      "end": 1321.48,
+      "text": "GDP environment. Why? Because we have to place a market cap filter of $20 billion from the outset."
+    },
+    {
+      "start": 1322.52,
+      "end": 1332.76,
+      "text": "And just from a market cap perspective, there's going to be less of these stocks available in the market."
+    },
+    {
+      "start": 1333.4,
+      "end": 1345.08,
+      "text": "So the opportunity set is just smaller. Additionally, within the opportunity set of the $20 billion plus"
+    },
+    {
+      "start": 1345.08,
+      "end": 1356.28,
+      "text": "market cap market cap stocks available at any one time, we have to find fundamental setups that exhibit"
+    },
+    {
+      "start": 1357.08,
+      "end": 1368.6,
+      "text": "characteristics of good short ideas. So not only is the opportunity set smaller than our potential long"
+    },
+    {
+      "start": 1368.6,
+      "end": 1378.36,
+      "text": "stock ideas, but within the opportunity set, the amount of stocks that any one time that exhibit fundamental"
+    },
+    {
+      "start": 1378.36,
+      "end": 1388.76,
+      "text": "characteristics that enable us to be short these stocks is much smaller. But remember, we are looking"
+    },
+    {
+      "start": 1388.76,
+      "end": 1397.88,
+      "text": "through the lens here of a positive GDP environment. It's much harder to find good shorts in that"
+    },
+    {
+      "start": 1397.88,
+      "end": 1412.2,
+      "text": "environment in a slowdown in GDP. So when GDP is slowing down and still positive, but it's going lower. Or in a GDP"
+    },
+    {
+      "start": 1412.84,
+      "end": 1426.2,
+      "text": "contracting environment, it's obviously much easier to find shorts. But remember, one thing is for certain. In any GDP growth"
+    },
+    {
+      "start": 1426.2,
+      "end": 1438.2,
+      "text": "environment, we can't simply be long 100% in our portfolio or short 100% in our portfolio. We have to"
+    },
+    {
+      "start": 1438.2,
+      "end": 1447.0,
+      "text": "have either a net long or net short bias or a neutral bias. In this example, when we're looking at a typical"
+    },
+    {
+      "start": 1447.0,
+      "end": 1455.4,
+      "text": "positive GDP environment, we still have to have shorts in our portfolio. And we have to do the work."
+    },
+    {
+      "start": 1455.4,
+      "end": 1467.4,
+      "text": "We have to generate as best we can, good short ideas, even in the typical positive GDP environment, and we must"
+    },
+    {
+      "start": 1467.4,
+      "end": 1479.4,
+      "text": "have short positions in our portfolio. Now, similar to when we were looking at long ideas, we do have an ideal"
+    },
+    {
+      "start": 1479.4,
+      "end": 1491.4,
+      "text": "ideal price earnings ratio set up for short ideas. So our backdrop, what we want to be having is something like this"
+    },
+    {
+      "start": 1491.4,
+      "end": 1501.4,
+      "text": "for our PE profile for the stock relative to the sector. So when you're filtering for PE, you are looking for"
+    },
+    {
+      "start": 1501.4,
+      "end": 1513.4,
+      "text": "for stocks that have a PE that's on a discount to the sector in both period one and in period two. But in"
+    },
+    {
+      "start": 1513.4,
+      "end": 1523.4,
+      "text": "period two, the PE two, because we're using current stock price divided by EPS, we want the PE two to be"
+    },
+    {
+      "start": 1523.4,
+      "end": 1535.4,
+      "text": "higher for the stock relative to its PE one. Why? Because it means that EPS is going lower in PE two"
+    },
+    {
+      "start": 1535.4,
+      "end": 1545.4,
+      "text": "versus PE one. So we have lower EPS in PE two versus PE one, and therefore negative earnings growth."
+    },
+    {
+      "start": 1545.4,
+      "end": 1553.4,
+      "text": "Additionally, in this earnings growth profile relative to the sector, you'll see with the sector that the"
+    },
+    {
+      "start": 1553.4,
+      "end": 1561.4,
+      "text": "PE for PE two is lower than PE one, meaning that the sector is actually exhibiting some sort of growth."
+    },
+    {
+      "start": 1561.4,
+      "end": 1573.4,
+      "text": "So that means that the average mean earnings per share of the sector is actually growing slightly from"
+    },
+    {
+      "start": 1573.4,
+      "end": 1583.4,
+      "text": "period one to period two. Now it could be even better, for example, if the EPS, the mean EPS of the sector is"
+    },
+    {
+      "start": 1583.4,
+      "end": 1593.4,
+      "text": "either the same or lower for the second period versus the first period. But what we've done here is"
+    },
+    {
+      "start": 1593.4,
+      "end": 1603.4,
+      "text": "exhibited a case where it's just slightly better. So the PE for period number two is just slightly lower"
+    },
+    {
+      "start": 1603.4,
+      "end": 1613.4,
+      "text": "than PE one. And that's kind of the minimum ideal PE setup or PE situation for the sector."
+    },
+    {
+      "start": 1613.4,
+      "end": 1623.4,
+      "text": "And then with the stock relative to that, we want lower in both periods. And on top of that, for the stock itself,"
+    },
+    {
+      "start": 1623.4,
+      "end": 1635.4,
+      "text": "we want to see EPS lower in period two versus period one. Now, just as a side note, this is a situation where"
+    },
+    {
+      "start": 1635.4,
+      "end": 1647.4,
+      "text": "EPS is positive in both periods for both the stock and for the sector. So yes, we will be looking at"
+    },
+    {
+      "start": 1647.4,
+      "end": 1659.4,
+      "text": "earnings growth profiles of loss making companies. But here we are looking at a company that is in profit,"
+    },
+    {
+      "start": 1659.4,
+      "end": 1671.4,
+      "text": "but their profit, their EPS is going lower. And this is the ideal setup for us in terms of EPS and price"
+    },
+    {
+      "start": 1671.4,
+      "end": 1683.4,
+      "text": "earnings ratio for the stock versus the sector. So in this situation, the stock is potentially going X growth"
+    },
+    {
+      "start": 1683.4,
+      "end": 1695.4,
+      "text": "in a sector that is growing slightly. So this is the backdrop, the minimum backdrop that we are looking for,"
+    },
+    {
+      "start": 1695.4,
+      "end": 1705.4,
+      "text": "the ideal price earnings ratio set up when we're processing for short trade ideas. When we move on to earnings"
+    },
+    {
+      "start": 1705.4,
+      "end": 1713.4,
+      "text": "growth, it becomes a slightly different story into how we analyze earnings growth through the filter of a"
+    },
+    {
+      "start": 1713.4,
+      "end": 1723.4,
+      "text": "short lens when compared to when we do this exercise, looking at earnings growth profiles through a long lens."
+    },
+    {
+      "start": 1723.4,
+      "end": 1733.4,
+      "text": "So if you recall, when we looked at sequentially positive earnings growth, when we looked at long ideas as"
+    },
+    {
+      "start": 1733.4,
+      "end": 1743.4,
+      "text": "the ideal situation, what did we have? We had an earnings growth one percentage that was higher than the sector,"
+    },
+    {
+      "start": 1743.4,
+      "end": 1757.4,
+      "text": "higher than the mean average. And then in EG2, we again had a stock earnings growth number that was higher than the sector,"
+    },
+    {
+      "start": 1757.4,
+      "end": 1771.4,
+      "text": "but in earnings growth two for the stock itself, it was higher than in earnings growth one. So we had a sequentially positive earnings growth number for the stock that is outperforming the sector,"
+    },
+    {
+      "start": 1771.4,
+      "end": 1799.4,
+      "text": "that is outperforming the sector in both periods. Now on paper, if we just reverse that situation and we say, okay, we just turn this upside down. And that's what we're probably looking for for shorts. What do we get? Well, we get in period one, an earnings growth number that is negative."
+    },
+    {
+      "start": 1799.4,
+      "end": 1819.4,
+      "text": "And worse than the earnings growth percentage in period number one is negative. And then in period number two, it's negative again, and it's accelerating to the downside. And again, it's underperforming the sector. So the stock's earnings growth is negative in both periods."
+    },
+    {
+      "start": 1819.4,
+      "end": 1843.4,
+      "text": "And it's getting more negative in period two versus period one. And in both periods, it's underperforming the sector. So on paper, what we're essentially getting here is sequentially negative below sector average earnings growth momentum."
+    },
+    {
+      "start": 1843.4,
+      "end": 1852.4,
+      "text": "The problem is, the problem is, is that with shorts, the earnings growth setup can look attractive on paper."
+    },
+    {
+      "start": 1852.4,
+      "end": 1863.4,
+      "text": "But when you actually go into the market and have a look at stock prices that exhibit this scenario,"
+    },
+    {
+      "start": 1863.4,
+      "end": 1879.4,
+      "text": "they're probably already going to be down quite a lot. And yes, on the flip side, when we're looking at long ideas that exhibit sequentially positive above sector average earnings growth momentum,"
+    },
+    {
+      "start": 1879.4,
+      "end": 1886.4,
+      "text": "when we pull up the stock prices of those companies, you're probably going to see the companies up quite a lot."
+    },
+    {
+      "start": 1886.4,
+      "end": 1901.4,
+      "text": "But there is sometimes a difference in that when we're looking at long ideas and we're looking at valuations and earnings growth and we're looking at price."
+    },
+    {
+      "start": 1901.4,
+      "end": 1916.4,
+      "text": "We saw in the previous video that for a company to maintain its same PE ratio, that the company in the positive would have to be hitting its earnings growth numbers,"
+    },
+    {
+      "start": 1916.4,
+      "end": 1924.4,
+      "text": "its EPS, and the stock can continue trading on the same PE, the same multiple in the second period."
+    },
+    {
+      "start": 1924.4,
+      "end": 1939.4,
+      "text": "In that situation, the market continues to reward the company with a premium to the sector for delivering continuously on its results, on its operations."
+    },
+    {
+      "start": 1939.4,
+      "end": 1955.4,
+      "text": "Yes, the stock in the journey with sequentially positive above sector average earnings growth momentum in that journey from period one to period two, it can be volatile."
+    },
+    {
+      "start": 1955.4,
+      "end": 1971.4,
+      "text": "But ultimately, if the company keeps delivering, it's highly likely that money is going to continuously reward the stock, reward the company, and the company will continuously trade on a premium to the sector."
+    },
+    {
+      "start": 1971.4,
+      "end": 1991.4,
+      "text": "The differences with shorts when we're looking at sequentially negative below sector average earnings growth momentum, it's likely that when we pull up this type of earnings growth profile and then go and look at the stock price,"
+    },
+    {
+      "start": 1991.4,
+      "end": 1999.4,
+      "text": "the stock price, it's likely that the stock price is going to be down potentially quite a lot already."
+    },
+    {
+      "start": 1999.4,
+      "end": 2008.4,
+      "text": "And management is going to be doing things in an attempt to stop the bleed, to stop the earnings decline."
+    },
+    {
+      "start": 2008.4,
+      "end": 2025.4,
+      "text": "So there will be dynamic actions occurring potentially in the market when we have a static on paper earnings growth profile in a stock that can already be down quite a lot."
+    },
+    {
+      "start": 2025.4,
+      "end": 2044.4,
+      "text": "And if a stock is already down quite a lot and it's exhibiting this type of earnings growth profile, then stocks, when they get to certain levels, can actually represent to the market value."
+    },
+    {
+      "start": 2044.4,
+      "end": 2062.4,
+      "text": "And this type of value appraisal comes from other players in the market, investors who are looking at both the balance sheet and the operation and coming to the conclusion that at a certain level, a stock is value."
+    },
+    {
+      "start": 2062.4,
+      "end": 2078.4,
+      "text": "So we have to look at sequentially negative below sector average earnings growth momentum in the same way that we look at sequentially positive above sector average earnings growth momentum."
+    },
+    {
+      "start": 2078.4,
+      "end": 2091.4,
+      "text": "This earnings growth set up, this earnings growth profile on paper looks ideal, but it is static and only on paper."
+    },
+    {
+      "start": 2091.4,
+      "end": 2097.4,
+      "text": "And things can change and things are dynamic day to day in the market."
+    },
+    {
+      "start": 2097.4,
+      "end": 2117.4,
+      "text": "And we have to be very careful that we don't, for example, short stocks that are down a lot already and management are doing things to turn around the company, to turn around the fortunes of the company and turn around earnings growth."
+    },
+    {
+      "start": 2117.4,
+      "end": 2124.4,
+      "text": "And on top of that, stocks are not at a level where they represent value, where investors are stepping in."
+    },
+    {
+      "start": 2124.4,
+      "end": 2141.4,
+      "text": "So sequentially negative below sector average earnings growth momentum looks ideal on paper, but it is hard to get in at good levels when the market now knows that this is the case."
+    },
+    {
+      "start": 2141.4,
+      "end": 2149.4,
+      "text": "It's likely that stock prices have already moved down quite a lot."
+    },
+    {
+      "start": 2149.4,
+      "end": 2159.4,
+      "text": "So we have to be careful in our analysis and treat it differently to sequentially positive above sector average earnings growth momentum."
+    },
+    {
+      "start": 2159.4,
+      "end": 2171.4,
+      "text": "Additionally, when we are identifying X growth stocks, this does come with some caveats."
+    },
+    {
+      "start": 2171.4,
+      "end": 2181.4,
+      "text": "When we are identifying X growth stocks, it means that the stock is very clearly beyond its growth phase."
+    },
+    {
+      "start": 2181.4,
+      "end": 2190.4,
+      "text": "When you look at further metrics like revenue growth, for example, the stock may be still in its growth phase."
+    },
+    {
+      "start": 2190.4,
+      "end": 2200.4,
+      "text": "And the management operating plan is to choose to reinvest revenue and therefore earnings into growing the top line."
+    },
+    {
+      "start": 2200.4,
+      "end": 2207.4,
+      "text": "So in this situation, the stock is a revenue growth story."
+    },
+    {
+      "start": 2207.4,
+      "end": 2216.4,
+      "text": "So don't think because you see negative earnings growth in an earnings growth profile that a stock is automatically a short."
+    },
+    {
+      "start": 2216.4,
+      "end": 2217.4,
+      "text": "It isn't."
+    },
+    {
+      "start": 2217.4,
+      "end": 2218.4,
+      "text": "It isn't."
+    },
+    {
+      "start": 2218.4,
+      "end": 2220.4,
+      "text": "You always have to do further work."
+    },
+    {
+      "start": 2220.4,
+      "end": 2222.4,
+      "text": "More work is required."
+    },
+    {
+      "start": 2222.4,
+      "end": 2228.4,
+      "text": "If this happens to you in your identification phase in the quant for short ideas."
+    },
+    {
+      "start": 2228.4,
+      "end": 2231.4,
+      "text": "If this happens to you, it's okay."
+    },
+    {
+      "start": 2231.4,
+      "end": 2243.4,
+      "text": "What you've done is, is you've just identified a growth stock by going through the process and you've learned more about the stock and more about the sector."
+    },
+    {
+      "start": 2243.4,
+      "end": 2247.4,
+      "text": "This is why we have a filtering process."
+    },
+    {
+      "start": 2247.4,
+      "end": 2253.4,
+      "text": "We are in the process phase of identifying potential shorts."
+    },
+    {
+      "start": 2253.4,
+      "end": 2262.4,
+      "text": "And sometimes when you're looking at shorts and you're looking at earnings growth profiles and looking at them through a short lens,"
+    },
+    {
+      "start": 2262.4,
+      "end": 2268.4,
+      "text": "you're going to bump into growth stocks that exhibit negative earnings growth."
+    },
+    {
+      "start": 2268.4,
+      "end": 2275.4,
+      "text": "But they are still in their growth phase because it's all part of their management operating plan."
+    },
+    {
+      "start": 2275.4,
+      "end": 2284.4,
+      "text": "So don't think automatically that because you see negative earnings growth, that a stock is automatically a short."
+    },
+    {
+      "start": 2284.4,
+      "end": 2285.4,
+      "text": "It just isn't."
+    },
+    {
+      "start": 2285.4,
+      "end": 2287.4,
+      "text": "You need to do further work."
+    },
+    {
+      "start": 2287.4,
+      "end": 2299.4,
+      "text": "On top of this, you need to always be aware about something that we call in the processing phase, the law of small numbers."
+    },
+    {
+      "start": 2299.4,
+      "end": 2311.4,
+      "text": "We're going to be covering this later when we discuss processing mistakes in the quant phase a bit later in the PTM video series."
+    },
+    {
+      "start": 2311.4,
+      "end": 2321.4,
+      "text": "Now, similar to when we looked at long idea processing in the quant phase and we looked at earnings growth profiles there,"
+    },
+    {
+      "start": 2321.4,
+      "end": 2327.4,
+      "text": "we're going to be looking at a number of earnings growth profiles for short idea processing."
+    },
+    {
+      "start": 2327.4,
+      "end": 2339.4,
+      "text": "And the first five we're going to look at are all in a situation where they have positive EPS in both periods."
+    },
+    {
+      "start": 2339.4,
+      "end": 2351.4,
+      "text": "Now, we've already seen our first one, the ideal scenario on paper, which is the sequentially negative below sector average earnings growth momentum."
+    },
+    {
+      "start": 2351.4,
+      "end": 2358.4,
+      "text": "We're going to look at the others as well, case two, three, four and five, and then there'll be more cases later."
+    },
+    {
+      "start": 2358.4,
+      "end": 2368.4,
+      "text": "So case number two, we have negative earnings growth and earnings growth that's less negative in the second period."
+    },
+    {
+      "start": 2368.4,
+      "end": 2371.4,
+      "text": "And that's both below sector average."
+    },
+    {
+      "start": 2371.4,
+      "end": 2380.4,
+      "text": "We have flat earnings growth in the first period, then going negative and both below sector average for the third case."
+    },
+    {
+      "start": 2380.4,
+      "end": 2390.4,
+      "text": "For case number four, we have positive earnings growth that's then going flat to negative and below sector average."
+    },
+    {
+      "start": 2390.4,
+      "end": 2399.4,
+      "text": "And then case number five, we have negative earnings growth in period one that then goes to a flat or positive position."
+    },
+    {
+      "start": 2399.4,
+      "end": 2402.4,
+      "text": "And again, both below sector average."
+    },
+    {
+      "start": 2402.4,
+      "end": 2406.4,
+      "text": "So let's have a look at these visually."
+    },
+    {
+      "start": 2406.4,
+      "end": 2412.4,
+      "text": "We've seen our first one, the sequentially negative below sector average earnings growth momentum."
+    },
+    {
+      "start": 2412.4,
+      "end": 2415.4,
+      "text": "On paper, the ideal setup."
+    },
+    {
+      "start": 2415.4,
+      "end": 2417.4,
+      "text": "In reality, it may not be."
+    },
+    {
+      "start": 2417.4,
+      "end": 2422.4,
+      "text": "The next one is probably the next best thing that is actionable."
+    },
+    {
+      "start": 2422.4,
+      "end": 2434.4,
+      "text": "Negative earnings growth in period one and negative earnings growth in period two and both below the sector average."
+    },
+    {
+      "start": 2434.4,
+      "end": 2441.4,
+      "text": "And in this situation, we have a sector average that has positive earnings growth."
+    },
+    {
+      "start": 2441.4,
+      "end": 2451.4,
+      "text": "And if you think about this one compared to our sequentially negative earnings growth, if you think about this one in comparison,"
+    },
+    {
+      "start": 2451.4,
+      "end": 2463.4,
+      "text": "if the sector is the same, but we have a stock like this where we have negative earnings growth and the earnings growth situation is still negative in period two."
+    },
+    {
+      "start": 2463.4,
+      "end": 2468.4,
+      "text": "But the rate of the earnings growth decline is slowing."
+    },
+    {
+      "start": 2468.4,
+      "end": 2478.4,
+      "text": "This could potentially provide a better entry point or better short than case number one."
+    },
+    {
+      "start": 2478.4,
+      "end": 2480.4,
+      "text": "Why would this be the case?"
+    },
+    {
+      "start": 2480.4,
+      "end": 2492.4,
+      "text": "Well, it could be that the market is or analysts in the market are hoping for some sort of slowdown in the rate of earnings growth decline."
+    },
+    {
+      "start": 2492.4,
+      "end": 2497.4,
+      "text": "And that may not materialize."
+    },
+    {
+      "start": 2497.4,
+      "end": 2498.4,
+      "text": "It may do."
+    },
+    {
+      "start": 2498.4,
+      "end": 2499.4,
+      "text": "It may not."
+    },
+    {
+      "start": 2499.4,
+      "end": 2501.4,
+      "text": "But we have to do more work."
+    },
+    {
+      "start": 2501.4,
+      "end": 2516.4,
+      "text": "The point is, is that this type of earnings growth profile is not as bearish, if you like, on paper as case number one with the sequentially negative earnings growth momentum."
+    },
+    {
+      "start": 2516.4,
+      "end": 2528.4,
+      "text": "So with a bit of hope priced into the stock that the earnings growth decline could be decreasing."
+    },
+    {
+      "start": 2528.4,
+      "end": 2543.4,
+      "text": "With a little bit of hope priced into the stock, this could potentially provide us with a better entry point, a more timely short, because the situation could get even worse than it is now."
+    },
+    {
+      "start": 2543.4,
+      "end": 2553.4,
+      "text": "But of course, as with anything else where we're in the quant phase, more work has to be done."
+    },
+    {
+      "start": 2553.4,
+      "end": 2566.4,
+      "text": "Moving on to case number three, we have a situation here where the earnings growth in period one is actually slightly positive, but below sector average."
+    },
+    {
+      "start": 2566.4,
+      "end": 2575.4,
+      "text": "And then in period two, the earnings growth goes very negative and is below sector average."
+    },
+    {
+      "start": 2575.4,
+      "end": 2579.4,
+      "text": "And in this case, we need to be quite careful."
+    },
+    {
+      "start": 2579.4,
+      "end": 2586.4,
+      "text": "We need to be careful here because we need to analyze what is really going on at the company."
+    },
+    {
+      "start": 2586.4,
+      "end": 2595.4,
+      "text": "There's obviously something that analysts have flagged for period two that is going to be very bearish for earnings growth."
+    },
+    {
+      "start": 2595.4,
+      "end": 2613.4,
+      "text": "Therefore, we need to work out whether this is actually operational and it's a material change in business conditions or it's some sort of technical situation through, for example, accounting."
+    },
+    {
+      "start": 2613.4,
+      "end": 2623.4,
+      "text": "So there could be, for example, a big expected one off charge that's going to occur in the following year that's going to hit earnings."
+    },
+    {
+      "start": 2623.4,
+      "end": 2627.4,
+      "text": "And this is a very well flagged and expected by the market."
+    },
+    {
+      "start": 2627.4,
+      "end": 2642.4,
+      "text": "So we have to understand that in those situations, the market will look through it or potentially look through it because it's not a material change in business conditions to the negative."
+    },
+    {
+      "start": 2642.4,
+      "end": 2656.4,
+      "text": "But when we pull up this type of earnings growth profile, we obviously on paper know for sure that earnings growth is getting hit considerably in the following year."
+    },
+    {
+      "start": 2656.4,
+      "end": 2663.4,
+      "text": "Therefore, something bearish is happening to earnings with the PE backdrop that we've got."
+    },
+    {
+      "start": 2663.4,
+      "end": 2670.4,
+      "text": "If that's intact as well, it means the market is punishing the stock."
+    },
+    {
+      "start": 2670.4,
+      "end": 2673.4,
+      "text": "It's trading on a discount to the sector."
+    },
+    {
+      "start": 2673.4,
+      "end": 2680.4,
+      "text": "And we have to do further investigation to work out whether this is operational or technical."
+    },
+    {
+      "start": 2680.4,
+      "end": 2688.4,
+      "text": "So in this case, we call this flat, then going negative below sector average,"
+    },
+    {
+      "start": 2688.4,
+      "end": 2697.4,
+      "text": "even if it's a tiny positive of say 1% earnings growth, it's essentially flat."
+    },
+    {
+      "start": 2697.4,
+      "end": 2704.4,
+      "text": "Looking at our fourth case, we have in earnings growth period one percentage,"
+    },
+    {
+      "start": 2704.4,
+      "end": 2710.4,
+      "text": "we have positive earnings growth, which is below sector average."
+    },
+    {
+      "start": 2710.4,
+      "end": 2724.4,
+      "text": "And then we have a situation in period two where earnings growth percentage is going to flat or negative and below sector average again."
+    },
+    {
+      "start": 2724.4,
+      "end": 2741.4,
+      "text": "Case four, similar to case three is showing us that the market is expecting earnings growth to be positive in period one or flat to positive in period one,"
+    },
+    {
+      "start": 2741.4,
+      "end": 2743.4,
+      "text": "like in case number three."
+    },
+    {
+      "start": 2743.4,
+      "end": 2750.4,
+      "text": "But it's going flat to negative in period two."
+    },
+    {
+      "start": 2750.4,
+      "end": 2759.4,
+      "text": "So the market is expecting an earnings growth decline for the second period relative to period one."
+    },
+    {
+      "start": 2759.4,
+      "end": 2773.4,
+      "text": "So again, similar to case number three, in case number four, we must do further work to figure out what this expectation in period two is all about."
+    },
+    {
+      "start": 2773.4,
+      "end": 2778.4,
+      "text": "Why is there an earnings growth decline expected by the market?"
+    },
+    {
+      "start": 2778.4,
+      "end": 2780.4,
+      "text": "What is the reason behind it?"
+    },
+    {
+      "start": 2780.4,
+      "end": 2787.4,
+      "text": "Is it genuinely operational where it's a material slowdown in business conditions?"
+    },
+    {
+      "start": 2787.4,
+      "end": 2790.4,
+      "text": "Or is it technical?"
+    },
+    {
+      "start": 2790.4,
+      "end": 2800.4,
+      "text": "We have to go and figure that out and make sure we understand what's behind the earnings growth decline that's expected by the market."
+    },
+    {
+      "start": 2800.4,
+      "end": 2823.4,
+      "text": "Now, what you will notice as we've gone through case number one, two, three and four is that you're looking at earnings growth profiles that are potentially at various stages of a company going X growth."
+    },
+    {
+      "start": 2823.4,
+      "end": 2824.4,
+      "text": "Case number one."
+    },
+    {
+      "start": 2824.4,
+      "end": 2834.4,
+      "text": "Case number one, where we had sequentially negative earnings growth momentum that is below sector average in both periods."
+    },
+    {
+      "start": 2834.4,
+      "end": 2844.4,
+      "text": "That could be a situation where the stock has gone X growth and it is late stage X growth."
+    },
+    {
+      "start": 2844.4,
+      "end": 2857.4,
+      "text": "And when you've seen case number two, three and four, these cases are potentially cases that are earlier stages of a company going X growth."
+    },
+    {
+      "start": 2857.4,
+      "end": 2876.4,
+      "text": "So it can be the situation that case number four, for example, is at a much earlier stage of going X growth versus, for example, case number one or even case number two."
+    },
+    {
+      "start": 2876.4,
+      "end": 2889.4,
+      "text": "So the stock prices may not have moved yet to reflect the full discount that the stock could potentially trade on in the future."
+    },
+    {
+      "start": 2889.4,
+      "end": 2897.4,
+      "text": "So when we're looking at all of these cases, we have to ask ourselves the obvious questions."
+    },
+    {
+      "start": 2897.4,
+      "end": 2902.4,
+      "text": "Has the company actually gone X growth?"
+    },
+    {
+      "start": 2902.4,
+      "end": 2905.4,
+      "text": "That is the most obvious question to ask."
+    },
+    {
+      "start": 2905.4,
+      "end": 2920.4,
+      "text": "And then to answer that question, we have to look at the operation and find out if there is a genuine material negative change in business conditions."
+    },
+    {
+      "start": 2920.4,
+      "end": 2940.4,
+      "text": "And then to put it into context from a short idea processing perspective, we have to ask ourselves the next question, if it is X growth, how far along are we in terms of the stock being X growth?"
+    },
+    {
+      "start": 2940.4,
+      "end": 2954.4,
+      "text": "And what is reflected in the share price, how much has the stock gone down already to reflect how far the stock or company is down the line in terms of going X growth?"
+    },
+    {
+      "start": 2955.4,
+      "end": 2958.4,
+      "text": "And are we early to the trade?"
+    },
+    {
+      "start": 2958.4,
+      "end": 2963.4,
+      "text": "Are we early to the party or are we late to the trade?"
+    },
+    {
+      "start": 2963.4,
+      "end": 2965.4,
+      "text": "Are we late to the party?"
+    },
+    {
+      "start": 2966.4,
+      "end": 2986.4,
+      "text": "Which brings us nicely onto our fifth case, which is a situation where earnings growth in this profile is negative in period one and then positive in period two, but below sector average in both periods."
+    },
+    {
+      "start": 2986.4,
+      "end": 2996.4,
+      "text": "And this situation is like what we looked at when we were looking at long idea processing where there's a potential turnaround story."
+    },
+    {
+      "start": 2996.4,
+      "end": 3007.4,
+      "text": "But there is a flip side to that coin because a potential turnaround story can also be a potential value trap."
+    },
+    {
+      "start": 3007.4,
+      "end": 3024.4,
+      "text": "So this situation here could happen in a company going X growth in the early stage, but it could also be a company that has gone X growth and has been X growth for a while."
+    },
+    {
+      "start": 3024.4,
+      "end": 3033.4,
+      "text": "And now the actions of management are potentially turning around the company's fortune, turning around earnings."
+    },
+    {
+      "start": 3033.4,
+      "end": 3049.4,
+      "text": "If you see an earnings growth profile like this, where it could be early stage X growth, then the EG2 number could be a totally fictional hope number."
+    },
+    {
+      "start": 3049.4,
+      "end": 3053.4,
+      "text": "And the EG1 number is reality going forward."
+    },
+    {
+      "start": 3053.4,
+      "end": 3056.4,
+      "text": "So EG2 could be downgraded."
+    },
+    {
+      "start": 3056.4,
+      "end": 3062.4,
+      "text": "So earnings in the second period could be a hope number for analysts."
+    },
+    {
+      "start": 3062.4,
+      "end": 3069.4,
+      "text": "So that type of turnaround could just be very low probability or fictional."
+    },
+    {
+      "start": 3069.4,
+      "end": 3079.4,
+      "text": "In the other case where a company has been X growth already for a long time and is far down the road of being X growth."
+    },
+    {
+      "start": 3079.4,
+      "end": 3081.4,
+      "text": "The stock could be down a lot."
+    },
+    {
+      "start": 3081.4,
+      "end": 3091.4,
+      "text": "It could be down 50, 60, 70, 80% already underperforming massively for the last one, two, three years."
+    },
+    {
+      "start": 3091.4,
+      "end": 3108.4,
+      "text": "And then all of a sudden we have some expectation that there's going to be earnings growth in the following year after multiple quarters and a year or two of earnings growth decline."
+    },
+    {
+      "start": 3108.4,
+      "end": 3122.4,
+      "text": "And in this situation, this could be a scenario where we're looking at a value play where other players in the market, investors, are looking at a stock as a value play."
+    },
+    {
+      "start": 3122.4,
+      "end": 3128.4,
+      "text": "That is different to when we're looking at an early stage X growth stock."
+    },
+    {
+      "start": 3128.4,
+      "end": 3134.4,
+      "text": "However, the dynamic in this situation in the way we view it."
+    },
+    {
+      "start": 3134.4,
+      "end": 3149.4,
+      "text": "So whether it's going X growth in the early stage or it's been X growth for a while, we view this in a similar way in that we look at the earnings growth to number."
+    },
+    {
+      "start": 3149.4,
+      "end": 3150.4,
+      "text": "So next year's number."
+    },
+    {
+      "start": 3150.4,
+      "end": 3152.4,
+      "text": "So next year's number."
+    },
+    {
+      "start": 3152.4,
+      "end": 3156.4,
+      "text": "And we ask ourselves the question, is this real?"
+    },
+    {
+      "start": 3156.4,
+      "end": 3157.4,
+      "text": "Is it genuine?"
+    },
+    {
+      "start": 3157.4,
+      "end": 3160.4,
+      "text": "Is it a real turnaround or is it a trap?"
+    },
+    {
+      "start": 3160.4,
+      "end": 3176.4,
+      "text": "Now, as mentioned in the previous video, when we looked at turnaround stories, the earnings growth profile of a turnaround story can be both opportunistic and dangerous."
+    },
+    {
+      "start": 3176.4,
+      "end": 3186.4,
+      "text": "So they are opportunistic in that we are looking at the market's expectation here of a turnaround."
+    },
+    {
+      "start": 3186.4,
+      "end": 3193.4,
+      "text": "And from a long perspective, it can be opportunistic in that the turnaround actually happens."
+    },
+    {
+      "start": 3193.4,
+      "end": 3195.4,
+      "text": "They execute on it."
+    },
+    {
+      "start": 3195.4,
+      "end": 3204.4,
+      "text": "Looking at it through a short lens, it is opportunistic in that the turnaround could fail."
+    },
+    {
+      "start": 3204.4,
+      "end": 3208.4,
+      "text": "But it is also dangerous."
+    },
+    {
+      "start": 3208.4,
+      "end": 3225.4,
+      "text": "So when we look at it from a long perspective, we are taking a position potentially in a stock where the analyst in the market, the market is expecting a turnaround in earnings growth."
+    },
+    {
+      "start": 3225.4,
+      "end": 3243.4,
+      "text": "So we are going with the market, we are agreeing with the market, but if the turnaround doesn't happen, then of course, the stock is probably going to go down a lot and we're going to lose money."
+    },
+    {
+      "start": 3243.4,
+      "end": 3246.4,
+      "text": "Looking at it through a short lens."
+    },
+    {
+      "start": 3246.4,
+      "end": 3252.4,
+      "text": "Looking at it through a short lens, it is dangerous because we are actually arguing with the market here."
+    },
+    {
+      "start": 3252.4,
+      "end": 3262.4,
+      "text": "So we're saying that the market is wrong to have the earnings growth number for period number two and that we know better."
+    },
+    {
+      "start": 3262.4,
+      "end": 3271.4,
+      "text": "And of course, because we're going short, where there's infinite amount of downside."
+    },
+    {
+      "start": 3271.4,
+      "end": 3287.4,
+      "text": "So especially in the case where a stock has been X growth for a long time and then the market is expecting a turnaround in earnings growth and the stock is already down a lot."
+    },
+    {
+      "start": 3287.4,
+      "end": 3295.4,
+      "text": "Going short, this type of earnings growth profile in that type of dynamic can be very dangerous."
+    },
+    {
+      "start": 3295.4,
+      "end": 3315.4,
+      "text": "So again, with all of these profiles that we've looked at so far, we are assessing from the earnings growth profile itself, not only the direction of earnings growth, but how far down the line."
+    },
+    {
+      "start": 3315.4,
+      "end": 3321.4,
+      "text": "The company is in terms of going X growth."
+    },
+    {
+      "start": 3321.4,
+      "end": 3329.4,
+      "text": "Is it early stage X growth or is it late stage X growth or somewhere in between?"
+    },
+    {
+      "start": 3329.4,
+      "end": 3344.4,
+      "text": "And also, obviously, we want to be finding out the reasons why earnings growth is forecasted to be negative by research analysts, by the market."
+    },
+    {
+      "start": 3344.4,
+      "end": 3352.4,
+      "text": "We want to look at the market and understand the context of the earnings growth decline."
+    },
+    {
+      "start": 3352.4,
+      "end": 3358.4,
+      "text": "So the questions are always, has the company actually gone X growth?"
+    },
+    {
+      "start": 3358.4,
+      "end": 3362.4,
+      "text": "How far down the line is the company in terms of going X growth?"
+    },
+    {
+      "start": 3362.4,
+      "end": 3364.4,
+      "text": "How much is the stock price growth?"
+    },
+    {
+      "start": 3364.4,
+      "end": 3376.4,
+      "text": "How much is the stock price down and how much is reflected in the stock price move and the bearishness already surrounding earnings expectations?"
+    },
+    {
+      "start": 3376.4,
+      "end": 3382.4,
+      "text": "What are the reasons for the earnings decline or the expected earnings decline?"
+    },
+    {
+      "start": 3382.4,
+      "end": 3388.4,
+      "text": "And is it going to continue?"
+    },
+    {
+      "start": 3388.4,
+      "end": 3406.4,
+      "text": "Now, just as a side note, for clarity purposes, when you're going through your processing, you'll find that when we have negative earnings growth profiles, that your peg ratios are going to be negative."
+    },
+    {
+      "start": 3406.4,
+      "end": 3422.4,
+      "text": "So in the context of shorts, there is no ideal peg ratio set up because peg will just be negative in our ideal or close to ideal earnings growth profiles."
+    },
+    {
+      "start": 3422.4,
+      "end": 3436.4,
+      "text": "Because when you're dividing a positive price earnings ratio number by a negative percentage number, you're going to get a negative."
+    },
+    {
+      "start": 3436.4,
+      "end": 3438.4,
+      "text": "That's just going to be the case."
+    },
+    {
+      "start": 3438.4,
+      "end": 3448.4,
+      "text": "And the negative peg doesn't tell us anything about valuation and what the market thinks of the stock relative to other companies."
+    },
+    {
+      "start": 3448.4,
+      "end": 3460.4,
+      "text": "So in these situations, when you're looking at negative earnings growth profiles from a short processing perspective, you can overlook negative peg."
+    },
+    {
+      "start": 3460.4,
+      "end": 3466.4,
+      "text": "As in the ones that have negative earnings growth."
+    },
+    {
+      "start": 3466.4,
+      "end": 3472.4,
+      "text": "So they would be our cases, case number one, two and five."
+    },
+    {
+      "start": 3472.4,
+      "end": 3479.4,
+      "text": "But our cases number three and four would have slightly different peg setups."
+    },
+    {
+      "start": 3479.4,
+      "end": 3491.4,
+      "text": "So we would have a positive peg ratio in a period number one because we have in period number one positive EPS."
+    },
+    {
+      "start": 3491.4,
+      "end": 3496.4,
+      "text": "We have positive PE and a positive earnings growth number."
+    },
+    {
+      "start": 3496.4,
+      "end": 3503.4,
+      "text": "So we have a positive divided by a positive, which gives us a positive peg in year one."
+    },
+    {
+      "start": 3503.4,
+      "end": 3519.4,
+      "text": "So if we have negative peg like our cases one, two and five in a positive EPS environment, it's because we have negative earnings growth."
+    },
+    {
+      "start": 3519.4,
+      "end": 3530.4,
+      "text": "Which from a traders and portfolio managers perspective, when we see those negative pegs, it just gives us confirmation of the numbers."
+    },
+    {
+      "start": 3530.4,
+      "end": 3536.4,
+      "text": "Negative peg has a weak interpretation for us."
+    },
+    {
+      "start": 3536.4,
+      "end": 3539.4,
+      "text": "So we take note of the negative peg."
+    },
+    {
+      "start": 3539.4,
+      "end": 3545.4,
+      "text": "However, we do not put too much weight on the interpretation for it."
+    },
+    {
+      "start": 3545.4,
+      "end": 3559.4,
+      "text": "In our cases number three and four, if we have a positive peg in a positive EPS environment, it's because we have in the period a positive earnings growth."
+    },
+    {
+      "start": 3559.4,
+      "end": 3568.4,
+      "text": "If we then see that peg go negative in the next period, it's because we know that earnings growth is going from positive to negative."
+    },
+    {
+      "start": 3568.4,
+      "end": 3588.4,
+      "text": "So from a short perspective, from a short trade ideas processing perspective, this visually is confirmation for us that we are getting negative earnings growth in the next period."
+    },
+    {
+      "start": 3588.4,
+      "end": 3593.4,
+      "text": "It's close to ideal or it's the next best thing."
+    },
+    {
+      "start": 3593.4,
+      "end": 3605.4,
+      "text": "Now we have several other cases of earnings growth profiles that we can look at for short idea processing, looking at them through a short lens."
+    },
+    {
+      "start": 3605.4,
+      "end": 3610.4,
+      "text": "Up next is case number six and case number seven."
+    },
+    {
+      "start": 3610.4,
+      "end": 3622.4,
+      "text": "So case number six, this is where EPS is positive again, but earnings growth is positive and then positive again."
+    },
+    {
+      "start": 3622.4,
+      "end": 3627.4,
+      "text": "Period one, then period two, but it's lower than the sector in both periods."
+    },
+    {
+      "start": 3627.4,
+      "end": 3628.4,
+      "text": "This is not ideal."
+    },
+    {
+      "start": 3628.4,
+      "end": 3632.4,
+      "text": "This is more like a hedge and we are not hedgers."
+    },
+    {
+      "start": 3632.4,
+      "end": 3633.4,
+      "text": "We are traders."
+    },
+    {
+      "start": 3633.4,
+      "end": 3635.4,
+      "text": "We want better than this."
+    },
+    {
+      "start": 3635.4,
+      "end": 3641.4,
+      "text": "Case number seven, anything that is equivalent to the sector or higher."
+    },
+    {
+      "start": 3641.4,
+      "end": 3644.4,
+      "text": "So it's just not worth looking at."
+    },
+    {
+      "start": 3644.4,
+      "end": 3659.4,
+      "text": "So looking at positive, then positive earnings growth period one and period two, but below sector average, what we've actually got here is for the stock itself earnings growth momentum."
+    },
+    {
+      "start": 3659.4,
+      "end": 3668.4,
+      "text": "So we have sequentially positive earnings growth momentum for the stock, but it's below sector average for both periods."
+    },
+    {
+      "start": 3668.4,
+      "end": 3679.4,
+      "text": "We could have just as easily put on the screen in period two, a slightly better positive earnings growth number."
+    },
+    {
+      "start": 3679.4,
+      "end": 3685.4,
+      "text": "We could have put on the screen a flat earnings growth number or slightly worse."
+    },
+    {
+      "start": 3685.4,
+      "end": 3692.4,
+      "text": "That would be pretty similar because it's positive and positive looking through a short lens."
+    },
+    {
+      "start": 3692.4,
+      "end": 3702.4,
+      "text": "In all of those scenarios, this would probably not qualify as good as the situations that we've looked at so far."
+    },
+    {
+      "start": 3702.4,
+      "end": 3709.4,
+      "text": "Definitely not for the sequentially positive earnings growth, even though it's below sector average."
+    },
+    {
+      "start": 3709.4,
+      "end": 3720.4,
+      "text": "This for an investor would potentially provide a hedge to a long idea in the same sector."
+    },
+    {
+      "start": 3720.4,
+      "end": 3722.4,
+      "text": "But again, we are not investors."
+    },
+    {
+      "start": 3722.4,
+      "end": 3724.4,
+      "text": "We are not into hedging."
+    },
+    {
+      "start": 3724.4,
+      "end": 3727.4,
+      "text": "We are looking for the juice."
+    },
+    {
+      "start": 3727.4,
+      "end": 3730.4,
+      "text": "We want stocks that are going to get clobbered."
+    },
+    {
+      "start": 3730.4,
+      "end": 3732.4,
+      "text": "We want stocks that are going to go down."
+    },
+    {
+      "start": 3732.4,
+      "end": 3737.4,
+      "text": "We want shorts that are going to go down a lot and longs that are going to go up a lot."
+    },
+    {
+      "start": 3737.4,
+      "end": 3740.4,
+      "text": "We want to be going where the juice is."
+    },
+    {
+      "start": 3740.4,
+      "end": 3745.4,
+      "text": "For case number seven, it's a pretty similar situation."
+    },
+    {
+      "start": 3745.4,
+      "end": 3761.4,
+      "text": "In both periods, we are exhibiting earnings growth for the stock that is at or very close to being equivalent to the sector earnings growth in both periods."
+    },
+    {
+      "start": 3761.4,
+      "end": 3767.4,
+      "text": "Again, this is not ideal for us when we're looking through a short lens."
+    },
+    {
+      "start": 3767.4,
+      "end": 3769.4,
+      "text": "We're not into sector performance."
+    },
+    {
+      "start": 3769.4,
+      "end": 3771.4,
+      "text": "We want to do better than this."
+    },
+    {
+      "start": 3771.4,
+      "end": 3783.4,
+      "text": "We want to be short stocks that are potentially going to really underperform the sector and the market in any GDP environment."
+    },
+    {
+      "start": 3783.4,
+      "end": 3787.4,
+      "text": "And not just underperform, but go down a lot."
+    },
+    {
+      "start": 3787.4,
+      "end": 3801.4,
+      "text": "Now, moving on to our next three and final three, actually, earnings growth profiles when we're short idea processing."
+    },
+    {
+      "start": 3801.4,
+      "end": 3810.4,
+      "text": "Now, all of these companies, at least in the first period, have negative EPS."
+    },
+    {
+      "start": 3810.4,
+      "end": 3814.4,
+      "text": "So they are loss making companies."
+    },
+    {
+      "start": 3814.4,
+      "end": 3822.4,
+      "text": "And then also in the first period, they have negative earnings growth."
+    },
+    {
+      "start": 3822.4,
+      "end": 3827.4,
+      "text": "But what's different about these cases is what happens in the second period."
+    },
+    {
+      "start": 3827.4,
+      "end": 3835.4,
+      "text": "So let's take, for example, case number eight, where we have a loss making company."
+    },
+    {
+      "start": 3835.4,
+      "end": 3841.4,
+      "text": "So negative EPS, at least in the first period."
+    },
+    {
+      "start": 3841.4,
+      "end": 3846.4,
+      "text": "And they get negative earnings growth in period one."
+    },
+    {
+      "start": 3846.4,
+      "end": 3851.4,
+      "text": "And the earnings growth is below sector average."
+    },
+    {
+      "start": 3851.4,
+      "end": 3857.4,
+      "text": "Then in the second period, they have positive earnings growth."
+    },
+    {
+      "start": 3857.4,
+      "end": 3861.4,
+      "text": "But that doesn't necessarily mean that it's positive EPS."
+    },
+    {
+      "start": 3861.4,
+      "end": 3864.4,
+      "text": "It can also be negative EPS."
+    },
+    {
+      "start": 3864.4,
+      "end": 3867.4,
+      "text": "But it's just less negative."
+    },
+    {
+      "start": 3867.4,
+      "end": 3872.4,
+      "text": "But the positive earnings growth number is above sector average."
+    },
+    {
+      "start": 3872.4,
+      "end": 3882.4,
+      "text": "We would again define this type of earnings growth profile as a turnaround or value trap, potentially."
+    },
+    {
+      "start": 3882.4,
+      "end": 3888.4,
+      "text": "So this, again, is both opportunistic and dangerous."
+    },
+    {
+      "start": 3888.4,
+      "end": 3895.4,
+      "text": "With case number nine, we again, in period number one, have a loss making operation."
+    },
+    {
+      "start": 3895.4,
+      "end": 3898.4,
+      "text": "So we have negative EPS."
+    },
+    {
+      "start": 3898.4,
+      "end": 3902.4,
+      "text": "We have negative earnings growth as well in period one."
+    },
+    {
+      "start": 3902.4,
+      "end": 3905.4,
+      "text": "And it's below sector average."
+    },
+    {
+      "start": 3905.4,
+      "end": 3915.4,
+      "text": "In period two, we also have negative earnings growth, but that is at or below the sector average."
+    },
+    {
+      "start": 3915.4,
+      "end": 3926.4,
+      "text": "So what's happening here is that in period two, the company is losing slightly more money than it did in period one."
+    },
+    {
+      "start": 3926.4,
+      "end": 3929.4,
+      "text": "But the earnings growth decline is lower."
+    },
+    {
+      "start": 3929.4,
+      "end": 3933.4,
+      "text": "So this is similar to our case number two."
+    },
+    {
+      "start": 3933.4,
+      "end": 3940.4,
+      "text": "Again, this is a turnaround or value trap situation, opportunistic and dangerous."
+    },
+    {
+      "start": 3940.4,
+      "end": 3967.4,
+      "text": "And finally, with our case number 10, our final case, we have in period one, a loss making operation, negative EPS, with negative earnings growth, that's below sector average, moving to a scenario in period two, where we have EPS growth, that's even more negative than period one."
+    },
+    {
+      "start": 3967.4,
+      "end": 3970.4,
+      "text": "And it's below the sector average."
+    },
+    {
+      "start": 3970.4,
+      "end": 3979.4,
+      "text": "So this is like our case number one, the sequentially negative below sector average earnings growth momentum."
+    },
+    {
+      "start": 3979.4,
+      "end": 3984.4,
+      "text": "But the company is already in a loss making situation."
+    },
+    {
+      "start": 3984.4,
+      "end": 4008.4,
+      "text": "So the question is here is whether we're trying to be a hero trader and trade the stock to zero, because it's highly likely in this situation, as long as this is not a revenue growth story, and it's part of the management operating plan to have negative earnings growth in order to grow the top line."
+    },
+    {
+      "start": 4008.4,
+      "end": 4027.4,
+      "text": "So on the condition that this is genuinely a stock that has gone X growth in a situation like this, where the company is loss making, it's highly likely that it's way down the line of going X growth."
+    },
+    {
+      "start": 4027.4,
+      "end": 4046.4,
+      "text": "So the question is, is how far the stock has already moved already, and if it's down a lot already, say 50%, 60%, 70%, 80%, 90%, if it's down a lot already, are we trying to be the hero trader here and trade this stock to zero?"
+    },
+    {
+      "start": 4046.4,
+      "end": 4047.4,
+      "text": "Are we late to the party?"
+    },
+    {
+      "start": 4047.4,
+      "end": 4048.4,
+      "text": "Are we late to the party?"
+    },
+    {
+      "start": 4048.4,
+      "end": 4049.4,
+      "text": "Are we late to the party?"
+    },
+    {
+      "start": 4049.4,
+      "end": 4050.4,
+      "text": "Are we late to the party?"
+    },
+    {
+      "start": 4050.4,
+      "end": 4052.4,
+      "text": "Or are we early to the party?"
+    },
+    {
+      "start": 4052.4,
+      "end": 4057.4,
+      "text": "In this situation, it's highly likely that we're late to the party."
+    },
+    {
+      "start": 4057.4,
+      "end": 4062.4,
+      "text": "So let's have a look at these visually to understand them a little bit better."
+    },
+    {
+      "start": 4062.4,
+      "end": 4083.4,
+      "text": "Here we have case number eight, where we have negative earnings growth from a loss making operation in period one, that's below sector average, and then we have positive earnings growth that's above sector average in the second period."
+    },
+    {
+      "start": 4083.4,
+      "end": 4091.4,
+      "text": "And in the second period, remember, this can also be negative EPS as well as positive EPS."
+    },
+    {
+      "start": 4091.4,
+      "end": 4105.4,
+      "text": "So we could have a situation here where a company, for example, is going from negative 60 cents to negative 1 cent in their earnings in their EPS."
+    },
+    {
+      "start": 4105.4,
+      "end": 4110.4,
+      "text": "So essentially, they've recovered 100% of their losses."
+    },
+    {
+      "start": 4110.4,
+      "end": 4119.4,
+      "text": "So they have 100% earnings growth in the second period relative to earnings growth in the first period."
+    },
+    {
+      "start": 4119.4,
+      "end": 4126.4,
+      "text": "Or they could be going from negative 60 cents to positive 1 cent."
+    },
+    {
+      "start": 4126.4,
+      "end": 4130.4,
+      "text": "So again, around 100% earnings growth."
+    },
+    {
+      "start": 4130.4,
+      "end": 4135.4,
+      "text": "It's essentially the same as losing 1 cent."
+    },
+    {
+      "start": 4135.4,
+      "end": 4151.4,
+      "text": "So again, as long as this is defined as a genuine X growth scenario, we can look at this as a potential turnaround or value trap."
+    },
+    {
+      "start": 4151.4,
+      "end": 4178.4,
+      "text": "So again, we are always assessing the context as to whether it's a genuinely X growth story, how far down the line we are in terms of the company being X growth, the reasons for it, how much the stock has moved, and in this particular situation, whether a turnaround is actually genuine or not."
+    },
+    {
+      "start": 4178.4,
+      "end": 4191.4,
+      "text": "Next up is our case number 9, where we have, again, a loss-making operation in period 1, where we have negative EPS."
+    },
+    {
+      "start": 4191.4,
+      "end": 4198.4,
+      "text": "And we have negative earnings growth that's below sector average in period 1."
+    },
+    {
+      "start": 4198.4,
+      "end": 4207.4,
+      "text": "And in period 2, we have negative earnings growth in period 2, that's either at or below the sector average."
+    },
+    {
+      "start": 4207.4,
+      "end": 4224.4,
+      "text": "And if you recall, this earnings growth profile is very similar to our case number 2, except this situation is the company is actually loss-making instead of profit-making."
+    },
+    {
+      "start": 4224.4,
+      "end": 4230.4,
+      "text": "So we are looking at it through the lens here, the same earnings growth profile."
+    },
+    {
+      "start": 4230.4,
+      "end": 4243.4,
+      "text": "We are looking at it through the lens of a loss-making operation rather than a profit-making operation, because in the first period, we've assumed that the company has negative EPS."
+    },
+    {
+      "start": 4243.4,
+      "end": 4253.4,
+      "text": "So again, this is a turnaround or value trap story, and we have to be very careful."
+    },
+    {
+      "start": 4253.4,
+      "end": 4262.4,
+      "text": "We have to put everything into context as to whether the company is really an X growth, a genuine X growth situation."
+    },
+    {
+      "start": 4262.4,
+      "end": 4279.4,
+      "text": "If it is, how far down the line they are, how much has the stock price moved, why is the company X growth, and also whether the turnaround or value trap exists."
+    },
+    {
+      "start": 4279.4,
+      "end": 4294.4,
+      "text": "Next up is our final case, case number 10, where we have negative EPS in period 1 with negative earnings growth below the sector average."
+    },
+    {
+      "start": 4294.4,
+      "end": 4301.4,
+      "text": "And then in period 2, we have more negative EPS and more negative earnings growth."
+    },
+    {
+      "start": 4301.4,
+      "end": 4304.4,
+      "text": "That's again below the sector average."
+    },
+    {
+      "start": 4304.4,
+      "end": 4315.4,
+      "text": "So remember, this is like our case number 1, where we have sequentially negative below sector average earnings growth momentum."
+    },
+    {
+      "start": 4315.4,
+      "end": 4322.4,
+      "text": "So on paper, it can look good, but in reality, it can be bad."
+    },
+    {
+      "start": 4322.4,
+      "end": 4333.4,
+      "text": "Because again, it's all dependent on whether it's genuinely an X growth story, how far down the line they are in terms of going X growth,"
+    },
+    {
+      "start": 4334.4,
+      "end": 4340.4,
+      "text": "how much the stock price has moved, the reasons, whether we're late to the party or not."
+    },
+    {
+      "start": 4340.4,
+      "end": 4349.4,
+      "text": "And of course, if there's better earnings growth profiles out there and better, more well-timed shorts."
+    },
+    {
+      "start": 4350.4,
+      "end": 4362.4,
+      "text": "So remember, in this situation, yes, we have the sequentially negative earnings growth momentum that's below sector average, similar to case number 1."
+    },
+    {
+      "start": 4362.4,
+      "end": 4363.4,
+      "text": "Case number 1."
+    },
+    {
+      "start": 4363.4,
+      "end": 4367.4,
+      "text": "But here, we are a loss making operation."
+    },
+    {
+      "start": 4367.4,
+      "end": 4371.4,
+      "text": "Case number 1 was a profit making operation."
+    },
+    {
+      "start": 4371.4,
+      "end": 4387.4,
+      "text": "So it's highly likely that if all of these X growth factors are in place, that this scenario, we are way further down the line of this company being X growth than even case number 1."
+    },
+    {
+      "start": 4387.4,
+      "end": 4407.4,
+      "text": "So this covers our 10 earnings growth profile cases when we are processing in the quant phase for short ideas and looking at these earnings growth profiles through the lens of short ideas."
+    },
+    {
+      "start": 4407.4,
+      "end": 4427.4,
+      "text": "And as mentioned, we have to take a different approach versus when we're looking at long ideas and going through the processes there in the quantitative phase and looking at earnings growth profiles through the lens of long ideas."
+    },
+    {
+      "start": 4427.4,
+      "end": 4440.4,
+      "text": "So for earnings growth profiles, when we're short idea processing, we've got to think of it in terms of EPS and earnings growth in four ways."
+    },
+    {
+      "start": 4440.4,
+      "end": 4446.4,
+      "text": "We have positive EPS with negative earnings growth."
+    },
+    {
+      "start": 4446.4,
+      "end": 4450.4,
+      "text": "We have positive EPS with positive earnings growth."
+    },
+    {
+      "start": 4450.4,
+      "end": 4458.4,
+      "text": "We have characteristics where we have negative EPS, so loss making operations with negative earnings growth."
+    },
+    {
+      "start": 4458.4,
+      "end": 4465.4,
+      "text": "And we have loss making operations, so negative EPS, but have also positive earnings growth."
+    },
+    {
+      "start": 4465.4,
+      "end": 4474.4,
+      "text": "Now, intuitively, you would think that just finding companies that lose money would make great shorts."
+    },
+    {
+      "start": 4474.4,
+      "end": 4483.4,
+      "text": "So loss making companies automatically becoming great stocks to short, but that is not necessarily the case here."
+    },
+    {
+      "start": 4483.4,
+      "end": 4495.4,
+      "text": "You have to be very careful because stocks may have already traveled and you could be shorting something that's already down a lot."
+    },
+    {
+      "start": 4495.4,
+      "end": 4498.4,
+      "text": "So shorting it in a hole."
+    },
+    {
+      "start": 4498.4,
+      "end": 4503.4,
+      "text": "So it could already be down 50, 60, 70, 80, 90%."
+    },
+    {
+      "start": 4503.4,
+      "end": 4510.4,
+      "text": "And you could be very late to the party and get caught out being short."
+    },
+    {
+      "start": 4510.4,
+      "end": 4515.4,
+      "text": "Remember, markets are forward-looking animals."
+    },
+    {
+      "start": 4515.4,
+      "end": 4524.4,
+      "text": "We are forward-looking and we're not ever backwards-looking in our analysis as traders."
+    },
+    {
+      "start": 4524.4,
+      "end": 4537.4,
+      "text": "A stock, for example, that was a $50 billion company three years ago, that is down, say, 80%, is now a $10 billion market cap company."
+    },
+    {
+      "start": 4537.4,
+      "end": 4553.4,
+      "text": "On that journey from $50 billion to $10 billion, they may have had positive EPS, but had gone X growth and fallen into negative EPS, so fallen into losses."
+    },
+    {
+      "start": 4553.4,
+      "end": 4560.4,
+      "text": "And this is partly why we have a market cap filter on shorts."
+    },
+    {
+      "start": 4560.4,
+      "end": 4570.4,
+      "text": "We want to be looking to go short stocks that are going on that journey, and we don't have to capture all of the journey."
+    },
+    {
+      "start": 4570.4,
+      "end": 4579.4,
+      "text": "In fact, for both longs and shorts, we always want to avoid trying to pick bottoms and tops."
+    },
+    {
+      "start": 4579.4,
+      "end": 4594.4,
+      "text": "So in the classic long setup where we have sequentially positive earnings growth momentum, we are playing the earnings growth and we are playing that momentum."
+    },
+    {
+      "start": 4594.4,
+      "end": 4601.4,
+      "text": "But even if we are wrong, our gap risk to the downside on a long position is 100%."
+    },
+    {
+      "start": 4601.4,
+      "end": 4607.4,
+      "text": "We can only lose 100% of our money on a long stock position."
+    },
+    {
+      "start": 4607.4,
+      "end": 4622.4,
+      "text": "In the classic short setup that we looked at where we have sequentially negative earnings growth momentum, we are potentially playing the earnings growth decline."
+    },
+    {
+      "start": 4622.4,
+      "end": 4627.4,
+      "text": "But in that scenario, our gap risk is actually infinity."
+    },
+    {
+      "start": 4627.4,
+      "end": 4633.4,
+      "text": "On a short stock position, we can lose an unlimited amount of money."
+    },
+    {
+      "start": 4633.4,
+      "end": 4656.4,
+      "text": "And for both long and short positions, with long positions, the gap risk is 100% whether we buy something that's up significantly over the last one, two, three years, or whether we buy something that is down significantly over the last one, two, three years."
+    },
+    {
+      "start": 4656.4,
+      "end": 4672.4,
+      "text": "With shorts, the downside is infinity whether we short something that's up a huge amount over the last one, two, three years, or whether we short something that's down a lot over the last one, two, three years."
+    },
+    {
+      "start": 4672.4,
+      "end": 4674.4,
+      "text": "It simply doesn't matter."
+    },
+    {
+      "start": 4674.4,
+      "end": 4687.4,
+      "text": "So this is why we have to treat shorts and earnings growth profiles differently than how we treat long earnings growth profiles."
+    },
+    {
+      "start": 4687.4,
+      "end": 4693.4,
+      "text": "Because in shorts, we can get caught out and potentially lose a lot of money very quickly."
+    },
+    {
+      "start": 4693.4,
+      "end": 4702.4,
+      "text": "So this is partly why we have a market cap filter on shorts."
+    },
+    {
+      "start": 4702.4,
+      "end": 4713.4,
+      "text": "We are putting a market cap filter on to lower the probability that we're going to get caught out and lose a lot of money on our shorts."
+    },
+    {
+      "start": 4713.4,
+      "end": 4719.4,
+      "text": "For example, eliminating the takeover risk element in the short."
+    },
+    {
+      "start": 4719.4,
+      "end": 4730.4,
+      "text": "And what we're looking to do is go short X growth names that are either large cap or mega cap in characteristic."
+    },
+    {
+      "start": 4730.4,
+      "end": 4738.4,
+      "text": "So we're looking to short X growth names that are either mega cap and they're going to in the future become large cap."
+    },
+    {
+      "start": 4738.4,
+      "end": 4749.4,
+      "text": "Or we're attempting to short X growth names that are large cap and at some point in the future, they're going to be mid caps."
+    },
+    {
+      "start": 4749.4,
+      "end": 4756.4,
+      "text": "What we're also trying to avoid with shorts is to short or attempt to short stocks at the top."
+    },
+    {
+      "start": 4756.4,
+      "end": 4759.4,
+      "text": "So we're not trying to pick the top here."
+    },
+    {
+      "start": 4759.4,
+      "end": 4760.4,
+      "text": "So we're not trying to pick the top here."
+    },
+    {
+      "start": 4760.4,
+      "end": 4769.4,
+      "text": "What we're trying to do is look for evidence of stocks going X growth and with attempting to capture a part of that journey."
+    },
+    {
+      "start": 4769.4,
+      "end": 4782.4,
+      "text": "So for example, on the journey for a $50 billion stock becoming a $10 billion stock, maybe we can capture half of that move."
+    },
+    {
+      "start": 4782.4,
+      "end": 4797.4,
+      "text": "So when we look at earnings growth profiles that are negative and also when we see turnaround stories or potential turnaround stories or value drops,"
+    },
+    {
+      "start": 4797.4,
+      "end": 4807.4,
+      "text": "when we look at them through a short idea processing, short idea lens, we have to be very careful."
+    },
+    {
+      "start": 4807.4,
+      "end": 4816.4,
+      "text": "So for example, when we see an earnings growth profile that has sequentially negative earnings growth momentum,"
+    },
+    {
+      "start": 4816.4,
+      "end": 4825.4,
+      "text": "whether that's a loss making company or even a profit making company, we could be too late to the trade."
+    },
+    {
+      "start": 4825.4,
+      "end": 4836.4,
+      "text": "Additionally, if we see a turnaround stories or potential turnaround stories, which are also potential value traps."
+    },
+    {
+      "start": 4836.4,
+      "end": 4848.4,
+      "text": "Again, whether it's negative EPS or positive EPS, we could be in a situation here where we are late to the party."
+    },
+    {
+      "start": 4848.4,
+      "end": 4857.4,
+      "text": "So we have to be very careful and take a different approach versus long idea generation."
+    },
+    {
+      "start": 4857.4,
+      "end": 4867.4,
+      "text": "Now, recall the ideal price earnings ratio set up where EPS is positive."
+    },
+    {
+      "start": 4867.4,
+      "end": 4872.4,
+      "text": "It has to be, otherwise PE would be negative due to a negative EPS."
+    },
+    {
+      "start": 4872.4,
+      "end": 4884.4,
+      "text": "So in our ideal PE backdrop, our ideal PE setup, we have a positive PE ratio that's lower than the sector average."
+    },
+    {
+      "start": 4884.4,
+      "end": 4894.4,
+      "text": "And then in period two, we have a slightly higher PE, but again, it's lower than the sector average."
+    },
+    {
+      "start": 4894.4,
+      "end": 4907.4,
+      "text": "What's not ideal from a PE setup perspective for the PE backdrop is for example, if we have negative EPS in both periods."
+    },
+    {
+      "start": 4907.4,
+      "end": 4908.4,
+      "text": "Why?"
+    },
+    {
+      "start": 4908.4,
+      "end": 4917.4,
+      "text": "Because we may have gone already on the X growth journey and the stock may already be down a lot."
+    },
+    {
+      "start": 4917.4,
+      "end": 4925.4,
+      "text": "And we are now in a loss making period coming from a profit making period."
+    },
+    {
+      "start": 4925.4,
+      "end": 4935.4,
+      "text": "So if the company is loss making and we have negative PE in period one and negative PE in period two, we got to be very careful."
+    },
+    {
+      "start": 4935.4,
+      "end": 4958.4,
+      "text": "We have to look at the context here and figure out where the company has come from previously and where it is now in comparison and whether it's already got on its X growth phase, whether it's very late in the stages of the company going X growth."
+    },
+    {
+      "start": 4958.4,
+      "end": 4969.4,
+      "text": "Because this situation here, where we have negative PE in period one, where the company is loss making."
+    },
+    {
+      "start": 4969.4,
+      "end": 4973.4,
+      "text": "And then in period two, the PE is still negative, but it's higher."
+    },
+    {
+      "start": 4973.4,
+      "end": 4978.4,
+      "text": "Now, we could be walking into a short trap here."
+    },
+    {
+      "start": 4978.4,
+      "end": 4981.4,
+      "text": "We could be walking into a turnaround story."
+    },
+    {
+      "start": 4981.4,
+      "end": 4990.4,
+      "text": "But of course, again, it could also be a value trap where the turnaround story doesn't materialize."
+    },
+    {
+      "start": 4990.4,
+      "end": 4996.4,
+      "text": "We still have to do further work to work it out, but it's not ideal."
+    },
+    {
+      "start": 4996.4,
+      "end": 5012.4,
+      "text": "Now, one of the best ways to think of how we look at earnings growth profiles and how we look at shorts and earnings growth profiles is to think of it in terms of a roadmap."
+    },
+    {
+      "start": 5012.4,
+      "end": 5019.4,
+      "text": "And where on the journey do we think we're actually capturing the X growth company?"
+    },
+    {
+      "start": 5019.4,
+      "end": 5026.4,
+      "text": "So we tend to think of things in terms of short waves."
+    },
+    {
+      "start": 5026.4,
+      "end": 5034.4,
+      "text": "So when we have forward looking fundamentals, so expectations are shifting from positive to negative."
+    },
+    {
+      "start": 5034.4,
+      "end": 5038.4,
+      "text": "So we have an X growth story."
+    },
+    {
+      "start": 5038.4,
+      "end": 5045.4,
+      "text": "Stocks tend to travel lower over a period of time in several waves."
+    },
+    {
+      "start": 5045.4,
+      "end": 5053.4,
+      "text": "So here we have characterized five phases of an X growth story."
+    },
+    {
+      "start": 5053.4,
+      "end": 5057.4,
+      "text": "So let's start with phase one, P1."
+    },
+    {
+      "start": 5057.4,
+      "end": 5064.4,
+      "text": "This usually begins with some sort of capacity or market size issue."
+    },
+    {
+      "start": 5064.4,
+      "end": 5072.4,
+      "text": "So the company has reached a growth capacity and the stock starts to put in several tops."
+    },
+    {
+      "start": 5072.4,
+      "end": 5087.4,
+      "text": "This period of time is usually associated with a lot of bullish hubris in the market that the company can always continue growing at the same pace forever."
+    },
+    {
+      "start": 5087.4,
+      "end": 5104.4,
+      "text": "On top of that, the company itself is usually reluctant to issue any bearish estimates and always attempts to calm the market several times by just reiterating guidance over and over."
+    },
+    {
+      "start": 5104.4,
+      "end": 5114.4,
+      "text": "The next phase of an X growth story is phase two, where expectations actually do shift lower."
+    },
+    {
+      "start": 5114.4,
+      "end": 5121.4,
+      "text": "And they are now those expectations being started to believed by the market."
+    },
+    {
+      "start": 5121.4,
+      "end": 5129.4,
+      "text": "This period is usually associated with a lot of profit taking from long term investors."
+    },
+    {
+      "start": 5129.4,
+      "end": 5142.4,
+      "text": "So long term bulls on the stock or cutting from more short term players in the market from hyperbolic bulls that bought at or near the top."
+    },
+    {
+      "start": 5142.4,
+      "end": 5154.4,
+      "text": "At this stage, usually what happens is the company actually does issue materially lower guidance, but they do it reluctantly."
+    },
+    {
+      "start": 5155.4,
+      "end": 5166.4,
+      "text": "But what happens is, is by the time the company has actually issued that materially lower guidance, the stock has already moved down before they do."
+    },
+    {
+      "start": 5166.4,
+      "end": 5175.4,
+      "text": "And this tends to be because analysts have already moved their expectations in the market."
+    },
+    {
+      "start": 5175.4,
+      "end": 5184.4,
+      "text": "And the company lowers their guidance later because they are reluctant to do it, but they end up having to admit it."
+    },
+    {
+      "start": 5185.4,
+      "end": 5200.4,
+      "text": "Now, this brings us on to phase three, where in the market, a new normal growth rate expectation is set by the company and equity research analysts."
+    },
+    {
+      "start": 5200.4,
+      "end": 5207.4,
+      "text": "And this flushes out more of the stale long investors."
+    },
+    {
+      "start": 5207.4,
+      "end": 5226.4,
+      "text": "And what tends to happen with these situations is that it's accompanied by the company now actively seeking a new management operating plan, an MOP, and starts to talk and verbalize about a turnaround."
+    },
+    {
+      "start": 5226.4,
+      "end": 5244.4,
+      "text": "And then new investors begin to enter the market, usually dollar cost averaging on the way down for the turnaround story that they believe in, that the company is now pushing in the market."
+    },
+    {
+      "start": 5245.4,
+      "end": 5252.4,
+      "text": "Stale bulls and investors who don't believe the turnaround story sell to those that do."
+    },
+    {
+      "start": 5252.4,
+      "end": 5260.4,
+      "text": "But in phase three, what usually happens is the stock takes another leg lower."
+    },
+    {
+      "start": 5260.4,
+      "end": 5273.4,
+      "text": "And now we move on to phase four of when companies go X growth, where the stock is now down materially from its highs."
+    },
+    {
+      "start": 5273.4,
+      "end": 5279.4,
+      "text": "So we're talking 50, 60, 70, 80, even 90% plus."
+    },
+    {
+      "start": 5279.4,
+      "end": 5290.4,
+      "text": "And at this stage, it's a totally different company to the one prior to and in phase one."
+    },
+    {
+      "start": 5290.4,
+      "end": 5307.4,
+      "text": "And what tends to happen at this stage is the new company management operating plan is rolled out and the market is starting to see evidence that the rate of decrease in fundamentals is slowing down."
+    },
+    {
+      "start": 5307.4,
+      "end": 5315.4,
+      "text": "So the market is starting to see evidence that the bleed has stopped or it's close to stopping."
+    },
+    {
+      "start": 5315.4,
+      "end": 5320.4,
+      "text": "And the question always is here, will they pull it off?"
+    },
+    {
+      "start": 5320.4,
+      "end": 5322.4,
+      "text": "Will they pull off the turnaround?"
+    },
+    {
+      "start": 5322.4,
+      "end": 5328.4,
+      "text": "But from a trader's perspective, we look at it from the perspective of who really cares?"
+    },
+    {
+      "start": 5328.4,
+      "end": 5338.4,
+      "text": "Because we want to be shorting stocks way before phase four happens."
+    },
+    {
+      "start": 5338.4,
+      "end": 5343.4,
+      "text": "So we want to be shorting stocks in phase two and phase three."
+    },
+    {
+      "start": 5343.4,
+      "end": 5347.4,
+      "text": "In phase one, we're not looking to pick the top."
+    },
+    {
+      "start": 5347.4,
+      "end": 5354.4,
+      "text": "In phase four, we are not looking to short stocks in a hole."
+    },
+    {
+      "start": 5354.4,
+      "end": 5365.4,
+      "text": "In phase four, stocks can trade sideways and occasionally have very ugly rallies, very ugly short squeezes."
+    },
+    {
+      "start": 5365.4,
+      "end": 5372.4,
+      "text": "And there's a lot of volatility around, but ultimately stocks will probably go sideways."
+    },
+    {
+      "start": 5372.4,
+      "end": 5375.4,
+      "text": "But we don't want to be caught up in that as traders."
+    },
+    {
+      "start": 5375.4,
+      "end": 5379.4,
+      "text": "And then what happens, we have phase five."
+    },
+    {
+      "start": 5379.4,
+      "end": 5384.4,
+      "text": "And in phase five, either the company management pulls off a turnaround."
+    },
+    {
+      "start": 5384.4,
+      "end": 5389.4,
+      "text": "So they manage to turn the company around or they don't."
+    },
+    {
+      "start": 5389.4,
+      "end": 5392.4,
+      "text": "But at this stage, as traders, we don't care."
+    },
+    {
+      "start": 5392.4,
+      "end": 5394.4,
+      "text": "We are traders, not investors."
+    },
+    {
+      "start": 5394.4,
+      "end": 5403.4,
+      "text": "What we are looking to do is catch phase two and phase three and then move on to the next one."
+    },
+    {
+      "start": 5403.4,
+      "end": 5413.4,
+      "text": "So with these short waves, of course, every situation is different and should be judged on its own merits."
+    },
+    {
+      "start": 5413.4,
+      "end": 5422.4,
+      "text": "This is just a rough guide or template as to when a company goes X growth and handles it badly."
+    },
+    {
+      "start": 5422.4,
+      "end": 5426.4,
+      "text": "So they go all the way from phase one to phase five."
+    },
+    {
+      "start": 5427.4,
+      "end": 5432.4,
+      "text": "On the journey through phase one, phase two, phase three,"
+    },
+    {
+      "start": 5432.4,
+      "end": 5442.4,
+      "text": "a lot of company managements could potentially see the issue coming and simply pivot in phase one or phase two,"
+    },
+    {
+      "start": 5442.4,
+      "end": 5444.4,
+      "text": "or even in phase three."
+    },
+    {
+      "start": 5444.4,
+      "end": 5445.4,
+      "text": "But don't worry."
+    },
+    {
+      "start": 5445.4,
+      "end": 5449.4,
+      "text": "This is why we have diversification in our portfolio."
+    },
+    {
+      "start": 5449.4,
+      "end": 5459.4,
+      "text": "Now, bigger companies tend to find it hard to turn around X growth situations quickly."
+    },
+    {
+      "start": 5459.4,
+      "end": 5465.4,
+      "text": "A speedboat, so a smaller company can zip around the ocean quickly."
+    },
+    {
+      "start": 5465.4,
+      "end": 5471.4,
+      "text": "The company, a smaller company can tweak their management operating plan"
+    },
+    {
+      "start": 5471.4,
+      "end": 5476.4,
+      "text": "to suit the times and implement across the board."
+    },
+    {
+      "start": 5476.4,
+      "end": 5484.4,
+      "text": "And lines of communication in smaller companies are quicker and they can get to market a lot quicker."
+    },
+    {
+      "start": 5484.4,
+      "end": 5487.4,
+      "text": "With larger companies, they are like oil tankers."
+    },
+    {
+      "start": 5487.4,
+      "end": 5493.4,
+      "text": "They move slowly around the ocean and innovation tends to be slower."
+    },
+    {
+      "start": 5493.4,
+      "end": 5499.4,
+      "text": "And management operating plans can't change and they can't go to market immediately."
+    },
+    {
+      "start": 5499.4,
+      "end": 5506.4,
+      "text": "And lines of communication in larger companies tend to be very slow and cumbersome."
+    },
+    {
+      "start": 5506.4,
+      "end": 5518.4,
+      "text": "So when you think of the market cap space of mid caps and large caps and even mega caps, look at it like this."
+    },
+    {
+      "start": 5518.4,
+      "end": 5522.4,
+      "text": "Mid caps, the three to $10 billion market cap space."
+    },
+    {
+      "start": 5522.4,
+      "end": 5526.4,
+      "text": "Large caps, the $10 to $40 billion market cap space."
+    },
+    {
+      "start": 5526.4,
+      "end": 5531.4,
+      "text": "And of course, on top of that, we have mega caps, $40 billion plus."
+    },
+    {
+      "start": 5531.4,
+      "end": 5533.4,
+      "text": "So think of it in this way."
+    },
+    {
+      "start": 5533.4,
+      "end": 5546.4,
+      "text": "If you go long a $7.5 billion market cap, mid cap company and short, say a $30 billion market cap, large cap company."
+    },
+    {
+      "start": 5546.4,
+      "end": 5558.4,
+      "text": "If the mid cap doubles and the large cap halves in one year, they meet in the middle at $15 billion market cap."
+    },
+    {
+      "start": 5558.4,
+      "end": 5573.4,
+      "text": "Now for the record, for long ideas, we don't have a similar wave template for classic sequential earnings growth long profiles."
+    },
+    {
+      "start": 5573.4,
+      "end": 5578.4,
+      "text": "Because in the way they journey, it can be very varied."
+    },
+    {
+      "start": 5578.4,
+      "end": 5586.4,
+      "text": "So how the stock travels to the upside can be extremely different from one case to another."
+    },
+    {
+      "start": 5586.4,
+      "end": 5604.4,
+      "text": "With short ideas, when companies go X growth, the wave template exhibits a very typical average profile of how a stock journeys throughout the waves."
+    },
+    {
+      "start": 5604.4,
+      "end": 5609.4,
+      "text": "So let's have a look at some real examples here."
+    },
+    {
+      "start": 5609.4,
+      "end": 5616.4,
+      "text": "So we can see on the screen here, Under Armour, which is an apparel brand."
+    },
+    {
+      "start": 5616.4,
+      "end": 5631.4,
+      "text": "And this is Under Armour going X growth and traveling from being a $25 billion stock at $50 a share to becoming a $5 billion stock at $10 a share."
+    },
+    {
+      "start": 5631.4,
+      "end": 5639.4,
+      "text": "So what you can see on the screen here is the various phases like in our short wave template."
+    },
+    {
+      "start": 5639.4,
+      "end": 5654.4,
+      "text": "So we have phase one, which is where the company puts in a top in 2015, falls and has its first move down and then trades sideways between $40 and the high $40."
+    },
+    {
+      "start": 5654.4,
+      "end": 5661.4,
+      "text": "You can see where the red arrow is pointing at the first red arrow."
+    },
+    {
+      "start": 5661.4,
+      "end": 5664.4,
+      "text": "This is where phase one begins."
+    },
+    {
+      "start": 5664.4,
+      "end": 5677.4,
+      "text": "And then the stock drops from mid-40s into the high 30s and treads water in the high 30s and low 40s."
+    },
+    {
+      "start": 5677.4,
+      "end": 5684.4,
+      "text": "So this is the stage where the company is threatening to go X growth."
+    },
+    {
+      "start": 5684.4,
+      "end": 5692.4,
+      "text": "But at the time, of course, management will have been reiterating guidance and defending the stock, defending the company."
+    },
+    {
+      "start": 5692.4,
+      "end": 5709.4,
+      "text": "But the growth trajectory of revenue and earnings that they experienced say from 2012 to 2015 and the beginning of 2016 was now in question."
+    },
+    {
+      "start": 5709.4,
+      "end": 5713.4,
+      "text": "So the company was potentially going X growth."
+    },
+    {
+      "start": 5713.4,
+      "end": 5721.4,
+      "text": "And then we have the phase two period where it's actually confirmed that the company is going X growth."
+    },
+    {
+      "start": 5721.4,
+      "end": 5736.4,
+      "text": "And then we have the phase three phase where a new normalised growth rate, which is slower than the old growth rates, is set as an expectation by the company and the market."
+    },
+    {
+      "start": 5736.4,
+      "end": 5743.4,
+      "text": "And we end up in the mid-20s and even the low 20s and chopping sideways."
+    },
+    {
+      "start": 5743.4,
+      "end": 5748.4,
+      "text": "And then we move into phase four, which is when the company starts to bottom."
+    },
+    {
+      "start": 5748.4,
+      "end": 5753.4,
+      "text": "The stock starts to bottom in the phase four period."
+    },
+    {
+      "start": 5753.4,
+      "end": 5760.4,
+      "text": "And this is where the turnaround story begins or whether it's a value trap."
+    },
+    {
+      "start": 5760.4,
+      "end": 5766.4,
+      "text": "The new management operating plan is rolled out in an attempt to turn around the company."
+    },
+    {
+      "start": 5766.4,
+      "end": 5779.4,
+      "text": "And you can see phase four lasts from somewhere in the region of towards the end of 2017 all the way up to 2020."
+    },
+    {
+      "start": 5779.4,
+      "end": 5785.4,
+      "text": "And this is quite typical of phase four scenarios."
+    },
+    {
+      "start": 5785.4,
+      "end": 5801.4,
+      "text": "They can occur for a long time and we can get a lot of volatility during the phase four period because it does take a long time for management operating plans to be implemented and for them to actually start working."
+    },
+    {
+      "start": 5801.4,
+      "end": 5810.4,
+      "text": "So from a trader's perspective, we obviously want to avoid shorting stocks in a whole."
+    },
+    {
+      "start": 5810.4,
+      "end": 5816.4,
+      "text": "So shorting stocks in phase four and phase five at or near the bottom."
+    },
+    {
+      "start": 5816.4,
+      "end": 5828.4,
+      "text": "Obviously, we don't know that at the time, but we can understand the characteristics of X growth stocks and where they are in their journey."
+    },
+    {
+      "start": 5828.4,
+      "end": 5832.4,
+      "text": "And we will be better off looking for other situations."
+    },
+    {
+      "start": 5832.4,
+      "end": 5837.4,
+      "text": "On top of that, we don't want to be trying to pick the top."
+    },
+    {
+      "start": 5837.4,
+      "end": 5844.4,
+      "text": "So we don't necessarily want to be in phase one, phase four or phase five."
+    },
+    {
+      "start": 5844.4,
+      "end": 5851.4,
+      "text": "We want to be capturing the journey when we get confirmation that the X growth is occurring."
+    },
+    {
+      "start": 5851.4,
+      "end": 5857.4,
+      "text": "And we're moving to a lower growth rate very rapidly."
+    },
+    {
+      "start": 5857.4,
+      "end": 5866.4,
+      "text": "If you look at the period here from mid to late 2016, when we have a break to the downside, that's phase two."
+    },
+    {
+      "start": 5866.4,
+      "end": 5871.4,
+      "text": "And then the break to the downside again in early 2017."
+    },
+    {
+      "start": 5871.4,
+      "end": 5872.4,
+      "text": "That's phase three."
+    },
+    {
+      "start": 5872.4,
+      "end": 5875.4,
+      "text": "So we want to capture those moves."
+    },
+    {
+      "start": 5875.4,
+      "end": 5888.4,
+      "text": "As traders and portfolio managers, we would have wanted to have captured the move in Under Armour from around high 30s dollars down to low 20s dollars."
+    },
+    {
+      "start": 5888.4,
+      "end": 5892.4,
+      "text": "But of course, we're not going to capture all of the move."
+    },
+    {
+      "start": 5892.4,
+      "end": 5897.4,
+      "text": "If we can capture half of it, two thirds of it, three quarters of it, we're doing very well."
+    },
+    {
+      "start": 5897.4,
+      "end": 5926.4,
+      "text": "Another example that demonstrates the progression of our shortwave template is a company called Teneco, T-E-N, which moved on the journey from being a $4 billion market cap stock at $70, becoming a $250 million stock at $3 a share."
+    },
+    {
+      "start": 5926.4,
+      "end": 5931.4,
+      "text": "And Teneco is in the automotive equipment market."
+    },
+    {
+      "start": 5931.4,
+      "end": 5947.4,
+      "text": "So we can clearly see a phase one period from the end of 2016 to around the end of the first quarter of 2018."
+    },
+    {
+      "start": 5947.4,
+      "end": 5960.4,
+      "text": "And then phase one, this is an area where we're probably not shorting the stock, but we're starting to see that a company could be going X growth."
+    },
+    {
+      "start": 5960.4,
+      "end": 5974.4,
+      "text": "And then when we actually see it break to the downside, this is where we want to be playing it and we get confirmation that the stock is now X growth."
+    },
+    {
+      "start": 5974.4,
+      "end": 5991.4,
+      "text": "So we would have liked to have been shorting this stock around June to September 2018 to enable us to capture the phase two move and the phase three move down in the stock."
+    },
+    {
+      "start": 5991.4,
+      "end": 6001.4,
+      "text": "We can also see after we have the phase three move down, we get the phase four period beginning."
+    },
+    {
+      "start": 6001.4,
+      "end": 6013.4,
+      "text": "So after the phase three move down, the phase four period begins in the time horizon between June and September 2019."
+    },
+    {
+      "start": 6013.4,
+      "end": 6028.4,
+      "text": "And you can see that the phase four period lasts a very long time, all the way up to the end of the chart, which is in around April 2021."
+    },
+    {
+      "start": 6028.4,
+      "end": 6037.4,
+      "text": "So almost two years the phase four period happened before the phase five period occurs."
+    },
+    {
+      "start": 6037.4,
+      "end": 6041.4,
+      "text": "And this is where either the turnaround happens or not."
+    },
+    {
+      "start": 6041.4,
+      "end": 6045.4,
+      "text": "And if you want to go and have a look at this stock, go away and have a look at it."
+    },
+    {
+      "start": 6045.4,
+      "end": 6056.4,
+      "text": "And you'll see that the stock rallies actually quite significantly from the $10 level up to above the $20 level in a very short space of time."
+    },
+    {
+      "start": 6056.4,
+      "end": 6060.4,
+      "text": "But obviously, that's not a full turnaround."
+    },
+    {
+      "start": 6060.4,
+      "end": 6063.4,
+      "text": "We're still in the phase five period."
+    },
+    {
+      "start": 6063.4,
+      "end": 6069.4,
+      "text": "But the phase five period began in April 2021."
+    },
+    {
+      "start": 6070.4,
+      "end": 6078.4,
+      "text": "But these are two good examples, Under Armour and Tenneco, because they're in two different market cap spaces."
+    },
+    {
+      "start": 6078.4,
+      "end": 6086.4,
+      "text": "So Under Armour started off as a $25 billion stock and went from being a large cap to a mid cap."
+    },
+    {
+      "start": 6086.4,
+      "end": 6093.4,
+      "text": "And Tenneco went from being a mid cap, a $4 billion stock to being a micro cap."
+    },
+    {
+      "start": 6093.4,
+      "end": 6100.4,
+      "text": "So these are good examples to use because the way we look at things as traders and portfolio managers,"
+    },
+    {
+      "start": 6100.4,
+      "end": 6110.4,
+      "text": "with our market cap limits on our shorts, we would much rather be shorting Under Armour rather than Tenneco."
+    },
+    {
+      "start": 6110.4,
+      "end": 6115.4,
+      "text": "Even though Tenneco may have exhibited X growth characteristics,"
+    },
+    {
+      "start": 6116.4,
+      "end": 6123.4,
+      "text": "we would much rather be short Under Armour even if Tenneco is available."
+    },
+    {
+      "start": 6123.4,
+      "end": 6131.4,
+      "text": "And you can also imagine in both scenarios, when Under Armour had already dropped significantly,"
+    },
+    {
+      "start": 6131.4,
+      "end": 6136.4,
+      "text": "and we were in phase four, and Tenneco had already dropped significantly,"
+    },
+    {
+      "start": 6136.4,
+      "end": 6140.4,
+      "text": "and we're in phase four or even phase five for both stocks."
+    },
+    {
+      "start": 6140.4,
+      "end": 6143.4,
+      "text": "We don't want to short either of them."
+    },
+    {
+      "start": 6143.4,
+      "end": 6146.4,
+      "text": "We want to be staying away from those types of shorts."
+    },
+    {
+      "start": 6146.4,
+      "end": 6155.4,
+      "text": "So we'd much rather filter for market cap and be shorter stock like Under Armour in that situation"
+    },
+    {
+      "start": 6155.4,
+      "end": 6162.4,
+      "text": "than be short in a stock like Tenneco simply because of the market cap and the gap risk."
+    },
+    {
+      "start": 6162.4,
+      "end": 6164.4,
+      "text": "But neither of them."
+    },
+    {
+      "start": 6164.4,
+      "end": 6170.4,
+      "text": "We want to be involved at phase four and phase five or even in phase one."
+    },
+    {
+      "start": 6170.4,
+      "end": 6178.4,
+      "text": "We want to be capturing phase two and phase three in stocks like Under Armour."
+    },
+    {
+      "start": 6178.4,
+      "end": 6187.4,
+      "text": "Let's have a look at a mega cap stock that is actually in phase one and has a big question mark over it."
+    },
+    {
+      "start": 6187.4,
+      "end": 6199.4,
+      "text": "We looked at this stock, Shopify, earlier in the video series, and we realized that revenue growth was slowing down post-2020,"
+    },
+    {
+      "start": 6199.4,
+      "end": 6204.4,
+      "text": "below 2019 and previous year levels."
+    },
+    {
+      "start": 6204.4,
+      "end": 6218.4,
+      "text": "And if we take a snapshot of Shopify in April 2021, we can see the stock price is $1,145.46."
+    },
+    {
+      "start": 6218.4,
+      "end": 6222.4,
+      "text": "It has a market cap of $165 billion."
+    },
+    {
+      "start": 6222.4,
+      "end": 6229.4,
+      "text": "So it's already put in a top at this stage, just above $1,400."
+    },
+    {
+      "start": 6229.4,
+      "end": 6244.4,
+      "text": "So the question is, is if we're seeing a fundamental slowdown of the top line and potentially a fundamental slowdown in other parts of the business relative to previous years,"
+    },
+    {
+      "start": 6244.4,
+      "end": 6249.4,
+      "text": "are we in phase one and is it going to get worse?"
+    },
+    {
+      "start": 6249.4,
+      "end": 6255.4,
+      "text": "So the $1,400 and the $165 billion stock becomes what?"
+    },
+    {
+      "start": 6255.4,
+      "end": 6259.4,
+      "text": "Well, at this moment in time, we just don't know."
+    },
+    {
+      "start": 6259.4,
+      "end": 6267.4,
+      "text": "And this is a great example as to why as traders and portfolio managers, we don't try to pick the top."
+    },
+    {
+      "start": 6267.4,
+      "end": 6277.4,
+      "text": "We don't try to go short stocks that haven't become confirmed X growth names yet."
+    },
+    {
+      "start": 6277.4,
+      "end": 6290.4,
+      "text": "If we had a fundamentally bearish tailwind in Shopify, where we're seeing evidence of top line growth falling quite aggressively,"
+    },
+    {
+      "start": 6290.4,
+      "end": 6302.4,
+      "text": "and earnings estimates from analysts being cut and the stock starts to break to the downside, perhaps below the 1,000 level."
+    },
+    {
+      "start": 6302.4,
+      "end": 6312.4,
+      "text": "This is where we want to start getting short to take advantage of the phase two and the phase three move, if that potentially plays out."
+    },
+    {
+      "start": 6312.4,
+      "end": 6325.4,
+      "text": "So Under Armour and Teneco are good examples of why we try to stay away from phase four and phase five situations,"
+    },
+    {
+      "start": 6325.4,
+      "end": 6334.4,
+      "text": "because they become turnaround stories or value traps and have a lot of volatility around that price for a long time."
+    },
+    {
+      "start": 6334.4,
+      "end": 6337.4,
+      "text": "And we can just get caught out being short."
+    },
+    {
+      "start": 6337.4,
+      "end": 6344.4,
+      "text": "Also with Under Armour and Teneco, they do display that at the moment in time of phase one,"
+    },
+    {
+      "start": 6344.4,
+      "end": 6349.4,
+      "text": "we're probably not confirmed yet that the stock is going X growth."
+    },
+    {
+      "start": 6349.4,
+      "end": 6357.4,
+      "text": "And we need the stock to confirm that and for it to break to the downside so we can take advantage of phase two and phase three."
+    },
+    {
+      "start": 6357.4,
+      "end": 6366.4,
+      "text": "And Shopify is the perfect example of why we wouldn't short something in phase one, because it's too early."
+    },
+    {
+      "start": 6366.4,
+      "end": 6367.4,
+      "text": "It's too early."
+    },
+    {
+      "start": 6367.4,
+      "end": 6375.4,
+      "text": "It's too early yet to know whether the company, whether the stock has gone X growth."
+    },
+    {
+      "start": 6375.4,
+      "end": 6381.4,
+      "text": "Now, what we've talked about so far in this video on short idea processing."
+    },
+    {
+      "start": 6381.4,
+      "end": 6386.4,
+      "text": "It's all been about fundamental earnings growth."
+    },
+    {
+      "start": 6386.4,
+      "end": 6394.4,
+      "text": "But when we're shorting stocks, there are technical factors that we have to take into consideration as well."
+    },
+    {
+      "start": 6394.4,
+      "end": 6403.4,
+      "text": "And something we always have to consider, even with long ideas as well, but especially with short ideas."
+    },
+    {
+      "start": 6403.4,
+      "end": 6407.4,
+      "text": "We need to consider short interest in the stock."
+    },
+    {
+      "start": 6407.4,
+      "end": 6418.4,
+      "text": "And a really good resource for checking short interest as a retail trader is a website called shortsqueeze.com."
+    },
+    {
+      "start": 6418.4,
+      "end": 6420.4,
+      "text": "You should register there."
+    },
+    {
+      "start": 6420.4,
+      "end": 6430.4,
+      "text": "It's well worth the small annual fee to become a member of that website because you'll be able to check short interest in any stocks that you have ideas in."
+    },
+    {
+      "start": 6430.4,
+      "end": 6437.4,
+      "text": "So short interest is calculated as a short interest percentage."
+    },
+    {
+      "start": 6437.4,
+      "end": 6447.4,
+      "text": "So that's the amount of shares that have been sold short in the market divided by the amount of shares in issue."
+    },
+    {
+      "start": 6447.4,
+      "end": 6450.4,
+      "text": "So the float of the company."
+    },
+    {
+      "start": 6450.4,
+      "end": 6468.4,
+      "text": "And what this does is give us a sentiment gauge on how bearish the market is on the stock, but a much more useful measure, even though we do need to know what short interest is all the time and be aware of it."
+    },
+    {
+      "start": 6468.4,
+      "end": 6474.4,
+      "text": "A more useful measure is actually the days to cover ratio."
+    },
+    {
+      "start": 6474.4,
+      "end": 6477.4,
+      "text": "This is a liquidity measure."
+    },
+    {
+      "start": 6477.4,
+      "end": 6494.4,
+      "text": "So the liquidity measure of days to cover ratio is the amount of shares that have been sold short in the market divided by the average daily volume of the stock over the last 30 days."
+    },
+    {
+      "start": 6494.4,
+      "end": 6514.4,
+      "text": "And what this does is tell us that if everyone in the market who is currently short the stock went into the market to buy all of their shares back, how many days would it take them to actually buy all of their stock back?"
+    },
+    {
+      "start": 6514.4,
+      "end": 6517.4,
+      "text": "This is why it's a liquidity measure."
+    },
+    {
+      "start": 6517.4,
+      "end": 6533.4,
+      "text": "So, yes, we absolutely have to be aware of what the short interest percentage is, as in how many shares have been sold short as a percentage of the amount of shares in issue, the float."
+    },
+    {
+      "start": 6533.4,
+      "end": 6535.4,
+      "text": "That can be very, very important."
+    },
+    {
+      "start": 6535.4,
+      "end": 6538.4,
+      "text": "But this is more of a sentiment indicator."
+    },
+    {
+      "start": 6538.4,
+      "end": 6547.4,
+      "text": "But what we also have to be aware of is the liquidity measure of days to cover."
+    },
+    {
+      "start": 6547.4,
+      "end": 6549.4,
+      "text": "So the days to cover ratio."
+    },
+    {
+      "start": 6549.4,
+      "end": 6565.4,
+      "text": "This is more important because it really gives us an understanding of the actual liquidity of the short that's out there relative to the amount of volume that is trading in the stock."
+    },
+    {
+      "start": 6565.4,
+      "end": 6576.4,
+      "text": "So short interest when we're using it in conjunction with the days to cover ratio is both a sentiment and liquidity measure."
+    },
+    {
+      "start": 6576.4,
+      "end": 6583.4,
+      "text": "You should use this as part of your technical analysis for both short and long ideas."
+    },
+    {
+      "start": 6583.4,
+      "end": 6590.4,
+      "text": "So imagine if we have a high days to cover ratio."
+    },
+    {
+      "start": 6590.4,
+      "end": 6603.4,
+      "text": "This basically means that there's a big risk of a very large short squeeze that could occur in the stock when all the shorts have to buy or cover their shorts."
+    },
+    {
+      "start": 6603.4,
+      "end": 6607.4,
+      "text": "So when they step into the market and buy all of their shares back."
+    },
+    {
+      "start": 6607.4,
+      "end": 6625.4,
+      "text": "Now, both a high short interest percentage and a high days to cover ratio could also mean that we're looking at a consensus short idea that is old, that is stale, that is not an original idea."
+    },
+    {
+      "start": 6625.4,
+      "end": 6630.4,
+      "text": "So it's a lazy default short in the market."
+    },
+    {
+      "start": 6630.4,
+      "end": 6636.4,
+      "text": "So this could be a situation, for example, like a phase four or phase five scenario."
+    },
+    {
+      "start": 6636.4,
+      "end": 6641.4,
+      "text": "But it could also be a phase one scenario."
+    },
+    {
+      "start": 6641.4,
+      "end": 6646.4,
+      "text": "So this is actually a good thing for your longs."
+    },
+    {
+      "start": 6646.4,
+      "end": 6650.4,
+      "text": "But obviously, it's a bad thing for any shorts."
+    },
+    {
+      "start": 6650.4,
+      "end": 6660.4,
+      "text": "So the question here is always, what is a dangerous short interest percentage level for short ideas?"
+    },
+    {
+      "start": 6660.4,
+      "end": 6667.4,
+      "text": "Well, with this one, there is no right answer."
+    },
+    {
+      "start": 6667.4,
+      "end": 6683.4,
+      "text": "I've been involved in situations where on the professional side, for example, I've seen situations where there's been 60, 70, 80% short interest in a stock."
+    },
+    {
+      "start": 6683.4,
+      "end": 6692.4,
+      "text": "And things are going really bad for the company and it's actually really justified because they can go bankrupt."
+    },
+    {
+      "start": 6692.4,
+      "end": 6705.4,
+      "text": "And I've seen situations where one hedge fund has been 35, 40% of the entire shares in issue short the stock and the stock goes to zero."
+    },
+    {
+      "start": 6705.4,
+      "end": 6717.4,
+      "text": "So with the percentage short interest itself for short ideas, there is no right answer here as to a level that is dangerous."
+    },
+    {
+      "start": 6717.4,
+      "end": 6722.4,
+      "text": "It always has to be taken in the context of what's actually happening with the stock."
+    },
+    {
+      "start": 6722.4,
+      "end": 6736.4,
+      "text": "In that situation, for example, where one hedge fund is short 35, 40% of all the shares in issue and the total short interest is 70, 80% of all shares in issue."
+    },
+    {
+      "start": 6736.4,
+      "end": 6751.4,
+      "text": "In that situation, the stock is cratering and it's generally in situations like that trading its market cap every day or even more than the value of its market cap every day."
+    },
+    {
+      "start": 6751.4,
+      "end": 6758.4,
+      "text": "So there's a lot of liquidity in the stock as it's traveling towards zero."
+    },
+    {
+      "start": 6758.4,
+      "end": 6766.4,
+      "text": "So the days to cover ratio in a situation like that might be surprisingly low."
+    },
+    {
+      "start": 6766.4,
+      "end": 6782.4,
+      "text": "So with percentage short interest, you can't look at it and say just because it's 15% or 25% or 45% or 65% that it's high."
+    },
+    {
+      "start": 6782.4,
+      "end": 6785.4,
+      "text": "And there's a liquidity issue."
+    },
+    {
+      "start": 6785.4,
+      "end": 6791.4,
+      "text": "The liquidity issue is captured by the days to cover ratio."
+    },
+    {
+      "start": 6791.4,
+      "end": 6796.4,
+      "text": "With the short interest percentage, that is more of a sentiment issue."
+    },
+    {
+      "start": 6796.4,
+      "end": 6805.4,
+      "text": "It gives you a gauge on how hated the stock is by the market, how bearish the market is."
+    },
+    {
+      "start": 6805.4,
+      "end": 6812.4,
+      "text": "The days to cover ratio tells you if there's a liquidity issue with the shorts."
+    },
+    {
+      "start": 6812.4,
+      "end": 6819.4,
+      "text": "So obvious question, what is a dangerous days to cover ratio for shorts?"
+    },
+    {
+      "start": 6819.4,
+      "end": 6824.4,
+      "text": "Well, as a liquidity measure for S&P 500 stocks."
+    },
+    {
+      "start": 6824.4,
+      "end": 6834.4,
+      "text": "So fairly big stocks, large cap and mega cap stocks above 15 days starts to become marginal."
+    },
+    {
+      "start": 6834.4,
+      "end": 6846.4,
+      "text": "And once you start getting into the 20 day area, it starts to get dangerous and above 30 days, it officially is dangerous."
+    },
+    {
+      "start": 6846.4,
+      "end": 6851.4,
+      "text": "So the way you've got to think about it is this."
+    },
+    {
+      "start": 6851.4,
+      "end": 6864.4,
+      "text": "When you look at the formula of the days to cover ratio, which is the amount of shares sold short over the average daily volume of the stock for the last 30 days."
+    },
+    {
+      "start": 6864.4,
+      "end": 6883.4,
+      "text": "This formula is assuming that if everybody in the market went into the market to buy their shorts back, that they're going to be 100% of the volume on an average day, which obviously technically can't be the case."
+    },
+    {
+      "start": 6883.4,
+      "end": 6893.4,
+      "text": "A more likely scenario is that they're going to be 20, 25, 30, 33% of the volume, something like this."
+    },
+    {
+      "start": 6893.4,
+      "end": 6905.4,
+      "text": "So imagine if you see a days to cover ratio of 20 days in a stock, what does that really mean?"
+    },
+    {
+      "start": 6905.4,
+      "end": 6924.4,
+      "text": "Well, that 20 days assumes that if all the shorts went into the market to buy all of their stock back to cover their shorts, that it would take them 20 days based on the average daily volume of the last 30 days."
+    },
+    {
+      "start": 6924.4,
+      "end": 6930.4,
+      "text": "But in reality, that can't happen."
+    },
+    {
+      "start": 6930.4,
+      "end": 6933.4,
+      "text": "They can't be 100% of the volume."
+    },
+    {
+      "start": 6933.4,
+      "end": 6940.4,
+      "text": "So let's assume that they went into the market and they were 25% of the day's volume."
+    },
+    {
+      "start": 6940.4,
+      "end": 6949.4,
+      "text": "That means it would take them 80 trading days for all the shorts to cover their positions."
+    },
+    {
+      "start": 6949.4,
+      "end": 6960.4,
+      "text": "So you have to think of the short interest percentage as a sentiment indicator and the days to cover ratio as a liquidity measure."
+    },
+    {
+      "start": 6960.4,
+      "end": 6965.4,
+      "text": "And think of the days to cover ratio in terms of order flow."
+    },
+    {
+      "start": 6965.4,
+      "end": 6972.4,
+      "text": "So in terms of unwinds, so unwinding as a percentage of the volume."
+    },
+    {
+      "start": 6972.4,
+      "end": 6989.4,
+      "text": "So this is why, for example, in periods like phase four and phase five of our short wave template, we try to avoid being the hero and shorting stocks based on past information,"
+    },
+    {
+      "start": 6989.4,
+      "end": 6998.4,
+      "text": "thinking that fundamentals are just going to continually get worse and the stock is going to zero."
+    },
+    {
+      "start": 6998.4,
+      "end": 7004.4,
+      "text": "We don't need to be the heroes in shorting stocks to zero."
+    },
+    {
+      "start": 7004.4,
+      "end": 7011.4,
+      "text": "We can find and be happy with shorting stocks in phase two and phase three."
+    },
+    {
+      "start": 7011.4,
+      "end": 7031.4,
+      "text": "Because often what you will find with stocks in phase four and phase five is that there's a lot of consensus short positioning and technically the market can get itself in a bit of a mess or a big mess by getting short."
+    },
+    {
+      "start": 7031.4,
+      "end": 7043.4,
+      "text": "Too many shares as a percentage of the amount of shares in issue and relative to the average daily volume of the stock."
+    },
+    {
+      "start": 7043.4,
+      "end": 7061.4,
+      "text": "So when the company starts making noises, some positive noises around a possible turnaround story, we can get big short squeezes in the stock where everyone has to go in and buy the stock all at the same time to cover their shorts."
+    },
+    {
+      "start": 7061.4,
+      "end": 7076.4,
+      "text": "But they cut because there's no liquidity in the stock for the amount of shares that have been sold short in the market from the consensus positioning."
+    },
+    {
+      "start": 7076.4,
+      "end": 7094.4,
+      "text": "But in the year 2021, we saw some examples of this play themselves out in the market where the victims of the short interest were actually on the professional side of the industry."
+    },
+    {
+      "start": 7094.4,
+      "end": 7100.4,
+      "text": "So I'm sure you've all heard of the GameStop GME fiasco."
+    },
+    {
+      "start": 7100.4,
+      "end": 7116.4,
+      "text": "Here, there's a screenshot that we took in April 2021 where we're just capturing in this screenshot the amount of shares outstanding and the float of the company."
+    },
+    {
+      "start": 7116.4,
+      "end": 7124.4,
+      "text": "We can also see that the share price is currently $186.95."
+    },
+    {
+      "start": 7124.4,
+      "end": 7136.4,
+      "text": "The short interest percentage of the float is 10.2 million shares, which makes 18.84% of the float."
+    },
+    {
+      "start": 7136.4,
+      "end": 7144.4,
+      "text": "And we also have a days to cover ratio of roughly one third of a day to cover that short."
+    },
+    {
+      "start": 7144.4,
+      "end": 7154.4,
+      "text": "So roughly back of the envelope, the amount of shares that were changing hands each day must have been around 30 million shares."
+    },
+    {
+      "start": 7154.4,
+      "end": 7169.4,
+      "text": "But what we can also get and what is interesting is to look at the history of the short interest level, the amount of shares that have been sold short in the market, the history of that."
+    },
+    {
+      "start": 7169.4,
+      "end": 7194.4,
+      "text": "And we can see back in December 2020, going back for a period of at least four or five months where we can see that the total level of shares that were sold short in the market is around 70 million shares."
+    },
+    {
+      "start": 7194.4,
+      "end": 7210.4,
+      "text": "Which is equivalent, which is equivalent, as we know from the screenshot taken on the previous screen, which is equivalent to the total amount of shares in issue, the amount of shares outstanding."
+    },
+    {
+      "start": 7210.4,
+      "end": 7214.4,
+      "text": "So it's equivalent to the entire market cap of the company."
+    },
+    {
+      "start": 7214.4,
+      "end": 7240.4,
+      "text": "Now, GameStop GME as a stock was for a long time on a long, slow decline as a stock, as a company, fundamentally, and had gone well beyond its X growth phase and was in the phase five scenario."
+    },
+    {
+      "start": 7240.4,
+      "end": 7245.4,
+      "text": "So what we would characterize as the phase five scenario."
+    },
+    {
+      "start": 7245.4,
+      "end": 7251.4,
+      "text": "And they were in the phase five scenario for a very long time."
+    },
+    {
+      "start": 7251.4,
+      "end": 7258.4,
+      "text": "As in, it was a potential turnaround or value trap for an extremely long time."
+    },
+    {
+      "start": 7258.4,
+      "end": 7263.4,
+      "text": "And the turnaround just never happened over and over and over again."
+    },
+    {
+      "start": 7263.4,
+      "end": 7275.4,
+      "text": "And some smart ass in the professional training world on the hedge fund side decided that this stock stays were over."
+    },
+    {
+      "start": 7275.4,
+      "end": 7276.4,
+      "text": "It's going to zero."
+    },
+    {
+      "start": 7276.4,
+      "end": 7278.4,
+      "text": "It's going to zero."
+    },
+    {
+      "start": 7278.4,
+      "end": 7280.4,
+      "text": "And he wanted to be the hero."
+    },
+    {
+      "start": 7280.4,
+      "end": 7294.4,
+      "text": "And he forgot about all his basic principles of shorting and decided to end up shorting a significant percentage of the amount of shares in issue."
+    },
+    {
+      "start": 7294.4,
+      "end": 7304.4,
+      "text": "And as the stock started to creep up, he just got shorter and shorter and shorter, convinced that the stock was going to zero."
+    },
+    {
+      "start": 7304.4,
+      "end": 7305.4,
+      "text": "The company was bankrupt."
+    },
+    {
+      "start": 7305.4,
+      "end": 7307.4,
+      "text": "It was never going to turn around."
+    },
+    {
+      "start": 7307.4,
+      "end": 7309.4,
+      "text": "And he was trying to be the hero."
+    },
+    {
+      "start": 7309.4,
+      "end": 7313.4,
+      "text": "Well, guess what happened to that guy?"
+    },
+    {
+      "start": 7313.4,
+      "end": 7316.4,
+      "text": "Here's the stock."
+    },
+    {
+      "start": 7316.4,
+      "end": 7336.4,
+      "text": "In January 2021, some retail traders in the fourth quarter of 2020 got onto this and decided that GME GameStop presented value with some potential upside."
+    },
+    {
+      "start": 7336.4,
+      "end": 7343.4,
+      "text": "And that there was a crowded short in the market that could be exploited."
+    },
+    {
+      "start": 7343.4,
+      "end": 7351.4,
+      "text": "And they went and bought some stock and then distributed the trade idea on public forums."
+    },
+    {
+      "start": 7351.4,
+      "end": 7356.4,
+      "text": "And then lots of retail traders came in to buy stock and call options."
+    },
+    {
+      "start": 7356.4,
+      "end": 7364.4,
+      "text": "And the stock started rallying aggressively in the second week of January 2021."
+    },
+    {
+      "start": 7364.4,
+      "end": 7375.4,
+      "text": "And just a few weeks later, the stock had gone from essentially $10, $20 a share above $400 a share."
+    },
+    {
+      "start": 7375.4,
+      "end": 7385.4,
+      "text": "So the hedge fund that was short, the majority of the shares outstanding in the market got absolutely killed."
+    },
+    {
+      "start": 7385.4,
+      "end": 7390.4,
+      "text": "And a lot of retail traders made good money on that trade."
+    },
+    {
+      "start": 7390.4,
+      "end": 7399.4,
+      "text": "So in October 2020, GameStop was trading below $10 a share."
+    },
+    {
+      "start": 7399.4,
+      "end": 7405.4,
+      "text": "And at $10 a share, their market cap was around $700 million."
+    },
+    {
+      "start": 7405.4,
+      "end": 7421.4,
+      "text": "The short interest in the stock from April 2020 to August 2020 was roughly between $50 million to $60 million shares sold short of the $70 million shares outstanding."
+    },
+    {
+      "start": 7421.4,
+      "end": 7434.4,
+      "text": "And as we can see from the previous chart that we looked at, short interest continued to rise as the stock rose to $70 million shares."
+    },
+    {
+      "start": 7434.4,
+      "end": 7439.4,
+      "text": "So the hedge funds, and there was one main hedge fund that was the majority of the short."
+    },
+    {
+      "start": 7439.4,
+      "end": 7448.4,
+      "text": "So the hedge funds that were short, they were essentially short the equivalent of the entire market cap of the company."
+    },
+    {
+      "start": 7448.4,
+      "end": 7451.4,
+      "text": "So all the shares in issue."
+    },
+    {
+      "start": 7451.4,
+      "end": 7462.4,
+      "text": "Now being short $50 to $60 million of the $70 million shares outstanding is totally irresponsible to begin with."
+    },
+    {
+      "start": 7462.4,
+      "end": 7477.4,
+      "text": "But even worse, they were getting shorter and shorter as the stock rose to try and defend the short and sit on the stock so it wouldn't rally and the rally wouldn't kill them."
+    },
+    {
+      "start": 7477.4,
+      "end": 7479.4,
+      "text": "So what lessons can we take from this?"
+    },
+    {
+      "start": 7479.4,
+      "end": 7489.4,
+      "text": "Well, shorting stocks in a hole and going for the hero trade is not something we want to be involved in ever."
+    },
+    {
+      "start": 7489.4,
+      "end": 7499.4,
+      "text": "No matter how convinced you are, we should be staying away from these phase four and phase five situations."
+    },
+    {
+      "start": 7499.4,
+      "end": 7506.4,
+      "text": "We don't need to expose ourselves to the hero to zero trade."
+    },
+    {
+      "start": 7506.4,
+      "end": 7510.4,
+      "text": "We don't need to expose ourselves to the hero trade."
+    },
+    {
+      "start": 7510.4,
+      "end": 7520.4,
+      "text": "We can be quite happy to be playing the phase two and phase three moves over a shorter time horizon."
+    },
+    {
+      "start": 7520.4,
+      "end": 7533.4,
+      "text": "And this is again why we have a market cap limit on shorts, because essentially a market cap limit is also a liquidity limit."
+    },
+    {
+      "start": 7533.4,
+      "end": 7557.4,
+      "text": "So when you're generating short ideas and you see X growth companies that are fundamentally a short, so you have the earnings growth profiles, you've done further work, and you believe the stock is going to go lower and it's a phase two and phase three situation."
+    },
+    {
+      "start": 7557.4,
+      "end": 7577.4,
+      "text": "And if it's a green light and it's acceptable, of course, you can go ahead and short the stock if it's genuinely X growth and in the phase two and phase three scenarios."
+    },
+    {
+      "start": 7577.4,
+      "end": 7590.4,
+      "text": "However, if you see fundamentals in the earnings growth that are questionable, you pull up the stock and it's down a lot already."
+    },
+    {
+      "start": 7590.4,
+      "end": 7595.4,
+      "text": "It seems to be in the phase four period."
+    },
+    {
+      "start": 7595.4,
+      "end": 7602.4,
+      "text": "Management are making noises about a turnaround and a new operating plan, a new management operating plan."
+    },
+    {
+      "start": 7602.4,
+      "end": 7606.4,
+      "text": "You check the short interest percentage and it's very high."
+    },
+    {
+      "start": 7606.4,
+      "end": 7615.4,
+      "text": "You check the days to cover and it's above 15, perhaps above 20, even worse above 30."
+    },
+    {
+      "start": 7615.4,
+      "end": 7616.4,
+      "text": "You check the short interest rate."
+    },
+    {
+      "start": 7616.4,
+      "end": 7617.4,
+      "text": "This is an issue."
+    },
+    {
+      "start": 7617.4,
+      "end": 7622.4,
+      "text": "These are the types of short ideas that we want to stay away from."
+    },
+    {
+      "start": 7622.4,
+      "end": 7623.4,
+      "text": "Why?"
+    },
+    {
+      "start": 7623.4,
+      "end": 7630.4,
+      "text": "Because we will end up like this donut at Melvin Capital."
+    },
+    {
+      "start": 7630.4,
+      "end": 7636.4,
+      "text": "Gabe Plotkin, who was the guy behind the GME short."
+    },
+    {
+      "start": 7636.4,
+      "end": 7652.4,
+      "text": "Yes, they were down 49% on their entire fund in the first quarter of 2021, which is an irrecoverable position, even for a professional hedge fund manager."
+    },
+    {
+      "start": 7652.4,
+      "end": 7655.4,
+      "text": "That is an absolute disaster."
+    },
+    {
+      "start": 7655.4,
+      "end": 7663.4,
+      "text": "For a retail trader, 49% in a quarter loss as well is a disaster."
+    },
+    {
+      "start": 7663.4,
+      "end": 7668.4,
+      "text": "So these are the situations that we need to stay away from."
+    },
+    {
+      "start": 7668.4,
+      "end": 7673.4,
+      "text": "Stay away from the scenarios that are phase four and phase five."
+    },
+    {
+      "start": 7673.4,
+      "end": 7691.4,
+      "text": "Try not to get into bad habits of trying to short stocks in a hole and being the hero thinking that you've got an edge over the market and that a stock that's already down 80% is going to deteriorate further and go to zero."
+    },
+    {
+      "start": 7691.4,
+      "end": 7696.4,
+      "text": "And you're the hero calling it and you're going to be the guy that makes all the money."
+    },
+    {
+      "start": 7696.4,
+      "end": 7700.4,
+      "text": "Make sure you stay away from those situations."
+    },
+    {
+      "start": 7700.4,
+      "end": 7707.4,
+      "text": "Also, make sure that you stay away from bad habits of shorting stocks too early in phase one."
+    },
+    {
+      "start": 7707.4,
+      "end": 7720.4,
+      "text": "Try to tend towards good behaviors of shorting stocks in phase two, taking advantage of a phase two move and taking advantage of a phase three move and then move on to the next one."
+    },
+    {
+      "start": 7720.4,
+      "end": 7741.4,
+      "text": "So we always need to use short interest percentage and the days to cover ratio as a head check on our fundamental work to figure out what the technical situation is in the market before even thinking about initiating a position."
+    },
+    {
+      "start": 7741.4,
+      "end": 7757.4,
+      "text": "Now, does this mean that we should use short interest percentage and days to cover as a way to find long ideas and short ideas?"
+    },
+    {
+      "start": 7757.4,
+      "end": 7776.4,
+      "text": "So for example, you rank short interest percentage and days to cover numbers via the website shortsqueeze.com and you just simply go long, high short interest names and short, low short interest names."
+    },
+    {
+      "start": 7776.4,
+      "end": 7777.4,
+      "text": "Well, no, of course not."
+    },
+    {
+      "start": 7777.4,
+      "end": 7782.4,
+      "text": "This is not how we generate trade ideas."
+    },
+    {
+      "start": 7782.4,
+      "end": 7799.4,
+      "text": "This is just one tiny part of the overall process that may allow you to avoid or swerve traps and or to confirm that your potential idea is not consensus."
+    },
+    {
+      "start": 7799.4,
+      "end": 7815.4,
+      "text": "So always, always, always make sure of the short interest percentage and the days to cover ratio when you've generated what you believe is a fundamentally driven short idea."
+    },
+    {
+      "start": 7815.4,
+      "end": 7819.4,
+      "text": "You need to check the technical situation in the market with short interest percentage and days to cover."
+    },
+    {
+      "start": 7819.4,
+      "end": 7833.4,
+      "text": "Now, something else that you need to check as a technical situation as well is whether a company is paying a dividend or not."
+    },
+    {
+      "start": 7833.4,
+      "end": 7842.4,
+      "text": "This becomes quite important even in the 20 to 60 day time horizon."
+    },
+    {
+      "start": 7842.4,
+      "end": 7852.4,
+      "text": "So if a company is paying a dividend within that time horizon, it becomes quite important as a technical situation to consider."
+    },
+    {
+      "start": 7852.4,
+      "end": 7859.4,
+      "text": "So the questions you need to ask yourself are, is a company actually paying a dividend or not?"
+    },
+    {
+      "start": 7859.4,
+      "end": 7868.4,
+      "text": "If they are, how much is the dividend in terms of cents per share and also as a percentage yield?"
+    },
+    {
+      "start": 7868.4,
+      "end": 7874.4,
+      "text": "And also, what is the likelihood that the company is going to cut their dividend?"
+    },
+    {
+      "start": 7874.4,
+      "end": 7887.4,
+      "text": "Now, the reason why this is important is because when you are short a dividend paying stock, you are actually what is termed short the dividend."
+    },
+    {
+      "start": 7887.4,
+      "end": 7895.4,
+      "text": "You are a borrower of stock from a stock owner and you will owe them the dividend."
+    },
+    {
+      "start": 7895.4,
+      "end": 7904.4,
+      "text": "Now, in reality, in your trading account, you won't actually have to physically take any action at all."
+    },
+    {
+      "start": 7904.4,
+      "end": 7908.4,
+      "text": "The broker should do everything for you on your behalf."
+    },
+    {
+      "start": 7908.4,
+      "end": 7919.4,
+      "text": "So running through an example, let's say we have a $100 stock that pays a dividend of $1 per quarter."
+    },
+    {
+      "start": 7919.4,
+      "end": 7926.4,
+      "text": "So they're paying $4 over the year, $4 in total, 4% dividend yield."
+    },
+    {
+      "start": 7926.4,
+      "end": 7933.4,
+      "text": "Now, let's say you've identified this stock as a potential fundamental short."
+    },
+    {
+      "start": 7933.4,
+      "end": 7944.4,
+      "text": "So after all your hard work of identifying the stock as a short, you decide that you're going to short a hundred shares of this $100 stock."
+    },
+    {
+      "start": 7944.4,
+      "end": 7952.4,
+      "text": "So your position is going to be $10,000 notional or gross exposure."
+    },
+    {
+      "start": 7952.4,
+      "end": 7962.4,
+      "text": "Now, let's say the stock goes down $10 to $90 a share before the next ex-dividend date."
+    },
+    {
+      "start": 7962.4,
+      "end": 7964.4,
+      "text": "So this is great."
+    },
+    {
+      "start": 7964.4,
+      "end": 7968.4,
+      "text": "This is a good situation because you're short at $100."
+    },
+    {
+      "start": 7968.4,
+      "end": 7969.4,
+      "text": "Congratulations."
+    },
+    {
+      "start": 7969.4,
+      "end": 7971.4,
+      "text": "You're making money."
+    },
+    {
+      "start": 7971.4,
+      "end": 7980.4,
+      "text": "Your position is now 100 shares short at $100, showing a profit of $1,000."
+    },
+    {
+      "start": 7980.4,
+      "end": 7986.4,
+      "text": "And your mark-to-market gross exposure is 100 shares at $90."
+    },
+    {
+      "start": 7986.4,
+      "end": 7992.4,
+      "text": "So $9,000 notional gross exposure that's marked to market."
+    },
+    {
+      "start": 7992.4,
+      "end": 8008.4,
+      "text": "Now, on the next quarterly ex-dividend day, you open your brokerage platform and the stock has gone what we call ex-dividend by the $1 dividend per share."
+    },
+    {
+      "start": 8008.4,
+      "end": 8021.4,
+      "text": "And your average price that you are short, originally from $100, has now gone to $99 in the trading platform, in your trading account."
+    },
+    {
+      "start": 8022.4,
+      "end": 8029.4,
+      "text": "And the stock opens $1 lower that day at $89."
+    },
+    {
+      "start": 8029.4,
+      "end": 8033.4,
+      "text": "So in the new situation, what's your position?"
+    },
+    {
+      "start": 8033.4,
+      "end": 8035.4,
+      "text": "What's your profit or loss?"
+    },
+    {
+      "start": 8035.4,
+      "end": 8038.4,
+      "text": "What is your actual gross exposure?"
+    },
+    {
+      "start": 8038.4,
+      "end": 8050.4,
+      "text": "Well, your position is still short 100 shares, but now you have an average price of being short at $99."
+    },
+    {
+      "start": 8050.4,
+      "end": 8056.4,
+      "text": "So with the stock at $89, you're still up $10 on 100 shares short."
+    },
+    {
+      "start": 8056.4,
+      "end": 8059.4,
+      "text": "So your P&L is still up $1,000."
+    },
+    {
+      "start": 8059.4,
+      "end": 8065.4,
+      "text": "But your gross exposure is now 100 shares mark-to-market at $89."
+    },
+    {
+      "start": 8065.4,
+      "end": 8067.4,
+      "text": "So $8,900."
+    },
+    {
+      "start": 8067.4,
+      "end": 8073.4,
+      "text": "So this is because the stock has now gone ex-dividend by $1."
+    },
+    {
+      "start": 8073.4,
+      "end": 8078.4,
+      "text": "So they've paid out a quarterly dividend of the $1 per share."
+    },
+    {
+      "start": 8078.4,
+      "end": 8082.4,
+      "text": "And this money leaves the company balance sheet."
+    },
+    {
+      "start": 8082.4,
+      "end": 8094.4,
+      "text": "On the ex-dividend date, the stock adjusts lower by $1 to reflect the value of the dividend that's been paid out to the stock owners, the shareholders."
+    },
+    {
+      "start": 8094.4,
+      "end": 8105.4,
+      "text": "So for yourself who is short as a person or entity that has a short position, you do not own the stock."
+    },
+    {
+      "start": 8105.4,
+      "end": 8108.4,
+      "text": "And therefore, you don't receive the dividend."
+    },
+    {
+      "start": 8108.4,
+      "end": 8110.4,
+      "text": "So the $1 per share."
+    },
+    {
+      "start": 8110.4,
+      "end": 8117.4,
+      "text": "So your average price adjusts to reflect the fact that you didn't receive it."
+    },
+    {
+      "start": 8117.4,
+      "end": 8130.4,
+      "text": "On the long side, the owner of the stock that you owe the dividend to receives the $1 per share dividend at some point in the future on the dividend payable or settlement date."
+    },
+    {
+      "start": 8130.4,
+      "end": 8137.4,
+      "text": "And the owner of the stock has their average price adjusted down also by $1."
+    },
+    {
+      "start": 8137.4,
+      "end": 8146.4,
+      "text": "However, they actually receive the $1 payment into their trading account at the settlement date."
+    },
+    {
+      "start": 8146.4,
+      "end": 8150.4,
+      "text": "As the short seller, you don't receive any payment."
+    },
+    {
+      "start": 8150.4,
+      "end": 8157.4,
+      "text": "So for the stock owner, the trade is simply a wash."
+    },
+    {
+      "start": 8157.4,
+      "end": 8163.4,
+      "text": "There's a $1 stock adjustment and $1 average price adjustment."
+    },
+    {
+      "start": 8163.4,
+      "end": 8172.4,
+      "text": "For a person or entity who is short, it's just an average price adjustment."
+    },
+    {
+      "start": 8172.4,
+      "end": 8176.4,
+      "text": "So let's make this a little bit more clear."
+    },
+    {
+      "start": 8176.4,
+      "end": 8183.4,
+      "text": "Imagine if you kept the short position on for a decade, for 10 years, what would actually happen?"
+    },
+    {
+      "start": 8183.4,
+      "end": 8195.4,
+      "text": "Well, for the company, there would be $41 dividend payments made to shareholders in that period because it's a quarterly $1 dividend."
+    },
+    {
+      "start": 8195.4,
+      "end": 8205.4,
+      "text": "So let's say the stock over the 10 years goes from $100 to $200 in terms of appreciation."
+    },
+    {
+      "start": 8205.4,
+      "end": 8221.4,
+      "text": "Well, the owner of the shares receives $40 in dividends realized and has made $100 unrealized in terms of capital gain on the stock's appreciation."
+    },
+    {
+      "start": 8221.4,
+      "end": 8234.4,
+      "text": "So the owner's new average price, because they're receiving all of these 40 dividends, these $41 dividends, the owner's new average price is $60."
+    },
+    {
+      "start": 8234.4,
+      "end": 8247.4,
+      "text": "So on an initial investment of 100 shares at $100, so the $10,000 notional, they've made a profit of $140 per share with 100 shares."
+    },
+    {
+      "start": 8247.4,
+      "end": 8255.4,
+      "text": "So it's $14,000 profit on top of the $10,000 initial investment."
+    },
+    {
+      "start": 8255.4,
+      "end": 8268.4,
+      "text": "The short seller of 100 shares over the same time period loses $40 in value of dividend value because they didn't receive the dividend as a realized payment."
+    },
+    {
+      "start": 8268.4,
+      "end": 8274.4,
+      "text": "So the short seller's new average price is also $60 but they didn't receive any dividends."
+    },
+    {
+      "start": 8274.4,
+      "end": 8289.4,
+      "text": "So they have an unrealized loss of $140 per share or $40,000 on the initial short of the notional $10,000."
+    },
+    {
+      "start": 8289.4,
+      "end": 8305.4,
+      "text": "Now, on the actual ex-dividend date that a stock goes ex-dividend, typically, but not all the time, stocks will go higher than their ex-dividend adjustment price."
+    },
+    {
+      "start": 8305.4,
+      "end": 8317.4,
+      "text": "And this is mainly because a lot of shareholders elect to automatically reinvest the dividend back into the stock."
+    },
+    {
+      "start": 8318.4,
+      "end": 8331.4,
+      "text": "So from the example that we've been going through, the owner that received the $100 dividend when the stock was at $89 at the ex-dividend adjustment price,"
+    },
+    {
+      "start": 8331.4,
+      "end": 8338.4,
+      "text": "they may have elected to automatically buy one share at $89."
+    },
+    {
+      "start": 8338.4,
+      "end": 8352.4,
+      "text": "Now, if all the owners of the stock do this, then the stock will likely not go down on the ex-dividend date and will be up, potentially when even buyers break limit."
+    },
+    {
+      "start": 8352.4,
+      "end": 8358.4,
+      "text": "So we term this by saying the stock went ex-dividend."
+    },
+    {
+      "start": 8358.4,
+      "end": 8367.4,
+      "text": "Well, so on the ex-dividend date, the stock actually went up above the ex-dividend adjustment price."
+    },
+    {
+      "start": 8368.4,
+      "end": 8379.4,
+      "text": "If the stock closes lower than the adjustment price of $89, we term this as the stock went ex-dividend badly."
+    },
+    {
+      "start": 8380.4,
+      "end": 8387.4,
+      "text": "So a stock can go ex-dividend well or badly for multiple other reasons."
+    },
+    {
+      "start": 8387.4,
+      "end": 8390.4,
+      "text": "There are many variables at play here."
+    },
+    {
+      "start": 8390.4,
+      "end": 8401.4,
+      "text": "So for example, when the US stock market is closed, if a company is or a stock is going ex-dividend the following day and overnight,"
+    },
+    {
+      "start": 8401.4,
+      "end": 8410.4,
+      "text": "for example, overseas markets, the wider stock markets may have just been up really big overnight."
+    },
+    {
+      "start": 8410.4,
+      "end": 8419.4,
+      "text": "And the stock could just open up the next day in the US at $92 with a dividend adjustment price of $89."
+    },
+    {
+      "start": 8420.4,
+      "end": 8426.4,
+      "text": "So it could be up $3 on the ex-dividend day for that reason."
+    },
+    {
+      "start": 8427.4,
+      "end": 8430.4,
+      "text": "It doesn't really matter what the reason is."
+    },
+    {
+      "start": 8430.4,
+      "end": 8444.4,
+      "text": "If the stock closes on the ex-dividend day above $89, so our ex-dividend adjustment price, the stock still went ex-dividend well."
+    },
+    {
+      "start": 8445.4,
+      "end": 8452.4,
+      "text": "Below $89, the stock simply went ex-dividend badly."
+    },
+    {
+      "start": 8452.4,
+      "end": 8460.4,
+      "text": "So does this mean as a short seller that you should always avoid being short dividend paying stocks?"
+    },
+    {
+      "start": 8461.4,
+      "end": 8462.4,
+      "text": "Well, no, of course not."
+    },
+    {
+      "start": 8462.4,
+      "end": 8473.4,
+      "text": "If the business operation of the company is cratering, then the dividend is likely to get cut and could be cut entirely."
+    },
+    {
+      "start": 8473.4,
+      "end": 8480.4,
+      "text": "So the stock in anticipation of that could just get absolutely hammered and the dividend just doesn't even matter."
+    },
+    {
+      "start": 8481.4,
+      "end": 8493.4,
+      "text": "So if you're looking to short a dividend paying stock, then you have to have a good or high level of conviction that the dividend is actually going to get cut."
+    },
+    {
+      "start": 8494.4,
+      "end": 8512.4,
+      "text": "So as with short interest percentage and with the days to cover ratio, we have to have a head check also for the technical situation in the market with the company's dividend if they're paying a dividend at all."
+    },
+    {
+      "start": 8513.4,
+      "end": 8521.4,
+      "text": "And we need to ask ourselves the pretty serious questions that are actually very simple and straightforward to answer."
+    },
+    {
+      "start": 8522.4,
+      "end": 8524.4,
+      "text": "Firstly, is the company paying a dividend?"
+    },
+    {
+      "start": 8525.4,
+      "end": 8526.4,
+      "text": "Secondly, how much?"
+    },
+    {
+      "start": 8527.4,
+      "end": 8532.4,
+      "text": "And third, what is the likelihood that the company is going to cut the dividend?"
+    },
+    {
+      "start": 8533.4,
+      "end": 8548.4,
+      "text": "So we must have this process in place as a head check additional to short interest and days to cover to make sure we're happy being short a stock that actually pays a dividend."
+    },
+    {
+      "start": 8549.4,
+      "end": 8555.4,
+      "text": "And the amount of the dividend and the likelihood so we're actually happy that we're doing it."
+    },
+    {
+      "start": 8556.4,
+      "end": 8562.4,
+      "text": "So have your fundamentally driven short trade idea in place."
+    },
+    {
+      "start": 8563.4,
+      "end": 8565.4,
+      "text": "Check the short interest percentage."
+    },
+    {
+      "start": 8566.4,
+      "end": 8568.4,
+      "text": "Check the days to cover ratio."
+    },
+    {
+      "start": 8569.4,
+      "end": 8571.4,
+      "text": "Check the dividend situation."
+    },
+    {
+      "start": 8572.4,
+      "end": 8573.4,
+      "text": "Are they paying a dividend?"
+    },
+    {
+      "start": 8574.4,
+      "end": 8583.4,
+      "text": "How much and what's the likelihood that they're going to cut the dividend based on my analysis of the business operation?"
+    },
+    {
+      "start": 8584.4,
+      "end": 8600.4,
+      "text": "If all of those are in place and you're happy with the situation, you're happy with the fundamentals and happy with the short interest, days to cover and dividend situation, then your short trade idea probably has a green light."
+    },
+    {
+      "start": 8601.4,
+      "end": 8611.4,
+      "text": "But remember, we still have a lot more work to do in the trade idea generation process for shorts and as well as longs."
+    },
+    {
+      "start": 8612.4,
+      "end": 8619.4,
+      "text": "We don't just get our trade ideas by ranking for earnings growth and then go long and short stocks."
+    },
+    {
+      "start": 8620.4,
+      "end": 8630.4,
+      "text": "But we obviously have to do a lot more work on the companies to see what's behind earnings growth, valuation, etc."
+    },
+    {
+      "start": 8631.4,
+      "end": 8647.4,
+      "text": "Remember when we're looking at the earnings growth profiles in a sector like we have done and characterized the earnings growth profiles in this video from a short perspective through a short lens."
+    },
+    {
+      "start": 8648.4,
+      "end": 8649.4,
+      "text": "This is an identification process."
+    },
+    {
+      "start": 8651.4,
+      "end": 8674.4,
+      "text": "We continue to do more work once we have identified what we believe to be negative outliers in a particular sector and our further work will determine whether we believe our trade idea is actually a green light and is actually a short."
+    },
+    {
+      "start": 8675.4,
+      "end": 8681.4,
+      "text": "So let's summarize everything here for short idea processing."
+    },
+    {
+      "start": 8682.4,
+      "end": 8692.4,
+      "text": "So for our quant processes on identifying potential short ideas, we outlined the earnings growth profiles that we look for."
+    },
+    {
+      "start": 8693.4,
+      "end": 8699.4,
+      "text": "Now, sequentially negative earnings growth is ideal in quotes on paper."
+    },
+    {
+      "start": 8700.4,
+      "end": 8714.4,
+      "text": "However, in a GDP growth environment, it is much harder to find than if we were in a GDP slowdown or an expected GDP contraction environment."
+    },
+    {
+      "start": 8715.4,
+      "end": 8729.4,
+      "text": "In addition to that, we also have to consider that if EPS growth expectations have already been set in the market at sequentially negative as a profile,"
+    },
+    {
+      "start": 8730.4,
+      "end": 8735.4,
+      "text": "it is very likely that the stock has already moved quite a bit lower."
+    },
+    {
+      "start": 8736.4,
+      "end": 8746.4,
+      "text": "So what we want to be doing as traders is targeting the phase two and phase three scenarios on the journey of a stock falling."
+    },
+    {
+      "start": 8747.4,
+      "end": 8758.4,
+      "text": "We will most probably find ourselves going for the next best thing after sequentially negative earnings growth profiles in our list."
+    },
+    {
+      "start": 8758.4,
+      "end": 8775.4,
+      "text": "So cases number two, three, four and five as long as we are in what we characterized as a phase two or phase three scenario of stock price decline on its journey on the way down."
+    },
+    {
+      "start": 8776.4,
+      "end": 8792.4,
+      "text": "We also have to add market cap filters on our shorts to avoid making the rookie errors of, for example, like shorting stocks in a hole and going for the zero to hero trade."
+    },
+    {
+      "start": 8793.4,
+      "end": 8809.4,
+      "text": "Additionally, we have to overlay our fundamental work with technical factors in our process in the quantum phase, for example, checking the short interest days to cover ratio and the dividend situation."
+    },
+    {
+      "start": 8810.4,
+      "end": 8822.4,
+      "text": "Most importantly, out of the technical factors, we want to make sure that we are not exposing ourselves to high levels of short interest."
+    },
+    {
+      "start": 8822.4,
+      "end": 8835.4,
+      "text": "So high levels of short interest and high days to cover, which basically is a warning sign that we could be entering or getting sucked into consensus market positioning."
+    },
+    {
+      "start": 8836.4,
+      "end": 8846.4,
+      "text": "So high levels of short interest that indicate extreme bearish sentiment that's already occurring in the market."
+    },
+    {
+      "start": 8847.4,
+      "end": 8860.4,
+      "text": "And also on top of that, a very high days to cover ratio, which means there could be a liquidity issue and we could get a short squeeze in the stock and get caught out."
+    },
+    {
+      "start": 8861.4,
+      "end": 8864.4,
+      "text": "At the end of the day, we are traders, not investors."
+    },
+    {
+      "start": 8865.4,
+      "end": 8875.4,
+      "text": "Catching the phase two and phase three scenario in an X growth stock is what we are looking to achieve with our short ideas."
+    },
+    {
+      "start": 8876.4,
+      "end": 8887.4,
+      "text": "We are seeking to predict and participate in a fundamental shift lower in expectations of the business operation."
+    },
+    {
+      "start": 8888.4,
+      "end": 8894.4,
+      "text": "To achieve earnings, we want to achieve earnings EPS, earnings growth and even revenue growth as well."
+    },
+    {
+      "start": 8895.4,
+      "end": 8903.4,
+      "text": "And as always, just like with long ideas, we want to be catching the 20 to 60 day time horizon."
+    },
+    {
+      "start": 8904.4,
+      "end": 8917.4,
+      "text": "And with shorts, what we want to be focusing on is attempting to catch the sharp moves down in the stock during those phase two and phase three periods."
+    },
+    {
+      "start": 8919.4,
+      "end": 8926.4,
+      "text": "So that about wraps it up for this video with short idea processing in the quant phase."
+    },
+    {
+      "start": 8927.4,
+      "end": 8932.4,
+      "text": "I don't think we need a summary again by going back to the desk for this one."
+    },
+    {
+      "start": 8933.4,
+      "end": 8941.4,
+      "text": "Let's go right in to the next video where we're going to be looking at turnaround stories and value traps."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

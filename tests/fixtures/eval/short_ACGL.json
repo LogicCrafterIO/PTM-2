@@ -1,0 +1,41 @@
+{
+  "candidate": {
+    "ticker": "ACGL",
+    "name": "Arch Capital",
+    "sector": "Financials",
+    "side": "short",
+    "pe1": 10.1,
+    "sector_pe1": 11.3,
+    "eg_case": "short_case_2_decel_decline",
+    "peg1": NaN
+  },
+  "state": "qual_fail",
+  "qual": {
+    "supports_outlier": false,
+    "red_flags": ["underwriting results weakened"],
+    "kpis": ["combined ratio", "loss ratio"]
+  },
+  "catalysts": {
+    "earnings_date": "[datetime.date(2026, 10, 27)]",
+    "earnings_in_window": false,
+    "non_earnings": ["Gross premiums written $ 6,126 $ 6,196 (1.1)", "Combined ratio 83.5 %"],
+    "tradeable": true
+  },
+  "timing": {
+    "light": "green",
+    "sma20": 100.45,
+    "sma60": 96.88,
+    "macd": 1.33
+  },
+  "prm": {
+    "stop_pct": 0.023,
+    "target_pct": 0.069,
+    "r_score": 3.0,
+    "blocked": false
+  },
+  "template_markdown": "",
+  "extra": {
+    "gates": ["qualitative denies quant outlier"],
+    "template_error": "Extra data: line 39 column 1 (char 797)"
+  }
+}

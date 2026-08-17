@@ -1,0 +1,1535 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 26.6,
+      "text": "Hi, and welcome back. Welcome to video number eight. You survived the first seven videos. And during this entire process, what we've done up to this point, what we've actually achieved is we've taken the approach of really defining why retail traders, the vast majority of retail traders, lose money."
+    },
+    {
+      "start": 28.2,
+      "end": 43.24,
+      "text": "Now, by doing that, we've actually picked up our principles along the way. The principles of what not to do. So, the principles of the approach of what professional traders actually do when they approach the financial markets."
+    },
+    {
+      "start": 44.36,
+      "end": 56.4,
+      "text": "And this is very important, and I encourage you to try and hard code these principles in your mind. I encourage you to keep going back and watching those videos to make sure that you understand"
+    },
+    {
+      "start": 56.4,
+      "end": 70.92,
+      "text": "those principles fully fully. Now, what we're actually going to do is we're going to start to build out what we call in the professional trading world, a systematic asset selection process."
+    },
+    {
+      "start": 72.14,
+      "end": 76.3,
+      "text": "Now, systematic asset selection processes are very, very important within the industry."
+    },
+    {
+      "start": 77.74,
+      "end": 96.86,
+      "text": "When we look at our objectives here in this series to provide you guys a framework, retail traders, that enables you to emulate successful professional traders, your objectives are very much aligned, as we've discussed, to hedge fund managers."
+    },
+    {
+      "start": 98.06,
+      "end": 112.14,
+      "text": "Now, what you're going to see here is an introduction to the Institute's wish framework and the wish framework is really a template, a template for a systematic asset selection process."
+    },
+    {
+      "start": 113.1,
+      "end": 123.18,
+      "text": "And this template, this approach is used by pretty much the vast, vast majority of hedge fund managers, successful hedge fund managers."
+    },
+    {
+      "start": 123.74,
+      "end": 129.94,
+      "text": "And you're going to realize when you watch this video why systematic asset selection processes are so important."
+    },
+    {
+      "start": 130.5,
+      "end": 136.12,
+      "text": "And the first thing we're going to do is actually define what a systematic asset selection process is."
+    },
+    {
+      "start": 137.12,
+      "end": 145.94,
+      "text": "Then, in the same video, we're actually going to take the first step, which is to define what type of market we're in, whether we're in a bull market or a bear market."
+    },
+    {
+      "start": 146.62,
+      "end": 155.52,
+      "text": "And this is important because if you understand the landscape that you're operating in, then you have a much clearer idea of the bigger trend."
+    },
+    {
+      "start": 156.64,
+      "end": 164.46,
+      "text": "But it's also important because bull markets and bear markets are often misdefined and misinterpreted by the mainstream media."
+    },
+    {
+      "start": 165.18,
+      "end": 171.82,
+      "text": "And the professional trading community has a different definition of bull and bear markets."
+    },
+    {
+      "start": 172.82,
+      "end": 178.42,
+      "text": "Now, once we've defined the systematic asset selection process and defined which market we're in,"
+    },
+    {
+      "start": 178.96,
+      "end": 186.06,
+      "text": "we're then going to move on to the first stage of the framework, which is idea generation."
+    },
+    {
+      "start": 187.1,
+      "end": 190.2,
+      "text": "And idea generation is the vast majority of your work."
+    },
+    {
+      "start": 190.72,
+      "end": 193.58,
+      "text": "This is going to take us all the way up to video 20."
+    },
+    {
+      "start": 194.7,
+      "end": 196.46,
+      "text": "And then we move on to gatekeeping."
+    },
+    {
+      "start": 197.7,
+      "end": 200.64,
+      "text": "And then after gatekeeping, we move on to risk management."
+    },
+    {
+      "start": 201.34,
+      "end": 204.14,
+      "text": "And then we move on to self-awareness as a trader."
+    },
+    {
+      "start": 204.14,
+      "end": 213.06,
+      "text": "And these are the four stages of any systematic asset selection process that has integrity within the professional trading community."
+    },
+    {
+      "start": 213.8,
+      "end": 216.96,
+      "text": "And this process can be used as a template by anybody."
+    },
+    {
+      "start": 217.76,
+      "end": 225.12,
+      "text": "So the four stages are idea generation, gatekeeping, risk management and self-awareness."
+    },
+    {
+      "start": 225.78,
+      "end": 230.94,
+      "text": "And please pay attention to the slide where we map out the entire process."
+    },
+    {
+      "start": 231.84,
+      "end": 235.08,
+      "text": "Get this slide in your mind and really memorise it."
+    },
+    {
+      "start": 236.06,
+      "end": 238.92,
+      "text": "Because this is really the template of the professional trader."
+    },
+    {
+      "start": 239.94,
+      "end": 246.5,
+      "text": "So, first thing we're going to do, define the systematic asset selection process and define what market we're operating in."
+    },
+    {
+      "start": 247.26,
+      "end": 253.06,
+      "text": "Once we've done that, we're going to move on to actually building out idea generation."
+    },
+    {
+      "start": 253.58,
+      "end": 257.2,
+      "text": "And then build out the entire process for the rest of the video series."
+    },
+    {
+      "start": 258.02,
+      "end": 264.58,
+      "text": "Okay, let's go over to the presentation and I'll see you at the end of the video with a full summary."
+    },
+    {
+      "start": 267.86,
+      "end": 274.16,
+      "text": "So now, we're going to start a process where we're going to try to manipulate these odds in our favour."
+    },
+    {
+      "start": 276.24,
+      "end": 279.08,
+      "text": "If we can do that, then we are the bookkeeper."
+    },
+    {
+      "start": 279.46,
+      "end": 280.24,
+      "text": "We are the bookmaker."
+    },
+    {
+      "start": 285.58,
+      "end": 292.94,
+      "text": "What you'll find is most professional traders, crop functions, investment banks, hedge fund managers,"
+    },
+    {
+      "start": 293.12,
+      "end": 299.82,
+      "text": "they will have systematic processes that they go through to create a situation where the odds are in their favour."
+    },
+    {
+      "start": 301.62,
+      "end": 314.64,
+      "text": "So, what we'll do first, really, we've got to get perspective of the historical behaviour of the market."
+    },
+    {
+      "start": 315.64,
+      "end": 317.08,
+      "text": "As in, where we've come from."
+    },
+    {
+      "start": 318.84,
+      "end": 322.1,
+      "text": "Understand what we're dealing with at the present."
+    },
+    {
+      "start": 323.22,
+      "end": 324.62,
+      "text": "So, you can make predictions for the future."
+    },
+    {
+      "start": 324.62,
+      "end": 335.3,
+      "text": "So, first, what we're going to do is define what a systematic process is and then get perspective."
+    },
+    {
+      "start": 337.24,
+      "end": 341.12,
+      "text": "And then we move on to the next stage, which is actually building all the processes and the system."
+    },
+    {
+      "start": 344.22,
+      "end": 348.36,
+      "text": "So, crudely, what is a systematic process?"
+    },
+    {
+      "start": 348.5,
+      "end": 358.14,
+      "text": "Going through a series of processes to find suitable good trades or investments with a high probability of success."
+    },
+    {
+      "start": 360.56,
+      "end": 362.5,
+      "text": "It's a process of idea generation."
+    },
+    {
+      "start": 364.08,
+      "end": 365.8,
+      "text": "Something that we call gatekeeping."
+    },
+    {
+      "start": 367.38,
+      "end": 369.2,
+      "text": "Risk management and self-awareness."
+    },
+    {
+      "start": 371.2,
+      "end": 372.56,
+      "text": "Across all the asset classes."
+    },
+    {
+      "start": 374.44,
+      "end": 378.94,
+      "text": "So, it's indiscriminate of what we're actually going to take positions in."
+    },
+    {
+      "start": 379.82,
+      "end": 382.56,
+      "text": "So, across equities, currencies, commodities, and bonds."
+    },
+    {
+      "start": 383.82,
+      "end": 385.74,
+      "text": "Available instruments globally, 40,000."
+    },
+    {
+      "start": 388.16,
+      "end": 394.0,
+      "text": "Out of those 40,000 opportunities, which ones are going to give us the highest probability of success?"
+    },
+    {
+      "start": 401.0,
+      "end": 402.08,
+      "text": "So, a top-down approach."
+    },
+    {
+      "start": 404.24,
+      "end": 407.4,
+      "text": "We start at the top level of the world and we work our way down."
+    },
+    {
+      "start": 409.08,
+      "end": 415.24,
+      "text": "A bottom-up approach is picking one asset out of the 40,000 and just doing work on that one asset."
+    },
+    {
+      "start": 419.12,
+      "end": 421.32,
+      "text": "Fundamental analysis of the particular asset."
+    },
+    {
+      "start": 422.96,
+      "end": 425.18,
+      "text": "A varied approach is a mixture of both."
+    },
+    {
+      "start": 427.46,
+      "end": 431.08,
+      "text": "So, you're trying to take the best of what works from both disciplines."
+    },
+    {
+      "start": 435.84,
+      "end": 442.38,
+      "text": "So, this, what I call the wish framework, is essentially a varied approach."
+    },
+    {
+      "start": 443.7,
+      "end": 453.98,
+      "text": "Utilising what works from each area the best and gives us the highest probability of success in combining them all."
+    },
+    {
+      "start": 456.08,
+      "end": 460.02,
+      "text": "So, we're stacking the odds as high as possible in our favour to try and make money."
+    },
+    {
+      "start": 462.54,
+      "end": 464.44,
+      "text": "And it's adaptable to any situation."
+    },
+    {
+      "start": 468.6,
+      "end": 474.64,
+      "text": "And you'll find that it will work as a process, probably over your entire life."
+    },
+    {
+      "start": 477.48,
+      "end": 483.74,
+      "text": "Now, it's not finite as in everything that you see in the next day and a half."
+    },
+    {
+      "start": 485.12,
+      "end": 487.14,
+      "text": "You don't have to do any more work on top of that."
+    },
+    {
+      "start": 488.98,
+      "end": 494.52,
+      "text": "In terms of the process, you can go away and add things into the process."
+    },
+    {
+      "start": 494.96,
+      "end": 497.76,
+      "text": "But add things into the process at the correct level."
+    },
+    {
+      "start": 500.96,
+      "end": 507.5,
+      "text": "So, don't deviate from the process in future and do things in reverse."
+    },
+    {
+      "start": 508.68,
+      "end": 511.06,
+      "text": "It's the process that's the important point here."
+    },
+    {
+      "start": 515.12,
+      "end": 516.42,
+      "text": "And this is what it looks like."
+    },
+    {
+      "start": 520.08,
+      "end": 522.66,
+      "text": "So, top left, we have idea generation."
+    },
+    {
+      "start": 525.14,
+      "end": 527.64,
+      "text": "First thing we do is we get a view on the world."
+    },
+    {
+      "start": 529.26,
+      "end": 540.54,
+      "text": "And our world view dictates our positioning, our bias in commodities, currencies, bonds, and equities."
+    },
+    {
+      "start": 540.58,
+      "end": 542.18,
+      "text": "But at an index level."
+    },
+    {
+      "start": 545.8,
+      "end": 552.18,
+      "text": "If we then concentrate on the stock market, we have to go and work from the top down."
+    },
+    {
+      "start": 554.48,
+      "end": 557.16,
+      "text": "So, then we move on to industries within the stock market."
+    },
+    {
+      "start": 558.22,
+      "end": 560.78,
+      "text": "And then we move to stocks within those industries."
+    },
+    {
+      "start": 562.66,
+      "end": 582.36,
+      "text": "And then across equities, commodities, currencies, and bonds, we then overlay this situation with technical analysis and price action indicators that allow us to keep the gate closed to bad ideas and open to good ideas."
+    },
+    {
+      "start": 586.36,
+      "end": 596.96,
+      "text": "Then, when you actually commit capital, these positions become real."
+    },
+    {
+      "start": 597.38,
+      "end": 598.8,
+      "text": "They become part of your portfolio."
+    },
+    {
+      "start": 601.76,
+      "end": 612.9,
+      "text": "Once they're in your portfolio, you have various risk management parameters and tools that you can use to ensure your downside is protected."
+    },
+    {
+      "start": 613.58,
+      "end": 619.86,
+      "text": "So, when bad things happen, you don't blow up."
+    },
+    {
+      "start": 620.96,
+      "end": 622.26,
+      "text": "You live to fight another day."
+    },
+    {
+      "start": 622.9,
+      "end": 624.4,
+      "text": "You come back and you're stronger."
+    },
+    {
+      "start": 627.54,
+      "end": 644.34,
+      "text": "So, when you've got real positions, you can have gross exposure limits, net exposure limits, in the stock market, hedge out, beta, theme limits, single position limits, stock target ratios, and how you deal with winners and losers."
+    },
+    {
+      "start": 645.18,
+      "end": 651.62,
+      "text": "What processes, what processes you go through, and that's really the risk management, having discipline."
+    },
+    {
+      "start": 652.74,
+      "end": 657.64,
+      "text": "So, making sure that when you've got real positions, you have the discipline to do the right things all the time."
+    },
+    {
+      "start": 661.24,
+      "end": 667.3,
+      "text": "And then, you're either going to be a good trader or a bad trader and your statistics will tell you whether you're good or bad."
+    },
+    {
+      "start": 668.02,
+      "end": 670.22,
+      "text": "The most important statistic is whether you make or lose money."
+    },
+    {
+      "start": 673.74,
+      "end": 682.88,
+      "text": "But then, you can overlay this with other statistics to find out what your behaviour is as a trader, and you can have self-awareness."
+    },
+    {
+      "start": 683.86,
+      "end": 695.26,
+      "text": "And I'm going to show you a tool that a lot of hedge fund managers use to decide whether to distribute capital to a trader over another trader."
+    },
+    {
+      "start": 695.78,
+      "end": 700.68,
+      "text": "And that's important, simply because you don't have a boss to tell you what to do."
+    },
+    {
+      "start": 705.32,
+      "end": 708.24,
+      "text": "So, why do the pros use systematic processes?"
+    },
+    {
+      "start": 710.54,
+      "end": 712.18,
+      "text": "It's because they have outside investors."
+    },
+    {
+      "start": 715.44,
+      "end": 721.16,
+      "text": "If they didn't rely on systematic processes, they wouldn't get outside investors."
+    },
+    {
+      "start": 723.0,
+      "end": 728.66,
+      "text": "Imagine going to pitch somebody for $25 million of capital to put in your hedge fund."
+    },
+    {
+      "start": 731.54,
+      "end": 734.52,
+      "text": "And you walk up and you say, on one page, this is what I do."
+    },
+    {
+      "start": 735.32,
+      "end": 737.8,
+      "text": "I buy and sell Eurodollar every day."
+    },
+    {
+      "start": 739.58,
+      "end": 741.36,
+      "text": "And I try to make 10 basis points."
+    },
+    {
+      "start": 743.16,
+      "end": 744.62,
+      "text": "You're not going to get $25 million."
+    },
+    {
+      "start": 747.82,
+      "end": 753.48,
+      "text": "The objective of the person giving you that money, first of all, people have varying objectives."
+    },
+    {
+      "start": 753.7,
+      "end": 762.06,
+      "text": "But, most of the time, it's to protect that money in absolute terms, the value of it, and protect against inflation."
+    },
+    {
+      "start": 762.72,
+      "end": 768.1,
+      "text": "And to be exposed to markets that go up and down, so they can be hedged in all situations."
+    },
+    {
+      "start": 770.34,
+      "end": 771.94,
+      "text": "That's their first objective."
+    },
+    {
+      "start": 774.08,
+      "end": 776.28,
+      "text": "So, they don't want to see somebody who punts around."
+    },
+    {
+      "start": 777.46,
+      "end": 784.9,
+      "text": "They want to see somebody with consistent track record, who's long short, who gets decent returns on low volatility."
+    },
+    {
+      "start": 788.14,
+      "end": 790.86,
+      "text": "That's what an investor wants to see from a hedge fund manager."
+    },
+    {
+      "start": 793.66,
+      "end": 795.62,
+      "text": "So, why use these systematic processes?"
+    },
+    {
+      "start": 796.16,
+      "end": 802.48,
+      "text": "It's because, obviously, to try and protect the money, and to make money, but also to raise money."
+    },
+    {
+      "start": 802.96,
+      "end": 810.16,
+      "text": "They're never, ever going to be able to raise money if they don't show people their investment process, how they make a decision."
+    },
+    {
+      "start": 810.16,
+      "end": 827.9,
+      "text": "So, technical indicators, just a few indicators to trade aren't good enough for these guys, then they're clearly not good enough for us."
+    },
+    {
+      "start": 829.0,
+      "end": 831.48,
+      "text": "Like, even as retail traders, we had to take the same approach."
+    },
+    {
+      "start": 833.12,
+      "end": 836.56,
+      "text": "And most hedge funds, the process is really similar to what you're going to learn today."
+    },
+    {
+      "start": 837.42,
+      "end": 840.52,
+      "text": "We put two guys into hedge funds in November."
+    },
+    {
+      "start": 840.86,
+      "end": 842.46,
+      "text": "One guy went in in February."
+    },
+    {
+      "start": 844.54,
+      "end": 851.12,
+      "text": "And these guys were institute traders, like, as in, trading through us, and I see all of their positions and help them."
+    },
+    {
+      "start": 852.86,
+      "end": 853.94,
+      "text": "They were trading for about a year."
+    },
+    {
+      "start": 855.26,
+      "end": 863.42,
+      "text": "And when they got interviews at the hedge fund, they have a starter interview, where they don't really get any information on the hedge fund."
+    },
+    {
+      "start": 863.42,
+      "end": 868.78,
+      "text": "If the guys like them, then they go back for second interviews, and they get sent the investment process at the hedge fund."
+    },
+    {
+      "start": 871.5,
+      "end": 878.42,
+      "text": "The two guys who went in in November, they were interviewed in October, are when they saw the investment process of this particular hedge fund."
+    },
+    {
+      "start": 880.1,
+      "end": 883.18,
+      "text": "They rang me up and just laughed on the phone and said, it's basically your framework."
+    },
+    {
+      "start": 886.9,
+      "end": 887.98,
+      "text": "They're really similar."
+    },
+    {
+      "start": 888.32,
+      "end": 890.2,
+      "text": "A lot of the processes are very, very similar."
+    },
+    {
+      "start": 893.96,
+      "end": 895.8,
+      "text": "Starting off with idea generation."
+    },
+    {
+      "start": 896.86,
+      "end": 899.02,
+      "text": "Top-down and or bottom-up approach."
+    },
+    {
+      "start": 901.16,
+      "end": 903.14,
+      "text": "Combination of both in the stock market."
+    },
+    {
+      "start": 904.58,
+      "end": 906.92,
+      "text": "Predominantly top-down in currencies, commodities, and bonds."
+    },
+    {
+      "start": 908.76,
+      "end": 911.68,
+      "text": "So, you go through a bunch of processes that spit out ideas."
+    },
+    {
+      "start": 913.92,
+      "end": 916.18,
+      "text": "So, it's like a machine that just spits out ideas."
+    },
+    {
+      "start": 917.82,
+      "end": 922.94,
+      "text": "And then you've got to decide whether it's a good time to commit capital to that idea."
+    },
+    {
+      "start": 925.48,
+      "end": 926.62,
+      "text": "So, you overlay it with a screening process."
+    },
+    {
+      "start": 926.62,
+      "end": 934.78,
+      "text": "And the screening process is varying indicators to stop yourself doing stupid things."
+    },
+    {
+      "start": 936.66,
+      "end": 941.18,
+      "text": "The worst thing in the world, as a trader, is to go into a position."
+    },
+    {
+      "start": 943.18,
+      "end": 945.44,
+      "text": "You're right, but you get stopped out."
+    },
+    {
+      "start": 947.9,
+      "end": 954.28,
+      "text": "So, you're proved correct in all the work that you did to generate the idea, but you actually lose money."
+    },
+    {
+      "start": 955.86,
+      "end": 957.62,
+      "text": "That's worse than losing money when you're wrong."
+    },
+    {
+      "start": 959.0,
+      "end": 961.52,
+      "text": "Because at least when you lose money when you're wrong, you're wrong."
+    },
+    {
+      "start": 967.38,
+      "end": 967.96,
+      "text": "Make sense?"
+    },
+    {
+      "start": 969.76,
+      "end": 971.28,
+      "text": "That's why you have screening processes."
+    },
+    {
+      "start": 971.9,
+      "end": 974.18,
+      "text": "To stop yourself doing stupid things."
+    },
+    {
+      "start": 975.24,
+      "end": 976.66,
+      "text": "So, coming up with great ideas."
+    },
+    {
+      "start": 978.54,
+      "end": 979.82,
+      "text": "I.e., to buy a stock."
+    },
+    {
+      "start": 980.2,
+      "end": 981.08,
+      "text": "That's a great idea."
+    },
+    {
+      "start": 981.84,
+      "end": 983.12,
+      "text": "But you go and buy it at the top."
+    },
+    {
+      "start": 984.06,
+      "end": 984.98,
+      "text": "And then you lose 10%."
+    },
+    {
+      "start": 984.98,
+      "end": 986.76,
+      "text": "And then it goes up 100%."
+    },
+    {
+      "start": 986.76,
+      "end": 989.86,
+      "text": "That's just crazy."
+    },
+    {
+      "start": 990.24,
+      "end": 991.7,
+      "text": "That's why you have to have a screening process."
+    },
+    {
+      "start": 994.02,
+      "end": 994.86,
+      "text": "Risk management."
+    },
+    {
+      "start": 995.58,
+      "end": 1001.76,
+      "text": "When the positions become real positions, and there's real money at stake, making sure that"
+    },
+    {
+      "start": 1001.76,
+      "end": 1003.02,
+      "text": "your downside is totally protected."
+    },
+    {
+      "start": 1003.92,
+      "end": 1008.48,
+      "text": "And self-awareness, trader metrics, to know when you should be deploying more capital"
+    },
+    {
+      "start": 1008.48,
+      "end": 1012.48,
+      "text": "to yourself, or taking capital away from yourself."
+    },
+    {
+      "start": 1014.5,
+      "end": 1016.76,
+      "text": "And being very honest with yourself about it as well."
+    },
+    {
+      "start": 1017.64,
+      "end": 1019.0,
+      "text": "Because the numbers do not lie."
+    },
+    {
+      "start": 1024.3,
+      "end": 1027.62,
+      "text": "So, that's a systematic process, essentially."
+    },
+    {
+      "start": 1030.28,
+      "end": 1038.3,
+      "text": "There's thousands of hedge funds in the world that claim to have the key to all that amazing"
+    },
+    {
+      "start": 1038.42,
+      "end": 1038.78,
+      "text": "investment."
+    },
+    {
+      "start": 1039.98,
+      "end": 1042.36,
+      "text": "But essentially, they all kind of fit within that remit."
+    },
+    {
+      "start": 1043.58,
+      "end": 1044.56,
+      "text": "Idea generation."
+    },
+    {
+      "start": 1045.08,
+      "end": 1045.56,
+      "text": "Gatekeeping."
+    },
+    {
+      "start": 1045.9,
+      "end": 1046.44,
+      "text": "Risk management."
+    },
+    {
+      "start": 1046.72,
+      "end": 1047.38,
+      "text": "And self-awareness."
+    },
+    {
+      "start": 1052.34,
+      "end": 1055.62,
+      "text": "So, now we know what a systematic process is, we can start building one."
+    },
+    {
+      "start": 1056.5,
+      "end": 1058.0,
+      "text": "But first, let's get perspective."
+    },
+    {
+      "start": 1060.76,
+      "end": 1067.2,
+      "text": "We're about to go into the market, so we have to understand the market in another way to what"
+    },
+    {
+      "start": 1067.2,
+      "end": 1067.86,
+      "text": "we've looked at the market."
+    },
+    {
+      "start": 1067.86,
+      "end": 1079.1,
+      "text": "We have to understand where it's come from, where it is today, where it might be going, and what it all means."
+    },
+    {
+      "start": 1081.3,
+      "end": 1085.06,
+      "text": "And they're questions you should be asking yourself all the time, every day."
+    },
+    {
+      "start": 1087.14,
+      "end": 1091.84,
+      "text": "Where has this market come from, where has this market come from, where is it today, where is it going, what is it all mean?"
+    },
+    {
+      "start": 1093.1,
+      "end": 1095.38,
+      "text": "Train your mind into that process, that thought process."
+    },
+    {
+      "start": 1097.28,
+      "end": 1099.46,
+      "text": "You should be asking yourself that eight, ten times a day."
+    },
+    {
+      "start": 1103.5,
+      "end": 1110.66,
+      "text": "So, we look at historical stock market performance, and first we want to basically define what market we're actually in."
+    },
+    {
+      "start": 1112.96,
+      "end": 1114.46,
+      "text": "Are we in a bull market or a bear market?"
+    },
+    {
+      "start": 1117.34,
+      "end": 1118.52,
+      "text": "So, let's ask the question now."
+    },
+    {
+      "start": 1119.22,
+      "end": 1121.72,
+      "text": "The market that we're in now, are we in a bull or a bear market?"
+    },
+    {
+      "start": 1124.02,
+      "end": 1124.56,
+      "text": "Who said bull?"
+    },
+    {
+      "start": 1126.4,
+      "end": 1127.2,
+      "text": "Yeah, we're in a bull market."
+    },
+    {
+      "start": 1127.8,
+      "end": 1130.38,
+      "text": "But what's the actual definition of a bull or a bear market?"
+    },
+    {
+      "start": 1132.38,
+      "end": 1132.64,
+      "text": "Okay."
+    },
+    {
+      "start": 1133.88,
+      "end": 1140.94,
+      "text": "The definition in the media, so when you pick up a newspaper, or turn on the TV,"
+    },
+    {
+      "start": 1142.3,
+      "end": 1153.32,
+      "text": "the definition in the media of a bear market is a 20% fall in an index from this year's high."
+    },
+    {
+      "start": 1156.44,
+      "end": 1162.08,
+      "text": "And a bull market is a 20% rise in an index from this year's low."
+    },
+    {
+      "start": 1166.64,
+      "end": 1173.28,
+      "text": "So, you take this year's high, multiply it by 0.8, goes through that level, you're in a bear market."
+    },
+    {
+      "start": 1177.12,
+      "end": 1184.36,
+      "text": "Take the low of the year, multiply it by 1.2, if it goes through that level, we're in a bull market."
+    },
+    {
+      "start": 1186.92,
+      "end": 1191.9,
+      "text": "Unfortunately, the media definition is not the professional trader definition of a bull and bear market."
+    },
+    {
+      "start": 1194.54,
+      "end": 1195.66,
+      "text": "So, ignore the media."
+    },
+    {
+      "start": 1199.56,
+      "end": 1208.96,
+      "text": "The professional trader definition of a bull and bear market, and get on the phone to anyone at a big pension fund on Wall Street,"
+    },
+    {
+      "start": 1209.62,
+      "end": 1214.26,
+      "text": "in the city, anywhere in Asia, get on the phone to any hedge fund manager and ask them."
+    },
+    {
+      "start": 1215.08,
+      "end": 1224.64,
+      "text": "They'll tell you what the real definition of a bull and bear market is, which is a bear market at 20% fall from the high of the previous business cycle."
+    },
+    {
+      "start": 1227.52,
+      "end": 1239.44,
+      "text": "And a bull market is a rise, not of 20% from the low of the year, but a rise back above the bear market level that was set in the previous business cycle."
+    },
+    {
+      "start": 1243.82,
+      "end": 1244.74,
+      "text": "Does that make sense?"
+    },
+    {
+      "start": 1245.64,
+      "end": 1247.22,
+      "text": "So, let's have a look at where we are now."
+    },
+    {
+      "start": 1249.22,
+      "end": 1254.84,
+      "text": "So, S&P 500 on the 9th of October 07."
+    },
+    {
+      "start": 1257.84,
+      "end": 1266.0,
+      "text": "In the last business cycle, and by the way, we do move on later to definitions of business cycles, and we look at the business cycle of the US."
+    },
+    {
+      "start": 1270.6,
+      "end": 1277.72,
+      "text": "9th of October 07, the S&P 500 closes on a high of 1565 spot 1.5."
+    },
+    {
+      "start": 1278.96,
+      "end": 1280.3,
+      "text": "What's the bear market level?"
+    },
+    {
+      "start": 1280.86,
+      "end": 1281.98,
+      "text": "Multiply it by 0.8."
+    },
+    {
+      "start": 1284.48,
+      "end": 1286.28,
+      "text": "12.52 spot 1.2."
+    },
+    {
+      "start": 1288.28,
+      "end": 1291.24,
+      "text": "It went through that level on the 9th of July 08."
+    },
+    {
+      "start": 1292.38,
+      "end": 1293.78,
+      "text": "So, almost a year later."
+    },
+    {
+      "start": 1296.98,
+      "end": 1299.36,
+      "text": "Closing at 12.44 spot 6.9."
+    },
+    {
+      "start": 1300.04,
+      "end": 1303.16,
+      "text": "It then exited on the 21st of December 2010."
+    },
+    {
+      "start": 1304.44,
+      "end": 1309.18,
+      "text": "So, when the markets are really, really quiet, just before Christmas in 2010, what happened?"
+    },
+    {
+      "start": 1310.44,
+      "end": 1312.44,
+      "text": "The US officially came out of a bear market."
+    },
+    {
+      "start": 1314.04,
+      "end": 1319.38,
+      "text": "So, we entered a bull market on the 21st of December 2010."
+    },
+    {
+      "start": 1320.58,
+      "end": 1326.06,
+      "text": "So, when everyone was buying their last minute presents for Christmas and running home, the US had entered a bull market."
+    },
+    {
+      "start": 1328.26,
+      "end": 1329.7,
+      "text": "What about the FTSE 100?"
+    },
+    {
+      "start": 1333.88,
+      "end": 1336.58,
+      "text": "The high close, 6732 spot 4."
+    },
+    {
+      "start": 1337.66,
+      "end": 1339.38,
+      "text": "On the 15th of June 07."
+    },
+    {
+      "start": 1340.66,
+      "end": 1344.3,
+      "text": "Bear market level, 5385 spot 3.2."
+    },
+    {
+      "start": 1345.82,
+      "end": 1347.32,
+      "text": "On 9th of July 08."
+    },
+    {
+      "start": 1348.1,
+      "end": 1349.28,
+      "text": "Where have we seen that date before?"
+    },
+    {
+      "start": 1357.44,
+      "end": 1358.48,
+      "text": "Exactly on the same day."
+    },
+    {
+      "start": 1360.94,
+      "end": 1369.26,
+      "text": "So, the US and the UK went into a bear market as defined by professional traders on exactly the same day."
+    },
+    {
+      "start": 1373.02,
+      "end": 1374.04,
+      "text": "Why do you think that was?"
+    },
+    {
+      "start": 1377.88,
+      "end": 1378.28,
+      "text": "Christmas."
+    },
+    {
+      "start": 1378.86,
+      "end": 1379.16,
+      "text": "Sorry?"
+    },
+    {
+      "start": 1379.48,
+      "end": 1379.92,
+      "text": "Christmas."
+    },
+    {
+      "start": 1381.2,
+      "end": 1382.9,
+      "text": "No, it's 9th of July 08."
+    },
+    {
+      "start": 1386.9,
+      "end": 1388.44,
+      "text": "I don't know when you celebrate Christmas."
+    },
+    {
+      "start": 1392.36,
+      "end": 1393.62,
+      "text": "But why do you think that happened?"
+    },
+    {
+      "start": 1394.96,
+      "end": 1395.78,
+      "text": "Shall I tell you why?"
+    },
+    {
+      "start": 1397.42,
+      "end": 1401.04,
+      "text": "Because the US went into a bear market, so everyone sold everything in the world."
+    },
+    {
+      "start": 1404.2,
+      "end": 1404.8,
+      "text": "That was it."
+    },
+    {
+      "start": 1407.5,
+      "end": 1408.74,
+      "text": "So, it didn't matter what it was."
+    },
+    {
+      "start": 1410.12,
+      "end": 1412.42,
+      "text": "The US goes into a bear market, just sell everything."
+    },
+    {
+      "start": 1412.42,
+      "end": 1423.88,
+      "text": "But it exited, the FTSE exited of the 24th of December 09th."
+    },
+    {
+      "start": 1423.88,
+      "end": 1430.08,
+      "text": "So, a full year before the S&P 500."
+    },
+    {
+      "start": 1431.36,
+      "end": 1436.4,
+      "text": "Now, you'll probably figure out this tomorrow, but we'll start with it now."
+    },
+    {
+      "start": 1436.4,
+      "end": 1437.68,
+      "text": "I'll just make the statement."
+    },
+    {
+      "start": 1437.68,
+      "end": 1439.02,
+      "text": "You can think about it."
+    },
+    {
+      "start": 1439.02,
+      "end": 1447.86,
+      "text": "The make-up of the indices, the difference between the S&P 500 and the FTSE 100, the types of companies in the index."
+    },
+    {
+      "start": 1448.86,
+      "end": 1458.6,
+      "text": "What would that suggest if we're using the professional trading definitions of following the business cycle to determine bull and bear markets?"
+    },
+    {
+      "start": 1459.6,
+      "end": 1466.54,
+      "text": "What would that suggest about the make-up of the index of the FTSE relative to the make-up of the index of the S&P 500?"
+    },
+    {
+      "start": 1466.54,
+      "end": 1469.86,
+      "text": "The types of companies that are in and make up the index."
+    },
+    {
+      "start": 1470.72,
+      "end": 1481.8,
+      "text": "The make-up of the companies in the FTSE, the earnings of those companies are more sensitive to the business cycle overall than the make-up of the companies in the US."
+    },
+    {
+      "start": 1483.54,
+      "end": 1486.58,
+      "text": "So, when the business cycle turns, what goes first?"
+    },
+    {
+      "start": 1490.54,
+      "end": 1492.22,
+      "text": "Because the cyclicals go first."
+    },
+    {
+      "start": 1493.38,
+      "end": 1501.0,
+      "text": "So, the FTSE is made up relative to the S&P 500 of sensitive earnings compared when you compare across."
+    },
+    {
+      "start": 1501.0,
+      "end": 1512.0,
+      "text": "The S&P 500 is a much broader index representing 500 companies and a higher percentage of defensives relative to cyclicals."
+    },
+    {
+      "start": 1512.0,
+      "end": 1515.5,
+      "text": "What about the DAX?"
+    },
+    {
+      "start": 1518.5,
+      "end": 1520.72,
+      "text": "Started selling off 16th of July, 07."
+    },
+    {
+      "start": 1522.98,
+      "end": 1525.98,
+      "text": "Bear market level 6484, spot 55."
+    },
+    {
+      "start": 1527.82,
+      "end": 1529.2,
+      "text": "Reached in March, 08."
+    },
+    {
+      "start": 1531.78,
+      "end": 1533.06,
+      "text": "Again, earlier than the FTSE."
+    },
+    {
+      "start": 1534.04,
+      "end": 1536.26,
+      "text": "Sorry, earlier than the S&P, but later than the FTSE."
+    },
+    {
+      "start": 1538.62,
+      "end": 1539.62,
+      "text": "Why do you think that was?"
+    },
+    {
+      "start": 1541.02,
+      "end": 1542.86,
+      "text": "We can rationalise all this in hindsight."
+    },
+    {
+      "start": 1549.66,
+      "end": 1550.44,
+      "text": "Subprime crisis."
+    },
+    {
+      "start": 1551.78,
+      "end": 1552.66,
+      "text": "Very bank heavy."
+    },
+    {
+      "start": 1559.74,
+      "end": 1562.3,
+      "text": "So, now we know what a bull and a bear market is."
+    },
+    {
+      "start": 1563.96,
+      "end": 1566.68,
+      "text": "We're going to know what type of market we're in at any one time."
+    },
+    {
+      "start": 1568.68,
+      "end": 1584.72,
+      "text": "If you did one thing, if you do one thing in any business cycle, if you just short indexes, when they break the bear market level, or break the bull market level, go back into a bull market and you buy them."
+    },
+    {
+      "start": 1585.26,
+      "end": 1586.6,
+      "text": "If you do that, if you do that, if you do that, you'll just make money."
+    },
+    {
+      "start": 1588.6,
+      "end": 1594.22,
+      "text": "Because all the money that follows that will come in and out of the market based on that."
+    },
+    {
+      "start": 1596.22,
+      "end": 1597.66,
+      "text": "It happens in every business cycle."
+    },
+    {
+      "start": 1597.9,
+      "end": 1608.82,
+      "text": "But how do we predict that we're going into a bull market or going into a bear market, so you can be positioned before it actually happens?"
+    },
+    {
+      "start": 1611.64,
+      "end": 1612.58,
+      "text": "Well, that's the key, isn't it?"
+    },
+    {
+      "start": 1615.0,
+      "end": 1615.94,
+      "text": "It's the key to everything."
+    },
+    {
+      "start": 1616.48,
+      "end": 1626.56,
+      "text": "If you can tell what's going to happen in 6 to 12 months' time, whether we're going to enter a bear market or stay in a bull market or go into a bull market, you're going to make tons a night."
+    },
+    {
+      "start": 1628.78,
+      "end": 1631.78,
+      "text": "And if you can do that for the rest of your life, you're going to be very, very wealthy."
+    },
+    {
+      "start": 1636.54,
+      "end": 1638.02,
+      "text": "Okay, so welcome back."
+    },
+    {
+      "start": 1639.6,
+      "end": 1645.36,
+      "text": "Now, as you went through the presentation, you would have realized that we looked at a couple of things there."
+    },
+    {
+      "start": 1646.36,
+      "end": 1654.46,
+      "text": "First thing we looked at was defining the systematic asset selection process and introducing to you the Wish Framework."
+    },
+    {
+      "start": 1655.74,
+      "end": 1661.08,
+      "text": "And the Wish Framework as a template really does serve as the professional trader approach."
+    },
+    {
+      "start": 1661.84,
+      "end": 1673.06,
+      "text": "Now, one of the things that we mentioned in the presentation there was that if you want to add in anything into the Wish Framework as we're going along, feel free to add in anything you want."
+    },
+    {
+      "start": 1673.84,
+      "end": 1683.06,
+      "text": "But you have to make sure that as you're doing it, you add in what you want to add in at the right area of the Wish Framework."
+    },
+    {
+      "start": 1684.1,
+      "end": 1689.68,
+      "text": "Now, the Framework really is a combination of a top-down and a bottom-up approach."
+    },
+    {
+      "start": 1691.16,
+      "end": 1701.38,
+      "text": "Overlaid with technical analysis and price action indicators, prudent risk management and self-awareness statistics as a trader."
+    },
+    {
+      "start": 1702.6,
+      "end": 1712.16,
+      "text": "Now, we're going to go through all of the videos up to video 20, which really is the bulk of the work, which is idea generation."
+    },
+    {
+      "start": 1713.78,
+      "end": 1715.78,
+      "text": "Then we're going to move on to gatekeeping."
+    },
+    {
+      "start": 1716.9,
+      "end": 1720.36,
+      "text": "And then we have risk management and self-awareness stats."
+    },
+    {
+      "start": 1721.2,
+      "end": 1729.38,
+      "text": "This map that you saw on the presentation, please get it in your mind, but feel free to add in anything you want to at any stage."
+    },
+    {
+      "start": 1729.6,
+      "end": 1742.94,
+      "text": "If you consider yourself extremely useful at technical analysis, then you can add in your technical analysis, TA indicators, at the stage of technical analysis, which is within gatekeeping."
+    },
+    {
+      "start": 1743.62,
+      "end": 1745.62,
+      "text": "But please don't add it into idea generation."
+    },
+    {
+      "start": 1746.12,
+      "end": 1748.66,
+      "text": "This will all become clear later why."
+    },
+    {
+      "start": 1750.12,
+      "end": 1757.54,
+      "text": "So, the first thing we did was we defined the systematic asset selection process and introduced you to the Wish Framework."
+    },
+    {
+      "start": 1758.3,
+      "end": 1765.92,
+      "text": "The second thing we did in this presentation was to define bull and bear markets."
+    },
+    {
+      "start": 1766.98,
+      "end": 1768.14,
+      "text": "Now, why are we doing that?"
+    },
+    {
+      "start": 1768.2,
+      "end": 1775.32,
+      "text": "We're doing that to really just get perspective and a snapshot of where we are at any one point in time."
+    },
+    {
+      "start": 1775.8,
+      "end": 1792.02,
+      "text": "So, now at any moment in your life, now you have these definitions, you can look over the markets globally and just define exactly what markets you're in by using the professional trader definition of bull and bear markets,"
+    },
+    {
+      "start": 1792.18,
+      "end": 1796.9,
+      "text": "not the populist media definition of bull and bear markets."
+    },
+    {
+      "start": 1797.8,
+      "end": 1809.48,
+      "text": "So, now that we've defined the systematic asset selection process, you've seen an introduction to the Wish Framework, the professional trader template,"
+    },
+    {
+      "start": 1810.32,
+      "end": 1821.28,
+      "text": "and we've defined what type of market we're in, now we can actually move on to predict what type of market we're going to be in in the future."
+    },
+    {
+      "start": 1822.3,
+      "end": 1825.04,
+      "text": "Because that's what professional trading is all about."
+    },
+    {
+      "start": 1825.52,
+      "end": 1830.34,
+      "text": "It's not reacting to what's in the mainstream media right now."
+    },
+    {
+      "start": 1830.68,
+      "end": 1833.28,
+      "text": "It's not reacting to what type of market we're in now."
+    },
+    {
+      "start": 1833.72,
+      "end": 1839.14,
+      "text": "What it really is, is about predicting what type of market we're going to be in in the future."
+    },
+    {
+      "start": 1840.06,
+      "end": 1848.96,
+      "text": "And building your ideas and building your portfolio around what your expectations are for the future."
+    },
+    {
+      "start": 1850.42,
+      "end": 1858.6,
+      "text": "It's going to become very clear that the market itself is a discounting mechanism and a forward-looking indicator."
+    },
+    {
+      "start": 1860.2,
+      "end": 1867.3,
+      "text": "Because all professional traders are using the market as a proxy to predict the future."
+    },
+    {
+      "start": 1868.14,
+      "end": 1871.16,
+      "text": "Now, if you're a retail trader who predicts to what's happening now,"
+    },
+    {
+      "start": 1871.62,
+      "end": 1881.4,
+      "text": "all you're actually doing is providing the liquidity for professional guys who predicted where we were going to be at this stage at some point in the past."
+    },
+    {
+      "start": 1882.24,
+      "end": 1886.58,
+      "text": "What you've got to train your mind into is to predicting the future."
+    },
+    {
+      "start": 1887.08,
+      "end": 1888.68,
+      "text": "And that's the professional trader approach."
+    },
+    {
+      "start": 1889.12,
+      "end": 1890.68,
+      "text": "And that's what we're going to move on to now."
+    },
+    {
+      "start": 1891.06,
+      "end": 1898.6,
+      "text": "The first stage of idea generation starts at the macroeconomic level, at the very top, and then we work our way down."
+    },
+    {
+      "start": 1899.72,
+      "end": 1908.18,
+      "text": "So, the first thing we're going to do in idea generation is to work out where we think the market is going to be in a year's time."
+    },
+    {
+      "start": 1909.04,
+      "end": 1916.42,
+      "text": "Once we've got that, we can take positions now, because the market is being used as a proxy now for expectations in one year."
+    },
+    {
+      "start": 1918.02,
+      "end": 1929.7,
+      "text": "Okay, let's move on to video number nine and really start to define the process of idea generation by starting at the macro level, and then we can work our way down."
+    },
+    {
+      "start": 1930.7,
+      "end": 1932.02,
+      "text": "I'll see you in video nine."
+    },
+    {
+      "start": 1932.02,
+      "end": 1941.46,
+      "text": "If you want to watch over any of the videos again, just go back and keep these principles in mind that you've learned from video one to video seven,"
+    },
+    {
+      "start": 1942.26,
+      "end": 1952.4,
+      "text": "and try to get the definitions of the systematic asset selection process and bull and bear markets as defined by professional traders in your mind,"
+    },
+    {
+      "start": 1952.98,
+      "end": 1962.42,
+      "text": "and just make sure this is all set in stone and hard-coded, because these principles are going to serve as a very important foundation as we move forward."
+    },
+    {
+      "start": 1963.0,
+      "end": 1964.04,
+      "text": "See you in video nine."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

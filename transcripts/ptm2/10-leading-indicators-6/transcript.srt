@@ -1,0 +1,2748 @@
+1
+00:00:00,000 --> 00:00:29,980
+Okay, guys, let's get stuck into video
+number 10. We've made a lot of progress so
+far in the video series, but there's still
+a long way to go. In this video, we're
+going to get into the U.S. construction
+sector, and in particular, the U.S.
+residential housing sector. We're going to
+be looking at our next leading indicator,
+
+2
+00:00:29,980 --> 00:00:59,960
+the Census Bureau's monthly report on
+building permits. Let's have a quick recap
+of what we've covered so far. Our leading
+indicator list, we have our government
+bond market with real interest rates and
+the yield curve. We have our corporate
+bond market with investment grade and high
+yield or junk spreads over the 10-year. We
+have our M2 money supply accessory. We
+have our stock market volatility, the S&P,
+
+3
+00:00:59,960 --> 00:01:20,500
+S&P 500 VIX from the IPLT video series,
+and we have our multiple survey list,
+which we continue to add to. So surveys so
+far, we've covered the ISM manufacturing
+report, the ISM non-manufacturing report,
+and the University of Michigan Consumer
+Sentiment Index.
+
+4
+00:01:20,500 --> 00:01:50,480
+We are now adding the Census Bureau's
+monthly report on building permits. So
+what are we looking at here? Well, we're
+looking at the U.S. housing sector. And
+the U.S. housing sector provides us with
+multiple economic indicators that can help
+us make decisions as traders and PMs on
+whether we believe the U.S. economy is
+likely to grow or not.
+
+5
+00:01:50,480 --> 00:02:20,460
+The building permits report. The building
+permits report that comes from the Census
+Bureau is taken from the monthly Housing
+Starts Report, which is a report that is
+released on a monthly basis with a lot of
+information in the U.S. housing sector.
+
+6
+00:02:20,460 --> 00:02:30,320
+The building permits report to predict GDP
+growth and S&P 500 direction and returns.
+Now, the building permits number is one of
+the most misunderstood economic numbers in
+the U.S.
+
+7
+00:02:30,320 --> 00:03:00,200
+Even pro-traders guys and seasoned
+economists miss some very important
+signals that the building permits data
+actually gives us. Now, where can we find
+it? Well, the links are on the screen, as
+you can see, census.gov forward slash
+construction with the URL extensions. You
+just need to go there each month and go to
+the History
+
+8
+00:03:00,200 --> 00:03:30,180
+Section of the Census Bureau section of
+the Census Bureau's Construction Index
+data set. You can download the entire data
+set in Excel and view it from the sheet,
+Permits Seasonally Adjusted or in PDF
+format. And then you add the new numbers
+in every month. This is easily done by
+yourself. But we do have a download in the
+Downloads area for you. If you want to go
+there, you can see it.
+
+9
+00:03:30,180 --> 00:03:45,280
+We want to get the data quickly. We want
+to get the data quickly. And we've done a
+lot of work in that Downloads area as well
+on the data to show trends. When is it
+released? It's released in the second or
+third week of the month. And the data is
+for the previous month.
+
+10
+00:03:46,180 --> 00:03:52,580
+Now, before we get into building permits
+themselves, a bit of background
+understanding is required.
+
+11
+00:03:53,560 --> 00:04:00,700
+We need to understand what this housing
+report is all about, the Housing Starts
+Report that comes out every month.
+
+12
+00:04:00,800 --> 00:04:06,180
+So the building permits number comes from
+the U.S. Housing Starts Report.
+
+13
+00:04:06,780 --> 00:04:11,480
+The report also includes a number for
+housing completions.
+
+14
+00:04:12,220 --> 00:04:19,300
+And each of these three variables, these
+three data sets, have a different
+definition.
+
+15
+00:04:20,240 --> 00:04:25,400
+We should understand that definition
+first, so you can understand the report
+better.
+
+16
+00:04:25,760 --> 00:04:33,960
+It essentially breaks down the entire
+process of a residential housing unit
+being developed or built.
+
+17
+00:04:34,940 --> 00:04:39,840
+So we have three stages for a residential
+home to be built.
+
+18
+00:04:40,260 --> 00:04:42,400
+We have a building permit being
+authorized.
+
+19
+00:04:43,200 --> 00:04:46,380
+We have the project being started, a
+housing start.
+
+20
+00:04:46,940 --> 00:04:50,900
+And when the house is complete, we have a
+housing completion.
+
+21
+00:04:50,900 --> 00:05:01,440
+And the way we define these data sets
+individually is basically from a time
+perspective, okay?
+
+22
+00:05:02,320 --> 00:05:09,300
+A building permit is a leading indicator
+because it leads the housing start.
+
+23
+00:05:09,900 --> 00:05:18,200
+A housing start is a coincidence indicator
+because it tells you what is going on at
+that moment in time in the economy.
+
+24
+00:05:19,520 --> 00:05:28,320
+A housing completion is a lagging
+indicator because once the home is
+complete and it's built, it's finished.
+
+25
+00:05:28,320 --> 00:05:30,320
+The project is over.
+
+26
+00:05:31,320 --> 00:05:39,080
+So throughout the time series, the housing
+start is when there's economic activity
+occurring.
+
+27
+00:05:39,080 --> 00:05:48,960
+The building permit precedes the housing
+start, so the building permit is when the
+project is authorized.
+
+28
+00:05:50,000 --> 00:05:53,180
+So what is the definition of a building
+permit?
+
+29
+00:05:53,180 --> 00:06:02,140
+Well, the building has basically received
+planning permission by the local state
+planning department.
+
+30
+00:06:02,540 --> 00:06:12,500
+For a housing start, the foundations of
+the building have been laid, the project
+has started, the economic activity has
+started.
+
+31
+00:06:13,340 --> 00:06:19,340
+Housing completion, the structure and the
+major interior work has been completed.
+
+32
+00:06:19,340 --> 00:06:28,140
+So there's probably still minor work to
+do, but it's not essential, and the home
+is currently being marketed for sale.
+
+33
+00:06:28,140 --> 00:06:36,940
+So another way to look at this, a building
+permit is when the paperwork for the
+project is put together.
+
+34
+00:06:36,940 --> 00:06:43,740
+A housing start is when the physical
+commodities become the house.
+
+35
+00:06:43,740 --> 00:06:45,740
+What do we mean by that?
+
+36
+00:06:45,740 --> 00:06:47,540
+Well, the foundations go in.
+
+37
+00:06:47,540 --> 00:06:48,540
+Well, the foundations go in.
+
+38
+00:06:48,540 --> 00:06:58,540
+There's bricks, cement, steel, iron ore,
+copper wiring, electrics, components, et
+cetera, et cetera.
+
+39
+00:06:58,540 --> 00:07:07,340
+This is when physical commodities, the
+economic activity starts and the house is
+built.
+
+40
+00:07:07,340 --> 00:07:11,540
+Physical commodities turn into the
+property.
+
+41
+00:07:11,540 --> 00:07:20,340
+Then the housing completion, this is when
+the project is complete and the economic
+activity is stopping.
+
+42
+00:07:20,980 --> 00:07:25,140
+So it's paperwork, physical commodities
+become houses.
+
+43
+00:07:26,420 --> 00:07:29,460
+The project stops, housing completion.
+
+44
+00:07:30,260 --> 00:07:34,900
+So we have the paperwork, which is the
+leading indicator.
+
+45
+00:07:35,460 --> 00:07:41,380
+We have the physical commodity
+transformation into the home, which is the
+housing start.
+
+46
+00:07:41,380 --> 00:07:45,540
+That's economic activity that's occurring
+in the economy right now.
+
+47
+00:07:46,260 --> 00:07:48,980
+And we have the housing completion.
+
+48
+00:07:48,980 --> 00:07:51,220
+And that is a lagging indicator.
+
+49
+00:07:51,220 --> 00:07:53,460
+So we go from paperwork, leading.
+
+50
+00:07:54,580 --> 00:07:56,500
+Housing start, coincidence.
+
+51
+00:07:57,140 --> 00:07:58,980
+Project completed, lagging.
+
+52
+00:08:00,660 --> 00:08:07,060
+Now, given that this is actually a time
+series, and as traders and portfolio
+managers, we want to know
+
+53
+00:08:07,780 --> 00:08:16,820
+what the length of time is between a
+building permit authorization, a housing
+start, and a housing completion.
+
+54
+00:08:17,540 --> 00:08:26,420
+Because we want to know what length of
+time of building permits leading indicator
+is leading the economy by,
+
+55
+00:08:27,220 --> 00:08:32,340
+and leading the coincidence and the
+lagging indicator.
+
+56
+00:08:32,980 --> 00:08:38,580
+Well, we can get this data if we go to the
+Census Bureau website.
+
+57
+00:08:39,220 --> 00:08:48,500
+And if we look at the URL extension there,
+so construction forward slash nrc forward
+slash length of time.
+
+58
+00:08:49,300 --> 00:08:59,620
+And you can see we can look at the length
+of time and get the data set, the length
+of time that it takes for an authorization
+to start.
+
+59
+00:09:00,180 --> 00:09:07,620
+And we can also get the length of time
+that it takes, get the data for a start
+becoming a completion.
+
+60
+00:09:09,060 --> 00:09:21,780
+So let's have a look at the data for a
+building permit being authorized and the
+length of time it takes for a housing
+start to occur.
+
+61
+00:09:22,580 --> 00:09:33,700
+If you look at the screen here, you can
+get this PDF download from the Census
+Bureau website in the URL that I just
+mentioned.
+
+62
+00:09:34,660 --> 00:09:52,420
+And we're looking here at the percentage
+distribution of new privately owned
+residential buildings started in permit
+issuing places in the year of 2020 by the
+number of months from authorization.
+
+63
+00:09:52,420 --> 00:10:04,100
+So the number of months it takes for a
+housing start to start from the moment of
+authorization across the United States in
+the year 2020.
+
+64
+00:10:04,740 --> 00:10:07,580
+So let's have a look at the percentage
+distribution here.
+
+65
+00:10:08,580 --> 00:10:22,180
+Now, there are states that allow
+developers to break ground and start a
+project before a building permit
+authorization is issued.
+
+66
+00:10:23,620 --> 00:10:30,100
+The first part you're looking at here, if
+we look at the headline numbers of the
+United States, is exactly this.
+
+67
+00:10:30,100 --> 00:10:42,900
+So prior to or at the same time or in the
+same month as the authorization or the
+building permit is issued, this comes out
+at 43%.
+
+68
+00:10:42,900 --> 00:11:02,100
+So you can see in a lot of states around
+the US, developers from the local state
+planning department are allowed to break
+ground and they're allowed to start their
+project either slightly before or in the
+month of the building permit being
+authorized.
+
+69
+00:11:02,100 --> 00:11:06,100
+This comes in at 43%.
+
+70
+00:11:06,100 --> 00:11:16,100
+If we look at the rest of the percentage
+distribution for the 2020 year, we can see
+one month comes in at 37%.
+
+71
+00:11:16,100 --> 00:11:22,100
+So that's one month after the building
+permit has been authorized.
+
+72
+00:11:22,100 --> 00:11:25,820
+So one month comes in at 37%.
+
+73
+00:11:25,820 --> 00:11:29,100
+Then two months comes in at 10%.
+
+74
+00:11:29,100 --> 00:11:32,020
+Three months comes in at 4%.
+
+75
+00:11:32,020 --> 00:11:37,400
+So I've added those up and we get to 51%.
+
+76
+00:11:37,400 --> 00:11:45,520
+Basically, in the one to three month time
+period after a building permit is
+authorized.
+
+77
+00:11:46,180 --> 00:11:49,100
+And yes, guys, it's not a coincidence.
+
+78
+00:11:51,100 --> 00:11:56,820
+Housing developers are trading one to
+three month portfolios as well.
+
+79
+00:11:56,820 --> 00:12:08,180
+Additionally, you can see that projects
+starting from authorization, four months
+or more comes in at 6%.
+
+80
+00:12:08,180 --> 00:12:20,780
+So if we add the one, two, three and four
+months or more together, 57% is one month
+plus, but the meet obviously is in the one
+to three month period.
+
+81
+00:12:20,780 --> 00:12:41,500
+So essentially, if we add the 51% and the
+43%, 94% of projects are started either
+around the time when the permit is issued
+by the State Planning Department or within
+three months.
+
+82
+00:12:41,500 --> 00:12:47,220
+We can also look at completions.
+
+83
+00:12:47,220 --> 00:12:59,220
+And if you download the PDF there for
+completions, whatever time period you're
+sitting in, but we've got completions here
+for 2020.
+
+84
+00:12:59,220 --> 00:13:05,940
+We can look at the percentage distribution
+for the time periods for completions
+coming from starts.
+
+85
+00:13:05,940 --> 00:13:14,940
+So started projects that are actually
+getting completed and how long it takes.
+
+86
+00:13:14,940 --> 00:13:28,760
+So if we look at the headline data for
+2020 across the whole of the US, we can
+see we've got 16% is three months or less.
+
+87
+00:13:28,760 --> 00:13:39,040
+So it takes three months for a housing
+start to become a completion that's 16% of
+projects.
+
+88
+00:13:39,040 --> 00:13:46,480
+Next, we've got four to six months, seven
+to nine months, and 10 to 12 months.
+
+89
+00:13:46,480 --> 00:13:53,120
+And if we add that up together, that shows
+a time lag of four to 12 months.
+
+90
+00:13:53,120 --> 00:14:01,320
+And then in the minority of cases, we have
+projects going from start to completion in
+13 months or more.
+
+91
+00:14:01,320 --> 00:14:03,840
+And that comes in at 9%.
+
+92
+00:14:03,840 --> 00:14:11,640
+So the meet is obviously in that period in
+four to 12 months, but really it's four to
+nine months.
+
+93
+00:14:12,840 --> 00:14:23,000
+So we can actually get conclusions here on
+the actual time lag from permits to starts
+and from starts to completions.
+
+94
+00:14:23,000 --> 00:14:38,040
+And therefore, how much time permits are
+leading starts and how much time starts
+are leading completions, but also how much
+time permits are leading completions.
+
+95
+00:14:38,040 --> 00:14:41,320
+So permits leading starts.
+
+96
+00:14:41,320 --> 00:14:44,800
+We're looking at three to four months.
+
+97
+00:14:44,800 --> 00:14:46,760
+Where does the four months come from?
+
+98
+00:14:46,760 --> 00:15:03,000
+Well, that's because in the data, the
+state planning departments in some states
+allow developers to actually break ground
+at the same time or one month before
+permits are issued.
+
+99
+00:15:03,000 --> 00:15:08,600
+So to be prudent, we're using three to
+four months leading housing starts.
+
+100
+00:15:08,600 --> 00:15:12,840
+So permits leading housing starts by three
+to four months.
+
+101
+00:15:12,840 --> 00:15:15,320
+What about starts leading completions?
+
+102
+00:15:15,320 --> 00:15:16,840
+Well, we've just looked at that.
+
+103
+00:15:16,840 --> 00:15:18,040
+It's on the screen.
+
+104
+00:15:18,040 --> 00:15:23,320
+We're looking at the vast majority of
+times in the four to 12 month window.
+
+105
+00:15:23,880 --> 00:15:31,880
+So what does that mean for us as traders
+and portfolio managers when we're looking
+at building permits as a leading
+indicator?
+
+106
+00:15:32,280 --> 00:15:43,320
+Well, it means permits are leading housing
+starts by three to four months and permits
+are leading completions by anything
+between eight to 16 months.
+
+107
+00:15:43,720 --> 00:15:48,280
+So it's obviously an extremely useful
+leading indicator.
+
+108
+00:15:48,280 --> 00:15:54,760
+Now, what does all this actually mean for
+us as traders and portfolio managers?
+
+109
+00:15:55,400 --> 00:16:07,400
+Well, this is part of the reason why so
+many players in the market misunderstand
+or misinterpret what the building permits
+number actually means,
+
+110
+00:16:07,400 --> 00:16:19,160
+because it infers a lot of useful
+information for us, but people, a lot of
+people in the market don't really
+understand what it infers.
+
+111
+00:16:20,920 --> 00:16:37,480
+We are looking at how many building
+permits have been issued by state planning
+departments in the U.S. at any one moment
+in time in a particular month for the
+previous month.
+
+112
+00:16:37,480 --> 00:16:45,640
+And those building permits can go up month
+on month and they can go down month on
+month.
+
+113
+00:16:45,640 --> 00:16:49,160
+And we look at the change in that as well.
+
+114
+00:16:49,160 --> 00:16:53,880
+So we look at the total number and we look
+at the changes month on month.
+
+115
+00:16:53,880 --> 00:17:01,560
+So by definition, the building permits
+number as a leading indicator tells us
+several things.
+
+116
+00:17:01,560 --> 00:17:10,760
+The first thing it tells us is it gives us
+a very good gauge on developer sentiment,
+on housing developer sentiment.
+
+117
+00:17:12,120 --> 00:17:21,560
+So it tells us whether or not developers
+are bullish or bearish on the prospects of
+future home sales.
+
+118
+00:17:22,760 --> 00:17:27,720
+Developers have to physically make the
+application for building permits.
+
+119
+00:17:28,280 --> 00:17:38,600
+So more applications for building permits
+means, from a developer sentiment
+perspective, an expectation of future
+sales.
+
+120
+00:17:39,240 --> 00:17:40,920
+And it costs them money, guys.
+
+121
+00:17:41,560 --> 00:17:44,440
+They don't do this for fun, okay?
+
+122
+00:17:44,440 --> 00:17:54,120
+Every single application that goes in to
+the state planning department, it costs
+anything between $500 to $1,000 per home,
+
+123
+00:17:54,120 --> 00:17:57,800
+depending on what state you're in and what
+home you're applying for.
+
+124
+00:17:59,000 --> 00:18:04,040
+What it also does is it gives us a gauge
+on home buyer demand.
+
+125
+00:18:04,680 --> 00:18:09,240
+So the demand for housing from the US
+consumer.
+
+126
+00:18:10,040 --> 00:18:17,000
+And this, as a consideration from a
+traders and portfolio managers
+perspective,
+
+127
+00:18:17,640 --> 00:18:23,080
+runs in tandem with our analysis of
+consumer sentiment.
+
+128
+00:18:23,080 --> 00:18:28,920
+Because it may eventually lead to changes
+in future consumer spending.
+
+129
+00:18:29,560 --> 00:18:38,360
+So if home buyers are bullish, it probably
+means in the future, they're going to be
+spending money.
+
+130
+00:18:39,080 --> 00:18:42,440
+And if they're bearish, home buyers are
+bearish.
+
+131
+00:18:42,440 --> 00:18:48,680
+It probably means in the future that
+they're eventually going to spend less
+money.
+
+132
+00:18:48,680 --> 00:18:50,200
+So tightening their belts.
+
+133
+00:18:51,320 --> 00:18:58,600
+But what it also does is it gives us a
+gauge on the liquidity and health of the
+US credit market.
+
+134
+00:18:58,920 --> 00:19:00,760
+And it does this in two ways.
+
+135
+00:19:01,480 --> 00:19:03,560
+First of all, the supply of loans.
+
+136
+00:19:04,120 --> 00:19:10,280
+Developers in the US don't finance
+projects with 100% equity or cash.
+
+137
+00:19:11,160 --> 00:19:18,840
+They put down a certain amount of money
+and they use a mix of that cash and they
+borrow money.
+
+138
+00:19:18,840 --> 00:19:19,880
+They use debt.
+
+139
+00:19:20,840 --> 00:19:28,120
+Additionally, the home buyers themselves,
+the consumers, they don't buy houses for
+cash.
+
+140
+00:19:28,120 --> 00:19:32,040
+They buy them with debt, they buy them
+with mortgages.
+
+141
+00:19:32,600 --> 00:19:43,720
+So the building permits number gives us an
+insight into these two areas in terms of
+the liquidity and health of the US lending
+environment,
+
+142
+00:19:43,720 --> 00:19:53,320
+government, which is essentially the
+health of the banking sector and the
+credit markets and the overall economy in
+the United States.
+
+143
+00:19:54,600 --> 00:20:06,440
+Now, the data itself, as mentioned
+previously, we do have a download US
+building permits in the downloads area
+under the video.
+
+144
+00:20:06,440 --> 00:20:19,400
+So in your own time, download that there's
+a lot of pretty comprehensive work in
+there looking at the various trends and
+turning points in building permits.
+
+145
+00:20:20,280 --> 00:20:21,960
+And we're going to go through those a bit
+later.
+
+146
+00:20:22,920 --> 00:20:32,040
+But let's have a look at the survey design
+for building permits in a bit more detail
+and understand that a little bit better.
+
+147
+00:20:33,560 --> 00:20:41,800
+Okay, so basically, the purpose of the
+building permits survey, so the report
+itself,
+
+148
+00:20:43,240 --> 00:20:56,680
+is to give national, state and local
+statistics on the number and valuation of
+new privately owned housing units that are
+authorized by building permits in the US.
+
+149
+00:20:57,480 --> 00:21:12,360
+The statistics from the building permit
+survey are based on reports that are given
+or submitted by local building permits
+officials in response to a voluntary mail
+survey.
+
+150
+00:21:13,160 --> 00:21:18,920
+And the data is collected from the
+building permit officials.
+
+151
+00:21:19,640 --> 00:21:35,560
+So in this survey, using what's called a
+form C404, which is the report of building
+or zoning permits issued for new privately
+owned housing units.
+
+152
+00:21:36,520 --> 00:21:47,640
+And if you go to the link there, if you go
+to the following URL, you can actually get
+a sample C404 form.
+
+153
+00:21:48,440 --> 00:21:57,480
+And this is the form that gets sent out to
+the building permit officials.
+
+154
+00:21:58,520 --> 00:22:00,680
+And this is the form that they fill in.
+
+155
+00:22:00,680 --> 00:22:08,920
+So you can actually have a look and
+understand the survey design and the form
+that they need to fill in.
+
+156
+00:22:08,920 --> 00:22:11,240
+So a bit of background information there.
+
+157
+00:22:15,320 --> 00:22:28,680
+Basically, the building permit survey
+covers all permit issuing places in the
+United States, which are jurisdictions
+that issue building or zoning permits.
+
+158
+00:22:28,680 --> 00:22:32,200
+And you can see the amount of permits.
+
+159
+00:22:32,200 --> 00:22:37,160
+And you can see the amount of permits
+issuing places throughout the history of
+the data set.
+
+160
+00:22:37,720 --> 00:22:41,480
+And the data set goes back to 1959.
+
+161
+00:22:42,440 --> 00:22:54,200
+And you can see way back in 1959, you can
+see our sample size for the data, which is
+10,000 permit issuing places.
+
+162
+00:22:54,200 --> 00:23:01,080
+So that's 10,000 jurisdictions that were
+issuing building or zoning permits.
+
+163
+00:23:01,080 --> 00:23:08,280
+And you can see it's been growing and
+they've increased the sample size over
+time.
+
+164
+00:23:08,280 --> 00:23:21,720
+And the last count of the sample size was
+back in 2014, where they had over 20,000
+building or zoning permit jurisdictions,
+
+165
+00:23:21,720 --> 00:23:24,520
+which were issuing building permits.
+
+166
+00:23:26,120 --> 00:23:29,480
+Now, we do have the entire data set in the
+downloads area.
+
+167
+00:23:30,360 --> 00:23:35,160
+But if you do want to go and get that
+yourself, you need to go to the URL,
+
+168
+00:23:35,720 --> 00:23:41,800
+census.gov forward slash construction, NRC
+index.
+
+169
+00:23:42,600 --> 00:23:51,640
+And you click on the left-hand side,
+building permit survey, you look for new
+residential construction,
+
+170
+00:23:52,360 --> 00:23:55,640
+and you click on building permit survey.
+
+171
+00:23:55,640 --> 00:23:57,640
+This is the monthly report that you get.
+
+172
+00:23:58,680 --> 00:24:04,440
+And you can download the full report in
+PDF format, or you can do that in Excel as
+well.
+
+173
+00:24:05,160 --> 00:24:10,280
+And if you download it in Excel, this is
+essentially what you're looking for.
+
+174
+00:24:10,280 --> 00:24:18,600
+You're looking for new privately owned
+housing units authorized by building
+permits in permit issuing places.
+
+175
+00:24:19,160 --> 00:24:23,000
+And this is the download for December
+2020.
+
+176
+00:24:23,000 --> 00:24:30,200
+And what you're looking for is the tab or
+the sheet inside the file called units SA.
+
+177
+00:24:30,680 --> 00:24:33,240
+So units seasonally adjusted.
+
+178
+00:24:34,680 --> 00:24:37,080
+So what does this number actually
+represent?
+
+179
+00:24:37,720 --> 00:24:53,800
+Well, the 1704, that is 1.7 million
+building permits authorized or issued in
+December 2020.
+
+180
+00:24:53,800 --> 00:25:00,440
+So remember, this number will have been
+coming out in the second or third week of
+January.
+
+181
+00:25:00,920 --> 00:25:09,000
+Okay. And if you look to the right-hand
+side, you can see the various regions of
+the United States.
+
+182
+00:25:09,000 --> 00:25:13,160
+You can see the Northeast, Midwest, South
+and West.
+
+183
+00:25:13,160 --> 00:25:17,880
+So the survey breaks it up into four areas
+of the United States.
+
+184
+00:25:18,440 --> 00:25:21,000
+And you can see a total number for each.
+
+185
+00:25:21,640 --> 00:25:25,080
+So for example, in the Northeast, you can
+see 140.
+
+186
+00:25:26,440 --> 00:25:29,480
+That's 140,000 permits issued.
+
+187
+00:25:30,280 --> 00:25:33,080
+You can see in the Midwest, 248.
+
+188
+00:25:33,640 --> 00:25:37,080
+You can see in the South, 881.
+
+189
+00:25:37,080 --> 00:25:40,040
+And in the West, 435.
+
+190
+00:25:40,040 --> 00:25:45,640
+And if you add those totals together, you
+get the total number for the US.
+
+191
+00:25:45,640 --> 00:25:50,760
+So 1.7 million building permits issued for
+the month of December.
+
+192
+00:25:51,960 --> 00:26:02,760
+Now within those four regions that are
+defined by the Census Bureau, you can
+actually go a little bit
+
+193
+00:26:02,760 --> 00:26:11,800
+deeper and you can look at the permits by
+each state within the United States.
+
+194
+00:26:11,800 --> 00:26:17,560
+If you go to the website, go to Building
+Permits Survey, and you'll be taken to
+
+195
+00:26:19,560 --> 00:26:24,760
+some links that you can click on and you
+can look at permits by state.
+
+196
+00:26:26,360 --> 00:26:30,520
+When you download the data, this is what
+it's going to look like.
+
+197
+00:26:31,080 --> 00:26:32,920
+You'll get a spreadsheet that looks like
+this.
+
+198
+00:26:34,520 --> 00:26:41,800
+You can obviously see we've got in this
+sample here, we've got the headline number
+on the top
+
+199
+00:26:42,520 --> 00:26:47,160
+for the United States and we've got our
+regions that we just looked at.
+
+200
+00:26:47,160 --> 00:26:49,320
+So we've got our Northeast region.
+
+201
+00:26:49,320 --> 00:26:56,120
+So if you look in column A, we have our
+Northeast region, we have our Midwest
+region,
+
+202
+00:26:56,760 --> 00:27:01,960
+we have our South region, and we have our
+West region at the bottom.
+
+203
+00:27:04,600 --> 00:27:10,200
+These are, additionally, these regions are
+broken up into divisions.
+
+204
+00:27:10,760 --> 00:27:16,120
+So you can see, for example, and we've
+highlighted a few states on the screen
+here.
+
+205
+00:27:16,840 --> 00:27:21,880
+So a few key pivotal states, obviously,
+New York and Florida.
+
+206
+00:27:21,880 --> 00:27:29,400
+You can see New York is part of the
+Mid-Atlantic division, which is part of
+the Northeast region.
+
+207
+00:27:30,120 --> 00:27:35,960
+And Florida is part of the South Atlantic
+division, which is part of the South
+region.
+
+208
+00:27:37,160 --> 00:27:42,920
+So if you're really interested in looking
+at what's happening at the state level,
+
+209
+00:27:43,800 --> 00:27:49,160
+there's obviously important information
+that can be gleaned from that from time to
+time.
+
+210
+00:27:49,880 --> 00:27:56,520
+The biggest places that you need to be
+looking at are obviously in the US, New
+York, Florida,
+
+211
+00:27:57,960 --> 00:27:59,800
+Texas and California.
+
+212
+00:28:01,080 --> 00:28:07,720
+When the monthly data comes out, it's not
+only useful from a trading and portfolio
+management perspective
+
+213
+00:28:08,280 --> 00:28:14,680
+to look at the headline number for the
+whole of the United States, but to
+potentially understand
+
+214
+00:28:15,240 --> 00:28:20,040
+where any growth and contraction is coming
+from at a state level.
+
+215
+00:28:21,080 --> 00:28:28,680
+But for the purposes of this video and the
+PTM video series, we're going to be
+looking only at the headline
+
+216
+00:28:28,680 --> 00:28:31,880
+rate of the United States as our main
+gauge.
+
+217
+00:28:33,080 --> 00:28:39,320
+So let's have a look at an example of
+building permits in recent history.
+
+218
+00:28:40,040 --> 00:28:47,640
+What we've got on the screen here is the
+period June 2018 to December 2020,
+
+219
+00:28:48,200 --> 00:28:56,920
+which if you think back to video seven
+with the ISM and other videos, we looked
+at this period,
+
+220
+00:28:57,800 --> 00:29:02,680
+the period August 2018 to August 2019.
+
+221
+00:29:02,680 --> 00:29:09,640
+And if you remember, that was the period
+when the ISM peaked, so in August 2018,
+
+222
+00:29:10,600 --> 00:29:13,080
+and then went into slowdown.
+
+223
+00:29:14,120 --> 00:29:21,320
+If you recall what was going on in the
+money markets during that period from
+August 18 to August 19,
+
+224
+00:29:22,120 --> 00:29:30,040
+the yield curve began flattening, then the
+short end of the curve inverted slightly
+versus the middle.
+
+225
+00:29:30,040 --> 00:29:34,360
+So we had a slight inversion of the yield
+curve there.
+
+226
+00:29:36,120 --> 00:29:40,120
+And that occurs up until spring 2019.
+
+227
+00:29:40,840 --> 00:29:44,680
+And if you recall, the selloff in the S&P
+500
+
+228
+00:29:45,640 --> 00:29:51,000
+happened between October 2018 and January
+2019.
+
+229
+00:29:51,560 --> 00:29:56,120
+And the selloff was approximately 17 or
+18%.
+
+230
+00:29:56,840 --> 00:30:03,320
+And if you recall, when we took a snapshot
+of the tens and twos in August 2019,
+
+231
+00:30:04,120 --> 00:30:10,200
+there was slight inversion, but
+essentially flat, but slight inversion.
+
+232
+00:30:11,160 --> 00:30:15,160
+And the ISM was below 50 for the first
+time.
+
+233
+00:30:16,600 --> 00:30:23,800
+Now, as you probably recall, the Fed saw
+the problem coming and they cut rates in
+July,
+
+234
+00:30:24,600 --> 00:30:32,280
+then in September and October 2019, in
+response to the money markets chaos
+
+235
+00:30:32,920 --> 00:30:36,280
+and the ISM manufacturing slowdown.
+
+236
+00:30:36,760 --> 00:30:44,520
+Now, if we look at permits during this
+period, so August 18 to July 19.
+
+237
+00:30:44,520 --> 00:30:52,760
+So leading into the August 19 ISM and
+yield curve inversion.
+
+238
+00:30:53,880 --> 00:30:59,480
+If we look during that period, August 18
+up until July 19,
+
+239
+00:30:59,480 --> 00:31:04,600
+we can see that building permits
+essentially didn't grow at all.
+
+240
+00:31:06,200 --> 00:31:18,600
+So if you look on the screen, in August
+2018, permits were reported at 1.258
+million by June 2019.
+
+241
+00:31:18,600 --> 00:31:24,760
+And remember, that June number will have
+been reported in the second or third week
+of July.
+
+242
+00:31:26,120 --> 00:31:31,800
+That June number is 1.273 million building
+permits issued.
+
+243
+00:31:31,800 --> 00:31:37,880
+So essentially no growth over that period,
+so essentially flat.
+
+244
+00:31:39,000 --> 00:31:46,680
+But what's interesting is what happens to
+building permits in July 2019 and beyond.
+
+245
+00:31:48,360 --> 00:31:58,520
+So remember, the Fed cut rates in July and
+the July building permits number will have
+been reported in the second or third week
+of August.
+
+246
+00:31:59,560 --> 00:32:10,760
+So what we can see on the screen very
+obviously is that in response to the Fed
+rate cuts, permits taking off almost
+immediately.
+
+247
+00:32:10,760 --> 00:32:18,120
+We get a reading in July 2019, reported in
+the second, third week of August.
+
+248
+00:32:18,120 --> 00:32:25,320
+We get a reading in July 19 of 1.366
+million building permits issued.
+
+249
+00:32:25,320 --> 00:32:31,480
+And then in August, we get 1.471 million
+building permits issued.
+
+250
+00:32:32,200 --> 00:32:49,640
+And we see growth continuing up until
+February 2020, when we see the COVID
+shutdowns start to take effect on the
+housing market and building permits
+issued.
+
+251
+00:32:50,600 --> 00:33:00,360
+And in March 2020, we see building permits
+go down again and then they hit a low in
+April 2020.
+
+252
+00:33:01,240 --> 00:33:13,320
+And then they start to go higher in May,
+struggling around May and June at around
+the same level at 1.2 million, 1.25
+million.
+
+253
+00:33:13,880 --> 00:33:16,680
+And then in July, they start to take off
+again.
+
+254
+00:33:16,680 --> 00:33:26,120
+So July 2020, and then we have a continual
+rise throughout the year of 2020 for the
+rest of the year.
+
+255
+00:33:27,400 --> 00:33:37,880
+Now, obviously, during that time, we had a
+massive intervention from the Federal
+Reserve during that period, during the
+COVID lockdowns.
+
+256
+00:33:37,880 --> 00:33:48,360
+But something else was going on as well,
+there was a consumer or human response,
+which also helped precipitate a boom in
+permits.
+
+257
+00:33:49,240 --> 00:33:59,560
+The lockdowns, so the extended draconian
+COVID lockdowns resulted in a big increase
+in interstate migration.
+
+258
+00:33:59,560 --> 00:34:06,200
+So that's New Yorkers moving to Florida,
+mostly, and Californians moving to Texas.
+
+259
+00:34:06,200 --> 00:34:10,440
+There was a big increase in interstate
+migration.
+
+260
+00:34:10,440 --> 00:34:28,680
+So that combined with record low interest
+rates and big increases in the money
+supply, plus the Fed and government
+stability packages created incremental
+demand for new housing and mortgage
+refinancing.
+
+261
+00:34:28,680 --> 00:34:39,160
+And if you recall as well, the Fed's
+actions definitely steepened the yield
+curve, and the S&P 500 during that time
+rallied very, very hard.
+
+262
+00:34:40,360 --> 00:34:56,040
+But interestingly, if we think about
+looking at periods in time and what was
+actually going on at those moments in
+time, if we think of that period, August
+18 to August 19, that we've looked at in
+previous videos,
+
+263
+00:34:56,600 --> 00:35:08,280
+when we look at building permits, August
+18 to the June report, which was reported
+in July 19, if we think of building
+permits, yes, they didn't go up.
+
+264
+00:35:08,280 --> 00:35:10,120
+Yes, they were flat.
+
+265
+00:35:10,120 --> 00:35:13,800
+But guess what, there was actually no
+collapse.
+
+266
+00:35:13,800 --> 00:35:27,800
+So imagine yourself sitting at that moment
+in time, analysing this building permits
+data and all of the other leading
+indicators, and every week you're getting
+new and more and more information.
+
+267
+00:35:27,800 --> 00:35:33,960
+So in that period, August 18 to June 19,
+there was no collapse in building permits.
+
+268
+00:35:35,320 --> 00:35:48,200
+The S&P 500 sold off between October 18
+and January 19 of around 17-18%, and the
+ISM was in decline from peak.
+
+269
+00:35:49,240 --> 00:35:57,080
+And the ISM manufacturing number did go
+below 50 for the first time in August 19.
+
+270
+00:35:57,080 --> 00:36:06,680
+But if you recall, when we looked at the
+UMCSI, the consumer data, there wasn't a
+collapse in consumer spending.
+
+271
+00:36:06,680 --> 00:36:13,000
+And also in the services sector, there was
+no collapse in the service sector either.
+
+272
+00:36:13,000 --> 00:36:17,400
+So remember, when we looked at the ISM
+non-manufacturing report.
+
+273
+00:36:17,960 --> 00:36:29,560
+So there were signs there, guys, that even
+though the ISM, the manufacturing number,
+was in decline from peak and went below 50
+for the first time in August 19,
+
+274
+00:36:29,560 --> 00:36:36,680
+the US consumer building permits and the
+services sector hadn't collapsed.
+
+275
+00:36:36,680 --> 00:36:39,720
+They were holding up and they were still
+very strong.
+
+276
+00:36:41,400 --> 00:36:50,520
+The Fed took action because of stresses in
+the bond market and because of a
+manufacturing slowdown in the US.
+
+277
+00:36:51,560 --> 00:37:01,640
+Building permits actually held steady
+throughout, similar to the US consumer,
+the UMCSI and the US services sector.
+
+278
+00:37:01,640 --> 00:37:27,080
+So this is a good example, guys, of
+looking at a moment in history and looking
+at a leading indicator and putting it into
+the context during that moment in history
+with what was going on in the economy
+overall and in the context of what was
+happening with other leading indicators.
+
+279
+00:37:27,080 --> 00:37:48,760
+By going back in time and looking at
+trends and turning points in economic
+history in the business cycle and putting
+it into context with what was happening in
+the economy and with other leading
+indicators at the time,
+
+280
+00:37:48,760 --> 00:38:04,040
+what you're actually doing is you're
+becoming a student of business cycle
+history and economic history and what
+you're actually doing is you're honing
+your skills for understanding leading
+indicators and understanding the economy.
+
+281
+00:38:04,040 --> 00:38:30,040
+So in the future, when you actually sit
+down at any one point in time and you look
+at a particular leading indicator and a
+collection of them and you look at the
+context of what is occurring in the world
+and in the economy at the time because
+you've practiced and looked at past
+business cycles and understand business
+cycle history,
+
+282
+00:38:30,040 --> 00:38:42,040
+you're going to understand what is
+happening in the current context at any
+one moment in time a hell of a lot better
+than somebody who has no idea what's going
+on at all.
+
+283
+00:38:42,040 --> 00:38:47,040
+This is obviously where you can get an
+edge in the market.
+
+284
+00:38:47,040 --> 00:39:00,040
+Now, when it comes to building permits and
+the history of the data, we put together
+the all time permits chart here and this
+is available in the downloads area.
+
+285
+00:39:00,040 --> 00:39:12,040
+And you can denote some very obvious
+visual traits of the building permits data
+when looking at the chart.
+
+286
+00:39:12,040 --> 00:39:15,040
+Very obviously, there's peaks and troughs.
+
+287
+00:39:15,040 --> 00:39:20,040
+We've also put a long term average trend
+line on the chart.
+
+288
+00:39:20,040 --> 00:39:29,040
+So visually, you can see the long term
+average trend line is between 1.3 million
+and 1.4 million.
+
+289
+00:39:29,040 --> 00:39:41,040
+You can also see that there's, if we look
+at troughs at the bottom of the chart, you
+can also see that visually there's some
+very obvious levels for troughs in
+building permits data.
+
+290
+00:39:41,040 --> 00:40:00,040
+You can see 1, 2, 3, 4, 5 data points
+before the global financial crisis where
+building permits were essentially between
+7,000 and 800,000 where they troughed in
+previous business cycles.
+
+291
+00:40:00,040 --> 00:40:14,040
+And then in the global financial crisis,
+building permits bottomed in the low
+500,000 and we're bottoming basically
+between 500,000 and 600,000 permits
+issued.
+
+292
+00:40:14,040 --> 00:40:26,040
+When we look at the peaks, we can
+basically see peaks at 2 million permits
+and above throughout the permits data
+history.
+
+293
+00:40:26,040 --> 00:40:42,040
+So for example, if you look at the global
+financial crisis going into it, you can
+see that permits were above the 2 million
+mark for quite a long time.
+
+294
+00:40:42,040 --> 00:40:55,040
+Essentially, permits were above 2 million
+for most of 2004 and all of 2005 and the
+beginning part of 2006.
+
+295
+00:40:55,040 --> 00:41:07,040
+It was in May 2006 when permits actually
+fell below 2 million and then they went
+below 1.9 million in June 2006.
+
+296
+00:41:07,040 --> 00:41:20,040
+So that's pretty amazing because when we
+think about earlier, when we looked at our
+lead times for permits to starts and then
+completions,
+
+297
+00:41:20,040 --> 00:41:27,040
+we denoted that building permits were
+leading 12 to 16 months on completions.
+
+298
+00:41:27,040 --> 00:41:42,040
+And this time period is born out here if
+you look at the channel for the upswing in
+housing permits from the early 90s all the
+way up to 2006.
+
+299
+00:41:42,040 --> 00:41:58,040
+The channel was broken and we were being
+warned about a big slowdown in the housing
+market, a very meaningful slowdown in the
+housing market in the United States in May
+and June 2006.
+
+300
+00:41:58,040 --> 00:42:06,040
+And that time horizon is born out because
+the financial crisis happened or started
+happening 12 months later.
+
+301
+00:42:06,040 --> 00:42:15,040
+And then 16, 18 months later, that's when
+the financial crisis really started to get
+going in the second half of 2007.
+
+302
+00:42:15,040 --> 00:42:28,040
+In more recent history, you can see on the
+right hand side of the chart, permits
+coming out of the financial crisis where
+they troughed in the low 500s.
+
+303
+00:42:28,040 --> 00:42:35,040
+And then permits going up consistently in
+that channel.
+
+304
+00:42:35,040 --> 00:42:55,040
+And apart from a blip up, an aggressive
+blip up in 2015, permits didn't really
+recover back to the long term average
+trend line of between 13, 1.3 million and
+1.4 million.
+
+305
+00:42:55,040 --> 00:43:00,040
+Until 2016, 2017.
+
+306
+00:43:00,040 --> 00:43:15,040
+So it took a long time for the housing
+market to recover to a long term average
+trend in terms of building permits coming
+out of the financial crisis.
+
+307
+00:43:15,040 --> 00:43:44,040
+And looking at very recent history, we can
+obviously see that periods that we were
+looking at in 2018, 2019 and 2020, where
+we have the building permits number above
+long term trend, quite significantly above
+and then coming down in 2020 for the COVID
+collapse and then rallying after the COVID
+reopening.
+
+308
+00:43:44,040 --> 00:44:05,040
+So you can go back in the downloads area
+into the data, not just looking at the
+chart, but also looking at the actual
+columns and rows with all the data in it
+and just have a scroll through, have a
+look at previous lows and peaks.
+
+309
+00:44:05,040 --> 00:44:19,040
+So previous drops and peaks in building
+permits, put them into context, put them
+into context of what was going on at the
+time in the economy and also what was
+happening with other leading indicators.
+
+310
+00:44:19,040 --> 00:44:22,040
+Become a student of the business cycle.
+
+311
+00:44:22,040 --> 00:44:29,040
+Something else that's in the downloads
+area is the building permits month on
+month percentage change.
+
+312
+00:44:29,040 --> 00:44:32,040
+And that's with all data history.
+
+313
+00:44:32,040 --> 00:44:39,040
+If you look at the bottom of the chart,
+you can see the percentage change on the
+right hand side.
+
+314
+00:44:39,040 --> 00:44:50,040
+So on the right hand axis and the changes
+are denoted visually to help visually with
+positives in green and negatives in red.
+
+315
+00:44:50,040 --> 00:45:01,040
+And you can see peaks and troughs in that
+type of performance as well on the month
+on month changes, percentage changes in
+the data.
+
+316
+00:45:01,040 --> 00:45:21,040
+So you can see, for example, when we have
+a monthly change that's at 20% or above,
+that tends to be a monthly move where we
+don't see moves after that following as
+big as that move.
+
+317
+00:45:21,040 --> 00:45:24,040
+So a plus 20% in the positives.
+
+318
+00:45:24,040 --> 00:45:29,040
+And in the negatives, it's the same, but a
+negative 20%.
+
+319
+00:45:29,040 --> 00:45:38,040
+Whenever we get a month that's negative
+20% change in building permits, months
+that follow are not that extreme.
+
+320
+00:45:38,040 --> 00:45:50,040
+We've also, in the downloads area, got
+data and got the charts for building
+permits compared to GDP growth.
+
+321
+00:45:50,040 --> 00:46:03,040
+So here we're looking at a year on year
+percentage change in building permits
+versus year on year percentage change of
+GDP growth.
+
+322
+00:46:03,040 --> 00:46:14,040
+And you can clearly see that when building
+permits is in the positives, we're getting
+GDP growth growing in the same direction
+in the positives.
+
+323
+00:46:14,040 --> 00:46:27,040
+And when building permit changes, year on
+year go negative soon after we see GDP
+growth year on year percentage going in
+the same direction and going negative.
+
+324
+00:46:27,040 --> 00:46:29,040
+But not all the time.
+
+325
+00:46:29,040 --> 00:46:33,040
+So we don't look at this chart and say
+there's a rule book.
+
+326
+00:46:33,040 --> 00:46:42,040
+What we have to do is always use the data
+in conjunction with other leading
+indicators as well.
+
+327
+00:46:42,040 --> 00:46:54,040
+Of course, if we see building permits year
+on year percentage changes going negative,
+we take note of that and we look at it in
+the context of other leading indicators
+and what's happening in the economy.
+
+328
+00:46:54,040 --> 00:47:04,040
+We don't have a rule book which says GDP
+growth will absolutely be negative if
+building permits year on year percentage
+change is negative.
+
+329
+00:47:04,040 --> 00:47:14,040
+And we also don't have a rule book for
+exactly what's going to happen in the
+direction it's going to be and the actual
+magnitude of a move as well.
+
+330
+00:47:14,040 --> 00:47:18,040
+And also, there isn't a rule book for the
+exact time lag.
+
+331
+00:47:18,040 --> 00:47:23,040
+Everything has to be taken into context.
+
+332
+00:47:23,040 --> 00:47:43,040
+What we've also done when we look at
+building permits leading the S&P 500,
+we've also done a useful exercise here of
+looking at the 12 month moving average of
+building permits year on year percentage
+change.
+
+333
+00:47:43,040 --> 00:48:04,040
+So we've taken that same data, the year on
+year percentage change, and we're looking
+at a 12 month moving average of that data
+and comparing it to a 12 month moving
+average of the S&P 500 year on year
+percentage data, putting that on the same
+chart.
+
+334
+00:48:04,040 --> 00:48:31,040
+And visually, you can see from this
+exercise that they both move in the same
+direction, sometimes at the same time and
+sometimes with a time lag where permits is
+leading the S&P 500 direction and
+potential S&P 500 annual year on year
+percentage change.
+
+335
+00:48:31,040 --> 00:49:00,040
+But again, there's no definitive rule book
+here that says if permits are doing
+something like breaking to the upside to
+go into the positive in terms of year on
+year percentage change or breaking to the
+downside of year on year percentage
+change, but we have to do a certain action
+in the S&P 500.
+
+336
+00:49:00,040 --> 00:49:09,040
+So permits, again, permits, again, have to
+be taken into context with everything else
+or other leading indicators.
+
+337
+00:49:09,040 --> 00:49:25,040
+And that overall should give us a very,
+very good idea of the directional bias
+that we would have in our portfolios and
+potentially what to be long and what to be
+short in our portfolios.
+
+338
+00:49:25,040 --> 00:49:34,040
+Now, you'll also find in the downloads
+area in the spreadsheet that we've got the
+data there for housing starts.
+
+339
+00:49:34,040 --> 00:49:40,040
+And we've got the data also for housing
+completions in your own time.
+
+340
+00:49:40,040 --> 00:49:44,040
+You can go through that data, but we've
+got the visuals there as well for you.
+
+341
+00:49:44,040 --> 00:49:52,040
+So you can learn about the data and the
+data history and also how to put these
+charts together.
+
+342
+00:49:52,040 --> 00:49:57,040
+And you can also, obviously, on a monthly
+basis, use these spreadsheets.
+
+343
+00:49:57,040 --> 00:50:01,040
+And when you update your data, update your
+charts.
+
+344
+00:50:01,040 --> 00:50:05,040
+So that will be something you'll be doing
+on a monthly basis.
+
+345
+00:50:05,040 --> 00:50:10,040
+And yes, that's the self-starter
+mentality, guys.
+
+346
+00:50:10,040 --> 00:50:19,040
+This is showing up regularly to get
+consistent returns in your portfolio.
+
+347
+00:50:19,040 --> 00:50:20,040
+Guess what?
+
+348
+00:50:20,040 --> 00:50:25,040
+You're going to have to show up
+consistently and do the work.
+
+349
+00:50:25,040 --> 00:50:33,040
+Now, I mentioned earlier about the global
+financial crisis, 2008, 2009.
+
+350
+00:50:33,040 --> 00:50:39,040
+Let's have a little look at a bit of
+business cycle history.
+
+351
+00:50:39,040 --> 00:50:46,040
+And again, go through this exercise of
+looking at turning points and trends in a
+leading indicator.
+
+352
+00:50:47,040 --> 00:50:52,040
+Let's have a look at building permits and
+what was going on back then.
+
+353
+00:50:53,040 --> 00:51:06,040
+Obviously, if we're going to be analyzing
+building permits and attempting to gauge
+its usefulness as a leading indicator,
+
+354
+00:51:06,040 --> 00:51:15,040
+the most obvious place to look in business
+cycle history would actually be the
+housing crash of 2008, 2009.
+
+355
+00:51:15,040 --> 00:51:20,040
+And you can see on the chart when we look
+at the data for building permits.
+
+356
+00:51:20,040 --> 00:51:36,040
+So in the second column, you can see that
+building permits, the low was 521,000
+seasonally adjusted annualized rate in
+April, 2009.
+
+357
+00:51:36,040 --> 00:51:39,040
+And remember, that will have been reported
+in May.
+
+358
+00:51:39,040 --> 00:51:52,040
+And if we fast forward a bit in time, we
+can see the building permits number
+getting stronger, but it's struggling
+essentially.
+
+359
+00:51:52,040 --> 00:52:04,040
+And then there was a near term high put in
+for the month of March, 2010, which was
+687,000 seasonally adjusted annualized
+rate.
+
+360
+00:52:04,040 --> 00:52:09,040
+And the number then goes lower.
+
+361
+00:52:09,040 --> 00:52:13,040
+And it really struggles for a long time.
+
+362
+00:52:13,040 --> 00:52:20,040
+And that's basically because there were so
+many homes that were on the market.
+
+363
+00:52:20,040 --> 00:52:26,040
+And there was a lot of inventory to get
+through, especially foreclosures.
+
+364
+00:52:26,040 --> 00:52:31,040
+And it took a long time for new homes.
+
+365
+00:52:31,040 --> 00:52:39,040
+So building permits to come back to the
+level it was even in 2010.
+
+366
+00:52:39,040 --> 00:53:00,040
+So the permits number, the breakout was
+actually around February 2012, where we
+had three months in a row of breaking the
+previous April 2010 resistance, which gave
+us confirmation that we had a breakout.
+
+367
+00:53:00,040 --> 00:53:16,040
+And that was almost a full two years after
+the high was put in post the trough in
+April 2010.
+
+368
+00:53:16,040 --> 00:53:21,040
+So the high was put in in April 2010, post
+the trough.
+
+369
+00:53:21,040 --> 00:53:27,040
+So we had the trough March 09, 521,000.
+
+370
+00:53:27,040 --> 00:53:39,040
+We had the March 2010 report, which is
+reported in April 2010, which came out at
+687,000.
+
+371
+00:53:39,040 --> 00:53:46,040
+And then it took a full almost two years
+to get back above that level.
+
+372
+00:53:46,040 --> 00:53:51,040
+Now, putting this into a bit of context of
+what was going on elsewhere.
+
+373
+00:53:51,040 --> 00:54:10,040
+If you recall back to the US consumer
+video, the UMCSI video, where we
+highlighted that the US consumer, after
+the global financial crisis, didn't really
+recover until the first half of 2012.
+
+374
+00:54:10,040 --> 00:54:20,040
+So if you recall, QE2 was terminated June
+29, 2012 by the Fed on the right hand
+side.
+
+375
+00:54:20,040 --> 00:54:25,040
+This was the data screenshot from the
+UMCSI video.
+
+376
+00:54:25,040 --> 00:54:44,040
+And we can see this was when in Jan and
+Feb 2012, where we see the UMCSI breaking
+above 70 and implying GDP growth somewhere
+between 0 and 2% for the year.
+
+377
+00:54:44,040 --> 00:54:45,040
+And guess what?
+
+378
+00:54:45,040 --> 00:54:56,040
+This is exactly the time when building
+permits broke to the upside, as we've seen
+in December, Jan, Feb.
+
+379
+00:54:56,040 --> 00:55:02,040
+So December 2011 and Jan and Feb 2012.
+
+380
+00:55:02,040 --> 00:55:04,040
+So it happened at the same time.
+
+381
+00:55:04,040 --> 00:55:24,040
+And so taken together, you know, when we
+put these things into context, using
+consumer sentiment and permits together,
+it's a powerful combination of leading
+indicators to predict GDP growth and S&P
+500 direction and returns.
+
+382
+00:55:24,040 --> 00:55:31,040
+And coincidentally, yes, at the same time,
+this is when home builder stocks took off.
+
+383
+00:55:31,040 --> 00:55:38,040
+So this is the XHB, which is the home
+builder ETF in the United States.
+
+384
+00:55:38,040 --> 00:55:44,040
+And you can see here on the chart, we've
+gone back to the beginning of 2012.
+
+385
+00:55:44,040 --> 00:55:47,040
+And we've highlighted this area in red.
+
+386
+00:55:47,040 --> 00:55:51,040
+You can see the XHB ETF.
+
+387
+00:55:51,040 --> 00:55:58,040
+That's when it breaks to the upside and
+then goes up aggressively from that level.
+
+388
+00:55:58,040 --> 00:56:14,040
+And you can see from the chart, it goes up
+to the end of 2013, where we get from the
+level 20 in around March 2012.
+
+389
+00:56:14,040 --> 00:56:21,040
+By the end of 2013, we are up on the XHB
+to a level of 33.
+
+390
+00:56:21,040 --> 00:56:32,040
+So that's 13 points change from a level of
+20, which is about two thirds, about 65%.
+
+391
+00:56:32,040 --> 00:56:42,040
+And actually, if you look at the chart,
+you can see it reached around the 33 level
+around May, June 2013.
+
+392
+00:56:42,040 --> 00:56:53,040
+So we're looking at a 65% move in a little
+over of a year, which is obviously a
+pretty big move for the housing sector.
+
+393
+00:56:53,040 --> 00:56:57,040
+And don't forget, you know, this is the
+XHB ETF.
+
+394
+00:56:57,040 --> 00:57:05,040
+There will obviously be plenty of housing
+stocks in there that will have both
+outperformed and gone up a lot more than
+65%.
+
+395
+00:57:05,040 --> 00:57:11,040
+And those that are underperformed and went
+up less than 65%.
+
+396
+00:57:11,040 --> 00:57:26,040
+So again, when we look at a leading
+indicator like building permits, and we
+look at business cycle history, and we
+look at what was going on with other
+leading indicators, we put things into
+context.
+
+397
+00:57:26,040 --> 00:57:31,040
+And we also look at what was going on in
+the market at the time as well.
+
+398
+00:57:31,040 --> 00:57:39,040
+It's a very useful exercise for us to do
+this, for us to understand it, because
+it's going to hone our skills.
+
+399
+00:57:39,040 --> 00:57:59,040
+And we will become much better at making
+more informed decisions in the future
+whenever we're sitting in a moment in time
+and analysing a particular leading
+indicator in the context of the wider
+economy, other leading indicators, and the
+stock market.
+
+400
+00:57:59,040 --> 00:58:11,040
+So let's summarize here, let's summarize
+why building permits are important to us.
+
+401
+00:58:11,040 --> 00:58:23,040
+As traders and portfolio managers, it's
+obviously a very important number, the
+building permits number, to our outlook
+for predicting US GDP growth.
+
+402
+00:58:23,040 --> 00:58:33,040
+So direction of GDP growth, and therefore
+the direction and potential annual returns
+in the S&P 500.
+
+403
+00:58:33,040 --> 00:58:41,040
+They are a leading indicator, building
+permits are leading both housing starts
+and completions.
+
+404
+00:58:42,040 --> 00:58:48,040
+So completions follow housing starts, and
+housing starts follow permits.
+
+405
+00:58:48,040 --> 00:58:56,040
+However, there is a lot more useful
+information that we can glean from the
+building permits number.
+
+406
+00:58:56,040 --> 00:59:07,040
+It doesn't only tell us likely future GDP
+direction, and therefore likely economic
+conditions and direction of the S&P.
+
+407
+00:59:07,040 --> 00:59:15,040
+Permits also tell us whether developers
+are bullish or bearish on the prospects of
+the housing sector.
+
+408
+00:59:15,040 --> 00:59:27,040
+So a combination of developer financing,
+so their demand and forecast for housing,
+but also whether consumers demand housing.
+
+409
+00:59:27,040 --> 00:59:32,040
+So it gives us a good gauge on mortgage
+liquidity.
+
+410
+00:59:32,040 --> 00:59:50,040
+So taken together, all in all, this means
+the building permits number tells us the
+liquidity and health of the US banking and
+credit sector and the potential for a
+change in consumer spending habits.
+
+411
+00:59:50,040 --> 00:59:56,040
+Now something it also does, obviously, the
+Fed is looking at this stuff too.
+
+412
+00:59:56,040 --> 01:00:04,040
+Building permits also tells us what we
+should expect from the Fed in terms of
+likely policy response.
+
+413
+01:00:04,040 --> 01:00:23,040
+So by using monthly building permits in
+conjunction with our money market leading
+indicators and other macro indicators like
+our other surveys, we will have a very
+good understanding of the US economy,
+money flows and potential Fed policy.
+
+414
+01:00:23,040 --> 01:00:37,040
+So like the other surveys we've looked at,
+and our money market leading indicators,
+you have to use this on a monthly basis to
+understand what's going on and to make
+more informed decisions.
+
+415
+01:00:37,040 --> 01:00:41,040
+And yes, guys, we're going to have a quick
+throwback to ITPM principles.
+
+416
+01:00:41,040 --> 01:00:45,040
+You have to have a self starter mentality.
+
+417
+01:00:45,040 --> 01:00:58,040
+Firstly, what you should be doing is using
+the leading indicator data that we've got
+in all the download areas and analyze
+business cycles and their moving parts
+throughout history.
+
+418
+01:00:58,040 --> 01:01:07,040
+Become a student of business cycle
+history, become a student of business
+cycle history, and then you need to show
+up regularly.
+
+419
+01:01:07,040 --> 01:01:09,040
+You need to be consistent.
+
+420
+01:01:09,040 --> 01:01:22,040
+You need to utilize all the leading
+indicators in conjunction with each other
+on a monthly basis to get a picture of the
+economy for your portfolio direction.
+
+421
+01:01:22,040 --> 01:01:27,040
+You need to become proficient at data
+collection and investigation.
+
+422
+01:01:27,040 --> 01:01:37,040
+So learn about money markets and surveys
+and how they work in detail to get an
+appreciation of what the numbers mean.
+
+423
+01:01:37,040 --> 01:01:51,040
+So when you analyze the data at any moment
+in time, when it comes out and it's live
+and it's real and the market is trading,
+you have an edge over those people in the
+market that have no idea.
+
+424
+01:01:51,040 --> 01:01:59,040
+You can then predict the future and get
+positioned for the future when others
+can't.
+
+425
+01:01:59,040 --> 01:02:06,040
+Now, interpretation of the numbers is
+obviously way more important than just
+knowing what the number is.
+
+426
+01:02:06,040 --> 01:02:11,040
+So again, become a student of business
+cycle history.
+
+427
+01:02:11,040 --> 01:02:19,040
+You must always be asking yourself when
+you look at any particular leading
+indicator and the numbers come out and
+it's live.
+
+428
+01:02:19,040 --> 01:02:23,040
+How does it fit into the bigger picture
+context?
+
+429
+01:02:23,040 --> 01:02:39,040
+So not just the number in absolute
+context, but in the context of what's
+going on with other leading indicators and
+the bigger picture of what's going on with
+those leading indicators and the economy
+as a whole at that moment in time.
+
+430
+01:02:39,040 --> 01:02:47,040
+So we looked at building permits as an
+example, not collapsing during 2019.
+
+431
+01:02:47,040 --> 01:02:55,040
+And that was the period where that was
+happening in conjunction with no S&P 500
+bear market.
+
+432
+01:02:55,040 --> 01:03:08,040
+And that may have led us to conclude that
+when the Fed cut rates at a 0-1 S&P versus
+GDP growth quarter had just occurred.
+
+433
+01:03:08,040 --> 01:03:13,040
+So where the S&P went down, so where the
+S&P went down, but GDP growth stayed
+positive.
+
+434
+01:03:13,040 --> 01:03:22,040
+We may have been sitting there in that
+time as a student of business cycle
+history, looking at building permits not
+collapsing during that time.
+
+435
+01:03:22,040 --> 01:03:28,040
+And then no official 20% correction, bear
+market in the S&P 500.
+
+436
+01:03:28,040 --> 01:03:40,040
+And looking at the other leading
+indicators, such as UMCSI, so the consumer
+not collapsing, and also the service
+sector not collapsing.
+
+437
+01:03:40,040 --> 01:03:50,040
+And we may have looked at that and made
+the decision, this is the time to get long
+or to have a long bias in the portfolio.
+
+438
+01:03:50,040 --> 01:04:00,040
+So it's vitally important that you do this
+and analyze business cycle history, what
+was going on at the time, to really
+sharpen yourself.
+
+439
+01:04:00,040 --> 01:04:10,040
+So when in the future you are looking at
+leading indicators when they're coming
+out, you make very well informed
+decisions.
+
+440
+01:04:10,040 --> 01:04:24,040
+The more you know, and the more you
+practice at interpretation, the pieces
+come together and you will make more well
+informed and better decisions on the
+direction of your portfolio.
+
+441
+01:04:24,040 --> 01:04:36,040
+And of course, when you have the
+information, you interpret it well, you're
+going to make decisions with a much higher
+level of confidence.
+
+442
+01:04:36,040 --> 01:04:46,040
+Additionally, a better understanding of
+the macroeconomic backdrop is going to
+allow you to generate better single stock
+trade ideas.
+
+443
+01:04:46,040 --> 01:04:50,040
+So not just the directional bias of your
+portfolio.
+
+444
+01:04:50,040 --> 01:04:59,040
+Of course, knowing the net direction your
+portfolio should be at any one time is
+pretty damn important.
+
+445
+01:04:59,040 --> 01:05:07,040
+But just as important is making sure you
+are long and short, the right stocks, the
+right stuff.
+
+446
+01:05:07,040 --> 01:05:16,040
+If you are net long, for example, but long
+all of the stuff that isn't going up, then
+of course you failed to make money.
+
+447
+01:05:16,040 --> 01:05:21,040
+The information hasn't led to a profit.
+
+448
+01:05:21,040 --> 01:05:24,040
+And that's what we are in this business to
+do.
+
+449
+01:05:24,040 --> 01:05:27,040
+We are here to make money.
+
+450
+01:05:27,040 --> 01:05:32,040
+So we obviously want to turn this
+information into profit.
+
+451
+01:05:32,040 --> 01:05:43,040
+Now, of course, later in the video series,
+we're going to be looking in a lot more
+detail at the process to generate trade
+ideas on a consistent basis.
+
+452
+01:05:43,040 --> 01:05:53,040
+We're going to obviously as well continue
+with our macroeconomic analysis for
+direction for the moment.
+
+453
+01:05:53,040 --> 01:05:55,040
+So don't worry about trade ideas.
+
+454
+01:05:55,040 --> 01:05:57,040
+That's coming up later in the video
+series.
+
+455
+01:05:57,040 --> 01:06:11,040
+In terms of ITPM principles, just a
+reminder of the four ITPM principles,
+self-sustainability, work ethic, free
+information, work smart, not hard.
+
+456
+01:06:11,040 --> 01:06:19,040
+If you stick to the principles
+religiously, you stand a very good chance
+of hitting your objective of getting
+consistent profitability.
+
+457
+01:06:19,040 --> 01:06:27,040
+If you don't, or even worse, do the
+opposite, there's a very high chance
+you're never going to meet this objective.
+
+458
+01:06:27,040 --> 01:06:47,040
+When you show up regularly each month and
+analyze and interpret the macro leading
+indicators, you are adhering to these
+principles and you're going to make better
+trading decisions than the vast majority
+of retail traders on the planet.
+
+459
+01:06:47,040 --> 01:06:51,040
+So don't be scared of doing the work,
+guys.
+
+460
+01:06:51,040 --> 01:06:53,040
+This is just something that has to be
+done.
+
+461
+01:06:53,040 --> 01:06:59,040
+What you're also learning here is
+literally the job of a professional
+trader.
+
+462
+01:06:59,040 --> 01:07:03,040
+This is what we do, okay?
+
+463
+01:07:03,040 --> 01:07:13,040
+We are students of the business cycle and
+we diligently go through macro economic
+indicators on a monthly basis.
+
+464
+01:07:13,040 --> 01:07:22,040
+And we're constantly trying to figure out
+what our buyers should be in our portfolio
+and what we should be long and what we
+should be short.
+
+465
+01:07:22,040 --> 01:07:27,040
+You are learning this job now, and this is
+how it's done on the professional side.
+
+466
+01:07:27,040 --> 01:07:35,040
+And now you can replicate it on the retail
+side in your retail trading infrastructure
+and your trading account.
+
+467
+01:07:35,040 --> 01:07:37,040
+So don't be scared of the work, guys.
+
+468
+01:07:37,040 --> 01:07:38,040
+This is the job.
+
+469
+01:07:38,040 --> 01:07:41,040
+This is what has to be done every month.
+
+470
+01:07:41,040 --> 01:07:45,040
+Okay, so we are done with building permits
+here.
+
+471
+01:07:45,040 --> 01:07:51,040
+Let's go over to the next video where
+we're going to be looking at small
+businesses.
+
+472
+01:07:51,040 --> 01:07:52,040
+Thank you.

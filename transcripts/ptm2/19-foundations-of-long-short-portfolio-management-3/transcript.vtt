@@ -1,0 +1,2705 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:29.980
+Hi guys and welcome to video 19, Portfolio
+Correlation. As I said in the previous
+video, portfolio volatility and
+correlation are heavily linked and so
+there is going to be some overlap between
+what was taught in the previous video and
+this one, but I do think it will be useful
+to kind of reinforce some of the concepts
+to get a more in-depth understanding about
+correlation as a whole.
+
+00:00:30.000 --> 00:00:54.000
+So as you can see in a break of tradition
+here, I'm going to start with a few
+PowerPoint slides in this video which will
+help me introduce the concept of
+correlation to you guys more broadly and
+then we're going to take that knowledge
+from the presentation and move over to a
+spreadsheet model later which is just
+going to kind of build on what we've
+covered in the previous video.
+
+00:00:54.000 --> 00:01:00.000
+With that being said, let me formalise
+some of the questions I'm hoping will be
+answered for you in this video.
+
+00:01:00.000 --> 00:01:06.000
+So we're going to cover what correlation
+is and how it's useful to traders and
+portfolio managers.
+
+00:01:06.000 --> 00:01:12.000
+We're going to look at why correlation is
+important to consider when constructing
+portfolios.
+
+00:01:12.000 --> 00:01:20.000
+How traders and portfolio managers analyse
+and monitor correlations within portfolios
+by utilising tools like Excel.
+
+00:01:20.000 --> 00:01:28.000
+How correlation helps traders and
+portfolio managers make decisions to
+enable better performance.
+
+00:01:28.000 --> 00:01:36.000
+And also what are some of the common
+pitfalls and downsides in correlation
+analysis.
+
+00:01:36.000 --> 00:01:50.000
+Before we get into the weeds of
+correlation analysis and building on the
+portfolio volatility model we looked at in
+the last video, you need to first
+understand what correlation actually is.
+
+00:01:50.000 --> 00:01:58.000
+And correlation is basically just a
+statistical measure that tries to quantify
+the extent to which two variables
+fluctuate together.
+
+00:01:58.000 --> 00:02:06.000
+Or put simply, it tries to identify how
+the two variables are related in a linear
+fashion.
+
+00:02:06.000 --> 00:02:13.000
+There are various measures of correlation,
+but the most common is called the Pearson
+coefficient of correlation.
+
+00:02:13.000 --> 00:02:21.000
+And when I talk about correlation in this
+video or in the course in general, this is
+really the statistical measure that I'm
+referring to.
+
+00:02:21.000 --> 00:02:29.000
+The Pearson coefficient of correlation is
+a pairwise correlation value that measures
+the linear relationship between two
+variables.
+
+00:02:29.000 --> 00:02:31.000
+And I've got the formula up here.
+
+00:02:31.000 --> 00:02:38.000
+And that isn't something you need to worry
+about remembering, but what is useful is
+just to have a general understanding of
+how that formula works.
+
+00:02:38.000 --> 00:02:50.000
+Given that you're going to be calculating
+and using correlation figures in the
+spreadsheets that we're looking at and
+providing to you to help monitor and
+manage your own portfolios.
+
+00:02:50.000 --> 00:03:08.000
+So one of the major misunderstandings of
+correlation is that people think that if
+the two variables that they're looking at
+both have positive changes in their data,
+it means that the relationship or
+correlation between them must also be
+positive.
+
+00:03:08.000 --> 00:03:11.000
+And unfortunately, that's the incorrect
+assumption to make.
+
+00:03:11.000 --> 00:03:24.000
+And in actual fact, what happens is that
+for every observation of both the X and Y
+variables that you're looking at, they're
+converted and normalized to values that
+represent their distances from the mean.
+
+00:03:24.000 --> 00:03:30.000
+Not dissimilar, actually, to the
+methodology that we looked at in the
+previous video with the standard deviation
+calculation.
+
+00:03:30.000 --> 00:03:39.000
+Anyway, those values are then compared to
+each other to compute an average
+relationship over the entire data set.
+
+00:03:39.000 --> 00:03:49.000
+And that number can then be interpreted to
+answer whether the variables are
+positively or negatively related and also
+how strong that relationship is.
+
+00:03:49.000 --> 00:04:03.000
+Speaking of the possible outputs of the
+correlation equation, another thing you
+ought to know is that correlation can take
+any value between 1 and minus 1 or 100%
+and minus 100%.
+
+00:04:03.000 --> 00:04:18.000
+A value of 1 or 100% represents a
+perfectly positive linear relationship
+between two variables and a value of minus
+1, which is the same as minus 100%, is a
+perfectly negative linear relationship.
+
+00:04:18.000 --> 00:04:29.000
+A correlation of 0 suggests that the
+variables that you're looking at are
+perfectly uncorrelated and there is no
+linear relationship between them.
+
+00:04:29.000 --> 00:04:39.000
+However, that doesn't mean that the
+variables are independent from each other
+because they could, of course, still have
+a relationship with each other that isn't
+defined in a linear fashion.
+
+00:04:39.000 --> 00:04:48.000
+So let's have a look at some examples of
+what various levels of correlation look
+like in the form of scatterplot charts.
+
+00:04:48.000 --> 00:04:54.000
+Now, if you don't really understand what
+scatterplot charts are, you don't need to
+worry about that too much at the moment.
+
+00:04:54.000 --> 00:05:00.000
+You'll soon figure it out from the next
+slide and then you can obviously sort of
+rewind back to this slide if needed.
+
+00:05:00.000 --> 00:05:15.000
+Essentially though, all I'm trying to
+point out here at this stage is that if
+there is an upward sloping relationship,
+so from bottom left to top right, between
+the two variables, then that represents a
+positive correlation.
+
+00:05:15.000 --> 00:05:20.000
+And a downward sloping relationship
+represents a negative correlation.
+
+00:05:20.000 --> 00:05:27.000
+The dispersion of the plots represent the
+strength of the relationship.
+
+00:05:27.000 --> 00:05:35.000
+And you can see in the top row here, the
+more dispersed the data points are, the
+closer to zero the correlation value
+becomes.
+
+00:05:35.000 --> 00:05:43.000
+And the gradient or the slope of the data
+points is actually irrelevant to the
+strength of relationships.
+
+00:05:43.000 --> 00:05:49.000
+The strength of relationships is defined
+by the dispersion, as I said, not the
+gradient of the slope.
+
+00:05:49.000 --> 00:05:55.000
+And you can see that in the bottom line of
+plots as well.
+
+00:05:55.000 --> 00:06:06.000
+Okay, let's look at a real example now
+using real data that everyone's familiar
+with so that you can understand, or at
+least everyone sort of understands.
+
+00:06:06.000 --> 00:06:13.000
+What we're looking at here is a
+scatterplot showing the relationship
+between major league baseball players'
+height and weight.
+
+00:06:13.000 --> 00:06:18.000
+Anecdotally, of course, we would expect
+weight and height to have a positive
+relationship,
+
+00:06:18.000 --> 00:06:21.000
+which means taller people tend to be
+heavier and vice versa.
+
+00:06:21.000 --> 00:06:26.000
+In this chart, height is measured in
+inches for each player.
+
+00:06:26.000 --> 00:06:30.000
+And that's plotted on the x-axis, which is
+the horizontal axis.
+
+00:06:30.000 --> 00:06:33.000
+And weight is measured in pounds for each
+player.
+
+00:06:33.000 --> 00:06:37.000
+And that's plotted on the y-axis, which is
+the vertical axis.
+
+00:06:37.000 --> 00:06:42.000
+Each dot on the chart is a data point that
+has a value for both height and weight.
+
+00:06:42.000 --> 00:06:49.000
+And of course, those dots represent the
+major league baseball players from this
+sample of data.
+
+00:06:49.000 --> 00:06:52.000
+So what can we analyze from this chart?
+
+00:06:52.000 --> 00:07:02.000
+Well, first off, we can see the heaviest
+player weighs in around 290 pounds and the
+lightest players weigh around 150 pounds.
+
+00:07:02.000 --> 00:07:08.000
+The tallest player measures 83 inches,
+whilst the shortest players are around 67
+inches.
+
+00:07:08.000 --> 00:07:14.000
+And you can see that a line of best fit
+has been drawn through all of these data
+points.
+
+00:07:14.000 --> 00:07:20.000
+And formally, this line is calculated by
+minimizing the distances between all of
+the data points in the chart.
+
+00:07:20.000 --> 00:07:27.000
+But you can just think of this really as
+the sort of average relationship between
+the variables height and weight.
+
+00:07:27.000 --> 00:07:32.000
+The majority of the data points that we
+can see are clustered in the middle of the
+chart,
+
+00:07:32.000 --> 00:07:39.000
+which makes perfect sense because most
+people obviously have a fairly average
+height and weight by definition.
+
+00:07:39.000 --> 00:07:45.000
+And if you know anything about normal
+distributions, then that's going to make
+perfect sense to you.
+
+00:07:45.000 --> 00:07:52.000
+So anyway, when you calculate the
+correlation for this data, it comes out as
+0.53,
+
+00:07:52.000 --> 00:07:55.000
+which is quite a strong positive linear
+relationship.
+
+00:07:55.000 --> 00:07:58.000
+And you can see that reflected in the
+chart here.
+
+00:07:58.000 --> 00:08:04.000
+As players height sort of deviates from
+the mean, so does their weight in the same
+direction typically.
+
+00:08:04.000 --> 00:08:10.000
+So we have this upward sloping
+relationship with not too much dispersion,
+
+00:08:10.000 --> 00:08:15.000
+hence quite a strong correlation value of
+0.53.
+
+00:08:15.000 --> 00:08:19.000
+So now you have an understanding of what
+correlation is.
+
+00:08:19.000 --> 00:08:25.000
+Here's a few ways that correlation
+analysis can be useful to traders and
+portfolio managers in general.
+
+00:08:25.000 --> 00:08:28.000
+The first one is intermarket analysis.
+
+00:08:28.000 --> 00:08:33.000
+OK, that's monitoring market and economic
+relationships to sort of understand the
+current picture
+
+00:08:33.000 --> 00:08:39.000
+and where we might be headed as well as
+where opportunities potentially exist.
+
+00:08:39.000 --> 00:08:45.000
+That's a little bit like the sort of stuff
+that we cover in the macro sections of
+this video series.
+
+00:08:45.000 --> 00:08:48.000
+It's also useful for hedging.
+
+00:08:48.000 --> 00:08:58.000
+OK, calculating relationships between
+assets can be sort of helpful to reduce or
+hedge exposure in various ways.
+
+00:08:58.000 --> 00:09:04.000
+So it basically allows traders to target
+more specific features in their returns
+profile.
+
+00:09:04.000 --> 00:09:12.000
+In the next video, I'm going to talk to
+you about beta, which is actually sort of
+an extension really of correlation
+
+00:09:12.000 --> 00:09:17.000
+and a measure which is used a lot by
+professional traders to hedge exposure in
+their portfolios.
+
+00:09:17.000 --> 00:09:27.000
+The third and final useful sort of way to
+use correlation is through diversification
+and risk in the portfolio.
+
+00:09:27.000 --> 00:09:30.000
+And really, that's the most important use
+of correlation analysis.
+
+00:09:30.000 --> 00:09:34.000
+And that's our focus as traders and
+portfolio managers.
+
+00:09:34.000 --> 00:09:40.000
+And I've talked about this in the previous
+video and we're going to carry on with
+that here.
+
+00:09:40.000 --> 00:09:47.000
+Now, you guys have seen this chart already
+and I talked through the principles behind
+it in the previous video.
+
+00:09:47.000 --> 00:09:52.000
+It is important though, so I'm going to go
+through things briefly again here.
+
+00:09:52.000 --> 00:09:59.000
+This chart really sums up why correlation
+between positions in your portfolio is so
+important to consider.
+
+00:09:59.000 --> 00:10:08.000
+It basically shows us the benefits of
+diversification or really what I like to
+call efficient diversification.
+
+00:10:08.000 --> 00:10:15.000
+For those of you that don't know what
+diversification really means, it's
+basically the process of pulling assets
+together
+
+00:10:15.000 --> 00:10:23.000
+that have diverse drivers or factors that
+affect their values so that the risk of
+the whole portfolio is reduced.
+
+00:10:23.000 --> 00:10:32.000
+And as a reminder, in this chart, what
+we're looking at are various portfolios
+where each colored line represents a
+different portfolio.
+
+00:10:32.000 --> 00:10:38.000
+And in each of these portfolios, the
+constituent assets are assumed to have
+equal capital weightings,
+
+00:10:38.000 --> 00:10:45.000
+equal volatility values and equal pairwise
+correlations to all of the other positions
+in the portfolio.
+
+00:10:45.000 --> 00:10:55.000
+Obviously, in reality, these assumptions
+are far fetched, but they allow us to
+understand the theory of portfolio
+diversification much more easily.
+
+00:10:55.000 --> 00:11:04.000
+What I'm really trying to show in this
+chart is that there are two core factors
+that affect an equally weighted
+portfolio's volatility, as you know.
+
+00:11:04.000 --> 00:11:10.000
+The volatility of the assets in the
+portfolio and the correlations between
+those assets.
+
+00:11:10.000 --> 00:11:17.000
+Now, knowing that, the next question we
+should have is, well, how much do each of
+these factors have an effect?
+
+00:11:17.000 --> 00:11:21.000
+And the answer is that it depends on the
+size of the portfolio.
+
+00:11:21.000 --> 00:11:29.000
+What we can see in this chart is that as
+assets are added to the portfolios, as
+long as the correlation of those positions
+is less than one,
+
+00:11:29.000 --> 00:11:34.000
+one, the risk or volatility of the
+portfolio falls quite significantly.
+
+00:11:34.000 --> 00:11:42.000
+The lower the correlation, the more
+efficient the diversification process
+becomes and the faster the risk decreases.
+
+00:11:42.000 --> 00:11:50.000
+So, for example, the blue and orange
+portfolios you can see both have exactly
+the same asset volatility assumptions.
+
+00:11:50.000 --> 00:11:59.000
+And so, when there's only one asset in the
+portfolio, the volatility of the portfolio
+is the same, 35% on an annualized basis.
+
+00:11:59.000 --> 00:12:07.000
+However, as assets are added to those
+portfolios, the volatility of the orange
+portfolio reduces at a much faster rate
+
+00:12:07.000 --> 00:12:18.000
+because the correlation values assumed
+between the constituents in that portfolio
+are set to 0.2 as opposed to 0.45 in the
+blue portfolio.
+
+00:12:18.000 --> 00:12:23.000
+Now, let's consider that question that I
+mentioned previously again.
+
+00:12:23.000 --> 00:12:36.000
+When portfolios contain just a very small
+number of assets, for example, one or two,
+then the volatilities of the individual
+assets are quite important to overall
+portfolio volatility.
+
+00:12:36.000 --> 00:12:43.000
+However, in any reasonably sized
+portfolio, it's the correlation values
+that matter much, much more.
+
+00:12:43.000 --> 00:12:52.000
+And we did see this in the previous video
+when I was looking at the variance
+covariance matrix and kind of running
+through examples there.
+
+00:12:52.000 --> 00:12:55.000
+But you can also see it in this chart
+here.
+
+00:12:55.000 --> 00:13:07.000
+So, on that point, you might be asking
+next whether it's a good idea to
+continually add positions that have
+relatively low correlations to the
+portfolio to keep reducing risk further
+and further.
+
+00:13:07.000 --> 00:13:13.000
+And as I've also said previously, the
+simple answer to that is a resounding no.
+
+00:13:13.000 --> 00:13:15.000
+And that is for two main reasons.
+
+00:13:15.000 --> 00:13:28.000
+One of the primary measures of good
+trading is achieving what's called good
+risk adjusted returns, meaning your
+portfolio generates good returns for
+relatively little risk over time.
+
+00:13:28.000 --> 00:13:31.000
+And that can be measured in a few ways.
+
+00:13:31.000 --> 00:13:39.000
+We've already touched on the Sharpe ratio,
+and we're going to look at that amongst
+some other performance metrics as well
+later in the series.
+
+00:13:39.000 --> 00:13:50.000
+If you take a look at the chart here,
+you'll see that there comes a point for
+every portfolio where adding new positions
+doesn't really affect the overall
+portfolio volatility.
+
+00:13:50.000 --> 00:13:57.000
+The lower the correlations are of the new
+positions, the more risk is reduced.
+
+00:13:57.000 --> 00:14:03.000
+But that being said, the marginal
+reduction in risk always diminishes with
+every new position.
+
+00:14:03.000 --> 00:14:17.000
+And there comes a point usually between
+sort of eight to 12 positions, sometimes a
+bit more, where there becomes very little
+benefit in terms of reduced portfolio
+volatility.
+
+00:14:17.000 --> 00:14:25.000
+Bearing that in mind, let's think about
+the return side of our risk adjusted
+returns metrics.
+
+00:14:25.000 --> 00:14:33.000
+When building a portfolio, it's not
+unreasonable to think that the number of
+high quality trade ideas anyone can come
+up with is finite.
+
+00:14:33.000 --> 00:14:40.000
+High quality, high conviction ideas are
+the positions that generate the most
+returns in your portfolios.
+
+00:14:40.000 --> 00:14:48.000
+And when you add more and more positions
+to the portfolio, it's likely that the
+quality of those ideas will diminish.
+
+00:14:48.000 --> 00:15:00.000
+So not only does adding more and more
+positions to the portfolio for the sake of
+diversification have diminishing benefits
+in terms of risk reduction, it also
+reduces your expected returns.
+
+00:15:00.000 --> 00:15:08.000
+This process is what's known as over
+diversification and it can dramatically
+decrease your portfolio performance.
+
+00:15:08.000 --> 00:15:19.000
+Typically, depending on the amount of
+capital you have to trade, you're likely
+going to be looking at having around eight
+to 12 positions on any one time in the
+portfolio.
+
+00:15:19.000 --> 00:15:31.000
+As I said in the previous video, that
+might increase a little bit depending on
+the sort of total capital you have
+available and obviously the sort of market
+situation and so on.
+
+00:15:31.000 --> 00:15:40.000
+To summarize this slide, we can see how
+important efficient diversification and
+correlation is in our portfolios.
+
+00:15:40.000 --> 00:15:44.000
+However, we do need to be cognizant of
+taking things too far.
+
+00:15:44.000 --> 00:15:54.000
+Always make sure that in your sort of
+prospective portfolios, positions are
+driven primarily by fundamental factors.
+
+00:15:54.000 --> 00:15:59.000
+And only then should you think about
+correlation and portfolio construction.
+
+00:15:59.000 --> 00:16:02.000
+And we'll talk more on that shortly.
+
+00:16:02.000 --> 00:16:10.000
+Okay, before going on to some practical
+spreadsheet stuff, I want to go through a
+few pitfalls of correlation analysis.
+
+00:16:10.000 --> 00:16:23.000
+And this isn't to put you off by any
+means, but it is there to give you a
+deeper understanding of how correlation
+works and what you might need to consider
+or look out for if you're using
+correlation values in your own analysis or
+portfolio.
+
+00:16:23.000 --> 00:16:34.000
+The first one we've already covered, over
+diversification can lead to lower returns,
+both in sort of absolute and risk adjusted
+terms.
+
+00:16:34.000 --> 00:16:40.000
+The second point I want to make is that
+correlation is not the same as causation.
+
+00:16:40.000 --> 00:16:52.000
+What I mean by that is just because there
+might be a linear relationship between two
+variables, however strong, it doesn't mean
+that there is a cause and effect
+relationship between them.
+
+00:16:52.000 --> 00:16:58.000
+A change in one might not cause a change
+in the other.
+
+00:16:58.000 --> 00:17:09.000
+If there isn't a cause and effect
+relationship, then without understanding
+the cause factor for a correlation, then
+there is going to be uncertainty that the
+correlation will stay constant.
+
+00:17:09.000 --> 00:17:21.000
+If we think about the previous video and
+our own portfolios, that obviously has
+implications for using assumptions of
+covariance or correlations in our model.
+
+00:17:21.000 --> 00:17:37.000
+We have to appreciate that these variables
+are all subject to change, so that doesn't
+make them redundant, it just means we're
+trying to work with the data that we have
+available, but we need to be aware that
+that data isn't perfect.
+
+00:17:37.000 --> 00:17:50.000
+Ideally, when it comes to building
+portfolios, it would be optimal to build
+them with positions that have very
+different fundamental drivers so that we
+can try and assure that correlations
+remain low going forward.
+
+00:17:50.000 --> 00:18:00.000
+However, it's impossible to know all of
+the factors that affect assets, and if you
+thought you could get close, then they
+would probably change over time anyway.
+
+00:18:00.000 --> 00:18:07.000
+A classic example of how correlations can
+change over time is seen in the
+relationship between US stocks and bonds.
+
+00:18:07.000 --> 00:18:24.000
+This chart here shows the rolling
+five-year correlation between 10-year
+treasury prices and the S&P 500, which you
+can see pre-1998 was quite strongly
+positive, but in the next five years
+turned negative and has stayed that way
+ever since.
+
+00:18:24.000 --> 00:18:30.000
+I'm not going to go into details as to why
+I think that's happened, because it's
+besides the point.
+
+00:18:30.000 --> 00:18:39.000
+But what's noteworthy is that it has
+happened, and it's a great example of how
+correlations can break down or even
+invert.
+
+00:18:39.000 --> 00:18:46.000
+Next one, this might sound silly to you
+guys, but correlation really is just a
+number.
+
+00:18:46.000 --> 00:18:54.000
+It captures the linear relationship
+between two variables in a very specific
+way and based on the data in the sample
+that it's calculated from.
+
+00:18:54.000 --> 00:19:07.000
+It's very easy to misinterpret, and if you
+really want to understand the relationship
+between data, then you're going to have to
+do more than just look at some descriptive
+statistics and correlations.
+
+00:19:07.000 --> 00:19:13.000
+And Anscombe's Quartet is a classic
+example of this.
+
+00:19:13.000 --> 00:19:21.000
+So Anscombe's Quartet consists of four
+different data sets, all with the same
+core descriptive characteristics.
+
+00:19:21.000 --> 00:19:33.000
+They have the same average, variance,
+correlations, regression equations, and so
+on, which might make you think that these
+data sets are clearly very, very similar.
+
+00:19:33.000 --> 00:19:36.000
+However, in this case, you'd be wrong in
+that assumption.
+
+00:19:36.000 --> 00:19:40.000
+And you can see here the differences in
+the data sets are massive.
+
+00:19:40.000 --> 00:19:48.000
+The point here is that correlation, like
+any other statistic, is just a number, and
+you need to understand when it's useful
+and when it isn't.
+
+00:19:48.000 --> 00:19:55.000
+And often to do that, you'll have to use
+other investigative methods to really
+understand the data itself.
+
+00:19:55.000 --> 00:19:58.000
+I mentioned that here really for two
+reasons.
+
+00:19:58.000 --> 00:20:04.000
+Firstly, to warn you of the limitations of
+certain statistics when taken in and of
+themselves.
+
+00:20:04.000 --> 00:20:16.000
+And secondly, to encourage you to go a
+little bit further in your own work and
+analysis, because that's going to give you
+more confidence in the outcomes that you
+then reach.
+
+00:20:16.000 --> 00:20:31.000
+Another very common mistake, and one I
+mentioned earlier in the video, is
+assuming that if two data sets are
+trending in the same direction, then their
+correlation must be positive and vice
+versa.
+
+00:20:31.000 --> 00:20:43.000
+If you remember back to the equation, it's
+calculated based on the relative
+difference in each observation from the
+mean of the data set for each variable.
+
+00:20:43.000 --> 00:20:47.000
+But the means of each data set themselves
+could be very different.
+
+00:20:47.000 --> 00:20:57.000
+So for example, if the mean return of
+asset X is minus 1% and the mean return of
+asset Y is plus 1% over all observations.
+
+00:20:57.000 --> 00:21:13.000
+But for every sort of individual
+observation, when asset X returns above
+the mean above minus 1% and asset Y
+returns above its mean above 1%, then
+there will be a very strong positive
+correlation.
+
+00:21:13.000 --> 00:21:19.000
+This concept is probably more easily
+illustrated through an example.
+
+00:21:19.000 --> 00:21:31.000
+And here I've got a chart showing the
+price of a real estate ETF, IYR is the
+ticker, versus an inverse real estate ETF,
+REK, over the year 2020.
+
+00:21:31.000 --> 00:21:39.000
+And as you would sort of predict, the
+correlation of these instruments is almost
+perfectly negative, it's minus 0.99.
+
+00:21:39.000 --> 00:21:47.000
+However, if you take the trend in price of
+both of those funds over that year, they
+actually both go down.
+
+00:21:47.000 --> 00:22:01.000
+Meaning, if you bought both at the start
+of the year 2020, expecting a perfect
+hedge, you would have actually lost money
+on both sides of the trade, despite a near
+perfect negative correlation.
+
+00:22:01.000 --> 00:22:11.000
+The lesson here is, remember that
+correlation works by comparing data points
+to the means of the sort of X and Y
+variables.
+
+00:22:11.000 --> 00:22:21.000
+So the means of the variables themselves
+can be very different and still yield
+perfect correlations.
+
+00:22:21.000 --> 00:22:28.000
+The final pitfall that I want to talk
+about, which I mentioned briefly earlier
+as well, is common to many statistics.
+
+00:22:28.000 --> 00:22:36.000
+And that is that the calculation itself,
+the correlation is dependent obviously on
+the data set that's used.
+
+00:22:36.000 --> 00:22:42.000
+And can of course vary for the same two
+variables by looking at different samples.
+
+00:22:42.000 --> 00:22:47.000
+So for example, using different sort of
+time periods or frequencies of data.
+
+00:22:47.000 --> 00:22:52.000
+We've seen what happens to the correlation
+of bonds and stocks already.
+
+00:22:52.000 --> 00:23:01.000
+But another very important situation to
+look at is what happens in crises when
+liquidity dries up in the market, for
+example.
+
+00:23:01.000 --> 00:23:14.000
+In this table below, I've calculated
+correlations between the S&P 500 and
+various other assets by first filtering
+the days on which the VIX is at various
+levels to act as a proxy for liquidity
+levels.
+
+00:23:14.000 --> 00:23:23.000
+And you can see that as the VIX increases,
+correlations across assets, particularly
+in equities, tends to one.
+
+00:23:23.000 --> 00:23:28.000
+And this is actually a double whammy
+effect on your portfolio volatility.
+
+00:23:28.000 --> 00:23:37.000
+Not only do individual asset volatilities
+increase, but also correlations magnify
+this effect at the portfolio level.
+
+00:23:37.000 --> 00:23:45.000
+Okay, guys, now we've gone through some
+correlation theory and understand some
+pitfalls of correlation values themselves.
+
+00:23:45.000 --> 00:23:49.000
+We're well prepared to plow on and look at
+how it can actually be useful to us.
+
+00:23:49.000 --> 00:23:55.000
+And really, this is just going to build on
+the spreadsheet stuff that we looked at in
+the previous video.
+
+00:23:55.000 --> 00:24:02.000
+So this spreadsheet is almost exactly the
+same as the one that we looked at
+previously with just a few extra bits
+added on.
+
+00:24:02.000 --> 00:24:11.000
+The main functionality that we're going to
+look at is at the portfolio level in the
+portfolio volatility practice sheet again.
+
+00:24:11.000 --> 00:24:19.000
+And I've made a small addition to the
+model here for you guys this time, which
+incorporates a portfolio correlation table
+at the bottom of the sheet.
+
+00:24:19.000 --> 00:24:30.000
+I'm going to talk about how you can use
+that as sort of you're going through the
+process of building your own portfolios or
+testing different scenarios.
+
+00:24:30.000 --> 00:24:37.000
+And we'll go back and take a look at some
+of the examples that we looked at in the
+previous video as well to get to grips
+with it all.
+
+00:24:37.000 --> 00:24:50.000
+Other than that, the only major difference
+in this sheet is that I'm going to use
+this correlation function sheet to show
+you how to calculate correlation values
+yourselves for any variables that you can
+get data for,
+
+00:24:50.000 --> 00:24:58.000
+which may help you with your own analysis,
+given some of the ideas and things that
+we've been talking about in this video and
+the last one.
+
+00:24:58.000 --> 00:25:03.000
+It's just really a sort of really useful
+tool to develop your understanding.
+
+00:25:03.000 --> 00:25:08.000
+And we're going to go through a worked
+example with a couple of stocks.
+
+00:25:08.000 --> 00:25:15.000
+There is one more new sheet, which you'll
+see here, which is the variance covariance
+matrix sheet.
+
+00:25:15.000 --> 00:25:22.000
+That's just a massive covariance matrix,
+which I've built using all of the stocks
+that I've listed on the summary page.
+
+00:25:22.000 --> 00:25:28.000
+And I just want to make a quick reference
+to that at some stage in the video to
+illustrate a point.
+
+00:25:29.000 --> 00:25:30.000
+We'll get to that.
+
+00:25:30.000 --> 00:25:39.000
+But first of all, I want to begin with
+showing you guys how to calculate
+correlation in Excel in this correlation
+function sheet.
+
+00:25:39.000 --> 00:25:43.000
+Now, as you can see here, I've got some
+weekly price data for WMS.
+
+00:25:43.000 --> 00:25:48.000
+That ticker is advanced drainage systems
+and OGS.
+
+00:25:48.000 --> 00:25:49.000
+That's one gas.
+
+00:25:49.000 --> 00:25:54.000
+This is exactly the same data that we have
+in the asset prices sheet for these two
+stocks.
+
+00:25:54.000 --> 00:25:58.000
+And it goes back as far as mid 2015
+historically.
+
+00:25:58.000 --> 00:26:06.000
+And what we're going to do here is
+calculate the correlation between these
+two stocks using three different samples
+of data.
+
+00:26:06.000 --> 00:26:12.000
+Firstly, I'm going to compute the
+correlation based on the entire six years
+of price data that we have available here.
+
+00:26:12.000 --> 00:26:20.000
+And then I'm going to calculate both the
+one and two year rolling correlations and
+plot them in a chart so that you can see
+the difference.
+
+00:26:20.000 --> 00:26:22.000
+It's all pretty simple stuff, really.
+
+00:26:22.000 --> 00:26:24.000
+And it involves a very similar
+methodology.
+
+00:26:24.000 --> 00:26:31.000
+And once we've kind of been through it,
+hopefully you guys will be comfortable
+doing this sort of correlation analysis
+and calculations yourselves.
+
+00:26:31.000 --> 00:26:37.000
+So when we calculate correlations, we base
+it on returns rather than prices.
+
+00:26:37.000 --> 00:26:42.000
+And so to begin with, we need to calculate
+all the weekly returns given our price
+data.
+
+00:26:42.000 --> 00:26:46.000
+And then we can move on to the correlation
+function itself.
+
+00:26:46.000 --> 00:26:50.000
+Now, as you guys know by now, calculating
+returns is pretty easy.
+
+00:26:50.000 --> 00:26:53.000
+And I'm just going to do that in columns D
+and E quickly.
+
+00:26:53.000 --> 00:27:00.000
+So we just take the current price divided
+by the previous price minus one.
+
+00:27:00.000 --> 00:27:01.000
+That's our formula.
+
+00:27:01.000 --> 00:27:08.000
+And then we copy down that formula for
+each stock in order to generate our series
+of returns.
+
+00:27:08.000 --> 00:27:19.000
+As always, when we do that, we'll be left
+with errors at the beginning of the data
+series since returns on a given date
+require prices from the previous period.
+
+00:27:19.000 --> 00:27:24.000
+And at the start of the series, there's no
+previous periods to look up prices for.
+
+00:27:24.000 --> 00:27:32.000
+So we just delete the contents of those
+cells and our return series becomes one
+period shorter than our price series.
+
+00:27:32.000 --> 00:27:38.000
+So with returns computed, we can now look
+at calculating correlation.
+
+00:27:38.000 --> 00:27:44.000
+The function that we're going to use here
+to calculate correlation in Excel is just
+called CORAL.
+
+00:27:44.000 --> 00:27:46.000
+So that's equals CORAL.
+
+00:27:46.000 --> 00:27:53.000
+And if I type that in cell H1, you'll see
+that within the function, there are two
+parameters to assign.
+
+00:27:53.000 --> 00:27:55.000
+So equals CORAL open brackets.
+
+00:27:55.000 --> 00:28:00.000
+And we can see that there's two parameters
+to assign basically array one and array
+two.
+
+00:28:00.000 --> 00:28:05.000
+And these are just your references to your
+X and Y variable data sets.
+
+00:28:05.000 --> 00:28:11.000
+So that's just going to be the returns for
+WMS and OGS in this example.
+
+00:28:11.000 --> 00:28:14.000
+It doesn't matter which data series you
+enter first.
+
+00:28:14.000 --> 00:28:20.000
+But here what I'm going to do is just
+select all of our WMS returns data as the
+first parameter.
+
+00:28:20.000 --> 00:28:27.000
+And then enter a comma to move on to array
+two and select all of the OGS returns
+data.
+
+00:28:27.000 --> 00:28:37.000
+We're selecting all of the data available
+at this point because we want to calculate
+the historic correlation over the entire
+data set in this first example.
+
+00:28:37.000 --> 00:28:50.000
+One thing to note here when using the
+correlation function function in Excel is
+that you must always use data series that
+are aligned and have the same number of
+data points.
+
+00:28:50.000 --> 00:28:52.000
+Otherwise, it's not going to work.
+
+00:28:52.000 --> 00:28:59.000
+So the arrays, the reference arrays for
+both sort of parameters, both variables
+need to be exactly the same length.
+
+00:28:59.000 --> 00:29:02.000
+And if they're not the same length, it
+won't work.
+
+00:29:02.000 --> 00:29:14.000
+And then obviously for your own benefit,
+you want to make sure that all of the
+prices or whatever data that you're
+looking at matches in each row as well for
+the dates that you're considering.
+
+00:29:14.000 --> 00:29:21.000
+So with that data entered, you can see the
+correlation measures roughly 0.27 over the
+whole data set.
+
+00:29:21.000 --> 00:29:35.000
+Let's have a look now at rolling
+correlations where we're going to use
+firstly a rolling one year window to
+compute correlations over using the same
+data series that we've just referenced
+previously as well.
+
+00:29:35.000 --> 00:29:42.000
+So in column F, I'm going to head the
+column one year role coral.
+
+00:29:42.000 --> 00:29:48.000
+And in cell F2, we're going to use the
+same correlation function equals coral.
+
+00:29:48.000 --> 00:29:57.000
+But this time when selecting the two
+return series, I'm going to make sure that
+the arrays only account for the last year
+of data.
+
+00:29:57.000 --> 00:30:11.000
+So in this example, that means putting in
+equals coral open brackets and we're going
+to select from cells D2 to D54 for the
+first array and cells E2 to E54 for the
+second array.
+
+00:30:11.000 --> 00:30:21.000
+The reason why we're going to row 54 is
+because that then accounts for 52 weeks of
+data and that is equivalent to one year.
+
+00:30:21.000 --> 00:30:33.000
+So over the latest year of data, you can
+see, and I say latest year of data because
+we're looking firstly in the top row at
+the most recent data that we have
+available.
+
+00:30:33.000 --> 00:30:42.000
+So over the latest year of data, you can
+see the correlation has measured much less
+than our sort of overall correlation for
+the entire data set.
+
+00:30:42.000 --> 00:30:53.000
+So the reading is 0.04 and that shows
+already how much correlation can change
+between two variables if we if we didn't
+already kind of anticipate that that could
+happen.
+
+00:30:53.000 --> 00:30:59.000
+Let's take this a step further, though,
+and create a time series of one year
+rolling correlations.
+
+00:30:59.000 --> 00:31:06.000
+All we need to do to do that is just copy
+that correlation formula down to the end
+of the series.
+
+00:31:06.000 --> 00:31:18.000
+And because the cell references we used in
+the arrays were dynamic, so not fixed,
+they effectively calculate our rolling one
+year correlation for the entire data set.
+
+00:31:18.000 --> 00:31:24.000
+Now, if we scroll down to the bottom of
+the data set, there is something that we
+need to address and be careful of.
+
+00:31:24.000 --> 00:31:29.000
+Firstly, you can see that there's a few
+div zero errors at the end of the series.
+
+00:31:29.000 --> 00:31:39.000
+And above these errors, there are some
+correlation values, but those values are
+only being calculated with much less data
+than a year's data.
+
+00:31:39.000 --> 00:31:53.000
+So, for example, if we double click into
+cell F300, you'll see that it's
+referencing a lot of blank cells because
+there isn't a year of data available
+before the 24th of September 2015 in this
+data set.
+
+00:31:53.000 --> 00:32:03.000
+So you have an option here. You can either
+leave values like this in and just
+understand that they're not using a full
+year of data to calculate.
+
+00:32:03.000 --> 00:32:12.000
+Or we can just delete all the correlation
+cells that don't use a full one year
+window that we're kind of looking for.
+
+00:32:12.000 --> 00:32:19.000
+Now, I'm going to do the latter here. And
+by the way, it goes without saying that
+you should also delete the div zero cells
+no matter what.
+
+00:32:19.000 --> 00:32:26.000
+So all I'm going to do here is look at the
+row with the earliest returns values in,
+which is row 309 in this case.
+
+00:32:26.000 --> 00:32:31.000
+And then minus 52 from that number because
+there's 52 weeks in a year.
+
+00:32:31.000 --> 00:32:41.000
+That gives us row 257. And so we know that
+this is the last correlation calculation
+cell that we want in this column.
+
+00:32:41.000 --> 00:32:51.000
+And you can double click on that cell to
+make sure that it's the final reference
+row in it is row 309.
+
+00:32:51.000 --> 00:33:00.000
+After establishing that, all we do is
+select all of the calculation cells below
+that one and clear the content by pressing
+delete on the keyboard.
+
+00:33:00.000 --> 00:33:10.000
+So we're going to do one more calculation
+column now where we'll compute a two year
+rolling correlation window rather than the
+one year.
+
+00:33:10.000 --> 00:33:16.000
+And I'm going to plot these then in a line
+chart afterwards quickly to sort of show
+you the difference.
+
+00:33:16.000 --> 00:33:24.000
+OK, so in cell G1, I'll head the column
+two year roll coral and in cell G2.
+
+00:33:24.000 --> 00:33:38.000
+It's exactly the same formula as we've
+been using previously, except the array
+windows are going to be increased to
+incorporate two years of data, which takes
+us this time to row 106.
+
+00:33:38.000 --> 00:33:48.000
+So with the formula entered, all we do is
+copy it down again and then delete all the
+correlation values in this column that
+don't encompass a full two years of
+returns data.
+
+00:33:48.000 --> 00:33:57.000
+In this case, that means deleting the
+contents of all cells from cell G206 and
+below.
+
+00:33:57.000 --> 00:34:09.000
+And note that when we do this, that
+obviously the two year correlation series
+that we've just created is shorter by a
+year than the one year rolling series that
+we created before.
+
+00:34:09.000 --> 00:34:18.000
+OK, before I comment on any of these
+numbers, let's finish up by plotting a
+line chart of the two correlation series
+that we've just created.
+
+00:34:18.000 --> 00:34:22.000
+You guys already know how to do this by
+now, so I'll just zip through this very
+quickly.
+
+00:34:22.000 --> 00:34:31.000
+I'm just going to select a blank cell in
+the sheet somewhere, followed by
+navigating to insert on the ribbon and
+selecting a 2D line chart.
+
+00:34:31.000 --> 00:34:39.000
+Next, I'm going to right click within the
+chart area, go to select data series and
+select the data that we want to plot.
+
+00:34:39.000 --> 00:34:43.000
+In this chart, obviously, we're dealing
+with different length data sets.
+
+00:34:43.000 --> 00:34:53.000
+So I find the easiest way to handle that
+is typically to reference data series and
+dates down to the row of the longest data
+series.
+
+00:34:53.000 --> 00:34:56.000
+In this case, that's going to be the one
+year correlation series.
+
+00:34:56.000 --> 00:34:59.000
+That series ends in row 257.
+
+00:34:59.000 --> 00:35:09.000
+And so when adding each series and their
+respective dates, I'm just going to make
+sure that the reference always finishes at
+row 257.
+
+00:35:09.000 --> 00:35:31.000
+So we have the data in the chart now, and
+I'm just going to tidy it up quickly by
+adding a legend and then moving the date
+axis to the bottom of the chart.
+
+00:35:31.000 --> 00:35:41.000
+And first of all, to add the legend, I'm
+just going to select the chart and go to
+chart design on the ribbon, followed by
+add chart element, then choose legend and
+choose top.
+
+00:35:41.000 --> 00:35:43.000
+So put the legend at the top of the chart.
+
+00:35:43.000 --> 00:35:49.000
+Then to move the date labels, I'm going to
+double click on the date labels
+themselves.
+
+00:35:49.000 --> 00:36:00.000
+And in the panel on the right hand side
+that appears within the axis options tab,
+I'm going to click on labels at the bottom
+and then change the label position to low.
+
+00:36:01.000 --> 00:36:02.000
+All right.
+
+00:36:02.000 --> 00:36:04.000
+So what can we see here?
+
+00:36:04.000 --> 00:36:08.000
+Well, firstly, clearly correlations can
+change quite a bit over time.
+
+00:36:08.000 --> 00:36:18.000
+This is an example where the correlations
+are particularly volatile, I think, but it
+does go to show that when calculating or
+relying on correlation values from the
+past,
+
+00:36:18.000 --> 00:36:23.000
+you do have to accept and understand that
+they're not perfect and they could easily
+change.
+
+00:36:23.000 --> 00:36:31.000
+Secondly, you can see that there's quite
+an obvious difference in the one and two
+year rolling correlations.
+
+00:36:31.000 --> 00:36:41.000
+Basically, the two year correlations are
+less sensitive and less volatile than the
+one year ones, which makes sense because
+more data is being used to calculate them.
+
+00:36:41.000 --> 00:36:46.000
+In a sense, you can look at this in the
+same way that you might look at moving
+averages or anything like that.
+
+00:36:46.000 --> 00:36:57.000
+The smaller the calculation window, the
+more sensitive the series and the quicker
+that you'll pick up any changes in the
+data or in the correlation in this
+instance.
+
+00:36:57.000 --> 00:37:08.000
+But equally, the more unstable it is and
+arguably the less reliable it is in the
+case of correlations because it doesn't
+take advantage of as much data in the
+computation.
+
+00:37:08.000 --> 00:37:13.000
+A similar thing can be said for taking
+snapshots of correlation values.
+
+00:37:13.000 --> 00:37:21.000
+So, you know, the shorter or more and more
+recent window of data you use, the more
+timely it is and you might think that's a
+better indication of correlation in the
+future.
+
+00:37:21.000 --> 00:37:30.000
+Or you may think using larger windows is
+better because there's more data involved
+in the calculation and quite often
+correlations revert to their mean.
+
+00:37:30.000 --> 00:37:37.000
+There is no right answer here in the
+portfolio volatility model that I've
+created in this sheet.
+
+00:37:37.000 --> 00:37:43.000
+I've used all time covariances and
+correlations and variances as estimates.
+
+00:37:43.000 --> 00:37:51.000
+But you may find when you do more targeted
+correlation analysis using the coral
+function here that you prefer shorter
+windows.
+
+00:37:51.000 --> 00:37:58.000
+What I would say is that I don't think
+it's sensible really to use anything less
+than a year of data.
+
+00:37:58.000 --> 00:38:04.000
+But really the data window you use for
+calculating any statistics is up to you.
+
+00:38:04.000 --> 00:38:11.000
+What I kind of wanted to point out here
+mostly is that you will see variation
+depending on the data window that you use.
+
+00:38:11.000 --> 00:38:19.000
+And I wanted to quickly point out some of
+the benefits and drawbacks of using kind
+of longer and shorter timeframes to
+calculate your statistics from.
+
+00:38:19.000 --> 00:38:32.000
+So the point of going through this little
+section was firstly to show you how you
+can quickly and easily calculate
+correlations yourselves in Excel for any
+data sets that you've been using.
+
+00:38:32.000 --> 00:38:36.000
+Just by using the correlation function
+that we've looked at.
+
+00:38:36.000 --> 00:38:50.000
+And I also wanted to build on that by
+showing you how to create a time series of
+correlation because that's going to
+enhance your understanding of whatever two
+variables it is that you're looking at in
+your correlation analysis.
+
+00:38:50.000 --> 00:39:04.000
+Clearly as well this exercise also
+reinforced one of the pitfalls that I
+mentioned about correlation analysis
+earlier in that correlations are subject
+to change.
+
+00:39:04.000 --> 00:39:05.000
+That's not exactly a pitfall.
+
+00:39:05.000 --> 00:39:18.000
+It's just something that we have to
+understand and be aware of and accept
+because although they can change using a
+sample of historical data is still the
+only simple way to estimate what
+correlations might be in the future.
+
+00:39:18.000 --> 00:39:27.000
+And it's those correlation values in the
+form of sort of covariances that are then
+fed into our portfolio volatility model in
+this sheet.
+
+00:39:27.000 --> 00:39:40.000
+So with that being said, let's head back
+over to the portfolio volatility practice
+sheet now where I'm going to run through
+some scenarios again and this time
+incorporate some correlation analysis
+along the way.
+
+00:39:40.000 --> 00:39:53.000
+Okay, as I said earlier, this sheet is
+basically the same as the one that you saw
+in the last video, apart from that it now
+also contains this correlation table,
+which we're going to be using in the
+scenarios that follow.
+
+00:39:53.000 --> 00:40:07.000
+So to make things easy, the portfolio
+scenarios I'm going to go through here are
+exactly the same as the ones that we
+looked at in the previous video, except
+this time we're going to be looking at the
+correlation side of things specifically.
+
+00:40:08.000 --> 00:40:18.000
+You'll see here, I already have our first
+scenario set up, which is the 10 stock
+portfolio that's long mega cap and large
+cap positions, including our FAANG stocks.
+
+00:40:18.000 --> 00:40:33.000
+As we saw previously, the annual
+volatility for this portfolio is estimated
+at 19.23% with an average annual asset
+standard deviation estimation of 28.28%.
+
+00:40:33.000 --> 00:40:37.000
+So let's now have a look at the
+correlations in more detail for this
+portfolio.
+
+00:40:37.000 --> 00:40:50.000
+At the bottom of the sheet, I've got this
+correlation matrix, which as far as user
+input goes, works in a very similar
+fashion to the way the variance covariance
+matrix above works.
+
+00:40:50.000 --> 00:41:04.000
+At the moment, this matrix is empty, but
+all we need to do to conduct our analysis
+is basically fill out the orange cells in
+columns B and AB with tickers and values
+that represent whether the position is a
+long or a short.
+
+00:41:04.000 --> 00:41:29.000
+Because there aren't tickers entered into
+this correlation matrix matrix at the
+moment, but we do have some in the
+variance covariance table above, you can
+see that there are some warning signs in
+column A that basically show us a sort of
+caution if there is any mismatch between
+the tickers seen in the adjacent cells
+compared to the tickers seen in the
+representative cells in the matrix above.
+
+00:41:29.000 --> 00:41:42.000
+So all we need to do to get started with
+looking at correlations in the current
+portfolio is enter the tickers we have in
+the portfolio above into column B of the
+correlation matrix and in the same order.
+
+00:41:42.000 --> 00:42:01.000
+Now, you can obviously type these in
+manually or if you want to do things a
+little bit quicker, you can copy the
+orange cells in the portfolio table above
+and paste them as values as we sort of did
+in the previous portfolio in the previous
+video into the relevant cells as follows.
+
+00:42:01.000 --> 00:42:13.000
+And you can see now that our matching
+signals have turned to a green tick which
+basically shows all of the tickers are in
+the right order and match those seen in
+the variance covariance matrix above.
+
+00:42:13.000 --> 00:42:21.000
+Next, we need to define whether these
+positions are long or shorts in column AB.
+
+00:42:21.000 --> 00:42:30.000
+In the table above, this is sort of
+defined implicitly really by the net
+allocation that we've assigned. Positive
+values are longs, negative values are
+shorts.
+
+00:42:30.000 --> 00:42:36.000
+In this table, we're not worried about
+weightings, we only need to know whether
+each position is a long or a short.
+
+00:42:36.000 --> 00:42:44.000
+And this is done by selecting either a 1
+or a minus 1 from the dropdown menus in
+each cell in column AB.
+
+00:42:44.000 --> 00:42:49.000
+Long positions should have a value of 1,
+short positions should have a value of
+minus 1.
+
+00:42:49.000 --> 00:43:02.000
+And we're considering a long only
+portfolio in this scenario, so clearly all
+of the values here should be set to 1.
+
+00:43:02.000 --> 00:43:09.000
+So with that done, you can now see the
+correlation matrix is populated with
+values.
+
+00:43:09.000 --> 00:43:15.000
+Each of these values represent the
+pairwise correlation for the assets seen
+in the relevant row and column.
+
+00:43:15.000 --> 00:43:28.000
+For example, the correlation between Apple
+and Microsoft is estimated at 63.95% and
+the correlation between Facebook and
+Netflix is estimated to be 40.01%.
+
+00:43:28.000 --> 00:43:36.000
+These correlations are calculated from the
+full time series of returns that's been
+computed in the asset return sheet.
+
+00:43:36.000 --> 00:43:46.000
+So whatever time horizon that you've got
+set in that sheet defines the estimates
+for all of our variances, covariances and
+correlations in this model.
+
+00:43:46.000 --> 00:43:59.000
+The idea of this correlation matrix is
+that you can quickly and easily see which
+positions in the portfolio you expect to
+be more or less correlated with each
+other.
+
+00:43:59.000 --> 00:44:09.000
+I've also tried to make an aggregate
+analysis of each position a bit easier by
+calculating average correlations at the
+end of each row in column AC.
+
+00:44:09.000 --> 00:44:18.000
+So for example, here we can see that
+Microsoft has an average pairwise
+correlation with all the other positions
+in the portfolio of 53.34%.
+
+00:44:18.000 --> 00:44:25.000
+Whilst Netflix has an average correlation
+value of 34.5%.
+
+00:44:25.000 --> 00:44:34.000
+Based on these correlation values, we can
+see which assets have relatively high
+correlations and which are more effective
+diversifiers.
+
+00:44:34.000 --> 00:44:43.000
+And all else being equal, you could argue
+that the assets with the lowest average
+correlations are the most important
+portfolio components.
+
+00:44:43.000 --> 00:44:59.500
+Now, of course, practically speaking,
+there is so much more to consider, such
+as, you know, idea quality and its
+potential for returns, as well as, you
+know, whether these correlation values are
+actually reasonably estimated and
+indicative of future relationships between
+assets.
+
+00:44:59.500 --> 00:45:08.500
+But nonetheless, it gives us a very solid
+insight into which assets are likely to
+have higher or lower correlations going
+forward.
+
+00:45:08.500 --> 00:45:18.500
+As well as those average correlations for
+each position, I've also got a cell that
+calculates the average pairwise
+correlation across the whole portfolio,
+which is cell AC.74.
+
+00:45:18.500 --> 00:45:24.500
+Currently, that's reading 42.79% for this
+portfolio.
+
+00:45:24.500 --> 00:45:30.500
+This is somewhat analogous to the
+correlation value we saw in the
+diversification principles chart.
+
+00:45:30.500 --> 00:45:35.500
+And so clearly, you know, the lower the
+correlation, the better in terms of risk.
+
+00:45:35.500 --> 00:45:43.500
+Again, there are more things to consider
+here, such as the assumptions that all
+assets are equally weighted for the
+purposes of this correlation matrix.
+
+00:45:43.500 --> 00:45:48.500
+And also, lower risk doesn't necessarily
+mean a better portfolio.
+
+00:45:48.500 --> 00:45:53.500
+Remember, it's it's more about the risk
+adjusted returns of the portfolio.
+
+00:45:53.500 --> 00:46:02.500
+So basically, this correlation matrix is
+useful to us because we know how important
+correlation is to the overall portfolio
+volatility.
+
+00:46:02.500 --> 00:46:12.500
+And this matrix allows us to understand
+and identify where the most significant
+relationships between positions in our
+portfolio might lie.
+
+00:46:12.500 --> 00:46:19.500
+And therefore, gives us an idea about
+tweaking weightings and positions to
+affect the overall portfolio volatility.
+
+00:46:19.500 --> 00:46:22.500
+I'm going to stress this again, though.
+
+00:46:22.500 --> 00:46:31.500
+Correlation analysis is important, but it
+shouldn't supersede fundamentals in the
+decision to enter trades or not.
+
+00:46:31.500 --> 00:46:33.500
+So always remember that.
+
+00:46:33.500 --> 00:46:40.500
+Let's look over our second scenario now,
+though, which is our long, large and mid
+cap portfolio.
+
+00:46:40.500 --> 00:46:58.500
+I'm going to copy and paste the tickers
+for that portfolio from the front summary
+sheet here and paste them into both the
+variance covariance matrix and the
+correlation matrix inside our portfolio
+volatility practice sheet.
+
+00:46:58.500 --> 00:47:09.500
+Now for this scenario, I don't need to
+change any orange cells in column AB since
+the allocations that we're assuming for
+the portfolio matrix are the same and the
+positions are all longs as well.
+
+00:47:09.500 --> 00:47:13.500
+So the correlation matrix doesn't need
+updating in that column either.
+
+00:47:13.500 --> 00:47:26.500
+So as we saw in the previous video, the
+portfolio volatility and average position
+volatility for this scenario is quite a
+bit higher than the last one, reading
+29.36% and 44.33% respectively.
+
+00:47:26.500 --> 00:47:41.500
+However, when we look at the correlation
+matrix, it's pretty clear that our average
+correlations are lower than the previous
+scenario, 38.52% versus 42.79%.
+
+00:47:41.500 --> 00:47:48.500
+Now, these results are actually very
+typical of the difference between mega cap
+and mid cap portfolios.
+
+00:47:48.500 --> 00:47:55.500
+Mid caps tend to have higher individual
+volatilities, as we know, which means they
+typically have greater expected returns.
+
+00:47:55.500 --> 00:48:05.500
+But also they tend to have lower average
+correlations to other stocks than mega
+caps do, which makes them better, more
+efficient portfolio diversifiers as well.
+
+00:48:05.500 --> 00:48:12.500
+And when you think about this, that makes
+a lot of sense because smaller companies
+tend to have less diversified operations.
+
+00:48:12.500 --> 00:48:23.500
+And so their revenues, earnings and
+therefore stock prices are dictated by
+factors that are less diluted and less
+common to other stocks.
+
+00:48:23.500 --> 00:48:29.500
+You can also see that the average
+correlation values between each position
+are lower.
+
+00:48:29.500 --> 00:48:39.500
+So the maximum average correlation we see
+here is 45.75% assigned to ticker LEN and
+the minimum is 29.96% assigned to VTRS.
+
+00:48:39.500 --> 00:48:48.500
+And by the way, these lower average
+correlation values in this portfolio that
+includes mid caps now aren't a fluke.
+
+00:48:48.500 --> 00:48:54.500
+If you need a bit more confirmation about
+that, you can have a look at the variance
+covariance correlation matrix sheet,
+
+00:48:54.500 --> 00:49:00.500
+where I've set up a table that calculates
+the correlations between all of the stocks
+listed in this spreadsheet.
+
+00:49:00.500 --> 00:49:07.500
+And I've aggregated them to create average
+correlations amongst mid caps compared to
+large and mega caps.
+
+00:49:07.500 --> 00:49:12.500
+And as you'd expect, mid caps tend to have
+lower average correlations.
+
+00:49:12.500 --> 00:49:20.500
+And in reality, if you were to include all
+US listed stocks, not just the ones I have
+here, the difference would be even
+greater.
+
+00:49:20.500 --> 00:49:26.500
+And the results I have here, therefore,
+are kind of skewed in the favor of large
+and mega caps anyway.
+
+00:49:26.500 --> 00:49:30.500
+I've put a couple of notes about that in
+the sheet here.
+
+00:49:30.500 --> 00:49:41.500
+But basically it's because the sample size
+for mid caps would actually be much, much
+larger than how it's sort of represented
+here in this sheet.
+
+00:49:41.500 --> 00:49:50.500
+So the takeaway from this scenario is
+again reinforcing the fact that mid caps
+have multiple benefits when included in
+our portfolios.
+
+00:49:50.500 --> 00:49:59.500
+It's greater volatility in themselves,
+which gives a scope for increased expected
+returns, but also higher diversification
+benefits as well.
+
+00:49:59.500 --> 00:50:10.500
+Now, our third and final scenario is our
+long short mid and large cap portfolio,
+where we're long six stocks, the majority
+being mid caps and short four stocks.
+
+00:50:10.500 --> 00:50:22.500
+This portfolio, as I said in the previous
+video, is much closer to the kind of
+portfolio we'd expect ITPM traders to
+build because it utilizes long and short
+positions as well as mid cap stocks.
+
+00:50:22.500 --> 00:50:29.500
+To make things easy and comparable, you'll
+remember we actually kept the exact exact
+same stocks for this portfolio as the last
+one.
+
+00:50:29.500 --> 00:50:36.500
+But all we did was sort of change the
+allocations to include short positions.
+
+00:50:36.500 --> 00:50:42.500
+If you remember, the top four tickers in
+this portfolio, which are all large cap
+stocks, are short positions.
+
+00:50:42.500 --> 00:50:51.500
+And so in the volatility model, we need to
+change the allocations to those four
+positions to minus $10,000 instead of plus
+$10,000.
+
+00:50:51.500 --> 00:51:01.500
+Equally for the correlation model, those
+four positions need to be assigned minus
+one values in the column AB to make them
+short rather than values of one.
+
+00:51:01.500 --> 00:51:16.500
+As in the last video, when these inputs
+are entered, we retrieve a portfolio
+volatility value of 11.23% and maintain
+the exact same average asset volatility
+number of 44.33%.
+
+00:51:16.500 --> 00:51:20.500
+That's because we're obviously using the
+same stocks.
+
+00:51:20.500 --> 00:51:23.500
+We're just changing the weightings to
+include some shorts.
+
+00:51:23.500 --> 00:51:27.500
+So let's have a look at the correlation
+matrix now for this scenario.
+
+00:51:27.500 --> 00:51:34.500
+And it's here where we can see a massive
+difference in average correlations across
+the board.
+
+00:51:34.500 --> 00:51:43.500
+Overall, correlations have become much,
+much closer to zero and some have turned
+negative because of the inclusion of short
+positions.
+
+00:51:43.500 --> 00:51:49.500
+And that gives us an overall average
+portfolio correlation of minus 4.69%.
+
+00:51:49.500 --> 00:51:56.500
+And this is the main reason why we've seen
+such a dramatic decrease in the portfolio
+volatility estimate.
+
+00:51:56.500 --> 00:52:06.500
+Including both long and short positions
+has resulted in this sort of incredibly
+efficient diversification through these
+really low correlation estimates.
+
+00:52:06.500 --> 00:52:15.500
+And all the while, we're still taking
+advantage of high volatility individual
+positions by including many mid caps.
+
+00:52:15.500 --> 00:52:17.500
+So now we've been through those scenarios.
+
+00:52:17.500 --> 00:52:22.500
+Let's go through a few examples using this
+correlation model.
+
+00:52:22.500 --> 00:52:30.500
+So let's say that we're currently holding
+this portfolio, which by the way, isn't
+something that you should be doing when
+you view this course.
+
+00:52:30.500 --> 00:52:40.500
+These trades are just examples only and
+they're clearly not relevant to your own
+kind of circumstance or probably the time
+that you're actually watching this series
+anyway.
+
+00:52:40.500 --> 00:52:45.500
+And that goes for any kind of examples
+that we look out throughout look at
+throughout the series.
+
+00:52:45.500 --> 00:52:46.500
+They are just examples.
+
+00:52:46.500 --> 00:52:48.500
+You've always got to do your own work.
+
+00:52:48.500 --> 00:52:59.500
+But anyway, for example, let's say we're
+holding this portfolio and we have a watch
+list running in the background with a
+bunch of great fundamentally driven ideas.
+
+00:52:59.500 --> 00:53:11.500
+At some point, the timing of one of our
+ideas, let's say long temple Sealy, so TPX
+looks good and we're thinking about
+putting the position on.
+
+00:53:11.500 --> 00:53:16.500
+Before doing so, though, we might want to
+see how this trade fits in our current
+portfolio structure.
+
+00:53:16.500 --> 00:53:22.500
+And we can also model the effects of
+including it on overall portfolio
+volatility expectations.
+
+00:53:22.500 --> 00:53:29.500
+And it would be nice to see how it
+correlates to other positions in the
+portfolio as well.
+
+00:53:29.500 --> 00:53:37.500
+Assuming we have capital to spare, let's
+model what would happen if we include this
+position in the portfolio with an
+allocation of $10,000.
+
+00:53:37.500 --> 00:53:43.500
+To do that, we would just enter the ticker
+TPX into both the volatility and
+correlation models
+
+00:53:43.500 --> 00:53:54.500
+and assign a capital allocation of $10,000
+to the volatility matrix and a one value
+to the correlation matrix in column AB.
+
+00:53:54.500 --> 00:54:04.500
+If we then take a look at the results, we
+can see that the overall portfolio
+volatility estimate has increased by about
+1.5%.
+
+00:54:04.500 --> 00:54:09.500
+And as far as correlation values go,
+nothing really sticks out.
+
+00:54:09.500 --> 00:54:12.500
+TPX pairwise correlations are okay across
+the board.
+
+00:54:12.500 --> 00:54:16.500
+Nothing's particularly high, not enough to
+cause a red flag anyway.
+
+00:54:16.500 --> 00:54:21.500
+And the average correlation for that
+position to the other positions is also
+okay.
+
+00:54:21.500 --> 00:54:30.500
+It's not the highest, it's not the lowest
+and overall it has increased the average
+correlation to minus 2.66%.
+
+00:54:30.500 --> 00:54:35.500
+All pretty insignificant and that's a good
+sign really.
+
+00:54:35.500 --> 00:54:42.500
+When doing this, we just want to
+understand how it sits, how the new
+position that we're looking at, sits in
+the portfolio
+
+00:54:42.500 --> 00:54:48.500
+and make sure that there's no obviously
+high correlations or increases in
+portfolio volatility
+
+00:54:48.500 --> 00:54:52.500
+that then might cause red flags and
+warrant further investigation.
+
+00:54:52.500 --> 00:54:57.500
+The majority of the time in your own
+portfolios, this is going to be the case.
+
+00:54:57.500 --> 00:55:03.500
+If both the fundamentals and technicals
+for a prospective position look good, it's
+generally going to be okay to put on,
+
+00:55:03.500 --> 00:55:08.500
+but it is still worth modeling and
+checking what's happening at the portfolio
+level
+
+00:55:08.500 --> 00:55:13.500
+to make sure that you're happy and there's
+no sort of red flags being raised.
+
+00:55:13.500 --> 00:55:22.500
+Now, if you guys are really doing your
+work properly, you might be in a situation
+where you actually have a high number of
+quality ideas
+
+00:55:22.500 --> 00:55:27.500
+ready to go at the same time whilst also
+maintaining a reasonably full portfolio.
+
+00:55:27.500 --> 00:55:30.500
+Now, if that's the case, you've got some
+decisions to make.
+
+00:55:30.500 --> 00:55:32.500
+Do you want to swap any positions out?
+
+00:55:32.500 --> 00:55:36.500
+If not, do you have any capital spare to
+add new ones?
+
+00:55:36.500 --> 00:55:42.500
+If you can only add one out of, say, two
+or three trades, how are you going to
+choose?
+
+00:55:42.500 --> 00:55:46.500
+Again, I'm always going to say that these
+decisions should be driven primarily
+
+00:55:46.500 --> 00:55:50.500
+by the fundamental strength of the idea
+and your own conviction.
+
+00:55:50.500 --> 00:55:55.500
+However, in the scenario where you might
+be choosing between a couple of ideas
+
+00:55:55.500 --> 00:55:59.500
+and everything about them seems equal in
+terms of quality and timing,
+
+00:55:59.500 --> 00:56:03.500
+then you could use portfolio volatility
+and correlation modeling
+
+00:56:03.500 --> 00:56:09.500
+to sort of make what is likely the best
+decision at the portfolio level.
+
+00:56:09.500 --> 00:56:16.500
+So, for example, let's say as well as TPX,
+we're also considering universal display
+core.
+
+00:56:16.500 --> 00:56:19.500
+So OLED.
+
+00:56:19.500 --> 00:56:26.500
+And ultimately, you think that there's
+nothing between these two ideas in terms
+of quality or conviction.
+
+00:56:26.500 --> 00:56:32.500
+One approach to consider is modeling how
+the portfolio structure is affected
+
+00:56:32.500 --> 00:56:35.500
+with including each one and then making a
+decision based on that.
+
+00:56:35.500 --> 00:56:41.500
+So let's remove TPX now and include OLED
+instead to see how things change.
+
+00:56:41.500 --> 00:56:53.500
+So you can see here that the estimated
+portfolio volatility has decreased as has
+the average correlation
+
+00:56:53.500 --> 00:57:00.500
+inside the portfolio and OLED itself looks
+to be less correlated in each pairwise
+relationship.
+
+00:57:00.500 --> 00:57:05.500
+Now, I wouldn't say there's a massive
+amount in it, but it is something.
+
+00:57:05.500 --> 00:57:10.500
+OLED looks slightly more attractive at the
+portfolio level in this case.
+
+00:57:10.500 --> 00:57:13.500
+However, that is only the risk side of
+things.
+
+00:57:13.500 --> 00:57:17.500
+Perhaps we should also be expecting lower
+returns from OLED.
+
+00:57:17.500 --> 00:57:23.500
+Well, if what I said before is true and
+everything about this trade really is on
+equal terms,
+
+00:57:23.500 --> 00:57:28.500
+then that should have already been
+considered before we even got to this
+point.
+
+00:57:28.500 --> 00:57:33.500
+But if we wanted to go back and check the
+historical and implied volatility of the
+stock at this point
+
+00:57:33.500 --> 00:57:39.500
+and think about whether that changes our
+expectations, we could do that as well.
+
+00:57:39.500 --> 00:57:46.500
+So those are the sorts of things that you
+should be thinking about in terms of
+modeling portfolio volatility and
+correlations,
+
+00:57:46.500 --> 00:57:51.500
+thinking about what your portfolio
+structure looks like when you add
+positions or change positions.
+
+00:57:51.500 --> 00:58:01.500
+And as I've been saying throughout this
+video and the last video, not every bit of
+analysis that we're looking at here is
+actionable in and of itself.
+
+00:58:01.500 --> 00:58:06.500
+It should be noted and considered in the
+broad context of everything else.
+
+00:58:06.500 --> 00:58:11.500
+And once you've completed the whole course
+and started down the road of practical
+implementation yourself,
+
+00:58:11.500 --> 00:58:19.500
+you'll be in a far more informed and
+confident mind frame in making some of
+these decisions.
+
+00:58:19.500 --> 00:58:24.500
+So that's it. There's nothing else to look
+at in this video.
+
+00:58:24.500 --> 00:58:26.500
+The rest of the spreadsheet is all the
+same.
+
+00:58:26.500 --> 00:58:33.500
+Please remember all of the practical
+implementation steps from the last video,
+though, because they do apply again here.
+
+00:58:33.500 --> 00:58:44.500
+And what I mean by that is how you update
+and prepare all of your prices and returns
+data so that it feeds through correctly to
+the portfolio volatility and correlation
+models.
+
+00:58:44.500 --> 00:58:53.500
+OK, so what are the important points to
+take away from this video and the last one
+in terms of correlation and portfolio
+structuring?
+
+00:58:53.500 --> 00:59:02.500
+In the last video, we learned that a
+portfolio's variance is a function of both
+the variances and covariances of
+individual assets within the portfolio.
+
+00:59:02.500 --> 00:59:06.500
+However, we found that as more assets are
+added to the portfolio,
+
+00:59:06.500 --> 00:59:13.500
+it's the covariance terms that become the
+dominant contributors to the eventual
+output of portfolio volatility.
+
+00:59:13.500 --> 00:59:20.500
+We learned that the relationship between
+assets then, whether measured in terms of
+covariance or correlation,
+
+00:59:20.500 --> 00:59:24.500
+is the most important factor in portfolio
+diversification.
+
+00:59:24.500 --> 00:59:29.500
+With that in mind then, it set us up with
+the key concept running throughout this
+video,
+
+00:59:29.500 --> 00:59:36.500
+which has been that correlation assessment
+is a hugely important factor to consider
+in the context of portfolio construction.
+
+00:59:36.500 --> 00:59:40.500
+And I've talked through and demonstrated
+that in a number of ways.
+
+00:59:40.500 --> 00:59:46.500
+We've discussed how efficient
+diversification leads to higher risk
+adjusted returns.
+
+00:59:46.500 --> 01:00:01.500
+What I mean by efficient diversification
+is incorporating positions in the
+portfolio with low correlations to reduce
+portfolio risk at a faster rate and a
+higher magnitude than if we included
+medium or high correlation positions.
+
+01:00:01.500 --> 01:00:11.500
+That allows us to sufficiently diversify
+without including so many positions that
+we then sacrifice the quality and
+conviction of our ideas,
+
+01:00:11.500 --> 01:00:15.500
+which is obviously detrimental to our
+expected returns.
+
+01:00:15.500 --> 01:00:22.500
+Remember also that the more positions you
+add, the lower the marginal benefit of
+risk reduction becomes anyway.
+
+01:00:22.500 --> 01:00:32.500
+So building a long short portfolio that
+predominantly incorporates mid cap stocks
+is a great vehicle to actually achieve
+this.
+
+01:00:32.500 --> 01:00:38.500
+A mix of long and short trades is a
+massive aid to lower correlation positions
+and hence reduce risk.
+
+01:00:38.500 --> 01:00:44.500
+And mid caps not only offer up the
+opportunity for higher profits than larger
+cap stocks,
+
+01:00:44.500 --> 01:00:48.500
+but also give us a wider range of
+correlations to work with.
+
+01:00:48.500 --> 01:00:55.500
+And often they'll represent a more
+efficient diversifier than their larger
+cap counterparts as well.
+
+01:00:55.500 --> 01:01:00.500
+So with that being said, there's a few
+things to consider at this point from a
+practical perspective.
+
+01:01:00.500 --> 01:01:06.500
+There are many considerations in using
+correlation values as I covered throughout
+the first section of this video.
+
+01:01:06.500 --> 01:01:12.500
+And it would be naive to assume that
+historical correlation always implies
+future correlation,
+
+01:01:12.500 --> 01:01:17.500
+since there may be events in the future
+that cause correlations to change, even if
+only temporarily.
+
+01:01:17.500 --> 01:01:20.500
+So we've seen that in a number of examples
+throughout the video.
+
+01:01:20.500 --> 01:01:29.500
+One of the most important ones being when
+we looked at what happens when liquidity
+crises occur and correlations tend to one.
+
+01:01:29.500 --> 01:01:35.500
+There's a sort of dash for cash and all
+assets tend to move in the same direction.
+
+01:01:35.500 --> 01:01:37.500
+So correlations tend to one.
+
+01:01:37.500 --> 01:01:41.500
+I've already touched on the idea of over
+diversification as well,
+
+01:01:41.500 --> 01:01:44.500
+but that is another important practical
+consideration.
+
+01:01:44.500 --> 01:01:53.500
+Because even in the unrealistic scenario
+where we assume we can find an endless
+number of low correlation ideas to add to
+the portfolio,
+
+01:01:53.500 --> 01:01:58.500
+we still need to be cognizant of the
+opportunity or profit side of the
+equation.
+
+01:01:58.500 --> 01:02:05.500
+And what I mean by that is that over
+diversification tends to lead to executing
+lower quality and lower conviction ideas,
+
+01:02:05.500 --> 01:02:08.500
+and that can seriously damage future
+returns.
+
+01:02:08.500 --> 01:02:17.500
+So there still needs to be a certain
+amount of concentration of positions to
+maximize returns whilst taking advantage
+of low correlations where possible.
+
+01:02:17.500 --> 01:02:26.500
+And for the umpteenth time, correlation
+considerations always come after solid
+fundamental analysis.
+
+01:02:26.500 --> 01:02:32.500
+Another thing I want to reiterate from the
+previous video is that by constructing a
+long short portfolio,
+
+01:02:32.500 --> 01:02:37.500
+we've seen that estimated portfolio
+volatility decreases significantly.
+
+01:02:37.500 --> 01:02:39.500
+Despite the reduction in volatility,
+
+01:02:39.500 --> 01:02:46.500
+it's important to remember that that
+doesn't necessarily mean less opportunity
+for profit.
+
+01:02:46.500 --> 01:02:51.500
+Long short portfolio strategies can work
+in all markets,
+
+01:02:51.500 --> 01:02:54.500
+which actually is much better for wealth
+creation over time.
+
+01:02:54.500 --> 01:02:56.500
+And we talked about that in the previous
+video.
+
+01:02:56.500 --> 01:03:07.500
+But not only that, as I've said before,
+the diversification benefits are much more
+efficient due to the low or negatively
+correlated positions,
+
+01:03:07.500 --> 01:03:10.500
+which means our risk adjusted returns can
+be much greater.
+
+01:03:10.500 --> 01:03:21.500
+We can also increase upside in our returns
+or the opportunity side of the equation by
+structuring our trades with leveraged
+products such as options,
+
+01:03:21.500 --> 01:03:26.500
+which is something we talk about in the
+Professional Options Trading Masterclass
+video series.
+
+01:03:26.500 --> 01:03:29.500
+Not only does that allow for magnified
+returns,
+
+01:03:29.500 --> 01:03:38.500
+but if it's used correctly, it can also be
+a really great way of managing risk as
+well due to their asymmetric risk
+profiles.
+
+01:03:38.500 --> 01:03:44.500
+All of those concepts and the theory that
+we've talked about hopefully came together
+when we went through some examples and
+scenarios
+
+01:03:44.500 --> 01:03:54.500
+where I practically demonstrated how you
+could use the portfolio volatility and
+correlation spreadsheet models that I've
+built for you for your own purposes.
+
+01:03:54.500 --> 01:04:00.500
+Using that spreadsheet is something that
+you should be doing on a pretty regular
+basis to help yourselves understand your
+own portfolios,
+
+01:04:00.500 --> 01:04:07.500
+where the risks lie and also make
+decisions based on your current and
+prospective portfolio structures.
+
+01:04:07.500 --> 01:04:14.500
+Always remember though, with all of that
+in context, to successfully implement
+correlation analysis,
+
+01:04:14.500 --> 01:04:22.500
+you need to understand how correlation
+works and its pitfalls so that you don't
+rely too much on a single statistical
+number
+
+01:04:22.500 --> 01:04:27.500
+and become sort of complacent about
+correlation analysis.
+
+01:04:27.500 --> 01:04:34.500
+Because, you know, correlation analysis,
+like everything else, is just a tool to
+improve the probability of success.
+
+01:04:34.500 --> 01:04:37.500
+And it's by no means the holy grail.
+
+01:04:37.500 --> 01:04:40.500
+Anyway, good work guys.
+
+01:04:40.500 --> 01:04:44.500
+This volatility and correlation stuff
+isn't that easy to get your head around,
+
+01:04:44.500 --> 01:04:50.500
+but I'm sure you'll all get the hang of it
+as you watch and re-watch these videos and
+also play around with all the spreadsheets
+
+01:04:50.500 --> 01:04:53.500
+and practically implement what you've
+learned as well.
+
+01:04:53.500 --> 01:04:55.500
+That's it for this video though.
+
+01:04:55.500 --> 01:04:59.500
+And I'll see you in the next one where
+we're going to talk about portfolio beta,
+
+01:04:59.500 --> 01:05:02.500
+how you can measure it and why it's
+useful.

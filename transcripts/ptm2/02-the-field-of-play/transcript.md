@@ -1,0 +1,471 @@
+---
+course: ptm2
+lesson_id: "02"
+title: "The Field of Play"
+module: framework-and-market-structure
+module_title: "Framework and market structure"
+duration: 00:33:19
+duration_seconds: 1998.976
+source: "02. The Field of Play.mp4"
+model: "ggml-large-v3-turbo.bin"
+related_documents:
+  - "Documents/Video 02/Bull_Bear_Markets.xlsx"
+---
+
+# 02 — The Field of Play
+
+Okay, so welcome to video number two of the PTM video series. Before we move on, let's go over what we learned in video one, the framework. Now, probably the most important thing to get your head around once you understand all the parts of the pro trader systematic process is what constitutes or what is the actual definition of a trade idea.
+
+So a trade idea, not an investment idea. So as traders, we have what we call a trade idea generation process. And this is made up of four parts. We need all four of these parts for something to become an actual trade idea. So this is fundamentals, timing, catalysts, and trade structure. We need all all four for it to become a trade idea. That is what a trade idea is defined as. If we have one or two of them, it's not a trade idea. Okay, we need all four of them for it to become a trade idea. And we need to be operating in the 20 to 60 day time horizon. So it doesn't become an investment idea. Okay, we have a limit, a time limit on our trade ideas.
+
+Now, we move from the idea stage to the next stage, when an idea actually becomes a live position. And when a idea becomes a live position, what happens? Well, it's sitting in your trading account, it's a live position, there's capital committed, and therefore, it becomes subject to risk management practices. Okay. Now, once a position is live, of course, of course, it's already adhered to what we call preventative risk management measures. These are measures that we put in place on ourselves on our portfolio, to ensure some basic level of risk management occurs, before we even take a position, and the position has to adhere to that. So when it becomes live, it's already adhered to our preventative risk management practices that we've put in our in place. And what's going to happen in place. And what's going to happen? And what's going to happen? Well, the stock is going to move, and it's either going to become a winner, or a loser, we're either going to make money, or lose money, we have to react to the situations, we have to react to the move in the stock. And this is called reactive risk management. reactive risk management. So what happens next? Well, we take positions off. So we go from idea stage to live position, and then positions get taken off. And the position will either have made money, or lost money. And then it becomes subject to our trader metrics, it becomes a statistic. So it becomes part of our track record. So the PTM video series is going to focus on the entire trade idea generation process. And we're also going to be looking at preventative risk management, and trader metrics.
+
+What's not included in the PTM video series is trade structures utilizing options. This is taught in the professional options trading masterclass. And also what's not included is reactive risk management, which can only be taught live with live positions. And in ITPM infrastructure, that is taught on a live mentoring program with one of our mentors.
+
+Now in video one, the framework, we also outlined the four ITPM principles, that being self sustainability, work ethic, free information, and working smart, not hard. We are going to be referring to all of these principles throughout the video series. So always keep them in your mind.
+
+So now we have the framework established. We can begin by what all pros do immediately. Okay. Most of the time without even thinking about it. Okay. So pros, this comes naturally to us. We just don't even think about this process. It's something we do straight away. And most of the time, we don't even think about it. Video two, we're going to be establishing what we're going to do.
+
+We're going to be establishing what type of market we are operating in. Are we currently operating in a bull market or a bear market? How do we actually go and get perspective? This is our first step as pro traders, and pro traders really just don't even think about this step too much.
+
+But in the learning process, but in the learning process, it's very important for retail traders to always remember to take this step. In the first move, the first situation, you always have to define what market you're in. So in the learning process, what you have to do is learn the actual definition of bull markets and bear markets.
+
+We cannot get a proper perspective unless we know the type of market that we're actually in and also how it's actually defined. And the way pro traders define bull and bear markets is totally different to what is popularized in the media. So let's get straight into it, guys. Video number two. And I'll see you at the end of this video.
+
+Okay, everybody, welcome back to the computer screen. And video number two of the professional trading masterclass video series, getting perspective, the field of play. Let's get stuck in. Now, this video is going to be relatively shorter than most videos in the video series.
+
+We've got to get perspective. We're going to get perspective. We're going to be looking at bull and bear markets and the actual definitions. So in video one, we outline the framework that we're going to work with in the PTM video series. Now, much of that will be absolutely new to most people. watching the PTM video series. But don't worry, as we take you through each stage of this learning process, we're going to keep building up your knowledge slowly, and things always start to click into place. So stick at it.
+
+Additional to the framework that we showed you in video number one, as traders, we select our positions and trade our portfolio outcomes.
+
+In doing so, we have to define the environment that we're operating in at any one moment in time.
+
+And as traders, our approach, even within the framework that we operate in.
+
+So we have to seek to get perspective on a continual basis.
+
+Now, this is all very, very straightforward stuff because this is definitions.
+
+But this is something that you should always be doing as a trader, defining the environment that you're in, even within the framework that you're operating in, okay?
+
+If we have no idea what type of market that we're operating in at any one moment in time, then we basically have no idea where we could be going because we don't have any perspective.
+
+So if you have no perspective on where we've been, so historical perspective, where we are now in the present, so current perspective, and where we could be going in the future, so expected outcome, then we're basically rudderless and we're clueless as traders.
+
+So it's very important to understand these definitions of bull and bear markets and what they actually mean.
+
+Now, if you've been through the IPLT video series, you will know that we did a lot of statistical work at various time horizons across multiple asset classes.
+
+And we essentially looked within equities at day trading and we came to the conclusion that it's extremely random, okay?
+
+And the odds of making or losing money within a one-day timeframe in mega cap, large cap equities, like the S&P 500, is essentially 50-50.
+
+It's random, okay?
+
+So the big question is here, how do we stack the odds in our favor, okay?
+
+Well, if we want to stack the odds in our favor better than that, better than the 50-50 and randomness, like day trading, we have to have an understanding of the bigger picture and have perspective.
+
+So there's four questions that every trader should be continually asking themselves.
+
+Firstly, where has the market come from?
+
+Secondly, where is the market today?
+
+Third, where is the market going?
+
+And four, the big one, what does it all mean?
+
+What does it all mean essentially implies the main question here of what is our perspective, okay?
+
+Now, the only way to get perspective, the only true way to get perspective is to look to historical stock market performance, to get the perspective on the present and to plan for the future.
+
+So this is what we're going to do.
+
+We're going to start looking at the definition of bull and bear markets.
+
+So at any one point in time in your careers, you can actually define what the environment is that you are currently in to understand where we could be going.
+
+And, of course, for true perspective, what it all actually means.
+
+So these definitions essentially help us as traders in making sense of it all.
+
+We're trying to make sense of everything all the time so we can make clear and strong decisions and correct decisions, okay?
+
+So it stands to reason, okay, we need to keep things simple.
+
+So by keeping things simple, what does that really mean in terms of our portfolio biases, okay?
+
+Well, when we have prolonged periods of strong stock market performance, we obviously do not want to be short the market.
+
+Our trading bias should, in this instance, always tend towards being long.
+
+When we have prolonged periods of weak stock market performance, we do not want to be long the market.
+
+Our trading bias should very obviously always tend towards being short in this environment.
+
+And, of course, if we have those two situations, what if we have a period of time where the stock market is essentially flat?
+
+It's not going up, it's not going up a lot, it's not going down a lot, it's trending sideways, okay?
+
+When we have prolonged periods of flat stock market performance, we do not want to be very long or very short the market.
+
+Our trading bias should be long short, or market neutral, okay?
+
+Now, bear markets and bull markets, they have definitions, okay?
+
+A bear market is defined by a 20% fall in an index from its high.
+
+So, an equity index like the S&P 500, the NASDAQ, the Dow, if they fall by 20% from their highest point, okay, that is the definition of a bear market, okay?
+
+A bull market, this is where some confusion comes in.
+
+The actual definition, the professional trading definition of a bull market, is a bull market is defined by a rise in the index above the previous bear market level.
+
+So, there is a definition of bull markets that's bandied about in the media a lot, okay, which is a 20% rise in the index from its low.
+
+That's one definition, but it's not the actual definition that professional traders use.
+
+Obviously, that's a good sign that markets are running 20% off their lows, okay?
+
+But have they officially, in the professional trading and investing community, entered a bull market?
+
+Is the actual definition true to the money in the market that matters?
+
+It's not, okay?
+
+So, on the professional side, bull markets are defined by a rise in the index level back above the bear market level.
+
+So, let's have a look at some examples from stock market history.
+
+Let's go way back to the great financial crisis.
+
+So, the 2008-2009 financial crisis.
+
+Let's start having a look at some levels in the index of the S&P 500.
+
+And here, we're looking at the SPX.
+
+So, the S&P 500 cash index, okay?
+
+Let's have a look at levels.
+
+So, back before the financial crisis, the SPX, S&P 500, reached a high on the 11th of October 2007 of 1576, spot 09.
+
+So, the bear market level, when we work that out, we multiply the number by 0.8, so 20% off the high.
+
+And the bear market level was 1260, spot 87.
+
+And that level was reached on July 7th, 2008, with a close of 1252, spot 31.
+
+So, it closed below the bear market level of 1260, spot 87, which is 20% off the highs of 1576, spot 09.
+
+So, we're using closing levels here, okay?
+
+Now, we're not going to go into the details here of, you know, why things occurred and why things happened or what could have been done about it.
+
+We're simply looking at a moment in history here where there was a bear market followed by a bull market, as an example.
+
+And we're just looking at the high, the bear market level, the low, and the bull market level, okay?
+
+So, this can be used as a template, essentially, at any moment in time to look at current levels and assess where bear market levels exist and potentially where bull market levels exist if we are in a bear market.
+
+So, we're not going to go into the reasons why things happened.
+
+We're just objectively looking at this and looking at the levels and understanding that it's a template that we can use to get perspective on any moment.
+
+So, if you can get perspective on history, you get perspective in the present, you can understand the parameters of the markets that you're in, the environments that you're in, for the potential of the future.
+
+And we can zoom in here and just have a look in a bit more detail during the global financial crisis of 2008-09 and understand the levels a little bit better and understand the trading activity around that time.
+
+So, if we look in July 2008, when the bear market level was breached, so the 0.8 multiplied by the high level, so 12.60 spot 8.7, we can see that when we entered the bear market, the market then had a rally and spent a good six weeks, roughly, trading above the bear market level.
+
+Before it collapsed again, okay, through the bear market level.
+
+So, you can understand here that, you know, at the time, imagine yourself as a trader and you've identified the bear market level.
+
+You understand the parameter and you understand the environment you're in.
+
+It breaks the bear market level for the first time.
+
+Obviously, that's not a good sign.
+
+So, even though there was a period where it traded around that level and above, you would probably be thinking to yourself, as a trader, this is not good.
+
+And you had quite a long time to sort yourself out, where you could sort out your portfolios and get your risk in a position that was acceptable for the environment that you were in at the time.
+
+And this is why it's so important to understand these parameters and definitions in order to understand the environment you're in.
+
+Because, as a trader, you can objectively understand what is happening in the market from both a historical perspective, in a current perspective, and a perspective of what to expect in the future.
+
+And in this example here, where we entered bear market territory for the first time, you would be sitting there as a trader, obviously thinking this is not good.
+
+And you can get your risk into an acceptable position where you can ensure that you're not long, you're not net long or have a long bias.
+
+Yes.
+
+Now, we can also look at the bull market level when we came out of the financial crisis.
+
+So, if we look a little bit further on in time, we can see that the low of the S&P 500 was reached on the 6th of March 2009 at 666.79.
+
+Now, we know the bear market level previously was 1260, spot 87, which was first breached on the 7th of July 2008.
+
+Okay, now, the bear market level becomes the new bull market level, okay, that's the professional trader definition.
+
+And that was breached from below for the first time with a close of 1271, spot 87 on the 3rd of January 2011.
+
+And we would define that as the first day that the S&P 500 officially entered a bull market.
+
+Now, it's interesting from a historical perspective, because when you think of the global financial crisis, you would think intuitively from memory that the S&P 500 came out of a bear market much quicker than it did.
+
+Officially, it came out in January 2011, came out of the bull market.
+
+But thinking back now to that moment in time, we think, a lot of people think that the market came out of a bear market much quicker.
+
+It didn't.
+
+It took quite a long time, okay?
+
+The reason that people think that is because of the definition that's bandied about in the media of a market coming out of a bear market and entering a bull market being defined as a rally of 20% off the lows.
+
+That's just incorrect.
+
+That's just incorrect.
+
+That's something that the media pushes around, and it's not the professional trader definition.
+
+The professional trading and investment community seek an index to go back above the bear market level as a genuine definition and a signal that we have officially entered a bull market.
+
+Now, interestingly enough, similar to where the market breached the bear market level on the way down and was hanging around that level for a number of weeks, if not a few months.
+
+When the S&P 500 rallied above the bear market level to enter officially into a bull market back then, you can see on the chart that the market was hanging around for a number of months at or below or slightly above the new bull market level.
+
+So imagine you're a trader sitting at that time, you would have taken the signal on that day where the market officially entered the bull market, you would have taken that signal and you would have taken it as a sign, as a bullish sign.
+
+And you probably would have been asking yourself some very serious questions about being short that market.
+
+Okay.
+
+Why?
+
+Because, you know, from historical perspective, okay, that the parameters that we're dealing with for entering bear markets, entering bull markets are very well defined and they are very strong signals.
+
+So, you probably wouldn't have been short, you would have been leaning towards being long in your portfolio, having a long bias.
+
+Now, what about a more recent historical example?
+
+Let's have a look at the COVID sell-off in 2020.
+
+The S&P 500, the high, was reached on the 19th of February 2020, and the level of the high was 3,393 spot 52.
+
+Again, we use the same formula, we just multiply the high by 0.8 to get the bear market level, which is 2,714 spot 82.
+
+On the way down, that was reached on the 12th of March 2020, with a close of 2,480 spot 64.
+
+Now, you can see when we compare this situation to the situation in the global financial crisis, you can see that this happened at a much faster pace.
+
+Okay.
+
+The sell-off was quicker.
+
+Okay.
+
+But, look at the levels, and then look at the low of around 2,200.
+
+Okay.
+
+You can see that from the bear market level, which was 2,714 spot 82, down to the low, which is 2,200.
+
+That's still a very big move.
+
+Okay.
+
+So, imagine a lot of the constituents in the S&P 500.
+
+And I can tell you from experience, a lot of them still went down 40, 50, 60, 70% from this level.
+
+Okay.
+
+Because the move was actually very, very big from the bear market level, and very, very quick.
+
+Now, objectively, again, using this template, on that day, when the S&P 500 breached the bear market level, it breached from above the bear market level, you would have been asking yourself some very, very serious questions about being long.
+
+Okay.
+
+And you can see the day after the market actually went up.
+
+It was extremely volatile.
+
+But objectively, you probably would not have been long at this point, if you respected the bear market level definition.
+
+Okay.
+
+Coming out of the bear market, we look at the same level, the bear market level.
+
+So, the 2714 spot 82, and we look at the day that it actually went above that.
+
+It closes above that.
+
+Okay.
+
+When does that happen?
+
+Well, it happens for the first time with a close of 2,749.98 on the 8th of April, 2020.
+
+So, that's when we officially entered a bull market.
+
+And again, similar to when it happens on the way down, I'm breaching the bear market level from above.
+
+When it's breaching the bull market level from below, that's when we enter the bull market.
+
+And as traders, we're asking ourselves some very, very serious questions about being short.
+
+We're probably leaning towards a longer bias in our portfolio.
+
+Okay.
+
+Now, when you look at the chart visually, it seems like the bear market level and the bull market level, the bull market level looks visually that it broke to the upside earlier.
+
+Well, it doesn't.
+
+Go and check the numbers.
+
+It's because we're using closing prices.
+
+Okay.
+
+And the market was extremely volatile at that stage.
+
+During that time, the market was just gapping everywhere.
+
+The actual closing level because we're using closing prices all the time of the official day for entering a bull market out of the COVID crisis was on the 8th of April, 2020.
+
+So, where the arrow is pointing there.
+
+So, very important to get these definitions, guys, because, again, you can get perspective on historical stock market performance.
+
+You can overlay these parameters onto any moment in history, at any moment in time in the present, and understand where we've come from, and have an idea of where we are, and have an expectation of where we might be going in the current context of the market, and what it all means.
+
+So, getting that perspective.
+
+Okay.
+
+Feel free to repeat the analysis over the last few cycles for a number of indices.
+
+Remember the self-starter mentality.
+
+Go and get the data.
+
+Okay.
+
+And have a look at when the indices that we have on the slide here entered bear markets and entered bull markets.
+
+It's a worthwhile exercise to do.
+
+And what you will find is that not all markets enter and exit bear markets at the same time.
+
+There can be some fairly significant lags.
+
+It's just a very interesting exercise for you to do as a new person in the financial markets, or someone who's new to this exercise.
+
+To understand the history of financial markets and to get perspective with the actual definitions from the professional trading and investing community.
+
+I.e. the money in the market that really matters.
+
+In the download section for video number two, you will have access to a spreadsheet.
+
+Just download it from the downloads area.
+
+You'll see the analysis that we've done on the indices like the Nasdaq 100 and the Nasdaq Composite.
+
+The Dow Jones Industrial Average.
+
+The Eurostoxx 50 and 600 in Europe.
+
+The FTSE 100, 250, 350 in the UK.
+
+The DAX 30 in Germany.
+
+In Hong Kong.
+
+In Japan.
+
+And in Australia.
+
+We've given you some examples there.
+
+You can apply this perspective to any equity index in the world.
+
+And you can apply it to any stock in the world.
+
+Okay.
+
+So go to the download section.
+
+Have a look at the examples there.
+
+And repeat the process yourself.
+
+Have a look at the data.
+
+And have a look at the charts.
+
+It's interesting to get perspective and understand what's going on.
+
+So, now that we've got a perspective on what constitutes a bull and bear market.
+
+We will always know what type of market we are actually in at any given time.
+
+Okay.
+
+That's great.
+
+That's a good foundation and a good perspective to have.
+
+It's extremely useful.
+
+What we now have to learn is how to predict whether we're going to go into a bull market or a bear market.
+
+And whether we will actually stay in a bull or bear market.
+
+And on top of that, how we can actually build portfolios in order to take advantage of all situations in the financial markets.
+
+But before we do that, let's go back to the desk for a brief recap of bull and bear markets.
+
+And then we'll get stuck in to video number three.
+
+Okay.
+
+So, welcome back to the desk.
+
+So, you now know how to actually define bull and bear markets in the same way that professional traders do.
+
+Now, this is important because if you know how to do this at any one time in the future, you will know the parameters of the market that you're operating in.
+
+But what's important is to also get historical perspective and to understand market history.
+
+Now, as you've seen in the video, there is a download that is associated with this video.
+
+And there's going to be many downloads throughout the PTM video series.
+
+Use the downloads.
+
+Utilize them.
+
+They are fantastic resources.
+
+Okay.
+
+Use them and learn throughout the video series.
+
+Now, what you have to learn now is not just what type of market you're in, whether that's a bull or a bear market, but we have to now be able to predict whether we are going to go into a bull or bear market and whether we are going to stay in a bull or bear market.
+
+And how we can actually build portfolios in order to take advantage of all these situations.
+
+So, where do we start?
+
+We start with gross domestic product, GDP.
+
+Let's get straight into the next video on GDP.
+
+And I'll see you at the end of the next video.

@@ -1,0 +1,2860 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.98,
+      "text": "Okay, welcome back. Welcome to video number 26. Now we're actually going to look at day trading or short-term trading around short-term volatility. Up to this point, what we identified right at the beginning of the video series, which is why we've been covering up to this point only portfolios."
+    },
+    {
+      "start": 30.0,
+      "end": 59.98,
+      "text": "What we saw right at the beginning of the video series was that 80% of the time in the stock market, volatility to trade on a short-term basis just isn't really there. And we looked at day trading as an example, and that really did show us that on a normal day, a one standard deviation day, 80% of the time, volatility on a day trading basis, on a daily basis,"
+    },
+    {
+      "start": 60.0,
+      "end": 88.0,
+      "text": "the odds really don't work in terms of making money over one day. And when we looked at the implied volatility, so the implied volatility, the VIX, the volatility index of major stock markets, and in particular, we looked at the S&P 500, the world's largest stock market, what we realized was that this volatility index agreed with the historical volatility as well."
+    },
+    {
+      "start": 88.0,
+      "end": 116.0,
+      "text": "And of course it should, they should match. And the VIX, the volatility index of the S&P 500 shows that 80% of the time, the VIX is below an annualized 25%, which when you back it out, means on a daily basis, the volatility of the S&P 500 just isn't there for any traders to make money short-term."
+    },
+    {
+      "start": 116.0,
+      "end": 140.38,
+      "text": "So 80% of the time, we realize that essentially we have to be portfolio managers, and then we have to transition from being portfolio managers to short-term traders when volatility increases, but we also have to transition back from being short-term traders to portfolio managers when volatility is reduced."
+    },
+    {
+      "start": 140.38,
+      "end": 155.98,
+      "text": "So essentially we're going back to this idea that as a trader, your job really is that you're a slave to volatility. So 80% of the time we're portfolio managers, that's why we've been concentrating on it so much."
+    },
+    {
+      "start": 156.86,
+      "end": 174.86,
+      "text": "So that's the first reason why we're leaving day trading to this point. The second reason we're leaving day trading to this point is because a lot of the techniques and a lot of the processes that we've used in portfolio management are actually used in day trading as well."
+    },
+    {
+      "start": 174.86,
+      "end": 192.26,
+      "text": "So now that we know these, we can now apply them to a day trading scenario. And what we're really going to look at is the hunt for volatility on a short-term basis. So now that we understand volatility, we know how to hunt for it."
+    },
+    {
+      "start": 192.86,
+      "end": 214.46,
+      "text": "Secondly, we look at the ATR, so the average true range of a stock or an asset on a daily basis. The ATR, we pull that up before we go and day trade. And why we pull that up is because we want to manage our expectations and set stops and targets accordingly."
+    },
+    {
+      "start": 214.86,
+      "end": 232.86,
+      "text": "So first of all, identifying volatility. Secondly, setting expectations, stops and targets to make sure that our expectations are realistic. A lot of retail traders don't really have the correct expectations when they go into day trading."
+    },
+    {
+      "start": 233.86,
+      "end": 243.86,
+      "text": "The third thing, we've got a download, which is available in the download section, which actually outlines all of the best practices that you should really have."
+    },
+    {
+      "start": 244.86,
+      "end": 257.86,
+      "text": "As somebody who's taking a day trading approach. So those three things we're going to look at. Let's go over to the presentation. The presentation this time is actually going to just be on the computer."
+    },
+    {
+      "start": 257.86,
+      "end": 265.86,
+      "text": "So we're going to run through the slides on the computer and I'll see you back at the end of this video for a summary of day trading."
+    },
+    {
+      "start": 265.86,
+      "end": 291.86,
+      "text": "Okay, so welcome back to the computer screen. We're going to have a look now at the basics of day trading. And some of the principles here and quite a few of the concepts you will have seen in previous videos in the series."
+    },
+    {
+      "start": 291.86,
+      "end": 310.86,
+      "text": "And also applied to portfolio management. But now our time horizon has significantly reduced. So instead of having a one to three month time horizon, we're now looking at having a time horizon of one day or maybe just a few days."
+    },
+    {
+      "start": 310.86,
+      "end": 335.86,
+      "text": "So our time horizon significantly decreased. However, a lot of the principles and concepts that you've seen so far throughout the video series apply. Just because we've changed our time horizon doesn't mean we change our general approach to analyzing assets and trading those assets."
+    },
+    {
+      "start": 335.86,
+      "end": 362.86,
+      "text": "So we just have to use our resources in a smarter way over the time horizon we're looking at. So in this presentation, we're going to do this on the computer screen instead of going over to the stage, because it's quite important to get the principles and concepts here. So I thought it'd be better to do this on the screen."
+    },
+    {
+      "start": 362.86,
+      "end": 389.86,
+      "text": "And because day trading can be quite volatile and quite difficult to make money with. We've included a best practices guide in the download section. And the best practices guide really just covers all of the main approaches that you should really be taking."
+    },
+    {
+      "start": 389.86,
+      "end": 408.86,
+      "text": "So across mental preparation, your general preparation, your general preparation, your preparation in terms of analyzing the overall market, and what you should be doing when you're really approaching day trading as an exercise."
+    },
+    {
+      "start": 408.86,
+      "end": 432.86,
+      "text": "And you should have to do this. And you should review this. And, you know, when you're thinking of day trading, and you believe you're in the position to do so, you should review this just very quickly. And, you know, it's only a couple of pages. And it's, it shouldn't take you too long to, to cover those principles and concepts in terms of the approach."
+    },
+    {
+      "start": 432.86,
+      "end": 444.86,
+      "text": "And it's well worth doing because it will save you a lot of money. It will save you a lot of money and potentially make you a lot of money if you keep going back to this and reviewing your day trading."
+    },
+    {
+      "start": 444.86,
+      "end": 453.86,
+      "text": "So that's in the download section, the best practices guide, make sure you download that and read it."
+    },
+    {
+      "start": 453.86,
+      "end": 459.86,
+      "text": "What we're going to do now is go through this presentation slide by slide."
+    },
+    {
+      "start": 459.86,
+      "end": 478.86,
+      "text": "The first thing we're going to look at is really the importance of volatility. So we've seen the concepts of volatility in earlier videos, we're going to review those just to make sure that we've got the right approach here."
+    },
+    {
+      "start": 478.86,
+      "end": 490.86,
+      "text": "Then we're going to be looking at how we use the Kelly criterion, how you monitor your discipline and track record, and have self-awareness as a trader within day trading."
+    },
+    {
+      "start": 490.86,
+      "end": 503.86,
+      "text": "We're also going to have a look at how news flow affects you as a day trader, and how you connect the dots and hunt for volatility, and also how you know your asset."
+    },
+    {
+      "start": 503.86,
+      "end": 509.86,
+      "text": "And really, knowing your asset is knowing the volatility and the opportunities in the asset."
+    },
+    {
+      "start": 509.86,
+      "end": 524.86,
+      "text": "So let's kick this off. And we're looking here at the S&P 500 volatility index from 1993 to 2013."
+    },
+    {
+      "start": 524.86,
+      "end": 537.86,
+      "text": "And you can see over the last 20 years, you know, how low the average level of the volatility index really is."
+    },
+    {
+      "start": 537.86,
+      "end": 549.86,
+      "text": "You're looking really at a volatility index of between 15 and 20 as the average, which when you back this out into a day trading situation,"
+    },
+    {
+      "start": 549.86,
+      "end": 561.86,
+      "text": "we've already seen that this implies that 80% of the time we have to be portfolio managers simply because when you look at the volatility on a daily basis,"
+    },
+    {
+      "start": 561.86,
+      "end": 571.86,
+      "text": "what occurs 80% of these times is that you get a move in the S&P 500, which is within plus or minus half a percent."
+    },
+    {
+      "start": 571.86,
+      "end": 583.86,
+      "text": "And on a probability adjusted basis, you're basically looking at a gross move per day of plus or minus 35 or 33 basis points."
+    },
+    {
+      "start": 583.86,
+      "end": 589.86,
+      "text": "So 0.35 or minus 0.33."
+    },
+    {
+      "start": 589.86,
+      "end": 597.86,
+      "text": "And when you actually think about trading and then having to pay to trade as well,"
+    },
+    {
+      "start": 597.86,
+      "end": 607.86,
+      "text": "that theoretical exercise that we did right at the beginning of the video series where we said, OK, if we paid a round trip of 35 basis points in and out,"
+    },
+    {
+      "start": 607.86,
+      "end": 617.86,
+      "text": "that just means if we're day trading the average stock in the S&P 500, it just means that we're going to be wiped out in all situations on a normal day,"
+    },
+    {
+      "start": 617.86,
+      "end": 623.86,
+      "text": "which means basically we can't make money. So we're not saying day trading is bad here."
+    },
+    {
+      "start": 623.86,
+      "end": 633.86,
+      "text": "All we're saying is that the market tells us that we can't do it 80% of the time, but 20% of the time we can do."
+    },
+    {
+      "start": 633.86,
+      "end": 645.86,
+      "text": "So when we look at portfolio risk, you know, if we assume that 80% of the time we're going to be portfolio managers and this is what professional traders are."
+    },
+    {
+      "start": 645.86,
+      "end": 651.86,
+      "text": "80% of the time they are portfolio managers. Why? Because they're slaves to volatility."
+    },
+    {
+      "start": 651.86,
+      "end": 657.86,
+      "text": "The volatility in the market tells them the opportunities over any given time horizon."
+    },
+    {
+      "start": 657.86,
+      "end": 671.86,
+      "text": "And we looked at this concept right at the beginning of the video series where we made that statement that volatility is a trader's best friend and a portfolio manager's worst enemy."
+    },
+    {
+      "start": 671.86,
+      "end": 679.86,
+      "text": "And that the VIX is actually not a fear index of the market going down, but actually a fear of volatility itself."
+    },
+    {
+      "start": 679.86,
+      "end": 692.86,
+      "text": "So what this implies is that if the volatility index moves, whatever it moves by, if we assume that the whole world is in portfolio management,"
+    },
+    {
+      "start": 692.86,
+      "end": 697.86,
+      "text": "then it means the risk of every portfolio manager has gone up by that percentage."
+    },
+    {
+      "start": 697.86,
+      "end": 710.86,
+      "text": "So first things first, if the VIX goes up by 25%, it literally just means that the portfolio risk of the entire world has gone up by 25%."
+    },
+    {
+      "start": 710.86,
+      "end": 720.86,
+      "text": "So remember this example where we were running the $1 million portfolio, the theoretical $1 million portfolio."
+    },
+    {
+      "start": 720.86,
+      "end": 724.86,
+      "text": "And you can go back and review this right at the beginning."
+    },
+    {
+      "start": 724.86,
+      "end": 735.86,
+      "text": "When the VIX doubles, that $1 million gross exposure yesterday, whether we like it or not, becomes $2 million,"
+    },
+    {
+      "start": 735.86,
+      "end": 743.86,
+      "text": "because the P&L move from that portfolio doubles in size."
+    },
+    {
+      "start": 743.86,
+      "end": 752.86,
+      "text": "So all that happens is, is that portfolio managers have taken more risk without actually doing anything."
+    },
+    {
+      "start": 752.86,
+      "end": 757.86,
+      "text": "Therefore, they're forced to come into the market and reduce their exposure."
+    },
+    {
+      "start": 757.86,
+      "end": 762.86,
+      "text": "So when you see the VIX moving up sharply by a big amount."
+    },
+    {
+      "start": 762.86,
+      "end": 772.86,
+      "text": "So let's say the VIX is even as low as 10%, which is extremely low on the S&P 500 volatility index."
+    },
+    {
+      "start": 772.86,
+      "end": 778.86,
+      "text": "If the VIX is 10 and it jumps to 12 and a half, it's up 25%."
+    },
+    {
+      "start": 778.86,
+      "end": 784.86,
+      "text": "And if it's, if it jumps from 10 to 15, it's up 50%."
+    },
+    {
+      "start": 784.86,
+      "end": 790.86,
+      "text": "And what you'll find is, is that if the VIX has spent a very long time at low levels,"
+    },
+    {
+      "start": 790.86,
+      "end": 801.86,
+      "text": "what you will get is a lot of complacency in the market because portfolio managers have been building portfolios for a long time with the VIX at that level."
+    },
+    {
+      "start": 801.86,
+      "end": 807.86,
+      "text": "And people start to feel comfortable that the VIX is going to stay low for a very long time."
+    },
+    {
+      "start": 807.86,
+      "end": 817.86,
+      "text": "And then when, when, when something happens in the world and it jumps suddenly, well, all of a sudden the world's portfolio risk goes up by that percentage amount."
+    },
+    {
+      "start": 817.86,
+      "end": 819.86,
+      "text": "And the converse is true."
+    },
+    {
+      "start": 819.86,
+      "end": 820.86,
+      "text": "The converse is true."
+    },
+    {
+      "start": 820.86,
+      "end": 825.86,
+      "text": "So the opposite is true as well."
+    },
+    {
+      "start": 825.86,
+      "end": 831.86,
+      "text": "When the VIX, you know, drops by from say 25 to 12 and a half."
+    },
+    {
+      "start": 831.86,
+      "end": 837.86,
+      "text": "Well, the VIX is down 50%, which means portfolio risk is down 50%."
+    },
+    {
+      "start": 837.86,
+      "end": 842.86,
+      "text": "And in this example here, we're saying it's down 25%."
+    },
+    {
+      "start": 842.86,
+      "end": 849.86,
+      "text": "This just means that the portfolio risk of the world has gone down by 20%."
+    },
+    {
+      "start": 849.86,
+      "end": 854.86,
+      "text": "So small typo here, just ignore that."
+    },
+    {
+      "start": 854.86,
+      "end": 858.86,
+      "text": "It actually just means that it's gone down by 25%."
+    },
+    {
+      "start": 858.86,
+      "end": 863.86,
+      "text": "So what does this mean?"
+    },
+    {
+      "start": 863.86,
+      "end": 883.86,
+      "text": "Well, when we're slaves to volatility as professional traders, the way we have to approach this is that we have to be portfolio managers roughly 80% of the time with the knowledge that we can't really trade on a short-term basis because the market doesn't really allow us to."
+    },
+    {
+      "start": 883.86,
+      "end": 889.86,
+      "text": "However, 20% of the time throughout history, what's happened?"
+    },
+    {
+      "start": 889.86,
+      "end": 892.86,
+      "text": "Well, we've been given opportunities to do that."
+    },
+    {
+      "start": 892.86,
+      "end": 902.86,
+      "text": "So we transition from being portfolio managers to day traders or short-term traders when we're given the opportunity to do so."
+    },
+    {
+      "start": 902.86,
+      "end": 909.86,
+      "text": "And we transition back when we're not given the opportunity to do so and we build portfolios."
+    },
+    {
+      "start": 909.86,
+      "end": 928.86,
+      "text": "So this is why when you see the VIX moving in a big way, usually you see the market move in a big way up or down because market participants are either de-risking or re-risking."
+    },
+    {
+      "start": 928.86,
+      "end": 934.86,
+      "text": "So they're either taking off portfolios or putting them back on."
+    },
+    {
+      "start": 934.86,
+      "end": 938.86,
+      "text": "So it's pretty obvious what we need to do."
+    },
+    {
+      "start": 938.86,
+      "end": 943.86,
+      "text": "We want to be de-risking before them and we want to be transitioning."
+    },
+    {
+      "start": 943.86,
+      "end": 952.86,
+      "text": "Because what happens is when people de-risk, they create short-term trading opportunities in the market."
+    },
+    {
+      "start": 952.86,
+      "end": 958.86,
+      "text": "And we have to have cash or margin available to take advantage of these opportunities."
+    },
+    {
+      "start": 958.86,
+      "end": 962.86,
+      "text": "If we're fully invested in our portfolio, then we can't take advantage of them."
+    },
+    {
+      "start": 962.86,
+      "end": 965.86,
+      "text": "So we want to try and be ahead of the game."
+    },
+    {
+      "start": 965.86,
+      "end": 982.86,
+      "text": "And the way we should probably look at it is this traffic light system where if we're told that we can't day trade because we have a very low VIX and usually this is below 25% on the annualized volatility of the VIX."
+    },
+    {
+      "start": 982.86,
+      "end": 999.86,
+      "text": "And, you know, there's no rules here, you know, you might want to put a limit on it of 20% or even 15%, but usually 80% of the time it's below 25% annualized volatility on the S&P 500 volatility index."
+    },
+    {
+      "start": 999.86,
+      "end": 1008.86,
+      "text": "So when it's below that level and it's dropped 25%, what's happened?"
+    },
+    {
+      "start": 1008.86,
+      "end": 1015.86,
+      "text": "Well, it means that the portfolio risk of the world is dropping."
+    },
+    {
+      "start": 1015.86,
+      "end": 1019.86,
+      "text": "So what you get paid to be a portfolio manager is now better."
+    },
+    {
+      "start": 1019.86,
+      "end": 1027.86,
+      "text": "You're becoming the opportunities to get paid as a portfolio manager are increasing."
+    },
+    {
+      "start": 1027.86,
+      "end": 1034.86,
+      "text": "So we want to be transitioning into being portfolio managers at these times."
+    },
+    {
+      "start": 1034.86,
+      "end": 1049.86,
+      "text": "Then, right on the other side, let's say, for example, the VIX jumps 25% or more from wherever the level is that it's been at for a while."
+    },
+    {
+      "start": 1049.86,
+      "end": 1054.86,
+      "text": "That just means that the risk of the world has gone up by 25%."
+    },
+    {
+      "start": 1054.86,
+      "end": 1066.86,
+      "text": "So the global risk of portfolio management is up by 25%, which means the world is now being paid less to be portfolio managers."
+    },
+    {
+      "start": 1066.86,
+      "end": 1073.86,
+      "text": "Whether they like it or not, their risk is going up by this amount."
+    },
+    {
+      "start": 1073.86,
+      "end": 1081.86,
+      "text": "So their P&L swings, the volatility of their P&L swings, is going up by this amount."
+    },
+    {
+      "start": 1081.86,
+      "end": 1085.86,
+      "text": "And they may be forced to de-risk."
+    },
+    {
+      "start": 1085.86,
+      "end": 1094.86,
+      "text": "So we want to be predicting this and we want to be making sure that we do something about it."
+    },
+    {
+      "start": 1094.86,
+      "end": 1096.86,
+      "text": "So this is why we transition."
+    },
+    {
+      "start": 1096.86,
+      "end": 1098.86,
+      "text": "So these are all back of the envelope numbers."
+    },
+    {
+      "start": 1098.86,
+      "end": 1112.86,
+      "text": "You can't, again, go down to the local bookstore or go onto Amazon.com and buy a book which says you should do this in all situations when trading volatility or transitioning."
+    },
+    {
+      "start": 1112.86,
+      "end": 1119.86,
+      "text": "But when we get the green light to do so, you should probably be thinking of doing something."
+    },
+    {
+      "start": 1119.86,
+      "end": 1122.86,
+      "text": "Because you don't want the opposite to happen."
+    },
+    {
+      "start": 1122.86,
+      "end": 1126.86,
+      "text": "The opposite is you're fully invested as a portfolio manager."
+    },
+    {
+      "start": 1126.86,
+      "end": 1127.86,
+      "text": "You do nothing."
+    },
+    {
+      "start": 1127.86,
+      "end": 1129.86,
+      "text": "And then you're the rabbit in the headlights."
+    },
+    {
+      "start": 1129.86,
+      "end": 1135.86,
+      "text": "And then you have to trade out of your portfolio when volatility has already rallied."
+    },
+    {
+      "start": 1135.86,
+      "end": 1144.86,
+      "text": "And it's now on its highs because all you're going to do there is provide liquidity for all the day traders to make money out of you."
+    },
+    {
+      "start": 1144.86,
+      "end": 1152.86,
+      "text": "So we want to be doing something when we see the VIX rallying 25% or more."
+    },
+    {
+      "start": 1152.86,
+      "end": 1165.86,
+      "text": "And this is usually when we're in some sort of transition zone where we see volatility creeping and there's news out."
+    },
+    {
+      "start": 1165.86,
+      "end": 1168.86,
+      "text": "And, you know, this news can be anything."
+    },
+    {
+      "start": 1168.86,
+      "end": 1170.86,
+      "text": "It changes all the time."
+    },
+    {
+      "start": 1170.86,
+      "end": 1181.86,
+      "text": "So these amber situations can really be anything that disturbs the status quo in the market."
+    },
+    {
+      "start": 1181.86,
+      "end": 1184.86,
+      "text": "And they can be negative and positive surprises."
+    },
+    {
+      "start": 1184.86,
+      "end": 1187.86,
+      "text": "But what you'll find is usually they are negative surprises."
+    },
+    {
+      "start": 1187.86,
+      "end": 1206.86,
+      "text": "So, for example, if we go back to the volatility index, you know, the last spikes that we saw in volatility, this one here was the ratings downgrade of the United States in the summer of 2011."
+    },
+    {
+      "start": 1206.86,
+      "end": 1217.86,
+      "text": "Previous to that, we had the Fukushima disaster in Japan, which actually occurred over a weekend."
+    },
+    {
+      "start": 1217.86,
+      "end": 1220.86,
+      "text": "And traders didn't really have the opportunity to transition."
+    },
+    {
+      "start": 1220.86,
+      "end": 1226.86,
+      "text": "Prior to that, we had the flash crash in May 2010."
+    },
+    {
+      "start": 1226.86,
+      "end": 1230.86,
+      "text": "And that happened very quickly as well."
+    },
+    {
+      "start": 1230.86,
+      "end": 1235.86,
+      "text": "So as portfolio managers, you have to be quite careful."
+    },
+    {
+      "start": 1235.86,
+      "end": 1240.86,
+      "text": "You know, here in 2011, we had two situations where volatility spiked."
+    },
+    {
+      "start": 1240.86,
+      "end": 1251.86,
+      "text": "And one of these moves in 2011, the Japan earthquake happened at a weekend and volatility just moved on Monday."
+    },
+    {
+      "start": 1251.86,
+      "end": 1259.86,
+      "text": "There was very little opportunity for traders to transition at all, which is why you saw so much volume when people were de-risking."
+    },
+    {
+      "start": 1259.86,
+      "end": 1263.86,
+      "text": "At the lows of the market."
+    },
+    {
+      "start": 1263.86,
+      "end": 1271.86,
+      "text": "However, the ratings downgrade of the United States, this jump volatility jumped in stages."
+    },
+    {
+      "start": 1271.86,
+      "end": 1276.86,
+      "text": "And there was a lot of opportunity to actually day trade around this level here."
+    },
+    {
+      "start": 1276.86,
+      "end": 1279.86,
+      "text": "And there were wholesale opportunities to day trade."
+    },
+    {
+      "start": 1279.86,
+      "end": 1284.86,
+      "text": "So a lot of day traders made really good money in this move."
+    },
+    {
+      "start": 1284.86,
+      "end": 1298.86,
+      "text": "And also in 2012, this move here, 2012, this really came from Europe."
+    },
+    {
+      "start": 1298.86,
+      "end": 1311.86,
+      "text": "So we saw the moves in Spanish and Italian bond yields, where there was a significant increase in sovereign debt risk in the Eurozone."
+    },
+    {
+      "start": 1311.86,
+      "end": 1321.86,
+      "text": "And we saw volatility jump from low to mid teens up to the 25 level."
+    },
+    {
+      "start": 1321.86,
+      "end": 1333.86,
+      "text": "And we saw a sell off in the market ahead of Mario Draghi telling the world that the ECB would backstop the Eurozone."
+    },
+    {
+      "start": 1333.86,
+      "end": 1348.86,
+      "text": "And that was really the last opportunity where you could have day traded on this move where there were wholesale opportunities and then build back into your portfolio as volatility was coming down."
+    },
+    {
+      "start": 1348.86,
+      "end": 1360.86,
+      "text": "And then basically for the second half of 2012 up to present day, volatility has been very, very low."
+    },
+    {
+      "start": 1360.86,
+      "end": 1365.86,
+      "text": "So we've been able to be a portfolio manager really for the last nine months."
+    },
+    {
+      "start": 1365.86,
+      "end": 1371.86,
+      "text": "So we're just in April at the moment, April 2013, as we're making this video."
+    },
+    {
+      "start": 1371.86,
+      "end": 1377.86,
+      "text": "So for the last nine or so months, if you've been day trading, you've been killed."
+    },
+    {
+      "start": 1377.86,
+      "end": 1380.86,
+      "text": "If you've been a portfolio manager, you've done really well."
+    },
+    {
+      "start": 1380.86,
+      "end": 1382.86,
+      "text": "Well, you've probably done really well."
+    },
+    {
+      "start": 1382.86,
+      "end": 1392.86,
+      "text": "So these amber situations, they can be anything at any time."
+    },
+    {
+      "start": 1392.86,
+      "end": 1400.86,
+      "text": "So you just have to recognize what's going on and do something about it if you're not comfortable with the risk."
+    },
+    {
+      "start": 1400.86,
+      "end": 1407.86,
+      "text": "And there is no rule book, unfortunately."
+    },
+    {
+      "start": 1407.86,
+      "end": 1413.86,
+      "text": "But I guess the back of the envelope rule is do something if you can."
+    },
+    {
+      "start": 1413.86,
+      "end": 1424.86,
+      "text": "Because you want to be able to free up cash and free up margin in your trading account so you can actually take advantage of the volatility."
+    },
+    {
+      "start": 1424.86,
+      "end": 1427.86,
+      "text": "If you don't, then you're just the rabbit in the headlights."
+    },
+    {
+      "start": 1427.86,
+      "end": 1436.86,
+      "text": "And you're the guy who's sitting there twiddling their thumbs, wondering what's going on, wondering whether you should do anything."
+    },
+    {
+      "start": 1436.86,
+      "end": 1443.86,
+      "text": "And just watching your risk go up and up and up."
+    },
+    {
+      "start": 1443.86,
+      "end": 1451.86,
+      "text": "And in the end, you may capitulate and end up trading out of your portfolio at a level where you shouldn't trade out of it."
+    },
+    {
+      "start": 1451.86,
+      "end": 1458.86,
+      "text": "And you might end up being the last person to trade out, which is exactly what we don't want."
+    },
+    {
+      "start": 1458.86,
+      "end": 1460.86,
+      "text": "So unfortunately, there is no rule book."
+    },
+    {
+      "start": 1460.86,
+      "end": 1468.86,
+      "text": "But I guess the first step would be to actually recognize what's going on and do something."
+    },
+    {
+      "start": 1468.86,
+      "end": 1480.86,
+      "text": "So back of the envelope, when index vol is in transition and rising, then you should probably look to trade out of half of your portfolio."
+    },
+    {
+      "start": 1480.86,
+      "end": 1485.86,
+      "text": "So reduce the amount of positions in your portfolio by 50%."
+    },
+    {
+      "start": 1485.86,
+      "end": 1497.86,
+      "text": "And then take a day trading approach and just look for these opportunities for directional bets over a one to five day time horizon instead of one to three months."
+    },
+    {
+      "start": 1497.86,
+      "end": 1502.86,
+      "text": "And then you do the reverse when volatility is in transition and falling."
+    },
+    {
+      "start": 1502.86,
+      "end": 1512.86,
+      "text": "You should probably be looking at increasing the amount of positions in your portfolio by double, so by 100%."
+    },
+    {
+      "start": 1512.86,
+      "end": 1519.86,
+      "text": "And then take the portfolio based approach, put cash to work in a well diversified long short portfolio."
+    },
+    {
+      "start": 1519.86,
+      "end": 1529.86,
+      "text": "So again, there's no hard and fast rules telling you exactly what you can and can't do when the VIX goes up or down aggressively."
+    },
+    {
+      "start": 1529.86,
+      "end": 1532.86,
+      "text": "Everyone's risk tolerance is different."
+    },
+    {
+      "start": 1532.86,
+      "end": 1534.86,
+      "text": "Everyone's strategies are different."
+    },
+    {
+      "start": 1534.86,
+      "end": 1538.86,
+      "text": "And everyone's portfolio looks different and is made up differently."
+    },
+    {
+      "start": 1538.86,
+      "end": 1548.86,
+      "text": "So when the VIX does rally aggressively, you've got to interpret what's happening in the world at the time and why it's going up so fast."
+    },
+    {
+      "start": 1548.86,
+      "end": 1561.86,
+      "text": "And then if you don't like the volatility risk, then just reduce your portfolio, reduce your exposure because you need to understand again that as the VIX is going up, the world's portfolio risk is going up and so is yours."
+    },
+    {
+      "start": 1561.86,
+      "end": 1567.86,
+      "text": "And it's going up and there's nothing you can do about it unless you actually go and reduce your exposure."
+    },
+    {
+      "start": 1568.86,
+      "end": 1576.86,
+      "text": "And then when the opposite occurs, so when the VIX is falling aggressively, you've got to interpret what's happening and why it's falling so fast."
+    },
+    {
+      "start": 1577.86,
+      "end": 1584.86,
+      "text": "It'll be falling fast because something will have occurred that takes away the risk in the market."
+    },
+    {
+      "start": 1584.86,
+      "end": 1597.86,
+      "text": "And you're going to be told by when you're day trading, if you are at that time, that this is happening because you're going to find it increasingly tougher to make money as a day trader."
+    },
+    {
+      "start": 1598.86,
+      "end": 1605.86,
+      "text": "And that's when you should be taking this as a message and building a well diversified long short portfolio."
+    },
+    {
+      "start": 1606.86,
+      "end": 1615.86,
+      "text": "And if you don't take this approach, then all you're doing is you're not maximizing your opportunities and you're not taking the professional trading approach."
+    },
+    {
+      "start": 1615.86,
+      "end": 1622.86,
+      "text": "So if you're just a day trader all the time, you're trying to dictate to the market what you can and can't do."
+    },
+    {
+      "start": 1623.86,
+      "end": 1630.86,
+      "text": "Whereas professional traders actually do the opposite and just let the market tell them what they can and can't do."
+    },
+    {
+      "start": 1630.86,
+      "end": 1633.86,
+      "text": "And this is the classic retail trader mistake."
+    },
+    {
+      "start": 1633.86,
+      "end": 1639.86,
+      "text": "So all of this stuff you've seen at the beginning of the video series, but this is why we're going through it again."
+    },
+    {
+      "start": 1639.86,
+      "end": 1644.86,
+      "text": "Because if you're seriously going to consider day trading, then you need to understand this stuff."
+    },
+    {
+      "start": 1645.86,
+      "end": 1653.86,
+      "text": "You need to understand why retail traders typically lose money so much and so many of them do that."
+    },
+    {
+      "start": 1654.86,
+      "end": 1662.86,
+      "text": "And this is exactly why, because they try to tell the market what their opportunities are and just take a very one dimensional approach."
+    },
+    {
+      "start": 1662.86,
+      "end": 1667.86,
+      "text": "Whereas the professional traders take the approach that the market allows them to take."
+    },
+    {
+      "start": 1670.86,
+      "end": 1680.86,
+      "text": "Now, when you actually decide to day trade, there is further reasons why the vast majority of day traders lose money."
+    },
+    {
+      "start": 1681.86,
+      "end": 1687.86,
+      "text": "And we've already seen the first one, a general appreciation for the opportunities available."
+    },
+    {
+      "start": 1688.86,
+      "end": 1691.86,
+      "text": "So no appreciation for those general opportunities that are available."
+    },
+    {
+      "start": 1692.86,
+      "end": 1695.86,
+      "text": "So people don't really focus on market conditions."
+    },
+    {
+      "start": 1696.86,
+      "end": 1698.86,
+      "text": "The second thing is a lack of preparation."
+    },
+    {
+      "start": 1699.86,
+      "end": 1702.86,
+      "text": "So there's no similar to portfolio management."
+    },
+    {
+      "start": 1702.86,
+      "end": 1712.86,
+      "text": "There's never really systematic processes in place to determine what to do, given the market conditions and asset specific conditions."
+    },
+    {
+      "start": 1713.86,
+      "end": 1716.86,
+      "text": "The third thing really is unrealistic expectations."
+    },
+    {
+      "start": 1717.86,
+      "end": 1724.86,
+      "text": "So most of the time, volatility in the general market is too low to warrant a 100% day trading only approach."
+    },
+    {
+      "start": 1724.86,
+      "end": 1730.86,
+      "text": "This is the idea, again, that you're dictating to the market what the opportunities are."
+    },
+    {
+      "start": 1731.86,
+      "end": 1735.86,
+      "text": "And you're telling the market, this is how I'm going to trade and the market's irrelevant."
+    },
+    {
+      "start": 1736.86,
+      "end": 1746.86,
+      "text": "And the fourth thing is really just day trading on old news or news that doesn't really affect the asset that you think it's going to affect."
+    },
+    {
+      "start": 1747.86,
+      "end": 1748.86,
+      "text": "And only using technical indicators."
+    },
+    {
+      "start": 1748.86,
+      "end": 1761.86,
+      "text": "So most retail traders that day trade really just trade on newspaper articles, TV headlines and old news, however it's delivered to them."
+    },
+    {
+      "start": 1762.86,
+      "end": 1768.86,
+      "text": "And most because it's easy to understand and it's easy for other people to make you understand it."
+    },
+    {
+      "start": 1769.86,
+      "end": 1778.86,
+      "text": "Most people, most retail traders, when they're day trading, just trade using technical analysis systems that are just not volatility dependent."
+    },
+    {
+      "start": 1780.86,
+      "end": 1783.86,
+      "text": "So you need to move away from this."
+    },
+    {
+      "start": 1784.86,
+      "end": 1793.86,
+      "text": "This idea that I can just follow a line on a chart and just day trade because one, the market doesn't allow you to do that 80% of the time."
+    },
+    {
+      "start": 1794.86,
+      "end": 1797.86,
+      "text": "And secondly, if life were that easy, we'd all be doing it."
+    },
+    {
+      "start": 1798.86,
+      "end": 1803.86,
+      "text": "All professional traders would be using technical analysis, day trading as the only way to day trade."
+    },
+    {
+      "start": 1804.86,
+      "end": 1805.86,
+      "text": "The problem is, is that none of them do."
+    },
+    {
+      "start": 1806.86,
+      "end": 1812.86,
+      "text": "And, you know, the reason why people are taught TA systems is because it's just easy to understand."
+    },
+    {
+      "start": 1813.86,
+      "end": 1822.86,
+      "text": "And you're told what you want to hear, retail traders are told what they want to hear all the time, which is trading is just easy."
+    },
+    {
+      "start": 1823.86,
+      "end": 1826.86,
+      "text": "And you can make an income from it and you just have to follow this line on the chart."
+    },
+    {
+      "start": 1827.86,
+      "end": 1828.86,
+      "text": "Unfortunately, it's not that easy."
+    },
+    {
+      "start": 1829.86,
+      "end": 1834.86,
+      "text": "As you've probably seen throughout the video series, it's actually quite a bit of work."
+    },
+    {
+      "start": 1835.86,
+      "end": 1848.86,
+      "text": "But once you're up to speed and you understand how the market works and how you have to approach the market in the same way that professional traders do, once you're up that curve, it's fairly straightforward."
+    },
+    {
+      "start": 1849.86,
+      "end": 1856.86,
+      "text": "You just go through your processes, go through the investment process that we've seen, and have your processes in place every week."
+    },
+    {
+      "start": 1856.86,
+      "end": 1861.86,
+      "text": "And the opportunities will actually present themselves to you."
+    },
+    {
+      "start": 1863.86,
+      "end": 1865.86,
+      "text": "So that's the first thing, volatility."
+    },
+    {
+      "start": 1865.86,
+      "end": 1870.86,
+      "text": "We've just got to have a proper appreciation of this and know when we can and can't day trade."
+    },
+    {
+      "start": 1871.86,
+      "end": 1874.86,
+      "text": "And allow the market to tell us what the opportunities are."
+    },
+    {
+      "start": 1875.86,
+      "end": 1878.86,
+      "text": "Second thing we're going to look at is discipline and track record."
+    },
+    {
+      "start": 1879.86,
+      "end": 1881.86,
+      "text": "And we saw the Kelly criterion in previous videos."
+    },
+    {
+      "start": 1882.86,
+      "end": 1884.86,
+      "text": "So we're not going to labor this point too much."
+    },
+    {
+      "start": 1885.86,
+      "end": 1894.86,
+      "text": "But what you need to be doing is absolutely having a separate Kelly criterion for your day trading versus your portfolio management."
+    },
+    {
+      "start": 1895.86,
+      "end": 1904.86,
+      "text": "If you mix them up, so if you mix your day trades in with your longer term, your medium to longer term portfolio positions,"
+    },
+    {
+      "start": 1904.86,
+      "end": 1908.86,
+      "text": "you're not really learning anything in terms of your self-awareness as a trader."
+    },
+    {
+      "start": 1908.86,
+      "end": 1915.86,
+      "text": "Because it's going to be really difficult to tell whether you're good at portfolio management and bad at day trading,"
+    },
+    {
+      "start": 1915.86,
+      "end": 1921.86,
+      "text": "or bad at portfolio management and good at day trading, if you mix all of your trades up."
+    },
+    {
+      "start": 1921.86,
+      "end": 1928.86,
+      "text": "So you need to keep a separate Kelly criterion for your portfolio management and for your day trading."
+    },
+    {
+      "start": 1928.86,
+      "end": 1940.86,
+      "text": "So in the future, when you look back, you can really decide what you're good at and where you should be pulling from box A or pulling from box B,"
+    },
+    {
+      "start": 1940.86,
+      "end": 1947.86,
+      "text": "i.e. concentrating your efforts more and deploying more capital to each area or to either one of the areas."
+    },
+    {
+      "start": 1947.86,
+      "end": 1959.86,
+      "text": "So if you're a good portfolio manager and a bad day trader, then you should be pulling from box A in your life as a trader and doing more portfolio management."
+    },
+    {
+      "start": 1959.86,
+      "end": 1966.86,
+      "text": "In portfolio management, pull from box A, deploy more capital and pull from box B in day trading."
+    },
+    {
+      "start": 1966.86,
+      "end": 1977.86,
+      "text": "If you're bad at day trading and good at portfolio management, you need to deploy less capital or no capital at all when day trading opportunities occur."
+    },
+    {
+      "start": 1977.86,
+      "end": 1984.86,
+      "text": "It just means you're bad at day trading. So your P and L, your losses will tell you that anyway."
+    },
+    {
+      "start": 1984.86,
+      "end": 1993.86,
+      "text": "But your case score will also tell you that. But just make sure you keep a separate Kelly criterion for your portfolio management and your day trading."
+    },
+    {
+      "start": 1993.86,
+      "end": 2000.86,
+      "text": "Now, when you actually go in day trade, we're going to look at how you interpret news flow."
+    },
+    {
+      "start": 2000.86,
+      "end": 2013.86,
+      "text": "So economic and asset specific news flow. And regardless really of whether you're taking a portfolio management approach or a day trading approach,"
+    },
+    {
+      "start": 2013.86,
+      "end": 2027.86,
+      "text": "volatility and opportunities are generally driven within two areas across the asset classes, either as economic news flow or asset specific news flow."
+    },
+    {
+      "start": 2027.86,
+      "end": 2042.86,
+      "text": "And economic, really, economic news flow occurs at a macro level and affects countries, currencies, commodities, bonds, stocks and sectors relative to each other within the stock market."
+    },
+    {
+      "start": 2042.86,
+      "end": 2059.86,
+      "text": "Because when you look at stocks and sectors, we're looking at cyclicals and defensives. So big moves in economic expectations or economic news flow that's significant really affects everything at a macro level."
+    },
+    {
+      "start": 2059.86,
+      "end": 2071.86,
+      "text": "And at a macro level affecting countries, we're looking at currencies and bonds, so interest rates. And at a global level, we're looking at commodities."
+    },
+    {
+      "start": 2071.86,
+      "end": 2078.86,
+      "text": "And also at a global level, we're looking at stocks and sectors, so cyclicals versus defensives."
+    },
+    {
+      "start": 2078.86,
+      "end": 2094.86,
+      "text": "In the asset specific news flow arena, it really occurs at a microeconomic sector level and unique level, i.e. a unique level, meaning unique to the asset that you're trading."
+    },
+    {
+      "start": 2094.86,
+      "end": 2101.86,
+      "text": "So currencies, so currencies really are just macroeconomic and political only news flow."
+    },
+    {
+      "start": 2101.86,
+      "end": 2113.86,
+      "text": "Commodities, news flow is pretty much macroeconomic, but also demand and supply dependent on micro factors."
+    },
+    {
+      "start": 2113.86,
+      "end": 2121.86,
+      "text": "So there are micro factors that affect the supply chain and demand to commodities."
+    },
+    {
+      "start": 2121.86,
+      "end": 2126.86,
+      "text": "And bonds and rates are just macro and political only."
+    },
+    {
+      "start": 2126.86,
+      "end": 2138.86,
+      "text": "And stocks, macroeconomic and stocks, macroeconomic use flow affects indices and micro affects sectors and unique specific situations."
+    },
+    {
+      "start": 2138.86,
+      "end": 2140.86,
+      "text": "So companies themselves."
+    },
+    {
+      "start": 2143.86,
+      "end": 2156.86,
+      "text": "Now, if we run through the economics, in the US, we've been through a lot of these leading indicators, coincidence and lagging."
+    },
+    {
+      "start": 2156.86,
+      "end": 2162.86,
+      "text": "You can classify them either as coincidence or lagging."
+    },
+    {
+      "start": 2162.86,
+      "end": 2164.86,
+      "text": "But let's just run through them again."
+    },
+    {
+      "start": 2164.86,
+      "end": 2171.86,
+      "text": "So we've got the ISM Manufacturing Index, non-manufacturing, UMCSI, building permits."
+    },
+    {
+      "start": 2171.86,
+      "end": 2177.86,
+      "text": "We've also got the money supply and the yield curve itself of the US bond market."
+    },
+    {
+      "start": 2177.86,
+      "end": 2188.86,
+      "text": "So you'll see a lot of the time that the bond market will actually price in slightly before the equities market moves that are expected."
+    },
+    {
+      "start": 2188.86,
+      "end": 2191.86,
+      "text": "So a change in expectations."
+    },
+    {
+      "start": 2191.86,
+      "end": 2198.86,
+      "text": "And coincident indicators are really lagging indicators to leading indicators."
+    },
+    {
+      "start": 2198.86,
+      "end": 2200.86,
+      "text": "So they provide us with confirmation."
+    },
+    {
+      "start": 2201.86,
+      "end": 2203.86,
+      "text": "So again, we've got inflation."
+    },
+    {
+      "start": 2203.86,
+      "end": 2207.86,
+      "text": "So producer price index and consumer price index."
+    },
+    {
+      "start": 2207.86,
+      "end": 2217.86,
+      "text": "We've got the employment situation report, non-farm payrolls, jobless claims, industrial production, durable goods, even FOMC meetings."
+    },
+    {
+      "start": 2217.86,
+      "end": 2219.86,
+      "text": "So the minutes of the meetings from the FOMC."
+    },
+    {
+      "start": 2219.86,
+      "end": 2223.86,
+      "text": "And personal income, factory ordered numbers."
+    },
+    {
+      "start": 2223.86,
+      "end": 2225.86,
+      "text": "These are all coincidence indicators."
+    },
+    {
+      "start": 2225.86,
+      "end": 2228.86,
+      "text": "And you shouldn't really be day trading on these numbers."
+    },
+    {
+      "start": 2228.86,
+      "end": 2235.86,
+      "text": "Because the numbers are really known by most professional traders before they come out."
+    },
+    {
+      "start": 2235.86,
+      "end": 2242.86,
+      "text": "And all you're doing is providing liquidity on the other side for professional traders to trade."
+    },
+    {
+      "start": 2242.86,
+      "end": 2255.86,
+      "text": "And lagging indicators absolutely do not trade on lagging indicators unless there's a huge material change versus what's already totally priced into the market."
+    },
+    {
+      "start": 2255.86,
+      "end": 2264.86,
+      "text": "So gross domestic product itself, the unemployment rate, the Fed's beige book, and retail sales."
+    },
+    {
+      "start": 2264.86,
+      "end": 2276.86,
+      "text": "You know, these coincidence and lagging indicators are numbers that retail traders who take the day trading approach, and that's pretty much all of them."
+    },
+    {
+      "start": 2276.86,
+      "end": 2288.86,
+      "text": "These coincidences and lagging indicators suck day traders in to trading on headlines that just don't matter."
+    },
+    {
+      "start": 2288.86,
+      "end": 2297.86,
+      "text": "What really matters is where the market's going to be in the future, not where it is now or where it's been."
+    },
+    {
+      "start": 2297.86,
+      "end": 2306.86,
+      "text": "So leading, we're looking at what's going on in the future and making decisions on what we expect in the future."
+    },
+    {
+      "start": 2306.86,
+      "end": 2316.86,
+      "text": "Coincidence indicators tell us what's going on in the market now, and leading indicators should have told us this six to 12 months previously."
+    },
+    {
+      "start": 2316.86,
+      "end": 2328.86,
+      "text": "Unless there's any huge material surprises, as a retail trader, you should not be day trading on coincidence indicator news flow."
+    },
+    {
+      "start": 2328.86,
+      "end": 2341.86,
+      "text": "So that leaves lagging indicators, which means they're just almost completely useless, unless there's a huge change from expectation."
+    },
+    {
+      "start": 2341.86,
+      "end": 2345.86,
+      "text": "And there very, very, very rarely is."
+    },
+    {
+      "start": 2345.86,
+      "end": 2348.86,
+      "text": "So be careful in your approach there."
+    },
+    {
+      "start": 2348.86,
+      "end": 2361.86,
+      "text": "You know, imagine if you're the person listening to this video now that day trades on coincident indicators when they come out and you day trade all the time."
+    },
+    {
+      "start": 2361.86,
+      "end": 2374.86,
+      "text": "Well, that just means you're day trading in markets where the volatility index is telling you that the opportunities to day trade are extremely low and extremely difficult to make money out of."
+    },
+    {
+      "start": 2374.86,
+      "end": 2377.86,
+      "text": "And you're trading on old news."
+    },
+    {
+      "start": 2377.86,
+      "end": 2384.86,
+      "text": "You're trading on what professional traders classify as confirmation indicators."
+    },
+    {
+      "start": 2384.86,
+      "end": 2390.86,
+      "text": "Unfortunately, that's what a very large percentage of retail traders do."
+    },
+    {
+      "start": 2390.86,
+      "end": 2397.86,
+      "text": "And that's pretty much the reason, in a nutshell, why most of them lose money."
+    },
+    {
+      "start": 2397.86,
+      "end": 2399.86,
+      "text": "You've got to do the opposite to that."
+    },
+    {
+      "start": 2399.86,
+      "end": 2401.86,
+      "text": "Only day trade when the market allows you to do so."
+    },
+    {
+      "start": 2401.86,
+      "end": 2408.86,
+      "text": "And if you're going to day trade on economic numbers, day trade on the leading indicators."
+    },
+    {
+      "start": 2408.86,
+      "end": 2410.86,
+      "text": "What about in Europe?"
+    },
+    {
+      "start": 2410.86,
+      "end": 2411.86,
+      "text": "Same thing applies."
+    },
+    {
+      "start": 2411.86,
+      "end": 2428.86,
+      "text": "Leading indicators, the ESI, so the European Economic Sentiment Indicator, where we have the Industrial Confidence Indicator, which is the equivalent of the ISM Manufacturing Index in Europe."
+    },
+    {
+      "start": 2428.86,
+      "end": 2435.86,
+      "text": "The Services Confidence Indicator, which is the equivalent of the Non Manufacturing Index, but in Europe."
+    },
+    {
+      "start": 2435.86,
+      "end": 2438.86,
+      "text": "We've got the European Consumer Sentiment Indicator."
+    },
+    {
+      "start": 2438.86,
+      "end": 2443.86,
+      "text": "And then we've got Retail Trade Confidence Indicator and the Construction Confidence Indicator."
+    },
+    {
+      "start": 2443.86,
+      "end": 2460.86,
+      "text": "If you want to go into more detail, then just go back to the video on the ESI, go through it again, go online, go to the website, download the data, and see how the indicators are actually made up."
+    },
+    {
+      "start": 2460.86,
+      "end": 2464.86,
+      "text": "It's very straightforward to become a student of PMIs."
+    },
+    {
+      "start": 2464.86,
+      "end": 2466.86,
+      "text": "All the information is publicly available."
+    },
+    {
+      "start": 2466.86,
+      "end": 2468.86,
+      "text": "You just go online and get it."
+    },
+    {
+      "start": 2469.86,
+      "end": 2483.86,
+      "text": "Coincident, in Europe, most popular ones that retail traders day trade on, usually industrial production, monthly inflation numbers across all countries,"
+    },
+    {
+      "start": 2483.86,
+      "end": 2490.86,
+      "text": "and the ECB meetings, ECB decisions, Bank of England meetings, Bank of England decisions."
+    },
+    {
+      "start": 2490.86,
+      "end": 2494.86,
+      "text": "They're usually lagging all the leading indicators."
+    },
+    {
+      "start": 2494.86,
+      "end": 2506.86,
+      "text": "So six or 12 months before, the leading indicators will have told you that the ECB needs to lower interest rates, or the ECB needs to increase money printing, or the same for the Bank of England."
+    },
+    {
+      "start": 2506.86,
+      "end": 2509.86,
+      "text": "So by the time they actually do it, it's usually priced into the market."
+    },
+    {
+      "start": 2509.86,
+      "end": 2519.86,
+      "text": "And lagging indicators, same ones, lagging indicators are the same usually across all regions."
+    },
+    {
+      "start": 2519.86,
+      "end": 2528.86,
+      "text": "So GDP itself, unemployment across all countries, and retail sales across all countries."
+    },
+    {
+      "start": 2528.86,
+      "end": 2536.86,
+      "text": "In China, I'm just going to introduce you to a new one here, which is called the Conference Board Leading Economic Index."
+    },
+    {
+      "start": 2536.86,
+      "end": 2543.86,
+      "text": "So that gives us now three that we can potentially trade on, even as short-term traders."
+    },
+    {
+      "start": 2543.86,
+      "end": 2548.86,
+      "text": "So we've got the HSBC, China PMI."
+    },
+    {
+      "start": 2548.86,
+      "end": 2552.86,
+      "text": "We've got the official People's Bank of China Purchasing Managers Index."
+    },
+    {
+      "start": 2552.86,
+      "end": 2555.86,
+      "text": "So that's the Chinese government version."
+    },
+    {
+      "start": 2555.86,
+      "end": 2560.86,
+      "text": "And we've got the Conference Board Leading Economic Index."
+    },
+    {
+      "start": 2560.86,
+      "end": 2562.86,
+      "text": "So these are the three main ones."
+    },
+    {
+      "start": 2562.86,
+      "end": 2567.86,
+      "text": "And you may even want to look at Chinese export orders."
+    },
+    {
+      "start": 2567.86,
+      "end": 2571.86,
+      "text": "Export orders really are a coincidence indicator."
+    },
+    {
+      "start": 2571.86,
+      "end": 2575.86,
+      "text": "They kind of fall between leading and coincidence."
+    },
+    {
+      "start": 2575.86,
+      "end": 2592.86,
+      "text": "So you can make a decision on export orders whether to day trade stocks globally that actually have a lot of China exposure in their earnings mix or in their revenue mix."
+    },
+    {
+      "start": 2592.86,
+      "end": 2597.86,
+      "text": "And you may decide to trade commodities on the back of that as well."
+    },
+    {
+      "start": 2597.86,
+      "end": 2601.86,
+      "text": "You can trade oil, copper, you can trade the food commodities."
+    },
+    {
+      "start": 2601.86,
+      "end": 2605.86,
+      "text": "Coincidence indicators in China, exactly the same."
+    },
+    {
+      "start": 2605.86,
+      "end": 2608.86,
+      "text": "Chinese industrial production and monthly inflation numbers."
+    },
+    {
+      "start": 2608.86,
+      "end": 2616.86,
+      "text": "And monthly inflation numbers in China, if you trade on those, there's something wrong with you."
+    },
+    {
+      "start": 2616.86,
+      "end": 2623.86,
+      "text": "Because not only is it a coincidence indicator, but the numbers are probably just made up anyway."
+    },
+    {
+      "start": 2623.86,
+      "end": 2630.86,
+      "text": "And lagging indicators, gross domestic product, unemployment, retail sales, the same as every other geographical region."
+    },
+    {
+      "start": 2630.86,
+      "end": 2646.86,
+      "text": "So I've put together a table for you of economic indicators that when they come out, you decide whether you trade on them or not based on leading coincidence or lagging."
+    },
+    {
+      "start": 2646.86,
+      "end": 2662.86,
+      "text": "And what you're probably going to see is an indication of what will happen in the market when these numbers come out, if they're indicated up or down."
+    },
+    {
+      "start": 2662.86,
+      "end": 2675.86,
+      "text": "So when you go through this table here where it's got, for example, ISM manufacturing indicated up, then you're probably going to see stocks go up, commodities go up, bonds go down, and the dollar go down."
+    },
+    {
+      "start": 2675.86,
+      "end": 2679.86,
+      "text": "And then we've got the release dates in here."
+    },
+    {
+      "start": 2679.86,
+      "end": 2688.86,
+      "text": "And then just assume that the opposite will happen if you see ISM manufacturing going down."
+    },
+    {
+      "start": 2688.86,
+      "end": 2701.86,
+      "text": "And then we've done this for every economic indicator here that matters as a leading indicator or as a coincidence indicator."
+    },
+    {
+      "start": 2701.86,
+      "end": 2713.86,
+      "text": "If you see, for example, PPI indicated up and you see stocks go up, commodities go up, bonds go down, dollar sideways."
+    },
+    {
+      "start": 2713.86,
+      "end": 2729.86,
+      "text": "If you see that happen, then non-participation is probably the option because we're not trading or day trading, short-term trading on coincidence indicators or even lagging indicators."
+    },
+    {
+      "start": 2729.86,
+      "end": 2737.86,
+      "text": "So just make sure you've got your definitions right of leading, coincident and lagging."
+    },
+    {
+      "start": 2737.86,
+      "end": 2763.86,
+      "text": "And make sure you go through this table, be a very useful resource for you when you're doing any trading whatsoever, but mostly in short-term trading because you'll be able to work out what the reaction is likely to be and whether you're going to participate or not based on the definition of leading, coincident and lagging indicators."
+    },
+    {
+      "start": 2763.86,
+      "end": 2765.86,
+      "text": "Now let's move on to asset-specific news flow."
+    },
+    {
+      "start": 2765.86,
+      "end": 2769.86,
+      "text": "Now let's move on to asset-specific news flow."
+    },
+    {
+      "start": 2769.86,
+      "end": 2777.86,
+      "text": "And this is probably where you get the larger opportunities to trade as a short-term day trader."
+    },
+    {
+      "start": 2777.86,
+      "end": 2795.86,
+      "text": "And if you're trading asset-specific news flow and you also have macro news flow that's material, these create the bigger opportunities because you've got wholesale opportunities to day trade."
+    },
+    {
+      "start": 2795.86,
+      "end": 2815.86,
+      "text": "So for example, the VIX rallying 50% and you've got materially positive or negative news flow at a micro level, so sector level and unique level at the same time as that, then you're going to see big volatility in those particular assets."
+    },
+    {
+      "start": 2815.86,
+      "end": 2827.86,
+      "text": "And that's where you should be deploying capital if you've given yourself the opportunity to do so."
+    },
+    {
+      "start": 2827.86,
+      "end": 2837.86,
+      "text": "So currencies, you won't get asset-specific opportunities really there because it's all macroeconomic news flow and political only."
+    },
+    {
+      "start": 2837.86,
+      "end": 2849.86,
+      "text": "So when you trade a specific currency, it's because a macroeconomic condition has occurred which affects that specific country."
+    },
+    {
+      "start": 2849.86,
+      "end": 2869.86,
+      "text": "In commodities, it's broadly macro, but if you get micro news flow that specifically affects that particular commodity where it affects the supply chain, you're going to have opportunities to day trade it."
+    },
+    {
+      "start": 2869.86,
+      "end": 2882.86,
+      "text": "And examples of this would be, for example, the Energy Information Administration in the US when they release the inventories data for oil on a Wednesday."
+    },
+    {
+      "start": 2882.86,
+      "end": 2888.86,
+      "text": "And you get big moves versus expectations in inventory builds."
+    },
+    {
+      "start": 2888.86,
+      "end": 2895.86,
+      "text": "And that is basically affecting the supply chain, but not necessarily at a macro level."
+    },
+    {
+      "start": 2895.86,
+      "end": 2899.86,
+      "text": "There's been interference in the market."
+    },
+    {
+      "start": 2899.86,
+      "end": 2900.86,
+      "text": "That's unexpected."
+    },
+    {
+      "start": 2900.86,
+      "end": 2904.86,
+      "text": "And you can day trade oil on the back of those situations."
+    },
+    {
+      "start": 2904.86,
+      "end": 2910.86,
+      "text": "Other good examples of this would be, for example, in the food commodity space."
+    },
+    {
+      "start": 2910.86,
+      "end": 2923.86,
+      "text": "So in the grains like corn, wheat, in pulses like soybean, in livestock like cattle and hogs."
+    },
+    {
+      "start": 2923.86,
+      "end": 2938.86,
+      "text": "If you get microeconomic factors affecting the supply chain in those commodities, you can make good money day trading."
+    },
+    {
+      "start": 2938.86,
+      "end": 2940.86,
+      "text": "You'll see a lot of volatility around."
+    },
+    {
+      "start": 2940.86,
+      "end": 2958.86,
+      "text": "So, you know, good examples of this were in 2012 in the food commodities, where there was a heat wave in the United States, and we had some of the lowest corn, wheat and soybean crops for a generation."
+    },
+    {
+      "start": 2958.86,
+      "end": 2962.86,
+      "text": "And the weather really affected the supply chain."
+    },
+    {
+      "start": 2962.86,
+      "end": 2976.86,
+      "text": "And a lot of people made really good money jumping into corn very quickly and day trading it from the long side, and wheat and in soybean as well."
+    },
+    {
+      "start": 2976.86,
+      "end": 2990.86,
+      "text": "And, in fact, if you'd have just run those positions over the summer, you'd have made a lot of money in those three instruments, in those three commodities, because the trend actually continued for a good few months."
+    },
+    {
+      "start": 2990.86,
+      "end": 3003.86,
+      "text": "In bonds and rates, we've only got macroeconomic and political news that really affects the bond market and rates in a particular geographical region or country."
+    },
+    {
+      "start": 3003.86,
+      "end": 3012.86,
+      "text": "Micro factors really affect stocks the most, where you've got situations that affect particular supply chains."
+    },
+    {
+      "start": 3012.86,
+      "end": 3026.86,
+      "text": "So a good example of where the VIX went up significantly and at the same time you had micro factors affecting the value chain in a particular industry."
+    },
+    {
+      "start": 3026.86,
+      "end": 3033.86,
+      "text": "And unique news that was affecting that industry and stocks within the industry."
+    },
+    {
+      "start": 3033.86,
+      "end": 3041.86,
+      "text": "A very good example of that was the earthquake in Japan in 2011."
+    },
+    {
+      "start": 3041.86,
+      "end": 3052.86,
+      "text": "Because with the earthquake in the northeast of Japan, what you got was the tech supply chain effectively being wiped out in Japan."
+    },
+    {
+      "start": 3052.86,
+      "end": 3058.86,
+      "text": "And technology companies had to move all of their supply chain to Thailand."
+    },
+    {
+      "start": 3058.86,
+      "end": 3061.86,
+      "text": "A lot of companies had to do that."
+    },
+    {
+      "start": 3061.86,
+      "end": 3065.86,
+      "text": "And then you also had the Thai floods later in the year."
+    },
+    {
+      "start": 3065.86,
+      "end": 3073.86,
+      "text": "So there were some big day trading opportunities or short term opportunities in the US tech sector and the tech sector as a whole globally."
+    },
+    {
+      "start": 3073.86,
+      "end": 3080.86,
+      "text": "So if you get all of those three things lined up, that's where the big opportunities occur in short term trading."
+    },
+    {
+      "start": 3080.86,
+      "end": 3083.86,
+      "text": "And that was a really good example of that."
+    },
+    {
+      "start": 3083.86,
+      "end": 3085.86,
+      "text": "And usually you get these opportunities at least once a year."
+    },
+    {
+      "start": 3085.86,
+      "end": 3087.86,
+      "text": "So you've got to keep an eye out for them."
+    },
+    {
+      "start": 3087.86,
+      "end": 3094.86,
+      "text": "Now what about connecting the dots and how we hunt for volatility?"
+    },
+    {
+      "start": 3094.86,
+      "end": 3103.86,
+      "text": "Well, when we get to asset specific news flow, there's really five areas that we need to consider."
+    },
+    {
+      "start": 3103.86,
+      "end": 3106.86,
+      "text": "We need to consider the results of companies."
+    },
+    {
+      "start": 3106.86,
+      "end": 3110.86,
+      "text": "So earnings announcements and profit warnings."
+    },
+    {
+      "start": 3110.86,
+      "end": 3124.86,
+      "text": "So when companies materially miss their expected earnings numbers by the market or they meet them and they warn on future earnings."
+    },
+    {
+      "start": 3124.86,
+      "end": 3128.86,
+      "text": "So the market now has to downgrade their expectations."
+    },
+    {
+      "start": 3128.86,
+      "end": 3129.86,
+      "text": "Bid rumors."
+    },
+    {
+      "start": 3129.86,
+      "end": 3135.86,
+      "text": "So where there's rumors around that a company is going to be bought by another company."
+    },
+    {
+      "start": 3135.86,
+      "end": 3142.86,
+      "text": "Unique events that no one could foresee like a CEO dying in a car crash."
+    },
+    {
+      "start": 3142.86,
+      "end": 3144.86,
+      "text": "No one can ever see that coming."
+    },
+    {
+      "start": 3144.86,
+      "end": 3145.86,
+      "text": "And sentiment."
+    },
+    {
+      "start": 3145.86,
+      "end": 3147.86,
+      "text": "So big shifts in sentiment."
+    },
+    {
+      "start": 3147.86,
+      "end": 3160.86,
+      "text": "And big shifts in sentiment we mean by the market now views an asset totally differently because some unexpected news has occurred."
+    },
+    {
+      "start": 3160.86,
+      "end": 3165.86,
+      "text": "Knowing your asset."
+    },
+    {
+      "start": 3165.86,
+      "end": 3170.86,
+      "text": "So this is pretty important stuff."
+    },
+    {
+      "start": 3170.86,
+      "end": 3172.86,
+      "text": "We're going to use some examples here."
+    },
+    {
+      "start": 3172.86,
+      "end": 3177.86,
+      "text": "We're going to use some examples from the United Kingdom."
+    },
+    {
+      "start": 3177.86,
+      "end": 3183.86,
+      "text": "And we're going to go through a variance of ATR."
+    },
+    {
+      "start": 3183.86,
+      "end": 3185.86,
+      "text": "So a variance of average true range."
+    },
+    {
+      "start": 3185.86,
+      "end": 3194.86,
+      "text": "So this is what you should really do to understand if you're about to day trade something."
+    },
+    {
+      "start": 3194.86,
+      "end": 3202.86,
+      "text": "If you're about to go into the market and take a position on a day trade or a short term trade."
+    },
+    {
+      "start": 3202.86,
+      "end": 3209.86,
+      "text": "This is the exercise that you should really be doing once you've decided, OK, I'm going to day trade this asset now."
+    },
+    {
+      "start": 3209.86,
+      "end": 3212.86,
+      "text": "And a lot of people go in unprepared."
+    },
+    {
+      "start": 3212.86,
+      "end": 3218.86,
+      "text": "So I would say the first thing that you've got to do is make sure you read over this quickly again."
+    },
+    {
+      "start": 3218.86,
+      "end": 3223.86,
+      "text": "Make sure you read over the day trading best practices guide."
+    },
+    {
+      "start": 3223.86,
+      "end": 3229.86,
+      "text": "This will give you a good focus on whether you should actually be taking a position or not."
+    },
+    {
+      "start": 3229.86,
+      "end": 3233.86,
+      "text": "And how you outline your plan to do so."
+    },
+    {
+      "start": 3233.86,
+      "end": 3235.86,
+      "text": "Then move on to this."
+    },
+    {
+      "start": 3235.86,
+      "end": 3238.86,
+      "text": "Once you've actually decided, I'm going to take a position now."
+    },
+    {
+      "start": 3238.86,
+      "end": 3242.86,
+      "text": "Then you should be moving on to looking at a variance of the ATR."
+    },
+    {
+      "start": 3242.86,
+      "end": 3252.86,
+      "text": "So we're looking at here, Barclays in the FTSE 100 from the 1st of April 2011 to March 2012."
+    },
+    {
+      "start": 3252.86,
+      "end": 3259.86,
+      "text": "So we're looking at just about a year of data."
+    },
+    {
+      "start": 3259.86,
+      "end": 3265.86,
+      "text": "And we're looking at an average share value over the period."
+    },
+    {
+      "start": 3265.86,
+      "end": 3269.86,
+      "text": "We're looking at the average range, high to low."
+    },
+    {
+      "start": 3269.86,
+      "end": 3272.86,
+      "text": "So this is the ATR."
+    },
+    {
+      "start": 3272.86,
+      "end": 3280.86,
+      "text": "We're looking at the average open to high because we're assuming now that the market hasn't opened."
+    },
+    {
+      "start": 3280.86,
+      "end": 3287.86,
+      "text": "And we're looking at taking a position almost when the moment the market opens."
+    },
+    {
+      "start": 3287.86,
+      "end": 3290.86,
+      "text": "And the average open to low move."
+    },
+    {
+      "start": 3292.86,
+      "end": 3299.86,
+      "text": "And then we're looking at the average daily move close to close on a one day basis over this period."
+    },
+    {
+      "start": 3299.86,
+      "end": 3307.86,
+      "text": "And you should work this stuff out just so you can, one, manage your expectations, but also set stop losses and targets correctly."
+    },
+    {
+      "start": 3307.86,
+      "end": 3314.86,
+      "text": "So first thing we're going to look at is the Barclays volatility open to high."
+    },
+    {
+      "start": 3314.86,
+      "end": 3316.86,
+      "text": "So this is a variance of the ATR."
+    },
+    {
+      "start": 3316.86,
+      "end": 3319.86,
+      "text": "So we're only looking at the upside here."
+    },
+    {
+      "start": 3319.86,
+      "end": 3322.86,
+      "text": "And here we're looking at the downside."
+    },
+    {
+      "start": 3322.86,
+      "end": 3332.86,
+      "text": "So where the stock opens relative to where its trading high is on a day going back over a year."
+    },
+    {
+      "start": 3332.86,
+      "end": 3349.86,
+      "text": "And you can see very, very rarely does Barclays have a day where it goes over from open to trading high over 10p or 10p in the UK."
+    },
+    {
+      "start": 3351.86,
+      "end": 3362.86,
+      "text": "And if you're going into the market in the morning and you see materially positive news and you think it's going to be a really significant opportunity for day trading."
+    },
+    {
+      "start": 3362.86,
+      "end": 3380.86,
+      "text": "Well, your opportunity to actually buy Barclays from where it opens, you need to be clearly buying the stock from where it opens within at least 4p from where it opens."
+    },
+    {
+      "start": 3381.86,
+      "end": 3392.86,
+      "text": "And have a stop loss and a realistic target because very rarely does this stock actually go up above a 10p difference from the price that it opens."
+    },
+    {
+      "start": 3392.86,
+      "end": 3395.86,
+      "text": "So manage your expectations, firstly."
+    },
+    {
+      "start": 3395.86,
+      "end": 3399.86,
+      "text": "Secondly, set stop losses and targets accordingly."
+    },
+    {
+      "start": 3399.86,
+      "end": 3405.86,
+      "text": "And we can see here the average open to high move is actually just 5p."
+    },
+    {
+      "start": 3405.86,
+      "end": 3418.86,
+      "text": "So imagine if you don't get in at the open and there's materially positive news out and you don't get in and then from the open you get in at 10p above the opening price."
+    },
+    {
+      "start": 3418.86,
+      "end": 3425.86,
+      "text": "Well, the risk reward there just doesn't exist based on historical volatility, based on the open to high."
+    },
+    {
+      "start": 3425.86,
+      "end": 3436.86,
+      "text": "So you might want to make the statement that, am I really going to get opportunities here or am I just kidding myself?"
+    },
+    {
+      "start": 3436.86,
+      "end": 3439.86,
+      "text": "Am I doing a bum trade?"
+    },
+    {
+      "start": 3439.86,
+      "end": 3443.86,
+      "text": "Should I be deploying capital to this situation?"
+    },
+    {
+      "start": 3443.86,
+      "end": 3452.86,
+      "text": "It's obviously up to you as the individual, but you need to do these things in common sense."
+    },
+    {
+      "start": 3452.86,
+      "end": 3453.86,
+      "text": "There is no rule book."
+    },
+    {
+      "start": 3453.86,
+      "end": 3465.86,
+      "text": "Remember when we looked at capital deployment for spread trades and we said there is no rule book that you can buy which says this is how you deploy capital in all situations."
+    },
+    {
+      "start": 3465.86,
+      "end": 3466.86,
+      "text": "There isn't."
+    },
+    {
+      "start": 3466.86,
+      "end": 3467.86,
+      "text": "There isn't."
+    },
+    {
+      "start": 3467.86,
+      "end": 3472.86,
+      "text": "So you just have to look at the odds here and make a decision and use common sense."
+    },
+    {
+      "start": 3472.86,
+      "end": 3488.86,
+      "text": "So with an average open to high move of 5.1 pence from the open, if you buy this stock above 5 pence from the open, your odds of making money are actually very, very thin."
+    },
+    {
+      "start": 3488.86,
+      "end": 3510.86,
+      "text": "So manage your expectations and make sure that A, you either don't do it or B, if you're going to trade in Barclays and you get the situation at a good price and the risk reward is there to set a sensible stop loss and sensible target, then you can actually go ahead and deploy capital."
+    },
+    {
+      "start": 3510.86,
+      "end": 3511.86,
+      "text": "So what about on the downside?"
+    },
+    {
+      "start": 3511.86,
+      "end": 3519.86,
+      "text": "Well, it's pretty obvious there that on the downside, there aren't much opportunities to day trade Barclays."
+    },
+    {
+      "start": 3519.86,
+      "end": 3520.86,
+      "text": "You might want to move on."
+    },
+    {
+      "start": 3520.86,
+      "end": 3523.86,
+      "text": "You might want to look at something else."
+    },
+    {
+      "start": 3523.86,
+      "end": 3527.86,
+      "text": "The average open to low move is 4.9 pence."
+    },
+    {
+      "start": 3527.86,
+      "end": 3540.86,
+      "text": "If there's materially negative news out in Barclays and you think you're going to go into the market and short it on the open and make 50p, there's something wrong with you."
+    },
+    {
+      "start": 3540.86,
+      "end": 3542.86,
+      "text": "You've obviously not done your homework."
+    },
+    {
+      "start": 3542.86,
+      "end": 3545.86,
+      "text": "You've not pulled up the historical volatility."
+    },
+    {
+      "start": 3545.86,
+      "end": 3559.86,
+      "text": "You need to check this and manage your expectations, get in at a price that makes sense and set stop losses and targets accordingly."
+    },
+    {
+      "start": 3559.86,
+      "end": 3571.86,
+      "text": "And we've got some repeated analysis here for stocks in the FTSE 100 and for the FTSE 100 itself."
+    },
+    {
+      "start": 3571.86,
+      "end": 3573.86,
+      "text": "So you can go through those in your own time."
+    },
+    {
+      "start": 3573.86,
+      "end": 3576.86,
+      "text": "But that ATR exercise, very, very important."
+    },
+    {
+      "start": 3576.86,
+      "end": 3578.86,
+      "text": "Make sure you do that."
+    },
+    {
+      "start": 3578.86,
+      "end": 3582.86,
+      "text": "Make sure you do that before you ever put on a day trade."
+    },
+    {
+      "start": 3582.86,
+      "end": 3590.86,
+      "text": "It's a variance of the ATR, but usually within day trading, you're going to be deciding before the open which way you're going to be going."
+    },
+    {
+      "start": 3590.86,
+      "end": 3594.86,
+      "text": "You're either going to be going long or short and you'll know it before the open."
+    },
+    {
+      "start": 3594.86,
+      "end": 3605.86,
+      "text": "Make sure you pull up the variance of the ATR so the open to high and the open to low data for historical volatility."
+    },
+    {
+      "start": 3605.86,
+      "end": 3607.86,
+      "text": "And manage your expectations."
+    },
+    {
+      "start": 3607.86,
+      "end": 3610.86,
+      "text": "Know your limit of where you're going to get in."
+    },
+    {
+      "start": 3610.86,
+      "end": 3613.86,
+      "text": "Know your risk reward."
+    },
+    {
+      "start": 3613.86,
+      "end": 3616.86,
+      "text": "Set your stop losses and targets accordingly."
+    },
+    {
+      "start": 3616.86,
+      "end": 3622.86,
+      "text": "If you don't do that, then you're just what we call in the UK punting around."
+    },
+    {
+      "start": 3622.86,
+      "end": 3629.86,
+      "text": "You're just going to end up paying the market money and losing money yourself."
+    },
+    {
+      "start": 3629.86,
+      "end": 3633.86,
+      "text": "It's that would be a very, very amateur way of trading."
+    },
+    {
+      "start": 3633.86,
+      "end": 3640.86,
+      "text": "Okay, so let's just run through a quick recap."
+    },
+    {
+      "start": 3640.86,
+      "end": 3654.86,
+      "text": "In terms of volatility, the importance of volatility really can't be stressed enough."
+    },
+    {
+      "start": 3654.86,
+      "end": 3661.86,
+      "text": "I'm not going to labor the point again too much here, but make sure you watch this video series over again."
+    },
+    {
+      "start": 3661.86,
+      "end": 3667.86,
+      "text": "You'll realize throughout this video series why we mention volatility so much."
+    },
+    {
+      "start": 3667.86,
+      "end": 3672.86,
+      "text": "It's simply because as a trader, it means everything."
+    },
+    {
+      "start": 3672.86,
+      "end": 3679.86,
+      "text": "Over any given time horizon, volatility creates opportunities."
+    },
+    {
+      "start": 3679.86,
+      "end": 3683.86,
+      "text": "And if you have no volatility, you have no opportunities."
+    },
+    {
+      "start": 3683.86,
+      "end": 3688.86,
+      "text": "Just apply that general rule to every time horizon you look at."
+    },
+    {
+      "start": 3688.86,
+      "end": 3694.86,
+      "text": "And this is the first thing that retail traders tend not to get."
+    },
+    {
+      "start": 3694.86,
+      "end": 3697.86,
+      "text": "And professional traders get from day one."
+    },
+    {
+      "start": 3697.86,
+      "end": 3700.86,
+      "text": "Because that's what professional traders are taught from day one."
+    },
+    {
+      "start": 3700.86,
+      "end": 3708.86,
+      "text": "And we're taught how to actually spot this and manage our expectations and manage our approach accordingly."
+    },
+    {
+      "start": 3708.86,
+      "end": 3716.86,
+      "text": "Whereas retail traders just attempt to dictate to the market what their approach is going to be."
+    },
+    {
+      "start": 3716.86,
+      "end": 3718.86,
+      "text": "And that's why they all screw up."
+    },
+    {
+      "start": 3718.86,
+      "end": 3721.86,
+      "text": "And that's why retail traders, the vast majority, lose money."
+    },
+    {
+      "start": 3721.86,
+      "end": 3724.86,
+      "text": "Because there is no appreciation for the general opportunities."
+    },
+    {
+      "start": 3724.86,
+      "end": 3728.86,
+      "text": "The second reason is due to the lack of preparation."
+    },
+    {
+      "start": 3728.86,
+      "end": 3733.86,
+      "text": "The third reason is down to unrealistic expectations."
+    },
+    {
+      "start": 3733.86,
+      "end": 3741.86,
+      "text": "And the fourth reason is really trading on old news and only using technical indicators to trade on."
+    },
+    {
+      "start": 3741.86,
+      "end": 3744.86,
+      "text": "Or trading on news that just doesn't matter."
+    },
+    {
+      "start": 3744.86,
+      "end": 3747.86,
+      "text": "It's not the important stuff in the market."
+    },
+    {
+      "start": 3747.86,
+      "end": 3753.86,
+      "text": "As in what you're doing is you're getting sucked in to trading the current market or the past market."
+    },
+    {
+      "start": 3753.86,
+      "end": 3761.86,
+      "text": "And you're just providing professional traders with the liquidity to get out of situations that have already occurred."
+    },
+    {
+      "start": 3761.86,
+      "end": 3767.86,
+      "text": "Which they predicted at some point in the past and are now actually news."
+    },
+    {
+      "start": 3767.86,
+      "end": 3774.86,
+      "text": "And then you're reacting to it and providing us with the opportunity to get out."
+    },
+    {
+      "start": 3774.86,
+      "end": 3777.86,
+      "text": "You want to actually be doing the opposite of that."
+    },
+    {
+      "start": 3777.86,
+      "end": 3784.86,
+      "text": "And join the club, if you like, of professional traders whose job it is to predict the future."
+    },
+    {
+      "start": 3784.86,
+      "end": 3794.86,
+      "text": "So, as a quick recap, just know the importance of volatility."
+    },
+    {
+      "start": 3794.86,
+      "end": 3798.86,
+      "text": "Understand it and monitor it. Watch the video series as many times as you can."
+    },
+    {
+      "start": 3800.86,
+      "end": 3804.86,
+      "text": "Secondly, discipline and track record when day trading."
+    },
+    {
+      "start": 3804.86,
+      "end": 3813.86,
+      "text": "Record every trade you do and do it in a separate Kelly Criterion spreadsheet to your portfolio management Kelly Criterion spreadsheet."
+    },
+    {
+      "start": 3815.86,
+      "end": 3819.86,
+      "text": "Classify your news flow, whether it's economic or asset specific."
+    },
+    {
+      "start": 3819.86,
+      "end": 3829.86,
+      "text": "If it's economic, ask yourself, should you be participating in a coincident or lagging economic news flow moment?"
+    },
+    {
+      "start": 3829.86,
+      "end": 3833.86,
+      "text": "If it's asset specific, is the news already known?"
+    },
+    {
+      "start": 3833.86,
+      "end": 3835.86,
+      "text": "Is it old news? Is it new news?"
+    },
+    {
+      "start": 3835.86,
+      "end": 3845.86,
+      "text": "If it's new news and you expect the market to move, then you've got to hunt for the volatility and find the assets that the news will affect."
+    },
+    {
+      "start": 3845.86,
+      "end": 3849.86,
+      "text": "And you'll get the obvious one straight away."
+    },
+    {
+      "start": 3849.86,
+      "end": 3863.86,
+      "text": "And you'll have to hunt a bit further down the value chain to find the assets that it might affect secondarily or secondary."
+    },
+    {
+      "start": 3863.86,
+      "end": 3879.86,
+      "text": "Most of the time, the obvious one will move almost immediately and some of the most or a lot of the opportunity will be gone within a few hours."
+    },
+    {
+      "start": 3879.86,
+      "end": 3897.86,
+      "text": "So maybe you might want to focus on assets further down the value chain where the move, the big move will come later on when everybody wakes up and realizes that it's going to affect this asset as well."
+    },
+    {
+      "start": 3897.86,
+      "end": 3907.86,
+      "text": "And, you know, there's no rule book here because we're looking across different asset classes and we're looking across, in stocks, different sectors and different stocks."
+    },
+    {
+      "start": 3907.86,
+      "end": 3917.86,
+      "text": "So unfortunately, I can't give you a rule book on how you hunt for the volatility because the news that affects volatility is different across all sectors."
+    },
+    {
+      "start": 3917.86,
+      "end": 3921.86,
+      "text": "And you're just going to have to do your homework over time."
+    },
+    {
+      "start": 3921.86,
+      "end": 3925.86,
+      "text": "Over time, you're going to get to know cyclical and defensive sectors anyway."
+    },
+    {
+      "start": 3925.86,
+      "end": 3928.86,
+      "text": "So you're just going to have to build up your knowledge."
+    },
+    {
+      "start": 3928.86,
+      "end": 3940.86,
+      "text": "And lastly, knowing your asset, when you've actually decided what you want to go and trade and where you think the volatility is going to be,"
+    },
+    {
+      "start": 3940.86,
+      "end": 3950.86,
+      "text": "you've always got to know the historical volatility and play the odds, get the risk reward up with the open to high and the open to low ATR."
+    },
+    {
+      "start": 3950.86,
+      "end": 3957.86,
+      "text": "Make sure you know what your expectations or the expected maximum move."
+    },
+    {
+      "start": 3957.86,
+      "end": 3964.86,
+      "text": "Know where you're going to get into the trade at a maximum on the long or the short side."
+    },
+    {
+      "start": 3964.86,
+      "end": 3975.86,
+      "text": "Know the risk reward setup before you actually go into the trade and set stop losses and targets accordingly."
+    },
+    {
+      "start": 3975.86,
+      "end": 3987.86,
+      "text": "So according to the ATR and the volatility, if the news is actually going to be material, the volatility will be bigger,"
+    },
+    {
+      "start": 3987.86,
+      "end": 3999.86,
+      "text": "which means you're going to then be surprised on the upside in terms of your expectation and your expected profit or loss."
+    },
+    {
+      "start": 3999.86,
+      "end": 4006.86,
+      "text": "So again, the day trading best practices guide is attached in the download section."
+    },
+    {
+      "start": 4006.86,
+      "end": 4014.86,
+      "text": "So go into the download section, get yourself in there, download it, read it a couple of times at least."
+    },
+    {
+      "start": 4014.86,
+      "end": 4021.86,
+      "text": "And in the future, when you're going to day trade or you think you're going to day trade, let's say 30 minutes before the market opens"
+    },
+    {
+      "start": 4021.86,
+      "end": 4028.86,
+      "text": "and you've got your risk reward setup, your entry, your plan ready to actually go and day trade an asset."
+    },
+    {
+      "start": 4028.86,
+      "end": 4031.86,
+      "text": "Just have a read of that again, 30 minutes before."
+    },
+    {
+      "start": 4031.86,
+      "end": 4035.86,
+      "text": "It's probably going to save you and make you a lot of money over your life."
+    },
+    {
+      "start": 4035.86,
+      "end": 4042.86,
+      "text": "So just keep it as a resource in a folder somewhere on your computer."
+    },
+    {
+      "start": 4042.86,
+      "end": 4050.86,
+      "text": "OK, so what we're going to do now is just go over to the desk and have a quick rundown and summary of day trading."
+    },
+    {
+      "start": 4050.86,
+      "end": 4053.86,
+      "text": "OK, welcome back."
+    },
+    {
+      "start": 4053.86,
+      "end": 4062.86,
+      "text": "So what you saw there was really the approach to day trading that professional traders really take."
+    },
+    {
+      "start": 4062.86,
+      "end": 4067.86,
+      "text": "And this goes right back to the beginning of the video series."
+    },
+    {
+      "start": 4067.86,
+      "end": 4074.86,
+      "text": "And this is probably the most important thing you should be taking away from this section on day trading."
+    },
+    {
+      "start": 4074.86,
+      "end": 4081.86,
+      "text": "The most important thing really is recognizing when you should and shouldn't really be day trading."
+    },
+    {
+      "start": 4081.86,
+      "end": 4086.86,
+      "text": "And, you know, we're not saying here that day trading is a bad thing."
+    },
+    {
+      "start": 4086.86,
+      "end": 4095.86,
+      "text": "All we're doing is allowing ourselves to be told by the market when there's a lot of day trading opportunities around"
+    },
+    {
+      "start": 4095.86,
+      "end": 4099.86,
+      "text": "and when there are few day trading opportunities around."
+    },
+    {
+      "start": 4099.86,
+      "end": 4112.86,
+      "text": "So when the volatility index is low, so it's let's say below 25 or below the 20% level and it's showing no signs of going up."
+    },
+    {
+      "start": 4112.86,
+      "end": 4118.86,
+      "text": "What we're saying here is that really there's very few day trading opportunities around."
+    },
+    {
+      "start": 4118.86,
+      "end": 4122.86,
+      "text": "That's not to say that you shouldn't day trade."
+    },
+    {
+      "start": 4122.86,
+      "end": 4128.86,
+      "text": "There will be opportunities around, but they will be more difficult to find."
+    },
+    {
+      "start": 4128.86,
+      "end": 4135.86,
+      "text": "And also when you go and trade them, they're going to be more difficult to trade and make money from"
+    },
+    {
+      "start": 4135.86,
+      "end": 4139.86,
+      "text": "because the volatility will be lower than you probably expect."
+    },
+    {
+      "start": 4139.86,
+      "end": 4148.86,
+      "text": "So what this is all about really is realizing that 80% of the time two things are going to happen."
+    },
+    {
+      "start": 4148.86,
+      "end": 4155.86,
+      "text": "There's going to be day trading opportunities around, but they're going to be more difficult to find and more difficult to trade."
+    },
+    {
+      "start": 4155.86,
+      "end": 4161.86,
+      "text": "And in the 20% of times where day trading opportunities occur."
+    },
+    {
+      "start": 4161.86,
+      "end": 4169.86,
+      "text": "So let's say, for example, the volatility index jumps 25 or 50% from the level that it is."
+    },
+    {
+      "start": 4169.86,
+      "end": 4173.86,
+      "text": "There, then you're going to see a lot of day trading opportunities."
+    },
+    {
+      "start": 4173.86,
+      "end": 4175.86,
+      "text": "You're going to be spoiled for choice."
+    },
+    {
+      "start": 4175.86,
+      "end": 4180.86,
+      "text": "You're going to have wholesale opportunities to make money on a one day basis."
+    },
+    {
+      "start": 4180.86,
+      "end": 4194.86,
+      "text": "So this is really about effective time management and effective risk management where 80% of the time you're realizing that they're going to be more difficult to find and they're going to be more difficult to trade."
+    },
+    {
+      "start": 4194.86,
+      "end": 4203.86,
+      "text": "And when volatility jumps in that 20% of times where there's wholesale opportunities, you're going to get more volatility and more assets."
+    },
+    {
+      "start": 4203.86,
+      "end": 4209.86,
+      "text": "Therefore, day trading opportunities are easier to find and also they're easier to make money from."
+    },
+    {
+      "start": 4209.86,
+      "end": 4223.86,
+      "text": "So that's the first thing being able to recognize that in those 80% of times in terms of time management, you should really be focusing on the portfolio management aspect of trading."
+    },
+    {
+      "start": 4223.86,
+      "end": 4235.86,
+      "text": "And then in the 20% of times trying to transition to become the short term trader, the day trader who makes money on a short term basis."
+    },
+    {
+      "start": 4235.86,
+      "end": 4252.86,
+      "text": "And then when the that's when the green lights on for volatility, when the red lights on transitioning back from being a short term trader to a portfolio manager and taking a one to three month time horizon approach and building out portfolios."
+    },
+    {
+      "start": 4252.86,
+      "end": 4267.86,
+      "text": "Again, we go back to this point. Unfortunately, there are no hard and fast rules. All I can show you really is best practice guides and you're going to have to call yourself the situation of when you transition and when you transition back."
+    },
+    {
+      "start": 4267.86,
+      "end": 4286.86,
+      "text": "So that's the main point. That's the main thing that you have to recognize here. Now when you actually do go and day trade, what you've actually got to do is a few things. You've got to recognize and hunt for the volatility in situations that are going to create day trading opportunities."
+    },
+    {
+      "start": 4286.86,
+      "end": 4305.86,
+      "text": "When the volatility index is low or high, what you're probably going to find is that the best day trading opportunities are ones in which there is a unique situation occurring, as in it's unique and specific to the asset that you're going into."
+    },
+    {
+      "start": 4305.86,
+      "end": 4325.86,
+      "text": "Because volatility is created on short term basis in two stark situations. Firstly, which we've already seen, when there's a big picture occurrence in the markets and there's lots of volatility in the market, the VIX has rallied and the green light goes on and it creates many opportunities."
+    },
+    {
+      "start": 4325.86,
+      "end": 4339.86,
+      "text": "The second thing is, regardless of where volatility is, something unique happens to an asset. It's only specific to that asset. They're the two things where volatility is really created."
+    },
+    {
+      "start": 4339.86,
+      "end": 4348.86,
+      "text": "So that's where you're going to find the opportunities in all situations, but you're going to find lots of opportunities to day trade when volatility is high."
+    },
+    {
+      "start": 4348.86,
+      "end": 4364.86,
+      "text": "Now when you actually go and trade, day trade on a short term basis, you've really got to go through the processes of pulling up the ATR and setting your stop losses and targets within that ATR range."
+    },
+    {
+      "start": 4364.86,
+      "end": 4372.86,
+      "text": "So your expectations are managed. Don't forget, now that volatility has increased, the ATR is going to go bigger."
+    },
+    {
+      "start": 4372.86,
+      "end": 4386.86,
+      "text": "So even when you're setting your stop losses and targets within that ATR range, you're basically managing your risk more effectively in a more volatile market, which is the approach that you have to be taking."
+    },
+    {
+      "start": 4386.86,
+      "end": 4393.86,
+      "text": "That's just to stop yourself from being human exactly the same ways as we looked at in portfolio management."
+    },
+    {
+      "start": 4393.86,
+      "end": 4402.86,
+      "text": "Also with the Caddy Criterion, you should absolutely be keeping a separate Caddy Criterion to your portfolio management Caddy Criterion."
+    },
+    {
+      "start": 4402.86,
+      "end": 4408.86,
+      "text": "This is really so you understand as a trader what you're good at and what you're bad at."
+    },
+    {
+      "start": 4408.86,
+      "end": 4420.86,
+      "text": "So you need to be really focusing on making sure your Caddy Criterion for day trading is separate to your portfolio management Caddy Criterion so you get that appreciation."
+    },
+    {
+      "start": 4420.86,
+      "end": 4432.86,
+      "text": "If you're a bad day trader and you learn this over a 6-12 month period and you just lose money and your case score is bad, you should not be deploying capital to yourself as a day trader."
+    },
+    {
+      "start": 4432.86,
+      "end": 4437.86,
+      "text": "You've learnt and been told that you're bad at it, so why would you then take more risk?"
+    },
+    {
+      "start": 4437.86,
+      "end": 4444.86,
+      "text": "You need to be not giving yourself money and pulling from box B in this situation."
+    },
+    {
+      "start": 4444.86,
+      "end": 4448.86,
+      "text": "If you're good at it, then pull from box A."
+    },
+    {
+      "start": 4448.86,
+      "end": 4460.86,
+      "text": "When the green light comes on, deploy capital to the situations that you believe will make you money over a short term basis, as in when volatility is high."
+    },
+    {
+      "start": 4460.86,
+      "end": 4464.86,
+      "text": "Or there's a unique situation occurring."
+    },
+    {
+      "start": 4464.86,
+      "end": 4468.86,
+      "text": "So make sure you keep the Caddy Criterion separate."
+    },
+    {
+      "start": 4468.86,
+      "end": 4475.86,
+      "text": "At least you're going to know over a time period whether you're good or bad at portfolio management and good or bad at day trading."
+    },
+    {
+      "start": 4475.86,
+      "end": 4480.86,
+      "text": "If you put all the trades together in one Caddy Criterion spreadsheet, you're not going to learn anything."
+    },
+    {
+      "start": 4480.86,
+      "end": 4485.86,
+      "text": "It's going to be very difficult to know what type of trader you are, what you're good at, what you're bad at."
+    },
+    {
+      "start": 4485.86,
+      "end": 4487.86,
+      "text": "So make sure you do that."
+    },
+    {
+      "start": 4487.86,
+      "end": 4490.86,
+      "text": "So that's pretty much day trading in a nutshell."
+    },
+    {
+      "start": 4490.86,
+      "end": 4494.86,
+      "text": "Now let's move on to the next video."
+    },
+    {
+      "start": 4494.86,
+      "end": 4497.86,
+      "text": "Let's move on to video number 27."
+    },
+    {
+      "start": 4497.86,
+      "end": 4505.86,
+      "text": "We're going to now create a trading plan with all the stuff that we've learnt up to this point."
+    },
+    {
+      "start": 4505.86,
+      "end": 4510.86,
+      "text": "Creating a trading plan is fairly straightforward given the knowledge that we've got."
+    },
+    {
+      "start": 4510.86,
+      "end": 4519.86,
+      "text": "We've just got to take the first step to basically approaching trading correctly and getting all these processes in place."
+    },
+    {
+      "start": 4519.86,
+      "end": 4523.86,
+      "text": "So we know each week what tasks we have to complete."
+    },
+    {
+      "start": 4523.86,
+      "end": 4534.86,
+      "text": "Generating ideas, gatekeeping, risk management on live portfolio and transitioning from being a portfolio manager to a day trader."
+    },
+    {
+      "start": 4534.86,
+      "end": 4537.86,
+      "text": "And managing your self-awareness statistics."
+    },
+    {
+      "start": 4537.86,
+      "end": 4541.86,
+      "text": "So let's go over to the next video and I'll see you on the other side."
+    },
+    {
+      "start": 4541.86,
+      "end": 4543.92,
+      "text": "Thank you."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

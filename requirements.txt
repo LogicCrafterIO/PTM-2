@@ -1,0 +1,2 @@
+# Stdlib-only pipeline. Python 3.11+ is enough.
+# Optional: none. Audio/STT is ffmpeg + whisper.cpp, not PyPI.

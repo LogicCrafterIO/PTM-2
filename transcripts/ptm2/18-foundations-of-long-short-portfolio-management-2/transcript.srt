@@ -1,0 +1,5633 @@
+1
+00:00:00,000 --> 00:00:29,980
+Hi guys and welcome to video 18.
+Previously, we looked at modeling
+historical portfolio performance and in
+this video, we're going to continue with
+analyzing things at the portfolio level,
+but this time we're looking at volatility.
+Now, for those of you that have done the
+introduction to professional trading
+masterclass, some of this video is going
+to contain information that you've already
+covered. And in fact, you're going to
+
+2
+00:00:29,980 --> 00:00:59,960
+be way ahead in your general understanding
+of volatility and its importance. So for
+you guys that haven't done that course, I
+suggest that you have a look at it because
+you will find it extremely useful to
+supplement what we go through in the next
+couple of videos. In this video, we're
+going to cover plenty of ground and as a
+little insight into what's sort of coming
+up, here's what we're going to go through.
+We're going to discuss what volatility
+means to traders and portfolio managers
+and how we measure it. I'm then going
+
+3
+00:00:59,960 --> 00:01:29,940
+going to talk about realized volatility
+and briefly cover an example of a
+distribution of returns analysis, which is
+a type of volatility analysis. And we're
+going to work through an example there at
+the portfolio level. From there, we're
+going to move on to modeling what's called
+expected portfolio volatility. And that's
+really going to be the core component of
+what this video is all about. I'll start
+there by explaining the theory behind the
+model. And that will give you guys a big
+insight in
+
+4
+00:01:29,960 --> 00:01:59,940
+what matters when constructing what
+matters when constructing an efficiently
+diversified portfolio that enhances your
+risk reward profile. Then we'll move on to
+some scenario analysis using the model.
+And by doing that, we'll sort of
+demonstrate the benefits of adding small
+and mid cap stocks to the portfolios as
+well. And then finally, I'll talk about
+how you can use the model for constructing
+or conducting, I should say, scenario
+analysis in
+
+5
+00:01:59,940 --> 00:02:29,920
+your own portfolios and your own
+portfolios. And I'll teach you the
+practicalities of using the model to help
+you understand how changes in portfolio
+structure will likely affect the overall
+portfolio volatility that you're likely to
+see. So there's going to be loads of
+important learning points as we go through
+the video and all of those sort of
+practical elements. So make sure you pay
+close attention. And I will also give you
+a short synopsis of all of that important
+stuff that we've covered at the end of the
+video as well.
+
+6
+00:02:29,920 --> 00:02:59,900
+Before I go any further, let me point out
+that this video is heavily connected to
+the next one in the PTM series. And in
+fact, there's going to be a lot of points
+in this video where I deliberately stop
+short for full explanation, particularly
+when it comes to portfolio theory and
+diversification, because it's something
+that we're going to cover in so much
+detail in the next video as well. So to
+that end, what I would say is don't worry
+a whole lot if you feel
+
+7
+00:02:59,900 --> 00:03:29,880
+there are some gaps in the next one.
+
+8
+00:03:29,880 --> 00:03:59,860
+your risk return profile. That's the goal.
+Okay, before I start rambling on about
+volatility, let's take a look at this
+spreadsheet that we have here, which I'll
+be using throughout the video, and you'll
+be able to get hold of in the download
+section for this video. So in this
+spreadsheet, we've got seven sheets, and
+I'm going to mention them now in the order
+that we're going to work through them in
+the video. After I've introduced the
+concept of volatility, we're going to
+begin in this spreadsheet here by looking
+at
+
+9
+00:03:59,860 --> 00:04:29,580
+the standard deviation calculation. The
+standard deviation calculation tab. That's
+where I'll show you how to calculate
+volatility using the industry standard
+methodology. The second sheet that we're
+going to look at is the portfolio DOR tab.
+And in that one, I'm going to talk through
+a type of volatility analysis called a
+distribution of returns. Now I'm not going
+to spend too much time in that sheet as
+it's something that's going to be covered
+extensively or already has been covered
+extensively in the IPLT course.
+
+10
+00:04:29,840 --> 00:04:59,820
+but it will be enough to give you a good
+idea of the statistical process. And we'll
+be using data from the portfolios that we
+looked at in the previous video. After
+that, we're going to move on to learning
+some portfolio volatility theory, before
+then shifting our attention to running
+some calculations based on various
+scenarios, using the portfolio volatility
+model in the practical sheet. And the rest
+of the tabs here are really just
+supporting
+
+11
+00:04:59,820 --> 00:05:29,800
+data sheets that help the portfolio. And
+I'll spend a bit of time explaining them
+later. So as I said previously, this video
+is going to be all about calculating and
+understanding volatility at the portfolio
+level. But before we get into that, we
+need to discuss what volatility actually
+is.
+
+12
+00:05:29,800 --> 00:05:59,780
+Assets in this case can refer to anything
+from individual instruments like a share
+in a company, all the way up to index
+funds and portfolios made up of multi
+asset class long short positions.
+Volatility is really important to get to
+grips with. And as anyone that's done the
+IPLT course knows, it's often
+misunderstood. And most people think of
+volatility only as risk, but actually
+forget or don't realize that it also
+presents or
+
+13
+00:05:59,780 --> 00:06:13,780
+represents opportunity. If there was no
+chance to represent opportunity. If there
+was no chance to profit from price
+fluctuations. If there was no chance to
+profit from price fluctuations, then there
+would be no chance to profit from price
+fluctuations. And so we actually need
+volatility at both the individual asset
+level and the portfolio level.
+
+14
+00:06:13,780 --> 00:06:43,760
+In the IPLT course, we discussed how one
+of the core retail trading mistakes is
+trying to trade assets with little
+inherent volatility over very short
+timeframes. And by recognizing those
+faults through volatility analyses such as
+computing the distribution of returns on
+various assets, we identified that the two
+most important ways to increase volatility
+and hence opportunity for profit is by
+trading assets with a larger inherent
+volatility.
+
+15
+00:06:43,760 --> 00:06:51,080
+such as small cap or mid cap equities, and
+also by extending the time horizon of our
+trades.
+
+16
+00:06:51,940 --> 00:06:58,040
+By conducting volatility analysis over
+various assets and timeframes, we
+concluded that a sweet
+
+17
+00:06:58,040 --> 00:07:04,420
+spot for trading time horizons is about
+one to three months on average. This gives
+positions
+
+18
+00:07:04,420 --> 00:07:11,340
+plenty of time to move by larger
+magnitudes, as opposed to the sort of tiny
+fluctuations that you
+
+19
+00:07:11,340 --> 00:07:18,500
+typically see on a daily basis or hourly
+basis. People that don't understand the
+difference in
+
+20
+00:07:18,500 --> 00:07:24,920
+volatility across assets and asset classes
+usually have very warped perspectives over
+what instruments
+
+21
+00:07:24,920 --> 00:07:31,200
+they think have prices that move a lot.
+For example, it's very common in the
+retail trading industry for
+
+22
+00:07:31,200 --> 00:07:38,340
+retail traders to think that the most
+volatile asset class is currencies or
+forex, which is completely
+
+23
+00:07:38,340 --> 00:07:46,000
+incorrect. And any kind of sort of
+volatility analysis worth its salt would
+quickly discover
+
+24
+00:07:46,000 --> 00:07:53,200
+that that's not right. The only reason why
+it appears that way is because brokers
+offer huge
+
+25
+00:07:53,200 --> 00:07:58,100
+leverage on FX pairs and retail clients
+don't realize that the volatility that
+they're seeing
+
+26
+00:07:58,100 --> 00:08:05,420
+in their positions is entirely driven by
+that leverage. So that brings me on to a
+third way
+
+27
+00:08:05,420 --> 00:08:10,400
+to increase volatility in your positions
+in your portfolio, which as you've
+probably just gathered
+
+28
+00:08:10,400 --> 00:08:16,860
+is to take on leverage. However, leverage
+also increases transaction costs. And
+unless it's fully
+
+29
+00:08:16,860 --> 00:08:22,160
+understood, it can be quite dangerous,
+which is why I said that increasing
+trading, your trading time
+
+30
+00:08:22,160 --> 00:08:29,160
+horizon and choosing higher volatility
+assets to trade are much more important
+methods of increasing
+
+31
+00:08:29,160 --> 00:08:35,060
+volatility. That being said, if you do
+understand leverage and the financial
+products that you're
+
+32
+00:08:35,060 --> 00:08:42,120
+using to obtain that leverage, then it can
+be very useful, which is one of the
+reasons why at ITPM,
+
+33
+00:08:42,280 --> 00:08:48,920
+we often structure trades using options.
+So you guys now have an idea of what
+volatility is and why it's
+
+34
+00:08:48,920 --> 00:08:55,560
+important. Basically, the key takeaway
+here is that volatility represents much
+more than just risk. It also
+
+35
+00:08:55,560 --> 00:09:01,880
+represents opportunity for profit. And on
+that basis, we need to ensure that we're
+trading the right assets
+
+36
+00:09:01,880 --> 00:09:08,920
+over the right timeframes to ensure we
+have plenty of opportunity to make money.
+Again, the IPLT course
+
+37
+00:09:08,920 --> 00:09:14,540
+goes into a lot more detail on this with
+lots of analysis to go with it. So I
+strongly recommend you take a
+
+38
+00:09:14,540 --> 00:09:21,420
+look at that course if you haven't
+already. Okay, so now we know volatility
+is based on the magnitude of
+
+39
+00:09:21,420 --> 00:09:26,860
+fluctuations in asset prices and asset
+returns. Let's move on to how we can
+actually measure that.
+
+40
+00:09:27,420 --> 00:09:32,220
+There are actually quite a few ways to
+calculate volatility, but the most used
+and therefore probably
+
+41
+00:09:32,220 --> 00:09:37,580
+the most important measure is a
+statistical measure called a standard
+deviation. If you ever hear
+
+42
+00:09:37,580 --> 00:09:43,420
+people talking about volatility in the
+financial world, nine out of 10 times,
+this will be the measure
+
+43
+00:09:43,420 --> 00:09:50,460
+that they're using. Now, I know that we've
+basically covered standard deviations
+before in a way in the
+
+44
+00:09:50,460 --> 00:09:56,540
+money supply video and in other courses as
+well if you've seen those, but I want to
+take a moment in
+
+45
+00:09:56,540 --> 00:10:04,060
+this video to kind of get into the weeds
+of the standard deviation calculation
+itself. Since this video is
+
+46
+00:10:04,060 --> 00:10:10,140
+all about volatility at the portfolio
+level, I just thought that was a good idea
+to kind of clear things up.
+
+47
+00:10:10,140 --> 00:10:17,580
+So to explain what exactly a standard
+deviation is and how to calculate it,
+let's move over to the
+
+48
+00:10:17,580 --> 00:10:23,980
+standard deviation calculation sheet now
+so I can show you how this measure of
+volatility works.
+
+49
+00:10:25,180 --> 00:10:30,140
+So in this sheet here I've got a small
+series of numbers that we're going to
+calculate the volatility
+
+50
+00:10:30,140 --> 00:10:39,260
+4. The numbers are 8, 3, 5, 7, 11, 4, 6
+and 4. What I'm going to do in this
+example is break down the
+
+51
+00:10:39,260 --> 00:10:45,820
+calculation for the standard deviation of
+this very simple series into a number of
+steps. And the idea
+
+52
+00:10:45,820 --> 00:10:50,700
+here is that by going through this method
+you're going to understand how the measure
+works and you'll be
+
+53
+00:10:50,700 --> 00:10:57,740
+a bit more confident in using it in
+applications further ahead. So in almost
+all measures of volatility,
+
+54
+00:10:57,740 --> 00:11:03,260
+we take a reference point of a series of
+numbers and run some kind of calculation
+that measures
+
+55
+00:11:03,260 --> 00:11:08,940
+how much the series of numbers fluctuates
+around the reference point. A standard
+deviation does this
+
+56
+00:11:08,940 --> 00:11:14,700
+by measuring the volatility of a series of
+numbers around their average. That gives
+us a good starting
+
+57
+00:11:14,700 --> 00:11:20,940
+point which is to calculate the average of
+this series. So let me do that over here.
+In cell H2,
+
+58
+00:11:20,940 --> 00:11:29,340
+I'm just going to type equals average okay
+open brackets d2 colon d9 so selecting the
+array d2 to d9
+
+59
+00:11:29,340 --> 00:11:36,940
+close brackets and press enter. Next once
+we've got the average of our data set what
+we're really
+
+60
+00:11:36,940 --> 00:11:43,980
+interested in is figuring out how
+different each individual data point in
+the series is to that mean
+
+61
+00:11:43,980 --> 00:11:50,380
+or average and basically the further away
+all of these points are from the mean the
+more volatile the data
+
+62
+00:11:50,380 --> 00:11:57,260
+set. So the next stage is to calculate
+those differences. So in cell E2 I'm just
+going to type
+
+63
+00:11:57,260 --> 00:12:06,540
+a formula here which is going to be d2
+which is the starting number in our series
+minus h2 and I'm going to
+
+64
+00:12:06,540 --> 00:12:13,420
+fix that reference by putting dollar signs
+around the column and row references. So
+that's just going
+
+65
+00:12:13,420 --> 00:12:21,020
+to take the series value minus the mean
+and then we'll copy that formula down from
+E2 to cell E9. So now
+
+66
+00:12:21,020 --> 00:12:27,580
+we've got all of our differences. The
+positive and negative results here show
+that some of the points
+
+67
+00:12:27,580 --> 00:12:33,900
+are obviously above the mean and some are
+below the average. However if we were to
+average all of these
+
+68
+00:12:33,900 --> 00:12:40,060
+positive and negative differences now we
+would get a value of zero as an output
+because the positives
+
+69
+00:12:40,060 --> 00:12:46,140
+and negatives cancel out and so our value
+for volatility would then be zero which
+clearly isn't
+
+70
+00:12:46,140 --> 00:12:52,300
+a good representation of the sort of
+dispersion that we have around the mean in
+the data set. So what we
+
+71
+00:12:52,300 --> 00:12:58,220
+need to do here is treat all the
+differences equally and one way we can do
+that is to square the results
+
+72
+00:12:58,220 --> 00:13:03,740
+so that they all become positive and then
+after that we can average these numbers to
+create a
+
+73
+00:13:03,740 --> 00:13:09,740
+single value and square root it again to
+undo the squared changes we made earlier
+and then that's it.
+
+74
+00:13:10,300 --> 00:13:19,580
+So in cell F2 I'm going to type the
+formula equals E2 to the power of 2 so
+that's just squaring that
+
+75
+00:13:19,580 --> 00:13:26,700
+difference and then I'm going to copy that
+formula down from F2 to F9 so that we have
+all of our squared
+
+76
+00:13:26,700 --> 00:13:36,060
+differences and then in cell I2 I'm going
+to take the average of all of those
+squared differences F2
+
+77
+00:13:36,060 --> 00:13:43,900
+to F9 so equals average open brackets and
+then choosing the array F2 to F9 close
+brackets and then
+
+78
+00:13:43,900 --> 00:13:52,380
+in cell J2 I'm going to type equals SQRT
+that stands for square root so the square
+root function in Excel
+
+79
+00:13:52,380 --> 00:14:02,220
+so equals SQRT open brackets I2 so we're
+taking the square root of the average of
+all of those squared
+
+80
+00:14:02,220 --> 00:14:10,620
+differences so basically the square root
+of the value that we see in I2. Now that
+value that we've got in
+
+81
+00:14:10,620 --> 00:14:17,740
+J2 is our standard deviation value for
+that series of numbers. Now fortunately
+you don't have to go through
+
+82
+00:14:17,740 --> 00:14:23,580
+all of those stages to calculate a
+standard deviation each time you want to
+you can just use an inbuilt
+
+83
+00:14:23,580 --> 00:14:29,260
+Excel function to do all the work instead
+but the point of going through all of that
+was so that you
+
+84
+00:14:29,260 --> 00:14:36,060
+kind of understand and feel comfortable
+with how standard deviations work and
+basically a standard
+
+85
+00:14:36,060 --> 00:14:43,500
+deviation uses a method to sort of tell us
+the average distance of each data point in
+the series to
+
+86
+00:14:43,500 --> 00:14:50,060
+the overall mean in that series. So to
+calculate this quickly in Excel all you
+need to do is the
+
+87
+00:14:50,060 --> 00:14:59,180
+following I'm going to select cell K2 now
+and type in a formula which is equals
+STDEV.P open brackets
+
+88
+00:14:59,180 --> 00:15:06,860
+and then select our array our original
+series cells D2 to D9 and close brackets.
+Now that's going to
+
+89
+00:15:06,860 --> 00:15:11,340
+calculate what's called the population
+standard deviation which is appropriate
+for what we're doing here.
+
+90
+00:15:11,340 --> 00:15:18,940
+What you might see me do later in the
+series or actually probably you will see
+me do later in the
+
+91
+00:15:18,940 --> 00:15:24,940
+series is use a slightly different
+standard deviation formula which is
+STDEV.S that stands for a sample
+
+92
+00:15:24,940 --> 00:15:33,100
+standard deviation okay because
+realistically that's what you should be
+using if you're kind of estimating
+
+93
+00:15:33,740 --> 00:15:40,140
+a standard deviation based on a sample of
+data not the entire population okay in
+this in this example that
+
+94
+00:15:40,140 --> 00:15:43,900
+doesn't really matter I don't want to get
+into that too much just don't worry about
+the difference that
+
+95
+00:15:43,900 --> 00:15:50,140
+I'm kind of using here and other times in
+the series between those two slightly
+different versions of the
+
+96
+00:15:50,140 --> 00:15:57,420
+standard deviation calculation. But anyway
+when I put in that formula that population
+standard deviation
+
+97
+00:15:57,420 --> 00:16:04,700
+formula you can see that I get exactly the
+same result as we did before but obviously
+a lot faster.
+
+98
+00:16:05,500 --> 00:16:11,500
+What I've also done here is below created
+a chart as a reminder about what the
+standard deviation
+
+99
+00:16:11,500 --> 00:16:18,140
+formula actually does and I'm hoping that
+that sort of visual visual aid might help
+you understand what
+
+100
+00:16:18,140 --> 00:16:22,700
+I've been talking through so far. So by
+all means check that out when you download
+this spreadsheet
+
+101
+00:16:22,700 --> 00:16:27,180
+yourself there's some notes to go with it
+as well and which will remind you what
+we've been through and
+
+102
+00:16:27,180 --> 00:16:34,060
+hopefully make things clearer. Okay so
+that's all there is to understanding and
+being able to calculate
+
+103
+00:16:34,060 --> 00:16:40,460
+a standard deviation. As I said standard
+deviations are the most common measures of
+volatility for traders
+
+104
+00:16:40,460 --> 00:16:47,420
+and portfolio managers and now that you've
+got that understanding I want to quickly
+show you a volatility
+
+105
+00:16:47,420 --> 00:16:55,020
+analysis technique where we study the
+distribution of returns of a portfolio and
+it also incorporates within
+
+106
+00:16:55,020 --> 00:17:03,100
+it some standard deviation calculations or
+measurements as well. Now in the IPLT
+course we covered distribution
+
+107
+00:17:03,100 --> 00:17:10,060
+of returns analyses in lots of detail on
+many assets and it helped us draw some of
+the conclusions about
+
+108
+00:17:10,060 --> 00:17:16,860
+volatility that I mentioned earlier
+especially when it comes to which assets
+and asset classes and trading
+
+109
+00:17:16,860 --> 00:17:24,060
+time frames yield the most opportunity for
+profit. In this video we're going to
+employ the same techniques
+
+110
+00:17:24,060 --> 00:17:29,900
+as we did there but at the portfolio level
+and because I've covered this type of
+analysis in detail in the
+
+111
+00:17:29,900 --> 00:17:35,500
+previous course and I appreciate that many
+of you will have done that course already
+I'm not going to spend
+
+112
+00:17:35,500 --> 00:17:41,740
+loads of time on this section of the
+video. Basically instead of learning how
+to do this volatility analysis
+
+113
+00:17:41,740 --> 00:17:48,380
+from scratch I'm just going to guide you
+through a pre-built analysis to save time
+and we aren't going
+
+114
+00:17:48,380 --> 00:17:56,540
+to go into nearly as much detail here as
+we did in the IPLT course. So a
+distribution of returns analysis is
+
+115
+00:17:56,540 --> 00:18:02,940
+pretty much exactly as it sounds. What it
+does is basically calculate and analyze
+the returns of an asset
+
+116
+00:18:02,940 --> 00:18:10,300
+or an index or an index or portfolio and
+pays particular attention to how those
+returns are distributed in
+
+117
+00:18:10,300 --> 00:18:17,260
+terms of their empirical probability. What
+that means is that over a given period we
+can calculate all the
+
+118
+00:18:17,260 --> 00:18:25,820
+returns for an asset say the S&P 500 for
+example and then group that data into
+various ranges of returns.
+
+119
+00:18:26,700 --> 00:18:35,420
+The idea being that for example we can see
+how often the S&P 500 has returned between
+let's say 1 and 2 percent
+
+120
+00:18:35,420 --> 00:18:42,780
+compared to 2 or 3 percent on a weekly
+basis over the period that we decide to
+analyze. If that isn't
+
+121
+00:18:42,780 --> 00:18:48,380
+clear don't worry it will make sense when
+we run through the examples on this sheet.
+So what I've got
+
+122
+00:18:48,380 --> 00:18:53,980
+here is a pre-built distribution of
+returns analysis for the two portfolios
+that we looked at in the previous
+
+123
+00:18:53,980 --> 00:19:01,340
+video. This kind of analysis is what's
+called a realized volatility analysis
+because it examines the
+
+124
+00:19:01,340 --> 00:19:09,660
+volatility of the price or value of an
+asset in the past. So what I've done here
+is calculated the hypothetical
+
+125
+00:19:09,660 --> 00:19:17,420
+value of the two portfolios we considered
+in the previous video using the
+non-rebalance method. Those values
+
+126
+00:19:17,420 --> 00:19:26,140
+are recorded in columns B and C and the
+time series of the portfolios run through
+the first half of
+
+127
+00:19:26,140 --> 00:19:34,060
+2021 as you can see here. Portfolio one is
+our large cap portfolio and portfolio two
+is our mid and large cap
+
+128
+00:19:34,060 --> 00:19:44,140
+mixed portfolio. Remember both portfolios
+are long six stocks and short four and
+it's only the long side that changes in
+our models.
+
+129
+00:19:44,780 --> 00:19:49,740
+I've put a list up the top here showing
+the constituents of each portfolio as a
+quick reminder to you so you
+
+130
+00:19:49,740 --> 00:19:57,180
+don't have to kind of think back to the
+previous video too much. So the daily
+returns for each portfolio
+
+131
+00:19:57,180 --> 00:20:04,140
+are calculated in columns D and E and
+they're simply the percentage changes in
+the value of each portfolio
+
+132
+00:20:04,140 --> 00:20:11,020
+on every trading day and it's those
+returns that we then use to carry out the
+volatility analysis that I've
+
+133
+00:20:11,020 --> 00:20:17,980
+got here on the right hand side. So over
+on this side then I've split the analysis
+into two parts the
+
+134
+00:20:17,980 --> 00:20:26,140
+statistics I've calculated in columns G to
+K are for portfolio one and the large cap
+portfolio and in
+
+135
+00:20:26,140 --> 00:20:33,580
+columns L to P we've got the statistics
+that refer to portfolio two which is again
+our large mid cap mixed
+
+136
+00:20:33,580 --> 00:20:39,820
+portfolio and each of these sections
+contains subsections which can be split
+into descriptive
+
+137
+00:20:39,820 --> 00:20:47,740
+statistics, a frequency table and a
+histogram and a portfolio value chart. So
+let's look at the
+
+138
+00:20:47,740 --> 00:20:55,420
+descriptive statistics first. We can see
+that both portfolios have 106 daily return
+values meaning the
+
+139
+00:20:55,420 --> 00:21:02,780
+portfolio values have been calculated over
+107 days. We know from the last video that
+portfolio one didn't
+
+140
+00:21:02,780 --> 00:21:10,300
+perform as well as portfolio two over the
+period that we analyzed and so as we would
+expect it has a
+
+141
+00:21:10,300 --> 00:21:17,740
+lower average daily return and a lower
+maximum return over the period. Now the
+returns might be lower for
+
+142
+00:21:17,740 --> 00:21:24,780
+portfolio one but the volatility is also
+lower. If we look at the values of
+standard deviation then we can
+
+143
+00:21:24,780 --> 00:21:31,260
+see that the daily standard deviation in
+portfolio two is almost twice as large as
+portfolio one and
+
+144
+00:21:31,260 --> 00:21:37,180
+again this is something you should have
+expected given what we talked about in the
+last video. I'm not
+
+145
+00:21:37,180 --> 00:21:43,260
+trying to say here that higher volatility
+is better because actually all else being
+equal it isn't.
+
+146
+00:21:44,060 --> 00:21:49,740
+What I am trying to show you is that in
+order to generate higher returns it's
+likely that you'll need
+
+147
+00:21:49,740 --> 00:21:57,180
+to take on greater volatility and
+portfolio two reflects that. So let's move
+on to the frequency
+
+148
+00:21:57,180 --> 00:22:05,820
+tables now in rows 22 to 37. What you can
+see here are tables that count the number
+of daily returns in
+
+149
+00:22:05,820 --> 00:22:13,020
+each series that land within certain
+ranges. For example if we look at the
+frequency table for portfolio one
+
+150
+00:22:13,260 --> 00:22:21,740
+we can see that five data points have a
+value that lie between or that lies
+between minus 0.98 percent
+
+151
+00:22:21,740 --> 00:22:32,220
+and minus 0.72 percent. Equally 22 daily
+returns values are within the range from
+0.07 percent to 0.33 percent
+
+152
+00:22:32,220 --> 00:22:38,700
+and so on. Aside from these tables telling
+us the absolute frequency of data points
+landing within certain
+
+153
+00:22:38,700 --> 00:22:48,620
+ranges they also tell us the empirical
+probability. That is the probability given
+the historical data
+
+154
+00:22:48,620 --> 00:22:57,180
+set and each of these ranges of returns
+occurring. So for example we can see that
+the range from 0.85 percent
+
+155
+00:22:57,180 --> 00:23:05,420
+to 1.12 percent only accounts for 2.83
+percent of the data and so we could infer
+that there's only a
+
+156
+00:23:05,420 --> 00:23:14,780
+2.83 percent probability of that range of
+returns taking place on any given day
+based on the historical
+
+157
+00:23:14,780 --> 00:23:23,660
+data set that we've analyzed. The
+cumulative probability column is a
+derivation of that and sequentially sums
+
+158
+00:23:23,660 --> 00:23:29,660
+up all the probability values for each
+range starting from the lowest one. What
+that allows us to say is
+
+159
+00:23:29,660 --> 00:23:39,180
+things like portfolio one has a roughly 85
+percent chance that it returns less than
+0.59 percent on a
+
+160
+00:23:39,180 --> 00:23:45,580
+given day for example based on the data
+that we're looking at. Now I should point
+out here that inferring
+
+161
+00:23:45,580 --> 00:23:51,260
+future probabilities with historical data
+is tricky at the best of times and it
+should definitely be avoided
+
+162
+00:23:51,260 --> 00:23:58,540
+when we're dealing with such a small data
+set. Remember what we're really trying to
+understand here is the
+
+163
+00:23:58,540 --> 00:24:04,940
+difference in volatility between the two
+portfolios not what the probability of
+certain ranges of returns
+
+164
+00:24:04,940 --> 00:24:12,620
+will be in the future. When we compare the
+data between the two portfolios at the
+frequency table level
+
+165
+00:24:12,620 --> 00:24:19,500
+we can make some quick inferences about
+volatility again. So in portfolio two you
+can see here that the ranges of
+
+166
+00:24:19,500 --> 00:24:27,260
+returns that have a probability of above
+zero is much wider meaning returns can
+vary obviously a lot more.
+
+167
+00:24:28,140 --> 00:24:34,300
+That backs up the summary that we obtained
+from the descriptive statistics but this
+obviously gives
+
+168
+00:24:34,300 --> 00:24:41,020
+gives us a bit more flavor by diving into
+the details of the distributions. The
+frequency table data
+
+169
+00:24:41,020 --> 00:24:48,140
+we've been looking at is then plotted into
+charts in the rows below and this is just
+a graphical representation
+
+170
+00:24:48,140 --> 00:24:54,620
+really of what we already know by looking
+at the tables above but that being said it
+can be easier to gauge
+
+171
+00:24:54,620 --> 00:25:01,900
+the shape of the distribution visually in
+a histogram format. I won't go into too
+much detail here about
+
+172
+00:25:01,900 --> 00:25:10,780
+how that's useful but I talked about it in
+the context of things like skewness and
+kurtosis statistics
+
+173
+00:25:10,780 --> 00:25:17,900
+in the IPLT videos so you can check that
+out if you want to. Finally if you look at
+the charts at the
+
+174
+00:25:17,900 --> 00:25:24,460
+bottom of this analysis sheet you'll see
+plots of the two portfolios value over
+time. As I said in the
+
+175
+00:25:24,460 --> 00:25:31,260
+last video plotting portfolio value is
+easy enough to do and you can see here
+that portfolio two outperforms
+
+176
+00:25:31,260 --> 00:25:38,620
+portfolio one quite significantly however
+as we've seen at almost every stage of the
+analysis here you can
+
+177
+00:25:38,620 --> 00:25:45,100
+also tell that there's more volatility in
+the portfolio just by looking at the line
+on the chart really
+
+178
+00:25:45,100 --> 00:25:51,820
+since you know the rises and declines in
+value are steeper given that both charts
+are scaled in the same
+
+179
+00:25:51,820 --> 00:25:59,340
+format. So that's a really quick synopsis
+really of how you can use a distribution
+of returns to
+
+180
+00:25:59,340 --> 00:26:06,620
+analyze your portfolio and its volatility.
+This is kind of a great way of getting an
+in-depth understanding
+
+181
+00:26:06,620 --> 00:26:11,980
+of how your portfolio has been working in
+the past and that data can then be used to
+derive certain
+
+182
+00:26:11,980 --> 00:26:18,300
+trading performance statistics which we're
+going to cover later in the video series.
+This kind of analysis
+
+183
+00:26:18,300 --> 00:26:24,060
+is also useful for being able to compare
+the historical performance of two or more
+portfolios
+
+184
+00:26:24,060 --> 00:26:31,740
+in terms of their risk and returns and
+generally you'll find that as with
+individual assets higher
+
+185
+00:26:31,740 --> 00:26:39,580
+volatility portfolios represent higher
+risk but also higher reward. However that
+being said that
+
+186
+00:26:39,580 --> 00:26:46,140
+relationship isn't as clear-cut in
+portfolios because in well-structured
+portfolios we can actually
+
+187
+00:26:46,140 --> 00:26:52,140
+drastically improve the amount of return
+we get for any given level of risk by
+understanding the
+
+188
+00:26:52,140 --> 00:27:00,060
+principles of diversification and
+correlation. That brings me nicely onto
+the next section of the video
+
+189
+00:27:00,700 --> 00:27:07,660
+where I'm going to talk about portfolio
+theory and modeling portfolio volatility.
+What we've just
+
+190
+00:27:07,660 --> 00:27:14,380
+covered by looking at the real performance
+of a portfolio is how to calculate and
+understand realized
+
+191
+00:27:14,380 --> 00:27:21,020
+volatility. That's something you can only
+do after the fact meaning that only once
+you have a live
+
+192
+00:27:21,020 --> 00:27:28,700
+portfolio up and running and you're
+recording its value on a daily or weekly
+basis or whatever frequency
+
+193
+00:27:28,700 --> 00:27:34,460
+you're recording on can you then start
+performing an in-depth volatility analysis
+as we've looked at
+
+194
+00:27:34,460 --> 00:27:41,900
+briefly there. What I want to show you now
+is how to calculate expected portfolio
+volatility which will help you
+
+195
+00:27:41,900 --> 00:27:49,900
+understand your portfolio construction as
+it currently stands and also help you
+model any structural changes
+
+196
+00:27:49,900 --> 00:27:57,340
+you might make. The difference here really
+compared to looking at realized volatility
+as we did before is
+
+197
+00:27:57,340 --> 00:28:04,220
+that we're going to use a model where we
+can estimate what the volatility of the
+portfolio that we currently hold is
+
+198
+00:28:04,220 --> 00:28:11,820
+and also what it might be going forward as
+well as how it can change when the inputs
+of the portfolio are varied
+
+199
+00:28:11,820 --> 00:28:20,060
+such as you know the number of assets, the
+weightings of the positions and so on. Now
+obviously this has a number of benefits
+
+200
+00:28:20,620 --> 00:28:26,780
+such as allowing you to understand the
+potential levels of risk and opportunity
+in the portfolio.
+
+201
+00:28:27,180 --> 00:28:34,140
+You're able to model a portfolio's
+volatility under various scenarios by
+changing inputs like the
+
+202
+00:28:34,140 --> 00:28:40,140
+constituents of the portfolio and their
+weightings as I've just said and because
+you can model these
+
+203
+00:28:40,140 --> 00:28:46,700
+various scenarios by changing portfolio
+inputs it also means you can use these
+techniques to try and
+
+204
+00:28:46,700 --> 00:28:53,180
+target certain levels of volatility in the
+portfolio as well. Now that's not
+something commonly done on the retail
+
+205
+00:28:53,180 --> 00:28:58,860
+side but in the investment management
+industry it's quite common. So before we
+move on to the
+
+206
+00:28:58,860 --> 00:29:04,780
+practical elements of using this portfolio
+volatility model I want to take you guys
+through some basic
+
+207
+00:29:04,780 --> 00:29:10,220
+portfolio theory and if you understand
+this stuff it's going to be incredibly
+powerful
+
+208
+00:29:10,220 --> 00:29:16,460
+and enable you to really understand how to
+build well-structured portfolios with
+great risk return profiles.
+
+209
+00:29:17,980 --> 00:29:24,380
+Essentially what I think is really
+important here is to understand how to
+calculate portfolio
+
+210
+00:29:24,380 --> 00:29:30,460
+volatility i.e. how the equation behind
+the model that we're going to use actually
+works. Now I'm not
+
+211
+00:29:30,460 --> 00:29:37,580
+going to do this in in massive detail
+regarding the equation itself but what I
+am going to discuss with you
+
+212
+00:29:37,580 --> 00:29:45,180
+guys is what the inputs are into the
+equation and that will then give us an
+understanding of the drivers
+
+213
+00:29:45,180 --> 00:29:52,700
+behind portfolio volatility. With that
+being said once all the underlying
+positions in the portfolio are
+
+214
+00:29:52,700 --> 00:30:00,380
+defined the three sets of inputs required
+for calculating and hence modeling
+portfolio volatility
+
+215
+00:30:00,380 --> 00:30:06,060
+are firstly the weightings of the
+individual assets in the portfolio. This
+is something that we looked
+
+216
+00:30:06,060 --> 00:30:11,020
+at in the previous video but basically the
+weighting for each position in the
+portfolio is just the gross
+
+217
+00:30:11,020 --> 00:30:18,780
+exposure of that position divided by the
+gross exposure of the overall portfolio.
+The variance of every asset
+
+218
+00:30:18,780 --> 00:30:25,420
+in the portfolio is also an input. The
+variance is just a measure of volatility
+and actually it's
+
+219
+00:30:25,420 --> 00:30:34,300
+mathematically equal to the standard
+deviation squared. And finally we need the
+co-variances of all the assets in the
+portfolio.
+
+220
+00:30:34,300 --> 00:30:44,780
+Now co-variances are measures of the
+relationship between two assets and so
+every pair of assets or positions in the
+portfolio
+
+221
+00:30:44,780 --> 00:30:53,020
+will have a pairwise covariance value that
+defines their linear relationship. And I'm
+going to talk in more detail
+
+222
+00:30:53,020 --> 00:31:00,780
+about co-variances and correlations in the
+next video but a positive covariance value
+means that the two assets being measured
+
+223
+00:31:00,780 --> 00:31:05,740
+tend to tend to move in the same direction
+at the same time and vice versa. If you've
+heard about
+
+224
+00:31:05,740 --> 00:31:11,740
+correlation or the Pearson's coefficient
+of correlation more specifically then
+that's just basically a
+
+225
+00:31:11,740 --> 00:31:18,940
+normalized covariance meaning it's bound
+between the values of one and minus one
+whereas covariance is unbounded.
+
+226
+00:31:18,940 --> 00:31:26,780
+Now in this video and the next one I might
+kind of use covariance and correlation
+terms kind of
+
+227
+00:31:26,780 --> 00:31:32,780
+interchangeably to represent the same
+thing because really what I'm talking
+about when I use those terms
+
+228
+00:31:32,780 --> 00:31:38,220
+although they are slightly mathematically
+different what I'm talking about is how
+they kind of define
+
+229
+00:31:38,220 --> 00:31:45,820
+the linear relationships between two
+assets. So if you want to get to grips
+further with statistics like
+
+230
+00:31:45,820 --> 00:31:52,620
+variances and co-variances then you can
+check out the basic statistics guide pdf
+which is a download file
+
+231
+00:31:52,620 --> 00:31:59,500
+available earlier in the video series.
+Realistically though there's no need to
+dive into the details too
+
+232
+00:31:59,500 --> 00:32:07,180
+much there and you just need to know that
+variance and standard deviations are
+measures of volatility
+
+233
+00:32:07,180 --> 00:32:13,660
+and that the variance is just the standard
+deviation squared and covariance and
+correlation statistics
+
+234
+00:32:13,660 --> 00:32:23,580
+are measures of the linear relationships
+between two assets. So let's go back to
+the inputs for our expected
+
+235
+00:32:23,580 --> 00:32:29,580
+portfolio volatility model. Weightings are
+easy to define as you've seen in the
+previous video we can
+
+236
+00:32:29,580 --> 00:32:36,140
+just assign a percentage weight to each
+position as we wish to as long as the
+total sum of the gross
+
+237
+00:32:36,140 --> 00:32:43,100
+weightings equal 100%. The other inputs
+require a little bit more thought though
+because when we're
+
+238
+00:32:43,100 --> 00:32:50,300
+talking about expected portfolio
+volatility the variance and covariance
+values that we use are just
+
+239
+00:32:50,300 --> 00:32:56,540
+estimates of what we expect those values
+to be in the future and there's a number
+of ways to come up with
+
+240
+00:32:56,540 --> 00:33:02,460
+these estimates but I want to keep things
+simple here. So the way we're going to
+obtain these estimates is
+
+241
+00:33:02,460 --> 00:33:07,900
+just by using a sample of past returns for
+all of the individual assets in the
+portfolio and then
+
+242
+00:33:07,900 --> 00:33:14,220
+calculating variance and covariance terms
+from that data for each asset and then
+that will kind of be
+
+243
+00:33:14,220 --> 00:33:24,700
+used as our estimations for those future
+values as well. Okay so now we know what
+inputs are required
+
+244
+00:33:24,700 --> 00:33:32,380
+let's move on to the portfolio volatility
+equation itself. As I said previously I'm
+not going to go
+
+245
+00:33:32,380 --> 00:33:38,780
+into any complicated maths here I just
+want to outline how the equation works
+rather than teach you the
+
+246
+00:33:38,780 --> 00:33:44,380
+details because knowing how the equation
+works and what affects its output is far
+more important for you
+
+247
+00:33:44,380 --> 00:33:51,500
+guys to learn than being able to write out
+the equation yourselves like we're doing
+you know a university
+
+248
+00:33:51,500 --> 00:33:58,060
+exam or something like that. So as I
+explained previously portfolio volatility
+depends on three
+
+249
+00:33:58,060 --> 00:34:03,020
+sets of inputs the weightings of each
+position in the portfolio and the variance
+of those positions
+
+250
+00:34:03,020 --> 00:34:08,220
+and the covariances between all of those
+positions. Let's ignore weightings for
+now.
+
+251
+00:34:09,340 --> 00:34:15,980
+A typical way to look at the variances and
+covariances of assets in the portfolio is
+through
+
+252
+00:34:15,980 --> 00:34:22,940
+something called a variance covariance
+matrix. Now I've got an example here which
+I'm going to use to
+
+253
+00:34:22,940 --> 00:34:31,980
+explain the fundamentals of the portfolio
+volatility equation. So here's our example
+variance covariance
+
+254
+00:34:31,980 --> 00:34:40,460
+matrix. Imagine a hypothetical portfolio
+that contains the assets that we've
+denoted by the tickers that you can
+
+255
+00:34:40,460 --> 00:34:48,300
+see in the row and column titles of this
+table. The values contained in this matrix
+are all covariance
+
+256
+00:34:48,300 --> 00:34:55,740
+calculations based on weekly returns over
+the same historic period for each asset.
+As I said before
+
+257
+00:34:55,740 --> 00:35:03,020
+covariances represent the pairwise
+relationship or linear relationship
+between two assets and so every value
+
+258
+00:35:03,020 --> 00:35:11,580
+you see here is calculated based on two
+stocks which are the tickers in the
+representative column and row titles for
+each
+
+259
+00:35:11,580 --> 00:35:20,540
+cell. So for example we can see here that
+the covariance between Facebook and Disney
+is 0.00063.
+
+260
+00:35:21,980 --> 00:35:28,700
+When covariance calculations are run on a
+single asset we get the variance of that
+asset. So these values are
+
+261
+00:35:28,700 --> 00:35:33,980
+shown on the diagonal where the
+representative row and column tickers are
+equal to each other. So for
+
+262
+00:35:33,980 --> 00:35:44,300
+example we can see here that the variance
+calculated for Visa stock in this example
+is 0.0009.
+
+263
+00:35:45,420 --> 00:35:52,140
+If you look at the table as a whole you
+can see that the numbers either side of
+the diagonal variance
+
+264
+00:35:52,140 --> 00:35:59,180
+values are symmetrical. That's because if
+you take the covariance of x with y it's
+the same as the
+
+265
+00:35:59,180 --> 00:36:06,460
+covariance of y with x or if we exchange
+those x and y values. If you take the
+covariance of Facebook
+
+266
+00:36:06,460 --> 00:36:10,540
+with Disney it's the same as taking the
+covariance of Disney with Facebook if that
+makes sense.
+
+267
+00:36:11,260 --> 00:36:17,820
+So the question is why am I showing you
+this kind of random covariance matrix and
+how does it actually
+
+268
+00:36:17,820 --> 00:36:26,140
+help us understand the portfolio
+volatility equation? Well let's imagine
+you want to work out the
+
+269
+00:36:26,140 --> 00:36:32,620
+expected volatility for a portfolio that
+is long all of these stocks. The matrix
+here provides estimates
+
+270
+00:36:32,620 --> 00:36:37,660
+using historical returns of all the
+variance and covariance terms you would
+need to calculate this
+
+271
+00:36:37,660 --> 00:36:45,340
+portfolio's volatility. What I'm saying is
+volatility for a portfolio of these stocks
+is a function of all
+
+272
+00:36:45,340 --> 00:36:50,860
+of the terms that you can see here. The
+key reason why I wanted to illustrate this
+in this way is because
+
+273
+00:36:50,860 --> 00:36:59,420
+it actually gives us a really important
+insight into the importance of covariances
+or the relationships
+
+274
+00:36:59,420 --> 00:37:07,340
+between portfolio positions to the overall
+output of portfolio volatility. For
+example let's imagine that
+
+275
+00:37:07,340 --> 00:37:14,460
+we have a portfolio that only contains one
+stock let's say visa the variance of that
+portfolio would
+
+276
+00:37:14,460 --> 00:37:20,780
+just be equal to the variance of visa and
+the volatility of that portfolio would
+just be the square root of
+
+277
+00:37:20,780 --> 00:37:25,580
+the variance so the standard deviation is
+is typically the volatility value that
+we're talking about
+
+278
+00:37:25,580 --> 00:37:33,180
+and standard deviation is the square root
+of the variance. If we then include Disney
+into the portfolio
+
+279
+00:37:33,180 --> 00:37:41,820
+the variance of the portfolio becomes a
+function of the variance terms of both
+Disney and visa and the
+
+280
+00:37:41,820 --> 00:37:49,020
+covariance terms between them so it's a
+function of two variance terms and two
+covariance terms.
+
+281
+00:37:50,300 --> 00:37:58,780
+In a three stock portfolio let's imagine
+we're now including Nike or Nike as well
+portfolio variance would then
+
+282
+00:37:58,780 --> 00:38:07,260
+become a function of three variance terms
+and six covariance terms. This is the
+important part to
+
+283
+00:38:07,260 --> 00:38:15,340
+understand as assets are added portfolio
+variance becomes a function of many more
+covariance terms than it
+
+284
+00:38:15,340 --> 00:38:21,900
+does of variance terms and put simply what
+we're saying here is that in any sort of
+reasonably sized portfolio
+
+285
+00:38:21,900 --> 00:38:28,780
+it's the relationships of positions in the
+portfolio quantified by you know either
+covariance or
+
+286
+00:38:28,780 --> 00:38:36,700
+correlation terms not the volatility of
+the individual assets that primarily
+drives portfolio volatility.
+
+287
+00:38:37,420 --> 00:38:42,540
+To demonstrate this further I have built a
+chart up at the top of this sheet that
+illustrates these
+
+288
+00:38:42,540 --> 00:38:50,460
+principles in more detail. What this chart
+shows is the volatility measured as a
+standard deviation of
+
+289
+00:38:50,460 --> 00:38:57,020
+various portfolios given different
+assumptions of correlation and volatility
+in the individual constituents
+
+290
+00:38:57,020 --> 00:39:04,060
+of those portfolios. To make things simple
+within each portfolio I have assumed that
+all assets have equal weightings,
+
+291
+00:39:04,060 --> 00:39:12,540
+equal volatilities, equal volatilities and
+equal correlations. So we're definitely
+covering theoretical examples here but
+
+292
+00:39:12,540 --> 00:39:17,900
+they're still going to sort of enhance
+your understanding of the principles that
+I'm trying to get across.
+
+293
+00:39:18,460 --> 00:39:23,740
+So each portfolio is represented by a
+different line in the chart and they all
+have varying
+
+294
+00:39:23,740 --> 00:39:29,820
+assumptions of volatility and correlation
+values. What I'm trying to demonstrate
+through this chart is how both the
+
+295
+00:39:29,820 --> 00:39:35,980
+volatility of individual portfolio
+constituents and the correlation terms
+between them affect overall
+
+296
+00:39:35,980 --> 00:39:45,420
+portfolio volatility based on how many
+positions are in the portfolio. You can
+see here that every
+
+297
+00:39:45,420 --> 00:39:52,700
+portfolio has a reduction in volatility as
+more assets are added which is always true
+provided the new assets
+
+298
+00:39:52,700 --> 00:39:57,980
+are not perfectly correlated with the rest
+of the portfolio i.e. equal to one.
+
+299
+00:39:57,980 --> 00:40:06,940
+The intercept on the left hand side and
+the maximum volatility for each portfolio
+therefore occurs when
+
+300
+00:40:07,500 --> 00:40:14,460
+there is only one asset in the portfolio
+and that is equal to the volatility of the
+single asset in the
+
+301
+00:40:14,460 --> 00:40:22,860
+portfolio as we discussed earlier. The
+speed at which portfolio volatility then
+decreases when new assets are
+
+302
+00:40:22,860 --> 00:40:29,980
+added which are added which we can see in
+the the slope of these lines is dependent
+on the correlation between
+
+303
+00:40:29,980 --> 00:40:37,100
+positions in the portfolio. If we take the
+grey line for example the individual asset
+volatilities are set
+
+304
+00:40:37,100 --> 00:40:45,420
+constant at 0.25 which is equal to 25% and
+the correlation between all the assets in
+the portfolio is set to 0.6
+
+305
+00:40:45,420 --> 00:40:52,540
+which is equal to 60 percent. So with one
+asset in that portfolio the volatility of
+the whole portfolio is
+
+306
+00:40:52,540 --> 00:41:01,180
+obviously equal to 25% but as more assets
+are added to the portfolio volatility
+decreases but not at a very
+
+307
+00:41:01,180 --> 00:41:07,740
+quick rate and to the point where
+volatility barely changes as you add
+assets beyond you know the numbers of
+
+308
+00:41:07,740 --> 00:41:14,780
+sort of 6 or 7. That's because the
+correlation between all of the positions
+is actually set quite high
+
+309
+00:41:14,780 --> 00:41:22,780
+at 0.6 as i said 60%. As a reference point
+that might be the kind of outcome you get
+if you're sort of long
+
+310
+00:41:22,780 --> 00:41:31,020
+only mega caps in similar sectors.
+Conversely if you have a look at the
+orange portfolio here we've assumed that
+the
+
+311
+00:41:31,020 --> 00:41:38,620
+individual asset volatilities in the
+portfolio are a little higher at 35% but
+the correlations are lower
+
+312
+00:41:38,620 --> 00:41:45,900
+at 20%. In that case the portfolio
+volatility starts 10% higher than the
+previous portfolio the grey
+
+313
+00:41:45,900 --> 00:41:53,740
+portfolio but as more assets are added the
+volatility actually continues lower than
+the previous portfolio
+
+314
+00:41:53,740 --> 00:42:02,540
+and again that is due to the lower
+correlations. I've labelled the orange
+portfolio as an example of
+
+315
+00:42:02,540 --> 00:42:09,740
+being long short large and mid cap
+equities. In reality in that kind of
+portfolio the average
+
+316
+00:42:09,740 --> 00:42:17,580
+correlation may even be quite a bit lower
+as we'll see in an example later. The
+yellow portfolio changes
+
+317
+00:42:17,580 --> 00:42:23,660
+depending on the inputs that you enter
+into the cells D3 and D4 here where you
+can enter
+
+318
+00:42:23,660 --> 00:42:29,260
+values for pairwise correlations and asset
+volatilities in the portfolio. These are
+in
+
+319
+00:42:29,260 --> 00:42:37,340
+decimals so 0.2 means 20% for example and
+I've restricted the correlation cell to
+only accept values
+
+320
+00:42:37,340 --> 00:42:44,140
+between 0 and 1 because although negative
+correlations within portfolios are
+possible especially within
+
+321
+00:42:44,140 --> 00:42:50,220
+a long short portfolio I think it just
+kind of complicates the concepts that I'm
+trying to get across
+
+322
+00:42:50,220 --> 00:42:57,340
+you so that's why I've put a limit on it.
+I don't want to add any kind of further
+confusion. You can play
+
+323
+00:42:57,340 --> 00:43:02,540
+around with these values to get more of a
+feel for how they affect portfolio
+volatility so for example
+
+324
+00:43:02,540 --> 00:43:13,900
+here let's put in 0.05 so 5% correlation
+and 50% volatility so 0.5 in this cell and
+when you do that
+
+325
+00:43:13,900 --> 00:43:20,140
+you can see that the yellow portfolio
+changes quite significantly. Obviously
+when there's just one asset in that
+portfolio
+
+326
+00:43:20,140 --> 00:43:27,820
+the portfolio volatility is 50% and then
+because the correlations are set so low at
+5% the steepness of
+
+327
+00:43:27,820 --> 00:43:35,340
+that curve i.e. the amount that risk or
+volatility is reduced in that portfolio as
+more assets are added
+
+328
+00:43:35,900 --> 00:43:44,540
+is sort of very quick so that the
+volatility decreases at a very quick rate
+as more assets are added.
+
+329
+00:43:44,540 --> 00:43:52,620
+So that's portfolio volatility theory out
+of the way hopefully by going through a
+variance covariance
+
+330
+00:43:52,620 --> 00:43:57,820
+matrix and looking at this chart you guys
+understand a bit more about why
+correlations between assets
+
+331
+00:43:57,820 --> 00:44:05,420
+are important and how they affect the
+volatility of the overall portfolio.
+Ultimately you know what we're
+
+332
+00:44:05,420 --> 00:44:13,260
+talking about here is the sort of positive
+effects of diversification. At this stage
+i do want to point
+
+333
+00:44:13,260 --> 00:44:20,700
+out a very important sort of practical
+consideration to do with diversification.
+Now you could be forgiven
+
+334
+00:44:20,700 --> 00:44:27,260
+for looking at the chart here and thinking
+okay great all i need to do here is fill
+my portfolio with loads
+
+335
+00:44:27,260 --> 00:44:32,380
+and loads and loads of positions and as
+long as i can keep correlations low the
+performance i will get in
+
+336
+00:44:32,380 --> 00:44:40,620
+terms of risk return will be awesome
+because you know the volatility will be so
+small. This is definitely
+
+337
+00:44:40,620 --> 00:44:46,940
+the wrong way to think about things
+because the reality is that your portfolio
+returns are going to be driven
+
+338
+00:44:46,940 --> 00:44:55,420
+by your higher quality ideas and over
+diversifying outside of those sort of top
+quality ideas is going
+
+339
+00:44:55,420 --> 00:45:02,620
+to significantly dilute your returns.
+Basically you know you'll end up with a
+pretty sort of pathetic
+
+340
+00:45:02,620 --> 00:45:09,820
+portfolio one that carries little risk but
+also very little reward. Interestingly
+though this is a problem
+
+341
+00:45:09,820 --> 00:45:18,220
+that professional managers can sometimes
+face as well because usually it's sort of
+to do with structural or
+
+342
+00:45:18,220 --> 00:45:24,380
+regulatory or liquidity constraints that
+kind of force them into over diversifying
+away from their core
+
+343
+00:45:24,380 --> 00:45:32,220
+positions. Retail traders though have no
+excuses for this they don't have those
+issues at least certainly not
+
+344
+00:45:32,220 --> 00:45:38,780
+not nearly as much so you know there's no
+excuse for you guys kind of over
+diversifying your portfolios.
+
+345
+00:45:40,300 --> 00:45:45,340
+Aside from over diversification diluting
+returns you guys will find that it's
+actually
+
+346
+00:45:45,340 --> 00:45:52,780
+very difficult to continuously find low
+correlation ideas anyway and so
+diversification driven risk
+
+347
+00:45:52,780 --> 00:45:59,420
+benefits are going to kind of taper off as
+more assets are added anyway. As well as
+that correlations
+
+348
+00:45:59,420 --> 00:46:04,220
+between assets aren't fixed and they can
+change quite significantly. Again we'll
+kind of look at that a
+
+349
+00:46:04,220 --> 00:46:09,100
+little bit in the next video. So that's
+another reason why you shouldn't just
+diversify
+
+350
+00:46:09,100 --> 00:46:15,340
+into apparently low correlation positions
+for the sake of it. They have to be
+fuelled by high quality
+
+351
+00:46:15,340 --> 00:46:22,620
+research to offer up the best chances for
+success. Good retail traders should be
+aiming for about 8 to
+
+352
+00:46:22,620 --> 00:46:28,620
+12 high quality high conviction positions
+that have low correlations with each other
+depending on the
+
+353
+00:46:28,620 --> 00:46:33,660
+capital that you have to play with maybe
+you can expand that portfolio size a
+little bit into the low
+
+354
+00:46:33,660 --> 00:46:39,500
+of the high quality. In the next video I'm
+going to talk in a bit more detail about
+correlation including
+
+355
+00:46:39,500 --> 00:46:43,660
+some pitfalls and things you should watch
+out for so we're going to revisit a bit of
+what I've just
+
+356
+00:46:43,660 --> 00:46:48,860
+talked about there and I'll also cover
+some more sort of practical pointers when
+doing your own
+
+357
+00:46:48,860 --> 00:46:55,020
+correlation analysis as well. For now
+though I'm going to leave portfolio theory
+there and we're going to
+
+358
+00:46:55,020 --> 00:47:00,380
+move on to some practical portfolio
+volatility analysis using the rest of the
+sheet.
+
+359
+00:47:01,260 --> 00:47:06,860
+So what we're going to do next is some
+scenario analysis where we consider
+various different portfolios
+
+360
+00:47:06,860 --> 00:47:13,100
+and see how volatility changes across
+them. But before we do that let me explain
+a bit more about how
+
+361
+00:47:13,100 --> 00:47:19,180
+this spreadsheet is set up. We've
+obviously been through three sheets
+already. Standard deviation,
+
+362
+00:47:19,180 --> 00:47:26,700
+calculation, portfolio distribution of
+returns and portfolio volatility theory.
+The asset volatility
+
+363
+00:47:26,700 --> 00:47:33,100
+summary sheet shows a table of various US
+equities some of which you know you might
+be familiar with
+
+364
+00:47:33,100 --> 00:47:39,500
+outside of these courses but some you will
+also recognize from the previous video or
+the IPLT course.
+
+365
+00:47:40,540 --> 00:47:47,260
+Inside the table each stock contains some
+classification information such as market
+capitalization and
+
+366
+00:47:47,260 --> 00:47:55,100
+sector information as well as volatility
+calculations in various formats. So in the
+blue section of the
+
+367
+00:47:55,100 --> 00:48:01,980
+table we have realized standard deviation
+calculations using different frequencies
+of data. If you want some
+
+368
+00:48:01,980 --> 00:48:07,980
+specifics about how these numbers have
+been calculated then basically for each
+company the standard deviation
+
+369
+00:48:07,980 --> 00:48:14,700
+of various frequencies of returns has been
+calculated over the last 30 years of stock
+price data before the 10th of
+
+370
+00:48:14,700 --> 00:48:21,900
+June 2021. So for example column I shows
+the standard deviation of daily returns
+for each stock over the
+
+371
+00:48:21,900 --> 00:48:29,580
+last 30 years prior to the 10th of June
+2021. If a stock has less than 30 years of
+historical data available
+
+372
+00:48:29,580 --> 00:48:38,300
+then the entire data set available is
+used. Column J shows the standard
+deviation for each stock using
+
+373
+00:48:38,300 --> 00:48:46,140
+weekly returns over the last 30 years and
+so on. Beyond those blue columns of data
+we have more
+
+374
+00:48:46,140 --> 00:48:52,300
+volatility values in a yellow section.
+This section shows the implied volatility
+values for each of these
+
+375
+00:48:52,300 --> 00:48:59,660
+stocks on the 10th of June 2021 using at
+the money options. Implied volatility
+isn't something we talk
+
+376
+00:48:59,660 --> 00:49:06,140
+about much in this course specifically but
+you will have learned about it in the IPLT
+course. Put simply implied
+
+377
+00:49:06,140 --> 00:49:13,020
+volatility is a forward-looking measure of
+volatility using option prices in the
+market which makes it
+
+378
+00:49:13,020 --> 00:49:18,460
+preferable really as a calculation method
+over realized volatility for the most part
+since
+
+379
+00:49:18,460 --> 00:49:23,900
+we're interested in how stocks will behave
+in the future not how they have done in
+the past.
+
+380
+00:49:24,940 --> 00:49:30,460
+Sometimes though we're forced into using
+past prices to make estimates about future
+volatility in
+
+381
+00:49:30,460 --> 00:49:36,540
+correlation because there is no better
+alternative or because it's significantly
+quicker and easier to
+
+382
+00:49:36,540 --> 00:49:47,260
+calculate. Now this summary sheet is
+really just here as a guide to show you
+which equities data are in the
+
+383
+00:49:47,260 --> 00:49:54,380
+file and therefore can be used in the
+portfolio volatility calculator but I want
+to quickly point out a few
+
+384
+00:49:54,380 --> 00:50:02,060
+things about the volatility values that we
+see here. Firstly remember what I said
+about volatility earlier
+
+385
+00:50:02,060 --> 00:50:09,900
+in that it represents both risk and
+opportunity. Typically we see higher
+volatility across equities than in
+
+386
+00:50:09,900 --> 00:50:18,220
+other asset classes and within equities
+volatility and hence opportunity for
+profit increases as you slide
+
+387
+00:50:18,220 --> 00:50:25,660
+down the market cap scale meaning lower
+market cap stocks tend to be more volatile
+and hence present us with
+
+388
+00:50:25,660 --> 00:50:31,820
+greater profit potential when we trade
+them. We can see that clearly in this
+table by looking at the
+
+389
+00:50:31,820 --> 00:50:38,460
+the volatility values for the various
+equities with different market caps. The
+other point I want to
+
+390
+00:50:38,460 --> 00:50:45,820
+make which I made earlier about volatility
+was that it increases with longer time
+horizons which is
+
+391
+00:50:45,820 --> 00:50:52,780
+quite intuitive. Trading stocks over long
+time periods gives the prices longer to
+move so that's why it's
+
+392
+00:50:52,780 --> 00:50:59,340
+intuitive that there's more volatility in
+longer time horizons. So we can see here
+that volatility and hence
+
+393
+00:50:59,340 --> 00:51:04,300
+opportunity increases increases as we go
+from daily to weekly to monthly to monthly
+and quarterly
+
+394
+00:51:04,300 --> 00:51:10,300
+frequencies of return. I'm not going to go
+into any more detail on that here because
+we talk a lot about
+
+395
+00:51:10,300 --> 00:51:16,140
+it in the IPLT course but this is why we
+talk about the sweet spot for trading time
+horizons being or for
+
+396
+00:51:16,140 --> 00:51:23,660
+retail traders being around 20 to 60
+trading days. That is of course you know
+dependent on market volatility as a whole.
+
+397
+00:51:23,660 --> 00:51:30,620
+The last thing that I want to note about
+these volatility values that you see here
+is that
+
+398
+00:51:31,340 --> 00:51:38,780
+there is sometimes quite a difference
+between realised volatility and implied
+volatility for a stock over
+
+399
+00:51:38,780 --> 00:51:45,020
+the same sort of intervals. Much of that
+is to do with the fact that as I said
+implied volatility is a
+
+400
+00:51:45,020 --> 00:51:50,620
+forward-looking measure and it takes into
+account the current market environment and
+the outlook that
+
+401
+00:51:50,620 --> 00:51:57,980
+stocks the stock's volatility has going
+forward whereas realised volatility is
+based on all the historical
+
+402
+00:51:57,980 --> 00:52:04,860
+values that have been used in the standard
+deviation calculation. In this case up to
+30 years of data.
+
+403
+00:52:05,980 --> 00:52:12,860
+These differences are particularly
+apparent in this table if we look at
+things like the the FAANG stocks.
+
+404
+00:52:13,500 --> 00:52:20,060
+If you look at stocks like Apple, Google,
+Facebook you'll see that the realised
+volatility calculations are
+
+405
+00:52:20,060 --> 00:52:26,780
+much higher than the implied volatility
+calculations and that's because these
+stocks have experienced massive
+
+406
+00:52:26,780 --> 00:52:33,340
+and rapid growth over the last 30 years
+which obviously shows up in the volatility
+of the stock's returns.
+
+407
+00:52:33,980 --> 00:52:40,460
+But now they are sort of huge maturing
+businesses with diverse operations and so
+realistically
+
+408
+00:52:40,460 --> 00:52:45,340
+their growth outlook is nothing like what
+it was which is why the implied or
+forward-looking
+
+409
+00:52:45,340 --> 00:52:51,900
+volatility values are lower. So when
+you're looking at this table just be aware
+of things like that.
+
+410
+00:52:51,900 --> 00:52:58,620
+You need to be able to understand what the
+volatility values of companies are but
+also why they might be different as well.
+
+411
+00:52:58,620 --> 00:53:04,860
+That way you can make an educated
+assumption about what volatility might be
+like in the future.
+
+412
+00:53:06,700 --> 00:53:12,140
+Okay, that was a pretty long explanation
+of the summary sheet but I wanted to be
+thorough.
+
+413
+00:53:13,340 --> 00:53:16,860
+Next up we've got the asset prices and
+asset return sheets.
+
+414
+00:53:17,740 --> 00:53:24,140
+All of the stocks that you can see in the
+summary sheet here have prices and returns
+data listed in these sheets.
+
+415
+00:53:25,020 --> 00:53:30,620
+The price data can be easily updated using
+Yahoo Finance which I'll go through a bit
+later in the video
+
+416
+00:53:31,180 --> 00:53:35,580
+and the data in the return sheet is just
+derived from the prices sheet.
+
+417
+00:53:36,220 --> 00:53:40,780
+I've chosen to download and generate
+returns for each of these stocks on a
+weekly basis simply because
+
+418
+00:53:40,780 --> 00:53:44,940
+that's the time frame that I like to use
+to calculate covariances and correlations.
+
+419
+00:53:45,500 --> 00:53:51,180
+There are some of my reasons for that
+which I won't go into here but if you
+wanted to you could do the same
+
+420
+00:53:51,180 --> 00:53:57,020
+with daily or monthly prices should you
+wish to do so. However, you will need to
+update a couple of
+
+421
+00:53:57,020 --> 00:54:02,620
+calculation cells in the portfolio
+volatility model as well if you do that so
+I recommend just kind of
+
+422
+00:54:02,620 --> 00:54:06,300
+sticking to weekly data when you download
+and update prices.
+
+423
+00:54:08,140 --> 00:54:14,140
+As I said the returns here are generated
+from the prices sheet and are used for
+variance and
+
+424
+00:54:14,140 --> 00:54:19,180
+covariance equations in our portfolio
+volatility practice sheet that we're going
+to be going on to
+
+425
+00:54:19,180 --> 00:54:25,900
+shortly. An important point here which
+I'll mention again later is that all the
+different price
+
+426
+00:54:26,540 --> 00:54:31,980
+and return data series must be the same
+length as each other or the calculations
+in the portfolio
+
+427
+00:54:31,980 --> 00:54:38,060
+volatility model won't work. So in this
+case you can see that I've got prices
+going back to the 16th of
+
+428
+00:54:38,060 --> 00:54:45,980
+July 2015 and returns to the 23rd of July
+2015. Remember that whenever we calculate
+returns prices over
+
+429
+00:54:45,980 --> 00:54:52,060
+two periods are required in the
+calculation and so obviously the series
+will always be one period
+
+430
+00:54:52,060 --> 00:54:57,900
+shorter in the return sheet than the
+prices sheet. Later in the video I'm going
+to go through an example
+
+431
+00:54:57,900 --> 00:55:04,540
+of downloading your own price data so you
+can feel comfortable with modelling your
+own sort of
+
+432
+00:55:04,540 --> 00:55:12,860
+portfolio's volatility. So all of this
+leads us to the main event which is the
+portfolio volatility
+
+433
+00:55:12,860 --> 00:55:19,820
+practice sheet. This sheet is going to
+automatically calculate or model expected
+portfolio volatility
+
+434
+00:55:19,820 --> 00:55:25,900
+on an annualised basis for any portfolio
+that you build provided you've got the
+correct data in the
+
+435
+00:55:25,900 --> 00:55:34,060
+supporting sheets I've just mentioned.
+It's a great tool really for being able to
+conduct scenario analysis
+
+436
+00:55:34,060 --> 00:55:41,580
+and to help you understand the potential
+volatility that your portfolio faces
+currently and under varying
+
+437
+00:55:41,580 --> 00:55:48,700
+circumstances when the structure of the
+portfolio might change. Okay so at the top
+of this sheet you'll
+
+438
+00:55:48,700 --> 00:55:55,820
+see a large variance covariance matrix
+which can support up to 25 positions and
+you can insert
+
+439
+00:55:55,820 --> 00:56:01,500
+any company that you have the data for
+into the portfolio model just by typing
+the ticker into the
+
+440
+00:56:01,500 --> 00:56:07,740
+orange cells running down the left hand
+side in column B. On the right hand side
+in column AB you can
+
+441
+00:56:07,740 --> 00:56:13,500
+assign the dollar net allocation to each
+position in the portfolio and I'll talk
+about that a bit more
+
+442
+00:56:13,500 --> 00:56:20,460
+as we get into our scenario examples. The
+only cells that you guys should be
+touching in this sheet are the
+
+443
+00:56:20,460 --> 00:56:27,020
+orange ones. All other cells are
+calculation cells that will update
+automatically based on the inputs that
+
+444
+00:56:27,020 --> 00:56:34,380
+you enter into those orange cells. If you
+do end up editing calculation cells then
+you may run into trouble
+
+445
+00:56:34,380 --> 00:56:39,740
+as you know there's lots of complex
+formulas running behind the scenes here so
+just be careful with your
+
+446
+00:56:39,740 --> 00:56:48,380
+inputs. Now when you download this file
+the sheet will be locked so you can only
+actually enter values into the orange
+cells.
+
+447
+00:56:48,380 --> 00:56:54,060
+However, if you do want to unprotect the
+sheet to play around with the formulas
+then you can do so by
+
+448
+00:56:54,060 --> 00:57:01,820
+going to review on the ribbon followed by
+unprotect sheet and then type in the
+password portvol. I've
+
+449
+00:57:01,820 --> 00:57:09,980
+written a sort of note here quickly to
+remind you of that as well inside the
+sheet. As I say though you risk
+
+450
+00:57:09,980 --> 00:57:15,660
+it's breaking the model if you edit the
+calculation calculation cells in this
+sheet which is why by default
+
+451
+00:57:15,660 --> 00:57:21,500
+I'm locking it to kind of prevent any user
+error but equally you know I don't want to
+stop those of
+
+452
+00:57:21,500 --> 00:57:28,460
+you that are interested in doing so to
+edit anything that you might wish to. So
+let's continue.
+
+453
+00:57:28,460 --> 00:57:36,940
+variance and covariance values are
+generated automatically when you have when
+you enter tickers and their capital
+
+454
+00:57:36,940 --> 00:57:44,140
+allocations into those orange cells and
+from all of those numbers a portfolio
+variance figure is generated in
+
+455
+00:57:44,140 --> 00:57:56,460
+cell B37 in the table below. That value is
+then converted to a standard deviation
+figure for the frequency of data with
+which you have downloaded prices.
+
+456
+00:57:56,460 --> 00:58:05,020
+So in this case we're using weekly prices
+and returns and so this value here in cell
+C40 is a
+
+457
+00:58:05,020 --> 00:58:15,340
+weekly standard deviation value. That
+value is then converted to a more industry
+standard annualized volatility number in
+cell B43.
+
+458
+00:58:16,220 --> 00:58:23,820
+If you wanted to change the frequency of
+price and returns data that you used in
+the model you would need
+
+459
+00:58:23,820 --> 00:58:32,380
+to update the formula in this cell to
+reflect that change. I advise you just
+leave it as it is for simplicity and make
+sure you always
+
+460
+00:58:32,380 --> 00:58:34,380
+use weekly price data throughout the sheet
+
+461
+00:58:34,940 --> 00:58:37,820
+but there is the possibility to do that if
+you wanted to.
+
+462
+00:58:38,620 --> 00:58:44,380
+The other calculation cells that I've
+included in this box here include a quick
+evaluation of the
+
+463
+00:58:44,380 --> 00:58:52,940
+average asset standard deviation value
+based on the returns data in the asset
+return sheet and I've also
+
+464
+00:58:52,940 --> 00:58:58,940
+converted that to an annualized figure as
+well. So these numbers are just kind of
+useful as a reference
+
+465
+00:58:58,940 --> 00:59:04,940
+so that you have an idea of the average
+volatility of the individual positions
+that make up the portfolio.
+
+466
+00:59:04,940 --> 00:59:13,260
+Adjacent to this analysis box I've just
+been through there's also a sort of
+scenario analysis table which
+
+467
+00:59:13,260 --> 00:59:17,500
+we're going to get into as we go through
+some scenario examples shortly.
+
+468
+00:59:17,500 --> 00:59:25,100
+So let's start with our first portfolio
+scenario now. At the moment the portfolio
+that we've got entered
+
+469
+00:59:25,100 --> 00:59:30,540
+here contains six stocks which are our
+traditional FAANG stocks along with
+Microsoft as well.
+
+470
+00:59:31,340 --> 00:59:37,420
+What I'm going to do in this first
+scenario is build out a long only mega cap
+portfolio with 10 stocks
+
+471
+00:59:37,420 --> 00:59:46,940
+all equally weighted. If we take a look
+back to the summary page I'm just going to
+pick another four mega cap stocks to add
+to
+
+472
+00:59:46,940 --> 00:59:53,580
+this portfolio and the ones that I'm going
+to choose are Disney, IBM, Caterpillar and
+Striker.
+
+473
+00:59:53,580 --> 00:59:58,780
+So to add those to the portfolio we can
+just copy and paste the tickers into the
+orange cells in column B
+
+474
+00:59:59,660 --> 01:00:10,140
+or we can type them manually so DIS for
+Disney, IBM for IBM, CAT for Caterpillar
+and SYK for Striker.
+
+475
+01:00:11,340 --> 01:00:17,500
+Whenever you enter tickers into the
+portfolio you must give them an associated
+dollar net allocation.
+
+476
+01:00:17,500 --> 01:00:23,100
+In this portfolio we're just going to
+create an equally weighted long only
+portfolio of 10 mega cap stocks
+
+477
+01:00:23,100 --> 01:00:30,380
+with a total capital amount of capital to
+allocate of $100,000 so the dollar
+allocation
+
+478
+01:00:30,380 --> 01:00:32,860
+for each position is going to be $10,000.
+
+479
+01:00:34,220 --> 01:00:40,060
+Before we go any further let me quickly
+talk about some mechanics of using the
+sheet
+
+480
+01:00:40,060 --> 01:00:44,060
+specifically with reference to adding,
+removing or replacing positions.
+
+481
+01:00:44,780 --> 01:00:48,780
+Firstly, whenever you have tickers running
+down the orange cells in column B
+
+482
+01:00:48,780 --> 01:00:54,940
+they must always be in a continuous
+unbroken list meaning there can't be a gap
+between any of the
+
+483
+01:00:54,940 --> 01:01:01,500
+tickers that you enter. When you add an
+asset to the portfolio that means you
+should enter the new
+
+484
+01:01:01,500 --> 01:01:06,860
+ticker directly below the tickers that you
+already have listed as constituents in the
+portfolio.
+
+485
+01:01:07,740 --> 01:01:15,100
+When you remove an asset all you need to
+do is delete the ticker and the associated
+allocation by
+
+486
+01:01:15,100 --> 01:01:20,460
+clearing the contents of those cells and
+then shuffle up the tickers and the
+respective allocations so that
+
+487
+01:01:20,460 --> 01:01:27,340
+there's no gaps and it remains continuous.
+If you want to replace an asset all you
+have to do is type
+
+488
+01:01:27,340 --> 01:01:33,100
+over the ticker you wish to replace with
+the new ticker and the same applies for
+the new dollar allocation of course.
+
+489
+01:01:35,100 --> 01:01:41,100
+So essentially what we have here is a very
+simple equal weighted long only mega cap
+portfolio
+
+490
+01:01:41,900 --> 01:01:52,220
+and you can see from cell B43 that the
+expected volatility for the portfolio is
+calculated as 19.23%
+
+491
+01:01:52,220 --> 01:01:58,860
+on an annualized basis. Remember this
+number is generated using the past data
+that we've selected so
+
+492
+01:01:58,860 --> 01:02:07,100
+from mid-2015 to mid-2021 and so it's just
+an estimation. It would only hold true if
+the variances and
+
+493
+01:02:07,100 --> 01:02:13,660
+co-variances of all of the individual
+assets remain constant at those same
+values going forward. This
+
+494
+01:02:13,660 --> 01:02:20,540
+is why it's just an estimate of portfolio
+volatility going forward. Before we move
+on to a different
+
+495
+01:02:20,540 --> 01:02:26,140
+portfolio I just want you guys to take a
+quick note of the average individual asset
+standard deviation
+
+496
+01:02:26,140 --> 01:02:35,420
+level in this portfolio as well which is
+around 28.28%. Okay so let's move on to a
+different scenario now
+
+497
+01:02:35,420 --> 01:02:43,580
+where we look at another long only
+portfolio but this time containing five
+large and five mid cap stocks.
+
+498
+01:02:44,460 --> 01:02:48,860
+I've selected a sample of stocks from the
+list available in this sheet to make up
+the constituents
+
+499
+01:02:48,860 --> 01:02:54,380
+of this portfolio and those are LVS, I'm
+just going to read out the tickers because
+it's easier rather than
+
+500
+01:02:54,380 --> 01:03:08,300
+the full names, LVS, BBY, LEN, SPLK, VTRS,
+XPO, MOS, FEE, TTEC and WING.
+
+501
+01:03:09,900 --> 01:03:15,500
+You can look up what those tickers are in
+the summary sheet if you wish to or online
+as you're
+
+502
+01:03:15,500 --> 01:03:20,220
+going through the video but like I said
+it's easier just to kind of stick to the
+tickers in a
+
+503
+01:03:20,860 --> 01:03:26,860
+example like this. So I'm going to keep
+the portfolio equally weighted with ten
+thousand dollars per
+
+504
+01:03:26,860 --> 01:03:32,300
+position and once I've entered all of
+those positions we can see how the
+portfolio volatility
+
+505
+01:03:32,300 --> 01:03:40,780
+has now changed. So with this portfolio
+you can see the annualized standard
+deviation is calculated as 29.36%
+
+506
+01:03:41,820 --> 01:03:49,020
+which is significantly more than the
+previous portfolio that we looked at which
+had a volatility of 19.23%.
+
+507
+01:03:50,540 --> 01:03:57,260
+This is largely due to the massive
+increase in individual asset volatility of
+the new constituents so
+
+508
+01:03:57,260 --> 01:04:04,460
+our average asset volatility now reads as
+44.33% rather than 28.28%.
+
+509
+01:04:05,420 --> 01:04:09,980
+So the conclusion here is similar to that
+which we've drawn previously and that is
+that
+
+510
+01:04:09,980 --> 01:04:16,460
+there's more volatility in trading large
+and mid caps compared to just mega caps.
+That's good for us
+
+511
+01:04:16,460 --> 01:04:22,700
+because whilst it represents additional
+risk it also means more opportunity for
+profit. There is a bit
+
+512
+01:04:22,700 --> 01:04:27,740
+more to discuss about the differences in
+mid and large cap portfolios compared to
+mega cap ones when
+
+513
+01:04:27,740 --> 01:04:33,020
+it comes to portfolio volatility and
+correlations but I'm going to save that
+for the next video.
+
+514
+01:04:34,860 --> 01:04:41,500
+We're going to continue now onto our third
+portfolio scenario and this one's going to
+be a bit more
+
+515
+01:04:41,500 --> 01:04:46,940
+representative of the type of portfolio
+that ITPM traders might have on because it
+includes both
+
+516
+01:04:46,940 --> 01:04:53,340
+longs and shorts in the mid and large cap
+space. So I'm going to stick with the
+portfolio as it is
+
+517
+01:04:53,340 --> 01:04:58,940
+in terms of assets but instead of them all
+being long positions I'm going to change a
+few to shorts.
+
+518
+01:04:59,820 --> 01:05:05,500
+I think for this example what we'll do is
+look at what happens when we go short four
+of our large caps.
+
+519
+01:05:05,500 --> 01:05:11,820
+So that means we'll have a portfolio
+that's long six stocks and short four and
+it's predominantly
+
+520
+01:05:11,820 --> 01:05:18,700
+weighted to being long the smaller cap
+stocks. I want to keep all the gross
+weightings to each
+
+521
+01:05:18,700 --> 01:05:25,740
+position the same so that this portfolio
+remains somewhat comparable to the
+previous one but whilst
+
+522
+01:05:25,740 --> 01:05:31,260
+the gross allocation to each constituent
+will be ten thousand dollars still the net
+allocation
+
+523
+01:05:31,260 --> 01:05:36,780
+needs to be negative for our short
+positions with the way that this model is
+built. So to make that
+
+524
+01:05:36,780 --> 01:05:43,100
+adjustment adjustment all I'm going to do
+here is make the top four positions
+negative by putting a
+
+525
+01:05:43,100 --> 01:05:51,420
+negative sign before the allocation values
+in the column AB. Now once those short
+positions have been
+
+526
+01:05:51,420 --> 01:05:58,860
+allocated we can have a look at the
+volatility analysis again. What we see
+here is an absolutely
+
+527
+01:05:58,860 --> 01:06:04,780
+massive difference to our previous
+portfolios. The annualized standard
+deviation of this portfolio
+
+528
+01:06:04,780 --> 01:06:12,780
+is much much lower at 11.23% and that's
+all the while the average asset
+volatilities of the constituents
+
+529
+01:06:12,780 --> 01:06:17,420
+have remained the same between this one
+and the last scenario because remember we
+haven't actually
+
+530
+01:06:17,420 --> 01:06:24,780
+changed any of the stocks themselves. So
+if we think back to the portfolio
+volatility theory I discussed
+
+531
+01:06:24,780 --> 01:06:31,580
+earlier then we know that if volatility of
+the portfolio has changed but the
+variances or volatility of the
+
+532
+01:06:31,580 --> 01:06:38,380
+constituents themselves hasn't then
+clearly the covariances or correlations
+must have changed and
+
+533
+01:06:38,380 --> 01:06:47,580
+that's had a massive effect. I can tell
+you now that this is because we've got a
+portfolio with both
+
+534
+01:06:47,580 --> 01:06:53,660
+long and short positions within it rather
+than just a long only portfolio. Again I'm
+not going to spend too
+
+535
+01:06:53,660 --> 01:06:59,740
+much time discussing the correlation side
+of things right now because it's something
+I'm going to emphasize a
+
+536
+01:06:59,740 --> 01:07:05,660
+lot more in the next video instead where
+I'm going to run through kind of the same
+scenarios portfolio
+
+537
+01:07:05,660 --> 01:07:14,300
+scenarios again but from the perspective
+of correlation. Okay now you might be
+thinking at this stage
+
+538
+01:07:14,300 --> 01:07:20,940
+given what I've kind of said and taught so
+far that if volatility drops that much by
+having both long and
+
+539
+01:07:20,940 --> 01:07:28,860
+short positions aren't we forgoing
+opportunity for profit. My answer to that
+is no not exactly
+
+540
+01:07:29,420 --> 01:07:37,020
+and here's why. Firstly this is a strategy
+for all markets. We're targeting absolute
+returns every
+
+541
+01:07:37,020 --> 01:07:43,340
+year irrelevant of what happens to the
+market as a whole. Of course that might
+mean that occasionally you return
+
+542
+01:07:43,340 --> 01:07:49,260
+less than the market but you also won't
+lose as much when the market goes down and
+over time that means
+
+543
+01:07:49,260 --> 01:07:56,460
+you'll significantly outperform. Limiting
+losses is essential to wealth creation and
+the proof of that
+
+544
+01:07:56,460 --> 01:08:03,260
+is kind of the simple mathematical fact
+that recovering from losses requires a
+much bigger percentage gain
+
+545
+01:08:03,260 --> 01:08:09,180
+than the percentage loss loss suffered in
+the first place. So for example if you
+have a position
+
+546
+01:08:09,180 --> 01:08:19,180
+that loses 20 percent you need the trade
+to then increase by 25 percent that's 25
+percent to get back to where you started.
+
+547
+01:08:19,180 --> 01:08:30,220
+Secondly always consider what data your
+results and analysis are based on. In
+these scenarios we're working with data
+over a
+
+548
+01:08:30,220 --> 01:08:36,300
+a roughly kind of six year historical
+period. Just because the correlations
+between these long and
+
+549
+01:08:36,300 --> 01:08:41,580
+short positions have been negative over
+that period as a whole doesn't mean that
+they're going to continue
+
+550
+01:08:41,580 --> 01:08:47,500
+to be that way when you trade your own
+ideas. When you generate and time your own
+trades you're
+
+551
+01:08:47,500 --> 01:08:52,860
+going to have positive return expectations
+on both the long and short sides of your
+portfolio
+
+552
+01:08:52,860 --> 01:08:58,460
+over the period that you're trading those
+assets. If you're right obviously the
+returns can be huge
+
+553
+01:08:58,460 --> 01:09:03,740
+and if you're wrong typically you're only
+going to be wrong on one side either the
+long or short side
+
+554
+01:09:03,740 --> 01:09:13,100
+meaning your downside is reduced. Of
+course it is possible that you could be
+wrong on both
+
+555
+01:09:13,100 --> 01:09:17,580
+the long and short sides of your portfolio
+and that is going to hurt there's no doubt
+about that
+
+556
+01:09:17,580 --> 01:09:21,020
+but if you do your homework and put into
+practice the stuff that we teach in this
+course
+
+557
+01:09:21,020 --> 01:09:24,940
+then that's going to be much much less
+likely than it would have been otherwise.
+
+558
+01:09:24,940 --> 01:09:34,220
+Thirdly this model can only run its
+calculations using returns of the stocks
+themselves however many
+
+559
+01:09:34,220 --> 01:09:39,100
+of you will actually end up using options
+to structure your trades especially if you
+then move
+
+560
+01:09:39,100 --> 01:09:45,740
+on to do our POTM course our Professional
+Options Trading Masterclass course.
+Options have an implicit
+
+561
+01:09:45,740 --> 01:09:52,540
+leverage given that they're a fraction of
+the cost for a kind of similar exposure
+compared to buying or selling
+
+562
+01:09:52,540 --> 01:09:58,860
+the underlying stock outright and by
+trading options you can control the amount
+of leverage you take on
+
+563
+01:09:58,860 --> 01:10:04,780
+through your allocation of capital to
+option premiums. So for example you might
+have up to
+
+564
+01:10:05,420 --> 01:10:11,660
+five to ten times the volatility you would
+with the underlying portfolio for the same
+amount of capital
+
+565
+01:10:11,660 --> 01:10:18,540
+committed which obviously increases the
+opportunity for profit massively. This
+doesn't actually translate to a
+
+566
+01:10:18,540 --> 01:10:27,820
+to a directly proportionate magnified
+downside either since options are
+structured in such a way that downside
+
+567
+01:10:27,820 --> 01:10:34,860
+is limited to the premium paid and so we
+can also kind of take advantage of that
+and in what's called
+
+568
+01:10:34,860 --> 01:10:41,820
+an asymmetric risk profile. Understanding
+options and you know how you can structure
+ideas with them is
+
+569
+01:10:41,820 --> 01:10:48,700
+beyond the scope of this video and beyond
+the scope of this course for the most part
+but all of that
+
+570
+01:10:48,700 --> 01:10:53,580
+is covered in the Professional Options
+Trading Masterclass video series and
+that's something you can think
+
+571
+01:10:53,580 --> 01:11:02,460
+about doing after completing this course.
+What I will talk to you briefly about
+though is how options work in
+
+572
+01:11:02,460 --> 01:11:10,620
+terms of leverage with an example let's
+consider Mosaic stock as an example. In
+our portfolio above we're
+
+573
+01:11:10,620 --> 01:11:21,260
+assuming a long position of the value
+$10,000 and Mosaic stock, so MOS is the
+ticker, MOS on the 31st of August
+
+574
+01:11:21,260 --> 01:11:28,460
+trades at around $32 a share. So if you
+bought the stock you'd get about 309
+shares with your $10,000.
+
+575
+01:11:28,460 --> 01:11:34,460
+Let's say you have a price target of
+$10,000. Let's say you have a price target
+of $40 within the next
+
+576
+01:11:34,460 --> 01:11:44,220
+one to two months. If you're right you'd
+make $8 times by 309 shares that's equal
+to $2,472.
+
+577
+01:11:45,660 --> 01:11:52,860
+Let's compare that with buying a call
+option or call options on the stock, so on
+Mosaic.
+
+578
+01:11:54,140 --> 01:12:01,580
+This is a screenshot taken from Nasdaq.com
+on the 31st of August and basically it
+shows a small options
+
+579
+01:12:01,580 --> 01:12:10,140
+chain for Mosaic for the 15th of October
+expiry. It looks like the $32 strike call
+option can be bought
+
+580
+01:12:10,140 --> 01:12:19,100
+for around $1.83 and when you buy an
+options contract for a US stock it covers
+100 shares of the underlying
+
+581
+01:12:19,100 --> 01:12:27,340
+stock. So in this case for $10,000 you
+could buy 54 of these call contracts. With
+this structure
+
+582
+01:12:27,340 --> 01:12:37,580
+if you're right on your view that Mosaic
+will reach $40 within expiry of the option
+then you'd make $33,318.
+
+583
+01:12:39,100 --> 01:12:49,020
+The options premium for that would be
+equal to $9,882 and so the profit is
+worked out as $40 minus $32
+
+584
+01:12:49,740 --> 01:12:59,340
+times by 50 contracts, 54 contracts, sorry
+times by 100 shares or options per
+contract minus that options
+
+585
+01:12:59,340 --> 01:13:09,900
+premium of $9,882 and that's where we get
+the figure $33,318. Now that's just a
+really simple and crude way
+
+586
+01:13:09,900 --> 01:13:16,620
+of explaining the implicit leverage that
+exists in options. In that example buying
+the stock outright
+
+587
+01:13:16,620 --> 01:13:24,780
+gave you exposure to 309 shares of Moss
+but by buying call options we had an
+exposure to 5,400 shares
+
+588
+01:13:24,780 --> 01:13:32,060
+of Moss for the same cost. Granted there
+are caveats such as the breakeven for
+profit being $1.83 higher
+
+589
+01:13:32,060 --> 01:13:39,820
+and expiry on the contracts but there are
+ways to mitigate or manage those risks
+through things like
+
+590
+01:13:39,820 --> 01:13:47,260
+the idea generation process and more
+sophisticated option structures that are
+mentioned in our other
+
+591
+01:13:47,260 --> 01:13:53,820
+courses. Don't forget you can obviously
+control the leverage you take as well by
+reducing the premium you
+
+592
+01:13:53,820 --> 01:14:00,620
+spend and exposing yourself to much less
+contracts if you wanted to. So it does
+give you that added flexibility
+
+593
+01:14:00,620 --> 01:14:07,740
+and your maximum downside is limited to
+the cost of the option whereas your upside
+for call options is
+
+594
+01:14:07,740 --> 01:14:16,940
+unbounded. So you do benefit again from
+that asymmetric payoff profile as well.
+Typically a good trader
+
+595
+01:14:17,660 --> 01:14:24,860
+might get 60% of all trades might get 60%
+of their trades right 40% wrong. 90 to 95%
+of all their trades
+
+596
+01:14:24,860 --> 01:14:31,420
+over a year might sum up to a small net
+profit and then there's going to be 5 to
+10% of those trades
+
+597
+01:14:31,420 --> 01:14:39,580
+that are home runs and they're going to
+generate the majority of your end of year
+P&L. Now on the subject of
+
+598
+01:14:39,580 --> 01:14:45,020
+good traders I have another little
+scenario analysis table in this sheet
+which I mentioned before and that
+
+599
+01:14:45,020 --> 01:14:51,820
+essentially shows you what sort of return
+you might expect for varying levels of
+sharp ratio
+
+600
+01:14:51,820 --> 01:14:58,380
+given the modelled volatility in the
+portfolio. The gross sharp ratio is
+essentially
+
+601
+01:14:59,180 --> 01:15:04,860
+your annualised portfolio return divided
+by annualised volatility. The higher the
+number the better.
+
+602
+01:15:05,660 --> 01:15:10,860
+Very good retail traders should expect to
+have a gross sharp ratio of around 1.5 to
+2 consistently
+
+603
+01:15:11,420 --> 01:15:19,180
+over long periods of time. In the current
+portfolio that would basically equate to a
+17 to 22.5%
+
+604
+01:15:19,180 --> 01:15:25,180
+portfolio return per year. Remember though
+that that number is likely to be magnified
+if you're trading
+
+605
+01:15:25,180 --> 01:15:32,460
+options or using leverage in other forms.
+What that means is a well traded long
+short portfolio using a
+
+606
+01:15:32,460 --> 01:15:39,740
+structured approach with quality ideas
+might make more like 75 to 100% or more in
+a very good year.
+
+607
+01:15:39,740 --> 01:15:46,540
+Bear in mind though you know that's really
+only going to be achievable with the right
+education
+
+608
+01:15:46,540 --> 01:15:53,260
+plenty of practice with real money trading
+and so on. It does take a lot of time to
+trade to that kind of level.
+
+609
+01:15:54,540 --> 01:16:02,300
+Okay, after that brief detour into an
+options example, let's return now to our
+fourth and final scenario.
+
+610
+01:16:02,300 --> 01:16:07,980
+I want to use this example just to talk
+about how you can change the weightings of
+your positions and
+
+611
+01:16:07,980 --> 01:16:14,300
+a realistic scenario as to why you might
+wish to do so. It goes without saying that
+you don't have to
+
+612
+01:16:14,300 --> 01:16:19,100
+equally weight every position in the
+portfolio as I've been doing in the
+previous scenarios.
+
+613
+01:16:19,100 --> 01:16:24,620
+You can change the allocations in column
+AB to anything you wish and the
+spreadsheet model will
+
+614
+01:16:24,620 --> 01:16:31,740
+still work. In reality it isn't very
+likely that you'll be able to have
+precisely equal weightings
+
+615
+01:16:31,740 --> 01:16:38,060
+anyway across all your positions because
+even if as in the examples we looked at
+before you wanted to
+
+616
+01:16:38,060 --> 01:16:43,420
+allocate $10,000 to every position that
+would only really be possible if the share
+price of each of
+
+617
+01:16:43,420 --> 01:16:50,860
+those stocks was a divisor of $10,000.
+Equally as the prices of these assets move
+so will the inherent
+
+618
+01:16:50,860 --> 01:16:56,140
+weighting that you have in each position
+so if you're using this sheet to gauge
+your current portfolio's
+
+619
+01:16:56,140 --> 01:17:01,180
+expected volatility then you need to bear
+that in mind as well and update it on a
+regular basis.
+
+620
+01:17:02,300 --> 01:17:08,700
+Other factors that might affect weightings
+will be your own constraints rather than
+those enforced on
+
+621
+01:17:08,700 --> 01:17:14,380
+you by moving markets or mathematical
+impossibilities. So for example in all
+probability you'll want to
+
+622
+01:17:14,380 --> 01:17:20,700
+weight your various positions based at
+least partially on your conviction of the
+trades themselves.
+
+623
+01:17:20,700 --> 01:17:26,700
+You may also want to change allocations to
+positions based on your market view i.e.
+choosing
+
+624
+01:17:26,700 --> 01:17:33,260
+whether you're net long or short the
+market as a whole in dollar terms. In the
+portfolio we still have
+
+625
+01:17:33,260 --> 01:17:40,860
+set up from the previous scenario you can
+see that at least in dollar terms we're
+net long the market
+
+626
+01:17:40,860 --> 01:17:48,220
+since our long positions add up to $60,000
+and our short positions only $40,000.
+Let's say for example
+
+627
+01:17:48,940 --> 01:17:54,780
+that we actually want to be net neutral in
+terms of market exposure in dollar terms
+so we need to
+
+628
+01:17:54,780 --> 01:18:01,180
+redistribute our capital across our
+positions to make sure our long exposure
+is equal to our short exposure.
+
+629
+01:18:01,900 --> 01:18:08,780
+By the way this is by no means what you
+should do don't take this as advice in any
+way it's totally
+
+630
+01:18:08,780 --> 01:18:14,860
+dependent on your read of the market at
+any given time and actually dollar
+neutrality is just one
+
+631
+01:18:14,860 --> 01:18:20,140
+method to balance longs and shorts. You
+could also take things a step further and
+consider something
+
+632
+01:18:20,140 --> 01:18:24,780
+called the beta of your portfolio which
+actually is something we're going to look
+at in a couple of
+
+633
+01:18:24,780 --> 01:18:35,740
+videos time. Anyway let's assume we want
+to keep the long portion of the portfolio
+equally weighted and
+
+634
+01:18:35,740 --> 01:18:41,580
+the short portion of the portfolio equally
+weighted as well. In order to create
+dollar neutrality in our
+
+635
+01:18:41,580 --> 01:18:46,300
+longs and shorts we would need to take
+$10,000 from our long positions and
+reallocate that capital to
+
+636
+01:18:46,300 --> 01:18:55,260
+our short positions. So to do that evenly
+across our longs we would take away $1,666
+from each position
+
+637
+01:18:55,260 --> 01:19:03,580
+because we want to deduct $10,000 evenly
+across six positions. That makes each
+position size roughly
+
+638
+01:19:03,580 --> 01:19:12,220
+$8,333 afterwards. Then we would allocate
+$2,500 to each of our short positions
+since we only have
+
+639
+01:19:12,220 --> 01:19:17,740
+four of those and we need to reallocate
+that $10,000 that we freed up from the
+long side.
+
+640
+01:19:18,860 --> 01:19:26,140
+As you can see here we still basically
+have the same gross exposure. We're $2 out
+from where we were
+
+641
+01:19:26,140 --> 01:19:30,860
+just because of rounding and dividing
+$10,000 by six to the nearest dollar on
+the long side
+
+642
+01:19:30,860 --> 01:19:36,220
+but for the purposes of what we're doing
+here that $2 is pretty irrelevant so don't
+get caught up on it.
+
+643
+01:19:37,340 --> 01:19:43,980
+If we take a look at the analysis portion
+of the sheet again now you can see that by
+keeping
+
+644
+01:19:43,980 --> 01:19:49,340
+exactly the same positions and just
+altering the weightings the expected
+portfolio volatility has
+
+645
+01:19:49,340 --> 01:20:01,020
+changed. It's actually decreased by about
+1.5% from 11.23% to 9.66% now. If you
+think about it
+
+646
+01:20:02,060 --> 01:20:07,980
+that makes some sense because we've now
+redistributed capital more evenly across
+our longs and shorts
+
+647
+01:20:07,980 --> 01:20:14,860
+which have negative correlations and thus
+reduce the overall volatility. Again we'll
+talk about that
+
+648
+01:20:14,860 --> 01:20:21,180
+more in the next video. So there's some
+examples of why you might want to change
+weightings in each
+
+649
+01:20:21,180 --> 01:20:27,420
+asset and how you can actually do that in
+this model. It's all simple stuff really
+and that's
+
+650
+01:20:27,420 --> 01:20:32,460
+that's kind of all I wanted to cover in
+this scenario analysis section. I think
+you guys probably
+
+651
+01:20:32,460 --> 01:20:37,820
+have a good understanding now of how you
+can use the model by running through those
+situations I
+
+652
+01:20:37,820 --> 01:20:43,260
+just been through and so all that's left
+in this video now is for me to show you
+some of the
+
+653
+01:20:43,260 --> 01:20:51,420
+practicalities involved in using this
+spreadsheet yourselves for your own
+portfolios. Okay so when
+
+654
+01:20:51,420 --> 01:20:59,020
+it comes to you guys using this
+spreadsheet my suggestion to you is to
+first use it as it stands to get
+
+655
+01:20:59,020 --> 01:21:05,980
+used to the mechanics of sort of how it
+works and what you can do with it. Then
+once you've sort of built
+
+656
+01:21:05,980 --> 01:21:11,980
+some understanding and you think you're
+ready you can start making changes to the
+underlying data to
+
+657
+01:21:11,980 --> 01:21:18,780
+reflect your own watch lists and
+portfolios. So with that being said let me
+talk about how you would do
+
+658
+01:21:18,780 --> 01:21:26,620
+that. Firstly you'll want to delete all of
+the tickers and data that you see in the
+prices sheet that you
+
+659
+01:21:26,620 --> 01:21:35,420
+don't want or need to update which will
+likely be all of it. Second you'll need to
+download new weekly price
+
+660
+01:21:35,420 --> 01:21:40,300
+data from Yahoo Finance for the stocks
+that you want to be able to model
+portfolio for
+
+661
+01:21:40,300 --> 01:21:46,140
+and finally that data will need to be
+cleaned and manipulated to make sure that
+the time series of
+
+662
+01:21:46,140 --> 01:21:52,540
+prices and returns are equal and over the
+exact same intervals for all assets and
+then it's going to be
+
+663
+01:21:52,540 --> 01:21:59,260
+ready for analysis in the rest of the
+sheet and you can sort of do some modeling
+in this portfolio
+
+664
+01:21:59,260 --> 01:22:06,460
+volatility practice sheet. So let me run
+through these steps now as I said we start
+with deleting
+
+665
+01:22:06,460 --> 01:22:13,100
+the underlying data currently in the
+spreadsheet in the asset prices sheet. So
+to do that I'm just going
+
+666
+01:22:13,100 --> 01:22:20,540
+to go to the asset prices sheet left click
+on column c and then press ctrl shift and
+right on the keyboard twice
+
+667
+01:22:20,540 --> 01:22:26,780
+to select all of the columns of data that
+we have here in this sheet and then press
+delete on the keyboard
+
+668
+01:22:26,780 --> 01:22:35,820
+to clear the contents of all of those
+cells. The next step is to download the
+price data that you want
+
+669
+01:22:35,820 --> 01:22:43,500
+for the assets that you want to be able to
+include in your portfolio volatility
+model. Now in this example
+
+670
+01:22:43,500 --> 01:22:51,420
+what I'm going to do is grab some data for
+three new stocks they are Thor Industries
+ticker THO,
+
+671
+01:22:51,420 --> 01:23:02,060
+Papa John's ticker PZZA and Herman Miller
+ticker MLHR. So let's start by downloading
+weekly price data
+
+672
+01:23:02,060 --> 01:23:09,500
+for Thor Industries. So to do that I'm
+going to navigate to Yahoo Finance so
+finance.yahoo.com
+
+673
+01:23:09,500 --> 01:23:15,900
+and then I'm going to put in the ticker
+for Thor Industries in the top search bar
+THO and then select
+
+674
+01:23:16,460 --> 01:23:23,740
+the correct drop down menu option for Thor
+Industries. And then we're going to go to
+the historical data tab
+
+675
+01:23:23,740 --> 01:23:31,740
+here on the next page and what I'm going
+to do is basically download all of the
+historical data available.
+
+676
+01:23:31,740 --> 01:23:39,900
+So in this time period parameter I'm going
+to select the drop down and click max and
+show historical prices
+
+677
+01:23:39,900 --> 01:23:46,620
+frequency we're going to set to weekly so
+I'm getting weekly data weekly prices for
+this asset over its
+
+678
+01:23:46,620 --> 01:23:55,580
+entire historical data set so I'm going to
+click apply and then download. As you've
+seen in previous videos
+
+679
+01:23:55,580 --> 01:24:02,540
+when you kind of download data from Yahoo
+Finance and other places when I'm doing it
+I'm using Google
+
+680
+01:24:02,540 --> 01:24:06,940
+Chrome so I get a little shortcut to open
+the file that I've just downloaded here so
+I'm just going
+
+681
+01:24:06,940 --> 01:24:11,260
+to click that that's going to open the
+file in Excel so we can view it.
+
+682
+01:24:13,980 --> 01:24:19,180
+And then with that data downloaded I'm
+just going to expand the date column
+quickly so we can see all of
+
+683
+01:24:19,180 --> 01:24:25,580
+those dates with that data downloaded we
+need to arrange the dates in a descending
+order which leaves us
+
+684
+01:24:25,580 --> 01:24:30,540
+with the most recent price data at the top
+of the sheet and makes the data cleaning
+process just a
+
+685
+01:24:30,540 --> 01:24:36,460
+little bit easier going forward. So to do
+that I'm going to select cell A1 and go to
+data on the ribbon
+
+686
+01:24:36,460 --> 01:24:42,780
+followed by filter that adds filters to
+all of those columns of data and then I'm
+going to select the
+
+687
+01:24:42,780 --> 01:24:53,420
+drop down filter in the date column and
+then sort from newest to oldest. Okay so
+the next thing to
+
+688
+01:24:53,420 --> 01:25:03,580
+kind of note here or look for is just
+check the most recent row of data and see
+whether that actually
+
+689
+01:25:03,580 --> 01:25:09,180
+represents a complete week of data because
+depending on the day you download it from
+Yahoo Finance it might
+
+690
+01:25:09,180 --> 01:25:15,580
+not represent a complete week. In this
+case I think it does it looks like it does
+so we don't need to
+
+691
+01:25:15,580 --> 01:25:21,820
+worry about doing anything here but if it
+didn't you just delete that row so I just
+delete row two here
+
+692
+01:25:21,820 --> 01:25:28,380
+by right clicking on that row and going to
+delete in the selection. As I said in this
+case we don't need
+
+693
+01:25:28,380 --> 01:25:37,100
+to worry about doing that here so what I'm
+going to do is instead just copy the date
+column and adjusted
+
+694
+01:25:37,100 --> 01:25:42,540
+close column prices straight into our
+portfolio volatility spreadsheet so I'm
+going to left click
+
+695
+01:25:42,540 --> 01:25:48,300
+column A hold control and left click
+column F as well press ctrl c on the
+keyboard so that's going to
+
+696
+01:25:48,300 --> 01:25:55,500
+select both those columns and copy them
+then I'm going to go back to the portfolio
+volatility spreadsheet
+
+697
+01:25:55,500 --> 01:26:05,100
+into the asset prices sheet and I'm just
+going to paste those into columns C and D
+as values and I'm going to do that by
+
+698
+01:26:05,100 --> 01:26:11,820
+right clicking column C and then selecting
+the paste as values option which is the
+clipboard with the one
+
+699
+01:26:11,820 --> 01:26:19,100
+two three on it and that's going to paste
+those two columns into column C and D as
+values. The reason why
+
+700
+01:26:19,100 --> 01:26:25,580
+I'm doing it as values is just because
+previously I had this sheet set up to show
+dates in in that format
+
+701
+01:26:25,580 --> 01:26:32,940
+so that just saves me a job from importing
+or copying in all that data into columns C
+and D
+
+702
+01:26:33,740 --> 01:26:37,500
+exactly in the same format as it was when
+we downloaded it and then we're going
+through the
+
+703
+01:26:37,500 --> 01:26:44,860
+process of changing how we see those dates
+to make it look like this format. So
+anyway from there we can
+
+704
+01:26:44,860 --> 01:26:54,860
+just rename the column title for column D
+okay so this is weekly prices for THO Thor
+industry so I'm going to
+
+705
+01:26:54,860 --> 01:27:05,020
+rename cell D1 as the ticker for that
+company THO. Now what I want to do is sort
+of turn my attention to
+
+706
+01:27:05,020 --> 01:27:13,100
+the asset return sheet currently we still
+got all of our old data in here except you
+know for most of it
+
+707
+01:27:13,980 --> 01:27:20,060
+well for all of it it's incorrect actually
+because our tickers are named incorrectly
+but we're getting
+
+708
+01:27:20,060 --> 01:27:27,020
+some returns pulled through into column D
+here and some dates in column C that's
+because it is referencing
+
+709
+01:27:27,020 --> 01:27:33,340
+those two columns that we've just pulled
+through in the prices sheet we just need
+to kind of rename D1
+
+710
+01:27:33,340 --> 01:27:38,700
+cell D1 here from the visa ticker to the
+Thor industries ticker so I can just write
+that in there
+
+711
+01:27:39,580 --> 01:27:45,420
+for the other cells that's all incorrect
+obviously it's trying to pull through data
+in cells that don't
+
+712
+01:27:45,420 --> 01:27:51,180
+have any prices returns it's trying to
+sort of calculate returns from cells that
+don't have prices so
+
+713
+01:27:51,180 --> 01:27:56,060
+what I'm going to do is just select all of
+the columns from E onwards with control
+shift and
+
+714
+01:27:56,060 --> 01:28:00,300
+write on the keyboard and then press
+delete on the keyboard to clear the
+contents of those cells
+
+715
+01:28:01,180 --> 01:28:06,940
+now what we want to do is just check that
+all the returns in this column column D
+are actually
+
+716
+01:28:06,940 --> 01:28:12,620
+pulling through correctly or calculating
+correctly using prices from the other
+sheet
+
+717
+01:28:14,700 --> 01:28:23,740
+if we double click into cell D2 you'll see
+that that formula is calculated from the
+price in D2 divided by
+
+718
+01:28:23,740 --> 01:28:29,740
+the price in D3 in the prices sheet minus
+one okay so we know that that's going to
+be correct for those
+
+719
+01:28:29,740 --> 01:28:34,940
+returns the formulas are correct and all
+we need to do then is basically check the
+length of the series
+
+720
+01:28:34,940 --> 01:28:41,660
+and see you know what that is compared to
+our price series so our price series goes
+down it goes back to
+
+721
+01:28:41,660 --> 01:28:50,460
+1984 okay row 1967 so that means we can
+actually copy these formulas down all the
+way down to
+
+722
+01:28:50,460 --> 01:28:55,420
+one nine six six okay so let's do that now
+
+723
+01:29:00,220 --> 01:29:05,420
+okay so we've got returns going all the
+way back if we did copy it down to row one
+nine six seven we'd get
+
+724
+01:29:05,420 --> 01:29:11,260
+an error because we don't have prices you
+know from the row one nine six eight which
+is required for
+
+725
+01:29:11,260 --> 01:29:18,380
+that returns formula so I've explained
+that before so we just delete the contents
+for that row back to row
+
+726
+01:29:18,380 --> 01:29:25,420
+one nine six six so let me just explain
+you know what I just went through in case
+that wasn't clear
+
+727
+01:29:25,420 --> 01:29:30,940
+basically we're downloading prices from
+yahoo finance for three new stocks okay
+because those are stocks
+
+728
+01:29:30,940 --> 01:29:37,340
+we're saying in this example we're
+interested in for our own portfolio to so
+to start with I cleared
+
+729
+01:29:37,340 --> 01:29:43,900
+all the prices in the prices sheet for all
+the stocks that we had before and then I
+downloaded new
+
+730
+01:29:43,900 --> 01:29:50,220
+prices for one of our tickers one of our
+stocks that were interested in Thor
+Industries imported or copied
+
+731
+01:29:50,220 --> 01:29:57,660
+those prices into this sheet in columns c
+and d or the dates in column c and the
+prices in column d
+
+732
+01:29:57,660 --> 01:30:04,300
+when I copied those in I copied them and
+pasted them as values the reason why I
+pasted them as values
+
+733
+01:30:04,300 --> 01:30:11,900
+is so that we kept whatever formatting we
+had already in this sheet and that was
+useful to us basically
+
+734
+01:30:11,900 --> 01:30:19,260
+so I didn't have to reformat the dates
+column to make it look like this okay and
+then what we wanted to do
+
+735
+01:30:19,260 --> 01:30:27,660
+or what we did was check the return sheet
+okay and we saw that obviously it still
+had all the previous
+
+736
+01:30:27,660 --> 01:30:34,940
+tickers that we were looking at in this
+spreadsheet so we needed to delete all of
+those and make sure
+
+737
+01:30:34,940 --> 01:30:41,820
+that the column d was still calculating
+returns correctly from the prices that it
+sees in the in
+
+738
+01:30:41,820 --> 01:30:49,100
+column d from the prices sheet which it
+did but the length of the prices column
+that we had for
+
+739
+01:30:49,100 --> 01:30:55,580
+Thor Industries compared to all the data
+we had in the spreadsheet previously was
+quite different it was
+
+740
+01:30:55,580 --> 01:31:03,020
+a lot longer okay so that means that we
+could copy the returns formula down for
+Thor Industries
+
+741
+01:31:03,020 --> 01:31:12,220
+all the way down to row 1966 okay so just
+remember that when you're doing this
+process when you're going
+
+742
+01:31:12,220 --> 01:31:18,940
+through this process and putting in new
+prices and new returns you need to make
+sure that the tickers always match up in
+the
+
+743
+01:31:18,940 --> 01:31:25,580
+right columns okay and then you're not
+going to have any issues you know you're
+not going to misunderstand
+
+744
+01:31:25,580 --> 01:31:30,780
+which returns match to which prices so
+long as they're always in the same columns
+and the tickers
+
+745
+01:31:30,780 --> 01:31:37,100
+are named the same and also when it comes
+to putting those tickers into your
+portfolio model in the
+
+746
+01:31:37,100 --> 01:31:42,700
+portfolio volatility practice sheet it
+will actually pull through correctly
+because that requires that you
+
+747
+01:31:42,700 --> 01:31:50,620
+enter whatever is in the column title
+cells in order to pull through that data
+so it's easier just to keep it
+
+748
+01:31:50,620 --> 01:31:58,140
+all as the tickers for the stocks so now
+what we want to do is just repeat that
+process for the other
+
+749
+01:31:58,140 --> 01:32:03,340
+companies that we're interested in so
+let's do that now starting with Papa
+John's so I'm just going
+
+750
+01:32:03,340 --> 01:32:11,820
+to go back to the Yahoo Finance website
+and in the top search bar this time put in
+PZZA which is the ticker
+
+751
+01:32:11,820 --> 01:32:17,340
+for Papa John's then I'm going to select
+that drop down and go to the historical
+data tab again
+
+752
+01:32:18,220 --> 01:32:26,540
+again select the time period as max choose
+a weekly frequency click apply and
+download
+
+753
+01:32:28,380 --> 01:32:34,060
+that's going to download our weekly prices
+for Papa John's okay I'm going to open
+that spreadsheet now
+
+754
+01:32:35,820 --> 01:32:40,620
+make the date column a little bit wider so
+we can see that I need to go through the
+same process again
+
+755
+01:32:40,620 --> 01:32:47,180
+for arranging our dates in a descending
+order so to do that I'm selecting cell A1
+I'm going to go to data
+
+756
+01:32:47,180 --> 01:32:53,500
+on the ribbon and then filter that's going
+to add filters to all of the columns in
+this data set I'm
+
+757
+01:32:53,500 --> 01:32:58,860
+then going to click on the filter for the
+date column and sort by newest to oldest
+so that's going to sort
+
+758
+01:32:58,860 --> 01:33:05,740
+all of our prices by the newest date to
+the oldest date what I'm then going to do
+is seeing that all the
+
+759
+01:33:05,740 --> 01:33:12,540
+dates match the prior dates that we
+downloaded for Thor Industries I'm going
+to just copy column F
+
+760
+01:33:13,100 --> 01:33:18,380
+by selecting it and pressing ctrl C on the
+keyboard and then I'm going to copy that
+into
+
+761
+01:33:19,420 --> 01:33:25,980
+our portfolio volatility asset prices
+sheet so I'm going to select column E here
+and then right click
+
+762
+01:33:25,980 --> 01:33:31,820
+in that selection and just paste as values
+again that's going to paste all of that
+data into that column
+
+763
+01:33:31,820 --> 01:33:42,700
+for those relevant weekly dates of course
+then I need to change the column title so
+that we know you know
+
+764
+01:33:42,700 --> 01:33:53,020
+what company these prices are for so the
+company is PZZA Papa John's and then I'm
+going to check
+
+765
+01:33:53,580 --> 01:33:59,420
+before we move any further the length of
+this data set compared to the length of
+Thor Industries
+
+766
+01:33:59,420 --> 01:34:07,020
+price data so I'm pressing ctrl and down
+on the keyboard and that's taking me down
+to row 1476 in
+
+767
+01:34:07,020 --> 01:34:15,340
+column E and we can see that the price
+data set for Papa John's is a lot shorter
+than for Thor Industries
+
+768
+01:34:15,340 --> 01:34:21,420
+now remember what I said earlier for this
+portfolio model to work portfolio
+volatility model to work
+
+769
+01:34:21,420 --> 01:34:28,460
+in order to calculate the underlying
+covariances and variances the length of
+each data series needs to
+
+770
+01:34:28,460 --> 01:34:36,060
+be exactly the same so that basically
+means we need to delete all of the data
+that isn't common to all
+
+771
+01:34:36,060 --> 01:34:40,060
+of the stocks that we have in this sheet
+so every time you add new stocks this is
+probably going to
+
+772
+01:34:40,060 --> 01:34:47,900
+change you're going to have to go through
+a process of deleting data potentially
+perhaps not every time
+
+773
+01:34:47,900 --> 01:34:53,260
+obviously it depends on the length of the
+data series but in this example we need to
+do that so what I'm
+
+774
+01:34:53,260 --> 01:35:00,700
+going to do is delete all of the dates and
+prices for Thor Industries from row 1477
+down because that
+
+775
+01:35:00,700 --> 01:35:07,500
+is not common to the new data that we have
+for Papa John's so I'm just selecting
+those two cells C and D
+
+776
+01:35:07,500 --> 01:35:13,260
+1477 pressing ctrl shift down on the
+keyboard and delete on the keyboard to
+clear the contents for all of
+
+777
+01:35:13,260 --> 01:35:22,220
+those and that means we've got an even
+price series for those two assets let's go
+over to the return
+
+778
+01:35:22,220 --> 01:35:32,060
+sheet now and basically update this so
+that it includes returns for Papa John's
+in cell E1 I'm going
+
+779
+01:35:32,060 --> 01:35:37,660
+to head the column with pzza making sure
+that is the same ticker that we're using
+in both the prices and
+
+780
+01:35:37,660 --> 01:35:42,300
+the return sheets and the return sheets
+and obviously the one that we'll end up
+using in the model as well
+
+781
+01:35:43,420 --> 01:35:45,100
+from there I'm going to copy across
+
+782
+01:35:45,980 --> 01:35:54,300
+the returns formula that we have in cell
+D2 for Thor Industries across one column
+to cell E2
+
+783
+01:35:55,660 --> 01:35:58,300
+then we can just check this formula it's
+
+784
+01:35:59,020 --> 01:36:05,100
+calculating returns based on the prices
+sheet whatever's in cell E2 divided by
+E3-1
+
+785
+01:36:05,660 --> 01:36:09,980
+we know that's going to be correct because
+we've imported prices into column E so
+that's fine
+
+786
+01:36:09,980 --> 01:36:15,420
+and we can just copy that formula down all
+the way to the bottom of that data set
+
+787
+01:36:16,220 --> 01:36:25,420
+now what do we have here currently we've
+got a load of errors and what looks like
+dates
+
+788
+01:36:27,020 --> 01:36:33,180
+that are kind of non-existent okay so
+what's happened here basically we've
+deleted a load of data in the
+
+789
+01:36:33,180 --> 01:36:41,020
+prices sheet for Thor Industries okay so
+that our price columns match in their
+length for Thor Industries
+
+790
+01:36:41,020 --> 01:36:47,420
+and Papa John's that's meant that this
+return sheet is no longer referencing or
+it's referencing blank cells
+
+791
+01:36:47,420 --> 01:36:52,540
+and so that's created a load of errors in
+our returns for Thor Industries and also
+
+792
+01:36:53,580 --> 01:36:58,140
+the dates are now incorrect in their
+reference as well so we just need to make
+sure
+
+793
+01:36:58,140 --> 01:37:03,420
+that whenever we download new prices and
+then change the length of the price series
+
+794
+01:37:03,420 --> 01:37:07,180
+we need to do the same for the returns and
+remember the returns is always going to be
+
+795
+01:37:07,980 --> 01:37:17,420
+one row less in length than prices okay so
+I'm deleting from row 1476 and down this
+time
+
+796
+01:37:18,060 --> 01:37:24,220
+so selecting all of those cells C to E
+1476 pressing ctrl shift and down on the
+keyboard
+
+797
+01:37:24,220 --> 01:37:29,180
+delete on the keyboard to clear all of
+that contents and then going back to the
+top of the sheet
+
+798
+01:37:30,060 --> 01:37:35,580
+okay so we've done two out of three of the
+stocks that we're going to look at
+
+799
+01:37:36,700 --> 01:37:43,820
+let's continue on to the third one now
+which is Herman Miller so if we go back to
+Yahoo Finance type in the
+
+800
+01:37:43,820 --> 01:37:50,700
+ticker for Herman Miller which is MLHR and
+then select that stock from the drop down
+menu
+
+801
+01:37:51,580 --> 01:37:59,260
+and then go to historical data choose max
+again as our time period and the frequency
+as weekly prices
+
+802
+01:37:59,900 --> 01:38:05,500
+and then click apply and download that's
+going to download all the prices for
+Herman Miller we can open
+
+803
+01:38:05,500 --> 01:38:11,900
+that sheet and we're just going to go
+through exactly the same process as we did
+before going to increase
+
+804
+01:38:11,900 --> 01:38:18,700
+the width of the date column I'm going to
+add filters okay so that we can sort the
+date column now from
+
+805
+01:38:18,700 --> 01:38:25,500
+newest to oldest and then I'm just going
+to make sure the dates look like they
+match exactly the same dates
+
+806
+01:38:26,300 --> 01:38:31,900
+as we had for the other two stocks and
+then I'm just going to copy column F the
+adjusted close prices
+
+807
+01:38:32,700 --> 01:38:41,500
+into our portfolio volatility sheet in the
+asset prices sheet and paste them into
+column F here
+
+808
+01:38:42,220 --> 01:38:50,300
+as values remembering always to rename the
+column heading cell so cell F1 in this
+case to
+
+809
+01:38:50,940 --> 01:39:00,060
+whatever the relevant ticker is so MLHR in
+this case and then checking the length of
+the price series
+
+810
+01:39:00,860 --> 01:39:08,220
+okay so in this case we've got a price
+series that is way longer than what we've
+kind of shortened
+
+811
+01:39:08,220 --> 01:39:13,420
+our previous two price series down to so
+basically we've got prices that go back
+further than the
+
+812
+01:39:13,420 --> 01:39:20,620
+7th of June 1993 the simple thing that we
+need to do here is basically just delete
+all of the data
+
+813
+01:39:21,180 --> 01:39:29,340
+from those cells beyond or before rather
+the 7th of June 1993 for Herman Miller so
+I'm just selecting cell
+
+814
+01:39:29,980 --> 01:39:35,580
+F1477 in this case control shift and down
+to select all of the data below it delete
+on the keyboard to
+
+815
+01:39:35,580 --> 01:39:41,180
+clear the contents and back up to the top
+and that's all we need to do to even out
+our price series
+
+816
+01:39:42,060 --> 01:39:50,700
+finally we just want to do the same thing
+in our asset return sheet as we've done
+before
+
+817
+01:39:50,700 --> 01:39:58,540
+so I'm putting in the ticker for the new
+stock which is MLHR into cell F1 and then
+I'm going to copy across
+
+818
+01:39:58,540 --> 01:40:04,860
+the returns formula from cell E1 to F1 and
+then copy it down as well quickly scroll
+down to the bottom
+
+819
+01:40:04,860 --> 01:40:12,860
+of the data series and check that that's
+all okay at which it is so now we've got
+an even price series
+
+820
+01:40:12,860 --> 01:40:20,380
+and an even return series as well and with
+all of our price data and returns data
+sort of inputted and
+
+821
+01:40:20,380 --> 01:40:27,260
+cleaned for the three stocks we can now
+add them into the portfolio practice sheet
+and start modeling
+
+822
+01:40:27,260 --> 01:40:33,420
+volatility and correlation so for example
+let's just do that very quickly now I'm
+just going to
+
+823
+01:40:33,420 --> 01:40:38,700
+delete all of the tickers that we can see
+in the orange cells now currently in the
+portfolio volatility
+
+824
+01:40:38,700 --> 01:40:45,100
+model and delete all of the dollar
+allocations as well then just put in our
+three stocks our three
+
+825
+01:40:45,100 --> 01:40:53,420
+stocks being THO PZZA and MLHR you can see
+all the data starting to pull through
+already let's just
+
+826
+01:40:53,420 --> 01:40:59,980
+give each of those an allocation of ten
+thousand dollars we're just basically
+checking this is where
+
+827
+01:40:59,980 --> 01:41:06,220
+this works I just want to show you how
+simple this all is and that's it we've got
+a three stock portfolio
+
+828
+01:41:06,220 --> 01:41:12,380
+and we've got a portfolio standard
+deviation calculated based on all of that
+data and that's
+
+829
+01:41:12,380 --> 01:41:18,060
+all there is to it now obviously with this
+portfolio the difference between kind of
+this one and the
+
+830
+01:41:18,060 --> 01:41:23,740
+last one obviously the companies involved
+and the number of companies and so on but
+also the fact that
+
+831
+01:41:23,740 --> 01:41:31,180
+all of these covariances and variances are
+being calculated based on a much longer
+series of data okay
+
+832
+01:41:31,180 --> 01:41:42,860
+so going from September 2021 back to June
+1993 you can of course use any sort of
+time period time window
+
+833
+01:41:42,860 --> 01:41:49,420
+you want so just because you can get all
+the data for these three stocks going back
+that far doesn't
+
+834
+01:41:49,420 --> 01:41:55,340
+mean you need to model your volatility
+based on price data and returns data from
+that entire period
+
+835
+01:41:55,340 --> 01:42:03,100
+if you wanted you could just model it on
+you know the last well let's say from 2010
+onwards okay
+
+836
+01:42:03,100 --> 01:42:12,060
+so you could just delete everything from
+2009 and before for both prices and
+returns remember
+
+837
+01:42:16,540 --> 01:42:22,860
+and the portfolio model would still work
+it would be slightly different we get a
+slightly different
+
+838
+01:42:22,860 --> 01:42:27,660
+portfolio volatility number but it would
+it would still work and that's really down
+to your preference
+
+839
+01:42:28,300 --> 01:42:33,020
+how you want to kind of choose the time
+window that you want to work with I am
+going to mention
+
+840
+01:42:33,020 --> 01:42:37,740
+something about that in the next video as
+well when we kind of consider correlations
+in more detail
+
+841
+01:42:39,740 --> 01:42:47,260
+okay great that's all I really wanted to
+cover in this video let me just finish up
+with some concluding
+
+842
+01:42:47,260 --> 01:42:52,460
+remarks about what we've covered and also
+you know what you need to take away from
+this video
+
+843
+01:42:53,100 --> 01:42:58,780
+to begin I introduced the concept of
+volatility and explained how volatility
+needs to be reframed in
+
+844
+01:42:58,780 --> 01:43:05,820
+your mind as both risk and opportunity
+since if there's no volatility in prices
+then there's no
+
+845
+01:43:05,820 --> 01:43:11,500
+chance for capital gains in the assets you
+trade we didn't spend too long on all of
+that because
+
+846
+01:43:12,300 --> 01:43:17,580
+it's covered pretty extensively in the
+IPLT course and again for those of you
+that haven't done it
+
+847
+01:43:17,580 --> 01:43:26,620
+already I do strongly encourage you guys
+to do so we then moved on to how
+volatility is typically measured
+
+848
+01:43:26,620 --> 01:43:33,820
+with a statistic called standard deviation
+I showed that although statistics like
+that might sometimes feel
+
+849
+01:43:33,820 --> 01:43:40,060
+a bit sort of opaque and hard to
+understand if you break down the
+principles it's usually quite simple
+
+850
+01:43:40,540 --> 01:43:46,300
+in the case of a standard deviation it's
+basically just calculating some kind of
+average variation of a data
+
+851
+01:43:46,300 --> 01:43:53,100
+series from a reference point and for a
+standard deviation the reference point is
+the average of the entire series itself
+
+852
+01:43:54,060 --> 01:44:00,220
+with that background covered it allowed me
+to move on and talk through calculating
+portfolio volatility
+
+853
+01:44:00,940 --> 01:44:07,740
+one way to do that is using realized
+portfolio returns and going through
+something called a distribution
+
+854
+01:44:07,740 --> 01:44:14,620
+of returns in which standard deviation
+calculations just represent one way of
+gauging historical volatility of
+
+855
+01:44:14,620 --> 01:44:23,340
+an asset or in this case a portfolio that
+you're looking at I use the portfolios
+that we covered in the
+
+856
+01:44:23,340 --> 01:44:30,780
+previous video in the examples for
+continuity and also to kind of reinforce
+the idea of smaller cap
+
+857
+01:44:30,780 --> 01:44:38,540
+stocks having more volatility and hence
+opportunity for profit than larger cap
+stocks the other way to
+
+858
+01:44:38,540 --> 01:44:45,740
+calculate portfolio volatility is with a
+modeling equation and what that allows us
+to do is use assumptions for
+
+859
+01:44:45,740 --> 01:44:53,500
+inputs of variance covariance and
+weightings for all of the portfolio
+constituents and compute an output
+
+860
+01:44:54,700 --> 01:45:03,020
+of estimated volatility in this
+spreadsheet we're calculating variance and
+covariances of assets using historical
+data
+
+861
+01:45:03,020 --> 01:45:09,580
+specifically the assets weekly returns all
+of that is basically done under the hood
+of the spreadsheet model
+
+862
+01:45:09,580 --> 01:45:17,100
+so all that's required for us to retrieve
+is for us to do is retrieve historical
+prices and returns for
+
+863
+01:45:17,100 --> 01:45:23,900
+the portfolio constituents we want and
+then enter those tickers into the
+portfolio model and analyze the output
+
+864
+01:45:23,900 --> 01:45:32,140
+anyway before we went into all of the
+scenario analysis and practicalities of
+using the spreadsheet I talked
+
+865
+01:45:32,140 --> 01:45:40,140
+you through some important portfolio
+theory or portfolio volatility theory we
+learned that the volatility of
+
+866
+01:45:40,140 --> 01:45:47,100
+a portfolio is a function of both the
+individual constituents variances and
+their covariances and that
+
+867
+01:45:47,100 --> 01:45:52,700
+actually as assets are added to the
+portfolio it's the relationships between
+assets that are much more
+
+868
+01:45:52,700 --> 01:45:59,180
+important to the overall volatility of the
+portfolio than the individual positions
+volatilities themselves
+
+869
+01:46:00,060 --> 01:46:06,540
+and this is an important distinction in
+understanding the volatility of individual
+assets and the
+
+870
+01:46:06,540 --> 01:46:13,580
+volatility of portfolios whilst we
+appreciate that volatility always
+represents opportunity as well as risk
+
+871
+01:46:14,380 --> 01:46:19,820
+when it comes to portfolios it's possible
+to take advantage of positions with decent
+volatility
+
+872
+01:46:20,540 --> 01:46:27,900
+decent volatility outlooks and hence good
+profit potential whilst also combining
+them in such a way
+
+873
+01:46:27,900 --> 01:46:35,340
+That risk is that risk is controlled at
+the portfolio level in our profit and loss
+an efficiently diversified
+
+874
+01:46:35,340 --> 01:46:44,380
+portfolio is one that takes advantage of
+low correlations between constituents to
+reduce risk while maintaining
+
+875
+01:46:44,380 --> 01:46:49,980
+strong expected returns across every
+position and hence the portfolio as a
+whole as i've said a few times
+
+876
+01:46:49,980 --> 01:46:54,860
+already in this video i'm going to talk a
+little bit more about portfolio
+correlation in the next video and these
+ideas are going to be
+
+877
+01:46:54,860 --> 01:47:01,020
+reiterated there again now despite
+
+878
+01:47:01,660 --> 01:47:10,220
+mentioning the advantages of adding low
+correlation positions to the portfolio we
+need to remember not to fall into traps
+such as over diversification
+
+879
+01:47:10,220 --> 01:47:14,220
+which is where you start adding positions
+to the portfolio in the pursuit of
+
+880
+01:47:14,220 --> 01:47:21,580
+lowering risk for the sake of it and by
+doing so actually ruining the return side
+of the equation
+
+881
+01:47:21,580 --> 01:47:29,580
+and this tends to happen when people
+ignore the importance of going through all
+of their fundamental analysis and timing
+protocols for each position
+
+882
+01:47:29,580 --> 01:47:34,620
+and basically diversify without conviction
+about the underlying trade themselves
+
+883
+01:47:34,620 --> 01:47:44,460
+that's a huge mistake we're aiming for
+portfolios and watch lists full of really
+really strong ideas and the
+
+884
+01:47:44,460 --> 01:47:50,860
+consideration of how those ideas fit
+together in a portfolio only comes
+afterwards so the consideration of
+
+885
+01:47:50,860 --> 01:47:55,420
+correlations or anything like that how it
+fits together is all secondary to
+
+886
+01:47:55,420 --> 01:48:02,220
+the concept of idea generation generating
+really strong fundamental fundamentally
+driven ideas
+
+887
+01:48:02,220 --> 01:48:10,140
+in the next part of the video we went on
+to looking at using the portfolio
+volatility model under various scenarios
+
+888
+01:48:10,140 --> 01:48:23,980
+i went through um the examples for two
+core reasons really firstly to illustrate
+how the models actually use how you add
+subtract and substitute positions in the
+portfolio
+
+889
+01:48:23,980 --> 01:48:28,700
+as well as how you can change their
+weightings and whether the positions are
+long or short
+
+890
+01:48:29,580 --> 01:48:40,380
+secondly if you think back to those first
+two scenarios the core takeaway was that
+mega cap and large cap portfolios tend to
+be less volatile than portfolios that
+incorporate mid caps
+
+891
+01:48:40,380 --> 01:48:48,700
+that reinforces our knowledge that mid cap
+positions yield us greater opportunity for
+profit than larger caps because of their
+increased volatility
+
+892
+01:48:48,700 --> 01:48:55,660
+however despite that there is also greater
+scope for building lower correlation
+portfolio structures when
+
+893
+01:48:55,660 --> 01:49:02,940
+involving mid caps as well so there is the
+potential to take advantage of their
+higher expected returns
+
+894
+01:49:02,940 --> 01:49:09,740
+whilst also managing the risk at the
+portfolio level so that it doesn't
+increase proportionately
+
+895
+01:49:10,700 --> 01:49:15,820
+essentially what i'm saying here is is
+that incorporating mid cap stocks into a
+portfolio
+
+896
+01:49:15,820 --> 01:49:21,660
+gives us the possibility to improve our
+risk adjusted returns which is one of the
+things that we're aiming for
+
+897
+01:49:21,660 --> 01:49:26,220
+as traders and portfolio managers as
+you'll see later in the video series
+
+898
+01:49:27,500 --> 01:49:35,340
+the third scenario we went through
+represented the typical type of portfolio
+an itpm trader might hold
+
+899
+01:49:35,340 --> 01:49:39,420
+which was one that was both long and short
+mid and large cap stocks
+
+900
+01:49:40,220 --> 01:49:49,500
+and by being both long and short various
+assets the portfolio volatility was
+reduced massively largely due to
+
+901
+01:49:49,500 --> 01:49:56,940
+the much lower correlations between
+positions again this is yet another way
+that risk adjusted returns can be
+increased further
+
+902
+01:49:57,740 --> 01:50:03,980
+despite the reduction in volatility it's
+important to remember that that doesn't
+necessarily
+
+903
+01:50:04,620 --> 01:50:10,220
+mean less opportunity for profit for a
+number of reasons the key ones being that
+having a long
+
+904
+01:50:10,220 --> 01:50:16,460
+short portfolio is a strategy that can
+work in all markets and also that you can
+increase upside
+
+905
+01:50:16,460 --> 01:50:24,540
+significantly by structuring trades with
+leveraged products such as options now
+structuring portfolios with
+
+906
+01:50:24,540 --> 01:50:30,540
+options to obtain better risk reward
+dynamics is something we cover more in our
+professional options trading course
+
+907
+01:50:30,540 --> 01:50:36,140
+but what it means is that whilst you might
+model a small and large cap long short
+portfolio having say
+
+908
+01:50:36,140 --> 01:50:43,500
+10 to 15 percent annualized volatility
+once you account for the implicit leverage
+in trading those positions
+
+909
+01:50:43,500 --> 01:50:49,980
+through options the actual volatility
+could be substantially higher if so
+desired and with these structures
+
+910
+01:50:50,620 --> 01:50:58,220
+the downside risk doesn't have to be or
+doesn't need to increase proportionally to
+the upside opportunity either
+
+911
+01:50:58,220 --> 01:51:06,780
+given the asymmetric profile of options
+and when you sort of couple that with a
+high trading performance
+
+912
+01:51:06,780 --> 01:51:12,380
+as measured by the Sharpe ratio
+prospective profits can become very very
+attractive
+
+913
+01:51:13,260 --> 01:51:18,700
+in the final section of the video we went
+through some practical aspects of using
+this spreadsheet
+
+914
+01:51:18,700 --> 01:51:24,700
+model ourselves with your own portfolio of
+assets so that you can make more informed
+decisions and
+
+915
+01:51:24,700 --> 01:51:28,460
+come to a greater understanding of your
+own portfolios and what to expect from
+them
+
+916
+01:51:29,100 --> 01:51:34,780
+we're going to build on this in the next
+video where we discuss correlation in more
+detail and i'll be adding
+
+917
+01:51:34,780 --> 01:51:42,060
+a bit of analysis to this spreadsheet
+model so that you can monitor correlations
+throughout your portfolios in more detail
+
+918
+01:51:43,260 --> 01:51:50,940
+okay guys well done in this one that's
+that's not an easy video and obviously
+there's a lot to take in
+
+919
+01:51:50,940 --> 01:51:57,500
+don't get too bogged down with it all just
+yet like i said in the introduction make
+sure you watch the next video
+
+920
+01:51:57,500 --> 01:52:03,820
+before worrying too much about this one
+and kind of take them as a pair because
+that will really help your understanding
+
+921
+01:52:04,780 --> 01:52:13,980
+also for those of you that have access go
+back to the IPLT course if you need to
+understand a bit more about volatility in
+general
+
+922
+01:52:14,700 --> 01:52:18,940
+that's it for this one though and i'll see
+you in the next video

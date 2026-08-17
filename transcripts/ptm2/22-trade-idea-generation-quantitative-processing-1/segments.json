@@ -1,0 +1,5570 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 13.46,
+      "text": "Okay, so we are back at the screen. Welcome to video number 22. We're going to move on to the"
+    },
+    {
+      "start": 13.46,
+      "end": 20.3,
+      "text": "next stage of the Professional Trading Masterclass video series. We're going to move on to a big"
+    },
+    {
+      "start": 20.3,
+      "end": 28.8,
+      "text": "part of our process, very important trade idea generation. And the first part of which is the"
+    },
+    {
+      "start": 28.8,
+      "end": 36.86,
+      "text": "quantitative processing phase. But first, we need to cover some ground in order to build"
+    },
+    {
+      "start": 36.86,
+      "end": 45.2,
+      "text": "into the first stage of the trade idea generation process to better understand how everything"
+    },
+    {
+      "start": 45.2,
+      "end": 55.8,
+      "text": "fits together here. So, so far in the PTM video series, we have looked at obtaining a macro view"
+    },
+    {
+      "start": 55.8,
+      "end": 64.86,
+      "text": "and learned absolute necessary information to understand how long short portfolio management"
+    },
+    {
+      "start": 64.86,
+      "end": 72.86,
+      "text": "actually works when covering in the PTM video series, the foundations of long short portfolio"
+    },
+    {
+      "start": 72.86,
+      "end": 81.74,
+      "text": "management. We've covered a lot of ground and put in some hard yards. And of course, there's still a lot of hard"
+    },
+    {
+      "start": 81.74,
+      "end": 90.8,
+      "text": "yards left to cover. Now, the stuff that we've learned so far in the PTM video series, and sections"
+    },
+    {
+      "start": 90.8,
+      "end": 98.8,
+      "text": "that we're going to cover in the remainder of the PTM video series, the best way to think of the information"
+    },
+    {
+      "start": 98.8,
+      "end": 107.86,
+      "text": "information is to split it out in your mind into two distinct parts. So, firstly,"
+    },
+    {
+      "start": 107.86,
+      "end": 117.86,
+      "text": "information that is fixed and learned once. That can never change. And process, secondly, that you continuously"
+    },
+    {
+      "start": 117.86,
+      "end": 127.86,
+      "text": "engage in. For example, if you started the PTM video series as a complete novice and didn't even understand what a yield curve is,"
+    },
+    {
+      "start": 127.86,
+      "end": 136.92,
+      "text": "what a yield curve is. Well, guess what? Now you do. That information is not going to change ever. You've learnt it once"
+    },
+    {
+      "start": 136.92,
+      "end": 147.98,
+      "text": "and it's done and it's done. However, on a weekly basis, knowing where interest rates are across the yield curve and"
+    },
+    {
+      "start": 147.98,
+      "end": 158.98,
+      "text": "understanding what is going on and what it means for GDP expectations, equities and your portfolio bias at any one"
+    },
+    {
+      "start": 158.98,
+      "end": 168.04,
+      "text": "specific moment in time. That requires weekly processing. Another example with the ISM"
+    },
+    {
+      "start": 168.04,
+      "end": 177.1,
+      "text": "the ISM Manufacturing Report on Business and the Non-Manufacturing Report on Business, ISM Services."
+    },
+    {
+      "start": 177.1,
+      "end": 187.1,
+      "text": "Knowing what it is, how it's designed and what the numbers mean is only something you have to learn once. On a continuous"
+    },
+    {
+      "start": 187.1,
+      "end": 196.16,
+      "text": "basis, interpreting the data on a monthly basis, knowing how it affects your macroeconomic view."
+    },
+    {
+      "start": 196.16,
+      "end": 206.16,
+      "text": "On the future of GDP growth, S&P 500 direction and your portfolio bias. Looking within the surveys for sectoral"
+    },
+    {
+      "start": 206.16,
+      "end": 211.22,
+      "text": "growth, you've got multiple trends. You've got multiple trends and qualitative commentary and clues in order to help with"
+    },
+    {
+      "start": 211.22,
+      "end": 223.22,
+      "text": "trade idea generation. That is a regular process of engagement. So guys, guess what? You have to show up and you have to do your"
+    },
+    {
+      "start": 223.22,
+      "end": 232.28,
+      "text": "your processes regularly. Another example. In the section in the PTM video series that"
+    },
+    {
+      "start": 232.28,
+      "end": 242.28,
+      "text": "Chris covered in Foundations of Portfolio Management. What did we learn? We learned about Portfolio Modeling, Portfolio"
+    },
+    {
+      "start": 242.28,
+      "end": 252.28,
+      "text": "Volatility, Portfolio Correlation and Beta. That's a one-time thing. Once you've learned how it works, you learn it once and the"
+    },
+    {
+      "start": 252.28,
+      "end": 262.34,
+      "text": "you know. On a continuous basis, modelling your portfolio, knowing the volatility and correlation of your portfolio and"
+    },
+    {
+      "start": 262.34,
+      "end": 273.34,
+      "text": "understanding your portfolio bias and your opportunity and risk of the portfolio via beta is a regular process that you have to"
+    },
+    {
+      "start": 273.34,
+      "end": 281.34,
+      "text": "engage in. Again, this is an ongoing process. We will engage in more of this throughout the video series."
+    },
+    {
+      "start": 281.34,
+      "end": 290.4,
+      "text": "Now, in the current section that we're going to go through now of the PTM video series, we're going to go through"
+    },
+    {
+      "start": 290.4,
+      "end": 300.4,
+      "text": "more processes, more processes, but in the trade idea generation phase. Additionally, you are going to learn in this"
+    },
+    {
+      "start": 300.4,
+      "end": 309.46,
+      "text": "phase, more stuff that you only have to learn once. And you're going to learn more stuff that you're going to have to"
+    },
+    {
+      "start": 309.46,
+      "end": 318.52,
+      "text": "apply continuously. Now, as you've heard us say before at ITPM, retail traders do everything the wrong way around"
+    },
+    {
+      "start": 318.52,
+      "end": 328.52,
+      "text": "and upside down. And this definitely applies here in the formation of trade ideas that may or may not end up in your portfolio."
+    },
+    {
+      "start": 328.52,
+      "end": 337.58,
+      "text": "Now, just as a reminder to set the scene as we're moving into the trade idea generation phase, remember, we are operating in the 20 to 60 day time horizon."
+    },
+    {
+      "start": 337.58,
+      "end": 346.64,
+      "text": "And you have to remember what constitutes an actual trade idea within that time horizon."
+    },
+    {
+      "start": 346.64,
+      "end": 358.7,
+      "text": "We are not investors and we are not day traders. We are trading 20 to 60 day volatility."
+    },
+    {
+      "start": 358.7,
+      "end": 372.76,
+      "text": "And if you recall, we have a pro trader systematic process within the 20 to 60 day time horizon."
+    },
+    {
+      "start": 372.76,
+      "end": 384.82,
+      "text": "That drives and generates our trade ideas that end up going into a live portfolio."
+    },
+    {
+      "start": 384.82,
+      "end": 390.82,
+      "text": "And our trade ideas are driven primarily by fundamentals."
+    },
+    {
+      "start": 390.82,
+      "end": 395.82,
+      "text": "We also have to time our trades as best as we can."
+    },
+    {
+      "start": 395.82,
+      "end": 407.88,
+      "text": "And we also require catalysts within the 20 to 60 day time horizon for our stocks to move within that time period."
+    },
+    {
+      "start": 407.88,
+      "end": 417.88,
+      "text": "And our trade structures consider the catalysts that are occurring or are available in the 20 to 60 day time horizon."
+    },
+    {
+      "start": 417.88,
+      "end": 424.88,
+      "text": "However, the vast majority of what we do is driven by fundamentals."
+    },
+    {
+      "start": 424.88,
+      "end": 430.94,
+      "text": "So fundamentals are the start of everything for a trade idea."
+    },
+    {
+      "start": 430.94,
+      "end": 440.94,
+      "text": "And those fundamentals are split into two areas, the quantitative processing phase and the qualitative processing phase."
+    },
+    {
+      "start": 440.94,
+      "end": 453.94,
+      "text": "Fundamentals make up 80 to 90 percent of the factors that we consider as drivers to whether a stock becomes"
+    },
+    {
+      "start": 453.94,
+      "end": 458.0,
+      "text": "a long or short trade idea or a long or short trade idea."
+    },
+    {
+      "start": 458.0,
+      "end": 460.0,
+      "text": "And then timing."
+    },
+    {
+      "start": 460.0,
+      "end": 482.0,
+      "text": "Once we have decided that something, a stock is a fundamental long or short, timing is 10 to 20 percent of the factors that we consider for a stock to actually become a long trade idea or a short trade idea."
+    },
+    {
+      "start": 482.0,
+      "end": 486.06,
+      "text": "So within the 20 to 60 day time horizon."
+    },
+    {
+      "start": 486.06,
+      "end": 503.06,
+      "text": "And then the trade structure that we choose is simply a representation of the catalysts that are available to us that we've identified within the 20 to 60 day time horizon that are going to make the stock move."
+    },
+    {
+      "start": 503.06,
+      "end": 514.12,
+      "text": "So our first step, fundamentals, the quantitative and qualitative processes of fundamentals."
+    },
+    {
+      "start": 514.12,
+      "end": 515.12,
+      "text": "Fundamentals."
+    },
+    {
+      "start": 515.12,
+      "end": 517.12,
+      "text": "This is a theoretical step."
+    },
+    {
+      "start": 517.12,
+      "end": 531.18,
+      "text": "Fundamentals."
+    },
+    {
+      "start": 531.18,
+      "end": 540.06,
+      "text": "to work out whether that identification process of the fundamental long and the fundamental short,"
+    },
+    {
+      "start": 540.06,
+      "end": 552.76,
+      "text": "we are using the timing step to find out if it is advantageous or not to take the position within the 20 to 60 day time horizon."
+    },
+    {
+      "start": 553.54,
+      "end": 566.42,
+      "text": "And when we are seeking to implement, we require catalysts and an identification of catalysts to enable the stock to move within the time period."
+    },
+    {
+      "start": 566.42,
+      "end": 570.66,
+      "text": "And our trade structure is a representation of this."
+    },
+    {
+      "start": 571.88,
+      "end": 579.42,
+      "text": "So, in short, our trade idea generation process is an identification process."
+    },
+    {
+      "start": 581.14,
+      "end": 593.6,
+      "text": "Fundamentals first, we are identifying interesting, potential longs and shorts based on fundamentals, 80 to 90% of our work."
+    },
+    {
+      "start": 593.6,
+      "end": 602.64,
+      "text": "We are then appraising and identifying whether the timing looks advantageous or not."
+    },
+    {
+      "start": 603.5,
+      "end": 616.94,
+      "text": "We are also identifying catalysts that can occur within the 20 to 60 day time horizon and our trade structure becomes a representation of that."
+    },
+    {
+      "start": 617.5,
+      "end": 622.3,
+      "text": "That is the overall trade idea generation process."
+    },
+    {
+      "start": 622.96,
+      "end": 634.96,
+      "text": "And it's important to think of the pro trader systematic process and the steps that we go through to generate a trade idea"
+    },
+    {
+      "start": 634.96,
+      "end": 640.66,
+      "text": "versus the steps that a retail trader goes through to generate a trade idea."
+    },
+    {
+      "start": 640.66,
+      "end": 652.26,
+      "text": "So, professional traders are putting a very large weighting on fundamentals and the drivers of fundamentals to generate a trade idea."
+    },
+    {
+      "start": 652.62,
+      "end": 654.42,
+      "text": "What are retail traders doing?"
+    },
+    {
+      "start": 654.86,
+      "end": 657.48,
+      "text": "Well, they're doing everything upside down."
+    },
+    {
+      "start": 658.0,
+      "end": 664.12,
+      "text": "Generally speaking, they're putting the vast majority of their weighting on timing."
+    },
+    {
+      "start": 664.12,
+      "end": 675.88,
+      "text": "Then, professional traders, we have fundamentals and catalysts that are going to move a stock within a 20 to 60 day time horizon."
+    },
+    {
+      "start": 675.88,
+      "end": 696.64,
+      "text": "They're putting way too much emphasis on one-dimensional risk management and then the risk management and timing is dictating their outcome."
+    },
+    {
+      "start": 696.64,
+      "end": 702.08,
+      "text": "So, there's no diversification in their portfolios."
+    },
+    {
+      "start": 702.08,
+      "end": 710.82,
+      "text": "So, they only have a few positions that are driven by mostly technicals and not fundamentals."
+    },
+    {
+      "start": 710.82,
+      "end": 712.78,
+      "text": "So, what ends up happening?"
+    },
+    {
+      "start": 713.2,
+      "end": 715.52,
+      "text": "The vast majority lose money."
+    },
+    {
+      "start": 716.52,
+      "end": 729.04,
+      "text": "So, what ends up in a retail trader's portfolio is essentially too few badly thought out, badly timed ideas."
+    },
+    {
+      "start": 729.04,
+      "end": 743.34,
+      "text": "What ends up in a professional trader's portfolio is a good amount of well thought out, highly researched, fundamentally driven,"
+    },
+    {
+      "start": 743.34,
+      "end": 748.04,
+      "text": "well-timed trade ideas that have been structured well."
+    },
+    {
+      "start": 748.04,
+      "end": 756.36,
+      "text": "And that is a huge difference in the gulf between retail traders and professional traders."
+    },
+    {
+      "start": 756.36,
+      "end": 765.78,
+      "text": "And these are not subtle little differences, guys, between retail traders and professional traders."
+    },
+    {
+      "start": 765.78,
+      "end": 768.22,
+      "text": "This is a massive difference."
+    },
+    {
+      "start": 768.22,
+      "end": 782.24,
+      "text": "It's a massive amount of understanding at work to just get on top of it and, on a continuous basis, implement the overall pro trader systematic process."
+    },
+    {
+      "start": 783.86,
+      "end": 787.84,
+      "text": "And this is, of course, what you're here to learn."
+    },
+    {
+      "start": 787.84,
+      "end": 796.62,
+      "text": "You're here to learn this, to close the gap between retail traders and professional traders."
+    },
+    {
+      "start": 796.62,
+      "end": 803.18,
+      "text": "So, close the gap between what you've been doing previously and what professional traders do."
+    },
+    {
+      "start": 803.98,
+      "end": 812.94,
+      "text": "And what you've learned so far, you know, we've learned macroeconomic indicators that give us our portfolio bias."
+    },
+    {
+      "start": 813.54,
+      "end": 822.1,
+      "text": "We've learned the basics, the foundations of portfolio management, of long, short portfolio management."
+    },
+    {
+      "start": 822.1,
+      "end": 829.78,
+      "text": "And now we're moving into the next phase of our education, the trade idea generation process."
+    },
+    {
+      "start": 830.1,
+      "end": 837.56,
+      "text": "And the majority of what professional trainers do is rooted in fundamentals."
+    },
+    {
+      "start": 838.32,
+      "end": 841.2,
+      "text": "It is an identification process."
+    },
+    {
+      "start": 841.2,
+      "end": 845.62,
+      "text": "So, we have our macro, which is quantitative."
+    },
+    {
+      "start": 845.62,
+      "end": 856.24,
+      "text": "And that's part of the quantitative process that dictates our bias, whether we lean to be long, short or neutral in our portfolio."
+    },
+    {
+      "start": 856.24,
+      "end": 859.28,
+      "text": "So, that is our top-down analysis."
+    },
+    {
+      "start": 861.28,
+      "end": 870.64,
+      "text": "Additionally, as part of the quantitative process within fundamentals is our micro views."
+    },
+    {
+      "start": 871.3,
+      "end": 873.34,
+      "text": "This is our bottom-up analysis."
+    },
+    {
+      "start": 874.18,
+      "end": 882.24,
+      "text": "And this is where we start identifying potential longs and shorts for our portfolio."
+    },
+    {
+      "start": 882.24,
+      "end": 895.2,
+      "text": "And we go through a trade idea generation process, starting with the bottom-up analysis on stocks as part of the quantitative process."
+    },
+    {
+      "start": 895.2,
+      "end": 905.16,
+      "text": "We are seeking microeconomic views on stocks as to whether something is a fundamental long or a fundamental short."
+    },
+    {
+      "start": 905.16,
+      "end": 908.3,
+      "text": "And it is an identification process."
+    },
+    {
+      "start": 908.3,
+      "end": 913.86,
+      "text": "We identify the potential longs and we identify the potential shorts."
+    },
+    {
+      "start": 913.86,
+      "end": 921.66,
+      "text": "We ask ourselves the question at the quantitative stage of trade idea generation."
+    },
+    {
+      "start": 921.66,
+      "end": 930.68,
+      "text": "Is this stock on paper a quantitative potential long?"
+    },
+    {
+      "start": 930.9,
+      "end": 937.14,
+      "text": "Is this stock on paper a quantitative potential short?"
+    },
+    {
+      "start": 937.14,
+      "end": 939.92,
+      "text": "It is an identification process."
+    },
+    {
+      "start": 939.92,
+      "end": 944.9,
+      "text": "And the answers will either be yes, no, or don't know."
+    },
+    {
+      "start": 946.36,
+      "end": 961.1,
+      "text": "And then we move on to the qualitative process, which comes much later in the video series after we've been through the whole quantitative processes of the trade idea generation steps."
+    },
+    {
+      "start": 961.4,
+      "end": 966.56,
+      "text": "And the qualitative process, we are learning more about the stock information."
+    },
+    {
+      "start": 967.52,
+      "end": 974.28,
+      "text": "We are identifying key performance indicators and we are also identifying catalysts."
+    },
+    {
+      "start": 974.28,
+      "end": 980.14,
+      "text": "But for now, we are going to go through the quantitative processes step by step."
+    },
+    {
+      "start": 981.08,
+      "end": 991.0,
+      "text": "But first, before we get into the meat of those processes, I think it's very important for you to understand."
+    },
+    {
+      "start": 991.4,
+      "end": 1009.58,
+      "text": "At this stage, why professional traders put so much emphasis on trade ideas and fundamentally driven trade ideas and the quality of their trade ideas versus risk management."
+    },
+    {
+      "start": 1011.14,
+      "end": 1013.9,
+      "text": "It's very straightforward, guys, when you think about it."
+    },
+    {
+      "start": 1014.14,
+      "end": 1019.36,
+      "text": "If you just ask yourself a very, very simple question."
+    },
+    {
+      "start": 1020.32,
+      "end": 1024.02,
+      "text": "Who would you rather be for the rest of your life?"
+    },
+    {
+      "start": 1025.12,
+      "end": 1026.96,
+      "text": "Trader 1 or Trader 2?"
+    },
+    {
+      "start": 1027.96,
+      "end": 1030.4,
+      "text": "So let's say we have two choices."
+    },
+    {
+      "start": 1031.24,
+      "end": 1032.66,
+      "text": "Trader 1, Trader 2."
+    },
+    {
+      "start": 1033.58,
+      "end": 1038.64,
+      "text": "Trader 1 is bad at ideas, but excellent at risk management."
+    },
+    {
+      "start": 1039.32,
+      "end": 1044.64,
+      "text": "And Trader 2 is excellent at ideas, but bad at risk management."
+    },
+    {
+      "start": 1044.98,
+      "end": 1051.94,
+      "text": "There's only two things that go into the outcome of whether we make a profit or loss."
+    },
+    {
+      "start": 1052.32,
+      "end": 1058.24,
+      "text": "It's either trade ideas or risk management or a combination of both."
+    },
+    {
+      "start": 1060.18,
+      "end": 1067.4,
+      "text": "So if you were given the choice, if you had to be good or bad at one or the other, which one would you choose?"
+    },
+    {
+      "start": 1067.9,
+      "end": 1071.98,
+      "text": "Trader 1, would you choose to be that trader for the rest of your life?"
+    },
+    {
+      "start": 1071.98,
+      "end": 1075.32,
+      "text": "Bad at ideas, excellent at risk management."
+    },
+    {
+      "start": 1075.54,
+      "end": 1080.96,
+      "text": "Or Trader 2, excellent at ideas and bad at risk management."
+    },
+    {
+      "start": 1081.46,
+      "end": 1083.08,
+      "text": "Which one would you choose?"
+    },
+    {
+      "start": 1084.04,
+      "end": 1091.5,
+      "text": "Well, given the information that we've shown you so far, I'd hope you'd lean towards Trader 2."
+    },
+    {
+      "start": 1092.16,
+      "end": 1097.14,
+      "text": "But retail traders are doing everything upside down."
+    },
+    {
+      "start": 1098.2,
+      "end": 1108.58,
+      "text": "Retail traders, as mentioned previously, have too little, badly thought out ideas, but they believe they're excellent at risk management."
+    },
+    {
+      "start": 1109.96,
+      "end": 1131.12,
+      "text": "So the way retail traders are taught and how they evolve or how they even teach themselves, they're learning superficial risk management and thinking that for some reason, no matter how bad the ideas are that they put into their trading account,"
+    },
+    {
+      "start": 1131.54,
+      "end": 1147.94,
+      "text": "as long as they manage their risk well, they only have upside, that's wrong, because if your ideas are bad over a long period of time, it doesn't matter how good your risk management is, you're just going to go to zero."
+    },
+    {
+      "start": 1149.16,
+      "end": 1160.34,
+      "text": "However, very few people understand that the opposite case in the real world doesn't actually hold true."
+    },
+    {
+      "start": 1161.14,
+      "end": 1173.4,
+      "text": "So, if somebody has excellent ideas, an abundance of excellent ideas, but they're bad at risk management, does that mean they go to zero?"
+    },
+    {
+      "start": 1174.0,
+      "end": 1175.56,
+      "text": "In reality, no."
+    },
+    {
+      "start": 1176.6,
+      "end": 1181.08,
+      "text": "Because what matters is the quality of your ideas."
+    },
+    {
+      "start": 1182.42,
+      "end": 1192.68,
+      "text": "Bad ideas and good risk management is not the same outcome as good ideas and bad risk management."
+    },
+    {
+      "start": 1193.24,
+      "end": 1208.04,
+      "text": "So, if we replace those boxes and we replace trade ideas with the quality of ideas and we replace risk management with the variability of your risk,"
+    },
+    {
+      "start": 1208.04,
+      "end": 1219.94,
+      "text": "and we call that the black box variability, it's those two things that really matter in the real world as to whether you make money over time."
+    },
+    {
+      "start": 1220.46,
+      "end": 1221.5,
+      "text": "So, think about it."
+    },
+    {
+      "start": 1221.62,
+      "end": 1224.74,
+      "text": "For the rest of your life, who would you rather be?"
+    },
+    {
+      "start": 1225.2,
+      "end": 1232.16,
+      "text": "And we're talking about a series of trades here over an extremely long period of time."
+    },
+    {
+      "start": 1232.74,
+      "end": 1240.72,
+      "text": "We're not talking about opening a trading account and having one or two trades that go well over a period of one or two months."
+    },
+    {
+      "start": 1241.18,
+      "end": 1242.78,
+      "text": "We're talking about a career."
+    },
+    {
+      "start": 1243.32,
+      "end": 1244.66,
+      "text": "We're talking about a lifetime."
+    },
+    {
+      "start": 1245.34,
+      "end": 1249.84,
+      "text": "We're talking about thousands of trades over and over and over again."
+    },
+    {
+      "start": 1250.78,
+      "end": 1261.4,
+      "text": "So, let's run through some outcomes of what that actually looks like over an extended career of thousands of trades."
+    },
+    {
+      "start": 1261.4,
+      "end": 1272.88,
+      "text": "If you put lots of emphasis on your ideas and very little emphasis and understanding of your risk management."
+    },
+    {
+      "start": 1273.36,
+      "end": 1282.78,
+      "text": "So, you put all of your effort into the quality of your ideas and you put very little effort into risk management."
+    },
+    {
+      "start": 1283.24,
+      "end": 1289.36,
+      "text": "What's going to happen over time with an endless amount of trades?"
+    },
+    {
+      "start": 1290.14,
+      "end": 1294.04,
+      "text": "Well, this person is the reckless genius."
+    },
+    {
+      "start": 1294.96,
+      "end": 1298.94,
+      "text": "We would score them very, very high on the quality of their ideas."
+    },
+    {
+      "start": 1299.26,
+      "end": 1301.12,
+      "text": "So, we give them an 8 out of 10."
+    },
+    {
+      "start": 1301.58,
+      "end": 1306.52,
+      "text": "But we give them a very low score for their black box variability."
+    },
+    {
+      "start": 1307.58,
+      "end": 1316.14,
+      "text": "We give them a 2 out of 10 for their risk management, the variability of their risk within what we call the black box."
+    },
+    {
+      "start": 1316.4,
+      "end": 1318.14,
+      "text": "Open quotes, close quotes."
+    },
+    {
+      "start": 1318.92,
+      "end": 1324.02,
+      "text": "The black box is basically where your risk occurs."
+    },
+    {
+      "start": 1324.66,
+      "end": 1326.18,
+      "text": "Your risk management occurs."
+    },
+    {
+      "start": 1326.64,
+      "end": 1329.48,
+      "text": "How you deal with a position for the rest of your career."
+    },
+    {
+      "start": 1329.78,
+      "end": 1334.62,
+      "text": "So, this person, the quality of their ideas is very high."
+    },
+    {
+      "start": 1335.24,
+      "end": 1336.98,
+      "text": "But their risk management is bad."
+    },
+    {
+      "start": 1337.58,
+      "end": 1339.2,
+      "text": "What do we call that guy?"
+    },
+    {
+      "start": 1339.74,
+      "end": 1342.3,
+      "text": "Well, we call that guy the reckless genius."
+    },
+    {
+      "start": 1343.64,
+      "end": 1359.44,
+      "text": "That person on a linear score would score 10 out of 20 because they're getting 8 for the quality of their ideas, but 2 for their risk management, their black box variability."
+    },
+    {
+      "start": 1360.02,
+      "end": 1362.5,
+      "text": "But in reality, what's going to happen to this person?"
+    },
+    {
+      "start": 1363.22,
+      "end": 1366.28,
+      "text": "Well, they're getting a lot of their ideas right."
+    },
+    {
+      "start": 1366.28,
+      "end": 1376.48,
+      "text": "And they just need a few ideas to get huge upside over a very long period of time, over a large amount of trades."
+    },
+    {
+      "start": 1376.96,
+      "end": 1379.86,
+      "text": "In the real world, they would actually be scored higher."
+    },
+    {
+      "start": 1380.26,
+      "end": 1389.04,
+      "text": "So, their P&L would come out not on a linear move, not on a linear score, but on a projected score that's higher."
+    },
+    {
+      "start": 1390.04,
+      "end": 1392.08,
+      "text": "Now, think of the opposite of that."
+    },
+    {
+      "start": 1392.08,
+      "end": 1400.78,
+      "text": "So, somebody who has got terrible ideas, but really good risk management for the rest of their life."
+    },
+    {
+      "start": 1401.24,
+      "end": 1403.2,
+      "text": "What's actually happening to this person?"
+    },
+    {
+      "start": 1404.0,
+      "end": 1407.24,
+      "text": "Well, this person we call the firefighter."
+    },
+    {
+      "start": 1407.64,
+      "end": 1416.02,
+      "text": "This person is putting terrible ideas into a black box that has little variability."
+    },
+    {
+      "start": 1416.68,
+      "end": 1420.18,
+      "text": "But for the rest of their career, this is the case."
+    },
+    {
+      "start": 1420.8,
+      "end": 1430.5,
+      "text": "They're putting hundreds, thousands of low-quality, terrible, crappy ideas into a portfolio that manages risk well."
+    },
+    {
+      "start": 1431.34,
+      "end": 1433.02,
+      "text": "Well, what are they doing for the rest of their life?"
+    },
+    {
+      "start": 1433.58,
+      "end": 1437.0,
+      "text": "All they're doing for the rest of their life is putting out fires."
+    },
+    {
+      "start": 1437.74,
+      "end": 1441.68,
+      "text": "And on a linear score, they score 10 out of 20."
+    },
+    {
+      "start": 1442.4,
+      "end": 1444.94,
+      "text": "That's the same score as the reckless genius."
+    },
+    {
+      "start": 1445.58,
+      "end": 1449.88,
+      "text": "But it's obviously not the same outcome in the real world."
+    },
+    {
+      "start": 1449.88,
+      "end": 1453.52,
+      "text": "In the real world, their P&L will go to zero."
+    },
+    {
+      "start": 1454.14,
+      "end": 1460.04,
+      "text": "On a projection, we would score this person very, very low on the outcome of their portfolio."
+    },
+    {
+      "start": 1460.56,
+      "end": 1462.8,
+      "text": "Perhaps a 6 out of 20."
+    },
+    {
+      "start": 1463.58,
+      "end": 1472.96,
+      "text": "So if given the choice between being the firefighter for the rest of your life or the reckless genius for the rest of your life,"
+    },
+    {
+      "start": 1473.28,
+      "end": 1479.48,
+      "text": "I think it's fairly obvious we would much rather be the reckless genius."
+    },
+    {
+      "start": 1480.26,
+      "end": 1484.88,
+      "text": "Yes, we will get trades wrong and they will cost us quite a lot of money."
+    },
+    {
+      "start": 1486.08,
+      "end": 1496.7,
+      "text": "But the reckless genius has a large amount of high-quality trade ideas that are coming through their process for the rest of their life."
+    },
+    {
+      "start": 1497.08,
+      "end": 1500.22,
+      "text": "They're just managing the risk badly on some of them."
+    },
+    {
+      "start": 1500.66,
+      "end": 1502.72,
+      "text": "So they're getting a large amount right."
+    },
+    {
+      "start": 1503.44,
+      "end": 1505.34,
+      "text": "The quality of the ideas is high."
+    },
+    {
+      "start": 1506.04,
+      "end": 1511.54,
+      "text": "The firefighter has got a very low quality of ideas."
+    },
+    {
+      "start": 1511.54,
+      "end": 1514.68,
+      "text": "So they have a large amount of terrible ideas."
+    },
+    {
+      "start": 1514.96,
+      "end": 1518.22,
+      "text": "And they're putting out fires for the rest of their lives."
+    },
+    {
+      "start": 1518.64,
+      "end": 1520.12,
+      "text": "Very few of them go right."
+    },
+    {
+      "start": 1520.92,
+      "end": 1523.18,
+      "text": "And the vast majority are going wrong."
+    },
+    {
+      "start": 1523.5,
+      "end": 1528.14,
+      "text": "They're just managing the risk well on all of the positions that are going wrong."
+    },
+    {
+      "start": 1528.48,
+      "end": 1533.8,
+      "text": "But there's so many of them that they're just going to go to zero over an infinite amount of trades,"
+    },
+    {
+      "start": 1534.32,
+      "end": 1536.34,
+      "text": "over an infinite amount of time."
+    },
+    {
+      "start": 1536.9,
+      "end": 1540.06,
+      "text": "We would much rather be the reckless genius."
+    },
+    {
+      "start": 1540.52,
+      "end": 1547.28,
+      "text": "There's far much more upside over thousands of trades in this person's portfolio,"
+    },
+    {
+      "start": 1547.28,
+      "end": 1551.7,
+      "text": "in this person's trading process, than the firefighter."
+    },
+    {
+      "start": 1553.14,
+      "end": 1558.7,
+      "text": "And what's an unfortunate reality in the real world is that retail traders,"
+    },
+    {
+      "start": 1559.4,
+      "end": 1566.84,
+      "text": "when they learn and when they evolve, or as the case may be, not evolve,"
+    },
+    {
+      "start": 1567.88,
+      "end": 1574.24,
+      "text": "what they're focusing on the most and what they're taught to focus on the most"
+    },
+    {
+      "start": 1574.24,
+      "end": 1576.68,
+      "text": "is all the stuff that doesn't matter."
+    },
+    {
+      "start": 1577.54,
+      "end": 1580.26,
+      "text": "So all the stuff like risk management."
+    },
+    {
+      "start": 1580.92,
+      "end": 1587.58,
+      "text": "So focusing on some superficial, one-dimensional risk management metrics"
+    },
+    {
+      "start": 1587.58,
+      "end": 1591.88,
+      "text": "and not focusing on the quality of their ideas."
+    },
+    {
+      "start": 1592.72,
+      "end": 1594.6,
+      "text": "And if you look at case number three here,"
+    },
+    {
+      "start": 1595.26,
+      "end": 1599.12,
+      "text": "the guy that's got one out of 10 for quality of ideas"
+    },
+    {
+      "start": 1599.12,
+      "end": 1603.0,
+      "text": "and the black box variability of three out of 10,"
+    },
+    {
+      "start": 1603.4,
+      "end": 1605.04,
+      "text": "so a linear score of four."
+    },
+    {
+      "start": 1605.7,
+      "end": 1607.66,
+      "text": "Unfortunately, in the real world,"
+    },
+    {
+      "start": 1608.04,
+      "end": 1611.62,
+      "text": "this is what the picture of the retail trader actually is."
+    },
+    {
+      "start": 1612.42,
+      "end": 1616.5,
+      "text": "People think that risk management is the most important thing."
+    },
+    {
+      "start": 1616.5,
+      "end": 1623.36,
+      "text": "And they think they're actually good at risk management because they know some superficial metrics."
+    },
+    {
+      "start": 1623.64,
+      "end": 1625.94,
+      "text": "But the reality is, is that they're not."
+    },
+    {
+      "start": 1626.56,
+      "end": 1629.06,
+      "text": "So the quality of their ideas is very low."
+    },
+    {
+      "start": 1629.34,
+      "end": 1631.84,
+      "text": "And their risk management is extremely basic."
+    },
+    {
+      "start": 1632.36,
+      "end": 1636.68,
+      "text": "And what ends up happening is they just go towards zero"
+    },
+    {
+      "start": 1636.68,
+      "end": 1644.52,
+      "text": "and tend to end up at zero over a large amount of trades over a long enough period of time."
+    },
+    {
+      "start": 1645.74,
+      "end": 1647.82,
+      "text": "Now, where do we want to be?"
+    },
+    {
+      "start": 1648.5,
+      "end": 1655.16,
+      "text": "Where do we want to be as professional traders, i.e. at a professional trading standard?"
+    },
+    {
+      "start": 1655.82,
+      "end": 1663.34,
+      "text": "Well, we'd much rather be the reckless genius than the firefighter if given the choice."
+    },
+    {
+      "start": 1663.34,
+      "end": 1667.1,
+      "text": "And, of course, we definitely don't want to be the useless pleb."
+    },
+    {
+      "start": 1668.3,
+      "end": 1673.84,
+      "text": "But we do have a choice in the direction that we take our careers"
+    },
+    {
+      "start": 1673.84,
+      "end": 1679.76,
+      "text": "and how we structure our processes to get consistency in returns"
+    },
+    {
+      "start": 1679.76,
+      "end": 1685.72,
+      "text": "and favorable portfolio outcomes, as in consistent profitability."
+    },
+    {
+      "start": 1686.4,
+      "end": 1690.22,
+      "text": "We do have a choice where we put our efforts in."
+    },
+    {
+      "start": 1691.14,
+      "end": 1692.94,
+      "text": "So where would we want to be?"
+    },
+    {
+      "start": 1693.34,
+      "end": 1696.94,
+      "text": "We want to be highly competent at the quality of our ideas."
+    },
+    {
+      "start": 1697.26,
+      "end": 1702.76,
+      "text": "And we want to be highly competent at risk management or black box variability."
+    },
+    {
+      "start": 1703.9,
+      "end": 1711.7,
+      "text": "We don't have to be absolute geniuses and get 10 out of 10 all the time"
+    },
+    {
+      "start": 1711.7,
+      "end": 1714.14,
+      "text": "on our quality of our ideas."
+    },
+    {
+      "start": 1714.42,
+      "end": 1716.24,
+      "text": "We don't have to have that."
+    },
+    {
+      "start": 1716.72,
+      "end": 1718.52,
+      "text": "We can just be highly competent."
+    },
+    {
+      "start": 1719.24,
+      "end": 1724.56,
+      "text": "So a 7 out of 10 for our quality of ideas will do."
+    },
+    {
+      "start": 1725.2,
+      "end": 1730.36,
+      "text": "That will give us enough consistency to come up with a large amount"
+    },
+    {
+      "start": 1730.36,
+      "end": 1733.44,
+      "text": "of high-quality trade ideas over time."
+    },
+    {
+      "start": 1734.26,
+      "end": 1740.74,
+      "text": "For risk management, again, we don't have to be the greatest risk managers on the planet."
+    },
+    {
+      "start": 1741.6,
+      "end": 1746.4,
+      "text": "We would rather be competent or highly competent at risk management."
+    },
+    {
+      "start": 1747.54,
+      "end": 1750.02,
+      "text": "And a 7 out of 10 will do."
+    },
+    {
+      "start": 1751.14,
+      "end": 1753.7,
+      "text": "We don't want to be the firefighter."
+    },
+    {
+      "start": 1753.98,
+      "end": 1755.02,
+      "text": "Absolutely not."
+    },
+    {
+      "start": 1755.94,
+      "end": 1757.96,
+      "text": "Quality of ideas really matters."
+    },
+    {
+      "start": 1757.96,
+      "end": 1764.38,
+      "text": "But we don't want to give up too much somewhere else in areas like risk management"
+    },
+    {
+      "start": 1764.38,
+      "end": 1770.3,
+      "text": "for the sake of just having a 10 out of 10 for the quality of our ideas."
+    },
+    {
+      "start": 1770.8,
+      "end": 1776.38,
+      "text": "To get consistency in returns, we need consistency in approach."
+    },
+    {
+      "start": 1776.96,
+      "end": 1778.98,
+      "text": "And quality of ideas really matters."
+    },
+    {
+      "start": 1778.98,
+      "end": 1782.64,
+      "text": "And risk management, of course, matters too."
+    },
+    {
+      "start": 1783.24,
+      "end": 1785.72,
+      "text": "So we want to be highly competent at both."
+    },
+    {
+      "start": 1786.26,
+      "end": 1791.56,
+      "text": "This will give us consistent profitability and a high score over time."
+    },
+    {
+      "start": 1792.84,
+      "end": 1803.48,
+      "text": "But what's interesting about risk management processes is that once you've learned them, once you've learned them once,"
+    },
+    {
+      "start": 1804.12,
+      "end": 1805.94,
+      "text": "you don't have to learn them again."
+    },
+    {
+      "start": 1805.94,
+      "end": 1808.8,
+      "text": "It just comes down to experience."
+    },
+    {
+      "start": 1809.1,
+      "end": 1816.36,
+      "text": "And this is why we call the box for risk management, black box variability."
+    },
+    {
+      "start": 1817.14,
+      "end": 1817.82,
+      "text": "Why?"
+    },
+    {
+      "start": 1817.82,
+      "end": 1822.7,
+      "text": "Because over time, once you've learned it, it's fixed."
+    },
+    {
+      "start": 1823.7,
+      "end": 1826.38,
+      "text": "The variability becomes fixed."
+    },
+    {
+      "start": 1827.74,
+      "end": 1833.44,
+      "text": "What is variable in the process is the quality of your ideas over time."
+    },
+    {
+      "start": 1833.68,
+      "end": 1844.46,
+      "text": "So if you fast forward five years from now, the quality of your ideas between now and then can go up and down over time."
+    },
+    {
+      "start": 1846.3,
+      "end": 1854.98,
+      "text": "With risk management, five years from now, if you've learned risk management processes and you've implemented"
+    },
+    {
+      "start": 1854.98,
+      "end": 1862.32,
+      "text": "and you've become fairly experienced at risk management, your variability is going to be low."
+    },
+    {
+      "start": 1862.32,
+      "end": 1868.1,
+      "text": "So your risk management, you've learned once and implemented and built some experience."
+    },
+    {
+      "start": 1869.02,
+      "end": 1875.32,
+      "text": "And then at some point in the future, your black box variability will be very low."
+    },
+    {
+      "start": 1875.82,
+      "end": 1881.44,
+      "text": "So in the process, the quality of your ideas over time can always change."
+    },
+    {
+      "start": 1882.02,
+      "end": 1883.78,
+      "text": "It's the effort that you put in."
+    },
+    {
+      "start": 1884.24,
+      "end": 1889.9,
+      "text": "It's the knowledge and effort of generating quality ideas."
+    },
+    {
+      "start": 1891.1,
+      "end": 1896.22,
+      "text": "Black box variability, your risk management is a fixed number."
+    },
+    {
+      "start": 1897.0,
+      "end": 1898.72,
+      "text": "It can become fixed over time."
+    },
+    {
+      "start": 1899.12,
+      "end": 1900.8,
+      "text": "It's fairly straightforward to learn."
+    },
+    {
+      "start": 1901.46,
+      "end": 1907.88,
+      "text": "And once you've picked up and you've learned it once and you've picked up some experience,"
+    },
+    {
+      "start": 1908.58,
+      "end": 1911.52,
+      "text": "once you've picked it up, your variability can be low."
+    },
+    {
+      "start": 1911.88,
+      "end": 1913.0,
+      "text": "So what happens?"
+    },
+    {
+      "start": 1913.0,
+      "end": 1916.76,
+      "text": "You have profit and loss at the end of that."
+    },
+    {
+      "start": 1917.8,
+      "end": 1921.92,
+      "text": "So the profit and loss is obviously variable."
+    },
+    {
+      "start": 1922.2,
+      "end": 1931.24,
+      "text": "If your quality of ideas is variable and over time, your risk management processes and your black box variability becomes fixed,"
+    },
+    {
+      "start": 1931.66,
+      "end": 1939.68,
+      "text": "then the reason why your P&L is variable is because of the quality of your ideas."
+    },
+    {
+      "start": 1939.68,
+      "end": 1950.32,
+      "text": "Once you know how to operate the black box, it's all about ideas, which means it's all about ideas, period."
+    },
+    {
+      "start": 1950.88,
+      "end": 1955.04,
+      "text": "When you're starting out, you have to learn both, of course."
+    },
+    {
+      "start": 1955.04,
+      "end": 1962.72,
+      "text": "But over time, ideas are far more important because risk management is mechanical."
+    },
+    {
+      "start": 1963.04,
+      "end": 1968.84,
+      "text": "It takes about three to six months to learn the basics and to become competent."
+    },
+    {
+      "start": 1969.16,
+      "end": 1974.56,
+      "text": "But it does require real money practice and experience."
+    },
+    {
+      "start": 1975.38,
+      "end": 1983.96,
+      "text": "You can only get real money, real money practice with good ideas or you're going to blow up."
+    },
+    {
+      "start": 1984.46,
+      "end": 1986.38,
+      "text": "So again, it's all about ideas."
+    },
+    {
+      "start": 1987.3,
+      "end": 1993.72,
+      "text": "Now, fundamental trade idea generation, as we've mentioned, is both quantitative and qualitative."
+    },
+    {
+      "start": 1994.16,
+      "end": 2001.6,
+      "text": "And it requires a lot of attention to detail, lateral thinking, creativity and conviction."
+    },
+    {
+      "start": 2002.68,
+      "end": 2010.52,
+      "text": "And it's much more difficult to learn the fundamental trade idea generation processes,"
+    },
+    {
+      "start": 2011.2,
+      "end": 2013.58,
+      "text": "the quant and the qualitative processes."
+    },
+    {
+      "start": 2014.8,
+      "end": 2021.9,
+      "text": "And implementing this over your lifetime, over your career, a long period of time,"
+    },
+    {
+      "start": 2022.46,
+      "end": 2029.52,
+      "text": "and generate consistently a large amount of high quality trade ideas."
+    },
+    {
+      "start": 2030.18,
+      "end": 2038.84,
+      "text": "It's much more difficult learning how to do that and actually doing it than learning the risk management processes"
+    },
+    {
+      "start": 2038.84,
+      "end": 2043.22,
+      "text": "and implementing them and getting some experience doing that."
+    },
+    {
+      "start": 2043.22,
+      "end": 2054.96,
+      "text": "And this is conveniently why retail traders tend to not focus on fundamentals and the quality of their ideas."
+    },
+    {
+      "start": 2055.44,
+      "end": 2061.44,
+      "text": "And retail traders are given shortcuts or what they think are shortcuts to learning,"
+    },
+    {
+      "start": 2062.28,
+      "end": 2068.44,
+      "text": "shortcuts and hacks to learning some basic risk management processes because it seems easy."
+    },
+    {
+      "start": 2069.0,
+      "end": 2077.72,
+      "text": "It's easy and straightforward to learn some of those processes, even though those processes are not very sophisticated"
+    },
+    {
+      "start": 2077.72,
+      "end": 2080.26,
+      "text": "and we need to do a lot more work on that."
+    },
+    {
+      "start": 2080.26,
+      "end": 2086.54,
+      "text": "But it does demonstrate as to why retail traders do everything upside down."
+    },
+    {
+      "start": 2087.32,
+      "end": 2091.88,
+      "text": "The fundamental trade idea generation process requires work."
+    },
+    {
+      "start": 2092.32,
+      "end": 2101.86,
+      "text": "It requires a lot of effort and it requires consistency in effort showing up every week,"
+    },
+    {
+      "start": 2101.98,
+      "end": 2114.36,
+      "text": "every month, every month and generating a large amount of high quality trade ideas over a very long period of time in order to sustain a long, short portfolio."
+    },
+    {
+      "start": 2116.04,
+      "end": 2131.9,
+      "text": "Learning the professional trader risk management processes, even though it's more difficult and takes longer to learn than what retail traders are taught at the moment and are used to,"
+    },
+    {
+      "start": 2132.62,
+      "end": 2143.38,
+      "text": "it is still fixed information and it's fixed information that you learn once and then you implement and get some experience doing it"
+    },
+    {
+      "start": 2143.38,
+      "end": 2155.02,
+      "text": "over a three to six month period, what really matters is your ideas because over time your black box variability is fixed."
+    },
+    {
+      "start": 2155.24,
+      "end": 2167.74,
+      "text": "The quality of your ideas is variable and the outcome, the P&L of your portfolio is variable and it's over time driven by the quality of your ideas."
+    },
+    {
+      "start": 2168.74,
+      "end": 2182.5,
+      "text": "So this is important stuff to understand, guys, as to why we put so much effort as professional traders into the fundamental trade idea generation processes,"
+    },
+    {
+      "start": 2182.5,
+      "end": 2196.28,
+      "text": "because we know over time that the outcome of our portfolios is going to be determined in the vast majority by the quality and abundance of our ideas."
+    },
+    {
+      "start": 2197.74,
+      "end": 2208.48,
+      "text": "So, of course, it's a lot of work, first of all, to initially understand the fundamental trade idea generation processes."
+    },
+    {
+      "start": 2209.48,
+      "end": 2220.06,
+      "text": "And of course, it's work as well on a continuous basis to ensure that you're generating a large amount,"
+    },
+    {
+      "start": 2220.3,
+      "end": 2230.46,
+      "text": "an abundance of an abundance of high quality ideas on repeat all the time in order to service a long, short portfolio."
+    },
+    {
+      "start": 2231.26,
+      "end": 2232.94,
+      "text": "But that's what you're here to learn."
+    },
+    {
+      "start": 2233.16,
+      "end": 2240.08,
+      "text": "You're here to learn the professional trader processes and the fundamental trade idea generation process."
+    },
+    {
+      "start": 2240.82,
+      "end": 2262.82,
+      "text": "Now, if you recall, our returns optimization visual from the beginning of the foundations of portfolio management section of the PTM video series,"
+    },
+    {
+      "start": 2263.56,
+      "end": 2275.32,
+      "text": "the optimization visual, the key parts of it, we have our view on GDP that is expressed either through the market sector or stocks."
+    },
+    {
+      "start": 2275.52,
+      "end": 2287.14,
+      "text": "And if we have a view that GDP is going to be positive, we're going to tend towards a long bias in the portfolio and we have choices."
+    },
+    {
+      "start": 2287.48,
+      "end": 2299.22,
+      "text": "We can either be along the market and get the market return, we can be along sectors that we believe are going to outperform in a positive GDP environment."
+    },
+    {
+      "start": 2299.22,
+      "end": 2311.18,
+      "text": "And in this situation, it's more than likely that we're going to be leaning towards stocks in our portfolio that we define as cyclicals that will outperform both the sector and the market."
+    },
+    {
+      "start": 2311.18,
+      "end": 2329.18,
+      "text": "And in this situation, it's more than likely that we're going to be leaning towards stocks in our portfolio that we define as cyclicals that will outperform both the sector and the market."
+    },
+    {
+      "start": 2329.22,
+      "end": 2341.5,
+      "text": "And in a positive growth environment, so we're probably going to be having more long cyclical positions in our portfolio."
+    },
+    {
+      "start": 2341.5,
+      "end": 2355.58,
+      "text": "On the flip side, if we believe that GDP is slowing down or there's going to be GDP contraction, we have our choices, we can be short the market, but as traders, that's not really our job."
+    },
+    {
+      "start": 2355.58,
+      "end": 2367.82,
+      "text": "Our job is to make a meaningful amount of money, whether the market goes up or down, so we could be short the market, but we choose not to because we want better returns."
+    },
+    {
+      "start": 2367.82,
+      "end": 2389.66,
+      "text": "We have the potential to be short sectors, but if we want to optimize, we want to be short the worst stocks in a particular sector that we believe is going to underperform the sector and the market in a GDP slowdown or dramatic slowdown or even contraction."
+    },
+    {
+      "start": 2389.82,
+      "end": 2400.06,
+      "text": "And in this situation, we would be short, more than likely more cyclicals as part of the overall portfolio."
+    },
+    {
+      "start": 2400.06,
+      "end": 2420.8,
+      "text": "But regardless of the GDP environment that we're in at any one moment in time, so whether we are in a prediction of a GDP growth environment or a prediction of a GDP contraction environment, it doesn't matter."
+    },
+    {
+      "start": 2420.8,
+      "end": 2431.8,
+      "text": "But we want to be short stocks that are going to be short stocks that are going to underperform both the sector and the market regardless of what GDP is going to be."
+    },
+    {
+      "start": 2431.8,
+      "end": 2455.8,
+      "text": "So pick a random moment in time, we want to be long stocks that go up and short stocks that go down, and the longs outperform the sector and the market and the shorts underperform the sector and the market."
+    },
+    {
+      "start": 2455.8,
+      "end": 2462.8,
+      "text": "So we get pure optimization in our portfolios."
+    },
+    {
+      "start": 2462.8,
+      "end": 2468.8,
+      "text": "That's the aim that we always want to be having."
+    },
+    {
+      "start": 2468.8,
+      "end": 2471.8,
+      "text": "Everything in between is inefficient."
+    },
+    {
+      "start": 2471.8,
+      "end": 2476.8,
+      "text": "So everything in yellow that you see on the screen is not optimizing."
+    },
+    {
+      "start": 2476.8,
+      "end": 2483.8,
+      "text": "So this is what we're trying to do all the time as traders."
+    },
+    {
+      "start": 2483.8,
+      "end": 2500.8,
+      "text": "We're trying to optimize our returns in any given market environment and any given GDP environment by being long and short stocks that are going to outperform."
+    },
+    {
+      "start": 2500.8,
+      "end": 2507.8,
+      "text": "So long and short stocks that are going to underperform."
+    },
+    {
+      "start": 2507.8,
+      "end": 2512.8,
+      "text": "Now, let's say in the example of having a long bias."
+    },
+    {
+      "start": 2512.8,
+      "end": 2522.8,
+      "text": "So let's say we're leaning towards a net long bias in the portfolio and we're deciding to be long cyclicals."
+    },
+    {
+      "start": 2522.8,
+      "end": 2526.8,
+      "text": "So overly long cyclicals in the portfolio."
+    },
+    {
+      "start": 2526.8,
+      "end": 2529.8,
+      "text": "Well, we just don't choose any type of cyclicals."
+    },
+    {
+      "start": 2529.8,
+      "end": 2532.8,
+      "text": "We have to be long the right cyclicals."
+    },
+    {
+      "start": 2532.8,
+      "end": 2537.8,
+      "text": "So good cyclical stocks for that moment in time."
+    },
+    {
+      "start": 2537.8,
+      "end": 2544.8,
+      "text": "And we can also, at the same time, be short bad cyclical stocks."
+    },
+    {
+      "start": 2544.8,
+      "end": 2548.8,
+      "text": "And or we can be short bad defensive stocks."
+    },
+    {
+      "start": 2548.8,
+      "end": 2555.8,
+      "text": "And even at the same time, we could actually be long some good defensive stocks."
+    },
+    {
+      "start": 2555.8,
+      "end": 2565.8,
+      "text": "The main point to take away here is that there's no hard and fast rules and there is no absolute definitive rule book."
+    },
+    {
+      "start": 2565.8,
+      "end": 2570.8,
+      "text": "There's simply best practices that we tend to lean towards."
+    },
+    {
+      "start": 2570.8,
+      "end": 2580.8,
+      "text": "At the end of the day, as traders, we just want to be long stocks that go up a lot and short stocks that go down a lot."
+    },
+    {
+      "start": 2580.8,
+      "end": 2584.8,
+      "text": "And we want to keep our volatility under control."
+    },
+    {
+      "start": 2584.8,
+      "end": 2597.8,
+      "text": "We want to have the right portfolio volatility, a decent, acceptable level of correlation and the right bias."
+    },
+    {
+      "start": 2597.8,
+      "end": 2606.8,
+      "text": "So assuming that we have our volatility, our portfolio volatility, correlation and bias in place."
+    },
+    {
+      "start": 2606.8,
+      "end": 2616.8,
+      "text": "This is all best achieved by first identifying all of the companies with good fundamentals when we're looking for potential longs."
+    },
+    {
+      "start": 2616.8,
+      "end": 2633.8,
+      "text": "We have to identify the positive and negative outliers in each sector and run an inventory of potential ideas."
+    },
+    {
+      "start": 2633.8,
+      "end": 2646.8,
+      "text": "And overlaying this with more processes, these potential ideas become actual trade ideas and then positions later."
+    },
+    {
+      "start": 2646.8,
+      "end": 2657.8,
+      "text": "So where do we start when we want to begin identifying positive and negative outliers in a particular sector?"
+    },
+    {
+      "start": 2657.8,
+      "end": 2670.8,
+      "text": "Well, we start with a very popular, well known metric in the financial markets called the price earnings ratio, the PE ratio."
+    },
+    {
+      "start": 2670.8,
+      "end": 2684.8,
+      "text": "When we're engaging in the bottom up process to identify potential trade ideas, the first metric that we always go to is the price earnings ratio."
+    },
+    {
+      "start": 2684.8,
+      "end": 2687.8,
+      "text": "When we're actually looking at a particular stock."
+    },
+    {
+      "start": 2687.8,
+      "end": 2689.8,
+      "text": "When we're actually looking at a particular stock."
+    },
+    {
+      "start": 2689.8,
+      "end": 2699.8,
+      "text": "So when we're analyzing a stock right now at any moment in time versus other stocks in its sector classification."
+    },
+    {
+      "start": 2699.8,
+      "end": 2715.8,
+      "text": "So the peers in its sector that it's measured against the P ratio is a statement of how the world currently values the company relative to its peers."
+    },
+    {
+      "start": 2715.8,
+      "end": 2717.8,
+      "text": "And it can be worked out in two ways."
+    },
+    {
+      "start": 2717.8,
+      "end": 2733.8,
+      "text": "So it can be worked out by taking the market capitalization of the company and dividing that by net income by after tax earnings, or it can be worked out by taking the stock price and dividing by earnings per share."
+    },
+    {
+      "start": 2733.8,
+      "end": 2750.8,
+      "text": "However, the way in which professional traders view and understand a P ratio is totally different to the way most people view it and understand it or the way they've been taught."
+    },
+    {
+      "start": 2750.8,
+      "end": 2760.8,
+      "text": "P ratio, it is one of the most misunderstood metrics in financial markets."
+    },
+    {
+      "start": 2760.8,
+      "end": 2771.8,
+      "text": "You'll be very, very surprised that even on the professional side, a lot of professional traders totally misunderstand the meaning of a P ratio."
+    },
+    {
+      "start": 2771.8,
+      "end": 2779.8,
+      "text": "Pretty much all retail traders have no idea what a PE measure really is."
+    },
+    {
+      "start": 2779.8,
+      "end": 2783.8,
+      "text": "Smart professional traders know exactly what it means."
+    },
+    {
+      "start": 2784.8,
+      "end": 2796.8,
+      "text": "And the key to understanding a price earnings ratio properly is how to interpret it correctly."
+    },
+    {
+      "start": 2796.8,
+      "end": 2799.8,
+      "text": "The problem is always with the interpretation."
+    },
+    {
+      "start": 2799.8,
+      "end": 2825.8,
+      "text": "So, amateur and retail traders and even bad pro traders and value investors are taught and they believe that a low PE ratio means a stock is, open quotes, cheap, close quotes, and a high PE means a stock is, open quotes, expensive, close quotes."
+    },
+    {
+      "start": 2825.8,
+      "end": 2826.8,
+      "text": "Now, good pro traders."
+    },
+    {
+      "start": 2826.8,
+      "end": 2831.8,
+      "text": "Now, good pro traders think of it very, very differently."
+    },
+    {
+      "start": 2831.8,
+      "end": 2849.8,
+      "text": "Their interpretation of a price earnings ratio is very different to the way amateur retail traders, bad pro traders, and even value investors have been taught or have been led to believe what a PE interpretation actually is."
+    },
+    {
+      "start": 2849.8,
+      "end": 2852.8,
+      "text": "Pro traders think about it very differently."
+    },
+    {
+      "start": 2852.8,
+      "end": 2853.8,
+      "text": "Pro traders think about it very differently."
+    },
+    {
+      "start": 2853.8,
+      "end": 2856.8,
+      "text": "So, let's think about this."
+    },
+    {
+      "start": 2856.8,
+      "end": 2870.8,
+      "text": "The way pro traders think of it, and the easiest way for you to think of it, is to think firstly, how much is the world prepared to pay for a company's forward earnings?"
+    },
+    {
+      "start": 2870.8,
+      "end": 2871.8,
+      "text": "Think of it."
+    },
+    {
+      "start": 2871.8,
+      "end": 2871.8,
+      "text": "Think of it in those terms."
+    },
+    {
+      "start": 2871.8,
+      "end": 2872.8,
+      "text": "Think of it in those terms."
+    },
+    {
+      "start": 2872.8,
+      "end": 2873.8,
+      "text": "Think of it in those terms."
+    },
+    {
+      "start": 2873.8,
+      "end": 2873.8,
+      "text": "Think of it in those terms."
+    },
+    {
+      "start": 2873.8,
+      "end": 2874.8,
+      "text": "Think of it in those terms."
+    },
+    {
+      "start": 2874.8,
+      "end": 2879.8,
+      "text": "So, how much is the world prepared to pay right now for a company's future earnings?"
+    },
+    {
+      "start": 2879.8,
+      "end": 2885.8,
+      "text": "Now, if that's the case, the opposite must also hold true."
+    },
+    {
+      "start": 2885.8,
+      "end": 2892.8,
+      "text": "How much is the world prepared to sell a company's forward earnings for?"
+    },
+    {
+      "start": 2892.8,
+      "end": 2903.8,
+      "text": "So, right now, how much is the world prepared to sell at this moment a company's future earnings for?"
+    },
+    {
+      "start": 2903.8,
+      "end": 2910.8,
+      "text": "These two statements must hold true at any one moment in time."
+    },
+    {
+      "start": 2910.8,
+      "end": 2911.8,
+      "text": "Why?"
+    },
+    {
+      "start": 2911.8,
+      "end": 2922.8,
+      "text": "Because we have a live trading market where a stock at any one moment in time has both buyers and sellers."
+    },
+    {
+      "start": 2922.8,
+      "end": 2937.8,
+      "text": "So, at any one moment in time, the stock has a price and the stock price is divided by the future EPS expectation of the company, of the market."
+    },
+    {
+      "start": 2937.8,
+      "end": 2955.8,
+      "text": "And the stock price is a representation of both what the world is willing to pay for a company's forward earnings and, simultaneously, what the world is prepared to sell a company's earnings for."
+    },
+    {
+      "start": 2956.8,
+      "end": 2962.8,
+      "text": "Now, it's important to get your head around this concept and make it stick."
+    },
+    {
+      "start": 2962.8,
+      "end": 2974.8,
+      "text": "The most common measure of price earnings ratio that is used in the professional world is a forward-looking PE ratio."
+    },
+    {
+      "start": 2974.8,
+      "end": 2977.8,
+      "text": "So, a one-year forward PE."
+    },
+    {
+      "start": 2977.8,
+      "end": 2996.8,
+      "text": "What we're doing with that is we're taking the market consensus, one-year forward EPS number, and then we're dividing the current stock price of today by that number, by the one-year forward EPS."
+    },
+    {
+      "start": 2996.8,
+      "end": 3002.8,
+      "text": "And that gives us the forward PE, the one-year forward PE."
+    },
+    {
+      "start": 3002.8,
+      "end": 3020.8,
+      "text": "So, for example, if we are sitting in a moment in time, that's say March 2023, the one-year forward earnings number would be the consensus mean number from research analysts for the year 2023."
+    },
+    {
+      "start": 3020.8,
+      "end": 3042.8,
+      "text": "In November 2023, in November 2021, as an example, because we're so much later in the year, and the year is nearly over, the one-year forward earnings number that would be used by professional traders would be the consensus mean number from analysts for the year 2022."
+    },
+    {
+      "start": 3042.8,
+      "end": 3051.8,
+      "text": "So, for the following year, as professional traders, we do not care about one-year lagging."
+    },
+    {
+      "start": 3051.8,
+      "end": 3064.8,
+      "text": "So, the trailing 12-month price earnings ratio, which is so popularized in financial markets, we are traders and we're trading on expectations of the future."
+    },
+    {
+      "start": 3064.8,
+      "end": 3065.8,
+      "text": "We look forwards."
+    },
+    {
+      "start": 3065.8,
+      "end": 3071.8,
+      "text": "So, it's very important to understand this major concept, guys."
+    },
+    {
+      "start": 3071.8,
+      "end": 3089.8,
+      "text": "Pro traders view the world and view the price earnings ratio in a very, very different way to the way retail traders view it and even bad pro traders and even value investors and investors."
+    },
+    {
+      "start": 3089.8,
+      "end": 3094.8,
+      "text": "So, let's get our head around this further."
+    },
+    {
+      "start": 3094.8,
+      "end": 3112.8,
+      "text": "We mentioned, if you think about the way a PE ratio is calculated, it's the live stock price of a particular stock divided by one-year forward-looking consensus mean earnings."
+    },
+    {
+      "start": 3112.8,
+      "end": 3128.8,
+      "text": "And stocks trade every day, Monday to Friday, and analyst EPS estimates obviously move much less frequently than the stocks obviously do because they're trading every day."
+    },
+    {
+      "start": 3128.8,
+      "end": 3137.8,
+      "text": "Analyst EPS estimates tend to move in clusters when expectations change."
+    },
+    {
+      "start": 3137.8,
+      "end": 3148.8,
+      "text": "Stock prices move based on the future expectations of earnings of the market."
+    },
+    {
+      "start": 3148.8,
+      "end": 3153.8,
+      "text": "Now, PE is both an absolute and a relative measure."
+    },
+    {
+      "start": 3153.8,
+      "end": 3162.8,
+      "text": "If you look at the table on the left-hand side of the screen, what we've got here is the oil and gas extraction sector."
+    },
+    {
+      "start": 3162.8,
+      "end": 3168.8,
+      "text": "And we've got market capitalization and we've got the forward-looking PE."
+    },
+    {
+      "start": 3168.8,
+      "end": 3173.8,
+      "text": "And we've filtered in the spreadsheet for the first year."
+    },
+    {
+      "start": 3173.8,
+      "end": 3177.8,
+      "text": "So, one-year forward-looking price earnings ratio."
+    },
+    {
+      "start": 3177.8,
+      "end": 3196.8,
+      "text": "Now, we've not put on the screen at this stage the EPS estimates themselves because, at the moment, this is an academic exercise so you can understand this concept of PE interpretation in isolation."
+    },
+    {
+      "start": 3196.8,
+      "end": 3207.8,
+      "text": "Now, if you look at the column with one-year forward-looking PE, so this is column L, we've highlighted two areas."
+    },
+    {
+      "start": 3207.8,
+      "end": 3219.8,
+      "text": "We've highlighted oil and gas extraction stocks that have high PE's and we have oil and gas extraction stocks highlighted with low PE's."
+    },
+    {
+      "start": 3219.8,
+      "end": 3223.8,
+      "text": "So, have a look at those areas on the screen."
+    },
+    {
+      "start": 3223.8,
+      "end": 3228.8,
+      "text": "What do you think of the stocks with PE ratios below 10?"
+    },
+    {
+      "start": 3228.8,
+      "end": 3231.8,
+      "text": "Do you think these stocks are cheap?"
+    },
+    {
+      "start": 3231.8,
+      "end": 3237.8,
+      "text": "What do you think of the stocks with PE ratios of above 40?"
+    },
+    {
+      "start": 3237.8,
+      "end": 3240.8,
+      "text": "Do you think these stocks are expensive?"
+    },
+    {
+      "start": 3240.8,
+      "end": 3243.8,
+      "text": "Have a think about that for a moment."
+    },
+    {
+      "start": 3243.8,
+      "end": 3269.8,
+      "text": "Meanwhile, just for the record, stocks that you have in the table there that have expected negative EPS, of course, if we divide a positive stock price and divide that by a negative EPS, so negative earnings per share means a company is losing money, they're going to have a negative PE ratio."
+    },
+    {
+      "start": 3269.8,
+      "end": 3274.8,
+      "text": "So, here we're just looking at positive PE ratios."
+    },
+    {
+      "start": 3274.8,
+      "end": 3294.8,
+      "text": "And we're looking at oil and gas extraction stocks with very high PE's, so PE's over 40, and then oil and gas extraction stocks with low PE's that are still positive, but low PE's that are under 10 times earnings."
+    },
+    {
+      "start": 3294.8,
+      "end": 3295.8,
+      "text": "So, have you made a decision?"
+    },
+    {
+      "start": 3295.8,
+      "end": 3298.8,
+      "text": "So, have you made a decision?"
+    },
+    {
+      "start": 3298.8,
+      "end": 3307.8,
+      "text": "What do you think of the stocks with PE ratios below 10 and what do you think of the stocks with PE ratios above 40?"
+    },
+    {
+      "start": 3307.8,
+      "end": 3313.8,
+      "text": "Are the ones below 10 cheap and are the ones above 40 expensive?"
+    },
+    {
+      "start": 3313.8,
+      "end": 3330.8,
+      "text": "Well, from a pro trader perspective, I can tell you right now, two of the biggest curse words you will ever make as a professional trader is to say a stock is either cheap or expensive."
+    },
+    {
+      "start": 3330.8,
+      "end": 3337.8,
+      "text": "So, let's go through a theoretical example so you can remember this concept for the rest of your life."
+    },
+    {
+      "start": 3337.8,
+      "end": 3344.8,
+      "text": "And the great news about this is that you only have to learn it once and then it's done."
+    },
+    {
+      "start": 3344.8,
+      "end": 3357.8,
+      "text": "All you have to do then is apply this concept in your initial quantitative processing phase when seeking out potential trade ideas."
+    },
+    {
+      "start": 3357.8,
+      "end": 3360.8,
+      "text": "So, let's run through this example."
+    },
+    {
+      "start": 3360.8,
+      "end": 3366.8,
+      "text": "And this is a theoretical example of a stock that is going down."
+    },
+    {
+      "start": 3366.8,
+      "end": 3385.8,
+      "text": "So, imagine we're sitting in the time of the year, January, and we're looking at a stock that has a price of $10 per share and one year forward earnings estimate of $1 per share."
+    },
+    {
+      "start": 3385.8,
+      "end": 3386.8,
+      "text": "What is the PE ratio?"
+    },
+    {
+      "start": 3386.8,
+      "end": 3387.8,
+      "text": "What is the PE ratio?"
+    },
+    {
+      "start": 3387.8,
+      "end": 3391.8,
+      "text": "Well, it's just 10 divided by one."
+    },
+    {
+      "start": 3391.8,
+      "end": 3394.8,
+      "text": "So, we have a PE of 10."
+    },
+    {
+      "start": 3394.8,
+      "end": 3399.8,
+      "text": "Now, let's say we fast forward to February."
+    },
+    {
+      "start": 3399.8,
+      "end": 3410.8,
+      "text": "So, we're in February the same year, just one month later, the company announces that they're not going to hit the market forecast."
+    },
+    {
+      "start": 3410.8,
+      "end": 3416.8,
+      "text": "They're not going to hit the $1 per share in their earnings for the year."
+    },
+    {
+      "start": 3416.8,
+      "end": 3423.8,
+      "text": "And they're citing some problems in the supply chain that they're working on fixing."
+    },
+    {
+      "start": 3423.8,
+      "end": 3437.8,
+      "text": "And now, their own forecast, the company forecast, they guide the market to $0.90 per share for their forward earnings for the year."
+    },
+    {
+      "start": 3437.8,
+      "end": 3438.8,
+      "text": "Question."
+    },
+    {
+      "start": 3438.8,
+      "end": 3447.8,
+      "text": "Where does the stock have to go in order to maintain its 10 times PE ratio?"
+    },
+    {
+      "start": 3447.8,
+      "end": 3448.8,
+      "text": "Where does it have to go?"
+    },
+    {
+      "start": 3448.8,
+      "end": 3452.8,
+      "text": "Yes, you've probably guessed right."
+    },
+    {
+      "start": 3452.8,
+      "end": 3460.8,
+      "text": "The stock to maintain its 10 times PE ratio is just $0.90 multiplied by 10."
+    },
+    {
+      "start": 3460.8,
+      "end": 3463.8,
+      "text": "So, it has to go to $9."
+    },
+    {
+      "start": 3463.8,
+      "end": 3466.8,
+      "text": "So, a full dollar comes off the share price."
+    },
+    {
+      "start": 3466.8,
+      "end": 3470.8,
+      "text": "Now, fast forward a month later."
+    },
+    {
+      "start": 3470.8,
+      "end": 3484.8,
+      "text": "Let's see what happens a month later in March when the company announces that they're no longer going to hit $0.90 a share for the year in their earnings."
+    },
+    {
+      "start": 3484.8,
+      "end": 3490.8,
+      "text": "And they're citing a material change in business conditions."
+    },
+    {
+      "start": 3490.8,
+      "end": 3497.8,
+      "text": "And they come out and they say, our new forecast is $0.65 a share for the year."
+    },
+    {
+      "start": 3497.8,
+      "end": 3503.8,
+      "text": "Where does the stock have to go to in order to maintain its 10 times PE ratio?"
+    },
+    {
+      "start": 3503.8,
+      "end": 3505.8,
+      "text": "Yes, you've guessed it."
+    },
+    {
+      "start": 3505.8,
+      "end": 3508.8,
+      "text": "It's just $0.65 multiplied by 10."
+    },
+    {
+      "start": 3508.8,
+      "end": 3511.8,
+      "text": "So, now the stock is $6.50."
+    },
+    {
+      "start": 3511.8,
+      "end": 3516.8,
+      "text": "So, we're down $3.50 from $10."
+    },
+    {
+      "start": 3516.8,
+      "end": 3517.8,
+      "text": "Now, fast forward again."
+    },
+    {
+      "start": 3517.8,
+      "end": 3522.8,
+      "text": "Let's go forward a few more months to May."
+    },
+    {
+      "start": 3522.8,
+      "end": 3531.8,
+      "text": "The company announces that they're not going to hit $0.65 a share for the year in their earnings."
+    },
+    {
+      "start": 3531.8,
+      "end": 3536.8,
+      "text": "And now, they're citing a loss of three key customer contracts."
+    },
+    {
+      "start": 3536.8,
+      "end": 3545.8,
+      "text": "And their new forecast for the year is $0.01 per share for this year's earnings."
+    },
+    {
+      "start": 3545.8,
+      "end": 3546.8,
+      "text": "Question."
+    },
+    {
+      "start": 3546.8,
+      "end": 3554.8,
+      "text": "Where does the stock have to go to in order to maintain its 10 times PE ratio?"
+    },
+    {
+      "start": 3554.8,
+      "end": 3558.8,
+      "text": "Yes, it's just $0.01 multiplied by 10."
+    },
+    {
+      "start": 3558.8,
+      "end": 3562.8,
+      "text": "The stock is now trading at $0.10."
+    },
+    {
+      "start": 3562.8,
+      "end": 3570.8,
+      "text": "So, earnings per share, which started off at $1, is down $0.99 to $0.01."
+    },
+    {
+      "start": 3570.8,
+      "end": 3572.8,
+      "text": "So, 99%."
+    },
+    {
+      "start": 3572.8,
+      "end": 3578.8,
+      "text": "And the stock price itself is down from $10 to $0.10."
+    },
+    {
+      "start": 3578.8,
+      "end": 3581.8,
+      "text": "So, that's down 99%."
+    },
+    {
+      "start": 3581.8,
+      "end": 3584.8,
+      "text": "So, the point here is very simple."
+    },
+    {
+      "start": 3584.8,
+      "end": 3598.8,
+      "text": "On the journey that the stock took from $10 to $0.01 from January till May, it was on 10 times earnings, 10 times PE ratio, all the way down."
+    },
+    {
+      "start": 3598.8,
+      "end": 3606.8,
+      "text": "So, at $10, when the stock was at $10, it was on 10 times expected future earnings for the year."
+    },
+    {
+      "start": 3606.8,
+      "end": 3619.8,
+      "text": "When the stock was at $9, it was on 10 times earnings, because there was $0.90 forecast for the year."
+    },
+    {
+      "start": 3619.8,
+      "end": 3623.8,
+      "text": "When the stock was at $6.50, it was on 10 times earnings, because $0.65 was forecast for the year."
+    },
+    {
+      "start": 3623.8,
+      "end": 3633.8,
+      "text": "And when it was at $0.10, it was on 10 times earnings, because there was $0.01 forecast for the year."
+    },
+    {
+      "start": 3633.8,
+      "end": 3636.8,
+      "text": "How can we put this more simply?"
+    },
+    {
+      "start": 3636.8,
+      "end": 3644.8,
+      "text": "A stock can be on 10 times earnings, or the same PE ratio, and keep going down forever."
+    },
+    {
+      "start": 3644.8,
+      "end": 3659.8,
+      "text": "Imagine somebody came along to you when the stock was at $10, and told you that this stock was cheap, because relative to other stocks in the sector, the PE ratio was low."
+    },
+    {
+      "start": 3659.8,
+      "end": 3667.8,
+      "text": "So, perhaps we had other stocks in the sector at the time that were on 40 times PE ratio."
+    },
+    {
+      "start": 3667.8,
+      "end": 3684.8,
+      "text": "And you listened to them, and you started believing that the stock at $10 was cheap, because it's on 10 times earnings, and it's cheap relative to other stocks in the sector, and you bought it."
+    },
+    {
+      "start": 3684.8,
+      "end": 3690.8,
+      "text": "Well, five months later, you would have been down 99%."
+    },
+    {
+      "start": 3690.8,
+      "end": 3703.8,
+      "text": "So, a stock can stay cheap forever, and it can keep going down, and be on the same multiple all the way down, because their earnings are going down."
+    },
+    {
+      "start": 3704.8,
+      "end": 3710.8,
+      "text": "Now, let's have a look at an example where a stock price goes up."
+    },
+    {
+      "start": 3710.8,
+      "end": 3720.8,
+      "text": "So, imagine we're sitting in January, stock has a price of $10 a share, one year forward earnings estimate, $1 a share."
+    },
+    {
+      "start": 3720.8,
+      "end": 3729.8,
+      "text": "So, the same situation as before, except this time, we're looking at an example where a stock can go up."
+    },
+    {
+      "start": 3729.8,
+      "end": 3733.8,
+      "text": "And we're looking at PE in this context."
+    },
+    {
+      "start": 3733.8,
+      "end": 3744.8,
+      "text": "So, let's say in February, that the company comes out, and they announce that they're going to beat $1 per share in their earnings for the year."
+    },
+    {
+      "start": 3744.8,
+      "end": 3749.8,
+      "text": "And they're citing supply chain improvements that are increasing efficiency."
+    },
+    {
+      "start": 3749.8,
+      "end": 3756.8,
+      "text": "So, now they forecast $1.20 a share for the year."
+    },
+    {
+      "start": 3756.8,
+      "end": 3762.8,
+      "text": "Where does the stock have to go in order to maintain its PE of 10?"
+    },
+    {
+      "start": 3762.8,
+      "end": 3764.8,
+      "text": "Where does it have to go to?"
+    },
+    {
+      "start": 3764.8,
+      "end": 3765.8,
+      "text": "Yes."
+    },
+    {
+      "start": 3765.8,
+      "end": 3767.8,
+      "text": "Yes, it goes to $12."
+    },
+    {
+      "start": 3767.8,
+      "end": 3780.8,
+      "text": "Now, in March, the company announces that they're going to beat $1.20 a share, citing material changes in business conditions in the last six weeks."
+    },
+    {
+      "start": 3780.8,
+      "end": 3787.8,
+      "text": "And now, they're upping their forecast, their EPS forecast for the year to $2 a share."
+    },
+    {
+      "start": 3787.8,
+      "end": 3794.8,
+      "text": "Where does the stock have to go to, to maintain the PE ratio of 10?"
+    },
+    {
+      "start": 3794.8,
+      "end": 3797.8,
+      "text": "Where does it have to go to?"
+    },
+    {
+      "start": 3797.8,
+      "end": 3801.8,
+      "text": "Yes, it goes to $20."
+    },
+    {
+      "start": 3801.8,
+      "end": 3813.8,
+      "text": "Now, what happens in May if the company announces that they're going to beat the previous $2 per share forecast for the year in their earnings?"
+    },
+    {
+      "start": 3813.8,
+      "end": 3821.8,
+      "text": "And they're citing a surprise upturn in the last six weeks in their peripheral European operations."
+    },
+    {
+      "start": 3821.8,
+      "end": 3826.8,
+      "text": "And they're now forecasting $4 for EPS for the year."
+    },
+    {
+      "start": 3826.8,
+      "end": 3833.8,
+      "text": "So, where does the stock have to go to, to maintain its 10 times PE ratio?"
+    },
+    {
+      "start": 3833.8,
+      "end": 3834.8,
+      "text": "Where?"
+    },
+    {
+      "start": 3834.8,
+      "end": 3835.8,
+      "text": "Where does it have to go to?"
+    },
+    {
+      "start": 3835.8,
+      "end": 3838.8,
+      "text": "Yes, it goes to $40."
+    },
+    {
+      "start": 3838.8,
+      "end": 3855.8,
+      "text": "So, imagine back in January, in this example, when a stock is going up, that one of your friends told you in January, when the stock was at $10, that this stock was expensive, and you should probably go short the stock."
+    },
+    {
+      "start": 3855.8,
+      "end": 3860.8,
+      "text": "The stock was expensive relative to other stocks in the sector."
+    },
+    {
+      "start": 3860.8,
+      "end": 3868.8,
+      "text": "So, let's say this was a company that had a high PE relative to other stocks in the sector."
+    },
+    {
+      "start": 3868.8,
+      "end": 3878.8,
+      "text": "So, let's say as a 10 PE, that was the highest PE in the sector, and the rest of the sector had PE's of five and six."
+    },
+    {
+      "start": 3878.8,
+      "end": 3884.8,
+      "text": "And your friend tells you that this stock on a 10 times PE is expensive."
+    },
+    {
+      "start": 3884.8,
+      "end": 3886.8,
+      "text": "And you shorted the stock."
+    },
+    {
+      "start": 3886.8,
+      "end": 3888.8,
+      "text": "You listened to your friend."
+    },
+    {
+      "start": 3888.8,
+      "end": 3890.8,
+      "text": "What would have happened?"
+    },
+    {
+      "start": 3890.8,
+      "end": 3896.8,
+      "text": "Well, you'd be down $30 per share by May."
+    },
+    {
+      "start": 3896.8,
+      "end": 3907.8,
+      "text": "So, from the long side, when you're looking at, for example, buying cheap stocks, and they keep going down forever, you can lose 100%."
+    },
+    {
+      "start": 3907.8,
+      "end": 3921.8,
+      "text": "Shorting expensive stocks can be even more dangerous because theoretically, if EPS is going up, the stock can keep going up and maintain its same PE ratio."
+    },
+    {
+      "start": 3921.8,
+      "end": 3926.8,
+      "text": "At $10, the stock was on 10 times earnings."
+    },
+    {
+      "start": 3926.8,
+      "end": 3930.8,
+      "text": "At $12, the stock was on 10 times earnings."
+    },
+    {
+      "start": 3930.8,
+      "end": 3935.8,
+      "text": "At $20, the stock was on 10 times earnings."
+    },
+    {
+      "start": 3935.8,
+      "end": 3940.8,
+      "text": "And at $40, the stock is on 10 times earnings."
+    },
+    {
+      "start": 3940.8,
+      "end": 3948.8,
+      "text": "And your friend, at $40 per share, will still be telling you that the stock is expensive."
+    },
+    {
+      "start": 3948.8,
+      "end": 3952.8,
+      "text": "So, the point here is very, very simple, guys."
+    },
+    {
+      "start": 3952.8,
+      "end": 3969.8,
+      "text": "Always, always, always remember, for stocks that are going down, a stock can go from any price to its lowest price possible and still maintain the same PE ratio."
+    },
+    {
+      "start": 3971.8,
+      "end": 3992.8,
+      "text": "And by the way, guys, this is not just limited to the stock market."
+    },
+    {
+      "start": 3993.8,
+      "end": 3995.8,
+      "text": "This happens everywhere."
+    },
+    {
+      "start": 3995.8,
+      "end": 3997.8,
+      "text": "This happens in real life."
+    },
+    {
+      "start": 3998.8,
+      "end": 4008.8,
+      "text": "Let's go through an example as an analogy of how this occurs everywhere, how this occurs in real life."
+    },
+    {
+      "start": 4008.8,
+      "end": 4015.8,
+      "text": "Let's go through this analogy of buying your wife or girlfriend lingerie for Valentine's Day."
+    },
+    {
+      "start": 4015.8,
+      "end": 4025.8,
+      "text": "So, I want you to imagine that it's 6pm on Valentine's Day and you're leaving the office or you're leaving your place of work"
+    },
+    {
+      "start": 4025.8,
+      "end": 4031.8,
+      "text": "You haven't gotten your wife or girlfriend a Valentine's gift yet."
+    },
+    {
+      "start": 4031.8,
+      "end": 4039.8,
+      "text": "So, you're about to leave your workplace and you're planning to go to a department store on the way home to buy some lingerie."
+    },
+    {
+      "start": 4040.8,
+      "end": 4048.8,
+      "text": "And when you actually get to the store and all of the lingerie, when you get there, you find out it's sold out."
+    },
+    {
+      "start": 4049.8,
+      "end": 4057.8,
+      "text": "So, the whole area of lingerie in the department store is empty, except for three items."
+    },
+    {
+      "start": 4057.8,
+      "end": 4064.8,
+      "text": "And you're in a bit of a difficult situation here because you have to buy one of them."
+    },
+    {
+      "start": 4064.8,
+      "end": 4072.8,
+      "text": "Your wife or girlfriend is literally expecting you home in 30 minutes time for dinner."
+    },
+    {
+      "start": 4072.8,
+      "end": 4078.8,
+      "text": "And there's no way you can return home without a Valentine's gift."
+    },
+    {
+      "start": 4078.8,
+      "end": 4085.8,
+      "text": "So, there's three items on the hangers in the lingerie section of the department store."
+    },
+    {
+      "start": 4085.8,
+      "end": 4087.8,
+      "text": "And you've got to buy one."
+    },
+    {
+      "start": 4087.8,
+      "end": 4090.8,
+      "text": "And you're going to have to leave very quickly."
+    },
+    {
+      "start": 4090.8,
+      "end": 4094.8,
+      "text": "You're going to have to get home very quickly with a gift."
+    },
+    {
+      "start": 4094.8,
+      "end": 4096.8,
+      "text": "Otherwise, there's going to be trouble."
+    },
+    {
+      "start": 4096.8,
+      "end": 4100.8,
+      "text": "Which one do you choose?"
+    },
+    {
+      "start": 4100.8,
+      "end": 4103.8,
+      "text": "Lingerie A is priced at $50."
+    },
+    {
+      "start": 4103.8,
+      "end": 4107.8,
+      "text": "Lingerie B is priced at $150."
+    },
+    {
+      "start": 4107.8,
+      "end": 4111.8,
+      "text": "Lingerie C is priced at $500."
+    },
+    {
+      "start": 4111.8,
+      "end": 4115.8,
+      "text": "You have to make a decision right now which one to buy."
+    },
+    {
+      "start": 4115.8,
+      "end": 4118.8,
+      "text": "Which one do you actually buy?"
+    },
+    {
+      "start": 4118.8,
+      "end": 4119.8,
+      "text": "Think about it."
+    },
+    {
+      "start": 4119.8,
+      "end": 4127.8,
+      "text": "Now, warning, don't fast forward the video until you've made a decision."
+    },
+    {
+      "start": 4127.8,
+      "end": 4131.8,
+      "text": "And remember, if you fail to make a decision."
+    },
+    {
+      "start": 4131.8,
+      "end": 4140.8,
+      "text": "So, if you don't make a decision, then it just means you're going home without a Valentine's gift for your wife or girlfriend."
+    },
+    {
+      "start": 4140.8,
+      "end": 4142.8,
+      "text": "You're going to be in trouble."
+    },
+    {
+      "start": 4142.8,
+      "end": 4162.8,
+      "text": "So, also, by the way, for female viewers of the PTM video series, if you're watching this, please just imagine yourself on the other side, waiting at home, waiting for your husband or boyfriend to come home with your Valentine's gift."
+    },
+    {
+      "start": 4162.8,
+      "end": 4167.8,
+      "text": "Imagine yourself as the receiver of the gift."
+    },
+    {
+      "start": 4167.8,
+      "end": 4174.8,
+      "text": "What would you want your husband or boyfriend to bring back with him?"
+    },
+    {
+      "start": 4174.8,
+      "end": 4177.8,
+      "text": "Think about this, guys."
+    },
+    {
+      "start": 4177.8,
+      "end": 4180.8,
+      "text": "Think about this for a few moments."
+    },
+    {
+      "start": 4180.8,
+      "end": 4183.8,
+      "text": "I'll give you another 10 seconds."
+    },
+    {
+      "start": 4183.8,
+      "end": 4186.8,
+      "text": "Lingerie A, $50."
+    },
+    {
+      "start": 4186.8,
+      "end": 4189.8,
+      "text": "Lingerie B, $150."
+    },
+    {
+      "start": 4189.8,
+      "end": 4192.8,
+      "text": "Lingerie C, $500."
+    },
+    {
+      "start": 4192.8,
+      "end": 4195.8,
+      "text": "What have you chosen?"
+    },
+    {
+      "start": 4195.8,
+      "end": 4203.8,
+      "text": "Well, if you went for lingerie A, you have gone for what you perceive to be the cheap option."
+    },
+    {
+      "start": 4203.8,
+      "end": 4208.8,
+      "text": "And, of course, we always have cheap and expensive in our quotations."
+    },
+    {
+      "start": 4208.8,
+      "end": 4215.8,
+      "text": "If you've gone for lingerie C, you've gone for what you perceive to be the expensive option."
+    },
+    {
+      "start": 4215.8,
+      "end": 4225.8,
+      "text": "And if you've gone for lingerie B, you've gone for what you perceive to be the middle of the road, average priced or sensible option."
+    },
+    {
+      "start": 4225.8,
+      "end": 4235.8,
+      "text": "The key here is, guys, is that price in everything is a signal of quality, no matter what we buy."
+    },
+    {
+      "start": 4235.8,
+      "end": 4245.8,
+      "text": "There is a reason why or multiple reasons why something is priced where it is priced."
+    },
+    {
+      "start": 4245.8,
+      "end": 4257.8,
+      "text": "What if I told you that lingerie A is 70% polyester, 30% cotton, and is the least desired brand on the market?"
+    },
+    {
+      "start": 4257.8,
+      "end": 4267.8,
+      "text": "What if I told you that the best you can hope for is that you will get three uses out of lingerie A, and that's the best case scenario?"
+    },
+    {
+      "start": 4267.8,
+      "end": 4277.8,
+      "text": "What if I told you that your wife or girlfriend will probably not even want to wear it anyway, because it's cheap crap and it's undesirable."
+    },
+    {
+      "start": 4277.8,
+      "end": 4291.8,
+      "text": "And in 30 minutes time, when you get home, she's literally going to slap you around the face and start crying when you present it to her as her special Valentine's gift."
+    },
+    {
+      "start": 4291.8,
+      "end": 4306.8,
+      "text": "You're going to see and perceive lingerie A completely differently than when you just made a decision based on price, because there's a reason why it's $50."
+    },
+    {
+      "start": 4306.8,
+      "end": 4321.8,
+      "text": "Additionally, what if I told you that the expensive lingerie C at $500 is 100% pure silk and is the most desirable brand on the market?"
+    },
+    {
+      "start": 4321.8,
+      "end": 4328.8,
+      "text": "What if I also told you that you will easily get 50 uses out of lingerie C?"
+    },
+    {
+      "start": 4328.8,
+      "end": 4331.8,
+      "text": "And also the intangible benefits."
+    },
+    {
+      "start": 4331.8,
+      "end": 4344.8,
+      "text": "What if I told you that when you get home and you gift lingerie C to your wife or girlfriend, she's going to be so overwhelmed and excited that she's going to get changed straight into it."
+    },
+    {
+      "start": 4344.8,
+      "end": 4357.8,
+      "text": "And she's going to wear it with a pair of high heels while cooking you Valentine's dinner, give you the night of your life and you will be to her the best husband or boyfriend in the world."
+    },
+    {
+      "start": 4357.8,
+      "end": 4361.8,
+      "text": "Well, for at least the next three months."
+    },
+    {
+      "start": 4361.8,
+      "end": 4366.8,
+      "text": "Of course, option A no longer seems cheap."
+    },
+    {
+      "start": 4366.8,
+      "end": 4369.8,
+      "text": "It is now very expensive."
+    },
+    {
+      "start": 4369.8,
+      "end": 4373.8,
+      "text": "And option C is no longer expensive."
+    },
+    {
+      "start": 4373.8,
+      "end": 4375.8,
+      "text": "It's now very cheap."
+    },
+    {
+      "start": 4376.8,
+      "end": 4381.8,
+      "text": "Now, just as a side note, because we are doing this from the male perspective."
+    },
+    {
+      "start": 4381.8,
+      "end": 4393.8,
+      "text": "If you're a female watching this and you were doing it from the perspective of being at home and waiting for your husband or boyfriend to come home with the lingerie."
+    },
+    {
+      "start": 4393.8,
+      "end": 4397.8,
+      "text": "If you chose lingerie C, no problems there."
+    },
+    {
+      "start": 4397.8,
+      "end": 4398.8,
+      "text": "You have high standards."
+    },
+    {
+      "start": 4399.8,
+      "end": 4414.8,
+      "text": "If you chose lingerie A, I think you need to be asking yourself some serious questions in life and probably knocking your current husband or boyfriend into shape and maybe think about raising your standards."
+    },
+    {
+      "start": 4414.8,
+      "end": 4421.8,
+      "text": "So, jokes aside guys, price is a signal of quality, okay?"
+    },
+    {
+      "start": 4421.8,
+      "end": 4425.8,
+      "text": "And it's no different in the stock market with PE ratio."
+    },
+    {
+      "start": 4425.8,
+      "end": 4426.8,
+      "text": "It's no different."
+    },
+    {
+      "start": 4426.8,
+      "end": 4437.8,
+      "text": "The multiple that the market pays for a stock is a signal of the quality of the earnings, of the quality of the stock."
+    },
+    {
+      "start": 4437.8,
+      "end": 4445.8,
+      "text": "You will be going into the live stock market where prices are live every day."
+    },
+    {
+      "start": 4445.8,
+      "end": 4455.8,
+      "text": "And people, some very smart people in the world are paying for, open quotes, expensive stocks at a premium."
+    },
+    {
+      "start": 4455.8,
+      "end": 4460.8,
+      "text": "And they are selling cheap stocks at a discount."
+    },
+    {
+      "start": 4460.8,
+      "end": 4465.8,
+      "text": "And you are going into the market, to the live market every day."
+    },
+    {
+      "start": 4465.8,
+      "end": 4478.8,
+      "text": "And if you decide that your strategy is to buy cheap stocks and sell expensive stocks, your career is probably going to be very short lived."
+    },
+    {
+      "start": 4478.8,
+      "end": 4481.8,
+      "text": "At some point, you will blow up."
+    },
+    {
+      "start": 4481.8,
+      "end": 4494.8,
+      "text": "At this stage in the quantitative process, when you're analyzing relative PE ratios, you always make the following assumptions."
+    },
+    {
+      "start": 4494.8,
+      "end": 4500.8,
+      "text": "There's nothing you know that the market doesn't already know."
+    },
+    {
+      "start": 4500.8,
+      "end": 4507.8,
+      "text": "The market can stay irrational longer than you can stay solvent."
+    },
+    {
+      "start": 4507.8,
+      "end": 4519.8,
+      "text": "So, think of the $10 stock example from earlier, when the stock was going up from $10 to $12 to $20 to $40."
+    },
+    {
+      "start": 4519.8,
+      "end": 4524.8,
+      "text": "And it was always on 10 times earnings."
+    },
+    {
+      "start": 4524.8,
+      "end": 4539.8,
+      "text": "When we walked into the market, your friend was telling you that the stock was expensive at $10 because other stocks in the sector had a PE ratio of 5 and 6."
+    },
+    {
+      "start": 4539.8,
+      "end": 4542.8,
+      "text": "So, it traded on a big premium to the sector."
+    },
+    {
+      "start": 4542.8,
+      "end": 4543.8,
+      "text": "So, it traded on a big premium to the sector."
+    },
+    {
+      "start": 4543.8,
+      "end": 4548.8,
+      "text": "Therefore, it must be, open quotes, expensive, close quotes."
+    },
+    {
+      "start": 4548.8,
+      "end": 4550.8,
+      "text": "But guess what?"
+    },
+    {
+      "start": 4550.8,
+      "end": 4554.8,
+      "text": "Every day in the market, somebody was buying that stock at $10."
+    },
+    {
+      "start": 4554.8,
+      "end": 4557.8,
+      "text": "And of course, people were selling it as well."
+    },
+    {
+      "start": 4557.8,
+      "end": 4560.8,
+      "text": "Otherwise, the people buying it couldn't buy stock."
+    },
+    {
+      "start": 4560.8,
+      "end": 4567.8,
+      "text": "There's liquidity and there's buyers at $10 and sellers at $10."
+    },
+    {
+      "start": 4567.8,
+      "end": 4572.8,
+      "text": "But the point is, the price is a rating."
+    },
+    {
+      "start": 4572.8,
+      "end": 4578.8,
+      "text": "And the rating, the PE ratio, is a signal of the quality of the company."
+    },
+    {
+      "start": 4578.8,
+      "end": 4581.8,
+      "text": "And buyers are prepared to pay a premium."
+    },
+    {
+      "start": 4582.8,
+      "end": 4591.8,
+      "text": "That $10 stock at that moment in time, in January, at the beginning of the year, is like the $500 lingerie."
+    },
+    {
+      "start": 4591.8,
+      "end": 4594.8,
+      "text": "And your friend tells you, you should go and short it."
+    },
+    {
+      "start": 4594.8,
+      "end": 4597.8,
+      "text": "So, you go into the market and you short it."
+    },
+    {
+      "start": 4597.8,
+      "end": 4599.8,
+      "text": "Well, guess what happens?"
+    },
+    {
+      "start": 4599.8,
+      "end": 4601.8,
+      "text": "Stock goes to $12."
+    },
+    {
+      "start": 4601.8,
+      "end": 4603.8,
+      "text": "Stock goes to $20."
+    },
+    {
+      "start": 4603.8,
+      "end": 4604.8,
+      "text": "Stock goes to $40."
+    },
+    {
+      "start": 4604.8,
+      "end": 4609.8,
+      "text": "And it's always, open quotes, expensive, close quotes."
+    },
+    {
+      "start": 4609.8,
+      "end": 4613.8,
+      "text": "And he's still telling you it's expensive when it's $40."
+    },
+    {
+      "start": 4614.8,
+      "end": 4622.8,
+      "text": "So, when you walked into the market at $10 and you and your friend decided"
+    },
+    {
+      "start": 4622.8,
+      "end": 4628.8,
+      "text": "that this stock must be a short because it's trading on 10 times earnings."
+    },
+    {
+      "start": 4628.8,
+      "end": 4635.8,
+      "text": "Do you think the market doesn't know that the stock is trading on a premium to the sector?"
+    },
+    {
+      "start": 4636.8,
+      "end": 4637.8,
+      "text": "Of course they do."
+    },
+    {
+      "start": 4637.8,
+      "end": 4642.8,
+      "text": "There's nothing you know that the market doesn't already know."
+    },
+    {
+      "start": 4642.8,
+      "end": 4647.8,
+      "text": "They know it's on 10 times earnings and they are prepared to pay for it."
+    },
+    {
+      "start": 4647.8,
+      "end": 4649.8,
+      "text": "They're not stupid."
+    },
+    {
+      "start": 4649.8,
+      "end": 4657.8,
+      "text": "The market is full of very smart people and there's nothing you know that the market doesn't already know."
+    },
+    {
+      "start": 4657.8,
+      "end": 4659.8,
+      "text": "So, understand that."
+    },
+    {
+      "start": 4660.8,
+      "end": 4665.8,
+      "text": "Secondly, the market can stay irrational longer than you can stay solvent."
+    },
+    {
+      "start": 4665.8,
+      "end": 4672.8,
+      "text": "So, you can see a stock trading on a big premium to the rest of the sector."
+    },
+    {
+      "start": 4672.8,
+      "end": 4674.8,
+      "text": "Everyone knows the premium."
+    },
+    {
+      "start": 4674.8,
+      "end": 4676.8,
+      "text": "Everyone in the market knows the multiple."
+    },
+    {
+      "start": 4676.8,
+      "end": 4677.8,
+      "text": "Okay?"
+    },
+    {
+      "start": 4677.8,
+      "end": 4681.8,
+      "text": "And you go in and you fight the market."
+    },
+    {
+      "start": 4681.8,
+      "end": 4684.8,
+      "text": "You say, I think the market is wrong."
+    },
+    {
+      "start": 4684.8,
+      "end": 4687.8,
+      "text": "Everyone in the market is incorrect."
+    },
+    {
+      "start": 4687.8,
+      "end": 4697.8,
+      "text": "Me, little Jimmy sitting at home in my home office in my mum's basement knows more than the market."
+    },
+    {
+      "start": 4697.8,
+      "end": 4702.8,
+      "text": "I know this stock is expensive, so I'm going to short it."
+    },
+    {
+      "start": 4702.8,
+      "end": 4704.8,
+      "text": "Well, guess what?"
+    },
+    {
+      "start": 4704.8,
+      "end": 4712.8,
+      "text": "Even if it's irrational, even if you think it's irrational, the market can stay irrational longer than you can stay solvent."
+    },
+    {
+      "start": 4712.8,
+      "end": 4720.8,
+      "text": "The stock can keep going up on the same multiple and it can be totally justified why it keeps going up."
+    },
+    {
+      "start": 4720.8,
+      "end": 4725.8,
+      "text": "And you just lose all your money because you argued with the market."
+    },
+    {
+      "start": 4725.8,
+      "end": 4730.8,
+      "text": "And this happens to retail traders all the time."
+    },
+    {
+      "start": 4731.8,
+      "end": 4739.8,
+      "text": "We see it all the time when retail traders come to ITPM and tell us that they've lost money elsewhere."
+    },
+    {
+      "start": 4740.8,
+      "end": 4756.8,
+      "text": "And they were essentially trying to take on the market by shorting so-called expensive stocks or even buying so-called cheap stocks and using a lot of leverage to do so."
+    },
+    {
+      "start": 4756.8,
+      "end": 4759.8,
+      "text": "And they just get completely run over."
+    },
+    {
+      "start": 4759.8,
+      "end": 4762.8,
+      "text": "To be fair, it's mostly not their fault."
+    },
+    {
+      "start": 4762.8,
+      "end": 4771.8,
+      "text": "They've just been taught totally incorrectly about what PE ratio actually is and how to understand stock valuation."
+    },
+    {
+      "start": 4771.8,
+      "end": 4775.8,
+      "text": "But don't worry, you're here to learn this stuff."
+    },
+    {
+      "start": 4775.8,
+      "end": 4787.8,
+      "text": "And like I said earlier, when you learn this once and you understand it properly, you only have to learn it once and process it and make it stick."
+    },
+    {
+      "start": 4787.8,
+      "end": 4808.8,
+      "text": "Make the concept stick, then you have to put it into practice over and over again and keep practicing valuing companies and understanding relative valuations of stocks and how to interpret them properly."
+    },
+    {
+      "start": 4809.8,
+      "end": 4815.8,
+      "text": "Now, we're going to go through a real example here from the market."
+    },
+    {
+      "start": 4816.8,
+      "end": 4825.8,
+      "text": "We're going to be looking at Wingstop, a stock called Wingstop, and everyone knows McDonald's."
+    },
+    {
+      "start": 4825.8,
+      "end": 4839.8,
+      "text": "So what you're looking at on the screen here is a snapshot of the food services and drinking places subsector from accommodation and food services."
+    },
+    {
+      "start": 4839.8,
+      "end": 4848.8,
+      "text": "So the main NAICS sector is the accommodation and food services sector."
+    },
+    {
+      "start": 4848.8,
+      "end": 4852.8,
+      "text": "And the subsector name is food services and drinking places."
+    },
+    {
+      "start": 4852.8,
+      "end": 4858.8,
+      "text": "And this screenshot is taken in the first quarter of 2021."
+    },
+    {
+      "start": 4858.8,
+      "end": 4865.8,
+      "text": "And we're going through a process here of identifying outliers."
+    },
+    {
+      "start": 4865.8,
+      "end": 4871.8,
+      "text": "So we look, first of all, for high PE stocks and low PE stocks."
+    },
+    {
+      "start": 4871.8,
+      "end": 4876.8,
+      "text": "And we start to make an interpretation of the landscape of this sector."
+    },
+    {
+      "start": 4876.8,
+      "end": 4885.8,
+      "text": "So something else we've included as well, we've obviously included market cap as well."
+    },
+    {
+      "start": 4885.8,
+      "end": 4888.8,
+      "text": "So you can see market cap there in the columns."
+    },
+    {
+      "start": 4888.8,
+      "end": 4894.8,
+      "text": "And we've got the first year, one year forward price earnings ratio."
+    },
+    {
+      "start": 4894.8,
+      "end": 4903.8,
+      "text": "We've got two years forward PE ratio, and we've got three years forward PE ratio."
+    },
+    {
+      "start": 4903.8,
+      "end": 4910.8,
+      "text": "But we haven't included EPS here for 2021."
+    },
+    {
+      "start": 4910.8,
+      "end": 4915.8,
+      "text": "We're just doing this for simplicity to show the example of how it works first."
+    },
+    {
+      "start": 4915.8,
+      "end": 4928.8,
+      "text": "So for Wingstop, we can see Wingstop, the ticker WING, is on 100 times 2021 earnings."
+    },
+    {
+      "start": 4928.8,
+      "end": 4935.8,
+      "text": "And McDonald's MCD is on 25 times 2021 earnings."
+    },
+    {
+      "start": 4935.8,
+      "end": 4943.8,
+      "text": "And we can run a simple backtest of what things looked like a year ago as an example."
+    },
+    {
+      "start": 4943.8,
+      "end": 4952.8,
+      "text": "So in the previous year, in 2020, to see what the multiples were and how the stock prices performed."
+    },
+    {
+      "start": 4952.8,
+      "end": 4960.8,
+      "text": "So similar to our $10 example of stocks that stay on the same multiple when they go up"
+    },
+    {
+      "start": 4960.8,
+      "end": 4963.8,
+      "text": "and stay on the same multiple when they go down."
+    },
+    {
+      "start": 4963.8,
+      "end": 4968.8,
+      "text": "Obviously, it's a bit more messy in the real world, but that's the concept."
+    },
+    {
+      "start": 4968.8,
+      "end": 4975.8,
+      "text": "And I want to show you a real example of this so you understand it and the concept actually sticks."
+    },
+    {
+      "start": 4975.8,
+      "end": 4978.8,
+      "text": "So let's run a little backtest."
+    },
+    {
+      "start": 4978.8,
+      "end": 4981.8,
+      "text": "Let's run a little role play."
+    },
+    {
+      "start": 4981.8,
+      "end": 4988.8,
+      "text": "There's a chart on the screen here of the S&P 500 in 2020."
+    },
+    {
+      "start": 4988.8,
+      "end": 5003.8,
+      "text": "And we can see the lows put in on March 23rd, 2020 in the S&P 500 during the COVID sell-off."
+    },
+    {
+      "start": 5003.8,
+      "end": 5010.8,
+      "text": "So imagine for a moment that you're sitting at your desk on March 23rd, 2020."
+    },
+    {
+      "start": 5010.8,
+      "end": 5013.8,
+      "text": "The whole world is melting down."
+    },
+    {
+      "start": 5013.8,
+      "end": 5015.8,
+      "text": "The whole world's burning around you."
+    },
+    {
+      "start": 5015.8,
+      "end": 5018.8,
+      "text": "And we're at the COVID lows."
+    },
+    {
+      "start": 5018.8,
+      "end": 5020.8,
+      "text": "Obviously, you don't know that at the time."
+    },
+    {
+      "start": 5020.8,
+      "end": 5027.8,
+      "text": "So everything's gone a little bit crazy, but you're a well-trained trader and you understand valuation."
+    },
+    {
+      "start": 5027.8,
+      "end": 5033.8,
+      "text": "And you're thinking, it's time to put some money to work."
+    },
+    {
+      "start": 5033.8,
+      "end": 5035.8,
+      "text": "What do you go and buy?"
+    },
+    {
+      "start": 5035.8,
+      "end": 5045.8,
+      "text": "Well, you obviously at the time on March 23rd at the COVID lows, because everything was getting hammered."
+    },
+    {
+      "start": 5045.8,
+      "end": 5052.8,
+      "text": "You would have been faced with a multitude of choices of stocks to buy across the market."
+    },
+    {
+      "start": 5052.8,
+      "end": 5061.8,
+      "text": "But just imagine at the time you were looking in the food services and drinking places sector for stocks to buy."
+    },
+    {
+      "start": 5061.8,
+      "end": 5062.8,
+      "text": "What do you buy?"
+    },
+    {
+      "start": 5062.8,
+      "end": 5072.8,
+      "text": "Well, you will have been presented with a very similar table to the one that we took a snapshot of in Q1 2021."
+    },
+    {
+      "start": 5073.8,
+      "end": 5077.8,
+      "text": "There will have been lots of high PE stocks and low PE stocks."
+    },
+    {
+      "start": 5077.8,
+      "end": 5089.8,
+      "text": "And at the time, obviously, near the COVID lows, going into them and out of them, EPS estimates were being revised down aggressively across the board."
+    },
+    {
+      "start": 5089.8,
+      "end": 5102.8,
+      "text": "And both Wingstop and McDonald's had positive EPS estimates on March 23rd, 2020 at the S&P 500 lows."
+    },
+    {
+      "start": 5102.8,
+      "end": 5117.8,
+      "text": "So, if we look at the table below and we look at the stock price, for example, of Wing, on the 23rd of March 2020, Wing's stock price was $62.76."
+    },
+    {
+      "start": 5117.8,
+      "end": 5132.8,
+      "text": "On that day, research analysts in the market had a consensus estimate for 2020 EPS for Wing of 83 cents earnings."
+    },
+    {
+      "start": 5132.8,
+      "end": 5151.8,
+      "text": "Forward looking, one year forward EPS estimate for 2020, which would give Wing a price earnings ratio on that day, the 23rd of March of 75.61."
+    },
+    {
+      "start": 5151.8,
+      "end": 5168.8,
+      "text": "So, we take $62.76, the stock price on the day, and divide that by 0.83, so the 83 cents, and we get a PE ratio of 75.61."
+    },
+    {
+      "start": 5169.8,
+      "end": 5180.8,
+      "text": "Now, if we look at McDonald's, the stock price on the 23rd of March 2020, was $137.10."
+    },
+    {
+      "start": 5180.8,
+      "end": 5197.8,
+      "text": "The EPS estimate, the consensus forward looking estimate for EPS for 2020 for McDonald's from research analysts, was $8.20 on the 23rd of March."
+    },
+    {
+      "start": 5197.8,
+      "end": 5209.8,
+      "text": "Which, on the 23rd of March, would mean that McDonald's had a PE ratio of 16.72."
+    },
+    {
+      "start": 5209.8,
+      "end": 5219.8,
+      "text": "Now, we've added another column in there, which is the stock prices of the two stocks, Wing and McDonald's, on the 15th of June."
+    },
+    {
+      "start": 5219.8,
+      "end": 5230.8,
+      "text": "Wing on the 15th of June was $120.14, and McDonald's was $189.49."
+    },
+    {
+      "start": 5230.8,
+      "end": 5239.8,
+      "text": "That's what their stock prices were on that day, on the 15th of June 2020."
+    },
+    {
+      "start": 5239.8,
+      "end": 5242.8,
+      "text": "And the reason we put those in there will become apparent very soon."
+    },
+    {
+      "start": 5242.8,
+      "end": 5249.8,
+      "text": "Now, we've also calculated something at the bottom of the screen there, which is called the PE differential."
+    },
+    {
+      "start": 5249.8,
+      "end": 5263.8,
+      "text": "And we've taken that from our previous table for Q1 2021, where Wing had a PE ratio of 99.6, and McDonald's of 25.11."
+    },
+    {
+      "start": 5263.8,
+      "end": 5284.8,
+      "text": "And to work out the differential, we simply divide the Wing PE ratio of 99.6 by the McDonald's PE ratio of 25.11, which gives us a factor of 3.96."
+    },
+    {
+      "start": 5284.8,
+      "end": 5299.8,
+      "text": "Now, that, if we multiply it by 100, gives us a 396% premium that Wing is trading on a PE premium versus McDonald's."
+    },
+    {
+      "start": 5299.8,
+      "end": 5303.8,
+      "text": "So, that is in Q1 2021."
+    },
+    {
+      "start": 5303.8,
+      "end": 5315.8,
+      "text": "Wing is trading in Q1 2021 on a 396% differential PE premium to McDonald's."
+    },
+    {
+      "start": 5315.8,
+      "end": 5321.8,
+      "text": "So, as we go through this example, just try to remember all of the data."
+    },
+    {
+      "start": 5321.8,
+      "end": 5333.8,
+      "text": "But just recall in the back of your mind, the stock prices of Wing and McDonald's on June 15, 2020."
+    },
+    {
+      "start": 5333.8,
+      "end": 5344.8,
+      "text": "And the PE differential of Wing versus McDonald's, the 396% in Q1 2021."
+    },
+    {
+      "start": 5344.8,
+      "end": 5358.8,
+      "text": "Now, we can see our stock price and EPS estimates from the market, the consensus estimates, together for 2020 on a chart here."
+    },
+    {
+      "start": 5358.8,
+      "end": 5361.8,
+      "text": "So, first of all, we're looking at Wing stop."
+    },
+    {
+      "start": 5361.8,
+      "end": 5368.8,
+      "text": "So, we're looking at the whole of 2020 here, and also the first part of 2021."
+    },
+    {
+      "start": 5368.8,
+      "end": 5381.8,
+      "text": "And we're looking at the estimate periods for the EPS estimate for annual estimates of 2020."
+    },
+    {
+      "start": 5381.8,
+      "end": 5396.8,
+      "text": "So, the reason why it goes up to February 2021 is because that's when they reported their 2020 final EPS number for the year."
+    },
+    {
+      "start": 5396.8,
+      "end": 5399.8,
+      "text": "So, at that moment, it can never change."
+    },
+    {
+      "start": 5399.8,
+      "end": 5420.8,
+      "text": "But what you can see on the screen here is how on the red line, the EPS estimates from research analysts changed over the year 2020 versus the white line, which is the stock price changing every day in the year 2020."
+    },
+    {
+      "start": 5420.8,
+      "end": 5425.8,
+      "text": "So, we can have a look at our March COVID lows."
+    },
+    {
+      "start": 5425.8,
+      "end": 5437.8,
+      "text": "And as we know, the Wing stock price on March 23rd was $62.76."
+    },
+    {
+      "start": 5437.8,
+      "end": 5443.8,
+      "text": "So, we have our stock price on the left-hand side of the chart."
+    },
+    {
+      "start": 5443.8,
+      "end": 5446.8,
+      "text": "So, the scale is on the left-hand side."
+    },
+    {
+      "start": 5446.8,
+      "end": 5456.8,
+      "text": "And on March 23rd, we also had our EPS estimate coming in at $0.83 for the year 2020."
+    },
+    {
+      "start": 5456.8,
+      "end": 5464.8,
+      "text": "Our scale for EPS is on the right-hand side of the chart."
+    },
+    {
+      "start": 5464.8,
+      "end": 5471.8,
+      "text": "And then you can see what happens to both the stock price and EPS estimates."
+    },
+    {
+      "start": 5471.8,
+      "end": 5472.8,
+      "text": "What happens?"
+    },
+    {
+      "start": 5472.8,
+      "end": 5484.8,
+      "text": "Well, the stock price in the last week of March goes up and continues going up all of April and then sideways from April to June."
+    },
+    {
+      "start": 5484.8,
+      "end": 5490.8,
+      "text": "And the stock is around $120 by June 15th."
+    },
+    {
+      "start": 5490.8,
+      "end": 5493.8,
+      "text": "So, we know that from our table."
+    },
+    {
+      "start": 5493.8,
+      "end": 5503.8,
+      "text": "And the EPS estimates started to move up in April and then went up a lot in May."
+    },
+    {
+      "start": 5503.8,
+      "end": 5508.8,
+      "text": "So, you can see the move in the red line going up a lot in May."
+    },
+    {
+      "start": 5508.8,
+      "end": 5514.8,
+      "text": "And this was our EPS estimate moving up."
+    },
+    {
+      "start": 5514.8,
+      "end": 5518.8,
+      "text": "So, the consensus EPS estimates moving up."
+    },
+    {
+      "start": 5520.8,
+      "end": 5523.8,
+      "text": "And it moved up very aggressively."
+    },
+    {
+      "start": 5523.8,
+      "end": 5534.8,
+      "text": "And by June, the EPS estimate for Wing was $1.04."
+    },
+    {
+      "start": 5534.8,
+      "end": 5542.8,
+      "text": "And by June 15th, we know the stock price from our table for Wing was $120.14."
+    },
+    {
+      "start": 5543.8,
+      "end": 5549.8,
+      "text": "And the EPS estimate, which we're now adding into our analysis, was $1.04."
+    },
+    {
+      "start": 5550.8,
+      "end": 5553.8,
+      "text": "And what about if we look at McDonald's?"
+    },
+    {
+      "start": 5553.8,
+      "end": 5558.8,
+      "text": "We can do exactly the same analysis as we just did with Wing."
+    },
+    {
+      "start": 5558.8,
+      "end": 5564.8,
+      "text": "We can look at the stock price and EPS on the same chart for 2020."
+    },
+    {
+      "start": 5565.8,
+      "end": 5571.8,
+      "text": "And we have our scale for the stock price on the left-hand side of the chart."
+    },
+    {
+      "start": 5572.8,
+      "end": 5574.8,
+      "text": "And our stock price is in white."
+    },
+    {
+      "start": 5574.8,
+      "end": 5581.8,
+      "text": "And we have our EPS estimate, our research analyst consensus estimate, which is always changing."
+    },
+    {
+      "start": 5583.8,
+      "end": 5584.8,
+      "text": "We have that in red."
+    },
+    {
+      "start": 5584.8,
+      "end": 5590.8,
+      "text": "And our scale for the 2020 EPS estimate is on the right-hand side of the chart."
+    },
+    {
+      "start": 5591.8,
+      "end": 5594.8,
+      "text": "And we can do the same analysis as we did with Wing."
+    },
+    {
+      "start": 5595.8,
+      "end": 5603.8,
+      "text": "We can look at the stock price and the EPS estimate from the market at the Covid lows on March 23rd."
+    },
+    {
+      "start": 5604.8,
+      "end": 5610.8,
+      "text": "And we can look at it three months later on June 15th and just see what happened to both of them."
+    },
+    {
+      "start": 5611.8,
+      "end": 5620.8,
+      "text": "So, first of all, we know on March 23rd, McDonald's, the stock price was at $137.10."
+    },
+    {
+      "start": 5621.8,
+      "end": 5626.8,
+      "text": "And we know that the EPS estimate was $8.20."
+    },
+    {
+      "start": 5627.8,
+      "end": 5638.8,
+      "text": "Now, you can see the EPS estimate between March 23rd and June 15th went down quite significantly."
+    },
+    {
+      "start": 5639.8,
+      "end": 5647.8,
+      "text": "The EPS estimate for McDonald's on June 15th was actually $5.64."
+    },
+    {
+      "start": 5648.8,
+      "end": 5657.8,
+      "text": "And the stock price of McDonald's on June 15th was $189.49."
+    },
+    {
+      "start": 5658.8,
+      "end": 5660.8,
+      "text": "We know that from our table previously."
+    },
+    {
+      "start": 5661.8,
+      "end": 5668.8,
+      "text": "And we can see it here visually when we look at the stock price chart in white on the screen."
+    },
+    {
+      "start": 5669.8,
+      "end": 5677.8,
+      "text": "So, the stock went up for those three months and the EPS estimates were down over those three months."
+    },
+    {
+      "start": 5678.8,
+      "end": 5695.8,
+      "text": "So, it obviously gets a bit messier than our theoretical example that we showed you earlier with the $10 stock and $1 of earnings in the theoretical down move and the theoretical up move of a stock."
+    },
+    {
+      "start": 5696.8,
+      "end": 5700.8,
+      "text": "So, it gets a bit messier in the real world, but we have made sense of these numbers for you."
+    },
+    {
+      "start": 5701.8,
+      "end": 5707.8,
+      "text": "Don't worry, it's all coming up in a table soon and will be fully explained."
+    },
+    {
+      "start": 5708.8,
+      "end": 5717.8,
+      "text": "But just try to make these numbers stick in your mind for the moment and the behavior of the wing stock price and EPS estimates."
+    },
+    {
+      "start": 5719.8,
+      "end": 5731.8,
+      "text": "And the McDonald's stock price move and EPS estimates over that period, March 23rd, 2020 to June 15th, 2020."
+    },
+    {
+      "start": 5732.8,
+      "end": 5741.8,
+      "text": "Now, what we've done here next is actually looked at the performance of Wingstop."
+    },
+    {
+      "start": 5742.8,
+      "end": 5751.8,
+      "text": "Wingstop versus McDonnell's versus McDonnell's over the period 23rd of March 2020 to 15th of June 2020."
+    },
+    {
+      "start": 5752.8,
+      "end": 5756.8,
+      "text": "And we've indexed the stocks to 100 from March 23rd."
+    },
+    {
+      "start": 5757.8,
+      "end": 5760.8,
+      "text": "And we've looked at the percentage change in each."
+    },
+    {
+      "start": 5761.8,
+      "end": 5772.8,
+      "text": "So, over that period, Wingstop was up 91.43% and McDonald's was up 38.21%."
+    },
+    {
+      "start": 5773.8,
+      "end": 5780.8,
+      "text": "So, obviously, in a very short space of time, a big outperformance by Wing versus McDonald's."
+    },
+    {
+      "start": 5780.8,
+      "end": 5798.8,
+      "text": "And when we tie all this together and run this as a backtest, this is a very good example of how PE works and the interpretation of PE works in the real world."
+    },
+    {
+      "start": 5799.8,
+      "end": 5802.8,
+      "text": "And what we've done on the screen here is summarized all of this for you."
+    },
+    {
+      "start": 5803.8,
+      "end": 5812.8,
+      "text": "So, let's start with the stock price outperformance of Wing versus McDonald's over that period."
+    },
+    {
+      "start": 5813.8,
+      "end": 5828.8,
+      "text": "If we just look at the outperformance, so the 91.42% performance in the period by Wing minus the 38.21% performance by McDonald's,"
+    },
+    {
+      "start": 5828.8,
+      "end": 5838.8,
+      "text": "we get our 53.21% performance over approximately a 60 trading day period."
+    },
+    {
+      "start": 5839.8,
+      "end": 5848.8,
+      "text": "So, obviously, our great performance there in the time horizon that we like, the 20 to 60 day time horizon."
+    },
+    {
+      "start": 5849.8,
+      "end": 5854.8,
+      "text": "But where it gets interesting is actually when we look at the PE ratios."
+    },
+    {
+      "start": 5855.8,
+      "end": 5868.8,
+      "text": "So, if you recall, from our original stats taken on March 23rd, we were looking at a 75 PE for Wing and approximately a 17 PE for McDonald's."
+    },
+    {
+      "start": 5869.8,
+      "end": 5872.8,
+      "text": "So, 75.61 and 16.72."
+    },
+    {
+      "start": 5873.8,
+      "end": 5877.8,
+      "text": "And the PE differential on that date was 4.52."
+    },
+    {
+      "start": 5877.8,
+      "end": 5887.8,
+      "text": "So, the Wing PE ratio is 4.52 times higher than the McDonald's PE ratio."
+    },
+    {
+      "start": 5887.8,
+      "end": 5894.8,
+      "text": "So, it was trading on a 452% premium, Wing versus McDonald's."
+    },
+    {
+      "start": 5895.8,
+      "end": 5908.8,
+      "text": "If we fast forward to June 15th, we look at the EPS level of each stock and we work out the PE on that date."
+    },
+    {
+      "start": 5908.8,
+      "end": 5914.8,
+      "text": "So, we had $1.04 for Wing and the stock price was $120.14."
+    },
+    {
+      "start": 5914.8,
+      "end": 5917.8,
+      "text": "That gives us a PE of 115."
+    },
+    {
+      "start": 5917.8,
+      "end": 5926.8,
+      "text": "For McDonald's, we had $5.64 on June 15th with a stock price of $189.49."
+    },
+    {
+      "start": 5927.8,
+      "end": 5930.8,
+      "text": "That gives us a PE ratio of 33."
+    },
+    {
+      "start": 5931.8,
+      "end": 5938.8,
+      "text": "So, the PE differential comes out on June 15th at a 358% premium for Wing."
+    },
+    {
+      "start": 5939.8,
+      "end": 5964.8,
+      "text": "Now, what's also interesting is that if we fast forward an entire six to eight months further ahead and we look at the PE differential of Wing over McDonald's and we look at that for Q1 2021,"
+    },
+    {
+      "start": 5964.8,
+      "end": 5975.8,
+      "text": "when we look at the stats there, it comes out at 396% premium, Wing versus McDonald's."
+    },
+    {
+      "start": 5976.8,
+      "end": 5991.8,
+      "text": "So, if you recall, this is the data from the big table that we showed right at the beginning of this analysis of the entire food services and drinking places sector."
+    },
+    {
+      "start": 5991.8,
+      "end": 5997.8,
+      "text": "The snapshot of the PE's in Q1 2021."
+    },
+    {
+      "start": 5997.8,
+      "end": 6008.8,
+      "text": "So, it's pretty interesting when you look at the PE's and the differentials, the premiums over these periods."
+    },
+    {
+      "start": 6008.8,
+      "end": 6017.8,
+      "text": "So, from March 23rd to June 15th, Wing, the premium dropped, but it was still trading on a huge premium."
+    },
+    {
+      "start": 6017.8,
+      "end": 6020.8,
+      "text": "And obviously, you saw the stock price move."
+    },
+    {
+      "start": 6020.8,
+      "end": 6030.8,
+      "text": "The stock price went up, anticipating the increase in EPS, which is very important to understand."
+    },
+    {
+      "start": 6030.8,
+      "end": 6039.8,
+      "text": "The stock moved first and then the EPS moved later and caught up with the stock price."
+    },
+    {
+      "start": 6039.8,
+      "end": 6046.8,
+      "text": "And that was between March 23rd and June 15th."
+    },
+    {
+      "start": 6046.8,
+      "end": 6051.8,
+      "text": "So, we started out on March 23rd with a 452% premium."
+    },
+    {
+      "start": 6051.8,
+      "end": 6056.8,
+      "text": "By June 15th, it was on a 358% premium to McDonald's."
+    },
+    {
+      "start": 6056.8,
+      "end": 6068.8,
+      "text": "And if you recall, the McDonald's stock price went up, but the EPS estimates went down by quite a lot over the same period."
+    },
+    {
+      "start": 6068.8,
+      "end": 6082.8,
+      "text": "And then if we fast forward six months, eight months later, we end up in Q1 2021, where the Wing PE is 99.6 and the McDonald's PE is 25.11."
+    },
+    {
+      "start": 6082.8,
+      "end": 6085.8,
+      "text": "So, a 396% premium."
+    },
+    {
+      "start": 6085.8,
+      "end": 6096.8,
+      "text": "So, throughout this entire period, where we've got Armageddon happening in the markets during the COVID lows, Wings premium was 452%."
+    },
+    {
+      "start": 6096.8,
+      "end": 6104.8,
+      "text": "Fast forward three months later to June 15th, it's still on a huge premium to McDonald's."
+    },
+    {
+      "start": 6104.8,
+      "end": 6113.8,
+      "text": "And then we fast forward another six to eight months later, and the differential is around 400%."
+    },
+    {
+      "start": 6113.8,
+      "end": 6125.8,
+      "text": "So, the differential has been oscillating between 358% and 450 plus percent."
+    },
+    {
+      "start": 6125.8,
+      "end": 6133.8,
+      "text": "So, really, it's kind of a gate between 350 and 450 over that entire period."
+    },
+    {
+      "start": 6133.8,
+      "end": 6148.8,
+      "text": "So, it's pretty interesting that from the COVID lows during Armageddon to a total reversal in the markets and entering a bull market that the premium pretty much stayed the same."
+    },
+    {
+      "start": 6148.8,
+      "end": 6157.8,
+      "text": "And on a relative basis, the market was paying a premium in a bear market and in a bull market."
+    },
+    {
+      "start": 6157.8,
+      "end": 6167.8,
+      "text": "But what it's really telling is the way the market in Wing and McDonald's behaved differently."
+    },
+    {
+      "start": 6167.8,
+      "end": 6176.8,
+      "text": "What it's really telling there is the stock price movement in Wing before the EPS estimates went up."
+    },
+    {
+      "start": 6176.8,
+      "end": 6182.8,
+      "text": "The market on COVID lows chose to buy growth."
+    },
+    {
+      "start": 6182.8,
+      "end": 6188.8,
+      "text": "They chose to buy the quality in the sector that's going to grow the fastest."
+    },
+    {
+      "start": 6189.8,
+      "end": 6199.8,
+      "text": "And yes, of course, the market also did buy McDonald's, but they weren't buying McDonald's for growth."
+    },
+    {
+      "start": 6199.8,
+      "end": 6202.8,
+      "text": "They were buying McDonald's for other reasons, for safety."
+    },
+    {
+      "start": 6202.8,
+      "end": 6203.8,
+      "text": "Okay."
+    },
+    {
+      "start": 6203.8,
+      "end": 6212.8,
+      "text": "And this is why the Wing stock price went up so much before the EPS estimates from research analysts went up afterwards."
+    },
+    {
+      "start": 6212.8,
+      "end": 6220.8,
+      "text": "This is why the stock price went up so much quickly because the market was anticipating the EPS move."
+    },
+    {
+      "start": 6220.8,
+      "end": 6242.8,
+      "text": "And it's really obvious when you look at it, why it happened and why Wing really outperformed McDonald's during that period and was still, the market was still paying a massive premium consistently throughout 2020 and even into 2021."
+    },
+    {
+      "start": 6242.8,
+      "end": 6250.8,
+      "text": "And this happens time and time again in financial markets."
+    },
+    {
+      "start": 6250.8,
+      "end": 6252.8,
+      "text": "It happens all the time."
+    },
+    {
+      "start": 6252.8,
+      "end": 6264.8,
+      "text": "And this is why the P.E. is a signal of the quality of the earnings of the company."
+    },
+    {
+      "start": 6264.8,
+      "end": 6274.8,
+      "text": "And in many cases, not just earnings growth, but also revenue growth."
+    },
+    {
+      "start": 6274.8,
+      "end": 6276.8,
+      "text": "We're going to come on to this soon."
+    },
+    {
+      "start": 6276.8,
+      "end": 6289.8,
+      "text": "But for the moment, let's run through an example of a typical portfolio situation of what you could have done on that day on March 23rd."
+    },
+    {
+      "start": 6289.8,
+      "end": 6306.8,
+      "text": "So if we think of the performance of Wing and McDonald's in dollar terms, over that period, March 23rd to June 15th, 2020, Wing was up $57.38."
+    },
+    {
+      "start": 6306.8,
+      "end": 6311.8,
+      "text": "McDonald's was up $52.39."
+    },
+    {
+      "start": 6311.8,
+      "end": 6320.8,
+      "text": "So from an absolute return perspective, they both went up between $52 and $57."
+    },
+    {
+      "start": 6320.8,
+      "end": 6325.8,
+      "text": "So it was a very similar absolute dollar move."
+    },
+    {
+      "start": 6325.8,
+      "end": 6340.8,
+      "text": "However, when allocating risk limits in a long short portfolio of, say, 10% of a portfolio, so let's say on a $100,000 portfolio, you allocate $10,000 to a trade."
+    },
+    {
+      "start": 6340.8,
+      "end": 6354.8,
+      "text": "A long short portfolio manager would have had roughly twice as many shares of Wing versus McDonald's, because the stock price difference between Wing and McDonald's, the factor is around two times."
+    },
+    {
+      "start": 6354.8,
+      "end": 6363.8,
+      "text": "So think about this in terms of allocating $10,000 in a $100,000 portfolio."
+    },
+    {
+      "start": 6363.8,
+      "end": 6377.8,
+      "text": "If you bought Wing on March 23rd at $62.76 and you committed $10,000 in the portfolio, you would have gotten approximately 160 shares."
+    },
+    {
+      "start": 6377.8,
+      "end": 6392.8,
+      "text": "And that over the period from March 23rd to June 15th, if you'd sold those at $120.14, your upside, your profits would have been $9,180.80."
+    },
+    {
+      "start": 6392.8,
+      "end": 6408.8,
+      "text": "The McDonald's shares allocation, if you'd have committed $10,000 there with a stock price of $137.10, you would have gotten around 73 shares, 73 whole shares."
+    },
+    {
+      "start": 6408.8,
+      "end": 6415.8,
+      "text": "And that would have given you $52.39 upside on 73 shares."
+    },
+    {
+      "start": 6415.8,
+      "end": 6421.8,
+      "text": "So you would have had a profit of $3,824.47."
+    },
+    {
+      "start": 6421.8,
+      "end": 6438.8,
+      "text": "So the outperformance there is on a $10,000 position, $5,360 in outperformance in dollar terms over the 60 days."
+    },
+    {
+      "start": 6438.8,
+      "end": 6447.8,
+      "text": "So that in a $100,000 portfolio is a 5.3% difference, okay?"
+    },
+    {
+      "start": 6447.8,
+      "end": 6449.8,
+      "text": "Which is obviously quite a big deal."
+    },
+    {
+      "start": 6449.8,
+      "end": 6453.8,
+      "text": "So imagine doing lots of trades over a long period of time."
+    },
+    {
+      "start": 6453.8,
+      "end": 6467.8,
+      "text": "Having a 5.3% difference because you're choosing the right stocks to be long is a very, very big difference in performance over many trades over a long period of time."
+    },
+    {
+      "start": 6467.8,
+      "end": 6477.8,
+      "text": "And yes, of course, if you remember the outperformance of the stock prices that we calculated over the time was 53%."
+    },
+    {
+      "start": 6477.8,
+      "end": 6492.8,
+      "text": "So this translates linearly into a $100,000 portfolio with a $10,000 position into 5.3% outperformance, which is huge over many, many trades over a long period of time."
+    },
+    {
+      "start": 6492.8,
+      "end": 6502.8,
+      "text": "The difference between a portfolio that picks the right stuff to be long and the right stuff to be short is huge."
+    },
+    {
+      "start": 6502.8,
+      "end": 6504.8,
+      "text": "It can be a very, very big difference."
+    },
+    {
+      "start": 6505.8,
+      "end": 6516.8,
+      "text": "So being long and short, the right stuff at the right time is very important as a long, short trader and portfolio manager."
+    },
+    {
+      "start": 6516.8,
+      "end": 6525.8,
+      "text": "That's why we go to where money likes and where money dislikes, okay, with our longs and shorts."
+    },
+    {
+      "start": 6525.8,
+      "end": 6533.8,
+      "text": "And this is why the interpretation of PE and getting that right all the time is so important."
+    },
+    {
+      "start": 6533.8,
+      "end": 6542.8,
+      "text": "In the vast majority of cases in equity markets, money chases revenue and earnings growth."
+    },
+    {
+      "start": 6542.8,
+      "end": 6549.8,
+      "text": "And if you think about what wing is, it's a chicken wing franchise business."
+    },
+    {
+      "start": 6549.8,
+      "end": 6560.8,
+      "text": "And it's in its revenue and earnings growth phase with high percentage of their product delivered to the door."
+    },
+    {
+      "start": 6560.8,
+      "end": 6570.8,
+      "text": "Okay, I think it's around 70% plus last time I checked, but it's a chicken wing franchise that's in its growth phase."
+    },
+    {
+      "start": 6570.8,
+      "end": 6571.8,
+      "text": "Okay."
+    },
+    {
+      "start": 6571.8,
+      "end": 6575.8,
+      "text": "And for the market at the time, what was important?"
+    },
+    {
+      "start": 6575.8,
+      "end": 6586.8,
+      "text": "Well, we had an economic lockdown with COVID and all restaurants were closed and food delivery was taking off, obviously growing very quickly."
+    },
+    {
+      "start": 6586.8,
+      "end": 6589.8,
+      "text": "So we had a double whammy there with Wink."
+    },
+    {
+      "start": 6589.8,
+      "end": 6597.8,
+      "text": "Wink was a double whammy situation where it was already in a normal market, growing at a rapid pace."
+    },
+    {
+      "start": 6597.8,
+      "end": 6601.8,
+      "text": "And with COVID, it went into a turbo overdrive."
+    },
+    {
+      "start": 6601.8,
+      "end": 6607.8,
+      "text": "McDonald's, as we all know, is well past its growth phase."
+    },
+    {
+      "start": 6607.8,
+      "end": 6612.8,
+      "text": "It's a mature fast food business with a real estate portfolio."
+    },
+    {
+      "start": 6612.8,
+      "end": 6614.8,
+      "text": "So the point is simple here, guys."
+    },
+    {
+      "start": 6614.8,
+      "end": 6626.8,
+      "text": "When you look at a table of comparable PEs, you have to identify the outliers that are both positive, low and negative PE."
+    },
+    {
+      "start": 6626.8,
+      "end": 6629.8,
+      "text": "And always think to yourself the following."
+    },
+    {
+      "start": 6629.8,
+      "end": 6645.8,
+      "text": "There must be a reason why this positive outlier trades on a premium to the sector average and a reason why this negative outlier trades on a discount to the sector."
+    },
+    {
+      "start": 6645.8,
+      "end": 6648.8,
+      "text": "So PE is your starting point."
+    },
+    {
+      "start": 6648.8,
+      "end": 6658.8,
+      "text": "It is your guide as to what the market is willing to pay for and what they are willing to sell on a relative basis."
+    },
+    {
+      "start": 6658.8,
+      "end": 6669.8,
+      "text": "Now, bear in mind, we haven't even looked at the reasons why Wink was trading on such a big premium to the sector average and versus McDonald's itself."
+    },
+    {
+      "start": 6669.8,
+      "end": 6672.8,
+      "text": "However, it should be fairly obvious."
+    },
+    {
+      "start": 6672.8,
+      "end": 6676.8,
+      "text": "We chose a very simple example to understand here."
+    },
+    {
+      "start": 6676.8,
+      "end": 6684.8,
+      "text": "Wink at the time, even though it was in a defensive sector, is a growth stock in a defensive sector."
+    },
+    {
+      "start": 6684.8,
+      "end": 6688.8,
+      "text": "And McDonald's is an ex-growth stock in the same sector."
+    },
+    {
+      "start": 6688.8,
+      "end": 6697.8,
+      "text": "Wink had a business model that saw their EPS not get hit at all by COVID-19."
+    },
+    {
+      "start": 6697.8,
+      "end": 6698.8,
+      "text": "Okay."
+    },
+    {
+      "start": 6698.8,
+      "end": 6699.8,
+      "text": "What was it?"
+    },
+    {
+      "start": 6699.8,
+      "end": 6703.8,
+      "text": "Aggressive franchise growth and the delivery model."
+    },
+    {
+      "start": 6703.8,
+      "end": 6707.8,
+      "text": "So very, very simple to understand."
+    },
+    {
+      "start": 6707.8,
+      "end": 6715.8,
+      "text": "But if you're sitting there and you're looking at the sector for the first time, interpretation of PE is critical."
+    },
+    {
+      "start": 6715.8,
+      "end": 6718.8,
+      "text": "The correct interpretation is critical."
+    },
+    {
+      "start": 6718.8,
+      "end": 6724.8,
+      "text": "So not looking at cheap stocks and thinking they're a buy and looking at expensive stocks and thinking they're a sell."
+    },
+    {
+      "start": 6724.8,
+      "end": 6736.8,
+      "text": "But asking yourself the question and making the statement, why is this stock or the market willing to pay such a big premium for this stock?"
+    },
+    {
+      "start": 6736.8,
+      "end": 6744.8,
+      "text": "And why is the market willing to sell this stock on such a big discount?"
+    },
+    {
+      "start": 6744.8,
+      "end": 6748.8,
+      "text": "There must be a reason why the positive outlier trades on a premium."
+    },
+    {
+      "start": 6748.8,
+      "end": 6753.8,
+      "text": "And there must be a reason why the negative outlier trades on a discount."
+    },
+    {
+      "start": 6753.8,
+      "end": 6755.8,
+      "text": "What are those reasons?"
+    },
+    {
+      "start": 6755.8,
+      "end": 6758.8,
+      "text": "And then you go off and you discover the reasons."
+    },
+    {
+      "start": 6758.8,
+      "end": 6759.8,
+      "text": "Okay."
+    },
+    {
+      "start": 6759.8,
+      "end": 6762.8,
+      "text": "But PE is your starting point."
+    },
+    {
+      "start": 6762.8,
+      "end": 6775.8,
+      "text": "It's then up to you to do further quantitative and qualitative work on the stock to see if it actually is a potential trade idea."
+    },
+    {
+      "start": 6775.8,
+      "end": 6783.8,
+      "text": "So we use PE as a guide, as a pointer as to where to start looking."
+    },
+    {
+      "start": 6783.8,
+      "end": 6790.8,
+      "text": "It's the beginning point as to where to start looking to initiate more work on a trade idea."
+    },
+    {
+      "start": 6790.8,
+      "end": 6796.8,
+      "text": "Now, please note, we never said once here that McDonald's was an outright short."
+    },
+    {
+      "start": 6796.8,
+      "end": 6804.8,
+      "text": "As traders, we would much rather be short stocks that go down outright rather than just under before."
+    },
+    {
+      "start": 6804.8,
+      "end": 6814.8,
+      "text": "The PE example here is to highlight where money could be potentially allocated on the long side."
+    },
+    {
+      "start": 6814.8,
+      "end": 6826.8,
+      "text": "On March 23rd, on the S&P 500 lows in 2020, even at that time, it was very hard to find worthy short ideas."
+    },
+    {
+      "start": 6826.8,
+      "end": 6831.8,
+      "text": "But it was very easy to find a ton of long ideas."
+    },
+    {
+      "start": 6831.8,
+      "end": 6841.8,
+      "text": "The point here is that at any moment in time, you have to seek to be long and short of right stuff."
+    },
+    {
+      "start": 6841.8,
+      "end": 6853.8,
+      "text": "If you were sitting there on March 23rd, 2020, and you thought that McDonald's, going long McDonald's was a really good trade idea,"
+    },
+    {
+      "start": 6853.8,
+      "end": 6865.8,
+      "text": "allocating money to being long McDonald's at that time was such a lazy, amateur, retail trader, long investment idea."
+    },
+    {
+      "start": 6865.8,
+      "end": 6866.8,
+      "text": "It wasn't a trade."
+    },
+    {
+      "start": 6866.8,
+      "end": 6866.8,
+      "text": "Okay."
+    },
+    {
+      "start": 6866.8,
+      "end": 6870.8,
+      "text": "There's a big difference between a trade and an investment."
+    },
+    {
+      "start": 6870.8,
+      "end": 6872.8,
+      "text": "It's our time horizon."
+    },
+    {
+      "start": 6872.8,
+      "end": 6881.8,
+      "text": "You would have been better off just buying the S&P 500, which actually over that period went up 38%."
+    },
+    {
+      "start": 6881.8,
+      "end": 6885.8,
+      "text": "So the March 23rd to the June 15th period."
+    },
+    {
+      "start": 6885.8,
+      "end": 6889.8,
+      "text": "It went up 38% over the same period."
+    },
+    {
+      "start": 6889.8,
+      "end": 6892.8,
+      "text": "So it was exactly the same performance as McDonald's."
+    },
+    {
+      "start": 6892.8,
+      "end": 6899.8,
+      "text": "However, you should also always think about the risk that you're taking for the return that you're getting."
+    },
+    {
+      "start": 6899.8,
+      "end": 6909.8,
+      "text": "If you were to go long McDonald's, you would have had market sector and single stock risk."
+    },
+    {
+      "start": 6909.8,
+      "end": 6923.8,
+      "text": "But if you were simply just long the S&P 500, you will have had market risk of 500 stocks weighted by their market cap across the 69 gigs industries."
+    },
+    {
+      "start": 6923.8,
+      "end": 6926.8,
+      "text": "So you will have had less risk."
+    },
+    {
+      "start": 6926.8,
+      "end": 6934.8,
+      "text": "So long the market versus long McDonald's over the same period had better risk adjusted returns."
+    },
+    {
+      "start": 6934.8,
+      "end": 6940.8,
+      "text": "So remember, this is why money was chasing Wink."
+    },
+    {
+      "start": 6940.8,
+      "end": 6953.8,
+      "text": "They were happy to pay the premium on March 23rd, which was 75 times earnings because they knew that the EPS was going to grow and the stock price was going to go through the roof."
+    },
+    {
+      "start": 6953.8,
+      "end": 6957.8,
+      "text": "Remember, money likes growth."
+    },
+    {
+      "start": 6957.8,
+      "end": 6981.8,
+      "text": "And we can actually have a look here at both Wink's and McDonald's past financial reporting and look at their numbers at the revenue and EPS lines from 2017 to 2020 and forecasts for 2021."
+    },
+    {
+      "start": 6981.8,
+      "end": 6987.8,
+      "text": "What you can see here is Wink's revenue growth, which is pretty rapid."
+    },
+    {
+      "start": 6987.8,
+      "end": 7002.8,
+      "text": "So 133 growing to 153 growing to 199 growing to 248 million and then 282 million forecast in 2021."
+    },
+    {
+      "start": 7002.8,
+      "end": 7003.8,
+      "text": "And then we have EPS growth."
+    },
+    {
+      "start": 7003.8,
+      "end": 7016.8,
+      "text": "And EPS is obviously not as important to this company because they are in the growth phase."
+    },
+    {
+      "start": 7016.8,
+      "end": 7023.8,
+      "text": "So a lot of their revenue is being plowed back into operations to expand the business."
+    },
+    {
+      "start": 7023.8,
+      "end": 7033.8,
+      "text": "So revenue growth was more important to this company even in 2020 and more important for investors."
+    },
+    {
+      "start": 7033.8,
+      "end": 7040.8,
+      "text": "But investors are buying the company based on their forward projection of EPS."
+    },
+    {
+      "start": 7040.8,
+      "end": 7043.8,
+      "text": "So they're buying for future EPS."
+    },
+    {
+      "start": 7043.8,
+      "end": 7049.8,
+      "text": "So yes, in 2017 and 2018, we don't have EPS moving."
+    },
+    {
+      "start": 7049.8,
+      "end": 7051.8,
+      "text": "In 2019, it's down."
+    },
+    {
+      "start": 7051.8,
+      "end": 7052.8,
+      "text": "But there's a big change."
+    },
+    {
+      "start": 7052.8,
+      "end": 7054.8,
+      "text": "There's a basis change."
+    },
+    {
+      "start": 7054.8,
+      "end": 7057.8,
+      "text": "In 2020, we get big EPS growth."
+    },
+    {
+      "start": 7057.8,
+      "end": 7062.8,
+      "text": "And then we get some EPS growth in 2021."
+    },
+    {
+      "start": 7062.8,
+      "end": 7070.8,
+      "text": "For McDonald's, on the other hand, you can see we are past the growth phase for McDonald's."
+    },
+    {
+      "start": 7070.8,
+      "end": 7078.8,
+      "text": "A very typical situation here for a very big fast food establishment, fast food retailers."
+    },
+    {
+      "start": 7078.8,
+      "end": 7082.8,
+      "text": "And obviously, they have a big real estate portfolio as well."
+    },
+    {
+      "start": 7082.8,
+      "end": 7088.8,
+      "text": "Their revenue, you can see, is pretty much on a decline."
+    },
+    {
+      "start": 7088.8,
+      "end": 7094.8,
+      "text": "There's an uptick from 2020 forecast in 2021."
+    },
+    {
+      "start": 7094.8,
+      "end": 7099.8,
+      "text": "But it was on a decline for pretty much four years."
+    },
+    {
+      "start": 7099.8,
+      "end": 7116.8,
+      "text": "And even in 2021, the forecast of 21.9 billion is not even as high as the 2017 reported number, which is 22.8 billion."
+    },
+    {
+      "start": 7116.8,
+      "end": 7119.8,
+      "text": "So this company, it's just not growing."
+    },
+    {
+      "start": 7119.8,
+      "end": 7124.8,
+      "text": "EPS, yes, there's a jump from 17 to 18."
+    },
+    {
+      "start": 7124.8,
+      "end": 7129.8,
+      "text": "But 18 to 19, it's slowing down a little."
+    },
+    {
+      "start": 7129.8,
+      "end": 7133.8,
+      "text": "And then 19 to 20, we know what happened in 2020."
+    },
+    {
+      "start": 7133.8,
+      "end": 7137.8,
+      "text": "We go from $7.81 to $6.74."
+    },
+    {
+      "start": 7137.8,
+      "end": 7144.8,
+      "text": "And then from 2020 to 21, yes, we get an improvement in the business for McDonald's."
+    },
+    {
+      "start": 7144.8,
+      "end": 7158.8,
+      "text": "But overall, the picture is obviously not as good as a growth stock in the same sector as Wing."
+    },
+    {
+      "start": 7158.8,
+      "end": 7167.8,
+      "text": "So McDonald's past its growth phase, very high market cap, struggling to grow at all."
+    },
+    {
+      "start": 7167.8,
+      "end": 7175.8,
+      "text": "And then Wing, low market cap, a fairly new kid on the block."
+    },
+    {
+      "start": 7175.8,
+      "end": 7186.8,
+      "text": "Not a big established company like McDonald's, but they're in the defensive sector, same as McDonald's, of food establishments."
+    },
+    {
+      "start": 7186.8,
+      "end": 7190.8,
+      "text": "And they're growing rapidly."
+    },
+    {
+      "start": 7190.8,
+      "end": 7192.8,
+      "text": "So what happens?"
+    },
+    {
+      "start": 7192.8,
+      "end": 7194.8,
+      "text": "Money likes growth."
+    },
+    {
+      "start": 7194.8,
+      "end": 7199.8,
+      "text": "So it trades on a premium, trades on a big premium to McDonald's."
+    },
+    {
+      "start": 7199.8,
+      "end": 7207.8,
+      "text": "And the market is happy to pay for it because they keep delivering on their revenue and earnings growth."
+    },
+    {
+      "start": 7207.8,
+      "end": 7215.8,
+      "text": "Now, obviously, this is the first time that we've shown you an example in the PTM video series."
+    },
+    {
+      "start": 7215.8,
+      "end": 7222.8,
+      "text": "And I want to add some caution here because we're going to be using quite a lot of examples throughout the video series."
+    },
+    {
+      "start": 7222.8,
+      "end": 7235.8,
+      "text": "So you're going to see a lot of examples of stocks that we show you to highlight points that ITBM is trying to get across in order to educate you to a higher standard."
+    },
+    {
+      "start": 7235.8,
+      "end": 7239.8,
+      "text": "And we don't want you to be a dummy here, okay?"
+    },
+    {
+      "start": 7239.8,
+      "end": 7252.8,
+      "text": "So do not, after completing the PTM video series, start magically coming up with trade ideas that include lots of stocks from the video series."
+    },
+    {
+      "start": 7252.8,
+      "end": 7266.8,
+      "text": "Honestly, it's a very, very bad habit of retail traders that when they see examples, they start anchoring their trade ideas to the examples that they've seen in the past."
+    },
+    {
+      "start": 7266.8,
+      "end": 7267.8,
+      "text": "Do not do it."
+    },
+    {
+      "start": 7267.8,
+      "end": 7281.8,
+      "text": "Things change in financial markets and you have to generate your own trade ideas based on the principles and the template of the PTM video series that we teach you."
+    },
+    {
+      "start": 7281.8,
+      "end": 7285.8,
+      "text": "We are using them as examples, guys."
+    },
+    {
+      "start": 7285.8,
+      "end": 7299.8,
+      "text": "So you understand how it works and you can repeat it doing the same process in other stocks over and over again on repeat."
+    },
+    {
+      "start": 7299.8,
+      "end": 7302.8,
+      "text": "You know, it's pretty amazing."
+    },
+    {
+      "start": 7302.8,
+      "end": 7314.8,
+      "text": "We've seen this at ITBM a lot since ITBM launched, especially in our mentoring programs where we get guys who have done the PTM video series."
+    },
+    {
+      "start": 7314.8,
+      "end": 7326.8,
+      "text": "They then come on a mentoring program to trade with live money in the markets and they send us their first attempt at trade ideas before the first phone call."
+    },
+    {
+      "start": 7326.8,
+      "end": 7340.8,
+      "text": "And we see trade ideas throughout their first attempt at coming up with trade ideas that were actually in the PTM video series."
+    },
+    {
+      "start": 7340.8,
+      "end": 7342.8,
+      "text": "It's crazy."
+    },
+    {
+      "start": 7342.8,
+      "end": 7349.8,
+      "text": "It's like they're sending us the information that we've given them back to us."
+    },
+    {
+      "start": 7349.8,
+      "end": 7351.8,
+      "text": "So they're not doing any work."
+    },
+    {
+      "start": 7351.8,
+      "end": 7353.8,
+      "text": "They're not using it as a template."
+    },
+    {
+      "start": 7353.8,
+      "end": 7358.8,
+      "text": "They're not learning the processes and generating their own ideas."
+    },
+    {
+      "start": 7358.8,
+      "end": 7366.8,
+      "text": "They're just anchoring themselves to some trade ideas from stocks that they witnessed in the past in a video series."
+    },
+    {
+      "start": 7366.8,
+      "end": 7368.8,
+      "text": "So it's pretty crazy, guys."
+    },
+    {
+      "start": 7368.8,
+      "end": 7370.8,
+      "text": "Like, don't look for shortcuts."
+    },
+    {
+      "start": 7370.8,
+      "end": 7371.8,
+      "text": "Don't look for hacks."
+    },
+    {
+      "start": 7371.8,
+      "end": 7373.8,
+      "text": "You actually have to do the work."
+    },
+    {
+      "start": 7373.8,
+      "end": 7374.8,
+      "text": "Okay."
+    },
+    {
+      "start": 7374.8,
+      "end": 7377.8,
+      "text": "You have to generate your own trade ideas."
+    },
+    {
+      "start": 7377.8,
+      "end": 7379.8,
+      "text": "And of course, we're going to go through the whole process."
+    },
+    {
+      "start": 7379.8,
+      "end": 7390.8,
+      "text": "But always remember the four ITBM principles, self-sustainability, work ethic, free information, working smart, not hard."
+    },
+    {
+      "start": 7390.8,
+      "end": 7398.8,
+      "text": "Additionally, guys, do not fall into the hindsight trap as we're going through the PTM video series."
+    },
+    {
+      "start": 7398.8,
+      "end": 7400.8,
+      "text": "What do we mean by that?"
+    },
+    {
+      "start": 7400.8,
+      "end": 7408.8,
+      "text": "Well, pull up these examples at some random point in the future and try to figure out if they were winners or losers."
+    },
+    {
+      "start": 7408.8,
+      "end": 7411.8,
+      "text": "These are merely examples, guys."
+    },
+    {
+      "start": 7411.8,
+      "end": 7417.8,
+      "text": "Plus, at any one moment in time, they are just potential ideas."
+    },
+    {
+      "start": 7417.8,
+      "end": 7427.8,
+      "text": "Remember, when you're going through certain parts of the trade idea generation process, they are not yet full ideas."
+    },
+    {
+      "start": 7427.8,
+      "end": 7428.8,
+      "text": "Okay."
+    },
+    {
+      "start": 7428.8,
+      "end": 7430.8,
+      "text": "At every stage, you have to do more work."
+    },
+    {
+      "start": 7430.8,
+      "end": 7433.8,
+      "text": "So they are potential ideas."
+    },
+    {
+      "start": 7433.8,
+      "end": 7439.8,
+      "text": "They may not have become actionable positions later on in the process."
+    },
+    {
+      "start": 7439.8,
+      "end": 7444.8,
+      "text": "We are using them as examples at each stage of the process."
+    },
+    {
+      "start": 7444.8,
+      "end": 7451.8,
+      "text": "And that is to educate you so you know what you're looking for at each stage."
+    },
+    {
+      "start": 7451.8,
+      "end": 7457.8,
+      "text": "It's not, we're not giving you the example saying you should have bought or sold these stocks."
+    },
+    {
+      "start": 7457.8,
+      "end": 7458.8,
+      "text": "Okay."
+    },
+    {
+      "start": 7458.8,
+      "end": 7460.8,
+      "text": "So don't fall for the hindsight trap."
+    },
+    {
+      "start": 7460.8,
+      "end": 7461.8,
+      "text": "Okay."
+    },
+    {
+      "start": 7461.8,
+      "end": 7470.8,
+      "text": "And even when we use these examples, if they did end up becoming positions, we are long short portfolio managers."
+    },
+    {
+      "start": 7470.8,
+      "end": 7479.8,
+      "text": "You saw earlier, we had a theoretical $100,000 portfolio with a $10,000 position."
+    },
+    {
+      "start": 7479.8,
+      "end": 7484.8,
+      "text": "That can be quite typical of what retail traders at ITPM would do."
+    },
+    {
+      "start": 7484.8,
+      "end": 7487.8,
+      "text": "You would have multiple positions in a portfolio."
+    },
+    {
+      "start": 7487.8,
+      "end": 7498.8,
+      "text": "So even if one of these examples did end up passing all the criteria to become an actual position, we are long short portfolio managers."
+    },
+    {
+      "start": 7498.8,
+      "end": 7500.8,
+      "text": "We have lots of positions."
+    },
+    {
+      "start": 7500.8,
+      "end": 7501.8,
+      "text": "And guess what?"
+    },
+    {
+      "start": 7501.8,
+      "end": 7503.8,
+      "text": "Losers always exist."
+    },
+    {
+      "start": 7503.8,
+      "end": 7505.8,
+      "text": "It is a fact of trading."
+    },
+    {
+      "start": 7505.8,
+      "end": 7509.8,
+      "text": "And this is something that you're going to realize later on in the video series."
+    },
+    {
+      "start": 7509.8,
+      "end": 7516.8,
+      "text": "So as we go through the examples throughout the video series, guys, don't be a dummy."
+    },
+    {
+      "start": 7516.8,
+      "end": 7520.8,
+      "text": "Don't fall for anchoring and copying trade ideas."
+    },
+    {
+      "start": 7520.8,
+      "end": 7524.8,
+      "text": "You have to use it as a template to come up with your own."
+    },
+    {
+      "start": 7524.8,
+      "end": 7527.8,
+      "text": "And also don't fall for hindsight trading."
+    },
+    {
+      "start": 7527.8,
+      "end": 7529.8,
+      "text": "So what's up next?"
+    },
+    {
+      "start": 7529.8,
+      "end": 7537.8,
+      "text": "You pull up a sector, you identify the positive and negative outliers."
+    },
+    {
+      "start": 7537.8,
+      "end": 7538.8,
+      "text": "What's up next?"
+    },
+    {
+      "start": 7538.8,
+      "end": 7539.8,
+      "text": "What do you need to do next?"
+    },
+    {
+      "start": 7539.8,
+      "end": 7549.8,
+      "text": "Does that mean all you have to do is filter spreadsheets for high and low P ratio and simply just turn them into positions?"
+    },
+    {
+      "start": 7549.8,
+      "end": 7554.8,
+      "text": "So go long high P stocks and short low P stocks."
+    },
+    {
+      "start": 7554.8,
+      "end": 7556.8,
+      "text": "No, of course it doesn't."
+    },
+    {
+      "start": 7556.8,
+      "end": 7565.8,
+      "text": "That is your lazy retail trader brain going to sleep temporarily and looking for shortcuts and hacks."
+    },
+    {
+      "start": 7565.8,
+      "end": 7572.8,
+      "text": "You have to do further work to generate an actual trade idea."
+    },
+    {
+      "start": 7572.8,
+      "end": 7576.8,
+      "text": "Remember, this is an identification process."
+    },
+    {
+      "start": 7576.8,
+      "end": 7582.8,
+      "text": "We need to identify outliers using the quantitative process."
+    },
+    {
+      "start": 7582.8,
+      "end": 7594.8,
+      "text": "And then we have to learn the stock info and we have to identify KPIs, key performance indicators and identify catalysts."
+    },
+    {
+      "start": 7594.8,
+      "end": 7598.8,
+      "text": "So there's a lot of qualitative work that goes into it."
+    },
+    {
+      "start": 7598.8,
+      "end": 7603.8,
+      "text": "So this is what qualifies as a trade idea."
+    },
+    {
+      "start": 7603.8,
+      "end": 7611.8,
+      "text": "Then we move on to timing and trade structuring and preventative and reactive risk management."
+    },
+    {
+      "start": 7611.8,
+      "end": 7618.8,
+      "text": "Also, and secondly, non participation is always an option."
+    },
+    {
+      "start": 7618.8,
+      "end": 7632.8,
+      "text": "So if you see high PEs, but do further work on stock and realize it's not a trade idea because of other factors, then it can be eliminated from the process as a potential trade idea."
+    },
+    {
+      "start": 7632.8,
+      "end": 7638.8,
+      "text": "You do not have to participate just because something has a high PE."
+    },
+    {
+      "start": 7638.8,
+      "end": 7653.8,
+      "text": "If you identify a high PE relative to its peers and do further work on it, thinking that because you don't know anything that the market doesn't already know, therefore the market must always be right."
+    },
+    {
+      "start": 7653.8,
+      "end": 7654.8,
+      "text": "And then you take a position in it."
+    },
+    {
+      "start": 7654.8,
+      "end": 7655.8,
+      "text": "And then you take a position in it."
+    },
+    {
+      "start": 7655.8,
+      "end": 7657.8,
+      "text": "You're not thinking straight."
+    },
+    {
+      "start": 7657.8,
+      "end": 7661.8,
+      "text": "We have a time horizon of 20 to 60 days."
+    },
+    {
+      "start": 7661.8,
+      "end": 7667.8,
+      "text": "It's highly likely that in our time horizon, the valuation is probably justified."
+    },
+    {
+      "start": 7667.8,
+      "end": 7674.8,
+      "text": "But that doesn't mean the stock is going to go up within the 20 to 60 day time horizon."
+    },
+    {
+      "start": 7674.8,
+      "end": 7682.8,
+      "text": "Also, it could be that the stock that you go long in that time period."
+    },
+    {
+      "start": 7682.8,
+      "end": 7695.8,
+      "text": "So the 20 to 60 day time horizon, the market could be wrong during that time period and then afterwards be right for a very long time, perhaps one year or even longer."
+    },
+    {
+      "start": 7695.8,
+      "end": 7705.8,
+      "text": "Not arguing with the market does not mean you automatically initiate a long or short position."
+    },
+    {
+      "start": 7705.8,
+      "end": 7710.8,
+      "text": "So just because something is on a high PE doesn't mean you initiate a long position."
+    },
+    {
+      "start": 7710.8,
+      "end": 7716.8,
+      "text": "Just because something is on a low PE doesn't mean you initiate a short position."
+    },
+    {
+      "start": 7716.8,
+      "end": 7720.8,
+      "text": "Yes, the market is giving you a signal."
+    },
+    {
+      "start": 7720.8,
+      "end": 7725.8,
+      "text": "Not arguing with that can also mean non-participation."
+    },
+    {
+      "start": 7725.8,
+      "end": 7737.8,
+      "text": "You have to do further work to discover whether the premium or whether the discount is justified and whether you agree with the market."
+    },
+    {
+      "start": 7737.8,
+      "end": 7747.8,
+      "text": "And then there's further work to be done on timing and catalysts for a stock to move within our desired time horizon."
+    },
+    {
+      "start": 7747.8,
+      "end": 7754.8,
+      "text": "So further work is required and non-participation is always an option."
+    },
+    {
+      "start": 7754.8,
+      "end": 7757.8,
+      "text": "So let's summarize this, guys."
+    },
+    {
+      "start": 7757.8,
+      "end": 7759.8,
+      "text": "Some very important lessons here."
+    },
+    {
+      "start": 7759.8,
+      "end": 7762.8,
+      "text": "And it's been obviously a pretty long video."
+    },
+    {
+      "start": 7762.8,
+      "end": 7767.8,
+      "text": "Let's summarize this, trade idea generation."
+    },
+    {
+      "start": 7767.8,
+      "end": 7775.8,
+      "text": "It is without question the most important ongoing responsibility of a consistently profitable trader."
+    },
+    {
+      "start": 7775.8,
+      "end": 7784.8,
+      "text": "Without the oxygen that a constant stream of high quality ideas provides."
+    },
+    {
+      "start": 7784.8,
+      "end": 7789.8,
+      "text": "At best, we're going to be a firefighting trader."
+    },
+    {
+      "start": 7789.8,
+      "end": 7798.8,
+      "text": "However, we do still want to avoid being, obviously, the useless pleb or the reckless genius."
+    },
+    {
+      "start": 7798.8,
+      "end": 7810.8,
+      "text": "Ideally, we want to be long stocks that go up and short stocks that go down and have the right portfolio volatility, correlation and bias."
+    },
+    {
+      "start": 7810.8,
+      "end": 7827.8,
+      "text": "So assuming that we have that in place, this is best achieved by first identifying all of the companies with good fundamentals, potential longs, positive outliers and all of the companies with bad fundamentals."
+    },
+    {
+      "start": 7827.8,
+      "end": 7831.8,
+      "text": "Potential shorts, negative outliers."
+    },
+    {
+      "start": 7831.8,
+      "end": 7841.8,
+      "text": "We identify the positive and negative outliers in each sector and we run an inventory of potential ideas."
+    },
+    {
+      "start": 7841.8,
+      "end": 7853.8,
+      "text": "Then we look at relative forward looking PE ratio as our first metric because it signals quality."
+    },
+    {
+      "start": 7853.8,
+      "end": 7859.8,
+      "text": "And it tells us what money likes and dislikes in the market."
+    },
+    {
+      "start": 7859.8,
+      "end": 7860.8,
+      "text": "So what are we doing here?"
+    },
+    {
+      "start": 7860.8,
+      "end": 7869.8,
+      "text": "Essentially, we are allowing the market to identify for us the quality and the trash."
+    },
+    {
+      "start": 7869.8,
+      "end": 7871.8,
+      "text": "That is our first step."
+    },
+    {
+      "start": 7871.8,
+      "end": 7875.8,
+      "text": "And that is our interpretation of the PE ratio."
+    },
+    {
+      "start": 7875.8,
+      "end": 7876.8,
+      "text": "And that is our interpretation of the PE ratio."
+    },
+    {
+      "start": 7876.8,
+      "end": 7889.8,
+      "text": "However, this does not mean that we are done with our work to identify actual long and short ideas that become real positions."
+    },
+    {
+      "start": 7889.8,
+      "end": 7904.8,
+      "text": "It just simply means that we are eliminating a lot of disinteresting stocks that are likely to not become a beneficiary or victim of extreme relative money flows."
+    },
+    {
+      "start": 7904.8,
+      "end": 7905.8,
+      "text": "Okay."
+    },
+    {
+      "start": 7905.8,
+      "end": 7918.8,
+      "text": "So it's an identification process and at the same time eliminating a lot of stuff that as traders and PMs we are more than likely not interested in."
+    },
+    {
+      "start": 7918.8,
+      "end": 7934.8,
+      "text": "So, guys, you now know the power of the PE ratio and why it's used as our first quantitative process in the identification of sector outliers when we're doing our bottom-up analysis."
+    },
+    {
+      "start": 7934.8,
+      "end": 7939.8,
+      "text": "The good news is you learn it and understand it once."
+    },
+    {
+      "start": 7939.8,
+      "end": 7950.8,
+      "text": "However, you do have to apply it continuously and correctly as an initial process moving forward and forever."
+    },
+    {
+      "start": 7951.8,
+      "end": 7952.8,
+      "text": "Okay."
+    },
+    {
+      "start": 7952.8,
+      "end": 7954.8,
+      "text": "So, let's go back to the desk."
+    },
+    {
+      "start": 7954.8,
+      "end": 7965.8,
+      "text": "Let's summarize all of this and then we'll move on to the next video where we're going to continue to build out our trade idea generation process."
+    },
+    {
+      "start": 7970.8,
+      "end": 7971.8,
+      "text": "Okay, guys."
+    },
+    {
+      "start": 7971.8,
+      "end": 7973.8,
+      "text": "So, welcome back to the desk."
+    },
+    {
+      "start": 7973.8,
+      "end": 7979.8,
+      "text": "We are now officially in the next part of the PTM video series."
+    },
+    {
+      "start": 7979.8,
+      "end": 7986.8,
+      "text": "So, we are now in the bottom-up phase of the trade idea generation process."
+    },
+    {
+      "start": 7986.8,
+      "end": 8001.8,
+      "text": "When we download data for the stock market and stock sectors, we are going to end up with a bunch of stocks that are all defined as being in the same sector."
+    },
+    {
+      "start": 8001.8,
+      "end": 8015.8,
+      "text": "What we're seeking to do is go through a series of steps to locate and identify both positive and negative outliers in a particular sector."
+    },
+    {
+      "start": 8015.8,
+      "end": 8022.8,
+      "text": "So, we're trying to find out what money likes and what money dislikes."
+    },
+    {
+      "start": 8022.8,
+      "end": 8027.8,
+      "text": "We want the market on our side as traders."
+    },
+    {
+      "start": 8027.8,
+      "end": 8034.8,
+      "text": "That's very key to what we're doing here as we're going through the overall trade idea generation process."
+    },
+    {
+      "start": 8034.8,
+      "end": 8036.8,
+      "text": "So, where do we start?"
+    },
+    {
+      "start": 8036.8,
+      "end": 8043.8,
+      "text": "Well, we always start with price earnings ratio and we work backwards from that."
+    },
+    {
+      "start": 8043.8,
+      "end": 8056.8,
+      "text": "So, we start with PE and we work backwards to discover if the market actually does like or dislike particular stocks."
+    },
+    {
+      "start": 8056.8,
+      "end": 8063.8,
+      "text": "And then we look for the reasons why they like or dislike a particular stock."
+    },
+    {
+      "start": 8063.8,
+      "end": 8072.8,
+      "text": "So, the first question we want to answer is always what is trading on a premium and what is trading on a discount."
+    },
+    {
+      "start": 8072.8,
+      "end": 8073.8,
+      "text": "And then we move on."
+    },
+    {
+      "start": 8073.8,
+      "end": 8080.8,
+      "text": "We work backwards and we work out the reasons why something is on a premium or a discount."
+    },
+    {
+      "start": 8080.8,
+      "end": 8095.8,
+      "text": "So, starting with price earnings ratio, it's the quickest way to begin working out what is actually going on in a particular stock and what's going on across a particular sector."
+    },
+    {
+      "start": 8095.8,
+      "end": 8099.8,
+      "text": "Then we look for the reasons why."
+    },
+    {
+      "start": 8099.8,
+      "end": 8100.8,
+      "text": "Okay."
+    },
+    {
+      "start": 8100.8,
+      "end": 8106.8,
+      "text": "So, now we obviously went through in that video some theoretical examples."
+    },
+    {
+      "start": 8106.8,
+      "end": 8112.8,
+      "text": "And of course, it was quite entertaining in terms of the analogy that we used."
+    },
+    {
+      "start": 8112.8,
+      "end": 8118.8,
+      "text": "But this is to get it so it is burned into your mind."
+    },
+    {
+      "start": 8118.8,
+      "end": 8121.8,
+      "text": "So, you learn this and you never forget it."
+    },
+    {
+      "start": 8121.8,
+      "end": 8129.8,
+      "text": "So, guys, always start with PE, interpret it properly, and work backwards with the right interpretation."
+    },
+    {
+      "start": 8129.8,
+      "end": 8139.8,
+      "text": "Let's head over to the next video and continue with the trade idea generation process and the bottom-up phase."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}

@@ -1,0 +1,3037 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:29.000
+Okay guys, here we go. We're at video 20
+now. And in this one, I'm going to explain
+the concept of beta. So why it's useful to
+us and how we can calculate it at both the
+equity level and the portfolio level as
+well. I'm going to start by explaining
+what beta is and why it's useful. And then
+I'll move on to show you the model behind
+beta using an Excel example.
+
+00:00:29.000 --> 00:00:52.360
+Following that, we'll run through some
+ways that you can calculate beta
+yourselves, both as a snapshot value and
+in the form of a time series for
+individual stocks. And then at the end of
+the video, we're going to look at how you
+can use beta at the portfolio level to
+give you an understanding of your market
+exposure. And that's going to enable you
+to make decisions about hedging and
+position sizing within the portfolio.
+
+00:00:53.560 --> 00:01:06.380
+So what is beta? Let me give you a
+simplified version first. Essentially,
+beta is a statistic that estimates the
+economic sensitivity of a stock or a
+portfolio of stocks to the market as a
+whole.
+
+00:01:06.900 --> 00:01:26.760
+And by definition, the market has a beta
+value of 1. And basically, that acts as a
+reference point from which individual
+stocks beta is estimated around. So if an
+individual stock has a beta of 2, then for
+a given unit of return in the market, we
+would expect the stock to move twice as
+much in the same direction.
+
+00:01:26.820 --> 00:01:38.820
+For example, if the stock market as a
+whole increase by 1%, then we would expect
+the individual stock to increase by 2% if
+that stock had a beta of 2%.
+
+00:01:38.820 --> 00:01:50.740
+Conversely, if the market decreased by 1%,
+we would expect the stock to decrease by
+2%. So the sort of increases and decreases
+are magnified by a factor of beta.
+
+00:01:51.700 --> 00:02:00.880
+So if a stock has a beta value of greater
+than 1, what we can say about it is that
+it's more economically sensitive than the
+market as a whole.
+
+00:02:00.980 --> 00:02:04.680
+And if it has a value of less than 1%, we
+would say it's less sensitive.
+
+00:02:05.500 --> 00:02:11.720
+Now, perhaps the easiest way to start
+thinking about this is in terms of
+cyclical and defensive equities.
+
+00:02:12.360 --> 00:02:23.580
+So by definition, cyclical equities have
+earnings that are economically sensitive
+to the business cycle, which in turn means
+that the price of those equities are also
+sensitive to the business cycle.
+
+00:02:23.580 --> 00:02:28.480
+So think of discretionary purchases like
+travel, as an example.
+
+00:02:29.220 --> 00:02:35.480
+If the economy is in a bad way, then it's
+much less likely that consumers will spend
+lots of money on vacations.
+
+00:02:36.100 --> 00:02:47.860
+All else being equal then, we could guess
+that these companies have a beta value of
+greater than 1 because we would expect
+that their stock prices are more sensitive
+than the market as a whole to these
+economic fluctuations.
+
+00:02:48.360 --> 00:02:54.640
+And conversely, we can think of defensive
+stocks like grocery stores at the opposite
+end of the scale.
+
+00:02:54.900 --> 00:02:58.260
+People need to buy groceries irrelevant of
+the economic situation.
+
+00:02:58.520 --> 00:03:03.900
+And so those companies are likely to be
+less sensitive to economic fluctuations
+than the market as a whole.
+
+00:03:04.900 --> 00:03:14.200
+As a little detour for a moment, if you
+take a look at the sheet I've got open
+here, it contains details, including beta
+values, on a large list of US equities.
+
+00:03:14.200 --> 00:03:29.220
+And included in that list are almost 5,000
+companies with GICS sector and industry
+classifications, so that's G-I-C-S
+classifications, along with market cap
+data and beta values.
+
+00:03:29.700 --> 00:03:33.820
+All of these values are accurate as of the
+11th of September 2021.
+
+00:03:34.480 --> 00:03:44.920
+And so most likely they aren't going to be
+applicable for your own work in the
+future, but I did want to include them
+just so that you had an idea of what the
+beta values for these companies were at
+the time of filming.
+
+00:03:45.440 --> 00:03:57.860
+As well as that, perhaps more usefully,
+I've aggregated all of the stock data to
+come up with market-weighted beta values
+for every GICS sector, subsector, industry
+group and industry.
+
+00:03:57.860 --> 00:04:10.500
+And those values are unlikely to change
+very much in the near future, so they will
+give you a good idea of what sectors and
+industries are sort of sensitive, more
+sensitive and less sensitive to the
+economic cycle.
+
+00:04:11.460 --> 00:04:18.840
+Anyway, let me now dive in a little bit
+deeper and talk to you about where the
+statistic of beta that we're discussing
+here actually stems from.
+
+00:04:18.840 --> 00:04:28.140
+And it comes from a couple of different
+financial models, namely the single index
+model and the capital asset pricing model,
+but they both use basically the same
+theory.
+
+00:04:28.300 --> 00:04:35.960
+The idea of these models is to explain the
+returns of an asset using a single factor,
+so the returns of the market.
+
+00:04:35.960 --> 00:04:46.920
+And any error or excess return in these
+models is identified as either sort of
+firm-specific risk or something called
+alpha, depending on the model and the
+context in which it's being used.
+
+00:04:47.320 --> 00:04:58.300
+None of that stuff sort of really matters,
+all we're concerned with here is that we
+can create a simple model that estimates
+how much a stock moves in relation to the
+market based on past data.
+
+00:04:58.300 --> 00:05:11.000
+That gives us a value called beta, and we
+can then use that number to accomplish
+various things like hedging risks or
+understanding portfolio exposure, position
+sizing and volatility estimation.
+
+00:05:11.380 --> 00:05:15.820
+And we're going to be doing some of that
+stuff later in the video through some
+practical Excel work.
+
+00:05:16.940 --> 00:05:23.920
+Okay, I've made a lot of references to the
+market so far, and you might be wondering
+what I actually mean by that.
+
+00:05:24.460 --> 00:05:31.380
+Basically, when I say the market, I
+typically mean the whole equity market
+that's related to the stock that we're
+analysing.
+
+00:05:31.380 --> 00:05:34.940
+So for US stocks, that would be the US
+equity market.
+
+00:05:35.480 --> 00:05:40.280
+Now, it's not very easy to get returns
+data for the entire US stock market on
+aggregate.
+
+00:05:40.920 --> 00:05:48.880
+And so what we can do is use an
+approximation for the market by looking at
+the returns for US stock indices like the
+S&P 500.
+
+00:05:49.380 --> 00:05:58.840
+And as it turns out, the S&P 500 is
+actually a pretty good approximation for
+the market as a whole, because it accounts
+for the majority of economic output of
+listed companies.
+
+00:05:59.640 --> 00:06:11.040
+So let's have a look at the spreadsheet
+now, and to start things off, I'm going to
+talk about something called a simple
+linear regression model, which defines an
+equation with which we can then retrieve
+beta from.
+
+00:06:12.480 --> 00:06:19.960
+Okay, as you can see here, there's four
+sheets in this workbook, which, by the
+way, you'll be able to download yourselves
+in the downloads area for this video.
+
+00:06:20.920 --> 00:06:30.420
+We're going to work from right to left
+here, starting with calculating beta at
+the individual asset level, and then
+moving up to the portfolio level at the
+end of the video.
+
+00:06:31.300 --> 00:06:37.120
+All right, so let's look at this equity
+beta sheet first, and I'll explain what's
+going on here.
+
+00:06:37.640 --> 00:06:46.720
+What we've got is a sheet prefilled with
+weekly prices and returns for the S&P 500
+and two stocks, Sanderson Farms and Fluor
+Corporation.
+
+00:06:47.680 --> 00:06:51.720
+Prices are in columns B to D, and returns
+are in columns E through G.
+
+00:06:52.360 --> 00:07:00.140
+On the right-hand side of the sheet, there
+are some short company descriptions for
+each stock, and they describe the sort of
+business that they're in.
+
+00:07:00.140 --> 00:07:06.880
+So if you take a look, Sanderson Farms is
+basically a poultry company, whilst Fluor
+Corporation is an engineering business.
+
+00:07:08.380 --> 00:07:16.220
+Now, in the middle of the sheet, I've got
+a scatterplot chart showing the weekly
+returns data for both Sanderson Farms and
+the S&P 500,
+
+00:07:16.540 --> 00:07:22.860
+where Sanderson Farms returns are plotted
+on the y-axis, and S&P 500 returns are
+plotted on the x-axis.
+
+00:07:23.480 --> 00:07:29.140
+So each dot on the chart basically
+represents a weekly observation for the
+two sets of returns.
+
+00:07:29.140 --> 00:07:38.860
+So for example, if we look at the 25th of
+June observation here, we can see that
+Sanderson Farms returned 24.61% that week,
+
+00:07:39.000 --> 00:07:41.940
+and the S&P 500 returned 2.74%.
+
+00:07:41.940 --> 00:07:46.940
+In the chart, that would be one of these
+dots that you can see around here.
+
+00:07:47.040 --> 00:07:55.040
+And we know that because if we look across
+from those points to the y-axis, you can
+see the return value for Sanderson Farms
+is around 25%.
+
+00:07:55.040 --> 00:08:04.880
+Whilst if we look down from those points
+to the x-axis, you can also observe that
+the value for S&P returns is around 2.5%.
+
+00:08:04.880 --> 00:08:15.780
+As well as the dots representing each
+weekly observation in our data, I've also
+got a black dotted line running through
+all of these points,
+
+00:08:15.840 --> 00:08:19.840
+which actually represents what's called a
+simple linear regression line.
+
+00:08:20.400 --> 00:08:27.800
+That line's calculated by minimizing the
+summed squared vertical distances between
+all observations and their means,
+
+00:08:27.900 --> 00:08:31.740
+which is known as the ordinary least
+squared method.
+
+00:08:32.180 --> 00:08:34.580
+However, you know, you guys don't really
+need to know that.
+
+00:08:34.680 --> 00:08:40.360
+You guys can just think of it basically as
+a line of best fit through all of this
+data.
+
+00:08:41.560 --> 00:08:47.280
+Anyway, that line can be represented by an
+equation known as the regression equation.
+
+00:08:47.280 --> 00:08:51.160
+And in this example, I've written that in
+the top right of the chart.
+
+00:08:51.360 --> 00:08:58.880
+So the equation is y equals 0.5656x plus
+0.0022.
+
+00:09:00.100 --> 00:09:04.500
+Now, for those of you that can remember
+back to your high school maths,
+
+00:09:04.920 --> 00:09:09.460
+you'd know that this equation is in the
+form of a straight line.
+
+00:09:10.060 --> 00:09:14.140
+When I was at school, we learned that in
+the form of y equals mx plus c,
+
+00:09:14.140 --> 00:09:23.360
+where every y value could be worked out as
+some coefficient m multiplied by the
+related x observation plus some constant.
+
+00:09:23.960 --> 00:09:26.200
+So what does that actually mean?
+
+00:09:27.220 --> 00:09:34.380
+Well, our y observations here are our
+Sanderson farm returns and our x
+observations are S&P 500 returns.
+
+00:09:34.940 --> 00:09:50.820
+So the model equation estimates on average
+that the returns for Sanderson farms are
+equal to multiplying the S&P 500 returns
+over the same period by 0.5656 and adding
+0.0022 or 0.22%.
+
+00:09:50.820 --> 00:09:55.980
+Now, remember earlier when I described
+what beta was.
+
+00:09:56.800 --> 00:10:03.560
+It's essentially a measure of sensitivity
+of a stock's returns to the market or the
+S&P 500 in this case.
+
+00:10:04.100 --> 00:10:09.460
+So the value of sensitivity here can
+simply be measured by calculating the
+gradient of this line,
+
+00:10:09.460 --> 00:10:17.040
+since that represents the change in
+predicted Sanderson farm returns given a
+unit change in S&P 500 returns.
+
+00:10:17.720 --> 00:10:23.540
+The gradient of a straight line is just
+the coefficient of the equation before the
+x observation.
+
+00:10:23.540 --> 00:10:30.340
+So in the case of the slope or gradient
+here, it's 0.5656.
+
+00:10:31.380 --> 00:10:37.700
+That means, for example, if S&P 500
+returns are expected to increase by 5%,
+
+00:10:37.700 --> 00:10:49.400
+then Sanderson farms returns would be
+expected to increase by 5% multiplied by
+that 0.5656 number, which is about 2.8%.
+
+00:10:49.400 --> 00:10:56.740
+So let's go through a quick calculation
+example using the equation just to
+reinforce that concept.
+
+00:10:57.460 --> 00:11:02.760
+If our x value, S&P 500 returns, that is,
+measures 0%,
+
+00:11:02.760 --> 00:11:08.520
+then the regression model equation we have
+predicts that our y value, which is our
+Sanderson farm returns,
+
+00:11:09.080 --> 00:11:17.280
+should be equal to 0.5656 times by 0 plus
+0.0022, okay?
+
+00:11:17.600 --> 00:11:22.120
+And that is obviously just the constant at
+the end, which is 0.22%.
+
+00:11:22.120 --> 00:11:30.560
+If the S&P 500 return measures 5%, then
+our regression equation predicts that
+Sanderson farms return
+
+00:11:30.560 --> 00:11:44.900
+should be 0.5656 times 5% or 0.05 plus
+0.0022, which equals 0.03 roughly or
+3.048%.
+
+00:11:44.900 --> 00:11:52.100
+And you can see there that an increase in
+S&P 500 returns of 5% led to a predicted
+increase
+
+00:11:52.100 --> 00:11:55.560
+of about 2.8% in Sanderson farm returns.
+
+00:11:56.680 --> 00:12:01.380
+Now, hopefully all of that made sense, but
+basically what I've done here
+
+00:12:01.380 --> 00:12:08.860
+is generate a simple linear regression
+line using the returns data we have for
+the S&P 500 and Sanderson farms.
+
+00:12:09.240 --> 00:12:15.160
+The equation for that line represents a
+model that aims to predict the returns for
+Sanderson farms
+
+00:12:15.160 --> 00:12:18.340
+based on the returns over the same period
+for the S&P 500.
+
+00:12:18.860 --> 00:12:25.320
+The gradient of the line tells us the
+sensitivity of Sanderson farms returns to
+the S&P 500,
+
+00:12:25.320 --> 00:12:29.080
+which is simply the coefficient of our X
+values in the equation.
+
+00:12:29.240 --> 00:12:32.920
+So in this case, that value is 0.5656.
+
+00:12:33.040 --> 00:12:35.740
+And that is our estimation of beta.
+
+00:12:36.700 --> 00:12:44.060
+Since that value of beta is less than 1,
+it means we should expect Sanderson farms
+returns to be less economically sensitive
+than the market as a whole,
+
+00:12:44.180 --> 00:12:46.540
+as represented by the S&P 500 index.
+
+00:12:47.180 --> 00:12:51.420
+And more specifically, it predicts, given
+the underlying data set that we've used,
+
+00:12:51.960 --> 00:13:03.120
+that any change in returns for Sanderson
+farms will be equal to around 0.5656
+multiplied by the change in returns seen
+in the S&P 500 over the same period.
+
+00:13:04.200 --> 00:13:07.780
+Okay, don't worry at this stage if I've
+lost you.
+
+00:13:08.180 --> 00:13:12.840
+Realistically, all you need to know here
+is how to calculate beta for a stock,
+which I'm going to show you now,
+
+00:13:13.020 --> 00:13:16.380
+and also what beta represents, which we've
+kind of been through already.
+
+00:13:17.040 --> 00:13:21.080
+So to that end, let me drill this home
+though one more time.
+
+00:13:22.200 --> 00:13:25.660
+Beta represents the economic sensitivity
+of an asset.
+
+00:13:25.660 --> 00:13:30.320
+And by definition, the market has a beta
+value of 1.
+
+00:13:30.440 --> 00:13:35.820
+And so any stock that has a beta of over 1
+is said to be more economically sensitive
+than the market.
+
+00:13:36.260 --> 00:13:37.740
+So think cyclical sectors.
+
+00:13:38.340 --> 00:13:44.120
+And any stock with a beta of less than 1
+is said to be less economically sensitive
+than the market.
+
+00:13:44.240 --> 00:13:46.240
+So think defensive sectors.
+
+00:13:47.240 --> 00:13:55.440
+If a stock has a beta of 1, it means that
+a simple linear regression model predicts
+that for every 1% change in returns for
+the market,
+
+00:13:55.820 --> 00:13:58.500
+there will also be a 1% change in returns
+for the stock.
+
+00:13:58.900 --> 00:14:06.340
+If a stock has a beta of 0.5, then we can
+estimate for every 1% change in return in
+the market,
+
+00:14:06.700 --> 00:14:11.380
+there is a 0.5% change in returns for the
+stock in the same direction.
+
+00:14:11.380 --> 00:14:12.560
+And that's a key point here.
+
+00:14:13.440 --> 00:14:18.660
+When beta values are positive, it means
+the changes will be in the same direction
+as the market.
+
+00:14:19.540 --> 00:14:23.200
+In the unlikely scenario that you
+calculate a negative beta,
+
+00:14:23.800 --> 00:14:30.800
+then that would suggest that changes in
+stock returns move in the opposite
+direction to changes in market returns.
+
+00:14:31.800 --> 00:14:35.840
+Okay, so you'll be pleased to know now
+that I'm done clarifying beta.
+
+00:14:36.260 --> 00:14:39.240
+So let's move on to how to calculate it in
+Excel now.
+
+00:14:39.240 --> 00:14:41.080
+And we can do this in a number of ways.
+
+00:14:41.380 --> 00:14:46.280
+The first way I'm going to show you is via
+a scatterplot chart, as I've done here
+with Sanderson Farms,
+
+00:14:46.360 --> 00:14:52.820
+except this time I'm going to go through
+the whole process of creating the chart
+and the equation for Fluor Corporation.
+
+00:14:54.300 --> 00:14:59.660
+Although this is, you know, by no means
+the quickest way of estimating beta,
+
+00:15:00.080 --> 00:15:03.200
+it will teach you a few more things about
+charting in Excel.
+
+00:15:03.200 --> 00:15:07.740
+And I think it's always handy, really, to
+be able to generate scatterplot charts,
+
+00:15:07.800 --> 00:15:13.040
+given it's a great way of visualizing and
+understanding data and relationships
+between variables.
+
+00:15:13.300 --> 00:15:18.040
+And, you know, that knowledge can be
+translated to other applications as well,
+
+00:15:18.140 --> 00:15:19.900
+so other data analysis applications.
+
+00:15:21.180 --> 00:15:29.080
+So to begin with, I'm just going to select
+cell I-21 and then go to insert on the
+ribbon and choose to insert a scatterplot
+chart.
+
+00:15:30.080 --> 00:15:38.020
+Once that's done, I'm going to get a blank
+chart area appear and I'm just going to
+move and resize that so that it looks
+roughly the same as the Sanderson Farms
+chart area above.
+
+00:15:38.160 --> 00:15:44.680
+And then we're going to right-click within
+that chart area and go to select data to
+add the data series that we need.
+
+00:15:45.360 --> 00:15:48.920
+To do that, I'm going to click the add
+series button on the left-hand side.
+
+00:15:50.180 --> 00:15:55.440
+The series name is just going to be FLR
+versus SP500 returns.
+
+00:15:55.820 --> 00:16:03.640
+Okay, that's just because we're plotting a
+scatterplot chart of our weekly
+observations for Fluor Corporation versus
+S&P 500 returns here.
+
+00:16:04.300 --> 00:16:12.340
+Now, our X values are going to be our
+market returns, our S&P 500 returns, and
+our Y values are going to be our stock
+returns.
+
+00:16:12.440 --> 00:16:15.580
+And that has to be the case whenever
+you're calculating beta.
+
+00:16:15.800 --> 00:16:17.700
+Y values are always going to be stock
+returns.
+
+00:16:17.840 --> 00:16:20.040
+X values are always going to be market
+returns.
+
+00:16:20.040 --> 00:16:35.520
+So, our X values are going to run from
+cell E2 down to cell, I think, E2000 and
+something.
+
+00:16:36.520 --> 00:16:44.240
+Okay, so cell E2,165.
+
+00:16:44.320 --> 00:16:52.100
+The reason why I'm making the range down
+to that row is so that it matches the
+length of our Fluor Corporation returns.
+
+00:16:52.100 --> 00:16:59.480
+Okay, and when you're doing analysis like
+this, the ranges, the arrays that you pick
+always have to be the same length.
+
+00:16:59.680 --> 00:17:08.120
+Okay, so that's our X values, our market
+returns, so our Y values are just going to
+be the same sort of references, but in
+column G.
+
+00:17:08.280 --> 00:17:13.320
+So, from cell G2 down to cell G2165.
+
+00:17:13.740 --> 00:17:17.180
+Then we're going to press OK and OK again.
+
+00:17:17.920 --> 00:17:19.400
+Scroll back to the top of the chart.
+
+00:17:20.400 --> 00:17:28.940
+And we can see that we've got sort of a
+baseline chart here that looks somewhat
+like the scatter plot chart that we've got
+for Sanderson Farms above.
+
+00:17:29.600 --> 00:17:32.660
+There's a few things we need to do to tidy
+this up, though.
+
+00:17:32.660 --> 00:17:39.840
+The first of which is move our X and Y
+axes to the edges of the chart.
+
+00:17:40.100 --> 00:17:46.080
+So, we want the Y axis that's in the
+center here over to the left and the X
+axis in the center here down to the
+bottom.
+
+00:17:46.440 --> 00:17:55.300
+So, to do that, I'm going to double-click
+the Y axis first, go to labels on the
+right-hand side in this format axis panel
+and choose label position as low.
+
+00:17:55.600 --> 00:18:01.620
+Then we're going to do exactly the same
+thing for our X axis, so double-click that
+within this format axis panel.
+
+00:18:02.180 --> 00:18:06.340
+I'm going to, so format axis panel within
+the axis options tab, I should say.
+
+00:18:06.340 --> 00:18:12.460
+I'm going to go to the labels section and
+choose label position as low again.
+
+00:18:13.580 --> 00:18:16.040
+Okay, so that's looking quite a lot
+better.
+
+00:18:17.120 --> 00:18:23.880
+Another thing I think that we should
+probably do is increase the text size of
+these X and Y labels.
+
+00:18:23.880 --> 00:18:30.500
+So, I'm going to click on the Y axis
+again, go to home on the ribbon and just
+knock up the text size.
+
+00:18:31.880 --> 00:18:36.240
+Probably to 10 points for this one and the
+same for our X axis as well.
+
+00:18:37.820 --> 00:18:44.300
+Okay, next what we'll do is edit our
+observation points themselves.
+
+00:18:44.300 --> 00:18:56.180
+So, at the moment they're just all kind of
+opaque blue circles and you can see in the
+chart above standards and farms, they're
+kind of a slightly transparent circle with
+a border around them.
+
+00:18:56.180 --> 00:19:10.140
+And the reason why I quite like showing
+dot plots with a sort of transparent
+center in the markers is just so that you
+can kind of see when there's loads and
+loads of them piled on top of each other
+because the color becomes very opaque.
+
+00:19:10.140 --> 00:19:13.480
+So, you can kind of see where the data is
+really concentrated.
+
+00:19:13.480 --> 00:19:16.040
+So, let's do that now with this series
+here.
+
+00:19:16.040 --> 00:19:17.700
+So, I'm just going to click on that
+series.
+
+00:19:17.700 --> 00:19:24.600
+So, any of those data points and then in
+the format data series panel on the right
+hand side, go to fill and line.
+
+00:19:24.600 --> 00:19:49.980
+Choose the marker options down here and
+this is fine actually marker options can
+stay as circles, but if we go to the fill
+section of this tab, then we're going to
+choose solid fill and just make the
+transparency instead of 0% 50% and you can
+see that that's changed the sort of
+transparency of all of those markers in
+that chart already.
+
+00:19:49.980 --> 00:20:05.220
+Then I'm going to go to the border
+section, click solid line, press OK to
+making these changes as we're going and
+make the border just the same color
+basically and keep the transparency as 0.
+
+00:20:05.220 --> 00:20:07.220
+So, that's fine.
+
+00:20:07.220 --> 00:20:11.580
+That's basically all I wanted to do there
+and now the charts looking pretty good.
+
+00:20:11.580 --> 00:20:17.780
+It's we've pretty much done everything
+that we need to do in terms of aesthetics.
+
+00:20:17.780 --> 00:20:27.260
+We now need to move on to plotting the
+kind of regression line, the line of best
+fit that goes through all of this data and
+also the regression equation that goes
+with it.
+
+00:20:27.260 --> 00:20:38.540
+So, to do that, I'm selecting this chart
+again and I'm going to go to chart design
+on the ribbon, add chart element, choose
+trend line and linear trend line.
+
+00:20:38.540 --> 00:20:43.980
+So, that's going to add a blue dotted line
+and if I double click on that blue dotted
+line, we can then format that.
+
+00:20:43.980 --> 00:20:47.500
+I'm going to format it to a solid line
+that is black in color instead.
+
+00:20:47.500 --> 00:20:52.260
+So, it's a bit easier to see on the
+background of all those blue data points.
+
+00:20:52.260 --> 00:21:06.860
+And then within this panel, I can choose
+the trend line options tab at the top
+right here and choose to display the
+equation of that line on the chart and the
+R squared value as well.
+
+00:21:06.860 --> 00:21:12.740
+So, I've just ticked those two checkboxes
+here and you can see that the equation R
+squared value has appeared there.
+
+00:21:12.740 --> 00:21:26.860
+So, I'm just going to click and drag, left
+click and drag that to the top right so
+it's in the same position as we have it
+for Sanderson Farms and then on the home
+tab of the ribbon, just increase the text
+size again so we can see that a bit more
+easily.
+
+00:21:26.860 --> 00:21:37.620
+Okay, so that's our scatter plot chart
+done for Fluor Corporation and we've added
+a simple linear regression line with the
+equation defined in the top right.
+
+00:21:37.620 --> 00:21:42.980
+Now is probably a good time to mention
+what the R squared number is all about as
+well.
+
+00:21:42.980 --> 00:21:48.540
+Basically, that's a measure of how well
+the linear model explains all of the data.
+
+00:21:48.540 --> 00:21:56.540
+So, if the value is 1, it would explain
+all of the data perfectly and in this way,
+it's pretty much the same as what we saw
+with values of correlation.
+
+00:21:56.540 --> 00:22:03.380
+in the previous video, the greater the
+dispersion around the line, the weaker the
+model.
+
+00:22:03.380 --> 00:22:13.900
+I include these numbers really only as a
+reference, they don't necessarily affect
+the value that we take for beta since we
+know we're only estimating that based on
+the data that we have anyway.
+
+00:22:13.900 --> 00:22:22.140
+However, I do think it's interesting to
+get a basic understanding of how well the
+model predicts or fits the data.
+
+00:22:22.140 --> 00:22:26.220
+Anyway, with that scatter plot chart done,
+we can see the regression
+
+00:22:26.220 --> 00:22:37.060
+equation equation we have to explain Fluor
+Corporation's returns is 1.3999 times the
+market return minus 0.0012.
+
+00:22:37.060 --> 00:22:49.060
+From that, we know that the gradient of
+the line and hence our beta value for
+Fluor Corporation is at 1.3999 or let's
+just call it 1.4.
+
+00:22:49.060 --> 00:22:55.900
+Let's note down our two lifetime beta
+values from the stocks that we're looking
+at now.
+
+00:22:55.900 --> 00:23:03.900
+And I say lifetime beta because the beta
+values that we've estimated here are based
+on all of the available data that we have
+for these stocks going back in history.
+
+00:23:03.900 --> 00:23:14.740
+So in cell V10, I'm going to type lifetime
+beta and in the cell below that V11, I'm
+going
+
+00:23:14.740 --> 00:23:25.580
+to type equals 0.5656 or just 0.5656,
+which is the beta value we have calculated
+for Sanderson Farms.
+
+00:23:25.580 --> 00:23:38.420
+And before we go any further, let's think
+about these two beta estimates that we've
+got and whether they actually add up with
+our expectations.
+
+00:23:38.420 --> 00:23:53.900
+Sanderson Farms is a poultry company and
+that's clearly in the food processing
+sector.
+
+00:23:53.900 --> 00:24:05.180
+So we'd expect there to be demand for
+chicken irrelevant of what's going on in
+the broader economic cycles of both the US
+and the rest of the world.
+
+00:24:05.180 --> 00:24:11.220
+So from that perspective, I think a beta
+estimation of well below one makes a lot
+of sense.
+
+00:24:11.220 --> 00:24:18.620
+And so I'm not too worried about a
+significant error in that estimation
+purely based on economic logic in this
+instance.
+
+00:24:18.620 --> 00:24:31.780
+Equally, Fluor Corporation is an
+engineering business providing sort of
+procurement, construction and fabrication
+services worldwide with large segments in
+energy, chemicals, mining and industrials.
+
+00:24:31.780 --> 00:24:46.620
+And given those sectors drive the demand
+for Fluor Corporation services, we should
+expect that this company is quite
+sensitive to the economic cycle based on
+the fact that demand tends to fluctuate in
+those areas based on willingness to invest
+
+00:24:46.620 --> 00:25:03.140
+So again, this beta estimation of about
+1.4 makes sense again and it sort of shows
+that company profits and hence returns are
+cyclical and more sensitive to the market
+as a whole.
+
+00:25:04.140 --> 00:25:10.680
+Now, you'll be pleased to know you don't
+have to go through the process of building
+a scatterplot chart every time you want to
+obtain a beta value.
+
+00:25:11.160 --> 00:25:24.000
+There are a couple of much quicker ways
+that being said, I did think it'd be
+useful to go through that charting process
+as you might find some of the techniques
+and ideas discussed useful in other
+applications, as I said earlier.
+
+00:25:24.000 --> 00:25:31.920
+So let me show you a quicker method now to
+calculate beta by simply using a built in
+Excel function called the slope function.
+
+00:25:31.920 --> 00:25:37.760
+So let's assume we want to calculate the
+two year beta for Sanderson Farms.
+
+00:25:37.760 --> 00:25:48.760
+In cell V13, I'm going to type two year
+beta and in the cell below V14, I'm going
+to type in a formula which is equals
+slope.
+
+00:25:48.760 --> 00:25:53.600
+Within the slope function, you can see we
+have two parameters to define.
+
+00:25:53.600 --> 00:26:01.600
+This is just like we covered previously
+with correlation, we need to reference two
+arrays, one for our y values and one for
+our x values.
+
+00:26:01.600 --> 00:26:08.600
+And like I said, when it comes to beta,
+our y values are always the stock returns
+and our x values are always the market
+returns.
+
+00:26:08.600 --> 00:26:17.600
+And as with our correlation calculations
+in the previous video, the reference
+arrays must be the same length and over
+the same period as well.
+
+00:26:17.600 --> 00:26:32.600
+So in this instance, we want a two year
+beta calculation, so we need to select
+data from row two down to row 106 for both
+columns F, the Sanderson Farm returns and
+column E, which contain our market
+returns.
+
+00:26:32.600 --> 00:26:42.600
+That means the first array reference is F2
+to F106 and the second one after a comma
+is inserted is E2 to E106.
+
+00:26:42.600 --> 00:26:52.600
+When we close the brackets and press enter
+here, we can see that the calculation
+returns 0.45 and that is our two year beta
+estimate for Sanderson Farms.
+
+00:26:52.600 --> 00:26:59.600
+Clearly, that estimate is a little bit
+below our previous lifetime estimation
+when we use the entire dataset available.
+
+00:26:59.600 --> 00:27:06.600
+Again, this takes me back to some of the
+things I said in the previous video
+regarding the reliability of statistical
+estimates.
+
+00:27:06.600 --> 00:27:12.600
+They're by no means perfect, and they are
+going to vary depending on the underlying
+data used.
+
+00:27:12.600 --> 00:27:23.600
+The time window that you use to estimate
+things like beta and correlation depends
+on the logic that you want to use and
+potentially the availability of the data
+in the first place.
+
+00:27:23.600 --> 00:27:33.600
+I think whenever you're making a decision
+on the observational data that you're
+using for your analysis, always remember
+the goal of your analysis in the first
+place.
+
+00:27:33.600 --> 00:27:41.600
+So for beta and correlation, we want to
+use data that we think will give us the
+best estimate of what those values will be
+in the future.
+
+00:27:41.600 --> 00:27:49.600
+Usually, that means finding a balance
+between using the most recent data, which
+arguably better reflects the current
+economic environment for the firm,
+
+00:27:49.600 --> 00:27:55.600
+whilst also making sure that there's
+enough data points to enable statistical
+rigor.
+
+00:27:55.600 --> 00:28:05.600
+When it comes to beta, industry standards
+vary between using sort of two to five
+years of data on either monthly or weekly
+frequencies.
+
+00:28:05.600 --> 00:28:12.600
+But I would argue that really you should
+be using weekly frequencies over any time
+up to the sort of five year time horizon.
+
+00:28:12.600 --> 00:28:23.600
+For the most part, lifetime values are not
+used since both the sort of company and
+economic conditions have likely changed
+over that kind of length of period.
+
+00:28:23.600 --> 00:28:29.600
+So with that being said, let's calculate
+the three and five year beta now quickly
+for Sanderson Farms.
+
+00:28:29.600 --> 00:28:45.600
+So in cell W13, I'm typing three year beta
+and in the cell below that I'm going to
+type equals slope open brackets and then
+I'm going to choose Sanderson Farm returns
+going back three years.
+
+00:28:45.600 --> 00:28:52.600
+So from F2 to F158 followed by a comma
+followed by selecting our market returns
+over the same period.
+
+00:28:52.600 --> 00:29:02.600
+So that's E2 to E158 and I'm just typing
+this in because it's a little bit easier
+than sort of selecting to the correct row
+in this case and then close brackets.
+
+00:29:02.600 --> 00:29:06.600
+Press enter and then we'll move on to the
+five year beta.
+
+00:29:06.600 --> 00:29:13.600
+So in X13, I'm going to type five year
+beta and in the cell below X14, I'm going
+to type equals slope open brackets.
+
+00:29:13.600 --> 00:29:20.600
+This time I'm using five years of weekly
+returns data for each data series.
+
+00:29:20.600 --> 00:29:32.600
+So we're going to choose from F2 to F262
+for Sanderson Farm returns and in the
+second parameter E2 to E262 for market
+returns and then close brackets and press
+enter.
+
+00:29:33.600 --> 00:29:42.600
+So we can see here from these calculations
+that the three and five year betas for
+Sanderson Farms are 0.49 and 0.5
+respectively.
+
+00:29:42.600 --> 00:29:51.600
+So the values over all of these
+timeframes, lifetime included, are
+actually pretty close and in line with
+what we would say our economic logic is
+for this stock.
+
+00:29:51.600 --> 00:29:54.600
+So there's definitely no sort of red flags
+here.
+
+00:29:54.600 --> 00:30:06.600
+One thing I would say, though, is that you
+definitely don't want to get bogged down
+in the kind of decimal places and sort of
+accuracy to multiple decimal places of
+beta when calculating it in various ways.
+
+00:30:06.600 --> 00:30:10.600
+Any one of these calculations will
+actually be good enough to use.
+
+00:30:10.600 --> 00:30:12.600
+So don't worry too much about that stuff.
+
+00:30:12.600 --> 00:30:29.600
+What I do want to show you, though, and
+this is really for those of you that are
+more statistically minded and perhaps
+thinking of going into industry, is an
+additional statistic that gives us an idea
+of the statistical accuracy of the beta
+measure itself.
+
+00:30:29.600 --> 00:30:38.600
+And I'm not going to go through this in
+detail because it is really beyond the
+scope of this course, but you guys will be
+able to look it up afterwards if you want
+to.
+
+00:30:38.600 --> 00:30:42.600
+And like I said, it might be useful for
+some of you that are thinking of entering
+industry.
+
+00:30:42.600 --> 00:30:52.600
+So in cell V16, I'm going to type beta
+space SE, which stands for beta standard
+standard error.
+
+00:30:52.600 --> 00:30:59.600
+Now, standard error statistics are a
+little bit like standard deviations, but
+they can apply to error terms in
+statistical estimates.
+
+00:30:59.600 --> 00:31:07.600
+So basically the value we calculate for it
+effectively gives us a volatility for our
+beta estimate.
+
+00:31:07.600 --> 00:31:13.600
+And if we assume the error terms are
+normally distributed, then we can apply
+certain probabilities to ranges of beta.
+
+00:31:13.600 --> 00:31:19.600
+So let's calculate the beta standard error
+now then in cell W16.
+
+00:31:19.600 --> 00:31:26.600
+The formula that I'm going to use here is
+a long one and it's not necessary to
+explain.
+
+00:31:26.600 --> 00:31:33.600
+Like I said, I just want to show you
+quickly how you can obtain the beta
+standard error without dwelling too much
+on it.
+
+00:31:33.600 --> 00:31:36.600
+And you can always explore it more in your
+own time if you want to.
+
+00:31:36.600 --> 00:31:49.600
+So the formula is, and bear with me here,
+equals index, open brackets, lin est, so
+l-i-n-e-s-t, open brackets again, F2 to
+F106.
+
+00:31:49.600 --> 00:31:57.600
+Okay, we're looking at a two year beta
+here, two year beta standard error, I
+should say, followed by a comma.
+
+00:31:57.600 --> 00:32:08.600
+The second parameter here is going to be
+E2 to E106, followed by a comma, one
+comma, one, close brackets, comma, two,
+comma, one, close brackets.
+
+00:32:08.600 --> 00:32:12.600
+Now, you might be thinking here, what on
+earth is that equation?
+
+00:32:12.600 --> 00:32:15.600
+Like I said, I don't really have time to
+go into the formula and how it works.
+
+00:32:15.600 --> 00:32:21.600
+You're going to have to take my word for
+it that this does return the beta standard
+error.
+
+00:32:21.600 --> 00:32:29.600
+You can, of course, look up this sort of
+formula in your own time and also more
+about a beta standard error if you want
+to, like I said before.
+
+00:32:29.600 --> 00:32:36.600
+But anyway, you can see here that the
+standard error value that we obtain is
+roughly 0.15.
+
+00:32:36.600 --> 00:32:57.600
+So if we assume that our errors are
+normally distributed, then what we can say
+things like there is a 68% chance that the
+true beta lies within one standard error
+of our estimation, meaning 0.45 plus or
+minus 0.15, which is our two year beta
+estimate with a range of 0.15 either side
+of it.
+
+00:32:57.600 --> 00:32:59.600
+So one standard error either side of it.
+
+00:32:59.600 --> 00:33:13.600
+Alternatively, we can also say there is a
+95% chance that the true beta lies between
+0.45 plus or minus 0.3, which is two times
+the standard error around the two year
+estimate.
+
+00:33:13.600 --> 00:33:19.600
+Now, if that all sounds completely
+confusing to you, just forget about it
+now.
+
+00:33:19.600 --> 00:33:22.600
+It's irrelevant for retail trading
+application.
+
+00:33:22.600 --> 00:33:31.600
+That is just a small little segment I
+wanted to add for those of you that are
+more statistically minded or are just
+interested in learning more about this
+sort of stuff.
+
+00:33:31.600 --> 00:33:38.600
+It's not worth me spending any more time
+on because explaining it just isn't worth
+the marginal benefit of doing so.
+
+00:33:38.600 --> 00:33:48.600
+Really, all that matters is your estimates
+of beta itself and not particularly
+worrying about the errors in the estimates
+themselves too much.
+
+00:33:48.600 --> 00:33:53.600
+Just being aware that, you know, beta
+estimates are subject to error.
+
+00:33:53.600 --> 00:34:03.600
+That being said, there is one more thing I
+briefly want to mention about how beta
+estimates can be adjusted, which is
+something that's sometimes used in
+industry.
+
+00:34:03.600 --> 00:34:12.600
+So sometimes a formula is used to smooth
+out estimates of beta by multiplying them
+by two thirds and adding one third of the
+market beta.
+
+00:34:12.600 --> 00:34:22.600
+The reason behind that is that in the
+past, over long periods of time,
+companies' beta values have tended towards
+the market beta of one.
+
+00:34:22.600 --> 00:34:38.600
+And not only is there some statistical
+evidence of this, but also some economic
+theory underpinning it, which is simply
+that as businesses grow and mature, their
+revenues and profits gradually diversify
+to the point where the company starts
+behaving like the average market firm.
+
+00:34:38.600 --> 00:34:57.600
+There is also some statistical rationale
+behind this adjusted beta measure, which
+is that given the average market firm has
+a beta of one, our best estimate of any
+randomly picked firm's beta should be one
+as well before doing any other
+calculations.
+
+00:34:57.600 --> 00:35:09.600
+So therefore the sort of weighted approach
+of combining our best estimate of beta,
+which is one with our calculated beta
+estimation aims to reduce error on the
+basis of those factors.
+
+00:35:09.600 --> 00:35:21.600
+The split in weightings of two thirds to
+one third is based purely on empirical
+evidence of the trend of thousands of
+companies beta over time using past data.
+
+00:35:21.600 --> 00:35:24.600
+Now, you know, I'm not going to prove any
+of that.
+
+00:35:24.600 --> 00:35:28.600
+So again, you'll have to take my word for
+it, but that sort of evidence does exist.
+
+00:35:28.600 --> 00:35:39.600
+Now, my counter argument to using adjusted
+beta in our circumstances anyway, is that
+as traders, we're never seeking to take
+positions for long periods of time.
+
+00:35:39.600 --> 00:35:48.600
+So we don't need to be concerned with long
+drawn out changes in estimations based on
+kind of glacial shifts in company
+dynamics.
+
+00:35:48.600 --> 00:35:55.600
+So that being said, I don't think it's
+going to make a huge difference whichever
+way you measure beta on an individual
+asset basis.
+
+00:35:55.600 --> 00:35:57.600
+You can argue it in different ways.
+
+00:35:57.600 --> 00:36:03.600
+And really what I aim to do here is give
+you some supplementary information to
+increase your knowledge.
+
+00:36:03.600 --> 00:36:06.600
+And then the path that you choose is up to
+you.
+
+00:36:06.600 --> 00:36:13.600
+You can choose to ignore the additional
+information on beta error and adjusted
+beta that I've just given or look into it
+further and potentially use it.
+
+00:36:13.600 --> 00:36:21.600
+Or for you guys thinking about industry,
+obviously, you can take note of it and
+bring it up where appropriate on your
+career path.
+
+00:36:21.600 --> 00:36:24.600
+For most of you, I don't think it's going
+to make a difference.
+
+00:36:24.600 --> 00:36:32.600
+Again, I would say some of this stuff is
+relevant for you going in for those of you
+going into industry, but that's about it.
+
+00:36:32.600 --> 00:36:44.600
+Okay, so I'm not going to go into the
+process of calculating two, three and five
+year betas for Fluor Corporation because
+it's just exactly the same methodology as
+we used just now.
+
+00:36:44.600 --> 00:36:47.600
+And you guys understand how to do that by
+now, I'm sure.
+
+00:36:47.600 --> 00:36:52.600
+I will make sure to include it in the
+download file, though.
+
+00:36:52.600 --> 00:36:59.600
+And we are about to calculate those same
+values anyway in the next sheet for a
+slightly different purpose.
+
+00:36:59.600 --> 00:37:05.600
+Okay, let's now take a quick look at the
+next sheet, which is a beta time series
+sheet.
+
+00:37:05.600 --> 00:37:08.600
+In a way, there's nothing new here.
+
+00:37:08.600 --> 00:37:16.600
+What you can see here is the S&P 500 and
+Fluor Corporation returns along with a
+rolling calculation for two and three year
+betas.
+
+00:37:16.600 --> 00:37:23.600
+Now, these rolling calculations are run in
+exactly the same way as I ran rolling
+correlations in the previous video.
+
+00:37:23.600 --> 00:37:37.600
+But that being said, because we are using
+a slightly different function here to do
+it, I am going to quickly go through the
+process again for a five year rolling beta
+instead, which we can then add to the
+chart and I'll comment on it.
+
+00:37:37.600 --> 00:37:51.600
+So to calculate the rolling five year beta
+of Fluor Corporation, all we do is use the
+slope function on the returns of FLR and
+the S&P 500 index over five year time
+windows running from the most current data
+back as far as possible.
+
+00:37:51.600 --> 00:38:08.600
+So in cell H1, I'm going to head the
+column five year rolling beta and in the
+cell below H2, I'm going to type equals
+slope open brackets E2 to E262 as the
+first parameter array and a comma.
+
+00:38:08.600 --> 00:38:19.600
+And then the second parameter array will
+be the range D2 to D262 and close brackets
+that defines our Y observations as Fluor
+Corp returns over the last five years.
+
+00:38:19.600 --> 00:38:22.600
+So 260 weekly rows.
+
+00:38:22.600 --> 00:38:27.600
+And our X values are S&P 500 returns over
+the same timeframe.
+
+00:38:27.600 --> 00:38:33.600
+Once that cell is inputted, we can copy
+down the formula to row 1905.
+
+00:38:33.600 --> 00:38:47.600
+The reason being that row 1905 is the last
+row here is that the calculation, that's
+the last sort of row that the calculation
+can still make use of five years of
+returns data in the previous rows.
+
+00:38:47.600 --> 00:38:50.600
+So the rows below.
+
+00:38:50.600 --> 00:38:58.600
+So now that we have our rolling five year
+beta estimates, let's plot them in the
+chart to see how they compare with our two
+year and three year estimates.
+
+00:38:58.600 --> 00:39:04.600
+To do that, I'm going to select the chart
+and right click in the chart and choose
+select data.
+
+00:39:04.600 --> 00:39:06.600
+And then we're going to add a series.
+
+00:39:06.600 --> 00:39:12.600
+The series name is just going to be set to
+whatever's in cell H1.
+
+00:39:12.600 --> 00:39:15.600
+So it's our five year beta estimate.
+
+00:39:15.600 --> 00:39:22.600
+And the series values are going to be from
+H2 to H2061.
+
+00:39:22.600 --> 00:39:29.600
+Okay, so that's our rolling five year beta
+estimates from row two to row 2061.
+
+00:39:29.600 --> 00:39:51.600
+And the reason why we're selecting an
+array down to that row instead of row
+1905, which is actually where the data
+ends in that column, is that we need all
+of our data series that we're referencing
+in the chart to be the same length, which
+in this case is set to be equal to the
+longest data series that's referenced,
+which is our two year rolling beta series.
+
+00:39:51.600 --> 00:39:59.600
+Okay, now that we've got our five year
+rolling beta estimations added to our
+chart, let's take a quick look at it.
+
+00:39:59.600 --> 00:40:08.600
+Basically, what we can see and conclude
+here is, again, similar to the comments I
+gave in the previous video about rolling
+correlations.
+
+00:40:08.600 --> 00:40:13.600
+Firstly, it's pretty clear that beta
+estimates can change and sometimes quite
+significantly.
+
+00:40:13.600 --> 00:40:18.600
+So that is something that, of course, we
+need to be aware of whenever we're using
+beta estimates.
+
+00:40:18.600 --> 00:40:26.600
+Now, I already mentioned the positives and
+negatives of using shorter and more recent
+time windows for beta calculations
+compared to longer windows.
+
+00:40:26.600 --> 00:40:28.600
+So I'm not going to comment on that again.
+
+00:40:28.600 --> 00:40:38.600
+But what I will say is that we can see
+from the chart here that long time windows
+or longer time windows clearly look less
+volatile than shorter time periods.
+
+00:40:38.600 --> 00:40:44.600
+But equally, they're less responsive in
+times of change.
+
+00:40:44.600 --> 00:40:52.600
+Now, each stock you look at will have a
+different profile in terms of rolling
+betas and some will be more volatile and
+change more than others.
+
+00:40:52.600 --> 00:41:00.600
+And as I said before, I think whenever
+you're choosing the underlying data for
+your estimation of beta, there is no right
+answer.
+
+00:41:00.600 --> 00:41:08.600
+You should just kind of strive to use a
+time window that makes logical sense to
+you, considering that you want a forward
+looking estimate.
+
+00:41:08.600 --> 00:41:14.600
+So, for example, you should think through
+questions like, is your beta estimation
+based on enough data?
+
+00:41:14.600 --> 00:41:20.600
+Is the data recent enough to reflect the
+current position of the firm and economic
+conditions?
+
+00:41:20.600 --> 00:41:26.600
+Does the data incorporate old and stale
+data that perhaps isn't relevant now?
+
+00:41:26.600 --> 00:41:36.600
+Is the period that you're grabbing data
+from on the whole reflective of what we
+think conditions will be like over the
+period that we're looking to trade the
+stock?
+
+00:41:36.600 --> 00:41:40.600
+And I guess actually that's the big one
+that you need to think about.
+
+00:41:40.600 --> 00:41:49.600
+Like I said previously, and you can use
+this as a guide, industry practice is to
+typically use two to five year beta
+values.
+
+00:41:49.600 --> 00:41:57.600
+That is calculating beta from the most
+recent two to five year returns data.
+
+00:41:57.600 --> 00:42:01.600
+Now, don't panic yourself too much about
+all of that.
+
+00:42:01.600 --> 00:42:13.600
+You know, choosing what time period to
+use, because like I kind of said before,
+the variation in beta estimates that you
+get might be quite small anyway.
+
+00:42:13.600 --> 00:42:25.600
+And, you know, the most important thing
+really is that you actually know how to
+run your own beta calculations and that
+you understand them so that you can then
+apply them.
+
+00:42:25.600 --> 00:42:39.600
+And speaking of application, so far, all
+I've really told you in terms of how beta
+can be used is understanding whether a
+stock is likely to be economically
+sensitive or not, and perhaps whether it
+can be defined as a cyclical or defensive
+stock.
+
+00:42:39.600 --> 00:42:49.600
+Now, it's about time we looked at some
+more concrete uses of beta and we're going
+to do that now by looking at beta at the
+portfolio level.
+
+00:42:49.600 --> 00:42:57.600
+Okay, so let's go over to the portfolio
+beta sheet now, and this is where things
+become a lot more interesting.
+
+00:42:57.600 --> 00:43:07.600
+Before I go through the sheet in more
+detail, as a bit of an overview, portfolio
+beta is basically calculated by summing
+the weighted beta of all its constituents.
+
+00:43:07.600 --> 00:43:14.600
+Where the weighted beta for each position
+is its net weight in the portfolio
+multiplied by its beta.
+
+00:43:14.600 --> 00:43:21.600
+Now, all the same rules of analyzing beta
+apply in the same way at the portfolio
+level as they did at the stock level.
+
+00:43:21.600 --> 00:43:29.600
+And by that, I mean, it still represents
+the change in portfolio returns you can
+expect for a unit or from a unit change in
+the market.
+
+00:43:29.600 --> 00:43:37.600
+So for example, a portfolio beta of one
+suggests the market goes up by one
+percent, your portfolio will also go up by
+one percent.
+
+00:43:37.600 --> 00:43:50.600
+But more important than worrying about the
+specific percentage moves in your
+portfolio is being able to have a general
+understanding of the exposure your
+portfolio has to the market.
+
+00:43:50.600 --> 00:43:56.600
+When you run a long short portfolio, you
+should always have an opinion on the
+market as a whole.
+
+00:43:56.600 --> 00:44:01.600
+And that's what the sort of macro analysis
+section in this video series is all about.
+
+00:44:01.600 --> 00:44:08.600
+And it naturally kind of dictates whether
+you want your portfolio to be net long,
+net short or market neutral.
+
+00:44:09.600 --> 00:44:19.600
+When it comes to portfolio beta, a value
+of greater than zero represents a long
+bias, less than zero represents a short
+bias and zero itself is market neutral.
+
+00:44:19.600 --> 00:44:34.600
+Now, prior to this, you might have just
+been thinking that your net cash exposure,
+that is your dollar exposure of your longs
+minus your shorts would represent whether
+your portfolio is long, short or neutral
+to the market.
+
+00:44:34.600 --> 00:44:37.600
+Now, don't get me wrong, that is worth
+monitoring.
+
+00:44:37.600 --> 00:44:48.600
+But the problem with that method is that
+it doesn't take account for the risk or
+portfolio or sorry, or volatility of the
+portfolio's constituents.
+
+00:44:48.600 --> 00:44:54.600
+Portfolio beta is a much more accurate way
+to understand your exposure to the market
+as a whole than just your net dollar
+exposure.
+
+00:44:54.600 --> 00:45:03.600
+For example, putting on $50,000 into short
+positions and $50,000 into long positions
+means you're dollar neutral.
+
+00:45:03.600 --> 00:45:12.600
+But you might not actually have market
+neutral exposure once you account for the
+risk and volatility in your positions as
+measured by beta values.
+
+00:45:12.600 --> 00:45:18.600
+Let's make things simple here in an
+example so I can make myself clear.
+
+00:45:18.600 --> 00:45:28.600
+Let's say you allocated $50,000 to the
+long and short size of your portfolio, but
+your longs all have beta values of two and
+your shorts have beta values of 0.5.
+
+00:45:28.600 --> 00:45:43.600
+If the market moves down 1%, then your
+longs are estimated to lose 2% or $1,000
+and your shorts are only estimated to gain
+0.5% or $250.
+
+00:45:43.600 --> 00:45:55.600
+That's a net loss of $750 or 0.75% in the
+portfolio purely based on market
+movements, which doesn't sound very market
+neutral, does it?
+
+00:45:55.600 --> 00:46:00.600
+That should provide the key motivation
+really for understanding your portfolio
+beta.
+
+00:46:00.600 --> 00:46:14.600
+It's very important to have an idea of how
+your portfolio is positioned in terms of
+being net long, net short or market
+neutral so that you can make sure that it
+aligns with your fundamental
+predisposition in the sort of macro
+analysis that you do.
+
+00:46:14.600 --> 00:46:28.600
+And by the way, if you have been sort of
+put off so far with the sort of fact that
+beta estimates can vary quite
+significantly and are prone to error,
+don't be for this because at the portfolio
+level, the error is much, much tighter.
+
+00:46:28.600 --> 00:46:34.600
+And so portfolio beta measures tend to be
+more accurate than individual stock betas
+themselves.
+
+00:46:34.600 --> 00:46:38.600
+And there is statistical proof of that
+fact, but it's not worth going into in
+this video.
+
+00:46:38.600 --> 00:46:41.600
+And so again, you're just going to have to
+take my word for that.
+
+00:46:41.600 --> 00:46:47.600
+Now, obviously these estimates of beta at
+the portfolio level still aren't perfect.
+
+00:46:47.600 --> 00:46:52.600
+But what I'm saying here is that they are
+more accurate than estimates at the asset
+level.
+
+00:46:52.600 --> 00:47:05.600
+Okay, so that's the goal of this sheet,
+calculating and understanding your
+portfolio beta so that you can position
+yourself appropriately based on your
+fundamental views and your conviction in
+those views.
+
+00:47:05.600 --> 00:47:17.600
+As well as monitoring portfolio beta to
+understand your exposure to the market,
+this sheet will also give you more of an
+understanding about which of your
+portfolio positions carry more or less
+risk than others.
+
+00:47:17.600 --> 00:47:24.600
+And monitoring these aspects should then
+be checked against your own fundamental
+views and convictions.
+
+00:47:24.600 --> 00:47:31.600
+And then adjustments should be made
+accordingly if the portfolio structure
+isn't balanced in the way that you'd like
+it to be.
+
+00:47:31.600 --> 00:47:35.600
+So let me walk you through this sheet
+piece by piece now.
+
+00:47:35.600 --> 00:47:42.600
+As in the spreadsheets I've used in the
+previous videos, the only cells you need
+to edit in this sheet are the orange ones.
+
+00:47:42.600 --> 00:47:47.600
+And they help define the positions in your
+portfolio and the allocation to them.
+
+00:47:47.600 --> 00:47:52.600
+The rest of the cells are all calculation
+cells and so shouldn't be edited.
+
+00:47:52.600 --> 00:48:00.600
+In terms of the layout we've got here, the
+top section from rows 1 to 15 represent
+the long side of the portfolio.
+
+00:48:00.600 --> 00:48:05.600
+And the section below from rows 16 to 30
+represent the short side of the portfolio.
+
+00:48:05.600 --> 00:48:12.600
+Beyond that, right at the bottom, there's
+an aggregate section for the total
+portfolio.
+
+00:48:12.600 --> 00:48:16.600
+Working from left to right now, I've split
+the sheet into two sections.
+
+00:48:16.600 --> 00:48:24.600
+The blue section holds user inputs and
+calculation values that represent the
+current portfolio situation, or the one
+being modelled at least.
+
+00:48:24.600 --> 00:48:35.600
+And on the right hand side, there is a
+green section that represents potential
+target scenarios such as risk parity, beta
+parity and equal weighting.
+
+00:48:35.600 --> 00:48:37.600
+And I'm going to talk about those shortly.
+
+00:48:37.600 --> 00:48:41.600
+So let me briefly run through the user
+inputs in this sheet.
+
+00:48:41.600 --> 00:48:47.600
+In columns A and B, you can fill in the
+company name and ticker for each portfolio
+position that you have.
+
+00:48:47.600 --> 00:48:59.600
+In column C, you need to enter a value of
+beta for each position, which can be
+calculated in any of the ways that we've
+sort of looked at in the first section of
+this video.
+
+00:48:59.600 --> 00:49:06.600
+Beyond that, in columns D and E, the
+current price and number of shares held in
+each stock should be entered.
+
+00:49:06.600 --> 00:49:17.600
+And finally, if you're looking to use any
+of the target scenarios in the green
+section, you'll need to enter your dollar
+target gross exposure in cell J33.
+
+00:49:17.600 --> 00:49:27.600
+So that value should basically be the
+gross exposure you want for the entire
+portfolio, which is, you know, the sum of
+the gross value of all your positions
+added together.
+
+00:49:27.600 --> 00:49:37.600
+That isn't the same as your margin,
+though, by the way, because you may well
+run a leverage portfolio where the overall
+value of positions you hold is greater
+than your total margin.
+
+00:49:37.600 --> 00:49:44.600
+If you're confused about that, then
+hopefully it will become clear when we go
+through the calculation cells in the rest
+of the sheet.
+
+00:49:44.600 --> 00:49:52.600
+So before I move on to looking at the
+calculation cells in more detail, let's
+consider the portfolio scenario I've set
+up here currently.
+
+00:49:52.600 --> 00:49:58.600
+It should look pretty familiar to you guys
+because it's the same long short portfolio
+from the previous videos.
+
+00:49:58.600 --> 00:50:04.600
+I've calculated beta values for each of
+these stocks and obtained their current
+prices as of the time of filming.
+
+00:50:04.600 --> 00:50:08.600
+And so all that's left here to do is
+allocate some shares to each one.
+
+00:50:08.600 --> 00:50:15.600
+Now, if you remember back to this
+portfolio scenario in the previous videos,
+we assumed an allocation of $10,000 to
+each position.
+
+00:50:15.600 --> 00:50:32.600
+In reality, you can't just choose to
+allocate a nice round number like that to
+a certain stock and assume that it's going
+to be possible because positions need to
+be built up by being long or short a
+number of shares, each of which carry a
+certain price.
+
+00:50:32.600 --> 00:50:41.600
+So only if the share price is a divisor of
+$10,000 would you be able to allocate
+$10,000 to a position nice and neatly.
+
+00:50:41.600 --> 00:50:53.600
+However, of course, what we can do is go
+long or short the number of shares that
+gets us closest to an overall exposure of
+$10,000 for each position, which is what
+we're going to do now.
+
+00:50:53.600 --> 00:51:02.600
+So the way we do this is just by dividing
+the allocation to each position by the
+share price and rounding it to the nearest
+whole number.
+
+00:51:02.600 --> 00:51:09.600
+So, for example, for the VTRS position
+here, let's use a formula to calculate
+that in cell E3.
+
+00:51:09.600 --> 00:51:24.600
+And that formula is just going to be
+equals round open brackets 10,000 divided
+by D3, cell D3 comma 0 close brackets.
+
+00:51:24.600 --> 00:51:31.600
+What this formula does is use the function
+round to round a certain value to a
+desired number of decimal places.
+
+00:51:31.600 --> 00:51:36.600
+So inside the round function, the first
+parameter is the number that you want to
+round.
+
+00:51:36.600 --> 00:51:43.600
+So in this case, that is 10,000 because
+we're looking to allocate $10,000 divided
+by the current share price in cell D3.
+
+00:51:43.600 --> 00:51:48.600
+And the second parameter is the number of
+decimal places that we want to round to.
+
+00:51:48.600 --> 00:51:56.600
+And assuming we don't have access to
+fractional shares here, what we need to do
+is round the number of shares to the
+nearest whole number,
+
+00:51:56.600 --> 00:51:59.600
+which means the number of decimal places
+required is zero.
+
+00:51:59.600 --> 00:52:01.600
+So hopefully that makes sense.
+
+00:52:01.600 --> 00:52:09.600
+And you can see when we enter that
+formula, the number of shares required for
+this position is 725.
+
+00:52:09.600 --> 00:52:18.600
+Now, instead of running that formula for
+all 10 positions, I've actually created an
+automatic target scenario in the green
+section,
+
+00:52:18.600 --> 00:52:25.600
+which tells you how many shares are
+required in each position to achieve an
+equal dollar weighting across all of the
+positions in the portfolio.
+
+00:52:25.600 --> 00:52:33.600
+All you need to do is make sure that you
+have a target portfolio gross exposure set
+in cell J33.
+
+00:52:33.600 --> 00:52:40.600
+So we know for this portfolio that we've
+got 10 positions, each with a value of
+$10,000 roughly.
+
+00:52:40.600 --> 00:52:45.600
+And so we're kind of targeting a total
+portfolio exposure of $100,000.
+
+00:52:45.600 --> 00:52:49.600
+And you can see here that I've already
+entered that value into J33.
+
+00:52:49.600 --> 00:52:57.600
+And so if we take a look at column N now,
+you can see the number of shares required
+in every position to achieve equal dollar
+weightings.
+
+00:52:57.600 --> 00:53:04.600
+From there, if we want to implement that
+in our portfolio model, we can just copy
+across those values into column E,
+
+00:53:04.600 --> 00:53:10.600
+which I'm going to do here in turn for
+both the long and short sides of the
+portfolio.
+
+00:53:10.600 --> 00:53:17.600
+Now, when you do this, you must make sure
+you paste the cells as values into column
+E.
+
+00:53:17.600 --> 00:53:21.600
+We don't want to copy across the formulas
+from column N, just the output values
+themselves.
+
+00:53:21.600 --> 00:53:29.600
+So as we've done before, this is just done
+by right-clicking in the cells you want to
+copy down.
+
+00:53:29.600 --> 00:53:36.600
+Or sorry, selecting the cells that you
+want to copy and pressing Ctrl C or
+right-clicking and clicking copy.
+
+00:53:36.600 --> 00:53:45.600
+And then right-clicking the cell that you
+want to copy down from and selecting paste
+as values as the option from the menu,
+
+00:53:45.600 --> 00:53:48.600
+which is the clipboard option with the
+one, two, three on it.
+
+00:53:48.600 --> 00:53:59.600
+When we do that, for both the long and the
+short positions, you can see that all of
+our calculation cells in columns F to I
+have populated.
+
+00:53:59.600 --> 00:54:02.600
+So let's move on to what those mean now.
+
+00:54:04.600 --> 00:54:09.600
+In column F, we've got a calculation for
+dollar net exposure in each position.
+
+00:54:09.600 --> 00:54:17.600
+That is simply just the current price of
+each position multiplied by the number of
+shares multiplied by one for longs and
+minus one for shorts.
+
+00:54:17.600 --> 00:54:24.600
+Column G calculates the gross exposure for
+each position and is almost exactly the
+same.
+
+00:54:24.600 --> 00:54:28.600
+The only difference here is that it
+doesn't adjust for long or short
+positions.
+
+00:54:28.600 --> 00:54:40.600
+So you can see here in both columns F and
+G that we've achieved an almost equal
+dollar exposure to all of our positions
+based on the number of shares inputted for
+each stock in column E.
+
+00:54:40.600 --> 00:54:47.600
+It isn't exact, of course, because we've
+got rounding issues as I mentioned before,
+but it is close.
+
+00:54:47.600 --> 00:54:55.600
+Now in column H, we have the net weight of
+each position in the total portfolio.
+
+00:54:55.600 --> 00:55:02.600
+This is the net exposure for each position
+divided by the total gross exposure in the
+entire portfolio.
+
+00:55:02.600 --> 00:55:09.600
+And again, this shows that we've pretty
+much got identical dollar percentage
+weightings across the board.
+
+00:55:09.600 --> 00:55:18.600
+And finally, in column I, I've calculated
+what is called the net weighted beta for
+each position as a contribution to the
+total portfolio.
+
+00:55:18.600 --> 00:55:25.600
+So these numbers are computed by taking
+the net weight of each position multiplied
+by its beta.
+
+00:55:25.600 --> 00:55:30.600
+And when you add all of these values
+together, you get the overall value for
+portfolio beta.
+
+00:55:30.600 --> 00:55:37.600
+And so by definition, when taken
+individually, they give you an idea of
+where risk is skewed to in the portfolio.
+
+00:55:37.600 --> 00:55:53.600
+So, for example, since the values are a
+function of betas and weightings, we know
+that a relatively large value for net
+weighted beta in a certain position means
+that either one or both of the allocation
+to that position or the beta of that
+position is large.
+
+00:55:53.600 --> 00:56:00.600
+And by definition, that in turn suggests
+that the risk carried in that position is
+also large.
+
+00:56:00.600 --> 00:56:06.600
+Okay, so let's now look at the aggregated
+calculations for these columns.
+
+00:56:06.600 --> 00:56:13.600
+Cells F15 and F30 show the dollar net
+exposure for the long and short sides of
+the portfolio respectively.
+
+00:56:13.600 --> 00:56:22.600
+And when you add them together, you get
+the total dollar net exposure in the
+portfolio, which in this case is around
+$20,000 seen in cell F33.
+
+00:56:22.600 --> 00:56:35.600
+That makes sense because we've got six
+long positions all targeting a $10,000 net
+exposure and four short positions each
+targeting a minus $10,000 net exposure.
+
+00:56:35.600 --> 00:56:41.600
+And so when you sort of add all of that
+together, you get a value of $20,000
+overall.
+
+00:56:41.600 --> 00:56:47.600
+Similar calculations are run at the
+aggregate level for gross exposure in the
+adjacent cells.
+
+00:56:47.600 --> 00:57:00.600
+And in this case, we see roughly $60,000
+of exposure on the long side and almost
+$40,000 on the short side, which taken
+together equates to nearly $100,000 total
+gross exposure for the portfolio.
+
+00:57:00.600 --> 00:57:15.600
+In cells H15, H30, and H33, we have
+aggregation cells that translate the net
+exposures from column F into percentage
+weightings by dividing them by the total
+gross exposure of the portfolio.
+
+00:57:15.600 --> 00:57:23.600
+Effectively, these cells show you the
+percentage weighting in dollar terms
+assigned to the long and short sides of
+the portfolio.
+
+00:57:23.600 --> 00:57:36.600
+And again, when these are summed together,
+you get the dollar net weight at the
+portfolio level, which tells you whether
+you're long or short biased in terms of
+dollar exposure and how much as a
+percentage of total gross exposure.
+
+00:57:36.600 --> 00:57:46.600
+That same output can also be achieved
+simply by dividing the total net exposure
+by the total gross exposure, if that makes
+more sense to you.
+
+00:57:46.600 --> 00:57:50.600
+Finally, in column I, we have aggregations
+of weighted beta.
+
+00:57:50.600 --> 00:58:00.600
+Cell I33 is probably the most important
+cell in the sheet because it tells you the
+beta of your portfolio given all of the
+other inputs that you've defined.
+
+00:58:00.600 --> 00:58:08.600
+And we can see this portfolio structure
+has a beta of 0.3, which suggests it's net
+long the market.
+
+00:58:08.600 --> 00:58:16.600
+And we could estimate that if the market
+increased by say 10%, our portfolio would
+increase by around 3%.
+
+00:58:16.600 --> 00:58:24.600
+That might sound boring to you, but
+running a long short portfolio usually
+means you're hedged against the market
+movements, at least partially.
+
+00:58:24.600 --> 00:58:29.600
+And so it's very likely that you're always
+going to have a beta somewhere between one
+and minus one.
+
+00:58:29.600 --> 00:58:37.600
+And I would expect that even more likely
+is that that value will be somewhere
+between 0.5 and minus 0.5.
+
+00:58:37.600 --> 00:58:52.600
+As I said in previous videos, though, it
+doesn't necessarily mean that you should
+expect less return than the market for
+many reasons, such as, you know, the
+ability for this long short strategy to
+perform in all market conditions, as well
+as things like use of leverage.
+
+00:58:52.600 --> 00:59:06.600
+And of course, your ability as a good
+trader to generate alpha in each sort of
+trade idea, meaning your ability to obtain
+excess returns over that which is expected
+for each position given its beta value and
+the market fluctuations.
+
+00:59:06.600 --> 00:59:11.600
+I'll talk a little bit more about that
+later in the course when we get to
+performance metrics.
+
+00:59:11.600 --> 00:59:28.600
+Speaking of leverage again, though, if we
+take this portfolio as an example, if you
+have put these positions on only using,
+say, $20,000 of margin, then you're
+effectively five times levered since the
+gross exposure of the portfolio is
+$100,000.
+
+00:59:28.600 --> 00:59:36.600
+So a 3% move in your portfolio then would
+equate to a 15% move in your total account
+margin.
+
+00:59:36.600 --> 00:59:44.600
+Now, I know that under current rules,
+gaining that sort of leverage, at least in
+the US, isn't possible unless you're kind
+of using options or futures.
+
+00:59:44.600 --> 00:59:46.600
+But you get the idea of what I mean here.
+
+00:59:46.600 --> 00:59:53.600
+The reason we build long short portfolios
+is to create a strategy that can succeed
+and build wealth in all conditions.
+
+00:59:53.600 --> 00:59:58.600
+And it also takes advantage of things like
+low correlations.
+
+00:59:58.600 --> 01:00:02.600
+And so in turn, it achieves better risk
+reward dynamics.
+
+01:00:02.600 --> 01:00:12.600
+And that strategy can always then be
+levered up using various financial
+products to get closer to the kind of
+returns that you want to achieve.
+
+01:00:12.600 --> 01:00:19.600
+Anyway, I don't want to dwell too much on
+leverage since we talk about it in other
+areas of the course.
+
+01:00:19.600 --> 01:00:32.600
+Okay, so as well as beta being useful to
+gauge the overall market exposure your
+portfolio is carrying, we can also see how
+positions are contributing to the value of
+portfolio beta.
+
+01:00:32.600 --> 01:00:45.600
+So in this scenario, on the long side, we
+can see that XPO is carrying over 2.5
+times as much risk as TTC, since its value
+for net weighted beta is over 2.5 times as
+large.
+
+01:00:45.600 --> 01:00:52.600
+And if we look at why that might be the
+case, we know that the dollar weightings
+in the positions of this portfolio are
+fairly even.
+
+01:00:52.600 --> 01:00:57.600
+And so the additional risk with XPO must
+come from its value of beta.
+
+01:00:57.600 --> 01:01:00.600
+And when we look across, we can see that
+that's true.
+
+01:01:00.600 --> 01:01:08.600
+XPO's beta measures high at about 2.17,
+whilst TTC is quite low at 0.83.
+
+01:01:08.600 --> 01:01:23.600
+So the profit and loss in the XPO position
+is likely likely to be much more volatile,
+purely based on market fluctuations, which
+is why we attribute more risk to the trade
+as it stands.
+
+01:01:23.600 --> 01:01:26.600
+Now that isn't necessarily a bad thing.
+
+01:01:26.600 --> 01:01:31.600
+It's all really down to the sort of
+conviction level that you have for each of
+your ideas.
+
+01:01:31.600 --> 01:01:34.600
+And I'll come back to that in a little
+bit.
+
+01:01:34.600 --> 01:01:39.600
+Now on the short side of things, it's
+looking a little bit more even.
+
+01:01:39.600 --> 01:01:46.600
+All the net weighted betas are ranging
+between minus 0.155 and minus 0.121.
+
+01:01:46.600 --> 01:01:53.600
+And so by that logic, the risk is fairly
+evenly distributed across those positions.
+
+01:01:53.600 --> 01:02:12.600
+Okay, so hopefully you now understand a
+bit more about what net exposure is, what
+gross exposure is, how portfolio beta is
+calculated, and also how it can be
+analyzed both in terms of portfolio
+exposure and understanding the
+distribution of risk between positions in
+the portfolio.
+
+01:02:12.600 --> 01:02:22.600
+With that in mind, let's talk through a
+few scenarios now, and I'll discuss how
+you can use some of the functionality I've
+built in the green section of this sheet
+while we're at it.
+
+01:02:22.600 --> 01:02:33.600
+So first things first, for the current
+setup we have, I've already showed you how
+you can use column N to identify the
+shares required to reach equal dollar
+weightings in each position.
+
+01:02:33.600 --> 01:02:44.600
+However, now we've implemented those
+weightings into the portfolio, we can see
+that risk is distributed unevenly across
+all of our positions based on our net
+weighted beta calculations.
+
+01:02:44.600 --> 01:02:55.600
+Let's say now that for whatever reason we
+want to assign an even amount of risk
+based on values of beta to every single
+position in the portfolio.
+
+01:02:55.600 --> 01:03:02.600
+So, this is a scenario calculation that
+I've made in columns J and K, and I've
+called this scenario risk parity.
+
+01:03:02.600 --> 01:03:13.600
+And by the way, there are many
+professional firms that actually run this
+kind of sort of position sizing strategy,
+although, granted, this is a much more
+simplified version of it.
+
+01:03:13.600 --> 01:03:21.600
+So, column J uses a fairly complex formula
+to calculate the gross percentage weight
+required in each position to achieve this.
+
+01:03:21.600 --> 01:03:32.600
+And then column K uses whatever target
+gross exposure you've set in cell J33 to
+calculate the number of shares in each
+position required to achieve those
+weightings.
+
+01:03:32.600 --> 01:03:39.600
+So, let's have a look at what happens when
+we copy those share values across into the
+portfolio now.
+
+01:03:39.600 --> 01:03:50.600
+For our long positions, I'm just going to
+copy cells K3 to K14 and paste them as
+values into cell E3 by right clicking
+within that cell and choosing the paste as
+values option from the menu.
+
+01:03:50.600 --> 01:03:58.600
+Again, I want to stress that for this
+procedure, you do need to copy and paste
+the cells as values, otherwise the
+spreadsheet won't work.
+
+01:03:58.600 --> 01:04:03.600
+After doing that, I'm just going to do
+exactly the same for the short side of the
+portfolio.
+
+01:04:03.600 --> 01:04:08.600
+Okay, let's have a look at what's happened
+here.
+
+01:04:08.600 --> 01:04:15.600
+If we start in columns F2H, we can see
+that the dollar allocations to every
+position has changed and they're no longer
+even.
+
+01:04:15.600 --> 01:04:22.600
+Lower beta stocks have higher exposures
+and vice versa in order to kind of
+distribute risk evenly.
+
+01:04:22.600 --> 01:04:34.600
+By assessing the values in column I, we
+can see that this has been achieved quite
+well since every position has almost
+exactly the same value of weighted beta.
+
+01:04:34.600 --> 01:04:41.600
+If we take a look at our dollar net
+exposure and our portfolio beta, we're
+still net long by both accounts.
+
+01:04:41.600 --> 01:04:44.600
+So what have we actually done here?
+
+01:04:44.600 --> 01:04:59.600
+Well, all this strategy does is basically
+define the risk for each stock based on
+its value of beta and then assign a
+percentage allocation to each position
+position so that the weighted risk of each
+position becomes the same across the whole
+portfolio.
+
+01:04:59.600 --> 01:05:09.600
+If we had the same number of longs and
+shorts in the portfolio, this would mean
+we have a market neutral portfolio in beta
+terms, i.e. a portfolio beta of zero.
+
+01:05:09.600 --> 01:05:12.600
+But in this case, we have more longs than
+shorts.
+
+01:05:12.600 --> 01:05:16.600
+So the portfolio beta is still net long
+measuring 0.27.
+
+01:05:16.600 --> 01:05:21.600
+So the next question is, is this useful to
+us?
+
+01:05:21.600 --> 01:05:24.600
+And my answer to that is yes and no.
+
+01:05:24.600 --> 01:05:28.600
+It's useful to act as a starting point for
+position sizing.
+
+01:05:28.600 --> 01:05:35.600
+But logically, to keep these weightings,
+you would have to say that you have
+exactly the same level of conviction for
+every trade.
+
+01:05:35.600 --> 01:05:39.600
+The reality is that that's going to be
+very unlikely.
+
+01:05:39.600 --> 01:05:46.600
+You're always going to have stronger and
+weaker fundamental theses and these
+convictions will change based on price
+action as well.
+
+01:05:46.600 --> 01:06:02.600
+Now, aside from ignoring conviction,
+another downside of this strategy is that
+the only way you can actually control
+portfolio beta and hence market exposure
+is by either adding or removing positions
+rather than adjusting weightings.
+
+01:06:02.600 --> 01:06:11.600
+Now, we can improve on this slightly by
+looking at columns L and M, which model a
+scenario I have called beta parity.
+
+01:06:11.600 --> 01:06:23.600
+In this model, the weightings are risk
+adjusted in each side of the portfolio
+rather than the portfolio as a whole in
+order to achieve beta neutrality at the
+portfolio level, meaning a portfolio beta
+of zero.
+
+01:06:23.600 --> 01:06:30.600
+So in column L, the gross weightings are
+worked out in order to risk adjust all the
+weightings on the long side.
+
+01:06:30.600 --> 01:06:33.600
+In this column, the weightings are worked
+out in two sections.
+
+01:06:33.600 --> 01:06:46.600
+So all the long weightings add up to 100%
+and all the short weightings add up to
+100% as well, rather than the combination
+of both sets of weightings summing to 100%
+as per, you know, we saw in the risk
+parity model.
+
+01:06:46.600 --> 01:06:55.600
+Those weightings are then used to
+calculate the number of shares required
+for a portfolio with the target exposure
+set in cell J33.
+
+01:06:55.600 --> 01:07:04.600
+If I copy those values into the portfolio
+now, you can see that market neutrality is
+achieved with a portfolio beta close to
+zero.
+
+01:07:04.600 --> 01:07:10.600
+And as it happens, the way this
+calculation works also means that dollar
+neutrality is achieved as well.
+
+01:07:10.600 --> 01:07:24.600
+Now, obviously, portfolio beta and the net
+dollar weight in the portfolio aren't zero
+exactly, but that's purely due to kind of
+rounding and the fact that we can't buy
+fractional shares, as I've mentioned
+before.
+
+01:07:24.600 --> 01:07:39.600
+Now, I think this is a slightly better
+scenario model to work from as a baseline
+for positioning in the portfolio, since it
+starts with the assumption of market
+neutrality and risk parity within each
+side of the portfolio, both the long and
+short sides.
+
+01:07:39.600 --> 01:07:58.600
+Now, really, these scenario models are
+there just as kind of head checks and
+guides to show you what your portfolio
+would look like if all you had were some
+position ideas, but no real conviction
+about the market direction or which ideas
+were better than others.
+
+01:07:58.600 --> 01:08:10.600
+The reality is that you should have a
+fundamental view on the market, and you
+should have trades and ideas that you have
+varying levels of conviction for, because
+that's only natural.
+
+01:08:10.600 --> 01:08:22.600
+So to that end, and to conclude the video,
+I'm not trying to persuade you by any
+means that you should be creating a risk
+or beta parity strategy in your
+portfolios.
+
+01:08:22.600 --> 01:08:33.600
+Those are just interesting kind of
+baseline scenarios from which to work
+from, and I use them to help explain how
+this portfolio beta model works.
+
+01:08:33.600 --> 01:08:41.600
+What you really should be using this sheet
+for is primarily monitoring your current
+portfolio and modeling any changes you're
+thinking of making.
+
+01:08:41.600 --> 01:08:45.600
+And when monitoring your portfolio, you're
+looking for a few things.
+
+01:08:45.600 --> 01:08:54.600
+Firstly, at the portfolio level, you want
+to know what your net dollar exposure is
+and weight is, and also your portfolio
+beta.
+
+01:08:54.600 --> 01:09:07.600
+The beta value is the most important here
+because it's going to provide you with a
+more accurate idea as to whether your
+portfolio truly is net long, short or
+neutral, and by how much as well.
+
+01:09:07.600 --> 01:09:22.600
+For most well-balanced long, short
+portfolios, I would expect beta to range
+from probably minus 0.3 to plus 0.3, but
+that range can widen if you're taking on a
+lot of leverage as I kind of discussed
+before.
+
+01:09:22.600 --> 01:09:29.600
+You need to make sure that your portfolio
+beta is in line with your fundamental
+outlook on the market as a whole.
+
+01:09:29.600 --> 01:09:32.600
+And if it isn't, then adjustments will
+have to be made.
+
+01:09:32.600 --> 01:09:39.600
+And that might mean adding more weight to
+certain stocks or adding or subtracting
+entire positions as well.
+
+01:09:39.600 --> 01:09:53.600
+Drilling down from the sort of aggregate
+portfolio level, you should also be
+monitoring the relative risk carried by
+each position through the net weight, that
+net weighted beta calculations in column
+I.
+
+01:09:53.600 --> 01:09:58.600
+And remember, these values are added up to
+create the overall beta value for the
+portfolio.
+
+01:09:58.600 --> 01:10:03.600
+And so numbers with larger magnitudes,
+whether positive or negative, carry more
+risk.
+
+01:10:03.600 --> 01:10:13.600
+You need to make sure that you know what
+positions are the ones that are carrying
+more relative market risk and also that
+you're happy for that to be the case.
+
+01:10:13.600 --> 01:10:17.600
+Again, if you aren't, then you will want
+to make some adjustments.
+
+01:10:17.600 --> 01:10:34.600
+And a final point here about monitoring
+your portfolio in this spreadsheet is that
+it goes without saying that even if you
+keep the same positions for a long period
+of time, the prices of stocks and
+therefore weightings as well as the
+estimations of beta will all move around.
+
+01:10:34.600 --> 01:10:37.600
+And so the sheet does need continuous
+updating.
+
+01:10:37.600 --> 01:10:43.600
+And I would say that it's probably
+sensible to update the spreadsheet on
+either a kind of weekly basis or perhaps
+every other week.
+
+01:10:43.600 --> 01:10:48.600
+And the same actually goes for the
+spreadsheets that we've looked at in the
+last few videos as well.
+
+01:10:50.600 --> 01:11:03.600
+Now, when you're thinking of adding and
+subtracting positions from the portfolio,
+you should model how this will affect
+portfolio beta as a whole and use the
+information inside the sheet to aid
+decisions on weightings.
+
+01:11:03.600 --> 01:11:12.600
+However, just like I said in the previous
+video, this shouldn't be your sole
+consideration when making structural
+changes to the portfolio.
+
+01:11:12.600 --> 01:11:18.600
+All trades must first and foremost come
+from solid fundamental ideas with good
+technical timing.
+
+01:11:18.600 --> 01:11:21.600
+And that will help create a conviction for
+each and every position.
+
+01:11:21.600 --> 01:11:27.600
+And that is the kind of relative starting
+point really for position weightings.
+
+01:11:27.600 --> 01:11:39.600
+After that, you should overlay how that
+actually fits into the portfolio using
+this spreadsheet and conduct a head check
+to see if you think the position and
+weighting choices that you've made are
+sensible.
+
+01:11:39.600 --> 01:11:46.600
+Now, I want to make a really important
+point here, which I touched on earlier,
+but it might not have been clear enough.
+
+01:11:46.600 --> 01:11:53.600
+Beta values represent the expected
+exposure of a position or portfolio to
+market movements.
+
+01:11:53.600 --> 01:11:59.600
+But the returns of the position and the
+portfolio are driven by more than just
+broad market forces.
+
+01:11:59.600 --> 01:12:09.600
+So when I say the market moves by one
+percent, if your portfolio beta is one,
+then you should expect your portfolio to
+move by one percent in the same direction.
+
+01:12:09.600 --> 01:12:13.600
+That's true, but only from a market
+exposure point of view.
+
+01:12:13.600 --> 01:12:19.600
+That's what would happen if your positions
+are kind of distinctly average.
+
+01:12:19.600 --> 01:12:32.600
+If your ideas are high quality and
+generate alpha, that is excess returns
+above those expected by market movements,
+then your portfolio should perform a lot
+better than whatever your beta value
+essentially predicts.
+
+01:12:32.600 --> 01:12:44.600
+Of course, we want to do this at an
+absolute minimum, but what we're really
+trying to target here are positions and
+portfolios that generate consistent
+absolute returns on top of alpha.
+
+01:12:44.600 --> 01:12:54.600
+So in our portfolios, we basically want to
+accept some level of market risk, as we
+always want to have a view on the market
+as a whole, whether long or short.
+
+01:12:54.600 --> 01:13:03.600
+We want to make outsized returns above
+market expectations predicted by beta,
+both on the way up and the way down.
+
+01:13:03.600 --> 01:13:10.600
+But when we outperform on the way down, we
+want to try and make sure that
+outperformance never translates to losses.
+
+01:13:10.600 --> 01:13:19.600
+So if the market goes down by 10% and our
+beta adjusted performance is say minus 5%,
+we are outperforming the market, but we're
+still losing money.
+
+01:13:19.600 --> 01:13:26.600
+We want to target absolute performance,
+meaning consistent positive returns, not
+just outperformance.
+
+01:13:26.600 --> 01:13:39.600
+We also typically want to use a sensible
+or acceptable amount of leverage to
+magnify portfolio volatility or exposure
+and hence returns when markets go up and
+down.
+
+01:13:39.600 --> 01:13:44.600
+This course is built to help you get
+outsized absolute returns.
+
+01:13:44.600 --> 01:13:51.600
+So don't think that your portfolio is
+hamstrung to perform in the way that your
+portfolio beta predicts because it isn't.
+
+01:13:51.600 --> 01:14:00.600
+Beta is just there to tell you your
+exposure to the general direction of the
+market, i.e. your market risk and where
+risk lies in the portfolio,
+
+01:14:00.600 --> 01:14:05.600
+which aids with things like position
+sizing of individual trades and so on.
+
+01:14:05.600 --> 01:14:09.600
+It's not there to predict your overall
+returns.
+
+01:14:09.600 --> 01:14:11.600
+So that's the end of the video.
+
+01:14:11.600 --> 01:14:18.600
+I hope you guys got plenty from it because
+once you fully get to grips with the
+concepts in this video and the last couple
+as well,
+
+01:14:18.600 --> 01:14:25.600
+you're going to have some really good
+knowledge and clarity about how to build
+high quality portfolio structures.
+
+01:14:25.600 --> 01:14:29.600
+And it should give your stats a really
+good boost over time as well.
+
+01:14:29.600 --> 01:14:33.600
+So that's it from me and I'll see you
+later in the video series.

@@ -1,0 +1,2001 @@
+1
+00:00:00,000 --> 00:00:29,980
+Hi, welcome back. Hope you enjoyed video
+number six with Chris. I know it was a
+little complicated, but don't be too
+concerned about it. As I highlighted in
+video number five, you don't really, as a
+retail trader, have to know the
+Black-Scholes formula and implied
+volatility from the market.
+
+2
+00:00:30,000 --> 00:00:59,980
+options prices inside out. As a first
+step, what you should be doing is really
+just understanding what it means for your
+portfolio in terms of the risk in your
+portfolio and your opportunities in a
+bigger picture way, your opportunities as
+a trader. Now we're going to move on to
+our second measure of historical
+volatility, which we call the average true
+range. Now before, when we looked at the
+
+3
+00:01:00,000 --> 00:01:28,200
+historical volatility of the returns
+distributions and odds calculation, the
+prices that we took were the open and the
+close for the S&P 500. And this can be
+repeated for any asset as long as you can
+get the data. What we're going to look at
+now is a calculation of volatility on a
+historical basis using the high and the
+low of the day.
+
+4
+00:01:29,000 --> 00:01:51,000
+And actually you can use this for a week,
+a month, a quarter, a year, any time
+horizon, but we're going to look at it on
+a daily basis. So we're keeping it
+consistent with looking at opportunities
+on a one day basis as we looked at in the
+historical distribution and odds
+calculation exercise.
+
+5
+00:01:51,000 --> 00:02:16,000
+So what we're going to get here now is a
+full appreciation and set of volatility
+indicators. So we've got two historical
+volatility indicators, the historical
+distribution and odds calculation, the
+historical average true range, and we've
+also got the implied volatility, which is
+the expected volatility of the asset in
+the future.
+
+6
+00:02:16,000 --> 00:02:45,000
+Once you've got this suite of volatility
+measures, indicators, you're going to
+understand your opportunities and your
+risk a hell of a lot more as a trader. And
+you're going to stop taking the
+professional trader approach, which is
+what we're going to move on to really in
+the next section in video eight, when we
+move on to how we begin to build a process
+to actually get the odds in our favour by
+increasing our time horizon.
+
+7
+00:02:45,000 --> 00:03:07,000
+And looking at that 3% of information,
+interpreting the information well in the
+correct way and turning it into real hard
+dollars. So let's go over to the stage now
+where we're going to go through the
+average true range. And Chris is also
+going to show you how to calculate this in
+Excel.
+
+8
+00:03:07,000 --> 00:03:24,000
+So in Excel, it's a lot easier than what
+we've done in Excel, it's a lot easier
+than what we've done so far in terms of
+distribution and odds and implied
+volatility. But we're now using the high
+and the low data of the day, rather than
+the open and the closed data, or in the
+implied using options data.
+
+9
+00:03:25,000 --> 00:03:42,000
+So let's go through the theory and
+practice of the ATR, the average true
+range. And then let's go straight to Chris
+as well. And he's going to show you on the
+computer screen, how to actually calculate
+it and how you can use it.
+
+10
+00:03:44,000 --> 00:04:03,000
+Has anybody heard of this one before? The
+average true range. Before we looked at
+historical volatility, and we used open
+and closed data for the S&P 500.
+
+11
+00:04:03,000 --> 00:04:16,000
+We're now back to looking at historical
+volatility, but we're not looking at open
+and closed data. We're looking at the
+other data, high and low.
+
+12
+00:04:16,000 --> 00:04:32,000
+So we're looking for the average true
+range of an asset during a day, or over
+any time period. You can do it on a week
+to week, month to month.
+
+13
+00:04:32,000 --> 00:04:39,000
+Daily, weekly, monthly, monthly, average
+true range. You can pick whatever you
+want. What's more important here is the
+process.
+
+14
+00:04:40,000 --> 00:04:46,000
+True range of the low to the high. So the
+opportunities in between the open and the
+close.
+
+15
+00:04:47,000 --> 00:04:54,000
+And you can use it for anything. Stocks,
+currencies, commodities, bonds.
+
+16
+00:04:59,000 --> 00:05:02,000
+So how do we actually calculate it?
+
+17
+00:05:06,000 --> 00:05:09,000
+So let's go through an example of doing
+one over five days.
+
+18
+00:05:10,000 --> 00:05:13,000
+So just last five days, high and low
+prices.
+
+19
+00:05:14,000 --> 00:05:18,000
+Subtract the low price from the high
+price, and you get the true range.
+
+20
+00:05:19,000 --> 00:05:24,000
+Get the average true range, add them all
+up, and divide them by the amount of days.
+
+21
+00:05:24,000 --> 00:05:31,000
+And that tells you, on average, the
+difference between the high and the low
+for that asset in a day.
+
+22
+00:05:34,000 --> 00:05:35,000
+Pretty simple.
+
+23
+00:05:38,000 --> 00:05:39,000
+I think we've got a spreadsheet here as
+well.
+
+24
+00:05:40,000 --> 00:05:41,000
+How do I get into this?
+
+25
+00:05:42,000 --> 00:05:43,000
+There we go.
+
+26
+00:05:43,000 --> 00:05:44,000
+There we go. Magic.
+
+27
+00:05:52,000 --> 00:05:53,000
+Can we see that?
+
+28
+00:05:57,000 --> 00:06:02,000
+So what I've got here is the high and low
+of the S&P 500 going back 50 years.
+
+29
+00:06:03,000 --> 00:06:09,000
+With the true range and the percentage of
+the high low volatility.
+
+30
+00:06:10,000 --> 00:06:13,000
+So the percentage of the true range.
+
+31
+00:06:14,000 --> 00:06:16,000
+And how that's trended over the last 50
+years.
+
+32
+00:06:17,000 --> 00:06:17,000
+Okay?
+
+33
+00:06:18,000 --> 00:06:22,000
+So how many trading days are there in a
+year?
+
+34
+00:06:23,000 --> 00:06:24,000
+Roughly 250.
+
+35
+00:06:25,000 --> 00:06:28,000
+So we've got 750 days for three years.
+
+36
+00:06:29,000 --> 00:06:34,000
+1250 for five, two and a half, five
+thousand, twelve and a half thousand
+trading days over 50 years.
+
+37
+00:06:40,000 --> 00:06:44,000
+Over 50 years, the volatility, the true
+range.
+
+38
+00:06:45,000 --> 00:06:47,000
+One spot, four, six. High to low.
+
+39
+00:06:48,000 --> 00:06:51,000
+What's happening to it?
+
+40
+00:06:52,000 --> 00:06:55,000
+What's happened to it over 50 years?
+
+41
+00:07:00,000 --> 00:07:03,000
+So what you're looking at here is the
+rolling average true range.
+
+42
+00:07:06,000 --> 00:07:07,000
+It's gone down.
+
+43
+00:07:08,000 --> 00:07:13,000
+And it's gone down pretty significantly
+over the last 10 to 10 years.
+
+44
+00:07:14,000 --> 00:07:16,000
+You can see a real trend.
+
+45
+00:07:17,000 --> 00:07:29,000
+Where the difference between the average
+difference between the high and the low in
+percentage terms for the S&P 500 goes down
+by about two thirds, 70%.
+
+46
+00:07:30,000 --> 00:07:31,000
+Yeah?
+
+47
+00:07:32,000 --> 00:07:37,000
+So the average now, let's have a look at
+the last 60 days.
+
+48
+00:07:38,000 --> 00:07:39,000
+This was only done last week.
+
+49
+00:07:40,000 --> 00:07:44,000
+So you're looking at 0.83% between the
+high and the low.
+
+50
+00:07:45,000 --> 00:07:45,000
+Yeah?
+
+51
+00:07:48,000 --> 00:07:50,000
+10 years ago, it was 1.4%.
+
+52
+00:07:51,000 --> 00:07:52,000
+Why do we think that is?
+
+53
+00:08:01,000 --> 00:08:02,000
+What do we think that is?
+
+54
+00:08:12,000 --> 00:08:13,000
+The what, sorry?
+
+55
+00:08:14,000 --> 00:08:15,000
+The beast is sleeping.
+
+56
+00:08:16,000 --> 00:08:17,000
+The beast is sleeping.
+
+57
+00:08:18,000 --> 00:08:19,000
+Yeah, it seems to be sleeping more often.
+
+58
+00:08:22,000 --> 00:08:34,000
+That's why things have been happening like
+this over the last 5 to 10 years.
+
+59
+00:08:39,000 --> 00:08:40,000
+It's not just in the stock market.
+
+60
+00:08:41,000 --> 00:08:46,000
+So if you do the same calculation with
+currencies, commodities, you'll get the
+spreadsheet.
+
+61
+00:08:47,000 --> 00:08:49,000
+So all you have to do is go and get the
+data and dump it into the spreadsheet.
+
+62
+00:08:50,000 --> 00:08:51,000
+And it'll spit out all the numbers.
+
+63
+00:08:54,000 --> 00:08:56,000
+So you do it with commodities, currencies,
+bonds.
+
+64
+00:08:57,000 --> 00:09:00,000
+The reasons why it's happening is those
+reasons there, really those four reasons.
+
+65
+00:09:01,000 --> 00:09:06,000
+Firstly, with central bank intervention in
+the money markets, bonds and options.
+
+66
+00:09:07,000 --> 00:09:23,000
+It's not very widely known, and it's a bit
+off topic, but one thing that's been
+happening in the last 12 months is the Fed
+has been selling volatility in the options
+market to keep volatility low.
+
+67
+00:09:24,000 --> 00:09:25,000
+So it's market manipulation.
+
+68
+00:09:26,000 --> 00:09:30,000
+But more widely known is that the Fed's
+been printing money.
+
+69
+00:09:31,000 --> 00:09:40,000
+Central bank rhetoric, so tail risk comes
+out of people's portfolios, volatility
+comes down.
+
+70
+00:09:44,000 --> 00:09:53,000
+But over a bigger structural issue, or
+issues, is the number of market
+participants in all of these markets.
+
+71
+00:09:54,000 --> 00:10:09,000
+So the switch from dial-up to broadband in
+the Western world, where 15 years ago, if
+I wanted to trade the S&P 500, I'd have
+had to have probably flown to America,
+opened a brokerage account, and flown
+back.
+
+72
+00:10:12,000 --> 00:10:16,000
+Now I can do it from my bedroom in
+seconds.
+
+73
+00:10:17,000 --> 00:10:24,000
+So there's been a huge upsurge in the
+amount of market participants all trying
+to day trade from their bedroom.
+
+74
+00:10:25,000 --> 00:10:31,000
+So all of those returns that were
+available 10, 15 years ago, they get
+petered away.
+
+75
+00:10:32,000 --> 00:10:33,000
+They get eaten up.
+
+76
+00:10:37,000 --> 00:10:42,000
+Probably as much or even more
+significantly is the onset of algorithmic
+trading.
+
+77
+00:10:44,000 --> 00:11:00,000
+As in, when we go back to the agency model
+of the investment banks, the agency orders
+going into the market to buy and sell
+orders on behalf of hedge funds and
+pension funds.
+
+78
+00:11:01,000 --> 00:11:02,000
+They just go in a machine.
+
+79
+00:11:03,000 --> 00:11:04,000
+That's how it started.
+
+80
+00:11:06,000 --> 00:11:07,000
+Then what happened?
+
+81
+00:11:08,000 --> 00:11:17,000
+Algorithms started to pop up that were
+designed to predict what the order flow
+was going to do.
+
+82
+00:11:18,000 --> 00:11:26,000
+So if an order goes into the market to
+buy, another algorithm is designed to buy
+ahead of it and sell back to it.
+
+83
+00:11:29,000 --> 00:11:30,000
+It's called scalping.
+
+84
+00:11:34,000 --> 00:11:35,000
+You scalp half a penny off the robot.
+
+85
+00:11:35,000 --> 00:11:47,000
+And it's got to such a stage now where
+there's even algorithms built to predict
+the algorithm that's predicting the order
+flow.
+
+86
+00:11:50,000 --> 00:11:56,000
+So what does that tell you when you look
+at those numbers, given the backdrop of
+the structural issues in the Western world
+stock markets?
+
+87
+00:11:57,000 --> 00:12:02,000
+It pretty much says, okay, 10 years ago,
+you might have had a chance of making
+money day trading.
+
+88
+00:12:02,000 --> 00:12:05,000
+Unfortunately, these days, you literally
+have no chance.
+
+89
+00:12:06,000 --> 00:12:09,000
+Because you're fighting robots that fight
+each other.
+
+90
+00:12:10,000 --> 00:12:23,000
+So you've got to have a portfolio 80% of
+the time based on historical volatility
+profiles.
+
+91
+00:12:23,000 --> 00:12:30,000
+Use the historical volatility profile ATR
+in different ways.
+
+92
+00:12:30,000 --> 00:12:35,000
+First of all, use it to calculate your
+opportunities over long time horizons.
+
+93
+00:12:36,000 --> 00:12:58,000
+And if you see in the stock market, if you
+see in any market, ATR coming down
+significantly over a 10-, 15-, 20-year
+period, you know that you're fighting
+against the trend if you're going into
+that market to try and make short-term
+money out of opportunities that are
+becoming less and less frequent.
+
+94
+00:12:58,000 --> 00:13:04,000
+But the second way you use it, that's the
+S&P 500.
+
+95
+00:13:04,000 --> 00:13:07,000
+You can go and do it for any stock, any
+commodity, any currency.
+
+96
+00:13:08,000 --> 00:13:10,000
+As long as you can get the data.
+
+97
+00:13:10,000 --> 00:13:17,000
+And pretty much, you can get the data for
+40,000 assets globally, publicly, by just
+Googling around.
+
+98
+00:13:17,000 --> 00:13:18,000
+You'll get it.
+
+99
+00:13:18,000 --> 00:13:19,000
+It's all free.
+
+100
+00:13:20,000 --> 00:13:27,000
+But you can use it for a stock and work
+out over different time horizons what your
+opportunities are of making certain
+amounts of money.
+
+101
+00:13:28,000 --> 00:13:34,000
+So, I'll do a weekly ATR, monthly ATR, et
+cetera, et cetera.
+
+102
+00:13:35,000 --> 00:13:36,000
+Why is that important?
+
+103
+00:13:36,000 --> 00:13:45,000
+Because that's going to set the basis or
+parameters for your expectations for your
+target and your stop loss over that time
+period.
+
+104
+00:13:46,000 --> 00:13:50,000
+So, what do you need to start off as a
+professional trader?
+
+105
+00:13:51,000 --> 00:13:53,000
+You need these three spreadsheets.
+
+106
+00:13:53,000 --> 00:13:58,000
+And you need to know how to build them and
+how to do it yourself.
+
+107
+00:13:58,000 --> 00:14:01,000
+So, you'll be sent them.
+
+108
+00:14:01,000 --> 00:14:04,000
+Return distributions and odds calculation.
+
+109
+00:14:04,000 --> 00:14:06,000
+Historical volatility assessment.
+
+110
+00:14:06,000 --> 00:14:08,000
+Backwards looking.
+
+111
+00:14:08,000 --> 00:14:12,000
+Market volatility assessment.
+
+112
+00:14:12,000 --> 00:14:16,000
+That's implied volatility, like the VIX,
+but you can do it for anything.
+
+113
+00:14:16,000 --> 00:14:19,000
+That's forward looking.
+
+114
+00:14:19,000 --> 00:14:23,000
+And ATR, historical.
+
+115
+00:14:23,000 --> 00:14:26,000
+Looking at historical volatility.
+
+116
+00:14:26,000 --> 00:14:29,000
+Backwards looking information.
+
+117
+00:14:29,000 --> 00:14:32,000
+Play with those spreadsheets.
+
+118
+00:14:32,000 --> 00:14:35,000
+Go and get data from different assets.
+
+119
+00:14:35,000 --> 00:14:37,000
+Dump it in the spreadsheets.
+
+120
+00:14:37,000 --> 00:14:39,000
+Stretch them, bend them.
+
+121
+00:14:39,000 --> 00:14:41,000
+Play with them how you like.
+
+122
+00:14:41,000 --> 00:14:48,000
+If you learn how to use them, you'll be
+having some very good conversations with
+professional traders.
+
+123
+00:14:50,000 --> 00:14:52,000
+Well, professional traders that know what
+they're doing.
+
+124
+00:14:52,000 --> 00:14:54,000
+There's a lot out there that don't.
+
+125
+00:14:58,000 --> 00:15:03,000
+So, as traders we just want to make money
+and go where the money is.
+
+126
+00:15:05,000 --> 00:15:09,000
+If we're being told that there's no money
+in these opportunities, we stay away from
+it.
+
+127
+00:15:09,000 --> 00:15:13,000
+And we trade them in a different way.
+
+128
+00:15:15,000 --> 00:15:16,000
+Or trade something else.
+
+129
+00:15:16,000 --> 00:15:17,000
+We go hunting.
+
+130
+00:15:19,000 --> 00:15:22,000
+Get the spear and the shield out and go to
+find the big animal that's awake.
+
+131
+00:15:23,000 --> 00:15:24,000
+Not sleeping in its cave.
+
+132
+00:15:28,000 --> 00:15:29,000
+That happens 80% of the time.
+
+133
+00:15:30,000 --> 00:15:32,000
+Cave sleeping is 80% of the time.
+
+134
+00:15:32,000 --> 00:15:38,000
+If you're unsure of the opportunities,
+just run through the exercises.
+
+135
+00:15:39,000 --> 00:15:45,000
+Once you've learnt how to do it, in the
+first month or two, you'll be able to do
+it with your eyes closed.
+
+136
+00:15:47,000 --> 00:15:48,000
+After a couple of months.
+
+137
+00:15:48,000 --> 00:15:54,000
+And you'll be able to realise what the
+opportunities are on a one day, one week,
+one month, one quarter, one year time
+horizon.
+
+138
+00:15:54,000 --> 00:15:55,000
+And you'll be able to do it with your eyes
+closed.
+
+139
+00:15:55,000 --> 00:15:56,000
+You'll be able to do it with your eyes
+closed.
+
+140
+00:15:56,000 --> 00:15:57,000
+You'll be able to do it with your eyes
+closed.
+
+141
+00:15:57,000 --> 00:15:58,000
+And you'll be able to do it with your eyes
+closed.
+
+142
+00:15:58,000 --> 00:15:59,000
+And you'll be able to do it with your eyes
+closed.
+
+143
+00:15:59,000 --> 00:16:00,000
+And you'll be able to do it with your eyes
+closed.
+
+144
+00:16:00,000 --> 00:16:01,000
+And you'll be able to do it with your eyes
+closed.
+
+145
+00:16:01,000 --> 00:16:02,000
+And you'll be able to do it with your eyes
+closed.
+
+146
+00:16:02,000 --> 00:16:03,000
+And say you're talking nonsense.
+
+147
+00:16:03,000 --> 00:16:09,000
+Or you might have a point here.
+
+148
+00:16:09,000 --> 00:16:10,000
+Check this out.
+
+149
+00:16:10,000 --> 00:16:14,000
+You're going to have some very good
+conversations with guys who know what
+they're doing.
+
+150
+00:16:14,000 --> 00:16:16,000
+If you follow all of this stuff.
+
+151
+00:16:16,000 --> 00:16:19,000
+And more importantly, if you just lock
+yourself in a room.
+
+152
+00:16:19,000 --> 00:16:21,000
+Close all the curtains and blinds.
+
+153
+00:16:21,000 --> 00:16:23,000
+And just go through these things.
+
+154
+00:16:23,000 --> 00:16:26,000
+You're going to stand a much better chance
+of not losing money.
+
+155
+00:16:26,000 --> 00:16:27,000
+And actually making money.
+
+156
+00:16:27,000 --> 00:16:30,000
+Because you're not going to allow yourself
+to take a position.
+
+157
+00:16:30,000 --> 00:16:33,000
+When you don't know this information.
+
+158
+00:16:33,000 --> 00:16:35,000
+It's the first thing you do.
+
+159
+00:16:35,000 --> 00:16:37,000
+You've got to check all this stuff out
+first.
+
+160
+00:16:37,000 --> 00:16:39,000
+Before you even consider having a
+position.
+
+161
+00:16:40,000 --> 00:16:41,000
+Make sense?
+
+162
+00:16:47,000 --> 00:16:51,000
+So what's the next generation of retail
+traders looking like?
+
+163
+00:16:51,000 --> 00:16:53,000
+Well, slowly but surely.
+
+164
+00:16:53,000 --> 00:16:58,000
+This information is seeping or trickling
+down to the retail trader.
+
+165
+00:16:58,000 --> 00:17:02,000
+Eventually they'll figure out that they
+can't make money day trading.
+
+166
+00:17:02,000 --> 00:17:03,000
+Maybe they won't.
+
+167
+00:17:03,000 --> 00:17:05,000
+We're having this conversation outside
+actually.
+
+168
+00:17:05,000 --> 00:17:07,000
+Do we want them to find out?
+
+169
+00:17:08,000 --> 00:17:09,000
+Not really.
+
+170
+00:17:09,000 --> 00:17:12,000
+Because we actually need them for
+liquidity on the other side.
+
+171
+00:17:12,000 --> 00:17:13,000
+So we can get out.
+
+172
+00:17:16,000 --> 00:17:17,000
+So what have you got to do?
+
+173
+00:17:17,000 --> 00:17:19,000
+You've got to increase your time horizon
+one to three months.
+
+174
+00:17:19,000 --> 00:17:22,000
+Take a predominantly fundamental approach.
+
+175
+00:17:22,000 --> 00:17:25,000
+Because over one to three months.
+
+176
+00:17:25,000 --> 00:17:28,000
+The fundamentals that affect the value of
+that asset.
+
+177
+00:17:29,000 --> 00:17:30,000
+Will be affecting that asset.
+
+178
+00:17:31,000 --> 00:17:33,000
+Because that's a big enough time horizon
+for it to happen.
+
+179
+00:17:36,000 --> 00:17:41,000
+So fundamentally, top down and bottom up.
+
+180
+00:17:43,000 --> 00:17:47,000
+So we're going to start from the top down
+and then overlay that with bottom up
+analysis.
+
+181
+00:17:48,000 --> 00:17:52,000
+And overlay it with technical analysis and
+price action indicators.
+
+182
+00:17:53,000 --> 00:17:58,000
+And a bunch of important trader processes
+for timing entry into your trades.
+
+183
+00:17:58,000 --> 00:18:00,000
+Into and out of your trades.
+
+184
+00:18:04,000 --> 00:18:06,000
+Once those positions are real.
+
+185
+00:18:06,000 --> 00:18:09,000
+And there's real money actually committed
+to the positions.
+
+186
+00:18:10,000 --> 00:18:14,000
+It's all about risk management and
+controlling your psychology.
+
+187
+00:18:14,000 --> 00:18:19,000
+So if we combine all of those factors.
+
+188
+00:18:20,000 --> 00:18:23,000
+You'll see that we're going to send a hell
+of a lot more chance making money.
+
+189
+00:18:25,000 --> 00:18:26,000
+It's not easy.
+
+190
+00:18:27,000 --> 00:18:28,000
+No one ever said it is.
+
+191
+00:18:29,000 --> 00:18:31,000
+But if you go through the processes
+multiple times.
+
+192
+00:18:32,000 --> 00:18:35,000
+You will get process memory.
+
+193
+00:18:36,000 --> 00:18:37,000
+Muscle memory.
+
+194
+00:18:38,000 --> 00:18:40,000
+And you'll end up being able to do it with
+your eyes closed.
+
+195
+00:18:41,000 --> 00:18:42,000
+That's where you want to be.
+
+196
+00:18:43,000 --> 00:18:46,000
+So you can assess something very, very
+quickly.
+
+197
+00:18:47,000 --> 00:18:49,000
+And work out that it's not an opportunity.
+
+198
+00:18:49,000 --> 00:18:50,000
+And it goes in the bin.
+
+199
+00:18:52,000 --> 00:18:55,000
+Or work out very, very quickly that
+something could be an opportunity.
+
+200
+00:18:56,000 --> 00:18:57,000
+And do more work.
+
+201
+00:18:58,000 --> 00:18:59,000
+And figure it out.
+
+202
+00:19:00,000 --> 00:19:01,000
+How much it's going to pay.
+
+203
+00:19:02,000 --> 00:19:03,000
+What to do when it goes wrong.
+
+204
+00:19:06,000 --> 00:19:10,000
+Okay, so Chris is now going to show you on
+the computer.
+
+205
+00:19:11,000 --> 00:19:13,000
+How you calculate the average true range.
+
+206
+00:19:14,000 --> 00:19:16,000
+The ATR initially for the S&P 500.
+
+207
+00:19:17,000 --> 00:19:19,000
+But remember you can use this for any
+asset.
+
+208
+00:19:20,000 --> 00:19:21,000
+As long as you can get the data.
+
+209
+00:19:22,000 --> 00:19:24,000
+For monitoring and calculating your
+opportunities.
+
+210
+00:19:25,000 --> 00:19:27,000
+And later we're going to use the ATR.
+
+211
+00:19:28,000 --> 00:19:29,000
+In the risk management section.
+
+212
+00:19:30,000 --> 00:19:31,000
+For how you use it.
+
+213
+00:19:32,000 --> 00:19:34,000
+In terms of calculating stop losses and
+targets.
+
+214
+00:19:35,000 --> 00:19:36,000
+Within risk management.
+
+215
+00:19:37,000 --> 00:19:38,000
+So let's go over to Chris.
+
+216
+00:19:39,000 --> 00:19:40,000
+Chris, take it away.
+
+217
+00:19:41,000 --> 00:19:57,000
+In this video I'm going to go through an
+example of how you can calculate your own
+average true range values.
+
+218
+00:19:58,000 --> 00:20:00,000
+In Excel for a given asset.
+
+219
+00:20:01,000 --> 00:20:05,000
+So basically average true range is a
+historical volatility indicator.
+
+220
+00:20:06,000 --> 00:20:13,000
+That's computed by taking rolling averages
+of high minus low intra period data.
+
+221
+00:20:14,000 --> 00:20:21,000
+And it basically gives us an indicator of
+what trading opportunities there are
+within a stock.
+
+222
+00:20:22,000 --> 00:20:23,000
+Or an asset.
+
+223
+00:20:24,000 --> 00:20:25,000
+And what trading opportunities there have
+been.
+
+224
+00:20:26,000 --> 00:20:29,000
+And the kind of volatilities we expect in
+these assets.
+
+225
+00:20:30,000 --> 00:20:38,000
+And they'll help us to determine what kind
+of trading or portfolio management style
+we're taking on using that asset.
+
+226
+00:20:39,000 --> 00:20:48,000
+So in this example we're going to go
+through calculating rolling one day
+average true ranges for the S&P 500.
+
+227
+00:20:49,000 --> 00:20:52,000
+So if we just get started by obtaining the
+data.
+
+228
+00:20:53,000 --> 00:20:54,000
+So we'll go to Yahoo Finance.
+
+229
+00:20:55,000 --> 00:20:56,000
+That's finance.yahoo.com
+
+230
+00:20:58,000 --> 00:21:03,000
+And enter S&P into the get quotes box.
+
+231
+00:21:04,000 --> 00:21:06,000
+And select the S&P 500.
+
+232
+00:21:07,000 --> 00:21:10,000
+And then go to historical prices on the
+left hand side.
+
+233
+00:21:11,000 --> 00:21:23,000
+And in this example we're going to use
+data from the 3rd of January 1962 to the
+19th of February 2013.
+
+234
+00:21:26,000 --> 00:21:27,000
+On a daily frequency basis.
+
+235
+00:21:28,000 --> 00:21:31,000
+So we just update this price data by
+clicking get prices.
+
+236
+00:21:32,000 --> 00:21:37,000
+And we'll scroll to the bottom of the
+webpage and click download to spreadsheet
+to obtain the spreadsheet of this data.
+
+237
+00:21:38,000 --> 00:21:44,000
+And at this point if you want you can save
+the spreadsheet to your hard drive and
+then open it from there.
+
+238
+00:21:45,000 --> 00:21:50,000
+Or as we're going to do you can select to
+open it straight away and then save it
+once the file is open.
+
+239
+00:21:51,000 --> 00:21:53,000
+So we just open this data.
+
+240
+00:21:54,000 --> 00:22:00,000
+And as I said the first thing we're going
+to do is go to file save as.
+
+241
+00:22:01,000 --> 00:22:05,000
+Save it as S&P 500 ATR.
+
+242
+00:22:06,000 --> 00:22:08,000
+Save it on the desktop so it's easy to
+find.
+
+243
+00:22:09,000 --> 00:22:11,000
+And save it as an Excel workbook.
+
+244
+00:22:11,000 --> 00:22:12,000
+And that's fine.
+
+245
+00:22:13,000 --> 00:22:17,000
+So we've been presented with the price
+data that Yahoo Finance gives us.
+
+246
+00:22:17,000 --> 00:22:21,000
+The first thing we'll do is adjust the
+date column so we can see all the dates.
+
+247
+00:22:22,000 --> 00:22:23,000
+So we'll just widen that column.
+
+248
+00:22:24,000 --> 00:22:29,000
+And the next thing we want to do is delete
+all the unnecessary columns in computing
+our ATR values.
+
+249
+00:22:30,000 --> 00:22:33,000
+So we only need the open, the high and the
+lows.
+
+250
+00:22:34,000 --> 00:22:39,000
+So we just close column E, F and G.
+
+251
+00:22:40,000 --> 00:22:41,000
+So we delete column E, F and G.
+
+252
+00:22:42,000 --> 00:22:44,000
+That's close volume and adjusted close.
+
+253
+00:22:45,000 --> 00:22:50,000
+To select those quickly I just select on
+column E, hold CTRL and click F and G as
+well.
+
+254
+00:22:50,000 --> 00:22:55,000
+And with those columns selected right
+click within the selection and go to
+delete.
+
+255
+00:22:56,000 --> 00:23:02,000
+Okay so in column E what we want to do is
+calculate our true ranges.
+
+256
+00:23:03,000 --> 00:23:10,000
+So that will be the high for our period of
+trading which is a day, the daily
+frequency we have.
+
+257
+00:23:11,000 --> 00:23:12,000
+Minus the low.
+
+258
+00:23:13,000 --> 00:23:16,000
+So in column E in cell E1 if we just type
+true range.
+
+259
+00:23:17,000 --> 00:23:25,000
+And in E2 we type equals C2 minus D2 which
+is the high minus the low.
+
+260
+00:23:26,000 --> 00:23:29,000
+And we want to copy that formula down the
+whole column in column E.
+
+261
+00:23:30,000 --> 00:23:34,000
+So to do that quickly we click on the data
+to the left hand side in any of the
+columns A to D.
+
+262
+00:23:35,000 --> 00:23:42,000
+Press CTRL and down and then go across to
+cell E12871 and press CTRL shift and up.
+
+263
+00:23:43,000 --> 00:23:48,000
+Which will select all the cells within
+column E up to cell E2.
+
+264
+00:23:49,000 --> 00:23:54,000
+And then press CTRL D to copy down the
+formula in E2 to all those cells we have
+selected.
+
+265
+00:23:55,000 --> 00:23:56,000
+Okay.
+
+266
+00:23:57,000 --> 00:24:01,000
+So the next thing we will do is calculate
+the one day rolling average true range.
+
+267
+00:24:02,000 --> 00:24:05,000
+We will head up the column with 1D.
+
+268
+00:24:05,000 --> 00:24:11,000
+And that will tell us that will be the
+column for our one day rolling average
+true range.
+
+269
+00:24:12,000 --> 00:24:25,000
+So to calculate that in cell F2 type
+equals two open brackets sum and then E2
+to E3 close the brackets and divide by
+two.
+
+270
+00:24:26,000 --> 00:24:33,000
+So basically this part of the formula just
+calculates an average of the last two days
+true range.
+
+271
+00:24:34,000 --> 00:24:39,000
+And then we divide that by the opening
+price on the previous day.
+
+272
+00:24:40,000 --> 00:24:41,000
+So that's B3.
+
+273
+00:24:42,000 --> 00:24:48,000
+And that will display the average in terms
+of the percentage from the opening price
+in the previous day.
+
+274
+00:24:49,000 --> 00:24:54,000
+And we'll do the same thing to copy this
+formula down.
+
+275
+00:24:54,000 --> 00:24:56,000
+So we'll navigate to the bottom of the
+spreadsheet.
+
+276
+00:24:57,000 --> 00:25:02,000
+Select all the cells in column F up to F2.
+
+277
+00:25:03,000 --> 00:25:06,000
+And then press CTRL D to copy that formula
+down.
+
+278
+00:25:07,000 --> 00:25:13,000
+And with that selection still highlighted,
+if we right click within the selection and
+go to format cells.
+
+279
+00:25:14,000 --> 00:25:17,000
+And then change the number to percentage.
+
+280
+00:25:18,000 --> 00:25:21,000
+So we can display all those in the
+percentage terms.
+
+281
+00:25:22,000 --> 00:25:27,000
+As you can see in the last cell in column
+F we've got an error.
+
+282
+00:25:28,000 --> 00:25:35,000
+And this is because the formula that we've
+used to calculate average true range
+requires price data from the previous day.
+
+283
+00:25:36,000 --> 00:25:38,000
+Which we don't have obviously in the last
+cell.
+
+284
+00:25:39,000 --> 00:25:43,000
+So let's go ahead and delete that cell by
+selecting it and pressing delete on the
+keyboard.
+
+285
+00:25:46,000 --> 00:25:55,000
+So what will be interesting to find out is
+how these one day average true ranges have
+changed over time.
+
+286
+00:25:56,000 --> 00:26:03,000
+So we'll take an average of these one day
+rolling average true ranges over different
+periods of time.
+
+287
+00:26:04,000 --> 00:26:06,000
+So we'll just set this up now actually.
+
+288
+00:26:07,000 --> 00:26:34,000
+So in I3 if we type, or in H3 we'll type
+days, in H2 years, and we'll do this over
+a period of 5 days, 20 days, 60 days, 250
+trading days which will equate to 1 year.
+
+289
+00:26:35,000 --> 00:27:00,000
+So we'll do this over a period of 5 days,
+750 trading days which will equate to 3
+years, 1250 trading days which equates to
+5 years, 2,500 trading days, 10 years,
+5,000 trading days which is 20 years.
+
+290
+00:27:01,000 --> 00:27:09,000
+And then finally we'll do 12,500 trading
+days which equates to 50 years.
+
+291
+00:27:10,000 --> 00:27:21,000
+So what we'll do from here is calculate
+the average of the 1 day ATRs over these
+periods of time.
+
+292
+00:27:22,000 --> 00:27:50,000
+So to do that in cell I4, if we start with
+5 days, we type equals average, and we
+select, we can either select or just type
+F2 to F6, and that will be the previous 5
+days average of the previous 5 days ATRs.
+
+293
+00:27:51,000 --> 00:27:56,000
+And we'll just continue with that method.
+
+294
+00:27:56,000 --> 00:28:10,000
+So I'm going to F61 here because we're
+looking at the average of the last, sorry,
+F21 because we're looking at the average
+of the last 20 days.
+
+295
+00:28:10,000 --> 00:28:26,000
+And what I'm going to do to make this
+quicker actually is if you copy, so if we
+go into cell J4, double click on it, then
+we can edit the formula.
+
+296
+00:28:26,000 --> 00:28:43,000
+If we just copy this, select this text and
+copy it, pressing Ctrl C, press Enter, go
+to the next cell, K, and press Ctrl V, and
+then we'll just edit the formula.
+
+297
+00:28:44,000 --> 00:29:02,000
+This is quicker than typing it in every
+time, so we're copying the formula for
+cell J4, we're going to copy it into all
+of these cells up to Q4, and instead of
+typing it out each time we'll just go into
+the formula and edit the last F cell that
+we're going to use.
+
+298
+00:29:03,000 --> 00:29:24,000
+So for 60 days it will be F61, 250 days it
+will be cell 251, 750 days 751, and so on.
+
+299
+00:29:33,000 --> 00:29:52,000
+Okay, so I think just before we summarize
+and talk about this data, if we just tidy
+this up a bit and we'll highlight these
+cells.
+
+300
+00:29:52,000 --> 00:30:05,000
+We'll highlight from cell H2 to Q2, if we
+just put that in a different colour, put
+that in a green, and then days, you know,
+grey maybe.
+
+301
+00:30:09,000 --> 00:30:20,000
+And that just tidies up the spreadsheet,
+and if we select all the cells from H2 to
+Q4, and give them a border by going to the
+borders option in the home tab,
+
+302
+00:30:21,000 --> 00:30:22,000
+and select all borders.
+
+303
+00:30:22,000 --> 00:30:24,000
+Okay, that's tidied it up a bit.
+
+304
+00:30:26,000 --> 00:30:29,000
+Okay, so the interpretation of this is
+quite simple really.
+
+305
+00:30:30,000 --> 00:30:37,000
+Basically what we can see is that the one
+day rolling average true range has been
+trending downwards,
+
+306
+00:30:38,000 --> 00:30:46,000
+and hence these values, so the five day
+average of the one day rolling ATRs is
+lower than 20 days, it's lower than 60,
+lower than 250,
+
+307
+00:30:47,000 --> 00:30:50,000
+so that basically is telling us our
+volatility has been decreasing.
+
+308
+00:30:50,000 --> 00:31:03,000
+As we get back to five years, we can see,
+or between five and ten, we can see that
+the volatilities actually increased from
+ten years ago to five years ago.
+
+309
+00:31:03,000 --> 00:31:08,000
+Now that's quite simply because of the
+subprime crisis around five years ago.
+
+310
+00:31:09,000 --> 00:31:11,000
+That obviously increased volatility levels
+a lot.
+
+311
+00:31:11,000 --> 00:31:19,000
+So that's why this is particularly high,
+and that's why we kind of reset a
+volatility and slowly work lower and lower
+and lower.
+
+312
+00:31:20,000 --> 00:31:33,000
+And as a general theme, in the last 50
+years, we can see volatility decreasing
+through our calculated true range values
+and one day ATRs.
+
+313
+00:31:34,000 --> 00:31:48,000
+And this is simply down to basically less
+trading opportunities in the short term in
+the one day timeframe because markets have
+become more efficient.
+
+314
+00:31:49,000 --> 00:32:02,000
+And so electronic trading systems have
+sped up the process of cancelling out
+arbitrage opportunities and it's just
+decreased volatility as a whole.
+
+315
+00:32:03,000 --> 00:32:20,000
+So that basically tells us that we need to
+expand our timeframe generally if our ATRs
+are low, which is a way of looking at
+volatility, we have to expand our
+timeframe to be able to enter
+profit-making opportunities.
+
+316
+00:32:21,000 --> 00:32:30,000
+So I'll just go back to Anton now, who
+will provide you with a quick summary of
+what we've discussed here so far.
+
+317
+00:32:32,000 --> 00:32:33,000
+Hi there, welcome back.
+
+318
+00:32:34,000 --> 00:32:44,000
+Now, you just watched Chris show you how
+to calculate the ATR on a rolling
+percentage basis for the S&P 500.
+
+319
+00:32:45,000 --> 00:32:52,000
+Now, this can be repeated, this exercise,
+for any asset in the world as long as you
+can get the data.
+
+320
+00:32:53,000 --> 00:33:08,000
+So now we've got a suite of volatility
+indicators where we've got two historical
+indicators, the historical distribution
+and odds calculation and the average true
+range, the rolling ATR.
+
+321
+00:33:09,000 --> 00:33:12,000
+And we've also got the more sophisticated
+one, the implied volatility indicator.
+
+322
+00:33:13,000 --> 00:33:34,000
+Now, when you take all of these things
+together, this gives you now an extremely
+professional approach in managing your
+expectations in terms of opportunities and
+managing your risk because it gives you a
+good indicator of what your risk is in the
+market and the risk in your portfolio.
+
+323
+00:33:35,000 --> 00:33:51,000
+Now, the ATR is slightly different,
+obviously, because in the other historical
+indicator, historical vol indicator, we
+looked at taking the data from the open to
+the close.
+
+324
+00:33:52,000 --> 00:34:01,000
+Now we're looking at the high to the low.
+So we're not looking at the opportunities
+over one day, we were looking at the
+opportunities within that day.
+
+325
+00:34:02,000 --> 00:34:05,000
+And obviously, the volatility of the high
+and the low is going to be greater.
+
+326
+00:34:06,000 --> 00:34:12,000
+But when you look at the rolling ATR in
+the example that we looked at, you should
+take a message from it.
+
+327
+00:34:13,000 --> 00:34:23,000
+And the message really with the rolling
+ATR in the S&P 500 is that volatility has
+been coming down consistently and very
+aggressively over the last decade.
+
+328
+00:34:24,000 --> 00:34:38,000
+And this has been happening for a
+multitude of reasons. But the main message
+you should really take here is that if ATR
+on a rolling basis has been coming down
+consistently over the last decade, what
+does that mean for short term traders?
+
+329
+00:34:39,000 --> 00:34:48,000
+It just simply means that the short term
+trading opportunities on a consistent
+basis have been coming out of the market
+over the last decade.
+
+330
+00:34:49,000 --> 00:34:57,000
+And what we've seen in the last three
+years is short term professional traders,
+day traders, actually just losing all of
+their jobs.
+
+331
+00:34:58,000 --> 00:35:07,000
+So day trading, day trading shops, day
+trading companies have literally been
+closing down all over the Western world.
+
+332
+00:35:08,000 --> 00:35:10,000
+And this is for this is again for a
+multitude of reasons.
+
+333
+00:35:11,000 --> 00:35:19,000
+But one of the main reasons is algorithmic
+trading and algorithmic trading is
+essentially computer based trading,
+quantitative trading,
+
+334
+00:35:20,000 --> 00:35:35,000
+where algorithms are programmed to go into
+the market and scalp and by scalping we
+mean going into the market and jumping
+ahead of orders in the market to buy and
+sell.
+
+335
+00:35:36,000 --> 00:35:40,000
+And what was that what was that ended up
+creating in the market?
+
+336
+00:35:41,000 --> 00:35:49,000
+Well, it's ended up creating a
+self-fulfilling prophecy because now
+algorithms are built to predict what other
+algorithms are going to do.
+
+337
+00:35:50,000 --> 00:35:53,000
+So all of the short term opportunities
+just keep coming out of the market.
+
+338
+00:35:54,000 --> 00:36:00,000
+And when you have a look at the rolling
+ATR of the S&P 500 there, that's what
+you're actually seeing.
+
+339
+00:36:01,000 --> 00:36:05,000
+You're seeing the short term opportunities
+being taken away by computers.
+
+340
+00:36:06,000 --> 00:36:13,000
+Now, when you become more of a
+professional trader and you take the
+approach of one to three months, the
+computers don't matter.
+
+341
+00:36:14,000 --> 00:36:20,000
+And day trading doesn't matter because
+over a one to three month time horizon,
+the opportunities exist.
+
+342
+00:36:21,000 --> 00:36:24,000
+They still exist and they still exist as
+they used to.
+
+343
+00:36:25,000 --> 00:36:30,000
+And all professional traders know this and
+they don't bother fighting the machines or
+day trading.
+
+344
+00:36:31,000 --> 00:36:35,000
+So back to these numbers again in the S&P
+500 and major currency pairs.
+
+345
+00:36:36,000 --> 00:36:46,000
+Well, 80% of the time, so 78% of the time
+in the S&P 500 and other major indices
+around the world, numbers are very
+similar.
+
+346
+00:36:47,000 --> 00:36:52,000
+And in major currency pairs, 75% of the
+time, there's no short term opportunities.
+
+347
+00:36:52,000 --> 00:36:57,000
+And those short term opportunities have
+got less and less over the last decade.
+
+348
+00:36:58,000 --> 00:37:02,000
+So with the ATR, the ATR really does
+demonstrate this.
+
+349
+00:37:03,000 --> 00:37:10,000
+It demonstrates what has been happening in
+the market consistently over the last
+decade compared to decades before.
+
+350
+00:37:11,000 --> 00:37:14,000
+So you should really take that as a
+message.
+
+351
+00:37:15,000 --> 00:37:23,000
+And in summary, what we can really say
+about all of these volatility indicators
+is that we use them really for two things.
+
+352
+00:37:24,000 --> 00:37:30,000
+One, it's identifying the opportunities in
+the market we're going to trade over any
+given time horizon.
+
+353
+00:37:31,000 --> 00:37:33,000
+To the risk in those markets.
+
+354
+00:37:34,000 --> 00:37:39,000
+And therefore, the risk of our potential
+portfolios or our current portfolios.
+
+355
+00:37:40,000 --> 00:37:45,000
+Now, once you know these numbers and you
+know how to go through these processes.
+
+356
+00:37:46,000 --> 00:37:55,000
+And remember, as a retail trader, you
+should probably be using more the
+historical volatility indicators than the
+more sophisticated implied volatility
+indicator.
+
+357
+00:37:56,000 --> 00:38:03,000
+When you understand these numbers and you
+can go through these processes in muscle
+memory, so you can do them very quickly.
+
+358
+00:38:04,000 --> 00:38:14,000
+What you do is actually you realize
+quickly what the opportunities are and the
+risk of putting on positions in certain
+assets and in asset classes.
+
+359
+00:38:15,000 --> 00:38:19,000
+And you start taking a more professional
+trader approach.
+
+360
+00:38:20,000 --> 00:38:40,000
+Now, clearly from what we've learned, we
+have to understand that the reason why
+retail traders lose money consistently
+over time is because they try to dictate
+to the market what the market should be
+doing when in fact the market just does
+what it wants to do.
+
+361
+00:38:41,000 --> 00:38:46,000
+Retail traders have one way of trading and
+they never adapt to their style.
+
+362
+00:38:47,000 --> 00:38:50,000
+They never adapt to what the market is
+telling them to adapt to.
+
+363
+00:38:51,000 --> 00:38:52,000
+And professional traders do the opposite.
+
+364
+00:38:53,000 --> 00:38:54,000
+So this is what you have to do.
+
+365
+00:38:55,000 --> 00:38:57,000
+This is what retail traders of the future
+have to try and emulate.
+
+366
+00:38:58,000 --> 00:39:10,000
+And the way to emulate it is to really
+deploy a strategy that professional
+successful traders and hedge fund managers
+actually use.
+
+367
+00:39:11,000 --> 00:39:17,000
+And they use this with their own money and
+they use it with trading other people's
+money, investors money.
+
+368
+00:39:18,000 --> 00:39:22,000
+Now, it's a fairly lengthy process, but
+it's actually quite simple.
+
+369
+00:39:23,000 --> 00:39:26,000
+And we're going to start with this now in
+video 8.
+
+370
+00:39:27,000 --> 00:39:34,000
+In video 8, we're going to start building
+out of the process where we're doing
+literally the opposite of what retail
+traders do.
+
+371
+00:39:35,000 --> 00:39:45,000
+As in building out of the process for
+managing long, short portfolios across all
+of the asset classes, equities,
+commodities, currencies, rates.
+
+372
+00:39:46,000 --> 00:39:51,000
+Taking a one to three month time horizon
+in all our positions.
+
+373
+00:39:52,000 --> 00:39:57,000
+Managing that portfolio correctly with due
+diligence and risk management.
+
+374
+00:39:58,000 --> 00:40:01,000
+And becoming consistently profitable
+traders.
+
+375
+00:40:02,000 --> 00:40:10,000
+And your job as a trader is really to make
+money from now till the day you retire.
+
+376
+00:40:11,000 --> 00:40:12,000
+So let's go over to video 8.
+
+377
+00:40:13,000 --> 00:40:14,000
+I'll see you on the other side.
+
+378
+00:40:15,000 --> 00:40:16,000
+This is where it gets fun.
+
+379
+00:40:17,000 --> 00:40:18,140
+Thank you.

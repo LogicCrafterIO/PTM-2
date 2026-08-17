@@ -1,0 +1,1810 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.98,
+      "text": "Okay, welcome back. Welcome to video number five. In video number four, what we looked at was the importance of calculating your odds through distributions. And essentially we looked at what is historical volatility. Historical volatility gives us a very good idea about the opportunities in an asset that we're about to offer."
+    },
+    {
+      "start": 30.0,
+      "end": 59.98,
+      "text": "to trade over any given time horizon. But what's also important is also calculating the future or expected volatility in an asset that we're about to trade. And retail traders don't really understand this and don't really do anything about it. And even professional traders, a lot of professional traders think, and retail traders think that if they look at implied volatility,"
+    },
+    {
+      "start": 60.0,
+      "end": 88.0,
+      "text": "when they look at it, they interpret it in a certain way, they interpret it in an incorrect way, if you like. You're going to find out why this is not necessarily the case, not true in the next section. Because what implied volatility really is about is two things. It's your expected opportunities in the future, but it also provides you with a good measure for managing your risk."
+    },
+    {
+      "start": 88.0,
+      "end": 116.0,
+      "text": "So we're not looking at historical volatility anymore. We're now looking at the implied volatility of an asset, what's going to happen in the future. Now, one of the big problems here is retail traders telling the market how they're going to trade. So let's think about this for a second. If the market that you're about to trade or take a position in says that the market is going to trade."
+    },
+    {
+      "start": 116.0,
+      "end": 134.96,
+      "text": "If volatility says that volatility is going up in the next 30 days, for example, or expected to go up, then what does that mean? It means that the market is now expecting that shorter term opportunities are going to come into the market."
+    },
+    {
+      "start": 135.0,
+      "end": 162.0,
+      "text": "And the reverse is true. If implied volatility is falling, then it means that shorter term opportunities are expected to come out of the market. Now, what successful professional traders do is they don't tell the market how they're going to trade, like unsuccessful retail traders, they just let the market tell them essentially what the opportunities are expected to be in the future."
+    },
+    {
+      "start": 162.0,
+      "end": 186.0,
+      "text": "And they adapt and they adapt and they switch their trading style between being short term traders and longer term traders. Now, this is one of the main things that I really want you to take from this section of the video is when you when we go to the stage, I want you to really focus on this statement."
+    },
+    {
+      "start": 186.0,
+      "end": 210.0,
+      "text": "The statement. The statement that volatility is a trader's best friend and a portfolio manager's worst enemy, because that's got a lot to do with opportunities and risk management. So as in opportunities over the short, medium and longer term, and also managing your risk over the short, medium and longer term."
+    },
+    {
+      "start": 210.0,
+      "end": 237.0,
+      "text": "Because professional traders switch between being short term traders to medium and longer term traders dependent on the messages coming from the implied volatility in the market. So please focus on that statement when we cut to the stage. Volatility is a trader's best friend and a portfolio manager's worst enemy."
+    },
+    {
+      "start": 237.0,
+      "end": 265.0,
+      "text": "What we're then going to move on to after we cut back to the office, we're then going to move on to video six where Chris is going to show you how to calculate your own volatility index for any asset. So you can then use the historical volatility measures that you've already learned and add onto it the implied volatility measures that Chris is going to teach you in video number six."
+    },
+    {
+      "start": 265.0,
+      "end": 269.0,
+      "text": "Okay, so let's go to the stage and I'll see you for a summary after that section."
+    },
+    {
+      "start": 269.0,
+      "end": 293.0,
+      "text": "So now we're going to concentrate a bit more on volatility. Volatility is really important to a professional trader. The asset, the volatility profile of the asset dictates what your opportunities are, not the other way around. You don't tell the volatility."
+    },
+    {
+      "start": 293.0,
+      "end": 313.0,
+      "text": "Not the other way around. You don't tell the market how much you're going to make today. The market tells you. Has anybody heard of this S&P 500 volatility index?"
+    },
+    {
+      "start": 313.0,
+      "end": 317.0,
+      "text": "Does anybody want to explain what it is?"
+    },
+    {
+      "start": 317.0,
+      "end": 319.0,
+      "text": "Based on the option prices?"
+    },
+    {
+      "start": 319.0,
+      "end": 323.0,
+      "text": "Correct, yeah. But what does it actually tell us?"
+    },
+    {
+      "start": 325.0,
+      "end": 327.0,
+      "text": "Implied volatility."
+    },
+    {
+      "start": 327.0,
+      "end": 349.0,
+      "text": "Yeah, implied volatility. What we looked at before was historical volatility. What we're looking at now is implied volatility. It's forward looking by 30 days and it comes out as an annualized number. So it's the volatility that options traders are implying through the prices that they're making in S&P 500 options."
+    },
+    {
+      "start": 349.0,
+      "end": 359.0,
+      "text": "It's the volatility. It's the volatility implied for the next 30 days, then annualized. What happens when they expect more volatility?"
+    },
+    {
+      "start": 359.0,
+      "end": 373.0,
+      "text": "They raise their prices for options because they don't want to be short volatility at a low price."
+    },
+    {
+      "start": 373.0,
+      "end": 385.0,
+      "text": "What happens if they expect volatility to go down? The opposite. Options become cheaper."
+    },
+    {
+      "start": 385.0,
+      "end": 399.0,
+      "text": "But this is really important. The VIX in itself is really important."
+    },
+    {
+      "start": 399.0,
+      "end": 409.0,
+      "text": "Because volatility on a short term basis or over any time horizon is essentially a trader's best friend."
+    },
+    {
+      "start": 409.0,
+      "end": 414.0,
+      "text": "Because if you have it over any time horizon, you have opportunities."
+    },
+    {
+      "start": 417.0,
+      "end": 421.0,
+      "text": "So being able to predict volatility is essential."
+    },
+    {
+      "start": 425.0,
+      "end": 432.0,
+      "text": "Why? Because on the flip side, volatility is a professional trader's worst nightmare."
+    },
+    {
+      "start": 432.0,
+      "end": 435.0,
+      "text": "A portfolio manager's worst nightmare. Sorry."
+    },
+    {
+      "start": 435.0,
+      "end": 444.0,
+      "text": "So you're basically, as a trader, you're a slave to volatility."
+    },
+    {
+      "start": 444.0,
+      "end": 447.0,
+      "text": "We looked at the historical volatility."
+    },
+    {
+      "start": 447.0,
+      "end": 449.0,
+      "text": "That's the beast. That's how it behaves."
+    },
+    {
+      "start": 449.0,
+      "end": 456.0,
+      "text": "The implied volatility is how we expect the beast to behave in the next 30 days on an annualized basis."
+    },
+    {
+      "start": 458.0,
+      "end": 459.0,
+      "text": "Make sense?"
+    },
+    {
+      "start": 463.0,
+      "end": 473.0,
+      "text": "So when volatility, implied, goes up and it goes up very quickly, what happens?"
+    },
+    {
+      "start": 473.0,
+      "end": 476.0,
+      "text": "What happens to a professional trader's approach?"
+    },
+    {
+      "start": 477.0,
+      "end": 478.0,
+      "text": "It changes."
+    },
+    {
+      "start": 481.0,
+      "end": 489.0,
+      "text": "Because on 80% of days on the historical volatility profile of the S&P 500, the biggest stock market in the world, nothing happens."
+    },
+    {
+      "start": 489.0,
+      "end": 494.0,
+      "text": "So what's the approach of a professional trader 80% of the time?"
+    },
+    {
+      "start": 495.0,
+      "end": 501.0,
+      "text": "It's actually to run and maintain portfolios with a one to three month time horizon."
+    },
+    {
+      "start": 504.0,
+      "end": 507.0,
+      "text": "But then, when things happen, volatility goes up."
+    },
+    {
+      "start": 508.0,
+      "end": 509.0,
+      "text": "Expected or implied volatility goes up."
+    },
+    {
+      "start": 510.0,
+      "end": 511.0,
+      "text": "So what does a professional trader do?"
+    },
+    {
+      "start": 511.0,
+      "end": 521.0,
+      "text": "Well, they have to switch from being a portfolio manager very quickly to being a short term trader."
+    },
+    {
+      "start": 524.0,
+      "end": 529.0,
+      "text": "And this has hidden consequences that people don't really have appreciation for."
+    },
+    {
+      "start": 529.0,
+      "end": 538.0,
+      "text": "We're going to go through an example now."
+    },
+    {
+      "start": 539.0,
+      "end": 540.0,
+      "text": "Just a small portfolio."
+    },
+    {
+      "start": 541.0,
+      "end": 542.0,
+      "text": "One million dollar gross exposure."
+    },
+    {
+      "start": 543.0,
+      "end": 548.0,
+      "text": "That's a big retail trader portfolio, but it's a tiny bank or hedge fund portfolio."
+    },
+    {
+      "start": 549.0,
+      "end": 554.0,
+      "text": "And let's make a few assumptions about this one million dollar portfolio."
+    },
+    {
+      "start": 555.0,
+      "end": 559.0,
+      "text": "So we've got a gross exposure of a million dollars."
+    },
+    {
+      "start": 560.0,
+      "end": 565.0,
+      "text": "And we're just going to assume that all of the exposure is cash for cash."
+    },
+    {
+      "start": 567.0,
+      "end": 570.0,
+      "text": "So we've got the long value of the portfolio is 500,000."
+    },
+    {
+      "start": 573.0,
+      "end": 575.0,
+      "text": "And the short value is 500,000."
+    },
+    {
+      "start": 579.0,
+      "end": 584.0,
+      "text": "And all the positions are $50,000, i.e. 5% position sizes."
+    },
+    {
+      "start": 587.0,
+      "end": 591.0,
+      "text": "What do we know about this portfolio if it's an S&P 500 portfolio long and short?"
+    },
+    {
+      "start": 594.0,
+      "end": 596.0,
+      "text": "Well, from the historical volatility profile,"
+    },
+    {
+      "start": 597.0,
+      "end": 601.0,
+      "text": "the market moves up and down 35 basis points on a normal day."
+    },
+    {
+      "start": 603.0,
+      "end": 604.0,
+      "text": "On average, yeah?"
+    },
+    {
+      "start": 606.0,
+      "end": 609.0,
+      "text": "So on average, if you just did nothing, 80% of the time,"
+    },
+    {
+      "start": 610.0,
+      "end": 611.0,
+      "text": "you'd make or lose $3,500."
+    },
+    {
+      "start": 616.0,
+      "end": 617.0,
+      "text": "Make sense?"
+    },
+    {
+      "start": 617.0,
+      "end": 619.0,
+      "text": "That's the volatility of your S&P 500 portfolio."
+    },
+    {
+      "start": 622.0,
+      "end": 628.0,
+      "text": "But what happens if S&P 500 volatility is expected to double in the next 30 days?"
+    },
+    {
+      "start": 632.0,
+      "end": 639.0,
+      "text": "Well, very clearly, you're expecting that your profit or loss volatility on a one-day basis is going to double."
+    },
+    {
+      "start": 642.0,
+      "end": 643.0,
+      "text": "So what happens?"
+    },
+    {
+      "start": 644.0,
+      "end": 646.0,
+      "text": "Well, that million dollars is not a million dollars anymore."
+    },
+    {
+      "start": 647.0,
+      "end": 648.0,
+      "text": "It's two million dollars."
+    },
+    {
+      "start": 651.0,
+      "end": 658.0,
+      "text": "So without you ever doing anything, if volatility doubles and you've got a typical S&P 500 long short portfolio,"
+    },
+    {
+      "start": 659.0,
+      "end": 663.0,
+      "text": "if volatility doubles and you do nothing, you've taken more risk."
+    },
+    {
+      "start": 664.0,
+      "end": 666.0,
+      "text": "Does that make sense?"
+    },
+    {
+      "start": 667.0,
+      "end": 675.0,
+      "text": "So what do you think happens at a Goldman Sachs morning meeting when all the traders go into a meeting room at 7am?"
+    },
+    {
+      "start": 676.0,
+      "end": 679.0,
+      "text": "And they've got a billion dollars of exposure on the desk, long short."
+    },
+    {
+      "start": 680.0,
+      "end": 688.0,
+      "text": "And the head of derivatives says volatility is creeping and we're expecting it to go up into next week's non-farm payrolls."
+    },
+    {
+      "start": 691.0,
+      "end": 692.0,
+      "text": "What do you think happens?"
+    },
+    {
+      "start": 693.0,
+      "end": 694.0,
+      "text": "What's the message from the boss?"
+    },
+    {
+      "start": 695.0,
+      "end": 696.0,
+      "text": "No, the opposite."
+    },
+    {
+      "start": 696.0,
+      "end": 705.0,
+      "text": "They're taking more risk without actually doing anything."
+    },
+    {
+      "start": 706.0,
+      "end": 708.0,
+      "text": "If you hedge, your gross exposure goes up."
+    },
+    {
+      "start": 710.0,
+      "end": 712.0,
+      "text": "So what's the message from the top?"
+    },
+    {
+      "start": 713.0,
+      "end": 714.0,
+      "text": "Reduce your exposure."
+    },
+    {
+      "start": 715.0,
+      "end": 717.0,
+      "text": "Cut your exposure in half."
+    },
+    {
+      "start": 718.0,
+      "end": 721.0,
+      "text": "Get rid of all the positions that you don't really want."
+    },
+    {
+      "start": 722.0,
+      "end": 725.0,
+      "text": "And the positions that you want to have, just trade out of half the position size."
+    },
+    {
+      "start": 726.0,
+      "end": 738.0,
+      "text": "So if you've got a $30 million position long in XYZ, and your view is that it's going up forever, it doesn't really matter."
+    },
+    {
+      "start": 739.0,
+      "end": 745.0,
+      "text": "Because now the risk on XYZ, when volatility in the market doubles, is double, without you doing anything."
+    },
+    {
+      "start": 750.0,
+      "end": 751.0,
+      "text": "And what happens when they switch?"
+    },
+    {
+      "start": 754.0,
+      "end": 759.0,
+      "text": "Well, what do you receive when you trade out of positions?"
+    },
+    {
+      "start": 760.0,
+      "end": 772.0,
+      "text": "You reduce your risk, but what do you actually receive physically?"
+    },
+    {
+      "start": 773.0,
+      "end": 774.0,
+      "text": "Cash."
+    },
+    {
+      "start": 775.0,
+      "end": 780.0,
+      "text": "Or in a trading account, a retail trader account, you'll receive available margin."
+    },
+    {
+      "start": 781.0,
+      "end": 785.0,
+      "text": "So you free up margin in your account."
+    },
+    {
+      "start": 786.0,
+      "end": 786.0,
+      "text": "Yeah?"
+    },
+    {
+      "start": 789.0,
+      "end": 790.0,
+      "text": "So what does that mean?"
+    },
+    {
+      "start": 792.0,
+      "end": 805.0,
+      "text": "If volatility starts moving, and it starts going up, and you've reduced your exposure overall, you now have a higher cash exposure in your account than before."
+    },
+    {
+      "start": 806.0,
+      "end": 807.0,
+      "text": "What do you then go and do with that cash?"
+    },
+    {
+      "start": 807.0,
+      "end": 816.0,
+      "text": "You're being told a very strong message."
+    },
+    {
+      "start": 817.0,
+      "end": 819.0,
+      "text": "What do you then go and do with that cash?"
+    },
+    {
+      "start": 822.0,
+      "end": 824.0,
+      "text": "You start trading short term."
+    },
+    {
+      "start": 825.0,
+      "end": 831.0,
+      "text": "Because now, you're being told by the beast, hello Mr. Trader, I've decided to wake up."
+    },
+    {
+      "start": 832.0,
+      "end": 834.0,
+      "text": "Why don't you go and hunt somewhere else?"
+    },
+    {
+      "start": 834.0,
+      "end": 835.0,
+      "text": "Sorry?"
+    },
+    {
+      "start": 835.0,
+      "end": 836.0,
+      "text": "Why don't you go and hunt somewhere else?"
+    },
+    {
+      "start": 837.0,
+      "end": 838.0,
+      "text": "What, go to a different jungle?"
+    },
+    {
+      "start": 838.0,
+      "end": 839.0,
+      "text": "Yeah, of course."
+    },
+    {
+      "start": 839.0,
+      "end": 840.0,
+      "text": "You can do."
+    },
+    {
+      "start": 841.0,
+      "end": 844.0,
+      "text": "You're using the biggest stock market in the world as the example."
+    },
+    {
+      "start": 844.0,
+      "end": 845.0,
+      "text": "Of course you can."
+    },
+    {
+      "start": 846.0,
+      "end": 863.0,
+      "text": "So if you want to, you know, the processes here are the most important thing, because if I show you this stuff for the world's biggest stock market, I'll give you step-by-step guides on how to do it, and you understand the thought process, then you can take all the spreadsheets and start hunting around for other stuff."
+    },
+    {
+      "start": 864.0,
+      "end": 865.0,
+      "text": "That's your job, not mine."
+    },
+    {
+      "start": 865.0,
+      "end": 868.0,
+      "text": "I'm not here to spoon-feed you."
+    },
+    {
+      "start": 869.0,
+      "end": 871.0,
+      "text": "As we discussed right at the beginning."
+    },
+    {
+      "start": 872.0,
+      "end": 882.0,
+      "text": "You've got to have the self-starter mentality, which you've got, because the first question you ask is, well, Anton, if I take that spreadsheet, can I just go hunting for volatility?"
+    },
+    {
+      "start": 883.0,
+      "end": 884.0,
+      "text": "Of course you can."
+    },
+    {
+      "start": 884.0,
+      "end": 885.0,
+      "text": "That's what I'm giving it to you for."
+    },
+    {
+      "start": 887.0,
+      "end": 888.0,
+      "text": "So you've got to do it yourself."
+    },
+    {
+      "start": 894.0,
+      "end": 919.0,
+      "text": "So when you see the VIX go up, what you're actually looking at, the implied volatility for the next 30 days, what you're actually looking at in that number is for every unit it goes up, another unit of risk has been added to everyone's portfolio in the world."
+    },
+    {
+      "start": 923.0,
+      "end": 928.0,
+      "text": "And at some point, if it keeps going up, there's going to have to be risk reduction."
+    },
+    {
+      "start": 929.0,
+      "end": 931.0,
+      "text": "Now that doesn't necessarily mean that the market goes down."
+    },
+    {
+      "start": 934.0,
+      "end": 940.0,
+      "text": "Because implied volatility for the VIX is implied volatility up or down for the next 30 days."
+    },
+    {
+      "start": 941.0,
+      "end": 942.0,
+      "text": "A lot of people forget that."
+    },
+    {
+      "start": 947.0,
+      "end": 955.0,
+      "text": "So what you have to try and do as a trader is to run portfolios based on, and you do that based on historical volatility evidence."
+    },
+    {
+      "start": 958.0,
+      "end": 960.0,
+      "text": "With one to three month time horizons."
+    },
+    {
+      "start": 960.0,
+      "end": 964.0,
+      "text": "And this is what all professional traders do at investment banks in their prop function."
+    },
+    {
+      "start": 965.0,
+      "end": 966.0,
+      "text": "And at hedge funds."
+    },
+    {
+      "start": 968.0,
+      "end": 969.0,
+      "text": "They do it for a reason."
+    },
+    {
+      "start": 969.0,
+      "end": 970.0,
+      "text": "They do it for a reason."
+    },
+    {
+      "start": 970.0,
+      "end": 971.0,
+      "text": "And this is the reason."
+    },
+    {
+      "start": 972.0,
+      "end": 976.0,
+      "text": "And then when volatility goes up, you have to switch."
+    },
+    {
+      "start": 978.0,
+      "end": 983.0,
+      "text": "You switch from being a portfolio manager to an animal trader."
+    },
+    {
+      "start": 985.0,
+      "end": 992.0,
+      "text": "And the transition process is simply a period where you raise cash."
+    },
+    {
+      "start": 993.0,
+      "end": 997.0,
+      "text": "Because the cash then enables you to take advantage of the short term opportunities."
+    },
+    {
+      "start": 998.0,
+      "end": 1008.0,
+      "text": "If you don't do anything, your risk, if volatility goes up by 100%, your risk doubles without you doing anything."
+    },
+    {
+      "start": 1009.0,
+      "end": 1012.0,
+      "text": "And then you're the rabbit in the headlights who will trade out of everything at the bottom."
+    },
+    {
+      "start": 1013.0,
+      "end": 1017.0,
+      "text": "Providing liquidity for the guys who actually saw it coming."
+    },
+    {
+      "start": 1018.0,
+      "end": 1023.0,
+      "text": "And who transitioned and did something to raise cash."
+    },
+    {
+      "start": 1024.0,
+      "end": 1031.0,
+      "text": "And if you raise cash, you then have the right to short term trade."
+    },
+    {
+      "start": 1032.0,
+      "end": 1036.0,
+      "text": "You do not have the right to short term trade if your risk has just doubled without you doing anything."
+    },
+    {
+      "start": 1037.0,
+      "end": 1042.0,
+      "text": "And you've got a little bit of cash available, so you're trying to make your losses back by punting."
+    },
+    {
+      "start": 1045.0,
+      "end": 1048.0,
+      "text": "You only get the right to trade short term if you reduce your risk."
+    },
+    {
+      "start": 1049.0,
+      "end": 1055.0,
+      "text": "And you'll see this happen over and over and over again at investment banks and hedge funds."
+    },
+    {
+      "start": 1056.0,
+      "end": 1058.0,
+      "text": "Where a guy gets caught in the headlights, gets called into a room."
+    },
+    {
+      "start": 1059.0,
+      "end": 1061.0,
+      "text": "The boss actually has to trade out of the position for him."
+    },
+    {
+      "start": 1062.0,
+      "end": 1065.0,
+      "text": "Because that guy is now frozen and he doesn't know what to do."
+    },
+    {
+      "start": 1066.0,
+      "end": 1070.0,
+      "text": "And then he's either told to go home or sit on the desk and ignore what's going on in the market."
+    },
+    {
+      "start": 1071.0,
+      "end": 1072.0,
+      "text": "Because he's not allowed to day trade."
+    },
+    {
+      "start": 1073.0,
+      "end": 1079.0,
+      "text": "But this is the first thing you learn when you start learning to become a professional trader."
+    },
+    {
+      "start": 1080.0,
+      "end": 1085.0,
+      "text": "This will be your first year in practice at an investment bank or a hedge fund."
+    },
+    {
+      "start": 1086.0,
+      "end": 1089.0,
+      "text": "Being a portfolio manager and switching."
+    },
+    {
+      "start": 1090.0,
+      "end": 1095.0,
+      "text": "And this is why I never make the claim that trading can be taught in one weekend or in one day."
+    },
+    {
+      "start": 1096.0,
+      "end": 1100.0,
+      "text": "It simply can't because you have to experience this to really understand it."
+    },
+    {
+      "start": 1107.0,
+      "end": 1115.0,
+      "text": "The way you should look at the volatility index really is a very simple traffic light system."
+    },
+    {
+      "start": 1116.0,
+      "end": 1120.0,
+      "text": "Where if the VIX goes up by a certain amount."
+    },
+    {
+      "start": 1121.0,
+      "end": 1122.0,
+      "text": "And by the way there's no rule book."
+    },
+    {
+      "start": 1123.0,
+      "end": 1127.0,
+      "text": "You literally cannot go to WH Smiths, Waterstones or Blackwells and buy a book."
+    },
+    {
+      "start": 1128.0,
+      "end": 1129.0,
+      "text": "When to buy and sell volatility."
+    },
+    {
+      "start": 1130.0,
+      "end": 1132.0,
+      "text": "It's totally subjective."
+    },
+    {
+      "start": 1133.0,
+      "end": 1135.0,
+      "text": "And it's all subjective to the risk that you have yourself."
+    },
+    {
+      "start": 1138.0,
+      "end": 1140.0,
+      "text": "This is just a back of the envelope situation."
+    },
+    {
+      "start": 1141.0,
+      "end": 1144.0,
+      "text": "Where over time, over many, many years."
+    },
+    {
+      "start": 1145.0,
+      "end": 1147.0,
+      "text": "If you stick to this idea and this process."
+    },
+    {
+      "start": 1148.0,
+      "end": 1149.0,
+      "text": "You should be fine."
+    },
+    {
+      "start": 1152.0,
+      "end": 1155.0,
+      "text": "If it goes up by 25%, what's happened?"
+    },
+    {
+      "start": 1156.0,
+      "end": 1160.0,
+      "text": "The risk of every portfolio in the world has gone up by 25%."
+    },
+    {
+      "start": 1161.0,
+      "end": 1163.0,
+      "text": "You must be doing something."
+    },
+    {
+      "start": 1164.0,
+      "end": 1166.0,
+      "text": "If you don't do anything, you're the rabbit in the headlights."
+    },
+    {
+      "start": 1169.0,
+      "end": 1170.0,
+      "text": "So you've got to do something."
+    },
+    {
+      "start": 1172.0,
+      "end": 1173.0,
+      "text": "So you transition."
+    },
+    {
+      "start": 1178.0,
+      "end": 1180.0,
+      "text": "And you enter the day trading zone."
+    },
+    {
+      "start": 1181.0,
+      "end": 1182.0,
+      "text": "Because you're allowed."
+    },
+    {
+      "start": 1183.0,
+      "end": 1183.0,
+      "text": "Why?"
+    },
+    {
+      "start": 1184.0,
+      "end": 1185.0,
+      "text": "Because you've raised cash."
+    },
+    {
+      "start": 1186.0,
+      "end": 1187.0,
+      "text": "And you've been proactive."
+    },
+    {
+      "start": 1190.0,
+      "end": 1192.0,
+      "text": "So this is by no means a hard and fast rule."
+    },
+    {
+      "start": 1193.0,
+      "end": 1194.0,
+      "text": "So don't think this is a rule book."
+    },
+    {
+      "start": 1195.0,
+      "end": 1196.0,
+      "text": "There are no rules."
+    },
+    {
+      "start": 1197.0,
+      "end": 1198.0,
+      "text": "It's subjective to your own risk."
+    },
+    {
+      "start": 1199.0,
+      "end": 1199.0,
+      "text": "Yeah?"
+    },
+    {
+      "start": 1200.0,
+      "end": 1203.0,
+      "text": "But this should stand you in good stead over your lifetime."
+    },
+    {
+      "start": 1204.0,
+      "end": 1206.0,
+      "text": "If you're trading in the world's biggest stock market."
+    },
+    {
+      "start": 1207.0,
+      "end": 1207.0,
+      "text": "Yeah?"
+    },
+    {
+      "start": 1210.0,
+      "end": 1211.0,
+      "text": "If it's in transition and rising."
+    },
+    {
+      "start": 1212.0,
+      "end": 1213.0,
+      "text": "And what do we mean by that?"
+    },
+    {
+      "start": 1213.0,
+      "end": 1216.0,
+      "text": "If the VIX itself has moved 25%."
+    },
+    {
+      "start": 1217.0,
+      "end": 1217.0,
+      "text": "Yeah?"
+    },
+    {
+      "start": 1218.0,
+      "end": 1218.0,
+      "text": "Roughly speaking."
+    },
+    {
+      "start": 1219.0,
+      "end": 1223.0,
+      "text": "Just reduce everything in your portfolio by 50%."
+    },
+    {
+      "start": 1224.0,
+      "end": 1229.0,
+      "text": "Or get rid of half the positions in your portfolio that you don't really want."
+    },
+    {
+      "start": 1230.0,
+      "end": 1231.0,
+      "text": "How do you get to that stage?"
+    },
+    {
+      "start": 1232.0,
+      "end": 1232.0,
+      "text": "Well, just rank them."
+    },
+    {
+      "start": 1233.0,
+      "end": 1238.0,
+      "text": "If you've got 20 positions, rank them from 1 to 20, favourite to least favourite."
+    },
+    {
+      "start": 1239.0,
+      "end": 1240.0,
+      "text": "It's not hard."
+    },
+    {
+      "start": 1240.0,
+      "end": 1241.0,
+      "text": "I'd get rid of the bottom 10."
+    },
+    {
+      "start": 1241.0,
+      "end": 1254.0,
+      "text": "When it's in transition and falling, portfolio risk in the world is going down."
+    },
+    {
+      "start": 1255.0,
+      "end": 1256.0,
+      "text": "So what are you being told?"
+    },
+    {
+      "start": 1256.0,
+      "end": 1258.0,
+      "text": "You're being told by the beast."
+    },
+    {
+      "start": 1258.0,
+      "end": 1259.0,
+      "text": "Hey, Mr. Trader."
+    },
+    {
+      "start": 1259.0,
+      "end": 1261.0,
+      "text": "It's now less risky to own a portfolio."
+    },
+    {
+      "start": 1264.0,
+      "end": 1266.0,
+      "text": "So you start putting cash to work."
+    },
+    {
+      "start": 1268.0,
+      "end": 1272.0,
+      "text": "You want to get invested in a portfolio, long short, into your favourite ideas."
+    },
+    {
+      "start": 1273.0,
+      "end": 1277.0,
+      "text": "Fixed within your own risk management parameters."
+    },
+    {
+      "start": 1278.0,
+      "end": 1282.0,
+      "text": "So just double the size of all your remaining positions."
+    },
+    {
+      "start": 1283.0,
+      "end": 1284.0,
+      "text": "And stop day trading."
+    },
+    {
+      "start": 1286.0,
+      "end": 1286.0,
+      "text": "That's what you've got to do."
+    },
+    {
+      "start": 1289.0,
+      "end": 1292.0,
+      "text": "You'll be told this message because you'll see volatility going down."
+    },
+    {
+      "start": 1292.0,
+      "end": 1294.0,
+      "text": "And you'll start losing money day trading."
+    },
+    {
+      "start": 1295.0,
+      "end": 1296.0,
+      "text": "It'll become more difficult."
+    },
+    {
+      "start": 1300.0,
+      "end": 1302.0,
+      "text": "And that's why on the very first slide."
+    },
+    {
+      "start": 1303.0,
+      "end": 1305.0,
+      "text": "When we said, who is this course not for?"
+    },
+    {
+      "start": 1306.0,
+      "end": 1308.0,
+      "text": "It's for people who never take a message from their losses."
+    },
+    {
+      "start": 1309.0,
+      "end": 1315.0,
+      "text": "When you start losing money day trading, you take the message that day trading opportunities are now no longer available."
+    },
+    {
+      "start": 1316.0,
+      "end": 1317.0,
+      "text": "So you build a portfolio."
+    },
+    {
+      "start": 1320.0,
+      "end": 1329.0,
+      "text": "And you can get loads and loads of exposure on in the comfort and knowledge that the market's not going to move adversely overnight and completely wipe me out."
+    },
+    {
+      "start": 1330.0,
+      "end": 1334.0,
+      "text": "Because now the market is expecting no volatility in the world."
+    },
+    {
+      "start": 1336.0,
+      "end": 1337.0,
+      "text": "Make sense?"
+    },
+    {
+      "start": 1339.0,
+      "end": 1345.0,
+      "text": "So there are no hard and fast rules telling you exactly what to do in your portfolio."
+    },
+    {
+      "start": 1346.0,
+      "end": 1347.0,
+      "text": "But that should stand you in good stead."
+    },
+    {
+      "start": 1354.0,
+      "end": 1355.0,
+      "text": "Second caveat here."
+    },
+    {
+      "start": 1357.0,
+      "end": 1358.0,
+      "text": "People must have heard this before."
+    },
+    {
+      "start": 1359.0,
+      "end": 1360.0,
+      "text": "The VIX is often called the fear index."
+    },
+    {
+      "start": 1361.0,
+      "end": 1367.0,
+      "text": "But don't mistake it for a situation where the market has to go down."
+    },
+    {
+      "start": 1368.0,
+      "end": 1372.0,
+      "text": "So if fear in the world is rising, the market must go down."
+    },
+    {
+      "start": 1373.0,
+      "end": 1374.0,
+      "text": "It doesn't necessarily mean that."
+    },
+    {
+      "start": 1375.0,
+      "end": 1380.0,
+      "text": "In 2003, the VIX went through the roof and that was the beginning of the bull market."
+    },
+    {
+      "start": 1381.0,
+      "end": 1388.0,
+      "text": "Because everyone was expecting a bad world in the next 12 months."
+    },
+    {
+      "start": 1389.0,
+      "end": 1390.0,
+      "text": "So everyone was short."
+    },
+    {
+      "start": 1391.0,
+      "end": 1391.0,
+      "text": "And what happened?"
+    },
+    {
+      "start": 1392.0,
+      "end": 1394.0,
+      "text": "Everything came out positive."
+    },
+    {
+      "start": 1395.0,
+      "end": 1396.0,
+      "text": "Consecutively."
+    },
+    {
+      "start": 1397.0,
+      "end": 1402.0,
+      "text": "And the VIX actually went up because people feared losing money in their portfolio."
+    },
+    {
+      "start": 1403.0,
+      "end": 1404.0,
+      "text": "being net short."
+    },
+    {
+      "start": 1405.0,
+      "end": 1406.0,
+      "text": "Make sense?"
+    },
+    {
+      "start": 1407.0,
+      "end": 1413.0,
+      "text": "By definition, the VIX is an annualized volatility number."
+    },
+    {
+      "start": 1414.0,
+      "end": 1416.0,
+      "text": "Calculated for the next 30 days."
+    },
+    {
+      "start": 1417.0,
+      "end": 1418.0,
+      "text": "For the market going up or down."
+    },
+    {
+      "start": 1420.0,
+      "end": 1423.0,
+      "text": "Probably a good thing to do is just no longer call it the fear index."
+    },
+    {
+      "start": 1424.0,
+      "end": 1430.0,
+      "text": "If you're going to call it the fear index, it's the fear of being wrong either way."
+    },
+    {
+      "start": 1431.0,
+      "end": 1441.0,
+      "text": "So what do people ask most about the VIX?"
+    },
+    {
+      "start": 1442.0,
+      "end": 1447.0,
+      "text": "Well, if there's the one on the S&P 500, is there one available for others?"
+    },
+    {
+      "start": 1448.0,
+      "end": 1449.0,
+      "text": "Of course there is."
+    },
+    {
+      "start": 1451.0,
+      "end": 1453.0,
+      "text": "It's all publicly available information."
+    },
+    {
+      "start": 1454.0,
+      "end": 1457.0,
+      "text": "On the Eurostox 600, you've got the V-Stocks."
+    },
+    {
+      "start": 1458.0,
+      "end": 1460.0,
+      "text": "You've got the V-Footsie, V-DAX."
+    },
+    {
+      "start": 1461.0,
+      "end": 1467.0,
+      "text": "You've got a volatility index publicly available on decent websites like Yahoo Finance, MarketWatch.com, NASDAQ.com."
+    },
+    {
+      "start": 1468.0,
+      "end": 1470.0,
+      "text": "They're all available and you can actually trade them."
+    },
+    {
+      "start": 1474.0,
+      "end": 1476.0,
+      "text": "So what was one of the suggestions earlier?"
+    },
+    {
+      "start": 1477.0,
+      "end": 1484.0,
+      "text": "When you've got a gross exposure of a million dollars, and you see volatility going through the roof, one of the suggestions was you hedge."
+    },
+    {
+      "start": 1485.0,
+      "end": 1491.0,
+      "text": "A lot of people go and buy VIX in itself to hedge their portfolio."
+    },
+    {
+      "start": 1492.0,
+      "end": 1498.0,
+      "text": "It's debatable whether you should do that, simply because you're actually still increasing your exposure."
+    },
+    {
+      "start": 1499.0,
+      "end": 1508.0,
+      "text": "So yeah, it might provide a hedge, but you're locking yourself out of the party to go and day trade."
+    },
+    {
+      "start": 1509.0,
+      "end": 1519.0,
+      "text": "You can just trade out of half your positions, join the party to day trade and then leave and build your portfolio back and make money in between."
+    },
+    {
+      "start": 1520.0,
+      "end": 1525.0,
+      "text": "Whereas if you just bought a hedge, you'd just be not losing as much money."
+    },
+    {
+      "start": 1526.0,
+      "end": 1530.0,
+      "text": "So it's debatable, but again it's subjective to your own risk."
+    },
+    {
+      "start": 1531.0,
+      "end": 1534.0,
+      "text": "I can't tell you what to do, you have to make your own mind up."
+    },
+    {
+      "start": 1535.0,
+      "end": 1539.0,
+      "text": "How do you calculate volatility for currencies, commodities and bonds?"
+    },
+    {
+      "start": 1540.0,
+      "end": 1543.0,
+      "text": "It's the same process and you're going to get the spreadsheets."
+    },
+    {
+      "start": 1544.0,
+      "end": 1546.0,
+      "text": "So they'll be emailed to you next week."
+    },
+    {
+      "start": 1549.0,
+      "end": 1550.0,
+      "text": "Okay, welcome back."
+    },
+    {
+      "start": 1551.0,
+      "end": 1558.0,
+      "text": "I hope you managed to grasp some of the concepts there with implied volatility in the presentation."
+    },
+    {
+      "start": 1559.0,
+      "end": 1564.0,
+      "text": "Up to this point, we only looked at historical volatility in the odds and distribution calculation."
+    },
+    {
+      "start": 1565.0,
+      "end": 1575.0,
+      "text": "But the implied volatility is very important because it not only shows us our opportunities expected in the future,"
+    },
+    {
+      "start": 1576.0,
+      "end": 1578.0,
+      "text": "but it also shows us our expected risk."
+    },
+    {
+      "start": 1579.0,
+      "end": 1584.0,
+      "text": "Because as a portfolio manager, which you're going to be 80% of the time,"
+    },
+    {
+      "start": 1585.0,
+      "end": 1590.0,
+      "text": "because we've already discovered from the historical volatility that 80% of the time,"
+    },
+    {
+      "start": 1591.0,
+      "end": 1594.0,
+      "text": "there are no opportunities to be short-term traders."
+    },
+    {
+      "start": 1595.0,
+      "end": 1600.0,
+      "text": "When you're a portfolio manager, it not only shows you the opportunities in the market expected,"
+    },
+    {
+      "start": 1601.0,
+      "end": 1605.0,
+      "text": "it also shows you the implied risk of your portfolio."
+    },
+    {
+      "start": 1606.0,
+      "end": 1608.0,
+      "text": "So those two things are really important."
+    },
+    {
+      "start": 1609.0,
+      "end": 1615.0,
+      "text": "And one of the things that retail traders get wrong all the time in terms of opportunities,"
+    },
+    {
+      "start": 1616.0,
+      "end": 1621.0,
+      "text": "they tell the market that they are going to trade in a particular way."
+    },
+    {
+      "start": 1622.0,
+      "end": 1623.0,
+      "text": "This is how I'm going to trade."
+    },
+    {
+      "start": 1624.0,
+      "end": 1626.0,
+      "text": "And no matter what, this is the way I'm going to trade."
+    },
+    {
+      "start": 1627.0,
+      "end": 1631.0,
+      "text": "So they don't listen to the market and what the market's telling them."
+    },
+    {
+      "start": 1632.0,
+      "end": 1637.0,
+      "text": "So in terms of opportunities, we learned looking at historical volatility and now implied volatility,"
+    },
+    {
+      "start": 1638.0,
+      "end": 1641.0,
+      "text": "that's 80% of the time, there are no short-term opportunities."
+    },
+    {
+      "start": 1642.0,
+      "end": 1651.0,
+      "text": "With the implied volatility situation, the index is 80% of the time, the VIX below 25%."
+    },
+    {
+      "start": 1652.0,
+      "end": 1656.0,
+      "text": "And when you back that out, it just means on a one-day basis,"
+    },
+    {
+      "start": 1657.0,
+      "end": 1662.0,
+      "text": "that we're going to get the numbers roughly that we saw in the historical volatility calculation."
+    },
+    {
+      "start": 1663.0,
+      "end": 1667.0,
+      "text": "So that backs up everything that we saw in the historical volatility calculations."
+    },
+    {
+      "start": 1668.0,
+      "end": 1674.0,
+      "text": "Now what does it mean in terms of market opportunities for professional traders?"
+    },
+    {
+      "start": 1675.0,
+      "end": 1677.0,
+      "text": "For professional traders, they just take it as it is."
+    },
+    {
+      "start": 1678.0,
+      "end": 1680.0,
+      "text": "They allow the market to tell them what the opportunities are."
+    },
+    {
+      "start": 1681.0,
+      "end": 1687.0,
+      "text": "And what the market tells you when you look at the volatility index for the S&P 500,"
+    },
+    {
+      "start": 1688.0,
+      "end": 1693.0,
+      "text": "is firstly that 80% of the time, there's very few opportunities to make money on a short-term basis."
+    },
+    {
+      "start": 1694.0,
+      "end": 1697.0,
+      "text": "Which means that you have to increase your time horizon."
+    },
+    {
+      "start": 1698.0,
+      "end": 1700.0,
+      "text": "And all professional traders do this."
+    },
+    {
+      "start": 1701.0,
+      "end": 1703.0,
+      "text": "Professional traders are not what you'd perceive."
+    },
+    {
+      "start": 1704.0,
+      "end": 1707.0,
+      "text": "They're not trading in and out in and out every single minute of every day."
+    },
+    {
+      "start": 1707.0,
+      "end": 1714.0,
+      "text": "They're actually running long-short portfolios on a one-to-three-month time horizon."
+    },
+    {
+      "start": 1715.0,
+      "end": 1719.0,
+      "text": "Now let's focus on this statement that I asked you to focus on."
+    },
+    {
+      "start": 1720.0,
+      "end": 1725.0,
+      "text": "That volatility is a trader's best friend and a portfolio manager's worst enemy."
+    },
+    {
+      "start": 1726.0,
+      "end": 1732.0,
+      "text": "Now we looked at that example of the $1 million gross exposure portfolio."
+    },
+    {
+      "start": 1733.0,
+      "end": 1739.0,
+      "text": "And really we concluded that if volatility moves up,"
+    },
+    {
+      "start": 1740.0,
+      "end": 1747.0,
+      "text": "then the volatility on the risk of that portfolio increases in line with the volatility index."
+    },
+    {
+      "start": 1748.0,
+      "end": 1754.0,
+      "text": "So for example, if you're a portfolio manager with a $1 million gross exposure,"
+    },
+    {
+      "start": 1755.0,
+      "end": 1758.0,
+      "text": "and the volatility index doubles,"
+    },
+    {
+      "start": 1759.0,
+      "end": 1765.0,
+      "text": "then all that occurs is that your $1 million yesterday becomes $2 million today."
+    },
+    {
+      "start": 1766.0,
+      "end": 1771.0,
+      "text": "That's because the P&L swings within your portfolio have now doubled."
+    },
+    {
+      "start": 1772.0,
+      "end": 1775.0,
+      "text": "So that's the caveat that we were discussing."
+    },
+    {
+      "start": 1776.0,
+      "end": 1780.0,
+      "text": "The second caveat, which was that the volatility index,"
+    },
+    {
+      "start": 1781.0,
+      "end": 1789.0,
+      "text": "when it's called the fear index, is not a fear of the volatility index going up and therefore the market going down."
+    },
+    {
+      "start": 1790.0,
+      "end": 1795.0,
+      "text": "Because the definition of the volatility index is that it can go up or down."
+    },
+    {
+      "start": 1796.0,
+      "end": 1799.0,
+      "text": "So that it's not called the fear index for that reason."
+    },
+    {
+      "start": 1800.0,
+      "end": 1806.0,
+      "text": "The reason why it's called the fear index is because professional traders are predominantly portfolio managers"
+    },
+    {
+      "start": 1807.0,
+      "end": 1810.0,
+      "text": "and they fear volatility itself because it's their worst enemy."
+    },
+    {
+      "start": 1811.0,
+      "end": 1812.0,
+      "text": "Now what do they have to do?"
+    },
+    {
+      "start": 1812.0,
+      "end": 1814.0,
+      "text": "Well, they have to transition."
+    },
+    {
+      "start": 1815.0,
+      "end": 1820.0,
+      "text": "When their risk goes up, they transition from being portfolio managers into short-term traders."
+    },
+    {
+      "start": 1821.0,
+      "end": 1823.0,
+      "text": "And in that process, they raise cash."
+    },
+    {
+      "start": 1824.0,
+      "end": 1829.0,
+      "text": "Or in trading accounts where margin is utilized, they raise margin."
+    },
+    {
+      "start": 1830.0,
+      "end": 1836.0,
+      "text": "They have margin available, which enables them to trade on a short-term basis."
+    },
+    {
+      "start": 1837.0,
+      "end": 1840.0,
+      "text": "So then they switch from being portfolio managers to short-term traders."
+    },
+    {
+      "start": 1841.0,
+      "end": 1847.0,
+      "text": "And when volatility decreases, they switch back from being short-term traders to portfolio managers."
+    },
+    {
+      "start": 1848.0,
+      "end": 1860.0,
+      "text": "So they go from being one- to three-month time horizon, long-short portfolio managers, decreasing their exposure, freeing up capital to enable them to trade short-term."
+    },
+    {
+      "start": 1861.0,
+      "end": 1866.0,
+      "text": "And then switch back to becoming portfolio managers when the market tells them that they have to do it."
+    },
+    {
+      "start": 1867.0,
+      "end": 1882.0,
+      "text": "The way they interpret it is they take the message that opportunities are increasing on a short-term basis and your implied risk of your portfolio is going up."
+    },
+    {
+      "start": 1883.0,
+      "end": 1887.0,
+      "text": "Therefore, you should transition from being a portfolio manager to a short-term trader."
+    },
+    {
+      "start": 1888.0,
+      "end": 1890.0,
+      "text": "And then the reverse, if the reverse is true."
+    },
+    {
+      "start": 1891.0,
+      "end": 1898.0,
+      "text": "Now, the first caveat that we looked at was this idea that there's some sort of rulebook."
+    },
+    {
+      "start": 1899.0,
+      "end": 1899.0,
+      "text": "There isn't."
+    },
+    {
+      "start": 1900.0,
+      "end": 1903.0,
+      "text": "I've been teaching on the road now for two years."
+    },
+    {
+      "start": 1904.0,
+      "end": 1908.0,
+      "text": "And one of the things that staggers me all the time is that hands always go up in the audience."
+    },
+    {
+      "start": 1909.0,
+      "end": 1911.0,
+      "text": "And people are always asking, so what do I do in this situation?"
+    },
+    {
+      "start": 1912.0,
+      "end": 1913.0,
+      "text": "What do I do in that situation?"
+    },
+    {
+      "start": 1914.0,
+      "end": 1915.0,
+      "text": "Well, there's no rulebook."
+    },
+    {
+      "start": 1916.0,
+      "end": 1918.0,
+      "text": "You can't go to the bookstore."
+    },
+    {
+      "start": 1919.0,
+      "end": 1932.0,
+      "text": "You can't go on Amazon and buy a book which says when the volatility index of the assets that you're trading does this, i.e. goes up 25% or drops 25%, you should be doing exactly this."
+    },
+    {
+      "start": 1933.0,
+      "end": 1934.0,
+      "text": "It's a personal thing."
+    },
+    {
+      "start": 1935.0,
+      "end": 1937.0,
+      "text": "Because some people like trading short-term."
+    },
+    {
+      "start": 1938.0,
+      "end": 1940.0,
+      "text": "Some people like being portfolio managers."
+    },
+    {
+      "start": 1941.0,
+      "end": 1950.0,
+      "text": "You don't have to transition from being a portfolio manager to a short-term trader or transition from a short-term trader to a portfolio manager."
+    },
+    {
+      "start": 1951.0,
+      "end": 1954.0,
+      "text": "But you should definitely know, if you're one or the other, the following."
+    },
+    {
+      "start": 1955.0,
+      "end": 1960.0,
+      "text": "If you're a portfolio manager and you see the VIX going up, what's happening is your risk is going up in line."
+    },
+    {
+      "start": 1961.0,
+      "end": 1969.0,
+      "text": "So if it goes up 50% and all your positions are in S&P 500 stocks, your risk has gone up 50% without you doing anything."
+    },
+    {
+      "start": 1970.0,
+      "end": 1972.0,
+      "text": "That's the first thing if you're a portfolio manager."
+    },
+    {
+      "start": 1973.0,
+      "end": 1981.0,
+      "text": "If you're only a short-term trader, well, you should take the message from what we've seen so far that 80% of the time there are no short-term opportunities."
+    },
+    {
+      "start": 1982.0,
+      "end": 1986.0,
+      "text": "You should only trade when the opportunities allow you to do so."
+    },
+    {
+      "start": 1987.0,
+      "end": 1994.0,
+      "text": "Because if you trade on a normal day in the S&P 500 78% of times, the opportunities don't exist."
+    },
+    {
+      "start": 1995.0,
+      "end": 1996.0,
+      "text": "And you're just going to lose money."
+    },
+    {
+      "start": 1997.0,
+      "end": 2000.0,
+      "text": "The problem is professional traders are employed to make money all the time."
+    },
+    {
+      "start": 2001.0,
+      "end": 2009.0,
+      "text": "So they have to be portfolio managers in one instance and transition and switch into short-term traders and back again in the other instance."
+    },
+    {
+      "start": 2010.0,
+      "end": 2013.0,
+      "text": "So when you're employed to make money all the time, that's what you have to do."
+    },
+    {
+      "start": 2014.0,
+      "end": 2015.0,
+      "text": "You can't just non-participate."
+    },
+    {
+      "start": 2016.0,
+      "end": 2020.0,
+      "text": "However, for retail traders, non-participation is obviously an option."
+    },
+    {
+      "start": 2021.0,
+      "end": 2028.0,
+      "text": "Now, I hope that you've picked up all those messages because at least now you know what the volatility index is."
+    },
+    {
+      "start": 2029.0,
+      "end": 2040.0,
+      "text": "We're going to move on now to Chris and Chris is going to show you how you calculate your own implied volatility index from option prices as long as you can get the data for any asset class."
+    },
+    {
+      "start": 2041.0,
+      "end": 2049.0,
+      "text": "So you can do it for indices, sector ETFs, stocks within equities, commodities, currencies, interest rates, bonds."
+    },
+    {
+      "start": 2050.0,
+      "end": 2053.0,
+      "text": "You can do this for anything as long as you can get the data from the options market."
+    },
+    {
+      "start": 2054.0,
+      "end": 2057.0,
+      "text": "Now, here's a little caveat for you as a retail trader."
+    },
+    {
+      "start": 2058.0,
+      "end": 2063.0,
+      "text": "Because you're not trading high levels of capital, this exercise is less important for you."
+    },
+    {
+      "start": 2064.0,
+      "end": 2077.0,
+      "text": "What you're about to see in terms of the spreadsheet work and the calculated formulas, if you like, in the spreadsheets, it's quite complicated, it's quite mathematical."
+    },
+    {
+      "start": 2078.0,
+      "end": 2081.0,
+      "text": "But as a retail trader, you don't really have to do this all the time."
+    },
+    {
+      "start": 2082.0,
+      "end": 2086.0,
+      "text": "You should just appreciate it and understand it and know what it means when the VIX goes up."
+    },
+    {
+      "start": 2087.0,
+      "end": 2092.0,
+      "text": "What we're about to show you is more important if you're going to work at an investment bank or you're going to work at a hedge fund."
+    },
+    {
+      "start": 2093.0,
+      "end": 2099.0,
+      "text": "Because if you're going to go and work at one of these places, you're going to be expected to know this inside out."
+    },
+    {
+      "start": 2100.0,
+      "end": 2106.0,
+      "text": "Because you're trading very large levels of capital, hundreds of millions of dollars, and these measures become very important."
+    },
+    {
+      "start": 2107.0,
+      "end": 2116.0,
+      "text": "But as a retail trader, really, you should focus on the historical volatility of distribution and odds calculation."
+    },
+    {
+      "start": 2117.0,
+      "end": 2125.0,
+      "text": "And what we're going to show you in video number seven, which is the average true range, which is the second historical volatility calculation."
+    },
+    {
+      "start": 2126.0,
+      "end": 2129.0,
+      "text": "What I'm going to show you now is more important if you're going to work at an investment bank or a hedge fund."
+    },
+    {
+      "start": 2130.0,
+      "end": 2141.0,
+      "text": "But as a retail trader, just appreciate it and know what you probably should be doing if you're a portfolio manager and you see volatility go up or go down."
+    },
+    {
+      "start": 2142.0,
+      "end": 2145.0,
+      "text": "And if you actually do get it, that's a bonus."
+    },
+    {
+      "start": 2146.0,
+      "end": 2149.0,
+      "text": "But don't worry about it too much if you find it a little bit too complicated."
+    },
+    {
+      "start": 2150.0,
+      "end": 2158.0,
+      "text": "Chris is now going to show you this in video six and I'm going to see you back in video seven and we're going to look at the average true range."
+    }
+  ],
+  "model": "ggml-large-v3-turbo.bin"
+}
