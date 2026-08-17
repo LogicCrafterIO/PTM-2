@@ -104,7 +104,6 @@ def prm_for(prices: pd.DataFrame, candidate: Candidate, market_closes: list[floa
         mrets = [market_closes[i] / market_closes[i - 1] - 1.0 for i in range(1, len(market_closes))]
         n = min(len(rets), len(mrets), 252)
         beta = slope_beta(rets[-n:], mrets[-n:])
-    blocked = score is not None and score < cfg["min_r_score"]
     return PRMResult(
         stop_pct=stop,
         target_pct=target,
@@ -112,8 +111,8 @@ def prm_for(prices: pd.DataFrame, candidate: Candidate, market_closes: list[floa
         atrp=atr,
         beta=beta,
         size_fraction=1.0,
-        blocked=blocked,
-        block_reason="R-score below minimum" if blocked else "",
+        blocked=False,
+        block_reason="",
     )
 
 

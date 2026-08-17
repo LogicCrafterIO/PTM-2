@@ -168,6 +168,7 @@ def extract_filing_sections(text: str, max_chars: int = 4000) -> dict[str, str]:
         r"Item\s+7[\.\s]+Management.?s Discussion",
         r"Item\s+7A[\.\s]+",
         max_chars,
+        min_body=200,
     )
     if len(mda) < 200:
         q_mda = _section(
@@ -175,6 +176,7 @@ def extract_filing_sections(text: str, max_chars: int = 4000) -> dict[str, str]:
             r"Item\s+2[\.\s]+Management.?s Discussion",
             r"Item\s+3[\.\s]+",
             max_chars,
+            min_body=200,
         )
         if len(q_mda) > len(mda):
             mda = q_mda

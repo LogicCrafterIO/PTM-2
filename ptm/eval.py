@@ -12,7 +12,7 @@ from typing import Any
 
 from ptm.config import ROOT, data_dir, ideas_dir, toml_settings
 from ptm.io import read_json, write_json
-from ptm.models import Bias, IdeaState, Side, TimingLight
+from ptm.models import Bias, IdeaState
 
 
 @dataclass
@@ -216,7 +216,6 @@ def check_idea(idea: dict, pack: dict | None, cfg: dict) -> list[Finding]:
     extra = idea.get("extra") or {}
     qual = idea.get("qual") or {}
     cats = idea.get("catalysts") or {}
-    timing = idea.get("timing") or {}
     prm = idea.get("prm") or {}
 
     pe1, sector_pe1 = cand.get("pe1"), cand.get("sector_pe1")
@@ -376,43 +375,6 @@ def check_idea(idea: dict, pack: dict | None, cfg: dict) -> list[Finding]:
             )
         )
 
-    light = timing.get("light")
-    side = cand.get("side")
-    macd = timing.get("macd")
-    sma20, sma60 = timing.get("sma20"), timing.get("sma60")
-    if side == Side.SHORT.value and light == TimingLight.GREEN.value and sma20 and sma60 and sma20 > sma60:
-        findings.append(
-            Finding(
-                ticker=ticker,
-                stage="timing",
-                severity="error",
-                check_id="timing.side_mismatch",
-                evidence=f"short with green light while SMA20>{sma60} (uptrend)",
-                suggestion="Invert timing lights for shorts.",
-            )
-        )
-    if side == Side.LONG.value and light == TimingLight.GREEN.value and sma20 and sma60 and sma20 < sma60:
-        findings.append(
-            Finding(
-                ticker=ticker,
-                stage="timing",
-                severity="error",
-                check_id="timing.side_mismatch",
-                evidence="long with green light in a downtrend",
-                suggestion="Green longs require SMA20 > SMA60.",
-            )
-        )
-    if prm.get("size_fraction") == 0:
-        findings.append(
-            Finding(
-                ticker=ticker,
-                stage="timing",
-                severity="info",
-                check_id="timing.size_zero",
-                evidence=f"light={light} size_fraction=0",
-                suggestion="Zero-size ideas should not be presented as book candidates.",
-            )
-        )
     r_score = prm.get("r_score")
     stop, target = prm.get("stop_pct"), prm.get("target_pct")
     multiple = cfg["prm"]["atrp_target_multiple"]

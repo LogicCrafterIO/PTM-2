@@ -89,3 +89,15 @@ def test_healthcare_not_skipped_in_v1():
     cfg = toml_settings()["filters"]
     assert cfg.get("skip_healthcare_v1") is False
     assert "Health Care" in (cfg.get("exclude_sectors") or [])
+
+
+def test_short_industry_blocks_parent_sector_long():
+    tilts = compute_sector_tilts(_july_ism(), pmi=55.6)
+    disc = next(row for row in tilts if row.get("sector") == "Consumer Discretionary" and not row.get("industry"))
+    industrials = next(row for row in tilts if row.get("sector") == "Industrials" and not row.get("industry"))
+    assert disc["tilt"] != "long"
+    assert industrials["tilt"] != "long"
+    textile = next(row for row in tilts if row.get("industry") == "Textile Mills")
+    other = next(row for row in tilts if row.get("industry") == "Other Services")
+    assert textile["tilt"] == "short"
+    assert other["tilt"] == "short"

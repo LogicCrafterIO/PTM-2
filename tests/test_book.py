@@ -1,14 +1,16 @@
 from ptm.book import assemble_book
-from ptm.models import Bias, Candidate, IdeaState, PRMResult, Side, TimingLight, TimingResult, TradeIdea
+from ptm.models import Bias, Candidate, IdeaState, PRMResult, Side, TradeIdea
 
 
-def _idea(ticker: str, side: Side, *, templated: bool = True, blocked: bool = False, amber: bool = False, beta: float = 0.2) -> TradeIdea:
-    return TradeIdea(
+def _idea(ticker: str, side: Side, *, templated: bool = True, extra_gates: list[str] | None = None, beta: float = 0.2) -> TradeIdea:
+    idea = TradeIdea(
         candidate=Candidate(ticker=ticker, side=side, name=ticker),
         state=IdeaState.TEMPLATED if templated else IdeaState.IDENTIFIED,
-        timing=TimingResult(light=TimingLight.AMBER if amber else TimingLight.GREEN),
-        prm=PRMResult(blocked=blocked, beta=beta, size_fraction=1.0, r_score=3.0),
+        prm=PRMResult(blocked=False, beta=beta, size_fraction=1.0, r_score=3.0),
     )
+    if extra_gates:
+        idea.extra["gates"] = extra_gates
+    return idea
 
 
 def test_assemble_book_splits_and_limits():
@@ -20,21 +22,15 @@ def test_assemble_book_splits_and_limits():
     assert all(i.state == IdeaState.SIZED for i in book.ideas)
 
 
-def test_assemble_book_excludes_gates_and_prm_blocked():
-    gated = _idea("G1", Side.LONG)
-    gated.extra["gates"] = ["timing red: do not enter"]
-    blocked = _idea("B1", Side.LONG, blocked=True)
+def test_assemble_book_excludes_gates_not_timing():
+    gated = _idea("G1", Side.LONG, extra_gates=["qualitative denies quant outlier"])
     identified = _idea("I1", Side.LONG, templated=False)
-    zero = _idea("Z1", Side.LONG)
-    assert zero.prm is not None
-    zero.prm.size_fraction = 0.0
-    book = assemble_book([gated, blocked, identified, zero], Bias.NEUTRAL)
+    ok = _idea("L1", Side.LONG)
+    book = assemble_book([gated, identified, ok], Bias.NEUTRAL)
     tickers = {i.candidate.ticker for i in book.ideas}
     assert "G1" not in tickers
-    assert "B1" not in tickers
     assert "I1" not in tickers
-    assert "Z1" not in tickers
-    assert any("only" in b and "names" in b for b in book.limit_breaches)
+    assert "L1" in tickers
 
 
 def test_empty_ready_set_is_a_breach():
@@ -43,9 +39,9 @@ def test_empty_ready_set_is_a_breach():
     assert any("only 0 names" in b for b in book.limit_breaches)
 
 
-def test_amber_halves_size_and_beta_breach():
-    ideas = [_idea("L1", Side.LONG, amber=True, beta=2.0), _idea("S1", Side.SHORT, beta=2.0)]
+def test_size_stays_full_and_beta_breach():
+    ideas = [_idea("L1", Side.LONG, beta=0.1), _idea("S1", Side.SHORT, beta=2.0)]
     book = assemble_book(ideas, Bias.NET_LONG)
     long = next(i for i in book.ideas if i.candidate.side == Side.LONG)
-    assert long.prm is not None and long.prm.size_fraction == 0.5
+    assert long.prm is not None and long.prm.size_fraction == 1.0
     assert any("beta" in b.lower() for b in book.limit_breaches)

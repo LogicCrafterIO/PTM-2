@@ -7,7 +7,7 @@ from pathlib import Path
 import pandas as pd
 
 from ptm.book import assemble_book
-from ptm.config import data_dir, ideas_dir, toml_settings
+from ptm.config import data_dir, ideas_dir
 from ptm.gates import apply_process_gates, candidate_warnings, size_fraction
 from ptm.ingest.company_research import research_pack
 from ptm.ingest.edgar import company_facts
@@ -21,9 +21,10 @@ from ptm.llm import catalysts as llm_catalysts
 from ptm.llm import fallback_template, llm_available, macro_narrative, qualitative, render_template
 from ptm.log import log
 from ptm.macro import build_dashboard
-from ptm.models import Candidate, CatalystResult, IdeaState, MacroSnapshot, QualResult, Side, TradeIdea
+from ptm.models import Candidate, CatalystResult, IdeaState, MacroSnapshot, QualResult, Side, TimingResult, TradeIdea
 from ptm.quant import build_candidates
-from ptm.timing_prm import earnings_in_window, prm_for, time_idea
+from ptm.ranking import ordered_candidates, write_ranking
+from ptm.timing_prm import earnings_in_window, prm_for
 
 
 def _ensure_fundamentals(universe: pd.DataFrame, force: bool = False) -> pd.DataFrame:
@@ -173,7 +174,6 @@ def _attach_evidence(candidate: Candidate) -> Candidate:
 
 
 def generate_ideas(max_candidates: int | None = None, skip_llm: bool = False) -> list[TradeIdea]:
-    cfg = toml_settings()
     snap, candidates = screen()
     if not skip_llm:
         try:
@@ -192,10 +192,15 @@ def generate_ideas(max_candidates: int | None = None, skip_llm: bool = False) ->
 
         market_hist = [row["close"] for row in read_json(yf_macro).get("series", {}).get("spx", {}).get("history", [])]
 
-    ranked = split_quota(candidates, max_candidates or cfg["llm"]["max_candidates"])
-    chosen = ranked
+    ranked_all = ordered_candidates(candidates)
+    day = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    write_ranking(candidates, day)
+    if max_candidates is None:
+        chosen = ranked_all
+    else:
+        chosen = split_quota(candidates, max_candidates)
     log(
-        f"ideas: researching {len(chosen)} of {len(candidates)} candidates "
+        f"ideas: researching {len(chosen)} of {len(candidates)} PE candidates "
         f"(llm={'on' if not skip_llm and llm_available() else 'off'})"
     )
     ideas: list[TradeIdea] = []
@@ -243,16 +248,12 @@ def generate_ideas(max_candidates: int | None = None, skip_llm: bool = False) ->
         except Exception as exc:
             log(f"idea {cand.ticker}: catalysts FAIL {exc}")
             idea.extra["cat_error"] = str(exc)
-        idea.timing = time_idea(prices, cand.ticker, cand.side)
+        idea.timing = TimingResult(comment="omitted: technical analysis is not part of this research process")
         idea.prm = prm_for(prices, cand, market_hist)
         idea.prm.size_fraction = size_fraction(idea)
         blocks = apply_process_gates(idea)
         idea.extra["gates"] = blocks
-        light = idea.timing.light.value if idea.timing else "?"
-        log(
-            f"idea {cand.ticker}: timing={light} size={idea.prm.size_fraction} "
-            f"gates={blocks or 'none'}"
-        )
+        log(f"idea {cand.ticker}: size={idea.prm.size_fraction} gates={blocks or 'none'}")
         qual = idea.qual or QualResult(supports_outlier=None, summary="missing qualitative", red_flags=["llm_skipped"] if skip_llm else [])
         cats = idea.catalysts or CatalystResult(earnings_date=parsed, earnings_in_window=in_window, tradeable=in_window, reason="missing catalysts")
         try:
@@ -279,7 +280,6 @@ def generate_ideas(max_candidates: int | None = None, skip_llm: bool = False) ->
             )
             idea.template_markdown = md
         ideas.append(idea)
-        day = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         path = ideas_dir(day, f"{cand.side.value}_{cand.ticker}.md")
         path.write_text(md, encoding="utf-8")
         write_json(path.with_suffix(".json"), idea.model_dump())

@@ -1,6 +1,6 @@
 # PTM idea engine
 
-Long/short equity research pipeline from the PTM process: macro dashboard, quant screen, qualitative pack, catalysts, timing/PRM, book, then a process audit.
+Long/short equity research pipeline from the PTM process: macro dashboard, quant screen, qualitative pack, catalysts, book, then a process audit. SMA/MACD timing lights are not used.
 
 ## One command
 
@@ -13,14 +13,15 @@ From the repo root, with the project venv:
 That single command:
 
 1. Ingests universe, prices, FRED, and ISM (live curl, else bundled July fixture)
-2. Screens candidates and writes trade-idea markdown + JSON
-3. Assembles the book
-4. Writes `ideas/<today>/AUDIT.md` and `data/curated/audit.json`
+2. Ranks every PE-outlier candidate (`ideas/<today>/RANKING.md`)
+3. Runs qualitative + catalysts on **all** PE candidates (slow with LLM; `--max-candidates` for a smoke run)
+4. Assembles the book from top names that pass gates (max 6 long / 6 short)
+5. Writes `ideas/<today>/AUDIT.md` and `data/curated/audit.json`
 
 The JSON summary includes a funnel so you can see how many names survived each cut, with long/short splits:
 
 ```text
-universe 1506 → fundamentals 1506 → candidates 94 (52L/42S) → researched 16 (8L/8S) → book 11 (6L/5S)
+universe 1506 → fundamentals 1506 → candidates 94 (52L/42S) → researched 94 (52L/42S) → book 11 (6L/5S)
 ```
 
 Progress logs go to stderr with timestamps, including every Yahoo fundamental ticker and an ETA. A checkpoint is written every 25 names, so Ctrl+C does not throw away the backfill. Restart `weekly` to pick up the new logging if a run is already in progress.
@@ -38,7 +39,11 @@ Useful flags:
 .\.venv\Scripts\python.exe -m ptm weekly --pmi-html .\pmi.html --services-html .\services.html
 ```
 
-`--pmi-html` / `--services-html` are for reports you saved while logged into ismworld.org. Without them, a blocked live fetch uses the July fixture and the audit will warn that the print is stale.
+Live ISM fetch uses HTTP/1.1 plus a homepage warmup (Cloudflare empty-replies HTTP/2). `--pmi-html` / `--services-html` override that with reports you saved in the browser. If the live fetch still fails, the July fixture is used and the audit warns that the print is stale.
+
+```powershell
+.\.venv\Scripts\python.exe -m ptm weekly --pmi-html .\pmi.html --services-html .\services.html
+```
 
 If `ptm` is not on PATH, keep using `python.exe -m ptm` from `.venv\Scripts` as above. Activate first only if you want the short `ptm weekly` form:
 

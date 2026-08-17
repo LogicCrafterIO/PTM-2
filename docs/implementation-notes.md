@@ -10,7 +10,7 @@ One command for the full weekly pipeline (ingest, ideas, book, audit):
 .\.venv\Scripts\python.exe -m ptm weekly
 ```
 
-See [README.md](../README.md) for flags (`--skip-llm`, `--pmi-html`, `--force`, …). Weekly output includes a `funnel` string (`universe → fundamentals → candidates L/S → researched L/S → book L/S`). A short Yahoo fundamentals cache is backfilled on the next run; it is not reused as an A-only PE screen.
+See [README.md](../README.md) for flags (`--skip-llm`, `--pmi-html`, `--force`, …). Weekly output includes a `funnel` string (`universe → fundamentals → candidates L/S → researched L/S → book L/S`). A short Yahoo fundamentals cache is backfilled on the next run; it is not reused as an A-only PE screen. Default weekly researches **every PE-outlier candidate** and writes `ideas/<today>/RANKING.md`. SMA/MACD timing is omitted from gates and templates.
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest
@@ -45,7 +45,7 @@ No NYSE holiday calendar is in the repo. Dated catalysts must fall 20–60 calen
 
 ### 5. ISM live fetch is still best-effort
 
-Current month is tried first (July is no longer pinned). Fetch is curl-only (no Playwright). If curl gets an empty reply or a login wall, scrape falls back to saved `--pmi-html` / `--services-html` files, then the bundled July fixture. The audit still warns when the print is stale. We did not add a login/cookie path for ismworld.org.
+Latest *released* print is last calendar month (mid-August tries `/july/`, not `/august/`). Fetch is curl-only (no Playwright): Chrome impersonation over HTTP/1.1 after a homepage cookie warmup. Cloudflare empty-replies HTTP/2 (curl 52). If that still fails, scrape falls back to saved `--pmi-html` / `--services-html` files, then the bundled July fixture. The audit still warns when the print is stale. We did not add an ISM login/cookie path.
 
 ### 6. Not built (still later)
 
@@ -68,3 +68,5 @@ Current month is tried first (July is no longer pinned). Fetch is curl-only (no 
 - Markdown files never dump JSON
 - `generate_ideas` always writes `book.json` from the same in-memory list
 - Book excludes zero size and hard `extra.gates`
+- SMA/MACD timing lights are omitted from gates, sizing, templates, and the audit; ATR/R-score are risk footnotes only
+- Every PE candidate is ranked into `RANKING.md`; qualitative is two-pass extract then EG-case verdict

@@ -5,6 +5,7 @@ from __future__ import annotations
 import re
 
 from ptm.models import Candidate, Side
+from ptm.ranking import long_key, short_key
 
 ISM_TO_GICS: dict[str, str] = {
     "chemical products": "Materials",
@@ -267,10 +268,10 @@ def compute_sector_tilts(ism: dict, pmi: float | None = None) -> list[dict]:
     reasons.pop("", None)
 
     industry_rows = compute_industry_tilts(ism)
-    sole_short = {
+    any_short = {
         row["sector"]
         for row in industry_rows
-        if row.get("sector") and "(only industry)" in str(row.get("why") or "")
+        if row.get("sector") and row.get("tilt") == "short"
     }
     by_sector: dict[str, list[dict]] = {}
     for row in industry_rows:
@@ -281,7 +282,7 @@ def compute_sector_tilts(ism: dict, pmi: float | None = None) -> list[dict]:
         flags = by_sector.get(sector) or []
         net = sum(float(f.get("score") or 0.0) for f in flags)
         all_short = bool(flags) and all(f.get("tilt") == "short" for f in flags)
-        if sector in sole_short or (all_short and net < 0):
+        if sector in any_short or (all_short and net < 0):
             if raw > 0.15:
                 scores[sector] = 0.15
 
@@ -337,12 +338,6 @@ def split_quota(candidates: list[Candidate], limit: int) -> list[Candidate]:
     n_long = limit - n_short
     longs = [c for c in candidates if c.side == Side.LONG]
     shorts = [c for c in candidates if c.side == Side.SHORT]
-
-    def long_key(c: Candidate) -> tuple:
-        return (0 if c.mcap_ok else 1, -(c.ism_score or 0.0), -(c.eg1 or 0.0))
-
-    def short_key(c: Candidate) -> tuple:
-        return (0 if c.mcap_ok else 1, -(c.ism_score or 0.0), (c.eg1 or 0.0))
 
     longs.sort(key=long_key)
     shorts.sort(key=short_key)

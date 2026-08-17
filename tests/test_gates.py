@@ -1,5 +1,5 @@
 from ptm.gates import apply_process_gates, candidate_warnings, mcap_check, size_fraction
-from ptm.models import Candidate, CatalystResult, IdeaState, PRMResult, QualResult, Side, TimingLight, TimingResult, TradeIdea
+from ptm.models import Candidate, CatalystResult, IdeaState, PRMResult, QualResult, Side, TradeIdea
 
 
 def test_mcap_bands():
@@ -29,30 +29,26 @@ def test_qual_none_does_not_block():
     assert not any("outlier" in b for b in blocks)
 
 
-def test_catalyst_and_red_timing():
+def test_catalyst_gate_without_timing():
     idea = TradeIdea(
         candidate=Candidate(ticker="X", side=Side.LONG),
         qual=QualResult(supports_outlier=True),
         catalysts=CatalystResult(tradeable=False, reason="none"),
-        timing=TimingResult(light=TimingLight.RED),
     )
     blocks = apply_process_gates(idea)
     assert any("catalyst" in b for b in blocks)
-    assert any("timing red" in b for b in blocks)
+    assert not any("timing" in b.lower() for b in blocks)
 
 
-def test_r_score_gate_and_sizing():
+def test_r_score_and_timing_do_not_gate():
     idea = TradeIdea(
         candidate=Candidate(ticker="X", side=Side.LONG),
-        prm=PRMResult(r_score=2.0, blocked=True, block_reason="R-score below minimum"),
-        timing=TimingResult(light=TimingLight.AMBER),
+        prm=PRMResult(r_score=2.0, blocked=False),
     )
     blocks = apply_process_gates(idea)
-    assert any("R-score" in b or "PRM" in b or "below" in b for b in blocks)
-    amber = TradeIdea(candidate=Candidate(ticker="Y", side=Side.LONG), timing=TimingResult(light=TimingLight.AMBER))
-    red = TradeIdea(candidate=Candidate(ticker="Z", side=Side.LONG), timing=TimingResult(light=TimingLight.RED))
-    assert size_fraction(amber) == 0.5
-    assert size_fraction(red) == 0.0
+    assert blocks == []
+    amber = TradeIdea(candidate=Candidate(ticker="Y", side=Side.LONG))
+    assert size_fraction(amber) == 1.0
 
 
 def test_candidate_warnings_flags():

@@ -56,4 +56,6 @@ def test_r_score_is_not_a_constant_multiple():
     trend_prm = prm_for(trend, Candidate(ticker="T1", side=Side.LONG))
     assert quiet_prm.r_score is not None and trend_prm.r_score is not None
     assert abs(quiet_prm.r_score - 3.0) > 0.05
-    assert abs(trend_prm.r_score - quiet_prm.r_score) > 0.05
+    assert abs(quiet_prm.r_score - trend_prm.r_score) > 0.05
+    assert quiet_prm.blocked is False
+    assert trend_prm.blocked is False

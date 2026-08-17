@@ -43,7 +43,7 @@ def test_aee_fixture_hits_core_holes():
     assert "cat.headline_like" in ids
     assert "template.empty_md" in ids
     assert "template.error" in ids
-    assert "timing.size_zero" in ids
+    assert "timing.size_zero" not in ids
 
 
 def test_aca_headlines_and_rscore():
@@ -60,14 +60,14 @@ def test_acgl_nan_peg_and_table_dump():
     ids = _ids(check_idea(idea, None, _cfg()))
     assert "quant.peg_nan" in ids
     assert "cat.headline_like" in ids
-    assert "timing.side_mismatch" in ids
+    assert "timing.side_mismatch" not in ids
     assert "template.error" in ids
 
 
 def test_acn_short_green_uptrend():
     idea = read_json(EVAL / "short_ACN.json")
     ids = _ids(check_idea(idea, None, _cfg()))
-    assert "timing.side_mismatch" in ids
+    assert "timing.side_mismatch" not in ids
     assert "cat.earnings_not_iso" in ids
 
 

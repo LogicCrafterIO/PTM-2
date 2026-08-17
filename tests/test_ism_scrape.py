@@ -13,16 +13,16 @@ def test_login_wall_detection():
     assert not _login_walled("https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/july/")
 
 
-def test_urls_try_current_month_first():
-    urls = _urls()
+def test_urls_try_prior_month_first():
+    now = datetime(2026, 8, 17, tzinfo=timezone.utc)
+    assert _month_slugs(now) == ["july", "june", "may", "april"]
+    urls = _urls(now)
     kinds = [k for k, _ in urls]
     assert kinds.count("pmi") >= 2
-    now = datetime.now(timezone.utc)
-    current = now.strftime("%B").lower()
     first_pmi = next(url for kind, url in urls if kind == "pmi")
-    assert first_pmi.endswith(f"/pmi/{current}/")
-    slugs = _month_slugs(now)
-    assert current in slugs
+    assert first_pmi.endswith("/pmi/july/")
+    jan = datetime(2026, 1, 10, tzinfo=timezone.utc)
+    assert _month_slugs(jan)[0] == "december"
 
 
 def test_fetch_login_wall_raises(monkeypatch):

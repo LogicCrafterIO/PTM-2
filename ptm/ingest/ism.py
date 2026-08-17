@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import calendar
 import re
+import time
 from datetime import datetime, timezone
 from pathlib import Path
+from threading import Lock
 
 from bs4 import BeautifulSoup
 
@@ -14,10 +16,15 @@ from ptm.io import write_json
 from ptm.log import log
 
 BASE = "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports"
-CHROME_UA = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
-)
+HOME = "https://www.ismworld.org/"
+# Cloudflare on ismworld.org empty-replies HTTP/2 (curl 52). HTTP/1.1 + Chrome
+# impersonation + a homepage cookie warmup is what a real browser does.
+CURL_TRIES = 3
+HTTP_1_1 = "v1"  # curl_cffi: HTTP/1.1 (int 1 is HTTP/1.0; default is HTTP/2 → curl 52)
+
+_session_lock = Lock()
+_session = None
+_warmed = False
 
 COMPONENT_LABELS = [
     ("headline_mfg", r"Manufacturing PMI"),
@@ -38,18 +45,19 @@ COMPONENT_LABELS = [
 
 
 def _month_slugs(now: datetime | None = None) -> list[str]:
+    """Latest *released* print is last calendar month (August URL is empty mid-August)."""
     now = now or datetime.now(timezone.utc)
-    names = [calendar.month_name[(now.month - i - 1) % 12 + 1].lower() for i in range(4)]
-    seen: list[str] = []
-    for name in names:
-        if name not in seen:
-            seen.append(name)
-    return seen
+    month = now.month - 1 or 12
+    names: list[str] = []
+    for _ in range(4):
+        names.append(calendar.month_name[month].lower())
+        month = month - 1 or 12
+    return names
 
 
-def _urls() -> list[tuple[str, str]]:
+def _urls(now: datetime | None = None) -> list[tuple[str, str]]:
     urls: list[tuple[str, str]] = []
-    for month in _month_slugs():
+    for month in _month_slugs(now):
         urls.append(("pmi", f"{BASE}/pmi/{month}/"))
         urls.append(("services", f"{BASE}/services/{month}/"))
     return urls
@@ -59,25 +67,72 @@ def _login_walled(url: str) -> bool:
     return "SSO/Login" in url or "ecommerce.ismworld.org" in url
 
 
-def _get_curl(url: str) -> str:
+def _new_session():
     from curl_cffi import requests as cffi_requests
 
-    response = cffi_requests.get(
-        url,
-        impersonate="chrome124",
-        timeout=12,
-        allow_redirects=True,
-        headers={"User-Agent": CHROME_UA},
-    )
-    final = str(getattr(response, "url", url))
-    if response.status_code >= 400:
-        raise RuntimeError(f"HTTP {response.status_code}")
-    if _login_walled(final):
-        raise RuntimeError("ISM login wall")
-    text = response.text or ""
-    if len(text) < 800:
-        raise RuntimeError("empty or stub ISM page")
-    return text
+    return cffi_requests.Session(impersonate="chrome131", http_version=HTTP_1_1)
+
+
+def _sess():
+    global _session
+    if _session is None:
+        _session = _new_session()
+    return _session
+
+
+def _reset_session() -> None:
+    global _session, _warmed
+    _session = _new_session()
+    _warmed = False
+
+
+def _warmup() -> None:
+    global _warmed
+    if _warmed:
+        return
+    try:
+        response = _sess().get(HOME, timeout=30, allow_redirects=True)
+        if response.status_code < 400 and (response.text or ""):
+            _warmed = True
+            return
+        log(f"ism: homepage warmup HTTP {response.status_code}")
+    except Exception as exc:
+        log(f"ism: homepage warmup failed ({exc}); trying report URL anyway")
+
+
+def _get_curl(url: str) -> str:
+    with _session_lock:
+        last: Exception | None = None
+        for attempt in range(CURL_TRIES):
+            # Homepage first only after a miss: a direct report GET often works on
+            # HTTP/1.1, and www.ismworld.org/ itself is the flakier 52 target.
+            if attempt > 0:
+                _warmup()
+            try:
+                response = _sess().get(url, timeout=30, allow_redirects=True)
+            except Exception as exc:
+                last = exc
+                log(f"ism curl retry {attempt + 1}/{CURL_TRIES}: {exc}")
+                _reset_session()
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            final = str(getattr(response, "url", url))
+            if _login_walled(final):
+                last = RuntimeError("ISM login wall")
+                _reset_session()
+                time.sleep(0.8)
+                continue
+            if response.status_code >= 400:
+                last = RuntimeError(f"HTTP {response.status_code}")
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            text = response.text or ""
+            if len(text) < 800:
+                last = RuntimeError("empty or stub ISM page")
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            return text
+        raise last or RuntimeError("ISM fetch failed")
 
 
 def fetch_ism_html(url: str) -> str:
@@ -348,7 +403,7 @@ def scrape_ism(
         used["services"] = str(services_html)
 
     if manufacturing is None or services is None:
-        log("ism: curling ismworld.org (often blocked; will fall back to July fixture)")
+        log("ism: curling ismworld.org (HTTP/1.1 + homepage warmup; July fixture if still blocked)")
         for kind, url in _urls():
             if kind == "pmi" and manufacturing is not None:
                 continue
@@ -357,6 +412,7 @@ def scrape_ism(
             log(f"ism curl {kind} {url}")
             try:
                 html = fetch_ism_html(url)
+                time.sleep(0.8)
                 raw_dir = data_dir("raw", "ism")
                 raw_dir.mkdir(parents=True, exist_ok=True)
                 (raw_dir / f"{kind}.html").write_text(html, encoding="utf-8", errors="ignore")
@@ -364,6 +420,7 @@ def scrape_ism(
             except Exception as exc:
                 log(f"ism curl FAIL {url}: {exc}")
                 errors.append(f"{url}: {exc}")
+                time.sleep(0.8)
                 continue
             if not report.get("headline"):
                 log(f"ism parse empty headline {url}")

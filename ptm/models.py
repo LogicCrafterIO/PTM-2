@@ -101,6 +101,9 @@ class QualResult(BaseModel):
     kpis: list[str] = Field(default_factory=list)
     operating_plan: str = ""
     summary: str = ""
+    why: str = ""
+    evidence_quotes: list[str] = Field(default_factory=list)
+    denial_reason: str = ""
 
 
 class CatalystResult(BaseModel):

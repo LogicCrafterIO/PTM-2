@@ -84,9 +84,11 @@ def test_filing_section_extract():
         "UNITED STATES SECURITIES AND EXCHANGE COMMISSION "
         "Item 1. Business We make widgets and sell them to hospitals. "
         "Item 1A. Risk Factors Lots of risk. "
-        "Item 7. Management’s Discussion and Analysis Revenue grew 12 percent on volume. "
+        "Item 7. Management’s Discussion and Analysis Revenue grew 12 percent on volume "
+        "in the core hospital-supply segment as utilization recovered and backlog converted. "
+        "Gross margin expanded and management reaffirmed full-year guidance for the year. "
         "Item 7A. Quantitative and Qualitative Disclosures"
     )
-    sections = extract_filing_sections(text, max_chars=500)
+    sections = extract_filing_sections(text, max_chars=800)
     assert "widgets" in sections["business"].lower()
     assert "volume" in sections["mda"].lower()

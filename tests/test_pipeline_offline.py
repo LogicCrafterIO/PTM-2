@@ -38,6 +38,10 @@ def test_offline_generate_ideas_writes_markdown_and_book(monkeypatch):
         assert idea.candidate.warnings is not None
     dumped = read_json(data_dir("curated", "ideas.json"))
     assert len(dumped) == 4
+    ranking = read_json(data_dir("curated", "ranking.json"))
+    assert ranking["rows"]
+    assert any("why" in row and row["why"] for row in ranking["rows"])
+    assert list(ideas_dir().glob("*/RANKING.md"))
     for row in dumped:
         from ptm.models import TradeIdea
 

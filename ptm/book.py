@@ -13,10 +13,6 @@ def assemble_book(ideas: list[TradeIdea], bias: Bias) -> BookProposal:
     for idea in ideas:
         if idea.state not in {IdeaState.TEMPLATED, IdeaState.SIZED}:
             continue
-        if not idea.prm or idea.prm.blocked:
-            continue
-        if (idea.prm.size_fraction or 0) <= 0:
-            continue
         if idea.extra.get("gates"):
             continue
         ready.append(idea)
@@ -26,7 +22,7 @@ def assemble_book(ideas: list[TradeIdea], bias: Bias) -> BookProposal:
     for idea in selected:
         idea.state = IdeaState.SIZED
         if idea.prm:
-            idea.prm.size_fraction = 0.5 if idea.timing and idea.timing.light.value == "amber" else idea.prm.size_fraction
+            idea.prm.size_fraction = 1.0
 
     weights = []
     betas = []
