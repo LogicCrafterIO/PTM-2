@@ -1,0 +1,247 @@
+"""Second LLM pass: read a whole group of ideas against each other.
+
+The per-name work in ptm/llm.py judges one company in isolation, which means
+nothing ever asks whether two ideas in the same sector are making the same
+argument, or contradicting one another. This layer takes every idea that shares
+a sector (or an earnings window) and reads their fundamental cases side by side.
+
+There is deliberately **no price or technical input here** — no returns, no
+moving averages, no momentum. Technical analysis takes no part in screening,
+and this layer is part of the research output, so it carries none either.
+
+It is commentary, not a gate: nothing downstream reads a GroupReview to include
+or drop a name. See docs/FEATURE-LIMITATIONS.md.
+"""
+
+from __future__ import annotations
+
+import json
+
+from ptm.llm import JSON_HINT, _clip, chat_json, llm_available
+from ptm.models import GroupNameView, GroupReview, TradeIdea
+
+
+def _qual_verdict(idea: TradeIdea) -> str:
+    if idea.qual is None:
+        return "none"
+    if idea.qual.supports_outlier is True:
+        return "supports"
+    if idea.qual.supports_outlier is False:
+        return "denies"
+    return "undecided"
+
+
+def name_row(idea: TradeIdea) -> dict:
+    """Compact per-name payload for the group prompt. Fundamentals only."""
+    cand = idea.candidate
+    row = {
+        "ticker": cand.ticker,
+        "side": cand.side.value,
+        "sector": cand.sector,
+        "industry": cand.industry,
+        "eg_case": cand.eg_case,
+        "eg1": cand.eg1,
+        "eg2": cand.eg2,
+        "pe1": cand.pe1,
+        "sector_pe1": cand.sector_pe1,
+        "peg1": cand.peg1,
+        "ism_tilt": cand.ism_tilt,
+        "ism_why": _clip(cand.ism_why, 200),
+        "qual_verdict": _qual_verdict(idea),
+        "qual_why": _clip(idea.qual.why or idea.qual.summary, 320) if idea.qual else "",
+        "operating_plan": _clip(idea.qual.operating_plan, 200) if idea.qual else "",
+        "kpis": (idea.qual.kpis or [])[:4] if idea.qual else [],
+        "red_flags": (idea.qual.red_flags or [])[:4] if idea.qual else [],
+        "gates": list(idea.extra.get("gates") or []),
+    }
+    if idea.earnings:
+        row["earnings_date"] = idea.earnings.date
+        row["earnings_estimated"] = idea.earnings.estimated
+    return row
+
+
+def group_summary(rows: list[dict]) -> str:
+    """One deterministic line describing the group, always available."""
+    if not rows:
+        return "no names"
+    longs = sum(1 for r in rows if r["side"] == "long")
+    shorts = len(rows) - longs
+    supports = sum(1 for r in rows if r["qual_verdict"] == "supports")
+    denies = sum(1 for r in rows if r["qual_verdict"] == "denies")
+    blocked = sum(1 for r in rows if r["gates"])
+    estimated = sum(1 for r in rows if r.get("earnings_estimated"))
+    parts = [
+        f"{len(rows)} names ({longs}L/{shorts}S)",
+        f"qualitative {supports} support / {denies} deny",
+        f"{blocked} gated",
+    ]
+    if estimated:
+        parts.append(f"{estimated} on an estimated earnings date")
+    return "; ".join(parts)
+
+
+def _rank_key(row: dict) -> tuple:
+    order = {"supports": 0, "undecided": 1, "none": 2, "denies": 3}
+    return (order.get(row["qual_verdict"], 3), 1 if row["gates"] else 0, row["ticker"])
+
+
+def deterministic_review(kind: str, label: str, rows: list[dict], as_of: str, reason: str) -> GroupReview:
+    """Group review without an LLM: the measured counts and ordering only."""
+    views = [
+        GroupNameView(
+            ticker=row["ticker"],
+            side=row["side"],
+            eg_case=row["eg_case"],
+            qual_verdict=row["qual_verdict"],
+            comment="deterministic: ordered by qualitative verdict, no cross-read performed",
+        )
+        for row in rows
+    ]
+    return GroupReview(
+        group_kind=kind,
+        group_label=label,
+        as_of=as_of,
+        tickers=[r["ticker"] for r in rows],
+        llm_used=False,
+        summary=group_summary(rows),
+        narrative=f"LLM skipped ({reason}); no cross-name reading was done.",
+        views=views,
+        ranked_tickers=[r["ticker"] for r in sorted(rows, key=_rank_key)],
+        contradictions=[],
+    )
+
+
+def group_review(
+    kind: str,
+    label: str,
+    ideas: list[TradeIdea],
+    macro_bias: str = "",
+    as_of: str = "",
+    skip_llm: bool = False,
+) -> GroupReview:
+    """Read one sector's (or one earnings bucket's) ideas against each other."""
+    rows = [name_row(idea) for idea in ideas]
+    if not rows:
+        return GroupReview(group_kind=kind, group_label=label, as_of=as_of, llm_used=False)
+    if skip_llm or not llm_available():
+        reason = "--skip-llm" if skip_llm else "no API key"
+        return deterministic_review(kind, label, rows, as_of, reason)
+
+    axis = "sector" if kind == "sector" else "earnings window"
+    system = (
+        "You are a long/short portfolio manager reviewing a basket of single-name ideas that "
+        f"share one {axis}. Each has already been screened on P/E versus its sector and judged "
+        "qualitatively on whether the operating plan supports that quantitative outlier. Your job "
+        "is the cross-read nobody has done yet: do these cases agree, duplicate, or contradict "
+        "each other?\n"
+        "Look for: the same thesis repeated across names (a concentrated bet, not several ideas); "
+        "a long and a short resting on opposite readings of the same industry driver; a name whose "
+        "qualitative verdict looks weak next to its peers; and whether the ISM tilt for this group "
+        "is being used consistently.\n"
+        "Judge fundamentals and the operating case only. You are given no price data, and must not "
+        "reason about price action, charts, momentum, moving averages or entry timing — this "
+        "process excludes technical analysis. Do not invent numbers beyond what is given. "
+        "Keep every string under 300 characters. " + JSON_HINT
+    )
+    user = (
+        "Return JSON keys: summary (string, one line on what this group is collectively betting on), "
+        "narrative (string, 3-6 sentences on how the cases relate to each other), "
+        "views (array of {ticker, comment} — what this name adds or duplicates relative to the rest), "
+        "ranked_tickers (array of tickers, strongest fundamental case first), "
+        "contradictions (array of strings naming pairs or clusters whose logic conflicts).\n"
+        f"Group: {axis} = {label}\n"
+        f"Macro bias: {macro_bias or 'unknown'}\n"
+        f"As of: {as_of}\n"
+        "eg1/eg2 are decimal growth rates. pe1 vs sector_pe1 is the outlier being traded.\n"
+        f"Ideas:\n{json.dumps(rows, default=str)[:9000]}"
+    )
+    try:
+        payload = chat_json(system, user)
+    except Exception as exc:
+        review = deterministic_review(kind, label, rows, as_of, f"LLM failed: {exc}")
+        review.error = str(exc)
+        return review
+
+    by_ticker = {r["ticker"]: r for r in rows}
+    comments: dict[str, str] = {}
+    for item in payload.get("views") or []:
+        if not isinstance(item, dict):
+            continue
+        ticker = str(item.get("ticker") or "").strip().upper()
+        if ticker in by_ticker and ticker not in comments:
+            comments[ticker] = _clip(item.get("comment"), 300)
+
+    views = [
+        GroupNameView(
+            ticker=ticker,
+            side=row["side"],
+            eg_case=row["eg_case"],
+            # The verdict is the first pass's, not the group model's to revise.
+            qual_verdict=row["qual_verdict"],
+            comment=comments.get(ticker) or "not covered by the group LLM pass",
+        )
+        for ticker, row in by_ticker.items()
+    ]
+    ranked = []
+    for raw in payload.get("ranked_tickers") or []:
+        ticker = str(raw).strip().upper()
+        if ticker in by_ticker and ticker not in ranked:
+            ranked.append(ticker)
+    ranked += [t for t in by_ticker if t not in ranked]
+    contradictions = [_clip(c, 300) for c in (payload.get("contradictions") or []) if str(c).strip()]
+    return GroupReview(
+        group_kind=kind,
+        group_label=label,
+        as_of=as_of,
+        tickers=list(by_ticker),
+        llm_used=True,
+        # Counts stay measured; the model supplies prose only.
+        summary=group_summary(rows),
+        narrative=_clip(payload.get("narrative"), 1400) or _clip(payload.get("summary"), 400),
+        views=views,
+        ranked_tickers=ranked,
+        contradictions=contradictions,
+    )
+
+
+def render_group_review(review: GroupReview) -> str:
+    """Markdown for one group review."""
+    axis = "Sector" if review.group_kind == "sector" else "Earnings window"
+    lines = [
+        f"# {axis} cross-read - {review.group_label}",
+        "",
+        f"As of: {review.as_of}  ",
+        f"Names: {len(review.tickers)}  ",
+        f"LLM: {'yes' if review.llm_used else 'no'}",
+        "",
+        "> A cross-read of the fundamental cases in this group. Commentary, not a gate:",
+        "> no idea is included in or dropped from the book on the strength of this section.",
+        "> No price or technical input is used anywhere in this process.",
+        "",
+        "## Group",
+        "",
+        review.summary or "n/a",
+        "",
+        "## Read",
+        "",
+        review.narrative or "n/a",
+        "",
+        "## Per name",
+        "",
+        "| Ticker | Side | EG case | Qualitative | Comment |",
+        "|---|---|---|---|---|",
+    ]
+    for view in review.views:
+        comment = (view.comment or "").replace("|", "/")
+        lines.append(
+            f"| {view.ticker} | {view.side} | {view.eg_case or 'n/a'} | "
+            f"{view.qual_verdict} | {comment} |"
+        )
+    lines += ["", "## Ranking by strength of case", "", ", ".join(review.ranked_tickers) or "n/a", ""]
+    if review.contradictions:
+        lines += ["## Conflicting logic", ""]
+        lines += [f"- {item}" for item in review.contradictions]
+        lines.append("")
+    if review.error:
+        lines += [f"> LLM error: {review.error}", ""]
+    return "\n".join(lines)

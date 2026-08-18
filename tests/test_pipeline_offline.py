@@ -3,6 +3,7 @@ from ptm.config import data_dir, ideas_dir
 from ptm.io import read_df, read_json, write_df
 from ptm.llm import qualitative
 from ptm.models import Candidate, IdeaState, MacroSnapshot, QualResult, Side, TradeIdea
+from ptm.organize import BEYOND, bucket_names, sector_slug
 from ptm.pipeline import generate_ideas, ingest, research_funnel
 from tests.conftest import seed_pipeline_data
 
@@ -30,7 +31,10 @@ def test_offline_generate_ideas_writes_markdown_and_book(monkeypatch):
     assert day_dirs
     for idea in ideas:
         stem = f"{idea.candidate.side.value}_{idea.candidate.ticker}"
-        md = next(ideas_dir().glob(f"*/{stem}.md"))
+        # ideas/<day>/<Sector>/<earnings-bucket>/<side>_<ticker>.md
+        md = next(ideas_dir().glob(f"*/*/*/{stem}.md"))
+        assert md.parent.name in set(bucket_names()) | {BEYOND}
+        assert md.parent.parent.name == sector_slug(idea.candidate.sector)
         text = md.read_text(encoding="utf-8")
         assert text.strip()
         assert not text.lstrip().startswith("{")
@@ -109,7 +113,33 @@ def test_run_writes_audit(monkeypatch):
     assert result["ideas_long"] + result["ideas_short"] == result["ideas"]
 
 
-def test_ingest_backfills_missing_fundamentals(monkeypatch):
+def _stub_ingest(monkeypatch):
+    import pandas as pd
+
+    monkeypatch.setattr("ptm.pipeline.fetch_macro_prices", lambda: {})
+    monkeypatch.setattr("ptm.pipeline.scrape_ism", lambda **_: {})
+    monkeypatch.setattr("ptm.pipeline.fetch_fred_macro", lambda: {})
+    monkeypatch.setattr("ptm.pipeline.fetch_prices", lambda *_, **__: pd.DataFrame())
+
+
+def _stub_edgar(monkeypatch, fetched: list):
+    """One EDGAR fundamentals call per ticker, recorded."""
+
+    def fake(ticker, with_guidance=True):
+        fetched.append(ticker)
+        return {
+            "shares": 1_000_000.0,
+            "eps_ttm": 2.0,
+            "eps_prior_ttm": 1.8,
+            "eps_basis": "4 quarterly filings",
+            "report_dates": ["2026-05-05", "2026-02-04"],
+            "guidance": None,
+        }
+
+    monkeypatch.setattr("ptm.ingest.edgar.company_fundamentals", fake)
+
+
+def test_ingest_backfills_only_missing_tickers_from_edgar(monkeypatch):
     import pandas as pd
 
     universe = pd.DataFrame(
@@ -122,29 +152,25 @@ def test_ingest_backfills_missing_fundamentals(monkeypatch):
         }
     )
     write_df(data_dir("curated", "universe.csv"), universe)
-    write_df(
-        data_dir("curated", "yahoo_fundamentals.csv"),
-        pd.DataFrame({"ticker": ["AAA"], "name": ["A"], "sector": ["Industrials"], "price": [10.0]}),
-    )
+    _stub_ingest(monkeypatch)
     fetched: list[str] = []
-
-    def fake_fund(tickers, *, persist=True):
-        fetched.extend(tickers)
-        frame = pd.DataFrame({"ticker": list(tickers), "name": list(tickers)})
-        if persist:
-            write_df(data_dir("curated", "yahoo_fundamentals.csv"), frame)
-        return frame
-
-    monkeypatch.setattr("ptm.pipeline.fetch_fundamentals", fake_fund)
-    monkeypatch.setattr("ptm.pipeline.fetch_macro_prices", lambda: {})
-    monkeypatch.setattr("ptm.pipeline.scrape_ism", lambda **_: {})
-    monkeypatch.setattr("ptm.pipeline.fetch_fred_macro", lambda: {})
-    monkeypatch.setattr("ptm.pipeline.fetch_prices", lambda *_, **__: pd.DataFrame())
+    _stub_edgar(monkeypatch, fetched)
 
     ingest()
-    assert set(fetched) == {"BBB", "CCC"}
+    assert set(fetched) == {"AAA", "BBB", "CCC"}
     out = read_df(data_dir("curated", "yahoo_fundamentals.csv"))
     assert set(out["ticker"].astype(str)) == {"AAA", "BBB", "CCC"}
+    assert set(out["source"]) == {"edgar"}
+
+    # Second pass adds only what is new.
+    fetched.clear()
+    universe4 = pd.concat(
+        [universe, pd.DataFrame([{"ticker": "DDD", "name": "D", "sector": "Industrials", "industry": "Machinery", "indices": "sp500"}])],
+        ignore_index=True,
+    )
+    write_df(data_dir("curated", "universe.csv"), universe4)
+    ingest()
+    assert fetched == ["DDD"]
 
 
 def test_ingest_force_refetches_all_fundamentals(monkeypatch):
@@ -160,31 +186,35 @@ def test_ingest_force_refetches_all_fundamentals(monkeypatch):
         }
     )
     write_df(data_dir("curated", "universe.csv"), universe)
-    write_df(
-        data_dir("curated", "yahoo_fundamentals.csv"),
-        pd.DataFrame({"ticker": ["AAA"], "name": ["stale"]}),
-    )
+    _stub_ingest(monkeypatch)
+    monkeypatch.setattr("ptm.pipeline.build_universe", lambda: universe)
     fetched: list[str] = []
+    _stub_edgar(monkeypatch, fetched)
 
-    def fake_fund(tickers, *, persist=True):
-        fetched.extend(tickers)
-        frame = pd.DataFrame({"ticker": list(tickers), "name": ["fresh"] * len(tickers)})
-        if persist:
-            write_df(data_dir("curated", "yahoo_fundamentals.csv"), frame)
-        return frame
+    ingest()
+    assert sorted(fetched) == ["AAA", "BBB"]
+    fetched.clear()
+    ingest(force=True)
+    assert sorted(fetched) == ["AAA", "BBB"]
 
-    monkeypatch.setattr("ptm.pipeline.fetch_fundamentals", fake_fund)
+
+def test_prices_are_fetched_before_fundamentals(monkeypatch):
+    """Market cap and both P/E ratios are struck against the run date's close."""
+    import pandas as pd
+
+    universe = pd.DataFrame({"ticker": ["AAA"], "name": ["A"], "sector": ["Industrials"], "industry": ["M"], "indices": ["sp500"]})
+    write_df(data_dir("curated", "universe.csv"), universe)
+    order: list[str] = []
     monkeypatch.setattr("ptm.pipeline.fetch_macro_prices", lambda: {})
     monkeypatch.setattr("ptm.pipeline.scrape_ism", lambda **_: {})
     monkeypatch.setattr("ptm.pipeline.fetch_fred_macro", lambda: {})
-    monkeypatch.setattr("ptm.pipeline.fetch_prices", lambda *_, **__: pd.DataFrame())
-    monkeypatch.setattr("ptm.pipeline.build_universe", lambda: universe)
-
-    ingest(force=True)
-    assert fetched == ["AAA", "BBB"]
-    out = read_df(data_dir("curated", "yahoo_fundamentals.csv"))
-    assert list(out["ticker"].astype(str)) == ["AAA", "BBB"]
-    assert list(out["name"]) == ["fresh", "fresh"]
+    monkeypatch.setattr("ptm.pipeline.fetch_prices", lambda *_, **__: order.append("prices") or pd.DataFrame())
+    monkeypatch.setattr(
+        "ptm.pipeline.build_fundamentals",
+        lambda universe, force=False: order.append("fundamentals") or pd.DataFrame({"ticker": ["AAA"]}),
+    )
+    ingest()
+    assert order == ["prices", "fundamentals"]
 
 
 def test_research_funnel_warns_on_thin_fundamentals():

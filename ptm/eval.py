@@ -10,7 +10,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from ptm.asof import coverage, day_slug, is_backdated
 from ptm.config import ROOT, data_dir, ideas_dir, toml_settings
+from ptm.organize import find_idea_files, find_idea_markdown
 from ptm.io import read_json, write_json
 from ptm.models import Bias, IdeaState
 
@@ -55,9 +57,16 @@ def _isnan(value: Any) -> bool:
 
 
 def _latest_ideas_folder() -> Path | None:
+    """The run date's folder if it exists, else the newest one.
+
+    A backdated run must score its own output, not whichever day sorts highest.
+    """
     root = ideas_dir()
     if not root.exists():
         return None
+    pinned = root / day_slug()
+    if pinned.is_dir():
+        return pinned
     days = sorted((p for p in root.iterdir() if p.is_dir()), reverse=True)
     return days[0] if days else None
 
@@ -105,16 +114,34 @@ def check_worldview(ism: dict | None, snap: dict | None, cfg: dict) -> list[Find
                 )
             )
         as_of = str(ism.get("as_of") or (snap.get("as_of") if snap else "") or "")
-        july_pinned = any("/pmi/july/" in str(v) or "/services/july/" in str(v) for v in urls.values())
-        if july_pinned and as_of and "08-" in as_of:
+        target = str(ism.get("target_report_month") or "")
+        wanted = target.split(" ")[0].lower() if target else ""
+        if wanted:
+            mismatched = [
+                str(v)
+                for v in urls.values()
+                if str(v).startswith("http") and f"/{wanted}/" not in str(v)
+            ]
+            if mismatched:
+                findings.append(
+                    Finding(
+                        ticker="MACRO",
+                        stage="worldview",
+                        severity="warn",
+                        check_id="worldview.ism_month_mismatch",
+                        evidence=f"run date wanted {target}; used {mismatched}",
+                        suggestion="ISM fell back to an older print than the run date allows; note the staleness.",
+                    )
+                )
+        if ism.get("backdated"):
             findings.append(
                 Finding(
                     ticker="MACRO",
                     stage="worldview",
                     severity="info",
-                    check_id="worldview.july_url_pinned",
-                    evidence=str(urls),
-                    suggestion="ISM URL list hardcodes /july/; confirm the month matches the latest print.",
+                    check_id="worldview.backdated_run",
+                    evidence=str(coverage()),
+                    suggestion="Backdated run: read docs/FEATURE-LIMITATIONS.md before trusting the funnel.",
                 )
             )
     if snap:
@@ -360,7 +387,7 @@ def check_idea(idea: dict, pack: dict | None, cfg: dict) -> list[Finding]:
                 severity="warning",
                 check_id="cat.headline_like",
                 evidence="; ".join(non)[:400],
-                suggestion="Catalysts must be dated 20-60d events, not news headlines or table dumps.",
+                suggestion="Catalysts must be dated events inside the window, not news headlines or table dumps.",
             )
         )
     if cats.get("tradeable") and not cats.get("earnings_in_window") and non:
@@ -371,7 +398,7 @@ def check_idea(idea: dict, pack: dict | None, cfg: dict) -> list[Finding]:
                 severity="info",
                 check_id="cat.tradeable_without_window",
                 evidence=str(cats.get("reason") or non)[:300],
-                suggestion="Confirm non-earnings catalysts actually fall inside 20-60 trading days.",
+                suggestion="Confirm non-earnings catalysts actually fall inside the 30-90 calendar-day window.",
             )
         )
 
@@ -513,8 +540,9 @@ def check_markdown_files(folder: Path | None, ideas: list[dict]) -> list[Finding
         side = cand.get("side")
         if not ticker or not side:
             continue
-        path = folder / f"{side}_{ticker}.md"
-        if not path.exists():
+        path = find_idea_markdown(folder, str(side), str(ticker))
+        if path is None or not path.exists():
+            path = folder / f"{side}_{ticker}.md"
             findings.append(
                 Finding(
                     ticker=str(ticker),
@@ -547,7 +575,7 @@ def audit_run(ideas_folder: Path | None = None) -> AuditResult:
     ideas = _idea_rows(_load_json(data_dir("curated", "ideas.json")))
     if folder and not ideas:
         ideas = []
-        for path in sorted(folder.glob("*.json")):
+        for path in find_idea_files(folder):
             payload = _load_json(path)
             if isinstance(payload, dict) and payload.get("candidate"):
                 ideas.append(payload)
@@ -613,7 +641,7 @@ def write_audit(result: AuditResult) -> Path:
     write_json(json_path, payload)
     folder = Path(result.ideas_folder) if result.ideas_folder else _latest_ideas_folder()
     if folder is None:
-        folder = ideas_dir(datetime.now(timezone.utc).strftime("%Y-%m-%d"))
+        folder = ideas_dir(day_slug())
         folder.mkdir(parents=True, exist_ok=True)
     md_path = folder / "AUDIT.md"
     md_path.parent.mkdir(parents=True, exist_ok=True)

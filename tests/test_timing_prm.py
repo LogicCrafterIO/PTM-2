@@ -2,8 +2,8 @@ from datetime import date
 
 import pandas as pd
 
-from ptm.models import Candidate, Side, TimingLight
-from ptm.timing_prm import earnings_in_window, normalize_earnings_date, prm_for, time_idea
+from ptm.models import Candidate, Side
+from ptm.timing_prm import earnings_in_window, normalize_earnings_date, prm_for
 from tests.conftest import make_price_history
 
 
@@ -11,30 +11,16 @@ def _prices(ticker: str, drift: float) -> pd.DataFrame:
     return make_price_history(ticker, start=100.0, drift=drift, days=80)
 
 
-def test_long_uptrend_is_green():
-    prices = _prices("L1", drift=8.0)
-    result = time_idea(prices, "L1", Side.LONG)
-    assert result.light == TimingLight.GREEN
-    assert result.sma20 is not None and result.sma60 is not None
-    assert result.sma20 > result.sma60
+def test_no_technical_analysis_surface_remains():
+    """Timing lights were removed from the process; nothing should reintroduce them."""
+    import ptm.formulas as formulas
+    import ptm.timing_prm as timing
+    from ptm.models import TimingResult
 
-
-def test_short_uptrend_is_red():
-    prices = _prices("S1", drift=8.0)
-    result = time_idea(prices, "S1", Side.SHORT)
-    assert result.light == TimingLight.RED
-
-
-def test_short_downtrend_is_green():
-    prices = _prices("S2", drift=-8.0)
-    result = time_idea(prices, "S2", Side.SHORT)
-    assert result.light == TimingLight.GREEN
-
-
-def test_missing_prices_unknown():
-    prices = pd.DataFrame(columns=["date", "open", "high", "low", "close", "ticker"])
-    result = time_idea(prices, "ZZZ", Side.LONG)
-    assert result.light == TimingLight.UNKNOWN
+    for name in ("time_idea", "sma", "ema"):
+        assert not hasattr(timing, name), f"{name} is technical analysis and must stay out"
+        assert not hasattr(formulas, name), f"{name} is technical analysis and must stay out"
+    assert set(TimingResult.model_fields) == {"comment"}
 
 
 def test_normalize_and_earnings_window():
@@ -59,3 +45,23 @@ def test_r_score_is_not_a_constant_multiple():
     assert abs(quiet_prm.r_score - trend_prm.r_score) > 0.05
     assert quiet_prm.blocked is False
     assert trend_prm.blocked is False
+
+
+def test_window_boundaries_are_exact_calendar_days():
+    """The gate and the buckets must agree on the same name, so the window is
+    measured in whole calendar days rather than datetime deltas."""
+    from datetime import timedelta
+
+    from ptm.asof import as_of_date
+    from ptm.organize import bucket_for_days
+    from ptm.timing_prm import catalyst_window, earnings_in_window
+
+    low, high = catalyst_window()
+    today = as_of_date()
+    for offset, expected in ((low - 1, False), (low, True), (high, True), (high + 1, False)):
+        iso = (today + timedelta(days=offset)).isoformat()
+        in_window, parsed = earnings_in_window(iso)
+        assert in_window is expected, f"{offset}d should be in_window={expected}"
+        assert parsed == iso
+    # And the bucket for the top of the window is the last primary bucket.
+    assert bucket_for_days(high) == "61-90d"

@@ -1,4 +1,5 @@
 import pandas as pd
+import pytest
 
 from ptm.models import Side
 from ptm.quant import build_candidates, classify_long_case, classify_short_case
@@ -66,3 +67,134 @@ def test_single_name_sector_is_not_an_outlier():
     )
     cands = build_candidates(universe, fundamentals)
     assert cands == []
+
+
+def _frame(rows):
+    import pandas as pd
+
+    universe = pd.DataFrame(
+        [{"ticker": r["ticker"], "name": r["ticker"], "sector": r["sector"], "industry": "X"} for r in rows]
+    )
+    fundamentals = pd.DataFrame(
+        [
+            {
+                "ticker": r["ticker"],
+                "price": r["price"],
+                "forward_eps": r["forward_eps"],
+                "trailing_eps": r.get("trailing_eps", r["forward_eps"]),
+                "earnings_growth": r.get("growth", 0.05),
+                "market_cap": r.get("market_cap", 5_000_000_000),
+            }
+            for r in rows
+        ]
+    )
+    return universe, fundamentals
+
+
+def test_sector_benchmark_is_the_median_not_the_mean():
+    """One near-zero-EPS name must not drag the whole sector benchmark up."""
+    from ptm.config import data_dir
+    from ptm.io import read_df
+
+    rows = [
+        {"ticker": "A1", "sector": "Industrials", "price": 100.0, "forward_eps": 10.0},   # PE 10
+        {"ticker": "A2", "sector": "Industrials", "price": 100.0, "forward_eps": 5.0},    # PE 20
+        {"ticker": "A3", "sector": "Industrials", "price": 100.0, "forward_eps": 3.3333}, # PE 30
+        {"ticker": "A4", "sector": "Industrials", "price": 100.0, "forward_eps": 1.0},    # PE 100
+    ]
+    build_candidates(*_frame(rows))
+    table = read_df(data_dir("curated", "quant_table.csv"))
+    median = float(table["sector_pe1"].dropna().iloc[0])
+    mean = float(table["sector_pe1_mean"].dropna().iloc[0])
+    assert median == pytest.approx(25.0, rel=1e-3)   # (20 + 30) / 2
+    assert mean == pytest.approx(40.0, rel=1e-2)     # dragged up by the PE-100 name
+    assert median < mean
+
+
+def test_implausible_pe_is_excluded_from_screen_and_benchmark():
+    from ptm.config import data_dir
+    from ptm.io import read_df
+
+    rows = [
+        {"ticker": "B1", "sector": "Industrials", "price": 100.0, "forward_eps": 10.0},
+        {"ticker": "B2", "sector": "Industrials", "price": 100.0, "forward_eps": 5.0},
+        {"ticker": "B3", "sector": "Industrials", "price": 100.0, "forward_eps": 4.0},
+        # EPS of 0.08 -> P/E 1250: a rounding artefact, not a valuation.
+        {"ticker": "JUNK", "sector": "Industrials", "price": 100.0, "forward_eps": 0.08},
+    ]
+    candidates = build_candidates(*_frame(rows))
+    table = read_df(data_dir("curated", "quant_table.csv"))
+    junk = table[table["ticker"] == "JUNK"].iloc[0]
+    assert bool(junk["pe_implausible"]) is True
+    assert "JUNK" not in {c.ticker for c in candidates}
+    # And it must not have moved the benchmark either.
+    assert float(table["sector_pe1"].dropna().iloc[0]) <= 25.0
+
+
+def test_loss_makers_do_not_lift_the_sector_growth_benchmark():
+    """A shrinking loss reads as +50% growth; such names must stay out of the
+    benchmark, since they can never be screened themselves (no positive P/E)."""
+    from ptm.config import data_dir
+    from ptm.io import read_df
+
+    rows = [
+        {"ticker": "C1", "sector": "Industrials", "price": 100.0, "forward_eps": 10.0, "trailing_eps": 9.5},
+        {"ticker": "C2", "sector": "Industrials", "price": 100.0, "forward_eps": 5.0, "trailing_eps": 4.8},
+        # Loss-maker: EPS -2.00 -> -1.00 registers as strong positive growth.
+        {"ticker": "LOSS", "sector": "Industrials", "price": 100.0, "forward_eps": -1.0, "trailing_eps": -2.0},
+    ]
+    candidates = build_candidates(*_frame(rows))
+    table = read_df(data_dir("curated", "quant_table.csv"))
+    loss = table[table["ticker"] == "LOSS"].iloc[0]
+    assert pd.isna(loss["pe1"])                      # no positive P/E, so unscreenable
+    assert "LOSS" not in {c.ticker for c in candidates}
+    benchmark = float(table["sector_eg1"].dropna().iloc[0])
+    loss_eg1 = float(loss["eg1"])
+    assert loss_eg1 > 0                               # the shrinking loss does look like growth
+    assert benchmark < loss_eg1                       # but it is not in the benchmark
+
+
+def test_candidates_must_fit_a_process_eg_case():
+    """Selecting on P/E extremity alone surfaced names at 3-12x their sector
+    multiple that fit no long/short case, and the qualitative pass rejected
+    100% of them. A candidate must fit a case."""
+    from ptm.quant import NON_IDEAL_CASES
+
+    rows = []
+    # Six names with a clean accelerating-growth long case.
+    for i in range(6):
+        rows.append({
+            "ticker": f"OK{i}", "sector": "Industrials", "price": 100.0,
+            "forward_eps": 4.0 - i * 0.1, "trailing_eps": 3.0 - i * 0.1, "growth": 0.30,
+        })
+    # An extreme multiple whose earnings are going backwards: no valid case.
+    rows.append({
+        "ticker": "EXPENSIVE", "sector": "Industrials", "price": 100.0,
+        "forward_eps": 0.9, "trailing_eps": 3.0, "growth": -0.40,
+    })
+    candidates = build_candidates(*_frame(rows))
+    picked = {c.ticker for c in candidates}
+    # It has by far the highest P/E, so P/E-extremity alone would select it.
+    assert "EXPENSIVE" not in picked
+    for cand in candidates:
+        assert cand.eg_case not in NON_IDEAL_CASES
+
+
+def test_require_eg_case_can_be_switched_off(monkeypatch):
+    """The old behaviour stays reachable, since it is a process decision."""
+    import ptm.quant as quant
+    from ptm.config import toml_settings
+
+    base = toml_settings()
+    patched = {**base, "filters": {**base["filters"], "require_eg_case": False}}
+    monkeypatch.setattr(quant, "toml_settings", lambda: patched)
+
+    rows = [
+        {"ticker": f"N{i}", "sector": "Industrials", "price": 100.0,
+         "forward_eps": 4.0 - i * 0.1, "trailing_eps": 3.0 - i * 0.1, "growth": 0.30}
+        for i in range(6)
+    ]
+    rows.append({"ticker": "EXPENSIVE", "sector": "Industrials", "price": 100.0,
+                 "forward_eps": 0.9, "trailing_eps": 3.0, "growth": -0.40})
+    picked = {c.ticker for c in build_candidates(*_frame(rows))}
+    assert "EXPENSIVE" in picked

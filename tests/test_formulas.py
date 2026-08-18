@@ -2,13 +2,11 @@ from ptm.formulas import (
     atrp,
     bear_level,
     earnings_growth,
-    ema,
     enterprise_value,
     pe,
     peg,
     r_score,
     slope_beta,
-    sma,
     true_range_pct,
 )
 
@@ -28,12 +26,6 @@ def test_pe_peg():
 
 def test_bear_level():
     assert bear_level(100) == 80
-
-
-def test_sma_ema():
-    values = [float(i) for i in range(1, 31)]
-    assert sma(values, 5) == sum(values[-5:]) / 5
-    assert ema(values, 5) is not None
 
 
 def test_atrp_and_r():

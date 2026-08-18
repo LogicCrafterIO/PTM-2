@@ -16,5 +16,3 @@ Requires-Dist: typer>=0.12
 Requires-Dist: yfinance>=0.2.40
 Provides-Extra: dev
 Requires-Dist: pytest>=8.0; extra == "dev"
-Provides-Extra: browser
-Requires-Dist: playwright>=1.45; extra == "browser"

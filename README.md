@@ -2,6 +2,21 @@
 
 Long/short equity research pipeline from the PTM process: macro dashboard, quant screen, qualitative pack, catalysts, book, then a process audit. SMA/MACD timing lights are not used.
 
+## Setup
+
+```powershell
+py -3.13 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m pip install -e .
+```
+
+Use `requirements-dev.txt` instead to get `pytest` as well. Runtime deps mirror
+`[project].dependencies` in `pyproject.toml`.
+
+Optional `.env` at the repo root enables the LLM qualitative/catalyst passes
+(`NVIDIA_API_KEY` or `OPENAI_API_KEY`); without one, run with `--skip-llm`.
+Check with `python -m ptm status`.
+
 ## One command
 
 From the repo root, with the project venv:
@@ -52,6 +67,90 @@ If `ptm` is not on PATH, keep using `python.exe -m ptm` from `.venv\Scripts` as 
 ptm weekly
 ```
 
+## Where the data comes from
+
+**Fundamentals come from SEC EDGAR. yfinance supplies prices and nothing else.**
+Shares, trailing EPS, revenue, EBIT, cash and debt are XBRL facts; market cap is
+EDGAR shares times the run-date close; the next earnings date is projected from
+the company's own filing cadence. Yahoo's `info` snapshot, its earnings
+calendar, analyst targets and news are no longer used anywhere.
+
+Trailing P/E is therefore **exact**. Forward EPS is not: EDGAR holds filings, not
+analyst consensus, so it is extrapolated from realized growth (clamped at ±50%)
+and every row records which basis was used. See
+[docs/FEATURE-LIMITATIONS.md](docs/FEATURE-LIMITATIONS.md) before leaning on a
+forward multiple.
+
+## Where ideas land
+
+Ideas are filed by sector, then by how soon the name reports, in **calendar
+days** — the same units as the 30-90 day catalyst window, so a name in `31-60d`
+or `61-90d` can actually satisfy the gate:
+
+```
+ideas/2026-08-18/
+  INDEX.md                       map of the tree, by sector and by window
+  RANKING.md  AUDIT.md
+  EARNINGS_REVIEW.md             cross-read, by earnings window
+  Information-Technology/
+    _SECTOR_REVIEW.md            cross-read, by sector
+    00-30d/     long_ACLS.md + .json
+    31-60d/
+    61-90d/
+```
+
+Every idea gets a window. When no future earnings date is published, the next
+report is projected from filing cadence and the reasoning travels with it:
+
+> no future earnings date published; last reported 2026-08-05, so the next
+> report is estimated 2026-11-06 (93-day cadence over 4 prior gaps), which
+> places it 93 calendar days out → 61-90d.
+
+EDGAR publishes no forward earnings calendar, so **every** date is a projection
+and every idea says so. The catalyst gate necessarily runs on them. Edges live
+in `[earnings_buckets]`, the window in `[filters] catalyst_window_days`.
+
+## The book
+
+Six per side in screen-rank order, subject to two constraints:
+
+* **`max_per_sector = 2`** per side — six shorts from one sector is one bet, not
+  six. The cap is never silently relaxed; a short side is reported as such.
+* **Beta-aware selection** — a P/E-outlier screen is beta-long by construction
+  (growth longs ~1.5 beta, value shorts ~0.24), so a dollar-neutral book still
+  breached ±0.30. Rank leads; only if the book breaches does it swap the worst
+  offender for the best-ranked eligible replacement, and every swap is reported.
+
+## Group cross-read
+
+After the per-name work, a second LLM pass reads every idea in a sector — and
+every idea in an earnings window — against the others, looking for duplicated
+theses, longs and shorts resting on opposite readings of one driver, and weak
+cases next to their peers.
+
+It uses **no price data of any kind**, and it is commentary, not a gate: no name
+enters or leaves the book on its verdict, and it cannot overturn the per-name
+qualitative judgement. There is no technical analysis anywhere in the screening
+process — no SMA, EMA, MACD or timing lights. (ATR-based stops and beta remain
+as a post-selection risk footnote, which gates nothing.)
+
+## Backdating a run
+
+```powershell
+.\.venv\Scripts\python.exe -m ptm as-of-range --probe     # which months ISM still serves
+.\.venv\Scripts\python.exe -m ptm weekly --as-of 2026-07-20
+```
+
+The run date bounds every source: prices, FRED (true ALFRED vintages), the ISM
+month, SEC filings and XBRL facts — the latter by *filing* date, not period end,
+so a quarter filed after the run date stays invisible.
+
+How far back you can go is decided by a **live probe**, not a calendar: old ISM
+month URLs return a navigation stub rather than a 404, so the run fetches the
+month it needs and requires a parsed headline before starting. Use
+`--allow-stale-ism` to accept an older print, or `--pmi-html` / `--services-html`
+to supply saved reports.
+
 ## Tests (does not touch live files)
 
 ```powershell
@@ -68,5 +167,6 @@ ptm weekly
 | `ptm dashboard` | Macro snapshot + candidate count |
 | `ptm ideas` | Ideas + book from already-ingested data |
 | `ptm audit` | Score the latest (or `--ideas-dir`) run |
+| `ptm as-of-range` | How far back a backdated run can reach (`--probe` to verify live) |
 
 Substitutes vs the original research-fix plan are in [docs/implementation-notes.md](docs/implementation-notes.md).

@@ -1,47 +1,22 @@
-"""Assemble a qualitative research pack: EDGAR + Yahoo news + ISM snippet."""
+"""Assemble a qualitative research pack: EDGAR filings + ISM snippet.
+
+Filings only. Yahoo business summaries and news headlines were removed with
+the rest of the vendor fundamentals — undated vendor text has no place in a
+filings-based pack, and none of it survives a backdated run.
+"""
 
 from __future__ import annotations
 
 import json
 from datetime import datetime, timezone
 
-import yfinance as yf
-
+from ptm.asof import as_of_date, is_backdated
 from ptm.config import data_dir, toml_settings
 from ptm.ingest.edgar import company_facts, filing_sections, latest_earnings_exhibit
 from ptm.ingest.ism_sectors import gics_for_ism
 from ptm.io import read_json, write_json
 from ptm.log import log
 from ptm.models import Candidate
-
-
-def _yahoo_pack(ticker: str) -> dict:
-    summary = ""
-    ir = ""
-    headlines: list[dict] = []
-    try:
-        stock = yf.Ticker(ticker)
-        info = stock.info or {}
-        summary = str(info.get("longBusinessSummary") or "")[:1500]
-        ir = str(info.get("irWebsite") or info.get("website") or "")
-        news = []
-        try:
-            news = list(stock.news or [])
-        except Exception:
-            news = []
-        for item in news[:10]:
-            content = item.get("content") if isinstance(item.get("content"), dict) else item
-            title = content.get("title") or item.get("title") or ""
-            link = ""
-            canonical = content.get("canonicalUrl") if isinstance(content, dict) else None
-            if isinstance(canonical, dict):
-                link = canonical.get("url") or ""
-            link = link or item.get("link") or ""
-            if title:
-                headlines.append({"title": title, "link": link})
-    except Exception:
-        pass
-    return {"summary": summary, "ir_website": ir, "headlines": headlines}
 
 
 def _ism_snippet(candidate: Candidate) -> dict:
@@ -86,7 +61,8 @@ def _pack_text(payload: dict, limit: int) -> str:
 
 def research_pack(candidate: Candidate, force: bool = False) -> dict:
     ticker = candidate.ticker
-    cache = data_dir("raw", "research", f"{ticker}.json")
+    suffix = f"_{as_of_date().isoformat()}" if is_backdated() else ""
+    cache = data_dir("raw", "research", f"{ticker}{suffix}.json")
     if cache.exists() and not force:
         cached = read_json(cache)
         if cached.get("text") and not cached.get("thin"):
@@ -113,11 +89,9 @@ def research_pack(candidate: Candidate, force: bool = False) -> dict:
         exhibit = latest_earnings_exhibit(ticker, max_chars=min(4000, limit // 3))
     except Exception as exc:
         log(f"pack {ticker}: exhibit FAIL {exc}")
-    log(f"pack {ticker}: Yahoo summary/news")
-    yahoo = _yahoo_pack(ticker)
+    # No Yahoo business summary or news: undated vendor text has no place in a
+    # filings-based pack, and none of it survives a backdated run anyway.
     business = sections.get("business") or ""
-    if len(business.strip()) < 40:
-        business = yahoo.get("summary") or business
     payload = {
         "ticker": ticker,
         "as_of": datetime.now(timezone.utc).isoformat(),
@@ -125,10 +99,13 @@ def research_pack(candidate: Candidate, force: bool = False) -> dict:
         "business": business,
         "mda": sections.get("mda") or "",
         "earnings_exhibit": exhibit,
-        "summary": yahoo.get("summary") or "",
-        "ir_website": yahoo.get("ir_website") or "",
-        "headlines": yahoo.get("headlines") or [],
+        "summary": "",
+        "ir_website": "",
+        "headlines": [],
         "ism": _ism_snippet(candidate),
+        "run_date": as_of_date().isoformat(),
+        "backdated": is_backdated(),
+        "withheld": "Yahoo summary/news not used: pack is EDGAR-only",
     }
     payload["text"] = _pack_text(payload, limit)
     payload["thin"] = len(payload["text"].strip()) < 400

@@ -1,2 +1,27 @@
-# Stdlib-only pipeline. Python 3.11+ is enough.
-# Optional: none. Audio/STT is ffmpeg + whisper.cpp, not PyPI.
+# PTM idea engine — runtime dependencies (Python 3.11+).
+# Mirrors [project].dependencies in pyproject.toml.
+# Install:  pip install -r requirements.txt
+# Dev/test: pip install -r requirements-dev.txt
+
+# CLI
+typer>=0.12
+
+# Config / validation
+pydantic>=2.7
+pydantic-settings>=2.3
+python-dotenv>=1.0
+
+# Data wrangling
+pandas>=2.2
+
+# HTTP + scraping (ISM, SEC EDGAR, Wikipedia)
+requests>=2.32
+curl_cffi>=0.7          # TLS-impersonating client; ISM/Cloudflare + Yahoo
+beautifulsoup4>=4.12
+lxml>=5.0
+
+# Market + macro data
+yfinance>=0.2.40
+
+# LLM (OpenAI-compatible: OpenAI or NVIDIA NIM endpoints)
+openai>=1.40

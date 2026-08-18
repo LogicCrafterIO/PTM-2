@@ -8,6 +8,7 @@ from ptm.config import data_dir, toml_settings
 from ptm.formulas import earnings_growth, pe, peg
 from ptm.gates import mcap_check
 from ptm.io import write_df
+from ptm.log import log
 from ptm.models import Candidate, Side
 
 
@@ -21,6 +22,12 @@ def _num(value) -> float | None:
         return out
     except (TypeError, ValueError):
         return None
+
+
+
+# Cases that fit none of the process's long/short patterns. A name here is not
+# a trade the process recognises, whatever its multiple looks like.
+NON_IDEAL_CASES = {"long_non_ideal", "short_non_ideal", "unknown"}
 
 
 def classify_long_case(eg1: float | None, eg2: float | None, sector_eg: float | None) -> str:
@@ -99,20 +106,61 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
             }
         )
     frame = pd.DataFrame(rows)
-    frame["sector_pe1"] = frame.groupby("sector")["pe1"].transform("mean")
-    frame["sector_eg1"] = frame.groupby("sector")["eg1"].transform("mean")
+
+    # A near-zero EPS produces a P/E in the hundreds that says nothing about how
+    # the market values the business. Those names are excluded from the sector
+    # benchmark and from candidacy rather than left to distort both.
+    cfg_filters = toml_settings()["filters"]
+    max_pe = float(cfg_filters.get("max_screen_pe") or 200.0)
+    frame["pe_implausible"] = frame["pe1"].notna() & (frame["pe1"] > max_pe)
+    # The benchmark is built only from names that could themselves be screened:
+    # a positive, plausible P/E. Loss-makers otherwise leak in through eg1, where
+    # a shrinking loss reads as +50% "growth" and lifts the sector bar for every
+    # real candidate measured against it.
+    usable = frame.loc[~frame["pe_implausible"] & frame["pe1"].notna()]
+
+    # Median, not mean: the P/E distribution has a long right tail, and a mean
+    # sits well above the typical name. Benchmarking against the mean put ~73%
+    # of the universe "below sector" and skewed the book short by construction.
+    frame["sector_pe1"] = frame["sector"].map(usable.groupby("sector")["pe1"].median())
+    frame["sector_eg1"] = frame["sector"].map(usable.groupby("sector")["eg1"].median())
+    frame["sector_pe1_mean"] = frame["sector"].map(usable.groupby("sector")["pe1"].mean())
     write_df(data_dir("curated", "quant_table.csv"), frame)
 
+    dropped = int(frame["pe_implausible"].sum())
+    if dropped:
+        log(f"screen: {dropped} names excluded with P/E above {max_pe:.0f} (near-zero EPS)")
+
+    # The EG case is the process's own taxonomy of what makes a valid long or
+    # short. Selecting on P/E extremity alone ignored it and handed the
+    # qualitative pass names at 3-12x their sector multiple — expensive because
+    # earnings collapsed, not because growth justified it. Every one was
+    # correctly rejected, so the whole funnel produced an empty book. Rank the
+    # P/E outliers *within* names that fit a case instead.
+    frame["long_case"] = [
+        classify_long_case(r.eg1, r.eg2, r.sector_eg1) for r in frame.itertuples()
+    ]
+    frame["short_case"] = [
+        classify_short_case(r.eg1, r.eg2, r.sector_eg1) for r in frame.itertuples()
+    ]
+    require_case = bool(cfg_filters.get("require_eg_case", True))
+
     candidates: list[Candidate] = []
-    min_names = int(toml_settings()["filters"].get("min_sector_names") or 2)
+    min_names = int(cfg_filters.get("min_sector_names") or 2)
     for sector, group in frame.groupby("sector"):
         if not sector:
             continue
-        ranked = group.dropna(subset=["pe1"]).sort_values("pe1", ascending=False)
+        ranked = (
+            group.loc[~group["pe_implausible"]]
+            .dropna(subset=["pe1"])
+            .sort_values("pe1", ascending=False)
+        )
         if ranked.empty or len(ranked) < min_names:
             continue
-        long_pool = ranked.head(max(3, len(ranked) // 8))
-        short_pool = ranked.tail(max(3, len(ranked) // 8))
+        long_eligible = ranked[~ranked["long_case"].isin(NON_IDEAL_CASES)] if require_case else ranked
+        short_eligible = ranked[~ranked["short_case"].isin(NON_IDEAL_CASES)] if require_case else ranked
+        long_pool = long_eligible.head(max(3, len(long_eligible) // 8))
+        short_pool = short_eligible.tail(max(3, len(short_eligible) // 8))
         for _, row in long_pool.iterrows():
             side = Side.LONG
             ok, warn = mcap_check(side, row["market_cap"])
@@ -135,7 +183,7 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
                 peg2=_num(row["peg2"]),
                 sector_pe1=_num(row["sector_pe1"]),
                 sector_eg1=_num(row["sector_eg1"]),
-                eg_case=classify_long_case(row["eg1"], row["eg2"], row["sector_eg1"]),
+                eg_case=row["long_case"],
                 mcap_ok=ok,
                 mcap_warning="" if ok else warn,
                 warnings=[] if ok else [warn],
@@ -164,7 +212,7 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
                 peg2=_num(row["peg2"]),
                 sector_pe1=_num(row["sector_pe1"]),
                 sector_eg1=_num(row["sector_eg1"]),
-                eg_case=classify_short_case(row["eg1"], row["eg2"], row["sector_eg1"]),
+                eg_case=row["short_case"],
                 mcap_ok=ok,
                 mcap_warning="" if ok else warn,
                 warnings=[] if ok else [warn],

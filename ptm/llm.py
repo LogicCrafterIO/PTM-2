@@ -9,7 +9,7 @@ from openai import OpenAI
 from ptm.config import data_dir, env, toml_settings
 from ptm.io import write_json
 from ptm.models import Candidate, CatalystResult, MacroSnapshot, QualResult, Side
-from ptm.timing_prm import earnings_in_window, normalize_earnings_date
+from ptm.timing_prm import catalyst_window, earnings_in_window, normalize_earnings_date
 
 JSON_HINT = "Reply with a single JSON object only. No markdown."
 GENERIC_KPIS = {"revenue", "net_income", "ebit", "cash", "debt", "assets", "equity", "interest"}
@@ -37,22 +37,43 @@ def model_name() -> str:
     return settings.openai_model
 
 
+TRAILING_COMMA_RE = re.compile(r",(\s*[}\]])")
+
+
+def _repair_json(text: str) -> str | None:
+    """Fix the syntax error small models actually make.
+
+    A trailing comma before a closing brace or bracket accounted for every JSON
+    failure observed across a 308-name run (~2% of calls). Losing an idea's
+    catalysts to a stray character is not a fair trade.
+    """
+    repaired = TRAILING_COMMA_RE.sub(r"\1", text)
+    return repaired if repaired != text else None
+
+
 def _extract_json(text: str) -> dict:
     text = (text or "").strip()
     fence = re.match(r"^```(?:json)?\s*\n(.*)\n```$", text, flags=re.S | re.I)
     if fence:
         text = fence.group(1).strip()
     cleaned = "".join(ch if (ch >= " " or ch in "\n\t\r") else " " for ch in text)
-    try:
-        payload = json.loads(cleaned)
+    for attempt in (cleaned, _repair_json(cleaned)):
+        if attempt is None:
+            continue
+        try:
+            payload = json.loads(attempt)
+        except json.JSONDecodeError:
+            continue
         if isinstance(payload, dict):
             return payload
-    except json.JSONDecodeError:
-        pass
     match = re.search(r"\{", cleaned)
     if not match:
         raise json.JSONDecodeError("No JSON object", cleaned, 0)
-    payload, _ = json.JSONDecoder().raw_decode(cleaned[match.start() :])
+    tail = cleaned[match.start() :]
+    try:
+        payload, _ = json.JSONDecoder().raw_decode(tail)
+    except json.JSONDecodeError:
+        payload, _ = json.JSONDecoder().raw_decode(_repair_json(tail) or tail)
     if not isinstance(payload, dict):
         raise json.JSONDecodeError("JSON root is not an object", cleaned, 0)
     return payload
@@ -134,7 +155,11 @@ def sanitize_kpis(kpis: list | None) -> tuple[list[str], bool]:
     return cleaned, stripped
 
 
-def filter_non_earnings(raw_items: list | None, low_days: int = 20, high_days: int = 60) -> list[str]:
+def filter_non_earnings(raw_items: list | None, low_days: int | None = None, high_days: int | None = None) -> list[str]:
+    if low_days is None or high_days is None:
+        window_low, window_high = catalyst_window()
+        low_days = window_low if low_days is None else low_days
+        high_days = window_high if high_days is None else high_days
     kept: list[str] = []
     for item in raw_items or []:
         event = ""
@@ -166,6 +191,36 @@ def filter_non_earnings(raw_items: list | None, low_days: int = 20, high_days: i
 
 def _clip(value: object, n: int = 240) -> str:
     return str(value or "").strip()[:n]
+
+
+
+# How demanding the qualitative gate is. Measured pass rates on this universe:
+#   consistent -> ~80%   strict -> ~55%
+# (The wording this replaced scored 0%, which is a gate that carries no
+# information at all.) Which of the two is right is a process judgement about
+# how much work the qualitative step should do beyond the quant screen, so it
+# is a setting rather than a hardcoded choice. See docs/FEATURE-LIMITATIONS.md.
+VERDICT_BARS = {
+    "consistent": (
+        "Work in this order: list evidence_for (supporting the trade) and evidence_against, then set "
+        "supports_outlier so it AGREES with them. If evidence_for is non-empty and not outweighed by "
+        "evidence_against, supports_outlier MUST be true. Never contradict your own evidence. "
+    ),
+    "strict": (
+        "Work in this order: list evidence_for and evidence_against, then set supports_outlier so it "
+        "AGREES with them. The bar is SPECIFICITY: evidence_for counts only when it is concrete and "
+        "quantified - named products, segment growth rates, backlog figures, margin or volume numbers. "
+        "Mission statements, strategy language, 'focused on growth', or the mere existence of a plan "
+        "are NOT evidence. If the strongest thing you can say is that the company has a plan or "
+        "operates in a good market, answer false. Answer true only when specific evidence materially "
+        "outweighs the evidence against. Never contradict your own evidence. "
+    ),
+}
+
+
+def _verdict_bar() -> str:
+    choice = str((toml_settings().get("llm") or {}).get("qualitative_bar") or "consistent").lower()
+    return VERDICT_BARS.get(choice, VERDICT_BARS["consistent"])
 
 
 def qualitative(
@@ -223,17 +278,40 @@ def qualitative(
         "red_flags": flags,
         "quotes": quotes,
     }
+    # The earlier wording ("does the plan support the outlier") was ambiguous for
+    # shorts: models read deterioration as a reason to REJECT a discount short,
+    # the opposite of what it means. Measured over 100 real names it produced a
+    # 0% pass rate — a gate that never opens carries no information. The verdict
+    # is now asked as a side-specific question, and the model must enumerate its
+    # evidence before committing to a boolean that agrees with it.
     verdict_system = (
-        "You are doing PTM qualitative processing. A good company is not automatically a good trade. "
-        "Decide if the EXTRACTED operating plan supports the quantitative outlier. "
-        "Premium longs need evidence of acceleration or a plan that can grow into the multiple. "
-        "Discount shorts need evidence the cheap multiple is earned (deterioration, one-off EPS, no plan). "
-        "supports_outlier must be true or false, never null. Keep why under 240 characters. " + JSON_HINT
+        "You are doing PTM qualitative processing on ONE name. A good company is not automatically a "
+        "good trade, and a bad company is not automatically a good short.\n"
+        "You are given a quantitative outlier: a P/E far from its sector. Say whether the operating "
+        "evidence EXPLAINS that gap.\n"
+        "For a LONG (premium multiple): answer true when the evidence shows growth, acceleration, "
+        "backlog, pricing power or a credible plan that could grow into the multiple.\n"
+        "For a SHORT (discount multiple): answer true when the evidence shows the discount is DESERVED "
+        "- declining volumes, shrinking margins, lost share, one-off EPS, structural decline or no "
+        "credible plan. Deterioration is the CONFIRMING evidence for a short, not a reason to reject it.\n"
+        + _verdict_bar()
+        + "supports_outlier must be true or false, never null. "
+        "Keep every string under 240 characters. " + JSON_HINT
     )
-    pe_vs = f"PE1={candidate.pe1} sector_PE1={candidate.sector_pe1}"
+    ratio = ""
+    if candidate.pe1 and candidate.sector_pe1:
+        ratio = f" ({candidate.pe1 / candidate.sector_pe1:.1f}x sector)"
+    ask = (
+        "does the evidence justify PAYING this premium?"
+        if candidate.side == Side.LONG
+        else "does the evidence show this discount is DESERVED?"
+    )
     verdict_user = (
-        "Return JSON keys: supports_outlier (bool), why (string, 2-4 sentences), denial_reason (string).\n"
-        f"Side={candidate.side.value} EG case={candidate.eg_case} {pe_vs}\n"
+        "Return JSON keys: evidence_for (string[]), evidence_against (string[]), "
+        "supports_outlier (bool), why (string, 2-4 sentences), denial_reason (string).\n"
+        f"Side={candidate.side.value}. P/E {candidate.pe1} vs sector {candidate.sector_pe1}{ratio}. "
+        f"EG case={candidate.eg_case}.\n"
+        f"Question: {ask}\n\n"
         f"Extract:\n{json.dumps(extract_summary, default=str)}"
     )
     verdict: dict = {}
@@ -268,6 +346,11 @@ def qualitative(
             flags.append("llm_json_failed_verdict")
     else:
         supports = bool(raw)
+    for_items = [_clip(x, 240) for x in (verdict.get("evidence_for") or []) if str(x).strip()][:5]
+    against_items = [_clip(x, 240) for x in (verdict.get("evidence_against") or []) if str(x).strip()][:5]
+    # Surface, but do not silently overturn, a verdict that argues against itself.
+    if supports is False and for_items and not against_items:
+        flags.append("verdict_contradicts_evidence")
     why = _clip(verdict.get("why"), 480)
     denial = _clip(verdict.get("denial_reason")) if supports is False else ""
     summary = why or _clip(extract.get("business_in_one_line"))
@@ -279,6 +362,8 @@ def qualitative(
         summary=summary,
         why=why,
         evidence_quotes=quotes,
+        evidence_for=for_items,
+        evidence_against=against_items,
         denial_reason=denial,
     )
 
@@ -299,7 +384,8 @@ def catalysts(
             reason="LLM skipped; using earnings date window only",
         )
     payload = chat_json(
-        "Identify non-earnings catalysts that could change revenue or EPS expectations inside 20-60 days. "
+        f"Identify non-earnings catalysts that could change revenue or EPS expectations inside "
+        f"{catalyst_window()[0]}-{catalyst_window()[1]} calendar days. "
         "Each catalyst must be a dated event, not a news headline or financial-table dump. "
         "If none, return an empty list. Do not invent events that are not in the research pack. "
         + JSON_HINT,
@@ -319,7 +405,31 @@ def catalysts(
     )
 
 
-def fallback_template(candidate: Candidate, qual: QualResult, cats: CatalystResult, timing_comment: str, prm: dict) -> str:
+def _earnings_block(earnings) -> list[str]:
+    """Lines describing when the name reports, flagging a projected date."""
+    if earnings is None:
+        return ["Next earnings: unknown"]
+    if not earnings.estimated:
+        return [
+            f"Next earnings: {earnings.date} (published), "
+            f"{earnings.days_to_earnings} calendar days out"
+        ]
+    return [
+        f"Next earnings: **{earnings.date} (estimated, not published)**, "
+        f"{earnings.days_to_earnings} calendar days out",
+        f"- {earnings.basis}",
+        "- Filed under this window on that estimate; the catalyst gate used the published date only.",
+    ]
+
+
+def fallback_template(
+    candidate: Candidate,
+    qual: QualResult,
+    cats: CatalystResult,
+    timing_comment: str,
+    prm: dict,
+    earnings=None,
+) -> str:
     side = "LONG" if candidate.side == Side.LONG else "SHORT"
     return "\n".join(
         [
@@ -335,7 +445,9 @@ def fallback_template(candidate: Candidate, qual: QualResult, cats: CatalystResu
             *([f"- {q}" for q in (qual.evidence_quotes or [])[:3]]),
             "",
             "## Catalysts",
-            f"Earnings: {cats.earnings_date} in_window={cats.earnings_in_window}",
+            *_earnings_block(earnings),
+            f"Earnings inside the {catalyst_window()[0]}-{catalyst_window()[1]} day catalyst window: "
+            f"{cats.earnings_in_window}",
             *([f"- {item}" for item in cats.non_earnings] or ["- none identified"]),
             "",
             "## Risk footnote (not a gate)",
@@ -361,17 +473,22 @@ def render_template(
     timing_comment: str,
     prm: dict,
     skip_llm: bool = False,
+    earnings=None,
 ) -> str:
-    fallback = fallback_template(candidate, qual, cats, timing_comment, prm)
+    fallback = fallback_template(candidate, qual, cats, timing_comment, prm, earnings)
     if skip_llm or not llm_available():
         return fallback
     try:
         payload = chat_json(
             "Fill a PTM trade idea template in Markdown. Be concise. Do not invent numbers. "
-            "Do not include SMA, MACD, or other technical-analysis entry lights. " + JSON_HINT,
+            "Never mention price action, charts, momentum, moving averages, MACD or any other "
+            "technical-analysis entry signal: this process excludes them. " + JSON_HINT,
             "Return JSON {markdown: string} covering: 1 quant 2 sector 3 qualitative (use qual.why) "
             "4 catalysts 5 optional ATR risk footnote only.\n"
+            "If EARNINGS.estimated is true, the catalysts section MUST say that no future earnings "
+            "date was published, quote EARNINGS.basis, and mark the date as estimated.\n"
             f"{candidate.model_dump_json()}\nQUAL:{qual.model_dump_json()}\nCAT:{cats.model_dump_json()}\n"
+            f"EARNINGS:{earnings.model_dump_json() if earnings is not None else '{}'}\n"
             f"PRM:{json.dumps(prm)}",
         )
         markdown = str(payload.get("markdown") or "")

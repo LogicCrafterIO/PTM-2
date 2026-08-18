@@ -5,12 +5,13 @@ from __future__ import annotations
 import calendar
 import re
 import time
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from threading import Lock
 
 from bs4 import BeautifulSoup
 
+from ptm.asof import as_of_date, is_backdated, ism_report_month, month_label
 from ptm.config import ROOT, data_dir
 from ptm.io import write_json
 from ptm.log import log
@@ -44,23 +45,51 @@ COMPONENT_LABELS = [
 ]
 
 
-def _month_slugs(now: datetime | None = None) -> list[str]:
+def _report_months(now: datetime | date | None = None) -> list[tuple[int, int]]:
+    """(year, month) of candidate reports, newest first, relative to the run date.
+
+    Never returns a month newer than the run date allows: on a backdated run
+    that is what stops a later PMI print leaking in as lookahead.
+    """
+    if isinstance(now, datetime):
+        ref = now.date()
+    elif isinstance(now, date):
+        ref = now
+    else:
+        ref = as_of_date()
+    year, month = ism_report_month(ref)
+    out: list[tuple[int, int]] = []
+    for i in range(4):
+        index = (year * 12 + (month - 1)) - i
+        out.append((index // 12, index % 12 + 1))
+    return out
+
+
+def _month_slugs(now: datetime | date | None = None) -> list[str]:
     """Latest *released* print is last calendar month (August URL is empty mid-August)."""
-    now = now or datetime.now(timezone.utc)
-    month = now.month - 1 or 12
-    names: list[str] = []
-    for _ in range(4):
-        names.append(calendar.month_name[month].lower())
-        month = month - 1 or 12
-    return names
+    return [calendar.month_name[m].lower() for _, m in _report_months(now)]
 
 
-def _urls(now: datetime | None = None) -> list[tuple[str, str]]:
+def _urls(now: datetime | date | None = None) -> list[tuple[str, str]]:
     urls: list[tuple[str, str]] = []
     for month in _month_slugs(now):
         urls.append(("pmi", f"{BASE}/pmi/{month}/"))
         urls.append(("services", f"{BASE}/services/{month}/"))
     return urls
+
+
+def _fixture_is_stale_safe(report_month: str | None, now: datetime | date | None = None) -> bool:
+    """A bundled fixture may stand in only if its print is not NEWER than the
+    run date would have seen. Using July's fixture on a June backdate would be
+    lookahead, which is worse than having no ISM at all."""
+    if not report_month:
+        return False
+    try:
+        parsed = datetime.strptime(report_month.strip(), "%B %Y")
+    except ValueError:
+        return False
+    newest = _report_months(now)[0]
+    return (parsed.year, parsed.month) <= newest
 
 
 def _login_walled(url: str) -> bool:
@@ -403,7 +432,8 @@ def scrape_ism(
         used["services"] = str(services_html)
 
     if manufacturing is None or services is None:
-        log("ism: curling ismworld.org (HTTP/1.1 + homepage warmup; July fixture if still blocked)")
+        target_label = month_label(_report_months()[0])
+        log(f"ism: curling ismworld.org for the {target_label} print (HTTP/1.1 + homepage warmup)")
         for kind, url in _urls():
             if kind == "pmi" and manufacturing is not None:
                 continue
@@ -435,20 +465,27 @@ def scrape_ism(
                 used["services"] = url
 
     fixtures = ROOT / "tests" / "fixtures"
-    if manufacturing is None:
-        path = fixtures / "ism_july_manufacturing.md"
-        if path.exists():
-            manufacturing = parse_ism_report(path.read_text(encoding="utf-8"), "pmi")
-            used["pmi"] = str(path)
-            errors.append("live manufacturing fetch failed; used bundled July fixture")
-            log("ism: using bundled July manufacturing fixture")
-    if services is None:
-        path = fixtures / "ism_july_services.md"
-        if path.exists():
-            services = parse_ism_report(path.read_text(encoding="utf-8"), "services")
-            used["services"] = str(path)
-            errors.append("live services fetch failed; used bundled July fixture")
-            log("ism: using bundled July services fixture")
+    for kind, name in (("pmi", "ism_july_manufacturing.md"), ("services", "ism_july_services.md")):
+        if (manufacturing if kind == "pmi" else services) is not None:
+            continue
+        path = fixtures / name
+        if not path.exists():
+            continue
+        report = parse_ism_report(path.read_text(encoding="utf-8"), kind)
+        if not _fixture_is_stale_safe(report.get("report_month")):
+            errors.append(
+                f"bundled {report.get('report_month')} {kind} fixture is NEWER than the "
+                f"{month_label(_report_months()[0])} print this run date could have seen; refusing it as lookahead"
+            )
+            log(f"ism: refusing {kind} fixture (lookahead vs run date)")
+            continue
+        if kind == "pmi":
+            manufacturing = report
+        else:
+            services = report
+        used[kind] = str(path)
+        errors.append(f"live {kind} fetch failed; used bundled {report.get('report_month')} fixture")
+        log(f"ism: using bundled {report.get('report_month')} {kind} fixture")
 
     if manufacturing is None and services is None:
         existing_path = data_dir("curated", "ism.json")
@@ -460,8 +497,12 @@ def scrape_ism(
                 existing["errors"] = list(existing.get("errors") or []) + errors
                 return existing
 
+    target = _report_months()[0]
     payload = {
         "as_of": datetime.now(timezone.utc).isoformat(),
+        "run_date": as_of_date().isoformat(),
+        "backdated": is_backdated(),
+        "target_report_month": month_label(target),
         "pmi": (manufacturing or {}).get("headline"),
         "nmi": (services or {}).get("headline"),
         "manufacturing": manufacturing,
@@ -473,3 +514,78 @@ def scrape_ism(
     write_json(data_dir("curated", "ism.json"), payload)
     log(f"ism done pmi={payload.get('pmi')} nmi={payload.get('nmi')} errors={len(errors)}")
     return payload
+
+
+def probe_report_month(year: int, month: int) -> dict:
+    """Fetch and parse one month's reports to see whether ISM still serves them.
+
+    Old month URLs are not removed — they rotate to a navigation-only stub — so
+    a 200 response proves nothing. Only a parsed headline does.
+    """
+    slug = calendar.month_name[month].lower()
+    out = {
+        "month": f"{calendar.month_name[month]} {year}",
+        "slug": slug,
+        "pmi": None,
+        "nmi": None,
+        "pmi_ok": False,
+        "services_ok": False,
+        "errors": [],
+    }
+    for kind in ("pmi", "services"):
+        url = f"{BASE}/{kind}/{slug}/"
+        try:
+            html = fetch_ism_html(url)
+            report = parse_ism_report(html, kind)
+        except Exception as exc:
+            out["errors"].append(f"{kind}: {exc}")
+            continue
+        headline = report.get("headline")
+        if headline is None:
+            out["errors"].append(f"{kind}: page served but no headline parsed (stub or archived)")
+            continue
+        if kind == "pmi":
+            out["pmi"], out["pmi_ok"] = headline, True
+        else:
+            out["nmi"], out["services_ok"] = headline, True
+        time.sleep(0.5)
+    out["ok"] = bool(out["pmi_ok"])
+    return out
+
+
+def probe_available_months(depth: int | None = None, now: date | None = None) -> list[dict]:
+    """Probe the candidate months newest-first and report what really parses."""
+    from ptm.asof import ism_available_months
+
+    months = ism_available_months(now)
+    if depth:
+        months = months[:depth]
+    return [probe_report_month(year, month) for year, month in months]
+
+
+def verify_ism_for(run_date: date) -> dict:
+    """Preflight for a backdated run: does the month it is entitled to exist?
+
+    Returns the probe result for the target month plus the newest older month
+    that does parse, so the caller can offer a stale-but-honest fallback.
+    """
+    target = _report_months(run_date)[0]
+    probe = probe_report_month(*target)
+    result = {
+        "run_date": run_date.isoformat(),
+        "target_month": probe["month"],
+        "ok": probe["ok"],
+        "errors": probe["errors"],
+        "pmi": probe["pmi"],
+        "nmi": probe["nmi"],
+        "fallback": None,
+    }
+    if probe["ok"]:
+        return result
+    for year, month in _report_months(run_date)[1:]:
+        older = probe_report_month(year, month)
+        if older["ok"]:
+            result["fallback"] = older["month"]
+            result["fallback_pmi"] = older["pmi"]
+            break
+    return result

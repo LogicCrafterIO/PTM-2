@@ -1,3 +1,10 @@
+"""Position risk maths (ATR stop, range target, beta).
+
+No entry timing lives here. The SMA/EMA/MACD timing lights this module used to
+compute were removed: technical analysis takes no part in screening. What
+remains is risk sizing applied *after* a name is selected, and it gates nothing.
+"""
+
 from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
@@ -6,9 +13,10 @@ import pandas as pd
 
 import re
 
+from ptm.asof import days_until
 from ptm.config import toml_settings
-from ptm.formulas import atrp, ema, high_to_low, r_score, slope_beta, sma, true_range_pct
-from ptm.models import Candidate, PRMResult, Side, TimingLight, TimingResult
+from ptm.formulas import atrp, high_to_low, r_score, slope_beta, true_range_pct
+from ptm.models import Candidate, PRMResult, Side
 
 
 def _closes_from_prices(prices: pd.DataFrame, ticker: str) -> pd.DataFrame:
@@ -20,42 +28,6 @@ def _closes_from_prices(prices: pd.DataFrame, ticker: str) -> pd.DataFrame:
     if date_col in sub.columns:
         sub = sub.sort_values(date_col)
     return sub
-
-
-def time_idea(prices: pd.DataFrame, ticker: str, side: Side | None = None) -> TimingResult:
-    sub = _closes_from_prices(prices, ticker)
-    if sub.empty or "close" not in sub.columns:
-        return TimingResult(light=TimingLight.UNKNOWN, comment="no price history")
-    closes = [float(v) for v in sub["close"].dropna().tolist()]
-    s20, s60 = sma(closes, 20), sma(closes, 60)
-    e20, e60 = ema(closes, 20), ema(closes, 60)
-    macd = None if e20 is None or e60 is None else e20 - e60
-    light = TimingLight.UNKNOWN
-    if s20 is not None and s60 is not None:
-        uptrend = s20 > s60 and (macd or 0) > 0
-        downtrend = s20 < s60 and (macd or 0) < 0
-        if side == Side.SHORT:
-            if downtrend:
-                light = TimingLight.GREEN
-            elif uptrend:
-                light = TimingLight.RED
-            else:
-                light = TimingLight.AMBER
-        elif uptrend:
-            light = TimingLight.GREEN
-        elif downtrend:
-            light = TimingLight.RED
-        else:
-            light = TimingLight.AMBER
-    return TimingResult(
-        light=light,
-        sma20=s20,
-        sma60=s60,
-        ema20=e20,
-        ema60=e60,
-        macd=macd,
-        comment=f"20/60 SMA {light.value}; MACD {macd:.4f}" if macd is not None else light.value,
-    )
 
 
 def _true_ranges(sub: pd.DataFrame) -> list[float]:
@@ -143,10 +115,32 @@ def normalize_earnings_date(raw: object | None) -> str | None:
     return None
 
 
-def earnings_in_window(raw_date: str | None, low_days: int = 20, high_days: int = 60) -> tuple[bool, str | None]:
+def catalyst_window() -> tuple[int, int]:
+    """The PTM catalyst window in calendar days (default 30-90).
+
+    The process states 20-60 *trading* days; that is 30-90 calendar days, and the
+    earnings buckets use the same units so the two agree.
+    """
+    raw = (toml_settings().get("filters") or {}).get("catalyst_window_days") or [30, 90]
+    return int(raw[0]), int(raw[1])
+
+
+def earnings_in_window(
+    raw_date: str | None,
+    low_days: int | None = None,
+    high_days: int | None = None,
+) -> tuple[bool, str | None]:
+    if low_days is None or high_days is None:
+        window_low, window_high = catalyst_window()
+        low_days = window_low if low_days is None else low_days
+        high_days = window_high if high_days is None else high_days
     iso = normalize_earnings_date(raw_date)
     if not iso:
         return False, str(raw_date) if raw_date else None
-    parsed = datetime.strptime(iso, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-    delta = (parsed - datetime.now(timezone.utc)).days
+    # Calendar-date arithmetic, not datetime subtraction: subtracting an
+    # end-of-day "now" from a midnight target made a date 30 days out measure 29,
+    # so the gate and the earnings buckets could disagree on the same name.
+    delta = days_until(iso)
+    if delta is None:
+        return False, iso
     return low_days <= delta <= high_days, iso

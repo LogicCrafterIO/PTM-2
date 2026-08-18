@@ -6,11 +6,74 @@ from pathlib import Path
 
 import typer
 
+from ptm.asof import AsOfUnavailable, coverage
 from ptm.ingest.ism import scrape_ism
 from ptm.llm import llm_available, model_name
-from ptm.pipeline import generate_ideas, ingest, research_funnel, run, screen
+from ptm.pipeline import apply_as_of, generate_ideas, ingest, research_funnel, run, screen
 
 app = typer.Typer(no_args_is_help=True, add_completion=False)
+
+
+
+def _pin(as_of: str | None, allow_stale_ism: bool = False) -> None:
+    """Apply --as-of, or exit with the supported range if it cannot be honoured."""
+    try:
+        apply_as_of(as_of, allow_stale_ism=allow_stale_ism)
+    except AsOfUnavailable as exc:
+        typer.secho(f"Cannot backdate: {exc}", fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=2) from exc
+    except ValueError as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=2) from exc
+
+
+@app.command("as-of-range")
+def as_of_range(
+    probe: bool = typer.Option(
+        False, "--probe", help="Actually fetch each month to see which reports ISM still serves."
+    ),
+) -> None:
+    """Show the dates a backdated run can currently reach, and why."""
+    info = coverage()
+    if probe:
+        from ptm.ingest.ism import probe_available_months
+
+        results = probe_available_months()
+        live = [r for r in results if r["ok"]]
+        typer.echo(
+            json.dumps(
+                {
+                    "today": info["real_today"],
+                    "probed": [
+                        {"month": r["month"], "serves_report": r["ok"], "pmi": r["pmi"], "nmi": r["nmi"]}
+                        for r in results
+                    ],
+                    "oldest_live_report": live[-1]["month"] if live else None,
+                    "note": (
+                        "Old month URLs return a navigation stub instead of 404ing, so only a "
+                        "parsed headline proves a report is still served."
+                    ),
+                },
+                indent=2,
+            )
+        )
+        raise typer.Exit()
+    typer.echo(
+        json.dumps(
+            {
+                "today": info["real_today"],
+                "earliest_as_of_provisional": info["earliest_as_of"],
+                "ism_reports_expected": info["ism_months_available"],
+                "note": (
+                    "Calendar estimate only. ISM rotates old months to a navigation stub "
+                    "rather than removing them, so run `ptm as-of-range --probe` for the "
+                    "real floor. A backdated run probes the month it needs before starting. "
+                    "See docs/FEATURE-LIMITATIONS.md."
+                ),
+            },
+            indent=2,
+        )
+    )
 
 
 @app.command()
@@ -27,7 +90,14 @@ def ingest_cmd(
     force: bool = typer.Option(False, help="Refresh cached downloads"),
     pmi_html: Path | None = typer.Option(None, help="Saved Manufacturing PMI HTML/markdown"),
     services_html: Path | None = typer.Option(None, help="Saved Services PMI HTML/markdown"),
+    as_of: str | None = typer.Option(None, "--as-of", help="Run as if today were this date (YYYY-MM-DD). Limited by ISM report availability."),
+    allow_stale_ism: bool = typer.Option(
+        False,
+        "--allow-stale-ism",
+        help="Proceed when the run date's own ISM print is no longer served, using the newest older one.",
+    ),
 ) -> None:
+    _pin(as_of, allow_stale_ism)
     universe = ingest(max_tickers=max_tickers, force=force, pmi_html=pmi_html, services_html=services_html)
     from ptm.config import data_dir
     from ptm.io import read_df
@@ -60,7 +130,10 @@ def ingest_ism_cmd(
 
 
 @app.command()
-def dashboard() -> None:
+def dashboard(
+    as_of: str | None = typer.Option(None, "--as-of", help="Run as if today were this date (YYYY-MM-DD). Limited by ISM report availability."),
+) -> None:
+    _pin(as_of)
     from ptm.config import data_dir
     from ptm.io import read_df
 
@@ -88,7 +161,14 @@ def dashboard() -> None:
 def ideas(
     max_candidates: int | None = typer.Option(None),
     skip_llm: bool = typer.Option(False),
+    as_of: str | None = typer.Option(None, "--as-of", help="Run as if today were this date (YYYY-MM-DD). Limited by ISM report availability."),
+    allow_stale_ism: bool = typer.Option(
+        False,
+        "--allow-stale-ism",
+        help="Proceed when the run date's own ISM print is no longer served, using the newest older one.",
+    ),
 ) -> None:
+    _pin(as_of, allow_stale_ism)
     out = generate_ideas(max_candidates=max_candidates, skip_llm=skip_llm)
     from ptm.book import assemble_book
     from ptm.config import data_dir
@@ -110,8 +190,15 @@ def weekly(
     force: bool = typer.Option(False, help="Refresh cached downloads"),
     pmi_html: Path | None = typer.Option(None, help="Saved Manufacturing PMI HTML/markdown"),
     services_html: Path | None = typer.Option(None, help="Saved Services PMI HTML/markdown"),
+    as_of: str | None = typer.Option(None, "--as-of", help="Run as if today were this date (YYYY-MM-DD). Limited by ISM report availability."),
+    allow_stale_ism: bool = typer.Option(
+        False,
+        "--allow-stale-ism",
+        help="Proceed when the run date's own ISM print is no longer served, using the newest older one.",
+    ),
 ) -> None:
     """Ingest, screen, write ideas and a book, then audit — one command."""
+    _pin(as_of, allow_stale_ism)
     result = run(
         max_tickers=max_tickers,
         max_candidates=max_candidates,

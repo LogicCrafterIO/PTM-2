@@ -7,10 +7,20 @@ long_mcap_min = 3_000_000_000
 long_mcap_max = 10_000_000_000
 short_mcap_min = 20_000_000_000
 max_positions = 12
+max_per_sector = 2   # per side: six shorts from one sector is one bet, not six
+# A P/E-outlier screen is beta-long by construction (growth longs, value shorts), so a
+# dollar-neutral book still breaches the beta limit. Swap the fewest names to fix it.
+beta_aware_selection = true
 min_positions = 8
 exclude_sectors = ["Health Care"]  # skip pharma/biotech-heavy names in v1 via GICS Healthcare optional; screen still includes sector unless flagged
 skip_healthcare_v1 = false
 min_sector_names = 2  # block one-name "sector" PE outliers; live GICS groups are much larger
+max_screen_pe = 200.0  # above this the P/E reflects a near-zero EPS, not a valuation; excluded from the screen
+require_eg_case = true  # a candidate must fit one of the process EG cases, not merely have an extreme P/E
+# The PTM catalyst window, in CALENDAR days. The process states it as 20-60 trading
+# days, which is 30-90 calendar days; the earnings buckets below use the same units
+# so a name in the 31-60d or 61-90d bucket can actually satisfy the gate.
+catalyst_window_days = [30, 90]
 
 [macro]
 bear_drawdown = 0.20
@@ -66,7 +76,35 @@ ism_pmi = "NAPM"
 ism_nmi = "NMFBAI"
 
 [llm]
+# How hard the qualitative gate is to pass. "consistent" requires the verdict to
+# agree with the model's own evidence (~80% pass here); "strict" additionally
+# demands concrete, quantified evidence and rejects strategy language (~55%).
+qualitative_bar = "consistent"
 max_filing_chars = 12000
 max_candidates = 16
 temperature = 0.2
 max_tokens = 1200
+
+[asof]
+ism_months_available = 3   # month URLs ismworld.org still serves; sets the backdate floor
+ism_release_day = 4        # day of M+1 by which month M's PMI + Services are both out
+
+[momentum]
+lookbacks = [20, 60, 120]  # trading-day windows for the group momentum layer
+up_threshold = 0.05        # 60d return above this reads as an up tape
+down_threshold = -0.05     # below this reads as a down tape
+min_bars = 30              # fewer bars than this and momentum is reported unknown
+
+[earnings_buckets]
+edges = [30, 60, 90]       # CALENDAR-day cuts to next earnings: 0-30, 31-60, 61-90
+
+[fred_asof]
+publication_lag_days = 45  # keyless CSV fallback only; the API path uses true ALFRED vintages
+
+[edgar]
+# OFF by default: guidance is non-GAAP/adjusted while XBRL trailing EPS is GAAP,
+# so mixing them yields a meaningless growth rate and P/E. See docs/FEATURE-LIMITATIONS.md.
+fetch_guidance = false
+# Realized TTM growth above this is treated as distorted (one-off, tiny base) and
+# clamped before it is extrapolated into forward EPS.
+max_extrapolated_growth = 0.5

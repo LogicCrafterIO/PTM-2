@@ -7,6 +7,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
+from ptm.asof import set_as_of
 from ptm.config import env, set_roots, toml_settings
 from ptm.io import write_df, write_json
 
@@ -21,6 +22,7 @@ def isolate_roots(tmp_path, monkeypatch):
     data.mkdir()
     ideas.mkdir()
     set_roots(data=data, ideas=ideas)
+    set_as_of(None)
     env.cache_clear()
     toml_settings.cache_clear()
     try:
@@ -31,6 +33,7 @@ def isolate_roots(tmp_path, monkeypatch):
         pass
     yield {"data": data, "ideas": ideas, "tmp": tmp_path}
     set_roots(data=None, ideas=None)
+    set_as_of(None)
     env.cache_clear()
     toml_settings.cache_clear()
 

@@ -115,3 +115,19 @@ def test_qualitative_verdict_json_fail_returns_bool(monkeypatch):
     result = qualitative(Candidate(ticker="PFE", side=Side.SHORT, eg_case="short_non_ideal"), "BUSINESS: insurer")
     assert result.supports_outlier is False
     assert "llm_json_failed_verdict" in result.red_flags
+
+
+def test_trailing_commas_are_repaired():
+    """The most common small-model syntax error must not cost an idea its
+    catalysts; observed at ~2% of calls across a 308-name run."""
+    from ptm.llm import _extract_json
+
+    got = _extract_json('{"non_earnings": ["a", "b",], "meaningful": true,}')
+    assert got["non_earnings"] == ["a", "b"]
+    assert got["meaningful"] is True
+
+    fenced = '```json\n{"a": [1, 2,],}\n```'
+    assert _extract_json(fenced)["a"] == [1, 2]
+
+    prefixed = 'Here you go: {"x": {"y": [1,],},} trailing text'
+    assert _extract_json(prefixed)["x"]["y"] == [1]

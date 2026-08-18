@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from ptm.config import toml_settings
 from ptm.models import Candidate, Side, TradeIdea
+from ptm.timing_prm import catalyst_window
 
 
 def mcap_check(side: Side, market_cap: float | None) -> tuple[bool, str]:
@@ -24,7 +25,8 @@ def apply_process_gates(idea: TradeIdea) -> list[str]:
     if idea.qual is not None and idea.qual.supports_outlier is False:
         blocks.append("qualitative denies quant outlier")
     if idea.catalysts is not None and not idea.catalysts.tradeable:
-        blocks.append("no dated 20-60d catalysts (investment idea only)")
+        low, high = catalyst_window()
+        blocks.append(f"no dated {low}-{high}d catalysts (investment idea only)")
     return blocks
 
 

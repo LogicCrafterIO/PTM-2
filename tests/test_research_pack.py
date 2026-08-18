@@ -60,10 +60,6 @@ def test_research_pack_thin_and_fat(monkeypatch):
         lambda ticker, max_chars=4000: {"business": "", "mda": ""},
     )
     monkeypatch.setattr("ptm.ingest.company_research.latest_earnings_exhibit", lambda ticker, max_chars=4000: "")
-    monkeypatch.setattr(
-        "ptm.ingest.company_research._yahoo_pack",
-        lambda ticker: {"summary": "", "ir_website": "", "headlines": []},
-    )
     thin = research_pack(Candidate(ticker="ZZ", side=Side.LONG), force=True)
     assert thin["thin"] is True
 
@@ -72,14 +68,6 @@ def test_research_pack_thin_and_fat(monkeypatch):
         lambda ticker, max_chars=4000: {"business": TEN_Q[40:400], "mda": TEN_Q[200:]},
     )
     monkeypatch.setattr("ptm.ingest.company_research.latest_earnings_exhibit", lambda ticker, max_chars=4000: EX99)
-    monkeypatch.setattr(
-        "ptm.ingest.company_research._yahoo_pack",
-        lambda ticker: {
-            "summary": "Ameren operates regulated electric and gas utilities in Missouri and Illinois.",
-            "ir_website": "http://example.test",
-            "headlines": [{"title": "Ameren reaffirms outlook", "link": "http://x"}],
-        },
-    )
     fat = research_pack(Candidate(ticker="AEE", side=Side.SHORT, sector="Utilities"), force=True)
     assert fat["thin"] is False
     assert "EX-99" in fat["text"] or "Earnings Release" in fat["text"]
@@ -104,23 +92,31 @@ def test_cover_page_rejected_exhibit_kept():
     assert is_exhibit99_name("aee-8k.htm") is False
 
 
-def test_yahoo_summary_fills_empty_item1(monkeypatch):
-    monkeypatch.setattr("ptm.ingest.company_research.company_facts", lambda ticker: {})
+def test_pack_is_edgar_only(monkeypatch):
+    """No Yahoo summary, no headlines: an empty Item 1 stays empty rather than
+    being backfilled from a vendor description."""
+    monkeypatch.setattr(
+        "ptm.ingest.company_research.company_facts",
+        lambda ticker: {"revenue": 1.0, "net_income": 1.0},
+    )
     monkeypatch.setattr(
         "ptm.ingest.company_research.filing_sections",
         lambda ticker, max_chars=4000: {"business": "", "mda": ""},
     )
     monkeypatch.setattr("ptm.ingest.company_research.latest_earnings_exhibit", lambda ticker, max_chars=4000: "")
-    monkeypatch.setattr(
-        "ptm.ingest.company_research._yahoo_pack",
-        lambda ticker: {
-            "summary": "Ameren operates regulated electric and gas utilities in Missouri and Illinois.",
-            "ir_website": "http://example.test",
-            "headlines": [{"title": "Ameren reaffirms outlook", "link": "http://x"}],
-        },
-    )
     pack = research_pack(Candidate(ticker="AEE", side=Side.SHORT), force=True)
-    assert "Ameren operates" in pack["business"]
+    assert pack["business"] == ""
+    assert pack["summary"] == ""
+    assert pack["headlines"] == []
+
+
+def test_no_yfinance_import_in_the_research_pack():
+    import ptm.ingest.company_research as module
+
+    source = Path(module.__file__).read_text(encoding="utf-8")
+    assert "yfinance" not in source
+    assert "yf.Ticker" not in source
+    assert not hasattr(module, "_yahoo_pack")
 
 
 def test_qual_null_only_when_pack_empty(monkeypatch):

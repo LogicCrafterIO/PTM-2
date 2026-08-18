@@ -47,24 +47,6 @@ def bear_level(index_high: float, drawdown: float = 0.20) -> float:
     return index_high * (1.0 - drawdown)
 
 
-def sma(values: list[float], window: int) -> float | None:
-    if len(values) < window or window <= 0:
-        return None
-    chunk = values[-window:]
-    return sum(chunk) / window
-
-
-def ema(values: list[float], window: int) -> float | None:
-    if len(values) < window or window <= 0:
-        return None
-    multiplier = 2.0 / (window + 1)
-    seed = sum(values[:window]) / window
-    current = seed
-    for price in values[window:]:
-        current = price * multiplier + current * (1.0 - multiplier)
-    return current
-
-
 def true_range_pct(high: float, low: float, prev_close: float, open_: float) -> float | None:
     if open_ == 0:
         return None

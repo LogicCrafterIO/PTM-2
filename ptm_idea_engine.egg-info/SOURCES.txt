@@ -1,3 +1,4 @@
+README.md
 pyproject.toml
 ptm/__init__.py
 ptm/__main__.py
@@ -9,10 +10,12 @@ ptm/formulas.py
 ptm/gates.py
 ptm/io.py
 ptm/llm.py
+ptm/log.py
 ptm/macro.py
 ptm/models.py
 ptm/pipeline.py
 ptm/quant.py
+ptm/ranking.py
 ptm/timing_prm.py
 ptm/ingest/__init__.py
 ptm/ingest/company_research.py
@@ -35,9 +38,11 @@ tests/test_gates.py
 tests/test_ism_parse.py
 tests/test_ism_scrape.py
 tests/test_llm_json.py
+tests/test_log.py
 tests/test_macro_dashboard.py
 tests/test_pipeline_offline.py
 tests/test_quant.py
+tests/test_ranking.py
 tests/test_research_pack.py
 tests/test_sector_tilts.py
 tests/test_timing_prm.py

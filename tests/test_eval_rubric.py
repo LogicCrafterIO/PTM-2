@@ -117,3 +117,53 @@ def test_audit_run_writes_report():
     assert path.name == "AUDIT.md"
     assert path.read_text(encoding="utf-8").startswith("# PTM process audit")
     assert data_dir("curated", "audit.json").exists()
+
+
+def test_verdict_prompt_asks_a_side_specific_question():
+    """A discount short is confirmed by deterioration, not refuted by it. The
+    old wording made models reject every short; measured 0% pass over 100 names."""
+    import inspect
+
+    from ptm import llm
+
+    source = inspect.getsource(llm.qualitative)
+    assert "DESERVED" in source
+    assert "CONFIRMING evidence for a short" in source
+    assert "evidence_for" in source and "evidence_against" in source
+    # The evidence-ordering rule lives in the selectable bar, not inline.
+    assert "MUST be true" in llm.VERDICT_BARS["consistent"]
+
+
+def test_contradictory_verdict_is_flagged(monkeypatch):
+    """Evidence for the trade, none against, yet a rejection -> flag it."""
+    from ptm.llm import qualitative
+    from ptm.models import Candidate, Side
+
+    monkeypatch.setattr("ptm.llm.llm_available", lambda: True)
+
+    def fake_chat(system, user):
+        if "Extract operating facts" in system:
+            return {"business_in_one_line": "b", "operating_plan": "p",
+                    "kpis": ["backlog"], "red_flags": [], "quotes": []}
+        return {"evidence_for": ["volumes down 10%", "margins compressing"],
+                "evidence_against": [], "supports_outlier": False,
+                "why": "no", "denial_reason": "unclear"}
+
+    monkeypatch.setattr("ptm.llm.chat_json", fake_chat)
+    out = qualitative(Candidate(ticker="X", side=Side.SHORT, pe1=10.0, sector_pe1=20.0), "pack text here")
+    assert out.supports_outlier is False          # the verdict stands
+    assert "verdict_contradicts_evidence" in out.red_flags   # but it is visible
+    assert out.evidence_for and not out.evidence_against
+
+
+def test_qualitative_bar_is_selectable():
+    from ptm.config import toml_settings
+    from ptm.llm import VERDICT_BARS, _verdict_bar
+
+    assert set(VERDICT_BARS) == {"consistent", "strict"}
+    assert "SPECIFICITY" in VERDICT_BARS["strict"]
+    assert "MUST be true" in VERDICT_BARS["consistent"]
+    # Both keep the anti-contradiction rule that fixed the 0% pass rate.
+    for text in VERDICT_BARS.values():
+        assert "Never contradict your own evidence" in text
+    assert _verdict_bar() == VERDICT_BARS[toml_settings()["llm"].get("qualitative_bar", "consistent")]

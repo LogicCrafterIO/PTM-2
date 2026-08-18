@@ -17,20 +17,12 @@ class Side(str, Enum):
     SHORT = "short"
 
 
-class TimingLight(str, Enum):
-    GREEN = "green"
-    AMBER = "amber"
-    RED = "red"
-    UNKNOWN = "unknown"
-
-
 class IdeaState(str, Enum):
     IDENTIFIED = "identified"
     QUAL_PASS = "qual_pass"
     QUAL_FAIL = "qual_fail"
     CATALYST_PASS = "catalyst_pass"
     INVESTMENT_ONLY = "investment_only"
-    TIMED = "timed"
     TEMPLATED = "templated"
     SIZED = "sized"
 
@@ -103,6 +95,11 @@ class QualResult(BaseModel):
     summary: str = ""
     why: str = ""
     evidence_quotes: list[str] = Field(default_factory=list)
+    # The verdict pass enumerates these before committing to supports_outlier,
+    # so a boolean that contradicts its own evidence is visible rather than
+    # silently wrong. See docs/FEATURE-LIMITATIONS.md.
+    evidence_for: list[str] = Field(default_factory=list)
+    evidence_against: list[str] = Field(default_factory=list)
     denial_reason: str = ""
 
 
@@ -115,12 +112,12 @@ class CatalystResult(BaseModel):
 
 
 class TimingResult(BaseModel):
-    light: TimingLight = TimingLight.UNKNOWN
-    sma20: float | None = None
-    sma60: float | None = None
-    ema20: float | None = None
-    ema60: float | None = None
-    macd: float | None = None
+    """Kept only to carry the note that timing is deliberately not modelled.
+
+    The SMA/EMA/MACD fields this used to hold were removed: no technical
+    analysis takes part in screening.
+    """
+
     comment: str = ""
 
 
@@ -135,6 +132,52 @@ class PRMResult(BaseModel):
     block_reason: str = ""
 
 
+class EarningsEstimate(BaseModel):
+    """When a name next reports, and how we know.
+
+    `estimated` is True when no future date was published and the projection
+    came from the company's own filing cadence. `basis` states that in full so
+    the reader never sees a bare date they might mistake for a confirmed one.
+    """
+
+    ticker: str = ""
+    date: str | None = None
+    estimated: bool = False
+    last_report: str | None = None
+    cadence_days: int | None = None
+    days_to_earnings: int | None = None
+    basis: str = ""
+
+
+class GroupNameView(BaseModel):
+    ticker: str
+    side: str = ""
+    eg_case: str = ""
+    qual_verdict: str = ""
+    comment: str = ""
+
+
+class GroupReview(BaseModel):
+    """Second-pass LLM read across every idea sharing a sector or an earnings
+    window, comparing their fundamental cases against each other.
+
+    Contains no price or technical input by design — see
+    docs/FEATURE-LIMITATIONS.md.
+    """
+
+    group_kind: str = "sector"
+    group_label: str = ""
+    as_of: str = ""
+    tickers: list[str] = Field(default_factory=list)
+    llm_used: bool = False
+    summary: str = ""
+    narrative: str = ""
+    views: list[GroupNameView] = Field(default_factory=list)
+    ranked_tickers: list[str] = Field(default_factory=list)
+    contradictions: list[str] = Field(default_factory=list)
+    error: str = ""
+
+
 class TradeIdea(BaseModel):
     candidate: Candidate
     state: IdeaState = IdeaState.IDENTIFIED
@@ -142,6 +185,7 @@ class TradeIdea(BaseModel):
     catalysts: CatalystResult | None = None
     timing: TimingResult | None = None
     prm: PRMResult | None = None
+    earnings: EarningsEstimate | None = None
     template_markdown: str = ""
     extra: dict[str, Any] = Field(default_factory=dict)
 
