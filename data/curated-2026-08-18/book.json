@@ -1,0 +1,1282 @@
+{
+  "as_of": "2026-08-18T13:26:49.792046+00:00",
+  "bias": "NET_LONG",
+  "ideas": [
+    {
+      "candidate": {
+        "ticker": "ETSY",
+        "name": "Etsy",
+        "sector": "Consumer Discretionary",
+        "industry": "Broadline Retail",
+        "side": "long",
+        "price": 78.41000366210938,
+        "market_cap": 7196607196.7948,
+        "eps0": 1.12,
+        "eps1": 1.475764705882353,
+        "eps2": 1.9445370242214537,
+        "eg1": 0.3176470588235294,
+        "eg2": 0.31764705882352956,
+        "pe1": 53.13177862945867,
+        "pe2": 40.32322485271417,
+        "peg1": 1.672667105001477,
+        "peg2": 1.2694348564743343,
+        "sector_pe1": 17.12461478795241,
+        "sector_eg1": 0.09201273225257235,
+        "eg_case": "long_case_1_acceleration",
+        "mcap_ok": true,
+        "mcap_warning": "",
+        "ism_score": 1.05,
+        "ism_tilt": "long",
+        "ism_why": "mfg new orders contracting: Textile Mills; svc fastest growth: Retail Trade; svc top growth #1: Retail Trade",
+        "evidence": {
+          "revenue": 120912000.0,
+          "net_income": 23030000.0,
+          "ebit": 245114000.0,
+          "cash": 901281000.0,
+          "debt": 2335911000.0,
+          "ev": 8631237196.7948,
+          "ev_ebit": 35.213154682289876,
+          "interest": 14042000.0
+        },
+        "warnings": []
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Contracting new orders in Textile Mills",
+          "220 colleagues to be let go across the company"
+        ],
+        "kpis": [
+          "GMS (Gross Merchandise Sales)",
+          "GMS growth rate",
+          "Depop GMS",
+          "Etsy marketplace GMS"
+        ],
+        "operating_plan": "Etsy's operating plan focuses on innovative technology, marketing, and community to drive growth and customer engagement.",
+        "summary": "The evidence shows acceleration in GMS growth rate and a credible plan to drive growth and customer engagement, which justifies the premium multiple.",
+        "why": "The evidence shows acceleration in GMS growth rate and a credible plan to drive growth and customer engagement, which justifies the premium multiple.",
+        "evidence_quotes": [
+          "We need to build the team, culture, and organization that will make Etsy's next level of growth possible.",
+          "Our goal is to build a company that continues to deliver for our buyers and sellers over the long term."
+        ],
+        "evidence_for": [
+          "Growth in GMS",
+          "Acceleration in GMS growth rate",
+          "Innovative technology and marketing in operating plan",
+          "Focus on customer engagement in operating plan",
+          "Credible plan to drive growth and customer engagement"
+        ],
+        "evidence_against": [
+          "Contracting new orders in Textile Mills",
+          "220 colleagues to be let go across the company"
+        ],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-11-06",
+        "earnings_in_window": true,
+        "non_earnings": [],
+        "tradeable": true,
+        "reason": "The Depop sale to eBay and the Reverb and Elo7 sales are non-earnings catalysts that could change revenue or EPS expectations inside 30-90 calendar days."
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 0.5512960755367919,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": 1.1658968603906588,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "ETSY",
+        "date": "2026-11-06",
+        "estimated": true,
+        "last_report": "2026-08-05",
+        "cadence_days": 93,
+        "days_to_earnings": 80,
+        "basis": "no future earnings date published; last reported 2026-08-05, so the next report is estimated 2026-11-06 (93-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "# PTM Trade Idea Template\n\n## Quantitative Analysis\n\n### Sector\n\n* Sector: Consumer Discretionary\n\n### Catalysts\n\n* No future earnings date was published; last reported 2026-08-05, so the next report is estimated 2026-11-06 (93-day cadence measured over 4 prior gaps)\n\n### Optional ATR Risk Footnote\n\n* ATR risk is not applicable as the target percentage is provided.",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-08-05, so the next report is estimated 2026-11-06 (93-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    },
+    {
+      "candidate": {
+        "ticker": "SNDR",
+        "name": "Schneider National",
+        "sector": "Industrials",
+        "industry": "Cargo Ground Transportation",
+        "side": "long",
+        "price": 36.40999984741211,
+        "market_cap": 6404518973.15979,
+        "eps0": 0.7100000000000001,
+        "eps1": 0.8130645161290324,
+        "eps2": 0.9310900104058275,
+        "eg1": 0.14516129032258074,
+        "eg2": 0.14516129032258074,
+        "pe1": 44.78119401982841,
+        "pe2": 39.10470463703326,
+        "peg1": 3.084926699143733,
+        "peg2": 2.6938796527734,
+        "sector_pe1": 26.16367280461197,
+        "sector_eg1": 0.1419973073572504,
+        "eg_case": "long_case_2_stable_above",
+        "mcap_ok": true,
+        "mcap_warning": "",
+        "ism_score": 0.9,
+        "ism_tilt": "long",
+        "ism_why": "mfg fastest growth: Printing & Related Support Activities; svc top growth #2: Transportation & Warehousing",
+        "evidence": {
+          "revenue": 2967200000.0,
+          "net_income": 70100000.0,
+          "ebit": 104800000.0,
+          "cash": 292700000.0,
+          "debt": 185000000.0,
+          "ev": 6296818973.15979,
+          "ev_ebit": 60.0841505072499,
+          "interest": 8300000.0
+        },
+        "warnings": []
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Seasonal fluctuations in business across each segment",
+          "Higher maintenance costs in winter months",
+          "Cargo theft concerns influencing volume and mix in Logistics segment"
+        ],
+        "kpis": [
+          "Truckload segment revenue growth",
+          "Intermodal segment revenue growth",
+          "Logistics segment revenue growth",
+          "Operating ratio improvement",
+          "Adjusted total operating expenses, net of fuel surcharge revenue"
+        ],
+        "operating_plan": "Schneider's strategy is to deliver a resilient, high-quality portfolio of transportation and logistics services designed to support consistent revenue growth, margin performance, and long-term shareholder value.",
+        "summary": "Strong revenue growth, operating ratio improvement, and cost reduction justify the premium multiple.",
+        "why": "Strong revenue growth, operating ratio improvement, and cost reduction justify the premium multiple.",
+        "evidence_quotes": [
+          "We delivered strong earnings improvement, driven by the combined impact of the disciplined revenue management, cost reduction, and productivity actions implemented over the past several years which en",
+          "The positive impact of non-compliant capacity exiting the market has been realized more quickly than initially anticipated, and we remain confident that the enterprise will continue to deliver strong "
+        ],
+        "evidence_for": [
+          "Truckload segment revenue growth",
+          "Intermodal segment revenue growth",
+          "Logistics segment revenue growth",
+          "Operating ratio improvement",
+          "Disciplined revenue management"
+        ],
+        "evidence_against": [
+          "Seasonal fluctuations in business across each segment",
+          "Higher maintenance costs in winter months",
+          "Cargo theft concerns influencing volume and mix in Logistics segment"
+        ],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-10-30",
+        "earnings_in_window": true,
+        "non_earnings": [],
+        "tradeable": true,
+        "reason": "The event is a dated, non-earnings catalyst that could change revenue or EPS expectations inside 30-90 calendar days."
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 0.24392173998910516,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": 1.1189851339533274,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "SNDR",
+        "date": "2026-10-30",
+        "estimated": true,
+        "last_report": "2026-07-31",
+        "cadence_days": 91,
+        "days_to_earnings": 73,
+        "basis": "no future earnings date published; last reported 2026-07-31, so the next report is estimated 2026-10-30 (91-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "# LONG SNDR \u2014 Schneider National\n\nSector: Industrials  \nEG case: long_case_2_stable_above  \nPrice: 36.40999984741211  Mcap: 6404518973.15979\nPE1 44.78119401982841 vs sector 26.16367280461197  EG1 0.14516129032258074\n\n## Qualitative\nStrong revenue growth, operating ratio improvement, and cost reduction justify the premium multiple.\n- We delivered strong earnings improvement, driven by the combined impact of the disciplined revenue management, cost reduction, and productivity actions implemented over the past several years which en\n- The positive impact of non-compliant capacity exiting the market has been realized more quickly than initially anticipated, and we remain confident that the enterprise will continue to deliver strong \n\n## Catalysts\nNext earnings: **2026-10-30 (estimated, not published)**, 73 calendar days out\n- no future earnings date published; last reported 2026-07-31, so the next report is estimated 2026-10-30 (91-day cadence measured over 4 prior gaps)\n- Filed under this window on that estimate; the catalyst gate used the published date only.\nEarnings inside the 30-90 day catalyst window: True\n- none identified\n\n## Risk footnote (not a gate)\n{\"stop_pct\": NaN, \"target_pct\": 0.24392173998910516, \"r_score\": NaN, \"atrp\": NaN, \"beta\": 1.1189851339533274, \"size_fraction\": 1.0, \"blocked\": false, \"block_reason\": \"\"}",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-07-31, so the next report is estimated 2026-10-30 (91-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    },
+    {
+      "candidate": {
+        "ticker": "CME",
+        "name": "CME Group",
+        "sector": "Financials",
+        "industry": "Financial Exchanges & Data",
+        "side": "long",
+        "price": 267.8800048828125,
+        "market_cap": 17852483339.44812,
+        "eps0": 11.36,
+        "eps1": 13.04849342770475,
+        "eps2": 14.987956050427295,
+        "eg1": 0.1486349848331647,
+        "eg2": 0.14863498483316467,
+        "pe1": 20.52957349957703,
+        "pe2": 17.873017773839514,
+        "peg1": 1.3812073599375305,
+        "peg2": 1.2024771821991358,
+        "sector_pe1": 12.175904990939271,
+        "sector_eg1": 0.2321522761151244,
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "mcap_ok": false,
+        "mcap_warning": "long mcap 17852483339 outside 3000000000-10000000000",
+        "ism_score": 0.1231,
+        "ism_tilt": "neutral",
+        "ism_why": "ISM composite score",
+        "evidence": {
+          "revenue": 3586300000.0,
+          "net_income": 2196100000.0,
+          "ebit": 2416800000.0,
+          "cash": 2144200000.0,
+          "debt": null,
+          "ev": 15708283339.44812,
+          "ev_ebit": 6.499620713111602,
+          "interest": null
+        },
+        "warnings": [
+          "long mcap 17852483339 outside 3000000000-10000000000"
+        ]
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Increasing competition from foreign and domestic entities",
+          "Rapid technological developments and security risks",
+          "Ability to introduce innovative and competitive new products and services",
+          "Ability to manage variable costs associated with CME Group's transition to the Google Cloud",
+          "Resilience of electronic platforms and business continuity plans"
+        ],
+        "kpis": [
+          "Segments: Derivatives Exchange Business, Market Data, and Clearing and Transaction Fees",
+          "Products: Interest Rates, Equity Indices, Foreign Exchange, Agricultural Commodities, Energy, Metals, and Cryptocurrencies",
+          "Backlog: $95 billion in daily margin efficiencies",
+          "Utilization: 29.8 million contracts (average daily volume) in Q2 2026",
+          "Volumes: 9.1 million non-U.S. contracts in Q2 2026",
+          "Pricing: $0.678 total average rate per contract in Q2 2026"
+        ],
+        "operating_plan": "CME Group provides primary price discovery and referential pricing information through its market data in a variety of formats, including real-time, historical and derived data for customers in both listed and cash products.",
+        "summary": "Strong record H1 performance, high backlog, and pricing power justify the premium multiple.",
+        "why": "Strong record H1 performance, high backlog, and pricing power justify the premium multiple.",
+        "evidence_quotes": [
+          "The first half of 2026 was the strongest in CME Group's history.",
+          "We delivered record H1 performance across revenue, adjusted operating income, adjusted net income and adjusted earnings per share.",
+          "We provided more than $95 billion in daily margin efficiencies during the quarter, a new high that represents unparalleled capital savings that our clients can redeploy in their businesses."
+        ],
+        "evidence_for": [
+          "Record H1 performance across revenue, adjusted operating income, adjusted net income and adjusted earnings per share",
+          "Backlog: $95 billion in daily margin efficiencies",
+          "Utilization: 29.8 million contracts (average daily volume) in Q2 2026",
+          "Pricing: $0.678 total average rate per contract in Q2 2026",
+          "Ability to introduce innovative and competitive new products and services"
+        ],
+        "evidence_against": [
+          "Increasing competition from foreign and domestic entities",
+          "Rapid technological developments and security risks"
+        ],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-10-23",
+        "earnings_in_window": true,
+        "non_earnings": [],
+        "tradeable": true,
+        "reason": "These events can impact CME Group's revenue and EPS expectations, as they can impact trading volumes, market data revenue, and customer acquisition and retention."
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 0.4036061537878648,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": -0.31962923536433024,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "CME",
+        "date": "2026-10-23",
+        "estimated": true,
+        "last_report": "2026-07-24",
+        "cadence_days": 91,
+        "days_to_earnings": 66,
+        "basis": "no future earnings date published; last reported 2026-07-24, so the next report is estimated 2026-10-23 (91-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "# LONG CME \u2014 CME Group\n\nSector: Financials  \nEG case: long_case_4_6_opportunity_cost  \nPrice: 267.8800048828125  Mcap: 17852483339.44812\nPE1 20.52957349957703 vs sector 12.175904990939271  EG1 0.1486349848331647\n\n## Qualitative\nStrong record H1 performance, high backlog, and pricing power justify the premium multiple.\n- The first half of 2026 was the strongest in CME Group's history.\n- We delivered record H1 performance across revenue, adjusted operating income, adjusted net income and adjusted earnings per share.\n- We provided more than $95 billion in daily margin efficiencies during the quarter, a new high that represents unparalleled capital savings that our clients can redeploy in their businesses.\n\n## Catalysts\nNext earnings: **2026-10-23 (estimated, not published)**, 66 calendar days out\n- no future earnings date published; last reported 2026-07-24, so the next report is estimated 2026-10-23 (91-day cadence measured over 4 prior gaps)\n- Filed under this window on that estimate; the catalyst gate used the published date only.\nEarnings inside the 30-90 day catalyst window: True\n- none identified\n\n## Risk footnote (not a gate)\n{\"stop_pct\": NaN, \"target_pct\": 0.4036061537878648, \"r_score\": NaN, \"atrp\": NaN, \"beta\": -0.31962923536433024, \"size_fraction\": 1.0, \"blocked\": false, \"block_reason\": \"\"}",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-07-24, so the next report is estimated 2026-10-23 (91-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    },
+    {
+      "candidate": {
+        "ticker": "KGS",
+        "name": "Kodiak Gas Services, Inc.",
+        "sector": "Energy",
+        "industry": "Oil & Gas Equipment & Services",
+        "side": "long",
+        "price": 66.12000274658203,
+        "market_cap": 6684998807.410515,
+        "eps0": 0.99,
+        "eps1": 1.3804225352112678,
+        "eps2": 1.9248145209283876,
+        "eg1": 0.3943661971830988,
+        "eg2": 0.3943661971830987,
+        "pe1": 47.89837970622715,
+        "pe2": 34.351363223657856,
+        "peg1": 1.2145660568364738,
+        "peg2": 0.8710524245998954,
+        "sector_pe1": 18.15927134438993,
+        "sector_eg1": 0.0,
+        "eg_case": "long_case_2_stable_above",
+        "mcap_ok": true,
+        "mcap_warning": "",
+        "ism_score": 0.5192,
+        "ism_tilt": "long",
+        "ism_why": "ISM composite score",
+        "evidence": {
+          "revenue": 736879000.0,
+          "net_income": 69776000.0,
+          "ebit": 231049000.0,
+          "cash": 137553000.0,
+          "debt": 2725272000.0,
+          "ev": 9272717807.410515,
+          "ev_ebit": 40.13312244333676,
+          "interest": 91873000.0
+        },
+        "warnings": []
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Unconventional resources production requires significantly more compression horsepower",
+          "Multi-well pad drilling and overall well density drive demand for large horsepower infrastructure",
+          "Historical reliability of Contract Services and contract structures produce stable, recurring cash flow"
+        ],
+        "kpis": [
+          "Fleet utilization",
+          "Contract Services revenue",
+          "Large horsepower compression units",
+          "Customer-owned compression maintenance and overhaul"
+        ],
+        "operating_plan": "Long-term customer relationships, operational excellence, and disciplined capital deployment",
+        "summary": "Strong business model, operational excellence, and customer relationships justify the premium multiple.",
+        "why": "Strong business model, operational excellence, and customer relationships justify the premium multiple.",
+        "evidence_quotes": [
+          "We believe our customer-centric business model positions us as the preferred contract compression operator for our customers and creates long-standing relationships.",
+          "We strategically invest in the training, development, and retention of our highly skilled and dedicated employees and believe their expertise and commitment to excellence enhances and differentiates o"
+        ],
+        "evidence_for": [
+          "Long-term customer relationships",
+          "Operational excellence",
+          "Disciplined capital deployment",
+          "Fleet utilization growth",
+          "Stable, recurring cash flow"
+        ],
+        "evidence_against": [],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-11-06",
+        "earnings_in_window": true,
+        "non_earnings": [
+          "Kodiak Gas Services, Inc. Q3 2026 Earnings Release \u2014 The company's quarterly earnings release may provide insight into their revenue and EPS expectations. (2026-11-03)"
+        ],
+        "tradeable": true,
+        "reason": "The upcoming earnings releases may provide non-earnings catalysts that could change revenue or EPS expectations."
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 0.44118727263346047,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": 0.7471397897921841,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "KGS",
+        "date": "2026-11-06",
+        "estimated": true,
+        "last_report": "2026-08-07",
+        "cadence_days": 91,
+        "days_to_earnings": 80,
+        "basis": "no future earnings date published; last reported 2026-08-07, so the next report is estimated 2026-11-06 (91-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "# LONG KGS \u2014 Kodiak Gas Services, Inc.\n\nSector: Energy  \nEG case: long_case_2_stable_above  \nPrice: 66.12000274658203  Mcap: 6684998807.410515\nPE1 47.89837970622715 vs sector 18.15927134438993  EG1 0.3943661971830988\n\n## Qualitative\nStrong business model, operational excellence, and customer relationships justify the premium multiple.\n- We believe our customer-centric business model positions us as the preferred contract compression operator for our customers and creates long-standing relationships.\n- We strategically invest in the training, development, and retention of our highly skilled and dedicated employees and believe their expertise and commitment to excellence enhances and differentiates o\n\n## Catalysts\nNext earnings: **2026-11-06 (estimated, not published)**, 80 calendar days out\n- no future earnings date published; last reported 2026-08-07, so the next report is estimated 2026-11-06 (91-day cadence measured over 4 prior gaps)\n- Filed under this window on that estimate; the catalyst gate used the published date only.\nEarnings inside the 30-90 day catalyst window: True\n- Kodiak Gas Services, Inc. Q3 2026 Earnings Release \u2014 The company's quarterly earnings release may provide insight into their revenue and EPS expectations. (2026-11-03)\n\n## Risk footnote (not a gate)\n{\"stop_pct\": NaN, \"target_pct\": 0.44118727263346047, \"r_score\": NaN, \"atrp\": NaN, \"beta\": 0.7471397897921841, \"size_fraction\": 1.0, \"blocked\": false, \"block_reason\": \"\"}",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-08-07, so the next report is estimated 2026-11-06 (91-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    },
+    {
+      "candidate": {
+        "ticker": "RSI",
+        "name": "Rush Street Interactive, Inc.",
+        "sector": "Consumer Discretionary",
+        "industry": "Casinos & Gaming",
+        "side": "long",
+        "price": 25.450000762939453,
+        "market_cap": 5211969713.894291,
+        "eps0": 0.36,
+        "eps1": 0.54,
+        "eps2": 0.81,
+        "eg1": 0.5000000000000001,
+        "eg2": 0.5,
+        "pe1": 47.12963104248047,
+        "pe2": 31.41975402832031,
+        "peg1": 0.9425926208496092,
+        "peg2": 0.6283950805664061,
+        "sector_pe1": 17.12461478795241,
+        "sector_eg1": 0.09201273225257235,
+        "eg_case": "long_case_2_stable_above",
+        "mcap_ok": true,
+        "mcap_warning": "",
+        "ism_score": 0.15,
+        "ism_tilt": "neutral",
+        "ism_why": "mfg new orders contracting: Textile Mills; svc fastest growth: Retail Trade",
+        "evidence": {
+          "revenue": 764137000.0,
+          "net_income": 20616000.0,
+          "ebit": 89006000.0,
+          "cash": 339910000.0,
+          "debt": null,
+          "ev": 4872059713.894291,
+          "ev_ebit": 54.73855373676259,
+          "interest": 573000.0
+        },
+        "warnings": []
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Contracting new orders in Textile Mills",
+          "Slowdown in growth of Retail Trade"
+        ],
+        "kpis": [
+          "Monthly Active Users (MAU)",
+          "Average Revenue per Monthly Active User (ARPMAU)",
+          "Revenue growth",
+          "Adjusted EBITDA growth"
+        ],
+        "operating_plan": "Casino-first strategy with online casino representing 72% of revenue",
+        "summary": "The evidence shows growth and successful strategy, but lacks pricing power and backlog evidence.",
+        "why": "The evidence shows growth and successful strategy, but lacks pricing power and backlog evidence.",
+        "evidence_quotes": [
+          "We delivered another record quarter, setting all-time highs once again for revenue and Adjusted EBITDA, driven by continued share gains in online casino and our sports betting markets benefiting from ",
+          "Our casino-first strategy continues to be the foundation of our business, with online casino representing 72% of our revenue this quarter."
+        ],
+        "evidence_for": [
+          "Record revenue and Adjusted EBITDA",
+          "Continued share gains in online casino",
+          "Sports betting markets benefiting from growth",
+          "Casino-first strategy is successful"
+        ],
+        "evidence_against": [
+          "No mention of growth in Textile Mills or Retail Trade",
+          "No mention of pricing power or backlog"
+        ],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-10-29",
+        "earnings_in_window": true,
+        "non_earnings": [],
+        "tradeable": true,
+        "reason": "Dated events that could impact revenue or EPS expectations within 30-90 calendar days"
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 0.4280396337259622,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": 0.6737201689867491,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "RSI",
+        "date": "2026-10-29",
+        "estimated": true,
+        "last_report": "2026-07-30",
+        "cadence_days": 91,
+        "days_to_earnings": 72,
+        "basis": "no future earnings date published; last reported 2026-07-30, so the next report is estimated 2026-10-29 (91-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "# LONG RSI \u2014 Rush Street Interactive, Inc.\n\nSector: Consumer Discretionary  \nEG case: long_case_2_stable_above  \nPrice: 25.450000762939453  Mcap: 5211969713.894291\nPE1 47.12963104248047 vs sector 17.12461478795241  EG1 0.5000000000000001\n\n## Qualitative\nThe evidence shows growth and successful strategy, but lacks pricing power and backlog evidence.\n- We delivered another record quarter, setting all-time highs once again for revenue and Adjusted EBITDA, driven by continued share gains in online casino and our sports betting markets benefiting from \n- Our casino-first strategy continues to be the foundation of our business, with online casino representing 72% of our revenue this quarter.\n\n## Catalysts\nNext earnings: **2026-10-29 (estimated, not published)**, 72 calendar days out\n- no future earnings date published; last reported 2026-07-30, so the next report is estimated 2026-10-29 (91-day cadence measured over 4 prior gaps)\n- Filed under this window on that estimate; the catalyst gate used the published date only.\nEarnings inside the 30-90 day catalyst window: True\n- none identified\n\n## Risk footnote (not a gate)\n{\"stop_pct\": NaN, \"target_pct\": 0.4280396337259622, \"r_score\": NaN, \"atrp\": NaN, \"beta\": 0.6737201689867491, \"size_fraction\": 1.0, \"blocked\": false, \"block_reason\": \"\"}",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-07-30, so the next report is estimated 2026-10-29 (91-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    },
+    {
+      "candidate": {
+        "ticker": "GSHD",
+        "name": "Goosehead Insurance, Inc.",
+        "sector": "Financials",
+        "industry": "Insurance Brokers",
+        "side": "long",
+        "price": 64.4000015258789,
+        "market_cap": 1361885443.8682022,
+        "eps0": 0.85,
+        "eps1": 1.0034722222222223,
+        "eps2": 1.1846547067901236,
+        "eg1": 0.1805555555555557,
+        "eg2": 0.1805555555555556,
+        "pe1": 64.17716415035683,
+        "pe2": 54.361833162655195,
+        "peg1": 3.5544275529428373,
+        "peg2": 3.0108092213162867,
+        "sector_pe1": 12.175904990939271,
+        "sector_eg1": 0.2321522761151244,
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "mcap_ok": false,
+        "mcap_warning": "long mcap 1361885444 outside 3000000000-10000000000",
+        "ism_score": 0.1231,
+        "ism_tilt": "neutral",
+        "ism_why": "ISM composite score",
+        "evidence": {
+          "revenue": 206465000.0,
+          "net_income": 14954000.0,
+          "ebit": 41587000.0,
+          "cash": 23655000.0,
+          "debt": 36500000.0,
+          "ev": 1374730443.8682022,
+          "ev_ebit": 33.05673513040619,
+          "interest": 1487000.0
+        },
+        "warnings": [
+          "long mcap 1361885444 outside 3000000000-10000000000"
+        ]
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Interest rate and inflation uncertainty",
+          "Cautious banking industry"
+        ],
+        "kpis": [
+          "77 Net Promoter Score",
+          "3.5x 2024 Industry Average",
+          "Over 200 top-tier carrier relationships"
+        ],
+        "operating_plan": "Deliver insurance customers a superior experience",
+        "summary": "Strong growth, high customer satisfaction, and robust carrier relationships justify the premium multiple.",
+        "why": "Strong growth, high customer satisfaction, and robust carrier relationships justify the premium multiple.",
+        "evidence_quotes": [
+          "Economic conditions remain stable.",
+          "Banking activity continues to be supported by healthy commercial client demand,"
+        ],
+        "evidence_for": [
+          "Rapidly growing independent insurance agency",
+          "77 Net Promoter Score",
+          "3.5x 2024 Industry Average",
+          "Over 200 top-tier carrier relationships",
+          "Economic conditions remain stable."
+        ],
+        "evidence_against": [
+          "Interest rate and inflation uncertainty",
+          "Cautious banking industry"
+        ],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-10-22",
+        "earnings_in_window": true,
+        "non_earnings": [],
+        "tradeable": true,
+        "reason": "The ISM composite score and Qualtrics XM Institute's 2024 Industry Average may have a significant impact on the company's business and outlook, and are therefore considered non-earnings catalysts."
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 1.1045129635145958,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": -0.33122703436490925,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "GSHD",
+        "date": "2026-10-22",
+        "estimated": true,
+        "last_report": "2026-07-23",
+        "cadence_days": 91,
+        "days_to_earnings": 65,
+        "basis": "no future earnings date published; last reported 2026-07-23, so the next report is estimated 2026-10-22 (91-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "# LONG GSHD \u2014 Goosehead Insurance, Inc.\n\nSector: Financials  \nEG case: long_case_4_6_opportunity_cost  \nPrice: 64.4000015258789  Mcap: 1361885443.8682022\nPE1 64.17716415035683 vs sector 12.175904990939271  EG1 0.1805555555555557\n\n## Qualitative\nStrong growth, high customer satisfaction, and robust carrier relationships justify the premium multiple.\n- Economic conditions remain stable.\n- Banking activity continues to be supported by healthy commercial client demand,\n\n## Catalysts\nNext earnings: **2026-10-22 (estimated, not published)**, 65 calendar days out\n- no future earnings date published; last reported 2026-07-23, so the next report is estimated 2026-10-22 (91-day cadence measured over 4 prior gaps)\n- Filed under this window on that estimate; the catalyst gate used the published date only.\nEarnings inside the 30-90 day catalyst window: True\n- none identified\n\n## Risk footnote (not a gate)\n{\"stop_pct\": NaN, \"target_pct\": 1.1045129635145958, \"r_score\": NaN, \"atrp\": NaN, \"beta\": -0.33122703436490925, \"size_fraction\": 1.0, \"blocked\": false, \"block_reason\": \"\"}",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-07-23, so the next report is estimated 2026-10-22 (91-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    },
+    {
+      "candidate": {
+        "ticker": "THC",
+        "name": "Tenet Health",
+        "sector": "Health Care",
+        "industry": "Health Care Facilities",
+        "side": "short",
+        "price": 264.5599975585937,
+        "market_cap": 21302106443.420406,
+        "eps0": 24.85,
+        "eps1": 18.611286919831223,
+        "eps2": 13.938833030675283,
+        "eg1": -0.2510548523206752,
+        "eg2": -0.25105485232067504,
+        "pe1": 14.215029766517235,
+        "pe2": 18.980067913603293,
+        "peg1": null,
+        "peg2": null,
+        "sector_pe1": 26.111110051472984,
+        "sector_eg1": 0.13106796116504843,
+        "eg_case": "short_case_2_decel_decline",
+        "mcap_ok": true,
+        "mcap_warning": "",
+        "ism_score": 1.84,
+        "ism_tilt": "short",
+        "ism_why": "ISM composite score; svc contraction: Health Care & Social Assistance",
+        "evidence": {
+          "revenue": 4520000000.0,
+          "net_income": 134000000.0,
+          "ebit": 2797000000.0,
+          "cash": 2170000000.0,
+          "debt": 4117000000.0,
+          "ev": 23249106443.420406,
+          "ev_ebit": 8.312158184991207,
+          "interest": 218000000.0
+        },
+        "warnings": []
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Payer mix headwinds",
+          "Lower exchange admissions"
+        ],
+        "kpis": [
+          "50 acute care and specialty hospitals",
+          "132 outpatient facilities",
+          "533 ambulatory surgery centers",
+          "26 surgical hospitals"
+        ],
+        "operating_plan": "Strengthen organization, expand care, invest in technology and facilities, and welcome new team members and physician partners.",
+        "summary": "The evidence shows structural decline in the form of payer mix headwinds and lower exchange admissions, which justifies the discount.",
+        "why": "The evidence shows structural decline in the form of payer mix headwinds and lower exchange admissions, which justifies the discount.",
+        "evidence_quotes": [
+          "Strong same-store revenue growth and effective expense management drove our fundamental outperformance in the second quarter of 2026 compared to our original assumptions.",
+          "We are actively navigating current industry dynamics through excellent operational execution, investments in innovation, and a continued focus on higher acuity services to sustain growth, margins and "
+        ],
+        "evidence_for": [
+          "Payer mix headwinds",
+          "Lower exchange admissions"
+        ],
+        "evidence_against": [
+          "Strong same-store revenue growth",
+          "Effective expense management",
+          "Excellent operational execution",
+          "Investments in innovation",
+          "Focus on higher acuity services"
+        ],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-10-28",
+        "earnings_in_window": true,
+        "non_earnings": [],
+        "tradeable": true,
+        "reason": "The opening of the new hospital and the expansion of services may have a significant impact on the company's revenue and EPS expectations."
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 0.7170326448803026,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": 0.5431696911627312,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "THC",
+        "date": "2026-10-28",
+        "estimated": true,
+        "last_report": "2026-07-29",
+        "cadence_days": 91,
+        "days_to_earnings": 71,
+        "basis": "no future earnings date published; last reported 2026-07-29, so the next report is estimated 2026-10-28 (91-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "## PTM Trade Idea Template\n\n### Quantitative\n\n* Ticker: THC\n* Name: Tenet Health\n\n### Sector\n\n* Sector: Health Care\n\n### Qualitative\n\n* Supports Outlier: true\n* Red Flags: Payer mix headwinds, Lower exchange admissions\n* KPIs: 50 acute care and specialty hospitals, 132 outpatient facilities, 533 ambulatory surgery centers, 26 surgical hospitals\n* Operating Plan: Strengthen organization, expand care, invest in technology and facilities, and welcome new team members and physician partners.\n* Summary: The evidence shows structural decline in the form of payer mix headwinds and lower exchange admissions, which justifies the discount.\n* Why: The evidence shows structural decline in the form of payer mix headwinds and lower exchange admissions, which justifies the discount.\n\n### Catalysts\n\n* No future earnings date was published; last reported 2026-07-29, so the next report is estimated 2026-10-28 (91-day cadence measured over 4 prior gaps).\n\n### Optional ATR Risk Footnote\n\n* ATR: Not Applicable (NaN)",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-07-29, so the next report is estimated 2026-10-28 (91-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    },
+    {
+      "candidate": {
+        "ticker": "UTHR",
+        "name": "United Therapeutics",
+        "sector": "Health Care",
+        "industry": "Biotechnology",
+        "side": "short",
+        "price": 508.4800109863281,
+        "market_cap": 21809059539.371216,
+        "eps0": 26.66,
+        "eps1": 28.384808306709267,
+        "eps2": 30.221205649235987,
+        "eg1": 0.06469648562300327,
+        "eg2": 0.06469648562300326,
+        "pe1": 17.913808171328732,
+        "pe2": 16.82527219092541,
+        "peg1": 2.7688997321609317,
+        "peg2": 2.600647010251678,
+        "sector_pe1": 26.111110051472984,
+        "sector_eg1": 0.13106796116504843,
+        "eg_case": "short_below_sector",
+        "mcap_ok": true,
+        "mcap_warning": "",
+        "ism_score": 0.74,
+        "ism_tilt": "short",
+        "ism_why": "ISM composite score",
+        "evidence": {
+          "revenue": 1483300000.0,
+          "net_income": 607900000.0,
+          "ebit": 656600000.0,
+          "cash": 1803200000.0,
+          "debt": null,
+          "ev": 20005859539.371216,
+          "ev_ebit": 30.46886923449774,
+          "interest": 13300000.0
+        },
+        "warnings": []
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Generic versions of Remodulin",
+          "Uptravi",
+          "Winrevair",
+          "Yutrepia"
+        ],
+        "kpis": [
+          "Tyvaso DPI starts",
+          "Tyvaso DPI referrals",
+          "Tyvaso DPI commercial patients",
+          "Tyvaso DPI total patients"
+        ],
+        "operating_plan": "Transform the treatment of rare diseases and expand the availability of transplantable organs through innovative organ manufacturing technologies.",
+        "summary": "The evidence shows structural decline due to competition and lack of a credible plan to address it, making the discount deserved.",
+        "why": "The evidence shows structural decline due to competition and lack of a credible plan to address it, making the discount deserved.",
+        "evidence_quotes": [
+          "We just submitted what we believe are two of the most important NDAs in rare pulmonary disease history: ralinepag tablets in PAH and Nebulized Tyvaso in IPF.",
+          "We believe that these submissions, accompanied by our planned filings later this year \u2013 an IND application for ralinepag DPI and an NDA for treprostinil SMI \u2013 may herald an opportunity for a quantum i"
+        ],
+        "evidence_for": [],
+        "evidence_against": [
+          "Generic versions of Remodulin",
+          "Uptravi",
+          "Winrevair",
+          "Yutrepia",
+          "Declining Tyvaso DPI referrals"
+        ],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-11-06",
+        "earnings_in_window": true,
+        "non_earnings": [],
+        "tradeable": true,
+        "reason": "Potential changes in revenue and EPS expectations due to non-earnings catalysts"
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 0.18253877156423215,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": 0.10924475440232591,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "UTHR",
+        "date": "2026-11-06",
+        "estimated": true,
+        "last_report": "2026-08-05",
+        "cadence_days": 93,
+        "days_to_earnings": 80,
+        "basis": "no future earnings date published; last reported 2026-08-05, so the next report is estimated 2026-11-06 (93-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "# SHORT UTHR \u2014 United Therapeutics\n\nSector: Health Care  \nEG case: short_below_sector  \nPrice: 508.4800109863281  Mcap: 21809059539.371216\nPE1 17.913808171328732 vs sector 26.111110051472984  EG1 0.06469648562300327\n\n## Qualitative\nThe evidence shows structural decline due to competition and lack of a credible plan to address it, making the discount deserved.\n- We just submitted what we believe are two of the most important NDAs in rare pulmonary disease history: ralinepag tablets in PAH and Nebulized Tyvaso in IPF.\n- We believe that these submissions, accompanied by our planned filings later this year \u2013 an IND application for ralinepag DPI and an NDA for treprostinil SMI \u2013 may herald an opportunity for a quantum i\n\n## Catalysts\nNext earnings: **2026-11-06 (estimated, not published)**, 80 calendar days out\n- no future earnings date published; last reported 2026-08-05, so the next report is estimated 2026-11-06 (93-day cadence measured over 4 prior gaps)\n- Filed under this window on that estimate; the catalyst gate used the published date only.\nEarnings inside the 30-90 day catalyst window: True\n- none identified\n\n## Risk footnote (not a gate)\n{\"stop_pct\": NaN, \"target_pct\": 0.18253877156423215, \"r_score\": NaN, \"atrp\": NaN, \"beta\": 0.10924475440232591, \"size_fraction\": 1.0, \"blocked\": false, \"block_reason\": \"\"}",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-08-05, so the next report is estimated 2026-11-06 (93-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    },
+    {
+      "candidate": {
+        "ticker": "MO",
+        "name": "Altria",
+        "sector": "Consumer Staples",
+        "industry": "Tobacco",
+        "side": "short",
+        "price": 63.959999084472656,
+        "market_cap": 106796819978.26378,
+        "eps0": 5.49,
+        "eps1": 5.591855287569574,
+        "eps2": 5.695600283628379,
+        "eg1": 0.01855287569573296,
+        "eg2": 0.0185528756957329,
+        "pe1": 11.438064076274053,
+        "pe2": 11.229720468327347,
+        "peg1": 6.165116537111674,
+        "peg2": 6.052819332428421,
+        "sector_pe1": 21.581219732454,
+        "sector_eg1": 0.027309224733112505,
+        "eg_case": "short_below_sector",
+        "mcap_ok": true,
+        "mcap_warning": "",
+        "ism_score": 0.53,
+        "ism_tilt": "short",
+        "ism_why": "svc contraction: Agriculture, Forestry, Fishing & Hunting",
+        "evidence": {
+          "revenue": 11539000000.0,
+          "net_income": 4481000000.0,
+          "ebit": 6092000000.0,
+          "cash": 2367000000.0,
+          "debt": 24577000000.0,
+          "ev": 129006819978.26378,
+          "ev_ebit": 21.17643138185551,
+          "interest": 1149000000.0
+        },
+        "warnings": []
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Marlboro HTS consumables for U.S. commercialization are pending FDA authorization.",
+          "NJOY ACE is subject to an exclusion order and cease-and-desist orders issued by the U.S. International Trade Commission (ITC) prohibiting the importation and sale of NJOY ACE in the United States."
+        ],
+        "kpis": [
+          "Cigarettes shipment volume in the United States was 61.8 billion units in 2025, a decrease of 10.0% from 2024.",
+          "Total oral tobacco products segment\u2019s shipment volume was 732.4 million units in 2025, a decrease of 5.5% from 2024.",
+          "NJOY\u2019s e-vapor products are sold to customers in the United States, with a product portfolio of tobacco and menthol e-vapor products covered by marketing granted orders (MGO) from the U.S. FDA."
+        ],
+        "operating_plan": "Moving Beyond Smoking by responsibly transitioning adult smokers to a smoke-free future.",
+        "summary": "Declining volumes and regulatory issues justify the discount, making the outlier evidence deserved.",
+        "why": "Declining volumes and regulatory issues justify the discount, making the outlier evidence deserved.",
+        "evidence_quotes": [
+          "In the second quarter, our operating companies continued to deliver against the priorities we outlined at the start of the year \u2013 advancing our smoke-free portfolio, strengthening our traditional toba",
+          "We delivered strong first-half results, driving adjusted diluted EPS growth of 4.9%, and returned nearly $3.9 billion to shareholders through dividends and share repurchases combined."
+        ],
+        "evidence_for": [
+          "Cigarettes shipment volume in the United States was 61.8 billion units in 2025, a decrease of 10.0% from 2024.",
+          "Total oral tobacco products segment\u2019s shipment volume was 732.4 million units in 2025, a decrease of 5.5% from 2024.",
+          "Marlboro HTS consumables for U.S. commercialization are pending FDA authorization.",
+          "NJOY ACE is subject to an exclusion order and cease-and-desist orders issued by the U.S. International Trade Commission (ITC) prohibiting the importation and sale of NJOY ACE in the United States."
+        ],
+        "evidence_against": [
+          "In the second quarter, our operating companies continued to deliver against the priorities we outlined at the start of the year \u2013 advancing our smoke-free portfolio, strengthening our traditional tobacco business, and returning capital to s",
+          "We delivered strong first-half results, driving adjusted diluted EPS growth of 4.9%, and returned nearly $3.9 billion to shareholders through dividends and share repurchases combined."
+        ],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-10-29",
+        "earnings_in_window": true,
+        "non_earnings": [],
+        "tradeable": true,
+        "reason": "Potential impact on HTS products commercialization and manufacturing"
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 0.19769975046162935,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": -0.4875868071348687,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "MO",
+        "date": "2026-10-29",
+        "estimated": true,
+        "last_report": "2026-07-30",
+        "cadence_days": 91,
+        "days_to_earnings": 72,
+        "basis": "no future earnings date published; last reported 2026-07-30, so the next report is estimated 2026-10-29 (91-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "Quant: Tobacco\nSector: Consumer Staples\nQualitative: Declining volumes and regulatory issues justify the discount, making the outlier evidence deserved.\nCatalysts: No future earnings date published; last reported 2026-07-30, so the next earnings date is estimated to be 2026-10-29, basis: no future earnings date published; last reported 2026-07-30.\nATR Risk: The ATR is not provided in the given data.",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-07-30, so the next report is estimated 2026-10-29 (91-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    },
+    {
+      "candidate": {
+        "ticker": "ATO",
+        "name": "Atmos Energy",
+        "sector": "Utilities",
+        "industry": "Gas Utilities",
+        "side": "short",
+        "price": 169.89999389648438,
+        "market_cap": 28711154123.275726,
+        "eps0": 8.5,
+        "eps1": 7.861806311207835,
+        "eps2": 7.271529232346746,
+        "eg1": -0.07508161044613704,
+        "eg2": -0.07508161044613709,
+        "pe1": 21.610808912231022,
+        "pe2": 23.365098106282716,
+        "peg1": null,
+        "peg2": null,
+        "sector_pe1": 22.02248481825099,
+        "sector_eg1": -0.002881844380403428,
+        "eg_case": "short_case_1_worsening",
+        "mcap_ok": true,
+        "mcap_warning": "",
+        "ism_score": -0.0538,
+        "ism_tilt": "neutral",
+        "ism_why": "ISM composite score",
+        "evidence": {
+          "revenue": 4184046000.0,
+          "net_income": 1227552000.0,
+          "ebit": 1599982000.0,
+          "cash": 520953000.0,
+          "debt": 3529452000.0,
+          "ev": 31719653123.275726,
+          "ev_ebit": 19.825006233367453,
+          "interest": 107317000.0
+        },
+        "warnings": []
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Regulatory trends and decisions may impact earnings and cash flows.",
+          "Increased federal regulatory oversight and potential penalties may arise.",
+          "Significant costs and liabilities may result from pipeline integrity and other similar programs and related repairs."
+        ],
+        "kpis": [
+          "Distribution segment: 6 regulated natural gas distribution divisions in 8 states.",
+          "Pipeline and storage segment: Regulated pipeline and storage operations in Texas and Louisiana.",
+          "Customer meters: 3.4 million in 8 states.",
+          "Franchises: 1,010 with terms ranging from 5 to 35 years."
+        ],
+        "operating_plan": "Modernizing business and infrastructure while reducing regulatory lag, focusing on safety, innovation, environmental sustainability, and community investment.",
+        "summary": "The evidence shows a structural decline in the company's business due to worsening regulatory trends and increased oversight, which is a credible reason for the discount.",
+        "why": "The evidence shows a structural decline in the company's business due to worsening regulatory trends and increased oversight, which is a credible reason for the discount.",
+        "evidence_quotes": [
+          "We will be recognized for exceptional customer service, for being a great employer, and for achieving superior financial results.",
+          "Our operating strategy is focused on modernizing our business and infrastructure while reducing regulatory lag."
+        ],
+        "evidence_for": [
+          "Worsening regulatory trends",
+          "Increased federal regulatory oversight",
+          "Significant costs and liabilities from pipeline integrity programs"
+        ],
+        "evidence_against": [],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-11-04",
+        "earnings_in_window": true,
+        "non_earnings": [],
+        "tradeable": true,
+        "reason": "These non-earnings catalysts could change revenue or EPS expectations inside 30-90 calendar days due to their potential impact on Atmos Energy Corporation's business operations and financial performance."
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 0.09805806155861285,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": -0.1483339001194952,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "ATO",
+        "date": "2026-11-04",
+        "estimated": true,
+        "last_report": "2026-08-05",
+        "cadence_days": 91,
+        "days_to_earnings": 78,
+        "basis": "no future earnings date published; last reported 2026-08-05, so the next report is estimated 2026-11-04 (91-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "# SHORT ATO \u2014 Atmos Energy\n\nSector: Utilities  \nEG case: short_case_1_worsening  \nPrice: 169.89999389648438  Mcap: 28711154123.275726\nPE1 21.610808912231022 vs sector 22.02248481825099  EG1 -0.07508161044613704\n\n## Qualitative\nThe evidence shows a structural decline in the company's business due to worsening regulatory trends and increased oversight, which is a credible reason for the discount.\n- We will be recognized for exceptional customer service, for being a great employer, and for achieving superior financial results.\n- Our operating strategy is focused on modernizing our business and infrastructure while reducing regulatory lag.\n\n## Catalysts\nNext earnings: **2026-11-04 (estimated, not published)**, 78 calendar days out\n- no future earnings date published; last reported 2026-08-05, so the next report is estimated 2026-11-04 (91-day cadence measured over 4 prior gaps)\n- Filed under this window on that estimate; the catalyst gate used the published date only.\nEarnings inside the 30-90 day catalyst window: True\n- none identified\n\n## Risk footnote (not a gate)\n{\"stop_pct\": NaN, \"target_pct\": 0.09805806155861285, \"r_score\": NaN, \"atrp\": NaN, \"beta\": -0.1483339001194952, \"size_fraction\": 1.0, \"blocked\": false, \"block_reason\": \"\"}",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-08-05, so the next report is estimated 2026-11-04 (91-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    },
+    {
+      "candidate": {
+        "ticker": "SO",
+        "name": "Southern Company",
+        "sector": "Utilities",
+        "industry": "Electric Utilities",
+        "side": "short",
+        "price": 92.29000091552734,
+        "market_cap": 104038619366.49498,
+        "eps0": 4.74,
+        "eps1": 4.680750000000001,
+        "eps2": 4.622240625000001,
+        "eg1": -0.01249999999999991,
+        "eg2": -0.01249999999999997,
+        "pe1": 19.71692590194463,
+        "pe2": 19.966507242475576,
+        "peg1": null,
+        "peg2": null,
+        "sector_pe1": 22.02248481825099,
+        "sector_eg1": -0.002881844380403428,
+        "eg_case": "short_case_1_worsening",
+        "mcap_ok": true,
+        "mcap_warning": "",
+        "ism_score": -0.0538,
+        "ism_tilt": "neutral",
+        "ism_why": "ISM composite score",
+        "evidence": {
+          "revenue": 8397000000.0,
+          "net_income": 1356000000.0,
+          "ebit": 2018000000.0,
+          "cash": 981000000.0,
+          "debt": null,
+          "ev": 103057619366.49498,
+          "ev_ebit": 51.069187000245286,
+          "interest": null
+        },
+        "warnings": []
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Uncertainty on how the Iran conflict will impact the price of oil",
+          "Competition among utilities for production slots",
+          "Suppliers requiring progress payments or down payments on goods"
+        ],
+        "kpis": [
+          "Customer satisfaction",
+          "Plant availability",
+          "Electric and natural gas system reliability",
+          "Contract availability for Southern Power"
+        ],
+        "operating_plan": "Focus on customer satisfaction, plant availability, electric and natural gas system reliability, and execution of major construction projects.",
+        "summary": "The evidence shows structural decline and no credible plan to address it, making the discount deserved.",
+        "why": "The evidence shows structural decline and no credible plan to address it, making the discount deserved.",
+        "evidence_quotes": [
+          "Uncertainty on how the Iran conflict will impact the price of oil, as well as the knock-on effect to construction and other materials.",
+          "Electric utility materials continue to be in high demand, causing competition among utilities for production slots."
+        ],
+        "evidence_for": [],
+        "evidence_against": [
+          "Worsening plant availability",
+          "Declining electric and natural gas system reliability",
+          "Uncertainty on how the Iran conflict will impact the price of oil",
+          "Competition among utilities for production slots"
+        ],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-10-29",
+        "earnings_in_window": true,
+        "non_earnings": [],
+        "tradeable": true,
+        "reason": "The identified events have the potential to impact revenue expectations and are dated events, making them non-earnings catalysts."
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 0.1150303595546811,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": -0.2423212060454875,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "SO",
+        "date": "2026-10-29",
+        "estimated": true,
+        "last_report": "2026-07-30",
+        "cadence_days": 91,
+        "days_to_earnings": 72,
+        "basis": "no future earnings date published; last reported 2026-07-30, so the next report is estimated 2026-10-29 (91-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "Quant: Utilities, Sector: Utilities, Qualitative: The evidence shows structural decline and no credible plan to address it, making the discount deserved. Qual. Why: The evidence shows structural decline and no credible plan to address it, making the discount deserved. Catalysts: No future earnings date published, basis: no future earnings date published; last reported 2026-07-30, so the next report is estimated 2026-10-29 (91-day cadence measured over 4 prior gaps). ATR risk: Not applicable.",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-07-30, so the next report is estimated 2026-10-29 (91-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    },
+    {
+      "candidate": {
+        "ticker": "FISV",
+        "name": "Fiserv",
+        "sector": "Financials",
+        "industry": "Transaction & Payment Processing Services",
+        "side": "short",
+        "price": 52.209999084472656,
+        "market_cap": 27763540016.563023,
+        "eps0": 5.5600000000000005,
+        "eps1": 5.877110266159697,
+        "eps2": 6.212306669172609,
+        "eg1": 0.05703422053231951,
+        "eg2": 0.05703422053231961,
+        "pe1": 8.883617410600063,
+        "pe2": 8.404285535927396,
+        "peg1": 1.5575942526585411,
+        "peg2": 1.4735513972992647,
+        "sector_pe1": 12.175904990939271,
+        "sector_eg1": 0.2321522761151244,
+        "eg_case": "short_below_sector",
+        "mcap_ok": true,
+        "mcap_warning": "",
+        "ism_score": -0.1231,
+        "ism_tilt": "neutral",
+        "ism_why": "ISM composite score",
+        "evidence": {
+          "revenue": 21193000000.0,
+          "net_income": 1198000000.0,
+          "ebit": 1933000000.0,
+          "cash": 627000000.0,
+          "debt": 3230000000.0,
+          "ev": 30366540016.563023,
+          "ev_ebit": 15.709539584357486,
+          "interest": 737000000.0
+        },
+        "warnings": []
+      },
+      "state": "sized",
+      "qual": {
+        "supports_outlier": true,
+        "red_flags": [
+          "Dependence on multi-year contracts with high renewal rates",
+          "High debt level: $3.23 billion in 2025"
+        ],
+        "kpis": [
+          "Total revenue: $21.2 billion in 2025",
+          "Operating income: $5.8 billion in 2025",
+          "Net cash provided by operating activities: $6.1 billion in 2025"
+        ],
+        "operating_plan": "Commitment to innovation and excellence in areas including account processing and digital banking solutions",
+        "summary": "High debt and dependence on contracts suggest structural decline, justifying the discount.",
+        "why": "High debt and dependence on contracts suggest structural decline, justifying the discount.",
+        "evidence_quotes": [
+          "We help clients achieve best-in-class results through a commitment to innovation and excellence",
+          "Our long-term focus is to meet our financial commitments, deliver compelling, innovative solutions"
+        ],
+        "evidence_for": [
+          "Dependence on multi-year contracts with high renewal rates",
+          "High debt level: $3.23 billion in 2025"
+        ],
+        "evidence_against": [],
+        "denial_reason": ""
+      },
+      "catalysts": {
+        "earnings_date": "2026-11-10",
+        "earnings_in_window": true,
+        "non_earnings": [
+          "Fiserv's third quarter 2026 earnings release \u2014 Fiserv's third quarter 2026 earnings release will provide updated financial information, which could impact revenue or EPS expectations. (2026-10-28)"
+        ],
+        "tradeable": true,
+        "reason": "Fiserv's annual meeting of shareholders, first quarter 2026 earnings release, second quarter 2026 earnings release, third quarter 2026 earnings release, and fourth quarter 2026 earnings release are all dated events that could impact revenue or EPS expectations."
+      },
+      "timing": {
+        "comment": "omitted: technical analysis is not part of this research process"
+      },
+      "prm": {
+        "stop_pct": NaN,
+        "target_pct": 0.25595239543358694,
+        "r_score": NaN,
+        "atrp": NaN,
+        "beta": 0.7069391417052636,
+        "size_fraction": 1.0,
+        "blocked": false,
+        "block_reason": ""
+      },
+      "earnings": {
+        "ticker": "FISV",
+        "date": "2026-11-10",
+        "estimated": true,
+        "last_report": "2026-08-07",
+        "cadence_days": 95,
+        "days_to_earnings": 84,
+        "basis": "no future earnings date published; last reported 2026-08-07, so the next report is estimated 2026-11-10 (95-day cadence measured over 4 prior gaps)"
+      },
+      "template_markdown": "# PTM Trade Idea Template\n\n## Quantitative Analysis\n\n### Ticker and Name\n\n* Ticker: FISV\n* Name: Fiserv\n\n### Sector and Industry\n\n* Sector: Financials\n* Industry: Transaction & Payment Processing Services\n\n## Qualitative Analysis\n\n### Qualitative Reasoning\n\n* Supports Outlier: True\n* Red Flags:\n  * Dependence on multi-year contracts with high renewal rates\n  * High debt level: $3.23 billion in 2025\n* Key Performance Indicators (KPIs):\n  * Total revenue: $21.2 billion in 2025\n  * Operating income: $5.8 billion in 2025\n  * Net cash provided by operating activities: $6.1 billion in 2025\n* Operating Plan: Commitment to innovation and excellence in areas including account processing and digital banking solutions\n* Summary: High debt and dependence on contracts suggest structural decline, justifying the discount.\n* Why: High debt and dependence on contracts suggest structural decline, justifying the discount.\n* Evidence Quotes:\n  * We help clients achieve best-in-class results through a commitment to innovation and excellence\n  * Our long-term focus is to meet our financial commitments, deliver compelling, innovative solutions\n* Evidence For:\n  * Dependence on multi-year contracts with high renewal rates\n  * High debt level: $3.23 billion in 2025\n* Evidence Against: []\n* Denial Reason: \n\n## Catalysts\n\n* No future earnings date was published. The last reported earnings date was 2026-08-07, so the next report is estimated 2026-11-10 (95-day cadence measured over 4 prior gaps).\n\n## Optional ATR Risk Footnote\n\n* ATR Risk: Not specified\n",
+      "extra": {
+        "earnings_estimate": "no future earnings date published; last reported 2026-08-07, so the next report is estimated 2026-11-10 (95-day cadence measured over 4 prior gaps)",
+        "gates": []
+      }
+    }
+  ],
+  "gross_exposure": 1.0,
+  "net_exposure": 0.0,
+  "portfolio_beta": 0.2144811674519342,
+  "limit_breaches": [
+    "beta rebalance: swapped long MTRN (beta 2.01) -> GSHD (beta -0.33) to reduce portfolio beta",
+    "beta rebalance: swapped long NPO (beta 1.73) -> CME (beta -0.32) to reduce portfolio beta"
+  ],
+  "narrative": "6 longs / 6 shorts; bias NET_LONG"
+}

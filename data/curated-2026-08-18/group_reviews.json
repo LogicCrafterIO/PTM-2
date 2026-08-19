@@ -1,0 +1,3064 @@
+[
+  {
+    "group_kind": "sector",
+    "group_label": "Communication-Services",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "DV",
+      "TKO",
+      "META",
+      "TMUS",
+      "VZ",
+      "UNIT"
+    ],
+    "llm_used": true,
+    "summary": "6 names (3L/3S); qualitative 5 support / 1 deny; 1 gated; 6 on an estimated earnings date",
+    "narrative": "The group consists of four longs and one short, all within the Communication-Services sector. The longs are betting on acceleration in growth, with three of them (DV, META, TKO) sharing a similar thesis of strong acceleration in core businesses. TMUS is a short that contradicts this thesis, citing a decline in postpaid net account additions. VZ is a short that supports the discount due to structural decline. UNIT is a short that supports the discount due to decline in financial performance.",
+    "views": [
+      {
+        "ticker": "DV",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Duplicate of META's acceleration thesis"
+      },
+      {
+        "ticker": "TKO",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Duplicate of DV's acceleration thesis"
+      },
+      {
+        "ticker": "META",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Duplicate of DV's acceleration thesis"
+      },
+      {
+        "ticker": "TMUS",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "Contradicts the acceleration thesis"
+      },
+      {
+        "ticker": "VZ",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "Supports the discount due to structural decline"
+      },
+      {
+        "ticker": "UNIT",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "Supports the discount due to decline in financial performance"
+      }
+    ],
+    "ranked_tickers": [
+      "DV",
+      "META",
+      "TKO",
+      "VZ",
+      "UNIT",
+      "TMUS"
+    ],
+    "contradictions": [
+      "DV and TMUS",
+      "TKO and TMUS",
+      "VZ and TMUS",
+      "UNIT and TMUS"
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "sector",
+    "group_label": "Consumer-Discretionary",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "AAP",
+      "ETSY",
+      "RSI",
+      "BROS",
+      "SHAK",
+      "BURL",
+      "ROST",
+      "DASH",
+      "HLT",
+      "ARMK",
+      "GRMN",
+      "BKNG",
+      "F",
+      "BBWI",
+      "WEN",
+      "HOG",
+      "LKQ",
+      "TOL",
+      "CRI",
+      "GPI"
+    ],
+    "llm_used": true,
+    "summary": "20 names (11L/9S); qualitative 13 support / 7 deny; 10 gated; 20 on an estimated earnings date",
+    "narrative": "The group consists of 6 long ideas in the Consumer-Discretionary sector, with a focus on Retail Trade and Apparel, Leather & Allied Products. All names have a strong growth story, with evidence of acceleration in GMS growth rate, comparable store sales, and improved customer acquisition. However, some names have red flags such as contracting manufacturing new orders, declining operating income, and slow growth in the industry. The group is betting on a strong sector, driven by Retail Trade and Apparel, Leather & Allied Products, with a focus on growth and customer engagement.",
+    "views": [
+      {
+        "ticker": "AAP",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong growth evidence, including high same shop sales growth and compelling value proposition, justifies the premium multiple."
+      },
+      {
+        "ticker": "ETSY",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Acceleration in GMS growth rate and a credible plan to drive growth and customer engagement, justifies the premium multiple."
+      },
+      {
+        "ticker": "RSI",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "BROS",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SHAK",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "The evidence does not justify the premium multiple due to contracting manufacturing new orders and declining operating income, outweighing the growth in the number of Shacks."
+      },
+      {
+        "ticker": "BURL",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong comparable store sales, EPS growth, and raised guidance justify the premium multiple, despite some slower growth in the industry."
+      },
+      {
+        "ticker": "ROST",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Acceleration in comparable store sales, improved customer acquisition, and strong sales and earnings results, which justify the premium multiple."
+      },
+      {
+        "ticker": "DASH",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong growth and membership justify the premium multiple, despite some red flags such as declining net income and low margin."
+      },
+      {
+        "ticker": "HLT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ARMK",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "GRMN",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "BKNG",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "F",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "BBWI",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WEN",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HOG",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "LKQ",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "TOL",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CRI",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "GPI",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      }
+    ],
+    "ranked_tickers": [
+      "BURL",
+      "ROST",
+      "AAP",
+      "ETSY",
+      "DASH",
+      "BROS",
+      "RSI",
+      "SHAK",
+      "HLT",
+      "ARMK",
+      "GRMN",
+      "BKNG",
+      "F",
+      "BBWI",
+      "WEN",
+      "HOG",
+      "LKQ",
+      "TOL",
+      "CRI",
+      "GPI"
+    ],
+    "contradictions": [
+      "SHAK vs AAP, ETSY, BURL, ROST, DASH, BROS (contradictory qualitative verdicts)"
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "sector",
+    "group_label": "Consumer-Staples",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "CHEF",
+      "COST",
+      "CASY",
+      "TR",
+      "MO",
+      "PPC",
+      "ACI"
+    ],
+    "llm_used": true,
+    "summary": "7 names (4L/3S); qualitative 5 support / 2 deny; 3 gated; 7 on an estimated earnings date",
+    "narrative": "The group consists of 5 long and 2 short ideas, all of which are qualitative outliers. CHEF, COST, and CASY are long on the sector's growth and expansion, while TR is long on growth opportunities but denies the outlier due to red flags. MO and PPC are short on declining volumes and regulatory issues, but ACI denies the outlier due to worsening operating plan and red flags.",
+    "views": [
+      {
+        "ticker": "CHEF",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong growth and market share gains justify the premium multiple."
+      },
+      {
+        "ticker": "COST",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong evidence of growth and expansion justifies the premium multiple."
+      },
+      {
+        "ticker": "CASY",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong acceleration in sales and record fiscal year justify the premium multiple."
+      },
+      {
+        "ticker": "TR",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "denies",
+        "comment": "The evidence shows some growth opportunities, but also several red flags, which outweigh the potential for growth."
+      },
+      {
+        "ticker": "MO",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "Declining volumes and regulatory issues justify the discount."
+      },
+      {
+        "ticker": "PPC",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "The evidence shows a contraction in the industry and high ownership by JBS S.A., but also strong sales from fresh products in the US and Europe."
+      },
+      {
+        "ticker": "ACI",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "The evidence shows the discount is deserved due to worsening operating plan, red flags, declining volumes, and shrinking margins."
+      }
+    ],
+    "ranked_tickers": [
+      "CASY",
+      "COST",
+      "CHEF",
+      "TR",
+      "MO",
+      "ACI",
+      "PPC"
+    ],
+    "contradictions": [
+      "CHEF and TR",
+      "COST and PPC",
+      "CASY and ACI"
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "sector",
+    "group_label": "Energy",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "KGS",
+      "WMB",
+      "LEU",
+      "COP",
+      "MTDR",
+      "SM"
+    ],
+    "llm_used": true,
+    "summary": "6 names (3L/3S); qualitative 4 support / 2 deny; 2 gated; 6 on an estimated earnings date",
+    "narrative": "The group consists of long positions in companies with stable above-sector growth, strong infrastructure, and reliable services, as well as a short position in a company with a structural decline in the industry. The qualitative verdicts support the long positions, while the short position is justified by the company's lack of a credible plan to reverse its decline.",
+    "views": [
+      {
+        "ticker": "KGS",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Adds to the group's thesis on stable above-sector growth and strong infrastructure."
+      },
+      {
+        "ticker": "WMB",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Duplicates the group's thesis on stable above-sector growth and strong infrastructure."
+      },
+      {
+        "ticker": "LEU",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Adds to the group's thesis on strong backlog and high demand momentum."
+      },
+      {
+        "ticker": "COP",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "Contradicts the group's thesis on structural risks and uncertainties in the industry."
+      },
+      {
+        "ticker": "MTDR",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "Duplicates the group's thesis on growth and successful execution of strategic catalysts."
+      },
+      {
+        "ticker": "SM",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "Contradicts the group's thesis on structural decline in the industry with no credible plan to reverse it."
+      }
+    ],
+    "ranked_tickers": [
+      "KGS",
+      "WMB",
+      "LEU",
+      "MTDR",
+      "SM",
+      "COP"
+    ],
+    "contradictions": [
+      "KGS vs COP",
+      "WMB vs COP",
+      "LEU vs SM",
+      "MTDR vs SM",
+      "COP vs SM"
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "sector",
+    "group_label": "Financials",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "TOST",
+      "SEZL",
+      "DAVE",
+      "WT",
+      "FCFS",
+      "AAMI",
+      "CNS",
+      "VCTR",
+      "HASI",
+      "TFIN",
+      "HOOD",
+      "MSCI",
+      "SPGI",
+      "MA",
+      "MCO",
+      "CPAY",
+      "BX",
+      "GSHD",
+      "CME",
+      "FISV",
+      "SYF",
+      "WU",
+      "EG",
+      "ESNT",
+      "RNR",
+      "NMIH",
+      "MTG",
+      "VRTS",
+      "EEFT",
+      "OFG",
+      "WAL",
+      "SNEX",
+      "FULT"
+    ],
+    "llm_used": true,
+    "summary": "33 names (19L/14S); qualitative 20 support / 13 deny; 13 gated; 33 on an estimated earnings date",
+    "narrative": "The cases share a common thesis, with most names supporting the premium multiple due to acceleration, growth, and robust operating plans. However, some names have weaker qualitative verdicts, and one name has a contradictory logic with its peers.",
+    "views": [
+      {
+        "ticker": "TOST",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong YoY growth across key metrics and new customer additions justify the premium multiple."
+      },
+      {
+        "ticker": "SEZL",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Acceleration in key metrics and a credible plan to expand product offerings justify the premium multiple."
+      },
+      {
+        "ticker": "DAVE",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong operating evidence, including acceleration, growth, and a credible plan, justifies the premium multiple."
+      },
+      {
+        "ticker": "WT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong AUM growth, expanded operating margin, and net inflows justify the premium multiple."
+      },
+      {
+        "ticker": "FCFS",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong revenue growth and robust pawn demand justify the premium multiple."
+      },
+      {
+        "ticker": "AAMI",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong evidence of growth and cost savings justifies the premium multiple."
+      },
+      {
+        "ticker": "CNS",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "The evidence shows a credible plan for growth, robust risk management, and pricing power, which justifies the premium."
+      },
+      {
+        "ticker": "VCTR",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "Strong financial results, high outperformance, and a next-generation business model justify the premium multiple."
+      },
+      {
+        "ticker": "HASI",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "Strong growth and asset base justify the premium, despite high fixed-rate debt and dependence on securitization."
+      },
+      {
+        "ticker": "TFIN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HOOD",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MSCI",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SPGI",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MA",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MCO",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CPAY",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "BX",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "GSHD",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CME",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "FISV",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SYF",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WU",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "EG",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ESNT",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "RNR",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "NMIH",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MTG",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "VRTS",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "EEFT",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "OFG",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WAL",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SNEX",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "FULT",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      }
+    ],
+    "ranked_tickers": [
+      "TOST",
+      "SEZL",
+      "DAVE",
+      "WT",
+      "FCFS",
+      "AAMI",
+      "CNS",
+      "VCTR",
+      "HASI",
+      "TFIN",
+      "HOOD",
+      "MSCI",
+      "SPGI",
+      "MA",
+      "MCO",
+      "CPAY",
+      "BX",
+      "GSHD",
+      "CME",
+      "FISV",
+      "SYF",
+      "WU",
+      "EG",
+      "ESNT",
+      "RNR",
+      "NMIH",
+      "MTG",
+      "VRTS",
+      "EEFT",
+      "OFG",
+      "WAL",
+      "SNEX",
+      "FULT"
+    ],
+    "contradictions": [
+      "WT's qualitative verdict looks weak next to its peers due to higher expenses and increased distribution fees."
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "sector",
+    "group_label": "Health-Care",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "RGEN",
+      "MMSI",
+      "ABBV",
+      "PEN",
+      "PRVA",
+      "ISRG",
+      "WST",
+      "UFPT",
+      "THC",
+      "ELV",
+      "UTHR",
+      "AMPH",
+      "OGN"
+    ],
+    "llm_used": true,
+    "summary": "13 names (8L/5S); qualitative 10 support / 3 deny; 3 gated; 13 on an estimated earnings date",
+    "narrative": "The cases in this group share a common theme of strong operating evidence supporting premium multiples, despite sector contraction. RGEN, MMSI, ABBV, PEN, PRVA, ISRG, WST, and UFPT all have strong qualitative verdicts supporting their premium multiples. However, the ISM tilt is consistently short, indicating sector contraction. The cases also share a common operating plan, with a focus on growth through innovation and strategic acquisitions.",
+    "views": [
+      {
+        "ticker": "RGEN",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supporting premium multiple"
+      },
+      {
+        "ticker": "MMSI",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supporting premium multiple"
+      },
+      {
+        "ticker": "ABBV",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supporting premium multiple"
+      },
+      {
+        "ticker": "PEN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supporting premium multiple"
+      },
+      {
+        "ticker": "PRVA",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supporting premium multiple"
+      },
+      {
+        "ticker": "ISRG",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supporting premium multiple"
+      },
+      {
+        "ticker": "WST",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Growth in Proprietary Products and high margins justify the premium"
+      },
+      {
+        "ticker": "UFPT",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "Strong growth in sales and net sales from key customers, as well as management's positive outlook, justify the premium multiple"
+      },
+      {
+        "ticker": "THC",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ELV",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "UTHR",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "AMPH",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "OGN",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      }
+    ],
+    "ranked_tickers": [
+      "RGEN",
+      "MMSI",
+      "ABBV",
+      "PEN",
+      "PRVA",
+      "ISRG",
+      "WST",
+      "UFPT",
+      "THC",
+      "ELV",
+      "UTHR",
+      "AMPH",
+      "OGN"
+    ],
+    "contradictions": [
+      "RGEN and MMSI have similar qualitative verdicts, but RGEN has a stronger growth rate (eg1: 0.49999999999999983 vs 0.13106796116504843)",
+      "ABBV and PEN have similar qualitative verdicts, but ABBV has a lower peg1 (0.9428625304371171 vs 1.0851410063938123)",
+      "ISRG and WST have similar qualitative verdicts, but ISRG has a stronger growth rate (eg1: 0.291472868217054 vs 0.2719869706840391)",
+      "UFPT has a stronger growth rate (eg1: 0.07531865585168071) compared to the other tickers in the group"
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "sector",
+    "group_label": "Industrials",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "SNDR",
+      "VICR",
+      "NPO",
+      "ESE",
+      "AGX",
+      "KRMN",
+      "WERN",
+      "XPO",
+      "VRT",
+      "PRLB",
+      "CRS",
+      "RBC",
+      "PWR",
+      "HWM",
+      "ATI",
+      "GE",
+      "BWXT",
+      "KBR",
+      "AOS",
+      "BAH",
+      "CNXC",
+      "FCN",
+      "LII",
+      "LDOS",
+      "HII",
+      "PNR",
+      "GBX",
+      "ALG",
+      "MATX"
+    ],
+    "llm_used": true,
+    "summary": "29 names (17L/12S); qualitative 17 support / 12 deny; 14 gated; 29 on an estimated earnings date",
+    "narrative": "The group consists of six long ideas in the Industrials sector, all of which are qualitative outliers with strong growth stories. The operating plans of these companies are focused on delivering consistent revenue growth, margin performance, and long-term shareholder value. The ISM tilt is consistent across the group, with a focus on the Printing & Related Support Activities and Transportation & Warehousing industries. However, there are some red flags and concerns raised by the qualitative verdicts, which need to be carefully considered.",
+    "views": [
+      {
+        "ticker": "SNDR",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong revenue growth, operating ratio improvement, and cost reduction justify the premium multiple."
+      },
+      {
+        "ticker": "VICR",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "The evidence shows growth in backlog and high-performance applications, but is outweighed by red flags on operating expenses and net income."
+      },
+      {
+        "ticker": "NPO",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong acceleration in sales growth and improved operating leverage justify the premium multiple."
+      },
+      {
+        "ticker": "ESE",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "Strong sales growth, record backlog, and high book-to-bill ratio justify the premium multiple."
+      },
+      {
+        "ticker": "AGX",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong backlog, record revenue, and robust project pipeline justify the premium multiple."
+      },
+      {
+        "ticker": "KRMN",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong growth, backlog, and demand justify the premium multiple."
+      },
+      {
+        "ticker": "WERN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong revenue growth, increasing fuel surcharge revenues, and margin improvement from the FirstFleet acquisition justify the premium multiple. However, the decline in operating income and operating margin are concerning."
+      },
+      {
+        "ticker": "XPO",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong revenue and income growth, along with a superior customer experience, justify the premium multiple."
+      },
+      {
+        "ticker": "VRT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PRLB",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CRS",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "RBC",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PWR",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HWM",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ATI",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "GE",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "BWXT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "KBR",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "AOS",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "BAH",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CNXC",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "FCN",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "LII",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "LDOS",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HII",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PNR",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "GBX",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ALG",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MATX",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      }
+    ],
+    "ranked_tickers": [
+      "XPO",
+      "SNDR",
+      "WERN",
+      "ESE",
+      "NPO",
+      "AGX",
+      "KRMN",
+      "VICR",
+      "VRT",
+      "PRLB",
+      "CRS",
+      "RBC",
+      "PWR",
+      "HWM",
+      "ATI",
+      "GE",
+      "BWXT",
+      "KBR",
+      "AOS",
+      "BAH",
+      "CNXC",
+      "FCN",
+      "LII",
+      "LDOS",
+      "HII",
+      "PNR",
+      "GBX",
+      "ALG",
+      "MATX"
+    ],
+    "contradictions": [
+      "VICR and WERN: VICR's qualitative verdict denies the premium multiple, while WERN's qualitative verdict supports it, despite some red flags."
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "sector",
+    "group_label": "Information-Technology",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "GLW",
+      "CIEN",
+      "STX",
+      "PLTR",
+      "AMD",
+      "VRSN",
+      "FORM",
+      "HLIT",
+      "PDFS",
+      "CDNS",
+      "ACN",
+      "CTSH",
+      "HPQ",
+      "EPAM",
+      "DXC",
+      "CRUS"
+    ],
+    "llm_used": true,
+    "summary": "16 names (10L/6S); qualitative 11 support / 5 deny; 8 gated; 16 on an estimated earnings date",
+    "narrative": "The cases share a common thesis, with most names supporting the premium multiple due to strong growth, acceleration, and investment in manufacturing capacity, technology, and customer-support capabilities. However, STX's qualitative verdict denies the premium multiple due to red flags such as geopolitical uncertainty and potential penalties. The group's ISM tilt is consistently long, driven by the sector's strong growth and acceleration.",
+    "views": [
+      {
+        "ticker": "GLW",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CIEN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong revenue growth and backlog growth justify the premium multiple."
+      },
+      {
+        "ticker": "STX",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "The evidence does not justify the premium multiple due to red flags such as geopolitical uncertainty and potential penalties."
+      },
+      {
+        "ticker": "PLTR",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "AMD",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "The evidence shows growth, acceleration, and investment in manufacturing capacity, technology, and customer-support capabilities, which justifies the premium multiple."
+      },
+      {
+        "ticker": "VRSN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong growth in registrations and revenues, along with a favorable demand environment, justify the premium multiple."
+      },
+      {
+        "ticker": "FORM",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong revenue growth, margin expansion, and EPS growth justify the premium multiple."
+      },
+      {
+        "ticker": "HLIT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong business momentum, accelerating revenue growth, and capital to further accelerate growth justify the premium."
+      },
+      {
+        "ticker": "PDFS",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong backlog, high gross margins, and record bookings justify the premium multiple."
+      },
+      {
+        "ticker": "CDNS",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ACN",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CTSH",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HPQ",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "EPAM",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "DXC",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CRUS",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      }
+    ],
+    "ranked_tickers": [
+      "CIEN",
+      "AMD",
+      "VRSN",
+      "FORM",
+      "HLIT",
+      "PDFS",
+      "STX",
+      "GLW",
+      "PLTR",
+      "CDNS",
+      "ACN",
+      "CTSH",
+      "HPQ",
+      "EPAM",
+      "DXC",
+      "CRUS"
+    ],
+    "contradictions": [
+      "STX's qualitative verdict denies the premium multiple, contradicting the majority of the group's views."
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "sector",
+    "group_label": "Materials",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "MTRN",
+      "HL",
+      "APD",
+      "VMC",
+      "SMG",
+      "EXP",
+      "SLGN"
+    ],
+    "llm_used": true,
+    "summary": "7 names (4L/3S); qualitative 3 support / 4 deny; 4 gated; 7 on an estimated earnings date",
+    "narrative": "The cases agree on a Materials sector recovery, driven by stable above sector performance in end markets and strong operating performance. However, SMG and EXP are short ideas that deny the sector recovery, citing structural decline and contraction in the sector. SLGN is a short idea that denies the sector recovery, citing some challenges but a strong presence in metal containers and volume growth. APD and VMC are long ideas that support the sector recovery, citing strong EPS growth and clear growth pathway. MTRN and HL are long ideas that support the sector recovery, citing growth in end markets and strong operating performance.",
+    "views": [
+      {
+        "ticker": "MTRN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Duplicate of APD and VMC's strong operating performance."
+      },
+      {
+        "ticker": "HL",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "Duplicate of MTRN's growth in end markets."
+      },
+      {
+        "ticker": "APD",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Duplicate of VMC's strong operating performance."
+      },
+      {
+        "ticker": "VMC",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "Duplicate of APD's strong operating performance."
+      },
+      {
+        "ticker": "SMG",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "Contradicts the group's collective bet on a Materials sector recovery."
+      },
+      {
+        "ticker": "EXP",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "Contradicts the group's collective bet on a Materials sector recovery."
+      },
+      {
+        "ticker": "SLGN",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "Contradicts the group's collective bet on a Materials sector recovery."
+      }
+    ],
+    "ranked_tickers": [
+      "APD",
+      "VMC",
+      "MTRN",
+      "HL",
+      "SMG",
+      "EXP",
+      "SLGN"
+    ],
+    "contradictions": [
+      "SMG and EXP",
+      "SMG and SLGN",
+      "EXP and SLGN"
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "sector",
+    "group_label": "Real-Estate",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "IRT",
+      "LXP",
+      "EQIX",
+      "DLR",
+      "IRM",
+      "VTR",
+      "WELL",
+      "VICI",
+      "SAFE",
+      "PMT",
+      "MRP"
+    ],
+    "llm_used": true,
+    "summary": "11 names (7L/4S); qualitative 8 support / 3 deny; 3 gated; 11 on an estimated earnings date",
+    "narrative": "The group consists of long and short positions that share a common theme of growth and value creation in the Real Estate sector. However, the cases are not uniform, with some names supporting the premium multiple due to strong operating plans and growth prospects, while others deny the discount due to a lack of deterioration in key metrics. The ISM tilt is inconsistent across the group, with some names tilting short due to sector contraction and others tilting neutral.",
+    "views": [
+      {
+        "ticker": "IRT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong operating performance and growth in NOI justify the premium multiple."
+      },
+      {
+        "ticker": "LXP",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Accelerating growth and pricing power justify the premium multiple."
+      },
+      {
+        "ticker": "EQIX",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Growth, acceleration, and strong value creation justify the premium multiple."
+      },
+      {
+        "ticker": "DLR",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "Strong growth opportunities and aggressive leasing strategy justify the premium multiple."
+      },
+      {
+        "ticker": "IRM",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong operating plan and growth prospects justify the premium multiple, despite some red flags."
+      },
+      {
+        "ticker": "VTR",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Growth in senior housing and attractive financial profile justify the premium multiple, despite some red flags."
+      },
+      {
+        "ticker": "WELL",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Growth in key NOI metrics and disciplined capital allocation approach justify the premium multiple, despite sector contraction and forward-looking statement risks."
+      },
+      {
+        "ticker": "VICI",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "The evidence does not show a discount is deserved due to a lack of deterioration in key metrics."
+      },
+      {
+        "ticker": "SAFE",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "The evidence shows growth, acceleration, and a strong pipeline, which outweighs the potential for poor operating performance and risk of tenant default."
+      },
+      {
+        "ticker": "PMT",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "The evidence shows deceleration and decline in key metrics, which justifies the short position."
+      },
+      {
+        "ticker": "MRP",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      }
+    ],
+    "ranked_tickers": [
+      "IRT",
+      "LXP",
+      "EQIX",
+      "DLR",
+      "IRM",
+      "VTR",
+      "WELL",
+      "VICI",
+      "SAFE",
+      "PMT",
+      "MRP"
+    ],
+    "contradictions": [
+      "IRT and VICI: IRT supports the premium multiple due to strong operating performance, while VICI denies the discount due to a lack of deterioration in key metrics.",
+      "LXP and DLR: LXP accelerates growth and justifies the premium multiple, while DLR has strong growth opportunities but a different operating plan.",
+      "IRM and VTR: IRM supports the premium multiple due to strong operating plan and growth prospects, while VTR has growth in senior housing but a different financial profile.",
+      "WELL and SAFE: WELL supports the premium multiple due to growth in key NOI metrics, while SAFE denies the discount due to a strong pipeline and growth prospects.",
+      "PMT and the rest: PMT is the only short position in the group, while the others are long positions that support the premium multiple."
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "sector",
+    "group_label": "Utilities",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "CWEN",
+      "WEC",
+      "CNP",
+      "ATO",
+      "SO",
+      "CWT"
+    ],
+    "llm_used": true,
+    "summary": "6 names (3L/3S); qualitative 5 support / 1 deny; 1 gated; 6 on an estimated earnings date",
+    "narrative": "The group consists of two long and two short positions, with the longs supporting the premium multiple and the shorts denying it. The longs are concentrated on stable growth and strong operating plans, while the shorts are focused on structural decline and worsening regulatory trends.",
+    "views": [
+      {
+        "ticker": "CWEN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supports the premium multiple."
+      },
+      {
+        "ticker": "WEC",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "Mixed qualitative verdict denies the premium multiple."
+      },
+      {
+        "ticker": "CNP",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supports the premium multiple."
+      },
+      {
+        "ticker": "ATO",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supports the discount."
+      },
+      {
+        "ticker": "SO",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supports the discount."
+      },
+      {
+        "ticker": "CWT",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supports the discount."
+      }
+    ],
+    "ranked_tickers": [
+      "CNP",
+      "CWEN",
+      "WEC",
+      "ATO",
+      "SO",
+      "CWT"
+    ],
+    "contradictions": [
+      "CWEN and WEC: Both have strong qualitative verdicts, but one supports the premium multiple while the other denies it.",
+      "CNP and ATO: Both have strong qualitative verdicts, but one supports the premium multiple while the other supports the discount.",
+      "SO and CWT: Both have strong qualitative verdicts, but one supports the discount while the other supports it."
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "earnings_window",
+    "group_label": "00-30d",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "AAP",
+      "AGX",
+      "BURL",
+      "ROST",
+      "CIEN",
+      "COST",
+      "ACN",
+      "HPQ",
+      "BBWI",
+      "TOL"
+    ],
+    "llm_used": true,
+    "summary": "10 names (6L/4S); qualitative 8 support / 2 deny; 9 gated; 10 on an estimated earnings date",
+    "narrative": "The cases are concentrated on a few themes: strong ISM composite scores, growth in retail trade, and deceleration in manufacturing. The longs are mostly in the consumer discretionary and industrials sectors, while the short is in the IT sector. The qualitative verdicts support the quantitative outliers, but some red flags exist. The operating plans are generally sound, but some risks are noted.",
+    "views": [
+      {
+        "ticker": "AAP",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supports the premium multiple."
+      },
+      {
+        "ticker": "AGX",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supports the premium multiple, despite some red flags."
+      },
+      {
+        "ticker": "BURL",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supports the premium multiple, despite some slower growth in the industry."
+      },
+      {
+        "ticker": "ROST",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CIEN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supports the premium multiple, despite some red flags."
+      },
+      {
+        "ticker": "COST",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supports the premium multiple."
+      },
+      {
+        "ticker": "ACN",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "Structural decline and no credible plan to mitigate the impacts of federal government business (AFS) changes make the discount deserved."
+      },
+      {
+        "ticker": "HPQ",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "Structural decline due to rising commodity costs and below previous outlook for GAAP diluted net EPS make the discount deserved."
+      },
+      {
+        "ticker": "BBWI",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "TOL",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      }
+    ],
+    "ranked_tickers": [
+      "CIEN",
+      "COST",
+      "AAP",
+      "AGX",
+      "BURL",
+      "ROST",
+      "ACN",
+      "HPQ",
+      "BBWI",
+      "TOL"
+    ],
+    "contradictions": [
+      "CIEN and ACN: Both are long on ISM composite score, but ACN is short on IT sector, which contradicts CIEN's long thesis.",
+      "COST and ACN: COST is long on retail trade growth, while ACN is short on Other Services contraction, which contradicts COST's long thesis."
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "earnings_window",
+    "group_label": "31-60d",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "CASY",
+      "GE",
+      "ELV",
+      "CNXC",
+      "GBX"
+    ],
+    "llm_used": true,
+    "summary": "5 names (2L/3S); qualitative 2 support / 3 deny; 3 gated; 5 on an estimated earnings date",
+    "narrative": "The group consists of two longs and two shorts, with the longs focused on companies with strong acceleration in sales and revenue growth, while the shorts are focused on companies with declining volumes and shrinking margins. The longs are supported by strong qualitative verdicts, while the shorts are supported by evidence of structural decline. The group's ISM tilt is being used consistently, with a focus on manufacturing growth and service contraction.",
+    "views": [
+      {
+        "ticker": "CASY",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong acceleration in sales and record fiscal year justify the premium multiple."
+      },
+      {
+        "ticker": "GE",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong revenue growth, margin guidance, and backlog in aerospace and defense justify the premium."
+      },
+      {
+        "ticker": "ELV",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "The evidence shows structural decline in the company's Medicaid membership and elevated cost trend, which justifies the discount."
+      },
+      {
+        "ticker": "CNXC",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "The evidence shows declining volumes (1.9% revenue growth) and shrinking margins (3.9% operating income), which suggests the discount is deserved."
+      },
+      {
+        "ticker": "GBX",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "The evidence shows a strong business with high revenue and backlog, which contradicts the expected decline."
+      }
+    ],
+    "ranked_tickers": [
+      "CASY",
+      "GE",
+      "GBX",
+      "ELV",
+      "CNXC"
+    ],
+    "contradictions": [
+      "GBX and ELV: GBX has a strong business with high revenue and backlog, while ELV has structural decline in Medicaid membership and elevated cost trend."
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "earnings_window",
+    "group_label": "61-90d",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "ETSY",
+      "SNDR",
+      "VICR",
+      "NPO",
+      "ESE",
+      "KGS",
+      "RSI",
+      "BROS",
+      "SHAK",
+      "MTRN",
+      "TOST",
+      "SEZL",
+      "DAVE",
+      "WT",
+      "FCFS",
+      "AAMI",
+      "CNS",
+      "VCTR",
+      "HASI",
+      "CWEN",
+      "IRT",
+      "LXP",
+      "CHEF",
+      "RGEN",
+      "MMSI",
+      "GLW",
+      "STX",
+      "PLTR",
+      "AMD",
+      "VRSN",
+      "FORM",
+      "PDFS",
+      "CDNS",
+      "WMB",
+      "WERN",
+      "XPO",
+      "VRT",
+      "PRLB",
+      "CRS",
+      "RBC",
+      "DV",
+      "TKO",
+      "META",
+      "LEU",
+      "PWR",
+      "HWM",
+      "HL",
+      "DASH",
+      "ATI",
+      "APD",
+      "HLT",
+      "ARMK",
+      "GRMN",
+      "BWXT",
+      "VMC",
+      "TFIN",
+      "HOOD",
+      "MSCI",
+      "SPGI",
+      "MA",
+      "MCO",
+      "CPAY",
+      "BX",
+      "GSHD",
+      "CME",
+      "WEC",
+      "CNP",
+      "EQIX",
+      "DLR",
+      "TR",
+      "ABBV",
+      "IRM",
+      "VTR",
+      "WELL",
+      "PEN",
+      "PRVA",
+      "ISRG",
+      "WST",
+      "UFPT",
+      "THC",
+      "UTHR",
+      "MO",
+      "VICI",
+      "ATO",
+      "SO",
+      "FISV",
+      "SYF",
+      "BKNG",
+      "F",
+      "COP",
+      "CTSH",
+      "TMUS",
+      "VZ",
+      "SMG",
+      "SAFE",
+      "AMPH",
+      "OGN",
+      "PPC",
+      "PMT",
+      "MRP",
+      "CWT",
+      "WU",
+      "EG",
+      "ESNT",
+      "RNR",
+      "NMIH",
+      "MTG",
+      "VRTS",
+      "EEFT",
+      "OFG",
+      "WAL",
+      "SNEX",
+      "FULT",
+      "WEN",
+      "HOG",
+      "EXP",
+      "LKQ",
+      "KBR",
+      "AOS",
+      "BAH",
+      "FCN",
+      "LII",
+      "LDOS",
+      "HII",
+      "SLGN",
+      "ACI",
+      "MTDR",
+      "SM",
+      "EPAM",
+      "DXC",
+      "UNIT",
+      "PNR",
+      "CRI",
+      "ALG",
+      "MATX",
+      "GPI",
+      "CRUS"
+    ],
+    "llm_used": true,
+    "summary": "137 names (79L/58S); qualitative 89 support / 48 deny; 48 gated; 137 on an estimated earnings date",
+    "narrative": "The group consists of names from the Industrials and Consumer Discretionary sectors, all of which have been screened for P/E versus sector and qualitatively evaluated for their operating plans. The common theme among these names is their strong growth evidence, supported by their operating plans and qualitative verdicts. However, there are some contradictions and duplicates among the names, which will be highlighted below.",
+    "views": [
+      {
+        "ticker": "ETSY",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong qualitative verdict supports the premium multiple."
+      },
+      {
+        "ticker": "SNDR",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong revenue growth and operating ratio improvement justify the premium multiple."
+      },
+      {
+        "ticker": "VICR",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "Growth in backlog and high-performance applications, but outweighed by red flags on operating expenses and net income."
+      },
+      {
+        "ticker": "NPO",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong acceleration in sales growth and improved operating leverage justify the premium multiple."
+      },
+      {
+        "ticker": "ESE",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "Strong sales growth, record backlog, and high book-to-bill ratio justify the premium multiple."
+      },
+      {
+        "ticker": "KGS",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong business model, operational excellence, and customer relationships justify the premium multiple."
+      },
+      {
+        "ticker": "RSI",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Growth and successful strategy, but lacks pricing power and backlog evidence."
+      },
+      {
+        "ticker": "BROS",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong growth evidence, including high same shop sales growth and compelling value proposition, justifies the premium multiple."
+      },
+      {
+        "ticker": "SHAK",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "Strong growth evidence, including high same shop sales growth and compelling value proposition, justifies the premium multiple."
+      },
+      {
+        "ticker": "MTRN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "TOST",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SEZL",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "DAVE",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "FCFS",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "AAMI",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CNS",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "VCTR",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HASI",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CWEN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "IRT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "LXP",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CHEF",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "RGEN",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MMSI",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "GLW",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "STX",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PLTR",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "AMD",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "VRSN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "FORM",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PDFS",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CDNS",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WMB",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WERN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "XPO",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "VRT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PRLB",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CRS",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "RBC",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "DV",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "TKO",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "META",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "LEU",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PWR",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HWM",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HL",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "DASH",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ATI",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "APD",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HLT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ARMK",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "GRMN",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "BWXT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "VMC",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "TFIN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HOOD",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MSCI",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SPGI",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MA",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MCO",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CPAY",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "BX",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "GSHD",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CME",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WEC",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CNP",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "EQIX",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "DLR",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "TR",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ABBV",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "IRM",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "VTR",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WELL",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PEN",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PRVA",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ISRG",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WST",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "UFPT",
+        "side": "long",
+        "eg_case": "long_case_4_6_opportunity_cost",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "THC",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "UTHR",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MO",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "VICI",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ATO",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SO",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "FISV",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SYF",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "BKNG",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "F",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "COP",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CTSH",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "TMUS",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "VZ",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SMG",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SAFE",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "AMPH",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "OGN",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PPC",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PMT",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MRP",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CWT",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WU",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "EG",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ESNT",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "RNR",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "NMIH",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MTG",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "VRTS",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "EEFT",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "OFG",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WAL",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SNEX",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "FULT",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "WEN",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HOG",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "EXP",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "LKQ",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "KBR",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "AOS",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "BAH",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "FCN",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "LII",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "LDOS",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "HII",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SLGN",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ACI",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MTDR",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "SM",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "EPAM",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "DXC",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "UNIT",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "PNR",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CRI",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "ALG",
+        "side": "short",
+        "eg_case": "short_case_2_decel_decline",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "MATX",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "GPI",
+        "side": "short",
+        "eg_case": "short_case_1_worsening",
+        "qual_verdict": "supports",
+        "comment": "not covered by the group LLM pass"
+      },
+      {
+        "ticker": "CRUS",
+        "side": "short",
+        "eg_case": "short_below_sector",
+        "qual_verdict": "denies",
+        "comment": "not covered by the group LLM pass"
+      }
+    ],
+    "ranked_tickers": [
+      "KGS",
+      "ETSY",
+      "NPO",
+      "ESE",
+      "SNDR",
+      "BROS",
+      "SHAK",
+      "RSI",
+      "VICR",
+      "MTRN",
+      "TOST",
+      "SEZL",
+      "DAVE",
+      "WT",
+      "FCFS",
+      "AAMI",
+      "CNS",
+      "VCTR",
+      "HASI",
+      "CWEN",
+      "IRT",
+      "LXP",
+      "CHEF",
+      "RGEN",
+      "MMSI",
+      "GLW",
+      "STX",
+      "PLTR",
+      "AMD",
+      "VRSN",
+      "FORM",
+      "PDFS",
+      "CDNS",
+      "WMB",
+      "WERN",
+      "XPO",
+      "VRT",
+      "PRLB",
+      "CRS",
+      "RBC",
+      "DV",
+      "TKO",
+      "META",
+      "LEU",
+      "PWR",
+      "HWM",
+      "HL",
+      "DASH",
+      "ATI",
+      "APD",
+      "HLT",
+      "ARMK",
+      "GRMN",
+      "BWXT",
+      "VMC",
+      "TFIN",
+      "HOOD",
+      "MSCI",
+      "SPGI",
+      "MA",
+      "MCO",
+      "CPAY",
+      "BX",
+      "GSHD",
+      "CME",
+      "WEC",
+      "CNP",
+      "EQIX",
+      "DLR",
+      "TR",
+      "ABBV",
+      "IRM",
+      "VTR",
+      "WELL",
+      "PEN",
+      "PRVA",
+      "ISRG",
+      "WST",
+      "UFPT",
+      "THC",
+      "UTHR",
+      "MO",
+      "VICI",
+      "ATO",
+      "SO",
+      "FISV",
+      "SYF",
+      "BKNG",
+      "F",
+      "COP",
+      "CTSH",
+      "TMUS",
+      "VZ",
+      "SMG",
+      "SAFE",
+      "AMPH",
+      "OGN",
+      "PPC",
+      "PMT",
+      "MRP",
+      "CWT",
+      "WU",
+      "EG",
+      "ESNT",
+      "RNR",
+      "NMIH",
+      "MTG",
+      "VRTS",
+      "EEFT",
+      "OFG",
+      "WAL",
+      "SNEX",
+      "FULT",
+      "WEN",
+      "HOG",
+      "EXP",
+      "LKQ",
+      "KBR",
+      "AOS",
+      "BAH",
+      "FCN",
+      "LII",
+      "LDOS",
+      "HII",
+      "SLGN",
+      "ACI",
+      "MTDR",
+      "SM",
+      "EPAM",
+      "DXC",
+      "UNIT",
+      "PNR",
+      "CRI",
+      "ALG",
+      "MATX",
+      "GPI",
+      "CRUS"
+    ],
+    "contradictions": [
+      "VICR and NPO: VICR's qualitative verdict is 'denies' due to red flags on operating expenses and net income, while NPO's qualitative verdict is 'supports' due to strong acceleration in sales growth and improved operating leverage.",
+      "VICR and ESE: VICR's qualitative verdict is 'denies' due to red flags on operating expenses and net income, while ESE's qualitative verdict is 'supports' due to strong sales growth, record backlog, and high book-to-bill ratio."
+    ],
+    "error": ""
+  },
+  {
+    "group_kind": "earnings_window",
+    "group_label": "beyond-90d",
+    "as_of": "2026-08-18",
+    "tickers": [
+      "KRMN",
+      "HLIT"
+    ],
+    "llm_used": true,
+    "summary": "2 names (2L/0S); qualitative 2 support / 0 deny; 2 gated; 2 on an estimated earnings date",
+    "narrative": "The group consists of two long ideas, KRMN and HLIT, both of which are qualitative outliers in their respective sectors. Both names have strong growth, backlog, and demand justifying their premium multiples. The ISM tilt is consistent across the group, with a focus on the aerospace and defense industry's acceleration and the communications equipment industry's stable growth above its sector average.",
+    "views": [
+      {
+        "ticker": "KRMN",
+        "side": "long",
+        "eg_case": "long_case_1_acceleration",
+        "qual_verdict": "supports",
+        "comment": "Strong growth, backlog, and demand justify the premium multiple."
+      },
+      {
+        "ticker": "HLIT",
+        "side": "long",
+        "eg_case": "long_case_2_stable_above",
+        "qual_verdict": "supports",
+        "comment": "Strong business momentum, accelerating revenue growth, and capital to further accelerate growth justify the premium."
+      }
+    ],
+    "ranked_tickers": [
+      "KRMN",
+      "HLIT"
+    ],
+    "contradictions": [],
+    "error": ""
+  }
+]

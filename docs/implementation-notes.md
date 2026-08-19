@@ -1,5 +1,14 @@
 # Implementation notes — PTM research fixes
 
+> **Superseded in places.** This file records the original v1 substitutions. Several
+> have since changed: fundamentals now come from EDGAR rather than Yahoo, forward EPS
+> from analyst consensus, technical analysis has been deleted outright, and the
+> catalyst window is 30-90 calendar days. Where the two disagree,
+> [FEATURE-LIMITATIONS.md](FEATURE-LIMITATIONS.md) and [EG-CASES.md](EG-CASES.md) are
+> current.
+
+
+
 What shipped vs what the plan asked for, plus how to run the suite.
 
 ## How to run
@@ -10,7 +19,7 @@ One command for the full weekly pipeline (ingest, ideas, book, audit):
 .\.venv\Scripts\python.exe -m ptm weekly
 ```
 
-See [README.md](../README.md) for flags (`--skip-llm`, `--pmi-html`, `--force`, …). Weekly output includes a `funnel` string (`universe → fundamentals → candidates L/S → researched L/S → book L/S`). A short Yahoo fundamentals cache is backfilled on the next run; it is not reused as an A-only PE screen. Default weekly researches **every PE-outlier candidate** and writes `ideas/<today>/RANKING.md`. SMA/MACD timing is omitted from gates and templates.
+See [README.md](../README.md) for flags (`--skip-llm`, `--pmi-html`, `--force`, …). Weekly output includes a `funnel` string (`universe → fundamentals → candidates L/S → researched L/S → book L/S`). Fundamentals come from EDGAR and are backfilled on the next run; a short cache is not reused as an A-only PE screen. Default weekly researches **every PE-outlier candidate** and writes `ideas/<today>/RANKING.md`. Technical analysis is gone entirely — the SMA/MACD machinery was deleted, not merely bypassed (see [FEATURE-LIMITATIONS.md](FEATURE-LIMITATIONS.md) §3).
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest
@@ -51,14 +60,14 @@ Latest *released* print is last calendar month (mid-August tries `/july/`, not `
 
 | Item | Why not now |
 |---|---|
-| IR-site crawler | Yahoo `longBusinessSummary` fills empty Item 1; real 10-K/MD&A/EX-99.1 is the v1 pack |
+| IR-site crawler | 10-K Item 1 / MD&A / EX-99.1 only. The Yahoo `longBusinessSummary` fallback was removed with the rest of the vendor fundamentals, so an empty Item 1 now stays empty (~7% of names) rather than being backfilled from undated vendor prose |
 | Full DoR spreadsheet stops | Independent 63-day range is the retail stand-in |
 | Streamlit dashboard | CLI + `AUDIT.md` is the operator surface |
 | Reactive risk / live positions | Idea engine only |
 
 ## What did get fixed in code
 
-- EDGAR Item 1 prefers 10-K, skips TOC hits, Yahoo summary fallback
+- EDGAR Item 1 prefers 10-K, skips TOC hits; no Yahoo summary fallback
 - MD&A skips TOC lines; empty sections are not cached
 - 8-K cover pages are rejected; EX-99.1 names are scanned across 8-Ks
 - `skip_llm` / no API key → `supports_outlier=None` (deferred), markdown still written, book excludes those ideas
@@ -68,5 +77,5 @@ Latest *released* print is last calendar month (mid-August tries `/july/`, not `
 - Markdown files never dump JSON
 - `generate_ideas` always writes `book.json` from the same in-memory list
 - Book excludes zero size and hard `extra.gates`
-- SMA/MACD timing lights are omitted from gates, sizing, templates, and the audit; ATR/R-score are risk footnotes only
+- SMA/MACD timing lights are **removed from the codebase**, not just omitted; ATR/R-score remain as post-selection risk footnotes that gate nothing
 - Every PE candidate is ranked into `RANKING.md`; qualitative is two-pass extract then EG-case verdict

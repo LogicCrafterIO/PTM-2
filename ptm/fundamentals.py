@@ -28,17 +28,23 @@ and never appears in a filing. See docs/FEATURE-LIMITATIONS.md.
 from __future__ import annotations
 
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
+from threading import Lock
 
 import pandas as pd
 
 from ptm.asof import as_of_date, is_backdated
 from ptm.backdate import close_on, next_report_estimate
 from ptm.config import data_dir, toml_settings
+from ptm.ingest.edgar import SEC_MAX_RPS
+from ptm.ingest.estimates import consensus_eps, log_coverage, warn_if_thin
 from ptm.io import read_df, write_df
 from ptm.log import elapsed_since, eta, log
 
 CHECKPOINT_EVERY = 25
+# Network-bound work; the SEC rate limiter, not the pool, is the real throttle.
+DEFAULT_WORKERS = 8
 
 
 def _cfg() -> dict:
@@ -52,6 +58,41 @@ def _load_prices() -> pd.DataFrame:
     frame = read_df(path)
     frame.columns = [str(c).lower() for c in frame.columns]
     return frame
+
+
+
+def _base_row(ticker, name, sector, industry, price, shares, eps0, facts, upto) -> dict:
+    """Fields that do not depend on where forward EPS came from.
+
+    Trailing P/E lives here: it is EDGAR GAAP over the run-date close and stays
+    exact whichever forward source is used. It must never be recomputed against
+    an adjusted consensus number.
+    """
+    trailing_pe = (price / eps0) if (price and eps0) else None
+    next_report, cadence_note = next_report_estimate(facts.get("report_dates") or [], upto)
+    return {
+        "ticker": ticker,
+        "name": name or ticker,
+        "sector": sector or "",
+        "industry": industry or "",
+        "price": price,
+        "market_cap": (shares * price) if (shares and price) else None,
+        "trailing_eps": eps0,
+        "trailing_pe": trailing_pe,
+        "shares": shares,
+        "earnings_date": next_report,
+        "revenue": facts.get("revenue"),
+        "net_income": facts.get("net_income"),
+        "ebit": facts.get("ebit"),
+        "cash": facts.get("cash"),
+        "debt": facts.get("debt"),
+        "source": "edgar",
+        "eps_basis": facts.get("eps_basis"),
+        "last_period_end": facts.get("last_period_end"),
+        "trailing_pe_exact": trailing_pe is not None,
+        "earnings_date_basis": cadence_note,
+        "as_of": upto.isoformat(),
+    }
 
 
 def row_for(
@@ -84,8 +125,31 @@ def row_for(
             growth = cap if growth > 0 else -cap
             clamped = True
 
-    # Forward EPS, best available source first. Neither is analyst consensus,
-    # which has no free source at all, point-in-time or otherwise.
+    # Forward EPS, best available source first.
+    #
+    # 1. Analyst consensus, when a live run can get it. This is the only source
+    #    that gives eps1 and eps2 as INDEPENDENT estimates, which is what the EG
+    #    taxonomy needs; everything below reuses one growth rate for both years
+    #    and collapses eg2 onto eg1. Growth is taken against the consensus
+    #    table's own prior-year EPS so the basis stays consistent.
+    consensus = consensus_eps(ticker)
+    if consensus:
+        return {
+            **_base_row(ticker, name, sector, industry, price, shares, eps0, facts, upto),
+            "forward_eps": consensus["eps1"],
+            "forward_eps2": consensus["eps2"],
+            "eg1": consensus["eg1"],
+            "eg2": consensus["eg2"],
+            "forward_pe": (price / consensus["eps1"]) if (price and consensus["eps1"]) else None,
+            "earnings_growth": consensus["eg1"],
+            "analysts": consensus["analysts"],
+            "forward_source": "analyst_consensus",
+            "forward_basis": (
+                f"analyst consensus, {consensus['analysts']} analysts; "
+                f"FY1 {consensus['eps1']} vs prior {consensus['prior_eps']}, FY2 {consensus['eps2']}"
+            ),
+        }
+
     guidance = facts.get("guidance") or None
     if guidance and guidance.get("midpoint"):
         eps1 = float(guidance["midpoint"])
@@ -110,35 +174,17 @@ def row_for(
         forward_source = "flat"
         forward_basis = "no growth signal; forward EPS held flat at trailing"
 
-    next_report, cadence_note = next_report_estimate(facts.get("report_dates") or [], upto)
-    trailing_pe = (price / eps0) if (price and eps0) else None
     return {
-        "ticker": ticker,
-        "name": name or ticker,
-        "sector": sector or "",
-        "industry": industry or "",
-        "price": price,
-        "market_cap": (shares * price) if (shares and price) else None,
+        **_base_row(ticker, name, sector, industry, price, shares, eps0, facts, upto),
         "forward_eps": eps1,
-        "trailing_eps": eps0,
+        "forward_eps2": None,
+        "eg1": None,
+        "eg2": None,
         "forward_pe": (price / eps1) if (price and eps1) else None,
-        "trailing_pe": trailing_pe,
         "earnings_growth": growth,
-        "shares": shares,
-        "earnings_date": next_report,
-        "revenue": facts.get("revenue"),
-        "net_income": facts.get("net_income"),
-        "ebit": facts.get("ebit"),
-        "cash": facts.get("cash"),
-        "debt": facts.get("debt"),
-        "source": "edgar",
-        "eps_basis": facts.get("eps_basis"),
-        "last_period_end": facts.get("last_period_end"),
-        "trailing_pe_exact": trailing_pe is not None,
+        "analysts": None,
         "forward_source": forward_source,
         "forward_basis": forward_basis,
-        "earnings_date_basis": cadence_note,
-        "as_of": upto.isoformat(),
     }
 
 
@@ -182,52 +228,62 @@ def build_fundamentals(
         return cached[cached["ticker"].astype(str).isin(tickers)]
 
     lookup = universe.set_index("ticker") if "ticker" in universe.columns else universe
-    started = time.monotonic()
-    records: list[dict] = []
-    for i, ticker in enumerate(missing, start=1):
-        try:
-            meta = lookup.loc[ticker] if ticker in lookup.index else None
-        except Exception:
-            meta = None
 
-        def _field(key: str) -> str:
-            if meta is None:
+    def _meta(ticker: str) -> tuple[str, str, str]:
+        try:
+            row = lookup.loc[ticker] if ticker in lookup.index else None
+        except Exception:
+            row = None
+
+        def field(key: str) -> str:
+            if row is None:
                 return ""
-            value = meta[key] if key in getattr(meta, "index", []) else ""
+            value = row[key] if key in getattr(row, "index", []) else ""
             if isinstance(value, pd.Series):
                 value = value.iloc[0]
             return "" if pd.isna(value) else str(value)
 
+        return field("name"), field("sector"), field("industry")
+
+    def _one(ticker: str) -> dict:
+        name, sector, industry = _meta(ticker)
         try:
-            record = row_for(
-                ticker,
-                _field("name"),
-                _field("sector"),
-                _field("industry"),
-                prices,
-                upto,
-                with_guidance=with_guidance,
-            )
+            return row_for(ticker, name, sector, industry, prices, upto, with_guidance=with_guidance)
         except Exception as exc:
-            log(f"fundamentals {i}/{len(missing)} {ticker} FAIL {exc}")
-            record = {
+            log(f"fundamentals {ticker} FAIL {exc}")
+            return {
                 "ticker": ticker,
-                "name": _field("name") or ticker,
-                "sector": _field("sector"),
-                "industry": _field("industry"),
+                "name": name or ticker,
+                "sector": sector,
+                "industry": industry,
                 "source": "edgar",
                 "eps_basis": f"failed: {exc}",
                 "as_of": upto.isoformat(),
             }
-        records.append(record)
-        if i % CHECKPOINT_EVERY == 0 or i == len(missing):
-            merged = _merge(cached, pd.DataFrame(records), path)
-            log(
-                f"fundamentals {i}/{len(missing)} {ticker}  rows {len(merged)}  "
-                f"elapsed {elapsed_since(started)}  eta {eta(i, len(missing), started)}"
-            )
+
+    started = time.monotonic()
+    records: list[dict] = []
+    workers = max(1, int(_cfg().get("workers", DEFAULT_WORKERS)))
+    log(f"fundamentals: {workers} workers against a shared {SEC_MAX_RPS}/s SEC budget")
+    lock = Lock()
+    # Threads, not processes: this is entirely network-bound, and a shared
+    # in-process rate limiter is what keeps the whole run inside SEC's ceiling.
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {pool.submit(_one, ticker): ticker for ticker in missing}
+        for done, future in enumerate(as_completed(futures), start=1):
+            record = future.result()
+            with lock:
+                records.append(record)
+                if done % CHECKPOINT_EVERY == 0 or done == len(missing):
+                    merged = _merge(cached, pd.DataFrame(records), path)
+                    log(
+                        f"fundamentals {done}/{len(missing)} {record['ticker']}  rows {len(merged)}  "
+                        f"elapsed {elapsed_since(started)}  eta {eta(done, len(missing), started)}"
+                    )
     frame = _merge(cached, pd.DataFrame(records), path)
     usable = int(frame["trailing_eps"].notna().sum()) if "trailing_eps" in frame.columns else 0
+    if "forward_source" in frame.columns:
+        log_coverage(len(frame), int((frame["forward_source"] == "analyst_consensus").sum()))
     log(f"fundamentals done: {len(frame)} rows, {usable} with EPS from filings, in {elapsed_since(started)}")
     return frame[frame["ticker"].astype(str).isin(tickers)]
 
@@ -252,6 +308,9 @@ def source_warnings(frame: pd.DataFrame) -> list[str]:
     if frame is None or frame.empty:
         return ["No fundamentals were built."]
     total = len(frame)
+    if "forward_source" in frame.columns:
+        got = int((frame["forward_source"] == "analyst_consensus").sum())
+        warnings.extend(warn_if_thin(total, got))
     if "forward_source" in frame.columns:
         counts = frame["forward_source"].value_counts().to_dict()
         warnings.append(

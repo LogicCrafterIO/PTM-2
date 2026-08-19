@@ -6,6 +6,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
 from ptm.asof import (
     AsOfUnavailable,
     as_of_date,
@@ -18,7 +20,7 @@ from ptm.asof import (
 )
 from ptm.fundamentals import build_fundamentals, source_warnings
 from ptm.book import assemble_book
-from ptm.config import data_dir, ideas_dir
+from ptm.config import data_dir, ideas_dir, toml_settings
 from ptm.gates import apply_process_gates, candidate_warnings, size_fraction
 from ptm.ingest.company_research import research_pack
 from ptm.ingest.edgar import company_facts
@@ -44,7 +46,7 @@ from ptm.organize import (
 )
 from ptm.models import Candidate, CatalystResult, IdeaState, MacroSnapshot, QualResult, Side, TimingResult, TradeIdea
 from ptm.quant import build_candidates
-from ptm.ranking import ordered_candidates, write_ranking
+from ptm.ranking import conviction, conviction_detail, ordered_candidates, write_ranking
 from ptm.timing_prm import earnings_in_window, prm_for
 
 
@@ -293,6 +295,7 @@ def run_group_reviews(
         bucket_blocks.append(render_group_review(review))
         log(f"group review window {bucket}: {review.summary}")
 
+    write_json(data_dir("curated", "group_reviews.json"), [r.model_dump() for r in reviews])
     if bucket_blocks:
         combined = ideas_dir(day, "EARNINGS_REVIEW.md")
         header = [
@@ -352,12 +355,11 @@ def generate_ideas(
         f"ideas: researching {len(chosen)} of {len(candidates)} PE candidates "
         f"(llm={'on' if not skip_llm and llm_available() else 'off'})"
     )
-    ideas: list[TradeIdea] = []
     fund = read_df(data_dir("curated", "yahoo_fundamentals.csv"))
-    earnings_map = {row["ticker"]: row.get("earnings_date") for _, row in fund.iterrows()}
+    total = len(chosen)
 
-    for i, cand in enumerate(chosen, start=1):
-        log(f"idea {i}/{len(chosen)} {cand.side.value} {cand.ticker}  ism={cand.ism_score} eg={cand.eg_case}")
+    def _research(i: int, cand: Candidate) -> TradeIdea:
+        log(f"idea {i}/{total} {cand.side.value} {cand.ticker}  ism={cand.ism_score} eg={cand.eg_case}")
         cand = _attach_evidence(cand)
         cand.warnings = candidate_warnings(cand)
         idea = TradeIdea(candidate=cand, state=IdeaState.IDENTIFIED)
@@ -412,6 +414,11 @@ def generate_ideas(
         idea.prm.size_fraction = size_fraction(idea)
         blocks = apply_process_gates(idea)
         idea.extra["gates"] = blocks
+        # Persist the conviction score and its arithmetic on the idea, so the
+        # number that orders the book can be checked in the JSON rather than
+        # recomputed from memory.
+        idea.extra["conviction"] = conviction(idea)
+        idea.extra["conviction_detail"] = conviction_detail(idea.qual)
         log(f"idea {cand.ticker}: size={idea.prm.size_fraction} gates={blocks or 'none'}")
         qual = idea.qual or QualResult(supports_outlier=None, summary="missing qualitative", red_flags=["llm_skipped"] if skip_llm else [])
         cats = idea.catalysts or CatalystResult(earnings_date=parsed, earnings_in_window=in_window, tradeable=in_window, reason="missing catalysts")
@@ -440,16 +447,36 @@ def generate_ideas(
                 idea.earnings,
             )
             idea.template_markdown = md
-        ideas.append(idea)
         md_path, json_path = idea_paths(idea, day=day)
         md_path.write_text(md, encoding="utf-8")
         write_json(json_path, idea.model_dump())
         log(f"idea {cand.ticker}: wrote {md_path.relative_to(ideas_dir(day))}")
+        return idea
+
+    # Each idea is independent until the group pass: its own EDGAR fetches, its
+    # own LLM calls, its own output files. Both are latency-bound, so a small
+    # pool cuts wall-clock sharply. SEC stays inside its shared rate limit; the
+    # pool size caps concurrent LLM calls.
+    workers = max(1, int((toml_settings().get("llm") or {}).get("idea_workers", 1)))
+    if workers > 1 and not skip_llm:
+        log(f"ideas: {workers} workers")
+        results: dict[int, TradeIdea] = {}
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            futures = {pool.submit(_research, i, cand): i for i, cand in enumerate(chosen, start=1)}
+            for future in as_completed(futures):
+                index = futures[future]
+                try:
+                    results[index] = future.result()
+                except Exception as exc:
+                    log(f"idea #{index} crashed: {exc}")
+        # Output order follows screen rank, not completion order.
+        ideas: list[TradeIdea] = [results[i] for i in sorted(results)]
+    else:
+        ideas = [_research(i, cand) for i, cand in enumerate(chosen, start=1)]
 
     # Second pass: a cross-sectional LLM read of each group's fundamental cases.
     reviews = run_group_reviews(ideas, snap, day=day, skip_llm=skip_llm)
     write_json(data_dir("curated", "ideas.json"), [i.model_dump() for i in ideas])
-    write_json(data_dir("curated", "group_reviews.json"), [r.model_dump() for r in reviews])
 
     rows = placements(ideas)
     notes = []

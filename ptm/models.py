@@ -3,7 +3,7 @@ from __future__ import annotations
 from enum import Enum
 from typing import Any
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class Bias(str, Enum):
@@ -87,6 +87,32 @@ class Candidate(BaseModel):
     warnings: list[str] = Field(default_factory=list)
 
 
+class EvidenceItem(BaseModel):
+    """One reason for or against a trade, with its size where the filing gives one.
+
+    Counting reasons treats "backlog up 22%" and "management sounds confident"
+    as equal. `impact_pct` and `impact_on` carry the magnitude so conviction can
+    weigh them; `quantified` records whether that number actually appeared in the
+    research pack, so an inferred figure can never masquerade as a reported one.
+    """
+
+    claim: str = ""
+    metric: str = ""
+    impact_pct: float | None = None
+    # What the number moves: earnings, revenue, margin, or nothing measurable.
+    impact_on: str = "none"
+    quantified: bool = False
+
+    @classmethod
+    def coerce(cls, value: object) -> EvidenceItem:
+        """Accept a bare string, as older runs and simpler models produce."""
+        if isinstance(value, EvidenceItem):
+            return value
+        if isinstance(value, dict):
+            return cls.model_validate(value)
+        return cls(claim=str(value or "").strip())
+
+
 class QualResult(BaseModel):
     supports_outlier: bool | None = None
     red_flags: list[str] = Field(default_factory=list)
@@ -98,9 +124,17 @@ class QualResult(BaseModel):
     # The verdict pass enumerates these before committing to supports_outlier,
     # so a boolean that contradicts its own evidence is visible rather than
     # silently wrong. See docs/FEATURE-LIMITATIONS.md.
-    evidence_for: list[str] = Field(default_factory=list)
-    evidence_against: list[str] = Field(default_factory=list)
+    evidence_for: list[EvidenceItem] = Field(default_factory=list)
+    evidence_against: list[EvidenceItem] = Field(default_factory=list)
     denial_reason: str = ""
+
+    @field_validator("evidence_for", "evidence_against", mode="before")
+    @classmethod
+    def _accept_strings(cls, value: object) -> object:
+        """Runs written before evidence was structured stay loadable."""
+        if isinstance(value, list):
+            return [EvidenceItem.coerce(item) for item in value]
+        return value
 
 
 class CatalystResult(BaseModel):
@@ -170,6 +204,10 @@ class GroupReview(BaseModel):
     as_of: str = ""
     tickers: list[str] = Field(default_factory=list)
     llm_used: bool = False
+    # How many names the model actually wrote a comment for. Large groups used
+    # to silently come back with ~8 of 137 covered.
+    covered: int = 0
+    ranked_by_model: int = 0
     summary: str = ""
     narrative: str = ""
     views: list[GroupNameView] = Field(default_factory=list)

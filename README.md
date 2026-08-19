@@ -69,17 +69,30 @@ ptm weekly
 
 ## Where the data comes from
 
-**Fundamentals come from SEC EDGAR. yfinance supplies prices and nothing else.**
+**Reported fundamentals come from SEC EDGAR. yfinance supplies prices and analyst
+consensus estimates.**
 Shares, trailing EPS, revenue, EBIT, cash and debt are XBRL facts; market cap is
 EDGAR shares times the run-date close; the next earnings date is projected from
 the company's own filing cadence. Yahoo's `info` snapshot, its earnings
 calendar, analyst targets and news are no longer used anywhere.
 
-Trailing P/E is therefore **exact**. Forward EPS is not: EDGAR holds filings, not
-analyst consensus, so it is extrapolated from realized growth (clamped at ±50%)
-and every row records which basis was used. See
+Trailing P/E is therefore **exact** (EDGAR GAAP over the run-date close). Forward
+EPS comes from analyst consensus on live runs — 94% coverage — which is what makes
+`eg1`/`eg2` and PEG independent and the EG taxonomy work.
+
+A name **without** consensus is excluded from the screen rather than estimated
+around: adjusted consensus EPS runs ~18% above GAAP trailing, so mixing the two
+would misprice those names *and* drag the sector median every other name is judged
+against. Consensus has no history, so backdated runs refuse it outright and put the
+whole universe on one consistent extrapolated basis instead. See
 [docs/FEATURE-LIMITATIONS.md](docs/FEATURE-LIMITATIONS.md) before leaning on a
 forward multiple.
+
+The screen classifies every candidate into a PTM **EG case** (acceleration,
+stable-above, turnaround, worsening decline, and so on); a name fitting no case
+is not a candidate. See [docs/EG-CASES.md](docs/EG-CASES.md) for every case, how
+it is determined, and which ones are currently unreachable without analyst
+consensus.
 
 ## Where ideas land
 
@@ -116,6 +129,12 @@ Six per side in screen-rank order, subject to two constraints:
 
 * **`max_per_sector = 2`** per side — six shorts from one sector is one bet, not
   six. The cap is never silently relaxed; a short side is reported as such.
+* **Conviction ordering** — inside the book, names are ordered by how well
+  evidenced they are, not by earnings growth. Each reason from the qualitative
+  verdict is weighed by the magnitude it moves (earnings > revenue > margin) where
+  the filing states one, so "backlog up 22%" outranks "management sounds
+  confident". Every idea's JSON carries the score and its full arithmetic in
+  `extra.conviction_detail`. See [docs/EG-CASES.md](docs/EG-CASES.md) §7.
 * **Beta-aware selection** — a P/E-outlier screen is beta-long by construction
   (growth longs ~1.5 beta, value shorts ~0.24), so a dollar-neutral book still
   breached ±0.30. Rank leads; only if the book breaches does it swap the worst

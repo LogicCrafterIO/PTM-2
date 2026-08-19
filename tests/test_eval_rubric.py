@@ -141,7 +141,7 @@ def test_contradictory_verdict_is_flagged(monkeypatch):
 
     monkeypatch.setattr("ptm.llm.llm_available", lambda: True)
 
-    def fake_chat(system, user):
+    def fake_chat(system, user, **kwargs):
         if "Extract operating facts" in system:
             return {"business_in_one_line": "b", "operating_plan": "p",
                     "kpis": ["backlog"], "red_flags": [], "quotes": []}

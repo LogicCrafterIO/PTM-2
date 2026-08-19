@@ -3,6 +3,7 @@
 from datetime import date
 
 import pandas as pd
+import pytest
 
 from ptm.asof import set_as_of
 from pathlib import Path
@@ -188,6 +189,8 @@ def test_fundamentals_are_built_from_edgar_on_every_run(monkeypatch, isolate_roo
 def test_edgar_row_prices_off_the_run_date_close(monkeypatch, isolate_roots):
     from ptm.fundamentals import row_for
 
+    # No consensus available: exercise the EDGAR-only fallback.
+    monkeypatch.setattr("ptm.fundamentals.consensus_eps", lambda ticker: None)
     monkeypatch.setattr(
         "ptm.ingest.edgar.company_fundamentals",
         lambda ticker, with_guidance=True: {
@@ -219,6 +222,7 @@ def test_edgar_row_prices_off_the_run_date_close(monkeypatch, isolate_roots):
 def test_guidance_beats_extrapolation_for_forward_eps(monkeypatch, isolate_roots):
     from ptm.fundamentals import row_for
 
+    monkeypatch.setattr("ptm.fundamentals.consensus_eps", lambda ticker: None)
     monkeypatch.setattr(
         "ptm.ingest.edgar.company_fundamentals",
         lambda ticker, with_guidance=True: {
@@ -303,3 +307,168 @@ def test_earnings_exhibit_picks_the_newest_8k_and_unpacks_cleanly(monkeypatch, i
     assert out, "exhibit must be returned, not swallowed by an unpacking error"
     # The 2026 release must win over the 2020 one.
     assert picked and picked[0] == "new"
+
+
+def test_live_extract_cache_expires_but_backdated_does_not(monkeypatch, isolate_roots):
+    """A cached XBRL extract is keyed by ticker alone. On a live run it must age
+    out, or a company filing a fresh 10-Q is invisible until someone clears the
+    cache by hand. A backdated extract is pinned to its vintage and cannot stale."""
+    import os
+    import time as _time
+
+    from ptm.config import data_dir
+    from ptm.ingest import edgar as e
+    from ptm.io import write_json
+
+    path = data_dir("raw", "edgar", "AAA_fundamentals.json")
+    write_json(path, {"ticker": "AAA"})
+
+    assert e._cache_fresh(path) is True
+
+    # Backdate it beyond the window.
+    stale = _time.time() - (e.extract_max_age_days() + 1) * 86400
+    os.utime(path, (stale, stale))
+    assert e._cache_fresh(path) is False, "a stale live extract must be refetched"
+
+    set_as_of("2026-06-20")
+    try:
+        # Same file, but a backdated run pins its own vintage.
+        pinned = data_dir("raw", "edgar", "AAA_fundamentals_2026-06-20.json")
+        write_json(pinned, {"ticker": "AAA"})
+        os.utime(pinned, (stale, stale))
+        assert e._cache_fresh(pinned) is True
+    finally:
+        set_as_of(None)
+
+
+def test_consensus_is_refused_on_a_backdated_run(monkeypatch, isolate_roots):
+    """Today's estimates carry no history. Using them to screen a past date is
+    exactly the lookahead the rest of the pipeline exists to prevent."""
+    from ptm.ingest import estimates
+
+    called = []
+    monkeypatch.setattr("yfinance.Ticker", lambda t: called.append(t))
+
+    set_as_of("2026-06-20")
+    try:
+        assert estimates.consensus_eps("AAPL") is None
+    finally:
+        set_as_of(None)
+    assert called == [], "a backdated run must not even ask for consensus"
+
+    warnings = estimates.warn_if_thin(100, 0)
+    set_as_of("2026-06-20")
+    try:
+        warnings = estimates.warn_if_thin(100, 0)
+    finally:
+        set_as_of(None)
+    assert any("BACKDATED RUN" in w and "lookahead" in w for w in warnings)
+
+
+def test_consensus_gives_independent_growth_rates(monkeypatch, isolate_roots):
+    """The whole point: eg1 and eg2 stop being the same number."""
+    from ptm.fundamentals import row_for
+
+    monkeypatch.setattr(
+        "ptm.fundamentals.consensus_eps",
+        lambda ticker: {
+            "eps1": 8.81, "eps2": 9.53, "prior_eps": 7.46,
+            "eg1": 0.1803, "eg2": 0.0826, "analysts": 38, "basis": "test",
+        },
+    )
+    monkeypatch.setattr(
+        "ptm.ingest.edgar.company_fundamentals",
+        lambda ticker, with_guidance=True: {
+            "shares": 1_000_000.0, "eps_ttm": 7.0, "eps_prior_ttm": 6.0,
+            "eps_basis": "4 quarterly filings", "report_dates": ["2026-05-05"], "guidance": None,
+        },
+    )
+    prices = pd.DataFrame({"date": ["2026-08-18"], "close": [100.0], "ticker": ["AAPL"]})
+    row = row_for("AAPL", "Apple", "Information Technology", "Hardware", prices, date(2026, 8, 18))
+
+    assert row["forward_source"] == "analyst_consensus"
+    assert row["forward_eps"] == 8.81 and row["forward_eps2"] == 9.53
+    assert row["eg1"] != row["eg2"], "eg1 and eg2 must be independent"
+    assert row["eg1"] == 0.1803 and row["eg2"] == 0.0826
+    # Trailing P/E stays EDGAR GAAP and exact, not recomputed on adjusted EPS.
+    assert row["trailing_eps"] == 7.0
+    assert row["trailing_pe"] == pytest.approx(100.0 / 7.0)
+    assert row["trailing_pe_exact"] is True
+
+
+def test_thin_coverage_falls_back_rather_than_trusting_two_analysts(monkeypatch, isolate_roots):
+    from ptm.ingest import estimates
+
+    class FakeFrame:
+        empty = False
+
+        @staticmethod
+        def loc_get(period, column):
+            return None
+
+        class _Loc:
+            def __getitem__(self, key):
+                period, column = key
+                data = {
+                    ("0y", "avg"): 5.0, ("+1y", "avg"): 6.0, ("0y", "yearAgoEps"): 4.0,
+                    ("0y", "numberOfAnalysts"): 1, ("0y", "growth"): 0.25, ("+1y", "growth"): 0.2,
+                }
+                return data.get((period, column))
+
+        loc = _Loc()
+
+    monkeypatch.setattr("yfinance.Ticker", lambda t: type("T", (), {"earnings_estimate": FakeFrame()})())
+    assert estimates.consensus_eps("THIN") is None, "1 analyst is not a consensus"
+
+
+def test_transcripts_are_off_without_a_key(monkeypatch, isolate_roots):
+    """Inert until configured: no key means no calls and no pack section."""
+    from ptm.ingest import transcripts
+
+    monkeypatch.delenv("TRANSCRIPT_API_KEY", raising=False)
+    assert transcripts.enabled() is False
+    assert transcripts.fetch("AAPL") == []
+    assert transcripts.pack_section("AAPL") == ""
+
+
+def test_backdated_runs_drop_later_and_undated_calls(monkeypatch, isolate_roots):
+    """A call held after the run date is lookahead; an undated one cannot be
+    shown to be in the past, so both are refused."""
+    from ptm.ingest import transcripts
+
+    monkeypatch.setattr(transcripts, "enabled", lambda: True)
+    monkeypatch.setattr(transcripts, "api_key", lambda: "k")
+    monkeypatch.setattr(transcripts, "provider", lambda: "fake")
+    monkeypatch.setitem(
+        transcripts.PROVIDERS,
+        "fake",
+        lambda ticker, key, limit: [
+            {"date": "2026-08-05", "quarter": 2, "year": 2026, "text": "revenue grew 9%"},
+            {"date": "2026-06-01", "quarter": 1, "year": 2026, "text": "margins expanded 200 bps"},
+            {"date": None, "quarter": None, "year": None, "text": "undated call"},
+        ],
+    )
+    set_as_of("2026-07-01")
+    try:
+        rows = transcripts.fetch("AAA")
+    finally:
+        set_as_of(None)
+    dates = [r["date"] for r in rows]
+    assert dates == ["2026-06-01"], f"kept {dates}"
+
+
+def test_densest_window_prefers_period_over_period_language():
+    """Prepared remarks are rarely at the top; the operator preamble is."""
+    from ptm.ingest.transcripts import densest_window
+
+    text = (
+        "Operator: thank you for standing by. " * 40
+        + "Revenue grew 9% and margins expanded 200 basis points while EPS rose 15%. "
+        + "Safe harbour statement follows. " * 40
+    )
+    window = densest_window(text, 400)
+    # The invariant is that the window finds the numbers, not that it excludes
+    # all surrounding prose - a 400-char window around a 75-char sentence will
+    # always carry neighbours. What matters is that it beats taking the head.
+    assert "grew 9%" in window and "200 basis points" in window
+    assert "grew 9%" not in text[:400], "the head is the wrong passage, which is the point"

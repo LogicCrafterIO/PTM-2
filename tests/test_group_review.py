@@ -40,21 +40,23 @@ def test_momentum_module_is_gone():
 
 
 def test_prompt_forbids_technical_reasoning(monkeypatch):
-    captured = {}
+    """Every prompt in the layer, not just the last one."""
+    captured = []
 
-    def fake_chat(system, user):
-        captured["system"] = system
-        captured["user"] = user
+    def fake_chat(system, user, **kwargs):
+        captured.append((system, user))
         return {"summary": "s", "narrative": "n", "views": [], "ranked_tickers": [], "contradictions": []}
 
     monkeypatch.setattr("ptm.group_review.llm_available", lambda: True)
     monkeypatch.setattr("ptm.group_review.chat_json", fake_chat)
     group_review("sector", "Industrials", [_idea("AAA", Side.LONG, True)], as_of="2026-08-18")
-    system = captured["system"].lower()
-    assert "technical analysis" in system
-    assert "must not reason about price" in system or "no price data" in system
-    for token in ("ret_60d", "momentum\":", "direction\":"):
-        assert token not in captured["user"]
+    assert len(captured) >= 2, "a view pass and a synthesis pass"
+    for system, user in captured:
+        low = system.lower()
+        assert "technical analysis" in low
+        assert "must not reason" in low or "no price data" in low
+        for token in ("ret_60d", "momentum\":", "direction\":"):
+            assert token not in user
 
 
 def test_summary_counts_are_measured_not_modelled():
@@ -83,7 +85,7 @@ def test_llm_cannot_revise_the_first_pass_verdict(monkeypatch):
     monkeypatch.setattr("ptm.group_review.llm_available", lambda: True)
     monkeypatch.setattr(
         "ptm.group_review.chat_json",
-        lambda system, user: {
+        lambda system, user, **kwargs: {
             "summary": "x",
             "narrative": "y",
             # The group model tries to flip a denied name to a pass.
@@ -99,7 +101,7 @@ def test_llm_cannot_revise_the_first_pass_verdict(monkeypatch):
 
 
 def test_llm_failure_degrades_to_deterministic(monkeypatch):
-    def boom(system, user):
+    def boom(system, user, **kwargs):
         raise RuntimeError("502 upstream")
 
     monkeypatch.setattr("ptm.group_review.llm_available", lambda: True)
@@ -126,3 +128,72 @@ def test_group_review_is_not_wired_into_any_gate():
     source = inspect.getsource(gates) + inspect.getsource(book)
     for token in ("GroupReview", "group_review", "momentum", "direction", "aligned"):
         assert token not in source
+
+
+def test_large_groups_are_chunked_so_every_name_is_covered(monkeypatch):
+    """A 137-name group came back with 8 comments and 129 placeholders. Views are
+    now requested in chunks small enough for the model to answer in full."""
+    from ptm.group_review import VIEW_CHUNK
+
+    calls = []
+
+    def fake_chat(system, user, **kwargs):
+        calls.append(user)
+        if "views (array of {ticker, comment})" in user:
+            # Echo back exactly the tickers this chunk asked for.
+            line = [ln for ln in user.splitlines() if ln.startswith("Cover all ")][0]
+            tickers = line.split(":", 1)[1].strip().split(", ")
+            return {"views": [{"ticker": t, "comment": f"note on {t}"} for t in tickers]}
+        return {"summary": "s", "narrative": "n", "ranked_tickers": [], "contradictions": []}
+
+    monkeypatch.setattr("ptm.group_review.llm_available", lambda: True)
+    monkeypatch.setattr("ptm.group_review.chat_json", fake_chat)
+
+    ideas = [_idea(f"T{i:03d}", Side.LONG, supports=True) for i in range(40)]
+    review = group_review("sector", "Industrials", ideas, as_of="2026-08-18")
+
+    assert review.covered == 40, f"only {review.covered}/40 covered"
+    assert not any(v.comment == "not covered by the group LLM pass" for v in review.views)
+    # ceil(40/12) view calls + 1 synthesis
+    assert len(calls) == (40 + VIEW_CHUNK - 1) // VIEW_CHUNK + 1
+
+
+def test_partial_ranking_is_disclosed_not_disguised(monkeypatch):
+    """Padding the model's short ranking with the rest made it look complete."""
+    def fake_chat(system, user, **kwargs):
+        if "views (array of {ticker, comment})" in user:
+            return {"views": []}
+        return {"summary": "s", "narrative": "n", "ranked_tickers": ["T000", "T001"], "contradictions": []}
+
+    monkeypatch.setattr("ptm.group_review.llm_available", lambda: True)
+    monkeypatch.setattr("ptm.group_review.chat_json", fake_chat)
+    ideas = [_idea(f"T{i:03d}", Side.LONG, supports=True) for i in range(10)]
+    review = group_review("sector", "Industrials", ideas, as_of="2026-08-18")
+
+    assert review.ranked_by_model == 2
+    assert len(review.ranked_tickers) == 10
+    text = render_group_review(review)
+    assert "ranked the first 2" in text
+    assert "0/10 names individually reviewed" in text
+
+
+def test_a_failed_chunk_does_not_lose_the_other_chunks(monkeypatch):
+    state = {"n": 0}
+
+    def fake_chat(system, user, **kwargs):
+        if "views (array of {ticker, comment})" in user:
+            state["n"] += 1
+            if state["n"] == 1:
+                raise RuntimeError("502 upstream")
+            line = [ln for ln in user.splitlines() if ln.startswith("Cover all ")][0]
+            tickers = line.split(":", 1)[1].strip().split(", ")
+            return {"views": [{"ticker": t, "comment": f"note on {t}"} for t in tickers]}
+        return {"summary": "s", "narrative": "n", "ranked_tickers": [], "contradictions": []}
+
+    monkeypatch.setattr("ptm.group_review.llm_available", lambda: True)
+    monkeypatch.setattr("ptm.group_review.chat_json", fake_chat)
+    ideas = [_idea(f"T{i:03d}", Side.LONG, supports=True) for i in range(24)]
+    review = group_review("sector", "Industrials", ideas, as_of="2026-08-18")
+
+    assert review.covered == 12, "the surviving chunk must still be recorded"
+    assert "502 upstream" in review.error

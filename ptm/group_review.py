@@ -20,6 +20,13 @@ import json
 from ptm.llm import JSON_HINT, _clip, chat_json, llm_available
 from ptm.models import GroupNameView, GroupReview, TradeIdea
 
+# Models stop enumerating long lists well before they run out of tokens: asked
+# to comment on a 137-name group, one returned 8 entries and the rest silently
+# fell back to a placeholder. Per-name views are therefore requested in chunks,
+# and the narrative is a separate synthesis pass over compact per-name lines.
+# Coverage is recorded so a partial pass can never look like a complete one.
+VIEW_CHUNK = 12
+
 
 def _qual_verdict(idea: TradeIdea) -> str:
     if idea.qual is None:
@@ -103,12 +110,77 @@ def deterministic_review(kind: str, label: str, rows: list[dict], as_of: str, re
         as_of=as_of,
         tickers=[r["ticker"] for r in rows],
         llm_used=False,
+        covered=0,
+        ranked_by_model=0,
         summary=group_summary(rows),
         narrative=f"LLM skipped ({reason}); no cross-name reading was done.",
         views=views,
         ranked_tickers=[r["ticker"] for r in sorted(rows, key=_rank_key)],
         contradictions=[],
     )
+
+
+def _chunks(rows: list[dict], size: int) -> list[list[dict]]:
+    return [rows[i : i + size] for i in range(0, len(rows), size)]
+
+
+def _view_prompt(axis: str, label: str, rows: list[dict]) -> tuple[str, str]:
+    """Ask for one comment per ticker, over a chunk small enough to be answered."""
+    system = (
+        "You are a long/short portfolio manager reading single-name ideas that share one "
+        f"{axis}. For EVERY ticker given, say in one sentence what its case adds relative to the "
+        "others, or which name it duplicates. Judge fundamentals and the operating case only. You "
+        "are given no price data and must not reason about price action, charts, momentum, moving "
+        "averages or entry timing - this process excludes technical analysis. "
+        "Return exactly one entry per ticker, no more and no fewer. "
+        "Keep every comment under 300 characters. " + JSON_HINT
+    )
+    tickers = ", ".join(r["ticker"] for r in rows)
+    user = (
+        "Return JSON key: views (array of {ticker, comment}).\n"
+        f"Cover all {len(rows)} tickers: {tickers}\n"
+        f"Group: {axis} = {label}\n"
+        f"Ideas:\n{json.dumps(rows, default=str)[:9000]}"
+    )
+    return system, user
+
+
+def _synthesis_prompt(
+    axis: str, label: str, rows: list[dict], macro_bias: str, as_of: str
+) -> tuple[str, str]:
+    """The cross-read itself, over compact lines so the whole group fits."""
+    system = (
+        "You are a long/short portfolio manager reviewing a basket of ideas that share one "
+        f"{axis}. Do the cross-read nobody has done yet: do these cases agree, duplicate, or "
+        "contradict each other? Look for the same thesis repeated across names (a concentrated "
+        "bet, not several ideas), a long and a short resting on opposite readings of one industry "
+        "driver, a name whose qualitative verdict looks weak beside its peers, and inconsistent "
+        "use of the ISM tilt. Fundamentals only: you are given no price data and must not reason "
+        "about price action, charts, momentum, moving averages or entry timing - this process "
+        "excludes technical analysis. "
+        "Keep every string under 300 characters. " + JSON_HINT
+    )
+    compact = [
+        {
+            "ticker": r["ticker"],
+            "side": r["side"],
+            "eg_case": r["eg_case"],
+            "pe1": r["pe1"],
+            "sector_pe1": r["sector_pe1"],
+            "verdict": r["qual_verdict"],
+            "why": (r.get("qual_why") or "")[:120],
+        }
+        for r in rows
+    ]
+    user = (
+        "Return JSON keys: summary (string, one line on what this group is collectively betting "
+        "on), narrative (string, 3-6 sentences on how the cases relate), ranked_tickers (array, "
+        "strongest fundamental case first - rank as many as you can), contradictions (array of "
+        "strings naming pairs or clusters whose logic conflicts).\n"
+        f"Group: {axis} = {label}\nMacro bias: {macro_bias or 'unknown'}\nAs of: {as_of}\n"
+        f"Ideas:\n{json.dumps(compact, default=str)[:11000]}"
+    )
+    return system, user
 
 
 def group_review(
@@ -128,48 +200,35 @@ def group_review(
         return deterministic_review(kind, label, rows, as_of, reason)
 
     axis = "sector" if kind == "sector" else "earnings window"
-    system = (
-        "You are a long/short portfolio manager reviewing a basket of single-name ideas that "
-        f"share one {axis}. Each has already been screened on P/E versus its sector and judged "
-        "qualitatively on whether the operating plan supports that quantitative outlier. Your job "
-        "is the cross-read nobody has done yet: do these cases agree, duplicate, or contradict "
-        "each other?\n"
-        "Look for: the same thesis repeated across names (a concentrated bet, not several ideas); "
-        "a long and a short resting on opposite readings of the same industry driver; a name whose "
-        "qualitative verdict looks weak next to its peers; and whether the ISM tilt for this group "
-        "is being used consistently.\n"
-        "Judge fundamentals and the operating case only. You are given no price data, and must not "
-        "reason about price action, charts, momentum, moving averages or entry timing — this "
-        "process excludes technical analysis. Do not invent numbers beyond what is given. "
-        "Keep every string under 300 characters. " + JSON_HINT
-    )
-    user = (
-        "Return JSON keys: summary (string, one line on what this group is collectively betting on), "
-        "narrative (string, 3-6 sentences on how the cases relate to each other), "
-        "views (array of {ticker, comment} — what this name adds or duplicates relative to the rest), "
-        "ranked_tickers (array of tickers, strongest fundamental case first), "
-        "contradictions (array of strings naming pairs or clusters whose logic conflicts).\n"
-        f"Group: {axis} = {label}\n"
-        f"Macro bias: {macro_bias or 'unknown'}\n"
-        f"As of: {as_of}\n"
-        "eg1/eg2 are decimal growth rates. pe1 vs sector_pe1 is the outlier being traded.\n"
-        f"Ideas:\n{json.dumps(rows, default=str)[:9000]}"
-    )
-    try:
-        payload = chat_json(system, user)
-    except Exception as exc:
-        review = deterministic_review(kind, label, rows, as_of, f"LLM failed: {exc}")
-        review.error = str(exc)
-        return review
-
     by_ticker = {r["ticker"]: r for r in rows}
+
     comments: dict[str, str] = {}
-    for item in payload.get("views") or []:
-        if not isinstance(item, dict):
+    errors: list[str] = []
+    for chunk in _chunks(rows, VIEW_CHUNK):
+        try:
+            payload = chat_json(*_view_prompt(axis, label, chunk))
+        except Exception as exc:
+            errors.append(str(exc))
             continue
-        ticker = str(item.get("ticker") or "").strip().upper()
-        if ticker in by_ticker and ticker not in comments:
-            comments[ticker] = _clip(item.get("comment"), 300)
+        for item in payload.get("views") or []:
+            if not isinstance(item, dict):
+                continue
+            ticker = str(item.get("ticker") or "").strip().upper()
+            if ticker in by_ticker and ticker not in comments:
+                comments[ticker] = _clip(item.get("comment"), 300)
+
+    try:
+        synth = chat_json(*_synthesis_prompt(axis, label, rows, macro_bias, as_of))
+    except Exception as exc:
+        errors.append(str(exc))
+        synth = {}
+
+    if not comments and not synth:
+        review = deterministic_review(
+            kind, label, rows, as_of, f"LLM failed: {errors[0] if errors else 'no output'}"
+        )
+        review.error = "; ".join(errors[:2])
+        return review
 
     views = [
         GroupNameView(
@@ -182,37 +241,44 @@ def group_review(
         )
         for ticker, row in by_ticker.items()
     ]
-    ranked = []
-    for raw in payload.get("ranked_tickers") or []:
+    ranked: list[str] = []
+    for raw in synth.get("ranked_tickers") or []:
         ticker = str(raw).strip().upper()
         if ticker in by_ticker and ticker not in ranked:
             ranked.append(ticker)
+    ranked_by_model = len(ranked)
     ranked += [t for t in by_ticker if t not in ranked]
-    contradictions = [_clip(c, 300) for c in (payload.get("contradictions") or []) if str(c).strip()]
+    contradictions = [_clip(c, 300) for c in (synth.get("contradictions") or []) if str(c).strip()]
     return GroupReview(
         group_kind=kind,
         group_label=label,
         as_of=as_of,
         tickers=list(by_ticker),
         llm_used=True,
+        covered=len(comments),
+        ranked_by_model=ranked_by_model,
         # Counts stay measured; the model supplies prose only.
         summary=group_summary(rows),
-        narrative=_clip(payload.get("narrative"), 1400) or _clip(payload.get("summary"), 400),
+        narrative=_clip(synth.get("narrative"), 1400) or _clip(synth.get("summary"), 400),
         views=views,
         ranked_tickers=ranked,
         contradictions=contradictions,
+        error="; ".join(errors[:2]),
     )
 
 
 def render_group_review(review: GroupReview) -> str:
     """Markdown for one group review."""
     axis = "Sector" if review.group_kind == "sector" else "Earnings window"
+    llm_line = "yes" if review.llm_used else "no"
+    if review.llm_used:
+        llm_line += f" — {review.covered}/{len(review.tickers)} names individually reviewed"
     lines = [
         f"# {axis} cross-read - {review.group_label}",
         "",
         f"As of: {review.as_of}  ",
         f"Names: {len(review.tickers)}  ",
-        f"LLM: {'yes' if review.llm_used else 'no'}",
+        f"LLM: {llm_line}",
         "",
         "> A cross-read of the fundamental cases in this group. Commentary, not a gate:",
         "> no idea is included in or dropped from the book on the strength of this section.",
@@ -237,7 +303,16 @@ def render_group_review(review: GroupReview) -> str:
             f"| {view.ticker} | {view.side} | {view.eg_case or 'n/a'} | "
             f"{view.qual_verdict} | {comment} |"
         )
-    lines += ["", "## Ranking by strength of case", "", ", ".join(review.ranked_tickers) or "n/a", ""]
+    lines += ["", "## Ranking by strength of case", ""]
+    if review.llm_used and review.ranked_by_model < len(review.ranked_tickers):
+        note = (
+            "The model returned no ranking for this group; the order below is screen rank."
+            if review.ranked_by_model == 0
+            else f"The model ranked the first {review.ranked_by_model} of "
+            f"{len(review.ranked_tickers)}; the rest follow in screen-rank order."
+        )
+        lines += [note, ""]
+    lines += [", ".join(review.ranked_tickers) or "n/a", ""]
     if review.contradictions:
         lines += ["## Conflicting logic", ""]
         lines += [f"- {item}" for item in review.contradictions]

@@ -1,0 +1,186 @@
+{
+  "as_of": "2026-08-18T12:53:10.285027+00:00",
+  "spx_last": 7785.759765625,
+  "bear_level": 6239.192187500001,
+  "in_bear": false,
+  "tens_minus_twos": 1.0270001888275146,
+  "curve_inverted": false,
+  "curve_second_leg": "irx",
+  "real_10y": 4.7046027336833856,
+  "vix": 15.760000228881836,
+  "ism_pmi": 55.6,
+  "ism_nmi": 54.1,
+  "umcsi": 49.5,
+  "m2_yoy": 0.05525755718302672,
+  "signals": {
+    "regime": 1.0,
+    "curve": 0.5,
+    "ism_pmi": 1.0,
+    "ism_new_orders": 1.0,
+    "ism_nmi": 1.0,
+    "umcsi": -1.0,
+    "real_rate": -0.3,
+    "vix": 0.5
+  },
+  "score": 0.4625,
+  "bias": "NET_LONG",
+  "notes": [
+    "S&P above bear level (pro bull definition)",
+    "ISM PMI 55.6 expansion",
+    "ISM New Orders 56.7 expansion (leads PMI)"
+  ],
+  "llm_narrative": "The market is in a bull regime with a NET LONG bias, driven by the S&P above the bear level and expansion in ISM PMI and new orders. The ISM NMI is also in expansion, but at a slower pace. The yield curve is not inverted, and the real 10-year rate is slightly below the neutral level. The VIX is at a relatively low level, indicating low market volatility.",
+  "ism_new_orders": 56.7,
+  "sector_tilts": [
+    {
+      "sector": "Information Technology",
+      "tilt": "long",
+      "score": 1.653,
+      "why": "ISM composite score"
+    },
+    {
+      "sector": "Health Care",
+      "tilt": "short",
+      "score": -0.74,
+      "why": "ISM composite score"
+    },
+    {
+      "sector": "Communication Services",
+      "tilt": "long",
+      "score": 0.6577,
+      "why": "ISM composite score"
+    },
+    {
+      "sector": "Consumer Staples",
+      "tilt": "short",
+      "score": -0.53,
+      "why": "svc contraction: Agriculture, Forestry, Fishing & Hunting"
+    },
+    {
+      "sector": "Energy",
+      "tilt": "long",
+      "score": 0.5192,
+      "why": "ISM composite score"
+    },
+    {
+      "sector": "Industrials",
+      "tilt": "neutral",
+      "score": 0.15,
+      "why": "mfg fastest growth: Printing & Related Support Activities"
+    },
+    {
+      "sector": "Consumer Discretionary",
+      "tilt": "neutral",
+      "score": 0.15,
+      "why": "mfg new orders contracting: Textile Mills; svc fastest growth: Retail Trade"
+    },
+    {
+      "sector": "Materials",
+      "tilt": "neutral",
+      "score": 0.15,
+      "why": "mfg contraction: Chemical Products; mfg new orders contracting: Chemical Products"
+    },
+    {
+      "sector": "Real Estate",
+      "tilt": "neutral",
+      "score": -0.135,
+      "why": "ISM composite score"
+    },
+    {
+      "sector": "Financials",
+      "tilt": "neutral",
+      "score": 0.1231,
+      "why": "ISM composite score"
+    },
+    {
+      "sector": "Utilities",
+      "tilt": "neutral",
+      "score": 0.0538,
+      "why": "ISM composite score"
+    },
+    {
+      "industry": "Chemical Products",
+      "sector": "Materials",
+      "tilt": "short",
+      "score": -2.1,
+      "why": "mfg contraction (only industry): Chemical Products"
+    },
+    {
+      "industry": "Printing & Related Support Activities",
+      "sector": "Industrials",
+      "tilt": "long",
+      "score": 0.9,
+      "why": "mfg top growth #1: Printing & Related Support Activities"
+    },
+    {
+      "industry": "Apparel, Leather & Allied Products",
+      "sector": "Consumer Discretionary",
+      "tilt": "long",
+      "score": 0.75,
+      "why": "mfg top growth #2: Apparel, Leather & Allied Products"
+    },
+    {
+      "industry": "Electrical Equipment, Appliances & Components",
+      "sector": "Industrials",
+      "tilt": "long",
+      "score": 0.6000000000000001,
+      "why": "mfg top growth #3: Electrical Equipment, Appliances & Components"
+    },
+    {
+      "industry": "Textile Mills",
+      "sector": "Consumer Discretionary",
+      "tilt": "short",
+      "score": -1.2,
+      "why": "mfg new orders contracting: Textile Mills"
+    },
+    {
+      "industry": "Agriculture, Forestry, Fishing & Hunting",
+      "sector": "Consumer Staples",
+      "tilt": "short",
+      "score": -1.1,
+      "why": "svc contraction: Agriculture, Forestry, Fishing & Hunting"
+    },
+    {
+      "industry": "Other Services",
+      "sector": "Industrials",
+      "tilt": "short",
+      "score": -1.1,
+      "why": "svc contraction: Other Services"
+    },
+    {
+      "industry": "Health Care & Social Assistance",
+      "sector": "Health Care",
+      "tilt": "short",
+      "score": -1.1,
+      "why": "svc contraction: Health Care & Social Assistance"
+    },
+    {
+      "industry": "Real Estate, Rental & Leasing",
+      "sector": "Real Estate",
+      "tilt": "short",
+      "score": -1.1,
+      "why": "svc contraction: Real Estate, Rental & Leasing"
+    },
+    {
+      "industry": "Retail Trade",
+      "sector": "Consumer Discretionary",
+      "tilt": "long",
+      "score": 0.9,
+      "why": "svc top growth #1: Retail Trade"
+    },
+    {
+      "industry": "Transportation & Warehousing",
+      "sector": "Industrials",
+      "tilt": "long",
+      "score": 0.75,
+      "why": "svc top growth #2: Transportation & Warehousing"
+    },
+    {
+      "industry": "Wholesale Trade",
+      "sector": "Industrials",
+      "tilt": "long",
+      "score": 0.6000000000000001,
+      "why": "svc top growth #3: Wholesale Trade"
+    }
+  ]
+}

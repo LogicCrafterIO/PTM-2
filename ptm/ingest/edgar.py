@@ -5,6 +5,7 @@ from __future__ import annotations
 import re
 import time
 from datetime import datetime
+from threading import Lock
 import warnings
 from functools import lru_cache
 
@@ -26,6 +27,8 @@ FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
 SUBMISSIONS_URL = "https://data.sec.gov/submissions/CIK{cik}.json"
 ARCHIVES = "https://www.sec.gov/Archives/edgar/data/{cik}/{acc}/{primary}"
 INDEX_JSON = "https://www.sec.gov/Archives/edgar/data/{cik}/{acc}/index.json"
+# SEC's published ceiling is 10 requests/second for a declared User-Agent.
+SEC_MAX_RPS = 8
 
 
 def _headers() -> dict:
@@ -36,6 +39,35 @@ def _headers() -> dict:
     }
 
 
+
+# --- SEC rate limiting -------------------------------------------------------
+# SEC asks for no more than 10 requests/second with a declaring User-Agent. A
+# shared token bucket lets several worker threads fetch concurrently while the
+# process as a whole stays inside that budget - far faster than one thread
+# sleeping between every call, and still a good citizen.
+
+_RATE_LOCK = Lock()
+_LAST_CALL = [0.0]
+
+
+def _rate_limited() -> None:
+    """Block until this process may issue another SEC request."""
+    min_gap = 1.0 / float(SEC_MAX_RPS)
+    with _RATE_LOCK:
+        now = time.monotonic()
+        wait = _LAST_CALL[0] + min_gap - now
+        if wait > 0:
+            time.sleep(wait)
+            now = now + wait
+        _LAST_CALL[0] = now
+
+
+def sec_get(url: str, **kwargs):
+    """requests.get against SEC, throttled to the shared budget."""
+    _rate_limited()
+    return requests.get(url, headers=_headers(), **kwargs)
+
+
 @lru_cache
 def ticker_map() -> dict[str, str]:
     cache = data_dir("curated", "sec_tickers.json")
@@ -43,7 +75,7 @@ def ticker_map() -> dict[str, str]:
         return {k: str(v) for k, v in read_json(cache).items()}
     for url in TICKERS_URLS:
         try:
-            response = requests.get(url, headers=_headers(), timeout=30)
+            response = sec_get(url, timeout=30)
             response.raise_for_status()
             payload = response.json()
             break
@@ -121,7 +153,7 @@ def company_facts(ticker: str) -> dict:
             write_json(cache, extracted)
             return extracted
     url = FACTS_URL.format(cik=cik)
-    response = requests.get(url, headers=_headers(), timeout=45)
+    response = sec_get(url, timeout=45)
     if response.status_code >= 400:
         payload = {"ticker": ticker, "cik": cik, "error": response.status_code}
         write_json(cache, payload)
@@ -142,7 +174,6 @@ def company_facts(ticker: str) -> dict:
         "interest": _latest_fact(facts, "us-gaap", "InterestExpense"),
     }
     write_json(cache, extracted)
-    time.sleep(0.15)
     return extracted
 
 
@@ -298,7 +329,7 @@ def filing_sections(ticker: str, max_chars: int = 4000) -> dict[str, str]:
         if _cache_sections_usable(cached):
             return cached
     url = SUBMISSIONS_URL.format(cik=cik)
-    response = requests.get(url, headers=_headers(), timeout=45)
+    response = sec_get(url, timeout=45)
     if response.status_code >= 400:
         return {"business": "", "mda": ""}
     recent = response.json().get("filings", {}).get("recent", {})
@@ -339,7 +370,7 @@ def latest_earnings_exhibit(ticker: str, max_chars: int = 5000) -> str:
         if cached and not is_cover_page(cached):
             return cached[:max_chars]
     url = SUBMISSIONS_URL.format(cik=cik)
-    response = requests.get(url, headers=_headers(), timeout=45)
+    response = sec_get(url, timeout=45)
     if response.status_code >= 400:
         return ""
     recent = response.json().get("filings", {}).get("recent", {})
@@ -356,7 +387,7 @@ def latest_earnings_exhibit(ticker: str, max_chars: int = 5000) -> str:
         acc_nodash = acc.replace("-", "")
         index_url = INDEX_JSON.format(cik=int(cik), acc=acc_nodash)
         try:
-            index = requests.get(index_url, headers=_headers(), timeout=20)
+            index = sec_get(index_url, timeout=20)
             files = (index.json().get("directory") or {}).get("item") or []
         except Exception:
             files = []
@@ -488,7 +519,7 @@ def report_dates(ticker: str, limit: int = 8) -> list[str]:
             pass
     url = SUBMISSIONS_URL.format(cik=cik)
     try:
-        response = requests.get(url, headers=_headers(), timeout=45)
+        response = sec_get(url, timeout=45)
     except Exception:
         return []
     if response.status_code >= 400:
@@ -501,7 +532,6 @@ def report_dates(ticker: str, limit: int = 8) -> list[str]:
     )[:limit]
     cache.parent.mkdir(parents=True, exist_ok=True)
     write_json(cache, dates)
-    time.sleep(0.15)
     return dates
 
 
@@ -517,13 +547,41 @@ def raw_company_facts(ticker: str) -> dict:
         return {}
     url = FACTS_URL.format(cik=cik)
     try:
-        response = requests.get(url, headers=_headers(), timeout=45)
+        response = sec_get(url, timeout=45)
     except Exception:
         return {}
     if response.status_code >= 400:
         return {}
-    time.sleep(0.12)
     return response.json()
+
+
+
+def extract_max_age_days() -> int:
+    """How long a cached XBRL extract stays usable on a live run.
+
+    Backdated runs pin their own vintage and never expire. Live runs must, or a
+    company that files a fresh 10-Q is invisible until the cache is cleared by
+    hand: the extract is keyed only by ticker, so it would otherwise be returned
+    forever. Shorten this during earnings season, when a week of staleness can
+    span a whole quarter's results.
+    """
+    from ptm.config import toml_settings
+
+    cfg = toml_settings().get("edgar") or {}
+    return int(cfg.get("extract_max_age_days") or 7)
+
+
+def _cache_fresh(path) -> bool:
+    if not path.exists():
+        return False
+    if is_backdated():
+        # Pinned to a run date, so its contents cannot go stale.
+        return True
+    max_age = extract_max_age_days()
+    if max_age <= 0:
+        return True
+    age_days = (time.time() - path.stat().st_mtime) / 86400.0
+    return age_days <= max_age
 
 
 def company_fundamentals(ticker: str, with_guidance: bool = True) -> dict:
@@ -539,7 +597,7 @@ def company_fundamentals(ticker: str, with_guidance: bool = True) -> dict:
     the multi-megabyte source payload is not.
     """
     cache = data_dir("raw", "edgar", f"{ticker}_fundamentals{_asof_suffix()}.json")
-    if cache.exists():
+    if _cache_fresh(cache):
         try:
             cached = read_json(cache)
             if isinstance(cached, dict) and cached.get("ticker"):

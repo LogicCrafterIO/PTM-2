@@ -1,0 +1,150 @@
+{
+  "as_of": "2026-08-18T13:26:49.825440+00:00",
+  "ideas_folder": "C:\\Users\\John\\Desktop\\PTM-2\\ideas\\2026-08-18",
+  "summary": "17 findings; Top checks: pack.item1_empty (11), pack.mda_short (4), sector.excluded_still_selected (2)",
+  "by_stage": {
+    "pack": 15,
+    "sector": 2
+  },
+  "by_severity": {
+    "warning": 17
+  },
+  "findings": [
+    {
+      "ticker": "KRMN",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.item1_empty",
+      "evidence": "",
+      "suggestion": "Item 1 Business extraction missed the filing section."
+    },
+    {
+      "ticker": "KRMN",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.mda_short",
+      "evidence": "",
+      "suggestion": "MD&A looks like a TOC line; parse the full Item 2/7 section."
+    },
+    {
+      "ticker": "CWEN",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.item1_empty",
+      "evidence": "",
+      "suggestion": "Item 1 Business extraction missed the filing section."
+    },
+    {
+      "ticker": "FORM",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.item1_empty",
+      "evidence": "",
+      "suggestion": "Item 1 Business extraction missed the filing section."
+    },
+    {
+      "ticker": "TKO",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.item1_empty",
+      "evidence": "",
+      "suggestion": "Item 1 Business extraction missed the filing section."
+    },
+    {
+      "ticker": "COST",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.item1_empty",
+      "evidence": "",
+      "suggestion": "Item 1 Business extraction missed the filing section."
+    },
+    {
+      "ticker": "COST",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.mda_short",
+      "evidence": "",
+      "suggestion": "MD&A looks like a TOC line; parse the full Item 2/7 section."
+    },
+    {
+      "ticker": "GE",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.item1_empty",
+      "evidence": "",
+      "suggestion": "Item 1 Business extraction missed the filing section."
+    },
+    {
+      "ticker": "GE",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.mda_short",
+      "evidence": "",
+      "suggestion": "MD&A looks like a TOC line; parse the full Item 2/7 section."
+    },
+    {
+      "ticker": "SYF",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.item1_empty",
+      "evidence": "",
+      "suggestion": "Item 1 Business extraction missed the filing section."
+    },
+    {
+      "ticker": "COP",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.item1_empty",
+      "evidence": "",
+      "suggestion": "Item 1 Business extraction missed the filing section."
+    },
+    {
+      "ticker": "AOS",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.item1_empty",
+      "evidence": "",
+      "suggestion": "Item 1 Business extraction missed the filing section."
+    },
+    {
+      "ticker": "AOS",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.mda_short",
+      "evidence": "",
+      "suggestion": "MD&A looks like a TOC line; parse the full Item 2/7 section."
+    },
+    {
+      "ticker": "SLGN",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.item1_empty",
+      "evidence": "",
+      "suggestion": "Item 1 Business extraction missed the filing section."
+    },
+    {
+      "ticker": "SM",
+      "stage": "pack",
+      "severity": "warning",
+      "check_id": "pack.item1_empty",
+      "evidence": "",
+      "suggestion": "Item 1 Business extraction missed the filing section."
+    },
+    {
+      "ticker": "THC",
+      "stage": "sector",
+      "severity": "warning",
+      "check_id": "sector.excluded_still_selected",
+      "evidence": "Health Care is in exclude_sectors",
+      "suggestion": "Honor exclude_sectors / skip_healthcare_v1 at book time."
+    },
+    {
+      "ticker": "UTHR",
+      "stage": "sector",
+      "severity": "warning",
+      "check_id": "sector.excluded_still_selected",
+      "evidence": "Health Care is in exclude_sectors",
+      "suggestion": "Honor exclude_sectors / skip_healthcare_v1 at book time."
+    }
+  ]
+}

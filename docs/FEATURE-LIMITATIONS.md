@@ -10,12 +10,17 @@ Last updated 2026-08-18.
 
 ## 0. Where data comes from
 
-**All fundamental data comes from SEC EDGAR. yfinance supplies price history and
-nothing else.**
+**All *reported* fundamentals come from SEC EDGAR. yfinance supplies price history
+and analyst consensus estimates — and nothing else.**
+
+The split is deliberate: EDGAR holds what companies *filed*, and can never hold
+what analysts *expect*. Consensus is not a filing, so an EDGAR-only design cannot
+express a forward-multiple screen at all. See §1.
 
 | Field | Source |
 |---|---|
 | daily OHLC, index/macro prices | yfinance |
+| forward EPS FY1/FY2, consensus growth | yfinance `earnings_estimate` — live runs only; no consensus = not screenable |
 | shares outstanding | XBRL (`dei:EntityCommonStockSharesOutstanding`) |
 | trailing EPS (TTM diluted) | XBRL (`us-gaap:EarningsPerShareDiluted`) |
 | revenue, net income, EBIT, cash, debt | XBRL |
@@ -26,10 +31,11 @@ nothing else.**
 | macro series | FRED (ALFRED vintages when a key is set) |
 | ISM PMI / Services | ismworld.org |
 
-Removed outright: Yahoo `info` (`forwardEps`, `trailingEps`, `forwardPE`,
+Still removed: Yahoo `info` (`forwardEps`, `trailingEps`, `forwardPE`,
 `marketCap`, `earningsGrowth`, `revenueGrowth`, `beta`), Yahoo's earnings
 calendar, `targetMeanPrice`, `recommendationMean`, and the Yahoo business
-summary and news headlines that used to pad the research pack. All were a live
+summary and news headlines that used to pad the research pack. Estimates are a
+separate, explicit module — not a reopening of the `info` snapshot. All were a live
 snapshot with no history: unusable in a backdated run, and opaque in a live one.
 Beta is now computed from price history instead.
 
@@ -43,19 +49,60 @@ cached, and the multi-megabyte source payloads deliberately are not.
 
 ---
 
-## 1. Forward EPS — the one real gap
+## 1. Forward EPS
 
 **EDGAR does not contain analyst consensus, and never will.** It holds what
-companies file; consensus is a proprietary product (I/B/E/S, FactSet, Zacks,
-Visible Alpha). No free point-in-time source exists either.
+companies file; consensus is a proprietary product. The PTM screen runs on
+forward multiples and forward growth, so this is the one input that has to come
+from somewhere else.
 
-So the PTM screen's forward multiple cannot be built the way the process
-assumes. What is used instead, in order:
+**Live runs use analyst consensus** (`ptm/ingest/estimates.py`, yfinance
+`earnings_estimate`): FY1 and FY2 EPS as two independent numbers, with growth
+measured against the same table's prior-year EPS so the basis stays consistent.
+Coverage on the live universe: **1416 of 1505 names (94%)**, fetched in about a
+minute. Names below `[estimates] min_analysts` do not count — a two-analyst
+"consensus" is one opinion with a rounding error.
 
-1. **Realized TTM growth, extrapolated one year** — `forward_eps = TTM x (1 + g)`
-   where `g` is TTM over prior TTM from filings. This is arithmetic, not a
-   forecast.
+This matters more than it sounds. With extrapolation, `eps2 = eps1 x (1 + g)`
+reused the same `g`, so eg1 and eg2 were the same number and the EG taxonomy
+collapsed from nine reachable cases to three. With consensus, **0 of 1405 names
+have eg1 == eg2**. Full analysis: [EG-CASES.md](EG-CASES.md).
+
+### A name without consensus is excluded, not estimated around
+
+The 89 uncovered names are dropped from the screen (`[estimates]
+require_consensus`), rather than falling back to extrapolation. Falling back
+would mix two accounting bases in a single screen:
+
+| Group | median forward EPS / trailing EPS |
+|---|---|
+| consensus (adjusted) | **1.184** |
+| extrapolated (GAAP) | **1.000** |
+
+Adjusted consensus runs ~18% above GAAP trailing, so a fallback name's forward
+P/E is struck with a smaller denominator and looks expensive as an artefact —
+VTR at 112.6 against a 29.6 sector median was mostly that. And because those rows
+also sat inside `sector_pe1`, eighty-nine mismatched names were shifting the
+benchmark for fourteen hundred good ones.
+
+Cost of excluding them: 4 candidates out of 210. They remain in
+`yahoo_fundamentals.csv` with `forward_source` recorded, so the exclusion is
+auditable rather than invisible.
+
+**Backdated runs refuse consensus** — today's estimates carry no history, so
+using them to screen a past date is the lookahead the rest of the pipeline exists
+to prevent. `consensus_eps` returns None when the run is pinned, the whole
+universe falls to one consistent basis, and `require_consensus` is ignored
+(enforcing it would empty the screen).
+
+### The backdated fallback
+
+1. **Realised TTM growth, extrapolated one year** — arithmetic, not a forecast.
 2. **Held flat** at trailing when there is no usable growth signal.
+
+Under it `eps2 = eps1 x (1 + g)` with the same `g`, so eg1 and eg2 are one
+number and only the eg1-only EG cases are meaningful. See
+[EG-CASES.md](EG-CASES.md) §4.
 
 ### The growth clamp
 
@@ -90,6 +137,17 @@ still off by default, because being right on the sentences it matches does not
 fix the GAAP/non-GAAP problem.
 
 Turn it on only if you intend to reconcile the basis yourself.
+
+### Without it, the EG taxonomy breaks (backdated runs)
+
+Where consensus is unavailable — that is, on backdated runs — `eps2` is derived
+as `eps1 x (1 + g)` with the same `g` that produced `eps1`, so
+**eg1 and eg2 are the same number** (equal to ~1e-16 across all 155 candidates).
+Every EG case that compares them was therefore decided by floating-point noise —
+19 names labelled `acceleration` and 8 `worsening` on the 16th decimal place.
+With a tolerance applied, the taxonomy collapses from eleven cases to three.
+This is the most concrete cost of the missing consensus data. Full analysis and
+four routes to fixing it: [EG-CASES.md](EG-CASES.md).
 
 ### What *is* exact
 
@@ -204,6 +262,19 @@ What *was* still present was dead TA code, now removed:
 gates nothing, and removing it would break the risk footnote and the book's beta
 limit. If you want it gone too, say so — it is a separate call from removing
 entry signals.
+
+### Coverage: large groups used to be silently unreviewed
+
+Asked to comment on all 137 names in one earnings window, the model returned 8
+and stopped. The other 129 fell back to `"not covered by the group LLM pass"` —
+204 placeholders across the run, 66% of every view. Worse, `ranked_tickers` was
+padded with the unranked remainder, so a partial ranking read as a complete one.
+
+Per-name views are now requested in chunks of `VIEW_CHUNK = 12`, with the
+narrative as a separate synthesis pass over compact lines. Coverage went from
+**34% to 100%** (307/308). Both numbers are recorded on the review and printed
+in the markdown header — `LLM: yes — 33/33 names individually reviewed` — and a
+partial ranking now says so rather than being padded into a fake one.
 
 ### The model cannot revise the first pass
 
@@ -333,6 +404,57 @@ mean betas, which breaks dollar neutrality and the net-exposure limits.
 
 ---
 
+## 6. Run time and concurrency
+
+A full 1505-ticker run went from ~75 minutes to ~40. Where the time goes now:
+
+| Stage | Before | After | How |
+|---|---|---|---|
+| EDGAR fundamentals (1505) | 40.6 min | **11 min** | 8 threads against one shared 8 req/s SEC budget |
+| Idea generation (154) | ~33 min | **~26 min** | 4 concurrent ideas; capped by the LLM provider, not by us |
+| Group cross-read | ~1 min | ~2 min | more calls, because coverage went from 34% to 100% |
+
+### The SEC limiter
+
+SEC publishes a ceiling of 10 requests/second for a declared User-Agent. Rather
+than sleep between calls on a single thread, every SEC request now passes
+through one process-wide token bucket (`ptm/ingest/edgar.py: sec_get`,
+`SEC_MAX_RPS = 8`). Workers can be raised via `[edgar] workers` without changing
+the request rate — the limiter, not the pool size, is the throttle.
+
+### The LLM is the remaining bottleneck, and throttling is real
+
+Running 5 ideas at once returned `429 Too Many Requests` on 4 of 12 ideas, and
+each of those **silently lost its catalyst analysis** — which in the output is
+indistinguishable from "no catalysts found". Concurrency without backoff is a
+correctness bug, not a speedup.
+
+`chat_json` now retries throttled calls with exponential backoff and jitter
+(`RATE_LIMIT_RETRIES = 5`). The same benchmark then lost nothing, at 10.2s per
+idea rather than 5.7s: the honest cost of staying inside the provider's budget.
+`[llm] idea_workers` (default 4) tunes it; 1 restores fully sequential
+behaviour.
+
+### Run-to-run variability
+
+`[llm] temperature` is **0.2** by choice. Be aware of the consequence: the same
+inputs can produce different verdicts between runs, and it lands almost entirely
+on the short side. Longs pass the qualitative gate ~92% of the time so noise
+rarely flips one; shorts pass ~20%, so sampling noise moves names in and out of
+a 6-slot book. Two runs of the same repo produced visibly different shorts and
+near-identical longs for exactly this reason.
+
+Set `temperature = 0.0` when you need two runs to be comparable — for example
+when checking whether a code change moved the book, rather than the sampler.
+
+### Where a backdated run spends its time
+
+Caches are keyed by run date, so `--as-of` starts cold: ~11 min of EDGAR plus
+~26 min of ideas. Re-running the *same* date afterwards is much faster, because
+research packs and per-ticker extracts are already on disk.
+
+---
+
 ## Configuration
 
 ```toml
@@ -348,6 +470,18 @@ beta_aware_selection = true       # swap to respect beta_net_limit
 
 [llm]
 qualitative_bar = "consistent"    # "strict" demands quantified evidence (~55% vs ~80% pass)
+temperature = 0.2                 # 0.0 if you need run-to-run comparability
+idea_workers = 4                  # concurrent ideas; 1 = sequential
+
+[edgar]
+workers = 8                       # concurrent SEC fetchers, one shared 8 req/s budget
+extract_max_age_days = 2          # cached XBRL extracts expire on live runs
+
+[estimates]
+enabled = true                    # analyst consensus EPS (yfinance), live runs only
+min_analysts = 2                  # below this it is one opinion, not a consensus
+max_age_days = 2
+require_consensus = true          # no consensus -> excluded from screen and benchmark
 
 [edgar]
 fetch_guidance = false     # see §1: adjusted-vs-GAAP basis mismatch

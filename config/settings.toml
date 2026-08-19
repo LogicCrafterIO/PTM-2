@@ -8,13 +8,29 @@ long_mcap_max = 10_000_000_000
 short_mcap_min = 20_000_000_000
 max_positions = 12
 max_per_sector = 2   # per side: six shorts from one sector is one bet, not six
+# How many shorts may sit below short_mcap_min. Small-cap shorts carry borrow,
+# squeeze and liquidity risk large caps do not; a short book full of them is a
+# different strategy than intended. Not relaxed to fill the book - the side comes
+# back short and the breach says so.
+short_max_below_mcap = 1
 # A P/E-outlier screen is beta-long by construction (growth longs, value shorts), so a
 # dollar-neutral book still breaches the beta limit. Swap the fewest names to fix it.
 beta_aware_selection = true
+# Rank the book's selection by qualitative conviction (net evidence for minus against)
+# AHEAD of earnings growth. By selection time every name is already a P/E outlier that
+# fits an EG case and passed the gate, and eg1 is not comparable across cases - a
+# turnaround's is negative by definition, which buried all 22 of them on one run.
+# Size band and ISM tilt still lead. Does not affect RANKING.md, which predates research.
+qual_rank = true
 min_positions = 8
 exclude_sectors = ["Health Care"]  # skip pharma/biotech-heavy names in v1 via GICS Healthcare optional; screen still includes sector unless flagged
 skip_healthcare_v1 = false
 min_sector_names = 2  # block one-name "sector" PE outliers; live GICS groups are much larger
+# Relative ceiling for LONGS: reject a name priced above this multiple of its sector
+# median. max_screen_pe catches a near-zero EPS; this catches a real but indefensible
+# valuation (RXO reached the book at 8.7x sector). These names stay in the benchmark -
+# the valuation is real, it just is not a trade. 0 disables.
+max_sector_pe_multiple = 5.0
 max_screen_pe = 200.0  # above this the P/E reflects a near-zero EPS, not a valuation; excluded from the screen
 require_eg_case = true  # a candidate must fit one of the process EG cases, not merely have an extreme P/E
 # The PTM catalyst window, in CALENDAR days. The process states it as 20-60 trading
@@ -79,11 +95,33 @@ ism_nmi = "NMFBAI"
 # How hard the qualitative gate is to pass. "consistent" requires the verdict to
 # agree with the model's own evidence (~80% pass here); "strict" additionally
 # demands concrete, quantified evidence and rejects strategy language (~55%).
+# The qualitative verdict is the only real gate on the book, and the one step where a
+# small model returned a boolean contradicting its own evidence. One call per name, so
+# a larger model is cheap. Extraction and templating stay on the default model.
+# Measured mean latency for one verdict call: 8b 1.1s, nemotron-49b 6.8s, 70b 150s.
+# The 70b is unusable here. Nemotron is more selective than the 8b at a workable speed.
+verdict_model = "nvidia/llama-3.3-nemotron-super-49b-v1"
 qualitative_bar = "consistent"
 max_filing_chars = 12000
+# Pack budget, allocated by where the numbers are. Measured: the 8-K earnings release
+# carries ~22 quantitative expressions per 4k chars and ~10 more in the next 4k; Item 1
+# Business has a median of 0 and MD&A 1. Must sum to max_filing_chars.
+pack_business_chars = 3000
+pack_mda_chars = 3000
+pack_exhibit_chars = 6000
 max_candidates = 16
+# 0.2 by choice. Note the consequence: the short side passes qualitative ~20% of the
+# time, so sampling noise moves names in and out of a 6-slot book between runs. Longs
+# look stable only because they pass ~92%. Set 0.0 if you need run-to-run comparability.
 temperature = 0.2
 max_tokens = 1200
+# Ideas are independent until the group pass. 1 keeps the old sequential behaviour;
+# 4-6 cuts a 154-name run from ~33 min to under 10 without tripping provider limits.
+idea_workers = 5
+# Requests per second across the whole process. Pacing beats discovering the provider's
+# limit through 429s: at 4 workers unpaced, one run logged 217 retries and 5 ideas lost
+# their catalysts entirely. 0 disables pacing.
+max_rps = 0
 
 [asof]
 ism_months_available = 3   # month URLs ismworld.org still serves; sets the backdate floor
@@ -102,9 +140,39 @@ edges = [30, 60, 90]       # CALENDAR-day cuts to next earnings: 0-30, 31-60, 61
 publication_lag_days = 45  # keyless CSV fallback only; the API path uses true ALFRED vintages
 
 [edgar]
+workers = 8   # concurrent SEC fetchers; all share one 8 req/s budget
+# Cached XBRL extracts are keyed by ticker only, so on a live run they must expire or a
+# freshly filed 10-Q stays invisible. Lower this during earnings season. 0 = never expire.
+extract_max_age_days = 2
 # OFF by default: guidance is non-GAAP/adjusted while XBRL trailing EPS is GAAP,
 # so mixing them yields a meaningless growth rate and P/E. See docs/FEATURE-LIMITATIONS.md.
 fetch_guidance = false
 # Realized TTM growth above this is treated as distorted (one-off, tiny base) and
 # clamped before it is extrapolated into forward EPS.
 max_extrapolated_growth = 0.5
+
+[estimates]
+# Analyst consensus EPS (yfinance). The one input EDGAR structurally cannot supply:
+# it makes eps1/eps2 independent, which is what the EG taxonomy needs. Never used on
+# a backdated run - these carry no history, so using them then would be lookahead.
+enabled = true
+min_analysts = 2      # a two-analyst "consensus" is one opinion with a rounding error
+max_age_days = 2      # matches the EDGAR extract window
+# Exclude names with no consensus rather than falling back for them. Consensus EPS is
+# adjusted and sits ~18% above GAAP trailing, so a fallback name's P/E uses a smaller
+# denominator - it misprices that name AND drags the sector median everyone is judged
+# against. Ignored on backdated runs, where the whole universe is on one basis.
+require_consensus = true
+
+[transcripts]
+# Earnings call transcripts. Off until you supply a key: they are NOT in EDGAR (4% of
+# 379 exhibits carry any transcript marker) and not reliably scrapeable (Motley Fool
+# 429s, Investing.com 403s, Seeking Alpha forbids it in its terms), so this talks to a
+# licensed API instead. Worth having: the 8-K release carries a median of 2 change-
+# phrases against 9 level-phrases, and 37% carry none - which is the real ceiling on
+# how often the verdict can size a claim.
+enabled = false
+provider = "fmp"              # fmp | finnhub
+api_key_env = "TRANSCRIPT_API_KEY"
+quarters = 2                  # how many recent calls to pull
+max_chars = 6000              # per call, taken from the most change-dense passage

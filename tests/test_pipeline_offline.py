@@ -231,3 +231,45 @@ def test_research_funnel_warns_on_thin_fundamentals():
     assert out["warnings"]
     assert "universe 100" in out["funnel"]
     assert "fundamentals 10" in out["funnel"]
+
+
+def test_parallel_ideas_preserve_screen_rank_order(monkeypatch):
+    """Completion order is nondeterministic; output order must not be."""
+    import random
+    import time as _time
+
+    seed_pipeline_data()
+    monkeypatch.setattr("ptm.llm.llm_available", lambda: True)
+    monkeypatch.setattr("ptm.pipeline.llm_available", lambda: True)
+    monkeypatch.setattr("ptm.pipeline.research_pack", lambda cand: {"text": "BUSINESS: widgets.", "thin": False})
+
+    rng = random.Random(1)
+
+    def jittery_chat(system, user, **kwargs):
+        # Random latency so completion order differs from submission order.
+        _time.sleep(rng.uniform(0, 0.03))
+        if "supports_outlier" in user:
+            return {"supports_outlier": True, "why": "ok", "evidence_for": ["x"], "evidence_against": []}
+        if "Extract operating facts" in system:
+            return {"business_in_one_line": "b", "operating_plan": "p", "kpis": ["backlog"], "red_flags": [], "quotes": []}
+        if "non_earnings" in user:
+            return {"non_earnings": [], "meaningful": False, "reason": "none"}
+        if "views" in user or "narrative" in user:
+            return {"views": [], "summary": "s", "narrative": "n", "ranked_tickers": [], "contradictions": []}
+        return {"markdown": "# idea"}
+
+    monkeypatch.setattr("ptm.llm.chat_json", jittery_chat)
+    monkeypatch.setattr("ptm.group_review.chat_json", jittery_chat)
+    monkeypatch.setattr("ptm.earnings.resolve", lambda t, r, ref=None, report_dates=None: __import__(
+        "ptm.models", fromlist=["EarningsEstimate"]
+    ).EarningsEstimate(ticker=t, date="2026-10-01", estimated=True, days_to_earnings=44, basis="test"))
+
+    from ptm.pipeline import generate_ideas
+    from ptm.quant import build_candidates
+    from ptm.ranking import ordered_candidates
+
+    ideas = generate_ideas(max_candidates=None, skip_llm=False)
+    universe = read_df(data_dir("curated", "universe.csv"))
+    fundamentals = read_df(data_dir("curated", "yahoo_fundamentals.csv"))
+    expected = [c.ticker for c in ordered_candidates(build_candidates(universe, fundamentals))]
+    assert [i.candidate.ticker for i in ideas] == expected
