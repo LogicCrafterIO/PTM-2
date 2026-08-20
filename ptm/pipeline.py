@@ -24,18 +24,25 @@ from ptm.config import data_dir, ideas_dir, toml_settings
 from ptm.gates import apply_process_gates, candidate_warnings, size_fraction
 from ptm.ingest.company_research import research_pack
 from ptm.ingest.edgar import company_facts
+from ptm.ingest.expectations import expectations as market_expectations
 from ptm.ingest.fred import fetch_fred_macro
 from ptm.ingest.ism import scrape_ism
 from ptm.ingest.ism_sectors import apply_ism_tilts, split_quota
 from ptm.ingest.wikipedia import build_universe
 from ptm.ingest.yfinance_data import fetch_macro_prices, fetch_prices
-from ptm.io import read_df, write_df, write_json
+from ptm.io import read_df, read_json, write_df, write_json
 from ptm.earnings import resolve as resolve_earnings
 from ptm.group_review import group_review, render_group_review
 from ptm.llm import catalysts as llm_catalysts
 from ptm.llm import fallback_template, llm_available, macro_narrative, qualitative, render_template
 from ptm.log import log
 from ptm.macro import build_dashboard
+from ptm.revision_report import write_momentum
+from ptm.themes import cohort_momentum
+from ptm.themes import ism_alignment
+from ptm.themes import ism_support as theme_ism_support
+from ptm.themes import corroboration as theme_corroboration
+from ptm.themes import record as record_themes
 from ptm.organize import (
     group_by_bucket,
     group_by_sector,
@@ -46,8 +53,9 @@ from ptm.organize import (
 )
 from ptm.models import Candidate, CatalystResult, IdeaState, MacroSnapshot, QualResult, Side, TimingResult, TradeIdea
 from ptm.quant import build_candidates
-from ptm.ranking import conviction, conviction_detail, ordered_candidates, write_ranking
-from ptm.timing_prm import earnings_in_window, prm_for
+from ptm.drift import consensus_drift
+from ptm.ranking import cohort_rows, conviction, conviction_detail, momentum, reconcile_sides, ordered_candidates, write_ranking
+from ptm.risk import earnings_in_window, prm_for
 
 
 
@@ -375,9 +383,32 @@ def generate_ideas(
             except Exception as exc:
                 log(f"idea {cand.ticker}: research FAIL {exc}")
                 idea.extra["research_error"] = str(exc)
+        # Earnings date first: the expectations fetch needs it to choose the
+        # option expiry that actually covers the print, and the verdict needs
+        # the expectations. Nothing here depends on the qualitative result.
+        idea.earnings = resolve_earnings(cand.ticker, None, ref=as_of_date())
+        if idea.earnings.estimated:
+            idea.extra["earnings_estimate"] = idea.earnings.basis
+        expectations_payload = None
+        if not skip_llm:
+            try:
+                log(f"idea {cand.ticker}: expectations")
+                expectations_payload = market_expectations(cand.ticker, idea.earnings.date)
+                if expectations_payload:
+                    idea.extra["expectations"] = expectations_payload
+                    idea.extra["expectations_summary"] = expectations_payload.get("summary") or []
+            except Exception as exc:
+                log(f"idea {cand.ticker}: expectations FAIL {exc}")
+                idea.extra["expectations_error"] = str(exc)
         try:
             log(f"idea {cand.ticker}: qualitative")
-            idea.qual = qualitative(cand, excerpt, thin=bool(pack.get("thin")), skip_llm=skip_llm)
+            idea.qual = qualitative(
+                cand,
+                excerpt,
+                thin=bool(pack.get("thin")),
+                skip_llm=skip_llm,
+                expectations=expectations_payload,
+            )
             if idea.qual.supports_outlier is True:
                 idea.state = IdeaState.QUAL_PASS
             elif idea.qual.supports_outlier is False:
@@ -389,14 +420,11 @@ def generate_ideas(
             log(f"idea {cand.ticker}: qualitative FAIL {exc}")
             idea.extra["qual_error"] = str(exc)
             idea.qual = None
-        # Resolve the earnings date FIRST, and from EDGAR filing cadence, so its
+        # The date itself was resolved above, from EDGAR filing cadence, so its
         # provenance survives. Reading the pre-projected date out of the
         # fundamentals table lost that: every idea came out labelled "published
         # earnings date" when EDGAR publishes no forward calendar at all and
         # every date is a projection.
-        idea.earnings = resolve_earnings(cand.ticker, None, ref=as_of_date())
-        if idea.earnings.estimated:
-            idea.extra["earnings_estimate"] = idea.earnings.basis
         in_window, parsed = earnings_in_window(idea.earnings.date)
         try:
             log(f"idea {cand.ticker}: catalysts")
@@ -412,13 +440,27 @@ def generate_ideas(
         idea.timing = TimingResult(comment="omitted: technical analysis is not part of this research process")
         idea.prm = prm_for(prices, cand, market_hist)
         idea.prm.size_fraction = size_fraction(idea)
+        # Re-file any reason whose sign argues for the other side before anything
+        # scores or gates on it, and record the correction on the idea so the
+        # stored verdict matches the one the book was built from.
+        if idea.qual is not None:
+            for_items, against_items, contradictions = reconcile_sides(idea.qual, cand.side)
+            if contradictions:
+                idea.qual.evidence_for = for_items
+                idea.qual.evidence_against = against_items
+                idea.qual.red_flags = list(idea.qual.red_flags) + contradictions
+                log(f"idea {cand.ticker}: {len(contradictions)} reason(s) re-filed as evidence against")
         blocks = apply_process_gates(idea)
         idea.extra["gates"] = blocks
         # Persist the conviction score and its arithmetic on the idea, so the
         # number that orders the book can be checked in the JSON rather than
         # recomputed from memory.
         idea.extra["conviction"] = conviction(idea)
-        idea.extra["conviction_detail"] = conviction_detail(idea.qual)
+        # The measured half of the expectation gap. Deterministic and recorded
+        # on the idea so the ranking can be checked without an LLM call.
+        idea.extra["drift"] = consensus_drift(idea.extra.get("expectations"))
+        idea.extra["revision_momentum"] = momentum(idea)
+        idea.extra["conviction_detail"] = conviction_detail(idea.qual, cand.side)
         log(f"idea {cand.ticker}: size={idea.prm.size_fraction} gates={blocks or 'none'}")
         qual = idea.qual or QualResult(supports_outlier=None, summary="missing qualitative", red_flags=["llm_skipped"] if skip_llm else [])
         cats = idea.catalysts or CatalystResult(earnings_date=parsed, earnings_in_window=in_window, tradeable=in_window, reason="missing catalysts")
@@ -428,9 +470,9 @@ def generate_ideas(
                 qual,
                 cats,
                 idea.timing.comment if idea.timing else "",
-                idea.prm.model_dump() if idea.prm else {},
                 skip_llm=skip_llm,
                 earnings=idea.earnings,
+                expectations=expectations_payload,
             )
             if idea.state in {IdeaState.CATALYST_PASS, IdeaState.QUAL_PASS}:
                 idea.state = IdeaState.TEMPLATED
@@ -443,8 +485,8 @@ def generate_ideas(
                 qual,
                 cats,
                 idea.timing.comment if idea.timing else "",
-                idea.prm.model_dump() if idea.prm else {},
                 idea.earnings,
+                expectations_payload,
             )
             idea.template_markdown = md
         md_path, json_path = idea_paths(idea, day=day)
@@ -474,6 +516,31 @@ def generate_ideas(
     else:
         ideas = [_research(i, cand) for i, cand in enumerate(chosen, start=1)]
 
+    # Theme cohorts are cross-sectional, so they can only be formed once every
+    # idea exists. A name's revision momentum is corroborated when the other
+    # names exposed to the same theme are being revised the same way - the driver
+    # is theme-wide rather than idiosyncratic. Filings and analyst estimates
+    # only; nothing here reads a price, a return or a chart.
+    cohorts = cohort_momentum(cohort_rows(ideas))
+    # And the same theme vocabulary read against ISM: what purchasing managers
+    # are raising, and whether those industries' new orders are growing. Two
+    # independent populations answering different questions, so agreement is
+    # corroboration rather than confirmation.
+    ism_raw = read_json(data_dir("curated", "ism.json")) if data_dir("curated", "ism.json").exists() else {}
+    ism_themes = ism_alignment(ism_raw if isinstance(ism_raw, dict) else {})
+    for idea in ideas:
+        themes = list((idea.qual.themes if idea.qual else None) or [])
+        drift = idea.extra.get("drift") or {}
+        idea.extra["theme_corroboration"] = theme_corroboration(
+            themes, int(drift.get("direction") or 0), cohorts
+        )
+        idea.extra["ism_support"] = theme_ism_support(themes, ism_themes)
+        idea.extra["revision_momentum"] = momentum(idea)
+    write_json(data_dir("curated", "theme_ism_alignment.json"), ism_themes)
+    write_json(data_dir("curated", "theme_cohorts.json"), cohorts)
+    readable = sum(1 for c in cohorts.values() if c.get("available"))
+    log(f"themes: {readable} of {len(cohorts)} cohorts large enough to read")
+
     # Second pass: a cross-sectional LLM read of each group's fundamental cases.
     reviews = run_group_reviews(ideas, snap, day=day, skip_llm=skip_llm)
     write_json(data_dir("curated", "ideas.json"), [i.model_dump() for i in ideas])
@@ -487,6 +554,22 @@ def generate_ideas(
 
     book = assemble_book(ideas, snap.bias)
     log(f"book: {book.narrative}")
+    # Written after the book so it can mark which names were actually taken.
+    # This is the ranked answer to "which names look mispriced, by how much,
+    # and why" - see ptm/mispricing.py.
+    write_momentum(ideas, {i.candidate.ticker for i in book.ideas}, day=day)
+    record_themes(
+        day,
+        {
+            i.candidate.ticker: [
+                {"theme": str(t).rsplit(" (", 1)[0], "mentions": int(str(t).rsplit("(", 1)[1].rstrip(")"))}
+                for t in (i.qual.themes or [])
+                if "(" in str(t)
+            ]
+            for i in ideas
+            if i.qual is not None and i.qual.themes
+        },
+    )
     return ideas
 
 

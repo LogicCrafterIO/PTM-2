@@ -79,6 +79,10 @@ def write_macro_inputs(
     umcsi: float | None = 72.0,
     cpi_yoy: float | None = 0.03,
     m2_yoy: float | None = 0.05,
+    # Absent by default so the existing score/bias assertions keep their
+    # signal set. Tests that exercise permits pass them explicitly.
+    permits_yoy: float | None = None,
+    permits_history: list[dict] | None = None,
     skip_files: bool = False,
 ) -> None:
     from ptm.config import data_dir
@@ -104,16 +108,19 @@ def write_macro_inputs(
             }
         },
     )
-    write_json(
-        data_dir("curated", "macro_fred.json"),
-        {
-            "series": {
-                "cpi": {"yoy": cpi_yoy, "last": 320.0},
-                "umcsent": {"last": umcsi},
-                "m2": {"yoy": m2_yoy, "last": 21000.0},
-            }
-        },
-    )
+    fred_series = {
+        "cpi": {"yoy": cpi_yoy, "last": 320.0},
+        "umcsent": {"last": umcsi},
+        "m2": {"yoy": m2_yoy, "last": 21000.0},
+    }
+    if permits_yoy is not None or permits_history is not None:
+        fred_series["permits"] = {
+            "id": "PERMIT",
+            "last": (permits_history or [{"value": 1400.0}])[-1]["value"],
+            "yoy": permits_yoy,
+            "history": permits_history or [],
+        }
+    write_json(data_dir("curated", "macro_fred.json"), {"series": fred_series})
     write_json(
         data_dir("curated", "ism.json"),
         {

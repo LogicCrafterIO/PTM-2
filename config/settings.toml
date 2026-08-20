@@ -5,14 +5,18 @@ wikipedia = { sp500 = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies
 [filters]
 long_mcap_min = 3_000_000_000
 long_mcap_max = 10_000_000_000
-short_mcap_min = 20_000_000_000
+# Shorts have no size floor. 0 disables it. mcap_ok is the FIRST ranking key, so
+# a floor did not merely cap small shorts - it demoted every sub-floor name
+# beneath every large cap regardless of idea quality, and only 3 of 23 ready
+# shorts cleared $20bn, which held the short side to 4 names on every run.
+short_mcap_min = 0
 max_positions = 12
 max_per_sector = 2   # per side: six shorts from one sector is one bet, not six
-# How many shorts may sit below short_mcap_min. Small-cap shorts carry borrow,
-# squeeze and liquidity risk large caps do not; a short book full of them is a
-# different strategy than intended. Not relaxed to fill the book - the side comes
-# back short and the breach says so.
-short_max_below_mcap = 1
+# short_max_below_mcap (how many shorts may sit under short_mcap_min) is
+# deliberately unset. The machinery survives in book.py and re-enables by
+# setting this and short_mcap_min together; it is off because the size
+# constraint was doing more damage to the short book than the borrow and
+# squeeze risk it guarded against.
 # A P/E-outlier screen is beta-long by construction (growth longs, value shorts), so a
 # dollar-neutral book still breaches the beta limit. Swap the fewest names to fix it.
 beta_aware_selection = true
@@ -31,7 +35,26 @@ min_sector_names = 2  # block one-name "sector" PE outliers; live GICS groups ar
 # valuation (RXO reached the book at 8.7x sector). These names stay in the benchmark -
 # the valuation is real, it just is not a trade. 0 disables.
 max_sector_pe_multiple = 5.0
+# The same ceiling measured against growth instead of against nothing:
+# (pe1/sector_pe1) / ((1+eg1)/(1+sector_eg1)). Below 1.0 the extra growth more
+# than covers the extra multiple. max_sector_pe_multiple happily admits a name
+# paying 3x its sector multiple for flat earnings, which is exactly what two
+# independent reviews of one book both flagged (CWST 3.80, CRK 3.97). Longs
+# only - shorts are discount-multiple by construction. 0 disables.
+max_relative_peg = 3.0
 max_screen_pe = 200.0  # above this the P/E reflects a near-zero EPS, not a valuation; excluded from the screen
+# A passing verdict must be able to size at least one of its reasons. Applied
+# only to verdicts that came back true - a quality bar on a pass, not a second
+# way to fail - and counted after wrong-signed reasons are re-filed. Two names
+# in one book reached it on three unquantified reasons each (OGN, RSI) and both
+# were rejected by two independent human reviews on exactly that basis. 0 disables.
+min_quantified_for = 1
+# Block a name whose own filings point against the analyst revision that ranks
+# it. The book follows revision momentum, so this is where filings still bite -
+# as a risk control, not a signal. Filings are backward looking and cannot show
+# that analysts are wrong; they can show that following a revision would mean
+# ignoring the company's own reported numbers. false ranks on momentum alone.
+revision_veto = true
 require_eg_case = true  # a candidate must fit one of the process EG cases, not merely have an extreme P/E
 # The PTM catalyst window, in CALENDAR days. The process states it as 20-60 trading
 # days, which is 30-90 calendar days; the earnings buckets below use the same units
@@ -46,6 +69,14 @@ ism_trough_low = 40.0
 ism_trough_high = 45.0
 umcsi_bull = 80.0
 umcsi_benign_low = 70.0
+# Building permits (FRED PERMIT), year-over-year. Housing turns six to twelve
+# months before employment and capex, which is why it sits in the Conference
+# Board LEI. A decline past permits_recession is the size that has preceded past
+# US recessions - unless the 3m/3m read is already turning up, which is a trough
+# rather than a contraction.
+permits_strong = 0.05
+permits_weak = -0.05
+permits_recession = -0.15
 nfib_strong = 100.0
 nfib_warning = 95.0
 real_rate_cheap = 0.01
@@ -53,18 +84,11 @@ curve_invert = 0.0
 bias_long_threshold = 0.30
 bias_short_threshold = -0.30
 
-[timing]
-windows = [20, 60, 120, 250]
-
 [prm]
-min_r_score = 3.0
+# beta_net_limit is the only enforced risk limit. min_r_score, gross_limit,
+# cash_net_limit, amber_size and the whole [timing] block were removed with the
+# ATR stop and R-score: nothing read them. See ptm/risk.py.
 beta_net_limit = 0.30
-gross_limit = 2.0
-cash_net_limit = 0.50
-atrp_stop_lookback = 20
-atrp_target_lookback = 63
-atrp_target_multiple = 3.0
-amber_size = 0.50
 
 [yfinance]
 spx = "^GSPC"
@@ -114,7 +138,12 @@ max_candidates = 16
 # time, so sampling noise moves names in and out of a 6-slot book between runs. Longs
 # look stable only because they pass ~92%. Set 0.0 if you need run-to-run comparability.
 temperature = 0.2
-max_tokens = 1200
+# Raised from 1200 once the verdict started returning market_expectation,
+# deviation and priced_in alongside its evidence arrays. Measured response
+# length went to a median of 1746 chars and a max of 2744, and 6% of verdicts
+# truncated mid-JSON and were lost outright - SEZL, the best-evidenced long in
+# the book, among them.
+max_tokens = 3200
 # Ideas are independent until the group pass. 1 keeps the old sequential behaviour;
 # 4-6 cuts a 154-name run from ~33 min to under 10 without tripping provider limits.
 idea_workers = 5
@@ -139,6 +168,26 @@ edges = [30, 60, 90]       # CALENDAR-day cuts to next earnings: 0-30, 31-60, 61
 [fred_asof]
 publication_lag_days = 45  # keyless CSV fallback only; the API path uses true ALFRED vintages
 
+[themes]
+# Global themes, detected in each company's OWN filings rather than pulled from
+# news. That gives the ticker mapping for free, keeps every input dated so
+# backdated runs still work, and avoids the fact that a headline is evidence a
+# theme is already LATE. Patterns are a curated judgement call - edit freely.
+# Leave `patterns` unset to use the built-in list in ptm/themes.py.
+enabled = true
+min_mentions = 2   # one passing reference is not exposure
+max_per_name = 3   # a name claiming eight themes is claiming none
+
+[expectations]
+# What the market already expects: implied move from the options chain, consensus
+# revisions, price reaction to past prints, and surprise history. None of the four
+# has a point-in-time archive, so a backdated run refuses them all - the same rule
+# as [estimates]. See ptm/ingest/expectations.py.
+enabled = true
+max_age_days = 2
+workers = 8
+thin_open_interest = 100   # below this the implied move is weakly measured
+wide_spread_pct = 25.0     # as is above this
 [edgar]
 workers = 8   # concurrent SEC fetchers; all share one 8 req/s budget
 # Cached XBRL extracts are keyed by ticker only, so on a live run they must expire or a

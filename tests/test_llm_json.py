@@ -301,3 +301,154 @@ def test_absurd_magnitudes_are_dropped_but_the_claim_is_kept():
     assert items[0].quantified is False and items[0].impact_pct is None
     assert items[1].quantified is True and items[1].impact_pct == 9.0
     assert MAX_PLAUSIBLE_IMPACT_PCT == 500.0
+
+
+def test_sized_facts_put_changes_ahead_of_levels():
+    """impact_pct is defined as a CHANGE, so "revenue grew 9%" can size a claim
+    and "revenue was $87 million" cannot. The verdict sees a bounded list, so
+    the order decides what survives the cut."""
+    from ptm.llm import _sized_facts
+
+    pack = (
+        "ITEM 1 BUSINESS: We make things. "
+        "MD&A: Revenue was $87 million for the quarter. "
+        "Cash was $12 million at period end. "
+        "8-K EX-99.1: Revenue grew 9% year over year. Margins expanded 200 bps."
+    )
+    facts = _sized_facts(pack)
+    change_at = min(i for i, f in enumerate(facts) if "grew 9%" in f or "200 bps" in f)
+    level_at = min(i for i, f in enumerate(facts) if "was $87 million" in f)
+    assert change_at < level_at
+
+
+def test_sized_facts_lead_with_the_reported_changes_block():
+    """That block is computed from filings and consensus rather than parsed out
+    of prose, so it is the most reliable thing in the pack."""
+    from ptm.llm import _sized_facts
+
+    pack = (
+        "EDGAR FACTS: {}\n\n"
+        "REPORTED CHANGES (computed from filings and consensus; use these to size claims):\n"
+        "  - EPS change, consensus FY1 vs prior year: +46.5%\n"
+        "  - Forward P/E 22.3 against a sector median of 12.3 (1.8x)\n\n"
+        "MD&A: Revenue was $87 million.\n\n"
+        "8-K EX-99.1: Revenue grew 9%."
+    )
+    facts = _sized_facts(pack)
+    reported = [f for f in facts if f.startswith("[REPORTED]")]
+    assert reported and reported[0].startswith("[REPORTED] EPS change, consensus FY1")
+    assert not any("use these to size claims" in f for f in facts), "header text is not a figure"
+
+
+def test_sized_facts_drop_duplicates_and_empty_packs():
+    from ptm.llm import _sized_facts
+
+    assert _sized_facts("") == []
+    assert _sized_facts("No numbers here at all.") == []
+    repeated = "Revenue grew 9%. " * 5
+    assert len(_sized_facts(repeated)) == 1
+
+
+def test_expectations_prompt_says_so_when_there_is_nothing():
+    """Silence would let the model invent a priced_in judgement."""
+    from ptm.llm import _expectations_prompt
+
+    assert "not available" in _expectations_prompt(None)
+    assert "priced_in to unknown" in _expectations_prompt({})
+
+
+def test_forward_looking_facts_outrank_reported_ones():
+    """The category error this fixes: the verdict was comparing last quarter's
+    realised growth to a forward consensus and calling the difference a
+    mispricing. Analysts have seen that quarter too. Guidance and backlog are
+    the only facts that bear on a print that has not happened yet."""
+    from ptm.llm import _sized_facts
+
+    pack = (
+        "MD&A: Revenue grew 51.7% year over year in the quarter. "
+        "Cash was $12 million at period end. "
+        "8-K EX-99.1: Revenue for full year 2026 is now expected to be $1,560 to $1,600 million, "
+        "representing growth of 38% to 41%."
+    )
+    facts = _sized_facts(pack)
+    assert facts[0].startswith("[FORWARD]"), facts
+    assert "full year 2026" in facts[0]
+    assert any(f.startswith("[REPORTED]") and "51.7%" in f for f in facts)
+
+
+def test_long_guidance_sentences_are_kept():
+    """A 240-char cap was discarding the single best fact in the pack. Guidance
+    sentences are long precisely because they carry several figures - SEZL's ran
+    352 and 250 characters, so a raise to FY2026 guidance was filtered out while
+    a standing balance figure survived."""
+    from ptm.llm import _sized_facts
+
+    guidance = (
+        "8-K EX-99.1: This momentum supports our third raise to FY2026 guidance, taking "
+        "Adjusted Net Income to $185 million and Adjusted Net Income per Diluted Share to $5.25, "
+        "with Total Revenue Growth now at the high end of the prior range at 35% versus the "
+        "30% we indicated last quarter, reflecting continued subscriber momentum."
+    )
+    assert len(guidance) > 240
+    facts = _sized_facts(guidance)
+    assert facts, "a long guidance sentence must not be dropped"
+    assert facts[0].startswith("[FORWARD]")
+    assert "FY2026 guidance" in facts[0]
+
+
+def test_absurdly_long_text_is_still_rejected():
+    """The cap was raised, not removed - a whole paragraph is not a fact."""
+    from ptm.llm import _sized_facts, MAX_FACT_CHARS
+
+    blob = "Revenue grew 9% and " * 60 + "margins expanded 200 bps."
+    assert len(blob) > MAX_FACT_CHARS
+    assert _sized_facts(blob) == []
+
+
+def test_ranking_critical_fields_are_requested_first():
+    """Measured on a live run: 5 of 15 verdict responses truncated mid-JSON, and
+    filing_direction / momentum_durability appeared in only 8 and 7 of 15 - they
+    were requested LAST, so truncation ate the two fields the ranking depends on
+    while commentary survived."""
+    import inspect
+
+    from ptm import llm
+
+    source = inspect.getsource(llm.qualitative)
+    # The FIRST "Return JSON keys" belongs to the extract pass; the verdict block
+    # is the one that mentions filing_direction.
+    start = source.index("Return JSON keys", source.index("filing_direction (improving") - 400)
+    keys = source[start:source.index("Side={candidate.side.value}")]
+    for early in ("filing_direction", "momentum_durability"):
+        assert early in keys, f"{early} must be requested"
+    assert keys.index("filing_direction") < keys.index("supports_outlier")
+    assert keys.index("momentum_durability") < keys.index("evidence_for")
+
+
+def test_the_dead_mispricing_payload_is_no_longer_requested():
+    """expected_surprise_pct and friends drove nothing after the move to
+    revision momentum - they were pure response length, and the response was
+    running out of room."""
+    import inspect
+
+    from ptm import llm
+
+    source = inspect.getsource(llm.qualitative)
+    start = source.index("Return JSON keys", source.index("filing_direction (improving") - 400)
+    keys = source[start:source.index("Side={candidate.side.value}")]
+    for dead in ("expected_surprise_pct", "surprise_basis", "gap_confidence", "gap_basis_type"):
+        assert dead not in keys, f"{dead} is no longer used and must not be asked for"
+
+
+def test_retry_keeps_both_ends_of_the_prompt():
+    """The retry path kept only the first 4000 characters. The verdict question
+    appends the expectations and theme blocks at the END, so a retry silently
+    discarded exactly the context it was meant to help with."""
+    from ptm.llm import _shorten_middle
+
+    prompt = "KEYS-AT-THE-START " * 100 + "filler " * 500 + "THEMES-AT-THE-END"
+    out = _shorten_middle(prompt, 1000)
+    assert len(out) <= 1000
+    assert out.startswith("KEYS-AT-THE-START")
+    assert out.endswith("THEMES-AT-THE-END")
+    assert _shorten_middle("short", 1000) == "short"

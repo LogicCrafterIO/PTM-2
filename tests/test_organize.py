@@ -44,7 +44,7 @@ def test_bucket_edges_are_inclusive(days, expected):
 def test_buckets_and_catalyst_gate_share_units():
     """The PTM window is 20-60 trading days = 30-90 calendar days, and the
     buckets use the same units, so 31-60d and 61-90d names can satisfy the gate."""
-    from ptm.timing_prm import catalyst_window
+    from ptm.risk import catalyst_window
 
     low, high = catalyst_window()
     assert (low, high) == (30, 90)
@@ -98,7 +98,7 @@ def test_published_future_date_buckets_by_calendar_days(isolate_roots):
 
 def test_a_name_inside_the_catalyst_window_is_tradeable(isolate_roots):
     """The gate and the buckets must agree: a 31-60d name can pass."""
-    from ptm.timing_prm import earnings_in_window
+    from ptm.risk import earnings_in_window
 
     forty = REF + timedelta(days=40)
     idea = _idea("MID", "Industrials", Side.LONG, forty.isoformat())

@@ -243,7 +243,6 @@ def check_idea(idea: dict, pack: dict | None, cfg: dict) -> list[Finding]:
     extra = idea.get("extra") or {}
     qual = idea.get("qual") or {}
     cats = idea.get("catalysts") or {}
-    prm = idea.get("prm") or {}
 
     pe1, sector_pe1 = cand.get("pe1"), cand.get("sector_pe1")
     if pe1 is not None and sector_pe1 is not None and abs(float(pe1) - float(sector_pe1)) < 1e-9:
@@ -399,21 +398,6 @@ def check_idea(idea: dict, pack: dict | None, cfg: dict) -> list[Finding]:
                 check_id="cat.tradeable_without_window",
                 evidence=str(cats.get("reason") or non)[:300],
                 suggestion="Confirm non-earnings catalysts actually fall inside the 30-90 calendar-day window.",
-            )
-        )
-
-    r_score = prm.get("r_score")
-    stop, target = prm.get("stop_pct"), prm.get("target_pct")
-    multiple = cfg["prm"]["atrp_target_multiple"]
-    if r_score is not None and stop and target and abs(float(target) / float(stop) - float(multiple)) < 1e-9:
-        findings.append(
-            Finding(
-                ticker=ticker,
-                stage="timing",
-                severity="info",
-                check_id="timing.rscore_tautology",
-                evidence=f"r_score={r_score} is always stop*{multiple}",
-                suggestion="R-score is currently a constant; it cannot rank ideas.",
             )
         )
 

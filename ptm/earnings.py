@@ -22,7 +22,7 @@ from datetime import date, timedelta
 
 from ptm.asof import as_of_date, days_until, parse_day
 from ptm.models import EarningsEstimate
-from ptm.timing_prm import normalize_earnings_date
+from ptm.risk import normalize_earnings_date
 
 # US issuers report quarterly; ~91 calendar days is the default step when a
 # company has too little filing history to measure its own cadence.

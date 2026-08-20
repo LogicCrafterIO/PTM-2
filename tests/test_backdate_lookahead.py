@@ -472,3 +472,38 @@ def test_densest_window_prefers_period_over_period_language():
     # always carry neighbours. What matters is that it beats taking the head.
     assert "grew 9%" in window and "200 basis points" in window
     assert "grew 9%" not in text[:400], "the head is the wrong passage, which is the point"
+
+
+def test_expectations_are_refused_on_a_backdated_run():
+    """Options chains, revisions and surprise tables all describe TODAY and have
+    no vintage. Serving them to a historical run is the exact lookahead the rest
+    of this module exists to prevent."""
+    from ptm.ingest.expectations import build_expectations, expectations
+
+    set_as_of("2026-06-15")
+    try:
+        assert expectations("AAPL", "2026-07-01") is None
+        assert build_expectations(["AAPL"]) == {}
+    finally:
+        set_as_of(None)
+
+
+def test_expectations_module_guards_before_any_network_call():
+    """The guard must sit above the fetch, not inside it — a network call made
+    and then discarded still costs a rate limit and still risks being cached."""
+    import ptm.ingest.expectations as mod
+
+    source = Path(mod.__file__).read_text(encoding="utf-8")
+    body = source.split('"""', 2)[-1]
+    guard = body.index("if is_backdated():\n        return None")
+    fetch = body.index('payload = {\n        "ticker": ticker')
+    assert guard < fetch, "the backdating guard must precede the fetch"
+
+
+def test_verdict_cannot_claim_something_is_priced_without_the_data():
+    """priced_in is forced to unknown when no expectations were supplied, so a
+    model cannot invent a judgement that then moves conviction."""
+    import ptm.llm as llm
+
+    source = Path(llm.__file__).read_text(encoding="utf-8")
+    assert 'if not expectations:\n        priced_in = "unknown"' in source

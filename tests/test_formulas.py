@@ -1,13 +1,10 @@
 from ptm.formulas import (
-    atrp,
     bear_level,
     earnings_growth,
     enterprise_value,
     pe,
     peg,
-    r_score,
     slope_beta,
-    true_range_pct,
 )
 
 
@@ -28,11 +25,13 @@ def test_bear_level():
     assert bear_level(100) == 80
 
 
-def test_atrp_and_r():
-    tr = true_range_pct(12, 10, 11, 10)
-    assert tr is not None and tr > 0
-    assert abs(atrp([0.1, 0.1, 0.1]) - 0.1) < 1e-9
-    assert r_score(0.24, 0.08) == 3
+def test_atr_and_r_score_helpers_are_gone():
+    """Deleted with the move to options: a stop distance on the underlying does
+    not manage a defined-risk position, and none of these gated anything."""
+    import ptm.formulas as formulas
+
+    for name in ("true_range_pct", "atrp", "r_score", "close_to_close", "high_to_low"):
+        assert not hasattr(formulas, name), f"{name} should have been removed"
 
 
 def test_eg_zero_and_negative_prev():

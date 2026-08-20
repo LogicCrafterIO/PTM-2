@@ -104,6 +104,10 @@ def _pack_text(payload: dict, limit: int) -> str:
         f"ITEM 1 BUSINESS: {payload.get('business') or ''}",
         f"MD&A: {payload.get('mda') or ''}",
         f"8-K EX-99.1: {payload.get('earnings_exhibit') or ''}",
+        # Was assembled into the payload but never rendered into the text, so
+        # enabling transcripts would silently have done nothing. Empty unless
+        # [transcripts] is configured; see ptm/ingest/transcripts.py.
+        f"EARNINGS CALL: {payload.get('transcript') or ''}",
         "NEWS: " + " | ".join(h.get("title") or "" for h in payload.get("headlines") or []),
         f"ISM: {json.dumps(payload.get('ism') or {}, default=str)}",
     ]

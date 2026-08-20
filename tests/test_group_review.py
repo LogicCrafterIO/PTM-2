@@ -126,8 +126,39 @@ def test_group_review_is_not_wired_into_any_gate():
     from ptm import book, gates
 
     source = inspect.getsource(gates) + inspect.getsource(book)
-    for token in ("GroupReview", "group_review", "momentum", "direction", "aligned"):
-        assert token not in source
+    for token in ("GroupReview", "group_review"):
+        assert token not in source, f"{token} must not reach a gate or the book"
+
+
+def test_no_price_derived_signal_reaches_a_gate_or_the_book():
+    """This guard used to ban the bare words "momentum", "direction" and
+    "aligned". That was a proxy for the real rule - no technical analysis - and
+    the proxy expired: "revision momentum" now means analyst estimate revisions,
+    which are a fundamental input, and filing "direction" is a reading of a
+    filing. Both are legitimate.
+
+    So the guard tests the actual prohibition instead, and is stricter for it:
+    no price-derived construct may influence inclusion or sizing.
+    """
+    import re
+
+    from ptm import book, gates
+
+    source = (inspect.getsource(gates) + inspect.getsource(book)).lower()
+    # Word-bounded: a bare substring search matched "sma" inside "small numbers"
+    # and "ema" inside "demand", which would have made this guard unfixable
+    # noise rather than a check.
+    for token in (
+        "sma", "ema", "macd", "tape", "atr", "stop_pct", "target_pct", "r_score",
+        "close_to_close", "price action", "moving average", "relative strength",
+        "trailing return",
+    ):
+        assert not re.search(rf"\b{re.escape(token)}\b", source), (
+            f"{token!r} is technical analysis and must not gate a name"
+        )
+    # And nothing may read a price series to decide membership.
+    for token in ("prices.csv", "read_df(data_dir"):
+        assert token not in source, f"{token!r} reads prices inside a gate"
 
 
 def test_large_groups_are_chunked_so_every_name_is_covered(monkeypatch):

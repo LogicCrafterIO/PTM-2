@@ -685,19 +685,67 @@ GUIDANCE_CUES = re.compile(
     re.I,
 )
 # Guidance is about a future full year, not a quarter just reported.
-FULL_YEAR_CUES = re.compile(r"(full[- ]year|full year|fiscal (?:year )?20\d\d|FY\s?\d{2,4}|for 20\d\d)", re.I)
+FULL_YEAR_CUES = re.compile(r"(full[- ]year|full year|fiscal (?:year )?20\d\d|\bFY\s?\d{2,4}\b|for 20\d\d)", re.I)
 # Anything that reads as a report of results already delivered.
 REPORTED_CUES = re.compile(
-    r"(compared (?:to|with)|versus|vs\.?|quarter ended|year ended|months ended|"
-    r"Q[1-4]\s?['’]?\d{2}|reported (?:diluted |adjusted )?(?:eps|earnings)|"
-    r"was|were|increase of|decrease of|declined|grew)",
+    r"(compared (?:to|with)|versus|\bvs\.?\b|quarter ended|year ended|months ended|"
+    r"\bQ[1-4]\s?['’]?\d{2}\b|reported (?:diluted |adjusted )?(?:eps|earnings)|"
+    r"\bwas\b|\bwere\b|increase of|decrease of|declined|grew)",
     re.I,
 )
-EPS_CUES = re.compile(r"(earnings per (?:diluted )?share|diluted eps|adjusted eps|\bEPS\b)", re.I)
+# "Adjusted Net Income per Diluted Share to $5.25" is EPS guidance, and the
+# original pattern did not recognise it - it wanted the literal words "earnings
+# per share". Net income per share is the same quantity under a different and
+# very common label, so real guidance was being read as no guidance at all.
+EPS_CUES = re.compile(
+    r"(earnings per (?:diluted )?share|(?:net )?income per (?:diluted |basic )?share|"
+    r"per (?:diluted|basic) share|diluted eps|adjusted eps|\bEPS\b)",
+    re.I,
+)
 RANGE_RE = re.compile(rf"{_MONEY}\s*(?:to|-|–|—|through)\s*{_MONEY}", re.I)
-SINGLE_RE = re.compile(rf"(?:of|be|approximately|about|at least)\s+{_MONEY}", re.I)
+# "to" and "at" matter: companies write "raising guidance TO $5.25" at least as
+# often as "guidance OF $5.25", and omitting them read real guidance as none.
+# Safe to include here because a sentence only reaches this point having already
+# cleared the guidance, EPS, full-year, stale-year and reported-results checks.
+SINGLE_RE = re.compile(
+    rf"(?:of|be|to|at|approximately|about|at least|reaching)\s+{_MONEY}", re.I
+)
 # Per-share numbers live in single digits; anything larger is revenue or a total.
 MAX_PLAUSIBLE_EPS = 60.0
+
+
+def _is_per_share(sentence: str, match: re.Match) -> bool:
+    """Is the figure this match found a per-share number, or a revenue total?
+
+    SMCI's release guided "net sales in the range of $14.5 billion", and the
+    parser reported 0.94 EPS against a 4.34 consensus - a 78% miss, from a
+    revenue figure. What separates them is the units immediately after the
+    number, not anywhere in the sentence: a real guidance sentence often gives
+    revenue and EPS side by side.
+    """
+    tail = sentence[match.end() : match.end() + 24].lower()
+    if re.match(r"\s*(billion|million|bn|mm|thousand)", tail):
+        return False
+    return True
+
+
+def _mentions_stale_year(sentence: str) -> bool:
+    """Does this sentence name a year that has already finished?
+
+    Guidance is about the year ahead. A release discussing "fiscal 2024" or
+    "FY 2022 diluted EPS" is recounting history, and the regex cannot tell the
+    difference from wording alone - it matched a Cadence acquisition note and a
+    Moody's prior-year comparative, both as guidance.
+    """
+    from ptm.asof import as_of_date
+
+    current = as_of_date().year
+    years = [int(y) for y in re.findall(r"\b(20\d\d)\b", sentence)]
+    if not years:
+        return False
+    # Stale only when EVERY year named is in the past; a sentence comparing
+    # last year to guidance for this one is still about this one.
+    return all(y < current for y in years)
 
 
 def parse_eps_guidance(text: str) -> dict | None:
@@ -710,6 +758,12 @@ def parse_eps_guidance(text: str) -> dict | None:
     if not text:
         return None
     flat = re.sub(r"\s+", " ", text)
+    # Earnings releases are bulleted, and the bullet glyphs survive extraction
+    # (often mangled to U+FFFD). Splitting on sentence punctuation alone glued a
+    # guidance clause to the results bullet that followed it, so the
+    # "reported results" veto fired on the neighbour's wording and threw the
+    # guidance away - SEZL's FY2026 raise was lost to a trailing "GMV grew 37.9%".
+    flat = re.sub(r"[•‣▪●·�]+", ". ", flat)
     for sentence in re.split(r"(?<=[.;])\s+", flat):
         if len(sentence) > 600:
             continue
@@ -721,8 +775,20 @@ def parse_eps_guidance(text: str) -> dict | None:
             continue
         if re.search(r"per share.{0,40}(dividend|distribution)", sentence, re.I):
             continue
+        # Measured on 195 candidates, the first working version of this parser
+        # was right about 3 times in 9. The four failures each have a signature:
+        # NOT a blanket veto on scale words: a real guidance sentence often
+        # gives revenue and EPS together ("net sales down 4.5% to down 2.5%,
+        # earnings per share of $3.00 to $3.25"). Only the figure actually
+        # matched matters, so the check moved to _is_per_share below.
+        if re.search(r"(current guidance|prior guidance)\s+(current|prior|Q[1-4]|full)", sentence, re.I):
+            continue  # ATI: matched a guidance-comparison TABLE header
+        if _mentions_stale_year(sentence):
+            continue  # CDNS "fiscal 2024", MCO "FY 2022" - history, not guidance
+        if re.search(r"\bGAAP\b(?!\s*[/-]?\s*non)", sentence) and re.search(r"non-?GAAP", sentence, re.I):
+            continue  # EPAM/ILMN: release quotes BOTH bases; consensus is adjusted
         match = RANGE_RE.search(sentence)
-        if match:
+        if match and _is_per_share(sentence, match):
             low, high = float(match.group(1)), float(match.group(2))
             if low <= high <= MAX_PLAUSIBLE_EPS:
                 return {
@@ -733,7 +799,7 @@ def parse_eps_guidance(text: str) -> dict | None:
                 }
             continue
         single = SINGLE_RE.search(sentence)
-        if single:
+        if single and _is_per_share(sentence, single):
             value = float(single.group(1))
             if 0 < value <= MAX_PLAUSIBLE_EPS:
                 return {

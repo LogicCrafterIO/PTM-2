@@ -257,11 +257,24 @@ What *was* still present was dead TA code, now removed:
 
 `test_no_technical_analysis_surface_remains` asserts none of it comes back.
 
-**What was kept, deliberately:** the ATR-based stop, range target and beta in
-`prm_for`. That is position risk sizing applied *after* a name is selected, it
-gates nothing, and removing it would break the risk footnote and the book's beta
-limit. If you want it gone too, say so — it is a separate call from removing
-entry signals.
+**Asked and answered.** This section used to say the ATR stop, range target and
+R-score were kept deliberately, and invited the call to remove them. That call
+was made once the book moved to options, and they are now gone too:
+`stop_pct`, `target_pct`, `r_score` and `atrp` are off `PRMResult`, the ATR
+maths is out of `ptm/formulas.py`, the `timing.rscore_tautology` audit check is
+deleted, and the dead `[timing]` block and five unread `[prm]` keys are out of
+the config. `ptm/timing_prm.py` is renamed **`ptm/risk.py`**, which after the
+cut is beta plus the earnings-window helpers.
+
+The reasoning: a stop distance on the underlying is not how a defined-risk
+options position is managed, and the three numbers gated nothing and ranked
+nothing — the repository's own audit had been reporting *"R-score is currently a
+constant; it cannot rank ideas"* the entire time. `atrp` was read nowhere at all.
+
+**What is kept:** `beta`, because `_rebalance_beta` swaps names in and out of the
+book on it; and `size_fraction`, which is a stub returning 1.0 but is real
+arithmetic in the weight calculation. Both live on an independent code path
+inside `prm_for` and were untouched by the cut.
 
 ### Coverage: large groups used to be silently unreviewed
 
@@ -361,7 +374,7 @@ edge.
 
 `max_positions = 12`, so six per side, taken in screen-rank order — but two
 constraints now shape the selection, because rank alone produced an untradeable
-book.
+book. A third, a size floor on shorts, was tried and removed; see below.
 
 ### Sector cap
 
@@ -372,6 +385,41 @@ The cap is **not** relaxed to fill the book. Quietly topping up from a full
 sector would make the setting meaningless and hide correlated risk, so the side
 comes back short and `limit_breaches` records why:
 `"short side held to 4 of 6 available by the 2-per-sector cap"`.
+
+### Short size floor — added, then removed
+
+`short_mcap_min` was set to $20bn with `short_max_below_mcap = 1`, on the
+reasoning that small-cap shorts carry borrow, squeeze and liquidity risk large
+caps do not. It cost more than it saved and is now **off** (`short_mcap_min = 0`,
+`short_max_below_mcap` unset).
+
+The failure was where the floor acted. `mcap_ok` is the **first key** in every
+ranking function, so a floor did not merely cap how many small shorts entered
+the book — it sorted *every* sub-floor short beneath *every* large cap
+regardless of idea quality. With only **3 of 23** ready shorts clearing $20bn on
+the last full run, the short side came back at 4 of 6 on every run, and the two
+names the process actually liked best were unreachable.
+
+Longs keep their band (`long_mcap_min`/`long_mcap_max`, $3-10bn) because hunting
+that size is the process, not a risk control.
+
+The machinery survives and is re-enabled by setting both values together:
+`_pick(mcap_floor=..., max_below_floor=...)` in `ptm/book.py` still honours a
+floor when handed one, `_rebalance_beta` still refuses to smuggle a sub-floor
+name in via a beta swap, and both paths stay under test. What is gone is the
+default, not the option.
+
+**What this gives up.** Nothing now stops a short book of small caps, and the
+engine models none of what that implies. Borrow cost and squeeze risk are the
+usual objections, and they do not bind here — the book is expressed in options,
+where there is no borrow to locate and no position to squeeze.
+
+What does still bind is **options liquidity**, which the repository does not
+look at anywhere. The first rebuild under this change put five of six shorts
+under $20bn, two of them near $2bn, and a $2bn name can carry a thin chain,
+wide spreads and sparse expiries whatever its fundamentals. Nothing upstream
+checks that a tradeable contract exists at a sensible price, so it stays a
+manual check on the short side.
 
 ### Beta-aware selection
 
@@ -401,6 +449,95 @@ Note this is a *selection* lever, not a *sizing* one. Beta-neutralising by
 weight instead would require roughly 14% long / 86% short gross given those
 mean betas, which breaks dollar neutrality and the net-exposure limits.
 `size_fraction` remains a stub returning 1.0.
+
+---
+
+## 5b. What the market already expects
+
+The single largest gap this repository had, and the one three independent
+reviews of the same book all named: a **valuation** argument was being converted
+into an **earnings-event** trade without establishing what the market already
+assumed. Measured on a full run, **4 of 323 evidence items (1.2%)** referred to
+expectations at all.
+
+Two root causes, both structural.
+
+### The verdict model was never shown the research pack
+
+`qualitative()` is two passes. Pass A reads the 12 KB pack; pass B — the verdict
+that produces `evidence_for` and every `impact_pct` — received only
+`extract_summary`, roughly 1.5 KB of business line, plan, ≤6 KPIs and ≤4 quotes.
+Its own system prompt told it to *"search the pack for the number that sizes
+it."* **The pack was not there.** The model was being asked to find figures in a
+document it had never been given, which is why most evidence came back
+unquantified regardless of prompt wording.
+
+`_sized_facts()` in `ptm/llm.py` now hands the verdict the figures directly:
+sentences from the pack carrying a number and a unit, ordered **changes before
+levels** because `impact_pct` is defined as a change ("revenue grew 9%" can size
+a claim, "revenue was $87 million" cannot), led by the pack's pre-computed
+`REPORTED CHANGES` block. Median 11 sized facts per pack, none empty across 202.
+OGN — which returned **zero** quantified evidence and was rejected by both human
+reviewers for exactly that — had 11 available, including "trailing EPS −34.6%".
+
+### Nothing measured what was priced
+
+`ptm/ingest/expectations.py` adds four measures:
+
+| Measure | Source | Answers |
+|---|---|---|
+| Implied move | `option_chain()`, first expiry covering the print; ATM straddle ÷ spot | the magnitude the market is pricing |
+| Estimate revisions | yfinance `eps_trend` / `eps_revisions` | which way consensus has already gone |
+| Past-print reaction | `prices.csv` + cached EDGAR report dates | whether the story is already in the price |
+| Surprise history | yfinance `earnings_history` | whether this name habitually beats |
+
+The verdict must now return `market_expectation`, `deviation` and `priced_in`.
+Conviction is docked **2.0** for `already_priced` and **0.75** for
+`partly_priced` — the thesis may be perfectly true, it just is not news, and
+being true is what the screen already established. `priced_in` is forced to
+`unknown` when no expectations data was supplied, so a model cannot invent a
+judgement that then moves the ranking.
+
+The contrast this draws is stark. Two names from one book:
+
+```
+SEZL (long)   implied 31.9%   consensus +3.2%/90d   6 up / 0 down   beat 4 of 4
+OGN  (short)  implied  3.4%   consensus +4.4%/90d   0 up / 0 down   beat 1 of 4
+```
+
+The OGN short was fighting a *rising* consensus for a 3.4% payoff.
+
+### Three caveats, stated rather than buried
+
+* **The implied move is an approximation.** The straddle spans the whole expiry,
+  so it carries non-earnings volatility; it is the standard read, not a
+  decomposed event move.
+* **A stale last trade is not a quote.** On a one-sided chain the mid cannot be
+  formed and `lastPrice` may be days old. That case is labelled
+  `quote_basis: last_trade_only` and called unreliable in the summary — OGN's
+  3.4% above is one, and should not be read as measured.
+* **Filing dates are not release dates.** Past-print reactions key off 10-K/10-Q
+  filing dates, usually the same day as the 8-K for US issuers but not
+  guaranteed. Only ~4 prints fall inside the one-year price window.
+
+### Backdated runs get none of it
+
+No option chain, revisions table or surprise history has a point-in-time
+archive. All four are refused when `is_backdated()`, exactly as `consensus_eps`
+already is, and `priced_in` then stays `unknown` for every name. **Live and
+backdated runs therefore see different evidence.** That asymmetry is the real
+cost of measuring expectations, and it is accepted deliberately:
+`tests/test_backdate_lookahead.py` fails the build if the guard ever moves below
+the fetch.
+
+### Where it surfaces
+
+Every place the ticker appears: `extra.expectations` and
+`extra.expectations_summary` on each idea's JSON, the same data inside
+`data/curated/ideas.json` and `book.json`, a **What the market already expects**
+section in each idea's markdown, `priced_in` / `implied_move_pct` /
+`relative_peg` in the group cross-read payload, and a book-level breach naming
+any name whose thesis the verdict judged already priced.
 
 ---
 

@@ -63,7 +63,30 @@ def _pick(
 
 
 def _beta_of(idea: TradeIdea) -> float:
+    """Beta against the index, from ptm/risk.py.
+
+    Worth being precise: this is the OLS slope of the name's daily returns
+    regressed on the S&P's, which equals correlation times the ratio of
+    volatilities - not correlation. A name that tracks the index closely but
+    moves half as far has a beta near 0.5 despite a correlation near 1.
+    Defaults to 1.0 when unmeasurable, so an unknown never looks like a hedge.
+    """
     return idea.prm.beta if idea.prm and idea.prm.beta is not None else 1.0
+
+
+def _pool_rank(idea: TradeIdea, long_pool: list[TradeIdea], short_pool: list[TradeIdea]) -> int:
+    """Where a candidate sits in the ranked pool it came from.
+
+    Both pools arrive in selection order, so position IS rank. Anything not
+    found sorts last rather than first, so a lookup miss cannot silently
+    promote a name.
+    """
+    for pool in (long_pool, short_pool):
+        try:
+            return pool.index(idea)
+        except ValueError:
+            continue
+    return 10**6
 
 
 def _portfolio_beta(longs: list[TradeIdea], shorts: list[TradeIdea]) -> float | None:
@@ -126,7 +149,13 @@ def _rebalance_beta(
         beta = _portfolio_beta(longs, shorts)
         if beta is None or abs(beta) <= limit:
             break
-        best = None
+        # Every swap that improves beta is a candidate; the question is which to
+        # take. Selecting on beta alone was a real bug - the docstring promised
+        # the best-ranked eligible replacement and the code ignored rank
+        # entirely, so one run swapped in AWR (revision momentum +0.0) when
+        # BRK-B at +10.6 and CASY at +8.0 were both available with betas just as
+        # useful. Beta is a constraint to satisfy, not a quantity to minimise.
+        compliant, improving = [], []
         for side, picked, pool in (("long", longs, long_pool), ("short", shorts, short_pool)):
             for out_idea in picked:
                 for in_idea in pool:
@@ -146,10 +175,20 @@ def _rebalance_beta(
                     )
                     if new_beta is None or abs(new_beta) >= abs(beta):
                         continue
-                    if best is None or abs(new_beta) < abs(best[0]):
-                        best = (new_beta, side, out_idea, in_idea)
-        if best is None:
+                    row = (new_beta, side, out_idea, in_idea)
+                    improving.append(row)
+                    if abs(new_beta) <= limit:
+                        compliant.append(row)
+        if not improving:
             break
+        # Among swaps that bring the book INSIDE the limit, take the best-ranked
+        # replacement - the pool arrives in rank order, so its index is its rank.
+        if compliant:
+            best = min(compliant, key=lambda r: _pool_rank(r[3], long_pool, short_pool))
+        else:
+            # Nothing gets inside the limit yet, so make the most progress and
+            # let the loop try again.
+            best = min(improving, key=lambda r: abs(r[0]))
         _, side, out_idea, in_idea = best
         target = longs if side == "long" else shorts
         target[target.index(out_idea)] = in_idea
@@ -258,6 +297,50 @@ def assemble_book(ideas: list[TradeIdea], bias: Bias) -> BookProposal:
                 f"short book carries {small} name(s) below ${short_floor / 1e9:.0f}bn "
                 f"(limit {max_small_shorts}): {names}"
             )
+    # Options liquidity, which replaced borrow and squeeze risk as the thing that
+    # actually constrains this book. Removing the short size floor was right -
+    # there is no borrow to locate on an options-expressed position - but it left
+    # nothing watching whether a tradeable contract exists at a sensible price. A
+    # $2bn name can carry a chain with single-digit open interest and a 30%
+    # spread whatever its fundamentals say. Reported, never gated: thin is a
+    # trading constraint, not a defect in the idea.
+    thin: list[str] = []
+    unknown: list[str] = []
+    for idea in selected:
+        implied = (idea.extra.get("expectations") or {}).get("implied") or {}
+        if implied.get("available") and implied.get("open_interest_missing"):
+            unknown.append(idea.candidate.ticker)
+        elif implied.get("available") and implied.get("thin") is True:
+            spread = implied.get("spread_pct")
+            detail = f", spread {spread:.0f}%" if spread is not None else ""
+            thin.append(
+                f"{idea.candidate.ticker} (OI {implied.get('open_interest')} over "
+                f"{implied.get('strikes')} strikes, {implied.get('two_sided_strikes')} quotable{detail})"
+            )
+        elif implied and not implied.get("available") and implied.get("reason"):
+            thin.append(f"{idea.candidate.ticker} ({implied['reason']})")
+
+    if unknown:
+        breaches.append(
+            f"options liquidity UNKNOWN on {len(unknown)} of {len(selected)} names - the feed "
+            f"returned no open interest, which is missing data and not an empty market. Verify "
+            f"in your broker before sizing: {', '.join(unknown)}"
+        )
+    if thin:
+        breaches.append(
+            f"thin or missing options chain on {len(thin)} of {len(selected)} names, "
+            f"check these are tradeable before sizing: {', '.join(thin)}"
+        )
+    priced = [
+        idea.candidate.ticker
+        for idea in selected
+        if idea.qual is not None and idea.qual.priced_in == "already_priced"
+    ]
+    if priced:
+        breaches.append(
+            f"{len(priced)} name(s) whose thesis the verdict judged already priced "
+            f"(true, but not news): {', '.join(priced)}"
+        )
     if len(selected) < cfg["filters"]["min_positions"]:
         breaches.append(f"only {len(selected)} names (target {cfg['filters']['min_positions']}-{cfg['filters']['max_positions']})")
 

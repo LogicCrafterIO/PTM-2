@@ -125,7 +125,7 @@ in `[earnings_buckets]`, the window in `[filters] catalyst_window_days`.
 
 ## The book
 
-Six per side in screen-rank order, subject to two constraints:
+Six per side in screen-rank order, subject to three constraints:
 
 * **`max_per_sector = 2`** per side — six shorts from one sector is one bet, not
   six. The cap is never silently relaxed; a short side is reported as such.
@@ -135,10 +135,35 @@ Six per side in screen-rank order, subject to two constraints:
   the filing states one, so "backlog up 22%" outranks "management sounds
   confident". Every idea's JSON carries the score and its full arithmetic in
   `extra.conviction_detail`. See [docs/EG-CASES.md](docs/EG-CASES.md) §7.
+* **Size bands** — longs are held to $3-10bn, which is the process. Shorts have
+  **no** size floor: `mcap_ok` is the first ranking key, so the $20bn floor once
+  set there demoted every smaller short beneath every large cap whatever its
+  idea quality, and with 3 of 23 ready shorts clearing it the side came back at
+  4 of 6 every run. Borrow and squeeze risk do not bind on an options-expressed
+  book, but **options liquidity** is modelled nowhere and small-cap shorts can
+  carry thin chains — a manual check. See
+  [docs/FEATURE-LIMITATIONS.md](docs/FEATURE-LIMITATIONS.md) §5.
 * **Beta-aware selection** — a P/E-outlier screen is beta-long by construction
   (growth longs ~1.5 beta, value shorts ~0.24), so a dollar-neutral book still
   breached ±0.30. Rank leads; only if the book breaches does it swap the worst
   offender for the best-ranked eligible replacement, and every swap is reported.
+
+## What the market already expects
+
+Every idea states what consensus and the options market currently imply, how its
+evidence differs, and whether that difference is already priced. Four measures,
+in `ptm/ingest/expectations.py`: **implied move** from the option chain (the
+hurdle an options-expressed thesis has to clear), **estimate revisions**,
+**price reaction to the last ~4 prints**, and **surprise history**.
+
+Conviction is docked when a thesis only restates what the market has already
+moved to — true, but not news. The chain fetch also reports open interest and
+spread, which is the one risk that still binds a small-cap short book once
+borrow and squeeze stop applying.
+
+**Backdated runs get none of this**: no option chain or revisions table has a
+point-in-time archive, so all four are refused rather than served stale. See
+[docs/FEATURE-LIMITATIONS.md](docs/FEATURE-LIMITATIONS.md) §5b.
 
 ## Group cross-read
 
@@ -150,8 +175,11 @@ cases next to their peers.
 It uses **no price data of any kind**, and it is commentary, not a gate: no name
 enters or leaves the book on its verdict, and it cannot overturn the per-name
 qualitative judgement. There is no technical analysis anywhere in the screening
-process — no SMA, EMA, MACD or timing lights. (ATR-based stops and beta remain
-as a post-selection risk footnote, which gates nothing.)
+process — no SMA, EMA, MACD or timing lights, and no ATR stop, range target or
+R-score. Those three went with the move to options: a stop distance on the
+underlying does not manage a defined-risk position, and none of them gated or
+ranked anything. Beta survives, because the book swaps names on it to stay
+inside its limit.
 
 ## Backdating a run
 

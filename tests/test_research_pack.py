@@ -4,7 +4,7 @@ from ptm.ingest.company_research import research_pack
 from ptm.ingest.edgar import extract_filing_sections, is_cover_page, is_exhibit99_name
 from ptm.models import Candidate, Side
 from ptm.llm import qualitative
-from ptm.timing_prm import normalize_earnings_date
+from ptm.risk import normalize_earnings_date
 
 FIXTURES = Path(__file__).parent / "fixtures" / "edgar"
 
@@ -124,3 +124,80 @@ def test_qual_null_only_when_pack_empty(monkeypatch):
     empty = qualitative(Candidate(ticker="X", side=Side.LONG), "   ", thin=True)
     assert empty.supports_outlier is None
     assert "insufficient_evidence" in empty.red_flags
+
+
+def test_transcript_reaches_the_pack_text():
+    """It was assembled into the payload but never rendered, so turning
+    transcripts on would have silently changed nothing."""
+    from ptm.ingest.company_research import _pack_text
+
+    text = _pack_text({"transcript": "[Q2 2026, 2026-08-07] Revenue grew 51.7%."}, 12000)
+    assert "Revenue grew 51.7%" in text
+    assert "EARNINGS CALL:" in text
+
+
+def test_pack_text_survives_an_empty_payload():
+    from ptm.ingest.company_research import _pack_text
+
+    assert isinstance(_pack_text({}, 12000), str)
+
+
+def test_full_year_and_reported_cues_actually_match():
+    """These regexes contained literal backspace bytes where \b was intended, so
+    'FY2026' and 'was' matched nothing and the guidance parser returned None for
+    every ticker in the universe. Guard the repair."""
+    from ptm.ingest.edgar import FULL_YEAR_CUES, REPORTED_CUES
+
+    for pattern in (FULL_YEAR_CUES, REPORTED_CUES):
+        assert "\x08" not in pattern.pattern, "corrupted word boundary is back"
+    assert FULL_YEAR_CUES.search("Updated FY2026 guidance")
+    assert FULL_YEAR_CUES.search("full-year 2026 outlook")
+    assert REPORTED_CUES.search("revenue was $87 million")
+    assert not REPORTED_CUES.search("washing machines"), "the boundary must still bound"
+
+
+def test_guidance_parser_accepts_net_income_per_share_phrasing():
+    """"Adjusted Net Income per Diluted Share to $5.25" is EPS guidance. The
+    parser wanted the literal words "earnings per share" and so read real
+    guidance as none."""
+    from ptm.ingest.edgar import parse_eps_guidance
+
+    text = (
+        "This momentum supports our third raise to FY2026 guidance, taking Adjusted Net "
+        "Income per Diluted Share to $5.25."
+    )
+    out = parse_eps_guidance(text)
+    assert out and out["midpoint"] == 5.25
+
+
+def test_guidance_parser_is_not_defeated_by_bullets():
+    """Releases are bulleted and the glyphs survive extraction. Splitting on
+    sentence punctuation alone glued guidance to the next bullet, so the
+    reported-results veto fired on the neighbour's wording."""
+    from ptm.ingest.edgar import parse_eps_guidance
+
+    text = (
+        "Updated FY2026 guidance: adjusted earnings per share of $5.25 "
+        "• Second Quarter Highlights • GMV grew 37.9% YoY."
+    )
+    assert parse_eps_guidance(text), "the trailing bullet must not veto the guidance"
+
+
+def test_guidance_parser_rejects_a_revenue_figure():
+    """SMCI guided "net sales in the range of $14.5 billion" and the parser
+    reported it as 0.94 EPS against a 4.34 consensus - a 78% phantom gap."""
+    from ptm.ingest.edgar import parse_eps_guidance
+
+    text = (
+        "Business Outlook: The Company expects net sales in the range of $14.5 billion "
+        "to $15.0 billion for fiscal 2026 and earnings per share to grow."
+    )
+    out = parse_eps_guidance(text)
+    assert out is None or out["midpoint"] < 100, out
+
+
+def test_guidance_parser_rejects_a_prior_year_comparative():
+    from ptm.ingest.edgar import parse_eps_guidance
+
+    text = "FY 2022 diluted EPS and adjusted diluted EPS of $2.89, down 29 percent."
+    assert parse_eps_guidance(text) is None

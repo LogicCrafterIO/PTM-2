@@ -32,13 +32,11 @@ See [README.md](../README.md) for flags (`--skip-llm`, `--pmi-html`, `--force`, 
 
 These are the places the original plan was not practical as written. The product still does the job; the method is different.
 
-### 1. R-score is not ATRP(63) / ATRP(20)
+### 1. R-score, the ATR stop and the range target are removed
 
-Daily ATRP over 63 days is almost the same number as ATRP over 20 days, so that ratio sits near 1.0 and `min_r_score = 3.0` would block every name.
+This section used to explain how R-score was reconstructed (stop = 20-day ATRP, target = 63-day high/low range) because the literal ATRP(63)/ATRP(20) ratio sat near 1.0 and would have blocked every name.
 
-**What we did:** stop = 20-day ATRP (unchanged). Target = 63-day high/low range (`high/low - 1`), which moves with the stock’s actual swing and is independent of the stop. If there is not enough history, we still fall back to `stop * atrp_target_multiple`.
-
-True weekly vs quarterly ATRP bars (the course spreadsheet) need a resample we do not store. That remains a later enhancement.
+That workaround is moot: all three are deleted. The book is traded as options, where a stop distance on the underlying does not manage a defined-risk position, and none of the three ever gated or ranked anything. `min_r_score` was dead config. See `docs/FEATURE-LIMITATIONS.md` §3 and `ptm/risk.py`.
 
 ### 2. `min_sector_names = 2`, not 8
 
@@ -64,6 +62,84 @@ Latest *released* print is last calendar month (mid-August tries `/july/`, not `
 | Full DoR spreadsheet stops | Independent 63-day range is the retail stand-in |
 | Streamlit dashboard | CLI + `AUDIT.md` is the operator surface |
 | Reactive risk / live positions | Idea engine only |
+
+## Macro dashboard signals
+
+`build_dashboard()` averages an equally-weighted signal set into one score,
+which sets the book's `bias`. A series that is missing contributes **no**
+signal rather than a zero, so an unavailable input cannot quietly drag the score
+toward neutral.
+
+| Signal | Source | Reads |
+|---|---|---|
+| `regime` | ^GSPC vs 20% drawdown | bear level |
+| `curve` | ^TNX minus ^IRX | inversion |
+| `ism_pmi` | ISM report, FRED fallback | expansion / peak / trough / contraction |
+| `ism_new_orders` | ISM manufacturing components | leads PMI |
+| `ism_nmi` | ISM services | expansion |
+| `umcsi` | FRED `UMCSENT` | consumer sentiment |
+| `permits` | FRED `PERMIT` | housing, leads the cycle |
+| `real_rate` | ^TNX minus CPI yoy | cost of capital |
+| `vix` | ^VIX | stress |
+
+### Building permits
+
+`PERMIT` was already being fetched by `ptm/ingest/fred.py` and written to
+`macro_fred.json`, but nothing read it — the dashboard scored eight signals and
+ignored the ninth sitting in the file. It is now scored.
+
+Permits lead the cycle by roughly six to twelve months, which is why the
+Conference Board carries them in the LEI: housing turns before employment and
+capex do. Scored on year-over-year change against `[macro] permits_strong`
+(+5%), `permits_weak` (−5%) and `permits_recession` (−15%).
+
+The one subtlety is the trough. A decline past `permits_recession` is the size
+that has preceded past US recessions — *unless* the series is already bottoming,
+which the annual comparison hides for up to a year. So a deep year-over-year
+decline whose **3m/3m** reading has turned positive scores **+0.3** (trough)
+rather than −1.0 (contraction), mirroring the ISM trough-zone treatment already
+in the dashboard. The 3m/3m smoothing matters on its own terms: monthly permits
+swing several percent on weather and pull-forward, so a single print says little.
+
+Both `permits_yoy` and `permits_3m3m` land on `MacroSnapshot`, so the LLM macro
+narrative sees them without further plumbing.
+
+On the last full run: **+3.1% yoy, −2.3% 3m/3m → flat, signal 0.0**. Adding a
+ninth signal at 0.0 moved the score from +0.463 to +0.411; bias stayed
+`NET_LONG`.
+
+## Where the expectations data comes from
+
+`ptm/ingest/expectations.py` is the second module to break the EDGAR-only rule,
+after `estimates.py`, and for the same structural reason: filings state what a
+company **reported**, and expectations are by definition what it has **not
+reported yet**.
+
+| Field | yfinance surface | Notes |
+|---|---|---|
+| implied move | `Ticker.option_chain(expiry)` | ATM straddle ÷ spot, first expiry ≥ the projected earnings date |
+| open interest, spread | same call | the options-liquidity check; free once the chain is fetched |
+| consensus 30d/90d | `Ticker.eps_trend` | `current` vs `30daysAgo` / `90daysAgo`, period `0y` |
+| revision counts | `Ticker.eps_revisions` | `upLast30days` / `downLast30days` |
+| surprise history | `Ticker.earnings_history` | `surprisePercent` is a **fraction** (0.0923 = +9.23%) |
+| past-print reaction | `prices.csv` + `<T>_reportdates.json` | offline; no network call |
+
+All were already reachable from a vendor the repo uses and none was touched
+before. Cached per ticker under `data/raw/expectations/`, `max_age_days = 2`,
+fetched on 8 workers.
+
+### The three things that will break first
+
+1. **yfinance schema drift.** Each accessor is wrapped and returns
+   `{"available": False}` on any exception, so a renamed column degrades the read
+   rather than failing the run. It also means a silent schema change looks
+   identical to "no data" — check `available` counts across a run before
+   concluding a name has no coverage.
+2. **Chain fetch cost.** Two network calls per name, ~200 names. It is the second
+   slowest stage after EDGAR.
+3. **`surprisePercent` units.** If yfinance ever switches to whole percent, every
+   surprise figure silently becomes 100× too small. There is no way to detect that
+   from one value.
 
 ## What did get fixed in code
 

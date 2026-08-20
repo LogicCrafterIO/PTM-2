@@ -13,7 +13,9 @@ from ptm.config import data_dir, env, toml_settings
 from ptm.io import write_json
 from ptm.log import log
 from ptm.models import Candidate, CatalystResult, EvidenceItem, MacroSnapshot, QualResult, Side
-from ptm.timing_prm import catalyst_window, earnings_in_window, normalize_earnings_date
+from ptm.risk import catalyst_window, earnings_in_window, normalize_earnings_date
+from ptm.themes import labels as theme_labels
+from ptm.themes import prompt_block as theme_prompt_block
 
 JSON_HINT = "Reply with a single JSON object only. No markdown."
 GENERIC_KPIS = {"revenue", "net_income", "ebit", "cash", "debt", "assets", "equity", "interest"}
@@ -28,7 +30,11 @@ def llm_available() -> bool:
 def client() -> OpenAI:
     settings = env()
     if settings.nvidia_api_key:
-        return OpenAI(base_url=settings.nvidia_base_url, api_key=settings.nvidia_api_key, timeout=45.0)
+        # 45s was enough until the verdict prompt grew to carry sized facts and
+        # expectations. On the larger prompt the 49B exceeded it often enough
+        # that 47 of 195 verdicts (24%) silently fell through to the 8B
+        # fallback - a quiet model downgrade is worse than a slow run.
+        return OpenAI(base_url=settings.nvidia_base_url, api_key=settings.nvidia_api_key, timeout=120.0)
     if settings.openai_api_key:
         return OpenAI(base_url=settings.openai_base_url, api_key=settings.openai_api_key, timeout=90.0)
     raise RuntimeError("No LLM API key set")
@@ -134,6 +140,22 @@ FALLBACK_MODELS = [
 ]
 
 
+def _shorten_middle(text: str, limit: int) -> str:
+    """Trim from the MIDDLE, keeping both ends.
+
+    The retry path used to keep only the first 4000 characters. The verdict
+    question appends the expectations and theme blocks at the end, so a retry
+    silently discarded exactly the context the retry was meant to help with -
+    and the JSON keys are declared at the start, so cutting either end loses
+    something load-bearing.
+    """
+    if len(text) <= limit:
+        return text
+    head = int(limit * 0.6)
+    tail = limit - head - 40
+    return text[:head] + "\n...[trimmed for retry]...\n" + text[-tail:]
+
+
 def chat_json(
     system: str,
     user: str,
@@ -203,7 +225,7 @@ def chat_json(
             raise
         return chat_json(
             system + " Return a smaller JSON object. Keep every string under 240 characters. Close all quotes.",
-            user[: min(len(user), 4000)],
+            _shorten_middle(user, 4000),
             model=model,
             used_out=used_out,
             _retried=True,
@@ -225,7 +247,7 @@ def _evidence_items(raw: object) -> list[EvidenceItem]:
     than being allowed to carry invented precision into the conviction score.
     """
     items: list[EvidenceItem] = []
-    for entry in (raw or [])[:5]:
+    for entry in (raw or [])[:4]:
         if isinstance(entry, dict):
             claim = _clip(entry.get("claim") or entry.get("evidence") or entry.get("reason"), 240)
             if not claim:
@@ -282,6 +304,125 @@ def macro_narrative(snapshot: MacroSnapshot) -> str:
         f"Dashboard:\n{json.dumps(data, default=str)[:6000]}",
     )
     return str(payload.get("narrative") or "")
+
+
+# A figure attached to a unit. Levels and changes both qualify; the verdict
+# prompt is what teaches the model to tell them apart.
+FIGURE_RE = re.compile(r"\d[\d,.]*\s*(?:%|percent|bps|basis points|million|billion)", re.I)
+# Period-over-period language. These sentences are worth more than levels,
+# because impact_pct is defined as a CHANGE and a level cannot size one.
+CHANGE_WORDS_RE = re.compile(
+    r"\b(grew|growth|increased|decreased|declined|decline|rose|fell|up|down|expanded|"
+    r"improved|accelerat\w+|versus|compared|year[- ]over[- ]year|yoy|sequential\w*)\b",
+    re.I,
+)
+# The parenthetical the pack puts in front of its REPORTED CHANGES bullets. It
+# is an instruction to the model, sitting immediately before real figures.
+PACK_INSTRUCTION_RE = re.compile(r"\(computed from[^)]*\):", re.I)
+
+# Language that describes the FUTURE rather than the quarter just closed. This
+# distinction turned out to be the whole game. Ranking "changes" ahead of
+# "levels" was right as far as it went, but a change is still backward-looking -
+# and the verdict was then comparing last quarter's realised growth against a
+# forward consensus, which is a category error. A company that grew 51.7% last
+# quarter against a forward consensus of +46.5% is not evidence the market is
+# wrong; the consensus may be correctly pricing a deceleration.
+#
+# What actually bears on a coming print: the company's own guidance (especially
+# a raise), contracted future revenue (backlog, bookings, RPO, ARR), order
+# intake, and explicit outlook statements.
+# Longest sentence still considered a fact, and the length each is clipped to.
+# Guidance and outlook sentences pack several figures into one long clause, so a
+# tight cap discards them preferentially.
+MAX_FACT_CHARS = 460
+FACT_CLIP_CHARS = 300
+
+FORWARD_RE = re.compile(
+    r"\b(guidance|guides?|guided|outlook|expects?|expected|anticipat\w+|forecast\w*|"
+    r"full[- ]year|next (?:quarter|year)|fiscal 20\d\d|FY ?20\d\d|backlog|bookings|"
+    r"remaining performance obligation|RPO|ARR|annual recurring|order intake|new orders|"
+    r"pipeline|raised|raising|reaffirm\w+|reiterat\w+|target\w*|will be|plans to)\b",
+    re.I,
+)
+
+
+def _sized_facts(pack: str, limit: int = 28) -> list[str]:
+    """Sentences from the research pack that actually carry a figure.
+
+    The verdict pass never saw the pack. It received only the extract model's
+    ~1.5KB summary, while its own system prompt instructed it to "search the
+    pack for the number that sizes it" - asking a model to find numbers in a
+    document it was never given. That is the mechanical reason most evidence
+    came back unquantified, and no amount of prompt tuning could fix it.
+
+    Ordering, and each tier is tagged so the verdict can tell them apart:
+
+    1. ``[FORWARD]`` - guidance, backlog, bookings, order intake, outlook. The
+       only tier that bears directly on a coming print, and the scarcest.
+    2. ``[REPORTED]`` - realised period-over-period changes, including the
+       pack's own pre-computed block. Sizeable, but describes a quarter already
+       closed and already in consensus.
+    3. ``[LEVEL]`` - standing figures, which cannot size a change at all.
+
+    Changes used to lead. That was a mistake: it let the verdict compare last
+    quarter's realised growth against a forward consensus and call the
+    difference a mispricing, when the consensus may simply be pricing a
+    deceleration correctly.
+    """
+    text = " ".join((pack or "").split())
+    if not text:
+        return []
+    # The pack labels its own REPORTED CHANGES block with an instruction to the
+    # model. That sentence sits directly in front of figures, so the scan below
+    # picked it up and offered the instruction back as though it were a fact.
+    text = PACK_INSTRUCTION_RE.sub("", text)
+    leading: list[str] = []
+    marker = "REPORTED CHANGES"
+    if marker in text:
+        tail = text.split(marker, 1)[1]
+        # The block runs to the next ALL-CAPS section label in _pack_text.
+        stop = re.search(r"(ITEM 1 BUSINESS|MD&A|8-K EX-99\.1|NEWS|ISM):", tail)
+        block = tail[: stop.start()] if stop else tail[:1200]
+        # Whitespace is already normalised, so the block's newline-indented
+        # bullets have collapsed to " - ".
+        leading = [
+            f"[REPORTED] {part.strip(' -:')}"
+            for part in block.split(" - ")
+            if FIGURE_RE.search(part)
+        ]
+    forward, changes, levels, seen = [], [], [], set()
+    for sentence in re.split(r"(?<=[.;])\s+", text):
+        sentence = sentence.strip()
+        # The upper bound was 240 and it was quietly discarding the best
+        # evidence in the pack. Guidance sentences are long *because* they are
+        # dense with figures - SEZL's two guidance lines ran 352 and 250
+        # characters, so a raise to FY2026 guidance, the single strongest signal
+        # available for that name, was filtered out while a standing balance
+        # figure got through. Keep the sentence and truncate it instead.
+        if not (12 < len(sentence) <= MAX_FACT_CHARS) or not FIGURE_RE.search(sentence):
+            continue
+        sentence = sentence[:FACT_CLIP_CHARS]
+        key = sentence.lower()[:80]
+        if key in seen:
+            continue
+        seen.add(key)
+        # Forward first. These are scarce - median 1 numeric forward-looking
+        # sentence per pack, and 67 of 200 packs have none - so a budget that
+        # spends itself on realised changes will simply never show the model the
+        # guidance raise sitting further down the exhibit.
+        if FORWARD_RE.search(sentence):
+            forward.append(f"[FORWARD] {sentence}")
+        elif CHANGE_WORDS_RE.search(sentence):
+            changes.append(f"[REPORTED] {sentence}")
+        else:
+            levels.append(f"[LEVEL] {sentence}")
+    out: list[str] = []
+    for item in forward + leading + changes + levels:
+        if item and item not in out:
+            out.append(item)
+        if len(out) >= limit:
+            break
+    return out
 
 
 def sanitize_kpis(kpis: list | None) -> tuple[list[str], bool]:
@@ -366,11 +507,158 @@ def _verdict_bar() -> str:
     return VERDICT_BARS.get(choice, VERDICT_BARS["consistent"])
 
 
+_EXPECTATIONS_RULE = (
+    "You are also given WHAT THE MARKET ALREADY EXPECTS. A discount multiple exists BECAUSE the "
+    "market already believes bad things, and a premium exists because it already believes good "
+    "ones, so repeating what is priced is not a reason to trade. Set market_expectation to what "
+    "consensus and the options market currently imply for this print, in one sentence. Set "
+    "deviation to how your evidence differs from that, or say plainly that it does not. Set "
+    "priced_in to already_priced when your evidence only restates what the market has already "
+    "moved to, partly_priced when some of it is new, not_priced when the evidence points "
+    "somewhere consensus has not gone, and unknown when you were given nothing to judge against. "
+    "A thesis that is already_priced can still be TRUE - say so in why - but it is not news. "
+)
+
+# The model's ONE job on the expectation gap: which way do the filings point?
+# Asking for a percentage produced round-number clustering (8.5/10/12/15) and
+# constant "medium" confidence, because backing out a consensus-implied growth
+# rate is arithmetic a mid-sized model cannot do. Classification it can do.
+# The magnitude comes from measured analyst revisions instead - see ptm/drift.py.
+_DIRECTION_RULE = (
+    "FINALLY, one classification - and it is the most important field you return. Do NOT try to "
+    "estimate an EPS surprise percentage; you are not given enough to compute one and a guessed "
+    "figure is worse than none. Instead answer a simpler question.\n"
+    "Set filing_direction to what THIS company's own filings say about where its earnings are "
+    "heading:\n"
+    "  improving      - the forward evidence points to earnings ahead of where they have been\n"
+    "  deteriorating  - the forward evidence points to earnings falling short\n"
+    "  mixed          - genuinely two-sided\n"
+    "  silent         - the filings do not address direction\n"
+    "Weigh the [FORWARD] facts most heavily: guidance, backlog, bookings, order intake, outlook. "
+    "A [REPORTED] figure describes a quarter that has already closed and that analysts have "
+    "already seen, so it is weak evidence about what comes next - do not treat last quarter's "
+    "growth rate as a forecast.\n"
+    "Set direction_basis to the specific figures behind that call, naming whether each is forward "
+    "or reported. Judge the company, NOT the trade: a short whose filings are improving must be "
+    "reported as improving. The magnitude of any mispricing is computed elsewhere from measured "
+    "analyst revisions, and your direction is what decides whether those revisions are supported. "
+    "Getting the direction right matters more than making it agree with the side. "
+)
+
+PRICED_IN_VALUES = {"already_priced", "partly_priced", "not_priced", "unknown"}
+
+
+# A single filing does not support a claim that earnings will land 300% away
+# from consensus. Above this the number is a units error or a hallucination, and
+# because it is the primary ranking key it would put that name straight to the
+# top. The reasoning survives in surprise_basis; only the figure is dropped.
+MAX_SURPRISE_PCT = 100.0
+
+
+GAP_BASIS_VALUES = {"guidance", "forward_indicator", "run_rate", "none"}
+
+
+def _surprise_gap(
+    verdict: dict, for_items: list[EvidenceItem]
+) -> tuple[float | None, str, str, str]:
+    """The sized expectation gap, or None when it cannot be trusted.
+
+    Three refusals, all of which would otherwise corrupt the ranking:
+    an unparseable figure, a figure beyond MAX_SURPRISE_PCT, and a figure
+    offered with no quantified evidence behind it. The last matters most - a gap
+    is a claim about magnitude, and a model that quantified nothing has no basis
+    for one no matter how confident it sounds.
+    """
+    raw = verdict.get("expected_surprise_pct")
+    basis = _clip(verdict.get("surprise_basis"))
+    confidence = str(verdict.get("gap_confidence") or "none").strip().lower()
+    if confidence not in {"high", "medium", "low", "none"}:
+        confidence = "none"
+    basis_type = str(verdict.get("gap_basis_type") or "none").strip().lower().replace(" ", "_")
+    if basis_type not in GAP_BASIS_VALUES:
+        basis_type = "none"
+    if raw is None or isinstance(raw, bool):
+        return None, basis, "none", "none"
+    try:
+        value = float(str(raw).replace("%", "").strip())
+    except (TypeError, ValueError):
+        return None, basis, "none", "none"
+    if value != value or abs(value) > MAX_SURPRISE_PCT:
+        return None, basis, "none", "none"
+    if not any(item.quantified for item in for_items):
+        return None, basis, "none", "none"
+    # A figure offered with no stated basis cannot be weighted, so it is treated
+    # as the weakest kind rather than silently inheriting full trust.
+    if basis_type == "none":
+        basis_type = "run_rate"
+    return round(value, 2), basis, (confidence if confidence != "none" else "low"), basis_type
+
+
+FILING_DIRECTIONS = {"improving", "deteriorating", "mixed", "silent"}
+
+
+# How much of the move is left. The screen returns quantitative outliers, so a
+# re-rating has usually already begun by the time a name arrives here - which
+# makes durability the live question rather than direction alone. A model
+# cannot measure this, but it can read a filing for the difference between
+# guidance raised again and guidance merely reaffirmed.
+_DURABILITY_RULE = (
+    "AND one more classification. The screen that produced this name selects quantitative "
+    "OUTLIERS on P/E, PEG and earnings growth, so any re-rating has usually already STARTED. "
+    "The live question is not whether it has begun but how much is left.\n"
+    "Set momentum_durability from the filings:\n"
+    "  building   - the drivers are still strengthening: guidance raised again, backlog "
+    "still growing, orders accelerating, new capacity or pricing coming\n"
+    "  intact     - the drivers are in place and steady\n"
+    "  fading     - comparatives are getting harder, guidance merely reaffirmed rather than "
+    "raised, backlog flat, a one-off benefit about to lap\n"
+    "  exhausted  - the drivers have run their course, or peak margins and capacity limits "
+    "cap what is left\n"
+    "  unclear    - the filings do not say\n"
+    "Set durability_basis to the specific evidence, and prefer [FORWARD] facts: whether "
+    "guidance was RAISED or merely held is the single most useful distinction here. Do not "
+    "infer durability from how large the past growth was - a big number that is about to lap "
+    "is fading, not building. If a global theme you were shown is the driver, say which. "
+)
+
+DURABILITY_VALUES = {"building", "intact", "fading", "exhausted", "unclear"}
+
+
+def _durability(verdict: dict) -> str:
+    """How much of the run is left, defaulted to unclear when unrecognised."""
+    value = str(verdict.get("momentum_durability") or "").strip().lower()
+    return value if value in DURABILITY_VALUES else "unclear"
+
+
+def _filing_direction(verdict: dict) -> str:
+    """The verdict's read on where earnings are heading, defaulted safely.
+
+    An unrecognised answer becomes "silent" rather than being guessed at: a
+    wrong direction does not merely mis-size the gap, it inverts its sign.
+    """
+    value = str(verdict.get("filing_direction") or "").strip().lower()
+    return value if value in FILING_DIRECTIONS else "silent"
+
+
+def _expectations_prompt(payload: dict | None) -> str:
+    """The expectations block appended to the verdict question."""
+    from ptm.ingest.expectations import summary_lines
+
+    lines = summary_lines(payload)
+    if not lines:
+        return (
+            "\n\nWHAT THE MARKET ALREADY EXPECTS: not available for this name. "
+            "Set priced_in to unknown and do not guess."
+        )
+    return "\n\nWHAT THE MARKET ALREADY EXPECTS:\n" + "\n".join(f"- {line}" for line in lines)
+
+
 def qualitative(
     candidate: Candidate,
     filing_excerpt: str,
     thin: bool = False,
     skip_llm: bool = False,
+    expectations: dict | None = None,
 ) -> QualResult:
     if skip_llm or not llm_available():
         return QualResult(
@@ -420,6 +708,9 @@ def qualitative(
         "ism_link": _clip(extract.get("ism_link")),
         "red_flags": flags,
         "quotes": quotes,
+        # Straight from the pack, not from the extract model: pass A summarises
+        # and in doing so drops the figures pass B is required to cite.
+        "reported_figures": _sized_facts(pack),
     }
     # The earlier wording ("does the plan support the outlier") was ambiguous for
     # shorts: models read deterioration as a reason to REJECT a discount short,
@@ -452,7 +743,9 @@ def qualitative(
         "impact_on must be earnings, revenue, margin or none, describing what the change moves. "
         + _verdict_bar()
         + "supports_outlier must be true or false, never null. "
-        "Keep every string under 240 characters. " + JSON_HINT
+        + _DIRECTION_RULE
+        + _DURABILITY_RULE
+        + "Keep every string under 240 characters. " + JSON_HINT
     )
     ratio = ""
     if candidate.pe1 and candidate.sector_pe1:
@@ -463,13 +756,26 @@ def qualitative(
         else "does the evidence show this discount is DESERVED?"
     )
     verdict_user = (
-        "Return JSON keys: evidence_for (array of {claim, metric, impact_pct, impact_on, "
-        "quantified}), evidence_against (same shape), "
-        "supports_outlier (bool), why (string, 2-4 sentences), denial_reason (string).\n"
+        "Return JSON keys, IN THIS ORDER - the first four decide whether this idea is used "
+        "at all, so answer them even if you must keep everything else short: "
+        "filing_direction (improving|deteriorating|mixed|silent), direction_basis (string), "
+        "momentum_durability (building|intact|fading|exhausted|unclear), durability_basis "
+        "(string), supports_outlier (bool), why (string, 2-4 sentences), denial_reason "
+        "(string), evidence_for (array of {claim, metric, impact_pct, impact_on, quantified}, "
+        "at most 4), evidence_against (same shape, at most 4).\n"
         f"Side={candidate.side.value}. P/E {candidate.pe1} vs sector {candidate.sector_pe1}{ratio}. "
         f"EG case={candidate.eg_case}.\n"
+        f"CONSENSUS THE MARKET IS HOLDING: FY1 EPS {candidate.eps1}"
+        + (
+            f", which is {candidate.eg1 * 100:+.1f}% on last year's {candidate.eps0}"
+            if candidate.eg1 is not None
+            else ""
+        )
+        + ". Size expected_surprise_pct against THIS figure.\n"
         f"Question: {ask}\n\n"
         f"Extract:\n{json.dumps(extract_summary, default=str)}"
+        + _expectations_prompt(expectations)
+        + theme_prompt_block(pack)
     )
     verdict: dict = {}
     wanted_model = verdict_model()
@@ -516,6 +822,14 @@ def qualitative(
     why = _clip(verdict.get("why"), 480)
     denial = _clip(verdict.get("denial_reason")) if supports is False else ""
     summary = why or _clip(extract.get("business_in_one_line"))
+    priced_in = str(verdict.get("priced_in") or "unknown").strip().lower().replace(" ", "_")
+    if priced_in not in PRICED_IN_VALUES:
+        priced_in = "unknown"
+    # A model cannot judge what is priced from data it was not given. Refusing
+    # the claim here stops an invented verdict earning or losing conviction.
+    if not expectations:
+        priced_in = "unknown"
+    surprise, basis, confidence, basis_type = _surprise_gap(verdict, for_items)
     return QualResult(
         supports_outlier=supports,
         red_flags=flags,
@@ -526,6 +840,18 @@ def qualitative(
         evidence_quotes=quotes,
         evidence_for=for_items,
         evidence_against=against_items,
+        market_expectation=_clip(verdict.get("market_expectation")),
+        deviation=_clip(verdict.get("deviation")),
+        priced_in=priced_in,
+        expected_surprise_pct=surprise,
+        surprise_basis=basis,
+        gap_confidence=confidence,
+        gap_basis_type=basis_type,
+        filing_direction=_filing_direction(verdict),
+        direction_basis=_clip(verdict.get("direction_basis")),
+        momentum_durability=_durability(verdict),
+        durability_basis=_clip(verdict.get("durability_basis")),
+        themes=theme_labels(pack),
         denial_reason=denial,
     )
 
@@ -568,11 +894,11 @@ def catalysts(
 
 
 
-def _evidence_block(qual: QualResult) -> list[str]:
+def _evidence_block(qual: QualResult, side: Side = Side.LONG) -> list[str]:
     """Weighted evidence, so the conviction score is legible in the markdown."""
     from ptm.ranking import conviction_detail
 
-    detail = conviction_detail(qual)
+    detail = conviction_detail(qual, side)
     if not detail["for"] and not detail["against"]:
         return []
     lines = [
@@ -614,13 +940,68 @@ def _earnings_block(earnings) -> list[str]:
     ]
 
 
+def _relative_peg_line(candidate: Candidate) -> str:
+    """State the multiple premium against the growth premium that pays for it.
+
+    Rendered whether or not it binds: the point is that the number can be
+    checked, and a name that passes at 2.9 should be as visible as one blocked
+    at 3.1.
+    """
+    value = candidate.relative_peg
+    if value is None:
+        return "Relative PEG: n/a (needs pe1, sector_pe1, eg1 and sector_eg1)"
+    if candidate.pe1 and candidate.sector_pe1:
+        premium = f"{candidate.pe1 / candidate.sector_pe1:.1f}x the sector multiple"
+    else:
+        premium = "a sector premium"
+    read = "growth more than covers it" if value <= 1.0 else (
+        "stretched" if value <= 2.0 else "growth does not cover it"
+    )
+    return f"Relative PEG: {value:.2f} — pays {premium} per unit of sector growth ({read})"
+
+
+def _expectations_block(qual: QualResult, candidate: Candidate, expectations: dict | None) -> list[str]:
+    """What the market already expects, and how this thesis differs from it.
+
+    Rendered on every idea, not only where it changed the answer. A reader has
+    to be able to see that the question was asked and what the answer was, or
+    the section is indistinguishable from it never having run.
+    """
+    from ptm.ingest.expectations import summary_lines
+
+    measured = summary_lines(expectations)
+    stated = (qual.market_expectation or "").strip()
+    if not measured and not stated:
+        return []
+    label = {
+        "already_priced": "**Already priced** — the evidence restates what the market has moved to.",
+        "partly_priced": "**Partly priced** — some of the evidence is not yet in consensus.",
+        "not_priced": "**Not priced** — the evidence points where consensus has not gone.",
+        "unknown": "**Unknown** — no expectations data was available to judge against.",
+    }.get(qual.priced_in or "unknown", "")
+    from ptm.revision_report import gap_line
+
+    # The sized gap leads the section: it is the one number that says whether
+    # the market is wrong yet, and everything below it is the supporting read.
+    lines = ["## What the market already expects", "", gap_line(qual, candidate, expectations), ""]
+    lines += [f"- {line}" for line in measured] or ["- No measured expectations data for this name."]
+    lines.append("")
+    if stated:
+        lines += [f"Consensus implies: {stated}", ""]
+    if (qual.deviation or "").strip():
+        lines += [f"This thesis differs by: {qual.deviation.strip()}", ""]
+    if label:
+        lines += [label, ""]
+    return lines
+
+
 def fallback_template(
     candidate: Candidate,
     qual: QualResult,
     cats: CatalystResult,
     timing_comment: str,
-    prm: dict,
     earnings=None,
+    expectations: dict | None = None,
 ) -> str:
     side = "LONG" if candidate.side == Side.LONG else "SHORT"
     return "\n".join(
@@ -631,11 +1012,12 @@ def fallback_template(
             f"EG case: {candidate.eg_case}  ",
             f"Price: {candidate.price}  Mcap: {candidate.market_cap}",
             f"PE1 {candidate.pe1} vs sector {candidate.sector_pe1}  EG1 {candidate.eg1}",
+            _relative_peg_line(candidate),
             "",
             "## Qualitative",
             qual.why or qual.summary or "n/a",
             "",
-            *_evidence_block(qual),
+            *_evidence_block(qual, candidate.side),
             *([f"- {q}" for q in (qual.evidence_quotes or [])[:3]]),
             "",
             "## Catalysts",
@@ -644,8 +1026,7 @@ def fallback_template(
             f"{cats.earnings_in_window}",
             *([f"- {item}" for item in cats.non_earnings] or ["- none identified"]),
             "",
-            "## Risk footnote (not a gate)",
-            json.dumps(prm, default=str) if prm else "n/a",
+            *_expectations_block(qual, candidate, expectations),
         ]
     )
 
@@ -665,11 +1046,11 @@ def render_template(
     qual: QualResult,
     cats: CatalystResult,
     timing_comment: str,
-    prm: dict,
     skip_llm: bool = False,
     earnings=None,
+    expectations: dict | None = None,
 ) -> str:
-    fallback = fallback_template(candidate, qual, cats, timing_comment, prm, earnings)
+    fallback = fallback_template(candidate, qual, cats, timing_comment, earnings, expectations)
     if skip_llm or not llm_available():
         return fallback
     try:
@@ -677,13 +1058,14 @@ def render_template(
             "Fill a PTM trade idea template in Markdown. Be concise. Do not invent numbers. "
             "Never mention price action, charts, momentum, moving averages, MACD or any other "
             "technical-analysis entry signal: this process excludes them. " + JSON_HINT,
-            "Return JSON {markdown: string} covering: 1 quant 2 sector 3 qualitative (use qual.why) "
-            "4 catalysts 5 optional ATR risk footnote only.\n"
+            "Return JSON {markdown: string} covering: 1 quant 2 sector 3 qualitative "
+            "(use qual.why) 4 catalysts 5 what the market already expects "
+            "(use QUAL.market_expectation, QUAL.deviation, QUAL.priced_in and EXPECT).\n"
             "If EARNINGS.estimated is true, the catalysts section MUST say that no future earnings "
             "date was published, quote EARNINGS.basis, and mark the date as estimated.\n"
             f"{candidate.model_dump_json()}\nQUAL:{qual.model_dump_json()}\nCAT:{cats.model_dump_json()}\n"
             f"EARNINGS:{earnings.model_dump_json() if earnings is not None else '{}'}\n"
-            f"PRM:{json.dumps(prm)}",
+            f"EXPECT:{json.dumps((expectations or {}).get('summary') or [])}",
         )
         markdown = str(payload.get("markdown") or "")
         if _markdown_usable(markdown):

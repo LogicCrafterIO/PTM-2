@@ -1,4 +1,4 @@
-"""Course formulas: EG, PEG, EV, ATRP, DoR, SMA/EMA, beta."""
+"""Course formulas: EG, PEG, relative PEG, EV, beta."""
 
 from __future__ import annotations
 
@@ -31,6 +31,40 @@ def peg(pe_value: float | None, eg: float | None) -> float | None:
     return pe_value / (eg * 100.0)
 
 
+def relative_peg(
+    pe1: float | None,
+    sector_pe1: float | None,
+    eg1: float | None,
+    sector_eg1: float | None,
+) -> float | None:
+    """How much multiple premium a name charges per unit of growth premium.
+
+    A flat ceiling on pe1/sector_pe1 cannot tell a premium that growth backs
+    from one it does not, and the process buys premium-multiple longs on
+    purpose, so a flat rule either admits everything or rejects the strategy.
+    This divides the two premiums:
+
+        (pe1 / sector_pe1) / ((1 + eg1) / (1 + sector_eg1))
+
+    Below 1.0 the extra growth more than covers the extra multiple. Measured on
+    one run's book it ordered the longs the way two independent human reviewers
+    did: SEZL 1.39, RSI 1.55, POWL 1.85, BROS 2.53, CWST 3.80, CRK 3.97.
+
+    Returns None when it cannot be formed rather than guessing - a name whose
+    earnings have gone to zero has no meaningful growth premium, and the EG-case
+    taxonomy is what excludes those.
+    """
+    if pe1 is None or not sector_pe1 or eg1 is None or sector_eg1 is None:
+        return None
+    growth_premium = 1.0 + sector_eg1
+    if growth_premium == 0:
+        return None
+    growth_premium = (1.0 + eg1) / growth_premium
+    if growth_premium <= 0:
+        return None
+    return (pe1 / sector_pe1) / growth_premium
+
+
 def enterprise_value(market_cap: float | None, debt: float | None, cash: float | None) -> float | None:
     if market_cap is None:
         return None
@@ -45,37 +79,6 @@ def ev_multiple(ev: float | None, operating: float | None) -> float | None:
 
 def bear_level(index_high: float, drawdown: float = 0.20) -> float:
     return index_high * (1.0 - drawdown)
-
-
-def true_range_pct(high: float, low: float, prev_close: float, open_: float) -> float | None:
-    if open_ == 0:
-        return None
-    tr = max(high - low, abs(high - prev_close), abs(low - prev_close))
-    return tr / open_
-
-
-def atrp(true_range_pcts: list[float]) -> float | None:
-    if not true_range_pcts:
-        return None
-    return sum(true_range_pcts) / len(true_range_pcts)
-
-
-def close_to_close(prev_close: float, close: float) -> float | None:
-    if prev_close == 0:
-        return None
-    return close / prev_close - 1.0
-
-
-def high_to_low(high: float, low: float) -> float | None:
-    if low == 0:
-        return None
-    return high / low - 1.0
-
-
-def r_score(target_pct: float | None, stop_pct: float | None) -> float | None:
-    if target_pct is None or stop_pct is None or stop_pct <= 0:
-        return None
-    return target_pct / stop_pct
 
 
 def slope_beta(y: list[float], x: list[float]) -> float | None:

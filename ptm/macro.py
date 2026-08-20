@@ -35,6 +35,25 @@ def _yoy_from_points(history: list[dict], key: str = "close") -> float | None:
     return now / prev - 1.0
 
 
+def _three_month_trend(history: list[dict]) -> float | None:
+    """The last three months against the prior three.
+
+    Monthly permits are volatile enough that a single print says little - a wet
+    March or a pulled-forward December moves the number several percent - so the
+    standard read smooths both ends. This also turns before the year-over-year
+    comparison does, which is the whole point of a leading indicator: a series
+    can be bottoming while its annual change is still deeply negative.
+    """
+    values = [float(row["value"]) for row in history or [] if row.get("value") is not None]
+    if len(values) < 6:
+        return None
+    recent = sum(values[-3:]) / 3.0
+    prior = sum(values[-6:-3]) / 3.0
+    if prior == 0:
+        return None
+    return recent / prior - 1.0
+
+
 def build_dashboard() -> MacroSnapshot:
     cfg = toml_settings()
     macro_cfg = cfg["macro"]
@@ -78,6 +97,9 @@ def build_dashboard() -> MacroSnapshot:
     new_orders = ((ism.get("manufacturing") or {}).get("components") or {}).get("new_orders") or {}
     new_orders_val = new_orders.get("value") if isinstance(new_orders, dict) else None
     umcsi = (fred.get("umcsent") or {}).get("last")
+    permits = fred.get("permits") or {}
+    permits_yoy = permits.get("yoy")
+    permits_3m3m = _three_month_trend(permits.get("history") or [])
     m2_yoy = (fred.get("m2") or {}).get("yoy")
     vix = yf.get("vix", {}).get("last")
 
@@ -139,6 +161,37 @@ def build_dashboard() -> MacroSnapshot:
         else:
             signals["umcsi"] = 0.0
 
+    # Building permits lead the cycle by roughly six to twelve months - housing
+    # turns before employment and capex do, which is why the Conference Board
+    # carries it in the LEI. Scored on the annual change, with the 3m/3m read
+    # breaking the tie when a deep decline is already bottoming: reading the
+    # trough as outright contraction is the error this indicator exists to avoid.
+    if permits_yoy is not None:
+        pct = permits_yoy * 100
+        trend = "" if permits_3m3m is None else f", 3m/3m {permits_3m3m * 100:+.1f}%"
+        if permits_yoy >= macro_cfg["permits_strong"]:
+            signals["permits"] = 1.0
+            notes.append(f"building permits {pct:+.1f}% yoy{trend} — housing expanding, leads the cycle")
+        elif permits_yoy <= macro_cfg["permits_recession"]:
+            if permits_3m3m is not None and permits_3m3m > 0:
+                signals["permits"] = 0.3
+                notes.append(
+                    f"building permits {pct:+.1f}% yoy{trend} — deep annual decline but turning up "
+                    "over the last quarter (trough)"
+                )
+            else:
+                signals["permits"] = -1.0
+                notes.append(
+                    f"building permits {pct:+.1f}% yoy{trend} — decline of a size that has led "
+                    "past recessions"
+                )
+        elif permits_yoy <= macro_cfg["permits_weak"]:
+            signals["permits"] = -0.5
+            notes.append(f"building permits {pct:+.1f}% yoy{trend} — housing softening")
+        else:
+            signals["permits"] = 0.0
+            notes.append(f"building permits {pct:+.1f}% yoy{trend} — flat")
+
     if real_10y is not None:
         signals["real_rate"] = 1.0 if real_10y < macro_cfg["real_rate_cheap"] else -0.3
 
@@ -167,6 +220,8 @@ def build_dashboard() -> MacroSnapshot:
         ism_nmi=nmi,
         umcsi=umcsi,
         m2_yoy=m2_yoy,
+        permits_yoy=permits_yoy,
+        permits_3m3m=permits_3m3m,
         signals=signals,
         score=round(score, 4),
         bias=bias,

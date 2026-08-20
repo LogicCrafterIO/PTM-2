@@ -190,7 +190,10 @@ def test_require_eg_case_can_be_switched_off(monkeypatch):
     from ptm.config import toml_settings
 
     base = toml_settings()
-    patched = {**base, "filters": {**base["filters"], "require_eg_case": False}}
+    patched = {
+        **base,
+        "filters": {**base["filters"], "require_eg_case": False, "max_relative_peg": 0},
+    }
     monkeypatch.setattr(quant, "toml_settings", lambda: patched)
 
     rows = [
@@ -321,7 +324,9 @@ def test_relative_ceiling_can_be_disabled(monkeypatch):
     from ptm.config import toml_settings
 
     base = toml_settings()
-    patched = {**base, "filters": {**base["filters"], "max_sector_pe_multiple": 0}}
+    # Both relative ceilings off: this test is about max_sector_pe_multiple, and
+    # max_relative_peg would otherwise catch RICH on its own.
+    patched = {**base, "filters": {**base["filters"], "max_sector_pe_multiple": 0, "max_relative_peg": 0}}
     monkeypatch.setattr(quant, "toml_settings", lambda: patched)
     rows = [
         {"ticker": "A1", "sector": "Industrials", "price": 100.0, "forward_eps": 10.0, "eg1": 0.30, "eg2": 0.20},
@@ -330,3 +335,59 @@ def test_relative_ceiling_can_be_disabled(monkeypatch):
         {"ticker": "RICH", "sector": "Industrials", "price": 100.0, "forward_eps": 0.6, "eg1": 0.40, "eg2": 0.35},
     ]
     assert "RICH" in {c.ticker for c in build_candidates(*_frame_with_source(rows))}
+
+
+def _peg_rows():
+    """One sector where the premium names differ only in whether growth backs them."""
+    return [
+        {"ticker": "BASE1", "sector": "Industrials", "price": 100.0, "forward_eps": 5.0, "eg1": 0.10, "eg2": 0.10},
+        {"ticker": "BASE2", "sector": "Industrials", "price": 100.0, "forward_eps": 5.0, "eg1": 0.10, "eg2": 0.10},
+        {"ticker": "BASE3", "sector": "Industrials", "price": 100.0, "forward_eps": 5.0, "eg1": 0.10, "eg2": 0.10},
+        # 2.5x the sector multiple bought with 2.3x the sector growth -> relPEG 1.10.
+        {"ticker": "EARNED", "sector": "Industrials", "price": 100.0, "forward_eps": 2.0, "eg1": 1.50, "eg2": 0.60},
+        # 4.2x the sector multiple on sector-average growth -> relPEG 4.17.
+        # Note this still sits under max_sector_pe_multiple = 5.0, so the flat
+        # ceiling would wave it through and only the growth-relative one stops it.
+        {"ticker": "UNEARNED", "sector": "Industrials", "price": 100.0, "forward_eps": 1.2, "eg1": 0.10, "eg2": 0.10},
+    ]
+
+
+def test_relative_peg_admits_premium_that_growth_backs(monkeypatch):
+    """The distinction a flat P/E ceiling cannot draw: both names pay the same
+    multiple premium, only one is buying growth with it."""
+    import ptm.quant as quant
+    from ptm.config import toml_settings
+
+    base = toml_settings()
+    patched = {**base, "filters": {**base["filters"], "max_relative_peg": 3.0, "require_eg_case": False}}
+    monkeypatch.setattr(quant, "toml_settings", lambda: patched)
+    picked = {c.ticker for c in build_candidates(*_frame_with_source(_peg_rows())) if c.side == Side.LONG}
+    assert "EARNED" in picked
+    assert "UNEARNED" not in picked
+
+
+def test_relative_peg_ceiling_can_be_disabled(monkeypatch):
+    import ptm.quant as quant
+    from ptm.config import toml_settings
+
+    base = toml_settings()
+    patched = {
+        **base,
+        "filters": {**base["filters"], "max_relative_peg": 0, "max_sector_pe_multiple": 0, "require_eg_case": False},
+    }
+    monkeypatch.setattr(quant, "toml_settings", lambda: patched)
+    picked = {c.ticker for c in build_candidates(*_frame_with_source(_peg_rows())) if c.side == Side.LONG}
+    assert "UNEARNED" in picked
+
+
+def test_relative_peg_is_recorded_on_every_candidate(monkeypatch):
+    """Visible whether or not it binds, so the number can be checked."""
+    import ptm.quant as quant
+    from ptm.config import toml_settings
+
+    base = toml_settings()
+    patched = {**base, "filters": {**base["filters"], "max_relative_peg": 0, "require_eg_case": False}}
+    monkeypatch.setattr(quant, "toml_settings", lambda: patched)
+    cands = build_candidates(*_frame_with_source(_peg_rows()))
+    unearned = next(c for c in cands if c.ticker == "UNEARNED")
+    assert unearned.relative_peg is not None and unearned.relative_peg > 2.0

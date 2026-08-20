@@ -49,6 +49,8 @@ class MacroSnapshot(BaseModel):
     ism_nmi: float | None = None
     umcsi: float | None = None
     m2_yoy: float | None = None
+    permits_yoy: float | None = None
+    permits_3m3m: float | None = None
     signals: dict[str, float] = Field(default_factory=dict)
     score: float = 0.0
     bias: Bias = Bias.NEUTRAL
@@ -77,6 +79,8 @@ class Candidate(BaseModel):
     peg2: float | None = None
     sector_pe1: float | None = None
     sector_eg1: float | None = None
+    # Multiple premium per unit of growth premium; see formulas.relative_peg.
+    relative_peg: float | None = None
     eg_case: str = ""
     mcap_ok: bool = True
     mcap_warning: str = ""
@@ -135,6 +139,47 @@ class QualResult(BaseModel):
         if isinstance(value, list):
             return [EvidenceItem.coerce(item) for item in value]
         return value
+    # What the market already assumes going into the print, and how the evidence
+    # differs from it. Without these a valuation argument becomes an earnings
+    # trade with nothing said about what is priced - the single complaint three
+    # independent reviews of one book all made.
+    market_expectation: str = ""
+    deviation: str = ""
+    # already_priced | partly_priced | not_priced | unknown
+    priced_in: str = "unknown"
+    # THE number the whole qualitative pass exists to produce: how far the sized
+    # evidence points above (or below) the consensus FY1 EPS the market is
+    # holding. Positive means the evidence points above consensus. This is what
+    # makes one idea rankable against another - `deviation` says a gap exists,
+    # this says how big it is. None when the evidence cannot support a figure;
+    # a guessed number here would be worse than no number.
+    expected_surprise_pct: float | None = None
+    # Which of the listed reasons drive that figure, so it can be checked.
+    surprise_basis: str = ""
+    # high | medium | low | none
+    gap_confidence: str = "none"
+    # WHAT the gap rests on. guidance | forward_indicator | run_rate | none
+    gap_basis_type: str = "none"
+    # The model's ONE job on the expectation gap now: which way do the filings
+    # point? A classification, not a calculation. Asking for a percentage
+    # produced round-number clustering and constant confidence, because backing
+    # out a consensus-implied growth rate is arithmetic a mid-sized model cannot
+    # do. The magnitude comes from measured analyst revisions instead - see
+    # ptm/drift.py. improving | deteriorating | mixed | silent
+    filing_direction: str = "silent"
+    # Which specific figures drove that call, so it can be checked.
+    direction_basis: str = ""
+    # Is the run still going, or lapping? The screen returns quantitative
+    # outliers, so by construction a re-rating has usually STARTED - which makes
+    # "how much is left" the live question rather than "has it begun". A model
+    # cannot measure that, but it can read a filing for the difference between
+    # guidance raised again and guidance merely reaffirmed, backlog still
+    # building and backlog flat, a tailwind arriving and one lapping.
+    # building | intact | fading | exhausted | unclear
+    momentum_durability: str = "unclear"
+    durability_basis: str = ""
+    # Global themes this name is exposed to, from ptm/themes.py.
+    themes: list[str] = Field(default_factory=list)
 
 
 class CatalystResult(BaseModel):
@@ -156,10 +201,13 @@ class TimingResult(BaseModel):
 
 
 class PRMResult(BaseModel):
-    stop_pct: float | None = None
-    target_pct: float | None = None
-    r_score: float | None = None
-    atrp: float | None = None
+    """Position risk. Beta is the only measured field left.
+
+    stop_pct, target_pct, r_score and atrp were removed with the move to
+    options: a stop distance on the underlying does not manage a defined-risk
+    position, and none of the four gated or ranked anything. See ptm/risk.py.
+    """
+
     beta: float | None = None
     size_fraction: float = 1.0
     blocked: bool = False

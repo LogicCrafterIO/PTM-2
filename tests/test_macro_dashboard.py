@@ -111,3 +111,62 @@ def test_dashboard_tilts_are_deterministic():
     expected = compute_sector_tilts(ism, pmi=ism.get("pmi"))
     assert snap.sector_tilts == expected
     assert snap.llm_narrative == ""
+
+
+def _permit_history(values: list[float]) -> list[dict]:
+    return [{"date": f"2026-{i + 1:02d}-01", "value": v} for i, v in enumerate(values)]
+
+
+def test_permits_expansion_scores_positive():
+    write_macro_inputs(permits_yoy=0.09, permits_history=_permit_history([1300] * 3 + [1420] * 3))
+    snap = build_dashboard()
+    assert snap.signals["permits"] == 1.0
+    assert snap.permits_yoy == 0.09
+    assert any("permits" in n and "expanding" in n for n in snap.notes)
+
+
+def test_permits_softening_scores_negative():
+    write_macro_inputs(permits_yoy=-0.08, permits_history=_permit_history([1500] * 3 + [1400] * 3))
+    snap = build_dashboard()
+    assert snap.signals["permits"] == -0.5
+    assert any("softening" in n for n in snap.notes)
+
+
+def test_deep_permits_decline_is_a_recession_lead():
+    write_macro_inputs(permits_yoy=-0.25, permits_history=_permit_history([1500] * 3 + [1200] * 3))
+    snap = build_dashboard()
+    assert snap.signals["permits"] == -1.0
+    assert any("recession" in n for n in snap.notes)
+
+
+def test_deep_decline_already_turning_up_reads_as_a_trough():
+    """The point of a leading indicator: permits can be bottoming while the
+    annual comparison is still deeply negative, and scoring that as outright
+    contraction would call the turn backwards."""
+    write_macro_inputs(permits_yoy=-0.25, permits_history=_permit_history([1000] * 3 + [1150] * 3))
+    snap = build_dashboard()
+    assert snap.signals["permits"] == 0.3
+    assert snap.permits_3m3m is not None and snap.permits_3m3m > 0
+    assert any("trough" in n for n in snap.notes)
+
+
+def test_flat_permits_are_neutral_not_absent():
+    write_macro_inputs(permits_yoy=0.01, permits_history=_permit_history([1400] * 6))
+    snap = build_dashboard()
+    assert snap.signals["permits"] == 0.0
+    assert snap.permits_3m3m == 0.0
+
+
+def test_permits_absent_adds_no_signal():
+    """A missing series must not dilute the score toward zero."""
+    write_macro_inputs()
+    snap = build_dashboard()
+    assert "permits" not in snap.signals
+    assert snap.permits_yoy is None
+
+
+def test_permits_trend_needs_six_months():
+    write_macro_inputs(permits_yoy=0.09, permits_history=_permit_history([1400] * 4))
+    snap = build_dashboard()
+    assert snap.permits_3m3m is None
+    assert snap.signals["permits"] == 1.0, "the yoy signal stands without the trend"

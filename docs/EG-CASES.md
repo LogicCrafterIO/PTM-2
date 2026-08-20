@@ -293,3 +293,72 @@ POWL's -49% is one segment, and nothing sizes it against total revenue.
 And it cannot tell a 25% figure the market already expects from one it does not.
 Both would need the model to reason about materiality against a base, which is
 not something to trust without testing it first.
+
+## 8. Two corrections to the conviction score
+
+### Wrong-signed reasons are re-filed, not counted
+
+`impact_pct` is the change to `impact_on`, so its sign reads literally: a short
+citing **+216% earnings** as grounds to short is citing growth, and a long
+citing **−30% revenue** is citing contraction. Neither is evidence; each is the
+opposite of it.
+
+Rare and expensive. Across one full run only **3 of 106** quantified reasons were
+signed this way — but because magnitude caps at 30%, a wrong-signed claim lands
+*on* the cap and earns the **maximum** weight of 4.0. ARR reached the book on
+exactly one such item and nothing else, and the human reviewer who said
+"evidence actually argues against the trade" was reading it correctly.
+
+`reconcile_sides()` moves those items to `evidence_against` and records an
+`evidence_contradicts_side` flag. Moved rather than dropped: the model found a
+real reported figure and mislabelled which case it supports, so the fact belongs
+in the analysis — on the other side of the ledger. The function is idempotent,
+because the pipeline applies it and `conviction()` applies it again.
+
+### A passing verdict must be able to size one reason
+
+`[filters] min_quantified_for = 1`. Applied only to verdicts that came back
+**true** — a quality bar on a pass, not a second way to fail — and counted
+*after* re-filing, so a wrong-signed figure cannot satisfy it.
+
+Two names in one book reached it on three unquantified reasons each: OGN
+("decreasing demand", "pricing pressure", "volume declines") and RSI ("record
+revenue", "share gains"). Both were rejected by two independent human reviews on
+precisely this basis. A level is not a change, and a claim nobody sized cannot be
+weighed against what the market already expects.
+
+Cost on that run: 47 → 39 longs and 23 → 15 shorts, still ample for a 6v6 book.
+
+### Priced-in penalty
+
+See `docs/FEATURE-LIMITATIONS.md` §5b. `already_priced` docks **2.0**,
+`partly_priced` **0.75**. A thesis that only restates consensus is a description,
+not an edge.
+
+## 9. Relative PEG
+
+`max_relative_peg = 3.0`, longs only.
+
+```
+relative_peg = (pe1 / sector_pe1) / ((1 + eg1) / (1 + sector_eg1))
+```
+
+A flat `max_sector_pe_multiple` cannot tell a premium that growth backs from one
+it does not, and the process buys premium-multiple longs deliberately — so a flat
+rule either admits everything or rejects the strategy. This divides the two
+premiums. Below 1.0 the extra growth more than covers the extra multiple.
+
+On one run it ordered the book's longs the way two independent human reviewers
+did, without being shown their opinions:
+
+| Ticker | relPEG | Reviewer |
+|---|---|---|
+| SEZL | 1.39 | "strongest long case" |
+| RSI | 1.55 | "promising, insufficiently quantified" |
+| POWL | 1.85 | "premium not justified by growth rate alone" |
+| BROS | 2.53 | "high multiple but growth justifies" |
+| CWST | **3.80** | "EV/EBIT alarming" — **blocked** |
+| CRK | **3.97** | "trajectory doesn't support the long" — **blocked** |
+
+A null `relative_peg` passes: it means the ratio could not be formed (earnings
+through zero), and the EG taxonomy is the right tool for those, not this.

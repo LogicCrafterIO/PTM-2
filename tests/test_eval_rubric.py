@@ -46,12 +46,14 @@ def test_aee_fixture_hits_core_holes():
     assert "timing.size_zero" not in ids
 
 
-def test_aca_headlines_and_rscore():
+def test_aca_headlines_and_catalyst_checks():
     idea = read_json(EVAL / "long_ACA.json")
     ids = _ids(check_idea(idea, None, _cfg()))
     assert "cat.headline_like" in ids
     assert "cat.earnings_not_iso" in ids
-    assert "timing.rscore_tautology" in ids
+    # timing.rscore_tautology went with the R-score itself. The fixture still
+    # carries the old prm fields; the audit must simply ignore them now.
+    assert "timing.rscore_tautology" not in ids
     assert "quant.non_ideal" in ids
 
 

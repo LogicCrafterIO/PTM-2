@@ -33,6 +33,53 @@ IMPACT_CAP_PCT = 30.0
 # earnings claim at or above the cap is worth BASE + MAX_BONUS.
 BASE_WEIGHT = 1.0
 MAX_BONUS = 3.0
+# The priced-in penalty is deliberately gone. It docked 2.0 when a verdict said
+# the market had already moved to the thesis, which encodes a mispricing
+# worldview: that agreeing with the street is worthless. The process now follows
+# revision momentum instead, where the market moving your way is CONFIRMATION.
+# Penalising it would rank the book against its own primary signal. The
+# priced_in field survives as commentary and moves nothing.
+
+
+CONTRADICTS_SIDE_FLAG = "evidence_contradicts_side"
+
+
+def _points_wrong_way(item: EvidenceItem, side: Side) -> bool:
+    """Is this 'reason to do the trade' actually a reason not to?
+
+    impact_pct is the change to impact_on, so the sign reads literally: a short
+    whose reason is +216% earnings is citing growth as grounds for shorting, and
+    a long whose reason is -30% revenue is citing contraction as grounds for
+    paying a premium. Neither is evidence; each is the opposite of it.
+
+    Rare and expensive. Across one full run, 3 of 106 quantified reasons were
+    signed this way - but because magnitude is capped at 30%, a wrong-signed
+    claim lands ON the cap and earns the MAXIMUM weight of 4.0. ARR reached the
+    book on exactly one such item and nothing else.
+    """
+    if not item.quantified or item.impact_pct is None or item.impact_pct == 0:
+        return False
+    return item.impact_pct < 0 if side == Side.LONG else item.impact_pct > 0
+
+
+def reconcile_sides(qual, side: Side) -> tuple[list[EvidenceItem], list[EvidenceItem], list[str]]:
+    """Move wrong-signed reasons to the side they actually argue for.
+
+    Moved rather than dropped: the model found a real reported figure and
+    mislabelled which case it supports, so the fact belongs in the analysis -
+    just on the other side of the ledger. Idempotent, so callers may apply it
+    more than once.
+    """
+    if qual is None:
+        return [], [], []
+    keep, moved = [], []
+    for item in qual.evidence_for:
+        (moved if _points_wrong_way(item, side) else keep).append(item)
+    notes = [
+        f"{CONTRADICTS_SIDE_FLAG}: {i.claim[:80]} ({i.impact_pct:+.0f}% {i.impact_on})"
+        for i in moved
+    ]
+    return keep, list(qual.evidence_against) + moved, notes
 
 
 def evidence_weight(item: EvidenceItem) -> float:
@@ -52,7 +99,91 @@ def evidence_weight(item: EvidenceItem) -> float:
     return BASE_WEIGHT + MAX_BONUS * magnitude * scope
 
 
-def conviction_detail(qual) -> dict:
+def momentum(idea: TradeIdea, cohorts: dict | None = None, ism: dict | None = None) -> dict:
+    """Revision momentum for one idea, with the filings veto. See ptm/drift.py.
+
+    Named momentum rather than a gap or a mispricing because that is what it is:
+    the direction analysts are already moving, followed rather than faded.
+
+    `cohorts` is the cross-sectional theme reading from ptm/themes.py. When it is
+    absent the per-idea value stored on `extra` is used instead, so the number in
+    a report matches the one the book was built from.
+    """
+    from ptm.drift import consensus_drift, momentum_edge
+    from ptm.themes import corroboration
+
+    drift = consensus_drift(idea.extra.get("expectations"))
+    themes = list((idea.qual.themes if idea.qual else None) or [])
+    if cohorts is not None:
+        theme_read = corroboration(themes, int(drift.get("direction") or 0), cohorts)
+    else:
+        theme_read = idea.extra.get("theme_corroboration") or {}
+    if ism is not None:
+        from ptm.themes import ism_support
+
+        ism_read = ism_support(themes, ism)
+    else:
+        ism_read = idea.extra.get("ism_support") or {}
+    return momentum_edge(
+        drift, idea.qual, idea.candidate.side == Side.LONG, theme_read, ism_read
+    )
+
+
+def cohort_rows(ideas: list[TradeIdea]) -> list[dict]:
+    """Per-idea input for the cross-sectional theme pass."""
+    from ptm.drift import consensus_drift
+
+    rows = []
+    for idea in ideas:
+        drift = consensus_drift(idea.extra.get("expectations"))
+        rows.append(
+            {
+                "ticker": idea.candidate.ticker,
+                "themes": list((idea.qual.themes if idea.qual else None) or []),
+                "direction": int(drift.get("direction") or 0),
+                "magnitude": drift.get("magnitude_pct"),
+            }
+        )
+    return rows
+
+
+def momentum_edge_pct(idea: TradeIdea) -> float | None:
+    """The reportable edge: signed revision distance, scaled. For display."""
+    return momentum(idea).get("edge_pct")
+
+
+def momentum_score(idea: TradeIdea) -> float | None:
+    """What the book actually ranks on: the log-compressed edge.
+
+    Separate from `momentum_edge_pct` on purpose. The percentage is the honest
+    number to show; ranking on it let one 347% revision out-score the rest of
+    the book ten to one. See ptm/drift._compress.
+    """
+    return momentum(idea).get("edge_score")
+
+
+def theme_score(idea: TradeIdea) -> float:
+    """How thematically exposed this name is, from its own filings.
+
+    A tiebreak, not a thesis. Exposure says the company talks about a theme, not
+    that the exposure is material or unpriced - so it orders names that are
+    otherwise equal rather than promoting a weak idea over a strong one.
+    """
+    qual = idea.qual
+    if qual is None or not getattr(qual, "themes", None):
+        return 0.0
+    total = 0.0
+    for label in qual.themes:
+        # Labels arrive as "AI and data centre (52)".
+        try:
+            total += float(str(label).rsplit("(", 1)[1].rstrip(")"))
+        except (IndexError, ValueError):
+            total += 1.0
+    # Compressed hard: 52 mentions is not 52 times better than 1.
+    return round(min(total, 60.0) / 60.0, 4)
+
+
+def conviction_detail(qual, side: Side = Side.LONG) -> dict:
     """The conviction score with its full arithmetic, for the idea's JSON.
 
     Written onto every idea so the number can be checked rather than trusted:
@@ -75,17 +206,21 @@ def conviction_detail(qual) -> dict:
             for i in items
         ]
 
-    for_rows, against_rows = rows(qual.evidence_for), rows(qual.evidence_against)
+    for_items, against_items, contradictions = reconcile_sides(qual, side)
+    for_rows, against_rows = rows(for_items), rows(against_items)
     penalties = [
         flag
         for flag in qual.red_flags
         if any(marker in flag for marker in PROCESS_FLAGS)
-    ]
+    ] + contradictions
     score = sum(r["weight"] for r in for_rows) - sum(r["weight"] for r in against_rows)
-    if penalties:
+    if [p for p in penalties if any(m in p for m in PROCESS_FLAGS)]:
         score -= BASE_WEIGHT
     return {
         "score": round(score, 4),
+        "priced_in": str(getattr(qual, "priced_in", "unknown") or "unknown"),
+        "market_expectation": str(getattr(qual, "market_expectation", "") or ""),
+        "deviation": str(getattr(qual, "deviation", "") or ""),
         "for_total": round(sum(r["weight"] for r in for_rows), 3),
         "against_total": round(sum(r["weight"] for r in against_rows), 3),
         "quantified_items": sum(1 for r in for_rows + against_rows if r["quantified"]),
@@ -115,8 +250,9 @@ def conviction(idea: TradeIdea) -> float:
     qual = idea.qual
     if qual is None:
         return 0.0
-    score = sum(evidence_weight(i) for i in qual.evidence_for)
-    score -= sum(evidence_weight(i) for i in qual.evidence_against)
+    for_items, against_items, _ = reconcile_sides(qual, idea.candidate.side)
+    score = sum(evidence_weight(i) for i in for_items)
+    score -= sum(evidence_weight(i) for i in against_items)
     if any(marker in flag for flag in qual.red_flags for marker in PROCESS_FLAGS):
         score -= BASE_WEIGHT
     return round(score, 4)
@@ -151,10 +287,27 @@ def ordered_ideas(ideas: list[TradeIdea]) -> list[TradeIdea]:
     def key(idea: TradeIdea) -> tuple:
         cand = idea.candidate
         eg1 = cand.eg1 or 0.0
+        # QUALITATIVE factors order the book. The quant screen is a FILTER: by
+        # this point every name is already a P/E outlier that fits an EG case,
+        # clears the relative-PEG ceiling and passed the gate, so re-sorting on
+        # those same measures merely restates the filter.
+        #
+        # Revision momentum leads. The process follows the direction estimates
+        # are already travelling rather than trying to identify a mispricing -
+        # mispricings are close to unidentifiable from filings, and an earlier
+        # design that faded analysts on backward-looking evidence was betting
+        # against a documented momentum effect. Let the market help.
+        edge = momentum_score(idea)
         return (
-            0 if cand.mcap_ok else 1,
-            -(cand.ism_score or 0.0),
+            # 1. Are estimates moving this trade's way, and how hard? Ranked on
+            #    the compressed score, not the raw percentage - see momentum_score.
+            -(edge if edge is not None else -999.0),
+            # 2. How well evidenced is the case at all?
             -conviction(idea),
+            # 3. Thematic exposure, as a tiebreak between equals.
+            -theme_score(idea),
+            # 4. Sector tilt, then growth - both quant, both last.
+            -(cand.ism_score or 0.0),
             -eg1 if cand.side == Side.LONG else eg1,
         )
 

@@ -5,7 +5,7 @@ import math
 import pandas as pd
 
 from ptm.config import data_dir, toml_settings
-from ptm.formulas import earnings_growth, pe, peg
+from ptm.formulas import earnings_growth, pe, peg, relative_peg
 from ptm.gates import mcap_check
 from ptm.io import write_df
 from ptm.log import log
@@ -161,6 +161,7 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
     cfg_filters = toml_settings()["filters"]
     max_pe = float(cfg_filters.get("max_screen_pe") or 200.0)
     max_pe_multiple = float(cfg_filters.get("max_sector_pe_multiple") or 0.0)
+    max_rel_peg = float(cfg_filters.get("max_relative_peg") or 0.0)
     frame["pe_implausible"] = frame["pe1"].notna() & (frame["pe1"] > max_pe)
 
     # A name without analyst consensus is not merely less reliable, it is on a
@@ -213,6 +214,9 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
         classify_short_case(r.eg1, r.eg2, r.sector_eg1) for r in frame.itertuples()
     ]
     require_case = bool(cfg_filters.get("require_eg_case", True))
+    frame["relative_peg"] = [
+        relative_peg(r.pe1, r.sector_pe1, r.eg1, r.sector_eg1) for r in frame.itertuples()
+    ]
 
     if max_pe_multiple:
         rich = frame[
@@ -226,6 +230,19 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
             log(
                 f"screen: {len(rich)} names blocked as longs at over "
                 f"{max_pe_multiple:.0f}x their sector median P/E (still in the benchmark)"
+            )
+
+    if max_rel_peg:
+        unbacked = frame[
+            ~frame["pe_implausible"]
+            & ~frame["no_consensus"]
+            & frame["relative_peg"].notna()
+            & (frame["relative_peg"] > max_rel_peg)
+        ]
+        if len(unbacked):
+            log(
+                f"screen: {len(unbacked)} names blocked as longs at over {max_rel_peg:.1f}x "
+                "multiple premium per unit of growth premium (still in the benchmark)"
             )
 
     candidates: list[Candidate] = []
@@ -250,6 +267,17 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
             long_eligible = long_eligible[
                 long_eligible["sector_pe1"].isna()
                 | (long_eligible["pe1"] <= max_pe_multiple * long_eligible["sector_pe1"])
+            ]
+        # And the same idea measured against growth rather than against nothing:
+        # max_sector_pe_multiple admits a name paying 3x the sector multiple for
+        # flat earnings, which is the failure two independent reviews of one
+        # book both flagged. A null relative_peg passes - it means the ratio
+        # could not be formed, and excluding on an absent number would silently
+        # drop names the EG taxonomy is the right tool for.
+        if max_rel_peg:
+            long_eligible = long_eligible[
+                long_eligible["relative_peg"].isna()
+                | (long_eligible["relative_peg"] <= max_rel_peg)
             ]
         short_eligible = ranked[~ranked["short_case"].isin(NON_IDEAL_CASES)] if require_case else ranked
         long_pool = long_eligible.head(max(3, len(long_eligible) // 8))
@@ -276,6 +304,7 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
                 peg2=_num(row["peg2"]),
                 sector_pe1=_num(row["sector_pe1"]),
                 sector_eg1=_num(row["sector_eg1"]),
+                relative_peg=_num(row["relative_peg"]),
                 eg_case=row["long_case"],
                 mcap_ok=ok,
                 mcap_warning="" if ok else warn,
@@ -305,6 +334,7 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
                 peg2=_num(row["peg2"]),
                 sector_pe1=_num(row["sector_pe1"]),
                 sector_eg1=_num(row["sector_eg1"]),
+                relative_peg=_num(row["relative_peg"]),
                 eg_case=row["short_case"],
                 mcap_ok=ok,
                 mcap_warning="" if ok else warn,

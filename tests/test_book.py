@@ -185,9 +185,10 @@ def test_beta_selection_can_be_switched_off(monkeypatch):
     assert not any("beta rebalance" in b for b in book.limit_breaches)
 
 
-def test_short_book_limits_names_below_the_mcap_floor():
-    """Small-cap shorts carry borrow, squeeze and liquidity risk large caps do
-    not. Three of six sub-$20bn shorts is a different strategy than intended."""
+def test_short_book_has_no_size_floor():
+    """The floor was removed, not loosened. It cost more than it saved: mcap_ok
+    is the first ranking key, so sub-floor shorts sorted beneath every large cap
+    whatever their idea quality, and the side came back short on every run."""
     pool = [
         _ready_idea("BIG1", "Financials", Side.SHORT, market_cap=60e9),
         _ready_idea("SMALL1", "Health Care", Side.SHORT, market_cap=3e9),
@@ -197,17 +198,12 @@ def test_short_book_limits_names_below_the_mcap_floor():
     ]
     book = assemble_book(pool, Bias.NEUTRAL)
     shorts = [i for i in book.ideas if i.candidate.side == Side.SHORT]
-    small = [i for i in shorts if (i.candidate.market_cap or 0) < 20e9]
-    assert len(small) == 1, f"expected 1 sub-floor short, got {[i.candidate.ticker for i in small]}"
-    # Rank order still leads within the constraint.
-    assert small[0].candidate.ticker == "SMALL1"
-    assert {"BIG1", "BIG2"} <= {i.candidate.ticker for i in shorts}
-    assert any("below $20bn" in b for b in book.limit_breaches)
+    assert len(shorts) == 5, "every ready short should be reachable"
+    assert not any("below $" in b for b in book.limit_breaches)
 
 
-def test_missing_market_cap_counts_as_below_the_floor():
-    """We cannot confirm the name is large enough, and an unborrowable micro-cap
-    short is exactly the risk this guards against."""
+def test_missing_market_cap_no_longer_blocks_a_short():
+    """With no floor there is no band for an unknown size to fall outside of."""
     pool = [
         _ready_idea("BIG", "Financials", Side.SHORT, market_cap=60e9),
         TradeIdea(
@@ -218,16 +214,30 @@ def test_missing_market_cap_counts_as_below_the_floor():
         _ready_idea("SMALL", "Utilities", Side.SHORT, market_cap=2e9),
     ]
     book = assemble_book(pool, Bias.NEUTRAL)
-    picked = {i.candidate.ticker for i in book.ideas}
-    assert "BIG" in picked
-    assert not ({"UNKNOWN", "SMALL"} <= picked), "only one may be under the floor"
+    assert {"BIG", "UNKNOWN", "SMALL"} <= {i.candidate.ticker for i in book.ideas}
 
 
-def test_long_side_is_not_subject_to_the_short_size_cap():
+def test_size_cap_machinery_still_works_when_configured():
+    """The floor is off by configuration, not deleted - _pick still honours one
+    when handed it, so restoring short_mcap_min re-enables the whole path."""
+    from ptm.book import _pick
+
+    pool = [
+        _ready_idea("BIG1", "Financials", Side.SHORT, market_cap=60e9),
+        _ready_idea("SMALL1", "Health Care", Side.SHORT, market_cap=3e9),
+        _ready_idea("SMALL2", "Real Estate", Side.SHORT, market_cap=2e9),
+        _ready_idea("BIG2", "Energy", Side.SHORT, market_cap=40e9),
+    ]
+    picked = _pick(pool, limit=6, max_per_sector=2, mcap_floor=20e9, max_below_floor=1)
+    small = [i.candidate.ticker for i in picked if (i.candidate.market_cap or 0) < 20e9]
+    assert small == ["SMALL1"], f"expected rank order within the cap, got {small}"
+
+
+def test_long_side_keeps_its_own_size_band():
     pool = [_ready_idea(f"L{i}", s, Side.LONG, market_cap=4e9)
             for i, s in enumerate(["Industrials", "Energy", "Materials", "Utilities"])]
     book = assemble_book(pool, Bias.NEUTRAL)
-    assert len(book.ideas) == 4, "the short-side floor must not filter longs"
+    assert len(book.ideas) == 4
 
 
 def _conv_idea(ticker, sector, side, ism, eg1, for_n, against_n, flags=None):
@@ -249,19 +259,25 @@ def _conv_idea(ticker, sector, side, ism, eg1, for_n, against_n, flags=None):
     )
 
 
-def test_conviction_outranks_eg1_but_not_the_screen_proper():
-    """Conviction beats earnings growth, but size band and ISM tilt still lead."""
+def test_qualitative_factors_outrank_the_quant_screen():
+    """The quant screen is a FILTER, not a ranking. By selection time every name
+    is already a P/E outlier that fits an EG case, clears the relative-PEG
+    ceiling and passed the gate, so re-sorting on those same measures merely
+    restates the filter. Conviction and the expectation gap decide instead.
+
+    This reverses the earlier design, in which ISM tilt led and conviction could
+    not promote a name past it.
+    """
     from ptm.ranking import ordered_ideas
 
-    # Equal on mcap_ok and ISM -> conviction decides, eg1 no longer does.
     weak = _conv_idea("WEAK", "Industrials", Side.LONG, ism=1.0, eg1=0.90, for_n=1, against_n=3)
     strong = _conv_idea("STRONG", "Industrials", Side.LONG, ism=1.0, eg1=0.10, for_n=4, against_n=0)
     assert [i.candidate.ticker for i in ordered_ideas([weak, strong])] == ["STRONG", "WEAK"]
 
-    # A better ISM score outranks higher conviction: the screen is not overridden.
+    # A better ISM score no longer rescues a poorly evidenced name.
     better_screen = _conv_idea("SCREEN", "Energy", Side.LONG, ism=2.0, eg1=0.10, for_n=0, against_n=2)
     order = [i.candidate.ticker for i in ordered_ideas([strong, better_screen])]
-    assert order == ["SCREEN", "STRONG"]
+    assert order == ["STRONG", "SCREEN"], order
 
 
 def test_process_failures_dock_conviction_but_business_risks_do_not():
