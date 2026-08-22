@@ -139,27 +139,6 @@ class QualResult(BaseModel):
         if isinstance(value, list):
             return [EvidenceItem.coerce(item) for item in value]
         return value
-    # What the market already assumes going into the print, and how the evidence
-    # differs from it. Without these a valuation argument becomes an earnings
-    # trade with nothing said about what is priced - the single complaint three
-    # independent reviews of one book all made.
-    market_expectation: str = ""
-    deviation: str = ""
-    # already_priced | partly_priced | not_priced | unknown
-    priced_in: str = "unknown"
-    # THE number the whole qualitative pass exists to produce: how far the sized
-    # evidence points above (or below) the consensus FY1 EPS the market is
-    # holding. Positive means the evidence points above consensus. This is what
-    # makes one idea rankable against another - `deviation` says a gap exists,
-    # this says how big it is. None when the evidence cannot support a figure;
-    # a guessed number here would be worse than no number.
-    expected_surprise_pct: float | None = None
-    # Which of the listed reasons drive that figure, so it can be checked.
-    surprise_basis: str = ""
-    # high | medium | low | none
-    gap_confidence: str = "none"
-    # WHAT the gap rests on. guidance | forward_indicator | run_rate | none
-    gap_basis_type: str = "none"
     # The model's ONE job on the expectation gap now: which way do the filings
     # point? A classification, not a calculation. Asking for a percentage
     # produced round-number clustering and constant confidence, because backing

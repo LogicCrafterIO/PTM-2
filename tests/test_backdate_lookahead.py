@@ -498,12 +498,3 @@ def test_expectations_module_guards_before_any_network_call():
     guard = body.index("if is_backdated():\n        return None")
     fetch = body.index('payload = {\n        "ticker": ticker')
     assert guard < fetch, "the backdating guard must precede the fetch"
-
-
-def test_verdict_cannot_claim_something_is_priced_without_the_data():
-    """priced_in is forced to unknown when no expectations were supplied, so a
-    model cannot invent a judgement that then moves conviction."""
-    import ptm.llm as llm
-
-    source = Path(llm.__file__).read_text(encoding="utf-8")
-    assert 'if not expectations:\n        priced_in = "unknown"' in source

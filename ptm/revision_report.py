@@ -23,7 +23,7 @@ from pathlib import Path
 from ptm.config import data_dir, ideas_dir
 from ptm.io import write_json
 from ptm.log import log
-from ptm.models import Side, TradeIdea
+from ptm.models import TradeIdea
 from ptm.ranking import conviction, momentum, theme_score
 
 
@@ -31,7 +31,6 @@ def _row(idea: TradeIdea) -> dict:
     cand, qual = idea.candidate, idea.qual
     detail = momentum(idea)
     gap = detail.get("edge_pct")
-    implied = (idea.extra.get("expectations") or {}).get("implied") or {}
     return {
         "ticker": cand.ticker,
         "name": cand.name,
@@ -56,9 +55,6 @@ def _row(idea: TradeIdea) -> dict:
         "direction_basis": None if qual is None else qual.direction_basis,
         "themes": [] if qual is None else list(qual.themes or []),
         "theme_score": theme_score(idea),
-        "market_expectation": None if qual is None else qual.market_expectation,
-        "deviation": None if qual is None else qual.deviation,
-        "priced_in": None if qual is None else qual.priced_in,
         "conviction": conviction(idea),
         # Context, not a ranking input.
         "consensus_eps1": cand.eps1,
@@ -66,7 +62,6 @@ def _row(idea: TradeIdea) -> dict:
         "pe1": cand.pe1,
         "sector_pe1": cand.sector_pe1,
         "relative_peg": cand.relative_peg,
-        "implied_move_pct": implied.get("implied_move_pct") if implied.get("available") else None,
         "earnings_date": idea.earnings.date if idea.earnings else None,
     }
 
@@ -114,8 +109,6 @@ def _table(rows: list[dict]) -> list[str]:
     for r in sorted(rows, key=_sort_key):
         gap = r["edge_pct"]
         gap_text = "—" if gap is None else f"**{gap:+.1f}%**"
-        move = r["implied_move_pct"]
-        move_text = "—" if move is None else f"{move:.0f}%"
         status = "gated" if r["gated"] else ("in book" if r.get("in_book") else "eligible")
         themes = ", ".join(str(t).rsplit(" (", 1)[0] for t in (r.get("themes") or [])[:2]) or "—"
         out.append(
@@ -142,10 +135,9 @@ def render(rows: list[dict], book_tickers: set[str] | None = None) -> str:
         "",
         f"As of {datetime.now(timezone.utc).isoformat(timespec='seconds')}",
         "",
-        "Ranked by the **expectation gap**: how far analysts have already revised their "
-        "estimates, weighted by whether this company's own filings agree with the direction "
-        "they moved. Signed so a positive number always means *wrong in the direction this "
-        "trade needs*.",
+        "Ranked by **revision momentum**: how far analysts have already revised their "
+        "estimates in the direction each trade needs, weighted by durability and corroboration. "
+        "The company's filings can veto a revision that conflicts with its reported direction.",
         "",
         f"{len(sized)} of {len(live)} eligible ideas carry measurable momentum.",
         "",
@@ -162,13 +154,8 @@ def render(rows: list[dict], book_tickers: set[str] | None = None) -> str:
         "consensus-implied growth rate is arithmetic a mid-sized model cannot do.",
         "* **The direction comes from the filings.** That is a classification, which a model "
         "does reliably. The two are combined by whether they agree.",
-        "* **\"analysts wrong\" is the case worth reading.** Estimates being cut on a company "
-        "whose own filings point up - or raised on one pointing down. Both halves are "
-        "checkable, and the filings are the primary source.",
-        "* **\"priced\" means the thesis is probably right and probably known.** Discounted "
-        "rather than dropped: being right slightly early still beats being wrong.",
-        "* **An earnings gap is not a price gap**, and this is relative to consensus rather "
-        "than to fair value.",
+        "* This is a continuation signal, not a claim that analysts are wrong or that fair value "
+        "is mispriced. Live IV and trade structure are assessed manually downstream.",
         "* Themes come from each company's own filings, not from news - see ptm/themes.py. "
         "They are context and a tiebreak, never a thesis.",
         "",
@@ -212,22 +199,5 @@ def write_momentum(
     path = ideas_dir(day, "MOMENTUM.md")
     path.write_text(render(rows, book_tickers), encoding="utf-8")
     sized = sum(1 for r in rows if r["edge_pct"] is not None)
-    log(f"momentum: {sized}/{len(rows)} ideas carry a sized expectation gap → {path.name}")
+    log(f"momentum: {sized}/{len(rows)} ideas carry measured revision momentum → {path.name}")
     return path
-
-
-def gap_line(qual, candidate, expectations: dict | None = None) -> str:
-    """The revision-momentum line for one idea's markdown.
-
-    Delegates to ptm/drift.py so the number on the page is the same one the
-    ranking used, computed the same way.
-    """
-    from ptm.drift import consensus_drift, momentum_edge, summary_line
-
-    drift = consensus_drift(expectations)
-    payload = momentum_edge(drift, qual, candidate.side == Side.LONG)
-    line = summary_line(payload)
-    basis = (getattr(qual, "direction_basis", "") or "").strip() if qual else ""
-    if basis:
-        line += f" Filings read as {payload.get('filing_direction')} because: {basis}"
-    return line

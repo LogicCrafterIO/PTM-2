@@ -6,6 +6,7 @@ from ptm.eval import (
     check_book,
     check_idea,
     check_markdown_files,
+    check_window_books,
     check_worldview,
     write_audit,
 )
@@ -73,6 +74,24 @@ def test_acn_short_green_uptrend():
     assert "cat.earnings_not_iso" in ids
 
 
+def test_tradeable_supported_idea_cannot_remain_investment_only():
+    idea = {
+        "candidate": {"ticker": "AGX", "side": "long"},
+        "state": "investment_only",
+        "qual": {"supports_outlier": True},
+        "catalysts": {
+            "earnings_date": "2026-09-03",
+            "earnings_in_window": True,
+            "tradeable": True,
+            "non_earnings": [],
+        },
+        "extra": {"gates": []},
+        "template_markdown": "# AGX",
+    }
+    ids = _ids(check_idea(idea, None, _cfg()))
+    assert "cat.tradeable_marked_investment_only" in ids
+
+
 def test_worldview_materials_contradiction():
     snap = read_json(EVAL / "macro_snapshot.json")
     ism = {
@@ -94,6 +113,36 @@ def test_book_empty_vs_templated():
     ids = _ids(check_book(book, ideas, _cfg()))
     assert "book.out_of_range" in ids
     assert "book.stale_vs_ideas" in ids
+
+
+def test_thin_window_is_informational_not_a_book_error(isolate_roots):
+    idea = {
+        "candidate": {"ticker": "NEAR", "side": "long", "sector": "Industrials"},
+        "state": "templated",
+        "earnings": {"days_to_earnings": 10},
+        "extra": {"gates": []},
+    }
+    write_json(
+        data_dir("curated", "book_00-30d.json"),
+        {"ideas": [idea], "limit_breaches": ["only 1 names"]},
+    )
+
+    findings = check_window_books([idea], _cfg())
+    thin = [f for f in findings if f.check_id == "book.window.thin"]
+    assert thin and all(f.severity == "info" for f in thin)
+    assert "book.out_of_range" not in _ids(findings)
+
+
+def test_window_audit_flags_stored_day_mismatch(isolate_roots):
+    idea = {
+        "candidate": {"ticker": "NEAR", "side": "long", "sector": "Industrials"},
+        "state": "templated",
+        "earnings": {"days_to_earnings": 10},
+        "extra": {"gates": []},
+    }
+    write_json(data_dir("curated", "book_31-60d.json"), {"ideas": [idea]})
+
+    assert "book.window.wrong_bucket" in _ids(check_window_books([idea], _cfg()))
 
 
 def test_md_file_that_is_json(tmp_path, isolate_roots):

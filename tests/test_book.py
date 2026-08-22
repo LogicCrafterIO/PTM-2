@@ -112,14 +112,23 @@ def test_cap_reports_rather_than_silently_relaxing():
     assert any("names" in b for b in book.limit_breaches), "under-size is still reported"
 
 
-def _beta_idea(ticker: str, sector: str, side: Side, beta: float) -> TradeIdea:
-    return TradeIdea(
+def _beta_idea(
+    ticker: str,
+    sector: str,
+    side: Side,
+    beta: float,
+    momentum_score: float | None = 10.0,
+) -> TradeIdea:
+    idea = TradeIdea(
         candidate=Candidate(
             ticker=ticker, name=ticker, sector=sector, side=side, market_cap=50e9
         ),
         state=IdeaState.TEMPLATED,
         prm=PRMResult(beta=beta),
     )
+    if momentum_score is not None:
+        idea.extra["revision_momentum"] = {"edge_score": momentum_score}
+    return idea
 
 
 def test_beta_rebalance_brings_a_breaching_book_inside_the_limit():
@@ -153,6 +162,34 @@ def test_beta_rebalance_respects_the_sector_cap():
     book = assemble_book(pool, Bias.NEUTRAL)
     sectors = Counter(i.candidate.sector for i in book.ideas)
     assert all(v <= 2 for v in sectors.values()), f"cap violated by rebalance: {dict(sectors)}"
+
+
+def test_beta_rebalance_never_swaps_in_a_null_momentum_name():
+    from ptm.book import _momentum_swap_ok
+
+    hot = _beta_idea("HOT", "Industrials", Side.LONG, 2.5, momentum_score=12.0)
+    null = _beta_idea("NULL", "Utilities", Side.LONG, 0.1, momentum_score=None)
+    assert _momentum_swap_ok(hot, null, 0.65) is False
+
+
+def test_book_excludes_a_stored_null_momentum_signal():
+    valid = _beta_idea("VALID", "Industrials", Side.LONG, 0.8, momentum_score=8.0)
+    null = _beta_idea("NULL", "Utilities", Side.LONG, 0.2, momentum_score=None)
+    null.extra["revision_momentum"] = {"edge_score": None}
+
+    book = assemble_book([valid, null], Bias.NEUTRAL)
+    assert [idea.candidate.ticker for idea in book.ideas] == ["VALID"]
+    assert any("without positive measurable revision momentum" in b for b in book.limit_breaches)
+
+
+def test_beta_rebalance_preserves_minimum_momentum_ratio():
+    from ptm.book import _momentum_swap_ok
+
+    hot = _beta_idea("HOT", "Industrials", Side.LONG, 2.5, momentum_score=10.0)
+    weak = _beta_idea("WEAK", "Utilities", Side.LONG, 0.1, momentum_score=7.9)
+    strong = _beta_idea("STRONG", "Materials", Side.LONG, 0.2, momentum_score=8.0)
+    assert _momentum_swap_ok(hot, weak, 0.80) is False
+    assert _momentum_swap_ok(hot, strong, 0.80) is True
 
 
 def test_rank_leads_when_beta_already_complies():

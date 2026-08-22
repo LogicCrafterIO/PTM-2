@@ -53,9 +53,46 @@ def test_filter_non_earnings_keeps_dated_events():
 
 
 def test_sanitize_kpis_drops_statement_lines():
-    cleaned, stripped = sanitize_kpis(["revenue", "backlog", "net_income", "utilization"])
+    cleaned, stripped = sanitize_kpis(
+        ["revenue", "backlog", "net_income", "utilization", "IoT connectivity"]
+    )
     assert cleaned == ["backlog", "utilization"]
     assert stripped is True
+
+
+def test_mission_statement_is_not_an_operating_plan():
+    from ptm.llm import sanitize_operating_plan
+
+    plan, stripped = sanitize_operating_plan(
+        "Enabling a smarter, more sustainable planet through connected products"
+    )
+    assert plan == ""
+    assert stripped is True
+    concrete, stripped = sanitize_operating_plan(
+        "Expand manufacturing capacity and launch the new platform in fiscal 2027"
+    )
+    assert concrete
+    assert stripped is False
+
+
+def test_quant_screen_metrics_are_removed_from_qualitative_evidence():
+    from ptm.llm import _strip_screen_evidence
+    from ptm.models import EvidenceItem
+
+    kept, stripped = _strip_screen_evidence(
+        [
+            EvidenceItem(claim="Strong forward EPS growth", metric="FY1 EPS growth"),
+            EvidenceItem(
+                claim="Backlog grew 22%",
+                metric="Backlog growth",
+                impact_pct=22.0,
+                impact_on="revenue",
+                quantified=True,
+            ),
+        ]
+    )
+    assert [item.claim for item in kept] == ["Backlog grew 22%"]
+    assert stripped == 1
 
 
 def test_qualitative_two_pass_uses_verdict_why(monkeypatch):
@@ -349,14 +386,6 @@ def test_sized_facts_drop_duplicates_and_empty_packs():
     assert len(_sized_facts(repeated)) == 1
 
 
-def test_expectations_prompt_says_so_when_there_is_nothing():
-    """Silence would let the model invent a priced_in judgement."""
-    from ptm.llm import _expectations_prompt
-
-    assert "not available" in _expectations_prompt(None)
-    assert "priced_in to unknown" in _expectations_prompt({})
-
-
 def test_forward_looking_facts_outrank_reported_ones():
     """The category error this fixes: the verdict was comparing last quarter's
     realised growth to a forward consensus and calling the difference a
@@ -438,6 +467,21 @@ def test_the_dead_mispricing_payload_is_no_longer_requested():
     keys = source[start:source.index("Side={candidate.side.value}")]
     for dead in ("expected_surprise_pct", "surprise_basis", "gap_confidence", "gap_basis_type"):
         assert dead not in keys, f"{dead} is no longer used and must not be asked for"
+
+
+def test_dead_mispricing_fields_are_not_in_the_schema():
+    from ptm.models import QualResult
+
+    dead = {
+        "market_expectation",
+        "deviation",
+        "priced_in",
+        "expected_surprise_pct",
+        "surprise_basis",
+        "gap_confidence",
+        "gap_basis_type",
+    }
+    assert dead.isdisjoint(QualResult.model_fields)
 
 
 def test_retry_keeps_both_ends_of_the_prompt():

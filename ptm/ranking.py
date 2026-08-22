@@ -33,14 +33,6 @@ IMPACT_CAP_PCT = 30.0
 # earnings claim at or above the cap is worth BASE + MAX_BONUS.
 BASE_WEIGHT = 1.0
 MAX_BONUS = 3.0
-# The priced-in penalty is deliberately gone. It docked 2.0 when a verdict said
-# the market had already moved to the thesis, which encodes a mispricing
-# worldview: that agreeing with the street is worthless. The process now follows
-# revision momentum instead, where the market moving your way is CONFIRMATION.
-# Penalising it would rank the book against its own primary signal. The
-# priced_in field survives as commentary and moves nothing.
-
-
 CONTRADICTS_SIDE_FLAG = "evidence_contradicts_side"
 
 
@@ -218,9 +210,6 @@ def conviction_detail(qual, side: Side = Side.LONG) -> dict:
         score -= BASE_WEIGHT
     return {
         "score": round(score, 4),
-        "priced_in": str(getattr(qual, "priced_in", "unknown") or "unknown"),
-        "market_expectation": str(getattr(qual, "market_expectation", "") or ""),
-        "deviation": str(getattr(qual, "deviation", "") or ""),
         "for_total": round(sum(r["weight"] for r in for_rows), 3),
         "against_total": round(sum(r["weight"] for r in against_rows), 3),
         "quantified_items": sum(1 for r in for_rows + against_rows if r["quantified"]),

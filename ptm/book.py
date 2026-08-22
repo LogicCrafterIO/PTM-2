@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from ptm.config import data_dir, toml_settings
 from ptm.io import write_json
 from ptm.models import Bias, BookProposal, IdeaState, Side, TradeIdea
-from ptm.ranking import ordered_ideas
+from ptm.ranking import momentum_score, ordered_ideas
 
 
 
@@ -122,6 +122,25 @@ def _mcap_ok(
     return current < max_below
 
 
+def _momentum_swap_ok(
+    dropped: TradeIdea,
+    candidate: TradeIdea,
+    minimum_ratio: float,
+) -> bool:
+    """A beta hedge may not replace a measured signal with a weak or null one."""
+    candidate_score = (candidate.extra.get("revision_momentum") or {}).get("edge_score")
+    if candidate_score is None:
+        candidate_score = momentum_score(candidate)
+    if candidate_score is None or candidate_score <= 0:
+        return False
+    dropped_score = (dropped.extra.get("revision_momentum") or {}).get("edge_score")
+    if dropped_score is None:
+        dropped_score = momentum_score(dropped)
+    if dropped_score is None or dropped_score <= 0:
+        return True
+    return candidate_score >= dropped_score * minimum_ratio
+
+
 def _rebalance_beta(
     longs: list[TradeIdea],
     shorts: list[TradeIdea],
@@ -131,6 +150,7 @@ def _rebalance_beta(
     max_per_sector: int,
     short_floor: float | None = None,
     max_small_shorts: int | None = None,
+    min_momentum_ratio: float = 0.65,
 ) -> tuple[list[TradeIdea], list[TradeIdea], list[str]]:
     """Swap the fewest names needed to bring portfolio beta inside the limit.
 
@@ -161,6 +181,8 @@ def _rebalance_beta(
                 for in_idea in pool:
                     if in_idea in picked:
                         continue
+                    if not _momentum_swap_ok(out_idea, in_idea, min_momentum_ratio):
+                        continue
                     if not _sector_ok(picked, in_idea, out_idea, max_per_sector):
                         continue
                     if side == "short" and not _mcap_ok(
@@ -186,9 +208,21 @@ def _rebalance_beta(
         if compliant:
             best = min(compliant, key=lambda r: _pool_rank(r[3], long_pool, short_pool))
         else:
-            # Nothing gets inside the limit yet, so make the most progress and
-            # let the loop try again.
-            best = min(improving, key=lambda r: abs(r[0]))
+            # Nothing complies yet, so make progress - but exhaust the SHORT side
+            # first. Portfolio beta is (sum long betas - sum short betas), so a
+            # too-long book can be fixed either by lowering a long's beta or by
+            # RAISING a short's. Both work; they do not cost the same.
+            #
+            # Measured on one run: the six top-ranked longs summed to beta 13.23
+            # against 3.60 for shorts taken on rank, giving +0.80. Substituting
+            # the highest-beta shorts available took it to +0.51 while keeping
+            # every top-ranked long. Long-side swaps were discarding SMTC (rank
+            # 4, reporting in 5 days) and INTC (rank 2) - the best-timed and
+            # best-scored ideas in the book - to fix a problem the short side
+            # could partly absorb.
+            shorts_first = [r for r in improving if r[1] == "short"]
+            pool = shorts_first or improving
+            best = min(pool, key=lambda r: abs(r[0]))
         _, side, out_idea, in_idea = best
         target = longs if side == "long" else shorts
         target[target.index(out_idea)] = in_idea
@@ -199,14 +233,31 @@ def _rebalance_beta(
     return longs, shorts, swaps
 
 
-def assemble_book(ideas: list[TradeIdea], bias: Bias) -> BookProposal:
+def assemble_book(
+    ideas: list[TradeIdea],
+    bias: Bias,
+    *,
+    persist: bool = True,
+) -> BookProposal:
+    """Select a book, optionally persisting it as the aggregate ``book.json``.
+
+    Window-specific books use the same selection logic but must not replace the
+    aggregate book that consumers and audits expect at ``book.json``.
+    """
     cfg = toml_settings()
     ready = []
+    no_momentum: list[str] = []
     for idea in ideas:
         if idea.state not in {IdeaState.TEMPLATED, IdeaState.SIZED}:
             continue
         if idea.extra.get("gates"):
             continue
+        stored_momentum = idea.extra.get("revision_momentum")
+        if isinstance(stored_momentum, dict):
+            edge_score = stored_momentum.get("edge_score")
+            if edge_score is None or edge_score <= 0:
+                no_momentum.append(idea.candidate.ticker)
+                continue
         ready.append(idea)
     # Size band and ISM tilt still lead, but conviction outranks earnings growth
     # from here: every name has already cleared the outlier screen and the gate,
@@ -234,6 +285,9 @@ def assemble_book(ideas: list[TradeIdea], bias: Bias) -> BookProposal:
     beta_limit = float(cfg["prm"]["beta_net_limit"])
     swaps: list[str] = []
     if bool(cfg["filters"].get("beta_aware_selection", True)):
+        min_momentum_ratio = float(
+            cfg["filters"].get("beta_swap_min_momentum_ratio", 0.65)
+        )
         longs, shorts, swaps = _rebalance_beta(
             longs,
             shorts,
@@ -243,6 +297,7 @@ def assemble_book(ideas: list[TradeIdea], bias: Bias) -> BookProposal:
             max_per_sector,
             short_floor,
             max_small_shorts,
+            min_momentum_ratio,
         )
     selected = longs + shorts
     for idea in selected:
@@ -263,6 +318,11 @@ def assemble_book(ideas: list[TradeIdea], bias: Bias) -> BookProposal:
     gross = sum(abs(w) for w in weights) if selected else None
     net = sum(weights) if selected else None
     breaches = []
+    if no_momentum:
+        breaches.append(
+            f"excluded {len(no_momentum)} name(s) without positive measurable revision "
+            f"momentum: {', '.join(no_momentum)}"
+        )
     for swap in swaps:
         breaches.append(f"beta rebalance: swapped {swap}")
     if port_beta is not None and abs(port_beta) > cfg["prm"]["beta_net_limit"]:
@@ -297,50 +357,6 @@ def assemble_book(ideas: list[TradeIdea], bias: Bias) -> BookProposal:
                 f"short book carries {small} name(s) below ${short_floor / 1e9:.0f}bn "
                 f"(limit {max_small_shorts}): {names}"
             )
-    # Options liquidity, which replaced borrow and squeeze risk as the thing that
-    # actually constrains this book. Removing the short size floor was right -
-    # there is no borrow to locate on an options-expressed position - but it left
-    # nothing watching whether a tradeable contract exists at a sensible price. A
-    # $2bn name can carry a chain with single-digit open interest and a 30%
-    # spread whatever its fundamentals say. Reported, never gated: thin is a
-    # trading constraint, not a defect in the idea.
-    thin: list[str] = []
-    unknown: list[str] = []
-    for idea in selected:
-        implied = (idea.extra.get("expectations") or {}).get("implied") or {}
-        if implied.get("available") and implied.get("open_interest_missing"):
-            unknown.append(idea.candidate.ticker)
-        elif implied.get("available") and implied.get("thin") is True:
-            spread = implied.get("spread_pct")
-            detail = f", spread {spread:.0f}%" if spread is not None else ""
-            thin.append(
-                f"{idea.candidate.ticker} (OI {implied.get('open_interest')} over "
-                f"{implied.get('strikes')} strikes, {implied.get('two_sided_strikes')} quotable{detail})"
-            )
-        elif implied and not implied.get("available") and implied.get("reason"):
-            thin.append(f"{idea.candidate.ticker} ({implied['reason']})")
-
-    if unknown:
-        breaches.append(
-            f"options liquidity UNKNOWN on {len(unknown)} of {len(selected)} names - the feed "
-            f"returned no open interest, which is missing data and not an empty market. Verify "
-            f"in your broker before sizing: {', '.join(unknown)}"
-        )
-    if thin:
-        breaches.append(
-            f"thin or missing options chain on {len(thin)} of {len(selected)} names, "
-            f"check these are tradeable before sizing: {', '.join(thin)}"
-        )
-    priced = [
-        idea.candidate.ticker
-        for idea in selected
-        if idea.qual is not None and idea.qual.priced_in == "already_priced"
-    ]
-    if priced:
-        breaches.append(
-            f"{len(priced)} name(s) whose thesis the verdict judged already priced "
-            f"(true, but not news): {', '.join(priced)}"
-        )
     if len(selected) < cfg["filters"]["min_positions"]:
         breaches.append(f"only {len(selected)} names (target {cfg['filters']['min_positions']}-{cfg['filters']['max_positions']})")
 
@@ -354,8 +370,9 @@ def assemble_book(ideas: list[TradeIdea], bias: Bias) -> BookProposal:
         limit_breaches=breaches,
         narrative=f"{len(longs)} longs / {len(shorts)} shorts; bias {bias.value}",
     )
-    write_json(
-        data_dir("curated", "book.json"),
-        book.model_dump(),
-    )
+    if persist:
+        write_json(
+            data_dir("curated", "book.json"),
+            book.model_dump(),
+        )
     return book

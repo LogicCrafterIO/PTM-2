@@ -452,15 +452,13 @@ mean betas, which breaks dollar neutrality and the net-exposure limits.
 
 ---
 
-## 5b. What the market already expects
+## 5b. Directional revision momentum, not mispricing
 
-The single largest gap this repository had, and the one three independent
-reviews of the same book all named: a **valuation** argument was being converted
-into an **earnings-event** trade without establishing what the market already
-assumed. Measured on a full run, **4 of 323 evidence items (1.2%)** referred to
-expectations at all.
-
-Two root causes, both structural.
+The pipeline does not claim to identify true mispricings or estimate the move
+needed to exceed live implied volatility. Its ranked signal is narrower and
+measurable: analyst estimate revisions travelling in the direction the trade
+needs, supported by filing direction and momentum durability. Live IV and trade
+structure are assessed manually downstream.
 
 ### The verdict model was never shown the research pack
 
@@ -480,64 +478,39 @@ a claim, "revenue was $87 million" cannot), led by the pack's pre-computed
 OGN — which returned **zero** quantified evidence and was rejected by both human
 reviewers for exactly that — had 11 available, including "trailing EPS −34.6%".
 
-### Nothing measured what was priced
+### What is measured
 
-`ptm/ingest/expectations.py` adds four measures:
+`ptm/ingest/expectations.py` adds three non-option measures:
 
 | Measure | Source | Answers |
 |---|---|---|
-| Implied move | `option_chain()`, first expiry covering the print; ATM straddle ÷ spot | the magnitude the market is pricing |
-| Estimate revisions | yfinance `eps_trend` / `eps_revisions` | which way consensus has already gone |
-| Past-print reaction | `prices.csv` + cached EDGAR report dates | whether the story is already in the price |
+| Estimate revisions | yfinance `eps_trend` / `eps_revisions` | which way consensus is moving |
+| Past-print reaction | `prices.csv` + cached EDGAR report dates | how the stock reacted to recent reports |
 | Surprise history | yfinance `earnings_history` | whether this name habitually beats |
 
-The verdict must now return `market_expectation`, `deviation` and `priced_in`.
-Conviction is docked **2.0** for `already_priced` and **0.75** for
-`partly_priced` — the thesis may be perfectly true, it just is not news, and
-being true is what the screen already established. `priced_in` is forced to
-`unknown` when no expectations data was supplied, so a model cannot invent a
-judgement that then moves the ranking.
+Option-chain fields are not fetched into the directional payload and do not
+gate, rank or create book breaches. Yahoo's chain is not reliable enough for
+that job.
 
-The contrast this draws is stark. Two names from one book:
-
-```
-SEZL (long)   implied 31.9%   consensus +3.2%/90d   6 up / 0 down   beat 4 of 4
-OGN  (short)  implied  3.4%   consensus +4.4%/90d   0 up / 0 down   beat 1 of 4
-```
-
-The OGN short was fighting a *rising* consensus for a 3.4% payoff.
-
-### Three caveats, stated rather than buried
-
-* **The implied move is an approximation.** The straddle spans the whole expiry,
-  so it carries non-earnings volatility; it is the standard read, not a
-  decomposed event move.
-* **A stale last trade is not a quote.** On a one-sided chain the mid cannot be
-  formed and `lastPrice` may be days old. That case is labelled
-  `quote_basis: last_trade_only` and called unreliable in the summary — OGN's
-  3.4% above is one, and should not be read as measured.
-* **Filing dates are not release dates.** Past-print reactions key off 10-K/10-Q
+One caveat remains: filing dates are not release dates. Past-print reactions key off 10-K/10-Q
   filing dates, usually the same day as the 8-K for US issuers but not
   guaranteed. Only ~4 prints fall inside the one-year price window.
 
 ### Backdated runs get none of it
 
-No option chain, revisions table or surprise history has a point-in-time
-archive. All four are refused when `is_backdated()`, exactly as `consensus_eps`
-already is, and `priced_in` then stays `unknown` for every name. **Live and
-backdated runs therefore see different evidence.** That asymmetry is the real
-cost of measuring expectations, and it is accepted deliberately:
+No revisions table or surprise history has a point-in-time archive. These
+measures are refused when `is_backdated()`, exactly as `consensus_eps` already
+is. **Live and backdated runs therefore see different evidence.** That asymmetry
+is the cost of measuring revision momentum and is accepted deliberately:
 `tests/test_backdate_lookahead.py` fails the build if the guard ever moves below
 the fetch.
 
 ### Where it surfaces
 
-Every place the ticker appears: `extra.expectations` and
-`extra.expectations_summary` on each idea's JSON, the same data inside
-`data/curated/ideas.json` and `book.json`, a **What the market already expects**
-section in each idea's markdown, `priced_in` / `implied_move_pct` /
-`relative_peg` in the group cross-read payload, and a book-level breach naming
-any name whose thesis the verdict judged already priced.
+Revision data appears under `extra.expectations.revisions`, in the deterministic
+momentum payload, and in each idea's **Analyst revision momentum** section.
+The qualitative schema deliberately has no `market_expectation`, `deviation`,
+`priced_in` or model-estimated surprise fields.
 
 ---
 

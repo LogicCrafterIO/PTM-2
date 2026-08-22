@@ -101,7 +101,8 @@ def test_summary_lines_render_each_measure():
     lines = exp.summary_lines(payload)
     blob = " ".join(lines)
     assert "31.9% move" in blob
-    assert "already falling" in blob, "a falling consensus is the thing that is already priced"
+    assert "-12.4% over 90 days" in blob
+    assert "priced" not in blob, "revision momentum is not a mispricing claim"
     assert "0 up, 5 down" in blob
     assert "1 of the last 4 quarters" in blob
 

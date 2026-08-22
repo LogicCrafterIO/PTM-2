@@ -20,6 +20,7 @@ from ptm.asof import (
 )
 from ptm.fundamentals import build_fundamentals, source_warnings
 from ptm.book import assemble_book
+from ptm.books import assemble_books
 from ptm.config import data_dir, ideas_dir, toml_settings
 from ptm.gates import apply_process_gates, candidate_warnings, size_fraction
 from ptm.ingest.company_research import research_pack
@@ -558,6 +559,9 @@ def generate_ideas(
     # This is the ranked answer to "which names look mispriced, by how much,
     # and why" - see ptm/mispricing.py.
     write_momentum(ideas, {i.candidate.ticker for i in book.ideas}, day=day)
+    # And the same selection run separately per earnings window, so momentum is
+    # held against a dated catalyst instead of averaged across horizons.
+    assemble_books(ideas, snap.bias, day=day)
     record_themes(
         day,
         {

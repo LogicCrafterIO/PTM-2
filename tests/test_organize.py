@@ -42,13 +42,12 @@ def test_bucket_edges_are_inclusive(days, expected):
 
 
 def test_buckets_and_catalyst_gate_share_units():
-    """The PTM window is 20-60 trading days = 30-90 calendar days, and the
-    buckets use the same units, so 31-60d and 61-90d names can satisfy the gate."""
+    """Near prints remain eligible while all buckets share calendar-day units."""
     from ptm.risk import catalyst_window
 
     low, high = catalyst_window()
-    assert (low, high) == (30, 90)
-    assert bucket_for_days(low) in {"00-30d", "31-60d"}
+    assert (low, high) == (0, 90)
+    assert bucket_for_days(low) == "00-30d"
     assert bucket_for_days(high) == "61-90d"
     # A name just past the window falls out of the three primary buckets.
     assert bucket_for_days(high + 1) == BEYOND

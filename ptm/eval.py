@@ -425,6 +425,21 @@ def check_idea(idea: dict, pack: dict | None, cfg: dict) -> list[Finding]:
             )
         )
     state = idea.get("state")
+    if (
+        state == IdeaState.INVESTMENT_ONLY.value
+        and cats.get("tradeable") is True
+        and qual.get("supports_outlier") is True
+    ):
+        findings.append(
+            Finding(
+                ticker=ticker,
+                stage="catalysts",
+                severity="error",
+                check_id="cat.tradeable_marked_investment_only",
+                evidence=f"state={state}; gates={extra.get('gates') or []}",
+                suggestion="A supported, tradeable idea must advance to templated unless a process gate blocks it.",
+            )
+        )
     if state == IdeaState.IDENTIFIED.value:
         findings.append(
             Finding(
@@ -439,7 +454,12 @@ def check_idea(idea: dict, pack: dict | None, cfg: dict) -> list[Finding]:
     return findings
 
 
-def check_book(book: dict | None, ideas: list[dict], cfg: dict) -> list[Finding]:
+def check_book(
+    book: dict | None,
+    ideas: list[dict],
+    cfg: dict,
+    label: str = "BOOK",
+) -> list[Finding]:
     findings: list[Finding] = []
     ready = [
         i
@@ -453,7 +473,7 @@ def check_book(book: dict | None, ideas: list[dict], cfg: dict) -> list[Finding]
     if n < lo or n > hi:
         findings.append(
             Finding(
-                ticker="BOOK",
+                ticker=label,
                 stage="book",
                 severity="error",
                 check_id="book.out_of_range",
@@ -466,7 +486,7 @@ def check_book(book: dict | None, ideas: list[dict], cfg: dict) -> list[Finding]
     if selected_tickers - ready_tickers:
         findings.append(
             Finding(
-                ticker="BOOK",
+                ticker=label,
                 stage="book",
                 severity="error",
                 check_id="book.not_subset",
@@ -477,7 +497,7 @@ def check_book(book: dict | None, ideas: list[dict], cfg: dict) -> list[Finding]
     if ready_tickers and not selected_tickers:
         findings.append(
             Finding(
-                ticker="BOOK",
+                ticker=label,
                 stage="book",
                 severity="error",
                 check_id="book.stale_vs_ideas",
@@ -553,6 +573,99 @@ def check_markdown_files(folder: Path | None, ideas: list[dict]) -> list[Finding
     return findings
 
 
+def check_window_books(ideas: list[dict], cfg: dict) -> list[Finding]:
+    """Validate window artifacts without treating an honestly thin window as an error."""
+    from ptm.organize import BEYOND, bucket_for_days, bucket_names
+
+    findings: list[Finding] = []
+    by_ticker = {
+        str((idea.get("candidate") or {}).get("ticker") or ""): idea
+        for idea in ideas
+    }
+    exclude = set(cfg["filters"].get("exclude_sectors") or [])
+    minimum = int(cfg["filters"]["min_positions"])
+    for label in bucket_names():
+        path = data_dir("curated", f"book_{label}.json")
+        payload = _load_json(path)
+        if not isinstance(payload, dict):
+            findings.append(
+                Finding(
+                    ticker=f"BOOK_{label}",
+                    stage="book",
+                    severity="warning",
+                    check_id="book.window.missing_file",
+                    evidence=str(path),
+                    suggestion="Run window-book assembly after generating ideas.",
+                )
+            )
+            continue
+        selected = payload.get("ideas") or []
+        if 0 < len(selected) < minimum:
+            findings.append(
+                Finding(
+                    ticker=f"BOOK_{label}",
+                    stage="book",
+                    severity="info",
+                    check_id="book.window.thin",
+                    evidence=f"{len(selected)} names; aggregate target starts at {minimum}",
+                    suggestion="Keep the window thin rather than relaxing signal or concentration limits.",
+                )
+            )
+        for row in selected:
+            ticker = str((row.get("candidate") or {}).get("ticker") or "")
+            source = by_ticker.get(ticker)
+            if source is None:
+                findings.append(
+                    Finding(
+                        ticker=ticker or f"BOOK_{label}",
+                        stage="book",
+                        severity="error",
+                        check_id="book.window.not_subset",
+                        evidence=f"selected in {label} but absent from ideas.json",
+                        suggestion="Window books must contain only generated ideas.",
+                    )
+                )
+                continue
+            days = (source.get("earnings") or {}).get("days_to_earnings")
+            actual = bucket_for_days(days)
+            if actual == BEYOND or actual != label:
+                findings.append(
+                    Finding(
+                        ticker=ticker,
+                        stage="book",
+                        severity="error",
+                        check_id="book.window.wrong_bucket",
+                        evidence=f"stored days={days}; expected {actual}; selected in {label}",
+                        suggestion="Use the stored run-date distance for window assignment.",
+                    )
+                )
+            gates = (source.get("extra") or {}).get("gates") or []
+            if gates:
+                findings.append(
+                    Finding(
+                        ticker=ticker,
+                        stage="book",
+                        severity="warning",
+                        check_id="book.window.gated_but_selected",
+                        evidence=str(gates),
+                        suggestion="Window selection must honor the same process gates as the aggregate book.",
+                    )
+                )
+            sector = (source.get("candidate") or {}).get("sector")
+            if sector in exclude:
+                findings.append(
+                    Finding(
+                        ticker=ticker,
+                        stage="sector",
+                        severity="warning",
+                        check_id="book.window.excluded_sector",
+                        evidence=f"{sector} is in exclude_sectors",
+                        suggestion="Honor excluded sectors in window selection.",
+                    )
+                )
+    return findings
+
+
 def audit_run(ideas_folder: Path | None = None) -> AuditResult:
     cfg = toml_settings()
     folder = Path(ideas_folder) if ideas_folder else _latest_ideas_folder()
@@ -582,6 +695,7 @@ def audit_run(ideas_folder: Path | None = None) -> AuditResult:
         ticker = str((idea.get("candidate") or {}).get("ticker") or "")
         result.findings.extend(check_idea(idea, packs.get(ticker), cfg))
     result.findings.extend(check_book(book if isinstance(book, dict) else None, ideas, cfg))
+    result.findings.extend(check_window_books(ideas, cfg))
     result.findings.extend(check_markdown_files(folder, ideas))
     result.finalize()
     return result

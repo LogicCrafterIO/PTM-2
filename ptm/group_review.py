@@ -60,12 +60,7 @@ def name_row(idea: TradeIdea) -> dict:
         "kpis": (idea.qual.kpis or [])[:4] if idea.qual else [],
         "red_flags": (idea.qual.red_flags or [])[:4] if idea.qual else [],
         "gates": list(idea.extra.get("gates") or []),
-        # The cross-read's whole job is spotting a group collectively betting on
-        # one thing. Whether each thesis is already priced is exactly the kind of
-        # duplication it should be able to see.
         "relative_peg": cand.relative_peg,
-        "priced_in": idea.qual.priced_in if idea.qual else "unknown",
-        "market_expectation": _clip(idea.qual.market_expectation, 200) if idea.qual else "",
         "conviction": idea.extra.get("conviction"),
     }
     # Deliberately NOT the implied move or anything else from the option chain.
@@ -164,8 +159,6 @@ def _synthesis_prompt(
         "You are a long/short portfolio manager reviewing a basket of ideas that share one "
         f"{axis}. Do the cross-read nobody has done yet: do these cases agree, duplicate, or "
         "contradict each other? Look for the same thesis repeated across names (a concentrated "
-        "bet, not several ideas), a cluster whose theses are all already_priced (a group betting "
-        "on what the market has already moved to is not a group of ideas), "
         "a long and a short resting on opposite readings of one industry "
         "driver, a name whose qualitative verdict looks weak beside its peers, and inconsistent "
         "use of the ISM tilt. Fundamentals only: you are given no price data and must not reason "
@@ -182,8 +175,6 @@ def _synthesis_prompt(
             "sector_pe1": r["sector_pe1"],
             "verdict": r["qual_verdict"],
             "why": (r.get("qual_why") or "")[:120],
-            "priced_in": r.get("priced_in"),
-            "implied_move_pct": r.get("implied_move_pct"),
             "relative_peg": r.get("relative_peg"),
         }
         for r in rows

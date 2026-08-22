@@ -20,6 +20,10 @@ max_per_sector = 2   # per side: six shorts from one sector is one bet, not six
 # A P/E-outlier screen is beta-long by construction (growth longs, value shorts), so a
 # dollar-neutral book still breaches the beta limit. Swap the fewest names to fix it.
 beta_aware_selection = true
+# A beta hedge is portfolio construction, not a new source of alpha. Never swap
+# in a null/negative revision signal, and require the replacement to retain at
+# least this fraction of the displaced name's revision-momentum score.
+beta_swap_min_momentum_ratio = 0.65
 # Rank the book's selection by qualitative conviction (net evidence for minus against)
 # AHEAD of earnings growth. By selection time every name is already a P/E outlier that
 # fits an EG case and passed the gate, and eg1 is not comparable across cases - a
@@ -56,10 +60,20 @@ min_quantified_for = 1
 # ignoring the company's own reported numbers. false ranks on momentum alone.
 revision_veto = true
 require_eg_case = true  # a candidate must fit one of the process EG cases, not merely have an extreme P/E
-# The PTM catalyst window, in CALENDAR days. The process states it as 20-60 trading
-# days, which is 30-90 calendar days; the earnings buckets below use the same units
-# so a name in the 31-60d or 61-90d bucket can actually satisfy the gate.
-catalyst_window_days = [30, 90]
+# The catalyst window, in CALENDAR days. The upper bound is the PTM horizon: the
+# process states 20-60 TRADING days, which is 30-90 calendar days.
+#
+# The LOWER bound was 30 and is now 0, because it was excluding the best ideas
+# for the stated goal. A name reporting in six days failed the gate for being
+# "too soon": 13 candidates were rejected on that alone, seven of them with
+# rising estimates, improving filings and momentum building - MRVL at 6 days,
+# AGX and CIEN at 13. Meanwhile the book filled with names 68-81 days out, where
+# revision momentum has the longest time to decay before the catalyst.
+#
+# The original 30-day floor was a HOLDING-period argument (time to establish a
+# position before the print), not a signal one. If you need days to get set,
+# raise this to 3-5 rather than back to 30.
+catalyst_window_days = [0, 90]
 
 [macro]
 bear_drawdown = 0.20
@@ -138,11 +152,8 @@ max_candidates = 16
 # time, so sampling noise moves names in and out of a 6-slot book between runs. Longs
 # look stable only because they pass ~92%. Set 0.0 if you need run-to-run comparability.
 temperature = 0.2
-# Raised from 1200 once the verdict started returning market_expectation,
-# deviation and priced_in alongside its evidence arrays. Measured response
-# length went to a median of 1746 chars and a max of 2744, and 6% of verdicts
-# truncated mid-JSON and were lost outright - SEZL, the best-evidenced long in
-# the book, among them.
+# Keep enough room for direction, durability and both evidence arrays. Earlier
+# low limits truncated verdict JSON and silently lost otherwise valid ideas.
 max_tokens = 3200
 # Ideas are independent until the group pass. 1 keeps the old sequential behaviour;
 # 4-6 cuts a 154-name run from ~33 min to under 10 without tripping provider limits.

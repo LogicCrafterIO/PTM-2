@@ -150,36 +150,6 @@ def test_wrong_signed_reason_cannot_satisfy_the_floor():
     assert quantification_gate(idea), "a reason arguing the other way is not a sized reason"
 
 
-def test_priced_in_no_longer_docks_conviction():
-    """Deliberately reversed. The penalty encoded a mispricing worldview - that
-    agreeing with the street is worthless. The process now follows revision
-    momentum, where the market moving your way is CONFIRMATION, so docking it
-    would rank the book against its own primary signal."""
-    from ptm.ranking import conviction
-
-    def build(priced_in):
-        idea = _idea_with(Side.SHORT, [_ev("volumes down", -30.0, "revenue", True)])
-        idea.qual.priced_in = priced_in
-        return conviction(idea)
-
-    assert build("already_priced") == build("not_priced") == build("unknown")
-
-
-def test_conviction_detail_shows_the_expectations_reasoning():
-    """It has to be checkable in the JSON, not just applied."""
-    from ptm.ranking import conviction_detail
-
-    idea = _idea_with(Side.LONG, [_ev("backlog up", 22.0, "revenue", True)])
-    idea.qual.priced_in = "already_priced"
-    idea.qual.market_expectation = "Consensus already assumes a 20% backlog build."
-    idea.qual.deviation = "It does not; this restates consensus."
-    detail = conviction_detail(idea.qual, Side.LONG)
-    assert detail["priced_in"] == "already_priced"
-    assert "priced_in_penalty" not in detail, "the penalty was removed, not hidden"
-    assert "Consensus already assumes" in detail["market_expectation"]
-    assert detail["deviation"]
-
-
 def _drift_idea(ticker, side, up, down, change_90d, direction, themes=None):
     """An idea carrying measured revisions plus the verdict's direction call."""
     from ptm.models import IdeaState, PRMResult, QualResult, TradeIdea

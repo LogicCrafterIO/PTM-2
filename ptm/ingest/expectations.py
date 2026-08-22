@@ -422,11 +422,14 @@ def _cache_path(ticker: str):
 
 
 def expectations(ticker: str, earnings_date: str | None = None, force: bool = False) -> dict | None:
-    """Everything the market has already said about this name, or None.
+    """Directional revision and earnings-history context, or None.
 
-    Returns None on a backdated run: not one of these four sources can be rolled
+    Returns None on a backdated run: these sources cannot be rolled
     back to a past vintage, and serving today's expectations to a historical run
     is exactly the lookahead the rest of the pipeline exists to prevent.
+
+    Option-chain data is intentionally excluded. Yahoo's chain is not reliable
+    enough to gate or rank ideas; live IV is assessed manually downstream.
     """
     if not enabled():
         return None
@@ -437,14 +440,25 @@ def expectations(ticker: str, earnings_date: str | None = None, force: bool = Fa
         try:
             cached = read_json(cache)
             if isinstance(cached, dict):
-                return cached
+                payload = {
+                    key: cached.get(key)
+                    for key in (
+                        "ticker",
+                        "as_of",
+                        "earnings_date",
+                        "revisions",
+                        "surprise",
+                        "reactions",
+                    )
+                }
+                payload["summary"] = summary_lines(payload)
+                return payload
         except Exception:
             pass
     payload = {
         "ticker": ticker,
         "as_of": datetime.now(timezone.utc).isoformat(),
         "earnings_date": (earnings_date or "")[:10] or None,
-        "implied": implied_move(ticker, earnings_date),
         "revisions": revisions(ticker),
         "surprise": surprise_history(ticker),
         "reactions": past_reactions(ticker),
@@ -455,11 +469,7 @@ def expectations(ticker: str, earnings_date: str | None = None, force: bool = Fa
 
 
 def summary_lines(payload: dict | None) -> list[str]:
-    """The expectations read as prose, for the verdict prompt and the markdown.
-
-    One list, rendered in both places, so the operator reads exactly what the
-    model was shown.
-    """
+    """Available revision and earnings-history measures as prose."""
     if not payload:
         return []
     lines: list[str] = []
@@ -509,10 +519,8 @@ def summary_lines(payload: dict | None) -> list[str]:
         if d30 is not None:
             parts.append(f"{d30:+.1f}% over 30 days")
         if parts:
-            direction = "already falling" if (d90 or 0) < 0 else "already rising"
             lines.append(
-                f"Consensus EPS for the current year has moved {' and '.join(parts)} — "
-                f"expectations are {direction}, so that much is priced."
+                f"Consensus EPS for the current year has moved {' and '.join(parts)}."
             )
         up, down = rev.get("analysts_up_30d"), rev.get("analysts_down_30d")
         if up is not None and down is not None:

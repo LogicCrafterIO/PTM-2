@@ -19,6 +19,17 @@ from ptm.themes import prompt_block as theme_prompt_block
 
 JSON_HINT = "Reply with a single JSON object only. No markdown."
 GENERIC_KPIS = {"revenue", "net_income", "ebit", "cash", "debt", "assets", "equity", "interest"}
+OPERATING_KPI_RE = re.compile(
+    r"\b(backlog|bookings?|orders?|volume|utili[sz]ation|margin|pricing|capacity|"
+    r"subscribers?|customers?|units?|stores?|locations?|market share|retention|"
+    r"guidance|pipeline|procedures?|shipments?|inventory|same-store|comparable sales)\b",
+    re.I,
+)
+MISSION_PLAN_RE = re.compile(
+    r"^(?:our mission|our vision|to be the|enabl(?:e|ing) a|empower(?:ing)?|"
+    r"focused on delivering|lead(?:ing)? the)\b",
+    re.I,
+)
 HEADLINE_RE = re.compile(r"\?$|outpaced|do options traders|what to expect", re.I)
 
 
@@ -279,6 +290,22 @@ def _evidence_items(raw: object) -> list[EvidenceItem]:
     return items
 
 
+SCREEN_EVIDENCE_RE = re.compile(
+    r"\b(consensus|fy1|fy2|forward eps|p/?e|peg|relative valuation|sector multiple|eg case)\b",
+    re.I,
+)
+
+
+def _strip_screen_evidence(items: list[EvidenceItem]) -> tuple[list[EvidenceItem], int]:
+    """Remove circular evidence copied from the quantitative candidate screen."""
+    kept = [
+        item
+        for item in items
+        if not SCREEN_EVIDENCE_RE.search(f"{item.claim} {item.metric}")
+    ]
+    return kept, len(items) - len(kept)
+
+
 def verdict_model() -> str:
     """Model for the qualitative verdict, which may differ from the default.
 
@@ -434,9 +461,19 @@ def sanitize_kpis(kpis: list | None) -> tuple[list[str], bool]:
         if key in GENERIC_KPIS or token.lower() in GENERIC_KPIS:
             stripped = True
             continue
-        if token:
+        if token and (FIGURE_RE.search(token) or OPERATING_KPI_RE.search(token)):
             cleaned.append(token)
+        elif token:
+            stripped = True
     return cleaned, stripped
+
+
+def sanitize_operating_plan(value: object) -> tuple[str, bool]:
+    """Drop mission statements that do not describe a forward operating action."""
+    plan = _clip(value)
+    if plan and MISSION_PLAN_RE.search(plan):
+        return "", True
+    return plan, False
 
 
 def filter_non_earnings(raw_items: list | None, low_days: int | None = None, high_days: int | None = None) -> list[str]:
@@ -507,18 +544,6 @@ def _verdict_bar() -> str:
     return VERDICT_BARS.get(choice, VERDICT_BARS["consistent"])
 
 
-_EXPECTATIONS_RULE = (
-    "You are also given WHAT THE MARKET ALREADY EXPECTS. A discount multiple exists BECAUSE the "
-    "market already believes bad things, and a premium exists because it already believes good "
-    "ones, so repeating what is priced is not a reason to trade. Set market_expectation to what "
-    "consensus and the options market currently imply for this print, in one sentence. Set "
-    "deviation to how your evidence differs from that, or say plainly that it does not. Set "
-    "priced_in to already_priced when your evidence only restates what the market has already "
-    "moved to, partly_priced when some of it is new, not_priced when the evidence points "
-    "somewhere consensus has not gone, and unknown when you were given nothing to judge against. "
-    "A thesis that is already_priced can still be TRUE - say so in why - but it is not news. "
-)
-
 # The model's ONE job on the expectation gap: which way do the filings point?
 # Asking for a percentage produced round-number clustering (8.5/10/12/15) and
 # constant "medium" confidence, because backing out a consensus-implied growth
@@ -544,55 +569,6 @@ _DIRECTION_RULE = (
     "analyst revisions, and your direction is what decides whether those revisions are supported. "
     "Getting the direction right matters more than making it agree with the side. "
 )
-
-PRICED_IN_VALUES = {"already_priced", "partly_priced", "not_priced", "unknown"}
-
-
-# A single filing does not support a claim that earnings will land 300% away
-# from consensus. Above this the number is a units error or a hallucination, and
-# because it is the primary ranking key it would put that name straight to the
-# top. The reasoning survives in surprise_basis; only the figure is dropped.
-MAX_SURPRISE_PCT = 100.0
-
-
-GAP_BASIS_VALUES = {"guidance", "forward_indicator", "run_rate", "none"}
-
-
-def _surprise_gap(
-    verdict: dict, for_items: list[EvidenceItem]
-) -> tuple[float | None, str, str, str]:
-    """The sized expectation gap, or None when it cannot be trusted.
-
-    Three refusals, all of which would otherwise corrupt the ranking:
-    an unparseable figure, a figure beyond MAX_SURPRISE_PCT, and a figure
-    offered with no quantified evidence behind it. The last matters most - a gap
-    is a claim about magnitude, and a model that quantified nothing has no basis
-    for one no matter how confident it sounds.
-    """
-    raw = verdict.get("expected_surprise_pct")
-    basis = _clip(verdict.get("surprise_basis"))
-    confidence = str(verdict.get("gap_confidence") or "none").strip().lower()
-    if confidence not in {"high", "medium", "low", "none"}:
-        confidence = "none"
-    basis_type = str(verdict.get("gap_basis_type") or "none").strip().lower().replace(" ", "_")
-    if basis_type not in GAP_BASIS_VALUES:
-        basis_type = "none"
-    if raw is None or isinstance(raw, bool):
-        return None, basis, "none", "none"
-    try:
-        value = float(str(raw).replace("%", "").strip())
-    except (TypeError, ValueError):
-        return None, basis, "none", "none"
-    if value != value or abs(value) > MAX_SURPRISE_PCT:
-        return None, basis, "none", "none"
-    if not any(item.quantified for item in for_items):
-        return None, basis, "none", "none"
-    # A figure offered with no stated basis cannot be weighted, so it is treated
-    # as the weakest kind rather than silently inheriting full trust.
-    if basis_type == "none":
-        basis_type = "run_rate"
-    return round(value, 2), basis, (confidence if confidence != "none" else "low"), basis_type
-
 
 FILING_DIRECTIONS = {"improving", "deteriorating", "mixed", "silent"}
 
@@ -640,19 +616,6 @@ def _filing_direction(verdict: dict) -> str:
     return value if value in FILING_DIRECTIONS else "silent"
 
 
-def _expectations_prompt(payload: dict | None) -> str:
-    """The expectations block appended to the verdict question."""
-    from ptm.ingest.expectations import summary_lines
-
-    lines = summary_lines(payload)
-    if not lines:
-        return (
-            "\n\nWHAT THE MARKET ALREADY EXPECTS: not available for this name. "
-            "Set priced_in to unknown and do not guess."
-        )
-    return "\n\nWHAT THE MARKET ALREADY EXPECTS:\n" + "\n".join(f"- {line}" for line in lines)
-
-
 def qualitative(
     candidate: Candidate,
     filing_excerpt: str,
@@ -678,8 +641,11 @@ def qualitative(
     extract_system = (
         "Extract operating facts from the research pack. Do not decide if this is a trade. "
         "A Yahoo summary, headlines, 8-K, MD&A, and ISM comments ARE valid sources. "
-        "KPIs must be operating drivers (segments, products, backlog, utilization, volumes, pricing), "
-        "not statement lines (revenue, net_income, ebit, cash, debt). "
+        "KPIs must be measurable forward operating drivers (backlog, bookings, orders, utilization, "
+        "volumes, pricing, capacity, customer or unit counts, guidance), not product/category names "
+        "and not statement lines (revenue, net_income, ebit, cash, debt). "
+        "operating_plan must name a concrete forward action such as capacity expansion, a launch, "
+        "cost reduction or channel build. Return an empty string for a mission statement or slogan. "
         "Keep every string under 240 characters. " + JSON_HINT
     )
     extract_user = (
@@ -697,13 +663,16 @@ def qualitative(
         extract = {}
 
     kpis, stripped = sanitize_kpis(list(extract.get("kpis") or [])[:6])
+    operating_plan, plan_stripped = sanitize_operating_plan(extract.get("operating_plan"))
     flags = [str(x) for x in (extract.get("red_flags") or [])]
     quotes = [_clip(q, 200) for q in (extract.get("quotes") or []) if str(q).strip()][:4]
     if stripped:
         flags.append("generic_kpis_stripped")
+    if plan_stripped:
+        flags.append("mission_statement_plan_stripped")
     extract_summary = {
         "business": _clip(extract.get("business_in_one_line")),
-        "operating_plan": _clip(extract.get("operating_plan")),
+        "operating_plan": operating_plan,
         "kpis": kpis,
         "ism_link": _clip(extract.get("ism_link")),
         "red_flags": flags,
@@ -728,6 +697,10 @@ def qualitative(
         "For a SHORT (discount multiple): answer true when the evidence shows the discount is DESERVED "
         "- declining volumes, shrinking margins, lost share, one-off EPS, structural decline or no "
         "credible plan. Deterioration is the CONFIRMING evidence for a short, not a reason to reject it.\n"
+        "Evidence_for and evidence_against must come from company-reported operating facts. "
+        "Never cite consensus FY1/FY2 EPS growth, P/E, PEG, relative valuation, the EG case, or "
+        "any other quantitative-screen input as qualitative evidence; those facts created the "
+        "candidate and cannot independently confirm it. "
         + "Every evidence item is an object: {claim, metric, impact_pct, impact_on, quantified}. "
         "The pack contains reported figures, usually in the earnings release: revenue, margins, "
         "segment growth, guidance. For EVERY claim you make, search the pack for the number that "
@@ -771,10 +744,9 @@ def qualitative(
             if candidate.eg1 is not None
             else ""
         )
-        + ". Size expected_surprise_pct against THIS figure.\n"
+        + ".\n"
         f"Question: {ask}\n\n"
         f"Extract:\n{json.dumps(extract_summary, default=str)}"
-        + _expectations_prompt(expectations)
         + theme_prompt_block(pack)
     )
     verdict: dict = {}
@@ -814,39 +786,30 @@ def qualitative(
             flags.append("llm_json_failed_verdict")
     else:
         supports = bool(raw)
-    for_items = _evidence_items(verdict.get("evidence_for"))
-    against_items = _evidence_items(verdict.get("evidence_against"))
+    for_items, stripped_for = _strip_screen_evidence(
+        _evidence_items(verdict.get("evidence_for"))
+    )
+    against_items, stripped_against = _strip_screen_evidence(
+        _evidence_items(verdict.get("evidence_against"))
+    )
+    if stripped_for or stripped_against:
+        flags.append("screen_metric_evidence_stripped")
     # Surface, but do not silently overturn, a verdict that argues against itself.
     if supports is False and for_items and not against_items:
         flags.append("verdict_contradicts_evidence")
     why = _clip(verdict.get("why"), 480)
     denial = _clip(verdict.get("denial_reason")) if supports is False else ""
     summary = why or _clip(extract.get("business_in_one_line"))
-    priced_in = str(verdict.get("priced_in") or "unknown").strip().lower().replace(" ", "_")
-    if priced_in not in PRICED_IN_VALUES:
-        priced_in = "unknown"
-    # A model cannot judge what is priced from data it was not given. Refusing
-    # the claim here stops an invented verdict earning or losing conviction.
-    if not expectations:
-        priced_in = "unknown"
-    surprise, basis, confidence, basis_type = _surprise_gap(verdict, for_items)
     return QualResult(
         supports_outlier=supports,
         red_flags=flags,
         kpis=kpis,
-        operating_plan=_clip(extract.get("operating_plan")),
+        operating_plan=operating_plan,
         summary=summary,
         why=why,
         evidence_quotes=quotes,
         evidence_for=for_items,
         evidence_against=against_items,
-        market_expectation=_clip(verdict.get("market_expectation")),
-        deviation=_clip(verdict.get("deviation")),
-        priced_in=priced_in,
-        expected_surprise_pct=surprise,
-        surprise_basis=basis,
-        gap_confidence=confidence,
-        gap_basis_type=basis_type,
         filing_direction=_filing_direction(verdict),
         direction_basis=_clip(verdict.get("direction_basis")),
         momentum_durability=_durability(verdict),
@@ -884,12 +847,19 @@ def catalysts(
     non = filter_non_earnings(payload.get("non_earnings") or [])
     meaningful = bool(payload.get("meaningful")) and bool(non)
     tradeable = bool(in_window or (meaningful and non))
+    reason = str(payload.get("reason") or "")
+    if not non:
+        reason = (
+            "Earnings date is the dated catalyst; no separate non-earnings event identified."
+            if in_window
+            else "No dated catalyst identified inside the configured window."
+        )
     return CatalystResult(
         earnings_date=iso,
         earnings_in_window=in_window,
         non_earnings=non,
         tradeable=tradeable,
-        reason=str(payload.get("reason") or ""),
+        reason=reason,
     )
 
 
@@ -960,39 +930,21 @@ def _relative_peg_line(candidate: Candidate) -> str:
     return f"Relative PEG: {value:.2f} — pays {premium} per unit of sector growth ({read})"
 
 
-def _expectations_block(qual: QualResult, candidate: Candidate, expectations: dict | None) -> list[str]:
-    """What the market already expects, and how this thesis differs from it.
-
-    Rendered on every idea, not only where it changed the answer. A reader has
-    to be able to see that the question was asked and what the answer was, or
-    the section is indistinguishable from it never having run.
-    """
-    from ptm.ingest.expectations import summary_lines
-
-    measured = summary_lines(expectations)
-    stated = (qual.market_expectation or "").strip()
-    if not measured and not stated:
+def _revisions_block(expectations: dict | None) -> list[str]:
+    """Measured analyst-revision context, excluding option-chain data."""
+    revisions = (expectations or {}).get("revisions") or {}
+    if not revisions.get("available"):
         return []
-    label = {
-        "already_priced": "**Already priced** — the evidence restates what the market has moved to.",
-        "partly_priced": "**Partly priced** — some of the evidence is not yet in consensus.",
-        "not_priced": "**Not priced** — the evidence points where consensus has not gone.",
-        "unknown": "**Unknown** — no expectations data was available to judge against.",
-    }.get(qual.priced_in or "unknown", "")
-    from ptm.revision_report import gap_line
-
-    # The sized gap leads the section: it is the one number that says whether
-    # the market is wrong yet, and everything below it is the supporting read.
-    lines = ["## What the market already expects", "", gap_line(qual, candidate, expectations), ""]
-    lines += [f"- {line}" for line in measured] or ["- No measured expectations data for this name."]
-    lines.append("")
-    if stated:
-        lines += [f"Consensus implies: {stated}", ""]
-    if (qual.deviation or "").strip():
-        lines += [f"This thesis differs by: {qual.deviation.strip()}", ""]
-    if label:
-        lines += [label, ""]
-    return lines
+    lines = ["## Analyst revision momentum", ""]
+    for days in (30, 90):
+        value = revisions.get(f"change_{days}d_pct")
+        if value is not None:
+            lines.append(f"- Consensus FY1 EPS change over {days} days: {value:+.1f}%")
+    up = revisions.get("analysts_up_30d")
+    down = revisions.get("analysts_down_30d")
+    if up is not None or down is not None:
+        lines.append(f"- Analysts revising up/down over 30 days: {up or 0}/{down or 0}")
+    return lines + [""]
 
 
 def fallback_template(
@@ -1026,7 +978,7 @@ def fallback_template(
             f"{cats.earnings_in_window}",
             *([f"- {item}" for item in cats.non_earnings] or ["- none identified"]),
             "",
-            *_expectations_block(qual, candidate, expectations),
+            *_revisions_block(expectations),
         ]
     )
 
@@ -1059,13 +1011,12 @@ def render_template(
             "Never mention price action, charts, momentum, moving averages, MACD or any other "
             "technical-analysis entry signal: this process excludes them. " + JSON_HINT,
             "Return JSON {markdown: string} covering: 1 quant 2 sector 3 qualitative "
-            "(use qual.why) 4 catalysts 5 what the market already expects "
-            "(use QUAL.market_expectation, QUAL.deviation, QUAL.priced_in and EXPECT).\n"
+            "(use qual.why) 4 catalysts 5 analyst revision momentum from REVISIONS.\n"
             "If EARNINGS.estimated is true, the catalysts section MUST say that no future earnings "
             "date was published, quote EARNINGS.basis, and mark the date as estimated.\n"
             f"{candidate.model_dump_json()}\nQUAL:{qual.model_dump_json()}\nCAT:{cats.model_dump_json()}\n"
             f"EARNINGS:{earnings.model_dump_json() if earnings is not None else '{}'}\n"
-            f"EXPECT:{json.dumps((expectations or {}).get('summary') or [])}",
+            f"REVISIONS:{json.dumps((expectations or {}).get('revisions') or {})}",
         )
         markdown = str(payload.get("markdown") or "")
         if _markdown_usable(markdown):
