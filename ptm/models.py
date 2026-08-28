@@ -43,6 +43,8 @@ class MacroSnapshot(BaseModel):
     tens_minus_twos: float | None = None
     curve_inverted: bool | None = None
     curve_second_leg: str = ""
+    ust_10y: float | None = None
+    ust_2y: float | None = None
     real_10y: float | None = None
     vix: float | None = None
     ism_pmi: float | None = None
@@ -79,6 +81,8 @@ class Candidate(BaseModel):
     peg2: float | None = None
     sector_pe1: float | None = None
     sector_eg1: float | None = None
+    industry_pe1: float | None = None
+    industry_eg1: float | None = None
     # Multiple premium per unit of growth premium; see formulas.relative_peg.
     relative_peg: float | None = None
     eg_case: str = ""

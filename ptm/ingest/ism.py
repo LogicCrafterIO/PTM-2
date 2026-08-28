@@ -343,8 +343,8 @@ def _parse_industry_lists(text: str) -> dict:
         )
     new_orders = _industry_clause(
         text,
-        r"industries (?:that )?reported growth in new orders[^.]*?are",
-        r"industries reporting a decline in new orders[^.]*?are",
+        r"industries (?:that )?(?:reported|reporting) (?:an )?(?:growth|increase) in new orders[^.]*?are",
+        r"industries reporting a (?:decline|decrease) in new orders[^.]*?are",
     )
     return {"headline": headline, "new_orders": new_orders}
 

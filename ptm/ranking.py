@@ -306,6 +306,8 @@ def ordered_ideas(ideas: list[TradeIdea]) -> list[TradeIdea]:
 def rank_reason(c: Candidate) -> str:
     if c.pe1 is not None and c.sector_pe1 is not None:
         pe_bit = f"PE {c.pe1:.1f} vs sector {c.sector_pe1:.1f}"
+        if c.industry_pe1 is not None:
+            pe_bit += f" (industry {c.industry_pe1:.1f})"
     elif c.pe1 is not None:
         pe_bit = f"PE {c.pe1:.1f}"
     else:

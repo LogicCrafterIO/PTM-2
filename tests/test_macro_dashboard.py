@@ -3,6 +3,8 @@ from ptm.macro import build_dashboard
 from ptm.models import Bias
 from tests.conftest import write_macro_inputs
 
+import pytest
+
 
 def test_spx_below_bear_level():
     write_macro_inputs(spx_last=4000.0, spx_high=5200.0)
@@ -53,9 +55,34 @@ def test_pmi_trough_and_hard_contraction():
 def test_curve_inverted_uses_short_rate_proxy():
     write_macro_inputs(tnx=30.0, irx=40.0, fvx=35.0)
     snap = build_dashboard()
-    assert snap.tens_minus_twos == -10.0
+    assert snap.ust_10y == pytest.approx(3.0)
+    assert snap.ust_2y == pytest.approx(4.0)
+    assert snap.tens_minus_twos == pytest.approx(-1.0)
     assert snap.curve_inverted is True
     assert snap.curve_second_leg == "irx"
+    assert snap.signals["curve"] == -1.0
+    assert any("10s 3.00" in n and "2s 4.00" in n for n in snap.notes)
+
+
+def test_fred_notes_preferred_over_yahoo_proxy():
+    """DGS10/DGS2 are the actual 10s-2s; ^IRX is only a fallback."""
+    write_macro_inputs(tnx=30.0, irx=40.0, fvx=35.0, ust_10y=4.2, ust_2y=3.8)
+    snap = build_dashboard()
+    assert snap.ust_10y == pytest.approx(4.2)
+    assert snap.ust_2y == pytest.approx(3.8)
+    assert snap.tens_minus_twos == pytest.approx(0.4)
+    assert snap.curve_inverted is False
+    assert snap.curve_second_leg == "dgs2"
+    assert snap.signals["curve"] == 0.5
+    assert any("10s 4.20" in n and "2s 3.80" in n for n in snap.notes)
+
+
+def test_fred_inversion_scores_the_true_10s2s():
+    write_macro_inputs(tnx=42.0, irx=30.0, ust_10y=3.9, ust_2y=4.4)
+    snap = build_dashboard()
+    assert snap.tens_minus_twos == pytest.approx(-0.5)
+    assert snap.curve_inverted is True
+    assert snap.curve_second_leg == "dgs2"
     assert snap.signals["curve"] == -1.0
 
 

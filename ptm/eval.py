@@ -147,7 +147,7 @@ def check_worldview(ism: dict | None, snap: dict | None, cfg: dict) -> list[Find
     if snap:
         tens = snap.get("tens_minus_twos")
         second = str(snap.get("curve_second_leg") or "")
-        if tens is not None and second not in {"irx", "2y", "ust2y"}:
+        if tens is not None and second not in {"irx", "2y", "ust2y", "dgs2"}:
             findings.append(
                 Finding(
                     ticker="MACRO",

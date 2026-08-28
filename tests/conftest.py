@@ -83,6 +83,8 @@ def write_macro_inputs(
     # signal set. Tests that exercise permits pass them explicitly.
     permits_yoy: float | None = None,
     permits_history: list[dict] | None = None,
+    ust_10y: float | None = None,
+    ust_2y: float | None = None,
     skip_files: bool = False,
 ) -> None:
     from ptm.config import data_dir
@@ -120,6 +122,10 @@ def write_macro_inputs(
             "yoy": permits_yoy,
             "history": permits_history or [],
         }
+    if ust_10y is not None:
+        fred_series["ust_10y"] = {"id": "DGS10", "last": ust_10y, "yoy": None, "history": []}
+    if ust_2y is not None:
+        fred_series["ust_2y"] = {"id": "DGS2", "last": ust_2y, "yoy": None, "history": []}
     write_json(data_dir("curated", "macro_fred.json"), {"series": fred_series})
     write_json(
         data_dir("curated", "ism.json"),

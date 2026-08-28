@@ -74,7 +74,15 @@ def _frame(rows):
     import pandas as pd
 
     universe = pd.DataFrame(
-        [{"ticker": r["ticker"], "name": r["ticker"], "sector": r["sector"], "industry": "X"} for r in rows]
+        [
+            {
+                "ticker": r["ticker"],
+                "name": r["ticker"],
+                "sector": r["sector"],
+                "industry": r.get("industry", "X"),
+            }
+            for r in rows
+        ]
     )
     fundamentals = pd.DataFrame(
         [
@@ -232,7 +240,15 @@ def _frame_with_source(rows):
     import pandas as pd
 
     universe = pd.DataFrame(
-        [{"ticker": r["ticker"], "name": r["ticker"], "sector": r["sector"], "industry": "X"} for r in rows]
+        [
+            {
+                "ticker": r["ticker"],
+                "name": r["ticker"],
+                "sector": r["sector"],
+                "industry": r.get("industry", "X"),
+            }
+            for r in rows
+        ]
     )
     fundamentals = pd.DataFrame(
         [
@@ -391,3 +407,65 @@ def test_relative_peg_is_recorded_on_every_candidate(monkeypatch):
     cands = build_candidates(*_frame_with_source(_peg_rows()))
     unearned = next(c for c in cands if c.ticker == "UNEARNED")
     assert unearned.relative_peg is not None and unearned.relative_peg > 2.0
+
+
+def test_industry_median_is_independent_of_the_sector_median():
+    """Two industries in one sector must not share a PE bar."""
+    from ptm.config import data_dir
+    from ptm.io import read_df
+
+    rows = [
+        {"ticker": "M1", "sector": "Industrials", "industry": "Machinery", "price": 100.0, "forward_eps": 10.0},
+        {"ticker": "M2", "sector": "Industrials", "industry": "Machinery", "price": 100.0, "forward_eps": 5.0},
+        {"ticker": "M3", "sector": "Industrials", "industry": "Machinery", "price": 100.0, "forward_eps": 3.3333},
+        {"ticker": "B1", "sector": "Industrials", "industry": "Building Products", "price": 100.0, "forward_eps": 2.5},
+        {"ticker": "B2", "sector": "Industrials", "industry": "Building Products", "price": 100.0, "forward_eps": 2.0},
+        {"ticker": "B3", "sector": "Industrials", "industry": "Building Products", "price": 100.0, "forward_eps": 1.6667},
+    ]
+    build_candidates(*_frame(rows))
+    table = read_df(data_dir("curated", "quant_table.csv"))
+    machinery = table[table["industry"] == "Machinery"]
+    building = table[table["industry"] == "Building Products"]
+    assert float(machinery["industry_pe1"].iloc[0]) == pytest.approx(20.0, rel=1e-3)
+    assert float(building["industry_pe1"].iloc[0]) == pytest.approx(50.0, rel=1e-3)
+    assert float(table["sector_pe1"].iloc[0]) == pytest.approx(35.0, rel=1e-3)
+    m2 = table[table["ticker"] == "M2"].iloc[0]
+    assert float(m2["pe1"]) == pytest.approx(20.0, rel=1e-3)
+    assert float(m2["industry_pe1"]) == pytest.approx(20.0, rel=1e-3)
+
+
+def test_single_name_industry_leaves_industry_pe_null():
+    from ptm.config import data_dir
+    from ptm.io import read_df
+
+    rows = [
+        {"ticker": "M1", "sector": "Industrials", "industry": "Machinery", "price": 100.0, "forward_eps": 10.0},
+        {"ticker": "M2", "sector": "Industrials", "industry": "Machinery", "price": 100.0, "forward_eps": 5.0},
+        {"ticker": "M3", "sector": "Industrials", "industry": "Machinery", "price": 100.0, "forward_eps": 4.0},
+        {"ticker": "SOLO", "sector": "Industrials", "industry": "Specialty", "price": 100.0, "forward_eps": 4.0},
+    ]
+    cands = build_candidates(*_frame(rows))
+    table = read_df(data_dir("curated", "quant_table.csv"))
+    solo = table[table["ticker"] == "SOLO"].iloc[0]
+    assert pd.isna(solo["industry_pe1"])
+    solo_cand = next((c for c in cands if c.ticker == "SOLO"), None)
+    if solo_cand is not None:
+        assert solo_cand.industry_pe1 is None
+    assert float(table[table["ticker"] == "M1"]["industry_pe1"].iloc[0]) == pytest.approx(20.0, rel=1e-3)
+
+
+def test_implausible_pe_is_excluded_from_industry_benchmark():
+    from ptm.config import data_dir
+    from ptm.io import read_df
+
+    rows = [
+        {"ticker": "B1", "sector": "Industrials", "industry": "Machinery", "price": 100.0, "forward_eps": 10.0},
+        {"ticker": "B2", "sector": "Industrials", "industry": "Machinery", "price": 100.0, "forward_eps": 5.0},
+        {"ticker": "B3", "sector": "Industrials", "industry": "Machinery", "price": 100.0, "forward_eps": 4.0},
+        {"ticker": "JUNK", "sector": "Industrials", "industry": "Machinery", "price": 100.0, "forward_eps": 0.08},
+    ]
+    build_candidates(*_frame(rows))
+    table = read_df(data_dir("curated", "quant_table.csv"))
+    junk = table[table["ticker"] == "JUNK"].iloc[0]
+    assert bool(junk["pe_implausible"]) is True
+    assert float(table["industry_pe1"].dropna().iloc[0]) <= 25.0

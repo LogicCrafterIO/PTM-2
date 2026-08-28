@@ -42,9 +42,14 @@ That workaround is moot: all three are deleted. The book is traded as options, w
 
 A floor of 8 would empty the offline pipeline fixture (6 Industrials, 2 Materials) and the 3-name unit screen. The live AEE bug was a **one-name** sector PE mean. Blocking `n < 2` fixes that. A full S&P GICS group already has far more than 8 names.
 
-### 3. Yield curve uses `^IRX`, not a 2-year note
+### 3. Yield curve is FRED DGS10 minus DGS2
 
-Yahoo does not ship a clean 2-year yield in this project’s symbol list. The short leg is the 13-week bill (`^IRX`), with `^FVX` only if IRX is missing. `MacroSnapshot.curve_second_leg` is `"irx"` so `worldview.curve_label_10s5s` does not fire on new dashboards. Old eval fixtures without that field still flag the historical 10s-5s bug.
+The 10-year and 2-year constant-maturity notes (`DGS10`, `DGS2`) are first-class
+FRED series. `MacroSnapshot.ust_10y` / `ust_2y` store the levels in percent;
+`tens_minus_twos` is their difference; `curve_second_leg` is `"dgs2"`. Yahoo
+`^TNX` minus `^IRX` (13-week bill, scaled out of yield*10) remains a fallback
+when FRED is missing. `worldview.curve_label_10s5s` still fires if the second
+leg is `^FVX` (10s-5s).
 
 ### 4. Catalyst window is calendar days, not trading days
 
@@ -73,13 +78,13 @@ toward neutral.
 | Signal | Source | Reads |
 |---|---|---|
 | `regime` | ^GSPC vs 20% drawdown | bear level |
-| `curve` | ^TNX minus ^IRX | inversion |
+| `curve` | FRED DGS10 minus DGS2 (Yahoo ^TNX/^IRX fallback) | inversion |
 | `ism_pmi` | ISM report, FRED fallback | expansion / peak / trough / contraction |
 | `ism_new_orders` | ISM manufacturing components | leads PMI |
 | `ism_nmi` | ISM services | expansion |
 | `umcsi` | FRED `UMCSENT` | consumer sentiment |
 | `permits` | FRED `PERMIT` | housing, leads the cycle |
-| `real_rate` | ^TNX minus CPI yoy | cost of capital |
+| `real_rate` | DGS10 minus CPI yoy | cost of capital |
 | `vix` | ^VIX | stress |
 
 ### Building permits

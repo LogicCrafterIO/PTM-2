@@ -101,3 +101,23 @@ def test_short_industry_blocks_parent_sector_long():
     other = next(row for row in tilts if row.get("industry") == "Other Services")
     assert textile["tilt"] == "short"
     assert other["tilt"] == "short"
+
+
+def test_why_mentions_new_orders_growth():
+    ism = {
+        "pmi": 55.0,
+        "manufacturing": {
+            "industries": {"growth": ["Machinery"], "contraction": []},
+            "new_orders_industries": {"growth": ["Machinery"], "contraction": []},
+            "comments": [],
+        },
+        "services": {
+            "industries": {"growth": [], "contraction": []},
+            "new_orders_industries": {"growth": [], "contraction": []},
+            "comments": [],
+        },
+    }
+    tilts = compute_sector_tilts(ism, pmi=55.0)
+    industrials = next(row for row in tilts if row.get("sector") == "Industrials" and not row.get("industry"))
+    assert "new orders growing" in industrials["why"].lower()
+    assert "Machinery" in industrials["why"]

@@ -59,6 +59,9 @@ def model_name() -> str:
 
 
 TRAILING_COMMA_RE = re.compile(r",(\s*[}\]])")
+# Loose fence: models wrap JSON in markdown even when told not to, and a
+# truncated reply often opens ```json without closing it.
+FENCE_RE = re.compile(r"```(?:json)?\s*\n(.*?)(?:\n```|\Z)", re.S | re.I)
 
 
 def _repair_json(text: str) -> str | None:
@@ -72,32 +75,104 @@ def _repair_json(text: str) -> str | None:
     return repaired if repaired != text else None
 
 
-def _extract_json(text: str) -> dict:
+def _strip_fences(text: str) -> str:
     text = (text or "").strip()
-    fence = re.match(r"^```(?:json)?\s*\n(.*)\n```$", text, flags=re.S | re.I)
-    if fence:
-        text = fence.group(1).strip()
-    cleaned = "".join(ch if (ch >= " " or ch in "\n\t\r") else " " for ch in text)
+    fence = FENCE_RE.search(text)
+    return fence.group(1).strip() if fence else text
+
+
+def _as_object(text: str) -> dict | None:
+    try:
+        payload = json.loads(text)
+    except json.JSONDecodeError:
+        return None
+    return payload if isinstance(payload, dict) else None
+
+
+def _salvage_truncated(text: str) -> str | None:
+    """Close a truncated JSON object so a usable prefix can still parse.
+
+    Measured on a live run: 5 of 15 verdicts were cut mid-object. Keys are
+    requested with filing_direction / supports_outlier first, so recovering the
+    prefix is enough to gate the idea even if evidence_for was chopped.
+    """
+    match = re.search(r"\{", text)
+    if not match:
+        return None
+    raw = text[match.start() :]
+    in_string = False
+    escape = False
+    stack: list[str] = []
+    for ch in raw:
+        if in_string:
+            if escape:
+                escape = False
+                continue
+            if ch == "\\":
+                escape = True
+                continue
+            if ch == '"':
+                in_string = False
+            continue
+        if ch == '"':
+            in_string = True
+            continue
+        if ch == "{":
+            stack.append("}")
+        elif ch == "[":
+            stack.append("]")
+        elif ch in "}]" and stack and stack[-1] == ch:
+            stack.pop()
+    out = raw
+    if escape:
+        out = out[:-1]
+    if in_string:
+        out += '"'
+    out = TRAILING_COMMA_RE.sub(r"\1", out)
+    if re.search(r',\s*"[^"\\]*"\s*:\s*$', out):
+        out = re.sub(r',\s*"[^"\\]*"\s*:\s*$', "", out)
+    elif re.search(r'"[^"\\]*"\s*:\s*$', out):
+        out += " null"
+    out = re.sub(r',\s*"[^"\\]*"\s*$', "", out)
+    out = re.sub(r',\s*$', "", out)
+    while stack:
+        out += stack.pop()
+    return TRAILING_COMMA_RE.sub(r"\1", out)
+
+
+def _extract_json(text: str) -> dict:
+    cleaned = "".join(ch if (ch >= " " or ch in "\n\t\r") else " " for ch in _strip_fences(text))
     for attempt in (cleaned, _repair_json(cleaned)):
         if attempt is None:
             continue
-        try:
-            payload = json.loads(attempt)
-        except json.JSONDecodeError:
-            continue
-        if isinstance(payload, dict):
+        payload = _as_object(attempt)
+        if payload is not None:
             return payload
     match = re.search(r"\{", cleaned)
     if not match:
         raise json.JSONDecodeError("No JSON object", cleaned, 0)
     tail = cleaned[match.start() :]
-    try:
-        payload, _ = json.JSONDecoder().raw_decode(tail)
-    except json.JSONDecodeError:
-        payload, _ = json.JSONDecoder().raw_decode(_repair_json(tail) or tail)
-    if not isinstance(payload, dict):
-        raise json.JSONDecodeError("JSON root is not an object", cleaned, 0)
-    return payload
+    for attempt in (tail, _repair_json(tail)):
+        if not attempt:
+            continue
+        try:
+            payload, _ = json.JSONDecoder().raw_decode(attempt)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(payload, dict):
+            return payload
+    salvaged = _salvage_truncated(cleaned)
+    if salvaged:
+        payload = _as_object(salvaged)
+        if payload is not None:
+            return payload
+        try:
+            payload, _ = json.JSONDecoder().raw_decode(salvaged)
+        except json.JSONDecodeError:
+            payload = None
+        if isinstance(payload, dict):
+            return payload
+    raise json.JSONDecodeError("No JSON object", cleaned, 0)
 
 
 
@@ -146,6 +221,14 @@ def _is_throttled(exc: Exception) -> bool:
     return any(marker in text for marker in _THROTTLE_MARKERS)
 
 
+def _is_timeout(exc: Exception) -> bool:
+    name = type(exc).__name__.lower()
+    text = str(exc).lower()
+    if "timeout" in name or "timed out" in text or "timeout" in text:
+        return True
+    return False
+
+
 FALLBACK_MODELS = [
     "meta/llama-3.1-8b-instruct",
 ]
@@ -173,6 +256,7 @@ def chat_json(
     *,
     model: str | None = None,
     used_out: list[str] | None = None,
+    allow_fallback: bool = True,
     _retried: bool = False,
 ) -> dict:
     """Chat completion returning parsed JSON.
@@ -181,17 +265,23 @@ def chat_json(
     FALLBACK_MODELS means a pinned model can quietly be replaced by a smaller
     one - on a first run of the 70B, 9 of 12 verdicts silently came back from
     the 8B. A caller that pins a model for a reason needs to know when that did
-    not happen.
+    not happen. Truncated replies from the pinned model are salvaged locally
+    before any fallback; a timeout on the pinned model is retried once on that
+    same model before the 8B is tried.
     """
     cfg = toml_settings()["llm"]
     log_dir = data_dir("llm_logs")
     log_dir.mkdir(parents=True, exist_ok=True)
     last_error = None
     primary = model or model_name()
-    models = [primary] + [m for m in FALLBACK_MODELS if m != primary]
+    models = [primary]
+    if allow_fallback:
+        models = [primary] + [m for m in FALLBACK_MODELS if m != primary]
     content = "{}"
     used = primary
+    finish_reason = ""
     for used in models:
+        timeout_tries = 0
         for attempt in range(RATE_LIMIT_RETRIES):
             try:
                 _pace_llm()
@@ -204,7 +294,9 @@ def chat_json(
                     temperature=cfg["temperature"],
                     max_tokens=cfg["max_tokens"],
                 )
-                content = response.choices[0].message.content or "{}"
+                choice = response.choices[0]
+                content = choice.message.content or "{}"
+                finish_reason = str(getattr(choice, "finish_reason", None) or "")
                 last_error = None
                 break
             except Exception as exc:
@@ -218,6 +310,12 @@ def chat_json(
                     log(f"llm: throttled, retrying in {delay:.1f}s ({attempt + 1}/{RATE_LIMIT_RETRIES - 1})")
                     time.sleep(delay)
                     continue
+                # A truncated 49B answer is still that model's answer. A timeout
+                # is not a reason to silently swap in the 8B; retry the pin once.
+                if used == primary and _is_timeout(exc) and timeout_tries < 1:
+                    timeout_tries += 1
+                    log(f"llm: timeout on {used}, retrying pinned model once")
+                    continue
                 break
         if last_error is None:
             break
@@ -225,7 +323,13 @@ def chat_json(
         raise last_error
     write_json(
         log_dir / f"{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}.json",
-        {"model": used, "system": system, "user": user[:4000], "content": content},
+        {
+            "model": used,
+            "finish_reason": finish_reason,
+            "system": system,
+            "user": user[:4000],
+            "content": content,
+        },
     )
     if used_out is not None:
         used_out.append(used)
@@ -234,11 +338,15 @@ def chat_json(
     except json.JSONDecodeError:
         if _retried:
             raise
+        # Truncation is a length problem, not a "wrong model" problem. Retry
+        # the pin with a shorter ask; do not fall through to the 8B for this.
+        pinned_only = finish_reason == "length" or used == primary
         return chat_json(
             system + " Return a smaller JSON object. Keep every string under 240 characters. Close all quotes.",
             _shorten_middle(user, 4000),
-            model=model,
+            model=primary if pinned_only else model,
             used_out=used_out,
+            allow_fallback=False if pinned_only else allow_fallback,
             _retried=True,
         )
 
@@ -723,6 +831,9 @@ def qualitative(
     ratio = ""
     if candidate.pe1 and candidate.sector_pe1:
         ratio = f" ({candidate.pe1 / candidate.sector_pe1:.1f}x sector)"
+    industry_bit = ""
+    if candidate.pe1 and candidate.industry_pe1:
+        industry_bit = f" vs industry {candidate.industry_pe1} ({candidate.pe1 / candidate.industry_pe1:.1f}x)"
     ask = (
         "does the evidence justify PAYING this premium?"
         if candidate.side == Side.LONG
@@ -736,7 +847,8 @@ def qualitative(
         "(string), supports_outlier (bool), why (string, 2-4 sentences), denial_reason "
         "(string), evidence_for (array of {claim, metric, impact_pct, impact_on, quantified}, "
         "at most 4), evidence_against (same shape, at most 4).\n"
-        f"Side={candidate.side.value}. P/E {candidate.pe1} vs sector {candidate.sector_pe1}{ratio}. "
+        f"Side={candidate.side.value}. P/E {candidate.pe1} vs sector {candidate.sector_pe1}{ratio}"
+        f"{industry_bit}. "
         f"EG case={candidate.eg_case}.\n"
         f"CONSENSUS THE MARKET IS HOLDING: FY1 EPS {candidate.eps1}"
         + (
@@ -752,12 +864,8 @@ def qualitative(
     verdict: dict = {}
     wanted_model = verdict_model()
     answered_by: list[str] = []
-    try:
-        verdict = chat_json(verdict_system, verdict_user, model=wanted_model, used_out=answered_by)
-        if answered_by and answered_by[0] != wanted_model:
-            # The gate ran on something smaller than intended. Say so on the idea.
-            flags.append(f"verdict_model_downgraded_to_{answered_by[0]}")
-    except (json.JSONDecodeError, Exception):
+
+    def _deny_verdict(reason: str) -> QualResult | dict:
         if pass_a_failed:
             return QualResult(
                 supports_outlier=None,
@@ -769,12 +877,47 @@ def qualitative(
                 evidence_quotes=quotes,
                 denial_reason="llm_json_failed",
             )
-        verdict = {
+        flags.append("llm_json_failed_verdict")
+        return {
             "supports_outlier": False,
             "why": "Verdict JSON failed after a usable extract; not treating as a pass.",
-            "denial_reason": "verdict JSON unreadable",
+            "denial_reason": _clip(reason, 240),
         }
-        flags.append("llm_json_failed_verdict")
+
+    try:
+        verdict = chat_json(verdict_system, verdict_user, model=wanted_model, used_out=answered_by)
+        if answered_by and answered_by[0] != wanted_model:
+            # The gate ran on something smaller than intended. Say so on the idea.
+            flags.append(f"verdict_model_downgraded_to_{answered_by[0]}")
+    except json.JSONDecodeError as exc:
+        failed = _deny_verdict(f"verdict JSON unreadable: {exc.msg}")
+        if isinstance(failed, QualResult):
+            return failed
+        verdict = failed
+    except Exception as exc:
+        # Transport failure is not a parse failure. Retry the pinned verdict
+        # model once more rather than treating a timeout as unreadable JSON.
+        try:
+            verdict = chat_json(
+                verdict_system,
+                verdict_user,
+                model=wanted_model,
+                used_out=answered_by,
+                allow_fallback=False,
+            )
+            if answered_by and answered_by[0] != wanted_model:
+                flags.append(f"verdict_model_downgraded_to_{answered_by[0]}")
+        except json.JSONDecodeError as parse_exc:
+            failed = _deny_verdict(f"verdict JSON unreadable: {parse_exc.msg}")
+            if isinstance(failed, QualResult):
+                return failed
+            verdict = failed
+        except Exception as retry_exc:
+            label = "timeout" if _is_timeout(exc) or _is_timeout(retry_exc) else "error"
+            failed = _deny_verdict(f"verdict {label}: {retry_exc}")
+            if isinstance(failed, QualResult):
+                return failed
+            verdict = failed
 
     raw = verdict.get("supports_outlier")
     if raw is None or raw == "null":
@@ -963,7 +1106,13 @@ def fallback_template(
             f"Sector: {candidate.sector}  ",
             f"EG case: {candidate.eg_case}  ",
             f"Price: {candidate.price}  Mcap: {candidate.market_cap}",
-            f"PE1 {candidate.pe1} vs sector {candidate.sector_pe1}  EG1 {candidate.eg1}",
+            f"PE1 {candidate.pe1} vs sector {candidate.sector_pe1}"
+            + (
+                f" vs industry {candidate.industry_pe1}"
+                if candidate.industry_pe1 is not None
+                else ""
+            )
+            + f"  EG1 {candidate.eg1}",
             _relative_peg_line(candidate),
             "",
             "## Qualitative",

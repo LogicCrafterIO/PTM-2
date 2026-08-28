@@ -39,6 +39,9 @@ def test_parse_july_services_fixture():
     assert report["components"]["business_activity"]["value"] == 59.1
     assert "Retail Trade" in report["industries"]["growth"]
     assert "Health Care & Social Assistance" in report["industries"]["contraction"]
+    assert "Retail Trade" in report["new_orders_industries"]["growth"]
+    assert report["new_orders_industries"]["growth"][0] == "Management of Companies & Support Services"
+    assert "Health Care & Social Assistance" in report["new_orders_industries"]["contraction"]
 
 
 def test_chemicals_map_to_materials_short():

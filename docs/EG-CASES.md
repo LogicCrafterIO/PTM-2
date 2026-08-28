@@ -32,6 +32,11 @@ themselves screenable: a positive, plausible P/E **and** analyst consensus. Usin
 and skewed the book short; including loss-makers let a shrinking loss read as
 +50% growth and lifted the bar for everyone else.
 
+`industry_pe1` / `industry_eg1` are the same medians at GICS industry grain,
+left null when the industry has fewer than `min_sector_names` screenable peers.
+They are display and group-review context only — EG cases, relative PEG, and
+the long ceiling still key off the sector.
+
 ---
 
 ## 2. Long cases

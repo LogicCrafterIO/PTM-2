@@ -227,7 +227,11 @@ def _why_matching_tilt(parts: list[str], tilt: str) -> str:
     if tilt == "long":
         kept = [p for p in parts if "contract" not in p.lower()]
     elif tilt == "short":
-        kept = [p for p in parts if "growth" not in p.lower() or "contract" in p.lower()]
+        kept = [
+            p
+            for p in parts
+            if ("growth" not in p.lower() and "growing" not in p.lower()) or "contract" in p.lower()
+        ]
     else:
         kept = parts
     return "; ".join(kept[:3]) or "ISM composite score"
@@ -251,16 +255,20 @@ def compute_sector_tilts(ism: dict, pmi: float | None = None) -> list[dict]:
         contraction = list(industries.get("contraction") or [])
         _merge(scores, _rank_scores(growth, 1.0, headline_weight))
         _merge(scores, _rank_scores(contraction, -1.0, headline_weight + 0.2))
-        if growth:
-            note(gics_for_ism(growth[0]) or "", f"{label} fastest growth: {growth[0]}")
-        if contraction:
-            note(gics_for_ism(contraction[0]) or "", f"{label} contraction: {contraction[0]}")
         _merge(scores, _rank_scores(list(orders.get("growth") or []), 1.0, orders_weight))
         _merge(scores, _rank_scores(list(orders.get("contraction") or []), -1.0, orders_weight + 0.2))
+        for name in orders.get("growth") or []:
+            sector = gics_for_ism(name)
+            if sector:
+                note(sector, f"{label} new orders growing: {name}")
         for name in orders.get("contraction") or []:
             sector = gics_for_ism(name)
             if sector:
                 note(sector, f"{label} new orders contracting: {name}")
+        if growth:
+            note(gics_for_ism(growth[0]) or "", f"{label} fastest growth: {growth[0]}")
+        if contraction:
+            note(gics_for_ism(contraction[0]) or "", f"{label} contraction: {contraction[0]}")
         _merge(scores, _comment_scores(report.get("comments") or []))
 
     _merge(scores, _macro_overlay(pmi if pmi is not None else ism.get("pmi")))

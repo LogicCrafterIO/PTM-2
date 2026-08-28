@@ -61,6 +61,7 @@ def _row(idea: TradeIdea) -> dict:
         "consensus_eg1": cand.eg1,
         "pe1": cand.pe1,
         "sector_pe1": cand.sector_pe1,
+        "industry_pe1": cand.industry_pe1,
         "relative_peg": cand.relative_peg,
         "earnings_date": idea.earnings.date if idea.earnings else None,
     }

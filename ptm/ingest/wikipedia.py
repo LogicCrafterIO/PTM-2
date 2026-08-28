@@ -24,33 +24,62 @@ def _clean_ticker(value: str) -> str:
     return re.sub(r"[^A-Z0-9-]", "", text)
 
 
+def _col_text(col: object) -> str:
+    """Flatten a pandas column label (including MultiIndex tuples) to lowercase text."""
+    if isinstance(col, tuple):
+        parts = [
+            str(part).strip()
+            for part in col
+            if str(part).strip() and not str(part).startswith("Unnamed")
+        ]
+        return " ".join(parts).lower()
+    return str(col).strip().lower()
+
+
 def _pick_table(tables: list[pd.DataFrame]) -> pd.DataFrame:
-    best = None
-    best_rows = 0
+    """Prefer the constituent list over a longer Added/Removed history table."""
+    scored: list[tuple[int, pd.DataFrame]] = []
     for table in tables:
-        cols = [str(c).lower() for c in table.columns]
-        joined = " ".join(cols)
-        if any(key in joined for key in ("symbol", "ticker")):
-            if len(table) > best_rows:
-                best = table
-                best_rows = len(table)
-    if best is None:
+        texts = [_col_text(col) for col in table.columns]
+        joined = " ".join(texts)
+        if not any("symbol" in text or "ticker" in text for text in texts):
+            continue
+        if "added" in joined and "removed" in joined:
+            continue
+        score = len(table)
+        if any("gics" in text or text == "sector" for text in texts):
+            score += 10_000
+        if any(
+            text in {"security", "company", "name"} or "company" in text or "security" in text
+            for text in texts
+        ):
+            score += 1_000
+        scored.append((score, table))
+    if not scored:
         raise RuntimeError("No constituent table found")
-    return best
+    scored.sort(key=lambda item: item[0], reverse=True)
+    return scored[0][1]
 
 
 def _normalize(frame: pd.DataFrame, index_key: str) -> pd.DataFrame:
     rename = {}
+    used: set[str] = set()
     for col in frame.columns:
-        low = str(col).lower()
-        if "symbol" in low or low == "ticker":
+        low = _col_text(col)
+        if "ticker" not in used and ("symbol" in low or "ticker" in low):
             rename[col] = "ticker"
-        elif low in {"security", "company", "name"} or "company" in low:
+            used.add("ticker")
+        elif "name" not in used and (
+            low in {"security", "company", "name"} or "company" in low or "security" in low
+        ):
             rename[col] = "name"
-        elif "gics sector" in low or low == "sector":
+            used.add("name")
+        elif "sector" not in used and ("gics sector" in low or low == "sector"):
             rename[col] = "sector"
-        elif "gics sub" in low or "industry" in low:
+            used.add("sector")
+        elif "industry" not in used and ("gics sub" in low or "industry" in low):
             rename[col] = "industry"
+            used.add("industry")
     out = frame.rename(columns=rename)
     for required in ("ticker", "name"):
         if required not in out.columns:

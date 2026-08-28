@@ -54,6 +54,36 @@ def _three_month_trend(history: list[dict]) -> float | None:
     return recent / prior - 1.0
 
 
+def _yield_pct(value) -> float | None:
+    """Normalize a yield to percent.
+
+    FRED DGS series are already percent. Yahoo ^TNX/^IRX/^FVX print yield*10
+    when the last is above 20 (42.3 means 4.23%).
+    """
+    if value is None:
+        return None
+    try:
+        out = float(value)
+    except (TypeError, ValueError):
+        return None
+    if out != out:
+        return None
+    return out / 10.0 if out > 20 else out
+
+
+def _fred_last(fred: dict, name: str) -> float | None:
+    raw = (fred.get(name) or {}).get("last")
+    if raw is None:
+        return None
+    try:
+        out = float(raw)
+    except (TypeError, ValueError):
+        return None
+    if out != out:
+        return None
+    return out
+
+
 def build_dashboard() -> MacroSnapshot:
     cfg = toml_settings()
     macro_cfg = cfg["macro"]
@@ -79,18 +109,31 @@ def build_dashboard() -> MacroSnapshot:
     tnx = yf.get("tnx", {}).get("last")
     irx = yf.get("irx", {}).get("last")
     fvx = yf.get("fvx", {}).get("last")
-    # ^IRX is the 13-week bill (short-rate proxy for 2s). Yahoo has no clean 2y index.
-    short_leg = irx if irx is not None else fvx
-    curve_second_leg = "irx" if irx is not None else ("fvx" if fvx is not None else "")
+    # Prefer FRED constant-maturity notes (DGS10 / DGS2). Yahoo has no clean
+    # 2-year; ^IRX is the 13-week bill and ^FVX is the 5-year.
+    fred_10 = _fred_last(fred, "ust_10y")
+    fred_2 = _fred_last(fred, "ust_2y")
+    yahoo_10 = _yield_pct(tnx)
+    yahoo_2 = _yield_pct(irx) if irx is not None else _yield_pct(fvx)
+    ust_10y = fred_10 if fred_10 is not None else yahoo_10
+    ust_2y = fred_2 if fred_2 is not None else yahoo_2
+    if fred_2 is not None:
+        curve_second_leg = "dgs2"
+    elif irx is not None:
+        curve_second_leg = "irx"
+    elif fvx is not None:
+        curve_second_leg = "fvx"
+    else:
+        curve_second_leg = ""
     tens_twos = None
-    if tnx is not None and short_leg is not None:
-        tens_twos = float(tnx) - float(short_leg)
+    if ust_10y is not None and ust_2y is not None:
+        tens_twos = float(ust_10y) - float(ust_2y)
     inverted = tens_twos is not None and tens_twos <= macro_cfg["curve_invert"]
 
     cpi_yoy = (fred.get("cpi") or {}).get("yoy")
     real_10y = None
-    if tnx is not None and cpi_yoy is not None:
-        real_10y = float(tnx) / 10.0 - float(cpi_yoy) if float(tnx) > 20 else float(tnx) - float(cpi_yoy)
+    if ust_10y is not None and cpi_yoy is not None:
+        real_10y = float(ust_10y) - float(cpi_yoy)
 
     pmi = ism.get("pmi") or (fred.get("ism_pmi") or {}).get("last")
     nmi = ism.get("nmi") or (fred.get("ism_nmi") or {}).get("last")
@@ -115,9 +158,14 @@ def build_dashboard() -> MacroSnapshot:
 
     if inverted:
         signals["curve"] = -1.0
-        notes.append("yield curve inverted (10s minus 13-week bill proxy for 2s)")
+        if ust_10y is not None and ust_2y is not None:
+            notes.append(f"yield curve inverted (10s {ust_10y:.2f} − 2s {ust_2y:.2f})")
+        else:
+            notes.append("yield curve inverted")
     elif tens_twos is not None and tens_twos > 0:
         signals["curve"] = 0.5
+        if ust_10y is not None and ust_2y is not None:
+            notes.append(f"yield curve upward sloping (10s {ust_10y:.2f} − 2s {ust_2y:.2f})")
 
     if pmi is not None:
         if pmi >= macro_cfg["ism_peak"]:
@@ -214,6 +262,8 @@ def build_dashboard() -> MacroSnapshot:
         tens_minus_twos=tens_twos,
         curve_inverted=inverted,
         curve_second_leg=curve_second_leg,
+        ust_10y=ust_10y,
+        ust_2y=ust_2y,
         real_10y=real_10y,
         vix=vix,
         ism_pmi=pmi,

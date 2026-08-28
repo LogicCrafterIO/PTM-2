@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PTM curated viewer</title>
+  <style>
+    :root {
+      --bg: #0f1216;
+      --surface: #171b21;
+      --surface-2: #1e242c;
+      --border: #2c3440;
+      --text: #e8edf4;
+      --muted: #8b96a8;
+      --long: #3dd68c;
+      --short: #ff6b7a;
+      --accent: #6ea8fe;
+      --warn: #e6b84d;
+      --chip: #252c36;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body {
+      font: 13px/1.45 "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 14px 20px 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 { font-size: 16px; font-weight: 650; margin: 0; letter-spacing: .02em; }
+    h2.sec { font-size: 15px; margin: 18px 0 8px; }
+    .meta { color: var(--muted); font-size: 12px; }
+    .meta code { color: var(--accent); }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding: 8px 20px 0;
+    }
+    nav button, .subnav button {
+      background: transparent;
+      color: var(--muted);
+      border: 0;
+      border-bottom: 2px solid transparent;
+      padding: 8px 12px;
+      cursor: pointer;
+      font: inherit;
+    }
+    nav button.active, .subnav button.active {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+    main { padding: 16px 20px 40px; }
+    .panel { display: none; }
+    .panel.active { display: block; }
+    .kpis {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .kpi {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      min-width: 120px;
+    }
+    .kpi .lbl { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+    .kpi .val { font-size: 18px; font-weight: 650; font-variant-numeric: tabular-nums; }
+    .breaches {
+      background: #2a2214;
+      border: 1px solid #5a4720;
+      color: #f0d9a0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin: 0 0 14px;
+    }
+    .breaches ul { margin: 6px 0 0; padding-left: 18px; }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    input, select {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 6px 8px;
+      font: inherit;
+    }
+    input { min-width: 180px; }
+    .wrap { overflow: auto; max-height: calc(100vh - 280px); border: 1px solid var(--border); border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+    th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    th { position: sticky; top: 0; background: var(--surface-2); color: var(--muted); font-weight: 600; cursor: pointer; user-select: none; }
+    th.sorted { color: var(--accent); }
+    td.wrap-cell { white-space: normal; max-width: 420px; }
+    tbody tr { cursor: pointer; }
+    tbody tr:hover { background: var(--surface-2); }
+    tbody tr.selected { background: #1c2a40; }
+    .side-long { color: var(--long); font-weight: 650; }
+    .side-short { color: var(--short); font-weight: 650; }
+    .badge {
+      display: inline-block;
+      padding: 1px 7px;
+      border-radius: 999px;
+      background: var(--chip);
+      font-size: 11px;
+    }
+    .badge.long { background: #163526; color: var(--long); }
+    .badge.short { background: #3a1b22; color: var(--short); }
+    .badge.warn { background: #3a2e12; color: var(--warn); }
+    .badge.info { background: #1c2a40; color: var(--accent); }
+    .err { color: var(--short); padding: 20px; }
+    .hint { color: var(--muted); margin: 0 0 12px; }
+    .subnav { display: flex; gap: 4px; margin: 0 0 12px; }
+    #detail {
+      margin-top: 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    #detail h2 { margin: 0 0 8px; font-size: 16px; }
+    #detail h3 { margin: 16px 0 6px; font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    table.kv th { width: 150px; color: var(--muted); font-weight: 600; cursor: default; white-space: nowrap; }
+    #detail .wrap { max-height: 280px; }
+    @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
+    .quote { border-left: 3px solid var(--accent); padding: 4px 0 4px 10px; color: #c9d3e0; margin: 6px 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip { background: var(--chip); border-radius: 999px; padding: 3px 9px; font-size: 12px; }
+    .chip.up { background: #163526; color: var(--long); }
+    .chip.down { background: #3a1b22; color: var(--short); }
+    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      cursor: pointer;
+    }
+    .card:hover, .card.selected { border-color: var(--accent); }
+    .card h3 { margin: 0 0 6px; font-size: 14px; }
+    pre {
+      white-space: pre-wrap;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px;
+      overflow: auto;
+      max-height: 280px;
+    }
+    .muted { color: var(--muted); }
+    .pos { color: var(--long); }
+    .neg { color: var(--short); }
+    .bar-wrap { display: flex; align-items: center; gap: 8px; }
+    .bar {
+      height: 8px;
+      background: var(--chip);
+      border-radius: 4px;
+      flex: 1;
+      overflow: hidden;
+    }
+    .bar > span { display: block; height: 100%; }
+    .bar.pmi > span { background: var(--long); }
+    .bar.below > span { background: var(--short); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PTM curated viewer</h1>
+    <div class="meta">Reads <code>data/curated/*.json</code> · serve from repo root · <span id="status">loading…</span></div>
+  </header>
+  <nav>
+    <button data-tab="book" class="active">Book</button>
+    <button data-tab="windows">Windows</button>
+    <button data-tab="ideas">Ideas</button>
+    <button data-tab="screen">Screen</button>
+    <button data-tab="momentum">Momentum</button>
+    <button data-tab="groups">Groups</button>
+    <button data-tab="macro">Macro</button>
+    <button data-tab="themes">Themes</button>
+    <button data-tab="ism">ISM</button>
+    <button data-tab="audit">Audit</button>
+  </nav>
+  <main>
+    <section id="tab-book" class="panel active"></section>
+    <section id="tab-windows" class="panel"></section>
+    <section id="tab-ideas" class="panel"></section>
+    <section id="tab-screen" class="panel"></section>
+    <section id="tab-momentum" class="panel"></section>
+    <section id="tab-groups" class="panel"></section>
+    <section id="tab-macro" class="panel"></section>
+    <section id="tab-themes" class="panel"></section>
+    <section id="tab-ism" class="panel"></section>
+    <section id="tab-audit" class="panel"></section>
+    <div id="detail" hidden></div>
+  </main>
+  <script>
+    const ROOT = "/data/curated";
+    const state = {
+      book: null,
+      windows: null,
+      windowBooks: {},
+      ideas: null,
+      ism: null,
+      ranking: null,
+      candidates: null,
+      momentum: null,
+      groups: null,
+      macro: null,
+      fred: null,
+      themeCohorts: null,
+      themeIsm: null,
+      themeHistory: null,
+      audit: null,
+      selected: null,
+      sorts: {},
+      window: "00-30d",
+      screenSub: "ranking",
+      groupKind: "",
+    };
+
+    const esc = (s) => String(s ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;");
+
+    const dash = (v) => (v === null || v === undefined || v === "" ? "—" : v);
+    const num = (v, d = 1) => (typeof v === "number" && Number.isFinite(v) ? v.toFixed(d) : "—");
+    const signed = (v, d = 1) => {
+      if (typeof v !== "number" || !Number.isFinite(v)) return "—";
+      return (v > 0 ? "+" : "") + v.toFixed(d);
+    };
+    const pct = (v, d = 1) => {
+      if (typeof v !== "number" || !Number.isFinite(v)) return "—";
+      return signed(v * 100, d) + "%";
+    };
+    const pctPts = (v, d = 1) => {
+      if (typeof v !== "number" || !Number.isFinite(v)) return "—";
+      return signed(v, d) + "%";
+    };
+    const commaUsd = (v) => {
+      if (typeof v !== "number" || !Number.isFinite(v)) return "—";
+      const sign = v < 0 ? "-" : "";
+      return sign + "$" + Math.round(Math.abs(v)).toLocaleString("en-US");
+    };
+    const mcap = (v) => {
+      if (typeof v !== "number" || !Number.isFinite(v)) return "—";
+      const abs = Math.abs(v);
+      const full = commaUsd(v);
+      if (abs >= 1e9) return "$" + (v / 1e9).toFixed(1) + "bn (" + full + ")";
+      if (abs >= 1e6) return "$" + (v / 1e6).toFixed(0) + "m (" + full + ")";
+      return full;
+    };
+    const DOLLAR_KEYS = new Set(["revenue", "net_income", "ebit", "cash", "debt", "ev", "market_cap", "interest"]);
+    const moneyField = (key, v) => (typeof v === "number" && DOLLAR_KEYS.has(key) ? mcap(v) : (typeof v === "number" ? num(v, 2) : esc(dash(v))));
+    const clsSigned = (v) => (typeof v === "number" ? (v >= 0 ? "pos" : "neg") : "");
+    const sideClass = (side) => (side === "short" ? "side-short" : "side-long");
+    const asOf = (iso) => {
+      if (!iso) return "—";
+      const d = new Date(iso);
+      return Number.isNaN(d.getTime()) ? iso : d.toISOString().replace("T", " ").slice(0, 19) + " UTC";
+    };
+    const unique = (values) => [...new Set(values.filter(Boolean))].sort();
+    const fileErr = (data, name) => {
+      if (!data) return `${name} not loaded`;
+      if (data.__error) return data.__error;
+      return null;
+    };
+    const yn = (v) => (v === true ? "yes" : v === false ? "no" : "—");
+    const sevClass = (s) => (s === "error" ? "short" : s === "warning" ? "warn" : "info");
+
+    async function loadJson(name) {
+      const res = await fetch(`${ROOT}/${name}`);
+      if (!res.ok) throw new Error(`${name}: HTTP ${res.status}`);
+      const text = (await res.text())
+        .replace(/\bNaN\b/g, "null")
+        .replace(/\b-?Infinity\b/g, "null");
+      try {
+        return JSON.parse(text);
+      } catch (e) {
+        throw new Error(`${name}: ${e.message}`);
+      }
+    }
+
+    async function loadOr(name) {
+      try {
+        return await loadJson(name);
+      } catch (e) {
+        console.error(e);
+        return { __error: e.message };
+      }
+    }
+
+    function showHtml(html) {
+      const panel = document.getElementById("detail");
+      panel.hidden = false;
+      panel.innerHTML = html;
+      panel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function sortRowsWith(rows, sort) {
+      const { key, dir } = sort;
+      const sorted = rows.slice();
+      if (!key) return sorted;
+      sorted.sort((a, b) => {
+        const av = a[key], bv = b[key];
+        if (av == null && bv == null) return 0;
+        if (av == null) return 1;
+        if (bv == null) return -1;
+        if (typeof av === "boolean" && typeof bv === "boolean") return ((av ? 1 : 0) - (bv ? 1 : 0)) * dir;
+        if (typeof av === "number" && typeof bv === "number") return (av - bv) * dir;
+        return String(av).localeCompare(String(bv)) * dir;
+      });
+      return sorted;
+    }
+
+    function attachTable(container, rows, cols, opts = {}) {
+      const tableId = opts.tableId || "tbl";
+      if (!state.sorts[tableId]) state.sorts[tableId] = { key: null, dir: 1 };
+      const sort = state.sorts[tableId];
+      const sorted = sortRowsWith(rows, sort);
+      const selectedId = opts.selectedId ? opts.selectedId() : "";
+      const head = cols.map((c) =>
+        `<th data-sort="${c.key}" class="${sort.key === c.key ? "sorted" : ""}">${esc(c.label)}${sort.key === c.key ? (sort.dir > 0 ? " ▲" : " ▼") : ""}</th>`
+      ).join("");
+      const body = sorted.map((r, i) => {
+        const id = opts.rowId ? opts.rowId(r) : String(i);
+        const sel = selectedId && id === selectedId ? " selected" : "";
+        const cells = cols.map((c) => {
+          const html = c.fmt ? c.fmt(r[c.key], r) : esc(dash(r[c.key]));
+          const cls = [c.wrap ? "wrap-cell" : "", c.tdClass ? c.tdClass(r) : ""].filter(Boolean).join(" ");
+          return `<td${cls ? ` class="${cls}"` : ""}>${html}</td>`;
+        }).join("");
+        return `<tr data-idx="${i}" data-id="${esc(id)}" class="${sel}">${cells}</tr>`;
+      }).join("");
+      container.innerHTML = `<div class="wrap"><table id="${tableId}">
+        <thead><tr>${head}</tr></thead>
+        <tbody>${body || `<tr><td colspan="${cols.length}" class="muted">No rows</td></tr>`}</tbody>
+      </table></div>`;
+      container.querySelectorAll("th[data-sort]").forEach((th) => {
+        th.addEventListener("click", () => {
+          const next = th.dataset.sort;
+          if (sort.key === next) sort.dir *= -1;
+          else { sort.key = next; sort.dir = 1; }
+          attachTable(container, rows, cols, opts);
+        });
+      });
+      if (opts.onSelect) {
+        container.querySelectorAll("tbody tr[data-idx]").forEach((tr) => {
+          tr.addEventListener("click", () => {
+            const r = sorted[Number(tr.dataset.idx)];
+            container.querySelectorAll("tr.selected").forEach((x) => x.classList.remove("selected"));
+            tr.classList.add("selected");
+            opts.onSelect(r);
+          });
+        });
+      }
+    }
+
+    function rowFields(idea) {
+      const c = idea.candidate || {};
+      const extra = idea.extra || {};
+      const mom = extra.revision_momentum || {};
+      const conv = extra.conviction_detail || {};
+      const earn = idea.earnings || {};
+      const prm = idea.prm || {};
+      return {
+        idea,
+        ticker: c.ticker || "",
+        name: c.name || "",
+        side: c.side || "",
+        sector: c.sector || "",
+        industry: c.industry || "",
+        eg_case: c.eg_case || "",
+        eg1: c.eg1,
+        pe1: c.pe1,
+        peg1: c.peg1,
+        relative_peg: c.relative_peg,
+        price: c.price,
+        market_cap: c.market_cap,
+        ism_tilt: c.ism_tilt || "",
+        ism_score: c.ism_score,
+        state: idea.state || "",
+        days: earn.days_to_earnings,
+        revision: mom.raw_edge_pct,
+        score: mom.edge_score ?? mom.score,
+        durability: mom.durability || "",
+        beta: prm.beta,
+        conviction: conv.score ?? extra.conviction,
+      };
+    }
+
+    const IDEA_COLS = [
+      { key: "side", label: "Side", fmt: (v) => esc(v), tdClass: (r) => sideClass(r.side) },
+      { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
+      { key: "name", label: "Name" },
+      { key: "sector", label: "Sector" },
+      { key: "eg_case", label: "EG case", fmt: (v) => `<span class="badge">${esc(v)}</span>` },
+      { key: "eg1", label: "EG1", fmt: (v) => pct(v), tdClass: (r) => clsSigned(r.eg1) },
+      { key: "pe1", label: "PE1", fmt: (v) => num(v, 1) },
+      { key: "days", label: "Days", fmt: (v) => esc(dash(v)) },
+      { key: "revision", label: "Revision", fmt: (v) => pctPts(v), tdClass: (r) => clsSigned(r.revision) },
+      { key: "score", label: "Score", fmt: (v) => signed(v), tdClass: (r) => clsSigned(r.score) },
+      { key: "durability", label: "Durability" },
+      { key: "beta", label: "Beta", fmt: (v) => signed(v, 2) },
+      { key: "conviction", label: "Conviction", fmt: (v) => num(v, 2) },
+    ];
+
+    function attachIdeaTable(container, rows, tableId) {
+      attachTable(container, rows, IDEA_COLS, {
+        tableId,
+        rowId: (r) => `${r.ticker}|${r.side}`,
+        selectedId: () => {
+          const c = state.selected && state.selected.candidate;
+          return c ? `${c.ticker}|${c.side}` : "";
+        },
+        onSelect: (r) => { state.selected = r.idea; showDetail(r.idea); },
+      });
+    }
+
+    function evidenceList(items) {
+      if (!items || !items.length) return `<p class="muted">None</p>`;
+      return `<ul>${items.map((e) => {
+        const bit = typeof e === "string" ? e : [
+          e.claim,
+          e.metric ? `(${e.metric})` : "",
+          e.impact_pct != null ? `${signed(e.impact_pct)}% on ${e.impact_on || "—"}` : "",
+          e.quantified ? "quantified" : "",
+          e.weight != null ? `w ${num(e.weight, 2)}` : "",
+        ].filter(Boolean).join(" · ");
+        return `<li>${esc(bit)}</li>`;
+      }).join("")}</ul>`;
+    }
+
+    function kvTable(rows) {
+      const body = rows.filter((r) => r && r[1] != null && r[1] !== "").map(([k, v]) =>
+        `<tr><th>${esc(k)}</th><td class="wrap-cell">${v}</td></tr>`
+      ).join("");
+      return body ? `<table class="kv">${body}</table>` : "";
+    }
+
+    function miniTable(headers, rowHtml) {
+      if (!rowHtml || !rowHtml.length) return `<p class="muted">None</p>`;
+      return `<div class="wrap"><table>
+        <thead><tr>${headers.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead>
+        <tbody>${rowHtml.join("")}</tbody>
+      </table></div>`;
+    }
+
+    function weightedTable(items) {
+      if (!items || !items.length) return `<p class="muted">None</p>`;
+      return miniTable(
+        ["Claim", "Metric", "Impact", "On", "Qty", "Weight"],
+        items.map((e) => `<tr>
+          <td class="wrap-cell">${esc(e.claim || "")}</td>
+          <td>${esc(e.metric || "")}</td>
+          <td class="${clsSigned(e.impact_pct)}">${e.impact_pct != null ? signed(e.impact_pct) + "%" : "—"}</td>
+          <td>${esc(dash(e.impact_on))}</td>
+          <td>${e.quantified ? "yes" : "no"}</td>
+          <td>${num(e.weight, 2)}</td>
+        </tr>`)
+      );
+    }
+
+    function showDetail(idea) {
+      const c = idea.candidate || {};
+      const q = idea.qual || {};
+      const cat = idea.catalysts || {};
+      const earn = idea.earnings || {};
+      const prm = idea.prm || {};
+      const extra = idea.extra || {};
+      const mom = extra.revision_momentum || {};
+      const conv = extra.conviction_detail || {};
+      const exp = extra.expectations || {};
+      const rev = exp.revisions || {};
+      const sur = exp.surprise || {};
+      const react = exp.reactions || {};
+      const imp = exp.implied || {};
+      const drift = extra.drift || {};
+      const theme = extra.theme_corroboration || {};
+      const ismSup = extra.ism_support || {};
+      const ev = c.evidence || {};
+      const themes = q.themes || mom.themes || [];
+
+      const surpriseRows = (sur.prints || []).map((p) => `<tr>
+        <td>${esc(p.quarter || "")}</td>
+        <td>${num(p.actual, 2)}</td>
+        <td>${num(p.estimate, 2)}</td>
+        <td class="${clsSigned(p.surprise_pct)}">${pctPts(p.surprise_pct)}</td>
+      </tr>`);
+      const reactionRows = (react.prints || []).map((p) => `<tr>
+        <td>${esc(p.report_date || "")}</td>
+        <td class="${clsSigned(p.move_pct)}">${pctPts(p.move_pct)}</td>
+      </tr>`);
+
+      showHtml(`
+        <h2><span class="${sideClass(c.side)}">${esc(c.side)}</span> ${esc(c.ticker)} · ${esc(c.name)}</h2>
+        <p class="muted">${esc(c.sector)} · ${esc(c.industry)} · state ${esc(idea.state)} · ${esc(c.eg_case)}</p>
+        <p>${esc(q.summary || q.why || "")}</p>
+        <div class="kpis">
+          <div class="kpi"><div class="lbl">Price</div><div class="val">${num(c.price, 2)}</div></div>
+          <div class="kpi"><div class="lbl">Mcap</div><div class="val" style="font-size:13px">${mcap(c.market_cap)}</div></div>
+          <div class="kpi"><div class="lbl">EG1 / EG2</div><div class="val" style="font-size:15px"><span class="${clsSigned(c.eg1)}">${pct(c.eg1)}</span> / <span class="${clsSigned(c.eg2)}">${pct(c.eg2)}</span></div></div>
+          <div class="kpi"><div class="lbl">PE1 / PE2</div><div class="val" style="font-size:15px">${num(c.pe1, 1)} / ${num(c.pe2, 1)}</div></div>
+          <div class="kpi"><div class="lbl">PEG / rel</div><div class="val" style="font-size:15px">${num(c.peg1, 2)} / ${num(c.relative_peg, 2)}</div></div>
+          <div class="kpi"><div class="lbl">Beta</div><div class="val">${signed(prm.beta, 2)}</div></div>
+          <div class="kpi"><div class="lbl">Conviction</div><div class="val">${num(conv.score ?? extra.conviction, 2)}</div></div>
+        </div>
+        ${c.warnings && c.warnings.length ? `<p class="neg">${c.warnings.map(esc).join("; ")}</p>` : ""}
+        ${c.mcap_ok === false && c.mcap_warning ? `<p class="neg">${esc(c.mcap_warning)}</p>` : ""}
+
+        <h3>Candidate quant</h3>
+        <div class="grid-2">
+          ${kvTable([
+            ["EPS0 / 1 / 2", `${num(c.eps0, 2)} / ${num(c.eps1, 2)} / ${num(c.eps2, 2)}`],
+            ["EG1 / EG2", `<span class="${clsSigned(c.eg1)}">${pct(c.eg1)}</span> / <span class="${clsSigned(c.eg2)}">${pct(c.eg2)}</span>`],
+            ["PE1 / PE2", `${num(c.pe1, 1)} / ${num(c.pe2, 1)}`],
+            ["PEG1 / PEG2", `${num(c.peg1, 2)} / ${num(c.peg2, 2)}`],
+            ["Sector PE1 / EG1", `${num(c.sector_pe1, 1)} / ${pct(c.sector_eg1)}`],
+            ["Industry PE1 / EG1", `${num(c.industry_pe1, 1)} / ${pct(c.industry_eg1)}`],
+            ["Relative PEG", num(c.relative_peg, 2)],
+            ["Mcap ok", yn(c.mcap_ok)],
+            ["ISM", `${esc(c.ism_tilt)} (${signed(c.ism_score, 2)})`],
+          ])}
+          ${kvTable([
+            ["Revenue", moneyField("revenue", ev.revenue)],
+            ["Net income", moneyField("net_income", ev.net_income)],
+            ["EBIT", moneyField("ebit", ev.ebit)],
+            ["Cash", moneyField("cash", ev.cash)],
+            ["Debt", moneyField("debt", ev.debt)],
+            ["EV", moneyField("ev", ev.ev)],
+            ["EV/EBIT", num(ev.ev_ebit, 1)],
+            ["Interest", moneyField("interest", ev.interest)],
+          ])}
+        </div>
+        ${c.ism_why ? `<p class="muted">ISM: ${esc(c.ism_why)}</p>` : ""}
+
+        <h3>Qualitative</h3>
+        <p>Supports outlier: <strong>${esc(dash(q.supports_outlier))}</strong> · filing ${esc(q.filing_direction || "—")} · durability ${esc(q.momentum_durability || "—")}</p>
+        ${q.direction_basis ? `<p class="muted">${esc(q.direction_basis)}</p>` : ""}
+        ${q.durability_basis ? `<p class="muted">Durability: ${esc(q.durability_basis)}</p>` : ""}
+        ${q.denial_reason ? `<p class="neg">Denial: ${esc(q.denial_reason)}</p>` : ""}
+        ${q.operating_plan ? `<p>Plan: ${esc(q.operating_plan)}</p>` : ""}
+        ${q.kpis && q.kpis.length ? `<p>KPIs: ${q.kpis.map(esc).join("; ")}</p>` : ""}
+        ${q.red_flags && q.red_flags.length ? `<p class="neg">Red flags: ${q.red_flags.map(esc).join("; ")}</p>` : ""}
+        ${themes.length ? `<div class="chips">${themes.map((t) => `<span class="chip">${esc(t)}</span>`).join("")}</div>` : ""}
+        <div class="grid-2">
+          <div><h3>Evidence for</h3>${evidenceList(q.evidence_for)}</div>
+          <div><h3>Evidence against</h3>${evidenceList(q.evidence_against)}</div>
+        </div>
+        ${q.evidence_quotes && q.evidence_quotes.length ? `<h3>Quotes</h3>${q.evidence_quotes.map((x) => `<div class="quote">${esc(x)}</div>`).join("")}` : ""}
+
+        <h3>Catalyst / earnings / PRM</h3>
+        <div class="grid-2">
+          ${kvTable([
+            ["Print", `${esc(dash(earn.date || cat.earnings_date))} (${dash(earn.days_to_earnings)}d${earn.estimated ? ", projected" : ""})`],
+            ["Last report", esc(dash(earn.last_report))],
+            ["Cadence", earn.cadence_days != null ? `${earn.cadence_days}d` : "—"],
+            ["In window", yn(cat.earnings_in_window)],
+            ["Tradeable", yn(cat.tradeable)],
+            ["Non-earnings", (cat.non_earnings || []).length ? cat.non_earnings.map(esc).join("; ") : "—"],
+            ["Reason", esc(cat.reason || "")],
+            ["Basis", esc(earn.basis || extra.earnings_estimate || "")],
+          ])}
+          ${kvTable([
+            ["Beta", signed(prm.beta, 2)],
+            ["Size fraction", num(prm.size_fraction, 2)],
+            ["Blocked", yn(prm.blocked)],
+            ["Block reason", esc(prm.block_reason || "")],
+            ["Timing", esc((idea.timing && idea.timing.comment) || "")],
+          ])}
+        </div>
+
+        <h3>What the market already expects</h3>
+        ${(exp.summary || extra.expectations_summary || []).length ? `<ul>${(exp.summary || extra.expectations_summary).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+        ${rev.available ? `<p>Revisions: EPS ${num(rev.eps_current, 2)} · d30 ${num(rev.eps_d30, 2)} (${pctPts(rev.change_30d_pct)}) · d90 ${num(rev.eps_d90, 2)} (${pctPts(rev.change_90d_pct)}) · ${dash(rev.analysts_up_30d)} up / ${dash(rev.analysts_down_30d)} down</p>` : ""}
+        ${imp.available ? `<p>Implied move ${pctPts(imp.implied_move_pct)} by ${esc(imp.expiry || "—")}${imp.expiry_covers_earnings === false ? " — expiry does not cover the print" : ""} · OI ${dash(imp.open_interest)} · spread ${imp.spread_pct != null ? num(imp.spread_pct, 0) + "%" : "—"} ${imp.thin ? "· thin" : ""}${imp.open_interest_missing ? " · OI missing from feed" : ""}</p>` : (imp.reason ? `<p class="muted">No implied move (${esc(imp.reason)})</p>` : "")}
+        ${surpriseRows.length ? `<p>Surprise: beat ${dash(sur.beats)} of ${dash(sur.of)}, avg ${pctPts(sur.avg_surprise_pct)}</p>${miniTable(["Quarter", "Actual", "Estimate", "Surprise"], surpriseRows)}` : ""}
+        ${reactionRows.length ? `<p>Reactions: avg abs ${pctPts(react.avg_abs_move_pct)}, ${dash(react.down_prints)} of ${dash(react.of)} down</p>${miniTable(["Report date", "Move"], reactionRows)}` : ""}
+
+        <h3>Conviction ${num(conv.score ?? extra.conviction, 2)}</h3>
+        <p class="muted">for ${num(conv.for_total, 2)} / against ${num(conv.against_total, 2)} · ${dash(conv.quantified_items)} quantified${conv.scale ? " · " + esc(conv.scale) : ""}</p>
+        <div class="grid-2">
+          <div><h3>Weighted for</h3>${weightedTable(conv.for)}</div>
+          <div><h3>Weighted against</h3>${weightedTable(conv.against)}</div>
+        </div>
+        ${conv.penalties && conv.penalties.length ? `<p class="neg">Penalties: ${conv.penalties.map((p) => esc(typeof p === "string" ? p : JSON.stringify(p))).join("; ")}</p>` : ""}
+
+        <h3>Revision momentum / drift</h3>
+        <p>Raw ${pctPts(mom.raw_edge_pct)} · edge ${pctPts(mom.edge_pct)} · score ${signed(mom.edge_score ?? mom.score)} · ${esc(mom.durability || "—")}</p>
+        <p>Filing ${esc(mom.filing_direction || "—")} · consensus ${esc(mom.consensus_direction || "—")} · multipliers durability ${num(mom.durability_weight, 2)} · theme ${num(mom.theme_multiplier, 2)} · ISM ${num(mom.ism_multiplier, 2)} · combined ${num(mom.combined_multiplier, 2)}</p>
+        ${mom.veto ? `<p class="neg">Veto: ${esc(mom.veto)}</p>` : ""}
+        ${mom.support ? `<p>${esc(mom.support)}</p>` : ""}
+        ${mom.why ? `<p class="muted">${esc(mom.why)}</p>` : ""}
+        ${mom.pace || mom.acceleration != null ? `<p>Pace ${esc(mom.pace || "—")} · acceleration ${signed(mom.acceleration, 2)}</p>` : ""}
+        ${(mom.ism_notes || []).length ? `<ul>${mom.ism_notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
+        ${drift.available ? `<p>Drift: ${pctPts(drift.magnitude_pct)} mag · 90d ${pctPts(drift.change_90d_pct)} · 30d ${pctPts(drift.change_30d_pct)} · breadth ${dash(drift.breadth)} · ${esc(drift.pace || "")}. ${esc(drift.why || "")}</p>` : ""}
+        ${theme.why ? `<p>Theme corroboration ×${num(theme.multiplier, 2)}: ${esc(theme.why)}</p>` : ""}
+        ${ismSup.why ? `<p>ISM support ×${num(ismSup.multiplier, 2)}: ${esc(ismSup.why)}</p>` : ""}
+        ${extra.gates && extra.gates.length ? `<div class="breaches"><strong>Gates</strong><ul>${extra.gates.map((g) => `<li>${esc(g)}</li>`).join("")}</ul></div>` : ""}
+
+        ${idea.template_markdown ? `<h3>Template</h3><pre>${esc(idea.template_markdown)}</pre>` : ""}
+      `);
+    }
+
+    function bookHeader(book) {
+      const longs = (book.ideas || []).filter((i) => i.candidate && i.candidate.side === "long").length;
+      const shorts = (book.ideas || []).length - longs;
+      const breaches = book.limit_breaches || [];
+      return `
+        <div class="kpis">
+          <div class="kpi"><div class="lbl">As of</div><div class="val" style="font-size:13px">${esc(asOf(book.as_of))}</div></div>
+          <div class="kpi"><div class="lbl">Bias</div><div class="val">${esc(book.bias || "—")}</div></div>
+          <div class="kpi"><div class="lbl">Longs / shorts</div><div class="val"><span class="pos">${longs}</span> / <span class="neg">${shorts}</span></div></div>
+          <div class="kpi"><div class="lbl">Net exposure</div><div class="val">${num(book.net_exposure, 2)}</div></div>
+          <div class="kpi"><div class="lbl">Gross</div><div class="val">${num(book.gross_exposure, 2)}</div></div>
+          <div class="kpi"><div class="lbl">Portfolio beta</div><div class="val">${signed(book.portfolio_beta, 2)}</div></div>
+        </div>
+        ${book.narrative ? `<p class="hint">${esc(book.narrative)}</p>` : ""}
+        ${breaches.length ? `<div class="breaches"><strong>Constraints hit</strong><ul>${breaches.map((b) => `<li>${esc(b)}</li>`).join("")}</ul></div>` : ""}
+      `;
+    }
+
+    function renderBook() {
+      const el = document.getElementById("tab-book");
+      const err = fileErr(state.book, "book.json");
+      if (err) { el.innerHTML = `<p class="err">${esc(err)}</p>`; return; }
+      const rows = (state.book.ideas || []).map(rowFields);
+      el.innerHTML = bookHeader(state.book) + `<div id="book-table"></div>`;
+      attachIdeaTable(el.querySelector("#book-table"), rows, "tbl-book");
+    }
+
+    function renderWindows() {
+      const el = document.getElementById("tab-windows");
+      const summary = (state.windows && !state.windows.__error && state.windows.windows) || [];
+      const labels = ["00-30d", "31-60d", "61-90d"];
+      const sumRows = summary.map((w) => `
+        <tr>
+          <td>${esc(w.window)}</td>
+          <td>${dash(w.candidates)}</td>
+          <td>${dash(w.selected)}</td>
+          <td class="pos">${dash(w.longs)}</td>
+          <td class="neg">${dash(w.shorts)}</td>
+          <td>${signed(w.portfolio_beta, 2)}</td>
+          <td>${num(w.net_exposure, 2)}</td>
+        </tr>`).join("");
+      const book = state.windowBooks[state.window];
+      el.innerHTML = `
+        <p class="hint">One book per earnings window. Horizon is calendar days to the projected print, not a calendar snapshot.</p>
+        <div class="wrap" style="max-height:none;margin-bottom:14px">
+          <table>
+            <thead><tr><th>Window</th><th>Candidates</th><th>Selected</th><th>Longs</th><th>Shorts</th><th>Beta</th><th>Net</th></tr></thead>
+            <tbody>${sumRows || `<tr><td colspan="7" class="muted">books_by_window.json empty</td></tr>`}</tbody>
+          </table>
+        </div>
+        <div class="subnav" id="window-tabs">
+          ${labels.map((w) => `<button data-window="${w}" class="${w === state.window ? "active" : ""}">${w}</button>`).join("")}
+        </div>
+        <div id="window-book"></div>
+      `;
+      el.querySelectorAll("#window-tabs button").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.window = btn.dataset.window;
+          renderWindows();
+        });
+      });
+      const host = el.querySelector("#window-book");
+      const err = fileErr(book, `book_${state.window}.json`);
+      if (err) { host.innerHTML = `<p class="err">${esc(err)}</p>`; return; }
+      host.innerHTML = bookHeader(book) + `<div id="window-table"></div>`;
+      attachIdeaTable(host.querySelector("#window-table"), (book.ideas || []).map(rowFields), "tbl-window");
+    }
+
+    function bindFilters(el, ids, draw) {
+      ids.forEach((id) => {
+        const node = el.querySelector("#" + id);
+        if (node) node.addEventListener(id === "q" || id.startsWith("q") ? "input" : "change", draw);
+      });
+    }
+
+    function renderIdeas() {
+      const el = document.getElementById("tab-ideas");
+      const err = fileErr(state.ideas, "ideas.json");
+      if (err && (!state.ideas || state.ideas.__error)) {
+        el.innerHTML = `<p class="err">${esc(err)}</p>`;
+        return;
+      }
+      if (!state.ideas) {
+        el.innerHTML = `<p class="muted">Loading ideas.json…</p>`;
+        return;
+      }
+      const all = state.ideas.map(rowFields);
+      const sides = unique(all.map((r) => r.side));
+      const sectors = unique(all.map((r) => r.sector));
+      const states = unique(all.map((r) => r.state));
+      el.innerHTML = `
+        <p class="hint">${all.length} researched names. Filter, then click a row for the qualitative pack.</p>
+        <div class="filters">
+          <input id="q" placeholder="Ticker, name, sector, EG case…">
+          <select id="f-side"><option value="">All sides</option>${sides.map((s) => `<option>${esc(s)}</option>`).join("")}</select>
+          <select id="f-sector"><option value="">All sectors</option>${sectors.map((s) => `<option>${esc(s)}</option>`).join("")}</select>
+          <select id="f-state"><option value="">All states</option>${states.map((s) => `<option>${esc(s)}</option>`).join("")}</select>
+          <span class="muted" id="idea-count"></span>
+        </div>
+        <div id="ideas-table"></div>
+      `;
+      const draw = () => {
+        const q = (el.querySelector("#q").value || "").toLowerCase();
+        const side = el.querySelector("#f-side").value;
+        const sector = el.querySelector("#f-sector").value;
+        const st = el.querySelector("#f-state").value;
+        const rows = all.filter((r) => {
+          if (side && r.side !== side) return false;
+          if (sector && r.sector !== sector) return false;
+          if (st && r.state !== st) return false;
+          if (!q) return true;
+          return `${r.ticker} ${r.name} ${r.sector} ${r.industry} ${r.eg_case}`.toLowerCase().includes(q);
+        });
+        el.querySelector("#idea-count").textContent = `${rows.length} shown`;
+        attachIdeaTable(el.querySelector("#ideas-table"), rows, "tbl-ideas");
+      };
+      bindFilters(el, ["q", "f-side", "f-sector", "f-state"], draw);
+      draw();
+    }
+
+    function renderScreen() {
+      const el = document.getElementById("tab-screen");
+      el.innerHTML = `
+        <div class="subnav" id="screen-tabs">
+          <button data-sub="ranking" class="${state.screenSub === "ranking" ? "active" : ""}">Ranking</button>
+          <button data-sub="candidates" class="${state.screenSub === "candidates" ? "active" : ""}">Candidates</button>
+        </div>
+        <div id="screen-body"></div>
+      `;
+      el.querySelectorAll("#screen-tabs button").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.screenSub = btn.dataset.sub;
+          renderScreen();
+        });
+      });
+      const host = el.querySelector("#screen-body");
+      if (state.screenSub === "ranking") renderRanking(host);
+      else renderCandidates(host);
+    }
+
+    function renderRanking(host) {
+      const err = fileErr(state.ranking, "ranking.json");
+      if (err) { host.innerHTML = `<p class="err">${esc(err)}</p>`; return; }
+      const all = state.ranking.rows || [];
+      host.innerHTML = `
+        <p class="hint">${all.length} PE-screen ranks as of ${esc(asOf(state.ranking.as_of))}.</p>
+        <div class="filters">
+          <input id="q" placeholder="Ticker, name, why…">
+          <select id="f-side"><option value="">All sides</option><option>long</option><option>short</option></select>
+          <span class="muted" id="row-count"></span>
+        </div>
+        <div id="rank-table"></div>
+      `;
+      const cols = [
+        { key: "rank", label: "Rank", fmt: (v, r) => `${esc(v)}/${esc(r.of)}` },
+        { key: "side", label: "Side", fmt: (v) => esc(v), tdClass: (r) => sideClass(r.side) },
+        { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
+        { key: "name", label: "Name" },
+        { key: "eg_case", label: "EG case", fmt: (v) => `<span class="badge">${esc(v)}</span>` },
+        { key: "ism_score", label: "ISM", fmt: (v) => signed(v, 2), tdClass: (r) => clsSigned(r.ism_score) },
+        { key: "mcap_ok", label: "Mcap ok", fmt: (v) => yn(v) },
+        { key: "why", label: "Why", wrap: true },
+      ];
+      const draw = () => {
+        const q = (host.querySelector("#q").value || "").toLowerCase();
+        const side = host.querySelector("#f-side").value;
+        const rows = all.filter((r) => {
+          if (side && r.side !== side) return false;
+          if (!q) return true;
+          return `${r.ticker} ${r.name} ${r.why} ${r.eg_case}`.toLowerCase().includes(q);
+        });
+        host.querySelector("#row-count").textContent = `${rows.length} shown`;
+        attachTable(host.querySelector("#rank-table"), rows, cols, {
+          tableId: "tbl-rank",
+          rowId: (r) => `${r.ticker}|${r.side}`,
+          onSelect: (r) => showHtml(`<h2><span class="${sideClass(r.side)}">${esc(r.side)}</span> ${esc(r.ticker)} · ${esc(r.name)}</h2><p>${esc(r.why)}</p>`),
+        });
+      };
+      bindFilters(host, ["q", "f-side"], draw);
+      draw();
+    }
+
+    function renderCandidates(host) {
+      const err = fileErr(state.candidates, "candidates.json");
+      if (err) { host.innerHTML = `<p class="err">${esc(err)}</p>`; return; }
+      const all = Array.isArray(state.candidates) ? state.candidates : [];
+      const sectors = unique(all.map((r) => r.sector));
+      host.innerHTML = `
+        <p class="hint">${all.length} PE outliers before qualitative gates.</p>
+        <div class="filters">
+          <input id="q" placeholder="Ticker, name, sector, EG case…">
+          <select id="f-side"><option value="">All sides</option><option>long</option><option>short</option></select>
+          <select id="f-sector"><option value="">All sectors</option>${sectors.map((s) => `<option>${esc(s)}</option>`).join("")}</select>
+          <span class="muted" id="row-count"></span>
+        </div>
+        <div id="cand-table"></div>
+      `;
+      const cols = [
+        { key: "side", label: "Side", fmt: (v) => esc(v), tdClass: (r) => sideClass(r.side) },
+        { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
+        { key: "name", label: "Name" },
+        { key: "sector", label: "Sector" },
+        { key: "price", label: "Price", fmt: (v) => num(v, 2) },
+        { key: "market_cap", label: "Mcap", fmt: (v) => mcap(v) },
+        { key: "eg1", label: "EG1", fmt: (v) => pct(v), tdClass: (r) => clsSigned(r.eg1) },
+        { key: "pe1", label: "PE1", fmt: (v) => num(v, 1) },
+        { key: "peg1", label: "PEG", fmt: (v) => num(v, 2) },
+        { key: "relative_peg", label: "Rel PEG", fmt: (v) => num(v, 2) },
+        { key: "eg_case", label: "EG case", fmt: (v) => `<span class="badge">${esc(v)}</span>` },
+        { key: "ism_tilt", label: "ISM tilt" },
+        { key: "ism_score", label: "ISM", fmt: (v) => signed(v, 2), tdClass: (r) => clsSigned(r.ism_score) },
+      ];
+      const draw = () => {
+        const q = (host.querySelector("#q").value || "").toLowerCase();
+        const side = host.querySelector("#f-side").value;
+        const sector = host.querySelector("#f-sector").value;
+        const rows = all.filter((r) => {
+          if (side && r.side !== side) return false;
+          if (sector && r.sector !== sector) return false;
+          if (!q) return true;
+          return `${r.ticker} ${r.name} ${r.sector} ${r.eg_case}`.toLowerCase().includes(q);
+        });
+        host.querySelector("#row-count").textContent = `${rows.length} shown`;
+        attachTable(host.querySelector("#cand-table"), rows, cols, {
+          tableId: "tbl-cand",
+          rowId: (r) => `${r.ticker}|${r.side}`,
+          onSelect: showCandidate,
+        });
+      };
+      bindFilters(host, ["q", "f-side", "f-sector"], draw);
+      draw();
+    }
+
+    function showCandidate(c) {
+      const ev = c.evidence || {};
+      const evRows = Object.entries(ev).map(([k, v]) => `<li>${esc(k)}: ${moneyField(k, v)}</li>`).join("");
+      showHtml(`
+        <h2><span class="${sideClass(c.side)}">${esc(c.side)}</span> ${esc(c.ticker)} · ${esc(c.name)}</h2>
+        <p class="muted">${esc(c.sector)} · ${esc(c.industry)} · EG ${esc(c.eg_case)} · mcap ${mcap(c.market_cap)} ${c.mcap_ok ? "" : "· outside band"}</p>
+        <p>ISM ${esc(c.ism_tilt)} (${signed(c.ism_score, 2)}) — ${esc(c.ism_why || "")}</p>
+        ${c.warnings && c.warnings.length ? `<p class="neg">${c.warnings.map(esc).join("; ")}</p>` : ""}
+        <h3>Evidence</h3>
+        ${evRows ? `<ul>${evRows}</ul>` : `<p class="muted">None</p>`}
+      `);
+    }
+
+    function renderMomentum() {
+      const el = document.getElementById("tab-momentum");
+      const err = fileErr(state.momentum, "momentum.json");
+      if (err) { el.innerHTML = `<p class="err">${esc(err)}</p>`; return; }
+      const all = state.momentum.rows || [];
+      const sectors = unique(all.map((r) => r.sector));
+      el.innerHTML = `
+        <p class="hint">${all.length} revision-momentum rows as of ${esc(asOf(state.momentum.as_of))}. Click a row for the full why.</p>
+        <div class="filters">
+          <input id="q" placeholder="Ticker, name, why…">
+          <select id="f-side"><option value="">All sides</option><option>long</option><option>short</option></select>
+          <select id="f-sector"><option value="">All sectors</option>${sectors.map((s) => `<option>${esc(s)}</option>`).join("")}</select>
+          <select id="f-gated"><option value="">Gated?</option><option value="yes">gated</option><option value="no">not gated</option></select>
+          <span class="muted" id="row-count"></span>
+        </div>
+        <div id="mom-table"></div>
+      `;
+      const cols = [
+        { key: "side", label: "Side", fmt: (v) => esc(v), tdClass: (r) => sideClass(r.side) },
+        { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
+        { key: "name", label: "Name" },
+        { key: "sector", label: "Sector" },
+        { key: "gated", label: "Gated", fmt: (v) => yn(v) },
+        { key: "edge_pct", label: "Edge", fmt: (v) => pctPts(v), tdClass: (r) => clsSigned(r.edge_pct) },
+        { key: "edge_score", label: "Score", fmt: (v) => signed(v), tdClass: (r) => clsSigned(r.edge_score) },
+        { key: "filing_direction", label: "Filing" },
+        { key: "consensus_direction", label: "Consensus" },
+        { key: "conviction", label: "Conviction", fmt: (v) => num(v, 2) },
+        { key: "earnings_date", label: "Print" },
+      ];
+      const draw = () => {
+        const q = (el.querySelector("#q").value || "").toLowerCase();
+        const side = el.querySelector("#f-side").value;
+        const sector = el.querySelector("#f-sector").value;
+        const gated = el.querySelector("#f-gated").value;
+        const rows = all.filter((r) => {
+          if (side && r.side !== side) return false;
+          if (sector && r.sector !== sector) return false;
+          if (gated === "yes" && !r.gated) return false;
+          if (gated === "no" && r.gated) return false;
+          if (!q) return true;
+          return `${r.ticker} ${r.name} ${r.why || ""} ${r.sector}`.toLowerCase().includes(q);
+        });
+        el.querySelector("#row-count").textContent = `${rows.length} shown`;
+        attachTable(el.querySelector("#mom-table"), rows, cols, {
+          tableId: "tbl-mom",
+          rowId: (r) => `${r.ticker}|${r.side}`,
+          onSelect: (r) => showHtml(`
+            <h2><span class="${sideClass(r.side)}">${esc(r.side)}</span> ${esc(r.ticker)} · ${esc(r.name)}</h2>
+            <p>Edge ${pctPts(r.edge_pct)} · score ${signed(r.edge_score)} · filing ${esc(r.filing_direction)} · consensus ${esc(r.consensus_direction)}${r.gated ? " · gated" : ""}</p>
+            <p>${esc(r.why || "")}</p>
+            ${r.gates && r.gates.length ? `<p class="neg">${r.gates.map(esc).join("; ")}</p>` : ""}
+            <p class="muted">${esc(r.direction_basis || "")}</p>
+          `),
+        });
+      };
+      bindFilters(el, ["q", "f-side", "f-sector", "f-gated"], draw);
+      draw();
+    }
+
+    function renderGroups() {
+      const el = document.getElementById("tab-groups");
+      const err = fileErr(state.groups, "group_reviews.json");
+      if (err) { el.innerHTML = `<p class="err">${esc(err)}</p>`; return; }
+      const all = Array.isArray(state.groups) ? state.groups : [];
+      const kinds = unique(all.map((g) => g.group_kind));
+      el.innerHTML = `
+        <p class="hint">${all.length} sector and window cross-reads. Click a card for the narrative and per-name views.</p>
+        <div class="filters">
+          <input id="q" placeholder="Group, ticker, summary…">
+          <select id="f-kind"><option value="">All kinds</option>${kinds.map((k) => `<option>${esc(k)}</option>`).join("")}</select>
+          <span class="muted" id="row-count"></span>
+        </div>
+        <div class="cards" id="group-cards"></div>
+      `;
+      const draw = () => {
+        const q = (el.querySelector("#q").value || "").toLowerCase();
+        const kind = el.querySelector("#f-kind").value;
+        const rows = all.filter((g) => {
+          if (kind && g.group_kind !== kind) return false;
+          if (!q) return true;
+          const blob = `${g.group_kind} ${g.group_label} ${g.summary || ""} ${(g.tickers || []).join(" ")}`.toLowerCase();
+          return blob.includes(q);
+        });
+        el.querySelector("#row-count").textContent = `${rows.length} shown`;
+        el.querySelector("#group-cards").innerHTML = rows.map((g, i) => `
+          <div class="card" data-idx="${i}">
+            <h3>${esc(g.group_label)} <span class="badge">${esc(g.group_kind)}</span></h3>
+            <p class="muted">${dash(g.covered)}/${(g.tickers || []).length} covered · ${(g.contradictions || []).length} contradictions</p>
+            <p>${esc(g.summary || "No summary")}</p>
+          </div>
+        `).join("") || `<p class="muted">No groups</p>`;
+        el.querySelectorAll(".card").forEach((card) => {
+          card.addEventListener("click", () => {
+            el.querySelectorAll(".card.selected").forEach((x) => x.classList.remove("selected"));
+            card.classList.add("selected");
+            showGroup(rows[Number(card.dataset.idx)]);
+          });
+        });
+      };
+      bindFilters(el, ["q", "f-kind"], draw);
+      draw();
+    }
+
+    function showGroup(g) {
+      const views = (g.views || []).map((v) =>
+        `<tr><td class="${sideClass(v.side)}">${esc(v.side)}</td><td><strong>${esc(v.ticker)}</strong></td><td>${esc(v.qual_verdict)}</td><td>${esc(v.eg_case)}</td><td class="wrap-cell">${esc(v.comment)}</td></tr>`
+      ).join("");
+      showHtml(`
+        <h2>${esc(g.group_label)} · ${esc(g.group_kind)}</h2>
+        <p class="muted">${esc(g.summary || "")} · covered ${dash(g.covered)} · ranked ${dash(g.ranked_by_model)}</p>
+        ${g.narrative ? `<p>${esc(g.narrative)}</p>` : ""}
+        ${g.error ? `<p class="neg">${esc(g.error)}</p>` : ""}
+        ${(g.contradictions || []).length ? `<h3>Contradictions</h3><ul>${g.contradictions.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}
+        <h3>Views</h3>
+        <div class="wrap" style="max-height:360px">
+          <table>
+            <thead><tr><th>Side</th><th>Ticker</th><th>Verdict</th><th>EG case</th><th>Comment</th></tr></thead>
+            <tbody>${views || `<tr><td colspan="5" class="muted">No views</td></tr>`}</tbody>
+          </table>
+        </div>
+      `);
+    }
+
+    function renderMacro() {
+      const el = document.getElementById("tab-macro");
+      const snapErr = fileErr(state.macro, "macro_snapshot.json");
+      const snap = snapErr ? null : state.macro;
+      const fredErr = fileErr(state.fred, "macro_fred.json");
+      const fred = fredErr ? null : state.fred;
+      const tilts = (snap && snap.sector_tilts) || [];
+      const notes = (snap && snap.notes) || [];
+      const signals = (snap && snap.signals) || {};
+      const fredRows = fred && fred.series
+        ? Object.entries(fred.series).map(([name, s]) => `
+            <tr>
+              <td>${esc(name)}</td>
+              <td>${esc(s.id || "")}</td>
+              <td>${num(s.last, 2)}</td>
+              <td class="${clsSigned(s.yoy)}">${pct(s.yoy)}</td>
+            </tr>`).join("")
+        : "";
+      el.innerHTML = `
+        ${snapErr ? `<p class="err">${esc(snapErr)}</p>` : `
+        <div class="kpis">
+          <div class="kpi"><div class="lbl">As of</div><div class="val" style="font-size:13px">${esc(asOf(snap.as_of))}</div></div>
+          <div class="kpi"><div class="lbl">Bias</div><div class="val">${esc(snap.bias || "—")}</div></div>
+          <div class="kpi"><div class="lbl">Score</div><div class="val">${num(snap.score, 3)}</div></div>
+          <div class="kpi"><div class="lbl">SPX</div><div class="val">${num(snap.spx_last, 0)}</div></div>
+          <div class="kpi"><div class="lbl">VIX</div><div class="val">${num(snap.vix, 1)}</div></div>
+          <div class="kpi"><div class="lbl">10y</div><div class="val">${num(snap.ust_10y, 2)}</div></div>
+          <div class="kpi"><div class="lbl">2y</div><div class="val">${num(snap.ust_2y, 2)}</div></div>
+          <div class="kpi"><div class="lbl">10s-2s</div><div class="val">${num(snap.tens_minus_twos, 2)}</div></div>
+          <div class="kpi"><div class="lbl">Real 10y</div><div class="val">${num(snap.real_10y, 2)}</div></div>
+          <div class="kpi"><div class="lbl">PMI / NMI</div><div class="val">${num(snap.ism_pmi, 1)} / ${num(snap.ism_nmi, 1)}</div></div>
+        </div>
+        ${snap.llm_narrative ? `<p>${esc(snap.llm_narrative)}</p>` : ""}
+        ${notes.length ? `<h2 class="sec">Notes</h2><ul>${notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
+        <h2 class="sec">Signals</h2>
+        <div class="chips">${Object.entries(signals).map(([k, v]) => `<span class="chip ${v < 0 ? "down" : v > 0 ? "up" : ""}">${esc(k)} ${signed(v, 1)}</span>`).join("")}</div>
+        <h2 class="sec">Sector tilts</h2>
+        <div class="wrap" style="max-height:360px">
+          <table>
+            <thead><tr><th>Name</th><th>Tilt</th><th>Score</th><th>Why</th></tr></thead>
+            <tbody>${tilts.map((t) => `<tr>
+              <td>${esc(t.sector || t.industry || "")}</td>
+              <td class="${sideClass(t.tilt)}">${esc(t.tilt)}</td>
+              <td class="${clsSigned(t.score)}">${signed(t.score, 2)}</td>
+              <td class="wrap-cell">${esc(t.why || "")}</td>
+            </tr>`).join("")}</tbody>
+          </table>
+        </div>
+        `}
+        <h2 class="sec">FRED last / YoY</h2>
+        ${fredErr ? `<p class="err">${esc(fredErr)}</p>` : `
+        <p class="hint">Latest print only — history arrays are not shown. As of ${esc(asOf(fred && fred.as_of))}.</p>
+        <div class="wrap" style="max-height:none">
+          <table>
+            <thead><tr><th>Series</th><th>ID</th><th>Last</th><th>YoY</th></tr></thead>
+            <tbody>${fredRows || `<tr><td colspan="4" class="muted">No series</td></tr>`}</tbody>
+          </table>
+        </div>`}
+      `;
+    }
+
+    function renderThemes() {
+      const el = document.getElementById("tab-themes");
+      const cErr = fileErr(state.themeCohorts, "theme_cohorts.json");
+      const iErr = fileErr(state.themeIsm, "theme_ism_alignment.json");
+      const hErr = fileErr(state.themeHistory, "theme_history.json");
+      const cohorts = cErr ? [] : Object.entries(state.themeCohorts).map(([theme, v]) => ({ theme, ...v }));
+      const ism = iErr ? [] : Object.entries(state.themeIsm).map(([theme, v]) => ({ theme, ...v }));
+      const dates = hErr ? [] : Object.keys(state.themeHistory || {}).sort().reverse();
+      el.innerHTML = `
+        <h2 class="sec">Cohorts</h2>
+        ${cErr ? `<p class="err">${esc(cErr)}</p>` : `<div id="cohort-table"></div>`}
+        <h2 class="sec">ISM alignment</h2>
+        ${iErr ? `<p class="err">${esc(iErr)}</p>` : `<div id="ism-theme-table"></div>`}
+        <h2 class="sec">History</h2>
+        ${hErr ? `<p class="err">${esc(hErr)}</p>` : `
+          <select id="hist-date">${dates.map((d) => `<option>${esc(d)}</option>`).join("")}</select>
+          <div id="hist-body"></div>
+        `}
+      `;
+      if (!cErr) {
+        attachTable(el.querySelector("#cohort-table"), cohorts, [
+          { key: "theme", label: "Theme" },
+          { key: "available", label: "Available", fmt: (v) => yn(v) },
+          { key: "names", label: "Names", fmt: (v) => dash(v) },
+          { key: "up", label: "Up", fmt: (v) => dash(v), tdClass: () => "pos" },
+          { key: "down", label: "Down", fmt: (v) => dash(v), tdClass: () => "neg" },
+          { key: "avg_magnitude_pct", label: "Avg rev", fmt: (v) => pctPts(v), tdClass: (r) => clsSigned(r.avg_magnitude_pct) },
+          { key: "why", label: "Why", wrap: true },
+        ], { tableId: "tbl-cohorts", onSelect: (r) => showHtml(`<h2>${esc(r.theme)}</h2><p>${esc(r.why || "")}</p>`) });
+      }
+      if (!iErr) {
+        attachTable(el.querySelector("#ism-theme-table"), ism, [
+          { key: "theme", label: "Theme" },
+          { key: "available", label: "Available", fmt: (v) => yn(v) },
+          { key: "ism_mentions", label: "Mentions", fmt: (v) => dash(v) },
+          { key: "direction", label: "Dir", fmt: (v) => signed(v, 0) },
+          { key: "why", label: "Why", wrap: true },
+        ], {
+          tableId: "tbl-theme-ism",
+          onSelect: (r) => showHtml(`
+            <h2>${esc(r.theme)}</h2>
+            <p>${esc(r.why || "")}</p>
+            <p>Industries: ${(r.industries || []).map(esc).join(", ") || "—"}</p>
+            <p>Sectors: ${(r.sectors || []).map(esc).join(", ") || "—"}</p>
+            ${(r.quotes || []).map((q) => `<div class="quote">${esc(q)}</div>`).join("")}
+          `),
+        });
+      }
+      const drawHist = () => {
+        const date = el.querySelector("#hist-date")?.value;
+        const host = el.querySelector("#hist-body");
+        if (!host || !date) return;
+        const day = state.themeHistory[date] || {};
+        const themes = Object.entries(day.themes || {}).map(([theme, v]) => ({ theme, ...v }));
+        attachTable(host, themes, [
+          { key: "theme", label: "Theme" },
+          { key: "tickers", label: "Tickers", fmt: (v) => dash(v) },
+          { key: "mentions", label: "Mentions", fmt: (v) => dash(v) },
+          { key: "names", label: "Names", wrap: true, fmt: (v) => esc((v || []).join(", ")) },
+        ], {
+          tableId: "tbl-theme-hist",
+          onSelect: (r) => showHtml(`<h2>${esc(r.theme)} · ${esc(date)}</h2><div class="chips">${(r.names || []).map((n) => `<span class="chip">${esc(n)}</span>`).join("")}</div>`),
+        });
+      };
+      const dateSel = el.querySelector("#hist-date");
+      if (dateSel) {
+        dateSel.addEventListener("change", drawHist);
+        drawHist();
+      }
+    }
+
+    function componentValue(components, name) {
+      const obj = components && components[name];
+      if (obj == null) return null;
+      const v = typeof obj === "object" ? obj.value : obj;
+      return typeof v === "number" ? v : null;
+    }
+
+    function componentRows(components) {
+      if (!components) return "";
+      return Object.entries(components).map(([name, obj]) => {
+        const v = obj && typeof obj === "object" ? obj.value : obj;
+        const n = typeof v === "number" ? v : null;
+        const pct50 = n == null ? 0 : Math.max(0, Math.min(100, n));
+        const below = n != null && n < 50;
+        return `<tr>
+          <td>${esc(name.replaceAll("_", " "))}</td>
+          <td class="${below ? "neg" : "pos"}">${num(n, 1)}</td>
+          <td><div class="bar-wrap"><div class="bar ${below ? "below" : "pmi"}"><span style="width:${pct50}%"></span></div></div></td>
+        </tr>`;
+      }).join("");
+    }
+
+    function industryChips(block) {
+      const growth = (block && block.growth) || [];
+      const contraction = (block && block.contraction) || [];
+      return `<div class="chips">${growth.map((x) => `<span class="chip up">${esc(x)}</span>`).join("")}${contraction.map((x) => `<span class="chip down">${esc(x)}</span>`).join("")}</div>`;
+    }
+
+    function reportBlock(title, report) {
+      if (!report) return "";
+      const comments = report.comments || [];
+      const no = componentValue(report.components, "new_orders");
+      const noBelow = no != null && no < 50;
+      return `
+        <h2 class="sec">${esc(title)} · ${esc(report.report_month || "")} · headline ${num(report.headline, 1)}</h2>
+        <p>New Orders <strong class="${noBelow ? "neg" : "pos"}">${num(no, 1)}</strong></p>
+        <h3>New orders industries</h3>
+        ${industryChips(report.new_orders_industries)}
+        <div class="grid-2">
+          <div>
+            <div class="wrap" style="max-height:none">
+              <table>
+                <thead><tr><th>Component</th><th>Value</th><th>vs 50</th></tr></thead>
+                <tbody>${componentRows(report.components)}</tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <h3>Overall PMI/NMI industries</h3>
+            ${industryChips(report.industries)}
+          </div>
+        </div>
+        ${comments.length ? `<h3>Respondent anecdotes</h3><p class="muted">Purchasing-manager comments, not the new-orders print.</p>${comments.map((c) => `<div class="quote"><strong>${esc(c.industry || "")}</strong> — ${esc(c.quote || "")}</div>`).join("")}` : ""}
+      `;
+    }
+
+    function renderIsm() {
+      const el = document.getElementById("tab-ism");
+      const err = fileErr(state.ism, "ism.json");
+      if (err) { el.innerHTML = `<p class="err">${esc(err)}</p>`; return; }
+      const ism = state.ism;
+      const pmi = ism.pmi, nmi = ism.nmi;
+      const mfgNO = componentValue((ism.manufacturing || {}).components, "new_orders");
+      const svcNO = componentValue((ism.services || {}).components, "new_orders");
+      el.innerHTML = `
+        <div class="kpis">
+          <div class="kpi"><div class="lbl">Run date</div><div class="val" style="font-size:13px">${esc(ism.run_date || asOf(ism.as_of))}</div></div>
+          <div class="kpi"><div class="lbl">Target month</div><div class="val" style="font-size:13px">${esc(ism.target_report_month || "—")}</div></div>
+          <div class="kpi"><div class="lbl">PMI</div><div class="val ${pmi >= 50 ? "pos" : "neg"}">${num(pmi, 1)}</div></div>
+          <div class="kpi"><div class="lbl">NMI</div><div class="val ${nmi >= 50 ? "pos" : "neg"}">${num(nmi, 1)}</div></div>
+          <div class="kpi"><div class="lbl">Mfg New Orders</div><div class="val ${mfgNO != null && mfgNO < 50 ? "neg" : "pos"}">${num(mfgNO, 1)}</div></div>
+          <div class="kpi"><div class="lbl">Svc New Orders</div><div class="val ${svcNO != null && svcNO < 50 ? "neg" : "pos"}">${num(svcNO, 1)}</div></div>
+          <div class="kpi"><div class="lbl">Source</div><div class="val" style="font-size:13px">${esc(ism.source || "—")}</div></div>
+        </div>
+        ${(ism.errors || []).length ? `<div class="breaches">${ism.errors.map(esc).join("<br>")}</div>` : ""}
+        ${reportBlock("Manufacturing (PMI)", ism.manufacturing)}
+        ${reportBlock("Services (NMI)", ism.services)}
+      `;
+    }
+
+    function renderAudit() {
+      const el = document.getElementById("tab-audit");
+      const err = fileErr(state.audit, "audit.json");
+      if (err) { el.innerHTML = `<p class="err">${esc(err)}</p>`; return; }
+      const a = state.audit;
+      const all = a.findings || [];
+      const stages = unique(all.map((f) => f.stage));
+      const sevs = unique(all.map((f) => f.severity));
+      el.innerHTML = `
+        <div class="kpis">
+          <div class="kpi"><div class="lbl">As of</div><div class="val" style="font-size:13px">${esc(asOf(a.as_of))}</div></div>
+          ${Object.entries(a.by_severity || {}).map(([k, v]) => `<div class="kpi"><div class="lbl">${esc(k)}</div><div class="val">${esc(v)}</div></div>`).join("")}
+          ${Object.entries(a.by_stage || {}).map(([k, v]) => `<div class="kpi"><div class="lbl">${esc(k)}</div><div class="val">${esc(v)}</div></div>`).join("")}
+        </div>
+        <p class="hint">${esc(a.summary || "")}</p>
+        <div class="filters">
+          <input id="q" placeholder="Ticker, check, suggestion…">
+          <select id="f-sev"><option value="">All severities</option>${sevs.map((s) => `<option>${esc(s)}</option>`).join("")}</select>
+          <select id="f-stage"><option value="">All stages</option>${stages.map((s) => `<option>${esc(s)}</option>`).join("")}</select>
+          <span class="muted" id="row-count"></span>
+        </div>
+        <div id="audit-table"></div>
+      `;
+      const cols = [
+        { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
+        { key: "stage", label: "Stage" },
+        { key: "severity", label: "Severity", fmt: (v) => `<span class="badge ${sevClass(v)}">${esc(v)}</span>` },
+        { key: "check_id", label: "Check", fmt: (v) => `<span class="badge">${esc(v)}</span>` },
+        { key: "suggestion", label: "Suggestion", wrap: true },
+      ];
+      const draw = () => {
+        const q = (el.querySelector("#q").value || "").toLowerCase();
+        const sev = el.querySelector("#f-sev").value;
+        const stage = el.querySelector("#f-stage").value;
+        const rows = all.filter((r) => {
+          if (sev && r.severity !== sev) return false;
+          if (stage && r.stage !== stage) return false;
+          if (!q) return true;
+          return `${r.ticker} ${r.check_id} ${r.suggestion || ""} ${r.evidence || ""}`.toLowerCase().includes(q);
+        });
+        el.querySelector("#row-count").textContent = `${rows.length} shown`;
+        attachTable(el.querySelector("#audit-table"), rows, cols, {
+          tableId: "tbl-audit",
+          rowId: (r, i) => `${r.ticker}|${r.check_id}|${i}`,
+          onSelect: (r) => showHtml(`
+            <h2>${esc(r.ticker)} · ${esc(r.check_id)}</h2>
+            <p><span class="badge ${sevClass(r.severity)}">${esc(r.severity)}</span> ${esc(r.stage)}</p>
+            ${r.evidence ? `<pre>${esc(r.evidence)}</pre>` : ""}
+            <p>${esc(r.suggestion || "")}</p>
+          `),
+        });
+      };
+      bindFilters(el, ["q", "f-sev", "f-stage"], draw);
+      draw();
+    }
+
+    async function ensure(tab) {
+      const el = document.getElementById("tab-" + tab);
+      if (tab === "ideas" && !state.ideas) {
+        el.innerHTML = `<p class="muted">Loading ideas.json…</p>`;
+        state.ideas = await loadOr("ideas.json");
+        renderIdeas();
+      } else if (tab === "screen" && (state.ranking == null || state.candidates == null)) {
+        el.innerHTML = `<p class="muted">Loading ranking.json and candidates.json…</p>`;
+        const [ranking, candidates] = await Promise.all([loadOr("ranking.json"), loadOr("candidates.json")]);
+        state.ranking = ranking;
+        state.candidates = candidates;
+        renderScreen();
+      } else if (tab === "momentum" && state.momentum == null) {
+        el.innerHTML = `<p class="muted">Loading momentum.json…</p>`;
+        state.momentum = await loadOr("momentum.json");
+        renderMomentum();
+      } else if (tab === "groups" && state.groups == null) {
+        el.innerHTML = `<p class="muted">Loading group_reviews.json…</p>`;
+        state.groups = await loadOr("group_reviews.json");
+        renderGroups();
+      } else if (tab === "macro" && (state.macro == null || state.fred == null)) {
+        el.innerHTML = `<p class="muted">Loading macro snapshot…</p>`;
+        const [macro, fred] = await Promise.all([loadOr("macro_snapshot.json"), loadOr("macro_fred.json")]);
+        state.macro = macro;
+        state.fred = fred;
+        renderMacro();
+      } else if (tab === "themes" && (state.themeCohorts == null || state.themeIsm == null || state.themeHistory == null)) {
+        el.innerHTML = `<p class="muted">Loading theme files…</p>`;
+        const [c, i, h] = await Promise.all([
+          loadOr("theme_cohorts.json"),
+          loadOr("theme_ism_alignment.json"),
+          loadOr("theme_history.json"),
+        ]);
+        state.themeCohorts = c;
+        state.themeIsm = i;
+        state.themeHistory = h;
+        renderThemes();
+      } else if (tab === "audit" && state.audit == null) {
+        el.innerHTML = `<p class="muted">Loading audit.json…</p>`;
+        state.audit = await loadOr("audit.json");
+        renderAudit();
+      }
+    }
+
+    document.querySelectorAll("nav button").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        document.querySelectorAll("nav button").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        const tab = btn.dataset.tab;
+        document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
+        document.getElementById("tab-" + tab).classList.add("active");
+        document.getElementById("detail").hidden = true;
+        await ensure(tab);
+      });
+    });
+
+    (async function init() {
+      const status = document.getElementById("status");
+      const [book, windows, b00, b31, b61, ism] = await Promise.all([
+        loadOr("book.json"),
+        loadOr("books_by_window.json"),
+        loadOr("book_00-30d.json"),
+        loadOr("book_31-60d.json"),
+        loadOr("book_61-90d.json"),
+        loadOr("ism.json"),
+      ]);
+      const failed = [book, windows, b00, b31, b61, ism].filter((x) => x && x.__error);
+      if (book.__error && windows.__error && ism.__error) {
+        status.textContent = "failed";
+        document.getElementById("tab-book").innerHTML = `<p class="err">${esc(book.__error)}<br>From the repo root run <code>.\\.venv\\Scripts\\python.exe -m http.server 8765</code> then open <code>http://localhost:8765/viewer/</code>. Double-clicking this file will not work.</p>`;
+        return;
+      }
+      state.book = book.__error ? null : book;
+      state.windows = windows.__error ? null : windows;
+      state.windowBooks = {
+        "00-30d": b00.__error ? null : b00,
+        "31-60d": b31.__error ? null : b31,
+        "61-90d": b61.__error ? null : b61,
+      };
+      state.ism = ism.__error ? null : ism;
+      status.textContent = state.book ? asOf(state.book.as_of) : (failed[0] ? failed[0].__error : "ready");
+      renderBook();
+      renderWindows();
+      renderIsm();
+      document.getElementById("tab-ideas").innerHTML = `<p class="hint">Open the Ideas tab to load ideas.json (large; fetched on demand).</p>`;
+      ["screen", "momentum", "groups", "macro", "themes", "audit"].forEach((id) => {
+        document.getElementById("tab-" + id).innerHTML = `<p class="hint">Open this tab to load the JSON on demand.</p>`;
+      });
+    })();
+  </script>
+</body>
+</html>

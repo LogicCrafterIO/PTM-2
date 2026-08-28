@@ -128,6 +128,8 @@ permits = "PERMIT"
 ip = "INDPRO"
 ism_pmi = "NAPM"
 ism_nmi = "NMFBAI"
+ust_10y = "DGS10"
+ust_2y = "DGS2"
 
 [llm]
 # How hard the qualitative gate is to pass. "consistent" requires the verdict to

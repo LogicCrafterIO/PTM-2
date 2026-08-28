@@ -152,6 +152,28 @@ def test_qualitative_verdict_json_fail_returns_bool(monkeypatch):
     result = qualitative(Candidate(ticker="PFE", side=Side.SHORT, eg_case="short_non_ideal"), "BUSINESS: insurer")
     assert result.supports_outlier is False
     assert "llm_json_failed_verdict" in result.red_flags
+    assert "unreadable" in result.denial_reason.lower()
+
+
+def test_verdict_timeout_is_not_labelled_unreadable(monkeypatch):
+    monkeypatch.setattr("ptm.llm.llm_available", lambda: True)
+
+    def fake_chat(system: str, user: str, **kwargs):
+        if "Extract operating facts" in system:
+            return {
+                "business_in_one_line": "Pays claims",
+                "operating_plan": "Cut costs",
+                "kpis": ["loss ratio"],
+                "red_flags": [],
+            }
+        raise TimeoutError("Request timed out")
+
+    monkeypatch.setattr("ptm.llm.chat_json", fake_chat)
+    result = qualitative(Candidate(ticker="PFE", side=Side.SHORT, eg_case="short_non_ideal"), "BUSINESS: insurer")
+    assert result.supports_outlier is False
+    assert "llm_json_failed_verdict" in result.red_flags
+    assert "timeout" in result.denial_reason.lower()
+    assert "unreadable" not in result.denial_reason.lower()
 
 
 def test_trailing_commas_are_repaired():
@@ -168,6 +190,48 @@ def test_trailing_commas_are_repaired():
 
     prefixed = 'Here you go: {"x": {"y": [1,],},} trailing text'
     assert _extract_json(prefixed)["x"]["y"] == [1]
+
+
+def test_truncated_verdict_json_is_salvaged():
+    """5 of 15 live verdicts were cut mid-evidence; the boolean must still parse."""
+    blob = (
+        '{"filing_direction": "improving", "direction_basis": "guidance raised", '
+        '"momentum_durability": "building", "durability_basis": "backlog", '
+        '"supports_outlier": true, "why": "GMV and subscribers are compounding.", '
+        '"evidence_for": [{"claim": "GMV grew 38%'
+    )
+    got = _extract_json(blob)
+    assert got["supports_outlier"] is True
+    assert got["filing_direction"] == "improving"
+    assert got["momentum_durability"] == "building"
+
+
+def test_truncated_string_value_is_closed():
+    got = _extract_json('{"why": "Backlog grew 22% and guidance was rai')
+    assert "Backlog grew 22%" in got["why"]
+
+
+def test_loose_markdown_fence_still_parses():
+    blob = 'Sure.\n```json\n{"a": 1, "b": 2}\n```\nHope that helps.'
+    assert _extract_json(blob) == {"a": 1, "b": 2}
+
+
+def test_unclosed_fence_is_still_salvaged():
+    blob = '```json\n{"supports_outlier": true, "why": "plan is real", "evidence_for": [{"claim": "x'
+    got = _extract_json(blob)
+    assert got["supports_outlier"] is True
+    assert got["why"] == "plan is real"
+
+
+def test_dangling_key_is_dropped_when_salvaging():
+    got = _extract_json('{"supports_outlier": false, "why":')
+    assert got["supports_outlier"] is False
+    assert "why" not in got or got["why"] is None
+
+
+def test_garbage_json_still_raises():
+    with pytest.raises(json.JSONDecodeError):
+        _extract_json("definitely not { json")
 
 
 def test_throttled_calls_are_retried_not_dropped(monkeypatch):
@@ -207,6 +271,97 @@ def test_throttle_detection():
     assert _is_throttled(Exception("503 Service Unavailable"))
     assert not _is_throttled(Exception("400 Bad Request: malformed"))
     assert not _is_throttled(Exception("invalid api key"))
+
+
+def test_timeout_detection():
+    from ptm.llm import _is_timeout
+
+    assert _is_timeout(TimeoutError("Request timed out"))
+    assert _is_timeout(Exception("APITimeoutError: timed out"))
+    assert not _is_timeout(Exception("400 Bad Request: malformed"))
+    assert not _is_timeout(Exception("Error code: 429 - Too Many Requests"))
+
+
+def test_timeout_retries_pinned_model_before_fallback(monkeypatch):
+    import ptm.llm as llm
+
+    calls: list[str] = []
+    pin = "nvidia/llama-3.3-nemotron-super-49b-v1"
+
+    def flaky(model=None, **kwargs):
+        calls.append(model)
+        if len([m for m in calls if m == pin]) == 1:
+            raise TimeoutError("timed out")
+
+        class R:
+            choices = [
+                type(
+                    "C",
+                    (),
+                    {
+                        "message": type("M", (), {"content": '{"ok": true}'})(),
+                        "finish_reason": "stop",
+                    },
+                )()
+            ]
+
+        return R()
+
+    monkeypatch.setattr(
+        llm,
+        "client",
+        lambda: type(
+            "C",
+            (),
+            {"chat": type("Ch", (), {"completions": type("Co", (), {"create": staticmethod(flaky)})()})()},
+        )(),
+    )
+    monkeypatch.setattr(llm.time, "sleep", lambda s: None)
+    out = llm.chat_json("sys", "user", model=pin)
+    assert out == {"ok": True}
+    assert calls[0] == pin
+    assert calls[1] == pin
+    assert all("8b" not in (m or "") for m in calls)
+
+
+def test_length_truncated_reply_is_salvaged_without_retry(monkeypatch):
+    import ptm.llm as llm
+
+    calls = {"n": 0}
+    truncated = (
+        '{"supports_outlier": true, "why": "Backlog up 22%", '
+        '"evidence_for": [{"claim": "GMV grew'
+    )
+
+    def once(**kwargs):
+        calls["n"] += 1
+
+        class R:
+            choices = [
+                type(
+                    "C",
+                    (),
+                    {
+                        "message": type("M", (), {"content": truncated})(),
+                        "finish_reason": "length",
+                    },
+                )()
+            ]
+
+        return R()
+
+    monkeypatch.setattr(
+        llm,
+        "client",
+        lambda: type(
+            "C",
+            (),
+            {"chat": type("Ch", (), {"completions": type("Co", (), {"create": staticmethod(once)})()})()},
+        )(),
+    )
+    out = llm.chat_json("sys", "user")
+    assert out["supports_outlier"] is True
+    assert calls["n"] == 1
 
 
 def test_llm_calls_are_paced(monkeypatch):

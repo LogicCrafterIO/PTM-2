@@ -182,6 +182,7 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
     # a shrinking loss reads as +50% "growth" and lifts the sector bar for every
     # real candidate measured against it.
     usable = frame.loc[~frame["pe_implausible"] & ~frame["no_consensus"] & frame["pe1"].notna()]
+    min_names = int(cfg_filters.get("min_sector_names") or 2)
 
     # Median, not mean: the P/E distribution has a long right tail, and a mean
     # sits well above the typical name. Benchmarking against the mean put ~73%
@@ -189,6 +190,19 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
     frame["sector_pe1"] = frame["sector"].map(usable.groupby("sector")["pe1"].median())
     frame["sector_eg1"] = frame["sector"].map(usable.groupby("sector")["eg1"].median())
     frame["sector_pe1_mean"] = frame["sector"].map(usable.groupby("sector")["pe1"].mean())
+
+    # Industry medians use the same screenable set. A 1-name industry would print
+    # pe1 == industry_pe1 and look like "at industry PE", so leave those null.
+    labeled = usable[usable["industry"].fillna("").astype(str).str.strip() != ""]
+    industry_counts = labeled.groupby("industry")["pe1"].size()
+    large_industries = industry_counts[industry_counts >= min_names].index
+    industry_peers = labeled[labeled["industry"].isin(large_industries)]
+    if industry_peers.empty:
+        frame["industry_pe1"] = pd.NA
+        frame["industry_eg1"] = pd.NA
+    else:
+        frame["industry_pe1"] = frame["industry"].map(industry_peers.groupby("industry")["pe1"].median())
+        frame["industry_eg1"] = frame["industry"].map(industry_peers.groupby("industry")["eg1"].median())
     write_df(data_dir("curated", "quant_table.csv"), frame)
 
     dropped = int(frame["pe_implausible"].sum())
@@ -246,7 +260,6 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
             )
 
     candidates: list[Candidate] = []
-    min_names = int(cfg_filters.get("min_sector_names") or 2)
     for sector, group in frame.groupby("sector"):
         if not sector:
             continue
@@ -304,6 +317,8 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
                 peg2=_num(row["peg2"]),
                 sector_pe1=_num(row["sector_pe1"]),
                 sector_eg1=_num(row["sector_eg1"]),
+                industry_pe1=_num(row.get("industry_pe1")),
+                industry_eg1=_num(row.get("industry_eg1")),
                 relative_peg=_num(row["relative_peg"]),
                 eg_case=row["long_case"],
                 mcap_ok=ok,
@@ -334,6 +349,8 @@ def build_candidates(universe: pd.DataFrame, fundamentals: pd.DataFrame) -> list
                 peg2=_num(row["peg2"]),
                 sector_pe1=_num(row["sector_pe1"]),
                 sector_eg1=_num(row["sector_eg1"]),
+                industry_pe1=_num(row.get("industry_pe1")),
+                industry_eg1=_num(row.get("industry_eg1")),
                 relative_peg=_num(row["relative_peg"]),
                 eg_case=row["short_case"],
                 mcap_ok=ok,

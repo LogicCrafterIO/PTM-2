@@ -79,6 +79,11 @@ def _reported_changes(candidate: Candidate) -> list[str]:
             f"Forward P/E {candidate.pe1:.1f} against a sector median of "
             f"{candidate.sector_pe1:.1f} ({candidate.pe1 / candidate.sector_pe1:.1f}x)"
         )
+    if candidate.pe1 is not None and candidate.industry_pe1:
+        lines.append(
+            f"Forward P/E {candidate.pe1:.1f} against an industry median of "
+            f"{candidate.industry_pe1:.1f} ({candidate.pe1 / candidate.industry_pe1:.1f}x)"
+        )
     try:
         from ptm.ingest.edgar import company_fundamentals
 
