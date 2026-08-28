@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import json
 
+from ptm.config import llm_limits
 from ptm.llm import JSON_HINT, _clip, chat_json, llm_available
 from ptm.models import GroupNameView, GroupReview, TradeIdea
 
@@ -187,7 +188,7 @@ def _synthesis_prompt(
         "strongest fundamental case first - rank as many as you can), contradictions (array of "
         "strings naming pairs or clusters whose logic conflicts).\n"
         f"Group: {axis} = {label}\nMacro bias: {macro_bias or 'unknown'}\nAs of: {as_of}\n"
-        f"Ideas:\n{json.dumps(compact, default=str)[:11000]}"
+        f"Ideas:\n{json.dumps(compact, default=str)[:int(llm_limits()['max_filing_chars'])]}"
     )
     return system, user
 

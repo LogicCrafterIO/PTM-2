@@ -79,9 +79,14 @@ def as_of_range(
 @app.command()
 def status() -> None:
     """Show LLM backend and whether a key is loaded."""
+    from ptm.llm import verdict_model, _active_provider, _max_tokens
+
     typer.echo(f"LLM available: {llm_available()}")
     if llm_available():
-        typer.echo(f"Model: {model_name()}")
+        typer.echo(f"Provider: {_active_provider()}")
+        typer.echo(f"Default model: {model_name()}")
+        typer.echo(f"Verdict model: {verdict_model()}")
+        typer.echo(f"Max tokens: {_max_tokens()}")
 
 
 @app.command("ingest")

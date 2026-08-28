@@ -9,7 +9,7 @@ from threading import Lock
 
 from openai import OpenAI
 
-from ptm.config import data_dir, env, toml_settings
+from ptm.config import data_dir, env, llm_limits, toml_settings
 from ptm.io import write_json
 from ptm.log import log
 from ptm.models import Candidate, CatalystResult, EvidenceItem, MacroSnapshot, QualResult, Side
@@ -33,29 +33,56 @@ MISSION_PLAN_RE = re.compile(
 HEADLINE_RE = re.compile(r"\?$|outpaced|do options traders|what to expect", re.I)
 
 
-def llm_available() -> bool:
+def _active_provider() -> str:
     settings = env()
-    return bool(settings.nvidia_api_key or settings.openai_api_key)
+    if settings.ollama_api_key:
+        return "ollama"
+    if settings.nvidia_api_key:
+        return "nvidia"
+    if settings.openai_api_key:
+        return "openai"
+    return "none"
+
+
+def llm_available() -> bool:
+    return _active_provider() in {"ollama", "nvidia", "openai"}
 
 
 def client() -> OpenAI:
     settings = env()
-    if settings.nvidia_api_key:
+    provider = _active_provider()
+    if provider == "ollama":
+        # Ollama Cloud is OpenAI-compatible. Larger output budgets and context
+        # windows than NVIDIA's hosted endpoints, so truncation verdict errors
+        # should drop once the larger model is selected.
+        return OpenAI(
+            base_url=settings.ollama_base_url,
+            api_key=settings.ollama_api_key,
+            timeout=120.0,
+        )
+    if provider == "nvidia":
         # 45s was enough until the verdict prompt grew to carry sized facts and
         # expectations. On the larger prompt the 49B exceeded it often enough
         # that 47 of 195 verdicts (24%) silently fell through to the 8B
         # fallback - a quiet model downgrade is worse than a slow run.
         return OpenAI(base_url=settings.nvidia_base_url, api_key=settings.nvidia_api_key, timeout=120.0)
-    if settings.openai_api_key:
+    if provider == "openai":
         return OpenAI(base_url=settings.openai_base_url, api_key=settings.openai_api_key, timeout=90.0)
     raise RuntimeError("No LLM API key set")
 
 
 def model_name() -> str:
     settings = env()
-    if settings.nvidia_api_key:
+    provider = _active_provider()
+    if provider == "ollama":
+        return settings.ollama_model
+    if provider == "nvidia":
         return settings.nvidia_model
     return settings.openai_model
+
+
+def _max_tokens() -> int:
+    return int(llm_limits()["max_tokens"])
 
 
 TRAILING_COMMA_RE = re.compile(r",(\s*[}\]])")
@@ -229,9 +256,11 @@ def _is_timeout(exc: Exception) -> bool:
     return False
 
 
-FALLBACK_MODELS = [
-    "meta/llama-3.1-8b-instruct",
-]
+def _fallback_models(primary: str) -> list[str]:
+    """Provider-aware fallbacks. Only NVIDIA has a known smaller fallback here."""
+    if _active_provider() == "nvidia":
+        return [m for m in ["meta/llama-3.1-8b-instruct"] if m != primary]
+    return []
 
 
 def _shorten_middle(text: str, limit: int) -> str:
@@ -276,7 +305,7 @@ def chat_json(
     primary = model or model_name()
     models = [primary]
     if allow_fallback:
-        models = [primary] + [m for m in FALLBACK_MODELS if m != primary]
+        models = [primary] + _fallback_models(primary)
     content = "{}"
     used = primary
     finish_reason = ""
@@ -292,7 +321,7 @@ def chat_json(
                         {"role": "user", "content": user},
                     ],
                     temperature=cfg["temperature"],
-                    max_tokens=cfg["max_tokens"],
+                    max_tokens=_max_tokens(),
                 )
                 choice = response.choices[0]
                 content = choice.message.content or "{}"
@@ -422,7 +451,13 @@ def verdict_model() -> str:
     where a small model demonstrably failed - returning a boolean that
     contradicted its own stated evidence. One call per name makes a larger model
     cheap insurance. Extraction and templating stay on the default.
+
+    When Ollama Cloud is configured it takes precedence so the larger verdict
+    model is used; otherwise the legacy TOML setting is honoured.
     """
+    settings = env()
+    if settings.ollama_api_key and settings.ollama_verdict_model:
+        return settings.ollama_verdict_model
     configured = str((toml_settings().get("llm") or {}).get("verdict_model") or "").strip()
     return configured or model_name()
 
@@ -745,7 +780,7 @@ def qualitative(
             kpis=[],
             red_flags=["insufficient_evidence"],
         )
-    pack = filing_excerpt[: toml_settings()["llm"]["max_filing_chars"]]
+    pack = filing_excerpt[: int(llm_limits()["max_filing_chars"])]
     extract_system = (
         "Extract operating facts from the research pack. Do not decide if this is a trade. "
         "A Yahoo summary, headlines, 8-K, MD&A, and ISM comments ARE valid sources. "

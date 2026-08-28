@@ -8,7 +8,10 @@ from dotenv import load_dotenv
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ROOT = Path(__file__).resolve().parent.parent
-load_dotenv(ROOT / ".env")
+# override=True so the checked-in .env wins over any stale placeholder already
+# exported in the shell (e.g. OLLAMA_API_KEY=YOUR_OLLAMA_API_KEY). Without it,
+# load_dotenv leaves pre-existing env vars untouched and the real key is ignored.
+load_dotenv(ROOT / ".env", override=True)
 
 _data_root: Path | None = None
 _ideas_root: Path | None = None
@@ -30,6 +33,12 @@ class Settings(BaseSettings):
     openai_api_key: str = ""
     openai_base_url: str = "https://api.openai.com/v1"
     openai_model: str = "gpt-4.1-mini"
+    ollama_api_key: str = ""
+    ollama_base_url: str = "https://ollama.com/v1"
+    ollama_model: str = "kimi-k2.7-code"
+    ollama_verdict_model: str = "deepseek-v4-pro:0813"
+    ollama_max_tokens: int = 8192
+    ollama_max_filing_chars: int = 24000
     sec_user_agent: str = "PTM-Idea-Engine/0.1 (contact: ptm-research@example.com)"
     fred_api_key: str = ""
 
@@ -44,6 +53,27 @@ def toml_settings() -> dict:
     path = ROOT / "config" / "settings.toml"
     with path.open("rb") as handle:
         return tomllib.load(handle)
+
+
+def llm_limits() -> dict:
+    """Return active-provider token and pack limits.
+
+    Ollama Cloud models have much larger context/output windows than the legacy
+    NVIDIA endpoints, so we widen both the research pack and the generation
+    budget when the Ollama key is present. This is the main knob for reducing
+    qualitative verdict errors caused by truncated JSON output.
+    """
+    settings = env()
+    if settings.ollama_api_key:
+        return {
+            "max_filing_chars": settings.ollama_max_filing_chars,
+            "max_tokens": settings.ollama_max_tokens,
+        }
+    cfg = toml_settings()["llm"]
+    return {
+        "max_filing_chars": int(cfg["max_filing_chars"]),
+        "max_tokens": int(cfg["max_tokens"]),
+    }
 
 
 def data_dir(*parts: str) -> Path:

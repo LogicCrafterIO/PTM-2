@@ -404,10 +404,13 @@ def test_verdict_uses_its_own_model():
     import inspect
 
     from ptm import llm
-    from ptm.config import toml_settings
+    from ptm.config import env, toml_settings
 
     configured = toml_settings()["llm"].get("verdict_model")
-    assert llm.verdict_model() == (configured or llm.model_name())
+    if llm._active_provider() == "ollama":
+        assert llm.verdict_model() == env().ollama_verdict_model
+    else:
+        assert llm.verdict_model() == (configured or llm.model_name())
 
     source = inspect.getsource(llm.qualitative)
     assert "model=wanted_model" in source, "the verdict call must pin the model"

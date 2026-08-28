@@ -14,7 +14,8 @@ Use `requirements-dev.txt` instead to get `pytest` as well. Runtime deps mirror
 `[project].dependencies` in `pyproject.toml`.
 
 Optional `.env` at the repo root enables the LLM qualitative/catalyst passes
-(`NVIDIA_API_KEY` or `OPENAI_API_KEY`); without one, run with `--skip-llm`.
+(`OLLAMA_API_KEY`, `NVIDIA_API_KEY`, or `OPENAI_API_KEY`); Ollama Cloud is used
+first when present. Without an LLM key, run with `--skip-llm`.
 Check with `python -m ptm status`.
 
 ## One command

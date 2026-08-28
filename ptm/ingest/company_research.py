@@ -11,7 +11,7 @@ import json
 from datetime import datetime, timezone
 
 from ptm.asof import as_of_date, is_backdated
-from ptm.config import data_dir, toml_settings
+from ptm.config import data_dir, llm_limits, toml_settings
 from ptm.ingest.edgar import company_facts, filing_sections, latest_earnings_exhibit
 from ptm.ingest.ism_sectors import gics_for_ism
 from ptm.ingest.transcripts import pack_section as transcript_section
@@ -129,16 +129,29 @@ def research_pack(candidate: Candidate, force: bool = False) -> dict:
             log(f"pack {ticker}: cache hit")
             return cached
     cfg = toml_settings()["llm"]
-    limit = int(cfg.get("max_filing_chars") or 12000)
+    limits = llm_limits()
+    limit = int(limits["max_filing_chars"])
     # Budget the pack by where the numbers actually are. Measured across 379
     # cached exhibits and 302 packs: the 8-K earnings release carries a median of
     # 22 quantitative expressions in its first 4k and 10 more in the next 4k,
     # while Item 1 Business has a median of 0 and MD&A 1. An equal three-way
     # split therefore spent a third of the budget on prose with no figures in it
     # and threw away the exhibit's second half.
-    share_business = int(cfg.get("pack_business_chars") or 3000)
-    share_mda = int(cfg.get("pack_mda_chars") or 3000)
-    share_exhibit = int(cfg.get("pack_exhibit_chars") or 6000)
+    # When the active provider supports a larger context window we scale the same
+    # proportions up rather than leaving the pack at the legacy 12k cap.
+    base_limit = int(cfg.get("max_filing_chars") or 12000)
+    scale = max(1.0, limit / max(1, base_limit))
+    share_business = int(int(cfg.get("pack_business_chars") or 3000) * scale)
+    share_mda = int(int(cfg.get("pack_mda_chars") or 3000) * scale)
+    share_exhibit = int(int(cfg.get("pack_exhibit_chars") or 6000) * scale)
+    # Keep the hard cap aligned with the provider limit in case rounding pushed
+    # the sum over.
+    total_share = share_business + share_mda + share_exhibit
+    if total_share > limit:
+        scale = limit / total_share
+        share_business = int(share_business * scale)
+        share_mda = int(share_mda * scale)
+        share_exhibit = limit - share_business - share_mda
     facts = {}
     try:
         log(f"pack {ticker}: EDGAR facts")

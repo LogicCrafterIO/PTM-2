@@ -140,7 +140,12 @@ ust_2y = "DGS2"
 # a larger model is cheap. Extraction and templating stay on the default model.
 # Measured mean latency for one verdict call: 8b 1.1s, nemotron-49b 6.8s, 70b 150s.
 # The 70b is unusable here. Nemotron is more selective than the 8b at a workable speed.
-verdict_model = "nvidia/llama-3.3-nemotron-super-49b-v1"
+# The active provider and its verdict model are selected from env vars:
+#   OLLAMA_API_KEY + OLLAMA_VERDICT_MODEL (default deepseek-v4-pro:0813)
+#   NVIDIA_API_KEY + verdict_model below
+#   OPENAI_API_KEY + openai_model above
+# Leave this empty to let the provider-specific env setting drive the verdict model.
+verdict_model = ""
 qualitative_bar = "consistent"
 max_filing_chars = 12000
 # Pack budget, allocated by where the numbers are. Measured: the 8-K earnings release
