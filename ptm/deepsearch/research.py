@@ -110,11 +110,16 @@ FETCHABLE = (
 )
 
 
-def execute_search(queries: list[str], max_results: int) -> tuple[list[dict], list[str]]:
+def execute_search(queries: list[str], max_results: int, progress=None) -> tuple[list[dict], list[str]]:
     """Run every query, dedupe by URL, return (results, queries_actually_run)."""
     all_results: dict[str, dict] = {}
     ran: list[str] = []
-    for q in queries:
+    for i, q in enumerate(queries, 1):
+        if progress is not None:
+            try:
+                progress("search", f"query {i}/{len(queries)}: {q}")
+            except Exception:
+                pass
         try:
             for r in web_search(q, max_results=max_results):
                 url = r.get("url") or ""
@@ -126,7 +131,9 @@ def execute_search(queries: list[str], max_results: int) -> tuple[list[dict], li
     return list(all_results.values()), ran
 
 
-def extract_findings(results: list[dict], ticker: str, name: str, chunk_size: int = 10) -> list[SearchFinding]:
+def extract_findings(
+    results: list[dict], ticker: str, name: str, chunk_size: int = 10, progress=None
+) -> list[SearchFinding]:
     """LLM turns raw search-result snippets into dated, sourced findings.
 
     Chunked: one call over a few dozen results writes a JSON array long enough
@@ -137,8 +144,14 @@ def extract_findings(results: list[dict], ticker: str, name: str, chunk_size: in
     if not results or not llm_available():
         return []
     findings: list[SearchFinding] = []
-    for start in range(0, len(results), chunk_size):
+    chunks = list(range(0, len(results), chunk_size))
+    for n, start in enumerate(chunks, 1):
         chunk = results[start : start + chunk_size]
+        if progress is not None:
+            try:
+                progress("extract", f"summarising results {start + 1}-{min(start + chunk_size, len(results))} of {len(results)} (chunk {n}/{len(chunks)})")
+            except Exception:
+                pass
         try:
             findings.extend(_extract_chunk(chunk, ticker, name))
         except Exception as exc:
@@ -182,8 +195,20 @@ def _extract_chunk(chunk: list[dict], ticker: str, name: str) -> list[SearchFind
     return findings
 
 
-def research(ticker: str, name: str, filing_context: str, max_queries: int, max_results: int, max_fetches: int) -> DeepResearch:
-    """Plan queries, run them, fetch key pages, extract findings."""
+def research(
+    ticker: str,
+    name: str,
+    filing_context: str,
+    max_queries: int,
+    max_results: int,
+    max_fetches: int,
+    progress=None,
+) -> DeepResearch:
+    """Plan queries, run them, fetch key pages, extract findings.
+
+    `progress(stage, detail)` reports sub-step state; every call is guarded so
+    progress reporting can never break a dive.
+    """
     research = DeepResearch(ticker=ticker)
     if not web_available():
         research.error = "no OLLAMA_API_KEY; web research skipped"
@@ -192,13 +217,20 @@ def research(ticker: str, name: str, filing_context: str, max_queries: int, max_
         research.error = "no LLM key; query planning skipped"
         return research
 
+    def report(stage: str, detail: str = "") -> None:
+        if progress is not None:
+            try:
+                progress(stage, detail)
+            except Exception:
+                pass
+
     queries = plan_queries(filing_context, max_queries)
     if not queries:
         queries = fallback_queries(ticker, name)
         log(f"deepsearch {ticker}: using fallback queries")
     research.queries_run = queries
 
-    results, ran = execute_search(queries, max_results)
+    results, ran = execute_search(queries, max_results, progress=report)
     research.search_used = bool(results)
     log_usage(f"{ticker} search", len(ran), 0)
     if not results:
@@ -211,6 +243,7 @@ def research(ticker: str, name: str, filing_context: str, max_queries: int, max_
     fetch_urls = [u for u in _dedupe_urls(results, len(results)) if _domain(u) in FETCHABLE][:max_fetches]
     pages: list[dict] = []
     if fetch_urls:
+        report("fetch", f"fetching {len(fetch_urls)} full pages")
         with ThreadPoolExecutor(max_workers=4) as pool:
             for page in pool.map(lambda u: _safe_fetch(u), fetch_urls):
                 if page.get("content"):
@@ -220,8 +253,9 @@ def research(ticker: str, name: str, filing_context: str, max_queries: int, max_
         SourceRef(title=p.get("title") or "", url=u) for p, u in zip(pages, fetch_urls) if p.get("content")
     ][:max_fetches]
 
-    findings = extract_findings(results, ticker, name)
+    findings = extract_findings(results, ticker, name, progress=report)
     if pages:
+        report("extract", f"reading {len(pages)} fetched pages")
         findings.extend(_extract_from_pages(pages, ticker, name))
     research.findings = findings
     research.sources = [f.source for f in findings if f.source.url]

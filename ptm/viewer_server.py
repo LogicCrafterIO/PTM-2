@@ -27,14 +27,34 @@ from ptm.config import ROOT, data_dir, ideas_dir
 from ptm.log import log
 
 _lock = threading.Lock()
+# Batch state plus the live per-ticker stage. `stage` holds what the pipeline
+# is doing right now for the ticker in `current`: {stage, detail, since}.
 _state: dict = {
     "running": False,
     "queue": [],
     "current": "",
+    "stage": "",
+    "detail": "",
+    "stage_since": "",
     "done": [],
     "started": "",
     "error": "",
+    "events": [],
 }
+
+
+def _report_progress(ticker: str, stage: str, detail: str) -> None:
+    """Stage updates from the pipeline, called on the worker thread."""
+    with _lock:
+        if _state.get("current") == ticker:
+            _state["stage"] = stage
+            _state["stage_detail"] = detail
+            _state["stage_since"] = datetime.now(timezone.utc).isoformat()
+            events = _state.get("events") or []
+            events.append(
+                {"t": _state["stage_since"], "ticker": ticker, "stage": stage, "detail": detail}
+            )
+            _state["events"] = events[-400:]  # cap the log a long batch can accumulate
 
 
 def _identity(ticker: str) -> tuple[str, str, str]:
@@ -105,7 +125,18 @@ def _run_one(ticker: str, force: bool = False) -> dict:
     from ptm.deepsearch.render import render_markdown
 
     sector, industry, name = _identity(ticker)
-    result = run_deep_dive(ticker, name=name, sector=sector, industry=industry, force=force)
+
+    def progress(stage: str, detail: str = "") -> None:
+        _report_progress(ticker, stage, detail)
+
+    result = run_deep_dive(
+        ticker,
+        name=name,
+        sector=sector,
+        industry=industry,
+        force=force,
+        progress=progress,
+    )
     out_dir = ideas_dir("deepdive", ticker)
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "REPORT.md").write_text(render_markdown(result), encoding="utf-8")
@@ -124,6 +155,11 @@ def _batch_worker(tickers: list[str], force: bool = False) -> None:
         for ticker in tickers:
             with _lock:
                 _state["current"] = ticker
+                # Stage fields reset per ticker; _run_one's progress callback
+                # sets them as the pipeline advances.
+                _state["stage"] = "queued"
+                _state["stage_detail"] = ""
+                _state["stage_since"] = datetime.now(timezone.utc).isoformat()
             try:
                 entry = _run_one(ticker, force=force)
             except Exception as exc:
@@ -131,9 +167,12 @@ def _batch_worker(tickers: list[str], force: bool = False) -> None:
             with _lock:
                 _state["done"].append(entry)
                 _state["current"] = ""
+                _state["stage"] = ""
     finally:
         with _lock:
             _state["running"] = False
+            _state["current"] = ""
+            _state["stage"] = ""
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -220,7 +259,11 @@ class Handler(BaseHTTPRequestHandler):
                 running=True,
                 queue=list(tickers),
                 current="",
+                stage="",
+                stage_detail="",
+                stage_since="",
                 done=[],
+                events=[],
                 started=datetime.now(timezone.utc).isoformat(),
                 error="",
             )

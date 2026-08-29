@@ -54,8 +54,23 @@ def run_deep_dive(
     max_queries: int | None = None,
     max_results: int | None = None,
     max_fetches: int | None = None,
+    progress=None,
 ) -> DeepResult:
-    """Full deep dive for one ticker. Cached unless --force."""
+    """Full deep dive for one ticker. Cached unless --force.
+
+    `progress`, when given, is called as `progress(stage, detail)` between
+    stages so a caller (the viewer's batch runner) can show live state. It
+    must never raise into the pipeline.
+    """
+
+    def report(stage: str, detail: str = "") -> None:
+        log(f"deepdive {ticker}: {stage}" + (f" — {detail}" if detail else ""))
+        if progress is not None:
+            try:
+                progress(stage, detail)
+            except Exception:
+                pass  # progress reporting must never break the dive
+
     ticker = ticker.upper().strip()
     result = DeepResult(ticker=ticker, name=name, sector=sector, industry=industry)
     if not llm_available():
@@ -70,21 +85,24 @@ def run_deep_dive(
         from ptm.io import read_json
 
         cached = read_json(cache)
-        log(f"deepdive {ticker}: cache hit")
+        report("cache hit", "cached result loaded")
         return DeepResult.model_validate(cached)
 
     started = datetime.now(timezone.utc)
     result.as_of = started.date().isoformat()
+    report("startup", "resolving ticker and limits")
     context = filing_context(ticker)
+    report("filings", f"SEC filing context loaded ({len(context)} chars)")
 
     # 0. Macro / ISM backdrop, read from what `ptm weekly` already curated.
+    report("macro", "reading PTM dashboard state")
     macro = macro_view.build_macro_view(sector, industry)
     if not macro.available:
         log(f"deepdive {ticker}: macro view unavailable - {macro.reason}")
     else:
-        log(
-            f"deepdive {ticker}: macro view ready (bias {macro.bias or '?'}, "
-            f"sector tilt {macro.sector_tilt or 'n/a'})"
+        report(
+            "macro",
+            f"backdrop ready — bias {macro.bias or '?'}, sector tilt {macro.sector_tilt or 'n/a'}",
         )
     result.macro = macro
     limits = _limits()
@@ -93,7 +111,7 @@ def run_deep_dive(
     max_fetches = max_fetches or int(limits["max_fetches"])
 
     # 1. Web research: plan → search → fetch → extract
-    log(f"deepdive {ticker}: planning web research")
+    report("research", "planning web queries")
     research_out = research(
         ticker,
         name,
@@ -101,6 +119,7 @@ def run_deep_dive(
         max_queries=max_queries,
         max_results=max_results,
         max_fetches=max_fetches,
+        progress=report,
     )
     result.research = research_out
     result.research.as_of = result.as_of
@@ -108,7 +127,15 @@ def run_deep_dive(
     if not findings:
         result.error = research_out.error or "no findings from web research"
         log(f"deepdive {ticker}: FAIL {result.error}")
+        report("fail", result.error)
         return result
+
+    who = _who(name, ticker)
+    report(
+        "research",
+        f"web research done — {len(research_out.queries_run)} queries, "
+        f"{len(findings)} findings, {len(research_out.fetched_pages)} pages fetched",
+    )
 
     who = _who(name, ticker)
 
@@ -116,7 +143,7 @@ def run_deep_dive(
     # then the backdrop block shared with every analysis prompt.
     macro_block = ""
     if macro.available:
-        log(f"deepdive {ticker}: macro transmission pass")
+        report("macro-impact", "mapping backdrop onto fundamentals")
         try:
             macro = macro_view.llm_impact(macro, findings, context, who, sector)
         except Exception as exc:
@@ -127,7 +154,7 @@ def run_deep_dive(
     result.macro = macro
 
     # 3. Drivers
-    log(f"deepdive {ticker}: identifying drivers")
+    report("drivers", "identifying the drivers the thesis hinges on")
     try:
         drivers = analysis.identify_drivers(findings, context, who, macro_block=macro_block)
     except Exception as exc:
@@ -135,11 +162,11 @@ def run_deep_dive(
         log(f"deepdive {ticker}: driver identification FAIL {exc}")
     if not drivers:
         result.error = "no drivers identified"
-        log(f"deepdive {ticker}: FAIL {result.error}")
+        report("fail", result.error)
         return result
 
     # 3. Bull / bear cases
-    log(f"deepdive {ticker}: building bull and bear cases")
+    report("cases", "building bull and bear cases from the findings")
     try:
         bull = analysis.build_case(findings, context, who, "bull", macro_block=macro_block)
         bear = analysis.build_case(findings, context, who, "bear", macro_block=macro_block)
@@ -148,7 +175,7 @@ def run_deep_dive(
         log(f"deepdive {ticker}: bull/bear cases FAIL {exc}")
 
     # 4. Debate
-    log(f"deepdive {ticker}: running debate")
+    report("debate", f"bull vs bear on {len(drivers)} drivers")
     debate_error = ""
     used: list[str] = []
     try:
@@ -161,7 +188,7 @@ def run_deep_dive(
         log(f"deepdive {ticker}: debate FAIL {exc}")
 
     # 5. Synthesis — runs on whatever the earlier stages produced
-    log(f"deepdive {ticker}: synthesising thesis")
+    report("synthesis", "writing the final thesis")
     try:
         thesis = analysis.synthesize(rounds, bull, bear, findings, context, who, used_out=used, macro_block=macro_block)
     except Exception as exc:
@@ -183,13 +210,13 @@ def run_deep_dive(
     result.thesis = thesis
 
     # 6. Catalysts
-    log(f"deepdive {ticker}: catalysts")
+    report("catalysts", "listing dated catalysts")
     result.catalysts = _safe_catalysts(findings, context, who, ticker, macro_block)
 
     result.llm_used = True
     result.models_used = list(dict.fromkeys(used)) or [verdict_model()]
     write_json(cache, result.model_dump())
-    log(f"deepdive {ticker}: done — {len(findings)} findings, stance={thesis.stance}")
+    report("done", f"{len(findings)} findings · stance {thesis.stance}")
     return result
 
 

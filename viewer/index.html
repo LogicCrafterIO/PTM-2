@@ -223,6 +223,23 @@
     .dd-batch button:disabled { opacity: .45; cursor: wait; }
     .dd-progress { margin-top: 8px; font-size: 12px; color: var(--muted); }
     .dd-progress .cur { color: var(--warn); font-weight: 650; }
+    .dd-progress .stage-detail { color: var(--text); }
+    .dd-progress .timer { color: var(--muted); font-variant-numeric: tabular-nums; }
+    .dd-stepper { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0 6px; }
+    .dd-step {
+      font-size: 11px; padding: 3px 9px; border-radius: 999px;
+      background: var(--chip); color: var(--muted); white-space: nowrap;
+    }
+    .dd-step.active { background: #1c2a40; color: var(--accent); font-weight: 650; outline: 1px solid var(--accent); }
+    .dd-step.done { background: #163526; color: var(--long); }
+    .dd-step.active::after { content: " ⟳"; }
+    .dd-log {
+      margin-top: 8px; max-height: 150px; overflow: auto; font-size: 11px;
+      background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px;
+    }
+    .dd-log div { margin: 1px 0; font-family: "Consolas", monospace; font-size: 11px; color: #b9c4d4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .dd-log .t { color: var(--muted); }
+    .dd-progress .cur { color: var(--warn); font-weight: 650; }
     .dd-done li { margin: 2px 0; }
     .stance-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
     .sd-constructive { background: var(--long); }
@@ -1347,6 +1364,8 @@
           <label style="display:block;margin-top:6px"><input type="checkbox" id="dd-force" style="min-width:0"> Force regeneration (ignore cache)</label>
           <button id="dd-go">Run deep dives</button>
           <div class="dd-progress" id="dd-progress"></div>
+          <div class="dd-stepper" id="dd-stepper" style="display:none"></div>
+          <div class="dd-log" id="dd-log" style="display:none"></div>
           <div class="dd-progress dd-done" id="dd-done"></div>
         </div>`;
       el.innerHTML = `
@@ -1418,6 +1437,51 @@
       }
     }
 
+    // Live deep-dive progress: stepper, current-stage detail, timers, log.
+    const DD_STAGES = ["startup", "filings", "macro", "search", "extract", "macro-impact", "drivers", "cases", "debate", "synthesis", "catalysts", "done"];
+    const STAGE_LABEL = {
+      startup: "startup",
+      filings: "SEC filings",
+      macro: "macro dashboard",
+      research: "planning",
+      search: "web search",
+      fetch: "fetch pages",
+      extract: "extract findings",
+      "macro-impact": "macro impact",
+      drivers: "drivers",
+      cases: "bull/bear cases",
+      debate: "debate",
+      synthesis: "synthesis",
+      catalysts: "catalysts",
+      done: "done",
+      fail: "failed",
+      failed: "failed",
+      queued: "queued",
+    };
+    const stageLabel = (s) => esc(STAGE_LABEL[s] || s || "");
+
+    // Server events are numbered; we render any with an index >= this.
+    let ddLogCount = 0;
+
+    function fmtElapsed(iso) {
+      if (!iso) return "";
+      const then = new Date(iso).getTime();
+      if (Number.isNaN(then)) return "";
+      const s = Math.max(0, Math.floor((Date.now() - then) / 1000));
+      const m = Math.floor(s / 60);
+      return m > 0 ? `${m}m${String(s % 60).padStart(2, "0")}s` : `${s}s`;
+    }
+
+    function renderStepper(currentStage) {
+      // search/fetch/extract all live inside the research stage; the stepper
+      // marks their leaf position so the pill shows where inside it we are.
+      const idx = DD_STAGES.indexOf(currentStage);
+      return DD_STAGES.map((s, i) => {
+        const cls = idx < 0 ? "" : i < idx ? "done" : i === idx ? "active" : "";
+        return `<span class="dd-step ${cls}">${stageLabel(s)}</span>`;
+      }).join("");
+    }
+
     async function pollBatch() {
       const el = document.getElementById("tab-deepdives");
       try {
@@ -1426,22 +1490,63 @@
         const progress = el.querySelector("#dd-progress");
         const doneHost = el.querySelector("#dd-done");
         if (!progress || !doneHost) return;
-        if (st.error) progress.innerHTML = `<span class="neg">${esc(st.error)}</span>`;
-        else if (st.running && st.current) progress.innerHTML = `Running <span class="cur">${esc(st.current)}</span> — ${st.done.length}/${st.queue.length} complete…`;
-        else if (st.running) progress.textContent = "Starting…";
+
+        // 1. Live line: ticker, batch position, current stage + detail + timers.
+        if (st.error) {
+          progress.innerHTML = `<span class="neg">${esc(st.error)}</span>`;
+        } else if (st.running && st.current) {
+          progress.innerHTML =
+            `Running <span class="cur">${esc(st.current)}</span> — ${st.done.length}/${st.queue.length} done · ` +
+            `<span class="stage-detail">${stageLabel(st.stage)}</span>` +
+            (st.stage_detail ? ` — ${esc(st.stage_detail)}` : "") +
+            ` <span class="timer">(stage ${fmtElapsed(st.stage_since) || "…"} · total ${fmtElapsed(st.started) || "…"})</span>`;
+          const stepperHost = el.querySelector("#dd-stepper");
+          if (stepperHost) {
+            stepperHost.style.display = "flex";
+            stepperHost.innerHTML = renderStepper(st.stage);
+          }
+          const logHost = el.querySelector("#dd-log");
+          if (logHost) logHost.style.display = "block";
+        } else if (st.running) {
+          progress.textContent = "Starting…";
+        }
+
+        // 2. Stage log: append any events we have not seen yet (numbered by server).
+        const events = st.events || [];
+        if (events.length > ddLogCount) {
+          const logHost = el.querySelector("#dd-log");
+          if (logHost) {
+            for (let i = ddLogCount; i < events.length; i++) {
+              const ev = events[i];
+              const row = document.createElement("div");
+              const time = ev.t ? new Date(ev.t).toTimeString().slice(0, 8) : "";
+              row.className = "dd-log-row";
+              row.innerHTML = `<span class="t">${time}</span> <strong>${esc(ev.ticker)}</strong> · ${stageLabel(ev.stage)}${ev.detail ? " — " + esc(ev.detail) : ""}`;
+              logHost.appendChild(row);
+              logHost.scrollTop = logHost.scrollHeight;
+            }
+          }
+          ddLogCount = events.length;
+        }
+
+        // 3. Per-ticker results.
         doneHost.innerHTML = (st.done || []).map((d) =>
           `<li>${d.ok ? "<span class='pos'>✔</span>" : "<span class='neg'>✗</span>"} <strong>${esc(d.ticker)}</strong>` +
           (d.stance ? ` — <span class="stance ${esc(d.stance)}">${esc(d.stance)}</span>` : "") +
           (d.error ? ` — <span class="neg">${esc(d.error)}</span>` : "") +
           `</li>`
         ).join("") || '<p class="muted" style="margin:4px 0">No dives finished yet.</p>';
+
+        // 4. Continue or finish.
         if (st.running) {
-          setTimeout(pollBatch, 4000);
+          setTimeout(pollBatch, 2000);
         } else {
           const go = el.querySelector("#dd-go");
           if (go) go.disabled = false;
           if ((st.done || []).length) {
-            progress.innerHTML = `Batch complete: ${(st.done || []).filter((d) => d.ok).length} ok, ${(st.done || []).filter((d) => !d.ok).length} failed. Reloading list…`;
+            progress.innerHTML =
+              `Batch complete in ${st.started ? fmtElapsed(st.started) : "?"}: ` +
+              `${(st.done || []).filter((d) => d.ok).length} ok, ${(st.done || []).filter((d) => !d.ok).length} failed. Reloading list…`;
             setTimeout(async () => {
               await loadDeepDives();
             }, 1200);
