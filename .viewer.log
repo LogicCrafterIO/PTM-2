@@ -2,3 +2,5 @@
 [22:56:28] deepdive CORT: macro view ready (bias NET_LONG, sector tilt short)
 [22:56:28] deepdive CORT: planning web research
 [22:56:46] deepsearch CORT search: 10 queries, 0 page fetches
+[22:56:56] deepsearch: fetch FAILED https://seekingalpha.com/article/4856684-risky-spot-for-corcept-therapeutics: 404 Client Error: Not Found for url: https://ollama.com/api/web_fetch
+[22:56:56] deepsearch CORT fetch: 0 queries, 1 page fetches
