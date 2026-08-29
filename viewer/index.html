@@ -1360,7 +1360,7 @@
                 <p class="muted" style="margin:0">${esc(r.sector || "—")} · ${dash(r.findings)} findings · run ${esc(r.as_of || "?")} ${r.error ? "· <span class='neg'>incomplete</span>" : ""}</p>
               </div>`).join("")}
           </div>
-          <div id="dd-report" class="dd-report></div>
+          <div id="dd-report" class="dd-report"></div>
         </div>`;
       const openReport = async (ticker) => {
         const host = el.querySelector("#dd-report");
