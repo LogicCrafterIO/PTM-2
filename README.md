@@ -199,6 +199,62 @@ month it needs and requires a parsed headline before starting. Use
 `--allow-stale-ism` to accept an older print, or `--pmi-html` / `--services-html`
 to supply saved reports.
 
+## Deep single-ticker dives
+
+The weekly pipeline answers "which names should I look at?". The deep dive
+answers the follow-up: **"what is really going on at THIS one?"**
+
+```powershell
+.\.venv\Scripts\python.exe -m ptm deepdive run PLTR
+.\.venv\Scripts\python.exe -m ptm deepdive show PLTR
+```
+
+One ticker in, a full qualitative dossier out, written to
+`ideas/deepdive/<TICKER>/REPORT.md`. The pipeline:
+
+1. Pulls the company's own filings from EDGAR as grounding
+2. **Plans 6-10 web queries** with an LLM against that filing context — deliberately
+   including a bear query and a competitor query, the angles filings never cover
+3. Runs them through the **Ollama web search API** (`ollama.com/api/web_search`,
+   same `OLLAMA_API_KEY`), then full-fetches the pages most likely to carry numbers
+   (press releases, transcripts, filings)
+4. Extracts dated, **source-cited findings** from every snippet and page, in chunks
+   so one truncated response cannot zero out the research base
+5. Identifies the 3-5 **drivers** the thesis hinges on, then runs a structured
+   **bull-vs-bear debate per driver** — both sides arguing from the same evidence
+   base, with a moderator verdict per round
+6. Synthesises a stance (constructive / cautious / balanced), a thesis, and
+   **falsifiers** — the observable numbers or events that would flip the call
+7. Projects the **PTM macro dashboard onto the ticker**: ISM PMI/NMI, new orders,
+   the curve, VIX and sector tilt from `data/curated/` are read into every
+   analysis prompt, and a dedicated pass maps **how the backdrop transmits into
+   this company's fundamentals** (demand, pricing, input costs, backlog,
+   financing), flagging any contradiction between the ISM sector tilt and the
+   company-specific findings
+8. Lists catalysts with windows and what each outcome would do
+
+Every claim in the report links to its source. Heavy passes (drivers, cases,
+debate, synthesis) run on the verdict model; extraction and catalysts run on the
+default. Results cache in `data/raw/deepsearch/runs/` — `--force` refetches.
+
+Flags: `--max-queries`, `--max-results`, `--max-fetches` cap API usage for a
+cheaper, shallower pass; defaults live on the `DEEPSEARCH_*` env vars.
+
+The macro/ISM section is read from `data/curated/macro_snapshot.json` and
+`data/curated/ism.json` — whatever `ptm weekly` last curated. Without those
+files the dive still runs and the section renders as unavailable.
+
+### In the viewer
+
+Serve `python -m ptm viewer --port 8765` (replaces the raw `http.server`; all
+existing tabs work the same) and open the **Deep dives** tab. It lists every
+cached dive, renders `REPORT.md` in place, and can **generate new dives from the
+browser**: enter one ticker or a comma-separated batch (e.g. `PLTR, TSLA, NVDA`)
+and they run one at a time, in order, with live progress. Ticks Force to ignore
+cache. Reports render without any build step through a small markdown renderer
+in `viewer/index.html`; generation needs the `ptm viewer` server (a plain
+`http.server` still browses cached reports, minus the generate form).
+
 ## Tests (does not touch live files)
 
 ```powershell

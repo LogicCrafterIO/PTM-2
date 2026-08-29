@@ -12,6 +12,8 @@ from ptm.llm import llm_available, model_name
 from ptm.pipeline import apply_as_of, generate_ideas, ingest, research_funnel, run, screen
 
 app = typer.Typer(no_args_is_help=True, add_completion=False)
+deepdive_app = typer.Typer(no_args_is_help=True, add_completion=False)
+app.add_typer(deepdive_app, name="deepdive", help="Deep single-ticker qualitative analysis (web-grounded bull/bear debate).")
 
 
 
@@ -213,6 +215,81 @@ def weekly(
         services_html=services_html,
     )
     typer.echo(json.dumps(result, indent=2))
+
+
+@deepdive_app.command("run")
+def deepdive_run(
+    ticker: str = typer.Argument(..., help="Ticker to deep-dive, e.g. PLTR"),
+    force: bool = typer.Option(False, "--force", help="Refetch everything, ignoring caches"),
+    max_queries: int | None = typer.Option(None, "--max-queries", help="Cap planned web-search queries"),
+    max_results: int | None = typer.Option(None, "--max-results", help="Results per query"),
+    max_fetches: int | None = typer.Option(None, "--max-fetches", help="Full-page fetches"),
+) -> None:
+    """Run the deep qualitative dive on ONE ticker."""
+    from ptm.deepsearch.pipeline import run_deep_dive
+    from ptm.deepsearch.render import render_markdown
+    from ptm.config import data_dir, ideas_dir
+
+    ticker = ticker.upper().strip()
+    sector, industry, name = "", "", ""
+    uni_path = data_dir("curated", "universe.csv")
+    if uni_path.exists():
+        try:
+            from ptm.io import read_df
+
+            row = read_df(uni_path).loc[lambda f: f["ticker"] == ticker]
+            if len(row):
+                r0 = row.iloc[0]
+                name, sector, industry = str(r0.get("name") or ""), str(r0.get("sector") or ""), str(r0.get("industry") or "")
+        except Exception:
+            pass
+    result = run_deep_dive(
+        ticker,
+        name=name,
+        sector=sector,
+        industry=industry,
+        force=force,
+        max_queries=max_queries,
+        max_results=max_results,
+        max_fetches=max_fetches,
+    )
+    out_dir = ideas_dir("deepdive", ticker.upper())
+    out_dir.mkdir(parents=True, exist_ok=True)
+    md_path = out_dir / "REPORT.md"
+    md_path.write_text(render_markdown(result), encoding="utf-8")
+    typer.echo(json.dumps({"ticker": result.ticker, "stance": (result.thesis.stance if result.thesis else ""),
+                           "confidence": (result.thesis.confidence if result.thesis else ""),
+                           "findings": len(result.research.findings) if result.research else 0,
+                           "catalysts": len(result.catalysts), "report": str(md_path),
+                           "error": result.error}, indent=2))
+
+
+@deepdive_app.command("show")
+def deepdive_show(
+    ticker: str = typer.Argument(..., help="Ticker whose cached dive to display"),
+) -> None:
+    """Re-render the cached dive for a ticker."""
+    from ptm.config import data_dir
+    from ptm.deepsearch.models import DeepResult
+    from ptm.deepsearch.render import render_markdown
+    from ptm.io import read_json
+
+    path = data_dir("raw", "deepsearch", "runs", f"{ticker.upper()}.json")
+    if not path.exists():
+        typer.secho(f"No cached dive for {ticker.upper()}. Run `ptm deepdive run {ticker.upper()}` first.", fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=2)
+    result = DeepResult.model_validate(read_json(path))
+    typer.echo(render_markdown(result))
+
+
+@app.command()
+def viewer(
+    port: int = typer.Option(8765, "--port", help="Port to serve the viewer on"),
+) -> None:
+    """Serve the PTM viewer (with deep-dive generation) on localhost."""
+    from ptm.viewer_server import serve
+
+    serve(port=port)
 
 
 @app.command()

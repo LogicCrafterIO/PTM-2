@@ -39,6 +39,9 @@ class Settings(BaseSettings):
     ollama_verdict_model: str = "deepseek-v4-pro:0813"
     ollama_max_tokens: int = 8192
     ollama_max_filing_chars: int = 24000
+    deepsearch_max_queries: int = 12
+    deepsearch_max_results: int = 8
+    deepsearch_max_fetches: int = 8
     sec_user_agent: str = "PTM-Idea-Engine/0.1 (contact: ptm-research@example.com)"
     fred_api_key: str = ""
 
