@@ -13,6 +13,7 @@ around a number. Both are called with the OLLAMA_API_KEY bearer token.
 from __future__ import annotations
 
 import json
+import threading
 
 import requests
 
@@ -24,6 +25,11 @@ BASE = "https://ollama.com"
 SEARCH_URL = f"{BASE}/api/web_search"
 FETCH_URL = f"{BASE}/api/web_fetch"
 TIMEOUT = 60
+
+# The query/page caches are whole-file read-modify-write; parallel deep dives
+# (the idea pipeline runs them under a thread pool) would otherwise interleave
+# those reads and writes and lose entries.
+_CACHE_LOCK = threading.Lock()
 
 
 def _key() -> str:
@@ -50,13 +56,14 @@ def _post(url: str, payload: dict) -> dict:
 def web_search(query: str, max_results: int = 8, use_cache: bool = True) -> list[dict]:
     """Search results as [{title, url, content}], cached per query."""
     cache = data_dir("raw", "deepsearch", "queries.json")
-    try:
-        store = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else {}
-    except Exception:
-        store = {}
     key = f"{max_results}|{query.strip().lower()}"
-    if use_cache and key in store:
-        return store[key]
+    with _CACHE_LOCK:
+        try:
+            store = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else {}
+        except Exception:
+            store = {}
+        if use_cache and key in store:
+            return store[key]
     payload = _post(SEARCH_URL, {"query": query, "max_results": int(max_results)})
     results = [
         {
@@ -67,29 +74,40 @@ def web_search(query: str, max_results: int = 8, use_cache: bool = True) -> list
         for r in payload.get("results") or []
         if str(r.get("url") or "")
     ]
-    store[key] = results
-    cache.parent.mkdir(parents=True, exist_ok=True)
-    write_json(cache, store)
+    with _CACHE_LOCK:
+        try:
+            store = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else {}
+        except Exception:
+            store = {}
+        store[key] = results
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        write_json(cache, store)
     return results
 
 
 def web_fetch(url: str, use_cache: bool = True) -> dict:
     """One page as {title, content}, cached per URL."""
     cache = data_dir("raw", "deepsearch", "pages.json")
-    try:
-        store = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else {}
-    except Exception:
-        store = {}
-    if use_cache and url in store:
-        return store[url]
+    with _CACHE_LOCK:
+        try:
+            store = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else {}
+        except Exception:
+            store = {}
+        if use_cache and url in store:
+            return store[url]
     payload = _post(FETCH_URL, {"url": url})
     page = {
         "title": str(payload.get("title") or ""),
         "content": str(payload.get("content") or ""),
     }
-    store[url] = page
-    cache.parent.mkdir(parents=True, exist_ok=True)
-    write_json(cache, store)
+    with _CACHE_LOCK:
+        try:
+            store = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else {}
+        except Exception:
+            store = {}
+        store[url] = page
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        write_json(cache, store)
     return page
 
 

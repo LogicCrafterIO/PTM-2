@@ -21,7 +21,7 @@ from ptm.asof import (
 from ptm.fundamentals import build_fundamentals, source_warnings
 from ptm.book import assemble_book
 from ptm.books import assemble_books
-from ptm.config import data_dir, ideas_dir, toml_settings
+from ptm.config import data_dir, env, ideas_dir, toml_settings
 from ptm.gates import apply_process_gates, candidate_warnings, size_fraction
 from ptm.ingest.company_research import research_pack
 from ptm.ingest.edgar import company_facts
@@ -30,6 +30,9 @@ from ptm.ingest.fred import fetch_fred_macro
 from ptm.ingest.ism import scrape_ism
 from ptm.ingest.ism_sectors import apply_ism_tilts, split_quota
 from ptm.ingest.wikipedia import build_universe
+from ptm.deepsearch.pipeline import run_deep_dive
+from ptm.deepsearch.render import render_idea_markdown, render_markdown
+from ptm.deepsearch.verdict import deepdive_extra, qual_from_deepdive
 from ptm.ingest.yfinance_data import fetch_macro_prices, fetch_prices
 from ptm.io import read_df, read_json, write_df, write_json
 from ptm.earnings import resolve as resolve_earnings
@@ -325,13 +328,52 @@ def run_group_reviews(
     return reviews
 
 
+DEEPDIVE_MODE = "deepdive"
+LEGACY_MODE = "legacy"
+
+
+def resolve_qual_mode(qual_mode: str, skip_llm: bool) -> str:
+    """Which qualitative engine this run will actually use.
+
+    The deep dive is web-grounded: it needs an LLM and the Ollama web-search
+    key, and its research is NOT point-in-time, so a backdated run silently
+    serving today's news inside an "as of 2026-07-20" book would be lookahead.
+    Backdated runs therefore fall back to the EDGAR-pack verdict, which draws
+    only on what the run date can see. Falls are loud, once, at run start.
+    """
+    if str(qual_mode or DEEPDIVE_MODE).lower() not in {DEEPDIVE_MODE, LEGACY_MODE}:
+        raise ValueError(f"unknown qual mode {qual_mode!r} (use 'deepdive' or 'legacy')")
+    if str(qual_mode).lower() != DEEPDIVE_MODE:
+        return LEGACY_MODE
+    if skip_llm:
+        return LEGACY_MODE
+    if is_backdated():
+        log(
+            "ideas: BACKDATED run — web research is not point-in-time, so the deep-dive "
+            "qualitative pass is unavailable; falling back to the EDGAR-pack verdict"
+        )
+        return LEGACY_MODE
+    from ptm.deepsearch.web import available as web_available
+
+    if not llm_available() or not web_available():
+        log(
+            "ideas: deep-dive qualitative unavailable (no LLM key / no OLLAMA_API_KEY for web "
+            "search); falling back to the EDGAR-pack verdict"
+        )
+        return LEGACY_MODE
+    return DEEPDIVE_MODE
+
+
 def generate_ideas(
     max_candidates: int | None = None,
     skip_llm: bool = False,
     as_of: str | None = None,
+    qual_mode: str = DEEPDIVE_MODE,
+    dd_force: bool = False,
 ) -> list[TradeIdea]:
     if as_of:
         apply_as_of(as_of)
+    qual_mode = resolve_qual_mode(qual_mode, skip_llm)
     snap, candidates = screen()
     if not skip_llm:
         try:
@@ -362,10 +404,47 @@ def generate_ideas(
         chosen = split_quota(candidates, max_candidates)
     log(
         f"ideas: researching {len(chosen)} of {len(candidates)} PE candidates "
-        f"(llm={'on' if not skip_llm and llm_available() else 'off'})"
+        f"(qual={qual_mode}, llm={'on' if not skip_llm and llm_available() else 'off'})"
     )
     fund = read_df(data_dir("curated", "yahoo_fundamentals.csv"))
     total = len(chosen)
+
+    def _research_deep(idea: TradeIdea, cand: Candidate) -> str:
+        """The deep dive IS the qualitative pass. Returns the rendered dive.
+
+        Replaces the EDGAR research pack and the extract+verdict pair with a
+        dossier: filings grounding, planned web research, drivers, a structured
+        bull-vs-bear debate per driver and a synthesised stance. The adapter
+        (ptm.deepsearch.verdict) maps that dossier onto the structured
+        QualResult the gates and the book ranking consume, one verdict-model
+        call whose quantified magnitudes are verified against the dive text.
+        Results cache by ticker across runs; `dd_force` or an older
+        `deepsearch_cache_days` cache reruns the dive.
+        """
+        report_rel = f"deepdive/{cand.ticker}/REPORT.md"
+        cache_days = int(env().deepsearch_cache_days)
+        try:
+            result = run_deep_dive(
+                cand.ticker,
+                name=cand.name,
+                sector=cand.sector,
+                industry=cand.industry,
+                force=dd_force,
+                max_age_days=None if dd_force else cache_days,
+            )
+        except Exception as exc:
+            idea.extra["deepdive"] = {"error": str(exc)[:200], "report": report_rel}
+            raise
+        deep_md = render_markdown(result)
+        ideas_dir("deepdive", cand.ticker, "REPORT.md").write_text(deep_md, encoding="utf-8")
+        idea.extra["deepdive"] = deepdive_extra(result, report_rel)
+        log(
+            f"idea {cand.ticker}: deep dive staged {'cached' if result.llm_used and not dd_force else 'run'} "
+            f"stance={result.thesis.stance if result.thesis else 'none'} "
+            f"findings={len(result.research.findings) if result.research else 0}"
+        )
+        idea.qual = qual_from_deepdive(result, cand, deep_md)
+        return deep_md
 
     def _research(i: int, cand: Candidate) -> TradeIdea:
         log(f"idea {i}/{total} {cand.side.value} {cand.ticker}  ism={cand.ism_score} eg={cand.eg_case}")
@@ -373,8 +452,20 @@ def generate_ideas(
         cand.warnings = candidate_warnings(cand)
         idea = TradeIdea(candidate=cand, state=IdeaState.IDENTIFIED)
         excerpt = json.dumps(cand.evidence, default=str)
+        deep_md = ""
         pack = {}
-        if not skip_llm:
+        if qual_mode == DEEPDIVE_MODE:
+            # The dive replaces pack + extract + verdict: its rendered report
+            # becomes the evidence base the catalyst pass and the idea file read.
+            try:
+                log(f"idea {cand.ticker}: deep dive (filings + web research + debate)")
+                deep_md = _research_deep(idea, cand)
+                excerpt = deep_md
+            except Exception as exc:
+                log(f"idea {cand.ticker}: deep dive FAIL {exc}")
+                idea.extra["deepdive_error"] = str(exc)
+                idea.qual = None
+        elif not skip_llm:
             try:
                 log(f"idea {cand.ticker}: research pack (EDGAR)")
                 pack = research_pack(cand)
@@ -403,13 +494,19 @@ def generate_ideas(
                 idea.extra["expectations_error"] = str(exc)
         try:
             log(f"idea {cand.ticker}: qualitative")
-            idea.qual = qualitative(
-                cand,
-                excerpt,
-                thin=bool(pack.get("thin")),
-                skip_llm=skip_llm,
-                expectations=expectations_payload,
-            )
+            if qual_mode == DEEPDIVE_MODE:
+                # The dive already ran; only apply the state transitions here
+                # so a failed dive reads as "missing verdict", not as a pass.
+                if idea.qual is None:
+                    raise RuntimeError("deep dive produced no verdict")
+            else:
+                idea.qual = qualitative(
+                    cand,
+                    excerpt,
+                    thin=bool(pack.get("thin")),
+                    skip_llm=skip_llm,
+                    expectations=expectations_payload,
+                )
             if idea.qual.supports_outlier is True:
                 idea.state = IdeaState.QUAL_PASS
             elif idea.qual.supports_outlier is False:
@@ -466,15 +563,27 @@ def generate_ideas(
         qual = idea.qual or QualResult(supports_outlier=None, summary="missing qualitative", red_flags=["llm_skipped"] if skip_llm else [])
         cats = idea.catalysts or CatalystResult(earnings_date=parsed, earnings_in_window=in_window, tradeable=in_window, reason="missing catalysts")
         try:
-            idea.template_markdown = render_template(
-                cand,
-                qual,
-                cats,
-                idea.timing.comment if idea.timing else "",
-                skip_llm=skip_llm,
-                earnings=idea.earnings,
-                expectations=expectations_payload,
-            )
+            if qual_mode == DEEPDIVE_MODE:
+                # The dive report IS the qualitative body; no template LLM call.
+                idea.template_markdown = render_idea_markdown(
+                    cand,
+                    qual,
+                    cats,
+                    idea.earnings,
+                    expectations_payload,
+                    deep_md,
+                    idea.extra.get("deepdive"),
+                )
+            else:
+                idea.template_markdown = render_template(
+                    cand,
+                    qual,
+                    cats,
+                    idea.timing.comment if idea.timing else "",
+                    skip_llm=skip_llm,
+                    earnings=idea.earnings,
+                    expectations=expectations_payload,
+                )
             if idea.state in {IdeaState.CATALYST_PASS, IdeaState.QUAL_PASS}:
                 idea.state = IdeaState.TEMPLATED
         except Exception as exc:
@@ -497,10 +606,17 @@ def generate_ideas(
         return idea
 
     # Each idea is independent until the group pass: its own EDGAR fetches, its
-    # own LLM calls, its own output files. Both are latency-bound, so a small
-    # pool cuts wall-clock sharply. SEC stays inside its shared rate limit; the
-    # pool size caps concurrent LLM calls.
+    # own web research, its own LLM calls, its own output files. All are
+    # latency-bound, so a small pool cuts wall-clock sharply — and the deep
+    # dive multiplies LLM calls per name, which makes the pool the difference
+    # between hours and a lunch break. SEC stays inside its shared rate limit;
+    # the pool size caps concurrent dives.
     workers = max(1, int((toml_settings().get("llm") or {}).get("idea_workers", 1)))
+    if qual_mode == DEEPDIVE_MODE and workers > 1 and float((toml_settings().get("llm") or {}).get("max_rps") or 0) <= 0:
+        log(
+            f"ideas: {workers} workers deep-diving with no [llm].max_rps pacing — expect provider 429s "
+            "on some calls (they retry); set max_rps to pace"
+        )
     if workers > 1 and not skip_llm:
         log(f"ideas: {workers} workers")
         results: dict[int, TradeIdea] = {}
@@ -585,17 +701,20 @@ def run(
     pmi_html: Path | str | None = None,
     services_html: Path | str | None = None,
     as_of: str | None = None,
+    qual_mode: str = DEEPDIVE_MODE,
+    dd_force: bool = False,
 ) -> dict:
     if as_of:
         apply_as_of(as_of)
-    log(f"weekly run start (run date {as_of_date()})")
+    running_mode = resolve_qual_mode(qual_mode, skip_llm)
+    log(f"weekly run start (run date {as_of_date()}, qual={running_mode})")
     ingest(
         max_tickers=max_tickers,
         force=force,
         pmi_html=pmi_html,
         services_html=services_html,
     )
-    ideas = generate_ideas(max_candidates=max_candidates, skip_llm=skip_llm)
+    ideas = generate_ideas(max_candidates=max_candidates, skip_llm=skip_llm, qual_mode=qual_mode, dd_force=dd_force)
     from ptm.eval import audit_run, write_audit
     from ptm.io import read_json
 
@@ -611,6 +730,10 @@ def run(
     summary = research_funnel(len(screened), fundamentals_n, candidates, ideas, book.ideas)
     fund_frame = read_df(fund_path) if fund_path.exists() else pd.DataFrame()
     summary["warnings"] = list(summary["warnings"]) + source_warnings(fund_frame)
+    if qual_mode == DEEPDIVE_MODE and running_mode != DEEPDIVE_MODE:
+        summary["warnings"].append(
+            "deep-dive qualitative unavailable for this run (llm/web key or backdated); used the EDGAR-pack verdict instead"
+        )
     log(summary["funnel"])
     for warning in summary["warnings"]:
         log(f"WARNING {warning}")

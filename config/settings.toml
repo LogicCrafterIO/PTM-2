@@ -164,11 +164,18 @@ temperature = 0.2
 max_tokens = 3200
 # Ideas are independent until the group pass. 1 keeps the old sequential behaviour;
 # 4-6 cuts a 154-name run from ~33 min to under 10 without tripping provider limits.
+# Applies doubly in deep-dive qualitative mode: each name now carries a full
+# research dive (~15 LLM calls + ~12 web searches), so this pool is what turns
+# hours into minutes. Five concurrent dives stay comfortably inside provider limits.
 idea_workers = 5
 # Requests per second across the whole process. Pacing beats discovering the provider's
 # limit through 429s: at 4 workers unpaced, one run logged 217 retries and 5 ideas lost
 # their catalysts entirely. 0 disables pacing.
 max_rps = 0
+# qualitative_bar / max_filing_chars / max_candidates still apply to the LEGACY
+# pass (--legacy-qual, and backdated runs which fall back to it). The deep-dive
+# verdict adapter runs on verdict_model; dive reach/limits live on the
+# DEEPSEARCH_MAX_* env vars and DEEPSEARCH_CACHE_DAYS (dive cache age in days).
 
 [asof]
 ism_months_available = 3   # month URLs ismworld.org still serves; sets the backdate floor

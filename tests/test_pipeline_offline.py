@@ -88,7 +88,9 @@ def test_broken_llm_json_still_writes_markdown(monkeypatch):
     monkeypatch.setattr("ptm.llm.llm_available", lambda: True)
     monkeypatch.setattr("ptm.pipeline.llm_available", lambda: True)
     monkeypatch.setattr("ptm.llm.chat_json", fake_chat)
-    ideas = generate_ideas(max_candidates=2, skip_llm=False)
+    # qual_mode="legacy": this test pins the template-fallback path; the
+    # deep-dive pass needs live web research and is covered in test_deepsearch_verdict.py.
+    ideas = generate_ideas(max_candidates=2, skip_llm=False, qual_mode="legacy")
     assert ideas
     for idea in ideas:
         assert idea.template_markdown.strip()
@@ -268,7 +270,9 @@ def test_parallel_ideas_preserve_screen_rank_order(monkeypatch):
     from ptm.quant import build_candidates
     from ptm.ranking import ordered_candidates
 
-    ideas = generate_ideas(max_candidates=None, skip_llm=False)
+    # qual_mode="legacy": this test pins screen order through the legacy
+    # verdict; the deep-dive pass is covered in test_deepsearch_verdict.py.
+    ideas = generate_ideas(max_candidates=None, skip_llm=False, qual_mode="legacy")
     universe = read_df(data_dir("curated", "universe.csv"))
     fundamentals = read_df(data_dir("curated", "yahoo_fundamentals.csv"))
     expected = [c.ticker for c in ordered_candidates(build_candidates(universe, fundamentals))]

@@ -2,16 +2,21 @@
 
 Serves the repo (viewer/, data/curated, ideas/) over HTTP — the same files the
 manual `python -m http.server` workflow served — plus a small JSON API so the
-Deep Dives tab can list, read, and GENERATE deep-dive reports from the browser.
+Deep Dives tab can list, read, and GENERATE deep-dive reports from the browser,
+and the Pipeline tab can run the full idea pipeline (whose qualitative pass now
+IS the deep dive).
 
     GET  /                          -> viewer/index.html
     GET  /api/deepdive/list         -> cached dives with metadata
     GET  /api/deepdive/report/<T>   -> {ticker, markdown} for one cached dive
     GET  /api/deepdive/status       -> batch generation progress
     POST /api/deepdive/generate     -> body {"tickers": ["PLTR", ...]}
+    GET  /api/pipeline/status       -> idea-pipeline run progress and result
+    POST /api/pipeline/run          -> body {"mode": "weekly"|"ideas", ...}
 
-Generation runs the real pipeline in a background thread, one ticker at a
-time, in the order entered. Run from the repo root:
+Both run the real pipeline in background threads; the deep-dive batch and an
+idea-pipeline run are mutually exclusive, so the two can never hammer the LLM
+at once. Run from the repo root:
 
     python -m ptm viewer --port 8765
 """
@@ -20,6 +25,7 @@ from __future__ import annotations
 
 import json
 import threading
+import time
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
@@ -40,6 +46,23 @@ _state: dict = {
     "started": "",
     "error": "",
     "events": [],
+}
+
+# One idea-pipeline run at a time, with its own live log tail. `events` carries
+# timestamped lines from ptm.log while the run is active; `result` is the run
+# summary dict (the same JSON `ptm weekly` prints) once it finishes.
+_pipe_lock = threading.Lock()
+_pipe_state: dict = {
+    "running": False,
+    "mode": "",
+    "qual_mode": "",
+    "started": "",
+    "finished": "",
+    "error": "",
+    "elapsed_s": 0,
+    "events": [],
+    "result": None,
+    "done": [],
 }
 
 
@@ -175,6 +198,104 @@ def _batch_worker(tickers: list[str], force: bool = False) -> None:
             _state["stage"] = ""
 
 
+# --- Idea-pipeline runs (the deep-dive qualitative is part of the pipeline) ---
+
+def _append_pipe_event(line: str) -> None:
+    with _pipe_lock:
+        events = _pipe_state.get("events") or []
+        events.append({"t": datetime.now(timezone.utc).isoformat(), "line": line})
+        _pipe_state["events"] = events[-800:]
+
+
+def _pipeline_worker(mode: str, opts: dict) -> None:
+    started = time.monotonic()
+    sink = lambda line: _append_pipe_event(line)  # noqa: E731
+    try:
+        from ptm.log import add_sink, remove_sink
+
+        add_sink(sink)
+        if mode == "weekly":
+            from ptm.pipeline import run
+
+            result = run(
+                max_tickers=opts.get("max_tickers"),
+                max_candidates=opts.get("max_candidates"),
+                skip_llm=bool(opts.get("skip_llm")),
+                force=bool(opts.get("force")),
+                qual_mode="legacy" if opts.get("legacy_qual") else "deepdive",
+                dd_force=bool(opts.get("dd_force")),
+            )
+        else:
+            from ptm.pipeline import generate_ideas
+
+            result = {
+                "mode": "ideas",
+                "ideas": len(
+                    generate_ideas(
+                        max_candidates=opts.get("max_candidates"),
+                        skip_llm=bool(opts.get("skip_llm")),
+                        qual_mode="legacy" if opts.get("legacy_qual") else "deepdive",
+                        dd_force=bool(opts.get("dd_force")),
+                    )
+                ),
+                "note": "books rebuilt from the fresh ideas; ingest left untouched",
+            }
+        with _pipe_lock:
+            _pipe_state["result"] = result
+    except Exception as exc:
+        log(f"viewer pipeline run: FAILED {exc}")
+        with _pipe_lock:
+            _pipe_state["error"] = str(exc)[:400]
+    finally:
+        remove_sink(sink)
+        with _pipe_lock:
+            _pipe_state["running"] = False
+            _pipe_state["finished"] = datetime.now(timezone.utc).isoformat()
+            _pipe_state["elapsed_s"] = round(time.monotonic() - started, 1)
+
+
+def _start_pipeline(mode: str, opts: dict) -> tuple[bool, dict]:
+    """Start a pipeline run unless the server is already busy elsewhere."""
+    if mode not in {"weekly", "ideas"}:
+        return False, {"error": "mode must be 'weekly' or 'ideas'"}
+    max_candidates = opts.get("max_candidates")
+    if max_candidates not in (None, ""):
+        try:
+            opts["max_candidates"] = max(1, int(max_candidates))
+        except (TypeError, ValueError):
+            return False, {"error": "max_candidates must be an integer"}
+    else:
+        opts["max_candidates"] = None
+    max_tickers = opts.get("max_tickers")
+    if max_tickers not in (None, ""):
+        try:
+            opts["max_tickers"] = max(1, int(max_tickers))
+        except (TypeError, ValueError):
+            return False, {"error": "max_tickers must be an integer"}
+    else:
+        opts["max_tickers"] = None
+    with _pipe_lock:
+        if _pipe_state["running"]:
+            return False, {"error": "a pipeline run is already in progress", "status": dict(_pipe_state)}
+        with _lock:
+            if _state["running"]:
+                return False, {"error": "a deep-dive batch is running; wait for it to finish first"}
+        _pipe_state.update(
+            running=True,
+            mode=mode,
+            qual_mode="legacy" if opts.get("legacy_qual") else "deepdive",
+            started=datetime.now(timezone.utc).isoformat(),
+            finished="",
+            error="",
+            elapsed_s=0,
+            events=[],
+            result=None,
+            done=[],
+        )
+    threading.Thread(target=_pipeline_worker, args=(mode, opts), daemon=True).start()
+    return True, {"started": True, "mode": mode}
+
+
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, fmt, *args) -> None:
         pass  # per-request noise stays off the console; failures reach the UI
@@ -219,6 +340,9 @@ class Handler(BaseHTTPRequestHandler):
         elif route == "/api/deepdive/status":
             with _lock:
                 self._json(dict(_state))
+        elif route == "/api/pipeline/status":
+            with _pipe_lock:
+                self._json(dict(_pipe_state))
         else:
             # Everything else is a static file from the repo root.
             rel = route.lstrip("/")
@@ -228,7 +352,26 @@ class Handler(BaseHTTPRequestHandler):
                 self._json({"error": "not found"}, 404)
 
     def do_POST(self) -> None:
-        if self.path.rstrip("/") != "/api/deepdive/generate":
+        route = self.path.rstrip("/")
+        if route == "/api/pipeline/run":
+            length = int(self.headers.get("Content-Length") or 0)
+            try:
+                body = json.loads(self.rfile.read(length) or b"{}")
+            except Exception:
+                self._json({"error": "invalid JSON body"}, 400)
+                return
+            opts = {
+                "max_candidates": body.get("max_candidates"),
+                "max_tickers": body.get("max_tickers"),
+                "skip_llm": bool(body.get("skip_llm")),
+                "force": bool(body.get("force")),
+                "legacy_qual": bool(body.get("legacy_qual")),
+                "dd_force": bool(body.get("dd_force")),
+            }
+            ok, payload = _start_pipeline(str(body.get("mode") or "ideas"), opts)
+            self._json(payload, 200 if ok else (409 if "already" in payload.get("error", "") else 400))
+            return
+        if route != "/api/deepdive/generate":
             self._json({"error": "not found"}, 404)
             return
         length = int(self.headers.get("Content-Length") or 0)
@@ -251,6 +394,13 @@ class Handler(BaseHTTPRequestHandler):
         if len(tickers) > 25:
             self._json({"error": "at most 25 tickers per batch"}, 400)
             return
+        with _pipe_lock:
+            if _pipe_state["running"]:
+                self._json(
+                    {"error": "an idea-pipeline run is in progress; wait for it to finish first"},
+                    409,
+                )
+                return
         with _lock:
             if _state["running"]:
                 self._json({"error": "a batch is already running", "status": dict(_state)}, 409)

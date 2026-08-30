@@ -90,3 +90,43 @@ def test_batch_worker_survives_failure(isolate_roots, monkeypatch):
     assert done["GOOD"]["ok"] is True
     assert done["BAD"]["ok"] is False
     assert "provider" in done["BAD"]["error"]
+
+
+def test_pipeline_worker_streams_log_and_result(isolate_roots, monkeypatch):
+    import ptm.viewer_server as vs
+
+    def fake_generate_ideas(**kwargs):
+        from ptm.log import log
+
+        log("ideas: researching 2 of 40 PE candidates")
+        return [object(), object()]
+
+    monkeypatch.setattr("ptm.pipeline.generate_ideas", fake_generate_ideas)
+    vs._pipeline_worker("ideas", {"legacy_qual": False, "dd_force": False})
+    st = dict(vs._pipe_state)
+    assert st["running"] is False
+    assert st["result"]["ideas"] == 2
+    assert any("researching 2 of 40" in e["line"] for e in st["events"])
+
+
+def test_pipeline_start_busy_and_bad_mode(isolate_roots, monkeypatch):
+    import ptm.viewer_server as vs
+
+    vs._pipe_state["running"] = True
+    try:
+        ok, payload = vs._start_pipeline("ideas", {})
+        assert ok is False and "already in progress" in payload["error"]
+    finally:
+        vs._pipe_state["running"] = False
+    ok, payload = vs._start_pipeline("nope", {})
+    assert ok is False and "mode" in payload["error"]
+    ok, payload = vs._start_pipeline("ideas", {"max_candidates": "x"})
+    assert ok is False and "max_candidates" in payload["error"]
+    # A busy deep-dive batch blocks a pipeline start (never hammer the LLM twice).
+    vs._state["running"] = True
+    vs._pipe_state["running"] = False
+    try:
+        ok, payload = vs._start_pipeline("ideas", {})
+        assert ok is False and "deep-dive batch" in payload["error"]
+    finally:
+        vs._state["running"] = False

@@ -7,7 +7,7 @@ Each stage logs and degrades gracefully; the final markdown always renders.
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
 from ptm.config import data_dir, env
 from ptm.deepsearch import analysis, macro_view
@@ -41,8 +41,20 @@ def filing_context(ticker: str, max_chars: int = 6000) -> str:
         return ""
 
 
-def _cache_path(ticker: str):
+def cache_path(ticker: str):
     return data_dir("raw", "deepsearch", "runs", f"{ticker}.json")
+
+
+def _cache_age_days(payload: dict) -> float | None:
+    """Days since the cached dive ran, from its recorded as_of date."""
+    stamp = str(payload.get("as_of") or "")
+    if not stamp:
+        return None
+    try:
+        ran_on = date.fromisoformat(stamp[:10])
+    except ValueError:
+        return None
+    return (datetime.now(timezone.utc).date() - ran_on).total_seconds() / 86400.0
 
 
 def run_deep_dive(
@@ -55,12 +67,17 @@ def run_deep_dive(
     max_results: int | None = None,
     max_fetches: int | None = None,
     progress=None,
+    max_age_days: int | None = None,
 ) -> DeepResult:
     """Full deep dive for one ticker. Cached unless --force.
 
     `progress`, when given, is called as `progress(stage, detail)` between
     stages so a caller (the viewer's batch runner) can show live state. It
     must never raise into the pipeline.
+
+    `max_age_days`, when set, treats a cached dive older than that many days as
+    a miss (an undated one too). The idea pipeline uses it so a weekly run sees
+    this week's research, while the viewer's on-demand dives keep any cache.
     """
 
     def report(stage: str, detail: str = "") -> None:
@@ -80,13 +97,19 @@ def run_deep_dive(
         result.error = "no OLLAMA_API_KEY: web search unavailable"
         return result
 
-    cache = _cache_path(ticker)
+    cache = cache_path(ticker)
     if cache.exists() and not force:
         from ptm.io import read_json
 
         cached = read_json(cache)
-        report("cache hit", "cached result loaded")
-        return DeepResult.model_validate(cached)
+        age = _cache_age_days(cached)
+        if max_age_days is None or (age is not None and age <= max_age_days):
+            report("cache hit", f"cached result loaded ({cached.get('as_of') or 'undated'})")
+            return DeepResult.model_validate(cached)
+        report(
+            "cache stale",
+            f"dive from {cached.get('as_of') or 'unknown date'} older than {max_age_days}d; rerunning",
+        )
 
     started = datetime.now(timezone.utc)
     result.as_of = started.date().isoformat()
@@ -110,7 +133,9 @@ def run_deep_dive(
     max_results = max_results or int(limits["max_results"])
     max_fetches = max_fetches or int(limits["max_fetches"])
 
-    # 1. Web research: plan → search → fetch → extract
+    # 1. Web research: plan → search → fetch → extract. A forced dive re-runs
+    # the queries too; otherwise a "fresh" dive would quietly stand on the
+    # cached pages from the last run.
     report("research", "planning web queries")
     research_out = research(
         ticker,
@@ -120,6 +145,7 @@ def run_deep_dive(
         max_results=max_results,
         max_fetches=max_fetches,
         progress=report,
+        use_cache=not force,
     )
     result.research = research_out
     result.research.as_of = result.as_of

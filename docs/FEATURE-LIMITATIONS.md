@@ -4,7 +4,49 @@ What the features do, what they cannot do, and exactly what stands in for the
 missing part. Read the **Forward EPS** section before trusting any P/E-based
 screen output, live or backdated.
 
-Last updated 2026-08-18.
+Last updated 2026-08-30.
+
+---
+
+## 0a. The qualitative pass is now the deep dive
+
+`ptm ideas` / `ptm weekly` replaced the EDGAR-pack qualitative pass
+(`research_pack` → extract → verdict, three LLM calls over ~12 KB of filing
+text) with a **full deep research dive per candidate** — filings grounding,
+planned web research, source-cited findings, drivers, a structured bull-vs-bear
+debate, a synthesised stance — and one verdict-model call
+(`ptm/deepsearch/verdict.py`) mapping that dossier onto the same structured
+`QualResult` the gates and the ranking already consumed. The old pass survives
+as `--legacy-qual`.
+
+What this buys and what it costs:
+
+* **The evidence base is web-grounded, not filing-only.** The old pack could
+  never see competitor moves, end-market data or the bear case; the dive plans
+  queries for exactly those angles and cites a source for every claim.
+* **Slow, by design.** ~15 LLM calls and ~12 web searches per name. The idea
+  thread pool (`[llm] idea_workers`, default 5) is what makes it minutes rather
+  than hours; `DEEPSEARCH_CACHE_DAYS` (default 2) reuses a fresh dive across
+  runs, and the per-query web caches are shared with the Deep-dives tab.
+* **Backdated runs fall back to the legacy verdict automatically** — web search
+  returns today's web, and serving that inside an "as of 2026-07-20" book is
+  lookahead. The fallback is logged at run start and repeated as a warning in
+  the run summary. This keeps the backdate guarantee in
+  `tests/test_backdate_lookahead.py` intact.
+* **Quantified evidence is verified, not trusted.** The adapter marks an
+  evidence item `quantified` only when the percentage it claims appears
+  verbatim in the dive text; anything else is stripped to an unquantified claim
+  (and flagged `unverifiable_magnitude_stripped`) before it can reach the
+  conviction score or gate on `min_quantified_for`.
+* **A failed dive defers, it does not pass.** A dive that errors leaves the
+  idea without a verdict (`extra.deepdive.error`), which keeps it out of the
+  book rather than guessing.
+
+_Stance mapping:_ constructive supports a long idea, cautious supports a short
+(a cautious read on a discounted name is *confirming* evidence), balanced
+supports neither, unclear defers. The verdict model is told — and the tests
+pin — that this mapping is side-aware, so a strong-company report no longer
+converts into an automatic long ticket.
 
 ---
 

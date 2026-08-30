@@ -174,9 +174,20 @@ def ideas(
         "--allow-stale-ism",
         help="Proceed when the run date's own ISM print is no longer served, using the newest older one.",
     ),
+    legacy_qual: bool = typer.Option(
+        False,
+        "--legacy-qual",
+        help="Use the EDGAR-pack qualitative verdict instead of the deep research dive (automatic on --as-of).",
+    ),
+    dd_force: bool = typer.Option(
+        False,
+        "--dd-force",
+        help="Rerun every deep dive from scratch, ignoring the dive and query caches.",
+    ),
 ) -> None:
     _pin(as_of, allow_stale_ism)
-    out = generate_ideas(max_candidates=max_candidates, skip_llm=skip_llm)
+    qual_mode = "legacy" if legacy_qual else "deepdive"
+    out = generate_ideas(max_candidates=max_candidates, skip_llm=skip_llm, qual_mode=qual_mode, dd_force=dd_force)
     from ptm.book import assemble_book
     from ptm.config import data_dir
     from ptm.io import read_json
@@ -203,8 +214,18 @@ def weekly(
         "--allow-stale-ism",
         help="Proceed when the run date's own ISM print is no longer served, using the newest older one.",
     ),
+    legacy_qual: bool = typer.Option(
+        False,
+        "--legacy-qual",
+        help="Use the EDGAR-pack qualitative verdict instead of the deep research dive (automatic on --as-of).",
+    ),
+    dd_force: bool = typer.Option(
+        False,
+        "--dd-force",
+        help="Rerun every deep dive from scratch, ignoring the dive and query caches.",
+    ),
 ) -> None:
-    """Ingest, screen, write ideas and a book, then audit — one command."""
+    """Ingest, screen, deep-dive every candidate, write ideas and a book, then audit — one command."""
     _pin(as_of, allow_stale_ism)
     result = run(
         max_tickers=max_tickers,
@@ -213,6 +234,8 @@ def weekly(
         force=force,
         pmi_html=pmi_html,
         services_html=services_html,
+        qual_mode="legacy" if legacy_qual else "deepdive",
+        dd_force=dd_force,
     )
     typer.echo(json.dumps(result, indent=2))
 

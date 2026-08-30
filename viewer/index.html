@@ -21,7 +21,7 @@
     * { box-sizing: border-box; }
     html, body { margin: 0; height: 100%; }
     body {
-      font: 13px/1.45 "Segoe UI", system-ui, sans-serif;
+      font: 15px/1.5 "Segoe UI", system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
     }
@@ -32,9 +32,9 @@
       padding: 14px 20px 8px;
       border-bottom: 1px solid var(--border);
     }
-    h1 { font-size: 16px; font-weight: 650; margin: 0; letter-spacing: .02em; }
-    h2.sec { font-size: 15px; margin: 18px 0 8px; }
-    .meta { color: var(--muted); font-size: 12px; }
+    h1 { font-size: 19px; font-weight: 650; margin: 0; letter-spacing: .02em; }
+    h2.sec { font-size: 17px; margin: 18px 0 8px; }
+    .meta { color: var(--muted); font-size: 13px; }
     .meta code { color: var(--accent); }
     nav {
       display: flex;
@@ -71,8 +71,8 @@
       padding: 10px 14px;
       min-width: 120px;
     }
-    .kpi .lbl { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
-    .kpi .val { font-size: 18px; font-weight: 650; font-variant-numeric: tabular-nums; }
+    .kpi .lbl { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+    .kpi .val { font-size: 20px; font-weight: 650; font-variant-numeric: tabular-nums; }
     .breaches {
       background: #2a2214;
       border: 1px solid #5a4720;
@@ -100,7 +100,7 @@
     input { min-width: 180px; }
     .wrap { overflow: auto; max-height: calc(100vh - 280px); border: 1px solid var(--border); border-radius: 8px; }
     table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
-    th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; }
     th { position: sticky; top: 0; background: var(--surface-2); color: var(--muted); font-weight: 600; cursor: pointer; user-select: none; }
     th.sorted { color: var(--accent); }
     td.wrap-cell { white-space: normal; max-width: 420px; }
@@ -111,10 +111,10 @@
     .side-short { color: var(--short); font-weight: 650; }
     .badge {
       display: inline-block;
-      padding: 1px 7px;
+      padding: 2px 8px;
       border-radius: 999px;
       background: var(--chip);
-      font-size: 11px;
+      font-size: 12.5px;
     }
     .badge.long { background: #163526; color: var(--long); }
     .badge.short { background: #3a1b22; color: var(--short); }
@@ -130,15 +130,15 @@
       border-radius: 8px;
       padding: 14px 16px;
     }
-    #detail h2 { margin: 0 0 8px; font-size: 16px; }
-    #detail h3 { margin: 16px 0 6px; font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+    #detail h2 { margin: 0 0 8px; font-size: 18px; }
+    #detail h3 { margin: 16px 0 6px; font-size: 14.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
     .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
     table.kv th { width: 150px; color: var(--muted); font-weight: 600; cursor: default; white-space: nowrap; }
     #detail .wrap { max-height: 280px; }
     @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
     .quote { border-left: 3px solid var(--accent); padding: 4px 0 4px 10px; color: #c9d3e0; margin: 6px 0; }
     .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-    .chip { background: var(--chip); border-radius: 999px; padding: 3px 9px; font-size: 12px; }
+    .chip { background: var(--chip); border-radius: 999px; padding: 3px 10px; font-size: 13px; }
     .chip.up { background: #163526; color: var(--long); }
     .chip.down { background: #3a1b22; color: var(--short); }
     .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
@@ -150,7 +150,7 @@
       cursor: pointer;
     }
     .card:hover, .card.selected { border-color: var(--accent); }
-    .card h3 { margin: 0 0 6px; font-size: 14px; }
+    .card h3 { margin: 0 0 6px; font-size: 15.5px; }
     pre {
       white-space: pre-wrap;
       background: var(--bg);
@@ -183,15 +183,17 @@
       padding: 18px 22px;
       max-height: calc(100vh - 240px);
       overflow: auto;
+      font-size: 15px;
+      line-height: 1.55;
     }
-    .dd-report h1 { font-size: 20px; margin: 0 0 4px; }
+    .dd-report h1 { font-size: 23px; margin: 0 0 4px; }
     .dd-report h1, .dd-report h2, .dd-report h3 { margin: 18px 0 8px; line-height: 1.3; }
     .dd-report h1 { margin-top: 0; }
-    .dd-report h2 { font-size: 16px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
-    .dd-report h3 { font-size: 14px; }
+    .dd-report h2 { font-size: 19px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+    .dd-report h3 { font-size: 16.5px; }
     .dd-report p { margin: 8px 0; }
     .dd-report ul { margin: 6px 0; padding-left: 22px; }
-    .dd-report li { margin: 3px 0; }
+    .dd-report li { margin: 4px 0; }
     .dd-report a { color: var(--accent); text-decoration: none; }
     .dd-report a:hover { text-decoration: underline; }
     .dd-report blockquote {
@@ -202,11 +204,11 @@
       background: rgba(230, 184, 77, .06);
     }
     .dd-report table { width: 100%; border-collapse: collapse; margin: 10px 0; }
-    .dd-report th, .dd-report td { border-bottom: 1px solid var(--border); padding: 5px 8px; }
+    .dd-report th, .dd-report td { border-bottom: 1px solid var(--border); padding: 6px 9px; }
     .dd-report th { background: var(--surface-2); color: var(--muted); position: static; cursor: default; }
-    .dd-report code { background: var(--chip); border-radius: 4px; padding: 1px 5px; font-size: 12px; }
+    .dd-report code { background: var(--chip); border-radius: 4px; padding: 1px 5px; font-size: 13.5px; }
     .dd-report hr { border: 0; border-top: 1px solid var(--border); margin: 18px 0; }
-    .stance { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 12px; font-weight: 650; }
+    .stance { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 13px; font-weight: 650; }
     .stance.constructive, .stance.bull { background: #163526; color: var(--long); }
     .stance.cautious, .stance.bear { background: #3a1b22; color: var(--short); }
     .stance.balanced { background: #3a2e12; color: var(--warn); }
@@ -221,23 +223,23 @@
       padding: 8px 16px; font: inherit; font-weight: 650; cursor: pointer; margin-top: 8px;
     }
     .dd-batch button:disabled { opacity: .45; cursor: wait; }
-    .dd-progress { margin-top: 8px; font-size: 12px; color: var(--muted); }
+    .dd-progress { margin-top: 8px; font-size: 13.5px; color: var(--muted); }
     .dd-progress .cur { color: var(--warn); font-weight: 650; }
     .dd-progress .stage-detail { color: var(--text); }
     .dd-progress .timer { color: var(--muted); font-variant-numeric: tabular-nums; }
     .dd-stepper { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0 6px; }
     .dd-step {
-      font-size: 11px; padding: 3px 9px; border-radius: 999px;
+      font-size: 12px; padding: 3px 9px; border-radius: 999px;
       background: var(--chip); color: var(--muted); white-space: nowrap;
     }
     .dd-step.active { background: #1c2a40; color: var(--accent); font-weight: 650; outline: 1px solid var(--accent); }
     .dd-step.done { background: #163526; color: var(--long); }
     .dd-step.active::after { content: " ⟳"; }
     .dd-log {
-      margin-top: 8px; max-height: 150px; overflow: auto; font-size: 11px;
+      margin-top: 8px; max-height: 220px; overflow: auto; font-size: 12px;
       background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px;
     }
-    .dd-log div { margin: 1px 0; font-family: "Consolas", monospace; font-size: 11px; color: #b9c4d4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .dd-log div { margin: 1px 0; font-family: "Consolas", monospace; font-size: 12px; color: #b9c4d4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .dd-log .t { color: var(--muted); }
     .dd-progress .cur { color: var(--warn); font-weight: 650; }
     .dd-done li { margin: 2px 0; }
@@ -246,6 +248,13 @@
     .sd-cautious { background: var(--short); }
     .sd-balanced { background: var(--warn); }
     .sd-unclear { background: var(--muted); }
+    .pipe-form { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; margin: 10px 0 2px; }
+    .pipe-form label { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-size: 14px; }
+    .pipe-form label input[type="checkbox"] { min-width: 0; }
+    .pipe-form select, .pipe-form input[type="number"] { min-width: 0; }
+    .pipe-form input[type="number"] { width: 110px; }
+    .pipe-note { color: var(--muted); font-size: 13.5px; margin: 6px 0 0; }
+    .dd-inline-report { margin-top: 14px; border-top: 2px solid var(--border); padding-top: 10px; max-height: calc(100vh - 320px); overflow: auto; }
   </style>
 </head>
 <body>
@@ -264,6 +273,7 @@
     <button data-tab="themes">Themes</button>
     <button data-tab="ism">ISM</button>
     <button data-tab="deepdives">Deep dives</button>
+    <button data-tab="pipeline">Pipeline</button>
     <button data-tab="audit">Audit</button>
   </nav>
   <main>
@@ -277,6 +287,7 @@
     <section id="tab-themes" class="panel"></section>
     <section id="tab-ism" class="panel"></section>
     <section id="tab-deepdives" class="panel"></section>
+    <section id="tab-pipeline" class="panel"></section>
     <section id="tab-audit" class="panel"></section>
     <div id="detail" hidden></div>
   </main>
@@ -299,6 +310,7 @@
       themeHistory: null,
       audit: null,
       deepdives: null,
+      pipelineLoaded: false,
       selected: null,
       sorts: {},
       window: "00-30d",
@@ -582,9 +594,14 @@
       </tr>`);
 
       showHtml(`
-        <h2><span class="${sideClass(c.side)}">${esc(c.side)}</span> ${esc(c.ticker)} · ${esc(c.name)}</h2>
+        <h2><span class="${sideClass(c.side)}">${esc(c.side)}</span> ${esc(c.ticker)} · ${esc(c.name)}
+          ${extra.deepdive && extra.deepdive.stance ? `<span class="stance ${esc(extra.deepdive.stance)}">${esc(extra.deepdive.stance)} dive</span>` : ""}
+        </h2>
         <p class="muted">${esc(c.sector)} · ${esc(c.industry)} · state ${esc(idea.state)} · ${esc(c.eg_case)}</p>
         <p>${esc(q.summary || q.why || "")}</p>
+        ${extra.deepdive ? `<p class="muted">Qualitative basis: deep research dive — stance <strong>${esc(extra.deepdive.stance || "?")}</strong>, confidence ${esc(extra.deepdive.confidence || "?")}, ${dash(extra.deepdive.findings)} findings, ${dash(extra.deepdive.debate_rounds)} debate rounds${extra.deepdive.as_of ? ` · run ${esc(extra.deepdive.as_of)}` : ""}${extra.deepdive.error ? ` · <span class="neg">${esc(extra.deepdive.error)}</span>` : ""}
+          <br><button id="dd-open" style="margin-top:6px">Show deep dive report</button></p>
+        <div id="dd-inline" class="dd-inline-report" hidden></div>` : ""}
         <div class="kpis">
           <div class="kpi"><div class="lbl">Price</div><div class="val">${num(c.price, 2)}</div></div>
           <div class="kpi"><div class="lbl">Mcap</div><div class="val" style="font-size:13px">${mcap(c.market_cap)}</div></div>
@@ -689,6 +706,17 @@
 
         ${idea.template_markdown ? `<h3>Template</h3><pre>${esc(idea.template_markdown)}</pre>` : ""}
       `);
+      const ddBtn = document.querySelector("#detail #dd-open");
+      if (ddBtn) {
+        ddBtn.addEventListener("click", () => {
+          const host = document.querySelector("#detail #dd-inline");
+          if (!host) return;
+          if (!host.hidden) { host.hidden = true; return; }
+          host.hidden = false;
+          loadDeepDiveInline(c.ticker, host);
+          ddBtn.textContent = "Hide deep dive report";
+        });
+      }
     }
 
     function bookHeader(book) {
@@ -1346,6 +1374,7 @@
       } catch (e) {
         state.deepdives = null;
       }
+      state.deepdivesLoaded = true;
       renderDeepDives();
     }
 
@@ -1359,7 +1388,7 @@
       const batch = `
         <div class="dd-batch">
           <strong>Generate new deep dives</strong>
-          <p class="hint" style="margin:4px 0 8px">Tickers run one at a time, in the order entered. Each dive takes 1-3 minutes (web search + LLM passes). Cached tickers are reused unless you tick Force.</p>
+          <p class="hint" style="margin:4px 0 8px">Tickers run one at a time, in the order entered. Each dive takes 1-3 minutes (web search + LLM passes). Cached tickers are reused unless you tick Force. Dives run here also power the <strong>Pipeline</strong> tab — idea runs reuse them as the qualitative verdict.</p>
           <textarea id="dd-tickers" placeholder="PLTR, TSLA, NVDA"></textarea>
           <label style="display:block;margin-top:6px"><input type="checkbox" id="dd-force" style="min-width:0"> Force regeneration (ignore cache)</label>
           <button id="dd-go">Run deep dives</button>
@@ -1438,7 +1467,7 @@
     }
 
     // Live deep-dive progress: stepper, current-stage detail, timers, log.
-    const DD_STAGES = ["startup", "filings", "macro", "search", "extract", "macro-impact", "drivers", "cases", "debate", "synthesis", "catalysts", "done"];
+    const DD_STAGES = ["startup", "filings", "macro", "research", "search", "fetch", "extract", "macro-impact", "drivers", "cases", "debate", "synthesis", "catalysts", "done"];
     const STAGE_LABEL = {
       startup: "startup",
       filings: "SEC filings",
@@ -1557,6 +1586,255 @@
       }
     }
 
+    // --- Pipeline tab: run the full idea pipeline (deep-dive qualitative) ---
+    let pipePollTimer = null;
+
+    // Per-ticker deep-dive progress, parsed from the pipeline's own log lines
+    // ("deepdive TICKER: stage — detail"). The pipeline runs several dives
+    // concurrently, so we track each one and render a stepper per active dive.
+    function renderPipeDives(events) {
+      const host = document.querySelector("#pipe-dives");
+      if (!host) return;
+      const dives = new Map(); // ticker -> {stage, detail, since, done, failed}
+      for (const ev of events || []) {
+        const line = ev.line || "";
+        const m = line.match(/deepdive (\S+): (\S+)(?: — (.*))?/);
+        if (m) {
+          const t = m[1];
+          const cur = dives.get(t) || { stage: "", detail: "", since: "", done: false, failed: false };
+          if (cur.stage !== m[2]) cur.since = ev.t || "";
+          cur.stage = m[2];
+          cur.detail = (m[3] || "").trim();
+          dives.set(t, cur);
+        }
+        const done = line.match(/idea (\S+): deep dive staged/);
+        if (done) {
+          const cur = dives.get(done[1]) || { stage: "", detail: "", since: "", done: false, failed: false };
+          cur.done = true;
+          dives.set(done[1], cur);
+        }
+        const fail = line.match(/idea (\S+): deep dive FAIL/);
+        if (fail) {
+          const cur = dives.get(fail[1]) || { stage: "", detail: "", since: "", done: false, failed: false };
+          cur.failed = true;
+          dives.set(fail[1], cur);
+        }
+      }
+      const active = [...dives.entries()].filter(([, d]) => !d.done && !d.failed);
+      if (!active.length) { host.innerHTML = ""; return; }
+      host.innerHTML = active.map(([ticker, d]) => {
+        const cached = d.stage === "cache hit" || d.stage === "cache stale";
+        const stageSecs = d.since ? Math.max(0, Math.floor((Date.now() - new Date(d.since).getTime()) / 1000)) : null;
+        return `
+        <div class="dd-batch" style="margin-bottom:8px;padding:8px 12px">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+            <strong style="font-variant-numeric:tabular-nums">${esc(ticker)}</strong>
+            <span class="dd-step ${cached ? "done" : "active"}">${stageLabel(d.stage)}</span>
+            ${stageSecs != null ? `<span class="timer" style="font-size:11px">${fmtSecs(stageSecs)}</span>` : ""}
+            ${d.detail ? `<span class="stage-detail" style="font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(d.detail)}</span>` : ""}
+          </div>
+          <div class="dd-stepper" style="margin:2px 0 0">${renderStepper(d.stage)}</div>
+        </div>`;
+      }).join("");
+    }
+
+    function fmtSecs(s) {
+      if (s == null) return "";
+      const m = Math.floor(s / 60);
+      return m > 0 ? `${m}m${String(Math.round(s % 60)).padStart(2, "0")}s` : `${Math.round(s)}s`;
+    }
+
+    function renderPipeLog(events) {
+      const logHost = document.querySelector("#pipe-log");
+      if (!logHost) return;
+      logHost.innerHTML = (events || []).map((e) => {
+        const time = e.t ? new Date(e.t).toTimeString().slice(0, 8) : "";
+        return `<div><span class="t">${time}</span> ${esc((e.line || "").replace(/^\[\d{2}:\d{2}:\d{2}\]\s*/, ""))}</div>`;
+      }).join("");
+      logHost.scrollTop = logHost.scrollHeight;
+    }
+
+    // A done run invalidates every curated view: book, windows and ideas all
+    // re-fetch from the files the run just wrote.
+    function invalidateCurated() {
+      state.book = null;
+      state.windows = null;
+      state.windowBooks = {};
+      state.ideas = null;
+      state.ranking = null;
+      state.candidates = null;
+      state.momentum = null;
+      state.groups = null;
+      state.macro = null;
+      state.fred = null;
+      state.themeCohorts = null;
+      state.themeIsm = null;
+      state.themeHistory = null;
+      state.audit = null;
+      state.ism = null;
+      renderBook();
+      renderWindows();
+    }
+
+    async function pollPipeline() {
+      const el = document.getElementById("tab-pipeline");
+      const progress = el && el.querySelector("#pipe-progress");
+      if (!progress) return; // tab closed; the run continues server-side
+      let st;
+      try {
+        const res = await fetch("/api/pipeline/status");
+        st = await res.json();
+      } catch (e) {
+        progress.innerHTML = `<span class="neg">Could not reach the viewer API.</span>`;
+        pipePollTimer = setTimeout(pollPipeline, 8000);
+        return;
+      }
+
+      // Always re-arm before any early-return, so polling never stops while the tab is open.
+      if (st.running) {
+        pipePollTimer = setTimeout(pollPipeline, 2500);
+      } else if (!st.finished && !st.result) {
+        // Idle — poll slowly to stay live without hammering the server.
+        pipePollTimer = setTimeout(pollPipeline, 10000);
+      }
+
+      // --- Derive per-idea progress from the log lines ---
+      const events = st.events || [];
+      let ideaDone = 0, ideaTotal = null, diveOk = 0, diveFail = 0;
+      for (const ev of events) {
+        const m = ev.line ? ev.line.match(/^.*\bidea (\d+)\/(\d+) /) : null;
+        if (m) { ideaDone = parseInt(m[1]); ideaTotal = parseInt(m[2]); }
+        if (ev.line && /deep dive FAIL/.test(ev.line)) diveFail++;
+        if (ev.line && /deep dive staged/.test(ev.line)) diveOk++;
+      }
+      const pct = (ideaTotal && ideaTotal > 0)
+        ? Math.round((ideaDone / ideaTotal) * 100)
+        : null;
+
+      // --- Render the status line ---
+      if (st.running) {
+        const goBtn = el.querySelector("#pipe-go");
+        if (goBtn) goBtn.disabled = true;
+        progress.innerHTML =
+          `<div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">` +
+          `<span>Running <strong>${esc(st.mode || "")} pipeline</strong> — qual: ${esc(st.qual_mode || "deepdive")}</span>` +
+          `<span class="timer">${st.started ? new Date(st.started).toTimeString().slice(0, 8) : ""} · ${fmtSecs(st.elapsed_s)}</span>` +
+          `</div>` +
+          (pct != null
+            ? `<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">` +
+              `<div style="flex:1;height:6px;background:var(--border);border-radius:3px">` +
+                `<div style="width:${pct}%;height:100%;background:var(--accent);border-radius:3px;transition:width .4s"></div>` +
+              `</div>` +
+              `<span style="font-size:12px;color:var(--muted)">${ideaDone}/${ideaTotal} ideas</span>` +
+              `<span style="font-size:11px;color:var(--muted)">${pct}%</span>` +
+              `</div>`
+            : `<div style="margin-bottom:6px">Deep-diving every candidate…</div>`) +
+          `<div style="font-size:12px;margin-bottom:4px">` +
+            `<span class="pos">${diveOk} dives ok</span>` +
+            (diveFail > 0 ? ` · <span class="neg">${diveFail} failed</span>` : "") +
+            (ideaTotal ? ` · ${ideaTotal - ideaDone - diveFail - diveOk} in progress` : "") +
+            `</div>`;
+        renderPipeDives(events);
+        renderPipeLog(events);
+        return; // polling already re-armed above
+      }
+
+      // --- Not running ---
+      renderPipeLog(events);
+      renderPipeDives(events); // clear any stale active-dive cards
+      const go = el.querySelector("#pipe-go");
+      if (go) go.disabled = false;
+      if (st.result) {
+        const r = st.result;
+        progress.innerHTML =
+          `<div class="pos" style="font-size:15px;font-weight:650">✔ Finished</div>` +
+          `<div style="margin-top:4px">${r.funnel ? esc(r.funnel) : esc(JSON.stringify(r)).slice(0, 400)}</div>` +
+          `<div style="margin-top:6px;font-size:12px;color:var(--muted)">${fmtSecs(st.elapsed_s)} elapsed · ${diveOk} dives ok${diveFail > 0 ? ", " + diveFail + " failed" : ""}</div>`;
+        if (st.error) progress.innerHTML += `<br><span class="neg">Run error: ${esc(st.error)}</span>`;
+        invalidateCurated();
+      } else if (st.error) {
+        progress.innerHTML = `<span class="neg">✗ Failed: ${esc(st.error)}</span>`;
+      } else if (st.finished) {
+        progress.innerHTML = `<div>Run finished. ${fmtSecs(st.elapsed_s)} elapsed.</div><div style="margin-top:4px;font-size:12px;color:var(--muted)">${diveOk} dives ok${diveFail > 0 ? ", " + diveFail + " failed" : ""}</div>`;
+        invalidateCurated();
+      } else {
+        progress.innerHTML = `<div style="color:var(--muted)">Idle — start a run above; progress streams below.</div>`;
+      }
+    }
+
+    async function loadPipeline() {
+      const el = document.getElementById("tab-pipeline");
+      el.innerHTML = `
+        <div class="dd-batch">
+          <strong>Run the idea pipeline — deep-dive qualitative on every candidate</strong>
+          <p class="hint" style="margin:6px 0 2px">
+            The weekly process now replaces its EDGAR-pack qualitative pass with a full <strong>deep research dive</strong>
+            per candidate (filings + planned web research, bull-vs-bear debate, source-cited stance), then builds
+            <strong>book.json, the per-window books (00-30d / 31-60d / 61-90d) and the audit</strong> from the surviving
+            longs and shorts, with beta swaps only if the portfolio breaches its limit.
+          </p>
+          <p class="pipe-note">Slow the first time: every dive takes minutes of web search + LLM. Dives cache
+          (<code>DEEPSEARCH_CACHE_DAYS</code>, default 2) and the search/page caches are shared with the Deep dives tab.
+          Backdated (<code>--as-of</code>) runs use the legacy EDGAR verdict, since web research is not point-in-time.</p>
+          <div class="pipe-form">
+            <label>Mode
+              <select id="pipe-mode">
+                <option value="weekly">Weekly run (ingest + screen + dives + books + audit)</option>
+                <option value="ideas">Ideas only (screen + dives + books; reuses ingested data)</option>
+              </select>
+            </label>
+            <label>Max candidates <input type="number" id="pipe-max-cand" placeholder="all" min="1"></label>
+            <label title="Weekly only: rebuild the caches from the live sources">Force ingest <input type="checkbox" id="pipe-force"></label>
+            <label title="Rerun every dive from scratch, ignoring dive + query caches">Ignore dive cache <input type="checkbox" id="pipe-dd-force"></label>
+            <label title="Use the old one-passage EDGAR verdict instead of the deep dive">Legacy qualitative <input type="checkbox" id="pipe-legacy"></label>
+          </div>
+          <button id="pipe-go">Run pipeline</button>
+          <div class="dd-progress" id="pipe-progress"></div>
+          <div id="pipe-dives" style="margin-top:8px"></div>
+          <div class="dd-log" id="pipe-log" style="display:none"></div>
+        </div>`;
+      el.querySelector("#pipe-go").addEventListener("click", async () => {
+        const go = el.querySelector("#pipe-go");
+        const body = {
+          mode: el.querySelector("#pipe-mode").value,
+          max_candidates: el.querySelector("#pipe-max-cand").value || null,
+          force: el.querySelector("#pipe-force").checked,
+          dd_force: el.querySelector("#pipe-dd-force").checked,
+          legacy_qual: el.querySelector("#pipe-legacy").checked,
+        };
+        go.disabled = true;
+        try {
+          const res = await fetch("/api/pipeline/run", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+          });
+          const payload = await res.json();
+          if (!res.ok) {
+            el.querySelector("#pipe-progress").innerHTML = `<span class="neg">${esc(payload.error || "failed to start")}</span>`;
+            go.disabled = false;
+            return;
+          }
+          el.querySelector("#pipe-log").style.display = "block";
+        } catch (e) {
+          el.querySelector("#pipe-progress").innerHTML = `<span class="neg">${esc(String(e.message || e))}</span>`;
+        }
+      });
+      if (pipePollTimer) clearTimeout(pipePollTimer);
+      pipePollTimer = setTimeout(pollPipeline, 0);
+    }
+
+    async function loadDeepDiveInline(ticker, host) {
+      host.innerHTML = `<p class="muted">Loading deep dive for ${esc(ticker)}…</p>`;
+      try {
+        const res = await fetch(`/ideas/deepdive/${encodeURIComponent(ticker)}/REPORT.md`);
+        if (!res.ok) { host.innerHTML = `<p class="err">No REPORT.md cached for ${esc(ticker)}.</p>`; return; }
+        host.innerHTML = mdToHtml(await res.text());
+      } catch (e) {
+        host.innerHTML = `<p class="err">${esc(String(e.message || e))}</p>`;
+      }
+    }
+
     function renderAudit() {
       const el = document.getElementById("tab-audit");
       const err = fileErr(state.audit, "audit.json");
@@ -1653,6 +1931,9 @@
       } else if (tab === "deepdives" && !state.deepdivesLoaded) {
         el.innerHTML = `<p class="muted">Loading cached dives…</p>`;
         await loadDeepDives();
+      } else if (tab === "pipeline" && !state.pipelineLoaded) {
+        el.innerHTML = `<p class="muted">Loading pipeline status…</p>`;
+        await loadPipeline();
       } else if (tab === "audit" && state.audit == null) {
         el.innerHTML = `<p class="muted">Loading audit.json…</p>`;
         state.audit = await loadOr("audit.json");
@@ -1701,8 +1982,8 @@
       renderWindows();
       renderIsm();
       document.getElementById("tab-ideas").innerHTML = `<p class="hint">Open the Ideas tab to load ideas.json (large; fetched on demand).</p>`;
-      ["screen", "momentum", "groups", "macro", "themes", "audit"].forEach((id) => {
-        document.getElementById("tab-" + id).innerHTML = `<p class="hint">Open this tab to load the JSON on demand.</p>`;
+      ["screen", "momentum", "groups", "macro", "themes", "audit", "deepdives", "pipeline"].forEach((id) => {
+        document.getElementById("tab-" + id).innerHTML = `<p class="hint">Open this tab to load the data on demand.</p>`;
       });
     })();
   </script>

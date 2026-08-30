@@ -96,15 +96,25 @@ def test_published_future_date_buckets_by_calendar_days(isolate_roots):
 
 
 def test_a_name_inside_the_catalyst_window_is_tradeable(isolate_roots):
-    """The gate and the buckets must agree: a 31-60d name can pass."""
+    """The gate and the buckets must agree: a 31-60d name can pass.
+
+    `earnings_in_window` measures from the run date, so pin it to REF — the
+    gate's units are calendar days and an unpinned date rots the test as the
+    real calendar drifts past the fixture (REF + 40d must stay 30-90d away).
+    """
+    from ptm.asof import set_as_of
     from ptm.risk import earnings_in_window
 
-    forty = REF + timedelta(days=40)
-    idea = _idea("MID", "Industrials", Side.LONG, forty.isoformat())
-    row = placements([idea], ref=REF)[0]
-    assert row["bucket"] == "31-60d"
-    in_window, _ = earnings_in_window(forty.isoformat(), low_days=30, high_days=90)
-    assert in_window is True
+    set_as_of(REF)
+    try:
+        forty = REF + timedelta(days=40)
+        idea = _idea("MID", "Industrials", Side.LONG, forty.isoformat())
+        row = placements([idea], ref=REF)[0]
+        assert row["bucket"] == "31-60d"
+        in_window, _ = earnings_in_window(forty.isoformat(), low_days=30, high_days=90)
+        assert in_window is True
+    finally:
+        set_as_of(None)
 
 
 def _no_network(monkeypatch, dates):

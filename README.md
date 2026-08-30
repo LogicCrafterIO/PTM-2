@@ -30,8 +30,14 @@ That single command:
 
 1. Ingests universe, prices, FRED, and ISM (live curl, else bundled July fixture)
 2. Ranks every PE-outlier candidate (`ideas/<today>/RANKING.md`)
-3. Runs qualitative + catalysts on **all** PE candidates (slow with LLM; `--max-candidates` for a smoke run)
-4. Assembles the book from top names that pass gates (max 6 long / 6 short)
+3. Runs a **full deep research dive per candidate** (filings + web research + bull/bear
+   debate — see [Deep single-ticker dives](#deep-single-ticker-dives)) and maps its
+   stance onto the qualitative verdict, then runs the catalyst pass on **all** PE
+   candidates. `--max-candidates` for a smoke run.
+4. Assembles **book.json** plus one book per earnings window (`book_00-30d.json`,
+   `book_31-60d.json`, `book_61-90d.json`, rendered to `BOOKS_BY_WINDOW.md`) from the
+   strongest longs and shorts that pass the gates (max 6 long / 6 short), with beta
+   swaps only if the portfolio breaches its limit
 5. Writes `ideas/<today>/AUDIT.md` and `data/curated/audit.json`
 
 The JSON summary includes a funnel so you can see how many names survived each cut, with long/short splits:
@@ -52,6 +58,8 @@ Useful flags:
 .\.venv\Scripts\python.exe -m ptm weekly --skip-llm
 .\.venv\Scripts\python.exe -m ptm weekly --max-tickers 50 --max-candidates 8
 .\.venv\Scripts\python.exe -m ptm weekly --force
+.\.venv\Scripts\python.exe -m ptm weekly --legacy-qual        # old one-passage EDGAR verdict instead of the dive
+.\.venv\Scripts\python.exe -m ptm weekly --dd-force           # rerun every dive from scratch
 .\.venv\Scripts\python.exe -m ptm weekly --pmi-html .\pmi.html --services-html .\services.html
 ```
 
@@ -202,7 +210,13 @@ to supply saved reports.
 ## Deep single-ticker dives
 
 The weekly pipeline answers "which names should I look at?". The deep dive
-answers the follow-up: **"what is really going on at THIS one?"**
+answers the follow-up: **"what is really going on at THIS one?"** — and as of the
+deep-dive qualitative mode, it is no longer a side report: it **replaced the old
+EDGAR-pack qualitative pass for every candidate**. `ptm ideas` / `ptm weekly`
+run the dive on each candidate instead of the single-passage pack verdict, and
+structured gates/ranking consume the dive's mapped stance. Use `--legacy-qual`
+for the old behaviour; on a backdated run the fallback is automatic, since web
+research is not point-in-time.
 
 ```powershell
 .\.venv\Scripts\python.exe -m ptm deepdive run PLTR
@@ -235,7 +249,11 @@ One ticker in, a full qualitative dossier out, written to
 
 Every claim in the report links to its source. Heavy passes (drivers, cases,
 debate, synthesis) run on the verdict model; extraction and catalysts run on the
-default. Results cache in `data/raw/deepsearch/runs/` — `--force` refetches.
+default. Results cache in `data/raw/deepsearch/runs/` — `--force` (or the
+pipeline's `--dd-force`) refetches, including the shared per-query web caches.
+The idea pipeline additionally treats a dive older than `DEEPSEARCH_CACHE_DAYS`
+(default 2) as stale and reruns it, so a weekly run sees this week's research
+while the viewer keeps any cache.
 
 Flags: `--max-queries`, `--max-results`, `--max-fetches` cap API usage for a
 cheaper, shallower pass; defaults live on the `DEEPSEARCH_*` env vars.
@@ -243,6 +261,19 @@ cheaper, shallower pass; defaults live on the `DEEPSEARCH_*` env vars.
 The macro/ISM section is read from `data/curated/macro_snapshot.json` and
 `data/curated/ism.json` — whatever `ptm weekly` last curated. Without those
 files the dive still runs and the section renders as unavailable.
+
+### The mapped verdict (ptm/deepsearch/verdict.py)
+
+The pipeline needs a structured `supports_outlier` verdict, evidence items with
+measured magnitudes, and a filings direction — the dive produces a stance, a
+debate and sourced findings. One verdict-model call per name maps the latter
+onto the former, with the same side-aware semantics as before (constructive
+supports a long; cautious supports a short; balanced supports neither) and one
+hard rule: a claim counts as **quantified only when its percentage appears
+verbatim in the dive text**, so the conviction score and the
+`min_quantified_for` gate can never be fed an invented number. Without an LLM
+the mapping degrades to a deterministic stance read, and the idea is marked as
+such.
 
 ### In the viewer
 
@@ -254,6 +285,15 @@ and they run one at a time, in order, with live progress. Ticks Force to ignore
 cache. Reports render without any build step through a small markdown renderer
 in `viewer/index.html`; generation needs the `ptm viewer` server (a plain
 `http.server` still browses cached reports, minus the generate form).
+
+The **Pipeline** tab runs the whole idea pipeline from the same browser: weekly
+(ingest + screen + dives + books + audit) or ideas-only, with optional max
+candidates, force-ingest, ignore-dive-cache and legacy-qualitative switches, a
+live log tail while it runs, and the run summary — after which the Book,
+Windows and Ideas tabs reload from the files the run just wrote. Opening any
+idea's detail pane shows the dive's stance chip and a button that renders the
+full REPORT.md inline. A pipeline run and a deep-dive batch are mutually
+exclusive so the LLM provider is never hit by both at once.
 
 ## Tests (does not touch live files)
 

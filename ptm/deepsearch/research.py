@@ -110,7 +110,7 @@ FETCHABLE = (
 )
 
 
-def execute_search(queries: list[str], max_results: int, progress=None) -> tuple[list[dict], list[str]]:
+def execute_search(queries: list[str], max_results: int, progress=None, use_cache: bool = True) -> tuple[list[dict], list[str]]:
     """Run every query, dedupe by URL, return (results, queries_actually_run)."""
     all_results: dict[str, dict] = {}
     ran: list[str] = []
@@ -121,7 +121,7 @@ def execute_search(queries: list[str], max_results: int, progress=None) -> tuple
             except Exception:
                 pass
         try:
-            for r in web_search(q, max_results=max_results):
+            for r in web_search(q, max_results=max_results, use_cache=use_cache):
                 url = r.get("url") or ""
                 if url and url not in all_results:
                     all_results[url] = r
@@ -203,11 +203,14 @@ def research(
     max_results: int,
     max_fetches: int,
     progress=None,
+    use_cache: bool = True,
 ) -> DeepResearch:
     """Plan queries, run them, fetch key pages, extract findings.
 
     `progress(stage, detail)` reports sub-step state; every call is guarded so
-    progress reporting can never break a dive.
+    progress reporting can never break a dive. `use_cache=False` re-runs queries
+    and fetches against the live API — a caller that forces a fresh dive must
+    not silently reuse yesterday's search results.
     """
     research = DeepResearch(ticker=ticker)
     if not web_available():
@@ -230,7 +233,7 @@ def research(
         log(f"deepsearch {ticker}: using fallback queries")
     research.queries_run = queries
 
-    results, ran = execute_search(queries, max_results, progress=report)
+    results, ran = execute_search(queries, max_results, progress=report, use_cache=use_cache)
     research.search_used = bool(results)
     log_usage(f"{ticker} search", len(ran), 0)
     if not results:
@@ -245,7 +248,7 @@ def research(
     if fetch_urls:
         report("fetch", f"fetching {len(fetch_urls)} full pages")
         with ThreadPoolExecutor(max_workers=4) as pool:
-            for page in pool.map(lambda u: _safe_fetch(u), fetch_urls):
+            for page in pool.map(lambda u: _safe_fetch(u, use_cache=use_cache), fetch_urls):
                 if page.get("content"):
                     pages.append(page)
     log_usage(f"{ticker} fetch", 0, len(pages))
@@ -262,9 +265,9 @@ def research(
     return research
 
 
-def _safe_fetch(url: str) -> dict:
+def _safe_fetch(url: str, use_cache: bool = True) -> dict:
     try:
-        return web_fetch(url)
+        return web_fetch(url, use_cache=use_cache)
     except Exception as exc:
         log(f"deepsearch: fetch FAILED {url}: {exc}")
         return {}

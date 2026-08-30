@@ -351,7 +351,10 @@ def chat_json(
     if last_error and content == "{}":
         raise last_error
     write_json(
-        log_dir / f"{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}.json",
+        # Microseconds: five concurrent idea workers fire several calls per
+        # second, and a second-resolution stamp silently lost all but one of
+        # a same-second burst of debug logs.
+        log_dir / f"{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%f')}.json",
         {
             "model": used,
             "finish_reason": finish_reason,

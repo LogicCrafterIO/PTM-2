@@ -42,6 +42,9 @@ class Settings(BaseSettings):
     deepsearch_max_queries: int = 12
     deepsearch_max_results: int = 8
     deepsearch_max_fetches: int = 8
+    # How many days an idea-pipeline run will reuse a ticker's cached deep dive
+    # before rerunning it. The viewer's on-demand dives keep any cache.
+    deepsearch_cache_days: int = 2
     sec_user_agent: str = "PTM-Idea-Engine/0.1 (contact: ptm-research@example.com)"
     fred_api_key: str = ""
 
