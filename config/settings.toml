@@ -172,6 +172,14 @@ idea_workers = 5
 # limit through 429s: at 4 workers unpaced, one run logged 217 retries and 5 ideas lost
 # their catalysts entirely. 0 disables pacing.
 max_rps = 0
+# A dive that survives chat_json's in-call backoffs (six, seconds-scale) — a
+# throttled burst or a used-up usage window — is retried WHOLE after a pause
+# instead of quietly dropping the name from the book. The full
+# dive_retry_wait_s applies to quota/credit exhaustion (waiting is the only
+# thing that clears it), shorter pauses to throttles. The shared query/page
+# caches make a retried dive cheaper than the first run. 0 restores fail-fast.
+dive_retries = 3
+dive_retry_wait_s = 120
 # qualitative_bar / max_filing_chars / max_candidates still apply to the LEGACY
 # pass (--legacy-qual, and backdated runs which fall back to it). The deep-dive
 # verdict adapter runs on verdict_model; dive reach/limits live on the

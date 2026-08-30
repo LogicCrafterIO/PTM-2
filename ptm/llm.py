@@ -238,6 +238,34 @@ def _pace_llm() -> None:
 RATE_LIMIT_RETRIES = 6
 RATE_LIMIT_BACKOFF = 2.5
 _THROTTLE_MARKERS = ("429", "too many requests", "rate limit", "ratelimit", "overloaded", "503", "502")
+# Usage/credit exhaustion, which is NOT a momentary throttle: seconds-scale
+# backoff cannot clear it and falling back to a smaller model shares the same
+# key, so it would hit the same wall. Callers that want to outlast one must
+# wait on the order of minutes - the dive retry ladder does, chat_json does not.
+_QUOTA_MARKERS = (
+    "402",
+    "payment required",
+    "insufficient credit",
+    "out of credit",
+    "credit balance",
+    "quota exceeded",
+    "usage limit",
+    "billing",
+)
+
+
+def is_quota_text(text: str) -> bool:
+    lowered = (text or "").lower()
+    if re.search(r"\b402\b", lowered):
+        return True
+    return any(marker in lowered for marker in _QUOTA_MARKERS if not marker.isdigit())
+
+
+def is_quota_error(exc: Exception) -> bool:
+    status = getattr(exc, "status_code", None) or getattr(getattr(exc, "response", None), "status_code", None)
+    if status == 402:
+        return True
+    return is_quota_text(str(exc))
 
 
 def _is_throttled(exc: Exception) -> bool:
@@ -309,6 +337,7 @@ def chat_json(
     content = "{}"
     used = primary
     finish_reason = ""
+    quota_dead = False
     for used in models:
         timeout_tries = 0
         for attempt in range(RATE_LIMIT_RETRIES):
@@ -330,6 +359,13 @@ def chat_json(
                 break
             except Exception as exc:
                 last_error = exc
+                # Usage/credit exhaustion does not clear on seconds-scale
+                # backoff, and every fallback model shares the same key, so
+                # trying them just burns more quota. Raise out of chat_json
+                # now; the dive retry ladder owns minute-scale waits for this.
+                if is_quota_error(exc):
+                    quota_dead = True
+                    break
                 # Running ideas concurrently makes 429s routine rather than
                 # exceptional. Without this an idea silently lost its catalysts
                 # to a transient throttle, which reads identically to "no
@@ -346,7 +382,7 @@ def chat_json(
                     log(f"llm: timeout on {used}, retrying pinned model once")
                     continue
                 break
-        if last_error is None:
+        if quota_dead or last_error is None:
             break
     if last_error and content == "{}":
         raise last_error

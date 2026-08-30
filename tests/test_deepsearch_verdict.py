@@ -192,6 +192,84 @@ def test_failed_dive_defers(monkeypatch):
     assert any("deepdive_incomplete" in flag for flag in qual.red_flags)
 
 
+def test_quota_detection():
+    from ptm.llm import is_quota_error, is_quota_text
+
+    assert is_quota_error(RuntimeError("connection reset")) is False
+    exc429 = RuntimeError("429 too many requests")
+    exc429.status_code = 429
+    assert is_quota_error(exc429) is False  # 429 is a throttle, not quota
+    quota = type("Q", (Exception,), {"status_code": 402})()
+    assert is_quota_error(quota) is True
+    assert is_quota_text("provider says: quota exceeded for this key") is True
+    assert is_quota_text("usage limit reached, try later") is True
+    assert is_quota_text("connection reset") is False
+
+
+def test_dive_retry_ladder_outlasts_throttling(monkeypatch):
+    """A 429-dead dive is retried whole, then succeeds; quota waits the full pause."""
+    import ptm.pipeline as pl
+    from ptm.llm import is_quota_error
+    from ptm.deepsearch.models import DeepResult
+
+    ok = DeepResult(ticker="TICK")
+    throttles = {"n": 0}
+
+    def flaky(ticker, **kwargs):
+        throttles["n"] += 1
+        if throttles["n"] < 3:
+            exc = RuntimeError("429 too many requests")
+            exc.status_code = 429
+            raise exc
+        return ok
+
+    monkeypatch.setattr(pl, "run_deep_dive", flaky)
+    sleeps: list[float] = []
+    result = pl.run_deep_dive_with_retries("TICK", sleeper=sleeps.append, retries=3, wait_s=120)
+    assert result is ok
+    assert throttles["n"] == 3
+    assert len(sleeps) == 2  # two failed attempts, then success
+    assert all(0 < s <= 60 for s in sleeps)  # throttle pauses stay short
+
+    # Quota gets the full configured wait, and an error-y RESULT (a dive that
+    # came back with error set instead of raising) walks the same ladder.
+    quota_calls = {"n": 0}
+
+    def quota_dives(ticker, **kwargs):
+        quota_calls["n"] += 1
+        if quota_calls["n"] < 2:
+            return DeepResult(ticker=ticker, error="402 payment required: quota exceeded")
+        return ok
+
+    monkeypatch.setattr(pl, "run_deep_dive", quota_dives)
+    sleeps2: list[float] = []
+    out = pl.run_deep_dive_with_retries("TICK", sleeper=sleeps2.append, retries=2, wait_s=120)
+    assert out.error == ""
+    assert sleeps2 == [120.0]
+    assert is_quota_error(RuntimeError("quota exceeded")) is True
+
+
+def test_dive_retry_exhaustion_raises_last_failure(monkeypatch):
+    """Retries spent and still failing: the error resurfaces to the idea."""
+    import ptm.pipeline as pl
+    from ptm.deepsearch.models import DeepResult
+
+    calls = {"n": 0}
+
+    def always_dead(ticker, **kwargs):
+        calls["n"] += 1
+        return DeepResult(ticker=ticker, error="no findings from web research")
+
+    monkeypatch.setattr(pl, "run_deep_dive", always_dead)
+    sleeps: list[float] = []
+    out = pl.run_deep_dive_with_retries("TICK", sleeper=sleeps.append, retries=2, wait_s=30)
+    # A permanently empty research pass isn't quota — short pauses, budget spent,
+    # final result returned with its error so the idea reads as deferred.
+    assert calls["n"] == 3
+    assert out.error == "no findings from web research"
+    assert len(sleeps) == 2 and all(s <= 20 for s in sleeps)
+
+
 def test_pipeline_uses_deep_dive_qual(monkeypatch):
     """End to end: the dive's stance becomes the gate, the dive text the idea file."""
     seed_pipeline_data()

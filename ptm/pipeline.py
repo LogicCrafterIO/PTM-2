@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -60,6 +61,74 @@ from ptm.quant import build_candidates
 from ptm.drift import consensus_drift
 from ptm.ranking import cohort_rows, conviction, conviction_detail, momentum, reconcile_sides, ordered_candidates, write_ranking
 from ptm.risk import earnings_in_window, prm_for
+from ptm.llm import is_quota_error, is_quota_text
+
+
+def run_deep_dive_with_retries(
+    ticker: str,
+    *,
+    sleeper=time.sleep,
+    retries: int | None = None,
+    wait_s: int | None = None,
+    **kwargs,
+) -> "DeepResult":
+    """A deep dive that outlasts provider throttling and used-up quota.
+
+    chat_json already retries a second-scale 429 six times with backoff. What
+    outlasts it is the minute-scale case: a burst that survives every backoff,
+    or usage credits that ran out mid-run. Retried naively the dive fails, the
+    idea silently loses its verdict and leaves the book. So the WHOLE dive is
+    retried after a pause — full `dive_retry_wait_s` for quota (a credit
+    top-up or usage window reset is the only thing that clears it), shorter
+    for throttles — until `dive_retries` extra attempts are spent. The shared
+    query/page caches make a retried dive cheaper than the first run, and a
+    failed attempt returns whatever partial result the dive produced with its
+    `error` set, exactly as a failing adapter would see it.
+
+    The provider's session-usage exhaustion arrives as a 429 with a
+    "session usage limit" message, which is_quota_error() classifies as quota -
+    seconds-scale backoff and smaller fallback models cannot clear it, only
+    waiting can.
+
+    Keyword-only `retries`/`wait_s` (tests) override the config values;
+    `dive_retries = 0` restores fail-fast.
+    """
+    cfg = toml_settings().get("llm") or {}
+    retries = max(0, int(retries if retries is not None else cfg.get("dive_retries", 3)))
+    wait_s = max(5, int(wait_s if wait_s is not None else cfg.get("dive_retry_wait_s", 120)))
+    result = None
+    failure: Exception | None = None
+    attempt = 0
+    while True:
+        result = None
+        failure = None
+        attempt += 1
+        try:
+            result = run_deep_dive(ticker, **kwargs)
+        except Exception as exc:  # noqa: BLE001 - the retry ladder owns everything
+            failure = exc
+        if (result is not None and not result.error) or attempt > retries:
+            break
+        quota = is_quota_error(failure) if failure is not None else is_quota_text(result.error)
+        if failure is None and result is not None and result.error:
+            # A dive returns an error result instead of raising for several
+            # failure modes (no findings, failed research stage). Listing the
+            # error keeps the wait for TEMPORARY problems; a permanently empty
+            # research pass repeats fast enough that the extra attempts cost
+            # only their log lines.
+            pause = wait_s if quota else min(wait_s, 20)
+        else:
+            pause = wait_s if quota else min(wait_s, 20 * attempt)
+        log(
+            f"idea {ticker}: dive "
+            + ("failed" if failure is not None else f"error ({result.error[:80]})")
+            + f" — retry {attempt}/{retries} in {pause}s"
+            + (" (quota/usage: waiting for the window to reset)" if quota else "")
+        )
+        sleeper(pause)
+    if result is None:
+        raise failure  # type: ignore[misc]
+    return result
 
 
 
@@ -424,7 +493,7 @@ def generate_ideas(
         report_rel = f"deepdive/{cand.ticker}/REPORT.md"
         cache_days = int(env().deepsearch_cache_days)
         try:
-            result = run_deep_dive(
+            result = run_deep_dive_with_retries(
                 cand.ticker,
                 name=cand.name,
                 sector=cand.sector,
