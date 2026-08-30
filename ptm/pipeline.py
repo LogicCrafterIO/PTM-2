@@ -7,7 +7,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import CancelledError, ThreadPoolExecutor, as_completed
+from threading import Event
 
 from ptm.asof import (
     AsOfUnavailable,
@@ -64,12 +65,47 @@ from ptm.risk import earnings_in_window, prm_for
 from ptm.llm import is_quota_error, is_quota_text
 
 
+class QuotaExhausted(RuntimeError):
+    """The provider's session usage is gone; only the window reset clears it.
+
+    Raised by the research funnel once the circuit breaker concludes this is
+    not a transient 429: the run stops LOUDLY at the dives it reached instead
+    of grinding every remaining candidate through futile retries. Rerunning
+    after the reset resumes cheaply — completed dives are cached, and failed
+    dives were never cached, so exactly the missing set is re-dived.
+    """
+
+
+def _quota_strike(strikes: dict, exc: Exception, quota_stop) -> None:
+    """Count consecutive quota-killed dives; trip the breaker at two.
+
+    Two in a row (each already having spent its own 3×120s ladder) is not a
+    rate-limit burst — the session is out of usage. One strike from a long
+    healthy stretch is still given its retries; any non-quota failure resets
+    the count so a flaky name never trips the breaker.
+    """
+    if quota_stop is None:
+        return
+    if is_quota_error(exc):
+        strikes["n"] += 1
+        if strikes["n"] >= 2 and not quota_stop.is_set():
+            quota_stop.set()
+            log(
+                "ideas: provider session usage limit confirmed twice in a row — "
+                "pausing the idea run. Rerun after the usage window resets; "
+                "completed dives are cached and will be skipped."
+            )
+    else:
+        strikes["n"] = 0
+
+
 def run_deep_dive_with_retries(
     ticker: str,
     *,
     sleeper=time.sleep,
     retries: int | None = None,
     wait_s: int | None = None,
+    quota_stop=None,
     **kwargs,
 ) -> "DeepResult":
     """A deep dive that outlasts provider throttling and used-up quota.
@@ -91,7 +127,10 @@ def run_deep_dive_with_retries(
     waiting can.
 
     Keyword-only `retries`/`wait_s` (tests) override the config values;
-    `dive_retries = 0` restores fail-fast.
+    `dive_retries = 0` restores fail-fast. `quota_stop` (a threading.Event set
+    by the pipeline's circuit breaker) makes in-flight dives bail after the
+    current attempt instead of serving out their full retry ladder against a
+    provider that is already hard-out of usage.
     """
     cfg = toml_settings().get("llm") or {}
     retries = max(0, int(retries if retries is not None else cfg.get("dive_retries", 3)))
@@ -110,6 +149,11 @@ def run_deep_dive_with_retries(
         if (result is not None and not result.error) or attempt > retries:
             break
         quota = is_quota_error(failure) if failure is not None else is_quota_text(result.error)
+        if quota_stop is not None and quota_stop.is_set():
+            # The pipeline has already concluded the provider is out of usage;
+            # waiting out the ladder here just delays the clean stop.
+            log(f"idea {ticker}: dive aborted mid-retry — quota stop is set")
+            break
         if failure is None and result is not None and result.error:
             # A dive returns an error result instead of raising for several
             # failure modes (no findings, failed research stage). Listing the
@@ -492,6 +536,12 @@ def generate_ideas(
     fund = read_df(data_dir("curated", "yahoo_fundamentals.csv"))
     total = len(chosen)
 
+    # The quota circuit breaker is shared by every worker thread: `n` counts
+    # CONSECUTIVE quota-killed dives (any non-quota failure resets it), and the
+    # event, once set, makes in-flight retry ladders and queued ideas bail fast.
+    quota_strikes = {"n": 0}
+    quota_stop = Event()
+
     def _research_deep(idea: TradeIdea, cand: Candidate) -> str:
         """The deep dive IS the qualitative pass. Returns the rendered dive.
 
@@ -501,7 +551,7 @@ def generate_ideas(
         (ptm.deepsearch.verdict) maps that dossier onto the structured
         QualResult the gates and the book ranking consume, one verdict-model
         call whose quantified magnitudes are verified against the dive text.
-        Results cache by ticker across runs; `dd_force` or an older
+        results cache by ticker across runs; `dd_force` or an older
         `deepsearch_cache_days` cache reruns the dive.
         """
         report_rel = f"deepdive/{cand.ticker}/REPORT.md"
@@ -514,8 +564,10 @@ def generate_ideas(
                 industry=cand.industry,
                 force=dd_force,
                 max_age_days=None if dd_force else cache_days,
+                quota_stop=quota_stop,
             )
         except Exception as exc:
+            _quota_strike(quota_strikes, exc, quota_stop)
             idea.extra["deepdive"] = {"error": str(exc)[:200], "report": report_rel}
             raise
         deep_md = render_markdown(result)
@@ -538,6 +590,8 @@ def generate_ideas(
         return deep_md
 
     def _research(i: int, cand: Candidate) -> TradeIdea:
+        if quota_stop.is_set():
+            raise QuotaExhausted(f"skipped: idea run paused for provider usage reset ({cand.ticker})")
         log(f"idea {i}/{total} {cand.side.value} {cand.ticker}  ism={cand.ism_score} eg={cand.eg_case}")
         cand = _attach_evidence(cand)
         cand.warnings = candidate_warnings(cand)
@@ -711,14 +765,33 @@ def generate_ideas(
     if workers > 1 and not skip_llm:
         log(f"ideas: {workers} workers")
         results: dict[int, TradeIdea] = {}
+        quota_stop_reason = ""
         with ThreadPoolExecutor(max_workers=workers) as pool:
             futures = {pool.submit(_research, i, cand): i for i, cand in enumerate(chosen, start=1)}
             for future in as_completed(futures):
                 index = futures[future]
                 try:
                     results[index] = future.result()
+                except CancelledError:
+                    continue
+                except QuotaExhausted as exc:
+                    if not quota_stop_reason:
+                        quota_stop_reason = (
+                            f"provider session usage limit reached — run paused after "
+                            f"{len(results)} staged ideas; completed dives are cached, so a "
+                            "rerun after the usage window resets resumes the redo from here"
+                        )
+                        quota_stop.set()
+                        for f in futures:
+                            f.cancel()
+                    log(f"idea #{index} paused: {exc}")
                 except Exception as exc:
                     log(f"idea #{index} crashed: {exc}")
+        if quota_stop_reason:
+            # The queued futures raise on result(); drain without noise, then
+            # surface the pause as the run's error so the viewer shows WHY the
+            # funnel stopped short of 197.
+            raise QuotaExhausted(quota_stop_reason)
         # Output order follows screen rank, not completion order.
         ideas: list[TradeIdea] = [results[i] for i in sorted(results)]
     else:
