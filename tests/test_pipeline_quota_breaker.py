@@ -57,3 +57,34 @@ def test_quota_breaker_trips_on_two_consecutive_quota_failures():
     assert strikes["n"] == 2
     _strike(strikes, flaky, stop)  # a non-quota failure never UN-sets a tripped breaker
     assert stop.is_set()
+
+
+def test_quota_breaker_counts_rate_limited_error_results():
+    """A sustained 429 storm arrives as error RESULTS, not exceptions — the
+    breaker must see them, or a whole run grinds through 100+ failed dives
+    on 20s ladders (which is exactly what happened on 2026-08-30)."""
+    from threading import Event
+
+    from ptm.pipeline import _quota_strike, note_incomplete_dive
+
+    strikes, stop = {"n": 0}, Event()
+    throttled = RuntimeError("dive incomplete: web search rate-limited (HTTP 429)")
+    registry: list[dict] = []
+
+    _strike = __import__("ptm.pipeline", fromlist=["_quota_strike"])._quota_strike
+    note_incomplete_dive({"ticker": "AAA", "reason": throttled.args[0]}, registry)
+    _strike(strikes, throttled, stop)
+    assert not stop.is_set(), "one throttled dive still gets its ladder"
+    note_incomplete_dive({"ticker": "BBB", "reason": throttled.args[0]}, registry)
+    _strike(strikes, throttled, stop)
+    assert stop.is_set(), "two rate-limited dives in a row = the run is throttled"
+    assert [d["ticker"] for d in registry] == ["AAA", "BBB"]
+
+
+def test_registry_note_dedupes():
+    from ptm.pipeline import note_incomplete_dive
+
+    sink: list[dict] = []
+    note_incomplete_dive({"ticker": "AAA", "reason": "x"}, sink)
+    note_incomplete_dive({"ticker": "AAA", "reason": "x"}, sink)
+    assert len(sink) == 1

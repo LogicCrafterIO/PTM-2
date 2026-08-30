@@ -128,6 +128,20 @@ def test_no_search_results_fails_clean(mock_llm, monkeypatch):
     result = run_deep_dive("TEST", force=True)
     assert result.error != ""
     assert result.thesis is None
+    assert "returned no results" in result.error  # genuinely empty, not rate-limited
+
+
+def test_rate_limited_search_named_as_such(mock_llm, monkeypatch):
+    """A provider 429 storm must not masquerade as an empty search."""
+    import requests as _r
+
+    def throttled(*a, **k):
+        raise _r.HTTPError("429 Client Error: too many requests")
+
+    monkeypatch.setattr(research_mod, "web_search", throttled)
+    result = run_deep_dive("TEST", force=True)
+    assert result.thesis is None
+    assert "rate-limited" in result.error, f"429 surfaced as: {result.error}"
 
 
 def test_stage_failure_degrades_not_dies(mock_llm, mock_web, monkeypatch):

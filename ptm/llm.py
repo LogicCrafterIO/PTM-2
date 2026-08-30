@@ -261,6 +261,28 @@ def is_quota_text(text: str) -> bool:
     return any(marker in lowered for marker in _QUOTA_MARKERS if not marker.isdigit())
 
 
+# A provider 429 ("too many requests") is not the same as used-up quota, but it
+# is equally useless to hammer: the dive ladder must wait minutes, and two
+# consecutive rate-limited dives mean the whole run is throttled. Kept separate
+# from is_quota_* on purpose — inside chat_json a 429 still gets its own
+# second-scale backoff and fallback-model path; only the dive ladder and the
+# run-level breaker treat it as pause-worthy.
+_RATE_LIMIT_MARKERS = (
+    "429",
+    "rate-limited",
+    "rate limited",
+    "rate limit",
+    "too many requests",
+)
+
+
+def is_rate_limited(exc_or_text) -> bool:
+    """HTTP 429 / throttle-shaped: wait minutes, don't slam again."""
+    text = str(getattr(exc_or_text, "response", None) and getattr(exc_or_text, "response").text or exc_or_text)
+    lowered = (text or "").lower()
+    return any(marker in lowered for marker in _RATE_LIMIT_MARKERS)
+
+
 def is_quota_error(exc: Exception) -> bool:
     status = getattr(exc, "status_code", None) or getattr(getattr(exc, "response", None), "status_code", None)
     if status == 402:

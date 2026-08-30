@@ -19,7 +19,7 @@ from ptm.deepsearch.web import (
     web_fetch,
     web_search,
 )
-from ptm.llm import JSON_HINT, chat_json, llm_available, verdict_model
+from ptm.llm import JSON_HINT, chat_json, is_rate_limited, llm_available, verdict_model
 from ptm.log import log
 
 PLAN_SYSTEM = (
@@ -110,10 +110,18 @@ FETCHABLE = (
 )
 
 
-def execute_search(queries: list[str], max_results: int, progress=None, use_cache: bool = True) -> tuple[list[dict], list[str]]:
-    """Run every query, dedupe by URL, return (results, queries_actually_run)."""
+def execute_search(queries: list[str], max_results: int, progress=None, use_cache: bool = True) -> tuple[list[dict], list[str], list[str]]:
+    """Run every query, dedupe by URL, return (results, queries_run, failures).
+
+    A failed query is NOT the same as a query that genuinely returned nothing:
+    a provider 429 wall fails every query in the dive, and swallowing the why
+    (leaving only a log line) turned sustained throttling into 'web search
+    returned no results' — misread as bad luck and retried on a 20s ladder
+    that cannot outlast it.
+    """
     all_results: dict[str, dict] = {}
     ran: list[str] = []
+    failures: list[str] = []
     for i, q in enumerate(queries, 1):
         if progress is not None:
             try:
@@ -127,8 +135,9 @@ def execute_search(queries: list[str], max_results: int, progress=None, use_cach
                     all_results[url] = r
             ran.append(q)
         except Exception as exc:
+            failures.append(str(exc)[:160])
             log(f"deepsearch: query FAILED {q!r}: {exc}")
-    return list(all_results.values()), ran
+    return list(all_results.values()), ran, failures
 
 
 def extract_findings(
@@ -233,11 +242,17 @@ def research(
         log(f"deepsearch {ticker}: using fallback queries")
     research.queries_run = queries
 
-    results, ran = execute_search(queries, max_results, progress=report, use_cache=use_cache)
+    results, ran, search_failures = execute_search(queries, max_results, progress=report, use_cache=use_cache)
     research.search_used = bool(results)
     log_usage(f"{ticker} search", len(ran), 0)
     if not results:
-        research.error = "web search returned no results"
+        limited = any(is_rate_limited(err) for err in search_failures)
+        if search_failures and limited:
+            research.error = "web search rate-limited (HTTP 429): the provider is throttling — the dive ladder waits out the throttle automatically"
+        elif search_failures:
+            research.error = f"web search failed ({search_failures[-1]})"
+        else:
+            research.error = "web search returned no results"
         return research
 
     # Full-page fetch for the sources most likely to carry numbers in context.

@@ -62,7 +62,7 @@ from ptm.quant import build_candidates
 from ptm.drift import consensus_drift
 from ptm.ranking import cohort_rows, conviction, conviction_detail, momentum, reconcile_sides, ordered_candidates, write_ranking
 from ptm.risk import earnings_in_window, prm_for
-from ptm.llm import is_quota_error, is_quota_text
+from ptm.llm import is_quota_error, is_quota_text, is_rate_limited
 
 
 class QuotaExhausted(RuntimeError):
@@ -77,26 +77,44 @@ class QuotaExhausted(RuntimeError):
 
 
 def _quota_strike(strikes: dict, exc: Exception, quota_stop) -> None:
-    """Count consecutive quota-killed dives; trip the breaker at two.
+    """Count consecutive quota- or rate-limit-killed dives; trip at two.
 
-    Two in a row (each already having spent its own 3×120s ladder) is not a
-    rate-limit burst — the session is out of usage. One strike from a long
-    healthy stretch is still given its retries; any non-quota failure resets
-    the count so a flaky name never trips the breaker.
+    Two in a row (each already having spent its own ladder) is not a transient
+    burst — the session is out of usage or hard-throttled. One strike from a
+    long healthy stretch is still given its retries; any ordinary failure
+    resets the count so a flaky name never trips the breaker. Error RESULTS
+    (a dive returning `web search rate-limited (429)` rather than raising)
+    strike too — sustained throttling arrives that way, not as exceptions.
     """
     if quota_stop is None:
         return
-    if is_quota_error(exc):
+    if is_quota_error(exc) or is_rate_limited(exc):
         strikes["n"] += 1
         if strikes["n"] >= 2 and not quota_stop.is_set():
             quota_stop.set()
             log(
-                "ideas: provider session usage limit confirmed twice in a row — "
+                "ideas: provider throttling/usage limit confirmed twice in a row — "
                 "pausing the idea run. Rerun after the usage window resets; "
                 "completed dives are cached and will be skipped."
             )
     else:
         strikes["n"] = 0
+
+
+def _incomplete_registry_path():
+    return data_dir("curated", "deepdive_incomplete.json")
+
+
+def note_incomplete_dive(entry: dict, sink: list) -> None:
+    """Record a dive that finished with an error so the next run picks it up.
+
+    Failed dives are never cached, so a rerun re-dives them automatically; the
+    registry exists to make that VISIBLE — to the next run's start-up log, the
+    audit, and the user — instead of leaving the failures scattered across
+    idea files and log lines.
+    """
+    if entry not in sink:
+        sink.append(entry)
 
 
 def run_deep_dive_with_retries(
@@ -148,7 +166,13 @@ def run_deep_dive_with_retries(
             failure = exc
         if (result is not None and not result.error) or attempt > retries:
             break
-        quota = is_quota_error(failure) if failure is not None else is_quota_text(result.error)
+        # A 429 or a used-up session both only clear with minutes of waiting —
+        # seconds-scale backoff cannot outlast either, so both get the full
+        # quota pause instead of the 20s transient pause.
+        quota = (
+            (is_quota_error(failure) if failure is not None else is_quota_text(result.error))
+            or (is_rate_limited(failure) if failure is not None else is_rate_limited(result.error))
+        )
         if quota_stop is not None and quota_stop.is_set():
             # The pipeline has already concluded the provider is out of usage;
             # waiting out the ladder here just delays the clean stop.
@@ -539,8 +563,11 @@ def generate_ideas(
     # The quota circuit breaker is shared by every worker thread: `n` counts
     # CONSECUTIVE quota-killed dives (any non-quota failure resets it), and the
     # event, once set, makes in-flight retry ladders and queued ideas bail fast.
+    # `incomplete_dives` collects every dive that ended with an error so the run
+    # can hand the list to the next one (the registry file).
     quota_strikes = {"n": 0}
     quota_stop = Event()
+    incomplete_dives: list[dict] = []
 
     def _research_deep(idea: TradeIdea, cand: Candidate) -> str:
         """The deep dive IS the qualitative pass. Returns the rendered dive.
@@ -556,6 +583,13 @@ def generate_ideas(
         """
         report_rel = f"deepdive/{cand.ticker}/REPORT.md"
         cache_days = int(env().deepsearch_cache_days)
+
+        def _register_incomplete(reason: str) -> None:
+            note_incomplete_dive(
+                {"ticker": cand.ticker, "side": cand.side.value, "reason": reason[:160]},
+                incomplete_dives,
+            )
+
         try:
             result = run_deep_dive_with_retries(
                 cand.ticker,
@@ -568,8 +602,12 @@ def generate_ideas(
             )
         except Exception as exc:
             _quota_strike(quota_strikes, exc, quota_stop)
+            _register_incomplete(f"dive failed: {exc}")
             idea.extra["deepdive"] = {"error": str(exc)[:200], "report": report_rel}
             raise
+        if result.error:
+            _quota_strike(quota_strikes, RuntimeError(result.error), quota_stop)
+            _register_incomplete(f"dive incomplete: {result.error}")
         deep_md = render_markdown(result)
         ideas_dir("deepdive", cand.ticker, "REPORT.md").write_text(deep_md, encoding="utf-8")
         idea.extra["deepdive"] = deepdive_extra(result, report_rel)
@@ -756,6 +794,21 @@ def generate_ideas(
     # dive multiplies LLM calls per name, which makes the pool the difference
     # between hours and a lunch break. SEC stays inside its shared rate limit;
     # the pool size caps concurrent dives.
+    if qual_mode == DEEPDIVE_MODE:
+        reg_path = _incomplete_registry_path()
+        prev = {}
+        try:
+            prev = read_json(reg_path) if reg_path.exists() else {}
+        except Exception:
+            prev = {}
+        n_prev = int(prev.get("count") or 0)
+        if n_prev:
+            first = ", ".join(d.get("ticker", "?") for d in (prev.get("dives") or [])[:10])
+            log(
+                f"deep dives: {n_prev} were left incomplete by the previous run — they re-dive "
+                f"automatically this run (failed dives write no cache); completed dives reuse "
+                f"theirs. First: {first}"
+            )
     workers = max(1, int((toml_settings().get("llm") or {}).get("idea_workers", 1)))
     if qual_mode == DEEPDIVE_MODE and workers > 1 and float((toml_settings().get("llm") or {}).get("max_rps") or 0) <= 0:
         log(
@@ -825,6 +878,25 @@ def generate_ideas(
     # Second pass: a cross-sectional LLM read of each group's fundamental cases.
     reviews = run_group_reviews(ideas, snap, day=day, skip_llm=skip_llm)
     write_json(data_dir("curated", "ideas.json"), [i.model_dump() for i in ideas])
+
+    # Hand the next run its repair list: every dive that ended incomplete this
+    # run. Failed dives are never cached, so a rerun re-dives them automatically
+    # — the registry makes that visible instead of leaving it in log lines.
+    write_json(
+        _incomplete_registry_path(),
+        {
+            "as_of": day,
+            "count": len(incomplete_dives),
+            "dives": incomplete_dives,
+            "note": "failed dives are never cached; rerunning the pipeline re-dives these automatically",
+        },
+    )
+    if incomplete_dives:
+        names = ", ".join(d["ticker"] for d in incomplete_dives[:15])
+        log(
+            f"deep dives: {len(incomplete_dives)} INCOMPLETE this run (throttle/usage) — "
+            f"rerunning the pipeline re-dives them automatically. First: {names}"
+        )
 
     rows = placements(ideas)
     notes = []

@@ -287,45 +287,43 @@ def test_quota_detection():
 
 
 def test_dive_retry_ladder_outlasts_throttling(monkeypatch):
-    """A 429-dead dive is retried whole, then succeeds; quota waits the full pause."""
+    """Transient crashes get short pauses; 429-shaped failures get minutes."""
     import ptm.pipeline as pl
-    from ptm.llm import is_quota_error
+    from ptm.llm import is_quota_error, is_rate_limited
     from ptm.deepsearch.models import DeepResult
 
     ok = DeepResult(ticker="TICK")
-    throttles = {"n": 0}
+    flaky = {"n": 0}
 
-    def flaky(ticker, **kwargs):
-        throttles["n"] += 1
-        if throttles["n"] < 3:
-            exc = RuntimeError("429 too many requests")
-            exc.status_code = 429
-            raise exc
+    def crashy(ticker, **kwargs):
+        flaky["n"] += 1
+        if flaky["n"] < 3:
+            raise RuntimeError("connection reset by peer")
         return ok
 
-    monkeypatch.setattr(pl, "run_deep_dive", flaky)
+    monkeypatch.setattr(pl, "run_deep_dive", crashy)
     sleeps: list[float] = []
     result = pl.run_deep_dive_with_retries("TICK", sleeper=sleeps.append, retries=3, wait_s=120)
     assert result is ok
-    assert throttles["n"] == 3
-    assert len(sleeps) == 2  # two failed attempts, then success
-    assert all(0 < s <= 60 for s in sleeps)  # throttle pauses stay short
+    assert all(0 < s <= 60 for s in sleeps)  # transient pauses stay short
 
-    # Quota gets the full configured wait, and an error-y RESULT (a dive that
-    # came back with error set instead of raising) walks the same ladder.
-    quota_calls = {"n": 0}
+    # A 429 — raised or returned as an error result — cannot be outlasted by
+    # seconds-scale waits: the ladder uses the full configured pause for it.
+    throttles = {"n": 0}
 
-    def quota_dives(ticker, **kwargs):
-        quota_calls["n"] += 1
-        if quota_calls["n"] < 2:
-            return DeepResult(ticker=ticker, error="402 payment required: quota exceeded")
+    def throttled(ticker, **kwargs):
+        throttles["n"] += 1
+        if throttles["n"] < 3:
+            return DeepResult(ticker=ticker, error="web search rate-limited (HTTP 429): throttling")
         return ok
 
-    monkeypatch.setattr(pl, "run_deep_dive", quota_dives)
+    monkeypatch.setattr(pl, "run_deep_dive", throttled)
     sleeps2: list[float] = []
     out = pl.run_deep_dive_with_retries("TICK", sleeper=sleeps2.append, retries=2, wait_s=120)
     assert out.error == ""
-    assert sleeps2 == [120.0]
+    assert sleeps2 == [120.0, 120.0], "a rate-limited dive waits the full quota pause, not 20s"
+    assert is_rate_limited("web search rate-limited (HTTP 429)") is True
+    assert is_rate_limited("some other failure") is False
     assert is_quota_error(RuntimeError("quota exceeded")) is True
 
 
