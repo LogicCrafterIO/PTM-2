@@ -36,7 +36,13 @@ class Settings(BaseSettings):
     ollama_api_key: str = ""
     ollama_base_url: str = "https://ollama.com/v1"
     ollama_model: str = "kimi-k2.7-code"
-    ollama_verdict_model: str = "deepseek-v4-pro:0813"
+    # Verdict/dive reasoning model. Was deepseek-v4-pro:0813 - arguably sharper,
+    # but it burned the provider's usage window mid-run (~10 heavy calls per
+    # candidate dive, x173 candidates) and left ideas unbookable. gpt-oss:20b
+    # does the structured verdict work at a fraction of the usage; override with
+    # OLLAMA_VERDICT_MODEL when running a small manual batch where quality
+    # matters more than headroom.
+    ollama_verdict_model: str = "gpt-oss:20b"
     ollama_max_tokens: int = 8192
     ollama_max_filing_chars: int = 24000
     deepsearch_max_queries: int = 12

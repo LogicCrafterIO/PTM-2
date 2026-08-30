@@ -91,6 +91,66 @@ def test_stance_supports_side_aware():
     assert stance_supports("", Side.SHORT) is None
 
 
+def test_score_aggregation_mirrors_long_short():
+    """Fixed weights, driver confidence scaling, and the long/short mirror."""
+    from ptm.deepsearch.verdict import aggregate_scores, score_debate, score_supports
+
+    thesis = Thesis(
+        stance="balanced",
+        drivers=[
+            Driver(name="Valuation premium unjustified", direction="headwind", confidence="high"),
+            Driver(name="Catalyst: FDA approval", direction="tailwind", confidence="medium"),
+            Driver(name="Competitive moat widening", direction="tailwind", confidence="high"),
+            Driver(name="Litigation risk", direction="headwind", confidence="high"),
+            Driver(name="Margin trajectory", direction="headwind", confidence="medium"),
+        ],
+        debate=[
+            DebateRound(driver="Valuation premium unjustified", bull="b", bear="r", verdict="bull", verdict_side="bull"),
+            DebateRound(driver="Catalyst: FDA approval slips", bull="b", bear="r", verdict="bear", verdict_side="bear"),
+            DebateRound(driver="Competitive moat widening", bull="b", bear="r", verdict="bull", verdict_side="bull"),
+            DebateRound(driver="Litigation risk", bull="b", bear="r", verdict="tie", verdict_side="tie"),
+            DebateRound(driver="Margin trajectory", bull="b", bear="r", verdict="bear", verdict_side="bear"),
+        ],
+    )
+    rows = score_debate(thesis, None)  # no adapter: deterministic off verdict_side + confidence
+    # bull high: +1.5*1.0*0.30 = +0.45 ; bear medium catalysts: -1.5*0.7*0.20 = -0.21
+    # bull high competitive: +1.5*1.0*0.12 = +0.18 ; tie: 0 ; bear medium fundamentals: -1.5*0.7*0.30 = -0.315
+    agg = aggregate_scores(rows)
+    assert abs(agg["s"] - 0.105) < 1e-6
+    # single bull-won valuation driver at +1.5 base: ((0.45/0.3)+2)/4*10 = 8.8;
+    # single bear-won medium catalyst driver: ((-0.21/0.2)+2)/4*10 = 2.4
+    assert agg["valuation"] == 8.8 and agg["catalysts"] == 2.4 and agg["risk"] == 5.0
+    assert agg["long"] + agg["short"] == 10.0
+    # The balanced band defers both sides; beyond the threshold it is side-decisive.
+    assert score_supports(agg["s"], Side.LONG, 0.6) is None
+    assert score_supports(agg["s"], Side.SHORT, 0.6) is None
+    assert score_supports(0.7, Side.LONG, 0.6) is True
+    assert score_supports(0.7, Side.SHORT, 0.6) is False
+    assert score_supports(-0.7, Side.SHORT, 0.6) is True  # the same dive, flipped
+
+
+def test_scorecard_rendered_in_idea_markdown():
+    from ptm.models import DriverScore, QualResult
+
+    from ptm.deepsearch.render import _scorecard_md
+
+    qual = QualResult(
+        score_s=1.2,
+        score_long=8.0,
+        score_short=2.0,
+        score_valuation=6.5,
+        driver_scores=[
+            DriverScore(driver="Pricing power", category="fundamentals", score=1.5, verdict_side="bull", confidence="high", weight=0.3, contribution=0.45, why="backlog up"),
+        ],
+    )
+    md = "\n".join(_scorecard_md(qual))
+    assert "S = +1.20" in md
+    assert "long thesis 8.0/10" in md and "short thesis 2.0/10" in md
+    assert "| Pricing power | fundamentals | bull | +1.50 | high | 30% | +0.45 |" in md
+    # absent categories read n/a instead of a fabricated number
+    assert "competitive n/a" in md
+
+
 def test_verify_quantified_strips_invented_magnitudes():
     text = "Backlog up 22% year over year; revenue up 40%."
     ok = EvidenceItem(claim="backlog", impact_pct=22.0, impact_on="earnings", quantified=True)
@@ -149,13 +209,24 @@ def test_adapter_call_produces_structured_verdict(monkeypatch):
             ],
             "kpis": ["backlog", "pricing"],
             "operating_plan": "add capacity in 2027",
+            # One per debate round; the model scores magnitude and category, the
+            # weights are applied in code.
+            "driver_scores": [
+                {"driver": "Pricing power", "category": "fundamentals", "score": 2.0, "why": "decisive backlog and pricing evidence"},
+            ],
         }
 
     monkeypatch.setattr("ptm.deepsearch.verdict.chat_json", fake_chat)
     monkeypatch.setattr("ptm.deepsearch.verdict.llm_available", lambda: True)
     text = "Backlog up 22% after price increases. Revenue up 40% y/y."
     qual = qual_from_deepdive(_dive(), _candidate(Side.LONG), text)
-    assert qual.supports_outlier is True
+    # The score decides: one decisively bull-won driver, fundamentals weight
+    # 0.30, driver confidence high -> S = +2.0 * 1.0 * 0.30 = +0.60.
+    assert qual.score_s == 0.6
+    assert qual.score_long == 6.5 and qual.score_short == 3.5
+    assert qual.score_fundamentals == 10.0 and qual.score_valuation is None
+    assert len(qual.driver_scores) == 1 and qual.driver_scores[0].contribution == 0.6
+    assert qual.supports_outlier is True  # |S| = threshold -> side-decisive
     assert qual.filing_direction == "improving"
     assert qual.momentum_durability == "building"
     # quantified=True survives only where the figure appears in the dive text.
@@ -165,7 +236,7 @@ def test_adapter_call_produces_structured_verdict(monkeypatch):
     assert any("unverifiable_magnitude_stripped" in flag for flag in qual.red_flags)
     assert qual.evidence_against[0].quantified is False
     assert qual.operating_plan == "add capacity in 2027"
-    assert qual.why.startswith("[dive: constructive]")
+    assert qual.why.startswith("[dive: constructive | S=+0.60]")
     assert "verdict" not in (qual.denial_reason or "")
 
 

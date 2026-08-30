@@ -24,6 +24,7 @@ at once. Run from the repo root:
 from __future__ import annotations
 
 import json
+import re
 import threading
 import time
 from datetime import datetime, timezone
@@ -31,6 +32,15 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 from ptm.config import ROOT, data_dir, ideas_dir
 from ptm.log import log
+
+# Live dive progress, parsed from the pipeline's own log lines as they stream
+# past (the same lines the viewer shows). Kept as O(1) state per ticker so the
+# Pipeline tab can show every concurrent dive's current stage even after those
+# lines have scrolled out of the log ring.
+_PIPE_DIVE_RE = re.compile(r"deepdive (\S+): (\S+)(?: — (.*))?")
+_PIPE_STAGED_RE = re.compile(r"idea (\S+): deep dive staged")
+_PIPE_FAIL_RE = re.compile(r"idea (\S+): deep dive FAIL")
+_PIPE_IDEA_RE = re.compile(r"idea (\d+)/(\d+) ")
 
 _lock = threading.Lock()
 # Batch state plus the live per-ticker stage. `stage` holds what the pipeline
@@ -50,7 +60,9 @@ _state: dict = {
 
 # One idea-pipeline run at a time, with its own live log tail. `events` carries
 # timestamped lines from ptm.log while the run is active; `result` is the run
-# summary dict (the same JSON `ptm weekly` prints) once it finishes.
+# summary dict (the same JSON `ptm weekly` prints) once it finishes. `dives`
+# tracks in-flight deep dives (ticker -> {stage, detail, since, seq}); staged/
+# failed count finished dives; ideas_started/total feed the progress bar.
 _pipe_lock = threading.Lock()
 _pipe_state: dict = {
     "running": False,
@@ -63,7 +75,13 @@ _pipe_state: dict = {
     "events": [],
     "result": None,
     "done": [],
+    "staged": 0,
+    "failed": 0,
+    "ideas_started": 0,
+    "ideas_total": 0,
+    "dives": {},
 }
+_started_mono = 0.0
 
 
 def _report_progress(ticker: str, stage: str, detail: str) -> None:
@@ -201,10 +219,47 @@ def _batch_worker(tickers: list[str], force: bool = False) -> None:
 # --- Idea-pipeline runs (the deep-dive qualitative is part of the pipeline) ---
 
 def _append_pipe_event(line: str) -> None:
+    now = datetime.now(timezone.utc).isoformat()
     with _pipe_lock:
         events = _pipe_state.get("events") or []
-        events.append({"t": datetime.now(timezone.utc).isoformat(), "line": line})
-        _pipe_state["events"] = events[-800:]
+        events.append({"t": now, "line": line})
+        _pipe_state["events"] = events[-3000:]
+        # Fold the line into the live dive/idea progress. Cheap regexes against
+        # a string we were already holding; keeps counters exact even after old
+        # log lines drop out of the ring.
+        m = _PIPE_IDEA_RE.search(line)
+        if m:
+            try:
+                done_n, total_n = int(m.group(1)), int(m.group(2))
+            except ValueError:
+                done_n = total_n = 0
+            if total_n > 0:
+                _pipe_state["ideas_total"] = total_n
+            _pipe_state["ideas_started"] = max(_pipe_state["ideas_started"], done_n)
+            return
+        m = _PIPE_STAGED_RE.search(line)
+        if m:
+            _pipe_state["staged"] += 1
+            _pipe_state["dives"].pop(m.group(1), None)
+            return
+        m = _PIPE_FAIL_RE.search(line)
+        if m:
+            _pipe_state["failed"] += 1
+            _pipe_state["dives"].pop(m.group(1), None)
+            return
+        m = _PIPE_DIVE_RE.search(line)
+        if m:
+            ticker, stage, detail = m.group(1), m.group(2), (m.group(3) or "").strip()
+            seq = len(_pipe_state["dives"])
+            prev = _pipe_state["dives"].get(ticker)
+            if prev:
+                # Same ticker, same stage: keep the original start time but
+                # refresh the detail line (query 4/8 etc. stream through it).
+                seq = prev.get("seq", seq)
+                since = prev["since"] if prev.get("stage") == stage else now
+            else:
+                since = now
+            _pipe_state["dives"][ticker] = {"stage": stage, "detail": detail, "since": since, "seq": seq}
 
 
 def _pipeline_worker(mode: str, opts: dict) -> None:
@@ -280,6 +335,8 @@ def _start_pipeline(mode: str, opts: dict) -> tuple[bool, dict]:
         with _lock:
             if _state["running"]:
                 return False, {"error": "a deep-dive batch is running; wait for it to finish first"}
+        global _started_mono
+        _started_mono = time.monotonic()
         _pipe_state.update(
             running=True,
             mode=mode,
@@ -291,6 +348,11 @@ def _start_pipeline(mode: str, opts: dict) -> tuple[bool, dict]:
             events=[],
             result=None,
             done=[],
+            staged=0,
+            failed=0,
+            ideas_started=0,
+            ideas_total=0,
+            dives={},
         )
     threading.Thread(target=_pipeline_worker, args=(mode, opts), daemon=True).start()
     return True, {"started": True, "mode": mode}
@@ -342,7 +404,13 @@ class Handler(BaseHTTPRequestHandler):
                 self._json(dict(_state))
         elif route == "/api/pipeline/status":
             with _pipe_lock:
-                self._json(dict(_pipe_state))
+                snap = dict(_pipe_state)
+                snap["dives"] = dict(_pipe_state.get("dives") or {})
+                if snap["running"] and _started_mono:
+                    # Live elapsed while running; the final value is set exactly once
+                    # in the worker's finally block.
+                    snap["elapsed_s"] = round(time.monotonic() - _started_mono, 1)
+            self._json(snap)
         else:
             # Everything else is a static file from the repo root.
             rel = route.lstrip("/")

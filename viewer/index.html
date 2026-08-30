@@ -596,6 +596,7 @@
       showHtml(`
         <h2><span class="${sideClass(c.side)}">${esc(c.side)}</span> ${esc(c.ticker)} · ${esc(c.name)}
           ${extra.deepdive && extra.deepdive.stance ? `<span class="stance ${esc(extra.deepdive.stance)}">${esc(extra.deepdive.stance)} dive</span>` : ""}
+          ${extra.deepdive && extra.deepdive.score_long != null ? `<span class="stance sd-balanced">S ${esc((extra.deepdive.score_s > 0 ? "+" : "") + Number(extra.deepdive.score_s).toFixed(2))} · long ${esc(Number(extra.deepdive.score_long).toFixed(1))}/10 · short ${esc(Number(extra.deepdive.score_short).toFixed(1))}/10</span>` : ""}
         </h2>
         <p class="muted">${esc(c.sector)} · ${esc(c.industry)} · state ${esc(idea.state)} · ${esc(c.eg_case)}</p>
         <p>${esc(q.summary || q.why || "")}</p>
@@ -1589,53 +1590,32 @@
     // --- Pipeline tab: run the full idea pipeline (deep-dive qualitative) ---
     let pipePollTimer = null;
 
-    // Per-ticker deep-dive progress, parsed from the pipeline's own log lines
-    // ("deepdive TICKER: stage — detail"). The pipeline runs several dives
-    // concurrently, so we track each one and render a stepper per active dive.
-    function renderPipeDives(events) {
+    // Per-ticker deep-dive progress from the server's live dive state
+    // (/api/pipeline/status -> dives: {ticker: {stage, detail, since, seq}}).
+    // The server folds every log line into this O(1) state, so cards stay up
+    // even after the underlying log lines scroll out of the ring buffer.
+    function renderPipeDiveCards(dives) {
       const host = document.querySelector("#pipe-dives");
       if (!host) return;
-      const dives = new Map(); // ticker -> {stage, detail, since, done, failed}
-      for (const ev of events || []) {
-        const line = ev.line || "";
-        const m = line.match(/deepdive (\S+): (\S+)(?: — (.*))?/);
-        if (m) {
-          const t = m[1];
-          const cur = dives.get(t) || { stage: "", detail: "", since: "", done: false, failed: false };
-          if (cur.stage !== m[2]) cur.since = ev.t || "";
-          cur.stage = m[2];
-          cur.detail = (m[3] || "").trim();
-          dives.set(t, cur);
-        }
-        const done = line.match(/idea (\S+): deep dive staged/);
-        if (done) {
-          const cur = dives.get(done[1]) || { stage: "", detail: "", since: "", done: false, failed: false };
-          cur.done = true;
-          dives.set(done[1], cur);
-        }
-        const fail = line.match(/idea (\S+): deep dive FAIL/);
-        if (fail) {
-          const cur = dives.get(fail[1]) || { stage: "", detail: "", since: "", done: false, failed: false };
-          cur.failed = true;
-          dives.set(fail[1], cur);
-        }
-      }
-      const active = [...dives.entries()].filter(([, d]) => !d.done && !d.failed);
-      if (!active.length) { host.innerHTML = ""; return; }
-      host.innerHTML = active.map(([ticker, d]) => {
+      const list = Object.entries(dives || {})
+        .map(([ticker, d]) => ({ ticker, ...(d || {}) }))
+        .sort((a, b) => (a.seq || 0) - (b.seq || 0) || a.ticker.localeCompare(b.ticker));
+      if (!list.length) { host.innerHTML = ""; return; }
+      host.innerHTML = list.slice(0, 12).map((d) => {
         const cached = d.stage === "cache hit" || d.stage === "cache stale";
-        const stageSecs = d.since ? Math.max(0, Math.floor((Date.now() - new Date(d.since).getTime()) / 1000)) : null;
+        const stageSecs = d.since ? Date.now() - new Date(d.since).getTime() : null;
         return `
         <div class="dd-batch" style="margin-bottom:8px;padding:8px 12px">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
-            <strong style="font-variant-numeric:tabular-nums">${esc(ticker)}</strong>
+            <strong style="font-variant-numeric:tabular-nums">${esc(d.ticker)}</strong>
             <span class="dd-step ${cached ? "done" : "active"}">${stageLabel(d.stage)}</span>
-            ${stageSecs != null ? `<span class="timer" style="font-size:11px">${fmtSecs(stageSecs)}</span>` : ""}
+            ${stageSecs != null && stageSecs >= 0 ? `<span class="timer" style="font-size:11px">${fmtSecs(Math.floor(stageSecs / 1000))}</span>` : ""}
             ${d.detail ? `<span class="stage-detail" style="font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(d.detail)}</span>` : ""}
           </div>
           <div class="dd-stepper" style="margin:2px 0 0">${renderStepper(d.stage)}</div>
         </div>`;
-      }).join("");
+      }).join("")
+      + (list.length > 12 ? `<p class="pipe-note" style="margin:2px 0 0">+ ${list.length - 12} more dives running — full detail in the log below</p>` : "");
     }
 
     function fmtSecs(s) {
@@ -1698,17 +1678,28 @@
         pipePollTimer = setTimeout(pollPipeline, 10000);
       }
 
-      // --- Derive per-idea progress from the log lines ---
+      // --- Progress: prefer the server's tracked state; fall back to log parsing ---
       const events = st.events || [];
-      let ideaDone = 0, ideaTotal = null, diveOk = 0, diveFail = 0;
-      for (const ev of events) {
-        const m = ev.line ? ev.line.match(/^.*\bidea (\d+)\/(\d+) /) : null;
-        if (m) { ideaDone = parseInt(m[1]); ideaTotal = parseInt(m[2]); }
-        if (ev.line && /deep dive FAIL/.test(ev.line)) diveFail++;
-        if (ev.line && /deep dive staged/.test(ev.line)) diveOk++;
+      let ideaDone = null, ideaTotal = null, diveOk = 0, diveFail = 0;
+      if (typeof st.ideas_total === "number" && st.ideas_total > 0) {
+        ideaTotal = st.ideas_total;
+        ideaDone = st.ideas_started || 0;
+        diveOk = st.staged || 0;
+        diveFail = st.failed || 0;
+      } else {
+        for (const ev of events) {
+          const m = ev.line ? ev.line.match(/\bidea (\d+)\/(\d+) /) : null;
+          if (m) { ideaDone = parseInt(m[1]); ideaTotal = parseInt(m[2]); }
+          if (ev.line && /deep dive FAIL/.test(ev.line)) diveFail++;
+          if (ev.line && /deep dive staged/.test(ev.line)) diveOk++;
+        }
+        ideaDone = ideaDone || 0;
       }
+      const dives = st.dives || {};
+      const activeCount = Object.keys(dives).length;
+      const queued = ideaTotal != null ? Math.max(0, ideaTotal - (ideaDone || 0) - activeCount) : null;
       const pct = (ideaTotal && ideaTotal > 0)
-        ? Math.round((ideaDone / ideaTotal) * 100)
+        ? Math.round(((ideaDone || 0) / ideaTotal) * 100)
         : null;
 
       // --- Render the status line ---
@@ -1728,20 +1719,21 @@
               `<span style="font-size:12px;color:var(--muted)">${ideaDone}/${ideaTotal} ideas</span>` +
               `<span style="font-size:11px;color:var(--muted)">${pct}%</span>` +
               `</div>`
-            : `<div style="margin-bottom:6px">Deep-diving every candidate…</div>`) +
+            : `<div style="margin-bottom:6px">Screening / preparing dives…</div>`) +
           `<div style="font-size:12px;margin-bottom:4px">` +
             `<span class="pos">${diveOk} dives ok</span>` +
             (diveFail > 0 ? ` · <span class="neg">${diveFail} failed</span>` : "") +
-            (ideaTotal ? ` · ${ideaTotal - ideaDone - diveFail - diveOk} in progress` : "") +
+            (activeCount ? ` · ${activeCount} diving now` : "") +
+            (queued != null ? ` · ${queued} queued` : "") +
             `</div>`;
-        renderPipeDives(events);
+        renderPipeDiveCards(dives);
         renderPipeLog(events);
         return; // polling already re-armed above
       }
 
       // --- Not running ---
       renderPipeLog(events);
-      renderPipeDives(events); // clear any stale active-dive cards
+      renderPipeDiveCards({}); // clear any stale active-dive cards
       const go = el.querySelector("#pipe-go");
       if (go) go.disabled = false;
       if (st.result) {
@@ -1749,7 +1741,7 @@
         progress.innerHTML =
           `<div class="pos" style="font-size:15px;font-weight:650">✔ Finished</div>` +
           `<div style="margin-top:4px">${r.funnel ? esc(r.funnel) : esc(JSON.stringify(r)).slice(0, 400)}</div>` +
-          `<div style="margin-top:6px;font-size:12px;color:var(--muted)">${fmtSecs(st.elapsed_s)} elapsed · ${diveOk} dives ok${diveFail > 0 ? ", " + diveFail + " failed" : ""}</div>`;
+          `<div style="margin-top:6px;font-size:12px;color:var(--muted)">${fmtSecs(st.elapsed_s)} elapsed · ${diveOk} dives ok${diveFail > 0 ? ", " + diveFail + " failed (deferred)" : ""}</div>`;
         if (st.error) progress.innerHTML += `<br><span class="neg">Run error: ${esc(st.error)}</span>`;
         invalidateCurated();
       } else if (st.error) {

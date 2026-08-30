@@ -260,6 +260,7 @@ def render_idea_markdown(
         *_evidence_block(qual, candidate.side),
         *([f"- {q}" for q in (qual.evidence_quotes or [])[:3]]),
         "",
+        *_scorecard_md(qual),
         "## Catalysts",
         "",
         *_earnings_block(earnings),
@@ -283,9 +284,58 @@ def render_idea_markdown(
     return "\n".join(lines) + "\n"
 
 
+def _scorecard_md(qual) -> list[str]:
+    """The quantitative qual scorecard: S, the mirrored long/short pair and
+    the per-driver table, so a reader can SEE the verdict as numbers."""
+    if getattr(qual, "score_long", None) is None:
+        return []
+    s = qual.score_s or 0.0
+    verdict_word = (
+        "constructive — supports a LONG"
+        if s >= 0.6
+        else ("cautious — supports a SHORT" if s <= -0.6 else "balanced — no edge either way")
+    )
+    lines = [
+        "## Qualitative scorecard",
+        "",
+        f"**Evidence score S = {s:+.2f}** on a −2..+2 scale → "
+        f"**long thesis {qual.score_long:.1f}/10 · short thesis {qual.score_short:.1f}/10** → {verdict_word}.",
+        "",
+        "Scores aggregate the dive's driver debates: sign = which side won the round "
+        "(bull +, bear −), magnitude = how decisively, scaled by the dive's own driver "
+        "confidence and FIXED category weights (valuation 30%, fundamentals 30%, "
+        "catalysts 20%, competitive 12%, risk 8%). Sub-scores are the same 0-10 view "
+        "restricted to a category (short view = 10 minus the long view); n/a = no driver there.",
+        "",
+        "| Driver | Category | Verdict | Score | Conf | Weight | Contribution |",
+        "|---|---|---|---|---|---|---|",
+    ]
+    for r in getattr(qual, "driver_scores", []) or []:
+        lines.append(
+            f"| {r.driver} | {r.category} | {r.verdict_side or 'tie'} | {r.score:+.2f} | {r.confidence or 'n/a'} "
+            f"| {r.weight * 100:.0f}% | {r.contribution:+.2f} |{_why_cell(r.why)}"
+        )
+    subs = []
+    for label in ("valuation", "fundamentals", "catalysts", "competitive", "risk"):
+        value = getattr(qual, f"score_{label}", None)
+        subs.append(f"{label} {'n/a' if value is None else f'{value:.1f}/10'}")
+    lines.append("")
+    lines.append("Sub-scores: " + " · ".join(subs))
+    lines.append("")
+    return lines
+
+
+def _why_cell(why: str) -> str:
+    return f" {why}" if why else ""
+
+
 def result_stance(qual) -> str:
-    """The dive stance carried on a QualResult's denial text, when present."""
+    """The dive stance carried on a QualResult's why prefix, when present.
+
+    The prefix also carries the numeric score ('[dive: cautious | S=-1.35]');
+    the label alone is what callers want.
+    """
     why = (getattr(qual, "why", "") or "") or (getattr(qual, "summary", "") or "")
     if why.startswith("[dive: "):
-        return why.split("]", 1)[0].removeprefix("[dive: ")
+        return why.split("]", 1)[0].removeprefix("[dive: ").split(" | ")[0]
     return ""

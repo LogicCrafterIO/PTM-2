@@ -121,6 +121,25 @@ class EvidenceItem(BaseModel):
         return cls(claim=str(value or "").strip())
 
 
+class DriverScore(BaseModel):
+    """One debate driver's quantified score.
+
+    Sign follows the debate: bull won the round → positive (reads constructive
+    for the company's stock), bear won → negative. Magnitude 0.5-2.0 is how
+    decisively the round resolved. The aggregate math (weights, contributions,
+    sub-scores) lives in ptm/deepsearch/verdict.py — code, not the model.
+    """
+
+    driver: str = ""
+    category: str = ""  # valuation | fundamentals | catalysts | competitive | risk
+    score: float = 0.0  # -2 .. +2
+    verdict_side: str = ""  # bull | bear | tie (from the dive's own debate)
+    confidence: str = ""  # the dive's driver confidence (high | medium | low)
+    weight: float = 0.0  # share of total weight this driver carries
+    contribution: float = 0.0  # score * confidence_mult * weight
+    why: str = ""
+
+
 class QualResult(BaseModel):
     supports_outlier: bool | None = None
     red_flags: list[str] = Field(default_factory=list)
@@ -152,6 +171,20 @@ class QualResult(BaseModel):
     filing_direction: str = "silent"
     # Which specific figures drove that call, so it can be checked.
     direction_basis: str = ""
+    # Quantitative qual scoring (deep-dive verdict adapter). S aggregates the
+    # debate's per-driver contributions with FIXED category weights; long/short
+    # are S mirrored onto 0-10 (they always sum to 10). Sub-scores are the
+    # same 0-10 view restricted to one category; None = no drivers in it, and
+    # score_s=None = the dive carried no debatable drivers at all.
+    score_s: float | None = None
+    score_long: float | None = None
+    score_short: float | None = None
+    score_valuation: float | None = None
+    score_fundamentals: float | None = None
+    score_catalysts: float | None = None
+    score_competitive: float | None = None
+    score_risk: float | None = None
+    driver_scores: list[DriverScore] = Field(default_factory=list)
     # Is the run still going, or lapping? The screen returns quantitative
     # outliers, so by construction a re-rating has usually STARTED - which makes
     # "how much is left" the live question rather than "has it begun". A model

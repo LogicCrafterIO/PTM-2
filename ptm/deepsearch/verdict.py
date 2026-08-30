@@ -31,7 +31,8 @@ import re
 from ptm.deepsearch.models import DeepResult, Thesis
 from ptm.llm import JSON_HINT, _clip, chat_json, llm_available, verdict_model
 from ptm.log import log
-from ptm.models import Candidate, EvidenceItem, QualResult, Side
+from ptm.config import toml_settings
+from ptm.models import Candidate, DriverScore, EvidenceItem, QualResult, Side
 from ptm.themes import labels as theme_labels
 
 # Stance → whether it supports the trade, per side. A "balanced" dive reads
@@ -68,6 +69,215 @@ def _figures_in(text: str) -> list[float]:
         except ValueError:
             continue
     return out
+
+
+# --- Quantitative qual scoring ------------------------------------------------
+# The stance alone is a label; this layer makes the qualitative call measurable.
+# Each debate driver is scored -2..+2 (sign = which side won the round, bull
+# positive; magnitude = how decisively), then aggregated with FIXED weights:
+# for a PE-outlier candidate the question is always whether the evidence
+# explains the multiple (valuation) and where earnings are heading
+# (fundamentals), so those carry the most. Weights are code, not the model's
+# choice — the same debate always produces the same numbers.
+CATEGORY_WEIGHTS = {
+    "valuation": 0.30,
+    "fundamentals": 0.30,
+    "catalysts": 0.20,
+    "competitive": 0.12,
+    "risk": 0.08,
+}
+_CONF_MULT = {"high": 1.0, "medium": 0.7, "low": 0.45}
+# The dive's stance as a point on the same -2..+2 scale, used only to flag
+# when the driver-level evidence and the synthesised label disagree.
+_STANCE_SCORE_PROXY = {"constructive": 1.7, "cautious": -1.7, "balanced": 0.0, "unclear": 0.0}
+
+_CATEGORY_KEYWORDS = (
+    ("valuation", ("valuation", "peg", "multiple", "premium", "discount", "overpriced", "underpriced", "re-rat", "rerat", "cheap")),
+    ("catalysts", ("catalyst", "inflection", "approval", "launch", "contract win", "guidance", "buyback", "spin-off")),
+    ("competitive", ("moat", "market share", "competitor", "competition", "rival", "entrant", "share loss", "share gain")),
+    ("risk", ("risk", "lawsuit", "concentration", "churn", "regulat", "leverage", "covenant", "dilution")),
+)
+
+
+def score_supports(s: float | None, side: Side, threshold: float) -> bool | None:
+    """Does the aggregated evidence score support THIS side's trade?
+
+    Long needs the evidence reading constructive (S > 0); short needs it
+    reading cautious (S < 0). |S| inside the threshold is the balanced band —
+    genuinely two-sided evidence supports neither trade, and None defers.
+    """
+    if s is None:
+        return None
+    if abs(s) < threshold:
+        return None
+    return s >= threshold if side == Side.LONG else s <= -threshold
+
+
+def _norm(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", str(text or "").lower()).strip()
+
+
+def _driver_confidence_mult(thesis: Thesis, driver_name: str) -> tuple[float, str]:
+    """The dive's own confidence for a named driver, as a 0..1 multiplier."""
+    name = _norm(driver_name)
+    for d in thesis.drivers:
+        d_name = _norm(d.name)
+        if d_name and (d_name in name or name in d_name):
+            return _CONF_MULT.get(d.confidence, 0.7), str(d.confidence or "medium")
+    return 0.7, "unknown"
+
+
+def _classify_category(text: str) -> str:
+    lowered = _norm(text)
+    for category, keywords in _CATEGORY_KEYWORDS:
+        if any(k in lowered for k in keywords):
+            return category
+    return "fundamentals"
+
+
+def score_debate(thesis: Thesis | None, llm_scores: object) -> list["DriverScore"]:
+    """Per-driver scored rows, deterministic given the debate.
+
+    The adapter (when it ran) supplies category + a -2..+2 magnitude per
+    driver; anything it missed is filled from the dive's own verdict_side and
+    driver confidence. The model never sets the weights.
+    """
+    if thesis is None:
+        return []
+    rows: list[dict] = []
+    by_name: dict[str, dict] = {}
+    for entry in llm_scores if isinstance(llm_scores, list) else []:
+        if isinstance(entry, dict) and entry.get("driver"):
+            by_name[_norm(str(entry.get("driver")))] = entry
+    for r in list(thesis.debate)[:6]:
+        entry = by_name.get(_norm(r.driver), {})
+        category = str(entry.get("category") or "").strip().lower()
+        if category not in CATEGORY_WEIGHTS:
+            category = _classify_category(f"{r.driver} {r.verdict}")
+        score = entry.get("score")
+        try:
+            score = float(score)
+        except (TypeError, ValueError):
+            score = None
+        if score is None:
+            # No adapter score: fall back to the dive's own round verdict. Base
+            # magnitude only — the confidence multiplier is applied exactly
+            # once, in the contribution below.
+            side = (r.verdict_side or "").strip().lower()
+            score = 0.0 if side in ("tie", "", "unresolved") else (1.5 if side == "bull" else -1.5)
+        score = max(-2.0, min(2.0, score))
+        mult, conf = _driver_confidence_mult(thesis, r.driver)
+        rows.append(
+            {
+                "driver": str(r.driver)[:100],
+                "category": category,
+                "score": round(score, 2),
+                "verdict_side": (r.verdict_side or "").strip().lower() or "tie",
+                "confidence": conf,
+                "mult": mult,
+                "why": _clip(str(entry.get("why") or r.verdict), 240),
+            }
+        )
+    if not rows:
+        return []
+    counts: dict[str, int] = {}
+    for r in rows:
+        counts[r["category"]] = counts.get(r["category"], 0) + 1
+    out: list[DriverScore] = []
+    for r in rows:
+        weight = CATEGORY_WEIGHTS.get(r["category"], 0.0) / max(1, counts[r["category"]])
+        out.append(
+            DriverScore(
+                driver=r["driver"],
+                category=r["category"],
+                score=r["score"],
+                verdict_side=r["verdict_side"],
+                confidence=r["confidence"],
+                weight=round(weight, 4),
+                contribution=round(r["score"] * r["mult"] * weight, 4),
+                why=r["why"],
+            )
+        )
+    return out
+
+
+def aggregate_scores(rows: list[DriverScore]) -> dict:
+    """Deterministic S, sub-scores and the mirrored 0-10 long/short pair.
+
+    S = sum of contributions, in [-2, +2]. A sub-score renormalises one
+    category's contributions to its own weight so it reads 0-10 independently:
+    absent categories read None rather than a fake 5.
+    """
+    if not rows:
+        return {"s": None, "long": None, "short": None, **{c: None for c in CATEGORY_WEIGHTS}}
+    s = round(sum(r.contribution for r in rows), 3)
+    subs: dict[str, float | None] = {}
+    for category, weight in CATEGORY_WEIGHTS.items():
+        in_cat = [r for r in rows if r.category == category]
+        if not in_cat:
+            subs[category] = None
+            continue
+        s_cat = sum(r.contribution for r in in_cat)
+        subs[category] = round(max(0.0, min(10.0, ((s_cat / weight) + 2.0) / 4.0 * 10.0)), 1)
+    long_score = round(max(0.0, min(10.0, (s + 2.0) / 4.0 * 10.0)), 1)
+    short_score = round(max(0.0, min(10.0, (2.0 - s) / 4.0 * 10.0)), 1)
+    return {
+        "s": s,
+        "long": long_score,
+        "short": short_score,
+        "valuation": subs["valuation"],
+        "fundamentals": subs["fundamentals"],
+        "catalysts": subs["catalysts"],
+        "competitive": subs["competitive"],
+        "risk": subs["risk"],
+    }
+
+
+def _score_threshold() -> float:
+    try:
+        return float((toml_settings().get("qualitative_bar") or {}).get("score_support_threshold", 0.6))
+    except Exception:
+        return 0.6
+
+
+def _resolved_supports(
+    score_s: float | None,
+    stance: str,
+    side: Side,
+) -> tuple[bool | None, list[str]]:
+    """Score-first support resolution; the stance label stands in the balanced band.
+
+    Decisive debate (|S| >= threshold) sets the verdict outright — visible with
+    an override flag when it contradicts the synthesised stance — while a
+    genuinely two-sided debate defers to the dive's stance, exactly as the old
+    side-aware mapping behaved. |S - stance_proxy| beyond a gap is flagged so a
+    synthesis that ignores its own debate is visible.
+    """
+    stance_val = stance_supports(stance, side)
+    if score_s is None:
+        return stance_val, []
+    flags: list[str] = []
+    proxy = _STANCE_SCORE_PROXY.get((stance or "").strip().lower())
+    sup = score_supports(score_s, side, _score_threshold())
+    if sup is not None and stance_val is not None and sup != stance_val:
+        flags.append(f"verdict_score_overrides_stance (S={score_s:+.2f} vs dive stance {stance})")
+    if proxy is not None and abs(score_s - proxy) >= 1.2:
+        flags.append(f"score_disagrees_with_dive_stance (S={score_s:+.2f} vs {stance or 'unclear'})")
+    return (sup if sup is not None else stance_val), flags
+
+
+def _apply_scores(qual: QualResult, rows: list[DriverScore]) -> None:
+    """Fill the QualResult score fields from the aggregated debate."""
+    agg = aggregate_scores(rows)
+    qual.score_s = agg["s"]
+    qual.score_long = agg["long"]
+    qual.score_short = agg["short"]
+    qual.score_valuation = agg["valuation"]
+    qual.score_fundamentals = agg["fundamentals"]
+    qual.score_catalysts = agg["catalysts"]
+    qual.score_competitive = agg["competitive"]
+    qual.score_risk = agg["risk"]
+    qual.driver_scores = rows
 
 
 def _verify_quantified(items: list[EvidenceItem], evidence_text: str) -> tuple[list[EvidenceItem], int]:
@@ -223,7 +433,14 @@ def _adapter_call(result: DeepResult, candidate: Candidate, evidence_text: str, 
         "evidence_for (array of {claim, metric, impact_pct, impact_on, quantified}, at most 4), "
         "evidence_against (same shape, at most 4), kpis (string[3-6], forward operating drivers like "
         "backlog, orders, utilisation, pricing, guidance — not statement lines), "
-        "operating_plan (string; one concrete forward action, empty for a mission statement).\n"
+        "operating_plan (string; one concrete forward action, empty for a mission statement), "
+        "driver_scores (array, ONE per debate round above: {driver (exact driver name), category "
+        "(valuation|fundamentals|catalysts|competitive|risk), score (number -2..+2: POSITIVE when the "
+        "BULL won that round — evidence constructive for the stock; NEGATIVE when the BEAR won — "
+        "evidence cautious; magnitude: ±0.5 marginal, ±1.0 clear, ±1.5 strong, ±2.0 decisive — the "
+        "magnitude must match what the round's verdict actually said), why (string, one sentence "
+        "grounded in the round)}). The weights are applied mechanically afterwards; your job is a "
+        "decisive, evidence-grounded score per driver.\n"
         f"{_candidate_context(candidate)}\n\n"
         f"Deep dive on the name:\n{dive_summary[:12000]}\n\n"
         f"Source-cited findings gathered by the dive (numbered):\n{_findings_block(result)}\n"
@@ -275,8 +492,14 @@ def _fallback(result: DeepResult, candidate: Candidate, evidence_text: str, extr
     """
     thesis = result.thesis
     stance = (thesis.stance if thesis else "") or ""
-    supports = stance_supports(stance, candidate.side)
-    flags = ["deepdive_stance_fallback"] + extra_flags
+    # Score the debate deterministically (no adapter call), then reconcile with
+    # the stance exactly as the LLM path does: decisive debate wins, the stance
+    # label stands inside the balanced band.
+    rows = score_debate(thesis, None)
+    agg = aggregate_scores(rows)
+    supports, score_flags = _resolved_supports(agg["s"], stance, candidate.side)
+    supports = stance_supports(stance, candidate.side) if supports is None and agg["s"] is None else supports
+    flags = ["deepdive_stance_fallback"] + extra_flags + score_flags
     if (thesis.confidence if thesis else "") == "low":
         flags.append("low_confidence")
     for_items: list[EvidenceItem] = []
@@ -304,7 +527,10 @@ def _fallback(result: DeepResult, candidate: Candidate, evidence_text: str, extr
     why = _clip(thesis.thesis if thesis else result.error, 480)
     if supports is False and not why:
         why = f"the dive reads {stance or 'unclear'}, which does not support this side's trade."
-    return QualResult(
+    if why and stance:
+        s_text = f" | S={agg['s']:+.2f}" if agg["s"] is not None else ""
+        why = f"[dive: {stance}{s_text}] {why}"
+    qual = QualResult(
         supports_outlier=supports,
         red_flags=flags,
         kpis=[d.name for d in thesis.drivers[:5]] if thesis else [],
@@ -321,6 +547,8 @@ def _fallback(result: DeepResult, candidate: Candidate, evidence_text: str, extr
         themes=theme_labels(evidence_text),
         denial_reason="" if supports is not False else f"dive stance {stance or 'unclear'} argues against this side",
     )
+    _apply_scores(qual, rows)
+    return qual
 
 
 def qual_from_deepdive(
@@ -350,11 +578,22 @@ def qual_from_deepdive(
         return _fallback(result, candidate, evidence_text, flags + ["verdict_adapter_failed"])
     raw = payload.get("supports_outlier")
     supports = None if raw in (None, "null") else bool(raw)
-    if supports is None:
+    # Quantitative layer first: the debate is scored deterministically, then
+    # the score and the synthesised stance are reconciled (score wins when the
+    # debate is decisive; the stance label stands inside the balanced band).
+    rows = score_debate(result.thesis, payload.get("driver_scores"))
+    agg = aggregate_scores(rows)
+    resolved, score_flags = _resolved_supports(agg["s"], result.thesis.stance, candidate.side)
+    flags.extend(score_flags)
+    if supports is not None and resolved is not None and supports != resolved:
+        flags.append("verdict_adapter_bool_overridden_by_score")
+    if supports is None and resolved is None:
         # A vacuous adapter answer defers to the dive's own stance rather than
         # silently zeroing the idea.
         supports = stance_supports(result.thesis.stance, candidate.side)
         flags.append("verdict_adapter_fell_back_to_stance")
+    else:
+        supports = resolved
     if answered_by and answered_by[0] != wanted_model:
         flags.append(f"verdict_model_downgraded_to_{answered_by[0]}")
     for_items = _evidence_items(payload.get("evidence_for"))
@@ -366,7 +605,13 @@ def qual_from_deepdive(
     why = _clip(payload.get("why"), 480)
     stance = result.thesis.stance
     if why and stance:
-        why = f"[dive: {stance}] {why}"
+        s_text = f" | S={agg['s']:+.2f}" if agg["s"] is not None else ""
+        why = f"[dive: {stance}{s_text}] {why}"
+    if supports is False and not _clip(payload.get("denial_reason")) and agg["s"] is not None:
+        payload["denial_reason"] = (
+            f"evidence score {agg['s']:+.2f} of -2..+2 (long {agg['long']}/10, short {agg['short']}/10) "
+            f"does not support this side's trade"
+        )
     denial = _clip(payload.get("denial_reason")) if supports is False else ""
     filing_direction = str(payload.get("filing_direction") or "").strip().lower()
     if filing_direction not in {"improving", "deteriorating", "mixed", "silent"}:
@@ -375,7 +620,7 @@ def qual_from_deepdive(
     if durability not in {"building", "intact", "fading", "exhausted", "unclear"}:
         durability = "unclear"
     kpis = [str(k).strip()[:80] for k in (payload.get("kpis") or []) if str(k).strip()][:6]
-    return QualResult(
+    qual = QualResult(
         supports_outlier=supports,
         red_flags=flags,
         kpis=kpis,
@@ -392,6 +637,8 @@ def qual_from_deepdive(
         themes=theme_labels(evidence_text),
         denial_reason=denial,
     )
+    _apply_scores(qual, rows)
+    return qual
 
 
 def deepdive_extra(result: DeepResult, report_ideas_rel: str) -> dict:

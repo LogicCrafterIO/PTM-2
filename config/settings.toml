@@ -53,6 +53,13 @@ max_screen_pe = 200.0  # above this the P/E reflects a near-zero EPS, not a valu
 # in one book reached it on three unquantified reasons each (OGN, RSI) and both
 # were rejected by two independent human reviews on exactly that basis. 0 disables.
 min_quantified_for = 1
+# The deep-dive qualitative score: the debate's driver contributions aggregate
+# into S on a -2..+2 scale (bull-won rounds positive, bear-won negative, scaled
+# by driver confidence and fixed category weights). |S| at or above this
+# threshold supports the matching side outright; inside the band the dive's
+# stance label decides, as before. Raise for a stricter book, 0 makes every
+# dive side-decisive.
+score_support_threshold = 0.6
 # Block a name whose own filings point against the analyst revision that ranks
 # it. The book follows revision momentum, so this is where filings still bite -
 # as a risk control, not a signal. Filings are backward looking and cannot show

@@ -208,10 +208,22 @@ def research_funnel(
         warnings.append(
             f"fundamentals cover {fundamentals_n}/{universe_n} tickers; PE screen is incomplete"
         )
+    # "researched" used to count every processed idea, so a run where the
+    # provider died could show a full funnel with a near-empty book. Split it:
+    # verdicted = the qualitative pass actually produced a verdict; deferred =
+    # processed but unbookable (failed/absent verdict), listed in the funnel
+    # so it can never hide behind the bigger number.
+    verdicted = [i for i in ideas if i.qual is not None]
+    deferred = len(ideas) - len(verdicted)
+    verd_long, verd_short = _count_sides([i.candidate.side for i in verdicted])
+    if deferred:
+        warnings.append(
+            f"{deferred} of {len(ideas)} ideas have no qualitative verdict (deep dive failed or unavailable) and cannot book"
+        )
     funnel = (
         f"universe {universe_n} → fundamentals {fundamentals_n} → "
         f"candidates {len(candidates)} ({cand_long}L/{cand_short}S) → "
-        f"researched {len(ideas)} ({idea_long}L/{idea_short}S) → "
+        f"researched {len(ideas)} ({idea_long}L/{idea_short}S; verdicts {len(verdicted)} ({verd_long}L/{verd_short}S), deferred {deferred}) → "
         f"book {len(book_ideas)} ({book_long}L/{book_short}S)"
     )
     return {
@@ -222,6 +234,8 @@ def research_funnel(
         "candidates_short": cand_short,
         "ideas": len(ideas),
         "ideas_long": idea_long,
+        "ideas_verdicted": len(verdicted),
+        "ideas_deferred": deferred,
         "ideas_short": idea_short,
         "book": len(book_ideas),
         "book_long": book_long,
@@ -513,6 +527,14 @@ def generate_ideas(
             f"findings={len(result.research.findings) if result.research else 0}"
         )
         idea.qual = qual_from_deepdive(result, cand, deep_md)
+        extra = idea.extra.get("deepdive")
+        if isinstance(extra, dict) and idea.qual is not None and idea.qual.score_long is not None:
+            # The viewer shows the numeric verdict next to the stance chip.
+            extra.update(
+                score_s=idea.qual.score_s,
+                score_long=idea.qual.score_long,
+                score_short=idea.qual.score_short,
+            )
         return deep_md
 
     def _research(i: int, cand: Candidate) -> TradeIdea:
