@@ -98,13 +98,23 @@ def run_deep_dive(
         return result
 
     cache = cache_path(ticker)
-    if cache.exists() and not force:
+    # `force` (a redo campaign) normally ignores the cache outright — but a
+    # redo must survive being INTERRUPTED and resumed: DEEPSEARCH_CACHE_FLOOR
+    # (a unix timestamp) marks when the campaign started, and caches WRITTEN
+    # since then are the redo's own completed work. Re-diving them on every
+    # resume would throw away exactly the dives the campaign already paid for.
+    floor = env().deepsearch_cache_floor
+    respects_floor = floor is not None and cache.exists() and cache.stat().st_mtime >= floor
+    if cache.exists() and (not force or respects_floor):
         from ptm.io import read_json
 
         cached = read_json(cache)
         age = _cache_age_days(cached)
         if max_age_days is None or (age is not None and age <= max_age_days):
-            report("cache hit", f"cached result loaded ({cached.get('as_of') or 'undated'})")
+            if force:
+                report("cache hit", "redo cache (written this campaign) kept")
+            else:
+                report("cache hit", f"cached result loaded ({cached.get('as_of') or 'undated'})")
             return DeepResult.model_validate(cached)
         report(
             "cache stale",

@@ -51,6 +51,13 @@ class Settings(BaseSettings):
     # How many days an idea-pipeline run will reuse a ticker's cached deep dive
     # before rerunning it. The viewer's on-demand dives keep any cache.
     deepsearch_cache_days: int = 2
+    # Unix timestamp: caches written AFTER this moment count as fresh even in
+    # a forced redo. A redo campaign that gets interrupted (e.g. the provider
+    # usage window ran out) resumes with the same dd_force flag, and this floor
+    # keeps the campaign's own completed dives instead of re-diving them — set
+    # DEEPSEARCH_CACHE_FLOOR to the campaign's start time. Empty = no floor:
+    # dd_force re-dives everything, as before.
+    deepsearch_cache_floor: float | None = None
     sec_user_agent: str = "PTM-Idea-Engine/0.1 (contact: ptm-research@example.com)"
     fred_api_key: str = ""
 

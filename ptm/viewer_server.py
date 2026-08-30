@@ -116,6 +116,28 @@ def _identity(ticker: str) -> tuple[str, str, str]:
         return "", "", ""
 
 
+def _dive_score(payload: dict) -> dict | None:
+    """The dive's qual evidence score, computed by the SAME code the scorecard
+    uses — not a re-derivation, so the card can never disagree with the report.
+
+    The synthesis (or, for older dives, the debate-verdict fallback) scored
+    each driver; driver_rows + aggregate_scores apply the fixed category
+    weights and mirror to long/short. None when the dive scores nothing.
+    """
+    try:
+        from ptm.deepsearch.models import DeepResult
+        from ptm.deepsearch.verdict import aggregate_scores, driver_rows
+
+        result = DeepResult.model_validate(payload)
+        rows = driver_rows(result.thesis)
+        if not rows:
+            return None
+        agg = aggregate_scores(rows)
+        return {"s": agg["s"], "long": agg["long"], "short": agg["short"]}
+    except Exception:
+        return None
+
+
 def _list_reports() -> list[dict]:
     """Cached dives with the metadata the UI list shows."""
     from ptm.io import read_json
@@ -139,7 +161,7 @@ def _list_reports() -> list[dict]:
                 "name": str(payload.get("name") or ""),
                 "sector": str(payload.get("sector") or ""),
                 "as_of": str(payload.get("as_of") or ""),
-                "stance": str(thesis.get("stance") or ""),
+                "score": _dive_score(payload),
                 "confidence": str(thesis.get("confidence") or ""),
                 "findings": len((payload.get("research") or {}).get("findings") or []),
                 "catalysts": len(payload.get("catalysts") or []),

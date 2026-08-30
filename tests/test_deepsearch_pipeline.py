@@ -92,6 +92,30 @@ def test_dive_is_cached(mock_llm, mock_web, tmp_path):
     assert len(mock_web) == searches_before  # no new searches
 
 
+def test_floor_keeps_this_campaigns_caches_under_force(mock_llm, mock_web, monkeypatch):
+    """An interrupted redo must not re-dive what it already completed.
+
+    force=True normally ignores the cache; with DEEPSEARCH_CACHE_FLOOR set,
+    caches written after the floor are the redo's own work and stay.
+    """
+    from time import time
+
+    from ptm.config import env as settings_env
+
+    first = run_deep_dive("TEST", force=True)  # "the campaign ran once"
+    assert first.error == ""
+    searches_before = len(mock_web)
+    monkeypatch.setenv("DEEPSEARCH_CACHE_FLOOR", str(time() - 10))  # cache is newer
+    settings_env.cache_clear()
+    resumed = run_deep_dive("TEST", force=True)
+    assert resumed.llm_used is True
+    assert len(mock_web) == searches_before, "post-floor cache must be kept even under force"
+    monkeypatch.setenv("DEEPSEARCH_CACHE_FLOOR", str(time() + 60))  # cache predates the floor
+    settings_env.cache_clear()
+    redone = run_deep_dive("TEST", force=True)
+    assert len(mock_web) > searches_before, "pre-floor cache must be re-dived"
+
+
 def test_no_llm_key_fails_clean(mock_web, monkeypatch):
     monkeypatch.setattr("ptm.deepsearch.pipeline.llm_available", lambda: False)
     result = run_deep_dive("TEST", force=True)

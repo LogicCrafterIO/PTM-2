@@ -595,12 +595,11 @@
 
       showHtml(`
         <h2><span class="${sideClass(c.side)}">${esc(c.side)}</span> ${esc(c.ticker)} · ${esc(c.name)}
-          ${extra.deepdive && extra.deepdive.stance ? `<span class="stance ${esc(extra.deepdive.stance)}">${esc(extra.deepdive.stance)} dive</span>` : ""}
-          ${extra.deepdive && extra.deepdive.score_long != null ? `<span class="stance sd-balanced">S ${esc((extra.deepdive.score_s > 0 ? "+" : "") + Number(extra.deepdive.score_s).toFixed(2))} · long ${esc(Number(extra.deepdive.score_long).toFixed(1))}/10 · short ${esc(Number(extra.deepdive.score_short).toFixed(1))}/10</span>` : ""}
+          ${extra.deepdive && extra.deepdive.score_long != null ? `<span class="stance ${Number(extra.deepdive.score_s) >= 0.6 ? "sd-constructive" : Number(extra.deepdive.score_s) <= -0.6 ? "sd-cautious" : "sd-balanced"}" title="evidence score S from the dive's scored drivers at fixed category weights — the scorecard in the report shows every driver">S ${esc((Number(extra.deepdive.score_s) > 0 ? "+" : "") + Number(extra.deepdive.score_s).toFixed(2))} · long ${esc(Number(extra.deepdive.score_long).toFixed(1))}/10 · short ${esc(Number(extra.deepdive.score_short).toFixed(1))}/10</span>` : extra.deepdive && extra.deepdive.stance ? `<span class="stance ${esc(extra.deepdive.stance)}">${esc(extra.deepdive.stance)} dive</span>` : ""}
         </h2>
         <p class="muted">${esc(c.sector)} · ${esc(c.industry)} · state ${esc(idea.state)} · ${esc(c.eg_case)}</p>
         <p>${esc(q.summary || q.why || "")}</p>
-        ${extra.deepdive ? `<p class="muted">Qualitative basis: deep research dive — stance <strong>${esc(extra.deepdive.stance || "?")}</strong>, confidence ${esc(extra.deepdive.confidence || "?")}, ${dash(extra.deepdive.findings)} findings, ${dash(extra.deepdive.debate_rounds)} debate rounds${extra.deepdive.as_of ? ` · run ${esc(extra.deepdive.as_of)}` : ""}${extra.deepdive.error ? ` · <span class="neg">${esc(extra.deepdive.error)}</span>` : ""}
+        ${extra.deepdive ? `<p class="muted">Qualitative basis: deep research dive — ${extra.deepdive.score_long != null ? `evidence score <strong>S ${esc((Number(extra.deepdive.score_s) > 0 ? "+" : "") + Number(extra.deepdive.score_s).toFixed(2))}</strong> (long ${esc(Number(extra.deepdive.score_long).toFixed(1))}/10 · short ${esc(Number(extra.deepdive.score_short).toFixed(1))}/10), confidence ${esc(extra.deepdive.confidence || "?")}` : `stance <strong>${esc(extra.deepdive.stance || "?")}</strong>, confidence ${esc(extra.deepdive.confidence || "?")}`}, ${dash(extra.deepdive.findings)} findings, ${dash(extra.deepdive.debate_rounds)} debate rounds${extra.deepdive.as_of ? ` · run ${esc(extra.deepdive.as_of)}` : ""}${extra.deepdive.error ? ` · <span class="neg">${esc(extra.deepdive.error)}</span>` : ""}
           <br><button id="dd-open" style="margin-top:6px">Show deep dive report</button></p>
         <div id="dd-inline" class="dd-inline-report" hidden></div>` : ""}
         <div class="kpis">
@@ -1403,11 +1402,21 @@
         <div class="dd-layout">
           <div id="dd-list" class="cards" style="grid-template-columns:1fr;gap:8px">
             ${(reports || []).length ? "" : `<p class="muted">No cached dives yet — generate one above.</p>`}
-            ${(reports || []).map((r) => `
+            ${(reports || []).map((r) => {
+              // The card's badge is the dive's qual evidence score — the same
+              // number its scorecard renders — not a bare stance word.
+              const sc = r.score || null;
+              const cls = !sc ? "unclear" : sc.s >= 0.6 ? "constructive" : sc.s <= -0.6 ? "cautious" : "balanced";
+              const sgn = sc ? (sc.s > 0 ? "+" : "") : "";
+              const badge = sc
+                ? `<span class="stance ${cls}" title="evidence score S on −2..+2, from the dive's scored drivers at fixed category weights — see the scorecard in the report">S ${esc(sgn + Number(sc.s).toFixed(2))} · long ${esc(Number(sc.long).toFixed(1))}/10 · short ${esc(Number(sc.short).toFixed(1))}/10</span>`
+                : r.error ? `<span class="stance unclear">score n/a — dive incomplete</span>` : `<span class="stance unclear">score n/a</span>`;
+              return `
               <div class="card" data-ticker="${esc(r.ticker)}">
-                <h3>${esc(r.ticker)} ${r.stance ? `<span class="stance ${esc(r.stance)}">${esc(r.stance)}</span>` : ""}</h3>
+                <h3>${esc(r.ticker)} ${badge}</h3>
                 <p class="muted" style="margin:0">${esc(r.sector || "—")} · ${dash(r.findings)} findings · run ${esc(r.as_of || "?")} ${r.error ? "· <span class='neg'>incomplete</span>" : ""}</p>
-              </div>`).join("")}
+              </div>`;
+            }).join("")}
           </div>
           <div id="dd-report" class="dd-report"></div>
         </div>`;
