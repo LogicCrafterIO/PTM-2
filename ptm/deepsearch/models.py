@@ -30,6 +30,14 @@ class Driver(BaseModel):
     evidence: str = ""
     source: SourceRef = Field(default_factory=SourceRef)
     confidence: str = "medium"  # high | medium | low
+    # Written by the synthesis pass together with the stance: the analyst's own
+    # scoring of this driver's debate, from the standpoint of the STOCK
+    # (bull-won round positive, bear-won negative) on a -2..+2 scale. The
+    # category is the pillar the driver belongs to; FIXED weights in
+    # ptm/deepsearch/verdict.py roll the scores up into the evidence score S.
+    score: float | None = None
+    category: str = ""  # valuation | fundamentals | catalysts | competitive | risk
+    score_why: str = ""
 
 
 class BullPoint(BaseModel):

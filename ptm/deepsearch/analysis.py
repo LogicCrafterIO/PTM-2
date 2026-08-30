@@ -236,8 +236,20 @@ def synthesize(
         f"{macro_part}"
         'Write JSON: {"stance": "constructive|cautious|balanced|unclear", "thesis": "...", '
         '"drivers": [{"name": "...", "direction": "tailwind|headwind|neutral", "evidence": "...", '
-        '"source_idx": 1, "confidence": "high|medium|low"}], '
-        '"falsifiers": ["..."], "confidence": "high|medium|low", "confidence_why": "..."}'
+        '"source_idx": 1, "confidence": "high|medium|low", '
+        '"score": <number -2..+2>, "category": "valuation|fundamentals|catalysts|competitive|risk", '
+        '"score_why": "one sentence of reasoning"}], '
+        '"falsifiers": ["..."], "confidence": "high|medium|low", "confidence_why": "..."}\n'
+        "SCORE EVERY driver you list, in the same pass that you choose the stance: the score is YOUR "
+        "judgement of that driver's debate from the standpoint of the STOCK — positive when the bull "
+        "side won (evidence constructive for the shares), negative when the bear won — with magnitude "
+        "±0.5 marginal, ±1.0 clear, ±1.5 strong, ±2.0 decisive, consistent with the round's verdict_side. "
+        "The category is the pillar the driver belongs to: valuation (the multiple, premium or discount, "
+        "re-rating), fundamentals (revenue, margins, backlog, guidance, efficiency), catalysts (dated "
+        "events that could re-rate the name), competitive (market share, moat, rivals), risk (anything "
+        "that could break the thesis). The why must reason the score, not restate the debate. These "
+        "scores aggregate, with fixed category weights, into the verdict's evidence score; your stance "
+        "should follow from the same weighing."
     )
     payload = _call_json(SYNTH_SYSTEM, user, used_out=used_out)
     if not str(payload.get("thesis") or "").strip():
@@ -253,6 +265,10 @@ def synthesize(
         name = _clip(d.get("name"), 80)
         if not name:
             continue
+        try:
+            score = None if d.get("score") in (None, "", "null") else max(-2.0, min(2.0, float(d.get("score"))))
+        except (TypeError, ValueError):
+            score = None
         drivers.append(
             Driver(
                 name=name,
@@ -260,6 +276,9 @@ def synthesize(
                 evidence=_clip(d.get("evidence"), 300),
                 source=_source_of(d, findings),
                 confidence=_clip(d.get("confidence"), 8).lower() or "medium",
+                score=score,
+                category=_clip(d.get("category"), 20).lower(),
+                score_why=_clip(d.get("score_why"), 300),
             )
         )
     return Thesis(

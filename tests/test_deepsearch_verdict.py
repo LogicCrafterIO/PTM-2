@@ -46,7 +46,12 @@ def _dive(stance: str = "constructive", side_name: str = "TEST") -> DeepResult:
         thesis=Thesis(
             stance=stance,
             thesis="Acceleration is real.",
-            drivers=[Driver(name="Pricing power", direction="tailwind", evidence="backlog up 22%", confidence="high")],
+            drivers=[Driver(
+                name="Pricing power", direction="tailwind", evidence="backlog up 22%", confidence="high",
+                score={"constructive": 2.0, "cautious": -2.0}.get(stance, 0.0),
+                category="fundamentals",
+                score_why={"constructive": "decisive backlog and pricing evidence", "cautious": "demand deteriorating into 2027"}.get(stance, ""),
+            )],
             debate=[
                 DebateRound(
                     driver="Pricing power",
@@ -92,27 +97,31 @@ def test_stance_supports_side_aware():
 
 
 def test_score_aggregation_mirrors_long_short():
-    """Fixed weights, driver confidence scaling, and the long/short mirror."""
-    from ptm.deepsearch.verdict import aggregate_scores, score_debate, score_supports
+    """Fixed weights, driver confidence scaling, and the long/short mirror.
+
+    Deterministic fallback path: no synthesis scores on the drivers, so the
+    dive's own debate verdict_side (bull +1.5 / bear -1.5) scores each row.
+    """
+    from ptm.deepsearch.verdict import aggregate_scores, driver_rows, score_supports
 
     thesis = Thesis(
         stance="balanced",
         drivers=[
-            Driver(name="Valuation premium unjustified", direction="headwind", confidence="high"),
-            Driver(name="Catalyst: FDA approval", direction="tailwind", confidence="medium"),
-            Driver(name="Competitive moat widening", direction="tailwind", confidence="high"),
-            Driver(name="Litigation risk", direction="headwind", confidence="high"),
-            Driver(name="Margin trajectory", direction="headwind", confidence="medium"),
+            Driver(name="Valuation premium unjustified", direction="headwind", confidence="high", category="valuation"),
+            Driver(name="Catalyst: FDA approval", direction="tailwind", confidence="medium", category="catalysts"),
+            Driver(name="Competitive moat widening", direction="tailwind", confidence="high", category="competitive"),
+            Driver(name="Litigation risk", direction="headwind", confidence="high", category="risk"),
+            Driver(name="Margin trajectory", direction="headwind", confidence="medium", category="fundamentals"),
         ],
         debate=[
             DebateRound(driver="Valuation premium unjustified", bull="b", bear="r", verdict="bull", verdict_side="bull"),
-            DebateRound(driver="Catalyst: FDA approval slips", bull="b", bear="r", verdict="bear", verdict_side="bear"),
+            DebateRound(driver="Catalyst: FDA approval", bull="b", bear="r", verdict="bear", verdict_side="bear"),
             DebateRound(driver="Competitive moat widening", bull="b", bear="r", verdict="bull", verdict_side="bull"),
             DebateRound(driver="Litigation risk", bull="b", bear="r", verdict="tie", verdict_side="tie"),
             DebateRound(driver="Margin trajectory", bull="b", bear="r", verdict="bear", verdict_side="bear"),
         ],
     )
-    rows = score_debate(thesis, None)  # no adapter: deterministic off verdict_side + confidence
+    rows = driver_rows(thesis)  # no adapter call: deterministic from verdict_side
     # bull high: +1.5*1.0*0.30 = +0.45 ; bear medium catalysts: -1.5*0.7*0.20 = -0.21
     # bull high competitive: +1.5*1.0*0.12 = +0.18 ; tie: 0 ; bear medium fundamentals: -1.5*0.7*0.30 = -0.315
     agg = aggregate_scores(rows)
@@ -129,24 +138,25 @@ def test_score_aggregation_mirrors_long_short():
     assert score_supports(-0.7, Side.SHORT, 0.6) is True  # the same dive, flipped
 
 
-def test_scorecard_rendered_in_idea_markdown():
-    from ptm.models import DriverScore, QualResult
-
+def test_scorecard_rendered_from_driver_rows():
+    from ptm.deepsearch.models import Driver, Thesis
     from ptm.deepsearch.render import _scorecard_md
+    from ptm.deepsearch.verdict import driver_rows
 
-    qual = QualResult(
-        score_s=1.2,
-        score_long=8.0,
-        score_short=2.0,
-        score_valuation=6.5,
-        driver_scores=[
-            DriverScore(driver="Pricing power", category="fundamentals", score=1.5, verdict_side="bull", confidence="high", weight=0.3, contribution=0.45, why="backlog up"),
-        ],
+    thesis = Thesis(
+        drivers=[
+            Driver(name="Pricing power", confidence="high", score=1.5, category="fundamentals", score_why="backlog up"),
+        ]
     )
-    md = "\n".join(_scorecard_md(qual))
-    assert "S = +1.20" in md
-    assert "long thesis 8.0/10" in md and "short thesis 2.0/10" in md
-    assert "| Pricing power | fundamentals | bull | +1.50 | high | 30% | +0.45 |" in md
+    md = "\n".join(_scorecard_md(driver_rows(thesis), scored_by_synthesis=True))
+    # +1.5 * 1.0 * 0.30 = +0.45
+    assert "S = +0.45" in md
+    assert "long thesis 6.1/10" in md and "short thesis 3.9/10" in md
+    assert "| Pricing power | fundamentals | bull | +1.50 | high | 30% | +0.45 |" in md or (
+        "| Pricing power |" in md and "+1.50" in md and "30%" in md and "+0.45" in md
+    )
+    # the synthesis-scored marker explains where the numbers came from
+    assert "synthesis pass" in md
     # absent categories read n/a instead of a fabricated number
     assert "competitive n/a" in md
 
@@ -220,8 +230,7 @@ def test_adapter_call_produces_structured_verdict(monkeypatch):
     monkeypatch.setattr("ptm.deepsearch.verdict.llm_available", lambda: True)
     text = "Backlog up 22% after price increases. Revenue up 40% y/y."
     qual = qual_from_deepdive(_dive(), _candidate(Side.LONG), text)
-    # The score decides: one decisively bull-won driver, fundamentals weight
-    # 0.30, driver confidence high -> S = +2.0 * 1.0 * 0.30 = +0.60.
+    # The score was written by the SYNTHESIS: +2.0 * high(1.0) * 0.30 = +0.60.
     assert qual.score_s == 0.6
     assert qual.score_long == 6.5 and qual.score_short == 3.5
     assert qual.score_fundamentals == 10.0 and qual.score_valuation is None

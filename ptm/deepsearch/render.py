@@ -142,6 +142,15 @@ def render_markdown(result: DeepResult) -> str:
             lines.append(f"- {verdict}")
             lines.append("")
 
+    # The scorecard belongs HERE, inside the dive and right after the debate it
+    # scores — the synthesis scored each driver while choosing the stance, so
+    # the numbers read as the debate's outcome, not a bolt-on report.
+    from ptm.deepsearch.verdict import driver_rows as _rows_for_card
+
+    card = _scorecard_md(_rows_for_card(thesis), scored_by_synthesis=bool(thesis and thesis.drivers and any(d.score is not None for d in thesis.drivers)))
+    if card:
+        lines += card
+
     if thesis and thesis.bull_case:
         lines.append("## Bull case")
         lines.append("")
@@ -226,9 +235,18 @@ def render_idea_markdown(
     stance = (deepdive_extra or {}).get("stance") or (result_stance(qual) if qual else "")
     confidence = (deepdive_extra or {}).get("confidence", "")
     stance_bit = f" · dive stance {stance}" + (f" ({confidence} confidence)" if confidence else "") if stance else ""
+    s_long = (deepdive_extra or {}).get("score_long")
+    s_short = (deepdive_extra or {}).get("score_short")
+    s_bit = ""
+    if s_long is not None:
+        s_val = (deepdive_extra or {}).get("score_s") or 0.0
+        s_bit = (
+            f" · evidence score {s_val:+.2f} (long {s_long:.1f}/10, short {s_short:.1f}/10)"
+            " — scorecard inside the dive"
+        )
     if (deep_md or "").strip():
         basis = (
-            f"Qualitative basis: **deep research dive**{stance_bit} — full report below; "
+            f"Qualitative basis: **deep research dive**{stance_bit}{s_bit} — full report below; "
             "every claim is source-cited there."
         )
     else:
@@ -260,7 +278,6 @@ def render_idea_markdown(
         *_evidence_block(qual, candidate.side),
         *([f"- {q}" for q in (qual.evidence_quotes or [])[:3]]),
         "",
-        *_scorecard_md(qual),
         "## Catalysts",
         "",
         *_earnings_block(earnings),
@@ -284,40 +301,62 @@ def render_idea_markdown(
     return "\n".join(lines) + "\n"
 
 
-def _scorecard_md(qual) -> list[str]:
-    """The quantitative qual scorecard: S, the mirrored long/short pair and
-    the per-driver table, so a reader can SEE the verdict as numbers."""
-    if getattr(qual, "score_long", None) is None:
+def _scorecard_md(rows, scored_by_synthesis: bool = False) -> list[str]:
+    """The scorecard for a list of DriverScore rows: S, the mirrored
+    long/short pair and the per-driver table, so a reader can SEE the verdict
+    as numbers — derived from the dive's own reasoned driver scores, with the
+    weights applied mechanically and visibly."""
+    from ptm.deepsearch.verdict import (
+        _score_threshold,
+        aggregate_scores,
+        score_supports,
+    )
+    from ptm.models import Side
+
+    rows = list(rows or [])
+    if not rows:
         return []
-    s = qual.score_s or 0.0
+    agg = aggregate_scores(rows)
+    s = agg["s"]
+    long_score, short_score = agg["long"], agg["short"]
+    threshold = _score_threshold()
+    is_long = score_supports(s, Side.LONG, threshold)
+    is_short = score_supports(s, Side.SHORT, threshold)
     verdict_word = (
         "constructive — supports a LONG"
-        if s >= 0.6
-        else ("cautious — supports a SHORT" if s <= -0.6 else "balanced — no edge either way")
+        if is_long
+        else ("cautious — supports a SHORT" if is_short else "balanced — no edge either way")
+    )
+    source_note = (
+        "Scores were written by the synthesis pass together with the stance — sign = which side won "
+        "the driver's debate (bull +, bear −), magnitude = how decisively, per the analyst's own "
+        "reasoning; the FIXED category weights apply mechanically. "
+        if scored_by_synthesis
+        else "Scores derive mechanically from the dive's own debate verdicts (this dive predates "
+        "synthesis-side scoring); rerun the dive for analyst-scored drivers. "
     )
     lines = [
         "## Qualitative scorecard",
         "",
         f"**Evidence score S = {s:+.2f}** on a −2..+2 scale → "
-        f"**long thesis {qual.score_long:.1f}/10 · short thesis {qual.score_short:.1f}/10** → {verdict_word}.",
+        f"**long thesis {long_score:.1f}/10 · short thesis {short_score:.1f}/10** → {verdict_word}.",
         "",
-        "Scores aggregate the dive's driver debates: sign = which side won the round "
-        "(bull +, bear −), magnitude = how decisively, scaled by the dive's own driver "
-        "confidence and FIXED category weights (valuation 30%, fundamentals 30%, "
-        "catalysts 20%, competitive 12%, risk 8%). Sub-scores are the same 0-10 view "
+        source_note
+        + "Category weights: valuation 30%, fundamentals 30%, catalysts 20%, competitive 12%, "
+        "risk 8%, scaled by the dive's own driver confidence. Sub-scores are the same 0-10 view "
         "restricted to a category (short view = 10 minus the long view); n/a = no driver there.",
         "",
         "| Driver | Category | Verdict | Score | Conf | Weight | Contribution |",
         "|---|---|---|---|---|---|---|",
     ]
-    for r in getattr(qual, "driver_scores", []) or []:
+    for r in rows:
         lines.append(
-            f"| {r.driver} | {r.category} | {r.verdict_side or 'tie'} | {r.score:+.2f} | {r.confidence or 'n/a'} "
+            f"| {r.driver} | {r.category or 'n/a'} | {r.verdict_side or 'tie'} | {r.score:+.2f} | {r.confidence or 'n/a'} "
             f"| {r.weight * 100:.0f}% | {r.contribution:+.2f} |{_why_cell(r.why)}"
         )
     subs = []
     for label in ("valuation", "fundamentals", "catalysts", "competitive", "risk"):
-        value = getattr(qual, f"score_{label}", None)
+        value = agg[label]
         subs.append(f"{label} {'n/a' if value is None else f'{value:.1f}/10'}")
     lines.append("")
     lines.append("Sub-scores: " + " · ".join(subs))

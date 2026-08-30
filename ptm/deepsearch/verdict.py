@@ -28,7 +28,7 @@ from __future__ import annotations
 
 import re
 
-from ptm.deepsearch.models import DeepResult, Thesis
+from ptm.deepsearch.models import DebateRound, DeepResult, Thesis
 from ptm.llm import JSON_HINT, _clip, chat_json, llm_available, verdict_model
 from ptm.log import log
 from ptm.config import toml_settings
@@ -87,6 +87,9 @@ CATEGORY_WEIGHTS = {
     "risk": 0.08,
 }
 _CONF_MULT = {"high": 1.0, "medium": 0.7, "low": 0.45}
+# Drivers the synthesis scored but whose debate round is missing still need a
+# verdict label for the scorecard; direction stands in.
+_DIRECTION_SIDE = {"tailwind": "bull", "headwind": "bear", "neutral": "tie"}
 # The dive's stance as a point on the same -2..+2 scale, used only to flag
 # when the driver-level evidence and the synthesised label disagree.
 _STANCE_SCORE_PROXY = {"constructive": 1.7, "cautious": -1.7, "balanced": 0.0, "unclear": 0.0}
@@ -135,47 +138,58 @@ def _classify_category(text: str) -> str:
     return "fundamentals"
 
 
-def score_debate(thesis: Thesis | None, llm_scores: object) -> list["DriverScore"]:
-    """Per-driver scored rows, deterministic given the debate.
+def _row_category(category: str, driver_name: str, evidence: str) -> str:
+    """The synthesis names the pillar; a missing or unknown label is derived
+    from the driver's own words rather than silently zero-weighted."""
+    if category in CATEGORY_WEIGHTS:
+        return category
+    return _classify_category(f"{driver_name} {evidence}")
 
-    The adapter (when it ran) supplies category + a -2..+2 magnitude per
-    driver; anything it missed is filled from the dive's own verdict_side and
-    driver confidence. The model never sets the weights.
+
+def driver_rows(thesis: Thesis | None) -> list["DriverScore"]:
+    """The dive's driver scores as one auditable row per driver.
+
+    Single source of truth: the SYNTHESIS pass scored each driver while
+    choosing the stance (Driver.score / category / score_why) — the score is
+    reasoned there, in the same weighing that produced the thesis. A driver
+    without a synthesis score (dives cached before scoring moved into the
+    synthesis, or a model that skipped it) falls back to its debate round's
+    verdict_side, with the round's verdict text as the reasoning. The weights
+    are applied here, in code, identically for both paths.
     """
     if thesis is None:
         return []
+    rounds_by_name: dict[str, "DebateRound"] = {_norm(r.driver): r for r in thesis.debate[:6]}
     rows: list[dict] = []
-    by_name: dict[str, dict] = {}
-    for entry in llm_scores if isinstance(llm_scores, list) else []:
-        if isinstance(entry, dict) and entry.get("driver"):
-            by_name[_norm(str(entry.get("driver")))] = entry
-    for r in list(thesis.debate)[:6]:
-        entry = by_name.get(_norm(r.driver), {})
-        category = str(entry.get("category") or "").strip().lower()
-        if category not in CATEGORY_WEIGHTS:
-            category = _classify_category(f"{r.driver} {r.verdict}")
-        score = entry.get("score")
-        try:
-            score = float(score)
-        except (TypeError, ValueError):
-            score = None
-        if score is None:
-            # No adapter score: fall back to the dive's own round verdict. Base
-            # magnitude only — the confidence multiplier is applied exactly
-            # once, in the contribution below.
-            side = (r.verdict_side or "").strip().lower()
+    for d in thesis.drivers[:5]:
+        entry = rounds_by_name.get(_norm(d.name))
+        score = d.score
+        why = d.score_why
+        verdict_side = ""
+        if score is None and entry is not None:
+            side = (entry.verdict_side or "").strip().lower()
+            # Base magnitude only; confidence applies once, in the contribution.
             score = 0.0 if side in ("tie", "", "unresolved") else (1.5 if side == "bull" else -1.5)
-        score = max(-2.0, min(2.0, score))
-        mult, conf = _driver_confidence_mult(thesis, r.driver)
+        if entry is not None:
+            verdict_side = (entry.verdict_side or "").strip().lower() or "tie"
+            if not why:
+                why = entry.verdict
+        else:
+            verdict_side = _DIRECTION_SIDE.get((d.direction or "").strip().lower(), "tie")
+            if not why:
+                why = d.evidence
+        if score is None:
+            continue
+        mult, conf = _driver_confidence_mult(thesis, d.name)
         rows.append(
             {
-                "driver": str(r.driver)[:100],
-                "category": category,
-                "score": round(score, 2),
-                "verdict_side": (r.verdict_side or "").strip().lower() or "tie",
+                "driver": str(d.name)[:100],
+                "category": _row_category(str(d.category or "").strip().lower(), d.name, d.evidence),
+                "score": round(max(-2.0, min(2.0, float(score))), 2),
+                "verdict_side": verdict_side,
                 "confidence": conf,
                 "mult": mult,
-                "why": _clip(str(entry.get("why") or r.verdict), 240),
+                "why": _clip(why, 240),
             }
         )
     if not rows:
@@ -433,14 +447,7 @@ def _adapter_call(result: DeepResult, candidate: Candidate, evidence_text: str, 
         "evidence_for (array of {claim, metric, impact_pct, impact_on, quantified}, at most 4), "
         "evidence_against (same shape, at most 4), kpis (string[3-6], forward operating drivers like "
         "backlog, orders, utilisation, pricing, guidance — not statement lines), "
-        "operating_plan (string; one concrete forward action, empty for a mission statement), "
-        "driver_scores (array, ONE per debate round above: {driver (exact driver name), category "
-        "(valuation|fundamentals|catalysts|competitive|risk), score (number -2..+2: POSITIVE when the "
-        "BULL won that round — evidence constructive for the stock; NEGATIVE when the BEAR won — "
-        "evidence cautious; magnitude: ±0.5 marginal, ±1.0 clear, ±1.5 strong, ±2.0 decisive — the "
-        "magnitude must match what the round's verdict actually said), why (string, one sentence "
-        "grounded in the round)}). The weights are applied mechanically afterwards; your job is a "
-        "decisive, evidence-grounded score per driver.\n"
+        "operating_plan (string; one concrete forward action, empty for a mission statement).\n"
         f"{_candidate_context(candidate)}\n\n"
         f"Deep dive on the name:\n{dive_summary[:12000]}\n\n"
         f"Source-cited findings gathered by the dive (numbered):\n{_findings_block(result)}\n"
@@ -495,7 +502,7 @@ def _fallback(result: DeepResult, candidate: Candidate, evidence_text: str, extr
     # Score the debate deterministically (no adapter call), then reconcile with
     # the stance exactly as the LLM path does: decisive debate wins, the stance
     # label stands inside the balanced band.
-    rows = score_debate(thesis, None)
+    rows = driver_rows(thesis)
     agg = aggregate_scores(rows)
     supports, score_flags = _resolved_supports(agg["s"], stance, candidate.side)
     supports = stance_supports(stance, candidate.side) if supports is None and agg["s"] is None else supports
@@ -581,7 +588,7 @@ def qual_from_deepdive(
     # Quantitative layer first: the debate is scored deterministically, then
     # the score and the synthesised stance are reconciled (score wins when the
     # debate is decisive; the stance label stands inside the balanced band).
-    rows = score_debate(result.thesis, payload.get("driver_scores"))
+    rows = driver_rows(result.thesis)
     agg = aggregate_scores(rows)
     resolved, score_flags = _resolved_supports(agg["s"], result.thesis.stance, candidate.side)
     flags.extend(score_flags)
