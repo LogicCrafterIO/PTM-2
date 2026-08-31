@@ -116,6 +116,31 @@ def _identity(ticker: str) -> tuple[str, str, str]:
         return "", "", ""
 
 
+def _idea_meta(ticker: str) -> dict:
+    """The candidate side + earnings window this dive's idea was staged under.
+
+    Sourced from the idea artifacts (the same place the Ideas tab reads), so
+    the Deep-dives tab can filter long/short and by catalyst window without
+    duplicating the candidate set. Newest idea file wins; empty strings when
+    the idea was never staged.
+    """
+    best = (0.0, "", "")
+    try:
+        paths = list(ideas_dir().glob(f"*/*/*/*_{ticker}.json"))
+    except Exception:
+        paths = []
+    for path in paths:
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            cand = payload.get("candidate") or {}
+        except Exception:
+            continue
+        mtime = path.stat().st_mtime
+        if mtime > best[0]:
+            best = (mtime, str(cand.get("side") or ""), str(path.parts[-2]))
+    return {"side": best[1], "window": best[2]}
+
+
 def _dive_score(payload: dict) -> dict | None:
     """The dive's qual evidence score, computed by the SAME code the scorecard
     uses — not a re-derivation, so the card can never disagree with the report.
@@ -155,6 +180,7 @@ def _list_reports() -> list[dict]:
         ticker = str(payload.get("ticker") or path.stem)
         thesis = payload.get("thesis") or {}
         macro = payload.get("macro") or {}
+        meta = _idea_meta(ticker)
         items.append(
             {
                 "ticker": ticker,
@@ -163,6 +189,8 @@ def _list_reports() -> list[dict]:
                 "as_of": str(payload.get("as_of") or ""),
                 "score": _dive_score(payload),
                 "confidence": str(thesis.get("confidence") or ""),
+                "side": meta["side"],
+                "window": meta["window"],
                 "findings": len((payload.get("research") or {}).get("findings") or []),
                 "catalysts": len(payload.get("catalysts") or []),
                 "debate_rounds": len((thesis or {}).get("debate") or []),

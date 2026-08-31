@@ -175,13 +175,18 @@
     .bar.pmi > span { background: var(--long); }
     .bar.below > span { background: var(--short); }
     .dd-layout { display: grid; grid-template-columns: 300px 1fr; gap: 14px; align-items: start; }
+    /* The dive-card list scrolls independently; the filters stay visible above it. */
+    .dd-cards { max-height: calc(100vh - 230px); overflow-y: auto; padding-right: 4px; }
+    .dd-filters { margin: 10px 0; }
     @media (max-width: 900px) { .dd-layout { grid-template-columns: 1fr; } }
     .dd-report {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 8px;
       padding: 18px 22px;
-      max-height: calc(100vh - 240px);
+      /* Taller reading pane: most of the viewport, its own scroll. */
+      height: calc(100vh - 200px);
+      max-height: none;
       overflow: auto;
       font-size: 15px;
       line-height: 1.55;
@@ -1397,29 +1402,53 @@
           <div class="dd-log" id="dd-log" style="display:none"></div>
           <div class="dd-progress dd-done" id="dd-done"></div>
         </div>`;
+      const all = (reports || []).slice();
+      const sides = unique(all.map((r) => r.side));
+      const sectors = unique(all.map((r) => r.sector));
+      const windows = unique(all.map((r) => r.window));
       el.innerHTML = `
         ${batch}
+        <div class="filters dd-filters">
+          <input id="dd-q" placeholder="Ticker, name, sector…">
+          <select id="dd-f-side"><option value="">All sides</option>${sides.map((s) => `<option>${esc(s)}</option>`).join("")}</select>
+          <select id="dd-f-sector"><option value="">All sectors</option>${sectors.map((s) => `<option>${esc(s)}</option>`).join("")}</select>
+          <select id="dd-f-window"><option value="">All windows</option>${windows.map((w) => `<option>${esc(w)}</option>`).join("")}</select>
+          <select id="dd-f-score">
+            <option value="">Any score</option>
+            <option value="long">S ≥ +0.6 — decisive long edge</option>
+            <option value="balanced">−0.6 &lt; S &lt; +0.6 — no decisive edge</option>
+            <option value="short">S ≤ −0.6 — decisive short edge</option>
+            <option value="scored">Scored only</option>
+            <option value="noscore">No score (incomplete dive)</option>
+          </select>
+          <select id="dd-sort">
+            <option value="score-desc">Sort: score ↓</option>
+            <option value="score-asc">Sort: score ↑</option>
+            <option value="ticker">Sort: ticker A→Z</option>
+          </select>
+          <span class="muted" id="dd-count"></span>
+        </div>
         <div class="dd-layout">
-          <div id="dd-list" class="cards" style="grid-template-columns:1fr;gap:8px">
+          <div id="dd-list" class="cards dd-cards" style="grid-template-columns:1fr;gap:8px">
             ${(reports || []).length ? "" : `<p class="muted">No cached dives yet — generate one above.</p>`}
-            ${(reports || []).map((r) => {
-              // The card's badge is the dive's qual evidence score — the same
-              // number its scorecard renders — not a bare stance word.
-              const sc = r.score || null;
-              const cls = !sc ? "unclear" : sc.s >= 0.6 ? "constructive" : sc.s <= -0.6 ? "cautious" : "balanced";
-              const sgn = sc ? (sc.s > 0 ? "+" : "") : "";
-              const badge = sc
-                ? `<span class="stance ${cls}" title="evidence score S on −2..+2, from the dive's scored drivers at fixed category weights — see the scorecard in the report">S ${esc(sgn + Number(sc.s).toFixed(2))} · long ${esc(Number(sc.long).toFixed(1))}/10 · short ${esc(Number(sc.short).toFixed(1))}/10</span>`
-                : r.error ? `<span class="stance unclear">score n/a — dive incomplete</span>` : `<span class="stance unclear">score n/a</span>`;
-              return `
-              <div class="card" data-ticker="${esc(r.ticker)}">
-                <h3>${esc(r.ticker)} ${badge}</h3>
-                <p class="muted" style="margin:0">${esc(r.sector || "—")} · ${dash(r.findings)} findings · run ${esc(r.as_of || "?")} ${r.error ? "· <span class='neg'>incomplete</span>" : ""}</p>
-              </div>`;
-            }).join("")}
           </div>
           <div id="dd-report" class="dd-report"></div>
         </div>`;
+      const cardHtml = (r) => {
+        // The card's badge is the dive's qual evidence score — the same
+        // number its scorecard renders — not a bare stance word.
+        const sc = r.score || null;
+        const cls = !sc ? "unclear" : sc.s >= 0.6 ? "constructive" : sc.s <= -0.6 ? "cautious" : "balanced";
+        const sgn = sc ? (sc.s > 0 ? "+" : "") : "";
+        const badge = sc
+          ? `<span class="stance ${cls}" title="evidence score S on −2..+2, from the dive's scored drivers at fixed category weights — see the scorecard in the report">S ${esc(sgn + Number(sc.s).toFixed(2))} · long ${esc(Number(sc.long).toFixed(1))}/10 · short ${esc(Number(sc.short).toFixed(1))}/10</span>`
+          : r.error ? `<span class="stance unclear">score n/a — dive incomplete</span>` : `<span class="stance unclear">score n/a</span>`;
+        return `
+          <div class="card" data-ticker="${esc(r.ticker)}">
+            <h3><span class="stance ${r.side === "long" ? "constructive" : r.side === "short" ? "cautious" : "unclear"}">${esc((r.side || "?").toUpperCase())}</span> ${esc(r.ticker)} ${badge}</h3>
+            <p class="muted" style="margin:0">${esc(r.sector || "—")} · window ${esc(r.window || "—")} · ${dash(r.findings)} findings · run ${esc(r.as_of || "?")} ${r.error ? "· <span class='neg'>incomplete</span>" : ""}</p>
+          </div>`;
+      };
       const openReport = async (ticker) => {
         const host = el.querySelector("#dd-report");
         host.innerHTML = `<p class="muted">Loading ${esc(ticker)}…</p>`;
@@ -1431,20 +1460,49 @@
           host.innerHTML = `<p class="err">${esc(String(e.message || e))}</p>`;
         }
       };
-      el.querySelectorAll("#dd-list .card").forEach((card) => {
-        card.addEventListener("click", () => {
-          el.querySelectorAll("#dd-list .card").forEach((x) => x.classList.remove("selected"));
-          card.classList.add("selected");
-          openReport(card.dataset.ticker);
+      const draw = () => {
+        const q = (el.querySelector("#dd-q").value || "").toLowerCase();
+        const side = el.querySelector("#dd-f-side").value;
+        const sector = el.querySelector("#dd-f-sector").value;
+        const win = el.querySelector("#dd-f-window").value;
+        const score = el.querySelector("#dd-f-score").value;
+        const sortMode = el.querySelector("#dd-sort").value;
+        const s = (r) => (r.score ? r.score.s : null);
+        let rows = all.filter((r) => {
+          if (side && r.side !== side) return false;
+          if (sector && r.sector !== sector) return false;
+          if (win && r.window !== win) return false;
+          const vs = s(r);
+          if (score === "long" && (vs === null || vs < 0.6)) return false;
+          if (score === "short" && (vs === null || vs > -0.6)) return false;
+          if (score === "balanced" && (vs === null || vs <= -0.6 || vs >= 0.6)) return false;
+          if (score === "scored" && vs === null) return false;
+          if (score === "noscore" && vs !== null) return false;
+          if (!q) return true;
+          return `${r.ticker} ${r.name} ${r.sector}`.toLowerCase().includes(q);
         });
-      });
+        if (sortMode === "score-desc") rows.sort((a, b) => (s(b) ?? -9) - (s(a) ?? -9));
+        else if (sortMode === "score-asc") rows.sort((a, b) => (s(a) ?? 9) - (s(b) ?? -9));
+        else rows.sort((a, b) => String(a.ticker).localeCompare(String(b.ticker)));
+        el.querySelector("#dd-count").textContent = `${rows.length} shown`;
+        el.querySelector("#dd-list").innerHTML = rows.length ? rows.map(cardHtml).join("") : `<p class="muted">No dives match the filters.</p>`;
+        el.querySelectorAll("#dd-list .card").forEach((card) => {
+          card.addEventListener("click", () => {
+            el.querySelectorAll("#dd-list .card").forEach((x) => x.classList.remove("selected"));
+            card.classList.add("selected");
+            openReport(card.dataset.ticker);
+          });
+        });
+      };
+      bindFilters(el, ["dd-q", "dd-f-side", "dd-f-sector", "dd-f-window", "dd-f-score", "dd-sort"], draw);
+      draw();
       const goBtn = el.querySelector("#dd-go");
       if (goBtn) goBtn.addEventListener("click", startBatch);
       if (state.deepdives && state.deepdives.length) {
         const first = el.querySelector("#dd-list .card");
         if (first) {
           first.classList.add("selected");
-          openReport(state.deepdives[0].ticker);
+          openReport(first.dataset.ticker);
         }
       }
     }
