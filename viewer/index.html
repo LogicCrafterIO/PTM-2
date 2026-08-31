@@ -18,6 +18,72 @@
       --warn: #e6b84d;
       --chip: #252c36;
     }
+    /* ---- PDF export -------------------------------------------------------
+       Print CSS inverts the dark theme to a light one, expands every scrolled
+       or height-capped container so full content flows across pages, and
+       shows exactly one target: the open detail pane (an idea record, a group
+       review, a dive report) or, when nothing is open, the active nav panel.
+       The Export PDF button drives window.print(); the browser's
+       "Save as PDF" destination produces the file. Zero Python involvement. */
+    @media print {
+      :root {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --surface-2: #f6f7f9;
+        --border: #c9ced6;
+        --text: #101418;
+        --muted: #5a6472;
+        --long: #0a7d34;
+        --short: #b3223f;
+        --accent: #0a5bd3;
+        --warn: #8a6d00;
+        --chip: #eceef1;
+      }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      @page { size: auto; margin: 12mm; }
+      header, nav, .subnav, .filters, #status,
+      .dd-batch, #dd-filters .dd-count, .export-btn, .detail-close { display: none !important; }
+      body { height: auto; }
+      main { height: auto; overflow: visible; display: block; }
+      section.panel { display: none !important; padding: 0; }
+      body.print-panel section.panel.active, body.print-detail #detail { display: block !important; }
+      body.print-detail section.panel { display: none !important; }
+      #detail { margin: 0; border: none; padding: 0; }
+      .card { break-inside: avoid; page-break-inside: avoid; background: var(--surface); }
+      table { break-inside: auto; }
+      tr, .kpi, .card { break-inside: avoid; page-break-inside: avoid; }
+      thead { display: table-header-group; }
+      /* Any scroll container prints in full, not as a viewport-clipped box. */
+      .wrap, .dd-report, .dd-cards, .cards, #dd-list, .dd-inline-report,
+      .dd-log, .dd-progress, .dd-stepper, #ideas-table, #group-cards {
+        max-height: none !important; height: auto !important;
+        overflow: visible !important; max-width: none !important;
+      }
+      .dd-layout, .grid-2, .cards { grid-template-columns: 1fr !important; }
+      /* Deep dives: the card list is navigation; the report is the content. */
+      body.print-panel #tab-deepdives #dd-list, body.print-panel #tab-deepdives #dd-filters { display: none !important; }
+      #export-print-root { display: none !important; } /* safety: never print the clone */
+    }
+    /* A light-theme preview surface so the export looks like the PDF, not a
+       dark-on-dark surprise between clicking and printing. */
+    #export-print-root { display: none; }
+    /* Floating export trigger: fixed so it is reachable on every pane. */
+    .export-btn {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 50;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 650;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+    }
+    .export-btn:hover { border-color: var(--accent); color: var(--accent); }
     * { box-sizing: border-box; }
     html, body { margin: 0; height: 100%; }
     body {
@@ -285,6 +351,7 @@
     <button data-tab="audit">Audit</button>
   </nav>
   <main>
+    <button id="export-pdf" class="export-btn" title="Print or save the current pane as PDF — the open detail (idea, group review, dive report) or, with no pane open, the active tab">⎙ Export PDF</button>
     <section id="tab-book" class="panel active"></section>
     <section id="tab-windows" class="panel"></section>
     <section id="tab-ideas" class="panel"></section>
@@ -2068,6 +2135,41 @@
         document.getElementById("detail").hidden = true;
         await ensure(tab);
       });
+    });
+
+    // ---- Export PDF -------------------------------------------------------
+    // Prints exactly one target: the open detail pane if there is one (an idea
+    // pack, a group review, a dive report), otherwise the active nav panel.
+    // The print stylesheet (above) swaps to a light theme, expands every
+    // scrolled container, and hides chrome. Pure frontend: window.print() and
+    // the browser's "Save as PDF" destination do the rest.
+    const exportBtn = document.getElementById("export-pdf");
+    let prevTitle = document.title;
+    document.addEventListener("afterprint", () => {
+      document.body.classList.remove("print-detail", "print-panel");
+      document.title = prevTitle;
+      exportBtn.disabled = false;
+    });
+    exportBtn.addEventListener("click", () => {
+      const detail = document.getElementById("detail");
+      const isDetail = !detail.hidden;
+      const label = isDetail
+        ? (detail.querySelector("h2")?.textContent || "detail").trim()
+        : document.querySelector("nav button.active")?.textContent.trim() || "page";
+      prevTitle = document.title;
+      // Browsers use document.title as the suggested PDF filename.
+      document.title = `PTM — ${label}`;
+      document.body.classList.remove("print-panel", "print-detail");
+      document.body.classList.add(isDetail ? "print-detail" : "print-panel");
+      exportBtn.disabled = true;
+      window.print();
+      // afterprint handles restore for the print dialog; the timeout covers
+      // browsers that fire print() without the dialog (Ctrl+P already open).
+      setTimeout(() => {
+        document.body.classList.remove("print-detail", "print-panel");
+        document.title = prevTitle;
+        exportBtn.disabled = false;
+      }, 1500);
     });
 
     (async function init() {
