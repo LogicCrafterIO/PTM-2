@@ -299,6 +299,7 @@
   <script>
     const ROOT = "/data/curated";
     const state = {
+      sharedSide: "", // side filter shared by the Ideas and Deep dives tabs
       book: null,
       windows: null,
       windowBooks: {},
@@ -825,9 +826,13 @@
         </div>
         <div id="ideas-table"></div>
       `;
+      // The side choice is shared with the Deep dives tab: picking LONG here
+      // carries over there, and vice versa.
+      el.querySelector("#f-side").value = state.sharedSide || "";
       const draw = () => {
         const q = (el.querySelector("#q").value || "").toLowerCase();
         const side = el.querySelector("#f-side").value;
+        state.sharedSide = side; // keep the Deep dives tab in sync
         const sector = el.querySelector("#f-sector").value;
         const st = el.querySelector("#f-state").value;
         const rows = all.filter((r) => {
@@ -1463,6 +1468,7 @@
       const draw = () => {
         const q = (el.querySelector("#dd-q").value || "").toLowerCase();
         const side = el.querySelector("#dd-f-side").value;
+        state.sharedSide = side; // keep the Ideas tab in sync
         const sector = el.querySelector("#dd-f-sector").value;
         const win = el.querySelector("#dd-f-window").value;
         const score = el.querySelector("#dd-f-score").value;
@@ -1495,6 +1501,9 @@
         });
       };
       bindFilters(el, ["dd-q", "dd-f-side", "dd-f-sector", "dd-f-window", "dd-f-score", "dd-sort"], draw);
+      // Side filter is shared with the Ideas tab: seeded from it, and any
+      // change here flows back so both tabs filter the same side.
+      el.querySelector("#dd-f-side").value = state.sharedSide || "";
       draw();
       const goBtn = el.querySelector("#dd-go");
       if (goBtn) goBtn.addEventListener("click", startBatch);
