@@ -109,6 +109,12 @@
     tbody tr.selected { background: #1c2a40; }
     .side-long { color: var(--long); font-weight: 650; }
     .side-short { color: var(--short); font-weight: 650; }
+    /* Compact per-ticker evidence-score chip for group cards. */
+    .qchip { display: inline-block; padding: 1px 5px; border-radius: 5px; font-size: 10.5px; font-weight: 650; margin: 1px 2px; white-space: nowrap; }
+    .qchip.q-constructive { background: #163526; color: var(--long); }
+    .qchip.q-cautious { background: #3a1b22; color: var(--short); }
+    .qchip.q-balanced { background: #3a2e12; color: var(--warn); }
+    .qchip.q-unclear { background: var(--chip); color: var(--muted); }
     .badge {
       display: inline-block;
       padding: 2px 8px;
@@ -116,9 +122,6 @@
       background: var(--chip);
       font-size: 12.5px;
     }
-    .badge.long { background: #163526; color: var(--long); }
-    .badge.short { background: #3a1b22; color: var(--short); }
-    .badge.warn { background: #3a2e12; color: var(--warn); }
     .badge.info { background: #1c2a40; color: var(--accent); }
     .err { color: var(--short); padding: 20px; }
     .hint { color: var(--muted); margin: 0 0 12px; }
@@ -1045,6 +1048,32 @@
       draw();
     }
 
+    // The qual evidence score per ticker, taken from ideas.json — the same
+    // numbers the Ideas/Book/Window tables and the Deep dives tab show. Built
+    // lazily: the Groups tab may render before the Ideas tab has loaded.
+    function buildQualMap() {
+      if (state.qualMap && state.qualMap.__src === state.ideas) return state.qualMap;
+      const map = {};
+      for (const idea of state.ideas || []) {
+        const c = idea.candidate || {};
+        if (c.ticker) map[c.ticker] = idea.qual || null;
+      }
+      map.__src = state.ideas;
+      state.qualMap = map;
+      return map;
+    }
+    function qualChip(map, ticker) {
+      const q = map[ticker] || null;
+      const cls = !q || q.score_s == null ? "q-unclear" : q.score_s >= 0.6 ? "q-constructive" : q.score_s <= -0.6 ? "q-cautious" : "q-balanced";
+      const label = q && q.score_s != null ? `${q.score_s > 0 ? "+" : ""}${Number(q.score_s).toFixed(2)}` : "n/a";
+      return `<span class="qchip ${cls}" title="${esc(ticker)} dive evidence score S on −2..+2 — long/short views on the Ideas table">${esc(ticker)} ${q && q.score_s != null ? esc((q.score_s > 0 ? "+" : "") + Number(q.score_s).toFixed(2)) : "n/a"}</span>`;
+    }
+    function qualCell(map, ticker) {
+      const q = map[ticker] || null;
+      if (!q || q.score_s == null) return `<span class="muted">n/a</span>`;
+      const cls = q.score_s >= 0.6 ? "pos" : q.score_s <= -0.6 ? "neg" : "muted";
+      return `<span class="${cls}">${esc((q.score_s > 0 ? "+" : "") + Number(q.score_s).toFixed(2))} · ${num(q.score_long, 1)}/${num(q.score_short, 1)}</span>`;
+    }
     function renderGroups() {
       const el = document.getElementById("tab-groups");
       const err = fileErr(state.groups, "group_reviews.json");
@@ -1070,10 +1099,13 @@
           return blob.includes(q);
         });
         el.querySelector("#row-count").textContent = `${rows.length} shown`;
+        el.querySelector("#row-count").textContent = `${rows.length} shown`;
+        const qmap = buildQualMap();
         el.querySelector("#group-cards").innerHTML = rows.map((g, i) => `
           <div class="card" data-idx="${i}">
             <h3>${esc(g.group_label)} <span class="badge">${esc(g.group_kind)}</span></h3>
             <p class="muted">${dash(g.covered)}/${(g.tickers || []).length} covered · ${(g.contradictions || []).length} contradictions</p>
+            <div style="margin:4px 0">${(g.tickers || []).map((t) => qualChip(qmap, t)).join(" ")}</div>
             <p>${esc(g.summary || "No summary")}</p>
           </div>
         `).join("") || `<p class="muted">No groups</p>`;
@@ -1090,8 +1122,9 @@
     }
 
     function showGroup(g) {
+      const qmap = buildQualMap();
       const views = (g.views || []).map((v) =>
-        `<tr><td class="${sideClass(v.side)}">${esc(v.side)}</td><td><strong>${esc(v.ticker)}</strong></td><td>${esc(v.qual_verdict)}</td><td>${esc(v.eg_case)}</td><td class="wrap-cell">${esc(v.comment)}</td></tr>`
+        `<tr><td class="${sideClass(v.side)}">${esc(v.side)}</td><td><strong>${esc(v.ticker)}</strong></td><td>${qualCell(qmap, v.ticker)}</td><td>${esc(v.qual_verdict)}</td><td>${esc(v.eg_case)}</td><td class="wrap-cell">${esc(v.comment)}</td></tr>`
       ).join("");
       showHtml(`
         <h2>${esc(g.group_label)} · ${esc(g.group_kind)}</h2>
@@ -1102,8 +1135,8 @@
         <h3>Views</h3>
         <div class="wrap" style="max-height:360px">
           <table>
-            <thead><tr><th>Side</th><th>Ticker</th><th>Verdict</th><th>EG case</th><th>Comment</th></tr></thead>
-            <tbody>${views || `<tr><td colspan="5" class="muted">No views</td></tr>`}</tbody>
+            <thead><tr><th>Side</th><th>Ticker</th><th>Qual S</th><th>Verdict</th><th>EG case</th><th>Comment</th></tr></thead>
+            <tbody>${views || `<tr><td colspan="6" class="muted">No views</td></tr>`}</tbody>
           </table>
         </div>
       `);
@@ -1985,9 +2018,15 @@
         el.innerHTML = `<p class="muted">Loading momentum.json…</p>`;
         state.momentum = await loadOr("momentum.json");
         renderMomentum();
-      } else if (tab === "groups" && state.groups == null) {
+      } else if (tab === "groups" && (state.groups == null || state.ideas == null)) {
         el.innerHTML = `<p class="muted">Loading group_reviews.json…</p>`;
-        state.groups = await loadOr("group_reviews.json");
+        const [groups, ideas] = await Promise.all([
+          state.groups == null ? loadOr("group_reviews.json") : Promise.resolve(state.groups),
+          state.ideas == null ? loadOr("ideas.json") : Promise.resolve(state.ideas),
+        ]);
+        state.groups = groups;
+        state.ideas = ideas;
+        state.qualMap = null; // rebuild the ticker->qual map for the fresh ideas
         renderGroups();
       } else if (tab === "macro" && (state.macro == null || state.fred == null)) {
         el.innerHTML = `<p class="muted">Loading macro snapshot…</p>`;
