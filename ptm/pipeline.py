@@ -843,7 +843,19 @@ def generate_ideas(
         if quota_stop_reason:
             # The queued futures raise on result(); drain without noise, then
             # surface the pause as the run's error so the viewer shows WHY the
-            # funnel stopped short of 197.
+            # funnel stopped short of 197. The registry write happens HERE too:
+            # a paused run must still hand its incomplete set to the next run,
+            # or the file lags behind what the caches already show.
+            write_json(
+                _incomplete_registry_path(),
+                {
+                    "as_of": day,
+                    "count": len(incomplete_dives),
+                    "dives": incomplete_dives,
+                    "paused": True,
+                    "note": "failed dives are never cached; rerunning the pipeline re-dives these automatically",
+                },
+            )
             raise QuotaExhausted(quota_stop_reason)
         # Output order follows screen rank, not completion order.
         ideas: list[TradeIdea] = [results[i] for i in sorted(results)]
