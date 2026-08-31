@@ -17,7 +17,7 @@ def _seed_run(isolate_roots, ticker: str, **overrides):
         "sector": "Industrials",
         "industry": "Machinery",
         "as_of": "2026-08-29",
-        "research": {"findings": [{"claim": "x"}] * 3, "queries_run": ["q"]},
+        "research": {"ticker": ticker, "findings": [{"claim": "x"}] * 3, "queries_run": ["q"]},
         "thesis": {"stance": "cautious", "confidence": "medium", "debate": [{}, {}]},
         "macro": {"available": True},
         "catalysts": [{}, {}],
@@ -37,9 +37,28 @@ def test_list_reports_reads_metadata(isolate_roots):
     assert len(items) == 1
     row = items[0]
     assert row["ticker"] == "TEST"
-    assert row["stance"] == "cautious"
+    # The stance word was replaced by the computed evidence score (None here —
+    # the seeded thesis lists no drivers, so there is nothing to score).
+    assert row["score"] is None
+    assert row["side"] == "" and row["window"] == ""  # no idea artifacts staged
     assert row["findings"] == 3
     assert row["has_report"] is True
+    # With a scored driver the row carries the same S the scorecard renders.
+    _seed_run(
+        isolate_roots,
+        "TEST",
+        thesis={
+            "stance": "cautious",
+            "confidence": "medium",
+            "debate": [{}, {}],
+            "drivers": [
+                {"name": "Valuation premium", "category": "valuation", "confidence": "high", "score": -1.5, "score_why": "de-rating"}
+            ],
+        },
+    )
+    row = _list_reports()[0]
+    assert row["score"]["s"] == -1.5  # -1.5*1.0*0.12 / 0.12 renormalized
+    assert row["score"]["long"] == 1.2 and row["score"]["short"] == 8.8
 
 
 def test_read_report_returns_markdown(isolate_roots):

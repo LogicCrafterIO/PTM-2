@@ -122,12 +122,15 @@ def test_score_aggregation_mirrors_long_short():
         ],
     )
     rows = driver_rows(thesis)  # no adapter call: deterministic from verdict_side
-    # bull high: +1.5*1.0*0.30 = +0.45 ; bear medium catalysts: -1.5*0.7*0.20 = -0.21
-    # bull high competitive: +1.5*1.0*0.12 = +0.18 ; tie: 0 ; bear medium fundamentals: -1.5*0.7*0.30 = -0.315
+    # All five categories present, so no renormalization; per-driver weight = the
+    # full category weight (one driver each).
+    # bull high valuation: +1.5*1.0*0.12 = +0.180 ; bear medium catalysts: -1.5*0.7*0.22 = -0.231
+    # bull high competitive: +1.5*1.0*0.18 = +0.270 ; tie: 0 ; bear medium fundamentals: -1.5*0.7*0.36 = -0.378
     agg = aggregate_scores(rows)
-    assert abs(agg["s"] - 0.105) < 1e-6
-    # single bull-won valuation driver at +1.5 base: ((0.45/0.3)+2)/4*10 = 8.8;
-    # single bear-won medium catalyst driver: ((-0.21/0.2)+2)/4*10 = 2.4
+    assert abs(agg["s"] - (-0.159)) < 1e-6
+    assert agg["weight_covered"] == 1.0
+    # single bull-won valuation driver at +1.5 base: ((0.18/0.12)+2)/4*10 = 8.75 -> 8.8;
+    # single bear-won medium catalyst driver: ((-0.231/0.22)+2)/4*10 = 2.375 -> 2.4
     assert agg["valuation"] == 8.8 and agg["catalysts"] == 2.4 and agg["risk"] == 5.0
     assert agg["long"] + agg["short"] == 10.0
     # The balanced band defers both sides; beyond the threshold it is side-decisive.
@@ -136,6 +139,35 @@ def test_score_aggregation_mirrors_long_short():
     assert score_supports(0.7, Side.LONG, 0.6) is True
     assert score_supports(0.7, Side.SHORT, 0.6) is False
     assert score_supports(-0.7, Side.SHORT, 0.6) is True  # the same dive, flipped
+
+
+def test_absent_categories_renormalize_and_never_compress():
+    """The reviewer's catch: a dive that never argues a pillar must not have
+    that pillar's weight silently vanish — S was computed over ~half the mix,
+    which compressed scores toward zero and made the ±0.6 bar harder to clear
+    the thinner the category mix was. Renormalization keeps S in [-2, +2] and
+    the bar uniform; the covered fraction records what was actually scored.
+    """
+    from ptm.deepsearch.models import Driver, Thesis
+    from ptm.deepsearch.verdict import aggregate_scores, driver_rows, score_supports
+
+    # One driver only, all of the dive's evidence in fundamentals.
+    thesis = Thesis(
+        stance="constructive",
+        drivers=[Driver(name="Backlog strength", direction="tailwind", confidence="high", category="fundamentals")],
+        debate=[DebateRound(driver="Backlog strength", bull="b", bear="r", verdict="bull", verdict_side="bull")],
+    )
+    rows = driver_rows(thesis)
+    agg = aggregate_scores(rows)
+    # old behaviour: +1.5 * 1.0 * 0.36 = +0.54, stranded inside the band;
+    # renormalized: 0.54 / 0.36 = +1.5 — the dive's actual strength.
+    assert agg["s"] == 1.5
+    assert agg["weight_covered"] == 0.36
+    assert agg["long"] == 8.8 and agg["short"] == 1.2
+    assert agg["valuation"] is None  # absent = honest None, never a fake 5
+    # A decisive call under renormalization mirrors correctly across sides.
+    assert score_supports(agg["s"], Side.LONG, 0.6) is True
+    assert score_supports(agg["s"], Side.SHORT, 0.6) is False
 
 
 def test_scorecard_rendered_from_driver_rows():
@@ -149,11 +181,12 @@ def test_scorecard_rendered_from_driver_rows():
         ]
     )
     md = "\n".join(_scorecard_md(driver_rows(thesis), scored_by_synthesis=True))
-    # +1.5 * 1.0 * 0.30 = +0.45
-    assert "S = +0.45" in md
-    assert "long thesis 6.1/10" in md and "short thesis 3.9/10" in md
-    assert "| Pricing power | fundamentals | bull | +1.50 | high | 30% | +0.45 |" in md or (
-        "| Pricing power |" in md and "+1.50" in md and "30%" in md and "+0.45" in md
+    # +1.5 * 1.0 * 0.36 = +0.54, renormalized by the 36% covered -> S +1.50
+    assert "S = +1.50" in md
+    assert "long thesis 8.8/10" in md and "short thesis 1.2/10" in md
+    assert "renormalized over the categories it did score" in md
+    assert "| Pricing power | fundamentals | bull | +1.50 | high | 36% | +0.54 |" in md or (
+        "| Pricing power |" in md and "+1.50" in md and "36%" in md and "+0.54" in md
     )
     # the synthesis-scored marker explains where the numbers came from
     assert "synthesis pass" in md
@@ -230,11 +263,12 @@ def test_adapter_call_produces_structured_verdict(monkeypatch):
     monkeypatch.setattr("ptm.deepsearch.verdict.llm_available", lambda: True)
     text = "Backlog up 22% after price increases. Revenue up 40% y/y."
     qual = qual_from_deepdive(_dive(), _candidate(Side.LONG), text)
-    # The score was written by the SYNTHESIS: +2.0 * high(1.0) * 0.30 = +0.60.
-    assert qual.score_s == 0.6
-    assert qual.score_long == 6.5 and qual.score_short == 3.5
+    # The score was written by the SYNTHESIS: +2.0 * high(1.0) * 0.36 = +0.72,
+    # renormalized over the single present category (0.36) -> S +2.0, maxed.
+    assert qual.score_s == 2.0
+    assert qual.score_long == 10.0 and qual.score_short == 0.0
     assert qual.score_fundamentals == 10.0 and qual.score_valuation is None
-    assert len(qual.driver_scores) == 1 and qual.driver_scores[0].contribution == 0.6
+    assert len(qual.driver_scores) == 1 and qual.driver_scores[0].contribution == 0.72
     assert qual.supports_outlier is True  # |S| = threshold -> side-decisive
     assert qual.filing_direction == "improving"
     assert qual.momentum_durability == "building"
@@ -245,7 +279,7 @@ def test_adapter_call_produces_structured_verdict(monkeypatch):
     assert any("unverifiable_magnitude_stripped" in flag for flag in qual.red_flags)
     assert qual.evidence_against[0].quantified is False
     assert qual.operating_plan == "add capacity in 2027"
-    assert qual.why.startswith("[dive: constructive | S=+0.60]")
+    assert qual.why.startswith("[dive: constructive | S=+2.00]")
     assert "verdict" not in (qual.denial_reason or "")
 
 

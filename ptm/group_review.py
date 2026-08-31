@@ -140,15 +140,34 @@ def _view_prompt(axis: str, label: str, rows: list[dict]) -> tuple[str, str]:
         "others, or which name it duplicates. Judge fundamentals and the operating case only. You "
         "are given no price data and must not reason about price action, charts, momentum, moving "
         "averages or entry timing - this process excludes technical analysis. "
+        "You are also given no valuation multiples: the P/E outlier that created these candidates is "
+        "the screen's premise, not yours to re-judge - do not approve or deny a case because a "
+        "number like PEG or P/E looks high. "
         "Return exactly one entry per ticker, no more and no fewer. "
         "Keep every comment under 300 characters. " + JSON_HINT
     )
     tickers = ", ".join(r["ticker"] for r in rows)
+    clean = [
+        {
+            "ticker": r["ticker"],
+            "side": r["side"],
+            "sector": r["sector"],
+            "industry": r["industry"],
+            "first_pass_verdict": r["qual_verdict"],
+            "case": r.get("qual_why"),
+            "operating_plan": r.get("operating_plan"),
+            "kpis": r.get("kpis"),
+            "red_flags": r.get("red_flags"),
+            "gates": r.get("gates"),
+            "conviction": r.get("conviction"),
+        }
+        for r in rows
+    ]
     user = (
         "Return JSON key: views (array of {ticker, comment}).\n"
         f"Cover all {len(rows)} tickers: {tickers}\n"
         f"Group: {axis} = {label}\n"
-        f"Ideas:\n{json.dumps(rows, default=str)[:9000]}"
+        f"Ideas:\n{json.dumps(clean, default=str)[:9000]}"
     )
     return system, user
 
@@ -161,24 +180,27 @@ def _synthesis_prompt(
         "You are a long/short portfolio manager reviewing a basket of ideas that share one "
         f"{axis}. Do the cross-read nobody has done yet: do these cases agree, duplicate, or "
         "contradict each other? Look for the same thesis repeated across names (a concentrated "
-        "a long and a short resting on opposite readings of one industry "
-        "driver, a name whose qualitative verdict looks weak beside its peers, and inconsistent "
-        "use of the ISM tilt. Fundamentals only: you are given no price data and must not reason "
+        "bet, not several), and inconsistent "
+        "use of the ISM tilt. A long and a short resting on opposite readings of one industry "
+        "driver is NOT a contradiction - it is how a long/short book expresses disagreement, and "
+        "every book holds opposite trades by construction; the macro bias is a TILT, never a "
+        "requirement that longs or shorts individually look favourable. "
+        "The first-pass verdict on each name was computed mechanically from that dive's evidence "
+        "score at fixed category weights — it is an input for context, not yours to approve, "
+        "override or justify, and it is never grounds to deny a name. "
+        "Fundamentals only: you are given no price or valuation data, and you must not reason "
         "about price action, charts, momentum, moving averages or entry timing - this process "
-        "excludes technical analysis. "
+        "excludes technical analysis. Multiple levels (P/E, PEG) created these candidates and are "
+        "excluded from your input on purpose; never use them in a contradiction. "
         "Keep every string under 300 characters. " + JSON_HINT
     )
     compact = [
         {
             "ticker": r["ticker"],
             "side": r["side"],
-            "eg_case": r["eg_case"],
-            "pe1": r["pe1"],
-            "sector_pe1": r["sector_pe1"],
-            "industry_pe1": r.get("industry_pe1"),
-            "verdict": r["qual_verdict"],
-            "why": (r.get("qual_why") or "")[:120],
-            "relative_peg": r.get("relative_peg"),
+            "first_pass_verdict": r["qual_verdict"],
+            "case": (r.get("qual_why") or "")[:120],
+            "gates": r.get("gates"),
         }
         for r in rows
     ]
@@ -304,7 +326,9 @@ def render_group_review(review: GroupReview) -> str:
         "",
         "## Per name",
         "",
-        "| Ticker | Side | EG case | Qualitative | Comment |",
+        # The verdict column is deliberately labelled as the first pass's output:
+        # the group model cannot revise it, so the table must not read as if it did.
+        "| Ticker | Side | EG case | First-pass verdict (dive score) | Comment |",
         "|---|---|---|---|---|",
     ]
     for view in review.views:

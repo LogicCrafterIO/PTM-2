@@ -119,7 +119,9 @@ def test_render_has_no_tape_section():
     assert "## Tape" not in text
     for word in ("momentum", "60d", "tape"):
         assert word not in text.lower().replace("no price or technical input", "")
-    assert "| Ticker | Side | EG case | Qualitative | Comment |" in text
+        # The verdict column is labelled as the first pass's output: the group
+    # model cannot revise it, and the table must not read as if it did.
+    assert "| Ticker | Side | EG case | First-pass verdict (dive score) | Comment |" in text
 
 
 def test_group_review_is_not_wired_into_any_gate():

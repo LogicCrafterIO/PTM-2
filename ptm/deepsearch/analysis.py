@@ -247,7 +247,12 @@ def synthesize(
         "The category is the pillar the driver belongs to: valuation (the multiple, premium or discount, "
         "re-rating), fundamentals (revenue, margins, backlog, guidance, efficiency), catalysts (dated "
         "events that could re-rate the name), competitive (market share, moat, rivals), risk (anything "
-        "that could break the thesis). The why must reason the score, not restate the debate. These "
+        "that could break the thesis). Label by what the driver argues: a margin or growth point is "
+        "fundamentals even when it touches the multiple; file a driver as valuation only when the dive's "
+        "own evidence makes a pricing claim (forward P/E, FCF yield, EV/EBITDA, implied multiple) — "
+        "never invent a metric the findings do not contain, and never force a valuation driver: absent "
+        "pillars cost the score nothing. "
+        "The why must reason the score, not restate the debate. These "
         "scores aggregate, with fixed category weights, into the verdict's evidence score; your stance "
         "should follow from the same weighing."
     )

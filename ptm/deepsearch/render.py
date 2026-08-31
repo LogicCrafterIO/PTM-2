@@ -309,6 +309,7 @@ def _scorecard_md(rows, scored_by_synthesis: bool = False) -> list[str]:
     from ptm.deepsearch.verdict import (
         _score_threshold,
         aggregate_scores,
+        category_weights,
         score_supports,
     )
     from ptm.models import Side
@@ -335,6 +336,18 @@ def _scorecard_md(rows, scored_by_synthesis: bool = False) -> list[str]:
         else "Scores derive mechanically from the dive's own debate verdicts (this dive predates "
         "synthesis-side scoring); rerun the dive for analyst-scored drivers. "
     )
+    covered = float(agg.get("weight_covered") or 1.0)
+    absent = [c for c in ("valuation", "fundamentals", "catalysts", "competitive", "risk") if agg[c] is None]
+    renorm_note = (
+        f"This dive scored no {', '.join(absent)} driver(s), so S is renormalized over the categories it "
+        f"did score ({covered * 100:.0f}% of the fixed mix scaled to 100%) — the decision bar means the "
+        "same thing for every dive. "
+        if covered < 0.995
+        else ""
+    )
+    weights_txt = ", ".join(
+        f"{c} {w * 100:.0f}%" for c, w in category_weights().items()
+    )
     lines = [
         "## Qualitative scorecard",
         "",
@@ -342,8 +355,8 @@ def _scorecard_md(rows, scored_by_synthesis: bool = False) -> list[str]:
         f"**long thesis {long_score:.1f}/10 · short thesis {short_score:.1f}/10** → {verdict_word}.",
         "",
         source_note
-        + "Category weights: valuation 30%, fundamentals 30%, catalysts 20%, competitive 12%, "
-        "risk 8%, scaled by the dive's own driver confidence. Sub-scores are the same 0-10 view "
+        + renorm_note
+        + f"Category weights: {weights_txt}, scaled by the dive's own driver confidence. Sub-scores are the same 0-10 view "
         "restricted to a category (short view = 10 minus the long view); n/a = no driver there.",
         "",
         "| Driver | Category | Verdict | Score | Conf | Weight | Contribution |",

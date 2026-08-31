@@ -74,17 +74,23 @@ def _figures_in(text: str) -> list[float]:
 # --- Quantitative qual scoring ------------------------------------------------
 # The stance alone is a label; this layer makes the qualitative call measurable.
 # Each debate driver is scored -2..+2 (sign = which side won the round, bull
-# positive; magnitude = how decisively), then aggregated with FIXED weights:
-# for a PE-outlier candidate the question is always whether the evidence
-# explains the multiple (valuation) and where earnings are heading
-# (fundamentals), so those carry the most. Weights are code, not the model's
-# choice — the same debate always produces the same numbers.
+# positive; magnitude = how decisively), then aggregated with FIXED weights.
+# The weights follow where the dives actually argue: the operating case
+# (fundamentals), its dated events (catalysts), its durability (competitive)
+# and its hazards (risk) are the evidence the research can ground. Valuation
+# stays a pillar but demoted — the P/E outlier that CREATED the candidate is
+# the screen's call, and the adapter bans screen-valuation evidence from the
+# qual verdict, so a dive rarely produces an independent multiple argument.
+# Any absent category's weight is renormalized away (see aggregate_scores), so
+# these fractions distribute influence WITHIN a dive, nothing punishes a dive
+# for skipping a pillar. Weights are code, not the model's choice — the same
+# debate always produces the same numbers.
 CATEGORY_WEIGHTS = {
-    "valuation": 0.30,
-    "fundamentals": 0.30,
-    "catalysts": 0.20,
-    "competitive": 0.12,
-    "risk": 0.08,
+    "valuation": 0.12,
+    "fundamentals": 0.36,
+    "catalysts": 0.22,
+    "competitive": 0.18,
+    "risk": 0.12,
 }
 _CONF_MULT = {"high": 1.0, "medium": 0.7, "low": 0.45}
 # Drivers the synthesis scored but whose debate round is missing still need a
@@ -218,13 +224,22 @@ def driver_rows(thesis: Thesis | None) -> list["DriverScore"]:
 def aggregate_scores(rows: list[DriverScore]) -> dict:
     """Deterministic S, sub-scores and the mirrored 0-10 long/short pair.
 
-    S = sum of contributions, in [-2, +2]. A sub-score renormalises one
-    category's contributions to its own weight so it reads 0-10 independently:
-    absent categories read None rather than a fake 5.
+    S = sum of contributions RENORMALIZED over the categories the dive actually
+    scored, still in [-2, +2]. A dive that never surfaces a valuation or
+    competitive argument must not have 42% of the intended weight silently
+    vanish from its score — that compressed every S toward zero and made the
+    decision bar (|S| >= threshold) harder to clear the thinner the dive's
+    category mix was. Dividing by the present categories' weight keeps the
+    bar meaning the same thing for every dive. Absent categories still read
+    None in the per-category sub-scores — genuinely missing, not a fake 5 —
+    and the scorecard records the renormalization so nothing hides.
     """
     if not rows:
         return {"s": None, "long": None, "short": None, **{c: None for c in CATEGORY_WEIGHTS}}
-    s = round(sum(r.contribution for r in rows), 3)
+    present = {r.category for r in rows if r.category in CATEGORY_WEIGHTS}
+    present_weight = sum(CATEGORY_WEIGHTS[c] for c in present)
+    raw = sum(r.contribution for r in rows)
+    s = round(raw / present_weight, 3) if present_weight > 0 else 0.0
     subs: dict[str, float | None] = {}
     for category, weight in CATEGORY_WEIGHTS.items():
         in_cat = [r for r in rows if r.category == category]
@@ -239,12 +254,20 @@ def aggregate_scores(rows: list[DriverScore]) -> dict:
         "s": s,
         "long": long_score,
         "short": short_score,
+        # Fraction of the fixed weight mix the dive's drivers actually covered;
+        # below 1.0 means the score was renormalized over present categories.
+        "weight_covered": round(present_weight, 2),
         "valuation": subs["valuation"],
         "fundamentals": subs["fundamentals"],
         "catalysts": subs["catalysts"],
         "competitive": subs["competitive"],
         "risk": subs["risk"],
     }
+
+
+def category_weights() -> dict[str, float]:
+    """The fixed category weight mix, for rendering and any other consumer."""
+    return dict(CATEGORY_WEIGHTS)
 
 
 def _score_threshold() -> float:
