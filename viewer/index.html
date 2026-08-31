@@ -470,6 +470,7 @@
       const conv = extra.conviction_detail || {};
       const earn = idea.earnings || {};
       const prm = idea.prm || {};
+      const qual = idea.qual || {};
       return {
         idea,
         ticker: c.ticker || "",
@@ -493,6 +494,9 @@
         durability: mom.durability || "",
         beta: prm.beta,
         conviction: conv.score ?? extra.conviction,
+        qual_s: qual.score_s,
+        qual_long: qual.score_long,
+        qual_short: qual.score_short,
       };
     }
 
@@ -507,6 +511,12 @@
       { key: "days", label: "Days", fmt: (v) => esc(dash(v)) },
       { key: "revision", label: "Revision", fmt: (v) => pctPts(v), tdClass: (r) => clsSigned(r.revision) },
       { key: "score", label: "Score", fmt: (v) => signed(v), tdClass: (r) => clsSigned(r.score) },
+      // The deep dive's qual evidence score: S on -2..+2 with the mirrored
+      // long/short views, n/a when the dive never completed for this ticker.
+      { key: "qual_s", label: "Qual S", fmt: (v, r) => v == null
+          ? `<span class="muted">n/a</span>`
+          : `S ${signed(v, 2)} · ${num(r.qual_long, 1)}/${num(r.qual_short, 1)}`,
+        tdClass: (r) => (r.qual_s == null ? "" : r.qual_s >= 0.6 ? "pos" : r.qual_s <= -0.6 ? "neg" : "") },
       { key: "durability", label: "Durability" },
       { key: "beta", label: "Beta", fmt: (v) => signed(v, 2) },
       { key: "conviction", label: "Conviction", fmt: (v) => num(v, 2) },
