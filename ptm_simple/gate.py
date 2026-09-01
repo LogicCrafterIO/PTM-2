@@ -4,15 +4,20 @@ The dive itself is PTM's engine, reused untouched (ptm_deepsearch run
 through pipeline.run_deep_dive). Gatekeeping applies the starter pack's
 questions WITHOUT price inputs:
 
-1. WHY NOW    - the theme's radar status must be WARM/ACTIVE and the member
-                must share (long) or diverge from (short) the theme lean.
+1. WHY NOW    - the theme's radar status must be WARM/ACTIVE and the
+                member's OWN estimates must agree with the side (longs
+                rising, shorts falling) — with the theme or against it.
 2. EARLY/LATE - the print must still be ahead (>= 0 days) and the estimate
                 move must be recent enough to still be actionable.
 3. GETTING PAID (estimate-impact test, not a price target) - the dive's
                 adapter verdict must carry at least one QUANTIFIED evidence
                 item whose magnitude is material against the company's base
                 (default: >= 3% on a core metric).
-4. LISTENING  - theme breadth must not point against the idea.
+4. LISTENING  - the theme must not be COLD.
+
+Themes wake in BOTH directions: rising breadth makes long themes, falling
+breadth makes short themes — a falling theme is not a dead theme, it is the
+short side of the same signal.
 """
 
 from __future__ import annotations
@@ -37,15 +42,21 @@ def gate_member(member: dict, radar_row: dict, qual: dict | None, ref: date) -> 
     if "long_score" in member or "short_score" in member:
         wants_short = member.get("short_score", 0) >= member.get("long_score", 0)
     else:
-        # raw snapshot without selection scores: the side is the divergence
-        wants_short = divergent
+        # raw snapshot without selection scores: the name's OWN estimate
+        # direction is the side — falling estimates short, rising long —
+        # in either theme direction.
+        wants_short = (member.get("rev90") or 0) < 0
     side = "short" if wants_short else "long"
     gates: list[dict] = []
     gates.append(
         {
             "gate": "why_now",
-            "pass": radar_row["status"] in ("ACTIVE", "WARM") and aligned_ok(side, divergent, lean),
-            "detail": f"theme {radar_row['status']} breadth {radar_row['breadth']:+.2f}, member rev90 {member.get('rev90')}, side {side}",
+            "pass": radar_row["status"] in ("ACTIVE", "WARM") and side_confirmed(side, member.get("rev90")),
+            "detail": (
+                f"theme {radar_row['status']} breadth {radar_row['breadth']:+.2f}, "
+                f"member rev90 {member.get('rev90')}, side {side} "
+                f"({'against' if divergent else 'with'} the theme)"
+            ),
         }
     )
     days = member.get("days_to_print")
@@ -86,10 +97,15 @@ def gate_member(member: dict, radar_row: dict, qual: dict | None, ref: date) -> 
     }
 
 
-def aligned_ok(side: str, divergent: bool, lean: str) -> bool:
-    if side == "short":
-        return divergent or lean == "short"  # short the diverger, or short with the lean
-    return not divergent  # longs must not fight their theme
+def side_confirmed(side: str, rev90: float | None) -> bool:
+    """The name's OWN estimates must agree with the side, in either theme
+    direction: longs need rising estimates, shorts falling ones. This holds
+    for riders (with the theme) and divergers (against it) alike — the
+    process never shorts a name whose estimates are rising, nor longs one
+    whose estimates are falling, whatever the theme is doing."""
+    if rev90 is None:
+        return False
+    return rev90 < 0 if side == "short" else rev90 > 0
 
 
 def _impact_test(qual: dict | None, ticker: str) -> tuple[bool, bool, str]:

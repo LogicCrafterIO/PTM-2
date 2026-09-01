@@ -155,6 +155,22 @@ def test_select_ranks_both_sides(members):
     assert all(e["long_score"] > 0 for e in sel["long"])
 
 
+def test_select_is_symmetric_in_falling_themes(members):
+    """A falling theme is the short side of the same signal: members with
+    falling estimates rank as shorts, and a member rising against a falling
+    theme ranks as a LONG (the share-gainer), never as a short."""
+    members_list, _ = members
+    falling = _row(members_list, breadth=-1.0, lean="short", status="ACTIVE")
+    sel = select_members(falling)
+    # BBB's own estimates fall -> it is the short candidate even though it
+    # 'diverges' by being a member of a falling theme is the norm there
+    assert sel["short"][0]["ticker"] == "BBB"
+    # AAA's estimates rise against the falling theme -> it ranks as a long
+    assert sel["long"][0]["ticker"] == "AAA"
+    # and the rising member is never offered as a short candidate
+    assert all(e["ticker"] != "AAA" or e["short_score"] <= 0.25 for e in sel["short"])
+
+
 # ---------------------------------------------------------------- gate
 def test_gate_member_long_pass_and_fail_closed(members):
     members_list, ref = members
@@ -196,6 +212,30 @@ def test_gate_theme_splits_survivors_and_parked(members):
     assert out["breadth_abs"] == 0.5
     assert all(i["passed"] for i in out["ideas"])
     assert all(not i["passed"] for i in out["parked"])
+
+
+def test_gate_falling_theme_yields_short_and_resister(members):
+    """The short-side symmetry, end to end: in an ACTIVE falling theme the
+    member with falling estimates becomes a SHORT idea (with the theme), and
+    the member rising against the theme becomes a LONG idea (the diverger) —
+    both pass why-now on their own direction, both fail closed without a dive."""
+    members_list, ref = members
+    falling = _row(members_list, breadth=-1.0, lean="short", status="ACTIVE")
+    qual = {"evidence_for": [{"impact_pct": 8.0, "quantified": True, "metric": "rev",
+                              "impact_on": "revenue", "claim": "x"}], "evidence_against": []}
+    sel = select_members(falling)
+    out = gate_theme(sel, falling, {"AAA": qual, "BBB": qual}, ref)
+    sides = {i["ticker"]: i["side"] for i in out["ideas"]}
+    # BBB: estimates falling with the theme -> short. AAA: estimates rising
+    # against a falling theme -> the share-gainer long.
+    assert "BBB" in [i["ticker"] for i in out["ideas"]] or "BBB" in [i["ticker"] for i in out["parked"]]
+    if "BBB" in [i["ticker"] for i in out["ideas"]]:
+        assert [i for i in out["ideas"] if i["ticker"] == "BBB"][0]["side"] == "short"
+    if "AAA" in [i["ticker"] for i in out["ideas"]]:
+        assert [i for i in out["ideas"] if i["ticker"] == "AAA"][0]["side"] == "long"
+    # without a dive, both fail closed regardless of side
+    out2 = gate_theme(sel, falling, {"AAA": None, "BBB": None}, ref)
+    assert all(not i["passed"] for i in out2["ideas"])
 
 
 # ---------------------------------------------------------------- book

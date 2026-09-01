@@ -78,13 +78,28 @@ catalyst ahead. Output per theme: `ACTIVE / WARM / COLD` + the why-now
 grade + the activation events. Zero price input.
 
 ### Stage 2 — Ticker selection inside an activated theme
-Deterministic ranking of theme members, no LLM:
+Deterministic ranking of theme members, no LLM. **The theme can wake in
+either direction and the process is symmetric: falling breadth is the short
+side of the same signal that rising breadth is the long side of.** The
+name's OWN revision direction decides the side — hard eligibility before
+any scoring: a long candidate must have estimates rising (> +0.5% over 90d,
+the same materiality the breadth uses) and a short candidate falling
+(< −0.5%). Durability, timing and analyst breadth can rank a name, never
+flip its side. The four trade patterns this produces:
+
+| theme | name | pattern |
+|---|---|---|
+| rising | rising | the rider (long with the theme) |
+| rising | falling | the laggard (short against it) |
+| falling | falling | the falling theme ridden short |
+| falling | rising | the share-gainer (long against it) |
+
 1. **Revenue exposure** — does the name actually sell into the theme
    (industry/segment tags; refined over time from filings)?
-2. **Revision momentum** — its own 30d/90d estimate direction (PTM has it).
-3. **Cluster divergence** — peers revising up while the name lags = the
-   "know more than the market" long candidate; revising down while the
-   theme rises = the short candidate.
+2. **Revision momentum** — its own 30d/90d estimate direction; eligibility
+   by sign, magnitude by saturation at ±5%.
+3. **Cluster divergence** — the two against-the-theme patterns above are
+   the "know more than the market" candidates in either direction.
 4. **Catalyst timing** — its next print inside the window; the bellwether
    already printed or printing this week.
 5. **Durability basics** — net cash, margin trend (fundamentals only).
