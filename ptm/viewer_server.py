@@ -14,6 +14,20 @@ IS the deep dive).
     GET  /api/pipeline/status       -> idea-pipeline run progress and result
     POST /api/pipeline/run          -> body {"mode": "weekly"|"ideas", ...}
 
+    GET  /api/simple/status          -> simple-process action state + artifact inventory
+    GET  /api/simple/theme-map/<src> -> manual|wiki theme map payload
+    GET  /api/simple/radar[?date=]   -> latest (or dated) radar rows
+    GET  /api/simple/theme/<name>    -> live radar row + selection for one theme (?source=)
+    GET  /api/simple/book            -> latest simple book
+    GET  /api/simple/watchlist       -> parked ideas
+    GET  /api/simple/reports         -> idea-report files
+    GET  /api/simple/report/<rel>    -> one idea report's markdown
+    POST /api/simple/run             -> body {"action": "build-themes"|"build-wiki"|"radar"|"run", ...}
+
+The simple-process handlers live in ptm_simple.viewer; this server only
+delegates. A simple `run` (which dives tickers) is refused while a deep-dive
+batch or an idea pipeline is in flight, same exclusivity as the other tabs.
+
 Both run the real pipeline in background threads; the deep-dive batch and an
 idea-pipeline run are mutually exclusive, so the two can never hammer the LLM
 at once. Run from the repo root:
@@ -27,6 +41,7 @@ import json
 import re
 import threading
 import time
+import urllib.parse
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
@@ -443,6 +458,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self) -> None:
         route = self.path.split("?")[0].rstrip("/") or "/"
+        query = urllib.parse.parse_qs(self.path.split("?")[1]) if "?" in self.path else {}
         if route in ("/", "/viewer"):
             self._serve_file("viewer/index.html")
         elif route == "/api/deepdive/list":
@@ -461,6 +477,41 @@ class Handler(BaseHTTPRequestHandler):
                     # in the worker's finally block.
                     snap["elapsed_s"] = round(time.monotonic() - _started_mono, 1)
             self._json(snap)
+        elif route == "/api/simple/status":
+            from ptm_simple import viewer as simple
+
+            self._json(simple.status())
+        elif route.startswith("/api/simple/theme-map/"):
+            from ptm_simple import viewer as simple
+
+            self._json(simple.get_theme_map(route.rsplit("/", 1)[-1].lower()))
+        elif route == "/api/simple/radar":
+            from ptm_simple import viewer as simple
+
+            self._json(simple.get_radar((query.get("date") or [None])[0]))
+        elif route.startswith("/api/simple/report/"):
+            from ptm_simple import viewer as simple
+
+            rel = urllib.parse.unquote(route.removeprefix("/api/simple/report/"))
+            self._json(simple.read_report(rel))
+        elif route == "/api/simple/reports":
+            from ptm_simple import viewer as simple
+
+            self._json(simple.list_reports())
+        elif route == "/api/simple/book":
+            from ptm_simple import viewer as simple
+
+            self._json(simple.get_book())
+        elif route == "/api/simple/watchlist":
+            from ptm_simple import viewer as simple
+
+            self._json(simple.get_watchlist())
+        elif route.startswith("/api/simple/theme/"):
+            from ptm_simple import viewer as simple
+
+            name = urllib.parse.unquote(route.removeprefix("/api/simple/theme/"))
+            source = (query.get("source") or ["manual"])[0]
+            self._json(simple.get_theme_detail(name, source))
         else:
             # Everything else is a static file from the repo root.
             rel = route.lstrip("/")
@@ -488,6 +539,29 @@ class Handler(BaseHTTPRequestHandler):
             }
             ok, payload = _start_pipeline(str(body.get("mode") or "ideas"), opts)
             self._json(payload, 200 if ok else (409 if "already" in payload.get("error", "") else 400))
+            return
+        if route == "/api/simple/run":
+            length = int(self.headers.get("Content-Length") or 0)
+            try:
+                body = json.loads(self.rfile.read(length) or b"{}")
+            except Exception:
+                self._json({"error": "invalid JSON body"}, 400)
+                return
+            from ptm_simple import viewer as simple
+
+            opts = {
+                "map": str(body.get("map") or "manual"),
+                "theme": str(body.get("theme") or ""),
+                "xlsx": str(body.get("xlsx") or "John pre mentoring starterpack.xlsx"),
+                "force": bool(body.get("force")),
+                "llm": bool(body.get("llm")),
+                "refresh": body.get("refresh"),
+            }
+            ok, payload, code = simple.start(
+                str(body.get("action") or ""), opts,
+                other_work_running=_pipe_state["running"] or _state["running"],
+            )
+            self._json(payload, 200 if ok else code)
             return
         if route != "/api/deepdive/generate":
             self._json({"error": "not found"}, 404)

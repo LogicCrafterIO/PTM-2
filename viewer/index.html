@@ -348,6 +348,7 @@
     <button data-tab="ism">ISM</button>
     <button data-tab="deepdives">Deep dives</button>
     <button data-tab="pipeline">Pipeline</button>
+    <button data-tab="simple">Simple</button>
     <button data-tab="audit">Audit</button>
   </nav>
   <main>
@@ -363,6 +364,7 @@
     <section id="tab-ism" class="panel"></section>
     <section id="tab-deepdives" class="panel"></section>
     <section id="tab-pipeline" class="panel"></section>
+    <section id="tab-simple" class="panel"></section>
     <section id="tab-audit" class="panel"></section>
     <div id="detail" hidden></div>
   </main>
@@ -387,6 +389,9 @@
       audit: null,
       deepdives: null,
       pipelineLoaded: false,
+      simpleLoaded: false,
+      simpleMapSource: "manual",
+      simpleTheme: "",
       selected: null,
       sorts: {},
       window: "00-30d",
@@ -2002,6 +2007,371 @@
       pipePollTimer = setTimeout(pollPipeline, 0);
     }
 
+    // --- Simple tab: the theme-first simple process, one step at a time ------
+    // Every stage of docs/simple_idea_process.md gets a button and an output
+    // pane: theme map (xlsx clusters OR deterministic Wikipedia industries),
+    // the weekly radar, per-theme selection, and the theme pass (dives +
+    // gates + book + idea reports). State and artifacts stream from
+    // /api/simple/*, whose handlers live in ptm_simple/viewer.py.
+    let simplePollTimer = null;
+    let simpleWasRunning = false;
+
+    function renderSimpleLog(events) {
+      const logHost = document.querySelector("#simple-log");
+      if (!logHost) return;
+      logHost.innerHTML = (events || []).map((e) => {
+        const time = e.t ? new Date(e.t).toTimeString().slice(0, 8) : "";
+        return `<div><span class="t">${time}</span> ${esc((e.line || "").replace(/^\[\d{2}:\d{2}:\d{2}\]\s*/, ""))}</div>`;
+      }).join("");
+      logHost.scrollTop = logHost.scrollHeight;
+    }
+
+    function simpleStatusChip(status) {
+      if (status === "ACTIVE") return `<span class="pos" style="font-weight:650">ACTIVE</span>`;
+      if (status === "WARM") return `<span class="badge">WARM</span>`;
+      return `<span class="muted">${esc(status || "?")}</span>`;
+    }
+
+    async function pollSimple() {
+      const el = document.getElementById("tab-simple");
+      const progress = el && el.querySelector("#simple-progress");
+      if (!progress) return; // tab closed; the action continues server-side
+      let st;
+      try {
+        const res = await fetch("/api/simple/status");
+        st = await res.json();
+      } catch (e) {
+        progress.innerHTML = `<span class="neg">Could not reach the viewer API.</span>`;
+        simplePollTimer = setTimeout(pollSimple, 8000);
+        return;
+      }
+      if (st.running) simplePollTimer = setTimeout(pollSimple, 2000);
+      else if (!st.finished && !st.result) simplePollTimer = setTimeout(pollSimple, 10000);
+
+      const buttons = ["simple-build-xlsx", "simple-build-wiki", "simple-radar-go", "simple-run-go"].map((id) => el.querySelector("#" + id)).filter(Boolean);
+      const logHost = el.querySelector("#simple-log");
+      renderSimpleLog(st.events || []);
+
+      if (st.running) {
+        simpleWasRunning = true;
+        buttons.forEach((b) => (b.disabled = true));
+        const started = st.started ? new Date(st.started).toTimeString().slice(0, 8) : "";
+        progress.innerHTML =
+          `<div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">` +
+          `<span>Running <strong>${esc(st.kind)}</strong></span>` +
+          `<span class="timer">${started} · ${fmtSecs(st.elapsed_s)}</span></div>` +
+          `<div style="font-size:12px;color:var(--muted)">one simple action at a time — log streams below</div>`;
+        if (logHost) logHost.style.display = "block";
+        return;
+      }
+
+      buttons.forEach((b) => (b.disabled = false));
+      if (simpleWasRunning) {
+        simpleWasRunning = false;
+        loadSimpleData(); // refresh every step's output after a finished action
+      }
+      if (st.error) {
+        progress.innerHTML = `<span class="neg">✗ ${esc(st.kind || "action")} failed: ${esc(st.error)}</span>`;
+      } else if (st.result) {
+        const r = st.result;
+        const bits = Object.entries(r).filter(([k]) => k !== "ideas" && k !== "overflow")
+          .map(([k, v]) => `${esc(k)}: <strong>${esc(v)}</strong>`).join(" · ");
+        progress.innerHTML = `<div class="pos" style="font-weight:650">✔ ${esc(st.kind || "")} finished</div>` +
+          `<div style="margin-top:4px;font-size:13px">${bits}</div>` +
+          `<div style="margin-top:4px;font-size:12px;color:var(--muted)">${fmtSecs(st.elapsed_s)} elapsed</div>` +
+          (st.error ? `<br><span class="neg">${esc(st.error)}</span>` : "");
+      } else {
+        progress.innerHTML = `<div style="color:var(--muted)">Idle — pick a step above; its output appears below.</div>`;
+      }
+    }
+
+    async function loadSimple() {
+      const el = document.getElementById("tab-simple");
+      el.innerHTML = `
+        <div class="dd-batch">
+          <strong>PTM-simple — the theme-first process, step by step</strong>
+          <p class="hint" style="margin:6px 0 2px">
+            Stage 0 builds the <strong>theme map</strong> — either the starter-pack xlsx clusters or a
+            <strong>deterministic map computed from each company's Wikipedia industry</strong> (Wikidata P452,
+            the field the infobox renders; no LLM, cached per ticker). Stage 1 is the weekly <strong>radar</strong>
+            (revision breadth + print calendar, deterministic; the why-now LLM grade is optional). Stage 2 ranks
+            members of a theme — inspect any theme to see its shortlist. Stage 3 runs the theme pass:
+            dives the shortlist, gates it, and writes the book, watchlist and idea reports.
+          </p>
+          <div class="pipe-form">
+            <label>Theme map
+              <select id="simple-map">
+                <option value="manual">manual — xlsx clusters</option>
+                <option value="wiki">wiki — Wikipedia industries</option>
+              </select>
+            </label>
+            <label>Theme
+              <select id="simple-theme"><option value="">loading themes…</option></select>
+            </label>
+            <label title="radar: refresh N member expectation caches per theme">Refresh N
+              <input type="number" id="simple-refresh" placeholder="0" min="0" style="width:64px"></label>
+            <label title="radar: one LLM call grades WHY-NOW per non-COLD theme">LLM why-now
+              <input type="checkbox" id="simple-llm"></label>
+            <label title="run: redo the dives even when cached">Force dives
+              <input type="checkbox" id="simple-force"></label>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px">
+            <button id="simple-build-xlsx">0a · Build themes (xlsx)</button>
+            <button id="simple-build-wiki" title="Deterministic Wikipedia-industry map; first build fetches ~1 API call per 50 tickers, a few minutes">0b · Build themes (Wikipedia)</button>
+            <button id="simple-radar-go">1 · Run radar</button>
+            <button id="simple-inspect">2 · Inspect theme (selection)</button>
+            <button id="simple-run-go">3 · Run theme pass</button>
+          </div>
+          <div class="dd-progress" id="simple-progress"></div>
+          <div id="simple-maps" style="margin-top:10px"></div>
+        </div>
+        <div id="simple-radar-host" style="margin-top:10px"></div>
+        <div id="simple-theme-host" style="margin-top:10px"></div>
+        <div id="simple-book-host" style="margin-top:10px"></div>
+        <div id="simple-watch-host" style="margin-top:10px"></div>
+        <div id="simple-reports-host" style="margin-top:10px"></div>
+        <div class="dd-log" id="simple-log" style="display:none"></div>`;
+
+      const $ = (id) => el.querySelector("#" + id);
+
+      async function fillThemes() {
+        state.simpleMapSource = $("simple-map").value;
+        $("simple-theme").innerHTML = `<option value="">loading themes…</option>`;
+        try {
+          const res = await fetch(`/api/simple/theme-map/${state.simpleMapSource}`);
+          const payload = await res.json();
+          const themes = (payload.map && payload.map.themes) || [];
+          if (payload.error || !themes.length) {
+            $("simple-theme").innerHTML = `<option value="">${esc(payload.error || "no themes — build the map first")}</option>`;
+            return;
+          }
+          state.simpleTheme = state.simpleTheme && themes.some((t) => t.theme === state.simpleTheme)
+            ? state.simpleTheme : "";
+          $("simple-theme").innerHTML =
+            `<option value="">— pick a theme —</option>` +
+            themes.map((t) => `<option value="${esc(t.theme)}" ${t.theme === state.simpleTheme ? "selected" : ""}>` +
+              `${esc(t.theme)} (${(t.members || []).length})</option>`).join("");
+        } catch (e) {
+          $("simple-theme").innerHTML = `<option value="">theme list unavailable</option>`;
+        }
+      }
+      $("simple-map").value = state.simpleMapSource;
+      $("simple-map").addEventListener("change", fillThemes);
+      $("simple-theme").addEventListener("change", () => { state.simpleTheme = $("simple-theme").value; });
+
+      async function post(action, extra = {}) {
+        const body = { action, map: $("simple-map").value, theme: $("simple-theme").value, ...extra };
+        simpleWasRunning = false;
+        try {
+          const res = await fetch("/api/simple/run", {
+            method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),
+          });
+          const payload = await res.json();
+          if (!res.ok) {
+            $("simple-progress").innerHTML = `<span class="neg">${esc(payload.error || "failed to start")}</span>`;
+            return;
+          }
+          $("simple-log").style.display = "block";
+          if (simplePollTimer) clearTimeout(simplePollTimer);
+          simplePollTimer = setTimeout(pollSimple, 0);
+        } catch (e) {
+          $("simple-progress").innerHTML = `<span class="neg">${esc(String(e.message || e))}</span>`;
+        }
+      }
+      $("simple-build-xlsx").addEventListener("click", () => post("build-themes"));
+      $("simple-build-wiki").addEventListener("click", () => post("build-wiki"));
+      $("simple-radar-go").addEventListener("click", () => post("radar", {
+        refresh: parseInt($("simple-refresh").value, 10) || 0,
+        llm: $("simple-llm").checked,
+      }));
+      $("simple-run-go").addEventListener("click", () => {
+        if (!$("simple-theme").value) {
+          $("simple-progress").innerHTML = `<span class="neg">pick a theme first</span>`;
+          return;
+        }
+        post("run", { force: $("simple-force").checked });
+      });
+      $("simple-inspect").addEventListener("click", async () => {
+        const theme = $("simple-theme").value;
+        if (!theme) { $("simple-progress").innerHTML = `<span class="neg">pick a theme first</span>`; return; }
+        const host = $("simple-theme-host");
+        host.innerHTML = `<p class="muted">Ranking members of ${esc(theme)}…</p>`;
+        try {
+          const res = await fetch(`/api/simple/theme/${encodeURIComponent(theme)}?source=${encodeURIComponent($("simple-map").value)}`);
+          const payload = await res.json();
+          renderSimpleThemeDetail(payload, host);
+        } catch (e) {
+          host.innerHTML = `<p class="err">${esc(String(e.message || e))}</p>`;
+        }
+      });
+      if (simplePollTimer) clearTimeout(simplePollTimer);
+      simplePollTimer = setTimeout(pollSimple, 0);
+      await fillThemes();
+      await loadSimpleData();
+    }
+
+    function renderSimpleMaps(host, arts) {
+      const maps = (arts && arts.maps) || {};
+      host.innerHTML = `<div class="kpis">` + ["manual", "wiki"].map((src) => {
+        const m = maps[src] || { exists: false };
+        const title = src === "wiki" ? "Wikipedia industries" : "xlsx clusters";
+        if (!m.exists) {
+          return `<div class="kpi"><div class="lbl">${esc(title)} — not built</div><div class="val" style="font-size:13px">—</div></div>`;
+        }
+        const extra = src === "wiki" ? ` · ${m.fallbacks} yf fallbacks` : "";
+        return `<div class="kpi"><div class="lbl">${esc(title)}</div>` +
+          `<div class="val">${esc(m.themes ?? "?")} themes</div>` +
+          `<div style="font-size:11px;color:var(--muted)">${esc(m.tickers ?? "?")} tickers${src === "wiki" ? extra : ""} · ${esc(m.mtime || "")}</div></div>`;
+      }).join("") +
+        `<div class="kpi"><div class="lbl">Radar</div><div class="val" style="font-size:14px">${esc(arts.radar_date || "none")}</div></div>` +
+        `<div class="kpi"><div class="lbl">Book</div><div class="val" style="font-size:14px">${arts.book ? `${arts.book.ideas} ideas (${esc(arts.book.as_of)})` : "none"}</div></div>` +
+        `<div class="kpi"><div class="lbl">Parked</div><div class="val">${arts.watchlist ? arts.watchlist.parked : 0}</div></div>` +
+        `<div class="kpi"><div class="lbl">Idea reports</div><div class="val">${arts.reports || 0}</div></div>` +
+        `</div>`;
+    }
+
+    function renderSimpleRadar(host, radar) {
+      if (!radar || radar.error) {
+        host.innerHTML = `<div class="dd-batch"><strong>1 · Radar</strong><p class="muted" style="margin:4px 0 0">${esc((radar && radar.error) || "no radar yet — run step 1")}</p></div>`;
+        return;
+      }
+      const rows = (radar.themes || []).map((r) => ({
+        ...r,
+        why: (r.why_now && r.why_now.grade) || "",
+        prints: (r.prints_14d || []).length,
+      }));
+      const active = rows.filter((r) => r.status !== "COLD");
+      host.innerHTML = `
+        <div class="dd-batch">
+          <strong>1 · Theme radar — as of ${esc(radar.as_of)}</strong>
+          <p class="hint" style="margin:4px 0 6px">${active.length} of ${rows.length} themes not COLD. Breadth = share of covered members with 90d estimate revisions beyond ±0.5% (up − down).</p>
+          <div id="simple-radar"></div>
+        </div>`;
+      attachTable(host.querySelector("#simple-radar"), rows, [
+        { key: "status", label: "Status", fmt: (v) => simpleStatusChip(v) },
+        { key: "theme", label: "Theme", fmt: (v, r) => `<strong>${esc(v)}</strong>${r.bellwether ? ` <span class="muted">· bellwether ${esc(r.bellwether)}</span>` : ""}` },
+        { key: "lean", label: "Lean" },
+        { key: "breadth", label: "Breadth", fmt: (v) => (v == null ? "" : (v > 0 ? "+" : "") + Number(v).toFixed(2)) },
+        { key: "coverage", label: "Cov", fmt: (v) => (v == null ? "" : Math.round(v * 100) + "%") },
+        { key: "members_covered", label: "Cov/#" },
+        { key: "prints", label: "Prints 14d" },
+        { key: "divergent", label: "Divergent", fmt: (v) => (v || []).join(", ") },
+        { key: "why", label: "Why-now" },
+      ], { tableId: "simple-radar" });
+    }
+
+    function renderSimpleThemeDetail(payload, host) {
+      if (payload.error) { host.innerHTML = `<p class="err">${esc(payload.error)}</p>`; return; }
+      const row = payload.row || {};
+      const sel = payload.selection || {};
+      const memCols = [
+        { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
+        { key: "covered", label: "Cov", fmt: (v) => (v ? "✔" : "—") },
+        { key: "rev90", label: "90d est", fmt: (v) => (v == null ? "" : (v > 0 ? "+" : "") + Number(v).toFixed(1) + "%") },
+        { key: "up30", label: "Up 30d" },
+        { key: "down30", label: "Down 30d" },
+        { key: "days_to_print", label: "Print in d" },
+        { key: "earnings_date", label: "Next print" },
+        { key: "market_cap", label: "Mcap $bn", fmt: (v) => (v == null ? "" : (v / 1e9).toFixed(1)) },
+      ];
+      const sideCols = [
+        { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
+        { key: "rev90", label: "90d est", fmt: (v) => (v == null ? "" : (v > 0 ? "+" : "") + Number(v).toFixed(1) + "%") },
+        { key: "days_to_print", label: "Print in d" },
+        { key: "earnings_date", label: "Next print" },
+        { key: "score", label: "Score", fmt: (v) => (v == null ? "" : Number(v).toFixed(3)) },
+      ];
+      const sideRows = (entries, scoreKey) => entries.map((e) => ({ ...e, score: e[scoreKey] }));
+      host.innerHTML = `
+        <div class="dd-batch">
+          <strong>2 · Selection — ${esc(row.theme || "")}</strong>
+          <p class="hint" style="margin:4px 0 6px">Status ${simpleStatusChip(row.status)} · lean ${esc(row.lean || "")} · breadth ${(row.breadth > 0 ? "+" : "") + Number(row.breadth || 0).toFixed(2)} · coverage ${Math.round((row.coverage || 0) * 100)}% (${row.members_covered}/${row.members_total}) · bellwether ${esc(row.bellwether || "—")}</p>
+          <div style="display:flex;gap:16px;flex-wrap:wrap">
+            <div style="flex:1;min-width:320px"><strong>Long shortlist</strong>${sel.long && sel.long.length ? "" : `<p class="muted" style="margin:4px 0">none eligible (estimates must rise &gt; +0.5%)</p>`}<div id="simple-sel-long"></div></div>
+            <div style="flex:1;min-width:320px"><strong>Short shortlist</strong>${sel.short && sel.short.length ? "" : `<p class="muted" style="margin:4px 0">none eligible (estimates must fall &lt; −0.5%)</p>`}<div id="simple-sel-short"></div></div>
+          </div>
+          <details style="margin-top:8px"><summary class="muted">All ${payload.members ? payload.members.length : 0} members</summary><div id="simple-members" style="margin-top:6px"></div></details>
+        </div>`;
+      if (sel.long && sel.long.length) attachTable(host.querySelector("#simple-sel-long"), sideRows(sel.long, "long_score"), sideCols, { tableId: "simple-sel-long" });
+      if (sel.short && sel.short.length) attachTable(host.querySelector("#simple-sel-short"), sideRows(sel.short, "short_score"), sideCols, { tableId: "simple-sel-short" });
+      if (payload.members && payload.members.length) attachTable(host.querySelector("#simple-members"), payload.members, memCols, { tableId: "simple-members" });
+    }
+
+    function renderSimpleBook(host, payload) {
+      if (!payload || payload.error || !payload.book) {
+        host.innerHTML = `<div class="dd-batch"><strong>3 · Book</strong><p class="muted" style="margin:4px 0 0">${esc((payload && payload.error) || "no book yet — run step 3")}</p></div>`;
+        return;
+      }
+      const b = payload.book;
+      const ideas = (b.book || []).map((i) => ({
+        ...i,
+        gates_ok: (i.gates || []).every((g) => g.pass),
+        gate_summary: (i.gates || []).map((g) => (g.pass ? "✔" : "✘") + g.gate).join(" "),
+      }));
+      const parked = (b.overflow || []);
+      host.innerHTML = `
+        <div class="dd-batch">
+          <strong>3 · Book — ${esc(payload.file)}</strong>
+          <p class="hint" style="margin:4px 0 6px">${ideas.length} idea(s) in the book, ${(b.overflow || []).length} parked, as of ${esc(b.as_of)}.</p>
+          <div id="simple-book-table"></div>
+        </div>`;
+      attachTable(host.querySelector("#simple-book-table"), ideas, [
+        { key: "side", label: "Side", fmt: (v) => `<span class="${v === "long" ? "pos" : "neg"}">${esc(v)}</span>` },
+        { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
+        { key: "theme", label: "Theme" },
+        { key: "rev90", label: "90d est", fmt: (v) => (v == null ? "" : (v > 0 ? "+" : "") + Number(v).toFixed(1) + "%") },
+        { key: "days_to_print", label: "Print in d" },
+        { key: "gates_ok", label: "Gates", fmt: (v, r) => (v ? `<span class="pos">all pass</span>` : `<span class="neg">failed</span>`) },
+        { key: "gate_summary", label: "Gates" },
+      ], { tableId: "simple-book" });
+    }
+
+    async function loadSimpleData() {
+      const el = document.getElementById("tab-simple");
+      if (!el.querySelector("#simple-maps")) return;
+      const status = await (await fetch("/api/simple/status")).json();
+      renderSimpleMaps(el.querySelector("#simple-maps"), status.artifacts || {});
+      const [radar, book, watch, reports] = await Promise.all([
+        fetch("/api/simple/radar").then((r) => r.json()).catch(() => null),
+        fetch("/api/simple/book").then((r) => r.json()).catch(() => null),
+        fetch("/api/simple/watchlist").then((r) => r.json()).catch(() => null),
+        fetch("/api/simple/reports").then((r) => r.json()).catch(() => null),
+      ]);
+      renderSimpleRadar(el.querySelector("#simple-radar-host"), radar && radar.radar);
+      renderSimpleBook(el.querySelector("#simple-book-host"), book);
+      const watchHost = el.querySelector("#simple-watch-host");
+      const parked = (watch && watch.parked) || [];
+      watchHost.innerHTML = `<div class="dd-batch"><strong>Watchlist (parked)</strong>` +
+        (watch && watch.as_of ? ` <span class="muted">as of ${esc(watch.as_of)}</span>` : "") +
+        (parked.length
+          ? `<div style="margin-top:6px">${parked.map((p) => `<span class="badge">${esc(p.ticker)}</span> <span class="muted">${esc(p.theme || "")}</span>`).join(" · ")}</div>`
+          : `<p class="muted" style="margin:4px 0 0">nothing parked</p>`) +
+        `</div>`;
+      const repHost = el.querySelector("#simple-reports-host");
+      const list = (reports && reports.reports) || [];
+      repHost.innerHTML = `<div class="dd-batch"><strong>Idea reports (${list.length})</strong>` +
+        (list.length
+          ? `<div style="margin-top:6px">${list.slice(0, 40).map((r) =>
+              `<button class="simple-rep" data-rel="${esc(r.path)}" style="margin:2px 6px 2px 0;font-size:12px">${esc(r.path)}</button>`).join("")}
+             ${list.length > 40 ? `<p class="muted">+ ${list.length - 40} more</p>` : ""}</div>`
+          : `<p class="muted" style="margin:4px 0 0">no reports yet</p>`) +
+        `</div>`;
+      repHost.querySelectorAll(".simple-rep").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          showHtml(`<p class="muted">Loading ${esc(btn.dataset.rel)}…</p>`);
+          try {
+            const res = await fetch("/api/simple/report/" + encodeURIComponent(btn.dataset.rel));
+            const payload = await res.json();
+            showHtml(payload.error
+              ? `<p class="err">${esc(payload.error)}</p>`
+              : `<h2>${esc(payload.path)}</h2><div class="dd-report">${mdToHtml(payload.markdown || "")}</div>`);
+          } catch (e) {
+            showHtml(`<p class="err">${esc(String(e.message || e))}</p>`);
+          }
+        });
+      });
+    }
+
     async function loadDeepDiveInline(ticker, host) {
       host.innerHTML = `<p class="muted">Loading deep dive for ${esc(ticker)}…</p>`;
       try {
@@ -2118,6 +2488,9 @@
       } else if (tab === "pipeline" && !state.pipelineLoaded) {
         el.innerHTML = `<p class="muted">Loading pipeline status…</p>`;
         await loadPipeline();
+      } else if (tab === "simple" && !state.simpleLoaded) {
+        el.innerHTML = `<p class="muted">Loading simple-process state…</p>`;
+        await loadSimple();
       } else if (tab === "audit" && state.audit == null) {
         el.innerHTML = `<p class="muted">Loading audit.json…</p>`;
         state.audit = await loadOr("audit.json");
@@ -2201,7 +2574,7 @@
       renderWindows();
       renderIsm();
       document.getElementById("tab-ideas").innerHTML = `<p class="hint">Open the Ideas tab to load ideas.json (large; fetched on demand).</p>`;
-      ["screen", "momentum", "groups", "macro", "themes", "audit", "deepdives", "pipeline"].forEach((id) => {
+      ["screen", "momentum", "groups", "macro", "themes", "audit", "deepdives", "pipeline", "simple"].forEach((id) => {
         document.getElementById("tab-" + id).innerHTML = `<p class="hint">Open this tab to load the data on demand.</p>`;
       });
     })();

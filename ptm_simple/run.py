@@ -62,6 +62,56 @@ def _fundamentals() -> dict[str, dict]:
     return {t: row for t, row in df.to_dict(orient="index").items()}
 
 
+def load_theme_map(source: str = "manual") -> dict:
+    """The theme map for a source: 'manual' (the xlsx clusters) or 'wiki'
+    (deterministic Wikipedia-industry clusters)."""
+    from ptm.io import read_json
+
+    name = "theme_map_wiki.json" if source == "wiki" else "theme_map.json"
+    path = simple_dir(name)
+    if not path.exists():
+        raise SystemExit(f"no theme map for source '{source}': run build-themes first")
+    return read_json(path)
+
+
+def theme_entry(theme_map: dict, theme: str) -> dict | None:
+    return next((e for e in theme_map["themes"] if e["theme"] == theme), None)
+
+
+def select_theme(theme_map: dict, theme: str, ref: date) -> dict:
+    """Radar row + deterministic long/short shortlist for one theme."""
+    from ptm_simple.radar import theme_radar
+    from ptm_simple.select import select_members
+
+    entry = theme_entry(theme_map, theme)
+    if entry is None:
+        raise SystemExit(f"theme '{theme}' is not in this map")
+    row = theme_radar(entry, _fundamentals(), ref)
+    return select_members(row)
+
+
+def run_theme_pass(theme_map: dict, theme: str, ref: date, force: bool = False) -> dict:
+    """One full pass for a theme: dive shortlist -> gate -> book -> reports."""
+    from ptm_simple.gate import gate_theme
+    from ptm_simple.radar import theme_radar
+    from ptm_simple.select import select_members
+
+    entry = theme_entry(theme_map, theme)
+    if entry is None:
+        raise SystemExit(f"theme '{theme}' is not in this map")
+    row = theme_radar(entry, _fundamentals(), ref)
+    if row["status"] == "COLD":
+        raise SystemExit(f"{theme} is COLD on {ref} — nothing to run")
+    sel = select_members(row)
+    picks = [{**e, "side": "long"} for e in sel["long"]] + [{**e, "side": "short"} for e in sel["short"]]
+    quals = run_shortlist_dives(picks, force=force)
+    gated = gate_theme(sel, row, quals, ref)
+    payload = assemble_book([gated], ref)
+    write_book(payload, ref)
+    write_idea_reports([gated], ref)
+    return payload
+
+
 def assemble_book(gated: list[dict], ref: date, per_theme: int = 2, max_positions: int = 12) -> dict:
     """Deterministic book: survivors ranked by |breadth| then score, theme-capped."""
     ideas = []

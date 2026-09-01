@@ -253,3 +253,79 @@ def test_assemble_book_caps_and_parks():
     payload = assemble_book(gated, date(2026, 9, 1), per_theme=2, max_positions=12)
     assert [i["ticker"] for i in payload["book"]] == ["A", "B"]  # per-theme cap, breadth-ranked
     assert [i["ticker"] for i in payload["overflow"]] == ["C"]
+
+
+# ---------------------------------------------------------------- viewer glue
+def _seed_simple_artifacts(isolate_roots):
+    """Write a small set of simple-process artifacts under the isolated roots."""
+    from ptm.config import data_dir, ideas_dir
+    from ptm.io import write_json
+
+    sdir = data_dir("simple")
+    write_json(sdir / "theme_map.json", {"source": "xlsx", "theme_count": 3, "ticker_count": 5,
+                                         "themes": [{"theme": "Data centre REIT", "members": ["DLR", "EQIX"]}]})
+    write_json(sdir / "theme_map_wiki.json", {"source": "wikipedia-industry", "theme_count": 9,
+                                              "ticker_count": 20, "wiki_fallbacks": 4, "themes": []})
+    write_json(sdir / "radar_2026-09-01.json", {"as_of": "2026-09-01", "themes": []})
+    write_json(sdir / "radar_2026-09-08.json", {"as_of": "2026-09-08", "themes": []})
+    write_json(sdir / "simple_book_2026-09-01.json", {"as_of": "2026-09-01", "book": [1], "overflow": [2, 3]})
+    write_json(sdir / "watchlist.json", {"parked": [1, 2]})
+    rdir = ideas_dir("simple", "Data centre REIT")
+    rdir.mkdir(parents=True, exist_ok=True)
+    (rdir / "DLR.md").write_text("# DLR long", encoding="utf-8")
+    return sdir
+
+
+def test_viewer_artifacts_inventory(isolate_roots):
+    from ptm_simple import viewer
+
+    _seed_simple_artifacts(isolate_roots)
+    arts = viewer.artifacts()
+    assert arts["maps"]["manual"]["exists"] and arts["maps"]["manual"]["themes"] == 3
+    assert arts["maps"]["wiki"]["fallbacks"] == 4
+    assert arts["radar_files"] == ["2026-09-01", "2026-09-08"] and arts["radar_date"] == "2026-09-08"
+    assert arts["book"]["ideas"] == 1 and arts["book"]["overflow"] == 2
+    assert arts["watchlist"]["parked"] == 2
+    assert arts["reports"] == 1
+
+
+def test_viewer_theme_map_and_radar_readers(isolate_roots):
+    from ptm_simple import viewer
+
+    _seed_simple_artifacts(isolate_roots)
+    got = viewer.get_theme_map("wiki")
+    assert got["map"]["theme_count"] == 9 and got["source"] == "wiki"
+    assert "error" in viewer.get_theme_map("bogus")
+    radar = viewer.get_radar()  # latest wins
+    assert radar["radar"]["as_of"] == "2026-09-08"
+    dated = viewer.get_radar("2026-09-01")
+    assert dated["radar"]["as_of"] == "2026-09-01"
+    assert "error" in viewer.get_radar("2001-01-01")
+
+
+def test_viewer_read_report_blocks_traversal(isolate_roots):
+    from ptm_simple import viewer
+
+    _seed_simple_artifacts(isolate_roots)
+    ok = viewer.read_report("Data centre REIT/DLR.md")
+    assert ok["markdown"].startswith("# DLR")
+    assert viewer.read_report("../../curated/universe.csv") == {"error": "not found"}
+    assert viewer.read_report("nope/missing.md") == {"error": "not found"}
+
+
+def test_viewer_start_guards(isolate_roots):
+    from ptm_simple import viewer
+
+    ok, payload, code = viewer.start("nonsense", {})
+    assert not ok and code == 400
+    # a theme pass dives tickers, so it refuses to start on other LLM work
+    ok, payload, code = viewer.start("run", {"theme": "Data centre REIT"}, other_work_running=True)
+    assert not ok and code == 409 and "deep-dive batch" in payload["error"]
+    assert not viewer.status()["running"]  # nothing was actually started
+
+
+def test_viewer_theme_detail_unknown_theme(isolate_roots):
+    from ptm_simple import viewer
+
+    _seed_simple_artifacts(isolate_roots)
+    assert "error" in viewer.get_theme_detail("Ghost theme", "manual")
