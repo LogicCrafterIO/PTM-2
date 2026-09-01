@@ -2244,7 +2244,7 @@
       host.innerHTML = `
         <div class="dd-batch">
           <strong>1 · Theme radar — as of ${esc(radar.as_of)}</strong>
-          <p class="hint" style="margin:4px 0 6px">${active.length} of ${rows.length} themes not COLD. Breadth = share of covered members with 90d estimate revisions beyond ±0.5% (up − down).</p>
+          <p class="hint" style="margin:4px 0 6px">${active.length} of ${rows.length} themes not COLD · map: ${esc(radar.map_source || "?")}. Breadth = share of covered members with 90d estimate revisions beyond ±0.5% (up − down).</p>
           <div id="simple-radar"></div>
         </div>`;
       attachTable(host.querySelector("#simple-radar"), rows, [

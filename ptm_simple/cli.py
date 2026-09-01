@@ -72,7 +72,7 @@ def main() -> None:
         if args.llm:
             grade_radar(rows, only=args.theme)
         rows = [r for r in rows if args.theme is None or r["theme"] == args.theme]
-        write_radar(rows, ref)
+        write_radar(rows, ref, theme_map)
         for r in rows:
             if r["status"] != "COLD":
                 wn = r.get("why_now") or {}

@@ -295,6 +295,41 @@ idea's detail pane shows the dive's stance chip and a button that renders the
 full REPORT.md inline. A pipeline run and a deep-dive batch are mutually
 exclusive so the LLM provider is never hit by both at once.
 
+## PTM-simple — the theme-first process
+
+`ptm_simple` is a second, simpler generator built from the starter pack: the
+unit of analysis is a **theme**, not a name. A weekly **theme radar**
+(deterministic: revision breadth + print calendar) finds activating themes, a
+deterministic ranking picks the 2-5 names that express one (long or short —
+falling themes are the same signal ridden short), the deep-dive engine runs
+only on that shortlist, and a four-gate pass (why-now / early-late /
+getting-paid / listening — no price anywhere) keeps survivors and parks the
+rest. See [docs/simple_idea_process.md](docs/simple_idea_process.md).
+
+```powershell
+.\.venv\Scripts\python.exe -m ptm_simple build-themes --map manual  # xlsx clusters
+.\.venv\Scripts\python.exe -m ptm_simple build-themes --map wiki    # Wikipedia industries
+.\\.venv\\Scripts\\python.exe -m ptm_simple radar --map manual --llm
+.\.venv\Scripts\python.exe -m ptm_simple select --theme "Data centre REIT" --map manual
+.\.venv\Scripts\python.exe -m ptm_simple run --theme "Data centre REIT" --map manual
+```
+
+**Theme maps.** `--map manual` clusters the starter-pack watchlist by hand.
+`--map wiki` is the deterministic alternative: every ticker's company is
+resolved to its Wikipedia article (Wikidata P452, the industry field the
+infobox renders — no LLM), and industries with ≥3 members become themes.
+Failed lookups are never cached; the map falls back to yfinance industries
+per ticker and reports the count. Wikipedia rate-limits, so the entity-search
+fallback runs under a wall-time budget — rerun the build to resolve more.
+
+**In the viewer** (same server): the **Simple** tab runs every step from the
+browser — build either theme map, run the radar, inspect a theme's
+deterministic selection, and run a theme pass (dives → gates → book →
+reports) — with the live log, and shows each step's outputs: both maps'
+build summaries, the radar table (status/lean/breadth/bellwether), the
+long/short shortlist per theme, the gated book, the parked watchlist, and
+every idea report rendered inline.
+
 ## Tests (does not touch live files)
 
 ```powershell

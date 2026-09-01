@@ -157,13 +157,16 @@ def _refresh_members(tickers: list[str]) -> None:
             log(f"expectations refresh failed for {ticker}: {exc}")
 
 
-def write_radar(rows: list[dict], ref: date) -> Path:
+def write_radar(rows: list[dict], ref: date, theme_map: dict | None = None) -> Path:
     from ptm.io import write_json
     from ptm_simple import simple_dir
 
     payload = {
         "as_of": ref.isoformat(),
         "generated_at": time.time(),
+        # which theme map produced these rows — manual and wiki maps share the
+        # radar_<date>.json file, so the artifact must say which it is
+        "map_source": (theme_map or {}).get("source", ""),
         "themes": [{k: v for k, v in row.items() if k != "members"} for row in rows],
         "members": {row["theme"]: row["members"] for row in rows},
     }

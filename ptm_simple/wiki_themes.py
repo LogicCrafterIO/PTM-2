@@ -33,6 +33,11 @@ _MIN_LABEL_LEN = 4
 # rather than industries; these never make a theme.
 _LABEL_STOPLIST = {"international standard industrial classification", "standard industrial classification"}
 _BATCH = 50
+# The entity-search fallback is the most rate-limited endpoint of the walk;
+# cap its wall time per build so one pass cannot grind for an hour. Unreached
+# names are never cached — the next build retries them and, meanwhile, the
+# map falls back to those tickers' yfinance industries.
+_SEARCH_BUDGET_S = 420
 # Wikimedia rate-limits per IP (HTTP 429). A global minimum spacing between
 # requests — not per-call-site sleeps — is what keeps a ~1500-name build
 # under the limit while the search fallback loops ticker by ticker.
@@ -286,9 +291,20 @@ def wiki_industries(tickers: list[str], names: dict[str, str], sleep_s: float = 
             ticker_qid[ticker] = qid
         else:
             unresolved.append(ticker)
-    # 2) search fallback for the misses (1 call each, cached afterwards)
+    # 2) search fallback for the misses (1 call each, cached afterwards).
+    #    The search endpoint is far more heavily rate-limited than entity
+    #    lookups, so the fallback runs under a wall-time budget: whatever it
+    #    does not reach stays uncached (a later build retries it) and the map
+    #    fills those names from yfinance industries meanwhile.
+    search_deadline = time.monotonic() + _SEARCH_BUDGET_S
+    searched = 0
     for i, ticker in enumerate(unresolved):
+        if time.monotonic() > search_deadline:
+            log(f"wiki search budget spent after {searched} lookups; "
+                f"{len(unresolved) - i} names left to the yfinance fallback / a later build")
+            break
         qid = _search_qid(names.get(ticker) or ticker)
+        searched += 1
         if qid:
             ticker_qid[ticker] = qid
         if (i + 1) % 25 == 0:

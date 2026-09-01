@@ -80,7 +80,7 @@ def _worker(action: str, opts: dict) -> None:
             if opts.get("llm"):
                 grade_radar(rows, only=opts.get("theme"))
             rows = [r for r in rows if not opts.get("theme") or r["theme"] == opts.get("theme")]
-            write_radar(rows, ref)
+            write_radar(rows, ref, theme_map)
             counted = [r for r in rows if r["status"] != "COLD"]
             result = {
                 "active": sum(1 for r in counted if r["status"] == "ACTIVE"),

@@ -91,7 +91,11 @@ def select_theme(theme_map: dict, theme: str, ref: date) -> dict:
 
 
 def run_theme_pass(theme_map: dict, theme: str, ref: date, force: bool = False) -> dict:
-    """One full pass for a theme: dive shortlist -> gate -> book -> reports."""
+    """One full pass for a theme: dive shortlist -> gate -> book -> reports.
+
+    Gate-failed members park on the theme watchlist (the starter pack's
+    "nothing dies" rule), alongside any ideas capped out of the book.
+    """
     from ptm_simple.gate import gate_theme
     from ptm_simple.radar import theme_radar
     from ptm_simple.select import select_members
@@ -107,6 +111,11 @@ def run_theme_pass(theme_map: dict, theme: str, ref: date, force: bool = False) 
     quals = run_shortlist_dives(picks, force=force)
     gated = gate_theme(sel, row, quals, ref)
     payload = assemble_book([gated], ref)
+    # gate-failed members park on the theme watchlist: capped-out book ideas
+    # (assemble_book's overflow) are joined by every gated-out name, each with
+    # its per-gate results so the watchlist shows why it is waiting
+    payload["overflow"] = list(payload["overflow"]) + [p for p in gated.get("parked", []) if p not in payload["overflow"]]
+    payload["parked_detail"] = gated.get("parked", [])
     write_book(payload, ref)
     write_idea_reports([gated], ref)
     return payload
