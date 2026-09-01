@@ -1,175 +1,171 @@
-# PTM Simple — earnings-catalyst idea process (from the John pre-mentoring starterpack)
+# PTM-simple — theme-first idea process (v2)
 
-A deliberately simpler idea-generation process, reverse-engineered from
-`John pre mentoring starterpack.xlsx`. It replaces the current
-screen → macro → deep-dive → gates → group-review → book chain for a
-specific job: **trading the next earnings**, the way the 4Pillar starter
-pack teaches it. The existing PTM process stays untouched; this is a plan
-for a second, lighter generator.
+Reverse-engineered from `John pre mentoring starterpack.xlsx`, revised per
+John: **no options structuring** (yfinance options data is not accurate),
+**no price targets**, **no technicals or price action anywhere**, themes are
+the unit of analysis, and the **qualitative deep dive is kept**.
 
----
-
-## 1. What the starter pack actually does (evidence from the sheets)
-
-**Master watchlist** — ~300 names clustered into *themes, not GICS*: "AI
-Semiconductor chips", "Optical Networking", "Cloud data Infrastructure",
-"Cybersecurity", "AI advertising"… Each cluster is a story with its member
-tickers. Themes carry the thesis; names are just the tradable expressions.
-
-**Portfolio overview** — a sector × CORE/BIAS long-short tilt grid, a
-"forward looking" market-observation habit ("look at a handful of
-competitors to see what the subsector is doing"), and a *weekly refresh*
-of the names worth watching (week-2 list: MU, CRS, CAVA, QTWO, PDFS, MELI,
-PEN, SPOT…). The watchlist is alive, not an annual artifact.
-
-**pre session / Structuring** — every trade is an **options calendar
-spread around a dated earnings catalyst**:
-- `NEXT EARNINGS` is a first-class column on every row (CLS 2026-10-26,
-  AMD 2026-11-03, NOW 2026-10-28…).
-- Long leg: CALL/PUT expiring *after* the print (NOW: Oct-16 $125 call vs
-  the Oct-28 print), strike written toward the **price target** (NOW $145
-  vs last $117.35; WING $90 vs $117.20).
-- Short leg: the *near-dated same-strike* option, whose premium finances
-  the long leg — you're selling the front-month premium to own the
-  catalyst month. IV and time value are tracked per leg.
-- P/L and RETURN computed per structure (the sheet's worked example shows
-  +100% return on the NOW spread).
-
-**GATEKEEPING** — the whole philosophy in five questions on a 2–4 month
-horizon:
-1. **WHY NOW?** — GRADED: GREAT (stock-specific news activating the
-   watchlist name), GOOD (strong sector-specific catalyst), GREAT (genuine
-   macro event), TOURISM (short-term price moves — rejected).
-2. **FULL POSITION OR SCALE** — follow an execution plan.
-3. **AM I EARLY OR LATE?** — "don't be late; better to be patient — back
-   on the ACTIONABLE WATCHLIST."
-4. **AM I GETTING PAID IF I'M RIGHT?** — "need a probable pathway to 200%
-   return with quant-based sensible price target."
-5. **AM I LISTENING TO THE MARKET PROPERLY?** — real signs away from the
-   noise.
-
-And the anti-patterns it names explicitly: years-long 50-page reports
-nobody reads, screen jockeys "pretending they have a clue about 2028 EPS
-growth", retail day-horizon momentum. The analyst's edge is *depth*, the
-trader's edge is *timing* — this process buys timing with a checklist and
-spends the research budget only where a catalyst justifies it.
-
-**Actionable Watchlist** — "your next best trades — kept live once the
-book is running": long and short candidate columns per sector. Failed
-names don't die; they park here until a catalyst activates them.
-
-**Realised** — closed-trade ledger with win %, R, Kelly: the process eats
-its own cooking and measures the feed-back loop.
+Supersedes v1 (the calendar-spread variant). Changelog at the bottom.
 
 ---
 
-## 2. The PTM-simple pipeline (5 steps, one LLM call per candidate)
+## 1. What the starter pack contributes (and what we keep)
+
+- **Master watchlist**: ~300 names clustered into ~88 *themes* — stories,
+  not GICS ("Optical Networking", "AI Power and Grid Expansion", "Cloud
+  data Infrastructure", "Semi testing/Packaging"). This becomes the theme
+  map — the pipeline's primary axis.
+- **GATEKEEPING**: five questions on a 2-4 month horizon. We keep them,
+  reworded where they referenced price/technicals:
+  1. **WHY NOW?** — what activated the theme? (graded GREAT / GOOD / NONE;
+     price-only activation is TOURISM → rejected)
+  2. **FULL POSITION OR SCALE** — an execution plan, not a vibe.
+  3. **AM I EARLY OR LATE?** — measured without price (see §4).
+  4. **AM I GETTING PAID IF I'M RIGHT?** — reframed as an estimate-impact
+     test, NOT a price target (see §2, gate 3).
+  5. **AM I LISTENING TO THE MARKET?** — estimate breadth and filings
+     direction, not price action.
+- **Actionable Watchlist**: names that fail a gate park per theme; they
+  re-queue when the theme activates. Nothing dies.
+- **Realised ledger**: win %, R, Kelly on closed ideas — the process's own
+  scorecard.
+
+## 2. The pipeline
 
 ```
-themed watchlist  →  catalyst queue  →  WHY-NOW check  →  payoff gate  →  structured idea
-   (reuse screen)      (earnings date)     (1 LLM call)     (deterministic)    (spread + file)
-                                                        ↘ rejected → Actionable Watchlist
+theme map (static, maintained)
+      │
+      ▼
+WEEKLY THEME RADAR — is any theme activating?        (deterministic + 1 LLM call)
+      │  activated themes (usually 0-2 of 88)
+      ▼
+TICKER SELECTION inside the theme                    (deterministic ranking)
+      │  shortlist: 2-5 names
+      ▼
+DEEP DIVE — kept, scoped to the shortlist            (the existing engine)
+      │
+      ▼
+GATEKEEPING — why-now / early-late / getting-paid    (deterministic)
+      │
+      ├── pass → structured idea → capped book
+      └── fail → parked on the theme watchlist
 ```
 
-### Stage 0 — Theme-clustered watchlist
-Keep the existing screened universe and its fundamentals/consensus
-ingestion, but tag every name with a **theme cluster** (the starter pack's
-~30 stories: optical networking, cloud data, cyber, AI advertising, power
-& grid, nuclear…). Themes are a small static mapping file — not analysis.
-PTM's ISM tilt and sector data stay available as backdrop; nothing here
-needs the macro dashboard to gate anything.
+### Stage 0 — Theme map
+A small static file: `theme → [tickers]`, seeded from the starter pack's
+clusters (typo-normalised), each with a one-line thesis. Maintained by
+hand, weekly — new tickers join when the news justifies it, dead themes
+retire. ~88 themes × ~5-15 names. Everything downstream reads this file.
 
-### Stage 1 — Catalyst queue (replaces the P/E-outlier screen as the organizer)
-Every name enters the queue anchored on its **next earnings date**
-(PTM already computes dated + estimated prints and buckets them
-0-30/31-60/61-90d). Optional cheap quant pre-filters, all deterministic:
-- dated print inside the window;
-- measurable estimate-revision direction (PTM's expectations data);
-- a reaction history (avg |move| per print) so the payoff math has inputs.
+### Stage 1 — Weekly theme radar (the "when might it take off" problem)
+One pass per theme per week, all deterministic except one call:
+- **Revision breadth**: % of theme names with FY1 EPS estimates moving up
+  over 30d (PTM's expectations data, aggregated). A theme move shows up as
+  *breadth*, not as one name — that is the single best early signal, and
+  PTM already computes it per name.
+- **Activation count**: how many theme names had company-specific news in
+  the last 2-3 weeks (guidance moves, contracts, product launches, M&A).
+  One cheap LLM call per week scans headlines for the *whole theme* and
+  grades events GREAT / GOOD / NONE.
+- **Bellwether calendar**: which theme anchor prints in the next 2 weeks
+  (TSM in foundry, AVGO in custom silicon…). A bellwether print is the
+  theme's information event — the natural window for the whole cluster.
+- **ISM / sector data direction** and **filings direction** across members
+  (PTM has both per name).
 
-A name that fails only the *data* checks parks on the Actionable Watchlist
-as "data-thin" rather than being rejected.
+Theme activation = breadth rising + clustered activations + a dated
+catalyst ahead. Output per theme: `ACTIVE / WARM / COLD` + the why-now
+grade + the activation events. Zero price input.
 
-### Stage 2 — WHY-NOW check (replaces the deep dive — ONE small LLM call)
-For each queued candidate, one structured call with the last ~3 weeks of
-stock-specific headlines (PTM's web search, capped), the sector move, and
-the macro event list. Output:
-- `why_now`: GREAT (company-specific activation — guidance move, contract,
-  product, M&A, filing) / GOOD (sector-wide catalyst) / NONE (price action
-  only = TOURISM);
-- up to **three** quantified, headline-cited reasons (magnitude required —
-  the existing quantified-honesty verifier applies verbatim);
-- one-line thesis.
+### Stage 2 — Ticker selection inside an activated theme
+Deterministic ranking of theme members, no LLM:
+1. **Revenue exposure** — does the name actually sell into the theme
+   (industry/segment tags; refined over time from filings)?
+2. **Revision momentum** — its own 30d/90d estimate direction (PTM has it).
+3. **Cluster divergence** — peers revising up while the name lags = the
+   "know more than the market" long candidate; revising down while the
+   theme rises = the short candidate.
+4. **Catalyst timing** — its next print inside the window; the bellwether
+   already printed or printing this week.
+5. **Durability basics** — net cash, margin trend (fundamentals only).
 
-No debate rounds, no driver scores, no scorecard. The qual bar is the
-checklist, not a dossier. `NONE` never becomes an idea — it parks.
+Deep dive the top **2-5** names — and only those. This is the big saving:
+the dive engine runs on a shortlist, not on a 197-name screen.
 
-### Stage 3 — Payoff gate (deterministic, the 200% rule)
-- **Sensible price target**: consensus target + the revision-implied move;
-  sanity-banded against the name's own reaction history (avg |move| per
-  print ±σ). "Quant-based" = it must reconcile with measured data.
-- **Probable pathway to ~200%** on the *structure* (not the stock): using
-  the front/back IV from the options data, does the average historical
-  earnings move move the spread's long leg ≥ ~2× net debit? If the math
-  can't get there, reject — the market is not paying you.
-- **Early-or-late**: print < 5 trading days away and the activation news
-  is > 10 days old → late → Actionable Watchlist (re-check next catalyst).
+### Stage 3 — Deep dive (kept as-is, scoped by the theme)
+The existing engine runs unchanged — findings, debate, synthesis
+scorecard, adapter — with one addition to the prompt: the theme activation
+context ("theme X activated: <events>; your job is to test whether THIS
+name expresses it — revenue exposure, position, capacity to deliver").
+The dive verdict now answers two gatekeeping questions directly: does the
+name's own case corroborate the theme, and is it quantified enough to
+matter.
 
-### Stage 4 — Idea file + book (the Structuring sheet, mechanical)
-Each survivor writes a one-page idea: ticker, print date, direction,
-**calendar-spread structure** (long option past the print, short front
-same-strike, target strikes from the price target), the why-now grade with
-its three quantified reasons, the payoff math, and the execution note
-(full/scale). The book is the Actionable Watchlist sorted by payoff ratio
-with a per-sector cap — no beta swaps, no conviction arithmetic, no
-per-window books. Sector caps (2/side) and a light gross cap are the only
-portfolio constraints, mirroring the starter pack's CORE/BIAS grid.
+### Stage 4 — Gatekeeping (no technicals, no price action, no price targets)
+1. **Why now** — the theme's graded activation + the dive's corroboration.
+2. **Early or late, without price** — where the name sits in the theme's
+   revision cycle: revisions just turning up and the bellwether not yet
+   printed = EARLY (good); most peers already printed post-revision and
+   the move in estimates is old = LATE → park.
+3. **Getting paid, without price targets** — estimate-impact test: are the
+   dive's quantified reasons large *relative to the consensus base*? A $2B
+   contract is noise for a $30B-revenue company and a thesis for a $500M
+   one. The verifier already demands real magnitudes; this gate only asks
+   whether they are big enough to move estimates materially.
+4. **Listening to the market** — cluster breadth + filings direction must
+   not point against the idea (the existing revision-veto, applied at
+   theme level).
 
-### Stage 5 — Realised loop
-Log every closed structure (entry/exit, days, P/L, R); the viewer shows
-win %, average R and Kelly on the same page as the live book. The
-feedback loop is the process's scorecard.
+### Stage 5 — Idea file, book, realised loop
+One-page idea per survivor: theme + activation events, the dive scorecard
+(unchanged), the divergence argument, the estimate-impact test. Book =
+survivors ranked by theme strength, sector-capped (2/side). Closed ideas
+log into the Realised sheet (win %, R, Kelly) shown next to the live book
+in the viewer.
+
+## 3. Why this is genuinely simpler
+
+- **The entry filter is a story, not a screen.** No PE-outlier scan, no
+  88-gate funnel; theme membership + activation decides who gets analysed.
+- **The group review is replaced.** The theme radar IS the cross-sectional
+  read — it runs weekly over clusters before any dive, not after.
+- **LLM budget collapses**: 1-2 calls per week for the radar (per theme,
+  not per name) + 2-5 full dives on shortlisted names. A typical week is
+  ~10 LLM calls, not ~800.
+- **Everything decision-relevant is measured, not forecast**: revision
+  breadth, filings direction, ISM, print calendar. No technicals, no price
+  targets, no options data.
+
+## 4. Honest risks
+
+- **Theme map staleness**: the xlsx taxonomy has typos and will age; themes
+  evolve. Needs a light weekly maintenance touch, and a rule for renaming/
+  retiring clusters.
+- **No price anchor at all**: without price targets, discipline rests on
+  the estimate-impact test and the realised ledger. That is a real loss of
+  anchoring — the compensating control is that "getting paid" still demands
+  a number (magnitude vs consensus), just not a price.
+- **Revenue exposure is the weak data point**: yfinance industry tags are
+  coarse; segment revenue needs filings parsing. Start with tags + manual
+  curation per theme; refine only where the theme is live.
+- **Breadth signals lag at inflections**: revision breadth is backward-
+  looking; the bellwether calendar is what makes it forward-looking. When
+  in doubt, park — the watchlist is free.
+
+## 5. Build order
+
+1. Theme map file + member normalisation (deterministic; reuses ingest).
+2. Theme radar: breadth + print calendar + ISM (deterministic viewer tab).
+3. Weekly why-now theme call (the one LLM stage) + parked watchlist.
+4. Deep-dive scoping: theme context in the prompt; shortlist selection.
+5. Gatekeeping pass (estimate-impact + early/late) + idea file + Realised
+   ledger + viewer page.
+6. Run both generators 2-3 weeks; compare against the audit trail.
 
 ---
 
-## 3. What this changes vs the current PTM process
-
-| | PTM current | PTM simple |
-|---|---|---|
-| Organizer | P/E-outlier screen | Next-earnings catalyst queue |
-| Qualitative | 4-6 web-search dives/debates + synthesis + adapter (~4-6 LLM calls/name) | One why-now checklist call (~1/name) |
-| Verdict | Evidence score S, weighted pillars, stance | Graded WHY-NOW + 3 quantified reasons |
-| Decision layer | Gates + group reviews + books | Three gates: why-now / payoff / early-or-late |
-| Instrument | Long/short equity book | Calendar spreads around the print |
-| Rejections | qual_fail (88 last run) | → Actionable Watchlist (parked, not dead) |
-| Feedback | Audit | Realised ledger (win%, R, Kelly) |
-
-**LLM budget:** ~1 small call per queued candidate + zero per parked name,
-vs a dive's full ladder — roughly an 80% cut on a typical week, and the
-weekly-usage ceiling stops being the binding constraint it was.
-
-## 4. Honest risks (what the complexity was buying)
-
-- **No evidence dossier**: the why-now call cites headlines, not a
-  source-cited dive. The 3-quantified-reasons rule plus the verbatim-number
-  verifier is the honesty floor; it is weaker than the dive's audit trail.
-- **No bull/bear debate**: single-side conviction by design — the payoff
-  gate and the parked-watchlist are the safety nets, not debate.
-- **Options carry risks equity ideas don't**: IV crush, pin risk, spread
-  slippage. The Structuring sheet prices IV explicitly; the plan must
-  ingest IV per leg or the 200% math is fiction.
-- **The why-now grade is one LLM judgment**: keep the same
-  quantified-verification discipline (magnitude must appear in the cited
-  headline) so the checklist can't invent activation.
-
-## 5. Suggested build order
-
-1. Theme map + catalyst queue over the existing universe (deterministic;
-   reuses ingest + earnings data). *Viewer: a "Queue" tab.*
-2. Why-now checklist call + Actionable Watchlist writer (the one LLM
-   stage). *Viewer: parked names visible per sector.*
-3. Payoff gate with reaction history + IV (deterministic; needs an IV
-   source for the two legs).
-4. Structured idea file + Realised ledger + viewer page.
-5. Run BOTH generators for 2-3 weeks; compare realized P/L and the audit
-   trail before deciding which one earns the compute budget.
+*Changelog*: v1 (superseded) used the starter pack's calendar-spread
+structuring with IV/payoff math; dropped because yfinance options data is
+not accurate, and price-target computation was dropped with it. v2 keeps
+the deep dive, replaces the group review with the theme radar, and trades
+equity ideas around dated catalysts with no price or technical input.
