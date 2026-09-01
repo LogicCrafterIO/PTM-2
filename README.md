@@ -312,6 +312,7 @@ rest. See [docs/simple_idea_process.md](docs/simple_idea_process.md).
 .\\.venv\\Scripts\\python.exe -m ptm_simple radar --map manual --llm
 .\.venv\Scripts\python.exe -m ptm_simple select --theme "Data centre REIT" --map manual
 .\.venv\Scripts\python.exe -m ptm_simple run --theme "Data centre REIT" --map manual
+.\.venv\Scripts\python.exe -m ptm_simple run --all --map manual   # sweep every non-COLD theme
 ```
 
 **Theme maps.** `--map manual` clusters the starter-pack watchlist by hand.
@@ -324,11 +325,16 @@ fallback runs under a wall-time budget — rerun the build to resolve more.
 
 **In the viewer** (same server): the **Simple** tab runs every step from the
 browser — build either theme map, run the radar, inspect a theme's
-deterministic selection, and run a theme pass (dives → gates → book →
-reports) — with the live log, and shows each step's outputs: both maps'
-build summaries, the radar table (status/lean/breadth/bellwether), the
-long/short shortlist per theme, the gated book, the parked watchlist, and
-every idea report rendered inline.
+deterministic selection, run a single theme pass, or **run all non-COLD
+themes** in one sweep (one book across themes; first sweep costs a dive per
+shortlisted name, reruns reuse the cache) — with the live log, and shows
+each step's outputs: both maps' build summaries, the radar table
+(status/lean/breadth/bellwether/against-theme divergers), the long/short
+shortlist per theme with each member's alignment to the theme, the gated
+book, the parked watchlist with the failing gate per name, and every idea
+report rendered inline. Gatekeeping keeps any name with a dated print within
+the 2-4 month horizon (120 days); gate-failed names park on the theme
+watchlist — nothing dies.
 
 ## Tests (does not touch live files)
 

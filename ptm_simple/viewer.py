@@ -2,8 +2,9 @@
 
 Kept inside ptm_simple so the PTM viewer server stays generic — it only
 delegates /api/simple/* here. One simple action at a time; the dive-bearing
-`run` action additionally refuses to start while a deep-dive batch or an
-idea pipeline is in flight, so nothing ever hammers the LLM in parallel.
+`run` / `run-all` actions additionally refuse to start while a deep-dive
+batch or an idea pipeline is in flight, so nothing ever hammers the LLM in
+parallel.
 """
 
 from __future__ import annotations
@@ -15,7 +16,7 @@ from datetime import datetime, timezone
 
 from ptm.log import log
 
-_SIMPLE_ACTIONS = ("build-themes", "build-wiki", "radar", "run")
+_SIMPLE_ACTIONS = ("build-themes", "build-wiki", "radar", "run", "run-all")
 _lock = threading.Lock()
 _state: dict = {
     "running": False,
@@ -92,8 +93,15 @@ def _worker(action: str, opts: dict) -> None:
 
             theme_map = load_theme_map(opts.get("map") or "manual")
             payload = run_theme_pass(theme_map, opts.get("theme") or "", ref, force=bool(opts.get("force")))
-            result = {"book": len(payload["book"]), "parked": len(payload["overflow"]),
-                      "ideas": payload["book"], "overflow": payload["overflow"]}
+            result = {"themes_run": payload.get("themes_run", 1), "book": len(payload["book"]),
+                      "parked": len(payload["overflow"]), "ideas": payload["book"], "overflow": payload["overflow"]}
+        elif action == "run-all":
+            from ptm_simple.run import load_theme_map, run_active_pass
+
+            theme_map = load_theme_map(opts.get("map") or "manual")
+            payload = run_active_pass(theme_map, ref, force=bool(opts.get("force")))
+            result = {"themes_run": payload.get("themes_run", 0), "book": len(payload["book"]),
+                      "parked": len(payload["overflow"]), "ideas": payload["book"], "overflow": payload["overflow"]}
         else:
             raise ValueError(f"unknown simple action: {action}")
         with _lock:
@@ -124,7 +132,7 @@ def start(action: str, opts: dict, other_work_running: bool = False) -> tuple[bo
     start on top of another LLM consumer."""
     if action not in _SIMPLE_ACTIONS:
         return False, {"error": f"action must be one of {list(_SIMPLE_ACTIONS)}"}, 400
-    if other_work_running and action == "run":
+    if other_work_running and action in ("run", "run-all"):
         return False, {"error": "a deep-dive batch or idea pipeline is running; dives would collide"}, 409
     with _lock:
         if _state["running"]:

@@ -7,8 +7,9 @@ questions WITHOUT price inputs:
 1. WHY NOW    - the theme's radar status must be WARM/ACTIVE and the
                 member's OWN estimates must agree with the side (longs
                 rising, shorts falling) — with the theme or against it.
-2. EARLY/LATE - the print must still be ahead (>= 0 days) and the estimate
-                move must be recent enough to still be actionable.
+2. EARLY/LATE - a dated print within the 2-4 month trade horizon
+                (MAX_DAYS_TO_PRINT = 120) and still ahead; the print itself
+                may be the catalyst.
 3. GETTING PAID (estimate-impact test, not a price target) - the dive's
                 adapter verdict must carry at least one QUANTIFIED evidence
                 item whose magnitude is material against the company's base
@@ -28,6 +29,10 @@ from ptm.log import log
 
 MIN_IMPACT_PCT = 3.0
 MIN_DAYS_TO_PRINT = -1  # the print itself may be the catalyst; a passed print parks
+# the process trades a 2-4 month horizon (docs/simple_idea_process.md §1), so a
+# print up to ~4 months out is still the catalyst; 60d rejected every pick of
+# an ACTIVE theme whose members report in the 61-90d window.
+MAX_DAYS_TO_PRINT = 120
 
 
 def gate_member(member: dict, radar_row: dict, qual: dict | None, ref: date) -> dict:
@@ -63,7 +68,7 @@ def gate_member(member: dict, radar_row: dict, qual: dict | None, ref: date) -> 
     gates.append(
         {
             "gate": "early_or_late",
-            "pass": days is not None and days >= MIN_DAYS_TO_PRINT and days <= 60,
+            "pass": days is not None and days >= MIN_DAYS_TO_PRINT and days <= MAX_DAYS_TO_PRINT,
             "detail": f"print in {days} days" if days is not None else "no dated print",
         }
     )

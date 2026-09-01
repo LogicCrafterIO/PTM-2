@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-09-01",
+  "parked": [
+    {
+      "ticker": "WERN",
+      "theme": "Cargo Ground Transportation",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 15.55, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 65 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "revenue +24.0% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 15.55,
+      "days_to_print": 65,
+      "earnings_date": "2026-11-05",
+      "lean": "long",
+      "breadth": 1.0
+    }
+  ]
+}

@@ -1,0 +1,2726 @@
+{
+  "source": "John pre mentoring starterpack.xlsx",
+  "theme_count": 113,
+  "ticker_count": 444,
+  "themes": [
+    {
+      "theme": "Aerospace & Defense",
+      "members": [
+        "AIR",
+        "AXON",
+        "BA",
+        "BWXT",
+        "GE",
+        "HII",
+        "HXL",
+        "LMT",
+        "NOC",
+        "RTX"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Agricultural",
+      "members": [
+        "ADM",
+        "BG",
+        "DAR",
+        "PPC",
+        "TSN"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "AI advertising",
+      "members": [
+        "APP",
+        "KVYO",
+        "MGNI",
+        "ZETA"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "AI Infrastructure and Custom Silicon",
+      "members": [
+        "ALAB",
+        "AVGO",
+        "CIEN",
+        "CRDO",
+        "MRVL",
+        "ORCL"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "AI platforms & Enterprise AI",
+      "members": [
+        "AI",
+        "CRM",
+        "IBM",
+        "MSFT",
+        "NOW",
+        "ORCL",
+        "PATH",
+        "PLTR"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "AI Power and Grid Expansion",
+      "members": [
+        "CEG",
+        "NEE",
+        "NRG",
+        "VST"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "AI Semiconductor chips",
+      "members": [
+        "AMD",
+        "ARM",
+        "INTC",
+        "NVDA",
+        "QCOM"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Airlines",
+      "members": [
+        "AAL",
+        "ALGT",
+        "DAL",
+        "LUV",
+        "UAL"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Analog",
+      "members": [
+        "ADI",
+        "MCHP",
+        "MPWR",
+        "ON",
+        "QRVO",
+        "SWKS",
+        "TXN"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Apparel, Footwear & Luxury",
+      "members": [
+        "BJ",
+        "COST",
+        "CROX",
+        "DECK",
+        "NKE",
+        "ONON",
+        "RL",
+        "SFM",
+        "TPR",
+        "WMT"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "CASJ",
+        "LUL"
+      ]
+    },
+    {
+      "theme": "Application Development",
+      "members": [
+        "DT",
+        "FROG",
+        "GTLB",
+        "NTNX",
+        "PD",
+        "TEAM"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Automotive",
+      "members": [
+        "CVNA",
+        "F",
+        "KMX",
+        "ORLY",
+        "STLN",
+        "TSLA"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "AZXO"
+      ]
+    },
+    {
+      "theme": "Banks",
+      "members": [
+        "FLG",
+        "TFIN"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Battery Storage /behind the grid",
+      "members": [
+        "BE",
+        "ENS",
+        "FLNC"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Biotechnology",
+      "members": [
+        "CORT",
+        "KRYS",
+        "SRPT",
+        "VCEL"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Building Products & Materials",
+      "members": [
+        "BLDR",
+        "HD",
+        "JELD",
+        "LOW",
+        "TGLS",
+        "TT",
+        "UFPI"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Capital Markets",
+      "members": [
+        "CBOE",
+        "IBKR",
+        "VRTS"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Chemicals",
+      "members": [
+        "DD",
+        "DOW"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Cloud data Infrastructure",
+      "members": [
+        "ESTC",
+        "MDB",
+        "SNOW"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "CFLT"
+      ]
+    },
+    {
+      "theme": "Coal & Consumable Fuels",
+      "members": [
+        "ARLP",
+        "BTU"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "CEIX"
+      ]
+    },
+    {
+      "theme": "Collaboration & Productivity",
+      "members": [
+        "ASAN",
+        "BOX",
+        "DBX",
+        "DOCU",
+        "MNDY",
+        "ZM"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "ZEN"
+      ]
+    },
+    {
+      "theme": "Construction & Engineering",
+      "members": [
+        "CAT",
+        "FLR",
+        "MTZ",
+        "PWR",
+        "URI"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Consumer Finance",
+      "members": [
+        "DAVE",
+        "SEZL"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Consumer Infrastructure",
+      "members": [
+        "AFRM",
+        "GLBE",
+        "PYPL",
+        "SHOP",
+        "XYZ"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "TOAST"
+      ]
+    },
+    {
+      "theme": "Copper",
+      "members": [
+        "FCX",
+        "SCCO"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "CRM/Sales/Marketing Software",
+      "members": [
+        "BRZE",
+        "CRM",
+        "HUBS",
+        "KVYO",
+        "SPT",
+        "ZETA"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Cruise Liners & Gaming",
+      "members": [
+        "CCL",
+        "CZR",
+        "DKNG",
+        "RCL",
+        "VIK",
+        "WYNN"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Cybersecurity",
+      "members": [
+        "CHKP",
+        "CRWD",
+        "FTNT",
+        "OKTA",
+        "PANW",
+        "RPD",
+        "ZS"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Data centre REIT",
+      "members": [
+        "DLR",
+        "EQIX",
+        "IRM"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Digital Advertising",
+      "members": [
+        "APP",
+        "GOOG",
+        "KVYO",
+        "META",
+        "MGNO",
+        "PINS",
+        "RDDT",
+        "SNAP",
+        "ZETA"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Digital Commerce & Fintech",
+      "members": [
+        "COIN",
+        "GPN",
+        "HOOD",
+        "MSTR",
+        "SHOP",
+        "TOST",
+        "XYZ"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Digital Infrastructure",
+      "members": [
+        "AKAM",
+        "DOCN",
+        "GDDY",
+        "WIX"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Diversified REITs",
+      "members": [
+        "BNL",
+        "WPC"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Diversified telecomms",
+      "members": [
+        "LUMN",
+        "TMUS"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Drinks",
+      "members": [
+        "CELH",
+        "KDP",
+        "KO",
+        "MNST",
+        "PEP",
+        "STZ"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Drones",
+      "members": [
+        "AVAV",
+        "KTOS",
+        "ONDS"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "E-commerce & Online Retail",
+      "members": [
+        "AMZN",
+        "CHWY",
+        "ETSY",
+        "GLBE",
+        "REAL",
+        "RVLV",
+        "SFIX",
+        "W"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "EBAT"
+      ]
+    },
+    {
+      "theme": "Electric Utilities",
+      "members": [
+        "AEP",
+        "ED",
+        "EIX",
+        "IDA",
+        "SO"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Electrical Equip/cooling/power",
+      "members": [
+        "ETN",
+        "HUBB",
+        "PWR",
+        "VRT"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Electrical Equipment",
+      "members": [
+        "AMBA",
+        "EMR",
+        "ETN",
+        "FLR",
+        "HUBB",
+        "JCI",
+        "ROK",
+        "ZBRA"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "MISC"
+      ]
+    },
+    {
+      "theme": "Enterprise Applications (ERP/HCM/Finance)",
+      "members": [
+        "ADP",
+        "INTU",
+        "ORCL",
+        "PAYX",
+        "SAP",
+        "WDAY"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Fertilizers",
+      "members": [
+        "CF",
+        "FMC",
+        "ICL",
+        "MOS",
+        "NTR",
+        "SMG"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Financial Services",
+      "members": [
+        "GPN",
+        "JKHY",
+        "MA",
+        "V"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Flooring",
+      "members": [
+        "FND",
+        "MHK",
+        "SHW"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Food manufactures",
+      "members": [
+        "CAG",
+        "CPB",
+        "GIS",
+        "HSY",
+        "MDLZ",
+        "SJM"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "K"
+      ]
+    },
+    {
+      "theme": "Foundry",
+      "members": [
+        "GFS",
+        "INTC",
+        "TSM"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Games",
+      "members": [
+        "RBLX",
+        "TTWO"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "EA"
+      ]
+    },
+    {
+      "theme": "Gas Utilities",
+      "members": [
+        "ATO",
+        "SWX",
+        "UGI"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Generators/Power",
+      "members": [
+        "CAT",
+        "MTZ",
+        "PWR",
+        "STM"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Health Care Equipment & Supplies",
+      "members": [
+        "DXCM",
+        "IDXX",
+        "ISRG",
+        "WST"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Health Care REITs",
+      "members": [
+        "VTR",
+        "WELL"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "MPW"
+      ]
+    },
+    {
+      "theme": "Heavy Machinery",
+      "members": [
+        "DE",
+        "OTIS",
+        "PCAR"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Home builders",
+      "members": [
+        "DHI",
+        "KBH",
+        "LEN",
+        "LGIH",
+        "TOL"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Home Improvement and Furnishings",
+      "members": [
+        "LOVE",
+        "RH"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "WSW"
+      ]
+    },
+    {
+      "theme": "Hotel & Resort REITs",
+      "members": [
+        "APLE",
+        "HST"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "House Hold Products",
+      "members": [
+        "CHD",
+        "CL",
+        "CLX",
+        "PG"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "HVAC & Plumbing",
+      "members": [
+        "CARR",
+        "JCI",
+        "TT"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Independent Power and Renewable Electricity Producers",
+      "members": [
+        "CEG",
+        "ORA",
+        "TLN",
+        "VST"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "NEP"
+      ]
+    },
+    {
+      "theme": "Industrial conglomerates",
+      "members": [
+        "EMR",
+        "GE",
+        "HON",
+        "ITW",
+        "ROP"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Industrial machinery",
+      "members": [
+        "CR",
+        "MIDD",
+        "PH",
+        "RBC"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Industrial REITs",
+      "members": [
+        "EGP",
+        "PLD",
+        "REXR"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Insurance",
+      "members": [
+        "EIG",
+        "GSHD"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Integrated Oil & Gas",
+      "members": [
+        "BP",
+        "CVX",
+        "SHEL",
+        "XOM"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Internet Platforms/Consumer Software",
+      "members": [
+        "DASH",
+        "DUOL",
+        "HAS",
+        "LYV",
+        "MAT",
+        "META",
+        "PINS",
+        "PLNT",
+        "PTON",
+        "RBLX",
+        "RDDT",
+        "SNAP",
+        "SPOT",
+        "UBER"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "NTFL"
+      ]
+    },
+    {
+      "theme": "Life Sciences Tools & Services",
+      "members": [
+        "BIO",
+        "ILMN",
+        "MEDP",
+        "NEOG",
+        "TECH"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Lithium",
+      "members": [
+        "ALB",
+        "LAC",
+        "SQM"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "PLL"
+      ]
+    },
+    {
+      "theme": "Media",
+      "members": [
+        "CMCSA",
+        "NWSA",
+        "OMC",
+        "PARA",
+        "PUBM",
+        "WPP"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Metal and Glass",
+      "members": [
+        "CCK",
+        "GLW"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "WPK"
+      ]
+    },
+    {
+      "theme": "Miscellaneous",
+      "members": [
+        "ACM",
+        "FAST",
+        "HRI",
+        "XYL"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Mortgage Real Estate Investment Trusts (REITs)",
+      "members": [
+        "ABR",
+        "BXMT",
+        "LADR",
+        "STWD"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Multi-Utilities",
+      "members": [
+        "DTE",
+        "OTTR",
+        "PCG",
+        "SRE"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Networking and Comms",
+      "members": [
+        "ANET",
+        "CSCO",
+        "ERIC",
+        "FN",
+        "NOK"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "CIENA",
+        "JNPR"
+      ]
+    },
+    {
+      "theme": "Nuclear",
+      "members": [
+        "BWXT",
+        "CCJ",
+        "CEG",
+        "OKLO",
+        "SMR",
+        "UEC"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Observability & Monitoring",
+      "members": [
+        "DDOG",
+        "IOT"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "SPLK"
+      ]
+    },
+    {
+      "theme": "Office REITs",
+      "members": [
+        "BXP",
+        "HIW",
+        "HPP",
+        "KRC",
+        "VNO"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Oil & Gas Drilling",
+      "members": [
+        "HP",
+        "NBR",
+        "NE",
+        "RIG",
+        "VAL"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Oil & Gas Equipment & Services",
+      "members": [
+        "BKR",
+        "HAL",
+        "SLB"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Oil & Gas Exploration & Production",
+      "members": [
+        "DVN",
+        "EOG",
+        "FANG",
+        "OXY"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Oil & Gas Refining & Marketing",
+      "members": [
+        "DINO",
+        "MPC",
+        "PBF",
+        "PSX",
+        "VLO"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Oil & Gas Storage & Transportation",
+      "members": [
+        "EPD",
+        "ET",
+        "KMI",
+        "WMB"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Optical Networking",
+      "members": [
+        "AAOI",
+        "COHR",
+        "FN",
+        "GLW",
+        "LITE",
+        "VIAV"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "INFN"
+      ]
+    },
+    {
+      "theme": "Packaging",
+      "members": [
+        "BALL",
+        "PKG"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Packaging and Containers",
+      "members": [
+        "AMCR",
+        "BALL",
+        "IP",
+        "PKG"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Paints",
+      "members": [
+        "PPG",
+        "SHW"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Personal Care and Beauty",
+      "members": [
+        "COTY",
+        "EL",
+        "ELF",
+        "ODD",
+        "ULTA"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Pets",
+      "members": [
+        "CHWY",
+        "FRPT",
+        "IDXX"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Pharmaceuticals",
+      "members": [
+        "COLL",
+        "LLY",
+        "OGN",
+        "PRGO",
+        "VTRS"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Real Estate Platforms",
+      "members": [
+        "COMP",
+        "Z"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "RDFN"
+      ]
+    },
+    {
+      "theme": "Residential REITs",
+      "members": [
+        "AVB",
+        "EQR",
+        "ESS",
+        "INVH",
+        "MAA"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Restaurants & Food service",
+      "members": [
+        "BROS",
+        "CAVA",
+        "CMG",
+        "DRI",
+        "MCD",
+        "SBUX",
+        "TXRH",
+        "WING",
+        "YUM"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Retail & Off price",
+      "members": [
+        "BBY",
+        "CASY",
+        "DG",
+        "FIVE",
+        "ROST",
+        "SN",
+        "TJX",
+        "ULTA"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "DLT"
+      ]
+    },
+    {
+      "theme": "Retail REITs",
+      "members": [
+        "KIM",
+        "SPG"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Roofing",
+      "members": [
+        "AAON",
+        "OC"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Semi Design Software",
+      "members": [
+        "CDNS",
+        "SNPS"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Semi Equipment Makers",
+      "members": [
+        "AMAT",
+        "ASML",
+        "KLAC",
+        "LRCX",
+        "NXPI",
+        "TER"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Semi testing/Packaging",
+      "members": [
+        "AEHR",
+        "COHU",
+        "TER"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Servers and Compute",
+      "members": [
+        "DELL",
+        "HPE",
+        "SMCI"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Shipping/Maritime",
+      "members": [
+        "FRO",
+        "LNG",
+        "MATX",
+        "SBLK",
+        "ZIM"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Smoking",
+      "members": [
+        "BTI",
+        "MO",
+        "PM",
+        "TPB",
+        "UVV"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Social media",
+      "members": [
+        "BMBL",
+        "META",
+        "MTCH",
+        "RBLX"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Speciality",
+      "members": [
+        "AMRC",
+        "MRCY",
+        "WSC"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "speciality Consumer",
+      "members": [
+        "LCII",
+        "POOL",
+        "THO",
+        "WGO",
+        "YETI"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Specialized REITs",
+      "members": [
+        "AMT",
+        "DLR",
+        "EQIX"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "PSU"
+      ]
+    },
+    {
+      "theme": "Specialty chemicals",
+      "members": [
+        "CE",
+        "IFF"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Steel",
+      "members": [
+        "NUE",
+        "STLD"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "X"
+      ]
+    },
+    {
+      "theme": "Storage Hardware/Memory",
+      "members": [
+        "MU",
+        "STX",
+        "WDC"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Streaming,content & media",
+      "members": [
+        "NFLX",
+        "SPOT"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Trading companies",
+      "members": [
+        "HRI",
+        "URI"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Transportation & Logistics",
+      "members": [
+        "ARCB",
+        "CSX",
+        "EXPD",
+        "FDX",
+        "KNX",
+        "SAIA",
+        "UPS",
+        "XPO"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Travel Hotels and Leisure",
+      "members": [
+        "ABNB",
+        "BKNG",
+        "EXPE",
+        "H",
+        "HLT",
+        "MAR"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Water Utilities",
+      "members": [
+        "AWK",
+        "AWR"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    },
+    {
+      "theme": "Wood Products and Timber",
+      "members": [
+        "LPX",
+        "TREX",
+        "WY"
+      ],
+      "thesis": "",
+      "unknown_members": [
+        "AZEK"
+      ]
+    },
+    {
+      "theme": "Workflow Automation /BPM",
+      "members": [
+        "APPN",
+        "NOW",
+        "PEGA"
+      ],
+      "thesis": "",
+      "unknown_members": []
+    }
+  ],
+  "ticker_themes": {
+    "AAL": [
+      "Airlines"
+    ],
+    "AAOI": [
+      "Optical Networking"
+    ],
+    "AAON": [
+      "Roofing"
+    ],
+    "ABNB": [
+      "Travel Hotels and Leisure"
+    ],
+    "ABR": [
+      "Mortgage Real Estate Investment Trusts (REITs)"
+    ],
+    "ACM": [
+      "Miscellaneous"
+    ],
+    "ADI": [
+      "Analog"
+    ],
+    "ADM": [
+      "Agricultural"
+    ],
+    "ADP": [
+      "Enterprise Applications (ERP/HCM/Finance)"
+    ],
+    "AEHR": [
+      "Semi testing/Packaging"
+    ],
+    "AEP": [
+      "Electric Utilities"
+    ],
+    "AFRM": [
+      "Consumer Infrastructure"
+    ],
+    "AI": [
+      "AI platforms & Enterprise AI"
+    ],
+    "AIR": [
+      "Aerospace & Defense"
+    ],
+    "AKAM": [
+      "Digital Infrastructure"
+    ],
+    "ALAB": [
+      "AI Infrastructure and Custom Silicon"
+    ],
+    "ALB": [
+      "Lithium"
+    ],
+    "ALGT": [
+      "Airlines"
+    ],
+    "AMAT": [
+      "Semi Equipment Makers"
+    ],
+    "AMBA": [
+      "Electrical Equipment"
+    ],
+    "AMCR": [
+      "Packaging and Containers"
+    ],
+    "AMD": [
+      "AI Semiconductor chips"
+    ],
+    "AMRC": [
+      "Speciality"
+    ],
+    "AMT": [
+      "Specialized REITs"
+    ],
+    "AMZN": [
+      "E-commerce & Online Retail"
+    ],
+    "ANET": [
+      "Networking and Comms"
+    ],
+    "APLE": [
+      "Hotel & Resort REITs"
+    ],
+    "APP": [
+      "AI advertising",
+      "Digital Advertising"
+    ],
+    "APPN": [
+      "Workflow Automation /BPM"
+    ],
+    "ARCB": [
+      "Transportation & Logistics"
+    ],
+    "ARLP": [
+      "Coal & Consumable Fuels"
+    ],
+    "ARM": [
+      "AI Semiconductor chips"
+    ],
+    "ASAN": [
+      "Collaboration & Productivity"
+    ],
+    "ASML": [
+      "Semi Equipment Makers"
+    ],
+    "ATO": [
+      "Gas Utilities"
+    ],
+    "AVAV": [
+      "Drones"
+    ],
+    "AVB": [
+      "Residential REITs"
+    ],
+    "AVGO": [
+      "AI Infrastructure and Custom Silicon"
+    ],
+    "AWK": [
+      "Water Utilities"
+    ],
+    "AWR": [
+      "Water Utilities"
+    ],
+    "AXON": [
+      "Aerospace & Defense"
+    ],
+    "BA": [
+      "Aerospace & Defense"
+    ],
+    "BALL": [
+      "Packaging",
+      "Packaging and Containers"
+    ],
+    "BBY": [
+      "Retail & Off price"
+    ],
+    "BE": [
+      "Battery Storage /behind the grid"
+    ],
+    "BG": [
+      "Agricultural"
+    ],
+    "BIO": [
+      "Life Sciences Tools & Services"
+    ],
+    "BJ": [
+      "Apparel, Footwear & Luxury"
+    ],
+    "BKNG": [
+      "Travel Hotels and Leisure"
+    ],
+    "BKR": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "BLDR": [
+      "Building Products & Materials"
+    ],
+    "BMBL": [
+      "Social media"
+    ],
+    "BNL": [
+      "Diversified REITs"
+    ],
+    "BOX": [
+      "Collaboration & Productivity"
+    ],
+    "BP": [
+      "Integrated Oil & Gas"
+    ],
+    "BROS": [
+      "Restaurants & Food service"
+    ],
+    "BRZE": [
+      "CRM/Sales/Marketing Software"
+    ],
+    "BTI": [
+      "Smoking"
+    ],
+    "BTU": [
+      "Coal & Consumable Fuels"
+    ],
+    "BWXT": [
+      "Aerospace & Defense",
+      "Nuclear"
+    ],
+    "BXMT": [
+      "Mortgage Real Estate Investment Trusts (REITs)"
+    ],
+    "BXP": [
+      "Office REITs"
+    ],
+    "CAG": [
+      "Food manufactures"
+    ],
+    "CARR": [
+      "HVAC & Plumbing"
+    ],
+    "CASY": [
+      "Retail & Off price"
+    ],
+    "CAT": [
+      "Construction & Engineering",
+      "Generators/Power"
+    ],
+    "CAVA": [
+      "Restaurants & Food service"
+    ],
+    "CBOE": [
+      "Capital Markets"
+    ],
+    "CCJ": [
+      "Nuclear"
+    ],
+    "CCK": [
+      "Metal and Glass"
+    ],
+    "CCL": [
+      "Cruise Liners & Gaming"
+    ],
+    "CDNS": [
+      "Semi Design Software"
+    ],
+    "CE": [
+      "Specialty chemicals"
+    ],
+    "CEG": [
+      "AI Power and Grid Expansion",
+      "Independent Power and Renewable Electricity Producers",
+      "Nuclear"
+    ],
+    "CELH": [
+      "Drinks"
+    ],
+    "CF": [
+      "Fertilizers"
+    ],
+    "CHD": [
+      "House Hold Products"
+    ],
+    "CHKP": [
+      "Cybersecurity"
+    ],
+    "CHWY": [
+      "E-commerce & Online Retail",
+      "Pets"
+    ],
+    "CIEN": [
+      "AI Infrastructure and Custom Silicon"
+    ],
+    "CL": [
+      "House Hold Products"
+    ],
+    "CLX": [
+      "House Hold Products"
+    ],
+    "CMCSA": [
+      "Media"
+    ],
+    "CMG": [
+      "Restaurants & Food service"
+    ],
+    "COHR": [
+      "Optical Networking"
+    ],
+    "COHU": [
+      "Semi testing/Packaging"
+    ],
+    "COIN": [
+      "Digital Commerce & Fintech"
+    ],
+    "COLL": [
+      "Pharmaceuticals"
+    ],
+    "COMP": [
+      "Real Estate Platforms"
+    ],
+    "CORT": [
+      "Biotechnology"
+    ],
+    "COST": [
+      "Apparel, Footwear & Luxury"
+    ],
+    "COTY": [
+      "Personal Care and Beauty"
+    ],
+    "CPB": [
+      "Food manufactures"
+    ],
+    "CR": [
+      "Industrial machinery"
+    ],
+    "CRDO": [
+      "AI Infrastructure and Custom Silicon"
+    ],
+    "CRM": [
+      "AI platforms & Enterprise AI",
+      "CRM/Sales/Marketing Software"
+    ],
+    "CROX": [
+      "Apparel, Footwear & Luxury"
+    ],
+    "CRWD": [
+      "Cybersecurity"
+    ],
+    "CSCO": [
+      "Networking and Comms"
+    ],
+    "CSX": [
+      "Transportation & Logistics"
+    ],
+    "CVNA": [
+      "Automotive"
+    ],
+    "CVX": [
+      "Integrated Oil & Gas"
+    ],
+    "CZR": [
+      "Cruise Liners & Gaming"
+    ],
+    "DAL": [
+      "Airlines"
+    ],
+    "DAR": [
+      "Agricultural"
+    ],
+    "DASH": [
+      "Internet Platforms/Consumer Software"
+    ],
+    "DAVE": [
+      "Consumer Finance"
+    ],
+    "DBX": [
+      "Collaboration & Productivity"
+    ],
+    "DD": [
+      "Chemicals"
+    ],
+    "DDOG": [
+      "Observability & Monitoring"
+    ],
+    "DE": [
+      "Heavy Machinery"
+    ],
+    "DECK": [
+      "Apparel, Footwear & Luxury"
+    ],
+    "DELL": [
+      "Servers and Compute"
+    ],
+    "DG": [
+      "Retail & Off price"
+    ],
+    "DHI": [
+      "Home builders"
+    ],
+    "DINO": [
+      "Oil & Gas Refining & Marketing"
+    ],
+    "DKNG": [
+      "Cruise Liners & Gaming"
+    ],
+    "DLR": [
+      "Data centre REIT",
+      "Specialized REITs"
+    ],
+    "DOCN": [
+      "Digital Infrastructure"
+    ],
+    "DOCU": [
+      "Collaboration & Productivity"
+    ],
+    "DOW": [
+      "Chemicals"
+    ],
+    "DRI": [
+      "Restaurants & Food service"
+    ],
+    "DT": [
+      "Application Development"
+    ],
+    "DTE": [
+      "Multi-Utilities"
+    ],
+    "DUOL": [
+      "Internet Platforms/Consumer Software"
+    ],
+    "DVN": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "DXCM": [
+      "Health Care Equipment & Supplies"
+    ],
+    "ED": [
+      "Electric Utilities"
+    ],
+    "EGP": [
+      "Industrial REITs"
+    ],
+    "EIG": [
+      "Insurance"
+    ],
+    "EIX": [
+      "Electric Utilities"
+    ],
+    "EL": [
+      "Personal Care and Beauty"
+    ],
+    "ELF": [
+      "Personal Care and Beauty"
+    ],
+    "EMR": [
+      "Electrical Equipment",
+      "Industrial conglomerates"
+    ],
+    "ENS": [
+      "Battery Storage /behind the grid"
+    ],
+    "EOG": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "EPD": [
+      "Oil & Gas Storage & Transportation"
+    ],
+    "EQIX": [
+      "Data centre REIT",
+      "Specialized REITs"
+    ],
+    "EQR": [
+      "Residential REITs"
+    ],
+    "ERIC": [
+      "Networking and Comms"
+    ],
+    "ESS": [
+      "Residential REITs"
+    ],
+    "ESTC": [
+      "Cloud data Infrastructure"
+    ],
+    "ET": [
+      "Oil & Gas Storage & Transportation"
+    ],
+    "ETN": [
+      "Electrical Equip/cooling/power",
+      "Electrical Equipment"
+    ],
+    "ETSY": [
+      "E-commerce & Online Retail"
+    ],
+    "EXPD": [
+      "Transportation & Logistics"
+    ],
+    "EXPE": [
+      "Travel Hotels and Leisure"
+    ],
+    "F": [
+      "Automotive"
+    ],
+    "FANG": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "FAST": [
+      "Miscellaneous"
+    ],
+    "FCX": [
+      "Copper"
+    ],
+    "FDX": [
+      "Transportation & Logistics"
+    ],
+    "FIVE": [
+      "Retail & Off price"
+    ],
+    "FLG": [
+      "Banks"
+    ],
+    "FLNC": [
+      "Battery Storage /behind the grid"
+    ],
+    "FLR": [
+      "Construction & Engineering",
+      "Electrical Equipment"
+    ],
+    "FMC": [
+      "Fertilizers"
+    ],
+    "FN": [
+      "Networking and Comms",
+      "Optical Networking"
+    ],
+    "FND": [
+      "Flooring"
+    ],
+    "FRO": [
+      "Shipping/Maritime"
+    ],
+    "FROG": [
+      "Application Development"
+    ],
+    "FRPT": [
+      "Pets"
+    ],
+    "FTNT": [
+      "Cybersecurity"
+    ],
+    "GDDY": [
+      "Digital Infrastructure"
+    ],
+    "GE": [
+      "Aerospace & Defense",
+      "Industrial conglomerates"
+    ],
+    "GFS": [
+      "Foundry"
+    ],
+    "GIS": [
+      "Food manufactures"
+    ],
+    "GLBE": [
+      "Consumer Infrastructure",
+      "E-commerce & Online Retail"
+    ],
+    "GLW": [
+      "Metal and Glass",
+      "Optical Networking"
+    ],
+    "GOOG": [
+      "Digital Advertising"
+    ],
+    "GPN": [
+      "Digital Commerce & Fintech",
+      "Financial Services"
+    ],
+    "GSHD": [
+      "Insurance"
+    ],
+    "GTLB": [
+      "Application Development"
+    ],
+    "H": [
+      "Travel Hotels and Leisure"
+    ],
+    "HAL": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "HAS": [
+      "Internet Platforms/Consumer Software"
+    ],
+    "HD": [
+      "Building Products & Materials"
+    ],
+    "HII": [
+      "Aerospace & Defense"
+    ],
+    "HIW": [
+      "Office REITs"
+    ],
+    "HLT": [
+      "Travel Hotels and Leisure"
+    ],
+    "HON": [
+      "Industrial conglomerates"
+    ],
+    "HOOD": [
+      "Digital Commerce & Fintech"
+    ],
+    "HP": [
+      "Oil & Gas Drilling"
+    ],
+    "HPE": [
+      "Servers and Compute"
+    ],
+    "HPP": [
+      "Office REITs"
+    ],
+    "HRI": [
+      "Miscellaneous",
+      "Trading companies"
+    ],
+    "HST": [
+      "Hotel & Resort REITs"
+    ],
+    "HSY": [
+      "Food manufactures"
+    ],
+    "HUBB": [
+      "Electrical Equip/cooling/power",
+      "Electrical Equipment"
+    ],
+    "HUBS": [
+      "CRM/Sales/Marketing Software"
+    ],
+    "HXL": [
+      "Aerospace & Defense"
+    ],
+    "IBKR": [
+      "Capital Markets"
+    ],
+    "IBM": [
+      "AI platforms & Enterprise AI"
+    ],
+    "ICL": [
+      "Fertilizers"
+    ],
+    "IDA": [
+      "Electric Utilities"
+    ],
+    "IDXX": [
+      "Health Care Equipment & Supplies",
+      "Pets"
+    ],
+    "IFF": [
+      "Specialty chemicals"
+    ],
+    "ILMN": [
+      "Life Sciences Tools & Services"
+    ],
+    "INTC": [
+      "AI Semiconductor chips",
+      "Foundry"
+    ],
+    "INTU": [
+      "Enterprise Applications (ERP/HCM/Finance)"
+    ],
+    "INVH": [
+      "Residential REITs"
+    ],
+    "IOT": [
+      "Observability & Monitoring"
+    ],
+    "IP": [
+      "Packaging and Containers"
+    ],
+    "IRM": [
+      "Data centre REIT"
+    ],
+    "ISRG": [
+      "Health Care Equipment & Supplies"
+    ],
+    "ITW": [
+      "Industrial conglomerates"
+    ],
+    "JCI": [
+      "Electrical Equipment",
+      "HVAC & Plumbing"
+    ],
+    "JELD": [
+      "Building Products & Materials"
+    ],
+    "JKHY": [
+      "Financial Services"
+    ],
+    "KBH": [
+      "Home builders"
+    ],
+    "KDP": [
+      "Drinks"
+    ],
+    "KIM": [
+      "Retail REITs"
+    ],
+    "KLAC": [
+      "Semi Equipment Makers"
+    ],
+    "KMI": [
+      "Oil & Gas Storage & Transportation"
+    ],
+    "KMX": [
+      "Automotive"
+    ],
+    "KNX": [
+      "Transportation & Logistics"
+    ],
+    "KO": [
+      "Drinks"
+    ],
+    "KRC": [
+      "Office REITs"
+    ],
+    "KRYS": [
+      "Biotechnology"
+    ],
+    "KTOS": [
+      "Drones"
+    ],
+    "KVYO": [
+      "AI advertising",
+      "CRM/Sales/Marketing Software",
+      "Digital Advertising"
+    ],
+    "LAC": [
+      "Lithium"
+    ],
+    "LADR": [
+      "Mortgage Real Estate Investment Trusts (REITs)"
+    ],
+    "LCII": [
+      "speciality Consumer"
+    ],
+    "LEN": [
+      "Home builders"
+    ],
+    "LGIH": [
+      "Home builders"
+    ],
+    "LITE": [
+      "Optical Networking"
+    ],
+    "LLY": [
+      "Pharmaceuticals"
+    ],
+    "LMT": [
+      "Aerospace & Defense"
+    ],
+    "LNG": [
+      "Shipping/Maritime"
+    ],
+    "LOVE": [
+      "Home Improvement and Furnishings"
+    ],
+    "LOW": [
+      "Building Products & Materials"
+    ],
+    "LPX": [
+      "Wood Products and Timber"
+    ],
+    "LRCX": [
+      "Semi Equipment Makers"
+    ],
+    "LUMN": [
+      "Diversified telecomms"
+    ],
+    "LUV": [
+      "Airlines"
+    ],
+    "LYV": [
+      "Internet Platforms/Consumer Software"
+    ],
+    "MA": [
+      "Financial Services"
+    ],
+    "MAA": [
+      "Residential REITs"
+    ],
+    "MAR": [
+      "Travel Hotels and Leisure"
+    ],
+    "MAT": [
+      "Internet Platforms/Consumer Software"
+    ],
+    "MATX": [
+      "Shipping/Maritime"
+    ],
+    "MCD": [
+      "Restaurants & Food service"
+    ],
+    "MCHP": [
+      "Analog"
+    ],
+    "MDB": [
+      "Cloud data Infrastructure"
+    ],
+    "MDLZ": [
+      "Food manufactures"
+    ],
+    "MEDP": [
+      "Life Sciences Tools & Services"
+    ],
+    "META": [
+      "Digital Advertising",
+      "Internet Platforms/Consumer Software",
+      "Social media"
+    ],
+    "MGNI": [
+      "AI advertising"
+    ],
+    "MGNO": [
+      "Digital Advertising"
+    ],
+    "MHK": [
+      "Flooring"
+    ],
+    "MIDD": [
+      "Industrial machinery"
+    ],
+    "MNDY": [
+      "Collaboration & Productivity"
+    ],
+    "MNST": [
+      "Drinks"
+    ],
+    "MO": [
+      "Smoking"
+    ],
+    "MOS": [
+      "Fertilizers"
+    ],
+    "MPC": [
+      "Oil & Gas Refining & Marketing"
+    ],
+    "MPWR": [
+      "Analog"
+    ],
+    "MRCY": [
+      "Speciality"
+    ],
+    "MRVL": [
+      "AI Infrastructure and Custom Silicon"
+    ],
+    "MSFT": [
+      "AI platforms & Enterprise AI"
+    ],
+    "MSTR": [
+      "Digital Commerce & Fintech"
+    ],
+    "MTCH": [
+      "Social media"
+    ],
+    "MTZ": [
+      "Construction & Engineering",
+      "Generators/Power"
+    ],
+    "MU": [
+      "Storage Hardware/Memory"
+    ],
+    "NBR": [
+      "Oil & Gas Drilling"
+    ],
+    "NE": [
+      "Oil & Gas Drilling"
+    ],
+    "NEE": [
+      "AI Power and Grid Expansion"
+    ],
+    "NEOG": [
+      "Life Sciences Tools & Services"
+    ],
+    "NFLX": [
+      "Streaming,content & media"
+    ],
+    "NKE": [
+      "Apparel, Footwear & Luxury"
+    ],
+    "NOC": [
+      "Aerospace & Defense"
+    ],
+    "NOK": [
+      "Networking and Comms"
+    ],
+    "NOW": [
+      "AI platforms & Enterprise AI",
+      "Workflow Automation /BPM"
+    ],
+    "NRG": [
+      "AI Power and Grid Expansion"
+    ],
+    "NTNX": [
+      "Application Development"
+    ],
+    "NTR": [
+      "Fertilizers"
+    ],
+    "NUE": [
+      "Steel"
+    ],
+    "NVDA": [
+      "AI Semiconductor chips"
+    ],
+    "NWSA": [
+      "Media"
+    ],
+    "NXPI": [
+      "Semi Equipment Makers"
+    ],
+    "OC": [
+      "Roofing"
+    ],
+    "ODD": [
+      "Personal Care and Beauty"
+    ],
+    "OGN": [
+      "Pharmaceuticals"
+    ],
+    "OKLO": [
+      "Nuclear"
+    ],
+    "OKTA": [
+      "Cybersecurity"
+    ],
+    "OMC": [
+      "Media"
+    ],
+    "ON": [
+      "Analog"
+    ],
+    "ONDS": [
+      "Drones"
+    ],
+    "ONON": [
+      "Apparel, Footwear & Luxury"
+    ],
+    "ORA": [
+      "Independent Power and Renewable Electricity Producers"
+    ],
+    "ORCL": [
+      "AI Infrastructure and Custom Silicon",
+      "AI platforms & Enterprise AI",
+      "Enterprise Applications (ERP/HCM/Finance)"
+    ],
+    "ORLY": [
+      "Automotive"
+    ],
+    "OTIS": [
+      "Heavy Machinery"
+    ],
+    "OTTR": [
+      "Multi-Utilities"
+    ],
+    "OXY": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "PANW": [
+      "Cybersecurity"
+    ],
+    "PARA": [
+      "Media"
+    ],
+    "PATH": [
+      "AI platforms & Enterprise AI"
+    ],
+    "PAYX": [
+      "Enterprise Applications (ERP/HCM/Finance)"
+    ],
+    "PBF": [
+      "Oil & Gas Refining & Marketing"
+    ],
+    "PCAR": [
+      "Heavy Machinery"
+    ],
+    "PCG": [
+      "Multi-Utilities"
+    ],
+    "PD": [
+      "Application Development"
+    ],
+    "PEGA": [
+      "Workflow Automation /BPM"
+    ],
+    "PEP": [
+      "Drinks"
+    ],
+    "PG": [
+      "House Hold Products"
+    ],
+    "PH": [
+      "Industrial machinery"
+    ],
+    "PINS": [
+      "Digital Advertising",
+      "Internet Platforms/Consumer Software"
+    ],
+    "PKG": [
+      "Packaging",
+      "Packaging and Containers"
+    ],
+    "PLD": [
+      "Industrial REITs"
+    ],
+    "PLNT": [
+      "Internet Platforms/Consumer Software"
+    ],
+    "PLTR": [
+      "AI platforms & Enterprise AI"
+    ],
+    "PM": [
+      "Smoking"
+    ],
+    "POOL": [
+      "speciality Consumer"
+    ],
+    "PPC": [
+      "Agricultural"
+    ],
+    "PPG": [
+      "Paints"
+    ],
+    "PRGO": [
+      "Pharmaceuticals"
+    ],
+    "PSX": [
+      "Oil & Gas Refining & Marketing"
+    ],
+    "PTON": [
+      "Internet Platforms/Consumer Software"
+    ],
+    "PUBM": [
+      "Media"
+    ],
+    "PWR": [
+      "Construction & Engineering",
+      "Electrical Equip/cooling/power",
+      "Generators/Power"
+    ],
+    "PYPL": [
+      "Consumer Infrastructure"
+    ],
+    "QCOM": [
+      "AI Semiconductor chips"
+    ],
+    "QRVO": [
+      "Analog"
+    ],
+    "RBC": [
+      "Industrial machinery"
+    ],
+    "RBLX": [
+      "Games",
+      "Internet Platforms/Consumer Software",
+      "Social media"
+    ],
+    "RCL": [
+      "Cruise Liners & Gaming"
+    ],
+    "RDDT": [
+      "Digital Advertising",
+      "Internet Platforms/Consumer Software"
+    ],
+    "REAL": [
+      "E-commerce & Online Retail"
+    ],
+    "REXR": [
+      "Industrial REITs"
+    ],
+    "RH": [
+      "Home Improvement and Furnishings"
+    ],
+    "RIG": [
+      "Oil & Gas Drilling"
+    ],
+    "RL": [
+      "Apparel, Footwear & Luxury"
+    ],
+    "ROK": [
+      "Electrical Equipment"
+    ],
+    "ROP": [
+      "Industrial conglomerates"
+    ],
+    "ROST": [
+      "Retail & Off price"
+    ],
+    "RPD": [
+      "Cybersecurity"
+    ],
+    "RTX": [
+      "Aerospace & Defense"
+    ],
+    "RVLV": [
+      "E-commerce & Online Retail"
+    ],
+    "SAIA": [
+      "Transportation & Logistics"
+    ],
+    "SAP": [
+      "Enterprise Applications (ERP/HCM/Finance)"
+    ],
+    "SBLK": [
+      "Shipping/Maritime"
+    ],
+    "SBUX": [
+      "Restaurants & Food service"
+    ],
+    "SCCO": [
+      "Copper"
+    ],
+    "SEZL": [
+      "Consumer Finance"
+    ],
+    "SFIX": [
+      "E-commerce & Online Retail"
+    ],
+    "SFM": [
+      "Apparel, Footwear & Luxury"
+    ],
+    "SHEL": [
+      "Integrated Oil & Gas"
+    ],
+    "SHOP": [
+      "Consumer Infrastructure",
+      "Digital Commerce & Fintech"
+    ],
+    "SHW": [
+      "Flooring",
+      "Paints"
+    ],
+    "SJM": [
+      "Food manufactures"
+    ],
+    "SLB": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "SMCI": [
+      "Servers and Compute"
+    ],
+    "SMG": [
+      "Fertilizers"
+    ],
+    "SMR": [
+      "Nuclear"
+    ],
+    "SN": [
+      "Retail & Off price"
+    ],
+    "SNAP": [
+      "Digital Advertising",
+      "Internet Platforms/Consumer Software"
+    ],
+    "SNOW": [
+      "Cloud data Infrastructure"
+    ],
+    "SNPS": [
+      "Semi Design Software"
+    ],
+    "SO": [
+      "Electric Utilities"
+    ],
+    "SPG": [
+      "Retail REITs"
+    ],
+    "SPOT": [
+      "Internet Platforms/Consumer Software",
+      "Streaming,content & media"
+    ],
+    "SPT": [
+      "CRM/Sales/Marketing Software"
+    ],
+    "SQM": [
+      "Lithium"
+    ],
+    "SRE": [
+      "Multi-Utilities"
+    ],
+    "SRPT": [
+      "Biotechnology"
+    ],
+    "STLD": [
+      "Steel"
+    ],
+    "STLN": [
+      "Automotive"
+    ],
+    "STM": [
+      "Generators/Power"
+    ],
+    "STWD": [
+      "Mortgage Real Estate Investment Trusts (REITs)"
+    ],
+    "STX": [
+      "Storage Hardware/Memory"
+    ],
+    "STZ": [
+      "Drinks"
+    ],
+    "SWKS": [
+      "Analog"
+    ],
+    "SWX": [
+      "Gas Utilities"
+    ],
+    "TEAM": [
+      "Application Development"
+    ],
+    "TECH": [
+      "Life Sciences Tools & Services"
+    ],
+    "TER": [
+      "Semi Equipment Makers",
+      "Semi testing/Packaging"
+    ],
+    "TFIN": [
+      "Banks"
+    ],
+    "TGLS": [
+      "Building Products & Materials"
+    ],
+    "THO": [
+      "speciality Consumer"
+    ],
+    "TJX": [
+      "Retail & Off price"
+    ],
+    "TLN": [
+      "Independent Power and Renewable Electricity Producers"
+    ],
+    "TMUS": [
+      "Diversified telecomms"
+    ],
+    "TOL": [
+      "Home builders"
+    ],
+    "TOST": [
+      "Digital Commerce & Fintech"
+    ],
+    "TPB": [
+      "Smoking"
+    ],
+    "TPR": [
+      "Apparel, Footwear & Luxury"
+    ],
+    "TREX": [
+      "Wood Products and Timber"
+    ],
+    "TSLA": [
+      "Automotive"
+    ],
+    "TSM": [
+      "Foundry"
+    ],
+    "TSN": [
+      "Agricultural"
+    ],
+    "TT": [
+      "Building Products & Materials",
+      "HVAC & Plumbing"
+    ],
+    "TTWO": [
+      "Games"
+    ],
+    "TXN": [
+      "Analog"
+    ],
+    "TXRH": [
+      "Restaurants & Food service"
+    ],
+    "UAL": [
+      "Airlines"
+    ],
+    "UBER": [
+      "Internet Platforms/Consumer Software"
+    ],
+    "UEC": [
+      "Nuclear"
+    ],
+    "UFPI": [
+      "Building Products & Materials"
+    ],
+    "UGI": [
+      "Gas Utilities"
+    ],
+    "ULTA": [
+      "Personal Care and Beauty",
+      "Retail & Off price"
+    ],
+    "UPS": [
+      "Transportation & Logistics"
+    ],
+    "URI": [
+      "Construction & Engineering",
+      "Trading companies"
+    ],
+    "UVV": [
+      "Smoking"
+    ],
+    "V": [
+      "Financial Services"
+    ],
+    "VAL": [
+      "Oil & Gas Drilling"
+    ],
+    "VCEL": [
+      "Biotechnology"
+    ],
+    "VIAV": [
+      "Optical Networking"
+    ],
+    "VIK": [
+      "Cruise Liners & Gaming"
+    ],
+    "VLO": [
+      "Oil & Gas Refining & Marketing"
+    ],
+    "VNO": [
+      "Office REITs"
+    ],
+    "VRT": [
+      "Electrical Equip/cooling/power"
+    ],
+    "VRTS": [
+      "Capital Markets"
+    ],
+    "VST": [
+      "AI Power and Grid Expansion",
+      "Independent Power and Renewable Electricity Producers"
+    ],
+    "VTR": [
+      "Health Care REITs"
+    ],
+    "VTRS": [
+      "Pharmaceuticals"
+    ],
+    "W": [
+      "E-commerce & Online Retail"
+    ],
+    "WDAY": [
+      "Enterprise Applications (ERP/HCM/Finance)"
+    ],
+    "WDC": [
+      "Storage Hardware/Memory"
+    ],
+    "WELL": [
+      "Health Care REITs"
+    ],
+    "WGO": [
+      "speciality Consumer"
+    ],
+    "WING": [
+      "Restaurants & Food service"
+    ],
+    "WIX": [
+      "Digital Infrastructure"
+    ],
+    "WMB": [
+      "Oil & Gas Storage & Transportation"
+    ],
+    "WMT": [
+      "Apparel, Footwear & Luxury"
+    ],
+    "WPC": [
+      "Diversified REITs"
+    ],
+    "WPP": [
+      "Media"
+    ],
+    "WSC": [
+      "Speciality"
+    ],
+    "WST": [
+      "Health Care Equipment & Supplies"
+    ],
+    "WY": [
+      "Wood Products and Timber"
+    ],
+    "WYNN": [
+      "Cruise Liners & Gaming"
+    ],
+    "XOM": [
+      "Integrated Oil & Gas"
+    ],
+    "XPO": [
+      "Transportation & Logistics"
+    ],
+    "XYL": [
+      "Miscellaneous"
+    ],
+    "XYZ": [
+      "Consumer Infrastructure",
+      "Digital Commerce & Fintech"
+    ],
+    "YETI": [
+      "speciality Consumer"
+    ],
+    "YUM": [
+      "Restaurants & Food service"
+    ],
+    "Z": [
+      "Real Estate Platforms"
+    ],
+    "ZBRA": [
+      "Electrical Equipment"
+    ],
+    "ZETA": [
+      "AI advertising",
+      "CRM/Sales/Marketing Software",
+      "Digital Advertising"
+    ],
+    "ZIM": [
+      "Shipping/Maritime"
+    ],
+    "ZM": [
+      "Collaboration & Productivity"
+    ],
+    "ZS": [
+      "Cybersecurity"
+    ]
+  }
+}

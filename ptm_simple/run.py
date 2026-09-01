@@ -110,24 +110,72 @@ def run_theme_pass(theme_map: dict, theme: str, ref: date, force: bool = False) 
     picks = [{**e, "side": "long"} for e in sel["long"]] + [{**e, "side": "short"} for e in sel["short"]]
     quals = run_shortlist_dives(picks, force=force)
     gated = gate_theme(sel, row, quals, ref)
-    payload = assemble_book([gated], ref)
+    payload = assemble_book([gated], ref, source=theme_map.get("source"))
     # gate-failed members park on the theme watchlist: capped-out book ideas
     # (assemble_book's overflow) are joined by every gated-out name, each with
     # its per-gate results so the watchlist shows why it is waiting
     payload["overflow"] = list(payload["overflow"]) + [p for p in gated.get("parked", []) if p not in payload["overflow"]]
     payload["parked_detail"] = gated.get("parked", [])
+    payload["themes_run"] = 1
     write_book(payload, ref)
     write_idea_reports([gated], ref)
     return payload
 
 
-def assemble_book(gated: list[dict], ref: date, per_theme: int = 2, max_positions: int = 12) -> dict:
-    """Deterministic book: survivors ranked by |breadth| then score, theme-capped."""
+def run_active_pass(theme_map: dict, ref: date, force: bool = False) -> dict:
+    """Sweep EVERY non-COLD theme of the map: dive each shortlist, gate, and
+    assemble one book across themes. Dives reuse the shared cache, so a
+    weekly rerun only pays for names dived for the first time."""
+    from ptm_simple.gate import gate_theme
+    from ptm_simple.radar import theme_radar
+    from ptm_simple.select import select_members
+
+    fund = _fundamentals()
+    gated_groups: list[dict] = []
+    for entry in theme_map["themes"]:
+        row = theme_radar(entry, fund, ref)
+        if row["status"] == "COLD":
+            continue
+        log(f"theme {row['theme']}: {row['status']} ({row['lean']}, breadth {row['breadth']:+.2f})")
+        sel = select_members(row)
+        picks = [{**e, "side": "long"} for e in sel["long"]] + [{**e, "side": "short"} for e in sel["short"]]
+        if not picks:
+            log(f"  {row['theme']}: no eligible members — nothing to dive")
+            continue
+        quals = run_shortlist_dives(picks, force=force)
+        gated_groups.append(gate_theme(sel, row, quals, ref))
+    payload = assemble_book(gated_groups, ref, source=theme_map.get("source"))
+    parked: list[dict] = []
+    for g in gated_groups:
+        parked.extend(g.get("parked", []))
+    payload["overflow"] = list(payload["overflow"]) + [p for p in parked if p not in payload["overflow"]]
+    payload["parked_detail"] = parked
+    payload["themes_run"] = len(gated_groups)
+    write_book(payload, ref)
+    write_idea_reports(gated_groups, ref)
+    return payload
+
+
+def assemble_book(gated: list[dict], ref: date, per_theme: int = 2, max_positions: int = 12, source: str | None = None) -> dict:
+    """Deterministic book: survivors ranked by |breadth| then score, theme-capped.
+
+    Longs/shorts order by their 90d revision direction saturated at ±5% — the
+    same materiality selection uses — so one data-glitch revision (a +1369%
+    base effect in the expectations cache) cannot outrank every real signal.
+    """
+
+    def _sort_key(idea: dict) -> float:
+        rev = idea.get("rev90")
+        if rev is None:
+            return 0.0
+        magnitude = min(abs(rev) / 5.0, 1.0)
+        return magnitude if (idea["side"] == "long") == (rev > 0) else -magnitude
+
     ideas = []
     for g in sorted(gated, key=lambda g: -(g.get("breadth_abs") or 0)):
         for idea in g["ideas"]:
             ideas.append(idea)
-    ideas.sort(key=lambda i: (-(i.get("rev90") or 0) if i["side"] == "long" else (i.get("rev90") or 0)))
+    ideas.sort(key=lambda i: (-_sort_key(i) if i["side"] == "long" else _sort_key(i)))
     counts: dict[str, int] = {}
     book, overflow = [], []
     for idea in ideas:
@@ -137,13 +185,15 @@ def assemble_book(gated: list[dict], ref: date, per_theme: int = 2, max_position
             continue
         counts[key] = counts.get(key, 0) + 1
         book.append(idea)
-    return {"as_of": ref.isoformat(), "book": book, "overflow": overflow}
+    return {"as_of": ref.isoformat(), "source": source, "book": book, "overflow": overflow}
 
 
 def write_book(payload: dict, ref: date) -> Path:
     import json
 
-    path = simple_dir(f"simple_book_{ref.isoformat()}.json")
+    source = payload.get("source") or "manual"
+    stem = "wiki" if "wiki" in str(source) else "manual"
+    path = simple_dir(f"simple_book_{stem}_{ref.isoformat()}.json")
     path.write_text(json.dumps(payload, indent=2, default=str))
     overflow = payload["overflow"]
     watch_path = simple_dir("watchlist.json")
@@ -153,7 +203,7 @@ def write_book(payload: dict, ref: date) -> Path:
             prev = json.loads(watch_path.read_text()).get("parked", [])
         except Exception:
             prev = []
-    seen = {p["ticker"] for p in overflow}
+    seen = {p["ticker"] for p in overflow} | {i["ticker"] for i in payload["book"]}
     merged = [p for p in prev if p["ticker"] not in seen] + overflow
     watch_path.write_text(json.dumps({"as_of": ref.isoformat(), "parked": merged}, indent=2, default=str))
     log(f"book: {len(payload['book'])} ideas, {len(overflow)} parked -> {path.name}, watchlist {len(merged)}")

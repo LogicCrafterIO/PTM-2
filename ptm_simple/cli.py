@@ -4,6 +4,7 @@
     .venv/bin/python -m ptm_simple radar [--map manual|wiki] [--llm] [--theme NAME] [--refresh N]
     .venv/bin/python -m ptm_simple select --theme NAME [--map manual|wiki]
     .venv/bin/python -m ptm_simple run --theme NAME [--map manual|wiki] [--force]
+    .venv/bin/python -m ptm_simple run --all [--map manual|wiki] [--force]  # sweep non-COLD themes
 """
 
 from __future__ import annotations
@@ -41,7 +42,8 @@ def main() -> None:
     add_map(p)
 
     p = sub.add_parser("run", help="full pass for a theme: dive shortlist, gate, book, reports")
-    p.add_argument("--theme", required=True)
+    p.add_argument("--theme", help="one theme; omit with --all to sweep every non-COLD theme")
+    p.add_argument("--all", action="store_true", help="run every non-COLD theme and assemble one book")
     p.add_argument("--force", action="store_true", help="redo the dives even when cached")
     p.add_argument("--day")
     add_map(p)
@@ -102,10 +104,17 @@ def main() -> None:
         return
 
     if args.cmd == "run":
-        from ptm_simple.run import run_theme_pass
+        from ptm_simple.run import run_active_pass, run_theme_pass
 
-        payload = run_theme_pass(theme_map, args.theme, ref, force=args.force)
-        log(f"run {args.theme} done: {len(payload['book'])} idea(s) in the book")
+        if getattr(args, "all", False):
+            payload = run_active_pass(theme_map, ref, force=args.force)
+            log(f"run-all done: {payload.get('themes_run', 0)} theme(s), "
+                f"{len(payload['book'])} idea(s) in the book, {len(payload['overflow'])} parked")
+        else:
+            if not args.theme:
+                raise SystemExit("run needs --theme NAME (or --all for every non-COLD theme)")
+            payload = run_theme_pass(theme_map, args.theme, ref, force=args.force)
+            log(f"run {args.theme} done: {len(payload['book'])} idea(s) in the book")
         return
 
 

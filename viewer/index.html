@@ -502,7 +502,7 @@
       const sorted = sortRowsWith(rows, sort);
       const selectedId = opts.selectedId ? opts.selectedId() : "";
       const head = cols.map((c) =>
-        `<th data-sort="${c.key}" class="${sort.key === c.key ? "sorted" : ""}">${esc(c.label)}${sort.key === c.key ? (sort.dir > 0 ? " ▲" : " ▼") : ""}</th>`
+        `<th data-sort="${c.key}" class="${sort.key === c.key ? "sorted" : ""}"${c.title ? ` title="${esc(c.title)}"` : ""}>${esc(c.label)}${sort.key === c.key ? (sort.dir > 0 ? " ▲" : " ▼") : ""}</th>`
       ).join("");
       const body = sorted.map((r, i) => {
         const id = opts.rowId ? opts.rowId(r) : String(i);
@@ -2048,7 +2048,7 @@
       if (st.running) simplePollTimer = setTimeout(pollSimple, 2000);
       else if (!st.finished && !st.result) simplePollTimer = setTimeout(pollSimple, 10000);
 
-      const buttons = ["simple-build-xlsx", "simple-build-wiki", "simple-radar-go", "simple-run-go"].map((id) => el.querySelector("#" + id)).filter(Boolean);
+      const buttons = ["simple-build-xlsx", "simple-build-wiki", "simple-radar-go", "simple-run-go", "simple-run-all"].map((id) => el.querySelector("#" + id)).filter(Boolean);
       const logHost = el.querySelector("#simple-log");
       renderSimpleLog(st.events || []);
 
@@ -2119,8 +2119,9 @@
             <button id="simple-build-xlsx">0a · Build themes (xlsx)</button>
             <button id="simple-build-wiki" title="Deterministic Wikipedia-industry map; first build fetches ~1 API call per 50 tickers, a few minutes">0b · Build themes (Wikipedia)</button>
             <button id="simple-radar-go">1 · Run radar</button>
-            <button id="simple-inspect">2 · Inspect theme (selection)</button>
-            <button id="simple-run-go">3 · Run theme pass</button>
+            <button id="simple-inspect" title="Deterministic ranking of the theme's members: longs must have estimates rising, shorts falling — aligned riders and against-theme divergers are both picked, each on its OWN estimate direction">2 · Inspect theme (selection)</button>
+            <button id="simple-run-go" title="Dive the shortlist of ONE theme, gate it, write its book + reports">3a · Run theme pass</button>
+            <button id="simple-run-all" title="Sweep EVERY non-COLD theme: dive each shortlist, gate, and assemble one book across themes. First run costs a dive per shortlisted name (minutes of LLM each); reruns reuse the cache">3b · Run all non-COLD themes</button>
           </div>
           <div class="dd-progress" id="simple-progress"></div>
           <div id="simple-maps" style="margin-top:10px"></div>
@@ -2191,6 +2192,7 @@
         }
         post("run", { force: $("simple-force").checked });
       });
+      $("simple-run-all").addEventListener("click", () => post("run-all", { force: $("simple-force").checked }));
       $("simple-inspect").addEventListener("click", async () => {
         const theme = $("simple-theme").value;
         if (!theme) { $("simple-progress").innerHTML = `<span class="neg">pick a theme first</span>`; return; }
@@ -2235,35 +2237,117 @@
         host.innerHTML = `<div class="dd-batch"><strong>1 · Radar</strong><p class="muted" style="margin:4px 0 0">${esc((radar && radar.error) || "no radar yet — run step 1")}</p></div>`;
         return;
       }
+      // one column definition drives both the table and its filter bar
+      const cols = [
+        { key: "status", label: "Status", filter: "select", fmt: (v) => simpleStatusChip(v) },
+        { key: "theme", label: "Theme", filter: "text", fmt: (v, r) => `<strong>${esc(v)}</strong>${r.bellwether ? ` <span class="muted">· bellwether ${esc(r.bellwether)}</span>` : ""}` },
+        { key: "lean", label: "Lean", filter: "select" },
+        { key: "breadth", label: "Breadth", filter: "min", minAbs: true, minStep: 0.1, fmt: (v) => (v == null ? "" : (v > 0 ? "+" : "") + Number(v).toFixed(2)) },
+        { key: "coverage", label: "Cov", filter: "min", pct: true, minStep: 10, fmt: (v) => (v == null ? "" : Math.round(v * 100) + "%") },
+        { key: "members_covered", label: "Cov/#", filter: "min", minStep: 1 },
+        { key: "prints", label: "Prints 14d", filter: "min", minStep: 1 },
+        { key: "divergent", label: "Against theme", filter: "text", title: "Members revising against the theme's breadth — the laggard (short) inside a rising theme or the share-gainer (long) inside a falling one; the 'know more than the market' candidates", fmt: (v) => (v || []).join(", ") },
+        { key: "members_list", label: "Members", filter: "text", wrap: true, title: "Every ticker in the theme — covered = solid (has expectations data), muted = uncovered. Type a ticker to find its themes", fmt: (v) => (v || []).map((m) => m.covered
+          ? `<strong style="font-variant-numeric:tabular-nums">${esc(m.ticker)}</strong>`
+          : `<span class="muted" title="no expectations cache — not scored">${esc(m.ticker)}</span>`).join(" · ") },
+        { key: "why", label: "Why-now", filter: "select" },
+      ];
       const rows = (radar.themes || []).map((r) => ({
         ...r,
         why: (r.why_now && r.why_now.grade) || "",
         prints: (r.prints_14d || []).length,
+        members_list: (radar.members || {})[r.theme] || [],
       }));
+      simpleRadar.rows = rows;
+      simpleRadar.cols = cols;
       const active = rows.filter((r) => r.status !== "COLD");
       host.innerHTML = `
         <div class="dd-batch">
           <strong>1 · Theme radar — as of ${esc(radar.as_of)}</strong>
-          <p class="hint" style="margin:4px 0 6px">${active.length} of ${rows.length} themes not COLD · map: ${esc(radar.map_source || "?")}. Breadth = share of covered members with 90d estimate revisions beyond ±0.5% (up − down).</p>
+          <p class="hint" style="margin:4px 0 6px">${active.length} of ${rows.length} themes not COLD · map: ${esc(radar.map_source || "?")}. Breadth = share of covered members with 90d estimate revisions beyond ±0.5% (up − down). "Against theme" counts members revising opposite to the cluster — the process's divergence patterns (the laggard short inside a rising theme, the share-gainer long inside a falling one); aligned riders are the default picks.</p>
+          <div class="filters" id="simple-radar-filters"></div>
+          <p class="hint" style="margin:0 0 4px" id="simple-radar-count"></p>
           <div id="simple-radar"></div>
         </div>`;
-      attachTable(host.querySelector("#simple-radar"), rows, [
-        { key: "status", label: "Status", fmt: (v) => simpleStatusChip(v) },
-        { key: "theme", label: "Theme", fmt: (v, r) => `<strong>${esc(v)}</strong>${r.bellwether ? ` <span class="muted">· bellwether ${esc(r.bellwether)}</span>` : ""}` },
-        { key: "lean", label: "Lean" },
-        { key: "breadth", label: "Breadth", fmt: (v) => (v == null ? "" : (v > 0 ? "+" : "") + Number(v).toFixed(2)) },
-        { key: "coverage", label: "Cov", fmt: (v) => (v == null ? "" : Math.round(v * 100) + "%") },
-        { key: "members_covered", label: "Cov/#" },
-        { key: "prints", label: "Prints 14d" },
-        { key: "divergent", label: "Divergent", fmt: (v) => (v || []).join(", ") },
-        { key: "why", label: "Why-now" },
-      ], { tableId: "simple-radar" });
+      buildSimpleRadarFilters(host.querySelector("#simple-radar-filters"));
+      applySimpleRadarFilters(host);
+    }
+
+    // module-level so filters survive data refreshes within the session
+    const simpleRadar = { rows: [], cols: [], filters: {} };
+
+    function buildSimpleRadarFilters(filtersHost) {
+      const { cols, rows, filters } = simpleRadar;
+      filtersHost.innerHTML = cols.map((c) => {
+        if (c.filter === "select") {
+          const values = [...new Set(rows.map((r) => String(r[c.key] ?? "")))].filter(Boolean).sort();
+          const options = [`<option value="">${esc(c.label)}: all</option>`]
+            .concat(values.map((v) => `<option value="${esc(v)}" ${filters[c.key] === v ? "selected" : ""}>${esc(v)}</option>`));
+          return `<label style="font-size:11px">${esc(c.label)}<select data-fkey="${esc(c.key)}">${options.join("")}</select></label>`;
+        }
+        if (c.filter === "min") {
+          return `<label style="font-size:11px"${c.minAbs ? ` title="filters on the |${esc(c.label)}| magnitude"` : ""}>${esc(c.label)} ≥ <input type="number" step="${c.minStep ?? 1}" placeholder="min" style="width:70px" data-min="${esc(c.key)}" value="${esc(filters[c.key] ?? "")}"></label>`;
+        }
+        return `<label style="font-size:11px">${esc(c.label)}<input type="text" placeholder="contains…" style="width:110px" data-text="${esc(c.key)}" value="${esc(filters[c.key] || "")}"></label>`;
+      }).join("") + `<button id="simple-radar-clear" style="font-size:11px">Clear</button>`;
+      const rerender = () => applySimpleRadarFilters(filtersHost.closest(".dd-batch").parentElement);
+      filtersHost.querySelectorAll("select[data-fkey]").forEach((sel) => {
+        sel.addEventListener("change", () => {
+          if (sel.value) filters[sel.dataset.fkey] = sel.value;
+          else delete filters[sel.dataset.fkey];
+          rerender();
+        });
+      });
+      filtersHost.querySelectorAll("input[data-text]").forEach((inp) => {
+        inp.addEventListener("input", () => {
+          if (inp.value) filters[inp.dataset.text] = inp.value;
+          else delete filters[inp.dataset.text];
+          rerender();
+        });
+      });
+      filtersHost.querySelectorAll("input[data-min]").forEach((inp) => {
+        inp.addEventListener("input", () => {
+          if (inp.value !== "") filters[inp.dataset.min] = inp.value;
+          else delete filters[inp.dataset.min];
+          rerender();
+        });
+      });
+      filtersHost.querySelector("#simple-radar-clear").addEventListener("click", () => {
+        simpleRadar.filters = {};
+        buildSimpleRadarFilters(filtersHost);
+        rerender();
+      });
+    }
+
+    function applySimpleRadarFilters(host) {
+      const tableHost = host.querySelector("#simple-radar");
+      const countHost = host.querySelector("#simple-radar-count");
+      if (!tableHost) return;
+      const filtered = simpleRadar.rows.filter((r) => simpleRadar.cols.every((c) => {
+        const v = simpleRadar.filters[c.key];
+        if (v == null || v === "") return true;
+        if (c.filter === "select") return String(r[c.key] ?? "") === String(v);
+        if (c.filter === "min") {
+          const raw = r[c.key];
+          if (raw == null) return false;
+          const num = c.pct ? Number(raw) * 100 : (c.minAbs ? Math.abs(Number(raw)) : Number(raw));
+          return num >= Number(v);
+        }
+        // text: substring over the raw field (arrays become their joined tickers)
+        const hay = Array.isArray(r[c.key]) ? r[c.key].map((x) => x.ticker ?? x).join(" ") : String(r[c.key] ?? "");
+        return hay.toLowerCase().includes(String(v).toLowerCase());
+      }));
+      if (countHost) countHost.textContent = `showing ${filtered.length} of ${simpleRadar.rows.length} themes`;
+      attachTable(tableHost, filtered, simpleRadar.cols, { tableId: "simple-radar" });
     }
 
     function renderSimpleThemeDetail(payload, host) {
       if (payload.error) { host.innerHTML = `<p class="err">${esc(payload.error)}</p>`; return; }
       const row = payload.row || {};
       const sel = payload.selection || {};
+      const breadth = row.breadth || 0;
+      const withCount = (payload.members || []).filter((m) => m.covered && (m.rev90 || 0) * breadth >= 0).length;
+      const againstCount = (payload.members || []).filter((m) => m.covered && (m.rev90 || 0) * breadth < 0).length;
       const memCols = [
         { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
         { key: "covered", label: "Cov", fmt: (v) => (v ? "✔" : "—") },
@@ -2273,6 +2357,7 @@
         { key: "days_to_print", label: "Print in d" },
         { key: "earnings_date", label: "Next print" },
         { key: "market_cap", label: "Mcap $bn", fmt: (v) => (v == null ? "" : (v / 1e9).toFixed(1)) },
+        { key: "align", label: "vs theme", title: "'with' revises the same way the theme's breadth points (the rider); 'against' is the divergence pattern the process flags — the laggard (short) or share-gainer (long). The name's own estimate direction always decides its side, never the theme's.", fmt: (v) => (v ? `<span class="badge${v === "against" ? " info" : ""}">${esc(v)}</span>` : "") },
       ];
       const sideCols = [
         { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
@@ -2285,7 +2370,8 @@
       host.innerHTML = `
         <div class="dd-batch">
           <strong>2 · Selection — ${esc(row.theme || "")}</strong>
-          <p class="hint" style="margin:4px 0 6px">Status ${simpleStatusChip(row.status)} · lean ${esc(row.lean || "")} · breadth ${(row.breadth > 0 ? "+" : "") + Number(row.breadth || 0).toFixed(2)} · coverage ${Math.round((row.coverage || 0) * 100)}% (${row.members_covered}/${row.members_total}) · bellwether ${esc(row.bellwether || "—")}</p>
+          <p class="hint" style="margin:4px 0 6px">Status ${simpleStatusChip(row.status)} · lean ${esc(row.lean || "")} · breadth ${(row.breadth > 0 ? "+" : "") + Number(row.breadth || 0).toFixed(2)} · coverage ${Math.round((row.coverage || 0) * 100)}% (${row.members_covered}/${row.members_total}) · bellwether ${esc(row.bellwether || "—")} · <span class="badge">${withCount} with theme</span> <span class="badge info">${againstCount} against</span></p>
+          <p class="hint" style="margin:0 0 6px">Sides come from each name's OWN 90d estimate direction, never the theme's: aligned riders and against-theme divergers (the "know more than the market" candidates) are picked alike — longs rising, shorts falling.</p>
           <div style="display:flex;gap:16px;flex-wrap:wrap">
             <div style="flex:1;min-width:320px"><strong>Long shortlist</strong>${sel.long && sel.long.length ? "" : `<p class="muted" style="margin:4px 0">none eligible (estimates must rise &gt; +0.5%)</p>`}<div id="simple-sel-long"></div></div>
             <div style="flex:1;min-width:320px"><strong>Short shortlist</strong>${sel.short && sel.short.length ? "" : `<p class="muted" style="margin:4px 0">none eligible (estimates must fall &lt; −0.5%)</p>`}<div id="simple-sel-short"></div></div>
@@ -2294,7 +2380,13 @@
         </div>`;
       if (sel.long && sel.long.length) attachTable(host.querySelector("#simple-sel-long"), sideRows(sel.long, "long_score"), sideCols, { tableId: "simple-sel-long" });
       if (sel.short && sel.short.length) attachTable(host.querySelector("#simple-sel-short"), sideRows(sel.short, "short_score"), sideCols, { tableId: "simple-sel-short" });
-      if (payload.members && payload.members.length) attachTable(host.querySelector("#simple-members"), payload.members, memCols, { tableId: "simple-members" });
+      if (payload.members && payload.members.length) {
+        const memRows = payload.members.map((m) => ({
+          ...m,
+          align: !m.covered ? "" : ((m.rev90 || 0) * breadth >= 0 ? "with" : "against"),
+        }));
+        attachTable(host.querySelector("#simple-members"), memRows, memCols, { tableId: "simple-members" });
+      }
     }
 
     function renderSimpleBook(host, payload) {
@@ -2341,10 +2433,15 @@
       renderSimpleBook(el.querySelector("#simple-book-host"), book);
       const watchHost = el.querySelector("#simple-watch-host");
       const parked = (watch && watch.parked) || [];
-      watchHost.innerHTML = `<div class="dd-batch"><strong>Watchlist (parked)</strong>` +
+      watchHost.innerHTML = `<div class="dd-batch"><strong>Watchlist (parked — nothing dies)</strong>` +
         (watch && watch.as_of ? ` <span class="muted">as of ${esc(watch.as_of)}</span>` : "") +
         (parked.length
-          ? `<div style="margin-top:6px">${parked.map((p) => `<span class="badge">${esc(p.ticker)}</span> <span class="muted">${esc(p.theme || "")}</span>`).join(" · ")}</div>`
+          ? `<div style="margin-top:6px">${parked.map((p) => {
+              const failed = (p.gates || []).filter((g) => !g.pass).map((g) => `${g.gate}: ${g.detail}`);
+              return `<div style="margin:4px 0"><span class="badge">${esc(p.ticker)}</span> <span class="muted">${esc(p.side || "")} · ${esc(p.theme || "")}</span>` +
+                (failed.length ? ` <span class="neg" style="font-size:12px">${failed.map(esc).join(" · ")}</span>` : "") +
+                `</div>`;
+            }).join("")}</div>`
           : `<p class="muted" style="margin:4px 0 0">nothing parked</p>`) +
         `</div>`;
       const repHost = el.querySelector("#simple-reports-host");

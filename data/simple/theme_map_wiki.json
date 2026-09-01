@@ -1,0 +1,7013 @@
+{
+  "source": "wikipedia-industry",
+  "built_at": 1788278688.1823366,
+  "theme_count": 171,
+  "ticker_count": 1295,
+  "wiki_fallbacks": 700,
+  "themes": [
+    {
+      "theme": "Advertising",
+      "members": [
+        "DV",
+        "LAMR",
+        "TTD"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia",
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Aerospace & Defense",
+      "members": [
+        "ATI",
+        "BWXT",
+        "HXL",
+        "KRMN",
+        "NPK",
+        "SARO",
+        "VSEC",
+        "VVX"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "aerospace engineering",
+      "members": [
+        "LDOS",
+        "MOG-A",
+        "WWD"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "aerospace industry",
+      "members": [
+        "AIR",
+        "AVAV",
+        "BA",
+        "CW",
+        "GD",
+        "GE",
+        "HONA",
+        "HWM",
+        "LMT",
+        "MRCY",
+        "NOC",
+        "OII",
+        "RTX",
+        "TDG"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "air transport",
+      "members": [
+        "AAL",
+        "DAL",
+        "LUV",
+        "UAL"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "aircraft industry",
+      "members": [
+        "BA",
+        "BRK-B",
+        "NOC"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Apparel, Accessories & Luxury Goods",
+      "members": [
+        "CRI",
+        "GIII",
+        "KTB",
+        "UA",
+        "UAA"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Application Software",
+      "members": [
+        "ACIW",
+        "AGYS",
+        "BILL",
+        "BL",
+        "CALX",
+        "CXM",
+        "FIVN",
+        "GWRE",
+        "LIF",
+        "MANH",
+        "QTWO",
+        "RAMP",
+        "RNG",
+        "SPSC",
+        "TRMB",
+        "YOU"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "asset management",
+      "members": [
+        "APO",
+        "BLK",
+        "KKR",
+        "LAZ",
+        "TROW"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Asset Management & Custody Banks",
+      "members": [
+        "AAMI",
+        "APAM",
+        "CG",
+        "CNS",
+        "HLNE",
+        "VCTR",
+        "VRTS",
+        "WT"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "automotive industry",
+      "members": [
+        "APTV",
+        "AZO",
+        "BWA",
+        "CNH",
+        "CPRT",
+        "DAN",
+        "DCH",
+        "F",
+        "FOXF",
+        "GM",
+        "HOG",
+        "LKQ",
+        "PAG",
+        "PCAR",
+        "RUSHA",
+        "THRM",
+        "TSLA",
+        "TXT",
+        "WGO"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Automotive Parts & Equipment",
+      "members": [
+        "ADNT",
+        "DORM",
+        "GNTX",
+        "LCII",
+        "LEA",
+        "PATK",
+        "SMP",
+        "XPEL"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Automotive Retail",
+      "members": [
+        "AAP",
+        "GPI",
+        "KMX",
+        "PHIN",
+        "SAH"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "automotive supplier",
+      "members": [
+        "ALV",
+        "FSS",
+        "GTES",
+        "VC"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "bank",
+      "members": [
+        "ABCB",
+        "C",
+        "FFBC",
+        "WAL"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "beverage industry",
+      "members": [
+        "BF-B",
+        "CELH",
+        "COKE",
+        "KDP",
+        "MNST",
+        "PEP"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "biotechnology",
+      "members": [
+        "ABBV",
+        "ADMA",
+        "ARWR",
+        "BDX",
+        "BIO",
+        "BMRN",
+        "CYTK",
+        "EXEL",
+        "GLW",
+        "HALO",
+        "HRMY",
+        "ILMN",
+        "LGND",
+        "NBIX",
+        "NEO",
+        "PTGX",
+        "RVTY",
+        "TECH",
+        "TGTX",
+        "UTHR",
+        "VCEL",
+        "XNCR"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia",
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "biotechnology industry",
+      "members": [
+        "KRYS",
+        "MRNA",
+        "TMO",
+        "VIR",
+        "VRTX"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Broadcasting",
+      "members": [
+        "FOX",
+        "FOXA",
+        "NXST",
+        "ROKU"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia",
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Building Products",
+      "members": [
+        "ALLE",
+        "APOG",
+        "BCC",
+        "FBIN",
+        "FERG",
+        "JCI",
+        "MAS",
+        "MBC",
+        "NX",
+        "OC",
+        "ROCK",
+        "TREX",
+        "TT",
+        "UFPI",
+        "WMS",
+        "WOR",
+        "WTS"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Cargo Ground Transportation",
+      "members": [
+        "ARCB",
+        "HTLD",
+        "JBHT",
+        "KNX",
+        "MRTN",
+        "ODFL",
+        "RXO",
+        "WERN"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Casinos & Gaming",
+      "members": [
+        "BYD",
+        "CHDN",
+        "MCRI",
+        "PENN",
+        "RRR",
+        "RSI",
+        "WYNN"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "chemical industry",
+      "members": [
+        "ALB",
+        "CC",
+        "CE",
+        "CF",
+        "DD",
+        "DOW",
+        "ESI",
+        "FMC",
+        "KWR",
+        "LIN",
+        "NEU",
+        "OLN",
+        "SHW",
+        "VVV",
+        "WDFC",
+        "WLK"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "clothing industry",
+      "members": [
+        "AEO",
+        "CPRI",
+        "NKE",
+        "PVH",
+        "RL",
+        "TPR",
+        "VFC",
+        "VSXY"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Coal & Consumable Fuels",
+      "members": [
+        "BTU",
+        "CNR",
+        "LEU"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Commercial & Residential Mortgage Finance",
+      "members": [
+        "ACT",
+        "ESNT",
+        "NMIH",
+        "WD"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Communications Equipment",
+      "members": [
+        "DGII",
+        "EXTR",
+        "HLIT",
+        "IDCC",
+        "LITE",
+        "NTCT",
+        "VIAV",
+        "VSAT"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "computer hardware industry",
+      "members": [
+        "HPE",
+        "HPQ",
+        "IBM",
+        "OLED",
+        "SMCI",
+        "SNDK",
+        "SYNA",
+        "ZBRA"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "computer industry",
+      "members": [
+        "AMD",
+        "IBM",
+        "SMCI"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "computer security",
+      "members": [
+        "CRWD",
+        "FTNT",
+        "GEN",
+        "PANW",
+        "PSN",
+        "QLYS"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "conglomerate",
+      "members": [
+        "BRK-B",
+        "DHR",
+        "ECL",
+        "EPAC",
+        "FTV",
+        "GFF",
+        "GHC",
+        "MHK",
+        "ROP",
+        "SPXC",
+        "TDY",
+        "TRN"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "construction",
+      "members": [
+        "ACM",
+        "DHI",
+        "KBR",
+        "LEN",
+        "LGIH",
+        "LPX",
+        "MTZ",
+        "PSN",
+        "SSD"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Construction & Engineering",
+      "members": [
+        "ACA",
+        "AGX",
+        "APG",
+        "DY",
+        "ECG",
+        "FLR",
+        "GVA",
+        "IESC",
+        "MYRG",
+        "PRIM",
+        "PWR",
+        "ROAD",
+        "STRL",
+        "TPC"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Construction Machinery & Heavy Transportation Equipment",
+      "members": [
+        "ALG",
+        "ALSN",
+        "GBX",
+        "OSK"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Construction Materials",
+      "members": [
+        "EXP",
+        "KNF",
+        "USLM"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "consumer electronics industry",
+      "members": [
+        "AAPL",
+        "GRMN",
+        "MSFT",
+        "ROKU",
+        "SONO"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Consumer Finance",
+      "members": [
+        "BFH",
+        "DAVE",
+        "ECPG",
+        "ENVA",
+        "EZPW",
+        "PRG",
+        "SLM",
+        "WRLD"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "cosmetics industry",
+      "members": [
+        "COTY",
+        "ELF",
+        "ULTA"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Data Processing & Outsourced Services",
+      "members": [
+        "CNXC",
+        "EXLS",
+        "MBGL",
+        "VRRM"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Diversified REITs",
+      "members": [
+        "AAT",
+        "EPRT",
+        "GNL",
+        "LXP"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Diversified Support Services",
+      "members": [
+        "AMTM",
+        "LQDT",
+        "OPLN",
+        "RBA",
+        "SAIC",
+        "VSTS"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "e-commerce",
+      "members": [
+        "CVNA",
+        "EBAY",
+        "ETSY",
+        "GDDY"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "economics of banking",
+      "members": [
+        "BNY",
+        "CFG",
+        "CFR",
+        "COLB",
+        "FNB",
+        "HBAN",
+        "JPM",
+        "KEY",
+        "MTB",
+        "PB",
+        "PNC",
+        "RF",
+        "SSB",
+        "UBSI",
+        "USB",
+        "WABC",
+        "WFC",
+        "WSBC"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Education Services",
+      "members": [
+        "CVSA",
+        "DUOL",
+        "LAUR",
+        "PRDO",
+        "STRA"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Electric Utilities",
+      "members": [
+        "CEG",
+        "HE",
+        "IDA",
+        "MGEE",
+        "OTTR",
+        "TXNM",
+        "VST",
+        "WEC"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Electrical Components & Equipment",
+      "members": [
+        "AYI",
+        "ENS",
+        "HAYW",
+        "NVT",
+        "NXT",
+        "POWL",
+        "ROK",
+        "RRX",
+        "ST"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "electrical industry",
+      "members": [
+        "AMD",
+        "EMR",
+        "INTC",
+        "VRT"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "electricity generation",
+      "members": [
+        "AEP",
+        "AES",
+        "CNP",
+        "DUK",
+        "EIX"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "electricity supply company",
+      "members": [
+        "EVRG",
+        "FE",
+        "NRG",
+        "PNW",
+        "PPL"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Electronic Components",
+      "members": [
+        "COHR",
+        "KN",
+        "ROG"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Electronic Equipment & Instruments",
+      "members": [
+        "BMI",
+        "CGNX",
+        "CXT",
+        "DBD",
+        "ITRI",
+        "KEYS",
+        "MIR",
+        "NOVT",
+        "NSSC",
+        "OSIS",
+        "PI",
+        "RAL",
+        "VNT"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Electronic Manufacturing Services",
+      "members": [
+        "BHE",
+        "CTS",
+        "FN",
+        "IPGP",
+        "PLXS",
+        "SANM"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "electronics",
+      "members": [
+        "APH",
+        "AVT",
+        "BDC",
+        "FLEX",
+        "GEHC",
+        "JBL",
+        "KLAC",
+        "LFUS",
+        "MCHP",
+        "MRVL",
+        "NXPI",
+        "TEL",
+        "TXN",
+        "VSH"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "electronics industry",
+      "members": [
+        "A",
+        "AAPL",
+        "CRSR",
+        "ENR",
+        "HUBB",
+        "LMT",
+        "NOC",
+        "VICR"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "energy industry",
+      "members": [
+        "AEE",
+        "BKH",
+        "D",
+        "DTE",
+        "ED",
+        "EXC",
+        "GEV",
+        "SO",
+        "TLN",
+        "UGI"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "enterprise software",
+      "members": [
+        "CRM",
+        "INTU",
+        "NOW"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Environmental & Facilities Services",
+      "members": [
+        "ABM",
+        "CWST",
+        "GEO",
+        "HCSG",
+        "VLTO",
+        "WM"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "fast-moving consumer goods",
+      "members": [
+        "CHD",
+        "KHC",
+        "PEP",
+        "PG",
+        "PM"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "finance",
+      "members": [
+        "BOH",
+        "CACC",
+        "CME",
+        "FULT",
+        "ONB",
+        "PNFP",
+        "SF"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Financial Exchanges & Data",
+      "members": [
+        "CBOE",
+        "DFIN",
+        "ICE",
+        "MSCI",
+        "VIRT"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "financial sector",
+      "members": [
+        "BAC",
+        "CBSH",
+        "CFG",
+        "CFR",
+        "FNB",
+        "GL",
+        "GS",
+        "HWC",
+        "JPM",
+        "KEY",
+        "LAZ",
+        "MS",
+        "MTB",
+        "PNC",
+        "PRU",
+        "RF",
+        "SSB",
+        "UBSI",
+        "USB",
+        "WFC",
+        "WSBC",
+        "WU"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "financial service activities, except insurance and pension funding",
+      "members": [
+        "AXP",
+        "C",
+        "GS",
+        "LAZ",
+        "MA"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "financial services",
+      "members": [
+        "AFG",
+        "AIG",
+        "ALLY",
+        "AMG",
+        "AMP",
+        "ARES",
+        "ASB",
+        "AXP",
+        "BAC",
+        "BEN",
+        "BR",
+        "BX",
+        "C",
+        "CFFN",
+        "CFG",
+        "CFR",
+        "CNO",
+        "COF",
+        "COLB",
+        "CRBG",
+        "EEFT",
+        "EG",
+        "EVR",
+        "FAF",
+        "FHN",
+        "FIS",
+        "FISV",
+        "FNB",
+        "FOUR",
+        "GS",
+        "HBAN",
+        "HLI",
+        "HOMB",
+        "HOOD",
+        "HTH",
+        "IBKR",
+        "IVZ",
+        "JPM",
+        "KEY",
+        "MA",
+        "MC",
+        "MCO",
+        "MKTX",
+        "MORN",
+        "MS",
+        "MTB",
+        "NAVI",
+        "NDAQ",
+        "NTRS",
+        "OFG",
+        "OZK",
+        "PFBC",
+        "PIPR",
+        "PNC",
+        "PRI",
+        "RF",
+        "RITM",
+        "SCHW",
+        "SEIC",
+        "SF",
+        "SNEX",
+        "SPGI",
+        "SSB",
+        "STC",
+        "STEP",
+        "STT",
+        "SYF",
+        "TFC",
+        "TMP",
+        "UBSI",
+        "USB",
+        "V",
+        "VLY",
+        "VOYA",
+        "WFC",
+        "WSBC",
+        "WTFC",
+        "WU",
+        "XYZ",
+        "ZION"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "fintech",
+      "members": [
+        "COIN",
+        "GDDY",
+        "NDAQ",
+        "PYPL",
+        "SEZL"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Food Distributors",
+      "members": [
+        "ANDE",
+        "CHEF",
+        "PFGC"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "food industry",
+      "members": [
+        "BG",
+        "CAG",
+        "CLX",
+        "CPB",
+        "GIS",
+        "INGR",
+        "KHC",
+        "MDLZ",
+        "MKC",
+        "MO",
+        "PEP",
+        "USFD"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "food processing",
+      "members": [
+        "ADM",
+        "COKE",
+        "HRL",
+        "POST"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Footwear",
+      "members": [
+        "CROX",
+        "DECK",
+        "SHOO"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Gas Utilities",
+      "members": [
+        "ATO",
+        "CPK",
+        "NJR",
+        "NWN",
+        "SR",
+        "SWX"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "health care",
+      "members": [
+        "ACHC",
+        "CAH",
+        "CNC",
+        "DGX",
+        "EHC",
+        "GEHC",
+        "HCA",
+        "IDXX",
+        "LH",
+        "SOLV",
+        "THC"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Health Care Equipment",
+      "members": [
+        "AHCO",
+        "AORT",
+        "BRKR",
+        "CNMD",
+        "DXCM",
+        "GKOS",
+        "IART",
+        "INSP",
+        "ISRG",
+        "ITGR",
+        "LIVN",
+        "LMAT",
+        "PEN",
+        "PODD",
+        "RMD",
+        "STAA",
+        "TMDX",
+        "TNDM",
+        "UFPT"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Health Care Facilities",
+      "members": [
+        "ASTH",
+        "ENSG",
+        "NHC",
+        "OPCH",
+        "UHS",
+        "USPH"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "health care industry",
+      "members": [
+        "DVA",
+        "INGR",
+        "MOH",
+        "STE",
+        "VRTX",
+        "VTRS"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Health Care REITs",
+      "members": [
+        "AHR",
+        "CTRE",
+        "HR",
+        "LTC",
+        "NHI",
+        "OHI",
+        "SBRA",
+        "VTR"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Health Care Services",
+      "members": [
+        "ADUS",
+        "ALHC",
+        "AMN",
+        "CHE",
+        "CON",
+        "CRVL",
+        "MD",
+        "PGNY",
+        "PRVA",
+        "RDNT",
+        "SDGR",
+        "SHC",
+        "VCYT"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Health Care Supplies",
+      "members": [
+        "ALGN",
+        "BLFS",
+        "COO",
+        "ICUI",
+        "LNTH",
+        "MMSI",
+        "NEOG",
+        "NVST",
+        "QDEL",
+        "WST"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Health Care Technology",
+      "members": [
+        "CERT",
+        "HSTM",
+        "OMCL",
+        "WAY"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "heating, ventilation, and air conditioning",
+      "members": [
+        "CARR",
+        "FIX",
+        "LII",
+        "WSO"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Homebuilding",
+      "members": [
+        "CCS",
+        "CVCO",
+        "DFH",
+        "GRBK",
+        "IBP",
+        "KBH",
+        "MHO",
+        "MTH",
+        "NVR",
+        "PHM",
+        "SKY",
+        "TOL"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "hospitality industry",
+      "members": [
+        "CHH",
+        "FUN",
+        "H",
+        "HLT",
+        "MAR",
+        "MGM",
+        "PK",
+        "TNL",
+        "WH"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Hotel & Resort REITs",
+      "members": [
+        "APLE",
+        "DRH",
+        "PEB",
+        "SHO",
+        "XHR"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Hotels, Resorts & Cruise Lines",
+      "members": [
+        "CCL",
+        "NCLH",
+        "PRSU",
+        "SABR"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Household Products",
+      "members": [
+        "CENT",
+        "CENTA",
+        "IPAR",
+        "REYN"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Human Resource & Employment Services",
+      "members": [
+        "FA",
+        "PAYX",
+        "RHI",
+        "UPWK"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Industrial Machinery & Supplies & Components",
+      "members": [
+        "AIN",
+        "ATMU",
+        "CR",
+        "ESAB",
+        "ESE",
+        "FLS",
+        "GGG",
+        "GWW",
+        "IR",
+        "KAI",
+        "KMT",
+        "MFP",
+        "MLI",
+        "MWA",
+        "NDSN",
+        "NPO",
+        "OTIS",
+        "PNR",
+        "PRLB",
+        "RBC",
+        "SXI",
+        "TKR",
+        "TNC",
+        "ZWS"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "industrial manufacturing",
+      "members": [
+        "AGCO",
+        "AME",
+        "ASH",
+        "ASTE",
+        "BRC",
+        "CSL",
+        "CSW",
+        "EMN",
+        "ETN",
+        "FELE",
+        "GEHC",
+        "GLW",
+        "GNRC",
+        "GT",
+        "HNI",
+        "IEX",
+        "ITT",
+        "ITW",
+        "LECO",
+        "MLKN",
+        "PH",
+        "SMG",
+        "SNA",
+        "TDG",
+        "VMI",
+        "VRT",
+        "XYL"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Industrial REITs",
+      "members": [
+        "BNL",
+        "EGP",
+        "FR",
+        "IIPR",
+        "REXR",
+        "STAG",
+        "TRNO"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "information technology",
+      "members": [
+        "ACN",
+        "ADBE",
+        "CSGP",
+        "CVLT",
+        "DELL",
+        "META",
+        "PSN",
+        "TRU",
+        "UBER",
+        "YELP"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "information technology industry",
+      "members": [
+        "AAPL",
+        "CACI",
+        "CTSH",
+        "HPE",
+        "HPQ",
+        "TRU"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "insurance",
+      "members": [
+        "ACGL",
+        "AIZ",
+        "ALL",
+        "BHF",
+        "BRK-B",
+        "CB",
+        "CINF",
+        "EQH",
+        "HMN",
+        "HTH",
+        "KMPR",
+        "MCY",
+        "ORI",
+        "THG",
+        "WRB"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Insurance Brokers",
+      "members": [
+        "AJG",
+        "ERIE",
+        "GSHD",
+        "MRSH",
+        "RYAN"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "insurance industry",
+      "members": [
+        "HUM",
+        "MET",
+        "RGA",
+        "RLI"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Interactive Media & Services",
+      "members": [
+        "CARG",
+        "GOOG",
+        "GOOGL",
+        "PPLI",
+        "QNST"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Internet industry",
+      "members": [
+        "AKAM",
+        "RELY",
+        "ZD"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "investment banking",
+      "members": [
+        "HLI",
+        "LAZ",
+        "MC"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "iron and steel industry",
+      "members": [
+        "CLF",
+        "CMC",
+        "CRS",
+        "NUE",
+        "STLD"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "IT Consulting & Other Services",
+      "members": [
+        "ADEA",
+        "EFOR",
+        "KD",
+        "TDC"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Leisure Facilities",
+      "members": [
+        "LTH",
+        "OSW",
+        "PLNT"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Leisure Products",
+      "members": [
+        "BC",
+        "CALY",
+        "GOLF",
+        "PII",
+        "PTON",
+        "YETI"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Life & Health Insurance",
+      "members": [
+        "AFL",
+        "FG",
+        "JXN",
+        "PFG",
+        "UNM"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "life insurance",
+      "members": [
+        "EQH",
+        "GL",
+        "PRU"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Life Sciences Tools & Services",
+      "members": [
+        "AVTR",
+        "AZTA",
+        "CRL",
+        "MEDP",
+        "MTD"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "logistics",
+      "members": [
+        "BCO",
+        "CHRW",
+        "DASH",
+        "EXPD",
+        "FDX",
+        "GXO",
+        "R",
+        "SNDR",
+        "UPS",
+        "XPO"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "manufacture of machinery and equipment",
+      "members": [
+        "CMI",
+        "DE",
+        "TEX"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "mass media",
+      "members": [
+        "OMC",
+        "TKO",
+        "WBD"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "mechanical engineering",
+      "members": [
+        "BALL",
+        "CAT",
+        "DOV",
+        "GD",
+        "HOG"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "medical technology",
+      "members": [
+        "ENOV",
+        "GMED",
+        "SYK"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "medical technology industry",
+      "members": [
+        "ABT",
+        "GEHC",
+        "JNJ",
+        "MDT"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "mining",
+      "members": [
+        "CDE",
+        "FCX",
+        "HL",
+        "MLM",
+        "NEM",
+        "RGLD"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "mobile phone industry",
+      "members": [
+        "AAPL",
+        "SHEN",
+        "TMUS"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Mortgage REITs",
+      "members": [
+        "ABR",
+        "ADAM",
+        "ARR",
+        "BXMT",
+        "FBRT",
+        "PMT",
+        "STWD"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Movies & Entertainment",
+      "members": [
+        "CNK",
+        "DIS",
+        "MSGS",
+        "NFLX",
+        "SPHR"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Multi-Family Residential REITs",
+      "members": [
+        "CSR",
+        "IRT",
+        "NXRT"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Multi-line Insurance",
+      "members": [
+        "GNW",
+        "L",
+        "LNC"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Multi-Utilities",
+      "members": [
+        "AVA",
+        "CMS",
+        "MDU",
+        "OGE",
+        "PCG"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Office REITs",
+      "members": [
+        "CUZ",
+        "DEA",
+        "DEI",
+        "HIW",
+        "KRC"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Oil & Gas Drilling",
+      "members": [
+        "HP",
+        "PTEN",
+        "VAL"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Oil & Gas Equipment & Services",
+      "members": [
+        "AESI",
+        "AROC",
+        "HLX",
+        "INVX",
+        "KGS",
+        "LBRT",
+        "NOV",
+        "RES",
+        "SEI",
+        "VTOL",
+        "WFRD",
+        "WHD"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Oil & Gas Exploration & Production",
+      "members": [
+        "CRGY",
+        "CRK",
+        "GPOR",
+        "MGY",
+        "MTDR",
+        "NOG",
+        "OVV",
+        "SM",
+        "TALO",
+        "TPL"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Oil & Gas Refining & Marketing",
+      "members": [
+        "CVI",
+        "PARR",
+        "REX",
+        "WKC"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Oil & Gas Storage & Transportation",
+      "members": [
+        "AM",
+        "DTM",
+        "INSW",
+        "KNTK",
+        "LPG",
+        "TRGP",
+        "VNOM"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Other Specialized REITs",
+      "members": [
+        "EPR",
+        "FCPT",
+        "GLPI",
+        "IRM",
+        "SAFE"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Other Specialty Retail",
+      "members": [
+        "CHWY",
+        "VGNT",
+        "WINA"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Packaged Foods & Meats",
+      "members": [
+        "CALM",
+        "DMC",
+        "FLO",
+        "FRPT",
+        "HSY",
+        "JBSS",
+        "JJSF",
+        "LW",
+        "MZTI",
+        "SJM",
+        "SMPL",
+        "TR"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "personal care product",
+      "members": [
+        "CL",
+        "EPC",
+        "KMB"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "petroleum industry",
+      "members": [
+        "APA",
+        "AR",
+        "BKR",
+        "CHRD",
+        "CNX",
+        "COP",
+        "CRC",
+        "CVX",
+        "DINO",
+        "DVN",
+        "EOG",
+        "EQT",
+        "EXE",
+        "FANG",
+        "FTI",
+        "KMI",
+        "MPC",
+        "MUR",
+        "MUSA",
+        "NE",
+        "OXY",
+        "PBF",
+        "PR",
+        "PSX",
+        "RRC",
+        "SLB",
+        "VLO",
+        "WLK",
+        "WMB",
+        "XOM"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "pharmaceutical industry",
+      "members": [
+        "ABBV",
+        "ACAD",
+        "ALKS",
+        "AMGN",
+        "AMRX",
+        "BIIB",
+        "BMY",
+        "COR",
+        "ELAN",
+        "FTRE",
+        "GILD",
+        "INCY",
+        "IQV",
+        "JAZZ",
+        "JNJ",
+        "MRK",
+        "MRNA",
+        "OGN",
+        "PFE",
+        "PG",
+        "PRGO",
+        "RCUS",
+        "REGN",
+        "RGEN",
+        "ROIV",
+        "SRPT",
+        "VRTX",
+        "VTRS",
+        "ZTS"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Pharmaceuticals",
+      "members": [
+        "AMPH",
+        "ANIP",
+        "COLL",
+        "CORT",
+        "INDV",
+        "INVA",
+        "LLY",
+        "LQDA",
+        "PAHC",
+        "PBH",
+        "PCRX",
+        "PTCT",
+        "SUPN"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "product packaging industry",
+      "members": [
+        "AMCR",
+        "AVY",
+        "CCK",
+        "GEF",
+        "SLGN",
+        "SON",
+        "SW"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "professional service",
+      "members": [
+        "AON",
+        "G",
+        "KFY",
+        "NSP",
+        "TTEK"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "professional services industry",
+      "members": [
+        "ACN",
+        "CACI",
+        "FCN",
+        "J"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Property & Casualty Insurance",
+      "members": [
+        "AGO",
+        "AMSF",
+        "EIG",
+        "FNF",
+        "HCI",
+        "HIG",
+        "KNSL",
+        "PLMR",
+        "RDN",
+        "SAFT",
+        "SIGI",
+        "TRV",
+        "UFCS"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "public utility",
+      "members": [
+        "AEE",
+        "AEP",
+        "AWK",
+        "ES",
+        "LNT",
+        "NI",
+        "NWE",
+        "OGS",
+        "OKE",
+        "PEG",
+        "POR",
+        "SRE",
+        "UTL",
+        "XEL"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Publishing",
+      "members": [
+        "NWS",
+        "NWSA",
+        "RDDT",
+        "SCHL",
+        "TRIP",
+        "WLY"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia",
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "pulp and paper industry",
+      "members": [
+        "INGR",
+        "IP",
+        "WY"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "real estate industry",
+      "members": [
+        "BXP",
+        "CBRE",
+        "CSGP",
+        "VMRK"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "real estate investment trust",
+      "members": [
+        "AMH",
+        "AMT",
+        "ARE",
+        "BRX",
+        "CDP",
+        "CPT",
+        "CUBE",
+        "DLR",
+        "DOC",
+        "ESS",
+        "FRT",
+        "INVH",
+        "IVT",
+        "KIM",
+        "MAA",
+        "MAC",
+        "MPT",
+        "NLY",
+        "NNN",
+        "O",
+        "PECO",
+        "PLD",
+        "PSA",
+        "REG",
+        "RHP",
+        "SLG",
+        "SPG",
+        "SUI",
+        "UDR",
+        "VNO",
+        "WELL",
+        "WPC"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Real Estate Services",
+      "members": [
+        "AGNT",
+        "CWK",
+        "JLL",
+        "MMI"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Regional Banks",
+      "members": [
+        "AUB",
+        "AX",
+        "BANC",
+        "BANF",
+        "BANR",
+        "BBT",
+        "BKU",
+        "CASH",
+        "CATY",
+        "CBU",
+        "CHCO",
+        "CPF",
+        "CUBI",
+        "CVBF",
+        "DCOM",
+        "EBC",
+        "EGBN",
+        "EWBC",
+        "FBK",
+        "FBNC",
+        "FBP",
+        "FCF",
+        "FFIN",
+        "FHB",
+        "FIBK",
+        "FITB",
+        "GBCI",
+        "HAFC",
+        "HFWA",
+        "HOPE",
+        "IBOC",
+        "INDB",
+        "LKFN",
+        "MBIN",
+        "NBHC",
+        "NBTB",
+        "NIC",
+        "NWBI",
+        "PFS",
+        "PRK",
+        "RNST",
+        "SBCF",
+        "SBSI",
+        "SFBS",
+        "SFNC",
+        "STBA",
+        "TBBK",
+        "TCBI",
+        "TFIN",
+        "TRMK",
+        "TRST",
+        "UCB",
+        "UMBF",
+        "WAFD",
+        "WSFS"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Renewable Electricity",
+      "members": [
+        "CWEN",
+        "CWEN-A",
+        "ORA"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Research & Consulting Services",
+      "members": [
+        "EFX",
+        "LZ",
+        "ULS"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "restaurant",
+      "members": [
+        "CAVA",
+        "DPZ",
+        "PZZA",
+        "WEN",
+        "WING"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Restaurants",
+      "members": [
+        "BJRI",
+        "BROS",
+        "CAKE",
+        "EAT",
+        "SHAK"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "retail",
+      "members": [
+        "ACI",
+        "AEO",
+        "ALRM",
+        "AN",
+        "ANF",
+        "ASO",
+        "BBWI",
+        "BBY",
+        "BJ",
+        "BURL",
+        "CART",
+        "CASY",
+        "COST",
+        "CVS",
+        "DG",
+        "DKS",
+        "DLTR",
+        "EBAY",
+        "FCFS",
+        "FND",
+        "GAP",
+        "GME",
+        "GO",
+        "KR",
+        "LULU",
+        "M",
+        "NKE",
+        "ORLY",
+        "ROST",
+        "SIG",
+        "TGT",
+        "TJX",
+        "TSCO",
+        "URBN",
+        "WMT",
+        "WRBY",
+        "YUM"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Retail REITs",
+      "members": [
+        "ADC",
+        "AKR",
+        "BFS",
+        "CURB",
+        "GTY",
+        "KRG",
+        "NTST",
+        "SKT",
+        "UE"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "self storage",
+      "members": [
+        "CUBE",
+        "EXR",
+        "PSA"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "semiconductor industry",
+      "members": [
+        "ADI",
+        "AMD",
+        "AVGO",
+        "CRUS",
+        "INTC",
+        "LSCC",
+        "MCHP",
+        "MPWR",
+        "MRVL",
+        "NVDA",
+        "ON",
+        "QCOM",
+        "SNDK",
+        "SWKS",
+        "TXN"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Semiconductor Materials & Equipment",
+      "members": [
+        "ACLS",
+        "ACMR",
+        "AEIS",
+        "AMAT",
+        "COHU",
+        "ENTG",
+        "FORM",
+        "ICHR",
+        "KLIC",
+        "LRCX",
+        "MKSI",
+        "ONTO",
+        "PDFS",
+        "PLAB",
+        "Q",
+        "TER",
+        "UCTT",
+        "VECO"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Semiconductors",
+      "members": [
+        "AMKR",
+        "AOSL",
+        "MU",
+        "MXL",
+        "PENG",
+        "POWI",
+        "QRVO",
+        "RMBS",
+        "SITM",
+        "SLAB",
+        "SMTC"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "shipbuilding",
+      "members": [
+        "GD",
+        "HII",
+        "NOC"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Soft Drinks & Non-alcoholic Beverages",
+      "members": [
+        "COCO",
+        "FIZZ",
+        "KO"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "software development",
+      "members": [
+        "AAPL",
+        "ADBE",
+        "ADSK",
+        "MSFT",
+        "ORCL",
+        "TWLO"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "software industry",
+      "members": [
+        "AAPL",
+        "ADBE",
+        "ADP",
+        "APP",
+        "APPF",
+        "BLKB",
+        "BSY",
+        "CDNS",
+        "CRM",
+        "EPAM",
+        "FDS",
+        "GEN",
+        "GRMN",
+        "HPE",
+        "HPQ",
+        "IBM",
+        "MSFT",
+        "OKTA",
+        "PATH",
+        "PEGA",
+        "PSN",
+        "PTC",
+        "SNPS",
+        "TWLO",
+        "TYL",
+        "VEEV",
+        "WDAY"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Specialized Consumer Services",
+      "members": [
+        "ADT",
+        "BFAM",
+        "FTDR",
+        "HRB",
+        "MATW",
+        "SCI"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Specialty Chemicals",
+      "members": [
+        "AVNT",
+        "AXTA",
+        "BCPC",
+        "FUL",
+        "IFF",
+        "IOSP",
+        "LYB",
+        "MTX",
+        "NGVT",
+        "SOLS",
+        "SXT"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia",
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Specialty Stores",
+      "members": [
+        "EYE",
+        "HZO",
+        "SBH"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Steel",
+      "members": [
+        "HCC",
+        "MTUS",
+        "RS",
+        "WS"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Systems Software",
+      "members": [
+        "ATEN",
+        "NABL",
+        "PRGS"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Technology Distributors",
+      "members": [
+        "CNXN",
+        "NSIT",
+        "PLUS",
+        "SCSC"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "telecommunications",
+      "members": [
+        "QCOM",
+        "TDS",
+        "UNIT",
+        "VRSN"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "telecommunications industry",
+      "members": [
+        "CCI",
+        "CHTR",
+        "CIEN",
+        "CMCSA",
+        "CSCO",
+        "ECHO",
+        "IRDM",
+        "MSI",
+        "NXST",
+        "SBAC",
+        "SHEN",
+        "T",
+        "TMUS",
+        "VZ",
+        "WU"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "textile industry",
+      "members": [
+        "COLM",
+        "INGR",
+        "PVH",
+        "TILE",
+        "WWW"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "tourism",
+      "members": [
+        "ALGT",
+        "LVS",
+        "TRIP",
+        "VAC"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "tourism industry",
+      "members": [
+        "ABNB",
+        "EXPE",
+        "MAR",
+        "TRIP"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Trading Companies & Distributors",
+      "members": [
+        "AIT",
+        "DNOW",
+        "DXPE",
+        "FAST",
+        "MSM",
+        "REZI"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "Transaction & Payment Processing Services",
+      "members": [
+        "CPAY",
+        "EVTC",
+        "GPN",
+        "JKHY",
+        "NATL",
+        "PAYO",
+        "TOST",
+        "WEX"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "transport",
+      "members": [
+        "ALK",
+        "LSTR",
+        "NSC",
+        "SKYW",
+        "UNP"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "transport industry",
+      "members": [
+        "FDX",
+        "SAIA",
+        "WAB",
+        "XPO"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "Water Utilities",
+      "members": [
+        "AWR",
+        "MSEX",
+        "WTRG"
+      ],
+      "thesis": "",
+      "source": [
+        "yfinance"
+      ]
+    },
+    {
+      "theme": "weapons industry",
+      "members": [
+        "AXON",
+        "BA",
+        "CW",
+        "KTOS",
+        "LHX",
+        "LMT",
+        "NOC",
+        "RTX"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "wholesale",
+      "members": [
+        "ADIG",
+        "SYY",
+        "WMT"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    }
+  ],
+  "ticker_themes": {
+    "A": [
+      "electronics industry"
+    ],
+    "AAL": [
+      "air transport"
+    ],
+    "AAMI": [
+      "Asset Management & Custody Banks"
+    ],
+    "AAP": [
+      "Automotive Retail"
+    ],
+    "AAPL": [
+      "consumer electronics industry",
+      "electronics industry",
+      "information technology industry",
+      "mobile phone industry",
+      "software development",
+      "software industry"
+    ],
+    "AAT": [
+      "Diversified REITs"
+    ],
+    "ABBV": [
+      "biotechnology",
+      "pharmaceutical industry"
+    ],
+    "ABCB": [
+      "bank"
+    ],
+    "ABM": [
+      "Environmental & Facilities Services"
+    ],
+    "ABNB": [
+      "tourism industry"
+    ],
+    "ABR": [
+      "Mortgage REITs"
+    ],
+    "ABT": [
+      "medical technology industry"
+    ],
+    "ACA": [
+      "Construction & Engineering"
+    ],
+    "ACAD": [
+      "pharmaceutical industry"
+    ],
+    "ACGL": [
+      "insurance"
+    ],
+    "ACHC": [
+      "health care"
+    ],
+    "ACI": [
+      "retail"
+    ],
+    "ACIW": [
+      "Application Software"
+    ],
+    "ACLS": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "ACM": [
+      "construction"
+    ],
+    "ACMR": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "ACN": [
+      "information technology",
+      "professional services industry"
+    ],
+    "ACT": [
+      "Commercial & Residential Mortgage Finance"
+    ],
+    "ADAM": [
+      "Mortgage REITs"
+    ],
+    "ADBE": [
+      "information technology",
+      "software development",
+      "software industry"
+    ],
+    "ADC": [
+      "Retail REITs"
+    ],
+    "ADEA": [
+      "IT Consulting & Other Services"
+    ],
+    "ADI": [
+      "semiconductor industry"
+    ],
+    "ADIG": [
+      "wholesale"
+    ],
+    "ADM": [
+      "food processing"
+    ],
+    "ADMA": [
+      "biotechnology"
+    ],
+    "ADNT": [
+      "Automotive Parts & Equipment"
+    ],
+    "ADP": [
+      "software industry"
+    ],
+    "ADSK": [
+      "software development"
+    ],
+    "ADT": [
+      "Specialized Consumer Services"
+    ],
+    "ADUS": [
+      "Health Care Services"
+    ],
+    "AEE": [
+      "energy industry",
+      "public utility"
+    ],
+    "AEIS": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "AEO": [
+      "clothing industry",
+      "retail"
+    ],
+    "AEP": [
+      "electricity generation",
+      "public utility"
+    ],
+    "AES": [
+      "electricity generation"
+    ],
+    "AESI": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "AFG": [
+      "financial services"
+    ],
+    "AFL": [
+      "Life & Health Insurance"
+    ],
+    "AGCO": [
+      "industrial manufacturing"
+    ],
+    "AGNT": [
+      "Real Estate Services"
+    ],
+    "AGO": [
+      "Property & Casualty Insurance"
+    ],
+    "AGX": [
+      "Construction & Engineering"
+    ],
+    "AGYS": [
+      "Application Software"
+    ],
+    "AHCO": [
+      "Health Care Equipment"
+    ],
+    "AHR": [
+      "Health Care REITs"
+    ],
+    "AIG": [
+      "financial services"
+    ],
+    "AIN": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "AIR": [
+      "aerospace industry"
+    ],
+    "AIT": [
+      "Trading Companies & Distributors"
+    ],
+    "AIZ": [
+      "insurance"
+    ],
+    "AJG": [
+      "Insurance Brokers"
+    ],
+    "AKAM": [
+      "Internet industry"
+    ],
+    "AKR": [
+      "Retail REITs"
+    ],
+    "ALB": [
+      "chemical industry"
+    ],
+    "ALG": [
+      "Construction Machinery & Heavy Transportation Equipment"
+    ],
+    "ALGN": [
+      "Health Care Supplies"
+    ],
+    "ALGT": [
+      "tourism"
+    ],
+    "ALHC": [
+      "Health Care Services"
+    ],
+    "ALK": [
+      "transport"
+    ],
+    "ALKS": [
+      "pharmaceutical industry"
+    ],
+    "ALL": [
+      "insurance"
+    ],
+    "ALLE": [
+      "Building Products"
+    ],
+    "ALLY": [
+      "financial services"
+    ],
+    "ALRM": [
+      "retail"
+    ],
+    "ALSN": [
+      "Construction Machinery & Heavy Transportation Equipment"
+    ],
+    "ALV": [
+      "automotive supplier"
+    ],
+    "AM": [
+      "Oil & Gas Storage & Transportation"
+    ],
+    "AMAT": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "AMCR": [
+      "product packaging industry"
+    ],
+    "AMD": [
+      "computer industry",
+      "electrical industry",
+      "semiconductor industry"
+    ],
+    "AME": [
+      "industrial manufacturing"
+    ],
+    "AMG": [
+      "financial services"
+    ],
+    "AMGN": [
+      "pharmaceutical industry"
+    ],
+    "AMH": [
+      "real estate investment trust"
+    ],
+    "AMKR": [
+      "Semiconductors"
+    ],
+    "AMN": [
+      "Health Care Services"
+    ],
+    "AMP": [
+      "financial services"
+    ],
+    "AMPH": [
+      "Pharmaceuticals"
+    ],
+    "AMRX": [
+      "pharmaceutical industry"
+    ],
+    "AMSF": [
+      "Property & Casualty Insurance"
+    ],
+    "AMT": [
+      "real estate investment trust"
+    ],
+    "AMTM": [
+      "Diversified Support Services"
+    ],
+    "AN": [
+      "retail"
+    ],
+    "ANDE": [
+      "Food Distributors"
+    ],
+    "ANF": [
+      "retail"
+    ],
+    "ANIP": [
+      "Pharmaceuticals"
+    ],
+    "AON": [
+      "professional service"
+    ],
+    "AORT": [
+      "Health Care Equipment"
+    ],
+    "AOSL": [
+      "Semiconductors"
+    ],
+    "APA": [
+      "petroleum industry"
+    ],
+    "APAM": [
+      "Asset Management & Custody Banks"
+    ],
+    "APG": [
+      "Construction & Engineering"
+    ],
+    "APH": [
+      "electronics"
+    ],
+    "APLE": [
+      "Hotel & Resort REITs"
+    ],
+    "APO": [
+      "asset management"
+    ],
+    "APOG": [
+      "Building Products"
+    ],
+    "APP": [
+      "software industry"
+    ],
+    "APPF": [
+      "software industry"
+    ],
+    "APTV": [
+      "automotive industry"
+    ],
+    "AR": [
+      "petroleum industry"
+    ],
+    "ARCB": [
+      "Cargo Ground Transportation"
+    ],
+    "ARE": [
+      "real estate investment trust"
+    ],
+    "ARES": [
+      "financial services"
+    ],
+    "AROC": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "ARR": [
+      "Mortgage REITs"
+    ],
+    "ARWR": [
+      "biotechnology"
+    ],
+    "ASB": [
+      "financial services"
+    ],
+    "ASH": [
+      "industrial manufacturing"
+    ],
+    "ASO": [
+      "retail"
+    ],
+    "ASTE": [
+      "industrial manufacturing"
+    ],
+    "ASTH": [
+      "Health Care Facilities"
+    ],
+    "ATEN": [
+      "Systems Software"
+    ],
+    "ATI": [
+      "Aerospace & Defense"
+    ],
+    "ATMU": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "ATO": [
+      "Gas Utilities"
+    ],
+    "AUB": [
+      "Regional Banks"
+    ],
+    "AVA": [
+      "Multi-Utilities"
+    ],
+    "AVAV": [
+      "aerospace industry"
+    ],
+    "AVGO": [
+      "semiconductor industry"
+    ],
+    "AVNT": [
+      "Specialty Chemicals"
+    ],
+    "AVT": [
+      "electronics"
+    ],
+    "AVTR": [
+      "Life Sciences Tools & Services"
+    ],
+    "AVY": [
+      "product packaging industry"
+    ],
+    "AWK": [
+      "public utility"
+    ],
+    "AWR": [
+      "Water Utilities"
+    ],
+    "AX": [
+      "Regional Banks"
+    ],
+    "AXON": [
+      "weapons industry"
+    ],
+    "AXP": [
+      "financial service activities, except insurance and pension funding",
+      "financial services"
+    ],
+    "AXTA": [
+      "Specialty Chemicals"
+    ],
+    "AYI": [
+      "Electrical Components & Equipment"
+    ],
+    "AZO": [
+      "automotive industry"
+    ],
+    "AZTA": [
+      "Life Sciences Tools & Services"
+    ],
+    "BA": [
+      "aerospace industry",
+      "aircraft industry",
+      "weapons industry"
+    ],
+    "BAC": [
+      "financial sector",
+      "financial services"
+    ],
+    "BALL": [
+      "mechanical engineering"
+    ],
+    "BANC": [
+      "Regional Banks"
+    ],
+    "BANF": [
+      "Regional Banks"
+    ],
+    "BANR": [
+      "Regional Banks"
+    ],
+    "BBT": [
+      "Regional Banks"
+    ],
+    "BBWI": [
+      "retail"
+    ],
+    "BBY": [
+      "retail"
+    ],
+    "BC": [
+      "Leisure Products"
+    ],
+    "BCC": [
+      "Building Products"
+    ],
+    "BCO": [
+      "logistics"
+    ],
+    "BCPC": [
+      "Specialty Chemicals"
+    ],
+    "BDC": [
+      "electronics"
+    ],
+    "BDX": [
+      "biotechnology"
+    ],
+    "BEN": [
+      "financial services"
+    ],
+    "BF-B": [
+      "beverage industry"
+    ],
+    "BFAM": [
+      "Specialized Consumer Services"
+    ],
+    "BFH": [
+      "Consumer Finance"
+    ],
+    "BFS": [
+      "Retail REITs"
+    ],
+    "BG": [
+      "food industry"
+    ],
+    "BHE": [
+      "Electronic Manufacturing Services"
+    ],
+    "BHF": [
+      "insurance"
+    ],
+    "BIIB": [
+      "pharmaceutical industry"
+    ],
+    "BILL": [
+      "Application Software"
+    ],
+    "BIO": [
+      "biotechnology"
+    ],
+    "BJ": [
+      "retail"
+    ],
+    "BJRI": [
+      "Restaurants"
+    ],
+    "BKH": [
+      "energy industry"
+    ],
+    "BKR": [
+      "petroleum industry"
+    ],
+    "BKU": [
+      "Regional Banks"
+    ],
+    "BL": [
+      "Application Software"
+    ],
+    "BLFS": [
+      "Health Care Supplies"
+    ],
+    "BLK": [
+      "asset management"
+    ],
+    "BLKB": [
+      "software industry"
+    ],
+    "BMI": [
+      "Electronic Equipment & Instruments"
+    ],
+    "BMRN": [
+      "biotechnology"
+    ],
+    "BMY": [
+      "pharmaceutical industry"
+    ],
+    "BNL": [
+      "Industrial REITs"
+    ],
+    "BNY": [
+      "economics of banking"
+    ],
+    "BOH": [
+      "finance"
+    ],
+    "BR": [
+      "financial services"
+    ],
+    "BRC": [
+      "industrial manufacturing"
+    ],
+    "BRK-B": [
+      "aircraft industry",
+      "conglomerate",
+      "insurance"
+    ],
+    "BRKR": [
+      "Health Care Equipment"
+    ],
+    "BROS": [
+      "Restaurants"
+    ],
+    "BRX": [
+      "real estate investment trust"
+    ],
+    "BSY": [
+      "software industry"
+    ],
+    "BTU": [
+      "Coal & Consumable Fuels"
+    ],
+    "BURL": [
+      "retail"
+    ],
+    "BWA": [
+      "automotive industry"
+    ],
+    "BWXT": [
+      "Aerospace & Defense"
+    ],
+    "BX": [
+      "financial services"
+    ],
+    "BXMT": [
+      "Mortgage REITs"
+    ],
+    "BXP": [
+      "real estate industry"
+    ],
+    "BYD": [
+      "Casinos & Gaming"
+    ],
+    "C": [
+      "bank",
+      "financial service activities, except insurance and pension funding",
+      "financial services"
+    ],
+    "CACC": [
+      "finance"
+    ],
+    "CACI": [
+      "information technology industry",
+      "professional services industry"
+    ],
+    "CAG": [
+      "food industry"
+    ],
+    "CAH": [
+      "health care"
+    ],
+    "CAKE": [
+      "Restaurants"
+    ],
+    "CALM": [
+      "Packaged Foods & Meats"
+    ],
+    "CALX": [
+      "Application Software"
+    ],
+    "CALY": [
+      "Leisure Products"
+    ],
+    "CARG": [
+      "Interactive Media & Services"
+    ],
+    "CARR": [
+      "heating, ventilation, and air conditioning"
+    ],
+    "CART": [
+      "retail"
+    ],
+    "CASH": [
+      "Regional Banks"
+    ],
+    "CASY": [
+      "retail"
+    ],
+    "CAT": [
+      "mechanical engineering"
+    ],
+    "CATY": [
+      "Regional Banks"
+    ],
+    "CAVA": [
+      "restaurant"
+    ],
+    "CB": [
+      "insurance"
+    ],
+    "CBOE": [
+      "Financial Exchanges & Data"
+    ],
+    "CBRE": [
+      "real estate industry"
+    ],
+    "CBSH": [
+      "financial sector"
+    ],
+    "CBU": [
+      "Regional Banks"
+    ],
+    "CC": [
+      "chemical industry"
+    ],
+    "CCI": [
+      "telecommunications industry"
+    ],
+    "CCK": [
+      "product packaging industry"
+    ],
+    "CCL": [
+      "Hotels, Resorts & Cruise Lines"
+    ],
+    "CCS": [
+      "Homebuilding"
+    ],
+    "CDE": [
+      "mining"
+    ],
+    "CDNS": [
+      "software industry"
+    ],
+    "CDP": [
+      "real estate investment trust"
+    ],
+    "CE": [
+      "chemical industry"
+    ],
+    "CEG": [
+      "Electric Utilities"
+    ],
+    "CELH": [
+      "beverage industry"
+    ],
+    "CENT": [
+      "Household Products"
+    ],
+    "CENTA": [
+      "Household Products"
+    ],
+    "CERT": [
+      "Health Care Technology"
+    ],
+    "CF": [
+      "chemical industry"
+    ],
+    "CFFN": [
+      "financial services"
+    ],
+    "CFG": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "CFR": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "CG": [
+      "Asset Management & Custody Banks"
+    ],
+    "CGNX": [
+      "Electronic Equipment & Instruments"
+    ],
+    "CHCO": [
+      "Regional Banks"
+    ],
+    "CHD": [
+      "fast-moving consumer goods"
+    ],
+    "CHDN": [
+      "Casinos & Gaming"
+    ],
+    "CHE": [
+      "Health Care Services"
+    ],
+    "CHEF": [
+      "Food Distributors"
+    ],
+    "CHH": [
+      "hospitality industry"
+    ],
+    "CHRD": [
+      "petroleum industry"
+    ],
+    "CHRW": [
+      "logistics"
+    ],
+    "CHTR": [
+      "telecommunications industry"
+    ],
+    "CHWY": [
+      "Other Specialty Retail"
+    ],
+    "CIEN": [
+      "telecommunications industry"
+    ],
+    "CINF": [
+      "insurance"
+    ],
+    "CL": [
+      "personal care product"
+    ],
+    "CLF": [
+      "iron and steel industry"
+    ],
+    "CLX": [
+      "food industry"
+    ],
+    "CMC": [
+      "iron and steel industry"
+    ],
+    "CMCSA": [
+      "telecommunications industry"
+    ],
+    "CME": [
+      "finance"
+    ],
+    "CMI": [
+      "manufacture of machinery and equipment"
+    ],
+    "CMS": [
+      "Multi-Utilities"
+    ],
+    "CNC": [
+      "health care"
+    ],
+    "CNH": [
+      "automotive industry"
+    ],
+    "CNK": [
+      "Movies & Entertainment"
+    ],
+    "CNMD": [
+      "Health Care Equipment"
+    ],
+    "CNO": [
+      "financial services"
+    ],
+    "CNP": [
+      "electricity generation"
+    ],
+    "CNR": [
+      "Coal & Consumable Fuels"
+    ],
+    "CNS": [
+      "Asset Management & Custody Banks"
+    ],
+    "CNX": [
+      "petroleum industry"
+    ],
+    "CNXC": [
+      "Data Processing & Outsourced Services"
+    ],
+    "CNXN": [
+      "Technology Distributors"
+    ],
+    "COCO": [
+      "Soft Drinks & Non-alcoholic Beverages"
+    ],
+    "COF": [
+      "financial services"
+    ],
+    "COHR": [
+      "Electronic Components"
+    ],
+    "COHU": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "COIN": [
+      "fintech"
+    ],
+    "COKE": [
+      "beverage industry",
+      "food processing"
+    ],
+    "COLB": [
+      "economics of banking",
+      "financial services"
+    ],
+    "COLL": [
+      "Pharmaceuticals"
+    ],
+    "COLM": [
+      "textile industry"
+    ],
+    "CON": [
+      "Health Care Services"
+    ],
+    "COO": [
+      "Health Care Supplies"
+    ],
+    "COP": [
+      "petroleum industry"
+    ],
+    "COR": [
+      "pharmaceutical industry"
+    ],
+    "CORT": [
+      "Pharmaceuticals"
+    ],
+    "COST": [
+      "retail"
+    ],
+    "COTY": [
+      "cosmetics industry"
+    ],
+    "CPAY": [
+      "Transaction & Payment Processing Services"
+    ],
+    "CPB": [
+      "food industry"
+    ],
+    "CPF": [
+      "Regional Banks"
+    ],
+    "CPK": [
+      "Gas Utilities"
+    ],
+    "CPRI": [
+      "clothing industry"
+    ],
+    "CPRT": [
+      "automotive industry"
+    ],
+    "CPT": [
+      "real estate investment trust"
+    ],
+    "CR": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "CRBG": [
+      "financial services"
+    ],
+    "CRC": [
+      "petroleum industry"
+    ],
+    "CRGY": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "CRI": [
+      "Apparel, Accessories & Luxury Goods"
+    ],
+    "CRK": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "CRL": [
+      "Life Sciences Tools & Services"
+    ],
+    "CRM": [
+      "enterprise software",
+      "software industry"
+    ],
+    "CROX": [
+      "Footwear"
+    ],
+    "CRS": [
+      "iron and steel industry"
+    ],
+    "CRSR": [
+      "electronics industry"
+    ],
+    "CRUS": [
+      "semiconductor industry"
+    ],
+    "CRVL": [
+      "Health Care Services"
+    ],
+    "CRWD": [
+      "computer security"
+    ],
+    "CSCO": [
+      "telecommunications industry"
+    ],
+    "CSGP": [
+      "information technology",
+      "real estate industry"
+    ],
+    "CSL": [
+      "industrial manufacturing"
+    ],
+    "CSR": [
+      "Multi-Family Residential REITs"
+    ],
+    "CSW": [
+      "industrial manufacturing"
+    ],
+    "CTRE": [
+      "Health Care REITs"
+    ],
+    "CTS": [
+      "Electronic Manufacturing Services"
+    ],
+    "CTSH": [
+      "information technology industry"
+    ],
+    "CUBE": [
+      "real estate investment trust",
+      "self storage"
+    ],
+    "CUBI": [
+      "Regional Banks"
+    ],
+    "CURB": [
+      "Retail REITs"
+    ],
+    "CUZ": [
+      "Office REITs"
+    ],
+    "CVBF": [
+      "Regional Banks"
+    ],
+    "CVCO": [
+      "Homebuilding"
+    ],
+    "CVI": [
+      "Oil & Gas Refining & Marketing"
+    ],
+    "CVLT": [
+      "information technology"
+    ],
+    "CVNA": [
+      "e-commerce"
+    ],
+    "CVS": [
+      "retail"
+    ],
+    "CVSA": [
+      "Education Services"
+    ],
+    "CVX": [
+      "petroleum industry"
+    ],
+    "CW": [
+      "aerospace industry",
+      "weapons industry"
+    ],
+    "CWEN": [
+      "Renewable Electricity"
+    ],
+    "CWEN-A": [
+      "Renewable Electricity"
+    ],
+    "CWK": [
+      "Real Estate Services"
+    ],
+    "CWST": [
+      "Environmental & Facilities Services"
+    ],
+    "CXM": [
+      "Application Software"
+    ],
+    "CXT": [
+      "Electronic Equipment & Instruments"
+    ],
+    "CYTK": [
+      "biotechnology"
+    ],
+    "D": [
+      "energy industry"
+    ],
+    "DAL": [
+      "air transport"
+    ],
+    "DAN": [
+      "automotive industry"
+    ],
+    "DASH": [
+      "logistics"
+    ],
+    "DAVE": [
+      "Consumer Finance"
+    ],
+    "DBD": [
+      "Electronic Equipment & Instruments"
+    ],
+    "DCH": [
+      "automotive industry"
+    ],
+    "DCOM": [
+      "Regional Banks"
+    ],
+    "DD": [
+      "chemical industry"
+    ],
+    "DE": [
+      "manufacture of machinery and equipment"
+    ],
+    "DEA": [
+      "Office REITs"
+    ],
+    "DECK": [
+      "Footwear"
+    ],
+    "DEI": [
+      "Office REITs"
+    ],
+    "DELL": [
+      "information technology"
+    ],
+    "DFH": [
+      "Homebuilding"
+    ],
+    "DFIN": [
+      "Financial Exchanges & Data"
+    ],
+    "DG": [
+      "retail"
+    ],
+    "DGII": [
+      "Communications Equipment"
+    ],
+    "DGX": [
+      "health care"
+    ],
+    "DHI": [
+      "construction"
+    ],
+    "DHR": [
+      "conglomerate"
+    ],
+    "DINO": [
+      "petroleum industry"
+    ],
+    "DIS": [
+      "Movies & Entertainment"
+    ],
+    "DKS": [
+      "retail"
+    ],
+    "DLR": [
+      "real estate investment trust"
+    ],
+    "DLTR": [
+      "retail"
+    ],
+    "DMC": [
+      "Packaged Foods & Meats"
+    ],
+    "DNOW": [
+      "Trading Companies & Distributors"
+    ],
+    "DOC": [
+      "real estate investment trust"
+    ],
+    "DORM": [
+      "Automotive Parts & Equipment"
+    ],
+    "DOV": [
+      "mechanical engineering"
+    ],
+    "DOW": [
+      "chemical industry"
+    ],
+    "DPZ": [
+      "restaurant"
+    ],
+    "DRH": [
+      "Hotel & Resort REITs"
+    ],
+    "DTE": [
+      "energy industry"
+    ],
+    "DTM": [
+      "Oil & Gas Storage & Transportation"
+    ],
+    "DUK": [
+      "electricity generation"
+    ],
+    "DUOL": [
+      "Education Services"
+    ],
+    "DV": [
+      "Advertising"
+    ],
+    "DVA": [
+      "health care industry"
+    ],
+    "DVN": [
+      "petroleum industry"
+    ],
+    "DXCM": [
+      "Health Care Equipment"
+    ],
+    "DXPE": [
+      "Trading Companies & Distributors"
+    ],
+    "DY": [
+      "Construction & Engineering"
+    ],
+    "EAT": [
+      "Restaurants"
+    ],
+    "EBAY": [
+      "e-commerce",
+      "retail"
+    ],
+    "EBC": [
+      "Regional Banks"
+    ],
+    "ECG": [
+      "Construction & Engineering"
+    ],
+    "ECHO": [
+      "telecommunications industry"
+    ],
+    "ECL": [
+      "conglomerate"
+    ],
+    "ECPG": [
+      "Consumer Finance"
+    ],
+    "ED": [
+      "energy industry"
+    ],
+    "EEFT": [
+      "financial services"
+    ],
+    "EFOR": [
+      "IT Consulting & Other Services"
+    ],
+    "EFX": [
+      "Research & Consulting Services"
+    ],
+    "EG": [
+      "financial services"
+    ],
+    "EGBN": [
+      "Regional Banks"
+    ],
+    "EGP": [
+      "Industrial REITs"
+    ],
+    "EHC": [
+      "health care"
+    ],
+    "EIG": [
+      "Property & Casualty Insurance"
+    ],
+    "EIX": [
+      "electricity generation"
+    ],
+    "ELAN": [
+      "pharmaceutical industry"
+    ],
+    "ELF": [
+      "cosmetics industry"
+    ],
+    "EMN": [
+      "industrial manufacturing"
+    ],
+    "EMR": [
+      "electrical industry"
+    ],
+    "ENOV": [
+      "medical technology"
+    ],
+    "ENR": [
+      "electronics industry"
+    ],
+    "ENS": [
+      "Electrical Components & Equipment"
+    ],
+    "ENSG": [
+      "Health Care Facilities"
+    ],
+    "ENTG": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "ENVA": [
+      "Consumer Finance"
+    ],
+    "EOG": [
+      "petroleum industry"
+    ],
+    "EPAC": [
+      "conglomerate"
+    ],
+    "EPAM": [
+      "software industry"
+    ],
+    "EPC": [
+      "personal care product"
+    ],
+    "EPR": [
+      "Other Specialized REITs"
+    ],
+    "EPRT": [
+      "Diversified REITs"
+    ],
+    "EQH": [
+      "insurance",
+      "life insurance"
+    ],
+    "EQT": [
+      "petroleum industry"
+    ],
+    "ERIE": [
+      "Insurance Brokers"
+    ],
+    "ES": [
+      "public utility"
+    ],
+    "ESAB": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "ESE": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "ESI": [
+      "chemical industry"
+    ],
+    "ESNT": [
+      "Commercial & Residential Mortgage Finance"
+    ],
+    "ESS": [
+      "real estate investment trust"
+    ],
+    "ETN": [
+      "industrial manufacturing"
+    ],
+    "ETSY": [
+      "e-commerce"
+    ],
+    "EVR": [
+      "financial services"
+    ],
+    "EVRG": [
+      "electricity supply company"
+    ],
+    "EVTC": [
+      "Transaction & Payment Processing Services"
+    ],
+    "EWBC": [
+      "Regional Banks"
+    ],
+    "EXC": [
+      "energy industry"
+    ],
+    "EXE": [
+      "petroleum industry"
+    ],
+    "EXEL": [
+      "biotechnology"
+    ],
+    "EXLS": [
+      "Data Processing & Outsourced Services"
+    ],
+    "EXP": [
+      "Construction Materials"
+    ],
+    "EXPD": [
+      "logistics"
+    ],
+    "EXPE": [
+      "tourism industry"
+    ],
+    "EXR": [
+      "self storage"
+    ],
+    "EXTR": [
+      "Communications Equipment"
+    ],
+    "EYE": [
+      "Specialty Stores"
+    ],
+    "EZPW": [
+      "Consumer Finance"
+    ],
+    "F": [
+      "automotive industry"
+    ],
+    "FA": [
+      "Human Resource & Employment Services"
+    ],
+    "FAF": [
+      "financial services"
+    ],
+    "FANG": [
+      "petroleum industry"
+    ],
+    "FAST": [
+      "Trading Companies & Distributors"
+    ],
+    "FBIN": [
+      "Building Products"
+    ],
+    "FBK": [
+      "Regional Banks"
+    ],
+    "FBNC": [
+      "Regional Banks"
+    ],
+    "FBP": [
+      "Regional Banks"
+    ],
+    "FBRT": [
+      "Mortgage REITs"
+    ],
+    "FCF": [
+      "Regional Banks"
+    ],
+    "FCFS": [
+      "retail"
+    ],
+    "FCN": [
+      "professional services industry"
+    ],
+    "FCPT": [
+      "Other Specialized REITs"
+    ],
+    "FCX": [
+      "mining"
+    ],
+    "FDS": [
+      "software industry"
+    ],
+    "FDX": [
+      "logistics",
+      "transport industry"
+    ],
+    "FE": [
+      "electricity supply company"
+    ],
+    "FELE": [
+      "industrial manufacturing"
+    ],
+    "FERG": [
+      "Building Products"
+    ],
+    "FFBC": [
+      "bank"
+    ],
+    "FFIN": [
+      "Regional Banks"
+    ],
+    "FG": [
+      "Life & Health Insurance"
+    ],
+    "FHB": [
+      "Regional Banks"
+    ],
+    "FHN": [
+      "financial services"
+    ],
+    "FIBK": [
+      "Regional Banks"
+    ],
+    "FIS": [
+      "financial services"
+    ],
+    "FISV": [
+      "financial services"
+    ],
+    "FITB": [
+      "Regional Banks"
+    ],
+    "FIVN": [
+      "Application Software"
+    ],
+    "FIX": [
+      "heating, ventilation, and air conditioning"
+    ],
+    "FIZZ": [
+      "Soft Drinks & Non-alcoholic Beverages"
+    ],
+    "FLEX": [
+      "electronics"
+    ],
+    "FLO": [
+      "Packaged Foods & Meats"
+    ],
+    "FLR": [
+      "Construction & Engineering"
+    ],
+    "FLS": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "FMC": [
+      "chemical industry"
+    ],
+    "FN": [
+      "Electronic Manufacturing Services"
+    ],
+    "FNB": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "FND": [
+      "retail"
+    ],
+    "FNF": [
+      "Property & Casualty Insurance"
+    ],
+    "FORM": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "FOUR": [
+      "financial services"
+    ],
+    "FOX": [
+      "Broadcasting"
+    ],
+    "FOXA": [
+      "Broadcasting"
+    ],
+    "FOXF": [
+      "automotive industry"
+    ],
+    "FR": [
+      "Industrial REITs"
+    ],
+    "FRPT": [
+      "Packaged Foods & Meats"
+    ],
+    "FRT": [
+      "real estate investment trust"
+    ],
+    "FSS": [
+      "automotive supplier"
+    ],
+    "FTDR": [
+      "Specialized Consumer Services"
+    ],
+    "FTI": [
+      "petroleum industry"
+    ],
+    "FTNT": [
+      "computer security"
+    ],
+    "FTRE": [
+      "pharmaceutical industry"
+    ],
+    "FTV": [
+      "conglomerate"
+    ],
+    "FUL": [
+      "Specialty Chemicals"
+    ],
+    "FULT": [
+      "finance"
+    ],
+    "FUN": [
+      "hospitality industry"
+    ],
+    "G": [
+      "professional service"
+    ],
+    "GAP": [
+      "retail"
+    ],
+    "GBCI": [
+      "Regional Banks"
+    ],
+    "GBX": [
+      "Construction Machinery & Heavy Transportation Equipment"
+    ],
+    "GD": [
+      "aerospace industry",
+      "mechanical engineering",
+      "shipbuilding"
+    ],
+    "GDDY": [
+      "e-commerce",
+      "fintech"
+    ],
+    "GE": [
+      "aerospace industry"
+    ],
+    "GEF": [
+      "product packaging industry"
+    ],
+    "GEHC": [
+      "electronics",
+      "health care",
+      "industrial manufacturing",
+      "medical technology industry"
+    ],
+    "GEN": [
+      "computer security",
+      "software industry"
+    ],
+    "GEO": [
+      "Environmental & Facilities Services"
+    ],
+    "GEV": [
+      "energy industry"
+    ],
+    "GFF": [
+      "conglomerate"
+    ],
+    "GGG": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "GHC": [
+      "conglomerate"
+    ],
+    "GIII": [
+      "Apparel, Accessories & Luxury Goods"
+    ],
+    "GILD": [
+      "pharmaceutical industry"
+    ],
+    "GIS": [
+      "food industry"
+    ],
+    "GKOS": [
+      "Health Care Equipment"
+    ],
+    "GL": [
+      "financial sector",
+      "life insurance"
+    ],
+    "GLPI": [
+      "Other Specialized REITs"
+    ],
+    "GLW": [
+      "biotechnology",
+      "industrial manufacturing"
+    ],
+    "GM": [
+      "automotive industry"
+    ],
+    "GME": [
+      "retail"
+    ],
+    "GMED": [
+      "medical technology"
+    ],
+    "GNL": [
+      "Diversified REITs"
+    ],
+    "GNRC": [
+      "industrial manufacturing"
+    ],
+    "GNTX": [
+      "Automotive Parts & Equipment"
+    ],
+    "GNW": [
+      "Multi-line Insurance"
+    ],
+    "GO": [
+      "retail"
+    ],
+    "GOLF": [
+      "Leisure Products"
+    ],
+    "GOOG": [
+      "Interactive Media & Services"
+    ],
+    "GOOGL": [
+      "Interactive Media & Services"
+    ],
+    "GPI": [
+      "Automotive Retail"
+    ],
+    "GPN": [
+      "Transaction & Payment Processing Services"
+    ],
+    "GPOR": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "GRBK": [
+      "Homebuilding"
+    ],
+    "GRMN": [
+      "consumer electronics industry",
+      "software industry"
+    ],
+    "GS": [
+      "financial sector",
+      "financial service activities, except insurance and pension funding",
+      "financial services"
+    ],
+    "GSHD": [
+      "Insurance Brokers"
+    ],
+    "GT": [
+      "industrial manufacturing"
+    ],
+    "GTES": [
+      "automotive supplier"
+    ],
+    "GTY": [
+      "Retail REITs"
+    ],
+    "GVA": [
+      "Construction & Engineering"
+    ],
+    "GWRE": [
+      "Application Software"
+    ],
+    "GWW": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "GXO": [
+      "logistics"
+    ],
+    "H": [
+      "hospitality industry"
+    ],
+    "HAFC": [
+      "Regional Banks"
+    ],
+    "HALO": [
+      "biotechnology"
+    ],
+    "HAYW": [
+      "Electrical Components & Equipment"
+    ],
+    "HBAN": [
+      "economics of banking",
+      "financial services"
+    ],
+    "HCA": [
+      "health care"
+    ],
+    "HCC": [
+      "Steel"
+    ],
+    "HCI": [
+      "Property & Casualty Insurance"
+    ],
+    "HCSG": [
+      "Environmental & Facilities Services"
+    ],
+    "HE": [
+      "Electric Utilities"
+    ],
+    "HFWA": [
+      "Regional Banks"
+    ],
+    "HIG": [
+      "Property & Casualty Insurance"
+    ],
+    "HII": [
+      "shipbuilding"
+    ],
+    "HIW": [
+      "Office REITs"
+    ],
+    "HL": [
+      "mining"
+    ],
+    "HLI": [
+      "financial services",
+      "investment banking"
+    ],
+    "HLIT": [
+      "Communications Equipment"
+    ],
+    "HLNE": [
+      "Asset Management & Custody Banks"
+    ],
+    "HLT": [
+      "hospitality industry"
+    ],
+    "HLX": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "HMN": [
+      "insurance"
+    ],
+    "HNI": [
+      "industrial manufacturing"
+    ],
+    "HOG": [
+      "automotive industry",
+      "mechanical engineering"
+    ],
+    "HOMB": [
+      "financial services"
+    ],
+    "HONA": [
+      "aerospace industry"
+    ],
+    "HOOD": [
+      "financial services"
+    ],
+    "HOPE": [
+      "Regional Banks"
+    ],
+    "HP": [
+      "Oil & Gas Drilling"
+    ],
+    "HPE": [
+      "computer hardware industry",
+      "information technology industry",
+      "software industry"
+    ],
+    "HPQ": [
+      "computer hardware industry",
+      "information technology industry",
+      "software industry"
+    ],
+    "HR": [
+      "Health Care REITs"
+    ],
+    "HRB": [
+      "Specialized Consumer Services"
+    ],
+    "HRL": [
+      "food processing"
+    ],
+    "HRMY": [
+      "biotechnology"
+    ],
+    "HSTM": [
+      "Health Care Technology"
+    ],
+    "HSY": [
+      "Packaged Foods & Meats"
+    ],
+    "HTH": [
+      "financial services",
+      "insurance"
+    ],
+    "HTLD": [
+      "Cargo Ground Transportation"
+    ],
+    "HUBB": [
+      "electronics industry"
+    ],
+    "HUM": [
+      "insurance industry"
+    ],
+    "HWC": [
+      "financial sector"
+    ],
+    "HWM": [
+      "aerospace industry"
+    ],
+    "HXL": [
+      "Aerospace & Defense"
+    ],
+    "HZO": [
+      "Specialty Stores"
+    ],
+    "IART": [
+      "Health Care Equipment"
+    ],
+    "IBKR": [
+      "financial services"
+    ],
+    "IBM": [
+      "computer hardware industry",
+      "computer industry",
+      "software industry"
+    ],
+    "IBOC": [
+      "Regional Banks"
+    ],
+    "IBP": [
+      "Homebuilding"
+    ],
+    "ICE": [
+      "Financial Exchanges & Data"
+    ],
+    "ICHR": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "ICUI": [
+      "Health Care Supplies"
+    ],
+    "IDA": [
+      "Electric Utilities"
+    ],
+    "IDCC": [
+      "Communications Equipment"
+    ],
+    "IDXX": [
+      "health care"
+    ],
+    "IESC": [
+      "Construction & Engineering"
+    ],
+    "IEX": [
+      "industrial manufacturing"
+    ],
+    "IFF": [
+      "Specialty Chemicals"
+    ],
+    "IIPR": [
+      "Industrial REITs"
+    ],
+    "ILMN": [
+      "biotechnology"
+    ],
+    "INCY": [
+      "pharmaceutical industry"
+    ],
+    "INDB": [
+      "Regional Banks"
+    ],
+    "INDV": [
+      "Pharmaceuticals"
+    ],
+    "INGR": [
+      "food industry",
+      "health care industry",
+      "pulp and paper industry",
+      "textile industry"
+    ],
+    "INSP": [
+      "Health Care Equipment"
+    ],
+    "INSW": [
+      "Oil & Gas Storage & Transportation"
+    ],
+    "INTC": [
+      "electrical industry",
+      "semiconductor industry"
+    ],
+    "INTU": [
+      "enterprise software"
+    ],
+    "INVA": [
+      "Pharmaceuticals"
+    ],
+    "INVH": [
+      "real estate investment trust"
+    ],
+    "INVX": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "IOSP": [
+      "Specialty Chemicals"
+    ],
+    "IP": [
+      "pulp and paper industry"
+    ],
+    "IPAR": [
+      "Household Products"
+    ],
+    "IPGP": [
+      "Electronic Manufacturing Services"
+    ],
+    "IQV": [
+      "pharmaceutical industry"
+    ],
+    "IR": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "IRDM": [
+      "telecommunications industry"
+    ],
+    "IRM": [
+      "Other Specialized REITs"
+    ],
+    "IRT": [
+      "Multi-Family Residential REITs"
+    ],
+    "ISRG": [
+      "Health Care Equipment"
+    ],
+    "ITGR": [
+      "Health Care Equipment"
+    ],
+    "ITRI": [
+      "Electronic Equipment & Instruments"
+    ],
+    "ITT": [
+      "industrial manufacturing"
+    ],
+    "ITW": [
+      "industrial manufacturing"
+    ],
+    "IVT": [
+      "real estate investment trust"
+    ],
+    "IVZ": [
+      "financial services"
+    ],
+    "J": [
+      "professional services industry"
+    ],
+    "JAZZ": [
+      "pharmaceutical industry"
+    ],
+    "JBHT": [
+      "Cargo Ground Transportation"
+    ],
+    "JBL": [
+      "electronics"
+    ],
+    "JBSS": [
+      "Packaged Foods & Meats"
+    ],
+    "JCI": [
+      "Building Products"
+    ],
+    "JJSF": [
+      "Packaged Foods & Meats"
+    ],
+    "JKHY": [
+      "Transaction & Payment Processing Services"
+    ],
+    "JLL": [
+      "Real Estate Services"
+    ],
+    "JNJ": [
+      "medical technology industry",
+      "pharmaceutical industry"
+    ],
+    "JPM": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "JXN": [
+      "Life & Health Insurance"
+    ],
+    "KAI": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "KBH": [
+      "Homebuilding"
+    ],
+    "KBR": [
+      "construction"
+    ],
+    "KD": [
+      "IT Consulting & Other Services"
+    ],
+    "KDP": [
+      "beverage industry"
+    ],
+    "KEY": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "KEYS": [
+      "Electronic Equipment & Instruments"
+    ],
+    "KFY": [
+      "professional service"
+    ],
+    "KGS": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "KHC": [
+      "fast-moving consumer goods",
+      "food industry"
+    ],
+    "KIM": [
+      "real estate investment trust"
+    ],
+    "KKR": [
+      "asset management"
+    ],
+    "KLAC": [
+      "electronics"
+    ],
+    "KLIC": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "KMB": [
+      "personal care product"
+    ],
+    "KMI": [
+      "petroleum industry"
+    ],
+    "KMPR": [
+      "insurance"
+    ],
+    "KMT": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "KMX": [
+      "Automotive Retail"
+    ],
+    "KN": [
+      "Electronic Components"
+    ],
+    "KNF": [
+      "Construction Materials"
+    ],
+    "KNSL": [
+      "Property & Casualty Insurance"
+    ],
+    "KNTK": [
+      "Oil & Gas Storage & Transportation"
+    ],
+    "KNX": [
+      "Cargo Ground Transportation"
+    ],
+    "KO": [
+      "Soft Drinks & Non-alcoholic Beverages"
+    ],
+    "KR": [
+      "retail"
+    ],
+    "KRC": [
+      "Office REITs"
+    ],
+    "KRG": [
+      "Retail REITs"
+    ],
+    "KRMN": [
+      "Aerospace & Defense"
+    ],
+    "KRYS": [
+      "biotechnology industry"
+    ],
+    "KTB": [
+      "Apparel, Accessories & Luxury Goods"
+    ],
+    "KTOS": [
+      "weapons industry"
+    ],
+    "KWR": [
+      "chemical industry"
+    ],
+    "L": [
+      "Multi-line Insurance"
+    ],
+    "LAMR": [
+      "Advertising"
+    ],
+    "LAUR": [
+      "Education Services"
+    ],
+    "LAZ": [
+      "asset management",
+      "financial sector",
+      "financial service activities, except insurance and pension funding",
+      "investment banking"
+    ],
+    "LBRT": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "LCII": [
+      "Automotive Parts & Equipment"
+    ],
+    "LDOS": [
+      "aerospace engineering"
+    ],
+    "LEA": [
+      "Automotive Parts & Equipment"
+    ],
+    "LECO": [
+      "industrial manufacturing"
+    ],
+    "LEN": [
+      "construction"
+    ],
+    "LEU": [
+      "Coal & Consumable Fuels"
+    ],
+    "LFUS": [
+      "electronics"
+    ],
+    "LGIH": [
+      "construction"
+    ],
+    "LGND": [
+      "biotechnology"
+    ],
+    "LH": [
+      "health care"
+    ],
+    "LHX": [
+      "weapons industry"
+    ],
+    "LIF": [
+      "Application Software"
+    ],
+    "LII": [
+      "heating, ventilation, and air conditioning"
+    ],
+    "LIN": [
+      "chemical industry"
+    ],
+    "LITE": [
+      "Communications Equipment"
+    ],
+    "LIVN": [
+      "Health Care Equipment"
+    ],
+    "LKFN": [
+      "Regional Banks"
+    ],
+    "LKQ": [
+      "automotive industry"
+    ],
+    "LLY": [
+      "Pharmaceuticals"
+    ],
+    "LMAT": [
+      "Health Care Equipment"
+    ],
+    "LMT": [
+      "aerospace industry",
+      "electronics industry",
+      "weapons industry"
+    ],
+    "LNC": [
+      "Multi-line Insurance"
+    ],
+    "LNT": [
+      "public utility"
+    ],
+    "LNTH": [
+      "Health Care Supplies"
+    ],
+    "LPG": [
+      "Oil & Gas Storage & Transportation"
+    ],
+    "LPX": [
+      "construction"
+    ],
+    "LQDA": [
+      "Pharmaceuticals"
+    ],
+    "LQDT": [
+      "Diversified Support Services"
+    ],
+    "LRCX": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "LSCC": [
+      "semiconductor industry"
+    ],
+    "LSTR": [
+      "transport"
+    ],
+    "LTC": [
+      "Health Care REITs"
+    ],
+    "LTH": [
+      "Leisure Facilities"
+    ],
+    "LULU": [
+      "retail"
+    ],
+    "LUV": [
+      "air transport"
+    ],
+    "LVS": [
+      "tourism"
+    ],
+    "LW": [
+      "Packaged Foods & Meats"
+    ],
+    "LXP": [
+      "Diversified REITs"
+    ],
+    "LYB": [
+      "Specialty Chemicals"
+    ],
+    "LZ": [
+      "Research & Consulting Services"
+    ],
+    "M": [
+      "retail"
+    ],
+    "MA": [
+      "financial service activities, except insurance and pension funding",
+      "financial services"
+    ],
+    "MAA": [
+      "real estate investment trust"
+    ],
+    "MAC": [
+      "real estate investment trust"
+    ],
+    "MANH": [
+      "Application Software"
+    ],
+    "MAR": [
+      "hospitality industry",
+      "tourism industry"
+    ],
+    "MAS": [
+      "Building Products"
+    ],
+    "MATW": [
+      "Specialized Consumer Services"
+    ],
+    "MBC": [
+      "Building Products"
+    ],
+    "MBGL": [
+      "Data Processing & Outsourced Services"
+    ],
+    "MBIN": [
+      "Regional Banks"
+    ],
+    "MC": [
+      "financial services",
+      "investment banking"
+    ],
+    "MCHP": [
+      "electronics",
+      "semiconductor industry"
+    ],
+    "MCO": [
+      "financial services"
+    ],
+    "MCRI": [
+      "Casinos & Gaming"
+    ],
+    "MCY": [
+      "insurance"
+    ],
+    "MD": [
+      "Health Care Services"
+    ],
+    "MDLZ": [
+      "food industry"
+    ],
+    "MDT": [
+      "medical technology industry"
+    ],
+    "MDU": [
+      "Multi-Utilities"
+    ],
+    "MEDP": [
+      "Life Sciences Tools & Services"
+    ],
+    "MET": [
+      "insurance industry"
+    ],
+    "META": [
+      "information technology"
+    ],
+    "MFP": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "MGEE": [
+      "Electric Utilities"
+    ],
+    "MGM": [
+      "hospitality industry"
+    ],
+    "MGY": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "MHK": [
+      "conglomerate"
+    ],
+    "MHO": [
+      "Homebuilding"
+    ],
+    "MIR": [
+      "Electronic Equipment & Instruments"
+    ],
+    "MKC": [
+      "food industry"
+    ],
+    "MKSI": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "MKTX": [
+      "financial services"
+    ],
+    "MLI": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "MLKN": [
+      "industrial manufacturing"
+    ],
+    "MLM": [
+      "mining"
+    ],
+    "MMI": [
+      "Real Estate Services"
+    ],
+    "MMSI": [
+      "Health Care Supplies"
+    ],
+    "MNST": [
+      "beverage industry"
+    ],
+    "MO": [
+      "food industry"
+    ],
+    "MOG-A": [
+      "aerospace engineering"
+    ],
+    "MOH": [
+      "health care industry"
+    ],
+    "MORN": [
+      "financial services"
+    ],
+    "MPC": [
+      "petroleum industry"
+    ],
+    "MPT": [
+      "real estate investment trust"
+    ],
+    "MPWR": [
+      "semiconductor industry"
+    ],
+    "MRCY": [
+      "aerospace industry"
+    ],
+    "MRK": [
+      "pharmaceutical industry"
+    ],
+    "MRNA": [
+      "biotechnology industry",
+      "pharmaceutical industry"
+    ],
+    "MRSH": [
+      "Insurance Brokers"
+    ],
+    "MRTN": [
+      "Cargo Ground Transportation"
+    ],
+    "MRVL": [
+      "electronics",
+      "semiconductor industry"
+    ],
+    "MS": [
+      "financial sector",
+      "financial services"
+    ],
+    "MSCI": [
+      "Financial Exchanges & Data"
+    ],
+    "MSEX": [
+      "Water Utilities"
+    ],
+    "MSFT": [
+      "consumer electronics industry",
+      "software development",
+      "software industry"
+    ],
+    "MSGS": [
+      "Movies & Entertainment"
+    ],
+    "MSI": [
+      "telecommunications industry"
+    ],
+    "MSM": [
+      "Trading Companies & Distributors"
+    ],
+    "MTB": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "MTD": [
+      "Life Sciences Tools & Services"
+    ],
+    "MTDR": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "MTH": [
+      "Homebuilding"
+    ],
+    "MTUS": [
+      "Steel"
+    ],
+    "MTX": [
+      "Specialty Chemicals"
+    ],
+    "MTZ": [
+      "construction"
+    ],
+    "MU": [
+      "Semiconductors"
+    ],
+    "MUR": [
+      "petroleum industry"
+    ],
+    "MUSA": [
+      "petroleum industry"
+    ],
+    "MWA": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "MXL": [
+      "Semiconductors"
+    ],
+    "MYRG": [
+      "Construction & Engineering"
+    ],
+    "MZTI": [
+      "Packaged Foods & Meats"
+    ],
+    "NABL": [
+      "Systems Software"
+    ],
+    "NATL": [
+      "Transaction & Payment Processing Services"
+    ],
+    "NAVI": [
+      "financial services"
+    ],
+    "NBHC": [
+      "Regional Banks"
+    ],
+    "NBIX": [
+      "biotechnology"
+    ],
+    "NBTB": [
+      "Regional Banks"
+    ],
+    "NCLH": [
+      "Hotels, Resorts & Cruise Lines"
+    ],
+    "NDAQ": [
+      "financial services",
+      "fintech"
+    ],
+    "NDSN": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "NE": [
+      "petroleum industry"
+    ],
+    "NEM": [
+      "mining"
+    ],
+    "NEO": [
+      "biotechnology"
+    ],
+    "NEOG": [
+      "Health Care Supplies"
+    ],
+    "NEU": [
+      "chemical industry"
+    ],
+    "NFLX": [
+      "Movies & Entertainment"
+    ],
+    "NGVT": [
+      "Specialty Chemicals"
+    ],
+    "NHC": [
+      "Health Care Facilities"
+    ],
+    "NHI": [
+      "Health Care REITs"
+    ],
+    "NI": [
+      "public utility"
+    ],
+    "NIC": [
+      "Regional Banks"
+    ],
+    "NJR": [
+      "Gas Utilities"
+    ],
+    "NKE": [
+      "clothing industry",
+      "retail"
+    ],
+    "NLY": [
+      "real estate investment trust"
+    ],
+    "NMIH": [
+      "Commercial & Residential Mortgage Finance"
+    ],
+    "NNN": [
+      "real estate investment trust"
+    ],
+    "NOC": [
+      "aerospace industry",
+      "aircraft industry",
+      "electronics industry",
+      "shipbuilding",
+      "weapons industry"
+    ],
+    "NOG": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "NOV": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "NOVT": [
+      "Electronic Equipment & Instruments"
+    ],
+    "NOW": [
+      "enterprise software"
+    ],
+    "NPK": [
+      "Aerospace & Defense"
+    ],
+    "NPO": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "NRG": [
+      "electricity supply company"
+    ],
+    "NSC": [
+      "transport"
+    ],
+    "NSIT": [
+      "Technology Distributors"
+    ],
+    "NSP": [
+      "professional service"
+    ],
+    "NSSC": [
+      "Electronic Equipment & Instruments"
+    ],
+    "NTCT": [
+      "Communications Equipment"
+    ],
+    "NTRS": [
+      "financial services"
+    ],
+    "NTST": [
+      "Retail REITs"
+    ],
+    "NUE": [
+      "iron and steel industry"
+    ],
+    "NVDA": [
+      "semiconductor industry"
+    ],
+    "NVR": [
+      "Homebuilding"
+    ],
+    "NVST": [
+      "Health Care Supplies"
+    ],
+    "NVT": [
+      "Electrical Components & Equipment"
+    ],
+    "NWBI": [
+      "Regional Banks"
+    ],
+    "NWE": [
+      "public utility"
+    ],
+    "NWN": [
+      "Gas Utilities"
+    ],
+    "NWS": [
+      "Publishing"
+    ],
+    "NWSA": [
+      "Publishing"
+    ],
+    "NX": [
+      "Building Products"
+    ],
+    "NXPI": [
+      "electronics"
+    ],
+    "NXRT": [
+      "Multi-Family Residential REITs"
+    ],
+    "NXST": [
+      "Broadcasting",
+      "telecommunications industry"
+    ],
+    "NXT": [
+      "Electrical Components & Equipment"
+    ],
+    "O": [
+      "real estate investment trust"
+    ],
+    "OC": [
+      "Building Products"
+    ],
+    "ODFL": [
+      "Cargo Ground Transportation"
+    ],
+    "OFG": [
+      "financial services"
+    ],
+    "OGE": [
+      "Multi-Utilities"
+    ],
+    "OGN": [
+      "pharmaceutical industry"
+    ],
+    "OGS": [
+      "public utility"
+    ],
+    "OHI": [
+      "Health Care REITs"
+    ],
+    "OII": [
+      "aerospace industry"
+    ],
+    "OKE": [
+      "public utility"
+    ],
+    "OKTA": [
+      "software industry"
+    ],
+    "OLED": [
+      "computer hardware industry"
+    ],
+    "OLN": [
+      "chemical industry"
+    ],
+    "OMC": [
+      "mass media"
+    ],
+    "OMCL": [
+      "Health Care Technology"
+    ],
+    "ON": [
+      "semiconductor industry"
+    ],
+    "ONB": [
+      "finance"
+    ],
+    "ONTO": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "OPCH": [
+      "Health Care Facilities"
+    ],
+    "OPLN": [
+      "Diversified Support Services"
+    ],
+    "ORA": [
+      "Renewable Electricity"
+    ],
+    "ORCL": [
+      "software development"
+    ],
+    "ORI": [
+      "insurance"
+    ],
+    "ORLY": [
+      "retail"
+    ],
+    "OSIS": [
+      "Electronic Equipment & Instruments"
+    ],
+    "OSK": [
+      "Construction Machinery & Heavy Transportation Equipment"
+    ],
+    "OSW": [
+      "Leisure Facilities"
+    ],
+    "OTIS": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "OTTR": [
+      "Electric Utilities"
+    ],
+    "OVV": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "OXY": [
+      "petroleum industry"
+    ],
+    "OZK": [
+      "financial services"
+    ],
+    "PAG": [
+      "automotive industry"
+    ],
+    "PAHC": [
+      "Pharmaceuticals"
+    ],
+    "PANW": [
+      "computer security"
+    ],
+    "PARR": [
+      "Oil & Gas Refining & Marketing"
+    ],
+    "PATH": [
+      "software industry"
+    ],
+    "PATK": [
+      "Automotive Parts & Equipment"
+    ],
+    "PAYO": [
+      "Transaction & Payment Processing Services"
+    ],
+    "PAYX": [
+      "Human Resource & Employment Services"
+    ],
+    "PB": [
+      "economics of banking"
+    ],
+    "PBF": [
+      "petroleum industry"
+    ],
+    "PBH": [
+      "Pharmaceuticals"
+    ],
+    "PCAR": [
+      "automotive industry"
+    ],
+    "PCG": [
+      "Multi-Utilities"
+    ],
+    "PCRX": [
+      "Pharmaceuticals"
+    ],
+    "PDFS": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "PEB": [
+      "Hotel & Resort REITs"
+    ],
+    "PECO": [
+      "real estate investment trust"
+    ],
+    "PEG": [
+      "public utility"
+    ],
+    "PEGA": [
+      "software industry"
+    ],
+    "PEN": [
+      "Health Care Equipment"
+    ],
+    "PENG": [
+      "Semiconductors"
+    ],
+    "PENN": [
+      "Casinos & Gaming"
+    ],
+    "PEP": [
+      "beverage industry",
+      "fast-moving consumer goods",
+      "food industry"
+    ],
+    "PFBC": [
+      "financial services"
+    ],
+    "PFE": [
+      "pharmaceutical industry"
+    ],
+    "PFG": [
+      "Life & Health Insurance"
+    ],
+    "PFGC": [
+      "Food Distributors"
+    ],
+    "PFS": [
+      "Regional Banks"
+    ],
+    "PG": [
+      "fast-moving consumer goods",
+      "pharmaceutical industry"
+    ],
+    "PGNY": [
+      "Health Care Services"
+    ],
+    "PH": [
+      "industrial manufacturing"
+    ],
+    "PHIN": [
+      "Automotive Retail"
+    ],
+    "PHM": [
+      "Homebuilding"
+    ],
+    "PI": [
+      "Electronic Equipment & Instruments"
+    ],
+    "PII": [
+      "Leisure Products"
+    ],
+    "PIPR": [
+      "financial services"
+    ],
+    "PK": [
+      "hospitality industry"
+    ],
+    "PLAB": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "PLD": [
+      "real estate investment trust"
+    ],
+    "PLMR": [
+      "Property & Casualty Insurance"
+    ],
+    "PLNT": [
+      "Leisure Facilities"
+    ],
+    "PLUS": [
+      "Technology Distributors"
+    ],
+    "PLXS": [
+      "Electronic Manufacturing Services"
+    ],
+    "PM": [
+      "fast-moving consumer goods"
+    ],
+    "PMT": [
+      "Mortgage REITs"
+    ],
+    "PNC": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "PNFP": [
+      "finance"
+    ],
+    "PNR": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "PNW": [
+      "electricity supply company"
+    ],
+    "PODD": [
+      "Health Care Equipment"
+    ],
+    "POR": [
+      "public utility"
+    ],
+    "POST": [
+      "food processing"
+    ],
+    "POWI": [
+      "Semiconductors"
+    ],
+    "POWL": [
+      "Electrical Components & Equipment"
+    ],
+    "PPL": [
+      "electricity supply company"
+    ],
+    "PPLI": [
+      "Interactive Media & Services"
+    ],
+    "PR": [
+      "petroleum industry"
+    ],
+    "PRDO": [
+      "Education Services"
+    ],
+    "PRG": [
+      "Consumer Finance"
+    ],
+    "PRGO": [
+      "pharmaceutical industry"
+    ],
+    "PRGS": [
+      "Systems Software"
+    ],
+    "PRI": [
+      "financial services"
+    ],
+    "PRIM": [
+      "Construction & Engineering"
+    ],
+    "PRK": [
+      "Regional Banks"
+    ],
+    "PRLB": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "PRSU": [
+      "Hotels, Resorts & Cruise Lines"
+    ],
+    "PRU": [
+      "financial sector",
+      "life insurance"
+    ],
+    "PRVA": [
+      "Health Care Services"
+    ],
+    "PSA": [
+      "real estate investment trust",
+      "self storage"
+    ],
+    "PSN": [
+      "computer security",
+      "construction",
+      "information technology",
+      "software industry"
+    ],
+    "PSX": [
+      "petroleum industry"
+    ],
+    "PTC": [
+      "software industry"
+    ],
+    "PTCT": [
+      "Pharmaceuticals"
+    ],
+    "PTEN": [
+      "Oil & Gas Drilling"
+    ],
+    "PTGX": [
+      "biotechnology"
+    ],
+    "PTON": [
+      "Leisure Products"
+    ],
+    "PVH": [
+      "clothing industry",
+      "textile industry"
+    ],
+    "PWR": [
+      "Construction & Engineering"
+    ],
+    "PYPL": [
+      "fintech"
+    ],
+    "PZZA": [
+      "restaurant"
+    ],
+    "Q": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "QCOM": [
+      "semiconductor industry",
+      "telecommunications"
+    ],
+    "QDEL": [
+      "Health Care Supplies"
+    ],
+    "QLYS": [
+      "computer security"
+    ],
+    "QNST": [
+      "Interactive Media & Services"
+    ],
+    "QRVO": [
+      "Semiconductors"
+    ],
+    "QTWO": [
+      "Application Software"
+    ],
+    "R": [
+      "logistics"
+    ],
+    "RAL": [
+      "Electronic Equipment & Instruments"
+    ],
+    "RAMP": [
+      "Application Software"
+    ],
+    "RBA": [
+      "Diversified Support Services"
+    ],
+    "RBC": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "RCUS": [
+      "pharmaceutical industry"
+    ],
+    "RDDT": [
+      "Publishing"
+    ],
+    "RDN": [
+      "Property & Casualty Insurance"
+    ],
+    "RDNT": [
+      "Health Care Services"
+    ],
+    "REG": [
+      "real estate investment trust"
+    ],
+    "REGN": [
+      "pharmaceutical industry"
+    ],
+    "RELY": [
+      "Internet industry"
+    ],
+    "RES": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "REX": [
+      "Oil & Gas Refining & Marketing"
+    ],
+    "REXR": [
+      "Industrial REITs"
+    ],
+    "REYN": [
+      "Household Products"
+    ],
+    "REZI": [
+      "Trading Companies & Distributors"
+    ],
+    "RF": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "RGA": [
+      "insurance industry"
+    ],
+    "RGEN": [
+      "pharmaceutical industry"
+    ],
+    "RGLD": [
+      "mining"
+    ],
+    "RHI": [
+      "Human Resource & Employment Services"
+    ],
+    "RHP": [
+      "real estate investment trust"
+    ],
+    "RITM": [
+      "financial services"
+    ],
+    "RL": [
+      "clothing industry"
+    ],
+    "RLI": [
+      "insurance industry"
+    ],
+    "RMBS": [
+      "Semiconductors"
+    ],
+    "RMD": [
+      "Health Care Equipment"
+    ],
+    "RNG": [
+      "Application Software"
+    ],
+    "RNST": [
+      "Regional Banks"
+    ],
+    "ROAD": [
+      "Construction & Engineering"
+    ],
+    "ROCK": [
+      "Building Products"
+    ],
+    "ROG": [
+      "Electronic Components"
+    ],
+    "ROIV": [
+      "pharmaceutical industry"
+    ],
+    "ROK": [
+      "Electrical Components & Equipment"
+    ],
+    "ROKU": [
+      "Broadcasting",
+      "consumer electronics industry"
+    ],
+    "ROP": [
+      "conglomerate"
+    ],
+    "ROST": [
+      "retail"
+    ],
+    "RRC": [
+      "petroleum industry"
+    ],
+    "RRR": [
+      "Casinos & Gaming"
+    ],
+    "RRX": [
+      "Electrical Components & Equipment"
+    ],
+    "RS": [
+      "Steel"
+    ],
+    "RSI": [
+      "Casinos & Gaming"
+    ],
+    "RTX": [
+      "aerospace industry",
+      "weapons industry"
+    ],
+    "RUSHA": [
+      "automotive industry"
+    ],
+    "RVTY": [
+      "biotechnology"
+    ],
+    "RXO": [
+      "Cargo Ground Transportation"
+    ],
+    "RYAN": [
+      "Insurance Brokers"
+    ],
+    "SABR": [
+      "Hotels, Resorts & Cruise Lines"
+    ],
+    "SAFE": [
+      "Other Specialized REITs"
+    ],
+    "SAFT": [
+      "Property & Casualty Insurance"
+    ],
+    "SAH": [
+      "Automotive Retail"
+    ],
+    "SAIA": [
+      "transport industry"
+    ],
+    "SAIC": [
+      "Diversified Support Services"
+    ],
+    "SANM": [
+      "Electronic Manufacturing Services"
+    ],
+    "SARO": [
+      "Aerospace & Defense"
+    ],
+    "SBAC": [
+      "telecommunications industry"
+    ],
+    "SBCF": [
+      "Regional Banks"
+    ],
+    "SBH": [
+      "Specialty Stores"
+    ],
+    "SBRA": [
+      "Health Care REITs"
+    ],
+    "SBSI": [
+      "Regional Banks"
+    ],
+    "SCHL": [
+      "Publishing"
+    ],
+    "SCHW": [
+      "financial services"
+    ],
+    "SCI": [
+      "Specialized Consumer Services"
+    ],
+    "SCSC": [
+      "Technology Distributors"
+    ],
+    "SDGR": [
+      "Health Care Services"
+    ],
+    "SEI": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "SEIC": [
+      "financial services"
+    ],
+    "SEZL": [
+      "fintech"
+    ],
+    "SF": [
+      "finance",
+      "financial services"
+    ],
+    "SFBS": [
+      "Regional Banks"
+    ],
+    "SFNC": [
+      "Regional Banks"
+    ],
+    "SHAK": [
+      "Restaurants"
+    ],
+    "SHC": [
+      "Health Care Services"
+    ],
+    "SHEN": [
+      "mobile phone industry",
+      "telecommunications industry"
+    ],
+    "SHO": [
+      "Hotel & Resort REITs"
+    ],
+    "SHOO": [
+      "Footwear"
+    ],
+    "SHW": [
+      "chemical industry"
+    ],
+    "SIG": [
+      "retail"
+    ],
+    "SIGI": [
+      "Property & Casualty Insurance"
+    ],
+    "SITM": [
+      "Semiconductors"
+    ],
+    "SJM": [
+      "Packaged Foods & Meats"
+    ],
+    "SKT": [
+      "Retail REITs"
+    ],
+    "SKY": [
+      "Homebuilding"
+    ],
+    "SKYW": [
+      "transport"
+    ],
+    "SLAB": [
+      "Semiconductors"
+    ],
+    "SLB": [
+      "petroleum industry"
+    ],
+    "SLG": [
+      "real estate investment trust"
+    ],
+    "SLGN": [
+      "product packaging industry"
+    ],
+    "SLM": [
+      "Consumer Finance"
+    ],
+    "SM": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "SMCI": [
+      "computer hardware industry",
+      "computer industry"
+    ],
+    "SMG": [
+      "industrial manufacturing"
+    ],
+    "SMP": [
+      "Automotive Parts & Equipment"
+    ],
+    "SMPL": [
+      "Packaged Foods & Meats"
+    ],
+    "SMTC": [
+      "Semiconductors"
+    ],
+    "SNA": [
+      "industrial manufacturing"
+    ],
+    "SNDK": [
+      "computer hardware industry",
+      "semiconductor industry"
+    ],
+    "SNDR": [
+      "logistics"
+    ],
+    "SNEX": [
+      "financial services"
+    ],
+    "SNPS": [
+      "software industry"
+    ],
+    "SO": [
+      "energy industry"
+    ],
+    "SOLS": [
+      "Specialty Chemicals"
+    ],
+    "SOLV": [
+      "health care"
+    ],
+    "SON": [
+      "product packaging industry"
+    ],
+    "SONO": [
+      "consumer electronics industry"
+    ],
+    "SPG": [
+      "real estate investment trust"
+    ],
+    "SPGI": [
+      "financial services"
+    ],
+    "SPHR": [
+      "Movies & Entertainment"
+    ],
+    "SPSC": [
+      "Application Software"
+    ],
+    "SPXC": [
+      "conglomerate"
+    ],
+    "SR": [
+      "Gas Utilities"
+    ],
+    "SRE": [
+      "public utility"
+    ],
+    "SRPT": [
+      "pharmaceutical industry"
+    ],
+    "SSB": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "SSD": [
+      "construction"
+    ],
+    "ST": [
+      "Electrical Components & Equipment"
+    ],
+    "STAA": [
+      "Health Care Equipment"
+    ],
+    "STAG": [
+      "Industrial REITs"
+    ],
+    "STBA": [
+      "Regional Banks"
+    ],
+    "STC": [
+      "financial services"
+    ],
+    "STE": [
+      "health care industry"
+    ],
+    "STEP": [
+      "financial services"
+    ],
+    "STLD": [
+      "iron and steel industry"
+    ],
+    "STRA": [
+      "Education Services"
+    ],
+    "STRL": [
+      "Construction & Engineering"
+    ],
+    "STT": [
+      "financial services"
+    ],
+    "STWD": [
+      "Mortgage REITs"
+    ],
+    "SUI": [
+      "real estate investment trust"
+    ],
+    "SUPN": [
+      "Pharmaceuticals"
+    ],
+    "SW": [
+      "product packaging industry"
+    ],
+    "SWKS": [
+      "semiconductor industry"
+    ],
+    "SWX": [
+      "Gas Utilities"
+    ],
+    "SXI": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "SXT": [
+      "Specialty Chemicals"
+    ],
+    "SYF": [
+      "financial services"
+    ],
+    "SYK": [
+      "medical technology"
+    ],
+    "SYNA": [
+      "computer hardware industry"
+    ],
+    "SYY": [
+      "wholesale"
+    ],
+    "T": [
+      "telecommunications industry"
+    ],
+    "TALO": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "TBBK": [
+      "Regional Banks"
+    ],
+    "TCBI": [
+      "Regional Banks"
+    ],
+    "TDC": [
+      "IT Consulting & Other Services"
+    ],
+    "TDG": [
+      "aerospace industry",
+      "industrial manufacturing"
+    ],
+    "TDS": [
+      "telecommunications"
+    ],
+    "TDY": [
+      "conglomerate"
+    ],
+    "TECH": [
+      "biotechnology"
+    ],
+    "TEL": [
+      "electronics"
+    ],
+    "TER": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "TEX": [
+      "manufacture of machinery and equipment"
+    ],
+    "TFC": [
+      "financial services"
+    ],
+    "TFIN": [
+      "Regional Banks"
+    ],
+    "TGT": [
+      "retail"
+    ],
+    "TGTX": [
+      "biotechnology"
+    ],
+    "THC": [
+      "health care"
+    ],
+    "THG": [
+      "insurance"
+    ],
+    "THRM": [
+      "automotive industry"
+    ],
+    "TILE": [
+      "textile industry"
+    ],
+    "TJX": [
+      "retail"
+    ],
+    "TKO": [
+      "mass media"
+    ],
+    "TKR": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "TLN": [
+      "energy industry"
+    ],
+    "TMDX": [
+      "Health Care Equipment"
+    ],
+    "TMO": [
+      "biotechnology industry"
+    ],
+    "TMP": [
+      "financial services"
+    ],
+    "TMUS": [
+      "mobile phone industry",
+      "telecommunications industry"
+    ],
+    "TNC": [
+      "Industrial Machinery & Supplies & Components"
+    ],
+    "TNDM": [
+      "Health Care Equipment"
+    ],
+    "TNL": [
+      "hospitality industry"
+    ],
+    "TOL": [
+      "Homebuilding"
+    ],
+    "TOST": [
+      "Transaction & Payment Processing Services"
+    ],
+    "TPC": [
+      "Construction & Engineering"
+    ],
+    "TPL": [
+      "Oil & Gas Exploration & Production"
+    ],
+    "TPR": [
+      "clothing industry"
+    ],
+    "TR": [
+      "Packaged Foods & Meats"
+    ],
+    "TREX": [
+      "Building Products"
+    ],
+    "TRGP": [
+      "Oil & Gas Storage & Transportation"
+    ],
+    "TRIP": [
+      "Publishing",
+      "tourism",
+      "tourism industry"
+    ],
+    "TRMB": [
+      "Application Software"
+    ],
+    "TRMK": [
+      "Regional Banks"
+    ],
+    "TRN": [
+      "conglomerate"
+    ],
+    "TRNO": [
+      "Industrial REITs"
+    ],
+    "TROW": [
+      "asset management"
+    ],
+    "TRST": [
+      "Regional Banks"
+    ],
+    "TRU": [
+      "information technology",
+      "information technology industry"
+    ],
+    "TRV": [
+      "Property & Casualty Insurance"
+    ],
+    "TSCO": [
+      "retail"
+    ],
+    "TSLA": [
+      "automotive industry"
+    ],
+    "TT": [
+      "Building Products"
+    ],
+    "TTD": [
+      "Advertising"
+    ],
+    "TTEK": [
+      "professional service"
+    ],
+    "TWLO": [
+      "software development",
+      "software industry"
+    ],
+    "TXN": [
+      "electronics",
+      "semiconductor industry"
+    ],
+    "TXNM": [
+      "Electric Utilities"
+    ],
+    "TXT": [
+      "automotive industry"
+    ],
+    "TYL": [
+      "software industry"
+    ],
+    "UA": [
+      "Apparel, Accessories & Luxury Goods"
+    ],
+    "UAA": [
+      "Apparel, Accessories & Luxury Goods"
+    ],
+    "UAL": [
+      "air transport"
+    ],
+    "UBER": [
+      "information technology"
+    ],
+    "UBSI": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "UCB": [
+      "Regional Banks"
+    ],
+    "UCTT": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "UDR": [
+      "real estate investment trust"
+    ],
+    "UE": [
+      "Retail REITs"
+    ],
+    "UFCS": [
+      "Property & Casualty Insurance"
+    ],
+    "UFPI": [
+      "Building Products"
+    ],
+    "UFPT": [
+      "Health Care Equipment"
+    ],
+    "UGI": [
+      "energy industry"
+    ],
+    "UHS": [
+      "Health Care Facilities"
+    ],
+    "ULS": [
+      "Research & Consulting Services"
+    ],
+    "ULTA": [
+      "cosmetics industry"
+    ],
+    "UMBF": [
+      "Regional Banks"
+    ],
+    "UNIT": [
+      "telecommunications"
+    ],
+    "UNM": [
+      "Life & Health Insurance"
+    ],
+    "UNP": [
+      "transport"
+    ],
+    "UPS": [
+      "logistics"
+    ],
+    "UPWK": [
+      "Human Resource & Employment Services"
+    ],
+    "URBN": [
+      "retail"
+    ],
+    "USB": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "USFD": [
+      "food industry"
+    ],
+    "USLM": [
+      "Construction Materials"
+    ],
+    "USPH": [
+      "Health Care Facilities"
+    ],
+    "UTHR": [
+      "biotechnology"
+    ],
+    "UTL": [
+      "public utility"
+    ],
+    "V": [
+      "financial services"
+    ],
+    "VAC": [
+      "tourism"
+    ],
+    "VAL": [
+      "Oil & Gas Drilling"
+    ],
+    "VC": [
+      "automotive supplier"
+    ],
+    "VCEL": [
+      "biotechnology"
+    ],
+    "VCTR": [
+      "Asset Management & Custody Banks"
+    ],
+    "VCYT": [
+      "Health Care Services"
+    ],
+    "VECO": [
+      "Semiconductor Materials & Equipment"
+    ],
+    "VEEV": [
+      "software industry"
+    ],
+    "VFC": [
+      "clothing industry"
+    ],
+    "VGNT": [
+      "Other Specialty Retail"
+    ],
+    "VIAV": [
+      "Communications Equipment"
+    ],
+    "VICR": [
+      "electronics industry"
+    ],
+    "VIR": [
+      "biotechnology industry"
+    ],
+    "VIRT": [
+      "Financial Exchanges & Data"
+    ],
+    "VLO": [
+      "petroleum industry"
+    ],
+    "VLTO": [
+      "Environmental & Facilities Services"
+    ],
+    "VLY": [
+      "financial services"
+    ],
+    "VMI": [
+      "industrial manufacturing"
+    ],
+    "VMRK": [
+      "real estate industry"
+    ],
+    "VNO": [
+      "real estate investment trust"
+    ],
+    "VNOM": [
+      "Oil & Gas Storage & Transportation"
+    ],
+    "VNT": [
+      "Electronic Equipment & Instruments"
+    ],
+    "VOYA": [
+      "financial services"
+    ],
+    "VRRM": [
+      "Data Processing & Outsourced Services"
+    ],
+    "VRSN": [
+      "telecommunications"
+    ],
+    "VRT": [
+      "electrical industry",
+      "industrial manufacturing"
+    ],
+    "VRTS": [
+      "Asset Management & Custody Banks"
+    ],
+    "VRTX": [
+      "biotechnology industry",
+      "health care industry",
+      "pharmaceutical industry"
+    ],
+    "VSAT": [
+      "Communications Equipment"
+    ],
+    "VSEC": [
+      "Aerospace & Defense"
+    ],
+    "VSH": [
+      "electronics"
+    ],
+    "VST": [
+      "Electric Utilities"
+    ],
+    "VSTS": [
+      "Diversified Support Services"
+    ],
+    "VSXY": [
+      "clothing industry"
+    ],
+    "VTOL": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "VTR": [
+      "Health Care REITs"
+    ],
+    "VTRS": [
+      "health care industry",
+      "pharmaceutical industry"
+    ],
+    "VVV": [
+      "chemical industry"
+    ],
+    "VVX": [
+      "Aerospace & Defense"
+    ],
+    "VZ": [
+      "telecommunications industry"
+    ],
+    "WAB": [
+      "transport industry"
+    ],
+    "WABC": [
+      "economics of banking"
+    ],
+    "WAFD": [
+      "Regional Banks"
+    ],
+    "WAL": [
+      "bank"
+    ],
+    "WAY": [
+      "Health Care Technology"
+    ],
+    "WBD": [
+      "mass media"
+    ],
+    "WD": [
+      "Commercial & Residential Mortgage Finance"
+    ],
+    "WDAY": [
+      "software industry"
+    ],
+    "WDFC": [
+      "chemical industry"
+    ],
+    "WEC": [
+      "Electric Utilities"
+    ],
+    "WELL": [
+      "real estate investment trust"
+    ],
+    "WEN": [
+      "restaurant"
+    ],
+    "WERN": [
+      "Cargo Ground Transportation"
+    ],
+    "WEX": [
+      "Transaction & Payment Processing Services"
+    ],
+    "WFC": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "WFRD": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "WGO": [
+      "automotive industry"
+    ],
+    "WH": [
+      "hospitality industry"
+    ],
+    "WHD": [
+      "Oil & Gas Equipment & Services"
+    ],
+    "WINA": [
+      "Other Specialty Retail"
+    ],
+    "WING": [
+      "restaurant"
+    ],
+    "WKC": [
+      "Oil & Gas Refining & Marketing"
+    ],
+    "WLK": [
+      "chemical industry",
+      "petroleum industry"
+    ],
+    "WLY": [
+      "Publishing"
+    ],
+    "WM": [
+      "Environmental & Facilities Services"
+    ],
+    "WMB": [
+      "petroleum industry"
+    ],
+    "WMS": [
+      "Building Products"
+    ],
+    "WMT": [
+      "retail",
+      "wholesale"
+    ],
+    "WOR": [
+      "Building Products"
+    ],
+    "WPC": [
+      "real estate investment trust"
+    ],
+    "WRB": [
+      "insurance"
+    ],
+    "WRBY": [
+      "retail"
+    ],
+    "WRLD": [
+      "Consumer Finance"
+    ],
+    "WS": [
+      "Steel"
+    ],
+    "WSBC": [
+      "economics of banking",
+      "financial sector",
+      "financial services"
+    ],
+    "WSFS": [
+      "Regional Banks"
+    ],
+    "WSO": [
+      "heating, ventilation, and air conditioning"
+    ],
+    "WST": [
+      "Health Care Supplies"
+    ],
+    "WT": [
+      "Asset Management & Custody Banks"
+    ],
+    "WTFC": [
+      "financial services"
+    ],
+    "WTRG": [
+      "Water Utilities"
+    ],
+    "WTS": [
+      "Building Products"
+    ],
+    "WU": [
+      "financial sector",
+      "financial services",
+      "telecommunications industry"
+    ],
+    "WWD": [
+      "aerospace engineering"
+    ],
+    "WWW": [
+      "textile industry"
+    ],
+    "WY": [
+      "pulp and paper industry"
+    ],
+    "WYNN": [
+      "Casinos & Gaming"
+    ],
+    "XEL": [
+      "public utility"
+    ],
+    "XHR": [
+      "Hotel & Resort REITs"
+    ],
+    "XNCR": [
+      "biotechnology"
+    ],
+    "XOM": [
+      "petroleum industry"
+    ],
+    "XPEL": [
+      "Automotive Parts & Equipment"
+    ],
+    "XPO": [
+      "logistics",
+      "transport industry"
+    ],
+    "XYL": [
+      "industrial manufacturing"
+    ],
+    "XYZ": [
+      "financial services"
+    ],
+    "YELP": [
+      "information technology"
+    ],
+    "YETI": [
+      "Leisure Products"
+    ],
+    "YOU": [
+      "Application Software"
+    ],
+    "YUM": [
+      "retail"
+    ],
+    "ZBRA": [
+      "computer hardware industry"
+    ],
+    "ZD": [
+      "Internet industry"
+    ],
+    "ZION": [
+      "financial services"
+    ],
+    "ZTS": [
+      "pharmaceutical industry"
+    ],
+    "ZWS": [
+      "Industrial Machinery & Supplies & Components"
+    ]
+  }
+}
