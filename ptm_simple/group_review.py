@@ -1,5 +1,25 @@
 """Group review for the simple process: is each valuation flag justified?
 
+The table's three columns are THREE INDEPENDENT LAYERS, derived from three
+different inputs — none of them from each other:
+
+- SIDE (long/short/neutral) comes from the name's OWN 90d estimate revisions:
+  rev90 > +0.5% -> long, < -0.5% -> short, else neutral — the same hard
+  eligibility rule as analyze-all's coverage reports and the book's selection.
+  The flag is never consulted for the side.
+- FLAG (premium/discount/mixed/fair) comes from the quant table: the name's
+  P/E and PEG versus ITS THEME'S median (quant.py `_flag_rows`). It says where
+  the name sits relative to peers, nothing about direction.
+- VERDICT (justified / not justified / uncertain) is the LLM's judgment of the
+  FLAG against the print-focused forward case. It evaluates the market's
+  pricing, not the trade: "not justified" on a PREMIUM means the forward case
+  does not support paying the multiple (bearish fact, textbook-short setup);
+  "not justified" on a DISCOUNT means the market's cheapness looks wrong — the
+  deterioration is transitory or the catalysts contradict it (bullish fact,
+  textbook-long setup). So discount -> short is NOT the mapping: the typical
+  long is long+discount with a "not justified" discount, and the typical short
+  is short+premium with a "not justified" premium.
+
 One LLM pass per non-COLD theme, run AFTER the coverage reports exist. The
 packet per member is built from the PRINT-FOCUSED qual (print_qual.py) — the
 fresh EDGAR research pack, the name's own estimate direction, consensus numbers,
@@ -39,7 +59,10 @@ _SYSTEM = (
     "volume or pricing, dated events, peer-print read-throughs. Rules: a premium is justified when the "
     "forward case grows into it and unjustified when the catalysts point the other way; a discount is "
     "justified when the deterioration is real and durable and unjustified when it is transitory or the "
-    "catalysts contradict it. PERIOD DISCIPLINE: today's date is given; quarters that already ended are "
+    "catalysts contradict it. The SIDE and the FLAG are independent inputs — side from the name's own "
+    "revisions, flag from valuation versus the theme — and the verdict judges the FLAG, not the side: an "
+    "unjustified discount on a long is bullish (the market's cheapness is wrong), an unjustified premium "
+    "on a short is bullish for that short. PERIOD DISCIPLINE: today's date is given; quarters that already ended are "
     "the factual base, never an open question. Never invent a number that is not given. No price targets, "
     "no technicals, no price action. The flag ratios are the input under test — do not justify a flag BY "
     "the multiple itself ('it's expensive because it trades high') but by the fundamentals and catalysts. "
@@ -165,6 +188,8 @@ def review_theme(theme_row: dict, quant_by_ticker: dict[str, dict], ref: date) -
         ticker = m["ticker"]
         qrow = quant_by_ticker.get(ticker) or {}
         rev = qrow.get("rev90") or m.get("rev90")
+        # Side is derived from the name's OWN revisions only — never from the
+        # flag (see the module docstring for how the three layers relate).
         side = "long" if (rev or 0) > 0.5 else "short" if (rev or 0) < -0.5 else None
         flagged = qrow.get("flag") not in (None, "n/a")
         if not m.get("covered") and rev is None and not flagged:
@@ -281,13 +306,19 @@ def _review_md(rev: dict, ref: date) -> str:
     lines += [
         "",
         "## How to read this",
-        "- The flag compares the name's P/E and PEG with its theme's median (see the quant table) — it says "
-        "*where the name sits*, never whether that is right.",
-        "- The verdict judges the flag against the PRINT-FOCUSED case (fresh EDGAR filings, guidance, "
-        "consensus revisions, dated catalysts, peer prints) — not the deep dive, which can lag the calendar.",
-        "- `not justified` on a premium means the forward case does not support paying the multiple; on a "
-        "discount it means the weakness looks transitory. Either way, read the member's coverage report and "
-        "the dive before acting.",
+        "- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions "
+        "(rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see "
+        "the quant table), and the **Verdict** judges the flag against the print-focused case — never the "
+        "dive, which can lag the calendar.",
+        "- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the "
+        "forward case does not support paying the multiple (supports a short, warns a long); `not justified` "
+        "on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); "
+        "`justified` says the market's pricing matches the fundamentals either way.",
+        "- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), "
+        "long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium "
+        "(paying up against the theme) and short + discount + `justified` (cheap for a real reason).",
+        "- `not justified` never ranks or gates anything — read the member's print qual and coverage report "
+        "before acting.",
     ]
     theme_dir = simple_ideas_dir(str(rev["theme"]).replace("/", "-").replace(" ", "_"))
     path = theme_dir / f"_GROUP_REVIEW_{ref.isoformat()}.md"
