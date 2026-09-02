@@ -2048,7 +2048,7 @@
       if (st.running) simplePollTimer = setTimeout(pollSimple, 2000);
       else if (!st.finished && !st.result) simplePollTimer = setTimeout(pollSimple, 10000);
 
-      const buttons = ["simple-build-xlsx", "simple-build-wiki", "simple-radar-go", "simple-run-go", "simple-run-all", "simple-refresh-fund", "simple-analyze-all", "simple-group-review"].map((id) => el.querySelector("#" + id)).filter(Boolean);
+      const buttons = ["simple-build-xlsx", "simple-build-wiki", "simple-radar-go", "simple-refresh-fund", "simple-analyze-all", "simple-group-review"].map((id) => el.querySelector("#" + id)).filter(Boolean);
       const logHost = el.querySelector("#simple-log");
       renderSimpleLog(st.events || []);
 
@@ -2094,9 +2094,11 @@
             Stage 0 builds the <strong>theme map</strong> — either the starter-pack xlsx clusters or a
             <strong>deterministic map computed from each company's Wikipedia industry</strong> (Wikidata P452,
             the field the infobox renders; no LLM, cached per ticker). Stage 1 is the weekly <strong>radar</strong>
-            (revision breadth + print calendar, deterministic; the why-now LLM grade is optional). Stage 2 ranks
-            members of a theme — inspect any theme to see its shortlist. Stage 3 runs the theme pass:
-            dives the shortlist, gates it, and writes the book, watchlist and idea reports.
+            (revision breadth + print calendar, deterministic; the why-now LLM grade is optional). Stage 2
+            qual-analyzes EVERY covered member of every non-COLD theme (dive cache-first, forward brief,
+            coverage report with the theme-relative valuation flag — no selection, no gates). Stage 3 is the
+            <strong>group review</strong>: one pass per theme judging whether each flag is justified by the
+            print-focused forward case, from which the deterministic <strong>trade ideas</strong> fall out.
           </p>
           <div class="pipe-form">
             <label>Theme map
@@ -2119,22 +2121,19 @@
             <button id="simple-build-xlsx">0a · Build themes (xlsx)</button>
             <button id="simple-build-wiki" title="Deterministic Wikipedia-industry map; first build fetches ~1 API call per 50 tickers, a few minutes">0b · Build themes (Wikipedia)</button>
             <button id="simple-radar-go">1 · Run radar</button>
-            <button id="simple-inspect" title="Deterministic ranking of the theme's members: longs must have estimates rising, shorts falling — aligned riders and against-theme divergers are both picked, each on its OWN estimate direction">2 · Inspect theme (selection)</button>
-            <button id="simple-run-go" title="Dive the shortlist of ONE theme, gate it, write its book + reports">3a · Run theme pass</button>
-            <button id="simple-run-all" title="Sweep EVERY non-COLD theme: dive each shortlist, gate, and assemble one book across themes. First run costs a dive per shortlisted name (minutes of LLM each); reruns reuse the cache">3b · Run all non-COLD themes</button>
+            <button id="simple-inspect" title="Live radar row for one theme: members, coverage, print calendar">2 · Inspect theme</button>
             <button id="simple-refresh-fund" title="Fetch fresh fundamentals for the simple universe — prices (yfinance batch), EDGAR rows at the run date, optionally consensus with the checkbox below — then rebuild the quant table and re-render reports. No LLM calls; a few minutes of network.">Refresh fundamentals</button>
-            <button id="simple-analyze-all" title="Qualitative coverage for EVERY covered member of every non-COLD theme: deep dive (cache-first — a first-time dive costs minutes of LLM each, so a full sweep can take hours), forward brief, coverage report with the theme-relative valuation flag. No selection, no gates; the book is untouched.">Qual-analyze all members</button>
-            <button id="simple-group-review" title="One LLM pass per non-COLD theme: judge whether each member's theme-relative valuation flag (premium/discount vs the theme median) is justified by forward-looking fundamentals and catalysts. Run AFTER the coverage reports; commentary, not a gate.">Group review (flags justified?)</button>
+            <button id="simple-analyze-all" title="Qualitative coverage for EVERY covered member of every non-COLD theme: deep dive (cache-first — a first-time dive costs minutes of LLM each, so a full sweep can take hours), forward brief, coverage report with the theme-relative valuation flag. No selection, no gates.">Qual-analyze all members</button>
+            <button id="simple-group-review" title="One LLM pass per non-COLD theme: judge whether each member's theme-relative valuation flag (premium/discount vs the theme median) is justified by the print-focused forward case. Run AFTER the coverage reports; commentary, not a gate. Clicking a trade-idea ticker opens its latest print qual.">Group review (flags justified?)</button>
           </div>
           <div class="dd-progress" id="simple-progress"></div>
           <div id="simple-maps" style="margin-top:10px"></div>
         </div>
         <div id="simple-radar-host" style="margin-top:10px"></div>
         <div id="simple-theme-host" style="margin-top:10px"></div>
-        <div id="simple-book-host" style="margin-top:10px"></div>
         <div id="simple-quant-host" style="margin-top:10px"></div>
         <div id="simple-review-host" style="margin-top:10px"></div>
-        <div id="simple-watch-host" style="margin-top:10px"></div>
+        <div id="simple-trade-host" style="margin-top:10px"></div>
         <div id="simple-reports-host" style="margin-top:10px"></div>
         <div class="dd-log" id="simple-log" style="display:none"></div>`;
 
@@ -2190,14 +2189,6 @@
         refresh: parseInt($("simple-refresh").value, 10) || 0,
         llm: $("simple-llm").checked,
       }));
-      $("simple-run-go").addEventListener("click", () => {
-        if (!$("simple-theme").value) {
-          $("simple-progress").innerHTML = `<span class="neg">pick a theme first</span>`;
-          return;
-        }
-        post("run", { force: $("simple-force").checked });
-      });
-      $("simple-run-all").addEventListener("click", () => post("run-all", { force: $("simple-force").checked }));
       $("simple-refresh-fund").addEventListener("click", () => post("refresh-fundamentals", { estimates: $("simple-force").checked }));
       $("simple-analyze-all").addEventListener("click", () => post("analyze-all", { force: $("simple-force").checked }));
       $("simple-group-review").addEventListener("click", () => post("group-review", {}));
@@ -2352,7 +2343,6 @@
     function renderSimpleThemeDetail(payload, host) {
       if (payload.error) { host.innerHTML = `<p class="err">${esc(payload.error)}</p>`; return; }
       const row = payload.row || {};
-      const sel = payload.selection || {};
       const breadth = row.breadth || 0;
       const withCount = (payload.members || []).filter((m) => m.covered && (m.rev90 || 0) * breadth >= 0).length;
       const againstCount = (payload.members || []).filter((m) => m.covered && (m.rev90 || 0) * breadth < 0).length;
@@ -2367,27 +2357,13 @@
         { key: "market_cap", label: "Mcap $bn", fmt: (v) => (v == null ? "" : (v / 1e9).toFixed(1)) },
         { key: "align", label: "vs theme", title: "'with' revises the same way the theme's breadth points (the rider); 'against' is the divergence pattern the process flags — the laggard (short) or share-gainer (long). The name's own estimate direction always decides its side, never the theme's.", fmt: (v) => (v ? `<span class="badge${v === "against" ? " info" : ""}">${esc(v)}</span>` : "") },
       ];
-      const sideCols = [
-        { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
-        { key: "rev90", label: "90d est", fmt: (v) => (v == null ? "" : (v > 0 ? "+" : "") + Number(v).toFixed(1) + "%") },
-        { key: "days_to_print", label: "Print in d" },
-        { key: "earnings_date", label: "Next print" },
-        { key: "score", label: "Score", fmt: (v) => (v == null ? "" : Number(v).toFixed(3)) },
-      ];
-      const sideRows = (entries, scoreKey) => entries.map((e) => ({ ...e, score: e[scoreKey] }));
       host.innerHTML = `
         <div class="dd-batch">
-          <strong>2 · Selection — ${esc(row.theme || "")}</strong>
+          <strong>2 · Theme detail — ${esc(row.theme || "")}</strong>
           <p class="hint" style="margin:4px 0 6px">Status ${simpleStatusChip(row.status)} · lean ${esc(row.lean || "")} · breadth ${(row.breadth > 0 ? "+" : "") + Number(row.breadth || 0).toFixed(2)} · coverage ${Math.round((row.coverage || 0) * 100)}% (${row.members_covered}/${row.members_total}) · bellwether ${esc(row.bellwether || "—")} · <span class="badge">${withCount} with theme</span> <span class="badge info">${againstCount} against</span></p>
-          <p class="hint" style="margin:0 0 6px">Sides come from each name's OWN 90d estimate direction, never the theme's: aligned riders and against-theme divergers (the "know more than the market" candidates) are picked alike — longs rising, shorts falling.</p>
-          <div style="display:flex;gap:16px;flex-wrap:wrap">
-            <div style="flex:1;min-width:320px"><strong>Long shortlist</strong>${sel.long && sel.long.length ? "" : `<p class="muted" style="margin:4px 0">none eligible (estimates must rise &gt; +0.5%)</p>`}<div id="simple-sel-long"></div></div>
-            <div style="flex:1;min-width:320px"><strong>Short shortlist</strong>${sel.short && sel.short.length ? "" : `<p class="muted" style="margin:4px 0">none eligible (estimates must fall &lt; −0.5%)</p>`}<div id="simple-sel-short"></div></div>
-          </div>
-          <details style="margin-top:8px"><summary class="muted">All ${payload.members ? payload.members.length : 0} members</summary><div id="simple-members" style="margin-top:6px"></div></details>
+          <p class="hint" style="margin:0 0 6px">Sides come from each name's OWN 90d estimate direction, never the theme's: a name revising against its theme is a diverger traded on its own direction.</p>
+          <details style="margin-top:8px" open><summary class="muted">All ${payload.members ? payload.members.length : 0} members</summary><div id="simple-members" style="margin-top:6px"></div></details>
         </div>`;
-      if (sel.long && sel.long.length) attachTable(host.querySelector("#simple-sel-long"), sideRows(sel.long, "long_score"), sideCols, { tableId: "simple-sel-long" });
-      if (sel.short && sel.short.length) attachTable(host.querySelector("#simple-sel-short"), sideRows(sel.short, "short_score"), sideCols, { tableId: "simple-sel-short" });
       if (payload.members && payload.members.length) {
         const memRows = payload.members.map((m) => ({
           ...m,
@@ -2397,45 +2373,13 @@
       }
     }
 
-    function renderSimpleBook(host, payload, flagMap) {
-      if (!payload || payload.error || !payload.book) {
-        host.innerHTML = `<div class="dd-batch"><strong>3 · Book</strong><p class="muted" style="margin:4px 0 0">${esc((payload && payload.error) || "no book yet — run step 3")}</p></div>`;
-        return;
-      }
-      const b = payload.book;
-      const ideas = (b.book || []).map((i) => ({
-        ...i,
-        gates_ok: (i.gates || []).every((g) => g.pass),
-        gate_summary: (i.gates || []).map((g) => (g.pass ? "✔" : "✘") + g.gate).join(" "),
-        flag: (flagMap && flagMap[i.ticker]) || null,
-      }));
-      const parked = (b.overflow || []);
-      host.innerHTML = `
-        <div class="dd-batch">
-          <strong>3 · Book — ${esc(payload.file)}</strong>
-          <p class="hint" style="margin:4px 0 6px">${ideas.length} idea(s) in the book, ${(b.overflow || []).length} parked, as of ${esc(b.as_of)}.</p>
-          <div id="simple-book-table"></div>
-        </div>`;
-      attachTable(host.querySelector("#simple-book-table"), ideas, [
-        { key: "side", label: "Side", fmt: (v) => `<span class="${v === "long" ? "pos" : "neg"}">${esc(v)}</span>` },
-        { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
-        { key: "theme", label: "Theme" },
-        { key: "flag", label: "Flag", fmt: (v) => (v ? `<span class="${v === "premium" ? "neg" : v === "discount" ? "pos" : "muted"}" title="theme-relative P/E & PEG vs the theme median — see the quant table">${esc(v)}</span>` : `<span class="muted">—</span>`) },
-        { key: "rev90", label: "90d est", fmt: (v) => (v == null ? "" : (v > 0 ? "+" : "") + Number(v).toFixed(1) + "%") },
-        { key: "days_to_print", label: "Print in d" },
-        { key: "gates_ok", label: "Gates", fmt: (v, r) => (v ? `<span class="pos">all pass</span>` : `<span class="neg">failed</span>`) },
-        { key: "gate_summary", label: "Gates" },
-      ], { tableId: "simple-book" });
-    }
-
-    function renderSimpleQuant(host, quant, selMap) {
+    function renderSimpleQuant(host, quant) {
       if (!host) return;
       const allRows = (quant && quant.rows) || [];
       if (!allRows.length) {
-        host.innerHTML = `<div class="dd-batch"><strong>Quant table (deterministic)</strong><p class="muted" style="margin:4px 0 0">no quant table yet — run a theme pass</p></div>`;
+        host.innerHTML = `<div class="dd-batch"><strong>Quant table (deterministic)</strong><p class="muted" style="margin:4px 0 0">no quant table yet — run analyze-all</p></div>`;
         return;
       }
-      selMap = selMap || {};
       const f2 = (v) => (v == null ? "—" : Number(v).toFixed(2));
       const pct = (v) => (v == null ? "—" : (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "%");
       const pctRaw = (v) => (v == null ? "—" : (v >= 0 ? "+" : "") + Number(v).toFixed(1) + "%");
@@ -2443,17 +2387,16 @@
       const industries = [...new Set(allRows.map((r) => r.industry).filter(Boolean))].sort();
       const themes = [...new Set(allRows.map((r) => r.theme).filter(Boolean))].sort();
       const opt = (v) => `<option value="${esc(v)}">${esc(v)}</option>`;
-      const selOf = (r) => selMap[r.ticker] || null;
+      const sideOf = (r) => ((r.rev90 || 0) > 0.5 ? "long" : (r.rev90 || 0) < -0.5 ? "short" : "flat");
       host.innerHTML = `<div class="dd-batch"><strong>Quant table (deterministic — ${allRows.length} names in ${esc((quant.themes || []).length)} non-COLD themes)</strong>` +
         `<p class="muted" style="margin:4px 0">P/S · FY1/FY2 consensus EPS · PE1/PE2 · PEG1/PEG2 · rev90 (own 90d estimate change) · days to next print. Reference numbers, not a ranking — computed from the cached fundamentals table (EDGAR XBRL + analyst consensus), no LLM, no network.</p>` +
         `<div style="margin:6px 0;display:flex;flex-wrap:wrap;gap:6px;align-items:center">` +
         `<input id="quant-search" placeholder="ticker…" style="width:90px">` +
         `<select id="quant-side">` +
-        `<option value="">selection: all</option>` +
-        `<option value="long">book · long</option>` +
-        `<option value="short">book · short</option>` +
-        `<option value="parked">parked (any side)</option>` +
-        `<option value="none">not selected</option>` +
+        `<option value="">side: all</option>` +
+        `<option value="long">long (own est. rising)</option>` +
+        `<option value="short">short (own est. falling)</option>` +
+        `<option value="flat">flat (no side)</option>` +
         `</select>` +
         `<select id="quant-industry"><option value="">industry: all</option>${industries.map(opt).join("")}</select>` +
         `<select id="quant-theme"><option value="">theme: all</option>${themes.map(opt).join("")}</select>` +
@@ -2461,7 +2404,7 @@
         `<div style="max-height:60vh;overflow:auto;border:1px solid #2a2e35">` +
         `<table style="width:100%;border-collapse:separate;border-spacing:0;font-size:12px">` +
         `<thead><tr>` +
-        ["Ticker", "Selection", "Flag", "Price", "P/S", "FY1 EPS", "FY2 EPS", "EG1 → EG2", "PE1", "PE2", "PEG1", "PEG2", "rev90", "print"]
+        ["Ticker", "Side", "Flag", "Price", "P/S", "FY1 EPS", "FY2 EPS", "EG1 → EG2", "PE1", "PE2", "PEG1", "PEG2", "rev90", "print"]
           .map((h) => `<th style="text-align:left;padding:5px 8px;border-bottom:1px solid #2a2e35;position:sticky;top:0;background:#1b1e24;z-index:2">${h}</th>`).join("") +
         `</tr></thead><tbody id="quant-body"></tbody></table></div>` +
         (quant.as_of ? `<p class="muted" style="margin:4px 0 0">run ${esc(quant.as_of)}${quant.note ? " · " + esc(quant.note) : ""}</p>` : "") +
@@ -2481,12 +2424,7 @@
           if (q && !`${r.ticker} ${r.name || ""}`.toUpperCase().includes(q)) return false;
           if (ind && r.industry !== ind) return false;
           if (th && r.theme !== th) return false;
-          if (side) {
-            const s = selOf(r);
-            if (side === "none") { if (s) return false; }
-            else if (side === "parked") { if (!s || s.state !== "parked") return false; }
-            else if (!s || s.state !== "book" || s.side !== side) return false;
-          }
+          if (side && sideOf(r) !== side) return false;
           return true;
         });
         let body = "";
@@ -2497,16 +2435,15 @@
             body += `<tr><th colspan="14" style="text-align:left;background:var(--bg,#14161a)">` +
               `${esc(r.theme)} — ${esc(r.status || "")} · lean ${esc(r.lean || "")} (breadth ${(r.breadth >= 0 ? "+" : "") + Number(r.breadth || 0).toFixed(2)})</th></tr>`;
           }
-          const s = selOf(r);
-          const selCell = !s ? `<span class="muted">—</span>`
-            : s.state === "parked"
-              ? `<span class="muted">parked · ${esc(s.side)}</span>`
-              : `<span class="${s.side === "long" ? "pos" : "neg"}"><strong>${esc(s.side)}</strong></span>`;
+          const rside = sideOf(r);
+          const sideCell = rside === "flat"
+            ? `<span class="muted">flat</span>`
+            : `<span class="${rside === "long" ? "pos" : "neg"}"><strong>${rside}</strong></span>`;
           const flag = r.flag || "n/a";
           const flagCls = flag === "premium" ? "neg" : flag === "discount" ? "pos" : "muted";
           body += `<tr>` +
             `<td><strong>${esc(r.ticker)}</strong></td>` +
-            `<td>${selCell}</td>` +
+            `<td>${sideCell}</td>` +
             `<td><span class="${flagCls}" title="${esc(r.flag_detail || "")}">${esc(flag)}</span></td>` +
             `<td>${f2(r.price)}</td>` +
             `<td>${f2(r.ps)}</td>` +
@@ -2538,31 +2475,75 @@
       }
       const mark = (v) => ({ "justified": `<span class="pos">✅ justified</span>`, "not justified": `<span class="neg">❌ not justified</span>`, "uncertain": `<span class="muted">❔ uncertain</span>` }[v] || `<span class="muted">❔ ${esc(v)}</span>`);
       const flagCls = (f) => (f === "premium" ? "neg" : f === "discount" ? "pos" : "muted");
+      const ideaMark = { "aligned": `<span class="pos" title="the verdict agrees with the side — a trade candidate">✅ idea</span>`, "contradicted": `<span class="neg" title="the verdict argues against the side">⛔ against</span>`, "neutral": `<span class="muted">—</span>` };
       let body = "";
       for (const t of themes) {
         body += `<div class="dd-batch" style="margin-top:8px">` +
           `<strong>${esc(t.theme)}</strong> — ${esc(t.status || "n/a")}, lean ${esc(t.lean || "?")} (breadth ${(t.breadth >= 0 ? "+" : "") + Number(t.breadth || 0).toFixed(2)}) · ${t.members_reviewed || 0} reviewed` +
-          (t.members_skipped_flat && t.members_skipped_flat.length ? ` · <span class="muted">flat/uncached skipped: ${esc(t.members_skipped_flat.join(", "))}</span>` : "") +
+          (t.members_skipped_flat && t.members_skipped_flat.length ? ` · <span class="muted">no data, skipped: ${esc(t.members_skipped_flat.join(", "))}</span>` : "") +
           (t.summary ? `<p class="muted" style="margin:4px 0">${esc(t.summary)}</p>` : "") +
           (t.reviews && t.reviews.length
             ? `<div style="max-height:260px;overflow:auto;border:1px solid #2a2e35"><table style="width:100%;border-collapse:separate;border-spacing:0;font-size:12px">` +
               `<thead><tr>` +
-              ["Ticker", "Side", "Flag", "Verdict", "Watch", "Why"].map((h) => `<th style="text-align:left;padding:4px 8px;border-bottom:1px solid #2a2e35;position:sticky;top:0;background:#1b1e24;z-index:1">${h}</th>`).join("") +
+              ["Ticker", "Side", "Flag", "Verdict", "Idea", "Watch", "Why"].map((h) => `<th style="text-align:left;padding:4px 8px;border-bottom:1px solid #2a2e35;position:sticky;top:0;background:#1b1e24;z-index:1">${h}</th>`).join("") +
               `</tr></thead><tbody>` +
               t.reviews.map((r) => `<tr>` +
-                `<td style="padding:4px 8px"><strong>${esc(r.ticker)}</strong></td>` +
+                `<td style="padding:4px 8px"><strong class="linklike" data-pq="${esc(r.printqual || "")}" title="${r.printqual ? "open the latest print qual" : "no print qual yet"}" style="cursor:pointer">${esc(r.ticker)}</strong></td>` +
                 `<td style="padding:4px 8px"><span class="${r.side === "long" ? "pos" : r.side === "short" ? "neg" : ""}">${esc(r.side || "")}</span></td>` +
                 `<td style="padding:4px 8px"><span class="${flagCls(r.flag)}">${esc(r.flag || "n/a")}</span></td>` +
                 `<td style="padding:4px 8px">${mark(r.verdict)}</td>` +
+                `<td style="padding:4px 8px">${ideaMark[r.trade || "neutral"] || ideaMark.neutral}</td>` +
                 `<td style="padding:4px 8px">${esc((r.watch || []).slice(0, 2).join(" · "))}</td>` +
                 `<td style="padding:4px 8px">${esc(r.reason || "")}</td>` +
                 `</tr>`).join("") +
               `</tbody></table></div>`
-            : `<p class="muted" style="margin:4px 0 0">no directional members</p>`) +
+            : `<p class="muted" style="margin:4px 0 0">no members with data or a flag</p>`) +
           `</div>`;
       }
       host.innerHTML = `<div class="dd-batch"><strong>Group review — ${themes.length} non-COLD theme(s) · ${esc(review.file || "")}</strong>` +
-        `<p class="muted" style="margin:4px 0">One pass per theme over every covered member: is the theme-relative valuation flag (P/E & PEG vs theme median) justified by forward-looking fundamentals and dated catalysts? Commentary, not a gate — read the member's coverage report before acting.</p></div>` + body;
+        `<p class="muted" style="margin:4px 0">One pass per theme over every covered member: is the theme-relative valuation flag (P/E & PEG vs theme median) justified by the print-focused forward case? Side = the name's own 90d revisions; the verdict judges the flag, not the trade. Commentary, not a gate. Click a ticker to open its print qual.</p></div>` + body;
+      host.querySelectorAll("[data-pq]").forEach((td) => {
+        td.addEventListener("click", () => openSimpleReport(td.dataset.pq || ""));
+      });
+    }
+
+    function renderSimpleTradeIdeas(host, review) {
+      if (!host) return;
+      const themes = (review && review.themes) || [];
+      const rows = [];
+      for (const t of themes) {
+        for (const r of t.reviews || []) {
+          if (r.trade === "aligned") rows.push({ ...r, theme: t.theme });
+        }
+      }
+      if (!rows.length) {
+        host.innerHTML = `<div class="dd-batch"><strong>Trade ideas (side × flag × verdict)</strong><p class="muted" style="margin:4px 0 0">none yet — run "Group review" first; ideas are the deterministic aligned combinations (long+premium justified, long+discount not justified, short+discount justified, short+premium not justified).</p></div>`;
+        return;
+      }
+      const mark = (v) => ({ "justified": "✅", "not justified": "❌", "uncertain": "❔" }[v] || "❔");
+      const flagCls = (f) => (f === "premium" ? "neg" : f === "discount" ? "pos" : "muted");
+      const chip = (r) => {
+        const hasPq = !!r.printqual;
+        return `<div class="dd-batch" style="margin:6px 0;padding:8px 10px;border:1px solid #2a2e35">` +
+          `<span class="${r.side === "long" ? "pos" : "neg"}" style="font-size:12px"><strong>${esc(r.side || "")}</strong></span>` +
+          ` <strong class="linklike" data-pq="${esc(r.printqual || "")}" title="${hasPq ? "open the latest print qual for " + esc(r.ticker) : "no print qual yet"}" style="cursor:pointer">${esc(r.ticker)}</strong>` +
+          ` <span class="muted" style="font-size:12px">${esc(r.theme)}</span> · ` +
+          `<span class="${flagCls(r.flag)}" style="font-size:12px">${esc(r.flag || "")}</span> · ` +
+          `${mark(r.verdict)} ${esc(r.verdict)}` +
+          `<div class="muted" style="font-size:12px;margin-top:2px">${esc(r.reason || "")}</div>` +
+          ((r.watch || []).length ? `<div class="muted" style="font-size:12px;margin-top:2px">watch: ${esc(r.watch.slice(0, 2).join(" · "))}</div>` : "") +
+          `</div>`;
+      };
+      const wrong = rows.filter((r) => r.verdict === "not justified");
+      const right = rows.filter((r) => r.verdict === "justified");
+      host.innerHTML = `<div class="dd-batch"><strong>Trade ideas — ${rows.length} aligned name(s)</strong>` +
+        `<p class="muted" style="margin:4px 0">Deterministic on the group review — no LLM, no gate: <span class="pos">long + premium justified</span>, <span class="pos">long + discount not justified</span>, <span class="neg">short + discount justified</span>, <span class="neg">short + premium not justified</span>. Click a ticker to open its latest print qual.</p>` +
+        (wrong.length ? `<p style="margin:6px 0 2px"><strong>The market is wrong (mispriced)</strong> — <span class="muted" style="font-size:12px">${wrong.length}</span></p>` + wrong.map(chip).join("") : "") +
+        (right.length ? `<p style="margin:8px 0 2px"><strong>The market is right, ride it</strong> — <span class="muted" style="font-size:12px">${right.length}</span></p>` + right.map(chip).join("") : "") +
+        `</div>`;
+      host.querySelectorAll("[data-pq]").forEach((elq) => {
+        elq.addEventListener("click", () => openSimpleReport(elq.dataset.pq || ""));
+      });
     }
 
     async function loadSimpleData() {
@@ -2570,38 +2551,16 @@
       if (!el.querySelector("#simple-maps")) return;
       const status = await (await fetch("/api/simple/status")).json();
       renderSimpleMaps(el.querySelector("#simple-maps"), status.artifacts || {});
-      const [radar, book, watch, reports, quant, review] = await Promise.all([
+      const [radar, reports, quant, review] = await Promise.all([
         fetch("/api/simple/radar").then((r) => r.json()).catch(() => null),
-        fetch("/api/simple/book").then((r) => r.json()).catch(() => null),
-        fetch("/api/simple/watchlist").then((r) => r.json()).catch(() => null),
         fetch("/api/simple/reports").then((r) => r.json()).catch(() => null),
         fetch("/api/simple/quant").then((r) => r.json()).catch(() => null),
         fetch("/api/simple/review").then((r) => r.json()).catch(() => null),
       ]);
       renderSimpleRadar(el.querySelector("#simple-radar-host"), radar && radar.radar);
-      const bookPayload = (book && book.book) || {};
-      const selMap = {};
-      for (const i of bookPayload.book || []) selMap[i.ticker] = { state: "book", side: i.side };
-      for (const i of bookPayload.overflow || []) if (!selMap[i.ticker]) selMap[i.ticker] = { state: "parked", side: i.side };
-      const quantRows = (quant && quant.quant && quant.quant.rows) || [];
-      const quantFlagMap = {};
-      for (const r of quantRows) quantFlagMap[r.ticker] = r.flag || null;
-      renderSimpleBook(el.querySelector("#simple-book-host"), book, quantFlagMap);
-      renderSimpleQuant(el.querySelector("#simple-quant-host"), quant && quant.quant, selMap);
+      renderSimpleQuant(el.querySelector("#simple-quant-host"), quant && quant.quant);
       renderSimpleReview(el.querySelector("#simple-review-host"), review && review.review);
-      const watchHost = el.querySelector("#simple-watch-host");
-      const parked = (watch && watch.parked) || [];
-      watchHost.innerHTML = `<div class="dd-batch"><strong>Watchlist (parked — nothing dies)</strong>` +
-        (watch && watch.as_of ? ` <span class="muted">as of ${esc(watch.as_of)}</span>` : "") +
-        (parked.length
-          ? `<div style="margin-top:6px">${parked.map((p) => {
-              const failed = (p.gates || []).filter((g) => !g.pass).map((g) => `${g.gate}: ${g.detail}`);
-              return `<div style="margin:4px 0"><span class="badge">${esc(p.ticker)}</span> <span class="muted">${esc(p.side || "")} · ${esc(p.theme || "")}</span>` +
-                (failed.length ? ` <span class="neg" style="font-size:12px">${failed.map(esc).join(" · ")}</span>` : "") +
-                `</div>`;
-            }).join("")}</div>`
-          : `<p class="muted" style="margin:4px 0 0">nothing parked</p>`) +
-        `</div>`;
+      renderSimpleTradeIdeas(el.querySelector("#simple-trade-host"), review && review.review);
       const repHost = el.querySelector("#simple-reports-host");
       const list = (reports && reports.reports) || [];
       const repParts = (p) => p.split(/[\\/]/);
@@ -2636,24 +2595,26 @@
             ` <button id="simple-rep-open" style="font-size:12px">Open</button></div>`
           : `<p class="muted" style="margin:4px 0 0">no reports yet</p>`) +
         `</div>`;
-      const openReport = async (rel) => {
-        if (!rel) return;
-        showHtml(`<p class="muted">Loading ${esc(rel)}…</p>`);
-        try {
-          const res = await fetch("/api/simple/report/" + encodeURIComponent(rel));
-          const payload = await res.json();
-          showHtml(payload.error
-            ? `<p class="err">${esc(payload.error)}</p>`
-            : `<h2>${esc(payload.path)}</h2><div class="dd-report">${mdToHtml(payload.markdown || "")}</div>`);
-        } catch (e) {
-          showHtml(`<p class="err">${esc(String(e.message || e))}</p>`);
-        }
-      };
+      const openReport = openSimpleReport;
       const sel = repHost.querySelector("#simple-rep-select");
       const openBtn = repHost.querySelector("#simple-rep-open");
       if (sel) {
         sel.addEventListener("change", () => openReport(sel.value));
         openBtn && openBtn.addEventListener("click", () => openReport(sel.value));
+      }
+    }
+
+    async function openSimpleReport(rel) {
+      if (!rel) return;
+      showHtml(`<p class="muted">Loading ${esc(rel)}…</p>`);
+      try {
+        const res = await fetch("/api/simple/report/" + encodeURIComponent(rel));
+        const payload = await res.json();
+        showHtml(payload.error
+          ? `<p class="err">${esc(payload.error)}</p>`
+          : `<h2>${esc(payload.path)}</h2><div class="dd-report">${mdToHtml(payload.markdown || "")}</div>`);
+      } catch (e) {
+        showHtml(`<p class="err">${esc(String(e.message || e))}</p>`);
       }
     }
 

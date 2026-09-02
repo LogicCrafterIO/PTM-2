@@ -18,13 +18,11 @@ IS the deep dive).
     GET  /api/simple/theme-map/<src> -> manual|wiki theme map payload
     GET  /api/simple/radar[?date=]   -> latest (or dated) radar rows
     GET  /api/simple/theme/<name>    -> live radar row + selection for one theme (?source=)
-    GET  /api/simple/book            -> latest simple book
-    GET  /api/simple/watchlist       -> parked ideas
     GET  /api/simple/quant           -> deterministic quant table (P/S, EPS1/2, PE1/2, PEG1/2)
     GET  /api/simple/review          -> latest per-theme group review (are the flags justified?)
     GET  /api/simple/reports         -> idea-report files
     GET  /api/simple/report/<rel>    -> one idea report's markdown
-    POST /api/simple/run             -> body {"action": "build-themes"|"build-wiki"|"radar"|"run"|"run-all"|"refresh-fundamentals"|"analyze-all"|"group-review", ...}
+    POST /api/simple/run             -> body {"action": "build-themes"|"build-wiki"|"radar"|"refresh-fundamentals"|"analyze-all"|"group-review", ...}
 
 The simple-process handlers live in ptm_simple.viewer; this server only
 delegates. A simple `run` (which dives tickers) is refused while a deep-dive
@@ -500,14 +498,6 @@ class Handler(BaseHTTPRequestHandler):
             from ptm_simple import viewer as simple
 
             self._json(simple.list_reports())
-        elif route == "/api/simple/book":
-            from ptm_simple import viewer as simple
-
-            self._json(simple.get_book())
-        elif route == "/api/simple/watchlist":
-            from ptm_simple import viewer as simple
-
-            self._json(simple.get_watchlist())
         elif route == "/api/simple/quant":
             from ptm_simple import viewer as simple
 

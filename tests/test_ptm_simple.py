@@ -7,10 +7,7 @@ from datetime import date, timedelta
 
 import pytest
 
-from ptm_simple.gate import gate_member, gate_theme
 from ptm_simple.radar import _member_snapshot, theme_radar
-from ptm_simple.run import assemble_book
-from ptm_simple.select import select_members
 
 
 # ---------------------------------------------------------------- fixtures
@@ -146,115 +143,8 @@ def test_theme_radar_status_thresholds(members):
 
 
 # ---------------------------------------------------------------- select
-def test_select_ranks_both_sides(members):
-    members_list, _ = members
-    sel = select_members(_row(members_list, breadth=0.5, lean="long"))
-    # the aligned compounder leads the longs; the divergent name leads the shorts
-    assert sel["long"][0]["ticker"] == "AAA"
-    assert sel["short"][0]["ticker"] == "BBB"
-    assert all(e["long_score"] > 0 for e in sel["long"])
-
-
-def test_select_is_symmetric_in_falling_themes(members):
-    """A falling theme is the short side of the same signal: members with
-    falling estimates rank as shorts, and a member rising against a falling
-    theme ranks as a LONG (the share-gainer), never as a short."""
-    members_list, _ = members
-    falling = _row(members_list, breadth=-1.0, lean="short", status="ACTIVE")
-    sel = select_members(falling)
-    # BBB's own estimates fall -> it is the short candidate even though it
-    # 'diverges' by being a member of a falling theme is the norm there
-    assert sel["short"][0]["ticker"] == "BBB"
-    # AAA's estimates rise against the falling theme -> it ranks as a long
-    assert sel["long"][0]["ticker"] == "AAA"
-    # and the rising member is never offered as a short candidate
-    assert all(e["ticker"] != "AAA" or e["short_score"] <= 0.25 for e in sel["short"])
-
-
 # ---------------------------------------------------------------- gate
-def test_gate_member_long_pass_and_fail_closed(members):
-    members_list, ref = members
-    aligned = members_list[0]
-    qual = {"evidence_for": [{"claim": "backlog +12%", "metric": "backlog", "impact_pct": 12.0,
-                              "impact_on": "revenue", "quantified": True}], "evidence_against": []}
-    verdict = gate_member(aligned, _row(members_list), qual, ref)
-    assert verdict["side"] == "long"
-    assert verdict["passed"] is True
-    # no dive yet -> getting-paid fails closed as pending
-    verdict = gate_member(aligned, _row(members_list), None, ref)
-    assert verdict["passed"] is False
-    assert any(g["gate"] == "getting_paid" and not g["pass"] for g in verdict["gates"])
-    # a cold theme fails why-now
-    verdict = gate_member(aligned, _row(members_list, status="COLD"), qual, ref)
-    assert verdict["passed"] is False
-
-
-def test_gate_member_short_diverger_needs_material_impact(members):
-    members_list, ref = members
-    divergent = members_list[1]
-    weak = {"evidence_for": [{"claim": "price up", "impact_pct": 1.0, "quantified": True,
-                              "metric": "price", "impact_on": "price"}], "evidence_against": []}
-    # 1% impact is below the 3% bar; and the COLD row would fail why-now, so
-    # give the theme WARM status and check only the impact gate fails
-    row = _row(members_list, breadth=-0.5, lean="short", status="WARM")
-    verdict = gate_member(divergent, row, weak, ref)
-    impact = next(g for g in verdict["gates"] if g["gate"] == "getting_paid")
-    assert impact["pass"] is False and "below the impact bar" in impact["detail"]
-
-
-def test_gate_theme_splits_survivors_and_parked(members):
-    members_list, ref = members
-    qual = {"evidence_for": [{"impact_pct": 9.0, "quantified": True, "metric": "ebitda",
-                              "impact_on": "ebitda", "claim": "x"}], "evidence_against": []}
-    row = _row(members_list, breadth=0.5, lean="long")
-    sel = select_members(row)
-    out = gate_theme(sel, row, {"AAA": qual, "BBB": None}, ref)
-    assert out["breadth_abs"] == 0.5
-    assert all(i["passed"] for i in out["ideas"])
-    assert all(not i["passed"] for i in out["parked"])
-
-
-def test_gate_falling_theme_yields_short_and_resister(members):
-    """The short-side symmetry, end to end: in an ACTIVE falling theme the
-    member with falling estimates becomes a SHORT idea (with the theme), and
-    the member rising against the theme becomes a LONG idea (the diverger) —
-    both pass why-now on their own direction, both fail closed without a dive."""
-    members_list, ref = members
-    falling = _row(members_list, breadth=-1.0, lean="short", status="ACTIVE")
-    qual = {"evidence_for": [{"impact_pct": 8.0, "quantified": True, "metric": "rev",
-                              "impact_on": "revenue", "claim": "x"}], "evidence_against": []}
-    sel = select_members(falling)
-    out = gate_theme(sel, falling, {"AAA": qual, "BBB": qual}, ref)
-    sides = {i["ticker"]: i["side"] for i in out["ideas"]}
-    # BBB: estimates falling with the theme -> short. AAA: estimates rising
-    # against a falling theme -> the share-gainer long.
-    assert "BBB" in [i["ticker"] for i in out["ideas"]] or "BBB" in [i["ticker"] for i in out["parked"]]
-    if "BBB" in [i["ticker"] for i in out["ideas"]]:
-        assert [i for i in out["ideas"] if i["ticker"] == "BBB"][0]["side"] == "short"
-    if "AAA" in [i["ticker"] for i in out["ideas"]]:
-        assert [i for i in out["ideas"] if i["ticker"] == "AAA"][0]["side"] == "long"
-    # without a dive, both fail closed regardless of side
-    out2 = gate_theme(sel, falling, {"AAA": None, "BBB": None}, ref)
-    assert all(not i["passed"] for i in out2["ideas"])
-
-
 # ---------------------------------------------------------------- book
-def test_assemble_book_caps_and_parks():
-    def idea(ticker, theme, side, rev90=1.0):
-        return {"ticker": ticker, "theme": theme, "side": side, "rev90": rev90,
-                "days_to_print": 5, "earnings_date": "2026-09-10", "passed": True,
-                "gates": [], "lean": "long", "breadth": 0.5}
-
-    gated = [{
-        "theme": "T1", "breadth_abs": 0.8, "status": "ACTIVE",
-        "ideas": [idea("A", "T1", "long"), idea("B", "T1", "long"), idea("C", "T1", "long")],
-        "parked": [],
-    }]
-    payload = assemble_book(gated, date(2026, 9, 1), per_theme=2, max_positions=12)
-    assert [i["ticker"] for i in payload["book"]] == ["A", "B"]  # per-theme cap, breadth-ranked
-    assert [i["ticker"] for i in payload["overflow"]] == ["C"]
-
-
 # ---------------------------------------------------------------- viewer glue
 def _seed_simple_artifacts(isolate_roots):
     """Write a small set of simple-process artifacts under the isolated roots."""
@@ -268,8 +158,6 @@ def _seed_simple_artifacts(isolate_roots):
                                               "ticker_count": 20, "wiki_fallbacks": 4, "themes": []})
     write_json(sdir / "radar_2026-09-01.json", {"as_of": "2026-09-01", "themes": []})
     write_json(sdir / "radar_2026-09-08.json", {"as_of": "2026-09-08", "themes": []})
-    write_json(sdir / "simple_book_2026-09-01.json", {"as_of": "2026-09-01", "book": [1], "overflow": [2, 3]})
-    write_json(sdir / "watchlist.json", {"parked": [1, 2]})
     rdir = ideas_dir("simple", "Data centre REIT")
     rdir.mkdir(parents=True, exist_ok=True)
     (rdir / "DLR.md").write_text("# DLR long", encoding="utf-8")
@@ -284,8 +172,7 @@ def test_viewer_artifacts_inventory(isolate_roots):
     assert arts["maps"]["manual"]["exists"] and arts["maps"]["manual"]["themes"] == 3
     assert arts["maps"]["wiki"]["fallbacks"] == 4
     assert arts["radar_files"] == ["2026-09-01", "2026-09-08"] and arts["radar_date"] == "2026-09-08"
-    assert arts["book"]["ideas"] == 1 and arts["book"]["overflow"] == 2
-    assert arts["watchlist"]["parked"] == 2
+    assert "book" not in arts and "watchlist" not in arts
     assert arts["reports"] == 1
 
 
@@ -318,8 +205,8 @@ def test_viewer_start_guards(isolate_roots):
 
     ok, payload, code = viewer.start("nonsense", {})
     assert not ok and code == 400
-    # a theme pass dives tickers, so it refuses to start on other LLM work
-    ok, payload, code = viewer.start("run", {"theme": "Data centre REIT"}, other_work_running=True)
+    # analyze-all dives tickers, so it refuses to start on other LLM work
+    ok, payload, code = viewer.start("analyze-all", {"theme": "Data centre REIT"}, other_work_running=True)
     assert not ok and code == 409 and "deep-dive batch" in payload["error"]
     assert not viewer.status()["running"]  # nothing was actually started
 

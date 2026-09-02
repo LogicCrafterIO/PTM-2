@@ -324,20 +324,18 @@ per ticker and reports the count. Wikipedia rate-limits, so the entity-search
 fallback runs under a wall-time budget — rerun the build to resolve more.
 
 **In the viewer** (same server): the **Simple** tab runs every step from the
-browser — build either theme map, run the radar, inspect a theme's
-deterministic selection, run a single theme pass, or **run all non-COLD
-themes** in one sweep (one book across themes; first sweep costs a dive per
-shortlisted name, reruns reuse the cache) — with the live log, and shows
-each step's outputs: both maps' build summaries, the radar table
-(status/lean/breadth/bellwether/against-theme divergers), the long/short
-shortlist per theme with each member's alignment to the theme, the gated
-book, the parked watchlist with the failing gate per name, and every idea
-report rendered inline. Gatekeeping keeps any name with a dated print within
-the 2-4 month horizon (120 days); gate-failed names park on the theme
-watchlist — nothing dies.
+browser — build either theme map, run the radar, **qual-analyze all
+members**, or run the **group review** — with the live log, and shows each
+step's outputs: both maps' build summaries, the radar table
+(status/lean/breadth/bellwether/against-theme divergers), the quant table
+with per-name Side (own 90d revisions) and theme-relative Flag, the group
+review with per-member verdicts and watch KPIs, and every print qual /
+coverage report rendered inline. There is no book and no watchlist: portfolio
+construction is out of scope for this process — trade candidates come from
+the group review instead.
 
-**Full-universe coverage and the valuation flag.** Beyond the gated book,
-`analyze-all` (CLI or the **Qual-analyze all members** button) gives every
+**Full-universe coverage and the valuation flag.** `analyze-all` (CLI or the
+**Qual-analyze all members** button) gives every
 covered member of every non-COLD theme a coverage report: no selection, no
 gates — each member takes the side its own 90d estimate direction implies and
 gets a dive (cache-first), a forward brief and a report. The quant table adds a
@@ -352,6 +350,14 @@ the consensus and revision data, and the computed quarter the next print
 reports. Each review writes `ideas/simple/<theme>/_GROUP_REVIEW_<date>.md`
 with per-member verdicts (justified / not justified / uncertain), the KPIs to
 watch, and reads the whole theme against itself. Commentary, not a gate.
+
+**Trade ideas** (deterministic — no LLM, no gate): every review row is tagged
+by pure logic on side × flag × verdict. The four aligned combinations are the
+trade candidates — long + premium justified and long + discount **not**
+justified (the market is wrong), short + premium **not** justified and short +
+discount justified (the market is right, ride it) — shown in the viewer's
+Trade-ideas panel and in each review markdown, where clicking a ticker opens
+that name's latest print qual.
 
 ## Tests (does not touch live files)
 

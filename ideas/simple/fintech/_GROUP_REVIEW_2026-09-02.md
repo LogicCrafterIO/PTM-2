@@ -6,13 +6,13 @@
 
 **Summary**: GDDY/SEZL share user/bookings momentum and look too cheap; NDAQ/PYPL both need FY2 acceleration but their flags fit; COIN has no flag and a deteriorating short case.
 
-| Ticker | Side | Flag (vs theme) | Verdict | Why |
-|---|---|---|---|---|
-| **COIN** | short | n/a | ❔ uncertain | No P/E/PEG flag to test, but the forward case is sharply negative: Q2 net loss, -297% revenue revision, 0 up/15 down analyst moves and falling crypto volume support the short thesis; valuation call is undecidable. |
-| **GDDY** | long | discount | ❌ not justified | Q2 beat, 9/1 upward revisions and FY1/FY2 EPS acceleration (19%/24%) with Airo/bookings momentum suggest the P/E/PEG discount is too steep; the high P/S only requires Q3 margin execution. |
-| **NDAQ** | long | fair | ✅ justified | Recurring ARR/SaaS mix, 15-35% FinTech/index growth, raised medium-term outlook, 16/0 revisions and guided opex discipline support a peer-median P/E/PEG; fundamentals match the fair flag. |
-| **PYPL** | long | mixed | ✅ justified | FY1 growth of only ~1.4% justifies the premium PEG, while FY2 acceleration to ~7.6% and 31/3 revisions justify the P/E discount; Q3 guidance is the tie-breaker, so the mixed flag fits. |
-| **SEZL** | long | discount | ❌ not justified | ~46%/26% FY1/FY2 EPS growth, GMV/revenue/subscriber momentum and 6/0 revisions make a 0.4x median PEG look too cheap; credit provision staying within 2.5-3.0% of GMV would confirm the discount is unwarranted. |
+| Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
+|---|---|---|---|---|---|
+| **COIN** | short | n/a | ❔ uncertain | — | No P/E/PEG flag to test, but the forward case is sharply negative: Q2 net loss, -297% revenue revision, 0 up/15 down analyst moves and falling crypto volume support the short thesis; valuation call is undecidable. |
+| **GDDY** | long | discount | ❌ not justified | ✅ | Q2 beat, 9/1 upward revisions and FY1/FY2 EPS acceleration (19%/24%) with Airo/bookings momentum suggest the P/E/PEG discount is too steep; the high P/S only requires Q3 margin execution. |
+| **NDAQ** | long | fair | ✅ justified | — | Recurring ARR/SaaS mix, 15-35% FinTech/index growth, raised medium-term outlook, 16/0 revisions and guided opex discipline support a peer-median P/E/PEG; fundamentals match the fair flag. |
+| **PYPL** | long | mixed | ✅ justified | — | FY1 growth of only ~1.4% justifies the premium PEG, while FY2 acceleration to ~7.6% and 31/3 revisions justify the P/E discount; Q3 guidance is the tie-breaker, so the mixed flag fits. |
+| **SEZL** | long | discount | ❌ not justified | ✅ | ~46%/26% FY1/FY2 EPS growth, GMV/revenue/subscriber momentum and 6/0 revisions make a 0.4x median PEG look too cheap; credit provision staying within 2.5-3.0% of GMV would confirm the discount is unwarranted. |
 
 ## Next-print focus (per member)
 
@@ -42,7 +42,17 @@
   - Credit quality is the key risk: 2Q26 provision was 2.4% of GMV, and management expects it to build toward the 2.5%-3.0% FY2026 range; Q3 will show if losses are tracking within that seasonal path or threatening the raised $185 million adjusted net income guide.
   - Operating leverage will be tested in Q3: 2Q26 operating expenses held at 63.3% of revenue and total revenue rose to 11.7% of GMV; the print will show whether that take-rate and cost discipline hold as GMV scales.
 
+## Trade ideas (deterministic: side × flag × verdict)
+*No LLM, no gate — pure logic on the verdict. `not justified` on the side's own flag = the market's pricing is wrong (a mispricing trade); `justified` = the market is right, ride it.*
+
+**The market is wrong (mispriced):**
+- **GDDY** — long · discount · not justified: Q2 beat, 9/1 upward revisions and FY1/FY2 EPS acceleration (19%/24%) with Airo/bookings momentum suggest the P/E/PEG discount is too steep; the high P/S only requires Q3 margin execution.
+- **SEZL** — long · discount · not justified: ~46%/26% FY1/FY2 EPS growth, GMV/revenue/subscriber momentum and 6/0 revisions make a 0.4x median PEG look too cheap; credit provision staying within 2.5-3.0% of GMV would confirm the discount is unwarranted.
+
+Per-ticker print quals: `fintech/printqual_GDDY_2026-09-02.md` · `fintech/printqual_SEZL_2026-09-02.md`
+
 ## How to read this
-- The flag compares the name's P/E and PEG with its theme's median (see the quant table) — it says *where the name sits*, never whether that is right.
-- The verdict judges the flag against the PRINT-FOCUSED case (fresh EDGAR filings, guidance, consensus revisions, dated catalysts, peer prints) — not the deep dive, which can lag the calendar.
-- `not justified` on a premium means the forward case does not support paying the multiple; on a discount it means the weakness looks transitory. Either way, read the member's coverage report and the dive before acting.
+- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see the quant table), and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
+- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
+- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

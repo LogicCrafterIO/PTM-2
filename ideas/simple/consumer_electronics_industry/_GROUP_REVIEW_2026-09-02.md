@@ -6,13 +6,13 @@
 
 **Summary**: Flags are mostly justified, with AAPL and SONO uncertain until their prints; AAPL and GRMN share holiday hardware/margin drivers but GRMN's raised guidance contrasts AAPL's component-cost pressure, and SONO's Oct 26 print is an early read-through for both.
 
-| Ticker | Side | Flag (vs theme) | Verdict | Why |
-|---|---|---|---|---|
-| **AAPL** | long | fair | ❔ uncertain | iPhone momentum and services are supportive, but chip-cost pressure, FY2 growth deceleration to ~8%, and an unproven AI roadmap leave the fair tag unresolved until Oct 30 guidance. |
-| **GRMN** | long | fair | ✅ justified | Fitness/Aviation/Marine momentum, durable 62%+ margins, and raised full-year guidance support a fair-to-attractive valuation; the forward case matches the flag. |
-| **MSFT** | long | fair | ✅ justified | Azure ~43% growth, cloud margin stability, and disciplined capex guidance support the path to $23.57 FY2 EPS, justifying a fair multiple. |
-| **ROKU** | long | mixed | ✅ justified | Platform/ad/subscription growth, ad margin near 62%, and the 394% FY1 earnings inflection justify the mixed premium/ultra-low-PEG flag if Q3 execution holds. |
-| **SONO** | long | fair | ❔ uncertain | Strong +24% revenue revisions and a low earnings bar are promising, but FY1 EPS growth is 0% and the print must confirm margin/guide upside to make fair stick. |
+| Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
+|---|---|---|---|---|---|
+| **AAPL** | long | fair | ❔ uncertain | — | iPhone momentum and services are supportive, but chip-cost pressure, FY2 growth deceleration to ~8%, and an unproven AI roadmap leave the fair tag unresolved until Oct 30 guidance. |
+| **GRMN** | long | fair | ✅ justified | — | Fitness/Aviation/Marine momentum, durable 62%+ margins, and raised full-year guidance support a fair-to-attractive valuation; the forward case matches the flag. |
+| **MSFT** | long | fair | ✅ justified | — | Azure ~43% growth, cloud margin stability, and disciplined capex guidance support the path to $23.57 FY2 EPS, justifying a fair multiple. |
+| **ROKU** | long | mixed | ✅ justified | — | Platform/ad/subscription growth, ad margin near 62%, and the 394% FY1 earnings inflection justify the mixed premium/ultra-low-PEG flag if Q3 execution holds. |
+| **SONO** | long | fair | ❔ uncertain | — | Strong +24% revenue revisions and a low earnings bar are promising, but FY1 EPS growth is 0% and the print must confirm margin/guide upside to make fair stick. |
 
 ## Next-print focus (per member)
 
@@ -43,6 +43,7 @@
   - Sonos reports on October 26, ahead of AAPL, GRMN, MSFT and ROKU later that week; a strong guide would set a positive read-through for smart-home audio and holiday consumer-electronics demand.
 
 ## How to read this
-- The flag compares the name's P/E and PEG with its theme's median (see the quant table) — it says *where the name sits*, never whether that is right.
-- The verdict judges the flag against the PRINT-FOCUSED case (fresh EDGAR filings, guidance, consensus revisions, dated catalysts, peer prints) — not the deep dive, which can lag the calendar.
-- `not justified` on a premium means the forward case does not support paying the multiple; on a discount it means the weakness looks transitory. Either way, read the member's coverage report and the dive before acting.
+- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see the quant table), and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
+- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
+- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

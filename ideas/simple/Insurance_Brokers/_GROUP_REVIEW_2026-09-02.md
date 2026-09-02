@@ -6,13 +6,13 @@
 
 **Summary**: Flags largely match forward cases: AJG discount and both fair-valued names are justified, GSHD premium is not, and ERIE has no flag with two-sided catalysts. AJG, GSHD and RYAN share organic-growth/margin read-throughs; MRSH prints first.
 
-| Ticker | Side | Flag (vs theme) | Verdict | Why |
-|---|---|---|---|---|
-| **AJG** | short | discount | ✅ justified | M&A-heavy Q2 and 33-deal integration/lease costs threaten the 30.8% margin; FY2 13% growth looks deal-dependent, rev90 is negative and peer read-throughs likely soft, so the discount reflects real deterioration risk. |
-| **ERIE** | neutral | n/a | ❔ uncertain | No valuation flag to test. Q3 is two-sided: fee growth vs 4.7%, commission ratio, underwriting margin and peer read-throughs all need resolution, so the setup is uncertain. |
-| **GSHD** | short | premium | ❌ not justified | Estimate cuts (3 up/8 down), rev90 -2.14% and core revenue half the headline pace contradict the FY2 +25.8% growth needed; the 1.6x P/E premium is unsupported and at risk of compression. |
-| **MRSH** | long | fair | ✅ justified | 5% underlying revenue and 17/2 upward revisions support ~9% FY2 growth; P/E discount offsets the 1.2x PEG premium, making the fair flag justified if Q3 confirms stable guidance. |
-| **RYAN** | long | fair | ✅ justified | 16/0 upward revisions and rev90 +6.4% back 6.7% organic growth, 12% EPS and buybacks; FY2 +11.7% looks credible, so the fair PEG is justified despite E&S slowing. |
+| Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
+|---|---|---|---|---|---|
+| **AJG** | short | discount | ✅ justified | ✅ | M&A-heavy Q2 and 33-deal integration/lease costs threaten the 30.8% margin; FY2 13% growth looks deal-dependent, rev90 is negative and peer read-throughs likely soft, so the discount reflects real deterioration risk. |
+| **ERIE** | neutral | n/a | ❔ uncertain | — | No valuation flag to test. Q3 is two-sided: fee growth vs 4.7%, commission ratio, underwriting margin and peer read-throughs all need resolution, so the setup is uncertain. |
+| **GSHD** | short | premium | ❌ not justified | ✅ | Estimate cuts (3 up/8 down), rev90 -2.14% and core revenue half the headline pace contradict the FY2 +25.8% growth needed; the 1.6x P/E premium is unsupported and at risk of compression. |
+| **MRSH** | long | fair | ✅ justified | — | 5% underlying revenue and 17/2 upward revisions support ~9% FY2 growth; P/E discount offsets the 1.2x PEG premium, making the fair flag justified if Q3 confirms stable guidance. |
+| **RYAN** | long | fair | ✅ justified | — | 16/0 upward revisions and rev90 +6.4% back 6.7% organic growth, 12% EPS and buybacks; FY2 +11.7% looks credible, so the fair PEG is justified despite E&S slowing. |
 
 ## Next-print focus (per member)
 
@@ -42,7 +42,19 @@
   - Q3 margins and adjusted EBITDAC trajectory will show if Q2's restructuring and property-softening pressures are easing; Q2 adjusted EBITDAC grew 6.0% and adjusted diluted EPS grew 12.1%, so a similar or better pace supports the FY1 +10.7% EPS growth path.
   - Capital return remains a forward driver: Q2 included $260 million of repurchases and a $300 million authorization expansion, so Q3 commentary on buyback pace and dividends will shape FY2 EPS growth expectations of +11.7%.
 
+## Trade ideas (deterministic: side × flag × verdict)
+*No LLM, no gate — pure logic on the verdict. `not justified` on the side's own flag = the market's pricing is wrong (a mispricing trade); `justified` = the market is right, ride it.*
+
+**The market is wrong (mispriced):**
+- **GSHD** — short · premium · not justified: Estimate cuts (3 up/8 down), rev90 -2.14% and core revenue half the headline pace contradict the FY2 +25.8% growth needed; the 1.6x P/E premium is unsupported and at risk of compression.
+
+**The market is right, ride it:**
+- **AJG** — short · discount · justified: M&A-heavy Q2 and 33-deal integration/lease costs threaten the 30.8% margin; FY2 13% growth looks deal-dependent, rev90 is negative and peer read-throughs likely soft, so the discount reflects real deterioration risk.
+
+Per-ticker print quals: `Insurance_Brokers/printqual_AJG_2026-09-02.md` · `Insurance_Brokers/printqual_GSHD_2026-09-02.md`
+
 ## How to read this
-- The flag compares the name's P/E and PEG with its theme's median (see the quant table) — it says *where the name sits*, never whether that is right.
-- The verdict judges the flag against the PRINT-FOCUSED case (fresh EDGAR filings, guidance, consensus revisions, dated catalysts, peer prints) — not the deep dive, which can lag the calendar.
-- `not justified` on a premium means the forward case does not support paying the multiple; on a discount it means the weakness looks transitory. Either way, read the member's coverage report and the dive before acting.
+- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see the quant table), and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
+- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
+- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

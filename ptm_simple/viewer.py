@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 
 from ptm.log import log
 
-_SIMPLE_ACTIONS = ("build-themes", "build-wiki", "radar", "run", "run-all", "refresh-fundamentals", "analyze-all", "group-review")
+_SIMPLE_ACTIONS = ("build-themes", "build-wiki", "radar", "refresh-fundamentals", "analyze-all", "group-review")
 _lock = threading.Lock()
 _state: dict = {
     "running": False,
@@ -88,20 +88,6 @@ def _worker(action: str, opts: dict) -> None:
                 "warm": sum(1 for r in counted if r["status"] == "WARM"),
                 "themes_total": len(rows),
             }
-        elif action == "run":
-            from ptm_simple.run import load_theme_map, run_theme_pass
-
-            theme_map = load_theme_map(opts.get("map") or "manual")
-            payload = run_theme_pass(theme_map, opts.get("theme") or "", ref, force=bool(opts.get("force")))
-            result = {"themes_run": payload.get("themes_run", 1), "book": len(payload["book"]),
-                      "parked": len(payload["overflow"]), "ideas": payload["book"], "overflow": payload["overflow"]}
-        elif action == "run-all":
-            from ptm_simple.run import load_theme_map, run_active_pass
-
-            theme_map = load_theme_map(opts.get("map") or "manual")
-            payload = run_active_pass(theme_map, ref, force=bool(opts.get("force")))
-            result = {"themes_run": payload.get("themes_run", 0), "book": len(payload["book"]),
-                      "parked": len(payload["overflow"]), "ideas": payload["book"], "overflow": payload["overflow"]}
         elif action == "refresh-fundamentals":
             from ptm_simple.refresh import refresh_fundamentals
 
@@ -150,11 +136,11 @@ def _worker(action: str, opts: dict) -> None:
 
 def start(action: str, opts: dict, other_work_running: bool = False) -> tuple[bool, dict, int]:
     """Start a simple action. `other_work_running` is the server's own deep
-    dive / pipeline busy flag: a theme pass dives tickers, so it must not
+    dive / pipeline busy flag: analyze-all dives tickers, so it must not
     start on top of another LLM consumer."""
     if action not in _SIMPLE_ACTIONS:
         return False, {"error": f"action must be one of {list(_SIMPLE_ACTIONS)}"}, 400
-    if other_work_running and action in ("run", "run-all"):
+    if other_work_running and action in ("analyze-all", "group-review"):
         return False, {"error": "a deep-dive batch or idea pipeline is running; dives would collide"}, 409
     with _lock:
         if _state["running"]:
@@ -183,7 +169,7 @@ def artifacts() -> dict:
     from ptm.config import data_dir
 
     sdir = data_dir("simple")
-    arts: dict = {"maps": {}, "radar_files": [], "radar_date": None, "book": None, "watchlist": None}
+    arts: dict = {"maps": {}, "radar_files": [], "radar_date": None}
     for source, name in (("manual", "theme_map.json"), ("wiki", "theme_map_wiki.json")):
         path = sdir / name
         if not path.exists():
@@ -206,15 +192,6 @@ def artifacts() -> dict:
         arts["radar_files"].append(path.stem.replace("radar_", ""))
     if arts["radar_files"]:
         arts["radar_date"] = arts["radar_files"][-1]
-    book = _latest_file(sdir, "simple_book_*.json")
-    if book:
-        payload = _read_json(book) or {}
-        arts["book"] = {"file": book.name, "as_of": payload.get("as_of"),
-                        "ideas": len(payload.get("book") or []), "overflow": len(payload.get("overflow") or [])}
-    watch = sdir / "watchlist.json"
-    if watch.exists():
-        payload = _read_json(watch) or {}
-        arts["watchlist"] = {"parked": len(payload.get("parked") or [])}
     ideadir = ideas_dir_simple()
     arts["reports"] = sum(1 for _ in ideadir.rglob("*.md")) if ideadir.exists() else 0
     return arts
@@ -261,12 +238,12 @@ def get_radar(date_str: str | None = None) -> dict:
 
 
 def get_theme_detail(name: str, source: str) -> dict:
-    """Live radar row + deterministic shortlist for one theme."""
+    """Live radar row for one theme."""
     from datetime import date as _date
 
     from ptm.asof import as_of_date
     from ptm_simple.radar import theme_radar
-    from ptm_simple.run import load_theme_map, select_theme, theme_entry
+    from ptm_simple.run import load_theme_map, theme_entry
 
     ref = as_of_date()
     theme_map = load_theme_map(source)
@@ -276,26 +253,7 @@ def get_theme_detail(name: str, source: str) -> dict:
     from ptm_simple.run import _fundamentals
 
     row = theme_radar(entry, _fundamentals(), ref)
-    sel = select_theme(theme_map, name, ref)
-    return {"row": {k: v for k, v in row.items() if k != "members"}, "members": row["members"], "selection": sel, "ref": ref.isoformat()}
-
-
-def get_book() -> dict:
-    from ptm.config import data_dir
-
-    book = _latest_file(data_dir("simple"), "simple_book_*.json")
-    if not book:
-        return {"error": "no book yet: run a theme pass"}
-    return {"book": _read_json(book) or {}, "file": book.name}
-
-
-def get_watchlist() -> dict:
-    from ptm.config import data_dir
-
-    path = data_dir("simple", "watchlist.json")
-    if not path.exists():
-        return {"parked": [], "as_of": None}
-    return _read_json(path) or {"parked": []}
+    return {"row": {k: v for k, v in row.items() if k != "members"}, "members": row["members"], "ref": ref.isoformat()}
 
 
 def get_quant() -> dict:

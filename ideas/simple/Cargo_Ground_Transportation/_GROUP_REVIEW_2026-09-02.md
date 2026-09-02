@@ -6,16 +6,16 @@
 
 **Summary**: Most premium flags look stretched versus modest growth or one-off Q2 gains; ARCB's discount and KNX's fair flag are best supported. HTLD and ODFL both lean on Q2 non-core gains and need core OR proof; KNX/JBHT/ARCB share the freight-tightening driver, with KNX reporting first.
 
-| Ticker | Side | Flag (vs theme) | Verdict | Why |
-|---|---|---|---|---|
-| **ARCB** | long | discount | ❌ not justified | Discount looks unjustified: 32% revenue revision upside, 9-2 analyst skew, and an 84%/39% EPS growth path into Q3 set up an earnings inflection that should close the valuation gap if confirmed. |
-| **HTLD** | long | premium | ❔ uncertain | Premium is a coin flip: PEG is at parity but P/E is 1.8x median; Q2 profit relied on equipment gains and Q3 must prove CFI synergies and core OR improvement to justify the 67x forward multiple. |
-| **JBHT** | long | premium | ❌ not justified | Premium looks unjustified: PEG at 2.5x median is too rich for 28-29% EPS growth; 'minibids' may have added low-margin volume rather than pricing power, and Q3 must show intermodal yield acceleration to earn the multiple. |
-| **KNX** | long | fair | ✅ justified | Fair flag is justified: P/E and PEG both below median against 84%/73% EPS growth, 16-0 analyst revisions, and Q3 guidance that should confirm truckload pricing acceleration and cost resets. |
-| **MRTN** | long | premium | ❌ not justified | Premium looks unjustified: P/E and PEG are well above median while ex-fuel revenue and operating income were still down YoY in Q2; fuel surcharge revenue masked core weakness, so Q3 must prove ex-fuel growth and margin expansion. |
-| **ODFL** | long | premium | ❌ not justified | Premium looks unjustified: PEG at 3.6x median is steep for 20%/13% growth; Q2 OR was flattered by $17.2m asset disposal gains and tons per day fell 4.1%, so Q3 must show volume stabilization and true OR progress. |
-| **RXO** | long | premium | ❔ uncertain | Premium is hard to judge from truncated data, but 400%+ FY1/FY2 EPS growth and PEG at parity suggest the extreme P/E could be justified if execution matches the hyper-growth path; missing forward details create uncertainty. |
-| **WERN** | long | discount | ❔ uncertain | not covered by the review pass — see the member's print qual or coverage report |
+| Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
+|---|---|---|---|---|---|
+| **ARCB** | long | discount | ❌ not justified | ✅ | Discount looks unjustified: 32% revenue revision upside, 9-2 analyst skew, and an 84%/39% EPS growth path into Q3 set up an earnings inflection that should close the valuation gap if confirmed. |
+| **HTLD** | long | premium | ❔ uncertain | — | Premium is a coin flip: PEG is at parity but P/E is 1.8x median; Q2 profit relied on equipment gains and Q3 must prove CFI synergies and core OR improvement to justify the 67x forward multiple. |
+| **JBHT** | long | premium | ❌ not justified | ⛔ | Premium looks unjustified: PEG at 2.5x median is too rich for 28-29% EPS growth; 'minibids' may have added low-margin volume rather than pricing power, and Q3 must show intermodal yield acceleration to earn the multiple. |
+| **KNX** | long | fair | ✅ justified | — | Fair flag is justified: P/E and PEG both below median against 84%/73% EPS growth, 16-0 analyst revisions, and Q3 guidance that should confirm truckload pricing acceleration and cost resets. |
+| **MRTN** | long | premium | ❌ not justified | ⛔ | Premium looks unjustified: P/E and PEG are well above median while ex-fuel revenue and operating income were still down YoY in Q2; fuel surcharge revenue masked core weakness, so Q3 must prove ex-fuel growth and margin expansion. |
+| **ODFL** | long | premium | ❌ not justified | ⛔ | Premium looks unjustified: PEG at 3.6x median is steep for 20%/13% growth; Q2 OR was flattered by $17.2m asset disposal gains and tons per day fell 4.1%, so Q3 must show volume stabilization and true OR progress. |
+| **RXO** | long | premium | ❔ uncertain | — | Premium is hard to judge from truncated data, but 400%+ FY1/FY2 EPS growth and PEG at parity suggest the extreme P/E could be justified if execution matches the hyper-growth path; missing forward details create uncertainty. |
+| **WERN** | long | discount | ❔ uncertain | — | not covered by the review pass — see the member's print qual or coverage report |
 
 ## Next-print focus (per member)
 
@@ -60,7 +60,16 @@
   - Werner Logistics posted a Q2 adjusted operating loss of $2.7 million versus prior-year income of $5.9 million; Q3 will reveal whether the segment is stabilizing and moving back toward profitability, a key lever for consolidated margins.
   - Q2 was the second consecutive quarter of favorable safety, insurance and claims trends; Q3 results will show if those cost tailwinds continued and helped convert revenue growth into operating leverage.
 
+## Trade ideas (deterministic: side × flag × verdict)
+*No LLM, no gate — pure logic on the verdict. `not justified` on the side's own flag = the market's pricing is wrong (a mispricing trade); `justified` = the market is right, ride it.*
+
+**The market is wrong (mispriced):**
+- **ARCB** — long · discount · not justified: Discount looks unjustified: 32% revenue revision upside, 9-2 analyst skew, and an 84%/39% EPS growth path into Q3 set up an earnings inflection that should close the valuation gap if confirmed.
+
+Per-ticker print quals: `Cargo_Ground_Transportation/printqual_ARCB_2026-09-02.md`
+
 ## How to read this
-- The flag compares the name's P/E and PEG with its theme's median (see the quant table) — it says *where the name sits*, never whether that is right.
-- The verdict judges the flag against the PRINT-FOCUSED case (fresh EDGAR filings, guidance, consensus revisions, dated catalysts, peer prints) — not the deep dive, which can lag the calendar.
-- `not justified` on a premium means the forward case does not support paying the multiple; on a discount it means the weakness looks transitory. Either way, read the member's coverage report and the dive before acting.
+- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see the quant table), and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
+- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
+- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

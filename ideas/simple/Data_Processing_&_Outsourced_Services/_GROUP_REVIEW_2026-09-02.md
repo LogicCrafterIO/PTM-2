@@ -6,12 +6,12 @@
 
 **Summary**: Most flags fit their forward cases: CNXC and VRRM discounts are justified by weak demand/earnings, EXLS fair is justified by momentum, while MBGL is uncertain pending Q3 margin/estimate clarity.
 
-| Ticker | Side | Flag (vs theme) | Verdict | Why |
-|---|---|---|---|---|
-| **CNXC** | short | discount | ✅ justified | Forward case points to stalled demand, margin compression, and estimate cuts; a Q3 miss or unchanged weak guidance would confirm the discount is warranted by durable deterioration. |
-| **EXLS** | long | fair | ✅ justified | Strong Q2 momentum, raised 2026 outlook, and 9/0 upward revisions support ~17%/13% EPS growth and a PEG near 1.0, so the fair flag is backed by fundamentals. |
-| **MBGL** | neutral | fair | ❔ uncertain | CARFAX recalibration and Q2 earnings decline create uncertainty; stable guidance could support fair, but further margin compression or estimate cuts would make fair look optimistic. |
-| **VRRM** | short | discount | ✅ justified | One-time NYC lift, net loss from impairments, falling cash flow, and FY2 EPS expected down ~17% support the discount as earnings quality deteriorates. |
+| Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
+|---|---|---|---|---|---|
+| **CNXC** | short | discount | ✅ justified | ✅ | Forward case points to stalled demand, margin compression, and estimate cuts; a Q3 miss or unchanged weak guidance would confirm the discount is warranted by durable deterioration. |
+| **EXLS** | long | fair | ✅ justified | — | Strong Q2 momentum, raised 2026 outlook, and 9/0 upward revisions support ~17%/13% EPS growth and a PEG near 1.0, so the fair flag is backed by fundamentals. |
+| **MBGL** | neutral | fair | ❔ uncertain | — | CARFAX recalibration and Q2 earnings decline create uncertainty; stable guidance could support fair, but further margin compression or estimate cuts would make fair look optimistic. |
+| **VRRM** | short | discount | ✅ justified | ✅ | One-time NYC lift, net loss from impairments, falling cash flow, and FY2 EPS expected down ~17% support the discount as earnings quality deteriorates. |
 
 ## Next-print focus (per member)
 
@@ -36,7 +36,17 @@
   - Operating cash flow dropped to $56.4 million in Q2 from $75.1 million a year ago; Q3 cash generation will show whether cash conversion is weakening even though adjusted EBITDA rose, which would hurt earnings quality.
   - Management revised FY2026 guidance in Q2; the Q3 print and updated outlook will test whether that guidance is already at risk, given consensus expects FY2 EPS to fall another 16.9%.
 
+## Trade ideas (deterministic: side × flag × verdict)
+*No LLM, no gate — pure logic on the verdict. `not justified` on the side's own flag = the market's pricing is wrong (a mispricing trade); `justified` = the market is right, ride it.*
+
+**The market is right, ride it:**
+- **CNXC** — short · discount · justified: Forward case points to stalled demand, margin compression, and estimate cuts; a Q3 miss or unchanged weak guidance would confirm the discount is warranted by durable deterioration.
+- **VRRM** — short · discount · justified: One-time NYC lift, net loss from impairments, falling cash flow, and FY2 EPS expected down ~17% support the discount as earnings quality deteriorates.
+
+Per-ticker print quals: `Data_Processing_&_Outsourced_Services/printqual_CNXC_2026-09-02.md` · `Data_Processing_&_Outsourced_Services/printqual_VRRM_2026-09-02.md`
+
 ## How to read this
-- The flag compares the name's P/E and PEG with its theme's median (see the quant table) — it says *where the name sits*, never whether that is right.
-- The verdict judges the flag against the PRINT-FOCUSED case (fresh EDGAR filings, guidance, consensus revisions, dated catalysts, peer prints) — not the deep dive, which can lag the calendar.
-- `not justified` on a premium means the forward case does not support paying the multiple; on a discount it means the weakness looks transitory. Either way, read the member's coverage report and the dive before acting.
+- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see the quant table), and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
+- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
+- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

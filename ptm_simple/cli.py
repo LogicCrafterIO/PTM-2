@@ -2,9 +2,6 @@
 
     .venv/bin/python -m ptm_simple build-themes [--xlsx PATH] [--map manual|wiki]
     .venv/bin/python -m ptm_simple radar [--map manual|wiki] [--llm] [--theme NAME] [--refresh N]
-    .venv/bin/python -m ptm_simple select --theme NAME [--map manual|wiki]
-    .venv/bin/python -m ptm_simple run --theme NAME [--map manual|wiki] [--force]
-    .venv/bin/python -m ptm_simple run --all [--map manual|wiki] [--force]  # sweep non-COLD themes
     .venv/bin/python -m ptm_simple refresh-fundamentals [--map manual|wiki] [--all] [--force]
         [--estimates] [--no-prices]  # fresh fundamentals for the quant table
     .venv/bin/python -m ptm_simple analyze-all [--map manual|wiki] [--force]
@@ -40,18 +37,6 @@ def main() -> None:
     p.add_argument("--llm", action="store_true", help="grade WHY-NOW activation per active theme")
     p.add_argument("--refresh", type=int, default=0, help="refresh N member expectation caches per theme")
     p.add_argument("--day", help="override the reference date (YYYY-MM-DD)")
-    add_map(p)
-
-    p = sub.add_parser("select", help="rank members of active themes")
-    p.add_argument("--theme", help="one theme only")
-    p.add_argument("--day")
-    add_map(p)
-
-    p = sub.add_parser("run", help="full pass for a theme: dive shortlist, gate, book, reports")
-    p.add_argument("--theme", help="one theme; omit with --all to sweep every non-COLD theme")
-    p.add_argument("--all", action="store_true", help="run every non-COLD theme and assemble one book")
-    p.add_argument("--force", action="store_true", help="redo the dives even when cached")
-    p.add_argument("--day")
     add_map(p)
 
     p = sub.add_parser(
@@ -161,35 +146,6 @@ def main() -> None:
         log(f"group-review done: {out['themes']} theme(s), {out['judged']} member(s) judged, "
             f"{out['markdown']} markdown file(s)")
         return
-
-    if args.cmd == "select":
-        from ptm_simple.run import select_theme, theme_entry
-
-        for entry in theme_map["themes"]:
-            if args.theme and entry["theme"] != args.theme:
-                continue
-            sel = select_theme(theme_map, entry["theme"], ref)
-            if sel["status"] == "COLD":
-                log(f"  {sel['theme']}: COLD — skipping")
-                continue
-            log(f"  {sel['status']} {sel['theme']} ({sel['lean']}): "
-                f"long {[e['ticker'] for e in sel['long']]}, short {[e['ticker'] for e in sel['short']]}")
-        return
-
-    if args.cmd == "run":
-        from ptm_simple.run import run_active_pass, run_theme_pass
-
-        if getattr(args, "all", False):
-            payload = run_active_pass(theme_map, ref, force=args.force)
-            log(f"run-all done: {payload.get('themes_run', 0)} theme(s), "
-                f"{len(payload['book'])} idea(s) in the book, {len(payload['overflow'])} parked")
-        else:
-            if not args.theme:
-                raise SystemExit("run needs --theme NAME (or --all for every non-COLD theme)")
-            payload = run_theme_pass(theme_map, args.theme, ref, force=args.force)
-            log(f"run {args.theme} done: {len(payload['book'])} idea(s) in the book")
-        return
-
 
 if __name__ == "__main__":
     main()

@@ -6,12 +6,12 @@
 
 **Summary**: FA and PAYX fair flags are supported by stable/raised guidance and positive estimate momentum, UPWK's discount is earned by deteriorating fundamentals, while RHI's premium is not justified by its weakening print and suspect rebound.
 
-| Ticker | Side | Flag (vs theme) | Verdict | Why |
-|---|---|---|---|---|
-| **FA** | long | fair | ✅ justified | Q2 record revenue, raised FY guidance, 8/0 upward revisions and 20%+ EPS growth support a fair relative multiple; weaker PAYX/RHI read-throughs are a risk but not yet realized. |
-| **PAYX** | long | fair | ✅ justified | Q1 FY27 is already closed with an in-line FY27 outlook and modest estimate momentum; stable mid-single-digit growth fits a market-average P/E, so fair is reasonable. |
-| **RHI** | short | premium | ❌ not justified | Declining revenue/EPS, FY1 estimate cuts and a questionable 55% FY2 consensus rebound don't support a 35x/1.7x premium; narrow segment positives are insufficient. |
-| **UPWK** | short | discount | ✅ justified | Lowered guidance, shrinking active-client risk, negative FY1/FY2 EPS growth and AI cannibalization of legacy work make the discount look earned by durable deterioration. |
+| Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
+|---|---|---|---|---|---|
+| **FA** | long | fair | ✅ justified | — | Q2 record revenue, raised FY guidance, 8/0 upward revisions and 20%+ EPS growth support a fair relative multiple; weaker PAYX/RHI read-throughs are a risk but not yet realized. |
+| **PAYX** | long | fair | ✅ justified | — | Q1 FY27 is already closed with an in-line FY27 outlook and modest estimate momentum; stable mid-single-digit growth fits a market-average P/E, so fair is reasonable. |
+| **RHI** | short | premium | ❌ not justified | ✅ | Declining revenue/EPS, FY1 estimate cuts and a questionable 55% FY2 consensus rebound don't support a 35x/1.7x premium; narrow segment positives are insufficient. |
+| **UPWK** | short | discount | ✅ justified | ✅ | Lowered guidance, shrinking active-client risk, negative FY1/FY2 EPS growth and AI cannibalization of legacy work make the discount look earned by durable deterioration. |
 
 ## Next-print focus (per member)
 
@@ -36,7 +36,19 @@
   - AI-related work was the growth engine (> $300 million annualized in Q4 2025, up >50% year over year), but Q3 will reveal whether AI volumes are cannibalizing legacy categories and whether total GSV can grow without heavy discounting.
   - Margin expansion has carried earnings (Q4 2025 adjusted EBITDA margin was 29%, and Q2 reports suggest higher margins), so Q3 will test if cost leverage can keep offsetting revenue softness; if margins plateau while sales miss, the ~$1.39 FY1 EPS consensus looks at risk.
 
+## Trade ideas (deterministic: side × flag × verdict)
+*No LLM, no gate — pure logic on the verdict. `not justified` on the side's own flag = the market's pricing is wrong (a mispricing trade); `justified` = the market is right, ride it.*
+
+**The market is wrong (mispriced):**
+- **RHI** — short · premium · not justified: Declining revenue/EPS, FY1 estimate cuts and a questionable 55% FY2 consensus rebound don't support a 35x/1.7x premium; narrow segment positives are insufficient.
+
+**The market is right, ride it:**
+- **UPWK** — short · discount · justified: Lowered guidance, shrinking active-client risk, negative FY1/FY2 EPS growth and AI cannibalization of legacy work make the discount look earned by durable deterioration.
+
+Per-ticker print quals: `Human_Resource_&_Employment_Services/printqual_RHI_2026-09-02.md` · `Human_Resource_&_Employment_Services/printqual_UPWK_2026-09-02.md`
+
 ## How to read this
-- The flag compares the name's P/E and PEG with its theme's median (see the quant table) — it says *where the name sits*, never whether that is right.
-- The verdict judges the flag against the PRINT-FOCUSED case (fresh EDGAR filings, guidance, consensus revisions, dated catalysts, peer prints) — not the deep dive, which can lag the calendar.
-- `not justified` on a premium means the forward case does not support paying the multiple; on a discount it means the weakness looks transitory. Either way, read the member's coverage report and the dive before acting.
+- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see the quant table), and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
+- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
+- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

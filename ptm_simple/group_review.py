@@ -71,6 +71,31 @@ _SYSTEM = (
 )
 
 
+def _trade_tag(side: str | None, flag: str | None, verdict: str) -> str:
+    """Deterministic side×flag×verdict consistency — pure logic, no LLM.
+
+    aligned:      the verdict AGREES with the side's premise —
+                  long + (premium justified | discount not justified), or
+                  short + (premium not justified | discount justified).
+    contradicted: the mirror combinations — the verdict argues against the side
+                  (long + premium not justified, long + discount justified, ...).
+    neutral:      fair/mixed flags, neutral sides, uncertain verdicts, no flag.
+
+    The four aligned combinations are the trade candidates: "the market is
+    wrong" (not justified on the side's flag) and "the market is right, ride
+    it" (justified premium for a long, justified discount for a short)."""
+    if not side or side == "neutral" or not flag or flag == "n/a" or verdict == "uncertain":
+        return "neutral"
+    if flag not in ("premium", "discount"):
+        return "neutral"  # fair/mixed never picks a side
+    premium = flag == "premium"
+    if verdict == "justified":
+        return "aligned" if (side == "long") == premium else "contradicted"
+    if verdict == "not justified":
+        return "aligned" if (side == "long") != premium else "contradicted"
+    return "neutral"
+
+
 def _member_packet(ticker: str, side: str | None, qrow: dict, pq: dict | None, member: dict) -> dict:
     """Compact print-focused packet for one member — fresh inputs only, no dive."""
     from ptm_simple.brief import _reported_quarter
@@ -172,6 +197,7 @@ def review_theme(theme_row: dict, quant_by_ticker: dict[str, dict], ref: date) -
     side their own revisions imply, flat/no-side names go in side-neutral (the
     print brief asks what would CREATE a side), and a member is skipped only
     when it has neither revision data nor a valuation flag to judge."""
+    from ptm_simple import simple_ideas_dir
     from ptm_simple.print_qual import print_brief
 
     theme = theme_row["theme"]
@@ -184,6 +210,7 @@ def review_theme(theme_row: dict, quant_by_ticker: dict[str, dict], ref: date) -
     packets = []
     skipped = []
     print_focus: dict[str, dict] = {}
+    pq_paths: dict[str, str] = {}
     for m in members:
         ticker = m["ticker"]
         qrow = quant_by_ticker.get(ticker) or {}
@@ -200,7 +227,8 @@ def review_theme(theme_row: dict, quant_by_ticker: dict[str, dict], ref: date) -
         packet = _member_packet(ticker, side, qrow, pq, m)
         packets.append(packet)
         try:
-            _printqual_md(theme_row, packet, pq, ref)
+            pq_path = _printqual_md(theme_row, packet, pq, ref)
+            pq_paths[ticker] = str(pq_path.relative_to(simple_ideas_dir()))
         except Exception as exc:
             log(f"group review {theme}: printqual md {ticker} failed: {str(exc)[:80]}")
     out = {
@@ -218,11 +246,19 @@ def review_theme(theme_row: dict, quant_by_ticker: dict[str, dict], ref: date) -
     if not packets:
         out["summary"] = "no members with data or a flag to review"
         return out
+
+    def _row(p: dict, verdict: str, reason: str) -> dict:
+        return {
+            "ticker": p["ticker"], "side": p["side"], "flag": p["flag"], "verdict": verdict,
+            "reason": reason, "trade": _trade_tag(p["side"], p["flag"], verdict),
+            "watch": (print_focus.get(p["ticker"]) or {}).get("watch") or [],
+            "printqual": pq_paths.get(p["ticker"], ""),
+        }
+
     if not llm_available():
         out["summary"] = "LLM unavailable — flags rendered unjudged"
         out["reviews"] = [
-            {"ticker": p["ticker"], "side": p["side"], "flag": p["flag"],
-             "verdict": "uncertain", "reason": "no LLM pass — see the member's print qual or coverage report"}
+            _row(p, "uncertain", "no LLM pass — see the member's print qual or coverage report")
             for p in packets
         ]
         return out
@@ -232,8 +268,7 @@ def review_theme(theme_row: dict, quant_by_ticker: dict[str, dict], ref: date) -
         log(f"group review {theme}: FAIL {str(exc)[:120]}")
         out["summary"] = "LLM call failed — flags rendered unjudged"
         out["reviews"] = [
-            {"ticker": p["ticker"], "side": p["side"], "flag": p["flag"],
-             "verdict": "uncertain", "reason": "review call failed — see the member's print qual or coverage report"}
+            _row(p, "uncertain", "review call failed — see the member's print qual or coverage report")
             for p in packets
         ]
         return out
@@ -251,19 +286,11 @@ def review_theme(theme_row: dict, quant_by_ticker: dict[str, dict], ref: date) -
         verdict = str(item.get("verdict") or "uncertain").strip().lower()
         if verdict not in ("justified", "not justified", "uncertain"):
             verdict = "uncertain"
-        p = by_ticker[ticker]
-        out["reviews"].append({
-            "ticker": ticker, "side": p["side"], "flag": p["flag"], "verdict": verdict,
-            "reason": str(item.get("reason") or "").strip()[:300],
-            "watch": (print_focus.get(ticker) or {}).get("watch") or [],
-        })
+        out["reviews"].append(_row(by_ticker[ticker], verdict, str(item.get("reason") or "").strip()[:300]))
     for p in packets:  # coverage: a member the model skipped is recorded, not lost
         if p["ticker"] not in seen:
-            out["reviews"].append({
-                "ticker": p["ticker"], "side": p["side"], "flag": p["flag"], "verdict": "uncertain",
-                "reason": "not covered by the review pass — see the member's print qual or coverage report",
-                "watch": (print_focus.get(p["ticker"]) or {}).get("watch") or [],
-            })
+            out["reviews"].append(
+                _row(p, "uncertain", "not covered by the review pass — see the member's print qual or coverage report"))
     log(f"group review {theme}: {len(out['reviews'])} member(s) judged")
     return out
 
@@ -283,13 +310,15 @@ def _review_md(rev: dict, ref: date) -> str:
         "",
         f"**Summary**: {rev.get('summary') or '(none)'}",
         "",
-        "| Ticker | Side | Flag (vs theme) | Verdict | Why |",
-        "|---|---|---|---|---|",
+        "| Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |",
+        "|---|---|---|---|---|---|",
     ]
+    idea_mark = {"aligned": "✅", "contradicted": "⛔", "neutral": "—"}
     for r in rev.get("reviews", []):
         mark = {"justified": "✅", "not justified": "❌", "uncertain": "❔"}.get(r["verdict"], "❔")
         lines.append(
             f"| **{r['ticker']}** | {r.get('side', '')} | {r.get('flag', 'n/a')} | {mark} {r['verdict']} | "
+            f"{idea_mark.get(r.get('trade', 'neutral'), '—')} | "
             f"{str(r.get('reason', '')).replace('|', '/')} |"
         )
     focus = rev.get("print_focus") or {}
@@ -303,6 +332,31 @@ def _review_md(rev: dict, ref: date) -> str:
             lines.append(f"- **{ticker}** — watch: {watch}" if watch else f"- **{ticker}**")
             for p in (pq.get("points") or [])[:4]:
                 lines.append(f"  - {p}")
+    trade_rows = [r for r in rev.get("reviews", []) if r.get("trade") == "aligned"]
+    if trade_rows:
+        lines += [
+            "",
+            "## Trade ideas (deterministic: side × flag × verdict)",
+            "*No LLM, no gate — pure logic on the verdict. `not justified` on the side's own flag = the "
+            "market's pricing is wrong (a mispricing trade); `justified` = the market is right, ride it.*",
+            "",
+        ]
+        wrong = [r for r in trade_rows if r["verdict"] == "not justified"]
+        right = [r for r in trade_rows if r["verdict"] == "justified"]
+        if wrong:
+            lines.append("**The market is wrong (mispriced):**")
+            for r in wrong:
+                lines.append(f"- **{r['ticker']}** — {r['side']} · {r['flag']} · {r['verdict']}: {r.get('reason', '')}")
+        if right:
+            if wrong:
+                lines.append("")
+            lines.append("**The market is right, ride it:**")
+            for r in right:
+                lines.append(f"- **{r['ticker']}** — {r['side']} · {r['flag']} · {r['verdict']}: {r.get('reason', '')}")
+        pq_links = [f"`{r['printqual']}`" for r in trade_rows if r.get("printqual")]
+        if pq_links:
+            lines.append("")
+            lines.append("Per-ticker print quals: " + " · ".join(pq_links))
     lines += [
         "",
         "## How to read this",

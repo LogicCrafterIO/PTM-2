@@ -6,11 +6,11 @@
 
 **Summary**: The group is split: AMD and SMCI share AI/data-center demand drivers and look reasonably/cheaply valued for strong forward momentum, while IBM's premium is inconsistent with low growth and negative revision risk.
 
-| Ticker | Side | Flag (vs theme) | Verdict | Why |
-|---|---|---|---|---|
-| **AMD** | long | fair | ✅ justified | Fair relative valuation fits a balanced forward case: AI/data-center growth and a 32-up/5-down revision trend support the multiple, while margin and Q4 guidance tests keep the flag from looking stretched. |
-| **IBM** | short | premium | ❌ not justified | Premium PEG conflicts with 6-7% EPS growth, negative revisions (6/14), deferred-deal conversion risk and potential guidance pressure; the October print points to multiple compression, not expansion. |
-| **SMCI** | long | discount | ❌ not justified | Deep discount conflicts with record $60B+ backlog, FY2027 $65-72B outlook, gross-margin recovery to 17.5% and 33% revision momentum; execution risks remain but deterioration looks transitory. |
+| Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
+|---|---|---|---|---|---|
+| **AMD** | long | fair | ✅ justified | — | Fair relative valuation fits a balanced forward case: AI/data-center growth and a 32-up/5-down revision trend support the multiple, while margin and Q4 guidance tests keep the flag from looking stretched. |
+| **IBM** | short | premium | ❌ not justified | ✅ | Premium PEG conflicts with 6-7% EPS growth, negative revisions (6/14), deferred-deal conversion risk and potential guidance pressure; the October print points to multiple compression, not expansion. |
+| **SMCI** | long | discount | ❌ not justified | ✅ | Deep discount conflicts with record $60B+ backlog, FY2027 $65-72B outlook, gross-margin recovery to 17.5% and 33% revision momentum; execution risks remain but deterioration looks transitory. |
 
 ## Next-print focus (per member)
 
@@ -30,7 +30,17 @@
   - The $60 billion-plus in new orders and record backlog entering fiscal 2027 are already on the books; the print should reveal shipment timing, backlog conversion, and whether revenue linearity supports the FY1 EPS consensus of $4.34 and FY2 EPS of $4.87.
   - Cash generation and working capital will be under scrutiny: Q4 FY2026 operating cash flow was $747 million, while reports suggest broader cash-flow questions linger, so the September-quarter cash trend and balance-sheet commentary matter for the long.
 
+## Trade ideas (deterministic: side × flag × verdict)
+*No LLM, no gate — pure logic on the verdict. `not justified` on the side's own flag = the market's pricing is wrong (a mispricing trade); `justified` = the market is right, ride it.*
+
+**The market is wrong (mispriced):**
+- **IBM** — short · premium · not justified: Premium PEG conflicts with 6-7% EPS growth, negative revisions (6/14), deferred-deal conversion risk and potential guidance pressure; the October print points to multiple compression, not expansion.
+- **SMCI** — long · discount · not justified: Deep discount conflicts with record $60B+ backlog, FY2027 $65-72B outlook, gross-margin recovery to 17.5% and 33% revision momentum; execution risks remain but deterioration looks transitory.
+
+Per-ticker print quals: `computer_industry/printqual_IBM_2026-09-02.md` · `computer_industry/printqual_SMCI_2026-09-02.md`
+
 ## How to read this
-- The flag compares the name's P/E and PEG with its theme's median (see the quant table) — it says *where the name sits*, never whether that is right.
-- The verdict judges the flag against the PRINT-FOCUSED case (fresh EDGAR filings, guidance, consensus revisions, dated catalysts, peer prints) — not the deep dive, which can lag the calendar.
-- `not justified` on a premium means the forward case does not support paying the multiple; on a discount it means the weakness looks transitory. Either way, read the member's coverage report and the dive before acting.
+- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see the quant table), and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
+- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
+- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

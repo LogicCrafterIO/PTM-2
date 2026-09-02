@@ -6,12 +6,12 @@
 
 **Summary**: Theme flags are mostly mismatched with forward cases: EXPE's deep discount looks unjustified against strong Q2 momentum and low PEG, MAR's premium looks stretched versus modest RevPAR/EPS growth, ABNB's fair flag fits balanced summer risks, and TRIP's discount is justified by severe estimate cuts. A
 
-| Ticker | Side | Flag (vs theme) | Verdict | Why |
-|---|---|---|---|---|
-| **ABNB** | long | fair | ✅ justified | Fair flag fits balanced setup: Q2 10% nights/16% GBV and ~35% EBITDA set a high bar, summer may accelerate but ADR comps and services expansion add uncertainty, and PEG is right at median. |
-| **EXPE** | long | discount | ❌ not justified | Discount is too steep given Q2 acceleration (14% rev, 12% bookings), B2B growing ~3x consumer, raised guidance, and 31.6% FY1 EPS growth on a 0.48x PEG; print could re-rate the multiple. |
-| **MAR** | long | premium | ❌ not justified | Premium looks stretched: PEG 1.6x median with FY1 EPS growth of 16.9% and FY2 of 12.4%, while RevPAR guidance is only 3-3.5% and international RevPAR was negative in Q2. Buybacks/pipeline help but do not fully justify the valuation. |
-| **TRIP** | short | discount | ✅ justified | Discount is justified by deteriorating fundamentals: -35.6% revenue revisions, FY1 EPS down 33%, 0 up/3 down analyst trend, and risk of further guide-downs make the 0.4x P/E a value trap for the short case. |
+| Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
+|---|---|---|---|---|---|
+| **ABNB** | long | fair | ✅ justified | — | Fair flag fits balanced setup: Q2 10% nights/16% GBV and ~35% EBITDA set a high bar, summer may accelerate but ADR comps and services expansion add uncertainty, and PEG is right at median. |
+| **EXPE** | long | discount | ❌ not justified | ✅ | Discount is too steep given Q2 acceleration (14% rev, 12% bookings), B2B growing ~3x consumer, raised guidance, and 31.6% FY1 EPS growth on a 0.48x PEG; print could re-rate the multiple. |
+| **MAR** | long | premium | ❌ not justified | ⛔ | Premium looks stretched: PEG 1.6x median with FY1 EPS growth of 16.9% and FY2 of 12.4%, while RevPAR guidance is only 3-3.5% and international RevPAR was negative in Q2. Buybacks/pipeline help but do not fully justify the valuation. |
+| **TRIP** | short | discount | ✅ justified | ✅ | Discount is justified by deteriorating fundamentals: -35.6% revenue revisions, FY1 EPS down 33%, 0 up/3 down analyst trend, and risk of further guide-downs make the 0.4x P/E a value trap for the short case. |
 
 ## Next-print focus (per member)
 
@@ -36,7 +36,19 @@
   - FY2 EPS growth of +26.5% is the recovery thesis; Q3 commentary and guidance will reveal whether that rebound is intact or needs to be cut back.
   - TRIP trades at a 0.4x theme P/E discount, but if the print brings further estimate cuts the discount is likely a value trap rather than a floor; the short works if the multiple compresses alongside earnings.
 
+## Trade ideas (deterministic: side × flag × verdict)
+*No LLM, no gate — pure logic on the verdict. `not justified` on the side's own flag = the market's pricing is wrong (a mispricing trade); `justified` = the market is right, ride it.*
+
+**The market is wrong (mispriced):**
+- **EXPE** — long · discount · not justified: Discount is too steep given Q2 acceleration (14% rev, 12% bookings), B2B growing ~3x consumer, raised guidance, and 31.6% FY1 EPS growth on a 0.48x PEG; print could re-rate the multiple.
+
+**The market is right, ride it:**
+- **TRIP** — short · discount · justified: Discount is justified by deteriorating fundamentals: -35.6% revenue revisions, FY1 EPS down 33%, 0 up/3 down analyst trend, and risk of further guide-downs make the 0.4x P/E a value trap for the short case.
+
+Per-ticker print quals: `tourism_industry/printqual_EXPE_2026-09-02.md` · `tourism_industry/printqual_TRIP_2026-09-02.md`
+
 ## How to read this
-- The flag compares the name's P/E and PEG with its theme's median (see the quant table) — it says *where the name sits*, never whether that is right.
-- The verdict judges the flag against the PRINT-FOCUSED case (fresh EDGAR filings, guidance, consensus revisions, dated catalysts, peer prints) — not the deep dive, which can lag the calendar.
-- `not justified` on a premium means the forward case does not support paying the multiple; on a discount it means the weakness looks transitory. Either way, read the member's coverage report and the dive before acting.
+- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see the quant table), and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
+- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
+- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

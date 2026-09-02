@@ -268,6 +268,25 @@ def test_group_review_writes_markdown_and_aggregate(isolate_roots, monkeypatch):
     assert md and "Group review" in md[0].read_text(encoding="utf-8")
 
 
+# --- the trade tag (deterministic side × flag × verdict) ----------------------
+
+def test_trade_tag_four_aligned_combinations():
+    from ptm_simple.group_review import _trade_tag
+
+    assert _trade_tag("long", "premium", "justified") == "aligned"
+    assert _trade_tag("long", "discount", "not justified") == "aligned"
+    assert _trade_tag("short", "discount", "justified") == "aligned"
+    assert _trade_tag("short", "premium", "not justified") == "aligned"
+    assert _trade_tag("long", "premium", "not justified") == "contradicted"
+    assert _trade_tag("long", "discount", "justified") == "contradicted"
+    assert _trade_tag("short", "premium", "justified") == "contradicted"
+    assert _trade_tag("short", "discount", "not justified") == "contradicted"
+    assert _trade_tag("long", "fair", "justified") == "neutral"
+    assert _trade_tag("neutral", "premium", "justified") == "neutral"
+    assert _trade_tag("long", "premium", "uncertain") == "neutral"
+    assert _trade_tag("long", "n/a", "justified") == "neutral"
+
+
 def test_group_review_llm_path_verdicts_are_validated(isolate_roots, monkeypatch):
     from ptm.config import data_dir
     from ptm_simple import group_review, print_qual
@@ -296,6 +315,7 @@ def test_group_review_llm_path_verdicts_are_validated(isolate_roots, monkeypatch
             "reviews": [
                 {"ticker": "T0", "verdict": "justified", "reason": "backlog keeps growing into the multiple"},
                 {"ticker": "T1", "verdict": "bogus", "reason": "bad verdict word"},
+                {"ticker": "T2", "verdict": "justified", "reason": "the premium is earned by forward growth"},
             ],
         }
 
@@ -306,4 +326,9 @@ def test_group_review_llm_path_verdicts_are_validated(isolate_roots, monkeypatch
     assert by["T0"]["verdict"] == "justified"
     assert by["T1"]["verdict"] == "uncertain"  # an unrecognised verdict never passes through
     assert by["T0"]["watch"] == ["Backlog growth"]  # print-qual KPIs ride along for the viewer
+    # the deterministic trade tag: T0 is long + discount + justified -> the
+    # verdict argues against the side; T2 is long + premium + justified -> aligned
+    assert by["T0"]["trade"] == "contradicted"
+    assert by["T2"]["trade"] == "aligned"
+    assert by["T2"]["printqual"].endswith("printqual_T2_2026-09-02.md")
     assert out["judged"] >= 1

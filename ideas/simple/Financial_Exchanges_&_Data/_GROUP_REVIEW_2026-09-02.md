@@ -6,13 +6,13 @@
 
 **Summary**: CBOE's fair tag is clean; ICE's premium looks stretched by revision/expense headwinds; MSCI's premium and VIRT's discount are both Q3-dependent and uncertain; DFIN's deep discount is contradicted by estimate momentum. CBOE and VIRT share trading-volume read-throughs.
 
-| Ticker | Side | Flag (vs theme) | Verdict | Why |
-|---|---|---|---|---|
-| **CBOE** | long | fair | ✅ justified | Raised organic revenue guidance, record Q2 derivatives/data growth, 11/0 upward revisions and FY1 EPS up 33% support a median P/E/PEG; the fair flag is earned. |
-| **DFIN** | long | discount | ❌ not justified | Deep discount clashes with 2/0 upward revisions, +2.7% rev90 and regulatory software momentum; low 2.8% revenue growth and FY2 deceleration look transitory at 0.3x PEG. |
-| **ICE** | neutral | premium | ❌ not justified | Premium PEG is hard to justify with 5/7 down revisions, barely positive rev90 and Q2 expense pressure; FY2 growth near 8% does not clearly reaccelerate. |
-| **MSCI** | neutral | premium | ❔ uncertain | Premium flag hangs on Q3 confirmation of Run Rate growth and margin expansion; strong recurring book supports it, but 7/8 revision skew and expense concerns keep it uncertain. |
-| **VIRT** | long | discount | ❔ uncertain | Discount is contested: +13.6% rev90 and 5/0 upward revisions argue against it, but FY2 EPS consensus implies a 5% contraction that could prove durable. |
+| Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
+|---|---|---|---|---|---|
+| **CBOE** | long | fair | ✅ justified | — | Raised organic revenue guidance, record Q2 derivatives/data growth, 11/0 upward revisions and FY1 EPS up 33% support a median P/E/PEG; the fair flag is earned. |
+| **DFIN** | long | discount | ❌ not justified | ✅ | Deep discount clashes with 2/0 upward revisions, +2.7% rev90 and regulatory software momentum; low 2.8% revenue growth and FY2 deceleration look transitory at 0.3x PEG. |
+| **ICE** | neutral | premium | ❌ not justified | — | Premium PEG is hard to justify with 5/7 down revisions, barely positive rev90 and Q2 expense pressure; FY2 growth near 8% does not clearly reaccelerate. |
+| **MSCI** | neutral | premium | ❔ uncertain | — | Premium flag hangs on Q3 confirmation of Run Rate growth and margin expansion; strong recurring book supports it, but 7/8 revision skew and expense concerns keep it uncertain. |
+| **VIRT** | long | discount | ❔ uncertain | — | Discount is contested: +13.6% rev90 and 5/0 upward revisions argue against it, but FY2 EPS consensus implies a 5% contraction that could prove durable. |
 
 ## Next-print focus (per member)
 
@@ -42,7 +42,16 @@
   - The name trades at 9.2x FY1 earnings and a 0.33x PEG, roughly half the theme median on both metrics; the print will reveal whether that discount reflects a real fundamental gap or a valuation opportunity.
   - Peer prints from CBOE, ICE, MSCI and DFIN in late October will provide read-throughs on trading volumes and market-data demand ahead of Virtu's report; stronger results there support the long case.
 
+## Trade ideas (deterministic: side × flag × verdict)
+*No LLM, no gate — pure logic on the verdict. `not justified` on the side's own flag = the market's pricing is wrong (a mispricing trade); `justified` = the market is right, ride it.*
+
+**The market is wrong (mispriced):**
+- **DFIN** — long · discount · not justified: Deep discount clashes with 2/0 upward revisions, +2.7% rev90 and regulatory software momentum; low 2.8% revenue growth and FY2 deceleration look transitory at 0.3x PEG.
+
+Per-ticker print quals: `Financial_Exchanges_&_Data/printqual_DFIN_2026-09-02.md`
+
 ## How to read this
-- The flag compares the name's P/E and PEG with its theme's median (see the quant table) — it says *where the name sits*, never whether that is right.
-- The verdict judges the flag against the PRINT-FOCUSED case (fresh EDGAR filings, guidance, consensus revisions, dated catalysts, peer prints) — not the deep dive, which can lag the calendar.
-- `not justified` on a premium means the forward case does not support paying the multiple; on a discount it means the weakness looks transitory. Either way, read the member's coverage report and the dive before acting.
+- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see the quant table), and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
+- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
+- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

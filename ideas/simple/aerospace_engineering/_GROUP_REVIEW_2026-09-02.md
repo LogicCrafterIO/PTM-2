@@ -6,11 +6,11 @@
 
 **Summary**: Aerospace flags are broadly consistent with mixed-to-fair fundamentals, but the next prints are pivotal: LDOS's mixed cross-currents fit its case, while MOG-A and WWD fair flags hinge on confirming core margins and cash conversion, with WWD/MOG-A prints serving as read-throughs for LDOS.
 
-| Ticker | Side | Flag (vs theme) | Verdict | Why |
-|---|---|---|---|---|
-| **LDOS** | long | mixed | ✅ justified | Mixed flag fits: low P/E reflects modest 3-4% EPS growth and a high PEG, while 7% revenue, raised guidance, 8/0 revisions and NorthStar backlog conversion argue the discount side may be too cheap. Print is the arbiter. |
-| **MOG-A** | long | fair | ❔ uncertain | Fair flag is balanced but fragile: +23% backlog and 15% sales support it, yet 270bps of IEEPA margin tailwind and a 3.4% FY2 growth cliff mean the Nov print must confirm core margins and FY2027 guidance. |
-| **WWD** | neutral | fair | ❔ uncertain | Fair flag depends on Oct print: consensus already prices 37%/14% EPS growth, but last quarter's -18% cash from ops, -28% FCF and 21.8% nonsegment expense growth need to reverse to justify the multiple. |
+| Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
+|---|---|---|---|---|---|
+| **LDOS** | long | mixed | ✅ justified | — | Mixed flag fits: low P/E reflects modest 3-4% EPS growth and a high PEG, while 7% revenue, raised guidance, 8/0 revisions and NorthStar backlog conversion argue the discount side may be too cheap. Print is the arbiter. |
+| **MOG-A** | long | fair | ❔ uncertain | — | Fair flag is balanced but fragile: +23% backlog and 15% sales support it, yet 270bps of IEEPA margin tailwind and a 3.4% FY2 growth cliff mean the Nov print must confirm core margins and FY2027 guidance. |
+| **WWD** | neutral | fair | ❔ uncertain | — | Fair flag depends on Oct print: consensus already prices 37%/14% EPS growth, but last quarter's -18% cash from ops, -28% FCF and 21.8% nonsegment expense growth need to reverse to justify the multiple. |
 
 ## Next-print focus (per member)
 
@@ -31,6 +31,7 @@
   - The print will update the FY2026/FY2027 EPS path that consensus already prices at $9.46 (+37.3%) and $10.73 (+13.5%); confirmation or a raise supports a long, a reduction supports a short.
 
 ## How to read this
-- The flag compares the name's P/E and PEG with its theme's median (see the quant table) — it says *where the name sits*, never whether that is right.
-- The verdict judges the flag against the PRINT-FOCUSED case (fresh EDGAR filings, guidance, consensus revisions, dated catalysts, peer prints) — not the deep dive, which can lag the calendar.
-- `not justified` on a premium means the forward case does not support paying the multiple; on a discount it means the weakness looks transitory. Either way, read the member's coverage report and the dive before acting.
+- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see the quant table), and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
+- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
+- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.
