@@ -2384,7 +2384,6 @@
       const pct = (v) => (v == null ? "—" : (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "%");
       const pctRaw = (v) => (v == null ? "—" : (v >= 0 ? "+" : "") + Number(v).toFixed(1) + "%");
       const print = (r) => (r.days_to_print == null ? "—" : `${r.days_to_print}d`);
-      const industries = [...new Set(allRows.map((r) => r.industry).filter(Boolean))].sort();
       const themes = [...new Set(allRows.map((r) => r.theme).filter(Boolean))].sort();
       const opt = (v) => `<option value="${esc(v)}">${esc(v)}</option>`;
       const sideOf = (r) => ((r.rev90 || 0) > 0.5 ? "long" : (r.rev90 || 0) < -0.5 ? "short" : "flat");
@@ -2403,7 +2402,6 @@
         `<option value="short">short (own est. falling)</option>` +
         `<option value="flat">flat (no side)</option>` +
         `</select>` +
-        `<select id="quant-industry"><option value="">industry: all</option>${industries.map(opt).join("")}</select>` +
         `<select id="quant-theme"><option value="">theme: all</option>${themes.map(opt).join("")}</select>` +
         `<span id="quant-count" class="muted" style="margin-left:auto"></span></div>` +
         `<div style="max-height:60vh;overflow:auto;border:1px solid #2a2e35">` +
@@ -2417,17 +2415,14 @@
       const tbody = host.querySelector("#quant-body");
       const search = host.querySelector("#quant-search");
       const sideSel = host.querySelector("#quant-side");
-      const indSel = host.querySelector("#quant-industry");
       const themeSel = host.querySelector("#quant-theme");
       const count = host.querySelector("#quant-count");
       const draw = () => {
         const q = (search.value || "").trim().toUpperCase();
         const side = sideSel.value;
-        const ind = indSel.value;
         const th = themeSel.value;
         const rows = allRows.filter((r) => {
           if (q && !`${r.ticker} ${r.name || ""}`.toUpperCase().includes(q)) return false;
-          if (ind && r.industry !== ind) return false;
           if (th && r.theme !== th) return false;
           if (side && sideOf(r) !== side) return false;
           return true;
@@ -2467,7 +2462,7 @@
         count.textContent = `${rows.length} of ${allRows.length} shown`;
       };
       search.addEventListener("input", draw);
-      [sideSel, indSel, themeSel].forEach((s) => s.addEventListener("change", draw));
+      [sideSel, themeSel].forEach((s) => s.addEventListener("change", draw));
       draw();
     }
 
