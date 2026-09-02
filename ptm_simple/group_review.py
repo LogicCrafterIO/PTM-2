@@ -75,19 +75,26 @@ def _trade_tag(side: str | None, flag: str | None, verdict: str) -> str:
     """Deterministic side×flag×verdict consistency — pure logic, no LLM.
 
     aligned:      the verdict AGREES with the side's premise —
-                  long + (premium justified | discount not justified), or
-                  short + (premium not justified | discount justified).
+                  long + (premium justified | discount not justified | fair or
+                  mixed justified), or short + (premium not justified | discount
+                  justified | fair or mixed justified).
     contradicted: the mirror combinations — the verdict argues against the side
                   (long + premium not justified, long + discount justified, ...).
-    neutral:      fair/mixed flags, neutral sides, uncertain verdicts, no flag.
+    neutral:      mixed flags marked not justified, fair flags marked not
+                  justified, neutral sides, uncertain verdicts, no flag.
 
-    The four aligned combinations are the trade candidates: "the market is
-    wrong" (not justified on the side's flag) and "the market is right, ride
-    it" (justified premium for a long, justified discount for a short)."""
+    The aligned combinations are the trade candidates: "the market is wrong"
+    (not justified on the side's own flag) and "the market is right, ride it"
+    (justified premium, discount or fair for the side — the pricing matches
+    what the name's own revisions point at)."""
     if not side or side == "neutral" or not flag or flag == "n/a" or verdict == "uncertain":
         return "neutral"
-    if flag not in ("premium", "discount"):
-        return "neutral"  # fair/mixed never picks a side
+    if flag in ("fair", "mixed") and verdict == "not justified":
+        return "neutral"  # no clean extreme for the verdict to argue with
+    if flag in ("fair", "mixed"):
+        # fair or mixed + justified: the pricing as a whole matches the forward
+        # case, so riding the side the name's own revisions point at is consistent
+        return "aligned"
     premium = flag == "premium"
     if verdict == "justified":
         return "aligned" if (side == "long") == premium else "contradicted"
@@ -370,9 +377,11 @@ def _review_md(rev: dict, ref: date) -> str:
         "forward case does not support paying the multiple (supports a short, warns a long); `not justified` "
         "on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); "
         "`justified` says the market's pricing matches the fundamentals either way.",
-        "- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), "
-        "long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium "
-        "(paying up against the theme) and short + discount + `justified` (cheap for a real reason).",
+                "- The aligned combinations are the trade candidates: short + premium `not justified` (expensive "
+        "and deteriorating), long + discount `not justified` (cheap and improving), long + premium "
+        "`justified` and short + discount `justified` (the market is right, ride it), plus fair + "
+        "`justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount "
+        "`justified` — cheap for a real reason you'd be fighting.",
         "- `not justified` never ranks or gates anything — read the member's print qual and coverage report "
         "before acting.",
     ]

@@ -8,7 +8,7 @@
 
 | Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
 |---|---|---|---|---|---|
-| **CPAY** | long | fair | ✅ justified | — | Strong 13/0 estimate revisions, ~28% FY1 EPS growth and corporate-payments momentum justify the fair tag; the low PEG is supported by the earnings trajectory. |
+| **CPAY** | long | fair | ✅ justified | ✅ | Strong 13/0 estimate revisions, ~28% FY1 EPS growth and corporate-payments momentum justify the fair tag; the low PEG is supported by the earnings trajectory. |
 | **EVTC** | long | discount | ❌ not justified | ✅ | Q2 showed 16-20% revenue growth and raised FY guidance, with new partnerships and expanded buybacks; the discount flag is not justified by durable growth. |
 | **GPN** | short | discount | ✅ justified | ✅ | Weak 1/25 revision skew, sub-5% organic growth and risk of another FY26 guidance cut after the August trim justify the discount flag for the short case. |
 | **JKHY** | long | premium | ❔ uncertain | — | Record core wins support the premium, but Q4 margin contraction, depleted cash and only ~9% EPS growth make the steep PEG premium uncertain. |
@@ -68,12 +68,13 @@
 - **NATL** — long · discount · not justified: Q2 EPS beat and margin expansion, plus rising estimates and the Brink's merger catalyst, suggest the discount is unwarranted if Q3 revenue reaccelerates.
 
 **The market is right, ride it:**
+- **CPAY** — long · fair · justified: Strong 13/0 estimate revisions, ~28% FY1 EPS growth and corporate-payments momentum justify the fair tag; the low PEG is supported by the earnings trajectory.
 - **GPN** — short · discount · justified: Weak 1/25 revision skew, sub-5% organic growth and risk of another FY26 guidance cut after the August trim justify the discount flag for the short case.
 
-Per-ticker print quals: `Transaction_&_Payment_Processing_Services/printqual_EVTC_2026-09-02.md` · `Transaction_&_Payment_Processing_Services/printqual_GPN_2026-09-02.md` · `Transaction_&_Payment_Processing_Services/printqual_NATL_2026-09-02.md`
+Per-ticker print quals: `Transaction_&_Payment_Processing_Services/printqual_CPAY_2026-09-02.md` · `Transaction_&_Payment_Processing_Services/printqual_EVTC_2026-09-02.md` · `Transaction_&_Payment_Processing_Services/printqual_GPN_2026-09-02.md` · `Transaction_&_Payment_Processing_Services/printqual_NATL_2026-09-02.md`
 
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

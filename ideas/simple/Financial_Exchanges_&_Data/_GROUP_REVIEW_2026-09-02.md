@@ -8,7 +8,7 @@
 
 | Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
 |---|---|---|---|---|---|
-| **CBOE** | long | fair | ✅ justified | — | Raised organic revenue guidance, record Q2 derivatives/data growth, 11/0 upward revisions and FY1 EPS up 33% support a median P/E/PEG; the fair flag is earned. |
+| **CBOE** | long | fair | ✅ justified | ✅ | Raised organic revenue guidance, record Q2 derivatives/data growth, 11/0 upward revisions and FY1 EPS up 33% support a median P/E/PEG; the fair flag is earned. |
 | **DFIN** | long | discount | ❌ not justified | ✅ | Deep discount clashes with 2/0 upward revisions, +2.7% rev90 and regulatory software momentum; low 2.8% revenue growth and FY2 deceleration look transitory at 0.3x PEG. |
 | **ICE** | neutral | premium | ❌ not justified | — | Premium PEG is hard to justify with 5/7 down revisions, barely positive rev90 and Q2 expense pressure; FY2 growth near 8% does not clearly reaccelerate. |
 | **MSCI** | neutral | premium | ❔ uncertain | — | Premium flag hangs on Q3 confirmation of Run Rate growth and margin expansion; strong recurring book supports it, but 7/8 revision skew and expense concerns keep it uncertain. |
@@ -48,10 +48,13 @@
 **The market is wrong (mispriced):**
 - **DFIN** — long · discount · not justified: Deep discount clashes with 2/0 upward revisions, +2.7% rev90 and regulatory software momentum; low 2.8% revenue growth and FY2 deceleration look transitory at 0.3x PEG.
 
-Per-ticker print quals: `Financial_Exchanges_&_Data/printqual_DFIN_2026-09-02.md`
+**The market is right, ride it:**
+- **CBOE** — long · fair · justified: Raised organic revenue guidance, record Q2 derivatives/data growth, 11/0 upward revisions and FY1 EPS up 33% support a median P/E/PEG; the fair flag is earned.
+
+Per-ticker print quals: `Financial_Exchanges_&_Data/printqual_CBOE_2026-09-02.md` · `Financial_Exchanges_&_Data/printqual_DFIN_2026-09-02.md`
 
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

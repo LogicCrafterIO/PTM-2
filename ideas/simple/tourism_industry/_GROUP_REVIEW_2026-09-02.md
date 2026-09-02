@@ -8,7 +8,7 @@
 
 | Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
 |---|---|---|---|---|---|
-| **ABNB** | long | fair | ✅ justified | — | Fair flag fits balanced setup: Q2 10% nights/16% GBV and ~35% EBITDA set a high bar, summer may accelerate but ADR comps and services expansion add uncertainty, and PEG is right at median. |
+| **ABNB** | long | fair | ✅ justified | ✅ | Fair flag fits balanced setup: Q2 10% nights/16% GBV and ~35% EBITDA set a high bar, summer may accelerate but ADR comps and services expansion add uncertainty, and PEG is right at median. |
 | **EXPE** | long | discount | ❌ not justified | ✅ | Discount is too steep given Q2 acceleration (14% rev, 12% bookings), B2B growing ~3x consumer, raised guidance, and 31.6% FY1 EPS growth on a 0.48x PEG; print could re-rate the multiple. |
 | **MAR** | long | premium | ❌ not justified | ⛔ | Premium looks stretched: PEG 1.6x median with FY1 EPS growth of 16.9% and FY2 of 12.4%, while RevPAR guidance is only 3-3.5% and international RevPAR was negative in Q2. Buybacks/pipeline help but do not fully justify the valuation. |
 | **TRIP** | short | discount | ✅ justified | ✅ | Discount is justified by deteriorating fundamentals: -35.6% revenue revisions, FY1 EPS down 33%, 0 up/3 down analyst trend, and risk of further guide-downs make the 0.4x P/E a value trap for the short case. |
@@ -43,12 +43,13 @@
 - **EXPE** — long · discount · not justified: Discount is too steep given Q2 acceleration (14% rev, 12% bookings), B2B growing ~3x consumer, raised guidance, and 31.6% FY1 EPS growth on a 0.48x PEG; print could re-rate the multiple.
 
 **The market is right, ride it:**
+- **ABNB** — long · fair · justified: Fair flag fits balanced setup: Q2 10% nights/16% GBV and ~35% EBITDA set a high bar, summer may accelerate but ADR comps and services expansion add uncertainty, and PEG is right at median.
 - **TRIP** — short · discount · justified: Discount is justified by deteriorating fundamentals: -35.6% revenue revisions, FY1 EPS down 33%, 0 up/3 down analyst trend, and risk of further guide-downs make the 0.4x P/E a value trap for the short case.
 
-Per-ticker print quals: `tourism_industry/printqual_EXPE_2026-09-02.md` · `tourism_industry/printqual_TRIP_2026-09-02.md`
+Per-ticker print quals: `tourism_industry/printqual_ABNB_2026-09-02.md` · `tourism_industry/printqual_EXPE_2026-09-02.md` · `tourism_industry/printqual_TRIP_2026-09-02.md`
 
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

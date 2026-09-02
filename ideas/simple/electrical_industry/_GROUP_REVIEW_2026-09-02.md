@@ -8,8 +8,8 @@
 
 | Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
 |---|---|---|---|---|---|
-| **AMD** | long | fair | ✅ justified | — | Q2 is already reported; the November print must confirm data-center growth at/above the 32% 2025 pace, gross margin near 50%, and FY1/FY2 EPS momentum. Strong 32-up/5-down revisions and the MI350/MI400/Helios ramp support a median valuation, so the fair flag is justified. |
-| **EMR** | long | mixed | ✅ justified | — | The P/E discount reflects modest industrial earnings, while the 3.4x PEG premium reflects only 9-10% EPS growth. Strong 17:1 revisions and a guidance lift could close the gap, but the print must confirm acceleration; the mixed flag captures this tension and is justified. |
+| **AMD** | long | fair | ✅ justified | ✅ | Q2 is already reported; the November print must confirm data-center growth at/above the 32% 2025 pace, gross margin near 50%, and FY1/FY2 EPS momentum. Strong 32-up/5-down revisions and the MI350/MI400/Helios ramp support a median valuation, so the fair flag is justified. |
+| **EMR** | long | mixed | ✅ justified | ✅ | The P/E discount reflects modest industrial earnings, while the 3.4x PEG premium reflects only 9-10% EPS growth. Strong 17:1 revisions and a guidance lift could close the gap, but the print must confirm acceleration; the mixed flag captures this tension and is justified. |
 | **INTC** | long | discount | ❌ not justified | ✅ | Q2 revenue reportedly beat, 90-day revenue estimates are up 39%, and revisions are 32:1 upward. AI/18A ramp, Data Center growth and foundry-loss narrowing point to an inflection, not durable deterioration, so the 0.3x PEG discount flag is not justified. |
 | **VRT** | long | discount | ❌ not justified | ✅ | Q2 sales +24%, EPS +60%, adjusted operating margin ~22.6%, raised $14B full-year guidance and strong FCF show the weakness is transitory. FY2 EPS growth of ~36% contradicts a discount, so the discount flag is not justified. |
 
@@ -43,10 +43,14 @@
 - **INTC** — long · discount · not justified: Q2 revenue reportedly beat, 90-day revenue estimates are up 39%, and revisions are 32:1 upward. AI/18A ramp, Data Center growth and foundry-loss narrowing point to an inflection, not durable deterioration, so the 0.3x PEG discount flag is not justified.
 - **VRT** — long · discount · not justified: Q2 sales +24%, EPS +60%, adjusted operating margin ~22.6%, raised $14B full-year guidance and strong FCF show the weakness is transitory. FY2 EPS growth of ~36% contradicts a discount, so the discount flag is not justified.
 
-Per-ticker print quals: `electrical_industry/printqual_INTC_2026-09-02.md` · `electrical_industry/printqual_VRT_2026-09-02.md`
+**The market is right, ride it:**
+- **AMD** — long · fair · justified: Q2 is already reported; the November print must confirm data-center growth at/above the 32% 2025 pace, gross margin near 50%, and FY1/FY2 EPS momentum. Strong 32-up/5-down revisions and the MI350/MI400/Helios ramp support a median valuation, so the fair flag is justified.
+- **EMR** — long · mixed · justified: The P/E discount reflects modest industrial earnings, while the 3.4x PEG premium reflects only 9-10% EPS growth. Strong 17:1 revisions and a guidance lift could close the gap, but the print must confirm acceleration; the mixed flag captures this tension and is justified.
+
+Per-ticker print quals: `electrical_industry/printqual_AMD_2026-09-02.md` · `electrical_industry/printqual_EMR_2026-09-02.md` · `electrical_industry/printqual_INTC_2026-09-02.md` · `electrical_industry/printqual_VRT_2026-09-02.md`
 
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

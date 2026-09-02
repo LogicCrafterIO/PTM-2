@@ -8,7 +8,7 @@
 
 | Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
 |---|---|---|---|---|---|
-| **LDOS** | long | mixed | ✅ justified | — | Mixed flag fits: low P/E reflects modest 3-4% EPS growth and a high PEG, while 7% revenue, raised guidance, 8/0 revisions and NorthStar backlog conversion argue the discount side may be too cheap. Print is the arbiter. |
+| **LDOS** | long | mixed | ✅ justified | ✅ | Mixed flag fits: low P/E reflects modest 3-4% EPS growth and a high PEG, while 7% revenue, raised guidance, 8/0 revisions and NorthStar backlog conversion argue the discount side may be too cheap. Print is the arbiter. |
 | **MOG-A** | long | fair | ❔ uncertain | — | Fair flag is balanced but fragile: +23% backlog and 15% sales support it, yet 270bps of IEEPA margin tailwind and a 3.4% FY2 growth cliff mean the Nov print must confirm core margins and FY2027 guidance. |
 | **WWD** | neutral | fair | ❔ uncertain | — | Fair flag depends on Oct print: consensus already prices 37%/14% EPS growth, but last quarter's -18% cash from ops, -28% FCF and 21.8% nonsegment expense growth need to reverse to justify the multiple. |
 
@@ -30,8 +30,16 @@
   - Cash conversion will be tested after cash from operations fell 18% and free cash flow fell 28% in the last reported quarter; a rebound supports a long, continued weakness supports a short.
   - The print will update the FY2026/FY2027 EPS path that consensus already prices at $9.46 (+37.3%) and $10.73 (+13.5%); confirmation or a raise supports a long, a reduction supports a short.
 
+## Trade ideas (deterministic: side × flag × verdict)
+*No LLM, no gate — pure logic on the verdict. `not justified` on the side's own flag = the market's pricing is wrong (a mispricing trade); `justified` = the market is right, ride it.*
+
+**The market is right, ride it:**
+- **LDOS** — long · mixed · justified: Mixed flag fits: low P/E reflects modest 3-4% EPS growth and a high PEG, while 7% revenue, raised guidance, 8/0 revisions and NorthStar backlog conversion argue the discount side may be too cheap. Print is the arbiter.
+
+Per-ticker print quals: `aerospace_engineering/printqual_LDOS_2026-09-02.md`
+
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

@@ -8,7 +8,7 @@
 
 | Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
 |---|---|---|---|---|---|
-| **AMD** | long | fair | ✅ justified | — | Fair relative valuation fits a balanced forward case: AI/data-center growth and a 32-up/5-down revision trend support the multiple, while margin and Q4 guidance tests keep the flag from looking stretched. |
+| **AMD** | long | fair | ✅ justified | ✅ | Fair relative valuation fits a balanced forward case: AI/data-center growth and a 32-up/5-down revision trend support the multiple, while margin and Q4 guidance tests keep the flag from looking stretched. |
 | **IBM** | short | premium | ❌ not justified | ✅ | Premium PEG conflicts with 6-7% EPS growth, negative revisions (6/14), deferred-deal conversion risk and potential guidance pressure; the October print points to multiple compression, not expansion. |
 | **SMCI** | long | discount | ❌ not justified | ✅ | Deep discount conflicts with record $60B+ backlog, FY2027 $65-72B outlook, gross-margin recovery to 17.5% and 33% revision momentum; execution risks remain but deterioration looks transitory. |
 
@@ -37,10 +37,13 @@
 - **IBM** — short · premium · not justified: Premium PEG conflicts with 6-7% EPS growth, negative revisions (6/14), deferred-deal conversion risk and potential guidance pressure; the October print points to multiple compression, not expansion.
 - **SMCI** — long · discount · not justified: Deep discount conflicts with record $60B+ backlog, FY2027 $65-72B outlook, gross-margin recovery to 17.5% and 33% revision momentum; execution risks remain but deterioration looks transitory.
 
-Per-ticker print quals: `computer_industry/printqual_IBM_2026-09-02.md` · `computer_industry/printqual_SMCI_2026-09-02.md`
+**The market is right, ride it:**
+- **AMD** — long · fair · justified: Fair relative valuation fits a balanced forward case: AI/data-center growth and a 32-up/5-down revision trend support the multiple, while margin and Q4 guidance tests keep the flag from looking stretched.
+
+Per-ticker print quals: `computer_industry/printqual_AMD_2026-09-02.md` · `computer_industry/printqual_IBM_2026-09-02.md` · `computer_industry/printqual_SMCI_2026-09-02.md`
 
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

@@ -281,7 +281,12 @@ def test_trade_tag_four_aligned_combinations():
     assert _trade_tag("long", "discount", "justified") == "contradicted"
     assert _trade_tag("short", "premium", "justified") == "contradicted"
     assert _trade_tag("short", "discount", "not justified") == "contradicted"
-    assert _trade_tag("long", "fair", "justified") == "neutral"
+    assert _trade_tag("long", "fair", "justified") == "aligned"   # pricing matches the fundamentals
+    assert _trade_tag("short", "fair", "justified") == "aligned"
+    assert _trade_tag("long", "mixed", "justified") == "aligned"  # both ratios check out
+    assert _trade_tag("short", "mixed", "justified") == "aligned"
+    assert _trade_tag("long", "fair", "not justified") == "neutral"
+    assert _trade_tag("long", "mixed", "not justified") == "neutral"
     assert _trade_tag("neutral", "premium", "justified") == "neutral"
     assert _trade_tag("long", "premium", "uncertain") == "neutral"
     assert _trade_tag("long", "n/a", "justified") == "neutral"

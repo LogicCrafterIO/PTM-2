@@ -8,8 +8,8 @@
 
 | Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
 |---|---|---|---|---|---|
-| **FA** | long | fair | ✅ justified | — | Q2 record revenue, raised FY guidance, 8/0 upward revisions and 20%+ EPS growth support a fair relative multiple; weaker PAYX/RHI read-throughs are a risk but not yet realized. |
-| **PAYX** | long | fair | ✅ justified | — | Q1 FY27 is already closed with an in-line FY27 outlook and modest estimate momentum; stable mid-single-digit growth fits a market-average P/E, so fair is reasonable. |
+| **FA** | long | fair | ✅ justified | ✅ | Q2 record revenue, raised FY guidance, 8/0 upward revisions and 20%+ EPS growth support a fair relative multiple; weaker PAYX/RHI read-throughs are a risk but not yet realized. |
+| **PAYX** | long | fair | ✅ justified | ✅ | Q1 FY27 is already closed with an in-line FY27 outlook and modest estimate momentum; stable mid-single-digit growth fits a market-average P/E, so fair is reasonable. |
 | **RHI** | short | premium | ❌ not justified | ✅ | Declining revenue/EPS, FY1 estimate cuts and a questionable 55% FY2 consensus rebound don't support a 35x/1.7x premium; narrow segment positives are insufficient. |
 | **UPWK** | short | discount | ✅ justified | ✅ | Lowered guidance, shrinking active-client risk, negative FY1/FY2 EPS growth and AI cannibalization of legacy work make the discount look earned by durable deterioration. |
 
@@ -43,12 +43,14 @@
 - **RHI** — short · premium · not justified: Declining revenue/EPS, FY1 estimate cuts and a questionable 55% FY2 consensus rebound don't support a 35x/1.7x premium; narrow segment positives are insufficient.
 
 **The market is right, ride it:**
+- **FA** — long · fair · justified: Q2 record revenue, raised FY guidance, 8/0 upward revisions and 20%+ EPS growth support a fair relative multiple; weaker PAYX/RHI read-throughs are a risk but not yet realized.
+- **PAYX** — long · fair · justified: Q1 FY27 is already closed with an in-line FY27 outlook and modest estimate momentum; stable mid-single-digit growth fits a market-average P/E, so fair is reasonable.
 - **UPWK** — short · discount · justified: Lowered guidance, shrinking active-client risk, negative FY1/FY2 EPS growth and AI cannibalization of legacy work make the discount look earned by durable deterioration.
 
-Per-ticker print quals: `Human_Resource_&_Employment_Services/printqual_RHI_2026-09-02.md` · `Human_Resource_&_Employment_Services/printqual_UPWK_2026-09-02.md`
+Per-ticker print quals: `Human_Resource_&_Employment_Services/printqual_FA_2026-09-02.md` · `Human_Resource_&_Employment_Services/printqual_PAYX_2026-09-02.md` · `Human_Resource_&_Employment_Services/printqual_RHI_2026-09-02.md` · `Human_Resource_&_Employment_Services/printqual_UPWK_2026-09-02.md`
 
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

@@ -11,7 +11,7 @@
 | **ARCB** | long | discount | ❌ not justified | ✅ | Discount looks unjustified: 32% revenue revision upside, 9-2 analyst skew, and an 84%/39% EPS growth path into Q3 set up an earnings inflection that should close the valuation gap if confirmed. |
 | **HTLD** | long | premium | ❔ uncertain | — | Premium is a coin flip: PEG is at parity but P/E is 1.8x median; Q2 profit relied on equipment gains and Q3 must prove CFI synergies and core OR improvement to justify the 67x forward multiple. |
 | **JBHT** | long | premium | ❌ not justified | ⛔ | Premium looks unjustified: PEG at 2.5x median is too rich for 28-29% EPS growth; 'minibids' may have added low-margin volume rather than pricing power, and Q3 must show intermodal yield acceleration to earn the multiple. |
-| **KNX** | long | fair | ✅ justified | — | Fair flag is justified: P/E and PEG both below median against 84%/73% EPS growth, 16-0 analyst revisions, and Q3 guidance that should confirm truckload pricing acceleration and cost resets. |
+| **KNX** | long | fair | ✅ justified | ✅ | Fair flag is justified: P/E and PEG both below median against 84%/73% EPS growth, 16-0 analyst revisions, and Q3 guidance that should confirm truckload pricing acceleration and cost resets. |
 | **MRTN** | long | premium | ❌ not justified | ⛔ | Premium looks unjustified: P/E and PEG are well above median while ex-fuel revenue and operating income were still down YoY in Q2; fuel surcharge revenue masked core weakness, so Q3 must prove ex-fuel growth and margin expansion. |
 | **ODFL** | long | premium | ❌ not justified | ⛔ | Premium looks unjustified: PEG at 3.6x median is steep for 20%/13% growth; Q2 OR was flattered by $17.2m asset disposal gains and tons per day fell 4.1%, so Q3 must show volume stabilization and true OR progress. |
 | **RXO** | long | premium | ❔ uncertain | — | Premium is hard to judge from truncated data, but 400%+ FY1/FY2 EPS growth and PEG at parity suggest the extreme P/E could be justified if execution matches the hyper-growth path; missing forward details create uncertainty. |
@@ -66,10 +66,13 @@
 **The market is wrong (mispriced):**
 - **ARCB** — long · discount · not justified: Discount looks unjustified: 32% revenue revision upside, 9-2 analyst skew, and an 84%/39% EPS growth path into Q3 set up an earnings inflection that should close the valuation gap if confirmed.
 
-Per-ticker print quals: `Cargo_Ground_Transportation/printqual_ARCB_2026-09-02.md`
+**The market is right, ride it:**
+- **KNX** — long · fair · justified: Fair flag is justified: P/E and PEG both below median against 84%/73% EPS growth, 16-0 analyst revisions, and Q3 guidance that should confirm truckload pricing acceleration and cost resets.
+
+Per-ticker print quals: `Cargo_Ground_Transportation/printqual_ARCB_2026-09-02.md` · `Cargo_Ground_Transportation/printqual_KNX_2026-09-02.md`
 
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

@@ -10,7 +10,7 @@
 |---|---|---|---|---|---|
 | **BJRI** | long | premium | ❔ uncertain | — | Q2 strength and raised guidance support the recovery, but FY1 EPS growth is only 4.8% and PEG is 3.1x median; Q3 must show operating leverage and FY2 acceleration to earn the premium. BJRI's Oct 28 print also sets the traffic read-through for BROS, CAKE, EAT and SHAK. |
 | **BROS** | long | premium | ✅ justified | ✅ | Raised 2026 revenue and EBITDA guidance, 28-34% EPS growth and a 13-to-2 revision skew support the premium P/E; Q3 must confirm the Q2 demand surge was durable, not seasonal. BJRI's Oct 28 traffic print is a near-term read-through. |
-| **CAKE** | long | fair | ✅ justified | — | Strong pre-print setup with 15 up/0 down revisions, +11.2% revenue estimate growth and expected Q2 beat/raise; 19.7% FY1 growth and 0.7x median PEG make the fair flag look well supported. Peer prints from BJRI, BROS, SHAK and EAT provide sector checks. |
+| **CAKE** | long | fair | ✅ justified | ✅ | Strong pre-print setup with 15 up/0 down revisions, +11.2% revenue estimate growth and expected Q2 beat/raise; 19.7% FY1 growth and 0.7x median PEG make the fair flag look well supported. Peer prints from BJRI, BROS, SHAK and EAT provide sector checks. |
 | **EAT** | long | fair | ❔ uncertain | — | P/E 0.8x median reflects flat FY1 EPS, but FY2 inflection to +34.6% and August FY2027 guidance give the fair flag a path; Q3 must show the ramp is real after 2 up/5 down recent revisions. Reports after BJRI, BROS, CAKE and SHAK add read-through risk. |
 | **SHAK** | short | premium | ❌ not justified | ✅ | Premium P/E is hard to justify when FY1 EPS is -14.8%, Q2 operating income fell y/y and EBITDA rose only 3.9% on 17.2% revenue; margin compression and weak leverage support the short. Peer prints from BJRI, CAKE, BROS and EAT could pressure the multiple. |
 
@@ -50,11 +50,12 @@
 
 **The market is right, ride it:**
 - **BROS** — long · premium · justified: Raised 2026 revenue and EBITDA guidance, 28-34% EPS growth and a 13-to-2 revision skew support the premium P/E; Q3 must confirm the Q2 demand surge was durable, not seasonal. BJRI's Oct 28 traffic print is a near-term read-through.
+- **CAKE** — long · fair · justified: Strong pre-print setup with 15 up/0 down revisions, +11.2% revenue estimate growth and expected Q2 beat/raise; 19.7% FY1 growth and 0.7x median PEG make the fair flag look well supported. Peer prints from BJRI, BROS, SHAK and EAT provide sector checks.
 
-Per-ticker print quals: `Restaurants/printqual_BROS_2026-09-02.md` · `Restaurants/printqual_SHAK_2026-09-02.md`
+Per-ticker print quals: `Restaurants/printqual_BROS_2026-09-02.md` · `Restaurants/printqual_CAKE_2026-09-02.md` · `Restaurants/printqual_SHAK_2026-09-02.md`
 
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

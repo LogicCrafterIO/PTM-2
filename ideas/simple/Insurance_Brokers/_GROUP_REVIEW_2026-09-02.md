@@ -11,8 +11,8 @@
 | **AJG** | short | discount | ✅ justified | ✅ | M&A-heavy Q2 and 33-deal integration/lease costs threaten the 30.8% margin; FY2 13% growth looks deal-dependent, rev90 is negative and peer read-throughs likely soft, so the discount reflects real deterioration risk. |
 | **ERIE** | neutral | n/a | ❔ uncertain | — | No valuation flag to test. Q3 is two-sided: fee growth vs 4.7%, commission ratio, underwriting margin and peer read-throughs all need resolution, so the setup is uncertain. |
 | **GSHD** | short | premium | ❌ not justified | ✅ | Estimate cuts (3 up/8 down), rev90 -2.14% and core revenue half the headline pace contradict the FY2 +25.8% growth needed; the 1.6x P/E premium is unsupported and at risk of compression. |
-| **MRSH** | long | fair | ✅ justified | — | 5% underlying revenue and 17/2 upward revisions support ~9% FY2 growth; P/E discount offsets the 1.2x PEG premium, making the fair flag justified if Q3 confirms stable guidance. |
-| **RYAN** | long | fair | ✅ justified | — | 16/0 upward revisions and rev90 +6.4% back 6.7% organic growth, 12% EPS and buybacks; FY2 +11.7% looks credible, so the fair PEG is justified despite E&S slowing. |
+| **MRSH** | long | fair | ✅ justified | ✅ | 5% underlying revenue and 17/2 upward revisions support ~9% FY2 growth; P/E discount offsets the 1.2x PEG premium, making the fair flag justified if Q3 confirms stable guidance. |
+| **RYAN** | long | fair | ✅ justified | ✅ | 16/0 upward revisions and rev90 +6.4% back 6.7% organic growth, 12% EPS and buybacks; FY2 +11.7% looks credible, so the fair PEG is justified despite E&S slowing. |
 
 ## Next-print focus (per member)
 
@@ -50,11 +50,13 @@
 
 **The market is right, ride it:**
 - **AJG** — short · discount · justified: M&A-heavy Q2 and 33-deal integration/lease costs threaten the 30.8% margin; FY2 13% growth looks deal-dependent, rev90 is negative and peer read-throughs likely soft, so the discount reflects real deterioration risk.
+- **MRSH** — long · fair · justified: 5% underlying revenue and 17/2 upward revisions support ~9% FY2 growth; P/E discount offsets the 1.2x PEG premium, making the fair flag justified if Q3 confirms stable guidance.
+- **RYAN** — long · fair · justified: 16/0 upward revisions and rev90 +6.4% back 6.7% organic growth, 12% EPS and buybacks; FY2 +11.7% looks credible, so the fair PEG is justified despite E&S slowing.
 
-Per-ticker print quals: `Insurance_Brokers/printqual_AJG_2026-09-02.md` · `Insurance_Brokers/printqual_GSHD_2026-09-02.md`
+Per-ticker print quals: `Insurance_Brokers/printqual_AJG_2026-09-02.md` · `Insurance_Brokers/printqual_GSHD_2026-09-02.md` · `Insurance_Brokers/printqual_MRSH_2026-09-02.md` · `Insurance_Brokers/printqual_RYAN_2026-09-02.md`
 
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

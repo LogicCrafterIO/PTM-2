@@ -10,8 +10,8 @@
 |---|---|---|---|---|---|
 | **COIN** | short | n/a | ❔ uncertain | — | No P/E/PEG flag to test, but the forward case is sharply negative: Q2 net loss, -297% revenue revision, 0 up/15 down analyst moves and falling crypto volume support the short thesis; valuation call is undecidable. |
 | **GDDY** | long | discount | ❌ not justified | ✅ | Q2 beat, 9/1 upward revisions and FY1/FY2 EPS acceleration (19%/24%) with Airo/bookings momentum suggest the P/E/PEG discount is too steep; the high P/S only requires Q3 margin execution. |
-| **NDAQ** | long | fair | ✅ justified | — | Recurring ARR/SaaS mix, 15-35% FinTech/index growth, raised medium-term outlook, 16/0 revisions and guided opex discipline support a peer-median P/E/PEG; fundamentals match the fair flag. |
-| **PYPL** | long | mixed | ✅ justified | — | FY1 growth of only ~1.4% justifies the premium PEG, while FY2 acceleration to ~7.6% and 31/3 revisions justify the P/E discount; Q3 guidance is the tie-breaker, so the mixed flag fits. |
+| **NDAQ** | long | fair | ✅ justified | ✅ | Recurring ARR/SaaS mix, 15-35% FinTech/index growth, raised medium-term outlook, 16/0 revisions and guided opex discipline support a peer-median P/E/PEG; fundamentals match the fair flag. |
+| **PYPL** | long | mixed | ✅ justified | ✅ | FY1 growth of only ~1.4% justifies the premium PEG, while FY2 acceleration to ~7.6% and 31/3 revisions justify the P/E discount; Q3 guidance is the tie-breaker, so the mixed flag fits. |
 | **SEZL** | long | discount | ❌ not justified | ✅ | ~46%/26% FY1/FY2 EPS growth, GMV/revenue/subscriber momentum and 6/0 revisions make a 0.4x median PEG look too cheap; credit provision staying within 2.5-3.0% of GMV would confirm the discount is unwarranted. |
 
 ## Next-print focus (per member)
@@ -49,10 +49,14 @@
 - **GDDY** — long · discount · not justified: Q2 beat, 9/1 upward revisions and FY1/FY2 EPS acceleration (19%/24%) with Airo/bookings momentum suggest the P/E/PEG discount is too steep; the high P/S only requires Q3 margin execution.
 - **SEZL** — long · discount · not justified: ~46%/26% FY1/FY2 EPS growth, GMV/revenue/subscriber momentum and 6/0 revisions make a 0.4x median PEG look too cheap; credit provision staying within 2.5-3.0% of GMV would confirm the discount is unwarranted.
 
-Per-ticker print quals: `fintech/printqual_GDDY_2026-09-02.md` · `fintech/printqual_SEZL_2026-09-02.md`
+**The market is right, ride it:**
+- **NDAQ** — long · fair · justified: Recurring ARR/SaaS mix, 15-35% FinTech/index growth, raised medium-term outlook, 16/0 revisions and guided opex discipline support a peer-median P/E/PEG; fundamentals match the fair flag.
+- **PYPL** — long · mixed · justified: FY1 growth of only ~1.4% justifies the premium PEG, while FY2 acceleration to ~7.6% and 31/3 revisions justify the P/E discount; Q3 guidance is the tie-breaker, so the mixed flag fits.
+
+Per-ticker print quals: `fintech/printqual_GDDY_2026-09-02.md` · `fintech/printqual_NDAQ_2026-09-02.md` · `fintech/printqual_PYPL_2026-09-02.md` · `fintech/printqual_SEZL_2026-09-02.md`
 
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

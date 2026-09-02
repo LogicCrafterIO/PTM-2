@@ -2522,7 +2522,7 @@
         }
       }
       if (!rows.length) {
-        host.innerHTML = `<div class="dd-batch"><strong>Trade ideas (side × flag × verdict)</strong><p class="muted" style="margin:4px 0 0">none yet — run "Group review" first; ideas are the deterministic aligned combinations (long+premium justified, long+discount not justified, short+discount justified, short+premium not justified).</p></div>`;
+        host.innerHTML = `<div class="dd-batch"><strong>Trade ideas (side × flag × verdict)</strong><p class="muted" style="margin:4px 0 0">none yet — run "Group review" first; ideas are the deterministic aligned combinations (long+premium justified, long+discount not justified, short+discount justified, short+premium not justified, and fair/mixed justified on either side).</p></div>`;
         return;
       }
       const mark = (v) => ({ "justified": "✅", "not justified": "❌", "uncertain": "❔" }[v] || "❔");

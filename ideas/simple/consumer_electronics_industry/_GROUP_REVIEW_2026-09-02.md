@@ -9,9 +9,9 @@
 | Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
 |---|---|---|---|---|---|
 | **AAPL** | long | fair | ❔ uncertain | — | iPhone momentum and services are supportive, but chip-cost pressure, FY2 growth deceleration to ~8%, and an unproven AI roadmap leave the fair tag unresolved until Oct 30 guidance. |
-| **GRMN** | long | fair | ✅ justified | — | Fitness/Aviation/Marine momentum, durable 62%+ margins, and raised full-year guidance support a fair-to-attractive valuation; the forward case matches the flag. |
-| **MSFT** | long | fair | ✅ justified | — | Azure ~43% growth, cloud margin stability, and disciplined capex guidance support the path to $23.57 FY2 EPS, justifying a fair multiple. |
-| **ROKU** | long | mixed | ✅ justified | — | Platform/ad/subscription growth, ad margin near 62%, and the 394% FY1 earnings inflection justify the mixed premium/ultra-low-PEG flag if Q3 execution holds. |
+| **GRMN** | long | fair | ✅ justified | ✅ | Fitness/Aviation/Marine momentum, durable 62%+ margins, and raised full-year guidance support a fair-to-attractive valuation; the forward case matches the flag. |
+| **MSFT** | long | fair | ✅ justified | ✅ | Azure ~43% growth, cloud margin stability, and disciplined capex guidance support the path to $23.57 FY2 EPS, justifying a fair multiple. |
+| **ROKU** | long | mixed | ✅ justified | ✅ | Platform/ad/subscription growth, ad margin near 62%, and the 394% FY1 earnings inflection justify the mixed premium/ultra-low-PEG flag if Q3 execution holds. |
 | **SONO** | long | fair | ❔ uncertain | — | Strong +24% revenue revisions and a low earnings bar are promising, but FY1 EPS growth is 0% and the print must confirm margin/guide upside to make fair stick. |
 
 ## Next-print focus (per member)
@@ -42,8 +42,18 @@
   - At roughly 20.7x FY1 earnings and 1.49x sales, with a P/E at 0.7x the theme median, Sonos looks fairly valued to cheap; Q3 margin stability would give the multiple room to expand versus consumer-electronics peers.
   - Sonos reports on October 26, ahead of AAPL, GRMN, MSFT and ROKU later that week; a strong guide would set a positive read-through for smart-home audio and holiday consumer-electronics demand.
 
+## Trade ideas (deterministic: side × flag × verdict)
+*No LLM, no gate — pure logic on the verdict. `not justified` on the side's own flag = the market's pricing is wrong (a mispricing trade); `justified` = the market is right, ride it.*
+
+**The market is right, ride it:**
+- **GRMN** — long · fair · justified: Fitness/Aviation/Marine momentum, durable 62%+ margins, and raised full-year guidance support a fair-to-attractive valuation; the forward case matches the flag.
+- **MSFT** — long · fair · justified: Azure ~43% growth, cloud margin stability, and disciplined capex guidance support the path to $23.57 FY2 EPS, justifying a fair multiple.
+- **ROKU** — long · mixed · justified: Platform/ad/subscription growth, ad margin near 62%, and the 394% FY1 earnings inflection justify the mixed premium/ultra-low-PEG flag if Q3 execution holds.
+
+Per-ticker print quals: `consumer_electronics_industry/printqual_GRMN_2026-09-02.md` · `consumer_electronics_industry/printqual_MSFT_2026-09-02.md` · `consumer_electronics_industry/printqual_ROKU_2026-09-02.md`
+
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.

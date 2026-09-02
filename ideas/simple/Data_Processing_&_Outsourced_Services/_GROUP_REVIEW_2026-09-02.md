@@ -9,7 +9,7 @@
 | Ticker | Side | Flag (vs theme) | Verdict | Idea | Why |
 |---|---|---|---|---|---|
 | **CNXC** | short | discount | ✅ justified | ✅ | Forward case points to stalled demand, margin compression, and estimate cuts; a Q3 miss or unchanged weak guidance would confirm the discount is warranted by durable deterioration. |
-| **EXLS** | long | fair | ✅ justified | — | Strong Q2 momentum, raised 2026 outlook, and 9/0 upward revisions support ~17%/13% EPS growth and a PEG near 1.0, so the fair flag is backed by fundamentals. |
+| **EXLS** | long | fair | ✅ justified | ✅ | Strong Q2 momentum, raised 2026 outlook, and 9/0 upward revisions support ~17%/13% EPS growth and a PEG near 1.0, so the fair flag is backed by fundamentals. |
 | **MBGL** | neutral | fair | ❔ uncertain | — | CARFAX recalibration and Q2 earnings decline create uncertainty; stable guidance could support fair, but further margin compression or estimate cuts would make fair look optimistic. |
 | **VRRM** | short | discount | ✅ justified | ✅ | One-time NYC lift, net loss from impairments, falling cash flow, and FY2 EPS expected down ~17% support the discount as earnings quality deteriorates. |
 
@@ -41,12 +41,13 @@
 
 **The market is right, ride it:**
 - **CNXC** — short · discount · justified: Forward case points to stalled demand, margin compression, and estimate cuts; a Q3 miss or unchanged weak guidance would confirm the discount is warranted by durable deterioration.
+- **EXLS** — long · fair · justified: Strong Q2 momentum, raised 2026 outlook, and 9/0 upward revisions support ~17%/13% EPS growth and a PEG near 1.0, so the fair flag is backed by fundamentals.
 - **VRRM** — short · discount · justified: One-time NYC lift, net loss from impairments, falling cash flow, and FY2 EPS expected down ~17% support the discount as earnings quality deteriorates.
 
-Per-ticker print quals: `Data_Processing_&_Outsourced_Services/printqual_CNXC_2026-09-02.md` · `Data_Processing_&_Outsourced_Services/printqual_VRRM_2026-09-02.md`
+Per-ticker print quals: `Data_Processing_&_Outsourced_Services/printqual_CNXC_2026-09-02.md` · `Data_Processing_&_Outsourced_Services/printqual_EXLS_2026-09-02.md` · `Data_Processing_&_Outsourced_Services/printqual_VRRM_2026-09-02.md`
 
 ## How to read this
 - The three columns are independent layers: **Side** follows the name's own 90d estimate revisions (rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the **Verdict** judges the flag against the print-focused case — never the dive, which can lag the calendar.
 - The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the forward case does not support paying the multiple (supports a short, warns a long); `not justified` on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); `justified` says the market's pricing matches the fundamentals either way.
-- So the textbook setups are: short + premium + `not justified` (expensive and deteriorating), long + discount + `not justified` (cheap and improving); the cautionary ones are long + premium (paying up against the theme) and short + discount + `justified` (cheap for a real reason).
+- The aligned combinations are the trade candidates: short + premium `not justified` (expensive and deteriorating), long + discount `not justified` (cheap and improving), long + premium `justified` and short + discount `justified` (the market is right, ride it), plus fair + `justified` either side. The contradicted ones (⛔) are the mirror: e.g. long + discount `justified` — cheap for a real reason you'd be fighting.
 - `not justified` never ranks or gates anything — read the member's print qual and coverage report before acting.
