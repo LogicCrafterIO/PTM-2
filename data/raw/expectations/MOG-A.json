@@ -1,0 +1,97 @@
+{
+  "ticker": "MOG-A",
+  "as_of": "2026-08-20T06:44:31.395716+00:00",
+  "earnings_date": "2026-11-01",
+  "implied": {
+    "available": true,
+    "reason": "",
+    "expiry": "2026-12-18",
+    "expiry_covers_earnings": true,
+    "expiries_listed": 4,
+    "spot": 410.94,
+    "strike": 410.0,
+    "strike_offset_pct": -0.23,
+    "implied_move_pct": 18.3,
+    "open_interest": 27,
+    "two_sided_strikes": 8,
+    "strikes": 53,
+    "spread_pct": null,
+    "quote_basis": "last_trade_only",
+    "open_interest_missing": false,
+    "thin": true
+  },
+  "revisions": {
+    "available": true,
+    "eps_current": 11.41239,
+    "eps_d30": 10.635,
+    "eps_d90": 10.635,
+    "change_30d_pct": 7.31,
+    "change_90d_pct": 7.31,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.56,
+        "estimate": 2.2175,
+        "surprise_pct": 15.45
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.63,
+        "estimate": 2.2125,
+        "surprise_pct": 18.87
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.64,
+        "estimate": 2.36333,
+        "surprise_pct": 11.71
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.72,
+        "estimate": 2.65928,
+        "surprise_pct": 39.89
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 21.48
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": -7.01
+      },
+      {
+        "report_date": "2026-04-24",
+        "move_pct": 2.26
+      },
+      {
+        "report_date": "2026-01-30",
+        "move_pct": 6.02
+      },
+      {
+        "report_date": "2025-11-26",
+        "move_pct": -0.14
+      }
+    ],
+    "avg_abs_move_pct": 3.86,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Options price a 18.3% move by 2026-12-18 (no strike near spot quotes two-sided, so this is from last traded prices and may be stale). That is the hurdle this thesis has to clear to pay.",
+    "Chain is thin: 27 contracts of open interest across 53 strikes, 8 of them quotable \u2014 the position may be hard to put on at a sensible price.",
+    "Consensus EPS for the current year has moved +7.3% over 90 days and +7.3% over 30 days \u2014 expectations are already rising, so that much is priced.",
+    "Analyst revisions in the last 30 days: 1 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -7.0%, +2.3%, +6.0%, -0.1% (average absolute move 3.9%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +21.5%."
+  ]
+}

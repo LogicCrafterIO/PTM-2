@@ -1,0 +1,77 @@
+{
+  "ticker": "FISV",
+  "as_of": "2026-08-30T14:00:19.993723+00:00",
+  "earnings_date": "2026-11-10",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.26435,
+    "eps_d30": 8.11333,
+    "eps_d90": 8.13425,
+    "change_30d_pct": -10.46,
+    "change_90d_pct": -10.69,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 25
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.04,
+        "estimate": 2.64598,
+        "surprise_pct": -22.9
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.99,
+        "estimate": 1.90247,
+        "surprise_pct": 4.6
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.79,
+        "estimate": 1.57187,
+        "surprise_pct": 13.88
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.84,
+        "estimate": 1.91368,
+        "surprise_pct": -3.85
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -2.07
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-07",
+        "move_pct": -3.14
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": -2.04
+      },
+      {
+        "report_date": "2026-02-19",
+        "move_pct": -2.35
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": -7.66
+      }
+    ],
+    "avg_abs_move_pct": 3.8,
+    "down_prints": 4,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -10.7% over 90 days and -10.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 25 down.",
+    "Price reaction to the last 4 reports, most recent first: -3.1%, -2.0%, -2.4%, -7.7% (average absolute move 3.8%, 4 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -2.1%."
+  ]
+}

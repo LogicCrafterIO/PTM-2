@@ -1,0 +1,56 @@
+# COVERAGE LONG EVTC — Transaction & Payment Processing Services
+
+*Theme-first simple process · 2026-09-02 · full-membership research coverage — not gate-processed, not in the book. Side follows the name's own 90d estimate direction.*
+
+## Theme context
+- Theme status: ACTIVE, lean long (breadth +1.00) — share of covered members revising up minus share revising down over 90d (each move > ±0.5%)
+- Thesis: (none written for this theme)
+- Coverage: 4 of 8 members have fresh estimate caches
+- This name vs its theme: with the theme
+- Member 90d estimate change (rev90): +2.08% — the name's own FY1 EPS estimate rise over the last 90 days
+- Next print: 2026-11-07 (66d) — the catalyst the 2-4 month horizon is built around
+
+
+## Why & why now (forward-looking)
+1. The next earnings print will reveal Q3 2026 revenue and adjusted EBITDA momentum, and management's Q4 guidance will show if the 16% constant-currency growth is durable or fading.
+2. Brazil's expanded payment institution license is expected in Q3 2026; if approval lands in the next few weeks, Q4 2026 and early 2027 should show initial revenue contribution and justify the integration spending.
+3. The blockchain-based digital asset processing platform is slated to launch in Q3 2026; adoption and volume trends in Q4 and 2027 will show whether it diversifies revenue beyond the core acquiring business.
+4. EVTC returned $50.1 million to shareholders in Q2 and raised its buyback authorization to $150 million, so the next few prints need to show that capital returns are not starving the balance sheet of cash for Brazil integration and platform investment.
+5. Popular accounted for 29% of 2025 revenue, so the next prints need to show that concentration is stable or falling; a move toward 30% would undermine the diversification story, while a flat or lower share supports the long case.
+6. Integration costs from recent acquisitions need to stay below the $200 million falsifier threshold; if Q3 and Q4 updates keep costs contained and revenue synergies on track, EBITDA margin can expand from the Q2 base into 2027.
+7. The October 2026 earnings call will set the 2027 outlook; guidance for EBITDA margin comfortably above the 15% floor and continued revenue growth would keep the rerating case intact.
+8. Peer prints from JKHY, PAYO, and TOST in early November will provide a cross-check on payment-processor demand, pricing, and margins; strong peer results would reinforce confidence in EVTC's volume and pricing tailwinds through year-end.
+9. A clean cybersecurity and operations record over the next few quarters, with no incident exceeding $10 million in fines or downtime, keeps the regulatory and customer foundation solid for the long thesis.
+10. Over the next 12-18 months, progress in Brazil, digital assets, and acquisition integration could reduce reliance on Popular and validate the constructive stance; the next two prints are the first real checkpoints.
+
+## Catalysts
+- **EVTC print** — 2026-11-07 (66d) — the dated catalyst this idea is built around
+- Peer print: **JKHY** — 2026-11-03 (62d) — same-theme read-through
+- Peer print: **PAYO** — 2026-11-05 (64d) — same-theme read-through
+- Peer print: **TOST** — 2026-11-04 (63d) — same-theme read-through
+- Q4 2026 earnings call — October 2026 — if it lands: Full‑year 2026 revenue and earnings guidance; update on Latin American expansion and new product launches (e.g., blockchain‑based digital as
+- Regulatory approval for expanded payment institution license in Brazil — Q3 2026 — if it lands: Central Bank of Brazil grants an expanded license allowing Evertec to offer additional payment services (instant payments, digital wallets) 
+- Launch of blockchain‑based digital asset processing platform — Q3 2026 — if it lands: Evertec introduces a new platform leveraging the BBChain acquisition to process digital asset transactions; expected to generate a new reven
+
+## Quant snapshot (deterministic)
+
+| metric | value |
+|---|---|
+| Price | 29.47 |
+| Market cap | $1.8B |
+| Revenue (latest filing) | $454M |
+| **Price / Sales** | **3.88x** |
+| FY1 EPS (consensus) | 4.00 |
+| FY2 EPS (consensus) | 4.38 |
+| EG1 → EG2 | +10.4% → +9.5% |
+| PE1 | 7.37x |
+| PE2 | 6.73x |
+| PEG1 | 0.71 |
+| PEG2 | 0.71 |
+| **Valuation flag (vs theme)** | **discount** — P/E 0.5x theme median vs PEG 1.0x theme median |
+| rev90 (own estimates) | +2.1% |
+
+*Reference numbers from the cached fundamentals table (EDGAR XBRL + analyst consensus, basis: analyst_consensus). Fundamentals as of 2026-09-02. Not a ranking, not a gate — read the qual brief against these.*
+
+## Underlying research
+- Deep dive: `data/raw/deepsearch/runs/EVTC.json` — rendered in the viewer's Deep dives tab (stance, bull/bear debate, sourced findings, falsifiers).

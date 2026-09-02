@@ -1,0 +1,77 @@
+{
+  "ticker": "CDNS",
+  "as_of": "2026-08-25T07:38:35.769589+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 4.80115,
+    "eps_d30": 4.49978,
+    "eps_d90": 4.49478,
+    "change_30d_pct": 6.7,
+    "change_90d_pct": 6.82,
+    "analysts_up_30d": 10,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.93,
+        "estimate": 1.78953,
+        "surprise_pct": 7.85
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.99,
+        "estimate": 1.91226,
+        "surprise_pct": 4.07
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.96,
+        "estimate": 1.88506,
+        "surprise_pct": 3.98
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.11,
+        "estimate": 2.05529,
+        "surprise_pct": 2.66
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 4.64
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": -3.47
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": 3.44
+      },
+      {
+        "report_date": "2026-02-19",
+        "move_pct": -2.76
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": 0.04
+      }
+    ],
+    "avg_abs_move_pct": 2.43,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +6.8% over 90 days and +6.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 10 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -3.5%, +3.4%, -2.8%, +0.0% (average absolute move 2.4%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +4.6%."
+  ]
+}

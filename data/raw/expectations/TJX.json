@@ -1,0 +1,97 @@
+{
+  "ticker": "TJX",
+  "as_of": "2026-08-20T06:44:25.951763+00:00",
+  "earnings_date": "2026-08-28",
+  "implied": {
+    "available": true,
+    "reason": "",
+    "expiry": "2026-08-28",
+    "expiry_covers_earnings": true,
+    "expiries_listed": 13,
+    "spot": 144.5,
+    "strike": 145.0,
+    "strike_offset_pct": 0.35,
+    "implied_move_pct": 2.84,
+    "open_interest": 0,
+    "two_sided_strikes": 0,
+    "strikes": 32,
+    "spread_pct": null,
+    "quote_basis": "last_trade_only",
+    "open_interest_missing": true,
+    "thin": null
+  },
+  "revisions": {
+    "available": true,
+    "eps_current": 5.22373,
+    "eps_d30": 5.2241,
+    "eps_d90": 5.11375,
+    "change_30d_pct": -0.01,
+    "change_90d_pct": 2.15,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-07-31",
+        "actual": 1.1,
+        "estimate": 1.01428,
+        "surprise_pct": 8.45
+      },
+      {
+        "quarter": "2025-10-31",
+        "actual": 1.28,
+        "estimate": 1.21962,
+        "surprise_pct": 4.95
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 1.58,
+        "estimate": 1.38464,
+        "surprise_pct": 14.11
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 1.19,
+        "estimate": 1.00667,
+        "surprise_pct": 18.21
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 11.43
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-05-29",
+        "move_pct": -0.09
+      },
+      {
+        "report_date": "2026-03-31",
+        "move_pct": 2.51
+      },
+      {
+        "report_date": "2025-12-02",
+        "move_pct": -0.73
+      },
+      {
+        "report_date": "2025-08-29",
+        "move_pct": -0.37
+      }
+    ],
+    "avg_abs_move_pct": 0.92,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Options price a 2.8% move by 2026-08-28 (no strike near spot quotes two-sided, so this is from last traded prices and may be stale). That is the hurdle this thesis has to clear to pay.",
+    "Options liquidity UNKNOWN: the data feed returned no open interest for this chain (32 strikes listed), which is a gap in the data rather than an empty market. Verify in your broker before sizing.",
+    "Consensus EPS for the current year has moved +2.1% over 90 days and -0.0% over 30 days \u2014 expectations are already rising, so that much is priced.",
+    "Analyst revisions in the last 30 days: 1 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.1%, +2.5%, -0.7%, -0.4% (average absolute move 0.9%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +11.4%."
+  ]
+}

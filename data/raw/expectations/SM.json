@@ -1,0 +1,77 @@
+{
+  "ticker": "SM",
+  "as_of": "2026-08-30T14:12:14.511247+00:00",
+  "earnings_date": "2026-11-06",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.14379,
+    "eps_d30": 6.88738,
+    "eps_d90": 7.4904,
+    "change_30d_pct": 3.72,
+    "change_90d_pct": -4.63,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.33,
+        "estimate": 1.24545,
+        "surprise_pct": 6.79
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.83,
+        "estimate": 0.82843,
+        "surprise_pct": 0.19
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.55,
+        "estimate": 1.12521,
+        "surprise_pct": 37.75
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.19,
+        "estimate": 1.95455,
+        "surprise_pct": 12.05
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 14.2
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -1.1
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 1.93
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": -4.17
+      },
+      {
+        "report_date": "2025-11-03",
+        "move_pct": -7.37
+      }
+    ],
+    "avg_abs_move_pct": 3.64,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -4.6% over 90 days and +3.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 5 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.1%, +1.9%, -4.2%, -7.4% (average absolute move 3.6%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +14.2%."
+  ]
+}

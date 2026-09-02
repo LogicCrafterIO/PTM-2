@@ -1,0 +1,77 @@
+{
+  "ticker": "TRIP",
+  "as_of": "2026-09-02T13:49:24.610173+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.8499,
+    "eps_d30": 1.3139,
+    "eps_d90": 1.32039,
+    "change_30d_pct": -35.31,
+    "change_90d_pct": -35.63,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.65,
+        "estimate": 0.55156,
+        "surprise_pct": 17.85
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.04,
+        "estimate": 0.13167,
+        "surprise_pct": -69.62
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.11,
+        "estimate": -0.06525,
+        "surprise_pct": -68.58
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.35,
+        "estimate": 0.37791,
+        "surprise_pct": -7.39
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -31.93
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -25.52
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 0.45
+      },
+      {
+        "report_date": "2026-02-13",
+        "move_pct": -6.88
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -0.06
+      }
+    ],
+    "avg_abs_move_pct": 8.23,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -35.6% over 90 days and -35.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 3 down.",
+    "Price reaction to the last 4 reports, most recent first: -25.5%, +0.5%, -6.9%, -0.1% (average absolute move 8.2%, 3 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -31.9%."
+  ]
+}

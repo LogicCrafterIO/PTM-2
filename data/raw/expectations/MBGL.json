@@ -1,0 +1,47 @@
+{
+  "ticker": "MBGL",
+  "as_of": "2026-09-02T13:49:21.370408+00:00",
+  "earnings_date": "2026-11-06",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.56236,
+    "eps_d30": 1.60167,
+    "eps_d90": 0.0,
+    "change_30d_pct": -2.45,
+    "change_90d_pct": null,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.4608,
+        "estimate": 0.4575,
+        "surprise_pct": 0.72
+      }
+    ],
+    "beats": 1,
+    "of": 1,
+    "avg_surprise_pct": 0.72
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-07",
+        "move_pct": -4.97
+      }
+    ],
+    "avg_abs_move_pct": 4.97,
+    "down_prints": 1,
+    "of": 1
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 2 down.",
+    "Price reaction to the last 1 reports, most recent first: -5.0% (average absolute move 5.0%, 1 of 1 negative).",
+    "Beat consensus in 1 of the last 1 quarters, average surprise +0.7%."
+  ]
+}

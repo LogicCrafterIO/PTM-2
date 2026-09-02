@@ -1,0 +1,77 @@
+{
+  "ticker": "CPAY",
+  "as_of": "2026-09-02T13:49:15.517566+00:00",
+  "earnings_date": "2026-11-10",
+  "revisions": {
+    "available": true,
+    "eps_current": 27.39286,
+    "eps_d30": 26.77261,
+    "eps_d90": 26.77423,
+    "change_30d_pct": 2.32,
+    "change_90d_pct": 2.31,
+    "analysts_up_30d": 13,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 5.7,
+        "estimate": 5.64252,
+        "surprise_pct": 1.02
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 6.04,
+        "estimate": 5.94046,
+        "surprise_pct": 1.68
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 5.8,
+        "estimate": 5.4702,
+        "surprise_pct": 6.03
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 7.0,
+        "estimate": 6.58496,
+        "surprise_pct": 6.3
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 3.76
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-10",
+        "move_pct": 2.02
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": 12.51
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": -2.7
+      },
+      {
+        "report_date": "2025-11-10",
+        "move_pct": 1.65
+      }
+    ],
+    "avg_abs_move_pct": 4.72,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.3% over 90 days and +2.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 13 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +2.0%, +12.5%, -2.7%, +1.6% (average absolute move 4.7%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +3.8%."
+  ]
+}

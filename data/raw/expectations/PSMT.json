@@ -1,0 +1,77 @@
+{
+  "ticker": "PSMT",
+  "as_of": "2026-08-30T14:32:00.731637+00:00",
+  "earnings_date": "2026-10-07",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.53,
+    "eps_d30": 5.56,
+    "eps_d90": 5.44667,
+    "change_30d_pct": -0.54,
+    "change_90d_pct": 1.53,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 1.02,
+        "estimate": 1.06,
+        "surprise_pct": -3.77
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 1.29,
+        "estimate": 1.325,
+        "surprise_pct": -2.64
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 1.62,
+        "estimate": 1.565,
+        "surprise_pct": 3.51
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 1.28,
+        "estimate": 1.19,
+        "surprise_pct": 7.56
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 1.16
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-08",
+        "move_pct": -1.48
+      },
+      {
+        "report_date": "2026-04-08",
+        "move_pct": 3.94
+      },
+      {
+        "report_date": "2026-01-07",
+        "move_pct": 0.38
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": 1.51
+      }
+    ],
+    "avg_abs_move_pct": 1.83,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.5% over 90 days and -0.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.5%, +3.9%, +0.4%, +1.5% (average absolute move 1.8%, 1 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +1.2%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "LSCC",
+  "as_of": "2026-08-30T14:32:21.736742+00:00",
+  "earnings_date": "2026-11-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.1324,
+    "eps_d30": 1.82582,
+    "eps_d90": 1.81985,
+    "change_30d_pct": 16.79,
+    "change_90d_pct": 17.17,
+    "analysts_up_30d": 7,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.28,
+        "estimate": 0.27917,
+        "surprise_pct": 0.3
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.32,
+        "estimate": 0.31769,
+        "surprise_pct": 0.73
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.41,
+        "estimate": 0.36977,
+        "surprise_pct": 10.88
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.53,
+        "estimate": 0.44516,
+        "surprise_pct": 19.06
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 7.74
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": 8.51
+      },
+      {
+        "report_date": "2026-05-04",
+        "move_pct": 3.81
+      },
+      {
+        "report_date": "2026-02-13",
+        "move_pct": -2.17
+      },
+      {
+        "report_date": "2025-11-03",
+        "move_pct": -0.19
+      }
+    ],
+    "avg_abs_move_pct": 3.67,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +17.2% over 90 days and +16.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 7 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +8.5%, +3.8%, -2.2%, -0.2% (average absolute move 3.7%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +7.7%."
+  ]
+}

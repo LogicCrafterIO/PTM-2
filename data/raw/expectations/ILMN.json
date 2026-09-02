@@ -1,0 +1,77 @@
+{
+  "ticker": "ILMN",
+  "as_of": "2026-08-30T13:38:38.675613+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.35631,
+    "eps_d30": 5.22702,
+    "eps_d90": 5.2265,
+    "change_30d_pct": 2.47,
+    "change_90d_pct": 2.48,
+    "analysts_up_30d": 16,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.34,
+        "estimate": 1.16781,
+        "surprise_pct": 14.74
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.35,
+        "estimate": 1.23071,
+        "surprise_pct": 9.69
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.15,
+        "estimate": 1.05477,
+        "surprise_pct": 9.03
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.31,
+        "estimate": 1.22632,
+        "surprise_pct": 6.82
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 10.07
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": 0.0
+      },
+      {
+        "report_date": "2026-05-04",
+        "move_pct": 2.64
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": -1.67
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": 24.78
+      }
+    ],
+    "avg_abs_move_pct": 7.27,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.5% over 90 days and +2.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 16 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.0%, +2.6%, -1.7%, +24.8% (average absolute move 7.3%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +10.1%."
+  ]
+}

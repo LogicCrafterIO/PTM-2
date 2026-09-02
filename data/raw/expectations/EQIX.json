@@ -1,0 +1,77 @@
+{
+  "ticker": "EQIX",
+  "as_of": "2026-08-30T13:35:27.364279+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 17.88333,
+    "eps_d30": 17.77667,
+    "eps_d90": 17.74667,
+    "change_30d_pct": 0.6,
+    "change_90d_pct": 0.77,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 3.8859,
+        "estimate": 3.43429,
+        "surprise_pct": 13.15
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 3.3732,
+        "estimate": 3.87833,
+        "surprise_pct": -13.02
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 4.1678,
+        "estimate": 4.3325,
+        "surprise_pct": -3.8
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 5.0985,
+        "estimate": 4.795,
+        "surprise_pct": 6.33
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 0.67
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": -2.59
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": 1.18
+      },
+      {
+        "report_date": "2026-02-11",
+        "move_pct": 1.26
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": -2.25
+      }
+    ],
+    "avg_abs_move_pct": 1.82,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.8% over 90 days and +0.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -2.6%, +1.2%, +1.3%, -2.2% (average absolute move 1.8%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +0.7%."
+  ]
+}

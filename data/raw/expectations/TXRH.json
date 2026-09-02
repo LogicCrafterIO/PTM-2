@@ -1,0 +1,77 @@
+{
+  "ticker": "TXRH",
+  "as_of": "2026-08-30T13:30:57.784471+00:00",
+  "earnings_date": "2026-11-06",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.59215,
+    "eps_d30": 6.4266,
+    "eps_d90": 6.40382,
+    "change_30d_pct": 2.58,
+    "change_90d_pct": 2.94,
+    "analysts_up_30d": 17,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.25,
+        "estimate": 1.27867,
+        "surprise_pct": -2.24
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.28,
+        "estimate": 1.49749,
+        "surprise_pct": -14.52
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.87,
+        "estimate": 1.79865,
+        "surprise_pct": 3.97
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.85,
+        "estimate": 1.82507,
+        "surprise_pct": 1.37
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -2.85
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-07",
+        "move_pct": -0.08
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": 12.32
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": -0.81
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": 2.68
+      }
+    ],
+    "avg_abs_move_pct": 3.97,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.9% over 90 days and +2.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 17 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.1%, +12.3%, -0.8%, +2.7% (average absolute move 4.0%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -2.9%."
+  ]
+}

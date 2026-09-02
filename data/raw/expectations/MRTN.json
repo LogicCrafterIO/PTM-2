@@ -1,0 +1,77 @@
+{
+  "ticker": "MRTN",
+  "as_of": "2026-08-30T14:32:55.840144+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.3,
+    "eps_d30": 0.275,
+    "eps_d90": 0.22,
+    "change_30d_pct": 9.09,
+    "change_90d_pct": 36.36,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.03,
+        "estimate": 0.04122,
+        "surprise_pct": -27.22
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.05,
+        "estimate": 0.02509,
+        "surprise_pct": 99.28
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.02,
+        "estimate": 0.02488,
+        "surprise_pct": -19.61
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.07,
+        "estimate": 0.075,
+        "surprise_pct": -6.67
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": 11.45
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -0.47
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": 2.91
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": 0.3
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": 0.92
+      }
+    ],
+    "avg_abs_move_pct": 1.15,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +36.4% over 90 days and +9.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.5%, +2.9%, +0.3%, +0.9% (average absolute move 1.1%, 1 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise +11.4%."
+  ]
+}

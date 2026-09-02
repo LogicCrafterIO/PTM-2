@@ -1,0 +1,77 @@
+{
+  "ticker": "AAPL",
+  "as_of": "2026-09-02T13:49:13.359212+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 8.81249,
+    "eps_d30": 8.7676,
+    "eps_d90": 8.75324,
+    "change_30d_pct": 0.51,
+    "change_90d_pct": 0.68,
+    "analysts_up_30d": 21,
+    "analysts_down_30d": 8
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.85,
+        "estimate": 1.76993,
+        "surprise_pct": 4.52
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.84,
+        "estimate": 2.6708,
+        "surprise_pct": 6.34
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.01,
+        "estimate": 1.94275,
+        "surprise_pct": 3.46
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.02,
+        "estimate": 1.89243,
+        "surprise_pct": 6.74
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 5.26
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": -7.35
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": 3.24
+      },
+      {
+        "report_date": "2026-01-30",
+        "move_pct": 0.46
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": -0.38
+      }
+    ],
+    "avg_abs_move_pct": 2.86,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.7% over 90 days and +0.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 21 up, 8 down.",
+    "Price reaction to the last 4 reports, most recent first: -7.3%, +3.2%, +0.5%, -0.4% (average absolute move 2.9%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +5.3%."
+  ]
+}

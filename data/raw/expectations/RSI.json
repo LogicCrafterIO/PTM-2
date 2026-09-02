@@ -1,0 +1,77 @@
+{
+  "ticker": "RSI",
+  "as_of": "2026-08-30T14:32:07.326770+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.62,
+    "eps_d30": 0.5896,
+    "eps_d90": 0.59842,
+    "change_30d_pct": 5.16,
+    "change_90d_pct": 3.61,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.09,
+        "estimate": 0.07228,
+        "surprise_pct": 24.52
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.08,
+        "estimate": 0.10637,
+        "surprise_pct": -24.79
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.14,
+        "estimate": 0.119,
+        "surprise_pct": 17.65
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.15,
+        "estimate": 0.14985,
+        "surprise_pct": 0.1
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 4.37
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": -13.03
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": 16.58
+      },
+      {
+        "report_date": "2026-02-18",
+        "move_pct": 7.32
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": -6.66
+      }
+    ],
+    "avg_abs_move_pct": 10.9,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.6% over 90 days and +5.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -13.0%, +16.6%, +7.3%, -6.7% (average absolute move 10.9%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +4.4%."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "ticker": "SMCI",
+  "as_of": "2026-08-30T14:15:35.748569+00:00",
+  "earnings_date": "2026-11-09",
+  "revisions": {
+    "available": true,
+    "eps_current": 4.3382,
+    "eps_d30": 3.19216,
+    "eps_d90": 3.26003,
+    "change_30d_pct": 35.9,
+    "change_90d_pct": 33.07,
+    "analysts_up_30d": 5,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.35,
+        "estimate": 0.38923,
+        "surprise_pct": -10.08
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.84,
+        "estimate": 0.62451,
+        "surprise_pct": 34.51
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.7,
+        "estimate": 0.95748,
+        "surprise_pct": 77.55
+      }
+    ],
+    "beats": 2,
+    "of": 3,
+    "avg_surprise_pct": 33.99
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-05-11",
+        "move_pct": -5.23
+      },
+      {
+        "report_date": "2026-02-06",
+        "move_pct": 11.44
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": -1.44
+      }
+    ],
+    "avg_abs_move_pct": 6.04,
+    "down_prints": 2,
+    "of": 3
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +33.1% over 90 days and +35.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 5 up, 1 down.",
+    "Price reaction to the last 3 reports, most recent first: -5.2%, +11.4%, -1.4% (average absolute move 6.0%, 2 of 3 negative).",
+    "Beat consensus in 2 of the last 3 quarters, average surprise +34.0%."
+  ]
+}

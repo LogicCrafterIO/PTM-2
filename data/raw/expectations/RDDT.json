@@ -1,0 +1,77 @@
+{
+  "ticker": "RDDT",
+  "as_of": "2026-08-30T14:32:36.911456+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.38728,
+    "eps_d30": 4.98224,
+    "eps_d90": 4.96139,
+    "change_30d_pct": 8.13,
+    "change_90d_pct": 8.58,
+    "analysts_up_30d": 19,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.8,
+        "estimate": 0.52015,
+        "surprise_pct": 53.8
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.24,
+        "estimate": 0.93136,
+        "surprise_pct": 33.14
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.01,
+        "estimate": 0.56388,
+        "surprise_pct": 79.12
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.25,
+        "estimate": 0.96481,
+        "surprise_pct": 29.56
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 48.91
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": -20.99
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": 13.07
+      },
+      {
+        "report_date": "2026-02-06",
+        "move_pct": -7.43
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": 7.47
+      }
+    ],
+    "avg_abs_move_pct": 12.24,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +8.6% over 90 days and +8.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 19 up, 3 down.",
+    "Price reaction to the last 4 reports, most recent first: -21.0%, +13.1%, -7.4%, +7.5% (average absolute move 12.2%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +48.9%."
+  ]
+}

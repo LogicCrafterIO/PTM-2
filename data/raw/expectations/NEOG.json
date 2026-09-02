@@ -1,0 +1,77 @@
+{
+  "ticker": "NEOG",
+  "as_of": "2026-08-30T13:45:52.423481+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.31,
+    "eps_d30": 0.3,
+    "eps_d90": 0.29667,
+    "change_30d_pct": 3.33,
+    "change_90d_pct": 4.49,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 0.04,
+        "estimate": 0.03667,
+        "surprise_pct": 9.08
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 0.1,
+        "estimate": 0.06667,
+        "surprise_pct": 49.99
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 0.09,
+        "estimate": 0.05333,
+        "surprise_pct": 68.76
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 0.09,
+        "estimate": 0.05667,
+        "surprise_pct": 58.81
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 46.66
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": 22.66
+      },
+      {
+        "report_date": "2026-04-09",
+        "move_pct": -2.9
+      },
+      {
+        "report_date": "2026-01-08",
+        "move_pct": 31.57
+      },
+      {
+        "report_date": "2025-10-09",
+        "move_pct": 16.49
+      }
+    ],
+    "avg_abs_move_pct": 18.41,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +4.5% over 90 days and +3.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +22.7%, -2.9%, +31.6%, +16.5% (average absolute move 18.4%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +46.7%."
+  ]
+}

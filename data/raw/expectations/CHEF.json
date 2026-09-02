@@ -1,0 +1,77 @@
+{
+  "ticker": "CHEF",
+  "as_of": "2026-08-30T14:32:00.730813+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.54059,
+    "eps_d30": 2.27308,
+    "eps_d90": 2.23568,
+    "change_30d_pct": 11.77,
+    "change_90d_pct": 13.64,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.5,
+        "estimate": 0.4156,
+        "surprise_pct": 20.31
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.68,
+        "estimate": 0.62494,
+        "surprise_pct": 8.81
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.4,
+        "estimate": 0.25012,
+        "surprise_pct": 59.92
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.78,
+        "estimate": 0.58972,
+        "surprise_pct": 32.27
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 30.33
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": 5.44
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": 17.84
+      },
+      {
+        "report_date": "2026-02-24",
+        "move_pct": 1.83
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": 6.38
+      }
+    ],
+    "avg_abs_move_pct": 7.87,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +13.6% over 90 days and +11.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +5.4%, +17.8%, +1.8%, +6.4% (average absolute move 7.9%, 0 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +30.3%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "SITM",
+  "as_of": "2026-08-30T14:32:15.278377+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 11.14301,
+    "eps_d30": 8.4877,
+    "eps_d90": 7.85744,
+    "change_30d_pct": 31.28,
+    "change_90d_pct": 41.81,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.87,
+        "estimate": 0.7103,
+        "surprise_pct": 22.48
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.53,
+        "estimate": 1.2085,
+        "surprise_pct": 26.6
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.44,
+        "estimate": 1.15716,
+        "surprise_pct": 24.44
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.34,
+        "estimate": 1.95425,
+        "surprise_pct": 19.74
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 23.32
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": 26.58
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 27.91
+      },
+      {
+        "report_date": "2026-02-11",
+        "move_pct": 5.44
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": 21.77
+      }
+    ],
+    "avg_abs_move_pct": 20.43,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +41.8% over 90 days and +31.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +26.6%, +27.9%, +5.4%, +21.8% (average absolute move 20.4%, 0 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +23.3%."
+  ]
+}

@@ -1,0 +1,1410 @@
+{
+  "ticker": "MOG-A",
+  "name": "Moog Inc.",
+  "sector": "Industrials",
+  "industry": "Aerospace & Defense",
+  "as_of": "2026-09-02",
+  "research": {
+    "ticker": "MOG-A",
+    "as_of": "2026-09-02",
+    "queries_run": [
+      "Moog Inc latest news this quarter 2025 earnings guidance analyst upgrades downgrades",
+      "Moog Inc customer wins contract awards 2025 2026 Boeing Airbus Lockheed Martin Northrop Grumman RTX",
+      "Moog Inc management changes CEO CFO executive departures hires 2025",
+      "Moog Inc data center liquid cooling pumps AI hyperscaler customers 2025 2026",
+      "Moog Inc competitors Parker Hannifin Eaton Woodward Curtiss-Wright flight controls market share 2025",
+      "Moog Inc bear case risks Boeing 737 MAX production delays defense budget cuts tariffs 2026",
+      "Aerospace defense precision motion controls market outlook 2026 backlog production rates",
+      "Moog Inc analyst sentiment price target latest this quarter 2026 catalysts",
+      "Moog Inc medical pumps enteral feeding competition FDA warning 2025",
+      "Moog Inc space and defense thrust vector control contract wins 2025 2026"
+    ],
+    "findings": [
+      {
+        "claim": "Q3 2025 net sales $971\u202fmillion, up 7% YoY.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/67887/000006788725000047/ex991-72525.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-07-25"
+      },
+      {
+        "claim": "Q3 2025 operating margin 11.5%, 10 bps lower than Q3 2024.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/67887/000006788725000047/ex991-72525.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-07-25"
+      },
+      {
+        "claim": "Q2 2025 net sales $935\u202fmillion, flat versus $930\u202fmillion Q2 2024.",
+        "source": {
+          "title": "Moog Inc. Reports Second Quarter 2025 Results With Record Sales and Strong Operational Performance | Nasdaq",
+          "url": "https://www.nasdaq.com/press-release/moog-inc-reports-second-quarter-2025-results-record-sales-and-strong-operational",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Q2 2025 operating margin 11.7%, 30 bps lower than Q2 2024.",
+        "source": {
+          "title": "Moog Inc. Reports Second Quarter 2025 Results With Record Sales and Strong Operational Performance | Nasdaq",
+          "url": "https://www.nasdaq.com/press-release/moog-inc-reports-second-quarter-2025-results-record-sales-and-strong-operational",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Moog secured a $17.3\u202fmillion Air Force order for F\u201116 hydraulic drive units.",
+        "source": {
+          "title": "Moog Military Aircraft Lands $17.3M Air Force Order for F-16 Hydraulic Drive Units | Contract Awards",
+          "url": "https://envzone.com/award-record/moog-military-aircraft-lands-17-3m-air-force-order-for-f-16-hydraulic-drive-units/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Portuguese Army selected Moog Avionics for UH\u201160L modernization; deliveries start Fall\u202f2026.",
+        "source": {
+          "title": "Moog Inc. Announces Portuguese Army Selects Moog Avionics to Modernize UH-60L Fleet",
+          "url": "https://www.moog.com/news/operating-group-news/2026/moog-inc-announces-portuguese-army-selects-moog-avionics-to-modernize-uh-60l-fleet.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-07-21"
+      },
+      {
+        "claim": "Consensus analyst price target $360.32, 10.6% downside from current price.",
+        "source": {
+          "title": "MOG.A Forecast, Price Target & Analyst Ratings | ChartMill.com",
+          "url": "https://www.chartmill.com/stock/quote/MOG.A/analyst-ratings",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-31"
+      },
+      {
+        "claim": "2026 Q3 record sales, adjusted EPS, and expanded operating margin reported.",
+        "source": {
+          "title": "Moog Inc. Achieves Record Third Quarter 2026 Results Through Operational Excellence and Raises Full-Year Guidance | Morningstar",
+          "url": "https://www.morningstar.com/news/business-wire/20260731950193/moog-inc-achieves-record-third-quarter-2026-results-through-operational-excellence-and-raises-full-year-guidance",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-31"
+      },
+      {
+        "claim": "Q1 2026 net sales rose 21% YoY to $1.1\u202fB, up from $908\u202fM in Q1 2025.",
+        "source": {
+          "title": "Moog Inc. Reports First Quarter 2026 Record Sales and EPS and Raises Full-Year Guidance",
+          "url": "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q1/FY26-Q1-Report.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Operating margin in Q1 2026 was 12.3%, up 90\u202fbps from 11.4% in Q1 2025.",
+        "source": {
+          "title": "Moog Inc. Reports First Quarter 2026 Record Sales and EPS and Raises Full-Year Guidance",
+          "url": "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q1/FY26-Q1-Report.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Moog completed the Critical Design Review for Lynden Air Cargo\u2019s Hercules Avionics Upgrade, clearing the program for installation and first flight in 2026.",
+        "source": {
+          "title": "Moog Completes Lynden Air Cargo Hercules Avionics Upgrade CDR",
+          "url": "https://www.moog.com/news/operating-group-news/2026/moog-completes-lynden-air-cargo-hercules-avionics-upgrade-cdr.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-06-16"
+      },
+      {
+        "claim": "Moog received a $5.53\u202fM delivery order to remanufacture B\u20112 flight\u2011control actuators, with performance from Feb\u202f27\u202f2026 to Aug\u202f10\u202f2030.",
+        "source": {
+          "title": "Delivery Order #FA811826F0052 | Govly",
+          "url": "https://app.govly.com/public/awards/CONT_AWD_FA811826F0052_9700_FA811825D0003_9700",
+          "date": ""
+        },
+        "category": "contract",
+        "dated": "2026-02-27"
+      },
+      {
+        "claim": "Moog reported record fiscal fourth quarter 2025 sales, adjusted operating margin, and free cash flow, and issued strong fiscal 2026 guidance.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/67887/000162828025053505/ex991-112125.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-21"
+      },
+      {
+        "claim": "Moog\u2019s fiscal 2026 third quarter sales reached $1.1\u202fbillion, up 15% YoY; 12\u2011month backlog rose 23% YoY; free cash flow $133\u202fmillion; adjusted EPS $3.72, up 60% YoY.",
+        "source": {
+          "title": "Moog Q3 Earnings Call Highlights - Transcript Daily",
+          "url": "https://transcriptdaily.com/2026/08/02/moog-q3-earnings-call-highlights.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-02"
+      },
+      {
+        "claim": "Moog\u2019s fiscal 2026 Q3 operating\u2011profit benefit included $30\u202fmillion from recovery of previously paid IEEPA tariffs.",
+        "source": {
+          "title": "Moog Q3 Earnings Call Highlights - Transcript Daily",
+          "url": "https://transcriptdaily.com/2026/08/02/moog-q3-earnings-call-highlights.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-02"
+      },
+      {
+        "claim": "Moog adopted a non\u2011qualified deferred compensation plan effective Jan\u202f1\u202f2026, allowing up to 75% deferral of base and incentive compensation for select employees.",
+        "source": {
+          "title": "Moog Inc. adopts deferred comp plan; deferrals up to 75% | MOG 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/MOG/8-k-moog-inc-reports-material-event-de0472317722.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Moog plans to generate $100\u202fmillion in revenue from liquid\u2011cooling pumps in 2026 via two CDU partners, ramping production to 1,300 pumps per week across three factory lines.",
+        "source": {
+          "title": "Moog Liquid Cooling 2026, $100M via 2 CDU Partners - EnkiAI",
+          "url": "https://enkiai.com/data-center/moog-liquid-cooling-manufacturing/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Moog\u2019s CoreMotion magnetic pumps are designed for direct\u2011to\u2011chip and immersion liquid cooling, eliminating rotating seals and reducing leak points.",
+        "source": {
+          "title": "Liquid Cooling Solutions for Data Centers | Moog Data Center Cooling Pumps",
+          "url": "https://www.moog.com/products/pumps/liquid-cooling-pumps-for-data-centers.html",
+          "date": ""
+        },
+        "category": "product",
+        "dated": ""
+      },
+      {
+        "claim": "Moog\u2019s liquid\u2011cooling solutions target high\u2011density AI clusters, addressing the shift from air cooling to liquid cooling in hyperscale data centers.",
+        "source": {
+          "title": "Beyond the atmosphere, into the data center - DCD",
+          "url": "https://www.datacenterdynamics.com/en/marketwatch/beyond-the-atmosphere-into-the-data-center/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-17"
+      },
+      {
+        "claim": "Moog\u2019s 2026 guidance emphasizes continued operational improvements and strong demand across aerospace, defense, and industrial businesses.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/67887/000162828025053505/ex991-112125.htm",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2025-11-21"
+      },
+      {
+        "claim": "Moog's fiscal 2026 Q3 sales hit $1.1B, up 15% YoY, driven by aerospace, defense and industrial demand.",
+        "source": {
+          "title": "Moog Q3 Earnings Call Highlights - Markets Daily",
+          "url": "https://www.themarketsdaily.com/2026/08/03/moog-q3-earnings-call-highlights.html",
+          "date": ""
+        },
+        "category": "financials",
+        "dated": "2026-08-03"
+      },
+      {
+        "claim": "12\u2011month backlog grew 23% YoY.",
+        "source": {
+          "title": "Moog Q3 Earnings Call Highlights - Markets Daily",
+          "url": "https://www.themarketsdaily.com/2026/08/03/moog-q3-earnings-call-highlights.html",
+          "date": ""
+        },
+        "category": "financials",
+        "dated": "2026-08-03"
+      },
+      {
+        "claim": "Free cash flow generated $133M in Q3 2026.",
+        "source": {
+          "title": "Moog Q3 Earnings Call Highlights - Markets Daily",
+          "url": "https://www.themarketsdaily.com/2026/08/03/moog-q3-earnings-call-highlights.html",
+          "date": ""
+        },
+        "category": "financials",
+        "dated": "2026-08-03"
+      },
+      {
+        "claim": "Adjusted EPS reached $3.72, up 60% YoY.",
+        "source": {
+          "title": "Moog Q3 Earnings Call Highlights - Markets Daily",
+          "url": "https://www.themarketsdaily.com/2026/08/03/moog-q3-earnings-call-highlights.html",
+          "date": ""
+        },
+        "category": "financials",
+        "dated": "2026-08-03"
+      },
+      {
+        "claim": "Moog shifted in 2024 to focus on next\u2011gen flight controls and electromechanical actuation after divesting Space and Defense Controls testing services.",
+        "source": {
+          "title": "What is Competitive Landscape of Moog Company? \u2013 PortersFiveForce.com",
+          "url": "https://portersfiveforce.com/blogs/competitors/moog",
+          "date": ""
+        },
+        "category": "strategy",
+        "dated": "2026-03-19"
+      },
+      {
+        "claim": "Moog competes with large aerospace suppliers and niche motion\u2011control specialists, leveraging long product lifecycles, certified manufacturing and deep aftermarket services.",
+        "source": {
+          "title": "What is Competitive Landscape of Moog Company? \u2013 PortersFiveForce.com",
+          "url": "https://portersfiveforce.com/blogs/competitors/moog",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-03-19"
+      },
+      {
+        "claim": "Moog's Program Director Ray Walsh leads data center cooling initiatives, providing intelligent cooling controls and maintenance services.",
+        "source": {
+          "title": "Built for the Mission: Applying Purpose-Driven Engineering to Data Center Cooling Challenges | Data Center Frontier",
+          "url": "https://www.datacenterfrontier.com/sponsored/article/55292443/built-for-the-mission-applying-purpose-driven-engineering-to-data-center-cooling-challenges",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-05-26"
+      },
+      {
+        "claim": "Aircraft actuators market expected to grow from $10.66B in 2025 to $10.86B in 2026, reaching $14.84B by 2031 at 6.45% CAGR.",
+        "source": {
+          "title": "Aircraft Actuators - Market Share Analysis, Industry Trends & Statistics, Growth Forecasts (2026-2031)",
+          "url": "https://www.researchandmarkets.com/reports/4828308/aircraft-actuators-market-share-analysis",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Moog\u2019s FY2025 revenue is approximately $3.86\u202fB, with FY2026 guidance around $4.30\u202fB.",
+        "source": {
+          "title": "Moog Inc. (MOG-A) Stock Research Report | Flash",
+          "url": "https://flash.stocksentinel.ai/research/MOG-A",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": ""
+      },
+      {
+        "claim": "Moog\u2019s backlog stands at $3.30\u202fB, with its defense segment growing 17% YoY.",
+        "source": {
+          "title": "Moog Inc.: Great Business, Stretched Valuation \u2014 When 45x Earnings Meets Real Execution Risk",
+          "url": "https://www.ainvest.com/news/moog-great-business-stretched-valuation-45x-earnings-meets-real-execution-risk-2608/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-15"
+      },
+      {
+        "claim": "Margin expansion of 330\u202fbps cumulative since FY2022.",
+        "source": {
+          "title": "MOG.A Analysis | dbl.fund",
+          "url": "https://dbl.fund/mog-a.html",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": ""
+      },
+      {
+        "claim": "Net margins are 6% and free\u2011cash\u2011flow margins are 3%.",
+        "source": {
+          "title": "MOG.A Analysis | dbl.fund",
+          "url": "https://dbl.fund/mog-a.html",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": ""
+      },
+      {
+        "claim": "Management projects 60% free\u2011cash\u2011flow conversion in FY2026.",
+        "source": {
+          "title": "MOG.A Analysis | dbl.fund",
+          "url": "https://dbl.fund/mog-a.html",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": ""
+      },
+      {
+        "claim": "Boeing represents about 10% of Moog\u2019s FY2025 sales.",
+        "source": {
+          "title": "Moog Inc. (MOG-A): What it told the SEC could break it | PolicyRisk",
+          "url": "https://policyrisk.com/world/company/MOG-A",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": ""
+      },
+      {
+        "claim": "Revenue mix: Space & Defense 30%, Commercial Aircraft 24%, Military Aircraft 23%, Industrial 23%.",
+        "source": {
+          "title": "Stock Context",
+          "url": "https://stockcontext.info/ticker/MOG-A/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Data\u2011center cooling revenue is now $100\u202fM.",
+        "source": {
+          "title": "Moog Inc.: Great Business, Stretched Valuation \u2014 When 45x Earnings Meets Real Execution Risk",
+          "url": "https://www.ainvest.com/news/moog-great-business-stretched-valuation-45x-earnings-meets-real-execution-risk-2608/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-15"
+      },
+      {
+        "claim": "Truist Financial raised Moog's price target from $344 to $417, keeping a buy rating.",
+        "source": {
+          "title": "Truist Financial Raises Moog (NYSE:MOG.A) Price Target to $417.00 - American Market News",
+          "url": "https://www.americanbankingnews.com/2026/08/06/truist-financial-raises-moog-nysemog-a-price-target-to-417-00.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-06"
+      },
+      {
+        "claim": "JPMorgan launched coverage on Moog with an Overweight rating and a $520 price target.",
+        "source": {
+          "title": "",
+          "url": "https://www.marketbeat.com/articles/moog-is-more-than-a-missile-maker-and-wall-street-is-noticing/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-22"
+      },
+      {
+        "claim": "Moog reported revenue of $1.1\u202fB, up 15.2% YoY.",
+        "source": {
+          "title": "MOG.A Stock Forecast 2026-2027 - Moog, Inc. Price Targets & Predictions",
+          "url": "https://tickernerd.com/stock/moga-forecast/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-24"
+      },
+      {
+        "claim": "Parker Hannifin Aerospace Systems generated $6.185\u202fB net sales FY2025, 14.5% sales growth Q2 FY2026, and a $8\u202fB backlog.",
+        "source": {
+          "title": "Parker Hannifin - Company Analysis and Outlook Report 2026 (Updated)",
+          "url": "https://www.aviationoutlook.com/p/parker-hannifin-company-analysis-outlook-report",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-04-26"
+      },
+      {
+        "claim": "The global Precision Motion Systems market was valued at $4.98\u202fB in 2025, projected to reach $9.69\u202fB by 2030.",
+        "source": {
+          "title": "Precision Motion Systems Market in the world | Report - IndexBox - Prices, Size, Forecast, and Companies",
+          "url": "https://www.indexbox.io/store/world-precision-motion-systems-market-analysis-forecast-size-trends-and-insights/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-09"
+      },
+      {
+        "claim": "The Global Aerospace Motion Control System market size was $4.98\u202fB in 2025, expected to grow to $9.69\u202fB by 2030.",
+        "source": {
+          "title": "Aerospace And Defense Robotic Automation Actuators Market Size, Share & 2030 Growth Trends Report",
+          "url": "https://www.mordorintelligence.com/industry-reports/aerospace-and-defense-robotic-automation-actuators-market",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-05-24"
+      },
+      {
+        "claim": "The Automation Precision Aerospace & Defence market was $12.4\u202fB in 2025, projected to reach $19.8\u202fB by 2034, CAGR 5.3%.",
+        "source": {
+          "title": "Automation Precision Aerospace & Defence Market Outlook 2026-2034",
+          "url": "https://www.intelmarketresearch.com/automation-precision-aerospace-defence-market-48900",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-06-04"
+      },
+      {
+        "claim": "Median analyst price target for Moog is $440, a 16.8% upside from the last close.",
+        "source": {
+          "title": "MOG.A Stock Forecast 2026-2027 - Moog, Inc. Price Targets & Predictions",
+          "url": "https://tickernerd.com/stock/moga-forecast/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-24"
+      },
+      {
+        "claim": "Moog reported Q3 2026 sales of $1,116.55\u202fM and net income of $152.03\u202fM, beating expectations.",
+        "source": {
+          "title": "What Moog (MOG.A)'s Upgraded Sales Outlook And M&A Focus Means For Shareholders - Simply Wall St News",
+          "url": "https://simplywall.st/stocks/us/capital-goods/nyse-mog.a/moog/news/what-moog-mogas-upgraded-sales-outlook-and-ma-focus-means-fo",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-31"
+      },
+      {
+        "claim": "Moog raised its full\u2011year net sales guidance to $4.40\u202fB for 2026.",
+        "source": {
+          "title": "What Moog (MOG.A)'s Upgraded Sales Outlook And M&A Focus Means For Shareholders - Simply Wall St News",
+          "url": "https://simplywall.st/stocks/us/capital-goods/nyse-mog.a/moog/news/what-moog-mogas-upgraded-sales-outlook-and-ma-focus-means-fo",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-31"
+      },
+      {
+        "claim": "Moog affirmed a $0.30 quarterly dividend and highlighted a 1.5\u00d7 leverage ratio.",
+        "source": {
+          "title": "What Moog (MOG.A)'s Upgraded Sales Outlook And M&A Focus Means For Shareholders - Simply Wall St News",
+          "url": "https://simplywall.st/stocks/us/capital-goods/nyse-mog.a/moog/news/what-moog-mogas-upgraded-sales-outlook-and-ma-focus-means-fo",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-31"
+      },
+      {
+        "claim": "Moog\u2019s 90\u2011day share\u2011price return rose 29.73% and 1\u2011year total shareholder return 104.72%.",
+        "source": {
+          "title": "Moog (MOG.A) Earnings Beat Brings Its Valuation Back Into Focus - Simply Wall St News",
+          "url": "https://simplywall.st/stocks/us/capital-goods/nyse-mog.a/moog/news/moog-moga-earnings-beat-brings-its-valuation-back-into-focus",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": ""
+      },
+      {
+        "claim": "Moog shares fell 5.6% on 2026\u201108\u201119.",
+        "source": {
+          "title": "https://www.marketbeat.com/instant-alerts/moog-nysemoga-shares-down-56-heres-why-2026-08-19/",
+          "url": "https://www.marketbeat.com/instant-alerts/moog-nysemoga-shares-down-56-heres-why-2026-08-19/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-19"
+      },
+      {
+        "claim": "Moog Medical Devices Group issued a field safety notice for the FreeGo Enteral Feeding Pump on 2024\u201107\u201124.",
+        "source": {
+          "title": "URGENT FIELD SAFETY NOTICE FREEGO ENTERAL FEEDING PUMP Attention:",
+          "url": "https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/july-2024/freego-pump_zevex-inc-(doing-business-as-moog-medical-devices)_advice-regarding-the-use-of-the-device.pdf?sfvrsn=c09e8553_1",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2024-07-24"
+      },
+      {
+        "claim": "The recall covered all serial numbers of the FreeGo Enteral Feeding Pump.",
+        "source": {
+          "title": "URGENT FIELD SAFETY NOTICE FREEGO ENTERAL FEEDING PUMP Attention:",
+          "url": "https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/july-2024/freego-pump_zevex-inc-(doing-business-as-moog-medical-devices)_advice-regarding-the-use-of-the-device.pdf?sfvrsn=c09e8553_1",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2024-07-24"
+      },
+      {
+        "claim": "Moog Medical Devices Group recalled the EnteraLite Infinity Enteral Pump Delivery Set with ENFit connector system in 2024.",
+        "source": {
+          "title": "International Medical Devices Database",
+          "url": "https://medicaldevices.icij.org/devices/usa-gastroenterology-urology-devices-device-recall-enteralite-infinity-enteral-pump-delivery-set-with-enfit-connector-system-and",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2024-??"
+      },
+      {
+        "claim": "Q2 2026 net sales $1,052M, up 13% YoY.",
+        "source": {
+          "title": "Moog Inc. Reports Outstanding Second Quarter 2026 Results and Raises Full-Year Guidance",
+          "url": "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q2/Moog-FY26-Q2-Results.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Q2 2026 operating margin 13.1%, up 140 bps from 11.7% in Q2 2025.",
+        "source": {
+          "title": "Moog Inc. Reports Outstanding Second Quarter 2026 Results and Raises Full-Year Guidance",
+          "url": "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q2/Moog-FY26-Q2-Results.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Q1 2026 adjusted EPS $2.63, beating $2.21 estimate; revenue $1.1B, 21% YoY.",
+        "source": {
+          "title": "Moog Inc. 2026: Engineering Dominance in the New Defense Era - Udis View",
+          "url": "https://udisview.com/moog-inc-2026-engineering-dominance-in-the-new-defense-era/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-02-10"
+      },
+      {
+        "claim": "AFRL awarded Moog contract to develop dual chemical\u2011electric propulsion system for national\u2011security satellites.",
+        "source": {
+          "title": "Air Force Research Laboratory Awards Moog Contract to Develop New Multimode Propulsion System to Enhance Dynamic Space Operations",
+          "url": "https://www.moog.com/content/dam/moog/literature/news/2025/moog-afrl-multimode-propulsion-contract-win.pdf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-05-28"
+      },
+      {
+        "claim": "Moog received $7.2M contract (FA930025C6005) with 100% burn rate, 2\u2011year duration.",
+        "source": {
+          "title": "Air Force Award | FA930025C6005 | MOOG ASCENT GREEN MONOPROPELLANT THRUSTER",
+          "url": "https://www.federalcompass.com/award-contract-detail/FA930025C6005",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-01-27"
+      },
+      {
+        "claim": "Moog completed two integrated high\u2011velocity propulsion modules for ESPA\u2011Grande class Meteor satellite buses.",
+        "source": {
+          "title": "Moog Completes High-Velocity Propulsion Systems, Begins Next  Phase of Spacecraft Integration",
+          "url": "https://www.moog.com/news/operating-group-news/2025/moog-completes-high-velocity-propulsion-systems-begins-next-phase-of-spacecraft-integration.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Moog signed GMLRS control actuation system development contract with Lockheed Martin Australia.",
+        "source": {
+          "title": "Missile Capabilities",
+          "url": "https://www.moog.com/markets/defense/missiles.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Moog will discontinue transition connectors and produce ENFit\u2011only connectors for Infinity enteral feeding sets.",
+        "source": {
+          "title": "June 22, 2022",
+          "url": "https://www.moogmedical.com/wp-content/uploads/2022/06/Moog-ENFit-Transition-Update-6-22-22.pdf",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2022-06-22"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/67887/000006788725000047/ex991-72525.htm",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/67887/000006788725000047/ex991-72525.htm",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. Reports Second Quarter 2025 Results With Record Sales and Strong Operational Performance | Nasdaq",
+        "url": "https://www.nasdaq.com/press-release/moog-inc-reports-second-quarter-2025-results-record-sales-and-strong-operational",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. Reports Second Quarter 2025 Results With Record Sales and Strong Operational Performance | Nasdaq",
+        "url": "https://www.nasdaq.com/press-release/moog-inc-reports-second-quarter-2025-results-record-sales-and-strong-operational",
+        "date": ""
+      },
+      {
+        "title": "Moog Military Aircraft Lands $17.3M Air Force Order for F-16 Hydraulic Drive Units | Contract Awards",
+        "url": "https://envzone.com/award-record/moog-military-aircraft-lands-17-3m-air-force-order-for-f-16-hydraulic-drive-units/",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. Announces Portuguese Army Selects Moog Avionics to Modernize UH-60L Fleet",
+        "url": "https://www.moog.com/news/operating-group-news/2026/moog-inc-announces-portuguese-army-selects-moog-avionics-to-modernize-uh-60l-fleet.html",
+        "date": ""
+      },
+      {
+        "title": "MOG.A Forecast, Price Target & Analyst Ratings | ChartMill.com",
+        "url": "https://www.chartmill.com/stock/quote/MOG.A/analyst-ratings",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. Achieves Record Third Quarter 2026 Results Through Operational Excellence and Raises Full-Year Guidance | Morningstar",
+        "url": "https://www.morningstar.com/news/business-wire/20260731950193/moog-inc-achieves-record-third-quarter-2026-results-through-operational-excellence-and-raises-full-year-guidance",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. Reports First Quarter 2026 Record Sales and EPS and Raises Full-Year Guidance",
+        "url": "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q1/FY26-Q1-Report.pdf",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. Reports First Quarter 2026 Record Sales and EPS and Raises Full-Year Guidance",
+        "url": "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q1/FY26-Q1-Report.pdf",
+        "date": ""
+      },
+      {
+        "title": "Moog Completes Lynden Air Cargo Hercules Avionics Upgrade CDR",
+        "url": "https://www.moog.com/news/operating-group-news/2026/moog-completes-lynden-air-cargo-hercules-avionics-upgrade-cdr.html",
+        "date": ""
+      },
+      {
+        "title": "Delivery Order #FA811826F0052 | Govly",
+        "url": "https://app.govly.com/public/awards/CONT_AWD_FA811826F0052_9700_FA811825D0003_9700",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/67887/000162828025053505/ex991-112125.htm",
+        "date": ""
+      },
+      {
+        "title": "Moog Q3 Earnings Call Highlights - Transcript Daily",
+        "url": "https://transcriptdaily.com/2026/08/02/moog-q3-earnings-call-highlights.html",
+        "date": ""
+      },
+      {
+        "title": "Moog Q3 Earnings Call Highlights - Transcript Daily",
+        "url": "https://transcriptdaily.com/2026/08/02/moog-q3-earnings-call-highlights.html",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. adopts deferred comp plan; deferrals up to 75% | MOG 8-K Filing",
+        "url": "https://www.stocktitan.net/sec-filings/MOG/8-k-moog-inc-reports-material-event-de0472317722.html",
+        "date": ""
+      },
+      {
+        "title": "Moog Liquid Cooling 2026, $100M via 2 CDU Partners - EnkiAI",
+        "url": "https://enkiai.com/data-center/moog-liquid-cooling-manufacturing/",
+        "date": ""
+      },
+      {
+        "title": "Liquid Cooling Solutions for Data Centers | Moog Data Center Cooling Pumps",
+        "url": "https://www.moog.com/products/pumps/liquid-cooling-pumps-for-data-centers.html",
+        "date": ""
+      },
+      {
+        "title": "Beyond the atmosphere, into the data center - DCD",
+        "url": "https://www.datacenterdynamics.com/en/marketwatch/beyond-the-atmosphere-into-the-data-center/",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/67887/000162828025053505/ex991-112125.htm",
+        "date": ""
+      },
+      {
+        "title": "Moog Q3 Earnings Call Highlights - Markets Daily",
+        "url": "https://www.themarketsdaily.com/2026/08/03/moog-q3-earnings-call-highlights.html",
+        "date": ""
+      },
+      {
+        "title": "Moog Q3 Earnings Call Highlights - Markets Daily",
+        "url": "https://www.themarketsdaily.com/2026/08/03/moog-q3-earnings-call-highlights.html",
+        "date": ""
+      },
+      {
+        "title": "Moog Q3 Earnings Call Highlights - Markets Daily",
+        "url": "https://www.themarketsdaily.com/2026/08/03/moog-q3-earnings-call-highlights.html",
+        "date": ""
+      },
+      {
+        "title": "Moog Q3 Earnings Call Highlights - Markets Daily",
+        "url": "https://www.themarketsdaily.com/2026/08/03/moog-q3-earnings-call-highlights.html",
+        "date": ""
+      },
+      {
+        "title": "What is Competitive Landscape of Moog Company? \u2013 PortersFiveForce.com",
+        "url": "https://portersfiveforce.com/blogs/competitors/moog",
+        "date": ""
+      },
+      {
+        "title": "What is Competitive Landscape of Moog Company? \u2013 PortersFiveForce.com",
+        "url": "https://portersfiveforce.com/blogs/competitors/moog",
+        "date": ""
+      },
+      {
+        "title": "Built for the Mission: Applying Purpose-Driven Engineering to Data Center Cooling Challenges | Data Center Frontier",
+        "url": "https://www.datacenterfrontier.com/sponsored/article/55292443/built-for-the-mission-applying-purpose-driven-engineering-to-data-center-cooling-challenges",
+        "date": ""
+      },
+      {
+        "title": "Aircraft Actuators - Market Share Analysis, Industry Trends & Statistics, Growth Forecasts (2026-2031)",
+        "url": "https://www.researchandmarkets.com/reports/4828308/aircraft-actuators-market-share-analysis",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. (MOG-A) Stock Research Report | Flash",
+        "url": "https://flash.stocksentinel.ai/research/MOG-A",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc.: Great Business, Stretched Valuation \u2014 When 45x Earnings Meets Real Execution Risk",
+        "url": "https://www.ainvest.com/news/moog-great-business-stretched-valuation-45x-earnings-meets-real-execution-risk-2608/",
+        "date": ""
+      },
+      {
+        "title": "MOG.A Analysis | dbl.fund",
+        "url": "https://dbl.fund/mog-a.html",
+        "date": ""
+      },
+      {
+        "title": "MOG.A Analysis | dbl.fund",
+        "url": "https://dbl.fund/mog-a.html",
+        "date": ""
+      },
+      {
+        "title": "MOG.A Analysis | dbl.fund",
+        "url": "https://dbl.fund/mog-a.html",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. (MOG-A): What it told the SEC could break it | PolicyRisk",
+        "url": "https://policyrisk.com/world/company/MOG-A",
+        "date": ""
+      },
+      {
+        "title": "Stock Context",
+        "url": "https://stockcontext.info/ticker/MOG-A/",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc.: Great Business, Stretched Valuation \u2014 When 45x Earnings Meets Real Execution Risk",
+        "url": "https://www.ainvest.com/news/moog-great-business-stretched-valuation-45x-earnings-meets-real-execution-risk-2608/",
+        "date": ""
+      },
+      {
+        "title": "Truist Financial Raises Moog (NYSE:MOG.A) Price Target to $417.00 - American Market News",
+        "url": "https://www.americanbankingnews.com/2026/08/06/truist-financial-raises-moog-nysemog-a-price-target-to-417-00.html",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.marketbeat.com/articles/moog-is-more-than-a-missile-maker-and-wall-street-is-noticing/",
+        "date": ""
+      },
+      {
+        "title": "MOG.A Stock Forecast 2026-2027 - Moog, Inc. Price Targets & Predictions",
+        "url": "https://tickernerd.com/stock/moga-forecast/",
+        "date": ""
+      },
+      {
+        "title": "Parker Hannifin - Company Analysis and Outlook Report 2026 (Updated)",
+        "url": "https://www.aviationoutlook.com/p/parker-hannifin-company-analysis-outlook-report",
+        "date": ""
+      },
+      {
+        "title": "Precision Motion Systems Market in the world | Report - IndexBox - Prices, Size, Forecast, and Companies",
+        "url": "https://www.indexbox.io/store/world-precision-motion-systems-market-analysis-forecast-size-trends-and-insights/",
+        "date": ""
+      },
+      {
+        "title": "Aerospace And Defense Robotic Automation Actuators Market Size, Share & 2030 Growth Trends Report",
+        "url": "https://www.mordorintelligence.com/industry-reports/aerospace-and-defense-robotic-automation-actuators-market",
+        "date": ""
+      },
+      {
+        "title": "Automation Precision Aerospace & Defence Market Outlook 2026-2034",
+        "url": "https://www.intelmarketresearch.com/automation-precision-aerospace-defence-market-48900",
+        "date": ""
+      },
+      {
+        "title": "MOG.A Stock Forecast 2026-2027 - Moog, Inc. Price Targets & Predictions",
+        "url": "https://tickernerd.com/stock/moga-forecast/",
+        "date": ""
+      },
+      {
+        "title": "What Moog (MOG.A)'s Upgraded Sales Outlook And M&A Focus Means For Shareholders - Simply Wall St News",
+        "url": "https://simplywall.st/stocks/us/capital-goods/nyse-mog.a/moog/news/what-moog-mogas-upgraded-sales-outlook-and-ma-focus-means-fo",
+        "date": ""
+      },
+      {
+        "title": "What Moog (MOG.A)'s Upgraded Sales Outlook And M&A Focus Means For Shareholders - Simply Wall St News",
+        "url": "https://simplywall.st/stocks/us/capital-goods/nyse-mog.a/moog/news/what-moog-mogas-upgraded-sales-outlook-and-ma-focus-means-fo",
+        "date": ""
+      },
+      {
+        "title": "What Moog (MOG.A)'s Upgraded Sales Outlook And M&A Focus Means For Shareholders - Simply Wall St News",
+        "url": "https://simplywall.st/stocks/us/capital-goods/nyse-mog.a/moog/news/what-moog-mogas-upgraded-sales-outlook-and-ma-focus-means-fo",
+        "date": ""
+      },
+      {
+        "title": "Moog (MOG.A) Earnings Beat Brings Its Valuation Back Into Focus - Simply Wall St News",
+        "url": "https://simplywall.st/stocks/us/capital-goods/nyse-mog.a/moog/news/moog-moga-earnings-beat-brings-its-valuation-back-into-focus",
+        "date": ""
+      },
+      {
+        "title": "https://www.marketbeat.com/instant-alerts/moog-nysemoga-shares-down-56-heres-why-2026-08-19/",
+        "url": "https://www.marketbeat.com/instant-alerts/moog-nysemoga-shares-down-56-heres-why-2026-08-19/",
+        "date": ""
+      },
+      {
+        "title": "URGENT FIELD SAFETY NOTICE FREEGO ENTERAL FEEDING PUMP Attention:",
+        "url": "https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/july-2024/freego-pump_zevex-inc-(doing-business-as-moog-medical-devices)_advice-regarding-the-use-of-the-device.pdf?sfvrsn=c09e8553_1",
+        "date": ""
+      },
+      {
+        "title": "URGENT FIELD SAFETY NOTICE FREEGO ENTERAL FEEDING PUMP Attention:",
+        "url": "https://assets.hpra.ie/data/docs/default-source/product-updates/fsn/field-safety-notices/july-2024/freego-pump_zevex-inc-(doing-business-as-moog-medical-devices)_advice-regarding-the-use-of-the-device.pdf?sfvrsn=c09e8553_1",
+        "date": ""
+      },
+      {
+        "title": "International Medical Devices Database",
+        "url": "https://medicaldevices.icij.org/devices/usa-gastroenterology-urology-devices-device-recall-enteralite-infinity-enteral-pump-delivery-set-with-enfit-connector-system-and",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. Reports Outstanding Second Quarter 2026 Results and Raises Full-Year Guidance",
+        "url": "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q2/Moog-FY26-Q2-Results.pdf",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. Reports Outstanding Second Quarter 2026 Results and Raises Full-Year Guidance",
+        "url": "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q2/Moog-FY26-Q2-Results.pdf",
+        "date": ""
+      },
+      {
+        "title": "Moog Inc. 2026: Engineering Dominance in the New Defense Era - Udis View",
+        "url": "https://udisview.com/moog-inc-2026-engineering-dominance-in-the-new-defense-era/",
+        "date": ""
+      },
+      {
+        "title": "Air Force Research Laboratory Awards Moog Contract to Develop New Multimode Propulsion System to Enhance Dynamic Space Operations",
+        "url": "https://www.moog.com/content/dam/moog/literature/news/2025/moog-afrl-multimode-propulsion-contract-win.pdf",
+        "date": ""
+      },
+      {
+        "title": "Air Force Award | FA930025C6005 | MOOG ASCENT GREEN MONOPROPELLANT THRUSTER",
+        "url": "https://www.federalcompass.com/award-contract-detail/FA930025C6005",
+        "date": ""
+      },
+      {
+        "title": "Moog Completes High-Velocity Propulsion Systems, Begins Next  Phase of Spacecraft Integration",
+        "url": "https://www.moog.com/news/operating-group-news/2025/moog-completes-high-velocity-propulsion-systems-begins-next-phase-of-spacecraft-integration.html",
+        "date": ""
+      },
+      {
+        "title": "Missile Capabilities",
+        "url": "https://www.moog.com/markets/defense/missiles.html",
+        "date": ""
+      },
+      {
+        "title": "June 22, 2022",
+        "url": "https://www.moogmedical.com/wp-content/uploads/2022/06/Moog-ENFit-Transition-Update-6-22-22.pdf",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "constructive",
+    "thesis": "Moog Inc. demonstrates robust revenue momentum and margin expansion driven by a strong backlog and pricing power, while the risks of execution in its new liquid\u2011cooling pump line and concentration in defense contracts are offset by proven tariff mitigation and a diversified product portfolio, supporting a positive outlook for the near\u2011term.",
+    "drivers": [
+      {
+        "name": "Backlog Expansion and Order Pipeline",
+        "direction": "tailwind",
+        "evidence": "12\u2011month backlog grew 23% YoY to $3.30B, with key defense orders (Air Force F\u2011116, Portuguese Army UH\u2011160L) confirming a robust pipeline",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/67887/000006788725000047/ex991-72525.htm",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Bull evidence shows a sizable, growing backlog that should translate into revenue; bear concerns are outweighed by confirmed orders."
+      },
+      {
+        "name": "Liquid\u2011Cooling Pump Revenue Growth",
+        "direction": "headwind",
+        "evidence": "Projected $100M 2026 revenue from liquid\u2011cooling pumps hinges on ramping to 1,300 pumps/week; execution risk and competition cited",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/67887/000006788725000047/ex991-72525.htm",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "risk",
+        "score_why": "Bear verdict indicates unverified revenue projection and credible execution risks, negating bullish potential."
+      },
+      {
+        "name": "Pricing Power and Margin Expansion",
+        "direction": "tailwind",
+        "evidence": "Operating margin rose 90 bps in Q1\u20112026 to 12.3%, cumulative 330 bps since FY2022, driven by long product lifecycles and aftermarket services",
+        "source": {
+          "title": "Moog Inc. Reports Second Quarter 2025 Results With Record Sales and Strong Operational Performance | Nasdaq",
+          "url": "https://www.nasdaq.com/press-release/moog-inc-reports-second-quarter-2025-results-record-sales-and-strong-operational",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Bull evidence shows clear margin improvement; bear concerns about tariffs and costs have not materialized yet."
+      },
+      {
+        "name": "Defense and Aerospace Concentration",
+        "direction": "headwind",
+        "evidence": "Defense (30%) and aerospace (23%) segments rely on large customers (Boeing 10% of FY2025 sales); concentration risk highlighted",
+        "source": {
+          "title": "Moog Inc. Reports Second Quarter 2025 Results With Record Sales and Strong Operational Performance | Nasdaq",
+          "url": "https://www.nasdaq.com/press-release/moog-inc-reports-second-quarter-2025-results-record-sales-and-strong-operational",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "risk",
+        "score_why": "Bear verdict deems concentration significant enough to potentially blunt revenue if a major contract is lost."
+      },
+      {
+        "name": "Tariff and Regulatory Risk",
+        "direction": "tailwind",
+        "evidence": "$30M tariff recovery in Q3\u20112026 and diversified supply chain mitigate tariff exposure; no new tariff shock observed",
+        "source": {
+          "title": "Moog Military Aircraft Lands $17.3M Air Force Order for F-16 Hydraulic Drive Units | Contract Awards",
+          "url": "https://envzone.com/award-record/moog-military-aircraft-lands-17-3m-air-force-order-for-f-16-hydraulic-drive-units/",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "risk",
+        "score_why": "Bull evidence shows effective risk management; bear concerns remain theoretical without material impact."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "Moog is exhibiting strong revenue momentum, with Q3\u202f2025 sales up 7% YoY, Q1\u202f2026 sales up 21% YoY, Q3\u202f2026 sales up 15% YoY, and Q2\u202f2026 sales up 13% YoY, indicating robust demand across its segments.",
+        "evidence": "Q3\u202f2025 net sales $971\u202fM, up 7% YoY; Q1\u202f2026 net sales rose 21% YoY to $1.1\u202fB; Q3\u202f2026 sales $1.1\u202fB, up 15% YoY; Q2\u202f2026 net sales $1.052\u202fB, up 13% YoY",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Operating margins are improving, rising from 11.4% in Q1\u202f2025 to 12.3% in Q1\u202f2026 (a 90\u202fbps lift), and Q3\u202f2026 margin is 12.3% versus 11.5% in Q3\u202f2025, reflecting cost discipline and pricing power.",
+        "evidence": "Q1\u202f2026 operating margin 12.3%, up 90\u202fbps from 11.4% in Q1\u202f2025; Q3\u202f2025 operating margin 11.5%",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "The company\u2019s 12\u2011month backlog grew 23% YoY to $3.30\u202fB, a 20% increase from the prior year, underscoring strong order flow and future revenue certainty.",
+        "evidence": "12\u2011month backlog grew 23% YoY; backlog $3.30\u202fB",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Free cash flow surged to $133\u202fM in Q3\u202f2026, and adjusted EPS rose 60% YoY to $3.72, demonstrating solid cash generation and profitability.",
+        "evidence": "Free cash flow $133\u202fM in Q3\u202f2026; Adjusted EPS $3.72, up 60% YoY",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Moog secured high\u2011value defense contracts, including a $17.3\u202fM Air Force order for F\u201116 hydraulic units, a $5.53\u202fM B\u20112 remanufacture order, and a Portuguese Army UH\u201160L modernization order, reinforcing its defense revenue base.",
+        "evidence": "$17.3\u202fM Air Force order; $5.53\u202fM B\u20112 remanufacture order; Portuguese Army UH\u201160L modernization deliveries start Fall\u202f2026",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "The company is expanding into high\u2011growth data\u2011center cooling, with $100\u202fM in 2026 revenue from liquid\u2011cooling pumps and a production ramp to 1,300 pumps per week across three lines, positioning it in the AI cluster cooling shift.",
+        "evidence": "Moog plans to generate $100\u202fM in revenue from liquid\u2011cooling pumps in 2026; ramping production to 1,300 pumps per week; CoreMotion pumps target high\u2011density AI clusters",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "medium"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Operating margin has been trending downward, eroding profitability and reducing pricing power.",
+        "evidence": "Q3\u202f2025 operating margin 11.5%, 10\u202fbps lower than Q3\u202f2024 (finding\u202f2). Q2\u202f2025 operating margin 11.7%, 30\u202fbps lower than Q2\u202f2024 (finding\u202f4).",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Tariff exposure and recovery create volatility in cost structure and earnings.",
+        "evidence": "Moog\u2019s Q3\u202f2026 operating\u2011profit benefit included $30\u202fmillion from recovery of previously paid IEEPA tariffs (finding\u202f15).",
+        "source": {
+          "title": "Moog Q3 Earnings Call Highlights - Transcript Daily",
+          "url": "https://transcriptdaily.com/2026/08/02/moog-q3-earnings-call-highlights.html",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Significant capital expenditures are required to scale liquid\u2011cooling pump production, straining cash and working\u2011capital efficiency.",
+        "evidence": "Moog plans to generate $100\u202fmillion in revenue from liquid\u2011cooling pumps in 2026 via two CDU partners, ramping production to 1,300 pumps per week across three factory lines (finding\u202f17).",
+        "source": {
+          "title": "Moog Liquid Cooling 2026, $100M via 2 CDU Partners - EnkiAI",
+          "url": "https://enkiai.com/data-center/moog-liquid-cooling-manufacturing/",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Revenue concentration risk: a large portion of sales comes from a single customer and a single industry segment.",
+        "evidence": "Boeing represents about 10% of Moog\u2019s FY2025 sales (finding\u202f34). The defense segment grew 17% YoY but remains a concentrated source of revenue (finding\u202f30).",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Intense competition from large aerospace suppliers and niche motion\u2011control specialists pressures margins and pricing.",
+        "evidence": "Moog competes with large aerospace suppliers and niche motion\u2011control specialists, leveraging long product lifecycles, certified manufacturing and deep aftermarket services (finding\u202f26).",
+        "source": {
+          "title": "What is Competitive Landscape of Moog Company? \u2013 PortersFiveForce.com",
+          "url": "https://portersfiveforce.com/blogs/competitors/moog",
+          "date": ""
+        },
+        "severity": "minor"
+      },
+      {
+        "point": "Recent medical device recalls raise concerns about product quality and could damage brand reputation.",
+        "evidence": "Moog Medical Devices Group issued a field safety notice for the FreeGo Enteral Feeding Pump on 2024\u201107\u201124, recalling all serial numbers (findings\u202f50,51). The company also recalled the EnteraLite Infinity Enteral Pump Delivery Set with ENFit connector system (findings\u202f52).",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Backlog Expansion and Order Pipeline",
+        "bull": "Moog\u2019s 12\u2011month backlog grew 23% YoY to $3.30B, with defense up 17% and key orders such as the Air Force F\u201116 hydraulic drive units and Portuguese Army UH\u201160L modernization confirming a robust pipeline that should translate into revenue growth over the next 12\u201124 months.",
+        "bull_source": {
+          "title": "Moog Q3 Earnings Call Highlights - Transcript Daily",
+          "url": "https://transcriptdaily.com/2026/08/02/moog-q3-earnings-call-highlights.html",
+          "date": ""
+        },
+        "bear": "Backlog growth may not fully convert to sales if execution or supply chain constraints delay deliveries, and a concentration of large orders (e.g., Boeing 10% of FY2025 sales) could expose Moog to order cancellations or delays that would blunt revenue realization.",
+        "bear_source": {
+          "title": "Moog Inc. (MOG-A): What it told the SEC could break it | PolicyRisk",
+          "url": "https://policyrisk.com/world/company/MOG-A",
+          "date": ""
+        },
+        "verdict": "Bull won \u2013 the backlog expansion and confirmed orders provide a clear, tangible pipeline that outweighs the concentration risk highlighted by the bear. The evidence of a 23% backlog increase and specific large orders supports the bull\u2019s claim.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Liquid\u2011Cooling Pump Revenue Growth",
+        "bull": "Moog plans $100M in 2026 liquid\u2011cooling pump revenue from two CDU partners, ramping production to 1,300 pumps per week across three factory lines, tapping the high\u2011density AI cluster market that is shifting from air to liquid cooling\u2014an emerging, high\u2011margin opportunity.",
+        "bull_source": {
+          "title": "Moog Liquid Cooling 2026, $100M via 2 CDU Partners - EnkiAI",
+          "url": "https://enkiai.com/data-center/moog-liquid-cooling-manufacturing/",
+          "date": ""
+        },
+        "bear": "Scaling production to meet the ramp target poses execution risk; competition from larger semiconductor\u2011equipment players and potential supply\u2011chain bottlenecks could limit market penetration and erode the expected margin premium.",
+        "bear_source": {
+          "title": "Liquid Cooling Solutions for Data Centers | Moog Data Center Cooling Pumps",
+          "url": "https://www.moog.com/products/pumps/liquid-cooling-pumps-for-data-centers.html",
+          "date": ""
+        },
+        "verdict": "Bear won \u2013 the bull\u2019s revenue projection remains unverified and faces credible execution and competitive risks that could prevent the target from materializing. The bear\u2019s concerns are grounded in real operational challenges.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Pricing Power and Margin Expansion",
+        "bull": "Operating margin rose 90 bps in Q1\u20112026 to 12.3% and cumulative margin expansion of 330 bps since FY2022, driven by Moog\u2019s long product lifecycles, certified manufacturing, and deep aftermarket services that support premium pricing.",
+        "bull_source": {
+          "title": "Moog Inc. Reports First Quarter 2026 Record Sales and EPS and Raises Full-Year Guidance",
+          "url": "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q1/FY26-Q1-Report.pdf",
+          "date": ""
+        },
+        "bear": "Tariff exposure (e.g., IEEPA tariffs) and rising raw\u2011material costs could compress margins, while intensified competition in aerospace and industrial segments may force price concessions.",
+        "bear_source": {
+          "title": "Moog Q3 Earnings Call Highlights - Transcript Daily",
+          "url": "https://transcriptdaily.com/2026/08/02/moog-q3-earnings-call-highlights.html",
+          "date": ""
+        },
+        "verdict": "Bull won \u2013 the documented margin expansion and the company\u2019s proven pricing power outweigh the potential tariff and cost risks, which have not yet materialized into margin compression.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Defense and Aerospace Concentration",
+        "bull": "Defense and aerospace segments account for 30% and 23% of revenue respectively, with key customers like Boeing (10% of FY2025 sales) and the Portuguese Army, providing stable, high\u2011value contracts that underpin Moog\u2019s revenue base.",
+        "bull_source": {
+          "title": "Moog Inc.: Great Business, Stretched Valuation \u2014 When 45x Earnings Meets Real Execution Risk",
+          "url": "https://www.ainvest.com/news/moog-great-business-stretched-valuation-45x-earnings-meets-real-execution-risk-2608/",
+          "date": ""
+        },
+        "bear": "Heavy reliance on a few large customers increases concentration risk; loss or reduction of a major contract (e.g., Boeing or a defense program) could materially impact revenue and cash flow.",
+        "bear_source": {
+          "title": "Moog Inc. (MOG-A): What it told the SEC could break it | PolicyRisk",
+          "url": "https://policyrisk.com/world/company/MOG-A",
+          "date": ""
+        },
+        "verdict": "Bear won \u2013 the concentration risk is significant and could materially affect Moog\u2019s revenue if a major contract is lost or reduced, outweighing the stability argument presented by the bull.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Tariff and Regulatory Risk",
+        "bull": "Moog recovered $30M from previously paid IEEPA tariffs in Q3\u20112026, improving operating profit, and it has a track record of managing tariff exposure through supply\u2011chain diversification.",
+        "bull_source": {
+          "title": "Moog Q3 Earnings Call Highlights - Transcript Daily",
+          "url": "https://transcriptdaily.com/2026/08/02/moog-q3-earnings-call-highlights.html",
+          "date": ""
+        },
+        "bear": "Ongoing or new tariffs on critical components could re\u2011introduce cost pressures, and regulatory changes in defense procurement could affect contract awards and pricing.",
+        "bear_source": {
+          "title": "Moog Q3 Earnings Call Highlights - Transcript Daily",
+          "url": "https://transcriptdaily.com/2026/08/02/moog-q3-earnings-call-highlights.html",
+          "date": ""
+        },
+        "verdict": "Bull won \u2013 the tariff recovery and proven supply\u2011chain diversification demonstrate effective risk management, and no new tariff or regulatory shock has materialized to date.",
+        "verdict_side": "bull"
+      }
+    ],
+    "falsifiers": [
+      "Backlog conversion rate falls below 80% of confirmed orders within 12 months",
+      "Liquid\u2011cooling pump revenue in 2026 drops below $50M",
+      "Operating margin falls below 10% in Q1\u20112027",
+      "Defense segment revenue concentration rises above 40% of total sales",
+      "Tariff exposure exceeds $50M in a single quarter"
+    ],
+    "confidence": "medium",
+    "confidence_why": "Net positive score (+1.5) indicates constructive upside, but significant headwinds in execution and concentration risk temper overall conviction."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "neutral",
+    "sector_score": 0.15,
+    "sector_why": "mfg new orders growing: Electrical Equipment, Appliances & Components; mfg new orders growing: Printing & Related Support Activities; mfg new orders growing: Machinery",
+    "industry_flags": [],
+    "respondent_comments": [
+      {
+        "industry": "Machinery",
+        "quote": "Now that it seems the buildout of AI infrastructure globally is nearing real activation, products going into data centers are at full procurement and manufacturing ramp-up. Thus, demand for our semiconductor end products and connectivity (power, networking and photonics) is booming. Similarly, defense is at an all-time high, with most of our product orders going to these two industries. Order volumes for medical, industrial and consumer products are markedly lower."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Aerospace and defense demand continues to be strong and growing, based on business backlogs. Competing for scare supply \u2014 electronics, certain critical minerals and other categories \u2014 is challenging on-time fulfillment for our supply chains. This is expected to get worse with co-dependent sectors also remaining strong and restocking challenges for automotive electronics."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Continued tariffs on products utilized in our product lines are being monitored by the business, which is working to mitigate or limit tariff risk. Geopolitical risk, especially in the Middle East, pertaining to commodity and energy markets remains a concern. There has been some increased cost and transit time for rerouted shipments due to conflicts in the Red Sea, Strait of Hormuz and Suez Canal."
+      },
+      {
+        "industry": "Fabricated Metal Products",
+        "quote": "Business is still solid; we will increase revenue by 3 percent to 5 percent. We are considering foreign steel purchases for early next year because domestic steel mills are getting greedy."
+      },
+      {
+        "industry": "Electrical Equipment, Appliances & Components",
+        "quote": "The pricing volatility and lead-time extensions in this market are arguably worse than the pandemic era. During COVID-19, we saw a surge of price hikes and inventory buy-ups, which caused constraints that eventually leveled out. We are seeing nothing but consistent upward trends for both pricing and lead times that show no signs of slowing down. Specifically, 5-percent to 25-percent price increases for printed circuit board assembly components and 15-percent to 45-percent increases for bare boards are negatively impacting customer demand outlook into next year. This isn\u2019t sustainable."
+      },
+      {
+        "industry": "Construction",
+        "quote": "Sales continue to slide despite increased discounts. Mounting cost pressures from all fronts."
+      },
+      {
+        "industry": "Management of Companies & Support Services",
+        "quote": "Business is starting to pick up especially with smaller firms. Just hope it keeps improving."
+      },
+      {
+        "industry": "Transportation & Warehousing",
+        "quote": "Conditions are largely unchanged from last month. The exception is pricing, which continues to rise, driven mainly by fuel and labor costs. Demand remains stable."
+      },
+      {
+        "industry": "Wholesale Trade",
+        "quote": "Business is more robust than expected, considering some of the economic headwinds still plaguing the industry. Lumber supply is tighter, and freight rates and availability are challenges. Many of our builders are pushing back hard on price increases. However, the outlook is favorable for the remainder of 2026."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The current macro backdrop\u2014expanding ISM PMI and new orders, a mild yield curve, and rising demand for AI data\u2011center cooling and aerospace/defense components\u2014directly fuels Moog\u2019s core end\u2011market demand.  The neutral sector tilt and strong manufacturing new\u2011order growth in electrical equipment and machinery reinforce the company\u2019s backlog expansion, while the company\u2019s pricing power remains intact due to its long product lifecycles and high\u2011quality positioning.  However, tariff exposure and the need for capex to scale liquid\u2011cooling pump production introduce headwinds that could temper margins and working\u2011capital efficiency in the short term.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "Expanding ISM PMI and new orders in electrical equipment and machinery signal higher demand for Moog\u2019s aerospace, defense, and data\u2011center cooling products."
+      },
+      {
+        "channel": "order backlog",
+        "direction": "helps",
+        "why": "A 23% YoY backlog growth reflects strong contract pipeline, supporting future revenue and cash flow."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "helps",
+        "why": "Moog\u2019s long product lifecycles and certified manufacturing allow it to maintain premium pricing despite competitive pressures."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Tariff exposure on critical components and commodity price volatility could raise manufacturing costs, squeezing margins."
+      },
+      {
+        "channel": "capex",
+        "direction": "mixed",
+        "why": "Scaling liquid\u2011cooling pump production requires new capital investment, but the expanding demand justifies the spend."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "hurts",
+        "why": "An upward\u2011sloping yield curve modestly raises borrowing costs, potentially increasing interest expense."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q3 2025 earnings release",
+      "window": "Oct 2025",
+      "expected": "Sales up 7% YoY to $971M, operating margin 11.5% (10 bps lower than Q3 2024). Likely modest upside to stock.",
+      "source": {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/67887/000006788725000047/ex991-72525.htm",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q4 2025 earnings release",
+      "window": "Jan 2026",
+      "expected": "Record fiscal Q4 2025 sales, adjusted operating margin, strong fiscal 2026 guidance. Positive earnings surprise, potential upside.",
+      "source": {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/67887/000162828025053505/ex991-112125.htm",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q1 2026 earnings release",
+      "window": "Apr 2026",
+      "expected": "Sales up 21% YoY to $1.1B, margin 12.3% (90 bps higher), EPS beat. Positive.",
+      "source": {
+        "title": "Moog Inc. Reports First Quarter 2026 Record Sales and EPS and Raises Full-Year Guidance",
+        "url": "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q1/FY26-Q1-Report.pdf",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q2 2026 earnings release",
+      "window": "Jul 2026",
+      "expected": "Sales up 13% YoY to $1.052B, margin 13.1% (140 bps higher). Positive.",
+      "source": {
+        "title": "Moog Inc. Reports Outstanding Second Quarter 2026 Results and Raises Full-Year Guidance",
+        "url": "https://www.moog.com/content/dam/moog/literature/Corporate/Investors/press-releases-pdf/2026/q2/Moog-FY26-Q2-Results.pdf",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q3 2026 earnings release",
+      "window": "Oct 2026",
+      "expected": "Record sales $1.116B, adjusted EPS $3.72, margin expansion, free cash flow $133M. Positive.",
+      "source": {
+        "title": "Moog Inc. Achieves Record Third Quarter 2026 Results Through Operational Excellence and Raises Full-Year Guidance | Morningstar",
+        "url": "https://www.morningstar.com/news/business-wire/20260731950193/moog-inc-achieves-record-third-quarter-2026-results-through-operational-excellence-and-raises-full-year-guidance",
+        "date": ""
+      }
+    },
+    {
+      "event": "Air Force order for F\u201116 hydraulic drive units",
+      "window": "Immediate",
+      "expected": "Revenue $17.3M, backlog increase, margin positive.",
+      "source": {
+        "title": "Moog Military Aircraft Lands $17.3M Air Force Order for F-16 Hydraulic Drive Units | Contract Awards",
+        "url": "https://envzone.com/award-record/moog-military-aircraft-lands-17-3m-air-force-order-for-f-16-hydraulic-drive-units/",
+        "date": ""
+      }
+    },
+    {
+      "event": "Portuguese Army UH\u201160L modernization deliveries",
+      "window": "Fall 2026",
+      "expected": "Revenue over 2026\u20112027, margin positive.",
+      "source": {
+        "title": "Moog Inc. Announces Portuguese Army Selects Moog Avionics to Modernize UH-60L Fleet",
+        "url": "https://www.moog.com/news/operating-group-news/2026/moog-inc-announces-portuguese-army-selects-moog-avionics-to-modernize-uh-60l-fleet.html",
+        "date": ""
+      }
+    },
+    {
+      "event": "B\u20112 flight\u2011control actuators delivery order",
+      "window": "Feb 27 2026 \u2013 Aug 10 2030",
+      "expected": "Long\u2011term revenue $5.53M, margin positive.",
+      "source": {
+        "title": "Delivery Order #FA811826F0052 | Govly",
+        "url": "https://app.govly.com/public/awards/CONT_AWD_FA811826F0052_9700_FA811825D0003_9700",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

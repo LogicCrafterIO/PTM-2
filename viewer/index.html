@@ -2048,7 +2048,7 @@
       if (st.running) simplePollTimer = setTimeout(pollSimple, 2000);
       else if (!st.finished && !st.result) simplePollTimer = setTimeout(pollSimple, 10000);
 
-      const buttons = ["simple-build-xlsx", "simple-build-wiki", "simple-radar-go", "simple-run-go", "simple-run-all"].map((id) => el.querySelector("#" + id)).filter(Boolean);
+      const buttons = ["simple-build-xlsx", "simple-build-wiki", "simple-radar-go", "simple-run-go", "simple-run-all", "simple-refresh-fund", "simple-analyze-all", "simple-group-review"].map((id) => el.querySelector("#" + id)).filter(Boolean);
       const logHost = el.querySelector("#simple-log");
       renderSimpleLog(st.events || []);
 
@@ -2122,6 +2122,9 @@
             <button id="simple-inspect" title="Deterministic ranking of the theme's members: longs must have estimates rising, shorts falling — aligned riders and against-theme divergers are both picked, each on its OWN estimate direction">2 · Inspect theme (selection)</button>
             <button id="simple-run-go" title="Dive the shortlist of ONE theme, gate it, write its book + reports">3a · Run theme pass</button>
             <button id="simple-run-all" title="Sweep EVERY non-COLD theme: dive each shortlist, gate, and assemble one book across themes. First run costs a dive per shortlisted name (minutes of LLM each); reruns reuse the cache">3b · Run all non-COLD themes</button>
+            <button id="simple-refresh-fund" title="Fetch fresh fundamentals for the simple universe — prices (yfinance batch), EDGAR rows at the run date, optionally consensus with the checkbox below — then rebuild the quant table and re-render reports. No LLM calls; a few minutes of network.">Refresh fundamentals</button>
+            <button id="simple-analyze-all" title="Qualitative coverage for EVERY covered member of every non-COLD theme: deep dive (cache-first — a first-time dive costs minutes of LLM each, so a full sweep can take hours), forward brief, coverage report with the theme-relative valuation flag. No selection, no gates; the book is untouched.">Qual-analyze all members</button>
+            <button id="simple-group-review" title="One LLM pass per non-COLD theme: judge whether each member's theme-relative valuation flag (premium/discount vs the theme median) is justified by forward-looking fundamentals and catalysts. Run AFTER the coverage reports; commentary, not a gate.">Group review (flags justified?)</button>
           </div>
           <div class="dd-progress" id="simple-progress"></div>
           <div id="simple-maps" style="margin-top:10px"></div>
@@ -2129,6 +2132,8 @@
         <div id="simple-radar-host" style="margin-top:10px"></div>
         <div id="simple-theme-host" style="margin-top:10px"></div>
         <div id="simple-book-host" style="margin-top:10px"></div>
+        <div id="simple-quant-host" style="margin-top:10px"></div>
+        <div id="simple-review-host" style="margin-top:10px"></div>
         <div id="simple-watch-host" style="margin-top:10px"></div>
         <div id="simple-reports-host" style="margin-top:10px"></div>
         <div class="dd-log" id="simple-log" style="display:none"></div>`;
@@ -2193,6 +2198,9 @@
         post("run", { force: $("simple-force").checked });
       });
       $("simple-run-all").addEventListener("click", () => post("run-all", { force: $("simple-force").checked }));
+      $("simple-refresh-fund").addEventListener("click", () => post("refresh-fundamentals", { estimates: $("simple-force").checked }));
+      $("simple-analyze-all").addEventListener("click", () => post("analyze-all", { force: $("simple-force").checked }));
+      $("simple-group-review").addEventListener("click", () => post("group-review", {}));
       $("simple-inspect").addEventListener("click", async () => {
         const theme = $("simple-theme").value;
         if (!theme) { $("simple-progress").innerHTML = `<span class="neg">pick a theme first</span>`; return; }
@@ -2389,7 +2397,7 @@
       }
     }
 
-    function renderSimpleBook(host, payload) {
+    function renderSimpleBook(host, payload, flagMap) {
       if (!payload || payload.error || !payload.book) {
         host.innerHTML = `<div class="dd-batch"><strong>3 · Book</strong><p class="muted" style="margin:4px 0 0">${esc((payload && payload.error) || "no book yet — run step 3")}</p></div>`;
         return;
@@ -2399,6 +2407,7 @@
         ...i,
         gates_ok: (i.gates || []).every((g) => g.pass),
         gate_summary: (i.gates || []).map((g) => (g.pass ? "✔" : "✘") + g.gate).join(" "),
+        flag: (flagMap && flagMap[i.ticker]) || null,
       }));
       const parked = (b.overflow || []);
       host.innerHTML = `
@@ -2411,6 +2420,7 @@
         { key: "side", label: "Side", fmt: (v) => `<span class="${v === "long" ? "pos" : "neg"}">${esc(v)}</span>` },
         { key: "ticker", label: "Ticker", fmt: (v) => `<strong>${esc(v)}</strong>` },
         { key: "theme", label: "Theme" },
+        { key: "flag", label: "Flag", fmt: (v) => (v ? `<span class="${v === "premium" ? "neg" : v === "discount" ? "pos" : "muted"}" title="theme-relative P/E & PEG vs the theme median — see the quant table">${esc(v)}</span>` : `<span class="muted">—</span>`) },
         { key: "rev90", label: "90d est", fmt: (v) => (v == null ? "" : (v > 0 ? "+" : "") + Number(v).toFixed(1) + "%") },
         { key: "days_to_print", label: "Print in d" },
         { key: "gates_ok", label: "Gates", fmt: (v, r) => (v ? `<span class="pos">all pass</span>` : `<span class="neg">failed</span>`) },
@@ -2418,19 +2428,167 @@
       ], { tableId: "simple-book" });
     }
 
+    function renderSimpleQuant(host, quant, selMap) {
+      if (!host) return;
+      const allRows = (quant && quant.rows) || [];
+      if (!allRows.length) {
+        host.innerHTML = `<div class="dd-batch"><strong>Quant table (deterministic)</strong><p class="muted" style="margin:4px 0 0">no quant table yet — run a theme pass</p></div>`;
+        return;
+      }
+      selMap = selMap || {};
+      const f2 = (v) => (v == null ? "—" : Number(v).toFixed(2));
+      const pct = (v) => (v == null ? "—" : (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "%");
+      const pctRaw = (v) => (v == null ? "—" : (v >= 0 ? "+" : "") + Number(v).toFixed(1) + "%");
+      const print = (r) => (r.days_to_print == null ? "—" : `${r.days_to_print}d`);
+      const industries = [...new Set(allRows.map((r) => r.industry).filter(Boolean))].sort();
+      const themes = [...new Set(allRows.map((r) => r.theme).filter(Boolean))].sort();
+      const opt = (v) => `<option value="${esc(v)}">${esc(v)}</option>`;
+      const selOf = (r) => selMap[r.ticker] || null;
+      host.innerHTML = `<div class="dd-batch"><strong>Quant table (deterministic — ${allRows.length} names in ${esc((quant.themes || []).length)} non-COLD themes)</strong>` +
+        `<p class="muted" style="margin:4px 0">P/S · FY1/FY2 consensus EPS · PE1/PE2 · PEG1/PEG2 · rev90 (own 90d estimate change) · days to next print. Reference numbers, not a ranking — computed from the cached fundamentals table (EDGAR XBRL + analyst consensus), no LLM, no network.</p>` +
+        `<div style="margin:6px 0;display:flex;flex-wrap:wrap;gap:6px;align-items:center">` +
+        `<input id="quant-search" placeholder="ticker…" style="width:90px">` +
+        `<select id="quant-side">` +
+        `<option value="">selection: all</option>` +
+        `<option value="long">book · long</option>` +
+        `<option value="short">book · short</option>` +
+        `<option value="parked">parked (any side)</option>` +
+        `<option value="none">not selected</option>` +
+        `</select>` +
+        `<select id="quant-industry"><option value="">industry: all</option>${industries.map(opt).join("")}</select>` +
+        `<select id="quant-theme"><option value="">theme: all</option>${themes.map(opt).join("")}</select>` +
+        `<span id="quant-count" class="muted" style="margin-left:auto"></span></div>` +
+        `<div style="max-height:60vh;overflow:auto;border:1px solid #2a2e35">` +
+        `<table style="width:100%;border-collapse:separate;border-spacing:0;font-size:12px">` +
+        `<thead><tr>` +
+        ["Ticker", "Selection", "Flag", "Price", "P/S", "FY1 EPS", "FY2 EPS", "EG1 → EG2", "PE1", "PE2", "PEG1", "PEG2", "rev90", "print"]
+          .map((h) => `<th style="text-align:left;padding:5px 8px;border-bottom:1px solid #2a2e35;position:sticky;top:0;background:#1b1e24;z-index:2">${h}</th>`).join("") +
+        `</tr></thead><tbody id="quant-body"></tbody></table></div>` +
+        (quant.as_of ? `<p class="muted" style="margin:4px 0 0">run ${esc(quant.as_of)}${quant.note ? " · " + esc(quant.note) : ""}</p>` : "") +
+        `</div>`;
+      const tbody = host.querySelector("#quant-body");
+      const search = host.querySelector("#quant-search");
+      const sideSel = host.querySelector("#quant-side");
+      const indSel = host.querySelector("#quant-industry");
+      const themeSel = host.querySelector("#quant-theme");
+      const count = host.querySelector("#quant-count");
+      const draw = () => {
+        const q = (search.value || "").trim().toUpperCase();
+        const side = sideSel.value;
+        const ind = indSel.value;
+        const th = themeSel.value;
+        const rows = allRows.filter((r) => {
+          if (q && !`${r.ticker} ${r.name || ""}`.toUpperCase().includes(q)) return false;
+          if (ind && r.industry !== ind) return false;
+          if (th && r.theme !== th) return false;
+          if (side) {
+            const s = selOf(r);
+            if (side === "none") { if (s) return false; }
+            else if (side === "parked") { if (!s || s.state !== "parked") return false; }
+            else if (!s || s.state !== "book" || s.side !== side) return false;
+          }
+          return true;
+        });
+        let body = "";
+        let lastTheme = null;
+        for (const r of rows) {
+          if (r.theme !== lastTheme) {
+            lastTheme = r.theme;
+            body += `<tr><th colspan="14" style="text-align:left;background:var(--bg,#14161a)">` +
+              `${esc(r.theme)} — ${esc(r.status || "")} · lean ${esc(r.lean || "")} (breadth ${(r.breadth >= 0 ? "+" : "") + Number(r.breadth || 0).toFixed(2)})</th></tr>`;
+          }
+          const s = selOf(r);
+          const selCell = !s ? `<span class="muted">—</span>`
+            : s.state === "parked"
+              ? `<span class="muted">parked · ${esc(s.side)}</span>`
+              : `<span class="${s.side === "long" ? "pos" : "neg"}"><strong>${esc(s.side)}</strong></span>`;
+          const flag = r.flag || "n/a";
+          const flagCls = flag === "premium" ? "neg" : flag === "discount" ? "pos" : "muted";
+          body += `<tr>` +
+            `<td><strong>${esc(r.ticker)}</strong></td>` +
+            `<td>${selCell}</td>` +
+            `<td><span class="${flagCls}" title="${esc(r.flag_detail || "")}">${esc(flag)}</span></td>` +
+            `<td>${f2(r.price)}</td>` +
+            `<td>${f2(r.ps)}</td>` +
+            `<td>${f2(r.eps1)}</td>` +
+            `<td>${f2(r.eps2)}</td>` +
+            `<td>${pct(r.eg1)} → ${pct(r.eg2)}</td>` +
+            `<td>${f2(r.pe1)}</td>` +
+            `<td>${f2(r.pe2)}</td>` +
+            `<td>${f2(r.peg1)}</td>` +
+            `<td>${f2(r.peg2)}</td>` +
+            `<td>${pctRaw(r.rev90)}</td>` +
+            `<td>${print(r)}</td>` +
+            `</tr>`;
+        }
+        tbody.innerHTML = body || `<tr><td colspan="14" style="padding:8px"><span class="muted">no rows match</span></td></tr>`;
+        count.textContent = `${rows.length} of ${allRows.length} shown`;
+      };
+      search.addEventListener("input", draw);
+      [sideSel, indSel, themeSel].forEach((s) => s.addEventListener("change", draw));
+      draw();
+    }
+
+    function renderSimpleReview(host, review) {
+      if (!host) return;
+      const themes = (review && review.themes) || [];
+      if (!themes.length) {
+        host.innerHTML = `<div class="dd-batch"><strong>Group review (flags justified?)</strong><p class="muted" style="margin:4px 0 0">no group review yet — run the coverage sweep, then "Group review"</p></div>`;
+        return;
+      }
+      const mark = (v) => ({ "justified": `<span class="pos">✅ justified</span>`, "not justified": `<span class="neg">❌ not justified</span>`, "uncertain": `<span class="muted">❔ uncertain</span>` }[v] || `<span class="muted">❔ ${esc(v)}</span>`);
+      const flagCls = (f) => (f === "premium" ? "neg" : f === "discount" ? "pos" : "muted");
+      let body = "";
+      for (const t of themes) {
+        body += `<div class="dd-batch" style="margin-top:8px">` +
+          `<strong>${esc(t.theme)}</strong> — ${esc(t.status || "n/a")}, lean ${esc(t.lean || "?")} (breadth ${(t.breadth >= 0 ? "+" : "") + Number(t.breadth || 0).toFixed(2)}) · ${t.members_reviewed || 0} reviewed` +
+          (t.members_skipped_flat && t.members_skipped_flat.length ? ` · <span class="muted">flat/uncached skipped: ${esc(t.members_skipped_flat.join(", "))}</span>` : "") +
+          (t.summary ? `<p class="muted" style="margin:4px 0">${esc(t.summary)}</p>` : "") +
+          (t.reviews && t.reviews.length
+            ? `<div style="max-height:260px;overflow:auto;border:1px solid #2a2e35"><table style="width:100%;border-collapse:separate;border-spacing:0;font-size:12px">` +
+              `<thead><tr>` +
+              ["Ticker", "Side", "Flag", "Verdict", "Watch", "Why"].map((h) => `<th style="text-align:left;padding:4px 8px;border-bottom:1px solid #2a2e35;position:sticky;top:0;background:#1b1e24;z-index:1">${h}</th>`).join("") +
+              `</tr></thead><tbody>` +
+              t.reviews.map((r) => `<tr>` +
+                `<td style="padding:4px 8px"><strong>${esc(r.ticker)}</strong></td>` +
+                `<td style="padding:4px 8px"><span class="${r.side === "long" ? "pos" : r.side === "short" ? "neg" : ""}">${esc(r.side || "")}</span></td>` +
+                `<td style="padding:4px 8px"><span class="${flagCls(r.flag)}">${esc(r.flag || "n/a")}</span></td>` +
+                `<td style="padding:4px 8px">${mark(r.verdict)}</td>` +
+                `<td style="padding:4px 8px">${esc((r.watch || []).slice(0, 2).join(" · "))}</td>` +
+                `<td style="padding:4px 8px">${esc(r.reason || "")}</td>` +
+                `</tr>`).join("") +
+              `</tbody></table></div>`
+            : `<p class="muted" style="margin:4px 0 0">no directional members</p>`) +
+          `</div>`;
+      }
+      host.innerHTML = `<div class="dd-batch"><strong>Group review — ${themes.length} non-COLD theme(s) · ${esc(review.file || "")}</strong>` +
+        `<p class="muted" style="margin:4px 0">One pass per theme over every covered member: is the theme-relative valuation flag (P/E & PEG vs theme median) justified by forward-looking fundamentals and dated catalysts? Commentary, not a gate — read the member's coverage report before acting.</p></div>` + body;
+    }
+
     async function loadSimpleData() {
       const el = document.getElementById("tab-simple");
       if (!el.querySelector("#simple-maps")) return;
       const status = await (await fetch("/api/simple/status")).json();
       renderSimpleMaps(el.querySelector("#simple-maps"), status.artifacts || {});
-      const [radar, book, watch, reports] = await Promise.all([
+      const [radar, book, watch, reports, quant, review] = await Promise.all([
         fetch("/api/simple/radar").then((r) => r.json()).catch(() => null),
         fetch("/api/simple/book").then((r) => r.json()).catch(() => null),
         fetch("/api/simple/watchlist").then((r) => r.json()).catch(() => null),
         fetch("/api/simple/reports").then((r) => r.json()).catch(() => null),
+        fetch("/api/simple/quant").then((r) => r.json()).catch(() => null),
+        fetch("/api/simple/review").then((r) => r.json()).catch(() => null),
       ]);
       renderSimpleRadar(el.querySelector("#simple-radar-host"), radar && radar.radar);
-      renderSimpleBook(el.querySelector("#simple-book-host"), book);
+      const bookPayload = (book && book.book) || {};
+      const selMap = {};
+      for (const i of bookPayload.book || []) selMap[i.ticker] = { state: "book", side: i.side };
+      for (const i of bookPayload.overflow || []) if (!selMap[i.ticker]) selMap[i.ticker] = { state: "parked", side: i.side };
+      const quantRows = (quant && quant.quant && quant.quant.rows) || [];
+      const quantFlagMap = {};
+      for (const r of quantRows) quantFlagMap[r.ticker] = r.flag || null;
+      renderSimpleBook(el.querySelector("#simple-book-host"), book, quantFlagMap);
+      renderSimpleQuant(el.querySelector("#simple-quant-host"), quant && quant.quant, selMap);
+      renderSimpleReview(el.querySelector("#simple-review-host"), review && review.review);
       const watchHost = el.querySelector("#simple-watch-host");
       const parked = (watch && watch.parked) || [];
       watchHost.innerHTML = `<div class="dd-batch"><strong>Watchlist (parked — nothing dies)</strong>` +
@@ -2446,27 +2604,57 @@
         `</div>`;
       const repHost = el.querySelector("#simple-reports-host");
       const list = (reports && reports.reports) || [];
+      const repParts = (p) => p.split(/[\\/]/);
+      const repLabel = (p) => {
+        const parts = repParts(p);
+        const base = (parts[parts.length - 1] || "").replace(/\.md$/, "");
+        if (base.startsWith("_")) return base.slice(1).replace(/_/g, " ");  // e.g. GROUP REVIEW 2026-09-02
+        const tokens = base.split("_");
+        const stamp = tokens.pop() || "";
+        const ticker = tokens.pop() || "";
+        const side = (tokens.shift() || "").toUpperCase();
+        return `${side} ${ticker} · ${stamp}`;
+      };
+      const byTheme = {};
+      for (const r of list) {
+        const parts = repParts(r.path);
+        const theme = parts.length > 1 ? parts[0] : "(this run)";
+        (byTheme[theme] = byTheme[theme] || []).push(r);
+      }
+      const optgroups = Object.keys(byTheme).sort().map((theme) => {
+        const opts = byTheme[theme]
+          .slice()
+          .sort((a, b) => b.path.localeCompare(a.path))
+          .map((r) => `<option value="${esc(r.path)}">${esc(repLabel(r.path))}</option>`)
+          .join("");
+        return `<optgroup label="${esc(theme)}">${opts}</optgroup>`;
+      }).join("");
       repHost.innerHTML = `<div class="dd-batch"><strong>Idea reports (${list.length})</strong>` +
         (list.length
-          ? `<div style="margin-top:6px">${list.slice(0, 40).map((r) =>
-              `<button class="simple-rep" data-rel="${esc(r.path)}" style="margin:2px 6px 2px 0;font-size:12px">${esc(r.path)}</button>`).join("")}
-             ${list.length > 40 ? `<p class="muted">+ ${list.length - 40} more</p>` : ""}</div>`
+          ? `<div style="margin-top:6px"><select id="simple-rep-select" style="min-width:360px;max-width:100%">` +
+            `<option value="">— pick a report —</option>${optgroups}</select>` +
+            ` <button id="simple-rep-open" style="font-size:12px">Open</button></div>`
           : `<p class="muted" style="margin:4px 0 0">no reports yet</p>`) +
         `</div>`;
-      repHost.querySelectorAll(".simple-rep").forEach((btn) => {
-        btn.addEventListener("click", async () => {
-          showHtml(`<p class="muted">Loading ${esc(btn.dataset.rel)}…</p>`);
-          try {
-            const res = await fetch("/api/simple/report/" + encodeURIComponent(btn.dataset.rel));
-            const payload = await res.json();
-            showHtml(payload.error
-              ? `<p class="err">${esc(payload.error)}</p>`
-              : `<h2>${esc(payload.path)}</h2><div class="dd-report">${mdToHtml(payload.markdown || "")}</div>`);
-          } catch (e) {
-            showHtml(`<p class="err">${esc(String(e.message || e))}</p>`);
-          }
-        });
-      });
+      const openReport = async (rel) => {
+        if (!rel) return;
+        showHtml(`<p class="muted">Loading ${esc(rel)}…</p>`);
+        try {
+          const res = await fetch("/api/simple/report/" + encodeURIComponent(rel));
+          const payload = await res.json();
+          showHtml(payload.error
+            ? `<p class="err">${esc(payload.error)}</p>`
+            : `<h2>${esc(payload.path)}</h2><div class="dd-report">${mdToHtml(payload.markdown || "")}</div>`);
+        } catch (e) {
+          showHtml(`<p class="err">${esc(String(e.message || e))}</p>`);
+        }
+      };
+      const sel = repHost.querySelector("#simple-rep-select");
+      const openBtn = repHost.querySelector("#simple-rep-open");
+      if (sel) {
+        sel.addEventListener("change", () => openReport(sel.value));
+        openBtn && openBtn.addEventListener("click", () => openReport(sel.value));
+      }
     }
 
     async function loadDeepDiveInline(ticker, host) {

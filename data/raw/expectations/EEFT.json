@@ -1,0 +1,77 @@
+{
+  "ticker": "EEFT",
+  "as_of": "2026-08-30T14:05:44.669632+00:00",
+  "earnings_date": "2026-11-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 10.72875,
+    "eps_d30": 10.92375,
+    "eps_d90": 10.96444,
+    "change_30d_pct": -1.79,
+    "change_90d_pct": -2.15,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 6
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 3.62,
+        "estimate": 3.60889,
+        "surprise_pct": 0.31
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.39,
+        "estimate": 2.46444,
+        "surprise_pct": -3.02
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.58,
+        "estimate": 1.45556,
+        "surprise_pct": 8.55
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.82,
+        "estimate": 2.93625,
+        "surprise_pct": -3.96
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 0.47
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": 4.67
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 2.74
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": -0.11
+      },
+      {
+        "report_date": "2025-11-04",
+        "move_pct": -1.25
+      }
+    ],
+    "avg_abs_move_pct": 2.19,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.1% over 90 days and -1.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 6 down.",
+    "Price reaction to the last 4 reports, most recent first: +4.7%, +2.7%, -0.1%, -1.2% (average absolute move 2.2%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +0.5%."
+  ]
+}

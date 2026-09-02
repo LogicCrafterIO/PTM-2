@@ -1,0 +1,77 @@
+{
+  "ticker": "CNXC",
+  "as_of": "2026-08-30T13:55:53.326661+00:00",
+  "earnings_date": "2026-10-01",
+  "revisions": {
+    "available": true,
+    "eps_current": 11.2,
+    "eps_d30": 11.71,
+    "eps_d90": 11.97523,
+    "change_30d_pct": -4.36,
+    "change_90d_pct": -6.47,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 2.78,
+        "estimate": 2.868,
+        "surprise_pct": -3.07
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 2.95,
+        "estimate": 2.91,
+        "surprise_pct": 1.37
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 2.61,
+        "estimate": 2.645,
+        "surprise_pct": -1.32
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 2.63,
+        "estimate": 2.6375,
+        "surprise_pct": -0.28
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -0.82
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-02",
+        "move_pct": -3.32
+      },
+      {
+        "report_date": "2026-04-03",
+        "move_pct": 0.77
+      },
+      {
+        "report_date": "2026-01-28",
+        "move_pct": -12.71
+      },
+      {
+        "report_date": "2025-10-03",
+        "move_pct": 0.88
+      }
+    ],
+    "avg_abs_move_pct": 4.42,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -6.5% over 90 days and -4.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 3 down.",
+    "Price reaction to the last 4 reports, most recent first: -3.3%, +0.8%, -12.7%, +0.9% (average absolute move 4.4%, 2 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -0.8%."
+  ]
+}

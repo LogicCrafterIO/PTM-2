@@ -114,19 +114,29 @@ def side_confirmed(side: str, rev90: float | None) -> bool:
 
 
 def _impact_test(qual: dict | None, ticker: str) -> tuple[bool, bool, str]:
-    """The getting-paid gate: a quantified, material magnitude vs the base."""
+    """The getting-paid gate: a quantified, material magnitude vs the base.
+
+    The gate is magnitude-only by design (an estimate-impact test, not a
+    directional bet), but the detail names WHICH side of the dive's evidence
+    the qualifying item came from — a short passing on a bull-side item is
+    visible instead of hidden."""
     if qual is None:
         return False, False, ""
-    for item in qual.get("evidence_for", []) + qual.get("evidence_against", []):
-        if not item.get("quantified") or item.get("impact_pct") is None:
-            continue
-        magnitude = abs(float(item["impact_pct"]))
-        if magnitude >= MIN_IMPACT_PCT:
-            return (
-                True,
-                True,
-                f"{item.get('metric', 'metric')} {item['impact_pct']:+.1f}% on {item.get('impact_on', '?')}",
-            )
+    for label, items in (
+        ("bull evidence", qual.get("evidence_for", [])),
+        ("bear evidence", qual.get("evidence_against", [])),
+    ):
+        for item in items:
+            if not item.get("quantified") or item.get("impact_pct") is None:
+                continue
+            magnitude = abs(float(item["impact_pct"]))
+            if magnitude >= MIN_IMPACT_PCT:
+                return (
+                    True,
+                    True,
+                    f"{item.get('metric', 'metric')} {item['impact_pct']:+.1f}% on {item.get('impact_on', '?')}"
+                    f" (from the dive's {label})",
+                )
     return True, False, "quantified evidence below the impact bar"
 
 
@@ -135,10 +145,25 @@ def gate_theme(selection: dict, radar_row: dict, quals: dict[str, dict | None], 
     survivors = [r for r in results if r["passed"]]
     parked = [r for r in results if not r["passed"]]
     log(f"gate {selection['theme']}: {len(survivors)} idea(s), {len(parked)} parked")
+    peer_prints = [
+        {"ticker": m["ticker"], "earnings_date": m.get("earnings_date"), "days_to_print": m.get("days_to_print")}
+        for m in radar_row.get("members", [])
+        if m.get("days_to_print") is not None and 0 <= m["days_to_print"] <= 120
+    ]
     return {
         "theme": selection["theme"],
         "ideas": survivors,
         "parked": parked,
         "breadth_abs": abs(radar_row["breadth"]),
         "status": radar_row["status"],
+        # carried through for the idea reports' theme-context section
+        "lean": radar_row.get("lean", ""),
+        "breadth": radar_row.get("breadth", 0.0),
+        "thesis": radar_row.get("thesis", ""),
+        "bellwether": radar_row.get("bellwether"),
+        "members_covered": radar_row.get("members_covered"),
+        "members_total": radar_row.get("members_total"),
+        # same-industry prints inside the trade horizon: catalysts for the theme
+        # that come from OTHER tickers (read-through events)
+        "peer_prints": peer_prints,
     }

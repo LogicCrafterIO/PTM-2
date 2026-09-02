@@ -1,0 +1,77 @@
+{
+  "ticker": "NDAQ",
+  "as_of": "2026-08-30T12:56:21.337320+00:00",
+  "earnings_date": "2026-10-22",
+  "revisions": {
+    "available": true,
+    "eps_current": 4.13591,
+    "eps_d30": 4.13544,
+    "eps_d90": 3.93408,
+    "change_30d_pct": 0.01,
+    "change_90d_pct": 5.13,
+    "analysts_up_30d": 16,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.88,
+        "estimate": 0.84838,
+        "surprise_pct": 3.73
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.96,
+        "estimate": 0.91581,
+        "surprise_pct": 4.83
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.96,
+        "estimate": 0.93348,
+        "surprise_pct": 2.84
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.07,
+        "estimate": 0.98356,
+        "surprise_pct": 8.79
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 5.05
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-23",
+        "move_pct": -0.53
+      },
+      {
+        "report_date": "2026-04-24",
+        "move_pct": 3.29
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": -1.75
+      },
+      {
+        "report_date": "2025-10-23",
+        "move_pct": 1.6
+      }
+    ],
+    "avg_abs_move_pct": 1.79,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +5.1% over 90 days and +0.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 16 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.5%, +3.3%, -1.8%, +1.6% (average absolute move 1.8%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +5.0%."
+  ]
+}

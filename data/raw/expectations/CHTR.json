@@ -1,0 +1,77 @@
+{
+  "ticker": "CHTR",
+  "as_of": "2026-08-30T14:13:07.655224+00:00",
+  "earnings_date": "2026-10-23",
+  "revisions": {
+    "available": true,
+    "eps_current": 41.91909,
+    "eps_d30": 41.57802,
+    "eps_d90": 41.90553,
+    "change_30d_pct": 0.82,
+    "change_90d_pct": 0.03,
+    "analysts_up_30d": 8,
+    "analysts_down_30d": 8
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 8.34,
+        "estimate": 9.29485,
+        "surprise_pct": -10.27
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 10.34,
+        "estimate": 9.93393,
+        "surprise_pct": 4.09
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 9.17,
+        "estimate": 10.08413,
+        "surprise_pct": -9.07
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 10.66,
+        "estimate": 10.06264,
+        "surprise_pct": 5.94
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -2.33
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-24",
+        "move_pct": -2.52
+      },
+      {
+        "report_date": "2026-04-24",
+        "move_pct": -25.5
+      },
+      {
+        "report_date": "2026-01-30",
+        "move_pct": 7.62
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": 1.26
+      }
+    ],
+    "avg_abs_move_pct": 9.22,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.0% over 90 days and +0.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 8 up, 8 down.",
+    "Price reaction to the last 4 reports, most recent first: -2.5%, -25.5%, +7.6%, +1.3% (average absolute move 9.2%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -2.3%."
+  ]
+}

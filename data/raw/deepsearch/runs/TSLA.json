@@ -1,0 +1,1267 @@
+{
+  "ticker": "TSLA",
+  "name": "Tesla, Inc.",
+  "sector": "Consumer Discretionary",
+  "industry": "Automobile Manufacturers",
+  "as_of": "2026-08-28",
+  "research": {
+    "ticker": "TSLA",
+    "as_of": "2026-08-28",
+    "queries_run": [
+      "Tesla Robotaxi Austin launch June 2025 ridership utilization revenue latest",
+      "Tesla FSD NHTSA ODI investigation accident reports 2025",
+      "Tesla executive departures C-suite management changes 2025",
+      "Tesla analyst downgrades price target cuts bear case 2025",
+      "Tesla fleet orders enterprise customers wins losses Hertz Enterprise 2025",
+      "Waymo Tesla Robotaxi competitive comparison market share 2025",
+      "Tesla Megapack energy storage tariff supply chain impact 2025",
+      "Tesla affordable EV Model 2 2026 launch timeline rumors",
+      "Tesla short interest bear thesis biggest risk 2025"
+    ],
+    "findings": [
+      {
+        "claim": "Tesla Robotaxi active unsupervised fleet in Austin is ~20 vehicles, shrinking despite geofence expansion to entire Austin metro.",
+        "source": {
+          "title": "Tesla expands 'Robotaxi' to entire Austin metro \u2014 but still has only ~20 vehicles | Electrek",
+          "url": "https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-06-03"
+      },
+      {
+        "claim": "Over past two weeks, all 170 Tesla Robotaxi rides in Austin monitored by Robotaxi Tracker were unsupervised.",
+        "source": {
+          "title": "Tesla Robotaxis appear to go fully unsupervised in Austin ahead of Cybercab launch | The Verge",
+          "url": "https://www.theverge.com/transportation/982759/tesla-robotaxi-unsupervised-austin-robotaxi-tracker",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-20"
+      },
+      {
+        "claim": "Tesla has 18 ADS incidents since Austin launch vs Waymo ~697, but active robotaxi fleet is barely running and shrinking.",
+        "source": {
+          "title": "Tesla 'Robotaxis' are not crashing because they are not running | Electrek",
+          "url": "https://electrek.co/2026/06/16/tesla-robotaxi-clean-crash-record-barely-running/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-06-16"
+      },
+      {
+        "claim": "Tesla Q2 2026 robotaxi paid miles fell 36% QoQ; Waymo clears roughly 4 million miles a week.",
+        "source": {
+          "title": "Tesla robotaxi reality check 2026: Q2 miles fall 36% | Beyond Tomorrow",
+          "url": "https://beyondtmrw.org/article/tesla-robotaxi-promises-are-clashing-with-reality",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-07-24"
+      },
+      {
+        "claim": "245 Cybercabs parked at Giga Texas, 90 in Houston, 125k annual capacity, none carried paying passenger; VIN 2,172 spotted early Aug, ~4/day.",
+        "source": {
+          "title": "150 Cybercabs and No Passengers: Tesla's Robotaxi Production vs Software Gap | Tesorb",
+          "url": "https://tesorb.com/cybercab-production-outpaces-software-2026/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08"
+      },
+      {
+        "claim": "Tesla Robotaxi geofence expanded from 20 sq miles to ~245; unsupervised fleet ~20 vehicles across three Texas cities; fares raised twice; NHTSA 17 incidents.",
+        "source": {
+          "title": "Tesla Robotaxi Austin: One Year In, What We Know | DevReads",
+          "url": "https://reads.devsecengops.com/blog/tesla-robotaxi-austin-what-one-year-of-real-world-operation-shows",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "NHTSA opened investigation PE25012 on 10/07/2025 into FSD traffic safety violations; population 2,882,566 vehicles.",
+        "source": {
+          "title": "ODI RESUME",
+          "url": "https://static.nhtsa.gov/odi/inv/2025/INOA-PE25012-19171.pdf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-10-07"
+      },
+      {
+        "claim": "NHTSA opened investigation AQ25002 on 08/19/2025 into Tesla compliance with SGO reporting; population 2,600,000.",
+        "source": {
+          "title": "ODI RESUME",
+          "url": "https://static.nhtsa.gov/odi/inv/2025/INOA-AQ25002-18184.pdf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-08-19"
+      },
+      {
+        "claim": "NHTSA opened Preliminary Evaluation PE25012 on Dec 3, 2025 into Tesla FSD traffic violations, citing 62 complaints, 4 media reports, and 14 SGO reports.",
+        "source": {
+          "title": "December 3, 2025 Eddie Gates Tesla, Inc. 45500 Fremont Blvd Fremont, CA 94538 Subject: Information Request ID PE25012-01 Dear Mr. Gates, This letter is to inform you that the Office of Defects Investigation (\u201cODI\u201d) of the National Highway Traffic Safety Administration (\u201cNHTSA\u201d) has opened a Preliminary Evaluation (PE25012) to investigate allegations that vehicles, manufactured by Tesla, Inc. (\u201cTesla\u201d) and operating with Full Self-Driving (\u201cFSD\u201d) engaged, executed driving maneuvers that may constitute traffic safety violations, and to request certain information. This investigation will assess the capability of FSD to accurately detect and appropriately respond to traffic signals, signs and lane markings, as well as its capability to provide adequate indications and warnings to the driver. The adequacy of the indications and warnings of the system\u2019s intended driving responses includes consideration of whether they are, among other things, accurate, conspicuous and sufficiently timely such that a driver may safely supervise the automated driving task and intervene as necessary. This office has received 62 complaints and has identified 4 media reports and 14 reports submitted under Standing General Order 2021-01 (the \u201cSGO\u201d) that may relate to the alleged defect. The complaints and reports allege or involve one or more of several types of traffic violations including: proceeding or attempting to proceed into intersections against red traffic signals; entering opposing lanes of travel or attempting to enter roads with wrong way signs; and improper lane use within intersections, including proceeding straight through intersections from marked turn-only lanes and executing turns from marked through-only lanes. A copy of the complaints and reports will be provided to you electronically for your review and assessment. Unless otherwise stated in the text, the following definitions apply to these information requests: Subject system: all versions of Full Self-Driving (\u201cFSD\u201d) an",
+          "url": "https://static.nhtsa.gov/odi/inv/2025/INIM-PE25012-30897.pdf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-12-03"
+      },
+      {
+        "claim": "NHTSA identified at least 80 instances of FSD violating road rules as of Dec 5, 2025, up from ~50 in October; 62 complaints, 14 Tesla reports, 4 media reports.",
+        "source": {
+          "title": "Feds find more complaints of Tesla's FSD running red lights and crossing lanes | TechCrunch",
+          "url": "https://techcrunch.com/2025/12/05/feds-find-more-complaints-of-teslas-fsd-running-red-lights-and-crossing-lanes/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-12-05"
+      },
+      {
+        "claim": "NHTSA launched broad FSD investigation on Oct 9, 2025 after connecting 58 incidents; Tesla also lost its first wrongful death trial over driver assistance.",
+        "source": {
+          "title": "NHTSA launches another investigation into Tesla's 'Full Self-Driving' after 58 crashes | Electrek",
+          "url": "https://electrek.co/2025/10/09/nhtsa-launches-another-investigation-into-teslas-full-self-driving-after-58-crashes/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-10-09"
+      },
+      {
+        "claim": "NHTSA PE24031 opened Oct 17, 2024 into FSD collisions in reduced visibility conditions; estimated affected population 2,410,002 vehicles.",
+        "source": {
+          "title": "ODI RESUME",
+          "url": "https://static.nhtsa.gov/odi/inv/2024/INOA-PE24031-23232.pdf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2024-10-17"
+      },
+      {
+        "claim": "NHTSA opened investigation on Aug 21, 2025 into Tesla for not properly reporting crashes involving Autopilot and FSD.",
+        "source": {
+          "title": "Tesla is under NHTSA probe for not properly reporting crashes involving Autopilot and FSD | Electrek",
+          "url": "https://electrek.co/2025/08/21/tesla-nhtsa-probe-not-properly-reporting-crashes-involving-autopilot-fsd/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-08-21"
+      },
+      {
+        "claim": "Cybertruck program head Siddhant Awasthi departed Tesla after 8 years, having overseen engineering to large-scale production.",
+        "source": {
+          "title": "Tesla's Cybertruck chief Siddhant Awasthi departs after eight years | Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/teslas-cybertruck-chief-siddhant-awasthi-departs-after-eight-years-2025-11-10/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-09"
+      },
+      {
+        "claim": "Tesla lost top sales, battery, robotics, and chip executives in 2025 after shareholders approved Musk's $1 trillion pay package.",
+        "source": {
+          "title": "Tesla\u2019s Engineering Exodus Comes Amid Shift From Core EV Mission",
+          "url": "https://www.forbes.com/sites/alanohnsman/2025/11/10/teslas-engineering-exodus-comes-amid-shift-from-core-ev-mission/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-10"
+      },
+      {
+        "claim": "Tesla fired manufacturing VP Omead Afshar after year-over-year car sales declines in key markets.",
+        "source": {
+          "title": "Tesla head of manufacturing Omead Afshar fired by Elon Musk",
+          "url": "https://www.cnbc.com/2025/06/26/tesla-head-of-manufacturing-omead-afshar-fired-by-elon-musk.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-06-26"
+      },
+      {
+        "claim": "Milan Kovac, head of Tesla's Optimus humanoid robot program, announced plans to step down.",
+        "source": {
+          "title": "Tesla's head of Optimus humanoid robot program to leave firm | Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/teslas-optimus-humanoid-robot-program-head-exiting-firm-bloomberg-news-reports-2025-06-06/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-06-06"
+      },
+      {
+        "claim": "Vineet Mehta, Tesla's head of battery architecture, is departing the company.",
+        "source": {
+          "title": "Tesla's head of battery architecture Vineet Mehta departs, the Information reports | Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/teslas-head-battery-architecture-vineet-mehta-departs-information-reports-2025-04-30/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-04-30"
+      },
+      {
+        "claim": "Elon Musk fired Omead Afshar, Tesla's head of North America and Europe operations, amid declining sales in both regions.",
+        "source": {
+          "title": "Elon Musk Has Fired Omead Afshar, Tesla\u2019s North America And Europe Chief",
+          "url": "https://www.forbes.com/sites/alanohnsman/2025/06/26/elon-musk-has-fired-one-of-his-top-tesla-lieutenants/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-06-26"
+      },
+      {
+        "claim": "Tesla has lost its 10th executive this year, with Piero Landolfi the latest departure.",
+        "source": {
+          "title": "What\u2019s Going On at Tesla? A Wave of Executives Is Heading for the Exits",
+          "url": "https://gizmodo.com/whats-going-on-at-tesla-a-wave-of-executives-is-heading-for-the-exits-2000641630",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-08-11"
+      },
+      {
+        "claim": "Morgan Stanley downgraded Tesla from Overweight to Equal Weight, raising price target to $425 from $410, implying 3% downside.",
+        "source": {
+          "title": "Tesla Stock Downgraded by Morgan Stanley on Valuation Concerns - Business Insider",
+          "url": "https://www.businessinsider.com/tesla-stock-price-downgrade-morgan-stanley-fsd-optimus-evs-tsla-2025-12",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2025-12-08"
+      },
+      {
+        "claim": "Guggenheim analyst Ronald Jewsikow reiterated Sell rating with $175 price target, implying 48% downside.",
+        "source": {
+          "title": "\u2018Over 45% Downside Ahead,\u2019 Warns Guggenheim on Tesla Stock (TSLA) | Markets Insider",
+          "url": "https://markets.businessinsider.com/news/stocks/over-45-downside-ahead-warns-guggenheim-on-tesla-stock-tsla-1035025465",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2025-08-12"
+      },
+      {
+        "claim": "Tesla shares slipped more than 4% after Morgan Stanley downgrade, with stock trading around $455.",
+        "source": {
+          "title": "Tesla Shares Slip After Morgan Stanley Downgrade | OilPrice.com",
+          "url": "https://oilprice.com/Energy/Energy-General/Tesla-Shares-Slip-After-Morgan-Stanley-Downgrade.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2025-12-08"
+      },
+      {
+        "claim": "JP Morgan downgraded Tesla to $120; Wells Fargo set $130 price target; UBS and Redburn Atlantic also cut.",
+        "source": {
+          "title": "Another Leading US Bank Downgraded Tesla Stock Last Week",
+          "url": "https://cleantechnica.com/2025/03/18/another-leading-us-bank-downgraded-tesla-stock/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2025-03-18"
+      },
+      {
+        "claim": "Dan Ives cut Tesla forecast by nearly 50%, blaming Musk's moves for the meltdown.",
+        "source": {
+          "title": "tesla ceo elon musk: Wall Street\u2019s Dan Ives breaks ranks with Elon Musk, cuts Tesla forecast by nearly 50% in stunning reversal of faith, blames Musk\u2019s moves for the meltdown - The Economic Times",
+          "url": "https://economictimes.indiatimes.com/news/international/us/wall-streets-dan-ives-breaks-ranks-with-elon-musk-cuts-tesla-forecast-by-nearly-50-in-stunning-reversal-of-faith-blames-musks-moves-for-the-meltdown/articleshow/120097477.cms",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": ""
+      },
+      {
+        "claim": "Hertz is selling about 20,000 EVs including Teslas from US fleet, citing higher collision/damage expenses; EV demand cooled.",
+        "source": {
+          "title": "Rental giant Hertz dumps EVs, including Teslas, for gas cars | Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/hertz-sell-about-20000-evs-us-fleet-2024-01-11/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2024-01-11"
+      },
+      {
+        "claim": "Hertz purchased 100,000 Teslas in 2021 for ~$4.2 billion, largest single EV purchase ever.",
+        "source": {
+          "title": "How Hertz's Bet on EVs Exposed US Pain Points and Soft Spots for EVs - Business Insider",
+          "url": "https://www.businessinsider.com/hertz-tesla-ev-gamble-loss-america-pain-points-2025-12",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-12-06"
+      },
+      {
+        "claim": "Hertz took a Q1 $195 million hit on Teslas that keep losing value and can't sell fast enough.",
+        "source": {
+          "title": "Tesla's recalls and maintenance are costing Hertz, per latest earnings | Fortune",
+          "url": "https://fortune.com/2024/04/25/hertz-ev-electric-vehicles-tesla-elon-musk-recall-earnings-rental-cars/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2024-04-25"
+      },
+      {
+        "claim": "Hertz slowed EV additions citing Tesla price cuts hurting resale value and high repair costs; had 35,000 Teslas vs 100,000 planned.",
+        "source": {
+          "title": "Hertz pulls back on EV plans citing Tesla price cuts, repair costs",
+          "url": "https://www.cnbc.com/2023/10/26/hertz-pulls-back-on-ev-plans-citing-tesla-price-cuts-repair-costs.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2023-10-26"
+      },
+      {
+        "claim": "Tesla robotaxi service launched in Austin in July 2025; verified active fleet is small and has declined in recent months.",
+        "source": {
+          "title": "Waymo vs Tesla Robotaxi: A Verified Comparison (2026) \u00b7 DEPLOY",
+          "url": "https://registry.deploy.report/waymo-vs-tesla",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "As of mid-2026, Tesla Robotaxi pilot operates in ~4 markets (Austin, Dallas, Houston, SF Bay Area) using geofenced Model Y; typically cheaper per trip than Waymo.",
+        "source": {
+          "title": "How does Tesla Robotaxi compare to Waymo? \u00b7 DEPLOY",
+          "url": "https://deploy.report/explainers/tesla-robotaxi-vs-waymo",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": ""
+      },
+      {
+        "claim": "Tesla Robotaxi fleet is around 50 vehicles, largely supervised in Austin and Bay Area (Dec 2025).",
+        "source": {
+          "title": "2025 Was the Year of the Robotaxi: Where Do We Stand Today? | GeneMunster.com",
+          "url": "https://genemunster.com/2025-was-the-year-of-the-robotaxi-where-do-we-stand-today/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-12-17"
+      },
+      {
+        "claim": "2026 robotaxi outlook hinges on no-safety-driver Austin test; if successful, Tesla could catch Waymo.",
+        "source": {
+          "title": "2025 Was the Year of the Robotaxi: Where Do We Stand Today? | GeneMunster.com",
+          "url": "https://genemunster.com/2025-was-the-year-of-the-robotaxi-where-do-we-stand-today/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-12-17"
+      },
+      {
+        "claim": "Waymo is roughly 24\u201336 months ahead of the U.S. robotaxi field, including Tesla, as of June 2026.",
+        "source": {
+          "title": "How far ahead is Waymo today?\n \u2013 New Market Pitch",
+          "url": "https://newmarketpitch.com/blogs/news/autonomous-vehicle-waymo-ahead",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-06-29"
+      },
+      {
+        "claim": "Tesla Q1 2025 automotive revenues fell 20% YoY; energy storage grew but faces greater tariff exposure than automotive.",
+        "source": {
+          "title": "Tesla BESS business to see 'outsized' tariff impact, CFO says - Energy-Storage.News",
+          "url": "https://www.energy-storage.news/tesla-trade-tariffs-will-have-outsized-impact-on-battery-storage-business-cfo-says/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-04-24"
+      },
+      {
+        "claim": "Tesla Q1 2025 EV deliveries were 336,000, 40,000 below consensus; energy storage deployed 10 GWh, a Q1 record.",
+        "source": {
+          "title": "Tesla's only growing business was just kneecapped by Trump's tariffs | Electrek",
+          "url": "https://electrek.co/2025/04/03/tesla-only-growing-business-kneecapped-trump-tariffs/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-04-03"
+      },
+      {
+        "claim": "Tesla launched trial robotaxi in Austin in June 2025; Musk said driverless taxis likely available to half of US population by end of 2025.",
+        "source": {
+          "title": "How Tesla and Waymo's radically different robotaxi approaches will shape the industry - CNA",
+          "url": "https://www.channelnewsasia.com/business/how-tesla-and-waymos-radically-different-robotaxi-approaches-will-shape-industry-5319731",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Tesla Q1 2025 energy generation and storage segment revenue was $2.73 billion, up 67% year over year.",
+        "source": {
+          "title": "Tesla\u2019s Energy Generation and Storage Business May Suffer From Trump\u2019s Tariffs -",
+          "url": "https://retailwire.com/teslas-energy-generation-storage-trumps-tariffs/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-04-23"
+      },
+      {
+        "claim": "CFO Vaibhav Taneja said Trump tariff policy will adversely impact Tesla; high duties on China components may hit energy storage hardest.",
+        "source": {
+          "title": "Tesla\u2019s Energy Generation and Storage Business May Suffer From Trump\u2019s Tariffs -",
+          "url": "https://retailwire.com/teslas-energy-generation-storage-trumps-tariffs/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-04-23"
+      },
+      {
+        "claim": "Wood Mackenzie: tariffs will affect battery storage more badly than solar PV or wind sectors.",
+        "source": {
+          "title": "Tariffs: Analysis spells out extent of challenge for US BESS industry - Energy-Storage.News",
+          "url": "https://www.energy-storage.news/us-import-tariff-analysis-extent-of-challenge-us-battery-storage-industry/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-06-04"
+      },
+      {
+        "claim": "Tesla warned Trump tariffs could leave the company exposed to international retaliation.",
+        "source": {
+          "title": "Tesla warns Trump tariffs could leave the company 'exposed' to international retaliation | Fortune",
+          "url": "https://fortune.com/2025/03/14/tesla-warns-trump-administration-tariffs-company-exposed-retaliation/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2025-03-14"
+      },
+      {
+        "claim": "US confirmed Tesla as buyer in LG's $4.3B LFP battery deal; LG to produce cells in Michigan starting 2027 for Megapack 3, shielding energy business from tariffs.",
+        "source": {
+          "title": "US confirms Tesla (TSLA) is buyer in LG's $4.3B LFP battery deal for Megapack 3 | Electrek",
+          "url": "https://electrek.co/2026/03/17/tesla-lg-energy-solution-4-3-billion-lfp-battery-deal-megapack-confirmed/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-03-17"
+      },
+      {
+        "claim": "Tesla's energy storage faces setbacks from new 54% tariffs on Chinese battery cells, potentially hiking Powerwall and Megapack costs.",
+        "source": {
+          "title": "Tesla's Growth Halted By New Trump Tariffs",
+          "url": "https://bizbrief.ie/news/technology/teslas-fastest-growing-sector-hit-by-new-tariffs-implemented-under-trump-administration/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-04-03"
+      },
+      {
+        "claim": "Tesla's Q1 2026 10-Q (filed April 22, 2026) confirms Cybercab pilot production has begun.",
+        "source": {
+          "title": "Tesla Model 2 2026: What the SEC Filing Actually Confirms",
+          "url": "https://axis-intelligence.com/tesla-model-2-release-date-specs/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-04-22"
+      },
+      {
+        "claim": "Next-gen Roadster demo targeted August 2026; production 12-18 months later (2027 earliest); no affordable model confirmed; Standard Model Y from $39,990.",
+        "source": {
+          "title": "Tesla future models: Roadster and affordable EV status",
+          "url": "https://evseekers.com/tesla-future-models/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Tesla delivered 2,500 pilot units of affordable Model 2 (Project Redwood) to European fleet operators in early 2026; mass consumer deliveries targeting late 2026.",
+        "source": {
+          "title": "Tesla Model 2 Comeback: Bringing Back Its Affordable EV",
+          "url": "https://autoakhbar.com/tesla-model-2-comeback-ev-2026/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Cybercab (Robotaxi) production announced to start in first half of 2026.",
+        "source": {
+          "title": "Upcoming Tesla Models in the Second Half of 2026 and 2027: Key Launches Beyond the Cybercab Robotaxi - USonwheels.com",
+          "url": "https://usonwheels.com/upcoming-tesla-models-in-the-second-half-of-2026-and-2027-key-launches-beyond-the-cybercab-robotaxi/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-01-30"
+      },
+      {
+        "claim": "Tesla Model 2 expected to be priced at $25,000.",
+        "source": {
+          "title": "Tesla Model 2 Release: $25,000 EV Could Launch Soon, Promising Affordable Electric Driving for Millions",
+          "url": "https://fori.us/tesla-model-2-release-price-here/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Tesla share price down more than 40% since end of December, ~$550B market value lost; short interest 2.5% vs historical average 23%.",
+        "source": {
+          "title": "Hedge funds burned by Tesla short bets plot next steps",
+          "url": "https://www.bostonglobe.com/2025/03/19/business/hedge-funds-tesla-short-bets/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2025-03-19"
+      },
+      {
+        "claim": "TSLA down 46% from 52-week high, market cap $833.6B, short interest 81M shares.",
+        "source": {
+          "title": "Tesla Stock Short Sellers Have Made $10 BILLION in 2025. Should You Sell TSLA? - The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/F/pressreleases/31678877/tesla-stock-short-sellers-have-made-10-billion-in-2025-should-you-sell-tsla/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": ""
+      },
+      {
+        "claim": "Tesla stock down 25% in 2026; GLJ Research $25 price target implies 93% plunge from current levels.",
+        "source": {
+          "title": "Tesla Stock Big Short Opportunity, Stock Could Fall to $25, Analyst Says - Business Insider",
+          "url": "https://www.businessinsider.com/tesla-stock-short-bearish-elon-musk-options-trading-markets-tsla-2026-4",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-04-10"
+      },
+      {
+        "claim": "Tesla short interest at record low 1.6%; Cybercab production set for next month (April 2026).",
+        "source": {
+          "title": "Tesla Bear Bets Hit Record Low \u2014 But Nvidia Is Building The Autonomy Ecosystem That Could Challenge Its Lead",
+          "url": "https://stocktwits.com/news-articles/markets/equity/tesla-bear-bets-record-low-nvidia-autonomy-ecosystem-challenge-lead/cZ37bkxRIgP",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-03-18"
+      },
+      {
+        "claim": "Tesla's short interest is 2.67% of float, having declined slightly.",
+        "source": {
+          "title": "Why Shorting Tesla Remains a High-Risk Bet Despite Market Volatility",
+          "url": "https://www.ainvest.com/news/shorting-tesla-remains-high-risk-bet-market-volatility-2601/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-01-06"
+      },
+      {
+        "claim": "Institutional investors maintain cautious short positions, wary of Tesla's AI/robotics bets and market advantages like vertical integration and brand loyalty.",
+        "source": {
+          "title": "Why Shorting Tesla Remains a High-Risk Bet Despite Market Volatility",
+          "url": "https://www.ainvest.com/news/shorting-tesla-remains-high-risk-bet-market-volatility-2601/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-01-06"
+      },
+      {
+        "claim": "Tesla's share price was $322.16 as of June 20th.",
+        "source": {
+          "title": "Tesla, Inc. (TSLA): A Bear Case Theory - Insider Monkey",
+          "url": "https://www.insidermonkey.com/blog/tesla-inc-tsla-a-bear-case-theory-3-1556025/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-06-20"
+      },
+      {
+        "claim": "Tesla's trailing P/E was 184.09 and forward P/E was 166.67 according to Yahoo Finance.",
+        "source": {
+          "title": "Tesla, Inc. (TSLA): A Bear Case Theory - Insider Monkey",
+          "url": "https://www.insidermonkey.com/blog/tesla-inc-tsla-a-bear-case-theory-3-1556025/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-06-20"
+      },
+      {
+        "claim": "Tesla's Q1 2025 core electric vehicle revenue plunged 20% year-over-year and fell below 2023 levels.",
+        "source": {
+          "title": "Tesla, Inc. (TSLA): A Bear Case Theory - Insider Monkey",
+          "url": "https://www.insidermonkey.com/blog/tesla-inc-tsla-a-bear-case-theory-3-1556025/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Tesla's Q1 2025 operating income dropped by two-thirds.",
+        "source": {
+          "title": "Tesla, Inc. (TSLA): A Bear Case Theory - Insider Monkey",
+          "url": "https://www.insidermonkey.com/blog/tesla-inc-tsla-a-bear-case-theory-3-1556025/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      }
+    ],
+    "sources": [
+      {
+        "title": "Tesla expands 'Robotaxi' to entire Austin metro \u2014 but still has only ~20 vehicles | Electrek",
+        "url": "https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/",
+        "date": ""
+      },
+      {
+        "title": "Tesla Robotaxis appear to go fully unsupervised in Austin ahead of Cybercab launch | The Verge",
+        "url": "https://www.theverge.com/transportation/982759/tesla-robotaxi-unsupervised-austin-robotaxi-tracker",
+        "date": ""
+      },
+      {
+        "title": "Tesla 'Robotaxis' are not crashing because they are not running | Electrek",
+        "url": "https://electrek.co/2026/06/16/tesla-robotaxi-clean-crash-record-barely-running/",
+        "date": ""
+      },
+      {
+        "title": "Tesla robotaxi reality check 2026: Q2 miles fall 36% | Beyond Tomorrow",
+        "url": "https://beyondtmrw.org/article/tesla-robotaxi-promises-are-clashing-with-reality",
+        "date": ""
+      },
+      {
+        "title": "150 Cybercabs and No Passengers: Tesla's Robotaxi Production vs Software Gap | Tesorb",
+        "url": "https://tesorb.com/cybercab-production-outpaces-software-2026/",
+        "date": ""
+      },
+      {
+        "title": "Tesla Robotaxi Austin: One Year In, What We Know | DevReads",
+        "url": "https://reads.devsecengops.com/blog/tesla-robotaxi-austin-what-one-year-of-real-world-operation-shows",
+        "date": ""
+      },
+      {
+        "title": "ODI RESUME",
+        "url": "https://static.nhtsa.gov/odi/inv/2025/INOA-PE25012-19171.pdf",
+        "date": ""
+      },
+      {
+        "title": "ODI RESUME",
+        "url": "https://static.nhtsa.gov/odi/inv/2025/INOA-AQ25002-18184.pdf",
+        "date": ""
+      },
+      {
+        "title": "December 3, 2025 Eddie Gates Tesla, Inc. 45500 Fremont Blvd Fremont, CA 94538 Subject: Information Request ID PE25012-01 Dear Mr. Gates, This letter is to inform you that the Office of Defects Investigation (\u201cODI\u201d) of the National Highway Traffic Safety Administration (\u201cNHTSA\u201d) has opened a Preliminary Evaluation (PE25012) to investigate allegations that vehicles, manufactured by Tesla, Inc. (\u201cTesla\u201d) and operating with Full Self-Driving (\u201cFSD\u201d) engaged, executed driving maneuvers that may constitute traffic safety violations, and to request certain information. This investigation will assess the capability of FSD to accurately detect and appropriately respond to traffic signals, signs and lane markings, as well as its capability to provide adequate indications and warnings to the driver. The adequacy of the indications and warnings of the system\u2019s intended driving responses includes consideration of whether they are, among other things, accurate, conspicuous and sufficiently timely such that a driver may safely supervise the automated driving task and intervene as necessary. This office has received 62 complaints and has identified 4 media reports and 14 reports submitted under Standing General Order 2021-01 (the \u201cSGO\u201d) that may relate to the alleged defect. The complaints and reports allege or involve one or more of several types of traffic violations including: proceeding or attempting to proceed into intersections against red traffic signals; entering opposing lanes of travel or attempting to enter roads with wrong way signs; and improper lane use within intersections, including proceeding straight through intersections from marked turn-only lanes and executing turns from marked through-only lanes. A copy of the complaints and reports will be provided to you electronically for your review and assessment. Unless otherwise stated in the text, the following definitions apply to these information requests: Subject system: all versions of Full Self-Driving (\u201cFSD\u201d) an",
+        "url": "https://static.nhtsa.gov/odi/inv/2025/INIM-PE25012-30897.pdf",
+        "date": ""
+      },
+      {
+        "title": "Feds find more complaints of Tesla's FSD running red lights and crossing lanes | TechCrunch",
+        "url": "https://techcrunch.com/2025/12/05/feds-find-more-complaints-of-teslas-fsd-running-red-lights-and-crossing-lanes/",
+        "date": ""
+      },
+      {
+        "title": "NHTSA launches another investigation into Tesla's 'Full Self-Driving' after 58 crashes | Electrek",
+        "url": "https://electrek.co/2025/10/09/nhtsa-launches-another-investigation-into-teslas-full-self-driving-after-58-crashes/",
+        "date": ""
+      },
+      {
+        "title": "ODI RESUME",
+        "url": "https://static.nhtsa.gov/odi/inv/2024/INOA-PE24031-23232.pdf",
+        "date": ""
+      },
+      {
+        "title": "Tesla is under NHTSA probe for not properly reporting crashes involving Autopilot and FSD | Electrek",
+        "url": "https://electrek.co/2025/08/21/tesla-nhtsa-probe-not-properly-reporting-crashes-involving-autopilot-fsd/",
+        "date": ""
+      },
+      {
+        "title": "Tesla's Cybertruck chief Siddhant Awasthi departs after eight years | Reuters",
+        "url": "https://www.reuters.com/business/autos-transportation/teslas-cybertruck-chief-siddhant-awasthi-departs-after-eight-years-2025-11-10/",
+        "date": ""
+      },
+      {
+        "title": "Tesla\u2019s Engineering Exodus Comes Amid Shift From Core EV Mission",
+        "url": "https://www.forbes.com/sites/alanohnsman/2025/11/10/teslas-engineering-exodus-comes-amid-shift-from-core-ev-mission/",
+        "date": ""
+      },
+      {
+        "title": "Tesla head of manufacturing Omead Afshar fired by Elon Musk",
+        "url": "https://www.cnbc.com/2025/06/26/tesla-head-of-manufacturing-omead-afshar-fired-by-elon-musk.html",
+        "date": ""
+      },
+      {
+        "title": "Tesla's head of Optimus humanoid robot program to leave firm | Reuters",
+        "url": "https://www.reuters.com/business/autos-transportation/teslas-optimus-humanoid-robot-program-head-exiting-firm-bloomberg-news-reports-2025-06-06/",
+        "date": ""
+      },
+      {
+        "title": "Tesla's head of battery architecture Vineet Mehta departs, the Information reports | Reuters",
+        "url": "https://www.reuters.com/business/autos-transportation/teslas-head-battery-architecture-vineet-mehta-departs-information-reports-2025-04-30/",
+        "date": ""
+      },
+      {
+        "title": "Elon Musk Has Fired Omead Afshar, Tesla\u2019s North America And Europe Chief",
+        "url": "https://www.forbes.com/sites/alanohnsman/2025/06/26/elon-musk-has-fired-one-of-his-top-tesla-lieutenants/",
+        "date": ""
+      },
+      {
+        "title": "What\u2019s Going On at Tesla? A Wave of Executives Is Heading for the Exits",
+        "url": "https://gizmodo.com/whats-going-on-at-tesla-a-wave-of-executives-is-heading-for-the-exits-2000641630",
+        "date": ""
+      },
+      {
+        "title": "Tesla Stock Downgraded by Morgan Stanley on Valuation Concerns - Business Insider",
+        "url": "https://www.businessinsider.com/tesla-stock-price-downgrade-morgan-stanley-fsd-optimus-evs-tsla-2025-12",
+        "date": ""
+      },
+      {
+        "title": "\u2018Over 45% Downside Ahead,\u2019 Warns Guggenheim on Tesla Stock (TSLA) | Markets Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/over-45-downside-ahead-warns-guggenheim-on-tesla-stock-tsla-1035025465",
+        "date": ""
+      },
+      {
+        "title": "Tesla Shares Slip After Morgan Stanley Downgrade | OilPrice.com",
+        "url": "https://oilprice.com/Energy/Energy-General/Tesla-Shares-Slip-After-Morgan-Stanley-Downgrade.html",
+        "date": ""
+      },
+      {
+        "title": "Another Leading US Bank Downgraded Tesla Stock Last Week",
+        "url": "https://cleantechnica.com/2025/03/18/another-leading-us-bank-downgraded-tesla-stock/",
+        "date": ""
+      },
+      {
+        "title": "tesla ceo elon musk: Wall Street\u2019s Dan Ives breaks ranks with Elon Musk, cuts Tesla forecast by nearly 50% in stunning reversal of faith, blames Musk\u2019s moves for the meltdown - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/news/international/us/wall-streets-dan-ives-breaks-ranks-with-elon-musk-cuts-tesla-forecast-by-nearly-50-in-stunning-reversal-of-faith-blames-musks-moves-for-the-meltdown/articleshow/120097477.cms",
+        "date": ""
+      },
+      {
+        "title": "Rental giant Hertz dumps EVs, including Teslas, for gas cars | Reuters",
+        "url": "https://www.reuters.com/business/autos-transportation/hertz-sell-about-20000-evs-us-fleet-2024-01-11/",
+        "date": ""
+      },
+      {
+        "title": "How Hertz's Bet on EVs Exposed US Pain Points and Soft Spots for EVs - Business Insider",
+        "url": "https://www.businessinsider.com/hertz-tesla-ev-gamble-loss-america-pain-points-2025-12",
+        "date": ""
+      },
+      {
+        "title": "Tesla's recalls and maintenance are costing Hertz, per latest earnings | Fortune",
+        "url": "https://fortune.com/2024/04/25/hertz-ev-electric-vehicles-tesla-elon-musk-recall-earnings-rental-cars/",
+        "date": ""
+      },
+      {
+        "title": "Hertz pulls back on EV plans citing Tesla price cuts, repair costs",
+        "url": "https://www.cnbc.com/2023/10/26/hertz-pulls-back-on-ev-plans-citing-tesla-price-cuts-repair-costs.html",
+        "date": ""
+      },
+      {
+        "title": "Waymo vs Tesla Robotaxi: A Verified Comparison (2026) \u00b7 DEPLOY",
+        "url": "https://registry.deploy.report/waymo-vs-tesla",
+        "date": ""
+      },
+      {
+        "title": "How does Tesla Robotaxi compare to Waymo? \u00b7 DEPLOY",
+        "url": "https://deploy.report/explainers/tesla-robotaxi-vs-waymo",
+        "date": ""
+      },
+      {
+        "title": "2025 Was the Year of the Robotaxi: Where Do We Stand Today? | GeneMunster.com",
+        "url": "https://genemunster.com/2025-was-the-year-of-the-robotaxi-where-do-we-stand-today/",
+        "date": ""
+      },
+      {
+        "title": "2025 Was the Year of the Robotaxi: Where Do We Stand Today? | GeneMunster.com",
+        "url": "https://genemunster.com/2025-was-the-year-of-the-robotaxi-where-do-we-stand-today/",
+        "date": ""
+      },
+      {
+        "title": "How far ahead is Waymo today?\n \u2013 New Market Pitch",
+        "url": "https://newmarketpitch.com/blogs/news/autonomous-vehicle-waymo-ahead",
+        "date": ""
+      },
+      {
+        "title": "Tesla BESS business to see 'outsized' tariff impact, CFO says - Energy-Storage.News",
+        "url": "https://www.energy-storage.news/tesla-trade-tariffs-will-have-outsized-impact-on-battery-storage-business-cfo-says/",
+        "date": ""
+      },
+      {
+        "title": "Tesla's only growing business was just kneecapped by Trump's tariffs | Electrek",
+        "url": "https://electrek.co/2025/04/03/tesla-only-growing-business-kneecapped-trump-tariffs/",
+        "date": ""
+      },
+      {
+        "title": "How Tesla and Waymo's radically different robotaxi approaches will shape the industry - CNA",
+        "url": "https://www.channelnewsasia.com/business/how-tesla-and-waymos-radically-different-robotaxi-approaches-will-shape-industry-5319731",
+        "date": ""
+      },
+      {
+        "title": "Tesla\u2019s Energy Generation and Storage Business May Suffer From Trump\u2019s Tariffs -",
+        "url": "https://retailwire.com/teslas-energy-generation-storage-trumps-tariffs/",
+        "date": ""
+      },
+      {
+        "title": "Tesla\u2019s Energy Generation and Storage Business May Suffer From Trump\u2019s Tariffs -",
+        "url": "https://retailwire.com/teslas-energy-generation-storage-trumps-tariffs/",
+        "date": ""
+      },
+      {
+        "title": "Tariffs: Analysis spells out extent of challenge for US BESS industry - Energy-Storage.News",
+        "url": "https://www.energy-storage.news/us-import-tariff-analysis-extent-of-challenge-us-battery-storage-industry/",
+        "date": ""
+      },
+      {
+        "title": "Tesla warns Trump tariffs could leave the company 'exposed' to international retaliation | Fortune",
+        "url": "https://fortune.com/2025/03/14/tesla-warns-trump-administration-tariffs-company-exposed-retaliation/",
+        "date": ""
+      },
+      {
+        "title": "US confirms Tesla (TSLA) is buyer in LG's $4.3B LFP battery deal for Megapack 3 | Electrek",
+        "url": "https://electrek.co/2026/03/17/tesla-lg-energy-solution-4-3-billion-lfp-battery-deal-megapack-confirmed/",
+        "date": ""
+      },
+      {
+        "title": "Tesla's Growth Halted By New Trump Tariffs",
+        "url": "https://bizbrief.ie/news/technology/teslas-fastest-growing-sector-hit-by-new-tariffs-implemented-under-trump-administration/",
+        "date": ""
+      },
+      {
+        "title": "Tesla Model 2 2026: What the SEC Filing Actually Confirms",
+        "url": "https://axis-intelligence.com/tesla-model-2-release-date-specs/",
+        "date": ""
+      },
+      {
+        "title": "Tesla future models: Roadster and affordable EV status",
+        "url": "https://evseekers.com/tesla-future-models/",
+        "date": ""
+      },
+      {
+        "title": "Tesla Model 2 Comeback: Bringing Back Its Affordable EV",
+        "url": "https://autoakhbar.com/tesla-model-2-comeback-ev-2026/",
+        "date": ""
+      },
+      {
+        "title": "Upcoming Tesla Models in the Second Half of 2026 and 2027: Key Launches Beyond the Cybercab Robotaxi - USonwheels.com",
+        "url": "https://usonwheels.com/upcoming-tesla-models-in-the-second-half-of-2026-and-2027-key-launches-beyond-the-cybercab-robotaxi/",
+        "date": ""
+      },
+      {
+        "title": "Tesla Model 2 Release: $25,000 EV Could Launch Soon, Promising Affordable Electric Driving for Millions",
+        "url": "https://fori.us/tesla-model-2-release-price-here/",
+        "date": ""
+      },
+      {
+        "title": "Hedge funds burned by Tesla short bets plot next steps",
+        "url": "https://www.bostonglobe.com/2025/03/19/business/hedge-funds-tesla-short-bets/",
+        "date": ""
+      },
+      {
+        "title": "Tesla Stock Short Sellers Have Made $10 BILLION in 2025. Should You Sell TSLA? - The Globe and Mail",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/F/pressreleases/31678877/tesla-stock-short-sellers-have-made-10-billion-in-2025-should-you-sell-tsla/",
+        "date": ""
+      },
+      {
+        "title": "Tesla Stock Big Short Opportunity, Stock Could Fall to $25, Analyst Says - Business Insider",
+        "url": "https://www.businessinsider.com/tesla-stock-short-bearish-elon-musk-options-trading-markets-tsla-2026-4",
+        "date": ""
+      },
+      {
+        "title": "Tesla Bear Bets Hit Record Low \u2014 But Nvidia Is Building The Autonomy Ecosystem That Could Challenge Its Lead",
+        "url": "https://stocktwits.com/news-articles/markets/equity/tesla-bear-bets-record-low-nvidia-autonomy-ecosystem-challenge-lead/cZ37bkxRIgP",
+        "date": ""
+      },
+      {
+        "title": "Why Shorting Tesla Remains a High-Risk Bet Despite Market Volatility",
+        "url": "https://www.ainvest.com/news/shorting-tesla-remains-high-risk-bet-market-volatility-2601/",
+        "date": ""
+      },
+      {
+        "title": "Why Shorting Tesla Remains a High-Risk Bet Despite Market Volatility",
+        "url": "https://www.ainvest.com/news/shorting-tesla-remains-high-risk-bet-market-volatility-2601/",
+        "date": ""
+      },
+      {
+        "title": "Tesla, Inc. (TSLA): A Bear Case Theory - Insider Monkey",
+        "url": "https://www.insidermonkey.com/blog/tesla-inc-tsla-a-bear-case-theory-3-1556025/",
+        "date": ""
+      },
+      {
+        "title": "Tesla, Inc. (TSLA): A Bear Case Theory - Insider Monkey",
+        "url": "https://www.insidermonkey.com/blog/tesla-inc-tsla-a-bear-case-theory-3-1556025/",
+        "date": ""
+      },
+      {
+        "title": "Tesla, Inc. (TSLA): A Bear Case Theory - Insider Monkey",
+        "url": "https://www.insidermonkey.com/blog/tesla-inc-tsla-a-bear-case-theory-3-1556025/",
+        "date": ""
+      },
+      {
+        "title": "Tesla, Inc. (TSLA): A Bear Case Theory - Insider Monkey",
+        "url": "https://www.insidermonkey.com/blog/tesla-inc-tsla-a-bear-case-theory-3-1556025/",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "cautious",
+    "thesis": "Tesla's current fundamentals are dominated by headwinds: robotaxi commercialization is operationally insignificant and contracting, FSD faces active regulatory and legal risk, energy storage growth is being pressured by tariffs before the LG mitigation arrives, executive departures signal organizational instability, and the new vehicle pipeline lacks confirmed consumer deliveries. The bull case relies on early unsupervised rides and a future battery deal, but the evidence does not yet support a growth inflection.",
+    "drivers": [
+      {
+        "name": "Robotaxi commercialization and fleet scaling",
+        "direction": "headwind",
+        "evidence": "Active unsupervised fleet in Austin is ~20 vehicles and shrinking; Q2 2026 paid miles fell 36% QoQ while Waymo clears ~4 million miles/week; 245 Cybercabs sit parked.",
+        "source": {
+          "title": "Tesla expands 'Robotaxi' to entire Austin metro \u2014 but still has only ~20 vehicles | Electrek",
+          "url": "https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/",
+          "date": ""
+        },
+        "confidence": "high"
+      },
+      {
+        "name": "FSD regulatory and legal risk",
+        "direction": "headwind",
+        "evidence": "NHTSA has multiple open investigations covering millions of vehicles, identified at least 80 FSD traffic-rule violations, and Tesla lost its first wrongful death trial.",
+        "source": {
+          "title": "ODI RESUME",
+          "url": "https://static.nhtsa.gov/odi/inv/2025/INOA-PE25012-19171.pdf",
+          "date": ""
+        },
+        "confidence": "high"
+      },
+      {
+        "name": "Energy storage growth vs tariff exposure",
+        "direction": "headwind",
+        "evidence": "54% tariffs on Chinese battery cells are in effect and CFO warned of adverse impact; LG $4.3B LFP deal starts 2027, so near-term margins are at risk despite 67% YoY revenue growth.",
+        "source": {
+          "title": "US confirms Tesla (TSLA) is buyer in LG's $4.3B LFP battery deal for Megapack 3 | Electrek",
+          "url": "https://electrek.co/2026/03/17/tesla-lg-energy-solution-4-3-billion-lfp-battery-deal-megapack-confirmed/",
+          "date": ""
+        },
+        "confidence": "medium"
+      },
+      {
+        "name": "Management stability and talent retention",
+        "direction": "headwind",
+        "evidence": "Tesla lost 10+ executives in 2025 including heads of Cybertruck, Optimus, battery architecture, and North America/Europe operations.",
+        "source": {
+          "title": "Tesla's Cybertruck chief Siddhant Awasthi departs after eight years | Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/teslas-cybertruck-chief-siddhant-awasthi-departs-after-eight-years-2025-11-10/",
+          "date": ""
+        },
+        "confidence": "high"
+      },
+      {
+        "name": "New vehicle pipeline execution",
+        "direction": "headwind",
+        "evidence": "Cybercab pilot production and 2,500 Model 2 fleet units are progress, but no affordable consumer vehicle is confirmed, Roadster is 12-18 months away, and volume growth depends on repeatedly slipped execution.",
+        "source": {
+          "title": "Tesla Stock Downgraded by Morgan Stanley on Valuation Concerns - Business Insider",
+          "url": "https://www.businessinsider.com/tesla-stock-price-downgrade-morgan-stanley-fsd-optimus-evs-tsla-2025-12",
+          "date": ""
+        },
+        "confidence": "medium"
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "Tesla has demonstrated fully driverless robotaxi operation in Austin, with all 170 monitored rides completed without a safety driver.",
+        "evidence": "Finding 2 states all 170 Tesla Robotaxi rides in Austin monitored by Robotaxi Tracker were unsupervised.",
+        "source": {
+          "title": "Tesla Robotaxis appear to go fully unsupervised in Austin ahead of Cybercab launch | The Verge",
+          "url": "https://www.theverge.com/transportation/982759/tesla-robotaxi-unsupervised-austin-robotaxi-tracker",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Tesla is expanding its robotaxi geofence significantly, from 20 square miles to approximately 245 square miles.",
+        "evidence": "Finding 6 reports the geofence expanded from 20 sq miles to ~245.",
+        "source": {
+          "title": "Tesla Robotaxi Austin: One Year In, What We Know | DevReads",
+          "url": "https://reads.devsecengops.com/blog/tesla-robotaxi-austin-what-one-year-of-real-world-operation-shows",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Tesla's robotaxi pilot now operates in about four markets and is typically cheaper per trip than Waymo, a key competitive advantage.",
+        "evidence": "Finding 31 states the pilot operates in ~4 markets (Austin, Dallas, Houston, SF Bay Area) and is typically cheaper per trip than Waymo.",
+        "source": {
+          "title": "How does Tesla Robotaxi compare to Waymo? \u00b7 DEPLOY",
+          "url": "https://deploy.report/explainers/tesla-robotaxi-vs-waymo",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Tesla's energy storage business achieved a quarterly deployment record of 10 GWh in Q1 2025.",
+        "evidence": "Finding 36 states energy storage deployed 10 GWh, a Q1 record.",
+        "source": {
+          "title": "Tesla's only growing business was just kneecapped by Trump's tariffs | Electrek",
+          "url": "https://electrek.co/2025/04/03/tesla-only-growing-business-kneecapped-trump-tariffs/",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Tesla's energy generation and storage segment revenue grew 67% year over year to $2.73 billion in Q1 2025.",
+        "evidence": "Finding 38 states Q1 2025 energy generation and storage segment revenue was $2.73 billion, up 67% year over year.",
+        "source": {
+          "title": "Tesla\u2019s Energy Generation and Storage Business May Suffer From Trump\u2019s Tariffs -",
+          "url": "https://retailwire.com/teslas-energy-generation-storage-trumps-tariffs/",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Tesla secured a $4.3 billion LFP battery deal with LG to produce cells in Michigan starting 2027, shielding its energy business from tariffs.",
+        "evidence": "Finding 42 states US confirmed Tesla as buyer in LG's $4.3B LFP battery deal; LG to produce cells in Michigan starting 2027 for Megapack 3, shielding energy business from tariffs.",
+        "source": {
+          "title": "US confirms Tesla (TSLA) is buyer in LG's $4.3B LFP battery deal for Megapack 3 | Electrek",
+          "url": "https://electrek.co/2026/03/17/tesla-lg-energy-solution-4-3-billion-lfp-battery-deal-megapack-confirmed/",
+          "date": ""
+        },
+        "strength": "strong"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Tesla's robotaxi service is operationally insignificant and contracting despite geographic expansion.",
+        "evidence": "Active unsupervised fleet in Austin is ~20 vehicles, shrinking despite geofence expansion to entire Austin metro [1]; all 170 monitored rides were unsupervised but the active robotaxi fleet is barely running and shrinking [2][3]; Q2 2026 robotaxi paid miles fell 36% QoQ while Waymo clears roughly 4 ",
+        "source": {
+          "title": "Tesla expands 'Robotaxi' to entire Austin metro \u2014 but still has only ~20 vehicles | Electrek",
+          "url": "https://electrek.co/2026/06/03/tesla-robotaxi-expands-entire-austin-metro-only-20-vehicles/",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Multiple active NHTSA investigations into FSD safety and reporting compliance create significant regulatory risk.",
+        "evidence": "NHTSA opened PE25012 on 10/07/2025 into FSD traffic safety violations; population 2,882,566 vehicles [7]; AQ25002 on 08/19/2025 into compliance with SGO reporting; population 2,600,000 [8]; PE25012 Dec 3 2025 citing 62 complaints, 4 media reports, 14 SGO reports [9]; NHTSA identified at least 80 ins",
+        "source": {
+          "title": "ODI RESUME",
+          "url": "https://static.nhtsa.gov/odi/inv/2025/INOA-PE25012-19171.pdf",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Executive exodus signals operational and strategic instability across key programs.",
+        "evidence": "Cybertruck program head Siddhant Awasthi departed after 8 years [14]; lost top sales, battery, robotics, and chip executives in 2025 after Musk pay package [15]; fired manufacturing VP Omead Afshar after YoY car sales declines [16]; Milan Kovac head of Optimus stepping down [17]; Vineet Mehta head o",
+        "source": {
+          "title": "Tesla's Cybertruck chief Siddhant Awasthi departs after eight years | Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/teslas-cybertruck-chief-siddhant-awasthi-departs-after-eight-years-2025-11-10/",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Wall Street analysts are downgrading Tesla and price targets imply substantial downside.",
+        "evidence": "Morgan Stanley downgraded to Equal Weight, PT $425 implying 3% downside [21]; Guggenheim Sell $175 implying 48% downside [22]; shares slipped >4% after downgrade around $455 [23]; JP Morgan $120, Wells Fargo $130, UBS and Redburn Atlantic cut [24]; Dan Ives cut forecast nearly 50% blaming Musk [25];",
+        "source": {
+          "title": "Tesla Stock Downgraded by Morgan Stanley on Valuation Concerns - Business Insider",
+          "url": "https://www.businessinsider.com/tesla-stock-price-downgrade-morgan-stanley-fsd-optimus-evs-tsla-2025-12",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Hertz's Tesla fleet liquidation reveals weak resale value and high repair costs.",
+        "evidence": "Hertz selling ~20,000 EVs including Teslas citing higher collision/damage expenses; EV demand cooled [26]; Hertz purchased 100,000 Teslas in 2021 for ~$4.2B [27]; Hertz took Q1 $195M hit on Teslas losing value and can't sell fast enough [28]; Hertz slowed EV additions citing Tesla price cuts hurting",
+        "source": {
+          "title": "Rental giant Hertz dumps EVs, including Teslas, for gas cars | Reuters",
+          "url": "https://www.reuters.com/business/autos-transportation/hertz-sell-about-20000-evs-us-fleet-2024-01-11/",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Core automotive revenue and operating income are collapsing.",
+        "evidence": "Q1 2025 automotive revenues fell 20% YoY [35]; Q1 2025 EV deliveries 336,000, 40,000 below consensus [36]; Q1 2025 core EV revenue plunged 20% YoY and fell below 2023 levels [57]; Q1 2025 operating income dropped by two-thirds [58].",
+        "source": {
+          "title": "Tesla BESS business to see 'outsized' tariff impact, CFO says - Energy-Storage.News",
+          "url": "https://www.energy-storage.news/tesla-trade-tariffs-will-have-outsized-impact-on-battery-storage-business-cfo-says/",
+          "date": ""
+        },
+        "severity": "severe"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Robotaxi commercialization and fleet scaling",
+        "bull": "Tesla's Austin robotaxi rides are now fully unsupervised (170 rides over two weeks) and the geofence has expanded to ~245 sq miles across three Texas cities, showing the technology can operate without safety drivers and the service is scaling geographically.",
+        "bull_source": {
+          "title": "Tesla Robotaxis appear to go fully unsupervised in Austin ahead of Cybercab launch | The Verge",
+          "url": "https://www.theverge.com/transportation/982759/tesla-robotaxi-unsupervised-austin-robotaxi-tracker",
+          "date": ""
+        },
+        "bear": "The active unsupervised fleet is only ~20 vehicles and shrinking, Q2 2026 paid miles fell 36% QoQ while Waymo clears ~4 million miles a week, and 245 Cybercabs sit parked with no paying passengers\u2014so Tesla is not closing the gap and has no meaningful robotaxi revenue in sight.",
+        "bear_source": {
+          "title": "Tesla robotaxi reality check 2026: Q2 miles fall 36% | Beyond Tomorrow",
+          "url": "https://beyondtmrw.org/article/tesla-robotaxi-promises-are-clashing-with-reality",
+          "date": ""
+        },
+        "verdict": "The bear wins: unsupervised rides and geofence expansion are real but the fleet is tiny, shrinking, and paid miles are falling, while Waymo is 24\u201336 months ahead. Cybercab production capacity is idle, so scaling is not happening.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "FSD regulatory and legal risk",
+        "bull": "Tesla's ADS incident count (18) is far below Waymo's (~697), and FSD software updates can address the specific traffic-rule violations; NHTSA probes may end with limited recalls rather than restrictions on unsupervised deployment.",
+        "bull_source": {
+          "title": "Tesla 'Robotaxis' are not crashing because they are not running | Electrek",
+          "url": "https://electrek.co/2026/06/16/tesla-robotaxi-clean-crash-record-barely-running/",
+          "date": ""
+        },
+        "bear": "NHTSA has identified at least 80 FSD traffic-rule violations, opened multiple investigations covering millions of vehicles, and Tesla lost its first wrongful death trial\u2014this creates recall, liability, and delay risk that the bull ignores.",
+        "bear_source": {
+          "title": "Feds find more complaints of Tesla's FSD running red lights and crossing lanes | TechCrunch",
+          "url": "https://techcrunch.com/2025/12/05/feds-find-more-complaints-of-teslas-fsd-running-red-lights-and-crossing-lanes/",
+          "date": ""
+        },
+        "verdict": "The bear wins: the volume of documented violations, multiple open probes, and an adverse wrongful death verdict are concrete legal and regulatory headwinds; the bull's lower incident count is not comparable because Tesla's robotaxi fleet is barely operating.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Energy storage growth vs tariff exposure",
+        "bull": "Energy storage revenue grew 67% YoY to $2.73B in Q1 2025, and the confirmed $4.3B LG Michigan LFP deal will shield Megapack from tariffs starting in 2027, giving Tesla a path to high-margin storage growth.",
+        "bull_source": {
+          "title": "US confirms Tesla (TSLA) is buyer in LG's $4.3B LFP battery deal for Megapack 3 | Electrek",
+          "url": "https://electrek.co/2026/03/17/tesla-lg-energy-solution-4-3-billion-lfp-battery-deal-megapack-confirmed/",
+          "date": ""
+        },
+        "bear": "New 54% tariffs on Chinese battery cells are already in effect, the CFO warned tariff policy will adversely impact Tesla, and Wood Mackenzie says storage will be hit hardest\u2014so near-term Powerwall and Megapack costs and margins are at risk before the LG deal ramps.",
+        "bear_source": {
+          "title": "Tesla's Growth Halted By New Trump Tariffs",
+          "url": "https://bizbrief.ie/news/technology/teslas-fastest-growing-sector-hit-by-new-tariffs-implemented-under-trump-administration/",
+          "date": ""
+        },
+        "verdict": "The bear narrowly wins: the LG deal is a real mitigation but starts in 2027, while current 54% tariffs and CFO warnings create immediate margin pressure on the one growing segment.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Management stability and talent retention",
+        "bull": "Executive departures are normal churn after rapid growth, and Tesla's vertical integration, brand loyalty, and AI/robotics mission still attract top engineering talent, as institutional investors acknowledge.",
+        "bull_source": {
+          "title": "Why Shorting Tesla Remains a High-Risk Bet Despite Market Volatility",
+          "url": "https://www.ainvest.com/news/shorting-tesla-remains-high-risk-bet-market-volatility-2601/",
+          "date": ""
+        },
+        "bear": "Tesla has lost its 10th executive in 2025, including the heads of Cybertruck, Optimus, battery architecture, and North America/Europe operations\u2014this is not normal churn but a sign of organizational instability that can delay Cybercab, Model 2, and Optimus.",
+        "bear_source": {
+          "title": "What\u2019s Going On at Tesla? A Wave of Executives Is Heading for the Exits",
+          "url": "https://gizmodo.com/whats-going-on-at-tesla-a-wave-of-executives-is-heading-for-the-exits-2000641630",
+          "date": ""
+        },
+        "verdict": "The bear wins: the breadth and seniority of departures\u201410+ executives across core programs\u2014overwhelms the generic argument that churn is normal, and there is no evidence of successful retention or replacement.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "New vehicle pipeline execution",
+        "bull": "Tesla has begun Cybercab pilot production and delivered 2,500 pilot units of the affordable Model 2 to European fleet operators in early 2026, with mass consumer deliveries targeted for late 2026\u2014concrete execution on the new vehicle pipeline.",
+        "bull_source": {
+          "title": "Tesla Model 2 Comeback: Bringing Back Its Affordable EV",
+          "url": "https://autoakhbar.com/tesla-model-2-comeback-ev-2026/",
+          "date": ""
+        },
+        "bear": "No affordable model is confirmed for consumer delivery, the Roadster is 12\u201318 months from production at best, and Tesla remains dependent on aging Model 3/Y while competitors gain share\u2014pilot units to fleets are not consumer sales.",
+        "bear_source": {
+          "title": "Tesla future models: Roadster and affordable EV status",
+          "url": "https://evseekers.com/tesla-future-models/",
+          "date": ""
+        },
+        "verdict": "The bear narrowly wins: pilot production and fleet deliveries are progress, but the key $25,000 consumer vehicle is still unconfirmed, Roadster is far off, and the volume growth thesis depends on execution that has repeatedly slipped.",
+        "verdict_side": "bear"
+      }
+    ],
+    "falsifiers": [
+      "Robotaxi paid miles return to sequential growth and active unsupervised fleet exceeds 100 vehicles in Austin.",
+      "NHTSA closes all FSD investigations without a recall or operational restriction and no new wrongful death verdicts.",
+      "Energy storage gross margin remains stable or improves in the next two quarters despite 54% tariffs.",
+      "Executive departures stop and key vacant roles (Cybertruck, Optimus, battery) are filled with proven leaders.",
+      "Tesla confirms and begins consumer deliveries of a sub-$30,000 vehicle before end of 2026."
+    ],
+    "confidence": "high",
+    "confidence_why": "All five debated drivers resolved in favor of the bear, with multiple independent sources and concrete metrics (paid miles, NHTSA case numbers, executive departures, tariff rates) supporting the headwinds. The bull evidence is real but early-stage or future-dated, and does not offset current operational and regulatory pressure."
+  },
+  "catalysts": [
+    {
+      "event": "Tesla Q2 2026 earnings report",
+      "window": "Late July 2026",
+      "expected": "Beat/raise: rebound in auto margins, record energy storage revenue, and progress on robotaxi/Cybercab could restore growth narrative and lift shares. Miss/cut: another YoY auto revenue decline, margin compression from tariffs, or weak robotaxi paid-mile growth would intensify bear-case valuation con",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Cybercab pilot production ramp and first paid passenger service",
+      "window": "H2 2026",
+      "expected": "Successful ramp: VIN/production growth accelerates, vehicles carry paying passengers, and Tesla narrows the perceived gap with Waymo, supporting the AI/robotaxi premium. Delay/stall: inventory piles at Gigaf Texas, no commercial paid rides, and fleet stays tiny, undermining the core bull thesis.",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Model 2 / Project Redwood mass consumer deliveries",
+      "window": "Late 2026",
+      "expected": "On-time and priced near $25k: adds volume, stabilizes automotive revenue, and improves investor confidence after executive turnover. Delay or limited rollout: further auto revenue erosion and pressure on growth multiples.",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Next-generation Roadster demonstration",
+      "window": "August 2026",
+      "expected": "Compelling demo and clear production timeline: generates brand buzz, deposits/orders, and distracts from weak core auto trends. Underwhelming demo or further delay: reinforces product-pipeline skepticism and weighs on sentiment.",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "NHTSA FSD/Autopilot investigation outcomes (PE25012, AQ25002, PE24031)",
+      "window": "2H 2026 into 2027",
+      "expected": "No formal recall or limited remedy: allows FSD subscription/revenue growth and robotaxi expansion to continue with modest overhang. Recall, enforcement, or expanded probe: raises compliance costs, limits rollout, damages brand, and creates liability headwinds.",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Tesla Robotaxi unsupervised scaling in Texas and new markets",
+      "window": "Mid-to-late 2026",
+      "expected": "Fleet materially expands, safety drivers are removed, and fares/volume rise: validates Tesla's camera-only approach and re-rates the stock toward AI/robotics. Fleet stays ~20-50 vehicles, supervised rides persist, and paid miles fall: confirms Waymo's 24-36 month lead and erodes the robotaxi narrati",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "LG Energy Solution Michigan LFP battery supply for Megapack 3",
+      "window": "2027 start; contract/qualification updates in 2H 2026",
+      "expected": "On schedule: shifts Megapack cell sourcing out of China, mitigating 54% tariff exposure and protecting energy margins. Delay or qualification issues: energy storage costs rise, Powerwall/Megapack pricing power erodes, and the fast-growing segment faces margin pressure.",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Hertz disposition of Tesla/EV fleet and residual-value impact",
+      "window": "Ongoing through 2026",
+      "expected": "Faster sales completion: removes used-Tesla oversupply and stabilizes resale values. Continued fire sales / large write-downs: depresses used Tesla prices, hurts Tesla's new-car pricing power and finance/lease residuals.",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "deepseek-v4-pro:0813"
+  ],
+  "error": ""
+}

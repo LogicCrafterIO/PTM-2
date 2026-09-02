@@ -1,0 +1,77 @@
+{
+  "ticker": "COHU",
+  "as_of": "2026-08-30T14:32:14.602053+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.95,
+    "eps_d30": 0.58143,
+    "eps_d90": 0.58143,
+    "change_30d_pct": 63.39,
+    "change_90d_pct": 63.39,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": -0.06,
+        "estimate": -0.198,
+        "surprise_pct": 69.7
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.15,
+        "estimate": 0.062,
+        "surprise_pct": -341.94
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.01,
+        "estimate": 0.03143,
+        "surprise_pct": -68.18
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.26,
+        "estimate": 0.13875,
+        "surprise_pct": 87.39
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -63.26
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": 3.32
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": -3.72
+      },
+      {
+        "report_date": "2026-02-17",
+        "move_pct": -1.08
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": 0.21
+      }
+    ],
+    "avg_abs_move_pct": 2.08,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +63.4% over 90 days and +63.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +3.3%, -3.7%, -1.1%, +0.2% (average absolute move 2.1%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -63.3%."
+  ]
+}

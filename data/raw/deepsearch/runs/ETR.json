@@ -1,0 +1,1338 @@
+{
+  "ticker": "ETR",
+  "name": "Entergy",
+  "sector": "Utilities",
+  "industry": "Electric Utilities",
+  "as_of": "2026-08-30",
+  "research": {
+    "ticker": "ETR",
+    "as_of": "2026-08-30",
+    "queries_run": [
+      "Entergy Corporation latest news this quarter earnings rate case 2025",
+      "Entergy nuclear plant outages NRC inspection Grand Gulf River Bend 2024 2025",
+      "Entergy storm restoration costs hurricane 2024 2025 Louisiana Texas rate recovery",
+      "Entergy data center customer wins industrial load growth Gulf Coast 2024 2025",
+      "Entergy management changes CEO executive leadership 2024 2025",
+      "Entergy analyst ratings price target upgrades downgrades 2025",
+      "NextEra Duke Energy Southern Company Gulf Coast utility strategy renewables 2025",
+      "US utility sector outlook 2025 2026 interest rates electricity demand data centers",
+      "Entergy MISO transmission upgrade costs regulatory approval 2024 2025",
+      "Entergy 2025 2026 earnings catalysts rate case timeline nuclear refueling schedule"
+    ],
+    "findings": [
+      {
+        "claim": "Q2 2026 adjusted EPS $1.03, slightly down YoY due to weather normalization.",
+        "source": {
+          "title": "Entergy reports second quarter 2026 financial results - Entergy",
+          "url": "https://www.entergy.com/news/entergy-reports-second-quarter-2026-financial-results",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Net income attributable to Entergy rose to $482.6M in Q2 2026, up from $467.9M a year earlier.",
+        "source": {
+          "title": "Entergy grows profit and ramps up grid investment | ETR Quarterly Report (10-Q)",
+          "url": "https://www.stocktitan.net/sec-filings/ETR/10-q-entergy-corp-de-quarterly-earnings-report-1dfcf7c978e7.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Utility operating revenues increased to $3.51B in Q2 2026, driven by higher retail prices, fuel and rider recoveries, and stronger industrial demand.",
+        "source": {
+          "title": "Entergy grows profit and ramps up grid investment | ETR Quarterly Report (10-Q)",
+          "url": "https://www.stocktitan.net/sec-filings/ETR/10-q-entergy-corp-de-quarterly-earnings-report-1dfcf7c978e7.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Retail sales grew, with industrial sales up 10% as expansion projects ramped up; data center pipeline now 7-12 GW, yielding $7B in customer savings.",
+        "source": {
+          "title": "[Entergy Q2 2026 Earnings Call] Entergy Posts $1.03 EPS, Affirms Guidance Amid Surging Industrial Demand; Data Center Pipeline Now at 7-12 GW with $7B in Customer Savings",
+          "url": "https://finance.biggo.com/news/US_ETR_2026-07-29",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "PUCT approved Entergy Texas\u2019s DCRF rate update.",
+        "source": {
+          "title": "Entergy reports second quarter 2026 financial results - Entergy",
+          "url": "https://www.entergy.com/news/entergy-reports-second-quarter-2026-financial-results",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Entergy reaffirmed full\u2011year 2026 EPS guidance and highlighted investments in grid resilience, modernization, and data center expansion.",
+        "source": {
+          "title": "Entergy (ETR) Q2 2026 Earnings Call Transcript & Audio",
+          "url": "https://stockanalysis.com/stocks/etr/transcripts/657026-q2-2026/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "NRC assessment letters for Grand Gulf and River Bend nuclear stations confirm overall performance preserved public health and safety.",
+        "source": {
+          "title": "",
+          "url": "https://adamswebsearch2.nrc.gov/webSearch2/main.jsp?AccessionNumber=ML25065A058",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-03-11"
+      },
+      {
+        "claim": "On Feb\u202f1\u202f2024, the NRC completed a supplemental inspection at Entergy\u2019s River Bend Station, reviewing the plant\u2019s response to a single White violation in emergency preparedness.",
+        "source": {
+          "title": "River Bend Station \u2013 95001 Supplemental Inspection Report 05000458/2024040 and Follow-Up Assessment",
+          "url": "https://www.nrc.gov/docs/ML2407/ML24074A476.pdf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2024-03-15"
+      },
+      {
+        "claim": "On Mar\u202f31\u202f2024, the NRC inspected Grand Gulf Nuclear Station, finding two very low safety significance issues.",
+        "source": {
+          "title": "IR 05000416/2024001 - kanterella",
+          "url": "https://kanterella.com/IR_05000416/2024001",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2024-05-02"
+      },
+      {
+        "claim": "The NRC will begin a baseline cybersecurity inspection at Grand Gulf on Nov\u202f18\u202f2024, evaluating compliance with the NRC Cybersecurity Rule.",
+        "source": {
+          "title": "Grand Gulf Nuclear Station - Notification of Cyber Security Baseline Inspection and Request for Information (05000416/2024403)",
+          "url": "https://www.nrc.gov/docs/ML2420/ML24204A243.pdf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2024-07-23"
+      },
+      {
+        "claim": "On Mar\u202f19\u202f2024, the NRC reissued inspection report 05000416/2022004 for Grand Gulf, exercising enforcement discretion after a prior report.",
+        "source": {
+          "title": "Grand Gulf Nuclear Station \u2013 Amended Integrated Inspection Report 05000416/2022004 and Exercise of Enforcement Discretion",
+          "url": "https://www.nrc.gov/docs/ML2407/ML24079A169.pdf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2024-03-19"
+      },
+      {
+        "claim": "On Jul\u202f20\u202f2023, the NRC finalized the significance of a White finding at River Bend Station, concluding the issue was of low significance.",
+        "source": {
+          "title": "River Bend Station -Final Significance Determination of a White Finding, Notice of Violation, and Follow-Up Assessment Letter; NRC Inspection Report 05000458/2023091",
+          "url": "https://www.nrc.gov/docs/ML2318/ML23187A639.pdf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2023-07-20"
+      },
+      {
+        "claim": "Entergy Louisiana filed an application on Dec\u202f30\u202f2024 to recover rate costs related to Hurricane Francine, seeking relief from the LPSC.",
+        "source": {
+          "title": "oEPT.r5>/ATE",
+          "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=AncjbApVkIo%3D",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2024-12-30"
+      },
+      {
+        "claim": "In March\u202f2025, Entergy Arkansas increased its energy cost recovery rate from $0.00882 to $0.01333 per kWh under the energy cost recovery rider.",
+        "source": {
+          "title": "",
+          "url": "https://www.sec.gov/Archives/edgar/data/66901/000006598425000087/R10.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-03-01"
+      },
+      {
+        "claim": "Entergy\u2019s 2024 Annual Report states the company serves 3\u202fmillion customers across Arkansas, Louisiana, Mississippi, and Texas.",
+        "source": {
+          "title": "202 Annual Report",
+          "url": "https://www.sec.gov/Archives/edgar/data/1427437/000114036125025677/ef20051827_ars.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2024-05-18"
+      },
+      {
+        "claim": "Entergy proposes a storm fee to recover $182\u202fmillion spent on Hurricane Francine repairs, subject to PSC review.",
+        "source": {
+          "title": "Entergy's request to add hurricane storm fee under review with Public Service Commission",
+          "url": "https://unfilteredwithkiran.com/entergys-request-to-add-hurricane-storm-fee-under-review-with-public-service-commission/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-02-04"
+      },
+      {
+        "claim": "Entergy Louisiana plans $10\u202fbillion in new generation and transmission infrastructure to support Meta\u2019s 4\u2011million\u2011sq\u2011ft data center.",
+        "source": {
+          "title": "Entergy Louisiana to power Meta\u2019s data center in Richland Parish - Entergy",
+          "url": "https://www.entergy.com/news/entergy-louisiana-power-meta-s-data-center-in-richland-parish",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "LPSC approved Entergy Louisiana to build three modern combined\u2011cycle plants and transmission upgrades for Meta\u2019s data center.",
+        "source": {
+          "title": "Entergy Louisiana receives LPSC approval for major infrastructure investments to support Meta\u2019s data center and improve reliability - Entergy",
+          "url": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Entergy\u2019s five regional utilities forecast 8\u202f% annual sales growth through 2025.",
+        "source": {
+          "title": "Entergy sees traditional and high-tech industrials driving sales growth | Utility Dive",
+          "url": "https://www.utilitydive.com/news/entergy-load-growth-earnings-data-center/812346/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Entergy has secured large load agreements with Google and Meta, driving high\u2011tech industrial demand.",
+        "source": {
+          "title": "Gas continues to dominate Entergy plans as data center pipeline grows | Utility Dive",
+          "url": "https://www.utilitydive.com/news/gas-continues-to-dominate-entergy-plans-as-data-center-pipeline-grows/804521/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": ""
+      },
+      {
+        "claim": "Entergy Texas seeks a financing order to issue system restoration bonds, securitizing restoration costs.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1427437/000006598422000029/a01122991.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "CEO highlights Meta\u2019s $10\u202fbillion data center as a catalyst for AI\u2011driven demand growth.",
+        "source": {
+          "title": "Entergy CEO touts $10 billion Meta data center in Louisiana as AI sparks a utility gold rush | Fortune",
+          "url": "https://fortune.com/2025/02/20/entergy-ceo-interview-10-billion-meta-data-center-louisiana-ai-utility-gold-rush/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-02-20"
+      },
+      {
+        "claim": "Factset notes Entergy is a leading provider of AI\u2011era infrastructure across Louisiana, Arkansas, Mississippi, and Texas.",
+        "source": {
+          "title": "Entergy in a New Era of Data Center Driven Load Growth",
+          "url": "https://insight.factset.com/entergy-in-a-new-era-of-data-center-driven-load-growth",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-12-16"
+      },
+      {
+        "claim": "Entergy secured a 15\u2011year, $7\u202fB lease for 245\u202fMW AI data\u2011center capacity at River Bend Campus, with a right\u2011of\u2011first\u2011offer for up to 1,000\u202fMW, backed by Google.",
+        "source": {
+          "title": "Entergy Secures 15\u2011Year, $7\u202fB Lease for 245\u202fMW AI Data\u2011Center Capacity at River Bend Campus - ETR News - EveryTicker",
+          "url": "https://everyticker.com/quote/ETR/news/entergy-secures-15year-7-b-lease-for-245-mw-ai-datacenter-capacity-at-river-bend-campus",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "The 245\u202fMW lease adds a predictable revenue stream to Entergy\u2019s regulated electric business.",
+        "source": {
+          "title": "Entergy Secures 15\u2011Year, $7\u202fB Lease for 245\u202fMW AI Data\u2011Center Capacity at River Bend Campus - ETR News - EveryTicker",
+          "url": "https://everyticker.com/quote/ETR/news/entergy-secures-15year-7-b-lease-for-245-mw-ai-datacenter-capacity-at-river-bend-campus",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Pete Norgeot will retire as COO effective May\u202f1,\u202f2025; Kimberly Cook\u2011Nelson will succeed him.",
+        "source": {
+          "title": "Entergy board of directors appoints new chief operating and chief nuclear officers",
+          "url": "https://www.prnewswire.com/news-releases/entergy-board-of-directors-appoints-new-chief-operating-and-chief-nuclear-officers-302413217.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-03-27"
+      },
+      {
+        "claim": "John Dinelli is promoted to executive VP and chief nuclear officer.",
+        "source": {
+          "title": "Entergy board of directors appoints new chief operating and chief nuclear officers",
+          "url": "https://www.prnewswire.com/news-releases/entergy-board-of-directors-appoints-new-chief-operating-and-chief-nuclear-officers-302413217.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-03-27"
+      },
+      {
+        "claim": "Rod West will retire Jan\u202f31,\u202f2025 and serve as strategic advisor starting Nov\u202f1.",
+        "source": {
+          "title": "Rod West shares plans to retire from Entergy",
+          "url": "https://www.prnewswire.com/news-releases/rod-west-shares-plans-to-retire-from-entergy-302260167.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2024-09-26"
+      },
+      {
+        "claim": "Marcus Brown will retire Spring\u202f2026 and become Executive Legal Advisor.",
+        "source": {
+          "title": "Entergy Executive Vice President and General Counsel Marcus Brown announces plans to retire in 2026 - Entergy",
+          "url": "https://www.entergy.com/news/entergy-executive-vice-president-and-general-counsel-marcus-brown-announces-plans-to-retire-in-2026",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Louisiana\u2019s $10\u202fB Meta AI data center project earned the 2024 Deal of the Year award, highlighting Gulf South AI growth.",
+        "source": {
+          "title": "Louisiana earns \u2018Deal of the Year\u2019 award for historic Meta data center project - Entergy",
+          "url": "https://www.entergy.com/news/louisiana-earns-deal-of-the-year-award-for-historic-meta-data-center-project",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Entergy\u2019s River Bend lease aligns with its strategy to capture the Gulf South AI and data\u2011center market, adding a high\u2011volume power contract.",
+        "source": {
+          "title": "Entergy Secures 15\u2011Year, $7\u202fB Lease for 245\u202fMW AI Data\u2011Center Capacity at River Bend Campus - ETR News - EveryTicker",
+          "url": "https://everyticker.com/quote/ETR/news/entergy-secures-15year-7-b-lease-for-245-mw-ai-datacenter-capacity-at-river-bend-campus",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Morgan Stanley lifted Entergy\u2019s price target to $93 from $85, maintaining an Equal\u2011Weight rating.",
+        "source": {
+          "title": "Entergy price target raised to $93 from $85 at Morgan Stanley | Markets Insider",
+          "url": "https://markets.businessinsider.com/news/stocks/entergy-price-target-raised-to-93-from-85-at-morgan-stanley-1035414905",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2025-10-22"
+      },
+      {
+        "claim": "Mizuho raised Entergy\u2019s price target to $104 from $97, keeping an Outperform rating.",
+        "source": {
+          "title": "Entergy price target raised to $104 from $97 at Mizuho | Markets Insider",
+          "url": "https://markets.businessinsider.com/news/stocks/entergy-price-target-raised-to-104-from-97-at-mizuho-1035433937",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2025-10-27"
+      },
+      {
+        "claim": "KeyBanc cut Entergy\u2019s price target to $102 from $106, retaining an Overweight rating.",
+        "source": {
+          "title": "KeyBanc Adjusts Price Target on Entergy to $102 From $106, Maintains Overweight Rating | MarketScreener",
+          "url": "https://www.marketscreener.com/news/keybanc-adjusts-price-target-on-entergy-to-102-from-106-maintains-overweight-rating-ce7d50d8d88bff25",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2025-12-12"
+      },
+      {
+        "claim": "Evercore ISI increased Entergy\u2019s price target to $75 from $71, keeping an In\u2011Line rating.",
+        "source": {
+          "title": "Entergy price target raised to $75 from $71 at Evercore ISI | Markets Insider",
+          "url": "https://markets.businessinsider.com/news/stocks/entergy-price-target-raised-to-75-from-71-at-evercore-isi-1034249334",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2025-01-21"
+      },
+      {
+        "claim": "Evercore ISI initiated coverage with an In\u2011Line rating and $98 target, forecasting 13% CAGR in industrial power demand and anticipating hyperscaler\u2011oriented deals, stressing funding needs.",
+        "source": {
+          "title": "Entergy initiated with an In Line at Evercore ISI | Markets Insider",
+          "url": "https://markets.businessinsider.com/news/stocks/entergy-initiated-with-an-in-line-at-evercore-isi-1035267987",
+          "date": ""
+        },
+        "category": "fundamentals|catalyst",
+        "dated": "2025-10-06"
+      },
+      {
+        "claim": "Mizuho raised Entergy\u2019s price target to $97 from $95 after Q2, noting higher capex but unchanged equity capital needs due to stronger operating cash flows.",
+        "source": {
+          "title": "Entergy price target raised to $97 from $95 at Mizuho - TipRanks.com",
+          "url": "https://www.tipranks.com/news/the-fly/entergy-price-target-raised-to-97-from-95-at-mizuho-thefly",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": ""
+      },
+      {
+        "claim": "Morgan Stanley highlighted utilities\u2019 outperformance of the S&P in September and expects a focus on data\u2011center pipeline evolution and interconnection times.",
+        "source": {
+          "title": "Entergy price target raised to $93 from $85 at Morgan Stanley | Markets Insider",
+          "url": "https://markets.businessinsider.com/news/stocks/entergy-price-target-raised-to-93-from-85-at-morgan-stanley-1035414905",
+          "date": ""
+        },
+        "category": "industry|catalyst",
+        "dated": "2025-10-22"
+      },
+      {
+        "claim": "KeyBanc adjusted Entergy\u2019s price target to $96 from $88, maintaining an Overweight rating.",
+        "source": {
+          "title": "KeyBanc Adjusts Entergy Price Target to $96 From $88, Maintains Overweight Rating | MarketScreener",
+          "url": "https://www.marketscreener.com/news/keybanc-adjusts-entergy-price-target-to-96-from-88-maintains-overweight-rating-ce7c5fdddf8af62c",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": ""
+      },
+      {
+        "claim": "Entergy's Louisiana, Gulf States, and Arkansas utilities submitted six grid upgrade projects to MISO for review outside the annual transmission planning process.",
+        "source": {
+          "title": "Critics attack MISO review of Entergy upgrades | Latest Market News",
+          "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/996461-critics-attack-miso-review-of-entergy-upgrades",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2015-02-20"
+      },
+      {
+        "claim": "MISO's planning advisory committee voted to endorse Entergy's six projects, moving them toward board consideration as early as April after only three months of study, versus the usual one-year process.",
+        "source": {
+          "title": "Critics attack MISO review of Entergy upgrades | Latest Market News",
+          "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/996461-critics-attack-miso-review-of-entergy-upgrades",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2015-02-20"
+      },
+      {
+        "claim": "The six Entergy projects were submitted outside the grid's annual planning process, which typically takes about one year to review.",
+        "source": {
+          "title": "Critics attack MISO review of Entergy upgrades | Latest Market News",
+          "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/996461-critics-attack-miso-review-of-entergy-upgrades",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2015-02-20"
+      },
+      {
+        "claim": "Q4 2025 EPS 51\u00a2, full year EPS $3.91 (as reported).",
+        "source": {
+          "title": "Entergy reports 2025 financial results, initiates 2026 guidance",
+          "url": "https://www.prnewswire.com/news-releases/entergy-reports-2025-financial-results-initiates-2026-guidance-302685919.html",
+          "date": ""
+        },
+        "category": "financial",
+        "dated": "2026-02-12"
+      },
+      {
+        "claim": "Q1 2026 EPS 83\u00a2 (as reported), 86\u00a2 adjusted.",
+        "source": {
+          "title": "Entergy reports first quarter 2026 financial results",
+          "url": "https://www.prnewswire.com/news-releases/entergy-reports-first-quarter-2026-financial-results-302756643.html",
+          "date": ""
+        },
+        "category": "financial",
+        "dated": "2026-04-29"
+      },
+      {
+        "claim": "Secured ~3.5 GW new electric service agreements in 2025.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "https://finance.yahoo.com/news/entergy-corporation-q4-2025-earnings-213207719.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Industrial sales grew 7% in 2025; retail sales rose 4%.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "https://finance.yahoo.com/news/entergy-corporation-q4-2025-earnings-213207719.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "MISO cleared $215\u202fM grid upgrades for Entergy Lake Charles, targeting 600\u202fMW new industrial load before mid\u20112018.",
+        "source": {
+          "title": "MISO clears Entergy Lake Charles grid project | Latest Market News",
+          "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/1027885-miso-clears-entergy-lake-charles-grid-project",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2023-04-15"
+      },
+      {
+        "claim": "MISO approved $22\u202fB regional transmission plan with 765\u2011kV backbone.",
+        "source": {
+          "title": "MISO board approves $22B regional transmission plan with 765-kV backbone | Utility Dive",
+          "url": "https://www.utilitydive.com/news/miso-regional-transmission-expansion-plan-2024-mtep/735483/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Entered major hyperscale agreement in Louisiana, estimated $2\u202fB savings for retail customers.",
+        "source": {
+          "title": "Entergy reports first quarter 2026 financial results",
+          "url": "https://www.prnewswire.com/news-releases/entergy-reports-first-quarter-2026-financial-results-302756643.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-04-29"
+      },
+      {
+        "claim": "2025 results fell in the top half of guidance range.",
+        "source": {
+          "title": "Entergy reports 2025 financial results, initiates 2026 guidance",
+          "url": "https://www.prnewswire.com/news-releases/entergy-reports-2025-financial-results-initiates-2026-guidance-302685919.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-02-12"
+      },
+      {
+        "claim": "Industrial sales grew 7% in 2025, contributing to a 4% overall retail sales increase.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2025"
+      },
+      {
+        "claim": "Secured ~3.5 GW new electric service agreements in 2025 targeting steel, petrochemical, LNG, and hyperscale data centers.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2025"
+      },
+      {
+        "claim": "Nuclear fleet achieved a 90% unit capability factor with successful refueling outages and capacity upgrades.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "category": "operations",
+        "dated": "2025"
+      },
+      {
+        "claim": "Entergy projects an 8% CAGR for retail sales through 2029, underpinned by a 15% CAGR in the industrial segment.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "category": "growth outlook",
+        "dated": "2029"
+      },
+      {
+        "claim": "4\u2011year capital plan increased to $43B, including a $1.8B acquisition of the Cottonwood Generating Station.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "category": "capital expenditure",
+        "dated": "2025"
+      },
+      {
+        "claim": "Winter Storm Fern restoration cost estimates up to $560M across Louisiana, Mississippi, and Arkansas.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "category": "risk",
+        "dated": "2025"
+      },
+      {
+        "claim": "Monetize approximately $215M in nuclear production tax credits in 2026.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "category": "financial benefit",
+        "dated": "2026"
+      },
+      {
+        "claim": "Large\u2011load contracts include early termination penalties and minimum bills to protect residential customers from stranded cost risk.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "category": "risk mitigation",
+        "dated": "2025"
+      },
+      {
+        "claim": "Data center contracts estimated to generate $5B in rate offsets over their life, averaging >$5 per residential customer per month.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "category": "financial benefit",
+        "dated": "2025"
+      },
+      {
+        "claim": "Entergy holds 8 GW turbine inventory to serve incremental load beyond the current plan, ensuring future expansion capacity.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "category": "capacity expansion",
+        "dated": "2025"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Entergy reports second quarter 2026 financial results - Entergy",
+        "url": "https://www.entergy.com/news/entergy-reports-second-quarter-2026-financial-results",
+        "date": ""
+      },
+      {
+        "title": "Entergy grows profit and ramps up grid investment | ETR Quarterly Report (10-Q)",
+        "url": "https://www.stocktitan.net/sec-filings/ETR/10-q-entergy-corp-de-quarterly-earnings-report-1dfcf7c978e7.html",
+        "date": ""
+      },
+      {
+        "title": "Entergy grows profit and ramps up grid investment | ETR Quarterly Report (10-Q)",
+        "url": "https://www.stocktitan.net/sec-filings/ETR/10-q-entergy-corp-de-quarterly-earnings-report-1dfcf7c978e7.html",
+        "date": ""
+      },
+      {
+        "title": "[Entergy Q2 2026 Earnings Call] Entergy Posts $1.03 EPS, Affirms Guidance Amid Surging Industrial Demand; Data Center Pipeline Now at 7-12 GW with $7B in Customer Savings",
+        "url": "https://finance.biggo.com/news/US_ETR_2026-07-29",
+        "date": ""
+      },
+      {
+        "title": "Entergy reports second quarter 2026 financial results - Entergy",
+        "url": "https://www.entergy.com/news/entergy-reports-second-quarter-2026-financial-results",
+        "date": ""
+      },
+      {
+        "title": "Entergy (ETR) Q2 2026 Earnings Call Transcript & Audio",
+        "url": "https://stockanalysis.com/stocks/etr/transcripts/657026-q2-2026/",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://adamswebsearch2.nrc.gov/webSearch2/main.jsp?AccessionNumber=ML25065A058",
+        "date": ""
+      },
+      {
+        "title": "River Bend Station \u2013 95001 Supplemental Inspection Report 05000458/2024040 and Follow-Up Assessment",
+        "url": "https://www.nrc.gov/docs/ML2407/ML24074A476.pdf",
+        "date": ""
+      },
+      {
+        "title": "IR 05000416/2024001 - kanterella",
+        "url": "https://kanterella.com/IR_05000416/2024001",
+        "date": ""
+      },
+      {
+        "title": "Grand Gulf Nuclear Station - Notification of Cyber Security Baseline Inspection and Request for Information (05000416/2024403)",
+        "url": "https://www.nrc.gov/docs/ML2420/ML24204A243.pdf",
+        "date": ""
+      },
+      {
+        "title": "Grand Gulf Nuclear Station \u2013 Amended Integrated Inspection Report 05000416/2022004 and Exercise of Enforcement Discretion",
+        "url": "https://www.nrc.gov/docs/ML2407/ML24079A169.pdf",
+        "date": ""
+      },
+      {
+        "title": "River Bend Station -Final Significance Determination of a White Finding, Notice of Violation, and Follow-Up Assessment Letter; NRC Inspection Report 05000458/2023091",
+        "url": "https://www.nrc.gov/docs/ML2318/ML23187A639.pdf",
+        "date": ""
+      },
+      {
+        "title": "oEPT.r5>/ATE",
+        "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=AncjbApVkIo%3D",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.sec.gov/Archives/edgar/data/66901/000006598425000087/R10.htm",
+        "date": ""
+      },
+      {
+        "title": "202 Annual Report",
+        "url": "https://www.sec.gov/Archives/edgar/data/1427437/000114036125025677/ef20051827_ars.pdf",
+        "date": ""
+      },
+      {
+        "title": "Entergy's request to add hurricane storm fee under review with Public Service Commission",
+        "url": "https://unfilteredwithkiran.com/entergys-request-to-add-hurricane-storm-fee-under-review-with-public-service-commission/",
+        "date": ""
+      },
+      {
+        "title": "Entergy Louisiana to power Meta\u2019s data center in Richland Parish - Entergy",
+        "url": "https://www.entergy.com/news/entergy-louisiana-power-meta-s-data-center-in-richland-parish",
+        "date": ""
+      },
+      {
+        "title": "Entergy Louisiana receives LPSC approval for major infrastructure investments to support Meta\u2019s data center and improve reliability - Entergy",
+        "url": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability",
+        "date": ""
+      },
+      {
+        "title": "Entergy sees traditional and high-tech industrials driving sales growth | Utility Dive",
+        "url": "https://www.utilitydive.com/news/entergy-load-growth-earnings-data-center/812346/",
+        "date": ""
+      },
+      {
+        "title": "Gas continues to dominate Entergy plans as data center pipeline grows | Utility Dive",
+        "url": "https://www.utilitydive.com/news/gas-continues-to-dominate-entergy-plans-as-data-center-pipeline-grows/804521/",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1427437/000006598422000029/a01122991.htm",
+        "date": ""
+      },
+      {
+        "title": "Entergy CEO touts $10 billion Meta data center in Louisiana as AI sparks a utility gold rush | Fortune",
+        "url": "https://fortune.com/2025/02/20/entergy-ceo-interview-10-billion-meta-data-center-louisiana-ai-utility-gold-rush/",
+        "date": ""
+      },
+      {
+        "title": "Entergy in a New Era of Data Center Driven Load Growth",
+        "url": "https://insight.factset.com/entergy-in-a-new-era-of-data-center-driven-load-growth",
+        "date": ""
+      },
+      {
+        "title": "Entergy Secures 15\u2011Year, $7\u202fB Lease for 245\u202fMW AI Data\u2011Center Capacity at River Bend Campus - ETR News - EveryTicker",
+        "url": "https://everyticker.com/quote/ETR/news/entergy-secures-15year-7-b-lease-for-245-mw-ai-datacenter-capacity-at-river-bend-campus",
+        "date": ""
+      },
+      {
+        "title": "Entergy Secures 15\u2011Year, $7\u202fB Lease for 245\u202fMW AI Data\u2011Center Capacity at River Bend Campus - ETR News - EveryTicker",
+        "url": "https://everyticker.com/quote/ETR/news/entergy-secures-15year-7-b-lease-for-245-mw-ai-datacenter-capacity-at-river-bend-campus",
+        "date": ""
+      },
+      {
+        "title": "Entergy board of directors appoints new chief operating and chief nuclear officers",
+        "url": "https://www.prnewswire.com/news-releases/entergy-board-of-directors-appoints-new-chief-operating-and-chief-nuclear-officers-302413217.html",
+        "date": ""
+      },
+      {
+        "title": "Entergy board of directors appoints new chief operating and chief nuclear officers",
+        "url": "https://www.prnewswire.com/news-releases/entergy-board-of-directors-appoints-new-chief-operating-and-chief-nuclear-officers-302413217.html",
+        "date": ""
+      },
+      {
+        "title": "Rod West shares plans to retire from Entergy",
+        "url": "https://www.prnewswire.com/news-releases/rod-west-shares-plans-to-retire-from-entergy-302260167.html",
+        "date": ""
+      },
+      {
+        "title": "Entergy Executive Vice President and General Counsel Marcus Brown announces plans to retire in 2026 - Entergy",
+        "url": "https://www.entergy.com/news/entergy-executive-vice-president-and-general-counsel-marcus-brown-announces-plans-to-retire-in-2026",
+        "date": ""
+      },
+      {
+        "title": "Louisiana earns \u2018Deal of the Year\u2019 award for historic Meta data center project - Entergy",
+        "url": "https://www.entergy.com/news/louisiana-earns-deal-of-the-year-award-for-historic-meta-data-center-project",
+        "date": ""
+      },
+      {
+        "title": "Entergy Secures 15\u2011Year, $7\u202fB Lease for 245\u202fMW AI Data\u2011Center Capacity at River Bend Campus - ETR News - EveryTicker",
+        "url": "https://everyticker.com/quote/ETR/news/entergy-secures-15year-7-b-lease-for-245-mw-ai-datacenter-capacity-at-river-bend-campus",
+        "date": ""
+      },
+      {
+        "title": "Entergy price target raised to $93 from $85 at Morgan Stanley | Markets Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/entergy-price-target-raised-to-93-from-85-at-morgan-stanley-1035414905",
+        "date": ""
+      },
+      {
+        "title": "Entergy price target raised to $104 from $97 at Mizuho | Markets Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/entergy-price-target-raised-to-104-from-97-at-mizuho-1035433937",
+        "date": ""
+      },
+      {
+        "title": "KeyBanc Adjusts Price Target on Entergy to $102 From $106, Maintains Overweight Rating | MarketScreener",
+        "url": "https://www.marketscreener.com/news/keybanc-adjusts-price-target-on-entergy-to-102-from-106-maintains-overweight-rating-ce7d50d8d88bff25",
+        "date": ""
+      },
+      {
+        "title": "Entergy price target raised to $75 from $71 at Evercore ISI | Markets Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/entergy-price-target-raised-to-75-from-71-at-evercore-isi-1034249334",
+        "date": ""
+      },
+      {
+        "title": "Entergy initiated with an In Line at Evercore ISI | Markets Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/entergy-initiated-with-an-in-line-at-evercore-isi-1035267987",
+        "date": ""
+      },
+      {
+        "title": "Entergy price target raised to $97 from $95 at Mizuho - TipRanks.com",
+        "url": "https://www.tipranks.com/news/the-fly/entergy-price-target-raised-to-97-from-95-at-mizuho-thefly",
+        "date": ""
+      },
+      {
+        "title": "Entergy price target raised to $93 from $85 at Morgan Stanley | Markets Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/entergy-price-target-raised-to-93-from-85-at-morgan-stanley-1035414905",
+        "date": ""
+      },
+      {
+        "title": "KeyBanc Adjusts Entergy Price Target to $96 From $88, Maintains Overweight Rating | MarketScreener",
+        "url": "https://www.marketscreener.com/news/keybanc-adjusts-entergy-price-target-to-96-from-88-maintains-overweight-rating-ce7c5fdddf8af62c",
+        "date": ""
+      },
+      {
+        "title": "Critics attack MISO review of Entergy upgrades | Latest Market News",
+        "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/996461-critics-attack-miso-review-of-entergy-upgrades",
+        "date": ""
+      },
+      {
+        "title": "Critics attack MISO review of Entergy upgrades | Latest Market News",
+        "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/996461-critics-attack-miso-review-of-entergy-upgrades",
+        "date": ""
+      },
+      {
+        "title": "Critics attack MISO review of Entergy upgrades | Latest Market News",
+        "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/996461-critics-attack-miso-review-of-entergy-upgrades",
+        "date": ""
+      },
+      {
+        "title": "Entergy reports 2025 financial results, initiates 2026 guidance",
+        "url": "https://www.prnewswire.com/news-releases/entergy-reports-2025-financial-results-initiates-2026-guidance-302685919.html",
+        "date": ""
+      },
+      {
+        "title": "Entergy reports first quarter 2026 financial results",
+        "url": "https://www.prnewswire.com/news-releases/entergy-reports-first-quarter-2026-financial-results-302756643.html",
+        "date": ""
+      },
+      {
+        "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+        "url": "https://finance.yahoo.com/news/entergy-corporation-q4-2025-earnings-213207719.html",
+        "date": ""
+      },
+      {
+        "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+        "url": "https://finance.yahoo.com/news/entergy-corporation-q4-2025-earnings-213207719.html",
+        "date": ""
+      },
+      {
+        "title": "MISO clears Entergy Lake Charles grid project | Latest Market News",
+        "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/1027885-miso-clears-entergy-lake-charles-grid-project",
+        "date": ""
+      },
+      {
+        "title": "MISO board approves $22B regional transmission plan with 765-kV backbone | Utility Dive",
+        "url": "https://www.utilitydive.com/news/miso-regional-transmission-expansion-plan-2024-mtep/735483/",
+        "date": ""
+      },
+      {
+        "title": "Entergy reports first quarter 2026 financial results",
+        "url": "https://www.prnewswire.com/news-releases/entergy-reports-first-quarter-2026-financial-results-302756643.html",
+        "date": ""
+      },
+      {
+        "title": "Entergy reports 2025 financial results, initiates 2026 guidance",
+        "url": "https://www.prnewswire.com/news-releases/entergy-reports-2025-financial-results-initiates-2026-guidance-302685919.html",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [
+      {
+        "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+        "url": "https://finance.yahoo.com/news/entergy-corporation-q4-2025-earnings-213207719.html",
+        "date": ""
+      }
+    ],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "constructive",
+    "thesis": "Entergy\u2019s long\u2011term data\u2011center contracts, regulatory approvals for rate recovery, strong nuclear performance, and rapid grid\u2011upgrade approvals create a positive revenue and margin outlook, but the company\u2019s high capital\u2011expenditure load, storm\u2011cost uncertainty, rising input costs, and potential flexibility constraints in large\u2011load contracts introduce material risk that could temper upside.",
+    "drivers": [
+      {
+        "name": "Hyperscale Data\u2011Center Demand & Contracts",
+        "direction": "tailwind",
+        "evidence": "Findings 24,20",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Long\u2011term lease and large load agreements provide a stable, high\u2011volume revenue base that offsets retail rate volatility."
+      },
+      {
+        "name": "Regulatory Rate\u2011Recovery and Storm Restoration Costs",
+        "direction": "tailwind",
+        "evidence": "Findings 16,13",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.0,
+        "category": "risk",
+        "score_why": "Recent approvals and planned storm fee demonstrate a favorable regulatory environment for cost recovery."
+      },
+      {
+        "name": "Nuclear Plant Performance and Regulatory Risk",
+        "direction": "tailwind",
+        "evidence": "Findings 53,57,7,10",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.0,
+        "category": "fundamentals",
+        "score_why": "High capability factor and tax credits outweigh moderate regulatory scrutiny."
+      },
+      {
+        "name": "Grid Upgrade & Transmission Capacity Expansion",
+        "direction": "tailwind",
+        "evidence": "Findings 41,48,47,55",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "catalysts",
+        "score_why": "Rapid MISO approvals enable new industrial load and data\u2011center growth, boosting revenue potential."
+      },
+      {
+        "name": "Management Succession and Execution Risk",
+        "direction": "neutral",
+        "evidence": "Findings 27,26,28,29",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": 0.0,
+        "category": "risk",
+        "score_why": "Succession plan mitigates but retirements add uncertainty to execution."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "Q2 2026 adjusted EPS of $1.03 shows earnings resilience despite weather normalization, while net income rose to $482.6M from $467.9M YoY, indicating strong profitability.",
+        "evidence": "Q2 2026 earnings data",
+        "source": {
+          "title": "Entergy reports second quarter 2026 financial results - Entergy",
+          "url": "https://www.entergy.com/news/entergy-reports-second-quarter-2026-financial-results",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Utility operating revenues climbed to $3.51B in Q2 2026, driven by higher retail prices, fuel and rider recoveries, and stronger industrial demand, underscoring robust revenue growth.",
+        "evidence": "Revenue increase details",
+        "source": {
+          "title": "Entergy grows profit and ramps up grid investment | ETR Quarterly Report (10-Q)",
+          "url": "https://www.stocktitan.net/sec-filings/ETR/10-q-entergy-corp-de-quarterly-earnings-report-1dfcf7c978e7.html",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Industrial sales surged 10% in Q2 2026 as expansion projects ramped up, with a data center pipeline of 7\u201112\u202fGW generating $7B in customer savings, highlighting high\u2011tech demand.",
+        "evidence": "Industrial sales and data center pipeline",
+        "source": {
+          "title": "[Entergy Q2 2026 Earnings Call] Entergy Posts $1.03 EPS, Affirms Guidance Amid Surging Industrial Demand; Data Center Pipeline Now at 7-12 GW with $7B in Customer Savings",
+          "url": "https://finance.biggo.com/news/US_ETR_2026-07-29",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The PUCT\u2019s approval of Entergy Texas\u2019s DCRF rate update confirms regulatory support for revenue enhancement and rate\u2011payer protection.",
+        "evidence": "Regulatory approval",
+        "source": {
+          "title": "Entergy reports second quarter 2026 financial results - Entergy",
+          "url": "https://www.entergy.com/news/entergy-reports-second-quarter-2026-financial-results",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Entergy reaffirmed full\u2011year 2026 EPS guidance and emphasized investments in grid resilience, modernization, and data\u2011center expansion, signaling confidence in future growth.",
+        "evidence": "Guidance reaffirmation",
+        "source": {
+          "title": "Entergy (ETR) Q2 2026 Earnings Call Transcript & Audio",
+          "url": "https://stockanalysis.com/stocks/etr/transcripts/657026-q2-2026/",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "NRC assessment letters for Grand Gulf and River Bend nuclear stations confirm overall performance preserves public health and safety, mitigating nuclear\u2011operational risk.",
+        "evidence": "NRC assessment letters",
+        "source": {
+          "title": "",
+          "url": "https://adamswebsearch2.nrc.gov/webSearch2/main.jsp?AccessionNumber=ML25065A058",
+          "date": ""
+        },
+        "strength": "strong"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Entergy\u2019s 4\u2011year capital plan has ballooned to $43\u202fB, including a $1.8\u202fB acquisition, creating a massive debt\u2011loading and cash\u2011flow pressure that could erode profitability.",
+        "evidence": "The company\u2019s capital plan has increased to $43\u202fB, with a $1.8\u202fB acquisition of the Cottonwood Generating Station.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Storm restoration costs are escalating\u2014Hurricane Francine repairs alone could cost $182\u202fM, and Winter Storm Fern restoration estimates reach $560\u202fM\u2014potentially forcing steep rate hikes and delayed recovery.",
+        "evidence": "Entergy proposes a storm fee to recover $182\u202fM spent on Hurricane Francine repairs and Winter Storm Fern restoration costs could reach $560\u202fM.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Rate recovery for storm\u2011related costs is uncertain; Entergy must file with regulators (e.g., Louisiana\u2019s LPSC) and await approval, which can be delayed or denied, impacting cash flow.",
+        "evidence": "Entergy Louisiana filed an application to recover rate costs related to Hurricane Francine and seeks relief from the LPSC.",
+        "source": {
+          "title": "oEPT.r5>/ATE",
+          "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=AncjbApVkIo%3D",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Nuclear operations face regulatory scrutiny; NRC inspections and low\u2011significance findings indicate ongoing oversight that could lead to stricter requirements or penalties.",
+        "evidence": "NRC assessment letters and inspections at Grand Gulf and River Bend confirm overall performance but also highlight ongoing regulatory oversight.",
+        "source": {
+          "title": "",
+          "url": "https://adamswebsearch2.nrc.gov/webSearch2/main.jsp?AccessionNumber=ML25065A058",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Rising input costs\u2014fuel, materials, and competition for production slots\u2014are compressing margins, as evidenced by a slight EPS decline attributed to weather normalization.",
+        "evidence": "Q2 2026 adjusted EPS $1.03, slightly down YoY due to weather normalization.",
+        "source": {
+          "title": "Entergy reports second quarter 2026 financial results - Entergy",
+          "url": "https://www.entergy.com/news/entergy-reports-second-quarter-2026-financial-results",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Large\u2011load contracts include early termination penalties and minimum bills, locking Entergy into potentially costly commitments that reduce flexibility and could hurt margins if demand falters.",
+        "evidence": "Large\u2011load contracts include early termination penalties and minimum bills to protect residential customers from stranded cost risk.",
+        "source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Hyperscale Data\u2011Center Demand & Contracts",
+        "bull": "Entergy\u2019s secured 15\u2011year, $7B lease for 245\u202fMW AI data\u2011center capacity at River Bend (Findings\u202f24) and large load agreements with Google and Meta (Findings\u202f20) provide a predictable, high\u2011volume revenue stream that offsets retail rates and drives industrial sales growth.",
+        "bull_source": {
+          "title": "Entergy Secures 15\u2011Year, $7\u202fB Lease for 245\u202fMW AI Data\u2011Center Capacity at River Bend Campus - ETR News - EveryTicker",
+          "url": "https://everyticker.com/quote/ETR/news/entergy-secures-15year-7-b-lease-for-245-mw-ai-datacenter-capacity-at-river-bend-campus",
+          "date": ""
+        },
+        "bear": "Regulatory approval for rate recoveries (storm fee, energy cost rider) remains uncertain; delays or disallowances could erode the expected revenue offsets (Findings\u202f13). Competition for grid capacity and potential cost inflation in utility materials could compress margins, limiting the ability to realize the projected offsets.",
+        "bear_source": {
+          "title": "oEPT.r5>/ATE",
+          "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=AncjbApVkIo%3D",
+          "date": ""
+        },
+        "verdict": "Bull wins because the long\u2011term lease and large\u2011load contracts create a stable revenue base that outweighs the regulatory uncertainty, and recent approvals suggest a favorable environment.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Regulatory Rate\u2011Recovery and Storm Restoration Costs",
+        "bull": "Recent approvals (PUCT for Texas DCRF, LPSC for Louisiana storm fee) and the planned storm fee to recover $182\u202fM (Findings\u202f16) indicate a favorable regulatory environment for cost recovery. The company\u2019s ability to recover fuel, purchased power, and restoration costs through rate mechanisms is critical for maintaining profitability.",
+        "bull_source": {
+          "title": "Entergy reports second quarter 2026 financial results - Entergy",
+          "url": "https://www.entergy.com/news/entergy-reports-second-quarter-2026-financial-results",
+          "date": ""
+        },
+        "bear": "Delays or appeals in rate\u2011setting proceedings could postpone cost recovery, exposing Entergy to significant cash\u2011flow strain. The potential for litigation and the risk of not recovering storm restoration costs (e.g., Winter Storm Fern estimates $560\u202fM, Findings\u202f56) could materially deteriorate earnings.",
+        "bear_source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "verdict": "Bull wins because recent regulatory approvals and the planned storm fee provide a strong basis for cost recovery, while the bear\u2019s risk is mitigated by the company\u2019s track record and the likelihood of approvals.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Nuclear Plant Performance and Regulatory Risk",
+        "bull": "Entergy\u2019s nuclear fleet achieved a 90% unit capability factor (Findings\u202f53) and secured tax credits (Findings\u202f57). NRC inspections have largely found low\u2011significance issues (Findings\u202f7), and the company has a strong safety record (Findings\u202f7).",
+        "bull_source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "bear": "NRC could impose stricter regulations, increase oversight, or require costly upgrades, especially with upcoming cybersecurity inspections (Findings\u202f10). Unplanned outages or decommissioning costs could erode margins and increase capital needs.",
+        "bear_source": {
+          "title": "Grand Gulf Nuclear Station - Notification of Cyber Security Baseline Inspection and Request for Information (05000416/2024403)",
+          "url": "https://www.nrc.gov/docs/ML2420/ML24204A243.pdf",
+          "date": ""
+        },
+        "verdict": "Bull wins slightly because the strong performance metrics and tax credits outweigh the moderate regulatory risk, but the bear\u2019s concerns remain a material risk factor.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Grid Upgrade & Transmission Capacity Expansion",
+        "bull": "MISO\u2019s rapid endorsement of Entergy\u2019s six projects (Findings\u202f41) and the $22\u202fB regional transmission plan (Findings\u202f48) enable the company to serve new industrial load (e.g., 600\u202fMW at Lake Charles, Findings\u202f47) and support data\u2011center growth. Fast approvals reduce time\u2011to\u2011service and improve revenue potential.",
+        "bull_source": {
+          "title": "Critics attack MISO review of Entergy upgrades | Latest Market News",
+          "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/996461-critics-attack-miso-review-of-entergy-upgrades",
+          "date": ""
+        },
+        "bear": "Grid projects are capital intensive; cost overruns or regulatory delays could strain capital budgets (4\u2011year capex plan $43\u202fB, Findings\u202f55). Competition for production slots and rising utility material costs may increase construction expenses, compressing margins.",
+        "bear_source": {
+          "title": "Entergy Corporation Q4 2025 Earnings Call Summary",
+          "url": "",
+          "date": ""
+        },
+        "verdict": "Bull wins because the rapid approvals and strategic alignment with data\u2011center demand provide a clear upside, while the bear\u2019s cost risks are manageable within the capital plan.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Management Succession and Execution Risk",
+        "bull": "Promotions (John Dinelli to EVP & Chief Nuclear Officer, Findings\u202f27) and the appointment of Kimberly Cook\u2011Nelson as COO (Findings\u202f26) bring experienced leadership to oversee nuclear operations and grid expansion, supporting strategic execution.",
+        "bull_source": {
+          "title": "Entergy board of directors appoints new chief operating and chief nuclear officers",
+          "url": "https://www.prnewswire.com/news-releases/entergy-board-of-directors-appoints-new-chief-operating-and-chief-nuclear-officers-302413217.html",
+          "date": ""
+        },
+        "bear": "Retirements of key executives (COO Pete Norgeot, CEO Rod West, Legal Advisor Marcus Brown, Findings\u202f28\u201129) could create transition uncertainty. Leadership gaps may slow decision\u2011making, impacting project timelines and regulatory negotiations.",
+        "bear_source": {
+          "title": "Rod West shares plans to retire from Entergy",
+          "url": "https://www.prnewswire.com/news-releases/rod-west-shares-plans-to-retire-from-entergy-302260167.html",
+          "date": ""
+        },
+        "verdict": "Tie \u2013 both sides have mitigating factors: the company has a clear succession plan, but the loss of senior executives introduces some execution risk.",
+        "verdict_side": "tie"
+      }
+    ],
+    "falsifiers": [
+      "Storm\u2011fee recovery denied by regulator",
+      "Capital\u2011expenditure plan exceeds $50B",
+      "Nuclear capability factor falls below 80%",
+      "Data\u2011center lease not renewed or early termination",
+      "Large\u2011load contracts terminated early"
+    ],
+    "confidence": "medium",
+    "confidence_why": "Strong bull evidence outweighs bear concerns, but material risks and potential for cost overruns or regulatory setbacks keep upside from being decisive."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "long",
+    "sector_score": 0.94,
+    "sector_why": "svc new orders growing: Public Administration; svc new orders growing: Utilities",
+    "industry_flags": [],
+    "respondent_comments": [
+      {
+        "industry": "Public Administration",
+        "quote": "Uncertainty on how the Iran conflict will impact the price of oil, as well as the knock-on effect to construction and other materials. The city has several capital projects pending and ongoing, which will be impacted."
+      },
+      {
+        "industry": "Utilities",
+        "quote": "Electric utility materials continue to be in high demand, causing competition among utilities for production slots. Furthermore, more suppliers are requiring progress payments or a down payment on goods as part of PO agreements."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The current macro backdrop\u2014expanding ISM manufacturing and services new\u2011orders, an upward\u2011sloping yield curve, and a net\u2011long bias\u2014creates a favorable environment for Entergy\u2019s industrial and data\u2011center demand, reinforcing its pricing power and justifying higher capex for grid and generation upgrades.  The high demand for utility materials and competition for production slots, however, signals rising input costs that could compress margins.  Overall, the expansionary outlook supports Entergy\u2019s growth trajectory while presenting a modest cost\u2011pressure risk.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "Expanding ISM new orders and services PMI signal stronger industrial and data\u2011center load growth, boosting Entergy\u2019s sales."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "helps",
+        "why": "Higher demand and regulatory approvals enable Entergy to raise rates and recover fuel and rider costs, enhancing revenue."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Competition for utility materials and potential commodity price volatility raise procurement costs, squeezing margins."
+      },
+      {
+        "channel": "capex",
+        "direction": "helps",
+        "why": "Expansion of data\u2011center contracts and grid upgrades aligns with the macro\u2011driven growth, justifying a higher capital plan."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "mixed",
+        "why": "An upward\u2011sloping yield curve raises bond rates slightly, but the net\u2011long bias and stable credit profile mitigate the impact."
+      },
+      {
+        "channel": "order backlog",
+        "direction": "helps",
+        "why": "Strong ISM new\u2011orders growth indicates a robust backlog, supporting future revenue streams."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q3 2026 earnings release",
+      "window": "July 2026 (approx. July 15\u201120)",
+      "expected": "EPS likely similar or slightly higher than Q2 2026 ($1.03) due to weather normalization; if below guidance, negative market reaction.",
+      "source": {
+        "title": "Entergy reports second quarter 2026 financial results - Entergy",
+        "url": "https://www.entergy.com/news/entergy-reports-second-quarter-2026-financial-results",
+        "date": ""
+      }
+    },
+    {
+      "event": "NRC baseline cybersecurity inspection at Grand Gulf",
+      "window": "November 18, 2024",
+      "expected": "If compliance confirmed, no regulatory action; if non\u2011compliance, potential enforcement action and possible rate adjustments.",
+      "source": {
+        "title": "Grand Gulf Nuclear Station - Notification of Cyber Security Baseline Inspection and Request for Information (05000416/2024403)",
+        "url": "https://www.nrc.gov/docs/ML2420/ML24204A243.pdf",
+        "date": ""
+      }
+    },
+    {
+      "event": "Entergy Louisiana rate recovery application for Hurricane Francine",
+      "window": "Dec 30, 2024 \u2013 Mar 2025 (decision period)",
+      "expected": "If approved, Entergy recovers storm restoration costs; if denied, costs absorbed by company.",
+      "source": {
+        "title": "oEPT.r5>/ATE",
+        "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=AncjbApVkIo%3D",
+        "date": ""
+      }
+    },
+    {
+      "event": "Entergy Louisiana approval of combined\u2011cycle plants and transmission upgrades for Meta data center",
+      "window": "Dec 30, 2024",
+      "expected": "Approval enables $10B generation and transmission upgrades; if delayed, project timeline extends.",
+      "source": {
+        "title": "Entergy Louisiana receives LPSC approval for major infrastructure investments to support Meta\u2019s data center and improve reliability - Entergy",
+        "url": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability",
+        "date": ""
+      }
+    },
+    {
+      "event": "Entergy Texas financing order for system restoration bonds",
+      "window": "Q2 2025",
+      "expected": "If approved, bonds issued to fund restoration; if denied, company must fund from other sources.",
+      "source": {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1427437/000006598422000029/a01122991.htm",
+        "date": ""
+      }
+    },
+    {
+      "event": "MISO grid upgrade projects endorsement",
+      "window": "April 2025",
+      "expected": "If approved, projects move to board consideration; if denied, delays in grid upgrades.",
+      "source": {
+        "title": "Critics attack MISO review of Entergy upgrades | Latest Market News",
+        "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/996461-critics-attack-miso-review-of-entergy-upgrades",
+        "date": ""
+      }
+    },
+    {
+      "event": "Meta $10B data center project contract",
+      "window": "Q1 2025",
+      "expected": "Contract signed provides predictable revenue and rate offsets; if not signed, lost opportunity.",
+      "source": {
+        "title": "Entergy Louisiana to power Meta\u2019s data center in Richland Parish - Entergy",
+        "url": "https://www.entergy.com/news/entergy-louisiana-power-meta-s-data-center-in-richland-parish",
+        "date": ""
+      }
+    },
+    {
+      "event": "Google 1,000 MW right\u2011of\u2011first\u2011offer lease at River Bend",
+      "window": "Q1 2025",
+      "expected": "Lease signed adds predictable revenue; if not signed, lost revenue.",
+      "source": {
+        "title": "Entergy Secures 15\u2011Year, $7\u202fB Lease for 245\u202fMW AI Data\u2011Center Capacity at River Bend Campus - ETR News - EveryTicker",
+        "url": "https://everyticker.com/quote/ETR/news/entergy-secures-15year-7-b-lease-for-245-mw-ai-datacenter-capacity-at-river-bend-campus",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

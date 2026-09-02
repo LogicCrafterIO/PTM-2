@@ -1,0 +1,77 @@
+{
+  "ticker": "BX",
+  "as_of": "2026-08-30T13:18:36.003112+00:00",
+  "earnings_date": "2026-11-06",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.01888,
+    "eps_d30": 5.8925,
+    "eps_d90": 5.94473,
+    "change_30d_pct": 2.14,
+    "change_90d_pct": 1.25,
+    "analysts_up_30d": 14,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.52,
+        "estimate": 1.22685,
+        "surprise_pct": 23.89
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.75,
+        "estimate": 1.53611,
+        "surprise_pct": 13.92
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.36,
+        "estimate": 1.33743,
+        "surprise_pct": 1.69
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.52,
+        "estimate": 1.33671,
+        "surprise_pct": 13.71
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 13.3
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-07",
+        "move_pct": 2.76
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": 1.18
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": -3.88
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": 1.75
+      }
+    ],
+    "avg_abs_move_pct": 2.39,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.2% over 90 days and +2.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 14 up, 5 down.",
+    "Price reaction to the last 4 reports, most recent first: +2.8%, +1.2%, -3.9%, +1.8% (average absolute move 2.4%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +13.3%."
+  ]
+}

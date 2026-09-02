@@ -1,0 +1,77 @@
+{
+  "ticker": "WDFC",
+  "as_of": "2026-08-30T13:41:18.397348+00:00",
+  "earnings_date": "2026-10-08",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.224,
+    "eps_d30": 5.99,
+    "eps_d90": 5.99,
+    "change_30d_pct": 3.91,
+    "change_90d_pct": 3.91,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 1.57,
+        "estimate": 0.82,
+        "surprise_pct": 91.46
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 1.28,
+        "estimate": 1.445,
+        "surprise_pct": -11.42
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 1.5,
+        "estimate": 1.41,
+        "surprise_pct": 6.38
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 2.24,
+        "estimate": 1.565,
+        "surprise_pct": 43.13
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 32.39
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-09",
+        "move_pct": -2.91
+      },
+      {
+        "report_date": "2026-04-09",
+        "move_pct": 1.69
+      },
+      {
+        "report_date": "2026-01-08",
+        "move_pct": 2.27
+      },
+      {
+        "report_date": "2025-10-27",
+        "move_pct": -3.52
+      }
+    ],
+    "avg_abs_move_pct": 2.6,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.9% over 90 days and +3.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -2.9%, +1.7%, +2.3%, -3.5% (average absolute move 2.6%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +32.4%."
+  ]
+}

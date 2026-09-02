@@ -1,0 +1,77 @@
+{
+  "ticker": "GRMN",
+  "as_of": "2026-08-30T13:26:02.104840+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 10.10472,
+    "eps_d30": 9.57996,
+    "eps_d90": 9.52995,
+    "change_30d_pct": 5.48,
+    "change_90d_pct": 6.03,
+    "analysts_up_30d": 7,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.99,
+        "estimate": 1.99,
+        "surprise_pct": 0.0
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.79,
+        "estimate": 2.39225,
+        "surprise_pct": 16.63
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.08,
+        "estimate": 1.83843,
+        "surprise_pct": 13.14
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.81,
+        "estimate": 2.29348,
+        "surprise_pct": 22.52
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 13.07
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": 16.23
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": 2.13
+      },
+      {
+        "report_date": "2026-02-18",
+        "move_pct": 9.44
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": -11.48
+      }
+    ],
+    "avg_abs_move_pct": 9.82,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +6.0% over 90 days and +5.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 7 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +16.2%, +2.1%, +9.4%, -11.5% (average absolute move 9.8%, 1 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +13.1%."
+  ]
+}

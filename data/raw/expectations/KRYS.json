@@ -1,0 +1,77 @@
+{
+  "ticker": "KRYS",
+  "as_of": "2026-08-30T13:37:44.302402+00:00",
+  "earnings_date": "2026-11-02",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.86507,
+    "eps_d30": 8.44641,
+    "eps_d90": 8.37613,
+    "change_30d_pct": -6.88,
+    "change_90d_pct": -6.1,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.66,
+        "estimate": 1.12216,
+        "surprise_pct": 137.04
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.7,
+        "estimate": 1.60667,
+        "surprise_pct": 5.81
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.83,
+        "estimate": 1.41892,
+        "surprise_pct": 28.97
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.79,
+        "estimate": 1.91436,
+        "surprise_pct": -6.5
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 41.33
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-03",
+        "move_pct": -8.37
+      },
+      {
+        "report_date": "2026-05-04",
+        "move_pct": 7.86
+      },
+      {
+        "report_date": "2026-02-17",
+        "move_pct": 4.12
+      },
+      {
+        "report_date": "2025-11-03",
+        "move_pct": 0.17
+      }
+    ],
+    "avg_abs_move_pct": 5.13,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -6.1% over 90 days and -6.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 5 down.",
+    "Price reaction to the last 4 reports, most recent first: -8.4%, +7.9%, +4.1%, +0.2% (average absolute move 5.1%, 1 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +41.3%."
+  ]
+}

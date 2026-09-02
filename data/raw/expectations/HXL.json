@@ -1,0 +1,77 @@
+{
+  "ticker": "HXL",
+  "as_of": "2026-08-30T14:31:55.138698+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.3994,
+    "eps_d30": 2.28333,
+    "eps_d90": 2.28372,
+    "change_30d_pct": 5.08,
+    "change_90d_pct": 5.07,
+    "analysts_up_30d": 13,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.37,
+        "estimate": 0.37866,
+        "surprise_pct": -2.29
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.52,
+        "estimate": 0.49428,
+        "surprise_pct": 5.2
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.59,
+        "estimate": 0.4351,
+        "surprise_pct": 35.6
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.66,
+        "estimate": 0.57727,
+        "surprise_pct": 14.33
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 13.21
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": -4.02
+      },
+      {
+        "report_date": "2026-04-22",
+        "move_pct": -0.03
+      },
+      {
+        "report_date": "2026-02-11",
+        "move_pct": 1.12
+      },
+      {
+        "report_date": "2025-10-22",
+        "move_pct": -0.58
+      }
+    ],
+    "avg_abs_move_pct": 1.44,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +5.1% over 90 days and +5.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 13 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -4.0%, -0.0%, +1.1%, -0.6% (average absolute move 1.4%, 3 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +13.2%."
+  ]
+}

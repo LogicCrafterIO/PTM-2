@@ -1,0 +1,1355 @@
+{
+  "ticker": "SRPT",
+  "name": "Sarepta Therapeutics",
+  "sector": "Health Care",
+  "industry": "Biotechnology",
+  "as_of": "2026-08-31",
+  "research": {
+    "ticker": "SRPT",
+    "as_of": "2026-08-31",
+    "queries_run": [
+      "Sarepta Therapeutics latest news this quarter 2026 analyst sentiment earnings revenue ELEVIDYS",
+      "Sarepta ESSENCE trial results November 2025 confirmatory clinical benefit FDA accelerated approval risk",
+      "Sarepta Therapeutics management changes CEO CFO executive departures 2025 2026",
+      "Sarepta ELEVIDYS gene therapy safety deaths adverse events FDA label update 2025 2026",
+      "Duchenne muscular dystrophy market competition 2025 2026 Pfizer Roche PTC NS Pharma gene therapy exon skipping",
+      "Sarepta Therapeutics customer wins losses payer coverage reimbursement EXONDYS VYONDYS AMONDYS ELEVIDYS this quarter",
+      "Sarepta Arrowhead partnership FSHD DM1 SCA2 Huntington RNAi latest clinical trial updates 2026",
+      "Sarepta Therapeutics bear case short thesis overvaluation risk FDA confirmatory trial failure 2026",
+      "Upcoming catalysts Sarepta Therapeutics 2026 FDA decisions clinical trial readouts investor events",
+      "Rare disease gene therapy regulatory actions FDA 2026 Sarepta Duchenne accelerated approval confirmatory requirements"
+    ],
+    "findings": [
+      {
+        "claim": "Q2 2026 total revenue $401.3M, down 34% YoY.",
+        "source": {
+          "title": "Sarepta Narrows 2026 Revenue Guidance on Elevidys Q2 Sales Dip | Precision Medicine Online",
+          "url": "https://www.precisionmedicineonline.com/business-news/sarepta-narrows-2026-revenue-guidance-elevidys-q2-sales-dip",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Net product revenue Q2 2026 $328.7M: $230.6M from PMO franchise, $98.1M from Elevidys.",
+        "source": {
+          "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments | Sarepta Therapeutics, Inc.",
+          "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-announces-second-quarter-2026-financial",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "GAAP operating income Q2 2026 $13.3M; non\u2011GAAP operating income $86.5M.",
+        "source": {
+          "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments | Sarepta Therapeutics, Inc.",
+          "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-announces-second-quarter-2026-financial",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Non\u2011GAAP net income Q2 2026 $78.6M, or $0.64 per diluted share.",
+        "source": {
+          "title": "Sarepta reports Q2 2026 results and narrows guidance | SRPT 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/SRPT/8-k-sarepta-therapeutics-inc-reports-material-event-d83c607b2a19.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "License revenue in Q2 2026 $10.0M.",
+        "source": {
+          "title": "Sarepta reports Q2 2026 results and narrows guidance | SRPT 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/SRPT/8-k-sarepta-therapeutics-inc-reports-material-event-d83c607b2a19.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Elevidys sales fell due to FDA narrowing its label after safety concerns.",
+        "source": {
+          "title": "Sarepta Narrows 2026 Revenue Guidance on Elevidys Q2 Sales Dip | Precision Medicine Online",
+          "url": "https://www.precisionmedicineonline.com/business-news/sarepta-narrows-2026-revenue-guidance-elevidys-q2-sales-dip",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "First\u2011half 2026 total revenue $1.13B; net product revenue $659M.",
+        "source": {
+          "title": "Sarepta reports Q2 2026 results and narrows guidance | SRPT 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/SRPT/8-k-sarepta-therapeutics-inc-reports-material-event-d83c607b2a19.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Gross margin on net product revenues 75% in Q2 2026.",
+        "source": {
+          "title": "Sarepta Therapeutics Inc (SRPT) (Q2 2026) Earnings Call Highlights: Strong Profitability and ...",
+          "url": "https://ca.finance.yahoo.com/news/sarepta-therapeutics-inc-srpt-q2-051140771.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-06"
+      },
+      {
+        "claim": "Vyondys 53 and Amondys 45 failed their Phase 3 confirmatory trial, missing the primary endpoint required for full FDA approval.",
+        "source": {
+          "title": "Despite Phase 3 Failure, Sarepta Still Sees Path for Muscle Disease Drugs to Secure Full FDA Approval - MedCity News",
+          "url": "https://medcitynews.com/2025/11/sarepta-duchenne-muscular-dystrophy-vyondys-amondys-phase-3-failure-dmd-srpt/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-11-??"
+      },
+      {
+        "claim": "In the ESSENCE study, Amondys 45 and Vyondys 53 achieved a difference of 0.05 steps/second in least square means after 96 weeks.",
+        "source": {
+          "title": "Two of Sarepta\u2019s DMD drugs fail to meet primary endpoint in confirmatory trial",
+          "url": "https://www.clinicaltrialsarena.com/news/sarepta-dmd-two-drugs-fail-confirmatory-trial/",
+          "date": ""
+        },
+        "category": "performance",
+        "dated": "2025-??"
+      },
+      {
+        "claim": "ESSENCE enrolled 225 patients aged 6\u201113 years, providing the largest randomized trial for these DMD therapies.",
+        "source": {
+          "title": "Two of Sarepta\u2019s DMD drugs fail to meet primary endpoint in confirmatory trial",
+          "url": "https://www.clinicaltrialsarena.com/news/sarepta-dmd-two-drugs-fail-confirmatory-trial/",
+          "date": ""
+        },
+        "category": "trial size",
+        "dated": "2025-??"
+      },
+      {
+        "claim": "Sarepta plans to request traditional FDA approval for Amondys 45 and Vyondys 53, citing encouraging trends and COVID\u201119 confounding factors.",
+        "source": {
+          "title": "Duchenne confirmatory trial fails, but Sarepta to ask FDA for full approval anyway",
+          "url": "https://endpoints.news/duchenne-confirmatory-trial-fails-but-sarepta-to-ask-fda-for-full-approval-anyways/",
+          "date": ""
+        },
+        "category": "regulatory strategy",
+        "dated": "2025-11-??"
+      },
+      {
+        "claim": "Elevidys gene therapy caused the deaths of two patients in 2025, leading to falling sales and increased regulatory scrutiny.",
+        "source": {
+          "title": "Sarepta Therapeutics CEO Ingram to retire by year end | Reuters",
+          "url": "https://www.reuters.com/legal/litigation/sarepta-therapeutics-ceo-ingram-retire-by-year-end-2026-02-26/",
+          "date": ""
+        },
+        "category": "risk",
+        "dated": "2026-02-25"
+      },
+      {
+        "claim": "CEO Douglas Ingram will retire by the end of 2026, and the company is actively searching for a replacement.",
+        "source": {
+          "title": "Sarepta Therapeutics CEO Ingram to retire by year end | Reuters",
+          "url": "https://www.reuters.com/legal/litigation/sarepta-therapeutics-ceo-ingram-retire-by-year-end-2026-02-26/",
+          "date": ""
+        },
+        "category": "leadership",
+        "dated": "2026-02-25"
+      },
+      {
+        "claim": "Michael Severino, former Tessera Therapeutics CEO, was appointed as Sarepta\u2019s new chief executive effective February 2026.",
+        "source": {
+          "title": "Sarepta taps AbbVie vet Severino to take over for retiring CEO",
+          "url": "https://www.fiercepharma.com/pharma/sarepta-taps-abbvie-tessera-vet-severino-write-duchenne-firms-next-chapter",
+          "date": ""
+        },
+        "category": "leadership",
+        "dated": ""
+      },
+      {
+        "claim": "Sarepta announced a restructuring that will eliminate 36% of its workforce\u2014about 500 jobs\u2014following two DMD patient deaths after Elevidys treatment.",
+        "source": {
+          "title": "Sarepta Axes 500, 36% of Workforce, in Restructuring after DMD Patient Deaths",
+          "url": "https://www.genengnews.com/gen-edge/sarepta-axes-500-36-of-workforce-in-restructuring-after-dmd-patient-deaths/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Michael Severino, former AbbVie executive, has been appointed CEO of Sarepta, succeeding Doug Ingram.",
+        "source": {
+          "title": "Sarepta turns to Michael Severino as CEO, looking to move past recent turmoil",
+          "url": "https://endpoints.news/sarepta-turns-to-michael-severino-as-ceo/",
+          "date": ""
+        },
+        "category": "leadership",
+        "dated": "2026-07-27"
+      },
+      {
+        "claim": "The FDA approved a new boxed warning for Elevidys, citing risk of acute serious liver injury (ALI) and acute liver failure (ALF).",
+        "source": {
+          "title": "FDA Approves New Safety Warning and Revised Indication that Limits Use for Elevidys Following Reports of Fatal Liver Injury",
+          "url": "https://content.govdelivery.com/accounts/USFDA/bulletins/3fb79a1?reqfrom=share%2F",
+          "date": ""
+        },
+        "category": "safety",
+        "dated": "2025-11-14"
+      },
+      {
+        "claim": "Sarepta\u2019s updated Elevidys prescribing information now includes the boxed warning and removes the non\u2011ambulatory indication from the label.",
+        "source": {
+          "title": "Sarepta Announces FDA\u2019s Approval of Updated ELEVIDYS Prescribing Information | Sarepta Therapeutics, Inc.",
+          "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-announces-fdas-approval-updated-elevidys-prescribing",
+          "date": ""
+        },
+        "category": "labeling",
+        "dated": "2025-11-14"
+      },
+      {
+        "claim": "The FDA\u2019s updated Elevidys label limits use to DMD patients who can walk, excluding non\u2011ambulatory patients.",
+        "source": {
+          "title": "New FDA Elevidys label limits use to DMD patients who can walk",
+          "url": "https://musculardystrophynews.com/news/new-fda-elevidys-label-limits-use-dmd-patients-walk/",
+          "date": ""
+        },
+        "category": "labeling",
+        "dated": "2025-11-18"
+      },
+      {
+        "claim": "The FDA requires Sarepta to conduct a post\u2011marketing observational study to further assess serious liver injury risk with Elevidys.",
+        "source": {
+          "title": "FDA Approves New Safety Warning and Revised Indication for ELEVIDYS - Parent Project Muscular Dystrophy",
+          "url": "https://www.parentprojectmd.org/fda-approves-new-safety-warning-and-revised-indication-for-elevidys/",
+          "date": ""
+        },
+        "category": "study",
+        "dated": "2025-11-14"
+      },
+      {
+        "claim": "Elevidys is the only FDA\u2011approved gene therapy for Duchenne muscular dystrophy (DMD).",
+        "source": {
+          "title": "Sarepta Announces FDA\u2019s Approval of Updated ELEVIDYS Prescribing Information | Sarepta Therapeutics, Inc.",
+          "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-announces-fdas-approval-updated-elevidys-prescribing",
+          "date": ""
+        },
+        "category": "product",
+        "dated": "2025-11-14"
+      },
+      {
+        "claim": "The workforce reduction follows the deaths of two DMD patients after Elevidys treatment, prompting regulatory scrutiny.",
+        "source": {
+          "title": "Sarepta Axes 500, 36% of Workforce, in Restructuring after DMD Patient Deaths",
+          "url": "https://www.genengnews.com/gen-edge/sarepta-axes-500-36-of-workforce-in-restructuring-after-dmd-patient-deaths/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "FDA added boxed warning for Sarepta's Elevidys for acute liver injury and acute liver failure.",
+        "source": {
+          "title": "Sarepta's Elevidys Gets Boxed Warning for ALI and ALF",
+          "url": "https://www.cgtlive.com/view/sarepta-elevidys-gets-boxed-warning-ali-alf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-11-25"
+      },
+      {
+        "claim": "Q2 2026 net product revenues totaled $328.7M: $230.6M from PMO and $98.1M from Elevidys.",
+        "source": {
+          "title": "EX-99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/873303/000119312526335056/srpt-ex99_1.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Q2 2026 GAAP operating income was $13.3M; non\u2011GAAP operating income $86.5M.",
+        "source": {
+          "title": "EX-99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/873303/000119312526335056/srpt-ex99_1.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Sarepta appointed Michael Severino, MD, as new CEO in Q2 2026.",
+        "source": {
+          "title": "EX-99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/873303/000119312526335056/srpt-ex99_1.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Global DMD therapeutics market was $3.2B in 2025, projected $6.01B by 2030 (CAGR 13.4%).",
+        "source": {
+          "title": "Duchenne Muscular Dystrophy Drugs Market Report 2026, Size",
+          "url": "https://www.thebusinessresearchcompany.com/report/duchenne-muscular-dystrophy-drugs-global-market-report",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-01"
+      },
+      {
+        "claim": "DMD treatment market valued at $3.8B for 2026\u20112034.",
+        "source": {
+          "title": "Duchenne Muscular Dystrophy Treatment Market Report",
+          "url": "https://www.globenewswire.com/news-release/2026/07/16/3328371/28124/en/Duchenne-Muscular-Dystrophy-Treatment-Market-Report-2025-2034-Published-Segments-Intravenous-Subcutaneous-and-Oral-Routes-Across-Three-Pharmacy-Channels.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-16"
+      },
+      {
+        "claim": "DMD landscape includes eight approved therapies, >75 companies, and 57 Phase\u202f3 trials.",
+        "source": {
+          "title": "Duchenne Muscular Dystrophy Competitive Landscape Analysis",
+          "url": "https://eureka.patsnap.com/blog/life-science/duchenne-muscular-dystrophy-pipeline-approvals-competitive-landscape-2025-2026/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": ""
+      },
+      {
+        "claim": "PBGENE\u2011DMD has FDA Rare Pediatric Disease and Orphan Drug Designation.",
+        "source": {
+          "title": "PBGENE-DMD Competitive Landscape Analysis 2026 | Eureka",
+          "url": "https://eureka.patsnap.com/blog/life-science/pbgene-dmd-competitive-landscape-analysis/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": ""
+      },
+      {
+        "claim": "Q2 2026 revenue fell 34% to $401M, driven by lower Elevidys sales.",
+        "source": {
+          "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Net product revenues Q2 2026 totaled $328.7M: $230.6M PMO, $98.1M Elevidys.",
+        "source": {
+          "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments | Morningstar",
+          "url": "https://www.morningstar.com/news/business-wire/20260805692741/sarepta-therapeutics-announces-second-quarter-2026-financial-results-and-recent-corporate-developments",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "GAAP operating income Q2 2026 was $13.3M; non\u2011GAAP operating income $86.5M.",
+        "source": {
+          "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments | Morningstar",
+          "url": "https://www.morningstar.com/news/business-wire/20260805692741/sarepta-therapeutics-announces-second-quarter-2026-financial-results-and-recent-corporate-developments",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "2026 net product revenue guidance narrowed to $1.2B\u2013$1.3B.",
+        "source": {
+          "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Elevidys revenue expected to decline in Q3 and remain softer in H2 2026.",
+        "source": {
+          "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "PMO franchise remains stable with adherence >90%.",
+        "source": {
+          "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "FDA decisions on AMONDYS 45 and VYONDYS 53 conversions expected by Feb 2027.",
+        "source": {
+          "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Phase 1/2 data for SRP\u20111001 (FSHD1) and SRP\u20111003 (DM1) show high muscle concentrations without dose\u2011limiting toxicity.",
+        "source": {
+          "title": "Sarepta Announces First Clinical Data from siRNA Pipeline Targeting FSHD1 and DM1",
+          "url": "https://www.businesswire.com/news/home/20260325621936/en/Sarepta-Announces-First-Clinical-Data-from-siRNA-Pipeline-Targeting-FSHD1-and-DM1",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-03-25"
+      },
+      {
+        "claim": "Phase 1/2 studies of SRP-1001 (FSHD1) and SRP-1003 (DM1) show dose\u2011dependent muscle exposure and no serious side effects that would limit dosing.",
+        "source": {
+          "title": "Sarepta Reports Encouraging Clinical Data from siRNA Pipeline for FSHD1 and DM1 - Global Genes",
+          "url": "https://globalgenes.org/raredaily/sarepta-reports-encouraging-clinical-data-from-sirna-pipeline-for-fshd1-and-dm1/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-04-08"
+      },
+      {
+        "claim": "Sarepta\u2019s 2026 guidance projects $1.2\u2013$1.4\u202fbillion in product revenues, largely dependent on Elevidys and exon\u2011skipping therapies.",
+        "source": {
+          "title": "Sarepta: Caution Still Warranted Despite FDA's Gene Therapy Friendly Stance (NASDAQ:SRPT) | Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4916032-sarepta-caution-still-warranted-despite-fdas-gene-therapy-friendly-stance",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Sarepta\u2019s market capitalization was $2.50\u202fbillion as of March\u202f25,\u202f2026.",
+        "source": {
+          "title": "DailyTickers Expert | Analysis SRPT (Sarepta Therapeutics) | March 25, 2026",
+          "url": "https://articles.dailytickers.com/analyses/SRPT/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-03-25"
+      },
+      {
+        "claim": "Elevidys, Sarepta\u2019s gene\u2011therapy for Duchenne muscular dystrophy, costs $3.2\u202fmillion per patient.",
+        "source": {
+          "title": "Sarepta Saga Has 'Gone on Too Long' as Competitors Catch Up - BioSpace",
+          "url": "https://www.biospace.com/drug-development/sarepta-saga-has-gone-on-too-long-as-competitors-catch-up",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-02-05"
+      },
+      {
+        "claim": "Sarepta reported a net loss of $713\u202fmillion for 2025, reversing a $235\u202fmillion profit in 2024.",
+        "source": {
+          "title": "",
+          "url": "https://www.panabee.com/news/sarepta-therapeutics-earnings-2025-annual",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-03-02"
+      },
+      {
+        "claim": "The FDA agreed to review a regulatory package for Amondys\u202f45 and Vyondys\u202f53 after their confirmatory trial failed.",
+        "source": {
+          "title": "Sarepta Plans FDA Run for Duchenne Exon Skippers Despite Confirmatory Trial Failure - BioSpace",
+          "url": "https://www.biospace.com/drug-development/sarepta-plans-fda-run-for-duchenne-exon-skippers-despite-confirmatory-trial-failure",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-03-19"
+      },
+      {
+        "claim": "Sarepta plans to submit supplemental NDAs for Amondys\u202f45 and Vyondys\u202f53 by the end of April\u202f2026 to seek full approval.",
+        "source": {
+          "title": "Sarepta Provides Regulatory Update on AMONDYS 45\u00ae and VYONDYS 53\u00ae | Sarepta Therapeutics, Inc.",
+          "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-provides-regulatory-update-amondys-45r-and-vyondys-53r",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-03-19"
+      },
+      {
+        "claim": "Sarepta\u2019s stock fell 85% from 2024 highs, trading near $21 in August\u202f2026 after Elevidys setbacks.",
+        "source": {
+          "title": "Sarepta's Stock Collapsed on an Elevidys Story. What's Left Might Not Be What You Think.",
+          "url": "https://www.ainvest.com/news/sarepta-stock-collapsed-elevidys-story-left-2608/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-29"
+      },
+      {
+        "claim": "FDA accepted sNDAs for AMONDYS 45 and VYONDYS 53, with target decision Feb 28, 2027.",
+        "source": {
+          "title": "Sarepta Announces FDA Acceptance of sNDAs for AMONDYS 45\u00ae and VYONDYS 53\u00ae",
+          "url": "https://investor.wedbush.com/wedbush/article/bizwire-2026-6-30-sarepta-announces-fda-acceptance-of-sndas-for-amondys-45-and-vyondys-53",
+          "date": ""
+        },
+        "category": "catalyst|regulatory",
+        "dated": "2026-06-30"
+      },
+      {
+        "claim": "Confirmatory trial for Amondys 45 and Vyondys 53 failed to improve motor function.",
+        "source": {
+          "title": "Sarepta secures early 2027 FDA decision for Duchenne drugs, pushing past confirmatory fail - BioSpace",
+          "url": "https://www.biospace.com/fda/sarepta-secures-early-2027-fda-decision-for-duchenne-drugs-pushing-past-confirmatory-fail",
+          "date": ""
+        },
+        "category": "regulatory",
+        "dated": "2026-07-01"
+      },
+      {
+        "claim": "Sarepta will present new long\u2011term efficacy and safety data across gene therapy and exon\u2011skipping programs at the MDA Clinical & Scientific Congress on Feb 26, 2026.",
+        "source": {
+          "title": "Sarepta Therapeutics to Present New Long-Term and Safety Data Across Gene Therapy and Exon-Skipping Programs at 2026 Muscular Dystrophy Association Clinical & Scientific Congress | Sarepta Therapeutics, Inc.",
+          "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-present-new-long-term-and-safety-data",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-02-26"
+      },
+      {
+        "claim": "Sarepta will webcast early clinical results from Phase 1/2 ascending dose studies of SRP\u20111001 (FSHD1) and SRP\u20111003 (DM1) on March 25, 2026.",
+        "source": {
+          "title": "Sarepta to Share First Clinical Data from siRNA Pipeline Targeting FSHD1 and DM1",
+          "url": "https://www.businesswire.com/news/home/20260324252978/en/Sarepta-to-Share-First-Clinical-Data-from-siRNA-Pipeline-Targeting-FSHD1-and-DM1",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-03-24"
+      },
+      {
+        "claim": "Sarepta\u2019s market cap is $1.67\u202fbillion.",
+        "source": {
+          "title": "Sarepta Therapeutics, Inc. (SRPT) \u2014 Pipeline, Catalysts & Financial Overview | BioSniper",
+          "url": "https://biosniper.co/company/SRPT",
+          "date": ""
+        },
+        "category": "financial",
+        "dated": ""
+      },
+      {
+        "claim": "Sarepta\u2019s pipeline tracks 25 clinical trials, 25 pipeline candidates, and 8 catalysts.",
+        "source": {
+          "title": "Sarepta Therapeutics, Inc. (SRPT) \u2014 Pipeline, Catalysts & Financial Overview | BioSniper",
+          "url": "https://biosniper.co/company/SRPT",
+          "date": ""
+        },
+        "category": "pipeline",
+        "dated": ""
+      },
+      {
+        "claim": "Q2 2026 total revenues $401.3M, down 34% YoY, beat estimate $355.6M.",
+        "source": {
+          "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "PMO product revenues $230.6M, flat YoY, beat estimate $225.9M.",
+        "source": {
+          "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Elevidys revenues $98.1M, down 65% YoY, beat estimate $97.8M.",
+        "source": {
+          "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Adjusted R&D expenses $76.7M, down 58% YoY.",
+        "source": {
+          "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Adjusted SG&A expenses $88M, down 22% YoY.",
+        "source": {
+          "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "2026 net product revenue guidance narrowed to $1.2-$1.3B from $1.2-$1.4B.",
+        "source": {
+          "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "FDA accepted sNDAs for Vyondys 53 and Amondys 45 conversion to full approvals; decision Feb 28, 2027.",
+        "source": {
+          "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+          "url": "",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "ENDEAVOR Cohort 8 enrollment expected by end 2026.",
+        "source": {
+          "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+          "url": "",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Q2 2026 net product revenues $328.7M ($230.6M PMO, $98.1M Elevidys).",
+        "source": {
+          "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Cash position $945M, increase $197M from prior quarter.",
+        "source": {
+          "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sarepta Narrows 2026 Revenue Guidance on Elevidys Q2 Sales Dip | Precision Medicine Online",
+        "url": "https://www.precisionmedicineonline.com/business-news/sarepta-narrows-2026-revenue-guidance-elevidys-q2-sales-dip",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments | Sarepta Therapeutics, Inc.",
+        "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-announces-second-quarter-2026-financial",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments | Sarepta Therapeutics, Inc.",
+        "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-announces-second-quarter-2026-financial",
+        "date": ""
+      },
+      {
+        "title": "Sarepta reports Q2 2026 results and narrows guidance | SRPT 8-K Filing",
+        "url": "https://www.stocktitan.net/sec-filings/SRPT/8-k-sarepta-therapeutics-inc-reports-material-event-d83c607b2a19.html",
+        "date": ""
+      },
+      {
+        "title": "Sarepta reports Q2 2026 results and narrows guidance | SRPT 8-K Filing",
+        "url": "https://www.stocktitan.net/sec-filings/SRPT/8-k-sarepta-therapeutics-inc-reports-material-event-d83c607b2a19.html",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Narrows 2026 Revenue Guidance on Elevidys Q2 Sales Dip | Precision Medicine Online",
+        "url": "https://www.precisionmedicineonline.com/business-news/sarepta-narrows-2026-revenue-guidance-elevidys-q2-sales-dip",
+        "date": ""
+      },
+      {
+        "title": "Sarepta reports Q2 2026 results and narrows guidance | SRPT 8-K Filing",
+        "url": "https://www.stocktitan.net/sec-filings/SRPT/8-k-sarepta-therapeutics-inc-reports-material-event-d83c607b2a19.html",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics Inc (SRPT) (Q2 2026) Earnings Call Highlights: Strong Profitability and ...",
+        "url": "https://ca.finance.yahoo.com/news/sarepta-therapeutics-inc-srpt-q2-051140771.html",
+        "date": ""
+      },
+      {
+        "title": "Despite Phase 3 Failure, Sarepta Still Sees Path for Muscle Disease Drugs to Secure Full FDA Approval - MedCity News",
+        "url": "https://medcitynews.com/2025/11/sarepta-duchenne-muscular-dystrophy-vyondys-amondys-phase-3-failure-dmd-srpt/",
+        "date": ""
+      },
+      {
+        "title": "Two of Sarepta\u2019s DMD drugs fail to meet primary endpoint in confirmatory trial",
+        "url": "https://www.clinicaltrialsarena.com/news/sarepta-dmd-two-drugs-fail-confirmatory-trial/",
+        "date": ""
+      },
+      {
+        "title": "Two of Sarepta\u2019s DMD drugs fail to meet primary endpoint in confirmatory trial",
+        "url": "https://www.clinicaltrialsarena.com/news/sarepta-dmd-two-drugs-fail-confirmatory-trial/",
+        "date": ""
+      },
+      {
+        "title": "Duchenne confirmatory trial fails, but Sarepta to ask FDA for full approval anyway",
+        "url": "https://endpoints.news/duchenne-confirmatory-trial-fails-but-sarepta-to-ask-fda-for-full-approval-anyways/",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics CEO Ingram to retire by year end | Reuters",
+        "url": "https://www.reuters.com/legal/litigation/sarepta-therapeutics-ceo-ingram-retire-by-year-end-2026-02-26/",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics CEO Ingram to retire by year end | Reuters",
+        "url": "https://www.reuters.com/legal/litigation/sarepta-therapeutics-ceo-ingram-retire-by-year-end-2026-02-26/",
+        "date": ""
+      },
+      {
+        "title": "Sarepta taps AbbVie vet Severino to take over for retiring CEO",
+        "url": "https://www.fiercepharma.com/pharma/sarepta-taps-abbvie-tessera-vet-severino-write-duchenne-firms-next-chapter",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Axes 500, 36% of Workforce, in Restructuring after DMD Patient Deaths",
+        "url": "https://www.genengnews.com/gen-edge/sarepta-axes-500-36-of-workforce-in-restructuring-after-dmd-patient-deaths/",
+        "date": ""
+      },
+      {
+        "title": "Sarepta turns to Michael Severino as CEO, looking to move past recent turmoil",
+        "url": "https://endpoints.news/sarepta-turns-to-michael-severino-as-ceo/",
+        "date": ""
+      },
+      {
+        "title": "FDA Approves New Safety Warning and Revised Indication that Limits Use for Elevidys Following Reports of Fatal Liver Injury",
+        "url": "https://content.govdelivery.com/accounts/USFDA/bulletins/3fb79a1?reqfrom=share%2F",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Announces FDA\u2019s Approval of Updated ELEVIDYS Prescribing Information | Sarepta Therapeutics, Inc.",
+        "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-announces-fdas-approval-updated-elevidys-prescribing",
+        "date": ""
+      },
+      {
+        "title": "New FDA Elevidys label limits use to DMD patients who can walk",
+        "url": "https://musculardystrophynews.com/news/new-fda-elevidys-label-limits-use-dmd-patients-walk/",
+        "date": ""
+      },
+      {
+        "title": "FDA Approves New Safety Warning and Revised Indication for ELEVIDYS - Parent Project Muscular Dystrophy",
+        "url": "https://www.parentprojectmd.org/fda-approves-new-safety-warning-and-revised-indication-for-elevidys/",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Announces FDA\u2019s Approval of Updated ELEVIDYS Prescribing Information | Sarepta Therapeutics, Inc.",
+        "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-announces-fdas-approval-updated-elevidys-prescribing",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Axes 500, 36% of Workforce, in Restructuring after DMD Patient Deaths",
+        "url": "https://www.genengnews.com/gen-edge/sarepta-axes-500-36-of-workforce-in-restructuring-after-dmd-patient-deaths/",
+        "date": ""
+      },
+      {
+        "title": "Sarepta's Elevidys Gets Boxed Warning for ALI and ALF",
+        "url": "https://www.cgtlive.com/view/sarepta-elevidys-gets-boxed-warning-ali-alf",
+        "date": ""
+      },
+      {
+        "title": "EX-99.1",
+        "url": "https://www.sec.gov/Archives/edgar/data/873303/000119312526335056/srpt-ex99_1.htm",
+        "date": ""
+      },
+      {
+        "title": "EX-99.1",
+        "url": "https://www.sec.gov/Archives/edgar/data/873303/000119312526335056/srpt-ex99_1.htm",
+        "date": ""
+      },
+      {
+        "title": "EX-99.1",
+        "url": "https://www.sec.gov/Archives/edgar/data/873303/000119312526335056/srpt-ex99_1.htm",
+        "date": ""
+      },
+      {
+        "title": "Duchenne Muscular Dystrophy Drugs Market Report 2026, Size",
+        "url": "https://www.thebusinessresearchcompany.com/report/duchenne-muscular-dystrophy-drugs-global-market-report",
+        "date": ""
+      },
+      {
+        "title": "Duchenne Muscular Dystrophy Treatment Market Report",
+        "url": "https://www.globenewswire.com/news-release/2026/07/16/3328371/28124/en/Duchenne-Muscular-Dystrophy-Treatment-Market-Report-2025-2034-Published-Segments-Intravenous-Subcutaneous-and-Oral-Routes-Across-Three-Pharmacy-Channels.html",
+        "date": ""
+      },
+      {
+        "title": "Duchenne Muscular Dystrophy Competitive Landscape Analysis",
+        "url": "https://eureka.patsnap.com/blog/life-science/duchenne-muscular-dystrophy-pipeline-approvals-competitive-landscape-2025-2026/",
+        "date": ""
+      },
+      {
+        "title": "PBGENE-DMD Competitive Landscape Analysis 2026 | Eureka",
+        "url": "https://eureka.patsnap.com/blog/life-science/pbgene-dmd-competitive-landscape-analysis/",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments | Morningstar",
+        "url": "https://www.morningstar.com/news/business-wire/20260805692741/sarepta-therapeutics-announces-second-quarter-2026-financial-results-and-recent-corporate-developments",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments | Morningstar",
+        "url": "https://www.morningstar.com/news/business-wire/20260805692741/sarepta-therapeutics-announces-second-quarter-2026-financial-results-and-recent-corporate-developments",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Announces First Clinical Data from siRNA Pipeline Targeting FSHD1 and DM1",
+        "url": "https://www.businesswire.com/news/home/20260325621936/en/Sarepta-Announces-First-Clinical-Data-from-siRNA-Pipeline-Targeting-FSHD1-and-DM1",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Reports Encouraging Clinical Data from siRNA Pipeline for FSHD1 and DM1 - Global Genes",
+        "url": "https://globalgenes.org/raredaily/sarepta-reports-encouraging-clinical-data-from-sirna-pipeline-for-fshd1-and-dm1/",
+        "date": ""
+      },
+      {
+        "title": "Sarepta: Caution Still Warranted Despite FDA's Gene Therapy Friendly Stance (NASDAQ:SRPT) | Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4916032-sarepta-caution-still-warranted-despite-fdas-gene-therapy-friendly-stance",
+        "date": ""
+      },
+      {
+        "title": "DailyTickers Expert | Analysis SRPT (Sarepta Therapeutics) | March 25, 2026",
+        "url": "https://articles.dailytickers.com/analyses/SRPT/",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Saga Has 'Gone on Too Long' as Competitors Catch Up - BioSpace",
+        "url": "https://www.biospace.com/drug-development/sarepta-saga-has-gone-on-too-long-as-competitors-catch-up",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.panabee.com/news/sarepta-therapeutics-earnings-2025-annual",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Plans FDA Run for Duchenne Exon Skippers Despite Confirmatory Trial Failure - BioSpace",
+        "url": "https://www.biospace.com/drug-development/sarepta-plans-fda-run-for-duchenne-exon-skippers-despite-confirmatory-trial-failure",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Provides Regulatory Update on AMONDYS 45\u00ae and VYONDYS 53\u00ae | Sarepta Therapeutics, Inc.",
+        "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-provides-regulatory-update-amondys-45r-and-vyondys-53r",
+        "date": ""
+      },
+      {
+        "title": "Sarepta's Stock Collapsed on an Elevidys Story. What's Left Might Not Be What You Think.",
+        "url": "https://www.ainvest.com/news/sarepta-stock-collapsed-elevidys-story-left-2608/",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Announces FDA Acceptance of sNDAs for AMONDYS 45\u00ae and VYONDYS 53\u00ae",
+        "url": "https://investor.wedbush.com/wedbush/article/bizwire-2026-6-30-sarepta-announces-fda-acceptance-of-sndas-for-amondys-45-and-vyondys-53",
+        "date": ""
+      },
+      {
+        "title": "Sarepta secures early 2027 FDA decision for Duchenne drugs, pushing past confirmatory fail - BioSpace",
+        "url": "https://www.biospace.com/fda/sarepta-secures-early-2027-fda-decision-for-duchenne-drugs-pushing-past-confirmatory-fail",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics to Present New Long-Term and Safety Data Across Gene Therapy and Exon-Skipping Programs at 2026 Muscular Dystrophy Association Clinical & Scientific Congress | Sarepta Therapeutics, Inc.",
+        "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-present-new-long-term-and-safety-data",
+        "date": ""
+      },
+      {
+        "title": "Sarepta to Share First Clinical Data from siRNA Pipeline Targeting FSHD1 and DM1",
+        "url": "https://www.businesswire.com/news/home/20260324252978/en/Sarepta-to-Share-First-Clinical-Data-from-siRNA-Pipeline-Targeting-FSHD1-and-DM1",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics, Inc. (SRPT) \u2014 Pipeline, Catalysts & Financial Overview | BioSniper",
+        "url": "https://biosniper.co/company/SRPT",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics, Inc. (SRPT) \u2014 Pipeline, Catalysts & Financial Overview | BioSniper",
+        "url": "https://biosniper.co/company/SRPT",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [
+      {
+        "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+        "url": "https://finance.yahoo.com/healthcare/articles/sareptas-q2-earnings-sales-beat-180500321.html",
+        "date": ""
+      },
+      {
+        "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments",
+        "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+        "date": ""
+      }
+    ],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "balanced",
+    "thesis": "Sarepta\u2019s robust PMO franchise, strong cash position, and cost\u2011cutting management transition provide a solid operational foundation, but regulatory setbacks for Elevidys and the failure of exon\u2011skipping confirmatory trials create significant headwinds that keep the stock\u2019s upside limited until these risks are mitigated.",
+    "drivers": [
+      {
+        "name": "Elevidys Regulatory & Market Risk",
+        "direction": "headwind",
+        "evidence": "Two patient deaths, a new boxed warning, and FDA\u2011mandated post\u2011marketing study underscore ongoing safety concerns that could lead to further label restrictions and sales decline.",
+        "source": {
+          "title": "Sarepta Narrows 2026 Revenue Guidance on Elevidys Q2 Sales Dip | Precision Medicine Online",
+          "url": "https://www.precisionmedicineonline.com/business-news/sarepta-narrows-2026-revenue-guidance-elevidys-q2-sales-dip",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "risk",
+        "score_why": "Regulatory actions and safety events directly threaten revenue and increase liability risk."
+      },
+      {
+        "name": "Exon\u2011Skipping Approval Prospects",
+        "direction": "headwind",
+        "evidence": "Phase 3 confirmatory trials failed to meet primary endpoints, indicating a high likelihood that full approval will not be granted.",
+        "source": {
+          "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments | Sarepta Therapeutics, Inc.",
+          "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-announces-second-quarter-2026-financial",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "risk",
+        "score_why": "Failure to secure approval eliminates a key growth driver and erodes future revenue prospects."
+      },
+      {
+        "name": "PMO Franchise Stability",
+        "direction": "tailwind",
+        "evidence": "PMO products have flat or slightly positive revenue, >90% adherence, and a 75% gross margin, providing a reliable cash\u2011flow foundation.",
+        "source": {
+          "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments | Sarepta Therapeutics, Inc.",
+          "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-announces-second-quarter-2026-financial",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.0,
+        "category": "fundamentals",
+        "score_why": "Consistent revenue and high margins support ongoing profitability and cash generation."
+      },
+      {
+        "name": "Management Transition & Execution",
+        "direction": "tailwind",
+        "evidence": "Michael Severino\u2019s appointment and a 36% workforce reduction have cut SG&A costs and streamlined operations, improving execution and cost discipline.",
+        "source": {
+          "title": "Sarepta reports Q2 2026 results and narrows guidance | SRPT 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/SRPT/8-k-sarepta-therapeutics-inc-reports-material-event-d83c607b2a19.html",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.0,
+        "category": "fundamentals",
+        "score_why": "Leadership changes and cost reductions enhance operational efficiency and future earnings."
+      },
+      {
+        "name": "Cash Position & Financing Environment",
+        "direction": "tailwind",
+        "evidence": "A $945\u202fM cash balance, low borrowing costs, and a healthy yield curve provide a cushion to fund pipeline development and absorb regulatory setbacks.",
+        "source": {
+          "title": "Sarepta reports Q2 2026 results and narrows guidance | SRPT 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/SRPT/8-k-sarepta-therapeutics-inc-reports-material-event-d83c607b2a19.html",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.0,
+        "category": "fundamentals",
+        "score_why": "Strong liquidity reduces financial risk and supports continued R&D investment."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "Sarepta\u2019s PMO franchise remains a robust revenue engine, delivering $230.6\u202fM in Q2 2026 and flat YoY growth while beating analyst estimates.",
+        "evidence": "PMO product revenues $230.6M, flat YoY, beat estimate $225.9M.",
+        "source": {
+          "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The company\u2019s high gross margin of 75% on net product revenues demonstrates efficient cost management and strong pricing power.",
+        "evidence": "Gross margin on net product revenues 75% in Q2 2026.",
+        "source": {
+          "title": "Sarepta Therapeutics Inc (SRPT) (Q2 2026) Earnings Call Highlights: Strong Profitability and ...",
+          "url": "https://ca.finance.yahoo.com/news/sarepta-therapeutics-inc-srpt-q2-051140771.html",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Non\u2011GAAP operating income of $86.5\u202fM in Q2 2026 underscores Sarepta\u2019s profitability once non\u2011cash items are excluded.",
+        "evidence": "GAAP operating income Q2 2026 $13.3M; non\u2011GAAP operating income $86.5M.",
+        "source": {
+          "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments | Sarepta Therapeutics, Inc.",
+          "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-announces-second-quarter-2026-financial",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Non\u2011GAAP net income of $78.6\u202fM ($0.64 per diluted share) in Q2 2026 signals healthy earnings potential.",
+        "evidence": "Non\u2011GAAP net income Q2 2026 $78.6M, or $0.64 per diluted share.",
+        "source": {
+          "title": "Sarepta reports Q2 2026 results and narrows guidance | SRPT 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/SRPT/8-k-sarepta-therapeutics-inc-reports-material-event-d83c607b2a19.html",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "A strong cash position of $945\u202fM, up $197\u202fM from the prior quarter, provides ample runway for R&D, commercialization, and potential acquisitions.",
+        "evidence": "Cash position $945M, increase $197M from prior quarter.",
+        "source": {
+          "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Guidance for 2026 net product revenue of $1.2\u2011$1.3\u202fB indicates continued top\u2011line growth driven by Elevidys and exon\u2011skipping therapies.",
+        "evidence": "2026 net product revenue guidance narrowed to $1.2-$1.3B from $1.2-$1.4B.",
+        "source": {
+          "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+          "date": ""
+        },
+        "strength": "medium"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Sarepta\u2019s Q2 2026 revenue fell 34% YoY to $401.3M, signaling a sharp top\u2011line contraction.",
+        "evidence": "Q2 2026 total revenue $401.3M, down 34% YoY.",
+        "source": {
+          "title": "Sarepta Narrows 2026 Revenue Guidance on Elevidys Q2 Sales Dip | Precision Medicine Online",
+          "url": "https://www.precisionmedicineonline.com/business-news/sarepta-narrows-2026-revenue-guidance-elevidys-q2-sales-dip",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Elevidys sales plunged 65% YoY to $98.1M after the FDA narrowed its label following safety concerns.",
+        "evidence": "Elevidys sales fell due to FDA narrowing its label after safety concerns.",
+        "source": {
+          "title": "Sarepta Narrows 2026 Revenue Guidance on Elevidys Q2 Sales Dip | Precision Medicine Online",
+          "url": "https://www.precisionmedicineonline.com/business-news/sarepta-narrows-2026-revenue-guidance-elevidys-q2-sales-dip",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "The FDA added a boxed warning for Elevidys and removed the non\u2011ambulatory indication, sharply reducing the eligible patient pool.",
+        "evidence": "FDA added boxed warning for Elevidys, citing risk of acute serious liver injury and acute liver failure.",
+        "source": {
+          "title": "FDA Approves New Safety Warning and Revised Indication that Limits Use for Elevidys Following Reports of Fatal Liver Injury",
+          "url": "https://content.govdelivery.com/accounts/USFDA/bulletins/3fb79a1?reqfrom=share%2F",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Two DMD patients died after Elevidys treatment, heightening regulatory scrutiny and potential liability.",
+        "evidence": "Elevidys gene therapy caused the deaths of two patients in 2025, leading to falling sales and increased regulatory scrutiny.",
+        "source": {
+          "title": "Sarepta Therapeutics CEO Ingram to retire by year end | Reuters",
+          "url": "https://www.reuters.com/legal/litigation/sarepta-therapeutics-ceo-ingram-retire-by-year-end-2026-02-26/",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "A required post\u2011marketing observational study will increase costs and delay revenue recognition.",
+        "evidence": "FDA requires Sarepta to conduct a post\u2011marketing observational study to further assess serious liver injury risk with Elevidys.",
+        "source": {
+          "title": "FDA Approves New Safety Warning and Revised Indication for ELEVIDYS - Parent Project Muscular Dystrophy",
+          "url": "https://www.parentprojectmd.org/fda-approves-new-safety-warning-and-revised-indication-for-elevidys/",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "The confirmatory Phase 3 trials for Amondys\u202f45 and Vyondys\u202f53 failed to improve motor function, undermining future product prospects.",
+        "evidence": "Vyondys 53 and Amondys 45 failed their Phase 3 confirmatory trial, missing the primary endpoint required for full FDA approval.",
+        "source": {
+          "title": "Despite Phase 3 Failure, Sarepta Still Sees Path for Muscle Disease Drugs to Secure Full FDA Approval - MedCity News",
+          "url": "https://medcitynews.com/2025/11/sarepta-duchenne-muscular-dystrophy-vyondys-amondys-phase-3-failure-dmd-srpt/",
+          "date": ""
+        },
+        "severity": "severe"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Elevidys Regulatory & Market Risk",
+        "bull": "Updated Elevidys labeling removes the non\u2011ambulatory indication, potentially reducing safety risk and allowing sales to rebound if post\u2011marketing data confirm acceptable safety.",
+        "bull_source": {
+          "title": "Sarepta Announces FDA\u2019s Approval of Updated ELEVIDYS Prescribing Information | Sarepta Therapeutics, Inc.",
+          "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-announces-fdas-approval-updated-elevidys-prescribing",
+          "date": ""
+        },
+        "bear": "Two patient deaths, a new boxed warning, and FDA\u2011mandated post\u2011marketing study underscore ongoing safety concerns that could lead to further label restrictions and sales decline.",
+        "bear_source": {
+          "title": "Sarepta Therapeutics CEO Ingram to retire by year end | Reuters",
+          "url": "https://www.reuters.com/legal/litigation/sarepta-therapeutics-ceo-ingram-retire-by-year-end-2026-02-26/",
+          "date": ""
+        },
+        "verdict": "Bear won because the concrete evidence of deaths and a boxed warning indicates regulatory risk outweighs the potential rebound.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Exon\u2011Skipping Approval Prospects (Amondys45 & Vyondys53)",
+        "bull": "FDA has accepted supplemental NDAs for full\u2011label conversions, with a decision expected in February 2027, which could expand the patient base and revenue stream.",
+        "bull_source": {
+          "title": "Sarepta Announces FDA Acceptance of sNDAs for AMONDYS 45\u00ae and VYONDYS 53\u00ae",
+          "url": "https://investor.wedbush.com/wedbush/article/bizwire-2026-6-30-sarepta-announces-fda-acceptance-of-sndas-for-amondys-45-and-vyondys-53",
+          "date": ""
+        },
+        "bear": "Phase 3 confirmatory trials failed to meet primary endpoints, indicating a high likelihood that full approval will not be granted.",
+        "bear_source": {
+          "title": "Despite Phase 3 Failure, Sarepta Still Sees Path for Muscle Disease Drugs to Secure Full FDA Approval - MedCity News",
+          "url": "https://medcitynews.com/2025/11/sarepta-duchenne-muscular-dystrophy-vyondys-amondys-phase-3-failure-dmd-srpt/",
+          "date": ""
+        },
+        "verdict": "Bear won because the trial failure provides concrete evidence of approval risk.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "PMO Franchise Stability",
+        "bull": "PMO products have flat or slightly positive revenue, >90% adherence, and a 75% gross margin, providing a reliable cash\u2011flow foundation.",
+        "bull_source": {
+          "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+          "date": ""
+        },
+        "bear": "The DMD landscape is crowded with >75 companies and 57 Phase\u202f3 trials, and upcoming FDA decisions on Amondys45 and Vyondys53 could erode market share.",
+        "bear_source": {
+          "title": "Duchenne Muscular Dystrophy Competitive Landscape Analysis",
+          "url": "https://eureka.patsnap.com/blog/life-science/duchenne-muscular-dystrophy-pipeline-approvals-competitive-landscape-2025-2026/",
+          "date": ""
+        },
+        "verdict": "Bull won because current revenue, margin, and adherence data demonstrate stability outweighing competitive risk.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Management Transition & Execution",
+        "bull": "Michael Severino\u2019s appointment and a 36% workforce reduction have cut SG&A costs and streamlined operations, improving execution and cost discipline.",
+        "bull_source": {
+          "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+          "url": "",
+          "date": ""
+        },
+        "bear": "Leadership transition risks, loss of institutional knowledge, and morale issues could disrupt operations and delay product launches.",
+        "bear_source": {
+          "title": "Sarepta Axes 500, 36% of Workforce, in Restructuring after DMD Patient Deaths",
+          "url": "https://www.genengnews.com/gen-edge/sarepta-axes-500-36-of-workforce-in-restructuring-after-dmd-patient-deaths/",
+          "date": ""
+        },
+        "verdict": "Bull won because cost reductions and fresh leadership are likely to improve execution.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Cash Position & Financing Environment",
+        "bull": "A $945\u202fM cash balance, low borrowing costs, and a healthy yield curve provide a cushion to fund pipeline development and absorb regulatory setbacks.",
+        "bull_source": {
+          "title": "Sarepta Therapeutics Announces Second Quarter 2026 Financial Results and Recent Corporate Developments",
+          "url": "",
+          "date": ""
+        },
+        "bear": "High burn rates, a $713\u202fM net loss in 2025, and potential regulatory penalties could strain cash and force dilution.",
+        "bear_source": {
+          "title": "",
+          "url": "https://www.panabee.com/news/sarepta-therapeutics-earnings-2025-annual",
+          "date": ""
+        },
+        "verdict": "Bull won because the strong cash cushion outweighs current burn and regulatory risk.",
+        "verdict_side": "bull"
+      }
+    ],
+    "falsifiers": [
+      "Elevidys sales rebound to >$120\u202fM in Q3 2026",
+      "Elevidys receives full FDA approval without further safety incidents",
+      "Exon\u2011skipping therapies (Amondys\u202f45/Vyondys\u202f53) receive full FDA approval",
+      "PMO revenue exceeds $250\u202fM YoY in Q3 2026",
+      "SG&A costs reduce by >$50\u202fM in FY2027",
+      "Cash balance rises above $1\u202fB by Q4 2026"
+    ],
+    "confidence": "medium",
+    "confidence_why": "The positive fundamentals are offset by significant regulatory and approval risks, resulting in a neutral net assessment."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "short",
+    "sector_score": -1.4,
+    "sector_why": "svc new orders contracting: Health Care & Social Assistance",
+    "industry_flags": [],
+    "respondent_comments": [
+      {
+        "industry": "Health Care & Social Assistance",
+        "quote": "In the tertiary care segment of hospital operations, patient volumes, revenue and activity across the board are up, and given the economic climate, this was an unexpected result. Supply chains are operating as expected: There are few, if any, impactful back orders, deliveries are consistent and fill rates are up. Employment is still in high demand, yet our institution appears to be faring well as full-time employee positions are filling without excessive recruitment. Forecast remains above average."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The current macro backdrop shows a broadly expanding economy with solid PMI and new orders, a mild upward yield curve, and low VIX, which collectively support favorable financing conditions for Sarepta. However, the sector tilt signals contraction in health\u2011care new orders, tempering the upside for end\u2011market demand for its rare\u2011disease products. Low borrowing costs and a healthy cash position help working capital, while the company\u2019s restructuring and regulatory scrutiny may constrain capex. Overall, the macro environment provides a mixed but generally supportive backdrop for Sarepta\u2019s fundamentals.",
+    "implications": [
+      {
+        "channel": "financing costs",
+        "direction": "helps",
+        "why": "The mild upward yield curve and low VIX keep borrowing rates low, reducing debt servicing costs and improving cash flow."
+      },
+      {
+        "channel": "working capital",
+        "direction": "helps",
+        "why": "Low financing costs and a strong cash position enable better liquidity management and reduce working capital strain."
+      },
+      {
+        "channel": "end-market demand",
+        "direction": "mixed",
+        "why": "Economic expansion boosts overall health\u2011care spending, but the sector tilt short signals contraction in new health\u2011care orders, partially offsetting demand growth."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "mixed",
+        "why": "Sarepta\u2019s high\u2011priced gene therapies face regulatory constraints that limit pricing flexibility, while market growth supports premium pricing."
+      },
+      {
+        "channel": "input costs",
+        "direction": "helps",
+        "why": "Commodity price stability in a low\u2011inflation environment keeps manufacturing and raw material costs lower, improving margins."
+      },
+      {
+        "channel": "capex",
+        "direction": "hurts",
+        "why": "Regulatory scrutiny and workforce reductions reduce the company\u2019s willingness and ability to invest in new development projects."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "FDA decision on full approval for Amondys\u202f45 and Vyondys\u202f53",
+      "window": "Feb\u202f28\u202f2027",
+      "expected": "If approved, revenue from these exon\u2011skipping therapies will increase and market share may expand; if denied, revenue remains limited to current indications and investor sentiment may weaken.",
+      "source": {
+        "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+        "date": ""
+      }
+    },
+    {
+      "event": "Investor presentation at MDA Clinical & Scientific Congress",
+      "window": "Feb\u202f26\u202f2026",
+      "expected": "Positive long\u2011term efficacy and safety data could support future approvals and boost investor confidence; negative or inconclusive data could dampen expectations and pressure the stock price.",
+      "source": {
+        "title": "Sarepta Therapeutics to Present New Long-Term and Safety Data Across Gene Therapy and Exon-Skipping Programs at 2026 Muscular Dystrophy Association Clinical & Scientific Congress | Sarepta Therapeutics, Inc.",
+        "url": "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-present-new-long-term-and-safety-data",
+        "date": ""
+      }
+    },
+    {
+      "event": "Webcast of Phase\u202f1/2 ascending dose studies of SRP\u20111001 (FSHD1) and SRP\u20111003 (DM1)",
+      "window": "Mar\u202f25\u202f2026",
+      "expected": "Positive safety and dose\u2011response data could accelerate pipeline progress and attract investment; negative or limited data could delay development and reduce upside.",
+      "source": {
+        "title": "Sarepta to Share First Clinical Data from siRNA Pipeline Targeting FSHD1 and DM1",
+        "url": "https://www.businesswire.com/news/home/20260324252978/en/Sarepta-to-Share-First-Clinical-Data-from-siRNA-Pipeline-Targeting-FSHD1-and-DM1",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q3\u202f2026 earnings release",
+      "window": "July\u202f2026",
+      "expected": "Earnings above guidance could lift the stock and improve market perception; earnings below guidance could lead to a decline in share price and raise concerns about financial health.",
+      "source": {
+        "title": "Sarepta Therapeutics Q2 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/healthcare/articles/sarepta-therapeutics-q2-earnings-call-050356535.html",
+        "date": ""
+      }
+    },
+    {
+      "event": "ENDEAVOR Cohort\u202f8 enrollment completion",
+      "window": "Q4\u202f2026",
+      "expected": "Successful enrollment will provide critical data for gene\u2011therapy development and may support regulatory submissions; failure to enroll could delay data collection and postpone potential approvals.",
+      "source": {
+        "title": "Sarepta's Q2 Earnings & Sales Beat Estimates, '26 Outlook Updated",
+        "url": "",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

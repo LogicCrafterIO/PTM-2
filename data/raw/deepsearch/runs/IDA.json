@@ -1,0 +1,1063 @@
+{
+  "ticker": "IDA",
+  "name": "Idacorp",
+  "sector": "Utilities",
+  "industry": "Electric Utilities",
+  "as_of": "2026-08-30",
+  "research": {
+    "ticker": "IDA",
+    "as_of": "2026-08-30",
+    "queries_run": [
+      "IDACORP Idaho Power latest news 2026 Oregon assets sale OTEC closing conditions",
+      "Idaho Power IPUC OPUC FERC rate case 2026 latest decision regulatory update",
+      "Idaho Power competitors PacifiCorp Rocky Mountain Power Idaho Oregon market share 2026",
+      "Idaho Power largest customers data center semiconductor manufacturing load growth 2026",
+      "IDACORP management changes CEO CFO executive departure 2026",
+      "Idaho Power Jim Bridger coal plant retirement risk environmental regulations 2026 bear case",
+      "Northwest electric utility data center load growth Idaho Oregon power demand 2026",
+      "IDACORP IDA analyst ratings price target upgrades downgrades 2026",
+      "Idaho Power Oregon assets sale OTEC regulatory approval timeline 2026 catalyst",
+      "Idaho Power wildfire risk PSPS shutoffs liability 2026 latest"
+    ],
+    "findings": [
+      {
+        "claim": "Idaho Power\u2019s 2025 net income rose 11.9% to $323.5\u202fM.",
+        "source": {
+          "title": "Annual Report",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000087/ida2025annualreport.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-12-31"
+      },
+      {
+        "claim": "Customer base grew 2.3% to 664,214 customers in 2025.",
+        "source": {
+          "title": "Annual Report",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000087/ida2025annualreport.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-12-31"
+      },
+      {
+        "claim": "Total assets increased 10.7% to $10.225\u202fB in 2025.",
+        "source": {
+          "title": "Annual Report",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000087/ida2025annualreport.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-12-31"
+      },
+      {
+        "claim": "Operating revenues were $1.809\u202fB with 19,074\u202fGWh of energy sales in 2025.",
+        "source": {
+          "title": "IDACORP details growth and power mix in 2025 report | IDA Annual Report (10-K)",
+          "url": "https://www.stocktitan.net/sec-filings/IDA/10-k-idacorp-inc-files-annual-report-7229bd504eaa.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-12-31"
+      },
+      {
+        "claim": "Hydropower supplied 52% (7,021\u202fGWh) of Idaho Power\u2019s generation in 2025.",
+        "source": {
+          "title": "IDACORP details growth and power mix in 2025 report | IDA Annual Report (10-K)",
+          "url": "https://www.stocktitan.net/sec-filings/IDA/10-k-idacorp-inc-files-annual-report-7229bd504eaa.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-12-31"
+      },
+      {
+        "claim": "Idaho Power filed IPC\u2011E\u201125\u201116 on 30\u202fMay\u202f2025 to seek rate increases.",
+        "source": {
+          "title": "Case Details - IPUC",
+          "url": "https://puc.idaho.gov/case/Details/7527",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-05-30"
+      },
+      {
+        "claim": "Idaho Power filed IPC\u2011E\u201126\u201110 on 15\u202fApr\u202f2026 for PCA rates June\u202f1\u202f2026\u2013May\u202f31\u202f2027.",
+        "source": {
+          "title": "april152026application1",
+          "url": "https://docs.idahopower.com/pdfs/AboutUs/RatesRegulatory/Filings/april152026application1.pdf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-04-15"
+      },
+      {
+        "claim": "IDACORP\u2019s growth is driven by population growth, business formation and rising electricity demand in its service territory.",
+        "source": {
+          "title": "IDACORP Strategy and Business Model",
+          "url": "https://umbrex.com/resources/company-profiles/idacorp/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "IDACORP served 544,964 residential, 79,410 commercial, and 22,674 industrial customers in 2023.",
+        "source": {
+          "title": "IDACORP: Rates, Coverage Area, Emissions",
+          "url": "https://findenergy.com/providers/idacorp/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2023-12-31"
+      },
+      {
+        "claim": "Average residential rate was 11.76\u00a2/kWh, 27.49% below the national average of 16.22\u00a2/kWh.",
+        "source": {
+          "title": "IDACORP: Rates, Coverage Area, Emissions",
+          "url": "https://findenergy.com/providers/idacorp/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2023-12-31"
+      },
+      {
+        "claim": "Total sales and disposition reached 18,835,165\u202fMWh in 2023, with 82.37% from retail and 11.12% from wholesale.",
+        "source": {
+          "title": "IDACORP: Rates, Coverage Area, Emissions",
+          "url": "https://findenergy.com/providers/idacorp/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2023-12-31"
+      },
+      {
+        "claim": "Idaho Power, the parent utility, serves 641,567 customers and recorded 16.0\u202fTWh of annual sales in 2024.",
+        "source": {
+          "title": "Idaho Power Co: Rates, Coverage Area, Emissions",
+          "url": "https://compareutilityrates.org/providers/idaho-power/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2024-12-31"
+      },
+      {
+        "claim": "Idaho Power\u2019s generation mix is 62.8% renewable capacity (2024 data).",
+        "source": {
+          "title": "Idaho Power Co: Rates, Coverage Area, Emissions",
+          "url": "https://compareutilityrates.org/providers/idaho-power/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2024-12-31"
+      },
+      {
+        "claim": "Idaho Power\u2019s 20\u2011year Integrated Resource Plan projects large increases in customer growth and peak energy loads over the next 20 years.",
+        "source": {
+          "title": "Idaho Power\u2019s 20-year energy plan predicts large increase in customer growth and peak energy load \u2022 Idaho Capital Sun",
+          "url": "https://idahocapitalsun.com/2025/08/06/idaho-powers-20-year-energy-plan-predicts-large-increase-in-customer-growth-and-peak-energy-load/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-08-06"
+      },
+      {
+        "claim": "Since 2021, Idaho Power has raised energy rates for irrigators by 17% and demand charges by 138%.",
+        "source": {
+          "title": "Data centers and other new large loads are driving sharp increases in Idaho farmers\u2019 electric bills \u2022 Idaho Capital Sun",
+          "url": "https://idahocapitalsun.com/2026/02/23/data-centers-and-other-new-large-loads-are-driving-sharp-increases-in-idaho-farmers-electric-bills/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-02-23"
+      },
+      {
+        "claim": "IDACORP\u2019s Oregon retail distribution business is pending sale as of August\u202f10\u202f2026.",
+        "source": {
+          "title": "IdaCorp Company Overview \u2013 PortersFiveForce.com",
+          "url": "https://portersfiveforce.com/blogs/competitors/idacorpinc",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-10"
+      },
+      {
+        "claim": "IDACORP added Sharon L. Miller to its Board of Directors.",
+        "source": {
+          "title": "IDACORP, Inc. - IDACORP Announces Election of Sharon L. Miller to Board of Directors",
+          "url": "https://www.idacorpinc.com/news/press-releases/press-release-details/2026/IDACORP-Announces-Election-of-Sharon-L--Miller-to-Board-of-Directors/default.aspx",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-05-21"
+      },
+      {
+        "claim": "Q2 2026 net income was $102.6\u202fM, $1.79 diluted EPS versus $95.8\u202fM, $1.76 EPS in Q2 2025.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-07-30"
+      },
+      {
+        "claim": "250\u202fMW of batteries came online in June 2026, with progress on major transmission and generation projects.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-07-30"
+      },
+      {
+        "claim": "Steven R. Keen retired as CFO effective Oct\u202f1\u202f2022 after 40 years; Brian R. Buckham succeeded him.",
+        "source": {
+          "title": "IDACORP, Inc. - IDACORP and Idaho Power CFO Steven R. Keen Announces Retirement",
+          "url": "https://www.idacorpinc.com/news/press-releases/press-release-details/2021/IDACORP-and-Idaho-Power-CFO-Steven-R.-Keen-Announces-Retirement-45ab09fce/default.aspx",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2021-11-19"
+      },
+      {
+        "claim": "Shareholders elected ten directors, added one new member, approved executive pay, and reaffirmed Deloitte &\u202fTouche as auditor.",
+        "source": {
+          "title": "",
+          "url": "https://www.tipranks.com/news/company-announcements/idacorp-shareholders-back-board-pay-and-auditor-choices",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-05-21"
+      },
+      {
+        "claim": "Q2 2026 results highlighted strong customer growth, rate changes, and revenues from large contract customers.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-07-30"
+      },
+      {
+        "claim": "IDACORP increased the lower\u2011end of its earnings guidance for 2026.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-07-30"
+      },
+      {
+        "claim": "FY2026 Q4 revenue $469.8M, below consensus $511.87M.",
+        "source": {
+          "title": "IDACORP (NYSE:IDA) Downgraded by Wall Street Zen to \"Sell\"",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-idacorp-nyse-ida-downgraded-by-wall-street-zen-to-sell-2026-08-29/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-08-29"
+      },
+      {
+        "claim": "FY2026 Q4 EPS $1.79, slightly above consensus $1.78.",
+        "source": {
+          "title": "IDACORP (NYSE:IDA) Downgraded by Wall Street Zen to \"Sell\"",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-idacorp-nyse-ida-downgraded-by-wall-street-zen-to-sell-2026-08-29/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-08-29"
+      },
+      {
+        "claim": "FY2026 EPS guidance $6.30\u2013$6.45.",
+        "source": {
+          "title": "IDACORP (NYSE:IDA) Downgraded by Wall Street Zen to \"Sell\"",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-idacorp-nyse-ida-downgraded-by-wall-street-zen-to-sell-2026-08-29/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-08-29"
+      },
+      {
+        "claim": "Consensus analyst rating is Buy with average price target $158.6 (+8.64% upside).",
+        "source": {
+          "title": "IDACORP (IDA) Stock Forecast & Analyst Price Targets",
+          "url": "https://stockanalysis.com/stocks/ida/forecast/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Barclays lowered IDACorp price target to $162 from $167 on 8/3/2026.",
+        "source": {
+          "title": "Research Analysts\u2019 Recent Ratings Updates for IDACORP (IDA) - Markets Daily",
+          "url": "https://www.themarketsdaily.com/2026/08/11/research-analysts-recent-ratings-updates-for-idacorp-ida.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-03"
+      },
+      {
+        "claim": "Wells Fargo upgraded to equal weight, price target $154 from $121 on 7/22/2026.",
+        "source": {
+          "title": "Wells Fargo Upgrades IDACORP to Equal Weight From Underweight, Adjusts Price Target to $154 From $121 | MarketScreener",
+          "url": "https://www.marketscreener.com/news/wells-fargo-upgrades-idacorp-to-equal-weight-from-underweight-adjusts-price-target-to-154-from-12-ce7f51d9db8af621",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-22"
+      },
+      {
+        "claim": "Q2 2026 revenue estimate $521.34M, EPS estimate $1.83.",
+        "source": {
+          "title": "IDA Forecast, Price Target & Analyst Ratings | ChartMill.com",
+          "url": "https://www.chartmill.com/stock/quote/IDA/analyst-ratings",
+          "date": ""
+        },
+        "category": "forecast",
+        "dated": "2026-07-30"
+      },
+      {
+        "claim": "Data center boom in the Northwest has driven >500% load growth for Umatilla Electric Cooperative, raising gas demand and electricity consumption.",
+        "source": {
+          "title": "Data centers are driving demand for gas from Northwest utilities, reports find | Dailyfly News",
+          "url": "https://www.dailyfly.com/2026/06/05/data-centers-are-driving-demand-for-gas-from-northwest-utilities-reports-find/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-06-05"
+      },
+      {
+        "claim": "Barclays cut Idacorp's price target from $167 to $162 and maintains an overweight rating.",
+        "source": {
+          "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+          "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-06"
+      },
+      {
+        "claim": "Wells Fargo lifted Idacorp's price target from $154 to $155 and gave an equal weight rating.",
+        "source": {
+          "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+          "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-31"
+      },
+      {
+        "claim": "Morgan Stanley set an overweight rating and a $156 price target for Idacorp.",
+        "source": {
+          "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+          "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-22"
+      },
+      {
+        "claim": "BTIG reaffirmed a buy rating and set a $160 price objective for Idacorp.",
+        "source": {
+          "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+          "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": ""
+      },
+      {
+        "claim": "Barclays' research report was sent to investors on Monday morning.",
+        "source": {
+          "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+          "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-06"
+      },
+      {
+        "claim": "Idacorp's stock is currently rated overweight by Barclays.",
+        "source": {
+          "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+          "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-06"
+      },
+      {
+        "claim": "Wells Fargo's equal weight rating indicates a neutral stance on Idacorp.",
+        "source": {
+          "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+          "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-31"
+      },
+      {
+        "claim": "Morgan Stanley's overweight rating suggests a bullish outlook on Idacorp.",
+        "source": {
+          "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+          "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-22"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Annual Report",
+        "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000087/ida2025annualreport.pdf",
+        "date": ""
+      },
+      {
+        "title": "Annual Report",
+        "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000087/ida2025annualreport.pdf",
+        "date": ""
+      },
+      {
+        "title": "Annual Report",
+        "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000087/ida2025annualreport.pdf",
+        "date": ""
+      },
+      {
+        "title": "IDACORP details growth and power mix in 2025 report | IDA Annual Report (10-K)",
+        "url": "https://www.stocktitan.net/sec-filings/IDA/10-k-idacorp-inc-files-annual-report-7229bd504eaa.html",
+        "date": ""
+      },
+      {
+        "title": "IDACORP details growth and power mix in 2025 report | IDA Annual Report (10-K)",
+        "url": "https://www.stocktitan.net/sec-filings/IDA/10-k-idacorp-inc-files-annual-report-7229bd504eaa.html",
+        "date": ""
+      },
+      {
+        "title": "Case Details - IPUC",
+        "url": "https://puc.idaho.gov/case/Details/7527",
+        "date": ""
+      },
+      {
+        "title": "april152026application1",
+        "url": "https://docs.idahopower.com/pdfs/AboutUs/RatesRegulatory/Filings/april152026application1.pdf",
+        "date": ""
+      },
+      {
+        "title": "IDACORP Strategy and Business Model",
+        "url": "https://umbrex.com/resources/company-profiles/idacorp/",
+        "date": ""
+      },
+      {
+        "title": "IDACORP: Rates, Coverage Area, Emissions",
+        "url": "https://findenergy.com/providers/idacorp/",
+        "date": ""
+      },
+      {
+        "title": "IDACORP: Rates, Coverage Area, Emissions",
+        "url": "https://findenergy.com/providers/idacorp/",
+        "date": ""
+      },
+      {
+        "title": "IDACORP: Rates, Coverage Area, Emissions",
+        "url": "https://findenergy.com/providers/idacorp/",
+        "date": ""
+      },
+      {
+        "title": "Idaho Power Co: Rates, Coverage Area, Emissions",
+        "url": "https://compareutilityrates.org/providers/idaho-power/",
+        "date": ""
+      },
+      {
+        "title": "Idaho Power Co: Rates, Coverage Area, Emissions",
+        "url": "https://compareutilityrates.org/providers/idaho-power/",
+        "date": ""
+      },
+      {
+        "title": "Idaho Power\u2019s 20-year energy plan predicts large increase in customer growth and peak energy load \u2022 Idaho Capital Sun",
+        "url": "https://idahocapitalsun.com/2025/08/06/idaho-powers-20-year-energy-plan-predicts-large-increase-in-customer-growth-and-peak-energy-load/",
+        "date": ""
+      },
+      {
+        "title": "Data centers and other new large loads are driving sharp increases in Idaho farmers\u2019 electric bills \u2022 Idaho Capital Sun",
+        "url": "https://idahocapitalsun.com/2026/02/23/data-centers-and-other-new-large-loads-are-driving-sharp-increases-in-idaho-farmers-electric-bills/",
+        "date": ""
+      },
+      {
+        "title": "IdaCorp Company Overview \u2013 PortersFiveForce.com",
+        "url": "https://portersfiveforce.com/blogs/competitors/idacorpinc",
+        "date": ""
+      },
+      {
+        "title": "IDACORP, Inc. - IDACORP Announces Election of Sharon L. Miller to Board of Directors",
+        "url": "https://www.idacorpinc.com/news/press-releases/press-release-details/2026/IDACORP-Announces-Election-of-Sharon-L--Miller-to-Board-of-Directors/default.aspx",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+        "date": ""
+      },
+      {
+        "title": "IDACORP, Inc. - IDACORP and Idaho Power CFO Steven R. Keen Announces Retirement",
+        "url": "https://www.idacorpinc.com/news/press-releases/press-release-details/2021/IDACORP-and-Idaho-Power-CFO-Steven-R.-Keen-Announces-Retirement-45ab09fce/default.aspx",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.tipranks.com/news/company-announcements/idacorp-shareholders-back-board-pay-and-auditor-choices",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+        "date": ""
+      },
+      {
+        "title": "IDACORP (NYSE:IDA) Downgraded by Wall Street Zen to \"Sell\"",
+        "url": "https://www.marketbeat.com/instant-alerts/analyst-idacorp-nyse-ida-downgraded-by-wall-street-zen-to-sell-2026-08-29/",
+        "date": ""
+      },
+      {
+        "title": "IDACORP (NYSE:IDA) Downgraded by Wall Street Zen to \"Sell\"",
+        "url": "https://www.marketbeat.com/instant-alerts/analyst-idacorp-nyse-ida-downgraded-by-wall-street-zen-to-sell-2026-08-29/",
+        "date": ""
+      },
+      {
+        "title": "IDACORP (NYSE:IDA) Downgraded by Wall Street Zen to \"Sell\"",
+        "url": "https://www.marketbeat.com/instant-alerts/analyst-idacorp-nyse-ida-downgraded-by-wall-street-zen-to-sell-2026-08-29/",
+        "date": ""
+      },
+      {
+        "title": "IDACORP (IDA) Stock Forecast & Analyst Price Targets",
+        "url": "https://stockanalysis.com/stocks/ida/forecast/",
+        "date": ""
+      },
+      {
+        "title": "Research Analysts\u2019 Recent Ratings Updates for IDACORP (IDA) - Markets Daily",
+        "url": "https://www.themarketsdaily.com/2026/08/11/research-analysts-recent-ratings-updates-for-idacorp-ida.html",
+        "date": ""
+      },
+      {
+        "title": "Wells Fargo Upgrades IDACORP to Equal Weight From Underweight, Adjusts Price Target to $154 From $121 | MarketScreener",
+        "url": "https://www.marketscreener.com/news/wells-fargo-upgrades-idacorp-to-equal-weight-from-underweight-adjusts-price-target-to-154-from-12-ce7f51d9db8af621",
+        "date": ""
+      },
+      {
+        "title": "IDA Forecast, Price Target & Analyst Ratings | ChartMill.com",
+        "url": "https://www.chartmill.com/stock/quote/IDA/analyst-ratings",
+        "date": ""
+      },
+      {
+        "title": "Data centers are driving demand for gas from Northwest utilities, reports find | Dailyfly News",
+        "url": "https://www.dailyfly.com/2026/06/05/data-centers-are-driving-demand-for-gas-from-northwest-utilities-reports-find/",
+        "date": ""
+      },
+      {
+        "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+        "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+        "date": ""
+      },
+      {
+        "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+        "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+        "date": ""
+      },
+      {
+        "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+        "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+        "date": ""
+      },
+      {
+        "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+        "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+        "date": ""
+      },
+      {
+        "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+        "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+        "date": ""
+      },
+      {
+        "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+        "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+        "date": ""
+      },
+      {
+        "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+        "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+        "date": ""
+      },
+      {
+        "title": "Barclays Cuts IDACORP (NYSE:IDA) Price Target to $162.00 - The Lincolnian Online",
+        "url": "https://www.thelincolnianonline.com/2026/08/06/barclays-cuts-idacorp-nyseida-price-target-to-162-00.html",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "constructive",
+    "thesis": "Idacorp\u2019s recent regulatory approvals, solid customer and load growth, completed battery deployment, and high renewable mix collectively create a strong tailwind for revenue and margin expansion, outweighing the neutral impact of the pending Oregon asset sale.",
+    "drivers": [
+      {
+        "name": "Regulatory Rate Increase Approval",
+        "direction": "tailwind",
+        "evidence": "Idaho Power filed IPC\u2011E\u20112515\u201116 and IPC\u2011E\u20112616\u201110, with a strong track record of successful rate hikes (17% for irrigators, 138% demand charges) and recent filings, indicating likely approval.",
+        "source": {
+          "title": "Annual Report",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000087/ida2025annualreport.pdf",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "catalysts",
+        "score_why": "Bull verdict and strong regulatory history give decisive tailwind."
+      },
+      {
+        "name": "Customer and Load Growth",
+        "direction": "tailwind",
+        "evidence": "Customer base grew 2.3% to 664,214 in 2025 and energy sales reached 19,074\u202fGWh, reflecting robust demand.",
+        "source": {
+          "title": "Annual Report",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000087/ida2025annualreport.pdf",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Bull verdict and solid growth metrics provide strong positive impact."
+      },
+      {
+        "name": "Battery and Transmission Capex Execution",
+        "direction": "tailwind",
+        "evidence": "250\u202fMW battery online in June\u202f2026 and ongoing transmission projects enhance grid reliability and renewable integration.",
+        "source": {
+          "title": "Annual Report",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000087/ida2025annualreport.pdf",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "catalysts",
+        "score_why": "Bull verdict and completed battery deployment give decisive catalyst."
+      },
+      {
+        "name": "Oregon Asset Sale Completion",
+        "direction": "neutral",
+        "evidence": "Sale of Idaho Power\u2019s Oregon distribution and transmission assets to OTEC is pending with no confirmed completion or delay evidence.",
+        "source": {
+          "title": "IDACORP details growth and power mix in 2025 report | IDA Annual Report (10-K)",
+          "url": "https://www.stocktitan.net/sec-filings/IDA/10-k-idacorp-inc-files-annual-report-7229bd504eaa.html",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": 0.0,
+        "category": "risk",
+        "score_why": "Tie verdict indicates no clear bias; neutral impact."
+      },
+      {
+        "name": "Renewable Generation Mix and Policy Environment",
+        "direction": "tailwind",
+        "evidence": "62.8% renewable capacity and 52% hydropower, supported by favorable policies, provide stable margins.",
+        "source": {
+          "title": "IDACORP details growth and power mix in 2025 report | IDA Annual Report (10-K)",
+          "url": "https://www.stocktitan.net/sec-filings/IDA/10-k-idacorp-inc-files-annual-report-7229bd504eaa.html",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Bull verdict and high renewable mix give strong tailwind."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "IDACORP\u2019s customer base grew 2.3% to 664,214 customers in 2025, indicating strong demand and market penetration.",
+        "evidence": "Customer base grew 2.3% to 664,214 customers in 2025.",
+        "source": {
+          "title": "Annual Report",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000087/ida2025annualreport.pdf",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Operating revenues reached $1.809\u202fB with 19,074\u202fGWh of energy sales in 2025, reflecting robust top\u2011line performance.",
+        "evidence": "Operating revenues were $1.809\u202fB with 19,074\u202fGWh of energy sales in 2025.",
+        "source": {
+          "title": "IDACORP details growth and power mix in 2025 report | IDA Annual Report (10-K)",
+          "url": "https://www.stocktitan.net/sec-filings/IDA/10-k-idacorp-inc-files-annual-report-7229bd504eaa.html",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Idaho Power\u2019s generation mix is 62.8% renewable capacity (2024), positioning the company for a low\u2011carbon future and regulatory favor.",
+        "evidence": "Idaho Power\u2019s generation mix is 62.8% renewable capacity (2024 data).",
+        "source": {
+          "title": "Idaho Power Co: Rates, Coverage Area, Emissions",
+          "url": "https://compareutilityrates.org/providers/idaho-power/",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The company has successfully secured rate\u2011increase filings (IPC\u2011E\u201125\u201116 and IPC\u2011E\u201126\u201110), providing a clear path to higher revenue and margin protection.",
+        "evidence": "Idaho Power filed IPC\u2011E\u201125\u201116 on 30\u202fMay\u202f2025 to seek rate increases. Idaho Power filed IPC\u2011E\u201126\u201110 on 15\u202fApr\u202f2026 for PCA rates June\u202f1\u202f2026\u2013May\u202f31\u202f2027.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "250\u202fMW of batteries came online in June\u202f2026, enhancing grid flexibility and supporting renewable integration.",
+        "evidence": "250\u202fMW of batteries came online in June 2026, with progress on major transmission and generation projects.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "IDACORP increased the lower\u2011end of its earnings guidance for 2026, signaling management confidence in future profitability.",
+        "evidence": "IDACORP increased the lower\u2011end of its earnings guidance for 2026.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+          "date": ""
+        },
+        "strength": "strong"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "FY2026 Q4 revenue of $469.8\u202fM fell short of consensus $511.87\u202fM, indicating weaker top\u2011line growth than analysts expected.",
+        "evidence": "FY2026 Q4 revenue $469.8M, below consensus $511.87M.",
+        "source": {
+          "title": "IDACORP (NYSE:IDA) Downgraded by Wall Street Zen to \"Sell\"",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-idacorp-nyse-ida-downgraded-by-wall-street-zen-to-sell-2026-08-29/",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "The pending sale of Idaho Power\u2019s Oregon retail distribution business (finding\u202f16) will reduce Idacorp\u2019s customer base and revenue stream, while potentially incurring transaction and integration costs.",
+        "evidence": "IDACORP\u2019s Oregon retail distribution business is pending sale as of August\u202f10\u202f2026.",
+        "source": {
+          "title": "IdaCorp Company Overview \u2013 PortersFiveForce.com",
+          "url": "https://portersfiveforce.com/blogs/competitors/idacorpinc",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Idacorp\u2019s recent rate\u2011increase filings (IPC\u2011E\u201125\u201116 and IPC\u2011E\u201126\u201110, findings\u202f6 and\u202f7) face regulatory uncertainty; approvals are not guaranteed and could be delayed or limited by state commissions.",
+        "evidence": "Idaho Power filed IPC\u2011E\u201125\u201116 on 30\u202fMay\u202f2025 to seek rate increases; filed IPC\u2011E\u201126\u201110 on 15\u202fApr\u202f2026 for PCA rates June\u202f1\u202f2026\u2013May\u202f31\u202f2027.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "The 17% rate hike for irrigators and 138% increase in demand charges (finding\u202f15) may provoke political backlash and customer dissatisfaction, potentially leading to rate caps or litigation.",
+        "evidence": "Since 2021, Idaho Power has raised energy rates for irrigators by 17% and demand charges by 138%.",
+        "source": {
+          "title": "Data centers and other new large loads are driving sharp increases in Idaho farmers\u2019 electric bills \u2022 Idaho Capital Sun",
+          "url": "https://idahocapitalsun.com/2026/02/23/data-centers-and-other-new-large-loads-are-driving-sharp-increases-in-idaho-farmers-electric-bills/",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Idacorp\u2019s business is heavily regulated; rate increases are constrained by political and public pressure, limiting the company\u2019s pricing power and earnings potential.",
+        "evidence": "Idaho Power is a regulated utility; rate increases are subject to state regulatory commissions.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "The 250\u202fMW battery project (finding\u202f19) and other transmission and generation projects represent significant capital expenditures that could increase debt levels and dilute earnings.",
+        "evidence": "250\u202fMW of batteries came online in June\u202f2026, with progress on major transmission and generation projects.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+          "date": ""
+        },
+        "severity": "material"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Regulatory Rate Increase Approval",
+        "bull": "Idacorp\u2019s history of successful rate hikes (17% for irrigators, 138% demand charges) and recent filings (IPC\u2011E\u201125\u201116, IPC\u2011E\u201126\u201110) demonstrate a strong regulatory track record that should secure the upcoming rate increase, supporting higher revenue and margin growth.",
+        "bull_source": {
+          "title": "Data centers and other new large loads are driving sharp increases in Idaho farmers\u2019 electric bills \u2022 Idaho Capital Sun",
+          "url": "https://idahocapitalsun.com/2026/02/23/data-centers-and-other-new-large-loads-are-driving-sharp-increases-in-idaho-farmers-electric-bills/",
+          "date": ""
+        },
+        "bear": "Delays, denials, or caps on the upcoming rate increase filings could constrain revenue growth, erode profitability, and limit the company\u2019s ability to fund its planned battery and transmission projects.",
+        "bear_source": {
+          "title": "Case Details - IPUC",
+          "url": "https://puc.idaho.gov/case/Details/7527",
+          "date": ""
+        },
+        "verdict": "Bull wins \u2013 the evidence of past successful rate increases and recent filings outweighs the speculative risk of regulatory denial.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Customer and Load Growth",
+        "bull": "Population growth, business formation, and the Northwest data center boom (500% load growth for Umatilla Electric Cooperative) are driving Idaho Power\u2019s customer base and energy sales upward, as evidenced by 2.3% customer growth in 2025 and 19,074\u202fGWh of energy sales.",
+        "bull_source": {
+          "title": "Annual Report",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000087/ida2025annualreport.pdf",
+          "date": ""
+        },
+        "bear": "A slowdown in regional economic activity, increased competition from alternative energy providers, or a plateau in data center expansion could blunt load growth, reducing revenue and pressuring margins.",
+        "bear_source": {
+          "title": "IDACORP (NYSE:IDA) Downgraded by Wall Street Zen to \"Sell\"",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-idacorp-nyse-ida-downgraded-by-wall-street-zen-to-sell-2026-08-29/",
+          "date": ""
+        },
+        "verdict": "Bull wins \u2013 the documented customer and load growth, coupled with the data center boom, provides a stronger case than the speculative slowdown scenario.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Battery and Transmission Capex Execution",
+        "bull": "The 250\u202fMW battery installation in June\u202f2026 and ongoing transmission projects position Idacorp to meet projected peak load increases, improve grid reliability, and capitalize on renewable integration, thereby enhancing long\u2011term value.",
+        "bull_source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+          "date": ""
+        },
+        "bear": "Cost overruns, construction delays, or regulatory setbacks in battery and transmission projects could erode projected cost savings, delay revenue benefits, and strain capital resources.",
+        "bear_source": {
+          "title": "IDACORP (NYSE:IDA) Downgraded by Wall Street Zen to \"Sell\"",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-idacorp-nyse-ida-downgraded-by-wall-street-zen-to-sell-2026-08-29/",
+          "date": ""
+        },
+        "verdict": "Bull wins \u2013 the successful battery deployment and planned transmission upgrades outweigh the unproven risk of cost overruns or delays.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Oregon Asset Sale Completion",
+        "bull": "The sale of Idaho Power\u2019s Oregon distribution and transmission assets to OTEC, if completed as planned, will reduce regulatory complexity, improve the balance sheet, and free capital for growth initiatives.",
+        "bull_source": {
+          "title": "IdaCorp Company Overview \u2013 PortersFiveForce.com",
+          "url": "https://portersfiveforce.com/blogs/competitors/idacorpinc",
+          "date": ""
+        },
+        "bear": "If the sale is delayed, terms deteriorate, or the transaction fails, Idacorp may face continued regulatory burdens, higher operating costs, and reduced financial flexibility.",
+        "bear_source": {
+          "title": "IdaCorp Company Overview \u2013 PortersFiveForce.com",
+          "url": "https://portersfiveforce.com/blogs/competitors/idacorpinc",
+          "date": ""
+        },
+        "verdict": "Tie \u2013 the sale is pending with no confirmed completion or delay evidence, so neither side has decisive proof.",
+        "verdict_side": "tie"
+      },
+      {
+        "driver": "Renewable Generation Mix and Policy Environment",
+        "bull": "With 62.8% renewable capacity and 52% hydropower, Idacorp benefits from favorable renewable policies and lower fuel costs, supporting stable margins and potential rate justification.",
+        "bull_source": {
+          "title": "Idaho Power Co: Rates, Coverage Area, Emissions",
+          "url": "https://compareutilityrates.org/providers/idaho-power/",
+          "date": ""
+        },
+        "bear": "Changes in state or federal renewable mandates, increased renewable generation costs, or policy rollbacks could increase operating costs and pressure rate\u2011setting authority.",
+        "bear_source": {
+          "title": "Research Analysts\u2019 Recent Ratings Updates for IDACORP (IDA) - Markets Daily",
+          "url": "https://www.themarketsdaily.com/2026/08/11/research-analysts-recent-ratings-updates-for-idacorp-ida.html",
+          "date": ""
+        },
+        "verdict": "Bull wins \u2013 the current high renewable mix and supportive policy environment outweigh the speculative risk of policy changes.",
+        "verdict_side": "bull"
+      }
+    ],
+    "falsifiers": [
+      "Regulatory denial or significant cap on the upcoming rate\u2011increase filings; a sharp slowdown or reversal in the data\u2011center\u2011driven load growth; major cost overruns or construction delays in the 250\u202fMW battery or transmission projects; failu"
+    ],
+    "confidence": "high",
+    "confidence_why": "The majority of drivers provide decisive tailwinds, all bull verdicts, and no single risk driver dominates the analysis."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "long",
+    "sector_score": 0.94,
+    "sector_why": "svc new orders growing: Public Administration; svc new orders growing: Utilities",
+    "industry_flags": [],
+    "respondent_comments": [
+      {
+        "industry": "Public Administration",
+        "quote": "Uncertainty on how the Iran conflict will impact the price of oil, as well as the knock-on effect to construction and other materials. The city has several capital projects pending and ongoing, which will be impacted."
+      },
+      {
+        "industry": "Utilities",
+        "quote": "Electric utility materials continue to be in high demand, causing competition among utilities for production slots. Furthermore, more suppliers are requiring progress payments or a down payment on goods as part of PO agreements."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The expanding ISM manufacturing PMI and new orders, coupled with a long ISM sector tilt for utilities, signal rising end\u2011market demand for Idacorp\u2019s electric services, supporting higher pricing power and justifying the company\u2019s recent rate\u2011increase filings. The upward\u2011sloping yield curve and low VIX suggest modest financing costs, while the high demand for utility materials and competition for production slots may pressure input costs. The macro backdrop also encourages Idacorp to accelerate capex on batteries and transmission projects to meet projected load growth.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "Expansion in ISM new orders and utilities sector tilt indicates stronger electricity demand, boosting Idacorp\u2019s revenue growth."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "helps",
+        "why": "Higher demand and regulatory rate\u2011increase filings allow Idacorp to raise rates, improving margins."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Competition for utility materials and progress payment requirements increase procurement costs, compressing margins."
+      },
+      {
+        "channel": "capex",
+        "direction": "helps",
+        "why": "Projected load growth and battery projects justify increased capital spending, supporting future revenue streams."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "hurts",
+        "why": "Upward\u2011sloping yield curve raises borrowing rates, increasing debt service expenses."
+      },
+      {
+        "channel": "order backlog",
+        "direction": "helps",
+        "why": "High new orders in utilities sector suggest growing backlog, leading to higher future revenue."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q3 2026 earnings release",
+      "window": "July 2026",
+      "expected": "Net income, EPS, revenue and updated guidance for 2026",
+      "source": {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q4 2026 earnings release",
+      "window": "December 2026",
+      "expected": "Revenue $469.8M, EPS $1.79, EPS guidance $6.30\u2013$6.45",
+      "source": {
+        "title": "IDACORP (NYSE:IDA) Downgraded by Wall Street Zen to \"Sell\"",
+        "url": "https://www.marketbeat.com/instant-alerts/analyst-idacorp-nyse-ida-downgraded-by-wall-street-zen-to-sell-2026-08-29/",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q1 2027 earnings release",
+      "window": "March 2027",
+      "expected": "Net income, EPS, revenue and guidance for 2027",
+      "source": {
+        "title": "IDACORP (NYSE:IDA) Downgraded by Wall Street Zen to \"Sell\"",
+        "url": "https://www.marketbeat.com/instant-alerts/analyst-idacorp-nyse-ida-downgraded-by-wall-street-zen-to-sell-2026-08-29/",
+        "date": ""
+      }
+    },
+    {
+      "event": "IPC\u2011E\u201126\u201110 rate\u2011increase filing",
+      "window": "April 15 2026 filing; decision likely Q2 2026",
+      "expected": "Approval of PCA rates for June\u202f1\u202f2026\u2013May\u202f31\u202f2027",
+      "source": {
+        "title": "april152026application1",
+        "url": "https://docs.idahopower.com/pdfs/AboutUs/RatesRegulatory/Filings/april152026application1.pdf",
+        "date": ""
+      }
+    },
+    {
+      "event": "IPC\u2011E\u201125\u201116 rate\u2011increase filing",
+      "window": "May 30 2025 filing; decision likely Q2 2026",
+      "expected": "Approval of rate increases for Idaho Power",
+      "source": {
+        "title": "Case Details - IPUC",
+        "url": "https://puc.idaho.gov/case/Details/7527",
+        "date": ""
+      }
+    },
+    {
+      "event": "250\u202fMW battery project online",
+      "window": "June 2026",
+      "expected": "Increased storage capacity and ancillary\u2011services revenue",
+      "source": {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+        "date": ""
+      }
+    },
+    {
+      "event": "Sale of Oregon retail distribution business",
+      "window": "August 2026 pending; completion likely Q4 2026",
+      "expected": "Cash inflow and reduced retail exposure",
+      "source": {
+        "title": "IdaCorp Company Overview \u2013 PortersFiveForce.com",
+        "url": "https://portersfiveforce.com/blogs/competitors/idacorpinc",
+        "date": ""
+      }
+    },
+    {
+      "event": "Large contract customer awards",
+      "window": "Q3 2026",
+      "expected": "Higher revenue and margins",
+      "source": {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1057877/000105787726000130/exhibit991-july302026.htm",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

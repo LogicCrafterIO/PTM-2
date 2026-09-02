@@ -1,0 +1,1393 @@
+{
+  "ticker": "ANET",
+  "name": "Arista Networks",
+  "sector": "Information Technology",
+  "industry": "Communications Equipment",
+  "as_of": "2026-08-30",
+  "research": {
+    "ticker": "ANET",
+    "as_of": "2026-08-30",
+    "queries_run": [
+      "Arista Networks latest customer wins AI hyperscalers Microsoft Meta Google 2025",
+      "Arista Networks vs Cisco Nexus vs Juniper Apstra data center switching market share 2025",
+      "Arista Networks analyst sentiment upgrades downgrades price targets this quarter",
+      "Arista Networks bear case risks custom silicon white box switches margin pressure 2025",
+      "Arista Networks management changes CEO Jayshree Ullal succession executive hires 2025",
+      "AI data center Ethernet switching market size forecast 2026 800G 1.6T",
+      "Arista Networks campus enterprise routing WAN customer deployments 2025",
+      "Arista Networks supply chain lead times inventory backlog latest quarter",
+      "Arista Networks regulatory actions patent litigation Cisco 2025",
+      "Arista Networks upcoming catalysts 2026 product launch earnings guidance"
+    ],
+    "findings": [
+      {
+        "claim": "Arista unveiled the 7060XE7 Series, a 1.6\u202fTerabit networking platform for AI fabrics, expanding its portfolio to rack\u2011scale AI infrastructure.",
+        "source": {
+          "title": "Arista Introduces Next-Generation 1.6Terabit Portfolio for AI Fabrics | Morningstar",
+          "url": "https://www.morningstar.com/news/business-wire/20260609500565/arista-introduces-next-generation-16terabit-portfolio-for-ai-fabrics",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-06-09"
+      },
+      {
+        "claim": "Meta will deploy Arista\u2019s 7700R4 Distributed Etherlink Switch in its Disaggregated Scheduled Fabric, supporting roughly 100,000 DPUs for AI workloads.",
+        "source": {
+          "title": "Meta taps Arista for Ethernet-based AI clusters | Network World",
+          "url": "https://www.networkworld.com/article/3566785/meta-taps-arista-for-ethernet-based-ai-clusters.html",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2024-10-16"
+      },
+      {
+        "claim": "Arista forecasts a $1.5\u202fB revenue spike from AI\u2011based networking growth through 2025, citing accelerated AI pilots in 2024.",
+        "source": {
+          "title": "Arista financials offer glimpse of AI network development | Network World",
+          "url": "https://www.networkworld.com/article/3601519/arista-financials-offer-glimpse-of-ai-network-development.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2024-11-11"
+      },
+      {
+        "claim": "For Q3\u202f2024, Arista reported $1.811\u202fB revenue, up 7.1% YoY versus Q2\u202f2024 and 20% versus Q3\u202f2023.",
+        "source": {
+          "title": "Arista financials offer glimpse of AI network development | Network World",
+          "url": "https://www.networkworld.com/article/3601519/arista-financials-offer-glimpse-of-ai-network-development.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2024-11-11"
+      },
+      {
+        "claim": "The datacenter segment of the Ethernet switch market grew 63.0% YoY to $9.9\u202fB in Q4\u202f2025, driven by AI workloads.",
+        "source": {
+          "title": "IDC - Ethernet Switch Market Growth Driven by AI Demand",
+          "url": "https://www.idc.com/resource-center/blog/ethernet-switch-market-size-and-growth-datacenter-segment-surges-60-in-q4-as-ai-workloads-expand/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-11-06"
+      },
+      {
+        "claim": "Total Ethernet switch market reached $16.2\u202fB in Q4\u202f2025, a 35.1% YoY increase.",
+        "source": {
+          "title": "IDC - Ethernet Switch Market Growth Driven by AI Demand",
+          "url": "https://www.idc.com/resource-center/blog/ethernet-switch-market-size-and-growth-datacenter-segment-surges-60-in-q4-as-ai-workloads-expand/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-11-06"
+      },
+      {
+        "claim": "Arista serves over 10,000 customers and has sold more than 100\u202fmillion ports worldwide.",
+        "source": {
+          "title": "Attacking Interconnects And Networks Across All Scales",
+          "url": "https://www.nextplatform.com/connect/2025/11/06/attacking-interconnects-and-networks-across-all-scales/1639204",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-06"
+      },
+      {
+        "claim": "Arista is the leading cloud\u2011scale Ethernet switch vendor, powering AI training clusters at AWS, Google, Meta, Microsoft, CoreWeave, and xAI.",
+        "source": {
+          "title": "Arista Networks Supply Chain & Export Controls \u2014 AIChipMap",
+          "url": "https://www.aichipmap.com/en/trace/arista/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": ""
+      },
+      {
+        "claim": "Arista Networks is the No.1 data center Ethernet switch vendor, overtaking Cisco as AI spending turbocharged demand for high\u2011speed Ethernet gear.",
+        "source": {
+          "title": "'AI tailwind' keeps Arista at No. 1 spot in data center switching \u2014 now Nvidia looms",
+          "url": "https://www.fierce-network.com/cloud/arista-rides-ai-past-cisco-now-nvidia-looms",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Nvidia\u2019s Spectrum\u2011X and proprietary NVLink pose a threat to Arista\u2019s Ethernet accounts, encroaching on its scale\u2011up networking business until 2027.",
+        "source": {
+          "title": "'AI tailwind' keeps Arista at No. 1 spot in data center switching \u2014 now Nvidia looms",
+          "url": "https://www.fierce-network.com/cloud/arista-rides-ai-past-cisco-now-nvidia-looms",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": ""
+      },
+      {
+        "claim": "The worldwide Ethernet switch market reached $14.5\u202fB in Q2\u202f2025, up 42.1% YoY, driven by datacenter demand and strong vendor performance.",
+        "source": {
+          "title": "Global Ethernet Switch Market Surges 42% in Q2 2025, Driven by Datacenter Demand and Strong Vendor Performance - InfotechLead",
+          "url": "https://infotechlead.com/networking/global-ethernet-switch-market-surges-42-in-q2-2025-driven-by-datacenter-demand-and-strong-vendor-performance-91049",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-12-09"
+      },
+      {
+        "claim": "In Q3\u202f2025, the Ethernet switch market generated $14.7\u202fB in revenue, a 35.2% YoY increase, fueled by hyperscalers building AI infrastructure.",
+        "source": {
+          "title": "Data centre sales drive Ethernet switch growth - IT-Online",
+          "url": "https://it-online.co.za/2025/12/18/data-centre-sales-drive-ethernet-switch-growth/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-12-18"
+      },
+      {
+        "claim": "Gartner\u2019s 2025 Magic Quadrant for Data Center Switching lists Arista as a Leader alongside Cisco, Juniper, and Huawei.",
+        "source": {
+          "title": "2025 Gartner\u00ae Magic Quadrant\u2122 for Data Center Switching - SANSQUARE AUTOMATION PVT LTD",
+          "url": "https://sapltech.com/2025-gartner-magic-quadrant-for-data-center-switching/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-03-01"
+      },
+      {
+        "claim": "On 2026\u201108\u201113, Arista shares jumped 6% to $210, spurred by strong AI networking demand and higher 2026 guidance.",
+        "source": {
+          "title": "Arista Networks Rose 6% on Wednesday. Here\u2019s Where the Stock Is Headed in 2026 | TIKR.com",
+          "url": "https://www.tikr.com/blog/arista-networks-rose-6-on-wednesday-heres-where-the-stock-is-headed-in-2026",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-13"
+      },
+      {
+        "claim": "BNP Paribas raised its target price for Arista to $248 from $200, maintaining an outperform rating as of 2026\u201108\u201110.",
+        "source": {
+          "title": "BNP Paribas Adjusts PT on Arista Networks to $248 From $200, Maintains Outperform Rating | MarketScreener UAE Emirates",
+          "url": "https://ae.marketscreener.com/news/bnp-paribas-adjusts-pt-on-arista-networks-to-248-from-200-maintains-outperform-rating-ce7859dad98ef627",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-10"
+      },
+      {
+        "claim": "Arista\u2019s 2026 revenue forecast was raised to $12.6\u202fB, representing a 40% YoY growth, after the company issued a quarterly outlook on 2026\u201108\u201105.",
+        "source": {
+          "title": "Arista Networks (NYSE:ANET) Shares Gain Following $3.3 Billion Outlook and Stronger Demand",
+          "url": "https://ts2.tech/en/arista-networks-nyseanet-shares-gain-following-3-3-billion-outlook-and-stronger-demand/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Q2\u202f2026 revenue\u202f$3.036\u202fB, up\u202f37.7%\u202fYoY.",
+        "source": {
+          "title": "Arista Networks: Q2 2026 Justifies A Higher Price Target",
+          "url": "https://www.newsimpactscreener.com/articles/arista-networks-q2-2026-justifies-a-higher-price-target",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-20"
+      },
+      {
+        "claim": "Full\u2011year\u202f2026 revenue outlook\u202f$12.6\u202fB.",
+        "source": {
+          "title": "Arista Networks (NYSE:ANET) Trading Up 6%  \u2013 Here\u2019s What Happened - The Lincolnian Online",
+          "url": "https://www.thelincolnianonline.com/2026/08/12/arista-networks-nyseanet-trading-up-6-heres-what-happened.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-12"
+      },
+      {
+        "claim": "Q1\u202f2026 revenue\u202f$2.7\u202fB, 35%\u202fYoY, gross margin\u202f62.4%.",
+        "source": {
+          "title": "Arista warns of long-term chip challenge, Broadcom linked by analysts - SDxCentral",
+          "url": "https://www.sdxcentral.com/news/arista-warns-of-long-term-chip-challenge-broadcom-linked-by-analysts/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-05-07"
+      },
+      {
+        "claim": "FY2025\u202fQ4 AI networking revenue\u202f$1.5\u202fB, double prior year.",
+        "source": {
+          "title": "Arista's $3 Billion AI Bet, and the Six Debates That Decide If It's Worth 40x",
+          "url": "https://www.chipstrat.com/p/aristas-3-billion-ai-bet-and-the",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-02-23"
+      },
+      {
+        "claim": "Management guided 2026 AI networking revenue\u202f$3.25\u202fB.",
+        "source": {
+          "title": "Arista's $3 Billion AI Bet, and the Six Debates That Decide If It's Worth 40x",
+          "url": "https://www.chipstrat.com/p/aristas-3-billion-ai-bet-and-the",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-02-23"
+      },
+      {
+        "claim": "Piper Sandler price target\u202f$240, up from\u202f$181.",
+        "source": {
+          "title": "Arista Networks (NYSE:ANET) Receives Overweight Rating from Piper Sandler - Transcript Daily",
+          "url": "https://transcriptdaily.com/2026/08/05/arista-networks-nyseanet-receives-overweight-rating-from-piper-sandler.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Arista\u2019s $3.5\u202fB AI fabric target depends on Broadcom chips, exposing supply\u2011chain risk.",
+        "source": {
+          "title": "Arista's AI Boom Has a Broadcom Problem",
+          "url": "https://www.ainvest.com/news/arista-ai-boom-broadcom-problem-2606/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-06-06"
+      },
+      {
+        "claim": "Revenue concentration: Cloud & AI Titans\u202f48%, enterprises\u202f32%, AI & specialty\u202f20%; Microsoft\u202f26%, Meta\u202f16%.",
+        "source": {
+          "title": "Arista Networks, Inc. (ANET) Stock Research Report | Flash",
+          "url": "https://flash.stocksentinel.ai/research/ANET",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Kenneth Duda promoted to President and CTO, expanding focus on cloud and AI systems engineering.",
+        "source": {
+          "title": "Arista Networks shuffle sees AWS veteran join for cloud and AI pivot - SDxCentral",
+          "url": "https://www.sdxcentral.com/news/arista-networks-shuffle-sees-aws-veteran-join-for-cloud-and-ai-pivot/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-09-11"
+      },
+      {
+        "claim": "Wells Fargo raises Arista price target to $200 from $185, maintaining overweight rating.",
+        "source": {
+          "title": "Arista Networks Inc Announces Executive Changes | MarketScreener",
+          "url": "https://www.marketscreener.com/news/arista-networks-inc-announces-executive-changes-ce7d59dfdd88f525",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-16"
+      },
+      {
+        "claim": "Insider sold shares worth $54,231,399 as per SEC filing.",
+        "source": {
+          "title": "Arista Networks Inc Announces Executive Changes | MarketScreener",
+          "url": "https://www.marketscreener.com/news/arista-networks-inc-announces-executive-changes-ce7d59dfdd88f525",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-07-17"
+      },
+      {
+        "claim": "Dell'Oro Group forecasts AI back-end switch sales to approach $1 trillion over 2026-2030.",
+        "source": {
+          "title": "AI Back-end Switch Sales to Approach $1 Trillion over the Next Five Years, According to Dell'Oro Group",
+          "url": "https://www.prnewswire.com/news-releases/ai-back-end-switch-sales-to-approach-1-trillion-over-the-next-five-years-according-to-delloro-group-302831878.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-28"
+      },
+      {
+        "claim": "Crehan Research projects total data center switch sales to surpass $250B over next five years (2026-2030).",
+        "source": {
+          "title": "SAN FRANCISCO, Jan. 5, 2026 \u2014 In its latest Data Center Switch Long-Range Forecast Report, Crehan Research predicts that a steep ramp of Ethernet switch deployments for scale-up in AI rack-systems, when added to the existing scale-out and scale-across Ethernet hypergrowth, will push total sales to surpass $250B over the next five years. Furthermore, Crehan predicts that the ramp in scale-up will have an even more profound impact on total market bandwidth, driving a 15-fold increase in the next five years (see accompanying chart).",
+          "url": "http://crehanresearch.com/wp-content/uploads/2026/01/CREHAN-Data-Center-Networking-CR-Jan-2026.pdf",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-01-05"
+      },
+      {
+        "claim": "Ethernet switch sales in AI back\u2011end networks doubled in Q1\u202f2026, making up ~66% of AI cluster switch sales.",
+        "source": {
+          "title": "Ethernet Extends Lead in AI Scale-Out Networks Despite Strong InfiniBand Rebound, According to Dell'Oro Group",
+          "url": "https://www.prnewswire.com/news-releases/ethernet-extends-lead-in-ai-scale-out-networks-despite-strong-infiniband-rebound-according-to-delloro-group-302788112.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-06-02"
+      },
+      {
+        "claim": "Ethernet switch market grew faster than the overall server market in Q1\u202f2026; the server market grew 30.4% to $122.62\u202fB.",
+        "source": {
+          "title": "As Goes AI Compute, So Goes Ethernet Networking",
+          "url": "https://www.nextplatform.com/connect/2026/07/06/as-goes-ai-compute-so-goes-ethernet-networking/5267007",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-06"
+      },
+      {
+        "claim": "800\u202fGbps\u2011port switch revenue in Q1\u202f2026 reached $3.58\u202fB, up 10.3\u00d7 YoY.",
+        "source": {
+          "title": "AI Networking Index 2026: 800G Goes Mainstream | Servnet UK",
+          "url": "https://www.servnetuk.com/research/ai-networking-adoption-index-2026",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-12"
+      },
+      {
+        "claim": "Arista acquired Broadcom\u2019s VeloCloud SD\u2011WAN portfolio, expanding its AI\u2011driven campus and branch networking offerings.",
+        "source": {
+          "title": "Arista Networks Expands AI-Driven Campus and Branch Networking Offerings - Arista",
+          "url": "https://www.arista.com/en/company/news/press-release/21646-pr-07012025",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-07-01"
+      },
+      {
+        "claim": "Arista\u2019s SD\u2011WAN and WAN architecture supports cloud\u2011native apps and AI workloads, enabling zero\u2011touch operations.",
+        "source": {
+          "title": "Next Generation SD-WAN in the AI Era",
+          "url": "https://blogs.arista.com/blog/next-generation-sd-wan-in-the-ai-era",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-07-01"
+      },
+      {
+        "claim": "Arista introduced VESPA and AVA for campus mobility and AI Ops, enhancing large\u2011scale campus switch capabilities.",
+        "source": {
+          "title": "Arista Networks - Arista Introduces Massive Scale Campus Mobility",
+          "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2025/Arista-Introduces-Massive-Scale-Campus-Mobility/default.aspx",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-12-10"
+      },
+      {
+        "claim": "Arista\u2019s AI\u2011driven enterprise products include switching, Wi\u2011Fi\u202f7 APs, and WAN capabilities, targeting generative and agentic AI workloads.",
+        "source": {
+          "title": "Arista Networks Expands AI-Driven Campus and Branch Networking Offerings - Arista",
+          "url": "https://www.arista.com/en/company/news/press-release/21646-pr-07012025",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-07-01"
+      },
+      {
+        "claim": "The shift from InfiniBand to Ethernet in AI clusters gives Arista a competitive edge in high\u2011performance back\u2011end networking.",
+        "source": {
+          "title": "Ethernet Extends Lead in AI Scale-Out Networks Despite Strong InfiniBand Rebound, According to Dell'Oro Group",
+          "url": "https://www.prnewswire.com/news-releases/ethernet-extends-lead-in-ai-scale-out-networks-despite-strong-infiniband-rebound-according-to-delloro-group-302788112.html",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-06-02"
+      },
+      {
+        "claim": "Q2 FY2026 revenue reached $3.036\u202fB, up 12.1% sequentially and 37.7% YoY, marking Arista\u2019s first $3\u202fB quarter.",
+        "source": {
+          "title": "Arista hits first $3 billion quarter as AI networking momentum continues | Network World",
+          "url": "https://www.networkworld.com/article/4205721/arista-hits-first-3b-quarter-as-ai-networking-demand-continues-and-supply-pressures-show-signs-of-improvement.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Arista\u2019s FY2026 revenue guidance was raised to $12.6\u202fB, the third increase in the year.",
+        "source": {
+          "title": "Arista (ANET) Q2 2026 Earnings Call Transcript - The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/ANET-N/pressreleases/3792225/arista-anet-q2-2026-earnings-call-transcript/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Purchase commitments book closed Q2 2026 at $9.7\u202fB, up from $8.9\u202fB in Q1 and $3.6\u202fB a year earlier, nearly tripling commitments.",
+        "source": {
+          "title": "Arista Networks Is Buying Further Ahead Than It Can See | Trefis",
+          "url": "https://www.trefis.com/stock/anet/articles/612580/arista-networks-is-buying-further-ahead-than-it-can-see/2026-08-24",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-24"
+      },
+      {
+        "claim": "Etherlink AI fabric has been adopted by over 100 cumulative customers, up from 4\u20135 in 2024.",
+        "source": {
+          "title": "Arista Looks Toward Open Co-Packaged Optics - Converge Digest",
+          "url": "https://convergedigest.com/arista-q2-2026-ai-networking-scale-across-1-6t/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-??"
+      },
+      {
+        "claim": "Arista\u2019s VESPA architecture supports seamless roaming for >500,000 clients with sub\u2011second failover across sites.",
+        "source": {
+          "title": "Arista wants to bring data center connectivity & resiliency to campus networks - SDxCentral",
+          "url": "https://www.sdxcentral.com/news/arista-wants-to-bring-data-center-connectivity-resiliency-to-campus-networks/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-12-12"
+      },
+      {
+        "claim": "Arista\u2019s 2.0 platform strategy is driving the $3\u202fB revenue milestone and continued growth.",
+        "source": {
+          "title": "Arista Networks, Inc. Reports Second Quarter 2026 Financial Results",
+          "url": "https://www.barchart.com/story/news/3645099/arista-networks-inc-reports-second-quarter-2026-financial-results",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "AI networking demand is a key driver of revenue growth, with AI fabrics momentum noted in earnings call.",
+        "source": {
+          "title": "Arista hits first $3 billion quarter as AI networking momentum continues | Network World",
+          "url": "https://www.networkworld.com/article/4205721/arista-hits-first-3b-quarter-as-ai-networking-demand-continues-and-supply-pressures-show-signs-of-improvement.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Arista\u2019s operating line remains ahead of the market, but margin depends on customer mix.",
+        "source": {
+          "title": "What You Are Really Paying For In Arista Networks Stock | Trefis",
+          "url": "https://www.trefis.com/stock/anet/articles/611895/what-you-are-really-paying-for-in-arista-networks-stock/2026-08-19",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-19"
+      },
+      {
+        "claim": "Q2 2026 revenue $3.0B, up 37.7% YoY.",
+        "source": {
+          "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+          "url": "https://www.alpha-sense.com/earnings/anet/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Gross margin 63.4% in Q2 2026, down from 65.6% YoY.",
+        "source": {
+          "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+          "url": "https://www.alpha-sense.com/earnings/anet/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Operating income $1.5B, 49.9% of revenue in Q2 2026.",
+        "source": {
+          "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+          "url": "https://www.alpha-sense.com/earnings/anet/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Net income $1.3B, 42.9% of revenue in Q2 2026.",
+        "source": {
+          "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+          "url": "https://www.alpha-sense.com/earnings/anet/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Full\u2011year 2026 guidance $12.6B, 40% growth.",
+        "source": {
+          "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+          "url": "https://www.alpha-sense.com/earnings/anet/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Arista will pay Cisco $400M settlement.",
+        "source": {
+          "title": "Cisco, Arista Settle IP, Antitrust Disputes With Arista Paying $400M | Law.com",
+          "url": "https://www.law.com/therecorder/2018/08/06/cisco-arista-settle-ip-antitrust-disputes-with-arista-paying-400m/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2018-08-06"
+      },
+      {
+        "claim": "Arista introduced 1.6 Tbps AI fabric platforms.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000174/ex991q226-earningsrelease.htm",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Arista recognized on 2026 Fortune 500 list.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000174/ex991q226-earningsrelease.htm",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Q2 2026 revenue $3.04B, YoY growth 37.69%",
+        "source": {
+          "title": "",
+          "url": "https://www.tipranks.com/stocks/anet/earnings/q2-2026-report?custom18=stockpage&hash=slideDeck&llf=earnings-event-entry",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Q2 2026 EPS $1.02 versus consensus $0.89",
+        "source": {
+          "title": "",
+          "url": "https://www.tipranks.com/stocks/anet/earnings/q2-2026-report?custom18=stockpage&hash=slideDeck&llf=earnings-event-entry",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Full\u2011year 2026 revenue outlook raised to $12.6B, 40% growth",
+        "source": {
+          "title": "Arista Networks Q2 Earnings Call Highlights - Stock Observer",
+          "url": "https://www.thestockobserver.com/2026/08/06/arista-networks-q2-earnings-call-highlights.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-06"
+      },
+      {
+        "claim": "Etherlink AI networking portfolio expanded from 4\u20115 customers in 2024 to >100 customers",
+        "source": {
+          "title": "Arista Networks Says AI Demand Broadens as Supply Limits Upside to 40% Growth Guide - Defense World",
+          "url": "https://www.defenseworld.net/2026/08/22/arista-networks-says-ai-demand-broadens-as-supply-limits-upside-to-40-growth-guide.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-22"
+      },
+      {
+        "claim": "AI\u2011fabric deployments now >100 customers",
+        "source": {
+          "title": "",
+          "url": "https://www.marketbeat.com/instant-alerts/arista-networks-q2-earnings-call-highlights-2026-08-04/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Target at least $3.5B in AI\u2011fabric revenue in 2026",
+        "source": {
+          "title": "",
+          "url": "https://www.marketbeat.com/instant-alerts/arista-networks-q2-earnings-call-highlights-2026-08-04/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Revenue surged 37%",
+        "source": {
+          "title": "Arista Networks&#8217; AI Fabrics Now Serve 100+ Customers. Here&#8217;s the Story Behind the Guidance Raise | TIKR.com",
+          "url": "https://www.tikr.com/blog/arista-networks-ai-fabrics-now-serve-100-customers-heres-the-story-behind-the-guidance-raise",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-27"
+      },
+      {
+        "claim": "New high\u2011capacity switching and liquid\u2011cooling products support AI infrastructure roadmap",
+        "source": {
+          "title": "",
+          "url": "https://www.marketbeat.com/instant-alerts/arista-networks-q2-earnings-call-highlights-2026-08-04/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-04"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Arista Introduces Next-Generation 1.6Terabit Portfolio for AI Fabrics | Morningstar",
+        "url": "https://www.morningstar.com/news/business-wire/20260609500565/arista-introduces-next-generation-16terabit-portfolio-for-ai-fabrics",
+        "date": ""
+      },
+      {
+        "title": "Meta taps Arista for Ethernet-based AI clusters | Network World",
+        "url": "https://www.networkworld.com/article/3566785/meta-taps-arista-for-ethernet-based-ai-clusters.html",
+        "date": ""
+      },
+      {
+        "title": "Arista financials offer glimpse of AI network development | Network World",
+        "url": "https://www.networkworld.com/article/3601519/arista-financials-offer-glimpse-of-ai-network-development.html",
+        "date": ""
+      },
+      {
+        "title": "Arista financials offer glimpse of AI network development | Network World",
+        "url": "https://www.networkworld.com/article/3601519/arista-financials-offer-glimpse-of-ai-network-development.html",
+        "date": ""
+      },
+      {
+        "title": "IDC - Ethernet Switch Market Growth Driven by AI Demand",
+        "url": "https://www.idc.com/resource-center/blog/ethernet-switch-market-size-and-growth-datacenter-segment-surges-60-in-q4-as-ai-workloads-expand/",
+        "date": ""
+      },
+      {
+        "title": "IDC - Ethernet Switch Market Growth Driven by AI Demand",
+        "url": "https://www.idc.com/resource-center/blog/ethernet-switch-market-size-and-growth-datacenter-segment-surges-60-in-q4-as-ai-workloads-expand/",
+        "date": ""
+      },
+      {
+        "title": "Attacking Interconnects And Networks Across All Scales",
+        "url": "https://www.nextplatform.com/connect/2025/11/06/attacking-interconnects-and-networks-across-all-scales/1639204",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Supply Chain & Export Controls \u2014 AIChipMap",
+        "url": "https://www.aichipmap.com/en/trace/arista/",
+        "date": ""
+      },
+      {
+        "title": "'AI tailwind' keeps Arista at No. 1 spot in data center switching \u2014 now Nvidia looms",
+        "url": "https://www.fierce-network.com/cloud/arista-rides-ai-past-cisco-now-nvidia-looms",
+        "date": ""
+      },
+      {
+        "title": "'AI tailwind' keeps Arista at No. 1 spot in data center switching \u2014 now Nvidia looms",
+        "url": "https://www.fierce-network.com/cloud/arista-rides-ai-past-cisco-now-nvidia-looms",
+        "date": ""
+      },
+      {
+        "title": "Global Ethernet Switch Market Surges 42% in Q2 2025, Driven by Datacenter Demand and Strong Vendor Performance - InfotechLead",
+        "url": "https://infotechlead.com/networking/global-ethernet-switch-market-surges-42-in-q2-2025-driven-by-datacenter-demand-and-strong-vendor-performance-91049",
+        "date": ""
+      },
+      {
+        "title": "Data centre sales drive Ethernet switch growth - IT-Online",
+        "url": "https://it-online.co.za/2025/12/18/data-centre-sales-drive-ethernet-switch-growth/",
+        "date": ""
+      },
+      {
+        "title": "2025 Gartner\u00ae Magic Quadrant\u2122 for Data Center Switching - SANSQUARE AUTOMATION PVT LTD",
+        "url": "https://sapltech.com/2025-gartner-magic-quadrant-for-data-center-switching/",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Rose 6% on Wednesday. Here\u2019s Where the Stock Is Headed in 2026 | TIKR.com",
+        "url": "https://www.tikr.com/blog/arista-networks-rose-6-on-wednesday-heres-where-the-stock-is-headed-in-2026",
+        "date": ""
+      },
+      {
+        "title": "BNP Paribas Adjusts PT on Arista Networks to $248 From $200, Maintains Outperform Rating | MarketScreener UAE Emirates",
+        "url": "https://ae.marketscreener.com/news/bnp-paribas-adjusts-pt-on-arista-networks-to-248-from-200-maintains-outperform-rating-ce7859dad98ef627",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks (NYSE:ANET) Shares Gain Following $3.3 Billion Outlook and Stronger Demand",
+        "url": "https://ts2.tech/en/arista-networks-nyseanet-shares-gain-following-3-3-billion-outlook-and-stronger-demand/",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks: Q2 2026 Justifies A Higher Price Target",
+        "url": "https://www.newsimpactscreener.com/articles/arista-networks-q2-2026-justifies-a-higher-price-target",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks (NYSE:ANET) Trading Up 6%  \u2013 Here\u2019s What Happened - The Lincolnian Online",
+        "url": "https://www.thelincolnianonline.com/2026/08/12/arista-networks-nyseanet-trading-up-6-heres-what-happened.html",
+        "date": ""
+      },
+      {
+        "title": "Arista warns of long-term chip challenge, Broadcom linked by analysts - SDxCentral",
+        "url": "https://www.sdxcentral.com/news/arista-warns-of-long-term-chip-challenge-broadcom-linked-by-analysts/",
+        "date": ""
+      },
+      {
+        "title": "Arista's $3 Billion AI Bet, and the Six Debates That Decide If It's Worth 40x",
+        "url": "https://www.chipstrat.com/p/aristas-3-billion-ai-bet-and-the",
+        "date": ""
+      },
+      {
+        "title": "Arista's $3 Billion AI Bet, and the Six Debates That Decide If It's Worth 40x",
+        "url": "https://www.chipstrat.com/p/aristas-3-billion-ai-bet-and-the",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks (NYSE:ANET) Receives Overweight Rating from Piper Sandler - Transcript Daily",
+        "url": "https://transcriptdaily.com/2026/08/05/arista-networks-nyseanet-receives-overweight-rating-from-piper-sandler.html",
+        "date": ""
+      },
+      {
+        "title": "Arista's AI Boom Has a Broadcom Problem",
+        "url": "https://www.ainvest.com/news/arista-ai-boom-broadcom-problem-2606/",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks, Inc. (ANET) Stock Research Report | Flash",
+        "url": "https://flash.stocksentinel.ai/research/ANET",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks shuffle sees AWS veteran join for cloud and AI pivot - SDxCentral",
+        "url": "https://www.sdxcentral.com/news/arista-networks-shuffle-sees-aws-veteran-join-for-cloud-and-ai-pivot/",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Inc Announces Executive Changes | MarketScreener",
+        "url": "https://www.marketscreener.com/news/arista-networks-inc-announces-executive-changes-ce7d59dfdd88f525",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Inc Announces Executive Changes | MarketScreener",
+        "url": "https://www.marketscreener.com/news/arista-networks-inc-announces-executive-changes-ce7d59dfdd88f525",
+        "date": ""
+      },
+      {
+        "title": "AI Back-end Switch Sales to Approach $1 Trillion over the Next Five Years, According to Dell'Oro Group",
+        "url": "https://www.prnewswire.com/news-releases/ai-back-end-switch-sales-to-approach-1-trillion-over-the-next-five-years-according-to-delloro-group-302831878.html",
+        "date": ""
+      },
+      {
+        "title": "SAN FRANCISCO, Jan. 5, 2026 \u2014 In its latest Data Center Switch Long-Range Forecast Report, Crehan Research predicts that a steep ramp of Ethernet switch deployments for scale-up in AI rack-systems, when added to the existing scale-out and scale-across Ethernet hypergrowth, will push total sales to surpass $250B over the next five years. Furthermore, Crehan predicts that the ramp in scale-up will have an even more profound impact on total market bandwidth, driving a 15-fold increase in the next five years (see accompanying chart).",
+        "url": "http://crehanresearch.com/wp-content/uploads/2026/01/CREHAN-Data-Center-Networking-CR-Jan-2026.pdf",
+        "date": ""
+      },
+      {
+        "title": "Ethernet Extends Lead in AI Scale-Out Networks Despite Strong InfiniBand Rebound, According to Dell'Oro Group",
+        "url": "https://www.prnewswire.com/news-releases/ethernet-extends-lead-in-ai-scale-out-networks-despite-strong-infiniband-rebound-according-to-delloro-group-302788112.html",
+        "date": ""
+      },
+      {
+        "title": "As Goes AI Compute, So Goes Ethernet Networking",
+        "url": "https://www.nextplatform.com/connect/2026/07/06/as-goes-ai-compute-so-goes-ethernet-networking/5267007",
+        "date": ""
+      },
+      {
+        "title": "AI Networking Index 2026: 800G Goes Mainstream | Servnet UK",
+        "url": "https://www.servnetuk.com/research/ai-networking-adoption-index-2026",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Expands AI-Driven Campus and Branch Networking Offerings - Arista",
+        "url": "https://www.arista.com/en/company/news/press-release/21646-pr-07012025",
+        "date": ""
+      },
+      {
+        "title": "Next Generation SD-WAN in the AI Era",
+        "url": "https://blogs.arista.com/blog/next-generation-sd-wan-in-the-ai-era",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks - Arista Introduces Massive Scale Campus Mobility",
+        "url": "https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2025/Arista-Introduces-Massive-Scale-Campus-Mobility/default.aspx",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Expands AI-Driven Campus and Branch Networking Offerings - Arista",
+        "url": "https://www.arista.com/en/company/news/press-release/21646-pr-07012025",
+        "date": ""
+      },
+      {
+        "title": "Ethernet Extends Lead in AI Scale-Out Networks Despite Strong InfiniBand Rebound, According to Dell'Oro Group",
+        "url": "https://www.prnewswire.com/news-releases/ethernet-extends-lead-in-ai-scale-out-networks-despite-strong-infiniband-rebound-according-to-delloro-group-302788112.html",
+        "date": ""
+      },
+      {
+        "title": "Arista hits first $3 billion quarter as AI networking momentum continues | Network World",
+        "url": "https://www.networkworld.com/article/4205721/arista-hits-first-3b-quarter-as-ai-networking-demand-continues-and-supply-pressures-show-signs-of-improvement.html",
+        "date": ""
+      },
+      {
+        "title": "Arista (ANET) Q2 2026 Earnings Call Transcript - The Globe and Mail",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/ANET-N/pressreleases/3792225/arista-anet-q2-2026-earnings-call-transcript/",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Is Buying Further Ahead Than It Can See | Trefis",
+        "url": "https://www.trefis.com/stock/anet/articles/612580/arista-networks-is-buying-further-ahead-than-it-can-see/2026-08-24",
+        "date": ""
+      },
+      {
+        "title": "Arista Looks Toward Open Co-Packaged Optics - Converge Digest",
+        "url": "https://convergedigest.com/arista-q2-2026-ai-networking-scale-across-1-6t/",
+        "date": ""
+      },
+      {
+        "title": "Arista wants to bring data center connectivity & resiliency to campus networks - SDxCentral",
+        "url": "https://www.sdxcentral.com/news/arista-wants-to-bring-data-center-connectivity-resiliency-to-campus-networks/",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks, Inc. Reports Second Quarter 2026 Financial Results",
+        "url": "https://www.barchart.com/story/news/3645099/arista-networks-inc-reports-second-quarter-2026-financial-results",
+        "date": ""
+      },
+      {
+        "title": "Arista hits first $3 billion quarter as AI networking momentum continues | Network World",
+        "url": "https://www.networkworld.com/article/4205721/arista-hits-first-3b-quarter-as-ai-networking-demand-continues-and-supply-pressures-show-signs-of-improvement.html",
+        "date": ""
+      },
+      {
+        "title": "What You Are Really Paying For In Arista Networks Stock | Trefis",
+        "url": "https://www.trefis.com/stock/anet/articles/611895/what-you-are-really-paying-for-in-arista-networks-stock/2026-08-19",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+        "url": "https://www.alpha-sense.com/earnings/anet/",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+        "url": "https://www.alpha-sense.com/earnings/anet/",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+        "url": "https://www.alpha-sense.com/earnings/anet/",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+        "url": "https://www.alpha-sense.com/earnings/anet/",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+        "url": "https://www.alpha-sense.com/earnings/anet/",
+        "date": ""
+      },
+      {
+        "title": "Cisco, Arista Settle IP, Antitrust Disputes With Arista Paying $400M | Law.com",
+        "url": "https://www.law.com/therecorder/2018/08/06/cisco-arista-settle-ip-antitrust-disputes-with-arista-paying-400m/",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000174/ex991q226-earningsrelease.htm",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000174/ex991q226-earningsrelease.htm",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.tipranks.com/stocks/anet/earnings/q2-2026-report?custom18=stockpage&hash=slideDeck&llf=earnings-event-entry",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.tipranks.com/stocks/anet/earnings/q2-2026-report?custom18=stockpage&hash=slideDeck&llf=earnings-event-entry",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Q2 Earnings Call Highlights - Stock Observer",
+        "url": "https://www.thestockobserver.com/2026/08/06/arista-networks-q2-earnings-call-highlights.html",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks Says AI Demand Broadens as Supply Limits Upside to 40% Growth Guide - Defense World",
+        "url": "https://www.defenseworld.net/2026/08/22/arista-networks-says-ai-demand-broadens-as-supply-limits-upside-to-40-growth-guide.html",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.marketbeat.com/instant-alerts/arista-networks-q2-earnings-call-highlights-2026-08-04/",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.marketbeat.com/instant-alerts/arista-networks-q2-earnings-call-highlights-2026-08-04/",
+        "date": ""
+      },
+      {
+        "title": "Arista Networks&#8217; AI Fabrics Now Serve 100+ Customers. Here&#8217;s the Story Behind the Guidance Raise | TIKR.com",
+        "url": "https://www.tikr.com/blog/arista-networks-ai-fabrics-now-serve-100-customers-heres-the-story-behind-the-guidance-raise",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.marketbeat.com/instant-alerts/arista-networks-q2-earnings-call-highlights-2026-08-04/",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "constructive",
+    "thesis": "Arista\u2019s accelerating AI\u2011networking demand, robust pricing power, and strong execution create a net tailwind that outweighs concentration and competitive headwinds, supporting a bullish outlook for the stock.",
+    "drivers": [
+      {
+        "name": "AI Networking Demand & Fabric Adoption",
+        "direction": "tailwind",
+        "evidence": "Bull verdict: AI\u2011fabric revenue projected to $3.5B in 2026, high\u2011profile deployments (Meta 7700R4, AWS/Google 7060XE7), 63% YoY market growth.",
+        "source": {
+          "title": "Arista Introduces Next-Generation 1.6Terabit Portfolio for AI Fabrics | Morningstar",
+          "url": "https://www.morningstar.com/news/business-wire/20260609500565/arista-introduces-next-generation-16terabit-portfolio-for-ai-fabrics",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.0,
+        "category": "fundamentals",
+        "score_why": "Bull side won and evidence shows strong demand growth."
+      },
+      {
+        "name": "Pricing Power & Margin Sustainability",
+        "direction": "tailwind",
+        "evidence": "Bull verdict: 62.4% gross margin Q1 2026, 49.9% operating margin Q2 2026, 10.3\u00d7 YoY revenue growth on 800Gbps\u2011port switches.",
+        "source": {
+          "title": "Meta taps Arista for Ethernet-based AI clusters | Network World",
+          "url": "https://www.networkworld.com/article/3566785/meta-taps-arista-for-ethernet-based-ai-clusters.html",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.0,
+        "category": "fundamentals",
+        "score_why": "Margins remain high despite compression, confirming pricing power."
+      },
+      {
+        "name": "Customer Concentration & Diversification",
+        "direction": "headwind",
+        "evidence": "Bear verdict: 48% revenue from Microsoft & Meta, 42% combined, exposing concentration risk.",
+        "source": {
+          "title": "Arista financials offer glimpse of AI network development | Network World",
+          "url": "https://www.networkworld.com/article/3601519/arista-financials-offer-glimpse-of-ai-network-development.html",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.0,
+        "category": "risk",
+        "score_why": "Concentration risk is material and bears the debate."
+      },
+      {
+        "name": "Competitive Threat from Nvidia & Broadcom",
+        "direction": "headwind",
+        "evidence": "Bear verdict: Nvidia\u2019s Spectrum\u2011X/NVLink threatens Ethernet accounts, Broadcom chip dependency risks supply chain.",
+        "source": {
+          "title": "Arista financials offer glimpse of AI network development | Network World",
+          "url": "https://www.networkworld.com/article/3601519/arista-financials-offer-glimpse-of-ai-network-development.html",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.0,
+        "category": "competitive",
+        "score_why": "Competitive threat is acknowledged and outweighs bull claims."
+      },
+      {
+        "name": "Management Execution & Order Backlog",
+        "direction": "tailwind",
+        "evidence": "Bull verdict: $9.7B purchase commitments, rapid expansion of Etherlink AI fabric customers >100, strong backlog conversion.",
+        "source": {
+          "title": "IDC - Ethernet Switch Market Growth Driven by AI Demand",
+          "url": "https://www.idc.com/resource-center/blog/ethernet-switch-market-size-and-growth-datacenter-segment-surges-60-in-q4-as-ai-workloads-expand/",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.0,
+        "category": "fundamentals",
+        "score_why": "Execution strength outweighs integration risk."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "Arista\u2019s revenue trajectory is accelerating, with Q3\u202f2024 revenue up 7.1% YoY and 20% vs Q3\u202f2023, and Q2\u202f2026 revenue reaching $3.036\u202fB, a 37.7% YoY jump, underscoring robust top\u2011line momentum.",
+        "evidence": "Q3\u202f2024 revenue $1.811\u202fB, up 7.1% YoY versus Q2\u202f2024 and 20% versus Q3\u202f2023 (4); Q2\u202f2026 revenue $3.036\u202fB, up 37.7% YoY (17,18,19,46).",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "AI\u2011networking revenue is a key growth engine, with a forecast $1.5\u202fB spike through 2025 and $3.25\u202fB guidance for 2026, reflecting the company\u2019s focus on AI fabrics.",
+        "evidence": "Forecast $1.5\u202fB revenue spike from AI\u2011based networking growth through 2025 (3); FY2025 Q4 AI networking revenue $1.5\u202fB (20); Management guided 2026 AI networking revenue $3.25\u202fB (21).",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The datacenter Ethernet switch market is expanding rapidly\u201463% YoY growth to $9.9\u202fB in Q4\u202f2025 and a 35.1% YoY increase to $16.2\u202fB overall\u2014creating a large addressable market for Arista\u2019s high\u2011speed switches.",
+        "evidence": "Datacenter segment grew 63.0% YoY to $9.9\u202fB in Q4\u202f2025 (5); Total Ethernet switch market reached $16.2\u202fB in Q4\u202f2025, 35.1% YoY (6).",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Arista is the No.1 data center Ethernet switch vendor, overtaking Cisco, and is recognized as a Leader in Gartner\u2019s 2025 Magic Quadrant, validating its market leadership.",
+        "evidence": "No.1 data center Ethernet switch vendor, overtaking Cisco (9); Gartner\u2019s 2025 Magic Quadrant lists Arista as a Leader (13).",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The company serves a broad, high\u2011profile customer base\u2014over 10,000 customers, more than 100\u202fmillion ports sold, and AI training clusters at AWS, Google, Meta, Microsoft, CoreWeave, and xAI\u2014ensuring diversified revenue streams.",
+        "evidence": "Arista serves over 10,000 customers and has sold more than 100\u202fmillion ports worldwide (7); powers AI training clusters at AWS, Google, Meta, Microsoft, CoreWeave, and xAI (8).",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Arista\u2019s AI\u2011fabric portfolio is gaining traction, with the 7060XE7 Series offering 1.6\u202fTbps and the Etherlink AI fabric adopted by >100 customers, positioning the firm at the forefront of AI infrastructure.",
+        "evidence": "7060XE7 Series, 1.6\u202fTbps AI fabric platform (1); Etherlink AI fabric adopted by >100 cumulative customers (41); 1.6\u202fTbps AI fabric platforms (52).",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Arista\u2019s revenue is heavily concentrated, with 48% coming from Cloud & AI Titans and 32% from enterprises, meaning a single customer\u2019s spending cut could materially hurt earnings.",
+        "evidence": "Finding 24",
+        "source": {
+          "title": "Arista Networks, Inc. (ANET) Stock Research Report | Flash",
+          "url": "https://flash.stocksentinel.ai/research/ANET",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "The company\u2019s AI\u2011fabric revenue target of $3.5\u202fB depends on Broadcom chips, creating a critical supply\u2011chain dependency that could disrupt production and delay product roll\u2011outs.",
+        "evidence": "Finding 23",
+        "source": {
+          "title": "Arista's AI Boom Has a Broadcom Problem",
+          "url": "https://www.ainvest.com/news/arista-ai-boom-broadcom-problem-2606/",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Nvidia\u2019s Spectrum\u2011X and proprietary NVLink threaten to erode Arista\u2019s Ethernet accounts in the high\u2011performance networking space until 2027, potentially reducing market share and pricing power.",
+        "evidence": "Finding 10",
+        "source": {
+          "title": "'AI tailwind' keeps Arista at No. 1 spot in data center switching \u2014 now Nvidia looms",
+          "url": "https://www.fierce-network.com/cloud/arista-rides-ai-past-cisco-now-nvidia-looms",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Gross margin in Q2\u202f2026 fell to 63.4% from 65.6% YoY, indicating rising input costs or pricing pressure that could erode profitability if the trend continues.",
+        "evidence": "Finding 47",
+        "source": {
+          "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+          "url": "https://www.alpha-sense.com/earnings/anet/",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Arista\u2019s growth narrative is heavily reliant on AI\u2011driven networking; a slowdown in AI adoption or a shift to alternative architectures could materially impact future revenue.",
+        "evidence": "Finding 3",
+        "source": {
+          "title": "Arista financials offer glimpse of AI network development | Network World",
+          "url": "https://www.networkworld.com/article/3601519/arista-financials-offer-glimpse-of-ai-network-development.html",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "The $400\u202fM settlement with Cisco represents a significant cash outflow that could strain liquidity and reduce capital available for growth initiatives.",
+        "evidence": "Finding 51",
+        "source": {
+          "title": "Cisco, Arista Settle IP, Antitrust Disputes With Arista Paying $400M | Law.com",
+          "url": "https://www.law.com/therecorder/2018/08/06/cisco-arista-settle-ip-antitrust-disputes-with-arista-paying-400m/",
+          "date": ""
+        },
+        "severity": "severe"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "AI Networking Demand & Fabric Adoption",
+        "bull": "Arista\u2019s AI\u2011fabric revenue is projected to reach $3.5\u202fB in 2026, driven by high\u2011profile deployments such as Meta\u2019s 7700R4 and AWS/Google hyperscaler adoption of the 7060XE7 Series, with the datacenter Ethernet switch market expanding 63% YoY, indicating strong AI\u2011networking demand.",
+        "bull_source": {
+          "title": "Arista financials offer glimpse of AI network development | Network World",
+          "url": "https://www.networkworld.com/article/3601519/arista-financials-offer-glimpse-of-ai-network-development.html",
+          "date": ""
+        },
+        "bear": "Nvidia\u2019s Spectrum\u2011X/NVLink threatens to erode Arista\u2019s Ethernet accounts, especially in the scale\u2011up segment until 2027, and Arista\u2019s AI\u2011fabric revenue depends on Broadcom chips, exposing supply\u2011chain risk that could delay rollouts and dampen demand.",
+        "bear_source": {
+          "title": "'AI tailwind' keeps Arista at No. 1 spot in data center switching \u2014 now Nvidia looms",
+          "url": "https://www.fierce-network.com/cloud/arista-rides-ai-past-cisco-now-nvidia-looms",
+          "date": ""
+        },
+        "verdict": "Bull wins: AI\u2011networking demand and fabric adoption are strong, outweighing competitive threats.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Pricing Power & Margin Sustainability",
+        "bull": "Arista commands premium pricing for high\u2011speed Ethernet switches, evidenced by a 62.4% gross margin in Q1\u202f2026 and a 49.9% operating margin in Q2\u202f2026, with 800\u202fGbps\u2011port switch revenue of $3.58\u202fB in Q1\u202f2026, up 10.3\u00d7 YoY.",
+        "bull_source": {
+          "title": "Arista warns of long-term chip challenge, Broadcom linked by analysts - SDxCentral",
+          "url": "https://www.sdxcentral.com/news/arista-warns-of-long-term-chip-challenge-broadcom-linked-by-analysts/",
+          "date": ""
+        },
+        "bear": "Margin compression is evident, with gross margin falling from 65.6% YoY to 63.4% in Q2\u202f2026, and operating margin pressure from competitive displacement and input\u2011cost inflation; if AI spend slows or competitors undercut pricing, Arista\u2019s margin sustainability could deteriorate.",
+        "bear_source": {
+          "title": "Arista Networks Inc Earnings - Analysis & Highlights for Q2 2026",
+          "url": "https://www.alpha-sense.com/earnings/anet/",
+          "date": ""
+        },
+        "verdict": "Bull wins: pricing power and margin sustainability remain robust despite compression.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Customer Concentration & Diversification",
+        "bull": "Arista serves over 10,000 customers, with 48% of revenue from Cloud & AI Titans (Microsoft 26%, Meta 16%) and 32% from enterprises, providing a diversified revenue base and leading position in hyperscaler AI training clusters.",
+        "bull_source": {
+          "title": "Attacking Interconnects And Networks Across All Scales",
+          "url": "https://www.nextplatform.com/connect/2025/11/06/attacking-interconnects-and-networks-across-all-scales/1639204",
+          "date": ""
+        },
+        "bear": "Heavy reliance on a few hyperscalers (Microsoft and Meta together account for 42% of revenue) creates concentration risk; any shift in their networking strategy toward Nvidia or other vendors could materially impact Arista\u2019s top line.",
+        "bear_source": {
+          "title": "Arista Networks, Inc. (ANET) Stock Research Report | Flash",
+          "url": "https://flash.stocksentinel.ai/research/ANET",
+          "date": ""
+        },
+        "verdict": "Bear wins: concentration risk from Microsoft and Meta is significant.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Competitive Threat from Nvidia and Broadcom",
+        "bull": "Arista\u2019s shift from InfiniBand to Ethernet in AI clusters gives it a competitive edge in high\u2011performance back\u2011end networking, and its acquisition of Broadcom\u2019s VeloCloud SD\u2011WAN portfolio expands its AI\u2011driven campus and branch offerings, strengthening its market moat.",
+        "bull_source": {
+          "title": "Ethernet Extends Lead in AI Scale-Out Networks Despite Strong InfiniBand Rebound, According to Dell'Oro Group",
+          "url": "https://www.prnewswire.com/news-releases/ethernet-extends-lead-in-ai-scale-out-networks-despite-strong-infiniband-rebound-according-to-delloro-group-302788112.html",
+          "date": ""
+        },
+        "bear": "Nvidia\u2019s proprietary NVLink and Spectrum\u2011X pose a direct threat to Arista\u2019s Ethernet accounts, potentially eroding market share until 2027, and Arista\u2019s dependence on Broadcom chips for its AI\u2011fabric targets introduces supply\u2011chain risk that could be exploited by competitors.",
+        "bear_source": {
+          "title": "'AI tailwind' keeps Arista at No. 1 spot in data center switching \u2014 now Nvidia looms",
+          "url": "https://www.fierce-network.com/cloud/arista-rides-ai-past-cisco-now-nvidia-looms",
+          "date": ""
+        },
+        "verdict": "Bear wins: Nvidia\u2019s threat and supply\u2011chain risk pose a real competitive challenge.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Management Execution & Order Backlog",
+        "bull": "Arista\u2019s management has demonstrated strong execution, evidenced by a $9.7\u202fB purchase commitments book in Q2\u202f2026 and the rapid expansion of its Etherlink AI fabric customer base from 4\u20135 to >100 customers, indicating robust order backlog and execution capability.",
+        "bull_source": {
+          "title": "Arista Networks Is Buying Further Ahead Than It Can See | Trefis",
+          "url": "https://www.trefis.com/stock/anet/articles/612580/arista-networks-is-buying-further-ahead-than-it-can-see/2026-08-24",
+          "date": ""
+        },
+        "bear": "Rapid expansion and integration of new acquisitions (e.g., VeloCloud) carry integration risk; if execution falters, the backlog could convert to lower\u2011margin or delayed revenue, and the company may struggle to maintain its high\u2011growth trajectory.",
+        "bear_source": {
+          "title": "Arista Networks Says AI Demand Broadens as Supply Limits Upside to 40% Growth Guide - Defense World",
+          "url": "https://www.defenseworld.net/2026/08/22/arista-networks-says-ai-demand-broadens-as-supply-limits-upside-to-40-growth-guide.html",
+          "date": ""
+        },
+        "verdict": "Bull wins: strong backlog and execution outweigh integration risk.",
+        "verdict_side": "bull"
+      }
+    ],
+    "falsifiers": [
+      "AI\u2011fabric revenue < $2B in 2026",
+      "Gross margin < 60% in Q2 2026",
+      "Customer concentration > 50% of revenue",
+      "Nvidia captures >30% of Ethernet market share",
+      "Backlog conversion rate < 70%"
+    ],
+    "confidence": "medium",
+    "confidence_why": "Evidence supports a net tailwind but material risks exist that could reverse the thesis if key metrics deteriorate."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "long",
+    "sector_score": 1.653,
+    "sector_why": "mfg new orders growing: Computer & Electronic Products",
+    "industry_flags": [],
+    "respondent_comments": [
+      {
+        "industry": "Computer & Electronic Products",
+        "quote": "We continue to operate in a favorable demand environment driven by growth in the semiconductor, AI, advanced packaging, and high-performance computing markets. Recent company reports indicate strong sales growth and continued investment in manufacturing capacity, technology and customer-support capabilities. This scenario supports a positive business outlook and creates opportunities to leverage increased purchasing scale across the enterprise."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The expansionary ISM manufacturing PMI and new orders, coupled with a bullish S&P and low VIX, signal robust demand for high\u2011speed networking in AI and data\u2011center markets, directly feeding Arista\u2019s end\u2011market demand. The upward\u2011sloping yield curve and net\u2011long bias suggest modest financing cost pressure but also support continued capital deployment into AI\u2011fabric platforms. Strong order backlog and high pricing power mitigate input\u2011cost volatility, while the favorable macro backdrop underpins healthy working\u2011capital dynamics.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "Expanding ISM new orders and AI\u2011driven data\u2011center growth lift demand for Arista\u2019s high\u2011speed Ethernet switches."
+      },
+      {
+        "channel": "order backlog",
+        "direction": "helps",
+        "why": "Purchase commitments book rising to $9.7B indicates sustained sales pipeline and revenue certainty."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "helps",
+        "why": "Market leadership and AI\u2011fabric differentiation allow Arista to maintain premium pricing despite competitive pressures."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Semiconductor supply\u2011chain risk and Broadcom chip dependence could raise component costs, compressing margins."
+      },
+      {
+        "channel": "capex",
+        "direction": "helps",
+        "why": "Macro confidence supports investment in AI\u2011fabric R&D and capacity expansion to meet growing demand."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "mixed",
+        "why": "Upward yield curve may increase borrowing rates, but low VIX and net\u2011long bias offset some cost pressure."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q3\u202f2024 earnings call",
+      "window": "2024\u201110\u201110\u202fto\u202f2024\u201110\u201120",
+      "expected": "Reaffirm $1.5\u202fB AI\u2011networking revenue spike, 7.1% YoY revenue growth to $1.811\u202fB, and guidance for 2025 AI spend",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q4\u202f2024 earnings call",
+      "window": "2025\u201101\u201110\u202fto\u202f2025\u201101\u201120",
+      "expected": "Report Q4 revenue, AI\u2011networking revenue, and update 2025 guidance",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q1\u202f2025 earnings call",
+      "window": "2025\u201104\u201110\u202fto\u202f2025\u201104\u201120",
+      "expected": "Publish Q1 revenue, AI\u2011networking revenue, and 2025 full\u2011year outlook",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q2\u202f2025 earnings call",
+      "window": "2025\u201107\u201110\u202fto\u202f2025\u201107\u201120",
+      "expected": "Disclose Q2 revenue, AI\u2011networking revenue, and 2025 guidance",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q3\u202f2025 earnings call",
+      "window": "2025\u201110\u201110\u202fto\u202f2025\u201110\u201120",
+      "expected": "Announce Q3 revenue, AI\u2011networking revenue, and 2025 guidance",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q4\u202f2025 earnings call",
+      "window": "2026\u201101\u201110\u202fto\u202f2026\u201101\u201120",
+      "expected": "Report Q4 revenue, AI\u2011networking revenue, and 2026 guidance",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q1\u202f2026 earnings call",
+      "window": "2026\u201104\u201110\u202fto\u202f2026\u201104\u201120",
+      "expected": "Reaffirm $12.6\u202fB full\u2011year revenue outlook, $3.25\u202fB AI\u2011networking revenue, $2.7\u202fB Q1 revenue, 62.4% gross margin",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q2\u202f2026 earnings call",
+      "window": "2026\u201107\u201110\u202fto\u202f2026\u201107\u201120",
+      "expected": "Confirm $3.036\u202fB Q2 revenue, $3.25\u202fB AI\u2011networking revenue, $12.6\u202fB full\u2011year outlook, $9.7\u202fB purchase commitments",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

@@ -5,6 +5,12 @@
     .venv/bin/python -m ptm_simple select --theme NAME [--map manual|wiki]
     .venv/bin/python -m ptm_simple run --theme NAME [--map manual|wiki] [--force]
     .venv/bin/python -m ptm_simple run --all [--map manual|wiki] [--force]  # sweep non-COLD themes
+    .venv/bin/python -m ptm_simple refresh-fundamentals [--map manual|wiki] [--all] [--force]
+        [--estimates] [--no-prices]  # fresh fundamentals for the quant table
+    .venv/bin/python -m ptm_simple analyze-all [--map manual|wiki] [--force]
+        # qual coverage for EVERY member of every non-COLD theme (dives cache-first)
+    .venv/bin/python -m ptm_simple group-review [--map manual|wiki] [--theme NAME]
+        # one pass per non-COLD theme: is each valuation flag justified by the forward case?
 """
 
 from __future__ import annotations
@@ -48,6 +54,42 @@ def main() -> None:
     p.add_argument("--day")
     add_map(p)
 
+    p = sub.add_parser(
+        "refresh-fundamentals",
+        help="fetch fresh fundamentals for the simple universe (prices + EDGAR rows at the run date), "
+        "then rebuild the quant table and re-render reports",
+    )
+    p.add_argument("--all", action="store_true", help="whole theme map instead of non-COLD themes only")
+    p.add_argument("--force", action="store_true", help="re-pull EDGAR rows even when cached for the run date")
+    p.add_argument("--estimates", action="store_true", help="also refresh analyst-consensus caches (forward EPS)")
+    p.add_argument("--no-prices", action="store_true", help="skip the yfinance price refresh")
+    p.add_argument("--day")
+    add_map(p)
+
+    p = sub.add_parser(
+        "analyze-all",
+        help="qualitative coverage for EVERY covered member of every non-COLD theme: dive (cache-first), "
+        "forward brief, coverage report with the theme-relative valuation flag — no selection, no gates",
+    )
+    p.add_argument("--force", action="store_true", help="re-run dives even when cached")
+    p.add_argument(
+        "--cached-dives-only", action="store_true",
+        help="fast pass: only names whose deep dive is already cached (briefs only, ~1 min per name); "
+        "the rest are left for a later full run",
+    )
+    p.add_argument("--day")
+    add_map(p)
+
+    p = sub.add_parser(
+        "group-review",
+        help="one LLM pass per non-COLD theme: judge whether each member's theme-relative valuation "
+        "flag (premium/discount vs the theme median) is justified by forward-looking fundamentals "
+        "and catalysts — commentary, not a gate",
+    )
+    p.add_argument("--theme", help="review a single theme instead of every non-COLD one")
+    p.add_argument("--day")
+    add_map(p)
+
     args = ap.parse_args()
     ref = as_of_date() if not getattr(args, "day", None) else date.fromisoformat(args.day)
 
@@ -88,6 +130,37 @@ def main() -> None:
     radar_file = simple_dir(f"radar_{ref.isoformat()}.json")
     if not radar_file.exists():
         raise SystemExit(f"no radar for {ref}: run `ptm_simple radar` first")
+
+    if args.cmd == "refresh-fundamentals":
+        from ptm_simple.refresh import refresh_fundamentals
+
+        out = refresh_fundamentals(
+            source=args.map,
+            ref=ref,
+            non_cold_only=not args.all,
+            force=args.force,
+            with_estimates=args.estimates,
+            with_prices=not args.no_prices,
+        )
+        log(f"refresh-fundamentals done: {out['fundamentals_rows']} rows, quant {out['quant_rows']}, "
+            f"reports {out['reports']} in {out['elapsed_s']}s")
+        return
+
+    if args.cmd == "analyze-all":
+        from ptm_simple.run import analyze_all_pass
+
+        out = analyze_all_pass(theme_map, ref, force=args.force, cached_dives_only=args.cached_dives_only)
+        log(f"analyze-all done: {out['members']} member(s) in {out['themes']} non-COLD theme(s), "
+            f"{out['skipped']} skipped, {out['reports']} coverage reports")
+        return
+
+    if args.cmd == "group-review":
+        from ptm_simple.group_review import run_group_review
+
+        out = run_group_review(source=args.map, ref=ref, theme=args.theme)
+        log(f"group-review done: {out['themes']} theme(s), {out['judged']} member(s) judged, "
+            f"{out['markdown']} markdown file(s)")
+        return
 
     if args.cmd == "select":
         from ptm_simple.run import select_theme, theme_entry

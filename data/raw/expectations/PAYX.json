@@ -1,0 +1,77 @@
+{
+  "ticker": "PAYX",
+  "as_of": "2026-09-02T14:16:36.665654+00:00",
+  "earnings_date": "2026-10-18",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.97676,
+    "eps_d30": 5.98324,
+    "eps_d90": 5.89811,
+    "change_30d_pct": -0.11,
+    "change_90d_pct": 1.33,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 1.22,
+        "estimate": 1.20286,
+        "surprise_pct": 1.42
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 1.26,
+        "estimate": 1.23046,
+        "surprise_pct": 2.4
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 1.71,
+        "estimate": 1.67145,
+        "surprise_pct": 2.31
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 1.32,
+        "estimate": 1.30814,
+        "surprise_pct": 0.91
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 1.76
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-17",
+        "move_pct": -0.27
+      },
+      {
+        "report_date": "2026-03-26",
+        "move_pct": 0.25
+      },
+      {
+        "report_date": "2025-12-22",
+        "move_pct": 2.32
+      },
+      {
+        "report_date": "2025-09-30",
+        "move_pct": -1.38
+      }
+    ],
+    "avg_abs_move_pct": 1.05,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.3% over 90 days and -0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.3%, +0.2%, +2.3%, -1.4% (average absolute move 1.1%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +1.8%."
+  ]
+}

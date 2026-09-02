@@ -1,0 +1,77 @@
+{
+  "ticker": "CASY",
+  "as_of": "2026-08-30T13:33:18.111477+00:00",
+  "earnings_date": "2026-09-21",
+  "revisions": {
+    "available": true,
+    "eps_current": 21.37271,
+    "eps_d30": 21.30326,
+    "eps_d90": 20.30283,
+    "change_30d_pct": 0.33,
+    "change_90d_pct": 5.27,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-07-31",
+        "actual": 5.77,
+        "estimate": 5.05,
+        "surprise_pct": 14.26
+      },
+      {
+        "quarter": "2025-10-31",
+        "actual": 5.53,
+        "estimate": 5.20401,
+        "surprise_pct": 6.26
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 3.49,
+        "estimate": 2.98611,
+        "surprise_pct": 16.87
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 4.37,
+        "estimate": 3.30796,
+        "surprise_pct": 32.11
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 17.38
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-06-22",
+        "move_pct": -1.26
+      },
+      {
+        "report_date": "2026-03-09",
+        "move_pct": -0.01
+      },
+      {
+        "report_date": "2025-12-09",
+        "move_pct": -0.58
+      },
+      {
+        "report_date": "2025-09-08",
+        "move_pct": 3.14
+      }
+    ],
+    "avg_abs_move_pct": 1.25,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +5.3% over 90 days and +0.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.3%, -0.0%, -0.6%, +3.1% (average absolute move 1.2%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +17.4%."
+  ]
+}

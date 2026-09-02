@@ -1,0 +1,77 @@
+{
+  "ticker": "LNC",
+  "as_of": "2026-08-30T14:01:06.304989+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.98707,
+    "eps_d30": 7.65363,
+    "eps_d90": 7.72936,
+    "change_30d_pct": 4.36,
+    "change_90d_pct": 3.33,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 4
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.04,
+        "estimate": 1.86576,
+        "surprise_pct": 9.34
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.21,
+        "estimate": 1.89689,
+        "surprise_pct": 16.51
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.66,
+        "estimate": 1.59604,
+        "surprise_pct": 4.01
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.24,
+        "estimate": 1.95607,
+        "surprise_pct": 14.52
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 11.1
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": 11.08
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": -4.47
+      },
+      {
+        "report_date": "2026-02-19",
+        "move_pct": -4.16
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": 1.65
+      }
+    ],
+    "avg_abs_move_pct": 5.34,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.3% over 90 days and +4.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 4 down.",
+    "Price reaction to the last 4 reports, most recent first: +11.1%, -4.5%, -4.2%, +1.6% (average absolute move 5.3%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +11.1%."
+  ]
+}

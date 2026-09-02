@@ -1,0 +1,77 @@
+{
+  "ticker": "WST",
+  "as_of": "2026-08-30T13:43:58.744207+00:00",
+  "earnings_date": "2026-10-22",
+  "revisions": {
+    "available": true,
+    "eps_current": 8.95851,
+    "eps_d30": 8.61042,
+    "eps_d90": 8.62022,
+    "change_30d_pct": 4.04,
+    "change_90d_pct": 3.92,
+    "analysts_up_30d": 14,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.96,
+        "estimate": 1.71103,
+        "surprise_pct": 14.55
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.04,
+        "estimate": 1.829,
+        "surprise_pct": 11.54
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.13,
+        "estimate": 1.67627,
+        "surprise_pct": 27.07
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.37,
+        "estimate": 2.08151,
+        "surprise_pct": 13.86
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 16.75
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-23",
+        "move_pct": -0.82
+      },
+      {
+        "report_date": "2026-04-23",
+        "move_pct": 12.86
+      },
+      {
+        "report_date": "2026-02-17",
+        "move_pct": -2.91
+      },
+      {
+        "report_date": "2025-10-23",
+        "move_pct": 10.92
+      }
+    ],
+    "avg_abs_move_pct": 6.88,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.9% over 90 days and +4.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 14 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.8%, +12.9%, -2.9%, +10.9% (average absolute move 6.9%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +16.8%."
+  ]
+}

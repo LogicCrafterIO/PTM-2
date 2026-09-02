@@ -1,0 +1,77 @@
+{
+  "ticker": "HLT",
+  "as_of": "2026-08-30T13:30:08.564317+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 9.03863,
+    "eps_d30": 8.99128,
+    "eps_d90": 9.02281,
+    "change_30d_pct": 0.53,
+    "change_90d_pct": 0.18,
+    "analysts_up_30d": 14,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.11,
+        "estimate": 2.04931,
+        "surprise_pct": 2.96
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.08,
+        "estimate": 2.01629,
+        "surprise_pct": 3.16
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.01,
+        "estimate": 1.97488,
+        "surprise_pct": 1.78
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.29,
+        "estimate": 2.27229,
+        "surprise_pct": 0.78
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 2.17
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-28",
+        "move_pct": -2.54
+      },
+      {
+        "report_date": "2026-04-28",
+        "move_pct": -2.73
+      },
+      {
+        "report_date": "2026-02-11",
+        "move_pct": 0.44
+      },
+      {
+        "report_date": "2025-10-22",
+        "move_pct": 3.42
+      }
+    ],
+    "avg_abs_move_pct": 2.28,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.2% over 90 days and +0.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 14 up, 5 down.",
+    "Price reaction to the last 4 reports, most recent first: -2.5%, -2.7%, +0.4%, +3.4% (average absolute move 2.3%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +2.2%."
+  ]
+}

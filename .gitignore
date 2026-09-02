@@ -6,10 +6,20 @@ tools/
 __pycache__/
 .venv/
 .env
-data/raw/
+# Raw ingest caches are committed so a fresh clone sees the same Simple tab:
+# expectations (radar inputs), research packs (print-qual inputs) and the dive
+# run caches (the coverage reports' dive links). The bulky web caches stay out.
+data/raw/*
+!data/raw/expectations
+!data/raw/research
+!data/raw/deepsearch
+data/raw/deepsearch/*
+!data/raw/deepsearch/runs
 data/curated/
 data/llm_logs/
-ideas/
+# Idea reports: only the simple process's reports are part of the deliverable.
+ideas/*
+!ideas/simple
 *.pyc
 .pytest_cache/
 *.mp4

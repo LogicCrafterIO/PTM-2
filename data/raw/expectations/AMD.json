@@ -1,0 +1,77 @@
+{
+  "ticker": "AMD",
+  "as_of": "2026-08-30T14:32:21.601121+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.56794,
+    "eps_d30": 7.45208,
+    "eps_d90": 7.36568,
+    "change_30d_pct": 1.55,
+    "change_90d_pct": 2.75,
+    "analysts_up_30d": 32,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.2,
+        "estimate": 1.171,
+        "surprise_pct": 2.48
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.53,
+        "estimate": 1.31917,
+        "surprise_pct": 15.98
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.37,
+        "estimate": 1.29468,
+        "surprise_pct": 5.82
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.66,
+        "estimate": 1.60841,
+        "surprise_pct": 3.21
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 6.87
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": -7.04
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": 18.61
+      },
+      {
+        "report_date": "2026-02-04",
+        "move_pct": -17.31
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": 2.51
+      }
+    ],
+    "avg_abs_move_pct": 11.37,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.8% over 90 days and +1.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 32 up, 5 down.",
+    "Price reaction to the last 4 reports, most recent first: -7.0%, +18.6%, -17.3%, +2.5% (average absolute move 11.4%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +6.9%."
+  ]
+}

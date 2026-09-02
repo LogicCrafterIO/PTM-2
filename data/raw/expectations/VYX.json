@@ -1,0 +1,77 @@
+{
+  "ticker": "VYX",
+  "as_of": "2026-08-30T13:58:58.854976+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.916,
+    "eps_d30": 0.905,
+    "eps_d90": 0.90429,
+    "change_30d_pct": 1.22,
+    "change_90d_pct": 1.29,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.31,
+        "estimate": 0.21143,
+        "surprise_pct": 46.62
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.31,
+        "estimate": 0.28857,
+        "surprise_pct": 7.43
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.1,
+        "estimate": 0.07167,
+        "surprise_pct": 39.53
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.17,
+        "estimate": 0.15,
+        "surprise_pct": 13.33
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 26.73
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": 7.21
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 15.08
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": -9.35
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -6.47
+      }
+    ],
+    "avg_abs_move_pct": 9.53,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.3% over 90 days and +1.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: +7.2%, +15.1%, -9.3%, -6.5% (average absolute move 9.5%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +26.7%."
+  ]
+}

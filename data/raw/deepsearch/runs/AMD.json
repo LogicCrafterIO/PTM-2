@@ -1,0 +1,1408 @@
+{
+  "ticker": "AMD",
+  "name": "Advanced Micro Devices",
+  "sector": "Information Technology",
+  "industry": "Semiconductors",
+  "as_of": "2026-08-30",
+  "research": {
+    "ticker": "AMD",
+    "as_of": "2026-08-30",
+    "queries_run": [
+      "AMD latest news this quarter MI350 MI400 data center GPU customer wins",
+      "AMD vs NVIDIA data center GPU market share 2025 2026",
+      "AMD bear case risk Instinct GPU China export controls revenue impact 2026",
+      "AMD hyperscaler customer wins Microsoft Google Amazon Meta EPYC Instinct latest",
+      "AMD management changes executive departures hires 2025 2026",
+      "AMD analyst sentiment price target upgrades downgrades latest",
+      "data center AI chip demand forecast 2026 semiconductor industry",
+      "AMD Ryzen PC market share vs Intel latest 2025 2026",
+      "AMD export controls MI308 MI350 China regulatory latest",
+      "AMD upcoming catalysts earnings product launches 2026"
+    ],
+    "findings": [
+      {
+        "claim": "Q2 2026 revenue $11.5B, gross margin 54%, operating income $2.0B, net income $2.3B, diluted EPS $1.38.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000121/q22026991.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Data Center revenue $6.7B, up 107% YoY, 16% sequential, operating income $2.1B, operating margin 31%.",
+        "source": {
+          "title": "AMD Data Center Revenue Doubles to $6.7 Billion - Converge Digest",
+          "url": "https://convergedigest.com/amd-data-center-revenue-q2-2026-ai-infrastructure-helios/",
+          "date": ""
+        },
+        "category": "business|industry",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "AMD guided Q3 revenue to $13.0B.",
+        "source": {
+          "title": "Particle: AMD\u2019s Data-Center Pivot Accelerates as Helios Demand Tracks Ahead",
+          "url": "https://particle.news/story/amds-data-center-pivot-accelerates-as-helios-demand-tracks-ahead",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Helios demand ahead of forecasts, large hyperscaler commitments.",
+        "source": {
+          "title": "Particle: AMD\u2019s Data-Center Pivot Accelerates as Helios Demand Tracks Ahead",
+          "url": "https://particle.news/story/amds-data-center-pivot-accelerates-as-helios-demand-tracks-ahead",
+          "date": ""
+        },
+        "category": "catalyst|industry",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "AMD cash balance $13.11B.",
+        "source": {
+          "title": "Particle: AMD\u2019s Data-Center Pivot Accelerates as Helios Demand Tracks Ahead",
+          "url": "https://particle.news/story/amds-data-center-pivot-accelerates-as-helios-demand-tracks-ahead",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "AMD Instinct GPU revenue estimated $7-8B FY2026, 5-7% market share vs NVIDIA 80%.",
+        "source": {
+          "title": "AMD vs NVIDIA AI GPU Market Share 2026: MI350X vs B200",
+          "url": "https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026",
+          "date": ""
+        },
+        "category": "competition|industry",
+        "dated": "2026-04-13"
+      },
+      {
+        "claim": "NVIDIA AI chip revenue $193.7B FY2026.",
+        "source": {
+          "title": "AMD vs NVIDIA AI GPU Market Share 2026: MI350X vs B200",
+          "url": "https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026",
+          "date": ""
+        },
+        "category": "competition|industry",
+        "dated": "2026-04-13"
+      },
+      {
+        "claim": "Data center revenue grew 57% in Q1 2026 and 107% in Q2 2026.",
+        "source": {
+          "title": "AMD's Data Center Surge, Decomposed: Real CPU Profits, an AI Bet, and a Stock That Already Paid for 2027",
+          "url": "https://www.ainvest.com/news/amd-data-center-surge-decomposed-real-cpu-profits-ai-bet-stock-paid-2027-2608/",
+          "date": ""
+        },
+        "category": "business|industry",
+        "dated": "2026-08-26"
+      },
+      {
+        "claim": "AMD\u2019s AI accelerator market share is projected at ~10% in 2026, up from ~5% in 2024.",
+        "source": {
+          "title": "AI Chip Market Share Statistics 2026 [ Vendor Rankings, Revenue Data, and Supply Chain]",
+          "url": "https://commandlinux.com/ai/ai-chip-market-share/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "AMD\u2019s Q1 2026 data\u2011center revenue was $5.8\u202fB, up 57% year\u2011over\u2011year.",
+        "source": {
+          "title": "NVIDIA vs AMD vs Custom Silicon: AI Chips in 2026",
+          "url": "https://thetechtrends.tech/nvidia-vs-amd-vs-custom-silicon/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": ""
+      },
+      {
+        "claim": "AMD\u2019s Q4 2025 data\u2011center revenue reached $5.4\u202fB, up 39% YoY.",
+        "source": {
+          "title": "AMD Stock (AMD) Analysis: Buy or Sell, Forecast 2026 | TMB",
+          "url": "https://techmarketbriefs.com/companies/amd/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-03-24"
+      },
+      {
+        "claim": "AMD\u2019s total Q4 2025 revenue was $10.3\u202fB.",
+        "source": {
+          "title": "AMD Stock (AMD) Analysis: Buy or Sell, Forecast 2026 | TMB",
+          "url": "https://techmarketbriefs.com/companies/amd/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-03-24"
+      },
+      {
+        "claim": "AMD expects an $800\u202fM writedown on MI308X inventory due to export controls, eliminating $1.5\u202fB in sales.",
+        "source": {
+          "title": "China Export Controls Whack AMD Datacenter GPU Business",
+          "url": "https://www.nextplatform.com/ai/2025/05/09/china-export-controls-whack-amd-datacenter-gpu-business/1637408",
+          "date": ""
+        },
+        "category": "risk",
+        "dated": "2025-05-09"
+      },
+      {
+        "claim": "OpenAI\u2019s 6\u2011gigawatt GPU commitment gives AMD multi\u2011year revenue visibility.",
+        "source": {
+          "title": "AMD Stock (AMD) Analysis: Buy or Sell, Forecast 2026 | TMB",
+          "url": "https://techmarketbriefs.com/companies/amd/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-03-24"
+      },
+      {
+        "claim": "AMD\u2019s Instinct GPU line generated $7\u20118\u202fB in 2025, representing ~5\u20117% of the AI accelerator market.",
+        "source": {
+          "title": "AI GPU Market Share NVIDIA vs AMD vs Intel: 2026 Statistics",
+          "url": "https://commandlinux.com/statistics/ai-gpu-market-share-nvidia-vs-amd-vs-intel/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-04-26"
+      },
+      {
+        "claim": "NVIDIA holds 75\u201181% of AI accelerator revenue in 2026, down from ~92% in 2023.",
+        "source": {
+          "title": "AI GPU Market Share NVIDIA vs AMD vs Intel: 2026 Statistics",
+          "url": "https://commandlinux.com/statistics/ai-gpu-market-share-nvidia-vs-amd-vs-intel/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-04-26"
+      },
+      {
+        "claim": "Potential U.S. export regime could cap shipments of high\u2011end AI chips to China at 75,000 units per firm, affecting AMD's MI325.",
+        "source": {
+          "title": "AMD AI Export Restrictions: -3.3% Plunge Warning",
+          "url": "https://stocknewsroom.com/amd-ai-export-restrictions-plunge-warning/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-03-03"
+      },
+      {
+        "claim": "AMD Q2 2026 revenue $11.5B, up 50% YoY; data center revenue $6.7B, double the prior quarter.",
+        "source": {
+          "title": "AMD's Data Center Revenue Doubled. The Stock Fell 8% Anyway \u2014 the Gap Is the Story",
+          "url": "https://www.ainvest.com/news/amd-data-center-revenue-doubled-stock-fell-8-gap-story-2608/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-26"
+      },
+      {
+        "claim": "AMD holds ~5% of the global AI accelerator market.",
+        "source": {
+          "title": "China Fears Affect Nividia and AMD in Very Different Ways - 24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/08/14/china-fears-affect-nividia-and-amd-in-very-different-ways/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-14"
+      },
+      {
+        "claim": "Helios rack\u2011scale architecture begins shipping this quarter, with Anthropic committing 2 GW of MI450 GPUs.",
+        "source": {
+          "title": "China Fears Affect Nividia and AMD in Very Different Ways - 24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/08/14/china-fears-affect-nividia-and-amd-in-very-different-ways/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-14"
+      },
+      {
+        "claim": "Microsoft will deploy next\u2011gen AMD Instinct GPUs and EPYC CPUs in Azure AI infrastructure.",
+        "source": {
+          "title": "Microsoft to Deploy Next-Gen AMD Instinct and AMD EPYC Processors as the Companies Expand Their Long-Term Strategic Partnership - AMD Newsroom",
+          "url": "https://newsroom.amd.com/news/microsoft-azure-ai-infrastructure/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Meta and AMD will deploy up to 6 GW of AMD Instinct GPUs, with shipments starting 2H 2026 based on MI450 architecture.",
+        "source": {
+          "title": "AMD and Meta Announce Expanded Strategic Partnership to Deploy 6 Gigawatts of AMD GPUs :: Advanced Micro Devices, Inc. (AMD)",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1279/amd-and-meta-announce-expanded-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Meta will deploy a custom MI450 GPU and is lead customer for Venice EPYC CPU.",
+        "source": {
+          "title": "Meta to deploy custom AMD Instinct MI450-based GPU, is 'lead customer' for Venice Epyc CPU - DCD",
+          "url": "https://www.datacenterdynamics.com/en/news/meta-to-deploy-custom-amd-instinct-mi450-based-gpu-is-lead-customer-for-venice-epyc-cpu/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-19"
+      },
+      {
+        "claim": "AMD Helios combines 72 liquid\u2011cooled Instinct MI455X GPUs with EPYC CPUs and Pensando networking, delivering high\u2011density AI compute for training and inference.",
+        "source": {
+          "title": "AMD Helios Takes AI Infrastructure Fight to Rack Scale | Data Center Frontier",
+          "url": "https://www.datacenterfrontier.com/machine-learning/news/55399746/amd-helios-takes-ai-infrastructure-fight-to-rack-scale",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-21"
+      },
+      {
+        "claim": "Microsoft will ramp AMD Helios at scale on Azure, adding two new VMs powered by 6th\u2011Gen EPYC \u201cVenice\u201d processors and deploying AMD Pensando DPUs for AI backend networking.",
+        "source": {
+          "title": "Microsoft to Deploy Next-Gen AMD Instinct and AMD EPYC Processors as the Companies Expand Their Long-Term Strategic Partnership :: Advanced Micro Devices, Inc. (AMD)",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1291/microsoft-to-deploy-next-gen-amd-instinct-and-amd-epyc-processors-as-the-companies-expand-their-long-term-strategic-partnership",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-07-20"
+      },
+      {
+        "claim": "Tim Ryan was appointed to AMD\u2019s board of directors, effective Aug. 19, 2026, strengthening governance with expertise in technology and enterprise operations.",
+        "source": {
+          "title": "AMD Appoints Tim Ryan to Board of Directors - AMD Newsroom",
+          "url": "https://newsroom.amd.com/news/amd-appoints-tim-ryan-board-of-directors/",
+          "date": ""
+        },
+        "category": "governance",
+        "dated": "2026-08-19"
+      },
+      {
+        "claim": "Ariel Kelman was appointed Senior Vice President and Chief Marketing Officer of AMD, effective Feb. 9, 2026, to lead global marketing and go\u2011to\u2011market strategy.",
+        "source": {
+          "title": "AMD Hires Ariel Kelman as Chief Marketing Officer | Financial Post",
+          "url": "https://financialpost.com/globe-newswire/amd-hires-ariel-kelman-as-chief-marketing-officer",
+          "date": ""
+        },
+        "category": "management",
+        "dated": "2026-02-09"
+      },
+      {
+        "claim": "Dan McNamara, former Intel executive, was hired as Senior Vice President and General Manager of AMD\u2019s Server Business Unit to grow the EPYC line following the Rome launch.",
+        "source": {
+          "title": "AMD Hires Top Intel Exec Dan McNamara To Grow EPYC Business | CRN",
+          "url": "https://www.crn.com/news/components-peripherals/amd-hires-top-intel-exec-dan-mcnamara-to-grow-epyc-business",
+          "date": ""
+        },
+        "category": "management",
+        "dated": ""
+      },
+      {
+        "claim": "John Rayfield, former Intel client AI head, was hired as Corporate Vice President of AI Silicon at AMD to accelerate AI workloads on PCs.",
+        "source": {
+          "title": "AMD Hires Intel Exec Who Led Client AI Team For \u2018Meteor Lake\u2019 CPUs | CRN",
+          "url": "https://www.crn.com/news/components-peripherals/amd-hires-intel-exec-who-led-client-ai-team-for-meteor-lake-cpus",
+          "date": ""
+        },
+        "category": "management",
+        "dated": ""
+      },
+      {
+        "claim": "Mark Taylor, former Arrow Electronics president, was appointed North America Channel Chief at AMD to strengthen channel relationships.",
+        "source": {
+          "title": "AMD Hires Ex-Arrow Exec Mark Taylor As North America Channel Chief | CRN",
+          "url": "https://www.crn.com/news/channel-programs/amd-hires-ex-arrow-exec-mark-taylor-as-north-america-channel-chief",
+          "date": ""
+        },
+        "category": "management",
+        "dated": ""
+      },
+      {
+        "claim": "Raymond James upgraded AMD to Strong Buy, raising price target to $641 from $565.",
+        "source": {
+          "title": "Raymond James Upgrades Advanced Micro Devices to Strong Buy From Outperform, Adjusts Price Target to $641 From $565 | MarketScreener",
+          "url": "https://www.marketscreener.com/news/raymond-james-upgrades-advanced-micro-devices-to-strong-buy-from-outperform-adjusts-price-target-to-ce7858d8dc8cf72c",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-25"
+      },
+      {
+        "claim": "AMD\u2019s Q2 2026 x86 shipment share crossed 30% for the first time; revenue surged 50% YoY to $11.5\u202fB.",
+        "source": {
+          "title": "Raymond James Raises AMD Price Target to $641, Sees It Challenging Intel's CPU Dominance",
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262130458-amd-raymond-james-price-target-intel-cpu-competition-tradingkey",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-08-25"
+      },
+      {
+        "claim": "AMD faces risk from PC client market weakness and a high trailing P/E exceeding 115x.",
+        "source": {
+          "title": "Raymond James Raises AMD Price Target to $641, Sees It Challenging Intel's CPU Dominance",
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262130458-amd-raymond-james-price-target-intel-cpu-competition-tradingkey",
+          "date": ""
+        },
+        "category": "risk",
+        "dated": "2026-08-25"
+      },
+      {
+        "claim": "Wall Street analyst Simon Leopold expects AMD stock to hit a new ATH in 12 months, targeting $641.",
+        "source": {
+          "title": "Wall Street analyst upgrades Advanced Micro Devices stock price target",
+          "url": "https://finbold.com/wall-street-analyst-upgrades-advanced-micro-devices-stock-price-target/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-25"
+      },
+      {
+        "claim": "MarketBeat reports AMD EPS $1.66 beating estimates; revenue up 50.1% YoY to $11.54\u202fB.",
+        "source": {
+          "title": "Advanced Micro Devices (NASDAQ:AMD) Upgraded at Wall Street Zen",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-advanced-micro-devices-nasdaq-amd-upgraded-at-wall-street-zen-2026-08-29/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-08-29"
+      },
+      {
+        "claim": "Raymond James cites a 44% CAGR for AMD\u2019s relevant revenue through 2030, driven by AI datacenter demand.",
+        "source": {
+          "title": "Raymond James upgrades AMD to Strong Buy with $641 price target on AI datacenter momentum",
+          "url": "https://cryptobriefing.com/raymond-james-upgrades-amd-strong-buy/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-25"
+      },
+      {
+        "claim": "AMD\u2019s market share gains in server CPUs and data center expansion underpin the upgrade.",
+        "source": {
+          "title": "Raymond James Raises AMD Price Target to $641, Sees It Challenging Intel's CPU Dominance",
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262130458-amd-raymond-james-price-target-intel-cpu-competition-tradingkey",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-25"
+      },
+      {
+        "claim": "The price target increase represents a 13.5% jump from $565 to $641.",
+        "source": {
+          "title": "Wall Street analyst upgrades Advanced Micro Devices stock price target",
+          "url": "https://finbold.com/wall-street-analyst-upgrades-advanced-micro-devices-stock-price-target/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-25"
+      },
+      {
+        "claim": "AI server shipments forecast raised to nearly 31% YoY in 2026, driven by 90% surge in CSP CapEx.",
+        "source": {
+          "title": "AI Server Shipments Forecast Raised to Nearly 31% YoY in 2026 as 90% Surge in CSP CapEx Fuels Infrastructure Expansion, Says TrendForce",
+          "url": "https://www.trendforce.com/presscenter/news/20260803-13161.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-03"
+      },
+      {
+        "claim": "Global semiconductor revenue forecast $1.6 trillion in 2026, up 92% from 2025.",
+        "source": {
+          "title": "AI is turning the semiconductor market into a $1.6 trillion industry | Network World",
+          "url": "https://www.networkworld.com/article/4213288/ai-is-turning-the-semiconductor-market-into-a-1-6-trillion-industry.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-24"
+      },
+      {
+        "claim": "Dell'Oro lifts data centre chip forecast to $1.8 trillion by 2030.",
+        "source": {
+          "title": "Dell'Oro lifts data centre chip forecast on AI demand",
+          "url": "https://datacenter.news/story/dell-oro-lifts-data-centre-chip-forecast-on-ai-demand",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-13"
+      },
+      {
+        "claim": "Omdia AI demand drives 94.1% surge in semiconductor forecast for 2026.",
+        "source": {
+          "title": "Omdia: AI Demand Drives 94.1% Surge in Semiconductor Forecast for 2026 | MarketScreener",
+          "url": "https://www.marketscreener.com/news/omdia-ai-demand-drives-94-1-surge-in-semiconductor-forecast-for-2026-ce7f50dada8cf626",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-30"
+      },
+      {
+        "claim": "AMD's x86 client CPU market share reached 30.3% in Q2 2026.",
+        "source": {
+          "title": "AMD now ships more than 30% of x86 PC CPUs as Intel's long-held lead keeps shrinking | TechSpot",
+          "url": "https://www.techspot.com/news/113569-amd-crosses-30-client-cpu-market-share-against.html",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-21"
+      },
+      {
+        "claim": "AMD's share increased 0.7pp from 29.6% Q1 to 30.3% Q2 2026.",
+        "source": {
+          "title": "AMD now ships more than 30% of x86 PC CPUs as Intel's long-held lead keeps shrinking | TechSpot",
+          "url": "https://www.techspot.com/news/113569-amd-crosses-30-client-cpu-market-share-against.html",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-21"
+      },
+      {
+        "claim": "AMD gains record share across all CPU categories, propelling x86 share to record high.",
+        "source": {
+          "title": "AMD Hits Record x86 Market Share To Cut Into Intel's Chip Lead In Every Segment",
+          "url": "https://hothardware.com/news/amd-record-x86-market-share-cut-intels-chip-lead",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-21"
+      },
+      {
+        "claim": "Desktop CPU shipments fell 20% amid high component costs, but AMD still set record share.",
+        "source": {
+          "title": "Desktop CPU shipments crater 20% amid high component costs, but AMD gains record share despite 'ugly' desktop processor market \u2014 Intel floods laptop market with millions of CPUs, but AMD still sets all-time share records | Tom's Hardware",
+          "url": "https://www.tomshardware.com/pc-components/cpus/desktop-cpu-shipments-crater-20-percent-amid-high-component-costs-but-amd-gains-record-share-despite-ugly-desktop-processor-market-intel-floods-laptop-market-with-millions-of-cpus-but-amd-still-sets-all-time-share-records",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": ""
+      },
+      {
+        "claim": "AMD captured 30.7% of the overall x86 CPU market in Q2 2026, down from 31.2% a year earlier.",
+        "source": {
+          "title": "Intel x86 CPU Market Share Falls Below 70% as AMD Gains Across Server, Desktop and Laptop Segments",
+          "url": "https://www.digitalcitizen.life/intel-x86-cpu-market-share-falls-below-70-as-amd-gains-across-server-desktop-and-laptop-segments/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-25"
+      },
+      {
+        "claim": "AMD's desktop x86 CPU unit share rose to 34.9% in Q2 2026, up 1.8 points QoQ.",
+        "source": {
+          "title": "AMD claws back ground against Intel in the CPU market, climbs to 35% share in desktop CPUs",
+          "url": "https://www.tweaktown.com/news/113200/amd-claws-back-ground-against-intel-in-the-cpu-market-climbs-to-35-percent-share-in-desktop-cpus/index.html",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-22"
+      },
+      {
+        "claim": "AMD's server share reached 34.5% in Q2 2026.",
+        "source": {
+          "title": "AMD claws back ground against Intel in the CPU market, climbs to 35% share in desktop CPUs",
+          "url": "https://www.tweaktown.com/news/113200/amd-claws-back-ground-against-intel-in-the-cpu-market-climbs-to-35-percent-share-in-desktop-cpus/index.html",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-22"
+      },
+      {
+        "claim": "U.S. export controls now require licenses for AMD MI350x AI accelerators sold to China, effective May 31, 2026.",
+        "source": {
+          "title": "Particle: U.S. Closes Loophole on Nvidia and AMD AI Chip Exports",
+          "url": "https://particle.news/story/us-closes-loophole-on-nvidia-and-amd-ai-chip-exports",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-05-31"
+      },
+      {
+        "claim": "AMD resumed shipments of Instinct MI308 chips to China after Department of Commerce approval on July 22, 2026.",
+        "source": {
+          "title": "AMD to resume shipments of Instinct MI308 chips to China following Department of Commerce approval - DCD",
+          "url": "https://www.datacenterdynamics.com/en/news/amd-to-resume-shipments-of-instinct-mi308-chips-to-china-following-department-of-commerce-approval/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-07-22"
+      },
+      {
+        "claim": "AMD CEO Lisa Su secured commitments for the MI-325X AI accelerator in China amid U.S. export controls, announced May 20, 2026.",
+        "source": {
+          "title": "AMD CEO Lisa\u202fSu Secures New AI Chip Commitments in Beijing Amid U.S.\u2013China Export Controls | LavX News",
+          "url": "https://news.lavx.hu/article/amd-ceo-lisa-su-secures-new-ai-chip-commitments-in-beijing-amid-u-s-china-export-controls",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-05-20"
+      },
+      {
+        "claim": "AMD reported $390 million in China revenue for Q4 2025, the first disclosure of China sales in three quarters.",
+        "source": {
+          "title": "AMD Returns to China, Reporting $390 Million in Q4 Revenue| TMTPOST",
+          "url": "https://en.tmtpost.com/post/7866667",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "AMD's x86 client share grew from 21.1% in Q2 2024 to 30.3% in Q2 2026, a 9.2 point increase.",
+        "source": {
+          "title": "AMD Surpasses 30% Market Share in x86 Client Processors as ARM Gains Ground \u2013 Compute Report",
+          "url": "https://computereport.com/amd-surpasses-30-percent-x86-client-processor-market-share-arm-rise/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-21"
+      },
+      {
+        "claim": "AMD will resume MI308 AI chip shipments to China after US Commerce Department approval.",
+        "source": {
+          "title": "AMD to resume MI308 chip shipments to China after US approval - Bloomberg By Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/amd-to-resume-mi308-chip-shipments-to-china-after-us-approval--bloomberg-93CH-4135605",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-07-15"
+      },
+      {
+        "claim": "AMD incurred up to $800 million in charges tied to MI308 export controls.",
+        "source": {
+          "title": "AMD to resume MI308 AI chip exports to China \u2013 NBC Los Angeles",
+          "url": "https://www.nbclosangeles.com/news/business/money-report/amd-to-resume-mi308-ai-chip-exports-to-china/3745344/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-07-15"
+      },
+      {
+        "claim": "AMD Q2 2026 revenue $11.5B, gross margin 54%, operating income $2.0B, net income $2.3B, diluted EPS $1.38.",
+        "source": {
+          "title": "AMD Reports Second Quarter 2026 Financial Results :: Advanced Micro Devices, Inc. (AMD)",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "AMD Q2 2026 non\u2011GAAP gross margin 56%, operating income $3.1B, net income $2.8B, diluted EPS $1.66.",
+        "source": {
+          "title": "AMD Reports Second Quarter 2026 Financial Results :: Advanced Micro Devices, Inc. (AMD)",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "AMD Q2 2026 Data Center revenue > double YoY, $6.7B.",
+        "source": {
+          "title": "AMD (AMD) Q2 2026 Earnings Call Transcript | The Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/08/11/amd-amd-q2-2026-earnings-call-transcript/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "AMD Q2 2026 revenue beat expectations: $11.54B vs $11.28B expected, EPS $1.66 vs $1.62 expected.",
+        "source": {
+          "title": "AMD earnings report Q2 2026",
+          "url": "https://www.cnbc.com/2026/08/04/amd-earnings-report-q2-2026.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "AMD guidance: data center revenue projected to jump to $6.5B next quarter, server CPU share targeting 50%.",
+        "source": {
+          "title": "Why AMD stock is surging over 7% ahead of earnings",
+          "url": "https://invezz.com/uk/news/2026/08/04/why-amd-stock-is-surging-over-7percent-ahead-of-earnings/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "AMD expects Q2 2026 revenue near $11.3B, gross margin near 56%, Helios shipments end of Q3.",
+        "source": {
+          "title": "AMD 2Q26 Earnings Preview: EPYC Drives Growth, But Instinct and Helios Will Define the Bias | Pepperstone",
+          "url": "https://pepperstone.com/en-au/insights/market-analysis/equities/amd-2q26-earnings-preview-epyc-drives-growth-but-instinct-and-helios-will-define-the-bias",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-10"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000121/q22026991.htm",
+        "date": ""
+      },
+      {
+        "title": "AMD Data Center Revenue Doubles to $6.7 Billion - Converge Digest",
+        "url": "https://convergedigest.com/amd-data-center-revenue-q2-2026-ai-infrastructure-helios/",
+        "date": ""
+      },
+      {
+        "title": "Particle: AMD\u2019s Data-Center Pivot Accelerates as Helios Demand Tracks Ahead",
+        "url": "https://particle.news/story/amds-data-center-pivot-accelerates-as-helios-demand-tracks-ahead",
+        "date": ""
+      },
+      {
+        "title": "Particle: AMD\u2019s Data-Center Pivot Accelerates as Helios Demand Tracks Ahead",
+        "url": "https://particle.news/story/amds-data-center-pivot-accelerates-as-helios-demand-tracks-ahead",
+        "date": ""
+      },
+      {
+        "title": "Particle: AMD\u2019s Data-Center Pivot Accelerates as Helios Demand Tracks Ahead",
+        "url": "https://particle.news/story/amds-data-center-pivot-accelerates-as-helios-demand-tracks-ahead",
+        "date": ""
+      },
+      {
+        "title": "AMD vs NVIDIA AI GPU Market Share 2026: MI350X vs B200",
+        "url": "https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026",
+        "date": ""
+      },
+      {
+        "title": "AMD vs NVIDIA AI GPU Market Share 2026: MI350X vs B200",
+        "url": "https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026",
+        "date": ""
+      },
+      {
+        "title": "AMD's Data Center Surge, Decomposed: Real CPU Profits, an AI Bet, and a Stock That Already Paid for 2027",
+        "url": "https://www.ainvest.com/news/amd-data-center-surge-decomposed-real-cpu-profits-ai-bet-stock-paid-2027-2608/",
+        "date": ""
+      },
+      {
+        "title": "AI Chip Market Share Statistics 2026 [ Vendor Rankings, Revenue Data, and Supply Chain]",
+        "url": "https://commandlinux.com/ai/ai-chip-market-share/",
+        "date": ""
+      },
+      {
+        "title": "NVIDIA vs AMD vs Custom Silicon: AI Chips in 2026",
+        "url": "https://thetechtrends.tech/nvidia-vs-amd-vs-custom-silicon/",
+        "date": ""
+      },
+      {
+        "title": "AMD Stock (AMD) Analysis: Buy or Sell, Forecast 2026 | TMB",
+        "url": "https://techmarketbriefs.com/companies/amd/",
+        "date": ""
+      },
+      {
+        "title": "AMD Stock (AMD) Analysis: Buy or Sell, Forecast 2026 | TMB",
+        "url": "https://techmarketbriefs.com/companies/amd/",
+        "date": ""
+      },
+      {
+        "title": "China Export Controls Whack AMD Datacenter GPU Business",
+        "url": "https://www.nextplatform.com/ai/2025/05/09/china-export-controls-whack-amd-datacenter-gpu-business/1637408",
+        "date": ""
+      },
+      {
+        "title": "AMD Stock (AMD) Analysis: Buy or Sell, Forecast 2026 | TMB",
+        "url": "https://techmarketbriefs.com/companies/amd/",
+        "date": ""
+      },
+      {
+        "title": "AI GPU Market Share NVIDIA vs AMD vs Intel: 2026 Statistics",
+        "url": "https://commandlinux.com/statistics/ai-gpu-market-share-nvidia-vs-amd-vs-intel/",
+        "date": ""
+      },
+      {
+        "title": "AI GPU Market Share NVIDIA vs AMD vs Intel: 2026 Statistics",
+        "url": "https://commandlinux.com/statistics/ai-gpu-market-share-nvidia-vs-amd-vs-intel/",
+        "date": ""
+      },
+      {
+        "title": "AMD AI Export Restrictions: -3.3% Plunge Warning",
+        "url": "https://stocknewsroom.com/amd-ai-export-restrictions-plunge-warning/",
+        "date": ""
+      },
+      {
+        "title": "AMD's Data Center Revenue Doubled. The Stock Fell 8% Anyway \u2014 the Gap Is the Story",
+        "url": "https://www.ainvest.com/news/amd-data-center-revenue-doubled-stock-fell-8-gap-story-2608/",
+        "date": ""
+      },
+      {
+        "title": "China Fears Affect Nividia and AMD in Very Different Ways - 24/7 Wall St.",
+        "url": "https://247wallst.com/investing/2026/08/14/china-fears-affect-nividia-and-amd-in-very-different-ways/",
+        "date": ""
+      },
+      {
+        "title": "China Fears Affect Nividia and AMD in Very Different Ways - 24/7 Wall St.",
+        "url": "https://247wallst.com/investing/2026/08/14/china-fears-affect-nividia-and-amd-in-very-different-ways/",
+        "date": ""
+      },
+      {
+        "title": "Microsoft to Deploy Next-Gen AMD Instinct and AMD EPYC Processors as the Companies Expand Their Long-Term Strategic Partnership - AMD Newsroom",
+        "url": "https://newsroom.amd.com/news/microsoft-azure-ai-infrastructure/",
+        "date": ""
+      },
+      {
+        "title": "AMD and Meta Announce Expanded Strategic Partnership to Deploy 6 Gigawatts of AMD GPUs :: Advanced Micro Devices, Inc. (AMD)",
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1279/amd-and-meta-announce-expanded-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+        "date": ""
+      },
+      {
+        "title": "Meta to deploy custom AMD Instinct MI450-based GPU, is 'lead customer' for Venice Epyc CPU - DCD",
+        "url": "https://www.datacenterdynamics.com/en/news/meta-to-deploy-custom-amd-instinct-mi450-based-gpu-is-lead-customer-for-venice-epyc-cpu/",
+        "date": ""
+      },
+      {
+        "title": "AMD Helios Takes AI Infrastructure Fight to Rack Scale | Data Center Frontier",
+        "url": "https://www.datacenterfrontier.com/machine-learning/news/55399746/amd-helios-takes-ai-infrastructure-fight-to-rack-scale",
+        "date": ""
+      },
+      {
+        "title": "Microsoft to Deploy Next-Gen AMD Instinct and AMD EPYC Processors as the Companies Expand Their Long-Term Strategic Partnership :: Advanced Micro Devices, Inc. (AMD)",
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1291/microsoft-to-deploy-next-gen-amd-instinct-and-amd-epyc-processors-as-the-companies-expand-their-long-term-strategic-partnership",
+        "date": ""
+      },
+      {
+        "title": "AMD Appoints Tim Ryan to Board of Directors - AMD Newsroom",
+        "url": "https://newsroom.amd.com/news/amd-appoints-tim-ryan-board-of-directors/",
+        "date": ""
+      },
+      {
+        "title": "AMD Hires Ariel Kelman as Chief Marketing Officer | Financial Post",
+        "url": "https://financialpost.com/globe-newswire/amd-hires-ariel-kelman-as-chief-marketing-officer",
+        "date": ""
+      },
+      {
+        "title": "AMD Hires Top Intel Exec Dan McNamara To Grow EPYC Business | CRN",
+        "url": "https://www.crn.com/news/components-peripherals/amd-hires-top-intel-exec-dan-mcnamara-to-grow-epyc-business",
+        "date": ""
+      },
+      {
+        "title": "AMD Hires Intel Exec Who Led Client AI Team For \u2018Meteor Lake\u2019 CPUs | CRN",
+        "url": "https://www.crn.com/news/components-peripherals/amd-hires-intel-exec-who-led-client-ai-team-for-meteor-lake-cpus",
+        "date": ""
+      },
+      {
+        "title": "AMD Hires Ex-Arrow Exec Mark Taylor As North America Channel Chief | CRN",
+        "url": "https://www.crn.com/news/channel-programs/amd-hires-ex-arrow-exec-mark-taylor-as-north-america-channel-chief",
+        "date": ""
+      },
+      {
+        "title": "Raymond James Upgrades Advanced Micro Devices to Strong Buy From Outperform, Adjusts Price Target to $641 From $565 | MarketScreener",
+        "url": "https://www.marketscreener.com/news/raymond-james-upgrades-advanced-micro-devices-to-strong-buy-from-outperform-adjusts-price-target-to-ce7858d8dc8cf72c",
+        "date": ""
+      },
+      {
+        "title": "Raymond James Raises AMD Price Target to $641, Sees It Challenging Intel's CPU Dominance",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262130458-amd-raymond-james-price-target-intel-cpu-competition-tradingkey",
+        "date": ""
+      },
+      {
+        "title": "Raymond James Raises AMD Price Target to $641, Sees It Challenging Intel's CPU Dominance",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262130458-amd-raymond-james-price-target-intel-cpu-competition-tradingkey",
+        "date": ""
+      },
+      {
+        "title": "Wall Street analyst upgrades Advanced Micro Devices stock price target",
+        "url": "https://finbold.com/wall-street-analyst-upgrades-advanced-micro-devices-stock-price-target/",
+        "date": ""
+      },
+      {
+        "title": "Advanced Micro Devices (NASDAQ:AMD) Upgraded at Wall Street Zen",
+        "url": "https://www.marketbeat.com/instant-alerts/analyst-advanced-micro-devices-nasdaq-amd-upgraded-at-wall-street-zen-2026-08-29/",
+        "date": ""
+      },
+      {
+        "title": "Raymond James upgrades AMD to Strong Buy with $641 price target on AI datacenter momentum",
+        "url": "https://cryptobriefing.com/raymond-james-upgrades-amd-strong-buy/",
+        "date": ""
+      },
+      {
+        "title": "Raymond James Raises AMD Price Target to $641, Sees It Challenging Intel's CPU Dominance",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262130458-amd-raymond-james-price-target-intel-cpu-competition-tradingkey",
+        "date": ""
+      },
+      {
+        "title": "Wall Street analyst upgrades Advanced Micro Devices stock price target",
+        "url": "https://finbold.com/wall-street-analyst-upgrades-advanced-micro-devices-stock-price-target/",
+        "date": ""
+      },
+      {
+        "title": "AI Server Shipments Forecast Raised to Nearly 31% YoY in 2026 as 90% Surge in CSP CapEx Fuels Infrastructure Expansion, Says TrendForce",
+        "url": "https://www.trendforce.com/presscenter/news/20260803-13161.html",
+        "date": ""
+      },
+      {
+        "title": "AI is turning the semiconductor market into a $1.6 trillion industry | Network World",
+        "url": "https://www.networkworld.com/article/4213288/ai-is-turning-the-semiconductor-market-into-a-1-6-trillion-industry.html",
+        "date": ""
+      },
+      {
+        "title": "Dell'Oro lifts data centre chip forecast on AI demand",
+        "url": "https://datacenter.news/story/dell-oro-lifts-data-centre-chip-forecast-on-ai-demand",
+        "date": ""
+      },
+      {
+        "title": "Omdia: AI Demand Drives 94.1% Surge in Semiconductor Forecast for 2026 | MarketScreener",
+        "url": "https://www.marketscreener.com/news/omdia-ai-demand-drives-94-1-surge-in-semiconductor-forecast-for-2026-ce7f50dada8cf626",
+        "date": ""
+      },
+      {
+        "title": "AMD now ships more than 30% of x86 PC CPUs as Intel's long-held lead keeps shrinking | TechSpot",
+        "url": "https://www.techspot.com/news/113569-amd-crosses-30-client-cpu-market-share-against.html",
+        "date": ""
+      },
+      {
+        "title": "AMD now ships more than 30% of x86 PC CPUs as Intel's long-held lead keeps shrinking | TechSpot",
+        "url": "https://www.techspot.com/news/113569-amd-crosses-30-client-cpu-market-share-against.html",
+        "date": ""
+      },
+      {
+        "title": "AMD Hits Record x86 Market Share To Cut Into Intel's Chip Lead In Every Segment",
+        "url": "https://hothardware.com/news/amd-record-x86-market-share-cut-intels-chip-lead",
+        "date": ""
+      },
+      {
+        "title": "Desktop CPU shipments crater 20% amid high component costs, but AMD gains record share despite 'ugly' desktop processor market \u2014 Intel floods laptop market with millions of CPUs, but AMD still sets all-time share records | Tom's Hardware",
+        "url": "https://www.tomshardware.com/pc-components/cpus/desktop-cpu-shipments-crater-20-percent-amid-high-component-costs-but-amd-gains-record-share-despite-ugly-desktop-processor-market-intel-floods-laptop-market-with-millions-of-cpus-but-amd-still-sets-all-time-share-records",
+        "date": ""
+      },
+      {
+        "title": "Intel x86 CPU Market Share Falls Below 70% as AMD Gains Across Server, Desktop and Laptop Segments",
+        "url": "https://www.digitalcitizen.life/intel-x86-cpu-market-share-falls-below-70-as-amd-gains-across-server-desktop-and-laptop-segments/",
+        "date": ""
+      },
+      {
+        "title": "AMD claws back ground against Intel in the CPU market, climbs to 35% share in desktop CPUs",
+        "url": "https://www.tweaktown.com/news/113200/amd-claws-back-ground-against-intel-in-the-cpu-market-climbs-to-35-percent-share-in-desktop-cpus/index.html",
+        "date": ""
+      },
+      {
+        "title": "AMD claws back ground against Intel in the CPU market, climbs to 35% share in desktop CPUs",
+        "url": "https://www.tweaktown.com/news/113200/amd-claws-back-ground-against-intel-in-the-cpu-market-climbs-to-35-percent-share-in-desktop-cpus/index.html",
+        "date": ""
+      },
+      {
+        "title": "Particle: U.S. Closes Loophole on Nvidia and AMD AI Chip Exports",
+        "url": "https://particle.news/story/us-closes-loophole-on-nvidia-and-amd-ai-chip-exports",
+        "date": ""
+      },
+      {
+        "title": "AMD to resume shipments of Instinct MI308 chips to China following Department of Commerce approval - DCD",
+        "url": "https://www.datacenterdynamics.com/en/news/amd-to-resume-shipments-of-instinct-mi308-chips-to-china-following-department-of-commerce-approval/",
+        "date": ""
+      },
+      {
+        "title": "AMD CEO Lisa\u202fSu Secures New AI Chip Commitments in Beijing Amid U.S.\u2013China Export Controls | LavX News",
+        "url": "https://news.lavx.hu/article/amd-ceo-lisa-su-secures-new-ai-chip-commitments-in-beijing-amid-u-s-china-export-controls",
+        "date": ""
+      },
+      {
+        "title": "AMD Returns to China, Reporting $390 Million in Q4 Revenue| TMTPOST",
+        "url": "https://en.tmtpost.com/post/7866667",
+        "date": ""
+      },
+      {
+        "title": "AMD Surpasses 30% Market Share in x86 Client Processors as ARM Gains Ground \u2013 Compute Report",
+        "url": "https://computereport.com/amd-surpasses-30-percent-x86-client-processor-market-share-arm-rise/",
+        "date": ""
+      },
+      {
+        "title": "AMD to resume MI308 chip shipments to China after US approval - Bloomberg By Investing.com",
+        "url": "https://www.investing.com/news/stock-market-news/amd-to-resume-mi308-chip-shipments-to-china-after-us-approval--bloomberg-93CH-4135605",
+        "date": ""
+      },
+      {
+        "title": "AMD to resume MI308 AI chip exports to China \u2013 NBC Los Angeles",
+        "url": "https://www.nbclosangeles.com/news/business/money-report/amd-to-resume-mi308-ai-chip-exports-to-china/3745344/",
+        "date": ""
+      },
+      {
+        "title": "AMD Reports Second Quarter 2026 Financial Results :: Advanced Micro Devices, Inc. (AMD)",
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+        "date": ""
+      },
+      {
+        "title": "AMD Reports Second Quarter 2026 Financial Results :: Advanced Micro Devices, Inc. (AMD)",
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+        "date": ""
+      },
+      {
+        "title": "AMD (AMD) Q2 2026 Earnings Call Transcript | The Motley Fool",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/08/11/amd-amd-q2-2026-earnings-call-transcript/",
+        "date": ""
+      },
+      {
+        "title": "AMD earnings report Q2 2026",
+        "url": "https://www.cnbc.com/2026/08/04/amd-earnings-report-q2-2026.html",
+        "date": ""
+      },
+      {
+        "title": "Why AMD stock is surging over 7% ahead of earnings",
+        "url": "https://invezz.com/uk/news/2026/08/04/why-amd-stock-is-surging-over-7percent-ahead-of-earnings/",
+        "date": ""
+      },
+      {
+        "title": "AMD 2Q26 Earnings Preview: EPYC Drives Growth, But Instinct and Helios Will Define the Bias | Pepperstone",
+        "url": "https://pepperstone.com/en-au/insights/market-analysis/equities/amd-2q26-earnings-preview-epyc-drives-growth-but-instinct-and-helios-will-define-the-bias",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "constructive",
+    "thesis": "AMD\u2019s data\u2011center and AI accelerator business is experiencing explosive growth with strong margins and expanding market share, supported by diversified hyperscaler commitments and robust cash, positioning the company for continued upside despite export\u2011control and valuation risks.",
+    "drivers": [
+      {
+        "name": "Data Center AI Demand & Customer Concentration",
+        "direction": "tailwind",
+        "evidence": "Q2 2026 data\u2011center revenue $6.7B, 107% YoY, 31% operating margin",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Bull verdict and strong revenue/margin growth outweigh concentration risk."
+      },
+      {
+        "name": "Pricing Power & Margin Sustainability",
+        "direction": "tailwind",
+        "evidence": "Gross margin 54%, operating margin 31% in data\u2011center business",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000121/q22026991.htm",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Margins remain robust with no evidence of imminent compression."
+      },
+      {
+        "name": "Export Controls & Geopolitical Risk",
+        "direction": "neutral",
+        "evidence": "Export controls on MI350x/MI308/MI325/MI450, inventory write\u2011down up to $800M, mitigation actions in place",
+        "source": {
+          "title": "AMD Data Center Revenue Doubles to $6.7 Billion - Converge Digest",
+          "url": "https://convergedigest.com/amd-data-center-revenue-q2-2026-ai-infrastructure-helios/",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": 0.0,
+        "category": "risk",
+        "score_why": "Tie verdict reflects offsetting mitigation but risk remains real."
+      },
+      {
+        "name": "Competitive Displacement & Market Share Growth",
+        "direction": "tailwind",
+        "evidence": "Projected AI accelerator share ~10% in 2026 from ~5% in 2024",
+        "source": {
+          "title": "Particle: AMD\u2019s Data-Center Pivot Accelerates as Helios Demand Tracks Ahead",
+          "url": "https://particle.news/story/amds-data-center-pivot-accelerates-as-helios-demand-tracks-ahead",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "competitive",
+        "score_why": "Bull verdict and clear share\u2011growth trajectory support upside."
+      },
+      {
+        "name": "Management Execution & Talent Acquisition",
+        "direction": "tailwind",
+        "evidence": "Key hires (Dan McNamara, John Rayfield, Tim Ryan, Ariel Kelman) strengthen execution",
+        "source": {
+          "title": "Particle: AMD\u2019s Data-Center Pivot Accelerates as Helios Demand Tracks Ahead",
+          "url": "https://particle.news/story/amds-data-center-pivot-accelerates-as-helios-demand-tracks-ahead",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": 1.0,
+        "category": "catalysts",
+        "score_why": "Leadership upgrades provide credible execution advantage, though integration risk exists."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "AMD\u2019s data\u2011center business is exploding, with Q2\u202f2026 revenue of $11.5\u202fB and data\u2011center revenue of $6.7\u202fB \u2013 a 107% YoY jump and 16% sequential growth, driving an operating margin of 31% and operating income of $2.1\u202fB.",
+        "evidence": "Data\u2011center revenue surged 107% YoY and 16% sequential, operating margin 31%, operating income $2.1\u202fB.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The company is rapidly gaining AI accelerator market share, projected to reach ~10% in 2026 from ~5% in 2024, supported by Helios demand ahead of forecasts and large hyperscaler commitments (Anthropic, Microsoft, Meta).",
+        "evidence": "Projected AI accelerator share ~10% in 2026, Helios demand ahead of forecasts, hyperscaler commitments.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "AMD\u2019s guidance shows continued momentum: Q3 revenue is projected at $13.0\u202fB, with data\u2011center revenue expected to jump to $6.5\u202fB and a target server\u2011CPU share of 50%.",
+        "evidence": "Q3 revenue guidance $13.0\u202fB, data\u2011center revenue $6.5\u202fB, server\u2011CPU share 50%.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "A strong cash position of $13.11\u202fB gives AMD runway for capital expenditures, strategic acquisitions, and continued investment in AI and data\u2011center products.",
+        "evidence": "Cash balance $13.11\u202fB.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Strategic hires \u2013 Tim Ryan to the board, Ariel Kelman as CMO, Dan McNamara to lead EPYC, John Rayfield to AI silicon, and Mark Taylor to strengthen channel \u2013 bring deep industry expertise to accelerate growth.",
+        "evidence": "New hires Tim Ryan, Ariel Kelman, Dan McNamara, John Rayfield, Mark Taylor.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Analysts are bullish: Raymond James upgraded AMD to Strong Buy, raised the price target to $641, and cites a 44% CAGR for relevant revenue through 2030 driven by AI data\u2011center demand.",
+        "evidence": "Raymond James upgrade to Strong Buy, price target $641, 44% CAGR to 2030.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "medium"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Export controls and inventory write\u2011downs erode revenue and profitability.",
+        "evidence": "AMD expects an $800\u202fM writedown on MI308X inventory due to export controls, eliminating $1.5\u202fB in sales.",
+        "source": {
+          "title": "China Export Controls Whack AMD Datacenter GPU Business",
+          "url": "https://www.nextplatform.com/ai/2025/05/09/china-export-controls-whack-amd-datacenter-gpu-business/1637408",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Export controls limit shipments to China, reducing revenue potential.",
+        "evidence": "U.S. export controls now require licenses for AMD MI350x AI accelerators sold to China, effective May 31, 2026.",
+        "source": {
+          "title": "Particle: U.S. Closes Loophole on Nvidia and AMD AI Chip Exports",
+          "url": "https://particle.news/story/us-closes-loophole-on-nvidia-and-amd-ai-chip-exports",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "AMD\u2019s AI accelerator market share remains low versus NVIDIA, limiting growth and pricing power.",
+        "evidence": "AMD Instinct GPU revenue estimated $7\u20118B FY2026, 5\u20117% market share vs NVIDIA 80%.",
+        "source": {
+          "title": "AMD vs NVIDIA AI GPU Market Share 2026: MI350X vs B200",
+          "url": "https://siliconanalysts.com/analysis/amd-vs-nvidia-ai-gpu-market-share-2026",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "AMD\u2019s valuation is high with a trailing P/E exceeding 115x, exposing it to a sharp correction if growth slows.",
+        "evidence": "AMD faces risk from PC client market weakness and a high trailing P/E exceeding 115x.",
+        "source": {
+          "title": "Raymond James Raises AMD Price Target to $641, Sees It Challenging Intel's CPU Dominance",
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262130458-amd-raymond-james-price-target-intel-cpu-competition-tradingkey",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Data\u2011center revenue growth is volatile; a slowdown would hurt overall revenue.",
+        "evidence": "Data Center revenue grew 57% in Q1 2026 and 107% in Q2 2026.",
+        "source": {
+          "title": "AMD's Data Center Surge, Decomposed: Real CPU Profits, an AI Bet, and a Stock That Already Paid for 2027",
+          "url": "https://www.ainvest.com/news/amd-data-center-surge-decomposed-real-cpu-profits-ai-bet-stock-paid-2027-2608/",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "PC client market weakness could erode AMD\u2019s x86 revenue base.",
+        "evidence": "Desktop CPU shipments fell 20% amid high component costs, but AMD still set record share.",
+        "source": {
+          "title": "Desktop CPU shipments crater 20% amid high component costs, but AMD gains record share despite 'ugly' desktop processor market \u2014 Intel floods laptop market with millions of CPUs, but AMD still sets all-time share records | Tom's Hardware",
+          "url": "https://www.tomshardware.com/pc-components/cpus/desktop-cpu-shipments-crater-20-percent-amid-high-component-costs-but-amd-gains-record-share-despite-ugly-desktop-processor-market-intel-floods-laptop-market-with-millions-of-cpus-but-amd-still-sets-all-time-share-records",
+          "date": ""
+        },
+        "severity": "minor"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Data Center AI Demand & Customer Concentration",
+        "bull": "AMD\u2019s Q2 2026 data\u2011center revenue of $6.7\u202fB, up 107% YoY, demonstrates explosive demand from hyperscalers such as OpenAI, Microsoft, Meta, and Anthropic, with multi\u2011year commitments that lock in high operating margins of 31% and reinforce pricing power.",
+        "bull_source": {
+          "title": "AMD Data Center Revenue Doubles to $6.7 Billion - Converge Digest",
+          "url": "https://convergedigest.com/amd-data-center-revenue-q2-2026-ai-infrastructure-helios/",
+          "date": ""
+        },
+        "bear": "The concentration of revenue in a handful of hyperscalers exposes AMD to significant risk; a strategic shift by any of these customers toward NVIDIA or a slowdown in AI workloads could erode revenue and margins, while export controls could trigger inventory write\u2011downs and cut sales to China.",
+        "bear_source": {
+          "title": "China Export Controls Whack AMD Datacenter GPU Business",
+          "url": "https://www.nextplatform.com/ai/2025/05/09/china-export-controls-whack-amd-datacenter-gpu-business/1637408",
+          "date": ""
+        },
+        "verdict": "Bull wins \u2013 the scale of revenue growth and margin strength outweigh the concentration risk, which is mitigated by diversified commitments across several hyperscalers.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Pricing Power & Margin Sustainability",
+        "bull": "AMD\u2019s gross margin of 54% and operating margin of 31% in the data\u2011center business, supported by premium EPYC CPUs and Instinct GPUs, illustrate strong pricing power and efficient manufacturing, enabling continued profitability.",
+        "bull_source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000121/q22026991.htm",
+          "date": ""
+        },
+        "bear": "Margin compression could arise from cost inflation, the need to lower prices to win hyperscaler contracts, or increased competition from NVIDIA and other AI chip vendors, potentially eroding AMD\u2019s high margins.",
+        "bear_source": {
+          "title": "China Export Controls Whack AMD Datacenter GPU Business",
+          "url": "https://www.nextplatform.com/ai/2025/05/09/china-export-controls-whack-amd-datacenter-gpu-business/1637408",
+          "date": ""
+        },
+        "verdict": "Bull wins \u2013 current margins are robust and supported by product differentiation, and there is no evidence of imminent compression.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Export Controls & Geopolitical Risk",
+        "bull": "AMD secured U.S. Commerce Department approvals to resume MI308 shipments to China and secured commitments for MI\u2011325X, mitigating the impact of export controls and preserving a portion of its global AI accelerator revenue.",
+        "bull_source": {
+          "title": "AMD to resume shipments of Instinct MI308 chips to China following Department of Commerce approval - DCD",
+          "url": "https://www.datacenterdynamics.com/en/news/amd-to-resume-shipments-of-instinct-mi308-chips-to-china-following-department-of-commerce-approval/",
+          "date": ""
+        },
+        "bear": "Ongoing U.S. export restrictions on MI350x, MI308, MI325, and MI450 could limit sales to China, trigger inventory write\u2011downs (up to $800\u202fM), and reduce overall revenue, especially if China\u2019s AI demand remains high.",
+        "bear_source": {
+          "title": "China Export Controls Whack AMD Datacenter GPU Business",
+          "url": "https://www.nextplatform.com/ai/2025/05/09/china-export-controls-whack-amd-datacenter-gpu-business/1637408",
+          "date": ""
+        },
+        "verdict": "Tie \u2013 AMD\u2019s mitigation actions offset the risks, but the potential for significant revenue loss remains real.",
+        "verdict_side": "tie"
+      },
+      {
+        "driver": "Competitive Displacement & Market Share Growth",
+        "bull": "AMD\u2019s AI accelerator market share is projected to rise to ~10% in 2026 from ~5% in 2024, driven by Helios, MI450, and EPYC integration, potentially narrowing the gap with NVIDIA\u2019s dominant 80% share.",
+        "bull_source": {
+          "title": "AI Chip Market Share Statistics 2026 [ Vendor Rankings, Revenue Data, and Supply Chain]",
+          "url": "https://commandlinux.com/ai/ai-chip-market-share/",
+          "date": ""
+        },
+        "bear": "NVIDIA\u2019s entrenched dominance (75\u201181% in 2026) and superior AI chip ecosystem pose a significant threat; if AMD fails to accelerate its share gains, it may lag in pricing and technology leadership, limiting growth.",
+        "bear_source": {
+          "title": "AI GPU Market Share NVIDIA vs AMD vs Intel: 2026 Statistics",
+          "url": "https://commandlinux.com/statistics/ai-gpu-market-share-nvidia-vs-amd-vs-intel/",
+          "date": ""
+        },
+        "verdict": "Bull wins \u2013 the projected share growth and product integration give AMD a credible path to compete with NVIDIA.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Management Execution & Talent Acquisition",
+        "bull": "Recent hires of former Intel executives (Dan McNamara, John Rayfield) and senior leaders (Ariel Kelman, Tim Ryan) strengthen AMD\u2019s execution capability across EPYC, AI silicon, and go\u2011to\u2011market strategy, positioning the company to capitalize on growth opportunities.",
+        "bull_source": {
+          "title": "AMD Appoints Tim Ryan to Board of Directors - AMD Newsroom",
+          "url": "https://newsroom.amd.com/news/amd-appoints-tim-ryan-board-of-directors/",
+          "date": ""
+        },
+        "bear": "Execution risk remains if new leaders fail to integrate effectively, or if key talent exits; misalignment could delay product launches, weaken customer relationships, and impede AMD\u2019s ability to sustain its growth trajectory.",
+        "bear_source": {
+          "title": "Raymond James Raises AMD Price Target to $641, Sees It Challenging Intel's CPU Dominance",
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262130458-amd-raymond-james-price-target-intel-cpu-competition-tradingkey",
+          "date": ""
+        },
+        "verdict": "Bull wins \u2013 the depth of talent and governance enhancements outweigh the potential integration risks.",
+        "verdict_side": "bull"
+      }
+    ],
+    "falsifiers": [
+      "Export controls trigger inventory write\u2011down >$800M and revenue loss >$1.5B",
+      "Data center revenue growth slows below 50% YoY",
+      "Operating margin compresses below 25%",
+      "AI accelerator market share fails to reach 10% by 2026",
+      "Valuation multiple exceeds 30x and triggers a correction"
+    ],
+    "confidence": "high",
+    "confidence_why": "Four of five drivers tailwind with strong evidence; export\u2011control risk is mitigated but remains a potential downside."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "long",
+    "sector_score": 1.653,
+    "sector_why": "mfg new orders growing: Computer & Electronic Products",
+    "industry_flags": [],
+    "respondent_comments": [
+      {
+        "industry": "Computer & Electronic Products",
+        "quote": "We continue to operate in a favorable demand environment driven by growth in the semiconductor, AI, advanced packaging, and high-performance computing markets. Recent company reports indicate strong sales growth and continued investment in manufacturing capacity, technology and customer-support capabilities. This scenario supports a positive business outlook and creates opportunities to leverage increased purchasing scale across the enterprise."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The macro backdrop shows a robust expansion with ISM Manufacturing PMI and new orders above 55, a favorable yield curve, and low VIX, all of which signal strong demand for semiconductors and AI workloads. This environment directly supports AMD\u2019s data\u2011center and AI product lines, boosting revenue and margins, while the upward yield curve may increase financing costs. The overall effect is a net help to AMD\u2019s fundamentals, especially in end\u2011market demand and pricing power, but it also pressures capex and working capital needs.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "High ISM new orders and PMI expansion indicate robust demand for semiconductors and AI, driving AMD\u2019s data\u2011center revenue growth."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "helps",
+        "why": "Strong demand and limited supply in AI accelerators allow AMD to maintain or slightly increase prices, supporting gross margins."
+      },
+      {
+        "channel": "order backlog",
+        "direction": "helps",
+        "why": "Expanding new orders translate into a growing backlog, ensuring continued revenue flow and reducing sales volatility."
+      },
+      {
+        "channel": "capex",
+        "direction": "hurts",
+        "why": "Meeting rising demand requires increased R&D and production capacity spending, compressing free cash flow."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "hurts",
+        "why": "The upward sloping yield curve raises borrowing rates, increasing interest expense if AMD takes new debt."
+      },
+      {
+        "channel": "working capital",
+        "direction": "mixed",
+        "why": "Higher demand will require more inventory and receivables, but AMD\u2019s strong cash balance offsets the impact."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q3\u202f2026 earnings call",
+      "window": "July\u202f2026",
+      "expected": "Revenue $13\u202fB, data\u2011center revenue $6.5\u202fB, continued margin expansion",
+      "source": {
+        "title": "Particle: AMD\u2019s Data-Center Pivot Accelerates as Helios Demand Tracks Ahead",
+        "url": "https://particle.news/story/amds-data-center-pivot-accelerates-as-helios-demand-tracks-ahead",
+        "date": ""
+      }
+    },
+    {
+      "event": "Helios rack\u2011scale architecture shipping",
+      "window": "Q3\u202f2026",
+      "expected": "Helios shipments begin, 6\u202fGW commitments from Anthropic",
+      "source": {
+        "title": "China Fears Affect Nividia and AMD in Very Different Ways - 24/7 Wall St.",
+        "url": "https://247wallst.com/investing/2026/08/14/china-fears-affect-nividia-and-amd-in-very-different-ways/",
+        "date": ""
+      }
+    },
+    {
+      "event": "MI450 GPU shipments to Meta and other hyperscalers",
+      "window": "2H\u202f2026",
+      "expected": "6\u202fGW of MI450 GPUs shipped, accelerating AI training and inference",
+      "source": {
+        "title": "AMD and Meta Announce Expanded Strategic Partnership to Deploy 6 Gigawatts of AMD GPUs :: Advanced Micro Devices, Inc. (AMD)",
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1279/amd-and-meta-announce-expanded-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+        "date": ""
+      }
+    },
+    {
+      "event": "Microsoft Azure deployment of AMD Helios and EPYC",
+      "window": "Q3\u202f2026 onward",
+      "expected": "Azure AI infrastructure powered by Helios, EPYC and Pensando DPUs",
+      "source": {
+        "title": "Microsoft to Deploy Next-Gen AMD Instinct and AMD EPYC Processors as the Companies Expand Their Long-Term Strategic Partnership - AMD Newsroom",
+        "url": "https://newsroom.amd.com/news/microsoft-azure-ai-infrastructure/",
+        "date": ""
+      }
+    },
+    {
+      "event": "MI325 China sales commitments",
+      "window": "May\u202f2026",
+      "expected": "China revenue from MI325X, mitigating export\u2011control impact",
+      "source": {
+        "title": "AMD CEO Lisa\u202fSu Secures New AI Chip Commitments in Beijing Amid U.S.\u2013China Export Controls | LavX News",
+        "url": "https://news.lavx.hu/article/amd-ceo-lisa-su-secures-new-ai-chip-commitments-in-beijing-amid-u-s-china-export-controls",
+        "date": ""
+      }
+    },
+    {
+      "event": "MI308 AI chip shipments resume to China",
+      "window": "July\u202f22\u202f2026",
+      "expected": "Resumption of MI308 shipments after Commerce Department approval",
+      "source": {
+        "title": "AMD to resume shipments of Instinct MI308 chips to China following Department of Commerce approval - DCD",
+        "url": "https://www.datacenterdynamics.com/en/news/amd-to-resume-shipments-of-instinct-mi308-chips-to-china-following-department-of-commerce-approval/",
+        "date": ""
+      }
+    },
+    {
+      "event": "Export controls on MI350 shipments to China",
+      "window": "May\u202f31\u202f2026",
+      "expected": "License requirement, potential sales cap of 75,000 units per firm",
+      "source": {
+        "title": "Particle: U.S. Closes Loophole on Nvidia and AMD AI Chip Exports",
+        "url": "https://particle.news/story/us-closes-loophole-on-nvidia-and-amd-ai-chip-exports",
+        "date": ""
+      }
+    },
+    {
+      "event": "MI308 inventory writedown",
+      "window": "Q4\u202f2025",
+      "expected": "$800\u202fM charge, eliminating $1.5\u202fB in sales",
+      "source": {
+        "title": "China Export Controls Whack AMD Datacenter GPU Business",
+        "url": "https://www.nextplatform.com/ai/2025/05/09/china-export-controls-whack-amd-datacenter-gpu-business/1637408",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

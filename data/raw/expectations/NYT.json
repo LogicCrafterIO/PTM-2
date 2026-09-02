@@ -1,0 +1,77 @@
+{
+  "ticker": "NYT",
+  "as_of": "2026-08-22T13:00:04.396864+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.85992,
+    "eps_d30": 2.87737,
+    "eps_d90": 2.85258,
+    "change_30d_pct": -0.61,
+    "change_90d_pct": 0.26,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.59,
+        "estimate": 0.53228,
+        "surprise_pct": 10.84
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.89,
+        "estimate": 0.88069,
+        "surprise_pct": 1.06
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.61,
+        "estimate": 0.46842,
+        "surprise_pct": 30.23
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.69,
+        "estimate": 0.66631,
+        "surprise_pct": 3.56
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 11.42
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": -13.4
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": 8.31
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": 1.2
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": -0.24
+      }
+    ],
+    "avg_abs_move_pct": 5.79,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.3% over 90 days and -0.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 3 down.",
+    "Price reaction to the last 4 reports, most recent first: -13.4%, +8.3%, +1.2%, -0.2% (average absolute move 5.8%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +11.4%."
+  ]
+}

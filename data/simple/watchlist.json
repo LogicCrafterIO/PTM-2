@@ -1,16 +1,148 @@
 {
-  "as_of": "2026-09-01",
+  "as_of": "2026-09-02",
   "parked": [
     {
-      "ticker": "WERN",
-      "theme": "Cargo Ground Transportation",
+      "ticker": "NDAQ",
+      "theme": "fintech",
       "side": "long",
       "passed": true,
       "gates": [
         {
           "gate": "why_now",
           "pass": true,
-          "detail": "theme ACTIVE breadth +1.00, member rev90 15.55, side long (with the theme)"
+          "detail": "theme ACTIVE breadth +1.00, member rev90 5.13, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 50 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "ARR growth +12.0% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 5.13,
+      "days_to_print": 50,
+      "earnings_date": "2026-10-22",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "ABNB",
+      "theme": "tourism industry",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 3.96, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 64 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "revenue +18.0% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 3.96,
+      "days_to_print": 64,
+      "earnings_date": "2026-11-05",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "BROS",
+      "theme": "Restaurants",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 3.93, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 64 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "revenue +29.4% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 3.93,
+      "days_to_print": 64,
+      "earnings_date": "2026-11-05",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "VRT",
+      "theme": "electrical industry",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 3.44, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 56 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "backlog +109.0% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 3.44,
+      "days_to_print": 56,
+      "earnings_date": "2026-10-28",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "SEZL",
+      "theme": "fintech",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 3.18, side long (with the theme)"
         },
         {
           "gate": "early_or_late",
@@ -20,7 +152,7 @@
         {
           "gate": "getting_paid",
           "pass": true,
-          "detail": "revenue +24.0% on revenue"
+          "detail": "Revenue +51.7% on revenue"
         },
         {
           "gate": "listening",
@@ -28,9 +160,339 @@
           "detail": "theme status ACTIVE"
         }
       ],
-      "rev90": 15.55,
+      "rev90": 3.18,
       "days_to_print": 65,
-      "earnings_date": "2026-11-05",
+      "earnings_date": "2026-11-06",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "TOST",
+      "theme": "Transaction & Payment Processing Services",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 2.97, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 63 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "revenue +23.0% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 2.97,
+      "days_to_print": 63,
+      "earnings_date": "2026-11-04",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "CBOE",
+      "theme": "Financial Exchanges & Data",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +0.50, member rev90 2.88, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 58 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "revenue +25.0% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 2.88,
+      "days_to_print": 58,
+      "earnings_date": "2026-10-30",
+      "lean": "long",
+      "breadth": 0.5
+    },
+    {
+      "ticker": "AMD",
+      "theme": "computer industry",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 2.75, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 63 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "revenue +107.0% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 2.75,
+      "days_to_print": 63,
+      "earnings_date": "2026-11-04",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "AMD",
+      "theme": "electrical industry",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 2.75, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 63 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "Revenue +107.0% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 2.75,
+      "days_to_print": 63,
+      "earnings_date": "2026-11-04",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "EVTC",
+      "theme": "Transaction & Payment Processing Services",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 2.08, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 66 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "revenue +20.0% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 2.08,
+      "days_to_print": 66,
+      "earnings_date": "2026-11-07",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "BJRI",
+      "theme": "Restaurants",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 1.96, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 56 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "traffic +8.3% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 1.96,
+      "days_to_print": 56,
+      "earnings_date": "2026-10-28",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "MAR",
+      "theme": "tourism industry",
+      "side": "long",
+      "passed": true,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 0.97, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 61 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": true,
+          "detail": "net rooms +4.5% on revenue"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 0.97,
+      "days_to_print": 61,
+      "earnings_date": "2026-11-02",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "MOG-A",
+      "theme": "aerospace engineering",
+      "side": "long",
+      "passed": false,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +0.50, member rev90 7.31, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 60 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": false,
+          "detail": "quantified evidence below the impact bar"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 7.31,
+      "days_to_print": 60,
+      "earnings_date": "2026-11-01",
+      "lean": "long",
+      "breadth": 0.5
+    },
+    {
+      "ticker": "ODFL",
+      "theme": "Cargo Ground Transportation",
+      "side": "long",
+      "passed": false,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 9.12, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 63 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": false,
+          "detail": "quantified evidence below the impact bar"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 9.12,
+      "days_to_print": 63,
+      "earnings_date": "2026-11-04",
+      "lean": "long",
+      "breadth": 1.0
+    },
+    {
+      "ticker": "INTC",
+      "theme": "electrical industry",
+      "side": "long",
+      "passed": false,
+      "gates": [
+        {
+          "gate": "why_now",
+          "pass": true,
+          "detail": "theme ACTIVE breadth +1.00, member rev90 39.32, side long (with the theme)"
+        },
+        {
+          "gate": "early_or_late",
+          "pass": true,
+          "detail": "print in 51 days"
+        },
+        {
+          "gate": "getting_paid",
+          "pass": false,
+          "detail": "quantified evidence below the impact bar"
+        },
+        {
+          "gate": "listening",
+          "pass": true,
+          "detail": "theme status ACTIVE"
+        }
+      ],
+      "rev90": 39.32,
+      "days_to_print": 51,
+      "earnings_date": "2026-10-23",
       "lean": "long",
       "breadth": 1.0
     }

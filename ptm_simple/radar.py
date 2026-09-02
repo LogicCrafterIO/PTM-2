@@ -66,7 +66,7 @@ def _member_snapshot(ticker: str, fund: dict, ref: date) -> dict:
         age_days = (time.time() - cache.stat().st_mtime) / 86400.0
         if age_days <= _MAX_AGE_DAYS * 5:  # cache tolerant: the weekly radar refills it
             try:
-                exp = json.loads(cache.read_text())
+                exp = json.loads(cache.read_text(encoding="utf-8"))
             except Exception:
                 exp = None
             if exp:

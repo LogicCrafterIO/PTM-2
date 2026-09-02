@@ -1,0 +1,77 @@
+{
+  "ticker": "SBUX",
+  "as_of": "2026-08-30T13:26:03.395251+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.59046,
+    "eps_d30": 2.38923,
+    "eps_d90": 2.3824,
+    "change_30d_pct": 8.42,
+    "change_90d_pct": 8.73,
+    "analysts_up_30d": 28,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.52,
+        "estimate": 0.55621,
+        "surprise_pct": -6.51
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.56,
+        "estimate": 0.58692,
+        "surprise_pct": -4.59
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.5,
+        "estimate": 0.43664,
+        "surprise_pct": 14.51
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.85,
+        "estimate": 0.64988,
+        "surprise_pct": 30.79
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 8.55
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": 1.01
+      },
+      {
+        "report_date": "2026-04-28",
+        "move_pct": -0.62
+      },
+      {
+        "report_date": "2026-01-28",
+        "move_pct": -0.59
+      },
+      {
+        "report_date": "2025-11-14",
+        "move_pct": -1.21
+      }
+    ],
+    "avg_abs_move_pct": 0.86,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +8.7% over 90 days and +8.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 28 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.0%, -0.6%, -0.6%, -1.2% (average absolute move 0.9%, 3 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +8.6%."
+  ]
+}

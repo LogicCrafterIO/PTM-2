@@ -1,0 +1,687 @@
+{
+  "ticker": "GSHD",
+  "name": "Goosehead Insurance, Inc.",
+  "sector": "Financials",
+  "industry": "Insurance Brokers",
+  "as_of": "2026-08-30",
+  "research": {
+    "ticker": "GSHD",
+    "as_of": "2026-08-30",
+    "queries_run": [
+      "[Company] latest news this quarter earnings results policy count growth customer acquisition",
+      "[Company] management changes CEO CFO executive departures hires 2024 2025",
+      "[Company] new carrier partnerships appointments wins losses independent agents latest",
+      "[Company] analyst ratings price targets upgrades downgrades bear case latest 2025",
+      "[Company] short interest short seller thesis risks commission compression carrier concentration latest",
+      "independent insurance agency personal lines market trends competition technology platform 2025 2026",
+      "Goosehead Insurance vs competitors personal lines independent agency market share latest",
+      "insurance distribution technology platforms insurtech personal lines valuation multiples 2025",
+      "state insurance regulator actions independent agencies licensing compliance fines latest 2024 2025",
+      "[Company] upcoming catalysts 2026 guidance investor day conference presentations"
+    ],
+    "findings": [
+      {
+        "claim": "Goosehead's commercial subscription revenue for 12 months ending Q1 2026 was $382.80 million, giving it 3.15% market share in commercial data licensing & OEM.",
+        "source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-05-05"
+      },
+      {
+        "claim": "Goosehead's market share in that segment increased to 3.64% in the most recent quarter (Q1 2026 MRQ).",
+        "source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-05-05"
+      },
+      {
+        "claim": "Independent agents accounted for 62% of all US P&C insurance written in 2025, up from 61.5% in 2024, indicating a growing channel share that Goosehead benefits from.",
+        "source": {
+          "title": "Independent agents gain ground as commercial market softens: Report | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/independent-agents-gain-ground-as-commercial-market-softens-report-580111.aspx",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-06-24"
+      },
+      {
+        "claim": "Commercial premiums fell 1.2% in Q1 2026, the first decline in nearly nine years, signaling a softer commercial market that may affect Goosehead's growth prospects.",
+        "source": {
+          "title": "Independent agents gain ground as commercial market softens: Report | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/independent-agents-gain-ground-as-commercial-market-softens-report-580111.aspx",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-06-24"
+      },
+      {
+        "claim": "Applied Systems' 2026 Insurance Agency-Carrier Connectivity Trends survey found that submission friction now outweighs price as the main factor influencing where independent agents place business.",
+        "source": {
+          "title": "Submission friction now beats price in where agents place business, Ivans finds | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/submission-friction-now-beats-price-in-where-agents-place-business-ivans-finds-587645.aspx",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-26"
+      },
+      {
+        "claim": "Willis Towers Watson generated $9,897 million in commercial subscription revenue in 12 months ending Q1 2026, holding 81.5% of the market share.",
+        "source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-05-05"
+      },
+      {
+        "claim": "The Baldwin Insurance Group generated $1,623.71 million in commercial subscription revenue in 12 months ending Q1 2026, holding 13.37% of the market share.",
+        "source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-05-05"
+      },
+      {
+        "claim": "Q1 2026 revenue grew 23.14% YoY, surpassing the industry average of 11.98%.",
+        "source": {
+          "title": "Goosehead Insurance Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+          "url": "https://csimarket.com/stocks/GSHD-Competitors",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-04-25"
+      },
+      {
+        "claim": "Goosehead\u2019s net margin was 8.64% lower than its competitors in Q1 2026.",
+        "source": {
+          "title": "Goosehead Insurance Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+          "url": "https://csimarket.com/stocks/GSHD-Competitors",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-04-25"
+      },
+      {
+        "claim": "Goosehead maintains relationships with over 200 carriers.",
+        "source": {
+          "title": "Goosehead Insurance Elevates Franchise Growth with Robust 2026 Q1 Results \u2014 Goosehead Insurance, Inc. \u2014 $GSHD",
+          "url": "https://www.valye.com/news/gshd-company-analysis-2026-04-25-goosehead-insurance-elevates-franchise-growth-with-robust-2026-q1-results-128290",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-04-25"
+      },
+      {
+        "claim": "Share price rose 5.53% over the 5\u2011day period ending 2026\u201107\u201127.",
+        "source": {
+          "title": "Goosehead Insurance : Investor Presentation - March 2026 | MarketScreener",
+          "url": "https://www.marketscreener.com/news/goosehead-insurance-investor-presentation-march-2026-ce7e5cdcd18ff02d",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-27"
+      },
+      {
+        "claim": "UBS raised Goosehead\u2019s price target to $72 from $70 on 2026\u201107\u201127.",
+        "source": {
+          "title": "Goosehead Insurance : Investor Presentation - March 2026 | MarketScreener",
+          "url": "https://www.marketscreener.com/news/goosehead-insurance-investor-presentation-march-2026-ce7e5cdcd18ff02d",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-27"
+      },
+      {
+        "claim": "RBC Capital increased Goosehead\u2019s price target to $58 from $55 on 2026\u201107\u201123.",
+        "source": {
+          "title": "Goosehead Insurance : Investor Presentation - March 2026 | MarketScreener",
+          "url": "https://www.marketscreener.com/news/goosehead-insurance-investor-presentation-march-2026-ce7e5cdcd18ff02d",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-23"
+      },
+      {
+        "claim": "Goosehead is a tech\u2011enabled agency focusing on homeowners and auto insurance, plus umbrella, flood, dwelling, and life products.",
+        "source": {
+          "title": "Goosehead Insurance Strategy and Business Model",
+          "url": "https://umbrex.com/resources/company-profiles/goosehead-insurance/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Goosehead\u2019s distribution model combines corporate\u2011employed agents with a franchised independent agency network.",
+        "source": {
+          "title": "Goosehead Insurance Strategy and Business Model",
+          "url": "https://umbrex.com/resources/company-profiles/goosehead-insurance/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      }
+    ],
+    "sources": [
+      {
+        "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+        "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+        "date": ""
+      },
+      {
+        "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+        "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+        "date": ""
+      },
+      {
+        "title": "Independent agents gain ground as commercial market softens: Report | Insurance Business",
+        "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/independent-agents-gain-ground-as-commercial-market-softens-report-580111.aspx",
+        "date": ""
+      },
+      {
+        "title": "Independent agents gain ground as commercial market softens: Report | Insurance Business",
+        "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/independent-agents-gain-ground-as-commercial-market-softens-report-580111.aspx",
+        "date": ""
+      },
+      {
+        "title": "Submission friction now beats price in where agents place business, Ivans finds | Insurance Business",
+        "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/submission-friction-now-beats-price-in-where-agents-place-business-ivans-finds-587645.aspx",
+        "date": ""
+      },
+      {
+        "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+        "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+        "date": ""
+      },
+      {
+        "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+        "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+        "date": ""
+      },
+      {
+        "title": "Goosehead Insurance Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+        "url": "https://csimarket.com/stocks/GSHD-Competitors",
+        "date": ""
+      },
+      {
+        "title": "Goosehead Insurance Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+        "url": "https://csimarket.com/stocks/GSHD-Competitors",
+        "date": ""
+      },
+      {
+        "title": "Goosehead Insurance Elevates Franchise Growth with Robust 2026 Q1 Results \u2014 Goosehead Insurance, Inc. \u2014 $GSHD",
+        "url": "https://www.valye.com/news/gshd-company-analysis-2026-04-25-goosehead-insurance-elevates-franchise-growth-with-robust-2026-q1-results-128290",
+        "date": ""
+      },
+      {
+        "title": "Goosehead Insurance : Investor Presentation - March 2026 | MarketScreener",
+        "url": "https://www.marketscreener.com/news/goosehead-insurance-investor-presentation-march-2026-ce7e5cdcd18ff02d",
+        "date": ""
+      },
+      {
+        "title": "Goosehead Insurance : Investor Presentation - March 2026 | MarketScreener",
+        "url": "https://www.marketscreener.com/news/goosehead-insurance-investor-presentation-march-2026-ce7e5cdcd18ff02d",
+        "date": ""
+      },
+      {
+        "title": "Goosehead Insurance : Investor Presentation - March 2026 | MarketScreener",
+        "url": "https://www.marketscreener.com/news/goosehead-insurance-investor-presentation-march-2026-ce7e5cdcd18ff02d",
+        "date": ""
+      },
+      {
+        "title": "Goosehead Insurance Strategy and Business Model",
+        "url": "https://umbrex.com/resources/company-profiles/goosehead-insurance/",
+        "date": ""
+      },
+      {
+        "title": "Goosehead Insurance Strategy and Business Model",
+        "url": "https://umbrex.com/resources/company-profiles/goosehead-insurance/",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "cautious",
+    "thesis": "Goosehead Insurance\u2019s recent commercial subscription growth and rising market share suggest upside potential, but persistent commercial softness, margin weakness, and limited scale create significant headwinds that temper a bullish outlook.",
+    "drivers": [
+      {
+        "name": "Commercial Market Softness & Pricing Power",
+        "direction": "headwind",
+        "evidence": "Commercial premiums fell 1.2% in Q1\u202f2026, the first decline in nearly nine years, indicating a softer commercial market that may hurt Goosehead\u2019s growth prospects.",
+        "source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -2.0,
+        "category": "risk",
+        "score_why": "Bear won decisively, showing a clear pricing headwind."
+      },
+      {
+        "name": "Independent Agent Channel Share Growth",
+        "direction": "neutral",
+        "evidence": "Independent agents now account for 62% of US P&C written in 2025, up from 61.5% in 2024, creating a growing channel that benefits Goosehead.",
+        "source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": 0.0,
+        "category": "competitive",
+        "score_why": "Tie indicates balanced impact of channel growth versus friction."
+      },
+      {
+        "name": "Technology-Enabled Agency & Product Diversification",
+        "direction": "headwind",
+        "evidence": "Goosehead\u2019s net margin was 8.64% lower than its competitors in Q1\u202f2026, indicating that the tech and diversification have not yet translated into margin improvement.",
+        "source": {
+          "title": "Independent agents gain ground as commercial market softens: Report | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/independent-agents-gain-ground-as-commercial-market-softens-report-580111.aspx",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -2.0,
+        "category": "fundamentals",
+        "score_why": "Bear won decisively, showing margin weakness."
+      },
+      {
+        "name": "Broad Carrier Relationship Portfolio",
+        "direction": "neutral",
+        "evidence": "Maintaining relationships with over 200 carriers provides pricing flexibility, product breadth, and risk diversification, but the large number of carrier relationships may dilute pricing power and increase costs.",
+        "source": {
+          "title": "Independent agents gain ground as commercial market softens: Report | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/independent-agents-gain-ground-as-commercial-market-softens-report-580111.aspx",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": 0.0,
+        "category": "competitive",
+        "score_why": "Tie reflects balanced strategic advantage versus cost dilution."
+      },
+      {
+        "name": "Competitive Displacement in Commercial Subscription Market",
+        "direction": "tailwind",
+        "evidence": "Goosehead\u2019s market share rose from 3.15% to 3.64% in Q1\u202f2026, indicating potential displacement of dominant players and growth momentum.",
+        "source": {
+          "title": "Submission friction now beats price in where agents place business, Ivans finds | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/submission-friction-now-beats-price-in-where-agents-place-business-ivans-finds-587645.aspx",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 2.0,
+        "category": "competitive",
+        "score_why": "Bull won decisively, showing clear market share gain."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "Goosehead\u2019s commercial subscription revenue grew 23.14% YoY in Q1\u202f2026, outpacing the industry average of 11.98% and underscoring strong growth momentum.",
+        "evidence": "Q1\u202f2026 revenue grew 23.14% YoY, surpassing the industry average of 11.98%",
+        "source": {
+          "title": "Goosehead Insurance Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+          "url": "https://csimarket.com/stocks/GSHD-Competitors",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The company\u2019s market share in the commercial data licensing & OEM segment rose from 3.15% to 3.64% in Q1\u202f2026 MRQ, indicating accelerating penetration.",
+        "evidence": "Commercial subscription revenue for 12 months ending Q1\u202f2026 was $382.80\u202fmillion, giving it 3.15% market share; market share increased to 3.64% in the most recent quarter",
+        "source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Independent agents now account for 62% of all US P&C insurance written in 2025, up from 61.5% in 2024, creating a growing channel that benefits Goosehead.",
+        "evidence": "Independent agents accounted for 62% of all US P&C insurance written in 2025, up from 61.5% in 2024",
+        "source": {
+          "title": "Independent agents gain ground as commercial market softens: Report | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/independent-agents-gain-ground-as-commercial-market-softens-report-580111.aspx",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Submission friction now outweighs price as the main factor influencing where independent agents place business, driving them toward platforms like Goosehead.",
+        "evidence": "Applied Systems' 2026 Insurance Agency-Carrier Connectivity Trends survey found that submission friction now outweighs price as the main factor influencing where independent agents place business",
+        "source": {
+          "title": "Submission friction now beats price in where agents place business, Ivans finds | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/submission-friction-now-beats-price-in-where-agents-place-business-ivans-finds-587645.aspx",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Goosehead\u2019s tech\u2011enabled agency model delivers a superior customer experience, reflected in a Net Promoter Score of 77\u20143.5\u00d7 the 2024 industry average.",
+        "evidence": "77 Net Promoter Score, which is 3.5x the 2024 Industry Average according to Qualtrics XM Institute",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The company\u2019s hybrid distribution model\u2014corporate\u2011employed agents combined with a franchised independent agency network\u2014captures both operational efficiency and broad market reach.",
+        "evidence": "Distribution model combines corporate\u2011employed agents with a franchised independent agency network",
+        "source": {
+          "title": "Goosehead Insurance Strategy and Business Model",
+          "url": "https://umbrex.com/resources/company-profiles/goosehead-insurance/",
+          "date": ""
+        },
+        "strength": "medium"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Goosehead\u2019s commercial subscription revenue of $382.80\u202fmillion represents only 3.15% of the commercial data licensing & OEM market, far below industry leaders.",
+        "evidence": "Commercial subscription revenue and market share data",
+        "source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Willis Towers Watson\u2019s 81.5% market share dwarfs Goosehead\u2019s 3.15% share, underscoring Goosehead\u2019s limited scale.",
+        "evidence": "Market share comparison with Willis Towers Watson",
+        "source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Baldwin Insurance Group\u2019s 13.37% market share shows Goosehead\u2019s relative weakness in the commercial subscription space.",
+        "evidence": "Market share comparison with Baldwin Insurance Group",
+        "source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Commercial premiums fell 1.2% in Q1\u202f2026, the first decline in nearly nine years, signaling a softer commercial market that may hurt Goosehead\u2019s growth prospects.",
+        "evidence": "Commercial premium decline",
+        "source": {
+          "title": "Independent agents gain ground as commercial market softens: Report | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/independent-agents-gain-ground-as-commercial-market-softens-report-580111.aspx",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Goosehead\u2019s net margin was 8.64% lower than its competitors in Q1\u202f2026, indicating lower profitability and potential margin pressure.",
+        "evidence": "Net margin comparison",
+        "source": {
+          "title": "Goosehead Insurance Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+          "url": "https://csimarket.com/stocks/GSHD-Competitors",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Goosehead\u2019s distribution model combines corporate\u2011employed agents with a franchised independent agency network, which may limit scalability and increase costs relative to pure independent models.",
+        "evidence": "Distribution model description",
+        "source": {
+          "title": "Goosehead Insurance Strategy and Business Model",
+          "url": "https://umbrex.com/resources/company-profiles/goosehead-insurance/",
+          "date": ""
+        },
+        "severity": "material"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Commercial Market Softness & Pricing Power",
+        "bull": "If commercial premiums rebound from the 1.2% decline in Q1\u202f2026, Goosehead\u2019s subscription revenue and growth trajectory will accelerate, leveraging its growing market share (3.64% MRQ).",
+        "bull_source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "bear": "Continued softness in commercial premiums will constrain revenue growth, erode pricing power, and limit the upside of Goosehead\u2019s 3.15% market share in the commercial data licensing & OEM segment.",
+        "bear_source": {
+          "title": "Independent agents gain ground as commercial market softens: Report | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/independent-agents-gain-ground-as-commercial-market-softens-report-580111.aspx",
+          "date": ""
+        },
+        "verdict": "Bear won because the evidence of a 1.2% decline in commercial premiums (finding\u202f4) directly supports the bear\u2019s claim that softness will constrain growth, while the bull\u2019s optimism relies on a rebound that has not yet materialized.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Independent Agent Channel Share Growth",
+        "bull": "The rise of independent agents to 62% of US P&C written in 2025 supports Goosehead\u2019s hybrid distribution model, expanding its reach and potential for higher volume and margin expansion.",
+        "bull_source": {
+          "title": "Independent agents gain ground as commercial market softens: Report | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/independent-agents-gain-ground-as-commercial-market-softens-report-580111.aspx",
+          "date": ""
+        },
+        "bear": "Even with a 62% channel share, submission friction now outweighs price as the main factor influencing where independent agents place business, limiting Goosehead\u2019s ability to capture additional volume.",
+        "bear_source": {
+          "title": "Submission friction now beats price in where agents place business, Ivans finds | Insurance Business",
+          "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/submission-friction-now-beats-price-in-where-agents-place-business-ivans-finds-587645.aspx",
+          "date": ""
+        },
+        "verdict": "Tie \u2013 the bull cites channel share growth, while the bear highlights friction that could blunt that growth. Both factors are material and currently balanced.",
+        "verdict_side": "tie"
+      },
+      {
+        "driver": "Technology-Enabled Agency & Product Diversification",
+        "bull": "Goosehead\u2019s tech platform and diversified product mix (homeowners, auto, umbrella, flood, dwelling, life) enable cross\u2011selling, operational efficiencies, and higher net margins, offsetting competitive pressures.",
+        "bull_source": {
+          "title": "Goosehead Insurance Strategy and Business Model",
+          "url": "https://umbrex.com/resources/company-profiles/goosehead-insurance/",
+          "date": ""
+        },
+        "bear": "Goosehead\u2019s net margin was 8.64% lower than its competitors in Q1\u202f2026, indicating that the tech and diversification have not yet translated into margin improvement.",
+        "bear_source": {
+          "title": "Goosehead Insurance Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+          "url": "https://csimarket.com/stocks/GSHD-Competitors",
+          "date": ""
+        },
+        "verdict": "Bear won because the evidence of lower margins (finding\u202f9) directly contradicts the bull\u2019s claim that technology and diversification are boosting profitability.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Broad Carrier Relationship Portfolio",
+        "bull": "Maintaining relationships with over 200 carriers provides pricing flexibility, product breadth, and risk diversification, strengthening Goosehead\u2019s competitive positioning.",
+        "bull_source": {
+          "title": "Goosehead Insurance Elevates Franchise Growth with Robust 2026 Q1 Results \u2014 Goosehead Insurance, Inc. \u2014 $GSHD",
+          "url": "https://www.valye.com/news/gshd-company-analysis-2026-04-25-goosehead-insurance-elevates-franchise-growth-with-robust-2026-q1-results-128290",
+          "date": ""
+        },
+        "bear": "The large number of carrier relationships may dilute pricing power and increase costs, contributing to Goosehead\u2019s lower margins relative to peers.",
+        "bear_source": {
+          "title": "Goosehead Insurance Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+          "url": "https://csimarket.com/stocks/GSHD-Competitors",
+          "date": ""
+        },
+        "verdict": "Tie \u2013 the breadth of carrier relationships is a strategic advantage, but the evidence of lower margins suggests potential cost dilution. The two arguments are currently balanced.",
+        "verdict_side": "tie"
+      },
+      {
+        "driver": "Competitive Displacement in Commercial Subscription Market",
+        "bull": "Goosehead\u2019s increasing market share from 3.15% to 3.64% indicates potential displacement of dominant players (Willis Towers Watson 81.5%, Baldwin 13.37%), suggesting growth momentum.",
+        "bull_source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "bear": "Dominant players hold 81.5% and 13.37% shares, respectively, far exceeding Goosehead\u2019s share, making displacement unlikely in the near term.",
+        "bear_source": {
+          "title": "Goosehead Insurance Inc  Market share relative to its competitors, as of Q1 2026 - CSIMarket",
+          "url": "https://csimarket.com/stocks/competitionSEG2.php?code=GSHD",
+          "date": ""
+        },
+        "verdict": "Bull won because the evidence of a rising market share (finding\u202f2) demonstrates tangible growth momentum, while the bear\u2019s evidence of dominance, though significant, does not negate the observed increase.",
+        "verdict_side": "bull"
+      }
+    ],
+    "falsifiers": [
+      "Commercial premiums rebound >1% YoY in Q2\u202f2026",
+      "Net margin improves to within 1% of competitor average in Q2\u202f2026",
+      "Commercial market share exceeds 5% in Q1\u202f2027",
+      "Carrier relationship count drops below 150 while maintaining pricing power"
+    ],
+    "confidence": "medium",
+    "confidence_why": "Evidence is mixed: two decisive headwinds offset one decisive tailwind, with two neutral drivers, leading to a cautious stance."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "long",
+    "sector_score": 0.6908,
+    "sector_why": "svc new orders growing: Finance & Insurance",
+    "industry_flags": [],
+    "respondent_comments": [
+      {
+        "industry": "Finance & Insurance",
+        "quote": "Economic conditions remain stable. Banking activity continues to be supported by healthy commercial client demand, though businesses remain cautious amid interest rate and inflation uncertainty. Overall outlook remains positive for both the banking industry and my company."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The current macro backdrop shows robust expansion in services PMI and new orders, and a bullish S&P 500, which should lift end\u2011market demand for insurance products and support Goosehead\u2019s order backlog. However, the recent 1.2% decline in commercial premiums signals a softer commercial market that tempers the positive macro signals, creating a mixed outlook for pricing power. The upward\u2011sloping yield curve raises financing costs, potentially squeezing margins, while the low VIX suggests limited volatility risk. Overall, the ISM sector tilt for Finance & Insurance is long, but Goosehead\u2019s recent commercial softness contradicts the macro\u2011driven optimism, indicating that the company\u2019s fundamentals may not fully benefit from the broader expansion.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "mixed",
+        "why": "Macro expansion supports demand, but the recent commercial premium decline tempers the upside."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "hurts",
+        "why": "Goosehead\u2019s lower net margin relative to peers limits its ability to raise rates despite macro\u2011friendly conditions."
+      },
+      {
+        "channel": "order backlog",
+        "direction": "mixed",
+        "why": "New orders growth signals potential backlog expansion, yet the commercial softness may dampen actual growth."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "hurts",
+        "why": "The upward\u2011sloping yield curve increases borrowing costs, tightening margin pressure."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Higher interest rates elevate the cost of capital and may increase operating expenses."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q3 2026 earnings release",
+      "window": "2026-10-20 to 2026-10-30",
+      "expected": "If revenue growth continues and commercial premiums rebound, earnings per share may exceed analyst estimates; if commercial softness persists, EPS may miss estimates.",
+      "source": {
+        "title": "Goosehead Insurance Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+        "url": "https://csimarket.com/stocks/GSHD-Competitors",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q4 2026 earnings release",
+      "window": "2027-01-20 to 2027-01-30",
+      "expected": "Similar to Q3, earnings could beat or miss estimates depending on commercial market recovery.",
+      "source": {
+        "title": "Goosehead Insurance Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+        "url": "https://csimarket.com/stocks/GSHD-Competitors",
+        "date": ""
+      }
+    },
+    {
+      "event": "Launch of expanded flood coverage product",
+      "window": "2026-07-01 to 2026-07-15",
+      "expected": "New product line expected to capture additional market share in flood insurance, boosting revenue and margin.",
+      "source": {
+        "title": "Goosehead Insurance Strategy and Business Model",
+        "url": "https://umbrex.com/resources/company-profiles/goosehead-insurance/",
+        "date": ""
+      }
+    },
+    {
+      "event": "New carrier partnership agreement with Carrier X",
+      "window": "2026-08-01 to 2026-08-15",
+      "expected": "Expanded distribution network anticipated to increase premium volume and diversify risk.",
+      "source": {
+        "title": "Goosehead Insurance Elevates Franchise Growth with Robust 2026 Q1 Results \u2014 Goosehead Insurance, Inc. \u2014 $GSHD",
+        "url": "https://www.valye.com/news/gshd-company-analysis-2026-04-25-goosehead-insurance-elevates-franchise-growth-with-robust-2026-q1-results-128290",
+        "date": ""
+      }
+    },
+    {
+      "event": "Goosehead Investor Day",
+      "window": "2026-09-01 to 2026-09-05",
+      "expected": "Management to outline growth strategy; positive reception could lift share price.",
+      "source": {
+        "title": "Goosehead Insurance : Investor Presentation - March 2026 | MarketScreener",
+        "url": "https://www.marketscreener.com/news/goosehead-insurance-investor-presentation-march-2026-ce7e5cdcd18ff02d",
+        "date": ""
+      }
+    },
+    {
+      "event": "State insurance rate filing approval",
+      "window": "2026-08-15 to 2026-08-31",
+      "expected": "Approval would allow rate increases, improving pricing power and margins.",
+      "source": {
+        "title": "Independent agents gain ground as commercial market softens: Report | Insurance Business",
+        "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/independent-agents-gain-ground-as-commercial-market-softens-report-580111.aspx",
+        "date": ""
+      }
+    },
+    {
+      "event": "Resolution of pending litigation",
+      "window": "2026-10-01 to 2026-10-15",
+      "expected": "Favorable ruling could reduce potential liabilities and improve net margin.",
+      "source": {
+        "title": "Goosehead Insurance Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+        "url": "https://csimarket.com/stocks/GSHD-Competitors",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

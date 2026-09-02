@@ -1,0 +1,77 @@
+{
+  "ticker": "PJT",
+  "as_of": "2026-08-30T14:31:19.095716+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.99383,
+    "eps_d30": 7.46419,
+    "eps_d90": 7.52865,
+    "change_30d_pct": 7.1,
+    "change_90d_pct": 6.18,
+    "analysts_up_30d": 7,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.85,
+        "estimate": 1.4,
+        "surprise_pct": 32.14
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.55,
+        "estimate": 2.39693,
+        "surprise_pct": 6.39
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.54,
+        "estimate": 1.52944,
+        "surprise_pct": 0.69
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.97,
+        "estimate": 1.56834,
+        "surprise_pct": 25.61
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 16.21
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": 1.5
+      },
+      {
+        "report_date": "2026-04-30",
+        "move_pct": 0.45
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": 1.71
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": 0.6
+      }
+    ],
+    "avg_abs_move_pct": 1.06,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +6.2% over 90 days and +7.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 7 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.5%, +0.5%, +1.7%, +0.6% (average absolute move 1.1%, 0 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +16.2%."
+  ]
+}

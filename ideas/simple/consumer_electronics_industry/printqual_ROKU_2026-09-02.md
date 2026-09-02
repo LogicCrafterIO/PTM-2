@@ -1,0 +1,25 @@
+# Print qual — ROKU (long)
+
+*Theme-first simple process · 2026-09-02 · dive-free and print-focused: what the next print reveals for the flag call — fresh EDGAR pack, bounded web search, consensus. Not the deep dive, not a gate.*
+
+**Theme**: consumer electronics industry — ACTIVE, lean long
+**Valuation flag (vs theme)**: mixed — P/E 1.8x theme median vs PEG 0.1x theme median
+**Next print**: 2026-11-06 — reports Q3 2026 (quarter ending 2026-09-30) · in 65 days
+**Side**: long (own 90d revisions +26.57%)
+**Consensus**: eps1 2.99, eps2 3.923, eg1 3.9454184584849488, eg2 0.3120401337792642, pe1 52.25752508361204, peg1 0.1324511598287576, ps 8.873036397345336
+
+## Watch — the KPIs that decide the trade
+- Platform revenue YoY growth stays at or above 20% — supports the long.
+- Advertising gross margin holds near or above 62% — supports the long.
+- Adjusted EBITDA and Free Cash Flow (TTM) continue to expand — support the long.
+- Subscription revenue growth stays above 20% YoY — supports the long.
+
+## What the next print will reveal
+- Q3 results will show whether Platform revenue can sustain the 25% YoY pace from Q2 and the double-digit growth path management highlighted, with advertising and subscriptions again the key drivers.
+- The print will reveal whether advertising gross margin stays near the Q2 62.4% level, confirming the shift to higher-margin ad products is durable and supporting gross profit expansion.
+- It will test whether subscription revenue keeps growing near the Q2 26% YoY rate and whether The Roku Channel remains a top engagement driver on the platform.
+- With Devices revenue down 1% YoY in Q2, Q3 results and Q4 guidance will indicate whether player sales have stabilized ahead of the holiday period.
+- The FY1/FY2 EPS ramp to $2.99 and $3.92, up roughly 394.5% and 31.2%, needs validation from continued net income, Adjusted EBITDA, and free cash flow expansion; the low 0.13x PEG only supports the long if that growth is delivered.
+- GRMN's Oct 28 consumer-electronics print is a near-term demand read, while Roku's Q3 guide and Q4 commentary will set up whether holiday advertising and subscription momentum can keep margins and Platform growth on track.
+
+*Sources: research pack (EDGAR), bounded web-search snippets, consensus cache — never the deep dive.*

@@ -1,0 +1,77 @@
+{
+  "ticker": "NJR",
+  "as_of": "2026-08-25T08:03:33.433351+00:00",
+  "earnings_date": "2026-11-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.56,
+    "eps_d30": 3.51964,
+    "eps_d90": 3.43681,
+    "change_30d_pct": 1.15,
+    "change_90d_pct": 3.58,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.16,
+        "estimate": 0.19264,
+        "surprise_pct": -16.94
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.17,
+        "estimate": 0.99667,
+        "surprise_pct": 17.39
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.2,
+        "estimate": 1.89948,
+        "surprise_pct": 15.82
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.11,
+        "estimate": 0.06263,
+        "surprise_pct": 75.63
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 22.97
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": -1.19
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": -0.2
+      },
+      {
+        "report_date": "2026-02-03",
+        "move_pct": 3.52
+      },
+      {
+        "report_date": "2025-11-20",
+        "move_pct": 4.1
+      }
+    ],
+    "avg_abs_move_pct": 2.25,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.6% over 90 days and +1.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.2%, -0.2%, +3.5%, +4.1% (average absolute move 2.2%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +23.0%."
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "ticker": "LAZ",
+  "as_of": "2026-08-20T06:44:24.207015+00:00",
+  "earnings_date": "2026-10-28",
+  "implied": {
+    "available": true,
+    "reason": "",
+    "expiry": "2026-11-20",
+    "expiry_covers_earnings": true,
+    "expiries_listed": 5,
+    "spot": 45.21,
+    "strike": 45.0,
+    "strike_offset_pct": -0.46,
+    "implied_move_pct": 19.27,
+    "open_interest": 1,
+    "two_sided_strikes": 1,
+    "strikes": 11,
+    "spread_pct": null,
+    "quote_basis": "last_trade_only",
+    "open_interest_missing": false,
+    "thin": true
+  },
+  "revisions": {
+    "available": true,
+    "eps_current": 2.22988,
+    "eps_d30": 2.63366,
+    "eps_d90": 2.84869,
+    "change_30d_pct": -15.33,
+    "change_90d_pct": -21.72,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 8
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.56,
+        "estimate": 0.43857,
+        "surprise_pct": 27.69
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.8,
+        "estimate": 0.68853,
+        "surprise_pct": 16.19
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.42,
+        "estimate": 0.5072,
+        "surprise_pct": -17.19
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.12,
+        "estimate": 0.35308,
+        "surprise_pct": -66.01
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -9.83
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-28",
+        "move_pct": -0.54
+      },
+      {
+        "report_date": "2026-05-04",
+        "move_pct": -3.04
+      },
+      {
+        "report_date": "2026-02-23",
+        "move_pct": -3.92
+      },
+      {
+        "report_date": "2025-10-27",
+        "move_pct": 2.17
+      }
+    ],
+    "avg_abs_move_pct": 2.42,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Options price a 19.3% move by 2026-11-20 (no strike near spot quotes two-sided, so this is from last traded prices and may be stale). That is the hurdle this thesis has to clear to pay.",
+    "Chain is thin: 1 contracts of open interest across 11 strikes, 1 of them quotable \u2014 the position may be hard to put on at a sensible price.",
+    "Consensus EPS for the current year has moved -21.7% over 90 days and -15.3% over 30 days \u2014 expectations are already falling, so that much is priced.",
+    "Analyst revisions in the last 30 days: 0 up, 8 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.5%, -3.0%, -3.9%, +2.2% (average absolute move 2.4%, 3 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -9.8%."
+  ]
+}

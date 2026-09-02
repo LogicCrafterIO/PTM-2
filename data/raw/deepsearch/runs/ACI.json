@@ -1,0 +1,1437 @@
+{
+  "ticker": "ACI",
+  "name": "Albertsons",
+  "sector": "Consumer Staples",
+  "industry": "Food Retail",
+  "as_of": "2026-08-31",
+  "research": {
+    "ticker": "ACI",
+    "as_of": "2026-08-31",
+    "queries_run": [
+      "Albertsons ACI latest earnings results Q4 2025 guidance 2026 analyst reaction",
+      "Albertsons Kroger merger terminated latest news 2025 2026 breakup fee antitrust",
+      "Albertsons management changes CEO CFO president executive turnover 2025 2026",
+      "Albertsons store closures layoffs restructuring cost cutting plan 2025 2026",
+      "Albertsons debt leverage credit rating Moody's S&P latest 2025 2026 refinancing",
+      "US grocery industry trends 2025 2026 food inflation deflation supermarket same-store sales",
+      "Kroger Walmart Amazon Aldi Lidl grocery pricing strategy 2025 2026 market share vs Albertsons",
+      "Albertsons bear case short thesis risks debt competition margin pressure 2025 2026",
+      "Albertsons analyst ratings upgrades downgrades price target latest 2025 2026",
+      "Albertsons digital e-commerce curbside delivery growth market share latest 2025 2026"
+    ],
+    "findings": [
+      {
+        "claim": "Q4 FY2025 identical sales increased 0.7%",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-04-14"
+      },
+      {
+        "claim": "Digital sales grew 16% in Q4 FY2025",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+          "date": ""
+        },
+        "category": "digital",
+        "dated": "2026-04-14"
+      },
+      {
+        "claim": "Q4 FY2025 revenue $20.3B, slightly below forecast $20.49B",
+        "source": {
+          "title": "Earnings call transcript: Albertsons beats EPS but misses revenue in Q4 2025 By Investing.com",
+          "url": "https://m.investing.com/news/transcripts/earnings-call-transcript-albertsons-beats-eps-but-misses-revenue-in-q4-2025-93CH-4613113?ampMode=1",
+          "date": ""
+        },
+        "category": "revenue",
+        "dated": "2026-04-14"
+      },
+      {
+        "claim": "Q4 FY2025 adjusted EBITDA was $903M",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+          "date": ""
+        },
+        "category": "profitability",
+        "dated": "2026-04-14"
+      },
+      {
+        "claim": "Q4 FY2025 adjusted net income $252M, EPS $0.48",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+          "date": ""
+        },
+        "category": "profitability",
+        "dated": "2026-04-14"
+      },
+      {
+        "claim": "Opioid settlement framework of $774M payable over 9 years",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+          "date": ""
+        },
+        "category": "liability",
+        "dated": "2026-04-14"
+      },
+      {
+        "claim": "FY2026 guidance: identical sales 0\u20111%, adjusted EBITDA $3.85\u20113.925B, CapEx $2\u20112.2B",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+          "date": ""
+        },
+        "category": "guidance",
+        "dated": "2026-04-14"
+      },
+      {
+        "claim": "Kroger\u2011Albertsons $25B merger was blocked by courts",
+        "source": {
+          "title": "Kroger and Albertsons play blame game after failed merger in billion-dollar battle | Reuters",
+          "url": "https://www.reuters.com/legal/government/kroger-albertsons-play-blame-game-after-failed-merger-billion-dollar-battle-2025-03-28/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2025-03-28"
+      },
+      {
+        "claim": "Proposed Kroger\u2013Albertsons merger valued at $24.6\u202fbillion collapsed, triggering ongoing legal disputes and industry-wide regulatory scrutiny.",
+        "source": {
+          "title": "Kroger\u2013Albertsons: The $24.6 Billion Merger That Failed \u2014 and the $6 Billion Battle That Followed \u2013 International Supermarket News",
+          "url": "https://internationalsupermarketnews.com/kroger-albertsons-the-24-6-billion-merger-that-failed-and-the-6-billion-battle-that-followed/",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2026-08-21"
+      },
+      {
+        "claim": "Albertsons terminated its $25\u202fbillion merger agreement with Kroger on December\u202f11,\u202f2024, citing regulatory hurdles and breach of contract.",
+        "source": {
+          "title": "Albertsons demands billions from rival Kroger after terminating merger bid | Reuters",
+          "url": "https://www.reuters.com/markets/deals/albertsons-terminates-25-billion-merger-with-kroger-after-regulatory-hurdle-2024-12-11/",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2024-12-11"
+      },
+      {
+        "claim": "Albertsons filed a lawsuit against Kroger seeking at least $6\u202fbillion in damages for alleged breach of merger contract.",
+        "source": {
+          "title": "Albertsons\u2019 $6 Billion Lawsuit Against Kroger Signals a New Chapter in U.S. Grocery Retail \u2013 International Supermarket News",
+          "url": "https://internationalsupermarketnews.com/albertsons-6-billion-lawsuit-against-kroger-signals-a-new-chapter-in-u-s-grocery-retail/",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2026-08-28"
+      },
+      {
+        "claim": "C&S Wholesale Grocers settled a lawsuit with Kroger over the failed merger, agreeing to a $125\u202fmillion breakup fee claim.",
+        "source": {
+          "title": "Kroger, C&S settle merger termination lawsuit",
+          "url": "https://www.supermarketnews.com/legislation-regulatory-news/kroger-c-s-settle-merger-termination-lawsuit",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2025-08-11"
+      },
+      {
+        "claim": "Albertsons increased its quarterly cash dividend by 25% following the merger termination.",
+        "source": {
+          "title": "Albertsons Companies, Inc. - Albertsons Terminates Merger Agreement",
+          "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2024/Albertsons-Terminates-Merger-Agreement/default.aspx",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2024-12-11"
+      },
+      {
+        "claim": "Albertsons authorized a $2\u202fbillion share repurchase program as part of its post-merger strategy.",
+        "source": {
+          "title": "Albertsons Companies, Inc. - Albertsons Terminates Merger Agreement",
+          "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2024/Albertsons-Terminates-Merger-Agreement/default.aspx",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2024-12-11"
+      },
+      {
+        "claim": "C&S Wholesale Grocers agreed to acquire 579 Albertsons stores as part of the merger plan before its collapse.",
+        "source": {
+          "title": "Kroger, C&S settle merger termination lawsuit",
+          "url": "https://www.supermarketnews.com/legislation-regulatory-news/kroger-c-s-settle-merger-termination-lawsuit",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2025-08-11"
+      },
+      {
+        "claim": "Albertsons exercised its right to terminate the merger agreement after U.S. courts issued injunctions on December\u202f10,\u202f2024.",
+        "source": {
+          "title": "Albertsons Companies, Inc. - Albertsons Terminates Merger Agreement",
+          "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2024/Albertsons-Terminates-Merger-Agreement/default.aspx",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2024-12-11"
+      },
+      {
+        "claim": "Jim Donald retires; Kim Fennebresque elected Chair; David Zinsner joins board.",
+        "source": {
+          "title": "Albertsons\u00ae Companies, Inc. Announces Board Changes | Nasdaq",
+          "url": "https://www.nasdaq.com/press-release/albertsonsr-companies-inc-announces-board-changes-2025-09-17",
+          "date": ""
+        },
+        "category": "corporate governance",
+        "dated": "2025-09-17"
+      },
+      {
+        "claim": "Vivek Sankaran retires May 1 2026; Susan Morris becomes CEO.",
+        "source": {
+          "title": "Albertsons announces new CEO | Food Business News",
+          "url": "https://www.foodbusinessnews.net/articles/27825-albertsons-announces-new-ceo",
+          "date": ""
+        },
+        "category": "leadership",
+        "dated": "2026-03-03"
+      },
+      {
+        "claim": "Sharon McCollam retiring president & CFO; stays advisory until Feb 27 2027.",
+        "source": {
+          "title": "Sharon McCollam to retire from president and CFO role at Albertsons",
+          "url": "https://chaindrugreview.com/sharon-mccollam-to-retire-from-president-and-cfo-role-at-albertsons/",
+          "date": ""
+        },
+        "category": "leadership",
+        "dated": "2026-07-23"
+      },
+      {
+        "claim": "Emily Turner appointed chief marketing officer.",
+        "source": {
+          "title": "Albertsons taps former Fresh Market exec as marketing chief | Grocery Dive",
+          "url": "https://www.grocerydive.com/news/albertsons-names-emily-turner-chief-marketing-officer-grocery-supermarkets/828210/",
+          "date": ""
+        },
+        "category": "leadership",
+        "dated": "2026-08-18"
+      },
+      {
+        "claim": "Q1 FY2026: identical sales down 0.8%; digital sales up 13%; net income $85M ($0.17/share); adjusted net income $210M ($0.42/share); adjusted EBITDA $1,013M.",
+        "source": {
+          "title": "Albertsons Companies, Inc. - Albertsons\u00ae Companies, Inc. Reports First Quarter Fiscal 2026 Results",
+          "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Inc--Reports-First-Quarter-Fiscal-2026-Results/default.aspx",
+          "date": ""
+        },
+        "category": "financial",
+        "dated": "2026-07-23"
+      },
+      {
+        "claim": "Q4 FY2025: identical sales up 0.7%; digital sales up 16%; loyalty members up 12% to 51.2M; net loss $481M ($0.94/share) incl $600M charge.",
+        "source": {
+          "title": "Albertsons Companies, Inc. - Albertsons\u00ae Companies, Inc. Reports Fourth Quarter and Full Year Results",
+          "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Inc--Reports-Fourth-Quarter-and-Full-Year-Results/",
+          "date": ""
+        },
+        "category": "financial",
+        "dated": "2026-04-14"
+      },
+      {
+        "claim": "Albertsons closing two Texas stores, affecting ~138 employees.",
+        "source": {
+          "title": "Albertsons at a Crossroads: Store Closures, Layoffs, and the Aftermath of a Failed Merger \u2013 International Supermarket News",
+          "url": "https://internationalsupermarketnews.com/albertsons-at-a-crossroads-store-closures-layoffs-and-the-aftermath-of-a-failed-merger/",
+          "date": ""
+        },
+        "category": "restructuring",
+        "dated": "2026-07-16"
+      },
+      {
+        "claim": "Albertsons closing additional stores and cutting jobs nationwide after failed merger.",
+        "source": {
+          "title": "Albertsons cuts more stores, jobs as fallout from failed Kroger merger deepens | Fox Business",
+          "url": "https://www.foxbusiness.com/retail/major-grocery-chain-closes-more-stores-cuts-jobs-post-merger-fallout-deepens",
+          "date": ""
+        },
+        "category": "restructuring",
+        "dated": "2026-04-02"
+      },
+      {
+        "claim": "Albertsons is closing several stores and laying off 295 employees amid restructuring.",
+        "source": {
+          "title": "87-year-old retail grocery giant lays off 100s in store closings - TheStreet",
+          "url": "https://www.thestreet.com/retail/87-year-old-retail-grocery-giant-albertsons-layoffs-hundreds-amid-closures",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-04-01"
+      },
+      {
+        "claim": "Total debt rose to $8,946.6\u202fmillion in FY2026 from $7,820.1\u202fmillion in FY2025.",
+        "source": {
+          "title": "R13.htm",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/R13.htm",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-02-28"
+      },
+      {
+        "claim": "Long\u2011term debt portion reached $8,412.6\u202fmillion in FY2026.",
+        "source": {
+          "title": "R13.htm",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/R13.htm",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-02-28"
+      },
+      {
+        "claim": "Annual revenue was approximately $79.2\u202fbillion in FY2024.",
+        "source": {
+          "title": "Albertsons Credit Rating & NNN Cap Rate (2026)",
+          "url": "https://investmentgrade.com/albertsons-credit-rating-nnn-cap-rate/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-07-17"
+      },
+      {
+        "claim": "Store count is about 2,200 across the U.S.",
+        "source": {
+          "title": "Albertsons Credit Rating & NNN Cap Rate (2026)",
+          "url": "https://investmentgrade.com/albertsons-credit-rating-nnn-cap-rate/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-17"
+      },
+      {
+        "claim": "Albertsons issued $1.2\u202fbillion of 5.625% senior notes due 2032 and $900\u202fmillion of 5.75% notes due 2034.",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000015/january2026bondprice.htm",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-01-22"
+      },
+      {
+        "claim": "U.S. grocery units have fallen ~2% YoY since Feb\u202f2026, while prices rise 2\u20133% YoY.",
+        "source": {
+          "title": "The US Grocery Slowdown Is Real | Bain & Company",
+          "url": "https://www.bain.com/insights/the-us-grocery-slowdown-is-real-snap-chart/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-02-01"
+      },
+      {
+        "claim": "Competition from Walmart and H\u2011E\u2011B is pressuring Albertsons amid store closures.",
+        "source": {
+          "title": "87-year-old retail grocery giant lays off 100s in store closings - TheStreet",
+          "url": "https://www.thestreet.com/retail/87-year-old-retail-grocery-giant-albertsons-layoffs-hundreds-amid-closures",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-04-01"
+      },
+      {
+        "claim": "Albertsons Q1 2026 adjusted earnings fell short of consensus and the company cut its full\u2011year earnings outlook.",
+        "source": {
+          "title": "What Albertsons Companies (ACI)'s Earnings Miss, Guidance Cut and Probes Mean For Shareholders - Simply Wall St News",
+          "url": "https://simplywall.st/stocks/us/consumer-retailing/nyse-aci/albertsons-companies/news/what-albertsons-companies-acis-earnings-miss-guidance-cut-an",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-22"
+      },
+      {
+        "claim": "Multiple law firms are investigating potential securities\u2011related misconduct by Albertsons and certain executives.",
+        "source": {
+          "title": "What Albertsons Companies (ACI)'s Earnings Miss, Guidance Cut and Probes Mean For Shareholders - Simply Wall St News",
+          "url": "https://simplywall.st/stocks/us/consumer-retailing/nyse-aci/albertsons-companies/news/what-albertsons-companies-acis-earnings-miss-guidance-cut-an",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-22"
+      },
+      {
+        "claim": "Albertsons\u2019 net debt/EBITDA ratio stands at 2.33x, raising the risk of covenant breaches if sales remain negative through 2026.",
+        "source": {
+          "title": "Albertsons stock in hot water after sobering reveal \u2014 StockScreener",
+          "url": "https://stockscreener.finance/en/news/albertsons-stock-in-hot-water-after-sobering-reveal/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-26"
+      },
+      {
+        "claim": "Digital sales grew 16% in Q4 FY25, while capital expenditures exceeded $1.8\u202fB to fund modernization and new store openings.",
+        "source": {
+          "title": "Albertsons: After Failed Kroger Merger, Supermarket Brand Bets On Digital, New Stores | Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4916732-albertsons-after-failed-kroger-merger-supermarket-brand-bets-on-digital-and-new-stores",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "The company\u2019s payout ratio exceeds 100%, with a quarterly dividend of $0.17 (annualized $0.68) yielding roughly 4% at a $16.50 share price.",
+        "source": {
+          "title": "Albertsons Boosts Dividend Despite Failed Merger and Opioid Liabilities: Is It Safe? - 24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/04/16/albertsons-boosts-dividend-despite-failed-merger-and-opioid-liabilities-is-it-safe/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-04-16"
+      },
+      {
+        "claim": "Albertsons\u2019 debt\u2011to\u2011equity ratio is about 230%, amplifying financial risk.",
+        "source": {
+          "title": "Albertsons Stock Analysis: Is It Worth Buying? | Chart Guys",
+          "url": "https://www.chartguys.com/articles/albertsons-stock",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Walmart holds 21.2% U.S. grocery market share in 2025, Aldi is opening 180 new stores in 2026, and traditional supermarkets are losing ground to younger, higher\u2011income shoppers.",
+        "source": {
+          "title": "U.S. Supermarkets 2025: Market Share Battle Intensifies \u2013 International Supermarket News",
+          "url": "https://internationalsupermarketnews.com/u-s-supermarkets-2025-market-share-battle-intensifies/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Albertsons operates over 2,200 stores under 20+ banners, generating $83\u202fB in annual revenue.",
+        "source": {
+          "title": "Albertsons Stock Analysis: Is It Worth Buying? | Chart Guys",
+          "url": "https://www.chartguys.com/articles/albertsons-stock",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Albertsons hired a new CISO on April\u202f26\u202f2026, former JPMorgan consumer\u2011banking cybersecurity lead, reporting to the CTO and briefing the board\u2019s technology committee quarterly.",
+        "source": {
+          "title": "Albertsons Turns the Spotlight on Cybersecurity as Debt Pressures Mount | Finexus",
+          "url": "https://api.finexus.net/api/news/earnings/15832/html",
+          "date": ""
+        },
+        "category": "business|catalyst",
+        "dated": "2026-04-26"
+      },
+      {
+        "claim": "Albertsons cut its financial outlook after reporting a sharp decline in quarterly profit.",
+        "source": {
+          "title": "Albertsons Is Under Pressure as American Shoppers Become More Cautious \u2013 International Supermarket News",
+          "url": "https://internationalsupermarketnews.com/albertsons-is-under-pressure-as-american-shoppers-become-more-cautious/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-08-24"
+      },
+      {
+        "claim": "Q1 results show declining identical sales, lower profits, margin pressure; CEO Susan Morris launched the ACI Edge restructuring program.",
+        "source": {
+          "title": "Albertsons Faces Pressure From Value-Conscious Consumers as CEO Morris Moves to Reshape Business - Food Trade News & Food World",
+          "url": "https://foodtradenews.com/2026/08/10/albertsons-faces-pressure-from-value-conscious-consumers-as-ceo-morris-moves-to-reshape-business/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-08-10"
+      },
+      {
+        "claim": "Citigroup downgraded Albertsons to Neutral from Buy, lowering its price target to $11 from $17.",
+        "source": {
+          "title": "Citigroup Downgrades Albertsons to Neutral From Buy, Lowers Price Target to $11 From $17 | MarketScreener",
+          "url": "https://www.marketscreener.com/news/citigroup-downgrades-albertsons-to-neutral-from-buy-lowers-price-target-to-11-from-17-ce7f51dcdc8bfe2d",
+          "date": ""
+        },
+        "category": "sentiment|valuation",
+        "dated": "2026-07-27"
+      },
+      {
+        "claim": "Telsey Advisory Group downgraded Albertsons to Market Perform from Outperform, adjusting its price target to $13 from $22.",
+        "source": {
+          "title": "Telsey Advisory Group Downgrades Albertsons to Market Perform From Outperform, Adjusts Price Target to $13 From $22 | MarketScreener",
+          "url": "https://www.marketscreener.com/news/telsey-advisory-group-downgrades-albertsons-to-market-perform-from-outperform-adjusts-price-target-ce7f51dfdd8ff321",
+          "date": ""
+        },
+        "category": "sentiment|valuation",
+        "dated": "2026-07-24"
+      },
+      {
+        "claim": "UBS downgraded Albertsons to Neutral, price target $12 from $20, citing higher price positioning and near\u2011term execution risk from consolidating 11 divisions into 4 regions.",
+        "source": {
+          "title": "",
+          "url": "https://www.tipranks.com/news/the-fly/ubs-downgrades-albertsons-to-neutral-on-higher-price-positioning-thefly-news",
+          "date": ""
+        },
+        "category": "sentiment|valuation",
+        "dated": ""
+      },
+      {
+        "claim": "Brokerages set an average 1\u2011year price target of $15.31 for Albertsons.",
+        "source": {
+          "title": "Brokerages Set Albertsons Companies, Inc. (NYSE:ACI) Target Price at $15.31 - The Cerbat Gem",
+          "url": "https://www.thecerbatgem.com/2026/08/19/brokerages-set-albertsons-companies-inc-nyseaci-target-price-at-15-31.html",
+          "date": ""
+        },
+        "category": "sentiment|valuation",
+        "dated": "2026-08-19"
+      },
+      {
+        "claim": "SimplyWallSt update (Aug\u202f25\u202f2026) shows Albertsons\u2019 fair value fell 7.35% to $12.61; analysts cut fair value to $14.19 and price targets to $10\u2011$18 amid weaker earnings, market\u2011share pressure, higher price positioning, leadership changes, and execution risks.",
+        "source": {
+          "title": "ACI: Restructuring Program Will Drive Future Returns Despite Execution Risks",
+          "url": "https://simplywall.st/community/narratives/us/consumer-retailing/nyse-aci/albertsons-companies/6hvn1s14-aci-digital-integration-and-customer-engagement-will-drive-outperformance-beyond-2025/updates/27-analysts-have-reduced-the-albertsons-companies-fair-value-es",
+          "date": ""
+        },
+        "category": "valuation|fundamentals",
+        "dated": "2026-08-25"
+      },
+      {
+        "claim": "Fiscal Q1 2026 net sales $24.94B, up 0.2% y/y.",
+        "source": {
+          "title": "Digital sales drive growth, engagement for Albertsons in Q1 2026",
+          "url": "https://www.digitalcommerce360.com/article/albertsons-digital-sales/",
+          "date": ""
+        },
+        "category": "",
+        "dated": "2026-07-24"
+      },
+      {
+        "claim": "Digital sales grew >10% y/y in Q1 2026.",
+        "source": {
+          "title": "Digital sales drive growth, engagement for Albertsons in Q1 2026",
+          "url": "https://www.digitalcommerce360.com/article/albertsons-digital-sales/",
+          "date": ""
+        },
+        "category": "",
+        "dated": "2026-07-24"
+      },
+      {
+        "claim": "Identical sales declined 0.8% y/y in Q1 2026.",
+        "source": {
+          "title": "Digital sales drive growth, engagement for Albertsons in Q1 2026",
+          "url": "https://www.digitalcommerce360.com/article/albertsons-digital-sales/",
+          "date": ""
+        },
+        "category": "",
+        "dated": "2026-07-24"
+      },
+      {
+        "claim": "Adjusted EBITDA $1.013B in Q1 2026.",
+        "source": {
+          "title": "Albertsons Companies Q1 Earnings Call Highlights - Stock Observer",
+          "url": "https://www.thestockobserver.com/2026/07/24/albertsons-companies-q1-earnings-call-highlights.html",
+          "date": ""
+        },
+        "category": "",
+        "dated": "2026-07-24"
+      },
+      {
+        "claim": "Adjusted EPS $0.42 in Q1 2026.",
+        "source": {
+          "title": "Albertsons Companies Q1 Earnings Call Highlights - Stock Observer",
+          "url": "https://www.thestockobserver.com/2026/07/24/albertsons-companies-q1-earnings-call-highlights.html",
+          "date": ""
+        },
+        "category": "",
+        "dated": "2026-07-24"
+      },
+      {
+        "claim": "Revenue $24.9B, up 0.2% y/y.",
+        "source": {
+          "title": "ACI Stock Forecast 2026-2027 - Albertsons Cos., Inc. Price Targets & Predictions",
+          "url": "https://tickernerd.com/stock/aci-forecast/",
+          "date": ""
+        },
+        "category": "",
+        "dated": "2026-08-28"
+      },
+      {
+        "claim": "Operating income $258.9M.",
+        "source": {
+          "title": "ACI Stock Forecast 2026-2027 - Albertsons Cos., Inc. Price Targets & Predictions",
+          "url": "https://tickernerd.com/stock/aci-forecast/",
+          "date": ""
+        },
+        "category": "",
+        "dated": "2026-08-28"
+      },
+      {
+        "claim": "Free cash flow $206.8M.",
+        "source": {
+          "title": "ACI Stock Forecast 2026-2027 - Albertsons Cos., Inc. Price Targets & Predictions",
+          "url": "https://tickernerd.com/stock/aci-forecast/",
+          "date": ""
+        },
+        "category": "",
+        "dated": "2026-08-28"
+      },
+      {
+        "claim": "Q4 identical\u2011store sales increased 0.7%",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Q4 adjusted EBITDA was $903\u202fmillion",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Pharmacy headwinds of ~145\u202fbps, mainly IRA pricing/mix (~105\u202fbps) and GLP\u20111 growth moderation (~40\u202fbps)",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Proposed nationwide opioid settlement framework of $774\u202fmillion payable over nine years recorded in Q4",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Dividend increased 13% to $0.68 per share",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Fiscal\u202f2026 guidance: identical sales 0\u20131% (1.5\u20132.5% ex\u2011IRA), adjusted EBITDA $3.85\u2013$3.925\u202fB, CapEx $2.0\u2013$2.2\u202fB",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Q4 gross margin 27.2%, down 25\u202fbps YoY excluding fuel and LIFO",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Digital sales rose 16% in Q4 FY25",
+        "source": {
+          "title": "Albertsons: After Failed Kroger Merger, Supermarket Brand Bets On Digital, New Stores | Seeking Alpha",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "CapEx exceeded $1.8\u202fB in Q4 FY25",
+        "source": {
+          "title": "Albertsons: After Failed Kroger Merger, Supermarket Brand Bets On Digital, New Stores | Seeking Alpha",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      },
+      {
+        "claim": "Dividend payout ratio exceeds 100%",
+        "source": {
+          "title": "Albertsons: After Failed Kroger Merger, Supermarket Brand Bets On Digital, New Stores | Seeking Alpha",
+          "url": "",
+          "date": ""
+        },
+        "category": "business",
+        "dated": ""
+      }
+    ],
+    "sources": [
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+        "date": ""
+      },
+      {
+        "title": "Earnings call transcript: Albertsons beats EPS but misses revenue in Q4 2025 By Investing.com",
+        "url": "https://m.investing.com/news/transcripts/earnings-call-transcript-albertsons-beats-eps-but-misses-revenue-in-q4-2025-93CH-4613113?ampMode=1",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Companies Q4 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Companies Q4 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Companies Q4 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+        "date": ""
+      },
+      {
+        "title": "Kroger and Albertsons play blame game after failed merger in billion-dollar battle | Reuters",
+        "url": "https://www.reuters.com/legal/government/kroger-albertsons-play-blame-game-after-failed-merger-billion-dollar-battle-2025-03-28/",
+        "date": ""
+      },
+      {
+        "title": "Kroger\u2013Albertsons: The $24.6 Billion Merger That Failed \u2014 and the $6 Billion Battle That Followed \u2013 International Supermarket News",
+        "url": "https://internationalsupermarketnews.com/kroger-albertsons-the-24-6-billion-merger-that-failed-and-the-6-billion-battle-that-followed/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons demands billions from rival Kroger after terminating merger bid | Reuters",
+        "url": "https://www.reuters.com/markets/deals/albertsons-terminates-25-billion-merger-with-kroger-after-regulatory-hurdle-2024-12-11/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons\u2019 $6 Billion Lawsuit Against Kroger Signals a New Chapter in U.S. Grocery Retail \u2013 International Supermarket News",
+        "url": "https://internationalsupermarketnews.com/albertsons-6-billion-lawsuit-against-kroger-signals-a-new-chapter-in-u-s-grocery-retail/",
+        "date": ""
+      },
+      {
+        "title": "Kroger, C&S settle merger termination lawsuit",
+        "url": "https://www.supermarketnews.com/legislation-regulatory-news/kroger-c-s-settle-merger-termination-lawsuit",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Companies, Inc. - Albertsons Terminates Merger Agreement",
+        "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2024/Albertsons-Terminates-Merger-Agreement/default.aspx",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Companies, Inc. - Albertsons Terminates Merger Agreement",
+        "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2024/Albertsons-Terminates-Merger-Agreement/default.aspx",
+        "date": ""
+      },
+      {
+        "title": "Kroger, C&S settle merger termination lawsuit",
+        "url": "https://www.supermarketnews.com/legislation-regulatory-news/kroger-c-s-settle-merger-termination-lawsuit",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Companies, Inc. - Albertsons Terminates Merger Agreement",
+        "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2024/Albertsons-Terminates-Merger-Agreement/default.aspx",
+        "date": ""
+      },
+      {
+        "title": "Albertsons\u00ae Companies, Inc. Announces Board Changes | Nasdaq",
+        "url": "https://www.nasdaq.com/press-release/albertsonsr-companies-inc-announces-board-changes-2025-09-17",
+        "date": ""
+      },
+      {
+        "title": "Albertsons announces new CEO | Food Business News",
+        "url": "https://www.foodbusinessnews.net/articles/27825-albertsons-announces-new-ceo",
+        "date": ""
+      },
+      {
+        "title": "Sharon McCollam to retire from president and CFO role at Albertsons",
+        "url": "https://chaindrugreview.com/sharon-mccollam-to-retire-from-president-and-cfo-role-at-albertsons/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons taps former Fresh Market exec as marketing chief | Grocery Dive",
+        "url": "https://www.grocerydive.com/news/albertsons-names-emily-turner-chief-marketing-officer-grocery-supermarkets/828210/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Companies, Inc. - Albertsons\u00ae Companies, Inc. Reports First Quarter Fiscal 2026 Results",
+        "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Inc--Reports-First-Quarter-Fiscal-2026-Results/default.aspx",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Companies, Inc. - Albertsons\u00ae Companies, Inc. Reports Fourth Quarter and Full Year Results",
+        "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Inc--Reports-Fourth-Quarter-and-Full-Year-Results/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons at a Crossroads: Store Closures, Layoffs, and the Aftermath of a Failed Merger \u2013 International Supermarket News",
+        "url": "https://internationalsupermarketnews.com/albertsons-at-a-crossroads-store-closures-layoffs-and-the-aftermath-of-a-failed-merger/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons cuts more stores, jobs as fallout from failed Kroger merger deepens | Fox Business",
+        "url": "https://www.foxbusiness.com/retail/major-grocery-chain-closes-more-stores-cuts-jobs-post-merger-fallout-deepens",
+        "date": ""
+      },
+      {
+        "title": "87-year-old retail grocery giant lays off 100s in store closings - TheStreet",
+        "url": "https://www.thestreet.com/retail/87-year-old-retail-grocery-giant-albertsons-layoffs-hundreds-amid-closures",
+        "date": ""
+      },
+      {
+        "title": "R13.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/R13.htm",
+        "date": ""
+      },
+      {
+        "title": "R13.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000032/R13.htm",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Credit Rating & NNN Cap Rate (2026)",
+        "url": "https://investmentgrade.com/albertsons-credit-rating-nnn-cap-rate/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Credit Rating & NNN Cap Rate (2026)",
+        "url": "https://investmentgrade.com/albertsons-credit-rating-nnn-cap-rate/",
+        "date": ""
+      },
+      {
+        "title": "Document",
+        "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000015/january2026bondprice.htm",
+        "date": ""
+      },
+      {
+        "title": "The US Grocery Slowdown Is Real | Bain & Company",
+        "url": "https://www.bain.com/insights/the-us-grocery-slowdown-is-real-snap-chart/",
+        "date": ""
+      },
+      {
+        "title": "87-year-old retail grocery giant lays off 100s in store closings - TheStreet",
+        "url": "https://www.thestreet.com/retail/87-year-old-retail-grocery-giant-albertsons-layoffs-hundreds-amid-closures",
+        "date": ""
+      },
+      {
+        "title": "What Albertsons Companies (ACI)'s Earnings Miss, Guidance Cut and Probes Mean For Shareholders - Simply Wall St News",
+        "url": "https://simplywall.st/stocks/us/consumer-retailing/nyse-aci/albertsons-companies/news/what-albertsons-companies-acis-earnings-miss-guidance-cut-an",
+        "date": ""
+      },
+      {
+        "title": "What Albertsons Companies (ACI)'s Earnings Miss, Guidance Cut and Probes Mean For Shareholders - Simply Wall St News",
+        "url": "https://simplywall.st/stocks/us/consumer-retailing/nyse-aci/albertsons-companies/news/what-albertsons-companies-acis-earnings-miss-guidance-cut-an",
+        "date": ""
+      },
+      {
+        "title": "Albertsons stock in hot water after sobering reveal \u2014 StockScreener",
+        "url": "https://stockscreener.finance/en/news/albertsons-stock-in-hot-water-after-sobering-reveal/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons: After Failed Kroger Merger, Supermarket Brand Bets On Digital, New Stores | Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4916732-albertsons-after-failed-kroger-merger-supermarket-brand-bets-on-digital-and-new-stores",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Boosts Dividend Despite Failed Merger and Opioid Liabilities: Is It Safe? - 24/7 Wall St.",
+        "url": "https://247wallst.com/investing/2026/04/16/albertsons-boosts-dividend-despite-failed-merger-and-opioid-liabilities-is-it-safe/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Stock Analysis: Is It Worth Buying? | Chart Guys",
+        "url": "https://www.chartguys.com/articles/albertsons-stock",
+        "date": ""
+      },
+      {
+        "title": "U.S. Supermarkets 2025: Market Share Battle Intensifies \u2013 International Supermarket News",
+        "url": "https://internationalsupermarketnews.com/u-s-supermarkets-2025-market-share-battle-intensifies/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Stock Analysis: Is It Worth Buying? | Chart Guys",
+        "url": "https://www.chartguys.com/articles/albertsons-stock",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Turns the Spotlight on Cybersecurity as Debt Pressures Mount | Finexus",
+        "url": "https://api.finexus.net/api/news/earnings/15832/html",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Is Under Pressure as American Shoppers Become More Cautious \u2013 International Supermarket News",
+        "url": "https://internationalsupermarketnews.com/albertsons-is-under-pressure-as-american-shoppers-become-more-cautious/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Faces Pressure From Value-Conscious Consumers as CEO Morris Moves to Reshape Business - Food Trade News & Food World",
+        "url": "https://foodtradenews.com/2026/08/10/albertsons-faces-pressure-from-value-conscious-consumers-as-ceo-morris-moves-to-reshape-business/",
+        "date": ""
+      },
+      {
+        "title": "Citigroup Downgrades Albertsons to Neutral From Buy, Lowers Price Target to $11 From $17 | MarketScreener",
+        "url": "https://www.marketscreener.com/news/citigroup-downgrades-albertsons-to-neutral-from-buy-lowers-price-target-to-11-from-17-ce7f51dcdc8bfe2d",
+        "date": ""
+      },
+      {
+        "title": "Telsey Advisory Group Downgrades Albertsons to Market Perform From Outperform, Adjusts Price Target to $13 From $22 | MarketScreener",
+        "url": "https://www.marketscreener.com/news/telsey-advisory-group-downgrades-albertsons-to-market-perform-from-outperform-adjusts-price-target-ce7f51dfdd8ff321",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.tipranks.com/news/the-fly/ubs-downgrades-albertsons-to-neutral-on-higher-price-positioning-thefly-news",
+        "date": ""
+      },
+      {
+        "title": "Brokerages Set Albertsons Companies, Inc. (NYSE:ACI) Target Price at $15.31 - The Cerbat Gem",
+        "url": "https://www.thecerbatgem.com/2026/08/19/brokerages-set-albertsons-companies-inc-nyseaci-target-price-at-15-31.html",
+        "date": ""
+      },
+      {
+        "title": "ACI: Restructuring Program Will Drive Future Returns Despite Execution Risks",
+        "url": "https://simplywall.st/community/narratives/us/consumer-retailing/nyse-aci/albertsons-companies/6hvn1s14-aci-digital-integration-and-customer-engagement-will-drive-outperformance-beyond-2025/updates/27-analysts-have-reduced-the-albertsons-companies-fair-value-es",
+        "date": ""
+      },
+      {
+        "title": "Digital sales drive growth, engagement for Albertsons in Q1 2026",
+        "url": "https://www.digitalcommerce360.com/article/albertsons-digital-sales/",
+        "date": ""
+      },
+      {
+        "title": "Digital sales drive growth, engagement for Albertsons in Q1 2026",
+        "url": "https://www.digitalcommerce360.com/article/albertsons-digital-sales/",
+        "date": ""
+      },
+      {
+        "title": "Digital sales drive growth, engagement for Albertsons in Q1 2026",
+        "url": "https://www.digitalcommerce360.com/article/albertsons-digital-sales/",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Companies Q1 Earnings Call Highlights - Stock Observer",
+        "url": "https://www.thestockobserver.com/2026/07/24/albertsons-companies-q1-earnings-call-highlights.html",
+        "date": ""
+      },
+      {
+        "title": "Albertsons Companies Q1 Earnings Call Highlights - Stock Observer",
+        "url": "https://www.thestockobserver.com/2026/07/24/albertsons-companies-q1-earnings-call-highlights.html",
+        "date": ""
+      },
+      {
+        "title": "ACI Stock Forecast 2026-2027 - Albertsons Cos., Inc. Price Targets & Predictions",
+        "url": "https://tickernerd.com/stock/aci-forecast/",
+        "date": ""
+      },
+      {
+        "title": "ACI Stock Forecast 2026-2027 - Albertsons Cos., Inc. Price Targets & Predictions",
+        "url": "https://tickernerd.com/stock/aci-forecast/",
+        "date": ""
+      },
+      {
+        "title": "ACI Stock Forecast 2026-2027 - Albertsons Cos., Inc. Price Targets & Predictions",
+        "url": "https://tickernerd.com/stock/aci-forecast/",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [
+      {
+        "title": "Albertsons Companies Q4 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+        "date": ""
+      },
+      {
+        "title": "Albertsons: After Failed Kroger Merger, Supermarket Brand Bets On Digital, New Stores | Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4916732-albertsons-after-failed-kroger-merger-supermarket-brand-bets-on-digital-and-new-stores",
+        "date": ""
+      }
+    ],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "cautious",
+    "thesis": "Albertsons\u2019 recent performance and risk profile suggest a cautious outlook: while digital sales growth and a robust earnings outlook provide some upside, the company faces significant headwinds from declining core sales, high leverage and payout, margin erosion, and regulatory uncertainty that outweigh the positives.",
+    "drivers": [
+      {
+        "name": "Digital Sales & E-commerce Growth",
+        "direction": "tailwind",
+        "evidence": "Q4 FY25 digital sales up 16%, loyalty members 12% to 51.2M",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 2.0,
+        "category": "fundamentals",
+        "score_why": "Bull side won decisively with concrete growth metrics."
+      },
+      {
+        "name": "Post-Merger Restructuring & Cost Discipline",
+        "direction": "headwind",
+        "evidence": "Identical sales fell 0.8% y/y in Q1 FY26, earnings below consensus",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -2.0,
+        "category": "risk",
+        "score_why": "Bear side won decisively; restructuring has not yet delivered expected benefits."
+      },
+      {
+        "name": "Debt & Liquidity Risk",
+        "direction": "headwind",
+        "evidence": "Net debt $8.95B, debt/EBITDA 2.33x, payout ratio >100%",
+        "source": {
+          "title": "Earnings call transcript: Albertsons beats EPS but misses revenue in Q4 2025 By Investing.com",
+          "url": "https://m.investing.com/news/transcripts/earnings-call-transcript-albertsons-beats-eps-but-misses-revenue-in-q4-2025-93CH-4613113?ampMode=1",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -2.0,
+        "category": "risk",
+        "score_why": "Bear side won decisively; leverage and payout expose covenant risk."
+      },
+      {
+        "name": "Pricing Power & Margin Pressure",
+        "direction": "headwind",
+        "evidence": "Margin declined 25bps, competition from Walmart, Aldi",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -2.0,
+        "category": "risk",
+        "score_why": "Bear side won decisively; margin erosion and competition erode pricing power."
+      },
+      {
+        "name": "Regulatory & Litigation Exposure",
+        "direction": "headwind",
+        "evidence": "Ongoing opioid settlement, securities investigations, potential fines",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -2.0,
+        "category": "risk",
+        "score_why": "Bear side won decisively; regulatory risk outweighs merger termination benefits."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "Q4 FY2025 identical sales grew 0.7%, demonstrating resilience and organic growth in a competitive grocery market.",
+        "evidence": "Finding 1",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Digital sales surged 16% in Q4 FY2025, indicating a strong shift to high\u2011margin e\u2011commerce and effective omnichannel strategy.",
+        "evidence": "Finding 2",
+        "source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Q4 FY2025 revenue of $20.3B and adjusted EBITDA of $903M confirm robust profitability and efficient cost management.",
+        "evidence": "Finding 4",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "FY2026 guidance projects adjusted EBITDA of $3.85\u2013$3.925B, a 30%+ increase from Q4, underscoring strong earnings momentum.",
+        "evidence": "Finding 7",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The company plans $2\u2013$2.2B in CapEx for store modernization and new openings, positioning it for long\u2011term margin improvement.",
+        "evidence": "Finding 7",
+        "source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Dividend was raised 25% after the merger termination, reflecting confidence in cash flow and a commitment to shareholder returns.",
+        "evidence": "Finding 13",
+        "source": {
+          "title": "Albertsons Companies, Inc. - Albertsons Terminates Merger Agreement",
+          "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2024/Albertsons-Terminates-Merger-Agreement/default.aspx",
+          "date": ""
+        },
+        "strength": "strong"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Albertsons\u2019 debt burden is escalating, with net debt rising to $8.95\u202fB in FY2026 from $7.82\u202fB in FY2025 and long\u2011term debt at $8.41\u202fB, pushing net debt/EBITDA to 2.33x and risking covenant breaches if sales decline.",
+        "evidence": "Net debt rose to $8,946.6\u202fmillion in FY2026 from $7,820.1\u202fmillion in FY2025; long\u2011term debt portion reached $8,412.6\u202fmillion in FY2026; net debt/EBITDA ratio stands at 2.33x.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "The company\u2019s payout ratio exceeds 100%, with a quarterly dividend of $0.17 (annualized $0.68) yielding ~4% at $16.50 share price, while net debt is high, indicating unsustainable cash outflows that could strain liquidity.",
+        "evidence": "The company\u2019s payout ratio exceeds 100%, with a quarterly dividend of $0.17 (annualized $0.68) yielding roughly 4% at a $16.50 share price.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Despite digital sales growth, identical store sales fell 0.8% in Q1 FY2026, and the company has cut its financial outlook, signaling weak core demand and margin erosion.",
+        "evidence": "Q1 FY2026 identical sales down 0.8%; company cut its financial outlook after reporting a sharp decline in quarterly profit.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Albertsons is closing multiple stores and laying off hundreds of employees nationwide following the failed merger, reducing scale and increasing per\u2011store costs.",
+        "evidence": "Albertsons closing two Texas stores, affecting ~138 employees; closing additional stores and cutting jobs nationwide after failed merger; closing several stores and laying off 295 employees amid restructuring.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "The company faces significant legal and regulatory costs: a $774\u202fM opioid settlement payable over nine years, a $6\u202fB lawsuit against Kroger, and ongoing investigations into potential securities misconduct, adding pressure on earnings.",
+        "evidence": "Opioid settlement framework of $774\u202fM payable over 9 years; Albertsons filed a lawsuit against Kroger seeking at least $6\u202fB in damages; multiple law firms are investigating potential securities\u2011related misconduct by Albertsons and certain executives; proposed nationwide opioid settlement framework o",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Competition from Walmart, H\u2011E\u2011B, and Aldi is intensifying, eroding Albertsons\u2019 market share and pricing power, while the company\u2019s higher price positioning is a disadvantage.",
+        "evidence": "Competition from Walmart and H\u2011E\u2011B is pressuring Albertsons amid store closures; Walmart holds 21.2% U.S. grocery market share in 2025; Aldi is opening 180 new stores in 2026; SimplyWallSt update shows weaker earnings, higher price positioning, leadership changes, and execution risks.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Digital Sales & E-commerce Growth",
+        "bull": "Digital sales grew 16% in Q4 FY25 and 13% in Q1 FY26, loyalty members up 12% to 51.2M. Continued investment can sustain high\u2011margin growth, cross\u2011sell opportunities, offset brick\u2011and\u2011mortar headwinds.",
+        "bull_source": {
+          "title": "Document",
+          "url": "https://www.sec.gov/Archives/edgar/data/1646972/000164697226000028/aciq425earningsrelease.htm",
+          "date": ""
+        },
+        "bear": "Digital momentum may stall as competition intensifies; if conversion rates plateau or acquisition costs rise, growth could decelerate, eroding margin advantage.",
+        "bear_source": {
+          "title": "87-year-old retail grocery giant lays off 100s in store closings - TheStreet",
+          "url": "https://www.thestreet.com/retail/87-year-old-retail-grocery-giant-albertsons-layoffs-hundreds-amid-closures",
+          "date": ""
+        },
+        "verdict": "Bull wins because the concrete evidence of strong digital sales growth and expanding loyalty base outweighs the speculative risk of competition pressure.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Post-Merger Restructuring & Cost Discipline",
+        "bull": "ACI Edge program, store closures, workforce reductions expected to cut operating expenses, improve leverage, streamline portfolio, boosting EBITDA to FY2026 guidance.",
+        "bull_source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+          "date": ""
+        },
+        "bear": "If restructuring fails to deliver savings or store closures hurt revenue and market share, identical sales could decline, per\u2011store costs rise, earnings weaker.",
+        "bear_source": {
+          "title": "Digital sales drive growth, engagement for Albertsons in Q1 2026",
+          "url": "https://www.digitalcommerce360.com/article/albertsons-digital-sales/",
+          "date": ""
+        },
+        "verdict": "Bear wins because identical sales declined 0.8% y/y in Q1 FY26 and earnings fell short of consensus, indicating restructuring has not yet delivered the expected benefits.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Debt & Liquidity Risk",
+        "bull": "Net debt $8.95B, debt/EBITDA 2.33x manageable; issued senior notes, dividend payout ratio above 100% indicates confidence.",
+        "bull_source": {
+          "title": "Albertsons stock in hot water after sobering reveal \u2014 StockScreener",
+          "url": "https://stockscreener.finance/en/news/albertsons-stock-in-hot-water-after-sobering-reveal/",
+          "date": ""
+        },
+        "bear": "High leverage (debt\u2011to\u2011equity 230%) and payout ratio >100% expose to covenant breach risk and refinancing challenges.",
+        "bear_source": {
+          "title": "Albertsons Stock Analysis: Is It Worth Buying? | Chart Guys",
+          "url": "https://www.chartguys.com/articles/albertsons-stock",
+          "date": ""
+        },
+        "verdict": "Bear wins because the high debt\u2011to\u2011equity ratio and payout ratio above 100% raise covenant breach risk, outweighing the manageable debt/EBITDA ratio.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Pricing Power & Margin Pressure",
+        "bull": "Despite 25bps margin decline, company can leverage scale and loyalty program to maintain pricing power, offset input cost increases.",
+        "bull_source": {
+          "title": "Albertsons Companies Q4 Earnings Call Highlights",
+          "url": "",
+          "date": ""
+        },
+        "bear": "Intense competition from Walmart, Aldi, price\u2011sensitive consumers, higher input costs could squeeze margins further.",
+        "bear_source": {
+          "title": "87-year-old retail grocery giant lays off 100s in store closings - TheStreet",
+          "url": "https://www.thestreet.com/retail/87-year-old-retail-grocery-giant-albertsons-layoffs-hundreds-amid-closures",
+          "date": ""
+        },
+        "verdict": "Bear wins because margin decline and competition pressure erode pricing power, making the bull\u2019s argument less convincing.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Regulatory & Litigation Exposure",
+        "bull": "Opioid settlement framework accounted for, terminated Kroger merger reducing regulatory uncertainty.",
+        "bull_source": {
+          "title": "Albertsons demands billions from rival Kroger after terminating merger bid | Reuters",
+          "url": "https://www.reuters.com/markets/deals/albertsons-terminates-25-billion-merger-with-kroger-after-regulatory-hurdle-2024-12-11/",
+          "date": ""
+        },
+        "bear": "Ongoing lawsuits, securities investigations, potential regulatory scrutiny could result in fines, reputational damage, increase legal costs.",
+        "bear_source": {
+          "title": "What Albertsons Companies (ACI)'s Earnings Miss, Guidance Cut and Probes Mean For Shareholders - Simply Wall St News",
+          "url": "https://simplywall.st/stocks/us/consumer-retailing/nyse-aci/albertsons-companies/news/what-albertsons-companies-acis-earnings-miss-guidance-cut-an",
+          "date": ""
+        },
+        "verdict": "Bear wins because ongoing investigations and potential fines present significant risk, outweighing the benefit of merger termination.",
+        "verdict_side": "bear"
+      }
+    ],
+    "falsifiers": [
+      "Digital sales growth >20% and loyalty >60M in Q2 FY26",
+      "Net debt/EBITDA <2.0x and payout ratio <80%",
+      "Identical sales rebound >0% y/y in Q2 FY26",
+      "Operating margin improves >5bps",
+      "Regulatory fines <$100M in FY26"
+    ],
+    "confidence": "high",
+    "confidence_why": "The majority of drivers favor the bear side with decisive evidence, and no single driver provides sufficient upside to offset the cumulative headwinds."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "short",
+    "sector_score": -1.63,
+    "sector_why": "svc new orders contracting: Agriculture, Forestry, Fishing & Hunting; svc contraction: Agriculture, Forestry, Fishing & Hunting",
+    "industry_flags": [
+      {
+        "industry": "Retail Trade",
+        "sector": "Consumer Discretionary",
+        "tilt": "long",
+        "score": 0.9,
+        "why": "svc top growth #1: Retail Trade"
+      }
+    ],
+    "respondent_comments": [
+      {
+        "industry": "Agriculture, Forestry, Fishing & Hunting",
+        "quote": "Overall volume of business is slightly down for the year."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The current macro backdrop, marked by expanding ISM manufacturing and services activity, a steepening yield curve, and low market volatility, supports consumer spending and grocery demand, bolstering Albertsons\u2019 end\u2011market demand and modest pricing power. However, the upward\u2011sloping curve and higher borrowing rates are likely to increase financing costs, while commodity price pressures could lift input costs. The company\u2019s aggressive capex plans may be constrained by tighter financing conditions, and the overall environment may strain working capital as margins tighten.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "Expanding ISM PMI and new orders signal stronger consumer spending, boosting grocery sales."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "helps",
+        "why": "Stable demand and low volatility allow modest price increases, supporting margins."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Commodity price inflation and higher demand may raise food and fuel costs, compressing margins."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "hurts",
+        "why": "Steepening yield curve raises long\u2011term borrowing rates, increasing debt service costs."
+      },
+      {
+        "channel": "capex",
+        "direction": "hurts",
+        "why": "Higher financing costs may limit ability to fund $2\u2011$2.2B capex, slowing modernization."
+      },
+      {
+        "channel": "working capital",
+        "direction": "mixed",
+        "why": "Improved demand may boost cash flow, but higher input and financing costs could pressure working capital."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q2 FY2026 earnings release",
+      "window": "June 2026",
+      "expected": "Release of Q2 earnings, guidance for FY2026, potential impact on share price; likely to confirm or revise FY2026 outlook.",
+      "source": {
+        "title": "Albertsons Companies, Inc. - Albertsons\u00ae Companies, Inc. Reports First Quarter Fiscal 2026 Results",
+        "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Inc--Reports-First-Quarter-Fiscal-2026-Results/default.aspx",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q3 FY2026 earnings release",
+      "window": "September 2026",
+      "expected": "Release of Q3 earnings, further guidance, potential adjustment to FY2026 outlook; could affect valuation.",
+      "source": {
+        "title": "Albertsons Companies, Inc. - Albertsons\u00ae Companies, Inc. Reports First Quarter Fiscal 2026 Results",
+        "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Inc--Reports-First-Quarter-Fiscal-2026-Results/default.aspx",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q4 FY2026 earnings release",
+      "window": "December 2026",
+      "expected": "Release of Q4 earnings, final FY2026 results, potential impact on year-end guidance and shareholder returns.",
+      "source": {
+        "title": "Albertsons Companies, Inc. - Albertsons\u00ae Companies, Inc. Reports First Quarter Fiscal 2026 Results",
+        "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2026/Albertsons-Companies-Inc--Reports-First-Quarter-Fiscal-2026-Results/default.aspx",
+        "date": ""
+      }
+    },
+    {
+      "event": "Court ruling on lawsuit vs Kroger for damages",
+      "window": "Q3 2026",
+      "expected": "Court decision on damages claim; could award up to $6B or dismiss claim, affecting cash flow and legal expenses.",
+      "source": {
+        "title": "Albertsons\u2019 $6 Billion Lawsuit Against Kroger Signals a New Chapter in U.S. Grocery Retail \u2013 International Supermarket News",
+        "url": "https://internationalsupermarketnews.com/albertsons-6-billion-lawsuit-against-kroger-signals-a-new-chapter-in-u-s-grocery-retail/",
+        "date": ""
+      }
+    },
+    {
+      "event": "SEC investigation into securities misconduct",
+      "window": "Q4 2026",
+      "expected": "Regulatory action or no action; potential fines, sanctions, or reputational impact.",
+      "source": {
+        "title": "What Albertsons Companies (ACI)'s Earnings Miss, Guidance Cut and Probes Mean For Shareholders - Simply Wall St News",
+        "url": "https://simplywall.st/stocks/us/consumer-retailing/nyse-aci/albertsons-companies/news/what-albertsons-companies-acis-earnings-miss-guidance-cut-an",
+        "date": ""
+      }
+    },
+    {
+      "event": "Share repurchase program activity",
+      "window": "FY2026",
+      "expected": "Execution of $2B share buyback program; reduces shares outstanding, potentially boosting EPS and share price.",
+      "source": {
+        "title": "Albertsons Companies, Inc. - Albertsons Terminates Merger Agreement",
+        "url": "https://www.albertsonscompanies.com/newsroom/press-releases/news-details/2024/Albertsons-Terminates-Merger-Agreement/default.aspx",
+        "date": ""
+      }
+    },
+    {
+      "event": "Dividend increase announcement",
+      "window": "Q3 FY2026",
+      "expected": "Increase dividend per share; signals confidence, may lift share price.",
+      "source": {
+        "title": "Albertsons Companies Q4 Earnings Call Highlights",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Capital expenditures for FY2026",
+      "window": "FY2026",
+      "expected": "Spending of $2-2.2B on modernization and new store openings; impacts cash flow and long-term growth.",
+      "source": {
+        "title": "Albertsons Companies Q4 Earnings Call Highlights",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-q4-earnings-call-145002824.html",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

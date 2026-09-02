@@ -1,0 +1,77 @@
+{
+  "ticker": "WY",
+  "as_of": "2026-08-30T13:35:18.640945+00:00",
+  "earnings_date": "2026-11-01",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.33128,
+    "eps_d30": 0.28904,
+    "eps_d90": 0.30524,
+    "change_30d_pct": 14.61,
+    "change_90d_pct": 8.53,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 4
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.06,
+        "estimate": -0.07756,
+        "surprise_pct": 177.36
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.09,
+        "estimate": -0.13003,
+        "surprise_pct": 30.79
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.11,
+        "estimate": 0.05002,
+        "surprise_pct": 119.91
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.13,
+        "estimate": 0.07804,
+        "surprise_pct": 66.58
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 98.66
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": 6.51
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": -2.16
+      },
+      {
+        "report_date": "2026-02-13",
+        "move_pct": -1.07
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": -2.17
+      }
+    ],
+    "avg_abs_move_pct": 2.98,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +8.5% over 90 days and +14.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 4 down.",
+    "Price reaction to the last 4 reports, most recent first: +6.5%, -2.2%, -1.1%, -2.2% (average absolute move 3.0%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +98.7%."
+  ]
+}

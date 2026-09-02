@@ -1,0 +1,96 @@
+{
+  "ticker": "RBC",
+  "as_of": "2026-08-20T06:44:29.392668+00:00",
+  "earnings_date": "2026-10-30",
+  "implied": {
+    "available": true,
+    "reason": "",
+    "expiry": "2026-11-20",
+    "expiry_covers_earnings": true,
+    "expiries_listed": 5,
+    "spot": 520.54,
+    "strike": 480.0,
+    "strike_offset_pct": -7.79,
+    "implied_move_pct": 29.26,
+    "open_interest": 111,
+    "two_sided_strikes": 23,
+    "strikes": 45,
+    "spread_pct": 17.9,
+    "quote_basis": "mid",
+    "open_interest_missing": false,
+    "thin": false
+  },
+  "revisions": {
+    "available": true,
+    "eps_current": 14.64337,
+    "eps_d30": 14.36744,
+    "eps_d90": 14.01182,
+    "change_30d_pct": 1.92,
+    "change_90d_pct": 4.51,
+    "analysts_up_30d": 5,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.88,
+        "estimate": 2.73467,
+        "surprise_pct": 5.31
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 3.04,
+        "estimate": 2.86257,
+        "surprise_pct": 6.2
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 3.62,
+        "estimate": 3.32045,
+        "surprise_pct": 9.02
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.88,
+        "estimate": 3.42624,
+        "surprise_pct": 13.24
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 8.44
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": -1.88
+      },
+      {
+        "report_date": "2026-05-15",
+        "move_pct": -7.01
+      },
+      {
+        "report_date": "2026-02-05",
+        "move_pct": 0.65
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": 5.43
+      }
+    ],
+    "avg_abs_move_pct": 3.74,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Options price a 29.3% move by 2026-11-20. That is the hurdle this thesis has to clear to pay.",
+    "Consensus EPS for the current year has moved +4.5% over 90 days and +1.9% over 30 days \u2014 expectations are already rising, so that much is priced.",
+    "Analyst revisions in the last 30 days: 5 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.9%, -7.0%, +0.7%, +5.4% (average absolute move 3.7%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +8.4%."
+  ]
+}

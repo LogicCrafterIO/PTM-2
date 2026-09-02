@@ -1,0 +1,1422 @@
+{
+  "ticker": "WWD",
+  "name": "Woodward, Inc.",
+  "sector": "Industrials",
+  "industry": "Electrical Components & Equipment",
+  "as_of": "2026-08-30",
+  "research": {
+    "ticker": "WWD",
+    "as_of": "2026-08-30",
+    "queries_run": [
+      "Woodward Inc WWD latest news this quarter earnings guidance 2026",
+      "Woodward WWD recent customer wins losses Boeing Airbus GE Aviation Pratt Whitney 2024 2025",
+      "Woodward WWD management changes CEO CFO executive departures 2024 2025",
+      "Woodward WWD analyst upgrades downgrades price target sentiment latest",
+      "Woodward WWD supply chain aerospace defense industrial risks bear case 2025",
+      "Woodward WWD competitors Moog Honeywell Parker Hannifin latest moves market share 2025",
+      "Aerospace control systems industry outlook 2026 commercial aircraft production backlog defense spending",
+      "Industrial gas turbine and renewable energy controls market trends 2025 2026",
+      "Woodward WWD regulatory actions ITAR export controls tariffs China latest 2025",
+      "Woodward WWD upcoming catalysts investor day product launches acquisitions 2025 2026"
+    ],
+    "findings": [
+      {
+        "claim": "Q3 FY2026 net sales were $1.109B, up 21% YoY.",
+        "source": {
+          "title": "EdgarFiling",
+          "url": "https://www.sec.gov/Archives/edgar/data/108312/000117184326005009/exh_991.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Q3 FY2026 diluted EPS rose to $2.40, up 36% YoY.",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Q3 FY2026 adjusted EPS increased to $2.52, up 43% YoY.",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Aerospace segment sales reached $709M, up 19% YoY.",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Industrial segment sales hit $401M, up 26% YoY.",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "EBIT for Q3 FY2026 was $208M, up 51% YoY.",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "EBITDA for Q3 FY2026 reached $240M, up 45% YoY.",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Woodward was selected by Airbus to supply the A350 spoiler actuation system for 12 of 14 spoilers, including maintenance and repair services.",
+        "source": {
+          "title": "Airbus Selects Woodward for A350 Flight Control Systems Contract | WWD Stock News",
+          "url": "https://www.stocktitan.net/news/WWD/woodward-selected-by-airbus-as-supplier-for-the-hydraulic-a350-2ma4usqhrxke.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Woodward reported record net sales and earnings for fiscal year 2025, up significantly YoY.",
+        "source": {
+          "title": "Woodward Reports Record Sales & Earnings for Fiscal Year 2025 | Woodward",
+          "url": "https://www.woodward.com/press-release/woodward-reports-record-sales-earnings-for-fiscal-year-2025/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-24"
+      },
+      {
+        "claim": "Woodward signed a definitive agreement to acquire Safran\u2019s electromechanical actuation business in the US, Mexico and Canada.",
+        "source": {
+          "title": "Woodward - Woodward Signs Agreement to Acquire Safran\u2019s Electromechanical Actuation Business Based in North America",
+          "url": "https://ir.woodward.com/news/news-details/2024/Woodward-Signs-Agreement-to-Acquire-Safrans-Electromechanical-Actuation-Business-Based-in-North-America/default.aspx",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2024-12-20"
+      },
+      {
+        "claim": "Woodward completed the acquisition of Safran\u2019s electromechanical actuation business, adding a portfolio for widebody aircraft programs.",
+        "source": {
+          "title": "Woodward Completes Acquisition of Safran's North American Electromechanical Actuation Business | Woodward",
+          "url": "https://www.woodward.com/press-release/woodward-completes-acquisition-of-safrans-north-american-electromechanical-actuation-business/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-07-21"
+      },
+      {
+        "claim": "Woodward\u2019s industrial segment earnings fell to $183\u202fmillion, 14.6% of sales from $230\u202fmillion.",
+        "source": {
+          "title": "Woodward (WWD) Q4 2025 Earnings Call Transcript - The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/WWD/pressreleases/36294873/woodward-wwd-q4-2025-earnings-call-transcript/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-24"
+      },
+      {
+        "claim": "Woodward\u2019s free cash flow is expected to fall below multi\u2011year target due to increased capex for Spartanburg facility and automation investments.",
+        "source": {
+          "title": "Woodward (WWD) Q4 2025 Earnings Call Transcript - The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/WWD/pressreleases/36294873/woodward-wwd-q4-2025-earnings-call-transcript/",
+          "date": ""
+        },
+        "category": "risk",
+        "dated": "2025-11-24"
+      },
+      {
+        "claim": "Shawn McLevige was appointed President of Woodward\u2019s Aerospace Segment effective Oct\u202f1\u202f2025.",
+        "source": {
+          "title": "Woodward - Shawn McLevige Appointed as President of Woodward\u2019s Aerospace Segment",
+          "url": "https://ir.woodward.com/news/news-details/2025/Shawn-McLevige-Appointed-as-President-of-Woodwards-Aerospace-Segment/default.aspx",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-08-12"
+      },
+      {
+        "claim": "Woodward\u2019s FY2025 guidance reflects robust growth for FY2026.",
+        "source": {
+          "title": "Woodward Reports Record Sales & Earnings for Fiscal Year 2025 | Woodward",
+          "url": "https://www.woodward.com/press-release/woodward-reports-record-sales-earnings-for-fiscal-year-2025/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-24"
+      },
+      {
+        "claim": "Q3 net sales up 21.2%, adjusted EPS up 43.2%, gross margin 31.5%",
+        "source": {
+          "title": "Woodward: Do Not Ignore The Aerospace And Power Boom (NASDAQ:WWD) | Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4935439-woodward-do-not-ignore-the-aerospace-and-power-boom",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-08-12"
+      },
+      {
+        "claim": "FY26 EPS guidance $9.30-$9.50",
+        "source": {
+          "title": "Woodward: Do Not Ignore The Aerospace And Power Boom (NASDAQ:WWD) | Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4935439-woodward-do-not-ignore-the-aerospace-and-power-boom",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-08-12"
+      },
+      {
+        "claim": "Shawn McLevige appointed President of Woodward\u2019s Aerospace Segment effective Oct\u202f1\u202f2025",
+        "source": {
+          "title": "EdgarFiling",
+          "url": "https://www.sec.gov/Archives/edgar/data/108312/000117184325005331/exh_991.htm",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-08-12"
+      },
+      {
+        "claim": "Bill Lacey appointed CFO effective May\u202f8\u202f2023",
+        "source": {
+          "title": "News Release Details",
+          "url": "https://newsroom.woodward.com/news/press-release-details/2023/Woodward-Appoints-Bill-Lacey-as-Chief-Financial-Officer/default.aspx",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2023-04-05"
+      },
+      {
+        "claim": "Truist Securities raised price target to $420 from $415",
+        "source": {
+          "title": "WWD Maintained by Truist Securities -- Price Target Raised to $4",
+          "url": "https://www.gurufocus.com/news/9002563/wwd-maintained-by-truist-securities-price-target-raised-to-420",
+          "date": ""
+        },
+        "category": "analyst sentiment",
+        "dated": "2026-08-04"
+      },
+      {
+        "claim": "Wall Street Zen downgraded Woodward to Hold",
+        "source": {
+          "title": "Wall Street Zen Downgrades Woodward (NASDAQ:WWD) to Hold - Defense World",
+          "url": "https://www.defenseworld.net/2026/08/08/wall-street-zen-downgrades-woodward-nasdaqwwd-to-hold.html",
+          "date": ""
+        },
+        "category": "analyst sentiment",
+        "dated": "2026-08-08"
+      },
+      {
+        "claim": "Woodward is a global leader in energy conversion and control solutions for aerospace and industrial markets",
+        "source": {
+          "title": "ANNUAL REPORT 2025Vision. Values. Velocity.",
+          "url": "https://s204.q4cdn.com/731819148/files/doc_financials/2025/ar/WWD25_AR_Full-Book_2025.pdf",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Consensus analyst price target $406.45",
+        "source": {
+          "title": "WWD Stock Price Target | Woodward Analyst Ratings",
+          "url": "https://www.pricetargets.com/NASDAQ/WWD/",
+          "date": ""
+        },
+        "category": "analyst sentiment",
+        "dated": "2026-08-14"
+      },
+      {
+        "claim": "Woodward reported Q4 FY2025 revenue of $996\u202fmillion, up 29% YoY.",
+        "source": {
+          "title": "Woodward (WWD) Q4 2025 Earnings Analysis | Calypso",
+          "url": "https://calypsocopilot.com/blog/wwd-woodward-earnings-q4-2025",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-02-02"
+      },
+      {
+        "claim": "Woodward's Q3 FY2025 net sales were $915\u202fmillion, an 8% YoY increase.",
+        "source": {
+          "title": "Woodward (WWD) Q3 2025 Earnings Call Transcript | The Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2025/08/07/woodward-wwd-q3-2025-earnings-call-transcript/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2025-07-28"
+      },
+      {
+        "claim": "Adjusted EPS for Q3 FY2025 was $1.76, up 8% YoY.",
+        "source": {
+          "title": "Woodward (WWD) Q3 2025 Earnings Call Transcript | The Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2025/08/07/woodward-wwd-q3-2025-earnings-call-transcript/",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2025-07-28"
+      },
+      {
+        "claim": "FY2025 net sales totaled $3.6\u202fbillion, a 7.3% YoY rise.",
+        "source": {
+          "title": "ANNUAL REPORT 2025Vision. Values. Velocity.",
+          "url": "https://doc.morningstar.com/b2d0b794bd818a50132c9248fb059d0a.msdoc/?clientid=fiduk&key=06f7d682c5869576",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": ""
+      },
+      {
+        "claim": "FY2025 free cash flow reached $2.75\u202fbillion, up 12.8% YoY.",
+        "source": {
+          "title": "ANNUAL REPORT 2025Vision. Values. Velocity.",
+          "url": "https://doc.morningstar.com/b2d0b794bd818a50132c9248fb059d0a.msdoc/?clientid=fiduk&key=06f7d682c5869576",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": ""
+      },
+      {
+        "claim": "Zacks raised FY2026 EPS estimate to $9.46 per share.",
+        "source": {
+          "title": "FY2026 EPS Estimates for Woodward Raised by Zacks Research - Defense World",
+          "url": "https://www.defenseworld.net/2026/08/21/fy2026-eps-estimates-for-woodward-raised-by-zacks-research.html",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-08-21"
+      },
+      {
+        "claim": "Q2 FY2025 revenue was $915.4\u202fmillion, 8% YoY growth.",
+        "source": {
+          "title": "WWD Q2 Deep Dive: Aerospace Strength and Commercial Wins Drive Upbeat Guidance - StockStory",
+          "url": "https://stockstory.org/us/stocks/nasdaq/wwd/news/earnings-call/wwd-q2-deep-dive-aerospace-strength-and-commercial-wins-drive-upbeat-guidance",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": ""
+      },
+      {
+        "claim": "Q2 FY2025 adjusted EPS of $1.76 beat estimates by 7.2%.",
+        "source": {
+          "title": "WWD Q2 Deep Dive: Aerospace Strength and Commercial Wins Drive Upbeat Guidance - StockStory",
+          "url": "https://stockstory.org/us/stocks/nasdaq/wwd/news/earnings-call/wwd-q2-deep-dive-aerospace-strength-and-commercial-wins-drive-upbeat-guidance",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": ""
+      },
+      {
+        "claim": "FY2025 consolidated net sales $3.6B, aerospace segment revenue $2.3B, earnings $507M at 21.9% margin.",
+        "source": {
+          "title": "Woodward - Company Analysis and Outlook Report 2026 (Updated)",
+          "url": "https://aviationoutlook.substack.com/p/woodward-company-analysis-outlook-report",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-05-03"
+      },
+      {
+        "claim": "FY2026 Q2 aerospace sales $703M, up 25% YoY, guidance raised to 20\u201123% total sales growth.",
+        "source": {
+          "title": "Woodward - Company Analysis and Outlook Report 2026 (Updated)",
+          "url": "https://aviationoutlook.substack.com/p/woodward-company-analysis-outlook-report",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-05-03"
+      },
+      {
+        "claim": "Q1 2026 revenue grew 23.42% YoY, above competitor average 12.29%.",
+        "source": {
+          "title": "Woodward Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+          "url": "https://csimarket.com/stocks/WWD-Competitors",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": ""
+      },
+      {
+        "claim": "Acquired Safran\u2019s North American electromechanical actuation business and Valve Research & Manufacturing; added $200M greenfield plant.",
+        "source": {
+          "title": "Woodward - Company Analysis and Outlook Report 2026 (Updated)",
+          "url": "https://aviationoutlook.substack.com/p/woodward-company-analysis-outlook-report",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-05-03"
+      },
+      {
+        "claim": "Sold pilot controls product line to Ontic Engineering & Manufacturing.",
+        "source": {
+          "title": "Woodward Announces Agreement to Sell Its Pilot Controls Product Line to Ontic\u00a0Engineering and Manufacturing | Woodward",
+          "url": "https://www.woodward.com/press-release/woodward-announces-agreement-to-sell-its-pilot-controls-product-line-to-ontic-engineering-and-manufacturing/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-04-15"
+      },
+      {
+        "claim": "Aerospace Flight Control System market valued $18.7B in 2026, projected $33.81B by 2035 (CAGR 6.8%).",
+        "source": {
+          "title": "Aerospace Flight Control System Market Size, Share, and Industry Trends Forecast 2026-2036 | MarkWide Research",
+          "url": "https://markwideresearch.com/aerospace-flight-control-system-market",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-05-01"
+      },
+      {
+        "claim": "Commercial aerospace demand remains strong with record order backlogs; supply chain resilience critical.",
+        "source": {
+          "title": "2026 Aerospace and Defense Industry Outlook | Deloitte Insights",
+          "url": "https://www.deloitte.com/us/en/insights/industry/aerospace-defense/aerospace-and-defense-industry-outlook.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Defense spending rising, AI\u2011enabled tools and autonomous systems driving industry growth.",
+        "source": {
+          "title": "Midyear update: 2026 Aerospace and Defense Industry Outlook | Deloitte Insights",
+          "url": "https://www.deloitte.com/us/en/insights/industry/aerospace-defense/midyear-update-aerospace-and-defense-industry-outlook.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "FY 2025 net sales $3.6B, up 7% YoY.",
+        "source": {
+          "title": "Woodward Reports Record Sales & Earnings for Fiscal",
+          "url": "https://s204.q4cdn.com/731819148/files/doc_news/Woodward-Reports-Record-Sales--Earnings-for-Fiscal-Year-2025-2025.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-24"
+      },
+      {
+        "claim": "FY 2025 net earnings $442M, up 19% YoY.",
+        "source": {
+          "title": "Woodward Reports Record Sales & Earnings for Fiscal",
+          "url": "https://s204.q4cdn.com/731819148/files/doc_news/Woodward-Reports-Record-Sales--Earnings-for-Fiscal-Year-2025-2025.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-24"
+      },
+      {
+        "claim": "FY 2025 adjusted net earnings $424M, up 12% YoY.",
+        "source": {
+          "title": "Woodward Reports Record Sales & Earnings for Fiscal",
+          "url": "https://s204.q4cdn.com/731819148/files/doc_news/Woodward-Reports-Record-Sales--Earnings-for-Fiscal-Year-2025-2025.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-24"
+      },
+      {
+        "claim": "Q4 2025 net sales $995M, up 16% YoY.",
+        "source": {
+          "title": "Woodward Reports Record Sales & Earnings for Fiscal",
+          "url": "https://s204.q4cdn.com/731819148/files/doc_news/Woodward-Reports-Record-Sales--Earnings-for-Fiscal-Year-2025-2025.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-24"
+      },
+      {
+        "claim": "Q4 2025 net earnings $138M, up 66% YoY.",
+        "source": {
+          "title": "Woodward Reports Record Sales & Earnings for Fiscal",
+          "url": "https://s204.q4cdn.com/731819148/files/doc_news/Woodward-Reports-Record-Sales--Earnings-for-Fiscal-Year-2025-2025.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-11-24"
+      },
+      {
+        "claim": "Q3 2025 net sales $915M, up 8% YoY.",
+        "source": {
+          "title": "EdgarFiling",
+          "url": "https://www.sec.gov/Archives/edgar/data/108312/000117184325004742/exh_991.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-07-28"
+      },
+      {
+        "claim": "Q3 2025 net earnings $108M, up 6% YoY.",
+        "source": {
+          "title": "EdgarFiling",
+          "url": "https://www.sec.gov/Archives/edgar/data/108312/000117184325004742/exh_991.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-07-28"
+      },
+      {
+        "claim": "Q3 FY2026 revenue estimate $1.11B, 21.73% YoY increase.",
+        "source": {
+          "title": "Woodward to Report Q3 Earnings: Here's What Investors Should Know",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/woodward-report-q3-earnings-heres-140900141.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Woodward, Inc. employs 3,000-4,000 employees, up 10% YoY.",
+        "source": {
+          "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+          "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-23"
+      },
+      {
+        "claim": "Annual revenue is in the $3B-$4B range.",
+        "source": {
+          "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+          "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-23"
+      },
+      {
+        "claim": "Company serves aerospace, defense, industrial, power generation, oil & gas, and transportation sectors.",
+        "source": {
+          "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+          "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-23"
+      },
+      {
+        "claim": "Workforce spans 28 countries, including the US, Poland, Canada, Germany, and India.",
+        "source": {
+          "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+          "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-23"
+      },
+      {
+        "claim": "Total funding of $250M from one prior round.",
+        "source": {
+          "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+          "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-23"
+      },
+      {
+        "claim": "Founded in 1870.",
+        "source": {
+          "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+          "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-23"
+      },
+      {
+        "claim": "Headquartered in Fort Collins, Colorado.",
+        "source": {
+          "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+          "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-23"
+      },
+      {
+        "claim": "Earnings call transcript covers Fiscal Q2 2026.",
+        "source": {
+          "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+          "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-07-23"
+      },
+      {
+        "claim": "Net sales $1.1\u202fbillion, up 21% year\u2011over\u2011year.",
+        "source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "category": "financials",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Adjusted EPS $2.52, up 43% YoY from $1.76.",
+        "source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "category": "financials",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Aerospace segment sales $709\u202fmillion, up 19% YoY.",
+        "source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "category": "financials",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Industrial segment sales $401\u202fmillion, up 26% YoY.",
+        "source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "category": "financials",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Capital expenditures $156\u202fmillion for first nine months.",
+        "source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "category": "financials",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Returned $608\u202fmillion to shareholders first nine months ($553\u202fM repurchases, $55\u202fM dividends).",
+        "source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "category": "financials",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "FY2026 adjusted EPS guidance raised to $9.30\u2013$9.50.",
+        "source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "category": "financials",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Defense OEM sales declined 6% due to one\u2011time revenue recognition adjustment.",
+        "source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "Supply chain disruptions persist, especially with castings, forgings, and rare earth metals.",
+        "source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-29"
+      },
+      {
+        "claim": "On 2026\u201107\u201121, Woodward opened a 3,000\u2011sq\u2011m Glatten, Germany facility, boosting high\u2011speed fuel injection capacity by 50%.",
+        "source": {
+          "title": "Woodward to Report Q3 Earnings: Here's What Investors Should Know",
+          "url": "",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-07-21"
+      }
+    ],
+    "sources": [
+      {
+        "title": "EdgarFiling",
+        "url": "https://www.sec.gov/Archives/edgar/data/108312/000117184326005009/exh_991.htm",
+        "date": ""
+      },
+      {
+        "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+        "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+        "date": ""
+      },
+      {
+        "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+        "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+        "date": ""
+      },
+      {
+        "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+        "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+        "date": ""
+      },
+      {
+        "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+        "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+        "date": ""
+      },
+      {
+        "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+        "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+        "date": ""
+      },
+      {
+        "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+        "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+        "date": ""
+      },
+      {
+        "title": "Airbus Selects Woodward for A350 Flight Control Systems Contract | WWD Stock News",
+        "url": "https://www.stocktitan.net/news/WWD/woodward-selected-by-airbus-as-supplier-for-the-hydraulic-a350-2ma4usqhrxke.html",
+        "date": ""
+      },
+      {
+        "title": "Woodward Reports Record Sales & Earnings for Fiscal Year 2025 | Woodward",
+        "url": "https://www.woodward.com/press-release/woodward-reports-record-sales-earnings-for-fiscal-year-2025/",
+        "date": ""
+      },
+      {
+        "title": "Woodward - Woodward Signs Agreement to Acquire Safran\u2019s Electromechanical Actuation Business Based in North America",
+        "url": "https://ir.woodward.com/news/news-details/2024/Woodward-Signs-Agreement-to-Acquire-Safrans-Electromechanical-Actuation-Business-Based-in-North-America/default.aspx",
+        "date": ""
+      },
+      {
+        "title": "Woodward Completes Acquisition of Safran's North American Electromechanical Actuation Business | Woodward",
+        "url": "https://www.woodward.com/press-release/woodward-completes-acquisition-of-safrans-north-american-electromechanical-actuation-business/",
+        "date": ""
+      },
+      {
+        "title": "Woodward (WWD) Q4 2025 Earnings Call Transcript - The Globe and Mail",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/WWD/pressreleases/36294873/woodward-wwd-q4-2025-earnings-call-transcript/",
+        "date": ""
+      },
+      {
+        "title": "Woodward (WWD) Q4 2025 Earnings Call Transcript - The Globe and Mail",
+        "url": "https://www.theglobeandmail.com/investing/markets/stocks/WWD/pressreleases/36294873/woodward-wwd-q4-2025-earnings-call-transcript/",
+        "date": ""
+      },
+      {
+        "title": "Woodward - Shawn McLevige Appointed as President of Woodward\u2019s Aerospace Segment",
+        "url": "https://ir.woodward.com/news/news-details/2025/Shawn-McLevige-Appointed-as-President-of-Woodwards-Aerospace-Segment/default.aspx",
+        "date": ""
+      },
+      {
+        "title": "Woodward Reports Record Sales & Earnings for Fiscal Year 2025 | Woodward",
+        "url": "https://www.woodward.com/press-release/woodward-reports-record-sales-earnings-for-fiscal-year-2025/",
+        "date": ""
+      },
+      {
+        "title": "Woodward: Do Not Ignore The Aerospace And Power Boom (NASDAQ:WWD) | Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4935439-woodward-do-not-ignore-the-aerospace-and-power-boom",
+        "date": ""
+      },
+      {
+        "title": "Woodward: Do Not Ignore The Aerospace And Power Boom (NASDAQ:WWD) | Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4935439-woodward-do-not-ignore-the-aerospace-and-power-boom",
+        "date": ""
+      },
+      {
+        "title": "EdgarFiling",
+        "url": "https://www.sec.gov/Archives/edgar/data/108312/000117184325005331/exh_991.htm",
+        "date": ""
+      },
+      {
+        "title": "News Release Details",
+        "url": "https://newsroom.woodward.com/news/press-release-details/2023/Woodward-Appoints-Bill-Lacey-as-Chief-Financial-Officer/default.aspx",
+        "date": ""
+      },
+      {
+        "title": "WWD Maintained by Truist Securities -- Price Target Raised to $4",
+        "url": "https://www.gurufocus.com/news/9002563/wwd-maintained-by-truist-securities-price-target-raised-to-420",
+        "date": ""
+      },
+      {
+        "title": "Wall Street Zen Downgrades Woodward (NASDAQ:WWD) to Hold - Defense World",
+        "url": "https://www.defenseworld.net/2026/08/08/wall-street-zen-downgrades-woodward-nasdaqwwd-to-hold.html",
+        "date": ""
+      },
+      {
+        "title": "ANNUAL REPORT 2025Vision. Values. Velocity.",
+        "url": "https://s204.q4cdn.com/731819148/files/doc_financials/2025/ar/WWD25_AR_Full-Book_2025.pdf",
+        "date": ""
+      },
+      {
+        "title": "WWD Stock Price Target | Woodward Analyst Ratings",
+        "url": "https://www.pricetargets.com/NASDAQ/WWD/",
+        "date": ""
+      },
+      {
+        "title": "Woodward (WWD) Q4 2025 Earnings Analysis | Calypso",
+        "url": "https://calypsocopilot.com/blog/wwd-woodward-earnings-q4-2025",
+        "date": ""
+      },
+      {
+        "title": "Woodward (WWD) Q3 2025 Earnings Call Transcript | The Motley Fool",
+        "url": "https://www.fool.com/earnings/call-transcripts/2025/08/07/woodward-wwd-q3-2025-earnings-call-transcript/",
+        "date": ""
+      },
+      {
+        "title": "Woodward (WWD) Q3 2025 Earnings Call Transcript | The Motley Fool",
+        "url": "https://www.fool.com/earnings/call-transcripts/2025/08/07/woodward-wwd-q3-2025-earnings-call-transcript/",
+        "date": ""
+      },
+      {
+        "title": "ANNUAL REPORT 2025Vision. Values. Velocity.",
+        "url": "https://doc.morningstar.com/b2d0b794bd818a50132c9248fb059d0a.msdoc/?clientid=fiduk&key=06f7d682c5869576",
+        "date": ""
+      },
+      {
+        "title": "ANNUAL REPORT 2025Vision. Values. Velocity.",
+        "url": "https://doc.morningstar.com/b2d0b794bd818a50132c9248fb059d0a.msdoc/?clientid=fiduk&key=06f7d682c5869576",
+        "date": ""
+      },
+      {
+        "title": "FY2026 EPS Estimates for Woodward Raised by Zacks Research - Defense World",
+        "url": "https://www.defenseworld.net/2026/08/21/fy2026-eps-estimates-for-woodward-raised-by-zacks-research.html",
+        "date": ""
+      },
+      {
+        "title": "WWD Q2 Deep Dive: Aerospace Strength and Commercial Wins Drive Upbeat Guidance - StockStory",
+        "url": "https://stockstory.org/us/stocks/nasdaq/wwd/news/earnings-call/wwd-q2-deep-dive-aerospace-strength-and-commercial-wins-drive-upbeat-guidance",
+        "date": ""
+      },
+      {
+        "title": "WWD Q2 Deep Dive: Aerospace Strength and Commercial Wins Drive Upbeat Guidance - StockStory",
+        "url": "https://stockstory.org/us/stocks/nasdaq/wwd/news/earnings-call/wwd-q2-deep-dive-aerospace-strength-and-commercial-wins-drive-upbeat-guidance",
+        "date": ""
+      },
+      {
+        "title": "Woodward - Company Analysis and Outlook Report 2026 (Updated)",
+        "url": "https://aviationoutlook.substack.com/p/woodward-company-analysis-outlook-report",
+        "date": ""
+      },
+      {
+        "title": "Woodward - Company Analysis and Outlook Report 2026 (Updated)",
+        "url": "https://aviationoutlook.substack.com/p/woodward-company-analysis-outlook-report",
+        "date": ""
+      },
+      {
+        "title": "Woodward Inc  Comparisons to its Competitors and Market Share - CSIMarket",
+        "url": "https://csimarket.com/stocks/WWD-Competitors",
+        "date": ""
+      },
+      {
+        "title": "Woodward - Company Analysis and Outlook Report 2026 (Updated)",
+        "url": "https://aviationoutlook.substack.com/p/woodward-company-analysis-outlook-report",
+        "date": ""
+      },
+      {
+        "title": "Woodward Announces Agreement to Sell Its Pilot Controls Product Line to Ontic\u00a0Engineering and Manufacturing | Woodward",
+        "url": "https://www.woodward.com/press-release/woodward-announces-agreement-to-sell-its-pilot-controls-product-line-to-ontic-engineering-and-manufacturing/",
+        "date": ""
+      },
+      {
+        "title": "Aerospace Flight Control System Market Size, Share, and Industry Trends Forecast 2026-2036 | MarkWide Research",
+        "url": "https://markwideresearch.com/aerospace-flight-control-system-market",
+        "date": ""
+      },
+      {
+        "title": "2026 Aerospace and Defense Industry Outlook | Deloitte Insights",
+        "url": "https://www.deloitte.com/us/en/insights/industry/aerospace-defense/aerospace-and-defense-industry-outlook.html",
+        "date": ""
+      },
+      {
+        "title": "Midyear update: 2026 Aerospace and Defense Industry Outlook | Deloitte Insights",
+        "url": "https://www.deloitte.com/us/en/insights/industry/aerospace-defense/midyear-update-aerospace-and-defense-industry-outlook.html",
+        "date": ""
+      },
+      {
+        "title": "Woodward Reports Record Sales & Earnings for Fiscal",
+        "url": "https://s204.q4cdn.com/731819148/files/doc_news/Woodward-Reports-Record-Sales--Earnings-for-Fiscal-Year-2025-2025.pdf",
+        "date": ""
+      },
+      {
+        "title": "Woodward Reports Record Sales & Earnings for Fiscal",
+        "url": "https://s204.q4cdn.com/731819148/files/doc_news/Woodward-Reports-Record-Sales--Earnings-for-Fiscal-Year-2025-2025.pdf",
+        "date": ""
+      },
+      {
+        "title": "Woodward Reports Record Sales & Earnings for Fiscal",
+        "url": "https://s204.q4cdn.com/731819148/files/doc_news/Woodward-Reports-Record-Sales--Earnings-for-Fiscal-Year-2025-2025.pdf",
+        "date": ""
+      },
+      {
+        "title": "Woodward Reports Record Sales & Earnings for Fiscal",
+        "url": "https://s204.q4cdn.com/731819148/files/doc_news/Woodward-Reports-Record-Sales--Earnings-for-Fiscal-Year-2025-2025.pdf",
+        "date": ""
+      },
+      {
+        "title": "Woodward Reports Record Sales & Earnings for Fiscal",
+        "url": "https://s204.q4cdn.com/731819148/files/doc_news/Woodward-Reports-Record-Sales--Earnings-for-Fiscal-Year-2025-2025.pdf",
+        "date": ""
+      },
+      {
+        "title": "EdgarFiling",
+        "url": "https://www.sec.gov/Archives/edgar/data/108312/000117184325004742/exh_991.htm",
+        "date": ""
+      },
+      {
+        "title": "EdgarFiling",
+        "url": "https://www.sec.gov/Archives/edgar/data/108312/000117184325004742/exh_991.htm",
+        "date": ""
+      },
+      {
+        "title": "Woodward to Report Q3 Earnings: Here's What Investors Should Know",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/woodward-report-q3-earnings-heres-140900141.html",
+        "date": ""
+      },
+      {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      },
+      {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      },
+      {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      },
+      {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      },
+      {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      },
+      {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      },
+      {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      },
+      {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [
+      {
+        "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/woodward-inc-wwd-q3-2026-050234370.html",
+        "date": ""
+      },
+      {
+        "title": "Woodward to Report Q3 Earnings: Here's What Investors Should Know",
+        "url": "https://seekingalpha.com/article/4935439-woodward-do-not-ignore-the-aerospace-and-power-boom",
+        "date": ""
+      }
+    ],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "cautious",
+    "thesis": "Woodward\u2019s recent aerospace backlog expansion and strong management execution provide tailwinds, but industrial margin erosion, aggressive capex that threatens free cash flow, and persistent supply\u2011chain constraints create headwinds that outweigh the positives, leading to a cautious outlook.",
+    "drivers": [
+      {
+        "name": "Aerospace Order Backlog & Pricing Power",
+        "direction": "tailwind",
+        "evidence": "Airbus A350 spoiler contract and Safran acquisition boost backlog and pricing power",
+        "source": {
+          "title": "EdgarFiling",
+          "url": "https://www.sec.gov/Archives/edgar/data/108312/000117184326005009/exh_991.htm",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Bull side won with clear revenue and margin upside"
+      },
+      {
+        "name": "Industrial Segment Growth & Profitability",
+        "direction": "headwind",
+        "evidence": "Industrial earnings fell to $183M, 14.6% of sales, indicating margin pressure",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "fundamentals",
+        "score_why": "Bear side won with evidence of earnings decline"
+      },
+      {
+        "name": "Capex & Cash Flow Impact",
+        "direction": "headwind",
+        "evidence": "Free cash flow projected below target due to $156M capex in first nine months",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "risk",
+        "score_why": "Bear side won with clear liquidity strain"
+      },
+      {
+        "name": "Management Execution & Integration Risk",
+        "direction": "tailwind",
+        "evidence": "Successful Safran integration and appointment of experienced leaders",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "competitive",
+        "score_why": "Bull side won with evidence of execution capability"
+      },
+      {
+        "name": "Supply Chain Constraints & Input Cost Inflation",
+        "direction": "headwind",
+        "evidence": "Persistent supply\u2011chain disruptions and cost inflation risk margin compression",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "risk",
+        "score_why": "Bear side won with documented supply\u2011chain risk"
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "Woodward\u2019s Q3 FY2026 revenue surged 21% YoY to $1.109B, underscoring robust top\u2011line momentum.",
+        "evidence": "Finding [1] and [56]",
+        "source": {
+          "title": "EdgarFiling",
+          "url": "https://www.sec.gov/Archives/edgar/data/108312/000117184326005009/exh_991.htm",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Diluted EPS rose 36% YoY to $2.40 and adjusted EPS jumped 43% YoY to $2.52, reflecting strong profitability and earnings quality.",
+        "evidence": "Findings [2], [3], [57]",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Aerospace sales grew 19% YoY to $709M while industrial sales climbed 26% YoY to $401M, showing diversified and expanding demand across both segments.",
+        "evidence": "Findings [4], [5], [58], [59]",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "EBIT increased 51% YoY to $208M and EBITDA grew 45% YoY to $240M, indicating margin expansion and operational efficiency.",
+        "evidence": "Findings [6], [7]",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The acquisition of Safran\u2019s electromechanical actuation business (US, Mexico, Canada) added a portfolio for widebody aircraft programs, expanding product offerings and market share.",
+        "evidence": "Findings [10], [11], [35]",
+        "source": {
+          "title": "Woodward - Woodward Signs Agreement to Acquire Safran\u2019s Electromechanical Actuation Business Based in North America",
+          "url": "https://ir.woodward.com/news/news-details/2024/Woodward-Signs-Agreement-to-Acquire-Safrans-Electromechanical-Actuation-Business-Based-in-North-America/default.aspx",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Securing Airbus\u2019s A350 spoiler actuation system for 12 of 14 spoilers, plus maintenance and repair services, demonstrates strong OEM relationships and recurring revenue streams.",
+        "evidence": "Finding [8]",
+        "source": {
+          "title": "Airbus Selects Woodward for A350 Flight Control Systems Contract | WWD Stock News",
+          "url": "https://www.stocktitan.net/news/WWD/woodward-selected-by-airbus-as-supplier-for-the-hydraulic-a350-2ma4usqhrxke.html",
+          "date": ""
+        },
+        "strength": "strong"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Woodward\u2019s free cash flow is projected to fall below multi\u2011year targets because of aggressive capital expenditures, including $156\u202fmillion in capex for the first nine months of FY26.",
+        "evidence": "Free cash flow expected to fall below target due to increased capex; capex $156\u202fmillion for first nine months.",
+        "source": {
+          "title": "Woodward (WWD) Q4 2025 Earnings Call Transcript - The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/WWD/pressreleases/36294873/woodward-wwd-q4-2025-earnings-call-transcript/",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Ongoing supply\u2011chain disruptions\u2014particularly in castings, forgings and rare\u2011earth metals\u2014are likely to constrain production and erode margins.",
+        "evidence": "Supply chain disruptions persist, especially with castings, forgings, and rare earth metals.",
+        "source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Defense OEM sales declined 6% in Q3 FY26, reflecting a one\u2011time revenue recognition adjustment and signaling potential weakness in the defense end\u2011market.",
+        "evidence": "Defense OEM sales declined 6% due to one\u2011time revenue recognition adjustment.",
+        "source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Industrial segment earnings dropped to $183\u202fmillion, only 14.6% of sales, indicating margin erosion in a key growth area.",
+        "evidence": "Industrial segment earnings fell to $183\u202fmillion, 14.6% of sales from $230\u202fmillion.",
+        "source": {
+          "title": "Woodward (WWD) Q4 2025 Earnings Call Transcript - The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/WWD/pressreleases/36294873/woodward-wwd-q4-2025-earnings-call-transcript/",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Aerospace sales account for roughly 64% of Woodward\u2019s Q3 FY26 revenue, exposing the company to high concentration risk if the commercial or defense aerospace markets soften.",
+        "evidence": "Aerospace segment sales reached $709\u202fmillion out of $1.109\u202fbillion net sales.",
+        "source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "The acquisition of Safran\u2019s electromechanical actuation business adds integration costs and potential debt, increasing financial risk.",
+        "evidence": "Woodward signed a definitive agreement to acquire Safran\u2019s electromechanical actuation business and completed the acquisition, adding a portfolio for widebody aircraft programs.",
+        "source": {
+          "title": "Woodward - Woodward Signs Agreement to Acquire Safran\u2019s Electromechanical Actuation Business Based in North America",
+          "url": "https://ir.woodward.com/news/news-details/2024/Woodward-Signs-Agreement-to-Acquire-Safrans-Electromechanical-Actuation-Business-Based-in-North-America/default.aspx",
+          "date": ""
+        },
+        "severity": "material"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Aerospace Order Backlog & Pricing Power",
+        "bull": "Woodward\u2019s recent Airbus contract for 12 of 14 A350 spoilers and the Safran electromechanical actuation acquisition add significant widebody program exposure, supporting strong order backlogs and pricing power that can drive revenue and margin expansion.",
+        "bull_source": {
+          "title": "Airbus Selects Woodward for A350 Flight Control Systems Contract | WWD Stock News",
+          "url": "https://www.stocktitan.net/news/WWD/woodward-selected-by-airbus-as-supplier-for-the-hydraulic-a350-2ma4usqhrxke.html",
+          "date": ""
+        },
+        "bear": "Supply\u2011chain constraints (castings, forgings, rare\u2011earth metals) and potential slowdown in commercial aerospace demand could erode backlogs and compress pricing, limiting growth and margin improvement.",
+        "bear_source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "verdict": "Bull wins because the company has secured a large Airbus contract and completed a strategic Safran acquisition, driving robust sales growth (21% YoY) and a healthy gross margin of 31.5%, which outweighs the supply\u2011chain risk. The evidence of strong backlog and pricing power is more decisive than the potential slowdown.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Industrial Segment Growth & Profitability",
+        "bull": "Industrial sales rose 26% YoY, indicating diversification beyond aerospace and providing a stable revenue base that can cushion cyclical aerospace downturns.",
+        "bull_source": {
+          "title": "Woodward posts strong Q3 2026 results, lifts EPS | WWD 8-K Filing",
+          "url": "https://www.stocktitan.net/sec-filings/WWD/8-k-woodward-inc-reports-material-event-adf9dbc969d9.html",
+          "date": ""
+        },
+        "bear": "Industrial earnings represent only 14.6% of sales and have margin pressure; intensified competition and lower profitability could offset revenue gains and dilute overall earnings.",
+        "bear_source": {
+          "title": "Woodward (WWD) Q4 2025 Earnings Call Transcript - The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/WWD/pressreleases/36294873/woodward-wwd-q4-2025-earnings-call-transcript/",
+          "date": ""
+        },
+        "verdict": "Bear wins because industrial earnings fell to $183\u202fmillion, 14.6% of sales, indicating margin pressure despite sales growth. The earnings decline outweighs the revenue increase, showing that profitability is not improving.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Capex & Cash Flow Impact",
+        "bull": "Strategic capex (Spartanburg facility, German plant, automation) expands capacity and supports future product innovation, positioning Woodward for long\u2011term growth.",
+        "bull_source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "bear": "High capex commitments strain free cash flow and working capital, potentially reducing dividend payouts and limiting financial flexibility amid rising input costs.",
+        "bear_source": {
+          "title": "Woodward (WWD) Q4 2025 Earnings Call Transcript - The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/WWD/pressreleases/36294873/woodward-wwd-q4-2025-earnings-call-transcript/",
+          "date": ""
+        },
+        "verdict": "Bear wins because the company\u2019s free cash flow is expected to fall below its multi\u2011year target due to increased capex, indicating a strain on liquidity that outweighs the potential long\u2011term benefits of the investments.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Management Execution & Integration Risk",
+        "bull": "Appointment of experienced leaders (President of Aerospace, CFO) and successful integration of Safran assets suggest strong execution capability and potential synergy realization.",
+        "bull_source": {
+          "title": "Woodward - Shawn McLevige Appointed as President of Woodward\u2019s Aerospace Segment",
+          "url": "https://ir.woodward.com/news/news-details/2025/Shawn-McLevige-Appointed-as-President-of-Woodwards-Aerospace-Segment/default.aspx",
+          "date": ""
+        },
+        "bear": "Integration of acquisitions and execution of new initiatives carry execution risk; delays or cost overruns could impair expected benefits and erode shareholder value.",
+        "bear_source": {
+          "title": "Woodward (WWD) Q4 2025 Earnings Call Transcript - The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/WWD/pressreleases/36294873/woodward-wwd-q4-2025-earnings-call-transcript/",
+          "date": ""
+        },
+        "verdict": "Bull wins because the company has successfully integrated Safran assets and appointed seasoned leaders, with no evidence of significant delays or overruns, indicating strong execution capability.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Supply Chain Constraints & Input Cost Inflation",
+        "bull": "Woodward\u2019s diversified global manufacturing footprint and focus on OEM relationships can mitigate supply\u2011chain disruptions, preserving margins amid input cost pressures.",
+        "bull_source": {
+          "title": "Woodward: Do Not Ignore The Aerospace And Power Boom (NASDAQ:WWD) | Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4935439-woodward-do-not-ignore-the-aerospace-and-power-boom",
+          "date": ""
+        },
+        "bear": "Persistent supply\u2011chain disruptions, especially for rare\u2011earth metals and forged components, could increase costs and compress gross margins, challenging profitability.",
+        "bear_source": {
+          "title": "Woodward Inc (WWD) (Q3 2026) Earnings Call Highlights: Record Sales and EPS Growth Amid Supply ...",
+          "url": "",
+          "date": ""
+        },
+        "verdict": "Bear wins because supply\u2011chain disruptions are documented and represent a real risk that could erode margins, outweighing the company\u2019s mitigation claims. The risk of cost inflation remains significant.",
+        "verdict_side": "bear"
+      }
+    ],
+    "falsifiers": [
+      "Free cash flow remains above multi\u2011year target despite capex",
+      "Industrial segment margin improves to >20% of sales",
+      "Supply\u2011chain disruptions resolve and input cost inflation stabilizes"
+    ],
+    "confidence": "medium",
+    "confidence_why": "Evidence is mixed; tailwinds are offset by significant headwinds, but no single driver dominates decisively"
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "neutral",
+    "sector_score": 0.15,
+    "sector_why": "mfg new orders growing: Electrical Equipment, Appliances & Components; mfg new orders growing: Printing & Related Support Activities; mfg new orders growing: Machinery",
+    "industry_flags": [
+      {
+        "industry": "Electrical Equipment, Appliances & Components",
+        "sector": "Industrials",
+        "tilt": "long",
+        "score": 0.6000000000000001,
+        "why": "mfg top growth #3: Electrical Equipment, Appliances & Components"
+      }
+    ],
+    "respondent_comments": [
+      {
+        "industry": "Machinery",
+        "quote": "Now that it seems the buildout of AI infrastructure globally is nearing real activation, products going into data centers are at full procurement and manufacturing ramp-up. Thus, demand for our semiconductor end products and connectivity (power, networking and photonics) is booming. Similarly, defense is at an all-time high, with most of our product orders going to these two industries. Order volumes for medical, industrial and consumer products are markedly lower."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Aerospace and defense demand continues to be strong and growing, based on business backlogs. Competing for scare supply \u2014 electronics, certain critical minerals and other categories \u2014 is challenging on-time fulfillment for our supply chains. This is expected to get worse with co-dependent sectors also remaining strong and restocking challenges for automotive electronics."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Continued tariffs on products utilized in our product lines are being monitored by the business, which is working to mitigate or limit tariff risk. Geopolitical risk, especially in the Middle East, pertaining to commodity and energy markets remains a concern. There has been some increased cost and transit time for rerouted shipments due to conflicts in the Red Sea, Strait of Hormuz and Suez Canal."
+      },
+      {
+        "industry": "Fabricated Metal Products",
+        "quote": "Business is still solid; we will increase revenue by 3 percent to 5 percent. We are considering foreign steel purchases for early next year because domestic steel mills are getting greedy."
+      },
+      {
+        "industry": "Electrical Equipment, Appliances & Components",
+        "quote": "The pricing volatility and lead-time extensions in this market are arguably worse than the pandemic era. During COVID-19, we saw a surge of price hikes and inventory buy-ups, which caused constraints that eventually leveled out. We are seeing nothing but consistent upward trends for both pricing and lead times that show no signs of slowing down. Specifically, 5-percent to 25-percent price increases for printed circuit board assembly components and 15-percent to 45-percent increases for bare boards are negatively impacting customer demand outlook into next year. This isn\u2019t sustainable."
+      },
+      {
+        "industry": "Construction",
+        "quote": "Sales continue to slide despite increased discounts. Mounting cost pressures from all fronts."
+      },
+      {
+        "industry": "Management of Companies & Support Services",
+        "quote": "Business is starting to pick up especially with smaller firms. Just hope it keeps improving."
+      },
+      {
+        "industry": "Transportation & Warehousing",
+        "quote": "Conditions are largely unchanged from last month. The exception is pricing, which continues to rise, driven mainly by fuel and labor costs. Demand remains stable."
+      },
+      {
+        "industry": "Wholesale Trade",
+        "quote": "Business is more robust than expected, considering some of the economic headwinds still plaguing the industry. Lumber supply is tighter, and freight rates and availability are challenges. Many of our builders are pushing back hard on price increases. However, the outlook is favorable for the remainder of 2026."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The current macro backdrop of robust ISM manufacturing expansion, rising new orders, and a healthy yield curve signals strong end\u2011market demand for Woodward\u2019s aerospace and industrial control solutions, especially as AI infrastructure and defense procurement ramp up.  This demand, coupled with sizable order backlogs, supports pricing power and revenue growth, but supply\u2011chain constraints and higher input costs from rare\u2011earth metals and forged components will pressure margins.  Simultaneously, the company\u2019s aggressive capex plans for new facilities and automation investments will strain working capital and free cash flow, while the modestly upward\u2011sloping yield curve keeps financing costs relatively stable.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "Expanding ISM new orders and AI data\u2011center buildout boost demand for Woodward\u2019s aerospace and industrial control products."
+      },
+      {
+        "channel": "order backlog",
+        "direction": "helps",
+        "why": "Strong aerospace and defense backlogs provide a reliable revenue pipeline and support future sales."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Supply\u2011chain disruptions and higher prices for castings, forgings, and rare\u2011earth metals increase production costs."
+      },
+      {
+        "channel": "capex",
+        "direction": "hurts",
+        "why": "Capital expenditures for new facilities and automation are rising, tightening cash flow."
+      },
+      {
+        "channel": "working capital",
+        "direction": "hurts",
+        "why": "Higher capex and inventory buildup from expanding orders strain working\u2011capital balances."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "mixed",
+        "why": "An upward\u2011sloping yield curve modestly raises borrowing rates, but Woodward\u2019s strong credit profile mitigates the impact."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q1 2026 earnings call",
+      "window": "Q1 2026 (first quarter of FY2026)",
+      "expected": "Woodward will report Q1 2026 financial results, likely exceeding prior guidance due to strong aerospace demand and new facility capacity. Guidance for FY2026 may be updated upward.",
+      "source": {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q2 2026 earnings call",
+      "window": "Q2 2026 (second quarter of FY2026)",
+      "expected": "Woodward will report Q2 2026 financial results, expected to continue strong growth in aerospace and industrial segments. Guidance for FY2026 may be reaffirmed or adjusted.",
+      "source": {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q3 2026 earnings call",
+      "window": "Q3 2026 (third quarter of FY2026)",
+      "expected": "Woodward will report Q3 2026 financial results, likely surpassing expectations given record sales and earnings. FY2026 EPS guidance may be confirmed or revised.",
+      "source": {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q4 2026 earnings call",
+      "window": "Q4 2026 (fourth quarter of FY2026)",
+      "expected": "Woodward will report Q4 2026 financial results, expected to maintain momentum in aerospace sales and potentially provide final FY2026 guidance. Free cash flow outlook may be updated.",
+      "source": {
+        "title": "WWD Earnings Call Transcript \u2014 Fiscal Q2 2026",
+        "url": "https://exa.ai/library/markets/stocks/WWD/earnings/FY2026/Q2/transcript",
+        "date": ""
+      }
+    },
+    {
+      "event": "Opening of Glatten, Germany facility",
+      "window": "2026-07-21",
+      "expected": "The new 3,000\u2011sq\u2011m facility will boost high\u2011speed fuel injection capacity by 50%, enabling Woodward to meet growing aerospace demand and potentially increase aerospace segment sales.",
+      "source": {
+        "title": "Woodward to Report Q3 Earnings: Here's What Investors Should Know",
+        "url": "",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

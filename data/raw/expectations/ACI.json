@@ -1,0 +1,77 @@
+{
+  "ticker": "ACI",
+  "as_of": "2026-08-30T13:53:13.223528+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.79259,
+    "eps_d30": 2.27461,
+    "eps_d90": 2.28786,
+    "change_30d_pct": -21.19,
+    "change_90d_pct": -21.65,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 17
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 0.44,
+        "estimate": 0.39798,
+        "surprise_pct": 10.56
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 0.72,
+        "estimate": 0.6818,
+        "surprise_pct": 5.6
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 0.48,
+        "estimate": 0.43972,
+        "surprise_pct": 9.16
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 0.42,
+        "estimate": 0.53842,
+        "surprise_pct": -21.99
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 0.83
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-28",
+        "move_pct": 1.85
+      },
+      {
+        "report_date": "2026-04-27",
+        "move_pct": -0.3
+      },
+      {
+        "report_date": "2026-01-07",
+        "move_pct": -5.96
+      },
+      {
+        "report_date": "2025-10-14",
+        "move_pct": 13.63
+      }
+    ],
+    "avg_abs_move_pct": 5.44,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -21.6% over 90 days and -21.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 17 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.9%, -0.3%, -6.0%, +13.6% (average absolute move 5.4%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +0.8%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "KNX",
+  "as_of": "2026-09-02T13:49:20.454528+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.31441,
+    "eps_d30": 2.31441,
+    "eps_d90": 1.87176,
+    "change_30d_pct": 0.0,
+    "change_90d_pct": 23.65,
+    "analysts_up_30d": 16,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.32,
+        "estimate": 0.36846,
+        "surprise_pct": -13.15
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.31,
+        "estimate": 0.35473,
+        "surprise_pct": -12.61
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.09,
+        "estimate": 0.15808,
+        "surprise_pct": -43.07
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.63,
+        "estimate": 0.51416,
+        "surprise_pct": 22.53
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -11.57
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": 1.25
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": -3.31
+      },
+      {
+        "report_date": "2026-02-19",
+        "move_pct": -0.25
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": 1.67
+      }
+    ],
+    "avg_abs_move_pct": 1.62,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +23.6% over 90 days and +0.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 16 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.2%, -3.3%, -0.2%, +1.7% (average absolute move 1.6%, 2 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -11.6%."
+  ]
+}

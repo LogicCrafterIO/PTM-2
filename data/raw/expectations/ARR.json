@@ -1,0 +1,77 @@
+{
+  "ticker": "ARR",
+  "as_of": "2026-08-30T13:51:08.918549+00:00",
+  "earnings_date": "2026-10-21",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.91287,
+    "eps_d30": 2.92682,
+    "eps_d90": 2.93016,
+    "change_30d_pct": -0.48,
+    "change_90d_pct": -0.59,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.72,
+        "estimate": 0.78815,
+        "surprise_pct": -8.65
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.71,
+        "estimate": 0.76858,
+        "surprise_pct": -7.62
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.76,
+        "estimate": 0.7388,
+        "surprise_pct": 2.87
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.72,
+        "estimate": 0.72048,
+        "surprise_pct": -0.07
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -3.37
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-22",
+        "move_pct": -0.3
+      },
+      {
+        "report_date": "2026-04-22",
+        "move_pct": 0.63
+      },
+      {
+        "report_date": "2026-02-18",
+        "move_pct": -0.56
+      },
+      {
+        "report_date": "2025-10-22",
+        "move_pct": 0.51
+      }
+    ],
+    "avg_abs_move_pct": 0.5,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.6% over 90 days and -0.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 5 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.3%, +0.6%, -0.6%, +0.5% (average absolute move 0.5%, 2 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -3.4%."
+  ]
+}

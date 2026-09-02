@@ -1,0 +1,77 @@
+{
+  "ticker": "ECHO",
+  "as_of": "2026-08-30T14:13:15.007772+00:00",
+  "earnings_date": "2026-11-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 39.335,
+    "eps_d30": -3.02081,
+    "eps_d90": -3.02081,
+    "change_30d_pct": -1402.13,
+    "change_90d_pct": -1402.13,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": -1.1924,
+        "estimate": -1.21643,
+        "surprise_pct": 1.98
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.3712,
+        "estimate": -0.64644,
+        "surprise_pct": 42.58
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.7087,
+        "estimate": -1.22374,
+        "surprise_pct": 42.09
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.135,
+        "estimate": 2.62042,
+        "surprise_pct": -94.85
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": -2.05
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-03",
+        "move_pct": 1.83
+      },
+      {
+        "report_date": "2026-05-11",
+        "move_pct": 1.57
+      },
+      {
+        "report_date": "2026-03-02",
+        "move_pct": 2.73
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -2.31
+      }
+    ],
+    "avg_abs_move_pct": 2.11,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -1402.1% over 90 days and -1402.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.8%, +1.6%, +2.7%, -2.3% (average absolute move 2.1%, 1 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise -2.0%."
+  ]
+}

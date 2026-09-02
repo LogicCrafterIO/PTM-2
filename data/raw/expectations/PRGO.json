@@ -1,0 +1,77 @@
+{
+  "ticker": "PRGO",
+  "as_of": "2026-08-30T13:48:50.809903+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.18825,
+    "eps_d30": 2.108,
+    "eps_d90": 2.108,
+    "change_30d_pct": 3.81,
+    "change_90d_pct": 3.81,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.8,
+        "estimate": 0.76993,
+        "surprise_pct": 3.91
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.77,
+        "estimate": 0.78,
+        "surprise_pct": -1.28
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.43,
+        "estimate": 0.30678,
+        "surprise_pct": 40.17
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.5,
+        "estimate": 0.355,
+        "surprise_pct": 40.85
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 20.91
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": 23.1
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": 5.33
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": -1.53
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": -25.21
+      }
+    ],
+    "avg_abs_move_pct": 13.79,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.8% over 90 days and +3.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +23.1%, +5.3%, -1.5%, -25.2% (average absolute move 13.8%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +20.9%."
+  ]
+}

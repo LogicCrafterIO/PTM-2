@@ -1,0 +1,77 @@
+{
+  "ticker": "DLR",
+  "as_of": "2026-08-30T13:34:01.150642+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.35176,
+    "eps_d30": 2.61442,
+    "eps_d90": 2.96922,
+    "change_30d_pct": 28.2,
+    "change_90d_pct": 12.88,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.33703,
+        "estimate": 0.23,
+        "surprise_pct": 46.53
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.3986,
+        "estimate": 0.39,
+        "surprise_pct": 2.21
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.46,
+        "estimate": 0.44786,
+        "surprise_pct": 2.71
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.6205,
+        "estimate": 0.73,
+        "surprise_pct": -15.0
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 9.11
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": -2.42
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": -0.12
+      },
+      {
+        "report_date": "2026-02-13",
+        "move_pct": 0.37
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": -0.2
+      }
+    ],
+    "avg_abs_move_pct": 0.78,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +12.9% over 90 days and +28.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -2.4%, -0.1%, +0.4%, -0.2% (average absolute move 0.8%, 3 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +9.1%."
+  ]
+}

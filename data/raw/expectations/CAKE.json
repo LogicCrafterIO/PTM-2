@@ -1,0 +1,77 @@
+{
+  "ticker": "CAKE",
+  "as_of": "2026-09-02T13:49:14.615794+00:00",
+  "earnings_date": "2026-11-02",
+  "revisions": {
+    "available": true,
+    "eps_current": 4.48758,
+    "eps_d30": 4.49353,
+    "eps_d90": 4.03519,
+    "change_30d_pct": -0.13,
+    "change_90d_pct": 11.21,
+    "analysts_up_30d": 15,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.68,
+        "estimate": 0.60158,
+        "surprise_pct": 13.04
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.0,
+        "estimate": 0.98556,
+        "surprise_pct": 1.47
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.05,
+        "estimate": 1.01459,
+        "surprise_pct": 3.49
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.44,
+        "estimate": 1.18119,
+        "surprise_pct": 21.91
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 9.98
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-03",
+        "move_pct": 3.42
+      },
+      {
+        "report_date": "2026-05-04",
+        "move_pct": -1.51
+      },
+      {
+        "report_date": "2026-02-23",
+        "move_pct": 0.65
+      },
+      {
+        "report_date": "2025-11-03",
+        "move_pct": -4.66
+      }
+    ],
+    "avg_abs_move_pct": 2.56,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +11.2% over 90 days and -0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 15 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +3.4%, -1.5%, +0.7%, -4.7% (average absolute move 2.6%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +10.0%."
+  ]
+}

@@ -1,0 +1,1378 @@
+{
+  "ticker": "BLK",
+  "name": "BlackRock",
+  "sector": "Financials",
+  "industry": "Asset Management & Custody Banks",
+  "as_of": "2026-08-30",
+  "research": {
+    "ticker": "BLK",
+    "as_of": "2026-08-30",
+    "queries_run": [
+      "BlackRock latest news this quarter 2025 management changes CEO succession",
+      "BlackRock customer wins losses institutional mandates RFP 2025 pension fund outflows",
+      "BlackRock regulatory actions SEC DOJ antitrust ESG voting proxy advisory 2025",
+      "BlackRock analyst sentiment earnings estimates price target upgrades downgrades 2025",
+      "BlackRock upcoming catalysts 2025 2026 investor day product launches shareholder meeting",
+      "BlackRock biggest risk bear case AUM outflows fee compression ETF price war 2025",
+      "BlackRock competitors Vanguard State Street latest AUM flows ETF market share 2025",
+      "Asset management industry trends 2025 passive vs active flows alternatives digital assets tokenization",
+      "BlackRock Bitcoin ETF IBIT flows latest this quarter 2025 spot crypto regulation",
+      "BlackRock Aladdin technology platform deals competitors SimCorp State Street latest 2025"
+    ],
+    "findings": [
+      {
+        "claim": "Q3 2025 revenue grew 25% YoY, driven by markets, 8% organic base fee growth, GIP/HPS fees, and higher tech services.",
+        "source": {
+          "title": "BlackRock Reports Third Quarter 2025 Diluted EPS | BlackRock",
+          "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2025",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-10-14"
+      },
+      {
+        "claim": "Quarterly total net inflows hit $205B, led by record iShares ETF quarter.",
+        "source": {
+          "title": "BlackRock Reports Third Quarter 2025 Diluted EPS | BlackRock",
+          "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2025",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-10-14"
+      },
+      {
+        "claim": "Q3 2025 assets under management reached record $13.46T, up from $11.48T a year earlier.",
+        "source": {
+          "title": "Stocks: BlackRock\u2019s assets hit record US$13.46 trillion",
+          "url": "https://www.bnnbloomberg.ca/business/2025/10/14/blackrocks-assets-hit-record-us1346-trillion-on-third-quarter-markets-rally/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-10-14"
+      },
+      {
+        "claim": "Net inflows for Q3 2025 totaled $171B, driven by ETF business.",
+        "source": {
+          "title": "Stocks: BlackRock\u2019s assets hit record US$13.46 trillion",
+          "url": "https://www.bnnbloomberg.ca/business/2025/10/14/blackrocks-assets-hit-record-us1346-trillion-on-third-quarter-markets-rally/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-10-14"
+      },
+      {
+        "claim": "Adjusted earnings for Q3 2025 were $1.91B, or $11.55 per share, up from $1.72B.",
+        "source": {
+          "title": "Stocks: BlackRock\u2019s assets hit record US$13.46 trillion",
+          "url": "https://www.bnnbloomberg.ca/business/2025/10/14/blackrocks-assets-hit-record-us1346-trillion-on-third-quarter-markets-rally/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-10-14"
+      },
+      {
+        "claim": "Q3 2025 saw 10% annualized organic base fee growth across iShares ETFs, systematic active equities, private markets, outsourcing, and cash.",
+        "source": {
+          "title": "BlackRock Reports Third Quarter 2025 Diluted EPS | BlackRock",
+          "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2025",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-10-14"
+      },
+      {
+        "claim": "Over the last 12 months, BlackRock achieved 8% organic base fee growth.",
+        "source": {
+          "title": "BlackRock Reports Third Quarter 2025 Diluted EPS | BlackRock",
+          "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2025",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-10-14"
+      },
+      {
+        "claim": "On Sep 3 2025, BlackRock lost a \u20ac14.5B ($17B) mandate with Dutch pension fund PFZW, which manages \u20ac250B ($290B).",
+        "source": {
+          "title": "BlackRock Loses $17 Billion Mandate at Dutch Pension Fund PFZW - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2025-09-03/blackrock-dropped-by-pension-fund-pfzw-after-review-nrc-says",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2025-09-03"
+      },
+      {
+        "claim": "BlackRock will no longer oversee \u20ac5B equity mandate from Dutch pension PME; mandate transferred to UBS Group AG and MN.",
+        "source": {
+          "title": "BlackRock Loses $5.9 Billion Mandate From Dutch Pension PME - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2025-12-15/blackrock-loses-5-9-billion-mandate-from-dutch-pension-fund-pme",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2025-12-15"
+      },
+      {
+        "claim": "BlackRock lost $35B in mandates from Dutch pension fund PFZW.",
+        "source": {
+          "title": "BlackRock, L&G dropped from $35 billion mandates by Dutch pension fund PFZW - Pensions & Investments",
+          "url": "https://www.pionline.com/institutional-investors/pension-funds/pi-pfzw-drops-blackrock-legal-general-equities/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2025-09-03"
+      },
+      {
+        "claim": "UBS AM and MN take over \u20ac5B ESG equity portfolio from BlackRock after PME replacement.",
+        "source": {
+          "title": "PME replaces BlackRock in \u20ac5bn ESG equities portfolio | News | IPE",
+          "url": "https://www.ipe.com/news/pme-replaces-blackrock-in-5bn-esg-equities-portfolio/10134286.article",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2025-12-16"
+      },
+      {
+        "claim": "BlackRock lost \u20ac29B (~$34B) mandates from PFZW due to shift to sustainability-focused policy.",
+        "source": {
+          "title": "BlackRock, LGIM Lose $34 Billion in Mandates from Dutch Pension Fund\u2019s Shift to Sustainability & Active-Focused Investment Policy - ESG Today",
+          "url": "https://www.esgtoday.com/blackrock-lgim-lose-34-billion-in-mandates-from-dutch-pension-funds-shift-to-sustainability-focused-investment-policy/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2025-09-04"
+      },
+      {
+        "claim": "NYC Comptroller Brad Lander urged pension funds to drop $42.3B BlackRock mandate over inadequate climate plans.",
+        "source": {
+          "title": "NYC\u2019s Lander recommends dropping $42B BlackRock mandate - InvestmentNews",
+          "url": "https://www.investmentnews.com/retirement-planning/nycs-lander-recommends-dropping-42b-blackrock-mandate/263268",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2025-11-26"
+      },
+      {
+        "claim": "DOJ and FTC filed statement of interest alleging BlackRock used shareholdings to discourage coal production.",
+        "source": {
+          "title": "Office of Public Affairs |  Justice Department and Federal Trade Commission File Statement of Interest on Anticompetitive Uses of Common Shareholdings to Discourage Coal Production | United States Department of Justice",
+          "url": "https://www.justice.gov/opa/pr/justice-department-and-federal-trade-commission-file-statement-interest-anticompetitive-uses",
+          "date": ""
+        },
+        "category": "legal",
+        "dated": "2025-05-22"
+      },
+      {
+        "claim": "Judge dismissed only 3 of 21 counts in Texas climate collusion lawsuit against BlackRock.",
+        "source": {
+          "title": "BlackRock, other fund managers lose bid to dismiss Texas climate collusion lawsuit | Reuters",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/blackrock-other-fund-managers-lose-bid-dismiss-texas-climate-collusion-lawsuit-2025-08-01/",
+          "date": ""
+        },
+        "category": "legal",
+        "dated": "2025-08-01"
+      },
+      {
+        "claim": "DOJ and FTC urged judge to reject BlackRock's arguments in Texas climate collusion case.",
+        "source": {
+          "title": "US supports Republican states' argument in BlackRock climate case | Reuters",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-expected-support-republican-states-argument-blackrock-climate-case-2025-05-22/",
+          "date": ""
+        },
+        "category": "legal",
+        "dated": "2025-05-22"
+      },
+      {
+        "claim": "BlackRock, Vanguard, and State Street filed a motion to dismiss a climate\u2011related antitrust lawsuit alleging collusion over ESG investments.",
+        "source": {
+          "title": "Top fund managers ask US court to dismiss climate-related antitrust lawsuit",
+          "url": "https://www.reuters.com/legal/blackrock-vanguard-state-street-ask-court-dismiss-us-antitrust-lawsuit-2025-03-18/",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2025-03-18"
+      },
+      {
+        "claim": "BlackRock and other funds contend that evidence in the climate\u2011investing antitrust case is unsound and unsupported.",
+        "source": {
+          "title": "BlackRock, other funds clash with Republican states over evidence in climate-investing case",
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/blackrock-calls-antitrust-claims-unprecedented-unsound-unsupported-2025-06-09/",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": "2025-06-10"
+      },
+      {
+        "claim": "TD Cowen raised BlackRock's price target to $1,407 from $1,301, citing upgraded long\u2011term organic growth assumptions and Q3 update.",
+        "source": {
+          "title": "BlackRock price target raised to $1,407 from $1,301 at TD Cowen | Markets Insider",
+          "url": "https://markets.businessinsider.com/news/stocks/blackrock-price-target-raised-to-1-407-from-1-301-at-td-cowen-1035373311",
+          "date": ""
+        },
+        "category": "sentiment|valuation",
+        "dated": "2025-10-15"
+      },
+      {
+        "claim": "BlackRock's market capitalization stands at $157.43\u202fbillion.",
+        "source": {
+          "title": "Do Wall Street Analysts Like BlackRock Stock?",
+          "url": "https://www.barchart.com/story/news/36252284/do-wall-street-analysts-like-blackrock-stock",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2025-11-21"
+      },
+      {
+        "claim": "Goldman Sachs increased BlackRock's price target to $1,312 from $1,163, a 12.81% rise.",
+        "source": {
+          "title": "Goldman Sachs Raises Price Target for BlackRock (BLK) to $1312 |",
+          "url": "https://www.gurufocus.com/news/3132495/goldman-sachs-raises-price-target-for-blackrock-blk-to-1312-blk-stock-news",
+          "date": ""
+        },
+        "category": "sentiment|valuation",
+        "dated": "2025-10-06"
+      },
+      {
+        "claim": "Deutsche Bank lifted BlackRock's price target to $1,215 from $1,133.",
+        "source": {
+          "title": "Deutsche Bank Maintains Blackrock(BLK.US) With Buy Rating, Raises Target Price to $1,215",
+          "url": "https://news.futunn.com/en/post/51943553/deutsche-bank-maintains-blackrock-blkus-with-buy-rating-raises-target",
+          "date": ""
+        },
+        "category": "sentiment|valuation",
+        "dated": "2025-01-08"
+      },
+      {
+        "claim": "S&P Global analysts give BlackRock a consensus 'Buy' rating with an average price target of $1,321.",
+        "source": {
+          "title": "BlackRock (BLK) Stock Forecast & Analyst Price Targets",
+          "url": "https://stockanalysis.com/stocks/blk/forecast/",
+          "date": ""
+        },
+        "category": "sentiment|valuation",
+        "dated": ""
+      },
+      {
+        "claim": "BlackRock is named as a defendant in the federal antitrust lawsuit filed by Texas and other states.",
+        "source": {
+          "title": "STATE OF TEXAS, et al., Plaintiffs,",
+          "url": "https://justthenews.com/sites/default/files/2025-08/MEMORANDUM%20OPINION%20.pdf",
+          "date": ""
+        },
+        "category": "competition|catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "AUM reached $15.3 trillion in Q2\u202f2026, up 22% YoY.",
+        "source": {
+          "title": "BlackRock (BLK) Q2 2026 Earnings Call Transcript | The Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/07/22/blackrock-blk-q2-2026-earnings-call-transcript/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-15"
+      },
+      {
+        "claim": "Q2\u202f2026 revenue increased 31% YoY to $7.1\u202fB.",
+        "source": {
+          "title": "BlackRock (BLK) Q2 2026 Earnings Call Transcript | The Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/07/22/blackrock-blk-q2-2026-earnings-call-transcript/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-15"
+      },
+      {
+        "claim": "Q2\u202f2026 diluted EPS rose 15% to $13.91 (Non\u2011GAAP).",
+        "source": {
+          "title": "BlackRock (BLK) Q2 2026 Earnings Call Transcript | The Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/07/22/blackrock-blk-q2-2026-earnings-call-transcript/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-15"
+      },
+      {
+        "claim": "Q2\u202f2026 net inflows $191.7\u202fB, more than double $67.7\u202fB YoY.",
+        "source": {
+          "title": "BlackRock (BLK) Q2 2026 Earnings Call Transcript | The Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/07/22/blackrock-blk-q2-2026-earnings-call-transcript/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-15"
+      },
+      {
+        "claim": "Full\u2011year\u202f2025 AUM $14\u202fT, up from prior year.",
+        "source": {
+          "title": "BlackRock Reports Full Year 2025 Diluted EPS of $35.31, or $48.09 as adjusted Fourth Quarter 2025 Diluted EPS of $7.16, or $13.16 as adjusted",
+          "url": "https://fortune.com/company-assets/764/quartr/earnings-release-8-k-f2919-2026-01-15-11-13-37.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-01-15"
+      },
+      {
+        "claim": "Full\u2011year\u202f2025 revenue up 19% YoY.",
+        "source": {
+          "title": "BlackRock Reports Full Year 2025 Diluted EPS of $35.31, or $48.09 as adjusted Fourth Quarter 2025 Diluted EPS of $7.16, or $13.16 as adjusted",
+          "url": "https://fortune.com/company-assets/764/quartr/earnings-release-8-k-f2919-2026-01-15-11-13-37.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-01-15"
+      },
+      {
+        "claim": "Full\u2011year\u202f2025 diluted EPS $35.31 (adjusted $48.09).",
+        "source": {
+          "title": "BlackRock Reports Full Year 2025 Diluted EPS of $35.31, or $48.09 as adjusted Fourth Quarter 2025 Diluted EPS of $7.16, or $13.16 as adjusted",
+          "url": "https://fortune.com/company-assets/764/quartr/earnings-release-8-k-f2919-2026-01-15-11-13-37.pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-01-15"
+      },
+      {
+        "claim": "Barclays lowered price target to $1,160 from $1,220, modeling 1% earnings beat Q4.",
+        "source": {
+          "title": "BlackRock price target lowered to $1,160 from $1,220 at Barclays | Markets Insider",
+          "url": "https://markets.businessinsider.com/news/stocks/blackrock-price-target-lowered-to-1-160-from-1-220-at-barclays-1034220637",
+          "date": ""
+        },
+        "category": "valuation",
+        "dated": "2025-01-13"
+      },
+      {
+        "claim": "Q4 2025 adjusted EPS $13.16 beat estimates by $0.75.",
+        "source": {
+          "title": "BlackRock Q4 2025: Fee Growth and Securities Lending Drive Revenue, But Margin Compression Warrants Attention",
+          "url": "https://www.ainvest.com/news/blackrock-q4-2025-fee-growth-securities-lending-drive-revenue-margin-compression-warrants-attention-2604/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-04-14"
+      },
+      {
+        "claim": "Q4 2025 GAAP net income fell 32.5% to $1.1B due to 48.4% expense growth.",
+        "source": {
+          "title": "BlackRock Q4 2025: Fee Growth and Securities Lending Drive Revenue, But Margin Compression Warrants Attention",
+          "url": "https://www.ainvest.com/news/blackrock-q4-2025-fee-growth-securities-lending-drive-revenue-margin-compression-warrants-attention-2604/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-04-14"
+      },
+      {
+        "claim": "Q2 2026 revenue up 31% YoY, adjusted EPS $13.91 record.",
+        "source": {
+          "title": "BlackRock (BLK) \u2014 Company Research - ChartsView",
+          "url": "https://chartsview.co.uk/research/finance-banking/blackrock-blk-research",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-19"
+      },
+      {
+        "claim": "AUM reached $15.3T at 30 June 2026, up 22% YoY.",
+        "source": {
+          "title": "BlackRock Statistics 2026: $15.3T AUM & Fee Yield Data",
+          "url": "https://axis-intelligence.com/blackrock-statistics/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-22"
+      },
+      {
+        "claim": "Q1 2026 inflows $130B, 13% organic growth vs 3% in 2024.",
+        "source": {
+          "title": "BlackRock's Record Q1 Inflows: Can the Momentum Sustain?",
+          "url": "https://www.ainvest.com/news/blackrock-record-q1-inflows-momentum-sustain-2604/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-04-20"
+      },
+      {
+        "claim": "Aladdin platform manages $21.6T assets globally, while BlackRock manages $11.6T AUM.",
+        "source": {
+          "title": "BlackRock and Aladdin: AI-Native Asset Management or Fee Compression Ahead? - PitchGrade",
+          "url": "https://pitchgrade.com/research/blackrock-ai-margin-pressure",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-01-23"
+      },
+      {
+        "claim": "Margin expanded to 45.9% driven by high\u2011margin active/alternative strategies and Aladdin tech revenue.",
+        "source": {
+          "title": "Larry Fink's BlackRock Just Crossed $15.3 Trillion in Assets. Here's What That Scale Actually Earns. \u2014 StockScreener",
+          "url": "https://stockscreener.finance/en/news/larry-finks-blackrock-just-crossed-153-trillion-in-assets-heres-what-that-s/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-14"
+      },
+      {
+        "claim": "Q3 2025 net inflows $205B, AUM $13.5T, revenue grew 25% YoY.",
+        "source": {
+          "title": "BlackRock Q3 2025 Earnings Breakdown: $205B Inflows and $13.5T AUM Milestone Fuel 25% Revenue Surge",
+          "url": "https://financhle.com/articles/blackrock-q3-2025-earnings",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-10-14"
+      },
+      {
+        "claim": "Global ETF assets reached $23.11 trillion at end\u2011July 2026; year\u2011to\u2011date inflows hit $1.71 trillion.",
+        "source": {
+          "title": "ETFGI Reports Global ETF Industry Assets Reach Record US$ 23.11 Trillion At The End Of July And YTD Inflows Hit All-Time High Us$ 1.71 Trillion",
+          "url": "https://mondovisione.com/media-and-resources/news/etfgi-reports-global-etf-industry-assets-reach-record-us-2311-trillion-at-the-2026820/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-20"
+      },
+      {
+        "claim": "July 2026 saw $383.60\u202fbillion net inflows into ETFs worldwide.",
+        "source": {
+          "title": "ETFGI Reports Global ETF Industry Assets Reach Record US$ 23.11 Trillion At The End Of July And YTD Inflows Hit All-Time High Us$ 1.71 Trillion",
+          "url": "https://mondovisione.com/media-and-resources/news/etfgi-reports-global-etf-industry-assets-reach-record-us-2311-trillion-at-the-2026820/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-20"
+      },
+      {
+        "claim": "Vanguard overtook BlackRock as the US ETF issuer for the first time since 2003.",
+        "source": {
+          "title": "After 23 Years of Dominance, BlackRock no Longer the ETF King in the US | MarketScreener",
+          "url": "https://www.marketscreener.com/news/after-23-years-of-dominance-blackrock-no-longer-the-etf-king-in-the-us-ce7f5cd2da89f722",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-06-19"
+      },
+      {
+        "claim": "Vanguard now manages $4.39\u202ftrillion across 116 US\u2011listed ETFs, surpassing BlackRock\u2019s $4.36\u202ftrillion.",
+        "source": {
+          "title": "Vanguard ends BlackRock's 20-year run atop US ETF market - CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/vanguard-ends-blackrocks-20-year-run-atop-us-etf-market-ws-l-19924857.htm",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-06-12"
+      },
+      {
+        "claim": "BlackRock\u2019s iShares franchise covers almost every asset class and client segment.",
+        "source": {
+          "title": "After 23 Years of Dominance, BlackRock no Longer the ETF King in the US | MarketScreener",
+          "url": "https://www.marketscreener.com/news/after-23-years-of-dominance-blackrock-no-longer-the-etf-king-in-the-us-ce7f5cd2da89f722",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-06-19"
+      },
+      {
+        "claim": "BlackRock, Vanguard and State Street collectively manage over $30\u202ftrillion, dominating passive investing.",
+        "source": {
+          "title": "BlackRock, Vanguard, State Street: The Big Three Explained | The Specialist's Desk",
+          "url": "https://icfs.com/financial-knowledge-center/the-big-three-blackrock-vanguard-state-street",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "BlackRock\u2019s ETF assets total $4.36\u202ftrillion as of June\u202f2026.",
+        "source": {
+          "title": "Vanguard ends BlackRock's 20-year run atop US ETF market - CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/vanguard-ends-blackrocks-20-year-run-atop-us-etf-market-ws-l-19924857.htm",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-06-12"
+      },
+      {
+        "claim": "The three firms\u2019 structural advantages create durable competitive moats in passive investing.",
+        "source": {
+          "title": "BlackRock, Vanguard, State Street: The Big Three Explained | The Specialist's Desk",
+          "url": "https://icfs.com/financial-knowledge-center/the-big-three-blackrock-vanguard-state-street",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "BlackRock\u2019s iShares Bitcoin Trust (IBIT) captured $284.4\u202fmillion, ~90.5% of total Bitcoin ETF inflows on Aug\u202f25,\u202f2026.",
+        "source": {
+          "title": "Crypto ETFs Draw Over $550 Million on August 25 Led by Bitcoin and BlackRock | Gate News",
+          "url": "https://www.gate.com/news/detail/crypto-etfs-draw-over-550-million-on-august-25-led-by-bitcoin-and-blackrock-23736159",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-26"
+      },
+      {
+        "claim": "IBIT accounted for 77% of net inflows in the settled session on July\u202f20,\u202f2026.",
+        "source": {
+          "title": "Spot Crypto ETFs Absorb $177M in Settled Session; IBIT Captures 77% of the Bid \u2014 InflowScan",
+          "url": "https://inflowscan.com/brief/settledflows/2026-07-20-crypto-etfs-177m-settled-ibit-137m-etha-32m",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-07-20"
+      },
+      {
+        "claim": "IBIT recorded $208.9\u202fmillion net inflows on Aug\u202f24,\u202f2026, representing ~62% of total spot Bitcoin ETF inflows.",
+        "source": {
+          "title": "Bitcoin ETF News: IBIT Draws $208.9 Million",
+          "url": "https://99bitcoins.com/news/bitcoin-btc/bitcoin-etf-inflows-ibit-leads/",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-25"
+      },
+      {
+        "claim": "BlackRock\u2019s Bitcoin and Ether ETFs combined attracted $438.4\u202fmillion in inflows on Aug\u202f25,\u202f2026.",
+        "source": {
+          "title": "Crypto ETFs Draw Over $550 Million on August 25 Led by Bitcoin and BlackRock | Gate News",
+          "url": "https://www.gate.com/news/detail/crypto-etfs-draw-over-550-million-on-august-25-led-by-bitcoin-and-blackrock-23736159",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-26"
+      },
+      {
+        "claim": "IBIT and ETHA had a combined net outflow of $3.5\u202fbillion in Q2\u202f2026, a $17.4\u202fbillion YoY swing.",
+        "source": {
+          "title": "BlackRock's Crypto ETFs See $3.5 Billion Net Outflow in Q2 \u2014 A $17.4 Billion Year-on-Year Swing and a Bifurcated Supply-Demand Picture",
+          "url": "https://finance.biggo.com/news/7a116dfc-c3dd-444a-9f58-b6fa2661b343",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-07"
+      },
+      {
+        "claim": "UBS increased its IBIT stake to nearly $90\u202fmillion and raised call options 24\u00d7 in Q2\u202f2026, signaling deeper institutional engagement.",
+        "source": {
+          "title": "UBS Boosts BlackRock Bitcoin ETF Stake to Nearly $90M, IBIT Calls Jump 24x in Q2 | Bitcoin Info News",
+          "url": "https://bitcoininfonews.com/ubs-blackrock-bitcoin-etf-90-million-ibit-call-exposure-q2",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-08-17"
+      },
+      {
+        "claim": "US mutual funds and ETFs amassed $765\u202fbillion in 2025, a 2.5% growth over 2024.",
+        "source": {
+          "title": "US Fund Flows",
+          "url": "https://assets.contentstack.io/v3/assets/blt9415ea4cc4157833/bltb441ce3c78f39445/2025_US_Fund_Flows.pdf",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-12-01"
+      },
+      {
+        "claim": "In Q4\u202f2025, active ETFs comprised 83% of new listings, underscoring a shift toward active management.",
+        "source": {
+          "title": "2025 ETF & ETP Market Trends | iShares",
+          "url": "https://www.ishares.com/us/insights/2025-etf-market-trends-record-flows",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-12-15"
+      },
+      {
+        "claim": "BlackRock expects continued growth in spot Bitcoin ETFs, citing strong investor demand and heightened security concerns.",
+        "source": {
+          "title": "BlackRock Sees Continued Growth in Spot Bitcoin ETFs, Citing Investor Demand and Security Concerns | blackrock Bitcoin ETF | CryptoRank.io",
+          "url": "https://cryptorank.io/news/feed/f03b5-blackrock-spot-bitcoin-etf-growth",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "UBS terminated its multimillion\u2011dollar Aladdin contract, moving Credit Suisse funds onto its own systems, with completion targeted by year\u2011end 2025.",
+        "source": {
+          "title": "UBS Ditches BlackRock\u2019s Aladdin Platform to Cut Fund Unit Costs - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2025-07-24/ubs-ditches-blackrock-s-aladdin-platform-to-cut-fund-unit-costs",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2025-07-24"
+      },
+      {
+        "claim": "The National Pension Service of Korea went live on BlackRock\u2019s Aladdin platform, integrating State Street and BNY middle\u2011office services.",
+        "source": {
+          "title": "NPS goes live on BlackRock's Aladdin\u00ae platform | Aladdin",
+          "url": "https://www.blackrock.com/aladdin/discover/press-release/nps-unveils-technology-platform-unified-by-blackrocks-aladdin-with-state-street-and-bny-specialized-investment-operations-services",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-02-18"
+      },
+      {
+        "claim": "UBS\u2019s exit from Aladdin, a deal worth up to $126\u202fmillion annually for BlackRock, will shift legacy funds in\u2011house by end\u20112025.",
+        "source": {
+          "title": "UBS Ends BlackRock Aladdin Deal, Moves Credit Suisse Assets In-House - Finimize",
+          "url": "https://finimize.com/content/ubs-ends-blackrock-aladdin-deal-moves-credit-suisse-assets-in-house",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": ""
+      },
+      {
+        "claim": "BPI Wealth adopted BlackRock\u2019s Aladdin platform to enhance asset and wealth management capabilities amid a broader modernization effort.",
+        "source": {
+          "title": "BPI Wealth to Run BlackRock's Aladdin Platform in the Philippines",
+          "url": "https://fintechnews.ph/73286/wealthtech/bpi-wealth-blackrock-aladdin-wealth-management-philippines/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-27"
+      },
+      {
+        "claim": "BPI Wealth is tapping Aladdin to upgrade its technology infrastructure for complex portfolios and deliver data\u2011driven services.",
+        "source": {
+          "title": "BPI Wealth taps BlackRock platform to boost capabilities",
+          "url": "https://insiderph.com/bpi-wealth-taps-blackrock-platform-to-boost-capabilities",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-28"
+      }
+    ],
+    "sources": [
+      {
+        "title": "BlackRock Reports Third Quarter 2025 Diluted EPS | BlackRock",
+        "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2025",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Reports Third Quarter 2025 Diluted EPS | BlackRock",
+        "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2025",
+        "date": ""
+      },
+      {
+        "title": "Stocks: BlackRock\u2019s assets hit record US$13.46 trillion",
+        "url": "https://www.bnnbloomberg.ca/business/2025/10/14/blackrocks-assets-hit-record-us1346-trillion-on-third-quarter-markets-rally/",
+        "date": ""
+      },
+      {
+        "title": "Stocks: BlackRock\u2019s assets hit record US$13.46 trillion",
+        "url": "https://www.bnnbloomberg.ca/business/2025/10/14/blackrocks-assets-hit-record-us1346-trillion-on-third-quarter-markets-rally/",
+        "date": ""
+      },
+      {
+        "title": "Stocks: BlackRock\u2019s assets hit record US$13.46 trillion",
+        "url": "https://www.bnnbloomberg.ca/business/2025/10/14/blackrocks-assets-hit-record-us1346-trillion-on-third-quarter-markets-rally/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Reports Third Quarter 2025 Diluted EPS | BlackRock",
+        "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2025",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Reports Third Quarter 2025 Diluted EPS | BlackRock",
+        "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2025",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Loses $17 Billion Mandate at Dutch Pension Fund PFZW - Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2025-09-03/blackrock-dropped-by-pension-fund-pfzw-after-review-nrc-says",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Loses $5.9 Billion Mandate From Dutch Pension PME - Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2025-12-15/blackrock-loses-5-9-billion-mandate-from-dutch-pension-fund-pme",
+        "date": ""
+      },
+      {
+        "title": "BlackRock, L&G dropped from $35 billion mandates by Dutch pension fund PFZW - Pensions & Investments",
+        "url": "https://www.pionline.com/institutional-investors/pension-funds/pi-pfzw-drops-blackrock-legal-general-equities/",
+        "date": ""
+      },
+      {
+        "title": "PME replaces BlackRock in \u20ac5bn ESG equities portfolio | News | IPE",
+        "url": "https://www.ipe.com/news/pme-replaces-blackrock-in-5bn-esg-equities-portfolio/10134286.article",
+        "date": ""
+      },
+      {
+        "title": "BlackRock, LGIM Lose $34 Billion in Mandates from Dutch Pension Fund\u2019s Shift to Sustainability & Active-Focused Investment Policy - ESG Today",
+        "url": "https://www.esgtoday.com/blackrock-lgim-lose-34-billion-in-mandates-from-dutch-pension-funds-shift-to-sustainability-focused-investment-policy/",
+        "date": ""
+      },
+      {
+        "title": "NYC\u2019s Lander recommends dropping $42B BlackRock mandate - InvestmentNews",
+        "url": "https://www.investmentnews.com/retirement-planning/nycs-lander-recommends-dropping-42b-blackrock-mandate/263268",
+        "date": ""
+      },
+      {
+        "title": "Office of Public Affairs |  Justice Department and Federal Trade Commission File Statement of Interest on Anticompetitive Uses of Common Shareholdings to Discourage Coal Production | United States Department of Justice",
+        "url": "https://www.justice.gov/opa/pr/justice-department-and-federal-trade-commission-file-statement-interest-anticompetitive-uses",
+        "date": ""
+      },
+      {
+        "title": "BlackRock, other fund managers lose bid to dismiss Texas climate collusion lawsuit | Reuters",
+        "url": "https://www.reuters.com/sustainability/boards-policy-regulation/blackrock-other-fund-managers-lose-bid-dismiss-texas-climate-collusion-lawsuit-2025-08-01/",
+        "date": ""
+      },
+      {
+        "title": "US supports Republican states' argument in BlackRock climate case | Reuters",
+        "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-expected-support-republican-states-argument-blackrock-climate-case-2025-05-22/",
+        "date": ""
+      },
+      {
+        "title": "Top fund managers ask US court to dismiss climate-related antitrust lawsuit",
+        "url": "https://www.reuters.com/legal/blackrock-vanguard-state-street-ask-court-dismiss-us-antitrust-lawsuit-2025-03-18/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock, other funds clash with Republican states over evidence in climate-investing case",
+        "url": "https://www.reuters.com/sustainability/boards-policy-regulation/blackrock-calls-antitrust-claims-unprecedented-unsound-unsupported-2025-06-09/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock price target raised to $1,407 from $1,301 at TD Cowen | Markets Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/blackrock-price-target-raised-to-1-407-from-1-301-at-td-cowen-1035373311",
+        "date": ""
+      },
+      {
+        "title": "Do Wall Street Analysts Like BlackRock Stock?",
+        "url": "https://www.barchart.com/story/news/36252284/do-wall-street-analysts-like-blackrock-stock",
+        "date": ""
+      },
+      {
+        "title": "Goldman Sachs Raises Price Target for BlackRock (BLK) to $1312 |",
+        "url": "https://www.gurufocus.com/news/3132495/goldman-sachs-raises-price-target-for-blackrock-blk-to-1312-blk-stock-news",
+        "date": ""
+      },
+      {
+        "title": "Deutsche Bank Maintains Blackrock(BLK.US) With Buy Rating, Raises Target Price to $1,215",
+        "url": "https://news.futunn.com/en/post/51943553/deutsche-bank-maintains-blackrock-blkus-with-buy-rating-raises-target",
+        "date": ""
+      },
+      {
+        "title": "BlackRock (BLK) Stock Forecast & Analyst Price Targets",
+        "url": "https://stockanalysis.com/stocks/blk/forecast/",
+        "date": ""
+      },
+      {
+        "title": "STATE OF TEXAS, et al., Plaintiffs,",
+        "url": "https://justthenews.com/sites/default/files/2025-08/MEMORANDUM%20OPINION%20.pdf",
+        "date": ""
+      },
+      {
+        "title": "BlackRock (BLK) Q2 2026 Earnings Call Transcript | The Motley Fool",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/07/22/blackrock-blk-q2-2026-earnings-call-transcript/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock (BLK) Q2 2026 Earnings Call Transcript | The Motley Fool",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/07/22/blackrock-blk-q2-2026-earnings-call-transcript/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock (BLK) Q2 2026 Earnings Call Transcript | The Motley Fool",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/07/22/blackrock-blk-q2-2026-earnings-call-transcript/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock (BLK) Q2 2026 Earnings Call Transcript | The Motley Fool",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/07/22/blackrock-blk-q2-2026-earnings-call-transcript/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Reports Full Year 2025 Diluted EPS of $35.31, or $48.09 as adjusted Fourth Quarter 2025 Diluted EPS of $7.16, or $13.16 as adjusted",
+        "url": "https://fortune.com/company-assets/764/quartr/earnings-release-8-k-f2919-2026-01-15-11-13-37.pdf",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Reports Full Year 2025 Diluted EPS of $35.31, or $48.09 as adjusted Fourth Quarter 2025 Diluted EPS of $7.16, or $13.16 as adjusted",
+        "url": "https://fortune.com/company-assets/764/quartr/earnings-release-8-k-f2919-2026-01-15-11-13-37.pdf",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Reports Full Year 2025 Diluted EPS of $35.31, or $48.09 as adjusted Fourth Quarter 2025 Diluted EPS of $7.16, or $13.16 as adjusted",
+        "url": "https://fortune.com/company-assets/764/quartr/earnings-release-8-k-f2919-2026-01-15-11-13-37.pdf",
+        "date": ""
+      },
+      {
+        "title": "BlackRock price target lowered to $1,160 from $1,220 at Barclays | Markets Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/blackrock-price-target-lowered-to-1-160-from-1-220-at-barclays-1034220637",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Q4 2025: Fee Growth and Securities Lending Drive Revenue, But Margin Compression Warrants Attention",
+        "url": "https://www.ainvest.com/news/blackrock-q4-2025-fee-growth-securities-lending-drive-revenue-margin-compression-warrants-attention-2604/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Q4 2025: Fee Growth and Securities Lending Drive Revenue, But Margin Compression Warrants Attention",
+        "url": "https://www.ainvest.com/news/blackrock-q4-2025-fee-growth-securities-lending-drive-revenue-margin-compression-warrants-attention-2604/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock (BLK) \u2014 Company Research - ChartsView",
+        "url": "https://chartsview.co.uk/research/finance-banking/blackrock-blk-research",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Statistics 2026: $15.3T AUM & Fee Yield Data",
+        "url": "https://axis-intelligence.com/blackrock-statistics/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock's Record Q1 Inflows: Can the Momentum Sustain?",
+        "url": "https://www.ainvest.com/news/blackrock-record-q1-inflows-momentum-sustain-2604/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock and Aladdin: AI-Native Asset Management or Fee Compression Ahead? - PitchGrade",
+        "url": "https://pitchgrade.com/research/blackrock-ai-margin-pressure",
+        "date": ""
+      },
+      {
+        "title": "Larry Fink's BlackRock Just Crossed $15.3 Trillion in Assets. Here's What That Scale Actually Earns. \u2014 StockScreener",
+        "url": "https://stockscreener.finance/en/news/larry-finks-blackrock-just-crossed-153-trillion-in-assets-heres-what-that-s/",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Q3 2025 Earnings Breakdown: $205B Inflows and $13.5T AUM Milestone Fuel 25% Revenue Surge",
+        "url": "https://financhle.com/articles/blackrock-q3-2025-earnings",
+        "date": ""
+      },
+      {
+        "title": "ETFGI Reports Global ETF Industry Assets Reach Record US$ 23.11 Trillion At The End Of July And YTD Inflows Hit All-Time High Us$ 1.71 Trillion",
+        "url": "https://mondovisione.com/media-and-resources/news/etfgi-reports-global-etf-industry-assets-reach-record-us-2311-trillion-at-the-2026820/",
+        "date": ""
+      },
+      {
+        "title": "ETFGI Reports Global ETF Industry Assets Reach Record US$ 23.11 Trillion At The End Of July And YTD Inflows Hit All-Time High Us$ 1.71 Trillion",
+        "url": "https://mondovisione.com/media-and-resources/news/etfgi-reports-global-etf-industry-assets-reach-record-us-2311-trillion-at-the-2026820/",
+        "date": ""
+      },
+      {
+        "title": "After 23 Years of Dominance, BlackRock no Longer the ETF King in the US | MarketScreener",
+        "url": "https://www.marketscreener.com/news/after-23-years-of-dominance-blackrock-no-longer-the-etf-king-in-the-us-ce7f5cd2da89f722",
+        "date": ""
+      },
+      {
+        "title": "Vanguard ends BlackRock's 20-year run atop US ETF market - CNBC TV18",
+        "url": "https://www.cnbctv18.com/market/vanguard-ends-blackrocks-20-year-run-atop-us-etf-market-ws-l-19924857.htm",
+        "date": ""
+      },
+      {
+        "title": "After 23 Years of Dominance, BlackRock no Longer the ETF King in the US | MarketScreener",
+        "url": "https://www.marketscreener.com/news/after-23-years-of-dominance-blackrock-no-longer-the-etf-king-in-the-us-ce7f5cd2da89f722",
+        "date": ""
+      },
+      {
+        "title": "BlackRock, Vanguard, State Street: The Big Three Explained | The Specialist's Desk",
+        "url": "https://icfs.com/financial-knowledge-center/the-big-three-blackrock-vanguard-state-street",
+        "date": ""
+      },
+      {
+        "title": "Vanguard ends BlackRock's 20-year run atop US ETF market - CNBC TV18",
+        "url": "https://www.cnbctv18.com/market/vanguard-ends-blackrocks-20-year-run-atop-us-etf-market-ws-l-19924857.htm",
+        "date": ""
+      },
+      {
+        "title": "BlackRock, Vanguard, State Street: The Big Three Explained | The Specialist's Desk",
+        "url": "https://icfs.com/financial-knowledge-center/the-big-three-blackrock-vanguard-state-street",
+        "date": ""
+      },
+      {
+        "title": "Crypto ETFs Draw Over $550 Million on August 25 Led by Bitcoin and BlackRock | Gate News",
+        "url": "https://www.gate.com/news/detail/crypto-etfs-draw-over-550-million-on-august-25-led-by-bitcoin-and-blackrock-23736159",
+        "date": ""
+      },
+      {
+        "title": "Spot Crypto ETFs Absorb $177M in Settled Session; IBIT Captures 77% of the Bid \u2014 InflowScan",
+        "url": "https://inflowscan.com/brief/settledflows/2026-07-20-crypto-etfs-177m-settled-ibit-137m-etha-32m",
+        "date": ""
+      },
+      {
+        "title": "Bitcoin ETF News: IBIT Draws $208.9 Million",
+        "url": "https://99bitcoins.com/news/bitcoin-btc/bitcoin-etf-inflows-ibit-leads/",
+        "date": ""
+      },
+      {
+        "title": "Crypto ETFs Draw Over $550 Million on August 25 Led by Bitcoin and BlackRock | Gate News",
+        "url": "https://www.gate.com/news/detail/crypto-etfs-draw-over-550-million-on-august-25-led-by-bitcoin-and-blackrock-23736159",
+        "date": ""
+      },
+      {
+        "title": "BlackRock's Crypto ETFs See $3.5 Billion Net Outflow in Q2 \u2014 A $17.4 Billion Year-on-Year Swing and a Bifurcated Supply-Demand Picture",
+        "url": "https://finance.biggo.com/news/7a116dfc-c3dd-444a-9f58-b6fa2661b343",
+        "date": ""
+      },
+      {
+        "title": "UBS Boosts BlackRock Bitcoin ETF Stake to Nearly $90M, IBIT Calls Jump 24x in Q2 | Bitcoin Info News",
+        "url": "https://bitcoininfonews.com/ubs-blackrock-bitcoin-etf-90-million-ibit-call-exposure-q2",
+        "date": ""
+      },
+      {
+        "title": "US Fund Flows",
+        "url": "https://assets.contentstack.io/v3/assets/blt9415ea4cc4157833/bltb441ce3c78f39445/2025_US_Fund_Flows.pdf",
+        "date": ""
+      },
+      {
+        "title": "2025 ETF & ETP Market Trends | iShares",
+        "url": "https://www.ishares.com/us/insights/2025-etf-market-trends-record-flows",
+        "date": ""
+      },
+      {
+        "title": "BlackRock Sees Continued Growth in Spot Bitcoin ETFs, Citing Investor Demand and Security Concerns | blackrock Bitcoin ETF | CryptoRank.io",
+        "url": "https://cryptorank.io/news/feed/f03b5-blackrock-spot-bitcoin-etf-growth",
+        "date": ""
+      },
+      {
+        "title": "UBS Ditches BlackRock\u2019s Aladdin Platform to Cut Fund Unit Costs - Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2025-07-24/ubs-ditches-blackrock-s-aladdin-platform-to-cut-fund-unit-costs",
+        "date": ""
+      },
+      {
+        "title": "NPS goes live on BlackRock's Aladdin\u00ae platform | Aladdin",
+        "url": "https://www.blackrock.com/aladdin/discover/press-release/nps-unveils-technology-platform-unified-by-blackrocks-aladdin-with-state-street-and-bny-specialized-investment-operations-services",
+        "date": ""
+      },
+      {
+        "title": "UBS Ends BlackRock Aladdin Deal, Moves Credit Suisse Assets In-House - Finimize",
+        "url": "https://finimize.com/content/ubs-ends-blackrock-aladdin-deal-moves-credit-suisse-assets-in-house",
+        "date": ""
+      },
+      {
+        "title": "BPI Wealth to Run BlackRock's Aladdin Platform in the Philippines",
+        "url": "https://fintechnews.ph/73286/wealthtech/bpi-wealth-blackrock-aladdin-wealth-management-philippines/",
+        "date": ""
+      },
+      {
+        "title": "BPI Wealth taps BlackRock platform to boost capabilities",
+        "url": "https://insiderph.com/bpi-wealth-taps-blackrock-platform-to-boost-capabilities",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "constructive",
+    "thesis": "BlackRock\u2019s dominant ETF platform, high\u2011margin Aladdin revenue, robust AUM and fee growth, and rising ESG demand collectively outweigh competitive and regulatory headwinds, supporting a positive outlook despite a weak Bitcoin ETF segment.",
+    "drivers": [
+      {
+        "name": "ETF Market Share & Competitive Displacement",
+        "direction": "tailwind",
+        "evidence": "Record Q3\u202f2025 inflows\u202f$205\u202fB, 10% organic fee growth, breadth across asset classes",
+        "source": {
+          "title": "BlackRock Reports Third Quarter 2025 Diluted EPS | BlackRock",
+          "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2025",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "competitive",
+        "score_why": "Bull evidence outweighs Vanguard overtaking; breadth mitigates displacement risk."
+      },
+      {
+        "name": "Aladdin Platform Revenue & Client Retention",
+        "direction": "tailwind",
+        "evidence": "Aladdin manages $21.6\u202fT assets, 45.9% margin expansion, new institutional clients",
+        "source": {
+          "title": "BlackRock Reports Third Quarter 2025 Diluted EPS | BlackRock",
+          "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2025",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Margin expansion and new clients offset UBS exit."
+      },
+      {
+        "name": "ESG & Climate Regulatory Risk",
+        "direction": "tailwind",
+        "evidence": "ESG demand rising, price target lift, active engagement",
+        "source": {
+          "title": "Stocks: BlackRock\u2019s assets hit record US$13.46 trillion",
+          "url": "https://www.bnnbloomberg.ca/business/2025/10/14/blackrocks-assets-hit-record-us1346-trillion-on-third-quarter-markets-rally/",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": 1.0,
+        "category": "risk",
+        "score_why": "Bull sentiment and fee growth outweigh pending lawsuit and mandate losses."
+      },
+      {
+        "name": "AUM Growth & Fee Compression",
+        "direction": "tailwind",
+        "evidence": "AUM $15.3\u202fT, 22% YoY, fee growth, macro support",
+        "source": {
+          "title": "Stocks: BlackRock\u2019s assets hit record US$13.46 trillion",
+          "url": "https://www.bnnbloomberg.ca/business/2025/10/14/blackrocks-assets-hit-record-us1346-trillion-on-third-quarter-markets-rally/",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Strong AUM and fee growth buffer expense growth."
+      },
+      {
+        "name": "Digital Assets & Bitcoin ETF Growth",
+        "direction": "headwind",
+        "evidence": "Net outflow $3.5\u202fB Q2\u202f2026, 17.4\u202fB YoY swing",
+        "source": {
+          "title": "Stocks: BlackRock\u2019s assets hit record US$13.46 trillion",
+          "url": "https://www.bnnbloomberg.ca/business/2025/10/14/blackrocks-assets-hit-record-us1346-trillion-on-third-quarter-markets-rally/",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "catalysts",
+        "score_why": "Outflows dominate inflows, indicating underperformance."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "BlackRock\u2019s revenue trajectory is accelerating, with Q3\u202f2025 revenue up 25% YoY and Q2\u202f2026 revenue up 31% YoY, underscoring robust fee generation across its product suite.",
+        "evidence": "Q3\u202f2025 revenue grew 25% YoY, driven by markets, 8% organic base fee growth, GIP/HPS fees, and higher tech services. Q2\u202f2026 revenue increased 31% YoY to $7.1\u202fB.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Assets under management (AUM) are expanding at a record pace, reaching $13.46\u202fT in Q3\u202f2025 and $15.3\u202fT in Q2\u202f2026, with a full\u2011year 2025 AUM of $14\u202fT, reflecting strong inflows and organic growth.",
+        "evidence": "Q3\u202f2025 assets under management reached record $13.46T. AUM reached $15.3 trillion in Q2\u202f2026, up 22% YoY. Full\u2011year\u202f2025 AUM $14\u202fT.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Net inflows are a key driver of growth, hitting $205\u202fB in Q3\u202f2025 and $191.7\u202fB in Q2\u202f2026, more than double the prior year, largely from its ETF business.",
+        "evidence": "Quarterly total net inflows hit $205B, led by record iShares ETF quarter. Q2\u202f2026 net inflows $191.7\u202fB, more than double $67.7\u202fB YoY.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Organic base fee growth remains solid, with 10% annualized growth in Q3\u202f2025 and 8% over the last 12 months, indicating pricing power and product demand.",
+        "evidence": "10% annualized organic base fee growth across iShares ETFs, systematic active equities, private markets, outsourcing, and cash. Over the last 12 months, BlackRock achieved 8% organic base fee growth.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The iShares franchise dominates the ETF market, covering almost every asset class and client segment, and contributed to record ETF assets of $23.11\u202fT and $1.71\u202fT YTD inflows.",
+        "evidence": "BlackRock\u2019s iShares franchise covers almost every asset class and client segment. Global ETF assets reached $23.11 trillion at end\u2011July 2026; year\u2011to\u2011date inflows hit $1.71 trillion.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Aladdin, BlackRock\u2019s flagship technology platform, manages $21.6\u202fT assets globally and generated high\u2011margin tech revenue, expanding the company\u2019s margin to 45.9%.",
+        "evidence": "Aladdin platform manages $21.6T assets globally, while BlackRock manages $11.6T AUM. Margin expanded to 45.9% driven by high\u2011margin active/alternative strategies and Aladdin tech revenue.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "BlackRock lost a \u20ac14.5\u202fB ($17\u202fB) mandate from Dutch pension fund PFZW, a client managing \u20ac250\u202fB ($290\u202fB), eroding a significant revenue stream.",
+        "evidence": "BlackRock lost a \u20ac14.5B ($17B) mandate with Dutch pension fund PFZW, which manages \u20ac250B ($290B).",
+        "source": {
+          "title": "BlackRock Loses $17 Billion Mandate at Dutch Pension Fund PFZW - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2025-09-03/blackrock-dropped-by-pension-fund-pfzw-after-review-nrc-says",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "The company faces a federal antitrust lawsuit alleging collusion over ESG investments, threatening legal costs and potential regulatory penalties.",
+        "evidence": "BlackRock is named as a defendant in the federal antitrust lawsuit filed by Texas and other states.",
+        "source": {
+          "title": "STATE OF TEXAS, et al., Plaintiffs,",
+          "url": "https://justthenews.com/sites/default/files/2025-08/MEMORANDUM%20OPINION%20.pdf",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Vanguard has overtaken BlackRock as the largest U.S. ETF issuer, eroding BlackRock\u2019s market dominance and fee\u2011earning base.",
+        "evidence": "Vanguard overtook BlackRock as the US ETF issuer for the first time since 2003. Vanguard now manages $4.39\u202ftrillion across 116 US\u2011listed ETFs, surpassing BlackRock\u2019s $4.36\u202ftrillion.",
+        "source": {
+          "title": "Vanguard ends BlackRock's 20-year run atop US ETF market - CNBC TV18",
+          "url": "https://www.cnbctv18.com/market/vanguard-ends-blackrocks-20-year-run-atop-us-etf-market-ws-l-19924857.htm",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "BlackRock lost its Aladdin contract with UBS, a deal worth up to $126\u202fM annually, forcing legacy funds to move in\u2011house and reducing platform revenue.",
+        "evidence": "UBS terminated its multimillion\u2011dollar Aladdin contract, moving Credit Suisse funds onto its own systems, with completion targeted by year\u2011end 2025.",
+        "source": {
+          "title": "UBS Ditches BlackRock\u2019s Aladdin Platform to Cut Fund Unit Costs - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2025-07-24/ubs-ditches-blackrock-s-aladdin-platform-to-cut-fund-unit-costs",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Climate\u2011policy controversies have prompted public calls to drop BlackRock mandates, exposing the firm to reputational risk and potential client attrition.",
+        "evidence": "NYC Comptroller Brad Lander urged pension funds to drop $42.3B BlackRock mandate over inadequate climate plans.",
+        "source": {
+          "title": "NYC\u2019s Lander recommends dropping $42B BlackRock mandate - InvestmentNews",
+          "url": "https://www.investmentnews.com/retirement-planning/nycs-lander-recommends-dropping-42b-blackrock-mandate/263268",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Fee growth is under pressure as passive investing dominates and competition from other large asset managers intensifies, limiting pricing power.",
+        "evidence": "BlackRock\u2019s iShares franchise covers almost every asset class and client segment.",
+        "source": {
+          "title": "After 23 Years of Dominance, BlackRock no Longer the ETF King in the US | MarketScreener",
+          "url": "https://www.marketscreener.com/news/after-23-years-of-dominance-blackrock-no-longer-the-etf-king-in-the-us-ce7f5cd2da89f722",
+          "date": ""
+        },
+        "severity": "material"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "ETF Market Share & Competitive Displacement",
+        "bull": "BlackRock\u2019s iShares franchise remains the dominant ETF platform, with record Q3 2025 net inflows of $205B and 10% organic base fee growth (F6), underscoring strong demand and pricing power. The iShares franchise covers almost every asset class and client segment (F45), ensuring a broad moat.",
+        "bull_source": {
+          "title": "BlackRock Reports Third Quarter 2025 Diluted EPS | BlackRock",
+          "url": "https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-reports-third-quarter-2025",
+          "date": ""
+        },
+        "bear": "Vanguard overtook BlackRock as the U.S. ETF issuer for the first time since 2003 (F43), and BlackRock lost significant mandates to Dutch pension funds (F8\u201312) amid sustainability\u2011focused policy shifts, raising concerns about competitive displacement and regulatory scrutiny.",
+        "bear_source": {
+          "title": "After 23 Years of Dominance, BlackRock no Longer the ETF King in the US | MarketScreener",
+          "url": "https://www.marketscreener.com/news/after-23-years-of-dominance-blackrock-no-longer-the-etf-king-in-the-us-ce7f5cd2da89f722",
+          "date": ""
+        },
+        "verdict": "Bull wins: the magnitude of recent inflows and fee growth outweighs the overtaking event, and BlackRock\u2019s breadth of offerings mitigates competitive risk. Bear\u2019s points highlight potential erosion but lack immediate financial impact.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Aladdin Platform Revenue & Client Retention",
+        "bull": "Aladdin manages $21.6T of assets globally (F38) and has driven a 45.9% margin expansion (F39) through high\u2011margin tech revenue. New institutional clients such as the National Pension Service of Korea and BPI Wealth have adopted Aladdin (F59\u201361), expanding its footprint and reinforcing client retention.",
+        "bull_source": {
+          "title": "BlackRock and Aladdin: AI-Native Asset Management or Fee Compression Ahead? - PitchGrade",
+          "url": "https://pitchgrade.com/research/blackrock-ai-margin-pressure",
+          "date": ""
+        },
+        "bear": "UBS terminated its Aladdin contract, potentially shifting a $126M annual revenue stream to in\u2011house systems by year\u2011end 2025 (F58\u201360). This exit signals that large institutional clients may move away from Aladdin, exposing BlackRock to client churn and revenue erosion.",
+        "bear_source": {
+          "title": "UBS Ditches BlackRock\u2019s Aladdin Platform to Cut Fund Unit Costs - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2025-07-24/ubs-ditches-blackrock-s-aladdin-platform-to-cut-fund-unit-costs",
+          "date": ""
+        },
+        "verdict": "Bull wins: the scale of Aladdin\u2019s asset base and margin expansion, coupled with new high\u2011profile clients, outweighs the single UBS exit, which represents a modest portion of Aladdin\u2019s overall revenue.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "ESG & Climate Regulatory Risk",
+        "bull": "Demand for ESG products is rising, and BlackRock\u2019s extensive ESG offering positions it to capture fee growth from sustainability\u2011focused investors. The firm\u2019s active engagement in climate initiatives has earned a consensus \u2018Buy\u2019 rating and a price target lift to $1,321 (F23), reflecting market confidence.",
+        "bull_source": {
+          "title": "BlackRock (BLK) Stock Forecast & Analyst Price Targets",
+          "url": "https://stockanalysis.com/stocks/blk/forecast/",
+          "date": ""
+        },
+        "bear": "BlackRock is a defendant in a federal antitrust lawsuit filed by Texas and other states (F24), and the firm has lost \u20ac29B (~$34B) in mandates due to sustainability\u2011focused policy shifts (F12). These legal and mandate losses raise significant regulatory and reputational risk.",
+        "bear_source": {
+          "title": "STATE OF TEXAS, et al., Plaintiffs,",
+          "url": "https://justthenews.com/sites/default/files/2025-08/MEMORANDUM%20OPINION%20.pdf",
+          "date": ""
+        },
+        "verdict": "Bull wins: the positive market sentiment and price target upgrade outweigh the pending lawsuit and mandate losses, which have not yet materialized into financial penalties.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "AUM Growth & Fee Compression",
+        "bull": "AUM reached $15.3T in Q2\u202f2026, up 22% YoY (F25), and organic base fee growth of 8\u201310% (F7) has driven a 45.9% margin expansion (F39). Macro conditions\u2014expanding manufacturing and services sectors, a steepening yield curve, and low volatility\u2014support continued fee growth and pricing power.",
+        "bull_source": {
+          "title": "BlackRock (BLK) Q2 2026 Earnings Call Transcript | The Motley Fool",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/07/22/blackrock-blk-q2-2026-earnings-call-transcript/",
+          "date": ""
+        },
+        "bear": "Expense growth was 48.4% in Q4\u202f2025 (F34), and outflows from mandates lost to Dutch pension funds (F10\u201312) could compress margins if inflows slow. Regulatory scrutiny and competitive pressure also pose fee compression risks.",
+        "bear_source": {
+          "title": "BlackRock Q4 2025: Fee Growth and Securities Lending Drive Revenue, But Margin Compression Warrants Attention",
+          "url": "https://www.ainvest.com/news/blackrock-q4-2025-fee-growth-securities-lending-drive-revenue-margin-compression-warrants-attention-2604/",
+          "date": ""
+        },
+        "verdict": "Bull wins: the robust AUM growth and fee expansion provide a strong cushion against the expense growth and outflows, indicating that fee compression risk is currently manageable.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Digital Assets & Bitcoin ETF Growth",
+        "bull": "BlackRock\u2019s iShares Bitcoin Trust captured $284.4M in inflows, representing ~90% of total Bitcoin ETF inflows on Aug\u202f25\u202f2026 (F49), and the firm\u2019s Bitcoin and Ether ETFs attracted $438.4M in inflows (F52). The high demand for spot Bitcoin ETFs and BlackRock\u2019s brand strength position it well to capture further growth.",
+        "bull_source": {
+          "title": "Crypto ETFs Draw Over $550 Million on August 25 Led by Bitcoin and BlackRock | Gate News",
+          "url": "https://www.gate.com/news/detail/crypto-etfs-draw-over-550-million-on-august-25-led-by-bitcoin-and-blackrock-23736159",
+          "date": ""
+        },
+        "bear": "Digital asset markets are highly volatile, and BlackRock\u2019s Bitcoin ETFs experienced a combined net outflow of $3.5B in Q2\u202f2026, a $17.4B YoY swing (F53), indicating sensitivity to market sentiment and regulatory scrutiny.",
+        "bear_source": {
+          "title": "BlackRock's Crypto ETFs See $3.5 Billion Net Outflow in Q2 \u2014 A $17.4 Billion Year-on-Year Swing and a Bifurcated Supply-Demand Picture",
+          "url": "https://finance.biggo.com/news/7a116dfc-c3dd-444a-9f58-b6fa2661b343",
+          "date": ""
+        },
+        "verdict": "Bear wins: the net outflow of $3.5B outweighs the inflows, indicating that the Bitcoin ETF segment is currently underperforming and subject to significant risk.",
+        "verdict_side": "bear"
+      }
+    ],
+    "falsifiers": [
+      "Vanguard overtakes BlackRock by a larger margin and BlackRock loses additional mandates to Dutch pension funds",
+      "BlackRock loses a major Aladdin client beyond UBS, reducing platform revenue by >$200\u202fM",
+      "Antitrust lawsuit results in a fine >$1\u202fB or regulatory restrictions on ESG offerings",
+      "Bitcoin ETF net outflows exceed inflows by >$1\u202fB in a single quarter",
+      "AUM growth slows to <10% YoY or fee compression >5% due to macro slowdown"
+    ],
+    "confidence": "high",
+    "confidence_why": "Multiple tailwinds outweigh headwinds; weighted evidence score 1.55 indicates a constructive outlook."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "long",
+    "sector_score": 0.6908,
+    "sector_why": "svc new orders growing: Finance & Insurance",
+    "industry_flags": [],
+    "respondent_comments": [
+      {
+        "industry": "Finance & Insurance",
+        "quote": "Economic conditions remain stable. Banking activity continues to be supported by healthy commercial client demand, though businesses remain cautious amid interest rate and inflation uncertainty. Overall outlook remains positive for both the banking industry and my company."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The expanding manufacturing and services sectors, coupled with a steepening yield curve and low volatility, signal robust corporate earnings and investor confidence, which should lift demand for BlackRock\u2019s investment\u2011management services. The long tilt for finance and insurance further supports fee growth and AUM inflows, reinforcing pricing power. Meanwhile, the low\u2011rate environment keeps financing costs down, while modest input\u2011cost pressures are offset by scale and technology efficiencies.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "Expanding manufacturing and services PMI and new orders boost corporate earnings, increasing demand for BlackRock\u2019s asset\u2011management and advisory services."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "helps",
+        "why": "Strong investor appetite and a long tilt for finance allow BlackRock to maintain or modestly raise fee rates, supporting margin expansion."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "helps",
+        "why": "Steepening yield curve and low VIX reflect low borrowing rates, reducing BlackRock\u2019s cost of capital for growth initiatives."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Higher labor and technology expenses may rise modestly, slightly compressing operating margins."
+      },
+      {
+        "channel": "capex",
+        "direction": "mixed",
+        "why": "Demand for platform expansion (Aladdin) may increase capex, but scale efficiencies could offset the impact on margins."
+      },
+      {
+        "channel": "working capital",
+        "direction": "helps",
+        "why": "Improved cash flow from inflows and fee income strengthens working capital, reducing liquidity pressure."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q1\u202f2026 earnings release",
+      "window": "Early\u202f2026 (likely January\u202f2026)",
+      "expected": "BlackRock is expected to report earnings that continue its strong trend of fee growth and AUM inflows, likely beating consensus estimates and providing guidance that supports the 13% organic inflow growth seen in Q1\u202f2026. A positive earnings beat would reinforce investor confidence and support the $",
+      "source": {
+        "title": "BlackRock's Record Q1 Inflows: Can the Momentum Sustain?",
+        "url": "https://www.ainvest.com/news/blackrock-record-q1-inflows-momentum-sustain-2604/",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q3\u202f2026 earnings release",
+      "window": "Mid\u20112026 (likely July\u202f2026)",
+      "expected": "The company is expected to report revenue and EPS growth similar to Q2\u202f2026, with revenue up 31% YoY to $7.1\u202fB and adjusted EPS around $13.91. A beat on earnings would confirm the continued momentum in fee\u2011based and Aladdin\u2011derived revenue streams and likely lead to a positive guidance for Q4\u202f2026.",
+      "source": {
+        "title": "BlackRock (BLK) Q2 2026 Earnings Call Transcript | The Motley Fool",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/07/22/blackrock-blk-q2-2026-earnings-call-transcript/",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q4\u202f2026 earnings release",
+      "window": "Late\u202f2026 (likely October\u202f2026)",
+      "expected": "BlackRock is expected to report earnings that maintain or improve upon the Q3\u202f2026 performance, with revenue growth and EPS around the $13.91 level. A positive earnings beat would support the company\u2019s outlook for 2027 and reinforce its fee\u2011growth trajectory.",
+      "source": {
+        "title": "BlackRock (BLK) Q2 2026 Earnings Call Transcript | The Motley Fool",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/07/22/blackrock-blk-q2-2026-earnings-call-transcript/",
+        "date": ""
+      }
+    },
+    {
+      "event": "Final ruling on Texas climate collusion lawsuit",
+      "window": "2027 (exact date TBD)",
+      "expected": "The court may dismiss all remaining counts or partially dismiss the case. A full dismissal would reduce regulatory exposure and potential costs, while a partial dismissal could still impose significant legal and reputational costs. The outcome will influence BlackRock\u2019s litigation risk profile and p",
+      "source": {
+        "title": "BlackRock, other fund managers lose bid to dismiss Texas climate collusion lawsuit | Reuters",
+        "url": "https://www.reuters.com/sustainability/boards-policy-regulation/blackrock-other-fund-managers-lose-bid-dismiss-texas-climate-collusion-lawsuit-2025-08-01/",
+        "date": ""
+      }
+    },
+    {
+      "event": "Court decision on motion to dismiss antitrust lawsuit",
+      "window": "Q3\u202f2026 (exact date TBD)",
+      "expected": "The court may grant the motion to dismiss the antitrust lawsuit filed by Texas and other states, or partially dismiss it. A dismissal would eliminate the litigation risk and potential regulatory scrutiny, whereas a partial dismissal could still expose BlackRock to legal costs and reputational impact",
+      "source": {
+        "title": "Top fund managers ask US court to dismiss climate-related antitrust lawsuit",
+        "url": "https://www.reuters.com/legal/blackrock-vanguard-state-street-ask-court-dismiss-us-antitrust-lawsuit-2025-03-18/",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

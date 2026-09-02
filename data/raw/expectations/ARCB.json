@@ -1,0 +1,77 @@
+{
+  "ticker": "ARCB",
+  "as_of": "2026-09-02T13:49:14.169660+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.81226,
+    "eps_d30": 6.31545,
+    "eps_d90": 5.15757,
+    "change_30d_pct": 7.87,
+    "change_90d_pct": 32.08,
+    "analysts_up_30d": 9,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.46,
+        "estimate": 1.36915,
+        "surprise_pct": 6.64
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.36,
+        "estimate": 0.41785,
+        "surprise_pct": -13.84
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.32,
+        "estimate": 0.2878,
+        "surprise_pct": 11.19
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.38,
+        "estimate": 2.26314,
+        "surprise_pct": 5.16
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 2.29
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": 0.41
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": -1.37
+      },
+      {
+        "report_date": "2026-02-25",
+        "move_pct": -3.34
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": -0.88
+      }
+    ],
+    "avg_abs_move_pct": 1.5,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +32.1% over 90 days and +7.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 9 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.4%, -1.4%, -3.3%, -0.9% (average absolute move 1.5%, 3 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +2.3%."
+  ]
+}

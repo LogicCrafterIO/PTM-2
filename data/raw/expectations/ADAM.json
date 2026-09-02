@@ -1,0 +1,97 @@
+{
+  "ticker": "ADAM",
+  "as_of": "2026-08-20T06:44:39.574304+00:00",
+  "earnings_date": "2026-10-30",
+  "implied": {
+    "available": true,
+    "reason": "",
+    "expiry": "2027-01-15",
+    "expiry_covers_earnings": true,
+    "expiries_listed": 4,
+    "spot": 10.18,
+    "strike": 10.0,
+    "strike_offset_pct": -1.77,
+    "implied_move_pct": 16.7,
+    "open_interest": 40,
+    "two_sided_strikes": 2,
+    "strikes": 10,
+    "spread_pct": null,
+    "quote_basis": "last_trade_only",
+    "open_interest_missing": false,
+    "thin": true
+  },
+  "revisions": {
+    "available": true,
+    "eps_current": 1.248,
+    "eps_d30": 1.08693,
+    "eps_d90": 1.06,
+    "change_30d_pct": 14.82,
+    "change_90d_pct": 17.74,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.24,
+        "estimate": 0.21773,
+        "surprise_pct": 10.23
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.23,
+        "estimate": 0.24549,
+        "surprise_pct": -6.31
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.29,
+        "estimate": 0.22751,
+        "surprise_pct": 27.47
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.3,
+        "estimate": 0.24768,
+        "surprise_pct": 21.12
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 13.13
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": 1.45
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": -1.0
+      },
+      {
+        "report_date": "2026-02-20",
+        "move_pct": -1.81
+      },
+      {
+        "report_date": "2025-11-04",
+        "move_pct": 1.49
+      }
+    ],
+    "avg_abs_move_pct": 1.44,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Options price a 16.7% move by 2027-01-15 (no strike near spot quotes two-sided, so this is from last traded prices and may be stale). That is the hurdle this thesis has to clear to pay.",
+    "Chain is thin: 40 contracts of open interest across 10 strikes, 2 of them quotable \u2014 the position may be hard to put on at a sensible price.",
+    "Consensus EPS for the current year has moved +17.7% over 90 days and +14.8% over 30 days \u2014 expectations are already rising, so that much is priced.",
+    "Analyst revisions in the last 30 days: 2 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.4%, -1.0%, -1.8%, +1.5% (average absolute move 1.4%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +13.1%."
+  ]
+}

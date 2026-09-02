@@ -1,0 +1,77 @@
+{
+  "ticker": "TOST",
+  "as_of": "2026-08-30T14:30:45.613980+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.38658,
+    "eps_d30": 1.34788,
+    "eps_d90": 1.34655,
+    "change_30d_pct": 2.87,
+    "change_90d_pct": 2.97,
+    "analysts_up_30d": 14,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.2791,
+        "estimate": 0.23341,
+        "surprise_pct": 19.57
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.2685,
+        "estimate": 0.23777,
+        "surprise_pct": 12.92
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.2892,
+        "estimate": 0.27115,
+        "surprise_pct": 6.66
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.35608,
+        "estimate": 0.31967,
+        "surprise_pct": 11.39
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 12.63
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": 2.93
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": -14.74
+      },
+      {
+        "report_date": "2026-02-18",
+        "move_pct": 0.04
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": 9.48
+      }
+    ],
+    "avg_abs_move_pct": 6.8,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.0% over 90 days and +2.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 14 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +2.9%, -14.7%, +0.0%, +9.5% (average absolute move 6.8%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +12.6%."
+  ]
+}

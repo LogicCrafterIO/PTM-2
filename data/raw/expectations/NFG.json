@@ -1,0 +1,77 @@
+{
+  "ticker": "NFG",
+  "as_of": "2026-08-30T14:08:08.102508+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.32803,
+    "eps_d30": 7.36945,
+    "eps_d90": 7.4878,
+    "change_30d_pct": -0.56,
+    "change_90d_pct": -2.13,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.22,
+        "estimate": 1.11193,
+        "surprise_pct": 9.72
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.06,
+        "estimate": 1.91898,
+        "surprise_pct": 7.35
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.71,
+        "estimate": 2.83649,
+        "surprise_pct": -4.46
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.54,
+        "estimate": 1.43771,
+        "surprise_pct": 7.11
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 4.93
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": 1.89
+      },
+      {
+        "report_date": "2026-04-30",
+        "move_pct": -4.19
+      },
+      {
+        "report_date": "2026-01-29",
+        "move_pct": 1.1
+      },
+      {
+        "report_date": "2025-11-21",
+        "move_pct": -0.68
+      }
+    ],
+    "avg_abs_move_pct": 1.97,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.1% over 90 days and -0.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.9%, -4.2%, +1.1%, -0.7% (average absolute move 2.0%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +4.9%."
+  ]
+}

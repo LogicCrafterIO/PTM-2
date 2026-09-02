@@ -1,0 +1,77 @@
+{
+  "ticker": "ISRG",
+  "as_of": "2026-08-30T13:44:44.544302+00:00",
+  "earnings_date": "2026-10-20",
+  "revisions": {
+    "available": true,
+    "eps_current": 10.79481,
+    "eps_d30": 10.79113,
+    "eps_d90": 10.41054,
+    "change_30d_pct": 0.03,
+    "change_90d_pct": 3.69,
+    "analysts_up_30d": 25,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.4,
+        "estimate": 1.98832,
+        "surprise_pct": 20.7
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.53,
+        "estimate": 2.26767,
+        "surprise_pct": 11.57
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.5,
+        "estimate": 2.10677,
+        "surprise_pct": 18.67
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.8,
+        "estimate": 2.50303,
+        "surprise_pct": 11.86
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 15.7
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-21",
+        "move_pct": -0.88
+      },
+      {
+        "report_date": "2026-04-22",
+        "move_pct": 7.16
+      },
+      {
+        "report_date": "2026-02-03",
+        "move_pct": -3.59
+      },
+      {
+        "report_date": "2025-10-22",
+        "move_pct": 13.89
+      }
+    ],
+    "avg_abs_move_pct": 6.38,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.7% over 90 days and +0.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 25 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.9%, +7.2%, -3.6%, +13.9% (average absolute move 6.4%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +15.7%."
+  ]
+}

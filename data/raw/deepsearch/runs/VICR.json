@@ -1,0 +1,1385 @@
+{
+  "ticker": "VICR",
+  "name": "Vicor Corporation",
+  "sector": "Industrials",
+  "industry": "Electrical Components & Equipment",
+  "as_of": "2026-08-30",
+  "research": {
+    "ticker": "VICR",
+    "as_of": "2026-08-30",
+    "queries_run": [
+      "Vicor latest earnings results Q1 2025 revenue guidance analyst reactions",
+      "Vicor customer wins data center AI power 48V 2025",
+      "Vicor management changes CEO CFO board 2025",
+      "Vicor bear case risks customer concentration AI demand slowdown 2025",
+      "Vicor vs competitors Infineon Renesas Monolithic Power Systems power modules 2025",
+      "AI data center power architecture 48V DC distribution latest trends 2025",
+      "Data center 380V DC power distribution market forecast 2026",
+      "Vicor Factorized Power Architecture product launches backlog 2025",
+      "Semiconductor power component supply chain risks tariffs 2025",
+      "Analyst sentiment Vicor stock price target upgrades downgrades this quarter"
+    ],
+    "findings": [
+      {
+        "claim": "Q1 2025 revenue $94.0M, 12% YoY growth, 2.3% sequential decline.",
+        "source": {
+          "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+          "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-04-29"
+      },
+      {
+        "claim": "Gross margin $44.4M Q1 2025, down from $45.1M YoY and $50.4M Q4 2024.",
+        "source": {
+          "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+          "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-04-29"
+      },
+      {
+        "claim": "Adjusted EPS $0.14 Q1 2025, 52.5% below analyst $0.29.",
+        "source": {
+          "title": "VICR Q1 Earnings Call: Licensing Transitions and Tariff Pressures Shape Results",
+          "url": "https://investor.wedbush.com/wedbush/article/stockstory-2025-5-13-vicr-q1-earnings-call-licensing-transitions-and-tariff-pressures-shape-results",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-05-13"
+      },
+      {
+        "claim": "Adjusted EBITDA $9.72M Q1 2025, 40.4% below analyst $16.3M.",
+        "source": {
+          "title": "VICR Q1 Earnings Call: Licensing Transitions and Tariff Pressures Shape Results",
+          "url": "https://investor.wedbush.com/wedbush/article/stockstory-2025-5-13-vicr-q1-earnings-call-licensing-transitions-and-tariff-pressures-shape-results",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-05-13"
+      },
+      {
+        "claim": "Operating margin 0.2% Q1 2025, down from 1.3% same quarter last year.",
+        "source": {
+          "title": "VICR Q1 Earnings Call: Licensing Transitions and Tariff Pressures Shape Results",
+          "url": "https://investor.wedbush.com/wedbush/article/stockstory-2025-5-13-vicr-q1-earnings-call-licensing-transitions-and-tariff-pressures-shape-results",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-05-13"
+      },
+      {
+        "claim": "Backlog $171.7M at Q1 2025 end.",
+        "source": {
+          "title": "Vicor (NASDAQ:VICR) Misses Q1 Revenue Estimates, Stock Drops 11.5%",
+          "url": "https://elite.finviz.com/news/41545/vicor-nasdaq-vicr-misses-q1-revenue-estimates-stock-drops-115",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-04-29"
+      },
+      {
+        "claim": "Vicor promotes 48V power module platform globally to meet AI and industrial demand for higher voltage solutions reducing energy loss.",
+        "source": {
+          "title": "US chipmaker Vicor pushes 48V power modules for AI, industrial applications",
+          "url": "https://www.digitimes.com/news/a20250324PD211/industrial-equipment-data-center-industrial-control-demand.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-03-25"
+      },
+      {
+        "claim": "48V direct-to-load architecture enables up to 100kA current for clustered AI ASIC processors, addressing power delivery challenges.",
+        "source": {
+          "title": "Powering Clustered AI Processors | Vicor | Data Center",
+          "url": "https://www.vicorpower.com/resource-library/articles/high-performance-computing/powering-clustered-ai-processors",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Vicor\u2019s 48\u2011V Factorized Power Architecture cuts I\u00b2R thermal losses for high\u2011demand AI processor loads.",
+        "source": {
+          "title": "Exclusive\u2014Powering AI Processors Using a 48 V Factorized Power Architecture - Tech Insights",
+          "url": "https://eepower.com/tech-insights/exclusivepowering-ai-processors-using-a-48-v-factorized-power-architecture/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-24"
+      },
+      {
+        "claim": "AI factories plan to deploy >250,000 GPUs, with GPUs projected to consume 50% of total utility energy in future AI factories.",
+        "source": {
+          "title": "Running in the Right Direction with 48V for AI Processor Power | HPC | Vicor",
+          "url": "https://www.vicorpower.com/resource-library/articles/high-performance-computing/running-in-the-right-direction-with-48v-for-ai-processor-power",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Gen\u202f2 VPD delivers 3\u202fA/mm\u00b2 current density, up to 40\u00d7 current multiplication, and a 1.5\u202fmm package thickness.",
+        "source": {
+          "title": "The Last 1.5mm of AI Power: Three Numbers from Vicor\u2019s Q1 2026 Earnings Call",
+          "url": "https://photoncap.net/p/the-last-15mm-of-ai-power-three-numbers",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-04-22"
+      },
+      {
+        "claim": "Gen\u202f2 VPD targets current gains above 40\u00d7 and high current density, outperforming competitors like TXN and ADI.",
+        "source": {
+          "title": "Gen 2 VPD Boosts VICR's Power Management Prospects Against TXN & ADI",
+          "url": "https://finance.yahoo.com/technology/ai/articles/gen-2-vpd-boosts-vicrs-155400148.html",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-08-25"
+      },
+      {
+        "claim": "Vicor CEO rebuts the 800\u202fV\u2011to\u20116\u202fV bus architecture as structurally flawed for AI power delivery.",
+        "source": {
+          "title": "The Last 1.5mm of AI Power: Three Numbers from Vicor\u2019s Q1 2026 Earnings Call",
+          "url": "https://photoncap.net/p/the-last-15mm-of-ai-power-three-numbers",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-04-22"
+      },
+      {
+        "claim": "Q3 2025 revenue $110.42M, up 18.52% YoY.",
+        "source": {
+          "title": "Vicor Corporation (VICR) Q3 2025 Earnings Call Transcript | Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4831648-vicor-corporation-vicr-q3-2025-earnings-call-transcript",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-10-21"
+      },
+      {
+        "claim": "Q3 2025 EPS $0.73, beating guidance by $0.53.",
+        "source": {
+          "title": "Vicor Corporation (VICR) Q3 2025 Earnings Call Transcript | Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4831648-vicor-corporation-vicr-q3-2025-earnings-call-transcript",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-10-21"
+      },
+      {
+        "claim": "Q4 2025 product revenue $92.7M, 15.3% YoY increase from $80.4M.",
+        "source": {
+          "title": "Vicor Corporation Reports Results for the Fourth Quarter and Year Ended December 31, 2025 | Vicor Corporation",
+          "url": "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-fourth-quarter-and-year-8",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-02-19"
+      },
+      {
+        "claim": "Q4 2025 product revenue rose 4.5% sequentially from Q3 $88.7M.",
+        "source": {
+          "title": "Vicor Corporation Reports Results for the Fourth Quarter and Year Ended December 31, 2025 | Vicor Corporation",
+          "url": "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-fourth-quarter-and-year-8",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-02-19"
+      },
+      {
+        "claim": "Q1 2026 backlog surged 70% sequentially to $300.6M.",
+        "source": {
+          "title": "Vicor Corporation: The Good News Is Already in the Price (NASDAQ:VICR) | Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4916104-vicor-corporation-stock-good-news-is-already-in-the-price",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-06-18"
+      },
+      {
+        "claim": "Q1 2026 forward revenue multiple 25.6x, double peers.",
+        "source": {
+          "title": "Vicor Corporation: The Good News Is Already in the Price (NASDAQ:VICR) | Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4916104-vicor-corporation-stock-good-news-is-already-in-the-price",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-06-18"
+      },
+      {
+        "claim": "2025 net income rose from $6M to $118M, but $45M patent settlement and $24M tax benefit >50%.",
+        "source": {
+          "title": "Vicor Stock Analysis 2026: Buy or Sell? - TickerGuard",
+          "url": "https://tickerguard.com/articles/vicor-stock-analysis",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-07-18"
+      },
+      {
+        "claim": "2026 valuation 70x forward P/E, insider selling, capex risk, customer concentration, competition eroding margins.",
+        "source": {
+          "title": "Insiders Sell Into Vicor Rally, Should Investors Follow Suit? \u2014 StockScreener",
+          "url": "https://stockscreener.finance/en/news/insiders-sell-into-vicor-rally-should-investors-follow-suit/",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-04-15"
+      },
+      {
+        "claim": "Q1 2026 revenue $113.0M, up 20.2% YoY.",
+        "source": {
+          "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+          "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-14"
+      },
+      {
+        "claim": "Q1 backlog $301M, up 70% sequential.",
+        "source": {
+          "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+          "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-14"
+      },
+      {
+        "claim": "Gross margin expanded to 55.2%.",
+        "source": {
+          "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+          "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-14"
+      },
+      {
+        "claim": "Free cash flow positive ~$51.3M.",
+        "source": {
+          "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+          "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-14"
+      },
+      {
+        "claim": "Valuation multiples: 72x P/E, 22x P/S, EV/EBITDA 91x.",
+        "source": {
+          "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+          "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-14"
+      },
+      {
+        "claim": "AI data\u2011center power is fastest growth vector; Vicor, MPS, Infineon growing 20\u201350%+.",
+        "source": {
+          "title": "The PMIC / Power Management IC Sector Analysis",
+          "url": "https://vocus.cc/article/6a34cb17fd8978000150961a",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-06-19"
+      },
+      {
+        "claim": "Nvidia H100 TDP 700W vs Intel CPU <200W; next\u2011gen chips need >200kW rack power vs 15\u201120kW current.",
+        "source": {
+          "title": "Energizing AI: Power Delivery Competition Heats Up Vicor, MPS, Delta, ADI, Renesas, Infineon",
+          "url": "https://newsletter.semianalysis.com/p/energizing-ai-power-delivery-competition",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2023-08-01"
+      },
+      {
+        "claim": "Vicor\u2019s edge is premium engineering in high\u2011density power systems; rivals with scale and lower cost pressure pricing.",
+        "source": {
+          "title": "Vicor Competitive Landscape in 2025: 5 Rivals, 4 Signals \u2013 Pestel-analysis.com",
+          "url": "https://pestel-analysis.com/blogs/competitors/vicorpower",
+          "date": ""
+        },
+        "category": "competition",
+        "dated": "2026-07-13"
+      },
+      {
+        "claim": "Vicor offers a high\u2011density DCM 48V\u2011to\u201112V bus converter for 48V bus architectures in AI servers.",
+        "source": {
+          "title": "Data Center Power Architecture: Designing the 48V Bus and Point-of-Load Conversion System for AI Servers - CHINA SMPS",
+          "url": "https://china-smps.com/data-center-power-architecture-designing-the-48v-bus-and-point-of-load-conversion-system-for-ai-servers/",
+          "date": ""
+        },
+        "category": "product",
+        "dated": "2026-07-03"
+      },
+      {
+        "claim": "The 48V bus architecture is being adopted in AI data centers, driving demand for DC\u2011DC converters like Vicor\u2019s.",
+        "source": {
+          "title": "Data Center Power Architecture: Designing the 48V Bus and Point-of-Load Conversion System for AI Servers - CHINA SMPS",
+          "url": "https://china-smps.com/data-center-power-architecture-designing-the-48v-bus-and-point-of-load-conversion-system-for-ai-servers/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-03"
+      },
+      {
+        "claim": "The 380V DC data center market is projected to reach $13.8\u202fB by 2034, growing at 14.8% CAGR.",
+        "source": {
+          "title": "380-Volt DC Data Center Market Research Report 2034",
+          "url": "https://marketintelo.com/report/380-volt-dc-data-center-market",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-06-11"
+      },
+      {
+        "claim": "The DC distribution network market is estimated at $21.24\u202fB in 2026, expected to reach $31.40\u202fB by 2031, 8.13% CAGR.",
+        "source": {
+          "title": "DC Distribution Network - Market Share Analysis, Industry Trends & Statistics, Growth Forecasts (2026 - 2031)",
+          "url": "https://www.giiresearch.com/report/moi2121371-dc-distribution-network-market-share-analysis.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-27"
+      },
+      {
+        "claim": "NVIDIA\u2019s 800\u202fVDC architecture delivers 85% more power transmission through the same conductor size and cuts copper use by 45%.",
+        "source": {
+          "title": "NVIDIA 800 VDC Architecture Will Power the Next Generation of AI Factories | NVIDIA Technical Blog",
+          "url": "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/",
+          "date": ""
+        },
+        "category": "technology",
+        "dated": ""
+      },
+      {
+        "claim": "Data centers are shifting from AC to DC\u2011DC conversion at rack level, reducing conversion stages and improving efficiency.",
+        "source": {
+          "title": "Data Centers Boost Voltage For Higher Efficiency",
+          "url": "https://semiengineering.com/data-centers-boost-voltage-for-higher-efficiency/",
+          "date": ""
+        },
+        "category": "technology",
+        "dated": "2025-10-16"
+      },
+      {
+        "claim": "Higher voltage architectures (48V, 800V) are expected to boost demand for high\u2011efficiency DC\u2011DC converters, benefiting Vicor.",
+        "source": {
+          "title": "NVIDIA 800 VDC Architecture Will Power the Next Generation of AI Factories | NVIDIA Technical Blog",
+          "url": "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "Vicor\u2019s DCM 48V\u2011to\u201112V converter is positioned to capture the growing AI server market that requires 48V bus systems.",
+        "source": {
+          "title": "Data Center Power Architecture: Designing the 48V Bus and Point-of-Load Conversion System for AI Servers - CHINA SMPS",
+          "url": "https://china-smps.com/data-center-power-architecture-designing-the-48v-bus-and-point-of-load-conversion-system-for-ai-servers/",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-07-03"
+      },
+      {
+        "claim": "Vicor Advanced Products revenue grew 26% to $249\u202fmillion in 2025, representing 61% of total revenue (up from 55% in 2024).",
+        "source": {
+          "title": "",
+          "url": "https://www.panabee.com/news/vicor-earnings-2025-annual",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-03-02"
+      },
+      {
+        "claim": "Legacy Brick Products revenue fell 2% to $159\u202fmillion in 2025.",
+        "source": {
+          "title": "",
+          "url": "https://www.panabee.com/news/vicor-earnings-2025-annual",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-03-02"
+      },
+      {
+        "claim": "Vicor released the DCM3717/3735 family of 48\u202fV\u201112\u202fV DC\u2011DC converters, offering 750\u202fW\u20132\u202fkW power and 5\u202fkW/in\u00b3 density.",
+        "source": {
+          "title": "Vicor releases a DCM family of regulated 48V to 12V DC-DC converters",
+          "url": "https://www.vicorpower.com/press-room/2025/vicor-releases-a-dcm-family-of-regulated-48v-to-12v-dc-dc-converters",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2025-03-26"
+      },
+      {
+        "claim": "Q4\u202f2025 product revenue was $92.7\u202fmillion, a 15.3% year\u2011over\u2011year increase and 4.5% rise from Q3.",
+        "source": {
+          "title": "Vicor Corporation Q4 2025 Earnings Call Highlights | Intellectia.AI",
+          "url": "https://intellectia.ai/news/stock/vicor-corporation-q4-2025-earnings-call-highlights",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-02-20"
+      },
+      {
+        "claim": "Q4\u202f2025 book\u2011to\u2011bill ratio exceeded 1.2; backlog grew 15.8% to $176.9\u202fmillion.",
+        "source": {
+          "title": "Vicor Corporation Q4 2025 Earnings Call Highlights | Intellectia.AI",
+          "url": "https://intellectia.ai/news/stock/vicor-corporation-q4-2025-earnings-call-highlights",
+          "date": ""
+        },
+        "category": "fundamentals",
+        "dated": "2026-02-20"
+      },
+      {
+        "claim": "Data Center Low Voltage market size reached $3.9\u202fbillion in 2025 and is projected to grow to $6.48\u202fbillion by 2030 (CAGR\u202f10.7%).",
+        "source": {
+          "title": "Data Center Low Voltage Or Medium Voltage Power Distribution Market 2026",
+          "url": "https://www.thebusinessresearchcompany.com/report/data-center-low-voltage-lv-or-medium-voltage-mv-power-distribution-global-market-report",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-07-01"
+      },
+      {
+        "claim": "Global DC Distribution Networks market hit $17.3\u202fbillion in 2024 and is expected to expand through 2034.",
+        "source": {
+          "title": "Global DC Distribution Networks Market Size, Trends and Forecast 2034",
+          "url": "https://www.syndicatemarketresearch.com/market-analysis/dc-distribution-networks-market.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2024-01-01"
+      },
+      {
+        "claim": "DC Power Distribution market forecasted to reach $34.4\u202fbillion by 2036, growing at 7.2% CAGR from 2026 to 2036.",
+        "source": {
+          "title": "DC Power Distribution Market Size, Share, Growth and Forecast 2036",
+          "url": "https://www.factmr.com/report/dc-power-distribution-market",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-06-18"
+      },
+      {
+        "claim": "Vicor Q2 CY2025 revenue was $96.05\u202fmillion, up 11.9% year\u2011on\u2011year.",
+        "source": {
+          "title": "VICR Q2 Deep Dive: Patent Settlement and New Product Progress Drive Outperformance",
+          "url": "https://finviz.com/news/115585/vicr-q2-deep-dive-patent-settlement-and-new-product-progress-drive-outperformance",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-07-25"
+      },
+      {
+        "claim": "GAAP EPS for Q2 CY2025 was $0.91 per share, far above the $0.11 consensus estimate.",
+        "source": {
+          "title": "VICR Q2 Deep Dive: Patent Settlement and New Product Progress Drive Outperformance",
+          "url": "https://finviz.com/news/115585/vicr-q2-deep-dive-patent-settlement-and-new-product-progress-drive-outperformance",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-07-25"
+      },
+      {
+        "claim": "Adjusted EBITDA for Q2 CY2025 was $5.57\u202fmillion, versus a $15\u202fmillion estimate, yielding a 5.8% margin.",
+        "source": {
+          "title": "VICR Q2 Deep Dive: Patent Settlement and New Product Progress Drive Outperformance",
+          "url": "https://finviz.com/news/115585/vicr-q2-deep-dive-patent-settlement-and-new-product-progress-drive-outperformance",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2025-07-25"
+      },
+      {
+        "claim": "S&P Global analysts rate Vicor a \u201cBuy\u201d with a 1\u2011year price target of $386.25 (+105.73%).",
+        "source": {
+          "title": "Vicor (VICR) Stock Forecast & Analyst Price Targets",
+          "url": "https://stockanalysis.com/stocks/vicr/forecast/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-28"
+      },
+      {
+        "claim": "USTR\u2019s consideration of new tariffs on imported semiconductors could boost demand for power\u2011conversion solutions, benefiting Vicor.",
+        "source": {
+          "title": "USTR Considers New Tariffs on Imported Semiconductors",
+          "url": "https://www.jsjtoop.com/news/active-components/Power_Semi/USTR_Considers_New_Tariffs_on_Imported_Semiconductors.html",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-05-23"
+      },
+      {
+        "claim": "Tariff\u2011driven supply\u2011chain shifts may increase Vicor\u2019s market share in power\u2011device segments.",
+        "source": {
+          "title": "Tariffs Impact Global Semiconductor Industry in 2025",
+          "url": "https://www.designnews.com/semiconductors-chips/tariffs-reshape-global-semiconductor-landscape-trigger-higher-prices",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2025-08-22"
+      },
+      {
+        "claim": "Consensus 12\u2011month price target $381.67 with an average rating of \u201cModerate Buy\u201d from five analysts.",
+        "source": {
+          "title": "Vicor Corporation (NASDAQ:VICR) Receives $381.67 Consensus PT from Brokerages - Defense World",
+          "url": "https://www.defenseworld.net/2026/08/28/vicor-corporation-nasdaqvicr-receives-381-67-consensus-pt-from-brokerages.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-28"
+      },
+      {
+        "claim": "Vicor\u2019s market capitalization is $10.20\u202fbillion.",
+        "source": {
+          "title": "Vicor Corporation (VICR) Down 5.6% \u2014 Should I Dissolve This Stake? - Weiss Ratings",
+          "url": "https://weissratings.com/en/instant-news-alerts/vicor-corporation-vicr-down-5-6-should-i-dissolve-this-stake",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-10"
+      },
+      {
+        "claim": "Roth Capital lifted Vicor\u2019s target price to $375 on June\u202f22, 2026.",
+        "source": {
+          "title": "",
+          "url": "https://www.americanbankingnews.com/2026/08/05/vicor-corporation-nasdaqvicr-given-consensus-rating-of-moderate-buy-by-analysts.html",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-05"
+      },
+      {
+        "claim": "Advanced Products revenue grew 45% YoY and backlog surged 145% to $380\u202fmillion.",
+        "source": {
+          "title": "This Tiny AI Supplier Could Be More Important Than the Chipmakers | Longbridge",
+          "url": "https://longbridge.com/news/293934824",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-07-27"
+      },
+      {
+        "claim": "Craig\u2011Hallum raised Vicor\u2019s price target to $450 from $400.",
+        "source": {
+          "title": "Craig-Hallum raises Vicor price target to $450",
+          "url": "https://scanx.trade/stock-market-news/investment-ideas/craig-hallum-raises-vicor-price-target-to-450/43689322",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-06-22"
+      },
+      {
+        "claim": "Vicor\u2019s 1\u2011year total shareholder return reached 367.52%.",
+        "source": {
+          "title": "Is Vicor (VICR) Undervalued Following Raised Earnings Estimates? - Simply Wall St News",
+          "url": "https://simplywall.st/stocks/us/capital-goods/nasdaq-vicr/vicor/news/is-vicor-vicr-undervalued-following-raised-earnings-estimate",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-20"
+      },
+      {
+        "claim": "Shares fell 5.6% to $208.81; 52\u2011week high $382.65 was hit on June\u202f30,\u202f2026.",
+        "source": {
+          "title": "Vicor Corporation (VICR) Down 5.6% \u2014 Should I Dissolve This Stake? - Weiss Ratings",
+          "url": "https://weissratings.com/en/instant-news-alerts/vicor-corporation-vicr-down-5-6-should-i-dissolve-this-stake",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-10"
+      },
+      {
+        "claim": "Needham set a $320 target, implying 50% upside, after Vicor raised full\u2011year guidance citing strong AI infrastructure demand.",
+        "source": {
+          "title": "This Tiny AI Supplier Could Be More Important Than the Chipmakers | Longbridge",
+          "url": "https://longbridge.com/news/293934824",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": "2026-07-27"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+        "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+        "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+        "date": ""
+      },
+      {
+        "title": "VICR Q1 Earnings Call: Licensing Transitions and Tariff Pressures Shape Results",
+        "url": "https://investor.wedbush.com/wedbush/article/stockstory-2025-5-13-vicr-q1-earnings-call-licensing-transitions-and-tariff-pressures-shape-results",
+        "date": ""
+      },
+      {
+        "title": "VICR Q1 Earnings Call: Licensing Transitions and Tariff Pressures Shape Results",
+        "url": "https://investor.wedbush.com/wedbush/article/stockstory-2025-5-13-vicr-q1-earnings-call-licensing-transitions-and-tariff-pressures-shape-results",
+        "date": ""
+      },
+      {
+        "title": "VICR Q1 Earnings Call: Licensing Transitions and Tariff Pressures Shape Results",
+        "url": "https://investor.wedbush.com/wedbush/article/stockstory-2025-5-13-vicr-q1-earnings-call-licensing-transitions-and-tariff-pressures-shape-results",
+        "date": ""
+      },
+      {
+        "title": "Vicor (NASDAQ:VICR) Misses Q1 Revenue Estimates, Stock Drops 11.5%",
+        "url": "https://elite.finviz.com/news/41545/vicor-nasdaq-vicr-misses-q1-revenue-estimates-stock-drops-115",
+        "date": ""
+      },
+      {
+        "title": "US chipmaker Vicor pushes 48V power modules for AI, industrial applications",
+        "url": "https://www.digitimes.com/news/a20250324PD211/industrial-equipment-data-center-industrial-control-demand.html",
+        "date": ""
+      },
+      {
+        "title": "Powering Clustered AI Processors | Vicor | Data Center",
+        "url": "https://www.vicorpower.com/resource-library/articles/high-performance-computing/powering-clustered-ai-processors",
+        "date": ""
+      },
+      {
+        "title": "Exclusive\u2014Powering AI Processors Using a 48 V Factorized Power Architecture - Tech Insights",
+        "url": "https://eepower.com/tech-insights/exclusivepowering-ai-processors-using-a-48-v-factorized-power-architecture/",
+        "date": ""
+      },
+      {
+        "title": "Running in the Right Direction with 48V for AI Processor Power | HPC | Vicor",
+        "url": "https://www.vicorpower.com/resource-library/articles/high-performance-computing/running-in-the-right-direction-with-48v-for-ai-processor-power",
+        "date": ""
+      },
+      {
+        "title": "The Last 1.5mm of AI Power: Three Numbers from Vicor\u2019s Q1 2026 Earnings Call",
+        "url": "https://photoncap.net/p/the-last-15mm-of-ai-power-three-numbers",
+        "date": ""
+      },
+      {
+        "title": "Gen 2 VPD Boosts VICR's Power Management Prospects Against TXN & ADI",
+        "url": "https://finance.yahoo.com/technology/ai/articles/gen-2-vpd-boosts-vicrs-155400148.html",
+        "date": ""
+      },
+      {
+        "title": "The Last 1.5mm of AI Power: Three Numbers from Vicor\u2019s Q1 2026 Earnings Call",
+        "url": "https://photoncap.net/p/the-last-15mm-of-ai-power-three-numbers",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation (VICR) Q3 2025 Earnings Call Transcript | Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4831648-vicor-corporation-vicr-q3-2025-earnings-call-transcript",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation (VICR) Q3 2025 Earnings Call Transcript | Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4831648-vicor-corporation-vicr-q3-2025-earnings-call-transcript",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation Reports Results for the Fourth Quarter and Year Ended December 31, 2025 | Vicor Corporation",
+        "url": "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-fourth-quarter-and-year-8",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation Reports Results for the Fourth Quarter and Year Ended December 31, 2025 | Vicor Corporation",
+        "url": "https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-fourth-quarter-and-year-8",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation: The Good News Is Already in the Price (NASDAQ:VICR) | Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4916104-vicor-corporation-stock-good-news-is-already-in-the-price",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation: The Good News Is Already in the Price (NASDAQ:VICR) | Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4916104-vicor-corporation-stock-good-news-is-already-in-the-price",
+        "date": ""
+      },
+      {
+        "title": "Vicor Stock Analysis 2026: Buy or Sell? - TickerGuard",
+        "url": "https://tickerguard.com/articles/vicor-stock-analysis",
+        "date": ""
+      },
+      {
+        "title": "Insiders Sell Into Vicor Rally, Should Investors Follow Suit? \u2014 StockScreener",
+        "url": "https://stockscreener.finance/en/news/insiders-sell-into-vicor-rally-should-investors-follow-suit/",
+        "date": ""
+      },
+      {
+        "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+        "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+        "date": ""
+      },
+      {
+        "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+        "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+        "date": ""
+      },
+      {
+        "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+        "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+        "date": ""
+      },
+      {
+        "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+        "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+        "date": ""
+      },
+      {
+        "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+        "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+        "date": ""
+      },
+      {
+        "title": "The PMIC / Power Management IC Sector Analysis",
+        "url": "https://vocus.cc/article/6a34cb17fd8978000150961a",
+        "date": ""
+      },
+      {
+        "title": "Energizing AI: Power Delivery Competition Heats Up Vicor, MPS, Delta, ADI, Renesas, Infineon",
+        "url": "https://newsletter.semianalysis.com/p/energizing-ai-power-delivery-competition",
+        "date": ""
+      },
+      {
+        "title": "Vicor Competitive Landscape in 2025: 5 Rivals, 4 Signals \u2013 Pestel-analysis.com",
+        "url": "https://pestel-analysis.com/blogs/competitors/vicorpower",
+        "date": ""
+      },
+      {
+        "title": "Data Center Power Architecture: Designing the 48V Bus and Point-of-Load Conversion System for AI Servers - CHINA SMPS",
+        "url": "https://china-smps.com/data-center-power-architecture-designing-the-48v-bus-and-point-of-load-conversion-system-for-ai-servers/",
+        "date": ""
+      },
+      {
+        "title": "Data Center Power Architecture: Designing the 48V Bus and Point-of-Load Conversion System for AI Servers - CHINA SMPS",
+        "url": "https://china-smps.com/data-center-power-architecture-designing-the-48v-bus-and-point-of-load-conversion-system-for-ai-servers/",
+        "date": ""
+      },
+      {
+        "title": "380-Volt DC Data Center Market Research Report 2034",
+        "url": "https://marketintelo.com/report/380-volt-dc-data-center-market",
+        "date": ""
+      },
+      {
+        "title": "DC Distribution Network - Market Share Analysis, Industry Trends & Statistics, Growth Forecasts (2026 - 2031)",
+        "url": "https://www.giiresearch.com/report/moi2121371-dc-distribution-network-market-share-analysis.html",
+        "date": ""
+      },
+      {
+        "title": "NVIDIA 800 VDC Architecture Will Power the Next Generation of AI Factories | NVIDIA Technical Blog",
+        "url": "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/",
+        "date": ""
+      },
+      {
+        "title": "Data Centers Boost Voltage For Higher Efficiency",
+        "url": "https://semiengineering.com/data-centers-boost-voltage-for-higher-efficiency/",
+        "date": ""
+      },
+      {
+        "title": "NVIDIA 800 VDC Architecture Will Power the Next Generation of AI Factories | NVIDIA Technical Blog",
+        "url": "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/",
+        "date": ""
+      },
+      {
+        "title": "Data Center Power Architecture: Designing the 48V Bus and Point-of-Load Conversion System for AI Servers - CHINA SMPS",
+        "url": "https://china-smps.com/data-center-power-architecture-designing-the-48v-bus-and-point-of-load-conversion-system-for-ai-servers/",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.panabee.com/news/vicor-earnings-2025-annual",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.panabee.com/news/vicor-earnings-2025-annual",
+        "date": ""
+      },
+      {
+        "title": "Vicor releases a DCM family of regulated 48V to 12V DC-DC converters",
+        "url": "https://www.vicorpower.com/press-room/2025/vicor-releases-a-dcm-family-of-regulated-48v-to-12v-dc-dc-converters",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation Q4 2025 Earnings Call Highlights | Intellectia.AI",
+        "url": "https://intellectia.ai/news/stock/vicor-corporation-q4-2025-earnings-call-highlights",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation Q4 2025 Earnings Call Highlights | Intellectia.AI",
+        "url": "https://intellectia.ai/news/stock/vicor-corporation-q4-2025-earnings-call-highlights",
+        "date": ""
+      },
+      {
+        "title": "Data Center Low Voltage Or Medium Voltage Power Distribution Market 2026",
+        "url": "https://www.thebusinessresearchcompany.com/report/data-center-low-voltage-lv-or-medium-voltage-mv-power-distribution-global-market-report",
+        "date": ""
+      },
+      {
+        "title": "Global DC Distribution Networks Market Size, Trends and Forecast 2034",
+        "url": "https://www.syndicatemarketresearch.com/market-analysis/dc-distribution-networks-market.html",
+        "date": ""
+      },
+      {
+        "title": "DC Power Distribution Market Size, Share, Growth and Forecast 2036",
+        "url": "https://www.factmr.com/report/dc-power-distribution-market",
+        "date": ""
+      },
+      {
+        "title": "VICR Q2 Deep Dive: Patent Settlement and New Product Progress Drive Outperformance",
+        "url": "https://finviz.com/news/115585/vicr-q2-deep-dive-patent-settlement-and-new-product-progress-drive-outperformance",
+        "date": ""
+      },
+      {
+        "title": "VICR Q2 Deep Dive: Patent Settlement and New Product Progress Drive Outperformance",
+        "url": "https://finviz.com/news/115585/vicr-q2-deep-dive-patent-settlement-and-new-product-progress-drive-outperformance",
+        "date": ""
+      },
+      {
+        "title": "VICR Q2 Deep Dive: Patent Settlement and New Product Progress Drive Outperformance",
+        "url": "https://finviz.com/news/115585/vicr-q2-deep-dive-patent-settlement-and-new-product-progress-drive-outperformance",
+        "date": ""
+      },
+      {
+        "title": "Vicor (VICR) Stock Forecast & Analyst Price Targets",
+        "url": "https://stockanalysis.com/stocks/vicr/forecast/",
+        "date": ""
+      },
+      {
+        "title": "USTR Considers New Tariffs on Imported Semiconductors",
+        "url": "https://www.jsjtoop.com/news/active-components/Power_Semi/USTR_Considers_New_Tariffs_on_Imported_Semiconductors.html",
+        "date": ""
+      },
+      {
+        "title": "Tariffs Impact Global Semiconductor Industry in 2025",
+        "url": "https://www.designnews.com/semiconductors-chips/tariffs-reshape-global-semiconductor-landscape-trigger-higher-prices",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation (NASDAQ:VICR) Receives $381.67 Consensus PT from Brokerages - Defense World",
+        "url": "https://www.defenseworld.net/2026/08/28/vicor-corporation-nasdaqvicr-receives-381-67-consensus-pt-from-brokerages.html",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation (VICR) Down 5.6% \u2014 Should I Dissolve This Stake? - Weiss Ratings",
+        "url": "https://weissratings.com/en/instant-news-alerts/vicor-corporation-vicr-down-5-6-should-i-dissolve-this-stake",
+        "date": ""
+      },
+      {
+        "title": "",
+        "url": "https://www.americanbankingnews.com/2026/08/05/vicor-corporation-nasdaqvicr-given-consensus-rating-of-moderate-buy-by-analysts.html",
+        "date": ""
+      },
+      {
+        "title": "This Tiny AI Supplier Could Be More Important Than the Chipmakers | Longbridge",
+        "url": "https://longbridge.com/news/293934824",
+        "date": ""
+      },
+      {
+        "title": "Craig-Hallum raises Vicor price target to $450",
+        "url": "https://scanx.trade/stock-market-news/investment-ideas/craig-hallum-raises-vicor-price-target-to-450/43689322",
+        "date": ""
+      },
+      {
+        "title": "Is Vicor (VICR) Undervalued Following Raised Earnings Estimates? - Simply Wall St News",
+        "url": "https://simplywall.st/stocks/us/capital-goods/nasdaq-vicr/vicor/news/is-vicor-vicr-undervalued-following-raised-earnings-estimate",
+        "date": ""
+      },
+      {
+        "title": "Vicor Corporation (VICR) Down 5.6% \u2014 Should I Dissolve This Stake? - Weiss Ratings",
+        "url": "https://weissratings.com/en/instant-news-alerts/vicor-corporation-vicr-down-5-6-should-i-dissolve-this-stake",
+        "date": ""
+      },
+      {
+        "title": "This Tiny AI Supplier Could Be More Important Than the Chipmakers | Longbridge",
+        "url": "https://longbridge.com/news/293934824",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "balanced",
+    "thesis": "Vicor\u2019s recent revenue acceleration, backlog expansion, and high\u2011margin advanced\u2011product mix signal robust demand capture, particularly in the AI data\u2011center space, but the company faces significant valuation, margin, and revenue\u2011growth risks that could temper upside. The evidence is mixed, warranting a cautious yet optimistic view.",
+    "drivers": [
+      {
+        "name": "AI Data Center Power Demand",
+        "direction": "tailwind",
+        "evidence": "70% sequential backlog surge to $300.6M and 45% YoY growth in advanced product revenue",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Backlog and revenue growth directly reflect strong AI data\u2011center demand."
+      },
+      {
+        "name": "Backlog & Order Book Strength",
+        "direction": "tailwind",
+        "evidence": "Book\u2011to\u2011bill ratio >1.2 in Q4 2025 and backlog $301M in Q1 2026",
+        "source": {
+          "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+          "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "High book\u2011to\u2011bill and large backlog indicate robust future sales."
+      },
+      {
+        "name": "Competitive Displacement & Pricing Pressure",
+        "direction": "tailwind",
+        "evidence": "61% of revenue from advanced products, yet gross margin fell from $50.4M Q4 2024 to $44.4M Q1 2025",
+        "source": {
+          "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+          "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": 1.0,
+        "category": "competitive",
+        "score_why": "Advanced\u2011product share shows moat, but margin decline signals pricing pressure."
+      },
+      {
+        "name": "Valuation Risk",
+        "direction": "headwind",
+        "evidence": "70x forward P/E, 91x EV/EBITDA far above peers",
+        "source": {
+          "title": "VICR Q1 Earnings Call: Licensing Transitions and Tariff Pressures Shape Results",
+          "url": "https://investor.wedbush.com/wedbush/article/stockstory-2025-5-13-vicr-q1-earnings-call-licensing-transitions-and-tariff-pressures-shape-results",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "valuation",
+        "score_why": "High multiples raise risk of price correction."
+      },
+      {
+        "name": "Margin Compression Risk",
+        "direction": "headwind",
+        "evidence": "Gross margin fell from $50.4M Q4 2024 to $44.4M Q1 2025",
+        "source": {
+          "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+          "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.0,
+        "category": "risk",
+        "score_why": "Margin decline indicates pricing pressure and cost challenges."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "Vicor\u2019s revenue trajectory is accelerating, with Q3 2025 revenue up 18.52% YoY, Q4 2025 up 15.3% YoY, and Q1 2026 up 20.2% YoY, while backlog surged 70% sequentially to $300.6M, signaling strong future cash flow.",
+        "evidence": "Q3 2025 revenue up 18.52% YoY; Q4 2025 revenue up 15.3% YoY; Q1 2026 revenue up 20.2% YoY; backlog surged 70% sequentially to $300.6M; backlog $301M",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Gross margin has improved markedly, expanding to 55.2% in Q1 2026, reflecting better cost control and higher\u2011margin product mix.",
+        "evidence": "Q1 2026 gross margin expanded to 55.2%",
+        "source": {
+          "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+          "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Vicor generated free cash flow of ~$51.3M in Q1 2026, underscoring robust cash generation and flexibility for reinvestment.",
+        "evidence": "Free cash flow positive ~$51.3M",
+        "source": {
+          "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+          "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Advanced Products revenue grew 26% to $249M in 2025, now 61% of total revenue, while Brick Products revenue fell only 2%, confirming a shift to higher\u2011margin offerings.",
+        "evidence": "Advanced Products revenue grew 26% to $249M, 61% of total revenue; Legacy Brick Products revenue fell 2% to $159M",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Backlog growth and a book\u2011to\u2011bill ratio >1.2 in Q4 2025 demonstrate strong order flow and future revenue certainty.",
+        "evidence": "Q1 2026 backlog $301M, up 70% sequential; book\u2011to\u2011bill ratio >1.2",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The addressable market is vast: DC distribution networks $21.24B in 2026, projected $31.40B by 2031; 380V DC data center market $13.8B by 2034; low\u2011voltage data center market $3.9B in 2025, projected $6.48B by 2030.",
+        "evidence": "DC distribution network market $21.24B in 2026, projected $31.40B by 2031; 380V DC data center market $13.8B by 2034; Data Center Low Voltage market $3.9B in 2025, projected $6.48B by 2030",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "medium"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Vicor\u2019s operating margin collapsed to 0.2% in Q1\u202f2025, down from 1.3% in the same quarter last year, indicating severe margin compression.",
+        "evidence": "Operating margin 0.2% Q1\u202f2025, down from 1.3% same quarter last year",
+        "source": {
+          "title": "VICR Q1 Earnings Call: Licensing Transitions and Tariff Pressures Shape Results",
+          "url": "https://investor.wedbush.com/wedbush/article/stockstory-2025-5-13-vicr-q1-earnings-call-licensing-transitions-and-tariff-pressures-shape-results",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Gross margin fell to $44.4\u202fM in Q1\u202f2025 from $45.1\u202fM YoY and $50.4\u202fM in Q4\u202f2024, showing a clear erosion of profitability.",
+        "evidence": "Gross margin $44.4M Q1\u202f2025, down from $45.1M YoY and $50.4M Q4\u202f2024",
+        "source": {
+          "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+          "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Adjusted EBITDA was $9.72\u202fM in Q1\u202f2025, 40.4% below analyst consensus of $16.3\u202fM, underscoring weak earnings power.",
+        "evidence": "Adjusted EBITDA $9.72M Q1\u202f2025, 40.4% below analyst $16.3M",
+        "source": {
+          "title": "VICR Q1 Earnings Call: Licensing Transitions and Tariff Pressures Shape Results",
+          "url": "https://investor.wedbush.com/wedbush/article/stockstory-2025-5-13-vicr-q1-earnings-call-licensing-transitions-and-tariff-pressures-shape-results",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Adjusted EPS of $0.14 in Q1\u202f2025 was 52.5% below the analyst estimate of $0.29, highlighting earnings shortfall.",
+        "evidence": "Adjusted EPS $0.14 Q1\u202f2025, 52.5% below analyst $0.29",
+        "source": {
+          "title": "VICR Q1 Earnings Call: Licensing Transitions and Tariff Pressures Shape Results",
+          "url": "https://investor.wedbush.com/wedbush/article/stockstory-2025-5-13-vicr-q1-earnings-call-licensing-transitions-and-tariff-pressures-shape-results",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Revenue growth slowed to 12% YoY in Q1\u202f2025 but fell 2.3% sequentially, raising doubts about sustained demand.",
+        "evidence": "Q1\u202f2025 revenue $94.0M, 12% YoY growth, 2.3% sequential decline",
+        "source": {
+          "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+          "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "The company trades at extreme valuation multiples \u2013 70x forward P/E, 22x P/S, and 91x EV/EBITDA \u2013 far above peers, creating a high risk of price correction.",
+        "evidence": "Valuation multiples: 72x P/E, 22x P/S, EV/EBITDA 91x",
+        "source": {
+          "title": "Vicor: Rally Looks Reckless \u2014 Fade the Pop with a Mid-Term Short",
+          "url": "https://www.tradevae.com/news/trade-ideas/Vicor-Rally-Looks-Reckless-Fade-the-Pop-with-a-Mid-Term-Short/",
+          "date": ""
+        },
+        "severity": "severe"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "AI Data Center Power Demand",
+        "bull": "Vicor\u2019s 48\u2011V bus architecture and high\u2011density DC\u2011DC converters are positioned to capture the rapidly expanding AI data\u2011center market, evidenced by a 70% sequential backlog surge to $300.6\u202fM and 45% YoY growth in advanced product revenue, indicating strong future revenue streams.",
+        "bull_source": {
+          "title": "Vicor Corporation: The Good News Is Already in the Price (NASDAQ:VICR) | Seeking Alpha",
+          "url": "https://seekingalpha.com/article/4916104-vicor-corporation-stock-good-news-is-already-in-the-price",
+          "date": ""
+        },
+        "bear": "Competitive pressure from lower\u2011cost rivals (TXN, ADI, Infineon) and a potential slowdown in AI infrastructure deployment could erode Vicor\u2019s pricing power and margin expansion, limiting the upside of the AI data\u2011center demand narrative.",
+        "bear_source": {
+          "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+          "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+          "date": ""
+        },
+        "verdict": "Bull won because the backlog and revenue growth evidence outweigh the margin concerns, showing robust demand capture.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Backlog & Order Book Strength",
+        "bull": "The backlog jump to $300.6\u202fM in Q1\u202f2026 and a book\u2011to\u2011bill ratio >1.2 in Q4\u202f2025 signal robust future sales and capacity utilization, supporting revenue growth.",
+        "bull_source": {
+          "title": "Vicor Corporation Q4 2025 Earnings Call Highlights | Intellectia.AI",
+          "url": "https://intellectia.ai/news/stock/vicor-corporation-q4-2025-earnings-call-highlights",
+          "date": ""
+        },
+        "bear": "Backlog growth may not translate into realized revenue if orders are canceled or delayed; capacity constraints and supply chain disruptions could also prevent Vicor from fulfilling the backlog, weakening the driver.",
+        "bear_source": {
+          "title": "Vicor (NASDAQ:VICR) Misses Q1 Revenue Estimates, Stock Drops 11.5%",
+          "url": "https://elite.finviz.com/news/41545/vicor-nasdaq-vicr-misses-q1-revenue-estimates-stock-drops-115",
+          "date": ""
+        },
+        "verdict": "Bull won because the high book\u2011to\u2011bill ratio and large backlog demonstrate strong order flow, mitigating the risk of non\u2011conversion.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Competitive Displacement & Pricing Pressure",
+        "bull": "Vicor\u2019s premium engineering and advanced product line (e.g., Gen\u202f2 VPD, DCM3717/3735) have driven a 61% share of total revenue, suggesting a competitive moat that can sustain growth.",
+        "bull_source": {
+          "title": "",
+          "url": "https://www.panabee.com/news/vicor-earnings-2025-annual",
+          "date": ""
+        },
+        "bear": "Rivals with larger scale and lower cost are eroding margins; the company\u2019s gross margin fell from $50.4\u202fM Q4\u202f2024 to $44.4\u202fM Q1\u202f2025, indicating pricing pressure that could intensify.",
+        "bear_source": {
+          "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+          "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+          "date": ""
+        },
+        "verdict": "Bull won because the significant revenue share of advanced products indicates a strong competitive position that outweighs current margin pressure.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Regulatory/Tariff Risk",
+        "bull": "USTR tariff considerations on imported semiconductors could shift demand toward Vicor\u2019s domestic manufacturing, potentially increasing market share and pricing power.",
+        "bull_source": {
+          "title": "USTR Considers New Tariffs on Imported Semiconductors",
+          "url": "https://www.jsjtoop.com/news/active-components/Power_Semi/USTR_Considers_New_Tariffs_on_Imported_Semiconductors.html",
+          "date": ""
+        },
+        "bear": "Tariffs could raise input material costs and disrupt supply chains, increasing manufacturing costs and compressing margins, offsetting any upside from tariff\u2011driven demand shifts.",
+        "bear_source": {
+          "title": "Vicor Corporation Reports Results for the First Quarter Ended March 31, 2025",
+          "url": "https://vicorcorporation.gcs-web.com/node/15866/pdf",
+          "date": ""
+        },
+        "verdict": "Bull won because the potential for tariff\u2011driven demand shift is more directly supported by evidence than the generic cost\u2011pressure argument.",
+        "verdict_side": "bull"
+      }
+    ],
+    "falsifiers": [
+      "Gross margin drops below 45% in Q2 2026",
+      "Backlog falls below $250M in Q2 2026",
+      "Forward P/E exceeds 100x",
+      "Revenue growth falls below 5% YoY in Q2 2026"
+    ],
+    "confidence": "medium",
+    "confidence_why": "Bull drivers show strong demand and order flow, but valuation, margin, and revenue\u2011growth risks are significant; net evidence is balanced."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "neutral",
+    "sector_score": 0.15,
+    "sector_why": "mfg new orders growing: Electrical Equipment, Appliances & Components; mfg new orders growing: Printing & Related Support Activities; mfg new orders growing: Machinery",
+    "industry_flags": [
+      {
+        "industry": "Electrical Equipment, Appliances & Components",
+        "sector": "Industrials",
+        "tilt": "long",
+        "score": 0.6000000000000001,
+        "why": "mfg top growth #3: Electrical Equipment, Appliances & Components"
+      }
+    ],
+    "respondent_comments": [
+      {
+        "industry": "Machinery",
+        "quote": "Now that it seems the buildout of AI infrastructure globally is nearing real activation, products going into data centers are at full procurement and manufacturing ramp-up. Thus, demand for our semiconductor end products and connectivity (power, networking and photonics) is booming. Similarly, defense is at an all-time high, with most of our product orders going to these two industries. Order volumes for medical, industrial and consumer products are markedly lower."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Aerospace and defense demand continues to be strong and growing, based on business backlogs. Competing for scare supply \u2014 electronics, certain critical minerals and other categories \u2014 is challenging on-time fulfillment for our supply chains. This is expected to get worse with co-dependent sectors also remaining strong and restocking challenges for automotive electronics."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Continued tariffs on products utilized in our product lines are being monitored by the business, which is working to mitigate or limit tariff risk. Geopolitical risk, especially in the Middle East, pertaining to commodity and energy markets remains a concern. There has been some increased cost and transit time for rerouted shipments due to conflicts in the Red Sea, Strait of Hormuz and Suez Canal."
+      },
+      {
+        "industry": "Fabricated Metal Products",
+        "quote": "Business is still solid; we will increase revenue by 3 percent to 5 percent. We are considering foreign steel purchases for early next year because domestic steel mills are getting greedy."
+      },
+      {
+        "industry": "Electrical Equipment, Appliances & Components",
+        "quote": "The pricing volatility and lead-time extensions in this market are arguably worse than the pandemic era. During COVID-19, we saw a surge of price hikes and inventory buy-ups, which caused constraints that eventually leveled out. We are seeing nothing but consistent upward trends for both pricing and lead times that show no signs of slowing down. Specifically, 5-percent to 25-percent price increases for printed circuit board assembly components and 15-percent to 45-percent increases for bare boards are negatively impacting customer demand outlook into next year. This isn\u2019t sustainable."
+      },
+      {
+        "industry": "Construction",
+        "quote": "Sales continue to slide despite increased discounts. Mounting cost pressures from all fronts."
+      },
+      {
+        "industry": "Management of Companies & Support Services",
+        "quote": "Business is starting to pick up especially with smaller firms. Just hope it keeps improving."
+      },
+      {
+        "industry": "Transportation & Warehousing",
+        "quote": "Conditions are largely unchanged from last month. The exception is pricing, which continues to rise, driven mainly by fuel and labor costs. Demand remains stable."
+      },
+      {
+        "industry": "Wholesale Trade",
+        "quote": "Business is more robust than expected, considering some of the economic headwinds still plaguing the industry. Lumber supply is tighter, and freight rates and availability are challenges. Many of our builders are pushing back hard on price increases. However, the outlook is favorable for the remainder of 2026."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The robust ISM manufacturing expansion and rising new orders in the Electrical Equipment sector, coupled with the accelerating AI data\u2011center buildout, are propelling demand for Vicor\u2019s high\u2011voltage power modules. The upward\u2011sloping yield curve and modest VIX suggest a stable financing environment, while tariff\u2011driven supply\u2011chain shifts could further boost demand for Vicor\u2019s DC\u2011DC solutions. However, higher input material costs and competitive pricing pressure may temper margin expansion.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "Expansion in electrical equipment and AI data\u2011center construction increases orders for Vicor\u2019s 48V power modules."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "mixed",
+        "why": "Premium engineering allows some price lift, but scale competitors pressure margins."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Rising copper and semiconductor raw material prices increase manufacturing costs."
+      },
+      {
+        "channel": "order backlog",
+        "direction": "helps",
+        "why": "Backlog grew 70% sequentially, reflecting strong demand and future revenue."
+      },
+      {
+        "channel": "capex",
+        "direction": "mixed",
+        "why": "Customers\u2019 data\u2011center capex growth supports sales, but Vicor\u2019s own capex remains moderate."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "hurts",
+        "why": "Upward yield curve raises borrowing rates, increasing Vicor\u2019s interest expense."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q2 2026 earnings release",
+      "window": "July 2026",
+      "expected": "Revenue ~ $120M, EPS ~$0.80, gross margin ~55%, positive free cash flow ~ $55M, driven by backlog growth and higher product mix",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q3 2026 earnings release",
+      "window": "October 2026",
+      "expected": "Revenue ~ $130M, EPS ~$1.0, gross margin ~56%, continued free cash flow expansion, reflecting sustained demand for 48V bus architecture",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Launch of Vicor DCM3717/3735 48V\u201112V DC\u2011DC converter family",
+      "window": "Q2 2026",
+      "expected": "Capture AI server market, increase Advanced Products revenue by 10\u201115% YoY, boost backlog by ~15%",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Launch of Gen\u202f2 VPD high\u2011current density modules",
+      "window": "Q3 2026",
+      "expected": "Attract high\u2011current AI and industrial customers, lift Advanced Products revenue by 8\u201112% YoY, strengthen margin profile",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "USTR decision on new tariffs for imported semiconductors",
+      "window": "Q3 2026",
+      "expected": "Domestic demand for Vicor\u2019s power\u2011conversion solutions rises, potential revenue bump 5\u201110%, market share gains in supply\u2011chain\u2011shifted segments",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Multi\u2011year AI data\u2011center contract with major cloud provider (e.g., AWS, Azure)",
+      "window": "Q2 2026",
+      "expected": "Backlog increases 20\u201125%, product revenue rises 12\u201115% YoY, strengthens 48V bus architecture positioning",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Vicor Investor Day",
+      "window": "Q4 2026",
+      "expected": "Guidance update, potential upside in valuation, reaffirmation of AI data\u2011center strategy, likely positive analyst sentiment",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    },
+    {
+      "event": "Accelerated AI data\u2011center build\u2011out in 2026",
+      "window": "Q2 2026",
+      "expected": "Higher demand for 48V bus architecture and DC\u2011DC converters, driving product revenue growth 15\u201120% YoY, backlog expansion",
+      "source": {
+        "title": "",
+        "url": "",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

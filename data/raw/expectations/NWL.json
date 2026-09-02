@@ -1,0 +1,77 @@
+{
+  "ticker": "NWL",
+  "as_of": "2026-08-30T13:57:41.588566+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.7601,
+    "eps_d30": 0.5757,
+    "eps_d90": 0.57891,
+    "change_30d_pct": 32.03,
+    "change_90d_pct": 31.3,
+    "analysts_up_30d": 9,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.17,
+        "estimate": 0.17966,
+        "surprise_pct": -5.38
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.18,
+        "estimate": 0.18358,
+        "surprise_pct": -1.95
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.05,
+        "estimate": -0.08641,
+        "surprise_pct": 42.14
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.42,
+        "estimate": 0.19775,
+        "surprise_pct": 112.39
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 36.8
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": 8.95
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": 11.52
+      },
+      {
+        "report_date": "2026-02-13",
+        "move_pct": 4.44
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": -27.97
+      }
+    ],
+    "avg_abs_move_pct": 13.22,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +31.3% over 90 days and +32.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 9 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +8.9%, +11.5%, +4.4%, -28.0% (average absolute move 13.2%, 1 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +36.8%."
+  ]
+}

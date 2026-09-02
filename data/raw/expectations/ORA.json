@@ -1,0 +1,77 @@
+{
+  "ticker": "ORA",
+  "as_of": "2026-08-30T14:29:23.913187+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.62415,
+    "eps_d30": 2.30902,
+    "eps_d90": 2.22312,
+    "change_30d_pct": 13.65,
+    "change_90d_pct": 18.04,
+    "analysts_up_30d": 5,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.41,
+        "estimate": 0.38343,
+        "surprise_pct": 6.93
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.67,
+        "estimate": 0.6401,
+        "surprise_pct": 4.67
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.3,
+        "estimate": 0.90064,
+        "surprise_pct": 44.34
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.5,
+        "estimate": 0.25949,
+        "surprise_pct": 92.69
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 37.16
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": 9.55
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 6.67
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": -9.05
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": 4.8
+      }
+    ],
+    "avg_abs_move_pct": 7.52,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +18.0% over 90 days and +13.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 5 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +9.6%, +6.7%, -9.1%, +4.8% (average absolute move 7.5%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +37.2%."
+  ]
+}

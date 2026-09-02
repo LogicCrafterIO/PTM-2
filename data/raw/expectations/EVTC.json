@@ -1,0 +1,77 @@
+{
+  "ticker": "EVTC",
+  "as_of": "2026-08-30T14:03:44.679376+00:00",
+  "earnings_date": "2026-11-07",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.9976,
+    "eps_d30": 3.91814,
+    "eps_d90": 3.91614,
+    "change_30d_pct": 2.03,
+    "change_90d_pct": 2.08,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.92,
+        "estimate": 0.88867,
+        "surprise_pct": 3.53
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.93,
+        "estimate": 0.90444,
+        "surprise_pct": 2.83
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.9,
+        "estimate": 0.92076,
+        "surprise_pct": -2.25
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.05,
+        "estimate": 0.9494,
+        "surprise_pct": 10.6
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 3.68
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -1.18
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": -17.05
+      },
+      {
+        "report_date": "2026-03-02",
+        "move_pct": 0.32
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": -2.81
+      }
+    ],
+    "avg_abs_move_pct": 5.34,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.1% over 90 days and +2.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.2%, -17.1%, +0.3%, -2.8% (average absolute move 5.3%, 3 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +3.7%."
+  ]
+}

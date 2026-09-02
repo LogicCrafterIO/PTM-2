@@ -1,0 +1,77 @@
+{
+  "ticker": "WWD",
+  "as_of": "2026-08-30T14:32:58.434821+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 9.45756,
+    "eps_d30": 9.40824,
+    "eps_d90": 9.41087,
+    "change_30d_pct": 0.52,
+    "change_90d_pct": 0.5,
+    "analysts_up_30d": 8,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.09,
+        "estimate": 1.8892,
+        "surprise_pct": 10.63
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.17,
+        "estimate": 1.65354,
+        "surprise_pct": 31.23
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.27,
+        "estimate": 2.09112,
+        "surprise_pct": 8.55
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.52,
+        "estimate": 2.44951,
+        "surprise_pct": 2.88
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 13.32
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": -7.56
+      },
+      {
+        "report_date": "2026-04-30",
+        "move_pct": 0.56
+      },
+      {
+        "report_date": "2026-02-04",
+        "move_pct": 0.58
+      },
+      {
+        "report_date": "2025-11-25",
+        "move_pct": 12.44
+      }
+    ],
+    "avg_abs_move_pct": 5.29,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.5% over 90 days and +0.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 8 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -7.6%, +0.6%, +0.6%, +12.4% (average absolute move 5.3%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +13.3%."
+  ]
+}

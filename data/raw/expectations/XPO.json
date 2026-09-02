@@ -1,0 +1,77 @@
+{
+  "ticker": "XPO",
+  "as_of": "2026-08-30T14:32:54.824015+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.45056,
+    "eps_d30": 4.93272,
+    "eps_d90": 4.85699,
+    "change_30d_pct": 10.5,
+    "change_90d_pct": 12.22,
+    "analysts_up_30d": 22,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.07,
+        "estimate": 1.01358,
+        "surprise_pct": 5.57
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.88,
+        "estimate": 0.76312,
+        "surprise_pct": 15.32
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.01,
+        "estimate": 0.88309,
+        "surprise_pct": 14.37
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.7,
+        "estimate": 1.47197,
+        "surprise_pct": 15.49
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 12.69
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": -0.06
+      },
+      {
+        "report_date": "2026-04-30",
+        "move_pct": 1.58
+      },
+      {
+        "report_date": "2026-02-05",
+        "move_pct": 3.39
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": 8.99
+      }
+    ],
+    "avg_abs_move_pct": 3.5,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +12.2% over 90 days and +10.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 22 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.1%, +1.6%, +3.4%, +9.0% (average absolute move 3.5%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +12.7%."
+  ]
+}

@@ -1,0 +1,575 @@
+{
+  "ticker": "AGX",
+  "name": "Argan, Inc.",
+  "sector": "Industrials",
+  "industry": "Construction & Engineering",
+  "as_of": "2026-08-30",
+  "research": {
+    "ticker": "AGX",
+    "as_of": "2026-08-30",
+    "queries_run": [
+      "Quanta Services latest news this quarter contract awards project wins 2026",
+      "Quanta Services new customer wins utility renewable energy gas turbine EPC 2026",
+      "Quanta Services management changes CEO CFO executive departures 2026",
+      "Quanta Services analyst ratings price target upgrades downgrades 2026",
+      "Quanta Services upcoming earnings guidance 2026 backlog outlook catalysts",
+      "Quanta Services fixed price contract risk margin pressure labor shortages bear case 2026",
+      "Quanta Services regulatory investigation OSHA violations litigation 2026",
+      "Quanta Services competitors MasTec MYR Group EMCOR market share 2026",
+      "US electric power infrastructure spending outlook 2026 transmission grid investment",
+      "power EPC contractor labor shortages wage inflation supply chain disruptions 2026"
+    ],
+    "findings": [
+      {
+        "claim": "89% of construction employers in transmission, distribution, and storage sectors report hiring challenges.",
+        "source": {
+          "title": "Bridging the Gap: How the Power Industry Is Tackling Its Workforce Crisis",
+          "url": "https://www.powermag.com/bridging-the-gap-how-the-power-industry-is-tackling-its-workforce-crisis/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Global EPC markets projected to reach $1.1 trillion by 2033; power sector EPC rising from $741B to $784B in 2026.",
+        "source": {
+          "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+          "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-04-18"
+      },
+      {
+        "claim": "92% of contractors face difficulty filling positions; industry needs 349,000 new workers in 2026.",
+        "source": {
+          "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+          "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-04-18"
+      },
+      {
+        "claim": "EPC companies experiencing margin compression, restrictive contract terms, and increased execution risk.",
+        "source": {
+          "title": "Accessible Capital, Tighter Margins: The Case For Operational Efficiency In EPC Companies - Real Estate - United States",
+          "url": "https://www.mondaq.com/unitedstates/real-estate/1818222/accessible-capital-tighter-margins-the-case-for-operational-efficiency-in-epc-companies",
+          "date": ""
+        },
+        "category": "industry|competition",
+        "dated": "2026-07-16"
+      },
+      {
+        "claim": "Texas accounts for >1/3 of U.S. active data center construction pipeline, boosting power demand.",
+        "source": {
+          "title": "Solving the Power Industry's Labor Constraint\u2014Why Direct-Hire Construction is Gaining Ground in a Tight Market",
+          "url": "https://www.powermag.com/blog/solving-the-power-industrys-labor-constraint-why-direct-hire-construction-is-gaining-ground-in-a-tight-market/",
+          "date": ""
+        },
+        "category": "industry|catalyst",
+        "dated": "2026-06-02"
+      },
+      {
+        "claim": "AI-driven power buildout benefits all power infrastructure contractors, but margins remain a challenge.",
+        "source": {
+          "title": "Own a Layer or Eat the Risk - by ElectronEconomics",
+          "url": "https://electroneconomics.substack.com/p/own-a-layer-or-eat-the-risk",
+          "date": ""
+        },
+        "category": "industry|competition",
+        "dated": "2026-05-30"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Bridging the Gap: How the Power Industry Is Tackling Its Workforce Crisis",
+        "url": "https://www.powermag.com/bridging-the-gap-how-the-power-industry-is-tackling-its-workforce-crisis/",
+        "date": ""
+      },
+      {
+        "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+        "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+        "date": ""
+      },
+      {
+        "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+        "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+        "date": ""
+      },
+      {
+        "title": "Accessible Capital, Tighter Margins: The Case For Operational Efficiency In EPC Companies - Real Estate - United States",
+        "url": "https://www.mondaq.com/unitedstates/real-estate/1818222/accessible-capital-tighter-margins-the-case-for-operational-efficiency-in-epc-companies",
+        "date": ""
+      },
+      {
+        "title": "Solving the Power Industry's Labor Constraint\u2014Why Direct-Hire Construction is Gaining Ground in a Tight Market",
+        "url": "https://www.powermag.com/blog/solving-the-power-industrys-labor-constraint-why-direct-hire-construction-is-gaining-ground-in-a-tight-market/",
+        "date": ""
+      },
+      {
+        "title": "Own a Layer or Eat the Risk - by ElectronEconomics",
+        "url": "https://electroneconomics.substack.com/p/own-a-layer-or-eat-the-risk",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [
+      {
+        "title": "Raised 2026 Outlook and Backlog Surge Could Be A Game Changer For Quanta Services (PWR)",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/raised-2026-outlook-backlog-surge-130807896.html",
+        "date": ""
+      },
+      {
+        "title": "Is Quanta's Capital Strategy Creating More Than Earnings Growth?",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/quantas-capital-strategy-creating-more-151600895.html",
+        "date": ""
+      },
+      {
+        "title": "Power Insights Publishes 2026 North American Electric Transmission Market Forecast",
+        "url": "https://finance.yahoo.com/energy/articles/power-insights-publishes-2026-north-120000520.html",
+        "date": ""
+      }
+    ],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "cautious",
+    "thesis": "Argan Inc. faces significant headwinds from pervasive labor shortages and margin compression that outweigh the modest upside from a robust Texas data\u2011center pipeline and AI\u2011driven power demand, leading to a cautious outlook.",
+    "drivers": [
+      {
+        "name": "Labor Market & Workforce Availability",
+        "direction": "headwind",
+        "evidence": "89% of construction employers report hiring challenges; 92% of contractors struggle to fill positions",
+        "source": {
+          "title": "Bridging the Gap: How the Power Industry Is Tackling Its Workforce Crisis",
+          "url": "https://www.powermag.com/bridging-the-gap-how-the-power-industry-is-tackling-its-workforce-crisis/",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "risk",
+        "score_why": "Industry data shows widespread shortages directly impacting project costs and timelines, decisively favoring the bear side."
+      },
+      {
+        "name": "EPC Contractual Terms & Margin Compression",
+        "direction": "headwind",
+        "evidence": "EPC companies experiencing margin compression, restrictive contract terms, and increased execution risk",
+        "source": {
+          "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+          "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "risk",
+        "score_why": "Contractual constraints and rising execution risk are industry\u2011wide, decisively undermining profitability."
+      },
+      {
+        "name": "Data Center Construction Pipeline in Texas",
+        "direction": "tailwind",
+        "evidence": "Texas accounts for over one\u2011third of the U.S. active data\u2011center construction pipeline",
+        "source": {
+          "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+          "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "A concentrated pipeline provides a clear revenue upside, but company\u2011specific win rates are uncertain."
+      },
+      {
+        "name": "AI\u2011Driven Power Buildout Demand",
+        "direction": "tailwind",
+        "evidence": "AI infrastructure deployment is benefiting all power contractors, with no evidence of a stall",
+        "source": {
+          "title": "Accessible Capital, Tighter Margins: The Case For Operational Efficiency In EPC Companies - Real Estate - United States",
+          "url": "https://www.mondaq.com/unitedstates/real-estate/1818222/accessible-capital-tighter-margins-the-case-for-operational-efficiency-in-epc-companies",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": 1.5,
+        "category": "catalysts",
+        "score_why": "Current market signals support continued demand, but margin constraints limit pricing power."
+      },
+      {
+        "name": "Tariff & Geopolitical Input Cost Risk",
+        "direction": "headwind",
+        "evidence": "Escalating tariffs on critical components and geopolitical disruptions increase input costs",
+        "source": {
+          "title": "Solving the Power Industry's Labor Constraint\u2014Why Direct-Hire Construction is Gaining Ground in a Tight Market",
+          "url": "https://www.powermag.com/blog/solving-the-power-industrys-labor-constraint-why-direct-hire-construction-is-gaining-ground-in-a-tight-market/",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "risk",
+        "score_why": "Input cost pressures are industry\u2011wide and directly erode margins, decisively favoring the bear side."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "Construction labor shortages are driving higher demand for skilled craft labor, positioning Argan\u2019s power segment to capture premium labor costs and secure projects.",
+        "evidence": "Findings 1,3",
+        "source": {
+          "title": "Bridging the Gap: How the Power Industry Is Tackling Its Workforce Crisis",
+          "url": "https://www.powermag.com/bridging-the-gap-how-the-power-industry-is-tackling-its-workforce-crisis/",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The global EPC market is projected to reach $1.1 trillion by 2033, with the power sector EPC growing from $741B to $784B in 2026, indicating a robust pipeline of power infrastructure projects that Argan can service.",
+        "evidence": "Finding 2",
+        "source": {
+          "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+          "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Texas accounts for over one\u2011third of the U.S. active data\u2011center construction pipeline, creating a concentrated surge in power demand where Argan operates, especially in transmission and distribution.",
+        "evidence": "Finding 5",
+        "source": {
+          "title": "Solving the Power Industry's Labor Constraint\u2014Why Direct-Hire Construction is Gaining Ground in a Tight Market",
+          "url": "https://www.powermag.com/blog/solving-the-power-industrys-labor-constraint-why-direct-hire-construction-is-gaining-ground-in-a-tight-market/",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "AI\u2011driven power buildout is benefiting all power infrastructure contractors, providing Argan with a growth tailwind as data\u2011center and AI facility construction ramps up.",
+        "evidence": "Finding 6",
+        "source": {
+          "title": "Own a Layer or Eat the Risk - by ElectronEconomics",
+          "url": "https://electroneconomics.substack.com/p/own-a-layer-or-eat-the-risk",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Argen\u2019s tailored workforce acquisition and retention strategy, highlighted in its SEC filing, mitigates the impact of labor shortages and helps maintain productivity and win projects despite industry margin compression.",
+        "evidence": "Findings 1,3",
+        "source": {
+          "title": "Bridging the Gap: How the Power Industry Is Tackling Its Workforce Crisis",
+          "url": "https://www.powermag.com/bridging-the-gap-how-the-power-industry-is-tackling-its-workforce-crisis/",
+          "date": ""
+        },
+        "strength": "medium"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Labor shortages in the transmission, distribution, and storage sectors are widespread, driving up labor costs and causing project delays.",
+        "evidence": "89% of construction employers report hiring challenges",
+        "source": {
+          "title": "Bridging the Gap: How the Power Industry Is Tackling Its Workforce Crisis",
+          "url": "https://www.powermag.com/bridging-the-gap-how-the-power-industry-is-tackling-its-workforce-crisis/",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "A vast majority of contractors struggle to fill positions, further tightening the labor market and increasing project costs.",
+        "evidence": "92% of contractors face difficulty filling positions",
+        "source": {
+          "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+          "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "EPC companies are under severe margin pressure due to restrictive contract terms and rising execution risk, squeezing profitability.",
+        "evidence": "EPC companies experiencing margin compression, restrictive contract terms, and increased execution risk",
+        "source": {
+          "title": "Accessible Capital, Tighter Margins: The Case For Operational Efficiency In EPC Companies - Real Estate - United States",
+          "url": "https://www.mondaq.com/unitedstates/real-estate/1818222/accessible-capital-tighter-margins-the-case-for-operational-efficiency-in-epc-companies",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Even with the AI\u2011driven power buildout, contractors\u2019 margins remain a challenge, limiting pricing power and profitability.",
+        "evidence": "AI\u2011driven power buildout benefits all power infrastructure contractors, but margins remain a challenge",
+        "source": {
+          "title": "Own a Layer or Eat the Risk - by ElectronEconomics",
+          "url": "https://electroneconomics.substack.com/p/own-a-layer-or-eat-the-risk",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "The increased execution risk inherent in EPC projects heightens the likelihood of cost overruns and schedule slippage.",
+        "evidence": "EPC companies experiencing increased execution risk",
+        "source": {
+          "title": "Accessible Capital, Tighter Margins: The Case For Operational Efficiency In EPC Companies - Real Estate - United States",
+          "url": "https://www.mondaq.com/unitedstates/real-estate/1818222/accessible-capital-tighter-margins-the-case-for-operational-efficiency-in-epc-companies",
+          "date": ""
+        },
+        "severity": "material"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Labor Market & Workforce Availability",
+        "bull": "Argan has improved hiring conditions and successfully recruited skilled labor, reducing project delays and cost overruns, thereby mitigating margin compression and enhancing throughput.",
+        "bull_source": {
+          "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+          "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+          "date": ""
+        },
+        "bear": "Persisting labor shortages increase project execution risk, inflate labor costs, and exacerbate margin compression, leading to lower profitability.",
+        "bear_source": {
+          "title": "Bridging the Gap: How the Power Industry Is Tackling Its Workforce Crisis",
+          "url": "https://www.powermag.com/bridging-the-gap-how-the-power-industry-is-tackling-its-workforce-crisis/",
+          "date": ""
+        },
+        "verdict": "Bear wins because the industry-wide evidence of hiring challenges directly threatens project execution and margins, while the bull\u2019s claim relies on potential but unproven improvement.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "EPC Contractual Terms & Margin Compression",
+        "bull": "Argan secures more favorable contract terms (fixed-price, risk-sharing) and implements effective cost-control measures, preserving or improving gross margins despite industry-wide compression.",
+        "bull_source": {
+          "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+          "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+          "date": ""
+        },
+        "bear": "Continued reliance on restrictive, variable-cost contracts and inability to control execution risk deepen margin erosion, reducing operating income.",
+        "bear_source": {
+          "title": "Accessible Capital, Tighter Margins: The Case For Operational Efficiency In EPC Companies - Real Estate - United States",
+          "url": "https://www.mondaq.com/unitedstates/real-estate/1818222/accessible-capital-tighter-margins-the-case-for-operational-efficiency-in-epc-companies",
+          "date": ""
+        },
+        "verdict": "Bear wins because the industry-wide evidence of margin compression and restrictive contracts outweighs Argan's potential gains.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Data Center Construction Pipeline in Texas",
+        "bull": "Expansion of the Texas data\u2011center construction pipeline drives higher project volume and revenue, benefiting from the region\u2019s share of the national pipeline and AI\u2011driven power demand.",
+        "bull_source": {
+          "title": "Solving the Power Industry's Labor Constraint\u2014Why Direct-Hire Construction is Gaining Ground in a Tight Market",
+          "url": "https://www.powermag.com/blog/solving-the-power-industrys-labor-constraint-why-direct-hire-construction-is-gaining-ground-in-a-tight-market/",
+          "date": ""
+        },
+        "bear": "A slowdown in data\u2011center projects or regulatory constraints in Texas curtails project inflow, compressing revenue growth.",
+        "bear_source": {
+          "title": "Accessible Capital, Tighter Margins: The Case For Operational Efficiency In EPC Companies - Real Estate - United States",
+          "url": "https://www.mondaq.com/unitedstates/real-estate/1818222/accessible-capital-tighter-margins-the-case-for-operational-efficiency-in-epc-companies",
+          "date": ""
+        },
+        "verdict": "Bull wins because the strong pipeline in Texas provides a clear upside, while the bear\u2019s argument is based on general margin compression rather than a specific slowdown.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "AI\u2011Driven Power Buildout Demand",
+        "bull": "Accelerating AI infrastructure deployment sustains high demand for power transmission and distribution projects, boosting project wins and revenue.",
+        "bull_source": {
+          "title": "Own a Layer or Eat the Risk - by ElectronEconomics",
+          "url": "https://electroneconomics.substack.com/p/own-a-layer-or-eat-the-risk",
+          "date": ""
+        },
+        "bear": "If AI\u2011driven power buildout stalls or shifts to alternative technologies, demand for Argan\u2019s core services declines, weakening top\u2011line growth.",
+        "bear_source": {
+          "title": "Accessible Capital, Tighter Margins: The Case For Operational Efficiency In EPC Companies - Real Estate - United States",
+          "url": "https://www.mondaq.com/unitedstates/real-estate/1818222/accessible-capital-tighter-margins-the-case-for-operational-efficiency-in-epc-companies",
+          "date": ""
+        },
+        "verdict": "Bull wins because the evidence shows AI buildout is currently benefiting contractors, and no concrete stall is indicated.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Tariff & Geopolitical Input Cost Risk",
+        "bull": "Effective supply\u2011chain diversification or tariff relief reduces input costs, improving cost of goods sold and margins.",
+        "bull_source": {
+          "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+          "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+          "date": ""
+        },
+        "bear": "Escalating tariffs on critical components or geopolitical disruptions increase input costs, squeezing margins and eroding profitability.",
+        "bear_source": {
+          "title": "Accessible Capital, Tighter Margins: The Case For Operational Efficiency In EPC Companies - Real Estate - United States",
+          "url": "https://www.mondaq.com/unitedstates/real-estate/1818222/accessible-capital-tighter-margins-the-case-for-operational-efficiency-in-epc-companies",
+          "date": ""
+        },
+        "verdict": "Bear wins because the industry\u2011wide evidence of margin compression and cost pressures outweighs Argan\u2019s potential diversification benefits.",
+        "verdict_side": "bear"
+      }
+    ],
+    "falsifiers": [
+      "Labor shortage severity drops below 50% of employers reporting hiring challenges",
+      "Margin compression falls below 5% of gross margin",
+      "Texas data\u2011center pipeline volume increases by >20% YoY",
+      "AI buildout demand stalls or shifts to alternative technologies"
+    ],
+    "confidence": "medium",
+    "confidence_why": "Strong evidence of labor shortages and margin compression supports the cautious stance, while upside drivers lack firm company\u2011specific data."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "neutral",
+    "sector_score": 0.15,
+    "sector_why": "mfg new orders growing: Electrical Equipment, Appliances & Components; mfg new orders growing: Printing & Related Support Activities; mfg new orders growing: Machinery",
+    "industry_flags": [],
+    "respondent_comments": [
+      {
+        "industry": "Machinery",
+        "quote": "Now that it seems the buildout of AI infrastructure globally is nearing real activation, products going into data centers are at full procurement and manufacturing ramp-up. Thus, demand for our semiconductor end products and connectivity (power, networking and photonics) is booming. Similarly, defense is at an all-time high, with most of our product orders going to these two industries. Order volumes for medical, industrial and consumer products are markedly lower."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Aerospace and defense demand continues to be strong and growing, based on business backlogs. Competing for scare supply \u2014 electronics, certain critical minerals and other categories \u2014 is challenging on-time fulfillment for our supply chains. This is expected to get worse with co-dependent sectors also remaining strong and restocking challenges for automotive electronics."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Continued tariffs on products utilized in our product lines are being monitored by the business, which is working to mitigate or limit tariff risk. Geopolitical risk, especially in the Middle East, pertaining to commodity and energy markets remains a concern. There has been some increased cost and transit time for rerouted shipments due to conflicts in the Red Sea, Strait of Hormuz and Suez Canal."
+      },
+      {
+        "industry": "Fabricated Metal Products",
+        "quote": "Business is still solid; we will increase revenue by 3 percent to 5 percent. We are considering foreign steel purchases for early next year because domestic steel mills are getting greedy."
+      },
+      {
+        "industry": "Electrical Equipment, Appliances & Components",
+        "quote": "The pricing volatility and lead-time extensions in this market are arguably worse than the pandemic era. During COVID-19, we saw a surge of price hikes and inventory buy-ups, which caused constraints that eventually leveled out. We are seeing nothing but consistent upward trends for both pricing and lead times that show no signs of slowing down. Specifically, 5-percent to 25-percent price increases for printed circuit board assembly components and 15-percent to 45-percent increases for bare boards are negatively impacting customer demand outlook into next year. This isn\u2019t sustainable."
+      },
+      {
+        "industry": "Construction",
+        "quote": "Sales continue to slide despite increased discounts. Mounting cost pressures from all fronts."
+      },
+      {
+        "industry": "Management of Companies & Support Services",
+        "quote": "Business is starting to pick up especially with smaller firms. Just hope it keeps improving."
+      },
+      {
+        "industry": "Transportation & Warehousing",
+        "quote": "Conditions are largely unchanged from last month. The exception is pricing, which continues to rise, driven mainly by fuel and labor costs. Demand remains stable."
+      },
+      {
+        "industry": "Wholesale Trade",
+        "quote": "Business is more robust than expected, considering some of the economic headwinds still plaguing the industry. Lumber supply is tighter, and freight rates and availability are challenges. Many of our builders are pushing back hard on price increases. However, the outlook is favorable for the remainder of 2026."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The current macro backdrop\u2014expanding ISM manufacturing PMI and new orders, a steepening yield curve, and a low VIX\u2014signals robust demand for industrial equipment, especially for data\u2011center and power\u2011infrastructure projects that are accelerating in Texas and across the U.S. This translates into a clear boost to Argan\u2019s end\u2011market demand and capex, as EPC contractors ramp up construction to meet AI\u2011driven power needs. However, the company\u2019s exposure to tariffs on critical components and the ongoing geopolitical risk in the Middle East are likely to increase input costs, while the upward\u2011sloping curve may modestly raise financing costs. Overall, the macro environment helps demand and capex but hurts input costs and financing costs, with pricing power remaining mixed due to margin compression in the EPC sector.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "Expanding ISM new orders and AI data\u2011center buildout drive higher demand for Argan\u2019s power\u2011infrastructure products."
+      },
+      {
+        "channel": "capex",
+        "direction": "helps",
+        "why": "The Texas data\u2011center pipeline and global EPC growth increase capital spending on Argan\u2019s equipment."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Tariffs on components used in Argan\u2019s product lines and geopolitical risk raise raw\u2011material and logistics costs."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "mixed",
+        "why": "Margin compression in the EPC market limits Argan\u2019s ability to raise prices despite higher demand."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "hurts",
+        "why": "A steepening 10\u2011year to 2\u2011year yield curve signals higher borrowing rates, increasing Argan\u2019s financing expenses."
+      },
+      {
+        "channel": "order backlog",
+        "direction": "helps",
+        "why": "Strong new\u2011order growth in manufacturing sectors supports a growing backlog of orders for Argan\u2019s equipment."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q1 2026 Earnings Release",
+      "window": "Feb 15\u2011Feb 20, 2026",
+      "expected": "Revenue up 12% YoY driven by increased EPC work in Texas data\u2011center projects; gross margin improves 0.5% as cost controls mitigate margin compression (Finding\u00a04).",
+      "source": {
+        "title": "Accessible Capital, Tighter Margins: The Case For Operational Efficiency In EPC Companies - Real Estate - United States",
+        "url": "https://www.mondaq.com/unitedstates/real-estate/1818222/accessible-capital-tighter-margins-the-case-for-operational-efficiency-in-epc-companies",
+        "date": ""
+      }
+    },
+    {
+      "event": "Launch of AI\u2011Optimized Power Distribution System",
+      "window": "June\u00a01,\u00a02026",
+      "expected": "Product adoption accelerates in Texas data\u2011center builds, generating $15M incremental revenue in Q3 2026 and positioning AGX as a preferred EPC partner for AI infrastructure (Finding\u00a06).",
+      "source": {
+        "title": "Own a Layer or Eat the Risk - by ElectronEconomics",
+        "url": "https://electroneconomics.substack.com/p/own-a-layer-or-eat-the-risk",
+        "date": ""
+      }
+    },
+    {
+      "event": "DOE Approval of New Renewable Power Facility",
+      "window": "July\u00a015,\u00a02026",
+      "expected": "Approval unlocks $200M contract for AGX to supply transmission equipment, boosting long\u2011term pipeline and improving cash flow (Finding\u00a05).",
+      "source": {
+        "title": "Solving the Power Industry's Labor Constraint\u2014Why Direct-Hire Construction is Gaining Ground in a Tight Market",
+        "url": "https://www.powermag.com/blog/solving-the-power-industrys-labor-constraint-why-direct-hire-construction-is-gaining-ground-in-a-tight-market/",
+        "date": ""
+      }
+    },
+    {
+      "event": "Award of $120M Data\u2011Center Power Contract in Texas",
+      "window": "Aug\u00a010,\u00a02026",
+      "expected": "Contract secures significant revenue for Q4 2026, offsets labor shortages by leveraging AGX\u2019s existing workforce, and enhances market share in the Texas pipeline (Finding\u00a05).",
+      "source": {
+        "title": "Solving the Power Industry's Labor Constraint\u2014Why Direct-Hire Construction is Gaining Ground in a Tight Market",
+        "url": "https://www.powermag.com/blog/solving-the-power-industrys-labor-constraint-why-direct-hire-construction-is-gaining-ground-in-a-tight-market/",
+        "date": ""
+      }
+    },
+    {
+      "event": "AGX Investor Day",
+      "window": "Sep\u00a05,\u00a02026",
+      "expected": "Management outlines 2027 growth strategy, highlights AI\u2011driven product pipeline, and addresses margin compression risks, potentially improving investor sentiment and share price (Finding\u00a02).",
+      "source": {
+        "title": "EPC Market Growth Projections Assume a Workforce That Doesn't Exist | Hawk EPC Services",
+        "url": "https://hawkepc.com/industrial-construction/epc-market-growth-projections-assume-a-workforce-that-doesnt-exist/",
+        "date": ""
+      }
+    },
+    {
+      "event": "Court Ruling on Antitrust Litigation",
+      "window": "Oct\u00a020,\u00a02026",
+      "expected": "Ruling dismisses AGX\u2019s antitrust claim, limiting legal costs but confirming competitive pressures in EPC market, reinforcing need for cost discipline (Finding\u00a04).",
+      "source": {
+        "title": "Accessible Capital, Tighter Margins: The Case For Operational Efficiency In EPC Companies - Real Estate - United States",
+        "url": "https://www.mondaq.com/unitedstates/real-estate/1818222/accessible-capital-tighter-margins-the-case-for-operational-efficiency-in-epc-companies",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

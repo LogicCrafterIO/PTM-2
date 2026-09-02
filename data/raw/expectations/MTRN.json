@@ -1,0 +1,77 @@
+{
+  "ticker": "MTRN",
+  "as_of": "2026-08-30T14:31:40.436581+00:00",
+  "earnings_date": "2026-11-06",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.994,
+    "eps_d30": 6.448,
+    "eps_d90": 6.4,
+    "change_30d_pct": 8.47,
+    "change_90d_pct": 9.28,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.41,
+        "estimate": 1.412,
+        "surprise_pct": -0.14
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.53,
+        "estimate": 1.508,
+        "surprise_pct": 1.46
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.27,
+        "estimate": 1.246,
+        "surprise_pct": 1.93
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.9,
+        "estimate": 1.518,
+        "surprise_pct": 25.16
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 7.1
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": 30.81
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": -2.67
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": 1.2
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": -0.53
+      }
+    ],
+    "avg_abs_move_pct": 8.8,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +9.3% over 90 days and +8.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +30.8%, -2.7%, +1.2%, -0.5% (average absolute move 8.8%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +7.1%."
+  ]
+}

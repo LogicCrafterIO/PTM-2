@@ -1,0 +1,77 @@
+{
+  "ticker": "UPWK",
+  "as_of": "2026-08-30T13:55:31.822787+00:00",
+  "earnings_date": "2026-11-10",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.38967,
+    "eps_d30": 1.54234,
+    "eps_d90": 1.53782,
+    "change_30d_pct": -9.9,
+    "change_90d_pct": -9.63,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.36,
+        "estimate": 0.31156,
+        "surprise_pct": 15.55
+      },
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.21,
+        "estimate": 0.19124,
+        "surprise_pct": 9.81
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.35,
+        "estimate": 0.27122,
+        "surprise_pct": 29.05
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.41,
+        "estimate": 0.34239,
+        "surprise_pct": 19.75
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 18.54
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-10",
+        "move_pct": 1.65
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 5.26
+      },
+      {
+        "report_date": "2026-02-13",
+        "move_pct": 0.92
+      },
+      {
+        "report_date": "2025-11-04",
+        "move_pct": 13.24
+      }
+    ],
+    "avg_abs_move_pct": 5.27,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -9.6% over 90 days and -9.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.6%, +5.3%, +0.9%, +13.2% (average absolute move 5.3%, 0 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +18.5%."
+  ]
+}

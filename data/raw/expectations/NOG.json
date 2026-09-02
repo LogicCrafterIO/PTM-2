@@ -1,0 +1,77 @@
+{
+  "ticker": "NOG",
+  "as_of": "2026-08-30T14:08:21.230168+00:00",
+  "earnings_date": "2026-11-08",
+  "revisions": {
+    "available": true,
+    "eps_current": 4.06015,
+    "eps_d30": 3.90073,
+    "eps_d90": 3.85378,
+    "change_30d_pct": 4.09,
+    "change_90d_pct": 5.36,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.03,
+        "estimate": 0.87082,
+        "surprise_pct": 18.28
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.83,
+        "estimate": 0.77152,
+        "surprise_pct": 7.58
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.74,
+        "estimate": 0.67726,
+        "surprise_pct": 9.26
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.13,
+        "estimate": 1.12363,
+        "surprise_pct": 0.57
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 8.92
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-07",
+        "move_pct": 6.51
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": 1.42
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": -0.87
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": 5.52
+      }
+    ],
+    "avg_abs_move_pct": 3.58,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +5.4% over 90 days and +4.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +6.5%, +1.4%, -0.9%, +5.5% (average absolute move 3.6%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +8.9%."
+  ]
+}

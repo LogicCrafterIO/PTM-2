@@ -1,0 +1,77 @@
+{
+  "ticker": "HWM",
+  "as_of": "2026-08-30T13:23:30.711043+00:00",
+  "earnings_date": "2026-11-07",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.33373,
+    "eps_d30": 5.05643,
+    "eps_d90": 5.03943,
+    "change_30d_pct": 5.48,
+    "change_90d_pct": 5.84,
+    "analysts_up_30d": 9,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.95,
+        "estimate": 0.90929,
+        "surprise_pct": 4.48
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.05,
+        "estimate": 0.96597,
+        "surprise_pct": 8.7
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.22,
+        "estimate": 1.10626,
+        "surprise_pct": 10.28
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.33,
+        "estimate": 1.24606,
+        "surprise_pct": 6.74
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 7.55
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -0.58
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 6.28
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": 6.04
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": -0.84
+      }
+    ],
+    "avg_abs_move_pct": 3.44,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +5.8% over 90 days and +5.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 9 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.6%, +6.3%, +6.0%, -0.8% (average absolute move 3.4%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +7.5%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "CTAS",
+  "as_of": "2026-08-30T13:28:41.410283+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.48926,
+    "eps_d30": 5.48569,
+    "eps_d90": 5.42584,
+    "change_30d_pct": 0.07,
+    "change_90d_pct": 1.17,
+    "analysts_up_30d": 10,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 1.2,
+        "estimate": 1.19632,
+        "surprise_pct": 0.31
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 1.21,
+        "estimate": 1.19453,
+        "surprise_pct": 1.3
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 1.24,
+        "estimate": 1.23509,
+        "surprise_pct": 0.4
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 1.26,
+        "estimate": 1.23104,
+        "surprise_pct": 2.35
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 1.09
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": 0.76
+      },
+      {
+        "report_date": "2026-04-07",
+        "move_pct": -0.82
+      },
+      {
+        "report_date": "2026-01-07",
+        "move_pct": -0.36
+      },
+      {
+        "report_date": "2025-10-08",
+        "move_pct": -0.18
+      }
+    ],
+    "avg_abs_move_pct": 0.53,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.2% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 10 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.8%, -0.8%, -0.4%, -0.2% (average absolute move 0.5%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +1.1%."
+  ]
+}

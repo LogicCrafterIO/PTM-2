@@ -1,0 +1,77 @@
+{
+  "ticker": "LYB",
+  "as_of": "2026-08-30T13:47:09.113161+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 9.30486,
+    "eps_d30": 8.45821,
+    "eps_d90": 9.58575,
+    "change_30d_pct": 10.01,
+    "change_90d_pct": -2.93,
+    "analysts_up_30d": 9,
+    "analysts_down_30d": 6
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.01,
+        "estimate": 0.80249,
+        "surprise_pct": 25.86
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.26,
+        "estimate": 0.24774,
+        "surprise_pct": -204.95
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.49,
+        "estimate": 0.27821,
+        "surprise_pct": 76.13
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 4.3,
+        "estimate": 3.42368,
+        "surprise_pct": 25.6
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": -19.34
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": 2.71
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": 0.52
+      },
+      {
+        "report_date": "2026-02-20",
+        "move_pct": 2.42
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": 2.7
+      }
+    ],
+    "avg_abs_move_pct": 2.09,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.9% over 90 days and +10.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 9 up, 6 down.",
+    "Price reaction to the last 4 reports, most recent first: +2.7%, +0.5%, +2.4%, +2.7% (average absolute move 2.1%, 0 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise -19.3%."
+  ]
+}

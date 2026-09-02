@@ -1,0 +1,77 @@
+{
+  "ticker": "COLL",
+  "as_of": "2026-08-30T13:49:26.185633+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.46575,
+    "eps_d30": 7.76475,
+    "eps_d90": 7.7198,
+    "change_30d_pct": -3.85,
+    "change_90d_pct": -3.29,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.25,
+        "estimate": 1.86,
+        "surprise_pct": 20.97
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.04,
+        "estimate": 2.1398,
+        "surprise_pct": -4.66
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.76,
+        "estimate": 1.5236,
+        "surprise_pct": 15.52
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.92,
+        "estimate": 1.765,
+        "surprise_pct": 8.78
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 10.15
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -18.55
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 7.72
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": -3.34
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": 13.42
+      }
+    ],
+    "avg_abs_move_pct": 10.76,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -3.3% over 90 days and -3.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: -18.6%, +7.7%, -3.3%, +13.4% (average absolute move 10.8%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +10.2%."
+  ]
+}

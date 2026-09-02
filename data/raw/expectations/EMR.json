@@ -1,0 +1,77 @@
+{
+  "ticker": "EMR",
+  "as_of": "2026-09-02T13:49:16.859125+00:00",
+  "earnings_date": "2026-11-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.558,
+    "eps_d30": 6.50632,
+    "eps_d90": 6.50421,
+    "change_30d_pct": 0.79,
+    "change_90d_pct": 0.83,
+    "analysts_up_30d": 17,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.62,
+        "estimate": 1.61547,
+        "surprise_pct": 0.28
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.46,
+        "estimate": 1.41207,
+        "surprise_pct": 3.39
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.54,
+        "estimate": 1.5333,
+        "surprise_pct": 0.44
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.71,
+        "estimate": 1.67708,
+        "surprise_pct": 1.96
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 1.52
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": 2.58
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": 2.16
+      },
+      {
+        "report_date": "2026-02-03",
+        "move_pct": 2.33
+      },
+      {
+        "report_date": "2025-11-10",
+        "move_pct": 0.39
+      }
+    ],
+    "avg_abs_move_pct": 1.86,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.8% over 90 days and +0.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 17 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +2.6%, +2.2%, +2.3%, +0.4% (average absolute move 1.9%, 0 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +1.5%."
+  ]
+}

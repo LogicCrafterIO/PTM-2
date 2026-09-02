@@ -43,7 +43,7 @@ def grade_theme_activation(row: dict) -> dict | None:
         "Grade the theme's activation now."
     )
     try:
-        out = chat_json(prompt, system=_SYSTEM)
+        out = chat_json(_SYSTEM, prompt)
         grade = str(out.get("grade", "NONE")).upper()
         if grade not in ("GREAT", "GOOD", "NONE"):
             grade = "NONE"

@@ -336,6 +336,23 @@ report rendered inline. Gatekeeping keeps any name with a dated print within
 the 2-4 month horizon (120 days); gate-failed names park on the theme
 watchlist — nothing dies.
 
+**Full-universe coverage and the valuation flag.** Beyond the gated book,
+`analyze-all` (CLI or the **Qual-analyze all members** button) gives every
+covered member of every non-COLD theme a coverage report: no selection, no
+gates — each member takes the side its own 90d estimate direction implies and
+gets a dive (cache-first), a forward brief and a report. The quant table adds a
+theme-relative **valuation flag** (P/E and PEG vs the theme median: premium /
+discount / mixed / fair) to every member, the book and every report — a
+pointer, never a ranking or gate. `group-review` (CLI or the **Group review**
+button) then runs ONE pass per non-COLD theme judging whether each flag is
+justified — from the **print-focused qual** (`ptm_simple/print_qual.py`), a
+dive-free layer built from the fresh EDGAR research pack (last earnings
+exhibit, MD&A, consensus changes), two bounded Ollama web searches per name,
+the consensus and revision data, and the computed quarter the next print
+reports. Each review writes `ideas/simple/<theme>/_GROUP_REVIEW_<date>.md`
+with per-member verdicts (justified / not justified / uncertain), the KPIs to
+watch, and reads the whole theme against itself. Commentary, not a gate.
+
 ## Tests (does not touch live files)
 
 ```powershell

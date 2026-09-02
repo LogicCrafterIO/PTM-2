@@ -1,0 +1,77 @@
+{
+  "ticker": "FTI",
+  "as_of": "2026-08-30T14:32:40.783055+00:00",
+  "earnings_date": "2026-10-31",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.11659,
+    "eps_d30": 2.992,
+    "eps_d90": 2.95832,
+    "change_30d_pct": 4.16,
+    "change_90d_pct": 5.35,
+    "analysts_up_30d": 10,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.75,
+        "estimate": 0.65739,
+        "surprise_pct": 14.09
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.7,
+        "estimate": 0.51665,
+        "surprise_pct": 35.49
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.64,
+        "estimate": 0.55984,
+        "surprise_pct": 14.32
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.91,
+        "estimate": 0.80211,
+        "surprise_pct": 13.45
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 19.34
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": -3.92
+      },
+      {
+        "report_date": "2026-04-30",
+        "move_pct": -1.84
+      },
+      {
+        "report_date": "2026-02-19",
+        "move_pct": -0.82
+      },
+      {
+        "report_date": "2025-10-23",
+        "move_pct": 9.09
+      }
+    ],
+    "avg_abs_move_pct": 3.92,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +5.3% over 90 days and +4.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 10 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -3.9%, -1.8%, -0.8%, +9.1% (average absolute move 3.9%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +19.3%."
+  ]
+}

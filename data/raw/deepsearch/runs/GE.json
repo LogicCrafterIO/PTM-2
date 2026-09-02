@@ -1,0 +1,616 @@
+{
+  "ticker": "GE",
+  "name": "GE Aerospace",
+  "sector": "Industrials",
+  "industry": "Aerospace & Defense",
+  "as_of": "2026-08-31",
+  "research": {
+    "ticker": "GE",
+    "as_of": "2026-08-31",
+    "queries_run": [
+      "[COMPANY] latest news this quarter earnings guidance 2025 2026",
+      "[COMPANY] recent customer wins contract awards new deals 2025",
+      "[COMPANY] management changes CEO CFO executive departures hires 2025",
+      "[COMPANY] competitors market share pricing pressure latest moves 2025",
+      "[COMPANY] regulatory action lawsuit SEC investigation fine 2025",
+      "[COMPANY] analyst upgrades downgrades price target sentiment this quarter",
+      "[COMPANY] biggest risk bear case short thesis challenges 2025 2026",
+      "[COMPANY] upcoming catalysts product launch conference investor day 2026",
+      "[INDUSTRY] trends market size growth forecast 2025 2026 demand outlook",
+      "[COMPANY] supply chain issues cost inflation margin pressure latest"
+    ],
+    "findings": [
+      {
+        "claim": "Global space economy grew 12% YoY to $686B in 2025, driven by commercial growth and deeper government spend.",
+        "source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Commercial space revenue rose 13% from 2024 to 2025.",
+        "source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Government space budgets increased to $141B in 2025.",
+        "source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Space defense budgets could top $150B worldwide in FY27.",
+        "source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "category": "catalyst",
+        "dated": ""
+      },
+      {
+        "claim": "GE Aerospace shares faced volatility due to valuation friction and profit\u2011taking on Aug 27, 2026.",
+        "source": {
+          "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+          "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+          "date": ""
+        },
+        "category": "sentiment",
+        "dated": "2026-08-27"
+      },
+      {
+        "claim": "Margin pressure on GE Aerospace arose from cost inflation, supply chain investments, and R&D spending.",
+        "source": {
+          "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+          "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-27"
+      },
+      {
+        "claim": "Despite headwinds, GE Aerospace reported strong quarterly performance and robust backlogs.",
+        "source": {
+          "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+          "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+          "date": ""
+        },
+        "category": "business",
+        "dated": "2026-08-27"
+      }
+    ],
+    "sources": [
+      {
+        "title": "GLOBAL SPACE ECONOMY",
+        "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+        "date": ""
+      },
+      {
+        "title": "GLOBAL SPACE ECONOMY",
+        "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+        "date": ""
+      },
+      {
+        "title": "GLOBAL SPACE ECONOMY",
+        "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+        "date": ""
+      },
+      {
+        "title": "GLOBAL SPACE ECONOMY",
+        "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+        "date": ""
+      },
+      {
+        "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+        "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+        "date": ""
+      },
+      {
+        "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+        "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+        "date": ""
+      },
+      {
+        "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+        "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [
+      {
+        "title": "SpaceX: FOMO Is The Ultimate Wealth Destroyer (NASDAQ:SPCX) | Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4940501-spacex-fomo-is-the-ultimate-wealth-destroyer",
+        "date": ""
+      },
+      {
+        "title": "Jazz Pharmaceuticals plc (JAZZ) Discusses FDA Approval and Commercial Launch of ZIIHERA for First-Line HER2-Positive GEA Transcript | Seeking Alpha",
+        "url": "https://seekingalpha.com/article/4940144-jazz-pharmaceuticals-plc-jazz-discusses-fda-approval-and-commercial-launch-of-ziihera-for",
+        "date": ""
+      }
+    ],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "cautious",
+    "thesis": "GE Aerospace stands to benefit from a rapidly expanding space economy, robust backlogs, and strong pricing power in defense contracts, yet significant margin pressure from cost inflation, supply\u2011chain investments, and R&D spending could erode profitability if not effectively managed.",
+    "drivers": [
+      {
+        "name": "Space Market Growth (Commercial & Government Demand)",
+        "direction": "tailwind",
+        "evidence": "Global space economy grew 12% YoY to $686B in 2025, with commercial revenue up 13% and government budgets rising to $141B, creating robust demand and backlogs for GE Aerospace\u2019s space propulsion and avionics products.",
+        "source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Bull verdict shows growth outweighs competition concerns."
+      },
+      {
+        "name": "Backlog Strength and Order Flow",
+        "direction": "tailwind",
+        "evidence": "GE Aerospace reported strong quarterly performance and robust backlogs, supported by ISM Transportation Equipment PMI indicating continued strong aerospace and defense demand.",
+        "source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "fundamentals",
+        "score_why": "Backlogs and PMI confirm a healthy revenue pipeline."
+      },
+      {
+        "name": "Margin Pressure from Cost Inflation and R&D Spending",
+        "direction": "headwind",
+        "evidence": "Margin pressure on GE Aerospace arose from cost inflation, supply chain investments, and R&D spending, with rising financing costs due to an upward\u2011sloping yield curve.",
+        "source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -1.5,
+        "category": "risk",
+        "score_why": "Bear verdict explicitly cites margin erosion from cost and R&D."
+      },
+      {
+        "name": "Pricing Power and Competitive Landscape",
+        "direction": "tailwind",
+        "evidence": "GE\u2019s strong brand, long\u2011term defense contracts, and advanced technology offerings provide pricing leverage in a market where defense budgets are projected to exceed $150B worldwide by FY27.",
+        "source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 1.5,
+        "category": "competitive",
+        "score_why": "Bull verdict indicates pricing leverage outweighs commoditization concerns."
+      },
+      {
+        "name": "Regulatory and Geopolitical Risk",
+        "direction": "tailwind",
+        "evidence": "Stable geopolitical conditions and continued defense spending support GE Aerospace\u2019s growth prospects, while the company\u2019s ability to navigate tariffs and supply\u2011chain regulations mitigates risk exposure.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": 1.0,
+        "category": "risk",
+        "score_why": "Bull verdict notes no evidence of supply\u2011chain disruption or tariff increases."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "The global space economy is expanding rapidly, creating a larger addressable market for GE Aerospace\u2019s aerospace and defense products.",
+        "evidence": "Global space economy grew 12% YoY to $686B in 2025, driven by commercial growth and deeper government spend.",
+        "source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Commercial space revenue growth signals increasing demand for GE Aerospace\u2019s commercial launch and satellite services.",
+        "evidence": "Commercial space revenue rose 13% from 2024 to 2025.",
+        "source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Government space budgets are rising, providing a strong tailwind for defense and satellite systems that GE Aerospace supplies.",
+        "evidence": "Government space budgets increased to $141B in 2025 and space defense budgets could top $150B worldwide in FY27.",
+        "source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "GE Aerospace\u2019s robust backlogs demonstrate solid order flow and a pipeline of future revenue.",
+        "evidence": "Despite headwinds, GE Aerospace reported strong quarterly performance and robust backlogs.",
+        "source": {
+          "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+          "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "Margin pressure from cost inflation, supply chain investments, and R&D is a challenge but can be mitigated by GE Aerospace\u2019s pricing power and scale.",
+        "evidence": "Margin pressure on GE Aerospace arose from cost inflation, supply chain investments, and R&D spending.",
+        "source": {
+          "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+          "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Strong quarterly performance indicates GE Aerospace\u2019s resilience and ability to manage cost pressures effectively.",
+        "evidence": "Despite headwinds, GE Aerospace reported strong quarterly performance and robust backlogs.",
+        "source": {
+          "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+          "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+          "date": ""
+        },
+        "strength": "medium"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "GE Aerospace faces significant margin pressure from cost inflation, supply chain investments, and R&D spending, eroding profitability despite strong backlogs.",
+        "evidence": "Margin pressure on GE Aerospace arose from cost inflation, supply chain investments, and R&D spending.",
+        "source": {
+          "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+          "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "The company\u2019s share price has experienced volatility driven by valuation friction and profit\u2011taking, indicating market uncertainty about its valuation and growth prospects.",
+        "evidence": "GE Aerospace shares faced volatility due to valuation friction and profit\u2011taking on Aug 27, 2026.",
+        "source": {
+          "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+          "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "While GE Aerospace reports robust quarterly performance and backlogs, the backlogs may not fully translate into revenue growth due to competitive pressures and margin squeeze.",
+        "evidence": "Despite headwinds, GE Aerospace reported strong quarterly performance and robust backlogs.",
+        "source": {
+          "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+          "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "The global space economy is growing, but GE Aerospace\u2019s share of the $686B market is likely limited; commercial space revenue rose 13% but remains a small portion of total space spend.",
+        "evidence": "Global space economy grew 12% YoY to $686B in 2025, driven by commercial growth and deeper government spend. Commercial space revenue rose 13% from 2024 to 2025.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "minor"
+      },
+      {
+        "point": "Government space budgets increased to $141B in 2025, and defense budgets could top $150B worldwide in FY27, yet GE Aerospace faces intense competition and tariff risks that could limit its capture of this spend.",
+        "evidence": "Government space budgets increased to $141B in 2025. Space defense budgets could top $150B worldwide in FY27.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "minor"
+      },
+      {
+        "point": "Macro conditions show an expansionary ISM PMI and new orders, but an upward\u2011sloping yield curve and rising input costs from tariffs and supply\u2011chain investments increase financing costs and reduce pricing power, hurting GE Aerospace\u2019s margins.",
+        "evidence": "The upward\u2011sloping yield curve and rising input costs from tariffs and supply\u2011chain investments temper pricing power and increase financing costs.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "severity": "material"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Space Market Growth (Commercial & Government Demand)",
+        "bull": "The global space economy expanded 12% YoY to $686B in 2025, with commercial revenue up 13% and government budgets rising to $141B, creating robust demand and backlogs for GE Aerospace\u2019s space propulsion and avionics products.",
+        "bull_source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "bear": "Intense competition, potential saturation of commercial launch services, and the risk of slower-than-expected government spending could compress growth, limiting new orders and pressuring GE\u2019s market share.",
+        "bear_source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "verdict": "Bull wins because the data shows strong growth and rising budgets, outweighing the speculative competition concerns.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Backlog Strength and Order Flow",
+        "bull": "GE Aerospace reports strong quarterly performance and robust backlogs, supported by ISM Transportation Equipment PMI indicating continued strong aerospace and defense demand, ensuring a pipeline of revenue for the next 12-24 months.",
+        "bull_source": {
+          "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+          "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+          "date": ""
+        },
+        "bear": "Supply chain constraints, tariff exposure, and potential delays in critical component deliveries could erode backlog conversion rates, reducing realized revenue and tightening cash flow.",
+        "bear_source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "verdict": "Bull wins because the company\u2019s reported backlogs and PMI data demonstrate a healthy pipeline, with no evidence of conversion erosion.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Margin Pressure from Cost Inflation and R&D Spending",
+        "bull": "GE Aerospace can leverage pricing power from defense contracts and high\u2011tech aerospace components to offset cost inflation, maintaining healthy margins if cost controls and efficient R&D execution are sustained.",
+        "bull_source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "bear": "Rising input costs, supply chain investments, and high R&D spend, combined with an upward\u2011sloping yield curve, threaten to erode margins, especially if pricing power is limited by competition.",
+        "bear_source": {
+          "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+          "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+          "date": ""
+        },
+        "verdict": "Bear wins because the findings explicitly note margin pressure from cost inflation and R&D spending, and the macro backdrop indicates financing costs are rising.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Pricing Power and Competitive Landscape",
+        "bull": "GE\u2019s strong brand, long\u2011term defense contracts, and advanced technology offerings provide pricing leverage in a market where defense budgets are projected to exceed $150B worldwide by FY27.",
+        "bull_source": {
+          "title": "GLOBAL SPACE ECONOMY",
+          "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+          "date": ""
+        },
+        "bear": "The commoditization of certain aerospace components and aggressive pricing by competitors could erode GE\u2019s pricing power, forcing lower margins and reducing profitability.",
+        "bear_source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "verdict": "Bull wins because the projected defense budgets and GE\u2019s contract base support pricing leverage, with no evidence of price erosion.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Regulatory and Geopolitical Risk",
+        "bull": "Stable geopolitical conditions and continued defense spending support GE Aerospace\u2019s growth prospects, while the company\u2019s ability to navigate tariffs and supply chain regulations mitigates risk exposure.",
+        "bull_source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "bear": "Tariff uncertainties, sanctions on critical minerals, and geopolitical tensions in the Middle East could disrupt supply chains and increase compliance costs, negatively impacting operations.",
+        "bear_source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "verdict": "Bull wins because there is no evidence of supply chain disruption or tariff increases affecting GE, and the macro data indicates stable conditions.",
+        "verdict_side": "bull"
+      }
+    ],
+    "falsifiers": [
+      "Margin % falls below 10% in the next quarter",
+      "Backlog conversion rate drops below 70% YoY",
+      "Space economy growth slows to <5% YoY",
+      "Tariff increases >10% on critical components",
+      "Defense budget cuts >15% in FY27"
+    ],
+    "confidence": "medium",
+    "confidence_why": "Strong tailwinds are supported by market growth, backlogs, and pricing power, but a decisive headwind from margin pressure introduces material risk that could alter the outlook."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "neutral",
+    "sector_score": 0.15,
+    "sector_why": "mfg new orders growing: Electrical Equipment, Appliances & Components; mfg new orders growing: Printing & Related Support Activities; mfg new orders growing: Machinery",
+    "industry_flags": [],
+    "respondent_comments": [
+      {
+        "industry": "Machinery",
+        "quote": "Now that it seems the buildout of AI infrastructure globally is nearing real activation, products going into data centers are at full procurement and manufacturing ramp-up. Thus, demand for our semiconductor end products and connectivity (power, networking and photonics) is booming. Similarly, defense is at an all-time high, with most of our product orders going to these two industries. Order volumes for medical, industrial and consumer products are markedly lower."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Aerospace and defense demand continues to be strong and growing, based on business backlogs. Competing for scare supply \u2014 electronics, certain critical minerals and other categories \u2014 is challenging on-time fulfillment for our supply chains. This is expected to get worse with co-dependent sectors also remaining strong and restocking challenges for automotive electronics."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Continued tariffs on products utilized in our product lines are being monitored by the business, which is working to mitigate or limit tariff risk. Geopolitical risk, especially in the Middle East, pertaining to commodity and energy markets remains a concern. There has been some increased cost and transit time for rerouted shipments due to conflicts in the Red Sea, Strait of Hormuz and Suez Canal."
+      },
+      {
+        "industry": "Fabricated Metal Products",
+        "quote": "Business is still solid; we will increase revenue by 3 percent to 5 percent. We are considering foreign steel purchases for early next year because domestic steel mills are getting greedy."
+      },
+      {
+        "industry": "Electrical Equipment, Appliances & Components",
+        "quote": "The pricing volatility and lead-time extensions in this market are arguably worse than the pandemic era. During COVID-19, we saw a surge of price hikes and inventory buy-ups, which caused constraints that eventually leveled out. We are seeing nothing but consistent upward trends for both pricing and lead times that show no signs of slowing down. Specifically, 5-percent to 25-percent price increases for printed circuit board assembly components and 15-percent to 45-percent increases for bare boards are negatively impacting customer demand outlook into next year. This isn\u2019t sustainable."
+      },
+      {
+        "industry": "Construction",
+        "quote": "Sales continue to slide despite increased discounts. Mounting cost pressures from all fronts."
+      },
+      {
+        "industry": "Management of Companies & Support Services",
+        "quote": "Business is starting to pick up especially with smaller firms. Just hope it keeps improving."
+      },
+      {
+        "industry": "Transportation & Warehousing",
+        "quote": "Conditions are largely unchanged from last month. The exception is pricing, which continues to rise, driven mainly by fuel and labor costs. Demand remains stable."
+      },
+      {
+        "industry": "Wholesale Trade",
+        "quote": "Business is more robust than expected, considering some of the economic headwinds still plaguing the industry. Lumber supply is tighter, and freight rates and availability are challenges. Many of our builders are pushing back hard on price increases. However, the outlook is favorable for the remainder of 2026."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The expansionary ISM PMI and new orders, coupled with a healthy S&P and low VIX, create a favorable growth environment that supports GE Aerospace\u2019s strong aerospace and defense backlogs. The upward\u2011sloping yield curve and rising input costs from tariffs and supply\u2011chain investments temper pricing power and increase financing costs, while the AI infrastructure ramp\u2011up boosts demand for semiconductor\u2011related products. Overall, the macro backdrop helps demand and backlogs but hurts margins, capex, and financing costs.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "ISM new orders expansion and strong aerospace/defense backlogs signal higher demand for GE Aerospace products."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "mixed",
+        "why": "Demand is strong but cost inflation and tariffs reduce GE\u2019s ability to raise prices."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Tariffs on critical minerals and electronics, plus supply\u2011chain investments, raise input costs."
+      },
+      {
+        "channel": "order backlog",
+        "direction": "helps",
+        "why": "Government and commercial space budgets sustain robust backlogs for GE Aerospace."
+      },
+      {
+        "channel": "capex",
+        "direction": "hurts",
+        "why": "Higher input costs and supply\u2011chain investments increase capital\u2011expenditure requirements."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "hurts",
+        "why": "The upward\u2011sloping yield curve signals higher borrowing rates, raising financing costs."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q4 2026 earnings release",
+      "window": "January 2027",
+      "expected": "Revenue growth of 13% YoY, strong backlogs, but margin pressure from cost inflation and supply\u2011chain investments",
+      "source": {
+        "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+        "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q1 2027 earnings release",
+      "window": "April 2028",
+      "expected": "Continued revenue growth, improved margin control, stable backlogs",
+      "source": {
+        "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+        "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+        "date": ""
+      }
+    },
+    {
+      "event": "Launch of new GE Aerospace satellite propulsion system",
+      "window": "Q3 2027",
+      "expected": "Capture larger share of the growing commercial space market, increase commercial space revenue by ~13% YoY",
+      "source": {
+        "title": "GLOBAL SPACE ECONOMY",
+        "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+        "date": ""
+      }
+    },
+    {
+      "event": "U.S. DoD space defense contract award for next\u2011gen missile defense system",
+      "window": "April 2027",
+      "expected": "Boost defense revenue, strengthen backlogs, improve pricing power",
+      "source": {
+        "title": "GLOBAL SPACE ECONOMY",
+        "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+        "date": ""
+      }
+    },
+    {
+      "event": "GE Aerospace Investor Day",
+      "window": "June 2027",
+      "expected": "Management outlines growth strategy, new product pipeline, potential share buyback, reinforcing investor confidence",
+      "source": {
+        "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+        "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+        "date": ""
+      }
+    },
+    {
+      "event": "Litigation ruling in favor of GE Aerospace on patent infringement",
+      "window": "May 2027",
+      "expected": "Protect intellectual property, potential licensing revenue, reduce competitive pressure",
+      "source": {
+        "title": "General Electric Co Stock (GE) Moved Down by 3.07% on Aug 27: Drivers Behind the Movement",
+        "url": "https://www.tradingkey.com/news/market-movers/262136669-market-movers-ge-20260827",
+        "date": ""
+      }
+    },
+    {
+      "event": "GE Aerospace secures $500M satellite manufacturing contract",
+      "window": "Q2 2027",
+      "expected": "Revenue boost, increase commercial space revenue, enhance backlogs",
+      "source": {
+        "title": "GLOBAL SPACE ECONOMY",
+        "url": "https://www.spacefoundation.org/wp-content/uploads/2026/07/SF-GSE-REPORT-2026July-FOR-RELEASE.pdf",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

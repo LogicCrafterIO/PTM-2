@@ -1,0 +1,77 @@
+{
+  "ticker": "AVAV",
+  "as_of": "2026-08-30T14:31:49.615452+00:00",
+  "earnings_date": "2026-09-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.23654,
+    "eps_d30": 3.23883,
+    "eps_d90": 4.05076,
+    "change_30d_pct": -0.07,
+    "change_90d_pct": -20.1,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 14
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-07-31",
+        "actual": 0.32,
+        "estimate": 0.343,
+        "surprise_pct": -6.71
+      },
+      {
+        "quarter": "2025-10-31",
+        "actual": 0.44,
+        "estimate": 0.789,
+        "surprise_pct": -44.23
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 0.64,
+        "estimate": 0.69108,
+        "surprise_pct": -7.39
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 1.84,
+        "estimate": 1.47192,
+        "surprise_pct": 25.01
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -8.33
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-06-29",
+        "move_pct": 0.76
+      },
+      {
+        "report_date": "2026-03-11",
+        "move_pct": -6.25
+      },
+      {
+        "report_date": "2025-12-10",
+        "move_pct": -12.85
+      },
+      {
+        "report_date": "2025-09-10",
+        "move_pct": 6.95
+      }
+    ],
+    "avg_abs_move_pct": 6.7,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -20.1% over 90 days and -0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 14 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.8%, -6.2%, -12.8%, +7.0% (average absolute move 6.7%, 2 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -8.3%."
+  ]
+}

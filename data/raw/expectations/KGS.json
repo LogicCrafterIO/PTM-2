@@ -1,0 +1,77 @@
+{
+  "ticker": "KGS",
+  "as_of": "2026-08-30T14:28:39.144063+00:00",
+  "earnings_date": "2026-11-06",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.62124,
+    "eps_d30": 2.6231,
+    "eps_d90": 2.69762,
+    "change_30d_pct": -0.07,
+    "change_90d_pct": -2.83,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.1553,
+        "estimate": 0.51725,
+        "surprise_pct": -69.98
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.3487,
+        "estimate": 0.53056,
+        "surprise_pct": -34.28
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.59,
+        "estimate": 0.53879,
+        "surprise_pct": 9.5
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.55,
+        "estimate": 0.71477,
+        "surprise_pct": -23.05
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -29.45
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-07",
+        "move_pct": 5.35
+      },
+      {
+        "report_date": "2026-05-11",
+        "move_pct": 8.43
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": 3.98
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": -6.51
+      }
+    ],
+    "avg_abs_move_pct": 6.07,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.8% over 90 days and -0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +5.3%, +8.4%, +4.0%, -6.5% (average absolute move 6.1%, 1 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -29.4%."
+  ]
+}

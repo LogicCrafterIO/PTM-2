@@ -1,0 +1,77 @@
+{
+  "ticker": "OGN",
+  "as_of": "2026-08-30T13:49:32.545581+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.33627,
+    "eps_d30": 3.621,
+    "eps_d90": 3.44351,
+    "change_30d_pct": -7.86,
+    "change_90d_pct": -3.11,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.01,
+        "estimate": 0.93126,
+        "surprise_pct": 8.46
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.63,
+        "estimate": 0.72696,
+        "surprise_pct": -13.34
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.71,
+        "estimate": 0.85353,
+        "surprise_pct": -16.82
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.85,
+        "estimate": 1.07,
+        "surprise_pct": -20.56
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -10.56
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": 0.0
+      },
+      {
+        "report_date": "2026-05-04",
+        "move_pct": -0.23
+      },
+      {
+        "report_date": "2026-02-24",
+        "move_pct": 2.78
+      },
+      {
+        "report_date": "2025-11-10",
+        "move_pct": 13.72
+      }
+    ],
+    "avg_abs_move_pct": 4.18,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -3.1% over 90 days and -7.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.0%, -0.2%, +2.8%, +13.7% (average absolute move 4.2%, 1 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -10.6%."
+  ]
+}

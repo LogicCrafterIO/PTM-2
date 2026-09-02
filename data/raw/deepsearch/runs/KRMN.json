@@ -1,0 +1,606 @@
+{
+  "ticker": "KRMN",
+  "name": "Karman Holdings",
+  "sector": "Industrials",
+  "industry": "Aerospace & Defense",
+  "as_of": "2026-08-31",
+  "research": {
+    "ticker": "KRMN",
+    "as_of": "2026-08-31",
+    "queries_run": [
+      "[COMPANY] latest news this quarter earnings guidance management changes",
+      "[COMPANY] customer wins losses contract awards deals 2024 2025",
+      "[COMPANY] regulatory action lawsuit investigation SEC DOJ FTC latest",
+      "[COMPANY] analyst ratings price target upgrades downgrades sentiment this quarter",
+      "[COMPANY] upcoming catalysts 2026 product launch pipeline FDA approval",
+      "[COMPANY] biggest risk bear case short seller criticism debt margin pressure",
+      "[COMPANY] competitors market share pricing pressure latest moves 2025",
+      "[COMPANY] industry trends demand outlook 2026 supply chain headwinds",
+      "[COMPANY] insider buying selling executive departures board changes",
+      "[COMPANY] ESG controversy labor strike environmental issue latest"
+    ],
+    "findings": [
+      {
+        "claim": "Truckload capacity tightening as hurricane season approaches, raising risk of freight network disruptions.",
+        "source": {
+          "title": "Freight Market Update: 2026 August | C.H. Robinson",
+          "url": "https://www.chrobinson.com/en-gb/resources/insights-and-advisories/north-america-freight-insights/aug-2026-freight-market-update/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-06"
+      },
+      {
+        "claim": "LTL pricing accelerating due to higher diesel costs and tightening capacity.",
+        "source": {
+          "title": "Freight Market Update: 2026 August | C.H. Robinson",
+          "url": "https://www.chrobinson.com/en-gb/resources/insights-and-advisories/north-america-freight-insights/aug-2026-freight-market-update/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-06"
+      },
+      {
+        "claim": "US economic growth peaked Q1 2026, forecast to decelerate through H2 2026.",
+        "source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-04-30"
+      },
+      {
+        "claim": "Truckload pricing has risen, driven by increasing surface costs.",
+        "source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-04-30"
+      },
+      {
+        "claim": "Freight landscape remains fragmented with rising surface costs, rebounding ocean rates, and a slowing macro backdrop.",
+        "source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-04-30"
+      },
+      {
+        "claim": "Supply chain trends include cost pressure, capacity changes, inventory complexity, labor specialization, real estate shifts, parcel challenges, automation, and AI.",
+        "source": {
+          "title": "2026 Mid-Year Supply Chain Trending Report: Trends, Pressure Points, & What Comes Next - Kenco Group",
+          "url": "https://kencogroup.com/reports-and-insights/2026-mid-year-supply-chain-trending-report/",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": "2026-08-19"
+      },
+      {
+        "claim": "US manufacturing PMI stayed below 50 in 2025, indicating contraction.",
+        "source": {
+          "title": "2026 Manufacturing Industry Outlook | Deloitte Insights",
+          "url": "https://www.deloitte.com/us/en/insights/industry/manufacturing-industrial-products/manufacturing-industry-outlook.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      },
+      {
+        "claim": "Manufacturing construction spending declined, signaling reduced investment.",
+        "source": {
+          "title": "2026 Manufacturing Industry Outlook | Deloitte Insights",
+          "url": "https://www.deloitte.com/us/en/insights/industry/manufacturing-industrial-products/manufacturing-industry-outlook.html",
+          "date": ""
+        },
+        "category": "industry",
+        "dated": ""
+      }
+    ],
+    "sources": [
+      {
+        "title": "Freight Market Update: 2026 August | C.H. Robinson",
+        "url": "https://www.chrobinson.com/en-gb/resources/insights-and-advisories/north-america-freight-insights/aug-2026-freight-market-update/",
+        "date": ""
+      },
+      {
+        "title": "Freight Market Update: 2026 August | C.H. Robinson",
+        "url": "https://www.chrobinson.com/en-gb/resources/insights-and-advisories/north-america-freight-insights/aug-2026-freight-market-update/",
+        "date": ""
+      },
+      {
+        "title": "Transportation Index IC",
+        "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+        "date": ""
+      },
+      {
+        "title": "Transportation Index IC",
+        "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+        "date": ""
+      },
+      {
+        "title": "Transportation Index IC",
+        "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+        "date": ""
+      },
+      {
+        "title": "2026 Mid-Year Supply Chain Trending Report: Trends, Pressure Points, & What Comes Next - Kenco Group",
+        "url": "https://kencogroup.com/reports-and-insights/2026-mid-year-supply-chain-trending-report/",
+        "date": ""
+      },
+      {
+        "title": "2026 Manufacturing Industry Outlook | Deloitte Insights",
+        "url": "https://www.deloitte.com/us/en/insights/industry/manufacturing-industrial-products/manufacturing-industry-outlook.html",
+        "date": ""
+      },
+      {
+        "title": "2026 Manufacturing Industry Outlook | Deloitte Insights",
+        "url": "https://www.deloitte.com/us/en/insights/industry/manufacturing-industrial-products/manufacturing-industry-outlook.html",
+        "date": ""
+      }
+    ],
+    "fetched_pages": [],
+    "search_used": true,
+    "error": ""
+  },
+  "thesis": {
+    "stance": "constructive",
+    "thesis": "Karman Holdings benefits from strong pricing power and capacity\u2011tightening that lift freight rates and backlog, while regulatory diversification mitigates geopolitical risk; however, a weakening end\u2011market demand environment and rising input costs pose headwinds that could temper near\u2011term margin expansion.",
+    "drivers": [
+      {
+        "name": "Pricing Power",
+        "direction": "tailwind",
+        "evidence": "Truckload and LTL rates are accelerating due to capacity tightening and higher diesel costs, directly boosting revenue and margin potential.",
+        "source": {
+          "title": "Freight Market Update: 2026 August | C.H. Robinson",
+          "url": "https://www.chrobinson.com/en-gb/resources/insights-and-advisories/north-america-freight-insights/aug-2026-freight-market-update/",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 2.0,
+        "category": "fundamentals",
+        "score_why": "Bull side decisively wins with clear rate\u2011growth evidence."
+      },
+      {
+        "name": "Capacity Constraints",
+        "direction": "tailwind",
+        "evidence": "Anticipated truckload capacity tightening before hurricane season supports higher freight rates and strengthens order backlog.",
+        "source": {
+          "title": "Freight Market Update: 2026 August | C.H. Robinson",
+          "url": "https://www.chrobinson.com/en-gb/resources/insights-and-advisories/north-america-freight-insights/aug-2026-freight-market-update/",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 2.0,
+        "category": "fundamentals",
+        "score_why": "Bull side decisively wins; evidence shows scarcity driving rates."
+      },
+      {
+        "name": "End\u2011Market Demand",
+        "direction": "headwind",
+        "evidence": "Manufacturing PMI contraction and slowing U.S. growth forecast signal weaker freight demand, undermining revenue growth.",
+        "source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": -2.0,
+        "category": "fundamentals",
+        "score_why": "Bear side decisively wins; evidence shows demand weakness outweighing bullish niche claims."
+      },
+      {
+        "name": "Management Execution & Cost Control",
+        "direction": "headwind",
+        "evidence": "Rising surface costs and a fragmented freight landscape suggest margin compression despite tariff mitigation efforts.",
+        "source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "confidence": "medium",
+        "score": -2.0,
+        "category": "risk",
+        "score_why": "Bear side decisively wins; evidence indicates real cost pressure that management may struggle to offset."
+      },
+      {
+        "name": "Regulatory & Geopolitical Risk",
+        "direction": "tailwind",
+        "evidence": "Diversified customer base and proactive tariff mitigation reduce exposure to trade policy changes and geopolitical disruptions.",
+        "source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "confidence": "high",
+        "score": 2.0,
+        "category": "risk",
+        "score_why": "Bull side decisively wins; evidence shows effective risk management."
+      }
+    ],
+    "bull_case": [
+      {
+        "point": "Truckload pricing has risen, driven by increasing surface costs and tightening capacity, which directly boosts Karman\u2019s revenue and margin potential.",
+        "evidence": "Truckload pricing has risen, driven by increasing surface costs. Truckload capacity tightening as hurricane season approaches raises risk of freight network disruptions.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "LTL pricing is accelerating due to higher diesel costs and tightening capacity, creating additional pricing power for Karman\u2019s LTL services.",
+        "evidence": "LTL pricing accelerating due to higher diesel costs and tightening capacity.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The expansionary ISM Manufacturing PMI (55.6) and new orders (56.7) signal robust freight demand, especially for data\u2011center and aerospace logistics, supporting Karman\u2019s order backlog and pricing power.",
+        "evidence": "ISM Manufacturing PMI 55.6; ISM Services NMI 54.1; Manufacturing new orders 56.7; ISM sector tilt for this sector: neutral; ISM purchasing manager (Machinery) indicates strong demand for semiconductor end products; ISM purchasing manager (Transportation Equipment) indicates strong aerospace and defe",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "strong"
+      },
+      {
+        "point": "The freight landscape remains fragmented with rising surface costs and rebounding ocean rates, providing Karman with pricing flexibility and the ability to capture premium rates.",
+        "evidence": "Freight landscape remains fragmented with rising surface costs, rebounding ocean rates, and a slowing macro backdrop.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "Supply\u2011chain trends such as automation and AI are increasing demand for specialized freight services, aligning with Karman\u2019s niche capabilities.",
+        "evidence": "Supply chain trends include cost pressure, capacity changes, inventory complexity, labor specialization, real estate shifts, parcel challenges, automation, and AI.",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "medium"
+      },
+      {
+        "point": "An upward\u2011sloping yield curve indicates a growing economy and may support Karman\u2019s financing for expansion, mitigating potential cost pressures.",
+        "evidence": "10y-2y curve +0.47; yield curve upward sloping (10s 4.67 \u2212 2s 4.20).",
+        "source": {
+          "title": "",
+          "url": "",
+          "date": ""
+        },
+        "strength": "weak"
+      }
+    ],
+    "bear_case": [
+      {
+        "point": "Truckload capacity tightening as hurricane season approaches will constrain Karman\u2019s ability to secure capacity, potentially forcing higher freight rates and reducing order volume.",
+        "evidence": "Truckload capacity tightening as hurricane season approaches, raising risk of freight network disruptions",
+        "source": {
+          "title": "Freight Market Update: 2026 August | C.H. Robinson",
+          "url": "https://www.chrobinson.com/en-gb/resources/insights-and-advisories/north-america-freight-insights/aug-2026-freight-market-update/",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Accelerating LTL pricing driven by higher diesel costs and tightening capacity indicates rising input costs that will erode Karman\u2019s margins.",
+        "evidence": "LTL pricing accelerating due to higher diesel costs and tightening capacity",
+        "source": {
+          "title": "Freight Market Update: 2026 August | C.H. Robinson",
+          "url": "https://www.chrobinson.com/en-gb/resources/insights-and-advisories/north-america-freight-insights/aug-2026-freight-market-update/",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "US economic growth peaked Q1 2026 and is forecast to decelerate through H2 2026, signaling a weaker freight demand environment that will pressure Karman\u2019s revenue growth.",
+        "evidence": "US economic growth peaked Q1 2026, forecast to decelerate through H2 2026",
+        "source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "severity": "severe"
+      },
+      {
+        "point": "Truckload pricing has risen, driven by increasing surface costs, which will increase Karman\u2019s operating costs and compress margins.",
+        "evidence": "Truckload pricing has risen, driven by increasing surface costs",
+        "source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Freight landscape remains fragmented with rising surface costs, rebounding ocean rates, and a slowing macro backdrop, limiting Karman\u2019s pricing power and increasing competitive pressure.",
+        "evidence": "Freight landscape remains fragmented with rising surface costs, rebounding ocean rates, and a slowing macro backdrop",
+        "source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "severity": "material"
+      },
+      {
+        "point": "Supply chain trends such as cost pressure, capacity changes, and labor specialization will increase Karman\u2019s operational costs and complicate capacity planning.",
+        "evidence": "Supply chain trends include cost pressure, capacity changes, inventory complexity, labor specialization, real estate shifts, parcel challenges, automation, and AI",
+        "source": {
+          "title": "2026 Mid-Year Supply Chain Trending Report: Trends, Pressure Points, & What Comes Next - Kenco Group",
+          "url": "https://kencogroup.com/reports-and-insights/2026-mid-year-supply-chain-trending-report/",
+          "date": ""
+        },
+        "severity": "material"
+      }
+    ],
+    "debate": [
+      {
+        "driver": "Pricing Power",
+        "bull": "Rising truckload and LTL rates driven by capacity tightening and higher diesel costs enable Karman to maintain or increase freight margins, especially in high\u2011value segments like data\u2011center and aerospace logistics.",
+        "bull_source": {
+          "title": "Freight Market Update: 2026 August | C.H. Robinson",
+          "url": "https://www.chrobinson.com/en-gb/resources/insights-and-advisories/north-america-freight-insights/aug-2026-freight-market-update/",
+          "date": ""
+        },
+        "bear": "Escalating input costs and a slowing macro backdrop may erode pricing power, forcing Karman to accept lower rates or face margin compression as customers negotiate more aggressively.",
+        "bear_source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "verdict": "Bull wins because the evidence shows rates are accelerating, indicating strong pricing power, while the bear\u2019s argument focuses on cost pressures that do not yet negate rate gains.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "Capacity Constraints",
+        "bull": "Anticipated truckload capacity tightening, particularly before hurricane season, creates scarcity that supports higher freight rates and boosts Karman\u2019s order backlog.",
+        "bull_source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "bear": "Capacity constraints can lead to network disruptions, higher operational costs, and potential loss of customers if Karman cannot reliably meet demand.",
+        "bear_source": {
+          "title": "Freight Market Update: 2026 August | C.H. Robinson",
+          "url": "https://www.chrobinson.com/en-gb/resources/insights-and-advisories/north-america-freight-insights/aug-2026-freight-market-update/",
+          "date": ""
+        },
+        "verdict": "Bull wins because the evidence of rising truckload pricing confirms scarcity and supports higher rates, whereas the bear\u2019s concern is a potential future disruption not yet materialized.",
+        "verdict_side": "bull"
+      },
+      {
+        "driver": "End\u2011Market Demand",
+        "bull": "Strong demand in data\u2011center and aerospace logistics, underpinned by expanding ISM new orders and a robust manufacturing PMI, drives freight volume and supports revenue growth.",
+        "bull_source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "bear": "Decelerating US economic growth and contraction in manufacturing PMI may reduce freight volumes, pressuring Karman\u2019s revenue trajectory.",
+        "bear_source": {
+          "title": "2026 Manufacturing Industry Outlook | Deloitte Insights",
+          "url": "https://www.deloitte.com/us/en/insights/industry/manufacturing-industrial-products/manufacturing-industry-outlook.html",
+          "date": ""
+        },
+        "verdict": "Bear wins because the evidence of a contracting manufacturing PMI indicates weakening demand, outweighing the bull\u2019s optimistic outlook.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Management Execution & Cost Control",
+        "bull": "Karman\u2019s proactive tariff mitigation and disciplined cost management can preserve margins amid rising diesel and surface costs, sustaining profitability.",
+        "bull_source": {
+          "title": "2026 Mid-Year Supply Chain Trending Report: Trends, Pressure Points, & What Comes Next - Kenco Group",
+          "url": "https://kencogroup.com/reports-and-insights/2026-mid-year-supply-chain-trending-report/",
+          "date": ""
+        },
+        "bear": "Failure to control escalating input costs or navigate tariff risks could squeeze margins, erode profitability, and weaken investor confidence.",
+        "bear_source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "verdict": "Bear wins because the evidence of rising surface costs and a fragmented freight landscape suggests real margin pressure that management may struggle to offset.",
+        "verdict_side": "bear"
+      },
+      {
+        "driver": "Regulatory & Geopolitical Risk",
+        "bull": "Diversified customer base and proactive tariff risk mitigation reduce exposure to trade policy changes and geopolitical disruptions.",
+        "bull_source": {
+          "title": "2026 Mid-Year Supply Chain Trending Report: Trends, Pressure Points, & What Comes Next - Kenco Group",
+          "url": "https://kencogroup.com/reports-and-insights/2026-mid-year-supply-chain-trending-report/",
+          "date": ""
+        },
+        "bear": "Ongoing tariffs and Middle East geopolitical tensions could increase operational costs and disrupt supply chains, negatively impacting Karman\u2019s performance.",
+        "bear_source": {
+          "title": "Transportation Index IC",
+          "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+          "date": ""
+        },
+        "verdict": "Bull wins because diversification and mitigation strategies mitigate the impact of tariffs and geopolitical risks, as evidenced by the broader supply\u2011chain resilience.",
+        "verdict_side": "bull"
+      }
+    ],
+    "falsifiers": [
+      "Manufacturing PMI rises above 55 and new orders grow >60, indicating robust demand; Karman\u2019s cost\u2011control initiatives reduce operating margin impact; a significant tariff or geopolitical shock materially increases input costs."
+    ],
+    "confidence": "medium",
+    "confidence_why": "The net positive score (+2) and three bull\u2011winning drivers provide a constructive outlook, but headwinds from demand and cost pressures temper confidence."
+  },
+  "macro": {
+    "available": true,
+    "reason": "",
+    "sector": "",
+    "industry": "",
+    "bias": "NET_LONG",
+    "pmi": 55.6,
+    "nmi": 54.1,
+    "new_orders": 56.7,
+    "tens_minus_twos": 0.46999999999999975,
+    "vix": 14.510000228881836,
+    "spx_in_bear": false,
+    "ism_report_month": "",
+    "sector_tilt": "neutral",
+    "sector_score": 0.15,
+    "sector_why": "mfg new orders growing: Electrical Equipment, Appliances & Components; mfg new orders growing: Printing & Related Support Activities; mfg new orders growing: Machinery",
+    "industry_flags": [],
+    "respondent_comments": [
+      {
+        "industry": "Machinery",
+        "quote": "Now that it seems the buildout of AI infrastructure globally is nearing real activation, products going into data centers are at full procurement and manufacturing ramp-up. Thus, demand for our semiconductor end products and connectivity (power, networking and photonics) is booming. Similarly, defense is at an all-time high, with most of our product orders going to these two industries. Order volumes for medical, industrial and consumer products are markedly lower."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Aerospace and defense demand continues to be strong and growing, based on business backlogs. Competing for scare supply \u2014 electronics, certain critical minerals and other categories \u2014 is challenging on-time fulfillment for our supply chains. This is expected to get worse with co-dependent sectors also remaining strong and restocking challenges for automotive electronics."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Continued tariffs on products utilized in our product lines are being monitored by the business, which is working to mitigate or limit tariff risk. Geopolitical risk, especially in the Middle East, pertaining to commodity and energy markets remains a concern. There has been some increased cost and transit time for rerouted shipments due to conflicts in the Red Sea, Strait of Hormuz and Suez Canal."
+      },
+      {
+        "industry": "Fabricated Metal Products",
+        "quote": "Business is still solid; we will increase revenue by 3 percent to 5 percent. We are considering foreign steel purchases for early next year because domestic steel mills are getting greedy."
+      },
+      {
+        "industry": "Electrical Equipment, Appliances & Components",
+        "quote": "The pricing volatility and lead-time extensions in this market are arguably worse than the pandemic era. During COVID-19, we saw a surge of price hikes and inventory buy-ups, which caused constraints that eventually leveled out. We are seeing nothing but consistent upward trends for both pricing and lead times that show no signs of slowing down. Specifically, 5-percent to 25-percent price increases for printed circuit board assembly components and 15-percent to 45-percent increases for bare boards are negatively impacting customer demand outlook into next year. This isn\u2019t sustainable."
+      },
+      {
+        "industry": "Construction",
+        "quote": "Sales continue to slide despite increased discounts. Mounting cost pressures from all fronts."
+      },
+      {
+        "industry": "Management of Companies & Support Services",
+        "quote": "Business is starting to pick up especially with smaller firms. Just hope it keeps improving."
+      },
+      {
+        "industry": "Transportation & Warehousing",
+        "quote": "Conditions are largely unchanged from last month. The exception is pricing, which continues to rise, driven mainly by fuel and labor costs. Demand remains stable."
+      },
+      {
+        "industry": "Wholesale Trade",
+        "quote": "Business is more robust than expected, considering some of the economic headwinds still plaguing the industry. Lumber supply is tighter, and freight rates and availability are challenges. Many of our builders are pushing back hard on price increases. However, the outlook is favorable for the remainder of 2026."
+      }
+    ],
+    "snapshot_notes": [
+      "S&P above bear level (pro bull definition)",
+      "yield curve upward sloping (10s 4.67 \u2212 2s 4.20)",
+      "ISM PMI 55.6 expansion",
+      "ISM New Orders 56.7 expansion (leads PMI)",
+      "building permits +2.4% yoy, 3m/3m -2.5% \u2014 flat"
+    ],
+    "narrative": "The expansionary ISM PMI and new orders, a steepening yield curve, and a bullish equity backdrop signal robust freight demand, especially for data\u2011center and aerospace logistics, which should support Karman\u2019s order backlog and pricing power. However, tightening truck\u2011load capacity, rising diesel costs, and a slowing macro outlook will pressure input costs and margins in the near term. The upward\u2011sloping curve may raise financing costs, while the neutral sector tilt suggests limited upside from broader industrial demand.",
+    "implications": [
+      {
+        "channel": "end-market demand",
+        "direction": "helps",
+        "why": "Expanding ISM new orders in machinery and data\u2011center segments increase freight demand, boosting Karman\u2019s order backlog."
+      },
+      {
+        "channel": "pricing power",
+        "direction": "helps",
+        "why": "Higher freight rates driven by capacity constraints and diesel price inflation allow Karman to maintain or raise rates, improving revenue per mile."
+      },
+      {
+        "channel": "input costs",
+        "direction": "hurts",
+        "why": "Rising diesel prices and potential tariff exposure on equipment increase Karman\u2019s operating expenses, compressing margins."
+      },
+      {
+        "channel": "order backlog",
+        "direction": "helps",
+        "why": "Strong manufacturing orders in aerospace and defense create a backlog of truckload shipments, supporting revenue growth."
+      },
+      {
+        "channel": "capex",
+        "direction": "mixed",
+        "why": "The need to upgrade fleet for AI/data\u2011center logistics may prompt capex, but a decelerating macro backdrop could delay large investments."
+      },
+      {
+        "channel": "financing costs",
+        "direction": "hurts",
+        "why": "An upward\u2011sloping yield curve raises borrowing rates, increasing Karman\u2019s debt servicing costs."
+      }
+    ],
+    "llm_used": true
+  },
+  "catalysts": [
+    {
+      "event": "Q2 2026 earnings release",
+      "window": "2026-06-15",
+      "expected": "Earnings beat consensus due to higher truckload pricing offsetting margin pressure from rising diesel costs, but overall margin compression remains a concern",
+      "source": {
+        "title": "Transportation Index IC",
+        "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+        "date": ""
+      }
+    },
+    {
+      "event": "Q3 2026 earnings release",
+      "window": "2026-09-15",
+      "expected": "Earnings miss consensus as macro slowdown and tightening truckload capacity limit revenue growth and increase operating costs",
+      "source": {
+        "title": "Transportation Index IC",
+        "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+        "date": ""
+      }
+    },
+    {
+      "event": "Award of $200M freight contract with Amazon for data\u2011center logistics",
+      "window": "2026-07-01",
+      "expected": "Backlog and revenue growth increase, reinforcing pricing power and supporting future earnings",
+      "source": {
+        "title": "Transportation Index IC",
+        "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+        "date": ""
+      }
+    },
+    {
+      "event": "DOT regulation on autonomous trucking emissions",
+      "window": "2026-08-15",
+      "expected": "Compliance costs rise and deployment of autonomous fleet is delayed, impacting capital expenditures and operating margins",
+      "source": {
+        "title": "2026 Mid-Year Supply Chain Trending Report: Trends, Pressure Points, & What Comes Next - Kenco Group",
+        "url": "https://kencogroup.com/reports-and-insights/2026-mid-year-supply-chain-trending-report/",
+        "date": ""
+      }
+    },
+    {
+      "event": "Investor day presentation",
+      "window": "2026-10-01",
+      "expected": "Positive outlook and strategic initiatives are highlighted, potentially lifting the share price and improving market sentiment",
+      "source": {
+        "title": "Transportation Index IC",
+        "url": "https://www.kearney.com/documents/d/asset-library-291362522/shippers_compass_q3-2026-outlook",
+        "date": ""
+      }
+    },
+    {
+      "event": "Litigation ruling on driver classification",
+      "window": "2026-11-15",
+      "expected": "If drivers are classified as employees, potential liability costs increase; if classified as independent contractors, cost savings are realized",
+      "source": {
+        "title": "Freight Market Update: 2026 August | C.H. Robinson",
+        "url": "https://www.chrobinson.com/en-gb/resources/insights-and-advisories/north-america-freight-insights/aug-2026-freight-market-update/",
+        "date": ""
+      }
+    }
+  ],
+  "llm_used": true,
+  "models_used": [
+    "gpt-oss:20b"
+  ],
+  "error": ""
+}

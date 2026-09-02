@@ -1,0 +1,77 @@
+{
+  "ticker": "PRSU",
+  "as_of": "2026-08-30T13:23:21.209138+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.7,
+    "eps_d30": 1.58667,
+    "eps_d90": 1.59,
+    "change_30d_pct": 7.14,
+    "change_90d_pct": 6.92,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.65,
+        "estimate": 2.45333,
+        "surprise_pct": 8.02
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.89,
+        "estimate": -0.80333,
+        "surprise_pct": -10.79
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.94,
+        "estimate": -0.93667,
+        "surprise_pct": -0.36
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.5,
+        "estimate": 0.47333,
+        "surprise_pct": 5.63
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 0.63
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": -2.89
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": 0.6
+      },
+      {
+        "report_date": "2026-02-25",
+        "move_pct": -0.05
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -10.74
+      }
+    ],
+    "avg_abs_move_pct": 3.57,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +6.9% over 90 days and +7.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -2.9%, +0.6%, -0.1%, -10.7% (average absolute move 3.6%, 3 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +0.6%."
+  ]
+}

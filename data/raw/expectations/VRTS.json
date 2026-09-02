@@ -1,0 +1,77 @@
+{
+  "ticker": "VRTS",
+  "as_of": "2026-08-30T14:01:00.064594+00:00",
+  "earnings_date": "2026-11-06",
+  "revisions": {
+    "available": true,
+    "eps_current": 23.31033,
+    "eps_d30": 24.68375,
+    "eps_d90": 25.40625,
+    "change_30d_pct": -5.56,
+    "change_90d_pct": -8.25,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 6.69,
+        "estimate": 6.77225,
+        "surprise_pct": -1.21
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 6.5,
+        "estimate": 6.5,
+        "surprise_pct": 0.0
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 5.38,
+        "estimate": 5.67167,
+        "surprise_pct": -5.14
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 5.54,
+        "estimate": 6.0855,
+        "surprise_pct": -8.96
+      }
+    ],
+    "beats": 0,
+    "of": 4,
+    "avg_surprise_pct": -3.83
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-07",
+        "move_pct": 1.02
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": 1.47
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": -4.02
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": 0.18
+      }
+    ],
+    "avg_abs_move_pct": 1.67,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -8.2% over 90 days and -5.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.0%, +1.5%, -4.0%, +0.2% (average absolute move 1.7%, 1 of 4 negative).",
+    "Beat consensus in 0 of the last 4 quarters, average surprise -3.8%."
+  ]
+}

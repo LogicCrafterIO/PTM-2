@@ -1,0 +1,77 @@
+{
+  "ticker": "FCFS",
+  "as_of": "2026-08-25T07:48:38.711840+00:00",
+  "earnings_date": "2026-10-26",
+  "revisions": {
+    "available": true,
+    "eps_current": 11.322,
+    "eps_d30": 10.918,
+    "eps_d90": 10.89667,
+    "change_30d_pct": 3.7,
+    "change_90d_pct": 3.9,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.26,
+        "estimate": 1.93,
+        "surprise_pct": 17.1
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.64,
+        "estimate": 2.53333,
+        "surprise_pct": 4.21
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.69,
+        "estimate": 2.39333,
+        "surprise_pct": 12.4
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.5,
+        "estimate": 2.386,
+        "surprise_pct": 4.78
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 9.62
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-27",
+        "move_pct": 5.99
+      },
+      {
+        "report_date": "2026-04-24",
+        "move_pct": 3.14
+      },
+      {
+        "report_date": "2026-02-09",
+        "move_pct": 0.7
+      },
+      {
+        "report_date": "2025-11-03",
+        "move_pct": 0.21
+      }
+    ],
+    "avg_abs_move_pct": 2.51,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.9% over 90 days and +3.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +6.0%, +3.1%, +0.7%, +0.2% (average absolute move 2.5%, 0 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +9.6%."
+  ]
+}

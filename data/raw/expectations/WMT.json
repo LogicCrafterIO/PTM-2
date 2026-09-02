@@ -1,0 +1,73 @@
+{
+  "ticker": "WMT",
+  "as_of": "2026-08-30T13:33:32.996787+00:00",
+  "earnings_date": "2026-11-23",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.87906,
+    "eps_d30": 2.90069,
+    "eps_d90": 2.90627,
+    "change_30d_pct": -0.75,
+    "change_90d_pct": -0.94,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 8
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-10-31",
+        "actual": 0.62,
+        "estimate": 0.60128,
+        "surprise_pct": 3.11
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 0.74,
+        "estimate": 0.727,
+        "surprise_pct": 1.79
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 0.66,
+        "estimate": 0.65872,
+        "surprise_pct": 0.19
+      },
+      {
+        "quarter": "2026-07-31",
+        "actual": 0.81,
+        "estimate": 0.74126,
+        "surprise_pct": 9.27
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 3.59
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-05-29",
+        "move_pct": -2.65
+      },
+      {
+        "report_date": "2026-03-13",
+        "move_pct": 0.95
+      },
+      {
+        "report_date": "2025-12-03",
+        "move_pct": 1.78
+      }
+    ],
+    "avg_abs_move_pct": 1.79,
+    "down_prints": 1,
+    "of": 3
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.9% over 90 days and -0.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 8 down.",
+    "Price reaction to the last 3 reports, most recent first: -2.6%, +0.9%, +1.8% (average absolute move 1.8%, 1 of 3 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +3.6%."
+  ]
+}

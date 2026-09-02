@@ -1,0 +1,77 @@
+{
+  "ticker": "DAVE",
+  "as_of": "2026-08-30T14:31:05.886737+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 17.3259,
+    "eps_d30": 16.62295,
+    "eps_d90": 15.86,
+    "change_30d_pct": 4.23,
+    "change_90d_pct": 9.24,
+    "analysts_up_30d": 8,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 4.24,
+        "estimate": 2.342,
+        "surprise_pct": 81.04
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 3.69,
+        "estimate": 3.75167,
+        "surprise_pct": -1.64
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 3.64,
+        "estimate": 3.07889,
+        "surprise_pct": 18.22
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 4.12,
+        "estimate": 3.83917,
+        "surprise_pct": 7.31
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 26.23
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": 0.21
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": -5.5
+      },
+      {
+        "report_date": "2026-03-02",
+        "move_pct": 2.97
+      },
+      {
+        "report_date": "2025-11-04",
+        "move_pct": -2.3
+      }
+    ],
+    "avg_abs_move_pct": 2.75,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +9.2% over 90 days and +4.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 8 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.2%, -5.5%, +3.0%, -2.3% (average absolute move 2.8%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +26.2%."
+  ]
+}

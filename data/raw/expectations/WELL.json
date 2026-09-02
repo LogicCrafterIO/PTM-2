@@ -1,0 +1,77 @@
+{
+  "ticker": "WELL",
+  "as_of": "2026-08-22T13:00:11.101190+00:00",
+  "earnings_date": "2026-10-27",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.88641,
+    "eps_d30": 2.92205,
+    "eps_d90": 2.98047,
+    "change_30d_pct": -1.22,
+    "change_90d_pct": -3.16,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.5464,
+        "estimate": 0.53,
+        "surprise_pct": 3.09
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.54828,
+        "estimate": 0.59,
+        "surprise_pct": -7.07
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.5469,
+        "estimate": 0.5,
+        "surprise_pct": 9.38
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.5403,
+        "estimate": 0.65,
+        "surprise_pct": -16.88
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -2.87
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-28",
+        "move_pct": -1.92
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": -1.0
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": 0.13
+      },
+      {
+        "report_date": "2025-10-28",
+        "move_pct": -1.59
+      }
+    ],
+    "avg_abs_move_pct": 1.16,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -3.2% over 90 days and -1.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.9%, -1.0%, +0.1%, -1.6% (average absolute move 1.2%, 3 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -2.9%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "RHI",
+  "as_of": "2026-08-30T14:31:53.742762+00:00",
+  "earnings_date": "2026-11-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.27389,
+    "eps_d30": 1.31552,
+    "eps_d90": 1.3228,
+    "change_30d_pct": -3.16,
+    "change_90d_pct": -3.7,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.43,
+        "estimate": 0.43117,
+        "surprise_pct": -0.27
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.32,
+        "estimate": 0.29516,
+        "surprise_pct": 8.42
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.14,
+        "estimate": 0.12862,
+        "surprise_pct": 8.85
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.26,
+        "estimate": 0.25783,
+        "surprise_pct": 0.84
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 4.46
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": 5.84
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": 1.54
+      },
+      {
+        "report_date": "2026-02-13",
+        "move_pct": -2.44
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": -1.39
+      }
+    ],
+    "avg_abs_move_pct": 2.8,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -3.7% over 90 days and -3.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 5 down.",
+    "Price reaction to the last 4 reports, most recent first: +5.8%, +1.5%, -2.4%, -1.4% (average absolute move 2.8%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +4.5%."
+  ]
+}

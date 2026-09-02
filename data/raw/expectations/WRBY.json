@@ -1,0 +1,77 @@
+{
+  "ticker": "WRBY",
+  "as_of": "2026-08-30T14:32:52.877159+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.4195,
+    "eps_d30": 0.4708,
+    "eps_d90": 0.4818,
+    "change_30d_pct": -10.9,
+    "change_90d_pct": -12.93,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.1237,
+        "estimate": 0.08955,
+        "surprise_pct": 38.14
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.02213,
+        "estimate": 0.05306,
+        "surprise_pct": -58.29
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.1147,
+        "estimate": 0.11054,
+        "surprise_pct": 3.76
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.14696,
+        "estimate": 0.11302,
+        "surprise_pct": 30.03
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 3.41
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -7.89
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 23.47
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": 17.82
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -11.13
+      }
+    ],
+    "avg_abs_move_pct": 15.08,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -12.9% over 90 days and -10.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 3 down.",
+    "Price reaction to the last 4 reports, most recent first: -7.9%, +23.5%, +17.8%, -11.1% (average absolute move 15.1%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +3.4%."
+  ]
+}

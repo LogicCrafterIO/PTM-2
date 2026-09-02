@@ -1,0 +1,77 @@
+{
+  "ticker": "AA",
+  "as_of": "2026-08-30T13:57:55.969995+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.49824,
+    "eps_d30": 7.67154,
+    "eps_d90": 7.25657,
+    "change_30d_pct": -15.29,
+    "change_90d_pct": -10.45,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 8
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": -0.02,
+        "estimate": -0.054,
+        "surprise_pct": 62.96
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.26,
+        "estimate": 1.01012,
+        "surprise_pct": 24.74
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.4,
+        "estimate": 1.54816,
+        "surprise_pct": -9.57
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.12,
+        "estimate": 2.19038,
+        "surprise_pct": -3.21
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 18.73
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": 4.87
+      },
+      {
+        "report_date": "2026-04-30",
+        "move_pct": 2.13
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": -2.2
+      },
+      {
+        "report_date": "2025-10-28",
+        "move_pct": -1.48
+      }
+    ],
+    "avg_abs_move_pct": 2.67,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -10.4% over 90 days and -15.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 8 down.",
+    "Price reaction to the last 4 reports, most recent first: +4.9%, +2.1%, -2.2%, -1.5% (average absolute move 2.7%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +18.7%."
+  ]
+}

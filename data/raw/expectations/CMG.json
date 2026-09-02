@@ -1,0 +1,77 @@
+{
+  "ticker": "CMG",
+  "as_of": "2026-08-30T13:31:06.135311+00:00",
+  "earnings_date": "2026-11-01",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.14919,
+    "eps_d30": 1.13466,
+    "eps_d90": 1.13361,
+    "change_30d_pct": 1.28,
+    "change_90d_pct": 1.37,
+    "analysts_up_30d": 23,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.29,
+        "estimate": 0.28749,
+        "surprise_pct": 0.87
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.25,
+        "estimate": 0.23834,
+        "surprise_pct": 4.89
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.24,
+        "estimate": 0.23668,
+        "surprise_pct": 1.4
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.33,
+        "estimate": 0.31744,
+        "surprise_pct": 3.96
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 2.78
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": -3.37
+      },
+      {
+        "report_date": "2026-04-30",
+        "move_pct": 3.03
+      },
+      {
+        "report_date": "2026-02-04",
+        "move_pct": 1.94
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": -18.18
+      }
+    ],
+    "avg_abs_move_pct": 6.63,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.4% over 90 days and +1.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 23 up, 5 down.",
+    "Price reaction to the last 4 reports, most recent first: -3.4%, +3.0%, +1.9%, -18.2% (average absolute move 6.6%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +2.8%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "INTC",
+  "as_of": "2026-08-30T14:32:15.252309+00:00",
+  "earnings_date": "2026-10-23",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.5129,
+    "eps_d30": 1.09713,
+    "eps_d90": 1.08592,
+    "change_30d_pct": 37.9,
+    "change_90d_pct": 39.32,
+    "analysts_up_30d": 32,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.23,
+        "estimate": 0.00705,
+        "surprise_pct": 3162.41
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.15,
+        "estimate": 0.08264,
+        "surprise_pct": 81.51
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.29,
+        "estimate": 0.01313,
+        "surprise_pct": 2108.68
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.42,
+        "estimate": 0.21584,
+        "surprise_pct": 94.59
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 1361.8
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-24",
+        "move_pct": -7.89
+      },
+      {
+        "report_date": "2026-04-24",
+        "move_pct": 23.6
+      },
+      {
+        "report_date": "2026-01-23",
+        "move_pct": -17.03
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -2.97
+      }
+    ],
+    "avg_abs_move_pct": 12.87,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +39.3% over 90 days and +37.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 32 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -7.9%, +23.6%, -17.0%, -3.0% (average absolute move 12.9%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +1361.8%."
+  ]
+}

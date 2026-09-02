@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 
 from ptm.log import log
 
-_SIMPLE_ACTIONS = ("build-themes", "build-wiki", "radar", "run", "run-all")
+_SIMPLE_ACTIONS = ("build-themes", "build-wiki", "radar", "run", "run-all", "refresh-fundamentals", "analyze-all", "group-review")
 _lock = threading.Lock()
 _state: dict = {
     "running": False,
@@ -102,6 +102,28 @@ def _worker(action: str, opts: dict) -> None:
             payload = run_active_pass(theme_map, ref, force=bool(opts.get("force")))
             result = {"themes_run": payload.get("themes_run", 0), "book": len(payload["book"]),
                       "parked": len(payload["overflow"]), "ideas": payload["book"], "overflow": payload["overflow"]}
+        elif action == "refresh-fundamentals":
+            from ptm_simple.refresh import refresh_fundamentals
+
+            out = refresh_fundamentals(
+                source=opts.get("map") or "manual",
+                ref=ref,
+                non_cold_only=not bool(opts.get("all")),
+                force=bool(opts.get("force")),
+                with_estimates=bool(opts.get("estimates")),
+                with_prices=not bool(opts.get("no_prices")),
+            )
+            result = out
+        elif action == "analyze-all":
+            from ptm_simple.run import analyze_all_pass, load_theme_map
+
+            theme_map = load_theme_map(opts.get("map") or "manual")
+            payload = analyze_all_pass(theme_map, ref, force=bool(opts.get("force")))
+            result = {k: payload[k] for k in ("themes", "members", "skipped", "reports")}
+        elif action == "group-review":
+            from ptm_simple.group_review import run_group_review
+
+            result = run_group_review(source=opts.get("map") or "manual", ref=ref, theme=opts.get("theme"))
         else:
             raise ValueError(f"unknown simple action: {action}")
         with _lock:
@@ -276,6 +298,26 @@ def get_watchlist() -> dict:
     return _read_json(path) or {"parked": []}
 
 
+def get_quant() -> dict:
+    """The deterministic quant table for the latest run (reference numbers)."""
+    from ptm.config import data_dir
+
+    path = _latest_file(data_dir("simple"), "quant_*.json")
+    if not path:
+        return {"error": "no quant table yet: run a theme pass"}
+    return {"quant": _read_json(path) or {}, "file": path.name}
+
+
+def get_review() -> dict:
+    """The latest per-theme group review (are the valuation flags justified?)."""
+    from ptm.config import data_dir
+
+    path = _latest_file(data_dir("simple"), "group_review_*.json")
+    if not path:
+        return {"error": "no group review yet: run group-review after the coverage reports"}
+    return {"review": _read_json(path) or {}, "file": path.name}
+
+
 def list_reports() -> dict:
     ideadir = ideas_dir_simple()
     reports = []
@@ -291,4 +333,4 @@ def read_report(rel: str) -> dict:
     path = (ideadir / rel).resolve()
     if not str(path).startswith(str(ideadir)) or not path.is_file():
         return {"error": "not found"}
-    return {"path": rel, "markdown": path.read_text()}
+    return {"path": rel, "markdown": path.read_text(encoding="utf-8")}

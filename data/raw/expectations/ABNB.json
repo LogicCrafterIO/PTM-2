@@ -1,0 +1,77 @@
+{
+  "ticker": "ABNB",
+  "as_of": "2026-08-30T13:25:28.985031+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.2918,
+    "eps_d30": 5.09432,
+    "eps_d90": 5.0901,
+    "change_30d_pct": 3.88,
+    "change_90d_pct": 3.96,
+    "analysts_up_30d": 24,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.21,
+        "estimate": 2.32057,
+        "surprise_pct": -4.76
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.56,
+        "estimate": 0.6639,
+        "surprise_pct": -15.65
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.26,
+        "estimate": 0.30278,
+        "surprise_pct": -14.13
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.37,
+        "estimate": 1.2514,
+        "surprise_pct": 9.48
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -6.27
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -0.56
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 0.41
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": -3.0
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -1.61
+      }
+    ],
+    "avg_abs_move_pct": 1.4,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +4.0% over 90 days and +3.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 24 up, 5 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.6%, +0.4%, -3.0%, -1.6% (average absolute move 1.4%, 3 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -6.3%."
+  ]
+}

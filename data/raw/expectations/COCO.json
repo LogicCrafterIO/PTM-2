@@ -1,0 +1,97 @@
+{
+  "ticker": "COCO",
+  "as_of": "2026-08-21T07:26:20.410159+00:00",
+  "earnings_date": "2026-10-21",
+  "implied": {
+    "available": true,
+    "reason": "",
+    "expiry": "2026-12-18",
+    "expiry_covers_earnings": true,
+    "expiries_listed": 5,
+    "spot": 65.17,
+    "strike": 65.0,
+    "strike_offset_pct": -0.26,
+    "implied_move_pct": 26.55,
+    "open_interest": 280,
+    "two_sided_strikes": 7,
+    "strikes": 33,
+    "spread_pct": null,
+    "quote_basis": "last_trade_only",
+    "open_interest_missing": false,
+    "thin": false
+  },
+  "revisions": {
+    "available": true,
+    "eps_current": 2.03,
+    "eps_d30": 1.77667,
+    "eps_d90": 1.61333,
+    "change_30d_pct": 14.26,
+    "change_90d_pct": 25.83,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.4046,
+        "estimate": 0.33,
+        "surprise_pct": 22.61
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.1447,
+        "estimate": 0.12333,
+        "surprise_pct": 17.33
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.5348,
+        "estimate": 0.33,
+        "surprise_pct": 62.06
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.87714,
+        "estimate": 0.55333,
+        "surprise_pct": 58.52
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 40.13
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-23",
+        "move_pct": -6.82
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": 29.67
+      },
+      {
+        "report_date": "2026-02-18",
+        "move_pct": -11.43
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": 7.2
+      }
+    ],
+    "avg_abs_move_pct": 13.78,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Options price a 26.6% move by 2026-12-18 (no strike near spot quotes two-sided, so this is from last traded prices and may be stale). That is the hurdle this thesis has to clear to pay.",
+    "Note: fetched outside market hours, so almost no strike quotes two-sided and the move above comes from last traded prices. Re-check during the session.",
+    "Consensus EPS for the current year has moved +25.8% over 90 days and +14.3% over 30 days \u2014 expectations are already rising, so that much is priced.",
+    "Analyst revisions in the last 30 days: 2 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -6.8%, +29.7%, -11.4%, +7.2% (average absolute move 13.8%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +40.1%."
+  ]
+}

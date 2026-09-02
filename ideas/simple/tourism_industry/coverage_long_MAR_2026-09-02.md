@@ -1,0 +1,50 @@
+# COVERAGE LONG MAR — tourism industry
+
+*Theme-first simple process · 2026-09-02 · full-membership research coverage — not gate-processed, not in the book. Side follows the name's own 90d estimate direction.*
+
+## Theme context
+- Theme status: ACTIVE, lean long (breadth +1.00) — share of covered members revising up minus share revising down over 90d (each move > ±0.5%)
+- Thesis: (none written for this theme)
+- Coverage: 2 of 4 members have fresh estimate caches
+- This name vs its theme: with the theme
+- Member 90d estimate change (rev90): +0.97% — the name's own FY1 EPS estimate rise over the last 90 days
+- Next print: 2026-11-02 (61d) — the catalyst the 2-4 month horizon is built around
+
+
+## Why & why now (forward-looking)
+1. Net room growth could stay above the 4.5% YoY falsifier line as the development pipeline converts, adding steady unit-based fees that compound even if travel demand cools.
+2. Franchise and fee revenue could keep growing faster than the 10% YoY falsifier floor, since each new room adds recurring fees and the loyalty program keeps pulling bookings direct.
+3. Airbnb’s November 5, 2026 print could confirm broad tourism demand and pricing strength, giving a peer read-through that supports Marriott’s RevPAR and occupancy into next year.
+4. The FTC data-security order from December 2024 is already in force, so the remaining risk is whether penalties breach the $200M falsifier; if they stay below that, the regulatory overhang is unlikely to offset the fee-growth story.
+5. Over the next 12-18 months, the combination of net room additions and RevPAR growth could keep adjusted EBITDA expanding, making Marriott a relative beneficiary of an active tourism theme even if the macro backdrop stays uneven.
+
+## Catalysts
+- **MAR print** — 2026-11-02 (61d) — the dated catalyst this idea is built around
+- Peer print: **ABNB** — 2026-11-05 (64d) — same-theme read-through
+- Q4 2026 earnings release — October 2026 — if it lands: Earnings expected to beat the revised EPS estimate of $3.02, potentially leading to a further lift in guidance and investor confidence
+- CFO Leeny Oberg retirement (effective March 31 2026) — March 31 2026 — if it lands: Transition to new CFOs Jen Mason and Shawn Hill may bring changes in financial strategy, cost management and reporting focus
+- FTC enforcement of Marriott’s data‑security program — 2025‑2026 — if it lands: Potential fines and increased compliance costs could impact operating expenses and require additional investment in security infrastructure
+- Class action lawsuit over hidden resort fees — 2026 — if it lands: Possible settlement or court ruling could result in financial liability, reputational damage and changes to loyalty program pricing practice
+
+## Quant snapshot (deterministic)
+
+| metric | value |
+|---|---|
+| Price | 353.87 |
+| Market cap | $92.3B |
+| Revenue (latest filing) | $13.7B |
+| **Price / Sales** | **6.72x** |
+| FY1 EPS (consensus) | 11.72 |
+| FY2 EPS (consensus) | 13.17 |
+| EG1 → EG2 | +16.9% → +12.4% |
+| PE1 | 30.20x |
+| PE2 | 26.88x |
+| PEG1 | 1.78 |
+| PEG2 | 2.17 |
+| **Valuation flag (vs theme)** | **premium** — P/E 1.0x theme median vs PEG 1.6x theme median |
+| rev90 (own estimates) | +1.0% |
+
+*Reference numbers from the cached fundamentals table (EDGAR XBRL + analyst consensus, basis: analyst_consensus). Fundamentals as of 2026-09-02. Not a ranking, not a gate — read the qual brief against these.*
+
+## Underlying research
+- Deep dive: `data/raw/deepsearch/runs/MAR.json` — rendered in the viewer's Deep dives tab (stance, bull/bear debate, sourced findings, falsifiers).

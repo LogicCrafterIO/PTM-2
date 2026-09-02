@@ -1,0 +1,77 @@
+{
+  "ticker": "GWRE",
+  "as_of": "2026-08-30T14:32:30.879793+00:00",
+  "earnings_date": "2026-09-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.46523,
+    "eps_d30": 3.47526,
+    "eps_d90": 3.51294,
+    "change_30d_pct": -0.29,
+    "change_90d_pct": -1.36,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 8
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-07-31",
+        "actual": 0.84,
+        "estimate": 0.6301,
+        "surprise_pct": 33.31
+      },
+      {
+        "quarter": "2025-10-31",
+        "actual": 0.66,
+        "estimate": 0.61369,
+        "surprise_pct": 7.55
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 1.17,
+        "estimate": 0.76742,
+        "surprise_pct": 52.46
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 0.82,
+        "estimate": 0.74279,
+        "surprise_pct": 10.39
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 25.93
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-06-05",
+        "move_pct": -10.0
+      },
+      {
+        "report_date": "2026-03-06",
+        "move_pct": 4.99
+      },
+      {
+        "report_date": "2025-12-04",
+        "move_pct": -2.17
+      },
+      {
+        "report_date": "2025-09-11",
+        "move_pct": 0.06
+      }
+    ],
+    "avg_abs_move_pct": 4.3,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -1.4% over 90 days and -0.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 8 down.",
+    "Price reaction to the last 4 reports, most recent first: -10.0%, +5.0%, -2.2%, +0.1% (average absolute move 4.3%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +25.9%."
+  ]
+}

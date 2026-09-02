@@ -1,0 +1,77 @@
+{
+  "ticker": "IPGP",
+  "as_of": "2026-08-30T14:28:50.407635+00:00",
+  "earnings_date": "2026-11-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.82286,
+    "eps_d30": 1.51833,
+    "eps_d90": 1.51,
+    "change_30d_pct": 20.06,
+    "change_90d_pct": 20.72,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.35,
+        "estimate": 0.19571,
+        "surprise_pct": 78.84
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.46,
+        "estimate": 0.24833,
+        "surprise_pct": 85.24
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.29,
+        "estimate": 0.31143,
+        "surprise_pct": -6.88
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.58,
+        "estimate": 0.38857,
+        "surprise_pct": 49.27
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 51.62
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": 7.88
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": -25.74
+      },
+      {
+        "report_date": "2026-02-23",
+        "move_pct": 0.72
+      },
+      {
+        "report_date": "2025-11-04",
+        "move_pct": -2.21
+      }
+    ],
+    "avg_abs_move_pct": 9.14,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +20.7% over 90 days and +20.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +7.9%, -25.7%, +0.7%, -2.2% (average absolute move 9.1%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +51.6%."
+  ]
+}

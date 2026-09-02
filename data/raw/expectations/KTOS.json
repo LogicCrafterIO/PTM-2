@@ -1,0 +1,77 @@
+{
+  "ticker": "KTOS",
+  "as_of": "2026-08-30T13:23:07.193193+00:00",
+  "earnings_date": "2026-11-02",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.81746,
+    "eps_d30": 0.77665,
+    "eps_d90": 0.7605,
+    "change_30d_pct": 5.25,
+    "change_90d_pct": 7.49,
+    "analysts_up_30d": 10,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.14,
+        "estimate": 0.12462,
+        "surprise_pct": 12.34
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.18,
+        "estimate": 0.14748,
+        "surprise_pct": 22.05
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.16,
+        "estimate": 0.13416,
+        "surprise_pct": 19.26
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.21,
+        "estimate": 0.15177,
+        "surprise_pct": 38.37
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 23.0
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": 5.41
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": 3.73
+      },
+      {
+        "report_date": "2026-02-23",
+        "move_pct": -1.84
+      },
+      {
+        "report_date": "2025-11-04",
+        "move_pct": -0.97
+      }
+    ],
+    "avg_abs_move_pct": 2.99,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +7.5% over 90 days and +5.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 10 up, 3 down.",
+    "Price reaction to the last 4 reports, most recent first: +5.4%, +3.7%, -1.8%, -1.0% (average absolute move 3.0%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +23.0%."
+  ]
+}

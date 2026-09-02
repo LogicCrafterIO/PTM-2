@@ -1,0 +1,77 @@
+{
+  "ticker": "CRS",
+  "as_of": "2026-08-30T14:33:04.270773+00:00",
+  "earnings_date": "2026-11-11",
+  "revisions": {
+    "available": true,
+    "eps_current": 13.37656,
+    "eps_d30": 12.67089,
+    "eps_d90": 12.72007,
+    "change_30d_pct": 5.57,
+    "change_90d_pct": 5.16,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.43,
+        "estimate": 2.15955,
+        "surprise_pct": 12.52
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.33,
+        "estimate": 2.22037,
+        "surprise_pct": 4.94
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.77,
+        "estimate": 2.64342,
+        "surprise_pct": 4.79
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.23,
+        "estimate": 3.08429,
+        "surprise_pct": 4.72
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 6.74
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-12",
+        "move_pct": -1.66
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": -5.05
+      },
+      {
+        "report_date": "2026-01-29",
+        "move_pct": -6.4
+      },
+      {
+        "report_date": "2025-10-23",
+        "move_pct": 22.66
+      }
+    ],
+    "avg_abs_move_pct": 8.94,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +5.2% over 90 days and +5.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.7%, -5.0%, -6.4%, +22.7% (average absolute move 8.9%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +6.7%."
+  ]
+}

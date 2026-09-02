@@ -1,0 +1,77 @@
+{
+  "ticker": "MTSI",
+  "as_of": "2026-08-30T14:32:25.067617+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.51229,
+    "eps_d30": 5.02877,
+    "eps_d90": 5.02551,
+    "change_30d_pct": 9.62,
+    "change_90d_pct": 9.69,
+    "analysts_up_30d": 14,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.94,
+        "estimate": 0.92868,
+        "surprise_pct": 1.22
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.02,
+        "estimate": 0.99776,
+        "surprise_pct": 2.23
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.09,
+        "estimate": 1.07282,
+        "surprise_pct": 1.6
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.4,
+        "estimate": 1.34816,
+        "surprise_pct": 3.85
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 2.23
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": 14.49
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 11.19
+      },
+      {
+        "report_date": "2026-02-05",
+        "move_pct": 5.94
+      },
+      {
+        "report_date": "2025-11-14",
+        "move_pct": 0.16
+      }
+    ],
+    "avg_abs_move_pct": 7.95,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +9.7% over 90 days and +9.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 14 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +14.5%, +11.2%, +5.9%, +0.2% (average absolute move 8.0%, 0 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +2.2%."
+  ]
+}

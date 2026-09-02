@@ -1,0 +1,77 @@
+{
+  "ticker": "PTGX",
+  "as_of": "2026-08-26T07:21:14.175598+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 4.74981,
+    "eps_d30": 4.21331,
+    "eps_d90": 4.10997,
+    "change_30d_pct": 12.73,
+    "change_90d_pct": 15.57,
+    "analysts_up_30d": 5,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": -0.62,
+        "estimate": -0.64348,
+        "surprise_pct": 3.65
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.69,
+        "estimate": -0.54149,
+        "surprise_pct": -27.43
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.05,
+        "estimate": -0.65412,
+        "surprise_pct": 107.64
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.29,
+        "estimate": 1.92894,
+        "surprise_pct": 18.72
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 25.64
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": 1.11
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": -0.31
+      },
+      {
+        "report_date": "2026-02-25",
+        "move_pct": -0.33
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": 2.44
+      }
+    ],
+    "avg_abs_move_pct": 1.05,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +15.6% over 90 days and +12.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 5 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.1%, -0.3%, -0.3%, +2.4% (average absolute move 1.1%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +25.6%."
+  ]
+}

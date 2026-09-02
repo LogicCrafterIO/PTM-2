@@ -1,0 +1,77 @@
+{
+  "ticker": "UNF",
+  "as_of": "2026-08-30T14:31:55.862450+00:00",
+  "earnings_date": "2026-10-07",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.4432,
+    "eps_d30": 7.09055,
+    "eps_d90": 7.09055,
+    "change_30d_pct": 4.97,
+    "change_90d_pct": 4.97,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 2.28,
+        "estimate": 2.12279,
+        "surprise_pct": 7.41
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 1.98,
+        "estimate": 2.06211,
+        "surprise_pct": -3.98
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 1.25,
+        "estimate": 1.21186,
+        "surprise_pct": 3.15
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 2.0637,
+        "estimate": 1.90922,
+        "surprise_pct": 8.09
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 3.67
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-08",
+        "move_pct": -0.63
+      },
+      {
+        "report_date": "2026-04-07",
+        "move_pct": -0.5
+      },
+      {
+        "report_date": "2026-01-07",
+        "move_pct": -3.03
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": -2.48
+      }
+    ],
+    "avg_abs_move_pct": 1.66,
+    "down_prints": 4,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +5.0% over 90 days and +5.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.6%, -0.5%, -3.0%, -2.5% (average absolute move 1.7%, 4 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +3.7%."
+  ]
+}

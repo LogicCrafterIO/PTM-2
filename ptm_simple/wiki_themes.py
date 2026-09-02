@@ -272,7 +272,7 @@ def wiki_industries(tickers: list[str], names: dict[str, str], sleep_s: float = 
         cache = cache_dir / f"{ticker}.json"
         if cache.exists():
             try:
-                out[ticker] = json.loads(cache.read_text())
+                out[ticker] = json.loads(cache.read_text(encoding="utf-8"))
                 continue
             except Exception:
                 pass
@@ -323,7 +323,7 @@ def wiki_industries(tickers: list[str], names: dict[str, str], sleep_s: float = 
         source = "wiki-infobox" if industries else "wikidata-no-industry"
         rec = {"qid": qid, "matched": name, "industries": industries, "source": source}
         out[ticker] = rec
-        (cache_dir / f"{ticker}.json").write_text(json.dumps(rec))
+        (cache_dir / f"{ticker}.json").write_text(json.dumps(rec), encoding="utf-8")
     log(f"wiki industries: {sum(1 for r in out.values() if r['industries'])} of {len(tickers)} resolved "
         f"({len(pending)} fresh this pass)")
     return out

@@ -1,0 +1,77 @@
+{
+  "ticker": "DFIN",
+  "as_of": "2026-09-02T13:49:15.958946+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 4.82,
+    "eps_d30": 4.76333,
+    "eps_d90": 4.69333,
+    "change_30d_pct": 1.19,
+    "change_90d_pct": 2.7,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.86,
+        "estimate": 0.57333,
+        "surprise_pct": 50.0
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.7,
+        "estimate": 0.41,
+        "surprise_pct": 70.73
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.45,
+        "estimate": 1.34667,
+        "surprise_pct": 7.67
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.76,
+        "estimate": 1.63333,
+        "surprise_pct": 7.76
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 34.04
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": -8.48
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": -15.6
+      },
+      {
+        "report_date": "2026-02-17",
+        "move_pct": 12.04
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": -14.0
+      }
+    ],
+    "avg_abs_move_pct": 12.53,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.7% over 90 days and +1.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -8.5%, -15.6%, +12.0%, -14.0% (average absolute move 12.5%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +34.0%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "PLTR",
+  "as_of": "2026-08-30T14:32:21.102385+00:00",
+  "earnings_date": "2026-11-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.60272,
+    "eps_d30": 1.47608,
+    "eps_d90": 1.46358,
+    "change_30d_pct": 8.58,
+    "change_90d_pct": 9.51,
+    "analysts_up_30d": 23,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.21,
+        "estimate": 0.16738,
+        "surprise_pct": 25.46
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.25,
+        "estimate": 0.2302,
+        "surprise_pct": 8.6
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.33,
+        "estimate": 0.27946,
+        "surprise_pct": 18.08
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.41,
+        "estimate": 0.34596,
+        "surprise_pct": 18.51
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 17.66
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": 29.45
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": -6.93
+      },
+      {
+        "report_date": "2026-02-17",
+        "move_pct": 1.23
+      },
+      {
+        "report_date": "2025-11-04",
+        "move_pct": -7.94
+      }
+    ],
+    "avg_abs_move_pct": 11.39,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +9.5% over 90 days and +8.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 23 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +29.4%, -6.9%, +1.2%, -7.9% (average absolute move 11.4%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +17.7%."
+  ]
+}

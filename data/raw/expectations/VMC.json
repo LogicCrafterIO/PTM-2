@@ -1,0 +1,77 @@
+{
+  "ticker": "VMC",
+  "as_of": "2026-08-30T13:28:19.789146+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 9.15588,
+    "eps_d30": 9.14054,
+    "eps_d90": 9.23894,
+    "change_30d_pct": 0.17,
+    "change_90d_pct": -0.9,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 9
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.84,
+        "estimate": 2.71898,
+        "surprise_pct": 4.45
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.7,
+        "estimate": 2.11143,
+        "surprise_pct": -19.49
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.35,
+        "estimate": 1.10366,
+        "surprise_pct": 22.32
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.59,
+        "estimate": 2.46866,
+        "surprise_pct": 4.92
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 3.05
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": -1.56
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": 1.59
+      },
+      {
+        "report_date": "2026-02-19",
+        "move_pct": 1.17
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": -1.68
+      }
+    ],
+    "avg_abs_move_pct": 1.5,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.9% over 90 days and +0.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 9 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.6%, +1.6%, +1.2%, -1.7% (average absolute move 1.5%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +3.0%."
+  ]
+}

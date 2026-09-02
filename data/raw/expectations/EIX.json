@@ -1,0 +1,77 @@
+{
+  "ticker": "EIX",
+  "as_of": "2026-08-30T14:08:14.349747+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.12399,
+    "eps_d30": 6.11688,
+    "eps_d90": 6.12006,
+    "change_30d_pct": 0.12,
+    "change_90d_pct": 0.06,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 4
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.34,
+        "estimate": 2.18122,
+        "surprise_pct": 7.28
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.87,
+        "estimate": 1.45384,
+        "surprise_pct": 28.62
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.42,
+        "estimate": 1.32196,
+        "surprise_pct": 7.42
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.54,
+        "estimate": 1.21269,
+        "surprise_pct": 26.99
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 17.58
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": 0.13
+      },
+      {
+        "report_date": "2026-04-28",
+        "move_pct": -0.92
+      },
+      {
+        "report_date": "2026-02-18",
+        "move_pct": -2.41
+      },
+      {
+        "report_date": "2025-10-28",
+        "move_pct": -1.51
+      }
+    ],
+    "avg_abs_move_pct": 1.24,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.1% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 4 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.1%, -0.9%, -2.4%, -1.5% (average absolute move 1.2%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +17.6%."
+  ]
+}

@@ -1,0 +1,51 @@
+# COVERAGE LONG PAYO — Transaction & Payment Processing Services
+
+*Theme-first simple process · 2026-09-02 · full-membership research coverage — not gate-processed, not in the book. Side follows the name's own 90d estimate direction.*
+
+## Theme context
+- Theme status: ACTIVE, lean long (breadth +1.00) — share of covered members revising up minus share revising down over 90d (each move > ±0.5%)
+- Thesis: (none written for this theme)
+- Coverage: 4 of 8 members have fresh estimate caches
+- This name vs its theme: with the theme
+- Member 90d estimate change (rev90): +15.56% — the name's own FY1 EPS estimate rise over the last 90 days
+- Next print: 2026-11-05 (64d) — the catalyst the 2-4 month horizon is built around
+
+
+## Why & why now (forward-looking)
+1. B2B cross-border revenue could keep growing faster than the overall business after rising 28% in 2025, pushing its share of revenue above 30% and lifting margins because that segment carries better economics than interest-dependent streams.
+2. Interest income could keep falling after dropping 10% to $231.6 million in 2025; if the decline stays under 15% year-over-year, the ex-interest growth story holds, but anything worse would widen the revenue gap and pressure profits.
+3. The September 2026 move to close Belarusian accounts could finally put one sanctions issue behind Payoneer, or it could reveal how much revenue and compliance cost is tied to restricted markets; management’s commentary will set the tone for the next 12–18 months.
+4. A new regulatory fine at or above the $100 million falsifier level, or another NYDFS consent order, would break the long thesis by wiping out a large chunk of the $73.2 million net income base and raising ongoing compliance costs.
+5. Profitability needs to stabilize after net income fell from $121.2 million in 2024 to $73.2 million in 2025; upcoming reports will show whether B2B scale and pricing power are offsetting compliance spending, or whether margins keep compressing.
+6. Greater China concentration is a key risk to watch; if revenue share there climbs above 50%, geographic and regulatory risk would rise enough to undermine the bull case even if top-line growth looks fine.
+7. Peer prints from EVTC, JKHY and TOST in early November will give a broader read on transaction volumes and pricing power in the theme; strong results would support Payoneer’s 2026 guide, while weak ones could cast doubt on the 12% revenue growth target.
+
+## Catalysts
+- **PAYO print** — 2026-11-05 (64d) — the dated catalyst this idea is built around
+- Peer print: **EVTC** — 2026-11-07 (66d) — same-theme read-through
+- Peer print: **JKHY** — 2026-11-03 (62d) — same-theme read-through
+- Peer print: **TOST** — 2026-11-04 (63d) — same-theme read-through
+- Regulatory decision to cease servicing Belarusian accounts — September 2026 — if it lands: Payoneer will discontinue all services to Belarusian customers, reducing revenue from that market and potentially incurring compliance costs
+
+## Quant snapshot (deterministic)
+
+| metric | value |
+|---|---|
+| Price | 7.13 |
+| Market cap | $2.4B |
+| Revenue (latest filing) | $536M |
+| **Price / Sales** | **4.51x** |
+| FY1 EPS (consensus) | 0.30 |
+| FY2 EPS (consensus) | 0.46 |
+| EG1 → EG2 | -9.3% → +53.3% |
+| PE1 | 23.74x |
+| PE2 | 15.49x |
+| PEG1 | — |
+| PEG2 | 0.29 |
+| **Valuation flag (vs theme)** | **premium** — P/E 1.6x theme median |
+| rev90 (own estimates) | +15.6% |
+
+*Reference numbers from the cached fundamentals table (EDGAR XBRL + analyst consensus, basis: analyst_consensus). Fundamentals as of 2026-09-02. Not a ranking, not a gate — read the qual brief against these.*
+
+## Underlying research
+- Deep dive: `data/raw/deepsearch/runs/PAYO.json` — rendered in the viewer's Deep dives tab (stance, bull/bear debate, sourced findings, falsifiers).

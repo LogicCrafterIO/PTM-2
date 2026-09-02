@@ -1,0 +1,77 @@
+{
+  "ticker": "FTNT",
+  "as_of": "2026-08-30T14:32:32.981419+00:00",
+  "earnings_date": "2026-10-27",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.45061,
+    "eps_d30": 3.15682,
+    "eps_d90": 2.97594,
+    "change_30d_pct": 9.31,
+    "change_90d_pct": 15.95,
+    "analysts_up_30d": 40,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.74,
+        "estimate": 0.63298,
+        "surprise_pct": 16.91
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.81,
+        "estimate": 0.74343,
+        "surprise_pct": 8.95
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.82,
+        "estimate": 0.61828,
+        "surprise_pct": 32.63
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.9,
+        "estimate": 0.74669,
+        "surprise_pct": 20.53
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 19.76
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": 0.67
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": 5.65
+      },
+      {
+        "report_date": "2026-02-25",
+        "move_pct": 2.82
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": 1.55
+      }
+    ],
+    "avg_abs_move_pct": 2.67,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +15.9% over 90 days and +9.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 40 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.7%, +5.7%, +2.8%, +1.6% (average absolute move 2.7%, 0 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +19.8%."
+  ]
+}

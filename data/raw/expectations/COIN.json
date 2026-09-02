@@ -1,0 +1,77 @@
+{
+  "ticker": "COIN",
+  "as_of": "2026-09-02T13:49:15.061615+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": -1.99497,
+    "eps_d30": -0.4974,
+    "eps_d90": 1.01329,
+    "change_30d_pct": 301.08,
+    "change_90d_pct": -296.88,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 15
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.5,
+        "estimate": 1.13369,
+        "surprise_pct": 32.31
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -2.49,
+        "estimate": 0.94,
+        "surprise_pct": -364.89
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -1.49,
+        "estimate": 0.04436,
+        "surprise_pct": -3458.88
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": -1.36,
+        "estimate": -0.2315,
+        "surprise_pct": -487.47
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -1069.73
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": 2.18
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": -2.53
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": -7.9
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": -5.77
+      }
+    ],
+    "avg_abs_move_pct": 4.59,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -296.9% over 90 days and +301.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 15 down.",
+    "Price reaction to the last 4 reports, most recent first: +2.2%, -2.5%, -7.9%, -5.8% (average absolute move 4.6%, 3 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -1069.7%."
+  ]
+}
