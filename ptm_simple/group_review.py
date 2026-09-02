@@ -360,10 +360,12 @@ def _review_md(rev: dict, ref: date) -> str:
     lines += [
         "",
         "## How to read this",
-        "- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions "
-        "(rev90 > +0.5% long, < -0.5% short), **Flag** compares its P/E and PEG with the theme median (see "
-        "the quant table), and the **Verdict** judges the flag against the print-focused case — never the "
-        "dive, which can lag the calendar.",
+                "- The three columns are independent layers: **Side** follows the name's own 90d estimate revisions "
+        "(rev90 > +0.5% long, < -0.5% short), **Flag** compares its forward P/E (PE1) and PEG (PEG1) with "
+        "the theme's medians — ≥ 1.5× median = premium, ≤ 0.67× = discount, one at each extreme = mixed, "
+        "otherwise fair, n/a below 3 names with a multiple (see the quant table's flag formula) — and the "
+        "**Verdict** judges the flag against the print-focused case — never the dive, which can lag the "
+        "calendar.",
         "- The verdict evaluates the market's PRICING, not the trade. `not justified` on a premium = the "
         "forward case does not support paying the multiple (supports a short, warns a long); `not justified` "
         "on a discount = the cheapness looks transitory or contradicted (supports a long, warns a short); "

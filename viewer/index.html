@@ -2390,6 +2390,11 @@
       const sideOf = (r) => ((r.rev90 || 0) > 0.5 ? "long" : (r.rev90 || 0) < -0.5 ? "short" : "flat");
       host.innerHTML = `<div class="dd-batch"><strong>Quant table (deterministic — ${allRows.length} names in ${esc((quant.themes || []).length)} non-COLD themes)</strong>` +
         `<p class="muted" style="margin:4px 0">P/S · FY1/FY2 consensus EPS · PE1/PE2 · PEG1/PEG2 · rev90 (own 90d estimate change) · days to next print. Reference numbers, not a ranking — computed from the cached fundamentals table (EDGAR XBRL + analyst consensus), no LLM, no network.</p>` +
+        `<p class="muted" style="margin:2px 0"><strong style="color:#c9d1e0">Flag formula</strong> — per theme: median of members' forward P/E (PE1) and PEG (PEG1), each median needing ≥ 3 names with that multiple; compare each name to its own theme —` +
+        ` <span class="badge" title="PE1 / theme median PE1 >= 1.5">P/E1 ÷ median ≥ 1.5× or PEG1 ÷ median ≥ 1.5× → premium</span>` +
+        ` <span class="badge" title="at most 0.67x the theme median — at least a third cheaper">≤ 0.67× median → discount</span>` +
+        ` <span class="badge info">one ratio ≥ 1.5× AND the other ≤ 0.67× → mixed</span>` +
+        ` <span class="muted">neither extreme → fair · theme has &lt; 3 names with a multiple → n/a. Theme-relative only: a 12× P/E is a premium when the theme's median is 8× and fair when the median is 12×. The flag never gates or ranks — whether it is justified comes from the group review.</span></p>` +
         `<div style="margin:6px 0;display:flex;flex-wrap:wrap;gap:6px;align-items:center">` +
         `<input id="quant-search" placeholder="ticker…" style="width:90px">` +
         `<select id="quant-side">` +
