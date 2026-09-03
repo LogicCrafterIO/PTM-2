@@ -9,7 +9,9 @@ ticker. Failed requests are NEVER cached — only a resolved answer is.
 Fallback chain per ticker, each marked in the cache:
   1. Wikidata P452 via the enwiki sitelink      (source: "wiki-infobox")
   2. Wikidata P452 via entity search            (source: "wiki-search")
-  3. yfinance industry from the fundamentals table (source: "yfinance")
+  3. industry from the fundamentals table — itself filled from the curated
+     index-membership table when a rebuilt row carries none
+                                                (source: "yfinance")
 
 The output has the same shape as the manual xlsx theme map, so the radar,
 selection and gatekeeping run unchanged on either source.
@@ -77,25 +79,82 @@ def _get(params: dict, retries: int = 6) -> dict | None:
     return None
 
 
-def _names() -> dict[str, str]:
-    """Ticker -> company name, from the curated fundamentals table."""
+def _fundamentals_table() -> "pd.DataFrame | None":
+    """The curated fundamentals table, via the configured data root."""
     import pandas as pd
 
-    path = Path("data/curated/yahoo_fundamentals.csv")
+    from ptm.config import data_dir
+
+    path = data_dir("curated", "yahoo_fundamentals.csv")
+    if not path.exists():
+        return None
+    return pd.read_csv(path)
+
+
+def _index_meta() -> dict[str, tuple[str, str]]:
+    """Ticker -> (sector, industry) from the curated index-membership table.
+
+    fundamentals.py's rule is that sector/industry come from "the index
+    membership tables, not a data vendor" — the same table the original ingest
+    filled the fundamentals CSV's industry column from. Read here so a rebuilt
+    row (EDGAR-first, no vendor meta) still has a classification to fall back
+    on, in the map build and in the radar alike."""
+    import pandas as pd
+
+    from ptm.config import data_dir
+
+    path = data_dir("curated", "universe.csv")
     if not path.exists():
         return {}
     df = pd.read_csv(path)
+    out: dict[str, tuple[str, str]] = {}
+    for r in df.itertuples():
+        sector = getattr(r, "sector", None)
+        industry = getattr(r, "industry", None)
+        sector = str(sector) if sector is not None and sector == sector else ""
+        industry = str(industry) if industry is not None and industry == industry else ""
+        if sector or industry:
+            out[str(r.ticker).upper()] = (sector, industry)
+    return out
+
+
+def _names() -> dict[str, str]:
+    """Ticker -> company name, from the curated fundamentals table."""
+    df = _fundamentals_table()
+    if df is None:
+        return {}
     return {str(r.ticker).upper(): str(r.name) for r in df.itertuples() if isinstance(r.name, str) and r.name}
 
 
 def _yf_industries() -> dict[str, str]:
-    import pandas as pd
+    """Ticker -> industry, from the fundamentals table with an index-table fallback.
 
-    path = Path("data/curated/yahoo_fundamentals.csv")
-    if not path.exists():
+    The fundamentals table is the fallback peer-group source when Wikidata has
+    no industry for a name. A row rebuilt EDGAR-first carries no industry of
+    its own, so blank rows are filled from the curated index table — otherwise
+    the ticker walk silently shrinks to whichever names an older cache still
+    classified (that shrink is how a 1295-ticker build became 62)."""
+    df = _fundamentals_table()
+    if df is None:
         return {}
-    df = pd.read_csv(path)
-    return {str(r.ticker).upper(): str(r.industry) for r in df.itertuples() if isinstance(r.industry, str) and r.industry}
+    out = {str(r.ticker).upper(): str(r.industry)
+           for r in df.itertuples() if isinstance(r.industry, str) and r.industry}
+    blank = sorted({str(r.ticker).upper() for r in df.itertuples()
+                    if not (isinstance(r.industry, str) and r.industry)})
+    if blank:
+        meta = _index_meta()
+        filled = 0
+        for t in blank:
+            industry = (meta.get(t) or ("", ""))[1]
+            if industry:
+                out[t] = industry
+                filled += 1
+        if blank and filled < len(blank):
+            from ptm.log import log
+
+            log(f"wiki industries: {len(blank) - filled} ticker(s) have no industry "
+                f"in the fundamentals table or the index table — they cannot be walked")
+    return out
 
 
 def _chunk(seq: list, n: int):
@@ -329,8 +388,43 @@ def wiki_industries(tickers: list[str], names: dict[str, str], sleep_s: float = 
     return out
 
 
-def build_theme_map_wiki(tickers: list[str] | None = None, min_members: int = 3) -> dict:
-    """Theme map from Wikipedia industries, same shape as the manual map."""
+def dedupe_memberships(themes: list[dict]) -> list[dict]:
+    """One membership per ticker: it stays only in its LARGEST theme.
+
+    Wikidata's industry property (P452) is multi-valued — a broad company like
+    Salesforce carries nine labels, and a map that keeps every label ranks the
+    same fundamentals once per label (28% of one sweep's LLM work went to
+    repeat appearances, and six names landed twice on one leaderboard). The
+    largest group a name belongs to is also the most informative peer median
+    for it, so the tie-break is deterministic: bigger theme wins, alphabetical
+    label on a tie. Themes are the labels themselves; only memberships shrink,
+    so a theme every one of whose members carries elsewhere simply empties."""
+    sizes = {t["theme"]: len(t["members"]) for t in themes}
+    best: dict[str, str] = {}
+    for t in themes:
+        for m in t["members"]:
+            cur = best.get(m)
+            if cur is None or sizes[t["theme"]] > sizes[cur] or (
+                    sizes[t["theme"]] == sizes[cur] and t["theme"] < cur):
+                best[m] = t["theme"]
+    kept = []
+    for t in themes:
+        members = sorted(m for m in t["members"] if best.get(m) == t["theme"])
+        if members:
+            kept.append({**t, "members": members})
+    return kept
+
+
+def build_theme_map_wiki(tickers: list[str] | None = None, min_members: int = 1) -> dict:
+    """Theme map from Wikipedia industries, same shape as the manual map.
+
+    `min_members` defaults to 1: an industry Wikipedia does resolve but that
+    holds fewer than three names is KEPT as a theme and judged in isolation —
+    the ranking pass reads the same fundamental packet (revisions, surprise
+    record, consensus growth, absolute forward P/E / PEG / P/S) with no peer
+    median and no read-throughs, because a lone member is still a judgeable
+    forward case. Pass a higher `min_members` to drop those themes again.
+    """
     names = _names()
     if not tickers:
         tickers = sorted(_yf_industries())
@@ -363,6 +457,10 @@ def build_theme_map_wiki(tickers: list[str] | None = None, min_members: int = 3)
             "thesis": "",
             "source": sorted(entry["sources"]),
         })
+    # One membership per ticker (see dedupe_memberships): Wikipedia labels a
+    # broad company with several industries, and ranking the same fundamentals
+    # once per label is duplicate work with duplicate leaderboard entries.
+    themes = dedupe_memberships(themes)
     reverse: dict[str, list[str]] = {}
     for t in themes:
         for m in t["members"]:
@@ -373,6 +471,7 @@ def build_theme_map_wiki(tickers: list[str] | None = None, min_members: int = 3)
         "theme_count": len(themes),
         "ticker_count": len(reverse),
         "wiki_fallbacks": fallbacks,
+        "min_members": min_members,
         "themes": themes,
         "ticker_themes": {k: sorted(v) for k, v in sorted(reverse.items())},
     }
@@ -380,6 +479,7 @@ def build_theme_map_wiki(tickers: list[str] | None = None, min_members: int = 3)
     from ptm.io import write_json
 
     write_json(path, out)
-    log(f"wiki theme map: {out['theme_count']} themes, {out['ticker_count']} tickers "
-        f"({fallbacks} yfinance fallbacks) -> {path}")
+    small = sum(1 for t in themes if len(t["members"]) < 3)
+    log(f"wiki theme map: {out['theme_count']} themes ({small} below 3 members, kept for isolated "
+        f"judging), {out['ticker_count']} tickers ({fallbacks} yfinance fallbacks) -> {path}")
     return out

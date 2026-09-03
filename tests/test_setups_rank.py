@@ -188,6 +188,25 @@ def test_the_two_quarters_are_named_apart(three_names):
     assert "quarter ended 2026-06-30" in surprise_cell(packet)
 
 
+def test_surprise_cell_survives_a_quarter_without_a_percentage():
+    """A quarter with dollars but no computable surprise % (estimate missing)
+    crashed the sign test on `pct >= 0` — first hit while ranking a theme the
+    sweep had skipped, whose members carry a quant row but no dated estimate."""
+    from ptm_setups.inputs import surprise_cell
+
+    base = {"eps_surprise": {"last": {"actual": 3.72, "estimate": None,
+                                      "surprise_pct": None, "quarter_ended": "2026-06-30"}}}
+    cell = surprise_cell(base)
+    assert "$3.72 reported" in cell and "beat" not in cell and "miss" not in cell
+    # nothing measured at all stays the em dash; beats tally still renders
+    assert surprise_cell({"eps_surprise": {"last": {}, "beats": 4, "of": 4}}) == "—"
+    assert surprise_cell({"eps_surprise": {"last": {}, "beats": 4, "of": 4}}) == "—"
+    tallied = surprise_cell({"eps_surprise": {"last": {"actual": 1.0, "estimate": None,
+                                                       "surprise_pct": None},
+                                              "beats": 4, "of": 4}})
+    assert "$1.00 reported" in tallied and "beat 4 of 4" in tallied
+
+
 def test_the_prompt_demands_a_non_valuation_reason(three_names, monkeypatch):
     """A live pass ranked a name first for its low P/E, which the rules forbid.
 
@@ -954,3 +973,21 @@ def test_run_setups_refuses_without_a_quant_table(monkeypatch):
     }), encoding="utf-8")
     with pytest.raises(SystemExit, match="no quant table"):
         run_setups(source="manual", ref=REF)
+
+
+def test_the_prompt_marks_an_isolated_group(three_names):
+    """A sub-3-member industry is judged in isolation: the prompt says there are
+    no peers and no industry median, so the pass reasons from the packet alone."""
+    from ptm_setups.inputs import member_packet
+    from ptm_setups.rank import _heat_prompt
+
+    theme_row, quant = three_names
+    member = theme_row["members"][0]
+    packet = member_packet(member["ticker"], member, quant[member["ticker"]], REF)
+    _, user = _heat_prompt(theme_row, [packet], None, REF)
+    assert "ISOLATED GROUP" in user
+    assert "no industry median" in user
+
+    full = [member_packet(m["ticker"], m, quant[m["ticker"]], REF) for m in theme_row["members"]]
+    _, user_full = _heat_prompt(theme_row, full, None, REF)
+    assert "ISOLATED GROUP" not in user_full

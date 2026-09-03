@@ -1,9 +1,10 @@
 {
   "source": "wikipedia-industry",
-  "built_at": 1788278688.1823366,
-  "theme_count": 171,
+  "built_at": 1788446928.9405105,
+  "theme_count": 170,
   "ticker_count": 1295,
-  "wiki_fallbacks": 700,
+  "wiki_fallbacks": 633,
+  "min_members": 1,
   "themes": [
     {
       "theme": "Advertising",
@@ -62,8 +63,7 @@
         "MRCY",
         "NOC",
         "OII",
-        "RTX",
-        "TDG"
+        "RTX"
       ],
       "thesis": "",
       "source": [
@@ -77,18 +77,6 @@
         "DAL",
         "LUV",
         "UAL"
-      ],
-      "thesis": "",
-      "source": [
-        "wikipedia"
-      ]
-    },
-    {
-      "theme": "aircraft industry",
-      "members": [
-        "BA",
-        "BRK-B",
-        "NOC"
       ],
       "thesis": "",
       "source": [
@@ -140,7 +128,6 @@
         "APO",
         "BLK",
         "KKR",
-        "LAZ",
         "TROW"
       ],
       "thesis": "",
@@ -151,7 +138,6 @@
     {
       "theme": "Asset Management & Custody Banks",
       "members": [
-        "AAMI",
         "APAM",
         "CG",
         "CNS",
@@ -241,7 +227,7 @@
       "theme": "bank",
       "members": [
         "ABCB",
-        "C",
+        "CATY",
         "FFBC",
         "WAL"
       ],
@@ -257,8 +243,7 @@
         "CELH",
         "COKE",
         "KDP",
-        "MNST",
-        "PEP"
+        "MNST"
       ],
       "thesis": "",
       "source": [
@@ -268,7 +253,6 @@
     {
       "theme": "biotechnology",
       "members": [
-        "ABBV",
         "ADMA",
         "ARWR",
         "BDX",
@@ -276,7 +260,6 @@
         "BMRN",
         "CYTK",
         "EXEL",
-        "GLW",
         "HALO",
         "HRMY",
         "ILMN",
@@ -301,10 +284,8 @@
       "theme": "biotechnology industry",
       "members": [
         "KRYS",
-        "MRNA",
         "TMO",
-        "VIR",
-        "VRTX"
+        "VIR"
       ],
       "thesis": "",
       "source": [
@@ -315,9 +296,7 @@
       "theme": "Broadcasting",
       "members": [
         "FOX",
-        "FOXA",
-        "NXST",
-        "ROKU"
+        "FOXA"
       ],
       "thesis": "",
       "source": [
@@ -372,7 +351,6 @@
       "theme": "Casinos & Gaming",
       "members": [
         "BYD",
-        "CHDN",
         "MCRI",
         "PENN",
         "RRR",
@@ -401,8 +379,7 @@
         "OLN",
         "SHW",
         "VVV",
-        "WDFC",
-        "WLK"
+        "WDFC"
       ],
       "thesis": "",
       "source": [
@@ -412,9 +389,7 @@
     {
       "theme": "clothing industry",
       "members": [
-        "AEO",
         "CPRI",
-        "NKE",
         "PVH",
         "RL",
         "TPR",
@@ -471,26 +446,10 @@
     {
       "theme": "computer hardware industry",
       "members": [
-        "HPE",
-        "HPQ",
-        "IBM",
         "OLED",
         "SMCI",
-        "SNDK",
         "SYNA",
         "ZBRA"
-      ],
-      "thesis": "",
-      "source": [
-        "wikipedia"
-      ]
-    },
-    {
-      "theme": "computer industry",
-      "members": [
-        "AMD",
-        "IBM",
-        "SMCI"
       ],
       "thesis": "",
       "source": [
@@ -502,10 +461,18 @@
       "members": [
         "CRWD",
         "FTNT",
-        "GEN",
         "PANW",
-        "PSN",
         "QLYS"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "computing platform",
+      "members": [
+        "UPWK"
       ],
       "thesis": "",
       "source": [
@@ -515,7 +482,6 @@
     {
       "theme": "conglomerate",
       "members": [
-        "BRK-B",
         "DHR",
         "ECL",
         "EPAC",
@@ -543,7 +509,6 @@
         "LGIH",
         "LPX",
         "MTZ",
-        "PSN",
         "SSD"
       ],
       "thesis": "",
@@ -602,9 +567,6 @@
     {
       "theme": "consumer electronics industry",
       "members": [
-        "AAPL",
-        "GRMN",
-        "MSFT",
         "ROKU",
         "SONO"
       ],
@@ -687,9 +649,7 @@
       "theme": "e-commerce",
       "members": [
         "CVNA",
-        "EBAY",
-        "ETSY",
-        "GDDY"
+        "ETSY"
       ],
       "thesis": "",
       "source": [
@@ -700,23 +660,8 @@
       "theme": "economics of banking",
       "members": [
         "BNY",
-        "CFG",
-        "CFR",
-        "COLB",
-        "FNB",
-        "HBAN",
-        "JPM",
-        "KEY",
-        "MTB",
         "PB",
-        "PNC",
-        "RF",
-        "SSB",
-        "UBSI",
-        "USB",
-        "WABC",
-        "WFC",
-        "WSBC"
+        "WABC"
       ],
       "thesis": "",
       "source": [
@@ -775,10 +720,7 @@
     {
       "theme": "electrical industry",
       "members": [
-        "AMD",
-        "EMR",
-        "INTC",
-        "VRT"
+        "EMR"
       ],
       "thesis": "",
       "source": [
@@ -788,7 +730,6 @@
     {
       "theme": "electricity generation",
       "members": [
-        "AEP",
         "AES",
         "CNP",
         "DUK",
@@ -869,15 +810,11 @@
         "AVT",
         "BDC",
         "FLEX",
-        "GEHC",
         "JBL",
         "KLAC",
         "LFUS",
-        "MCHP",
-        "MRVL",
         "NXPI",
         "TEL",
-        "TXN",
         "VSH"
       ],
       "thesis": "",
@@ -889,12 +826,9 @@
       "theme": "electronics industry",
       "members": [
         "A",
-        "AAPL",
         "CRSR",
         "ENR",
         "HUBB",
-        "LMT",
-        "NOC",
         "VICR"
       ],
       "thesis": "",
@@ -905,7 +839,6 @@
     {
       "theme": "energy industry",
       "members": [
-        "AEE",
         "BKH",
         "D",
         "DTE",
@@ -924,7 +857,6 @@
     {
       "theme": "enterprise software",
       "members": [
-        "CRM",
         "INTU",
         "NOW"
       ],
@@ -952,10 +884,17 @@
       "theme": "fast-moving consumer goods",
       "members": [
         "CHD",
-        "KHC",
-        "PEP",
-        "PG",
         "PM"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "film industry",
+      "members": [
+        "ANIP"
       ],
       "thesis": "",
       "source": [
@@ -970,8 +909,7 @@
         "CME",
         "FULT",
         "ONB",
-        "PNFP",
-        "SF"
+        "PNFP"
       ],
       "thesis": "",
       "source": [
@@ -984,8 +922,7 @@
         "CBOE",
         "DFIN",
         "ICE",
-        "MSCI",
-        "VIRT"
+        "MSCI"
       ],
       "thesis": "",
       "source": [
@@ -995,42 +932,11 @@
     {
       "theme": "financial sector",
       "members": [
-        "BAC",
         "CBSH",
-        "CFG",
-        "CFR",
-        "FNB",
         "GL",
-        "GS",
         "HWC",
-        "JPM",
-        "KEY",
         "LAZ",
-        "MS",
-        "MTB",
-        "PNC",
-        "PRU",
-        "RF",
-        "SSB",
-        "UBSI",
-        "USB",
-        "WFC",
-        "WSBC",
-        "WU"
-      ],
-      "thesis": "",
-      "source": [
-        "wikipedia"
-      ]
-    },
-    {
-      "theme": "financial service activities, except insurance and pension funding",
-      "members": [
-        "AXP",
-        "C",
-        "GS",
-        "LAZ",
-        "MA"
+        "PRU"
       ],
       "thesis": "",
       "source": [
@@ -1049,6 +955,7 @@
         "ASB",
         "AXP",
         "BAC",
+        "BANC",
         "BEN",
         "BR",
         "BX",
@@ -1112,6 +1019,7 @@
         "UBSI",
         "USB",
         "V",
+        "VIRT",
         "VLY",
         "VOYA",
         "WFC",
@@ -1131,7 +1039,6 @@
       "members": [
         "COIN",
         "GDDY",
-        "NDAQ",
         "PYPL",
         "SEZL"
       ],
@@ -1177,7 +1084,6 @@
       "theme": "food processing",
       "members": [
         "ADM",
-        "COKE",
         "HRL",
         "POST"
       ],
@@ -1214,6 +1120,17 @@
       ]
     },
     {
+      "theme": "gastronomy",
+      "members": [
+        "CAKE",
+        "EAT"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
       "theme": "health care",
       "members": [
         "ACHC",
@@ -1221,7 +1138,6 @@
         "CNC",
         "DGX",
         "EHC",
-        "GEHC",
         "HCA",
         "IDXX",
         "LH",
@@ -1280,11 +1196,8 @@
       "theme": "health care industry",
       "members": [
         "DVA",
-        "INGR",
         "MOH",
-        "STE",
-        "VRTX",
-        "VTRS"
+        "STE"
       ],
       "thesis": "",
       "source": [
@@ -1415,6 +1328,16 @@
       ]
     },
     {
+      "theme": "hospitals and rehabilitation",
+      "members": [
+        "CHDN"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
       "theme": "Hotel & Resort REITs",
       "members": [
         "APLE",
@@ -1459,8 +1382,7 @@
       "members": [
         "FA",
         "PAYX",
-        "RHI",
-        "UPWK"
+        "RHI"
       ],
       "thesis": "",
       "source": [
@@ -1556,12 +1478,10 @@
       "theme": "information technology",
       "members": [
         "ACN",
-        "ADBE",
         "CSGP",
         "CVLT",
         "DELL",
         "META",
-        "PSN",
         "TRU",
         "UBER",
         "YELP"
@@ -1574,12 +1494,8 @@
     {
       "theme": "information technology industry",
       "members": [
-        "AAPL",
         "CACI",
-        "CTSH",
-        "HPE",
-        "HPQ",
-        "TRU"
+        "CTSH"
       ],
       "thesis": "",
       "source": [
@@ -1598,7 +1514,6 @@
         "CINF",
         "EQH",
         "HMN",
-        "HTH",
         "KMPR",
         "MCY",
         "ORI",
@@ -1627,6 +1542,7 @@
     {
       "theme": "insurance industry",
       "members": [
+        "AAMI",
         "HUM",
         "MET",
         "RGA",
@@ -1657,18 +1573,6 @@
         "AKAM",
         "RELY",
         "ZD"
-      ],
-      "thesis": "",
-      "source": [
-        "wikipedia"
-      ]
-    },
-    {
-      "theme": "investment banking",
-      "members": [
-        "HLI",
-        "LAZ",
-        "MC"
       ],
       "thesis": "",
       "source": [
@@ -1744,18 +1648,6 @@
       ]
     },
     {
-      "theme": "life insurance",
-      "members": [
-        "EQH",
-        "GL",
-        "PRU"
-      ],
-      "thesis": "",
-      "source": [
-        "wikipedia"
-      ]
-    },
-    {
       "theme": "Life Sciences Tools & Services",
       "members": [
         "AVTR",
@@ -1817,9 +1709,7 @@
       "members": [
         "BALL",
         "CAT",
-        "DOV",
-        "GD",
-        "HOG"
+        "DOV"
       ],
       "thesis": "",
       "source": [
@@ -1842,8 +1732,6 @@
       "theme": "medical technology industry",
       "members": [
         "ABT",
-        "GEHC",
-        "JNJ",
         "MDT"
       ],
       "thesis": "",
@@ -1860,18 +1748,6 @@
         "MLM",
         "NEM",
         "RGLD"
-      ],
-      "thesis": "",
-      "source": [
-        "wikipedia"
-      ]
-    },
-    {
-      "theme": "mobile phone industry",
-      "members": [
-        "AAPL",
-        "SHEN",
-        "TMUS"
       ],
       "thesis": "",
       "source": [
@@ -1975,7 +1851,6 @@
     {
       "theme": "Oil & Gas Equipment & Services",
       "members": [
-        "AESI",
         "AROC",
         "HLX",
         "INVX",
@@ -2181,7 +2056,6 @@
       "theme": "Pharmaceuticals",
       "members": [
         "AMPH",
-        "ANIP",
         "COLL",
         "CORT",
         "INDV",
@@ -2232,8 +2106,6 @@
     {
       "theme": "professional services industry",
       "members": [
-        "ACN",
-        "CACI",
         "FCN",
         "J"
       ],
@@ -2306,7 +2178,6 @@
     {
       "theme": "pulp and paper industry",
       "members": [
-        "INGR",
         "IP",
         "WY"
       ],
@@ -2320,7 +2191,6 @@
       "members": [
         "BXP",
         "CBRE",
-        "CSGP",
         "VMRK"
       ],
       "thesis": "",
@@ -2387,13 +2257,11 @@
       "members": [
         "AUB",
         "AX",
-        "BANC",
         "BANF",
         "BANR",
         "BBT",
         "BKU",
         "CASH",
-        "CATY",
         "CBU",
         "CHCO",
         "CPF",
@@ -2476,6 +2344,7 @@
         "CAVA",
         "DPZ",
         "PZZA",
+        "SHAK",
         "WEN",
         "WING"
       ],
@@ -2488,10 +2357,7 @@
       "theme": "Restaurants",
       "members": [
         "BJRI",
-        "BROS",
-        "CAKE",
-        "EAT",
-        "SHAK"
+        "BROS"
       ],
       "thesis": "",
       "source": [
@@ -2565,9 +2431,7 @@
     {
       "theme": "self storage",
       "members": [
-        "CUBE",
-        "EXR",
-        "PSA"
+        "EXR"
       ],
       "thesis": "",
       "source": [
@@ -2648,9 +2512,7 @@
     {
       "theme": "shipbuilding",
       "members": [
-        "GD",
-        "HII",
-        "NOC"
+        "HII"
       ],
       "thesis": "",
       "source": [
@@ -2672,12 +2534,8 @@
     {
       "theme": "software development",
       "members": [
-        "AAPL",
-        "ADBE",
         "ADSK",
-        "MSFT",
-        "ORCL",
-        "TWLO"
+        "ORCL"
       ],
       "thesis": "",
       "source": [
@@ -2809,7 +2667,6 @@
     {
       "theme": "telecommunications",
       "members": [
-        "QCOM",
         "TDS",
         "UNIT",
         "VRSN"
@@ -2835,8 +2692,7 @@
         "SHEN",
         "T",
         "TMUS",
-        "VZ",
-        "WU"
+        "VZ"
       ],
       "thesis": "",
       "source": [
@@ -2847,8 +2703,6 @@
       "theme": "textile industry",
       "members": [
         "COLM",
-        "INGR",
-        "PVH",
         "TILE",
         "WWW"
       ],
@@ -2862,7 +2716,6 @@
       "members": [
         "ALGT",
         "LVS",
-        "TRIP",
         "VAC"
       ],
       "thesis": "",
@@ -2874,9 +2727,7 @@
       "theme": "tourism industry",
       "members": [
         "ABNB",
-        "EXPE",
-        "MAR",
-        "TRIP"
+        "EXPE"
       ],
       "thesis": "",
       "source": [
@@ -2932,10 +2783,18 @@
     {
       "theme": "transport industry",
       "members": [
-        "FDX",
         "SAIA",
-        "WAB",
-        "XPO"
+        "WAB"
+      ],
+      "thesis": "",
+      "source": [
+        "wikipedia"
+      ]
+    },
+    {
+      "theme": "video game industry",
+      "members": [
+        "AESI"
       ],
       "thesis": "",
       "source": [
@@ -2958,13 +2817,8 @@
       "theme": "weapons industry",
       "members": [
         "AXON",
-        "BA",
-        "CW",
         "KTOS",
-        "LHX",
-        "LMT",
-        "NOC",
-        "RTX"
+        "LHX"
       ],
       "thesis": "",
       "source": [
@@ -2975,8 +2829,7 @@
       "theme": "wholesale",
       "members": [
         "ADIG",
-        "SYY",
-        "WMT"
+        "SYY"
       ],
       "thesis": "",
       "source": [
@@ -2992,24 +2845,18 @@
       "air transport"
     ],
     "AAMI": [
-      "Asset Management & Custody Banks"
+      "insurance industry"
     ],
     "AAP": [
       "Automotive Retail"
     ],
     "AAPL": [
-      "consumer electronics industry",
-      "electronics industry",
-      "information technology industry",
-      "mobile phone industry",
-      "software development",
       "software industry"
     ],
     "AAT": [
       "Diversified REITs"
     ],
     "ABBV": [
-      "biotechnology",
       "pharmaceutical industry"
     ],
     "ABCB": [
@@ -3055,8 +2902,7 @@
       "Semiconductor Materials & Equipment"
     ],
     "ACN": [
-      "information technology",
-      "professional services industry"
+      "information technology"
     ],
     "ACT": [
       "Commercial & Residential Mortgage Finance"
@@ -3065,8 +2911,6 @@
       "Mortgage REITs"
     ],
     "ADBE": [
-      "information technology",
-      "software development",
       "software industry"
     ],
     "ADC": [
@@ -3103,25 +2947,22 @@
       "Health Care Services"
     ],
     "AEE": [
-      "energy industry",
       "public utility"
     ],
     "AEIS": [
       "Semiconductor Materials & Equipment"
     ],
     "AEO": [
-      "clothing industry",
       "retail"
     ],
     "AEP": [
-      "electricity generation",
       "public utility"
     ],
     "AES": [
       "electricity generation"
     ],
     "AESI": [
-      "Oil & Gas Equipment & Services"
+      "video game industry"
     ],
     "AFG": [
       "financial services"
@@ -3223,8 +3064,6 @@
       "product packaging industry"
     ],
     "AMD": [
-      "computer industry",
-      "electrical industry",
       "semiconductor industry"
     ],
     "AME": [
@@ -3273,7 +3112,7 @@
       "retail"
     ],
     "ANIP": [
-      "Pharmaceuticals"
+      "film industry"
     ],
     "AON": [
       "professional service"
@@ -3399,7 +3238,6 @@
       "weapons industry"
     ],
     "AXP": [
-      "financial service activities, except insurance and pension funding",
       "financial services"
     ],
     "AXTA": [
@@ -3415,19 +3253,16 @@
       "Life Sciences Tools & Services"
     ],
     "BA": [
-      "aerospace industry",
-      "aircraft industry",
-      "weapons industry"
+      "aerospace industry"
     ],
     "BAC": [
-      "financial sector",
       "financial services"
     ],
     "BALL": [
       "mechanical engineering"
     ],
     "BANC": [
-      "Regional Banks"
+      "financial services"
     ],
     "BANF": [
       "Regional Banks"
@@ -3547,8 +3382,6 @@
       "industrial manufacturing"
     ],
     "BRK-B": [
-      "aircraft industry",
-      "conglomerate",
       "insurance"
     ],
     "BRKR": [
@@ -3588,16 +3421,13 @@
       "Casinos & Gaming"
     ],
     "C": [
-      "bank",
-      "financial service activities, except insurance and pension funding",
       "financial services"
     ],
     "CACC": [
       "finance"
     ],
     "CACI": [
-      "information technology industry",
-      "professional services industry"
+      "information technology industry"
     ],
     "CAG": [
       "food industry"
@@ -3606,7 +3436,7 @@
       "health care"
     ],
     "CAKE": [
-      "Restaurants"
+      "gastronomy"
     ],
     "CALM": [
       "Packaged Foods & Meats"
@@ -3636,7 +3466,7 @@
       "mechanical engineering"
     ],
     "CATY": [
-      "Regional Banks"
+      "bank"
     ],
     "CAVA": [
       "restaurant"
@@ -3705,13 +3535,9 @@
       "financial services"
     ],
     "CFG": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "CFR": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "CG": [
@@ -3727,7 +3553,7 @@
       "fast-moving consumer goods"
     ],
     "CHDN": [
-      "Casinos & Gaming"
+      "hospitals and rehabilitation"
     ],
     "CHE": [
       "Health Care Services"
@@ -3829,11 +3655,9 @@
       "fintech"
     ],
     "COKE": [
-      "beverage industry",
-      "food processing"
+      "beverage industry"
     ],
     "COLB": [
-      "economics of banking",
       "financial services"
     ],
     "COLL": [
@@ -3906,7 +3730,6 @@
       "Life Sciences Tools & Services"
     ],
     "CRM": [
-      "enterprise software",
       "software industry"
     ],
     "CROX": [
@@ -3931,8 +3754,7 @@
       "telecommunications industry"
     ],
     "CSGP": [
-      "information technology",
-      "real estate industry"
+      "information technology"
     ],
     "CSL": [
       "industrial manufacturing"
@@ -3953,8 +3775,7 @@
       "information technology industry"
     ],
     "CUBE": [
-      "real estate investment trust",
-      "self storage"
+      "real estate investment trust"
     ],
     "CUBI": [
       "Regional Banks"
@@ -3990,8 +3811,7 @@
       "petroleum industry"
     ],
     "CW": [
-      "aerospace industry",
-      "weapons industry"
+      "aerospace industry"
     ],
     "CWEN": [
       "Renewable Electricity"
@@ -4147,10 +3967,9 @@
       "Construction & Engineering"
     ],
     "EAT": [
-      "Restaurants"
+      "gastronomy"
     ],
     "EBAY": [
-      "e-commerce",
       "retail"
     ],
     "EBC": [
@@ -4247,8 +4066,7 @@
       "Diversified REITs"
     ],
     "EQH": [
-      "insurance",
-      "life insurance"
+      "insurance"
     ],
     "EQT": [
       "petroleum industry"
@@ -4374,8 +4192,7 @@
       "software industry"
     ],
     "FDX": [
-      "logistics",
-      "transport industry"
+      "logistics"
     ],
     "FE": [
       "electricity supply company"
@@ -4441,8 +4258,6 @@
       "Electronic Manufacturing Services"
     ],
     "FNB": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "FND": [
@@ -4515,12 +4330,9 @@
       "Construction Machinery & Heavy Transportation Equipment"
     ],
     "GD": [
-      "aerospace industry",
-      "mechanical engineering",
-      "shipbuilding"
+      "aerospace industry"
     ],
     "GDDY": [
-      "e-commerce",
       "fintech"
     ],
     "GE": [
@@ -4530,13 +4342,9 @@
       "product packaging industry"
     ],
     "GEHC": [
-      "electronics",
-      "health care",
-      "industrial manufacturing",
-      "medical technology industry"
+      "industrial manufacturing"
     ],
     "GEN": [
-      "computer security",
       "software industry"
     ],
     "GEO": [
@@ -4567,14 +4375,12 @@
       "Health Care Equipment"
     ],
     "GL": [
-      "financial sector",
-      "life insurance"
+      "financial sector"
     ],
     "GLPI": [
       "Other Specialized REITs"
     ],
     "GLW": [
-      "biotechnology",
       "industrial manufacturing"
     ],
     "GM": [
@@ -4623,12 +4429,9 @@
       "Homebuilding"
     ],
     "GRMN": [
-      "consumer electronics industry",
       "software industry"
     ],
     "GS": [
-      "financial sector",
-      "financial service activities, except insurance and pension funding",
       "financial services"
     ],
     "GSHD": [
@@ -4668,7 +4471,6 @@
       "Electrical Components & Equipment"
     ],
     "HBAN": [
-      "economics of banking",
       "financial services"
     ],
     "HCA": [
@@ -4702,8 +4504,7 @@
       "mining"
     ],
     "HLI": [
-      "financial services",
-      "investment banking"
+      "financial services"
     ],
     "HLIT": [
       "Communications Equipment"
@@ -4724,8 +4525,7 @@
       "industrial manufacturing"
     ],
     "HOG": [
-      "automotive industry",
-      "mechanical engineering"
+      "automotive industry"
     ],
     "HOMB": [
       "financial services"
@@ -4743,13 +4543,9 @@
       "Oil & Gas Drilling"
     ],
     "HPE": [
-      "computer hardware industry",
-      "information technology industry",
       "software industry"
     ],
     "HPQ": [
-      "computer hardware industry",
-      "information technology industry",
       "software industry"
     ],
     "HR": [
@@ -4771,8 +4567,7 @@
       "Packaged Foods & Meats"
     ],
     "HTH": [
-      "financial services",
-      "insurance"
+      "financial services"
     ],
     "HTLD": [
       "Cargo Ground Transportation"
@@ -4802,8 +4597,6 @@
       "financial services"
     ],
     "IBM": [
-      "computer hardware industry",
-      "computer industry",
       "software industry"
     ],
     "IBOC": [
@@ -4855,10 +4648,7 @@
       "Pharmaceuticals"
     ],
     "INGR": [
-      "food industry",
-      "health care industry",
-      "pulp and paper industry",
-      "textile industry"
+      "food industry"
     ],
     "INSP": [
       "Health Care Equipment"
@@ -4867,7 +4657,6 @@
       "Oil & Gas Storage & Transportation"
     ],
     "INTC": [
-      "electrical industry",
       "semiconductor industry"
     ],
     "INTU": [
@@ -4958,12 +4747,9 @@
       "Real Estate Services"
     ],
     "JNJ": [
-      "medical technology industry",
       "pharmaceutical industry"
     ],
     "JPM": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "JXN": [
@@ -4985,8 +4771,6 @@
       "beverage industry"
     ],
     "KEY": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "KEYS": [
@@ -4999,7 +4783,6 @@
       "Oil & Gas Equipment & Services"
     ],
     "KHC": [
-      "fast-moving consumer goods",
       "food industry"
     ],
     "KIM": [
@@ -5081,10 +4864,7 @@
       "Education Services"
     ],
     "LAZ": [
-      "asset management",
-      "financial sector",
-      "financial service activities, except insurance and pension funding",
-      "investment banking"
+      "financial sector"
     ],
     "LBRT": [
       "Oil & Gas Equipment & Services"
@@ -5150,9 +4930,7 @@
       "Health Care Equipment"
     ],
     "LMT": [
-      "aerospace industry",
-      "electronics industry",
-      "weapons industry"
+      "aerospace industry"
     ],
     "LNC": [
       "Multi-line Insurance"
@@ -5215,7 +4993,6 @@
       "retail"
     ],
     "MA": [
-      "financial service activities, except insurance and pension funding",
       "financial services"
     ],
     "MAA": [
@@ -5228,8 +5005,7 @@
       "Application Software"
     ],
     "MAR": [
-      "hospitality industry",
-      "tourism industry"
+      "hospitality industry"
     ],
     "MAS": [
       "Building Products"
@@ -5247,11 +5023,9 @@
       "Regional Banks"
     ],
     "MC": [
-      "financial services",
-      "investment banking"
+      "financial services"
     ],
     "MCHP": [
-      "electronics",
       "semiconductor industry"
     ],
     "MCO": [
@@ -5360,7 +5134,6 @@
       "pharmaceutical industry"
     ],
     "MRNA": [
-      "biotechnology industry",
       "pharmaceutical industry"
     ],
     "MRSH": [
@@ -5370,11 +5143,9 @@
       "Cargo Ground Transportation"
     ],
     "MRVL": [
-      "electronics",
       "semiconductor industry"
     ],
     "MS": [
-      "financial sector",
       "financial services"
     ],
     "MSCI": [
@@ -5384,8 +5155,6 @@
       "Water Utilities"
     ],
     "MSFT": [
-      "consumer electronics industry",
-      "software development",
       "software industry"
     ],
     "MSGS": [
@@ -5398,8 +5167,6 @@
       "Trading Companies & Distributors"
     ],
     "MTB": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "MTD": [
@@ -5463,8 +5230,7 @@
       "Hotels, Resorts & Cruise Lines"
     ],
     "NDAQ": [
-      "financial services",
-      "fintech"
+      "financial services"
     ],
     "NDSN": [
       "Industrial Machinery & Supplies & Components"
@@ -5506,7 +5272,6 @@
       "Gas Utilities"
     ],
     "NKE": [
-      "clothing industry",
       "retail"
     ],
     "NLY": [
@@ -5519,11 +5284,7 @@
       "real estate investment trust"
     ],
     "NOC": [
-      "aerospace industry",
-      "aircraft industry",
-      "electronics industry",
-      "shipbuilding",
-      "weapons industry"
+      "aerospace industry"
     ],
     "NOG": [
       "Oil & Gas Exploration & Production"
@@ -5607,7 +5368,6 @@
       "Multi-Family Residential REITs"
     ],
     "NXST": [
-      "Broadcasting",
       "telecommunications industry"
     ],
     "NXT": [
@@ -5776,8 +5536,6 @@
       "Casinos & Gaming"
     ],
     "PEP": [
-      "beverage industry",
-      "fast-moving consumer goods",
       "food industry"
     ],
     "PFBC": [
@@ -5796,7 +5554,6 @@
       "Regional Banks"
     ],
     "PG": [
-      "fast-moving consumer goods",
       "pharmaceutical industry"
     ],
     "PGNY": [
@@ -5848,8 +5605,6 @@
       "Mortgage REITs"
     ],
     "PNC": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "PNFP": [
@@ -5913,20 +5668,15 @@
       "Hotels, Resorts & Cruise Lines"
     ],
     "PRU": [
-      "financial sector",
-      "life insurance"
+      "financial sector"
     ],
     "PRVA": [
       "Health Care Services"
     ],
     "PSA": [
-      "real estate investment trust",
-      "self storage"
+      "real estate investment trust"
     ],
     "PSN": [
-      "computer security",
-      "construction",
-      "information technology",
       "software industry"
     ],
     "PSX": [
@@ -5948,8 +5698,7 @@
       "Leisure Products"
     ],
     "PVH": [
-      "clothing industry",
-      "textile industry"
+      "clothing industry"
     ],
     "PWR": [
       "Construction & Engineering"
@@ -5964,8 +5713,7 @@
       "Semiconductor Materials & Equipment"
     ],
     "QCOM": [
-      "semiconductor industry",
-      "telecommunications"
+      "semiconductor industry"
     ],
     "QDEL": [
       "Health Care Supplies"
@@ -6034,8 +5782,6 @@
       "Trading Companies & Distributors"
     ],
     "RF": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "RGA": [
@@ -6090,7 +5836,6 @@
       "Electrical Components & Equipment"
     ],
     "ROKU": [
-      "Broadcasting",
       "consumer electronics industry"
     ],
     "ROP": [
@@ -6115,8 +5860,7 @@
       "Casinos & Gaming"
     ],
     "RTX": [
-      "aerospace industry",
-      "weapons industry"
+      "aerospace industry"
     ],
     "RUSHA": [
       "automotive industry"
@@ -6194,7 +5938,6 @@
       "fintech"
     ],
     "SF": [
-      "finance",
       "financial services"
     ],
     "SFBS": [
@@ -6204,13 +5947,12 @@
       "Regional Banks"
     ],
     "SHAK": [
-      "Restaurants"
+      "restaurant"
     ],
     "SHC": [
       "Health Care Services"
     ],
     "SHEN": [
-      "mobile phone industry",
       "telecommunications industry"
     ],
     "SHO": [
@@ -6262,8 +6004,7 @@
       "Oil & Gas Exploration & Production"
     ],
     "SMCI": [
-      "computer hardware industry",
-      "computer industry"
+      "computer hardware industry"
     ],
     "SMG": [
       "industrial manufacturing"
@@ -6281,7 +6022,6 @@
       "industrial manufacturing"
     ],
     "SNDK": [
-      "computer hardware industry",
       "semiconductor industry"
     ],
     "SNDR": [
@@ -6333,8 +6073,6 @@
       "pharmaceutical industry"
     ],
     "SSB": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "SSD": [
@@ -6425,7 +6163,6 @@
       "IT Consulting & Other Services"
     ],
     "TDG": [
-      "aerospace industry",
       "industrial manufacturing"
     ],
     "TDS": [
@@ -6492,7 +6229,6 @@
       "financial services"
     ],
     "TMUS": [
-      "mobile phone industry",
       "telecommunications industry"
     ],
     "TNC": [
@@ -6529,9 +6265,7 @@
       "Oil & Gas Storage & Transportation"
     ],
     "TRIP": [
-      "Publishing",
-      "tourism",
-      "tourism industry"
+      "Publishing"
     ],
     "TRMB": [
       "Application Software"
@@ -6552,8 +6286,7 @@
       "Regional Banks"
     ],
     "TRU": [
-      "information technology",
-      "information technology industry"
+      "information technology"
     ],
     "TRV": [
       "Property & Casualty Insurance"
@@ -6574,11 +6307,9 @@
       "professional service"
     ],
     "TWLO": [
-      "software development",
       "software industry"
     ],
     "TXN": [
-      "electronics",
       "semiconductor industry"
     ],
     "TXNM": [
@@ -6603,8 +6334,6 @@
       "information technology"
     ],
     "UBSI": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "UCB": [
@@ -6656,14 +6385,12 @@
       "logistics"
     ],
     "UPWK": [
-      "Human Resource & Employment Services"
+      "computing platform"
     ],
     "URBN": [
       "retail"
     ],
     "USB": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "USFD": [
@@ -6724,7 +6451,7 @@
       "biotechnology industry"
     ],
     "VIRT": [
-      "Financial Exchanges & Data"
+      "financial services"
     ],
     "VLO": [
       "petroleum industry"
@@ -6760,15 +6487,12 @@
       "telecommunications"
     ],
     "VRT": [
-      "electrical industry",
       "industrial manufacturing"
     ],
     "VRTS": [
       "Asset Management & Custody Banks"
     ],
     "VRTX": [
-      "biotechnology industry",
-      "health care industry",
       "pharmaceutical industry"
     ],
     "VSAT": [
@@ -6796,7 +6520,6 @@
       "Health Care REITs"
     ],
     "VTRS": [
-      "health care industry",
       "pharmaceutical industry"
     ],
     "VVV": [
@@ -6851,8 +6574,6 @@
       "Transaction & Payment Processing Services"
     ],
     "WFC": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "WFRD": [
@@ -6877,7 +6598,6 @@
       "Oil & Gas Refining & Marketing"
     ],
     "WLK": [
-      "chemical industry",
       "petroleum industry"
     ],
     "WLY": [
@@ -6893,8 +6613,7 @@
       "Building Products"
     ],
     "WMT": [
-      "retail",
-      "wholesale"
+      "retail"
     ],
     "WOR": [
       "Building Products"
@@ -6915,8 +6634,6 @@
       "Steel"
     ],
     "WSBC": [
-      "economics of banking",
-      "financial sector",
       "financial services"
     ],
     "WSFS": [
@@ -6941,9 +6658,7 @@
       "Building Products"
     ],
     "WU": [
-      "financial sector",
-      "financial services",
-      "telecommunications industry"
+      "financial services"
     ],
     "WWD": [
       "aerospace engineering"
@@ -6973,8 +6688,7 @@
       "Automotive Parts & Equipment"
     ],
     "XPO": [
-      "logistics",
-      "transport industry"
+      "logistics"
     ],
     "XYL": [
       "industrial manufacturing"
@@ -7009,5 +6723,6 @@
     "ZWS": [
       "Industrial Machinery & Supplies & Components"
     ]
-  }
+  },
+  "membership": "largest-theme-per-ticker (deduped)"
 }

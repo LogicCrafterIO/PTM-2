@@ -55,15 +55,41 @@ def simple_universe(theme_map: dict, radar: dict | None = None, non_cold_only: b
                 t = m.get("ticker") if isinstance(m, dict) else str(m)
                 if t and t not in tickers:
                     tickers.append(t)
+    # Meta falls back to the curated index-membership table when the
+    # fundamentals cache has nothing for the ticker. The refresh rebuilds rows
+    # EDGAR-first, and fundamentals.py's own rule is that sector/industry come
+    # from "the index membership tables, not a data vendor" — without this
+    # fallback a rebuilt row carries a blank industry, and wiki_themes' ticker
+    # walk (which filters blank industries) silently shrinks to the names an
+    # earlier era of the cache still covered.
+    uni_meta: dict[str, dict] = {}
+    from ptm.config import data_dir
+
+    uni_path = data_dir("curated", "universe.csv")
+    if uni_path.exists():
+        udf = pd.read_csv(uni_path)
+        for r in udf.itertuples():
+            meta = {}
+            for col in ("name", "sector", "industry"):
+                val = getattr(r, col, None)
+                meta[col] = "" if val is None or val != val else str(val)
+            uni_meta[str(r.ticker).upper()] = meta
+    def _txt(v) -> str:
+        # pandas reads a blank CSV cell as NaN, which is TRUTHY — an unguarded
+        # `x or fallback` would propagate the literal string "nan" instead of
+        # falling through to the index table.
+        return "" if v is None or v != v else str(v)
+
     rows = []
     for t in tickers:
         f = fund.get(t) or {}
+        u = uni_meta.get(str(t).upper()) or {}
         rows.append(
             {
                 "ticker": t,
-                "name": str(f.get("name") or ""),
-                "sector": str(f.get("sector") or ""),
-                "industry": str(f.get("industry") or ""),
+                "name": _txt(f.get("name")) or _txt(u.get("name")),
+                "sector": _txt(f.get("sector")) or _txt(u.get("sector")),
+                "industry": _txt(f.get("industry")) or _txt(u.get("industry")),
             }
         )
     return pd.DataFrame(rows)

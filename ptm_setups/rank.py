@@ -323,6 +323,16 @@ def _heat_prompt(theme_row: dict, packets: list[dict], web: dict | None, ref: da
     if budget_note:
         log(f"setups rank {theme}: {budget_note}")
         lines.append(budget_note)
+    if len(packets) <= 2:
+        lines.append(
+            f"ISOLATED GROUP: this industry has only {len(packets)} member(s) on Wikipedia — there "
+            "are no peers to read through to and no industry median, so the valuation flag is n/a. "
+            "Judge each member in isolation: its own revisions, beat record and filed guidance, and "
+            "the absolute level of its multiples measured only against the growth they assume (the "
+            "hurdle and asymmetry framing still applies). Rank 1..N as given — with one member that "
+            "member is rank 1 — and name a best_long or best_short only where the case genuinely "
+            "stands on its own; null it with a reason otherwise."
+        )
     lines.append(f"Members to rank ({len(packets)}):")
     lines.append(blob)
     if web and web.get("searches"):

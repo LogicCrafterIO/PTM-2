@@ -31,6 +31,9 @@ def main() -> None:
     p.add_argument("--xlsx", default="John pre mentoring starterpack.xlsx")
     add_map(p)
     p.add_argument("--refresh", action="store_true", help="wiki: refetch every ticker (ignores cache)")
+    p.add_argument("--min-members", dest="min_members", type=int, default=1,
+                   help="wiki: smallest industry kept as a theme (default 1 — sub-3 industries are "
+                        "kept and judged in isolation on absolute fundamentals, no peer median)")
 
     p = sub.add_parser("radar", help="weekly theme radar (breadth + print calendar)")
     p.add_argument("--theme", help="one theme only")
@@ -82,7 +85,7 @@ def main() -> None:
         if getattr(args, "map", "manual") == "wiki":
             from ptm_simple.wiki_themes import build_theme_map_wiki
 
-            build_theme_map_wiki()
+            build_theme_map_wiki(min_members=args.min_members)
         else:
             from ptm_simple.thememap import build_theme_map
 

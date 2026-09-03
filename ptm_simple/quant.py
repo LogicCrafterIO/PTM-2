@@ -63,6 +63,11 @@ def _quant_row(ticker: str, member: dict, fund: dict | None) -> dict:
         row["note"] = "no cached fundamentals — run the main pipeline's ingest first"
         return row
 
+    def _txt(v) -> str:
+        # a blank CSV cell reads back as NaN, which is TRUTHY — guard it or the
+        # row carries the literal string "nan" as its industry
+        return "" if v is None or v != v else str(v)
+
     price = _num(fund.get("price"))
     market_cap = _num(fund.get("market_cap"))
     revenue = _num(fund.get("revenue"))
@@ -81,9 +86,9 @@ def _quant_row(ticker: str, member: dict, fund: dict | None) -> dict:
     pe2 = pe(price, eps2)
     row.update(
         {
-            "name": str(fund.get("name") or ""),
-            "sector": str(fund.get("sector") or ""),
-            "industry": str(fund.get("industry") or ""),
+            "name": _txt(fund.get("name")),
+            "sector": _txt(fund.get("sector")),
+            "industry": _txt(fund.get("industry")),
             "price": price,
             "market_cap": market_cap,
             "revenue": revenue,
@@ -134,7 +139,13 @@ def _flag_rows(rows: list[dict]) -> None:
             r["pe_vs_theme"] = round(r["pe1"] / med_pe, 2) if (r.get("pe1") and med_pe) else None
             r["peg_vs_theme"] = round(r["peg1"] / med_peg, 2) if (r.get("peg1") is not None and med_peg) else None
             if not ratios:
-                r["flag"], r["flag_detail"] = "n/a", "no theme median (too few members with a multiple)"
+                if len(theme_rows) == 1:
+                    r["flag"], r["flag_detail"] = (
+                        "n/a",
+                        "sole member of its theme — no peer median; read the absolute multiples",
+                    )
+                else:
+                    r["flag"], r["flag_detail"] = "n/a", "no theme median (too few members with a multiple)"
                 continue
             hi, lo = max(ratios), min(ratios)
             if lo <= 0.67 and hi >= 1.5:

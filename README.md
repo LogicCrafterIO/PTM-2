@@ -319,9 +319,23 @@ rest. See [docs/simple_idea_process.md](docs/simple_idea_process.md).
 `--map wiki` is the deterministic alternative: every ticker's company is
 resolved to its Wikipedia article (Wikidata P452, the industry field the
 infobox renders — no LLM), and industries with ≥3 members become themes.
-Failed lookups are never cached; the map falls back to yfinance industries
-per ticker and reports the count. Wikipedia rate-limits, so the entity-search
-fallback runs under a wall-time budget — rerun the build to resolve more.
+Industries Wikipedia resolves to fewer than three names are **kept** and judged
+in isolation: the ranking reads the same fundamental packet (revisions,
+surprise record, consensus growth, absolute forward P/E / PEG / P/S) with no
+peer median and no read-throughs, and the quant table marks those rows
+`n/a — sole member of its theme`. Pass `build-themes --map wiki --min-members`
+a higher value to drop them again. **One membership per ticker:** Wikidata
+labels a broad company with several industries (Salesforce carries nine), and
+each ticker keeps only its **largest** theme — biggest peer group wins,
+alphabetical label on a tie — so no name is ranked twice and none appears twice
+on one leaderboard. A theme every one of whose members belongs elsewhere
+empties out and disappears (that is where most sub-3 label-spam themes die).
+`scripts/dedupe_setups.py` applies the same rule to an existing run without
+re-sweeping: it reuses the sweep's per-group judgements and re-runs only the
+cross-industry final. Failed lookups are never cached; the map falls back to
+yfinance industries per ticker and reports the count. Wikipedia
+rate-limits, so the entity-search fallback runs under a wall-time budget —
+rerun the build to resolve more.
 
 **In the viewer** (same server): the **Simple** tab runs every step from the
 browser — build either theme map, run the radar, **qual-analyze all
@@ -405,7 +419,10 @@ beat record, the name's own FY1 consensus change over 90 and 30 days with the
 analyst up/down counts, consensus FY1/FY2 EPS and growth, the last filed
 earnings exhibit and forward guidance language from EDGAR, and forward P/E, PEG
 and P/S against the industry median. Then one **cross-industry final** ranks
-each industry's best long and best short against each other.
+each industry's best long and best short against each other. An **isolated
+industry** (the wiki map's sub-3-member themes) gets the same one call with the
+same packet, told there are no peers: no median, no read-throughs, judgement
+from the name's own fundamentals and the absolute multiples alone.
 
 **The best long and the best short are separate calls.** Each industry names one
 of each and writes each its own thesis, catalyst, setup and risk — they are two

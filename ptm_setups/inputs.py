@@ -296,7 +296,14 @@ def surprise_cell(packet: dict) -> str:
     ended = str(last.get("quarter_ended") or last.get("quarter") or "")[:10]
     quarter = f"quarter ended {ended}" if ended else ""
     pair = f"${actual:,.2f} vs ${est:,.2f} est" if (actual is not None and est is not None) else ""
-    if last.get("low_base"):
+    if pct is None:
+        # dollars without a percentage — the estimate was missing, so the sign
+        # test has nothing to compare against; report the fact, not a verdict
+        bits = f"**${actual:,.2f} reported**" if actual is not None else "**no measurable surprise**"
+        detail = ", ".join(x for x in (pair, quarter) if x)
+        bits = bits + (f" ({detail})" if detail else "")
+        tail = ""
+    elif last.get("low_base"):
         if not pair:
             return "—"
         swing = ("loss to profit" if (est is not None and actual is not None and est < 0 <= actual)

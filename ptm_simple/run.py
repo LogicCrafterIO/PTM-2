@@ -58,7 +58,9 @@ def run_shortlist_dives(picks: list[dict], force: bool = False) -> dict[str, dic
 def _fundamentals() -> dict[str, dict]:
     import pandas as pd
 
-    path = Path("data/curated/yahoo_fundamentals.csv")
+    from ptm.config import data_dir
+
+    path = data_dir("curated", "yahoo_fundamentals.csv")
     if not path.exists():
         return {}
     df = pd.read_csv(path).set_index("ticker")

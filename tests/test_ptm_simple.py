@@ -216,3 +216,125 @@ def test_viewer_theme_detail_unknown_theme(isolate_roots):
 
     _seed_simple_artifacts(isolate_roots)
     assert "error" in viewer.get_theme_detail("Ghost theme", "manual")
+
+# ---------------------------------------------------------------- wiki map
+def test_wiki_map_keeps_sub_three_industries(isolate_roots, monkeypatch):
+    """A Wikipedia industry with fewer than three names is still a theme: it is
+    judged in isolation on absolute fundamentals, not dropped for thin company."""
+    from ptm_simple import wiki_themes
+
+    monkeypatch.setattr(wiki_themes, "_names",
+                        lambda: {"AAA": "Alpha", "BBB": "Beta", "CCC": "Gamma"})
+    monkeypatch.setattr(wiki_themes, "_yf_industries",
+                        lambda: {"AAA": "", "BBB": "", "CCC": ""})
+    monkeypatch.setattr(
+        wiki_themes, "wiki_industries",
+        lambda tickers, names, sleep_s=0.1: {
+            "AAA": {"industries": ["Semiconductor Equipment"], "source": "wiki-infobox"},
+            "BBB": {"industries": ["Semiconductor Equipment"], "source": "wiki-infobox"},
+            "CCC": {"industries": ["Car Dealership"], "source": "wiki-infobox"},
+        },
+    )
+    out = wiki_themes.build_theme_map_wiki()
+    names = {t["theme"] for t in out["themes"]}
+    assert "Car Dealership" in names and out["min_members"] == 1
+    assert out["ticker_count"] == 3
+
+    tight = wiki_themes.build_theme_map_wiki(min_members=3)
+    assert "Car Dealership" not in {t["theme"] for t in tight["themes"]}
+    assert tight["min_members"] == 3
+
+
+def test_quant_flag_sole_member_gets_its_own_reason(isolate_roots):
+    """A singleton theme has no peer median: the flag stays n/a but says why —
+    judged on absolute multiples, not silently 'too few members'."""
+    from ptm_simple.quant import _flag_rows
+
+    row = {"theme": "car dealership", "pe1": 11.5, "peg1": 2.0}
+    _flag_rows([row])
+    assert row["flag"] == "n/a"
+    assert "sole member" in row["flag_detail"]
+
+    pair = [{"theme": "pair", "pe1": 10.0}, {"theme": "pair"}]
+    _flag_rows(pair)
+    assert pair[0]["flag"] == "n/a" and "too few members" in pair[0]["flag_detail"]
+
+
+def test_simple_universe_falls_back_to_index_meta(isolate_roots):
+    """A rebuilt fundamentals row has no sector/industry of its own (EDGAR does
+    not carry them), so simple_universe fills the gap from the curated index
+    table — otherwise the wiki map's ticker walk silently shrinks to the names
+    an earlier cache still covered."""
+    import pandas as pd
+    from ptm.config import data_dir
+    from ptm_simple.refresh import simple_universe
+
+    fund_path = data_dir("curated", "yahoo_fundamentals.csv")
+    fund_path.parent.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame([{"ticker": "AAA", "name": "Alpha", "sector": "", "industry": ""}]).to_csv(
+        fund_path, index=False)
+    uni_path = data_dir("curated", "universe.csv")
+    pd.DataFrame([{"ticker": "AAA", "name": "Alpha", "sector": "Industrials",
+                   "industry": "Aerospace & Defense"}]).to_csv(uni_path, index=False)
+
+    frame = simple_universe({"themes": [{"theme": "t", "members": ["AAA"]}]} )
+    assert frame.iloc[0]["industry"] == "Aerospace & Defense"
+    assert frame.iloc[0]["sector"] == "Industrials"
+
+
+def test_wiki_industry_walk_fills_blank_industries(isolate_roots):
+    """A fundamentals table rebuilt EDGAR-first carries no industry for its new
+    rows; the map's ticker walk must still see those names, filling their
+    classification from the curated index table instead of silently dropping
+    them (that silent drop is how a 1295-ticker walk became 62)."""
+    import pandas as pd
+    from ptm.config import data_dir
+    from ptm_simple import wiki_themes
+
+    fund = data_dir("curated", "yahoo_fundamentals.csv")
+    fund.parent.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame([
+        {"ticker": "AAA", "name": "Alpha", "industry": "Aerospace & Defense"},
+        {"ticker": "BBB", "name": "Beta", "industry": None},
+    ]).to_csv(fund, index=False)
+    uni = data_dir("curated", "universe.csv")
+    pd.DataFrame([
+        {"ticker": "AAA", "sector": "Industrials", "industry": "Aerospace & Defense"},
+        {"ticker": "BBB", "sector": "Consumer Discretionary", "industry": "Car Dealership"},
+    ]).to_csv(uni, index=False)
+
+    out = wiki_themes._yf_industries()
+    assert out["AAA"] == "Aerospace & Defense"
+    assert out["BBB"] == "Car Dealership"
+
+
+def test_wiki_map_dedupes_multi_label_tickers(isolate_roots, monkeypatch):
+    """Wikidata labels a broad company with several industries (Salesforce
+    carries nine); one membership per ticker keeps it only in its LARGEST
+    theme, so a name is never ranked against the same fundamentals twice."""
+    from ptm_simple import wiki_themes
+
+    themes = [
+        {"theme": "Software Industry", "members": ["CRM", "ORCL", "AAPL"]},
+        {"theme": "Analytics", "members": ["CRM", "MSTR"]},
+        {"theme": "Automation", "members": ["CRM"]},
+    ]
+    kept = {t["theme"]: t["members"] for t in wiki_themes.dedupe_memberships(themes)}
+    assert kept["Software Industry"] == ["AAPL", "CRM", "ORCL"]  # CRM's largest label
+    assert kept["Analytics"] == ["MSTR"]                          # CRM left, MSTR stays
+    assert "Automation" not in kept                                # emptied and dropped
+
+    # a map built through the same path carries no duplicate membership
+    monkeypatch.setattr(wiki_themes, "_names", lambda: {"AAA": "A", "BBB": "B", "CCC": "C"})
+    monkeypatch.setattr(wiki_themes, "_yf_industries", lambda: {"AAA": "", "BBB": "", "CCC": ""})
+    monkeypatch.setattr(
+        wiki_themes, "wiki_industries",
+        lambda tickers, names, sleep_s=0.1: {
+            "AAA": {"industries": ["Big Industry"], "source": "wiki-infobox"},
+            "BBB": {"industries": ["Big Industry", "Small Niche"], "source": "wiki-infobox"},
+            "CCC": {"industries": ["Small Niche"], "source": "wiki-infobox"},
+        },
+    )
+    out = wiki_themes.build_theme_map_wiki()
+    assert out["ticker_themes"]["BBB"] == ["Big Industry"]
+    assert out["ticker_themes"]["CCC"] == ["Small Niche"]
