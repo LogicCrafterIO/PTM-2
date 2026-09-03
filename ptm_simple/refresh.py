@@ -12,8 +12,12 @@ re-running the main pipeline:
    run date, so a new run date means a fresh pull by design)
 3. consensus: analyst forward EPS comes from data/raw/estimates caches with
    their own freshness window; --estimates deletes them for a forced re-pull
-4. rebuild the quant table from the saved radar + re-render the idea reports
-   (briefs are cached — no LLM calls anywhere in this flow)
+4. rebuild the quant table from the saved radar (no LLM calls anywhere in this
+   flow; the prose that reads these numbers is re-rendered by whichever pass
+   owns it — coverage, group review, or the ranking process's rankings)
+
+Both qualitative layers read the table this writes: ptm_simple's flag review
+and ptm_setups' group ranking.
 """
 
 from __future__ import annotations
@@ -65,11 +69,20 @@ def simple_universe(theme_map: dict, radar: dict | None = None, non_cold_only: b
     return pd.DataFrame(rows)
 
 
-def _rebuild_quant_and_reports(ref: date, source: str) -> dict:
-    """Rebuild the quant table from the saved radar, then re-render reports."""
+def _rebuild_quant(ref: date) -> dict:
+    """Rebuild the quant table from the saved radar.
+
+    Report re-rendering used to happen here too, off the simple book — but the
+    book was removed when trade ideas replaced it, taking `write_idea_reports`
+    with it and leaving this function raising ImportError on every call. Reports
+    now belong to the passes that own them (analyze-all writes the coverage
+    reports, the group review its own markdown, the ranking pass its rankings),
+    so a fundamentals refresh rebuilds the numbers and stops there — rerun the
+    owning pass to re-render its prose against them. `reports` stays in the
+    result for the CLI and the viewer, always 0.
+    """
     from ptm_simple import simple_dir
     from ptm_simple.quant import build_quant
-    from ptm_simple.run import write_idea_reports
 
     out = {"quant_rows": 0, "reports": 0}
     radar_path = simple_dir(f"radar_{ref.isoformat()}.json")
@@ -78,34 +91,6 @@ def _rebuild_quant_and_reports(ref: date, source: str) -> dict:
         non_cold = [r for r in radar.get("themes", []) if r.get("status") != "COLD"]
         payload = build_quant(ref, non_cold, radar.get("members"))
         out["quant_rows"] = len(payload["rows"])
-    book_path = simple_dir(f"simple_book_{source}_{ref.isoformat()}.json")
-    if book_path.exists() and radar_path.exists():
-        book = json.loads(book_path.read_text(encoding="utf-8"))
-        radar = json.loads(radar_path.read_text(encoding="utf-8"))
-        rows = {r["theme"]: r for r in radar.get("themes", [])}
-        groups: dict[str, dict] = {}
-        for idea in book.get("book", []) + book.get("overflow", []):
-            if not idea.get("passed"):
-                continue
-            g = groups.setdefault(idea["theme"], {"theme": idea["theme"], "ideas": []})
-            g["ideas"].append(idea)
-        for theme, g in groups.items():
-            row = rows.get(theme, {})
-            g["lean"] = row.get("lean") or g["ideas"][0].get("lean", "")
-            g["breadth"] = row.get("breadth", g["ideas"][0].get("breadth", 0.0))
-            g["status"] = row.get("status", "")
-            g["thesis"] = row.get("thesis", "")
-            g["bellwether"] = row.get("bellwether")
-            g["members_covered"] = row.get("members_covered")
-            g["members_total"] = row.get("members_total")
-            g["breadth_abs"] = abs(g["breadth"])
-            g["peer_prints"] = [
-                {"ticker": m["ticker"], "earnings_date": m.get("earnings_date"), "days_to_print": m.get("days_to_print")}
-                for m in radar.get("members", {}).get(theme, [])
-                if m.get("days_to_print") is not None and 0 <= m["days_to_print"] <= 120
-            ]
-        paths = write_idea_reports(list(groups.values()), ref)
-        out["reports"] = len(paths)
     return out
 
 
@@ -178,7 +163,7 @@ def refresh_fundamentals(
     frame = build_fundamentals(universe, upto=ref, force=force)
     fetched = int(frame["ticker"].nunique()) if not frame.empty else 0
 
-    summary = _rebuild_quant_and_reports(ref, source)
+    summary = _rebuild_quant(ref)
     result = {
         "ref": ref.isoformat(),
         "universe": len(tickers),

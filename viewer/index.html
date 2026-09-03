@@ -55,7 +55,7 @@
       thead { display: table-header-group; }
       /* Any scroll container prints in full, not as a viewport-clipped box. */
       .wrap, .dd-report, .dd-cards, .cards, #dd-list, .dd-inline-report,
-      .dd-log, .dd-progress, .dd-stepper, #ideas-table, #group-cards {
+      .dd-log, .dd-progress, .dd-stepper, #ideas-table, #group-cards, .setups-scroll {
         max-height: none !important; height: auto !important;
         overflow: visible !important; max-width: none !important;
       }
@@ -288,6 +288,15 @@
     .stance.balanced { background: #3a2e12; color: var(--warn); }
     .stance.unclear, .stance.tie, .stance.neutral { background: var(--chip); color: var(--muted); }
     .dd-batch { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
+    /* Ranking output panels. Same surface as .dd-batch, but these are content,
+       not chrome — .dd-batch is hidden when printing and a ranking table is
+       exactly what you would want in the PDF, so it gets its own class. */
+    .setups-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
+    .setups-panel h3 { margin: 0 0 4px; font-size: 15px; }
+    .setups-scroll { overflow: auto; border: 1px solid var(--border); border-radius: 6px; }
+    .setups-scroll table { font-size: 12px; border-collapse: separate; border-spacing: 0; }
+    .setups-scroll th { text-align: left; padding: 5px 8px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: #1b1e24; z-index: 2; }
+    .setups-scroll td { padding: 5px 8px; vertical-align: top; border-bottom: 1px solid #23262c; }
     .dd-batch textarea {
       width: 100%; min-height: 64px; background: var(--bg); color: var(--text);
       border: 1px solid var(--border); border-radius: 6px; padding: 8px; font: inherit; resize: vertical;
@@ -349,6 +358,7 @@
     <button data-tab="deepdives">Deep dives</button>
     <button data-tab="pipeline">Pipeline</button>
     <button data-tab="simple">Simple</button>
+    <button data-tab="setups">Setups</button>
     <button data-tab="audit">Audit</button>
   </nav>
   <main>
@@ -365,6 +375,7 @@
     <section id="tab-deepdives" class="panel"></section>
     <section id="tab-pipeline" class="panel"></section>
     <section id="tab-simple" class="panel"></section>
+    <section id="tab-setups" class="panel"></section>
     <section id="tab-audit" class="panel"></section>
     <div id="detail" hidden></div>
   </main>
@@ -392,6 +403,9 @@
       simpleLoaded: false,
       simpleMapSource: "manual",
       simpleTheme: "",
+      setupsLoaded: false,
+      setupsMapSource: "manual",
+      setupsTheme: "",
       selected: null,
       sorts: {},
       window: "00-30d",
@@ -2618,6 +2632,470 @@
       }
     }
 
+    // --- Setups tab: the group-only fundamental ranking ---------------------
+    // Same deterministic front half as the Simple tab and the same artifacts
+    // for it (theme map, radar, quant table all under data/simple/, read here
+    // through /api/simple/*), and a completely different qualitative half:
+    // ONE ranking pass per non-COLD industry over ALL of its members at once,
+    // then one cross-industry final over the winners. No per-name deep dive,
+    // no per-name brief, no flag verdict. Fundamentals, filed guidance,
+    // consensus revisions and valuation only — no technicals and no price
+    // action anywhere, which is why the third column of every table is the
+    // print SETUP rather than a trend. Its own state and output stream from
+    // /api/setups/*, whose handlers live in ptm_setups/viewer.py.
+    let setupsPollTimer = null;
+    let setupsWasRunning = false;
+    const SETUPS_BUTTONS = ["setups-build-xlsx", "setups-build-wiki", "setups-radar-go",
+                            "setups-refresh-fund", "setups-rank"];
+
+    function setupsSlug(theme) {
+      return String(theme || "").replace(/\//g, "-").replace(/ /g, "_");
+    }
+
+    function renderSetupsLog(events) {
+      const logHost = document.querySelector("#setups-log");
+      if (!logHost) return;
+      logHost.innerHTML = (events || []).map((e) => {
+        const time = e.t ? new Date(e.t).toTimeString().slice(0, 8) : "";
+        return `<div><span class="t">${time}</span> ${esc((e.line || "").replace(/^\[\d{2}:\d{2}:\d{2}\]\s*/, ""))}</div>`;
+      }).join("");
+      logHost.scrollTop = logHost.scrollHeight;
+    }
+
+    async function pollSetups() {
+      const el = document.getElementById("tab-setups");
+      const progress = el && el.querySelector("#setups-progress");
+      if (!progress) return; // tab closed; the action continues server-side
+      let st;
+      try {
+        const res = await fetch("/api/setups/status");
+        st = await res.json();
+      } catch (e) {
+        progress.innerHTML = `<span class="neg">Could not reach the viewer API.</span>`;
+        setupsPollTimer = setTimeout(pollSetups, 8000);
+        return;
+      }
+      if (st.running) setupsPollTimer = setTimeout(pollSetups, 2000);
+      else if (!st.finished && !st.result) setupsPollTimer = setTimeout(pollSetups, 10000);
+
+      const buttons = SETUPS_BUTTONS.map((id) => el.querySelector("#" + id)).filter(Boolean);
+      const logHost = el.querySelector("#setups-log");
+      renderSetupsLog(st.events || []);
+
+      if (st.running) {
+        setupsWasRunning = true;
+        buttons.forEach((b) => (b.disabled = true));
+        const started = st.started ? new Date(st.started).toTimeString().slice(0, 8) : "";
+        progress.innerHTML =
+          `<div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">` +
+          `<span>Running <strong>${esc(st.kind)}</strong></span>` +
+          `<span class="timer">${started} · ${fmtSecs(st.elapsed_s)}</span></div>` +
+          `<div style="font-size:12px;color:var(--muted)">one ranking action at a time — log streams below</div>`;
+        if (logHost) logHost.style.display = "block";
+        return;
+      }
+
+      buttons.forEach((b) => (b.disabled = false));
+      if (setupsWasRunning) {
+        setupsWasRunning = false;
+        loadSetupsData(); // refresh every output after a finished action
+      }
+      if (st.error) {
+        progress.innerHTML = `<span class="neg">✗ ${esc(st.kind || "action")} failed: ${esc(st.error)}</span>`;
+      } else if (st.result) {
+        const bits = Object.entries(st.result)
+          .map(([k, v]) => `${esc(k)}: <strong>${esc(v)}</strong>`).join(" · ");
+        progress.innerHTML = `<div class="pos" style="font-weight:650">✔ ${esc(st.kind || "")} finished</div>` +
+          `<div style="margin-top:4px;font-size:13px">${bits}</div>` +
+          `<div style="margin-top:4px;font-size:12px;color:var(--muted)">${fmtSecs(st.elapsed_s)} elapsed</div>`;
+      } else {
+        progress.innerHTML = `<div style="color:var(--muted)">Idle — pick a step above; its output appears below.</div>`;
+      }
+    }
+
+    async function loadSetups() {
+      const el = document.getElementById("tab-setups");
+      el.innerHTML = `
+        <div class="dd-batch">
+          <strong>PTM-setups — best long and short setups into the next print</strong>
+          <p class="hint" style="margin:6px 0 2px">
+            The same deterministic front half as the <strong>Simple</strong> tab — theme map, weekly
+            radar, quant table — running the same functions on the same shared artifacts, so numbers
+            never diverge between the two tabs. What differs is everything after it: instead of a deep
+            dive, a forward brief and a flag verdict <em>per name</em>, this process runs
+            <strong>ONE ranking pass per non-COLD industry over all of its members at once</strong>,
+            ordering them as long and short setups for the next print and the 0–3 months around it,
+            then <strong>one cross-industry final</strong> over each industry's winners.
+            It ranks on fundamentals: the last print's EPS surprise and the four-quarter beat record,
+            the name's own FY1 consensus revisions and analyst counts, filed guidance from EDGAR,
+            consensus growth, and forward P/E, PEG and P/S against the industry median.
+            <strong>No technicals and no price action</strong> — the pass is never shown a price, so the
+            trend column of a conventional setup table is a <strong>print setup</strong> column here.
+            Valuation is read as a hurdle and an asymmetry, never as a score: a premium is what the
+            print has to grow into, a discount is not a catalyst by itself.
+          </p>
+          <div class="pipe-form">
+            <label>Theme map
+              <select id="setups-map">
+                <option value="manual">manual — xlsx clusters</option>
+                <option value="wiki">wiki — Wikipedia industries</option>
+              </select>
+            </label>
+            <label>Industry
+              <select id="setups-theme"><option value="">loading themes…</option></select>
+            </label>
+            <label title="radar: refresh N member expectation caches per theme">Refresh N
+              <input type="number" id="setups-refresh" placeholder="0" min="0" style="width:64px"></label>
+            <label title="radar: one LLM call grades WHY-NOW per non-COLD theme">LLM why-now
+              <input type="checkbox" id="setups-llm"></label>
+            <label title="refresh fundamentals: also re-pull the analyst consensus caches (forward EPS)">Force consensus
+              <input type="checkbox" id="setups-force"></label>
+            <label title="rank: per-industry rankings only, skip the cross-industry leaderboard">Skip final
+              <input type="checkbox" id="setups-nofinal"></label>
+            <label title="Model for the ranking pass. This process spends one call per industry plus one final, not ten per name, so it can afford a stronger model than the pipeline's verdict model. Blank uses OLLAMA_SETUPS_MODEL.">Model
+              <select id="setups-model">
+                <option value="">configured default</option>
+                <option value="glm-5.3-flash">glm-5.3-flash</option>
+                <option value="glm-5.3">glm-5.3</option>
+                <option value="kimi-k3">kimi-k3</option>
+                <option value="deepseek-v4-pro:0813">deepseek-v4-pro</option>
+                <option value="gpt-oss:120b">gpt-oss:120b</option>
+                <option value="gpt-oss:20b">gpt-oss:20b (verdict model)</option>
+              </select>
+            </label>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px">
+            <button id="setups-build-xlsx" title="Shared with the Simple tab: rebuilds data/simple/theme_map.json from the starter-pack xlsx clusters.">0a · Build themes (xlsx)</button>
+            <button id="setups-build-wiki" title="Shared with the Simple tab: the deterministic Wikipedia-industry map. First build fetches ~1 API call per 50 tickers, a few minutes.">0b · Build themes (Wikipedia)</button>
+            <button id="setups-radar-go" title="Shared with the Simple tab: revision breadth + print calendar per theme, deterministic. Decides which industries count as non-COLD and therefore get ranked.">1 · Run radar</button>
+            <button id="setups-refresh-fund" title="Shared with the Simple tab: fresh prices and EDGAR rows at the run date, then rebuilds the quant table the ranking reads. No LLM; a few minutes of network.">2 · Refresh fundamentals</button>
+            <button id="setups-rank" title="One LLM pass per non-COLD industry over ALL its members at once — ranked long/short setups into the next print on fundamentals and valuation, no dives, no technicals — then one cross-industry final over the winners. Minutes, not hours.">3 · Rank industries</button>
+          </div>
+          <div class="dd-progress" id="setups-progress"></div>
+          <div id="setups-arts" style="margin-top:10px"></div>
+        </div>
+        <div id="setups-board-host"></div>
+        <div id="setups-groups-host"></div>
+        <div id="setups-reports-host"></div>
+        <div class="dd-log" id="setups-log" style="display:none"></div>`;
+
+      const $ = (id) => el.querySelector("#" + id);
+
+      async function fillThemes() {
+        state.setupsMapSource = $("setups-map").value;
+        $("setups-theme").innerHTML = `<option value="">loading themes…</option>`;
+        try {
+          const res = await fetch(`/api/simple/theme-map/${state.setupsMapSource}`);
+          const payload = await res.json();
+          const themes = (payload.map && payload.map.themes) || [];
+          if (payload.error || !themes.length) {
+            $("setups-theme").innerHTML = `<option value="">${esc(payload.error || "no themes — build the map first")}</option>`;
+            return;
+          }
+          state.setupsTheme = state.setupsTheme && themes.some((t) => t.theme === state.setupsTheme)
+            ? state.setupsTheme : "";
+          $("setups-theme").innerHTML =
+            `<option value="">— every non-COLD industry —</option>` +
+            themes.map((t) => `<option value="${esc(t.theme)}" ${t.theme === state.setupsTheme ? "selected" : ""}>` +
+              `${esc(t.theme)} (${(t.members || []).length})</option>`).join("");
+        } catch (e) {
+          $("setups-theme").innerHTML = `<option value="">theme list unavailable</option>`;
+        }
+      }
+      $("setups-map").value = state.setupsMapSource;
+      $("setups-map").addEventListener("change", fillThemes);
+      $("setups-theme").addEventListener("change", () => { state.setupsTheme = $("setups-theme").value; });
+
+      async function post(action, extra = {}) {
+        const body = { action, map: $("setups-map").value, theme: $("setups-theme").value, ...extra };
+        setupsWasRunning = false;
+        try {
+          const res = await fetch("/api/setups/run", {
+            method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),
+          });
+          const payload = await res.json();
+          if (!res.ok) {
+            $("setups-progress").innerHTML = `<span class="neg">${esc(payload.error || "failed to start")}</span>`;
+            return;
+          }
+          $("setups-log").style.display = "block";
+          if (setupsPollTimer) clearTimeout(setupsPollTimer);
+          setupsPollTimer = setTimeout(pollSetups, 0);
+        } catch (e) {
+          $("setups-progress").innerHTML = `<span class="neg">${esc(String(e.message || e))}</span>`;
+        }
+      }
+      $("setups-build-xlsx").addEventListener("click", () => post("build-themes"));
+      $("setups-build-wiki").addEventListener("click", () => post("build-wiki"));
+      $("setups-radar-go").addEventListener("click", () => post("radar", {
+        refresh: parseInt($("setups-refresh").value, 10) || 0,
+        llm: $("setups-llm").checked,
+      }));
+      $("setups-refresh-fund").addEventListener("click", () => post("refresh-fundamentals", {
+        estimates: $("setups-force").checked,
+      }));
+      $("setups-rank").addEventListener("click", () => post("rank", {
+        no_final: $("setups-nofinal").checked,
+        model: $("setups-model").value,
+      }));
+
+      if (setupsPollTimer) clearTimeout(setupsPollTimer);
+      setupsPollTimer = setTimeout(pollSetups, 0);
+      await fillThemes();
+      await loadSetupsData();
+    }
+
+    function renderSetupsArtifacts(host, arts) {
+      if (!host) return;
+      const maps = (arts && arts.maps) || {};
+      const quant = (arts && arts.quant) || null;
+      const rank = (arts && arts.ranking) || null;
+      host.innerHTML = `<div class="kpis">` + ["manual", "wiki"].map((src) => {
+        const m = maps[src] || { exists: false };
+        const title = src === "wiki" ? "Wikipedia industries" : "xlsx clusters";
+        if (!m.exists) {
+          return `<div class="kpi"><div class="lbl">${esc(title)} — not built</div><div class="val" style="font-size:13px">—</div></div>`;
+        }
+        return `<div class="kpi"><div class="lbl">${esc(title)}</div>` +
+          `<div class="val">${esc(m.themes ?? "?")} themes</div>` +
+          `<div style="font-size:11px;color:var(--muted)">${esc(m.tickers ?? "?")} tickers · ${esc(m.mtime || "")}</div></div>`;
+      }).join("") +
+        `<div class="kpi"><div class="lbl">Radar</div><div class="val" style="font-size:14px">${esc((arts && arts.radar_date) || "none")}</div></div>` +
+        `<div class="kpi"><div class="lbl">Quant table</div><div class="val" style="font-size:14px">${quant ? `${quant.rows} names` : "none"}</div>` +
+        (quant ? `<div style="font-size:11px;color:var(--muted)">${esc(quant.themes)} industries · ${esc(quant.as_of || "")}</div>` : "") + `</div>` +
+        `<div class="kpi"><div class="lbl">Ranking</div><div class="val" style="font-size:14px">${rank ? `${rank.ranked} ranked` : "none"}</div>` +
+        (rank ? `<div style="font-size:11px;color:var(--muted)">${esc(rank.groups)} industries · ${esc(rank.as_of || "")}</div>` : "") + `</div>` +
+        `<div class="kpi"><div class="lbl">Leaderboard</div><div class="val" style="font-size:14px">${rank ? `${rank.longs}L / ${rank.shorts}S` : "—"}</div></div>` +
+        `<div class="kpi"><div class="lbl">Ranking files</div><div class="val">${(arts && arts.reports) || 0}</div></div>` +
+        `<div class="kpi" title="the model the ranking pass will use unless overridden above"><div class="lbl">Ranking model</div>` +
+        `<div class="val" style="font-size:13px">${esc((arts && arts.model) || "—")}</div></div>` +
+        `</div>`;
+    }
+
+    // The factual columns arrive pre-rendered from the server (ptm_setups
+    // builds them from the cached data, never from the model's prose), so the
+    // browser only has to place them.
+    function setupsRow(r, extraCells) {
+      const sideCls = r.side === "long" ? "pos" : r.side === "short" ? "neg" : "muted";
+      const warn = r.against_revisions
+        ? ` <span class="neg" title="this side opposes the direction of the name's own FY1 revisions (${esc(r.revision_prior || "")} prior) — the risk column says why">⚠</span>`
+        : "";
+      return `<tr>` +
+        `<td><strong>#${esc(r.rank)}</strong></td>` +
+        `<td><strong>${esc(r.ticker)}</strong>${warn}<div style="font-size:11px;color:var(--muted)">${esc(r.name || "")}</div></td>` +
+        (extraCells || "") +
+        `<td>${esc(r.surprise_cell || "—").replace(/\*\*/g, "")}</td>` +
+        `<td>${esc(r.guidance_valuation_cell || "—")}</td>` +
+        `<td>${esc(r.setup_cell || "—")}</td>` +
+        `<td><span class="${sideCls}"><strong>${esc(r.side || "")}</strong></span></td>` +
+        `<td><strong>${esc(r.label || "")}</strong><div style="font-size:11px;color:var(--muted)">conviction ${esc(r.conviction || "?")}</div></td>` +
+        `</tr>`;
+    }
+
+    // The best long and the best short are separate calls with separate
+    // reasoning, and the short leads wherever the industry is not rising —
+    // rendered in the order the server decided (short_first), not styled after
+    // the fact, so the page and the markdown always agree.
+    function setupsPickCard(pick, side, primary) {
+      const label = side === "short" ? "Best short" : "Best long";
+      const cls = side === "short" ? "neg" : "pos";
+      const rank = primary ? "primary call" : "secondary call";
+      if (!pick) {
+        return `<div style="flex:1 1 320px;min-width:280px"><div><strong class="${cls}">${label}</strong> ` +
+          `<span class="muted" style="font-size:11px">${rank}</span></div>` +
+          `<p class="muted" style="margin:4px 0 0;font-size:12px">the pass named none</p></div>`;
+      }
+      if (!pick.ticker) {
+        return `<div style="flex:1 1 320px;min-width:280px"><div><strong class="${cls}">${label}</strong> ` +
+          `<span class="muted" style="font-size:11px">${rank}</span></div>` +
+          `<p style="margin:4px 0 0;font-size:12px"><strong>None in this industry.</strong> ` +
+          `${esc(pick.none_reason || "")}</p></div>`;
+      }
+      const warn = pick.against_revisions
+        ? ` <span class="neg" title="this side opposes the direction of the name's own FY1 revisions (${esc(pick.revision_prior || "")} prior)">⚠</span>`
+        : "";
+      const field = (name, value) => value
+        ? `<div style="font-size:12px;margin-top:3px"><strong>${name}</strong> ${esc(value)}</div>` : "";
+      const measured = (name, value) => value
+        ? `<div style="font-size:11px;color:var(--muted);margin-top:2px">${name}: ${esc(value)}</div>` : "";
+      return `<div style="flex:1 1 320px;min-width:280px;padding-left:8px;border-left:3px solid ${side === "short" ? "var(--short)" : "var(--long)"}">` +
+        `<div><strong class="${cls}">${label}</strong> <span class="muted" style="font-size:11px">${rank}</span></div>` +
+        `<div style="margin-top:2px"><strong>${esc(pick.ticker)}</strong>${warn}` +
+        (pick.name ? ` <span class="muted">${esc(pick.name)}</span>` : "") +
+        (pick.conviction ? ` <span class="muted" style="font-size:11px">conviction ${esc(pick.conviction)}</span>` : "") +
+        `</div>` +
+        field("Thesis:", pick.thesis) +
+        field("The catalyst:", pick.catalyst) +
+        field("Setup:", pick.setup) +
+        field("Risk:", pick.risk) +
+        measured("Latest earnings surprise", pick.surprise_cell) +
+        measured("Print setup", pick.setup_cell) +
+        measured("Valuation vs industry", pick.valuation_cell) +
+        `</div>`;
+    }
+
+    function setupsPickRow(g) {
+      if (!g.llm_used) return "";
+      const order = g.short_first
+        ? [["short", g.best_short], ["long", g.best_long]]
+        : [["long", g.best_long], ["short", g.best_short]];
+      const cards = order.map(([side, pick], i) => setupsPickCard(pick, side, i === 0)).join("");
+      return `<div style="display:flex;gap:14px;flex-wrap:wrap;margin:8px 0 4px">${cards}</div>` +
+        (g.short_first
+          ? `<p class="muted" style="margin:2px 0 0;font-size:11px">Estimate breadth is flat or negative here, so the short is the primary call and the tactical line leads with it.</p>`
+          : "");
+    }
+
+    function renderSetupsLeaderboard(host, ranking) {
+      if (!host) return;
+      if (!ranking || ranking.error || !(ranking.groups || []).length) {
+        host.innerHTML = `<div class="setups-panel"><h3>Best setups into the next print</h3>` +
+          `<p class="muted" style="margin:4px 0 0">${esc((ranking && ranking.error) || "no ranking yet — run the radar, refresh fundamentals, then Rank industries")}</p></div>`;
+        return;
+      }
+      const board = ranking.leaderboard || {};
+      const byTicker = {};
+      for (const g of ranking.groups || []) {
+        for (const r of g.ranking || []) byTicker[r.ticker] = { ...r, theme: g.theme };
+      }
+      const section = (title, rows, cls) => {
+        if (!rows || !rows.length) {
+          return `<p style="margin:8px 0 2px"><strong>${title}</strong> <span class="muted">— none</span></p>`;
+        }
+        return `<p style="margin:10px 0 4px"><strong class="${cls}">${title}</strong> ` +
+          `<span class="muted" style="font-size:12px">${rows.length} ranked across industries</span></p>` +
+          `<div class="setups-scroll" style="max-height:none"><table style="width:100%">` +
+          `<thead><tr>${["#", "Ticker", "Industry", "Latest earnings surprise", "Guidance / valuation", "Print setup", "Side", "Why it ranks here"]
+            .map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>` +
+          rows.map((row) => {
+            const src = byTicker[row.ticker] || {};
+            const themeCell = `<td><span class="linklike" data-report="${esc(setupsSlug(row.theme) + "/_RANKING_" + (ranking.as_of || "") + ".md")}" style="cursor:pointer" title="open this industry's full ranking">${esc(row.theme || "")}</span></td>`;
+            return setupsRow({ ...src, rank: row.rank, label: row.why || src.label }, themeCell);
+          }).join("") +
+          `</tbody></table></div>`;
+      };
+      host.innerHTML = `<div class="setups-panel">` +
+        `<h3>Best setups into the next print — ${esc(ranking.as_of || "")}</h3>` +
+        `<p class="muted" style="margin:2px 0 6px">Cross-industry final over each industry's best long and best short` +
+        (board.model ? ` · model ${esc(board.model)}` : "") +
+        `. Latest earnings surprise, print setup and the multiples are computed from the cached data — the model supplies the guidance read, the ordering and the reasoning. No technicals, no price action. Commentary, not a gate.</p>` +
+        (board.summary ? `<p style="margin:4px 0 2px">${esc(board.summary)}</p>` : "") +
+        section("Best longs", board.longs, "pos") +
+        section("Best shorts", board.shorts, "neg") +
+        `</div>`;
+      host.querySelectorAll("[data-report]").forEach((node) => {
+        node.addEventListener("click", () => openSetupsReport(node.dataset.report || ""));
+      });
+    }
+
+    function renderSetupsGroups(host, ranking) {
+      if (!host) return;
+      const groups = (ranking && ranking.groups) || [];
+      if (!groups.length) { host.innerHTML = ""; return; }
+      let body = "";
+      for (const g of groups) {
+        const rows = g.ranking || [];
+        const rel = setupsSlug(g.theme) + "/_RANKING_" + (ranking.as_of || "") + ".md";
+        body += `<div class="setups-panel">` +
+          `<h3><span class="linklike" data-report="${esc(rel)}" style="cursor:pointer" title="open the full ranking markdown">${esc(g.theme)}</span></h3>` +
+          `<p class="muted" style="margin:0 0 6px;font-size:12px">${esc(g.status || "n/a")}, lean ${esc(g.lean || "?")} ` +
+          `(breadth ${(g.breadth >= 0 ? "+" : "") + Number(g.breadth || 0).toFixed(2)}) · ${g.members_ranked || 0} ranked` +
+          ((g.members_skipped || []).length ? ` · no fundamental data, skipped: ${esc(g.members_skipped.join(", "))}` : "") +
+          (g.web_queries ? ` · ${esc(g.web_queries)} web quer${g.web_queries === 1 ? "y" : "ies"}` : "") +
+          (g.llm_used ? "" : ` · <span class="neg">unranked (no LLM pass) — measured columns only</span>`) +
+          `</p>` +
+          (g.headline ? `<p style="margin:4px 0 8px">${esc(g.headline)}</p>` : "") +
+          setupsPickRow(g) +
+          (g.tactical ? `<p style="margin:8px 0 4px"><strong>Tactical trade idea:</strong> ${esc(g.tactical)}</p>` : "") +
+          (rows.length
+            ? `<div class="setups-scroll" style="max-height:none"><table style="width:100%">` +
+              `<thead><tr>${["#", "Ticker", "Latest earnings surprise", "Guidance / valuation", "Print setup", "Side", "Risk/reward ranking"]
+                .map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>` +
+              rows.map((r) => setupsRow(r, "")).join("") +
+              `</tbody></table></div>`
+            : `<p class="muted" style="margin:4px 0 0">no members with fundamental data to rank</p>`) +
+          (rows.some((r) => r.catalyst || r.setup || r.risk)
+            ? `<details style="margin-top:8px"><summary class="muted">The case for each name, in order</summary>` +
+              rows.map((r) => {
+                if (!(r.catalyst || r.setup || r.risk)) return "";
+                const warn = r.against_revisions
+                  ? ` · <span class="neg">⚠ against its own revisions (${esc(r.revision_prior || "")} prior)</span>` : "";
+                return `<div style="margin:8px 0 0;padding-left:8px;border-left:2px solid var(--border)">` +
+                  `<div><strong>${esc(r.rank)}. ${esc(r.ticker)}</strong>` +
+                  (r.name ? ` <span class="muted">${esc(r.name)}</span>` : "") +
+                  (r.label ? ` — ${esc(r.label)}` : "") +
+                  ` · <span class="${r.side === "long" ? "pos" : r.side === "short" ? "neg" : "muted"}">${esc(r.side || "")}</span>` +
+                  ` · conviction ${esc(r.conviction || "?")}${warn}</div>` +
+                  (r.catalyst ? `<div style="font-size:12px;margin-top:2px"><strong>The catalyst:</strong> ${esc(r.catalyst)}</div>` : "") +
+                  (r.setup ? `<div style="font-size:12px;margin-top:2px"><strong>Setup:</strong> ${esc(r.setup)}</div>` : "") +
+                  (r.risk ? `<div style="font-size:12px;margin-top:2px"><strong>Risk:</strong> ${esc(r.risk)}</div>` : "") +
+                  (r.ranked_on ? `<div style="font-size:12px;margin-top:2px" title="the fundamental fact the pass had to name as the reason for this rank — never a multiple"><strong>Ranked on:</strong> ${esc(r.ranked_on)}</div>` : "") +
+                  (r.reports_quarter ? `<div class="muted" style="font-size:11px;margin-top:2px">next print reports ${esc(r.reports_quarter)}</div>` : "") +
+                  `</div>`;
+              }).join("") +
+              `</details>`
+            : "") +
+          `</div>`;
+      }
+      host.innerHTML = `<div class="setups-panel"><h3>Per-industry rankings — ${groups.length} industry group(s)</h3>` +
+        `<p class="muted" style="margin:4px 0 0">One pass per industry over all of its members at once, giving the <strong>best long</strong> and the <strong>best short</strong> each its own thesis, catalyst, setup and risk — two trades, not one narrative. Where an industry's estimate breadth is flat or negative the short leads, since the useful answer there is which member's expectations get cut. The side is the pass's own call, not the revision rule's: ⚠ marks a name whose side opposes the direction of its own FY1 revisions, and its risk has to say why. Click an industry to open the full ranking markdown.</p></div>` + body;
+      host.querySelectorAll("[data-report]").forEach((node) => {
+        node.addEventListener("click", () => openSetupsReport(node.dataset.report || ""));
+      });
+    }
+
+    async function loadSetupsData() {
+      const el = document.getElementById("tab-setups");
+      if (!el.querySelector("#setups-arts")) return;
+      const status = await (await fetch("/api/setups/status")).json().catch(() => ({}));
+      renderSetupsArtifacts(el.querySelector("#setups-arts"), status.artifacts || {});
+      const [ranking, reports] = await Promise.all([
+        fetch("/api/setups/ranking").then((r) => r.json()).catch(() => null),
+        fetch("/api/setups/reports").then((r) => r.json()).catch(() => null),
+      ]);
+      const payload = ranking && (ranking.ranking || ranking);
+      renderSetupsLeaderboard(el.querySelector("#setups-board-host"), payload);
+      renderSetupsGroups(el.querySelector("#setups-groups-host"), payload && payload.groups ? payload : null);
+
+      const repHost = el.querySelector("#setups-reports-host");
+      const list = (reports && reports.reports) || [];
+      const label = (p) => {
+        const parts = p.split(/[\\/]/);
+        const base = (parts[parts.length - 1] || "").replace(/\.md$/, "");
+        const stamp = base.replace(/^_?(RANKING|LEADERBOARD)_/, "");
+        const kind = base.startsWith("_LEADERBOARD") ? "LEADERBOARD" : "ranking";
+        return parts.length > 1 ? `${parts[0]} · ${stamp}` : `${kind} ${stamp}`;
+      };
+      repHost.innerHTML = `<div class="dd-batch"><strong>Ranking files (${list.length})</strong>` +
+        (list.length
+          ? `<div style="margin-top:6px"><select id="setups-rep-select" style="min-width:360px;max-width:100%">` +
+            `<option value="">— pick a ranking —</option>` +
+            list.map((r) => `<option value="${esc(r.path)}">${esc(label(r.path))}</option>`).join("") +
+            `</select> <button id="setups-rep-open" style="font-size:12px">Open</button></div>`
+          : `<p class="muted" style="margin:4px 0 0">no rankings yet</p>`) +
+        `</div>`;
+      const sel = repHost.querySelector("#setups-rep-select");
+      const openBtn = repHost.querySelector("#setups-rep-open");
+      if (sel) {
+        sel.addEventListener("change", () => openSetupsReport(sel.value));
+        if (openBtn) openBtn.addEventListener("click", () => openSetupsReport(sel.value));
+      }
+    }
+
+    async function openSetupsReport(rel) {
+      if (!rel) return;
+      showHtml(`<p class="muted">Loading ${esc(rel)}…</p>`);
+      try {
+        const res = await fetch("/api/setups/report/" + encodeURIComponent(rel));
+        const payload = await res.json();
+        showHtml(payload.error
+          ? `<p class="err">${esc(payload.error)}</p>`
+          : `<h2>${esc(payload.path)}</h2><div class="dd-report">${mdToHtml(payload.markdown || "")}</div>`);
+      } catch (e) {
+        showHtml(`<p class="err">${esc(String(e.message || e))}</p>`);
+      }
+    }
+
     async function loadDeepDiveInline(ticker, host) {
       host.innerHTML = `<p class="muted">Loading deep dive for ${esc(ticker)}…</p>`;
       try {
@@ -2737,6 +3215,9 @@
       } else if (tab === "simple" && !state.simpleLoaded) {
         el.innerHTML = `<p class="muted">Loading simple-process state…</p>`;
         await loadSimple();
+      } else if (tab === "setups" && !state.setupsLoaded) {
+        el.innerHTML = `<p class="muted">Loading ranking state…</p>`;
+        await loadSetups();
       } else if (tab === "audit" && state.audit == null) {
         el.innerHTML = `<p class="muted">Loading audit.json…</p>`;
         state.audit = await loadOr("audit.json");

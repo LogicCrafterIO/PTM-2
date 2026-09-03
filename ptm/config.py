@@ -43,6 +43,39 @@ class Settings(BaseSettings):
     # OLLAMA_VERDICT_MODEL when running a small manual batch where quality
     # matters more than headroom.
     ollama_verdict_model: str = "gpt-oss:20b"
+    # Model for ptm_setups' group ranking. The verdict model above is sized for
+    # the main pipeline's ~10 heavy calls PER NAME; the ranking spends one call
+    # per industry plus one final — 14 for the current 13 industries — so it can
+    # afford a far stronger model, and it needs one: on gpt-oss:20b a live pass
+    # ranked a name first for its low P/E and called another "over-valued" while
+    # its own PEG said otherwise, exactly the valuation bias the prompt forbids.
+    # On gpt-oss:120b the same group came back ordered by revisions and beat
+    # size, with the multiple cited only as the bar the print has to clear; on
+    # glm-5.3-flash it did that AND read earnings quality out of the filings
+    # (naming a one-off tariff claim inside a margin beat, and a beat size
+    # decaying across four quarters), which is the judgement this pass exists
+    # for. glm is a thinking model, so it REQUIRES the reasoning-effort setting
+    # below: left to deliberate freely it spends the whole output budget on
+    # reasoning and returns empty content. gpt-oss:120b is the fallback that
+    # needs no such care. Override with OLLAMA_SETUPS_MODEL, or per run with
+    # `rank --model`.
+    ollama_setups_model: str = "glm-5.3-flash"
+    # Thinking budget for the ranking call, when the chosen model is a reasoning
+    # model. Reasoning tokens come out of the SAME allowance as the answer, so a
+    # heavy thinker consumes the budget and answers with nothing.
+    #
+    # "low" is the measured choice, not a cautious one. At low, glm-5.3-flash
+    # returned the sharpest output of anything tried — it named a one-off tariff
+    # claim inflating a margin beat and a beat size decaying across four
+    # quarters — in about 11 seconds a group. Raised to medium for more depth it
+    # got slower (~85s a group) and less reliable: a five-name industry came
+    # back with no ranking at all, having spent all 28k tokens thinking. More
+    # deliberation did not buy better judgement here; it bought empty replies.
+    # ptm_setups.rank retries an empty result at low, so medium degrades rather
+    # than fails, but low is what to run. Blank leaves the model's own default.
+    # Only low/medium/high are honoured ("none" made glm return its reasoning as
+    # prose instead of JSON).
+    ollama_setups_reasoning_effort: str = "low"
     ollama_max_tokens: int = 8192
     ollama_max_filing_chars: int = 24000
     deepsearch_max_queries: int = 12

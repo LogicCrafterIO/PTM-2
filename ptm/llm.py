@@ -85,6 +85,20 @@ def _max_tokens() -> int:
     return int(llm_limits()["max_tokens"])
 
 
+# "none" is deliberately absent: probing it made glm-5.3 and glm-5.3-flash
+# return their deliberation as prose in the content field instead of the
+# requested JSON, which is worse than thinking too much.
+_REASONING_EFFORTS = ("low", "medium", "high")
+
+
+def _reasoning_kwargs(effort: str | None) -> dict:
+    """extra_body for a thinking budget, or nothing when unset/unrecognised."""
+    level = str(effort or "").strip().lower()
+    if level not in _REASONING_EFFORTS:
+        return {}
+    return {"extra_body": {"reasoning": {"effort": level}}}
+
+
 TRAILING_COMMA_RE = re.compile(r",(\s*[}\]])")
 # Loose fence: models wrap JSON in markdown even when told not to, and a
 # truncated reply often opens ```json without closing it.
@@ -336,9 +350,36 @@ def chat_json(
     model: str | None = None,
     used_out: list[str] | None = None,
     allow_fallback: bool = True,
+    max_tokens: int | None = None,
+    reasoning_effort: str | None = None,
+    timeout: float | None = None,
     _retried: bool = False,
 ) -> dict:
     """Chat completion returning parsed JSON.
+
+    `timeout` overrides the client's per-request deadline for one call. The
+    client is built at 120s, which suits a per-name call; a reasoning model
+    working through a whole industry group at medium effort exceeds it, and the
+    retry ladder above then spends its one timeout retry re-running a call that
+    was never going to fit — so a large group stalls for four minutes and fails.
+
+    `reasoning_effort` ("low" / "medium" / "high") dials down how much a
+    thinking model deliberates before answering. It matters because reasoning
+    tokens are spent OUT of `max_tokens`: glm-5.3-flash consumed an 11.6k
+    budget entirely on reasoning for a three-name ranking and returned empty
+    content with finish_reason "length" — capping tokens cannot force output,
+    only truncate it. Sent as extra_body reasoning.effort, which this endpoint
+    honours on every model probed (the `think` flag is silently ignored, and
+    effort "none" made glm emit its reasoning as prose instead of JSON, so it
+    is rejected below).
+
+    `max_tokens` overrides the provider-wide output budget for one call. The
+    default suits the pipeline's per-name calls, which ask for a handful of
+    fields; a caller that asks one question about a whole group of names needs
+    more, and a reasoning model spends part of the budget before it writes any
+    JSON at all. Undersizing it is quiet: the reply comes back with
+    finish_reason "length", the salvage below rescues whatever parsed, and the
+    caller sees a well-formed object with half its content missing.
 
     `used_out`, if given, receives the model that actually answered.
     FALLBACK_MODELS means a pinned model can quietly be replaced by a smaller
@@ -372,7 +413,9 @@ def chat_json(
                         {"role": "user", "content": user},
                     ],
                     temperature=cfg["temperature"],
-                    max_tokens=_max_tokens(),
+                    max_tokens=max_tokens or _max_tokens(),
+                    **_reasoning_kwargs(reasoning_effort),
+                    **({"timeout": timeout} if timeout else {}),
                 )
                 choice = response.choices[0]
                 content = choice.message.content or "{}"
@@ -437,6 +480,9 @@ def chat_json(
             model=primary if pinned_only else model,
             used_out=used_out,
             allow_fallback=False if pinned_only else allow_fallback,
+            max_tokens=max_tokens,  # a repair attempt must not silently shrink the budget
+            reasoning_effort=reasoning_effort,
+            timeout=timeout,
             _retried=True,
         )
 
@@ -521,6 +567,33 @@ def verdict_model() -> str:
         return settings.ollama_verdict_model
     configured = str((toml_settings().get("llm") or {}).get("verdict_model") or "").strip()
     return configured or model_name()
+
+
+def setups_model() -> str:
+    """Model for ptm_setups' group ranking, which can afford a stronger one.
+
+    The verdict model is chosen under the main pipeline's cost shape: ~10 heavy
+    calls per name across ~170 names, where a large model burns the provider's
+    usage window. The ranking inverts that — one call per industry plus one
+    final — so the constraint that forced gpt-oss:20b does not apply, and the
+    work is harder: ranking a whole group against each other while holding a
+    valuation rule that cuts against the obvious reading.
+
+    Falls back to the verdict model when no Ollama key is configured, so the
+    NVIDIA/OpenAI paths behave exactly as before.
+    """
+    settings = env()
+    if settings.ollama_api_key and settings.ollama_setups_model:
+        return settings.ollama_setups_model
+    return verdict_model()
+
+
+def setups_reasoning_effort() -> str:
+    """Thinking budget for the ranking call ("" leaves the model's default)."""
+    settings = env()
+    if not settings.ollama_api_key:
+        return ""
+    return str(settings.ollama_setups_reasoning_effort or "").strip().lower()
 
 
 def macro_narrative(snapshot: MacroSnapshot) -> str:

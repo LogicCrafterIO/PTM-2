@@ -24,8 +24,19 @@ IS the deep dive).
     GET  /api/simple/report/<rel>    -> one idea report's markdown
     POST /api/simple/run             -> body {"action": "build-themes"|"build-wiki"|"radar"|"refresh-fundamentals"|"analyze-all"|"group-review", ...}
 
-The simple-process handlers live in ptm_simple.viewer; this server only
-delegates. A simple `run` (which dives tickers) is refused while a deep-dive
+    GET  /api/setups/status          -> ranking-process action state + artifact inventory
+    GET  /api/setups/ranking         -> latest per-industry ranking + cross-industry leaderboard
+    GET  /api/setups/reports         -> ranking markdown files
+    GET  /api/setups/report/<rel>    -> one ranking markdown
+    POST /api/setups/run             -> body {"action": "build-themes"|"build-wiki"|"radar"|"refresh-fundamentals"|"rank", ...}
+
+The simple-process handlers live in ptm_simple.viewer and the ranking-process
+handlers in ptm_setups.viewer; this server only delegates, and it is the one
+place that knows all four LLM consumers (deep-dive batch, idea pipeline, simple
+action, ranking pass) so it can refuse a start that would collide. The two
+processes share the deterministic front half and its artifacts under
+data/simple/; only their qualitative halves differ.
+A simple `run` (which dives tickers) is refused while a deep-dive
 batch or an idea pipeline is in flight, same exclusivity as the other tabs.
 
 Both run the real pipeline in background threads; the deep-dive batch and an
@@ -512,6 +523,23 @@ class Handler(BaseHTTPRequestHandler):
             name = urllib.parse.unquote(route.removeprefix("/api/simple/theme/"))
             source = (query.get("source") or ["manual"])[0]
             self._json(simple.get_theme_detail(name, source))
+        elif route == "/api/setups/status":
+            from ptm_setups import viewer as setups
+
+            self._json(setups.status())
+        elif route == "/api/setups/ranking":
+            from ptm_setups import viewer as setups
+
+            self._json(setups.get_ranking())
+        elif route.startswith("/api/setups/report/"):
+            from ptm_setups import viewer as setups
+
+            rel = urllib.parse.unquote(route.removeprefix("/api/setups/report/"))
+            self._json(setups.read_report(rel))
+        elif route == "/api/setups/reports":
+            from ptm_setups import viewer as setups
+
+            self._json(setups.list_reports())
         else:
             # Everything else is a static file from the repo root.
             rel = route.lstrip("/")
@@ -547,6 +575,7 @@ class Handler(BaseHTTPRequestHandler):
             except Exception:
                 self._json({"error": "invalid JSON body"}, 400)
                 return
+            from ptm_setups import viewer as setups
             from ptm_simple import viewer as simple
 
             opts = {
@@ -556,10 +585,38 @@ class Handler(BaseHTTPRequestHandler):
                 "force": bool(body.get("force")),
                 "llm": bool(body.get("llm")),
                 "refresh": body.get("refresh"),
+                "estimates": bool(body.get("estimates")),
             }
             ok, payload, code = simple.start(
                 str(body.get("action") or ""), opts,
-                other_work_running=_pipe_state["running"] or _state["running"],
+                other_work_running=_pipe_state["running"] or _state["running"] or setups.busy(),
+            )
+            self._json(payload, 200 if ok else code)
+            return
+        if route == "/api/setups/run":
+            length = int(self.headers.get("Content-Length") or 0)
+            try:
+                body = json.loads(self.rfile.read(length) or b"{}")
+            except Exception:
+                self._json({"error": "invalid JSON body"}, 400)
+                return
+            from ptm_setups import viewer as setups
+            from ptm_simple import viewer as simple
+
+            opts = {
+                "map": str(body.get("map") or "manual"),
+                "theme": str(body.get("theme") or ""),
+                "xlsx": str(body.get("xlsx") or "John pre mentoring starterpack.xlsx"),
+                "force": bool(body.get("force")),
+                "llm": bool(body.get("llm")),
+                "refresh": body.get("refresh"),
+                "estimates": bool(body.get("estimates")),
+                "no_final": bool(body.get("no_final")),
+                "model": str(body.get("model") or ""),
+            }
+            ok, payload, code = setups.start(
+                str(body.get("action") or ""), opts,
+                other_work_running=_pipe_state["running"] or _state["running"] or simple.busy(),
             )
             self._json(payload, 200 if ok else code)
             return

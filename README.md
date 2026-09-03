@@ -351,6 +351,12 @@ reports. Each review writes `ideas/simple/<theme>/_GROUP_REVIEW_<date>.md`
 with per-member verdicts (justified / not justified / uncertain), the KPIs to
 watch, and reads the whole theme against itself. Commentary, not a gate.
 
+For the same theme-first front half with the per-name qualitative work replaced
+by a single ranking pass per industry, see
+[PTM-setups](#ptm-setups--the-group-only-ranking-the-setups-tab) below — it is a
+separate tab and a separate module, and shares this process's theme map, radar
+and quant table rather than copying them.
+
 **Trade ideas** (deterministic — no LLM, no gate): every review row is tagged
 by pure logic on side × flag × verdict. The four aligned combinations are the
 trade candidates — long + premium justified and long + discount **not**
@@ -358,6 +364,133 @@ justified (the market is wrong), short + premium **not** justified and short +
 discount justified (the market is right, ride it) — shown in the viewer's
 Trade-ideas panel and in each review markdown, where clicking a ticker opens
 that name's latest print qual.
+
+## PTM-setups — the group-only ranking (the Setups tab)
+
+`ptm_setups` is a second qualitative layer over the SAME theme-first front half
+as `ptm_simple`. The deterministic stages are shared rather than copied — the
+theme map, the weekly radar and the quant table are identical computations
+writing identical artifacts under `data/simple/`, so both processes read one set
+of numbers and there is only one place to fix them. Running the radar or
+Refresh fundamentals from either tab updates both.
+
+What differs is the whole qualitative half:
+
+| | `ptm_simple` | `ptm_setups` |
+|---|---|---|
+| per name | deep dive → forward brief → print qual | **nothing** |
+| per industry | one review: is each valuation flag justified? | **one ranking, plus a best long and a best short each with its own case** |
+| across industries | — | one final over the per-industry winners |
+| LLM calls for 13 industries / 63 names | ~63 dives + ~63 briefs + 13 reviews | **13 + 1** |
+| web searches | 2 per name | 2 per industry + 1 per member, pooled |
+| side | pinned by rule (90d revisions) | **the ranking's own call** |
+| output | flag verdicts + trade tags | **ranked table, the case for each name, a long/short pair per industry (short-led when the group is not rising), and a cross-industry leaderboard** |
+
+```powershell
+.\.venv\Scripts\python.exe -m ptm_setups rank --map wiki            # every non-COLD industry
+.\.venv\Scripts\python.exe -m ptm_setups rank --map wiki --theme "aerospace engineering"
+.\.venv\Scripts\python.exe -m ptm_setups rank --map wiki --no-final # skip the leaderboard
+.\.venv\Scripts\python.exe -m ptm_setups rank --map wiki --model gpt-oss:120b   # override the model
+```
+
+The deterministic prerequisites still come from `ptm_simple` (`build-themes`,
+`radar`, `refresh-fundamentals`) — or from the Setups tab's own buttons, which
+call the same functions.
+
+**One pass per industry.** Each non-COLD industry gets ONE call over all of its
+members at once, ordering them as long and short setups for the next print and
+the 0–3 months around it. Every input is measured and cached: the last print's
+EPS actual against consensus with the surprise percentage and the four-quarter
+beat record, the name's own FY1 consensus change over 90 and 30 days with the
+analyst up/down counts, consensus FY1/FY2 EPS and growth, the last filed
+earnings exhibit and forward guidance language from EDGAR, and forward P/E, PEG
+and P/S against the industry median. Then one **cross-industry final** ranks
+each industry's best long and best short against each other.
+
+**The best long and the best short are separate calls.** Each industry names one
+of each and writes each its own thesis, catalyst, setup and risk — they are two
+different trades and do not share reasoning. The **short leads wherever the
+industry's estimate breadth is flat or negative**: in a group that is not rising
+the useful answer is which member's expectations get cut, so that section comes
+first and the tactical line leads with it. The prompt treats the short as the
+harder and more valuable call rather than the leftover at the bottom of the long
+list, and "none in this industry" is an accepted answer — an admitted absence
+beats an invented short. A pick naming a ticker outside the industry is dropped
+rather than displayed.
+
+**The side is the pass's call.** `ptm_simple` pins it by hard rule; here the
+90-day revision direction is a strong prior the ranking may override, so a short
+is findable inside a rising industry. Overrides are detected deterministically
+(never taken from the model's own claim) and marked ⚠ with the reason required
+in the risk column.
+
+**Fundamentals only — no price action.** No technicals, no moving averages, no
+momentum or trend reads, no support or resistance, no price targets. The packets
+carry no price, no price history and not even the post-print price reactions the
+expectations cache stores, so the pass is never shown a price and cannot imply
+one. Where a conventional setup table puts a trend column, this one puts the
+**print setup**: how expectations are moving into the print. Valuation is the
+only channel price enters through, already reduced to a ratio.
+
+**Valuation is a hurdle and an asymmetry, never a score.** A premium multiple is
+usually the market correctly paying for better growth, returns or durability,
+and a discount is usually a correct mark-down — so the level of the multiple
+carries almost no directional information over 0–3 months, and the prompt
+forbids ranking a name up for being cheap or down for being expensive.
+Cheapness is not a catalyst: a discount is interesting only when something
+dated forces a re-mark, and a premium is a negative only when the coming print
+is likely to break the growth it assumes. What the multiple does change is the
+bar the print has to clear and the size of the move if the driver breaks.
+
+**The factual columns are computed, not written.** The latest-surprise column,
+the print-setup column and the multiples in the guidance/valuation cell are
+rendered from the cached data in `ptm_setups/inputs.py`; the model supplies only
+the guidance read, the ordering and the narrative. A percentage taken off a
+near-zero or sign-crossing base is an artefact, not a magnitude, so it is
+**withheld rather than footnoted** — HTLD's arithmetically true "+2445% beat"
+renders as `$0.14 vs $-0.01 est (loss to profit)`, and a four-quarter average
+containing such a quarter renders as `avg n/a`. Without that, a two-cent swing
+outranks every genuine beat in its industry.
+
+**Model and thinking budget.** Because the pass spends ~14 calls a run instead
+of ~140, it can afford a much stronger model than the pipeline's verdict model,
+and it needs one — on `gpt-oss:20b` a live pass ranked a name first for its low
+P/E and called another "over-valued" while its own PEG said otherwise, the exact
+bias the prompt forbids. The default is `glm-5.3-flash`
+(`OLLAMA_SETUPS_MODEL`, or `rank --model`, or the tab's dropdown), with
+`gpt-oss:120b` as the no-fuss fallback. Two things make a reasoning model usable
+here: an output budget in `ptm_setups/rank.py` sized to cover thinking as well
+(16k + 2.4k per member, ceiling 64k), and
+`OLLAMA_SETUPS_REASONING_EFFORT` — because reasoning tokens come out of the same
+allowance as the answer, and an unbounded thinker spends the lot and replies
+with empty content and `finish_reason "length"`.
+
+**More thinking did not mean better ranking here, and the default is `low` on
+measured grounds.** At `low`, glm-5.3-flash produced the sharpest output of
+anything tried — naming a one-off tariff claim that inflated a margin beat, and
+a beat size decaying across four quarters — in about 11 seconds an industry.
+Raised to `medium` for more depth it got slower (~85s an industry) and less
+reliable: one five-name industry came back with no ranking at all, having spent
+all 28k tokens deliberating. An empty result is now retried once at `low` with
+the ceiling budget, so `medium` degrades instead of failing — but `low` is what
+to run. The per-call deadline scales with the group too (180s + 45s per member):
+the shared client's 120s is right for a per-name call and far too short for an
+eight-member group, which stalled and burned its retry before this was fixed.
+
+**In the viewer**: the **Setups** tab runs every step from the browser (both
+theme maps, the radar, Refresh fundamentals, then Rank industries) with the live
+log, and shows the cross-industry leaderboard, each industry's best-long and
+best-short pair side by side in priority order, every per-industry ranking table
+with the case for each name, and each ranking markdown rendered inline. A model
+dropdown overrides the configured model per run. A ranking pass and any other
+LLM consumer (deep-dive batch, idea pipeline, simple action) are mutually
+exclusive.
+
+Output: `data/setups/setups_<date>.json`,
+`ideas/setups/<industry>/_RANKING_<date>.md` and
+`ideas/setups/_LEADERBOARD_<date>.md`. Commentary, not a gate — nothing
+downstream reads a ranking to include or drop a name. Without an LLM key the
+pass degrades to the measured table, marked unranked.
 
 ## Tests (does not touch live files)
 

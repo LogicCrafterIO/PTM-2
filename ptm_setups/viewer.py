@@ -1,22 +1,28 @@
-"""Viewer glue for the simple process: state, workers, and endpoint handlers.
+"""Viewer glue for the ranking process: state, workers, and endpoint handlers.
 
-Kept inside ptm_simple so the PTM viewer server stays generic — it only
-delegates /api/simple/* here. One simple action at a time; the dive-bearing
-`run` / `run-all` actions additionally refuse to start while a deep-dive
-batch or an idea pipeline is in flight, so nothing ever hammers the LLM in
-parallel.
+Mirrors ptm_simple.viewer so the PTM viewer server stays generic — it only
+delegates /api/setups/* here. One ranking action at a time, and the LLM-bearing
+`rank` action additionally refuses to start while a deep-dive batch, an idea
+pipeline or a simple-process action is in flight, so the provider is never hit
+by two consumers at once.
+
+The deterministic stages this tab offers (build either theme map, run the
+radar, refresh fundamentals) are the SIMPLE process's own functions, writing
+the same artifacts under data/simple/. That is deliberate: they are identical
+computations, so running them from either tab updates one shared set of
+numbers instead of two that can disagree. Only `rank` is this process's own.
 """
 
 from __future__ import annotations
 
-import json
 import threading
 import time
 from datetime import datetime, timezone
 
 from ptm.log import log
 
-_SIMPLE_ACTIONS = ("build-themes", "build-wiki", "radar", "refresh-fundamentals", "analyze-all", "group-review")
+_SETUPS_ACTIONS = ("build-themes", "build-wiki", "radar", "refresh-fundamentals", "rank")
+_LLM_ACTIONS = ("rank",)
 _lock = threading.Lock()
 _state: dict = {
     "running": False,
@@ -32,7 +38,7 @@ _started_mono = 0.0
 
 
 def busy() -> bool:
-    """True while a simple action is running — the setups tab's exclusion check."""
+    """True while a ranking action is running — the simple tab's exclusion check."""
     with _lock:
         return bool(_state["running"])
 
@@ -59,7 +65,7 @@ def _worker(action: str, opts: dict) -> None:
     sink = lambda line: _append_event(line)  # noqa: E731
     try:
         from ptm.asof import as_of_date
-        from ptm.log import add_sink, remove_sink
+        from ptm.log import add_sink
 
         add_sink(sink)
         ref = as_of_date()
@@ -97,7 +103,7 @@ def _worker(action: str, opts: dict) -> None:
         elif action == "refresh-fundamentals":
             from ptm_simple.refresh import refresh_fundamentals
 
-            out = refresh_fundamentals(
+            result = refresh_fundamentals(
                 source=opts.get("map") or "manual",
                 ref=ref,
                 non_cold_only=not bool(opts.get("all")),
@@ -105,26 +111,25 @@ def _worker(action: str, opts: dict) -> None:
                 with_estimates=bool(opts.get("estimates")),
                 with_prices=not bool(opts.get("no_prices")),
             )
-            result = out
-        elif action == "analyze-all":
-            from ptm_simple.run import analyze_all_pass, load_theme_map
+        elif action == "rank":
+            from ptm_setups.rank import run_setups
 
-            theme_map = load_theme_map(opts.get("map") or "manual")
-            payload = analyze_all_pass(theme_map, ref, force=bool(opts.get("force")))
-            result = {k: payload[k] for k in ("themes", "members", "skipped", "reports")}
-        elif action == "group-review":
-            from ptm_simple.group_review import run_group_review
-
-            result = run_group_review(source=opts.get("map") or "manual", ref=ref, theme=opts.get("theme"))
+            result = run_setups(
+                source=opts.get("map") or "manual",
+                ref=ref,
+                theme=opts.get("theme") or None,
+                with_final=not bool(opts.get("no_final")),
+                model=opts.get("model") or None,
+            )
         else:
-            raise ValueError(f"unknown simple action: {action}")
+            raise ValueError(f"unknown setups action: {action}")
         with _lock:
             _state["result"] = result
     except SystemExit as exc:  # the CLI-style guards raise SystemExit with a message
         with _lock:
             _state["error"] = str(exc)[:400]
     except Exception as exc:
-        log(f"viewer simple {action}: FAILED {exc}")
+        log(f"viewer setups {action}: FAILED {exc}")
         with _lock:
             _state["error"] = str(exc)[:400]
     finally:
@@ -141,16 +146,17 @@ def _worker(action: str, opts: dict) -> None:
 
 
 def start(action: str, opts: dict, other_work_running: bool = False) -> tuple[bool, dict, int]:
-    """Start a simple action. `other_work_running` is the server's own deep
-    dive / pipeline busy flag: analyze-all dives tickers, so it must not
-    start on top of another LLM consumer."""
-    if action not in _SIMPLE_ACTIONS:
-        return False, {"error": f"action must be one of {list(_SIMPLE_ACTIONS)}"}, 400
-    if other_work_running and action in ("analyze-all", "group-review"):
-        return False, {"error": "a deep-dive batch or idea pipeline is running; dives would collide"}, 409
+    """Start a ranking action. `other_work_running` is the server's own busy
+    flag for the deep-dive batch, the idea pipeline and the simple process:
+    `rank` is an LLM consumer, so it must not start on top of another one."""
+    if action not in _SETUPS_ACTIONS:
+        return False, {"error": f"action must be one of {list(_SETUPS_ACTIONS)}"}, 400
+    if other_work_running and action in _LLM_ACTIONS:
+        return False, {"error": "a deep-dive batch, idea pipeline or simple-process action is "
+                                "running; the ranking pass would collide with it"}, 409
     with _lock:
         if _state["running"]:
-            return False, {"error": "a simple-process action is already running", "status": dict(_state)}, 409
+            return False, {"error": "a ranking action is already running", "status": dict(_state)}, 409
         global _started_mono
         _started_mono = time.monotonic()
         _state.update(running=True, kind=action, started=datetime.now(timezone.utc).isoformat(),
@@ -170,20 +176,30 @@ def _read_json(path):
         return None
 
 
+def _latest_file(directory, pattern: str):
+    if not directory.exists():
+        return None
+    files = sorted(directory.glob(pattern), key=lambda p: p.stat().st_mtime)
+    return files[-1] if files else None
+
+
+def ideas_dir_setups():
+    from ptm_setups import setups_ideas_dir
+
+    return setups_ideas_dir()
+
+
 def artifacts() -> dict:
-    """What simple-process artifacts exist right now, for the viewer."""
+    """What this process can see right now: the shared inputs and its own output."""
     from ptm.config import data_dir
 
     sdir = data_dir("simple")
-    arts: dict = {"maps": {}, "radar_files": [], "radar_date": None}
+    arts: dict = {"maps": {}, "radar_date": None, "quant": None, "ranking": None, "reports": 0}
     for source, name in (("manual", "theme_map.json"), ("wiki", "theme_map_wiki.json")):
         path = sdir / name
-        if not path.exists():
-            arts["maps"][source] = {"exists": False, "name": name}
-            continue
-        payload = _read_json(path)
+        payload = _read_json(path) if path.exists() else None
         if not isinstance(payload, dict):
-            arts["maps"][source] = {"exists": False, "name": name, "error": "unreadable"}
+            arts["maps"][source] = {"exists": False, "name": name}
             continue
         arts["maps"][source] = {
             "exists": True,
@@ -194,96 +210,52 @@ def artifacts() -> dict:
             "fallbacks": payload.get("wiki_fallbacks", 0),
             "mtime": time.strftime("%Y-%m-%d %H:%M", time.localtime(path.stat().st_mtime)),
         }
-    for path in sorted(sdir.glob("radar_*.json"), key=lambda p: p.stat().st_mtime):
-        arts["radar_files"].append(path.stem.replace("radar_", ""))
-    if arts["radar_files"]:
-        arts["radar_date"] = arts["radar_files"][-1]
-    ideadir = ideas_dir_simple()
+    radar = _latest_file(sdir, "radar_*.json")
+    if radar:
+        arts["radar_date"] = radar.stem.replace("radar_", "")
+    quant = _latest_file(sdir, "quant_*.json")
+    if quant:
+        doc = _read_json(quant) or {}
+        arts["quant"] = {
+            "as_of": doc.get("as_of"),
+            "rows": len(doc.get("rows") or []),
+            "themes": len(doc.get("themes") or []),
+        }
+    try:
+        from ptm.llm import setups_model
+
+        arts["model"] = setups_model()
+    except Exception:
+        arts["model"] = ""
+    ranking = _latest_file(data_dir("setups"), "setups_*.json")
+    if ranking:
+        doc = _read_json(ranking) or {}
+        board = doc.get("leaderboard") or {}
+        arts["ranking"] = {
+            "as_of": doc.get("as_of"),
+            "groups": len(doc.get("groups") or []),
+            "ranked": sum(len(g.get("ranking") or []) for g in doc.get("groups") or []),
+            "longs": len(board.get("longs") or []),
+            "shorts": len(board.get("shorts") or []),
+            "file": ranking.name,
+        }
+    ideadir = ideas_dir_setups()
     arts["reports"] = sum(1 for _ in ideadir.rglob("*.md")) if ideadir.exists() else 0
     return arts
 
 
-def _latest_file(sdir, pattern: str):
-    files = sorted(sdir.glob(pattern), key=lambda p: p.stat().st_mtime)
-    return files[-1] if files else None
-
-
-def ideas_dir_simple():
-    from ptm_simple import simple_ideas_dir
-
-    return simple_ideas_dir()
-
-
-def get_theme_map(source: str) -> dict:
+def get_ranking() -> dict:
+    """The latest group ranking + cross-industry leaderboard."""
     from ptm.config import data_dir
 
-    source = (source or "manual").lower()
-    if source not in ("manual", "wiki"):
-        return {"error": f"source must be 'manual' or 'wiki', got '{source}'"}
-    name = "theme_map_wiki.json" if source == "wiki" else "theme_map.json"
-    path = data_dir("simple", name)
-    if not path.exists():
-        return {"error": f"no theme map for source '{source}': build it first"}
-    payload = _read_json(path) or {}
-    return {"source": source, "map": payload}
-
-
-def get_radar(date_str: str | None = None) -> dict:
-    from ptm.config import data_dir
-
-    sdir = data_dir("simple")
-    if date_str:
-        path = sdir / f"radar_{date_str}.json"
-        if not path.exists():
-            return {"error": f"no radar for {date_str}"}
-        return {"radar": _read_json(path)}
-    files = sorted(sdir.glob("radar_*.json"), key=lambda p: p.stat().st_mtime)
-    if not files:
-        return {"error": "no radar yet: run the radar first"}
-    return {"radar": _read_json(files[-1])}
-
-
-def get_theme_detail(name: str, source: str) -> dict:
-    """Live radar row for one theme."""
-    from datetime import date as _date
-
-    from ptm.asof import as_of_date
-    from ptm_simple.radar import theme_radar
-    from ptm_simple.run import load_theme_map, theme_entry
-
-    ref = as_of_date()
-    theme_map = load_theme_map(source)
-    entry = theme_entry(theme_map, name)
-    if entry is None:
-        return {"error": f"theme '{name}' not in the {source} map"}
-    from ptm_simple.run import _fundamentals
-
-    row = theme_radar(entry, _fundamentals(), ref)
-    return {"row": {k: v for k, v in row.items() if k != "members"}, "members": row["members"], "ref": ref.isoformat()}
-
-
-def get_quant() -> dict:
-    """The deterministic quant table for the latest run (reference numbers)."""
-    from ptm.config import data_dir
-
-    path = _latest_file(data_dir("simple"), "quant_*.json")
+    path = _latest_file(data_dir("setups"), "setups_*.json")
     if not path:
-        return {"error": "no quant table yet: run a theme pass"}
-    return {"quant": _read_json(path) or {}, "file": path.name}
-
-
-def get_review() -> dict:
-    """The latest per-theme group review (are the valuation flags justified?)."""
-    from ptm.config import data_dir
-
-    path = _latest_file(data_dir("simple"), "group_review_*.json")
-    if not path:
-        return {"error": "no group review yet: run group-review after the coverage reports"}
-    return {"review": _read_json(path) or {}, "file": path.name}
+        return {"error": "no ranking yet: run the radar, refresh fundamentals, then Rank industries"}
+    return {"ranking": _read_json(path) or {}, "file": path.name}
 
 
 def list_reports() -> dict:
-    ideadir = ideas_dir_simple()
+    ideadir = ideas_dir_setups()
     reports = []
     if ideadir.exists():
         for path in sorted(ideadir.rglob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True):
@@ -293,7 +265,7 @@ def list_reports() -> dict:
 
 
 def read_report(rel: str) -> dict:
-    ideadir = ideas_dir_simple().resolve()
+    ideadir = ideas_dir_setups().resolve()
     path = (ideadir / rel).resolve()
     if not str(path).startswith(str(ideadir)) or not path.is_file():
         return {"error": "not found"}
