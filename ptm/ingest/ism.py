@@ -5,7 +5,7 @@ from __future__ import annotations
 import calendar
 import re
 import time
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from threading import Lock
 
@@ -65,16 +65,54 @@ def _report_months(now: datetime | date | None = None) -> list[tuple[int, int]]:
     return out
 
 
+def _business_day_index(on: date) -> int:
+    """1-based index of `on` among the month's business days (weekdays).
+
+    ISM releases on business days; whether a federal holiday shifts the count
+    barely matters here — the probe just tries the newer URL and falls back.
+    """
+    first = on.replace(day=1)
+    return sum(1 for i in range((on - first).days + 1) if (first + timedelta(days=i)).weekday() < 5)
+
+
+def _kind_months(
+    kind: str, now: datetime | date | None = None, allow_probe: bool | None = None
+) -> list[tuple[int, int]]:
+    """Candidate report months for ONE kind, newest first.
+
+    Manufacturing's report for month M goes live on business day 1 of M+1 and
+    Services' on business day 3 — earlier than the conservative both-out bound
+    the backdating calendar uses (`ism_release_day` 4). A live run may therefore
+    probe one month newer than the calendar list; the newer page simply is not
+    live yet and the calendar months still follow as fallbacks. A backdated run
+    never probes newer — that is what stops a later print leaking in as
+    lookahead on, say, an as-of of the 2nd of the month.
+    """
+    cal = _report_months(now)
+    probe = (not is_backdated()) if allow_probe is None else allow_probe
+    if not probe:
+        return cal
+    ref = as_of_date() if now is None else (now.date() if isinstance(now, datetime) else now)
+    if kind == "services" and _business_day_index(ref) < 3:
+        return cal
+    index = cal[0][0] * 12 + (cal[0][1] - 1) + 1
+    return [(index // 12, index % 12 + 1)] + cal
+
+
 def _month_slugs(now: datetime | date | None = None) -> list[str]:
     """Latest *released* print is last calendar month (August URL is empty mid-August)."""
     return [calendar.month_name[m].lower() for _, m in _report_months(now)]
 
 
-def _urls(now: datetime | date | None = None) -> list[tuple[str, str]]:
+def _urls(now: datetime | date | None = None, allow_probe: bool | None = None) -> list[tuple[str, str]]:
     urls: list[tuple[str, str]] = []
-    for month in _month_slugs(now):
-        urls.append(("pmi", f"{BASE}/pmi/{month}/"))
-        urls.append(("services", f"{BASE}/services/{month}/"))
+    for kind in ("pmi", "services"):
+        seen: set[tuple[int, int]] = set()
+        for year, month in _kind_months(kind, now, allow_probe):
+            if (year, month) in seen:
+                continue
+            seen.add((year, month))
+            urls.append((kind, f"{BASE}/{'pmi' if kind == 'pmi' else 'services'}/{calendar.month_name[month].lower()}/"))
     return urls
 
 
@@ -502,7 +540,12 @@ def scrape_ism(
         "as_of": datetime.now(timezone.utc).isoformat(),
         "run_date": as_of_date().isoformat(),
         "backdated": is_backdated(),
-        "target_report_month": month_label(target),
+        # the month the tab should read: whichever report actually parsed, else
+        # the conservative calendar target (a live probe can resolve August
+        # while the both-out calendar still says July)
+        "target_report_month": ((manufacturing or {}).get("report_month")
+                                or (services or {}).get("report_month")
+                                or month_label(target)),
         "pmi": (manufacturing or {}).get("headline"),
         "nmi": (services or {}).get("headline"),
         "manufacturing": manufacturing,

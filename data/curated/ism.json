@@ -1,0 +1,302 @@
+{
+  "as_of": "2026-09-03T15:08:33.149639+00:00",
+  "run_date": "2026-09-03",
+  "backdated": false,
+  "target_report_month": "August 2026",
+  "pmi": 54.6,
+  "nmi": 55.4,
+  "manufacturing": {
+    "kind": "manufacturing",
+    "report_month": "August 2026",
+    "headline": 54.6,
+    "components": {
+      "headline": {
+        "value": 54.6,
+        "prior": null,
+        "delta": null
+      },
+      "new_orders": {
+        "value": 53.7,
+        "prior": null,
+        "delta": null
+      },
+      "production": {
+        "value": 58.3,
+        "prior": null,
+        "delta": null
+      },
+      "employment": {
+        "value": 51.2,
+        "prior": null,
+        "delta": null
+      },
+      "supplier_deliveries": {
+        "value": 59.3,
+        "prior": null,
+        "delta": null
+      },
+      "inventories": {
+        "value": 50.6,
+        "prior": null,
+        "delta": null
+      },
+      "customer_inventories": {
+        "value": 42.8,
+        "prior": null,
+        "delta": null
+      },
+      "prices": {
+        "value": 71.1,
+        "prior": null,
+        "delta": null
+      },
+      "backlog": {
+        "value": 51.8,
+        "prior": null,
+        "delta": null
+      },
+      "exports": {
+        "value": 53.2,
+        "prior": null,
+        "delta": null
+      },
+      "imports": {
+        "value": 52.5,
+        "prior": null,
+        "delta": null
+      }
+    },
+    "industries": {
+      "growth": [
+        "Primary Metals",
+        "Electrical Equipment, Appliances & Components",
+        "Miscellaneous Manufacturing",
+        "Textile Mills",
+        "Furniture & Related Products",
+        "Nonmetallic Mineral Products",
+        "Paper Products",
+        "Transportation Equipment",
+        "Fabricated Metal Products",
+        "Petroleum & Coal Products",
+        "Printing & Related Support Activities",
+        "Computer & Electronic Products",
+        "Plastics & Rubber Products",
+        "Machinery",
+        "Food, Beverage & Tobacco Products"
+      ],
+      "contraction": [
+        "Wood Products",
+        "Chemical Products"
+      ]
+    },
+    "new_orders_industries": {
+      "growth": [
+        "Textile Mills",
+        "Miscellaneous Manufacturing",
+        "Primary Metals",
+        "Furniture & Related Products",
+        "Nonmetallic Mineral Products",
+        "Computer & Electronic Products",
+        "Machinery",
+        "Electrical Equipment, Appliances & Components",
+        "Transportation Equipment",
+        "Fabricated Metal Products",
+        "Plastics & Rubber Products"
+      ],
+      "contraction": [
+        "Wood Products",
+        "Chemical Products",
+        "Food, Beverage & Tobacco Products"
+      ]
+    },
+    "comments": [
+      {
+        "industry": "Chemical Products",
+        "quote": "The economy is annoying; it is getting in the way of otherwise good business. We are making great new products but struggling to compete when prices escalate due to things like tariffs and the conflict in the Strait of Hormuz. I fear that the inflation caused by these factors will lead to lower sales and lower spending power of our customers. Call it inflation! At some point, it leads to an economic downturn or at least an economic pain for many consumers. It\u2019s an uncertain year, our second in a row."
+      },
+      {
+        "industry": "Chemical Products",
+        "quote": "For our building products division, profitability is not far off from last year despite economic headwinds, as our specialty products have maintained their market share and sales. Specific to IT, the rising costs in component inputs have caused some budgetary constraints as we plan for the 2027 fiscal year. However, we largely been able to keep costs close to historic consumer price index averages."
+      },
+      {
+        "industry": "Computer & Electronic Products",
+        "quote": "Supply chain situation, especially in the electronics market, is going through another crisis even bigger and more complicated than during and post COVID-19. That\u2019s mainly due to AI infrastructure and uncertainties in the global market (for oil and other critical supplies) due to war in the Middle East and more complication on trade rules."
+      },
+      {
+        "industry": "Computer & Electronic Products",
+        "quote": "Supply markets are increasingly challenging due to inflation and supply availability. Each month has been more difficult than the previous one. Starting to resemble the post-COVID-19 disruptive period."
+      },
+      {
+        "industry": "Machinery",
+        "quote": "Prices continue to rise on all goods. Suppliers are noting that energy, steel and labor costs are increasing very quickly. We continue to try to move products around to offset costs. We have moved more products to offshore sources to try to minimize cost impacts."
+      },
+      {
+        "industry": "Machinery",
+        "quote": "Photonics, high speed connectors, semiconductors and government orders are expanding significantly. Supply chains domestically and globally are difficult, with increases in lead times and cost."
+      },
+      {
+        "industry": "Miscellaneous Manufacturing",
+        "quote": "Commentary this month echoes that of recent months: (1) significant availability/price challenges in commodities heavily consumed by AI, (2) great uncertainty over when the Iran conflict will end, and (3) another round of shifting U.S. tariff policy. Despite these tensions, we continue to focus on what we can control, and the market for our products remains strong."
+      },
+      {
+        "industry": "Primary Metals",
+        "quote": "This month is a blur: Steel prices continue to climb as supply diminishes, aluminum is rising after dropping, and there are many holes on the plate side. Demand seems to be a seesaw. Our prediction ability continues to diminish, with the exception that the year will remain difficult until the end."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "High steel and aluminum prices (due to Section 232 tariffs) continue to make profitability a challenge. Uncertainty over the U.S.-Mexico-Canada Agreement is at the forefront of many customer conversations. Our industry has also been hit with countervailing and anti-dumping penalties, further raising the cost of equipment."
+      },
+      {
+        "industry": "Transportation Equipment",
+        "quote": "Volume is consistent. Our main customer is shifting production from U.S. plants to Mexico plants."
+      }
+    ]
+  },
+  "services": {
+    "kind": "services",
+    "report_month": "August 2026",
+    "headline": 55.4,
+    "components": {
+      "headline": {
+        "value": 55.4,
+        "prior": null,
+        "delta": null
+      },
+      "new_orders": {
+        "value": 60.9,
+        "prior": null,
+        "delta": null
+      },
+      "business_activity": {
+        "value": 61.7,
+        "prior": null,
+        "delta": null
+      },
+      "employment": {
+        "value": 47.8,
+        "prior": null,
+        "delta": null
+      },
+      "supplier_deliveries": {
+        "value": 51.3,
+        "prior": null,
+        "delta": null
+      },
+      "inventories": {
+        "value": 56.7,
+        "prior": null,
+        "delta": null
+      },
+      "prices": {
+        "value": 72.6,
+        "prior": null,
+        "delta": null
+      },
+      "backlog": {
+        "value": 55.9,
+        "prior": null,
+        "delta": null
+      },
+      "exports": {
+        "value": 56.3,
+        "prior": null,
+        "delta": null
+      },
+      "imports": {
+        "value": 56.3,
+        "prior": null,
+        "delta": null
+      }
+    },
+    "industries": {
+      "growth": [
+        "Mining",
+        "Real Estate, Rental & Leasing",
+        "Accommodation & Food Services",
+        "Wholesale Trade",
+        "Arts, Entertainment & Recreation",
+        "Educational Services",
+        "Retail Trade",
+        "Information",
+        "Professional, Scientific & Technical Services",
+        "Utilities",
+        "Transportation & Warehousing",
+        "Public Administration"
+      ],
+      "contraction": [
+        "Agriculture, Forestry, Fishing & Hunting",
+        "Construction",
+        "Management of Companies & Support Services",
+        "Finance & Insurance",
+        "Health Care & Social Assistance"
+      ]
+    },
+    "new_orders_industries": {
+      "growth": [
+        "Real Estate, Rental & Leasing",
+        "Mining",
+        "Educational Services",
+        "Arts, Entertainment & Recreation",
+        "Wholesale Trade",
+        "Other Services",
+        "Retail Trade",
+        "Accommodation & Food Services",
+        "Professional, Scientific & Technical Services",
+        "Management of Companies & Support Services",
+        "Information",
+        "Finance & Insurance",
+        "Health Care & Social Assistance",
+        "Transportation & Warehousing"
+      ],
+      "contraction": []
+    },
+    "comments": [
+      {
+        "industry": "Accommodation & Food Services",
+        "quote": "General business conditions are positive. The challenges lie in managing through the dynamic nature of the administration\u2019s policies \u2014 tariffs and Middle East conflict \u2014 that have caused numerous input cost headwinds for suppliers and us."
+      },
+      {
+        "industry": "Construction",
+        "quote": "The bond market pushed 30-year mortgage rates up to 6.67 percent, reducing affordability and moving prospective buyers back to the sidelines. The new-build housing market continues to slow with the selling season coming to a close and the start of the new school year. Rate buydowns and discounts have become the norm instead of the tool to drive traffic."
+      },
+      {
+        "industry": "Educational Services",
+        "quote": "The conflict in Iran and strain on the oil supplies has resulted in our paying higher cost for fuel. Locally, our economy continues to perform well, and our housing market is solid. We expect our enrollment to remain steady as long as the local economy stays strong."
+      },
+      {
+        "industry": "Finance & Insurance",
+        "quote": "Rising health-care costs, regulatory complexity and reimbursement pressure continue to drive a cautious purchasing environment within health insurers. Focus remains on cost management, supplier performance, operational efficiency and risk mitigation, resulting in increased scrutiny of supplier value, contract commitments and strategic investments."
+      },
+      {
+        "industry": "Health Care & Social Assistance",
+        "quote": "We received a few communications regarding tariffs that are being refunded. Fewer materials being back-ordered at this time."
+      },
+      {
+        "industry": "Management of Companies & Support Services",
+        "quote": "Concerns about market trends, reduced hospital sources of revenue and increasing debt management creating reluctance of our customers to expand."
+      },
+      {
+        "industry": "Other Services",
+        "quote": "Business is picking up and forecast to increase over the next six months."
+      },
+      {
+        "industry": "Professional, Scientific & Technical Services",
+        "quote": "The stacked Section 301 duties plus the newer forced-labor related tariffs are keeping landed costs elevated and forcing constant TCO recalculation. We are actively dual-sourcing and evaluating nearshoring options, but qualified capacity, lead times and quality consistency are limited for certain specialty materials and components. The results are higher inventory buffers, longer planning cycles, and margin pressure that we can only partially pass through. On the positive side, Florida ports (especially Port Everglades and the broader South Florida gateway) remain relatively fluid compared with the congestion spikes earlier in the year on the West Coast and in Europe."
+      },
+      {
+        "industry": "Retail Trade",
+        "quote": "The memory shortage is continually getting worse. For devices requiring (memory) cards, inventory is low and prices are high."
+      },
+      {
+        "industry": "Wholesale Trade",
+        "quote": "The electrical distribution industry volume demand and opportunities remain very strong. Commodities-based products of materials like copper, aluminum and polyvinyl chloride continue to have price increases and adjustments on a weekly basis. Geopolitical issues like tariffs continue to impact pricing as well. Supplier capacities are still strained due high market demands."
+      }
+    ]
+  },
+  "source": "ismworld.org",
+  "urls": {
+    "pmi": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/august/",
+    "services": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/august/"
+  },
+  "errors": []
+}

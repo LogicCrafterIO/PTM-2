@@ -3005,6 +3005,9 @@
           (g.llm_used ? "" : ` · <span class="neg">unranked (no LLM pass) — measured columns only</span>`) +
           `</p>` +
           (g.headline ? `<p style="margin:4px 0 8px">${esc(g.headline)}</p>` : "") +
+          (g.why_not_cold && g.why_not_cold.reason
+            ? `<p style="margin:4px 0 8px"><strong>Why not COLD (${esc(g.why_not_cold.direction || "?")}):</strong> ${esc(g.why_not_cold.reason)}</p>`
+            : "") +
           setupsPickRow(g) +
           (g.tactical ? `<p style="margin:8px 0 4px"><strong>Tactical trade idea:</strong> ${esc(g.tactical)}</p>` : "") +
           (rows.length

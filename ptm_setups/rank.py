@@ -263,6 +263,57 @@ def _fit_packets(packets: list[dict], limit: int = _PACKET_CHARS) -> tuple[str, 
     )
 
 
+def _macro_demand_line() -> str:
+    """The ISM demand snapshot, for the group's forward-looking why-not-COLD call.
+
+    Deterministic, from data/curated/ism.json — the same artifact the PMI tab
+    reads. Purchasing managers' new orders and the industries they name as
+    expanding or contracting are the survey evidence for where demand goes NEXT,
+    which is exactly what a not-COLD reason has to argue from. Absent file or
+    parse trouble yields an empty string: the pass then argues from its search
+    snippets alone.
+    """
+    from ptm.config import data_dir
+    from ptm.io import read_json
+
+    try:
+        ism = read_json(data_dir("curated", "ism.json"))
+    except Exception:
+        return ""
+    if not ism or not (ism.get("pmi") or ism.get("nmi")):
+        return ""
+    mfg, svc = ism.get("manufacturing") or {}, ism.get("services") or {}
+
+    def _no(report: dict) -> str:
+        val = ((report.get("components") or {}).get("new_orders") or {}).get("value")
+        return f" (new orders {val:.1f})" if isinstance(val, (int, float)) else ""
+
+    bits = [f"Manufacturing PMI {ism.get('pmi'):.1f}{_no(mfg)}" if ism.get("pmi") else "",
+            f"Services {ism.get('nmi'):.1f}{_no(svc)}" if ism.get("nmi") else ""]
+    growth = [i for i in ((mfg.get("industries") or {}).get("growth") or [])[:8] if isinstance(i, str)]
+    contraction = [i for i in ((mfg.get("industries") or {}).get("contraction") or [])[:8] if isinstance(i, str)]
+    if growth:
+        bits.append("expanding: " + ", ".join(growth))
+    if contraction:
+        bits.append("contracting: " + ", ".join(contraction))
+    month = ism.get("target_report_month") or ""
+    return f"Macro demand check (latest ISM report{', ' + month if month else ''}): " + " · ".join(bits) + "."
+
+
+def _why_not_cold(payload: dict) -> dict | None:
+    """Validate the pass's why-not-COLD field: direction + a forward reason."""
+    raw = payload.get("why_not_cold") or {}
+    if not isinstance(raw, dict):
+        return None
+    direction = _clip(raw.get("direction"), 12).lower()
+    if direction not in ("upside", "downside"):
+        return None
+    reason = clip_words(raw.get("reason"), 460)
+    if not reason:
+        return None
+    return {"direction": direction, "reason": reason}
+
+
 def _heat_prompt(theme_row: dict, packets: list[dict], web: dict | None, ref: date) -> tuple[str, str]:
     """The per-industry user message: theme context, the packets, the snippets."""
     theme = theme_row.get("theme") or ""
@@ -273,8 +324,16 @@ def _heat_prompt(theme_row: dict, packets: list[dict], web: dict | None, ref: da
         "{ticker, rank, side, label, conviction, ranked_on, guidance_valuation, catalyst, setup, risk}), "
         "best_long and best_short (each an object {ticker, thesis, catalyst, setup, risk, conviction} "
         "carrying that trade's OWN case, not a copy of its row above; ticker null with a reason in "
-        "thesis when the industry offers no credible one) and "
-        "tactical (one or two sentences on how to sequence these trades around the prints). "
+        "thesis when the industry offers no credible one), "
+        "tactical (one or two sentences on how to sequence these trades around the prints) and "
+        "why_not_cold (an object {direction, reason}: the qualitative reason this group is NOT COLD, "
+        "and it must be FORWARD-LOOKING — what happens next from here: the order flow and demand the "
+        "next prints will report, the trajectory guidance and revisions imply, what surveys and "
+        "backlogs point to. direction is exactly one of upside, downside and names which side that "
+        "reason favours; reason is one or two sentences grounded in the searched developments or the "
+        "ISM demand data, never a restatement of the 90-day revision table you were given — and when "
+        "the forward evidence genuinely points against the breadth, say so and let direction "
+        "disagree with it). "
         "side is exactly one of: long, short, avoid. conviction is exactly one of: high, medium, low. "
         "rank is 1..N, 1 = best risk/reward, no ties. label is a short tag like 'Strongest long' or "
         "'Lagger — wait for evidence'. guidance_valuation is at most 200 characters on what filed "
@@ -290,6 +349,13 @@ def _heat_prompt(theme_row: dict, packets: list[dict], web: dict | None, ref: da
         f"{theme_row.get('lean')} (breadth {theme_row.get('breadth', 0):+.2f}; share of covered "
         f"members whose FY1 consensus rose minus fell over 90 days)",
     ]
+    macro = _macro_demand_line()
+    if macro:
+        lines.append(macro)
+        lines.append(
+            "This is the survey evidence for where demand goes next — one basis for the forward-looking "
+            "why_not_cold judgement, never the only one; the searched developments carry the rest."
+        )
     if theme_row.get("thesis"):
         lines.append(f"Industry thesis on file: {_clip(theme_row.get('thesis'), 300)}")
     if theme_row.get("bellwether"):
@@ -475,6 +541,7 @@ def rank_group(theme_row: dict, quant_by_ticker: dict[str, dict], ref: date,
         "members_skipped": skipped,
         "headline": "",
         "tactical": "",
+        "why_not_cold": None,
         # the short leads the write-up wherever the industry is not rising: a
         # falling or flat group's useful output is which member gets cut, not
         # which one is least bad
@@ -550,6 +617,7 @@ def rank_group(theme_row: dict, quant_by_ticker: dict[str, dict], ref: date,
         log(f"setups rank {theme}: asked for {want}, answered by {used[0]}")
     out["headline"] = _clip(payload.get("headline"), 900)
     out["tactical"] = _clip(payload.get("tactical"), 500)
+    out["why_not_cold"] = _why_not_cold(payload)
     by_ticker = {p["ticker"]: p for p in packets}
     out["best_long"] = _best_pick(payload.get("best_long"), "long", by_ticker)
     out["best_short"] = _best_pick(payload.get("best_short"), "short", by_ticker)
@@ -884,6 +952,10 @@ def _group_md(group: dict, ref: date):
     if group.get("thesis"):
         lines.append(f"**Industry thesis on file**: {group['thesis']}")
     lines += ["", group.get("headline") or "*(no headline — the ranking pass did not run)*", ""]
+    wnc = group.get("why_not_cold") or {}
+    if wnc.get("reason"):
+        lines.append(f"**Why this group is not COLD ({wnc.get('direction', '?')}):** {wnc['reason']}")
+        lines.append("")
     lines += _best_pick_md(group)
     if rows:
         lines += ["## The full ranking", ""] + _rank_table(rows) + ["", "---", ""]

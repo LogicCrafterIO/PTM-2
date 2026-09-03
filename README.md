@@ -418,7 +418,15 @@ EPS actual against consensus with the surprise percentage and the four-quarter
 beat record, the name's own FY1 consensus change over 90 and 30 days with the
 analyst up/down counts, consensus FY1/FY2 EPS and growth, the last filed
 earnings exhibit and forward guidance language from EDGAR, and forward P/E, PEG
-and P/S against the industry median. Then one **cross-industry final** ranks
+and P/S against the industry median. Each pass also returns a **why-not-COLD**
+judgement — the qualitative reason the industry is not COLD, stated as upside or
+downside and why, and it must be forward-looking: the order flow and demand the
+coming prints will report, the trajectory guidance and revisions imply, what
+surveys and backlogs point to (the prompt carries the ISM demand snapshot —
+headlines, new orders, the industries expanding or contracting — and the pooled
+search includes one forward-looking demand query). When the forward evidence
+argues against the revision breadth, the field says so rather than echoing it.
+Then one **cross-industry final** ranks
 each industry's best long and best short against each other. An **isolated
 industry** (the wiki map's sub-3-member themes) gets the same one call with the
 same packet, told there are no peers: no median, no read-throughs, judgement

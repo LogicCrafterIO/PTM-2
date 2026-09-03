@@ -34,6 +34,10 @@ def _queries(theme: str, members: list[dict], ref: date) -> list[str]:
     out = [
         f"{group} industry earnings season {ref.year} guidance outlook",
         f"{group} companies estimate revisions next quarter demand",
+        # the forward-looking demand question: orders, backlogs, surveys — the
+        # raw material for the group's why-not-COLD judgement, which has to be
+        # about what happens next, not a restatement of the revision table
+        f"{group} industry new orders backlog demand outlook next quarter",
     ] if group else []
     for m in members:
         name = str(m.get("name") or "").strip()

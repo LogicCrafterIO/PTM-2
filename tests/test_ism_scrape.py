@@ -20,9 +20,38 @@ def test_urls_try_prior_month_first():
     kinds = [k for k, _ in urls]
     assert kinds.count("pmi") >= 2
     first_pmi = next(url for kind, url in urls if kind == "pmi")
-    assert first_pmi.endswith("/pmi/july/")
+    # a live run probes the month the calendar cannot yet vouch for; it falls
+    # back to the both-out calendar month when that page is not live
+    assert first_pmi.endswith("/pmi/august/")
+    assert [u for k, u in urls if k == "pmi"][1].endswith("/pmi/july/")
     jan = datetime(2026, 1, 10, tzinfo=timezone.utc)
     assert _month_slugs(jan)[0] == "december"
+
+
+def test_urls_respect_the_two_release_days():
+    """Manufacturing goes live on business day 1 of M+1, Services on business
+    day 3 — September 2026 is the live case: the 1st is a Tuesday, so August's
+    PMI page is out on the 1st and Services' only on the 3rd."""
+    sep1 = datetime(2026, 9, 1, tzinfo=timezone.utc)
+    pmi_first = next(u for k, u in _urls(sep1, allow_probe=True) if k == "pmi")
+    svc_first = next(u for k, u in _urls(sep1, allow_probe=True) if k == "services")
+    assert pmi_first.endswith("/pmi/august/")
+    assert svc_first.endswith("/services/july/")  # business day 1 < 3
+    sep3 = datetime(2026, 9, 3, tzinfo=timezone.utc)
+    svc3 = next(u for k, u in _urls(sep3, allow_probe=True) if k == "services")
+    assert svc3.endswith("/services/august/")
+
+
+def test_urls_never_probe_newer_month_backdated():
+    from ptm.asof import real_today, set_as_of
+
+    set_as_of("2026-09-02")  # strictly before real_today, so is_backdated() is True
+    try:
+        urls = _urls()
+        assert next(u for k, u in urls if k == "pmi").endswith("/pmi/july/")
+        assert next(u for k, u in urls if k == "services").endswith("/services/july/")
+    finally:
+        set_as_of(None)
 
 
 def test_fetch_login_wall_raises(monkeypatch):

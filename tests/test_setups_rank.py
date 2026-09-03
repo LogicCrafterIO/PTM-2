@@ -922,10 +922,11 @@ def test_search_pools_the_budget_per_industry_not_per_name(monkeypatch):
     monkeypatch.setattr("ptm.deepsearch.web.web_search", fake_search)
     members = [{"ticker": t, "name": f"{t} Inc."} for t in ("A", "B", "C")]
     out = search.group_snippets("aerospace engineering", members, REF)
-    assert len(calls) == 5  # 2 industry + 3 members
+    assert len(calls) == 6  # 3 industry-level (incl. the forward demand question) + 3 members
     assert "aerospace engineering industry earnings season 2026" in calls[0]
-    assert "A Inc. A guidance outlook" in calls[2]
-    assert out["queries"] == 5 and len(out["searches"]) == 5
+    assert "aerospace engineering industry new orders backlog demand outlook" in calls[2]
+    assert "A Inc. A guidance outlook" in calls[3]
+    assert out["queries"] == 6 and len(out["searches"]) == 6
 
 
 def test_search_is_capped_and_degrades_without_a_key(monkeypatch):
@@ -956,7 +957,7 @@ def test_search_survives_a_dead_endpoint(monkeypatch):
 
     monkeypatch.setattr("ptm.deepsearch.web.web_search", flaky)
     out = search.group_snippets("theme", [{"ticker": "A"}], REF)
-    assert out and out["queries"] == 2  # one industry query died, the rest ran
+    assert out and out["queries"] == 3  # one industry query died, the rest ran
 
 
 # ------------------------------------------------------------------- the sweep
@@ -991,3 +992,67 @@ def test_the_prompt_marks_an_isolated_group(three_names):
     full = [member_packet(m["ticker"], m, quant[m["ticker"]], REF) for m in theme_row["members"]]
     _, user_full = _heat_prompt(theme_row, full, None, REF)
     assert "ISOLATED GROUP" not in user_full
+
+
+def test_the_prompt_demands_a_forward_looking_why_not_cold(three_names, monkeypatch, tmp_path):
+    """A group that is not COLD owes the reader the qualitative reason — upside
+    or downside, argued from what happens next (orders, surveys, guidance
+    trajectory), never a restatement of the revision table it was given."""
+    from ptm_simple import simple_dir
+    from ptm_setups.inputs import member_packet
+    from ptm_setups.rank import _heat_prompt, _why_not_cold
+
+    monkeypatch.setattr("ptm_setups.search.group_snippets", lambda *a, **k: None)
+    simple_dir().mkdir(parents=True, exist_ok=True)
+    ism = simple_dir().parent / "curated" / "ism.json"
+    ism.parent.mkdir(parents=True, exist_ok=True)
+    ism.write_text(json.dumps({
+        "pmi": 54.6, "nmi": 55.4, "target_report_month": "August 2026",
+        "manufacturing": {"components": {"new_orders": {"value": 53.7}},
+                          "industries": {"growth": ["Primary Metals"], "contraction": ["Wood Products"]}},
+        "services": {"components": {"new_orders": {"value": 60.9}}},
+    }), encoding="utf-8")
+    theme_row, quant = three_names
+    packets = [member_packet(t, m, quant[t], REF) for t, m in
+               zip(("MOGA", "LDOS", "WWD"), theme_row["members"])]
+    _, user = _heat_prompt(theme_row, packets, None, REF)
+    assert "why_not_cold" in user and "FORWARD-LOOKING" in user
+    assert "upside, downside" in user and "restatement of the 90-day revision table" in user
+    assert "Macro demand check" in user and "Manufacturing PMI 54.6" in user
+    assert "new orders 53.7" in user and "expanding: Primary Metals" in user
+
+    # the field survives only a usable answer: a direction outside the two
+    # allowed words, or an empty reason, is dropped rather than stored
+    good = {"direction": "downside", "reason": "Orders point lower into the prints."}
+    assert _why_not_cold({"why_not_cold": good}) == good
+    assert _why_not_cold({"why_not_cold": {"direction": "sideways", "reason": "x"}}) is None
+    assert _why_not_cold({"why_not_cold": {"direction": "upside", "reason": "  "}}) is None
+    assert _why_not_cold({"why_not_cold": "upside"}) is None
+
+
+def test_the_macro_line_stays_silent_without_ism(three_names, monkeypatch):
+    """No ISM artifact -> no macro line, and the pass says to argue from the
+    snippets alone rather than invent a demand picture."""
+    from ptm_setups.inputs import member_packet
+    from ptm_setups.rank import _heat_prompt, _macro_demand_line
+
+    monkeypatch.setattr("ptm_setups.search.group_snippets", lambda *a, **k: None)
+    assert _macro_demand_line() == ""
+    theme_row, quant = three_names
+    packets = [member_packet(t, m, quant[t], REF) for t, m in
+               zip(("MOGA", "LDOS", "WWD"), theme_row["members"])]
+    _, user = _heat_prompt(theme_row, packets, None, REF)
+    assert "Macro demand check" not in user
+
+
+def test_group_search_asks_the_forward_demand_question():
+    """One of the industry-level queries must be the forward-looking demand
+    question — orders, backlogs, surveys — the raw material for the
+    why-not-COLD judgement."""
+    from ptm_setups.search import _queries
+
+    qs = _queries("software industry", [{"name": "Acme", "ticker": "ACME"}],
+                  __import__("datetime").date(2026, 9, 2))
+    assert sum("new orders" in q for q in qs) == 1
+    assert qs[0].startswith("software industry industry earnings season")
+    assert qs[-1] == "Acme ACME guidance outlook latest quarter earnings"

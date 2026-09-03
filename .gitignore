@@ -17,9 +17,11 @@ data/raw/deepsearch/*
 !data/raw/deepsearch/runs
 data/curated/
 data/llm_logs/
-# Idea reports: only the simple process's reports are part of the deliverable.
+# Idea reports: the simple process's and the Setups tab's reports are part of
+# the deliverable.
 ideas/*
 !ideas/simple
+!ideas/setups
 *.pyc
 .pytest_cache/
 *.mp4
