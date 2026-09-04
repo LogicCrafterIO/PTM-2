@@ -1,0 +1,77 @@
+{
+  "ticker": "AVTR",
+  "as_of": "2026-09-03T12:41:12.568705+00:00",
+  "earnings_date": "2026-10-27",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.81252,
+    "eps_d30": 0.78956,
+    "eps_d90": 0.7901,
+    "change_30d_pct": 2.91,
+    "change_90d_pct": 2.84,
+    "analysts_up_30d": 15,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.22,
+        "estimate": 0.22513,
+        "surprise_pct": -2.28
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.22,
+        "estimate": 0.21667,
+        "surprise_pct": 1.54
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.17,
+        "estimate": 0.15715,
+        "surprise_pct": 8.18
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.21,
+        "estimate": 0.18903,
+        "surprise_pct": 11.09
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 4.63
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": 15.78
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": -0.13
+      },
+      {
+        "report_date": "2026-02-11",
+        "move_pct": -13.62
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": -23.21
+      }
+    ],
+    "avg_abs_move_pct": 13.19,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.8% over 90 days and +2.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 15 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +15.8%, -0.1%, -13.6%, -23.2% (average absolute move 13.2%, 3 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +4.6%."
+  ]
+}

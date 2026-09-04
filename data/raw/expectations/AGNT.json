@@ -1,0 +1,55 @@
+{
+  "ticker": "AGNT",
+  "as_of": "2026-09-03T12:34:37.115325+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 0.15,
+    "eps_d30": 0.27,
+    "eps_d90": 0.26,
+    "change_30d_pct": -44.44,
+    "change_90d_pct": -42.31,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.0694,
+        "estimate": 0.08,
+        "surprise_pct": -13.25
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.0143,
+        "estimate": 0.03,
+        "surprise_pct": -147.67
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.0015,
+        "estimate": 0.01,
+        "surprise_pct": -85.0
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.1097,
+        "estimate": 0.08,
+        "surprise_pct": 37.13
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -52.2
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -42.3% over 90 days and -44.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 0 down.",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -52.2%."
+  ]
+}

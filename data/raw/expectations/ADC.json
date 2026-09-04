@@ -1,0 +1,55 @@
+{
+  "ticker": "ADC",
+  "as_of": "2026-09-03T12:34:41.960364+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 1.91571,
+    "eps_d30": 1.9214,
+    "eps_d90": 1.92643,
+    "change_30d_pct": -0.3,
+    "change_90d_pct": -0.56,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.4679,
+        "estimate": 0.45666,
+        "surprise_pct": 2.46
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.4673,
+        "estimate": 0.46797,
+        "surprise_pct": -0.14
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.4932,
+        "estimate": 0.47259,
+        "surprise_pct": 4.36
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.466,
+        "estimate": 0.47328,
+        "surprise_pct": -1.54
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 1.29
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.6% over 90 days and -0.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 2 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +1.3%."
+  ]
+}

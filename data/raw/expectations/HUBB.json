@@ -1,0 +1,77 @@
+{
+  "ticker": "HUBB",
+  "as_of": "2026-09-03T12:41:53.142830+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 20.46293,
+    "eps_d30": 20.45097,
+    "eps_d90": 19.78804,
+    "change_30d_pct": 0.06,
+    "change_90d_pct": 3.41,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 5.17,
+        "estimate": 4.97557,
+        "surprise_pct": 3.91
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 4.73,
+        "estimate": 4.72147,
+        "surprise_pct": 0.18
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 3.93,
+        "estimate": 3.86492,
+        "surprise_pct": 1.68
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 5.52,
+        "estimate": 5.38886,
+        "surprise_pct": 2.43
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 2.05
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": -4.69
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": 0.05
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": -0.0
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": 3.78
+      }
+    ],
+    "avg_abs_move_pct": 2.13,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.4% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -4.7%, +0.1%, -0.0%, +3.8% (average absolute move 2.1%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +2.0%."
+  ]
+}

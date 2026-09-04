@@ -1,0 +1,55 @@
+{
+  "ticker": "AEE",
+  "as_of": "2026-09-03T12:34:33.716854+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 5.39756,
+    "eps_d30": 5.38117,
+    "eps_d90": 5.37083,
+    "change_30d_pct": 0.3,
+    "change_90d_pct": 0.5,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.35,
+        "estimate": 2.11812,
+        "surprise_pct": 10.95
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.92,
+        "estimate": 0.69358,
+        "surprise_pct": 32.65
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.28,
+        "estimate": 1.17333,
+        "surprise_pct": 9.09
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.13,
+        "estimate": 1.08464,
+        "surprise_pct": 4.18
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 14.22
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.5% over 90 days and +0.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +14.2%."
+  ]
+}

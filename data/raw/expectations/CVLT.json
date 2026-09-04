@@ -1,0 +1,77 @@
+{
+  "ticker": "CVLT",
+  "as_of": "2026-09-03T14:46:07.809415+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.45222,
+    "eps_d30": 5.21556,
+    "eps_d90": 5.24412,
+    "change_30d_pct": 4.54,
+    "change_90d_pct": 3.97,
+    "analysts_up_30d": 17,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.91,
+        "estimate": 0.94091,
+        "surprise_pct": -3.29
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.17,
+        "estimate": 0.98154,
+        "surprise_pct": 19.2
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.28,
+        "estimate": 1.0875,
+        "surprise_pct": 17.7
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.42,
+        "estimate": 1.16235,
+        "surprise_pct": 22.17
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 13.95
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": 0.24
+      },
+      {
+        "report_date": "2026-05-11",
+        "move_pct": -1.04
+      },
+      {
+        "report_date": "2026-01-28",
+        "move_pct": 0.81
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": -3.87
+      }
+    ],
+    "avg_abs_move_pct": 1.49,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +4.0% over 90 days and +4.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 17 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.2%, -1.0%, +0.8%, -3.9% (average absolute move 1.5%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +13.9%."
+  ]
+}

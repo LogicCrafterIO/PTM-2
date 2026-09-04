@@ -1,0 +1,77 @@
+{
+  "ticker": "LVS",
+  "as_of": "2026-09-03T12:41:59.058975+00:00",
+  "earnings_date": "2026-10-23",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.09283,
+    "eps_d30": 3.08887,
+    "eps_d90": 3.34838,
+    "change_30d_pct": 0.13,
+    "change_90d_pct": -7.63,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 14
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.78,
+        "estimate": 0.62216,
+        "surprise_pct": 25.37
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.85,
+        "estimate": 0.76903,
+        "surprise_pct": 10.53
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.91,
+        "estimate": 0.75799,
+        "surprise_pct": 20.05
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.59,
+        "estimate": 0.75675,
+        "surprise_pct": -22.04
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 8.48
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-24",
+        "move_pct": 0.11
+      },
+      {
+        "report_date": "2026-04-24",
+        "move_pct": 1.66
+      },
+      {
+        "report_date": "2026-02-06",
+        "move_pct": 1.51
+      },
+      {
+        "report_date": "2025-10-24",
+        "move_pct": 1.25
+      }
+    ],
+    "avg_abs_move_pct": 1.13,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -7.6% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 14 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.1%, +1.7%, +1.5%, +1.2% (average absolute move 1.1%, 0 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +8.5%."
+  ]
+}

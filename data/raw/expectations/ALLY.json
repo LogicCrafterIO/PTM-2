@@ -1,0 +1,77 @@
+{
+  "ticker": "ALLY",
+  "as_of": "2026-09-03T12:41:05.689615+00:00",
+  "earnings_date": "2026-10-19",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.24672,
+    "eps_d30": 5.24788,
+    "eps_d90": 5.31992,
+    "change_30d_pct": -0.02,
+    "change_90d_pct": -1.38,
+    "analysts_up_30d": 5,
+    "analysts_down_30d": 10
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.15,
+        "estimate": 1.00798,
+        "surprise_pct": 14.09
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.09,
+        "estimate": 1.02313,
+        "surprise_pct": 6.54
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.11,
+        "estimate": 0.94133,
+        "surprise_pct": 17.92
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.21,
+        "estimate": 1.22247,
+        "surprise_pct": -1.02
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 9.38
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-23",
+        "move_pct": -1.57
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": 0.42
+      },
+      {
+        "report_date": "2026-02-25",
+        "move_pct": 2.42
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": -1.93
+      }
+    ],
+    "avg_abs_move_pct": 1.58,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -1.4% over 90 days and -0.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 5 up, 10 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.6%, +0.4%, +2.4%, -1.9% (average absolute move 1.6%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +9.4%."
+  ]
+}

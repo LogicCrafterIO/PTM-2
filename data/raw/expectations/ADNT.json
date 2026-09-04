@@ -1,0 +1,55 @@
+{
+  "ticker": "ADNT",
+  "as_of": "2026-09-03T12:32:52.389409+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 1.95084,
+    "eps_d30": 2.15077,
+    "eps_d90": 2.13167,
+    "change_30d_pct": -9.3,
+    "change_90d_pct": -8.48,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 6
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.52,
+        "estimate": 0.56107,
+        "surprise_pct": -7.32
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.35,
+        "estimate": 0.19326,
+        "surprise_pct": 81.1
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.52,
+        "estimate": 0.4407,
+        "surprise_pct": 17.99
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.48,
+        "estimate": 0.57093,
+        "surprise_pct": -15.93
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 18.96
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -8.5% over 90 days and -9.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 6 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +19.0%."
+  ]
+}

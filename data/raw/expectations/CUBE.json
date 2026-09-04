@@ -1,0 +1,55 @@
+{
+  "ticker": "CUBE",
+  "as_of": "2026-09-03T12:34:43.376135+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 1.49199,
+    "eps_d30": 1.49,
+    "eps_d90": 1.4405,
+    "change_30d_pct": 0.13,
+    "change_90d_pct": 3.57,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.36,
+        "estimate": 0.379,
+        "surprise_pct": -5.01
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.34,
+        "estimate": 0.3715,
+        "surprise_pct": -8.48
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.36,
+        "estimate": 0.3443,
+        "surprise_pct": 4.56
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.39,
+        "estimate": 0.36386,
+        "surprise_pct": 7.18
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -0.44
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.6% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 1 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -0.4%."
+  ]
+}

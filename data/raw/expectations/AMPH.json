@@ -1,0 +1,55 @@
+{
+  "ticker": "AMPH",
+  "as_of": "2026-09-03T12:34:29.049057+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 2.97155,
+    "eps_d30": 2.55681,
+    "eps_d90": 2.68037,
+    "change_30d_pct": 16.22,
+    "change_90d_pct": 10.86,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.93,
+        "estimate": 0.82534,
+        "surprise_pct": 12.68
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.73,
+        "estimate": 0.91822,
+        "surprise_pct": -20.5
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.42,
+        "estimate": 0.70542,
+        "surprise_pct": -40.46
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.91,
+        "estimate": 0.61378,
+        "surprise_pct": 48.26
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -0.01
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +10.9% over 90 days and +16.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 2 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -0.0%."
+  ]
+}

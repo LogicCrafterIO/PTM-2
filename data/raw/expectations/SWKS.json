@@ -1,0 +1,77 @@
+{
+  "ticker": "SWKS",
+  "as_of": "2026-09-03T12:42:24.693059+00:00",
+  "earnings_date": "2026-10-25",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.04049,
+    "eps_d30": 5.004,
+    "eps_d90": 5.01067,
+    "change_30d_pct": 0.73,
+    "change_90d_pct": 0.6,
+    "analysts_up_30d": 10,
+    "analysts_down_30d": 9
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.76,
+        "estimate": 1.53277,
+        "surprise_pct": 14.82
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.54,
+        "estimate": 1.39895,
+        "surprise_pct": 10.08
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.15,
+        "estimate": 1.04446,
+        "surprise_pct": 10.1
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.08,
+        "estimate": 1.03063,
+        "surprise_pct": 4.79
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 9.95
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-28",
+        "move_pct": 1.95
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": 5.39
+      },
+      {
+        "report_date": "2026-02-05",
+        "move_pct": 3.25
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": -1.5
+      }
+    ],
+    "avg_abs_move_pct": 3.02,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.6% over 90 days and +0.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 10 up, 9 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.9%, +5.4%, +3.2%, -1.5% (average absolute move 3.0%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +9.9%."
+  ]
+}

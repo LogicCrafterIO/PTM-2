@@ -1,0 +1,77 @@
+{
+  "ticker": "CVS",
+  "as_of": "2026-09-03T12:41:31.423104+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.94776,
+    "eps_d30": 7.45278,
+    "eps_d90": 7.42933,
+    "change_30d_pct": 6.64,
+    "change_90d_pct": 6.98,
+    "analysts_up_30d": 13,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.6,
+        "estimate": 1.35668,
+        "surprise_pct": 17.93
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.09,
+        "estimate": 0.99657,
+        "surprise_pct": 9.38
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.57,
+        "estimate": 2.20647,
+        "surprise_pct": 16.48
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.58,
+        "estimate": 1.85133,
+        "surprise_pct": 39.36
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 20.79
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": -5.08
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": 7.65
+      },
+      {
+        "report_date": "2026-02-10",
+        "move_pct": -0.09
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": -1.95
+      }
+    ],
+    "avg_abs_move_pct": 3.69,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +7.0% over 90 days and +6.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 13 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -5.1%, +7.7%, -0.1%, -1.9% (average absolute move 3.7%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +20.8%."
+  ]
+}

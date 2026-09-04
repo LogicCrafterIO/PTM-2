@@ -1,0 +1,55 @@
+{
+  "ticker": "AEP",
+  "as_of": "2026-09-03T12:33:25.976517+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 6.37624,
+    "eps_d30": 6.34804,
+    "eps_d90": 6.35404,
+    "change_30d_pct": 0.44,
+    "change_90d_pct": 0.35,
+    "analysts_up_30d": 8,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.8,
+        "estimate": 1.80502,
+        "surprise_pct": -0.28
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.19,
+        "estimate": 1.14868,
+        "surprise_pct": 3.6
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.64,
+        "estimate": 1.56779,
+        "surprise_pct": 4.61
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.36,
+        "estimate": 1.4815,
+        "surprise_pct": -8.2
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -0.07
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.3% over 90 days and +0.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 8 up, 3 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -0.1%."
+  ]
+}

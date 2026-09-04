@@ -1,0 +1,55 @@
+{
+  "ticker": "ACLS",
+  "as_of": "2026-09-03T12:34:44.284521+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 4.106,
+    "eps_d30": 3.834,
+    "eps_d90": 3.834,
+    "change_30d_pct": 7.09,
+    "change_90d_pct": 7.09,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.21,
+        "estimate": 1.00286,
+        "surprise_pct": 20.65
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.49,
+        "estimate": 1.118,
+        "surprise_pct": 33.27
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.72,
+        "estimate": 0.71,
+        "surprise_pct": 1.41
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.06,
+        "estimate": 0.894,
+        "surprise_pct": 18.57
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 18.48
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +7.1% over 90 days and +7.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +18.5%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "FDS",
+  "as_of": "2026-09-03T12:41:42.882683+00:00",
+  "earnings_date": "2026-09-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 17.8291,
+    "eps_d30": 17.82577,
+    "eps_d90": 17.70641,
+    "change_30d_pct": 0.02,
+    "change_90d_pct": 0.69,
+    "analysts_up_30d": 16,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 4.05,
+        "estimate": 4.12808,
+        "surprise_pct": -1.89
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 4.51,
+        "estimate": 4.35847,
+        "surprise_pct": 3.48
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 4.46,
+        "estimate": 4.37709,
+        "surprise_pct": 1.89
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 4.53,
+        "estimate": 4.4517,
+        "surprise_pct": 1.76
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 1.31
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-01",
+        "move_pct": 6.72
+      },
+      {
+        "report_date": "2026-04-02",
+        "move_pct": 1.25
+      },
+      {
+        "report_date": "2026-01-05",
+        "move_pct": 0.51
+      },
+      {
+        "report_date": "2025-10-22",
+        "move_pct": -1.42
+      }
+    ],
+    "avg_abs_move_pct": 2.48,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.7% over 90 days and +0.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 16 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: +6.7%, +1.2%, +0.5%, -1.4% (average absolute move 2.5%, 1 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +1.3%."
+  ]
+}

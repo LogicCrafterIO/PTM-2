@@ -613,12 +613,18 @@ def test_the_prompt_makes_the_short_the_harder_call(three_names, monkeypatch):
 def test_pick_prose_is_not_cut_mid_word(three_names, monkeypatch):
     from ptm_setups.inputs import clip_words
 
-    long_text = "word " * 400
+    from ptm_setups.rank import _CASE_CHARS, _PROSE_CHARS
+
+    long_text = "word " * (_PROSE_CHARS // 2)  # comfortably over the guard
     theme_row, quant = three_names
-    payload = _payload_with_picks(best_long={"ticker": "MOGA", "thesis": long_text, "conviction": "high"})
+    payload = _payload_with_picks(best_long={"ticker": "MOGA", "thesis": long_text,
+                                             "risk": long_text, "conviction": "high"})
     _, out = _ranked(theme_row, quant, monkeypatch, payload)
     thesis = out["best_long"]["thesis"]
     assert thesis.endswith("…") and not thesis.endswith("wor…")
+    assert len(thesis) <= _PROSE_CHARS + 1
+    assert out["best_long"]["risk"].endswith("…")
+    assert len(out["best_long"]["risk"]) <= _CASE_CHARS + 1
     assert clip_words("alpha beta gamma", 100) == "alpha beta gamma"  # short text untouched
     assert clip_words("alpha beta gamma", 12).endswith("…")
 
@@ -1028,6 +1034,47 @@ def test_the_prompt_demands_a_forward_looking_why_not_cold(three_names, monkeypa
     assert _why_not_cold({"why_not_cold": {"direction": "sideways", "reason": "x"}}) is None
     assert _why_not_cold({"why_not_cold": {"direction": "upside", "reason": "  "}}) is None
     assert _why_not_cold({"why_not_cold": "upside"}) is None
+
+    # the prompt asks for the four steps that make this the pass's fullest
+    # judgement rather than a one-line label
+    for demand in ("four to seven", "dated forward evidence", "NEXT prints should report",
+                   "which one diverges", "flip this group to COLD"):
+        assert demand in user, demand
+
+
+def test_the_why_not_cold_judgement_is_not_clipped_to_a_cell_width(three_names, monkeypatch):
+    """It renders as its own paragraph, so it gets a paragraph's room.
+
+    At the old 460 it was cut mid-argument — a live aerospace group lost its
+    divergence read ("...WWD's flat revisions look like idiosyncratic lag, not
+    group demand...") to the ellipsis.
+    """
+    from ptm_setups.rank import _PROSE_CHARS, _why_not_cold
+
+    measured = (
+        "Global aircraft backlog just topped 17,000 units for the first time and OEMs are raising "
+        "2026 outlooks, so the next prints should report continued order-flow strength and further "
+        "guidance raises — Moog's raised FY guide and LDOS's 8-up/0-down revision cadence should "
+        "extend, while WWD's flat revisions look like idiosyncratic lag, not group demand. This "
+        "would flip to COLD on a build-rate cut at either OEM inside the next two prints, or a "
+        "narrowing of the aftermarket spread that the last two exhibits both called out as the "
+        "margin driver."
+    )
+    assert len(measured) > 460  # the old guard would have taken the tail off
+    kept = _why_not_cold({"why_not_cold": {"direction": "upside", "reason": measured}})
+    assert kept["reason"] == measured and "…" not in kept["reason"]
+
+    # it is emitted as ONE markdown line behind a bold lead-in, so an embedded
+    # blank line would orphan the rest of the argument as unlabelled body text
+    split = _why_not_cold({"why_not_cold": {"direction": "upside",
+                                            "reason": "Backlog is rising."
+                                                      + chr(10) * 2 + "So prints beat."}})
+    assert split["reason"] == "Backlog is rising. So prints beat."
+
+    # still guarded against a runaway answer, still on a word boundary
+    runaway = _why_not_cold({"why_not_cold": {"direction": "downside", "reason": "word " * 2000}})
+    assert runaway["reason"].endswith("…") and not runaway["reason"].endswith("wor…")
+    assert len(runaway["reason"]) <= _PROSE_CHARS + 1
 
 
 def test_the_macro_line_stays_silent_without_ism(three_names, monkeypatch):

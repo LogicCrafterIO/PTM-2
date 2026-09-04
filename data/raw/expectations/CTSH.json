@@ -1,0 +1,77 @@
+{
+  "ticker": "CTSH",
+  "as_of": "2026-09-03T12:41:30.480021+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.73656,
+    "eps_d30": 5.72448,
+    "eps_d90": 5.68742,
+    "change_30d_pct": 0.21,
+    "change_90d_pct": 0.86,
+    "analysts_up_30d": 21,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.39,
+        "estimate": 1.30241,
+        "surprise_pct": 6.73
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.35,
+        "estimate": 1.32327,
+        "surprise_pct": 2.02
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.4,
+        "estimate": 1.33362,
+        "surprise_pct": 4.98
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.37,
+        "estimate": 1.37912,
+        "surprise_pct": -0.66
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 3.27
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": 11.25
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": -0.76
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": -7.16
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": 5.71
+      }
+    ],
+    "avg_abs_move_pct": 6.22,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.9% over 90 days and +0.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 21 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: +11.2%, -0.8%, -7.2%, +5.7% (average absolute move 6.2%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +3.3%."
+  ]
+}

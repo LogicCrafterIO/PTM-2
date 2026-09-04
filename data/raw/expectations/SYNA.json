@@ -1,0 +1,77 @@
+{
+  "ticker": "SYNA",
+  "as_of": "2026-09-03T12:42:25.156129+00:00",
+  "earnings_date": "2026-11-06",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.17718,
+    "eps_d30": 5.27312,
+    "eps_d90": 5.27312,
+    "change_30d_pct": -1.82,
+    "change_90d_pct": -1.82,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.09,
+        "estimate": 1.06249,
+        "surprise_pct": 2.59
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.21,
+        "estimate": 1.15059,
+        "surprise_pct": 5.16
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.09,
+        "estimate": 1.00771,
+        "surprise_pct": 8.17
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.23,
+        "estimate": 1.20527,
+        "surprise_pct": 2.05
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 4.49
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-10",
+        "move_pct": -1.39
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": -1.35
+      },
+      {
+        "report_date": "2026-02-05",
+        "move_pct": -0.44
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -2.22
+      }
+    ],
+    "avg_abs_move_pct": 1.35,
+    "down_prints": 4,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -1.8% over 90 days and -1.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.4%, -1.4%, -0.4%, -2.2% (average absolute move 1.4%, 4 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +4.5%."
+  ]
+}

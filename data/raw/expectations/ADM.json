@@ -1,0 +1,55 @@
+{
+  "ticker": "ADM",
+  "as_of": "2026-09-03T12:33:41.710583+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 5.41607,
+    "eps_d30": 4.66033,
+    "eps_d90": 4.69254,
+    "change_30d_pct": 16.22,
+    "change_90d_pct": 15.42,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.92,
+        "estimate": 0.85258,
+        "surprise_pct": 7.91
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.87,
+        "estimate": 0.79691,
+        "surprise_pct": 9.17
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.71,
+        "estimate": 0.65864,
+        "surprise_pct": 7.8
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.84,
+        "estimate": 1.43722,
+        "surprise_pct": 28.02
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 13.22
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +15.4% over 90 days and +16.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +13.2%."
+  ]
+}

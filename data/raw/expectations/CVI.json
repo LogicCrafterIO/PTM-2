@@ -1,0 +1,55 @@
+{
+  "ticker": "CVI",
+  "as_of": "2026-09-03T12:34:22.475690+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 0.11654,
+    "eps_d30": -0.17188,
+    "eps_d90": 0.65673,
+    "change_30d_pct": -167.8,
+    "change_90d_pct": -82.25,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.4,
+        "estimate": 0.22903,
+        "surprise_pct": 74.65
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.8,
+        "estimate": -0.8304,
+        "surprise_pct": 3.66
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -1.24,
+        "estimate": -0.62325,
+        "surprise_pct": -98.96
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.34,
+        "estimate": 0.1075,
+        "surprise_pct": 216.28
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 48.91
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -82.2% over 90 days and -167.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +48.9%."
+  ]
+}

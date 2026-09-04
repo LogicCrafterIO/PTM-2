@@ -1,0 +1,55 @@
+{
+  "ticker": "AIN",
+  "as_of": "2026-09-03T12:33:55.100479+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 2.55239,
+    "eps_d30": 2.74176,
+    "eps_d90": 2.59333,
+    "change_30d_pct": -6.91,
+    "change_90d_pct": -1.58,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.71,
+        "estimate": 0.72914,
+        "surprise_pct": -2.63
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.65,
+        "estimate": 0.70184,
+        "surprise_pct": -7.39
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.6,
+        "estimate": 0.52667,
+        "surprise_pct": 13.92
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.82,
+        "estimate": 0.73507,
+        "surprise_pct": 11.55
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 3.86
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -1.6% over 90 days and -6.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 1 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +3.9%."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "APTV",
+  "as_of": "2026-09-03T12:32:51.935560+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 5.72425,
+    "eps_d30": 5.919,
+    "eps_d90": 6.20402,
+    "change_30d_pct": -3.29,
+    "change_90d_pct": -7.73,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 14
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.17,
+        "estimate": 1.82694,
+        "surprise_pct": 18.78
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.86,
+        "estimate": 1.85607,
+        "surprise_pct": 0.21
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.71,
+        "estimate": 1.5846,
+        "surprise_pct": 7.91
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.63,
+        "estimate": 1.42886,
+        "surprise_pct": 14.08
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 10.25
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -7.7% over 90 days and -3.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 14 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +10.2%."
+  ]
+}

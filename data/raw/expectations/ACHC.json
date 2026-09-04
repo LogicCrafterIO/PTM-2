@@ -1,0 +1,55 @@
+{
+  "ticker": "ACHC",
+  "as_of": "2026-09-03T12:33:45.778529+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 1.55206,
+    "eps_d30": 1.52198,
+    "eps_d90": 1.50106,
+    "change_30d_pct": 1.98,
+    "change_90d_pct": 3.4,
+    "analysts_up_30d": 9,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.72,
+        "estimate": 0.65965,
+        "surprise_pct": 9.15
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.07,
+        "estimate": 0.0101,
+        "surprise_pct": 593.07
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.37,
+        "estimate": 0.2649,
+        "surprise_pct": 39.68
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.38,
+        "estimate": 0.34626,
+        "surprise_pct": 9.74
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 162.91
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.4% over 90 days and +2.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 9 up, 1 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +162.9%."
+  ]
+}

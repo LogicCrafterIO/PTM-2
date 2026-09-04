@@ -1,0 +1,55 @@
+{
+  "ticker": "COHR",
+  "as_of": "2026-09-03T12:33:26.878133+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 9.41634,
+    "eps_d30": 8.29253,
+    "eps_d90": 8.08847,
+    "change_30d_pct": 13.55,
+    "change_90d_pct": 16.42,
+    "analysts_up_30d": 5,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.16,
+        "estimate": 1.04249,
+        "surprise_pct": 11.27
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.29,
+        "estimate": 1.20766,
+        "surprise_pct": 6.82
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.41,
+        "estimate": 1.39433,
+        "surprise_pct": 1.12
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.74,
+        "estimate": 1.61709,
+        "surprise_pct": 7.6
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 6.7
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +16.4% over 90 days and +13.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 5 up, 1 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +6.7%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "ABR",
+  "as_of": "2026-09-03T12:40:58.338112+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.2725,
+    "eps_d30": 0.276,
+    "eps_d90": 0.65,
+    "change_30d_pct": -1.27,
+    "change_90d_pct": -58.08,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.35,
+        "estimate": 0.235,
+        "surprise_pct": 48.94
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.19,
+        "estimate": 0.156,
+        "surprise_pct": 21.79
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.07,
+        "estimate": 0.114,
+        "surprise_pct": -38.6
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.1,
+        "estimate": 0.028,
+        "surprise_pct": 257.14
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 72.32
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": 4.59
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": -11.75
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": 9.23
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": -12.64
+      }
+    ],
+    "avg_abs_move_pct": 9.55,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -58.1% over 90 days and -1.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +4.6%, -11.8%, +9.2%, -12.6% (average absolute move 9.6%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +72.3%."
+  ]
+}

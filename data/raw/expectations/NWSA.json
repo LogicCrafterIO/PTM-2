@@ -1,0 +1,77 @@
+{
+  "ticker": "NWSA",
+  "as_of": "2026-09-03T12:42:06.943821+00:00",
+  "earnings_date": "2026-11-07",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.31961,
+    "eps_d30": 1.29118,
+    "eps_d90": 1.27796,
+    "change_30d_pct": 2.2,
+    "change_90d_pct": 3.26,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.22,
+        "estimate": 0.18842,
+        "surprise_pct": 16.76
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.4,
+        "estimate": 0.3741,
+        "surprise_pct": 6.92
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.21,
+        "estimate": 0.19913,
+        "surprise_pct": 5.46
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.35,
+        "estimate": 0.23142,
+        "surprise_pct": 51.24
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 20.1
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-07",
+        "move_pct": -3.88
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": -0.07
+      },
+      {
+        "report_date": "2026-02-06",
+        "move_pct": -7.06
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": 6.54
+      }
+    ],
+    "avg_abs_move_pct": 4.39,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.3% over 90 days and +2.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -3.9%, -0.1%, -7.1%, +6.5% (average absolute move 4.4%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +20.1%."
+  ]
+}

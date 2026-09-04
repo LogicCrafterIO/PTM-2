@@ -1,0 +1,77 @@
+{
+  "ticker": "FUN",
+  "as_of": "2026-09-03T12:41:44.703500+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": -2.89333,
+    "eps_d30": -0.00411,
+    "eps_d90": 0.025,
+    "change_30d_pct": 70297.32,
+    "change_90d_pct": -11673.32,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 3.0699,
+        "estimate": 2.08544,
+        "surprise_pct": 47.21
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.5783,
+        "estimate": -0.23351,
+        "surprise_pct": -147.66
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -2.0889,
+        "estimate": -2.7377,
+        "surprise_pct": 23.7
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": -1.413,
+        "estimate": 0.33358,
+        "surprise_pct": -523.59
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -150.09
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -16.0
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 15.59
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": 1.12
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": -1.96
+      }
+    ],
+    "avg_abs_move_pct": 8.67,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -11673.3% over 90 days and +70297.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -16.0%, +15.6%, +1.1%, -2.0% (average absolute move 8.7%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -150.1%."
+  ]
+}

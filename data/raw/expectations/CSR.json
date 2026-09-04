@@ -1,0 +1,55 @@
+{
+  "ticker": "CSR",
+  "as_of": "2026-09-03T12:34:17.474437+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 0.62,
+    "eps_d30": -1.0425,
+    "eps_d90": -1.11667,
+    "change_30d_pct": -159.47,
+    "change_90d_pct": -155.52,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": -0.7787,
+        "estimate": -0.17524,
+        "surprise_pct": -344.36
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.115,
+        "estimate": -0.2157,
+        "surprise_pct": 46.69
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.6253,
+        "estimate": -0.32626,
+        "surprise_pct": -91.66
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": -0.021,
+        "estimate": -0.17071,
+        "surprise_pct": 87.7
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -75.41
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -155.5% over 90 days and -159.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 0 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -75.4%."
+  ]
+}

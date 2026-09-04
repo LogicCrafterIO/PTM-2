@@ -1,0 +1,55 @@
+{
+  "ticker": "BFH",
+  "as_of": "2026-09-03T12:33:13.877932+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 12.22145,
+    "eps_d30": 12.23967,
+    "eps_d90": 11.23419,
+    "change_30d_pct": -0.15,
+    "change_90d_pct": 8.79,
+    "analysts_up_30d": 10,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 4.02,
+        "estimate": 2.11224,
+        "surprise_pct": 90.32
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.07,
+        "estimate": 0.47663,
+        "surprise_pct": 334.3
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 4.18,
+        "estimate": 3.05035,
+        "surprise_pct": 37.03
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.55,
+        "estimate": 2.76773,
+        "surprise_pct": 28.26
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 122.48
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +8.8% over 90 days and -0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 10 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +122.5%."
+  ]
+}

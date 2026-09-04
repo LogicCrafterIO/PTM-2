@@ -1,0 +1,55 @@
+{
+  "ticker": "ACGL",
+  "as_of": "2026-09-03T12:33:59.638086+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 9.37453,
+    "eps_d30": 9.28158,
+    "eps_d90": 9.27273,
+    "change_30d_pct": 1.0,
+    "change_90d_pct": 1.1,
+    "analysts_up_30d": 13,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.77,
+        "estimate": 2.25446,
+        "surprise_pct": 22.87
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.98,
+        "estimate": 2.57267,
+        "surprise_pct": 15.83
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.5,
+        "estimate": 2.46369,
+        "surprise_pct": 1.47
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.56,
+        "estimate": 2.46174,
+        "surprise_pct": 3.99
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 11.04
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.1% over 90 days and +1.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 13 up, 5 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +11.0%."
+  ]
+}

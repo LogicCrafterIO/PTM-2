@@ -1,0 +1,55 @@
+{
+  "ticker": "ACT",
+  "as_of": "2026-09-03T12:33:06.719118+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 4.84291,
+    "eps_d30": 4.7666,
+    "eps_d90": 4.7999,
+    "change_30d_pct": 1.6,
+    "change_90d_pct": 0.9,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.12,
+        "estimate": 1.11028,
+        "surprise_pct": 0.88
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.23,
+        "estimate": 1.09853,
+        "surprise_pct": 11.97
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.21,
+        "estimate": 1.19607,
+        "surprise_pct": 1.16
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.26,
+        "estimate": 1.18736,
+        "surprise_pct": 6.12
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 5.03
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.9% over 90 days and +1.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 1 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +5.0%."
+  ]
+}

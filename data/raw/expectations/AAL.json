@@ -1,0 +1,77 @@
+{
+  "ticker": "AAL",
+  "as_of": "2026-09-03T12:40:56.995345+00:00",
+  "earnings_date": "2026-10-22",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.00053,
+    "eps_d30": 0.15447,
+    "eps_d90": -0.0327,
+    "change_30d_pct": -99.66,
+    "change_90d_pct": -101.62,
+    "analysts_up_30d": 9,
+    "analysts_down_30d": 11
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": -0.17,
+        "estimate": -0.27513,
+        "surprise_pct": 38.21
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.16,
+        "estimate": 0.35223,
+        "surprise_pct": -54.58
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.4,
+        "estimate": -0.45996,
+        "surprise_pct": 13.04
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.15,
+        "estimate": 0.04579,
+        "surprise_pct": 227.58
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 56.06
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-23",
+        "move_pct": -8.32
+      },
+      {
+        "report_date": "2026-04-23",
+        "move_pct": 2.43
+      },
+      {
+        "report_date": "2026-02-18",
+        "move_pct": -2.08
+      },
+      {
+        "report_date": "2025-10-23",
+        "move_pct": 5.62
+      }
+    ],
+    "avg_abs_move_pct": 4.61,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -101.6% over 90 days and -99.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 9 up, 11 down.",
+    "Price reaction to the last 4 reports, most recent first: -8.3%, +2.4%, -2.1%, +5.6% (average absolute move 4.6%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +56.1%."
+  ]
+}

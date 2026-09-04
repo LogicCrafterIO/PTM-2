@@ -1,0 +1,55 @@
+{
+  "ticker": "AVA",
+  "as_of": "2026-09-03T12:34:18.346423+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 2.61357,
+    "eps_d30": 2.602,
+    "eps_d90": 2.60486,
+    "change_30d_pct": 0.44,
+    "change_90d_pct": 0.33,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.36,
+        "estimate": 0.284,
+        "surprise_pct": 26.76
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.87,
+        "estimate": 1.024,
+        "surprise_pct": -15.04
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.11,
+        "estimate": 1.02533,
+        "surprise_pct": 8.26
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.43,
+        "estimate": 0.2445,
+        "surprise_pct": 75.87
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 23.96
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.3% over 90 days and +0.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 0 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +24.0%."
+  ]
+}

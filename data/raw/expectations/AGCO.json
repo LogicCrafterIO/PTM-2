@@ -1,0 +1,55 @@
+{
+  "ticker": "AGCO",
+  "as_of": "2026-09-03T12:33:55.548282+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 5.62441,
+    "eps_d30": 5.65269,
+    "eps_d90": 5.98063,
+    "change_30d_pct": -0.5,
+    "change_90d_pct": -5.96,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 14
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.35,
+        "estimate": 1.21933,
+        "surprise_pct": 10.72
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.17,
+        "estimate": 1.85756,
+        "surprise_pct": 16.82
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.94,
+        "estimate": 0.44096,
+        "surprise_pct": 113.17
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.43,
+        "estimate": 1.47631,
+        "surprise_pct": -3.14
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 34.39
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -6.0% over 90 days and -0.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 14 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +34.4%."
+  ]
+}

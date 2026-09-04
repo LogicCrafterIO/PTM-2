@@ -1,0 +1,77 @@
+{
+  "ticker": "SAIA",
+  "as_of": "2026-09-03T12:42:18.887319+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 11.33163,
+    "eps_d30": 11.38051,
+    "eps_d90": 11.22499,
+    "change_30d_pct": -0.43,
+    "change_90d_pct": 0.95,
+    "analysts_up_30d": 7,
+    "analysts_down_30d": 8
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.81,
+        "estimate": 2.55608,
+        "surprise_pct": 9.93
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.77,
+        "estimate": 1.90656,
+        "surprise_pct": -7.16
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.86,
+        "estimate": 1.81534,
+        "surprise_pct": 2.46
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.51,
+        "estimate": 3.39123,
+        "surprise_pct": 3.5
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 2.18
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": -11.11
+      },
+      {
+        "report_date": "2026-04-30",
+        "move_pct": 6.35
+      },
+      {
+        "report_date": "2026-02-24",
+        "move_pct": 1.15
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": 2.2
+      }
+    ],
+    "avg_abs_move_pct": 5.2,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.9% over 90 days and -0.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 7 up, 8 down.",
+    "Price reaction to the last 4 reports, most recent first: -11.1%, +6.3%, +1.1%, +2.2% (average absolute move 5.2%, 1 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +2.2%."
+  ]
+}

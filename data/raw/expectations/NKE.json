@@ -1,0 +1,77 @@
+{
+  "ticker": "NKE",
+  "as_of": "2026-09-03T12:42:04.590863+00:00",
+  "earnings_date": "2026-10-14",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.72109,
+    "eps_d30": 1.73105,
+    "eps_d90": 1.84226,
+    "change_30d_pct": -0.58,
+    "change_90d_pct": -6.58,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 7
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 0.49,
+        "estimate": 0.2656,
+        "surprise_pct": 84.49
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 0.53,
+        "estimate": 0.37351,
+        "surprise_pct": 41.9
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 0.35,
+        "estimate": 0.28165,
+        "surprise_pct": 24.27
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 0.72,
+        "estimate": 0.12718,
+        "surprise_pct": 466.13
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 154.2
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-15",
+        "move_pct": -0.21
+      },
+      {
+        "report_date": "2026-04-01",
+        "move_pct": -15.51
+      },
+      {
+        "report_date": "2025-12-30",
+        "move_pct": -0.03
+      },
+      {
+        "report_date": "2025-10-01",
+        "move_pct": 6.41
+      }
+    ],
+    "avg_abs_move_pct": 5.54,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -6.6% over 90 days and -0.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 7 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.2%, -15.5%, -0.0%, +6.4% (average absolute move 5.5%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +154.2%."
+  ]
+}

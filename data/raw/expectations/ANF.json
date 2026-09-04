@@ -1,0 +1,77 @@
+{
+  "ticker": "ANF",
+  "as_of": "2026-09-03T12:41:07.558254+00:00",
+  "earnings_date": "2026-09-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 13.13061,
+    "eps_d30": 10.70594,
+    "eps_d90": 10.72261,
+    "change_30d_pct": 22.65,
+    "change_90d_pct": 22.46,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-10-31",
+        "actual": 2.36,
+        "estimate": 2.15717,
+        "surprise_pct": 9.4
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 3.68,
+        "estimate": 3.56862,
+        "surprise_pct": 3.12
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 1.47,
+        "estimate": 1.27043,
+        "surprise_pct": 15.71
+      },
+      {
+        "quarter": "2026-07-31",
+        "actual": 4.17,
+        "estimate": 1.96764,
+        "surprise_pct": 111.93
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 35.04
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-06-05",
+        "move_pct": -2.99
+      },
+      {
+        "report_date": "2026-03-26",
+        "move_pct": 1.37
+      },
+      {
+        "report_date": "2025-12-05",
+        "move_pct": -0.83
+      },
+      {
+        "report_date": "2025-09-05",
+        "move_pct": 2.02
+      }
+    ],
+    "avg_abs_move_pct": 1.8,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +22.5% over 90 days and +22.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -3.0%, +1.4%, -0.8%, +2.0% (average absolute move 1.8%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +35.0%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "HPE",
+  "as_of": "2026-09-03T12:41:52.674411+00:00",
+  "earnings_date": "2026-12-01",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.45097,
+    "eps_d30": 3.42581,
+    "eps_d90": 3.43185,
+    "change_30d_pct": 0.73,
+    "change_90d_pct": 0.56,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-07-31",
+        "actual": 0.44,
+        "estimate": 0.41743,
+        "surprise_pct": 5.41
+      },
+      {
+        "quarter": "2025-10-31",
+        "actual": 0.62,
+        "estimate": 0.5819,
+        "surprise_pct": 6.55
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 0.65,
+        "estimate": 0.58689,
+        "surprise_pct": 10.75
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 0.79,
+        "estimate": 0.53369,
+        "surprise_pct": 48.03
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 17.68
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-06-02",
+        "move_pct": 19.47
+      },
+      {
+        "report_date": "2026-03-10",
+        "move_pct": -3.26
+      },
+      {
+        "report_date": "2025-12-18",
+        "move_pct": -0.42
+      },
+      {
+        "report_date": "2025-09-04",
+        "move_pct": 1.49
+      }
+    ],
+    "avg_abs_move_pct": 6.16,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.6% over 90 days and +0.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +19.5%, -3.3%, -0.4%, +1.5% (average absolute move 6.2%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +17.7%."
+  ]
+}

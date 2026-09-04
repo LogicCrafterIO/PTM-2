@@ -1,0 +1,55 @@
+{
+  "ticker": "AMKR",
+  "as_of": "2026-09-03T12:34:44.719405+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 2.57216,
+    "eps_d30": 2.57833,
+    "eps_d90": 2.08728,
+    "change_30d_pct": -0.24,
+    "change_90d_pct": 23.23,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.51,
+        "estimate": 0.42629,
+        "surprise_pct": 19.64
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.69,
+        "estimate": 0.44104,
+        "surprise_pct": 56.45
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.33,
+        "estimate": 0.24337,
+        "surprise_pct": 35.6
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.7,
+        "estimate": 0.48144,
+        "surprise_pct": 45.4
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 39.27
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +23.2% over 90 days and -0.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +39.3%."
+  ]
+}

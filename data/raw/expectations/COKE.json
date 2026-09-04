@@ -1,0 +1,69 @@
+{
+  "ticker": "COKE",
+  "as_of": "2026-09-03T14:49:24.969079+00:00",
+  "earnings_date": "2026-11-07",
+  "revisions": {
+    "available": false,
+    "eps_current": null,
+    "eps_d30": null,
+    "eps_d90": null,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "analysts_up_30d": null,
+    "analysts_down_30d": null
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2021-12-31",
+        "actual": 0.676,
+        "estimate": 0.76183,
+        "surprise_pct": -11.27
+      },
+      {
+        "quarter": "2022-03-31",
+        "actual": 0.842,
+        "estimate": 0.71288,
+        "surprise_pct": 18.11
+      },
+      {
+        "quarter": "2022-09-30",
+        "actual": 1.481,
+        "estimate": null,
+        "surprise_pct": null
+      }
+    ],
+    "beats": 1,
+    "of": 2,
+    "avg_surprise_pct": 3.42
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": 2.07
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": -2.27
+      },
+      {
+        "report_date": "2026-02-18",
+        "move_pct": 2.52
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": -0.12
+      }
+    ],
+    "avg_abs_move_pct": 1.74,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Price reaction to the last 4 reports, most recent first: +2.1%, -2.3%, +2.5%, -0.1% (average absolute move 1.7%, 2 of 4 negative).",
+    "Beat consensus in 1 of the last 2 quarters, average surprise +3.4%."
+  ]
+}

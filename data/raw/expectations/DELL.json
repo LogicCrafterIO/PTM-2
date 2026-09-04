@@ -1,0 +1,77 @@
+{
+  "ticker": "DELL",
+  "as_of": "2026-09-03T14:46:08.293981+00:00",
+  "earnings_date": "2026-09-08",
+  "revisions": {
+    "available": true,
+    "eps_current": 25.92015,
+    "eps_d30": 18.41304,
+    "eps_d90": 18.35168,
+    "change_30d_pct": 40.77,
+    "change_90d_pct": 41.24,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-10-31",
+        "actual": 2.59,
+        "estimate": 2.47719,
+        "surprise_pct": 4.55
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 3.89,
+        "estimate": 3.51279,
+        "surprise_pct": 10.74
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 4.86,
+        "estimate": 2.96358,
+        "surprise_pct": 63.99
+      },
+      {
+        "quarter": "2026-07-31",
+        "actual": 7.04,
+        "estimate": 4.91833,
+        "surprise_pct": 43.14
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 30.61
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-06-09",
+        "move_pct": -4.74
+      },
+      {
+        "report_date": "2026-03-16",
+        "move_pct": 3.24
+      },
+      {
+        "report_date": "2025-12-09",
+        "move_pct": -1.56
+      },
+      {
+        "report_date": "2025-09-08",
+        "move_pct": -1.47
+      }
+    ],
+    "avg_abs_move_pct": 2.75,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +41.2% over 90 days and +40.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -4.7%, +3.2%, -1.6%, -1.5% (average absolute move 2.8%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +30.6%."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "ACIW",
+  "as_of": "2026-09-03T12:32:48.780848+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 3.59,
+    "eps_d30": 3.51667,
+    "eps_d90": 3.52,
+    "change_30d_pct": 2.09,
+    "change_90d_pct": 1.99,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.09,
+        "estimate": 0.986,
+        "surprise_pct": 10.55
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.9,
+        "estimate": 1.008,
+        "surprise_pct": -10.71
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.61,
+        "estimate": 0.49667,
+        "surprise_pct": 22.82
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.54,
+        "estimate": 0.53,
+        "surprise_pct": 1.89
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 6.14
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.0% over 90 days and +2.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 0 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +6.1%."
+  ]
+}

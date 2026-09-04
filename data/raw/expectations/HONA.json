@@ -1,0 +1,47 @@
+{
+  "ticker": "HONA",
+  "as_of": "2026-09-03T12:41:52.223224+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.78052,
+    "eps_d30": 8.38182,
+    "eps_d90": 0.0,
+    "change_30d_pct": -19.1,
+    "change_90d_pct": null,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.87,
+        "estimate": 2.11904,
+        "surprise_pct": -11.75
+      }
+    ],
+    "beats": 0,
+    "of": 1,
+    "avg_surprise_pct": -11.75
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": -5.93
+      }
+    ],
+    "avg_abs_move_pct": 5.93,
+    "down_prints": 1,
+    "of": 1
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -19.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 5 down.",
+    "Price reaction to the last 1 reports, most recent first: -5.9% (average absolute move 5.9%, 1 of 1 negative).",
+    "Beat consensus in 0 of the last 1 quarters, average surprise -11.8%."
+  ]
+}

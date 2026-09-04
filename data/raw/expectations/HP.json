@@ -1,0 +1,55 @@
+{
+  "ticker": "HP",
+  "as_of": "2026-09-03T12:34:20.955747+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": -0.1365,
+    "eps_d30": -0.05752,
+    "eps_d90": 0.04154,
+    "change_30d_pct": 137.31,
+    "change_90d_pct": -428.6,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": -0.01,
+        "estimate": 0.26191,
+        "surprise_pct": -103.82
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.15,
+        "estimate": 0.10571,
+        "surprise_pct": -241.9
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.38,
+        "estimate": -0.04041,
+        "surprise_pct": -840.36
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": -0.11,
+        "estimate": 0.09952,
+        "surprise_pct": -210.53
+      }
+    ],
+    "beats": 0,
+    "of": 4,
+    "avg_surprise_pct": -349.15
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -428.6% over 90 days and +137.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 1 down.",
+    "Beat consensus in 0 of the last 4 quarters, average surprise -349.1%."
+  ]
+}

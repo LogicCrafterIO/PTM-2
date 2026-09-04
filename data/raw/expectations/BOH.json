@@ -1,0 +1,55 @@
+{
+  "ticker": "BOH",
+  "as_of": "2026-09-03T12:33:36.773660+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 5.95597,
+    "eps_d30": 6.00787,
+    "eps_d90": 6.00913,
+    "change_30d_pct": -0.86,
+    "change_90d_pct": -0.88,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 4
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.2,
+        "estimate": 1.1756,
+        "surprise_pct": 2.08
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.39,
+        "estimate": 1.26434,
+        "surprise_pct": 9.94
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.3,
+        "estimate": 1.3396,
+        "surprise_pct": -2.96
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.47,
+        "estimate": 1.46084,
+        "surprise_pct": 0.63
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 2.42
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.9% over 90 days and -0.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 4 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +2.4%."
+  ]
+}

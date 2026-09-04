@@ -1,0 +1,55 @@
+{
+  "ticker": "CARG",
+  "as_of": "2026-09-03T12:34:01.668511+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 2.62432,
+    "eps_d30": 2.52189,
+    "eps_d90": 2.51465,
+    "change_30d_pct": 4.06,
+    "change_90d_pct": 4.36,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.57,
+        "estimate": 0.54943,
+        "surprise_pct": 3.74
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.63,
+        "estimate": 0.63278,
+        "surprise_pct": -0.44
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.58,
+        "estimate": 0.56974,
+        "surprise_pct": 1.8
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.66,
+        "estimate": 0.61316,
+        "surprise_pct": 7.64
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 3.19
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +4.4% over 90 days and +4.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 0 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +3.2%."
+  ]
+}

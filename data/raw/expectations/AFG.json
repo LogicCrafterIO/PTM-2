@@ -1,0 +1,55 @@
+{
+  "ticker": "AFG",
+  "as_of": "2026-09-03T12:33:38.564127+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 12.38714,
+    "eps_d30": 11.59714,
+    "eps_d90": 11.61857,
+    "change_30d_pct": 6.81,
+    "change_90d_pct": 6.62,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.69,
+        "estimate": 2.50833,
+        "surprise_pct": 7.24
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 3.65,
+        "estimate": 3.315,
+        "surprise_pct": 10.11
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.47,
+        "estimate": 2.55571,
+        "surprise_pct": -3.35
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.82,
+        "estimate": 2.37143,
+        "surprise_pct": 18.92
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 8.23
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +6.6% over 90 days and +6.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 0 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +8.2%."
+  ]
+}

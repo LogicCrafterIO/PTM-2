@@ -1,0 +1,77 @@
+{
+  "ticker": "APP",
+  "as_of": "2026-09-03T12:41:10.280899+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 15.69827,
+    "eps_d30": 16.01845,
+    "eps_d90": 16.0987,
+    "change_30d_pct": -2.0,
+    "change_90d_pct": -2.49,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 12
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.45,
+        "estimate": 2.38757,
+        "surprise_pct": 2.61
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 3.24,
+        "estimate": 2.94408,
+        "surprise_pct": 10.05
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 3.56,
+        "estimate": 3.44326,
+        "surprise_pct": 3.39
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.76,
+        "estimate": 3.74407,
+        "surprise_pct": 0.43
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 4.12
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": -0.45
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": -1.94
+      },
+      {
+        "report_date": "2026-02-19",
+        "move_pct": 1.88
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": 1.38
+      }
+    ],
+    "avg_abs_move_pct": 1.41,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.5% over 90 days and -2.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 12 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.5%, -1.9%, +1.9%, +1.4% (average absolute move 1.4%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +4.1%."
+  ]
+}

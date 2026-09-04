@@ -1,0 +1,77 @@
+{
+  "ticker": "ACN",
+  "as_of": "2026-09-03T14:46:04.551132+00:00",
+  "earnings_date": "2026-09-17",
+  "revisions": {
+    "available": true,
+    "eps_current": 13.86199,
+    "eps_d30": 13.87236,
+    "eps_d90": 13.86877,
+    "change_30d_pct": -0.07,
+    "change_90d_pct": -0.05,
+    "analysts_up_30d": 5,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 3.03,
+        "estimate": 2.97151,
+        "surprise_pct": 1.97
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 3.94,
+        "estimate": 3.7217,
+        "surprise_pct": 5.87
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 2.93,
+        "estimate": 2.83739,
+        "surprise_pct": 3.26
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 3.8,
+        "estimate": 3.70865,
+        "surprise_pct": 2.46
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 3.39
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-06-18",
+        "move_pct": -17.97
+      },
+      {
+        "report_date": "2026-03-19",
+        "move_pct": 4.3
+      },
+      {
+        "report_date": "2025-12-18",
+        "move_pct": -1.38
+      },
+      {
+        "report_date": "2025-10-10",
+        "move_pct": -4.4
+      }
+    ],
+    "avg_abs_move_pct": 7.01,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.1% over 90 days and -0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 5 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: -18.0%, +4.3%, -1.4%, -4.4% (average absolute move 7.0%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +3.4%."
+  ]
+}

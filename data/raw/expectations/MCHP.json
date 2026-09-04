@@ -1,0 +1,77 @@
+{
+  "ticker": "MCHP",
+  "as_of": "2026-09-03T12:42:00.422589+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.6468,
+    "eps_d30": 3.18916,
+    "eps_d90": 3.15708,
+    "change_30d_pct": 14.35,
+    "change_90d_pct": 15.51,
+    "analysts_up_30d": 17,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.35,
+        "estimate": 0.33356,
+        "surprise_pct": 4.93
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.44,
+        "estimate": 0.42824,
+        "surprise_pct": 2.75
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.57,
+        "estimate": 0.50474,
+        "surprise_pct": 12.93
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.76,
+        "estimate": 0.69927,
+        "surprise_pct": 8.68
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 7.32
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -4.41
+      },
+      {
+        "report_date": "2026-05-21",
+        "move_pct": -3.1
+      },
+      {
+        "report_date": "2026-02-05",
+        "move_pct": -0.24
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -2.38
+      }
+    ],
+    "avg_abs_move_pct": 2.53,
+    "down_prints": 4,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +15.5% over 90 days and +14.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 17 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -4.4%, -3.1%, -0.2%, -2.4% (average absolute move 2.5%, 4 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +7.3%."
+  ]
+}

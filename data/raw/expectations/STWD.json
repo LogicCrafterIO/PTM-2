@@ -1,0 +1,77 @@
+{
+  "ticker": "STWD",
+  "as_of": "2026-09-03T12:42:24.240571+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.52686,
+    "eps_d30": 1.69916,
+    "eps_d90": 1.73413,
+    "change_30d_pct": -10.14,
+    "change_90d_pct": -11.95,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.4,
+        "estimate": 0.43943,
+        "surprise_pct": -8.97
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.42,
+        "estimate": 0.41284,
+        "surprise_pct": 1.73
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.39,
+        "estimate": 0.42415,
+        "surprise_pct": -8.05
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.4,
+        "estimate": 0.40014,
+        "surprise_pct": -0.03
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -3.83
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -1.73
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": -1.66
+      },
+      {
+        "report_date": "2026-02-25",
+        "move_pct": 0.23
+      },
+      {
+        "report_date": "2025-11-10",
+        "move_pct": -2.88
+      }
+    ],
+    "avg_abs_move_pct": 1.62,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -11.9% over 90 days and -10.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.7%, -1.7%, +0.2%, -2.9% (average absolute move 1.6%, 3 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -3.8%."
+  ]
+}

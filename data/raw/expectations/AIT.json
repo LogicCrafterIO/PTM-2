@@ -1,0 +1,77 @@
+{
+  "ticker": "AIT",
+  "as_of": "2026-09-03T12:41:03.887099+00:00",
+  "earnings_date": "2026-11-12",
+  "revisions": {
+    "available": true,
+    "eps_current": 12.0325,
+    "eps_d30": 11.78375,
+    "eps_d90": 11.78857,
+    "change_30d_pct": 2.11,
+    "change_90d_pct": 2.07,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.63,
+        "estimate": 2.4825,
+        "surprise_pct": 5.94
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.51,
+        "estimate": 2.495,
+        "surprise_pct": 0.6
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.65,
+        "estimate": 2.64571,
+        "surprise_pct": 0.16
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.17,
+        "estimate": 2.9175,
+        "surprise_pct": 8.65
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 3.84
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-13",
+        "move_pct": 1.51
+      },
+      {
+        "report_date": "2026-04-28",
+        "move_pct": 1.05
+      },
+      {
+        "report_date": "2026-01-27",
+        "move_pct": -6.82
+      },
+      {
+        "report_date": "2025-10-28",
+        "move_pct": -0.76
+      }
+    ],
+    "avg_abs_move_pct": 2.54,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.1% over 90 days and +2.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.5%, +1.1%, -6.8%, -0.8% (average absolute move 2.5%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +3.8%."
+  ]
+}

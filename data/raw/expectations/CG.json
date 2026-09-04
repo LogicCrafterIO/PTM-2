@@ -1,0 +1,77 @@
+{
+  "ticker": "CG",
+  "as_of": "2026-09-03T12:41:23.618974+00:00",
+  "earnings_date": "2026-11-10",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.67282,
+    "eps_d30": 3.69797,
+    "eps_d90": 4.08746,
+    "change_30d_pct": -0.68,
+    "change_90d_pct": -10.14,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 12
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.96,
+        "estimate": 1.01928,
+        "surprise_pct": -5.82
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.01,
+        "estimate": 0.99317,
+        "surprise_pct": 1.69
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.89,
+        "estimate": 0.91593,
+        "surprise_pct": -2.83
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.07,
+        "estimate": 0.90689,
+        "surprise_pct": 17.99
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 2.76
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-10",
+        "move_pct": 0.02
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": 3.31
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": -4.54
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": -0.11
+      }
+    ],
+    "avg_abs_move_pct": 2.0,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -10.1% over 90 days and -0.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 12 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.0%, +3.3%, -4.5%, -0.1% (average absolute move 2.0%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +2.8%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "UBER",
+  "as_of": "2026-09-03T12:42:32.535441+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.29246,
+    "eps_d30": 3.01526,
+    "eps_d90": 2.94627,
+    "change_30d_pct": 9.19,
+    "change_90d_pct": 11.75,
+    "analysts_up_30d": 21,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 3.11,
+        "estimate": 0.68627,
+        "surprise_pct": 353.17
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.14,
+        "estimate": 0.775,
+        "surprise_pct": -81.94
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.13,
+        "estimate": 0.71175,
+        "surprise_pct": -81.74
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.17,
+        "estimate": 0.83443,
+        "surprise_pct": 40.22
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 57.43
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": -5.29
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": 8.53
+      },
+      {
+        "report_date": "2026-02-13",
+        "move_pct": -1.73
+      },
+      {
+        "report_date": "2025-11-04",
+        "move_pct": -5.06
+      }
+    ],
+    "avg_abs_move_pct": 5.15,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +11.8% over 90 days and +9.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 21 up, 3 down.",
+    "Price reaction to the last 4 reports, most recent first: -5.3%, +8.5%, -1.7%, -5.1% (average absolute move 5.2%, 3 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +57.4%."
+  ]
+}

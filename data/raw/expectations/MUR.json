@@ -1,0 +1,77 @@
+{
+  "ticker": "MUR",
+  "as_of": "2026-09-03T12:42:03.188017+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.87361,
+    "eps_d30": 3.49836,
+    "eps_d90": 3.84813,
+    "change_30d_pct": -17.86,
+    "change_90d_pct": -25.32,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 4
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.41,
+        "estimate": 0.17677,
+        "surprise_pct": 131.94
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.14,
+        "estimate": -0.03306,
+        "surprise_pct": 523.47
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.32,
+        "estimate": 0.30964,
+        "surprise_pct": 3.35
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.55,
+        "estimate": 1.58437,
+        "surprise_pct": -2.17
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 164.15
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": -6.1
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": -6.58
+      },
+      {
+        "report_date": "2026-02-25",
+        "move_pct": 0.03
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": -0.86
+      }
+    ],
+    "avg_abs_move_pct": 3.39,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -25.3% over 90 days and -17.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 4 down.",
+    "Price reaction to the last 4 reports, most recent first: -6.1%, -6.6%, +0.0%, -0.9% (average absolute move 3.4%, 3 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +164.2%."
+  ]
+}

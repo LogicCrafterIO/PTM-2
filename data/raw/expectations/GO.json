@@ -1,0 +1,77 @@
+{
+  "ticker": "GO",
+  "as_of": "2026-09-03T12:41:48.452967+00:00",
+  "earnings_date": "2026-11-13",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.54506,
+    "eps_d30": 0.50368,
+    "eps_d90": 0.50685,
+    "change_30d_pct": 8.22,
+    "change_90d_pct": 7.54,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.21,
+        "estimate": 0.18837,
+        "surprise_pct": 11.48
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.19,
+        "estimate": 0.20864,
+        "surprise_pct": -8.93
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.05,
+        "estimate": 0.02272,
+        "surprise_pct": 120.07
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.2,
+        "estimate": 0.12432,
+        "surprise_pct": 60.88
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 45.88
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-12",
+        "move_pct": 3.46
+      },
+      {
+        "report_date": "2026-05-13",
+        "move_pct": -2.76
+      },
+      {
+        "report_date": "2026-03-04",
+        "move_pct": -0.9
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": -8.05
+      }
+    ],
+    "avg_abs_move_pct": 3.79,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +7.5% over 90 days and +8.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +3.5%, -2.8%, -0.9%, -8.1% (average absolute move 3.8%, 3 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +45.9%."
+  ]
+}

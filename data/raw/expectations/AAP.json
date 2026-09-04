@@ -1,0 +1,55 @@
+{
+  "ticker": "AAP",
+  "as_of": "2026-09-03T12:32:52.844918+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 2.99215,
+    "eps_d30": 2.93797,
+    "eps_d90": 2.92397,
+    "change_30d_pct": 1.84,
+    "change_90d_pct": 2.33,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.92,
+        "estimate": 0.74491,
+        "surprise_pct": 23.5
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.86,
+        "estimate": 0.41087,
+        "surprise_pct": 109.31
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.77,
+        "estimate": 0.43844,
+        "surprise_pct": 75.62
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.03,
+        "estimate": 0.80349,
+        "surprise_pct": 28.19
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 59.16
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.3% over 90 days and +1.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +59.2%."
+  ]
+}

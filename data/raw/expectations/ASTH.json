@@ -1,0 +1,55 @@
+{
+  "ticker": "ASTH",
+  "as_of": "2026-09-03T12:33:46.667244+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 3.04,
+    "eps_d30": 2.92,
+    "eps_d90": 2.92,
+    "change_30d_pct": 4.11,
+    "change_90d_pct": 4.11,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.67496,
+        "estimate": 0.61,
+        "surprise_pct": 10.65
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.4243,
+        "estimate": 0.33,
+        "surprise_pct": 28.58
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.74,
+        "estimate": 0.65,
+        "surprise_pct": 13.85
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.8,
+        "estimate": 0.73,
+        "surprise_pct": 9.59
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 15.67
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +4.1% over 90 days and +4.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +15.7%."
+  ]
+}

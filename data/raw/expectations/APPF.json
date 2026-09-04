@@ -1,0 +1,77 @@
+{
+  "ticker": "APPF",
+  "as_of": "2026-09-03T12:41:10.732652+00:00",
+  "earnings_date": "2026-10-20",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.89775,
+    "eps_d30": 6.8052,
+    "eps_d90": 6.8052,
+    "change_30d_pct": 1.36,
+    "change_90d_pct": 1.36,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.31,
+        "estimate": 1.45225,
+        "surprise_pct": -9.8
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.39,
+        "estimate": 1.25437,
+        "surprise_pct": 10.81
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.61,
+        "estimate": 1.47466,
+        "surprise_pct": 9.18
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.71,
+        "estimate": 1.69056,
+        "surprise_pct": 1.15
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 2.83
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-23",
+        "move_pct": 1.07
+      },
+      {
+        "report_date": "2026-04-23",
+        "move_pct": -3.86
+      },
+      {
+        "report_date": "2026-02-05",
+        "move_pct": -3.69
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": -1.24
+      }
+    ],
+    "avg_abs_move_pct": 2.46,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.4% over 90 days and +1.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.1%, -3.9%, -3.7%, -1.2% (average absolute move 2.5%, 3 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +2.8%."
+  ]
+}

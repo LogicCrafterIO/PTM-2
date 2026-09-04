@@ -1,0 +1,55 @@
+{
+  "ticker": "ENOV",
+  "as_of": "2026-09-03T12:34:13.285116+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 3.63971,
+    "eps_d30": 3.64322,
+    "eps_d90": 3.64677,
+    "change_30d_pct": -0.1,
+    "change_90d_pct": -0.19,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.75,
+        "estimate": 0.64884,
+        "surprise_pct": 15.59
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.95,
+        "estimate": 0.84032,
+        "surprise_pct": 13.05
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.89,
+        "estimate": 0.80998,
+        "surprise_pct": 9.88
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.9,
+        "estimate": 0.84635,
+        "surprise_pct": 6.34
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 11.21
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.2% over 90 days and -0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 3 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +11.2%."
+  ]
+}

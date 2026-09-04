@@ -1,0 +1,77 @@
+{
+  "ticker": "LULU",
+  "as_of": "2026-09-03T12:41:58.603718+00:00",
+  "earnings_date": "2026-12-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 10.98172,
+    "eps_d30": 11.04672,
+    "eps_d90": 12.28243,
+    "change_30d_pct": -0.59,
+    "change_90d_pct": -10.59,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-07-31",
+        "actual": 3.1,
+        "estimate": 2.85092,
+        "surprise_pct": 8.74
+      },
+      {
+        "quarter": "2025-10-31",
+        "actual": 2.59,
+        "estimate": 2.21177,
+        "surprise_pct": 17.1
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 5.01,
+        "estimate": 4.77901,
+        "surprise_pct": 4.83
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 1.69,
+        "estimate": 1.67293,
+        "surprise_pct": 1.02
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 7.92
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-06-04",
+        "move_pct": -0.88
+      },
+      {
+        "report_date": "2026-03-17",
+        "move_pct": -0.4
+      },
+      {
+        "report_date": "2025-12-11",
+        "move_pct": -0.33
+      },
+      {
+        "report_date": "2025-09-04",
+        "move_pct": 3.81
+      }
+    ],
+    "avg_abs_move_pct": 1.35,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -10.6% over 90 days and -0.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.9%, -0.4%, -0.3%, +3.8% (average absolute move 1.4%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +7.9%."
+  ]
+}

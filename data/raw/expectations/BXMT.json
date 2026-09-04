@@ -1,0 +1,77 @@
+{
+  "ticker": "BXMT",
+  "as_of": "2026-09-03T12:41:17.898581+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.26782,
+    "eps_d30": 1.42281,
+    "eps_d90": 1.45486,
+    "change_30d_pct": -10.89,
+    "change_90d_pct": -12.86,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.24,
+        "estimate": 0.27427,
+        "surprise_pct": -12.49
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -2.07,
+        "estimate": 0.26999,
+        "surprise_pct": -866.7
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.21,
+        "estimate": 0.35167,
+        "surprise_pct": -40.28
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.31,
+        "estimate": 0.3531,
+        "surprise_pct": -12.21
+      }
+    ],
+    "beats": 0,
+    "of": 4,
+    "avg_surprise_pct": -232.92
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": -8.72
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": -4.65
+      },
+      {
+        "report_date": "2026-02-11",
+        "move_pct": 2.04
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": 3.47
+      }
+    ],
+    "avg_abs_move_pct": 4.72,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -12.9% over 90 days and -10.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 5 down.",
+    "Price reaction to the last 4 reports, most recent first: -8.7%, -4.7%, +2.0%, +3.5% (average absolute move 4.7%, 2 of 4 negative).",
+    "Beat consensus in 0 of the last 4 quarters, average surprise -232.9%."
+  ]
+}

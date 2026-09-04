@@ -1,0 +1,55 @@
+{
+  "ticker": "ADT",
+  "as_of": "2026-09-03T12:34:48.586914+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 0.92238,
+    "eps_d30": 0.91384,
+    "eps_d90": 0.91384,
+    "change_30d_pct": 0.93,
+    "change_90d_pct": 0.93,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.23,
+        "estimate": 0.21525,
+        "surprise_pct": 6.85
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.23,
+        "estimate": 0.22241,
+        "surprise_pct": 3.41
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.23,
+        "estimate": 0.20722,
+        "surprise_pct": 10.99
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.23,
+        "estimate": 0.2231,
+        "surprise_pct": 3.09
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 6.08
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.9% over 90 days and +0.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +6.1%."
+  ]
+}

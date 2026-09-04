@@ -1,0 +1,77 @@
+{
+  "ticker": "QCOM",
+  "as_of": "2026-09-03T12:42:15.583250+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 10.52302,
+    "eps_d30": 10.81398,
+    "eps_d90": 10.80011,
+    "change_30d_pct": -2.69,
+    "change_90d_pct": -2.57,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 26
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 3.0,
+        "estimate": 2.87578,
+        "surprise_pct": 4.32
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 3.5,
+        "estimate": 3.40235,
+        "surprise_pct": 2.87
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.65,
+        "estimate": 2.56433,
+        "surprise_pct": 3.34
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.21,
+        "estimate": 2.22079,
+        "surprise_pct": -0.49
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 2.51
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": -4.42
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": 4.0
+      },
+      {
+        "report_date": "2026-02-04",
+        "move_pct": 1.16
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": 3.98
+      }
+    ],
+    "avg_abs_move_pct": 3.39,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.6% over 90 days and -2.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 26 down.",
+    "Price reaction to the last 4 reports, most recent first: -4.4%, +4.0%, +1.2%, +4.0% (average absolute move 3.4%, 1 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +2.5%."
+  ]
+}

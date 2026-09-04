@@ -1,0 +1,77 @@
+{
+  "ticker": "ALK",
+  "as_of": "2026-09-03T12:41:05.242964+00:00",
+  "earnings_date": "2026-11-02",
+  "revisions": {
+    "available": true,
+    "eps_current": -1.65159,
+    "eps_d30": -1.47646,
+    "eps_d90": -0.76844,
+    "change_30d_pct": 11.86,
+    "change_90d_pct": 114.93,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 6
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.05,
+        "estimate": 1.10137,
+        "surprise_pct": -4.66
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.43,
+        "estimate": 0.10825,
+        "surprise_pct": 297.23
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -1.68,
+        "estimate": -1.58862,
+        "surprise_pct": -5.75
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": -0.92,
+        "estimate": -0.99185,
+        "surprise_pct": 7.24
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 73.52
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": 4.66
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 0.2
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": -3.15
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -1.74
+      }
+    ],
+    "avg_abs_move_pct": 2.44,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +114.9% over 90 days and +11.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 6 down.",
+    "Price reaction to the last 4 reports, most recent first: +4.7%, +0.2%, -3.1%, -1.7% (average absolute move 2.4%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +73.5%."
+  ]
+}

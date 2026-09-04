@@ -1,0 +1,55 @@
+{
+  "ticker": "AVNT",
+  "as_of": "2026-09-03T12:34:49.026338+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 3.19982,
+    "eps_d30": 3.07449,
+    "eps_d90": 3.07265,
+    "change_30d_pct": 4.08,
+    "change_90d_pct": 4.14,
+    "analysts_up_30d": 7,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.7,
+        "estimate": 0.68988,
+        "surprise_pct": 1.47
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.56,
+        "estimate": 0.54759,
+        "surprise_pct": 2.27
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.83,
+        "estimate": 0.80764,
+        "surprise_pct": 2.77
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.96,
+        "estimate": 0.89111,
+        "surprise_pct": 7.73
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 3.56
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +4.1% over 90 days and +4.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 7 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +3.6%."
+  ]
+}

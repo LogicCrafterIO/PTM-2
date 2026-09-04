@@ -1,0 +1,72 @@
+{
+  "ticker": "DKS",
+  "as_of": "2026-09-03T12:41:36.416874+00:00",
+  "earnings_date": "2026-12-01",
+  "revisions": {
+    "available": true,
+    "eps_current": 11.12,
+    "eps_d30": 0.0,
+    "eps_d90": 0.0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-10-31",
+        "actual": 2.78,
+        "estimate": 2.70702,
+        "surprise_pct": 2.7
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 3.45,
+        "estimate": 2.94835,
+        "surprise_pct": 17.01
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 2.9,
+        "estimate": 2.90565,
+        "surprise_pct": -0.19
+      },
+      {
+        "quarter": "2026-07-31",
+        "actual": 3.53,
+        "estimate": 3.76183,
+        "surprise_pct": -6.16
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 3.34
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-06-04",
+        "move_pct": -2.93
+      },
+      {
+        "report_date": "2026-03-27",
+        "move_pct": -0.91
+      },
+      {
+        "report_date": "2025-12-05",
+        "move_pct": 2.77
+      }
+    ],
+    "avg_abs_move_pct": 2.2,
+    "down_prints": 2,
+    "of": 3
+  },
+  "summary": [
+    "Analyst revisions in the last 30 days: 2 up, 3 down.",
+    "Price reaction to the last 3 reports, most recent first: -2.9%, -0.9%, +2.8% (average absolute move 2.2%, 2 of 3 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +3.3%."
+  ]
+}

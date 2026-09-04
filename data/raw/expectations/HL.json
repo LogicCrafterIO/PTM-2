@@ -1,0 +1,77 @@
+{
+  "ticker": "HL",
+  "as_of": "2026-09-03T12:41:49.873788+00:00",
+  "earnings_date": "2026-11-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 0.82147,
+    "eps_d30": 0.85664,
+    "eps_d90": 0.86616,
+    "change_30d_pct": -4.11,
+    "change_90d_pct": -5.16,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 7
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.12,
+        "estimate": 0.09493,
+        "surprise_pct": 26.41
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.2185,
+        "estimate": 0.18151,
+        "surprise_pct": 20.38
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.24,
+        "estimate": 0.242,
+        "surprise_pct": -0.83
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.17,
+        "estimate": 0.17817,
+        "surprise_pct": -4.59
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 10.34
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": 6.65
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": -3.01
+      },
+      {
+        "report_date": "2026-02-17",
+        "move_pct": -6.02
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": 1.17
+      }
+    ],
+    "avg_abs_move_pct": 4.21,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -5.2% over 90 days and -4.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 7 down.",
+    "Price reaction to the last 4 reports, most recent first: +6.7%, -3.0%, -6.0%, +1.2% (average absolute move 4.2%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +10.3%."
+  ]
+}

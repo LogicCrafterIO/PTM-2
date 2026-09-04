@@ -1,0 +1,55 @@
+{
+  "ticker": "DV",
+  "as_of": "2026-09-03T12:32:44.779127+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 1.02932,
+    "eps_d30": 1.07202,
+    "eps_d90": 1.10281,
+    "change_30d_pct": -3.98,
+    "change_90d_pct": -6.66,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.22,
+        "estimate": 0.26644,
+        "surprise_pct": -17.43
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.31,
+        "estimate": 0.3259,
+        "surprise_pct": -4.88
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.17,
+        "estimate": 0.19376,
+        "surprise_pct": -12.26
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.22,
+        "estimate": 0.2433,
+        "surprise_pct": -9.58
+      }
+    ],
+    "beats": 0,
+    "of": 4,
+    "avg_surprise_pct": -11.04
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -6.7% over 90 days and -4.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 5 down.",
+    "Beat consensus in 0 of the last 4 quarters, average surprise -11.0%."
+  ]
+}

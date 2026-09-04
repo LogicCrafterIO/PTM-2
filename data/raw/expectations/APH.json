@@ -1,0 +1,55 @@
+{
+  "ticker": "APH",
+  "as_of": "2026-09-03T12:33:28.242665+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 2.65831,
+    "eps_d30": 2.44573,
+    "eps_d90": 2.40665,
+    "change_30d_pct": 8.69,
+    "change_90d_pct": 10.46,
+    "analysts_up_30d": 15,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.465,
+        "estimate": 0.39919,
+        "surprise_pct": 16.49
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.485,
+        "estimate": 0.47054,
+        "surprise_pct": 3.07
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.53,
+        "estimate": 0.4734,
+        "surprise_pct": 11.96
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.675,
+        "estimate": 0.59634,
+        "surprise_pct": 13.19
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 11.18
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +10.5% over 90 days and +8.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 15 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +11.2%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "SNDR",
+  "as_of": "2026-09-03T14:46:11.255537+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.06616,
+    "eps_d30": 1.04928,
+    "eps_d90": 0.91625,
+    "change_30d_pct": 1.61,
+    "change_90d_pct": 16.36,
+    "analysts_up_30d": 15,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.12,
+        "estimate": 0.20436,
+        "surprise_pct": -41.28
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.13,
+        "estimate": 0.20009,
+        "surprise_pct": -35.03
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.13,
+        "estimate": 0.09764,
+        "surprise_pct": 33.14
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.29,
+        "estimate": 0.23368,
+        "surprise_pct": 24.1
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -4.77
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": 4.69
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": 1.22
+      },
+      {
+        "report_date": "2026-02-20",
+        "move_pct": 1.0
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": -10.52
+      }
+    ],
+    "avg_abs_move_pct": 4.36,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +16.4% over 90 days and +1.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 15 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +4.7%, +1.2%, +1.0%, -10.5% (average absolute move 4.4%, 1 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -4.8%."
+  ]
+}

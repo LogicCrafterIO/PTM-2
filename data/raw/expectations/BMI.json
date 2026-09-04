@@ -1,0 +1,55 @@
+{
+  "ticker": "BMI",
+  "as_of": "2026-09-03T12:33:27.338385+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 4.50211,
+    "eps_d30": 4.55426,
+    "eps_d90": 4.64556,
+    "change_30d_pct": -1.15,
+    "change_90d_pct": -3.09,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 7
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.19,
+        "estimate": 1.13741,
+        "surprise_pct": 4.62
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.14,
+        "estimate": 1.15755,
+        "surprise_pct": -1.52
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.93,
+        "estimate": 1.22364,
+        "surprise_pct": -24.0
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.02,
+        "estimate": 1.01272,
+        "surprise_pct": 0.72
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -5.04
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -3.1% over 90 days and -1.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 7 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -5.0%."
+  ]
+}

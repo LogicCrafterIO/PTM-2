@@ -1,0 +1,55 @@
+{
+  "ticker": "AMH",
+  "as_of": "2026-09-03T12:34:36.677109+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 0.82335,
+    "eps_d30": 0.71351,
+    "eps_d90": 0.71351,
+    "change_30d_pct": 15.39,
+    "change_90d_pct": 15.39,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.2786,
+        "estimate": 0.19947,
+        "surprise_pct": 39.67
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.34224,
+        "estimate": 0.21969,
+        "surprise_pct": 55.78
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.3589,
+        "estimate": 0.15002,
+        "surprise_pct": 139.23
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.3238,
+        "estimate": 0.15283,
+        "surprise_pct": 111.87
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 86.64
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +15.4% over 90 days and +15.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +86.6%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "AEO",
+  "as_of": "2026-09-03T12:41:02.037977+00:00",
+  "earnings_date": "2026-12-02",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.74,
+    "eps_d30": 1.71,
+    "eps_d90": 1.73,
+    "change_30d_pct": 1.75,
+    "change_90d_pct": 0.58,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-07-31",
+        "actual": 0.45,
+        "estimate": 0.21,
+        "surprise_pct": 114.29
+      },
+      {
+        "quarter": "2025-10-31",
+        "actual": 0.53,
+        "estimate": 0.4275,
+        "surprise_pct": 23.98
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 0.5,
+        "estimate": 0.716,
+        "surprise_pct": -30.17
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 0.14,
+        "estimate": 0.1075,
+        "surprise_pct": 30.23
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 34.58
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-06-03",
+        "move_pct": 1.87
+      },
+      {
+        "report_date": "2026-03-30",
+        "move_pct": -0.25
+      },
+      {
+        "report_date": "2025-12-09",
+        "move_pct": 6.65
+      },
+      {
+        "report_date": "2025-09-09",
+        "move_pct": -1.75
+      }
+    ],
+    "avg_abs_move_pct": 2.63,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.6% over 90 days and +1.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.9%, -0.2%, +6.7%, -1.8% (average absolute move 2.6%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +34.6%."
+  ]
+}

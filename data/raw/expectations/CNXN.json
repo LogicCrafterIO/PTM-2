@@ -1,0 +1,55 @@
+{
+  "ticker": "CNXN",
+  "as_of": "2026-09-03T12:34:54.104078+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 4.175,
+    "eps_d30": 3.925,
+    "eps_d90": 3.925,
+    "change_30d_pct": 6.37,
+    "change_90d_pct": 6.37,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.97,
+        "estimate": 1.005,
+        "surprise_pct": -3.48
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.91,
+        "estimate": 0.86,
+        "surprise_pct": 5.81
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.77,
+        "estimate": 0.62,
+        "surprise_pct": 24.19
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.31,
+        "estimate": 1.04,
+        "surprise_pct": 25.96
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 13.12
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +6.4% over 90 days and +6.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 0 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +13.1%."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "AMCR",
+  "as_of": "2026-09-03T12:34:30.853440+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 4.2708,
+    "eps_d30": 4.28619,
+    "eps_d90": 4.30423,
+    "change_30d_pct": -0.36,
+    "change_90d_pct": -0.78,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.965,
+        "estimate": 0.91988,
+        "surprise_pct": 4.9
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.86,
+        "estimate": 0.83931,
+        "surprise_pct": 2.47
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.96,
+        "estimate": 0.95474,
+        "surprise_pct": 0.55
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.23,
+        "estimate": 1.17992,
+        "surprise_pct": 4.24
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 3.04
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.8% over 90 days and -0.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 1 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +3.0%."
+  ]
+}

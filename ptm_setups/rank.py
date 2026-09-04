@@ -172,6 +172,17 @@ def _clip(value: object, limit: int) -> str:
     return str(value or "").strip()[:limit]
 
 
+def _prose(value: object, limit: int) -> str:
+    """Clip a rendered-as-prose field, collapsing the whitespace first.
+
+    Every caller emits its result as a single markdown line behind a bold
+    lead-in ("**Why this group is not COLD (upside):** ..."), so a blank line
+    inside a multi-sentence answer would end the paragraph and leave the rest
+    of the argument dangling as unlabelled body text.
+    """
+    return clip_words(" ".join(str(value or "").split()), limit)
+
+
 # Character budget for the serialised packets inside one industry prompt. Real
 # industries already exceed it: eight members with four EDGAR packs between
 # them ran to 26k, and every additional cached pack pushes another group over.
@@ -189,8 +200,17 @@ _PACKET_CHARS = 48000
 # here, and ranking quality is the only thing it buys. Reasoning tokens come
 # out of the same allowance, so the headroom has to cover thinking AND five
 # prose fields per member.
+# Guards on the model's prose fields, in characters. They are NOT display
+# widths: everything measured against them renders as a paragraph or a bullet,
+# never inside a table cell, so the only job here is to stop a runaway model
+# from writing a page. The values that suit a cell (see _row's guidance and
+# label) were being applied to the analysis too, and cut the why-not-COLD
+# judgement mid-argument.
+_PROSE_CHARS = 2600   # why_not_cold, headline, tactical, summary, a pick's thesis
+_CASE_CHARS = 1200    # catalyst / setup / risk, per name and per pick
+
 _TOKENS_PER_MEMBER = 2400
-_TOKENS_OVERHEAD = 16000
+_TOKENS_OVERHEAD = 18000  # +2k for the fuller why-not-COLD judgement
 _TOKENS_CEILING = 64000
 
 
@@ -308,7 +328,11 @@ def _why_not_cold(payload: dict) -> dict | None:
     direction = _clip(raw.get("direction"), 12).lower()
     if direction not in ("upside", "downside"):
         return None
-    reason = clip_words(raw.get("reason"), 460)
+    # This renders as its own paragraph in the markdown and in the viewer, not
+    # as a table cell, so the 460 that suits a cell was cutting the pass's most
+    # analytical field mid-argument ("...not group demand…"). The limit here is
+    # only a guard against a runaway model, not a display width.
+    reason = _prose(raw.get("reason"), _PROSE_CHARS)
     if not reason:
         return None
     return {"direction": direction, "reason": reason}
@@ -327,13 +351,21 @@ def _heat_prompt(theme_row: dict, packets: list[dict], web: dict | None, ref: da
         "thesis when the industry offers no credible one), "
         "tactical (one or two sentences on how to sequence these trades around the prints) and "
         "why_not_cold (an object {direction, reason}: the qualitative reason this group is NOT COLD, "
-        "and it must be FORWARD-LOOKING — what happens next from here: the order flow and demand the "
-        "next prints will report, the trajectory guidance and revisions imply, what surveys and "
-        "backlogs point to. direction is exactly one of upside, downside and names which side that "
-        "reason favours; reason is one or two sentences grounded in the searched developments or the "
-        "ISM demand data, never a restatement of the 90-day revision table you were given — and when "
-        "the forward evidence genuinely points against the breadth, say so and let direction "
-        "disagree with it). "
+        "and it must be FORWARD-LOOKING — what happens next from here, never a description of what "
+        "already happened. direction is exactly one of upside, downside and names which side that "
+        "reason favours. reason is the fullest judgement you write in this pass — four to seven "
+        "sentences, and it must work through, in this order: (a) the dated forward evidence, citing "
+        "the specific figure and where it came from (a backlog, order book, delivery rate, capacity "
+        "or price datapoint from the searched developments, the filed guidance language, or the ISM "
+        "demand data); (b) what that means the NEXT prints should report — the line items and the "
+        "guidance action it implies, not a direction word; (c) which named members it reaches and "
+        "which one diverges from it, saying whether the divergence is idiosyncratic or the first "
+        "sign the group read is wrong; (d) the observable that would flip this group to COLD — the "
+        "datapoint, print or guidance change you would have to see, and roughly when. Ground every "
+        "step in the searched developments, the filed text or the ISM data, never in a restatement "
+        "of the 90-day revision table you were given, and cite no figure that is not in front of "
+        "you. When the forward evidence genuinely points against the breadth, say so and let "
+        "direction disagree with it). "
         "side is exactly one of: long, short, avoid. conviction is exactly one of: high, medium, low. "
         "rank is 1..N, 1 = best risk/reward, no ties. label is a short tag like 'Strongest long' or "
         "'Lagger — wait for evidence'. guidance_valuation is at most 200 characters on what filed "
@@ -453,9 +485,9 @@ def _row(packet: dict, item: dict | None, rank: int, note: str = "") -> dict:
         "ranked_on": clip_words((item or {}).get("ranked_on"), 180),
         "guidance_valuation": guidance,
         "guidance_valuation_cell": f"{guidance} · {val}" if guidance else val,
-        "catalyst": clip_words((item or {}).get("catalyst"), 600),
-        "setup": clip_words((item or {}).get("setup"), 600),
-        "risk": clip_words((item or {}).get("risk"), 500) or note,
+        "catalyst": _prose((item or {}).get("catalyst"), _CASE_CHARS),
+        "setup": _prose((item or {}).get("setup"), _CASE_CHARS),
+        "risk": _prose((item or {}).get("risk"), _CASE_CHARS) or note,
         "flag": (packet.get("valuation") or {}).get("flag"),
         "flag_detail": (packet.get("valuation") or {}).get("flag_detail"),
         "pe1": (packet.get("valuation") or {}).get("forward_pe_fy1"),
@@ -483,10 +515,10 @@ def _best_pick(raw: object, side: str, by_ticker: dict[str, dict]) -> dict | Non
     ticker = _clip(raw.get("ticker"), 12).upper()
     case = {
         "side": side,
-        "thesis": clip_words(raw.get("thesis"), 1200),
-        "catalyst": clip_words(raw.get("catalyst"), 900),
-        "setup": clip_words(raw.get("setup"), 900),
-        "risk": clip_words(raw.get("risk"), 900),
+        "thesis": _prose(raw.get("thesis"), _PROSE_CHARS),
+        "catalyst": _prose(raw.get("catalyst"), _CASE_CHARS),
+        "setup": _prose(raw.get("setup"), _CASE_CHARS),
+        "risk": _prose(raw.get("risk"), _CASE_CHARS),
         "conviction": (_clip(raw.get("conviction"), 12).lower()
                        if _clip(raw.get("conviction"), 12).lower() in _CONVICTIONS else "medium"),
     }
@@ -615,8 +647,8 @@ def rank_group(theme_row: dict, quant_by_ticker: dict[str, dict], ref: date,
     out["model"] = used[0] if used else want
     if used and used[0] != want:
         log(f"setups rank {theme}: asked for {want}, answered by {used[0]}")
-    out["headline"] = _clip(payload.get("headline"), 900)
-    out["tactical"] = _clip(payload.get("tactical"), 500)
+    out["headline"] = _prose(payload.get("headline"), _PROSE_CHARS)
+    out["tactical"] = _prose(payload.get("tactical"), _PROSE_CHARS)
     out["why_not_cold"] = _why_not_cold(payload)
     by_ticker = {p["ticker"]: p for p in packets}
     out["best_long"] = _best_pick(payload.get("best_long"), "long", by_ticker)
@@ -792,7 +824,7 @@ def _final_round(candidates: list[dict], ref: date, model: str | None = None) ->
     out["model"] = used[0] if used else want
     if used and used[0] != want:
         log(f"setups final: asked for {want}, answered by {used[0]}")
-    out["summary"] = _clip(payload.get("summary"), 900)
+    out["summary"] = _prose(payload.get("summary"), _PROSE_CHARS)
     by_side = {"long": {}, "short": {}}
     for c in candidates:
         by_side.setdefault(c["side"], {})[c["ticker"]] = c
@@ -812,7 +844,7 @@ def _final_round(candidates: list[dict], ref: date, model: str | None = None) ->
             except (TypeError, ValueError):
                 rank = len(picked) + 1
             picked.append((rank, {"ticker": ticker, "theme": pool[ticker]["theme"],
-                                  "why": _clip(item.get("why"), 300)}))
+                                  "why": clip_words(item.get("why"), 300)}))
         picked.sort(key=lambda pair: pair[0])
         rows = [{**row, "rank": i} for i, (_, row) in enumerate(picked, 1)]
         for ticker, c in pool.items():  # a candidate the model dropped still appears

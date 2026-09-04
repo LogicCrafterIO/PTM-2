@@ -1,0 +1,55 @@
+{
+  "ticker": "ALV",
+  "as_of": "2026-09-03T12:32:53.753436+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 10.231,
+    "eps_d30": 10.50701,
+    "eps_d90": 10.52247,
+    "change_30d_pct": -2.63,
+    "change_90d_pct": -2.77,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 12
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.32,
+        "estimate": 2.08775,
+        "surprise_pct": 11.12
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 3.19,
+        "estimate": 2.88042,
+        "surprise_pct": 10.75
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.05,
+        "estimate": 1.82062,
+        "surprise_pct": 12.6
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.43,
+        "estimate": 2.48072,
+        "surprise_pct": -2.04
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 8.11
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.8% over 90 days and -2.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 12 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +8.1%."
+  ]
+}

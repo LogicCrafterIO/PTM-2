@@ -1,0 +1,55 @@
+{
+  "ticker": "CALM",
+  "as_of": "2026-09-03T12:34:25.848489+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 1.435,
+    "eps_d30": 3.08,
+    "eps_d90": 3.605,
+    "change_30d_pct": -53.41,
+    "change_90d_pct": -60.19,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 4.00123,
+        "estimate": 5.35,
+        "surprise_pct": -25.21
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 2.1433,
+        "estimate": 2.005,
+        "surprise_pct": 6.9
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 1.0649,
+        "estimate": 0.78,
+        "surprise_pct": 36.53
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": -0.77468,
+        "estimate": 0.11,
+        "surprise_pct": -804.25
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -196.51
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -60.2% over 90 days and -53.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 2 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -196.5%."
+  ]
+}

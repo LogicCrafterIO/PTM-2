@@ -1,0 +1,55 @@
+{
+  "ticker": "ABBV",
+  "as_of": "2026-09-03T12:34:28.595542+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 14.0106,
+    "eps_d30": 14.13084,
+    "eps_d90": 14.24065,
+    "change_30d_pct": -0.85,
+    "change_90d_pct": -1.62,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 16
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.86,
+        "estimate": 1.78451,
+        "surprise_pct": 4.23
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.71,
+        "estimate": 2.65266,
+        "surprise_pct": 2.16
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.65,
+        "estimate": 2.67067,
+        "surprise_pct": -0.77
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.65,
+        "estimate": 3.60841,
+        "surprise_pct": 1.15
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 1.69
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -1.6% over 90 days and -0.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 16 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +1.7%."
+  ]
+}

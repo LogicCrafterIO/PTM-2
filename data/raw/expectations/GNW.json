@@ -1,0 +1,71 @@
+{
+  "ticker": "GNW",
+  "as_of": "2026-09-03T12:41:47.969139+00:00",
+  "earnings_date": "2026-11-07",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.1,
+    "eps_d30": 0.41,
+    "eps_d90": 0.41,
+    "change_30d_pct": 168.29,
+    "change_90d_pct": 168.29,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.04,
+        "estimate": 0.05,
+        "surprise_pct": -20.0
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.28,
+        "estimate": 0.2,
+        "surprise_pct": 40.0
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.29,
+        "estimate": 0.27,
+        "surprise_pct": 7.41
+      }
+    ],
+    "beats": 2,
+    "of": 3,
+    "avg_surprise_pct": 9.14
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": 0.21
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": 3.38
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": -2.43
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": 0.23
+      }
+    ],
+    "avg_abs_move_pct": 1.56,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +168.3% over 90 days and +168.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.2%, +3.4%, -2.4%, +0.2% (average absolute move 1.6%, 1 of 4 negative).",
+    "Beat consensus in 2 of the last 3 quarters, average surprise +9.1%."
+  ]
+}

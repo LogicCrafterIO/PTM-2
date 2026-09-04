@@ -1,0 +1,77 @@
+{
+  "ticker": "ZBRA",
+  "as_of": "2026-09-03T12:42:41.861051+00:00",
+  "earnings_date": "2026-11-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 21.12142,
+    "eps_d30": 18.55689,
+    "eps_d90": 18.541,
+    "change_30d_pct": 13.82,
+    "change_90d_pct": 13.92,
+    "analysts_up_30d": 15,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 3.88,
+        "estimate": 3.75234,
+        "surprise_pct": 3.4
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 4.33,
+        "estimate": 4.33473,
+        "surprise_pct": -0.11
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 4.75,
+        "estimate": 4.24577,
+        "surprise_pct": 11.88
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 6.35,
+        "estimate": 4.37617,
+        "surprise_pct": 45.1
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 15.07
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": 26.47
+      },
+      {
+        "report_date": "2026-05-12",
+        "move_pct": 11.44
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": 8.57
+      },
+      {
+        "report_date": "2025-10-28",
+        "move_pct": -11.68
+      }
+    ],
+    "avg_abs_move_pct": 14.54,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +13.9% over 90 days and +13.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 15 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +26.5%, +11.4%, +8.6%, -11.7% (average absolute move 14.5%, 1 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +15.1%."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "CERT",
+  "as_of": "2026-09-03T12:33:49.262259+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 0.3421,
+    "eps_d30": 0.3834,
+    "eps_d90": 0.382,
+    "change_30d_pct": -10.77,
+    "change_90d_pct": -10.45,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 7
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.14,
+        "estimate": 0.10834,
+        "surprise_pct": 29.22
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.09,
+        "estimate": 0.1012,
+        "surprise_pct": -11.07
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.09,
+        "estimate": 0.106,
+        "surprise_pct": -15.09
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.08,
+        "estimate": 0.09111,
+        "surprise_pct": -12.19
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -2.28
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -10.4% over 90 days and -10.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 7 down.",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -2.3%."
+  ]
+}

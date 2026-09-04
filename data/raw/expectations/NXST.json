@@ -1,0 +1,77 @@
+{
+  "ticker": "NXST",
+  "as_of": "2026-09-03T12:42:07.400592+00:00",
+  "earnings_date": "2026-11-06",
+  "revisions": {
+    "available": true,
+    "eps_current": 33.50086,
+    "eps_d30": 34.19179,
+    "eps_d90": 34.19179,
+    "change_30d_pct": -2.02,
+    "change_90d_pct": -2.02,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.0468,
+        "estimate": 1.83,
+        "surprise_pct": -42.8
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 5.4757,
+        "estimate": 3.55,
+        "surprise_pct": 54.25
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 6.6098,
+        "estimate": 4.39,
+        "surprise_pct": 50.56
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 4.97723,
+        "estimate": 7.47,
+        "surprise_pct": -33.37
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 7.16
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-07",
+        "move_pct": 3.09
+      },
+      {
+        "report_date": "2026-05-08",
+        "move_pct": 4.25
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": 1.97
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -3.58
+      }
+    ],
+    "avg_abs_move_pct": 3.22,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.0% over 90 days and -2.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +3.1%, +4.2%, +2.0%, -3.6% (average absolute move 3.2%, 1 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +7.2%."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "BNL",
+  "as_of": "2026-09-03T12:33:55.985121+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 0.74109,
+    "eps_d30": 0.79812,
+    "eps_d90": 0.73911,
+    "change_30d_pct": -7.15,
+    "change_90d_pct": 0.27,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.1377,
+        "estimate": 0.1702,
+        "surprise_pct": -19.1
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.1976,
+        "estimate": 0.17264,
+        "surprise_pct": 14.46
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.237,
+        "estimate": 0.17932,
+        "surprise_pct": 32.17
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.1935,
+        "estimate": 0.18506,
+        "surprise_pct": 4.56
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 8.02
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.3% over 90 days and -7.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 0 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +8.0%."
+  ]
+}

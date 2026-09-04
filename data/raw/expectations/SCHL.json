@@ -1,0 +1,77 @@
+{
+  "ticker": "SCHL",
+  "as_of": "2026-09-03T12:42:19.358051+00:00",
+  "earnings_date": "2026-10-23",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.6,
+    "eps_d30": 2.67,
+    "eps_d90": 2.67,
+    "change_30d_pct": -40.07,
+    "change_90d_pct": -40.07,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": -2.52,
+        "estimate": -2.41,
+        "surprise_pct": -4.56
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 2.57,
+        "estimate": 2.07,
+        "surprise_pct": 24.15
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": -0.15,
+        "estimate": -0.365,
+        "surprise_pct": 58.9
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 2.19,
+        "estimate": 2.16,
+        "surprise_pct": 1.39
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 19.97
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-24",
+        "move_pct": -7.08
+      },
+      {
+        "report_date": "2026-03-20",
+        "move_pct": 8.79
+      },
+      {
+        "report_date": "2025-12-19",
+        "move_pct": -6.15
+      },
+      {
+        "report_date": "2025-09-19",
+        "move_pct": -12.02
+      }
+    ],
+    "avg_abs_move_pct": 8.51,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -40.1% over 90 days and -40.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -7.1%, +8.8%, -6.2%, -12.0% (average absolute move 8.5%, 3 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +20.0%."
+  ]
+}

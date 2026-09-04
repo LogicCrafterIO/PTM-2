@@ -1,0 +1,77 @@
+{
+  "ticker": "TDG",
+  "as_of": "2026-09-03T12:42:27.009386+00:00",
+  "earnings_date": "2026-11-03",
+  "revisions": {
+    "available": true,
+    "eps_current": 41.18984,
+    "eps_d30": 40.01499,
+    "eps_d90": 40.01463,
+    "change_30d_pct": 2.94,
+    "change_90d_pct": 2.94,
+    "analysts_up_30d": 15,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 10.82,
+        "estimate": 10.0523,
+        "surprise_pct": 7.64
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 8.23,
+        "estimate": 8.0413,
+        "surprise_pct": 2.35
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 9.85,
+        "estimate": 9.70857,
+        "surprise_pct": 1.46
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 10.87,
+        "estimate": 10.30093,
+        "surprise_pct": 5.52
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 4.24
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": -0.82
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": 3.62
+      },
+      {
+        "report_date": "2026-02-03",
+        "move_pct": -9.31
+      },
+      {
+        "report_date": "2025-11-12",
+        "move_pct": 1.08
+      }
+    ],
+    "avg_abs_move_pct": 3.71,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.9% over 90 days and +2.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 15 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.8%, +3.6%, -9.3%, +1.1% (average absolute move 3.7%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +4.2%."
+  ]
+}

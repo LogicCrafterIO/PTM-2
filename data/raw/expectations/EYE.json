@@ -1,0 +1,55 @@
+{
+  "ticker": "EYE",
+  "as_of": "2026-09-03T12:34:49.478236+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 1.00539,
+    "eps_d30": 0.96755,
+    "eps_d90": 0.96838,
+    "change_30d_pct": 3.91,
+    "change_90d_pct": 3.82,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-06-30",
+        "actual": 0.18,
+        "estimate": 0.13735,
+        "surprise_pct": 31.05
+      },
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.04,
+        "estimate": 0.0825,
+        "surprise_pct": -51.52
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.15,
+        "estimate": 0.0603,
+        "surprise_pct": 148.76
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.25,
+        "estimate": 0.18199,
+        "surprise_pct": 37.37
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 41.41
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.8% over 90 days and +3.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 2 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +41.4%."
+  ]
+}

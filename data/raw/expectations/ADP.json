@@ -1,0 +1,77 @@
+{
+  "ticker": "ADP",
+  "as_of": "2026-09-03T12:41:01.089860+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 12.25722,
+    "eps_d30": 12.21167,
+    "eps_d90": 12.19344,
+    "change_30d_pct": 0.37,
+    "change_90d_pct": 0.52,
+    "analysts_up_30d": 13,
+    "analysts_down_30d": 4
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.49,
+        "estimate": 2.44263,
+        "surprise_pct": 1.94
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.62,
+        "estimate": 2.56861,
+        "surprise_pct": 2.0
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 3.37,
+        "estimate": 3.29555,
+        "surprise_pct": 2.26
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.64,
+        "estimate": 2.59887,
+        "surprise_pct": 1.58
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 1.94
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": -0.2
+      },
+      {
+        "report_date": "2026-04-30",
+        "move_pct": -1.45
+      },
+      {
+        "report_date": "2026-01-29",
+        "move_pct": -1.88
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": -0.47
+      }
+    ],
+    "avg_abs_move_pct": 1.0,
+    "down_prints": 4,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.5% over 90 days and +0.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 13 up, 4 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.2%, -1.4%, -1.9%, -0.5% (average absolute move 1.0%, 4 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +1.9%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "EBAY",
+  "as_of": "2026-09-03T12:41:39.172612+00:00",
+  "earnings_date": "2026-11-07",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.12668,
+    "eps_d30": 6.09001,
+    "eps_d90": 6.13017,
+    "change_30d_pct": 0.6,
+    "change_90d_pct": -0.06,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 4
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.36,
+        "estimate": 1.3346,
+        "surprise_pct": 1.9
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.41,
+        "estimate": 1.35007,
+        "surprise_pct": 4.44
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.66,
+        "estimate": 1.58056,
+        "surprise_pct": 5.03
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.6,
+        "estimate": 1.50601,
+        "surprise_pct": 6.24
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 4.4
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -0.91
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": 3.42
+      },
+      {
+        "report_date": "2026-02-19",
+        "move_pct": 3.13
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": -15.88
+      }
+    ],
+    "avg_abs_move_pct": 5.83,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.1% over 90 days and +0.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 4 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.9%, +3.4%, +3.1%, -15.9% (average absolute move 5.8%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +4.4%."
+  ]
+}

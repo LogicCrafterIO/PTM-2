@@ -1,0 +1,55 @@
+{
+  "ticker": "ALB",
+  "as_of": "2026-09-03T12:33:03.943910+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 11.56498,
+    "eps_d30": 12.59022,
+    "eps_d90": 11.64305,
+    "change_30d_pct": -8.14,
+    "change_90d_pct": -0.67,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 8
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": -0.19,
+        "estimate": -0.8767,
+        "surprise_pct": 78.33
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.53,
+        "estimate": -0.48804,
+        "surprise_pct": -8.6
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.95,
+        "estimate": 1.31347,
+        "surprise_pct": 124.6
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.75,
+        "estimate": 3.24074,
+        "surprise_pct": 15.71
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 52.51
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.7% over 90 days and -8.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 8 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +52.5%."
+  ]
+}

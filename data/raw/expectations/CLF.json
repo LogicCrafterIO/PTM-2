@@ -1,0 +1,55 @@
+{
+  "ticker": "CLF",
+  "as_of": "2026-09-03T12:34:04.568707+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": -0.17673,
+    "eps_d30": -0.35829,
+    "eps_d90": -0.45392,
+    "change_30d_pct": -50.67,
+    "change_90d_pct": -61.07,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": -0.45,
+        "estimate": -0.4525,
+        "surprise_pct": 0.55
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.43,
+        "estimate": -0.61548,
+        "surprise_pct": 30.14
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.4,
+        "estimate": -0.416,
+        "surprise_pct": 3.85
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": -0.2,
+        "estimate": -0.21563,
+        "surprise_pct": 7.25
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 10.45
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -61.1% over 90 days and -50.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 1 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +10.4%."
+  ]
+}

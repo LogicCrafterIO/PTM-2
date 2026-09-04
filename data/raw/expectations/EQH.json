@@ -1,0 +1,55 @@
+{
+  "ticker": "EQH",
+  "as_of": "2026-09-03T12:34:08.168868+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 7.16645,
+    "eps_d30": 7.14842,
+    "eps_d90": 7.05574,
+    "change_30d_pct": 0.25,
+    "change_90d_pct": 1.57,
+    "analysts_up_30d": 8,
+    "analysts_down_30d": 4
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.48,
+        "estimate": 1.60959,
+        "surprise_pct": -8.05
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.73,
+        "estimate": 1.74566,
+        "surprise_pct": -0.9
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.62,
+        "estimate": 1.6087,
+        "surprise_pct": 0.7
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.7,
+        "estimate": 1.64441,
+        "surprise_pct": 3.38
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -1.22
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.6% over 90 days and +0.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 8 up, 4 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -1.2%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "APAM",
+  "as_of": "2026-09-03T12:41:08.952118+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.8625,
+    "eps_d30": 3.81,
+    "eps_d90": 3.8275,
+    "change_30d_pct": 1.38,
+    "change_90d_pct": 0.91,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.02,
+        "estimate": 0.97,
+        "surprise_pct": 5.15
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.26,
+        "estimate": 1.0875,
+        "surprise_pct": 15.86
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.87,
+        "estimate": 0.9275,
+        "surprise_pct": -6.2
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.94,
+        "estimate": 0.9125,
+        "surprise_pct": 3.01
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 4.46
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": -1.06
+      },
+      {
+        "report_date": "2026-05-04",
+        "move_pct": -1.86
+      },
+      {
+        "report_date": "2026-02-20",
+        "move_pct": -0.55
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": 0.58
+      }
+    ],
+    "avg_abs_move_pct": 1.01,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.9% over 90 days and +1.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.1%, -1.9%, -0.6%, +0.6% (average absolute move 1.0%, 3 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +4.5%."
+  ]
+}

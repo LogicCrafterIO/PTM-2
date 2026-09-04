@@ -1,0 +1,55 @@
+{
+  "ticker": "COTY",
+  "as_of": "2026-09-03T12:33:16.058519+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 0.32864,
+    "eps_d30": 0.3439,
+    "eps_d90": 0.36666,
+    "change_30d_pct": -4.44,
+    "change_90d_pct": -10.37,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.12,
+        "estimate": 0.14893,
+        "surprise_pct": -19.43
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.14,
+        "estimate": 0.18463,
+        "surprise_pct": -24.17
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.03,
+        "estimate": -0.00362,
+        "surprise_pct": -728.73
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": -0.02,
+        "estimate": -0.00861,
+        "surprise_pct": -132.29
+      }
+    ],
+    "beats": 0,
+    "of": 4,
+    "avg_surprise_pct": -226.16
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -10.4% over 90 days and -4.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 3 down.",
+    "Beat consensus in 0 of the last 4 quarters, average surprise -226.2%."
+  ]
+}

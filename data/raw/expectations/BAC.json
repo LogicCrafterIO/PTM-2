@@ -1,0 +1,55 @@
+{
+  "ticker": "BAC",
+  "as_of": "2026-09-03T12:33:37.670308+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 4.67973,
+    "eps_d30": 4.65123,
+    "eps_d90": 4.47548,
+    "change_30d_pct": 0.61,
+    "change_90d_pct": 4.56,
+    "analysts_up_30d": 18,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.06,
+        "estimate": 0.9461,
+        "surprise_pct": 12.04
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.98,
+        "estimate": 0.95866,
+        "surprise_pct": 2.23
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.11,
+        "estimate": 1.02044,
+        "surprise_pct": 8.78
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.21,
+        "estimate": 1.12309,
+        "surprise_pct": 7.74
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 7.7
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +4.6% over 90 days and +0.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 18 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +7.7%."
+  ]
+}

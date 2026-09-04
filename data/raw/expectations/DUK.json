@@ -1,0 +1,55 @@
+{
+  "ticker": "DUK",
+  "as_of": "2026-09-03T12:33:30.477805+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 6.7109,
+    "eps_d30": 6.70549,
+    "eps_d90": 6.70499,
+    "change_30d_pct": 0.08,
+    "change_90d_pct": 0.09,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.81,
+        "estimate": 1.74959,
+        "surprise_pct": 3.45
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.5,
+        "estimate": 1.49267,
+        "surprise_pct": 0.49
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.93,
+        "estimate": 1.79977,
+        "surprise_pct": 7.24
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.43,
+        "estimate": 1.30462,
+        "surprise_pct": 9.61
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 5.2
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.1% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 3 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +5.2%."
+  ]
+}

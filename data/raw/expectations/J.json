@@ -1,0 +1,55 @@
+{
+  "ticker": "J",
+  "as_of": "2026-09-03T12:33:31.382954+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 7.25712,
+    "eps_d30": 7.21854,
+    "eps_d90": 7.2455,
+    "change_30d_pct": 0.53,
+    "change_90d_pct": 0.16,
+    "analysts_up_30d": 10,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.75,
+        "estimate": 1.67981,
+        "surprise_pct": 4.18
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.53,
+        "estimate": 1.5032,
+        "surprise_pct": 1.78
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.75,
+        "estimate": 1.63417,
+        "surprise_pct": 7.09
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.84,
+        "estimate": 1.82538,
+        "surprise_pct": 0.8
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 3.46
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.2% over 90 days and +0.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 10 up, 1 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +3.5%."
+  ]
+}

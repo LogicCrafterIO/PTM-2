@@ -1,0 +1,55 @@
+{
+  "ticker": "AXP",
+  "as_of": "2026-09-03T12:34:26.309554+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 17.6721,
+    "eps_d30": 17.66177,
+    "eps_d90": 17.65009,
+    "change_30d_pct": 0.06,
+    "change_90d_pct": 0.12,
+    "analysts_up_30d": 8,
+    "analysts_down_30d": 13
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 4.14,
+        "estimate": 3.99559,
+        "surprise_pct": 3.61
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 3.53,
+        "estimate": 3.53362,
+        "surprise_pct": -0.1
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 4.28,
+        "estimate": 3.99336,
+        "surprise_pct": 7.18
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 4.53,
+        "estimate": 4.40307,
+        "surprise_pct": 2.88
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 3.39
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.1% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 8 up, 13 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +3.4%."
+  ]
+}

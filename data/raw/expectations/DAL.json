@@ -1,0 +1,77 @@
+{
+  "ticker": "DAL",
+  "as_of": "2026-09-03T12:41:34.660393+00:00",
+  "earnings_date": "2026-10-09",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.47742,
+    "eps_d30": 6.6309,
+    "eps_d90": 5.48381,
+    "change_30d_pct": -2.31,
+    "change_90d_pct": 18.12,
+    "analysts_up_30d": 22,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.71,
+        "estimate": 1.52854,
+        "surprise_pct": 11.87
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.55,
+        "estimate": 1.54588,
+        "surprise_pct": 0.27
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.64,
+        "estimate": 0.57477,
+        "surprise_pct": 11.35
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.56,
+        "estimate": 1.4922,
+        "surprise_pct": 4.54
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 7.01
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-10",
+        "move_pct": -1.81
+      },
+      {
+        "report_date": "2026-04-08",
+        "move_pct": 3.75
+      },
+      {
+        "report_date": "2026-02-11",
+        "move_pct": -4.08
+      },
+      {
+        "report_date": "2025-10-09",
+        "move_pct": 4.29
+      }
+    ],
+    "avg_abs_move_pct": 3.48,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +18.1% over 90 days and -2.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 22 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.8%, +3.8%, -4.1%, +4.3% (average absolute move 3.5%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +7.0%."
+  ]
+}

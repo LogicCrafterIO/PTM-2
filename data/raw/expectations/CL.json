@@ -1,0 +1,77 @@
+{
+  "ticker": "CL",
+  "as_of": "2026-09-03T12:41:24.969887+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 3.87527,
+    "eps_d30": 3.81432,
+    "eps_d90": 3.81129,
+    "change_30d_pct": 1.6,
+    "change_90d_pct": 1.68,
+    "analysts_up_30d": 18,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.91,
+        "estimate": 0.88898,
+        "surprise_pct": 2.36
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.95,
+        "estimate": 0.91181,
+        "surprise_pct": 4.19
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.97,
+        "estimate": 0.94452,
+        "surprise_pct": 2.7
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.99,
+        "estimate": 0.94709,
+        "surprise_pct": 4.53
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 3.45
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": -0.33
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": 2.23
+      },
+      {
+        "report_date": "2026-02-23",
+        "move_pct": 2.11
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": 0.71
+      }
+    ],
+    "avg_abs_move_pct": 1.34,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.7% over 90 days and +1.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 18 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.3%, +2.2%, +2.1%, +0.7% (average absolute move 1.3%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +3.5%."
+  ]
+}

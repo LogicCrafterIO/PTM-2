@@ -1,0 +1,77 @@
+{
+  "ticker": "VRSN",
+  "as_of": "2026-09-03T12:42:37.172920+00:00",
+  "earnings_date": "2026-10-22",
+  "revisions": {
+    "available": true,
+    "eps_current": 9.56571,
+    "eps_d30": 9.56071,
+    "eps_d90": 9.47795,
+    "change_30d_pct": 0.05,
+    "change_90d_pct": 0.93,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.27,
+        "estimate": 2.24,
+        "surprise_pct": 1.34
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.23,
+        "estimate": 2.27821,
+        "surprise_pct": -2.12
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.34,
+        "estimate": 2.2456,
+        "surprise_pct": 4.2
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.38,
+        "estimate": 2.3538,
+        "surprise_pct": 1.11
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 1.13
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-23",
+        "move_pct": -0.38
+      },
+      {
+        "report_date": "2026-04-23",
+        "move_pct": 2.64
+      },
+      {
+        "report_date": "2026-02-05",
+        "move_pct": 0.68
+      },
+      {
+        "report_date": "2025-10-23",
+        "move_pct": -0.54
+      }
+    ],
+    "avg_abs_move_pct": 1.06,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.9% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.4%, +2.6%, +0.7%, -0.5% (average absolute move 1.1%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +1.1%."
+  ]
+}

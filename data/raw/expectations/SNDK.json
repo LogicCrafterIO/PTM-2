@@ -1,0 +1,77 @@
+{
+  "ticker": "SNDK",
+  "as_of": "2026-09-03T12:42:22.844613+00:00",
+  "earnings_date": "2026-11-15",
+  "revisions": {
+    "available": true,
+    "eps_current": 214.09818,
+    "eps_d30": 212.60059,
+    "eps_d90": 175.37572,
+    "change_30d_pct": 0.7,
+    "change_90d_pct": 22.08,
+    "analysts_up_30d": 11,
+    "analysts_down_30d": 4
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.22,
+        "estimate": 0.89122,
+        "surprise_pct": 36.89
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 6.2,
+        "estimate": 3.54338,
+        "surprise_pct": 74.97
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 23.41,
+        "estimate": 14.66111,
+        "surprise_pct": 59.67
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 39.25,
+        "estimate": 34.515,
+        "surprise_pct": 13.72
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 46.31
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-17",
+        "move_pct": 8.88
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": 8.25
+      },
+      {
+        "report_date": "2026-01-30",
+        "move_pct": 6.85
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": 15.31
+      }
+    ],
+    "avg_abs_move_pct": 9.82,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +22.1% over 90 days and +0.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 11 up, 4 down.",
+    "Price reaction to the last 4 reports, most recent first: +8.9%, +8.2%, +6.8%, +15.3% (average absolute move 9.8%, 0 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +46.3%."
+  ]
+}

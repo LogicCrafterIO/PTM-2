@@ -1,0 +1,77 @@
+{
+  "ticker": "CVNA",
+  "as_of": "2026-09-03T12:41:30.951849+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.54654,
+    "eps_d30": 1.53987,
+    "eps_d90": 1.54545,
+    "change_30d_pct": 0.43,
+    "change_90d_pct": 0.07,
+    "analysts_up_30d": 5,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.206,
+        "estimate": 0.264,
+        "surprise_pct": -21.97
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.844,
+        "estimate": 0.23511,
+        "surprise_pct": 258.98
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.338,
+        "estimate": 0.30258,
+        "surprise_pct": 11.71
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.42,
+        "estimate": 0.38149,
+        "surprise_pct": 10.09
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 64.7
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": 0.38
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": -2.42
+      },
+      {
+        "report_date": "2026-02-18",
+        "move_pct": 3.02
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": -2.28
+      }
+    ],
+    "avg_abs_move_pct": 2.02,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.1% over 90 days and +0.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 5 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.4%, -2.4%, +3.0%, -2.3% (average absolute move 2.0%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +64.7%."
+  ]
+}

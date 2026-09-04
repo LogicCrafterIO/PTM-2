@@ -1,0 +1,55 @@
+{
+  "ticker": "ABM",
+  "as_of": "2026-09-03T12:33:32.760955+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 3.97749,
+    "eps_d30": 3.97749,
+    "eps_d90": 3.95851,
+    "change_30d_pct": 0.0,
+    "change_90d_pct": 0.48,
+    "analysts_up_30d": 4,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-07-31",
+        "actual": 0.82,
+        "estimate": 0.94855,
+        "surprise_pct": -13.55
+      },
+      {
+        "quarter": "2025-10-31",
+        "actual": 0.88,
+        "estimate": 1.0859,
+        "surprise_pct": -18.96
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 0.83,
+        "estimate": 0.87213,
+        "surprise_pct": -4.83
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 0.9,
+        "estimate": 0.87933,
+        "surprise_pct": 2.35
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -8.75
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.5% over 90 days and +0.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 4 up, 2 down.",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -8.8%."
+  ]
+}

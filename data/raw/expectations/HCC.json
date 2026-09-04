@@ -1,0 +1,55 @@
+{
+  "ticker": "HCC",
+  "as_of": "2026-09-03T12:34:51.325367+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 6.33334,
+    "eps_d30": 6.11311,
+    "eps_d90": 7.67356,
+    "change_30d_pct": 3.6,
+    "change_90d_pct": -17.47,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 4
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.7,
+        "estimate": -0.51356,
+        "surprise_pct": 236.3
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.44,
+        "estimate": 0.588,
+        "surprise_pct": -25.17
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.3713,
+        "estimate": 1.43514,
+        "surprise_pct": -4.45
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.6537,
+        "estimate": 1.45905,
+        "surprise_pct": 13.34
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 55.01
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -17.5% over 90 days and +3.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 4 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +55.0%."
+  ]
+}

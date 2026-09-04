@@ -1,0 +1,77 @@
+{
+  "ticker": "CRL",
+  "as_of": "2026-09-03T12:41:27.284163+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 11.31818,
+    "eps_d30": 11.1022,
+    "eps_d90": 11.0897,
+    "change_30d_pct": 1.95,
+    "change_90d_pct": 2.06,
+    "analysts_up_30d": 9,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.43,
+        "estimate": 2.33976,
+        "surprise_pct": 3.86
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.39,
+        "estimate": 2.34524,
+        "surprise_pct": 1.91
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.06,
+        "estimate": 1.954,
+        "surprise_pct": 5.42
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.02,
+        "estimate": 2.73776,
+        "surprise_pct": 10.31
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 5.38
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": 11.36
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": -0.03
+      },
+      {
+        "report_date": "2026-02-18",
+        "move_pct": -0.33
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": -5.71
+      }
+    ],
+    "avg_abs_move_pct": 4.36,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.1% over 90 days and +1.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 9 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +11.4%, -0.0%, -0.3%, -5.7% (average absolute move 4.4%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +5.4%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "NSC",
+  "as_of": "2026-09-03T12:42:05.566623+00:00",
+  "earnings_date": "2026-10-21",
+  "revisions": {
+    "available": true,
+    "eps_current": 12.96527,
+    "eps_d30": 12.97263,
+    "eps_d90": 12.1395,
+    "change_30d_pct": -0.06,
+    "change_90d_pct": 6.8,
+    "analysts_up_30d": 18,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 3.3,
+        "estimate": 3.2027,
+        "surprise_pct": 3.04
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 3.22,
+        "estimate": 2.76366,
+        "surprise_pct": 16.51
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.65,
+        "estimate": 2.49352,
+        "surprise_pct": 6.28
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.52,
+        "estimate": 3.32336,
+        "surprise_pct": 5.92
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 7.94
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-23",
+        "move_pct": 5.32
+      },
+      {
+        "report_date": "2026-04-24",
+        "move_pct": -0.54
+      },
+      {
+        "report_date": "2026-02-09",
+        "move_pct": -0.25
+      },
+      {
+        "report_date": "2025-10-23",
+        "move_pct": -1.66
+      }
+    ],
+    "avg_abs_move_pct": 1.94,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +6.8% over 90 days and -0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 18 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +5.3%, -0.5%, -0.2%, -1.7% (average absolute move 1.9%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +7.9%."
+  ]
+}

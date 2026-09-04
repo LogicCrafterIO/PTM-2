@@ -1,0 +1,55 @@
+{
+  "ticker": "CRI",
+  "as_of": "2026-09-03T12:32:48.344091+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 3.26081,
+    "eps_d30": 3.26458,
+    "eps_d90": 3.222,
+    "change_30d_pct": -0.12,
+    "change_90d_pct": 1.2,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.74,
+        "estimate": 0.73509,
+        "surprise_pct": 0.67
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.9,
+        "estimate": 1.70456,
+        "surprise_pct": 11.47
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.39,
+        "estimate": 0.12563,
+        "surprise_pct": 210.44
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.26,
+        "estimate": 0.06182,
+        "surprise_pct": 320.58
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 135.79
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.2% over 90 days and -0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 2 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +135.8%."
+  ]
+}

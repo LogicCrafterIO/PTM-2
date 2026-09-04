@@ -1,0 +1,55 @@
+{
+  "ticker": "AYI",
+  "as_of": "2026-09-03T12:33:24.594536+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 19.83232,
+    "eps_d30": 19.83232,
+    "eps_d90": 19.51632,
+    "change_30d_pct": 0.0,
+    "change_90d_pct": 1.62,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-08-31",
+        "actual": 5.2,
+        "estimate": 4.83778,
+        "surprise_pct": 7.49
+      },
+      {
+        "quarter": "2025-11-30",
+        "actual": 4.69,
+        "estimate": 4.59125,
+        "surprise_pct": 2.15
+      },
+      {
+        "quarter": "2026-02-28",
+        "actual": 4.14,
+        "estimate": 3.99857,
+        "surprise_pct": 3.54
+      },
+      {
+        "quarter": "2026-05-31",
+        "actual": 5.31,
+        "estimate": 5.18576,
+        "surprise_pct": 2.4
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 3.9
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.6% over 90 days and +0.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 2 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +3.9%."
+  ]
+}

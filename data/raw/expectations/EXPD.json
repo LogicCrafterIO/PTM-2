@@ -1,0 +1,77 @@
+{
+  "ticker": "EXPD",
+  "as_of": "2026-09-03T14:46:08.777553+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.72071,
+    "eps_d30": 6.87369,
+    "eps_d90": 6.79106,
+    "change_30d_pct": 12.32,
+    "change_90d_pct": 13.69,
+    "analysts_up_30d": 12,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.64,
+        "estimate": 1.38918,
+        "surprise_pct": 18.06
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.49,
+        "estimate": 1.46171,
+        "surprise_pct": 1.94
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.71,
+        "estimate": 1.33831,
+        "surprise_pct": 27.77
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.03,
+        "estimate": 1.69262,
+        "surprise_pct": 19.93
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 16.93
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": -0.04
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": -1.2
+      },
+      {
+        "report_date": "2026-02-25",
+        "move_pct": 2.19
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -2.45
+      }
+    ],
+    "avg_abs_move_pct": 1.47,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +13.7% over 90 days and +12.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 12 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -0.0%, -1.2%, +2.2%, -2.5% (average absolute move 1.5%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +16.9%."
+  ]
+}

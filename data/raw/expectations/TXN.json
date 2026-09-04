@@ -1,0 +1,77 @@
+{
+  "ticker": "TXN",
+  "as_of": "2026-09-03T12:42:31.603642+00:00",
+  "earnings_date": "2026-10-22",
+  "revisions": {
+    "available": true,
+    "eps_current": 8.5058,
+    "eps_d30": 8.49941,
+    "eps_d90": 7.68415,
+    "change_30d_pct": 0.08,
+    "change_90d_pct": 10.69,
+    "analysts_up_30d": 25,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.48,
+        "estimate": 1.4859,
+        "surprise_pct": -0.4
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.27,
+        "estimate": 1.30773,
+        "surprise_pct": -2.89
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.68,
+        "estimate": 1.36856,
+        "surprise_pct": 22.76
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.14,
+        "estimate": 1.937,
+        "surprise_pct": 10.48
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 7.49
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-24",
+        "move_pct": -1.9
+      },
+      {
+        "report_date": "2026-04-24",
+        "move_pct": -1.8
+      },
+      {
+        "report_date": "2026-02-06",
+        "move_pct": -1.13
+      },
+      {
+        "report_date": "2025-10-23",
+        "move_pct": 0.87
+      }
+    ],
+    "avg_abs_move_pct": 1.43,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +10.7% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 25 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.9%, -1.8%, -1.1%, +0.9% (average absolute move 1.4%, 3 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +7.5%."
+  ]
+}

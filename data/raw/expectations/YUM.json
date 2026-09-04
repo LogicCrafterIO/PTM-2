@@ -1,0 +1,77 @@
+{
+  "ticker": "YUM",
+  "as_of": "2026-09-03T12:42:41.380717+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 6.62624,
+    "eps_d30": 6.64773,
+    "eps_d90": 6.77696,
+    "change_30d_pct": -0.32,
+    "change_90d_pct": -2.22,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 14
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.58,
+        "estimate": 1.4811,
+        "surprise_pct": 6.68
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.73,
+        "estimate": 1.75622,
+        "surprise_pct": -1.49
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.5,
+        "estimate": 1.38948,
+        "surprise_pct": 7.95
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.62,
+        "estimate": 1.56202,
+        "surprise_pct": 3.71
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 4.21
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": 3.18
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": 1.38
+      },
+      {
+        "report_date": "2026-02-20",
+        "move_pct": 0.37
+      },
+      {
+        "report_date": "2025-11-07",
+        "move_pct": 1.02
+      }
+    ],
+    "avg_abs_move_pct": 1.49,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.2% over 90 days and -0.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 14 down.",
+    "Price reaction to the last 4 reports, most recent first: +3.2%, +1.4%, +0.4%, +1.0% (average absolute move 1.5%, 0 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +4.2%."
+  ]
+}

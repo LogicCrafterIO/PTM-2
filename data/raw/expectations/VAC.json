@@ -1,0 +1,77 @@
+{
+  "ticker": "VAC",
+  "as_of": "2026-09-03T12:42:35.294440+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 8.62888,
+    "eps_d30": 7.54958,
+    "eps_d90": 7.49436,
+    "change_30d_pct": 14.3,
+    "change_90d_pct": 15.14,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.69,
+        "estimate": 1.60064,
+        "surprise_pct": 5.58
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.86,
+        "estimate": 1.70674,
+        "surprise_pct": 8.98
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.24,
+        "estimate": 1.7065,
+        "surprise_pct": -27.34
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.31,
+        "estimate": 2.0024,
+        "surprise_pct": 15.36
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 0.65
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": 22.62
+      },
+      {
+        "report_date": "2026-05-05",
+        "move_pct": 5.0
+      },
+      {
+        "report_date": "2026-03-02",
+        "move_pct": 3.63
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -26.4
+      }
+    ],
+    "avg_abs_move_pct": 14.41,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +15.1% over 90 days and +14.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +22.6%, +5.0%, +3.6%, -26.4% (average absolute move 14.4%, 1 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +0.7%."
+  ]
+}

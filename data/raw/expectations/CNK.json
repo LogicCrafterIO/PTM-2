@@ -1,0 +1,55 @@
+{
+  "ticker": "CNK",
+  "as_of": "2026-09-03T12:34:17.001993+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 2.34778,
+    "eps_d30": 2.18484,
+    "eps_d90": 2.09842,
+    "change_30d_pct": 7.46,
+    "change_90d_pct": 11.88,
+    "analysts_up_30d": 5,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.4,
+        "estimate": 0.45447,
+        "surprise_pct": -11.99
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.29,
+        "estimate": 0.2843,
+        "surprise_pct": 2.0
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.06,
+        "estimate": -0.05527,
+        "surprise_pct": -8.56
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.19,
+        "estimate": 1.02483,
+        "surprise_pct": 16.12
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -0.61
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +11.9% over 90 days and +7.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 5 up, 1 down.",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -0.6%."
+  ]
+}

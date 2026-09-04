@@ -1,0 +1,77 @@
+{
+  "ticker": "KMB",
+  "as_of": "2026-09-03T12:41:55.396340+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 7.44521,
+    "eps_d30": 7.53751,
+    "eps_d90": 7.5387,
+    "change_30d_pct": -1.22,
+    "change_90d_pct": -1.24,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 13
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.82,
+        "estimate": 1.75111,
+        "surprise_pct": 3.93
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.86,
+        "estimate": 1.8118,
+        "surprise_pct": 2.66
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.97,
+        "estimate": 1.92691,
+        "surprise_pct": 2.24
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.12,
+        "estimate": 2.00599,
+        "surprise_pct": 5.68
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 3.63
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-04",
+        "move_pct": 3.73
+      },
+      {
+        "report_date": "2026-04-28",
+        "move_pct": 0.19
+      },
+      {
+        "report_date": "2026-02-12",
+        "move_pct": 0.61
+      },
+      {
+        "report_date": "2025-10-30",
+        "move_pct": 2.99
+      }
+    ],
+    "avg_abs_move_pct": 1.88,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -1.2% over 90 days and -1.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 13 down.",
+    "Price reaction to the last 4 reports, most recent first: +3.7%, +0.2%, +0.6%, +3.0% (average absolute move 1.9%, 0 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +3.6%."
+  ]
+}

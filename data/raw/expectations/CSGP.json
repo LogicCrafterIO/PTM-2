@@ -1,0 +1,77 @@
+{
+  "ticker": "CSGP",
+  "as_of": "2026-09-03T12:41:30.015972+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.36318,
+    "eps_d30": 1.35924,
+    "eps_d90": 1.36213,
+    "change_30d_pct": 0.29,
+    "change_90d_pct": 0.08,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 10
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.23,
+        "estimate": 0.18881,
+        "surprise_pct": 21.82
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.31,
+        "estimate": 0.27237,
+        "surprise_pct": 13.82
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.23,
+        "estimate": 0.18429,
+        "surprise_pct": 24.8
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.32,
+        "estimate": 0.28603,
+        "surprise_pct": 11.88
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 18.08
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": -1.65
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": -5.06
+      },
+      {
+        "report_date": "2026-02-26",
+        "move_pct": 0.49
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": -9.87
+      }
+    ],
+    "avg_abs_move_pct": 4.27,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.1% over 90 days and +0.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 10 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.6%, -5.1%, +0.5%, -9.9% (average absolute move 4.3%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +18.1%."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "ticker": "PTC",
+  "as_of": "2026-09-03T12:42:15.034032+00:00",
+  "earnings_date": "2026-10-30",
+  "revisions": {
+    "available": true,
+    "eps_current": 8.19996,
+    "eps_d30": 8.17873,
+    "eps_d90": 8.04533,
+    "change_30d_pct": 0.26,
+    "change_90d_pct": 1.92,
+    "analysts_up_30d": 10,
+    "analysts_down_30d": 8
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 3.47,
+        "estimate": 2.27233,
+        "surprise_pct": 52.71
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.92,
+        "estimate": 1.564,
+        "surprise_pct": 22.76
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.69,
+        "estimate": 2.10382,
+        "surprise_pct": 27.86
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.58,
+        "estimate": 1.56471,
+        "surprise_pct": 0.98
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 26.08
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-31",
+        "move_pct": 0.66
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": 7.95
+      },
+      {
+        "report_date": "2026-02-05",
+        "move_pct": 1.72
+      },
+      {
+        "report_date": "2025-11-21",
+        "move_pct": 0.99
+      }
+    ],
+    "avg_abs_move_pct": 2.83,
+    "down_prints": 0,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.9% over 90 days and +0.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 10 up, 8 down.",
+    "Price reaction to the last 4 reports, most recent first: +0.7%, +8.0%, +1.7%, +1.0% (average absolute move 2.8%, 0 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +26.1%."
+  ]
+}

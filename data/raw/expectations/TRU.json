@@ -1,0 +1,77 @@
+{
+  "ticker": "TRU",
+  "as_of": "2026-09-03T12:42:29.774192+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 4.85504,
+    "eps_d30": 4.77858,
+    "eps_d90": 4.78026,
+    "change_30d_pct": 1.6,
+    "change_90d_pct": 1.56,
+    "analysts_up_30d": 16,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.1,
+        "estimate": 1.04413,
+        "surprise_pct": 5.35
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.07,
+        "estimate": 1.02554,
+        "surprise_pct": 4.34
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.18,
+        "estimate": 1.11355,
+        "surprise_pct": 5.97
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.23,
+        "estimate": 1.14997,
+        "surprise_pct": 6.96
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 5.65
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-28",
+        "move_pct": 8.49
+      },
+      {
+        "report_date": "2026-04-28",
+        "move_pct": -1.56
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": 0.41
+      },
+      {
+        "report_date": "2025-10-23",
+        "move_pct": 3.48
+      }
+    ],
+    "avg_abs_move_pct": 3.48,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.6% over 90 days and +1.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 16 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: +8.5%, -1.6%, +0.4%, +3.5% (average absolute move 3.5%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +5.7%."
+  ]
+}

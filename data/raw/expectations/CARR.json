@@ -1,0 +1,77 @@
+{
+  "ticker": "CARR",
+  "as_of": "2026-09-03T12:41:20.303682+00:00",
+  "earnings_date": "2026-10-27",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.88548,
+    "eps_d30": 2.82405,
+    "eps_d90": 2.79497,
+    "change_30d_pct": 2.18,
+    "change_90d_pct": 3.24,
+    "analysts_up_30d": 23,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.67,
+        "estimate": 0.56931,
+        "surprise_pct": 17.69
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.34,
+        "estimate": 0.35616,
+        "surprise_pct": -4.54
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.57,
+        "estimate": 0.5088,
+        "surprise_pct": 12.03
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.86,
+        "estimate": 0.8175,
+        "surprise_pct": 5.2
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 7.6
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-28",
+        "move_pct": -8.9
+      },
+      {
+        "report_date": "2026-04-30",
+        "move_pct": 8.79
+      },
+      {
+        "report_date": "2026-02-05",
+        "move_pct": -0.71
+      },
+      {
+        "report_date": "2025-10-28",
+        "move_pct": 0.77
+      }
+    ],
+    "avg_abs_move_pct": 4.79,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.2% over 90 days and +2.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 23 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -8.9%, +8.8%, -0.7%, +0.8% (average absolute move 4.8%, 2 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +7.6%."
+  ]
+}

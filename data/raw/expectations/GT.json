@@ -1,0 +1,77 @@
+{
+  "ticker": "GT",
+  "as_of": "2026-09-03T12:41:48.922899+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": -0.68779,
+    "eps_d30": -0.52412,
+    "eps_d90": -0.49515,
+    "change_30d_pct": 31.23,
+    "change_90d_pct": 38.91,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.28,
+        "estimate": 0.14157,
+        "surprise_pct": 97.78
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.39,
+        "estimate": 0.48616,
+        "surprise_pct": -19.78
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.39,
+        "estimate": -0.4261,
+        "surprise_pct": 8.47
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": -0.61,
+        "estimate": -0.62743,
+        "surprise_pct": 2.78
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 22.31
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": -2.59
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": -6.03
+      },
+      {
+        "report_date": "2026-02-10",
+        "move_pct": -13.5
+      },
+      {
+        "report_date": "2025-11-04",
+        "move_pct": 7.84
+      }
+    ],
+    "avg_abs_move_pct": 7.49,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +38.9% over 90 days and +31.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: -2.6%, -6.0%, -13.5%, +7.8% (average absolute move 7.5%, 3 of 4 negative).",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +22.3%."
+  ]
+}

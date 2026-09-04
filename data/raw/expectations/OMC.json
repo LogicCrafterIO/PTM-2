@@ -1,0 +1,77 @@
+{
+  "ticker": "OMC",
+  "as_of": "2026-09-03T12:42:09.254031+00:00",
+  "earnings_date": "2026-10-31",
+  "revisions": {
+    "available": true,
+    "eps_current": 10.59339,
+    "eps_d30": 10.56673,
+    "eps_d90": 10.82471,
+    "change_30d_pct": 0.25,
+    "change_90d_pct": -2.14,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 7
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.24,
+        "estimate": 2.17356,
+        "surprise_pct": 3.06
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.59,
+        "estimate": 2.93642,
+        "surprise_pct": -11.8
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.9,
+        "estimate": 1.84242,
+        "surprise_pct": 3.13
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.65,
+        "estimate": 2.66044,
+        "surprise_pct": -0.39
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -1.5
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": -4.22
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": -0.9
+      },
+      {
+        "report_date": "2026-02-20",
+        "move_pct": 2.87
+      },
+      {
+        "report_date": "2025-10-22",
+        "move_pct": 3.2
+      }
+    ],
+    "avg_abs_move_pct": 2.8,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.1% over 90 days and +0.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 7 down.",
+    "Price reaction to the last 4 reports, most recent first: -4.2%, -0.9%, +2.9%, +3.2% (average absolute move 2.8%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -1.5%."
+  ]
+}

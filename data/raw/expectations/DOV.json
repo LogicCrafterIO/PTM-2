@@ -1,0 +1,77 @@
+{
+  "ticker": "DOV",
+  "as_of": "2026-09-03T12:41:37.798441+00:00",
+  "earnings_date": "2026-10-22",
+  "revisions": {
+    "available": true,
+    "eps_current": 10.67208,
+    "eps_d30": 10.63503,
+    "eps_d90": 10.63576,
+    "change_30d_pct": 0.35,
+    "change_90d_pct": 0.34,
+    "analysts_up_30d": 13,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.62,
+        "estimate": 2.50659,
+        "surprise_pct": 4.52
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.51,
+        "estimate": 2.48586,
+        "surprise_pct": 0.97
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.28,
+        "estimate": 2.27038,
+        "surprise_pct": 0.42
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.74,
+        "estimate": 2.71891,
+        "surprise_pct": 0.78
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 1.67
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-23",
+        "move_pct": -7.8
+      },
+      {
+        "report_date": "2026-04-23",
+        "move_pct": 5.54
+      },
+      {
+        "report_date": "2026-02-13",
+        "move_pct": 0.46
+      },
+      {
+        "report_date": "2025-10-23",
+        "move_pct": 8.12
+      }
+    ],
+    "avg_abs_move_pct": 5.48,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.3% over 90 days and +0.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 13 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: -7.8%, +5.5%, +0.5%, +8.1% (average absolute move 5.5%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +1.7%."
+  ]
+}

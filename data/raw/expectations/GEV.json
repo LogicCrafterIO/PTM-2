@@ -1,0 +1,77 @@
+{
+  "ticker": "GEV",
+  "as_of": "2026-09-03T12:41:47.023882+00:00",
+  "earnings_date": "2026-10-21",
+  "revisions": {
+    "available": true,
+    "eps_current": 30.74053,
+    "eps_d30": 30.73548,
+    "eps_d90": 31.022,
+    "change_30d_pct": 0.02,
+    "change_90d_pct": -0.91,
+    "analysts_up_30d": 8,
+    "analysts_down_30d": 10
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.64,
+        "estimate": 1.85664,
+        "surprise_pct": -11.67
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 13.39,
+        "estimate": 3.21816,
+        "surprise_pct": 316.08
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 17.44,
+        "estimate": 2.00102,
+        "surprise_pct": 771.56
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.47,
+        "estimate": 3.18468,
+        "surprise_pct": -22.44
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 263.38
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-22",
+        "move_pct": -8.69
+      },
+      {
+        "report_date": "2026-04-22",
+        "move_pct": 13.75
+      },
+      {
+        "report_date": "2026-01-29",
+        "move_pct": 0.82
+      },
+      {
+        "report_date": "2025-10-22",
+        "move_pct": -1.59
+      }
+    ],
+    "avg_abs_move_pct": 6.21,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.9% over 90 days and +0.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 8 up, 10 down.",
+    "Price reaction to the last 4 reports, most recent first: -8.7%, +13.8%, +0.8%, -1.6% (average absolute move 6.2%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +263.4%."
+  ]
+}

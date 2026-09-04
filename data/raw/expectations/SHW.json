@@ -1,0 +1,77 @@
+{
+  "ticker": "SHW",
+  "as_of": "2026-09-03T12:42:20.845391+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 12.10094,
+    "eps_d30": 12.06363,
+    "eps_d90": 11.74322,
+    "change_30d_pct": 0.31,
+    "change_90d_pct": 3.05,
+    "analysts_up_30d": 21,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 3.59,
+        "estimate": 3.4394,
+        "surprise_pct": 4.38
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.23,
+        "estimate": 2.16252,
+        "surprise_pct": 3.12
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.35,
+        "estimate": 2.26917,
+        "surprise_pct": 3.56
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 3.7,
+        "estimate": 3.51941,
+        "surprise_pct": 5.13
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 4.05
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-28",
+        "move_pct": 8.25
+      },
+      {
+        "report_date": "2026-04-28",
+        "move_pct": -3.52
+      },
+      {
+        "report_date": "2026-02-19",
+        "move_pct": -2.23
+      },
+      {
+        "report_date": "2025-10-28",
+        "move_pct": 5.47
+      }
+    ],
+    "avg_abs_move_pct": 4.87,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.0% over 90 days and +0.3% over 30 days.",
+    "Analyst revisions in the last 30 days: 21 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +8.2%, -3.5%, -2.2%, +5.5% (average absolute move 4.9%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +4.0%."
+  ]
+}

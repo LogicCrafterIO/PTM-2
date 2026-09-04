@@ -1,0 +1,77 @@
+{
+  "ticker": "WBD",
+  "as_of": "2026-09-03T12:42:38.580728+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": -1.12178,
+    "eps_d30": -1.2474,
+    "eps_d90": -1.23865,
+    "change_30d_pct": -10.07,
+    "change_90d_pct": -9.44,
+    "analysts_up_30d": 5,
+    "analysts_down_30d": 4
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": -0.06,
+        "estimate": -0.08409,
+        "surprise_pct": 28.65
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": -0.1,
+        "estimate": -0.00346,
+        "surprise_pct": -2790.17
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -1.17,
+        "estimate": -0.09274,
+        "surprise_pct": -1161.59
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.06,
+        "estimate": -0.11138,
+        "surprise_pct": 153.87
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -942.31
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": 1.66
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": -0.07
+      },
+      {
+        "report_date": "2026-02-27",
+        "move_pct": -2.19
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -1.49
+      }
+    ],
+    "avg_abs_move_pct": 1.35,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -9.4% over 90 days and -10.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 5 up, 4 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.7%, -0.1%, -2.2%, -1.5% (average absolute move 1.4%, 3 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -942.3%."
+  ]
+}

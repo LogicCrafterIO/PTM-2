@@ -1,0 +1,77 @@
+{
+  "ticker": "NEM",
+  "as_of": "2026-09-03T12:42:04.130541+00:00",
+  "earnings_date": "2026-10-22",
+  "revisions": {
+    "available": true,
+    "eps_current": 9.15083,
+    "eps_d30": 9.09027,
+    "eps_d90": 10.41239,
+    "change_30d_pct": 0.67,
+    "change_90d_pct": -12.12,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 11
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.71,
+        "estimate": 1.43894,
+        "surprise_pct": 18.84
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.52,
+        "estimate": 2.0282,
+        "surprise_pct": 24.25
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.9,
+        "estimate": 2.17309,
+        "surprise_pct": 33.45
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.1,
+        "estimate": 1.98708,
+        "surprise_pct": 5.68
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 20.55
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-23",
+        "move_pct": -1.08
+      },
+      {
+        "report_date": "2026-04-23",
+        "move_pct": -0.71
+      },
+      {
+        "report_date": "2026-02-19",
+        "move_pct": 0.57
+      },
+      {
+        "report_date": "2025-10-23",
+        "move_pct": 2.18
+      }
+    ],
+    "avg_abs_move_pct": 1.14,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -12.1% over 90 days and +0.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 11 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.1%, -0.7%, +0.6%, +2.2% (average absolute move 1.1%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +20.6%."
+  ]
+}

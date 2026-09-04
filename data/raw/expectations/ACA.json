@@ -1,0 +1,55 @@
+{
+  "ticker": "ACA",
+  "as_of": "2026-09-03T12:33:10.734167+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 4.29167,
+    "eps_d30": 4.38375,
+    "eps_d90": 4.38375,
+    "change_30d_pct": -2.1,
+    "change_90d_pct": -2.1,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.56,
+        "estimate": 1.35033,
+        "surprise_pct": 15.53
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.15,
+        "estimate": 0.9165,
+        "surprise_pct": 25.48
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.81,
+        "estimate": 0.3492,
+        "surprise_pct": 131.96
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.13,
+        "estimate": 1.1835,
+        "surprise_pct": -4.52
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 42.11
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -2.1% over 90 days and -2.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 2 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +42.1%."
+  ]
+}

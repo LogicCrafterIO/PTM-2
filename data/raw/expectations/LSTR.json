@@ -1,0 +1,77 @@
+{
+  "ticker": "LSTR",
+  "as_of": "2026-09-03T12:41:58.157157+00:00",
+  "earnings_date": "2026-10-28",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.91918,
+    "eps_d30": 5.91084,
+    "eps_d90": 5.64324,
+    "change_30d_pct": 0.14,
+    "change_90d_pct": 4.89,
+    "analysts_up_30d": 14,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.22,
+        "estimate": 1.22623,
+        "surprise_pct": -0.51
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.7492,
+        "estimate": 1.09028,
+        "surprise_pct": -31.28
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.16,
+        "estimate": 1.12405,
+        "surprise_pct": 3.2
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.44,
+        "estimate": 1.48448,
+        "surprise_pct": -3.0
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -7.9
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-29",
+        "move_pct": -4.04
+      },
+      {
+        "report_date": "2026-04-29",
+        "move_pct": 1.2
+      },
+      {
+        "report_date": "2026-02-24",
+        "move_pct": 0.32
+      },
+      {
+        "report_date": "2025-10-28",
+        "move_pct": -0.12
+      }
+    ],
+    "avg_abs_move_pct": 1.42,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +4.9% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 14 up, 1 down.",
+    "Price reaction to the last 4 reports, most recent first: -4.0%, +1.2%, +0.3%, -0.1% (average absolute move 1.4%, 2 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -7.9%."
+  ]
+}

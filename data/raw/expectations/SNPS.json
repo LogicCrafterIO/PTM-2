@@ -1,0 +1,77 @@
+{
+  "ticker": "SNPS",
+  "as_of": "2026-09-03T12:42:23.308584+00:00",
+  "earnings_date": "2026-11-25",
+  "revisions": {
+    "available": true,
+    "eps_current": 15.1419,
+    "eps_d30": 14.78942,
+    "eps_d90": 14.78985,
+    "change_30d_pct": 2.38,
+    "change_90d_pct": 2.38,
+    "analysts_up_30d": 22,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-10-31",
+        "actual": 2.9,
+        "estimate": 2.78371,
+        "surprise_pct": 4.18
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 3.77,
+        "estimate": 3.55719,
+        "surprise_pct": 5.98
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 3.35,
+        "estimate": 3.16172,
+        "surprise_pct": 5.95
+      },
+      {
+        "quarter": "2026-07-31",
+        "actual": 3.91,
+        "estimate": 3.67334,
+        "surprise_pct": 6.44
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 5.64
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-05-27",
+        "move_pct": -1.62
+      },
+      {
+        "report_date": "2026-02-25",
+        "move_pct": 1.92
+      },
+      {
+        "report_date": "2025-12-22",
+        "move_pct": 3.78
+      },
+      {
+        "report_date": "2025-09-09",
+        "move_pct": -0.77
+      }
+    ],
+    "avg_abs_move_pct": 2.02,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.4% over 90 days and +2.4% over 30 days.",
+    "Analyst revisions in the last 30 days: 22 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -1.6%, +1.9%, +3.8%, -0.8% (average absolute move 2.0%, 2 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +5.6%."
+  ]
+}

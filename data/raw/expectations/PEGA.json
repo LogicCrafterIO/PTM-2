@@ -1,0 +1,77 @@
+{
+  "ticker": "PEGA",
+  "as_of": "2026-09-03T12:42:12.240912+00:00",
+  "earnings_date": "2026-10-20",
+  "revisions": {
+    "available": true,
+    "eps_current": 2.45118,
+    "eps_d30": 2.45525,
+    "eps_d90": 2.71408,
+    "change_30d_pct": -0.17,
+    "change_90d_pct": -9.69,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 10
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.3,
+        "estimate": 0.19987,
+        "surprise_pct": 50.1
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.76,
+        "estimate": 0.73419,
+        "surprise_pct": 3.52
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.46,
+        "estimate": 0.69272,
+        "surprise_pct": -33.6
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.35,
+        "estimate": 0.43397,
+        "surprise_pct": -19.35
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 0.17
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-21",
+        "move_pct": -2.37
+      },
+      {
+        "report_date": "2026-04-21",
+        "move_pct": -10.3
+      },
+      {
+        "report_date": "2026-02-10",
+        "move_pct": 2.84
+      },
+      {
+        "report_date": "2025-10-21",
+        "move_pct": 4.12
+      }
+    ],
+    "avg_abs_move_pct": 4.91,
+    "down_prints": 2,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -9.7% over 90 days and -0.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 10 down.",
+    "Price reaction to the last 4 reports, most recent first: -2.4%, -10.3%, +2.8%, +4.1% (average absolute move 4.9%, 2 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +0.2%."
+  ]
+}

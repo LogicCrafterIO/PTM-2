@@ -1,0 +1,77 @@
+{
+  "ticker": "SIG",
+  "as_of": "2026-09-03T12:42:21.479501+00:00",
+  "earnings_date": "2026-12-01",
+  "revisions": {
+    "available": true,
+    "eps_current": 10.81687,
+    "eps_d30": 10.80265,
+    "eps_d90": 10.72714,
+    "change_30d_pct": 0.13,
+    "change_90d_pct": 0.84,
+    "analysts_up_30d": 9,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-07-31",
+        "actual": 1.61,
+        "estimate": 1.24085,
+        "surprise_pct": 29.75
+      },
+      {
+        "quarter": "2025-10-31",
+        "actual": 0.63,
+        "estimate": 0.28675,
+        "surprise_pct": 119.7
+      },
+      {
+        "quarter": "2026-01-31",
+        "actual": 6.25,
+        "estimate": 6.11355,
+        "surprise_pct": 2.23
+      },
+      {
+        "quarter": "2026-04-30",
+        "actual": 1.56,
+        "estimate": 1.38191,
+        "surprise_pct": 12.89
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 41.14
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-06-02",
+        "move_pct": 3.75
+      },
+      {
+        "report_date": "2026-03-19",
+        "move_pct": 13.7
+      },
+      {
+        "report_date": "2025-12-05",
+        "move_pct": -2.38
+      },
+      {
+        "report_date": "2025-09-05",
+        "move_pct": 3.42
+      }
+    ],
+    "avg_abs_move_pct": 5.81,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +0.8% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 9 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: +3.8%, +13.7%, -2.4%, +3.4% (average absolute move 5.8%, 1 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +41.1%."
+  ]
+}

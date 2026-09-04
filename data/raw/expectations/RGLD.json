@@ -1,0 +1,77 @@
+{
+  "ticker": "RGLD",
+  "as_of": "2026-09-03T12:42:17.480503+00:00",
+  "earnings_date": "2026-11-05",
+  "revisions": {
+    "available": true,
+    "eps_current": 10.50933,
+    "eps_d30": 10.88727,
+    "eps_d90": 11.61854,
+    "change_30d_pct": -3.47,
+    "change_90d_pct": -9.55,
+    "analysts_up_30d": 1,
+    "analysts_down_30d": 7
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.06,
+        "estimate": 2.19401,
+        "surprise_pct": -6.11
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.92,
+        "estimate": 2.64286,
+        "surprise_pct": -27.35
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.72,
+        "estimate": 2.74543,
+        "surprise_pct": -0.93
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.56,
+        "estimate": 2.54053,
+        "surprise_pct": 0.77
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -8.41
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-06",
+        "move_pct": 1.4
+      },
+      {
+        "report_date": "2026-05-07",
+        "move_pct": -1.77
+      },
+      {
+        "report_date": "2026-02-19",
+        "move_pct": -2.16
+      },
+      {
+        "report_date": "2025-11-06",
+        "move_pct": -2.11
+      }
+    ],
+    "avg_abs_move_pct": 1.86,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -9.6% over 90 days and -3.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 1 up, 7 down.",
+    "Price reaction to the last 4 reports, most recent first: +1.4%, -1.8%, -2.2%, -2.1% (average absolute move 1.9%, 3 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -8.4%."
+  ]
+}

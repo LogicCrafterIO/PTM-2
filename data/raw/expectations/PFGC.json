@@ -1,0 +1,77 @@
+{
+  "ticker": "PFGC",
+  "as_of": "2026-09-03T12:42:13.177169+00:00",
+  "earnings_date": "2026-11-11",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.70954,
+    "eps_d30": 5.76711,
+    "eps_d90": 5.88642,
+    "change_30d_pct": -1.0,
+    "change_90d_pct": -3.0,
+    "analysts_up_30d": 5,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.18,
+        "estimate": 1.20812,
+        "surprise_pct": -2.33
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.39,
+        "estimate": 0.665,
+        "surprise_pct": -41.35
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.8,
+        "estimate": 0.77624,
+        "surprise_pct": 3.06
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.59,
+        "estimate": 1.59907,
+        "surprise_pct": -0.57
+      }
+    ],
+    "beats": 1,
+    "of": 4,
+    "avg_surprise_pct": -10.3
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-12",
+        "move_pct": -5.75
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": 6.61
+      },
+      {
+        "report_date": "2026-02-04",
+        "move_pct": -7.45
+      },
+      {
+        "report_date": "2025-11-05",
+        "move_pct": -1.19
+      }
+    ],
+    "avg_abs_move_pct": 5.25,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -3.0% over 90 days and -1.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 5 up, 2 down.",
+    "Price reaction to the last 4 reports, most recent first: -5.8%, +6.6%, -7.5%, -1.2% (average absolute move 5.2%, 3 of 4 negative).",
+    "Beat consensus in 1 of the last 4 quarters, average surprise -10.3%."
+  ]
+}

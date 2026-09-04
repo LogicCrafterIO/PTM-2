@@ -1,0 +1,77 @@
+{
+  "ticker": "CDE",
+  "as_of": "2026-09-03T12:41:23.168310+00:00",
+  "earnings_date": "2026-11-04",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.2425,
+    "eps_d30": 1.62872,
+    "eps_d90": 1.89668,
+    "change_30d_pct": -23.71,
+    "change_90d_pct": -34.49,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 5
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.23,
+        "estimate": 0.25167,
+        "surprise_pct": -8.61
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.35,
+        "estimate": 0.33333,
+        "surprise_pct": 5.0
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.36,
+        "estimate": 0.35878,
+        "surprise_pct": 0.34
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.12,
+        "estimate": 0.26126,
+        "surprise_pct": -54.07
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": -14.33
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-05",
+        "move_pct": 7.53
+      },
+      {
+        "report_date": "2026-05-06",
+        "move_pct": 9.46
+      },
+      {
+        "report_date": "2026-02-18",
+        "move_pct": 3.58
+      },
+      {
+        "report_date": "2025-10-29",
+        "move_pct": -0.16
+      }
+    ],
+    "avg_abs_move_pct": 5.18,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -34.5% over 90 days and -23.7% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 5 down.",
+    "Price reaction to the last 4 reports, most recent first: +7.5%, +9.5%, +3.6%, -0.2% (average absolute move 5.2%, 1 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise -14.3%."
+  ]
+}

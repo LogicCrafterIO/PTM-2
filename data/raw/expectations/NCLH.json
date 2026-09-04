@@ -1,0 +1,77 @@
+{
+  "ticker": "NCLH",
+  "as_of": "2026-09-03T12:42:03.644467+00:00",
+  "earnings_date": "2026-11-02",
+  "revisions": {
+    "available": true,
+    "eps_current": 1.53661,
+    "eps_d30": 1.67067,
+    "eps_d90": 1.64891,
+    "change_30d_pct": -8.02,
+    "change_90d_pct": -6.81,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 19
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.2,
+        "estimate": 1.16159,
+        "surprise_pct": 3.31
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.28,
+        "estimate": 0.26538,
+        "surprise_pct": 5.51
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.23,
+        "estimate": 0.14264,
+        "surprise_pct": 61.25
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.48,
+        "estimate": 0.39087,
+        "surprise_pct": 22.8
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 23.22
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-08-03",
+        "move_pct": 6.64
+      },
+      {
+        "report_date": "2026-05-04",
+        "move_pct": -8.56
+      },
+      {
+        "report_date": "2026-03-02",
+        "move_pct": -10.53
+      },
+      {
+        "report_date": "2025-11-04",
+        "move_pct": -15.28
+      }
+    ],
+    "avg_abs_move_pct": 10.25,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -6.8% over 90 days and -8.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 19 down.",
+    "Price reaction to the last 4 reports, most recent first: +6.6%, -8.6%, -10.5%, -15.3% (average absolute move 10.2%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +23.2%."
+  ]
+}

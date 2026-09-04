@@ -1,0 +1,55 @@
+{
+  "ticker": "COLM",
+  "as_of": "2026-09-03T12:34:55.986114+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 4.67302,
+    "eps_d30": 3.85428,
+    "eps_d90": 3.84592,
+    "change_30d_pct": 21.24,
+    "change_90d_pct": 21.51,
+    "analysts_up_30d": 7,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.95,
+        "estimate": 1.16913,
+        "surprise_pct": -18.74
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.73,
+        "estimate": 1.19404,
+        "surprise_pct": 44.89
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.65,
+        "estimate": 0.35222,
+        "surprise_pct": 84.54
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.52,
+        "estimate": -0.39027,
+        "surprise_pct": 233.24
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 85.98
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +21.5% over 90 days and +21.2% over 30 days.",
+    "Analyst revisions in the last 30 days: 7 up, 1 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +86.0%."
+  ]
+}

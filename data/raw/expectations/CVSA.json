@@ -1,0 +1,55 @@
+{
+  "ticker": "CVSA",
+  "as_of": "2026-09-03T12:33:22.758360+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 9.045,
+    "eps_d30": 8.8875,
+    "eps_d90": 8.8875,
+    "change_30d_pct": 1.77,
+    "change_90d_pct": 1.77,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 1
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.75,
+        "estimate": 1.5775,
+        "surprise_pct": 10.94
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.43,
+        "estimate": 2.1875,
+        "surprise_pct": 11.09
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 1.98,
+        "estimate": 1.7225,
+        "surprise_pct": 14.95
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.09,
+        "estimate": 1.8925,
+        "surprise_pct": 10.44
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 11.86
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.8% over 90 days and +1.8% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 1 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +11.9%."
+  ]
+}

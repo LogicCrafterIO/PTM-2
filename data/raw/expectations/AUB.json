@@ -1,0 +1,55 @@
+{
+  "ticker": "AUB",
+  "as_of": "2026-09-03T12:34:37.562511+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 3.76667,
+    "eps_d30": 3.76667,
+    "eps_d90": 3.72556,
+    "change_30d_pct": 0.0,
+    "change_90d_pct": 1.1,
+    "analysts_up_30d": 6,
+    "analysts_down_30d": 2
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.84,
+        "estimate": 0.84333,
+        "surprise_pct": -0.39
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.97,
+        "estimate": 0.85889,
+        "surprise_pct": 12.94
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.89,
+        "estimate": 0.87111,
+        "surprise_pct": 2.17
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.94,
+        "estimate": 0.91778,
+        "surprise_pct": 2.42
+      }
+    ],
+    "beats": 3,
+    "of": 4,
+    "avg_surprise_pct": 4.29
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +1.1% over 90 days and +0.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 6 up, 2 down.",
+    "Beat consensus in 3 of the last 4 quarters, average surprise +4.3%."
+  ]
+}

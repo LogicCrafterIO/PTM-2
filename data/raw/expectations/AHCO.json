@@ -1,0 +1,55 @@
+{
+  "ticker": "AHCO",
+  "as_of": "2026-09-03T12:33:46.216154+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": -0.454,
+    "eps_d30": 0.892,
+    "eps_d90": 0.84073,
+    "change_30d_pct": -150.9,
+    "change_90d_pct": -154.0,
+    "analysts_up_30d": 0,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.2334,
+        "estimate": 0.23928,
+        "surprise_pct": -2.46
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.2689,
+        "estimate": 0.33954,
+        "surprise_pct": -20.8
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": -0.0501,
+        "estimate": 0.01166,
+        "surprise_pct": -529.67
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": -0.0664,
+        "estimate": 0.168,
+        "surprise_pct": -139.52
+      }
+    ],
+    "beats": 0,
+    "of": 4,
+    "avg_surprise_pct": -173.11
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -154.0% over 90 days and -150.9% over 30 days.",
+    "Analyst revisions in the last 30 days: 0 up, 0 down.",
+    "Beat consensus in 0 of the last 4 quarters, average surprise -173.1%."
+  ]
+}

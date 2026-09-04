@@ -1,0 +1,55 @@
+{
+  "ticker": "CROX",
+  "as_of": "2026-09-03T12:33:43.056225+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 13.95039,
+    "eps_d30": 13.93705,
+    "eps_d90": 13.65537,
+    "change_30d_pct": 0.1,
+    "change_90d_pct": 2.16,
+    "analysts_up_30d": 14,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.92,
+        "estimate": 2.36028,
+        "surprise_pct": 23.71
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.29,
+        "estimate": 1.91358,
+        "surprise_pct": 19.67
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.99,
+        "estimate": 2.78924,
+        "surprise_pct": 7.2
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 4.55,
+        "estimate": 4.34798,
+        "surprise_pct": 4.65
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 13.81
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +2.2% over 90 days and +0.1% over 30 days.",
+    "Analyst revisions in the last 30 days: 14 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +13.8%."
+  ]
+}

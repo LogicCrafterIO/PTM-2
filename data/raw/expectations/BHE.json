@@ -1,0 +1,55 @@
+{
+  "ticker": "BHE",
+  "as_of": "2026-09-03T12:33:27.790639+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 2.94333,
+    "eps_d30": 2.75,
+    "eps_d90": 2.75,
+    "change_30d_pct": 7.03,
+    "change_90d_pct": 7.03,
+    "analysts_up_30d": 3,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.62,
+        "estimate": 0.57333,
+        "surprise_pct": 8.14
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.71,
+        "estimate": 0.64,
+        "surprise_pct": 10.94
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.58,
+        "estimate": 0.55333,
+        "surprise_pct": 4.82
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 0.75,
+        "estimate": 0.68667,
+        "surprise_pct": 9.22
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 8.28
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +7.0% over 90 days and +7.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 3 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +8.3%."
+  ]
+}

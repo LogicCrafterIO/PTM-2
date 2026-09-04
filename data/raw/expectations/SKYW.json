@@ -1,0 +1,77 @@
+{
+  "ticker": "SKYW",
+  "as_of": "2026-09-03T12:42:21.931336+00:00",
+  "earnings_date": "2026-10-23",
+  "revisions": {
+    "available": true,
+    "eps_current": 10.85096,
+    "eps_d30": 10.90656,
+    "eps_d90": 10.90923,
+    "change_30d_pct": -0.51,
+    "change_90d_pct": -0.53,
+    "analysts_up_30d": 2,
+    "analysts_down_30d": 3
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 2.81,
+        "estimate": 2.5575,
+        "surprise_pct": 9.87
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.21,
+        "estimate": 2.23518,
+        "surprise_pct": -1.13
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.5,
+        "estimate": 2.1664,
+        "surprise_pct": 15.4
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.54,
+        "estimate": 2.54663,
+        "surprise_pct": -0.26
+      }
+    ],
+    "beats": 2,
+    "of": 4,
+    "avg_surprise_pct": 5.97
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-24",
+        "move_pct": 7.7
+      },
+      {
+        "report_date": "2026-04-24",
+        "move_pct": -7.18
+      },
+      {
+        "report_date": "2026-02-17",
+        "move_pct": 3.13
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": 5.63
+      }
+    ],
+    "avg_abs_move_pct": 5.91,
+    "down_prints": 1,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved -0.5% over 90 days and -0.5% over 30 days.",
+    "Analyst revisions in the last 30 days: 2 up, 3 down.",
+    "Price reaction to the last 4 reports, most recent first: +7.7%, -7.2%, +3.1%, +5.6% (average absolute move 5.9%, 1 of 4 negative).",
+    "Beat consensus in 2 of the last 4 quarters, average surprise +6.0%."
+  ]
+}

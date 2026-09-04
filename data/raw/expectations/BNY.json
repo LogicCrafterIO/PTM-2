@@ -1,0 +1,55 @@
+{
+  "ticker": "BNY",
+  "as_of": "2026-09-03T12:33:22.307568+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 9.25034,
+    "eps_d30": 8.892,
+    "eps_d90": 8.79495,
+    "change_30d_pct": 4.03,
+    "change_90d_pct": 5.18,
+    "analysts_up_30d": 10,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.91,
+        "estimate": 1.76727,
+        "surprise_pct": 8.08
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 2.08,
+        "estimate": 1.98273,
+        "surprise_pct": 4.91
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 2.25,
+        "estimate": 1.93065,
+        "surprise_pct": 16.54
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 2.46,
+        "estimate": 2.22222,
+        "surprise_pct": 10.7
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 10.06
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +5.2% over 90 days and +4.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 10 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +10.1%."
+  ]
+}

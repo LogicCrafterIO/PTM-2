@@ -1,0 +1,77 @@
+{
+  "ticker": "TEX",
+  "as_of": "2026-09-03T12:42:27.467853+00:00",
+  "earnings_date": "2026-10-29",
+  "revisions": {
+    "available": true,
+    "eps_current": 5.0234,
+    "eps_d30": 4.87575,
+    "eps_d90": 4.87118,
+    "change_30d_pct": 3.03,
+    "change_90d_pct": 3.12,
+    "analysts_up_30d": 11,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 1.5,
+        "estimate": 1.20515,
+        "surprise_pct": 24.47
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 1.12,
+        "estimate": 1.10504,
+        "surprise_pct": 1.35
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.98,
+        "estimate": 0.77541,
+        "surprise_pct": 26.38
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.37,
+        "estimate": 1.23203,
+        "surprise_pct": 11.2
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 15.85
+  },
+  "reactions": {
+    "available": true,
+    "prints": [
+      {
+        "report_date": "2026-07-30",
+        "move_pct": -3.62
+      },
+      {
+        "report_date": "2026-05-01",
+        "move_pct": -0.53
+      },
+      {
+        "report_date": "2026-02-13",
+        "move_pct": 5.52
+      },
+      {
+        "report_date": "2025-10-31",
+        "move_pct": -2.48
+      }
+    ],
+    "avg_abs_move_pct": 3.04,
+    "down_prints": 3,
+    "of": 4
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +3.1% over 90 days and +3.0% over 30 days.",
+    "Analyst revisions in the last 30 days: 11 up, 0 down.",
+    "Price reaction to the last 4 reports, most recent first: -3.6%, -0.5%, +5.5%, -2.5% (average absolute move 3.0%, 3 of 4 negative).",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +15.8%."
+  ]
+}

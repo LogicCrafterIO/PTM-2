@@ -1,0 +1,55 @@
+{
+  "ticker": "BC",
+  "as_of": "2026-09-03T12:34:06.790011+00:00",
+  "earnings_date": null,
+  "revisions": {
+    "available": true,
+    "eps_current": 4.55848,
+    "eps_d30": 4.27614,
+    "eps_d90": 4.25351,
+    "change_30d_pct": 6.6,
+    "change_90d_pct": 7.17,
+    "analysts_up_30d": 18,
+    "analysts_down_30d": 0
+  },
+  "surprise": {
+    "available": true,
+    "prints": [
+      {
+        "quarter": "2025-09-30",
+        "actual": 0.97,
+        "estimate": 0.87047,
+        "surprise_pct": 11.43
+      },
+      {
+        "quarter": "2025-12-31",
+        "actual": 0.58,
+        "estimate": 0.56861,
+        "surprise_pct": 2.0
+      },
+      {
+        "quarter": "2026-03-31",
+        "actual": 0.7,
+        "estimate": 0.45373,
+        "surprise_pct": 54.28
+      },
+      {
+        "quarter": "2026-06-30",
+        "actual": 1.56,
+        "estimate": 1.19066,
+        "surprise_pct": 31.02
+      }
+    ],
+    "beats": 4,
+    "of": 4,
+    "avg_surprise_pct": 24.68
+  },
+  "reactions": {
+    "available": false
+  },
+  "summary": [
+    "Consensus EPS for the current year has moved +7.2% over 90 days and +6.6% over 30 days.",
+    "Analyst revisions in the last 30 days: 18 up, 0 down.",
+    "Beat consensus in 4 of the last 4 quarters, average surprise +24.7%."
+  ]
+}
