@@ -2875,12 +2875,12 @@
     // The factual columns arrive pre-rendered from the server (ptm_setups
     // builds them from the cached data, never from the model's prose), so the
     // browser only has to place them.
-    function setupsRow(r, extraCells) {
+    function setupsRow(r, extraCells, attrs) {
       const sideCls = r.side === "long" ? "pos" : r.side === "short" ? "neg" : "muted";
       const warn = r.against_revisions
         ? ` <span class="neg" title="this side opposes the direction of the name's own FY1 revisions (${esc(r.revision_prior || "")} prior) — the risk column says why">⚠</span>`
         : "";
-      return `<tr>` +
+      return `<tr${attrs || ""}>` +
         `<td><strong>#${esc(r.rank)}</strong></td>` +
         `<td><strong>${esc(r.ticker)}</strong>${warn}<div style="font-size:11px;color:var(--muted)">${esc(r.name || "")}</div></td>` +
         (extraCells || "") +
@@ -2890,6 +2890,35 @@
         `<td><span class="${sideCls}"><strong>${esc(r.side || "")}</strong></span></td>` +
         `<td><strong>${esc(r.label || "")}</strong><div style="font-size:11px;color:var(--muted)">conviction ${esc(r.conviction || "?")}</div></td>` +
         `</tr>`;
+    }
+
+    // Cap a setups table to about maxRows ideas in view: the wrapper's
+    // max-height is measured from the first rows actually laid out (row heights
+    // vary with the prose columns), so ~maxRows stay visible and the rest scroll
+    // beneath the sticky thead. Rows hidden by the board filters measure zero
+    // and are skipped, so the cap re-fits after every filter pass. The print
+    // stylesheet still expands the table in full (max-height:none !important
+    // wins over this inline style), and a fixed per-row estimate covers a render
+    // that happened while the tab was hidden, where rect reads zero.
+    function capSetupsRows(wrap, maxRows) {
+      const table = wrap.querySelector("table");
+      const rows = table ? Array.from(table.querySelectorAll("tbody tr")) : [];
+      if (!table || !rows.length) return;
+      const thead = table.querySelector("thead");
+      const headH = thead ? thead.getBoundingClientRect().height : 0;
+      const wide = table.offsetWidth > wrap.clientWidth + 1; // leave room for the horizontal scrollbar
+      const fallback = `${Math.ceil(maxRows * 56 + headH + (wide ? 12 : 0))}px`;
+      const shown = rows.filter((tr) => tr.getBoundingClientRect().height > 0);
+      if (!shown.length) {
+        // everything filtered out, or the render happened display:none
+        wrap.style.maxHeight = wrap.offsetParent == null ? fallback : "";
+        return;
+      }
+      let rowsH = 0;
+      for (const tr of shown.slice(0, maxRows)) rowsH += tr.getBoundingClientRect().height;
+      wrap.style.maxHeight = rowsH <= 0
+        ? fallback
+        : `${Math.ceil(rowsH + headH + (wide ? 12 : 0)) + 1}px`;
     }
 
     // The best long and the best short are separate calls with separate
@@ -2958,21 +2987,60 @@
       for (const g of ranking.groups || []) {
         for (const r of g.ranking || []) byTicker[r.ticker] = { ...r, theme: g.theme };
       }
+      // Next earnings per idea, from the calendar the ranking packets carried —
+      // the date is the anchor and days are counted from TODAY (the browser's
+      // clock), not from the ranking run, so the buckets stay live as the cache
+      // ages. Computed from the cached data, never from the model's prose.
+      const printDays = (src) => {
+        const t = src && src.next_print && !isNaN(Date.parse(src.next_print)) ? Date.parse(src.next_print) : null;
+        return t == null ? null : Math.round((t - Date.now()) / 86400000);
+      };
+      const earnCell = (src, days) => {
+        const q = src.reports_quarter || "";
+        const date = days != null
+          ? `<strong>${esc(src.next_print)}</strong>` +
+            ` <span class="muted" style="font-size:11px">${days}d</span>`
+          : "—";
+        return `<td title="${esc(q ? `next print reports ${q}` : "next earnings date")} — days counted from today">${date}</td>`;
+      };
+      // The board's filter bar: next-print buckets (the headline filter), an
+      // industry slice, and a ticker/name search. Each Best longs / Best shorts
+      // table gets its own bar; both filter the rows in place and re-fit the
+      // ~10-row scroll cap.
+      const EARN_BUCKETS = [["", "any next print"], ["0-30", "0–30 days out"], ["31-60", "31–60 days out"], ["61-90", "61–90 days out"], ["90+", "90+ days out"]];
       const section = (title, rows, cls) => {
         if (!rows || !rows.length) {
           return `<p style="margin:8px 0 2px"><strong>${title}</strong> <span class="muted">— none</span></p>`;
         }
-        return `<p style="margin:10px 0 4px"><strong class="${cls}">${title}</strong> ` +
+        const industries = [...new Set(rows.map((row) => row.theme || ""))].sort();
+        return `<div class="board-block">` +
+          `<p style="margin:10px 0 4px"><strong class="${cls}">${title}</strong> ` +
           `<span class="muted" style="font-size:12px">${rows.length} ranked across industries</span></p>` +
-          `<div class="setups-scroll" style="max-height:none"><table style="width:100%">` +
-          `<thead><tr>${["#", "Ticker", "Industry", "Latest earnings surprise", "Guidance / valuation", "Print setup", "Side", "Why it ranks here"]
+          `<div class="board-filters" style="margin:0 0 6px;display:flex;flex-wrap:wrap;gap:6px;align-items:center">` +
+          `<select class="bf-earn" title="slice the table by how far out the next earnings print lands — days counted from today, so a stale ranking still sorts truthfully">` +
+          EARN_BUCKETS.map(([v, l]) => `<option value="${v}">${l}</option>`).join("") +
+          `</select>` +
+          `<select class="bf-industry"><option value="">industry: all</option>` +
+          industries.map((t) => `<option value="${esc(t)}">${esc(t)}</option>`).join("") +
+          `</select>` +
+          `<input class="bf-search" type="search" placeholder="ticker or name…" style="width:130px">` +
+          `<span class="bf-count muted" style="margin-left:auto;font-size:11px"></span>` +
+          `</div>` +
+          `<div class="setups-scroll"><table style="width:100%">` +
+          `<thead><tr>${["#", "Ticker", "Industry", "Next earnings", "Latest earnings surprise", "Guidance / valuation", "Print setup", "Side", "Why it ranks here"]
             .map((h) => `<th>${h}</th>`).join("")}</tr></thead><tbody>` +
           rows.map((row) => {
             const src = byTicker[row.ticker] || {};
             const themeCell = `<td><span class="linklike" data-report="${esc(setupsSlug(row.theme) + "/_RANKING_" + (ranking.as_of || "") + ".md")}" style="cursor:pointer" title="open this industry's full ranking">${esc(row.theme || "")}</span></td>`;
-            return setupsRow({ ...src, rank: row.rank, label: row.why || src.label }, themeCell);
+            const days = printDays(src);
+            const attrs = ` data-days="${days == null ? "" : days}"` +
+              ` data-industry="${esc(row.theme || "")}"` +
+              ` data-search="${esc(`${row.ticker || ""} ${src.name || ""}`.trim().toUpperCase())}"`;
+            return setupsRow({ ...src, rank: row.rank, label: row.why || src.label }, themeCell + earnCell(src, days), attrs);
           }).join("") +
-          `</tbody></table></div>`;
+          `<tr class="bf-empty" style="display:none"><td colspan="9" class="muted" style="padding:8px">no ideas match these filters — widen the buckets, industry or search</td></tr>` +
+          `</tbody></table></div>` +
+          `</div>`;
       };
       host.innerHTML = `<div class="setups-panel">` +
         `<h3>Best setups into the next print — ${esc(ranking.as_of || "")}</h3>` +
@@ -2983,6 +3051,51 @@
         section("Best longs", board.longs, "pos") +
         section("Best shorts", board.shorts, "neg") +
         `</div>`;
+      // Wire each board table's filters: bucket, industry and search narrow the
+      // rows in place, the count updates, the empty-state row takes over at zero,
+      // and the ~10-row scroll cap re-fits to whatever survived the filter.
+      host.querySelectorAll(".board-block").forEach((block) => {
+        const bar = block.querySelector(".board-filters");
+        const wrap = block.querySelector(".setups-scroll");
+        const tbody = block.querySelector("tbody");
+        if (!bar || !wrap || !tbody) return;
+        const emptyRow = tbody.querySelector(".bf-empty");
+        const dataRows = Array.from(tbody.querySelectorAll("tr")).filter((tr) => tr !== emptyRow);
+        const earn = bar.querySelector(".bf-earn");
+        const ind = bar.querySelector(".bf-industry");
+        const q = bar.querySelector(".bf-search");
+        const count = bar.querySelector(".bf-count");
+        const matchBucket = (d, bucket) => {
+          if (d == null || isNaN(d)) return false;
+          if (bucket === "90+") return d > 90;
+          const lo = Number(bucket.split("-")[0]);
+          const hi = Number(bucket.split("-")[1]);
+          // "0–30 days out" also keeps overdue prints (negative days) from a
+          // stale ranking — they are the soonest thing on the board
+          return lo === 0 ? d <= hi : d >= lo && d <= hi;
+        };
+        const apply = () => {
+          const bucket = earn.value;
+          const indv = ind.value;
+          const needle = (q.value || "").trim().toUpperCase();
+          let shown = 0;
+          for (const tr of dataRows) {
+            const d = tr.dataset.days === "" || tr.dataset.days == null ? null : Number(tr.dataset.days);
+            const ok = (!bucket || matchBucket(d, bucket)) &&
+              (!indv || tr.dataset.industry === indv) &&
+              (!needle || (tr.dataset.search || "").includes(needle));
+            tr.style.display = ok ? "" : "none";
+            if (ok) shown++;
+          }
+          if (emptyRow) emptyRow.style.display = shown ? "none" : "";
+          if (count) count.textContent = `${shown} of ${dataRows.length} shown`;
+          capSetupsRows(wrap, 10);
+        };
+        earn.addEventListener("change", apply);
+        ind.addEventListener("change", apply);
+        q.addEventListener("input", apply);
+        apply();
+      });
       host.querySelectorAll("[data-report]").forEach((node) => {
         node.addEventListener("click", () => openSetupsReport(node.dataset.report || ""));
       });
